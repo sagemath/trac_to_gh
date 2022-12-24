@@ -3,7 +3,7 @@
 archive/issues_005601.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kcrisman robertwb wcauchois\n\nSee the end of http://groups.google.com/group/sage-support/browse_thread/thread/44971aa416574675\n\n\n* predefining the colors recognized in strings as Color objects in the global namespace, i.e.,     \n\n```\n    \"red\"   : (1.0,0.0,0.0),\n    \"orange\": (1.0,.5,0.0),\n    \"yellow\": (1.0,1.0,0.0),\n    \"green\" : (0.0,1.0,0.0),\n    \"blue\"  : (0.0,0.0,1.0),\n    \"purple\": (.5,0.0,1.0),\n    \"white\" : (1.0,1.0,1.0),\n    \"black\" : (0.0,0.0,0.0),\n    \"grey\"  : (.5,.5,.5) \n```\n\n\n* predefine a huge number of colors (all x11 or html color strings?), but stick them in the color\nnamespace, so they would be accessed like color.goldenrod\n\nIssue created by migration from https://trac.sagemath.org/ticket/5601\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman @robertwb wcauchois\n\nSee the end of http://groups.google.com/group/sage-support/browse_thread/thread/44971aa416574675\n\n\n* predefining the colors recognized in strings as Color objects in the global namespace, i.e.,     \n\n```\n    \"red\"   : (1.0,0.0,0.0),\n    \"orange\": (1.0,.5,0.0),\n    \"yellow\": (1.0,1.0,0.0),\n    \"green\" : (0.0,1.0,0.0),\n    \"blue\"  : (0.0,0.0,1.0),\n    \"purple\": (.5,0.0,1.0),\n    \"white\" : (1.0,1.0,1.0),\n    \"black\" : (0.0,0.0,0.0),\n    \"grey\"  : (.5,.5,.5) \n```\n\n\n* predefine a huge number of colors (all x11 or html color strings?), but stick them in the color\nnamespace, so they would be accessed like color.goldenrod\n\nIssue created by migration from https://trac.sagemath.org/ticket/5601\n\n",
     "created_at": "2009-03-24T21:26:24Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_005601.json:
     "title": "predefine colors in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5601",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kcrisman robertwb wcauchois
+CC:  @kcrisman @robertwb wcauchois
 
 See the end of http://groups.google.com/group/sage-support/browse_thread/thread/44971aa416574675
 
@@ -58,7 +58,7 @@ archive/issue_comments_043670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43670",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_043671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43671",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_043672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43672",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_043673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43673",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -156,16 +156,16 @@ See http://reference.wolfram.com/mathematica/guide/Colors.html for the predefine
 archive/issue_comments_043674.json:
 ```json
 {
-    "body": "Attachment [trac_5601-builtin_colors.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors.patch) by mpatel created at 2009-11-18 04:33:57\n\nAdd CSS3/SVG colors, lighter/darker methods, HSV and HSL/HLS constructors",
+    "body": "Attachment [trac_5601-builtin_colors.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors.patch) by @qed777 created at 2009-11-18 04:33:57\n\nAdd CSS3/SVG colors, lighter/darker methods, HSV and HSL/HLS constructors",
     "created_at": "2009-11-18T04:33:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43674",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_5601-builtin_colors.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors.patch) by mpatel created at 2009-11-18 04:33:57
+Attachment [trac_5601-builtin_colors.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors.patch) by @qed777 created at 2009-11-18 04:33:57
 
 Add CSS3/SVG colors, lighter/darker methods, HSV and HSL/HLS constructors
 
@@ -181,7 +181,7 @@ archive/issue_comments_043675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43675",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_043676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43676",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_043677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43677",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_043678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43678",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_043679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43679",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -358,7 +358,7 @@ archive/issue_comments_043680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43680",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -379,7 +379,7 @@ archive/issue_comments_043681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43681",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -392,16 +392,16 @@ Added matplotlib colormaps.  Apply only this patch.
 archive/issue_comments_043682.json:
 ```json
 {
-    "body": "Attachment [trac_5601-builtin_colors_v2.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v2.patch) by mpatel created at 2009-11-19 00:43:58\n\nSage colors.  Not a patch.",
+    "body": "Attachment [trac_5601-builtin_colors_v2.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v2.patch) by @qed777 created at 2009-11-19 00:43:58\n\nSage colors.  Not a patch.",
     "created_at": "2009-11-19T00:43:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43682",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_5601-builtin_colors_v2.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v2.patch) by mpatel created at 2009-11-19 00:43:58
+Attachment [trac_5601-builtin_colors_v2.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v2.patch) by @qed777 created at 2009-11-19 00:43:58
 
 Sage colors.  Not a patch.
 
@@ -412,16 +412,16 @@ Sage colors.  Not a patch.
 archive/issue_comments_043683.json:
 ```json
 {
-    "body": "Attachment [sage_colors.png](tarball://root/attachments/some-uuid/ticket5601/sage_colors.png) by mpatel created at 2009-11-19 00:46:31\n\n<img src=\"sage_colors.png\" width=900px>",
+    "body": "Attachment [sage_colors.png](tarball://root/attachments/some-uuid/ticket5601/sage_colors.png) by @qed777 created at 2009-11-19 00:46:31\n\n<img src=\"sage_colors.png\" width=900px>",
     "created_at": "2009-11-19T00:46:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43683",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [sage_colors.png](tarball://root/attachments/some-uuid/ticket5601/sage_colors.png) by mpatel created at 2009-11-19 00:46:31
+Attachment [sage_colors.png](tarball://root/attachments/some-uuid/ticket5601/sage_colors.png) by @qed777 created at 2009-11-19 00:46:31
 
 <img src="sage_colors.png" width=900px>
 
@@ -437,7 +437,7 @@ archive/issue_comments_043684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43684",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -457,7 +457,7 @@ archive/issue_comments_043685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43685",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -475,7 +475,7 @@ archive/issue_comments_043686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43686",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -527,7 +527,7 @@ archive/issue_comments_043687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43687",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -553,16 +553,16 @@ when we need to use it, we have code like:
 archive/issue_comments_043688.json:
 ```json
 {
-    "body": "Attachment [trac_5601-builtin_colors_v3.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v3.patch) by mpatel created at 2009-11-20 11:21:23\n\nStart with HTML hex colors.  No change to colormap imports.  Apply only this patch.",
+    "body": "Attachment [trac_5601-builtin_colors_v3.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v3.patch) by @qed777 created at 2009-11-20 11:21:23\n\nStart with HTML hex colors.  No change to colormap imports.  Apply only this patch.",
     "created_at": "2009-11-20T11:21:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43688",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_5601-builtin_colors_v3.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v3.patch) by mpatel created at 2009-11-20 11:21:23
+Attachment [trac_5601-builtin_colors_v3.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v3.patch) by @qed777 created at 2009-11-20 11:21:23
 
 Start with HTML hex colors.  No change to colormap imports.  Apply only this patch.
 
@@ -578,7 +578,7 @@ archive/issue_comments_043689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43689",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -598,7 +598,7 @@ archive/issue_comments_043690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43690",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -616,7 +616,7 @@ archive/issue_comments_043691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43691",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -634,7 +634,7 @@ archive/issue_comments_043692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43692",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -658,16 +658,16 @@ Is this still true?  The example appears to work for me, but I could be misinter
 archive/issue_comments_043693.json:
 ```json
 {
-    "body": "Attachment [trac_5601-builtin_colors_v4.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v4.patch) by mpatel created at 2009-11-22 05:35:49\n\nAdd to reference manual.  Defer loading of color maps.  Apply only this patch.",
+    "body": "Attachment [trac_5601-builtin_colors_v4.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v4.patch) by @qed777 created at 2009-11-22 05:35:49\n\nAdd to reference manual.  Defer loading of color maps.  Apply only this patch.",
     "created_at": "2009-11-22T05:35:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43693",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_5601-builtin_colors_v4.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v4.patch) by mpatel created at 2009-11-22 05:35:49
+Attachment [trac_5601-builtin_colors_v4.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v4.patch) by @qed777 created at 2009-11-22 05:35:49
 
 Add to reference manual.  Defer loading of color maps.  Apply only this patch.
 
@@ -683,7 +683,7 @@ archive/issue_comments_043694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43694",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -709,7 +709,7 @@ archive/issue_comments_043695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43695",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -729,7 +729,7 @@ archive/issue_comments_043696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43696",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -750,7 +750,7 @@ archive/issue_comments_043697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43697",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -766,16 +766,16 @@ To do:
 archive/issue_comments_043698.json:
 ```json
 {
-    "body": "Attachment [trac_5601-builtin_colors_v5.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v5.patch) by mpatel created at 2009-11-26 05:37:27\n\nAttribute access for colors and color maps.  Apply only this patch.",
+    "body": "Attachment [trac_5601-builtin_colors_v5.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v5.patch) by @qed777 created at 2009-11-26 05:37:27\n\nAttribute access for colors and color maps.  Apply only this patch.",
     "created_at": "2009-11-26T05:37:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43698",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_5601-builtin_colors_v5.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v5.patch) by mpatel created at 2009-11-26 05:37:27
+Attachment [trac_5601-builtin_colors_v5.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v5.patch) by @qed777 created at 2009-11-26 05:37:27
 
 Attribute access for colors and color maps.  Apply only this patch.
 
@@ -791,7 +791,7 @@ archive/issue_comments_043699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43699",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -815,7 +815,7 @@ archive/issue_comments_043700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43700",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -828,16 +828,16 @@ I just discovered [__add__ and friends](http://docs.python.org/reference/datamod
 archive/issue_comments_043701.json:
 ```json
 {
-    "body": "Attachment [trac_5601-builtin_colors_v6.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v6.patch) by mpatel created at 2009-12-03 16:00:49\n\n[Scalar] add and multiply colors.  This patch only.",
+    "body": "Attachment [trac_5601-builtin_colors_v6.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v6.patch) by @qed777 created at 2009-12-03 16:00:49\n\n[Scalar] add and multiply colors.  This patch only.",
     "created_at": "2009-12-03T16:00:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43701",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_5601-builtin_colors_v6.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v6.patch) by mpatel created at 2009-12-03 16:00:49
+Attachment [trac_5601-builtin_colors_v6.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v6.patch) by @qed777 created at 2009-12-03 16:00:49
 
 [Scalar] add and multiply colors.  This patch only.
 
@@ -853,7 +853,7 @@ archive/issue_comments_043702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43702",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -877,7 +877,7 @@ archive/issue_comments_043703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43703",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -895,7 +895,7 @@ archive/issue_comments_043704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43704",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -913,7 +913,7 @@ archive/issue_comments_043705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43705",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -941,7 +941,7 @@ archive/issue_comments_043706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43706",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -960,7 +960,7 @@ archive/issue_comments_043707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43707",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -986,7 +986,7 @@ archive/issue_comments_043708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43708",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1004,7 +1004,7 @@ archive/issue_comments_043709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43709",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1033,7 +1033,7 @@ archive/issue_comments_043710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43710",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1051,7 +1051,7 @@ archive/issue_comments_043711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43711",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1079,7 +1079,7 @@ archive/issue_comments_043712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43712",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1092,16 +1092,16 @@ apply on top of previous patch; implements blending
 archive/issue_comments_043713.json:
 ```json
 {
-    "body": "Attachment [trac-5601-blending.patch](tarball://root/attachments/some-uuid/ticket5601/trac-5601-blending.patch) by jason created at 2009-12-10 23:39:25\n\nI attached a *rough* patch that implements the mma-style blending, lighter(), and darker().  What do you think?  I don't know that much about color theory, so I don't know what \"should\" happen, but now colors.yellow+colors.green gives yellowgreenish colors.",
+    "body": "Attachment [trac-5601-blending.patch](tarball://root/attachments/some-uuid/ticket5601/trac-5601-blending.patch) by @jasongrout created at 2009-12-10 23:39:25\n\nI attached a *rough* patch that implements the mma-style blending, lighter(), and darker().  What do you think?  I don't know that much about color theory, so I don't know what \"should\" happen, but now colors.yellow+colors.green gives yellowgreenish colors.",
     "created_at": "2009-12-10T23:39:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43713",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-5601-blending.patch](tarball://root/attachments/some-uuid/ticket5601/trac-5601-blending.patch) by jason created at 2009-12-10 23:39:25
+Attachment [trac-5601-blending.patch](tarball://root/attachments/some-uuid/ticket5601/trac-5601-blending.patch) by @jasongrout created at 2009-12-10 23:39:25
 
 I attached a *rough* patch that implements the mma-style blending, lighter(), and darker().  What do you think?  I don't know that much about color theory, so I don't know what "should" happen, but now colors.yellow+colors.green gives yellowgreenish colors.
 
@@ -1117,7 +1117,7 @@ archive/issue_comments_043714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43714",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1141,7 +1141,7 @@ archive/issue_comments_043715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43715",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1161,7 +1161,7 @@ archive/issue_comments_043716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43716",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1188,7 +1188,7 @@ archive/issue_comments_043717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43717",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1216,7 +1216,7 @@ archive/issue_comments_043718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43718",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1231,16 +1231,16 @@ Anyway, I apologize for the mess, especially for claiming to cover #5604.  Thank
 archive/issue_comments_043719.json:
 ```json
 {
-    "body": "Attachment [trac_5601-builtin_colors_v7.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v7.patch) by mpatel created at 2010-02-22 00:51:45\n\nDoctest fixes.  Combined patch rebased vs. 4.3.3.alpha1.  Apply only this patch.",
+    "body": "Attachment [trac_5601-builtin_colors_v7.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v7.patch) by @qed777 created at 2010-02-22 00:51:45\n\nDoctest fixes.  Combined patch rebased vs. 4.3.3.alpha1.  Apply only this patch.",
     "created_at": "2010-02-22T00:51:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43719",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_5601-builtin_colors_v7.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v7.patch) by mpatel created at 2010-02-22 00:51:45
+Attachment [trac_5601-builtin_colors_v7.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-builtin_colors_v7.patch) by @qed777 created at 2010-02-22 00:51:45
 
 Doctest fixes.  Combined patch rebased vs. 4.3.3.alpha1.  Apply only this patch.
 
@@ -1256,7 +1256,7 @@ archive/issue_comments_043720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43720",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1274,7 +1274,7 @@ archive/issue_comments_043721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43721",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1296,7 +1296,7 @@ archive/issue_comments_043722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43722",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1311,16 +1311,16 @@ Or fix them. :)
 archive/issue_comments_043723.json:
 ```json
 {
-    "body": "Attachment [trac_5601-sagenb_doctest.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-sagenb_doctest.patch) by mpatel created at 2010-02-22 04:18:04\n\nFix `interact` doctest.  **sagenb** repo.",
+    "body": "Attachment [trac_5601-sagenb_doctest.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-sagenb_doctest.patch) by @qed777 created at 2010-02-22 04:18:04\n\nFix `interact` doctest.  **sagenb** repo.",
     "created_at": "2010-02-22T04:18:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43723",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_5601-sagenb_doctest.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-sagenb_doctest.patch) by mpatel created at 2010-02-22 04:18:04
+Attachment [trac_5601-sagenb_doctest.patch](tarball://root/attachments/some-uuid/ticket5601/trac_5601-sagenb_doctest.patch) by @qed777 created at 2010-02-22 04:18:04
 
 Fix `interact` doctest.  **sagenb** repo.
 
@@ -1336,7 +1336,7 @@ archive/issue_comments_043724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43724",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1354,7 +1354,7 @@ archive/issue_comments_043725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43725",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1390,7 +1390,7 @@ archive/issue_comments_043727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43727",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1408,7 +1408,7 @@ archive/issue_comments_043728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43728",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1426,7 +1426,7 @@ archive/issue_comments_043729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43729",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1444,7 +1444,7 @@ archive/issue_comments_043730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43730",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

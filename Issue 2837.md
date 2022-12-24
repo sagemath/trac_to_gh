@@ -3,7 +3,7 @@
 archive/issues_002837.json:
 ```json
 {
-    "body": "Assignee: yi\n\nThis patch makes use of the official blockingCallFromThread method in twisted.internet.threads instead of the one supplied by dsage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2837\n\n",
+    "body": "Assignee: @yqiang\n\nThis patch makes use of the official blockingCallFromThread method in twisted.internet.threads instead of the one supplied by dsage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2837\n\n",
     "created_at": "2008-04-07T00:14:16Z",
     "labels": [
         "dsage",
@@ -14,10 +14,10 @@ archive/issues_002837.json:
     "title": "[witch patch, needs review] use twisted-8.0.1's blockingCallFromThread",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2837",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
-Assignee: yi
+Assignee: @yqiang
 
 This patch makes use of the official blockingCallFromThread method in twisted.internet.threads instead of the one supplied by dsage.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2837
 archive/issue_comments_019464.json:
 ```json
 {
-    "body": "Attachment [blockingcall_api_change.patch](tarball://root/attachments/some-uuid/ticket2837/blockingcall_api_change.patch) by mhansen created at 2008-04-07 01:05:03\n\nApplies and passes tests on 3.0.alpha1 + new twisted spkg.",
+    "body": "Attachment [blockingcall_api_change.patch](tarball://root/attachments/some-uuid/ticket2837/blockingcall_api_change.patch) by @mwhansen created at 2008-04-07 01:05:03\n\nApplies and passes tests on 3.0.alpha1 + new twisted spkg.",
     "created_at": "2008-04-07T01:05:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2837#issuecomment-19464",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [blockingcall_api_change.patch](tarball://root/attachments/some-uuid/ticket2837/blockingcall_api_change.patch) by mhansen created at 2008-04-07 01:05:03
+Attachment [blockingcall_api_change.patch](tarball://root/attachments/some-uuid/ticket2837/blockingcall_api_change.patch) by @mwhansen created at 2008-04-07 01:05:03
 
 Applies and passes tests on 3.0.alpha1 + new twisted spkg.
 

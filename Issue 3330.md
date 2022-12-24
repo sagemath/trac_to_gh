@@ -3,7 +3,7 @@
 archive/issues_003330.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  gaetan.bisson@loria.fr\n\nConsider this example:\n\n```\n  R.<a,b> = NumberField(x^2-3,'g').extension(x^2-7,'h')[]\n  h = R.base_ring().gen()    \n  S.<y> = R.fraction_field()[]\n  xgcd(y^2, a*h*y+b) \n```\n\n(reported by Ga\u00ebtan Bisson here: http://groups.google.com/group/sage-support/browse_thread/thread/5338608bd7508b00/cd1d6555592e472f#cd1d6555592e472f)\n\nThis fails because Sage attempts to find the GCD of multivariate polynomials over a relative number field using Singular, and Singular does not support relative number fields.  This should be implemented in Sage (probably by converting the relative number field into an absolute field, performing the computation, and converting back).\n\nSee also #3329, which is about the exact same test case, but requests only a better error message.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3330\n\n",
+    "body": "Assignee: @malb\n\nCC:  gaetan.bisson@loria.fr\n\nConsider this example:\n\n```\n  R.<a,b> = NumberField(x^2-3,'g').extension(x^2-7,'h')[]\n  h = R.base_ring().gen()    \n  S.<y> = R.fraction_field()[]\n  xgcd(y^2, a*h*y+b) \n```\n\n(reported by Ga\u00ebtan Bisson here: http://groups.google.com/group/sage-support/browse_thread/thread/5338608bd7508b00/cd1d6555592e472f#cd1d6555592e472f)\n\nThis fails because Sage attempts to find the GCD of multivariate polynomials over a relative number field using Singular, and Singular does not support relative number fields.  This should be implemented in Sage (probably by converting the relative number field into an absolute field, performing the computation, and converting back).\n\nSee also #3329, which is about the exact same test case, but requests only a better error message.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3330\n\n",
     "created_at": "2008-05-29T17:37:52Z",
     "labels": [
         "commutative algebra",
@@ -17,7 +17,7 @@ archive/issues_003330.json:
     "user": "cwitty"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 CC:  gaetan.bisson@loria.fr
 
@@ -52,7 +52,7 @@ archive/issue_comments_023092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3330#issuecomment-23092",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_023093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3330#issuecomment-23093",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_023097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3330#issuecomment-23097",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_023098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3330#issuecomment-23098",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

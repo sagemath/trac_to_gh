@@ -101,7 +101,7 @@ archive/issue_comments_000422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/84",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/84#issuecomment-422",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -114,16 +114,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_000423.json:
 ```json
 {
-    "body": "Changing assignee from dmharvey to ncalexan.",
+    "body": "Changing assignee from dmharvey to @ncalexan.",
     "created_at": "2007-02-19T02:04:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/84",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/84#issuecomment-423",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Changing assignee from dmharvey to ncalexan.
+Changing assignee from dmharvey to @ncalexan.
 
 
 
@@ -137,7 +137,7 @@ archive/issue_comments_000424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/84",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/84#issuecomment-424",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_000425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/84",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/84#issuecomment-425",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

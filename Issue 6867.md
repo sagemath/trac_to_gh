@@ -14,7 +14,7 @@ archive/issues_006867.json:
     "title": "[with SPKG, needs review] GLPK ( compatible with the symbolics from MIP )",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6867",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: tbd
@@ -65,7 +65,7 @@ archive/issue_comments_056680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6867#issuecomment-56680",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

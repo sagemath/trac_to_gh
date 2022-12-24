@@ -14,7 +14,7 @@ archive/issues_002335.json:
     "title": "add documentation to the programming guide about _sage_src_",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2335",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2335
 archive/issue_comments_015617.json:
 ```json
 {
-    "body": "Changing assignee from tba to mhansen.",
+    "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2008-09-19T07:31:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2335#issuecomment-15617",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tba to mhansen.
+Changing assignee from tba to @mwhansen.
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_015618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2335#issuecomment-15618",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_015619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2335#issuecomment-15619",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_015620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2335#issuecomment-15620",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

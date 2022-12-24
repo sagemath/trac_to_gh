@@ -3,7 +3,7 @@
 archive/issues_003506.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  malb\n\nThe problem:\n\n```\nbuilding 'sage.matrix.matrix_mod2_dense' extension\ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/usr/local/sage/local//include -I/usr/local/sage/local//include/csage -I/usr/local/sage/devel//sage/sage/ext -I/usr/local/sage/local/include/python2.5 -c sage/matrix/matrix_mod2_dense.c -o build/temp.linux-i686-2.5/sage/matrix/matrix_mod2_dense.o -w -w\nsage/matrix/matrix_mod2_dense.c: In function \u2018__pyx_pf_4sage_6matrix_17matrix_mod2_dense_17Matrix_mod2_dense___init__\u2019:\nsage/matrix/matrix_mod2_dense.c:1733: error: \u2018bit\u2019 undeclared (first use in this function)\nsage/matrix/matrix_mod2_dense.c:1733: error: (Each undeclared identifier is reported only once\nsage/matrix/matrix_mod2_dense.c:1733: error: for each function it appears in.)\nsage/matrix/matrix_mod2_dense.c:1733: error: expected \u2018;\u2019 before \u2018__pyx_8\u2019\nsage/matrix/matrix_mod2_dense.c:1930: error: \u2018__pyx_8\u2019 undeclared (first use in this function)\nsage/matrix/matrix_mod2_dense.c: In function \u2018__pyx_f_4sage_6matrix_17matrix_mod2_dense_17Matrix_mod2_dense_set_unsafe\u2019:\nsage/matrix/matrix_mod2_dense.c:2047: error: \u2018bit\u2019 undeclared (first use in this function)\nsage/matrix/matrix_mod2_dense.c:2047: error: expected \u2018;\u2019 before \u2018__pyx_3\u2019\nsage/matrix/matrix_mod2_dense.c:2061: error: \u2018__pyx_3\u2019 undeclared (first use in this function)\nsage/matrix/matrix_mod2_dense.c: In function \u2018__pyx_f_4sage_6matrix_17matrix_mod2_dense_17Matrix_mod2_dense_get_unsafe\u2019:\nsage/matrix/matrix_mod2_dense.c:2086: error: \u2018bit\u2019 undeclared (first use in this function)\nsage/matrix/matrix_mod2_dense.c:2086: error: expected \u2018;\u2019 before \u2018__pyx_1\u2019\nsage/matrix/matrix_mod2_dense.c:2095: error: \u2018__pyx_1\u2019 undeclared (first use in this function)\nsage/matrix/matrix_mod2_dense.c: In function \u2018__pyx_pf_4sage_6matrix_17matrix_mod2_dense_17Matrix_mod2_dense__list\u2019:\nsage/matrix/matrix_mod2_dense.c:3462: error: \u2018bit\u2019 undeclared (first use in this function)\nsage/matrix/matrix_mod2_dense.c:3462: error: expected \u2018;\u2019 before \u2018__pyx_4\u2019\nsage/matrix/matrix_mod2_dense.c:3504: error: \u2018__pyx_4\u2019 undeclared (first use in this function)\nsage/matrix/matrix_mod2_dense.c: In function \u2018__pyx_pf_4sage_6matrix_17matrix_mod2_dense_17Matrix_mod2_dense__pivots\u2019:\nsage/matrix/matrix_mod2_dense.c:4077: error: \u2018bit\u2019 undeclared (first use in this function)\nsage/matrix/matrix_mod2_dense.c:4077: error: expected \u2018;\u2019 before \u2018__pyx_4\u2019\nsage/matrix/matrix_mod2_dense.c:4164: error: \u2018__pyx_4\u2019 undeclared (first use in this function)\nerror: command 'gcc' failed with exit status 1\nsage: There was an error installing modified sage library code.\n```\n\n\nFix attached.   This may have to do with a C namespace clash for some compilers.  On\nthe vmware sage image we have:\n\n```\nroot@sage:/usr/local/sage# gcc -v\nUsing built-in specs.\nTarget: i486-linux-gnu\nConfigured with: ../src/configure -v --enable-languages=c,c++,fortran,objc,obj-c++,treelang --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --program-suffix=-4.1 --enable-__cxa_atexit --enable-clocale=gnu --enable-libstdcxx-debug --enable-mpfr --enable-checking=release i486-linux-gnu\nThread model: posix\ngcc version 4.1.2 20060928 (prerelease) (Ubuntu 4.1.1-13ubuntu5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3506\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @malb\n\nThe problem:\n\n```\nbuilding 'sage.matrix.matrix_mod2_dense' extension\ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/usr/local/sage/local//include -I/usr/local/sage/local//include/csage -I/usr/local/sage/devel//sage/sage/ext -I/usr/local/sage/local/include/python2.5 -c sage/matrix/matrix_mod2_dense.c -o build/temp.linux-i686-2.5/sage/matrix/matrix_mod2_dense.o -w -w\nsage/matrix/matrix_mod2_dense.c: In function \u2018__pyx_pf_4sage_6matrix_17matrix_mod2_dense_17Matrix_mod2_dense___init__\u2019:\nsage/matrix/matrix_mod2_dense.c:1733: error: \u2018bit\u2019 undeclared (first use in this function)\nsage/matrix/matrix_mod2_dense.c:1733: error: (Each undeclared identifier is reported only once\nsage/matrix/matrix_mod2_dense.c:1733: error: for each function it appears in.)\nsage/matrix/matrix_mod2_dense.c:1733: error: expected \u2018;\u2019 before \u2018__pyx_8\u2019\nsage/matrix/matrix_mod2_dense.c:1930: error: \u2018__pyx_8\u2019 undeclared (first use in this function)\nsage/matrix/matrix_mod2_dense.c: In function \u2018__pyx_f_4sage_6matrix_17matrix_mod2_dense_17Matrix_mod2_dense_set_unsafe\u2019:\nsage/matrix/matrix_mod2_dense.c:2047: error: \u2018bit\u2019 undeclared (first use in this function)\nsage/matrix/matrix_mod2_dense.c:2047: error: expected \u2018;\u2019 before \u2018__pyx_3\u2019\nsage/matrix/matrix_mod2_dense.c:2061: error: \u2018__pyx_3\u2019 undeclared (first use in this function)\nsage/matrix/matrix_mod2_dense.c: In function \u2018__pyx_f_4sage_6matrix_17matrix_mod2_dense_17Matrix_mod2_dense_get_unsafe\u2019:\nsage/matrix/matrix_mod2_dense.c:2086: error: \u2018bit\u2019 undeclared (first use in this function)\nsage/matrix/matrix_mod2_dense.c:2086: error: expected \u2018;\u2019 before \u2018__pyx_1\u2019\nsage/matrix/matrix_mod2_dense.c:2095: error: \u2018__pyx_1\u2019 undeclared (first use in this function)\nsage/matrix/matrix_mod2_dense.c: In function \u2018__pyx_pf_4sage_6matrix_17matrix_mod2_dense_17Matrix_mod2_dense__list\u2019:\nsage/matrix/matrix_mod2_dense.c:3462: error: \u2018bit\u2019 undeclared (first use in this function)\nsage/matrix/matrix_mod2_dense.c:3462: error: expected \u2018;\u2019 before \u2018__pyx_4\u2019\nsage/matrix/matrix_mod2_dense.c:3504: error: \u2018__pyx_4\u2019 undeclared (first use in this function)\nsage/matrix/matrix_mod2_dense.c: In function \u2018__pyx_pf_4sage_6matrix_17matrix_mod2_dense_17Matrix_mod2_dense__pivots\u2019:\nsage/matrix/matrix_mod2_dense.c:4077: error: \u2018bit\u2019 undeclared (first use in this function)\nsage/matrix/matrix_mod2_dense.c:4077: error: expected \u2018;\u2019 before \u2018__pyx_4\u2019\nsage/matrix/matrix_mod2_dense.c:4164: error: \u2018__pyx_4\u2019 undeclared (first use in this function)\nerror: command 'gcc' failed with exit status 1\nsage: There was an error installing modified sage library code.\n```\n\n\nFix attached.   This may have to do with a C namespace clash for some compilers.  On\nthe vmware sage image we have:\n\n```\nroot@sage:/usr/local/sage# gcc -v\nUsing built-in specs.\nTarget: i486-linux-gnu\nConfigured with: ../src/configure -v --enable-languages=c,c++,fortran,objc,obj-c++,treelang --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --program-suffix=-4.1 --enable-__cxa_atexit --enable-clocale=gnu --enable-libstdcxx-debug --enable-mpfr --enable-checking=release i486-linux-gnu\nThread model: posix\ngcc version 4.1.2 20060928 (prerelease) (Ubuntu 4.1.1-13ubuntu5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3506\n\n",
     "created_at": "2008-06-25T01:38:51Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_003506.json:
     "title": "I can't build m4ri on the vmware image unless I replace the ctypedef int bit by just an int in the two places it is used.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3506",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  malb
+CC:  @malb
 
 The problem:
 
@@ -77,16 +77,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3506
 archive/issue_comments_024715.json:
 ```json
 {
-    "body": "Attachment [sage-3506.patch](tarball://root/attachments/some-uuid/ticket3506/sage-3506.patch) by was created at 2008-06-25 01:40:02",
+    "body": "Attachment [sage-3506.patch](tarball://root/attachments/some-uuid/ticket3506/sage-3506.patch) by @williamstein created at 2008-06-25 01:40:02",
     "created_at": "2008-06-25T01:40:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3506#issuecomment-24715",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3506.patch](tarball://root/attachments/some-uuid/ticket3506/sage-3506.patch) by was created at 2008-06-25 01:40:02
+Attachment [sage-3506.patch](tarball://root/attachments/some-uuid/ticket3506/sage-3506.patch) by @williamstein created at 2008-06-25 01:40:02
 
 
 
@@ -144,7 +144,7 @@ archive/issue_comments_024718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3506#issuecomment-24718",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

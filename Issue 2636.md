@@ -14,7 +14,7 @@ archive/issues_002636.json:
     "title": "notebook -- changing a cell without evaluate should put the red line back to the left",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2636",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2636
 archive/issue_comments_018109.json:
 ```json
 {
-    "body": "Attachment [sage-2636.patch](tarball://root/attachments/some-uuid/ticket2636/sage-2636.patch) by was created at 2008-05-10 20:27:42\n\nthis fixes the bug",
+    "body": "Attachment [sage-2636.patch](tarball://root/attachments/some-uuid/ticket2636/sage-2636.patch) by @williamstein created at 2008-05-10 20:27:42\n\nthis fixes the bug",
     "created_at": "2008-05-10T20:27:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2636",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2636#issuecomment-18109",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2636.patch](tarball://root/attachments/some-uuid/ticket2636/sage-2636.patch) by was created at 2008-05-10 20:27:42
+Attachment [sage-2636.patch](tarball://root/attachments/some-uuid/ticket2636/sage-2636.patch) by @williamstein created at 2008-05-10 20:27:42
 
 this fixes the bug
 
@@ -57,7 +57,7 @@ archive/issue_comments_018110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2636",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2636#issuecomment-18110",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_018111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2636",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2636#issuecomment-18111",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

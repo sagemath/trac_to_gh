@@ -3,7 +3,7 @@
 archive/issues_009076.json:
 ```json
 {
-    "body": "Assignee: vdelecroix\n\nCC:  sage-combinat kcrisman jason\n\nKeywords: plot, arc, ellipse, circle\n\nImplementation of arc plot \n\nThis just wraps the matplotlib functionnality Arc\nhttp://matplotlib.sourceforge.net/api/artist_api.html#matplotlib.patches.Arc\n\nthere is not yet fill capabilities (due to matplotlib).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9076\n\n",
+    "body": "Assignee: @videlec\n\nCC:  sage-combinat @kcrisman @jasongrout\n\nKeywords: plot, arc, ellipse, circle\n\nImplementation of arc plot \n\nThis just wraps the matplotlib functionnality Arc\nhttp://matplotlib.sourceforge.net/api/artist_api.html#matplotlib.patches.Arc\n\nthere is not yet fill capabilities (due to matplotlib).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9076\n\n",
     "created_at": "2010-05-28T20:12:41Z",
     "labels": [
         "geometry",
@@ -14,12 +14,12 @@ archive/issues_009076.json:
     "title": "plot Arc of circle and ellipse",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9076",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
-Assignee: vdelecroix
+Assignee: @videlec
 
-CC:  sage-combinat kcrisman jason
+CC:  sage-combinat @kcrisman @jasongrout
 
 Keywords: plot, arc, ellipse, circle
 
@@ -46,7 +46,7 @@ archive/issue_comments_084236.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9076#issuecomment-84236",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_084237.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9076#issuecomment-84237",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_084238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9076#issuecomment-84238",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_084239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9076#issuecomment-84239",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_084240.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9076#issuecomment-84240",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_084241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9076#issuecomment-84241",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_084242.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9076#issuecomment-84242",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_084243.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9076#issuecomment-84243",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_084244.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9076#issuecomment-84244",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_084245.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9076#issuecomment-84245",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_084246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9076#issuecomment-84246",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_084247.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9076#issuecomment-84247",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_084248.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9076#issuecomment-84248",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -372,7 +372,7 @@ archive/issue_comments_084249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9076#issuecomment-84249",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -385,16 +385,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_084250.json:
 ```json
 {
-    "body": "Attachment [trac_9076-arc.patch](tarball://root/attachments/some-uuid/ticket9076/trac_9076-arc.patch) by vdelecroix created at 2010-06-26 14:01:54",
+    "body": "Attachment [trac_9076-arc.patch](tarball://root/attachments/some-uuid/ticket9076/trac_9076-arc.patch) by @videlec created at 2010-06-26 14:01:54",
     "created_at": "2010-06-26T14:01:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9076#issuecomment-84250",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
-Attachment [trac_9076-arc.patch](tarball://root/attachments/some-uuid/ticket9076/trac_9076-arc.patch) by vdelecroix created at 2010-06-26 14:01:54
+Attachment [trac_9076-arc.patch](tarball://root/attachments/some-uuid/ticket9076/trac_9076-arc.patch) by @videlec created at 2010-06-26 14:01:54
 
 
 
@@ -408,7 +408,7 @@ archive/issue_comments_084251.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9076#issuecomment-84251",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -438,7 +438,7 @@ archive/issue_comments_084252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9076#issuecomment-84252",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -456,7 +456,7 @@ archive/issue_comments_084253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9076#issuecomment-84253",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -474,7 +474,7 @@ archive/issue_comments_084254.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9076#issuecomment-84254",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -489,16 +489,16 @@ Otherwise ENTHUSIASTIC positive review for a great addition.  Very minor changes
 archive/issue_comments_084255.json:
 ```json
 {
-    "body": "Attachment [trac_9076-arc-reviewer.patch](tarball://root/attachments/some-uuid/ticket9076/trac_9076-arc-reviewer.patch) by kcrisman created at 2010-08-10 14:49:02\n\nApply after initial patch",
+    "body": "Attachment [trac_9076-arc-reviewer.patch](tarball://root/attachments/some-uuid/ticket9076/trac_9076-arc-reviewer.patch) by @kcrisman created at 2010-08-10 14:49:02\n\nApply after initial patch",
     "created_at": "2010-08-10T14:49:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9076#issuecomment-84255",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_9076-arc-reviewer.patch](tarball://root/attachments/some-uuid/ticket9076/trac_9076-arc-reviewer.patch) by kcrisman created at 2010-08-10 14:49:02
+Attachment [trac_9076-arc-reviewer.patch](tarball://root/attachments/some-uuid/ticket9076/trac_9076-arc-reviewer.patch) by @kcrisman created at 2010-08-10 14:49:02
 
 Apply after initial patch
 
@@ -514,7 +514,7 @@ archive/issue_comments_084256.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9076#issuecomment-84256",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -532,7 +532,7 @@ archive/issue_comments_084257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9076#issuecomment-84257",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -550,7 +550,7 @@ archive/issue_comments_084258.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9076#issuecomment-84258",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -568,7 +568,7 @@ archive/issue_comments_084259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9076#issuecomment-84259",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -588,7 +588,7 @@ archive/issue_comments_084260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9076#issuecomment-84260",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -606,7 +606,7 @@ archive/issue_comments_084261.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9076#issuecomment-84261",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -619,16 +619,16 @@ Same as other one, but better commit message
 archive/issue_comments_084262.json:
 ```json
 {
-    "body": "Attachment [trac_9076-arc.2.patch](tarball://root/attachments/some-uuid/ticket9076/trac_9076-arc.2.patch) by mpatel created at 2010-08-16 21:16:42",
+    "body": "Attachment [trac_9076-arc.2.patch](tarball://root/attachments/some-uuid/ticket9076/trac_9076-arc.2.patch) by @qed777 created at 2010-08-16 21:16:42",
     "created_at": "2010-08-16T21:16:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9076#issuecomment-84262",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_9076-arc.2.patch](tarball://root/attachments/some-uuid/ticket9076/trac_9076-arc.2.patch) by mpatel created at 2010-08-16 21:16:42
+Attachment [trac_9076-arc.2.patch](tarball://root/attachments/some-uuid/ticket9076/trac_9076-arc.2.patch) by @qed777 created at 2010-08-16 21:16:42
 
 
 
@@ -642,7 +642,7 @@ archive/issue_comments_084263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9076#issuecomment-84263",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -660,7 +660,7 @@ archive/issue_comments_084264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9076#issuecomment-84264",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

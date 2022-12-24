@@ -3,7 +3,7 @@
 archive/issues_001040.json:
 ```json
 {
-    "body": "Assignee: was\n\nNow that we allow notation such as\n\n```\nQQ[2^(1/3)]\n```\n\nto create a number field, the following is totally wrong and\nneeds to be fixed ASAP:\n\n\n```\nsage: K.<a> = QQ[2^(1/3)]\nsage: K\nUnivariate Polynomial Ring in a over Rational Field\nsage: parent(a)\nUnivariate Polynomial Ring in a over Rational Field\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1040\n\n",
+    "body": "Assignee: @williamstein\n\nNow that we allow notation such as\n\n```\nQQ[2^(1/3)]\n```\n\nto create a number field, the following is totally wrong and\nneeds to be fixed ASAP:\n\n\n```\nsage: K.<a> = QQ[2^(1/3)]\nsage: K\nUnivariate Polynomial Ring in a over Rational Field\nsage: parent(a)\nUnivariate Polynomial Ring in a over Rational Field\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1040\n\n",
     "created_at": "2007-10-31T18:14:03Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_001040.json:
     "title": "bug in new ring extension constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1040",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Now that we allow notation such as
 
@@ -54,7 +54,7 @@ archive/issue_comments_006342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1040",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1040#issuecomment-6342",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -95,16 +95,16 @@ sage: preparse('K.<a> = QQ[]')
 archive/issue_comments_006343.json:
 ```json
 {
-    "body": "Changing assignee from was to ncalexan.",
+    "body": "Changing assignee from @williamstein to @ncalexan.",
     "created_at": "2007-11-03T20:10:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1040",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1040#issuecomment-6343",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Changing assignee from was to ncalexan.
+Changing assignee from @williamstein to @ncalexan.
 
 
 
@@ -113,16 +113,16 @@ Changing assignee from was to ncalexan.
 archive/issue_comments_006344.json:
 ```json
 {
-    "body": "Attachment [1040-ncalexan-2.hg](tarball://root/attachments/some-uuid/ticket1040/1040-ncalexan-2.hg) by ncalexan created at 2007-11-03 23:36:39",
+    "body": "Attachment [1040-ncalexan-2.hg](tarball://root/attachments/some-uuid/ticket1040/1040-ncalexan-2.hg) by @ncalexan created at 2007-11-03 23:36:39",
     "created_at": "2007-11-03T23:36:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1040",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1040#issuecomment-6344",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [1040-ncalexan-2.hg](tarball://root/attachments/some-uuid/ticket1040/1040-ncalexan-2.hg) by ncalexan created at 2007-11-03 23:36:39
+Attachment [1040-ncalexan-2.hg](tarball://root/attachments/some-uuid/ticket1040/1040-ncalexan-2.hg) by @ncalexan created at 2007-11-03 23:36:39
 
 
 
@@ -136,7 +136,7 @@ archive/issue_comments_006345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1040",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1040#issuecomment-6345",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

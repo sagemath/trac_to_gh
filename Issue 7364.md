@@ -3,7 +3,7 @@
 archive/issues_007364.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nImplement a method in Graph returning a DiGraph which corresponds to an eulerian orientation of the graph.\n\nAn eulerian orientation of an eulerian graph is an orientation such that d^+ = d^- = d/2 for any vertex.\n\nIf the graph is not eulerian, this method should return a DiGraph such that d^+ + d^- = d and | d^+ - d^- | <= 1\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7364\n\n",
+    "body": "Assignee: @rlmill\n\nImplement a method in Graph returning a DiGraph which corresponds to an eulerian orientation of the graph.\n\nAn eulerian orientation of an eulerian graph is an orientation such that d^+ = d^- = d/2 for any vertex.\n\nIf the graph is not eulerian, this method should return a DiGraph such that d^+ + d^- = d and | d^+ - d^- | <= 1\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7364\n\n",
     "created_at": "2009-10-31T20:48:07Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007364.json:
     "title": "Implement eulerian orientation of a graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7364",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Implement a method in Graph returning a DiGraph which corresponds to an eulerian orientation of the graph.
 
@@ -43,7 +43,7 @@ archive/issue_comments_061706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7364#issuecomment-61706",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_061707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7364#issuecomment-61707",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_061708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7364#issuecomment-61708",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_061709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7364#issuecomment-61709",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_061710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7364#issuecomment-61710",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_061711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7364#issuecomment-61711",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_061712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7364#issuecomment-61712",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_061713.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7364#issuecomment-61713",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_061714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7364#issuecomment-61714",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_061715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7364#issuecomment-61715",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_061716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7364#issuecomment-61716",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_061717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7364#issuecomment-61717",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -303,16 +303,16 @@ Done ! :-)
 archive/issue_comments_061718.json:
 ```json
 {
-    "body": "Attachment [trac_7364.patch](tarball://root/attachments/some-uuid/ticket7364/trac_7364.patch) by ncohen created at 2009-11-23 15:35:38",
+    "body": "Attachment [trac_7364.patch](tarball://root/attachments/some-uuid/ticket7364/trac_7364.patch) by @nathanncohen created at 2009-11-23 15:35:38",
     "created_at": "2009-11-23T15:35:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7364#issuecomment-61718",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_7364.patch](tarball://root/attachments/some-uuid/ticket7364/trac_7364.patch) by ncohen created at 2009-11-23 15:35:38
+Attachment [trac_7364.patch](tarball://root/attachments/some-uuid/ticket7364/trac_7364.patch) by @nathanncohen created at 2009-11-23 15:35:38
 
 
 
@@ -326,7 +326,7 @@ archive/issue_comments_061719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7364#issuecomment-61719",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -344,7 +344,7 @@ archive/issue_comments_061720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7364#issuecomment-61720",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_061721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7364#issuecomment-61721",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

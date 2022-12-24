@@ -3,7 +3,7 @@
 archive/issues_007761.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  was david.kirkby@onetel.net mvngu\n\nKeywords: python open solaris\n\nI believe William is aware of this bug and said it can be fixed by installing OpenSSL or similar. But I am unable to find a trac ticket for it, so I thought I'd open one. It's interesting this issue does not arise on Solaris 10 (SPARC), despite OpenSSL libraries not being present there either. This bug seems to come up a lot on linux too, as a Google search shows. \n\nOn a Sun Ultra 27 (Intel Xeon processor), running Open Solaris 06/2009, I get the following problem when python is being built. \n\n\n```\ncopying build/scripts-2.6/pydoc -> /export/home/drkirkby/sage-4.3.rc2/local/bin\nchanging mode of /export/home/drkirkby/sage-4.3.rc2/local/bin/2to3 to 755\nchanging mode of /export/home/drkirkby/sage-4.3.rc2/local/bin/smtpd.py to 755\nchanging mode of /export/home/drkirkby/sage-4.3.rc2/local/bin/idle to 755\nchanging mode of /export/home/drkirkby/sage-4.3.rc2/local/bin/pydoc to 755\nrunning install_egg_info\nRemoving /export/home/drkirkby/sage-4.3.rc2/local/lib/python2.6/lib-dynload/Python-2.6.2-py2.6.egg-info\nWriting /export/home/drkirkby/sage-4.3.rc2/local/lib/python2.6/lib-dynload/Python-2.6.2-py2.6.egg-info\nif test -f /export/home/drkirkby/sage-4.3.rc2/local/bin/python -o -h /export/home/drkirkby/sage-4.3.rc2/local/bin/python; \\\n\tthen rm -f /export/home/drkirkby/sage-4.3.rc2/local/bin/python; \\\n\telse true; \\\n\tfi\n(cd /export/home/drkirkby/sage-4.3.rc2/local/bin; ln python2.6 python)\nrm -f /export/home/drkirkby/sage-4.3.rc2/local/bin/python-config\n(cd /export/home/drkirkby/sage-4.3.rc2/local/bin; ln -s python2.6-config python-config)\n/usr/bin/ginstall -c -m 644 ./Misc/python.man \\\n\t\t/export/home/drkirkby/sage-4.3.rc2/local/share/man/man1/python.1\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.3.rc2/spkg/build/python-2.6.2.p4/src'\nSleeping for three seconds before testing python\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/export/home/drkirkby/sage-4.3.rc2/local/lib/python/hashlib.py\", line 136, in <module>\n    md5 = __get_builtin_constructor('md5')\n  File \"/export/home/drkirkby/sage-4.3.rc2/local/lib/python/hashlib.py\", line 63, in __get_builtin_constructor\n    import _md5\nImportError: No module named _md5\n\nreal\t1m38.244s\nuser\t1m15.115s\nsys\t0m13.132s\nsage: An error occurred while installing python-2.6.2.p4\n\n```\n\n\nI'm not sure if this should be reported upstream or not. Some feedback on that might be useful. If so, I will report it to a python bug tracker or similar. The issue seems to arrise often enough. \n\nDave \n\nPS, to even get to this point, I had to delete the following list of files, to get around a gnutls issue in #7387.\n\n\n```\n    * SAGE_LOCAL/include/gcrypt-module.h\n    * SAGE_LOCAL/include/gpg-error.h\n    * SAGE_LOCAL/include/gcrypt.h\n    * SAGE_LOCAL/lib/libgcrypt*\n    * SAGE_LOCAL/lib/libgpg* \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7761\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @williamstein david.kirkby@onetel.net mvngu\n\nKeywords: python open solaris\n\nI believe William is aware of this bug and said it can be fixed by installing OpenSSL or similar. But I am unable to find a trac ticket for it, so I thought I'd open one. It's interesting this issue does not arise on Solaris 10 (SPARC), despite OpenSSL libraries not being present there either. This bug seems to come up a lot on linux too, as a Google search shows. \n\nOn a Sun Ultra 27 (Intel Xeon processor), running Open Solaris 06/2009, I get the following problem when python is being built. \n\n\n```\ncopying build/scripts-2.6/pydoc -> /export/home/drkirkby/sage-4.3.rc2/local/bin\nchanging mode of /export/home/drkirkby/sage-4.3.rc2/local/bin/2to3 to 755\nchanging mode of /export/home/drkirkby/sage-4.3.rc2/local/bin/smtpd.py to 755\nchanging mode of /export/home/drkirkby/sage-4.3.rc2/local/bin/idle to 755\nchanging mode of /export/home/drkirkby/sage-4.3.rc2/local/bin/pydoc to 755\nrunning install_egg_info\nRemoving /export/home/drkirkby/sage-4.3.rc2/local/lib/python2.6/lib-dynload/Python-2.6.2-py2.6.egg-info\nWriting /export/home/drkirkby/sage-4.3.rc2/local/lib/python2.6/lib-dynload/Python-2.6.2-py2.6.egg-info\nif test -f /export/home/drkirkby/sage-4.3.rc2/local/bin/python -o -h /export/home/drkirkby/sage-4.3.rc2/local/bin/python; \\\n\tthen rm -f /export/home/drkirkby/sage-4.3.rc2/local/bin/python; \\\n\telse true; \\\n\tfi\n(cd /export/home/drkirkby/sage-4.3.rc2/local/bin; ln python2.6 python)\nrm -f /export/home/drkirkby/sage-4.3.rc2/local/bin/python-config\n(cd /export/home/drkirkby/sage-4.3.rc2/local/bin; ln -s python2.6-config python-config)\n/usr/bin/ginstall -c -m 644 ./Misc/python.man \\\n\t\t/export/home/drkirkby/sage-4.3.rc2/local/share/man/man1/python.1\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.3.rc2/spkg/build/python-2.6.2.p4/src'\nSleeping for three seconds before testing python\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/export/home/drkirkby/sage-4.3.rc2/local/lib/python/hashlib.py\", line 136, in <module>\n    md5 = __get_builtin_constructor('md5')\n  File \"/export/home/drkirkby/sage-4.3.rc2/local/lib/python/hashlib.py\", line 63, in __get_builtin_constructor\n    import _md5\nImportError: No module named _md5\n\nreal\t1m38.244s\nuser\t1m15.115s\nsys\t0m13.132s\nsage: An error occurred while installing python-2.6.2.p4\n\n```\n\n\nI'm not sure if this should be reported upstream or not. Some feedback on that might be useful. If so, I will report it to a python bug tracker or similar. The issue seems to arrise often enough. \n\nDave \n\nPS, to even get to this point, I had to delete the following list of files, to get around a gnutls issue in #7387.\n\n\n```\n    * SAGE_LOCAL/include/gcrypt-module.h\n    * SAGE_LOCAL/include/gpg-error.h\n    * SAGE_LOCAL/include/gcrypt.h\n    * SAGE_LOCAL/lib/libgcrypt*\n    * SAGE_LOCAL/lib/libgpg* \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7761\n\n",
     "created_at": "2009-12-24T16:45:17Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_007761.json:
 ```
 Assignee: drkirkby
 
-CC:  was david.kirkby@onetel.net mvngu
+CC:  @williamstein david.kirkby@onetel.net mvngu
 
 Keywords: python open solaris
 
@@ -143,7 +143,7 @@ archive/issue_comments_066827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66827",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_066829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66829",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -364,7 +364,7 @@ archive/issue_comments_066833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66833",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -396,7 +396,7 @@ archive/issue_comments_066834.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66834",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -428,7 +428,7 @@ archive/issue_comments_066835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66835",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -514,7 +514,7 @@ archive/issue_comments_066839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66839",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -532,7 +532,7 @@ archive/issue_comments_066840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66840",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -597,7 +597,7 @@ archive/issue_comments_066841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66841",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -615,7 +615,7 @@ archive/issue_comments_066842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66842",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -633,7 +633,7 @@ archive/issue_comments_066843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66843",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -651,7 +651,7 @@ archive/issue_comments_066844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66844",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -677,7 +677,7 @@ archive/issue_comments_066845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66845",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -712,7 +712,7 @@ archive/issue_comments_066846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66846",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -776,7 +776,7 @@ archive/issue_comments_066848.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66848",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -821,7 +821,7 @@ archive/issue_comments_066849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66849",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -858,16 +858,16 @@ Dave
 archive/issue_comments_066851.json:
 ```json
 {
-    "body": "Attachment [python-2.6.4.p6.patch](tarball://root/attachments/some-uuid/ticket7761/python-2.6.4.p6.patch) by jsp created at 2010-02-23 14:33:49\n\nMade a new spkg work on Open nSolaris, leaving the OSX solution as is.\n\n[http://boxen.math.washington.edu/home/jsp/ports/python-2.6.4.p6.spkg](http://boxen.math.washington.edu/home/jsp/ports/python-2.6.4.p6.spkg)\n\nSee also the patch:\n[http://boxen.math.washington.edu/home/jsp/ports/python-2.6.4.p6.patch](http://boxen.math.washington.edu/home/jsp/ports/python-2.6.4.p6.patch)\n\nOn 'hawk':\n\n\n```\n(cd /export/home/jaap/sage_port/sage-4.3.2.alpha1/local/bin; ln python2.6 python)\nrm -f /export/home/jaap/sage_port/sage-4.3.2.alpha1/local/bin/python-config\n(cd /export/home/jaap/sage_port/sage-4.3.2.alpha1/local/bin; ln -s python2.6-config python-config)\n/usr/bin/ginstall -c -m 644 ./Misc/python.man \\\n                /export/home/jaap/sage_port/sage-4.3.2.alpha1/local/share/man/man1/python.1\nSleeping for three seconds before testing python\nhashlib module imported\n/export/home/jaap/sage_port/sage-4.3.2.alpha1\n\n```\n\n\nBig question: does this work for Solaris 10?\n\nJaap",
+    "body": "Attachment [python-2.6.4.p6.patch](tarball://root/attachments/some-uuid/ticket7761/python-2.6.4.p6.patch) by @jaapspies created at 2010-02-23 14:33:49\n\nMade a new spkg work on Open nSolaris, leaving the OSX solution as is.\n\n[http://boxen.math.washington.edu/home/jsp/ports/python-2.6.4.p6.spkg](http://boxen.math.washington.edu/home/jsp/ports/python-2.6.4.p6.spkg)\n\nSee also the patch:\n[http://boxen.math.washington.edu/home/jsp/ports/python-2.6.4.p6.patch](http://boxen.math.washington.edu/home/jsp/ports/python-2.6.4.p6.patch)\n\nOn 'hawk':\n\n\n```\n(cd /export/home/jaap/sage_port/sage-4.3.2.alpha1/local/bin; ln python2.6 python)\nrm -f /export/home/jaap/sage_port/sage-4.3.2.alpha1/local/bin/python-config\n(cd /export/home/jaap/sage_port/sage-4.3.2.alpha1/local/bin; ln -s python2.6-config python-config)\n/usr/bin/ginstall -c -m 644 ./Misc/python.man \\\n                /export/home/jaap/sage_port/sage-4.3.2.alpha1/local/share/man/man1/python.1\nSleeping for three seconds before testing python\nhashlib module imported\n/export/home/jaap/sage_port/sage-4.3.2.alpha1\n\n```\n\n\nBig question: does this work for Solaris 10?\n\nJaap",
     "created_at": "2010-02-23T14:33:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66851",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [python-2.6.4.p6.patch](tarball://root/attachments/some-uuid/ticket7761/python-2.6.4.p6.patch) by jsp created at 2010-02-23 14:33:49
+Attachment [python-2.6.4.p6.patch](tarball://root/attachments/some-uuid/ticket7761/python-2.6.4.p6.patch) by @jaapspies created at 2010-02-23 14:33:49
 
 Made a new spkg work on Open nSolaris, leaving the OSX solution as is.
 
@@ -908,7 +908,7 @@ archive/issue_comments_066852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66852",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -950,7 +950,7 @@ archive/issue_comments_066854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66854",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -1041,7 +1041,7 @@ archive/issue_comments_066858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66858",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 

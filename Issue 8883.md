@@ -3,7 +3,7 @@
 archive/issues_008883.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8883\n\n",
+    "body": "Assignee: @robertwb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8883\n\n",
     "created_at": "2010-05-05T03:11:50Z",
     "labels": [
         "coercion",
@@ -14,10 +14,10 @@ archive/issues_008883.json:
     "title": "Implement morphism.register_as_conversion()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8883",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_081651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8883",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8883#issuecomment-81651",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_081652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8883",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8883#issuecomment-81652",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_081653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8883",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8883#issuecomment-81653",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_081654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8883",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8883#issuecomment-81654",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

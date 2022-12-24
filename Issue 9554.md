@@ -3,7 +3,7 @@
 archive/issues_009554.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  davidloeffler novoselt vbraun timdumol\n\nThis happens with the patches at #8988, which I've merged in the forthcoming 4.5.2.alpha0:\n\n```\n$ ./sage -t -long  local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/misc/sageinspect.py\nsage -t -long \"local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/misc/sageinspect.py\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.1-rm/local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/misc/sageinspect.py\", line 997:\n    sage: sage_getvariablename(A)\nExpected:\n    ['A', 'B']\nGot:\n    ['B', 'A']\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_22\n***Test Failed*** 1 failures.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9554\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @loefflerd @novoselt @vbraun @TimDumol\n\nThis happens with the patches at #8988, which I've merged in the forthcoming 4.5.2.alpha0:\n\n```\n$ ./sage -t -long  local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/misc/sageinspect.py\nsage -t -long \"local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/misc/sageinspect.py\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.1-rm/local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/misc/sageinspect.py\", line 997:\n    sage: sage_getvariablename(A)\nExpected:\n    ['A', 'B']\nGot:\n    ['B', 'A']\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_22\n***Test Failed*** 1 failures.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9554\n\n",
     "created_at": "2010-07-20T08:55:02Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_009554.json:
     "title": "Doctest failure in SageNB's sageinspect.py with #8988",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9554",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: jason, was
 
-CC:  davidloeffler novoselt vbraun timdumol
+CC:  @loefflerd @novoselt @vbraun @TimDumol
 
 This happens with the patches at #8988, which I've merged in the forthcoming 4.5.2.alpha0:
 
@@ -56,7 +56,7 @@ archive/issue_comments_092087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9554",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9554#issuecomment-92087",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_092088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9554",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9554#issuecomment-92088",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_092089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9554",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9554#issuecomment-92089",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -107,16 +107,16 @@ I can make the SageNB patch a bit later this week and try to ensure it's merged 
 archive/issue_comments_092090.json:
 ```json
 {
-    "body": "Attachment [trac_9554-fix_order_of_var_names-SageNB-repo.patch](tarball://root/attachments/some-uuid/ticket9554/trac_9554-fix_order_of_var_names-SageNB-repo.patch) by leif created at 2010-07-22 15:40:42\n\nSageNB repo patch - logically same as http://trac.sagemath.org/sage_trac/attachment/ticket/8988/trac_8988-sageinspect_doctest_fix.patch",
+    "body": "Attachment [trac_9554-fix_order_of_var_names-SageNB-repo.patch](tarball://root/attachments/some-uuid/ticket9554/trac_9554-fix_order_of_var_names-SageNB-repo.patch) by @nexttime created at 2010-07-22 15:40:42\n\nSageNB repo patch - logically same as http://trac.sagemath.org/sage_trac/attachment/ticket/8988/trac_8988-sageinspect_doctest_fix.patch",
     "created_at": "2010-07-22T15:40:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9554",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9554#issuecomment-92090",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_9554-fix_order_of_var_names-SageNB-repo.patch](tarball://root/attachments/some-uuid/ticket9554/trac_9554-fix_order_of_var_names-SageNB-repo.patch) by leif created at 2010-07-22 15:40:42
+Attachment [trac_9554-fix_order_of_var_names-SageNB-repo.patch](tarball://root/attachments/some-uuid/ticket9554/trac_9554-fix_order_of_var_names-SageNB-repo.patch) by @nexttime created at 2010-07-22 15:40:42
 
 SageNB repo patch - logically same as http://trac.sagemath.org/sage_trac/attachment/ticket/8988/trac_8988-sageinspect_doctest_fix.patch
 
@@ -132,7 +132,7 @@ archive/issue_comments_092091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9554",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9554#issuecomment-92091",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_092092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9554",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9554#issuecomment-92092",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_092093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9554",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9554#issuecomment-92093",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_092094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9554",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9554#issuecomment-92094",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_092095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9554",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9554#issuecomment-92095",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_092096.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9554",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9554#issuecomment-92096",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_092097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9554",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9554#issuecomment-92097",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_092098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9554",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9554#issuecomment-92098",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_092099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9554",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9554#issuecomment-92099",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_092100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9554",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9554#issuecomment-92100",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

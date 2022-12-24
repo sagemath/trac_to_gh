@@ -3,7 +3,7 @@
 archive/issues_001538.json:
 ```json
 {
-    "body": "Assignee: was\n\nDoing an upgrade of sage_scripts may modify files in local/bin while bash is executing them.  This means that bash may attempt to execute some mixture of the old and new versions (which will usually lead to an error, because bash will begin executing the new version in the middle of a line).\n\nCurrently Sage includes an effective workaround for this problem... the upgrade is automatically retried if it fails.  However, we should put in a real fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1538\n\n",
+    "body": "Assignee: @williamstein\n\nDoing an upgrade of sage_scripts may modify files in local/bin while bash is executing them.  This means that bash may attempt to execute some mixture of the old and new versions (which will usually lead to an error, because bash will begin executing the new version in the middle of a line).\n\nCurrently Sage includes an effective workaround for this problem... the upgrade is automatically retried if it fails.  However, we should put in a real fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1538\n\n",
     "created_at": "2007-12-16T16:01:56Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_001538.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Doing an upgrade of sage_scripts may modify files in local/bin while bash is executing them.  This means that bash may attempt to execute some mixture of the old and new versions (which will usually lead to an error, because bash will begin executing the new version in the middle of a line).
 
@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1538
 archive/issue_comments_009818.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2007-12-16T16:06:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1538",
     "type": "issue_comment",
@@ -43,7 +43,7 @@ archive/issue_comments_009818.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 
@@ -70,16 +70,16 @@ Changing component from algebraic geometry to distribution.
 archive/issue_comments_009820.json:
 ```json
 {
-    "body": "Attachment [1538_upgrade_root.patch](tarball://root/attachments/some-uuid/ticket1538/1538_upgrade_root.patch) by jdemeyer created at 2012-10-05 13:09:08",
+    "body": "Attachment [1538_upgrade_root.patch](tarball://root/attachments/some-uuid/ticket1538/1538_upgrade_root.patch) by @jdemeyer created at 2012-10-05 13:09:08",
     "created_at": "2012-10-05T13:09:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1538#issuecomment-9820",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [1538_upgrade_root.patch](tarball://root/attachments/some-uuid/ticket1538/1538_upgrade_root.patch) by jdemeyer created at 2012-10-05 13:09:08
+Attachment [1538_upgrade_root.patch](tarball://root/attachments/some-uuid/ticket1538/1538_upgrade_root.patch) by @jdemeyer created at 2012-10-05 13:09:08
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_009821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1538#issuecomment-9821",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -106,16 +106,16 @@ Changing component from distribution to build.
 archive/issue_comments_009822.json:
 ```json
 {
-    "body": "Attachment [1538_upgrade_scripts.patch](tarball://root/attachments/some-uuid/ticket1538/1538_upgrade_scripts.patch) by jdemeyer created at 2013-08-13 15:34:36",
+    "body": "Attachment [1538_upgrade_scripts.patch](tarball://root/attachments/some-uuid/ticket1538/1538_upgrade_scripts.patch) by @jdemeyer created at 2013-08-13 15:34:36",
     "created_at": "2013-08-13T15:34:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1538#issuecomment-9822",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [1538_upgrade_scripts.patch](tarball://root/attachments/some-uuid/ticket1538/1538_upgrade_scripts.patch) by jdemeyer created at 2013-08-13 15:34:36
+Attachment [1538_upgrade_scripts.patch](tarball://root/attachments/some-uuid/ticket1538/1538_upgrade_scripts.patch) by @jdemeyer created at 2013-08-13 15:34:36
 
 
 
@@ -129,7 +129,7 @@ archive/issue_comments_009823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1538#issuecomment-9823",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_009824.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1538#issuecomment-9824",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_009825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1538#issuecomment-9825",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_009826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1538#issuecomment-9826",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

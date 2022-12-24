@@ -3,7 +3,7 @@
 archive/issues_000811.json:
 ```json
 {
-    "body": "Assignee: was\n\nget Andrew Sutherland's insanely fast hyperelliptic curve pointing into SAGE (see also #793)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/811\n\n",
+    "body": "Assignee: @williamstein\n\nget Andrew Sutherland's insanely fast hyperelliptic curve pointing into SAGE (see also #793)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/811\n\n",
     "created_at": "2007-10-03T16:49:22Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_000811.json:
     "user": "dmharvey"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 get Andrew Sutherland's insanely fast hyperelliptic curve pointing into SAGE (see also #793)
 
@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/811
 archive/issue_comments_004905.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2007-10-04T19:54:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/811",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_004905.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 

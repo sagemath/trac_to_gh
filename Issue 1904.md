@@ -3,7 +3,7 @@
 archive/issues_001904.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  davidloeffler\n\n\n```\nsage: E = EllipticCurve('37a1')\nsage: Lambda = E.period_lattice()\nsage: OE = Lambda.omega(); OE\n5.986917292463919259664019958905016355595167582740265970681046757126500713973\nsage: Lambda.matrix()\nTraceback (most recent call last):\n...\nTypeError: Unable to coerce 2.451389381986790060854224831866525225349617289144796614656471406129152899999*I (<type 'sage.rings.complex_number.ComplexNumber'>) to Rational\nsage: Lambda.gram_matrix()\nTraceback (most recent call last):\n...\nAttributeError: 'PeriodLattice_ell' object has no attribute 'ambient_vector_space'\nsage: Lambda.basis()\n(2.993458646231959629832009979452508177797583791370132985340523378563250356987, 2.451389381986790060854224831866525225349617289144796614656471406129152899999*I)\nsage: Lambda.basis_matrix()\nTraceback (most recent call last):\n...\nTypeError: Unable to coerce 2.451389381986790060854224831866525225349617289144796614656471406129152899999*I (<type 'sage.rings.complex_number.ComplexNumber'>) to Rational\ns\n```\n\n\nThe root cause of this is that Period lattices actually derive from the abstract free module type, but they don't implement all the functionality that type requires. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1904\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @loefflerd\n\n\n```\nsage: E = EllipticCurve('37a1')\nsage: Lambda = E.period_lattice()\nsage: OE = Lambda.omega(); OE\n5.986917292463919259664019958905016355595167582740265970681046757126500713973\nsage: Lambda.matrix()\nTraceback (most recent call last):\n...\nTypeError: Unable to coerce 2.451389381986790060854224831866525225349617289144796614656471406129152899999*I (<type 'sage.rings.complex_number.ComplexNumber'>) to Rational\nsage: Lambda.gram_matrix()\nTraceback (most recent call last):\n...\nAttributeError: 'PeriodLattice_ell' object has no attribute 'ambient_vector_space'\nsage: Lambda.basis()\n(2.993458646231959629832009979452508177797583791370132985340523378563250356987, 2.451389381986790060854224831866525225349617289144796614656471406129152899999*I)\nsage: Lambda.basis_matrix()\nTraceback (most recent call last):\n...\nTypeError: Unable to coerce 2.451389381986790060854224831866525225349617289144796614656471406129152899999*I (<type 'sage.rings.complex_number.ComplexNumber'>) to Rational\ns\n```\n\n\nThe root cause of this is that Period lattices actually derive from the abstract free module type, but they don't implement all the functionality that type requires. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1904\n\n",
     "created_at": "2008-01-24T02:46:27Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_001904.json:
     "title": "elliptic curves -- many period lattice functions just don't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1904",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  davidloeffler
+CC:  @loefflerd
 
 
 ```
@@ -63,7 +63,7 @@ archive/issue_comments_012051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1904#issuecomment-12051",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_012052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1904#issuecomment-12052",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_012053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1904#issuecomment-12053",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_012054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1904#issuecomment-12054",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -138,16 +138,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_012055.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-07-20T19:47:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1904#issuecomment-12055",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 
@@ -161,7 +161,7 @@ archive/issue_comments_012056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1904#issuecomment-12056",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_012057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1904#issuecomment-12057",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -192,16 +192,16 @@ Changing component from number theory to elliptic curves.
 archive/issue_comments_012058.json:
 ```json
 {
-    "body": "Remove assignee davidloeffler.",
+    "body": "Remove assignee @loefflerd.",
     "created_at": "2009-10-09T09:12:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1904#issuecomment-12058",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Remove assignee davidloeffler.
+Remove assignee @loefflerd.
 
 
 
@@ -215,7 +215,7 @@ archive/issue_comments_012059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1904#issuecomment-12059",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_012060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1904#issuecomment-12060",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_012061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1904#issuecomment-12061",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_012062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1904#issuecomment-12062",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -319,7 +319,7 @@ archive/issue_comments_012063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1904#issuecomment-12063",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -337,7 +337,7 @@ archive/issue_comments_012064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1904#issuecomment-12064",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -355,7 +355,7 @@ archive/issue_comments_012065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1904#issuecomment-12065",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -373,7 +373,7 @@ archive/issue_comments_012066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1904#issuecomment-12066",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 

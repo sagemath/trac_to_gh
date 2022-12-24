@@ -14,7 +14,7 @@ archive/issues_009050.json:
     "title": "libntl.dll should be libntl.dll.a on Cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9050",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_083797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9050",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9050#issuecomment-83797",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_083798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9050",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9050#issuecomment-83798",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_083799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9050",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9050#issuecomment-83799",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_004592.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  robertwb\n\nI can't get #4580 to compile, and I think this is why:\n\n#4580 adds \"`from python_int cimport PyInt_AS_LONG`\" to a Sage library file.  I believe this is intended to refer to $SAGE_ROOT/local/lib/python2.5/site-packages/Cython/Includes/python_int.pxd, but the setup.py dependency checker doesn't know about these Cython built-in pxd files, so it fails with an error: \n\n```\nIOError: [Errno 2] No such file or directory: 'sage/rings/polynomial/python_int.pxd'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4592\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @robertwb\n\nI can't get #4580 to compile, and I think this is why:\n\n#4580 adds \"`from python_int cimport PyInt_AS_LONG`\" to a Sage library file.  I believe this is intended to refer to $SAGE_ROOT/local/lib/python2.5/site-packages/Cython/Includes/python_int.pxd, but the setup.py dependency checker doesn't know about these Cython built-in pxd files, so it fails with an error: \n\n```\nIOError: [Errno 2] No such file or directory: 'sage/rings/polynomial/python_int.pxd'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4592\n\n",
     "created_at": "2008-11-23T04:56:53Z",
     "labels": [
         "build",
@@ -17,9 +17,9 @@ archive/issues_004592.json:
     "user": "cwitty"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
-CC:  robertwb
+CC:  @robertwb
 
 I can't get #4580 to compile, and I think this is why:
 
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4592
 archive/issue_comments_034439.json:
 ```json
 {
-    "body": "Attachment [trac-4592.patch](tarball://root/attachments/some-uuid/ticket4592/trac-4592.patch) by craigcitro created at 2008-11-23 08:45:11",
+    "body": "Attachment [trac-4592.patch](tarball://root/attachments/some-uuid/ticket4592/trac-4592.patch) by @craigcitro created at 2008-11-23 08:45:11",
     "created_at": "2008-11-23T08:45:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4592#issuecomment-34439",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4592.patch](tarball://root/attachments/some-uuid/ticket4592/trac-4592.patch) by craigcitro created at 2008-11-23 08:45:11
+Attachment [trac-4592.patch](tarball://root/attachments/some-uuid/ticket4592/trac-4592.patch) by @craigcitro created at 2008-11-23 08:45:11
 
 
 
@@ -64,7 +64,7 @@ archive/issue_comments_034440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4592#issuecomment-34440",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_034441.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4592#issuecomment-34441",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

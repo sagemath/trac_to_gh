@@ -3,7 +3,7 @@
 archive/issues_001352.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\n\n```\nsage: R.<x> = QQ[]; S.<y> = R[]\nsage: f = x+y*x+y^2\nsage: f(x=sqrt(2))\n...\nIndexError: tuple index out of range\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1352\n\n",
+    "body": "Assignee: @mwhansen\n\n\n```\nsage: R.<x> = QQ[]; S.<y> = R[]\nsage: f = x+y*x+y^2\nsage: f(x=sqrt(2))\n...\nIndexError: tuple index out of range\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1352\n\n",
     "created_at": "2007-12-01T18:32:53Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_001352.json:
     "title": "[with patch] doctest error in 2.8.15.alpha0 polynomial_element.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1352",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 
 ```

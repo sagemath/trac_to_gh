@@ -14,7 +14,7 @@ archive/issues_005197.json:
     "title": "notebook -- render worksheet list now totally broken on sagenb.org by somebody naming a worksheet with a character u'\\xa7'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5197",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -93,7 +93,7 @@ archive/issue_comments_039834.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5197",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5197#issuecomment-39834",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_039835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5197",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5197#issuecomment-39835",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

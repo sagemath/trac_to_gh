@@ -3,7 +3,7 @@
 archive/issues_004941.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe following illustrates that list slicing in Pari is ridiculously slow.\n\n\n```\nsage: time p=pari.prime_list(10^6)\nCPU times: user 0.06 s, sys: 0.02 s, total: 0.08 s\nWall time: 0.09 s\nsage: len(p)\n1000000\nsage: time c=p[0:]\nCPU times: user 45.05 s, sys: 0.54 s, total: 45.59 s\nWall time: 46.20 s\n```\n\n\nThe code responsible for this is in pari/gen.pyx (line 825 in sage-3.2.3) in __getitem__:\n\n```\n        elif PyObject_TypeCheck(n, slice):\n            l = glength(self.g)\n            inds = _normalize_slice(n, l)\n            k = len(inds)\n            v = P.vector(k)\n            for i in range(k):\n                v[i] = self[inds[i]]\n            return v\n```\n\n\nThere must be dramatically faster ways to do a list slice in pari than the above.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4941\n\n",
+    "body": "Assignee: @williamstein\n\nThe following illustrates that list slicing in Pari is ridiculously slow.\n\n\n```\nsage: time p=pari.prime_list(10^6)\nCPU times: user 0.06 s, sys: 0.02 s, total: 0.08 s\nWall time: 0.09 s\nsage: len(p)\n1000000\nsage: time c=p[0:]\nCPU times: user 45.05 s, sys: 0.54 s, total: 45.59 s\nWall time: 46.20 s\n```\n\n\nThe code responsible for this is in pari/gen.pyx (line 825 in sage-3.2.3) in __getitem__:\n\n```\n        elif PyObject_TypeCheck(n, slice):\n            l = glength(self.g)\n            inds = _normalize_slice(n, l)\n            k = len(inds)\n            v = P.vector(k)\n            for i in range(k):\n                v[i] = self[inds[i]]\n            return v\n```\n\n\nThere must be dramatically faster ways to do a list slice in pari than the above.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4941\n\n",
     "created_at": "2009-01-05T17:10:35Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_004941.json:
     "title": "pari list slicing is extremely slow -- make it much faster",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4941",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The following illustrates that list slicing in Pari is ridiculously slow.
 
@@ -197,7 +197,7 @@ archive/issue_comments_037502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4941#issuecomment-37502",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_037503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4941#issuecomment-37503",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

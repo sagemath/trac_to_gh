@@ -14,7 +14,7 @@ archive/issues_001653.json:
     "title": "Bug raising an integer to a float  (probably really easy to fix in integer.pyx!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1653",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody

@@ -14,7 +14,7 @@ archive/issues_004755.json:
     "title": "CremonaDatabase().number_of_curves() should work when the optional database isn't installed.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4755",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: cwitty
@@ -73,7 +73,7 @@ archive/issue_comments_036011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4755#issuecomment-36011",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_036012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4755#issuecomment-36012",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -104,16 +104,16 @@ The attached patch fixes the two issues, as well as a number of smaller issues t
 archive/issue_comments_036013.json:
 ```json
 {
-    "body": "Attachment [trac_4755.patch](tarball://root/attachments/some-uuid/ticket4755/trac_4755.patch) by robertwb created at 2009-01-23 22:46:05\n\nLooks and works good for me. Lots of other documentation and other typo fixes too.",
+    "body": "Attachment [trac_4755.patch](tarball://root/attachments/some-uuid/ticket4755/trac_4755.patch) by @robertwb created at 2009-01-23 22:46:05\n\nLooks and works good for me. Lots of other documentation and other typo fixes too.",
     "created_at": "2009-01-23T22:46:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4755#issuecomment-36013",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [trac_4755.patch](tarball://root/attachments/some-uuid/ticket4755/trac_4755.patch) by robertwb created at 2009-01-23 22:46:05
+Attachment [trac_4755.patch](tarball://root/attachments/some-uuid/ticket4755/trac_4755.patch) by @robertwb created at 2009-01-23 22:46:05
 
 Looks and works good for me. Lots of other documentation and other typo fixes too.
 

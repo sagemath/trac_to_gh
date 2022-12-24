@@ -14,7 +14,7 @@ archive/issues_007281.json:
     "title": "numerical noise issue on fedora32 for 4.2.alpha1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7281",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
@@ -52,7 +52,7 @@ archive/issue_comments_060604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7281",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7281#issuecomment-60604",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_060605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7281",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7281#issuecomment-60605",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

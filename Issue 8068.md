@@ -3,7 +3,7 @@
 archive/issues_008068.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  drkirby was\n\nLet spkg-install handle SAGE64=\"yes\" on Open Solaris 65 bit.\n\n\nSee here:\n[http://boxen.math.washington.edu/home/jsp/ports/mpfr-2.4.1.p1.spkg](http://boxen.math.washington.edu/home/jsp/ports/mpfr-2.4.1.p1.spkg)\n\n\n\n\n```\nPASS: tpow_all\n====================\nAll 148 tests passed\n====================\nmake[2]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfr-2.4.1.p1/src/tests'\nmake[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfr-2.4.1.p1/src/tests'\nmake[1]: Entering directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfr-2.4.1.p1/src'\nmake[1]: Nothing to be done for `check-am'.\nmake[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfr-2.4.1.p1/src'\n\nreal\t2m15.371s\nuser\t1m22.294s\nsys\t0m54.607s\nSuccessfully installed mpfr-2.4.1.p1\n\n```\n\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/8068\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  drkirby @williamstein\n\nLet spkg-install handle SAGE64=\"yes\" on Open Solaris 65 bit.\n\n\nSee here:\n[http://boxen.math.washington.edu/home/jsp/ports/mpfr-2.4.1.p1.spkg](http://boxen.math.washington.edu/home/jsp/ports/mpfr-2.4.1.p1.spkg)\n\n\n\n\n```\nPASS: tpow_all\n====================\nAll 148 tests passed\n====================\nmake[2]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfr-2.4.1.p1/src/tests'\nmake[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfr-2.4.1.p1/src/tests'\nmake[1]: Entering directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfr-2.4.1.p1/src'\nmake[1]: Nothing to be done for `check-am'.\nmake[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfr-2.4.1.p1/src'\n\nreal\t2m15.371s\nuser\t1m22.294s\nsys\t0m54.607s\nSuccessfully installed mpfr-2.4.1.p1\n\n```\n\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/8068\n\n",
     "created_at": "2010-01-25T23:41:29Z",
     "labels": [
         "porting",
@@ -14,12 +14,12 @@ archive/issues_008068.json:
     "title": "New mpfr-2.4.1.p1.spkg works with Open Solaris 64 bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8068",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: drkirkby
 
-CC:  drkirby was
+CC:  drkirby @williamstein
 
 Let spkg-install handle SAGE64="yes" on Open Solaris 65 bit.
 
@@ -67,7 +67,7 @@ archive/issue_comments_070704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8068",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8068#issuecomment-70704",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -80,16 +80,16 @@ Changing status from new to needs_review.
 archive/issue_comments_070705.json:
 ```json
 {
-    "body": "Attachment [mpfr-2.4.1.p1.patch](tarball://root/attachments/some-uuid/ticket8068/mpfr-2.4.1.p1.patch) by jsp created at 2010-01-26 18:49:34",
+    "body": "Attachment [mpfr-2.4.1.p1.patch](tarball://root/attachments/some-uuid/ticket8068/mpfr-2.4.1.p1.patch) by @jaapspies created at 2010-01-26 18:49:34",
     "created_at": "2010-01-26T18:49:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8068",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8068#issuecomment-70705",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [mpfr-2.4.1.p1.patch](tarball://root/attachments/some-uuid/ticket8068/mpfr-2.4.1.p1.patch) by jsp created at 2010-01-26 18:49:34
+Attachment [mpfr-2.4.1.p1.patch](tarball://root/attachments/some-uuid/ticket8068/mpfr-2.4.1.p1.patch) by @jaapspies created at 2010-01-26 18:49:34
 
 
 
@@ -159,7 +159,7 @@ archive/issue_comments_070709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8068",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8068#issuecomment-70709",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

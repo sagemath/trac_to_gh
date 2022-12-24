@@ -3,7 +3,7 @@
 archive/issues_000238.json:
 ```json
 {
-    "body": "Assignee: was\n\nJust do sage -f -m meataxe-2.4.3.spkg and watch it crash and burn, then follow\nthe error message and start hacking!\n\n```\n\n...\nCompiling library module grtable\nCompiling library module homcomp\nCompiling library module imatcore\nCompiling library module imatread\nCompiling library module imatwrite\nCompiling library module init\nCompiling library module intio\nCompiling library module issub\nCompiling library module isisom\nCompiling library module kernel-0\nCompiling library module ldiag\nCompiling library module maddmul\nCompiling library module mat2vec\nCompiling library module matadd\nCompiling library module matclean\nCompiling library module matcmp\nCompiling library module maketabF\nmaketabF.c:30: error: static declaration of 'tmult' follows non-static declaration\nmeataxe.h:149: error: previous declaration of 'tmult' was here\nmaketabF.c:31: error: static declaration of 'tadd' follows non-static declaration\nmeataxe.h:150: error: previous declaration of 'tadd' was here\nmaketabF.c:34: error: static declaration of 'taddinv' follows non-static declaration\nmeataxe.h:151: error: previous declaration of 'taddinv' was here\nmaketabF.c:35: error: static declaration of 'tmultinv' follows non-static declaration\nmeataxe.h:151: error: previous declaration of 'tmultinv' was here\nmake: *** [libmtx.a(maketabF.o)] Error 1\n\nreal    0m5.384s\nuser    0m3.320s\nsys     0m1.631s\nsage: An error occured while installing meataxe-2.4.3\nPlease email William Stein <wstein@gmail.com> explaining the\nproblem and send him the relevant part of\nof /Users/was/s/install.log.  Don't send the whole thing.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/Users/was/s/spkg/build/meataxe-2.4.3 and type 'make'.\nInstead (using bash) type \"source local/bin/sage-env\" from the directory\n/Users/was/s\nin order to set all environment variables correctly, then cd to\n/Users/was/s/spkg/build/meataxe-2.4.3\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/238\n\n",
+    "body": "Assignee: @williamstein\n\nJust do sage -f -m meataxe-2.4.3.spkg and watch it crash and burn, then follow\nthe error message and start hacking!\n\n```\n\n...\nCompiling library module grtable\nCompiling library module homcomp\nCompiling library module imatcore\nCompiling library module imatread\nCompiling library module imatwrite\nCompiling library module init\nCompiling library module intio\nCompiling library module issub\nCompiling library module isisom\nCompiling library module kernel-0\nCompiling library module ldiag\nCompiling library module maddmul\nCompiling library module mat2vec\nCompiling library module matadd\nCompiling library module matclean\nCompiling library module matcmp\nCompiling library module maketabF\nmaketabF.c:30: error: static declaration of 'tmult' follows non-static declaration\nmeataxe.h:149: error: previous declaration of 'tmult' was here\nmaketabF.c:31: error: static declaration of 'tadd' follows non-static declaration\nmeataxe.h:150: error: previous declaration of 'tadd' was here\nmaketabF.c:34: error: static declaration of 'taddinv' follows non-static declaration\nmeataxe.h:151: error: previous declaration of 'taddinv' was here\nmaketabF.c:35: error: static declaration of 'tmultinv' follows non-static declaration\nmeataxe.h:151: error: previous declaration of 'tmultinv' was here\nmake: *** [libmtx.a(maketabF.o)] Error 1\n\nreal    0m5.384s\nuser    0m3.320s\nsys     0m1.631s\nsage: An error occured while installing meataxe-2.4.3\nPlease email William Stein <wstein@gmail.com> explaining the\nproblem and send him the relevant part of\nof /Users/was/s/install.log.  Don't send the whole thing.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/Users/was/s/spkg/build/meataxe-2.4.3 and type 'make'.\nInstead (using bash) type \"source local/bin/sage-env\" from the directory\n/Users/was/s\nin order to set all environment variables correctly, then cd to\n/Users/was/s/spkg/build/meataxe-2.4.3\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/238\n\n",
     "created_at": "2007-02-02T19:28:06Z",
     "labels": [
         "packages: standard",
@@ -13,10 +13,10 @@ archive/issues_000238.json:
     "title": "create a  meataxe-2.4.3.spkg package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/238",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Just do sage -f -m meataxe-2.4.3.spkg and watch it crash and burn, then follow
 the error message and start hacking!
@@ -84,7 +84,7 @@ archive/issue_comments_001066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/238#issuecomment-1066",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_001067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/238#issuecomment-1067",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

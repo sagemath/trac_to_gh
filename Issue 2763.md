@@ -3,7 +3,7 @@
 archive/issues_002763.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nApparently my rubiks Debian package failed to distclean, and thus some i386 binaries managed to survive during the amd64 build, which produced a very confusing error from dpkh-shlibdeps.  The attached patch fixes this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2763\n\n",
+    "body": "Assignee: @timabbott\n\nApparently my rubiks Debian package failed to distclean, and thus some i386 binaries managed to survive during the amd64 build, which produced a very confusing error from dpkh-shlibdeps.  The attached patch fixes this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2763\n\n",
     "created_at": "2008-04-01T22:14:11Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_002763.json:
     "title": "[with patch; needs review] Debian amd64 fixes for rubiks",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2763",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 Apparently my rubiks Debian package failed to distclean, and thus some i386 binaries managed to survive during the amd64 build, which produced a very confusing error from dpkh-shlibdeps.  The attached patch fixes this.
 

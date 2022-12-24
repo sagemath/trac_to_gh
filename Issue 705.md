@@ -14,7 +14,7 @@ archive/issues_000705.json:
     "title": "Make vtk an easy-to-install optional sage package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/705",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jkantor
@@ -76,7 +76,7 @@ archive/issue_comments_003708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/705#issuecomment-3708",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_003709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/705#issuecomment-3709",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_004654.json:
     "title": "[with patch, needs review] for 'sage -testall': put sage version in test log",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4654",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: somebody

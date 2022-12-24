@@ -3,7 +3,7 @@
 archive/issues_003436.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  craigcitro\n\nMatrices with prescribed density are not generated correctly:\n\n\n```\nsage: M = random_matrix(GF(65537), 100, 100, sparse=True, density=0.1)\nsage: len(M.nonzero_positions())\n940\nsage: M = random_matrix(GF(2), 100, 100, sparse=True, density=0.1)\nsage: len(M.nonzero_positions())\n465\n```\n\n\nTo wit: the actual density of the matrix over GF(2) is only approximately half of what we expect. This happens because the randomize() function populating the entries does not check whether the random element picked actually is non-zero. Apparently, all of the matrix classes are affected by this bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3436\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @craigcitro\n\nMatrices with prescribed density are not generated correctly:\n\n\n```\nsage: M = random_matrix(GF(65537), 100, 100, sparse=True, density=0.1)\nsage: len(M.nonzero_positions())\n940\nsage: M = random_matrix(GF(2), 100, 100, sparse=True, density=0.1)\nsage: len(M.nonzero_positions())\n465\n```\n\n\nTo wit: the actual density of the matrix over GF(2) is only approximately half of what we expect. This happens because the randomize() function populating the entries does not check whether the random element picked actually is non-zero. Apparently, all of the matrix classes are affected by this bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3436\n\n",
     "created_at": "2008-06-16T04:56:11Z",
     "labels": [
         "linear algebra",
@@ -17,9 +17,9 @@ archive/issues_003436.json:
     "user": "rpw"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  craigcitro
+CC:  @craigcitro
 
 Matrices with prescribed density are not generated correctly:
 
@@ -52,7 +52,7 @@ archive/issue_comments_024214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24214",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_024215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24215",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_024216.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24216",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_024225.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24225",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_024227.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24227",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -365,7 +365,7 @@ archive/issue_comments_024229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24229",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -807,7 +807,7 @@ archive/issue_comments_024249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24249",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -820,16 +820,16 @@ So I'm tempted to (re-)propose a fix in the other direction. As Tom noted, the p
 archive/issue_comments_024250.json:
 ```json
 {
-    "body": "Attachment [trac3436_whitespace.patch](tarball://root/attachments/some-uuid/ticket3436/trac3436_whitespace.patch) by wjp created at 2010-01-19 06:00:34\n\nI attached a minor patch that fixes two whitespace problems in the doctests that caused failures.\n\nCurrent patch list:\n\ntrac3436_main.patch\ntrac3436_poly.patch\ntrac3436_whitespace.patch",
+    "body": "Attachment [trac3436_whitespace.patch](tarball://root/attachments/some-uuid/ticket3436/trac3436_whitespace.patch) by @wjp created at 2010-01-19 06:00:34\n\nI attached a minor patch that fixes two whitespace problems in the doctests that caused failures.\n\nCurrent patch list:\n\ntrac3436_main.patch\ntrac3436_poly.patch\ntrac3436_whitespace.patch",
     "created_at": "2010-01-19T06:00:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24250",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [trac3436_whitespace.patch](tarball://root/attachments/some-uuid/ticket3436/trac3436_whitespace.patch) by wjp created at 2010-01-19 06:00:34
+Attachment [trac3436_whitespace.patch](tarball://root/attachments/some-uuid/ticket3436/trac3436_whitespace.patch) by @wjp created at 2010-01-19 06:00:34
 
 I attached a minor patch that fixes two whitespace problems in the doctests that caused failures.
 
@@ -851,7 +851,7 @@ archive/issue_comments_024251.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24251",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -909,7 +909,7 @@ archive/issue_comments_024254.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24254",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

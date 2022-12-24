@@ -3,7 +3,7 @@
 archive/issues_003251.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jason kcrisman\n\n\n```\nOn Sat, May 10, 2008 at 9:35 AM, Hector Villafuerte <hectorvd@gmail.com> wrote:\n>\n> On Sat, May 10, 2008 at 9:14 AM, louie <loufervillegas@hotmail.com> wrote:\n>>\n>> I made a custom polar grid based on circles and lines and then plotted\n>> some points but the points appeared behind the grid. I tried the\n>> documentation on these primitives and also show() but nothing on the\n>> subject.\n>\n>\n> I was sure that it depended on the order of the plots when adding\n> them... but it doesn't work for me here, since p1+p0 gives the same\n> result as p0+p1:\n>\n> sage: p0 = polar_plot(lambda t: 1, 0, 2*pi, thickness=5)\n> sage: p1 = sum([point( [cos(k), sin(k)], pointsize=70, rgbcolor='red')\n> for k in srange(0,2*pi,pi/4)])\n> sage: (p1+p0).show(aspect_ratio=1)\n> sage: (p0+p1).show(aspect_ratio=1)\n>\n> Some of the more knowledgeable users might want to comment on this.\n> Best,\n> --\n>  Hector\n\nI don't know of any way to fix this at present.   It was in Alex Clemesha's\noriginal implementation of plotting, and he never fixed it.  Somebody will\nlikely have to spend some time understanding why Sage's \"plotting using\nmatplotlib\" organizers overlaps in such a weird way and fix it.  If anybody\nalready has, please speak up.\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3251\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @kcrisman\n\n\n```\nOn Sat, May 10, 2008 at 9:35 AM, Hector Villafuerte <hectorvd@gmail.com> wrote:\n>\n> On Sat, May 10, 2008 at 9:14 AM, louie <loufervillegas@hotmail.com> wrote:\n>>\n>> I made a custom polar grid based on circles and lines and then plotted\n>> some points but the points appeared behind the grid. I tried the\n>> documentation on these primitives and also show() but nothing on the\n>> subject.\n>\n>\n> I was sure that it depended on the order of the plots when adding\n> them... but it doesn't work for me here, since p1+p0 gives the same\n> result as p0+p1:\n>\n> sage: p0 = polar_plot(lambda t: 1, 0, 2*pi, thickness=5)\n> sage: p1 = sum([point( [cos(k), sin(k)], pointsize=70, rgbcolor='red')\n> for k in srange(0,2*pi,pi/4)])\n> sage: (p1+p0).show(aspect_ratio=1)\n> sage: (p0+p1).show(aspect_ratio=1)\n>\n> Some of the more knowledgeable users might want to comment on this.\n> Best,\n> --\n>  Hector\n\nI don't know of any way to fix this at present.   It was in Alex Clemesha's\noriginal implementation of plotting, and he never fixed it.  Somebody will\nlikely have to spend some time understanding why Sage's \"plotting using\nmatplotlib\" organizers overlaps in such a weird way and fix it.  If anybody\nalready has, please speak up.\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3251\n\n",
     "created_at": "2008-05-18T03:29:42Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_003251.json:
     "title": "plot level is really weird -- points, etc., are difficult to control whether they are above or below other plot elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3251",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jason kcrisman
+CC:  @jasongrout @kcrisman
 
 
 ```
@@ -73,7 +73,7 @@ archive/issue_comments_022493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3251#issuecomment-22493",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_022494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3251#issuecomment-22494",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

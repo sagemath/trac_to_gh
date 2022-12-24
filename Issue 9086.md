@@ -3,7 +3,7 @@
 archive/issues_009086.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nKeywords: symbolic fraction, sign, minus, latex\n\nWhen the numerator of a (negative) symbolic expression happens to be `1` (and only then), the sign is dropped in its LaTeX representation (but not its string representation):\n\n\n```\nsage: latex(-1/x)\n\\frac{1}{x}\nsage: latex(1/-x) \n\\frac{1}{x}\n```\n\n\nOrigin of the new doctest failure in `sage/graphs/generic_graphy.py`, introduced with Sage 4.4.3.alpha0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9086\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: symbolic fraction, sign, minus, latex\n\nWhen the numerator of a (negative) symbolic expression happens to be `1` (and only then), the sign is dropped in its LaTeX representation (but not its string representation):\n\n\n```\nsage: latex(-1/x)\n\\frac{1}{x}\nsage: latex(1/-x) \n\\frac{1}{x}\n```\n\n\nOrigin of the new doctest failure in `sage/graphs/generic_graphy.py`, introduced with Sage 4.4.3.alpha0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9086\n\n",
     "created_at": "2010-05-29T18:44:54Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_009086.json:
     "title": "LaTeX representation of negative symbolic fractions broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9086",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 Keywords: symbolic fraction, sign, minus, latex
 
@@ -50,7 +50,7 @@ archive/issue_comments_084367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9086",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9086#issuecomment-84367",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_084368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9086",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9086#issuecomment-84368",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -86,16 +86,16 @@ I will only be able to look at this after next weekend.
 archive/issue_comments_084369.json:
 ```json
 {
-    "body": "Attachment [trac_9086.patch](tarball://root/attachments/some-uuid/ticket9086/trac_9086.patch) by was created at 2010-06-03 01:25:17\n\napply to sage library",
+    "body": "Attachment [trac_9086.patch](tarball://root/attachments/some-uuid/ticket9086/trac_9086.patch) by @williamstein created at 2010-06-03 01:25:17\n\napply to sage library",
     "created_at": "2010-06-03T01:25:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9086",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9086#issuecomment-84369",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_9086.patch](tarball://root/attachments/some-uuid/ticket9086/trac_9086.patch) by was created at 2010-06-03 01:25:17
+Attachment [trac_9086.patch](tarball://root/attachments/some-uuid/ticket9086/trac_9086.patch) by @williamstein created at 2010-06-03 01:25:17
 
 apply to sage library
 
@@ -106,16 +106,16 @@ apply to sage library
 archive/issue_comments_084370.json:
 ```json
 {
-    "body": "Attachment [trac_9086-apply_to_pynac.patch](tarball://root/attachments/some-uuid/ticket9086/trac_9086-apply_to_pynac.patch) by was created at 2010-06-03 01:25:34\n\napply to src/ repo in pynac spkg",
+    "body": "Attachment [trac_9086-apply_to_pynac.patch](tarball://root/attachments/some-uuid/ticket9086/trac_9086-apply_to_pynac.patch) by @williamstein created at 2010-06-03 01:25:34\n\napply to src/ repo in pynac spkg",
     "created_at": "2010-06-03T01:25:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9086",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9086#issuecomment-84370",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_9086-apply_to_pynac.patch](tarball://root/attachments/some-uuid/ticket9086/trac_9086-apply_to_pynac.patch) by was created at 2010-06-03 01:25:34
+Attachment [trac_9086-apply_to_pynac.patch](tarball://root/attachments/some-uuid/ticket9086/trac_9086-apply_to_pynac.patch) by @williamstein created at 2010-06-03 01:25:34
 
 apply to src/ repo in pynac spkg
 
@@ -131,7 +131,7 @@ archive/issue_comments_084371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9086",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9086#issuecomment-84371",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_084372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9086",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9086#issuecomment-84372",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_084373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9086",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9086#issuecomment-84373",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_084374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9086",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9086#issuecomment-84374",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_084375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9086",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9086#issuecomment-84375",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_084376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9086",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9086#issuecomment-84376",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_084377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9086",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9086#issuecomment-84377",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_084378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9086",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9086#issuecomment-84378",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_084379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9086",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9086#issuecomment-84379",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -368,7 +368,7 @@ archive/issue_comments_084383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9086",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9086#issuecomment-84383",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -407,7 +407,7 @@ archive/issue_comments_084385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9086",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9086#issuecomment-84385",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 

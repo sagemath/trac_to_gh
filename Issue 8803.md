@@ -14,7 +14,7 @@ archive/issues_008803.json:
     "title": "Bring doctest for plot/axes.py to 100% or remove it",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8803",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: mvngu
@@ -37,7 +37,7 @@ archive/issue_comments_080761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8803#issuecomment-80761",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_080762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8803#issuecomment-80762",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_080763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8803#issuecomment-80763",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_080765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8803#issuecomment-80765",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_080766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8803#issuecomment-80766",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_080767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8803#issuecomment-80767",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_080768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8803#issuecomment-80768",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_080769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8803#issuecomment-80769",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_080770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8803#issuecomment-80770",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_080771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8803#issuecomment-80771",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_080772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8803#issuecomment-80772",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_080773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8803#issuecomment-80773",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_080774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8803#issuecomment-80774",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -307,7 +307,7 @@ archive/issue_comments_080775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8803#issuecomment-80775",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_080776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8803#issuecomment-80776",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -343,7 +343,7 @@ archive/issue_comments_080777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8803#issuecomment-80777",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -356,16 +356,16 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_080778.json:
 ```json
 {
-    "body": "Attachment [trac_8803-remove-axes.patch](tarball://root/attachments/some-uuid/ticket8803/trac_8803-remove-axes.patch) by kcrisman created at 2011-05-16 15:37:21\n\nHopefully this will do it.",
+    "body": "Attachment [trac_8803-remove-axes.patch](tarball://root/attachments/some-uuid/ticket8803/trac_8803-remove-axes.patch) by @kcrisman created at 2011-05-16 15:37:21\n\nHopefully this will do it.",
     "created_at": "2011-05-16T15:37:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8803#issuecomment-80778",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_8803-remove-axes.patch](tarball://root/attachments/some-uuid/ticket8803/trac_8803-remove-axes.patch) by kcrisman created at 2011-05-16 15:37:21
+Attachment [trac_8803-remove-axes.patch](tarball://root/attachments/some-uuid/ticket8803/trac_8803-remove-axes.patch) by @kcrisman created at 2011-05-16 15:37:21
 
 Hopefully this will do it.
 
@@ -381,7 +381,7 @@ archive/issue_comments_080779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8803#issuecomment-80779",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_080780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8803#issuecomment-80780",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -420,7 +420,7 @@ archive/issue_comments_080781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8803#issuecomment-80781",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

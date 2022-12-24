@@ -3,7 +3,7 @@
 archive/issues_001609.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1609\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1609\n\n",
     "created_at": "2007-12-27T05:41:22Z",
     "labels": [
         "packages",
@@ -14,10 +14,10 @@ archive/issues_001609.json:
     "title": "create an octave-3.0.0 optional spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1609",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_010229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1609#issuecomment-10229",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_010230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1609#issuecomment-10230",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_010231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1609#issuecomment-10231",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_010232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1609#issuecomment-10232",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_010233.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1609#issuecomment-10233",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -322,7 +322,7 @@ archive/issue_comments_010238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1609#issuecomment-10238",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

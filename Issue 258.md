@@ -3,7 +3,7 @@
 archive/issues_000258.json:
 ```json
 {
-    "body": "Assignee: was\n\nCreate a command in SAGE based on the gp2c program of Bill Alombert.\n\nI envision something like this:\n\n\n```\nsage: gp = Gp()   # new instead of gp interacitve interpreter\nsage: gp.ceval(\"\"\"\na block of code\n\"\"\")\n...\n   at this point the gp2c translator is called and the resulting\n   shared object library is loaded into this instance of gp.\n...\nsage: gp('code that uses new functions defined in the above block of code')\n          resulting code runs faster since it is compiled. \n```\n\n\nThis will give yet another way of writing fast compiled code from interactive/interpreter SAGE. The ways would then be:\n* SageX\n* weave\n* gp2c\n\nThe web page for gp2c:\n\n  http://pari.math.u-bordeaux.fr/download.html#gp2c\n\nIssue created by migration from https://trac.sagemath.org/ticket/258\n\n",
+    "body": "Assignee: @williamstein\n\nCreate a command in SAGE based on the gp2c program of Bill Alombert.\n\nI envision something like this:\n\n\n```\nsage: gp = Gp()   # new instead of gp interacitve interpreter\nsage: gp.ceval(\"\"\"\na block of code\n\"\"\")\n...\n   at this point the gp2c translator is called and the resulting\n   shared object library is loaded into this instance of gp.\n...\nsage: gp('code that uses new functions defined in the above block of code')\n          resulting code runs faster since it is compiled. \n```\n\n\nThis will give yet another way of writing fast compiled code from interactive/interpreter SAGE. The ways would then be:\n* SageX\n* weave\n* gp2c\n\nThe web page for gp2c:\n\n  http://pari.math.u-bordeaux.fr/download.html#gp2c\n\nIssue created by migration from https://trac.sagemath.org/ticket/258\n\n",
     "created_at": "2007-02-11T20:51:22Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_000258.json:
     "title": "gp2c -- integrate into SAGE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/258",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Create a command in SAGE based on the gp2c program of Bill Alombert.
 
@@ -63,7 +63,7 @@ archive/issue_comments_001154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1154",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 
@@ -76,16 +76,16 @@ Changing status from new to assigned.
 archive/issue_comments_001155.json:
 ```json
 {
-    "body": "Changing assignee from was to pdenapo.",
+    "body": "Changing assignee from @williamstein to @pdenapo.",
     "created_at": "2008-01-08T04:03:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1155",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 
-Changing assignee from was to pdenapo.
+Changing assignee from @williamstein to @pdenapo.
 
 
 
@@ -99,7 +99,7 @@ archive/issue_comments_001156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1156",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_001157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1157",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 
@@ -147,16 +147,16 @@ A patch showing the required modifications to spkg-install in pari package
 archive/issue_comments_001158.json:
 ```json
 {
-    "body": "Attachment [spkg-install.patch](tarball://root/attachments/some-uuid/ticket258/spkg-install.patch) by pdenapo created at 2008-01-08 04:30:17\n\nspkg-install file for gp2c",
+    "body": "Attachment [spkg-install.patch](tarball://root/attachments/some-uuid/ticket258/spkg-install.patch) by @pdenapo created at 2008-01-08 04:30:17\n\nspkg-install file for gp2c",
     "created_at": "2008-01-08T04:30:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1158",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 
-Attachment [spkg-install.patch](tarball://root/attachments/some-uuid/ticket258/spkg-install.patch) by pdenapo created at 2008-01-08 04:30:17
+Attachment [spkg-install.patch](tarball://root/attachments/some-uuid/ticket258/spkg-install.patch) by @pdenapo created at 2008-01-08 04:30:17
 
 spkg-install file for gp2c
 
@@ -167,16 +167,16 @@ spkg-install file for gp2c
 archive/issue_comments_001159.json:
 ```json
 {
-    "body": "Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket258/spkg-install) by pdenapo created at 2008-01-08 04:31:36\n\nMy second version of the attachment corrects a minor bash syntax-error (the packages worked either way, but fails to report an error message if pari.cfg was not there)",
+    "body": "Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket258/spkg-install) by @pdenapo created at 2008-01-08 04:31:36\n\nMy second version of the attachment corrects a minor bash syntax-error (the packages worked either way, but fails to report an error message if pari.cfg was not there)",
     "created_at": "2008-01-08T04:31:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1159",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 
-Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket258/spkg-install) by pdenapo created at 2008-01-08 04:31:36
+Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket258/spkg-install) by @pdenapo created at 2008-01-08 04:31:36
 
 My second version of the attachment corrects a minor bash syntax-error (the packages worked either way, but fails to report an error message if pari.cfg was not there)
 
@@ -192,7 +192,7 @@ archive/issue_comments_001160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1160",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 
@@ -214,16 +214,16 @@ I also have included a README.Sage file explaning this.
 archive/issue_comments_001161.json:
 ```json
 {
-    "body": "Attachment [spkg-install-unified-package.patch](tarball://root/attachments/some-uuid/ticket258/spkg-install-unified-package.patch) by pdenapo created at 2008-01-15 15:21:14\n\nspkg-install file for the unified pari/gp2c package",
+    "body": "Attachment [spkg-install-unified-package.patch](tarball://root/attachments/some-uuid/ticket258/spkg-install-unified-package.patch) by @pdenapo created at 2008-01-15 15:21:14\n\nspkg-install file for the unified pari/gp2c package",
     "created_at": "2008-01-15T15:21:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1161",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 
-Attachment [spkg-install-unified-package.patch](tarball://root/attachments/some-uuid/ticket258/spkg-install-unified-package.patch) by pdenapo created at 2008-01-15 15:21:14
+Attachment [spkg-install-unified-package.patch](tarball://root/attachments/some-uuid/ticket258/spkg-install-unified-package.patch) by @pdenapo created at 2008-01-15 15:21:14
 
 spkg-install file for the unified pari/gp2c package
 
@@ -239,7 +239,7 @@ archive/issue_comments_001162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1162",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 
@@ -252,16 +252,16 @@ Readme file for the unified pari/gp2c package
 archive/issue_comments_001163.json:
 ```json
 {
-    "body": "Attachment [README.Sage](tarball://root/attachments/some-uuid/ticket258/README.Sage) by pdenapo created at 2008-01-15 15:34:54\n\nI submit a patch for the integration of gp2c into sage\n\nThis patch implements two functions for the Gp object:  gp2c_compile_file and gp2c\n\nThe first one compiles a file using gp2c-run and load its into the instance \nof the Gp intepreter asociated to the Gp object.\n(is like the ceval function proposed in the description at the begining, but I think that\ngp2c would be a better name). Also note that you cannot use it to evaluate arbitrary gp\nexpressions, just to define functions (in a syntax valid for gp2c, for example: avoid C identifiers)\n\nYou can use it to do something like:\n\nG=Gp()\nG.gp2c('f(x)=2*x')\nG.eval('f(2)')\n'4'\n\nThe second one takes a string, save it to a temporary file and compiles it using \ngp2c_compile_file\n\nThe temporary files are deleted when the Gp object is destroyed.\n\n(This patch also generalizes the function delete_tmpfiles() from misc/misc.py\nsince I need it to delete the temporary files that gp2c patch creates)",
+    "body": "Attachment [README.Sage](tarball://root/attachments/some-uuid/ticket258/README.Sage) by @pdenapo created at 2008-01-15 15:34:54\n\nI submit a patch for the integration of gp2c into sage\n\nThis patch implements two functions for the Gp object:  gp2c_compile_file and gp2c\n\nThe first one compiles a file using gp2c-run and load its into the instance \nof the Gp intepreter asociated to the Gp object.\n(is like the ceval function proposed in the description at the begining, but I think that\ngp2c would be a better name). Also note that you cannot use it to evaluate arbitrary gp\nexpressions, just to define functions (in a syntax valid for gp2c, for example: avoid C identifiers)\n\nYou can use it to do something like:\n\nG=Gp()\nG.gp2c('f(x)=2*x')\nG.eval('f(2)')\n'4'\n\nThe second one takes a string, save it to a temporary file and compiles it using \ngp2c_compile_file\n\nThe temporary files are deleted when the Gp object is destroyed.\n\n(This patch also generalizes the function delete_tmpfiles() from misc/misc.py\nsince I need it to delete the temporary files that gp2c patch creates)",
     "created_at": "2008-01-15T15:34:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1163",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 
-Attachment [README.Sage](tarball://root/attachments/some-uuid/ticket258/README.Sage) by pdenapo created at 2008-01-15 15:34:54
+Attachment [README.Sage](tarball://root/attachments/some-uuid/ticket258/README.Sage) by @pdenapo created at 2008-01-15 15:34:54
 
 I submit a patch for the integration of gp2c into sage
 
@@ -295,16 +295,16 @@ since I need it to delete the temporary files that gp2c patch creates)
 archive/issue_comments_001164.json:
 ```json
 {
-    "body": "Attachment [gp2c_integration.patch](tarball://root/attachments/some-uuid/ticket258/gp2c_integration.patch) by pdenapo created at 2008-01-15 15:35:42\n\npatch: gp2c integration into sage",
+    "body": "Attachment [gp2c_integration.patch](tarball://root/attachments/some-uuid/ticket258/gp2c_integration.patch) by @pdenapo created at 2008-01-15 15:35:42\n\npatch: gp2c integration into sage",
     "created_at": "2008-01-15T15:35:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1164",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 
-Attachment [gp2c_integration.patch](tarball://root/attachments/some-uuid/ticket258/gp2c_integration.patch) by pdenapo created at 2008-01-15 15:35:42
+Attachment [gp2c_integration.patch](tarball://root/attachments/some-uuid/ticket258/gp2c_integration.patch) by @pdenapo created at 2008-01-15 15:35:42
 
 patch: gp2c integration into sage
 
@@ -320,7 +320,7 @@ archive/issue_comments_001165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1165",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_001166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1166",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 
@@ -414,7 +414,7 @@ archive/issue_comments_001168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1168",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 
@@ -475,7 +475,7 @@ archive/issue_comments_001171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1171",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -521,7 +521,7 @@ archive/issue_comments_001173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1173",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -539,7 +539,7 @@ archive/issue_comments_001174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1174",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -561,7 +561,7 @@ archive/issue_comments_001175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1175",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -579,7 +579,7 @@ archive/issue_comments_001176.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1176",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -604,7 +604,7 @@ archive/issue_comments_001177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1177",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -628,7 +628,7 @@ archive/issue_comments_001178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1178",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -646,7 +646,7 @@ archive/issue_comments_001179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1179",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -664,7 +664,7 @@ archive/issue_comments_001180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1180",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -682,7 +682,7 @@ archive/issue_comments_001181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1181",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -700,7 +700,7 @@ archive/issue_comments_001182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1182",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -718,7 +718,7 @@ archive/issue_comments_001183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1183",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -738,7 +738,7 @@ archive/issue_comments_001184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1184",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -756,7 +756,7 @@ archive/issue_comments_001185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1185",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -774,7 +774,7 @@ archive/issue_comments_001186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1186",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -810,7 +810,7 @@ archive/issue_comments_001188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1188",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -828,7 +828,7 @@ archive/issue_comments_001189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1189",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -846,7 +846,7 @@ archive/issue_comments_001190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1190",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -882,7 +882,7 @@ archive/issue_comments_001192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1192",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -900,7 +900,7 @@ archive/issue_comments_001193.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1193",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -918,7 +918,7 @@ archive/issue_comments_001194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1194",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -936,7 +936,7 @@ archive/issue_comments_001195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1195",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -954,7 +954,7 @@ archive/issue_comments_001196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1196",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -976,7 +976,7 @@ archive/issue_comments_001197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1197",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -994,7 +994,7 @@ archive/issue_comments_001198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1198",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -1012,7 +1012,7 @@ archive/issue_comments_001199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1199",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -1030,7 +1030,7 @@ archive/issue_comments_001200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1200",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1050,7 +1050,7 @@ archive/issue_comments_001201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1201",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -1068,7 +1068,7 @@ archive/issue_comments_001202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1202",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -1086,7 +1086,7 @@ archive/issue_comments_001203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/258#issuecomment-1203",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_002699.json:
     "title": "scipy fails to build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2699",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 Assignee: mabshoff
@@ -48,16 +48,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2699
 archive/issue_comments_018616.json:
 ```json
 {
-    "body": "Attachment [install.log.tar.tar.bz2](tarball://root/attachments/some-uuid/ticket2699/install.log.tar.tar.bz2) by schilly created at 2008-03-28 14:10:02\n\ninstall.log of failed scipy build",
+    "body": "Attachment [install.log.tar.tar.bz2](tarball://root/attachments/some-uuid/ticket2699/install.log.tar.tar.bz2) by @haraldschilly created at 2008-03-28 14:10:02\n\ninstall.log of failed scipy build",
     "created_at": "2008-03-28T14:10:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2699#issuecomment-18616",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
-Attachment [install.log.tar.tar.bz2](tarball://root/attachments/some-uuid/ticket2699/install.log.tar.tar.bz2) by schilly created at 2008-03-28 14:10:02
+Attachment [install.log.tar.tar.bz2](tarball://root/attachments/some-uuid/ticket2699/install.log.tar.tar.bz2) by @haraldschilly created at 2008-03-28 14:10:02
 
 install.log of failed scipy build
 
@@ -99,7 +99,7 @@ archive/issue_comments_018618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2699#issuecomment-18618",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 

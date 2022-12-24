@@ -3,7 +3,7 @@
 archive/issues_008578.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/f41d594281e843d9):\n\n```\nFor a finite field of, say 2^6 elements, an object representing an\nelement of such a field has a method called int_repr() that returns\nthe object's integer representation. However, if we are dealing with,\nsay GF(7^100), an object representing an element of such a field\ndoesn't have a corresponding int_repr() method. The report below\nincludes such a method, which is meant to work for a finite field of\nany order.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8578\n\n",
+    "body": "Assignee: @aghitza\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/f41d594281e843d9):\n\n```\nFor a finite field of, say 2^6 elements, an object representing an\nelement of such a field has a method called int_repr() that returns\nthe object's integer representation. However, if we are dealing with,\nsay GF(7^100), an object representing an element of such a field\ndoesn't have a corresponding int_repr() method. The report below\nincludes such a method, which is meant to work for a finite field of\nany order.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8578\n\n",
     "created_at": "2010-03-22T12:00:54Z",
     "labels": [
         "algebra",
@@ -17,7 +17,7 @@ archive/issues_008578.json:
     "user": "mvngu"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 From [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/f41d594281e843d9):
 
@@ -48,7 +48,7 @@ archive/issue_comments_077692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8578#issuecomment-77692",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_077696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8578#issuecomment-77696",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_077697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8578#issuecomment-77697",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

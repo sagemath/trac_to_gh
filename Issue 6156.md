@@ -14,7 +14,7 @@ archive/issues_006156.json:
     "title": "gap packages don't load anymore on itanium, even with gap-4.4.10.p11 (!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6156",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_049117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6156",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6156#issuecomment-49117",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_049118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6156",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6156#issuecomment-49118",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_049119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6156",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6156#issuecomment-49119",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_049120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6156",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6156#issuecomment-49120",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

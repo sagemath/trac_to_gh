@@ -3,7 +3,7 @@
 archive/issues_001727.json:
 ```json
 {
-    "body": "Assignee: was\n\nAs reported by ncalexan on IRC:\n\n\n```\nsage: bool(x == x)\nTrue\nsage: bool(x != x)\nTrue\nsage: bool(x > x)\nTrue\n```\n\n\nThis appears to be caused by `SymbolicEquation.__nonzero__()` assuming in various places that the operator of the equation is ==.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1727\n\n",
+    "body": "Assignee: @williamstein\n\nAs reported by ncalexan on IRC:\n\n\n```\nsage: bool(x == x)\nTrue\nsage: bool(x != x)\nTrue\nsage: bool(x > x)\nTrue\n```\n\n\nThis appears to be caused by `SymbolicEquation.__nonzero__()` assuming in various places that the operator of the equation is ==.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1727\n\n",
     "created_at": "2008-01-09T00:47:29Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_001727.json:
     "title": "truth value of inequalities not as expected",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1727",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 As reported by ncalexan on IRC:
 
@@ -50,7 +50,7 @@ archive/issue_comments_010932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1727#issuecomment-10932",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_010933.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1727#issuecomment-10933",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -81,16 +81,16 @@ Changing priority from major to critical.
 archive/issue_comments_010934.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-01-16T04:54:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1727#issuecomment-10934",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -99,16 +99,16 @@ Changing assignee from was to mhansen.
 archive/issue_comments_010935.json:
 ```json
 {
-    "body": "Attachment [1727.patch](tarball://root/attachments/some-uuid/ticket1727/1727.patch) by mhansen created at 2008-01-16 04:54:52",
+    "body": "Attachment [1727.patch](tarball://root/attachments/some-uuid/ticket1727/1727.patch) by @mwhansen created at 2008-01-16 04:54:52",
     "created_at": "2008-01-16T04:54:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1727#issuecomment-10935",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1727.patch](tarball://root/attachments/some-uuid/ticket1727/1727.patch) by mhansen created at 2008-01-16 04:54:52
+Attachment [1727.patch](tarball://root/attachments/some-uuid/ticket1727/1727.patch) by @mwhansen created at 2008-01-16 04:54:52
 
 
 
@@ -122,7 +122,7 @@ archive/issue_comments_010936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1727#issuecomment-10936",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

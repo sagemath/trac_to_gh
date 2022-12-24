@@ -3,7 +3,7 @@
 archive/issues_001866.json:
 ```json
 {
-    "body": "Assignee: failure\n\nCC:  mjo\n\n\n```\nOn Jan 20, 2008 7:28 AM, Lars Fischer <> wrote:\n> \n> Hello,\n> \n> I think I have found a bug:\n> chapter 2.4.1 of the Programming guide states, that comments like \"#\n> long time (!)\"  prevents the example from being tested.\n\nYep, that is a bug.  I've made it. \n\n> \n> But:\n> sage -t quadratic-modules.sage\n> sage -t  quadratic-modules.sage\n> Example 13 (line 433)\n> TIMEOUT!!\n> IN:\n>  phi.level()\n>  phi = fqmodule([11,33]);\n>  phi.tau_invariant()\n>  phi = fqmodule([11,33]); # long time (!)\n>  phi.sigma_invariant()    # long time (!)\n> OUT:\n> \n> \n> This applies to sage 2.10.\n> \n> I think the reason is:\n> sage -t calls\n> sage-sage and then\n> sage-test, which in turns calls\n> sage-doctest_tex, if extension is \".sage\" instead of sage-doctest.\n> \n> At least sage-doctest looks for \"long time\" inside comment_modifiers()\n> and sage-doctest_tex doesnot.\n> \n> With best regards,\n> Lars Fischer\n\n```\n\n\nMy first thought on reading the above is \"get rid of handling .sage files in a special way in order to automatically fix all such issues\".   That's what I did with .tex files a while ago. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1866\n\n",
+    "body": "Assignee: failure\n\nCC:  @orlitzky\n\n\n```\nOn Jan 20, 2008 7:28 AM, Lars Fischer <> wrote:\n> \n> Hello,\n> \n> I think I have found a bug:\n> chapter 2.4.1 of the Programming guide states, that comments like \"#\n> long time (!)\"  prevents the example from being tested.\n\nYep, that is a bug.  I've made it. \n\n> \n> But:\n> sage -t quadratic-modules.sage\n> sage -t  quadratic-modules.sage\n> Example 13 (line 433)\n> TIMEOUT!!\n> IN:\n>  phi.level()\n>  phi = fqmodule([11,33]);\n>  phi.tau_invariant()\n>  phi = fqmodule([11,33]); # long time (!)\n>  phi.sigma_invariant()    # long time (!)\n> OUT:\n> \n> \n> This applies to sage 2.10.\n> \n> I think the reason is:\n> sage -t calls\n> sage-sage and then\n> sage-test, which in turns calls\n> sage-doctest_tex, if extension is \".sage\" instead of sage-doctest.\n> \n> At least sage-doctest looks for \"long time\" inside comment_modifiers()\n> and sage-doctest_tex doesnot.\n> \n> With best regards,\n> Lars Fischer\n\n```\n\n\nMy first thought on reading the above is \"get rid of handling .sage files in a special way in order to automatically fix all such issues\".   That's what I did with .tex files a while ago. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1866\n\n",
     "created_at": "2008-01-20T16:47:15Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_001866.json:
     "title": "bug in doctesting -- long time not respected in some contexts",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1866",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: failure
 
-CC:  mjo
+CC:  @orlitzky
 
 
 ```
@@ -105,7 +105,7 @@ archive/issue_comments_011817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1866#issuecomment-11817",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_011818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1866#issuecomment-11818",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_011819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1866#issuecomment-11819",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

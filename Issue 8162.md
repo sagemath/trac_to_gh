@@ -3,7 +3,7 @@
 archive/issues_008162.json:
 ```json
 {
-    "body": "Assignee: roed\n\nCC:  roed\n\nAccording to the documentation for Zq, the following code should construct the degree 3 unramified extension of the 5-adic integers, but fails.\n\n\n```\nsage: R = Zq([(5,3)], names=\"alpha\")\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/dmharvey/<ipython console> in <module>()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/rings/padics/factory.pyc in Zq(q, prec, type, modulus, names, print_mode, halt, ram_name, res_name, print_pos, print_sep, print_max_ram_terms, print_max_unram_terms, print_max_terse_terms, check)\n   1915     if check:\n   1916         if not isinstance(q, Integer):\n-> 1917             q = Integer(q)\n   1918         if not isinstance(prec, Integer):\n   1919             prec = Integer(prec)\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/rings/integer.so in sage.rings.integer.Integer.__init__ (sage/rings/integer.c:6820)()\n\nTypeError: unable to coerce <type 'list'> to an integer\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8162\n\n",
+    "body": "Assignee: @roed314\n\nCC:  @roed314\n\nAccording to the documentation for Zq, the following code should construct the degree 3 unramified extension of the 5-adic integers, but fails.\n\n\n```\nsage: R = Zq([(5,3)], names=\"alpha\")\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/dmharvey/<ipython console> in <module>()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/rings/padics/factory.pyc in Zq(q, prec, type, modulus, names, print_mode, halt, ram_name, res_name, print_pos, print_sep, print_max_ram_terms, print_max_unram_terms, print_max_terse_terms, check)\n   1915     if check:\n   1916         if not isinstance(q, Integer):\n-> 1917             q = Integer(q)\n   1918         if not isinstance(prec, Integer):\n   1919             prec = Integer(prec)\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/rings/integer.so in sage.rings.integer.Integer.__init__ (sage/rings/integer.c:6820)()\n\nTypeError: unable to coerce <type 'list'> to an integer\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8162\n\n",
     "created_at": "2010-02-03T02:43:38Z",
     "labels": [
         "padics",
@@ -17,9 +17,9 @@ archive/issues_008162.json:
     "user": "dmharvey"
 }
 ```
-Assignee: roed
+Assignee: @roed314
 
-CC:  roed
+CC:  @roed314
 
 According to the documentation for Zq, the following code should construct the degree 3 unramified extension of the 5-adic integers, but fails.
 
@@ -56,16 +56,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8162
 archive/issue_comments_071794.json:
 ```json
 {
-    "body": "Attachment [8162.patch](tarball://root/attachments/some-uuid/ticket8162/8162.patch) by roed created at 2011-11-09 03:42:58",
+    "body": "Attachment [8162.patch](tarball://root/attachments/some-uuid/ticket8162/8162.patch) by @roed314 created at 2011-11-09 03:42:58",
     "created_at": "2011-11-09T03:42:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8162#issuecomment-71794",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [8162.patch](tarball://root/attachments/some-uuid/ticket8162/8162.patch) by roed created at 2011-11-09 03:42:58
+Attachment [8162.patch](tarball://root/attachments/some-uuid/ticket8162/8162.patch) by @roed314 created at 2011-11-09 03:42:58
 
 
 
@@ -79,7 +79,7 @@ archive/issue_comments_071795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8162#issuecomment-71795",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_071797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8162#issuecomment-71797",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -164,16 +164,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_071800.json:
 ```json
 {
-    "body": "Attachment [8162.2.patch](tarball://root/attachments/some-uuid/ticket8162/8162.2.patch) by roed created at 2011-12-12 15:28:05\n\nI changed the requirement that check=False.\n\nApply only 8162.patch.",
+    "body": "Attachment [8162.2.patch](tarball://root/attachments/some-uuid/ticket8162/8162.2.patch) by @roed314 created at 2011-12-12 15:28:05\n\nI changed the requirement that check=False.\n\nApply only 8162.patch.",
     "created_at": "2011-12-12T15:28:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8162#issuecomment-71800",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [8162.2.patch](tarball://root/attachments/some-uuid/ticket8162/8162.2.patch) by roed created at 2011-12-12 15:28:05
+Attachment [8162.2.patch](tarball://root/attachments/some-uuid/ticket8162/8162.2.patch) by @roed314 created at 2011-12-12 15:28:05
 
 I changed the requirement that check=False.
 
@@ -191,7 +191,7 @@ archive/issue_comments_071801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8162#issuecomment-71801",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_071802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8162#issuecomment-71802",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_071803.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8162#issuecomment-71803",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_071804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8162#issuecomment-71804",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_071805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8162#issuecomment-71805",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -303,7 +303,7 @@ archive/issue_comments_071806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8162#issuecomment-71806",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -321,7 +321,7 @@ archive/issue_comments_071807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8162#issuecomment-71807",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_071808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8162#issuecomment-71808",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -352,16 +352,16 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_071809.json:
 ```json
 {
-    "body": "Attachment [trac_8162.patch](tarball://root/attachments/some-uuid/ticket8162/trac_8162.patch) by saraedum created at 2012-11-19 21:01:31\n\nReplying to [comment:7 roed]:\n> I can't think of a good reason to allow a list, but also no particular reason not to allow it, since lists are a common container for objects in Python.  :-)\nSure, this makes sense.\n\n> As for the check parameter, my interpretation of check=False is that it only accepts input of a particular format in order to minimize the time spent in handling different input formats.  So I think it's completely reasonable for your example to fail when you don't pass in something of the form [(p, k)].\nI mostly agree with you. I think that with `check=False` nothing should be done that could be expensive (things like checking whether a minimal polynomial is actually irreducible). However, I believe that `check` should not have an influence on the interface.\n\nI adapted your patch to only make the check trigger whether we check that `p` is actually a prime. All the other checks are just `isinstance` and `len` checks which come essentially for free.\n\nI looked at some timings and the two versions don't really seem to differ with `q=(p,k)` and `check=False`.\n\nWould this patch be acceptable for you?\n\n[I haven't run full doctests yet, so let me see if the patchbot at least likes it.]",
+    "body": "Attachment [trac_8162.patch](tarball://root/attachments/some-uuid/ticket8162/trac_8162.patch) by @saraedum created at 2012-11-19 21:01:31\n\nReplying to [comment:7 roed]:\n> I can't think of a good reason to allow a list, but also no particular reason not to allow it, since lists are a common container for objects in Python.  :-)\nSure, this makes sense.\n\n> As for the check parameter, my interpretation of check=False is that it only accepts input of a particular format in order to minimize the time spent in handling different input formats.  So I think it's completely reasonable for your example to fail when you don't pass in something of the form [(p, k)].\nI mostly agree with you. I think that with `check=False` nothing should be done that could be expensive (things like checking whether a minimal polynomial is actually irreducible). However, I believe that `check` should not have an influence on the interface.\n\nI adapted your patch to only make the check trigger whether we check that `p` is actually a prime. All the other checks are just `isinstance` and `len` checks which come essentially for free.\n\nI looked at some timings and the two versions don't really seem to differ with `q=(p,k)` and `check=False`.\n\nWould this patch be acceptable for you?\n\n[I haven't run full doctests yet, so let me see if the patchbot at least likes it.]",
     "created_at": "2012-11-19T21:01:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8162#issuecomment-71809",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
-Attachment [trac_8162.patch](tarball://root/attachments/some-uuid/ticket8162/trac_8162.patch) by saraedum created at 2012-11-19 21:01:31
+Attachment [trac_8162.patch](tarball://root/attachments/some-uuid/ticket8162/trac_8162.patch) by @saraedum created at 2012-11-19 21:01:31
 
 Replying to [comment:7 roed]:
 > I can't think of a good reason to allow a list, but also no particular reason not to allow it, since lists are a common container for objects in Python.  :-)
@@ -390,7 +390,7 @@ archive/issue_comments_071810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8162#issuecomment-71810",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -408,7 +408,7 @@ archive/issue_comments_071811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8162#issuecomment-71811",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -426,7 +426,7 @@ archive/issue_comments_071812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8162#issuecomment-71812",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -455,7 +455,7 @@ archive/issue_comments_071813.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8162#issuecomment-71813",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -473,7 +473,7 @@ archive/issue_comments_071814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8162#issuecomment-71814",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -491,7 +491,7 @@ archive/issue_comments_071815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8162#issuecomment-71815",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -511,7 +511,7 @@ archive/issue_comments_071816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8162#issuecomment-71816",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -529,7 +529,7 @@ archive/issue_comments_071817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8162#issuecomment-71817",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

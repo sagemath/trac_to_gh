@@ -3,7 +3,7 @@
 archive/issues_006573.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  wcauchois davidloeffler\n\nThat rebased patch at #5651 contains doctrings that doesn't conform with conventions for formatting docstrings. In particular, in sage/plot/bar_chart.py:\n\n```\n131\t    Extra options will get passed on to show(), as long as they are valid:\n```\n\nIn sage/plot/bezier_path.py:\n\n```\n171\t    Extra options will get passed on to show(), as long as they are valid:\n```\n\nIn sage/plot/matrix_plot.py:\n\n```\n58\t    Extra options will get passed on to show(), as long as they are valid:\n62\t    Extra options will get passed on to show(), as long as they are valid:\n```\n\nIn sage/plot/polygon.py:\n\n```\n255\t    Extra options will get passed on to show(), as long as they are valid:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6573\n\n",
+    "body": "Assignee: tba\n\nCC:  wcauchois @loefflerd\n\nThat rebased patch at #5651 contains doctrings that doesn't conform with conventions for formatting docstrings. In particular, in sage/plot/bar_chart.py:\n\n```\n131\t    Extra options will get passed on to show(), as long as they are valid:\n```\n\nIn sage/plot/bezier_path.py:\n\n```\n171\t    Extra options will get passed on to show(), as long as they are valid:\n```\n\nIn sage/plot/matrix_plot.py:\n\n```\n58\t    Extra options will get passed on to show(), as long as they are valid:\n62\t    Extra options will get passed on to show(), as long as they are valid:\n```\n\nIn sage/plot/polygon.py:\n\n```\n255\t    Extra options will get passed on to show(), as long as they are valid:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6573\n\n",
     "created_at": "2009-07-20T20:55:23Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_006573.json:
 ```
 Assignee: tba
 
-CC:  wcauchois davidloeffler
+CC:  wcauchois @loefflerd
 
 That rebased patch at #5651 contains doctrings that doesn't conform with conventions for formatting docstrings. In particular, in sage/plot/bar_chart.py:
 
@@ -96,16 +96,16 @@ David: Can I ask you to review this?
 archive/issue_comments_053678.json:
 ```json
 {
-    "body": "Attachment [trac_6573-review.patch](tarball://root/attachments/some-uuid/ticket6573/trac_6573-review.patch) by davidloeffler created at 2009-07-21 14:59:11",
+    "body": "Attachment [trac_6573-review.patch](tarball://root/attachments/some-uuid/ticket6573/trac_6573-review.patch) by @loefflerd created at 2009-07-21 14:59:11",
     "created_at": "2009-07-21T14:59:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6573",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6573#issuecomment-53678",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_6573-review.patch](tarball://root/attachments/some-uuid/ticket6573/trac_6573-review.patch) by davidloeffler created at 2009-07-21 14:59:11
+Attachment [trac_6573-review.patch](tarball://root/attachments/some-uuid/ticket6573/trac_6573-review.patch) by @loefflerd created at 2009-07-21 14:59:11
 
 
 
@@ -119,7 +119,7 @@ archive/issue_comments_053679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6573",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6573#issuecomment-53679",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 

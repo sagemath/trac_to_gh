@@ -3,7 +3,7 @@
 archive/issues_005133.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nwstein@sage:~/build/sage-3.2.3/devel/sage/sage/ext$ sage -coverage multi_modular.pyx\n----------------------------------------------------------------------\nmulti_modular.pyx\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE multi_modular.pyx: 0% (0 of 15)\n\nMissing documentation:\n         * _extend_moduli_to_height(self, height):\n         * _extend_moduli(self, count):\n         * precomputation_list(self):\n         * partial_product(self, n):\n         * prod(self):\n         * list(self):\n         * __len__(self):\n         * __iter__(self):\n         * __getitem__(self, ix):\n         * __repr__(self):\n         * next_prime(self):\n         * replace_prime(self, ix):\n\n\nMissing doctests:\n         * __init__(self, height):\n         * _extend_moduli_to_count(self, int count):\n         * crt(self, b):\n\n----------------------------------------------------------------------\n\nwstein@sage:~/build/sage-3.2.3/devel/sage/sage/ext$ \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5133\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nwstein@sage:~/build/sage-3.2.3/devel/sage/sage/ext$ sage -coverage multi_modular.pyx\n----------------------------------------------------------------------\nmulti_modular.pyx\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE multi_modular.pyx: 0% (0 of 15)\n\nMissing documentation:\n         * _extend_moduli_to_height(self, height):\n         * _extend_moduli(self, count):\n         * precomputation_list(self):\n         * partial_product(self, n):\n         * prod(self):\n         * list(self):\n         * __len__(self):\n         * __iter__(self):\n         * __getitem__(self, ix):\n         * __repr__(self):\n         * next_prime(self):\n         * replace_prime(self, ix):\n\n\nMissing doctests:\n         * __init__(self, height):\n         * _extend_moduli_to_count(self, int count):\n         * crt(self, b):\n\n----------------------------------------------------------------------\n\nwstein@sage:~/build/sage-3.2.3/devel/sage/sage/ext$ \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5133\n\n",
     "created_at": "2009-01-30T01:10:20Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005133.json:
     "title": "improve the coverage of ext/multi_modular.pyx from an abysmal 0% to something more respectable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5133",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -69,7 +69,7 @@ archive/issue_comments_039244.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5133#issuecomment-39244",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -82,16 +82,16 @@ add doctests and fix memory management in sage.ext.multi_modular
 archive/issue_comments_039245.json:
 ```json
 {
-    "body": "Changing assignee from was to burcin.",
+    "body": "Changing assignee from @williamstein to @burcin.",
     "created_at": "2009-06-27T14:37:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5133#issuecomment-39245",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Changing assignee from was to burcin.
+Changing assignee from @williamstein to @burcin.
 
 
 
@@ -105,7 +105,7 @@ archive/issue_comments_039246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5133#issuecomment-39246",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -118,16 +118,16 @@ Changing status from new to assigned.
 archive/issue_comments_039247.json:
 ```json
 {
-    "body": "Attachment [trac_5133-multi_modular_tests.patch](tarball://root/attachments/some-uuid/ticket5133/trac_5133-multi_modular_tests.patch) by burcin created at 2009-06-27 14:37:21\n\nattachment:trac_5133-multi_modular_tests.patch adds doctests and fixes some possible segfaults by reorganizing the memory allocations in `sage.ext.multi_modular`. Changes introduced by the patch are:\n\n* 100% coverage\n* refactor memory management\n* use random primes\n* set upper/lower bounds for moduli on initialization",
+    "body": "Attachment [trac_5133-multi_modular_tests.patch](tarball://root/attachments/some-uuid/ticket5133/trac_5133-multi_modular_tests.patch) by @burcin created at 2009-06-27 14:37:21\n\nattachment:trac_5133-multi_modular_tests.patch adds doctests and fixes some possible segfaults by reorganizing the memory allocations in `sage.ext.multi_modular`. Changes introduced by the patch are:\n\n* 100% coverage\n* refactor memory management\n* use random primes\n* set upper/lower bounds for moduli on initialization",
     "created_at": "2009-06-27T14:37:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5133#issuecomment-39247",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_5133-multi_modular_tests.patch](tarball://root/attachments/some-uuid/ticket5133/trac_5133-multi_modular_tests.patch) by burcin created at 2009-06-27 14:37:21
+Attachment [trac_5133-multi_modular_tests.patch](tarball://root/attachments/some-uuid/ticket5133/trac_5133-multi_modular_tests.patch) by @burcin created at 2009-06-27 14:37:21
 
 attachment:trac_5133-multi_modular_tests.patch adds doctests and fixes some possible segfaults by reorganizing the memory allocations in `sage.ext.multi_modular`. Changes introduced by the patch are:
 
@@ -148,7 +148,7 @@ archive/issue_comments_039248.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5133#issuecomment-39248",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_039249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5133#issuecomment-39249",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -251,16 +251,16 @@ Doh! I only doctested the `sage/matrix` directory. Apparently the only user of `
 archive/issue_comments_039250.json:
 ```json
 {
-    "body": "Attachment [trac_5133-multi_modular_tests-take2.patch](tarball://root/attachments/some-uuid/ticket5133/trac_5133-multi_modular_tests-take2.patch) by burcin created at 2009-07-18 15:49:24\n\nsecond try, apply only this one",
+    "body": "Attachment [trac_5133-multi_modular_tests-take2.patch](tarball://root/attachments/some-uuid/ticket5133/trac_5133-multi_modular_tests-take2.patch) by @burcin created at 2009-07-18 15:49:24\n\nsecond try, apply only this one",
     "created_at": "2009-07-18T15:49:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5133#issuecomment-39250",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_5133-multi_modular_tests-take2.patch](tarball://root/attachments/some-uuid/ticket5133/trac_5133-multi_modular_tests-take2.patch) by burcin created at 2009-07-18 15:49:24
+Attachment [trac_5133-multi_modular_tests-take2.patch](tarball://root/attachments/some-uuid/ticket5133/trac_5133-multi_modular_tests-take2.patch) by @burcin created at 2009-07-18 15:49:24
 
 second try, apply only this one
 
@@ -276,7 +276,7 @@ archive/issue_comments_039251.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5133#issuecomment-39251",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -403,7 +403,7 @@ archive/issue_comments_039255.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5133#issuecomment-39255",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -416,16 +416,16 @@ changed error message in rebased patch
 archive/issue_comments_039256.json:
 ```json
 {
-    "body": "Attachment [trac_5133-take2-rebased2.patch](tarball://root/attachments/some-uuid/ticket5133/trac_5133-take2-rebased2.patch) by burcin created at 2009-07-20 16:41:22\n\nI changed the error message `random_prime()` gives when `lower_bound` is `< n`.\n\nPositive review for the rebased patch.",
+    "body": "Attachment [trac_5133-take2-rebased2.patch](tarball://root/attachments/some-uuid/ticket5133/trac_5133-take2-rebased2.patch) by @burcin created at 2009-07-20 16:41:22\n\nI changed the error message `random_prime()` gives when `lower_bound` is `< n`.\n\nPositive review for the rebased patch.",
     "created_at": "2009-07-20T16:41:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5133#issuecomment-39256",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_5133-take2-rebased2.patch](tarball://root/attachments/some-uuid/ticket5133/trac_5133-take2-rebased2.patch) by burcin created at 2009-07-20 16:41:22
+Attachment [trac_5133-take2-rebased2.patch](tarball://root/attachments/some-uuid/ticket5133/trac_5133-take2-rebased2.patch) by @burcin created at 2009-07-20 16:41:22
 
 I changed the error message `random_prime()` gives when `lower_bound` is `< n`.
 

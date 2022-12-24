@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6988
 archive/issue_comments_057799.json:
 ```json
 {
-    "body": "Changing assignee from tba to jhpalmieri.",
+    "body": "Changing assignee from tba to @jhpalmieri.",
     "created_at": "2009-09-22T18:58:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6988#issuecomment-57799",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Changing assignee from tba to jhpalmieri.
+Changing assignee from tba to @jhpalmieri.
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_057800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6988#issuecomment-57800",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_057801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6988#issuecomment-57801",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_057804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6988#issuecomment-57804",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

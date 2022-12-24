@@ -3,7 +3,7 @@
 archive/issues_003914.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.1, Release Date: 2008-08-17                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: var('s,t')\n(s, t)\nsage: f=function('f', t)\nsage: f.diff(t,2)\ndiff(f(t), t, 2)\nsage: f.diff(t,2).laplace(t,s)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/grout/<ipython console> in <module>()\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py in laplace(self, t, s)\n   2290             sage: (p1+p2).save()\n   2291         \"\"\"\n-> 2292         return self.parent()(self._maxima_().laplace(var(t), var(s)))\n   2293\n   2294     def inverse_laplace(self, t, s):\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py in __call__(self, x)\n    449                 msg, s, pos = err.args\n    450                 raise TypeError, \"%s: %s !!! %s\" % (msg, s[:pos], s[pos:])\n--> 451         return self._coerce_impl(x)\n    452\n    453     def _coerce_impl(self, x):\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py in _coerce_impl(self, x)\n    467             return x\n    468         elif isinstance(x, MaximaElement):\n--> 469             return symbolic_expression_from_maxima_element(x)\n    470         # if \"x\" is a SymPy object, convert it to a SAGE object\n    471         elif is_Polynomial(x) or is_MPolynomial(x):\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py in symbolic_expression_from_maxima_element(x)\n   8314         x^(sqrt(y) + pi) - sin(e)\n   8315     \"\"\"\n-> 8316     return symbolic_expression_from_maxima_string(x.name())\n   8317\n   8318 def evaled_symbolic_expression_from_maxima_string(x):\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py in symbolic_expression_from_maxima_string(x, equals_sub, maxima)\n   8298         # evaluation of maxima code are assumed pre-simplified\n   8299         is_simplified = True\n-> 8300         return symbolic_expression_from_string(s, syms, accept_sequence=True)\n   8301     except SyntaxError:\n   8302         raise TypeError, \"unable to make sense of Maxima expression '%s' in SAGE\"%s\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py in symbolic_expression_from_string(s, syms, accept_sequence)\n   8431             global _augmented_syms\n   8432             _augmented_syms = syms\n-> 8433             return parse_func(s)\n   8434         finally:\n   8435             _augmented_syms = {}\n\n/home/grout/parser.pyx in sage.misc.parser.Parser.parse_sequence (sage/misc/parser.c:3012)()\n\n/home/grout/parser.pyx in sage.misc.parser.Parser.parse_sequence (sage/misc/parser.c:2911)()\n\n/home/grout/parser.pyx in sage.misc.parser.Parser.p_sequence (sage/misc/parser.c:3304)()\n\n/home/grout/parser.pyx in sage.misc.parser.Parser.p_eqn (sage/misc/parser.c:3929)()\n\n/home/grout/parser.pyx in sage.misc.parser.Parser.p_expr (sage/misc/parser.c:4214)()\n\n/home/grout/parser.pyx in sage.misc.parser.Parser.p_term (sage/misc/parser.c:4423)()\n\n/home/grout/parser.pyx in sage.misc.parser.Parser.p_factor (sage/misc/parser.c:4737)()\n\n/home/grout/parser.pyx in sage.misc.parser.Parser.p_factor (sage/misc/parser.c:4763)()\n\n/home/grout/parser.pyx in sage.misc.parser.Parser.p_power (sage/misc/parser.c:4858)()\n\n/home/grout/parser.pyx in sage.misc.parser.Parser.p_atom (sage/misc/parser.c:5234)()\n\nTypeError: __call__() got an unexpected keyword argument 't'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3914\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.1, Release Date: 2008-08-17                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: var('s,t')\n(s, t)\nsage: f=function('f', t)\nsage: f.diff(t,2)\ndiff(f(t), t, 2)\nsage: f.diff(t,2).laplace(t,s)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/grout/<ipython console> in <module>()\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py in laplace(self, t, s)\n   2290             sage: (p1+p2).save()\n   2291         \"\"\"\n-> 2292         return self.parent()(self._maxima_().laplace(var(t), var(s)))\n   2293\n   2294     def inverse_laplace(self, t, s):\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py in __call__(self, x)\n    449                 msg, s, pos = err.args\n    450                 raise TypeError, \"%s: %s !!! %s\" % (msg, s[:pos], s[pos:])\n--> 451         return self._coerce_impl(x)\n    452\n    453     def _coerce_impl(self, x):\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py in _coerce_impl(self, x)\n    467             return x\n    468         elif isinstance(x, MaximaElement):\n--> 469             return symbolic_expression_from_maxima_element(x)\n    470         # if \"x\" is a SymPy object, convert it to a SAGE object\n    471         elif is_Polynomial(x) or is_MPolynomial(x):\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py in symbolic_expression_from_maxima_element(x)\n   8314         x^(sqrt(y) + pi) - sin(e)\n   8315     \"\"\"\n-> 8316     return symbolic_expression_from_maxima_string(x.name())\n   8317\n   8318 def evaled_symbolic_expression_from_maxima_string(x):\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py in symbolic_expression_from_maxima_string(x, equals_sub, maxima)\n   8298         # evaluation of maxima code are assumed pre-simplified\n   8299         is_simplified = True\n-> 8300         return symbolic_expression_from_string(s, syms, accept_sequence=True)\n   8301     except SyntaxError:\n   8302         raise TypeError, \"unable to make sense of Maxima expression '%s' in SAGE\"%s\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py in symbolic_expression_from_string(s, syms, accept_sequence)\n   8431             global _augmented_syms\n   8432             _augmented_syms = syms\n-> 8433             return parse_func(s)\n   8434         finally:\n   8435             _augmented_syms = {}\n\n/home/grout/parser.pyx in sage.misc.parser.Parser.parse_sequence (sage/misc/parser.c:3012)()\n\n/home/grout/parser.pyx in sage.misc.parser.Parser.parse_sequence (sage/misc/parser.c:2911)()\n\n/home/grout/parser.pyx in sage.misc.parser.Parser.p_sequence (sage/misc/parser.c:3304)()\n\n/home/grout/parser.pyx in sage.misc.parser.Parser.p_eqn (sage/misc/parser.c:3929)()\n\n/home/grout/parser.pyx in sage.misc.parser.Parser.p_expr (sage/misc/parser.c:4214)()\n\n/home/grout/parser.pyx in sage.misc.parser.Parser.p_term (sage/misc/parser.c:4423)()\n\n/home/grout/parser.pyx in sage.misc.parser.Parser.p_factor (sage/misc/parser.c:4737)()\n\n/home/grout/parser.pyx in sage.misc.parser.Parser.p_factor (sage/misc/parser.c:4763)()\n\n/home/grout/parser.pyx in sage.misc.parser.Parser.p_power (sage/misc/parser.c:4858)()\n\n/home/grout/parser.pyx in sage.misc.parser.Parser.p_atom (sage/misc/parser.c:5234)()\n\nTypeError: __call__() got an unexpected keyword argument 't'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3914\n\n",
     "created_at": "2008-08-20T18:19:22Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_003914.json:
     "title": "error in parsing maxima output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3914",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -118,7 +118,7 @@ archive/issue_comments_027993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3914#issuecomment-27993",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_027994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3914#issuecomment-27994",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_027995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3914#issuecomment-27995",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_027996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3914#issuecomment-27996",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_027997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3914#issuecomment-27997",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_027998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3914#issuecomment-27998",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 

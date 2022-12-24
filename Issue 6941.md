@@ -3,7 +3,7 @@
 archive/issues_006941.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  rws jpflori\n\nGCD and XGCD methods should return *monic* greatest common divisors.  However, at the moment these two methods in the template file ``sage/rings/polynomial/polynomial_template.pxi`` prevent this by enforcing that ``gcd(a,0) == a`` and ``gcd(0,b) == b``.\n\nI suggest that the code for these two methods in the template file should only refer to the corresponding ``celement_foo`` methods of the actual implementation.  This way, all the logic is in the ``celement_foo`` methods, rather than being split between the two levels.\n\nThe patch for this should touch the template file as well as the two linkage files for GF2X and zmod polynomials.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6941\n\n",
+    "body": "Assignee: tbd\n\nCC:  @rwst jpflori\n\nGCD and XGCD methods should return *monic* greatest common divisors.  However, at the moment these two methods in the template file ``sage/rings/polynomial/polynomial_template.pxi`` prevent this by enforcing that ``gcd(a,0) == a`` and ``gcd(0,b) == b``.\n\nI suggest that the code for these two methods in the template file should only refer to the corresponding ``celement_foo`` methods of the actual implementation.  This way, all the logic is in the ``celement_foo`` methods, rather than being split between the two levels.\n\nThe patch for this should touch the template file as well as the two linkage files for GF2X and zmod polynomials.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6941\n\n",
     "created_at": "2009-09-15T22:39:51Z",
     "labels": [
         "algebra",
@@ -19,7 +19,7 @@ archive/issues_006941.json:
 ```
 Assignee: tbd
 
-CC:  rws jpflori
+CC:  @rwst jpflori
 
 GCD and XGCD methods should return *monic* greatest common divisors.  However, at the moment these two methods in the template file ``sage/rings/polynomial/polynomial_template.pxi`` prevent this by enforcing that ``gcd(a,0) == a`` and ``gcd(0,b) == b``.
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6941
 archive/issue_comments_057386.json:
 ```json
 {
-    "body": "Attachment [trac_6941_monicgcd.patch](tarball://root/attachments/some-uuid/ticket6941/trac_6941_monicgcd.patch) by malb created at 2009-09-17 19:54:06\n\nThe patch looks good, applies cleanly and doctests pass. However, do we really need to mimic the old behaviour?",
+    "body": "Attachment [trac_6941_monicgcd.patch](tarball://root/attachments/some-uuid/ticket6941/trac_6941_monicgcd.patch) by @malb created at 2009-09-17 19:54:06\n\nThe patch looks good, applies cleanly and doctests pass. However, do we really need to mimic the old behaviour?",
     "created_at": "2009-09-17T19:54:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6941#issuecomment-57386",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_6941_monicgcd.patch](tarball://root/attachments/some-uuid/ticket6941/trac_6941_monicgcd.patch) by malb created at 2009-09-17 19:54:06
+Attachment [trac_6941_monicgcd.patch](tarball://root/attachments/some-uuid/ticket6941/trac_6941_monicgcd.patch) by @malb created at 2009-09-17 19:54:06
 
 The patch looks good, applies cleanly and doctests pass. However, do we really need to mimic the old behaviour?
 
@@ -86,7 +86,7 @@ archive/issue_comments_057388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6941#issuecomment-57388",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_057389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6941#issuecomment-57389",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_057390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6941#issuecomment-57390",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_057391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6941#issuecomment-57391",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

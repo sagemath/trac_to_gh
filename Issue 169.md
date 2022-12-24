@@ -3,7 +3,7 @@
 archive/issues_000169.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nFrom \"Luislang\" \n\nFollowing session says it all.\n \n--------------------------------------------------------\n--------------------------------------------------------\n \nsage: s=pari.vector(2,[0,0])\nsage: s[:1]\n _2 = [0]\nsage: s[:1]=[1]\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<console>\", line 1, in ?\n  File \"gen.pyx\", line 417, in gen.gen.__setitem__\nIndexError: index (slice(0, 1, None)) must be between 0 and 1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/169\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nFrom \"Luislang\" \n\nFollowing session says it all.\n \n--------------------------------------------------------\n--------------------------------------------------------\n \nsage: s=pari.vector(2,[0,0])\nsage: s[:1]\n _2 = [0]\nsage: s[:1]=[1]\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<console>\", line 1, in ?\n  File \"gen.pyx\", line 417, in gen.gen.__setitem__\nIndexError: index (slice(0, 1, None)) must be between 0 and 1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/169\n\n",
     "created_at": "2006-11-15T15:44:35Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_000169.json:
     "title": "slice assignment not implemented for PARI C library interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/169",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -56,7 +56,7 @@ archive/issue_comments_000754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/169#issuecomment-754",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_000756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/169#issuecomment-756",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_000757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/169#issuecomment-757",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_000758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/169#issuecomment-758",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_000759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/169#issuecomment-759",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_000760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/169#issuecomment-760",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -250,7 +250,7 @@ Changing status from reopened to new.
 archive/issue_comments_000762.json:
 ```json
 {
-    "body": "Changing assignee from was to craigcitro.",
+    "body": "Changing assignee from @williamstein to @craigcitro.",
     "created_at": "2008-11-14T05:33:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/169",
     "type": "issue_comment",
@@ -259,7 +259,7 @@ archive/issue_comments_000762.json:
 }
 ```
 
-Changing assignee from was to craigcitro.
+Changing assignee from @williamstein to @craigcitro.
 
 
 
@@ -313,7 +313,7 @@ archive/issue_comments_000764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/169#issuecomment-764",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -331,7 +331,7 @@ archive/issue_comments_000765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/169#issuecomment-765",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -349,7 +349,7 @@ archive/issue_comments_000766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/169#issuecomment-766",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -379,7 +379,7 @@ archive/issue_comments_000767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/169#issuecomment-767",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -397,7 +397,7 @@ archive/issue_comments_000768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/169#issuecomment-768",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -415,7 +415,7 @@ archive/issue_comments_000769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/169#issuecomment-769",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -428,16 +428,16 @@ new and improved patch
 archive/issue_comments_000770.json:
 ```json
 {
-    "body": "Attachment [trac-169.patch](tarball://root/attachments/some-uuid/ticket169/trac-169.patch) by craigcitro created at 2008-11-19 11:23:34\n\nNew patch, with lots of added functionality. (I read what all you can do with the `step` parameter to slice.",
+    "body": "Attachment [trac-169.patch](tarball://root/attachments/some-uuid/ticket169/trac-169.patch) by @craigcitro created at 2008-11-19 11:23:34\n\nNew patch, with lots of added functionality. (I read what all you can do with the `step` parameter to slice.",
     "created_at": "2008-11-19T11:23:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/169#issuecomment-770",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-169.patch](tarball://root/attachments/some-uuid/ticket169/trac-169.patch) by craigcitro created at 2008-11-19 11:23:34
+Attachment [trac-169.patch](tarball://root/attachments/some-uuid/ticket169/trac-169.patch) by @craigcitro created at 2008-11-19 11:23:34
 
 New patch, with lots of added functionality. (I read what all you can do with the `step` parameter to slice.
 
@@ -453,7 +453,7 @@ archive/issue_comments_000771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/169#issuecomment-771",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -471,7 +471,7 @@ archive/issue_comments_000772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/169#issuecomment-772",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -539,16 +539,16 @@ Michael
 archive/issue_comments_000774.json:
 ```json
 {
-    "body": "Attachment [trac-169-pt2.patch](tarball://root/attachments/some-uuid/ticket169/trac-169-pt2.patch) by craigcitro created at 2008-11-21 05:32:21",
+    "body": "Attachment [trac-169-pt2.patch](tarball://root/attachments/some-uuid/ticket169/trac-169-pt2.patch) by @craigcitro created at 2008-11-21 05:32:21",
     "created_at": "2008-11-21T05:32:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/169#issuecomment-774",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-169-pt2.patch](tarball://root/attachments/some-uuid/ticket169/trac-169-pt2.patch) by craigcitro created at 2008-11-21 05:32:21
+Attachment [trac-169-pt2.patch](tarball://root/attachments/some-uuid/ticket169/trac-169-pt2.patch) by @craigcitro created at 2008-11-21 05:32:21
 
 
 
@@ -562,7 +562,7 @@ archive/issue_comments_000775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/169#issuecomment-775",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -604,7 +604,7 @@ archive/issue_comments_000777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/169#issuecomment-777",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007883.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  roed\n\nAdded some functionality to ideals (is_maximal works more often now, and there's a new ideal class for univariate polynomial rings).  Changed the logic on what class is chosen for ideals so that it's easier to override with _ideal_class_.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7883\n\n",
+    "body": "Assignee: @malb\n\nCC:  @roed314\n\nAdded some functionality to ideals (is_maximal works more often now, and there's a new ideal class for univariate polynomial rings).  Changed the logic on what class is chosen for ideals so that it's easier to override with _ideal_class_.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7883\n\n",
     "created_at": "2010-01-09T20:07:10Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_007883.json:
     "title": "Added some functionality to ideals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7883",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  roed
+CC:  @roed314
 
 Added some functionality to ideals (is_maximal works more often now, and there's a new ideal class for univariate polynomial rings).  Changed the logic on what class is chosen for ideals so that it's easier to override with _ideal_class_.
 
@@ -39,7 +39,7 @@ archive/issue_comments_068513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7883",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7883#issuecomment-68513",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to needs_work.
 archive/issue_comments_068514.json:
 ```json
 {
-    "body": "Attachment [7585_7_ideal.patch](tarball://root/attachments/some-uuid/ticket7883/7585_7_ideal.patch) by robertwb created at 2010-01-09 20:11:52\n\nThere's a lot of useful looking code in here, but it's unclear what exactly it does or it's intended to fix. Some more explanations would be nice, and the new behavior should be doctested. Especially for most of the changes in `sage/rings/ideal.py`\n\nWhat is the parameter in _ideal_class_ supposed to mean? (Then why is it 0 by default?) \n\nDepends on #7881?",
+    "body": "Attachment [7585_7_ideal.patch](tarball://root/attachments/some-uuid/ticket7883/7585_7_ideal.patch) by @robertwb created at 2010-01-09 20:11:52\n\nThere's a lot of useful looking code in here, but it's unclear what exactly it does or it's intended to fix. Some more explanations would be nice, and the new behavior should be doctested. Especially for most of the changes in `sage/rings/ideal.py`\n\nWhat is the parameter in _ideal_class_ supposed to mean? (Then why is it 0 by default?) \n\nDepends on #7881?",
     "created_at": "2010-01-09T20:11:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7883",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7883#issuecomment-68514",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [7585_7_ideal.patch](tarball://root/attachments/some-uuid/ticket7883/7585_7_ideal.patch) by robertwb created at 2010-01-09 20:11:52
+Attachment [7585_7_ideal.patch](tarball://root/attachments/some-uuid/ticket7883/7585_7_ideal.patch) by @robertwb created at 2010-01-09 20:11:52
 
 There's a lot of useful looking code in here, but it's unclear what exactly it does or it's intended to fix. Some more explanations would be nice, and the new behavior should be doctested. Especially for most of the changes in `sage/rings/ideal.py`
 
@@ -76,16 +76,16 @@ Depends on #7881?
 archive/issue_comments_068515.json:
 ```json
 {
-    "body": "Attachment [7883_ideals.patch](tarball://root/attachments/some-uuid/ticket7883/7883_ideals.patch) by roed created at 2010-02-23 15:04:02\n\nRebased against 4.3.3; may need 8218, 8332, 7880, but probably not.",
+    "body": "Attachment [7883_ideals.patch](tarball://root/attachments/some-uuid/ticket7883/7883_ideals.patch) by @roed314 created at 2010-02-23 15:04:02\n\nRebased against 4.3.3; may need 8218, 8332, 7880, but probably not.",
     "created_at": "2010-02-23T15:04:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7883",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7883#issuecomment-68515",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [7883_ideals.patch](tarball://root/attachments/some-uuid/ticket7883/7883_ideals.patch) by roed created at 2010-02-23 15:04:02
+Attachment [7883_ideals.patch](tarball://root/attachments/some-uuid/ticket7883/7883_ideals.patch) by @roed314 created at 2010-02-23 15:04:02
 
 Rebased against 4.3.3; may need 8218, 8332, 7880, but probably not.
 
@@ -101,7 +101,7 @@ archive/issue_comments_068516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7883",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7883#issuecomment-68516",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_068517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7883",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7883#issuecomment-68517",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_068518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7883",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7883#issuecomment-68518",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -156,16 +156,16 @@ Tried this under 4.3.4.rc0 with 8218, 8332, 7880 applied. It applies fine but se
 archive/issue_comments_068519.json:
 ```json
 {
-    "body": "Attachment [7883_fixes.patch](tarball://root/attachments/some-uuid/ticket7883/7883_fixes.patch) by roed created at 2010-09-19 01:43:08\n\nAddresses referee comments",
+    "body": "Attachment [7883_fixes.patch](tarball://root/attachments/some-uuid/ticket7883/7883_fixes.patch) by @roed314 created at 2010-09-19 01:43:08\n\nAddresses referee comments",
     "created_at": "2010-09-19T01:43:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7883",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7883#issuecomment-68519",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [7883_fixes.patch](tarball://root/attachments/some-uuid/ticket7883/7883_fixes.patch) by roed created at 2010-09-19 01:43:08
+Attachment [7883_fixes.patch](tarball://root/attachments/some-uuid/ticket7883/7883_fixes.patch) by @roed314 created at 2010-09-19 01:43:08
 
 Addresses referee comments
 
@@ -181,7 +181,7 @@ archive/issue_comments_068520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7883",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7883#issuecomment-68520",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_068521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7883",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7883#issuecomment-68521",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_068522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7883",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7883#issuecomment-68522",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -239,16 +239,16 @@ Apply only this patch
 archive/issue_comments_068523.json:
 ```json
 {
-    "body": "Attachment [trac_7883-ideals-folded.patch](tarball://root/attachments/some-uuid/ticket7883/trac_7883-ideals-folded.patch) by davidloeffler created at 2010-09-23 15:36:30\n\nI've uploaded a patch above which consists of \n- the two patches mentioned in roed's previous comment \n- the hunk from `7585_12_1_fixes.2.patch` (at #8334) that concerns `sage/rings/ring.pyx`\n- a tiny fix to remove the code in `ideal_1poly_field` that calls `residue_field`, since the residue fields code isn't going in until a subsequent patch.\n\nI have checked that this applies cleanly to 4.6.alpha1 and passes long doctests.",
+    "body": "Attachment [trac_7883-ideals-folded.patch](tarball://root/attachments/some-uuid/ticket7883/trac_7883-ideals-folded.patch) by @loefflerd created at 2010-09-23 15:36:30\n\nI've uploaded a patch above which consists of \n- the two patches mentioned in roed's previous comment \n- the hunk from `7585_12_1_fixes.2.patch` (at #8334) that concerns `sage/rings/ring.pyx`\n- a tiny fix to remove the code in `ideal_1poly_field` that calls `residue_field`, since the residue fields code isn't going in until a subsequent patch.\n\nI have checked that this applies cleanly to 4.6.alpha1 and passes long doctests.",
     "created_at": "2010-09-23T15:36:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7883",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7883#issuecomment-68523",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_7883-ideals-folded.patch](tarball://root/attachments/some-uuid/ticket7883/trac_7883-ideals-folded.patch) by davidloeffler created at 2010-09-23 15:36:30
+Attachment [trac_7883-ideals-folded.patch](tarball://root/attachments/some-uuid/ticket7883/trac_7883-ideals-folded.patch) by @loefflerd created at 2010-09-23 15:36:30
 
 I've uploaded a patch above which consists of 
 - the two patches mentioned in roed's previous comment 
@@ -269,7 +269,7 @@ archive/issue_comments_068524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7883",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7883#issuecomment-68524",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_068525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7883",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7883#issuecomment-68525",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_068526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7883",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7883#issuecomment-68526",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

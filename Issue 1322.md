@@ -3,7 +3,7 @@
 archive/issues_001322.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  jason-sage@creativetrax.com mhansen timothyclemans\n\nKeywords: graphs\n\nSee mailing list discussions at \n\n[http://groups.google.com/group/sage-devel/browse_thread/thread/f0119a34ca55e95f/65bf86aef687c6d2?lnk=gst&q=interactive#65bf86aef687c6d2](http://groups.google.com/group/sage-devel/browse_thread/thread/f0119a34ca55e95f/65bf86aef687c6d2?lnk=gst&q=interactive#65bf86aef687c6d2)\n\nand \n[http://groups.google.com/group/sage-devel/browse_thread/thread/db30b40ab36aa51c/2157c72c6cc50dfe?lnk=gst&q=Manipulate#2157c72c6cc50dfe](http://groups.google.com/group/sage-devel/browse_thread/thread/db30b40ab36aa51c/2157c72c6cc50dfe?lnk=gst&q=Manipulate#2157c72c6cc50dfe)\n\nAlso, from Robert Miller (to Jason Grout):\n\n\n```\n> I was brainstorming about something like widgets a while ago, before\n> the notebook underwent its sea change. We (>= you and I) should make\n> this a coding sprint at SD7.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1322\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  jason-sage@creativetrax.com @mwhansen timothyclemans\n\nKeywords: graphs\n\nSee mailing list discussions at \n\n[http://groups.google.com/group/sage-devel/browse_thread/thread/f0119a34ca55e95f/65bf86aef687c6d2?lnk=gst&q=interactive#65bf86aef687c6d2](http://groups.google.com/group/sage-devel/browse_thread/thread/f0119a34ca55e95f/65bf86aef687c6d2?lnk=gst&q=interactive#65bf86aef687c6d2)\n\nand \n[http://groups.google.com/group/sage-devel/browse_thread/thread/db30b40ab36aa51c/2157c72c6cc50dfe?lnk=gst&q=Manipulate#2157c72c6cc50dfe](http://groups.google.com/group/sage-devel/browse_thread/thread/db30b40ab36aa51c/2157c72c6cc50dfe?lnk=gst&q=Manipulate#2157c72c6cc50dfe)\n\nAlso, from Robert Miller (to Jason Grout):\n\n\n```\n> I was brainstorming about something like widgets a while ago, before\n> the notebook underwent its sea change. We (>= you and I) should make\n> this a coding sprint at SD7.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1322\n\n",
     "created_at": "2007-11-28T20:16:45Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_001322.json:
     "title": "interactive widgets in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1322",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
-CC:  jason-sage@creativetrax.com mhansen timothyclemans
+CC:  jason-sage@creativetrax.com @mwhansen timothyclemans
 
 Keywords: graphs
 
@@ -56,7 +56,7 @@ archive/issue_comments_008443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8443",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_008444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8444",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -89,16 +89,16 @@ See also the thread:
 archive/issue_comments_008445.json:
 ```json
 {
-    "body": "Attachment [menu-widget.patch](tarball://root/attachments/some-uuid/ticket1322/menu-widget.patch) by jason created at 2007-12-01 06:37:52\n\nExtremely rough cut of initial functionality for interactive widgets in the notebook.",
+    "body": "Attachment [menu-widget.patch](tarball://root/attachments/some-uuid/ticket1322/menu-widget.patch) by @jasongrout created at 2007-12-01 06:37:52\n\nExtremely rough cut of initial functionality for interactive widgets in the notebook.",
     "created_at": "2007-12-01T06:37:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8445",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [menu-widget.patch](tarball://root/attachments/some-uuid/ticket1322/menu-widget.patch) by jason created at 2007-12-01 06:37:52
+Attachment [menu-widget.patch](tarball://root/attachments/some-uuid/ticket1322/menu-widget.patch) by @jasongrout created at 2007-12-01 06:37:52
 
 Extremely rough cut of initial functionality for interactive widgets in the notebook.
 
@@ -114,7 +114,7 @@ archive/issue_comments_008446.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8446",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_008447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8447",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_008448.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8448",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_008449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8449",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -203,16 +203,16 @@ Changing keywords from "graphs" to "".
 archive/issue_comments_008450.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to boothby.",
+    "body": "Changing assignee from @mwhansen to boothby.",
     "created_at": "2007-12-01T07:12:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8450",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from mhansen to boothby.
+Changing assignee from @mwhansen to boothby.
 
 
 
@@ -226,7 +226,7 @@ archive/issue_comments_008451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8451",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_008452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8452",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_008453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8453",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_008454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8454",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_008455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8455",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -391,7 +391,7 @@ archive/issue_comments_008456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8456",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -422,7 +422,7 @@ archive/issue_comments_008457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8457",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -493,16 +493,16 @@ For extra bonus points, this could work in conjunction with %pari/%magma/etc.
 archive/issue_comments_008459.json:
 ```json
 {
-    "body": "Attachment [manipulate-take3.patch](tarball://root/attachments/some-uuid/ticket1322/manipulate-take3.patch) by was created at 2008-03-01 10:30:18\n\nthis is independent of the patches above -- it's standalone -- see comments below for how to use.",
+    "body": "Attachment [manipulate-take3.patch](tarball://root/attachments/some-uuid/ticket1322/manipulate-take3.patch) by @williamstein created at 2008-03-01 10:30:18\n\nthis is independent of the patches above -- it's standalone -- see comments below for how to use.",
     "created_at": "2008-03-01T10:30:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8459",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [manipulate-take3.patch](tarball://root/attachments/some-uuid/ticket1322/manipulate-take3.patch) by was created at 2008-03-01 10:30:18
+Attachment [manipulate-take3.patch](tarball://root/attachments/some-uuid/ticket1322/manipulate-take3.patch) by @williamstein created at 2008-03-01 10:30:18
 
 this is independent of the patches above -- it's standalone -- see comments below for how to use.
 
@@ -518,7 +518,7 @@ archive/issue_comments_008460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8460",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -604,16 +604,16 @@ def gcd_steps(numbers):
 archive/issue_comments_008462.json:
 ```json
 {
-    "body": "Attachment [manipulate-take3_part2.patch](tarball://root/attachments/some-uuid/ticket1322/manipulate-take3_part2.patch) by was created at 2008-03-02 08:53:24\n\npart 2 of manipulate with decorators; this is usable again (probably) better docs; but there are several things to do soon and I'm too tired.",
+    "body": "Attachment [manipulate-take3_part2.patch](tarball://root/attachments/some-uuid/ticket1322/manipulate-take3_part2.patch) by @williamstein created at 2008-03-02 08:53:24\n\npart 2 of manipulate with decorators; this is usable again (probably) better docs; but there are several things to do soon and I'm too tired.",
     "created_at": "2008-03-02T08:53:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8462",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [manipulate-take3_part2.patch](tarball://root/attachments/some-uuid/ticket1322/manipulate-take3_part2.patch) by was created at 2008-03-02 08:53:24
+Attachment [manipulate-take3_part2.patch](tarball://root/attachments/some-uuid/ticket1322/manipulate-take3_part2.patch) by @williamstein created at 2008-03-02 08:53:24
 
 part 2 of manipulate with decorators; this is usable again (probably) better docs; but there are several things to do soon and I'm too tired.
 
@@ -629,7 +629,7 @@ archive/issue_comments_008463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8463",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -650,7 +650,7 @@ archive/issue_comments_008464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8464",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -692,16 +692,16 @@ def ec(a,b):
 archive/issue_comments_008465.json:
 ```json
 {
-    "body": "Attachment [manipulate_take3_part3.patch](tarball://root/attachments/some-uuid/ticket1322/manipulate_take3_part3.patch) by was created at 2008-03-03 02:07:14\n\nthis requires that you also install the extcode patch that gives jquery support.",
+    "body": "Attachment [manipulate_take3_part3.patch](tarball://root/attachments/some-uuid/ticket1322/manipulate_take3_part3.patch) by @williamstein created at 2008-03-03 02:07:14\n\nthis requires that you also install the extcode patch that gives jquery support.",
     "created_at": "2008-03-03T02:07:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8465",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [manipulate_take3_part3.patch](tarball://root/attachments/some-uuid/ticket1322/manipulate_take3_part3.patch) by was created at 2008-03-03 02:07:14
+Attachment [manipulate_take3_part3.patch](tarball://root/attachments/some-uuid/ticket1322/manipulate_take3_part3.patch) by @williamstein created at 2008-03-03 02:07:14
 
 this requires that you also install the extcode patch that gives jquery support.
 
@@ -717,7 +717,7 @@ archive/issue_comments_008466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8466",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -771,7 +771,7 @@ archive/issue_comments_008467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8467",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -795,7 +795,7 @@ archive/issue_comments_008468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8468",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -819,7 +819,7 @@ archive/issue_comments_008469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8469",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -838,16 +838,16 @@ Sorry for all the trouble.
 archive/issue_comments_008470.json:
 ```json
 {
-    "body": "Attachment [manipulate_take3_part4.patch](tarball://root/attachments/some-uuid/ticket1322/manipulate_take3_part4.patch) by was created at 2008-03-04 11:28:26",
+    "body": "Attachment [manipulate_take3_part4.patch](tarball://root/attachments/some-uuid/ticket1322/manipulate_take3_part4.patch) by @williamstein created at 2008-03-04 11:28:26",
     "created_at": "2008-03-04T11:28:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8470",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [manipulate_take3_part4.patch](tarball://root/attachments/some-uuid/ticket1322/manipulate_take3_part4.patch) by was created at 2008-03-04 11:28:26
+Attachment [manipulate_take3_part4.patch](tarball://root/attachments/some-uuid/ticket1322/manipulate_take3_part4.patch) by @williamstein created at 2008-03-04 11:28:26
 
 
 
@@ -856,16 +856,16 @@ Attachment [manipulate_take3_part4.patch](tarball://root/attachments/some-uuid/t
 archive/issue_comments_008471.json:
 ```json
 {
-    "body": "Attachment [manipulate.hg](tarball://root/attachments/some-uuid/ticket1322/manipulate.hg) by was created at 2008-03-05 10:01:42\n\nthis is a new better version",
+    "body": "Attachment [manipulate.hg](tarball://root/attachments/some-uuid/ticket1322/manipulate.hg) by @williamstein created at 2008-03-05 10:01:42\n\nthis is a new better version",
     "created_at": "2008-03-05T10:01:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8471",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [manipulate.hg](tarball://root/attachments/some-uuid/ticket1322/manipulate.hg) by was created at 2008-03-05 10:01:42
+Attachment [manipulate.hg](tarball://root/attachments/some-uuid/ticket1322/manipulate.hg) by @williamstein created at 2008-03-05 10:01:42
 
 this is a new better version
 
@@ -881,7 +881,7 @@ archive/issue_comments_008472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8472",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -901,7 +901,7 @@ archive/issue_comments_008473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8473",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -914,16 +914,16 @@ Changing status from new to assigned.
 archive/issue_comments_008474.json:
 ```json
 {
-    "body": "Changing assignee from boothby to was.",
+    "body": "Changing assignee from boothby to @williamstein.",
     "created_at": "2008-03-07T18:50:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8474",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from boothby to was.
+Changing assignee from boothby to @williamstein.
 
 
 
@@ -937,7 +937,7 @@ archive/issue_comments_008475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8475",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

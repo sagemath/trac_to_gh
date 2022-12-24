@@ -3,7 +3,7 @@
 archive/issues_003475.json:
 ```json
 {
-    "body": "Assignee: was\n\njquery.form.js somehow got dropped from setup.py, which is needed for the web interface, it does *NOT* function correctly without the proper jquery plugin. \n\nThis patch also upgrades jquery, jquery.form to the latest version. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3475\n\n",
+    "body": "Assignee: @williamstein\n\njquery.form.js somehow got dropped from setup.py, which is needed for the web interface, it does *NOT* function correctly without the proper jquery plugin. \n\nThis patch also upgrades jquery, jquery.form to the latest version. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3475\n\n",
     "created_at": "2008-06-19T21:47:07Z",
     "labels": [
         "dsage",
@@ -14,10 +14,10 @@ archive/issues_003475.json:
     "title": "[with patch, needs review] setup.py was missing jquery.form.js, upgrade to latest version of jquery (1.2.6) and jquery.form",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3475",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 jquery.form.js somehow got dropped from setup.py, which is needed for the web interface, it does *NOT* function correctly without the proper jquery plugin. 
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3475
 archive/issue_comments_024485.json:
 ```json
 {
-    "body": "Attachment [3475_dsage_js.patch](tarball://root/attachments/some-uuid/ticket3475/3475_dsage_js.patch) by yi created at 2008-06-19 21:51:06\n\nrenamed patch file to include bug #",
+    "body": "Attachment [3475_dsage_js.patch](tarball://root/attachments/some-uuid/ticket3475/3475_dsage_js.patch) by @yqiang created at 2008-06-19 21:51:06\n\nrenamed patch file to include bug #",
     "created_at": "2008-06-19T21:51:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3475#issuecomment-24485",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Attachment [3475_dsage_js.patch](tarball://root/attachments/some-uuid/ticket3475/3475_dsage_js.patch) by yi created at 2008-06-19 21:51:06
+Attachment [3475_dsage_js.patch](tarball://root/attachments/some-uuid/ticket3475/3475_dsage_js.patch) by @yqiang created at 2008-06-19 21:51:06
 
 renamed patch file to include bug #
 
@@ -59,7 +59,7 @@ archive/issue_comments_024486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3475#issuecomment-24486",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_024488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3475#issuecomment-24488",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 

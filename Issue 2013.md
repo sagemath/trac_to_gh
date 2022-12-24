@@ -14,7 +14,7 @@ archive/issues_002013.json:
     "title": "crap -- f2c spkg contains precompiled binary",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2013",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

@@ -3,7 +3,7 @@
 archive/issues_009127.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nCC:  robertwb rlm was jhpalmieri\n\nThis failure seems remarkably close to #8749, which is closed as fixed, but this is the same sort of problem on the same doctest. Note, changing SAGE_TIMOUT will not change this, as it appears (to me at least), Sage is switching from one algorithm to another in a time which is independent of the processor speed or settings of any timeout variables. \n\n## Hardware & associated software\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n == Sage version ==\n* 4.4.3.alpha0 and 4.4.3.alpha1\n \n == The test failure ==\nA full log of all tests can be found at\n\nhttp://boxen.math.washington.edu/home/kirkby/sage-4.4.3.alpha0-Sun-Blade-1000-900MHz-Solaris-10-ptestlong.log.gz\n\n(There are 3 failures, but I believe the other two are common to more than one platform and work is progressing on them)\n\nI would expect to see this fail the same way on 't2' as 't2' is slower on single threaded tasks than the Blade 1000. \n\n\n```\nsage -t  -long devel/sage/sage/schemes/elliptic_curves/BSD.py\n**********************************************************************\nFile \"/export/home/drkirkby/sage-4.4.3.alpha1/devel/sage-main/sage/schemes/elliptic_curves/BSD.py\", line 377:\n    sage: E.prove_BSD(verbosity=2)               # long time\nExpected:\n    p = 2: True by 2-descent...\n    True for p not in {2, 3} by Kolyvagin.\n    ALERT: p = 3 left in Kolyvagin bound\n        0 <= ord_p(#Sha) <= 2\n        ord_p(#Sha_an) = 2\n    Remaining primes:\n    p = 3: irreducible, surjective, non-split multiplicative\n        (0 <= ord_p <= 2)\n    [3]\nGot:\n    p = 2: True by 2-descent\n    Timeout stopped Heegner index computation...\n    Proceeding to use heegner_index_bound instead.\n    True for p not in {2, 3} by Kolyvagin.\n    p = 3 may divide the Heegner index, for which only a bound was computed.\n    ALERT: p = 3 left in Kolyvagin bound\n        0 <= ord_p(#Sha) <= 2\n        ord_p(#Sha_an) = 2\n    Remaining primes:\n    p = 3: irreducible, surjective, non-split multiplicative\n        (0 <= ord_p <= 2)\n    [3]\n**********************************************************************\n1 items had failures:\n   1 of  35 in __main__.example_6\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /export/home/drkirkby/.sage//tmp/.doctest_BSD.py\n         [132.1 s]\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9127\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @robertwb @rlmill @williamstein @jhpalmieri\n\nThis failure seems remarkably close to #8749, which is closed as fixed, but this is the same sort of problem on the same doctest. Note, changing SAGE_TIMOUT will not change this, as it appears (to me at least), Sage is switching from one algorithm to another in a time which is independent of the processor speed or settings of any timeout variables. \n\n## Hardware & associated software\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n == Sage version ==\n* 4.4.3.alpha0 and 4.4.3.alpha1\n \n == The test failure ==\nA full log of all tests can be found at\n\nhttp://boxen.math.washington.edu/home/kirkby/sage-4.4.3.alpha0-Sun-Blade-1000-900MHz-Solaris-10-ptestlong.log.gz\n\n(There are 3 failures, but I believe the other two are common to more than one platform and work is progressing on them)\n\nI would expect to see this fail the same way on 't2' as 't2' is slower on single threaded tasks than the Blade 1000. \n\n\n```\nsage -t  -long devel/sage/sage/schemes/elliptic_curves/BSD.py\n**********************************************************************\nFile \"/export/home/drkirkby/sage-4.4.3.alpha1/devel/sage-main/sage/schemes/elliptic_curves/BSD.py\", line 377:\n    sage: E.prove_BSD(verbosity=2)               # long time\nExpected:\n    p = 2: True by 2-descent...\n    True for p not in {2, 3} by Kolyvagin.\n    ALERT: p = 3 left in Kolyvagin bound\n        0 <= ord_p(#Sha) <= 2\n        ord_p(#Sha_an) = 2\n    Remaining primes:\n    p = 3: irreducible, surjective, non-split multiplicative\n        (0 <= ord_p <= 2)\n    [3]\nGot:\n    p = 2: True by 2-descent\n    Timeout stopped Heegner index computation...\n    Proceeding to use heegner_index_bound instead.\n    True for p not in {2, 3} by Kolyvagin.\n    p = 3 may divide the Heegner index, for which only a bound was computed.\n    ALERT: p = 3 left in Kolyvagin bound\n        0 <= ord_p(#Sha) <= 2\n        ord_p(#Sha_an) = 2\n    Remaining primes:\n    p = 3: irreducible, surjective, non-split multiplicative\n        (0 <= ord_p <= 2)\n    [3]\n**********************************************************************\n1 items had failures:\n   1 of  35 in __main__.example_6\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /export/home/drkirkby/.sage//tmp/.doctest_BSD.py\n         [132.1 s]\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9127\n\n",
     "created_at": "2010-06-03T12:39:49Z",
     "labels": [
         "elliptic curves",
@@ -17,9 +17,9 @@ archive/issues_009127.json:
     "user": "drkirkby"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
-CC:  robertwb rlm was jhpalmieri
+CC:  @robertwb @rlmill @williamstein @jhpalmieri
 
 This failure seems remarkably close to #8749, which is closed as fixed, but this is the same sort of problem on the same doctest. Note, changing SAGE_TIMOUT will not change this, as it appears (to me at least), Sage is switching from one algorithm to another in a time which is independent of the processor speed or settings of any timeout variables. 
 
@@ -99,7 +99,7 @@ archive/issue_comments_084912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9127#issuecomment-84912",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_084913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9127#issuecomment-84913",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_084914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9127#issuecomment-84914",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -181,16 +181,16 @@ So whether or not the patch fixes things on some systems, it breaks others, so c
 archive/issue_comments_084915.json:
 ```json
 {
-    "body": "Attachment [trac_9127.patch](tarball://root/attachments/some-uuid/ticket9127/trac_9127.patch) by rlm created at 2010-06-05 15:02:35",
+    "body": "Attachment [trac_9127.patch](tarball://root/attachments/some-uuid/ticket9127/trac_9127.patch) by @rlmill created at 2010-06-05 15:02:35",
     "created_at": "2010-06-05T15:02:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9127#issuecomment-84915",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_9127.patch](tarball://root/attachments/some-uuid/ticket9127/trac_9127.patch) by rlm created at 2010-06-05 15:02:35
+Attachment [trac_9127.patch](tarball://root/attachments/some-uuid/ticket9127/trac_9127.patch) by @rlmill created at 2010-06-05 15:02:35
 
 
 
@@ -204,7 +204,7 @@ archive/issue_comments_084916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9127#issuecomment-84916",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -251,7 +251,7 @@ Dave
 archive/issue_comments_084918.json:
 ```json
 {
-    "body": "Changing assignee from cremona to drkirkby.",
+    "body": "Changing assignee from @JohnCremona to drkirkby.",
     "created_at": "2010-06-05T17:06:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9127",
     "type": "issue_comment",
@@ -260,7 +260,7 @@ archive/issue_comments_084918.json:
 }
 ```
 
-Changing assignee from cremona to drkirkby.
+Changing assignee from @JohnCremona to drkirkby.
 
 
 
@@ -269,7 +269,7 @@ Changing assignee from cremona to drkirkby.
 archive/issue_comments_084919.json:
 ```json
 {
-    "body": "Changing assignee from drkirkby to cremona.",
+    "body": "Changing assignee from drkirkby to @JohnCremona.",
     "created_at": "2010-06-05T17:07:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9127",
     "type": "issue_comment",
@@ -278,7 +278,7 @@ archive/issue_comments_084919.json:
 }
 ```
 
-Changing assignee from drkirkby to cremona.
+Changing assignee from drkirkby to @JohnCremona.
 
 
 
@@ -312,7 +312,7 @@ archive/issue_comments_084921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9127#issuecomment-84921",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -371,7 +371,7 @@ archive/issue_comments_084924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9127#issuecomment-84924",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -389,7 +389,7 @@ archive/issue_comments_084925.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9127#issuecomment-84925",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

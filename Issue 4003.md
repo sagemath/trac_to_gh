@@ -3,7 +3,7 @@
 archive/issues_004003.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4003\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4003\n\n",
     "created_at": "2008-08-30T17:59:12Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_004003.json:
     "title": "[with patch, needs review] increase coverage of sage/interfaces/maple.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4003",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -54,16 +54,16 @@ Michael
 archive/issue_comments_028911.json:
 ```json
 {
-    "body": "Attachment [trac_4003.patch](tarball://root/attachments/some-uuid/ticket4003/trac_4003.patch) by mhansen created at 2008-08-30 18:20:37",
+    "body": "Attachment [trac_4003.patch](tarball://root/attachments/some-uuid/ticket4003/trac_4003.patch) by @mwhansen created at 2008-08-30 18:20:37",
     "created_at": "2008-08-30T18:20:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4003",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4003#issuecomment-28911",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4003.patch](tarball://root/attachments/some-uuid/ticket4003/trac_4003.patch) by mhansen created at 2008-08-30 18:20:37
+Attachment [trac_4003.patch](tarball://root/attachments/some-uuid/ticket4003/trac_4003.patch) by @mwhansen created at 2008-08-30 18:20:37
 
 
 

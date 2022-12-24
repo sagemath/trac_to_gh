@@ -3,7 +3,7 @@
 archive/issues_007528.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nGiven an undirected graph and an integer k, it is possible to find through the flow algorithm an orientation of it such that any vertex has an out-degree of at most k ( or say that this is impossible )\n\nIssue created by migration from https://trac.sagemath.org/ticket/7528\n\n",
+    "body": "Assignee: @rlmill\n\nGiven an undirected graph and an integer k, it is possible to find through the flow algorithm an orientation of it such that any vertex has an out-degree of at most k ( or say that this is impossible )\n\nIssue created by migration from https://trac.sagemath.org/ticket/7528\n\n",
     "created_at": "2009-11-25T09:56:20Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007528.json:
     "title": "Orientation of a graph with bounded out-degree",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7528",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Given an undirected graph and an integer k, it is possible to find through the flow algorithm an orientation of it such that any vertex has an out-degree of at most k ( or say that this is impossible )
 
@@ -37,7 +37,7 @@ archive/issue_comments_063811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7528#issuecomment-63811",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_063812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7528#issuecomment-63812",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_063813.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7528#issuecomment-63813",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_063814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7528#issuecomment-63814",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -119,16 +119,16 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_063815.json:
 ```json
 {
-    "body": "Attachment [trac_7528.patch](tarball://root/attachments/some-uuid/ticket7528/trac_7528.patch) by ncohen created at 2009-12-16 01:09:24\n\nIndeed ! ( corrected )",
+    "body": "Attachment [trac_7528.patch](tarball://root/attachments/some-uuid/ticket7528/trac_7528.patch) by @nathanncohen created at 2009-12-16 01:09:24\n\nIndeed ! ( corrected )",
     "created_at": "2009-12-16T01:09:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7528#issuecomment-63815",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_7528.patch](tarball://root/attachments/some-uuid/ticket7528/trac_7528.patch) by ncohen created at 2009-12-16 01:09:24
+Attachment [trac_7528.patch](tarball://root/attachments/some-uuid/ticket7528/trac_7528.patch) by @nathanncohen created at 2009-12-16 01:09:24
 
 Indeed ! ( corrected )
 
@@ -144,7 +144,7 @@ archive/issue_comments_063816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7528#issuecomment-63816",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_063817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7528#issuecomment-63817",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

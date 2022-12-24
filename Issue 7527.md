@@ -3,7 +3,7 @@
 archive/issues_007527.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  mvngu\n\nAs mentionned in #6679 the file graph_coloring is not included in the docstrings. Apply this patch, and this is fixed :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7527\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  mvngu\n\nAs mentionned in #6679 the file graph_coloring is not included in the docstrings. Apply this patch, and this is fixed :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7527\n\n",
     "created_at": "2009-11-25T08:44:39Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007527.json:
     "title": "include graph_coloring in the reference manual.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7527",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 CC:  mvngu
 
@@ -41,7 +41,7 @@ archive/issue_comments_063802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7527",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7527#issuecomment-63802",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -54,16 +54,16 @@ Changing status from new to needs_review.
 archive/issue_comments_063803.json:
 ```json
 {
-    "body": "Attachment [trac_7527.patch](tarball://root/attachments/some-uuid/ticket7527/trac_7527.patch) by ncohen created at 2009-11-25 08:45:29",
+    "body": "Attachment [trac_7527.patch](tarball://root/attachments/some-uuid/ticket7527/trac_7527.patch) by @nathanncohen created at 2009-11-25 08:45:29",
     "created_at": "2009-11-25T08:45:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7527",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7527#issuecomment-63803",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_7527.patch](tarball://root/attachments/some-uuid/ticket7527/trac_7527.patch) by ncohen created at 2009-11-25 08:45:29
+Attachment [trac_7527.patch](tarball://root/attachments/some-uuid/ticket7527/trac_7527.patch) by @nathanncohen created at 2009-11-25 08:45:29
 
 
 
@@ -198,7 +198,7 @@ archive/issue_comments_063808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7527",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7527#issuecomment-63808",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_063809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7527",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7527#issuecomment-63809",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_063810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7527",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7527#issuecomment-63810",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

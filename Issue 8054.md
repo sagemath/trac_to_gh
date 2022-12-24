@@ -3,7 +3,7 @@
 archive/issues_008054.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  rbeezer\n\nConsider the following example:\n\n```\nsage: R.<x> = PolynomialRing(ComplexField(3322))\nsage: p=x^4+54*x^2+154\nsage: z=p.roots(algorithm='pari')\nsage: e=p-mul([x-z[i][0] for i in range(4)])\nsage: n(max(abs(e.coeffs()[i]) for i in range(0,e.degree()+1)))\n6.08883742371831e-999\n```\n\nThis is ok. Compare now with:\n\n```\nsage: R.<x> = PolynomialRing(ComplexField(3322))\nsage: p=x^4+54*x^2+154\nsage: z=p.roots(algorithm='numpy')\nsage: e=p-mul([x-z[i][0] for i in range(4)])\nsage: n(max(abs(e.coeffs()[i]) for i in range(0,e.degree()+1)))\n6.06533797844328e-14\n```\n\nClearly the precision given by numpy is only 14 digits, not 1000\ndigits as expected.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8054\n\n",
+    "body": "Assignee: jkantor\n\nCC:  @rbeezer\n\nConsider the following example:\n\n```\nsage: R.<x> = PolynomialRing(ComplexField(3322))\nsage: p=x^4+54*x^2+154\nsage: z=p.roots(algorithm='pari')\nsage: e=p-mul([x-z[i][0] for i in range(4)])\nsage: n(max(abs(e.coeffs()[i]) for i in range(0,e.degree()+1)))\n6.08883742371831e-999\n```\n\nThis is ok. Compare now with:\n\n```\nsage: R.<x> = PolynomialRing(ComplexField(3322))\nsage: p=x^4+54*x^2+154\nsage: z=p.roots(algorithm='numpy')\nsage: e=p-mul([x-z[i][0] for i in range(4)])\nsage: n(max(abs(e.coeffs()[i]) for i in range(0,e.degree()+1)))\n6.06533797844328e-14\n```\n\nClearly the precision given by numpy is only 14 digits, not 1000\ndigits as expected.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8054\n\n",
     "created_at": "2010-01-25T12:08:01Z",
     "labels": [
         "numerical",
@@ -14,12 +14,12 @@ archive/issues_008054.json:
     "title": "roots(algorithm='numpy') does not work in arbitrary precision",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8054",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: jkantor
 
-CC:  rbeezer
+CC:  @rbeezer
 
 Consider the following example:
 
@@ -62,7 +62,7 @@ archive/issue_comments_070453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8054#issuecomment-70453",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_070454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8054#issuecomment-70454",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_070455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8054#issuecomment-70455",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -113,16 +113,16 @@ Changing status from new to needs_review.
 archive/issue_comments_070456.json:
 ```json
 {
-    "body": "Attachment [trac_8054.patch](tarball://root/attachments/some-uuid/ticket8054/trac_8054.patch) by mhansen created at 2010-08-26 19:02:59",
+    "body": "Attachment [trac_8054.patch](tarball://root/attachments/some-uuid/ticket8054/trac_8054.patch) by @mwhansen created at 2010-08-26 19:02:59",
     "created_at": "2010-08-26T19:02:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8054#issuecomment-70456",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_8054.patch](tarball://root/attachments/some-uuid/ticket8054/trac_8054.patch) by mhansen created at 2010-08-26 19:02:59
+Attachment [trac_8054.patch](tarball://root/attachments/some-uuid/ticket8054/trac_8054.patch) by @mwhansen created at 2010-08-26 19:02:59
 
 
 
@@ -136,7 +136,7 @@ archive/issue_comments_070457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8054#issuecomment-70457",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_070458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8054#issuecomment-70458",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_070459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8054#issuecomment-70459",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_070460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8054#issuecomment-70460",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_070461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8054#issuecomment-70461",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_070462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8054#issuecomment-70462",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_070463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8054#issuecomment-70463",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_070464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8054#issuecomment-70464",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_070465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8054#issuecomment-70465",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_070466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8054#issuecomment-70466",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -366,16 +366,16 @@ I've cc'd Rob Beezer about [comment:8 rebasing patches].
 archive/issue_comments_070467.json:
 ```json
 {
-    "body": "Attachment [trac_8054.2.patch](tarball://root/attachments/some-uuid/ticket8054/trac_8054.2.patch) by zimmerma created at 2010-09-19 18:56:36\n\noriginal patch rebased on 4.6.alpha1",
+    "body": "Attachment [trac_8054.2.patch](tarball://root/attachments/some-uuid/ticket8054/trac_8054.2.patch) by @zimmermann6 created at 2010-09-19 18:56:36\n\noriginal patch rebased on 4.6.alpha1",
     "created_at": "2010-09-19T18:56:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8054#issuecomment-70467",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [trac_8054.2.patch](tarball://root/attachments/some-uuid/ticket8054/trac_8054.2.patch) by zimmerma created at 2010-09-19 18:56:36
+Attachment [trac_8054.2.patch](tarball://root/attachments/some-uuid/ticket8054/trac_8054.2.patch) by @zimmermann6 created at 2010-09-19 18:56:36
 
 original patch rebased on 4.6.alpha1
 
@@ -391,7 +391,7 @@ archive/issue_comments_070468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8054#issuecomment-70468",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -409,7 +409,7 @@ archive/issue_comments_070469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8054#issuecomment-70469",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -432,7 +432,7 @@ archive/issue_comments_070470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8054#issuecomment-70470",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -452,7 +452,7 @@ archive/issue_comments_070471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8054#issuecomment-70471",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -493,7 +493,7 @@ archive/issue_comments_070472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8054#issuecomment-70472",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -509,16 +509,16 @@ Thanks, Rob.  I wasn't sure whether this is in the Guide.  I should reread it in
 archive/issue_comments_070473.json:
 ```json
 {
-    "body": "Attachment [trac_8054.3.patch](tarball://root/attachments/some-uuid/ticket8054/trac_8054.3.patch) by zimmerma created at 2010-09-20 07:47:48",
+    "body": "Attachment [trac_8054.3.patch](tarball://root/attachments/some-uuid/ticket8054/trac_8054.3.patch) by @zimmermann6 created at 2010-09-20 07:47:48",
     "created_at": "2010-09-20T07:47:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8054#issuecomment-70473",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [trac_8054.3.patch](tarball://root/attachments/some-uuid/ticket8054/trac_8054.3.patch) by zimmerma created at 2010-09-20 07:47:48
+Attachment [trac_8054.3.patch](tarball://root/attachments/some-uuid/ticket8054/trac_8054.3.patch) by @zimmermann6 created at 2010-09-20 07:47:48
 
 
 
@@ -532,7 +532,7 @@ archive/issue_comments_070474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8054#issuecomment-70474",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -552,7 +552,7 @@ archive/issue_comments_070475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8054#issuecomment-70475",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -570,7 +570,7 @@ archive/issue_comments_070476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8054#issuecomment-70476",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

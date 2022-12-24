@@ -3,7 +3,7 @@
 archive/issues_003539.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\n\n```\nDear SAGE community,\n\nI am trying to compute characters for some finite fields.\n\nWith \"small\" fields, everything is fine:\n sage:   K=CyclotomicField(10);\n sage:   p=10151;\n sage:   Character=DirichletGroup(p,K);\n sage:   Khi=Character.0;\n sage:   Khi(7)\n zeta10\n\nHowever, with slightly larger fields:\n sage:   K=CyclotomicField(10);\n sage:   p=100151;\n sage:   Character=DirichletGroup(p,K);\n sage:   Khi=Character.0;\n sage:   Khi(7)\n ---------------------------------------------------------------------------\n AttributeError                            Traceback (most recent call\n last)\n\n /users/cacao/bissogae/<ipython console> in <module>()\n\n /localdisk/tmp/sage-3.0.3/local/lib/python2.5/site-packages/sage/modular/dirichlet.py\n in __call__(self, m)\n\n /localdisk/tmp/sage-3.0.3/local/lib/python2.5/site-packages/sage/modular/dirichlet.py\n in values(self)\n\n AttributeError: 'sage.rings.integer_mod.IntegerMod_int64' object has no\n attribute 'ivalue'\n\nIs there something I am missing?\n\nThanks,\n --Gaetan\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3539\n\n",
+    "body": "Assignee: @craigcitro\n\n\n```\nDear SAGE community,\n\nI am trying to compute characters for some finite fields.\n\nWith \"small\" fields, everything is fine:\n sage:   K=CyclotomicField(10);\n sage:   p=10151;\n sage:   Character=DirichletGroup(p,K);\n sage:   Khi=Character.0;\n sage:   Khi(7)\n zeta10\n\nHowever, with slightly larger fields:\n sage:   K=CyclotomicField(10);\n sage:   p=100151;\n sage:   Character=DirichletGroup(p,K);\n sage:   Khi=Character.0;\n sage:   Khi(7)\n ---------------------------------------------------------------------------\n AttributeError                            Traceback (most recent call\n last)\n\n /users/cacao/bissogae/<ipython console> in <module>()\n\n /localdisk/tmp/sage-3.0.3/local/lib/python2.5/site-packages/sage/modular/dirichlet.py\n in __call__(self, m)\n\n /localdisk/tmp/sage-3.0.3/local/lib/python2.5/site-packages/sage/modular/dirichlet.py\n in values(self)\n\n AttributeError: 'sage.rings.integer_mod.IntegerMod_int64' object has no\n attribute 'ivalue'\n\nIs there something I am missing?\n\nThanks,\n --Gaetan\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3539\n\n",
     "created_at": "2008-07-01T00:55:36Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_003539.json:
     "title": "bug in DirichletGroup -- bad code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3539",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 
 ```
@@ -77,7 +77,7 @@ archive/issue_comments_025011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3539#issuecomment-25011",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -90,16 +90,16 @@ This is because `IntegerMod_int.ivalue` is cdef'ed public but `IntegerMod_int64.
 archive/issue_comments_025012.json:
 ```json
 {
-    "body": "Attachment [trac3539_ivalue_to_int.patch](tarball://root/attachments/some-uuid/ticket3539/trac3539_ivalue_to_int.patch) by wjp created at 2008-07-06 01:28:18",
+    "body": "Attachment [trac3539_ivalue_to_int.patch](tarball://root/attachments/some-uuid/ticket3539/trac3539_ivalue_to_int.patch) by @wjp created at 2008-07-06 01:28:18",
     "created_at": "2008-07-06T01:28:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3539#issuecomment-25012",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [trac3539_ivalue_to_int.patch](tarball://root/attachments/some-uuid/ticket3539/trac3539_ivalue_to_int.patch) by wjp created at 2008-07-06 01:28:18
+Attachment [trac3539_ivalue_to_int.patch](tarball://root/attachments/some-uuid/ticket3539/trac3539_ivalue_to_int.patch) by @wjp created at 2008-07-06 01:28:18
 
 
 
@@ -113,7 +113,7 @@ archive/issue_comments_025013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3539#issuecomment-25013",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_025014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3539#issuecomment-25014",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -144,16 +144,16 @@ I'm adding a new patch, that is intended as a replacement of the old one. Rob Br
 archive/issue_comments_025015.json:
 ```json
 {
-    "body": "Attachment [trac-3539-new-patch.patch](tarball://root/attachments/some-uuid/ticket3539/trac-3539-new-patch.patch) by craigcitro created at 2008-07-06 20:51:22",
+    "body": "Attachment [trac-3539-new-patch.patch](tarball://root/attachments/some-uuid/ticket3539/trac-3539-new-patch.patch) by @craigcitro created at 2008-07-06 20:51:22",
     "created_at": "2008-07-06T20:51:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3539#issuecomment-25015",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-3539-new-patch.patch](tarball://root/attachments/some-uuid/ticket3539/trac-3539-new-patch.patch) by craigcitro created at 2008-07-06 20:51:22
+Attachment [trac-3539-new-patch.patch](tarball://root/attachments/some-uuid/ticket3539/trac-3539-new-patch.patch) by @craigcitro created at 2008-07-06 20:51:22
 
 
 
@@ -167,7 +167,7 @@ archive/issue_comments_025016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3539#issuecomment-25016",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

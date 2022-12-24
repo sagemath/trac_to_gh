@@ -3,7 +3,7 @@
 archive/issues_008510.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nThe group SL(2,3) has a method conjugacy_class_representatives()\nwhile the group DiCyclicGroup(3) has a method\nconjugacy_classes_representatives(). These names are similar but not\nidentical. Presumably one should be changed.\n\nSee: \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/e65176f82a47e06d\n\nIssue created by migration from https://trac.sagemath.org/ticket/8510\n\n",
+    "body": "Assignee: @aghitza\n\nThe group SL(2,3) has a method conjugacy_class_representatives()\nwhile the group DiCyclicGroup(3) has a method\nconjugacy_classes_representatives(). These names are similar but not\nidentical. Presumably one should be changed.\n\nSee: \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/e65176f82a47e06d\n\nIssue created by migration from https://trac.sagemath.org/ticket/8510\n\n",
     "created_at": "2010-03-12T19:05:37Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_008510.json:
     "title": "conjugacy_class(es)_representatives",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8510",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 The group SL(2,3) has a method conjugacy_class_representatives()
 while the group DiCyclicGroup(3) has a method
@@ -44,7 +44,7 @@ archive/issue_comments_076847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8510#issuecomment-76847",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -62,7 +62,7 @@ archive/issue_comments_076848.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8510#issuecomment-76848",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_076849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8510#issuecomment-76849",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_076850.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8510#issuecomment-76850",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

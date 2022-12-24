@@ -3,7 +3,7 @@
 archive/issues_004591.json:
 ```json
 {
-    "body": "Assignee: was\n\nIn Magma 2.13 this works:\n\n```\nEllipticCurve('37a').three_selmer_rank()\n```\n\nbut in Magma 2.14 it doesn't (tested on osx and linux):\n\n```\nsage: EllipticCurve('37a').three_selmer_rank()\n```\n\n\nThis is implemented by a script I ship that is a modified versin of a magma script.\nI thus need to fix this.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/4591\n\n",
+    "body": "Assignee: @williamstein\n\nIn Magma 2.13 this works:\n\n```\nEllipticCurve('37a').three_selmer_rank()\n```\n\nbut in Magma 2.14 it doesn't (tested on osx and linux):\n\n```\nsage: EllipticCurve('37a').three_selmer_rank()\n```\n\n\nThis is implemented by a script I ship that is a modified versin of a magma script.\nI thus need to fix this.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/4591\n\n",
     "created_at": "2008-11-23T04:22:13Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004591.json:
     "title": "magma -- EllipticCurve('37a').three_selmer_rank() fails in Magma 2.14",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4591",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 In Magma 2.13 this works:
 
@@ -51,7 +51,7 @@ archive/issue_comments_034431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4591#issuecomment-34431",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -64,16 +64,16 @@ this totally fixes the problem, and is much simpler and better doctested code.  
 archive/issue_comments_034432.json:
 ```json
 {
-    "body": "Attachment [sage-4591.patch](tarball://root/attachments/some-uuid/ticket4591/sage-4591.patch) by was created at 2008-11-23 07:34:38",
+    "body": "Attachment [sage-4591.patch](tarball://root/attachments/some-uuid/ticket4591/sage-4591.patch) by @williamstein created at 2008-11-23 07:34:38",
     "created_at": "2008-11-23T07:34:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4591#issuecomment-34432",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-4591.patch](tarball://root/attachments/some-uuid/ticket4591/sage-4591.patch) by was created at 2008-11-23 07:34:38
+Attachment [sage-4591.patch](tarball://root/attachments/some-uuid/ticket4591/sage-4591.patch) by @williamstein created at 2008-11-23 07:34:38
 
 
 
@@ -87,7 +87,7 @@ archive/issue_comments_034433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4591#issuecomment-34433",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -156,16 +156,16 @@ Michael
 archive/issue_comments_034436.json:
 ```json
 {
-    "body": "Attachment [sage-4591.2.patch](tarball://root/attachments/some-uuid/ticket4591/sage-4591.2.patch) by was created at 2008-11-23 08:16:06\n\nrebased version.",
+    "body": "Attachment [sage-4591.2.patch](tarball://root/attachments/some-uuid/ticket4591/sage-4591.2.patch) by @williamstein created at 2008-11-23 08:16:06\n\nrebased version.",
     "created_at": "2008-11-23T08:16:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4591#issuecomment-34436",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-4591.2.patch](tarball://root/attachments/some-uuid/ticket4591/sage-4591.2.patch) by was created at 2008-11-23 08:16:06
+Attachment [sage-4591.2.patch](tarball://root/attachments/some-uuid/ticket4591/sage-4591.2.patch) by @williamstein created at 2008-11-23 08:16:06
 
 rebased version.
 

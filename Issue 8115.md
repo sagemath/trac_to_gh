@@ -3,7 +3,7 @@
 archive/issues_008115.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  vbraun mhampton\n\nKeywords: cddlib, polyhedra\n\nA problem with cddlib-094f.p2.spkg is that it patches upstream source using a patch file, rather than copying a patched file over to the appropriate place under the src/ directory. Consequently, there is no clean separation between upstream source and patches that we apply to cddlib-094f. Looking at spkg-install of cddlib-094f.p2.spkg, you get these two lines for applying Sage-specific patches:\n\n```\ncp patches/allfaces.c src/src/\n\npatch -p0 < patches/cdd_both_reps-make.patch\n```\n\nThe first line is the preferred way to patch an upstream source because it copies the patched file patches/allfaces.c over to src/src/.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8115\n\n",
+    "body": "Assignee: tbd\n\nCC:  @vbraun mhampton\n\nKeywords: cddlib, polyhedra\n\nA problem with cddlib-094f.p2.spkg is that it patches upstream source using a patch file, rather than copying a patched file over to the appropriate place under the src/ directory. Consequently, there is no clean separation between upstream source and patches that we apply to cddlib-094f. Looking at spkg-install of cddlib-094f.p2.spkg, you get these two lines for applying Sage-specific patches:\n\n```\ncp patches/allfaces.c src/src/\n\npatch -p0 < patches/cdd_both_reps-make.patch\n```\n\nThe first line is the preferred way to patch an upstream source because it copies the patched file patches/allfaces.c over to src/src/.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8115\n\n",
     "created_at": "2010-01-29T09:51:05Z",
     "labels": [
         "packages: standard",
@@ -19,7 +19,7 @@ archive/issues_008115.json:
 ```
 Assignee: tbd
 
-CC:  vbraun mhampton
+CC:  @vbraun mhampton
 
 Keywords: cddlib, polyhedra
 
@@ -115,7 +115,7 @@ archive/issue_comments_071249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8115#issuecomment-71249",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -146,16 +146,16 @@ Changes:
 archive/issue_comments_071250.json:
 ```json
 {
-    "body": "Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket8115/spkg-install) by vbraun created at 2010-01-29 16:34:00\n\nspkg-install from cddlib-094f.p4.spkg",
+    "body": "Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket8115/spkg-install) by @vbraun created at 2010-01-29 16:34:00\n\nspkg-install from cddlib-094f.p4.spkg",
     "created_at": "2010-01-29T16:34:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8115#issuecomment-71250",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket8115/spkg-install) by vbraun created at 2010-01-29 16:34:00
+Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket8115/spkg-install) by @vbraun created at 2010-01-29 16:34:00
 
 spkg-install from cddlib-094f.p4.spkg
 
@@ -322,7 +322,7 @@ archive/issue_comments_071256.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8115#issuecomment-71256",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -522,7 +522,7 @@ archive/issue_comments_071265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8115#issuecomment-71265",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -593,7 +593,7 @@ archive/issue_comments_071268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8115#issuecomment-71268",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -615,7 +615,7 @@ archive/issue_comments_071269.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8115#issuecomment-71269",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -665,7 +665,7 @@ archive/issue_comments_071270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8115#issuecomment-71270",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -691,16 +691,16 @@ Jaap
 archive/issue_comments_071271.json:
 ```json
 {
-    "body": "Attachment [cddlib-local-bin-hgignore.patch](tarball://root/attachments/some-uuid/ticket8115/cddlib-local-bin-hgignore.patch) by vbraun created at 2010-02-03 19:32:30\n\nAdd cdd_both_reps/cdd_both_reps_gmp binaries to .hgignore.",
+    "body": "Attachment [cddlib-local-bin-hgignore.patch](tarball://root/attachments/some-uuid/ticket8115/cddlib-local-bin-hgignore.patch) by @vbraun created at 2010-02-03 19:32:30\n\nAdd cdd_both_reps/cdd_both_reps_gmp binaries to .hgignore.",
     "created_at": "2010-02-03T19:32:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8115#issuecomment-71271",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [cddlib-local-bin-hgignore.patch](tarball://root/attachments/some-uuid/ticket8115/cddlib-local-bin-hgignore.patch) by vbraun created at 2010-02-03 19:32:30
+Attachment [cddlib-local-bin-hgignore.patch](tarball://root/attachments/some-uuid/ticket8115/cddlib-local-bin-hgignore.patch) by @vbraun created at 2010-02-03 19:32:30
 
 Add cdd_both_reps/cdd_both_reps_gmp binaries to .hgignore.
 
@@ -774,7 +774,7 @@ archive/issue_comments_071275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8115#issuecomment-71275",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -792,7 +792,7 @@ archive/issue_comments_071276.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8115#issuecomment-71276",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -846,7 +846,7 @@ archive/issue_comments_071278.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8115#issuecomment-71278",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -866,7 +866,7 @@ archive/issue_comments_071279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8115#issuecomment-71279",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -916,7 +916,7 @@ archive/issue_comments_071281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8115#issuecomment-71281",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1008,7 +1008,7 @@ archive/issue_comments_071286.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8115#issuecomment-71286",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -1032,7 +1032,7 @@ archive/issue_comments_071287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8115#issuecomment-71287",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

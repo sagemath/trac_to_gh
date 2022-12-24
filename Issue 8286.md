@@ -3,7 +3,7 @@
 archive/issues_008286.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: mat = matrix(ZZ, 0, 1, sparse=True)\nsage: mat.nrows()\n0\nsage: mat.rows()\n[(0)]\nsage: mat = matrix(ZZ, 0, 1, sparse=False)\nsage: mat.nrows()\n0\nsage: mat.rows()\n[]\n```\n\nThe `rows` method should act the same regardless of the sparsity of the matrix, and when there are no rows, it should return an empty list.\n\nThe same thing happens with matrices defined over QQ or GF(2), so I'm guessing that the problem is with `sparse_rows` and `sparse_columns` in sage/matrix/matrix1.pyx.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8286\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: mat = matrix(ZZ, 0, 1, sparse=True)\nsage: mat.nrows()\n0\nsage: mat.rows()\n[(0)]\nsage: mat = matrix(ZZ, 0, 1, sparse=False)\nsage: mat.nrows()\n0\nsage: mat.rows()\n[]\n```\n\nThe `rows` method should act the same regardless of the sparsity of the matrix, and when there are no rows, it should return an empty list.\n\nThe same thing happens with matrices defined over QQ or GF(2), so I'm guessing that the problem is with `sparse_rows` and `sparse_columns` in sage/matrix/matrix1.pyx.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8286\n\n",
     "created_at": "2010-02-16T21:37:28Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_008286.json:
     "title": "sparse_rows and sparse_columns are broken for 0xn, nx0 matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8286",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -54,7 +54,7 @@ archive/issue_comments_073374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8286#issuecomment-73374",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_073375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8286#issuecomment-73375",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_073376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8286#issuecomment-73376",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_073377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8286#issuecomment-73377",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

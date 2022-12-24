@@ -14,7 +14,7 @@ archive/issues_003325.json:
     "title": "[with patch, needs review] small error in argument to dvipng in latex.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3325",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: somebody
@@ -54,7 +54,7 @@ archive/issue_comments_023061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3325#issuecomment-23061",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

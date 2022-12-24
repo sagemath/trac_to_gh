@@ -3,7 +3,7 @@
 archive/issues_006034.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  craigcitro\n\nKeywords: singular\n\nSingular 3.1 has many new features which are pretty exciting for Sage (computation over base *rings*, yay!). So we should upgrade.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6034\n\n",
+    "body": "Assignee: @malb\n\nCC:  @craigcitro\n\nKeywords: singular\n\nSingular 3.1 has many new features which are pretty exciting for Sage (computation over base *rings*, yay!). So we should upgrade.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6034\n\n",
     "created_at": "2009-05-13T03:00:37Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_006034.json:
     "title": "[with spkg, needs review] update Singular to newest upstream release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6034",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  craigcitro
+CC:  @craigcitro
 
 Keywords: singular
 
@@ -41,7 +41,7 @@ archive/issue_comments_048044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6034#issuecomment-48044",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -54,16 +54,16 @@ fixes doctest fallout
 archive/issue_comments_048045.json:
 ```json
 {
-    "body": "Attachment [singular_3_1_0.patch](tarball://root/attachments/some-uuid/ticket6034/singular_3_1_0.patch) by malb created at 2009-05-13 03:02:20\n\nThe SPKG can be found here:\n\n   http://sage.math.washington.edu/home/malb/spkgs/singular-3-1-0-2-20090512.spkg\n\nIt does not contain the changed LIB location. It basically is a drop-in replacement for the current Singular spkg.",
+    "body": "Attachment [singular_3_1_0.patch](tarball://root/attachments/some-uuid/ticket6034/singular_3_1_0.patch) by @malb created at 2009-05-13 03:02:20\n\nThe SPKG can be found here:\n\n   http://sage.math.washington.edu/home/malb/spkgs/singular-3-1-0-2-20090512.spkg\n\nIt does not contain the changed LIB location. It basically is a drop-in replacement for the current Singular spkg.",
     "created_at": "2009-05-13T03:02:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6034#issuecomment-48045",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [singular_3_1_0.patch](tarball://root/attachments/some-uuid/ticket6034/singular_3_1_0.patch) by malb created at 2009-05-13 03:02:20
+Attachment [singular_3_1_0.patch](tarball://root/attachments/some-uuid/ticket6034/singular_3_1_0.patch) by @malb created at 2009-05-13 03:02:20
 
 The SPKG can be found here:
 
@@ -78,16 +78,16 @@ It does not contain the changed LIB location. It basically is a drop-in replacem
 archive/issue_comments_048046.json:
 ```json
 {
-    "body": "Attachment [singular_env.patch](tarball://root/attachments/some-uuid/ticket6034/singular_env.patch) by malb created at 2009-05-13 03:42:36\n\nI've updated sage-env and the spkg to move the `*.lib` files out of the way to `$SAGE_LOCAL/share/singular`.",
+    "body": "Attachment [singular_env.patch](tarball://root/attachments/some-uuid/ticket6034/singular_env.patch) by @malb created at 2009-05-13 03:42:36\n\nI've updated sage-env and the spkg to move the `*.lib` files out of the way to `$SAGE_LOCAL/share/singular`.",
     "created_at": "2009-05-13T03:42:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6034#issuecomment-48046",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [singular_env.patch](tarball://root/attachments/some-uuid/ticket6034/singular_env.patch) by malb created at 2009-05-13 03:42:36
+Attachment [singular_env.patch](tarball://root/attachments/some-uuid/ticket6034/singular_env.patch) by @malb created at 2009-05-13 03:42:36
 
 I've updated sage-env and the spkg to move the `*.lib` files out of the way to `$SAGE_LOCAL/share/singular`.
 
@@ -103,7 +103,7 @@ archive/issue_comments_048047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6034#issuecomment-48047",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_048048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6034#issuecomment-48048",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_048049.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6034#issuecomment-48049",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_048050.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6034#issuecomment-48050",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_048051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6034#issuecomment-48051",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_048052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6034#issuecomment-48052",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_048053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6034#issuecomment-48053",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_048054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6034#issuecomment-48054",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_048055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6034#issuecomment-48055",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -308,7 +308,7 @@ archive/issue_comments_048056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6034#issuecomment-48056",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -328,7 +328,7 @@ archive/issue_comments_048057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6034#issuecomment-48057",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -353,7 +353,7 @@ archive/issue_comments_048058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6034#issuecomment-48058",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -371,7 +371,7 @@ archive/issue_comments_048059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6034#issuecomment-48059",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -406,7 +406,7 @@ archive/issue_comments_048060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6034#issuecomment-48060",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -426,7 +426,7 @@ archive/issue_comments_048061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6034#issuecomment-48061",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -455,7 +455,7 @@ archive/issue_comments_048062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6034#issuecomment-48062",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -480,7 +480,7 @@ archive/issue_comments_048063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6034#issuecomment-48063",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -501,7 +501,7 @@ archive/issue_comments_048064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6034#issuecomment-48064",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -525,7 +525,7 @@ archive/issue_comments_048065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6034#issuecomment-48065",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -543,7 +543,7 @@ archive/issue_comments_048066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6034#issuecomment-48066",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

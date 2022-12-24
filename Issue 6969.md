@@ -14,7 +14,7 @@ archive/issues_006969.json:
     "title": "port boehm gc to os x 10.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6969",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -49,7 +49,7 @@ archive/issue_comments_057654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6969",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6969#issuecomment-57654",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_057655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6969",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6969#issuecomment-57655",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

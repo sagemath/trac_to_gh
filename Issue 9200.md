@@ -3,7 +3,7 @@
 archive/issues_009200.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  jason rbeezer\n\n1. Add `from_left` and `from_right` for `dir` keyword.\n\n2. Improve error message `dir` keyword.\n\n3. Add doctests and tests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9200\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @jasongrout @rbeezer\n\n1. Add `from_left` and `from_right` for `dir` keyword.\n\n2. Improve error message `dir` keyword.\n\n3. Add doctests and tests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9200\n\n",
     "created_at": "2010-06-10T02:26:53Z",
     "labels": [
         "calculus",
@@ -17,9 +17,9 @@ archive/issues_009200.json:
     "user": "DanaErnst"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  jason rbeezer
+CC:  @jasongrout @rbeezer
 
 1. Add `from_left` and `from_right` for `dir` keyword.
 
@@ -154,7 +154,7 @@ archive/issue_comments_086068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86068",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_086069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86069",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_086070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86070",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_086071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86071",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -245,16 +245,16 @@ I have been using Sage for almost a year, so I would consider myself a newbie.  
 archive/issue_comments_086073.json:
 ```json
 {
-    "body": "Attachment [trac_9200-deprecation.patch](tarball://root/attachments/some-uuid/ticket9200/trac_9200-deprecation.patch) by burcin created at 2010-09-08 21:13:47\n\nadd deprecation warnings",
+    "body": "Attachment [trac_9200-deprecation.patch](tarball://root/attachments/some-uuid/ticket9200/trac_9200-deprecation.patch) by @burcin created at 2010-09-08 21:13:47\n\nadd deprecation warnings",
     "created_at": "2010-09-08T21:13:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86073",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9200-deprecation.patch](tarball://root/attachments/some-uuid/ticket9200/trac_9200-deprecation.patch) by burcin created at 2010-09-08 21:13:47
+Attachment [trac_9200-deprecation.patch](tarball://root/attachments/some-uuid/ticket9200/trac_9200-deprecation.patch) by @burcin created at 2010-09-08 21:13:47
 
 add deprecation warnings
 
@@ -270,7 +270,7 @@ archive/issue_comments_086074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86074",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_086075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86075",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -333,16 +333,16 @@ Dana
 archive/issue_comments_086077.json:
 ```json
 {
-    "body": "Attachment [trac_9200-deprecation-v2.patch](tarball://root/attachments/some-uuid/ticket9200/trac_9200-deprecation-v2.patch) by rbeezer created at 2010-09-09 05:58:11",
+    "body": "Attachment [trac_9200-deprecation-v2.patch](tarball://root/attachments/some-uuid/ticket9200/trac_9200-deprecation-v2.patch) by @rbeezer created at 2010-09-09 05:58:11",
     "created_at": "2010-09-09T05:58:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86077",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9200-deprecation-v2.patch](tarball://root/attachments/some-uuid/ticket9200/trac_9200-deprecation-v2.patch) by rbeezer created at 2010-09-09 05:58:11
+Attachment [trac_9200-deprecation-v2.patch](tarball://root/attachments/some-uuid/ticket9200/trac_9200-deprecation-v2.patch) by @rbeezer created at 2010-09-09 05:58:11
 
 
 
@@ -356,7 +356,7 @@ archive/issue_comments_086078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86078",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -380,7 +380,7 @@ archive/issue_comments_086079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86079",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -398,7 +398,7 @@ archive/issue_comments_086080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86080",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -426,7 +426,7 @@ archive/issue_comments_086081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86081",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -444,7 +444,7 @@ archive/issue_comments_086082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86082",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

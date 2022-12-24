@@ -3,7 +3,7 @@
 archive/issues_001507.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1507\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1507\n\n",
     "created_at": "2007-12-14T17:53:05Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001507.json:
     "title": "[with patch] plotting -- document how to use pylab / matlab style plotting from sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1507",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_009648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1507#issuecomment-9648",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -50,16 +50,16 @@ this is *only* a documentation addition -- no code, so should be easy to referee
 archive/issue_comments_009649.json:
 ```json
 {
-    "body": "Attachment [trac-1507.patch](tarball://root/attachments/some-uuid/ticket1507/trac-1507.patch) by was created at 2007-12-14 17:58:26",
+    "body": "Attachment [trac-1507.patch](tarball://root/attachments/some-uuid/ticket1507/trac-1507.patch) by @williamstein created at 2007-12-14 17:58:26",
     "created_at": "2007-12-14T17:58:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1507#issuecomment-9649",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1507.patch](tarball://root/attachments/some-uuid/ticket1507/trac-1507.patch) by was created at 2007-12-14 17:58:26
+Attachment [trac-1507.patch](tarball://root/attachments/some-uuid/ticket1507/trac-1507.patch) by @williamstein created at 2007-12-14 17:58:26
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_009650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1507#issuecomment-9650",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

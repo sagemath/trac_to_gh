@@ -3,7 +3,7 @@
 archive/issues_003066.json:
 ```json
 {
-    "body": "Assignee: was\n\nLooks like an explicit import is the only thing missing on this one:\n\n\n```\nsage: a = matrix([])\nsage: m.gram_schmidt()\n<type 'exceptions.NameError'>: global name 'ZZ' is not defined\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3066\n\n",
+    "body": "Assignee: @williamstein\n\nLooks like an explicit import is the only thing missing on this one:\n\n\n```\nsage: a = matrix([])\nsage: m.gram_schmidt()\n<type 'exceptions.NameError'>: global name 'ZZ' is not defined\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3066\n\n",
     "created_at": "2008-04-30T15:20:39Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_003066.json:
     "title": "empty matrices: gram_schmidt() throws a NameError",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3066",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Looks like an explicit import is the only thing missing on this one:
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3066
 archive/issue_comments_021164.json:
 ```json
 {
-    "body": "Attachment [3066.patch](tarball://root/attachments/some-uuid/ticket3066/3066.patch) by dfdeshom created at 2008-04-30 17:35:01",
+    "body": "Attachment [3066.patch](tarball://root/attachments/some-uuid/ticket3066/3066.patch) by @dfdeshom created at 2008-04-30 17:35:01",
     "created_at": "2008-04-30T17:35:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3066",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3066#issuecomment-21164",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Attachment [3066.patch](tarball://root/attachments/some-uuid/ticket3066/3066.patch) by dfdeshom created at 2008-04-30 17:35:01
+Attachment [3066.patch](tarball://root/attachments/some-uuid/ticket3066/3066.patch) by @dfdeshom created at 2008-04-30 17:35:01
 
 
 
@@ -63,7 +63,7 @@ archive/issue_comments_021165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3066",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3066#issuecomment-21165",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 

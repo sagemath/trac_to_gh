@@ -3,7 +3,7 @@
 archive/issues_000649.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/649\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/649\n\n",
     "created_at": "2007-09-13T18:44:26Z",
     "labels": [
         "coding theory",
@@ -14,10 +14,10 @@ archive/issues_000649.json:
     "title": "symbolic matrices need simplify_* methods",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/649",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_003370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/649",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/649#issuecomment-3370",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing component from coding theory to calculus.
 archive/issue_comments_003371.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-10-19T18:43:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/649",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/649#issuecomment-3371",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_003372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/649",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/649#issuecomment-3372",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -86,16 +86,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_003373.json:
 ```json
 {
-    "body": "Attachment [649-symbolic-matrices.hg](tarball://root/attachments/some-uuid/ticket649/649-symbolic-matrices.hg) by robertwb created at 2007-12-20 10:47:34\n\nI've posted a preliminary bundle. Something's up with the eigenvalues command however.",
+    "body": "Attachment [649-symbolic-matrices.hg](tarball://root/attachments/some-uuid/ticket649/649-symbolic-matrices.hg) by @robertwb created at 2007-12-20 10:47:34\n\nI've posted a preliminary bundle. Something's up with the eigenvalues command however.",
     "created_at": "2007-12-20T10:47:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/649",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/649#issuecomment-3373",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [649-symbolic-matrices.hg](tarball://root/attachments/some-uuid/ticket649/649-symbolic-matrices.hg) by robertwb created at 2007-12-20 10:47:34
+Attachment [649-symbolic-matrices.hg](tarball://root/attachments/some-uuid/ticket649/649-symbolic-matrices.hg) by @robertwb created at 2007-12-20 10:47:34
 
 I've posted a preliminary bundle. Something's up with the eigenvalues command however.
 
@@ -106,16 +106,16 @@ I've posted a preliminary bundle. Something's up with the eigenvalues command ho
 archive/issue_comments_003374.json:
 ```json
 {
-    "body": "Attachment [649.patch](tarball://root/attachments/some-uuid/ticket649/649.patch) by mhansen created at 2007-12-22 18:18:00",
+    "body": "Attachment [649.patch](tarball://root/attachments/some-uuid/ticket649/649.patch) by @mwhansen created at 2007-12-22 18:18:00",
     "created_at": "2007-12-22T18:18:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/649",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/649#issuecomment-3374",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [649.patch](tarball://root/attachments/some-uuid/ticket649/649.patch) by mhansen created at 2007-12-22 18:18:00
+Attachment [649.patch](tarball://root/attachments/some-uuid/ticket649/649.patch) by @mwhansen created at 2007-12-22 18:18:00
 
 
 
@@ -129,7 +129,7 @@ archive/issue_comments_003375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/649",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/649#issuecomment-3375",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_003376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/649",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/649#issuecomment-3376",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_003377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/649",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/649#issuecomment-3377",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_003378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/649",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/649#issuecomment-3378",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003155.json:
     "title": "notebook postdata and behaviour of archive, delete and stop buttons",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3155",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 Assignee: boothby

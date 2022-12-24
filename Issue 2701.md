@@ -3,7 +3,7 @@
 archive/issues_002701.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThe attached patch fixes two bugs - one in spectrum and one in zeta_polynomial,\nboth of which either failed or behaved badly for codes over non-prime fields.\nI also added som doctests for non-prime fields. \n\nIt passes sage -testall except for plot.py and polynomial_modn_dense_ntl.pyx.\n(I reran sage -t on polynomial_modn_dense_ntl.pyx and it passed the second time.)\nI think these have nothing to do with the patch but here are the details:\n\nsage -t  devel/sage-coding/sage/rings/polynomial/polynomial_modn_dense_ntl.pyx**********************************************************************\nFile \"polynomial_modn_dense_ntl.pyx\", line 495:\n    sage: q == qbar - d\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n1 items had failures:\n   1 of  37 in __main__.example_10\n***Test Failed*** 1 failures.\n\nsage -t  devel/sage-coding/sage/plot/plot.py                **********************************************************************\nFile \"plot.py\", line 3506:\n    sage: plot(x^(1/3), (x,-1,1))\nExpected nothing\nGot:\n    WARNING: When plotting, failed to evaluate function at 100 points.\n    Last error message: 'negative number cannot be raised to a fractional power'\n    <BLANKLINE>\n**********************************************************************\n1 items had failures:\n   1 of  28 in __main__.example_111\n***Test Failed*** 1 failures.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2701\n\n",
+    "body": "Assignee: @rlmill\n\nThe attached patch fixes two bugs - one in spectrum and one in zeta_polynomial,\nboth of which either failed or behaved badly for codes over non-prime fields.\nI also added som doctests for non-prime fields. \n\nIt passes sage -testall except for plot.py and polynomial_modn_dense_ntl.pyx.\n(I reran sage -t on polynomial_modn_dense_ntl.pyx and it passed the second time.)\nI think these have nothing to do with the patch but here are the details:\n\nsage -t  devel/sage-coding/sage/rings/polynomial/polynomial_modn_dense_ntl.pyx**********************************************************************\nFile \"polynomial_modn_dense_ntl.pyx\", line 495:\n    sage: q == qbar - d\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n1 items had failures:\n   1 of  37 in __main__.example_10\n***Test Failed*** 1 failures.\n\nsage -t  devel/sage-coding/sage/plot/plot.py                **********************************************************************\nFile \"plot.py\", line 3506:\n    sage: plot(x^(1/3), (x,-1,1))\nExpected nothing\nGot:\n    WARNING: When plotting, failed to evaluate function at 100 points.\n    Last error message: 'negative number cannot be raised to a fractional power'\n    <BLANKLINE>\n**********************************************************************\n1 items had failures:\n   1 of  28 in __main__.example_111\n***Test Failed*** 1 failures.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2701\n\n",
     "created_at": "2008-03-28T17:22:00Z",
     "labels": [
         "coding theory",
@@ -14,10 +14,10 @@ archive/issues_002701.json:
     "title": "simple bug fixed for linear_codes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2701",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 The attached patch fixes two bugs - one in spectrum and one in zeta_polynomial,
 both of which either failed or behaved badly for codes over non-prime fields.
@@ -63,16 +63,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2701
 archive/issue_comments_018625.json:
 ```json
 {
-    "body": "Attachment [9029.patch](tarball://root/attachments/some-uuid/ticket2701/9029.patch) by wdj created at 2008-03-28 17:23:57",
+    "body": "Attachment [9029.patch](tarball://root/attachments/some-uuid/ticket2701/9029.patch) by @wdjoyner created at 2008-03-28 17:23:57",
     "created_at": "2008-03-28T17:23:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2701#issuecomment-18625",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [9029.patch](tarball://root/attachments/some-uuid/ticket2701/9029.patch) by wdj created at 2008-03-28 17:23:57
+Attachment [9029.patch](tarball://root/attachments/some-uuid/ticket2701/9029.patch) by @wdjoyner created at 2008-03-28 17:23:57
 
 
 
@@ -86,7 +86,7 @@ archive/issue_comments_018626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2701#issuecomment-18626",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_018628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2701#issuecomment-18628",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

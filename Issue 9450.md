@@ -3,7 +3,7 @@
 archive/issues_009450.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nThe attached patch implements a factor() function for number field elements.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9450\n\n",
+    "body": "Assignee: @loefflerd\n\nThe attached patch implements a factor() function for number field elements.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9450\n\n",
     "created_at": "2010-07-07T21:06:36Z",
     "labels": [
         "number fields",
@@ -14,10 +14,10 @@ archive/issues_009450.json:
     "title": "Implement a factor() function for NumberFieldElement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9450",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
 The attached patch implements a factor() function for number field elements.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9450
 archive/issue_comments_090568.json:
 ```json
 {
-    "body": "Attachment [9450.patch](tarball://root/attachments/some-uuid/ticket9450/9450.patch) by jdemeyer created at 2010-07-07 21:17:52",
+    "body": "Attachment [9450.patch](tarball://root/attachments/some-uuid/ticket9450/9450.patch) by @jdemeyer created at 2010-07-07 21:17:52",
     "created_at": "2010-07-07T21:17:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9450",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9450#issuecomment-90568",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9450.patch](tarball://root/attachments/some-uuid/ticket9450/9450.patch) by jdemeyer created at 2010-07-07 21:17:52
+Attachment [9450.patch](tarball://root/attachments/some-uuid/ticket9450/9450.patch) by @jdemeyer created at 2010-07-07 21:17:52
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_090569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9450",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9450#issuecomment-90569",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing status from new to needs_review.
 archive/issue_comments_090570.json:
 ```json
 {
-    "body": "Attachment [trac_9450-reviewer.patch](tarball://root/attachments/some-uuid/ticket9450/trac_9450-reviewer.patch) by cremona created at 2010-07-08 12:26:37\n\nApply after previous patch",
+    "body": "Attachment [trac_9450-reviewer.patch](tarball://root/attachments/some-uuid/ticket9450/trac_9450-reviewer.patch) by @JohnCremona created at 2010-07-08 12:26:37\n\nApply after previous patch",
     "created_at": "2010-07-08T12:26:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9450",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9450#issuecomment-90570",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_9450-reviewer.patch](tarball://root/attachments/some-uuid/ticket9450/trac_9450-reviewer.patch) by cremona created at 2010-07-08 12:26:37
+Attachment [trac_9450-reviewer.patch](tarball://root/attachments/some-uuid/ticket9450/trac_9450-reviewer.patch) by @JohnCremona created at 2010-07-08 12:26:37
 
 Apply after previous patch
 
@@ -93,7 +93,7 @@ archive/issue_comments_090571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9450",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9450#issuecomment-90571",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_090572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9450",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9450#issuecomment-90572",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_090573.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9450",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9450#issuecomment-90573",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_090574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9450",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9450#issuecomment-90574",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

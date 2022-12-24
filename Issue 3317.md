@@ -3,7 +3,7 @@
 archive/issues_003317.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  burcin novoselt ranosch polybori jakobkroeker\n\nKeywords: citations\n\nSage could use some sort of citation system that identifies what components/packages are used in a given computation or worksheet.  After some discussion, it is unclear what the architecture of that should be.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3317\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @burcin @novoselt ranosch polybori jakobkroeker\n\nKeywords: citations\n\nSage could use some sort of citation system that identifies what components/packages are used in a given computation or worksheet.  After some discussion, it is unclear what the architecture of that should be.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3317\n\n",
     "created_at": "2008-05-28T00:20:03Z",
     "labels": [
         "packages: standard",
@@ -19,7 +19,7 @@ archive/issues_003317.json:
 ```
 Assignee: mhampton
 
-CC:  burcin novoselt ranosch polybori jakobkroeker
+CC:  @burcin @novoselt ranosch polybori jakobkroeker
 
 Keywords: citations
 
@@ -77,7 +77,7 @@ archive/issue_comments_022975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3317#issuecomment-22975",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_022976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3317#issuecomment-22976",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_022978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3317#issuecomment-22978",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_022979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3317#issuecomment-22979",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -404,7 +404,7 @@ archive/issue_comments_022989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3317#issuecomment-22989",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -422,7 +422,7 @@ archive/issue_comments_022990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3317#issuecomment-22990",
-    "user": "itaibn"
+    "user": "@itaibn"
 }
 ```
 
@@ -440,7 +440,7 @@ archive/issue_comments_022991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3317#issuecomment-22991",
-    "user": "itaibn"
+    "user": "@itaibn"
 }
 ```
 
@@ -458,7 +458,7 @@ archive/issue_comments_022992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3317#issuecomment-22992",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -480,7 +480,7 @@ archive/issue_comments_022993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3317#issuecomment-22993",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -500,7 +500,7 @@ archive/issue_comments_022994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3317#issuecomment-22994",
-    "user": "itaibn"
+    "user": "@itaibn"
 }
 ```
 
@@ -518,7 +518,7 @@ archive/issue_comments_022995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3317#issuecomment-22995",
-    "user": "itaibn"
+    "user": "@itaibn"
 }
 ```
 
@@ -689,7 +689,7 @@ archive/issue_comments_023003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3317#issuecomment-23003",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -709,7 +709,7 @@ archive/issue_comments_023004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3317#issuecomment-23004",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -727,7 +727,7 @@ archive/issue_comments_023005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3317#issuecomment-23005",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -745,7 +745,7 @@ archive/issue_comments_023006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3317#issuecomment-23006",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -763,7 +763,7 @@ archive/issue_comments_023007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3317#issuecomment-23007",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -781,7 +781,7 @@ archive/issue_comments_023008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3317#issuecomment-23008",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 

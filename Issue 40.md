@@ -13,7 +13,7 @@ archive/issues_000040.json:
     "title": "preparser issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/40",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -54,7 +54,7 @@ archive/issue_comments_000250.json:
     "issue": "https://github.com/sagemath/sagetest/issues/40",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/40#issuecomment-250",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_000251.json:
     "issue": "https://github.com/sagemath/sagetest/issues/40",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/40#issuecomment-251",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_000252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/40",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/40#issuecomment-252",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_000253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/40",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/40#issuecomment-253",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

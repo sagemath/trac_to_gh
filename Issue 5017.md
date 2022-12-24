@@ -3,7 +3,7 @@
 archive/issues_005017.json:
 ```json
 {
-    "body": "Assignee: rlm\n\n\n\n```\nNikos Apostolakis wrote:\n> > The \"translation=True\" flag does not work after upgrading to sage 3.2.3\n> > I am not sure when this behaviour was introduced.  In version 2.10.2 it\n> > works fine, unfortunately I don't have a more recent old sage to check.\n> > \n> >   sage: foo = Graph()\n> >   sage: foo.add_edges([(0,1,1),(1,2,2), (2,3,3)])\n> >   sage: foo.automorphism_group(translation=True)\n\n\nThis worked in sage-3.1.2 and before, giving\n  (Permutation Group with generators [(1,2)(3,4)], {0: 4, 1: 1, 2: 2, 3: 3})\n\nIn sage-3.2.1 and later this fails.\n\nJaap\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5017\n\n",
+    "body": "Assignee: @rlmill\n\n\n\n```\nNikos Apostolakis wrote:\n> > The \"translation=True\" flag does not work after upgrading to sage 3.2.3\n> > I am not sure when this behaviour was introduced.  In version 2.10.2 it\n> > works fine, unfortunately I don't have a more recent old sage to check.\n> > \n> >   sage: foo = Graph()\n> >   sage: foo.add_edges([(0,1,1),(1,2,2), (2,3,3)])\n> >   sage: foo.automorphism_group(translation=True)\n\n\nThis worked in sage-3.1.2 and before, giving\n  (Permutation Group with generators [(1,2)(3,4)], {0: 4, 1: 1, 2: 2, 3: 3})\n\nIn sage-3.2.1 and later this fails.\n\nJaap\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5017\n\n",
     "created_at": "2009-01-18T18:29:03Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_005017.json:
     "title": "graph.automorphism_group(translation=True) gives error in 3.2.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5017",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 
 
@@ -53,16 +53,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5017
 archive/issue_comments_038225.json:
 ```json
 {
-    "body": "Attachment [trac_5017-graph_aut_gp_trans.patch](tarball://root/attachments/some-uuid/ticket5017/trac_5017-graph_aut_gp_trans.patch) by rlm created at 2009-01-18 20:36:18",
+    "body": "Attachment [trac_5017-graph_aut_gp_trans.patch](tarball://root/attachments/some-uuid/ticket5017/trac_5017-graph_aut_gp_trans.patch) by @rlmill created at 2009-01-18 20:36:18",
     "created_at": "2009-01-18T20:36:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5017#issuecomment-38225",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_5017-graph_aut_gp_trans.patch](tarball://root/attachments/some-uuid/ticket5017/trac_5017-graph_aut_gp_trans.patch) by rlm created at 2009-01-18 20:36:18
+Attachment [trac_5017-graph_aut_gp_trans.patch](tarball://root/attachments/some-uuid/ticket5017/trac_5017-graph_aut_gp_trans.patch) by @rlmill created at 2009-01-18 20:36:18
 
 
 
@@ -76,7 +76,7 @@ archive/issue_comments_038226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5017#issuecomment-38226",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_038227.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5017#issuecomment-38227",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 

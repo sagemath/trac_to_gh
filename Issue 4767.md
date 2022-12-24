@@ -3,7 +3,7 @@
 archive/issues_004767.json:
 ```json
 {
-    "body": "Assignee: was\n\nUse hex very carefully (magma has issues, let's say) to convert large integers and rationals to Magma much much more quickly than before.  E.g., in the example below the conversion is 22 times faster than it was before -- 3.2 seconds versus 71.47 seconds!\n\n```\nsage: n = ZZ.random_element(x=0,y=2^(10^8))\nsage: time k = magma(n)\nCPU time: 1.03 s,  Wall time: 3.20 s\nsage: time j = magma(str(n))\nCPU time: 54.71 s,  Wall time: 71.47 s\nsage: 71.47/3.20\n22.3343750000000\n```\n\n\nNOTE: The attached patch also speed up is_integral (by a factor of 500!!!) for rational numbers, since I needed that for the rational number conversion speedup.\n \nBEFORE:\n\n```\nsage: n = -485/82847\nsage: n.is_integral()\nFalse\nsage: timeit('n.is_integral()')\n625 loops, best of 3: 160 \u00b5s per loop\n```\n\nAFTER:\n\n```\nsage: n = -485/82847\nsage: n.is_integral()\nFalse\nsage: timeit('n.is_integral()')\n625 loops, best of 3: 294 ns per loop\n```\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4767\n\n",
+    "body": "Assignee: @williamstein\n\nUse hex very carefully (magma has issues, let's say) to convert large integers and rationals to Magma much much more quickly than before.  E.g., in the example below the conversion is 22 times faster than it was before -- 3.2 seconds versus 71.47 seconds!\n\n```\nsage: n = ZZ.random_element(x=0,y=2^(10^8))\nsage: time k = magma(n)\nCPU time: 1.03 s,  Wall time: 3.20 s\nsage: time j = magma(str(n))\nCPU time: 54.71 s,  Wall time: 71.47 s\nsage: 71.47/3.20\n22.3343750000000\n```\n\n\nNOTE: The attached patch also speed up is_integral (by a factor of 500!!!) for rational numbers, since I needed that for the rational number conversion speedup.\n \nBEFORE:\n\n```\nsage: n = -485/82847\nsage: n.is_integral()\nFalse\nsage: timeit('n.is_integral()')\n625 loops, best of 3: 160 \u00b5s per loop\n```\n\nAFTER:\n\n```\nsage: n = -485/82847\nsage: n.is_integral()\nFalse\nsage: timeit('n.is_integral()')\n625 loops, best of 3: 294 ns per loop\n```\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4767\n\n",
     "created_at": "2008-12-12T06:17:24Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_004767.json:
     "title": "[with patch; needs review] magma/sage interface -- speed up conversion of integers and rationals to Magma",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4767",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Use hex very carefully (magma has issues, let's say) to convert large integers and rationals to Magma much much more quickly than before.  E.g., in the example below the conversion is 22 times faster than it was before -- 3.2 seconds versus 71.47 seconds!
 
@@ -69,16 +69,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4767
 archive/issue_comments_036120.json:
 ```json
 {
-    "body": "Attachment [trac_4767.patch](tarball://root/attachments/some-uuid/ticket4767/trac_4767.patch) by was created at 2008-12-12 06:19:42",
+    "body": "Attachment [trac_4767.patch](tarball://root/attachments/some-uuid/ticket4767/trac_4767.patch) by @williamstein created at 2008-12-12 06:19:42",
     "created_at": "2008-12-12T06:19:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4767#issuecomment-36120",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4767.patch](tarball://root/attachments/some-uuid/ticket4767/trac_4767.patch) by was created at 2008-12-12 06:19:42
+Attachment [trac_4767.patch](tarball://root/attachments/some-uuid/ticket4767/trac_4767.patch) by @williamstein created at 2008-12-12 06:19:42
 
 
 
@@ -92,7 +92,7 @@ archive/issue_comments_036121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4767#issuecomment-36121",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

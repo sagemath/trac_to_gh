@@ -3,7 +3,7 @@
 archive/issues_000432.json:
 ```json
 {
-    "body": "Assignee: was\n\nI just never got around to implementing it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/432\n\n",
+    "body": "Assignee: @williamstein\n\nI just never got around to implementing it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/432\n\n",
     "created_at": "2007-08-16T09:43:33Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_000432.json:
     "title": "finish implementing deleting the trash (emptying it) in the sage notebook.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/432",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I just never got around to implementing it.
 
@@ -37,7 +37,7 @@ archive/issue_comments_002165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/432",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/432#issuecomment-2165",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing component from algebraic geometry to notebook.
 archive/issue_comments_002166.json:
 ```json
 {
-    "body": "Changing assignee from was to boothby.",
+    "body": "Changing assignee from @williamstein to boothby.",
     "created_at": "2007-08-16T09:43:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/432",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/432#issuecomment-2166",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from was to boothby.
+Changing assignee from @williamstein to boothby.
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_002167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/432",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/432#issuecomment-2167",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -97,16 +97,16 @@ Just a remark from a user:
 archive/issue_comments_002168.json:
 ```json
 {
-    "body": "Attachment [sage-432.patch](tarball://root/attachments/some-uuid/ticket432/sage-432.patch) by was created at 2008-03-13 15:56:56\n\nI finally implemented this.  And it's with 100% doctest coverage of new functions, which is a new thing for the notebook (to have any docs at all).",
+    "body": "Attachment [sage-432.patch](tarball://root/attachments/some-uuid/ticket432/sage-432.patch) by @williamstein created at 2008-03-13 15:56:56\n\nI finally implemented this.  And it's with 100% doctest coverage of new functions, which is a new thing for the notebook (to have any docs at all).",
     "created_at": "2008-03-13T15:56:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/432",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/432#issuecomment-2168",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-432.patch](tarball://root/attachments/some-uuid/ticket432/sage-432.patch) by was created at 2008-03-13 15:56:56
+Attachment [sage-432.patch](tarball://root/attachments/some-uuid/ticket432/sage-432.patch) by @williamstein created at 2008-03-13 15:56:56
 
 I finally implemented this.  And it's with 100% doctest coverage of new functions, which is a new thing for the notebook (to have any docs at all).
 

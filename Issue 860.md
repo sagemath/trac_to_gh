@@ -3,7 +3,7 @@
 archive/issues_000860.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nthe rough edges that William mentioned.\n\nhttp://sage.math.washington.edu/home/yqiang/dsage_latest.hg\n\nThere is documentation on how to do this here:\n\nhttp://www.sagemath.org/doc/html/ref/module-sage.misc.hg.html\n\nLet me know if you need any help doing this. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/860\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nthe rough edges that William mentioned.\n\nhttp://sage.math.washington.edu/home/yqiang/dsage_latest.hg\n\nThere is documentation on how to do this here:\n\nhttp://www.sagemath.org/doc/html/ref/module-sage.misc.hg.html\n\nLet me know if you need any help doing this. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/860\n\n",
     "created_at": "2007-10-12T06:05:46Z",
     "labels": [
         "distribution",
@@ -14,10 +14,10 @@ archive/issues_000860.json:
     "title": "dsage -- update to fix a bunch of \"rough edges\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/860",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -49,7 +49,7 @@ archive/issue_comments_005321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/860",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/860#issuecomment-5321",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_005323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/860",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/860#issuecomment-5323",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

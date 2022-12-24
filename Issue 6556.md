@@ -131,7 +131,7 @@ archive/issue_comments_053464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6556#issuecomment-53464",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

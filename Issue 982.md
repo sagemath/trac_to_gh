@@ -3,7 +3,7 @@
 archive/issues_000982.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: f = abs(x)\nsage: latex(f)\n\\abs \\left( x \\right)\n```\n\n\nbut it should be\n\n\n```\nsage: latex(f)\n\\mathrm{abs} \\left| x \\right|\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/982\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: f = abs(x)\nsage: latex(f)\n\\abs \\left( x \\right)\n```\n\n\nbut it should be\n\n\n```\nsage: latex(f)\n\\mathrm{abs} \\left| x \\right|\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/982\n\n",
     "created_at": "2007-10-24T17:39:00Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_000982.json:
     "title": "abs(x) returns incorrect LaTex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/982",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/982
 archive/issue_comments_006009.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-10-24T17:39:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/982#issuecomment-6009",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -70,7 +70,7 @@ archive/issue_comments_006010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/982#issuecomment-6010",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_006011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/982#issuecomment-6011",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -109,16 +109,16 @@ sage: latex(abs(x))
 archive/issue_comments_006012.json:
 ```json
 {
-    "body": "Attachment [982.patch](tarball://root/attachments/some-uuid/ticket982/982.patch) by mhansen created at 2007-10-24 17:50:02",
+    "body": "Attachment [982.patch](tarball://root/attachments/some-uuid/ticket982/982.patch) by @mwhansen created at 2007-10-24 17:50:02",
     "created_at": "2007-10-24T17:50:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/982#issuecomment-6012",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [982.patch](tarball://root/attachments/some-uuid/ticket982/982.patch) by mhansen created at 2007-10-24 17:50:02
+Attachment [982.patch](tarball://root/attachments/some-uuid/ticket982/982.patch) by @mwhansen created at 2007-10-24 17:50:02
 
 
 
@@ -132,7 +132,7 @@ archive/issue_comments_006013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/982#issuecomment-6013",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_006014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/982#issuecomment-6014",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_006015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/982#issuecomment-6015",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

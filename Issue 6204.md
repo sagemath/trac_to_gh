@@ -3,7 +3,7 @@
 archive/issues_006204.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  craigcitro fwclarke\n\nKeywords: degree 1 relative number field norm\n\nThis small patch makes norms for degree 1 relative number fields avoid pari, which fails (in our old version) in this case.  I also added a doctest or two.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6204\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @craigcitro fwclarke\n\nKeywords: degree 1 relative number field norm\n\nThis small patch makes norms for degree 1 relative number fields avoid pari, which fails (in our old version) in this case.  I also added a doctest or two.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6204\n\n",
     "created_at": "2009-06-04T03:36:11Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_006204.json:
     "title": "make norms for degree 1 relative number fields work; add doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6204",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  craigcitro fwclarke
+CC:  @craigcitro fwclarke
 
 Keywords: degree 1 relative number field norm
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6204
 archive/issue_comments_049567.json:
 ```json
 {
-    "body": "Attachment [trac_6204-degree-1-relative-norms.patch](tarball://root/attachments/some-uuid/ticket6204/trac_6204-degree-1-relative-norms.patch) by ncalexan created at 2009-06-04 03:38:03",
+    "body": "Attachment [trac_6204-degree-1-relative-norms.patch](tarball://root/attachments/some-uuid/ticket6204/trac_6204-degree-1-relative-norms.patch) by @ncalexan created at 2009-06-04 03:38:03",
     "created_at": "2009-06-04T03:38:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6204#issuecomment-49567",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [trac_6204-degree-1-relative-norms.patch](tarball://root/attachments/some-uuid/ticket6204/trac_6204-degree-1-relative-norms.patch) by ncalexan created at 2009-06-04 03:38:03
+Attachment [trac_6204-degree-1-relative-norms.patch](tarball://root/attachments/some-uuid/ticket6204/trac_6204-degree-1-relative-norms.patch) by @ncalexan created at 2009-06-04 03:38:03
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_049568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6204#issuecomment-49568",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_049569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6204#issuecomment-49569",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_049570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6204#issuecomment-49570",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -273,16 +273,16 @@ The doctest for `is_principal` conflicts somewhat with changes in #5842.
 archive/issue_comments_049573.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-07-21T08:20:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6204#issuecomment-49573",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 
@@ -296,7 +296,7 @@ archive/issue_comments_049574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6204#issuecomment-49574",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 

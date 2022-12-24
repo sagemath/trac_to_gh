@@ -14,7 +14,7 @@ archive/issues_002913.json:
     "title": "[with patch; needs review] notebook -- deleting a running cell results in a bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2913",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -44,16 +44,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2913
 archive/issue_comments_020064.json:
 ```json
 {
-    "body": "Attachment [sage-2913.patch](tarball://root/attachments/some-uuid/ticket2913/sage-2913.patch) by was created at 2008-04-14 03:29:44",
+    "body": "Attachment [sage-2913.patch](tarball://root/attachments/some-uuid/ticket2913/sage-2913.patch) by @williamstein created at 2008-04-14 03:29:44",
     "created_at": "2008-04-14T03:29:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2913#issuecomment-20064",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2913.patch](tarball://root/attachments/some-uuid/ticket2913/sage-2913.patch) by was created at 2008-04-14 03:29:44
+Attachment [sage-2913.patch](tarball://root/attachments/some-uuid/ticket2913/sage-2913.patch) by @williamstein created at 2008-04-14 03:29:44
 
 
 
@@ -67,7 +67,7 @@ archive/issue_comments_020065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2913#issuecomment-20065",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 

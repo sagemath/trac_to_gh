@@ -3,7 +3,7 @@
 archive/issues_003401.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nCC:  myurko benjaminfjones\n\nHere is some example code from M. Yurko that explains how to do this.\nI think something based on this should be put into the Li function itself.\n\n\n```\nO.K. I defined li(x) as follows:\n\ndef li(z): #def log integral for real and complex variables\n   if z in RR and z >= 2: #check if real number greater than 2\n       return Li(z) +\n1.045163780117492784844588889194613136522615578151 #adjust for offset\nin SAGE def\n   elif z == 1:\n       return -infinity\n   else: #mode for complex and below 2 from incomplete gamma\n       z = CDF(z)\n       return -gamma_inc(0,-log(z)) + (log(log(z))-log(1/log(z)))/2-\nlog(-log(z))\n\nThe first part uses SAGE's built in Li(x) but adjusts for the offset.\nThe second part should be self explanatory. The third part uses a\nformula involving the incomplete gamma function which I found on the\nWolfram Functions website. On testing different values with an\nexternal calculator,  the third statement appears to only be valid for\nnegative reals and complex numbers. This leaves the interval [0,2)\nundefined. Please note that I have no background in complex analysis\nand that my above statements about domain are only based upon\nexperimentation.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3401\n\n",
+    "body": "Assignee: @garyfurnish\n\nCC:  myurko @benjaminfjones\n\nHere is some example code from M. Yurko that explains how to do this.\nI think something based on this should be put into the Li function itself.\n\n\n```\nO.K. I defined li(x) as follows:\n\ndef li(z): #def log integral for real and complex variables\n   if z in RR and z >= 2: #check if real number greater than 2\n       return Li(z) +\n1.045163780117492784844588889194613136522615578151 #adjust for offset\nin SAGE def\n   elif z == 1:\n       return -infinity\n   else: #mode for complex and below 2 from incomplete gamma\n       z = CDF(z)\n       return -gamma_inc(0,-log(z)) + (log(log(z))-log(1/log(z)))/2-\nlog(-log(z))\n\nThe first part uses SAGE's built in Li(x) but adjusts for the offset.\nThe second part should be self explanatory. The third part uses a\nformula involving the incomplete gamma function which I found on the\nWolfram Functions website. On testing different values with an\nexternal calculator,  the third statement appears to only be valid for\nnegative reals and complex numbers. This leaves the interval [0,2)\nundefined. Please note that I have no background in complex analysis\nand that my above statements about domain are only based upon\nexperimentation.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3401\n\n",
     "created_at": "2008-06-11T17:46:09Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_003401.json:
     "title": "extend li to work with complex input",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3401",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
-CC:  myurko benjaminfjones
+CC:  myurko @benjaminfjones
 
 Here is some example code from M. Yurko that explains how to do this.
 I think something based on this should be put into the Li function itself.
@@ -68,7 +68,7 @@ archive/issue_comments_023817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23817",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_023818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23818",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_023823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23823",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_023824.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23824",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_023825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23825",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -270,16 +270,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_023826.json:
 ```json
 {
-    "body": "Attachment [trac_3401.patch](tarball://root/attachments/some-uuid/ticket3401/trac_3401.patch) by mhansen created at 2010-01-16 17:57:25",
+    "body": "Attachment [trac_3401.patch](tarball://root/attachments/some-uuid/ticket3401/trac_3401.patch) by @mwhansen created at 2010-01-16 17:57:25",
     "created_at": "2010-01-16T17:57:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23826",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3401.patch](tarball://root/attachments/some-uuid/ticket3401/trac_3401.patch) by mhansen created at 2010-01-16 17:57:25
+Attachment [trac_3401.patch](tarball://root/attachments/some-uuid/ticket3401/trac_3401.patch) by @mwhansen created at 2010-01-16 17:57:25
 
 
 
@@ -293,7 +293,7 @@ archive/issue_comments_023827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23827",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_023828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23828",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -324,16 +324,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_023829.json:
 ```json
 {
-    "body": "Attachment [trac_3401-reviewed.patch](tarball://root/attachments/some-uuid/ticket3401/trac_3401-reviewed.patch) by kcrisman created at 2010-01-18 16:48:18\n\nLooks good - sometimes slower, sometimes faster, but it's much better to have the complex functionality than worry about the rest.  I removed an auxiliary function which only existed to allow the previous implementation.  Positive review!",
+    "body": "Attachment [trac_3401-reviewed.patch](tarball://root/attachments/some-uuid/ticket3401/trac_3401-reviewed.patch) by @kcrisman created at 2010-01-18 16:48:18\n\nLooks good - sometimes slower, sometimes faster, but it's much better to have the complex functionality than worry about the rest.  I removed an auxiliary function which only existed to allow the previous implementation.  Positive review!",
     "created_at": "2010-01-18T16:48:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23829",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_3401-reviewed.patch](tarball://root/attachments/some-uuid/ticket3401/trac_3401-reviewed.patch) by kcrisman created at 2010-01-18 16:48:18
+Attachment [trac_3401-reviewed.patch](tarball://root/attachments/some-uuid/ticket3401/trac_3401-reviewed.patch) by @kcrisman created at 2010-01-18 16:48:18
 
 Looks good - sometimes slower, sometimes faster, but it's much better to have the complex functionality than worry about the rest.  I removed an auxiliary function which only existed to allow the previous implementation.  Positive review!
 
@@ -349,7 +349,7 @@ archive/issue_comments_023830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23830",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -367,7 +367,7 @@ archive/issue_comments_023831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23831",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -385,7 +385,7 @@ archive/issue_comments_023832.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23832",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -436,7 +436,7 @@ archive/issue_comments_023834.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23834",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -454,7 +454,7 @@ archive/issue_comments_023835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23835",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -472,7 +472,7 @@ archive/issue_comments_023836.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23836",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -496,7 +496,7 @@ archive/issue_comments_023837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23837",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -516,7 +516,7 @@ archive/issue_comments_023838.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23838",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -546,7 +546,7 @@ archive/issue_comments_023839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23839",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -564,7 +564,7 @@ archive/issue_comments_023840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23840",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -622,7 +622,7 @@ archive/issue_comments_023843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23843",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -643,7 +643,7 @@ archive/issue_comments_023844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23844",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -660,16 +660,16 @@ I wonder if we really need three aliases at the top level for this function. Hav
 archive/issue_comments_023845.json:
 ```json
 {
-    "body": "Attachment [trac_3401_review.patch](tarball://root/attachments/some-uuid/ticket3401/trac_3401_review.patch) by benjaminfjones created at 2012-08-03 20:43:33\n\nreviewer patch",
+    "body": "Attachment [trac_3401_review.patch](tarball://root/attachments/some-uuid/ticket3401/trac_3401_review.patch) by @benjaminfjones created at 2012-08-03 20:43:33\n\nreviewer patch",
     "created_at": "2012-08-03T20:43:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23845",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
-Attachment [trac_3401_review.patch](tarball://root/attachments/some-uuid/ticket3401/trac_3401_review.patch) by benjaminfjones created at 2012-08-03 20:43:33
+Attachment [trac_3401_review.patch](tarball://root/attachments/some-uuid/ticket3401/trac_3401_review.patch) by @benjaminfjones created at 2012-08-03 20:43:33
 
 reviewer patch
 
@@ -685,7 +685,7 @@ archive/issue_comments_023846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23846",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -703,7 +703,7 @@ archive/issue_comments_023847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23847",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -744,7 +744,7 @@ archive/issue_comments_023849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23849",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -830,7 +830,7 @@ archive/issue_comments_023850.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23850",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -875,7 +875,7 @@ archive/issue_comments_023851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23851",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -897,7 +897,7 @@ archive/issue_comments_023852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23852",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -936,7 +936,7 @@ archive/issue_comments_023853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23853",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -954,7 +954,7 @@ archive/issue_comments_023854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23854",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1122,7 +1122,7 @@ archive/issue_comments_023859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23859",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1142,7 +1142,7 @@ archive/issue_comments_023860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23860",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1184,7 +1184,7 @@ archive/issue_comments_023862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23862",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1202,7 +1202,7 @@ archive/issue_comments_023863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23863",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1220,7 +1220,7 @@ archive/issue_comments_023864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23864",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1238,7 +1238,7 @@ archive/issue_comments_023865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23865",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1256,7 +1256,7 @@ archive/issue_comments_023866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23866",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1274,7 +1274,7 @@ archive/issue_comments_023867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3401#issuecomment-23867",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

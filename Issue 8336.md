@@ -3,7 +3,7 @@
 archive/issues_008336.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  was jason robertwb ncalexan craigcitro mabshoff\n\nThis is related to #188 and #2899.\n\n```\nsage: R=RealField(150)\nsage: x=R(3493274823748475345934875398475345349.9343498375)\nsage: y=round(x)\nsage: y, type(y)\n(3.49327482375e+36, <type 'sage.rings.real_double.RealDoubleElement'>)\nsage: z=x.round()\nsage: z, type(z)\n(3493274823748475345934875398475345350, <type 'sage.rings.integer.Integer'>)\n```\n\nIf one performs `ZZ(y)` to convert `y` to an integer, one\nhas a huge loss of accuracy.\n\nI see no point of forcing coercion to RDF, which has limited precision and exponent range.\n\nI would expect `round(x)` to return the same value as `z`,\neither as Integer or RealField.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8336\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @williamstein @jasongrout @robertwb @ncalexan @craigcitro mabshoff\n\nThis is related to #188 and #2899.\n\n```\nsage: R=RealField(150)\nsage: x=R(3493274823748475345934875398475345349.9343498375)\nsage: y=round(x)\nsage: y, type(y)\n(3.49327482375e+36, <type 'sage.rings.real_double.RealDoubleElement'>)\nsage: z=x.round()\nsage: z, type(z)\n(3493274823748475345934875398475345350, <type 'sage.rings.integer.Integer'>)\n```\n\nIf one performs `ZZ(y)` to convert `y` to an integer, one\nhas a huge loss of accuracy.\n\nI see no point of forcing coercion to RDF, which has limited precision and exponent range.\n\nI would expect `round(x)` to return the same value as `z`,\neither as Integer or RealField.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8336\n\n",
     "created_at": "2010-02-23T18:00:50Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_008336.json:
     "title": "round(x) <> x.round() for x in RealField",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8336",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  was jason robertwb ncalexan craigcitro mabshoff
+CC:  @williamstein @jasongrout @robertwb @ncalexan @craigcitro mabshoff
 
 This is related to #188 and #2899.
 
@@ -58,7 +58,7 @@ archive/issue_comments_074419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8336",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8336#issuecomment-74419",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_074420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8336",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8336#issuecomment-74420",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -125,16 +125,16 @@ With much help from Robert Bradshaw, I wrote some code for this ticket, that doe
 archive/issue_comments_074423.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to robertwb.",
+    "body": "Changing assignee from @aghitza to @robertwb.",
     "created_at": "2010-11-09T07:31:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8336",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8336#issuecomment-74423",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from AlexGhitza to robertwb.
+Changing assignee from @aghitza to @robertwb.
 
 
 
@@ -148,7 +148,7 @@ archive/issue_comments_074424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8336",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8336#issuecomment-74424",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_074425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8336",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8336#issuecomment-74425",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_074426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8336",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8336#issuecomment-74426",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_074427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8336",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8336#issuecomment-74427",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_074431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8336",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8336#issuecomment-74431",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -373,7 +373,7 @@ archive/issue_comments_074433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8336",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8336#issuecomment-74433",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -391,7 +391,7 @@ archive/issue_comments_074434.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8336",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8336#issuecomment-74434",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -422,7 +422,7 @@ archive/issue_comments_074435.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8336",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8336#issuecomment-74435",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 

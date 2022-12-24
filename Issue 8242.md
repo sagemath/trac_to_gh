@@ -14,7 +14,7 @@ archive/issues_008242.json:
     "title": "Fix duplicate citation warnings when building the French-language tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8242",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: mvngu
@@ -48,16 +48,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8242
 archive/issue_comments_072871.json:
 ```json
 {
-    "body": "Changing assignee from mvngu to mmezzarobba.",
+    "body": "Changing assignee from mvngu to @mezzarobba.",
     "created_at": "2010-02-25T16:38:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8242#issuecomment-72871",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
-Changing assignee from mvngu to mmezzarobba.
+Changing assignee from mvngu to @mezzarobba.
 
 
 
@@ -66,16 +66,16 @@ Changing assignee from mvngu to mmezzarobba.
 archive/issue_comments_072872.json:
 ```json
 {
-    "body": "Attachment [trac_8242_duplicate_citations.patch](tarball://root/attachments/some-uuid/ticket8242/trac_8242_duplicate_citations.patch) by mmezzarobba created at 2010-02-25 17:10:14",
+    "body": "Attachment [trac_8242_duplicate_citations.patch](tarball://root/attachments/some-uuid/ticket8242/trac_8242_duplicate_citations.patch) by @mezzarobba created at 2010-02-25 17:10:14",
     "created_at": "2010-02-25T17:10:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8242#issuecomment-72872",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
-Attachment [trac_8242_duplicate_citations.patch](tarball://root/attachments/some-uuid/ticket8242/trac_8242_duplicate_citations.patch) by mmezzarobba created at 2010-02-25 17:10:14
+Attachment [trac_8242_duplicate_citations.patch](tarball://root/attachments/some-uuid/ticket8242/trac_8242_duplicate_citations.patch) by @mezzarobba created at 2010-02-25 17:10:14
 
 
 
@@ -89,7 +89,7 @@ archive/issue_comments_072873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8242#issuecomment-72873",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_072874.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8242#issuecomment-72874",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_072875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8242#issuecomment-72875",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_072876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8242#issuecomment-72876",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_072879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8242#issuecomment-72879",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_072880.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8242#issuecomment-72880",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -420,7 +420,7 @@ archive/issue_comments_072887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8242#issuecomment-72887",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -451,7 +451,7 @@ archive/issue_comments_072888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8242#issuecomment-72888",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -469,7 +469,7 @@ archive/issue_comments_072889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8242#issuecomment-72889",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -487,7 +487,7 @@ archive/issue_comments_072890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8242#issuecomment-72890",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -505,7 +505,7 @@ archive/issue_comments_072891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8242#issuecomment-72891",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

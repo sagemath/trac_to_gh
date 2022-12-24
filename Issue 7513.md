@@ -3,7 +3,7 @@
 archive/issues_007513.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  leif jdemeyer\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7513\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nexttime @jdemeyer\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7513\n\n",
     "created_at": "2009-11-22T06:23:45Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_007513.json:
     "title": "Update Mercurial to 1.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7513",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
 
-CC:  leif jdemeyer
+CC:  @nexttime @jdemeyer
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_063599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7513#issuecomment-63599",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_063600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7513#issuecomment-63600",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -70,16 +70,16 @@ Changing status from new to needs_review.
 archive/issue_comments_063601.json:
 ```json
 {
-    "body": "Attachment [trac_7513-clean_up_spkg-install_SPKG.txt-reviewer.patch](tarball://root/attachments/some-uuid/ticket7513/trac_7513-clean_up_spkg-install_SPKG.txt-reviewer.patch) by leif created at 2010-11-02 06:37:29\n\nSPKG reviewer patch, based on Jeroen's changes.",
+    "body": "Attachment [trac_7513-clean_up_spkg-install_SPKG.txt-reviewer.patch](tarball://root/attachments/some-uuid/ticket7513/trac_7513-clean_up_spkg-install_SPKG.txt-reviewer.patch) by @nexttime created at 2010-11-02 06:37:29\n\nSPKG reviewer patch, based on Jeroen's changes.",
     "created_at": "2010-11-02T06:37:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7513#issuecomment-63601",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_7513-clean_up_spkg-install_SPKG.txt-reviewer.patch](tarball://root/attachments/some-uuid/ticket7513/trac_7513-clean_up_spkg-install_SPKG.txt-reviewer.patch) by leif created at 2010-11-02 06:37:29
+Attachment [trac_7513-clean_up_spkg-install_SPKG.txt-reviewer.patch](tarball://root/attachments/some-uuid/ticket7513/trac_7513-clean_up_spkg-install_SPKG.txt-reviewer.patch) by @nexttime created at 2010-11-02 06:37:29
 
 SPKG reviewer patch, based on Jeroen's changes.
 
@@ -95,7 +95,7 @@ archive/issue_comments_063602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7513#issuecomment-63602",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_063603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7513#issuecomment-63603",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_063604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7513#issuecomment-63604",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_063605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7513#issuecomment-63605",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -178,16 +178,16 @@ Apply on top of leif's patch
 archive/issue_comments_063606.json:
 ```json
 {
-    "body": "Attachment [7513_review_review.patch](tarball://root/attachments/some-uuid/ticket7513/7513_review_review.patch) by leif created at 2010-11-02 10:49:09\n\nReplying to [comment:7 jdemeyer]:\n> Since the patch still applies perfectly fine, I don't think it is a problem that the line numbers don't match (note that I created `patches/posix.py` from `patches/posix.py.patch`, not the other way around).\n\nObviously. Florent recently complained about a patch of mine that wasn't based on vanilla and so (just) the line numbers changed s.t. Mercurial operated more verbosely than usual. ;-)\n\nIn general it's better to also touch the diffs, or keep them in full sync with the patched files; I've come across spkgs where apparently obsolete files were copied over; and it's confusing when there are dead old patches that do not reflect the current differences.\n \n> Thanks for looking more carefully at this, I just wanted a new spkg quickly :-)\n\nWell, the ticket's first (opening) anniversary is close...",
+    "body": "Attachment [7513_review_review.patch](tarball://root/attachments/some-uuid/ticket7513/7513_review_review.patch) by @nexttime created at 2010-11-02 10:49:09\n\nReplying to [comment:7 jdemeyer]:\n> Since the patch still applies perfectly fine, I don't think it is a problem that the line numbers don't match (note that I created `patches/posix.py` from `patches/posix.py.patch`, not the other way around).\n\nObviously. Florent recently complained about a patch of mine that wasn't based on vanilla and so (just) the line numbers changed s.t. Mercurial operated more verbosely than usual. ;-)\n\nIn general it's better to also touch the diffs, or keep them in full sync with the patched files; I've come across spkgs where apparently obsolete files were copied over; and it's confusing when there are dead old patches that do not reflect the current differences.\n \n> Thanks for looking more carefully at this, I just wanted a new spkg quickly :-)\n\nWell, the ticket's first (opening) anniversary is close...",
     "created_at": "2010-11-02T10:49:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7513#issuecomment-63606",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [7513_review_review.patch](tarball://root/attachments/some-uuid/ticket7513/7513_review_review.patch) by leif created at 2010-11-02 10:49:09
+Attachment [7513_review_review.patch](tarball://root/attachments/some-uuid/ticket7513/7513_review_review.patch) by @nexttime created at 2010-11-02 10:49:09
 
 Replying to [comment:7 jdemeyer]:
 > Since the patch still applies perfectly fine, I don't think it is a problem that the line numbers don't match (note that I created `patches/posix.py` from `patches/posix.py.patch`, not the other way around).
@@ -212,7 +212,7 @@ archive/issue_comments_063607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7513#issuecomment-63607",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_063608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7513#issuecomment-63608",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -251,16 +251,16 @@ I have a completely different upstream src now... (and the size decreased signif
 archive/issue_comments_063609.json:
 ```json
 {
-    "body": "Changing assignee from tbd to leif.",
+    "body": "Changing assignee from tbd to @nexttime.",
     "created_at": "2010-11-02T11:08:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7513#issuecomment-63609",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Changing assignee from tbd to leif.
+Changing assignee from tbd to @nexttime.
 
 
 
@@ -274,7 +274,7 @@ archive/issue_comments_063610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7513#issuecomment-63610",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -307,7 +307,7 @@ archive/issue_comments_063611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7513#issuecomment-63611",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -330,7 +330,7 @@ archive/issue_comments_063612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7513#issuecomment-63612",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_063613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7513#issuecomment-63613",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -372,7 +372,7 @@ archive/issue_comments_063614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7513#issuecomment-63614",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -390,7 +390,7 @@ archive/issue_comments_063615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7513#issuecomment-63615",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -408,7 +408,7 @@ archive/issue_comments_063616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7513#issuecomment-63616",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006767.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nA trivial typo is corrected by the patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6767\n\n",
+    "body": "Assignee: @loefflerd\n\nA trivial typo is corrected by the patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6767\n\n",
     "created_at": "2009-08-16T21:14:00Z",
     "labels": [
         "number fields",
@@ -17,7 +17,7 @@ archive/issues_006767.json:
     "user": "fwclarke"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
 A trivial typo is corrected by the patch.
 

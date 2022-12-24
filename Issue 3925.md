@@ -3,7 +3,7 @@
 archive/issues_003925.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mvngu kevin.stueve\n\nSee http://cr.yp.to/primegen.html\n\nSome code at http://thread.gmane.org/gmane.comp.python.cython.devel/2579/focus=2581\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3925\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  mvngu kevin.stueve\n\nSee http://cr.yp.to/primegen.html\n\nSome code at http://thread.gmane.org/gmane.comp.python.cython.devel/2579/focus=2581\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3925\n\n",
     "created_at": "2008-08-22T08:06:19Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_003925.json:
     "title": "Wrap Bernstein 's primegen",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3925",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  mvngu kevin.stueve
 
@@ -42,7 +42,7 @@ archive/issue_comments_028095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3925#issuecomment-28095",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -63,16 +63,16 @@ This is still a work-in-progress. TODO:
 archive/issue_comments_028096.json:
 ```json
 {
-    "body": "Attachment [primegen-0.97.spkg](tarball://root/attachments/some-uuid/ticket3925/primegen-0.97.spkg) by wjp created at 2009-07-13 21:48:07",
+    "body": "Attachment [primegen-0.97.spkg](tarball://root/attachments/some-uuid/ticket3925/primegen-0.97.spkg) by @wjp created at 2009-07-13 21:48:07",
     "created_at": "2009-07-13T21:48:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3925#issuecomment-28096",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [primegen-0.97.spkg](tarball://root/attachments/some-uuid/ticket3925/primegen-0.97.spkg) by wjp created at 2009-07-13 21:48:07
+Attachment [primegen-0.97.spkg](tarball://root/attachments/some-uuid/ticket3925/primegen-0.97.spkg) by @wjp created at 2009-07-13 21:48:07
 
 
 
@@ -81,16 +81,16 @@ Attachment [primegen-0.97.spkg](tarball://root/attachments/some-uuid/ticket3925/
 archive/issue_comments_028097.json:
 ```json
 {
-    "body": "Attachment [trac-3925-spkg_deps.patch](tarball://root/attachments/some-uuid/ticket3925/trac-3925-spkg_deps.patch) by wjp created at 2009-07-13 21:48:18",
+    "body": "Attachment [trac-3925-spkg_deps.patch](tarball://root/attachments/some-uuid/ticket3925/trac-3925-spkg_deps.patch) by @wjp created at 2009-07-13 21:48:18",
     "created_at": "2009-07-13T21:48:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3925#issuecomment-28097",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [trac-3925-spkg_deps.patch](tarball://root/attachments/some-uuid/ticket3925/trac-3925-spkg_deps.patch) by wjp created at 2009-07-13 21:48:18
+Attachment [trac-3925-spkg_deps.patch](tarball://root/attachments/some-uuid/ticket3925/trac-3925-spkg_deps.patch) by @wjp created at 2009-07-13 21:48:18
 
 
 
@@ -104,7 +104,7 @@ archive/issue_comments_028098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3925#issuecomment-28098",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -135,16 +135,16 @@ goes from 84.17s (without this spkg+patch) to 20.77s (with spkg+patch) on a 2GHz
 archive/issue_comments_028099.json:
 ```json
 {
-    "body": "Attachment [trac-3925-primegen.patch](tarball://root/attachments/some-uuid/ticket3925/trac-3925-primegen.patch) by cremona created at 2009-07-24 21:14:10\n\nHello Willem.  I successfully installed the spkg and the second patch but I don't know how to install the first patch as it changes files not in the usual code tree.  If you tell me how, I would like to test this.  -- John",
+    "body": "Attachment [trac-3925-primegen.patch](tarball://root/attachments/some-uuid/ticket3925/trac-3925-primegen.patch) by @JohnCremona created at 2009-07-24 21:14:10\n\nHello Willem.  I successfully installed the spkg and the second patch but I don't know how to install the first patch as it changes files not in the usual code tree.  If you tell me how, I would like to test this.  -- John",
     "created_at": "2009-07-24T21:14:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3925#issuecomment-28099",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac-3925-primegen.patch](tarball://root/attachments/some-uuid/ticket3925/trac-3925-primegen.patch) by cremona created at 2009-07-24 21:14:10
+Attachment [trac-3925-primegen.patch](tarball://root/attachments/some-uuid/ticket3925/trac-3925-primegen.patch) by @JohnCremona created at 2009-07-24 21:14:10
 
 Hello Willem.  I successfully installed the spkg and the second patch but I don't know how to install the first patch as it changes files not in the usual code tree.  If you tell me how, I would like to test this.  -- John
 
@@ -160,7 +160,7 @@ archive/issue_comments_028100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3925#issuecomment-28100",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_028101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3925#issuecomment-28101",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_028102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3925#issuecomment-28102",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_028103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3925#issuecomment-28103",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

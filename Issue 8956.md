@@ -3,7 +3,7 @@
 archive/issues_008956.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  jdemeyer\n\nKeywords: autoevaluate, auto-evaluate\n\nApparently, #auto should be %auto now.  But the help page for the notebook doesn't say so.  As far as I can tell, both work?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8956\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @jdemeyer\n\nKeywords: autoevaluate, auto-evaluate\n\nApparently, #auto should be %auto now.  But the help page for the notebook doesn't say so.  As far as I can tell, both work?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8956\n\n",
     "created_at": "2010-05-12T15:45:09Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_008956.json:
     "title": "Fix notebook help on auto-evaluation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8956",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: jason, was
 
-CC:  jdemeyer
+CC:  @jdemeyer
 
 Keywords: autoevaluate, auto-evaluate
 
@@ -41,7 +41,7 @@ archive/issue_comments_082559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8956#issuecomment-82559",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_082560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8956#issuecomment-82560",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_082561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8956#issuecomment-82561",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_082562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8956#issuecomment-82562",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_082563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8956#issuecomment-82563",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_082564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8956#issuecomment-82564",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_082565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8956#issuecomment-82565",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

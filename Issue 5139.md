@@ -3,7 +3,7 @@
 archive/issues_005139.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5139\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5139\n\n",
     "created_at": "2009-01-30T19:18:55Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_005139.json:
     "title": "add computation of Bach bound of number fields to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5139",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5139
 archive/issue_comments_039298.json:
 ```json
 {
-    "body": "Attachment [trac_5139.patch](tarball://root/attachments/some-uuid/ticket5139/trac_5139.patch) by was created at 2009-01-30 19:28:13",
+    "body": "Attachment [trac_5139.patch](tarball://root/attachments/some-uuid/ticket5139/trac_5139.patch) by @williamstein created at 2009-01-30 19:28:13",
     "created_at": "2009-01-30T19:28:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5139#issuecomment-39298",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5139.patch](tarball://root/attachments/some-uuid/ticket5139/trac_5139.patch) by was created at 2009-01-30 19:28:13
+Attachment [trac_5139.patch](tarball://root/attachments/some-uuid/ticket5139/trac_5139.patch) by @williamstein created at 2009-01-30 19:28:13
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_039299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5139#issuecomment-39299",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

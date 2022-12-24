@@ -3,7 +3,7 @@
 archive/issues_000208.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: Magma, polynomial, coercion\n\nThe following code segment causes a segmentation fault (unhandled SIGSEGV):\n\n```\nP.<x> = PolynomialRing(Rationals())\ny = magma(x) * 1.0\n```\n\nThe expected behavior is to return a Magma polynomial over the real field.\n\nIssue created by migration from https://trac.sagemath.org/ticket/208\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: Magma, polynomial, coercion\n\nThe following code segment causes a segmentation fault (unhandled SIGSEGV):\n\n```\nP.<x> = PolynomialRing(Rationals())\ny = magma(x) * 1.0\n```\n\nThe expected behavior is to return a Magma polynomial over the real field.\n\nIssue created by migration from https://trac.sagemath.org/ticket/208\n\n",
     "created_at": "2007-01-23T18:25:41Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_000208.json:
     "title": "Implied Magma conversion causes seg fault",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/208",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: Magma, polynomial, coercion
 
@@ -46,7 +46,7 @@ archive/issue_comments_000935.json:
     "issue": "https://github.com/sagemath/sagetest/issues/208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/208#issuecomment-935",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_000936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/208#issuecomment-936",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_000937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/208#issuecomment-937",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

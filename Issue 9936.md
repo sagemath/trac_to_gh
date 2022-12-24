@@ -3,7 +3,7 @@
 archive/issues_009936.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: pari gp real precision\n\nThe following do not work as they should (try these examples with a freshly started copy of Sage, such that everything is default). \n\n\n```\n# Default: 2 significant words (while we really should get only 1)\nsage: pari('Pi').debug()\n[&=0000000004fc9620] REAL(lg=4):0400000000000004 (+,expo=1):6000000000000001 c90fdaa22168c234 c4c6628b80dc1cd1\n\n# Change precision and then change it back: we get 1 word\nsage: n = pari.get_real_precision(); pari.set_real_precision(100); pari.set_real_precision(n);\nsage: pari('Pi').debug()\n[&=00000000012bf200] REAL(lg=3):0400000000000003 (+,expo=1):6000000000000001 c90fdaa22168c235\n```\n\n\n\n```\n# We cannot compute constants with high precision:\nsage: pari.set_real_precision(1000);\nsage: pari.euler().debug()\n[&=0000000004f75e20] REAL(lg=3):0400000000000003 (+,expo=-1):5fffffffffffffff 93c467e37db0c7a5\n```\n\n\nDependencies: #9898, #9893\n\nIssue created by migration from https://trac.sagemath.org/ticket/9937\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: pari gp real precision\n\nThe following do not work as they should (try these examples with a freshly started copy of Sage, such that everything is default). \n\n\n```\n# Default: 2 significant words (while we really should get only 1)\nsage: pari('Pi').debug()\n[&=0000000004fc9620] REAL(lg=4):0400000000000004 (+,expo=1):6000000000000001 c90fdaa22168c234 c4c6628b80dc1cd1\n\n# Change precision and then change it back: we get 1 word\nsage: n = pari.get_real_precision(); pari.set_real_precision(100); pari.set_real_precision(n);\nsage: pari('Pi').debug()\n[&=00000000012bf200] REAL(lg=3):0400000000000003 (+,expo=1):6000000000000001 c90fdaa22168c235\n```\n\n\n\n```\n# We cannot compute constants with high precision:\nsage: pari.set_real_precision(1000);\nsage: pari.euler().debug()\n[&=0000000004f75e20] REAL(lg=3):0400000000000003 (+,expo=-1):5fffffffffffffff 93c467e37db0c7a5\n```\n\n\nDependencies: #9898, #9893\n\nIssue created by migration from https://trac.sagemath.org/ticket/9937\n\n",
     "created_at": "2010-09-17T20:48:18Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_009936.json:
     "title": "PARI real precision is broken in many ways",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9936",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: pari gp real precision
 
@@ -63,7 +63,7 @@ archive/issue_comments_098924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9936#issuecomment-98924",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_098925.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9936#issuecomment-98925",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_098926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9936#issuecomment-98926",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_098927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9936#issuecomment-98927",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_098928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9936#issuecomment-98928",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -160,16 +160,16 @@ Changing status from new to needs_work.
 archive/issue_comments_098929.json:
 ```json
 {
-    "body": "Attachment [9937_pari_prec.patch](tarball://root/attachments/some-uuid/ticket9937/9937_pari_prec.patch) by jdemeyer created at 2012-04-29 14:01:45",
+    "body": "Attachment [9937_pari_prec.patch](tarball://root/attachments/some-uuid/ticket9937/9937_pari_prec.patch) by @jdemeyer created at 2012-04-29 14:01:45",
     "created_at": "2012-04-29T14:01:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9936#issuecomment-98929",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9937_pari_prec.patch](tarball://root/attachments/some-uuid/ticket9937/9937_pari_prec.patch) by jdemeyer created at 2012-04-29 14:01:45
+Attachment [9937_pari_prec.patch](tarball://root/attachments/some-uuid/ticket9937/9937_pari_prec.patch) by @jdemeyer created at 2012-04-29 14:01:45
 
 
 
@@ -183,7 +183,7 @@ archive/issue_comments_098930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9936#issuecomment-98930",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

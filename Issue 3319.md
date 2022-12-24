@@ -3,7 +3,7 @@
 archive/issues_003319.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: NTL, linear algebra, GF(2)\n\nWrapping this should be straight forward (KDE calls it a \"Junior\" job) but would be nice for\n* completeness\n* correctness check/comparison for other implementations\n\nIssue created by migration from https://trac.sagemath.org/ticket/3319\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: NTL, linear algebra, GF(2)\n\nWrapping this should be straight forward (KDE calls it a \"Junior\" job) but would be nice for\n* completeness\n* correctness check/comparison for other implementations\n\nIssue created by migration from https://trac.sagemath.org/ticket/3319\n\n",
     "created_at": "2008-05-28T12:38:39Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_003319.json:
     "title": "expose/wrap ntl.mat_GF2 for completeness",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3319",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: NTL, linear algebra, GF(2)
 
@@ -41,7 +41,7 @@ archive/issue_comments_023016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3319",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3319#issuecomment-23016",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_023017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3319",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3319#issuecomment-23017",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

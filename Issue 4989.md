@@ -14,7 +14,7 @@ archive/issues_004989.json:
     "title": "Delete the section \"4 Running the SAGE Notebook Securely\" from the sage install guide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4989",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -37,7 +37,7 @@ archive/issue_comments_038074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4989",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4989#issuecomment-38074",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_038075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4989",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4989#issuecomment-38075",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_038076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4989",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4989#issuecomment-38076",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

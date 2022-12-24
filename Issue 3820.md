@@ -14,7 +14,7 @@ archive/issues_003820.json:
     "title": "notebook -- sometimes published worksheets are listed as being published by pub.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3820",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_027166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3820#issuecomment-27166",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_027167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3820#issuecomment-27167",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -68,16 +68,16 @@ I've added a test in the selenium suite for this.
 archive/issue_comments_027168.json:
 ```json
 {
-    "body": "Changing assignee from boothby to mhansen.",
+    "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2009-01-24T05:26:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3820#issuecomment-27168",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from boothby to mhansen.
+Changing assignee from boothby to @mwhansen.
 
 
 
@@ -117,16 +117,16 @@ Michael
 archive/issue_comments_027170.json:
 ```json
 {
-    "body": "Attachment [trac_3820.patch](tarball://root/attachments/some-uuid/ticket3820/trac_3820.patch) by mhansen created at 2009-02-15 04:22:58",
+    "body": "Attachment [trac_3820.patch](tarball://root/attachments/some-uuid/ticket3820/trac_3820.patch) by @mwhansen created at 2009-02-15 04:22:58",
     "created_at": "2009-02-15T04:22:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3820#issuecomment-27170",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3820.patch](tarball://root/attachments/some-uuid/ticket3820/trac_3820.patch) by mhansen created at 2009-02-15 04:22:58
+Attachment [trac_3820.patch](tarball://root/attachments/some-uuid/ticket3820/trac_3820.patch) by @mwhansen created at 2009-02-15 04:22:58
 
 
 
@@ -140,7 +140,7 @@ archive/issue_comments_027171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3820#issuecomment-27171",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

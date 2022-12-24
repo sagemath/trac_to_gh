@@ -3,7 +3,7 @@
 archive/issues_007559.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  ncohen hivert\n\nThis was suggested by Nathann Cohen. This is a followup of #7515 where a short mantra for deprecated function aliases is set-up.\n\nI'll not have the time to do this right now so any volunteer is welcome. \n\nCheers\n\nFlorent \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7559\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nathanncohen @hivert\n\nThis was suggested by Nathann Cohen. This is a followup of #7515 where a short mantra for deprecated function aliases is set-up.\n\nI'll not have the time to do this right now so any volunteer is welcome. \n\nCheers\n\nFlorent \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7559\n\n",
     "created_at": "2009-11-30T12:23:50Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_007559.json:
     "title": "replace all the deprecation warning using deprecated_function_alias whenever possible",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7559",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 Assignee: tbd
 
-CC:  ncohen hivert
+CC:  @nathanncohen @hivert
 
 This was suggested by Nathann Cohen. This is a followup of #7515 where a short mantra for deprecated function aliases is set-up.
 
@@ -47,7 +47,7 @@ archive/issue_comments_064299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7559#issuecomment-64299",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_064300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7559#issuecomment-64300",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_064301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7559#issuecomment-64301",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_064302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7559#issuecomment-64302",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_064303.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7559#issuecomment-64303",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_064304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7559#issuecomment-64304",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_064305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7559#issuecomment-64305",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_064306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7559#issuecomment-64306",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_064307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7559#issuecomment-64307",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

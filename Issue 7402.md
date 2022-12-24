@@ -3,7 +3,7 @@
 archive/issues_007402.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  mpatel\n\n[`pkg_resources`](http://peak.telecommunity.com/DevCenter/PkgResources) is the official way to access data directories in a `setuptools` package. Using `pkg_resources` to locate the `DATA` directory will allow us to use [`.pth` files](http://bob.pythonmac.org/archives/2005/02/06/using-pth-files-for-python-development/) for ease of development. For example:\n\n\n```\n$ pwd\n/home/timdumol/devel/sagenb-0.3.5/src\n$ dev_dir=`pwd`\n$ cd /opt/sage/local/lib/python2.6/site-packages/\n$ rm -r sagenb*\n$ cat \"$dev_dir\" > sagenb.pth\n```\n\n\nThus, there will no longer be a need to `sage -python setup.py install` after every change.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7402\n\n",
+    "body": "Assignee: boothby\n\nCC:  @qed777\n\n[`pkg_resources`](http://peak.telecommunity.com/DevCenter/PkgResources) is the official way to access data directories in a `setuptools` package. Using `pkg_resources` to locate the `DATA` directory will allow us to use [`.pth` files](http://bob.pythonmac.org/archives/2005/02/06/using-pth-files-for-python-development/) for ease of development. For example:\n\n\n```\n$ pwd\n/home/timdumol/devel/sagenb-0.3.5/src\n$ dev_dir=`pwd`\n$ cd /opt/sage/local/lib/python2.6/site-packages/\n$ rm -r sagenb*\n$ cat \"$dev_dir\" > sagenb.pth\n```\n\n\nThus, there will no longer be a need to `sage -python setup.py install` after every change.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7402\n\n",
     "created_at": "2009-11-06T11:24:02Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007402.json:
     "title": "SageNB -- Use `pkg_resources` to locate `DATA` directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7402",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 Assignee: boothby
 
-CC:  mpatel
+CC:  @qed777
 
 [`pkg_resources`](http://peak.telecommunity.com/DevCenter/PkgResources) is the official way to access data directories in a `setuptools` package. Using `pkg_resources` to locate the `DATA` directory will allow us to use [`.pth` files](http://bob.pythonmac.org/archives/2005/02/06/using-pth-files-for-python-development/) for ease of development. For example:
 
@@ -52,7 +52,7 @@ archive/issue_comments_062280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7402#issuecomment-62280",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -65,16 +65,16 @@ Uses `pkg_resources` to locate the DATA directory.
 archive/issue_comments_062281.json:
 ```json
 {
-    "body": "Attachment [trac_7402-pkg_resources.patch](tarball://root/attachments/some-uuid/ticket7402/trac_7402-pkg_resources.patch) by timdumol created at 2009-11-06 11:31:18\n\nThis patch should do it.\n\nAs a note, we won't even need to restart the server if all we edit are template files. A big plus in ease of development, IMHO.",
+    "body": "Attachment [trac_7402-pkg_resources.patch](tarball://root/attachments/some-uuid/ticket7402/trac_7402-pkg_resources.patch) by @TimDumol created at 2009-11-06 11:31:18\n\nThis patch should do it.\n\nAs a note, we won't even need to restart the server if all we edit are template files. A big plus in ease of development, IMHO.",
     "created_at": "2009-11-06T11:31:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7402#issuecomment-62281",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7402-pkg_resources.patch](tarball://root/attachments/some-uuid/ticket7402/trac_7402-pkg_resources.patch) by timdumol created at 2009-11-06 11:31:18
+Attachment [trac_7402-pkg_resources.patch](tarball://root/attachments/some-uuid/ticket7402/trac_7402-pkg_resources.patch) by @TimDumol created at 2009-11-06 11:31:18
 
 This patch should do it.
 
@@ -92,7 +92,7 @@ archive/issue_comments_062282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7402#issuecomment-62282",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_062283.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7402#issuecomment-62283",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_062284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7402#issuecomment-62284",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_062285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7402#issuecomment-62285",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_062286.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7402#issuecomment-62286",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_062287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7402#issuecomment-62287",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_062288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7402#issuecomment-62288",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

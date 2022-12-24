@@ -3,7 +3,7 @@
 archive/issues_000223.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\n```\nx = PolynomialRing(RationalField(), 'x').gen()\nf1 = x^0\nf2 = 1-x\nf3 = 2*x\nf4 = 10*x-x^2\nf = Piecewise([[(0,1),f1],[(1,2),f2],[(2,3),f3],[(3,10),f4]])\nplot(f)\n///\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/Users/was/sage_notebook/worksheets/doc_browser/code/35.py\", line 10, in <module>\n    exec compile(ur'plot(f)' + '\\n', '', 'single')\n  File \"/Users/was/\", line 1, in <module>\n    \n  File \"/Users/was/s/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 2132, in __call__\n    G = funcs.plot(xmin=xmin, xmax=xmax, **kwds)\n  File \"/Users/was/s/local/lib/python2.5/site-packages/sage/functions/piecewise.py\", line 707, in plot\n    return sum([plot(p[1], p[0][0], p[0][1], **kwds ) for p in self.list()])\nTypeError: __call__() got multiple values for keyword argument 'xmin'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/223\n\n",
+    "body": "Assignee: @williamstein\n\n\n\n```\nx = PolynomialRing(RationalField(), 'x').gen()\nf1 = x^0\nf2 = 1-x\nf3 = 2*x\nf4 = 10*x-x^2\nf = Piecewise([[(0,1),f1],[(1,2),f2],[(2,3),f3],[(3,10),f4]])\nplot(f)\n///\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/Users/was/sage_notebook/worksheets/doc_browser/code/35.py\", line 10, in <module>\n    exec compile(ur'plot(f)' + '\\n', '', 'single')\n  File \"/Users/was/\", line 1, in <module>\n    \n  File \"/Users/was/s/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 2132, in __call__\n    G = funcs.plot(xmin=xmin, xmax=xmax, **kwds)\n  File \"/Users/was/s/local/lib/python2.5/site-packages/sage/functions/piecewise.py\", line 707, in plot\n    return sum([plot(p[1], p[0][0], p[0][1], **kwds ) for p in self.list()])\nTypeError: __call__() got multiple values for keyword argument 'xmin'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/223\n\n",
     "created_at": "2007-01-27T08:19:21Z",
     "labels": [
         "algebraic geometry",
@@ -13,10 +13,10 @@ archive/issues_000223.json:
     "title": "problem plotting piecewise defined functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/223",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_000994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/223#issuecomment-994",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_000995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/223#issuecomment-995",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

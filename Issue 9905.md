@@ -3,7 +3,7 @@
 archive/issues_009905.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  leif kcrisman vbraun kini\n\nWe include the RPy spkg in the R spkg and install the former from the latter.  It would be less potentially confusing to move RPy outside of R but make it depend on R and any other prerequisites in `spkg/standard/deps`.\n\nRelated: #3086.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9906\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nexttime @kcrisman @vbraun @kini\n\nWe include the RPy spkg in the R spkg and install the former from the latter.  It would be less potentially confusing to move RPy outside of R but make it depend on R and any other prerequisites in `spkg/standard/deps`.\n\nRelated: #3086.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9906\n\n",
     "created_at": "2010-09-13T23:08:55Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_009905.json:
     "title": "Move the RPy package outside of the R package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9905",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: tbd
 
-CC:  leif kcrisman vbraun kini
+CC:  @nexttime @kcrisman @vbraun @kini
 
 We include the RPy spkg in the R spkg and install the former from the latter.  It would be less potentially confusing to move RPy outside of R but make it depend on R and any other prerequisites in `spkg/standard/deps`.
 
@@ -41,7 +41,7 @@ archive/issue_comments_098468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98468",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_098469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98469",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_098470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98470",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_098471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98471",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_098472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98472",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_098473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98473",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_098474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98474",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -164,16 +164,16 @@ I also cleaned up both packages a little, and tried to address #9847, too.
 archive/issue_comments_098475.json:
 ```json
 {
-    "body": "Changing assignee from tbd to leif.",
+    "body": "Changing assignee from tbd to @nexttime.",
     "created_at": "2010-09-26T04:07:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98475",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Changing assignee from tbd to leif.
+Changing assignee from tbd to @nexttime.
 
 
 
@@ -212,7 +212,7 @@ archive/issue_comments_098477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98477",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_098478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98478",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_098479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98479",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_098480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98480",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_098481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98481",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_098482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98482",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -337,7 +337,7 @@ archive/issue_comments_098483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98483",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -365,7 +365,7 @@ archive/issue_comments_098484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98484",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -451,7 +451,7 @@ archive/issue_comments_098485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98485",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -490,7 +490,7 @@ archive/issue_comments_098486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98486",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -521,7 +521,7 @@ archive/issue_comments_098487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98487",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -549,7 +549,7 @@ archive/issue_comments_098488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98488",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -567,7 +567,7 @@ archive/issue_comments_098489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98489",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -588,7 +588,7 @@ archive/issue_comments_098490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98490",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -608,7 +608,7 @@ archive/issue_comments_098491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98491",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -626,7 +626,7 @@ archive/issue_comments_098492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98492",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -644,7 +644,7 @@ archive/issue_comments_098493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98493",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -662,7 +662,7 @@ archive/issue_comments_098494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98494",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -683,7 +683,7 @@ archive/issue_comments_098495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98495",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -704,7 +704,7 @@ archive/issue_comments_098496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98496",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -722,7 +722,7 @@ archive/issue_comments_098497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98497",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -742,7 +742,7 @@ archive/issue_comments_098498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98498",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -762,7 +762,7 @@ archive/issue_comments_098499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98499",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -780,7 +780,7 @@ archive/issue_comments_098500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98500",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -798,7 +798,7 @@ archive/issue_comments_098501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98501",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -811,16 +811,16 @@ Apply to SAGE_ROOT. Activates RPY in spkg/install and spkg/standard/deps
 archive/issue_comments_098502.json:
 ```json
 {
-    "body": "Attachment [trac_9906-Activate_separate_RPy_spkg.root-repo.patch](tarball://root/attachments/some-uuid/ticket9906/trac_9906-Activate_separate_RPy_spkg.root-repo.patch) by jdemeyer created at 2012-09-04 12:06:03\n\nWhy should `R` depend on `PYTHON`?  The old `spkg/standard/deps` claims \"Note that even with a separate RPy spkg (#9906), Sage's R will still depend on \"Python, but I see no reason for this.  So I removed the explicit PYTHON dependency.  But it still indirectly depends on PYTHON via PYTHON->ATLAS->R.",
+    "body": "Attachment [trac_9906-Activate_separate_RPy_spkg.root-repo.patch](tarball://root/attachments/some-uuid/ticket9906/trac_9906-Activate_separate_RPy_spkg.root-repo.patch) by @jdemeyer created at 2012-09-04 12:06:03\n\nWhy should `R` depend on `PYTHON`?  The old `spkg/standard/deps` claims \"Note that even with a separate RPy spkg (#9906), Sage's R will still depend on \"Python, but I see no reason for this.  So I removed the explicit PYTHON dependency.  But it still indirectly depends on PYTHON via PYTHON->ATLAS->R.",
     "created_at": "2012-09-04T12:06:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98502",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [trac_9906-Activate_separate_RPy_spkg.root-repo.patch](tarball://root/attachments/some-uuid/ticket9906/trac_9906-Activate_separate_RPy_spkg.root-repo.patch) by jdemeyer created at 2012-09-04 12:06:03
+Attachment [trac_9906-Activate_separate_RPy_spkg.root-repo.patch](tarball://root/attachments/some-uuid/ticket9906/trac_9906-Activate_separate_RPy_spkg.root-repo.patch) by @jdemeyer created at 2012-09-04 12:06:03
 
 Why should `R` depend on `PYTHON`?  The old `spkg/standard/deps` claims "Note that even with a separate RPy spkg (#9906), Sage's R will still depend on "Python, but I see no reason for this.  So I removed the explicit PYTHON dependency.  But it still indirectly depends on PYTHON via PYTHON->ATLAS->R.
 
@@ -836,7 +836,7 @@ archive/issue_comments_098503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98503",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -849,16 +849,16 @@ Changing keywords from "r-project" to "r-project spkg".
 archive/issue_comments_098504.json:
 ```json
 {
-    "body": "Attachment [r-2.14.0.p5.diff](tarball://root/attachments/some-uuid/ticket9906/r-2.14.0.p5.diff) by jdemeyer created at 2012-09-04 12:09:29\n\nDiff for the R spkg. For reference / review only.",
+    "body": "Attachment [r-2.14.0.p5.diff](tarball://root/attachments/some-uuid/ticket9906/r-2.14.0.p5.diff) by @jdemeyer created at 2012-09-04 12:09:29\n\nDiff for the R spkg. For reference / review only.",
     "created_at": "2012-09-04T12:09:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98504",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [r-2.14.0.p5.diff](tarball://root/attachments/some-uuid/ticket9906/r-2.14.0.p5.diff) by jdemeyer created at 2012-09-04 12:09:29
+Attachment [r-2.14.0.p5.diff](tarball://root/attachments/some-uuid/ticket9906/r-2.14.0.p5.diff) by @jdemeyer created at 2012-09-04 12:09:29
 
 Diff for the R spkg. For reference / review only.
 
@@ -874,7 +874,7 @@ archive/issue_comments_098505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98505",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -892,7 +892,7 @@ archive/issue_comments_098506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98506",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -959,7 +959,7 @@ archive/issue_comments_098507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98507",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -979,7 +979,7 @@ archive/issue_comments_098508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98508",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -997,7 +997,7 @@ archive/issue_comments_098509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98509",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1015,7 +1015,7 @@ archive/issue_comments_098510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98510",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1028,16 +1028,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_098511.json:
 ```json
 {
-    "body": "Attachment [rpy2-2.0.8.p0.diff](tarball://root/attachments/some-uuid/ticket9906/rpy2-2.0.8.p0.diff) by jdemeyer created at 2012-09-04 20:26:08\n\nDiff for the rpy2 spkg (w.r.t. to the one in the current R spkg). For reference / review only.",
+    "body": "Attachment [rpy2-2.0.8.p0.diff](tarball://root/attachments/some-uuid/ticket9906/rpy2-2.0.8.p0.diff) by @jdemeyer created at 2012-09-04 20:26:08\n\nDiff for the rpy2 spkg (w.r.t. to the one in the current R spkg). For reference / review only.",
     "created_at": "2012-09-04T20:26:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98511",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [rpy2-2.0.8.p0.diff](tarball://root/attachments/some-uuid/ticket9906/rpy2-2.0.8.p0.diff) by jdemeyer created at 2012-09-04 20:26:08
+Attachment [rpy2-2.0.8.p0.diff](tarball://root/attachments/some-uuid/ticket9906/rpy2-2.0.8.p0.diff) by @jdemeyer created at 2012-09-04 20:26:08
 
 Diff for the rpy2 spkg (w.r.t. to the one in the current R spkg). For reference / review only.
 
@@ -1053,7 +1053,7 @@ archive/issue_comments_098512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98512",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1071,7 +1071,7 @@ archive/issue_comments_098513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98513",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1089,7 +1089,7 @@ archive/issue_comments_098514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98514",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1107,7 +1107,7 @@ archive/issue_comments_098515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98515",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1127,7 +1127,7 @@ archive/issue_comments_098516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98516",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1147,7 +1147,7 @@ archive/issue_comments_098517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9905#issuecomment-98517",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

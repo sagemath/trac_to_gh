@@ -14,7 +14,7 @@ archive/issues_006599.json:
     "title": "hidden markov models are completely broken on OS X 64-bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6599",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -60,7 +60,7 @@ archive/issue_comments_054020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6599#issuecomment-54020",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_054021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6599#issuecomment-54021",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_054022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6599#issuecomment-54022",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_054023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6599#issuecomment-54023",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_054024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6599#issuecomment-54024",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

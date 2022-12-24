@@ -14,7 +14,7 @@ archive/issues_001921.json:
     "title": "add random_element to groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1921",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 Assignee: joyner
@@ -43,7 +43,7 @@ archive/issue_comments_012179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1921#issuecomment-12179",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -80,16 +80,16 @@ then I hope those really do disappear completely within 2 months (say). ??
 archive/issue_comments_012180.json:
 ```json
 {
-    "body": "Attachment [1921-doc.patch](tarball://root/attachments/some-uuid/ticket1921/1921-doc.patch) by AlexGhitza created at 2008-04-17 02:36:01\n\ndoc patch",
+    "body": "Attachment [1921-doc.patch](tarball://root/attachments/some-uuid/ticket1921/1921-doc.patch) by @aghitza created at 2008-04-17 02:36:01\n\ndoc patch",
     "created_at": "2008-04-17T02:36:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1921#issuecomment-12180",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [1921-doc.patch](tarball://root/attachments/some-uuid/ticket1921/1921-doc.patch) by AlexGhitza created at 2008-04-17 02:36:01
+Attachment [1921-doc.patch](tarball://root/attachments/some-uuid/ticket1921/1921-doc.patch) by @aghitza created at 2008-04-17 02:36:01
 
 doc patch
 
@@ -105,7 +105,7 @@ archive/issue_comments_012181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1921#issuecomment-12181",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -120,16 +120,16 @@ This change messes up a doctest in the tutorial, so there is also a small doc pa
 archive/issue_comments_012182.json:
 ```json
 {
-    "body": "Attachment [1921-1.patch](tarball://root/attachments/some-uuid/ticket1921/1921-1.patch) by mhansen created at 2008-04-26 02:24:19",
+    "body": "Attachment [1921-1.patch](tarball://root/attachments/some-uuid/ticket1921/1921-1.patch) by @mwhansen created at 2008-04-26 02:24:19",
     "created_at": "2008-04-26T02:24:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1921#issuecomment-12182",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1921-1.patch](tarball://root/attachments/some-uuid/ticket1921/1921-1.patch) by mhansen created at 2008-04-26 02:24:19
+Attachment [1921-1.patch](tarball://root/attachments/some-uuid/ticket1921/1921-1.patch) by @mwhansen created at 2008-04-26 02:24:19
 
 
 
@@ -143,7 +143,7 @@ archive/issue_comments_012183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1921#issuecomment-12183",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_006123.json:
     "title": "[with patch, needs review] expose partition refinement functions to Python",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6123",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: joyner
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6123
 archive/issue_comments_048926.json:
 ```json
 {
-    "body": "Attachment [trac_6123-python_partn_ref.patch](tarball://root/attachments/some-uuid/ticket6123/trac_6123-python_partn_ref.patch) by rlm created at 2009-05-24 07:42:14",
+    "body": "Attachment [trac_6123-python_partn_ref.patch](tarball://root/attachments/some-uuid/ticket6123/trac_6123-python_partn_ref.patch) by @rlmill created at 2009-05-24 07:42:14",
     "created_at": "2009-05-24T07:42:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6123#issuecomment-48926",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_6123-python_partn_ref.patch](tarball://root/attachments/some-uuid/ticket6123/trac_6123-python_partn_ref.patch) by rlm created at 2009-05-24 07:42:14
+Attachment [trac_6123-python_partn_ref.patch](tarball://root/attachments/some-uuid/ticket6123/trac_6123-python_partn_ref.patch) by @rlmill created at 2009-05-24 07:42:14
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_048927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6123#issuecomment-48927",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_048928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6123#issuecomment-48928",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_048929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6123#issuecomment-48929",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_048930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6123#issuecomment-48930",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_048931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6123#issuecomment-48931",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

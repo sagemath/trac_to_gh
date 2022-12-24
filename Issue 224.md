@@ -14,7 +14,7 @@ archive/issues_000224.json:
     "title": "doc browser -- doesn't parse \"notebook input notation\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/224",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -92,7 +92,7 @@ archive/issue_comments_000999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/224",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/224#issuecomment-999",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_001000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/224",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/224#issuecomment-1000",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_001001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/224",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/224#issuecomment-1001",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_001002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/224",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/224#issuecomment-1002",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

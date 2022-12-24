@@ -3,7 +3,7 @@
 archive/issues_006010.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kohel\n\nKeywords: genus 2 hyperelliptic igusa invariants\n\nPatch says it best -- Igusa and related invariants for hyperelliptic curves of genus 2 (equivalently, quintic/sexitc binary forms).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6010\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  kohel\n\nKeywords: genus 2 hyperelliptic igusa invariants\n\nPatch says it best -- Igusa and related invariants for hyperelliptic curves of genus 2 (equivalently, quintic/sexitc binary forms).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6010\n\n",
     "created_at": "2009-05-08T21:58:26Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_006010.json:
     "title": "[with patch, needs review] implement various invariants for genus 2 hyperelliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6010",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  kohel
 
@@ -41,7 +41,7 @@ archive/issue_comments_047826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6010",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6010#issuecomment-47826",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_047827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6010",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6010#issuecomment-47827",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -90,16 +90,16 @@ abort: patch failed to apply
 archive/issue_comments_047828.json:
 ```json
 {
-    "body": "Attachment [trac_6010-genus-2-invariants-2.2.patch](tarball://root/attachments/some-uuid/ticket6010/trac_6010-genus-2-invariants-2.2.patch) by ncalexan created at 2009-05-12 06:08:01",
+    "body": "Attachment [trac_6010-genus-2-invariants-2.2.patch](tarball://root/attachments/some-uuid/ticket6010/trac_6010-genus-2-invariants-2.2.patch) by @ncalexan created at 2009-05-12 06:08:01",
     "created_at": "2009-05-12T06:08:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6010",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6010#issuecomment-47828",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [trac_6010-genus-2-invariants-2.2.patch](tarball://root/attachments/some-uuid/ticket6010/trac_6010-genus-2-invariants-2.2.patch) by ncalexan created at 2009-05-12 06:08:01
+Attachment [trac_6010-genus-2-invariants-2.2.patch](tarball://root/attachments/some-uuid/ticket6010/trac_6010-genus-2-invariants-2.2.patch) by @ncalexan created at 2009-05-12 06:08:01
 
 
 
@@ -113,7 +113,7 @@ archive/issue_comments_047829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6010",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6010#issuecomment-47829",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

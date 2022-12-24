@@ -14,7 +14,7 @@ archive/issues_005119.json:
     "title": "abstract class for unique representation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5119",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 Assignee: cwitty
@@ -40,7 +40,7 @@ archive/issue_comments_039125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5119#issuecomment-39125",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

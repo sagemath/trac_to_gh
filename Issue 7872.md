@@ -3,7 +3,7 @@
 archive/issues_007872.json:
 ```json
 {
-    "body": "Assignee: olazo\n\nCC:  wcauchois jason mhampton olazo kcrisman\n\nWhile developing a command called transform_plot3d, that generalized ploting in diferent coordinate systems, Jason Grout suggested to me that such a command would be better implemented within plot3d.\n\nI agreed to that, so I propose an adition to plot3d's syntax: \"plot3d(function,var1range,var2range,transformation=None,**kwds)\" where transformation is a 4-tuple containing 3 functions of arity 3, and a variable which is to be interpreted as the function to be ploted. Like this (r*cos(fi),r*sin(fi),z,r), so the function will be ploted as r.\n\nIt's inclution within plot3d would be something on the likes of\n\n\n```\ndef plot3d_new(f,v1ran,v2ran,transformation=None,**kwds):\n    if transformation==None:\n        return plot3d(f,v1ran,v2ran,**kwds)\n    else:\n        v1=v1ran[0]\n        v2=v2ran[0]\n\n        if transformation=='spherical':\n            r=var('r')\n            transformation=(r*cos(v1)*sin(v2),r*sin(v1)*sin(v2),r*cos(v2),r)\n        elif transformation=='cylindrical':\n            r=var('r')\n            transformation=(r*cos(v1),r*sin(v1),v2,r)\n        elif str(type(transformation))==\"<type 'str'>\":\n            print 'Warning: the transformation given is not amongst the options, it will be ignored'\n            return plot3d(f,v1ran,v2ran,**kwds)\n\n        fvar=transformation[3]\n        transformation=(transformation[0],transformation[1],transformation[2])\n\n        try:\n            R=[t.subs({fvar:f}) for t in transformation]\n        except:\n            def subs_func(t):\n                return lambda x,y: t.subs({fvar:f(x,y), v1:x, v2:y})\n            R=map(subs_func,transformation)\n        return parametric_plot(R,v1ran,v2ran,**kwds)\n```\n\n\nExamples can be found in [http://www.sagenb.org/home/omologos/9/](http://www.sagenb.org/home/omologos/9/).\n\nSpherical and cylindrical plots are now meant to be purely derived from plot3d. So tickets [http://trac.sagemath.org/sage_trac/ticket/7850](http://trac.sagemath.org/sage_trac/ticket/7850) and [http://trac.sagemath.org/sage_trac/ticket/7869](http://trac.sagemath.org/sage_trac/ticket/7869) should be updated\n\nIssue created by migration from https://trac.sagemath.org/ticket/7872\n\n",
+    "body": "Assignee: olazo\n\nCC:  wcauchois @jasongrout mhampton olazo @kcrisman\n\nWhile developing a command called transform_plot3d, that generalized ploting in diferent coordinate systems, Jason Grout suggested to me that such a command would be better implemented within plot3d.\n\nI agreed to that, so I propose an adition to plot3d's syntax: \"plot3d(function,var1range,var2range,transformation=None,**kwds)\" where transformation is a 4-tuple containing 3 functions of arity 3, and a variable which is to be interpreted as the function to be ploted. Like this (r*cos(fi),r*sin(fi),z,r), so the function will be ploted as r.\n\nIt's inclution within plot3d would be something on the likes of\n\n\n```\ndef plot3d_new(f,v1ran,v2ran,transformation=None,**kwds):\n    if transformation==None:\n        return plot3d(f,v1ran,v2ran,**kwds)\n    else:\n        v1=v1ran[0]\n        v2=v2ran[0]\n\n        if transformation=='spherical':\n            r=var('r')\n            transformation=(r*cos(v1)*sin(v2),r*sin(v1)*sin(v2),r*cos(v2),r)\n        elif transformation=='cylindrical':\n            r=var('r')\n            transformation=(r*cos(v1),r*sin(v1),v2,r)\n        elif str(type(transformation))==\"<type 'str'>\":\n            print 'Warning: the transformation given is not amongst the options, it will be ignored'\n            return plot3d(f,v1ran,v2ran,**kwds)\n\n        fvar=transformation[3]\n        transformation=(transformation[0],transformation[1],transformation[2])\n\n        try:\n            R=[t.subs({fvar:f}) for t in transformation]\n        except:\n            def subs_func(t):\n                return lambda x,y: t.subs({fvar:f(x,y), v1:x, v2:y})\n            R=map(subs_func,transformation)\n        return parametric_plot(R,v1ran,v2ran,**kwds)\n```\n\n\nExamples can be found in [http://www.sagenb.org/home/omologos/9/](http://www.sagenb.org/home/omologos/9/).\n\nSpherical and cylindrical plots are now meant to be purely derived from plot3d. So tickets [http://trac.sagemath.org/sage_trac/ticket/7850](http://trac.sagemath.org/sage_trac/ticket/7850) and [http://trac.sagemath.org/sage_trac/ticket/7869](http://trac.sagemath.org/sage_trac/ticket/7869) should be updated\n\nIssue created by migration from https://trac.sagemath.org/ticket/7872\n\n",
     "created_at": "2010-01-08T17:44:47Z",
     "labels": [
         "graphics",
@@ -19,7 +19,7 @@ archive/issues_007872.json:
 ```
 Assignee: olazo
 
-CC:  wcauchois jason mhampton olazo kcrisman
+CC:  wcauchois @jasongrout mhampton olazo @kcrisman
 
 While developing a command called transform_plot3d, that generalized ploting in diferent coordinate systems, Jason Grout suggested to me that such a command would be better implemented within plot3d.
 
@@ -325,7 +325,7 @@ archive/issue_comments_068351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7872#issuecomment-68351",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -381,7 +381,7 @@ archive/issue_comments_068354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7872#issuecomment-68354",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_068355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7872#issuecomment-68355",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -584,7 +584,7 @@ archive/issue_comments_068361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7872#issuecomment-68361",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -602,7 +602,7 @@ archive/issue_comments_068362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7872#issuecomment-68362",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -694,7 +694,7 @@ archive/issue_comments_068364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7872#issuecomment-68364",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -712,7 +712,7 @@ archive/issue_comments_068365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7872#issuecomment-68365",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -738,7 +738,7 @@ archive/issue_comments_068366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7872#issuecomment-68366",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -770,7 +770,7 @@ archive/issue_comments_068367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7872#issuecomment-68367",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -798,16 +798,16 @@ and things should just work.  all_vars can be inferred from the keyword argument
 archive/issue_comments_068368.json:
 ```json
 {
-    "body": "Changing assignee from olazo to jason.",
+    "body": "Changing assignee from olazo to @jasongrout.",
     "created_at": "2010-02-24T08:19:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7872#issuecomment-68368",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from olazo to jason.
+Changing assignee from olazo to @jasongrout.
 
 
 
@@ -821,7 +821,7 @@ archive/issue_comments_068369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7872#issuecomment-68369",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -848,7 +848,7 @@ archive/issue_comments_068370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7872#issuecomment-68370",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -876,7 +876,7 @@ archive/issue_comments_068371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7872#issuecomment-68371",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -900,16 +900,16 @@ ValueError: expected 3-tuple for urange and vrange
 archive/issue_comments_068372.json:
 ```json
 {
-    "body": "Attachment [trac-7872-polish.patch](tarball://root/attachments/some-uuid/ticket7872/trac-7872-polish.patch) by jason created at 2010-02-27 10:11:53\n\napply on top of trac_7872_new-all.patch; based on 4.3.2.",
+    "body": "Attachment [trac-7872-polish.patch](tarball://root/attachments/some-uuid/ticket7872/trac-7872-polish.patch) by @jasongrout created at 2010-02-27 10:11:53\n\napply on top of trac_7872_new-all.patch; based on 4.3.2.",
     "created_at": "2010-02-27T10:11:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7872#issuecomment-68372",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-7872-polish.patch](tarball://root/attachments/some-uuid/ticket7872/trac-7872-polish.patch) by jason created at 2010-02-27 10:11:53
+Attachment [trac-7872-polish.patch](tarball://root/attachments/some-uuid/ticket7872/trac-7872-polish.patch) by @jasongrout created at 2010-02-27 10:11:53
 
 apply on top of trac_7872_new-all.patch; based on 4.3.2.
 
@@ -925,7 +925,7 @@ archive/issue_comments_068373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7872#issuecomment-68373",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -943,7 +943,7 @@ archive/issue_comments_068374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7872#issuecomment-68374",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -961,7 +961,7 @@ archive/issue_comments_068375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7872#issuecomment-68375",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -974,16 +974,16 @@ Changing priority from minor to major.
 archive/issue_comments_068376.json:
 ```json
 {
-    "body": "Remove assignee jason.",
+    "body": "Remove assignee @jasongrout.",
     "created_at": "2010-02-27T10:18:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7872#issuecomment-68376",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Remove assignee jason.
+Remove assignee @jasongrout.
 
 
 
@@ -1015,7 +1015,7 @@ archive/issue_comments_068378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7872#issuecomment-68378",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1059,7 +1059,7 @@ archive/issue_comments_068380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7872#issuecomment-68380",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1077,7 +1077,7 @@ archive/issue_comments_068381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7872#issuecomment-68381",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1102,7 +1102,7 @@ archive/issue_comments_068382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7872#issuecomment-68382",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

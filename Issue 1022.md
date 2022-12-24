@@ -3,7 +3,7 @@
 archive/issues_001022.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nSee attached patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1022\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nSee attached patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1022\n\n",
     "created_at": "2007-10-28T18:49:29Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001022.json:
     "title": "[with patch] Miscellaneous combinatorics updates / fixes / additions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1022",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -39,7 +39,7 @@ archive/issue_comments_006262.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1022",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1022#issuecomment-6262",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

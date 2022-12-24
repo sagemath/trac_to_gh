@@ -3,7 +3,7 @@
 archive/issues_007954.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  klee\n\nReported by Ronald van Luijk:\n\nbecause the Curve constructor automatically interprets a homogeneous polynomial in 3 variables as a projective curve, the following doesn't work:\n\n\n```\nA.<x,y,z>=AffineSpace(QQ,3)\nC=Curve([x-y,x-z])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7954\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @kwankyu\n\nReported by Ronald van Luijk:\n\nbecause the Curve constructor automatically interprets a homogeneous polynomial in 3 variables as a projective curve, the following doesn't work:\n\n\n```\nA.<x,y,z>=AffineSpace(QQ,3)\nC=Curve([x-y,x-z])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7954\n\n",
     "created_at": "2010-01-16T18:15:19Z",
     "labels": [
         "algebraic geometry",
@@ -14,12 +14,12 @@ archive/issues_007954.json:
     "title": "Defining affine curves in 3D space",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7954",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  klee
+CC:  @kwankyu
 
 Reported by Ronald van Luijk:
 
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7954
 archive/issue_comments_069404.json:
 ```json
 {
-    "body": "Attachment [7954_curve_constructor.patch](tarball://root/attachments/some-uuid/ticket7954/7954_curve_constructor.patch) by wjp created at 2010-01-17 03:52:22",
+    "body": "Attachment [7954_curve_constructor.patch](tarball://root/attachments/some-uuid/ticket7954/7954_curve_constructor.patch) by @wjp created at 2010-01-17 03:52:22",
     "created_at": "2010-01-17T03:52:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7954#issuecomment-69404",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [7954_curve_constructor.patch](tarball://root/attachments/some-uuid/ticket7954/7954_curve_constructor.patch) by wjp created at 2010-01-17 03:52:22
+Attachment [7954_curve_constructor.patch](tarball://root/attachments/some-uuid/ticket7954/7954_curve_constructor.patch) by @wjp created at 2010-01-17 03:52:22
 
 
 
@@ -66,7 +66,7 @@ archive/issue_comments_069405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7954#issuecomment-69405",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_069406.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7954#issuecomment-69406",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -97,16 +97,16 @@ Changing status from new to needs_review.
 archive/issue_comments_069407.json:
 ```json
 {
-    "body": "Attachment [trac_7954-part2.patch](tarball://root/attachments/some-uuid/ticket7954/trac_7954-part2.patch) by was created at 2010-01-17 09:38:23\n\nthe previous patch was part 1.  apply this after that one.",
+    "body": "Attachment [trac_7954-part2.patch](tarball://root/attachments/some-uuid/ticket7954/trac_7954-part2.patch) by @williamstein created at 2010-01-17 09:38:23\n\nthe previous patch was part 1.  apply this after that one.",
     "created_at": "2010-01-17T09:38:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7954#issuecomment-69407",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7954-part2.patch](tarball://root/attachments/some-uuid/ticket7954/trac_7954-part2.patch) by was created at 2010-01-17 09:38:23
+Attachment [trac_7954-part2.patch](tarball://root/attachments/some-uuid/ticket7954/trac_7954-part2.patch) by @williamstein created at 2010-01-17 09:38:23
 
 the previous patch was part 1.  apply this after that one.
 
@@ -122,7 +122,7 @@ archive/issue_comments_069408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7954#issuecomment-69408",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_069409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7954#issuecomment-69409",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_069410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7954#issuecomment-69410",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_069411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7954#issuecomment-69411",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_069412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7954#issuecomment-69412",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_069413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7954#issuecomment-69413",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_069414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7954#issuecomment-69414",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003393.json:
     "title": "fix typo in documentation related to sage_search",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3393",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -48,7 +48,7 @@ archive/issue_comments_023769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3393",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3393#issuecomment-23769",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_023770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3393",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3393#issuecomment-23770",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_023771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3393",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3393#issuecomment-23771",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

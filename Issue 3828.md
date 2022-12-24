@@ -3,7 +3,7 @@
 archive/issues_003828.json:
 ```json
 {
-    "body": "Assignee: cpernet\n\nKeywords: charpoly\n\nThe main improvement in 1.1.6rc1 is the fix to the charpoly bug (see #3671), plus some memory management improvement and memleak fixes.\n\nTherefore the workaround with 1.1.6rc0, bypassing this implementation is now removed.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3828\n\n",
+    "body": "Assignee: @ClementPernet\n\nKeywords: charpoly\n\nThe main improvement in 1.1.6rc1 is the fix to the charpoly bug (see #3671), plus some memory management improvement and memleak fixes.\n\nTherefore the workaround with 1.1.6rc0, bypassing this implementation is now removed.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3828\n\n",
     "created_at": "2008-08-12T23:54:36Z",
     "labels": [
         "linbox",
@@ -14,10 +14,10 @@ archive/issues_003828.json:
     "title": "Upgrade to linbox-1.1.6rc1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3828",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
-Assignee: cpernet
+Assignee: @ClementPernet
 
 Keywords: charpoly
 
@@ -42,7 +42,7 @@ archive/issue_comments_027231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3828",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3828#issuecomment-27231",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 

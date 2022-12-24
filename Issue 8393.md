@@ -3,7 +3,7 @@
 archive/issues_008393.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kcrisman\n\nKeywords: coverage, doctests, plot3d\n\nplot3d.py is only missing three doctests to get to 100%:\n\n```\nsage -coverage devel/sage-p1/sage/plot/plot3d/plot3d.py \n----------------------------------------------------------------------\ndevel/sage-p1/sage/plot/plot3d/plot3d.py\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE devel/sage-p1/sage/plot/plot3d/plot3d.py: 81% (13 of 16)\n\nMissing documentation:\n\t * triangle(self, a, b, c, color = None):\n\t * smooth_triangle(self, a, b, c, da, db, dc, color = None):\n\t * axes(scale=1, radius=None, **kwds):\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8393\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nKeywords: coverage, doctests, plot3d\n\nplot3d.py is only missing three doctests to get to 100%:\n\n```\nsage -coverage devel/sage-p1/sage/plot/plot3d/plot3d.py \n----------------------------------------------------------------------\ndevel/sage-p1/sage/plot/plot3d/plot3d.py\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE devel/sage-p1/sage/plot/plot3d/plot3d.py: 81% (13 of 16)\n\nMissing documentation:\n\t * triangle(self, a, b, c, color = None):\n\t * smooth_triangle(self, a, b, c, da, db, dc, color = None):\n\t * axes(scale=1, radius=None, **kwds):\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8393\n\n",
     "created_at": "2010-02-28T14:36:59Z",
     "labels": [
         "graphics",
@@ -17,9 +17,9 @@ archive/issues_008393.json:
     "user": "mhampton"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kcrisman
+CC:  @kcrisman
 
 Keywords: coverage, doctests, plot3d
 
@@ -55,7 +55,7 @@ archive/issue_comments_075205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8393",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8393#issuecomment-75205",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_075206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8393",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8393#issuecomment-75206",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_075207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8393",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8393#issuecomment-75207",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_075208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8393",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8393#issuecomment-75208",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

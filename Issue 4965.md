@@ -3,7 +3,7 @@
 archive/issues_004965.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  burcin was\n\nThe attached patches wrap FLINT's Z/nZ[x] for word sized n. This provides a considerable speed-up (~ 20x) for univariate polynomial arithmetic over these rings and also cleans up the code using the `polynomial_template.pxi` mechanism. For that `polynomial_template.pxi` was also cleaned-up which should make it more suitable for other backend implementations.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4965\n\n",
+    "body": "Assignee: somebody\n\nCC:  @burcin @williamstein\n\nThe attached patches wrap FLINT's Z/nZ[x] for word sized n. This provides a considerable speed-up (~ 20x) for univariate polynomial arithmetic over these rings and also cleans up the code using the `polynomial_template.pxi` mechanism. For that `polynomial_template.pxi` was also cleaned-up which should make it more suitable for other backend implementations.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4965\n\n",
     "created_at": "2009-01-11T22:03:25Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_004965.json:
     "title": "[with patch, needs work] Z/nZ[x] via FLINT's zmod_poly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4965",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: somebody
 
-CC:  burcin was
+CC:  @burcin @williamstein
 
 The attached patches wrap FLINT's Z/nZ[x] for word sized n. This provides a considerable speed-up (~ 20x) for univariate polynomial arithmetic over these rings and also cleans up the code using the `polynomial_template.pxi` mechanism. For that `polynomial_template.pxi` was also cleaned-up which should make it more suitable for other backend implementations.
 
@@ -39,7 +39,7 @@ archive/issue_comments_037746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37746",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -52,16 +52,16 @@ apply this first
 archive/issue_comments_037747.json:
 ```json
 {
-    "body": "Attachment [polynomial_template.patch](tarball://root/attachments/some-uuid/ticket4965/polynomial_template.patch) by malb created at 2009-01-11 22:06:12\n\n## Speed-Up on sage.math\n\n### Old\n\n\n```\nsage: P.<x> = PolynomialRing(GF(7))\nsage: type(x)\n<type 'sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_p'>\nsage: f = P.random_element(100)\nsage: g = P.random_element(100)\nsage: %timeit f*g\n1000 loops, best of 3: 445 \u00b5s per loop\n```\n\n\n### New\n\n\n```\nsage: P.<x> = PolynomialRing(GF(7))\nsage: type(x)\n<type 'sage.rings.polynomial.polynomial_zmod_flint.Polynomial_zmod_flint'>\nsage: f = P.random_element(100)\nsage: g = P.random_element(100)\nsage: %timeit f*g\n100000 loops, best of 3: 7.92 \u00b5s per loop\n```\n",
+    "body": "Attachment [polynomial_template.patch](tarball://root/attachments/some-uuid/ticket4965/polynomial_template.patch) by @malb created at 2009-01-11 22:06:12\n\n## Speed-Up on sage.math\n\n### Old\n\n\n```\nsage: P.<x> = PolynomialRing(GF(7))\nsage: type(x)\n<type 'sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_p'>\nsage: f = P.random_element(100)\nsage: g = P.random_element(100)\nsage: %timeit f*g\n1000 loops, best of 3: 445 \u00b5s per loop\n```\n\n\n### New\n\n\n```\nsage: P.<x> = PolynomialRing(GF(7))\nsage: type(x)\n<type 'sage.rings.polynomial.polynomial_zmod_flint.Polynomial_zmod_flint'>\nsage: f = P.random_element(100)\nsage: g = P.random_element(100)\nsage: %timeit f*g\n100000 loops, best of 3: 7.92 \u00b5s per loop\n```\n",
     "created_at": "2009-01-11T22:06:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37747",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [polynomial_template.patch](tarball://root/attachments/some-uuid/ticket4965/polynomial_template.patch) by malb created at 2009-01-11 22:06:12
+Attachment [polynomial_template.patch](tarball://root/attachments/some-uuid/ticket4965/polynomial_template.patch) by @malb created at 2009-01-11 22:06:12
 
 ## Speed-Up on sage.math
 
@@ -105,7 +105,7 @@ archive/issue_comments_037748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37748",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_037749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37749",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_037750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37750",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_037751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37751",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_037752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37752",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_037753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37753",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_037754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37754",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -379,7 +379,7 @@ archive/issue_comments_037755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37755",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -412,7 +412,7 @@ archive/issue_comments_037756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37756",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -484,7 +484,7 @@ archive/issue_comments_037757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37757",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -517,7 +517,7 @@ archive/issue_comments_037758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37758",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -535,7 +535,7 @@ archive/issue_comments_037759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37759",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -553,7 +553,7 @@ archive/issue_comments_037760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37760",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -617,7 +617,7 @@ archive/issue_comments_037761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37761",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -635,7 +635,7 @@ archive/issue_comments_037762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37762",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -653,16 +653,16 @@ I'm still looking into why the doctest failure above, and nothing obvious is com
 archive/issue_comments_037763.json:
 ```json
 {
-    "body": "Attachment [4965-shift-fix.patch](tarball://root/attachments/some-uuid/ticket4965/4965-shift-fix.patch) by robertwb created at 2009-01-15 05:29:22",
+    "body": "Attachment [4965-shift-fix.patch](tarball://root/attachments/some-uuid/ticket4965/4965-shift-fix.patch) by @robertwb created at 2009-01-15 05:29:22",
     "created_at": "2009-01-15T05:29:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37763",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4965-shift-fix.patch](tarball://root/attachments/some-uuid/ticket4965/4965-shift-fix.patch) by robertwb created at 2009-01-15 05:29:22
+Attachment [4965-shift-fix.patch](tarball://root/attachments/some-uuid/ticket4965/4965-shift-fix.patch) by @robertwb created at 2009-01-15 05:29:22
 
 
 
@@ -676,7 +676,7 @@ archive/issue_comments_037764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37764",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -696,7 +696,7 @@ archive/issue_comments_037765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37765",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -718,7 +718,7 @@ archive/issue_comments_037766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37766",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -738,7 +738,7 @@ archive/issue_comments_037767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37767",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -765,7 +765,7 @@ archive/issue_comments_037768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37768",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -786,7 +786,7 @@ archive/issue_comments_037769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37769",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -804,7 +804,7 @@ archive/issue_comments_037770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37770",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -828,7 +828,7 @@ archive/issue_comments_037771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37771",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -850,7 +850,7 @@ archive/issue_comments_037772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37772",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -868,7 +868,7 @@ archive/issue_comments_037773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37773",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -890,7 +890,7 @@ archive/issue_comments_037774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37774",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -919,7 +919,7 @@ archive/issue_comments_037775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37775",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -932,16 +932,16 @@ move pxi declarations to pxd
 archive/issue_comments_037776.json:
 ```json
 {
-    "body": "Attachment [4965-pxi-to-pxd.patch](tarball://root/attachments/some-uuid/ticket4965/4965-pxi-to-pxd.patch) by robertwb created at 2009-01-15 21:20:59\n\nOK, I attached a patch. This should probably be folded into zmod_poly.patch",
+    "body": "Attachment [4965-pxi-to-pxd.patch](tarball://root/attachments/some-uuid/ticket4965/4965-pxi-to-pxd.patch) by @robertwb created at 2009-01-15 21:20:59\n\nOK, I attached a patch. This should probably be folded into zmod_poly.patch",
     "created_at": "2009-01-15T21:20:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37776",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4965-pxi-to-pxd.patch](tarball://root/attachments/some-uuid/ticket4965/4965-pxi-to-pxd.patch) by robertwb created at 2009-01-15 21:20:59
+Attachment [4965-pxi-to-pxd.patch](tarball://root/attachments/some-uuid/ticket4965/4965-pxi-to-pxd.patch) by @robertwb created at 2009-01-15 21:20:59
 
 OK, I attached a patch. This should probably be folded into zmod_poly.patch
 
@@ -979,7 +979,7 @@ archive/issue_comments_037778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37778",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1023,7 +1023,7 @@ archive/issue_comments_037780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37780",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1071,7 +1071,7 @@ archive/issue_comments_037781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37781",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1089,7 +1089,7 @@ archive/issue_comments_037782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37782",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1107,7 +1107,7 @@ archive/issue_comments_037783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37783",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1125,7 +1125,7 @@ archive/issue_comments_037784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37784",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1151,16 +1151,16 @@ Personally, I think it's a bad idea to impose a 32-b it cutoff for 64-bit platfo
 archive/issue_comments_037785.json:
 ```json
 {
-    "body": "Attachment [zmod_poly.patch](tarball://root/attachments/some-uuid/ticket4965/zmod_poly.patch) by malb created at 2009-01-20 06:26:22\n\ngoing down to 2^30",
+    "body": "Attachment [zmod_poly.patch](tarball://root/attachments/some-uuid/ticket4965/zmod_poly.patch) by @malb created at 2009-01-20 06:26:22\n\ngoing down to 2^30",
     "created_at": "2009-01-20T06:26:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37785",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [zmod_poly.patch](tarball://root/attachments/some-uuid/ticket4965/zmod_poly.patch) by malb created at 2009-01-20 06:26:22
+Attachment [zmod_poly.patch](tarball://root/attachments/some-uuid/ticket4965/zmod_poly.patch) by @malb created at 2009-01-20 06:26:22
 
 going down to 2^30
 
@@ -1176,7 +1176,7 @@ archive/issue_comments_037786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37786",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1197,7 +1197,7 @@ archive/issue_comments_037787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37787",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

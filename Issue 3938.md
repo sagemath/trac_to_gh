@@ -3,7 +3,7 @@
 archive/issues_003938.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nCC:  cwitty\n\nThis came up while reviewing #2898, which adds a conversion from float to ZZ (for integral values).  After applying that patch, you get:\n\n\n```\nsage: 1.0r/8\n1/8\n```\n\n\nThat's because of this code in coerce.pyx, which does a conversion rather than a coercion:\n\n```\n        elif PY_IS_NUMERIC(x):\n            try:\n                x = yp(x)\n                if PY_TYPE_CHECK(yp, type): return x,y\n```\n\n\nI tried to fix this, but every time I fixed something it broke something else.  I'm going to attach my latest non-working patch, which may or may not be a useful place to start.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3938\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  cwitty\n\nThis came up while reviewing #2898, which adds a conversion from float to ZZ (for integral values).  After applying that patch, you get:\n\n\n```\nsage: 1.0r/8\n1/8\n```\n\n\nThat's because of this code in coerce.pyx, which does a conversion rather than a coercion:\n\n```\n        elif PY_IS_NUMERIC(x):\n            try:\n                x = yp(x)\n                if PY_TYPE_CHECK(yp, type): return x,y\n```\n\n\nI tried to fix this, but every time I fixed something it broke something else.  I'm going to attach my latest non-working patch, which may or may not be a useful place to start.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3938\n\n",
     "created_at": "2008-08-23T21:02:17Z",
     "labels": [
         "coercion",
@@ -17,7 +17,7 @@ archive/issues_003938.json:
     "user": "cwitty"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 CC:  cwitty
 
@@ -53,16 +53,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3938
 archive/issue_comments_028218.json:
 ```json
 {
-    "body": "Attachment [trac3938-coercion-converts-native.patch](tarball://root/attachments/some-uuid/ticket3938/trac3938-coercion-converts-native.patch) by robertwb created at 2008-08-24 08:43:53\n\nI've been playing around with this a bit, simplified your patch some, but one consequence is that \n\n\n```\nsage: parent(RealField(100)(1.5) + float(1.5)) # good?\n<type 'float'>\nsage: RealField(100)(2^4000) == float('inf')   # bad?\nTrue\n```\n\n\nThoughts?",
+    "body": "Attachment [trac3938-coercion-converts-native.patch](tarball://root/attachments/some-uuid/ticket3938/trac3938-coercion-converts-native.patch) by @robertwb created at 2008-08-24 08:43:53\n\nI've been playing around with this a bit, simplified your patch some, but one consequence is that \n\n\n```\nsage: parent(RealField(100)(1.5) + float(1.5)) # good?\n<type 'float'>\nsage: RealField(100)(2^4000) == float('inf')   # bad?\nTrue\n```\n\n\nThoughts?",
     "created_at": "2008-08-24T08:43:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3938#issuecomment-28218",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [trac3938-coercion-converts-native.patch](tarball://root/attachments/some-uuid/ticket3938/trac3938-coercion-converts-native.patch) by robertwb created at 2008-08-24 08:43:53
+Attachment [trac3938-coercion-converts-native.patch](tarball://root/attachments/some-uuid/ticket3938/trac3938-coercion-converts-native.patch) by @robertwb created at 2008-08-24 08:43:53
 
 I've been playing around with this a bit, simplified your patch some, but one consequence is that 
 
@@ -102,16 +102,16 @@ Both of these changes make float act more like RDF.  I've sometimes wished that 
 archive/issue_comments_028220.json:
 ```json
 {
-    "body": "Attachment [3938-type-coercion-2.patch](tarball://root/attachments/some-uuid/ticket3938/3938-type-coercion-2.patch) by robertwb created at 2008-08-27 16:13:58",
+    "body": "Attachment [3938-type-coercion-2.patch](tarball://root/attachments/some-uuid/ticket3938/3938-type-coercion-2.patch) by @robertwb created at 2008-08-27 16:13:58",
     "created_at": "2008-08-27T16:13:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3938#issuecomment-28220",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3938-type-coercion-2.patch](tarball://root/attachments/some-uuid/ticket3938/3938-type-coercion-2.patch) by robertwb created at 2008-08-27 16:13:58
+Attachment [3938-type-coercion-2.patch](tarball://root/attachments/some-uuid/ticket3938/3938-type-coercion-2.patch) by @robertwb created at 2008-08-27 16:13:58
 
 
 
@@ -120,16 +120,16 @@ Attachment [3938-type-coercion-2.patch](tarball://root/attachments/some-uuid/tic
 archive/issue_comments_028221.json:
 ```json
 {
-    "body": "Attachment [3938-type-coercion-3.patch](tarball://root/attachments/some-uuid/ticket3938/3938-type-coercion-3.patch) by robertwb created at 2008-08-27 16:15:59\n\nI feel your pain...what a nasty patch to try and write! Well, I finally feel like I've got a correct, working solution. Apply all three patches.",
+    "body": "Attachment [3938-type-coercion-3.patch](tarball://root/attachments/some-uuid/ticket3938/3938-type-coercion-3.patch) by @robertwb created at 2008-08-27 16:15:59\n\nI feel your pain...what a nasty patch to try and write! Well, I finally feel like I've got a correct, working solution. Apply all three patches.",
     "created_at": "2008-08-27T16:15:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3938#issuecomment-28221",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3938-type-coercion-3.patch](tarball://root/attachments/some-uuid/ticket3938/3938-type-coercion-3.patch) by robertwb created at 2008-08-27 16:15:59
+Attachment [3938-type-coercion-3.patch](tarball://root/attachments/some-uuid/ticket3938/3938-type-coercion-3.patch) by @robertwb created at 2008-08-27 16:15:59
 
 I feel your pain...what a nasty patch to try and write! Well, I finally feel like I've got a correct, working solution. Apply all three patches.
 
@@ -196,7 +196,7 @@ archive/issue_comments_028224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3938#issuecomment-28224",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_028227.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3938#issuecomment-28227",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_028228.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3938#issuecomment-28228",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -311,16 +311,16 @@ Thanks for rebasing this. Since you're not the one who originally wrote it, do y
 archive/issue_comments_028229.json:
 ```json
 {
-    "body": "Attachment [3938.patch](tarball://root/attachments/some-uuid/ticket3938/3938.patch) by roed created at 2009-01-24 07:49:26\n\nMerged the three patches, added a few fixes to precision.",
+    "body": "Attachment [3938.patch](tarball://root/attachments/some-uuid/ticket3938/3938.patch) by @roed314 created at 2009-01-24 07:49:26\n\nMerged the three patches, added a few fixes to precision.",
     "created_at": "2009-01-24T07:49:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3938#issuecomment-28229",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [3938.patch](tarball://root/attachments/some-uuid/ticket3938/3938.patch) by roed created at 2009-01-24 07:49:26
+Attachment [3938.patch](tarball://root/attachments/some-uuid/ticket3938/3938.patch) by @roed314 created at 2009-01-24 07:49:26
 
 Merged the three patches, added a few fixes to precision.
 
@@ -336,7 +336,7 @@ archive/issue_comments_028230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3938#issuecomment-28230",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_028231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3938#issuecomment-28231",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -375,16 +375,16 @@ OK, I'll go ahead and add those doctests.
 archive/issue_comments_028232.json:
 ```json
 {
-    "body": "Attachment [3938-type-coercion-final.patch](tarball://root/attachments/some-uuid/ticket3938/3938-type-coercion-final.patch) by robertwb created at 2009-01-24 10:46:21\n\napply only this patch",
+    "body": "Attachment [3938-type-coercion-final.patch](tarball://root/attachments/some-uuid/ticket3938/3938-type-coercion-final.patch) by @robertwb created at 2009-01-24 10:46:21\n\napply only this patch",
     "created_at": "2009-01-24T10:46:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3938#issuecomment-28232",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3938-type-coercion-final.patch](tarball://root/attachments/some-uuid/ticket3938/3938-type-coercion-final.patch) by robertwb created at 2009-01-24 10:46:21
+Attachment [3938-type-coercion-final.patch](tarball://root/attachments/some-uuid/ticket3938/3938-type-coercion-final.patch) by @robertwb created at 2009-01-24 10:46:21
 
 apply only this patch
 
@@ -400,7 +400,7 @@ archive/issue_comments_028233.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3938#issuecomment-28233",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -418,7 +418,7 @@ archive/issue_comments_028234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3938#issuecomment-28234",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

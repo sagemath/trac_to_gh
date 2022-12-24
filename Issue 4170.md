@@ -3,7 +3,7 @@
 archive/issues_004170.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nThe easy fix is to add it to the big list in `_coerce_impl` at sage.calculus.calculus.py:481. Because\n\n\n```\nsage: ZZ.has_coerce_map_from(long)\nTrue\nsage: SR.has_coerce_map_from(ZZ)\nTrue\n```\n\n\nThis should be handled in the new model, but symbolics are being changed anyways. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4170\n\n",
+    "body": "Assignee: @burcin\n\nThe easy fix is to add it to the big list in `_coerce_impl` at sage.calculus.calculus.py:481. Because\n\n\n```\nsage: ZZ.has_coerce_map_from(long)\nTrue\nsage: SR.has_coerce_map_from(ZZ)\nTrue\n```\n\n\nThis should be handled in the new model, but symbolics are being changed anyways. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4170\n\n",
     "created_at": "2008-09-23T01:10:30Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_004170.json:
     "title": "symbolic ring does not accept python longs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4170",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 The easy fix is to add it to the big list in `_coerce_impl` at sage.calculus.calculus.py:481. Because
 
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4170
 archive/issue_comments_030269.json:
 ```json
 {
-    "body": "Attachment [4170-SR-long.patch](tarball://root/attachments/some-uuid/ticket4170/4170-SR-long.patch) by robertwb created at 2008-09-23 01:15:49",
+    "body": "Attachment [4170-SR-long.patch](tarball://root/attachments/some-uuid/ticket4170/4170-SR-long.patch) by @robertwb created at 2008-09-23 01:15:49",
     "created_at": "2008-09-23T01:15:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4170",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4170#issuecomment-30269",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4170-SR-long.patch](tarball://root/attachments/some-uuid/ticket4170/4170-SR-long.patch) by robertwb created at 2008-09-23 01:15:49
+Attachment [4170-SR-long.patch](tarball://root/attachments/some-uuid/ticket4170/4170-SR-long.patch) by @robertwb created at 2008-09-23 01:15:49
 
 
 

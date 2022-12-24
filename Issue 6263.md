@@ -14,7 +14,7 @@ archive/issues_006263.json:
     "title": "Add __cmp__ method to ClassFunctions (group characters)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6263",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 Assignee: joyner
@@ -39,16 +39,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6263
 archive/issue_comments_050006.json:
 ```json
 {
-    "body": "Attachment [trac_6263.patch](tarball://root/attachments/some-uuid/ticket6263/trac_6263.patch) by saliola created at 2009-06-11 21:20:10",
+    "body": "Attachment [trac_6263.patch](tarball://root/attachments/some-uuid/ticket6263/trac_6263.patch) by @saliola created at 2009-06-11 21:20:10",
     "created_at": "2009-06-11T21:20:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6263#issuecomment-50006",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_6263.patch](tarball://root/attachments/some-uuid/ticket6263/trac_6263.patch) by saliola created at 2009-06-11 21:20:10
+Attachment [trac_6263.patch](tarball://root/attachments/some-uuid/ticket6263/trac_6263.patch) by @saliola created at 2009-06-11 21:20:10
 
 
 
@@ -62,7 +62,7 @@ archive/issue_comments_050007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6263#issuecomment-50007",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_050009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6263#issuecomment-50009",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_050010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6263#issuecomment-50010",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_050011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6263#issuecomment-50011",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_050013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6263#issuecomment-50013",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

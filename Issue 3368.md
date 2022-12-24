@@ -3,7 +3,7 @@
 archive/issues_003368.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nHi,\n\nThe following is a bug that Bill Page found in Sage.  It is in the combinatorial\nclasses code  (mostly) by Mike Hansen, so maybe he'll fix it. \n\n\n```\nIn: http://modular.math.washington.edu/msri06/work/kohel/msri_magma.pdf\n\n \"A Brief Magma Tutorial\" by David R. Kohel gives this example:\n\n----------\n\nThe parent structure of a tuple is more important than in the case\nof sequences or sets.\n> C := CartesianProduct(Integers(),RationalField());\n> t := C!<1,1>;\n> Parent(t[2]);\nRational Field\n\n----------\n\nThe analogous computation in Sage 3.0.2 yields:\n\nsage: C = CartesianProduct(Integers(),RationalField())\n\n# case 1\nsage: t=C([1,1/2])\nsage: parent(t[0])\nInteger Ring\nsage: parent(t[1])\nRational Field\n\n# case 2\nsage: t=C([1,1])\nsage: parent(t[0])\nInteger Ring\nsage: parent(t[1])\nInteger Ring\n\n---------\n\nNotice that the parent of t[1] is incorrect in the 2nd case.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3368\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nHi,\n\nThe following is a bug that Bill Page found in Sage.  It is in the combinatorial\nclasses code  (mostly) by Mike Hansen, so maybe he'll fix it. \n\n\n```\nIn: http://modular.math.washington.edu/msri06/work/kohel/msri_magma.pdf\n\n \"A Brief Magma Tutorial\" by David R. Kohel gives this example:\n\n----------\n\nThe parent structure of a tuple is more important than in the case\nof sequences or sets.\n> C := CartesianProduct(Integers(),RationalField());\n> t := C!<1,1>;\n> Parent(t[2]);\nRational Field\n\n----------\n\nThe analogous computation in Sage 3.0.2 yields:\n\nsage: C = CartesianProduct(Integers(),RationalField())\n\n# case 1\nsage: t=C([1,1/2])\nsage: parent(t[0])\nInteger Ring\nsage: parent(t[1])\nRational Field\n\n# case 2\nsage: t=C([1,1])\nsage: parent(t[0])\nInteger Ring\nsage: parent(t[1])\nInteger Ring\n\n---------\n\nNotice that the parent of t[1] is incorrect in the 2nd case.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3368\n\n",
     "created_at": "2008-06-04T22:07:22Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_003368.json:
     "title": "bug in CartesianProduct",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3368",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -83,7 +83,7 @@ archive/issue_comments_023567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3368",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3368#issuecomment-23567",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_023568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3368",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3368#issuecomment-23568",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_023569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3368",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3368#issuecomment-23569",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_023570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3368",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3368#issuecomment-23570",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_023571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3368",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3368#issuecomment-23571",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_023572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3368",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3368#issuecomment-23572",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

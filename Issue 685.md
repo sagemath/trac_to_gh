@@ -3,7 +3,7 @@
 archive/issues_000685.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nThe eisenstein_series_qexp function currently only handles eisenstein series for level 1. It wouldn't be hard to make this handle eisenstein series for higher level and with character. I'm going to take care of this soon, but this is here in case I forget. ;)\n\nIssue created by migration from https://trac.sagemath.org/ticket/685\n\n",
+    "body": "Assignee: @craigcitro\n\nThe eisenstein_series_qexp function currently only handles eisenstein series for level 1. It wouldn't be hard to make this handle eisenstein series for higher level and with character. I'm going to take care of this soon, but this is here in case I forget. ;)\n\nIssue created by migration from https://trac.sagemath.org/ticket/685\n\n",
     "created_at": "2007-09-18T05:14:14Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_000685.json:
     "title": "Make Eisenstein series code handle eisenstein series with character",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/685",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 The eisenstein_series_qexp function currently only handles eisenstein series for level 1. It wouldn't be hard to make this handle eisenstein series for higher level and with character. I'm going to take care of this soon, but this is here in case I forget. ;)
 
@@ -37,7 +37,7 @@ archive/issue_comments_003554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/685#issuecomment-3554",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_003556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/685#issuecomment-3556",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_003557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/685#issuecomment-3557",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_003558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/685#issuecomment-3558",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_003559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/685#issuecomment-3559",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_003560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/685#issuecomment-3560",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

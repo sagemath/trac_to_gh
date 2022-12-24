@@ -3,7 +3,7 @@
 archive/issues_003915.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  burcin\n\nKeywords: polybori\n\nThe attached patch\n* adds an `interpolation_polynomial` method to `BooleanPolynomialRing`\n* adds `reduce` methods to `BooleanPolynomial` and `BooleanPolynomialIdeal`\n* improves the documentation slightly\n* makes `f in I` work for f a `BooleanPolynomial`\n\nIssue created by migration from https://trac.sagemath.org/ticket/3915\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin\n\nKeywords: polybori\n\nThe attached patch\n* adds an `interpolation_polynomial` method to `BooleanPolynomialRing`\n* adds `reduce` methods to `BooleanPolynomial` and `BooleanPolynomialIdeal`\n* improves the documentation slightly\n* makes `f in I` work for f a `BooleanPolynomial`\n\nIssue created by migration from https://trac.sagemath.org/ticket/3915\n\n",
     "created_at": "2008-08-20T20:02:48Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_003915.json:
     "title": "[with patch, needs review] PolyBoRi interface improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3915",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  burcin
+CC:  @burcin
 
 Keywords: polybori
 
@@ -45,7 +45,7 @@ archive/issue_comments_028000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3915",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3915#issuecomment-28000",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_028002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3915",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3915#issuecomment-28002",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -204,16 +204,16 @@ Blocks of degree reverse lex. : reversed in each block, so quite strange
 archive/issue_comments_028005.json:
 ```json
 {
-    "body": "Attachment [pbori_improvements.patch](tarball://root/attachments/some-uuid/ticket3915/pbori_improvements.patch) by malb created at 2008-08-28 10:35:04",
+    "body": "Attachment [pbori_improvements.patch](tarball://root/attachments/some-uuid/ticket3915/pbori_improvements.patch) by @malb created at 2008-08-28 10:35:04",
     "created_at": "2008-08-28T10:35:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3915",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3915#issuecomment-28005",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [pbori_improvements.patch](tarball://root/attachments/some-uuid/ticket3915/pbori_improvements.patch) by malb created at 2008-08-28 10:35:04
+Attachment [pbori_improvements.patch](tarball://root/attachments/some-uuid/ticket3915/pbori_improvements.patch) by @malb created at 2008-08-28 10:35:04
 
 
 
@@ -227,7 +227,7 @@ archive/issue_comments_028006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3915",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3915#issuecomment-28006",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_028007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3915",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3915#issuecomment-28007",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

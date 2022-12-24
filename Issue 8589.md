@@ -3,7 +3,7 @@
 archive/issues_008589.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  niles sage-combinat\n\nThis patch gives its Hopf algebra structure to the group algebra of `G` over `R` created in the following way\n\n\n```\n   sage: G.algebra(R)\n```\n\n\nAnother feature is a method is_central on elements of the algebra (which works also for monoid algebras so is in the file sage.categories.monoids)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8589\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  @nilesjohnson sage-combinat\n\nThis patch gives its Hopf algebra structure to the group algebra of `G` over `R` created in the following way\n\n\n```\n   sage: G.algebra(R)\n```\n\n\nAnother feature is a method is_central on elements of the algebra (which works also for monoid algebras so is in the file sage.categories.monoids)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8589\n\n",
     "created_at": "2010-03-23T17:16:37Z",
     "labels": [
         "combinatorics",
@@ -19,7 +19,7 @@ archive/issues_008589.json:
 ```
 Assignee: sage-combinat
 
-CC:  niles sage-combinat
+CC:  @nilesjohnson sage-combinat
 
 This patch gives its Hopf algebra structure to the group algebra of `G` over `R` created in the following way
 
@@ -89,7 +89,7 @@ archive/issue_comments_077785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8589",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8589#issuecomment-77785",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_077787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8589",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8589#issuecomment-77787",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_077790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8589",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8589#issuecomment-77790",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_077791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8589",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8589#issuecomment-77791",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_077792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8589",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8589#issuecomment-77792",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -310,7 +310,7 @@ archive/issue_comments_077794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8589",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8589#issuecomment-77794",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -374,7 +374,7 @@ archive/issue_comments_077796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8589",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8589#issuecomment-77796",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -476,7 +476,7 @@ archive/issue_comments_077798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8589",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8589#issuecomment-77798",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -544,7 +544,7 @@ archive/issue_comments_077800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8589",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8589#issuecomment-77800",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -628,16 +628,16 @@ Attachment [trac_8589_feature_group_algebras_vf.2.patch](tarball://root/attachme
 archive/issue_comments_077804.json:
 ```json
 {
-    "body": "Attachment [trac_8589_feature_group_algebras_vf.patch](tarball://root/attachments/some-uuid/ticket8589/trac_8589_feature_group_algebras_vf.patch) by jdemeyer created at 2010-10-23 11:58:11\n\nWhich of the patches should be applied?",
+    "body": "Attachment [trac_8589_feature_group_algebras_vf.patch](tarball://root/attachments/some-uuid/ticket8589/trac_8589_feature_group_algebras_vf.patch) by @jdemeyer created at 2010-10-23 11:58:11\n\nWhich of the patches should be applied?",
     "created_at": "2010-10-23T11:58:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8589",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8589#issuecomment-77804",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [trac_8589_feature_group_algebras_vf.patch](tarball://root/attachments/some-uuid/ticket8589/trac_8589_feature_group_algebras_vf.patch) by jdemeyer created at 2010-10-23 11:58:11
+Attachment [trac_8589_feature_group_algebras_vf.patch](tarball://root/attachments/some-uuid/ticket8589/trac_8589_feature_group_algebras_vf.patch) by @jdemeyer created at 2010-10-23 11:58:11
 
 Which of the patches should be applied?
 
@@ -653,7 +653,7 @@ archive/issue_comments_077805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8589",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8589#issuecomment-77805",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -725,7 +725,7 @@ archive/issue_comments_077809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8589",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8589#issuecomment-77809",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -743,7 +743,7 @@ archive/issue_comments_077810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8589",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8589#issuecomment-77810",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

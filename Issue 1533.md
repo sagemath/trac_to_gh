@@ -3,7 +3,7 @@
 archive/issues_001533.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe java3d code (with the associated, rather large) Sun jar files is now duplicated in extcode and a java3d spkg. The new code from #1473 needs to be merged into the spkg, which installs files in $SAGE_LOCAL/java and the notebook/command line should use the files from there (not extcode). \n\nIssue created by migration from https://trac.sagemath.org/ticket/1533\n\n",
+    "body": "Assignee: @williamstein\n\nThe java3d code (with the associated, rather large) Sun jar files is now duplicated in extcode and a java3d spkg. The new code from #1473 needs to be merged into the spkg, which installs files in $SAGE_LOCAL/java and the notebook/command line should use the files from there (not extcode). \n\nIssue created by migration from https://trac.sagemath.org/ticket/1533\n\n",
     "created_at": "2007-12-16T07:19:52Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001533.json:
     "title": "Finish converting java3d to an spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1533",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The java3d code (with the associated, rather large) Sun jar files is now duplicated in extcode and a java3d spkg. The new code from #1473 needs to be merged into the spkg, which installs files in $SAGE_LOCAL/java and the notebook/command line should use the files from there (not extcode). 
 
@@ -37,7 +37,7 @@ archive/issue_comments_009785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1533#issuecomment-9785",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to assigned.
 archive/issue_comments_009786.json:
 ```json
 {
-    "body": "Changing assignee from was to robertwb.",
+    "body": "Changing assignee from @williamstein to @robertwb.",
     "created_at": "2007-12-16T07:22:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1533#issuecomment-9786",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from was to robertwb.
+Changing assignee from @williamstein to @robertwb.
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_009787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1533#issuecomment-9787",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -86,16 +86,16 @@ New spkg up at http://sage.math.washington.edu/home/robertwb/spkgs/
 archive/issue_comments_009788.json:
 ```json
 {
-    "body": "Attachment [java3d-1533.diff](tarball://root/attachments/some-uuid/ticket1533/java3d-1533.diff) by robertwb created at 2007-12-16 08:02:27",
+    "body": "Attachment [java3d-1533.diff](tarball://root/attachments/some-uuid/ticket1533/java3d-1533.diff) by @robertwb created at 2007-12-16 08:02:27",
     "created_at": "2007-12-16T08:02:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1533#issuecomment-9788",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [java3d-1533.diff](tarball://root/attachments/some-uuid/ticket1533/java3d-1533.diff) by robertwb created at 2007-12-16 08:02:27
+Attachment [java3d-1533.diff](tarball://root/attachments/some-uuid/ticket1533/java3d-1533.diff) by @robertwb created at 2007-12-16 08:02:27
 
 
 
@@ -109,7 +109,7 @@ archive/issue_comments_009789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1533#issuecomment-9789",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_009790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1533#issuecomment-9790",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

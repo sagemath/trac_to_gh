@@ -3,7 +3,7 @@
 archive/issues_004614.json:
 ```json
 {
-    "body": "Assignee: was\n\nAs the title says. Also see the discussion at \n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/f7039a71479c47c7\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4614\n\n",
+    "body": "Assignee: @williamstein\n\nAs the title says. Also see the discussion at \n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/f7039a71479c47c7\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4614\n\n",
     "created_at": "2008-11-25T10:44:16Z",
     "labels": [
         "website/wiki",
@@ -17,7 +17,7 @@ archive/issues_004614.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 As the title says. Also see the discussion at 
 
@@ -43,7 +43,7 @@ archive/issue_comments_034640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4614#issuecomment-34640",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

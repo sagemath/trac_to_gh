@@ -120,7 +120,7 @@ archive/issue_comments_095191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9735",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9735#issuecomment-95191",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -133,16 +133,16 @@ Changing status from new to needs_review.
 archive/issue_comments_095192.json:
 ```json
 {
-    "body": "Attachment [trac_9735-chmm-noise.patch](tarball://root/attachments/some-uuid/ticket9735/trac_9735-chmm-noise.patch) by jhpalmieri created at 2010-08-12 22:04:05\n\nHere's a patch.  This fixes the problem for me on fulvia, and test still pass on sage.math (for example).",
+    "body": "Attachment [trac_9735-chmm-noise.patch](tarball://root/attachments/some-uuid/ticket9735/trac_9735-chmm-noise.patch) by @jhpalmieri created at 2010-08-12 22:04:05\n\nHere's a patch.  This fixes the problem for me on fulvia, and test still pass on sage.math (for example).",
     "created_at": "2010-08-12T22:04:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9735",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9735#issuecomment-95192",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_9735-chmm-noise.patch](tarball://root/attachments/some-uuid/ticket9735/trac_9735-chmm-noise.patch) by jhpalmieri created at 2010-08-12 22:04:05
+Attachment [trac_9735-chmm-noise.patch](tarball://root/attachments/some-uuid/ticket9735/trac_9735-chmm-noise.patch) by @jhpalmieri created at 2010-08-12 22:04:05
 
 Here's a patch.  This fixes the problem for me on fulvia, and test still pass on sage.math (for example).
 
@@ -247,7 +247,7 @@ archive/issue_comments_095195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9735",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9735#issuecomment-95195",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_095196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9735",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9735#issuecomment-95196",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_095197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9735",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9735#issuecomment-95197",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

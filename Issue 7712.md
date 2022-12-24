@@ -3,7 +3,7 @@
 archive/issues_007712.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  kohel\n\nConsider the following example:\n\n```\nsage: P.<y,z> = PolynomialRing(RealIntervalField(2))\nsage: Q.<x> = PolynomialRing(P)\nsage: C = (y-x)^3\nsage: C(y/2)\n0\n```\n\nI do not understand why the result is 0. In fact there are two\nerrors:\n(i) the result is a polynomial of degree 3 in y, thus y**3 should appear\n(ii) the result should \"contain\" the exact result which is 0.125*y**3, thus it should be c*y**3 where c is an interval containing\n0.125. Compare the following with a precision of 10 bits:\n\n```\nsage: P.<y,z> = PolynomialRing(RealIntervalField(10))\nsage: Q.<x> = PolynomialRing(P)\nsage: C = (y-x)^3\nsage: C(y/2)\n0.12500?*y^3\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7712\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  kohel\n\nConsider the following example:\n\n```\nsage: P.<y,z> = PolynomialRing(RealIntervalField(2))\nsage: Q.<x> = PolynomialRing(P)\nsage: C = (y-x)^3\nsage: C(y/2)\n0\n```\n\nI do not understand why the result is 0. In fact there are two\nerrors:\n(i) the result is a polynomial of degree 3 in y, thus y**3 should appear\n(ii) the result should \"contain\" the exact result which is 0.125*y**3, thus it should be c*y**3 where c is an interval containing\n0.125. Compare the following with a precision of 10 bits:\n\n```\nsage: P.<y,z> = PolynomialRing(RealIntervalField(10))\nsage: Q.<x> = PolynomialRing(P)\nsage: C = (y-x)^3\nsage: C(y/2)\n0.12500?*y^3\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7712\n\n",
     "created_at": "2009-12-16T13:01:54Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_007712.json:
     "title": "error in polynomial substitution with interval coefficients",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7712",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 CC:  kohel
 
@@ -91,7 +91,7 @@ archive/issue_comments_066228.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66228",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_066229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66229",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_066230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66230",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_066231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66231",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_066233.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66233",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_066235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66235",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -375,7 +375,7 @@ archive/issue_comments_066237.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66237",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -462,7 +462,7 @@ archive/issue_comments_066241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66241",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -482,7 +482,7 @@ archive/issue_comments_066242.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66242",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -516,7 +516,7 @@ archive/issue_comments_066243.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66243",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -534,7 +534,7 @@ archive/issue_comments_066244.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66244",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

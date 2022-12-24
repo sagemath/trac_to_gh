@@ -14,7 +14,7 @@ archive/issues_008022.json:
     "title": "ref manual for 4.3.1: fix warning about misc/attach.rst",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8022",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: mvngu
@@ -43,7 +43,7 @@ archive/issue_comments_070091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8022",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8022#issuecomment-70091",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_070092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8022",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8022#issuecomment-70092",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_070093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8022",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8022#issuecomment-70093",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_070094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8022",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8022#issuecomment-70094",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

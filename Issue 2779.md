@@ -68,7 +68,7 @@ archive/issue_comments_019086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2779#issuecomment-19086",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_019087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2779#issuecomment-19087",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_019088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2779#issuecomment-19088",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_019089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2779#issuecomment-19089",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -143,16 +143,16 @@ Outputs a clearer error message (see comment)
 archive/issue_comments_019090.json:
 ```json
 {
-    "body": "Attachment [trac_2779-sagenb-error-message.patch](tarball://root/attachments/some-uuid/ticket2779/trac_2779-sagenb-error-message.patch) by wjp created at 2010-01-17 19:32:13",
+    "body": "Attachment [trac_2779-sagenb-error-message.patch](tarball://root/attachments/some-uuid/ticket2779/trac_2779-sagenb-error-message.patch) by @wjp created at 2010-01-17 19:32:13",
     "created_at": "2010-01-17T19:32:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2779#issuecomment-19090",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [trac_2779-sagenb-error-message.patch](tarball://root/attachments/some-uuid/ticket2779/trac_2779-sagenb-error-message.patch) by wjp created at 2010-01-17 19:32:13
+Attachment [trac_2779-sagenb-error-message.patch](tarball://root/attachments/some-uuid/ticket2779/trac_2779-sagenb-error-message.patch) by @wjp created at 2010-01-17 19:32:13
 
 
 
@@ -161,16 +161,16 @@ Attachment [trac_2779-sagenb-error-message.patch](tarball://root/attachments/som
 archive/issue_comments_019091.json:
 ```json
 {
-    "body": "Attachment [2779_2_banner.patch](tarball://root/attachments/some-uuid/ticket2779/2779_2_banner.patch) by wjp created at 2010-01-17 19:38:13\n\nPositive review for Tim's patch. It works great for me.\n\nI've added a second minor patch (to be applied after `trac_2779-sagenb-error-message.patch`) that moves displaying the \"Please open your browser\" banner to below the check Tim added.",
+    "body": "Attachment [2779_2_banner.patch](tarball://root/attachments/some-uuid/ticket2779/2779_2_banner.patch) by @wjp created at 2010-01-17 19:38:13\n\nPositive review for Tim's patch. It works great for me.\n\nI've added a second minor patch (to be applied after `trac_2779-sagenb-error-message.patch`) that moves displaying the \"Please open your browser\" banner to below the check Tim added.",
     "created_at": "2010-01-17T19:38:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2779#issuecomment-19091",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [2779_2_banner.patch](tarball://root/attachments/some-uuid/ticket2779/2779_2_banner.patch) by wjp created at 2010-01-17 19:38:13
+Attachment [2779_2_banner.patch](tarball://root/attachments/some-uuid/ticket2779/2779_2_banner.patch) by @wjp created at 2010-01-17 19:38:13
 
 Positive review for Tim's patch. It works great for me.
 
@@ -188,7 +188,7 @@ archive/issue_comments_019092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2779#issuecomment-19092",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_019093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2779#issuecomment-19093",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_019094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2779#issuecomment-19094",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

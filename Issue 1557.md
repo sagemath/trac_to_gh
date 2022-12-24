@@ -14,7 +14,7 @@ archive/issues_001557.json:
     "title": "notebook -- usability improvement after uploading file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1557",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -74,7 +74,7 @@ archive/issue_comments_009924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1557#issuecomment-9924",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -87,16 +87,16 @@ I moved Ted's comment to a new ticket: #3151.  Since it has nothing to do with t
 archive/issue_comments_009925.json:
 ```json
 {
-    "body": "Attachment [sage-1557.patch](tarball://root/attachments/some-uuid/ticket1557/sage-1557.patch) by was created at 2008-05-10 21:13:44",
+    "body": "Attachment [sage-1557.patch](tarball://root/attachments/some-uuid/ticket1557/sage-1557.patch) by @williamstein created at 2008-05-10 21:13:44",
     "created_at": "2008-05-10T21:13:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1557#issuecomment-9925",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-1557.patch](tarball://root/attachments/some-uuid/ticket1557/sage-1557.patch) by was created at 2008-05-10 21:13:44
+Attachment [sage-1557.patch](tarball://root/attachments/some-uuid/ticket1557/sage-1557.patch) by @williamstein created at 2008-05-10 21:13:44
 
 
 
@@ -110,7 +110,7 @@ archive/issue_comments_009926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1557#issuecomment-9926",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_009927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1557#issuecomment-9927",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008370.json:
 ```json
 {
-    "body": "Assignee: mmezzarobba\n\nCC:  abmasse\n\ntour_functions.rst (added by #5463) is missing from the French translation of the tutorial\n\nIssue created by migration from https://trac.sagemath.org/ticket/8370\n\n",
+    "body": "Assignee: @mezzarobba\n\nCC:  abmasse\n\ntour_functions.rst (added by #5463) is missing from the French translation of the tutorial\n\nIssue created by migration from https://trac.sagemath.org/ticket/8370\n\n",
     "created_at": "2010-02-25T23:00:17Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_008370.json:
     "title": "Add tour_functions to the French tutorial (cf. #5463)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8370",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
-Assignee: mmezzarobba
+Assignee: @mezzarobba
 
 CC:  abmasse
 
@@ -39,7 +39,7 @@ archive/issue_comments_074815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8370#issuecomment-74815",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to needs_review.
 archive/issue_comments_074816.json:
 ```json
 {
-    "body": "Attachment [trac_8370_tour_functions_french.patch](tarball://root/attachments/some-uuid/ticket8370/trac_8370_tour_functions_french.patch) by mmezzarobba created at 2010-02-27 09:20:38",
+    "body": "Attachment [trac_8370_tour_functions_french.patch](tarball://root/attachments/some-uuid/ticket8370/trac_8370_tour_functions_french.patch) by @mezzarobba created at 2010-02-27 09:20:38",
     "created_at": "2010-02-27T09:20:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8370#issuecomment-74816",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
-Attachment [trac_8370_tour_functions_french.patch](tarball://root/attachments/some-uuid/ticket8370/trac_8370_tour_functions_french.patch) by mmezzarobba created at 2010-02-27 09:20:38
+Attachment [trac_8370_tour_functions_french.patch](tarball://root/attachments/some-uuid/ticket8370/trac_8370_tour_functions_french.patch) by @mezzarobba created at 2010-02-27 09:20:38
 
 
 
@@ -190,7 +190,7 @@ archive/issue_comments_074822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8370#issuecomment-74822",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_074823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8370#issuecomment-74823",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -278,7 +278,7 @@ archive/issue_comments_074825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8370#issuecomment-74825",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -352,7 +352,7 @@ archive/issue_comments_074828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8370#issuecomment-74828",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -392,7 +392,7 @@ archive/issue_comments_074830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8370#issuecomment-74830",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007099.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  kcrisman\n\n\n```\nsage: C = ComplexField(1000)\nsage: C(2+I).gamma_inc(C(3+I))\n0.1215156446645086956511068454478419198494520969688892364501953125000000\\\n000000000000000000000000000000000000000000000000000000000000000000000000\\\n000000000000000000000000000000000000000000000000000000000000000000000000\\\n000000000000000000000000000000000000000000000000000000000000000000000000\\\n00000000000000 +\n0.1015339090798260332775427433604775728781532961875200271606445312500000\\\n000000000000000000000000000000000000000000000000000000000000000000000000\\\n000000000000000000000000000000000000000000000000000000000000000000000000\\\n000000000000000000000000000000000000000000000000000000000000000000000000\\\n00000000000000*I\n```\n\n\nWhat's with all the zeros?   Same bad behavior for higher precision and any other random input.  This is undoubtedly the typical mistake of not setting the pari precision correctly, etc., etc. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7099\n\n",
+    "body": "Assignee: jkantor\n\nCC:  @kcrisman\n\n\n```\nsage: C = ComplexField(1000)\nsage: C(2+I).gamma_inc(C(3+I))\n0.1215156446645086956511068454478419198494520969688892364501953125000000\\\n000000000000000000000000000000000000000000000000000000000000000000000000\\\n000000000000000000000000000000000000000000000000000000000000000000000000\\\n000000000000000000000000000000000000000000000000000000000000000000000000\\\n00000000000000 +\n0.1015339090798260332775427433604775728781532961875200271606445312500000\\\n000000000000000000000000000000000000000000000000000000000000000000000000\\\n000000000000000000000000000000000000000000000000000000000000000000000000\\\n000000000000000000000000000000000000000000000000000000000000000000000000\\\n00000000000000*I\n```\n\n\nWhat's with all the zeros?   Same bad behavior for higher precision and any other random input.  This is undoubtedly the typical mistake of not setting the pari precision correctly, etc., etc. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7099\n\n",
     "created_at": "2009-10-02T18:58:08Z",
     "labels": [
         "numerical",
@@ -14,12 +14,12 @@ archive/issues_007099.json:
     "title": "serious incomplete gamma function precision bugs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7099",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jkantor
 
-CC:  kcrisman
+CC:  @kcrisman
 
 
 ```
@@ -56,7 +56,7 @@ archive/issue_comments_058742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7099#issuecomment-58742",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_058743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7099#issuecomment-58743",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_058744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7099#issuecomment-58744",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_058745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7099#issuecomment-58745",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_058747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7099#issuecomment-58747",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_058748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7099#issuecomment-58748",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_058749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7099#issuecomment-58749",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_058751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7099#issuecomment-58751",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_058752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7099#issuecomment-58752",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_058753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7099#issuecomment-58753",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_058754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7099#issuecomment-58754",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -326,7 +326,7 @@ archive/issue_comments_058755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7099#issuecomment-58755",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -352,7 +352,7 @@ archive/issue_comments_058756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7099#issuecomment-58756",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_058757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7099#issuecomment-58757",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -396,7 +396,7 @@ archive/issue_comments_058758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7099#issuecomment-58758",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -422,7 +422,7 @@ archive/issue_comments_058759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7099#issuecomment-58759",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -440,7 +440,7 @@ archive/issue_comments_058760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7099#issuecomment-58760",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -458,7 +458,7 @@ archive/issue_comments_058761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7099#issuecomment-58761",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -506,7 +506,7 @@ archive/issue_comments_058762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7099#issuecomment-58762",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -542,7 +542,7 @@ archive/issue_comments_058764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7099#issuecomment-58764",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -560,7 +560,7 @@ archive/issue_comments_058765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7099#issuecomment-58765",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -578,7 +578,7 @@ archive/issue_comments_058766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7099#issuecomment-58766",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

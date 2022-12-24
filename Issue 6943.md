@@ -3,7 +3,7 @@
 archive/issues_006943.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  was craigcitro rlm\n\nThe following should work:\n\n\n```\n@parallel\n@cached_function\ndef foo(x):\n    return x+1\n```\n\n\nhowever, when we attempt to evaluate foo...\n\n\n```\nsage: for k in foo(range(200)):\n...       print k\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/boothby/.sage/sage_notebook/worksheets/admin/69/code/995.py\", line 7, in <module>\n    for k in foo(range(_sage_const_200 )):\\u000a    print k\n  File \"\", line 1, in <module>\n    \n  File \"/scratch/boothby/sage/local/lib/python2.6/site-packages/sage/parallel/multiprocessing.py\", line 63, in parallel_iter\n    fp = pickle_function(f)\n  File \"fpickle.pyx\", line 60, in sage.misc.fpickle.pickle_function (sage/misc/fpickle.c:746)\nAttributeError: 'CachedFunction' object has no attribute 'func_code'\n```\n\n\nIf any callable object is picklable, it should work with the parallel decorator.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6943\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein @craigcitro @rlmill\n\nThe following should work:\n\n\n```\n@parallel\n@cached_function\ndef foo(x):\n    return x+1\n```\n\n\nhowever, when we attempt to evaluate foo...\n\n\n```\nsage: for k in foo(range(200)):\n...       print k\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/boothby/.sage/sage_notebook/worksheets/admin/69/code/995.py\", line 7, in <module>\n    for k in foo(range(_sage_const_200 )):\\u000a    print k\n  File \"\", line 1, in <module>\n    \n  File \"/scratch/boothby/sage/local/lib/python2.6/site-packages/sage/parallel/multiprocessing.py\", line 63, in parallel_iter\n    fp = pickle_function(f)\n  File \"fpickle.pyx\", line 60, in sage.misc.fpickle.pickle_function (sage/misc/fpickle.c:746)\nAttributeError: 'CachedFunction' object has no attribute 'func_code'\n```\n\n\nIf any callable object is picklable, it should work with the parallel decorator.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6943\n\n",
     "created_at": "2009-09-16T02:07:16Z",
     "labels": [
         "misc",
@@ -19,7 +19,7 @@ archive/issues_006943.json:
 ```
 Assignee: boothby
 
-CC:  was craigcitro rlm
+CC:  @williamstein @craigcitro @rlmill
 
 The following should work:
 
@@ -100,16 +100,16 @@ Attachment [6943-parallel-improvements.patch](tarball://root/attachments/some-uu
 archive/issue_comments_057412.json:
 ```json
 {
-    "body": "Attachment [6943-parallel-improvements-ref.patch](tarball://root/attachments/some-uuid/ticket6943/6943-parallel-improvements-ref.patch) by timdumol created at 2009-11-30 16:49:08\n\nRebased on referee patch of #6927. Depends on #6927. Apply this patch only",
+    "body": "Attachment [6943-parallel-improvements-ref.patch](tarball://root/attachments/some-uuid/ticket6943/6943-parallel-improvements-ref.patch) by @TimDumol created at 2009-11-30 16:49:08\n\nRebased on referee patch of #6927. Depends on #6927. Apply this patch only",
     "created_at": "2009-11-30T16:49:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6943#issuecomment-57412",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [6943-parallel-improvements-ref.patch](tarball://root/attachments/some-uuid/ticket6943/6943-parallel-improvements-ref.patch) by timdumol created at 2009-11-30 16:49:08
+Attachment [6943-parallel-improvements-ref.patch](tarball://root/attachments/some-uuid/ticket6943/6943-parallel-improvements-ref.patch) by @TimDumol created at 2009-11-30 16:49:08
 
 Rebased on referee patch of #6927. Depends on #6927. Apply this patch only
 
@@ -125,7 +125,7 @@ archive/issue_comments_057413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6943#issuecomment-57413",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_057414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6943#issuecomment-57414",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_057415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6943#issuecomment-57415",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

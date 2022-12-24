@@ -3,7 +3,7 @@
 archive/issues_008506.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nThis ends up affecting, in particular, hashing of elliptic curves and their point sets. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8506\n\n",
+    "body": "Assignee: @JohnCremona\n\nThis ends up affecting, in particular, hashing of elliptic curves and their point sets. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8506\n\n",
     "created_at": "2010-03-12T01:39:09Z",
     "labels": [
         "elliptic curves",
@@ -14,10 +14,10 @@ archive/issues_008506.json:
     "title": "Inefficient hash for homsets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8506",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 This ends up affecting, in particular, hashing of elliptic curves and their point sets. 
 
@@ -37,7 +37,7 @@ archive/issue_comments_076805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8506#issuecomment-76805",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_076806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8506#issuecomment-76806",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing status from new to needs_review.
 archive/issue_comments_076807.json:
 ```json
 {
-    "body": "Attachment [8506-homset-hashing.patch](tarball://root/attachments/some-uuid/ticket8506/8506-homset-hashing.patch) by robertwb created at 2010-03-12 02:36:46",
+    "body": "Attachment [8506-homset-hashing.patch](tarball://root/attachments/some-uuid/ticket8506/8506-homset-hashing.patch) by @robertwb created at 2010-03-12 02:36:46",
     "created_at": "2010-03-12T02:36:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8506#issuecomment-76807",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [8506-homset-hashing.patch](tarball://root/attachments/some-uuid/ticket8506/8506-homset-hashing.patch) by robertwb created at 2010-03-12 02:36:46
+Attachment [8506-homset-hashing.patch](tarball://root/attachments/some-uuid/ticket8506/8506-homset-hashing.patch) by @robertwb created at 2010-03-12 02:36:46
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_076808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8506#issuecomment-76808",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_076809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8506#issuecomment-76809",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_076810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8506#issuecomment-76810",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_076811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8506#issuecomment-76811",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_076812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8506#issuecomment-76812",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -221,16 +221,16 @@ Looks like this is once again a case where the alpha differs enough from the lat
 archive/issue_comments_076813.json:
 ```json
 {
-    "body": "Attachment [8506-homset-hashing-take2.patch](tarball://root/attachments/some-uuid/ticket8506/8506-homset-hashing-take2.patch) by robertwb created at 2010-03-15 19:47:13",
+    "body": "Attachment [8506-homset-hashing-take2.patch](tarball://root/attachments/some-uuid/ticket8506/8506-homset-hashing-take2.patch) by @robertwb created at 2010-03-15 19:47:13",
     "created_at": "2010-03-15T19:47:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8506#issuecomment-76813",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [8506-homset-hashing-take2.patch](tarball://root/attachments/some-uuid/ticket8506/8506-homset-hashing-take2.patch) by robertwb created at 2010-03-15 19:47:13
+Attachment [8506-homset-hashing-take2.patch](tarball://root/attachments/some-uuid/ticket8506/8506-homset-hashing-take2.patch) by @robertwb created at 2010-03-15 19:47:13
 
 
 
@@ -244,7 +244,7 @@ archive/issue_comments_076814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8506#issuecomment-76814",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_076815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8506#issuecomment-76815",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_076816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8506#issuecomment-76816",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_076817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8506#issuecomment-76817",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -319,7 +319,7 @@ archive/issue_comments_076818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8506#issuecomment-76818",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -337,7 +337,7 @@ archive/issue_comments_076819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8506#issuecomment-76819",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -355,7 +355,7 @@ archive/issue_comments_076820.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8506#issuecomment-76820",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

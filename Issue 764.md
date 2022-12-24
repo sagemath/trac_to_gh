@@ -3,7 +3,7 @@
 archive/issues_000764.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\n\nsage: type(PolynomialRing(ZZ, 1, 'x'))\n<class 'sage.rings.polynomial.multi_polynomial_ring.MPolynomialRing_polydict_domain'>\n\nsage: type(PolynomialRing(ZZ, 'x'))\n<class 'sage.rings.polynomial.polynomial_ring.PolynomialRing_integral_domain'>\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/764\n\n",
+    "body": "Assignee: @mwhansen\n\n\nsage: type(PolynomialRing(ZZ, 1, 'x'))\n<class 'sage.rings.polynomial.multi_polynomial_ring.MPolynomialRing_polydict_domain'>\n\nsage: type(PolynomialRing(ZZ, 'x'))\n<class 'sage.rings.polynomial.polynomial_ring.PolynomialRing_integral_domain'>\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/764\n\n",
     "created_at": "2007-09-30T07:11:26Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_000764.json:
     "title": "PolynomialRing returns an MPolynomialRing when the number of variables is explicitly set to be 1.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/764",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 
 sage: type(PolynomialRing(ZZ, 1, 'x'))
@@ -43,7 +43,7 @@ archive/issue_comments_004521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/764#issuecomment-4521",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_004522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/764#issuecomment-4522",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_004523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/764#issuecomment-4523",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -108,16 +108,16 @@ Patches posted to change the repr of multivariate polynomials rings.  -testall p
 archive/issue_comments_004524.json:
 ```json
 {
-    "body": "Attachment [764.patch](tarball://root/attachments/some-uuid/ticket764/764.patch) by mhansen created at 2007-09-30 18:23:02",
+    "body": "Attachment [764.patch](tarball://root/attachments/some-uuid/ticket764/764.patch) by @mwhansen created at 2007-09-30 18:23:02",
     "created_at": "2007-09-30T18:23:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/764#issuecomment-4524",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [764.patch](tarball://root/attachments/some-uuid/ticket764/764.patch) by mhansen created at 2007-09-30 18:23:02
+Attachment [764.patch](tarball://root/attachments/some-uuid/ticket764/764.patch) by @mwhansen created at 2007-09-30 18:23:02
 
 
 
@@ -126,16 +126,16 @@ Attachment [764.patch](tarball://root/attachments/some-uuid/ticket764/764.patch)
 archive/issue_comments_004525.json:
 ```json
 {
-    "body": "Attachment [const-tut.patch](tarball://root/attachments/some-uuid/ticket764/const-tut.patch) by mhansen created at 2007-09-30 18:23:18",
+    "body": "Attachment [const-tut.patch](tarball://root/attachments/some-uuid/ticket764/const-tut.patch) by @mwhansen created at 2007-09-30 18:23:18",
     "created_at": "2007-09-30T18:23:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/764#issuecomment-4525",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [const-tut.patch](tarball://root/attachments/some-uuid/ticket764/const-tut.patch) by mhansen created at 2007-09-30 18:23:18
+Attachment [const-tut.patch](tarball://root/attachments/some-uuid/ticket764/const-tut.patch) by @mwhansen created at 2007-09-30 18:23:18
 
 
 
@@ -149,7 +149,7 @@ archive/issue_comments_004526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/764#issuecomment-4526",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_004502.json:
     "title": "numerical noise in matrix_double_dense on intel mac os X 10.5: inverting a singular matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4502",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: somebody
@@ -74,7 +74,7 @@ archive/issue_comments_033343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4502#issuecomment-33343",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_033346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4502#issuecomment-33346",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -171,16 +171,16 @@ I don't think this fix is worth the performance penalty, which for me looks like
 archive/issue_comments_033348.json:
 ```json
 {
-    "body": "Attachment [trac_4502.patch](tarball://root/attachments/some-uuid/ticket4502/trac_4502.patch) by jason created at 2008-11-18 16:59:41\n\ndoctest changed in trac_4502.patch.  Apply instead of previous patch.",
+    "body": "Attachment [trac_4502.patch](tarball://root/attachments/some-uuid/ticket4502/trac_4502.patch) by @jasongrout created at 2008-11-18 16:59:41\n\ndoctest changed in trac_4502.patch.  Apply instead of previous patch.",
     "created_at": "2008-11-18T16:59:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4502#issuecomment-33348",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_4502.patch](tarball://root/attachments/some-uuid/ticket4502/trac_4502.patch) by jason created at 2008-11-18 16:59:41
+Attachment [trac_4502.patch](tarball://root/attachments/some-uuid/ticket4502/trac_4502.patch) by @jasongrout created at 2008-11-18 16:59:41
 
 doctest changed in trac_4502.patch.  Apply instead of previous patch.
 

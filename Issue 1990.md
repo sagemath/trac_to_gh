@@ -14,7 +14,7 @@ archive/issues_001990.json:
     "title": "ZZ.random_element() -- never returns 0 and typos/nonsense in docstrings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1990",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -39,7 +39,7 @@ archive/issue_comments_012886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1990#issuecomment-12886",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_012887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1990#issuecomment-12887",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_012888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1990#issuecomment-12888",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_012890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1990#issuecomment-12890",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

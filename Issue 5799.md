@@ -14,7 +14,7 @@ archive/issues_005799.json:
     "title": "[with patch, needs review] jsMath, favicon, and logo for live, static, and offline docs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5799",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: tba
@@ -104,16 +104,16 @@ Michael
 archive/issue_comments_045493.json:
 ```json
 {
-    "body": "Attachment [trac_5799_ext_sageicon.patch](tarball://root/attachments/some-uuid/ticket5799/trac_5799_ext_sageicon.patch) by mpatel created at 2009-04-16 07:50:07",
+    "body": "Attachment [trac_5799_ext_sageicon.patch](tarball://root/attachments/some-uuid/ticket5799/trac_5799_ext_sageicon.patch) by @qed777 created at 2009-04-16 07:50:07",
     "created_at": "2009-04-16T07:50:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5799#issuecomment-45493",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_5799_ext_sageicon.patch](tarball://root/attachments/some-uuid/ticket5799/trac_5799_ext_sageicon.patch) by mpatel created at 2009-04-16 07:50:07
+Attachment [trac_5799_ext_sageicon.patch](tarball://root/attachments/some-uuid/ticket5799/trac_5799_ext_sageicon.patch) by @qed777 created at 2009-04-16 07:50:07
 
 
 
@@ -127,7 +127,7 @@ archive/issue_comments_045494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5799#issuecomment-45494",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -147,16 +147,16 @@ I'm about to attach an alternative to trac_5799_sage_jsmath_doc.patch.
 archive/issue_comments_045495.json:
 ```json
 {
-    "body": "Attachment [trac_5799_sage_jsmath_doc_alt.patch](tarball://root/attachments/some-uuid/ticket5799/trac_5799_sage_jsmath_doc_alt.patch) by mpatel created at 2009-04-16 08:23:42\n\nSomewhat less efficient alternative to trac_5799_sage_jsmath_doc.patch.",
+    "body": "Attachment [trac_5799_sage_jsmath_doc_alt.patch](tarball://root/attachments/some-uuid/ticket5799/trac_5799_sage_jsmath_doc_alt.patch) by @qed777 created at 2009-04-16 08:23:42\n\nSomewhat less efficient alternative to trac_5799_sage_jsmath_doc.patch.",
     "created_at": "2009-04-16T08:23:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5799#issuecomment-45495",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_5799_sage_jsmath_doc_alt.patch](tarball://root/attachments/some-uuid/ticket5799/trac_5799_sage_jsmath_doc_alt.patch) by mpatel created at 2009-04-16 08:23:42
+Attachment [trac_5799_sage_jsmath_doc_alt.patch](tarball://root/attachments/some-uuid/ticket5799/trac_5799_sage_jsmath_doc_alt.patch) by @qed777 created at 2009-04-16 08:23:42
 
 Somewhat less efficient alternative to trac_5799_sage_jsmath_doc.patch.
 
@@ -212,7 +212,7 @@ archive/issue_comments_045498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5799#issuecomment-45498",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -225,16 +225,16 @@ Better cross-browser favicon support. Goes with trac_5799_sage_jsmath_doc_v2.pat
 archive/issue_comments_045499.json:
 ```json
 {
-    "body": "Attachment [trac_5799_sage_jsmath_doc_v2.patch](tarball://root/attachments/some-uuid/ticket5799/trac_5799_sage_jsmath_doc_v2.patch) by mpatel created at 2009-06-10 09:26:16\n\nBetter cross-browser favicon support, auto relative paths. Apply trac_5799_ext_icons_v2.patch first.",
+    "body": "Attachment [trac_5799_sage_jsmath_doc_v2.patch](tarball://root/attachments/some-uuid/ticket5799/trac_5799_sage_jsmath_doc_v2.patch) by @qed777 created at 2009-06-10 09:26:16\n\nBetter cross-browser favicon support, auto relative paths. Apply trac_5799_ext_icons_v2.patch first.",
     "created_at": "2009-06-10T09:26:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5799#issuecomment-45499",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_5799_sage_jsmath_doc_v2.patch](tarball://root/attachments/some-uuid/ticket5799/trac_5799_sage_jsmath_doc_v2.patch) by mpatel created at 2009-06-10 09:26:16
+Attachment [trac_5799_sage_jsmath_doc_v2.patch](tarball://root/attachments/some-uuid/ticket5799/trac_5799_sage_jsmath_doc_v2.patch) by @qed777 created at 2009-06-10 09:26:16
 
 Better cross-browser favicon support, auto relative paths. Apply trac_5799_ext_icons_v2.patch first.
 
@@ -250,7 +250,7 @@ archive/issue_comments_045500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5799#issuecomment-45500",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_045501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5799#issuecomment-45501",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_045502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5799#issuecomment-45502",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_045503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5799#issuecomment-45503",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -333,7 +333,7 @@ archive/issue_comments_045504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5799#issuecomment-45504",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -351,7 +351,7 @@ archive/issue_comments_045505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5799#issuecomment-45505",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -425,7 +425,7 @@ archive/issue_comments_045506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5799#issuecomment-45506",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -447,7 +447,7 @@ archive/issue_comments_045507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5799#issuecomment-45507",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -480,7 +480,7 @@ archive/issue_comments_045508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5799#issuecomment-45508",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -498,7 +498,7 @@ archive/issue_comments_045509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5799#issuecomment-45509",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -516,7 +516,7 @@ archive/issue_comments_045510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5799#issuecomment-45510",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -529,16 +529,16 @@ Resolution changed from fixed to
 archive/issue_comments_045511.json:
 ```json
 {
-    "body": "Attachment [trac_5799_manifest.patch](tarball://root/attachments/some-uuid/ticket5799/trac_5799_manifest.patch) by jhpalmieri created at 2009-07-07 19:40:57",
+    "body": "Attachment [trac_5799_manifest.patch](tarball://root/attachments/some-uuid/ticket5799/trac_5799_manifest.patch) by @jhpalmieri created at 2009-07-07 19:40:57",
     "created_at": "2009-07-07T19:40:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5799#issuecomment-45511",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_5799_manifest.patch](tarball://root/attachments/some-uuid/ticket5799/trac_5799_manifest.patch) by jhpalmieri created at 2009-07-07 19:40:57
+Attachment [trac_5799_manifest.patch](tarball://root/attachments/some-uuid/ticket5799/trac_5799_manifest.patch) by @jhpalmieri created at 2009-07-07 19:40:57
 
 
 
@@ -552,7 +552,7 @@ archive/issue_comments_045512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5799#issuecomment-45512",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -570,7 +570,7 @@ archive/issue_comments_045513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5799#issuecomment-45513",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -591,7 +591,7 @@ archive/issue_comments_045514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5799#issuecomment-45514",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -609,7 +609,7 @@ archive/issue_comments_045515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5799#issuecomment-45515",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -627,7 +627,7 @@ archive/issue_comments_045516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5799#issuecomment-45516",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -647,7 +647,7 @@ archive/issue_comments_045517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5799#issuecomment-45517",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -665,7 +665,7 @@ archive/issue_comments_045518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5799#issuecomment-45518",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -686,7 +686,7 @@ archive/issue_comments_045519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5799#issuecomment-45519",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -699,16 +699,16 @@ Attempt to get distutils to preserve symbolic links.
 archive/issue_comments_045520.json:
 ```json
 {
-    "body": "Attachment [trac_5799-redux_setup_py.patch](tarball://root/attachments/some-uuid/ticket5799/trac_5799-redux_setup_py.patch) by mpatel created at 2009-07-21 11:28:30\n\nReplying to [comment:21 rlm]:\n> Replying to [comment:20 mpatel]:\n> > Is it possible to include symbolic links in `MANIFEST.in`?\n> I had wondered this myself. The only way to know for sure is to try it, roll a new source tarball (via `sage -sdist`), install the \"new version,\" and see whether the notebook still works...\nThis [attachment:trac_5799-redux_setup_py.patch patch] alters `setup.py` so that it preserves symlinks.  However, I'm far from convinced that it's the right approach.  Is it possible to identify and copy broken links in Python?  In particular:\n\n* In `sage_findall()`, can we refine or avoid using the exception handler?  Perhaps it's better to use [os.walk()](http://markmail.org/message/dcv4g5b2b4exw64u), but the `os.path.is*()` family actually follows symlinks.\n* Is there a Pythonic analogue of `cp --preserve=links --no-dereference`?\n\nPossible alternatives:\n\n* Make a symlink in some `spkg-install`.\n* Have Mercurial reconstitute the link.",
+    "body": "Attachment [trac_5799-redux_setup_py.patch](tarball://root/attachments/some-uuid/ticket5799/trac_5799-redux_setup_py.patch) by @qed777 created at 2009-07-21 11:28:30\n\nReplying to [comment:21 rlm]:\n> Replying to [comment:20 mpatel]:\n> > Is it possible to include symbolic links in `MANIFEST.in`?\n> I had wondered this myself. The only way to know for sure is to try it, roll a new source tarball (via `sage -sdist`), install the \"new version,\" and see whether the notebook still works...\nThis [attachment:trac_5799-redux_setup_py.patch patch] alters `setup.py` so that it preserves symlinks.  However, I'm far from convinced that it's the right approach.  Is it possible to identify and copy broken links in Python?  In particular:\n\n* In `sage_findall()`, can we refine or avoid using the exception handler?  Perhaps it's better to use [os.walk()](http://markmail.org/message/dcv4g5b2b4exw64u), but the `os.path.is*()` family actually follows symlinks.\n* Is there a Pythonic analogue of `cp --preserve=links --no-dereference`?\n\nPossible alternatives:\n\n* Make a symlink in some `spkg-install`.\n* Have Mercurial reconstitute the link.",
     "created_at": "2009-07-21T11:28:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5799#issuecomment-45520",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_5799-redux_setup_py.patch](tarball://root/attachments/some-uuid/ticket5799/trac_5799-redux_setup_py.patch) by mpatel created at 2009-07-21 11:28:30
+Attachment [trac_5799-redux_setup_py.patch](tarball://root/attachments/some-uuid/ticket5799/trac_5799-redux_setup_py.patch) by @qed777 created at 2009-07-21 11:28:30
 
 Replying to [comment:21 rlm]:
 > Replying to [comment:20 mpatel]:
@@ -736,7 +736,7 @@ archive/issue_comments_045521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5799#issuecomment-45521",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -754,7 +754,7 @@ archive/issue_comments_045522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5799#issuecomment-45522",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007116.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\n\n```\nI think there is a problem in the function\n\n ell_point._line_\n\nwhich is used in _miller_. I don't know if it will necessarily lead to\nincorrect results, since it's a degenerate case...\n\nThe method has form\n\n G._line_(R, Q)\n\nand returns the evaluation of Q at the line through G and R.\n\nThe problem occurs when Q is the point at infinity. In this case, I'm\npretty sure (it's been a while since I've thought about this kind of\nthing) that _line_ should return 0 if the line through G and R is\nvertical, and otherwise it should be undefined. The method is\nreturning an answer that assumes that Q is affine.\n\nWhile I don't have the most recent version (for reasons I won't bore\nyou with) I've checked the latest code on line, and it appears to not\nhave changed from what I have.\n\nI've attached a sample session.\n\n---\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: E = EllipticCurve([GF(17)(-1),GF(17)(0)])\nsage: G = E.random_point(); G\n(7 : 8 : 1)\nsage: minus_G = -G; minus_G\n(7 : 9 : 1)\nsage: G._line_(minus_G, E(0)) # should return 0\n10\nsage: two_G = 2*G; two_G\n(1 : 0 : 1)\nsage: G._line_(two_G, E(0)) # should be undefined/error\n11\nsage:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7116\n\n",
+    "body": "Assignee: @loefflerd\n\n\n```\nI think there is a problem in the function\n\n ell_point._line_\n\nwhich is used in _miller_. I don't know if it will necessarily lead to\nincorrect results, since it's a degenerate case...\n\nThe method has form\n\n G._line_(R, Q)\n\nand returns the evaluation of Q at the line through G and R.\n\nThe problem occurs when Q is the point at infinity. In this case, I'm\npretty sure (it's been a while since I've thought about this kind of\nthing) that _line_ should return 0 if the line through G and R is\nvertical, and otherwise it should be undefined. The method is\nreturning an answer that assumes that Q is affine.\n\nWhile I don't have the most recent version (for reasons I won't bore\nyou with) I've checked the latest code on line, and it appears to not\nhave changed from what I have.\n\nI've attached a sample session.\n\n---\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: E = EllipticCurve([GF(17)(-1),GF(17)(0)])\nsage: G = E.random_point(); G\n(7 : 8 : 1)\nsage: minus_G = -G; minus_G\n(7 : 9 : 1)\nsage: G._line_(minus_G, E(0)) # should return 0\n10\nsage: two_G = 2*G; two_G\n(1 : 0 : 1)\nsage: G._line_(two_G, E(0)) # should be undefined/error\n11\nsage:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7116\n\n",
     "created_at": "2009-10-04T18:34:44Z",
     "labels": [
         "elliptic curves",
@@ -14,10 +14,10 @@ archive/issues_007116.json:
     "title": "Potential bug in elliptic curve pairing code.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7116",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
 
 ```
@@ -81,7 +81,7 @@ archive/issue_comments_058975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7116#issuecomment-58975",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_058976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7116#issuecomment-58976",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -120,16 +120,16 @@ Applies to 3.1.2.rc0
 archive/issue_comments_058977.json:
 ```json
 {
-    "body": "Changing assignee from davidloeffler to cremona.",
+    "body": "Changing assignee from @loefflerd to @JohnCremona.",
     "created_at": "2009-10-04T20:25:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7116#issuecomment-58977",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Changing assignee from davidloeffler to cremona.
+Changing assignee from @loefflerd to @JohnCremona.
 
 
 
@@ -138,16 +138,16 @@ Changing assignee from davidloeffler to cremona.
 archive/issue_comments_058978.json:
 ```json
 {
-    "body": "Attachment [trac_7116-miller_functions.patch](tarball://root/attachments/some-uuid/ticket7116/trac_7116-miller_functions.patch) by cremona created at 2009-10-04 20:25:51\n\nThe patch tests for Q=0 in the functions `_line_` and `_miller_` and raise an error if so.  Doctests added.",
+    "body": "Attachment [trac_7116-miller_functions.patch](tarball://root/attachments/some-uuid/ticket7116/trac_7116-miller_functions.patch) by @JohnCremona created at 2009-10-04 20:25:51\n\nThe patch tests for Q=0 in the functions `_line_` and `_miller_` and raise an error if so.  Doctests added.",
     "created_at": "2009-10-04T20:25:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7116#issuecomment-58978",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_7116-miller_functions.patch](tarball://root/attachments/some-uuid/ticket7116/trac_7116-miller_functions.patch) by cremona created at 2009-10-04 20:25:51
+Attachment [trac_7116-miller_functions.patch](tarball://root/attachments/some-uuid/ticket7116/trac_7116-miller_functions.patch) by @JohnCremona created at 2009-10-04 20:25:51
 
 The patch tests for Q=0 in the functions `_line_` and `_miller_` and raise an error if so.  Doctests added.
 
@@ -163,7 +163,7 @@ archive/issue_comments_058979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7116#issuecomment-58979",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_058980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7116#issuecomment-58980",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_058981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7116#issuecomment-58981",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_058982.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7116#issuecomment-58982",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000799.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n\nI think I may have found a bug.\n\nWhen using Tachyon and defining a texture, the seventh parameter you\ncan set is texfunc.\nIf that value is set to anything but zero, then no picture is\ngenerated.\n\nAs an example:\n\nt = Tachyon(xres=800, yres=600, camera_center=(2,7,4),\nlook_at=(2,0,0), raydepth=24)\nt.light((10,3,4), 1, (1,1,1))\nt.light((10,-3,4), 1, (1,1,1))\nt.texture('black', color=(0,0,0))\nt.texture('mirror', ambient=0.05, diffuse=0.05, specular=.9,\nopacity=1.0, color=(.9,.9,.9))\nt.texture('grey', color=(.8,.8,.8), texfunc=0)\nt.plane((0,0,0),(0,0,1),'grey')\nt.cylinder((0,0,0),(1,0,0),.013,'black')\nt.cylinder((0,0,0),(0,1,0),.013,'black')\nt.sphere((4,-1,1), 1, 'mirror')\nt.save()\n\nThe above produces a nice picture.  If you change to \"texfunc=2\" in\nline 6, then there is no output.\n\nTexfunc should have the following allowed values\n\nValue for TEXFUNC    Mapping and Texture Description\n-----------------\n----------------------------------------------------------------\n     0              No special texture, plain shading\n     1              3D checkerboard function, like a rubik's cube\n     2              Grit Texture, randomized surface color\n     3              3D marble texture, uses object's base color\n     4              3D wood texture, light and dark brown, not very\ngood yet\n     5              3D gradient noise function (can't remember what\nit look like\n     6              Don't remember\n     7              Cylindrical Image Map, requires ppm filename\n     8              Spherical Image Map, requires ppm filename\n     9              Planar Image Map, requires ppm filename\n\nI'm sorry if this is really a bug in Tachyon and not a problem with\nhow Sage talks with Tachyon.  I am just not (yet) skilled enough to\ntell the difference.  I need to figure out how to run Tachyon stand-\nalone and see if the bug still exists.  But, I don't know how yet.\nSo, my apologies if this should be reported to the Tachyon developers.\n```\n\n\nMany thanks for your bug report. \n\nBy the way, even if it is a Tachyon bug, we really want to know about\nit, so we can program around it and/or fix it.\n\nWilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/799\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n\nI think I may have found a bug.\n\nWhen using Tachyon and defining a texture, the seventh parameter you\ncan set is texfunc.\nIf that value is set to anything but zero, then no picture is\ngenerated.\n\nAs an example:\n\nt = Tachyon(xres=800, yres=600, camera_center=(2,7,4),\nlook_at=(2,0,0), raydepth=24)\nt.light((10,3,4), 1, (1,1,1))\nt.light((10,-3,4), 1, (1,1,1))\nt.texture('black', color=(0,0,0))\nt.texture('mirror', ambient=0.05, diffuse=0.05, specular=.9,\nopacity=1.0, color=(.9,.9,.9))\nt.texture('grey', color=(.8,.8,.8), texfunc=0)\nt.plane((0,0,0),(0,0,1),'grey')\nt.cylinder((0,0,0),(1,0,0),.013,'black')\nt.cylinder((0,0,0),(0,1,0),.013,'black')\nt.sphere((4,-1,1), 1, 'mirror')\nt.save()\n\nThe above produces a nice picture.  If you change to \"texfunc=2\" in\nline 6, then there is no output.\n\nTexfunc should have the following allowed values\n\nValue for TEXFUNC    Mapping and Texture Description\n-----------------\n----------------------------------------------------------------\n     0              No special texture, plain shading\n     1              3D checkerboard function, like a rubik's cube\n     2              Grit Texture, randomized surface color\n     3              3D marble texture, uses object's base color\n     4              3D wood texture, light and dark brown, not very\ngood yet\n     5              3D gradient noise function (can't remember what\nit look like\n     6              Don't remember\n     7              Cylindrical Image Map, requires ppm filename\n     8              Spherical Image Map, requires ppm filename\n     9              Planar Image Map, requires ppm filename\n\nI'm sorry if this is really a bug in Tachyon and not a problem with\nhow Sage talks with Tachyon.  I am just not (yet) skilled enough to\ntell the difference.  I need to figure out how to run Tachyon stand-\nalone and see if the bug still exists.  But, I don't know how yet.\nSo, my apologies if this should be reported to the Tachyon developers.\n```\n\n\nMany thanks for your bug report. \n\nBy the way, even if it is a Tachyon bug, we really want to know about\nit, so we can program around it and/or fix it.\n\nWilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/799\n\n",
     "created_at": "2007-10-03T06:25:14Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_000799.json:
     "title": "tachyon bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/799",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -97,7 +97,7 @@ archive/issue_comments_004819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/799#issuecomment-4819",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -157,16 +157,16 @@ This is not evident from the inline help & the interface doesn't complain when i
 archive/issue_comments_004820.json:
 ```json
 {
-    "body": "Attachment [trac799-part1.patch](tarball://root/attachments/some-uuid/ticket799/trac799-part1.patch) by was created at 2007-12-02 06:05:24",
+    "body": "Attachment [trac799-part1.patch](tarball://root/attachments/some-uuid/ticket799/trac799-part1.patch) by @williamstein created at 2007-12-02 06:05:24",
     "created_at": "2007-12-02T06:05:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/799#issuecomment-4820",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac799-part1.patch](tarball://root/attachments/some-uuid/ticket799/trac799-part1.patch) by was created at 2007-12-02 06:05:24
+Attachment [trac799-part1.patch](tarball://root/attachments/some-uuid/ticket799/trac799-part1.patch) by @williamstein created at 2007-12-02 06:05:24
 
 
 
@@ -175,16 +175,16 @@ Attachment [trac799-part1.patch](tarball://root/attachments/some-uuid/ticket799/
 archive/issue_comments_004821.json:
 ```json
 {
-    "body": "Attachment [trac799-part2.patch](tarball://root/attachments/some-uuid/ticket799/trac799-part2.patch) by was created at 2007-12-02 06:09:17",
+    "body": "Attachment [trac799-part2.patch](tarball://root/attachments/some-uuid/ticket799/trac799-part2.patch) by @williamstein created at 2007-12-02 06:09:17",
     "created_at": "2007-12-02T06:09:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/799#issuecomment-4821",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac799-part2.patch](tarball://root/attachments/some-uuid/ticket799/trac799-part2.patch) by was created at 2007-12-02 06:09:17
+Attachment [trac799-part2.patch](tarball://root/attachments/some-uuid/ticket799/trac799-part2.patch) by @williamstein created at 2007-12-02 06:09:17
 
 
 

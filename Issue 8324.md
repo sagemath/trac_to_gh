@@ -3,7 +3,7 @@
 archive/issues_008324.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jhpalmieri\n\nThe module `sage.misc.sageinspect` is missing several recent changes to `sagenb.misc.sageinspect`.\n\nNote: SageNB has its own `sageinspect` so that it can stand alone.\n\nRelated: #2064.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8324\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jhpalmieri\n\nThe module `sage.misc.sageinspect` is missing several recent changes to `sagenb.misc.sageinspect`.\n\nNote: SageNB has its own `sageinspect` so that it can stand alone.\n\nRelated: #2064.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8324\n\n",
     "created_at": "2010-02-22T03:50:36Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_008324.json:
     "title": "Reconcile sage.misc.sageinspect and sagenb.misc.sageinspect",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8324",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jhpalmieri
+CC:  @jhpalmieri
 
 The module `sage.misc.sageinspect` is missing several recent changes to `sagenb.misc.sageinspect`.
 
@@ -43,7 +43,7 @@ archive/issue_comments_073875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8324#issuecomment-73875",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_073876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8324#issuecomment-73876",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -74,16 +74,16 @@ Changing status from new to needs_review.
 archive/issue_comments_073877.json:
 ```json
 {
-    "body": "Attachment [trac_8324-sagenb_sageinspect.patch](tarball://root/attachments/some-uuid/ticket8324/trac_8324-sagenb_sageinspect.patch) by mpatel created at 2010-02-22 04:06:09",
+    "body": "Attachment [trac_8324-sagenb_sageinspect.patch](tarball://root/attachments/some-uuid/ticket8324/trac_8324-sagenb_sageinspect.patch) by @qed777 created at 2010-02-22 04:06:09",
     "created_at": "2010-02-22T04:06:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8324#issuecomment-73877",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8324-sagenb_sageinspect.patch](tarball://root/attachments/some-uuid/ticket8324/trac_8324-sagenb_sageinspect.patch) by mpatel created at 2010-02-22 04:06:09
+Attachment [trac_8324-sagenb_sageinspect.patch](tarball://root/attachments/some-uuid/ticket8324/trac_8324-sagenb_sageinspect.patch) by @qed777 created at 2010-02-22 04:06:09
 
 
 
@@ -97,7 +97,7 @@ archive/issue_comments_073878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8324#issuecomment-73878",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_073879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8324#issuecomment-73879",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_073880.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8324#issuecomment-73880",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_073881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8324#issuecomment-73881",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_073883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8324#issuecomment-73883",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_073884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8324#issuecomment-73884",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_073885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8324#issuecomment-73885",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_073886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8324#issuecomment-73886",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -262,16 +262,16 @@ archive/issue_comments_073886.json:
 archive/issue_comments_073887.json:
 ```json
 {
-    "body": "Attachment [trac_8324-new.patch](tarball://root/attachments/some-uuid/ticket8324/trac_8324-new.patch) by jhpalmieri created at 2010-03-03 22:08:03\n\napply on top of other patch",
+    "body": "Attachment [trac_8324-new.patch](tarball://root/attachments/some-uuid/ticket8324/trac_8324-new.patch) by @jhpalmieri created at 2010-03-03 22:08:03\n\napply on top of other patch",
     "created_at": "2010-03-03T22:08:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8324#issuecomment-73887",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8324-new.patch](tarball://root/attachments/some-uuid/ticket8324/trac_8324-new.patch) by jhpalmieri created at 2010-03-03 22:08:03
+Attachment [trac_8324-new.patch](tarball://root/attachments/some-uuid/ticket8324/trac_8324-new.patch) by @jhpalmieri created at 2010-03-03 22:08:03
 
 apply on top of other patch
 
@@ -287,7 +287,7 @@ archive/issue_comments_073888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8324#issuecomment-73888",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_073889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8324#issuecomment-73889",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

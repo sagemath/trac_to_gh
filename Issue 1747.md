@@ -3,7 +3,7 @@
 archive/issues_001747.json:
 ```json
 {
-    "body": "Assignee: malb\n\nSee attached patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1747\n\n",
+    "body": "Assignee: @malb\n\nSee attached patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1747\n\n",
     "created_at": "2008-01-10T15:14:18Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_001747.json:
     "title": "[with patch, needs review] speed improvement for mq.SR.polynomial_system",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1747",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 See attached patch.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1747
 archive/issue_comments_011033.json:
 ```json
 {
-    "body": "Attachment [sr_speedup.patch](tarball://root/attachments/some-uuid/ticket1747/sr_speedup.patch) by malb created at 2008-01-10 15:14:31",
+    "body": "Attachment [sr_speedup.patch](tarball://root/attachments/some-uuid/ticket1747/sr_speedup.patch) by @malb created at 2008-01-10 15:14:31",
     "created_at": "2008-01-10T15:14:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1747#issuecomment-11033",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [sr_speedup.patch](tarball://root/attachments/some-uuid/ticket1747/sr_speedup.patch) by malb created at 2008-01-10 15:14:31
+Attachment [sr_speedup.patch](tarball://root/attachments/some-uuid/ticket1747/sr_speedup.patch) by @malb created at 2008-01-10 15:14:31
 
 
 

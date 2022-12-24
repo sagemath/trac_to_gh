@@ -3,7 +3,7 @@
 archive/issues_008496.json:
 ```json
 {
-    "body": "Assignee: cremona\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8496\n\n",
+    "body": "Assignee: @JohnCremona\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8496\n\n",
     "created_at": "2010-03-11T08:14:07Z",
     "labels": [
         "elliptic curves",
@@ -14,10 +14,10 @@ archive/issues_008496.json:
     "title": "Implement canonical heights for elliptic curves over number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8496",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8496
 archive/issue_comments_076656.json:
 ```json
 {
-    "body": "Attachment [8496-nf-height.patch](tarball://root/attachments/some-uuid/ticket8496/8496-nf-height.patch) by robertwb created at 2010-03-11 08:16:56",
+    "body": "Attachment [8496-nf-height.patch](tarball://root/attachments/some-uuid/ticket8496/8496-nf-height.patch) by @robertwb created at 2010-03-11 08:16:56",
     "created_at": "2010-03-11T08:16:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8496#issuecomment-76656",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [8496-nf-height.patch](tarball://root/attachments/some-uuid/ticket8496/8496-nf-height.patch) by robertwb created at 2010-03-11 08:16:56
+Attachment [8496-nf-height.patch](tarball://root/attachments/some-uuid/ticket8496/8496-nf-height.patch) by @robertwb created at 2010-03-11 08:16:56
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_076657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8496#issuecomment-76657",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_076658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8496#issuecomment-76658",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_076659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8496#issuecomment-76659",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_076660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8496#issuecomment-76660",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_076661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8496#issuecomment-76661",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_076662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8496#issuecomment-76662",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -199,16 +199,16 @@ Note that:
 archive/issue_comments_076663.json:
 ```json
 {
-    "body": "Changing assignee from cremona to was.",
+    "body": "Changing assignee from @JohnCremona to @williamstein.",
     "created_at": "2010-03-12T01:35:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8496#issuecomment-76663",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from cremona to was.
+Changing assignee from @JohnCremona to @williamstein.
 
 
 
@@ -222,7 +222,7 @@ archive/issue_comments_076664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8496#issuecomment-76664",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_076665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8496#issuecomment-76665",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_076666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8496#issuecomment-76666",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_076667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8496#issuecomment-76667",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -308,7 +308,7 @@ archive/issue_comments_076668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8496#issuecomment-76668",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -321,16 +321,16 @@ exported against 4.3.4.alpha1
 archive/issue_comments_076669.json:
 ```json
 {
-    "body": "Attachment [trac_8496_rebased.patch](tarball://root/attachments/some-uuid/ticket8496/trac_8496_rebased.patch) by wuthrich created at 2010-03-15 15:30:01\n\nI have put up a rebased patch with a few minor changes. But I have not included yet the documentation on the normalization. You write \"THE BSD formula\", but there is not a unique standard way of stating the conjecture, I fear. Also the question is whether or not you divide the height pairing by two or not. Could you clarify this ?\n\nI deleted the assumption that E was defined over Q. I don't think you will need that. Maybe it is needed that the model is integral, but I do not see where you would require the curve to be defined over Q. Please correct me if I am wrong.\n\nBy the way the diff of our two patches comes mainly from converting tabs to spaces.",
+    "body": "Attachment [trac_8496_rebased.patch](tarball://root/attachments/some-uuid/ticket8496/trac_8496_rebased.patch) by @categorie created at 2010-03-15 15:30:01\n\nI have put up a rebased patch with a few minor changes. But I have not included yet the documentation on the normalization. You write \"THE BSD formula\", but there is not a unique standard way of stating the conjecture, I fear. Also the question is whether or not you divide the height pairing by two or not. Could you clarify this ?\n\nI deleted the assumption that E was defined over Q. I don't think you will need that. Maybe it is needed that the model is integral, but I do not see where you would require the curve to be defined over Q. Please correct me if I am wrong.\n\nBy the way the diff of our two patches comes mainly from converting tabs to spaces.",
     "created_at": "2010-03-15T15:30:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8496#issuecomment-76669",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_8496_rebased.patch](tarball://root/attachments/some-uuid/ticket8496/trac_8496_rebased.patch) by wuthrich created at 2010-03-15 15:30:01
+Attachment [trac_8496_rebased.patch](tarball://root/attachments/some-uuid/ticket8496/trac_8496_rebased.patch) by @categorie created at 2010-03-15 15:30:01
 
 I have put up a rebased patch with a few minor changes. But I have not included yet the documentation on the normalization. You write "THE BSD formula", but there is not a unique standard way of stating the conjecture, I fear. Also the question is whether or not you divide the height pairing by two or not. Could you clarify this ?
 
@@ -350,7 +350,7 @@ archive/issue_comments_076670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8496#issuecomment-76670",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -379,7 +379,7 @@ archive/issue_comments_076671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8496#issuecomment-76671",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -397,7 +397,7 @@ archive/issue_comments_076672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8496#issuecomment-76672",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -410,16 +410,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_076673.json:
 ```json
 {
-    "body": "Attachment [8496-nf-height-again.patch](tarball://root/attachments/some-uuid/ticket8496/8496-nf-height-again.patch) by cremona created at 2010-03-15 20:33:06\n\nNew patch applies fine to 4.3.4.alpha1, and all tests in sage/schemes/elliptic_curves pass (tested both 32 and 64 bit).  Good!",
+    "body": "Attachment [8496-nf-height-again.patch](tarball://root/attachments/some-uuid/ticket8496/8496-nf-height-again.patch) by @JohnCremona created at 2010-03-15 20:33:06\n\nNew patch applies fine to 4.3.4.alpha1, and all tests in sage/schemes/elliptic_curves pass (tested both 32 and 64 bit).  Good!",
     "created_at": "2010-03-15T20:33:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8496#issuecomment-76673",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [8496-nf-height-again.patch](tarball://root/attachments/some-uuid/ticket8496/8496-nf-height-again.patch) by cremona created at 2010-03-15 20:33:06
+Attachment [8496-nf-height-again.patch](tarball://root/attachments/some-uuid/ticket8496/8496-nf-height-again.patch) by @JohnCremona created at 2010-03-15 20:33:06
 
 New patch applies fine to 4.3.4.alpha1, and all tests in sage/schemes/elliptic_curves pass (tested both 32 and 64 bit).  Good!
 
@@ -435,7 +435,7 @@ archive/issue_comments_076674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8496#issuecomment-76674",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -453,7 +453,7 @@ archive/issue_comments_076675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8496#issuecomment-76675",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -466,16 +466,16 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_076676.json:
 ```json
 {
-    "body": "Attachment [8496-rebased-4.4.alpha0.patch](tarball://root/attachments/some-uuid/ticket8496/8496-rebased-4.4.alpha0.patch) by robertwb created at 2010-04-17 19:28:44",
+    "body": "Attachment [8496-rebased-4.4.alpha0.patch](tarball://root/attachments/some-uuid/ticket8496/8496-rebased-4.4.alpha0.patch) by @robertwb created at 2010-04-17 19:28:44",
     "created_at": "2010-04-17T19:28:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8496#issuecomment-76676",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [8496-rebased-4.4.alpha0.patch](tarball://root/attachments/some-uuid/ticket8496/8496-rebased-4.4.alpha0.patch) by robertwb created at 2010-04-17 19:28:44
+Attachment [8496-rebased-4.4.alpha0.patch](tarball://root/attachments/some-uuid/ticket8496/8496-rebased-4.4.alpha0.patch) by @robertwb created at 2010-04-17 19:28:44
 
 
 
@@ -489,7 +489,7 @@ archive/issue_comments_076677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8496#issuecomment-76677",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -507,7 +507,7 @@ archive/issue_comments_076678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8496#issuecomment-76678",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -525,7 +525,7 @@ archive/issue_comments_076679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8496#issuecomment-76679",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -543,7 +543,7 @@ archive/issue_comments_076680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8496#issuecomment-76680",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -561,7 +561,7 @@ archive/issue_comments_076681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8496#issuecomment-76681",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -579,7 +579,7 @@ archive/issue_comments_076682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8496#issuecomment-76682",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

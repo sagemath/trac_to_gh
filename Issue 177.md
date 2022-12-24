@@ -14,7 +14,7 @@ archive/issues_000177.json:
     "title": "pari interface -- transition to new arithmetic model",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/177",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -80,7 +80,7 @@ archive/issue_comments_000818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/177#issuecomment-818",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_000819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/177#issuecomment-819",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

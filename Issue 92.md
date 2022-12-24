@@ -13,7 +13,7 @@ archive/issues_000092.json:
     "title": "Complex embeddings for non-cyclotomic number fields?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/92",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -42,7 +42,7 @@ archive/issue_comments_000448.json:
     "issue": "https://github.com/sagemath/sagetest/issues/92",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/92#issuecomment-448",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_000449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/92",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/92#issuecomment-449",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

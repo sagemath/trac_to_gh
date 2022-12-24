@@ -3,7 +3,7 @@
 archive/issues_005194.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  jason\n\nWhenever the user of an interact tabs from one input_box to another, the function is called, which sets off all the computations associated with the interact. Even when the computations are not very time-consuming, it can be a hassle if, for example, the user wishes to change several input boxes at once, before getting an update.\n\nThis enhancement, discussed [here](http://groups.google.com/group/sage-devel/browse_thread/thread/9ff935e0d6a729b3/554c6c448e6a75e5?lnk=gst&q=interact+update#554c6c448e6a75e5) on sage-devel, would allow an interact to turn off automatic update, adding a user interface element that will prompt the interact to re-run.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5194\n\n",
+    "body": "Assignee: boothby\n\nCC:  @jasongrout\n\nWhenever the user of an interact tabs from one input_box to another, the function is called, which sets off all the computations associated with the interact. Even when the computations are not very time-consuming, it can be a hassle if, for example, the user wishes to change several input boxes at once, before getting an update.\n\nThis enhancement, discussed [here](http://groups.google.com/group/sage-devel/browse_thread/thread/9ff935e0d6a729b3/554c6c448e6a75e5?lnk=gst&q=interact+update#554c6c448e6a75e5) on sage-devel, would allow an interact to turn off automatic update, adding a user interface element that will prompt the interact to re-run.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5194\n\n",
     "created_at": "2009-02-06T03:38:45Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_005194.json:
     "title": "add option to turn off automatic updates for an interact",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5194",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 Assignee: boothby
 
-CC:  jason
+CC:  @jasongrout
 
 Whenever the user of an interact tabs from one input_box to another, the function is called, which sets off all the computations associated with the interact. Even when the computations are not very time-consuming, it can be a hassle if, for example, the user wishes to change several input boxes at once, before getting an update.
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5194
 archive/issue_comments_039811.json:
 ```json
 {
-    "body": "Attachment [update_interact.patch](tarball://root/attachments/some-uuid/ticket5194/update_interact.patch) by john_perry created at 2009-02-06 03:39:33\n\na patch that adds a checkbox to control automatic updating",
+    "body": "Attachment [update_interact.patch](tarball://root/attachments/some-uuid/ticket5194/update_interact.patch) by @johnperry-math created at 2009-02-06 03:39:33\n\na patch that adds a checkbox to control automatic updating",
     "created_at": "2009-02-06T03:39:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5194#issuecomment-39811",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
-Attachment [update_interact.patch](tarball://root/attachments/some-uuid/ticket5194/update_interact.patch) by john_perry created at 2009-02-06 03:39:33
+Attachment [update_interact.patch](tarball://root/attachments/some-uuid/ticket5194/update_interact.patch) by @johnperry-math created at 2009-02-06 03:39:33
 
 a patch that adds a checkbox to control automatic updating
 
@@ -61,7 +61,7 @@ archive/issue_comments_039812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5194#issuecomment-39812",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_039813.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5194#issuecomment-39813",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -120,16 +120,16 @@ Michael
 archive/issue_comments_039815.json:
 ```json
 {
-    "body": "Attachment [trac_5194.patch](tarball://root/attachments/some-uuid/ticket5194/trac_5194.patch) by mhansen created at 2009-02-07 05:35:29",
+    "body": "Attachment [trac_5194.patch](tarball://root/attachments/some-uuid/ticket5194/trac_5194.patch) by @mwhansen created at 2009-02-07 05:35:29",
     "created_at": "2009-02-07T05:35:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5194#issuecomment-39815",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5194.patch](tarball://root/attachments/some-uuid/ticket5194/trac_5194.patch) by mhansen created at 2009-02-07 05:35:29
+Attachment [trac_5194.patch](tarball://root/attachments/some-uuid/ticket5194/trac_5194.patch) by @mwhansen created at 2009-02-07 05:35:29
 
 
 
@@ -143,7 +143,7 @@ archive/issue_comments_039816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5194#issuecomment-39816",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -158,16 +158,16 @@ Currently, when the values are changed, the output is deleted.  One could get ar
 archive/issue_comments_039817.json:
 ```json
 {
-    "body": "Changing assignee from boothby to mhansen.",
+    "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2009-02-07T05:58:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5194#issuecomment-39817",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from boothby to mhansen.
+Changing assignee from boothby to @mwhansen.
 
 
 
@@ -181,7 +181,7 @@ archive/issue_comments_039818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5194#issuecomment-39818",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_039819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5194#issuecomment-39819",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_039820.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5194#issuecomment-39820",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 

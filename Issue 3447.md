@@ -3,7 +3,7 @@
 archive/issues_003447.json:
 ```json
 {
-    "body": "Assignee: failure\n\nCC:  gfurnish mjo\n\n\n```\nD-69-91-136-212:modular was$ sage -t dims.py \nsage -t  devel/sage-main/sage/modular/dims.py               **********************************************************************\nFile \"/Users/was/s/tmp/dims.py\", line 1564:\n    sage: sturm_bound(Gamma1(13),5)\n```\n\n\nNotice the *tmp* above.  \n\nThis is not trivial to fix.  We need to change this:\n\n```\nD-69-91-136-212:modular was$ sage -t dims.py \nsage -t  devel/sage-main/sage/modular/dims.py               **********************************************************************\nFile \".../devel/sage-main/sage/modular/dims.py\", line 1564:\n    sage: sturm_bound(Gamma1(13),5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3447\n\n",
+    "body": "Assignee: failure\n\nCC:  @garyfurnish @orlitzky\n\n\n```\nD-69-91-136-212:modular was$ sage -t dims.py \nsage -t  devel/sage-main/sage/modular/dims.py               **********************************************************************\nFile \"/Users/was/s/tmp/dims.py\", line 1564:\n    sage: sturm_bound(Gamma1(13),5)\n```\n\n\nNotice the *tmp* above.  \n\nThis is not trivial to fix.  We need to change this:\n\n```\nD-69-91-136-212:modular was$ sage -t dims.py \nsage -t  devel/sage-main/sage/modular/dims.py               **********************************************************************\nFile \".../devel/sage-main/sage/modular/dims.py\", line 1564:\n    sage: sturm_bound(Gamma1(13),5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3447\n\n",
     "created_at": "2008-06-17T04:46:36Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_003447.json:
     "title": "sage -t foo gives wrong path to the file foo in the output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3447",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: failure
 
-CC:  gfurnish mjo
+CC:  @garyfurnish @orlitzky
 
 
 ```
@@ -82,7 +82,7 @@ archive/issue_comments_024316.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3447#issuecomment-24316",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_024317.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3447#issuecomment-24317",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_024318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3447#issuecomment-24318",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_024319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3447#issuecomment-24319",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_024320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3447#issuecomment-24320",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

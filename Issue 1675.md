@@ -14,7 +14,7 @@ archive/issues_001675.json:
     "title": "memleak in pAdicCappedRelativeElement._set_from_Rational",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1675",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 Assignee: mabshoff

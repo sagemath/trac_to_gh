@@ -14,7 +14,7 @@ archive/issues_003802.json:
     "title": "notebook -- run server locally and logout then go to local server again and get KeyError in server log and internal server error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3802",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -77,7 +77,7 @@ archive/issue_comments_027029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3802",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3802#issuecomment-27029",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_027030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3802",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3802#issuecomment-27030",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_027031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3802",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3802#issuecomment-27031",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

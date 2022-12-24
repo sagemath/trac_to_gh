@@ -3,7 +3,7 @@
 archive/issues_004581.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  rlm sage-combinat\n\nSince PermutationGroupElement accepts Permutations:\n\n```\nsage: PermutationGroupElement(Permutation([2,1,3]))\n(1,2)\n```\n\nit would be good if the other direction worked as well:\n\n```\nsage: g = PermutationGroupElement([2,1,3])\nsage: g\n(1,2)\nsage: Permutation(g)\n...\nValueError: l must be a list\n```\n\nThe following works:\n\n```\nsage: Permutation(g.list())\n[2, 1, 3]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4581\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @rlmill sage-combinat\n\nSince PermutationGroupElement accepts Permutations:\n\n```\nsage: PermutationGroupElement(Permutation([2,1,3]))\n(1,2)\n```\n\nit would be good if the other direction worked as well:\n\n```\nsage: g = PermutationGroupElement([2,1,3])\nsage: g\n(1,2)\nsage: Permutation(g)\n...\nValueError: l must be a list\n```\n\nThe following works:\n\n```\nsage: Permutation(g.list())\n[2, 1, 3]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4581\n\n",
     "created_at": "2008-11-22T01:45:10Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_004581.json:
     "title": "Permutation constructor fails with PermutationGroupElement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4581",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
-CC:  rlm sage-combinat
+CC:  @rlmill sage-combinat
 
 Since PermutationGroupElement accepts Permutations:
 
@@ -63,7 +63,7 @@ archive/issue_comments_034350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4581#issuecomment-34350",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -76,16 +76,16 @@ Changing status from new to assigned.
 archive/issue_comments_034351.json:
 ```json
 {
-    "body": "Attachment [trac_4581.patch](tarball://root/attachments/some-uuid/ticket4581/trac_4581.patch) by mhansen created at 2008-12-02 08:51:03",
+    "body": "Attachment [trac_4581.patch](tarball://root/attachments/some-uuid/ticket4581/trac_4581.patch) by @mwhansen created at 2008-12-02 08:51:03",
     "created_at": "2008-12-02T08:51:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4581#issuecomment-34351",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4581.patch](tarball://root/attachments/some-uuid/ticket4581/trac_4581.patch) by mhansen created at 2008-12-02 08:51:03
+Attachment [trac_4581.patch](tarball://root/attachments/some-uuid/ticket4581/trac_4581.patch) by @mwhansen created at 2008-12-02 08:51:03
 
 
 
@@ -123,7 +123,7 @@ archive/issue_comments_034353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4581#issuecomment-34353",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 

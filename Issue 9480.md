@@ -3,7 +3,7 @@
 archive/issues_009480.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nThis is related to #8942. The limit function can output either\n`+Infinity`, `-Infinity`, or `Infinity`, the later\nmeaning a complex infinity. For example:\n\n```\nsage: limit(1/x, x=0, dir='above')\n+Infinity\nsage: limit(1/x, x=0, dir='below')\n-Infinity\nsage: limit(1/x, x=0)             \nInfinity\n```\n\nHowever Sage does not distinguish `+Infinity` and `Infinity`:\n\n```\nsage: l1=limit(1/x, x=0, dir='above')\nsage: l2=limit(1/x, x=0, dir='below')\nsage: l3=limit(1/x, x=0)\nsage: l1==l3\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9480\n\n",
+    "body": "Assignee: @burcin\n\nThis is related to #8942. The limit function can output either\n`+Infinity`, `-Infinity`, or `Infinity`, the later\nmeaning a complex infinity. For example:\n\n```\nsage: limit(1/x, x=0, dir='above')\n+Infinity\nsage: limit(1/x, x=0, dir='below')\n-Infinity\nsage: limit(1/x, x=0)             \nInfinity\n```\n\nHowever Sage does not distinguish `+Infinity` and `Infinity`:\n\n```\nsage: l1=limit(1/x, x=0, dir='above')\nsage: l2=limit(1/x, x=0, dir='below')\nsage: l3=limit(1/x, x=0)\nsage: l1==l3\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9480\n\n",
     "created_at": "2010-07-12T12:48:51Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_009480.json:
     "title": "Sage mixes Infinity and +Infinity",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9480",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 This is related to #8942. The limit function can output either
 `+Infinity`, `-Infinity`, or `Infinity`, the later
@@ -59,7 +59,7 @@ archive/issue_comments_091007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9480#issuecomment-91007",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -87,16 +87,16 @@ BTW, isn't there an inconsistency in the capitalization of `Infinity`. Shouldn't
 archive/issue_comments_091008.json:
 ```json
 {
-    "body": "Changing assignee from burcin to robertwb.",
+    "body": "Changing assignee from @burcin to @robertwb.",
     "created_at": "2010-08-29T10:54:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9480#issuecomment-91008",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Changing assignee from burcin to robertwb.
+Changing assignee from @burcin to @robertwb.
 
 
 
@@ -110,7 +110,7 @@ archive/issue_comments_091009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9480#issuecomment-91009",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_091010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9480#issuecomment-91010",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_091011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9480#issuecomment-91011",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_091012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9480#issuecomment-91012",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_091013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9480#issuecomment-91013",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_091014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9480#issuecomment-91014",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_091015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9480#issuecomment-91015",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_091016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9480#issuecomment-91016",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_091017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9480#issuecomment-91017",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -316,7 +316,7 @@ archive/issue_comments_091018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9480#issuecomment-91018",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -334,7 +334,7 @@ archive/issue_comments_091019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9480#issuecomment-91019",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -354,7 +354,7 @@ archive/issue_comments_091020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9480#issuecomment-91020",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 

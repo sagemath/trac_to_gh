@@ -14,7 +14,7 @@ archive/issues_005251.json:
     "title": "preparser bug in parsing the backslash \"solve right\" notation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5251",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -52,7 +52,7 @@ archive/issue_comments_040287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40287",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -65,16 +65,16 @@ Changing status from new to assigned.
 archive/issue_comments_040288.json:
 ```json
 {
-    "body": "Changing assignee from cwitty to mhansen.",
+    "body": "Changing assignee from cwitty to @mwhansen.",
     "created_at": "2009-02-15T03:23:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40288",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from cwitty to mhansen.
+Changing assignee from cwitty to @mwhansen.
 
 
 
@@ -83,16 +83,16 @@ Changing assignee from cwitty to mhansen.
 archive/issue_comments_040289.json:
 ```json
 {
-    "body": "Attachment [trac_5251.patch](tarball://root/attachments/some-uuid/ticket5251/trac_5251.patch) by mhansen created at 2009-02-15 03:23:50\n\nI posted a patch which fixes this, but I don't completely understand the intention behind the stopping condition in question.  I'm not sure what the '/' in the list of characters was meant to prevent.",
+    "body": "Attachment [trac_5251.patch](tarball://root/attachments/some-uuid/ticket5251/trac_5251.patch) by @mwhansen created at 2009-02-15 03:23:50\n\nI posted a patch which fixes this, but I don't completely understand the intention behind the stopping condition in question.  I'm not sure what the '/' in the list of characters was meant to prevent.",
     "created_at": "2009-02-15T03:23:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40289",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5251.patch](tarball://root/attachments/some-uuid/ticket5251/trac_5251.patch) by mhansen created at 2009-02-15 03:23:50
+Attachment [trac_5251.patch](tarball://root/attachments/some-uuid/ticket5251/trac_5251.patch) by @mwhansen created at 2009-02-15 03:23:50
 
 I posted a patch which fixes this, but I don't completely understand the intention behind the stopping condition in question.  I'm not sure what the '/' in the list of characters was meant to prevent.
 
@@ -108,7 +108,7 @@ archive/issue_comments_040290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40290",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_040291.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40291",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_040292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40292",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -322,7 +322,7 @@ archive/issue_comments_040293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40293",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -382,7 +382,7 @@ archive/issue_comments_040296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40296",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -395,16 +395,16 @@ I thought I had taken care of this case, but I guess not. I'll look into this af
 archive/issue_comments_040297.json:
 ```json
 {
-    "body": "Attachment [5251-backslash.patch](tarball://root/attachments/some-uuid/ticket5251/5251-backslash.patch) by robertwb created at 2009-02-18 01:57:55\n\nOK, a better patch is attached. I see what the error was now--it's worked on all the examples and files I've tested, but I'm doing a -testall now, but things look good so far.",
+    "body": "Attachment [5251-backslash.patch](tarball://root/attachments/some-uuid/ticket5251/5251-backslash.patch) by @robertwb created at 2009-02-18 01:57:55\n\nOK, a better patch is attached. I see what the error was now--it's worked on all the examples and files I've tested, but I'm doing a -testall now, but things look good so far.",
     "created_at": "2009-02-18T01:57:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40297",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5251-backslash.patch](tarball://root/attachments/some-uuid/ticket5251/5251-backslash.patch) by robertwb created at 2009-02-18 01:57:55
+Attachment [5251-backslash.patch](tarball://root/attachments/some-uuid/ticket5251/5251-backslash.patch) by @robertwb created at 2009-02-18 01:57:55
 
 OK, a better patch is attached. I see what the error was now--it's worked on all the examples and files I've tested, but I'm doing a -testall now, but things look good so far.
 
@@ -420,7 +420,7 @@ archive/issue_comments_040298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40298",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -438,7 +438,7 @@ archive/issue_comments_040299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40299",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

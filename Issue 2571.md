@@ -14,7 +14,7 @@ archive/issues_002571.json:
     "title": "problem with copy() on sage.rings.integer_mod.IntegerMod_gmp",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2571",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 Assignee: somebody
@@ -52,16 +52,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2571
 archive/issue_comments_017566.json:
 ```json
 {
-    "body": "Attachment [8950.patch](tarball://root/attachments/some-uuid/ticket2571/8950.patch) by cremona created at 2008-03-17 14:24:28",
+    "body": "Attachment [8950.patch](tarball://root/attachments/some-uuid/ticket2571/8950.patch) by @JohnCremona created at 2008-03-17 14:24:28",
     "created_at": "2008-03-17T14:24:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2571#issuecomment-17566",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [8950.patch](tarball://root/attachments/some-uuid/ticket2571/8950.patch) by cremona created at 2008-03-17 14:24:28
+Attachment [8950.patch](tarball://root/attachments/some-uuid/ticket2571/8950.patch) by @JohnCremona created at 2008-03-17 14:24:28
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_017567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2571#issuecomment-17567",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_017568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2571#issuecomment-17568",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -106,16 +106,16 @@ Changing status from new to assigned.
 archive/issue_comments_017569.json:
 ```json
 {
-    "body": "Changing assignee from somebody to cremona.",
+    "body": "Changing assignee from somebody to @JohnCremona.",
     "created_at": "2008-03-17T14:27:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2571#issuecomment-17569",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Changing assignee from somebody to cremona.
+Changing assignee from somebody to @JohnCremona.
 
 
 
@@ -129,7 +129,7 @@ archive/issue_comments_017570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2571#issuecomment-17570",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_017571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2571#issuecomment-17571",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -160,16 +160,16 @@ apply after 8950.patch
 archive/issue_comments_017572.json:
 ```json
 {
-    "body": "Attachment [8951.patch](tarball://root/attachments/some-uuid/ticket2571/8951.patch) by cremona created at 2008-03-17 16:56:39\n\nAs suggested, a few doctests have been added, in the second patch.",
+    "body": "Attachment [8951.patch](tarball://root/attachments/some-uuid/ticket2571/8951.patch) by @JohnCremona created at 2008-03-17 16:56:39\n\nAs suggested, a few doctests have been added, in the second patch.",
     "created_at": "2008-03-17T16:56:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2571#issuecomment-17572",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [8951.patch](tarball://root/attachments/some-uuid/ticket2571/8951.patch) by cremona created at 2008-03-17 16:56:39
+Attachment [8951.patch](tarball://root/attachments/some-uuid/ticket2571/8951.patch) by @JohnCremona created at 2008-03-17 16:56:39
 
 As suggested, a few doctests have been added, in the second patch.
 

@@ -3,7 +3,7 @@
 archive/issues_002205.json:
 ```json
 {
-    "body": "Assignee: yi\n\nKeywords: dsage, database, sqlite, sql\n\nspkg can be found here:\n\nhttp://sage.math.washington.edu/home/yqiang/spkgs/SQLAlchemy-0.4.3.p0.spkg\n\ntested on OSX (10.5), Linux\n\ndsage is going to be using sqlalchemy from now on for the database backend since it will make switching database engines seamless and also prevent me from writing crappy sql. I think other parts of SAGE that have a database component could benefit significantly from this package, especially if they are able to use an ORM pattern.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2205\n\n",
+    "body": "Assignee: @yqiang\n\nKeywords: dsage, database, sqlite, sql\n\nspkg can be found here:\n\nhttp://sage.math.washington.edu/home/yqiang/spkgs/SQLAlchemy-0.4.3.p0.spkg\n\ntested on OSX (10.5), Linux\n\ndsage is going to be using sqlalchemy from now on for the database backend since it will make switching database engines seamless and also prevent me from writing crappy sql. I think other parts of SAGE that have a database component could benefit significantly from this package, especially if they are able to use an ORM pattern.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2205\n\n",
     "created_at": "2008-02-18T18:18:12Z",
     "labels": [
         "dsage",
@@ -14,10 +14,10 @@ archive/issues_002205.json:
     "title": "new spkg -- sqlalchemy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2205",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
-Assignee: yi
+Assignee: @yqiang
 
 Keywords: dsage, database, sqlite, sql
 
@@ -45,7 +45,7 @@ archive/issue_comments_014544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2205",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2205#issuecomment-14544",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_014545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2205",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2205#issuecomment-14545",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_014547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2205",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2205#issuecomment-14547",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_014548.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2205",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2205#issuecomment-14548",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_014549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2205",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2205#issuecomment-14549",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -374,7 +374,7 @@ archive/issue_comments_014554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2205",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2205#issuecomment-14554",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -392,7 +392,7 @@ archive/issue_comments_014555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2205",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2205#issuecomment-14555",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -410,7 +410,7 @@ archive/issue_comments_014556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2205",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2205#issuecomment-14556",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

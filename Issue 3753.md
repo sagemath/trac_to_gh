@@ -3,7 +3,7 @@
 archive/issues_003753.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  was mhansen\n\n\n```\n\n\nHi,\n\nI also noticed there is a problem with \"nb.save()\". It assumes that\nthe current directory is \".sage\". So it saves the notebook object in a\nwrong place if you are not in \".sage\". I think this is a bug.\n\n\nKwankyu\n\n\t\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3753\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein @mwhansen\n\n\n```\n\n\nHi,\n\nI also noticed there is a problem with \"nb.save()\". It assumes that\nthe current directory is \".sage\". So it saves the notebook object in a\nwrong place if you are not in \".sage\". I think this is a bug.\n\n\nKwankyu\n\n\t\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3753\n\n",
     "created_at": "2008-08-01T01:34:06Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_003753.json:
     "title": "notebook -- change the default for nb.save('...')",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3753",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
 
-CC:  was mhansen
+CC:  @williamstein @mwhansen
 
 
 ```
@@ -82,7 +82,7 @@ archive/issue_comments_026668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3753#issuecomment-26668",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_026669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3753#issuecomment-26669",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_026670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3753#issuecomment-26670",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_026671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3753#issuecomment-26671",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

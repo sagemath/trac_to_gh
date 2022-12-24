@@ -3,7 +3,7 @@
 archive/issues_006681.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  ncohen\n\nIf I try a [64-bit build](http://wiki.sagemath.org/osx64) of Sage (4.1.1.rc1) on an Intel Mac running OS X 10.5, cliquer seems to install fine: I get a message saying,\n\"Successfully installed cliquer-1.2\".  However, starting Sage gives me an `ImportError`:\n\n```\nImportError: dlopen(/Applications/sage_builds/sage-4.1.1.rc1/local/lib/\npython2.6/site-packages/sage/graphs/cliquer.so, 2): Symbol not found:\n_graph_new\n  Referenced from: /Applications/sage_builds/sage-4.1.1.rc1/local/lib/\npython2.6/site-packages/sage/graphs/cliquer.so\n  Expected in: dynamic lookup\n\nError importing ipy_profile_sage - perhaps you should run %upgrade?\nWARNING: Loading of ipy_profile_sage failed. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6681\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @nathanncohen\n\nIf I try a [64-bit build](http://wiki.sagemath.org/osx64) of Sage (4.1.1.rc1) on an Intel Mac running OS X 10.5, cliquer seems to install fine: I get a message saying,\n\"Successfully installed cliquer-1.2\".  However, starting Sage gives me an `ImportError`:\n\n```\nImportError: dlopen(/Applications/sage_builds/sage-4.1.1.rc1/local/lib/\npython2.6/site-packages/sage/graphs/cliquer.so, 2): Symbol not found:\n_graph_new\n  Referenced from: /Applications/sage_builds/sage-4.1.1.rc1/local/lib/\npython2.6/site-packages/sage/graphs/cliquer.so\n  Expected in: dynamic lookup\n\nError importing ipy_profile_sage - perhaps you should run %upgrade?\nWARNING: Loading of ipy_profile_sage failed. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6681\n\n",
     "created_at": "2009-08-06T19:13:39Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_006681.json:
     "title": "cliquer doesn't work in 64-bit OS X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6681",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  ncohen
+CC:  @nathanncohen
 
 If I try a [64-bit build](http://wiki.sagemath.org/osx64) of Sage (4.1.1.rc1) on an Intel Mac running OS X 10.5, cliquer seems to install fine: I get a message saying,
 "Successfully installed cliquer-1.2".  However, starting Sage gives me an `ImportError`:
@@ -53,7 +53,7 @@ archive/issue_comments_054917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6681#issuecomment-54917",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_054920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6681#issuecomment-54920",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_054922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6681#issuecomment-54922",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_054923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6681#issuecomment-54923",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -414,7 +414,7 @@ Changing component from graph theory to packages.
 archive/issue_comments_054926.json:
 ```json
 {
-    "body": "Changing assignee from rlm to mabshoff.",
+    "body": "Changing assignee from @rlmill to mabshoff.",
     "created_at": "2009-09-16T09:29:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6681",
     "type": "issue_comment",
@@ -423,7 +423,7 @@ archive/issue_comments_054926.json:
 }
 ```
 
-Changing assignee from rlm to mabshoff.
+Changing assignee from @rlmill to mabshoff.
 
 
 
@@ -521,7 +521,7 @@ archive/issue_comments_054930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6681#issuecomment-54930",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -541,7 +541,7 @@ archive/issue_comments_054931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6681#issuecomment-54931",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -563,7 +563,7 @@ archive/issue_comments_054932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6681#issuecomment-54932",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -645,7 +645,7 @@ archive/issue_comments_054934.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6681#issuecomment-54934",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -668,7 +668,7 @@ archive/issue_comments_054935.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6681#issuecomment-54935",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -686,7 +686,7 @@ archive/issue_comments_054936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6681#issuecomment-54936",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -704,7 +704,7 @@ archive/issue_comments_054937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6681#issuecomment-54937",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -722,7 +722,7 @@ archive/issue_comments_054938.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6681#issuecomment-54938",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -760,7 +760,7 @@ archive/issue_comments_054940.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6681#issuecomment-54940",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -804,7 +804,7 @@ archive/issue_comments_054942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6681#issuecomment-54942",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -825,7 +825,7 @@ archive/issue_comments_054943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6681#issuecomment-54943",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -846,7 +846,7 @@ archive/issue_comments_054944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6681#issuecomment-54944",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -864,7 +864,7 @@ archive/issue_comments_054945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6681#issuecomment-54945",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -882,7 +882,7 @@ archive/issue_comments_054946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6681#issuecomment-54946",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

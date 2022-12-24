@@ -70,7 +70,7 @@ archive/issue_comments_051523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6416",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6416#issuecomment-51523",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_051526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6416",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6416#issuecomment-51526",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -162,16 +162,16 @@ Changing component from algebra to commutative algebra.
 archive/issue_comments_051527.json:
 ```json
 {
-    "body": "Changing assignee from tbd to malb.",
+    "body": "Changing assignee from tbd to @malb.",
     "created_at": "2009-08-16T03:50:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6416",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6416#issuecomment-51527",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from tbd to malb.
+Changing assignee from tbd to @malb.
 
 
 
@@ -185,7 +185,7 @@ archive/issue_comments_051528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6416",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6416#issuecomment-51528",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_051529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6416",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6416#issuecomment-51529",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_051530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6416",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6416#issuecomment-51530",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_051531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6416",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6416#issuecomment-51531",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_051532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6416",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6416#issuecomment-51532",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 

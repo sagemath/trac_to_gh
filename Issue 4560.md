@@ -3,7 +3,7 @@
 archive/issues_004560.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  mhansen\n\nThis is bad\n\n\n```\nsage: sqrt(2) in CC\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4560\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @mwhansen\n\nThis is bad\n\n\n```\nsage: sqrt(2) in CC\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4560\n\n",
     "created_at": "2008-11-20T01:35:11Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_004560.json:
     "title": "SR and containment broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4560",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  mhansen
+CC:  @mwhansen
 
 This is bad
 
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4560
 archive/issue_comments_034161.json:
 ```json
 {
-    "body": "Attachment [4560](tarball://root/attachments/some-uuid/ticket4560/4560) by roed created at 2009-01-23 02:47:35",
+    "body": "Attachment [4560](tarball://root/attachments/some-uuid/ticket4560/4560) by @roed314 created at 2009-01-23 02:47:35",
     "created_at": "2009-01-23T02:47:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4560",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4560#issuecomment-34161",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [4560](tarball://root/attachments/some-uuid/ticket4560/4560) by roed created at 2009-01-23 02:47:35
+Attachment [4560](tarball://root/attachments/some-uuid/ticket4560/4560) by @roed314 created at 2009-01-23 02:47:35
 
 
 
@@ -64,7 +64,7 @@ archive/issue_comments_034162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4560",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4560#issuecomment-34162",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -112,16 +112,16 @@ Michael
 archive/issue_comments_034164.json:
 ```json
 {
-    "body": "Attachment [4560-doc.patch](tarball://root/attachments/some-uuid/ticket4560/4560-doc.patch) by roed created at 2009-01-24 14:49:16\n\nDocumentation fix",
+    "body": "Attachment [4560-doc.patch](tarball://root/attachments/some-uuid/ticket4560/4560-doc.patch) by @roed314 created at 2009-01-24 14:49:16\n\nDocumentation fix",
     "created_at": "2009-01-24T14:49:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4560",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4560#issuecomment-34164",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [4560-doc.patch](tarball://root/attachments/some-uuid/ticket4560/4560-doc.patch) by roed created at 2009-01-24 14:49:16
+Attachment [4560-doc.patch](tarball://root/attachments/some-uuid/ticket4560/4560-doc.patch) by @roed314 created at 2009-01-24 14:49:16
 
 Documentation fix
 

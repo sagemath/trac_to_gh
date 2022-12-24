@@ -14,7 +14,7 @@ archive/issues_004474.json:
     "title": "A hack in preparsing files is dangerous/confusing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4474",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -45,7 +45,7 @@ archive/issue_comments_033044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4474#issuecomment-33044",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_033045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4474#issuecomment-33045",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_033046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4474#issuecomment-33046",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_033047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4474#issuecomment-33047",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_033048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4474#issuecomment-33048",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_007686.json:
     "title": "Remove all \"AppleDouble encoded Macintosh files\" from the Sage source distribution",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7686",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -44,7 +44,7 @@ archive/issue_comments_065960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7686",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7686#issuecomment-65960",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -62,7 +62,7 @@ archive/issue_comments_065961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7686",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7686#issuecomment-65961",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_065962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7686",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7686#issuecomment-65962",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_065963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7686",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7686#issuecomment-65963",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000508.json:
 ```json
 {
-    "body": "Assignee: was\n\nCreate any script, say test.sage.  The following should work but doesn't:\n\n```\n  # sage -c \"load test.sage\"\nTraceback (most recent call last):\n  File \"/home/was/s/local/bin/sage-eval\", line 10, in <module>\n    eval(compile(s,tmp_filename(),'exec'))\n  File \"/home/was/.sage//temp/sage/25215//tmp_0\", line 1\n    load test.sage\n            ^\nSyntaxError: invalid syntax\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/508\n\n",
+    "body": "Assignee: @williamstein\n\nCreate any script, say test.sage.  The following should work but doesn't:\n\n```\n  # sage -c \"load test.sage\"\nTraceback (most recent call last):\n  File \"/home/was/s/local/bin/sage-eval\", line 10, in <module>\n    eval(compile(s,tmp_filename(),'exec'))\n  File \"/home/was/.sage//temp/sage/25215//tmp_0\", line 1\n    load test.sage\n            ^\nSyntaxError: invalid syntax\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/508\n\n",
     "created_at": "2007-08-29T08:19:22Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_000508.json:
     "title": "problem with \"sage -c\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/508",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Create any script, say test.sage.  The following should work but doesn't:
 
@@ -49,7 +49,7 @@ archive/issue_comments_002543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/508",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/508#issuecomment-2543",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_002545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/508",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/508#issuecomment-2545",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_002547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/508",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/508#issuecomment-2547",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -195,7 +195,7 @@ Attachment [trac_508v2.patch](tarball://root/attachments/some-uuid/ticket508/tra
 archive/issue_comments_002549.json:
 ```json
 {
-    "body": "Changing assignee from was to abergeron.",
+    "body": "Changing assignee from @williamstein to abergeron.",
     "created_at": "2008-12-24T04:57:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/508",
     "type": "issue_comment",
@@ -204,7 +204,7 @@ archive/issue_comments_002549.json:
 }
 ```
 
-Changing assignee from was to abergeron.
+Changing assignee from @williamstein to abergeron.
 
 
 

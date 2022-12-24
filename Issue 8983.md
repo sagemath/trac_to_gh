@@ -3,7 +3,7 @@
 archive/issues_008983.json:
 ```json
 {
-    "body": "Assignee: RossK\n\nCC:  burcin kcrisman\n\nKeywords: erf zero\n\nCurrently it doesnt...\n\n\n```\nsage: solve(erf(x)==0,x)\n[erf(x) == 0]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8983\n\n",
+    "body": "Assignee: RossK\n\nCC:  @burcin @kcrisman\n\nKeywords: erf zero\n\nCurrently it doesnt...\n\n\n```\nsage: solve(erf(x)==0,x)\n[erf(x) == 0]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8983\n\n",
     "created_at": "2010-05-17T13:15:56Z",
     "labels": [
         "symbolics",
@@ -19,7 +19,7 @@ archive/issues_008983.json:
 ```
 Assignee: RossK
 
-CC:  burcin kcrisman
+CC:  @burcin @kcrisman
 
 Keywords: erf zero
 
@@ -84,7 +84,7 @@ archive/issue_comments_082870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8983#issuecomment-82870",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_082871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8983#issuecomment-82871",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_082873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8983#issuecomment-82873",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_082875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8983#issuecomment-82875",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_082876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8983#issuecomment-82876",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -242,16 +242,16 @@ I think the right thing to do here is to depend on #11513. There are several way
 archive/issue_comments_082877.json:
 ```json
 {
-    "body": "Attachment [trac_8983.patch](tarball://root/attachments/some-uuid/ticket8983/trac_8983.patch) by benjaminfjones created at 2012-02-12 06:34:43\n\nmake erf(0) return 0",
+    "body": "Attachment [trac_8983.patch](tarball://root/attachments/some-uuid/ticket8983/trac_8983.patch) by @benjaminfjones created at 2012-02-12 06:34:43\n\nmake erf(0) return 0",
     "created_at": "2012-02-12T06:34:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8983#issuecomment-82877",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
-Attachment [trac_8983.patch](tarball://root/attachments/some-uuid/ticket8983/trac_8983.patch) by benjaminfjones created at 2012-02-12 06:34:43
+Attachment [trac_8983.patch](tarball://root/attachments/some-uuid/ticket8983/trac_8983.patch) by @benjaminfjones created at 2012-02-12 06:34:43
 
 make erf(0) return 0
 
@@ -267,7 +267,7 @@ archive/issue_comments_082878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8983#issuecomment-82878",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_082879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8983#issuecomment-82879",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -332,7 +332,7 @@ archive/issue_comments_082881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8983#issuecomment-82881",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -356,16 +356,16 @@ Integer Ring
 archive/issue_comments_082882.json:
 ```json
 {
-    "body": "Attachment [trac_8983_v2.patch](tarball://root/attachments/some-uuid/ticket8983/trac_8983_v2.patch) by benjaminfjones created at 2012-02-13 04:33:25\n\nmake erf(0) return 0",
+    "body": "Attachment [trac_8983_v2.patch](tarball://root/attachments/some-uuid/ticket8983/trac_8983_v2.patch) by @benjaminfjones created at 2012-02-13 04:33:25\n\nmake erf(0) return 0",
     "created_at": "2012-02-13T04:33:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8983#issuecomment-82882",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
-Attachment [trac_8983_v2.patch](tarball://root/attachments/some-uuid/ticket8983/trac_8983_v2.patch) by benjaminfjones created at 2012-02-13 04:33:25
+Attachment [trac_8983_v2.patch](tarball://root/attachments/some-uuid/ticket8983/trac_8983_v2.patch) by @benjaminfjones created at 2012-02-13 04:33:25
 
 make erf(0) return 0
 
@@ -399,7 +399,7 @@ archive/issue_comments_082884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8983#issuecomment-82884",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -432,7 +432,7 @@ archive/issue_comments_082885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8983#issuecomment-82885",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -454,7 +454,7 @@ archive/issue_comments_082886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8983#issuecomment-82886",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -473,7 +473,7 @@ archive/issue_comments_082887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8983#issuecomment-82887",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -491,7 +491,7 @@ archive/issue_comments_082888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8983#issuecomment-82888",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -509,16 +509,16 @@ BTW, `erf(SR(0))` should be a simple way of hitting the `is_trivially_zero()` br
 archive/issue_comments_082889.json:
 ```json
 {
-    "body": "Attachment [trac_8983_v3.patch](tarball://root/attachments/some-uuid/ticket8983/trac_8983_v3.patch) by benjaminfjones created at 2012-02-14 16:53:00\n\nmake erf(0) return 0, with added doctests and simplified branching in _eval_",
+    "body": "Attachment [trac_8983_v3.patch](tarball://root/attachments/some-uuid/ticket8983/trac_8983_v3.patch) by @benjaminfjones created at 2012-02-14 16:53:00\n\nmake erf(0) return 0, with added doctests and simplified branching in _eval_",
     "created_at": "2012-02-14T16:53:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8983#issuecomment-82889",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
-Attachment [trac_8983_v3.patch](tarball://root/attachments/some-uuid/ticket8983/trac_8983_v3.patch) by benjaminfjones created at 2012-02-14 16:53:00
+Attachment [trac_8983_v3.patch](tarball://root/attachments/some-uuid/ticket8983/trac_8983_v3.patch) by @benjaminfjones created at 2012-02-14 16:53:00
 
 make erf(0) return 0, with added doctests and simplified branching in _eval_
 
@@ -534,7 +534,7 @@ archive/issue_comments_082890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8983#issuecomment-82890",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -552,7 +552,7 @@ archive/issue_comments_082891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8983#issuecomment-82891",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

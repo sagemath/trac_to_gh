@@ -3,7 +3,7 @@
 archive/issues_003862.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kcrisman\n\nKeywords: plot3d, axes\n\nExample:\n\n```\nvar('x')\nvar('y')\nplot3d(cos(x) + sin(y), (x, -2,1), (y, -2,1), axes = True)\n```\n\n\nAt least one axis is in the right location, the other two...\n\nTranslating coordinates into jmol seems to be difficult, so maybe this is the reason?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3862\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nKeywords: plot3d, axes\n\nExample:\n\n```\nvar('x')\nvar('y')\nplot3d(cos(x) + sin(y), (x, -2,1), (y, -2,1), axes = True)\n```\n\n\nAt least one axis is in the right location, the other two...\n\nTranslating coordinates into jmol seems to be difficult, so maybe this is the reason?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3862\n\n",
     "created_at": "2008-08-14T22:27:04Z",
     "labels": [
         "graphics",
@@ -17,9 +17,9 @@ archive/issues_003862.json:
     "user": "mclean"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kcrisman
+CC:  @kcrisman
 
 Keywords: plot3d, axes
 
@@ -53,7 +53,7 @@ archive/issue_comments_027517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3862#issuecomment-27517",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_027518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3862#issuecomment-27518",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_027519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3862#issuecomment-27519",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_027520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3862#issuecomment-27520",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

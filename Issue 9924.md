@@ -3,7 +3,7 @@
 archive/issues_009924.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  dimpase edward.scheinerman jason kcrisman mvngu ncohen\n\nI get this doctest error with a trial 4.6.alpha1 on sage.math and many other Sage cluster and Skynet machines:\n\n```python\nsage -t -long  devel/sage/sage/graphs/graph.py\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/devel/sage-main/sage/graphs/graph.py\", line 1347:\n    sage: cycle.order() % 2 == 0\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[9]>\", line 1, in <module>\n        cycle.order() % Integer(2) == Integer(0)###line 1347:\n    sage: cycle.order() % 2 == 0\n    AttributeError: 'bool' object has no attribute 'order'\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/devel/sage-main/sage/graphs/graph.py\", line 1349:\n    sage: cycle.is_isomorphic(graphs.CycleGraph(cycle.order()))\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[10]>\", line 1, in <module>\n        cycle.is_isomorphic(graphs.CycleGraph(cycle.order()))###line 1349:\n    sage: cycle.is_isomorphic(graphs.CycleGraph(cycle.order()))\n    AttributeError: 'bool' object has no attribute 'is_isomorphic'\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9925\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @dimpase edward.scheinerman @jasongrout @kcrisman mvngu @nathanncohen\n\nI get this doctest error with a trial 4.6.alpha1 on sage.math and many other Sage cluster and Skynet machines:\n\n```python\nsage -t -long  devel/sage/sage/graphs/graph.py\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/devel/sage-main/sage/graphs/graph.py\", line 1347:\n    sage: cycle.order() % 2 == 0\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[9]>\", line 1, in <module>\n        cycle.order() % Integer(2) == Integer(0)###line 1347:\n    sage: cycle.order() % 2 == 0\n    AttributeError: 'bool' object has no attribute 'order'\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/devel/sage-main/sage/graphs/graph.py\", line 1349:\n    sage: cycle.is_isomorphic(graphs.CycleGraph(cycle.order()))\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[10]>\", line 1, in <module>\n        cycle.is_isomorphic(graphs.CycleGraph(cycle.order()))###line 1349:\n    sage: cycle.is_isomorphic(graphs.CycleGraph(cycle.order()))\n    AttributeError: 'bool' object has no attribute 'is_isomorphic'\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9925\n\n",
     "created_at": "2010-09-16T23:56:40Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_009924.json:
     "title": "Doctest error in sage/graphs/graph.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9924",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: mvngu
 
-CC:  dimpase edward.scheinerman jason kcrisman mvngu ncohen
+CC:  @dimpase edward.scheinerman @jasongrout @kcrisman mvngu @nathanncohen
 
 I get this doctest error with a trial 4.6.alpha1 on sage.math and many other Sage cluster and Skynet machines:
 
@@ -75,7 +75,7 @@ archive/issue_comments_098798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9924#issuecomment-98798",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_098799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9924#issuecomment-98799",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_098800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9924#issuecomment-98800",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_098801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9924#issuecomment-98801",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_098802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9924#issuecomment-98802",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_098803.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9924#issuecomment-98803",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_098804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9924#issuecomment-98804",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_098805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9924#issuecomment-98805",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_098806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9924#issuecomment-98806",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_098807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9924#issuecomment-98807",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -312,16 +312,16 @@ Nathann
 archive/issue_comments_098808.json:
 ```json
 {
-    "body": "Attachment [trac_9925.patch](tarball://root/attachments/some-uuid/ticket9925/trac_9925.patch) by ncohen created at 2010-09-17 08:17:38\n\nThere is now one ticket to be reviewed here, and the patch Dima requested is also waiting for review at #9930 (though it depends on #9420 too)..\n\nSorry for all that !!! `^^;`\n\nNathann",
+    "body": "Attachment [trac_9925.patch](tarball://root/attachments/some-uuid/ticket9925/trac_9925.patch) by @nathanncohen created at 2010-09-17 08:17:38\n\nThere is now one ticket to be reviewed here, and the patch Dima requested is also waiting for review at #9930 (though it depends on #9420 too)..\n\nSorry for all that !!! `^^;`\n\nNathann",
     "created_at": "2010-09-17T08:17:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9924#issuecomment-98808",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_9925.patch](tarball://root/attachments/some-uuid/ticket9925/trac_9925.patch) by ncohen created at 2010-09-17 08:17:38
+Attachment [trac_9925.patch](tarball://root/attachments/some-uuid/ticket9925/trac_9925.patch) by @nathanncohen created at 2010-09-17 08:17:38
 
 There is now one ticket to be reviewed here, and the patch Dima requested is also waiting for review at #9930 (though it depends on #9420 too)..
 
@@ -341,7 +341,7 @@ archive/issue_comments_098809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9924#issuecomment-98809",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -359,7 +359,7 @@ archive/issue_comments_098810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9924#issuecomment-98810",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -377,7 +377,7 @@ archive/issue_comments_098811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9924#issuecomment-98811",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -403,7 +403,7 @@ archive/issue_comments_098812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9924#issuecomment-98812",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -421,7 +421,7 @@ archive/issue_comments_098813.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9924#issuecomment-98813",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -445,7 +445,7 @@ archive/issue_comments_098814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9924#issuecomment-98814",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -464,7 +464,7 @@ archive/issue_comments_098815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9924#issuecomment-98815",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -494,7 +494,7 @@ archive/issue_comments_098816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9924#issuecomment-98816",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -512,7 +512,7 @@ archive/issue_comments_098817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9924#issuecomment-98817",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -530,7 +530,7 @@ archive/issue_comments_098818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9924#issuecomment-98818",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -548,7 +548,7 @@ archive/issue_comments_098819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9924#issuecomment-98819",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -566,7 +566,7 @@ archive/issue_comments_098820.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9924#issuecomment-98820",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -623,7 +623,7 @@ archive/issue_comments_098821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9924#issuecomment-98821",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -643,7 +643,7 @@ archive/issue_comments_098822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9924#issuecomment-98822",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -664,7 +664,7 @@ archive/issue_comments_098823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9924#issuecomment-98823",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -682,7 +682,7 @@ archive/issue_comments_098824.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9924#issuecomment-98824",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -703,7 +703,7 @@ archive/issue_comments_098825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9924#issuecomment-98825",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -725,7 +725,7 @@ archive/issue_comments_098826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9924#issuecomment-98826",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -772,7 +772,7 @@ archive/issue_comments_098827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9924#issuecomment-98827",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -797,7 +797,7 @@ archive/issue_comments_098828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9924#issuecomment-98828",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -815,7 +815,7 @@ archive/issue_comments_098829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9924#issuecomment-98829",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

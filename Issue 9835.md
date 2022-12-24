@@ -3,7 +3,7 @@
 archive/issues_009835.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  minh rhinton\n\nHere it is ! The long-promised tutorial for LP. It is a translation of the french sagebook, and I hope I will be able to keep the two coordinated `:-)`\n\nThis patchremoved the old tutorial from the \"constructions\" document where it shouldn't have been put in the first place, and creates a new file in thematic_tutorials. It is up-to-date for the moment, though I hope to be able to work on some improvements with the CPLEX interface soon. It may only change te way CPLEX has to be installed, which would only require a minor edit later.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9836\n\n",
+    "body": "Assignee: mvngu\n\nCC:  minh @rhinton\n\nHere it is ! The long-promised tutorial for LP. It is a translation of the french sagebook, and I hope I will be able to keep the two coordinated `:-)`\n\nThis patchremoved the old tutorial from the \"constructions\" document where it shouldn't have been put in the first place, and creates a new file in thematic_tutorials. It is up-to-date for the moment, though I hope to be able to work on some improvements with the CPLEX interface soon. It may only change te way CPLEX has to be installed, which would only require a minor edit later.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9836\n\n",
     "created_at": "2010-08-29T03:56:30Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_009835.json:
     "title": "Linear Programming Thematic Tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9835",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: mvngu
 
-CC:  minh rhinton
+CC:  minh @rhinton
 
 Here it is ! The long-promised tutorial for LP. It is a translation of the french sagebook, and I hope I will be able to keep the two coordinated `:-)`
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9836
 archive/issue_comments_097050.json:
 ```json
 {
-    "body": "Attachment [lp_flot1.png](tarball://root/attachments/some-uuid/ticket9836/lp_flot1.png) by ncohen created at 2010-08-29 03:57:32",
+    "body": "Attachment [lp_flot1.png](tarball://root/attachments/some-uuid/ticket9836/lp_flot1.png) by @nathanncohen created at 2010-08-29 03:57:32",
     "created_at": "2010-08-29T03:57:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9835#issuecomment-97050",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [lp_flot1.png](tarball://root/attachments/some-uuid/ticket9836/lp_flot1.png) by ncohen created at 2010-08-29 03:57:32
+Attachment [lp_flot1.png](tarball://root/attachments/some-uuid/ticket9836/lp_flot1.png) by @nathanncohen created at 2010-08-29 03:57:32
 
 
 
@@ -54,16 +54,16 @@ Attachment [lp_flot1.png](tarball://root/attachments/some-uuid/ticket9836/lp_flo
 archive/issue_comments_097051.json:
 ```json
 {
-    "body": "Attachment [lp_flot2.png](tarball://root/attachments/some-uuid/ticket9836/lp_flot2.png) by ncohen created at 2010-08-29 03:57:46",
+    "body": "Attachment [lp_flot2.png](tarball://root/attachments/some-uuid/ticket9836/lp_flot2.png) by @nathanncohen created at 2010-08-29 03:57:46",
     "created_at": "2010-08-29T03:57:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9835#issuecomment-97051",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [lp_flot2.png](tarball://root/attachments/some-uuid/ticket9836/lp_flot2.png) by ncohen created at 2010-08-29 03:57:46
+Attachment [lp_flot2.png](tarball://root/attachments/some-uuid/ticket9836/lp_flot2.png) by @nathanncohen created at 2010-08-29 03:57:46
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_097052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9835#issuecomment-97052",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_097053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9835#issuecomment-97053",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_097054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9835#issuecomment-97054",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_097055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9835#issuecomment-97055",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_097058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9835#issuecomment-97058",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -228,16 +228,16 @@ Nathann
 archive/issue_comments_097059.json:
 ```json
 {
-    "body": "Attachment [trac_9836 - renaming a variable.patch](tarball://root/attachments/some-uuid/ticket9836/trac_9836 - renaming a variable.patch) by ncohen created at 2010-09-11 10:49:02",
+    "body": "Attachment [trac_9836 - renaming a variable.patch](tarball://root/attachments/some-uuid/ticket9836/trac_9836 - renaming a variable.patch) by @nathanncohen created at 2010-09-11 10:49:02",
     "created_at": "2010-09-11T10:49:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9835#issuecomment-97059",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_9836 - renaming a variable.patch](tarball://root/attachments/some-uuid/ticket9836/trac_9836 - renaming a variable.patch) by ncohen created at 2010-09-11 10:49:02
+Attachment [trac_9836 - renaming a variable.patch](tarball://root/attachments/some-uuid/ticket9836/trac_9836 - renaming a variable.patch) by @nathanncohen created at 2010-09-11 10:49:02
 
 
 
@@ -287,7 +287,7 @@ archive/issue_comments_097062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9835#issuecomment-97062",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -300,16 +300,16 @@ Resolution: fixed
 archive/issue_comments_097063.json:
 ```json
 {
-    "body": "Attachment [trac_9836-manifest.patch](tarball://root/attachments/some-uuid/ticket9836/trac_9836-manifest.patch) by mpatel created at 2010-09-16 01:01:51\n\nAdd new .png files to `MANIFEST.in`",
+    "body": "Attachment [trac_9836-manifest.patch](tarball://root/attachments/some-uuid/ticket9836/trac_9836-manifest.patch) by @qed777 created at 2010-09-16 01:01:51\n\nAdd new .png files to `MANIFEST.in`",
     "created_at": "2010-09-16T01:01:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9835#issuecomment-97063",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_9836-manifest.patch](tarball://root/attachments/some-uuid/ticket9836/trac_9836-manifest.patch) by mpatel created at 2010-09-16 01:01:51
+Attachment [trac_9836-manifest.patch](tarball://root/attachments/some-uuid/ticket9836/trac_9836-manifest.patch) by @qed777 created at 2010-09-16 01:01:51
 
 Add new .png files to `MANIFEST.in`
 
@@ -325,7 +325,7 @@ archive/issue_comments_097064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9835#issuecomment-97064",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

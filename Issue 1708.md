@@ -14,7 +14,7 @@ archive/issues_001708.json:
     "title": "missing docs in dmg sage install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1708",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -84,7 +84,7 @@ archive/issue_comments_010834.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1708#issuecomment-10834",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_010835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1708#issuecomment-10835",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

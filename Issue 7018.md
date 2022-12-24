@@ -3,7 +3,7 @@
 archive/issues_007018.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  ddrake\n\nI understand the word \"tree\" may be the only way to get this result, the other words being less common or not mathematics-related... Even though :\n\n```\nsage: search_doc(\"tree\")\nhtml/en/installation/source.html:226:tree. This can take close to an hour on some machines. Depending on the\nhtml/en/installation/source.html:246:build tree to <tt class=\"docutils literal\"><span class=\"pre\">/usr/local</span></tt>. You might also copy the <tt class=\"docutils literal\"><span class=\"pre\">sage-*/sage</span>html/en/installation/index.html:59:<li class=\"toctree-l1\"><a class=\"reference external\" href=\"introduction.html\">Introduction</a></li>\nhtml/en/installation/index.html:62:<li class=\"toctree-l1\"><a class=\"reference external\" href=\"binary.html\">Pre-built Binary Install</a><ul>\nhtml/en/installation/index.html:63:<li class=\"toctree-l2\"><a class=\"reference external\" href=\"binary.html#linux-and-os-x\">Linux and OS X</a></li>\nhtml/en/installation/index.html:64:<li class=\"toctree-l2\"><a class=\"reference external\" href=\"binary.html#microsoft-windows\">Microsoft Windows</a></li>\nhtml/en/installation/index.html:69:<li class=\"toctree-l1\"><a class=\"reference external\" href=\"source.html\">Install from Source Code</a><ul>\nhtml/en/installation/index.html:70:<li class=\"toctree-l2\"><a class=\"reference external\" href=\"source.html#steps-to-install-from-source\">Steps to Install from Source</a></li>\nhtml/en/installation/index.html:71:<li class=\"toctree-l2\"><a class=\"reference external\" href=\"source.html#installation-in-a-multiuser-environment\">Installation in a Multiuser Environment</a></li>\nhtml/en/installation/index.html:72:<li class=\"toctree-l2\"><a class=\"reference external\" href=\"source.html#special-notes\">Special Notes</a></li>\nhtml/en/installation/index.html:77:<li class=\"toctree-l1\"><a class=\"reference external\" href=\"icon.html\">Desktop icon</a></li>\nhtml/en/installation/index.html:80:<li class=\"toctree-l1\"><a class=\"reference external\" href=\"documentation.html\">The Documentation</a></li>\nhtml/en/numerical_sage/index.html:72:<li class=\"toctree-l1\"><a class=\"reference external\" href=\"numerical_tools.html\">Numerical Tools</a><ul>\nhtml/en/numerical_sage/index.html:73:<li class=\"toctree-l2\"><a class=\"reference external\" href=\"numpy.html\">NumPy</a></li>\nhtml/en/numerical_sage/index.html:74:<li class=\"toctree-l2\"><a class=\"reference external\" href=\"scipy.html\">SciPy</a></li>\n\n```\n\nand much more below, as class=doctree is in all the lines... ;-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7018\n\n",
+    "body": "Assignee: tba\n\nCC:  @dandrake\n\nI understand the word \"tree\" may be the only way to get this result, the other words being less common or not mathematics-related... Even though :\n\n```\nsage: search_doc(\"tree\")\nhtml/en/installation/source.html:226:tree. This can take close to an hour on some machines. Depending on the\nhtml/en/installation/source.html:246:build tree to <tt class=\"docutils literal\"><span class=\"pre\">/usr/local</span></tt>. You might also copy the <tt class=\"docutils literal\"><span class=\"pre\">sage-*/sage</span>html/en/installation/index.html:59:<li class=\"toctree-l1\"><a class=\"reference external\" href=\"introduction.html\">Introduction</a></li>\nhtml/en/installation/index.html:62:<li class=\"toctree-l1\"><a class=\"reference external\" href=\"binary.html\">Pre-built Binary Install</a><ul>\nhtml/en/installation/index.html:63:<li class=\"toctree-l2\"><a class=\"reference external\" href=\"binary.html#linux-and-os-x\">Linux and OS X</a></li>\nhtml/en/installation/index.html:64:<li class=\"toctree-l2\"><a class=\"reference external\" href=\"binary.html#microsoft-windows\">Microsoft Windows</a></li>\nhtml/en/installation/index.html:69:<li class=\"toctree-l1\"><a class=\"reference external\" href=\"source.html\">Install from Source Code</a><ul>\nhtml/en/installation/index.html:70:<li class=\"toctree-l2\"><a class=\"reference external\" href=\"source.html#steps-to-install-from-source\">Steps to Install from Source</a></li>\nhtml/en/installation/index.html:71:<li class=\"toctree-l2\"><a class=\"reference external\" href=\"source.html#installation-in-a-multiuser-environment\">Installation in a Multiuser Environment</a></li>\nhtml/en/installation/index.html:72:<li class=\"toctree-l2\"><a class=\"reference external\" href=\"source.html#special-notes\">Special Notes</a></li>\nhtml/en/installation/index.html:77:<li class=\"toctree-l1\"><a class=\"reference external\" href=\"icon.html\">Desktop icon</a></li>\nhtml/en/installation/index.html:80:<li class=\"toctree-l1\"><a class=\"reference external\" href=\"documentation.html\">The Documentation</a></li>\nhtml/en/numerical_sage/index.html:72:<li class=\"toctree-l1\"><a class=\"reference external\" href=\"numerical_tools.html\">Numerical Tools</a><ul>\nhtml/en/numerical_sage/index.html:73:<li class=\"toctree-l2\"><a class=\"reference external\" href=\"numpy.html\">NumPy</a></li>\nhtml/en/numerical_sage/index.html:74:<li class=\"toctree-l2\"><a class=\"reference external\" href=\"scipy.html\">SciPy</a></li>\n\n```\n\nand much more below, as class=doctree is in all the lines... ;-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7018\n\n",
     "created_at": "2009-09-26T07:19:47Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_007018.json:
     "title": "Looking for trees with search_doc(\"tree\") is a bad idea",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7018",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: tba
 
-CC:  ddrake
+CC:  @dandrake
 
 I understand the word "tree" may be the only way to get this result, the other words being less common or not mathematics-related... Even though :
 
@@ -62,7 +62,7 @@ archive/issue_comments_058099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7018#issuecomment-58099",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_058100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7018#issuecomment-58100",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_058101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7018#issuecomment-58101",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -115,16 +115,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_058102.json:
 ```json
 {
-    "body": "Attachment [trac_7018-search.patch](tarball://root/attachments/some-uuid/ticket7018/trac_7018-search.patch) by ddrake created at 2010-01-21 00:09:45\n\nThis looks good, works as advertised, and passes all doctests. Positive review.",
+    "body": "Attachment [trac_7018-search.patch](tarball://root/attachments/some-uuid/ticket7018/trac_7018-search.patch) by @dandrake created at 2010-01-21 00:09:45\n\nThis looks good, works as advertised, and passes all doctests. Positive review.",
     "created_at": "2010-01-21T00:09:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7018#issuecomment-58102",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_7018-search.patch](tarball://root/attachments/some-uuid/ticket7018/trac_7018-search.patch) by ddrake created at 2010-01-21 00:09:45
+Attachment [trac_7018-search.patch](tarball://root/attachments/some-uuid/ticket7018/trac_7018-search.patch) by @dandrake created at 2010-01-21 00:09:45
 
 This looks good, works as advertised, and passes all doctests. Positive review.
 
@@ -158,7 +158,7 @@ archive/issue_comments_058104.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7018#issuecomment-58104",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

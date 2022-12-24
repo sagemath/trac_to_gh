@@ -3,7 +3,7 @@
 archive/issues_007543.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  vdelecroix saliola\n\nThe definition of S-adiques words is found here :\n\n[Pytheas S-adiques](https://www.lirmm.fr/arith/wiki/PytheasFogg/S-adiques)\n\nThis patch adds S-adiques to the word generator :\n\n\n```\n    sage: tm = WordMorphism('a->ab,b->ba')\n    sage: fib = WordMorphism('a->ab,b->a')\n    sage: from itertools import repeat\n\nOne trivial example of infinite s-adique word::\n\n    sage: words.s_adique(repeat(tm),repeat('a'))\n    word: abbabaabbaababbabaababbaabbabaabbaababba...\n\nA less trivial infinite s-adique word::\n\n    sage: m = WordMorphism({0:tm,1:fib})\n    sage: tmword = words.ThueMorseWord()\n    sage: w = m(tmword)\n    sage: words.s_adique(w, repeat('a'))\n    word: abbaababbaabbaabbaababbaababbaabbaababba...\n\nRandom infinite s-adique words::\n\n    sage: from sage.misc.prandom import randint\n    sage: def it():\n    ...     while True: yield randint(0,1)\n    sage: words.s_adique(it(), repeat('a'), [tm,fib])\n    word: abbaabababbaababbaabbaababbaabababbaabba...\n    sage: words.s_adique(it(), repeat('a'), [tm,fib])\n```\n\n\nSee the patch for more examples.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7543\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @videlec @saliola\n\nThe definition of S-adiques words is found here :\n\n[Pytheas S-adiques](https://www.lirmm.fr/arith/wiki/PytheasFogg/S-adiques)\n\nThis patch adds S-adiques to the word generator :\n\n\n```\n    sage: tm = WordMorphism('a->ab,b->ba')\n    sage: fib = WordMorphism('a->ab,b->a')\n    sage: from itertools import repeat\n\nOne trivial example of infinite s-adique word::\n\n    sage: words.s_adique(repeat(tm),repeat('a'))\n    word: abbabaabbaababbabaababbaabbabaabbaababba...\n\nA less trivial infinite s-adique word::\n\n    sage: m = WordMorphism({0:tm,1:fib})\n    sage: tmword = words.ThueMorseWord()\n    sage: w = m(tmword)\n    sage: words.s_adique(w, repeat('a'))\n    word: abbaababbaabbaabbaababbaababbaabbaababba...\n\nRandom infinite s-adique words::\n\n    sage: from sage.misc.prandom import randint\n    sage: def it():\n    ...     while True: yield randint(0,1)\n    sage: words.s_adique(it(), repeat('a'), [tm,fib])\n    word: abbaabababbaababbaabbaababbaabababbaabba...\n    sage: words.s_adique(it(), repeat('a'), [tm,fib])\n```\n\n\nSee the patch for more examples.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7543\n\n",
     "created_at": "2009-11-27T15:27:44Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_007543.json:
     "title": "Add S-adiques to the word generator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7543",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
-CC:  vdelecroix saliola
+CC:  @videlec @saliola
 
 The definition of S-adiques words is found here :
 
@@ -75,7 +75,7 @@ archive/issue_comments_063999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7543#issuecomment-63999",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -88,16 +88,16 @@ Changing status from new to needs_review.
 archive/issue_comments_064000.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to slabbe.",
+    "body": "Changing assignee from @mwhansen to @seblabbe.",
     "created_at": "2009-12-08T12:10:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7543#issuecomment-64000",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Changing assignee from mhansen to slabbe.
+Changing assignee from @mwhansen to @seblabbe.
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_064001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7543#issuecomment-64001",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_064002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7543#issuecomment-64002",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -172,16 +172,16 @@ I just uploaded the patch. Some more examples. Better doc. The morphisms argumen
 archive/issue_comments_064003.json:
 ```json
 {
-    "body": "Attachment [trac_7543_word_s_adiques-sl.patch](tarball://root/attachments/some-uuid/ticket7543/trac_7543_word_s_adiques-sl.patch) by vdelecroix created at 2009-12-29 11:25:49\n\nHi Sebastien,\n\nI made the following changes in the documentation and the code seems to be OK.\n\n* In english the term is adic (like p-adic numbers)\n* I added lines between the item of the INPUT (http://www.sagemath.org/doc/developer/conventions.html#documentation-strings)\n\nTake care,\nVincent",
+    "body": "Attachment [trac_7543_word_s_adiques-sl.patch](tarball://root/attachments/some-uuid/ticket7543/trac_7543_word_s_adiques-sl.patch) by @videlec created at 2009-12-29 11:25:49\n\nHi Sebastien,\n\nI made the following changes in the documentation and the code seems to be OK.\n\n* In english the term is adic (like p-adic numbers)\n* I added lines between the item of the INPUT (http://www.sagemath.org/doc/developer/conventions.html#documentation-strings)\n\nTake care,\nVincent",
     "created_at": "2009-12-29T11:25:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7543#issuecomment-64003",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
-Attachment [trac_7543_word_s_adiques-sl.patch](tarball://root/attachments/some-uuid/ticket7543/trac_7543_word_s_adiques-sl.patch) by vdelecroix created at 2009-12-29 11:25:49
+Attachment [trac_7543_word_s_adiques-sl.patch](tarball://root/attachments/some-uuid/ticket7543/trac_7543_word_s_adiques-sl.patch) by @videlec created at 2009-12-29 11:25:49
 
 Hi Sebastien,
 
@@ -205,7 +205,7 @@ archive/issue_comments_064004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7543#issuecomment-64004",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_064005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7543#issuecomment-64005",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -236,16 +236,16 @@ corrections in documentation string
 archive/issue_comments_064006.json:
 ```json
 {
-    "body": "Attachment [trac_7543-review-vd.patch](tarball://root/attachments/some-uuid/ticket7543/trac_7543-review-vd.patch) by vdelecroix created at 2009-12-29 11:42:23",
+    "body": "Attachment [trac_7543-review-vd.patch](tarball://root/attachments/some-uuid/ticket7543/trac_7543-review-vd.patch) by @videlec created at 2009-12-29 11:42:23",
     "created_at": "2009-12-29T11:42:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7543#issuecomment-64006",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
-Attachment [trac_7543-review-vd.patch](tarball://root/attachments/some-uuid/ticket7543/trac_7543-review-vd.patch) by vdelecroix created at 2009-12-29 11:42:23
+Attachment [trac_7543-review-vd.patch](tarball://root/attachments/some-uuid/ticket7543/trac_7543-review-vd.patch) by @videlec created at 2009-12-29 11:42:23
 
 
 
@@ -259,7 +259,7 @@ archive/issue_comments_064007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7543#issuecomment-64007",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_064008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7543#issuecomment-64008",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -297,7 +297,7 @@ archive/issue_comments_064009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7543#issuecomment-64009",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_064010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7543#issuecomment-64010",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -333,7 +333,7 @@ archive/issue_comments_064011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7543#issuecomment-64011",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -353,7 +353,7 @@ archive/issue_comments_064012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7543#issuecomment-64012",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -371,7 +371,7 @@ archive/issue_comments_064013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7543#issuecomment-64013",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -384,16 +384,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_064014.json:
 ```json
 {
-    "body": "Attachment [trac_7543_correction-sl.patch](tarball://root/attachments/some-uuid/ticket7543/trac_7543_correction-sl.patch) by vdelecroix created at 2010-01-07 23:38:59\n\nReplying to [comment:8 slabbe]:\n> I just uploaded the corrections patch because I did some doc and sphinx improvements.\n> \n> Vincent, can you review those small changes I did?\n\nThe doc is OK. positive review.",
+    "body": "Attachment [trac_7543_correction-sl.patch](tarball://root/attachments/some-uuid/ticket7543/trac_7543_correction-sl.patch) by @videlec created at 2010-01-07 23:38:59\n\nReplying to [comment:8 slabbe]:\n> I just uploaded the corrections patch because I did some doc and sphinx improvements.\n> \n> Vincent, can you review those small changes I did?\n\nThe doc is OK. positive review.",
     "created_at": "2010-01-07T23:38:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7543#issuecomment-64014",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
-Attachment [trac_7543_correction-sl.patch](tarball://root/attachments/some-uuid/ticket7543/trac_7543_correction-sl.patch) by vdelecroix created at 2010-01-07 23:38:59
+Attachment [trac_7543_correction-sl.patch](tarball://root/attachments/some-uuid/ticket7543/trac_7543_correction-sl.patch) by @videlec created at 2010-01-07 23:38:59
 
 Replying to [comment:8 slabbe]:
 > I just uploaded the corrections patch because I did some doc and sphinx improvements.
@@ -414,7 +414,7 @@ archive/issue_comments_064015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7543#issuecomment-64015",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -432,7 +432,7 @@ archive/issue_comments_064016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7543#issuecomment-64016",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -457,7 +457,7 @@ archive/issue_comments_064017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7543#issuecomment-64017",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -470,16 +470,16 @@ Apply only this one.
 archive/issue_comments_064018.json:
 ```json
 {
-    "body": "Attachment [trac_7543_s_adic_final.patch](tarball://root/attachments/some-uuid/ticket7543/trac_7543_s_adic_final.patch) by slabbe created at 2010-01-13 11:38:27\n\nSorry for that. There was something depending on patches at #7520. I commented out the offending line and now it should be fine.\n\nBeware, I folded all patches in the same \"final\" one.\n\nNeeds review again!",
+    "body": "Attachment [trac_7543_s_adic_final.patch](tarball://root/attachments/some-uuid/ticket7543/trac_7543_s_adic_final.patch) by @seblabbe created at 2010-01-13 11:38:27\n\nSorry for that. There was something depending on patches at #7520. I commented out the offending line and now it should be fine.\n\nBeware, I folded all patches in the same \"final\" one.\n\nNeeds review again!",
     "created_at": "2010-01-13T11:38:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7543#issuecomment-64018",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_7543_s_adic_final.patch](tarball://root/attachments/some-uuid/ticket7543/trac_7543_s_adic_final.patch) by slabbe created at 2010-01-13 11:38:27
+Attachment [trac_7543_s_adic_final.patch](tarball://root/attachments/some-uuid/ticket7543/trac_7543_s_adic_final.patch) by @seblabbe created at 2010-01-13 11:38:27
 
 Sorry for that. There was something depending on patches at #7520. I commented out the offending line and now it should be fine.
 
@@ -499,7 +499,7 @@ archive/issue_comments_064019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7543#issuecomment-64019",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -517,7 +517,7 @@ archive/issue_comments_064020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7543#issuecomment-64020",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -546,7 +546,7 @@ archive/issue_comments_064021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7543#issuecomment-64021",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -564,7 +564,7 @@ archive/issue_comments_064022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7543#issuecomment-64022",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -588,16 +588,16 @@ The rest is OK (I've got no doctesting error with the patch applied on a native 
 archive/issue_comments_064023.json:
 ```json
 {
-    "body": "Attachment [trac_7543_infinite_alphabet-sl.patch](tarball://root/attachments/some-uuid/ticket7543/trac_7543_infinite_alphabet-sl.patch) by slabbe created at 2010-01-15 17:37:52\n\nThis patch applies over the above 'final' patch.",
+    "body": "Attachment [trac_7543_infinite_alphabet-sl.patch](tarball://root/attachments/some-uuid/ticket7543/trac_7543_infinite_alphabet-sl.patch) by @seblabbe created at 2010-01-15 17:37:52\n\nThis patch applies over the above 'final' patch.",
     "created_at": "2010-01-15T17:37:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7543#issuecomment-64023",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_7543_infinite_alphabet-sl.patch](tarball://root/attachments/some-uuid/ticket7543/trac_7543_infinite_alphabet-sl.patch) by slabbe created at 2010-01-15 17:37:52
+Attachment [trac_7543_infinite_alphabet-sl.patch](tarball://root/attachments/some-uuid/ticket7543/trac_7543_infinite_alphabet-sl.patch) by @seblabbe created at 2010-01-15 17:37:52
 
 This patch applies over the above 'final' patch.
 
@@ -613,7 +613,7 @@ archive/issue_comments_064024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7543#issuecomment-64024",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -631,7 +631,7 @@ archive/issue_comments_064025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7543#issuecomment-64025",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -651,7 +651,7 @@ archive/issue_comments_064026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7543#issuecomment-64026",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -669,7 +669,7 @@ archive/issue_comments_064027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7543#issuecomment-64027",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -699,7 +699,7 @@ archive/issue_comments_064028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7543#issuecomment-64028",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002294.json:
 ```json
 {
-    "body": "Assignee: was\n\nWe see here that _interface_init_() on RDF loses the last few digits of its value, by truncation.\n\n\n```\nsage: RR(RDF(sin(1)))\n0.841470984807897\nsage: RR(RDF(sin(1))._interface_init_())\n0.841470984808000\n```\n\n\nI should have a patch for this very soon.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2294\n\n",
+    "body": "Assignee: @williamstein\n\nWe see here that _interface_init_() on RDF loses the last few digits of its value, by truncation.\n\n\n```\nsage: RR(RDF(sin(1)))\n0.841470984807897\nsage: RR(RDF(sin(1))._interface_init_())\n0.841470984808000\n```\n\n\nI should have a patch for this very soon.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2294\n\n",
     "created_at": "2008-02-24T19:18:35Z",
     "labels": [
         "interfaces",
@@ -17,7 +17,7 @@ archive/issues_002294.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 We see here that _interface_init_() on RDF loses the last few digits of its value, by truncation.
 
@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2294
 archive/issue_comments_015217.json:
 ```json
 {
-    "body": "Changing assignee from was to cwitty.",
+    "body": "Changing assignee from @williamstein to cwitty.",
     "created_at": "2008-02-24T21:09:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2294",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_015217.json:
 }
 ```
 
-Changing assignee from was to cwitty.
+Changing assignee from @williamstein to cwitty.
 
 
 
@@ -85,7 +85,7 @@ archive/issue_comments_015219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2294#issuecomment-15219",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

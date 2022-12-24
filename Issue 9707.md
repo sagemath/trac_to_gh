@@ -3,7 +3,7 @@
 archive/issues_009707.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  ncohen rlm dcoudert\n\nWe should have an option to g.laplacian() to return the signless Laplacian, which is attracting attention these days, and which is calculated by `D+A` instead of `D-A` (see p. 12 of http://www.doiserbia.nb.rs/ft.aspx?id=0350-13020795011C, for example).\n\nThanks to Steve Butler for the feature request.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9707\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @nathanncohen @rlmill @dcoudert\n\nWe should have an option to g.laplacian() to return the signless Laplacian, which is attracting attention these days, and which is calculated by `D+A` instead of `D-A` (see p. 12 of http://www.doiserbia.nb.rs/ft.aspx?id=0350-13020795011C, for example).\n\nThanks to Steve Butler for the feature request.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9707\n\n",
     "created_at": "2010-08-08T00:40:24Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_009707.json:
     "title": "Add a \"signless\" option to laplacian",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9707",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jason, ncohen, rlm
 
-CC:  ncohen rlm dcoudert
+CC:  @nathanncohen @rlmill @dcoudert
 
 We should have an option to g.laplacian() to return the signless Laplacian, which is attracting attention these days, and which is calculated by `D+A` instead of `D-A` (see p. 12 of http://www.doiserbia.nb.rs/ft.aspx?id=0350-13020795011C, for example).
 
@@ -66,7 +66,7 @@ archive/issue_comments_094613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9707#issuecomment-94613",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_094618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9707#issuecomment-94618",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_094619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9707#issuecomment-94619",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_094620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9707#issuecomment-94620",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

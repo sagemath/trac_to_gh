@@ -3,7 +3,7 @@
 archive/issues_008737.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  robertwb robert.marik drkirkby mvngu\n\nThis is a followup to [http://trac.sagemath.org/sage_trac/ticket/8424#comment:5](http://trac.sagemath.org/sage_trac/ticket/8424#comment:5).  Without this patch, the Sage library (as of 4.4.alpha0) doesn't build on t2.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8737\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @robertwb @robert-marik drkirkby mvngu\n\nThis is a followup to [http://trac.sagemath.org/sage_trac/ticket/8424#comment:5](http://trac.sagemath.org/sage_trac/ticket/8424#comment:5).  Without this patch, the Sage library (as of 4.4.alpha0) doesn't build on t2.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8737\n\n",
     "created_at": "2010-04-21T15:25:00Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_008737.json:
     "title": "compile plot3d/base.pyx and index_face_set with \"-std=c99\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8737",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: jason, was
 
-CC:  robertwb robert.marik drkirkby mvngu
+CC:  @robertwb @robert-marik drkirkby mvngu
 
 This is a followup to [http://trac.sagemath.org/sage_trac/ticket/8424#comment:5](http://trac.sagemath.org/sage_trac/ticket/8424#comment:5).  Without this patch, the Sage library (as of 4.4.alpha0) doesn't build on t2.
 
@@ -40,7 +40,7 @@ archive/issue_comments_079910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8737#issuecomment-79910",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -58,7 +58,7 @@ archive/issue_comments_079911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8737#issuecomment-79911",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_079912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8737#issuecomment-79912",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_079915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8737#issuecomment-79915",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_079916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8737#issuecomment-79916",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -190,16 +190,16 @@ I'm having the same problem with the file chmm.pyx, with the same solution.  So 
 archive/issue_comments_079917.json:
 ```json
 {
-    "body": "Attachment [trac_8737-std-c99.patch](tarball://root/attachments/some-uuid/ticket8737/trac_8737-std-c99.patch) by jhpalmieri created at 2010-04-22 02:18:49",
+    "body": "Attachment [trac_8737-std-c99.patch](tarball://root/attachments/some-uuid/ticket8737/trac_8737-std-c99.patch) by @jhpalmieri created at 2010-04-22 02:18:49",
     "created_at": "2010-04-22T02:18:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8737#issuecomment-79917",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8737-std-c99.patch](tarball://root/attachments/some-uuid/ticket8737/trac_8737-std-c99.patch) by jhpalmieri created at 2010-04-22 02:18:49
+Attachment [trac_8737-std-c99.patch](tarball://root/attachments/some-uuid/ticket8737/trac_8737-std-c99.patch) by @jhpalmieri created at 2010-04-22 02:18:49
 
 
 
@@ -213,7 +213,7 @@ archive/issue_comments_079918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8737#issuecomment-79918",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_079919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8737#issuecomment-79919",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_079920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8737#issuecomment-79920",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_079921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8737#issuecomment-79921",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_079922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8737#issuecomment-79922",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

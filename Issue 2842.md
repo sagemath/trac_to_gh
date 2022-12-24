@@ -14,7 +14,7 @@ archive/issues_002842.json:
     "title": "[with patch, needs review] PyLint unused variable cleanup for sage.rings.polynomial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2842",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: cwitty
@@ -39,16 +39,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2842
 archive/issue_comments_019501.json:
 ```json
 {
-    "body": "Attachment [pylint_polynomial_unused.patch](tarball://root/attachments/some-uuid/ticket2842/pylint_polynomial_unused.patch) by malb created at 2008-04-07 13:10:39",
+    "body": "Attachment [pylint_polynomial_unused.patch](tarball://root/attachments/some-uuid/ticket2842/pylint_polynomial_unused.patch) by @malb created at 2008-04-07 13:10:39",
     "created_at": "2008-04-07T13:10:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2842#issuecomment-19501",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [pylint_polynomial_unused.patch](tarball://root/attachments/some-uuid/ticket2842/pylint_polynomial_unused.patch) by malb created at 2008-04-07 13:10:39
+Attachment [pylint_polynomial_unused.patch](tarball://root/attachments/some-uuid/ticket2842/pylint_polynomial_unused.patch) by @malb created at 2008-04-07 13:10:39
 
 
 
@@ -57,16 +57,16 @@ Attachment [pylint_polynomial_unused.patch](tarball://root/attachments/some-uuid
 archive/issue_comments_019502.json:
 ```json
 {
-    "body": "Attachment [2842.patch](tarball://root/attachments/some-uuid/ticket2842/2842.patch) by mhansen created at 2008-04-07 22:55:03\n\nLooks good to me.  Apply just 2842.patch after #2844 .",
+    "body": "Attachment [2842.patch](tarball://root/attachments/some-uuid/ticket2842/2842.patch) by @mwhansen created at 2008-04-07 22:55:03\n\nLooks good to me.  Apply just 2842.patch after #2844 .",
     "created_at": "2008-04-07T22:55:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2842#issuecomment-19502",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2842.patch](tarball://root/attachments/some-uuid/ticket2842/2842.patch) by mhansen created at 2008-04-07 22:55:03
+Attachment [2842.patch](tarball://root/attachments/some-uuid/ticket2842/2842.patch) by @mwhansen created at 2008-04-07 22:55:03
 
 Looks good to me.  Apply just 2842.patch after #2844 .
 

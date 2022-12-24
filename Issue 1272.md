@@ -3,7 +3,7 @@
 archive/issues_001272.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nThis has been a while in the making, but PolyBoRi has finally been released to the public.\n\nCheers,\n\nMichaek\n\nIssue created by migration from https://trac.sagemath.org/ticket/1272\n\n",
+    "body": "Assignee: @burcin\n\nThis has been a while in the making, but PolyBoRi has finally been released to the public.\n\nCheers,\n\nMichaek\n\nIssue created by migration from https://trac.sagemath.org/ticket/1272\n\n",
     "created_at": "2007-11-25T18:33:04Z",
     "labels": [
         "packages: standard",
@@ -17,7 +17,7 @@ archive/issues_001272.json:
     "user": "mabshoff"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 This has been a while in the making, but PolyBoRi has finally been released to the public.
 

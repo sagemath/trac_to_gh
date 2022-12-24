@@ -3,7 +3,7 @@
 archive/issues_001973.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nThis patch replaces the wrapper around Gap to give the conjugate partition.  It speeds up the computation quite a bit.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1973\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThis patch replaces the wrapper around Gap to give the conjugate partition.  It speeds up the computation quite a bit.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1973\n\n",
     "created_at": "2008-01-29T16:13:05Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001973.json:
     "title": "native partition_associated function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1973",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -58,7 +58,7 @@ archive/issue_comments_012771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1973#issuecomment-12771",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_012772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1973#issuecomment-12772",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_012773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1973#issuecomment-12773",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_012774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1973#issuecomment-12774",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -176,16 +176,16 @@ So I'll post a minor patch to Mike's code.
 archive/issue_comments_012775.json:
 ```json
 {
-    "body": "Attachment [conjugate-partition.2.patch](tarball://root/attachments/some-uuid/ticket1973/conjugate-partition.2.patch) by jason created at 2008-01-29 22:00:45\n\napply instead of first patch.",
+    "body": "Attachment [conjugate-partition.2.patch](tarball://root/attachments/some-uuid/ticket1973/conjugate-partition.2.patch) by @jasongrout created at 2008-01-29 22:00:45\n\napply instead of first patch.",
     "created_at": "2008-01-29T22:00:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1973#issuecomment-12775",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [conjugate-partition.2.patch](tarball://root/attachments/some-uuid/ticket1973/conjugate-partition.2.patch) by jason created at 2008-01-29 22:00:45
+Attachment [conjugate-partition.2.patch](tarball://root/attachments/some-uuid/ticket1973/conjugate-partition.2.patch) by @jasongrout created at 2008-01-29 22:00:45
 
 apply instead of first patch.
 
@@ -201,7 +201,7 @@ archive/issue_comments_012776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1973#issuecomment-12776",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -214,16 +214,16 @@ apply instead of first two patches.
 archive/issue_comments_012777.json:
 ```json
 {
-    "body": "Attachment [conjugate-partition.3.patch](tarball://root/attachments/some-uuid/ticket1973/conjugate-partition.3.patch) by jason created at 2008-01-29 22:17:05\n\nYet again, apply this instead of the previous patches.",
+    "body": "Attachment [conjugate-partition.3.patch](tarball://root/attachments/some-uuid/ticket1973/conjugate-partition.3.patch) by @jasongrout created at 2008-01-29 22:17:05\n\nYet again, apply this instead of the previous patches.",
     "created_at": "2008-01-29T22:17:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1973#issuecomment-12777",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [conjugate-partition.3.patch](tarball://root/attachments/some-uuid/ticket1973/conjugate-partition.3.patch) by jason created at 2008-01-29 22:17:05
+Attachment [conjugate-partition.3.patch](tarball://root/attachments/some-uuid/ticket1973/conjugate-partition.3.patch) by @jasongrout created at 2008-01-29 22:17:05
 
 Yet again, apply this instead of the previous patches.
 
@@ -234,16 +234,16 @@ Yet again, apply this instead of the previous patches.
 archive/issue_comments_012778.json:
 ```json
 {
-    "body": "Attachment [conjugate-partition.4.patch](tarball://root/attachments/some-uuid/ticket1973/conjugate-partition.4.patch) by mhansen created at 2008-01-29 22:18:28\n\nLooks good to me.",
+    "body": "Attachment [conjugate-partition.4.patch](tarball://root/attachments/some-uuid/ticket1973/conjugate-partition.4.patch) by @mwhansen created at 2008-01-29 22:18:28\n\nLooks good to me.",
     "created_at": "2008-01-29T22:18:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1973#issuecomment-12778",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [conjugate-partition.4.patch](tarball://root/attachments/some-uuid/ticket1973/conjugate-partition.4.patch) by mhansen created at 2008-01-29 22:18:28
+Attachment [conjugate-partition.4.patch](tarball://root/attachments/some-uuid/ticket1973/conjugate-partition.4.patch) by @mwhansen created at 2008-01-29 22:18:28
 
 Looks good to me.
 
@@ -384,7 +384,7 @@ archive/issue_comments_012785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1973#issuecomment-12785",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -403,16 +403,16 @@ Mike, do you know what is going on?
 archive/issue_comments_012786.json:
 ```json
 {
-    "body": "Attachment [conjugate-partition.5.patch](tarball://root/attachments/some-uuid/ticket1973/conjugate-partition.5.patch) by mhansen created at 2008-01-31 06:35:15\n\nI posted a new patch which should take care of this issue (although I never experienced the -ba issue on my machine).",
+    "body": "Attachment [conjugate-partition.5.patch](tarball://root/attachments/some-uuid/ticket1973/conjugate-partition.5.patch) by @mwhansen created at 2008-01-31 06:35:15\n\nI posted a new patch which should take care of this issue (although I never experienced the -ba issue on my machine).",
     "created_at": "2008-01-31T06:35:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1973#issuecomment-12786",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [conjugate-partition.5.patch](tarball://root/attachments/some-uuid/ticket1973/conjugate-partition.5.patch) by mhansen created at 2008-01-31 06:35:15
+Attachment [conjugate-partition.5.patch](tarball://root/attachments/some-uuid/ticket1973/conjugate-partition.5.patch) by @mwhansen created at 2008-01-31 06:35:15
 
 I posted a new patch which should take care of this issue (although I never experienced the -ba issue on my machine).
 
@@ -423,16 +423,16 @@ I posted a new patch which should take care of this issue (although I never expe
 archive/issue_comments_012787.json:
 ```json
 {
-    "body": "Attachment [1973.patch](tarball://root/attachments/some-uuid/ticket1973/1973.patch) by mhansen created at 2008-02-01 04:19:42",
+    "body": "Attachment [1973.patch](tarball://root/attachments/some-uuid/ticket1973/1973.patch) by @mwhansen created at 2008-02-01 04:19:42",
     "created_at": "2008-02-01T04:19:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1973#issuecomment-12787",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1973.patch](tarball://root/attachments/some-uuid/ticket1973/1973.patch) by mhansen created at 2008-02-01 04:19:42
+Attachment [1973.patch](tarball://root/attachments/some-uuid/ticket1973/1973.patch) by @mwhansen created at 2008-02-01 04:19:42
 
 
 

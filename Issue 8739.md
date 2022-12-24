@@ -3,7 +3,7 @@
 archive/issues_008739.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  slabbe tmonteil\n\nKeywords: Kolakoski, words\n\nThe Kolakoski words are important in combinatorics on words and there are many interesting conjectures that one would like to solve using Sage.\n\nThis ticket intends to add a constructor of such words.\n\nBy definition, the Kolakoski word is the infinite word `K = 22112122...` fixed under the `Delta` operator. The `Delta` of a word is simply the word describing its runs. For instance, if `w = 122112 = 1^1 2^2 1^2 2^1`, then `Delta(w) = 1221`. One can see that over the alphabet '{1,2}', the unique words fixed by `Delta` are `K` and `1K`. Moreover, this notion is naturally generalized to any alphabet `{a,b}` where `a` and `b` are two distinct positive integers.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8739\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  @seblabbe tmonteil\n\nKeywords: Kolakoski, words\n\nThe Kolakoski words are important in combinatorics on words and there are many interesting conjectures that one would like to solve using Sage.\n\nThis ticket intends to add a constructor of such words.\n\nBy definition, the Kolakoski word is the infinite word `K = 22112122...` fixed under the `Delta` operator. The `Delta` of a word is simply the word describing its runs. For instance, if `w = 122112 = 1^1 2^2 1^2 2^1`, then `Delta(w) = 1221`. One can see that over the alphabet '{1,2}', the unique words fixed by `Delta` are `K` and `1K`. Moreover, this notion is naturally generalized to any alphabet `{a,b}` where `a` and `b` are two distinct positive integers.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8739\n\n",
     "created_at": "2010-04-21T17:20:15Z",
     "labels": [
         "combinatorics",
@@ -19,7 +19,7 @@ archive/issues_008739.json:
 ```
 Assignee: sage-combinat
 
-CC:  slabbe tmonteil
+CC:  @seblabbe tmonteil
 
 Keywords: Kolakoski, words
 
@@ -121,7 +121,7 @@ archive/issue_comments_079935.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8739#issuecomment-79935",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_079936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8739#issuecomment-79936",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_079939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8739#issuecomment-79939",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -304,16 +304,16 @@ I uploaded a patch that applies on top of the main one. It takes into account th
 archive/issue_comments_079943.json:
 ```json
 {
-    "body": "Attachment [trac_8739-review-sl.patch](tarball://root/attachments/some-uuid/ticket8739/trac_8739-review-sl.patch) by slabbe created at 2010-11-14 06:03:22\n\nApplies over the precedent 2 patches",
+    "body": "Attachment [trac_8739-review-sl.patch](tarball://root/attachments/some-uuid/ticket8739/trac_8739-review-sl.patch) by @seblabbe created at 2010-11-14 06:03:22\n\nApplies over the precedent 2 patches",
     "created_at": "2010-11-14T06:03:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8739#issuecomment-79943",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8739-review-sl.patch](tarball://root/attachments/some-uuid/ticket8739/trac_8739-review-sl.patch) by slabbe created at 2010-11-14 06:03:22
+Attachment [trac_8739-review-sl.patch](tarball://root/attachments/some-uuid/ticket8739/trac_8739-review-sl.patch) by @seblabbe created at 2010-11-14 06:03:22
 
 Applies over the precedent 2 patches
 
@@ -329,7 +329,7 @@ archive/issue_comments_079944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8739#issuecomment-79944",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -371,7 +371,7 @@ archive/issue_comments_079946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8739#issuecomment-79946",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -389,7 +389,7 @@ archive/issue_comments_079947.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8739#issuecomment-79947",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -411,7 +411,7 @@ archive/issue_comments_079948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8739#issuecomment-79948",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

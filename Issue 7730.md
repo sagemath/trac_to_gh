@@ -3,7 +3,7 @@
 archive/issues_007730.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nKeywords: matrices, hessenberg form\n\nI heard of the following bug report through William.\n\nBug report\n----------\n\nSimple 8X8 matrix determinant computation makes sage hang:\n\n\n```\ndef genVar(i):\n    return \"x%i\"%i\n\ndef matrix_from_hash(h):\n    R=FractionField(PolynomialRing(GF(2),\",\".join(map(genVar,range(0,10)))))\n    h2 = {}\n    for p in h:\n        x=R.zero_element()\n        for v in h[p]:\n            x=x+R.gens()[v]\n        h2[p] = x\n        h2[p[1],p[0]] = x\n    return matrix(h2,sparse=False)\n\ndef test():\n    m = matrix_from_hash({(0, 1): [0, 5], (1, 2): [0], (5, 6): [2], (6, 7): [1], (4, 5): [4], (0, 7): [1, 7], (0, 6): [2, 1], (0, 5): [4, 2], (0, 4): [3, 4], (2, 3): [6], (0, 3): [6, 3], (3, 4): [3], (0, 2): [0, 6]})\n    print m\n    m.charpoly()\n```\n\n\nOn the other hand if m.det() is replaced m.inverse(), it runs through in no time.\n\nThe determinant of the matrix is a sum of two monomials: ``x1*x4*x5*x6 + x0*x2*x3*x7``, but even the most primitive implementation (summing all 8! permutations,most of them zero) should run through in much less than minute.\n\nNotes\n-----\n\nI could only look at this briefly so far.  The problem is --- this is perhaps unexpected --- not with the more recent implementation of \"_charpoly_df\".  In fact, in the method \"charpoly\", the method selected is \"_charpoly_hessenberg\".  Both methods \"hessenberg\" and \"hessenbergize\" reveal this problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7730\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: matrices, hessenberg form\n\nI heard of the following bug report through William.\n\nBug report\n----------\n\nSimple 8X8 matrix determinant computation makes sage hang:\n\n\n```\ndef genVar(i):\n    return \"x%i\"%i\n\ndef matrix_from_hash(h):\n    R=FractionField(PolynomialRing(GF(2),\",\".join(map(genVar,range(0,10)))))\n    h2 = {}\n    for p in h:\n        x=R.zero_element()\n        for v in h[p]:\n            x=x+R.gens()[v]\n        h2[p] = x\n        h2[p[1],p[0]] = x\n    return matrix(h2,sparse=False)\n\ndef test():\n    m = matrix_from_hash({(0, 1): [0, 5], (1, 2): [0], (5, 6): [2], (6, 7): [1], (4, 5): [4], (0, 7): [1, 7], (0, 6): [2, 1], (0, 5): [4, 2], (0, 4): [3, 4], (2, 3): [6], (0, 3): [6, 3], (3, 4): [3], (0, 2): [0, 6]})\n    print m\n    m.charpoly()\n```\n\n\nOn the other hand if m.det() is replaced m.inverse(), it runs through in no time.\n\nThe determinant of the matrix is a sum of two monomials: ``x1*x4*x5*x6 + x0*x2*x3*x7``, but even the most primitive implementation (summing all 8! permutations,most of them zero) should run through in much less than minute.\n\nNotes\n-----\n\nI could only look at this briefly so far.  The problem is --- this is perhaps unexpected --- not with the more recent implementation of \"_charpoly_df\".  In fact, in the method \"charpoly\", the method selected is \"_charpoly_hessenberg\".  Both methods \"hessenberg\" and \"hessenbergize\" reveal this problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7730\n\n",
     "created_at": "2009-12-18T02:53:45Z",
     "labels": [
         "algebra",
@@ -16,7 +16,7 @@ archive/issues_007730.json:
     "user": "spancratz"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Keywords: matrices, hessenberg form
 
@@ -70,7 +70,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7730
 archive/issue_comments_066424.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to spancratz.",
+    "body": "Changing assignee from @aghitza to spancratz.",
     "created_at": "2009-12-18T02:56:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7730",
     "type": "issue_comment",
@@ -79,7 +79,7 @@ archive/issue_comments_066424.json:
 }
 ```
 
-Changing assignee from AlexGhitza to spancratz.
+Changing assignee from @aghitza to spancratz.
 
 
 
@@ -139,7 +139,7 @@ archive/issue_comments_066427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7730",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7730#issuecomment-66427",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_066431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7730",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7730#issuecomment-66431",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -278,7 +278,7 @@ archive/issue_comments_066432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7730",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7730#issuecomment-66432",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_004418.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  malb\n\nKeywords: crypto/mq\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4418\n\n",
+    "body": "Assignee: tba\n\nCC:  @malb\n\nKeywords: crypto/mq\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4418\n\n",
     "created_at": "2008-11-01T09:45:42Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_004418.json:
 ```
 Assignee: tba
 
-CC:  malb
+CC:  @malb
 
 Keywords: crypto/mq
 

@@ -14,7 +14,7 @@ archive/issues_006109.json:
     "title": "Bring documentation for QQbar up to 100% and add to reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6109",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 Assignee: tbd
@@ -48,7 +48,7 @@ archive/issue_comments_048802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6109#issuecomment-48802",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -61,16 +61,16 @@ I should have said:  there is an excellent block of nearly 500 lines at the begi
 archive/issue_comments_048803.json:
 ```json
 {
-    "body": "Attachment [trac_6109_1.patch](tarball://root/attachments/some-uuid/ticket6109/trac_6109_1.patch) by cremona created at 2009-05-21 11:32:38\n\nPart 1: applies to 4.0.alpha0",
+    "body": "Attachment [trac_6109_1.patch](tarball://root/attachments/some-uuid/ticket6109/trac_6109_1.patch) by @JohnCremona created at 2009-05-21 11:32:38\n\nPart 1: applies to 4.0.alpha0",
     "created_at": "2009-05-21T11:32:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6109#issuecomment-48803",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_6109_1.patch](tarball://root/attachments/some-uuid/ticket6109/trac_6109_1.patch) by cremona created at 2009-05-21 11:32:38
+Attachment [trac_6109_1.patch](tarball://root/attachments/some-uuid/ticket6109/trac_6109_1.patch) by @JohnCremona created at 2009-05-21 11:32:38
 
 Part 1: applies to 4.0.alpha0
 
@@ -86,7 +86,7 @@ archive/issue_comments_048804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6109#issuecomment-48804",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_048805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6109#issuecomment-48805",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_048806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6109#issuecomment-48806",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_048807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6109#issuecomment-48807",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -183,16 +183,16 @@ Thanks, David -- I spent ages trying to track down that error but without succes
 archive/issue_comments_048808.json:
 ```json
 {
-    "body": "Attachment [6109_fix.patch](tarball://root/attachments/some-uuid/ticket6109/6109_fix.patch) by davidloeffler created at 2009-05-28 12:43:57\n\none-line ReST fix",
+    "body": "Attachment [6109_fix.patch](tarball://root/attachments/some-uuid/ticket6109/6109_fix.patch) by @loefflerd created at 2009-05-28 12:43:57\n\none-line ReST fix",
     "created_at": "2009-05-28T12:43:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6109#issuecomment-48808",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [6109_fix.patch](tarball://root/attachments/some-uuid/ticket6109/6109_fix.patch) by davidloeffler created at 2009-05-28 12:43:57
+Attachment [6109_fix.patch](tarball://root/attachments/some-uuid/ticket6109/6109_fix.patch) by @loefflerd created at 2009-05-28 12:43:57
 
 one-line ReST fix
 
@@ -208,7 +208,7 @@ archive/issue_comments_048809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6109#issuecomment-48809",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_048810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6109#issuecomment-48810",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_048811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6109#issuecomment-48811",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_048812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6109#issuecomment-48812",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

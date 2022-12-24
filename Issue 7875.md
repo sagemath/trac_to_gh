@@ -14,7 +14,7 @@ archive/issues_007875.json:
     "title": "sage -preparse fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7875",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 Assignee: tbd
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7875
 archive/issue_comments_068415.json:
 ```json
 {
-    "body": "Attachment [sage-scripts-7875.patch](tarball://root/attachments/some-uuid/ticket7875/sage-scripts-7875.patch) by was created at 2010-01-10 22:26:28",
+    "body": "Attachment [sage-scripts-7875.patch](tarball://root/attachments/some-uuid/ticket7875/sage-scripts-7875.patch) by @williamstein created at 2010-01-10 22:26:28",
     "created_at": "2010-01-10T22:26:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7875",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7875#issuecomment-68415",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-scripts-7875.patch](tarball://root/attachments/some-uuid/ticket7875/sage-scripts-7875.patch) by was created at 2010-01-10 22:26:28
+Attachment [sage-scripts-7875.patch](tarball://root/attachments/some-uuid/ticket7875/sage-scripts-7875.patch) by @williamstein created at 2010-01-10 22:26:28
 
 
 
@@ -68,7 +68,7 @@ archive/issue_comments_068416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7875",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7875#issuecomment-68416",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_068417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7875",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7875#issuecomment-68417",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_068418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7875",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7875#issuecomment-68418",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_068419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7875",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7875#issuecomment-68419",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_068420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7875",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7875#issuecomment-68420",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

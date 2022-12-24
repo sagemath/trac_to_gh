@@ -3,7 +3,7 @@
 archive/issues_007323.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nAs motivated by a discussion on [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/7096309ff3af9d95), here are two minor documentation changes for simplicial complexes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7323\n\n",
+    "body": "Assignee: @jhpalmieri\n\nAs motivated by a discussion on [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/7096309ff3af9d95), here are two minor documentation changes for simplicial complexes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7323\n\n",
     "created_at": "2009-10-27T18:48:43Z",
     "labels": [
         "algebraic topology",
@@ -14,10 +14,10 @@ archive/issues_007323.json:
     "title": "tinkering with documentation for simplicial complexes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7323",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 As motivated by a discussion on [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/7096309ff3af9d95), here are two minor documentation changes for simplicial complexes.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7323
 archive/issue_comments_061191.json:
 ```json
 {
-    "body": "Attachment [trac_7323-simplicial.patch](tarball://root/attachments/some-uuid/ticket7323/trac_7323-simplicial.patch) by jhpalmieri created at 2009-10-27 18:49:36",
+    "body": "Attachment [trac_7323-simplicial.patch](tarball://root/attachments/some-uuid/ticket7323/trac_7323-simplicial.patch) by @jhpalmieri created at 2009-10-27 18:49:36",
     "created_at": "2009-10-27T18:49:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7323#issuecomment-61191",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_7323-simplicial.patch](tarball://root/attachments/some-uuid/ticket7323/trac_7323-simplicial.patch) by jhpalmieri created at 2009-10-27 18:49:36
+Attachment [trac_7323-simplicial.patch](tarball://root/attachments/some-uuid/ticket7323/trac_7323-simplicial.patch) by @jhpalmieri created at 2009-10-27 18:49:36
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_061192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7323#issuecomment-61192",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_061193.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7323#issuecomment-61193",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_061195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7323#issuecomment-61195",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -122,16 +122,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_061196.json:
 ```json
 {
-    "body": "Attachment [trac_7323-simplicial-v2.patch](tarball://root/attachments/some-uuid/ticket7323/trac_7323-simplicial-v2.patch) by jhpalmieri created at 2009-10-28 22:00:48\n\napply only this patch",
+    "body": "Attachment [trac_7323-simplicial-v2.patch](tarball://root/attachments/some-uuid/ticket7323/trac_7323-simplicial-v2.patch) by @jhpalmieri created at 2009-10-28 22:00:48\n\napply only this patch",
     "created_at": "2009-10-28T22:00:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7323#issuecomment-61196",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_7323-simplicial-v2.patch](tarball://root/attachments/some-uuid/ticket7323/trac_7323-simplicial-v2.patch) by jhpalmieri created at 2009-10-28 22:00:48
+Attachment [trac_7323-simplicial-v2.patch](tarball://root/attachments/some-uuid/ticket7323/trac_7323-simplicial-v2.patch) by @jhpalmieri created at 2009-10-28 22:00:48
 
 apply only this patch
 
@@ -147,7 +147,7 @@ archive/issue_comments_061197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7323#issuecomment-61197",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_061198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7323#issuecomment-61198",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

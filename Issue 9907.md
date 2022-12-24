@@ -3,7 +3,7 @@
 archive/issues_009907.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  eviatarbach\n\nThe parsing of Maxima's output is not good enough to handle this:\n\n\n```\nvar('n')\nsum(((2*I)^n/(n^3+1)*(1/4)^n), n, 0, infinity)\n```\n\ngives an exception\n\n```\nTypeError: unable to make sense of Maxima expression 'f[4,3]([1,1,-(sqrt(3)*I+1)/2,(sqrt(3)*I-1)/2],[2,-(sqrt(3)*I-1)/2,(sqrt(3)*I+1)/2],I/2)' in Sage\n```\n\nwhich is - i think - a f_43 hypergeometric function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9908\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @eviatarbach\n\nThe parsing of Maxima's output is not good enough to handle this:\n\n\n```\nvar('n')\nsum(((2*I)^n/(n^3+1)*(1/4)^n), n, 0, infinity)\n```\n\ngives an exception\n\n```\nTypeError: unable to make sense of Maxima expression 'f[4,3]([1,1,-(sqrt(3)*I+1)/2,(sqrt(3)*I-1)/2],[2,-(sqrt(3)*I-1)/2,(sqrt(3)*I+1)/2],I/2)' in Sage\n```\n\nwhich is - i think - a f_43 hypergeometric function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9908\n\n",
     "created_at": "2010-09-14T10:31:28Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_009907.json:
     "title": "maxima sum returns hypergeometric function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9907",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  eviatarbach
+CC:  @eviatarbach
 
 The parsing of Maxima's output is not good enough to handle this:
 
@@ -53,7 +53,7 @@ archive/issue_comments_098544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9907#issuecomment-98544",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_098545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9907#issuecomment-98545",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_098546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9907#issuecomment-98546",
-    "user": "eviatarbach"
+    "user": "@eviatarbach"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_098547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9907#issuecomment-98547",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_098548.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9907#issuecomment-98548",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_098549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9907#issuecomment-98549",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_098550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9907#issuecomment-98550",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_098551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9907#issuecomment-98551",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_098552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9907#issuecomment-98552",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_098553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9907#issuecomment-98553",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -303,7 +303,7 @@ archive/issue_comments_098554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9907#issuecomment-98554",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -321,7 +321,7 @@ archive/issue_comments_098555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9907#issuecomment-98555",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -344,7 +344,7 @@ archive/issue_comments_098556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9907#issuecomment-98556",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_098557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9907#issuecomment-98557",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

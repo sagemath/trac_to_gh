@@ -14,7 +14,7 @@ archive/issues_006128.json:
     "title": "[with patch; needs review] Bug - sage-cleaner failed due to NULLs in spawned-processes files written by cleaner.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6128",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -276,7 +276,7 @@ archive/issue_comments_048959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6128#issuecomment-48959",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -368,7 +368,7 @@ archive/issue_comments_048960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6128#issuecomment-48960",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -417,7 +417,7 @@ archive/issue_comments_048961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6128#issuecomment-48961",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

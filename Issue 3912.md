@@ -14,7 +14,7 @@ archive/issues_003912.json:
     "title": "sage -t foo.tex should also test listings blocks not only verbatim",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3912",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: tba
@@ -58,7 +58,7 @@ archive/issue_comments_027979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3912#issuecomment-27979",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_027980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3912#issuecomment-27980",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_027981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3912#issuecomment-27981",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_027982.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3912#issuecomment-27982",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_027983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3912#issuecomment-27983",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_027984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3912#issuecomment-27984",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_027986.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3912#issuecomment-27986",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_027987.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3912#issuecomment-27987",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000412.json:
 ```json
 {
-    "body": "Assignee: was\n\nHere's a beginning of the huge NTL rewrite which Craig Citro and David Harvey have spent so much time poring over.  All this patch does is fixes some naming conventions to prepare the way for a more piecemeal patching of the rest.  It was getting pretty ugly as a whole.\n\nIssue created by migration from https://trac.sagemath.org/ticket/412\n\n",
+    "body": "Assignee: @williamstein\n\nHere's a beginning of the huge NTL rewrite which Craig Citro and David Harvey have spent so much time poring over.  All this patch does is fixes some naming conventions to prepare the way for a more piecemeal patching of the rest.  It was getting pretty ugly as a whole.\n\nIssue created by migration from https://trac.sagemath.org/ticket/412\n\n",
     "created_at": "2007-08-09T02:32:58Z",
     "labels": [
         "interfaces",
@@ -17,7 +17,7 @@ archive/issues_000412.json:
     "user": "jbmohler"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Here's a beginning of the huge NTL rewrite which Craig Citro and David Harvey have spent so much time poring over.  All this patch does is fixes some naming conventions to prepare the way for a more piecemeal patching of the rest.  It was getting pretty ugly as a whole.
 
@@ -136,7 +136,7 @@ archive/issue_comments_002037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/412",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/412#issuecomment-2037",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

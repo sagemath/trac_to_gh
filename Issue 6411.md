@@ -3,7 +3,7 @@
 archive/issues_006411.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  was\n\nWilliam was complaining about being unable to reproduce this, so here's an easy way to reproduce it:\n\nTake sage-4.1.alpha1, do an sdist, and try running sage. Boom.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6411\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @williamstein\n\nWilliam was complaining about being unable to reproduce this, so here's an easy way to reproduce it:\n\nTake sage-4.1.alpha1, do an sdist, and try running sage. Boom.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6411\n\n",
     "created_at": "2009-06-25T17:28:23Z",
     "labels": [
         "distribution",
@@ -14,12 +14,12 @@ archive/issues_006411.json:
     "title": "sdist makes sage unable to run without building",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6411",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
-CC:  was
+CC:  @williamstein
 
 William was complaining about being unable to reproduce this, so here's an easy way to reproduce it:
 
@@ -41,7 +41,7 @@ archive/issue_comments_051484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6411#issuecomment-51484",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_051485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6411#issuecomment-51485",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -80,16 +80,16 @@ This causes libcsage to be built again.  What we should do instead is delete the
 archive/issue_comments_051486.json:
 ```json
 {
-    "body": "Attachment [trac_6411.patch](tarball://root/attachments/some-uuid/ticket6411/trac_6411.patch) by mhansen created at 2010-01-17 01:53:22",
+    "body": "Attachment [trac_6411.patch](tarball://root/attachments/some-uuid/ticket6411/trac_6411.patch) by @mwhansen created at 2010-01-17 01:53:22",
     "created_at": "2010-01-17T01:53:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6411#issuecomment-51486",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6411.patch](tarball://root/attachments/some-uuid/ticket6411/trac_6411.patch) by mhansen created at 2010-01-17 01:53:22
+Attachment [trac_6411.patch](tarball://root/attachments/some-uuid/ticket6411/trac_6411.patch) by @mwhansen created at 2010-01-17 01:53:22
 
 
 
@@ -103,7 +103,7 @@ archive/issue_comments_051487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6411#issuecomment-51487",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_051488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6411#issuecomment-51488",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_051489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6411#issuecomment-51489",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_051490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6411#issuecomment-51490",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

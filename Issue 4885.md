@@ -3,7 +3,7 @@
 archive/issues_004885.json:
 ```json
 {
-    "body": "Assignee: was\n\nI refereed trac #4535 and I made some serious mistakes in accepting that patch.  This ticket will be about fixing all of those mistakes.\n\n* the function xmin/xmax/ymin/ymax were all removed.  They *must* be all added back exactly as before.  There is a lot of code out there that depends on it.  Also, we do not just delete functions in sage without deprecating them for at least 6 months first.\n\n* some of the new functions get_* have no documentation or docstrings.  Fix this. \n\n* Do \"sage -t\" on the *old* plot.py using the newest version of sage, and make sure nothing breaks (e.g., examples that use .xmin, etc.)  Fix anything that does, or at least *discuss* it.\n\n\nUnless somebody beats me to it, I'll do this, since it is my fault #4535 got a positive review.  I'll post to this ticket, as soon as I work on this, so if I haven't posted a message below that I'm working on it, I haven't started. \n\n  -- William \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4885\n\n",
+    "body": "Assignee: @williamstein\n\nI refereed trac #4535 and I made some serious mistakes in accepting that patch.  This ticket will be about fixing all of those mistakes.\n\n* the function xmin/xmax/ymin/ymax were all removed.  They *must* be all added back exactly as before.  There is a lot of code out there that depends on it.  Also, we do not just delete functions in sage without deprecating them for at least 6 months first.\n\n* some of the new functions get_* have no documentation or docstrings.  Fix this. \n\n* Do \"sage -t\" on the *old* plot.py using the newest version of sage, and make sure nothing breaks (e.g., examples that use .xmin, etc.)  Fix anything that does, or at least *discuss* it.\n\n\nUnless somebody beats me to it, I'll do this, since it is my fault #4535 got a positive review.  I'll post to this ticket, as soon as I work on this, so if I haven't posted a message below that I'm working on it, I haven't started. \n\n  -- William \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4885\n\n",
     "created_at": "2008-12-28T23:25:41Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_004885.json:
     "title": "fix fallout from sloppy review of 4535",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4885",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I refereed trac #4535 and I made some serious mistakes in accepting that patch.  This ticket will be about fixing all of those mistakes.
 
@@ -49,7 +49,7 @@ archive/issue_comments_037029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4885#issuecomment-37029",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_037030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4885#issuecomment-37030",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_037033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4885#issuecomment-37033",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_037034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4885#issuecomment-37034",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -213,16 +213,16 @@ Everything else is harmless as far as I can tell.
 archive/issue_comments_037035.json:
 ```json
 {
-    "body": "Attachment [trac_4885.patch](tarball://root/attachments/some-uuid/ticket4885/trac_4885.patch) by was created at 2008-12-31 01:20:05\n\nthis patch fixes all the problems reported in the tickets and commentary up to this point.",
+    "body": "Attachment [trac_4885.patch](tarball://root/attachments/some-uuid/ticket4885/trac_4885.patch) by @williamstein created at 2008-12-31 01:20:05\n\nthis patch fixes all the problems reported in the tickets and commentary up to this point.",
     "created_at": "2008-12-31T01:20:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4885#issuecomment-37035",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4885.patch](tarball://root/attachments/some-uuid/ticket4885/trac_4885.patch) by was created at 2008-12-31 01:20:05
+Attachment [trac_4885.patch](tarball://root/attachments/some-uuid/ticket4885/trac_4885.patch) by @williamstein created at 2008-12-31 01:20:05
 
 this patch fixes all the problems reported in the tickets and commentary up to this point.
 
@@ -238,7 +238,7 @@ archive/issue_comments_037036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4885#issuecomment-37036",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_037037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4885#issuecomment-37037",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -284,16 +284,16 @@ The first is very clear and explicit, but of course not right anymore.  The seco
 archive/issue_comments_037038.json:
 ```json
 {
-    "body": "Attachment [trac_4885-2.patch](tarball://root/attachments/some-uuid/ticket4885/trac_4885-2.patch) by was created at 2009-01-02 21:26:34\n\nAssuming mhansen gave my patch a positive review modulo me giving his a positive review, this gets a positive review. I nitpick about the docs, but that's not enough to stop this going in.",
+    "body": "Attachment [trac_4885-2.patch](tarball://root/attachments/some-uuid/ticket4885/trac_4885-2.patch) by @williamstein created at 2009-01-02 21:26:34\n\nAssuming mhansen gave my patch a positive review modulo me giving his a positive review, this gets a positive review. I nitpick about the docs, but that's not enough to stop this going in.",
     "created_at": "2009-01-02T21:26:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4885#issuecomment-37038",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4885-2.patch](tarball://root/attachments/some-uuid/ticket4885/trac_4885-2.patch) by was created at 2009-01-02 21:26:34
+Attachment [trac_4885-2.patch](tarball://root/attachments/some-uuid/ticket4885/trac_4885-2.patch) by @williamstein created at 2009-01-02 21:26:34
 
 Assuming mhansen gave my patch a positive review modulo me giving his a positive review, this gets a positive review. I nitpick about the docs, but that's not enough to stop this going in.
 

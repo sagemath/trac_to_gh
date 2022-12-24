@@ -3,7 +3,7 @@
 archive/issues_000192.json:
 ```json
 {
-    "body": "Assignee: was\n\nFrom Nick A:\n\n```\nHere's a similar error.  I haven't tried with that patch, but my\nspidey-sense suggests a different issue:\n \nsage: R.<x> = Integers(5**2)['x']\nsage: S.<xbar> = R.quo(x^5 - x + 1)\nsage: (5*xbar + 1).lift() % 5\nZZ_p: division by non-invertible element\n/Users/nalexand/Devel/sage/local/bin/sage-sage: line 174: 10371 Abort\ntrap              sage-ipython -c \"$SAGE_STARTUP_COMMAND;\" \"$@\"\n \nNick\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/192\n\n",
+    "body": "Assignee: @williamstein\n\nFrom Nick A:\n\n```\nHere's a similar error.  I haven't tried with that patch, but my\nspidey-sense suggests a different issue:\n \nsage: R.<x> = Integers(5**2)['x']\nsage: S.<xbar> = R.quo(x^5 - x + 1)\nsage: (5*xbar + 1).lift() % 5\nZZ_p: division by non-invertible element\n/Users/nalexand/Devel/sage/local/bin/sage-sage: line 174: 10371 Abort\ntrap              sage-ipython -c \"$SAGE_STARTUP_COMMAND;\" \"$@\"\n \nNick\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/192\n\n",
     "created_at": "2007-01-15T08:40:06Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_000192.json:
     "title": "polynomial arithmetic bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/192",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 From Nick A:
 
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/192
 archive/issue_comments_000880.json:
 ```json
 {
-    "body": "Changing assignee from was to somebody.",
+    "body": "Changing assignee from @williamstein to somebody.",
     "created_at": "2007-01-15T08:40:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/192",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/192#issuecomment-880",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from was to somebody.
+Changing assignee from @williamstein to somebody.
 
 
 
@@ -70,7 +70,7 @@ archive/issue_comments_000881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/192",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/192#issuecomment-881",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_000882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/192",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/192#issuecomment-882",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_000883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/192",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/192#issuecomment-883",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_000884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/192",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/192#issuecomment-884",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

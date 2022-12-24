@@ -3,7 +3,7 @@
 archive/issues_004241.json:
 ```json
 {
-    "body": "Assignee: was\n\nObserve:\n\n```\nsage: a = magma('10000')\nsage: a.name()\n'_sage_[1]'\nsage: del a\nsage: magma.eval('_sage_[1]')\n'10000'\n```\n\n\nWhenever anybody ever creates a MagmaElement via the Magma interface, it doesn't get deleted.  This is because possible (1) the clear method in magma.py is commented out, and/or (2) the _available_var list that gets appended to in (1) isn't actually used by magma.py, so e.g., _sage_[1] in the example above never gets re-used. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4241\n\n",
+    "body": "Assignee: @williamstein\n\nObserve:\n\n```\nsage: a = magma('10000')\nsage: a.name()\n'_sage_[1]'\nsage: del a\nsage: magma.eval('_sage_[1]')\n'10000'\n```\n\n\nWhenever anybody ever creates a MagmaElement via the Magma interface, it doesn't get deleted.  This is because possible (1) the clear method in magma.py is commented out, and/or (2) the _available_var list that gets appended to in (1) isn't actually used by magma.py, so e.g., _sage_[1] in the example above never gets re-used. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4241\n\n",
     "created_at": "2008-10-04T05:01:55Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_004241.json:
     "title": "magma -- memory is never freed in the interface when MagmaElement's are deleted",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4241",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Observe:
 
@@ -50,7 +50,7 @@ archive/issue_comments_030825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4241",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4241#issuecomment-30825",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_030826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4241",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4241#issuecomment-30826",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_030827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4241",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4241#issuecomment-30827",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -141,16 +141,16 @@ sage: a = [magma('3^100000') for _ in range(1000)]; del a;magma.GetMemoryUsage()
 archive/issue_comments_030828.json:
 ```json
 {
-    "body": "Attachment [sage-4241.patch](tarball://root/attachments/some-uuid/ticket4241/sage-4241.patch) by was created at 2008-10-23 23:33:55",
+    "body": "Attachment [sage-4241.patch](tarball://root/attachments/some-uuid/ticket4241/sage-4241.patch) by @williamstein created at 2008-10-23 23:33:55",
     "created_at": "2008-10-23T23:33:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4241",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4241#issuecomment-30828",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-4241.patch](tarball://root/attachments/some-uuid/ticket4241/sage-4241.patch) by was created at 2008-10-23 23:33:55
+Attachment [sage-4241.patch](tarball://root/attachments/some-uuid/ticket4241/sage-4241.patch) by @williamstein created at 2008-10-23 23:33:55
 
 
 

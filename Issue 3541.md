@@ -3,7 +3,7 @@
 archive/issues_003541.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  rlm mabshoff\n\nWanted:  New code to make a pretty plot of graphs with multiedges.  I'm working on a patch now and will post it soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3541\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @rlmill mabshoff\n\nWanted:  New code to make a pretty plot of graphs with multiedges.  I'm working on a patch now and will post it soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3541\n\n",
     "created_at": "2008-07-01T21:57:08Z",
     "labels": [
         "graph theory",
@@ -17,9 +17,9 @@ archive/issues_003541.json:
     "user": "ekirkman"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  rlm mabshoff
+CC:  @rlmill mabshoff
 
 Wanted:  New code to make a pretty plot of graphs with multiedges.  I'm working on a patch now and will post it soon.
 
@@ -39,7 +39,7 @@ archive/issue_comments_025025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3541#issuecomment-25025",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_025026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3541#issuecomment-25026",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -70,16 +70,16 @@ Some code from Ashley Saunders up at http://wiki.wstein.org/2008/480a/theproject
 archive/issue_comments_025027.json:
 ```json
 {
-    "body": "Changing assignee from rlm to ekirkman.",
+    "body": "Changing assignee from @rlmill to ekirkman.",
     "created_at": "2008-08-10T03:24:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3541#issuecomment-25027",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Changing assignee from rlm to ekirkman.
+Changing assignee from @rlmill to ekirkman.
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_025028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3541#issuecomment-25028",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -106,16 +106,16 @@ This depends on #4774, and implements multiple edges for graphs only.
 archive/issue_comments_025029.json:
 ```json
 {
-    "body": "Attachment [trac_3541-multiedge-1.patch](tarball://root/attachments/some-uuid/ticket3541/trac_3541-multiedge-1.patch) by rlm created at 2009-02-12 17:33:33\n\nThis set of patches should fix #5248.",
+    "body": "Attachment [trac_3541-multiedge-1.patch](tarball://root/attachments/some-uuid/ticket3541/trac_3541-multiedge-1.patch) by @rlmill created at 2009-02-12 17:33:33\n\nThis set of patches should fix #5248.",
     "created_at": "2009-02-12T17:33:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3541#issuecomment-25029",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_3541-multiedge-1.patch](tarball://root/attachments/some-uuid/ticket3541/trac_3541-multiedge-1.patch) by rlm created at 2009-02-12 17:33:33
+Attachment [trac_3541-multiedge-1.patch](tarball://root/attachments/some-uuid/ticket3541/trac_3541-multiedge-1.patch) by @rlmill created at 2009-02-12 17:33:33
 
 This set of patches should fix #5248.
 
@@ -149,7 +149,7 @@ archive/issue_comments_025031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3541#issuecomment-25031",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_025032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3541#issuecomment-25032",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -393,7 +393,7 @@ archive/issue_comments_025042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3541#issuecomment-25042",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

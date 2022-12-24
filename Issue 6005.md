@@ -3,7 +3,7 @@
 archive/issues_006005.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6005\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6005\n\n",
     "created_at": "2009-05-07T21:22:29Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_006005.json:
     "title": "[with patch, needs review] real and imaginary parts for quadratic number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6005",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6005
 archive/issue_comments_047773.json:
 ```json
 {
-    "body": "Attachment [6005-qnf-real-imag.patch](tarball://root/attachments/some-uuid/ticket6005/6005-qnf-real-imag.patch) by was created at 2009-05-07 23:33:25\n\n\n```\nsage: K.<i> = QuadraticField(-1) \nsage: i.imag()\n1\n```\n\n\nThe above is hundreds of times slower than i.real().  That needs to be fixed.\n\nit's because of this line\n\n```",
+    "body": "Attachment [6005-qnf-real-imag.patch](tarball://root/attachments/some-uuid/ticket6005/6005-qnf-real-imag.patch) by @williamstein created at 2009-05-07 23:33:25\n\n\n```\nsage: K.<i> = QuadraticField(-1) \nsage: i.imag()\n1\n```\n\n\nThe above is hundreds of times slower than i.real().  That needs to be fixed.\n\nit's because of this line\n\n```",
     "created_at": "2009-05-07T23:33:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6005#issuecomment-47773",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [6005-qnf-real-imag.patch](tarball://root/attachments/some-uuid/ticket6005/6005-qnf-real-imag.patch) by was created at 2009-05-07 23:33:25
+Attachment [6005-qnf-real-imag.patch](tarball://root/attachments/some-uuid/ticket6005/6005-qnf-real-imag.patch) by @williamstein created at 2009-05-07 23:33:25
 
 
 ```
@@ -64,16 +64,16 @@ it's because of this line
 archive/issue_comments_047774.json:
 ```json
 {
-    "body": "Attachment [6005-qnf-real-imag-fix.patch](tarball://root/attachments/some-uuid/ticket6005/6005-qnf-real-imag-fix.patch) by robertwb created at 2009-05-07 23:55:01",
+    "body": "Attachment [6005-qnf-real-imag-fix.patch](tarball://root/attachments/some-uuid/ticket6005/6005-qnf-real-imag-fix.patch) by @robertwb created at 2009-05-07 23:55:01",
     "created_at": "2009-05-07T23:55:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6005#issuecomment-47774",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [6005-qnf-real-imag-fix.patch](tarball://root/attachments/some-uuid/ticket6005/6005-qnf-real-imag-fix.patch) by robertwb created at 2009-05-07 23:55:01
+Attachment [6005-qnf-real-imag-fix.patch](tarball://root/attachments/some-uuid/ticket6005/6005-qnf-real-imag-fix.patch) by @robertwb created at 2009-05-07 23:55:01
 
 
 
@@ -87,7 +87,7 @@ archive/issue_comments_047775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6005#issuecomment-47775",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_047777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6005#issuecomment-47777",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -182,16 +182,16 @@ Changing component from number theory to number fields.
 archive/issue_comments_047778.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-07-21T08:17:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6005#issuecomment-47778",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 
@@ -205,7 +205,7 @@ archive/issue_comments_047779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6005#issuecomment-47779",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_047780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6005#issuecomment-47780",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

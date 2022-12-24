@@ -14,7 +14,7 @@ archive/issues_007212.json:
     "title": "[with patch, needs review] steenrod algebra multiplication bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7212",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: tbd
@@ -75,7 +75,7 @@ archive/issue_comments_059844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7212#issuecomment-59844",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -88,16 +88,16 @@ Changing status from new to needs_review.
 archive/issue_comments_059845.json:
 ```json
 {
-    "body": "Attachment [trac_7212-steenrod.patch](tarball://root/attachments/some-uuid/ticket7212/trac_7212-steenrod.patch) by jason created at 2009-10-14 21:20:35",
+    "body": "Attachment [trac_7212-steenrod.patch](tarball://root/attachments/some-uuid/ticket7212/trac_7212-steenrod.patch) by @jasongrout created at 2009-10-14 21:20:35",
     "created_at": "2009-10-14T21:20:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7212#issuecomment-59845",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_7212-steenrod.patch](tarball://root/attachments/some-uuid/ticket7212/trac_7212-steenrod.patch) by jason created at 2009-10-14 21:20:35
+Attachment [trac_7212-steenrod.patch](tarball://root/attachments/some-uuid/ticket7212/trac_7212-steenrod.patch) by @jasongrout created at 2009-10-14 21:20:35
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_059846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7212#issuecomment-59846",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_059847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7212#issuecomment-59847",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

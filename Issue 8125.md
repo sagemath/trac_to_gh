@@ -3,7 +3,7 @@
 archive/issues_008125.json:
 ```json
 {
-    "body": "Assignee: was\n\nIn Sage 4.3.2.alpha0:\n\n```\nsage: text(r\"$\\left(2 a=b\\right)$\", (2,3))   # works fine \nsage: text(r\"$(2 \\, a=b)$\", (2,3))   # works fine \nsage: text(r\"$\\left(2 \\, a=b\\right)$\", (2,3))   # error! \nTraceback (click to the left of this block for traceback) \n... \nAttributeError: 'Kern' object has no attribute 'height' \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8125\n\n",
+    "body": "Assignee: @williamstein\n\nIn Sage 4.3.2.alpha0:\n\n```\nsage: text(r\"$\\left(2 a=b\\right)$\", (2,3))   # works fine \nsage: text(r\"$(2 \\, a=b)$\", (2,3))   # works fine \nsage: text(r\"$\\left(2 \\, a=b\\right)$\", (2,3))   # error! \nTraceback (click to the left of this block for traceback) \n... \nAttributeError: 'Kern' object has no attribute 'height' \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8125\n\n",
     "created_at": "2010-01-29T21:09:34Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_008125.json:
     "title": "problem with \"text\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8125",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 In Sage 4.3.2.alpha0:
 
@@ -48,7 +48,7 @@ archive/issue_comments_071430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8125#issuecomment-71430",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_071431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8125#issuecomment-71431",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_071432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8125#issuecomment-71432",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_071433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8125#issuecomment-71433",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_071434.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8125#issuecomment-71434",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_071437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8125#issuecomment-71437",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_071438.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8125#issuecomment-71438",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_071439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8125#issuecomment-71439",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_071440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8125#issuecomment-71440",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_071441.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8125#issuecomment-71441",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_071442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8125#issuecomment-71442",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -319,7 +319,7 @@ archive/issue_comments_071443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8125#issuecomment-71443",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

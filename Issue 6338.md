@@ -14,7 +14,7 @@ archive/issues_006338.json:
     "title": "make sage -sdist and -bdist take an existing tag name and verify that the tag name is valid",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6338",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 Assignee: tbd
@@ -39,7 +39,7 @@ archive/issue_comments_050592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6338#issuecomment-50592",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing component from distribution to scripts.
 archive/issue_comments_050593.json:
 ```json
 {
-    "body": "Changing assignee from tbd to leif.",
+    "body": "Changing assignee from tbd to @nexttime.",
     "created_at": "2012-05-18T13:48:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6338#issuecomment-50593",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Changing assignee from tbd to leif.
+Changing assignee from tbd to @nexttime.
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_050594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6338#issuecomment-50594",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_050595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6338#issuecomment-50595",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -106,16 +106,16 @@ Changing status from new to needs_review.
 archive/issue_comments_050596.json:
 ```json
 {
-    "body": "Attachment [6338_sagedist.patch](tarball://root/attachments/some-uuid/ticket6338/6338_sagedist.patch) by jdemeyer created at 2012-05-19 08:30:37",
+    "body": "Attachment [6338_sagedist.patch](tarball://root/attachments/some-uuid/ticket6338/6338_sagedist.patch) by @jdemeyer created at 2012-05-19 08:30:37",
     "created_at": "2012-05-19T08:30:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6338#issuecomment-50596",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [6338_sagedist.patch](tarball://root/attachments/some-uuid/ticket6338/6338_sagedist.patch) by jdemeyer created at 2012-05-19 08:30:37
+Attachment [6338_sagedist.patch](tarball://root/attachments/some-uuid/ticket6338/6338_sagedist.patch) by @jdemeyer created at 2012-05-19 08:30:37
 
 
 
@@ -129,7 +129,7 @@ archive/issue_comments_050597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6338#issuecomment-50597",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_050598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6338#issuecomment-50598",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_050599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6338#issuecomment-50599",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

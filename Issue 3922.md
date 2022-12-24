@@ -3,7 +3,7 @@
 archive/issues_003922.json:
 ```json
 {
-    "body": "Assignee: was\n\nWe've been having lots of trouble with arrows looking nice.  In this patch, there is a new matplotlib class that puts an arrow at the end of a line, using the same sort of things they do to put markers on lines.  This way, the arrows:\n\n1. don't depend on the aspect ratio of the plot\n\n2. don't depend on the scale of the plot.\n\nThey always look pretty :).\n\nIt would be nice to eventually upstream this functionality into the matplotlib Line2D class.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3922\n\n",
+    "body": "Assignee: @williamstein\n\nWe've been having lots of trouble with arrows looking nice.  In this patch, there is a new matplotlib class that puts an arrow at the end of a line, using the same sort of things they do to put markers on lines.  This way, the arrows:\n\n1. don't depend on the aspect ratio of the plot\n\n2. don't depend on the scale of the plot.\n\nThey always look pretty :).\n\nIt would be nice to eventually upstream this functionality into the matplotlib Line2D class.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3922\n\n",
     "created_at": "2008-08-21T22:41:37Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_003922.json:
     "title": "[with patch, needs review] Make nice arrows",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3922",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 We've been having lots of trouble with arrows looking nice.  In this patch, there is a new matplotlib class that puts an arrow at the end of a line, using the same sort of things they do to put markers on lines.  This way, the arrows:
 
@@ -45,7 +45,7 @@ archive/issue_comments_028053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3922#issuecomment-28053",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_028054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3922#issuecomment-28054",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_028055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3922#issuecomment-28055",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_028056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3922#issuecomment-28056",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_028057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3922#issuecomment-28057",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -130,16 +130,16 @@ The arrow_line.py should probably be moved to the matplotlib spkg.
 archive/issue_comments_028058.json:
 ```json
 {
-    "body": "Attachment [arrow_line.patch](tarball://root/attachments/some-uuid/ticket3922/arrow_line.patch) by jason created at 2008-09-03 23:47:30",
+    "body": "Attachment [arrow_line.patch](tarball://root/attachments/some-uuid/ticket3922/arrow_line.patch) by @jasongrout created at 2008-09-03 23:47:30",
     "created_at": "2008-09-03T23:47:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3922#issuecomment-28058",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [arrow_line.patch](tarball://root/attachments/some-uuid/ticket3922/arrow_line.patch) by jason created at 2008-09-03 23:47:30
+Attachment [arrow_line.patch](tarball://root/attachments/some-uuid/ticket3922/arrow_line.patch) by @jasongrout created at 2008-09-03 23:47:30
 
 
 
@@ -153,7 +153,7 @@ archive/issue_comments_028059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3922#issuecomment-28059",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_028060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3922#issuecomment-28060",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

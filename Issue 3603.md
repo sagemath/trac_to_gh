@@ -14,7 +14,7 @@ archive/issues_003603.json:
     "title": "memleak in GF(2^n)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3603",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: mabshoff
@@ -82,7 +82,7 @@ archive/issue_comments_025463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3603#issuecomment-25463",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -95,13 +95,13 @@ Changing status from new to assigned.
 archive/issue_comments_025464.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to malb.",
+    "body": "Changing assignee from mabshoff to @malb.",
     "created_at": "2009-01-25T19:02:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3603#issuecomment-25464",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from mabshoff to malb.
+Changing assignee from mabshoff to @malb.

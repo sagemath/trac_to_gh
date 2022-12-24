@@ -3,7 +3,7 @@
 archive/issues_001770.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nI already wrote the corresponding code for capped-rel elements, and it should be done for these other types. I'm assigning this to myself for now, but if anyone wants to do this, it's pretty easy -- you could mostly copy what I did in the capped-rel case, and do this with essentially no knowledge of how the pari stuff works.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1770\n\n",
+    "body": "Assignee: @craigcitro\n\nI already wrote the corresponding code for capped-rel elements, and it should be done for these other types. I'm assigning this to myself for now, but if anyone wants to do this, it's pretty easy -- you could mostly copy what I did in the capped-rel case, and do this with essentially no knowledge of how the pari stuff works.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1770\n\n",
     "created_at": "2008-01-14T02:40:01Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_001770.json:
     "title": "Make fast pari <--> p-adic conversions for fixedmod and capped-abs types",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1770",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 I already wrote the corresponding code for capped-rel elements, and it should be done for these other types. I'm assigning this to myself for now, but if anyone wants to do this, it's pretty easy -- you could mostly copy what I did in the capped-rel case, and do this with essentially no knowledge of how the pari stuff works.
 
@@ -37,7 +37,7 @@ archive/issue_comments_011198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1770#issuecomment-11198",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_011199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1770#issuecomment-11199",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 

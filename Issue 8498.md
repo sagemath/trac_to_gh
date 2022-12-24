@@ -3,7 +3,7 @@
 archive/issues_008498.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nJean Gillibert reported me the following bug. Define\n\n\n```\nE = EllipticCurve('11a1')\nK.<t> = NumberField(x^2+47)\nEK = E.base_extend(K)\nT = EK(5,5)\nP = EK(-2, -1/2*t - 1/2)\np = K.ideal(11)\n```\n\n\nThen the following works fine\n\n\n```\nsage: T.has_good_reduction(p)\nFalse\n```\n\n\nbut not this one :\n\n\n```\nP.has_good_reduction(p)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8498\n\n",
+    "body": "Assignee: @JohnCremona\n\nJean Gillibert reported me the following bug. Define\n\n\n```\nE = EllipticCurve('11a1')\nK.<t> = NumberField(x^2+47)\nEK = E.base_extend(K)\nT = EK(5,5)\nP = EK(-2, -1/2*t - 1/2)\np = K.ideal(11)\n```\n\n\nThen the following works fine\n\n\n```\nsage: T.has_good_reduction(p)\nFalse\n```\n\n\nbut not this one :\n\n\n```\nP.has_good_reduction(p)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8498\n\n",
     "created_at": "2010-03-11T10:39:16Z",
     "labels": [
         "elliptic curves",
@@ -14,10 +14,10 @@ archive/issues_008498.json:
     "title": "bug in has_good_reduction for a point on an elliptic curve over a number field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8498",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 Jean Gillibert reported me the following bug. Define
 
@@ -66,7 +66,7 @@ archive/issue_comments_076712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8498#issuecomment-76712",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_076713.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8498#issuecomment-76713",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_076714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8498#issuecomment-76714",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -134,16 +134,16 @@ This is weird:  I evaluate a polynomial f in K[X,Y,Z] at a triple [x,y,z], but t
 archive/issue_comments_076715.json:
 ```json
 {
-    "body": "Attachment [trac_8498-has_good_reduction.patch](tarball://root/attachments/some-uuid/ticket8498/trac_8498-has_good_reduction.patch) by cremona created at 2010-03-11 15:24:41\n\nApplies to 4.3.4.alpha1",
+    "body": "Attachment [trac_8498-has_good_reduction.patch](tarball://root/attachments/some-uuid/ticket8498/trac_8498-has_good_reduction.patch) by @JohnCremona created at 2010-03-11 15:24:41\n\nApplies to 4.3.4.alpha1",
     "created_at": "2010-03-11T15:24:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8498#issuecomment-76715",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_8498-has_good_reduction.patch](tarball://root/attachments/some-uuid/ticket8498/trac_8498-has_good_reduction.patch) by cremona created at 2010-03-11 15:24:41
+Attachment [trac_8498-has_good_reduction.patch](tarball://root/attachments/some-uuid/ticket8498/trac_8498-has_good_reduction.patch) by @JohnCremona created at 2010-03-11 15:24:41
 
 Applies to 4.3.4.alpha1
 
@@ -159,7 +159,7 @@ archive/issue_comments_076716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8498#issuecomment-76716",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_076717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8498#issuecomment-76717",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_076718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8498#issuecomment-76718",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_076719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8498#issuecomment-76719",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_076720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8498#issuecomment-76720",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_076721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8498#issuecomment-76721",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

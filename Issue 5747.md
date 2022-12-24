@@ -3,7 +3,7 @@
 archive/issues_005747.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nKeywords: doctest scheme ambient space\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5747\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: doctest scheme ambient space\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5747\n\n",
     "created_at": "2009-04-11T05:19:59Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_005747.json:
     "title": "improve doctest coverage for schemes/generic/ambient_space.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5747",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Keywords: doctest scheme ambient space
 
@@ -39,7 +39,7 @@ archive/issue_comments_044929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5747#issuecomment-44929",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to assigned.
 archive/issue_comments_044930.json:
 ```json
 {
-    "body": "Attachment [trac_5747.patch](tarball://root/attachments/some-uuid/ticket5747/trac_5747.patch) by AlexGhitza created at 2009-04-11 06:09:49",
+    "body": "Attachment [trac_5747.patch](tarball://root/attachments/some-uuid/ticket5747/trac_5747.patch) by @aghitza created at 2009-04-11 06:09:49",
     "created_at": "2009-04-11T06:09:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5747#issuecomment-44930",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_5747.patch](tarball://root/attachments/some-uuid/ticket5747/trac_5747.patch) by AlexGhitza created at 2009-04-11 06:09:49
+Attachment [trac_5747.patch](tarball://root/attachments/some-uuid/ticket5747/trac_5747.patch) by @aghitza created at 2009-04-11 06:09:49
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_044931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5747#issuecomment-44931",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

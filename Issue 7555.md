@@ -3,7 +3,7 @@
 archive/issues_007555.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  jason dimpase nthiery\n\nKeywords: cayley table, operation table\n\nCayley tables for permutation groups are broken, see #7340.\n\nFor other finite algebraic structures, it would be useful for educational purposes to have tables for whatever operation(s) may be present.\n\nText file included here provides a class that creates a Cayley table object, it can be generalized to provide a similar table for any object with an addition or multiplication - general groups and rings would be the first places to use it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7555\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @jasongrout @dimpase @nthiery\n\nKeywords: cayley table, operation table\n\nCayley tables for permutation groups are broken, see #7340.\n\nFor other finite algebraic structures, it would be useful for educational purposes to have tables for whatever operation(s) may be present.\n\nText file included here provides a class that creates a Cayley table object, it can be generalized to provide a similar table for any object with an addition or multiplication - general groups and rings would be the first places to use it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7555\n\n",
     "created_at": "2009-11-29T18:55:58Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_007555.json:
     "title": "Fix Cayley tables, add operation tables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7555",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  jason dimpase nthiery
+CC:  @jasongrout @dimpase @nthiery
 
 Keywords: cayley table, operation table
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7555
 archive/issue_comments_064214.json:
 ```json
 {
-    "body": "Attachment [trac_7555_cayley_table.txt](tarball://root/attachments/some-uuid/ticket7555/trac_7555_cayley_table.txt) by rbeezer created at 2009-11-29 18:57:39\n\nExperimental Cayley table class, cut/paste into a notebook cell",
+    "body": "Attachment [trac_7555_cayley_table.txt](tarball://root/attachments/some-uuid/ticket7555/trac_7555_cayley_table.txt) by @rbeezer created at 2009-11-29 18:57:39\n\nExperimental Cayley table class, cut/paste into a notebook cell",
     "created_at": "2009-11-29T18:57:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64214",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_7555_cayley_table.txt](tarball://root/attachments/some-uuid/ticket7555/trac_7555_cayley_table.txt) by rbeezer created at 2009-11-29 18:57:39
+Attachment [trac_7555_cayley_table.txt](tarball://root/attachments/some-uuid/ticket7555/trac_7555_cayley_table.txt) by @rbeezer created at 2009-11-29 18:57:39
 
 Experimental Cayley table class, cut/paste into a notebook cell
 
@@ -65,7 +65,7 @@ archive/issue_comments_064215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64215",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_064216.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64216",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_064217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64217",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_064218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64218",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_064219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64219",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -156,16 +156,16 @@ It seems a better place to place this is within the categories framework, making
 archive/issue_comments_064220.json:
 ```json
 {
-    "body": "Attachment [trac_7555_operation_table.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_operation_table.patch) by rbeezer created at 2010-03-18 04:44:07",
+    "body": "Attachment [trac_7555_operation_table.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_operation_table.patch) by @rbeezer created at 2010-03-18 04:44:07",
     "created_at": "2010-03-18T04:44:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64220",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_7555_operation_table.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_operation_table.patch) by rbeezer created at 2010-03-18 04:44:07
+Attachment [trac_7555_operation_table.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_operation_table.patch) by @rbeezer created at 2010-03-18 04:44:07
 
 
 
@@ -179,7 +179,7 @@ archive/issue_comments_064221.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64221",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_064222.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64222",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_064223.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64223",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -364,7 +364,7 @@ archive/issue_comments_064224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64224",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -382,7 +382,7 @@ archive/issue_comments_064225.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64225",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -513,7 +513,7 @@ archive/issue_comments_064226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64226",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -640,7 +640,7 @@ archive/issue_comments_064227.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64227",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -740,7 +740,7 @@ archive/issue_comments_064228.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64228",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -753,16 +753,16 @@ Illustrates doctest failure
 archive/issue_comments_064229.json:
 ```json
 {
-    "body": "Attachment [trac_7555_doctest_failure.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_doctest_failure.patch) by rbeezer created at 2010-03-20 18:10:57\n\nIgnore that doctest failure patch - I found the problem.",
+    "body": "Attachment [trac_7555_doctest_failure.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_doctest_failure.patch) by @rbeezer created at 2010-03-20 18:10:57\n\nIgnore that doctest failure patch - I found the problem.",
     "created_at": "2010-03-20T18:10:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64229",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_7555_doctest_failure.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_doctest_failure.patch) by rbeezer created at 2010-03-20 18:10:57
+Attachment [trac_7555_doctest_failure.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_doctest_failure.patch) by @rbeezer created at 2010-03-20 18:10:57
 
 Ignore that doctest failure patch - I found the problem.
 
@@ -778,7 +778,7 @@ archive/issue_comments_064230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64230",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -791,16 +791,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_064231.json:
 ```json
 {
-    "body": "Attachment [trac_7555_operation_table-categories.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_operation_table-categories.patch) by rbeezer created at 2010-03-20 21:25:41\n\nPatch is complete enough to review.\n\n`__getitem__` implemented.\n\nrow_keys/column_keys are the latest name for elements in headings-order.\n\nLeft `translation` dictionary as-is.\n\n`addition_table` is a stub of sorts.  Has a doctest, and so on, but can be much better documented when `IntegerModRing` is settled at #8562.  It'll mostly be a cut/paste job from `multiplication_table` with new examples.  \n\nBut I'd like this to move forward independently, since my time will be limited for a few weeks.",
+    "body": "Attachment [trac_7555_operation_table-categories.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_operation_table-categories.patch) by @rbeezer created at 2010-03-20 21:25:41\n\nPatch is complete enough to review.\n\n`__getitem__` implemented.\n\nrow_keys/column_keys are the latest name for elements in headings-order.\n\nLeft `translation` dictionary as-is.\n\n`addition_table` is a stub of sorts.  Has a doctest, and so on, but can be much better documented when `IntegerModRing` is settled at #8562.  It'll mostly be a cut/paste job from `multiplication_table` with new examples.  \n\nBut I'd like this to move forward independently, since my time will be limited for a few weeks.",
     "created_at": "2010-03-20T21:25:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64231",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_7555_operation_table-categories.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_operation_table-categories.patch) by rbeezer created at 2010-03-20 21:25:41
+Attachment [trac_7555_operation_table-categories.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_operation_table-categories.patch) by @rbeezer created at 2010-03-20 21:25:41
 
 Patch is complete enough to review.
 
@@ -826,7 +826,7 @@ archive/issue_comments_064232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64232",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -876,7 +876,7 @@ archive/issue_comments_064233.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64233",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -908,7 +908,7 @@ archive/issue_comments_064234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64234",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -963,7 +963,7 @@ archive/issue_comments_064235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64235",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -1024,7 +1024,7 @@ archive/issue_comments_064236.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64236",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -1042,7 +1042,7 @@ archive/issue_comments_064237.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64237",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -1066,7 +1066,7 @@ archive/issue_comments_064238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64238",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -1091,7 +1091,7 @@ archive/issue_comments_064239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64239",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -1174,7 +1174,7 @@ archive/issue_comments_064240.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64240",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -1196,7 +1196,7 @@ archive/issue_comments_064241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64241",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -1218,7 +1218,7 @@ archive/issue_comments_064242.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64242",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -1236,7 +1236,7 @@ archive/issue_comments_064243.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64243",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -1256,7 +1256,7 @@ archive/issue_comments_064244.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64244",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -1269,16 +1269,16 @@ Replaces all the previous ones
 archive/issue_comments_064245.json:
 ```json
 {
-    "body": "Attachment [trac_7555_operation_table-categories.2.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_operation_table-categories.2.patch) by nthiery created at 2010-03-23 16:37:54\n\nDone. Diff to previous version on: http://combinat.sagemath.org/hgwebdir.cgi/patches/diff/233de3ecbcb7/trac_7555_operation_table-categories.patch",
+    "body": "Attachment [trac_7555_operation_table-categories.2.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_operation_table-categories.2.patch) by @nthiery created at 2010-03-23 16:37:54\n\nDone. Diff to previous version on: http://combinat.sagemath.org/hgwebdir.cgi/patches/diff/233de3ecbcb7/trac_7555_operation_table-categories.patch",
     "created_at": "2010-03-23T16:37:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64245",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_7555_operation_table-categories.2.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_operation_table-categories.2.patch) by nthiery created at 2010-03-23 16:37:54
+Attachment [trac_7555_operation_table-categories.2.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_operation_table-categories.2.patch) by @nthiery created at 2010-03-23 16:37:54
 
 Done. Diff to previous version on: http://combinat.sagemath.org/hgwebdir.cgi/patches/diff/233de3ecbcb7/trac_7555_operation_table-categories.patch
 
@@ -1294,7 +1294,7 @@ archive/issue_comments_064246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64246",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -1312,7 +1312,7 @@ archive/issue_comments_064247.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64247",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1330,7 +1330,7 @@ archive/issue_comments_064248.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64248",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1356,7 +1356,7 @@ archive/issue_comments_064249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64249",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1374,7 +1374,7 @@ archive/issue_comments_064250.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64250",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -1397,16 +1397,16 @@ Rob
 archive/issue_comments_064251.json:
 ```json
 {
-    "body": "Attachment [trac_7555_minor-fixups.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_minor-fixups.patch) by rbeezer created at 2010-03-24 05:11:20",
+    "body": "Attachment [trac_7555_minor-fixups.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_minor-fixups.patch) by @rbeezer created at 2010-03-24 05:11:20",
     "created_at": "2010-03-24T05:11:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64251",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_7555_minor-fixups.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_minor-fixups.patch) by rbeezer created at 2010-03-24 05:11:20
+Attachment [trac_7555_minor-fixups.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_minor-fixups.patch) by @rbeezer created at 2010-03-24 05:11:20
 
 
 
@@ -1420,7 +1420,7 @@ archive/issue_comments_064252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64252",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -1438,7 +1438,7 @@ archive/issue_comments_064253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64253",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -1476,7 +1476,7 @@ archive/issue_comments_064254.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64254",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -1507,16 +1507,16 @@ free to set a positive review once you have double checked my changes.
 archive/issue_comments_064255.json:
 ```json
 {
-    "body": "Attachment [trac_7555_minor-fixups-nt.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_minor-fixups-nt.patch) by nthiery created at 2010-03-24 08:47:45",
+    "body": "Attachment [trac_7555_minor-fixups-nt.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_minor-fixups-nt.patch) by @nthiery created at 2010-03-24 08:47:45",
     "created_at": "2010-03-24T08:47:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64255",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_7555_minor-fixups-nt.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_minor-fixups-nt.patch) by nthiery created at 2010-03-24 08:47:45
+Attachment [trac_7555_minor-fixups-nt.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_minor-fixups-nt.patch) by @nthiery created at 2010-03-24 08:47:45
 
 
 
@@ -1525,16 +1525,16 @@ Attachment [trac_7555_minor-fixups-nt.patch](tarball://root/attachments/some-uui
 archive/issue_comments_064256.json:
 ```json
 {
-    "body": "Attachment [trac_7555_operation_table-categories-all-in-one.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_operation_table-categories-all-in-one.patch) by nthiery created at 2010-03-24 08:49:27\n\nApply only this one",
+    "body": "Attachment [trac_7555_operation_table-categories-all-in-one.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_operation_table-categories-all-in-one.patch) by @nthiery created at 2010-03-24 08:49:27\n\nApply only this one",
     "created_at": "2010-03-24T08:49:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64256",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_7555_operation_table-categories-all-in-one.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_operation_table-categories-all-in-one.patch) by nthiery created at 2010-03-24 08:49:27
+Attachment [trac_7555_operation_table-categories-all-in-one.patch](tarball://root/attachments/some-uuid/ticket7555/trac_7555_operation_table-categories-all-in-one.patch) by @nthiery created at 2010-03-24 08:49:27
 
 Apply only this one
 
@@ -1550,7 +1550,7 @@ archive/issue_comments_064257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64257",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -1568,7 +1568,7 @@ archive/issue_comments_064258.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64258",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -1594,7 +1594,7 @@ archive/issue_comments_064259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64259",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -1612,7 +1612,7 @@ archive/issue_comments_064260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64260",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1630,7 +1630,7 @@ archive/issue_comments_064261.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7555#issuecomment-64261",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

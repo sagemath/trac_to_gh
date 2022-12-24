@@ -3,7 +3,7 @@
 archive/issues_005035.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5035\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5035\n\n",
     "created_at": "2009-01-20T07:14:41Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005035.json:
     "title": "get doctest coverage of matrix_generic_dense.pyx up to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5035",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_038338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5035",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5035#issuecomment-38338",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -50,16 +50,16 @@ this is against sage-3.3.alpha0
 archive/issue_comments_038339.json:
 ```json
 {
-    "body": "Attachment [trac_5035.patch](tarball://root/attachments/some-uuid/ticket5035/trac_5035.patch) by was created at 2009-01-20 07:16:39",
+    "body": "Attachment [trac_5035.patch](tarball://root/attachments/some-uuid/ticket5035/trac_5035.patch) by @williamstein created at 2009-01-20 07:16:39",
     "created_at": "2009-01-20T07:16:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5035",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5035#issuecomment-38339",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5035.patch](tarball://root/attachments/some-uuid/ticket5035/trac_5035.patch) by was created at 2009-01-20 07:16:39
+Attachment [trac_5035.patch](tarball://root/attachments/some-uuid/ticket5035/trac_5035.patch) by @williamstein created at 2009-01-20 07:16:39
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_038340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5035",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5035#issuecomment-38340",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -105,16 +105,16 @@ exit code: 1024
 archive/issue_comments_038341.json:
 ```json
 {
-    "body": "Attachment [trac_5035_part2.patch](tarball://root/attachments/some-uuid/ticket5035/trac_5035_part2.patch) by ddrake created at 2009-01-20 07:37:09\n\nWith both patches applied, we have 100% coverage, and the examples are nice. Positive review.",
+    "body": "Attachment [trac_5035_part2.patch](tarball://root/attachments/some-uuid/ticket5035/trac_5035_part2.patch) by @dandrake created at 2009-01-20 07:37:09\n\nWith both patches applied, we have 100% coverage, and the examples are nice. Positive review.",
     "created_at": "2009-01-20T07:37:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5035",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5035#issuecomment-38341",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_5035_part2.patch](tarball://root/attachments/some-uuid/ticket5035/trac_5035_part2.patch) by ddrake created at 2009-01-20 07:37:09
+Attachment [trac_5035_part2.patch](tarball://root/attachments/some-uuid/ticket5035/trac_5035_part2.patch) by @dandrake created at 2009-01-20 07:37:09
 
 With both patches applied, we have 100% coverage, and the examples are nice. Positive review.
 

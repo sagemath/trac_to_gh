@@ -3,7 +3,7 @@
 archive/issues_007981.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  wcauchois\n\nThis animate command shouldn't ignore the options to show() that are passed through by the plot command (here the options are ymin and ymax):\n\n\n```\nsage: var('t')\nsage: damped_oscillator = 41/311*sqrt(311)*e^(-3/8*t)*sin(1/8*sqrt(311)*t) + 3*e^(-3/8*t)*cos(1/8*sqrt(311)*t)\nsage: animate([plot( lambda x: damped_oscillator( t = x + k ), -1/2, 3*pi, ymin=-2, ymax=3.5 ) for k in srange( 0, pi, 0.3 ) ]).show()\n```\n\n\nThanks to   \t\nJohann Myrkraverk Oskarsson for reporting this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7981\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  wcauchois\n\nThis animate command shouldn't ignore the options to show() that are passed through by the plot command (here the options are ymin and ymax):\n\n\n```\nsage: var('t')\nsage: damped_oscillator = 41/311*sqrt(311)*e^(-3/8*t)*sin(1/8*sqrt(311)*t) + 3*e^(-3/8*t)*cos(1/8*sqrt(311)*t)\nsage: animate([plot( lambda x: damped_oscillator( t = x + k ), -1/2, 3*pi, ymin=-2, ymax=3.5 ) for k in srange( 0, pi, 0.3 ) ]).show()\n```\n\n\nThanks to   \t\nJohann Myrkraverk Oskarsson for reporting this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7981\n\n",
     "created_at": "2010-01-18T18:39:50Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_007981.json:
     "title": "animate ignores options to show that are passed up from the plot command",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7981",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  wcauchois
 
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7981
 archive/issue_comments_069639.json:
 ```json
 {
-    "body": "Attachment [trac-7981-show_options.patch](tarball://root/attachments/some-uuid/ticket7981/trac-7981-show_options.patch) by jason created at 2010-01-19 00:15:40",
+    "body": "Attachment [trac-7981-show_options.patch](tarball://root/attachments/some-uuid/ticket7981/trac-7981-show_options.patch) by @jasongrout created at 2010-01-19 00:15:40",
     "created_at": "2010-01-19T00:15:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69639",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-7981-show_options.patch](tarball://root/attachments/some-uuid/ticket7981/trac-7981-show_options.patch) by jason created at 2010-01-19 00:15:40
+Attachment [trac-7981-show_options.patch](tarball://root/attachments/some-uuid/ticket7981/trac-7981-show_options.patch) by @jasongrout created at 2010-01-19 00:15:40
 
 
 
@@ -68,7 +68,7 @@ archive/issue_comments_069640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69640",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_069641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69641",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_069642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69642",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_069643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69643",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_069644.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69644",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_069645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69645",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_069646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69646",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_069647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69647",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_069648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69648",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_069649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69649",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_069650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69650",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -313,16 +313,16 @@ Apply trac-7981-save_ignores_preset_plotting_options.patch
 archive/issue_comments_069651.json:
 ```json
 {
-    "body": "Changing assignee from was to novoselt.",
+    "body": "Changing assignee from @williamstein to @novoselt.",
     "created_at": "2010-12-05T18:37:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69651",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Changing assignee from was to novoselt.
+Changing assignee from @williamstein to @novoselt.
 
 
 
@@ -376,7 +376,7 @@ archive/issue_comments_069654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69654",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -400,7 +400,7 @@ archive/issue_comments_069655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69655",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -418,7 +418,7 @@ archive/issue_comments_069656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69656",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -451,7 +451,7 @@ archive/issue_comments_069657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69657",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -464,16 +464,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_069658.json:
 ```json
 {
-    "body": "Attachment [trac-7981-save_ignores_preset_plotting_options.patch](tarball://root/attachments/some-uuid/ticket7981/trac-7981-save_ignores_preset_plotting_options.patch) by novoselt created at 2011-01-13 03:18:03\n\nAlternative patch",
+    "body": "Attachment [trac-7981-save_ignores_preset_plotting_options.patch](tarball://root/attachments/some-uuid/ticket7981/trac-7981-save_ignores_preset_plotting_options.patch) by @novoselt created at 2011-01-13 03:18:03\n\nAlternative patch",
     "created_at": "2011-01-13T03:18:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69658",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac-7981-save_ignores_preset_plotting_options.patch](tarball://root/attachments/some-uuid/ticket7981/trac-7981-save_ignores_preset_plotting_options.patch) by novoselt created at 2011-01-13 03:18:03
+Attachment [trac-7981-save_ignores_preset_plotting_options.patch](tarball://root/attachments/some-uuid/ticket7981/trac-7981-save_ignores_preset_plotting_options.patch) by @novoselt created at 2011-01-13 03:18:03
 
 Alternative patch
 
@@ -489,7 +489,7 @@ archive/issue_comments_069659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69659",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -509,7 +509,7 @@ archive/issue_comments_069660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69660",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -545,7 +545,7 @@ archive/issue_comments_069661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69661",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -563,7 +563,7 @@ archive/issue_comments_069662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69662",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -590,7 +590,7 @@ archive/issue_comments_069663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69663",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -610,7 +610,7 @@ archive/issue_comments_069664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69664",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -628,7 +628,7 @@ archive/issue_comments_069665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69665",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -641,16 +641,16 @@ reviewer patch
 archive/issue_comments_069666.json:
 ```json
 {
-    "body": "Attachment [trac_7981-reviewer.patch](tarball://root/attachments/some-uuid/ticket7981/trac_7981-reviewer.patch) by kcrisman created at 2011-01-17 18:42:01\n\nJust an update - apparently \n\n```\nsage: animate([plot(sin(x + float(k)), (0, 2*pi), ymin=-5, ymax=5)\n...            for k in srange(0,2*pi,0.3)]).show() # optional\n```\n\ndoes not obey the optional test, for it created a new file (I must have ImageMagick!).  We don't create non-temp new files in doctests, though, so this had to be changed.  New reviewer patch fixes this as well, maintains positive review.  Should not affect the plot patches which depend on this.",
+    "body": "Attachment [trac_7981-reviewer.patch](tarball://root/attachments/some-uuid/ticket7981/trac_7981-reviewer.patch) by @kcrisman created at 2011-01-17 18:42:01\n\nJust an update - apparently \n\n```\nsage: animate([plot(sin(x + float(k)), (0, 2*pi), ymin=-5, ymax=5)\n...            for k in srange(0,2*pi,0.3)]).show() # optional\n```\n\ndoes not obey the optional test, for it created a new file (I must have ImageMagick!).  We don't create non-temp new files in doctests, though, so this had to be changed.  New reviewer patch fixes this as well, maintains positive review.  Should not affect the plot patches which depend on this.",
     "created_at": "2011-01-17T18:42:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69666",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_7981-reviewer.patch](tarball://root/attachments/some-uuid/ticket7981/trac_7981-reviewer.patch) by kcrisman created at 2011-01-17 18:42:01
+Attachment [trac_7981-reviewer.patch](tarball://root/attachments/some-uuid/ticket7981/trac_7981-reviewer.patch) by @kcrisman created at 2011-01-17 18:42:01
 
 Just an update - apparently 
 
@@ -673,7 +673,7 @@ archive/issue_comments_069667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69667",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -691,7 +691,7 @@ archive/issue_comments_069668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69668",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -709,7 +709,7 @@ archive/issue_comments_069669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69669",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -745,7 +745,7 @@ archive/issue_comments_069670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69670",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -763,7 +763,7 @@ archive/issue_comments_069671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69671",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -792,7 +792,7 @@ archive/issue_comments_069672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69672",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -814,7 +814,7 @@ archive/issue_comments_069673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69673",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -832,7 +832,7 @@ archive/issue_comments_069674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69674",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -850,7 +850,7 @@ archive/issue_comments_069675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69675",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -868,7 +868,7 @@ archive/issue_comments_069676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69676",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -886,7 +886,7 @@ archive/issue_comments_069677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69677",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -904,7 +904,7 @@ archive/issue_comments_069678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69678",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -922,7 +922,7 @@ archive/issue_comments_069679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69679",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -940,7 +940,7 @@ archive/issue_comments_069680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69680",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -960,7 +960,7 @@ archive/issue_comments_069681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69681",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

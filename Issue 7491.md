@@ -3,7 +3,7 @@
 archive/issues_007491.json:
 ```json
 {
-    "body": "Assignee: burcin\n\n\n```\nsage: solve([x==x],x)\n```\n\ngives an exception.\n\nMaxima says this:\n\n```\n$ maxima -q\n(%i1) solve([x=x],x);\n(%o1)                                 all\n(%i2) \n```\n\n\nThere is a short [discussion](http://groups.google.cz/group/sage-devel/browse_thread/thread/ce3a256a9102c7fc) about this topic. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7491\n\n",
+    "body": "Assignee: @burcin\n\n\n```\nsage: solve([x==x],x)\n```\n\ngives an exception.\n\nMaxima says this:\n\n```\n$ maxima -q\n(%i1) solve([x=x],x);\n(%o1)                                 all\n(%i2) \n```\n\n\nThere is a short [discussion](http://groups.google.cz/group/sage-devel/browse_thread/thread/ce3a256a9102c7fc) about this topic. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7491\n\n",
     "created_at": "2009-11-19T07:36:11Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_007491.json:
     "title": "solve(x==x,x) fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7491",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 
 ```
@@ -54,7 +54,7 @@ archive/issue_comments_063271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7491#issuecomment-63271",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -67,16 +67,16 @@ Changing status from new to needs_review.
 archive/issue_comments_063272.json:
 ```json
 {
-    "body": "Attachment [trac-7491-initial.patch](tarball://root/attachments/some-uuid/ticket7491/trac-7491-initial.patch) by robert.marik created at 2009-11-19 08:00:39\n\nattached patch does the following\n\n```\n[marik@um-bc107 /opt/sage]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: solve\nsage: y=var('y');solve(SR(0),y,solution_dict=True)\n{y: r1}\nsage: y=var('y');solve(SR(0),y,solution_dict=True,multiplicities=True)\n({y: r1}, [])\nsage: solve(x==x,x,multiplicities=True)\n([x == r1], [])\n| Sage Version 4.2.1, Release Date: 2009-11-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n```\n\n\nAll tests in symbolic and calculus passed.",
+    "body": "Attachment [trac-7491-initial.patch](tarball://root/attachments/some-uuid/ticket7491/trac-7491-initial.patch) by @robert-marik created at 2009-11-19 08:00:39\n\nattached patch does the following\n\n```\n[marik@um-bc107 /opt/sage]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: solve\nsage: y=var('y');solve(SR(0),y,solution_dict=True)\n{y: r1}\nsage: y=var('y');solve(SR(0),y,solution_dict=True,multiplicities=True)\n({y: r1}, [])\nsage: solve(x==x,x,multiplicities=True)\n([x == r1], [])\n| Sage Version 4.2.1, Release Date: 2009-11-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n```\n\n\nAll tests in symbolic and calculus passed.",
     "created_at": "2009-11-19T08:00:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7491#issuecomment-63272",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Attachment [trac-7491-initial.patch](tarball://root/attachments/some-uuid/ticket7491/trac-7491-initial.patch) by robert.marik created at 2009-11-19 08:00:39
+Attachment [trac-7491-initial.patch](tarball://root/attachments/some-uuid/ticket7491/trac-7491-initial.patch) by @robert-marik created at 2009-11-19 08:00:39
 
 attached patch does the following
 
@@ -110,7 +110,7 @@ archive/issue_comments_063273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7491#issuecomment-63273",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_063274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7491#issuecomment-63274",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_063275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7491#issuecomment-63275",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

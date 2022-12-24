@@ -3,7 +3,7 @@
 archive/issues_005042.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  dimpase mkoeppe\n\nCurrent the only supported folders are Active, Archive, and Trash. A user should be able to add and delete folders. See Google Docs' folder functionality for reference. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5042\n\n",
+    "body": "Assignee: boothby\n\nCC:  @dimpase @mkoeppe\n\nCurrent the only supported folders are Active, Archive, and Trash. A user should be able to add and delete folders. See Google Docs' folder functionality for reference. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5042\n\n",
     "created_at": "2009-01-21T05:21:42Z",
     "labels": [
         "notebook",
@@ -19,7 +19,7 @@ archive/issues_005042.json:
 ```
 Assignee: boothby
 
-CC:  dimpase mkoeppe
+CC:  @dimpase @mkoeppe
 
 Current the only supported folders are Active, Archive, and Trash. A user should be able to add and delete folders. See Google Docs' folder functionality for reference. 
 
@@ -75,7 +75,7 @@ archive/issue_comments_038401.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5042#issuecomment-38401",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_038403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5042#issuecomment-38403",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_038404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5042#issuecomment-38404",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_038405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5042#issuecomment-38405",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_038406.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5042#issuecomment-38406",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_038407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5042#issuecomment-38407",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_038408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5042#issuecomment-38408",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001845.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe following patch adds some improvements to list_plot3d\n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/list_plot3d.hg\n\nThe new code requires an updated scipy_sandbox\n\nhttp://sage.math.washington.edu/spkgs/scipy_sandbox-20071020.p1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/1845\n\n",
+    "body": "Assignee: @williamstein\n\nThe following patch adds some improvements to list_plot3d\n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/list_plot3d.hg\n\nThe new code requires an updated scipy_sandbox\n\nhttp://sage.math.washington.edu/spkgs/scipy_sandbox-20071020.p1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/1845\n\n",
     "created_at": "2008-01-19T07:46:24Z",
     "labels": [
         "graphics",
@@ -17,7 +17,7 @@ archive/issues_001845.json:
     "user": "jkantor"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The following patch adds some improvements to list_plot3d
 

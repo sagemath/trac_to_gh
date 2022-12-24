@@ -3,7 +3,7 @@
 archive/issues_007381.json:
 ```json
 {
-    "body": "Assignee: roed\n\nCC:  jen\n\n\n```\nsage: R.<x> = QQ['x']\nsage: H = HyperellipticCurve(x^3-10*x+9)\nsage: K = Qp(3,5)\nsage: J.<a> = K.extension(x^30-3)\nsage: HK = H.change_ring(K)\nsage: HJ = HK.change_ring(J)\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (8, 0))\n\n[snip]\n\nValueError: variable names must be alphanumeric, but one is '(1 + O(3^5))*x' which is not.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7381\n\n",
+    "body": "Assignee: @roed314\n\nCC:  @jbalakrishnan\n\n\n```\nsage: R.<x> = QQ['x']\nsage: H = HyperellipticCurve(x^3-10*x+9)\nsage: K = Qp(3,5)\nsage: J.<a> = K.extension(x^30-3)\nsage: HK = H.change_ring(K)\nsage: HJ = HK.change_ring(J)\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (8, 0))\n\n[snip]\n\nValueError: variable names must be alphanumeric, but one is '(1 + O(3^5))*x' which is not.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7381\n\n",
     "created_at": "2009-11-03T17:54:12Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_007381.json:
     "title": "Coercion of HyperellipticCurve over pAdicField to an extension",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7381",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
-Assignee: roed
+Assignee: @roed314
 
-CC:  jen
+CC:  @jbalakrishnan
 
 
 ```
@@ -55,7 +55,7 @@ archive/issue_comments_062090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7381#issuecomment-62090",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing status from new to needs_review.
 archive/issue_comments_062091.json:
 ```json
 {
-    "body": "Attachment [trac_7381.patch](tarball://root/attachments/some-uuid/ticket7381/trac_7381.patch) by mhansen created at 2009-11-04 07:27:30",
+    "body": "Attachment [trac_7381.patch](tarball://root/attachments/some-uuid/ticket7381/trac_7381.patch) by @mwhansen created at 2009-11-04 07:27:30",
     "created_at": "2009-11-04T07:27:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7381#issuecomment-62091",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_7381.patch](tarball://root/attachments/some-uuid/ticket7381/trac_7381.patch) by mhansen created at 2009-11-04 07:27:30
+Attachment [trac_7381.patch](tarball://root/attachments/some-uuid/ticket7381/trac_7381.patch) by @mwhansen created at 2009-11-04 07:27:30
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_062092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7381#issuecomment-62092",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_062093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7381#issuecomment-62093",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_062094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7381#issuecomment-62094",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_062095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7381#issuecomment-62095",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

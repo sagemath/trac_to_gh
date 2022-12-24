@@ -123,7 +123,7 @@ archive/issue_comments_010789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1703#issuecomment-10789",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

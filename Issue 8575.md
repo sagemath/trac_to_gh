@@ -3,7 +3,7 @@
 archive/issues_008575.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  jhpalmieri mpatel\n\nKeywords: Sphinx, warning\n\nIn some cases, for example when an enumerated list is ill formated, in text mode ouput sphinx returns silently an empty string. It should at least raise some warning. See #8572 for an instance of the problem.\nAt this point, I don't know if it's a bug of sphinx or the way we call it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8575\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri @qed777\n\nKeywords: Sphinx, warning\n\nIn some cases, for example when an enumerated list is ill formated, in text mode ouput sphinx returns silently an empty string. It should at least raise some warning. See #8572 for an instance of the problem.\nAt this point, I don't know if it's a bug of sphinx or the way we call it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8575\n\n",
     "created_at": "2010-03-22T09:50:40Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_008575.json:
     "title": "Sphinx should raise warning in case of ill formated enumerated lists",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8575",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 Assignee: mvngu
 
-CC:  jhpalmieri mpatel
+CC:  @jhpalmieri @qed777
 
 Keywords: Sphinx, warning
 
@@ -42,7 +42,7 @@ archive/issue_comments_077671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8575#issuecomment-77671",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_077672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8575#issuecomment-77672",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_077674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8575#issuecomment-77674",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_077675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8575#issuecomment-77675",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_077676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8575#issuecomment-77676",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_077677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8575#issuecomment-77677",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_077678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8575#issuecomment-77678",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_077679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8575#issuecomment-77679",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

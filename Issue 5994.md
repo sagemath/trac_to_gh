@@ -3,7 +3,7 @@
 archive/issues_005994.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kedlaya\n\nKeywords: singular version\n\nFirst of all, `singular.version()` does not work. When one starts sage and calls it, there is an error:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: singular.version()\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (795, 0))\n| Sage Version 3.4.1, Release Date: 2009-04-21                       |\n| Type notebook() for the GUI, and license() for information.        |\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/home/SimonKing/.sage/temp/sage.math.washington.edu/10897/_home_SimonKing__sage_init_sage_0.py in <module>()\n\n/usr/local/sage/local/lib/python2.5/site-packages/sage/interfaces/singular.pyc in version(self)\n   1012         EXAMPLES:\n   1013         \"\"\"\n-> 1014         return singular_version()\n   1015\n   1016     def _function_class(self):\n\n/usr/local/sage/local/lib/python2.5/site-packages/sage/interfaces/singular.pyc in singular_version()\n   1807     EXAMPLES:\n   1808     \"\"\"\n-> 1809     return singular.eval('system(\"--version\");')\n   1810\n   1811\n\n/usr/local/sage/local/lib/python2.5/site-packages/sage/interfaces/singular.pyc in eval(self, x, allow_semicolon, strip, **kwds)\n    541\n    542         if s.find(\"error\") != -1 or s.find(\"Segment fault\") != -1:\n--> 543             raise RuntimeError, 'Singular error:\\n%s'%s\n    544\n    545         if get_verbose() > 0:\n\nRuntimeError: Singular error:\n   ? cannot open `help.cnf`\nSingular for x86_64-Linux version 3-0-4 (3044-2009031122)  Mar 11 2009 22:29:08\nwith\n        factory(@(#) factoryVersion = 3.0.4),libfac(3.0.4,Mar 2008),\n        GMP(4.2),NTL(5.4.2),static readline,Plural,DBM,\n        namespaces,dynamic modules,dynamic p_Procs,OM_CHECK=0,OM_TRACK=0,random=1241602325\n        CC= gcc -O3 -g -fPIC -pipe -DNDEBUG -DOM_NDEBUG -Dx86_64_Linux -DHAVE_CONFIG_H,\n        CXX= g++ -O3 -g -fPIC -pipe -DNDEBUG -DOM_NDEBUG -Dx86_64_Linux -DHAVE_CONFIG_H (4.2.4 (Ubuntu 4.2.4-1ubuntu3))\nargv[0]   :     Singular-3-0-4\nSearchPath:     /usr/local/sage/local/LIB\nSingular  :     /usr/local/sage/local/bin/Singular-3-0-4\nBinDir    :     /usr/local/sage/local/bin\nRootDir   :     /usr/local/sage/local\nDefaultDir:     /usr/local/sage/local\nInfoFile  :\nIdxFile   :\nHtmlDir   :\nManualUrl :     http://www.singular.uni-kl.de/Manual/3-0-4\nExDir     :\nPath      :     /usr/local/sage/local/bin:/usr/local/sage/local/polymake/bin:/usr/local/sage:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games\nEmacsDir  :\nAvailable HelpBrowsers: dummy, emacs,\nCurrent HelpBrowser: dummy\n   ? error occurred in STDIN line 3: `system(\"--version\");`\n```\n\n\nSecondly, neither `singular.version` nor `singular_version` have doc tests.\n\nThirdly, if it is called again, it kind of works:\n\n```\nsage: singular.version()\n'Singular for x86_64-Linux version 3-0-4 (3044-2009031122)  Mar 11 2009 22:29:08\\nwith\\n\\tfactory(@(#) factoryVersion = 3.0.4),libfac(3.0.4,Mar 2008),\\n\\tGMP(4.2),NTL(5.4.2),static readline,Plural,DBM,\\n\\tnamespaces,dynamic modules,dynamic p_Procs,OM_CHECK=0,OM_TRACK=0,random=1241602325\\n\\tCC= gcc -O3 -g -fPIC -pipe -DNDEBUG -DOM_NDEBUG -Dx86_64_Linux -DHAVE_CONFIG_H,\\n\\tCXX= g++ -O3 -g -fPIC -pipe -DNDEBUG -DOM_NDEBUG -Dx86_64_Linux -DHAVE_CONFIG_H (4.2.4 (Ubuntu 4.2.4-1ubuntu3))\\nargv[0]   :\\tSingular-3-0-4\\nSearchPath:\\t/usr/local/sage/local/LIB\\nSingular  :\\t/usr/local/sage/local/bin/Singular-3-0-4\\nBinDir    :\\t/usr/local/sage/local/bin\\nRootDir   :\\t/usr/local/sage/local\\nDefaultDir:\\t/usr/local/sage/local\\nInfoFile  :\\t\\nIdxFile   :\\t\\nHtmlDir   :\\t\\nManualUrl :\\thttp://www.singular.uni-kl.de/Manual/3-0-4\\nExDir     :\\t\\nPath      :\\t/usr/local/sage/local/bin:/usr/local/sage/local/polymake/bin:/usr/local/sage:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games\\nEmacsDir  :\\t\\nAvailable HelpBrowsers: dummy, emacs, \\nCurrent HelpBrowser: dummy '\n```\n\n\nFinally, I believe that the output of `singular.version` is nasty. If I ask for the version of Singular, I expect to get, say, a tuple of integers, for example:\n\n```\nsage: def my_singular_version():\n....:     return tuple([Integer(x) for x in singular.eval('system(\"version\")')])\n....:\nsage: my_singular_version()\n(3, 0, 4, 4)\n```\n\n\nI suggest to remake `singular.version` so that it returns a tuple of integers, rather than a cryptic string.\n\nProblem though: Would this break code?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5994\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kedlaya\n\nKeywords: singular version\n\nFirst of all, `singular.version()` does not work. When one starts sage and calls it, there is an error:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: singular.version()\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (795, 0))\n| Sage Version 3.4.1, Release Date: 2009-04-21                       |\n| Type notebook() for the GUI, and license() for information.        |\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/home/SimonKing/.sage/temp/sage.math.washington.edu/10897/_home_SimonKing__sage_init_sage_0.py in <module>()\n\n/usr/local/sage/local/lib/python2.5/site-packages/sage/interfaces/singular.pyc in version(self)\n   1012         EXAMPLES:\n   1013         \"\"\"\n-> 1014         return singular_version()\n   1015\n   1016     def _function_class(self):\n\n/usr/local/sage/local/lib/python2.5/site-packages/sage/interfaces/singular.pyc in singular_version()\n   1807     EXAMPLES:\n   1808     \"\"\"\n-> 1809     return singular.eval('system(\"--version\");')\n   1810\n   1811\n\n/usr/local/sage/local/lib/python2.5/site-packages/sage/interfaces/singular.pyc in eval(self, x, allow_semicolon, strip, **kwds)\n    541\n    542         if s.find(\"error\") != -1 or s.find(\"Segment fault\") != -1:\n--> 543             raise RuntimeError, 'Singular error:\\n%s'%s\n    544\n    545         if get_verbose() > 0:\n\nRuntimeError: Singular error:\n   ? cannot open `help.cnf`\nSingular for x86_64-Linux version 3-0-4 (3044-2009031122)  Mar 11 2009 22:29:08\nwith\n        factory(@(#) factoryVersion = 3.0.4),libfac(3.0.4,Mar 2008),\n        GMP(4.2),NTL(5.4.2),static readline,Plural,DBM,\n        namespaces,dynamic modules,dynamic p_Procs,OM_CHECK=0,OM_TRACK=0,random=1241602325\n        CC= gcc -O3 -g -fPIC -pipe -DNDEBUG -DOM_NDEBUG -Dx86_64_Linux -DHAVE_CONFIG_H,\n        CXX= g++ -O3 -g -fPIC -pipe -DNDEBUG -DOM_NDEBUG -Dx86_64_Linux -DHAVE_CONFIG_H (4.2.4 (Ubuntu 4.2.4-1ubuntu3))\nargv[0]   :     Singular-3-0-4\nSearchPath:     /usr/local/sage/local/LIB\nSingular  :     /usr/local/sage/local/bin/Singular-3-0-4\nBinDir    :     /usr/local/sage/local/bin\nRootDir   :     /usr/local/sage/local\nDefaultDir:     /usr/local/sage/local\nInfoFile  :\nIdxFile   :\nHtmlDir   :\nManualUrl :     http://www.singular.uni-kl.de/Manual/3-0-4\nExDir     :\nPath      :     /usr/local/sage/local/bin:/usr/local/sage/local/polymake/bin:/usr/local/sage:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games\nEmacsDir  :\nAvailable HelpBrowsers: dummy, emacs,\nCurrent HelpBrowser: dummy\n   ? error occurred in STDIN line 3: `system(\"--version\");`\n```\n\n\nSecondly, neither `singular.version` nor `singular_version` have doc tests.\n\nThirdly, if it is called again, it kind of works:\n\n```\nsage: singular.version()\n'Singular for x86_64-Linux version 3-0-4 (3044-2009031122)  Mar 11 2009 22:29:08\\nwith\\n\\tfactory(@(#) factoryVersion = 3.0.4),libfac(3.0.4,Mar 2008),\\n\\tGMP(4.2),NTL(5.4.2),static readline,Plural,DBM,\\n\\tnamespaces,dynamic modules,dynamic p_Procs,OM_CHECK=0,OM_TRACK=0,random=1241602325\\n\\tCC= gcc -O3 -g -fPIC -pipe -DNDEBUG -DOM_NDEBUG -Dx86_64_Linux -DHAVE_CONFIG_H,\\n\\tCXX= g++ -O3 -g -fPIC -pipe -DNDEBUG -DOM_NDEBUG -Dx86_64_Linux -DHAVE_CONFIG_H (4.2.4 (Ubuntu 4.2.4-1ubuntu3))\\nargv[0]   :\\tSingular-3-0-4\\nSearchPath:\\t/usr/local/sage/local/LIB\\nSingular  :\\t/usr/local/sage/local/bin/Singular-3-0-4\\nBinDir    :\\t/usr/local/sage/local/bin\\nRootDir   :\\t/usr/local/sage/local\\nDefaultDir:\\t/usr/local/sage/local\\nInfoFile  :\\t\\nIdxFile   :\\t\\nHtmlDir   :\\t\\nManualUrl :\\thttp://www.singular.uni-kl.de/Manual/3-0-4\\nExDir     :\\t\\nPath      :\\t/usr/local/sage/local/bin:/usr/local/sage/local/polymake/bin:/usr/local/sage:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games\\nEmacsDir  :\\t\\nAvailable HelpBrowsers: dummy, emacs, \\nCurrent HelpBrowser: dummy '\n```\n\n\nFinally, I believe that the output of `singular.version` is nasty. If I ask for the version of Singular, I expect to get, say, a tuple of integers, for example:\n\n```\nsage: def my_singular_version():\n....:     return tuple([Integer(x) for x in singular.eval('system(\"version\")')])\n....:\nsage: my_singular_version()\n(3, 0, 4, 4)\n```\n\n\nI suggest to remake `singular.version` so that it returns a tuple of integers, rather than a cryptic string.\n\nProblem though: Would this break code?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5994\n\n",
     "created_at": "2009-05-06T09:46:52Z",
     "labels": [
         "interfaces",
@@ -14,12 +14,12 @@ archive/issues_005994.json:
     "title": "singular.version() yields an error when first called, has no doctest, and has a strange output imo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5994",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kedlaya
+CC:  @kedlaya
 
 Keywords: singular version
 
@@ -129,7 +129,7 @@ archive/issue_comments_047632.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47632",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_047633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47633",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_047634.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47634",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_047635.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47635",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_047636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47636",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_047637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47637",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_047638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47638",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -302,16 +302,16 @@ The attached patch fixes the output format for version to be more consistent wit
 archive/issue_comments_047639.json:
 ```json
 {
-    "body": "Attachment [trac_5994.patch](tarball://root/attachments/some-uuid/ticket5994/trac_5994.patch) by SimonKing created at 2010-01-18 13:15:46\n\nReplying to [comment:6 was]:\n> It also programs around the issue with help files, which is *not* fixed in Singular-3-1-0... and I'm not at all clear *why* it is considered a bug in Singular by the people in the thread above.  \n\nNote that I originally thought that the issue with help files is a problem of Singular, and clearly a bug: I mean, you ask for the version number and get an error; you ask again, and it works! It had reported it upstream.\n\nBut then the impression came across (see my last post) that it only occurs in Singular if it is built by Sage. In this case, it could be a problem with the patched version in Sage, which might be worth another ticket.\n\nCheers,\nSimon",
+    "body": "Attachment [trac_5994.patch](tarball://root/attachments/some-uuid/ticket5994/trac_5994.patch) by @simon-king-jena created at 2010-01-18 13:15:46\n\nReplying to [comment:6 was]:\n> It also programs around the issue with help files, which is *not* fixed in Singular-3-1-0... and I'm not at all clear *why* it is considered a bug in Singular by the people in the thread above.  \n\nNote that I originally thought that the issue with help files is a problem of Singular, and clearly a bug: I mean, you ask for the version number and get an error; you ask again, and it works! It had reported it upstream.\n\nBut then the impression came across (see my last post) that it only occurs in Singular if it is built by Sage. In this case, it could be a problem with the patched version in Sage, which might be worth another ticket.\n\nCheers,\nSimon",
     "created_at": "2010-01-18T13:15:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47639",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [trac_5994.patch](tarball://root/attachments/some-uuid/ticket5994/trac_5994.patch) by SimonKing created at 2010-01-18 13:15:46
+Attachment [trac_5994.patch](tarball://root/attachments/some-uuid/ticket5994/trac_5994.patch) by @simon-king-jena created at 2010-01-18 13:15:46
 
 Replying to [comment:6 was]:
 > It also programs around the issue with help files, which is *not* fixed in Singular-3-1-0... and I'm not at all clear *why* it is considered a bug in Singular by the people in the thread above.  
@@ -335,7 +335,7 @@ archive/issue_comments_047640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47640",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -355,7 +355,7 @@ archive/issue_comments_047641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47641",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -373,7 +373,7 @@ archive/issue_comments_047642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47642",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -409,7 +409,7 @@ archive/issue_comments_047643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47643",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -434,7 +434,7 @@ archive/issue_comments_047644.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47644",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -457,7 +457,7 @@ archive/issue_comments_047645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47645",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -475,7 +475,7 @@ archive/issue_comments_047646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47646",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -517,7 +517,7 @@ archive/issue_comments_047647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47647",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -541,7 +541,7 @@ archive/issue_comments_047648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47648",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -563,7 +563,7 @@ archive/issue_comments_047649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47649",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -581,7 +581,7 @@ archive/issue_comments_047650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47650",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -599,7 +599,7 @@ archive/issue_comments_047651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47651",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -617,7 +617,7 @@ archive/issue_comments_047652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47652",
-    "user": "jmantysalo"
+    "user": "@jm58660"
 }
 ```
 
@@ -641,7 +641,7 @@ archive/issue_comments_047653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47653",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -659,7 +659,7 @@ archive/issue_comments_047654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47654",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -707,7 +707,7 @@ archive/issue_comments_047655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47655",
-    "user": "jmantysalo"
+    "user": "@jm58660"
 }
 ```
 
@@ -736,7 +736,7 @@ archive/issue_comments_047656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47656",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -765,7 +765,7 @@ archive/issue_comments_047657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47657",
-    "user": "jmantysalo"
+    "user": "@jm58660"
 }
 ```
 
@@ -791,7 +791,7 @@ archive/issue_comments_047658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47658",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -809,7 +809,7 @@ archive/issue_comments_047659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47659",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -829,7 +829,7 @@ archive/issue_comments_047660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47660",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -847,7 +847,7 @@ archive/issue_comments_047661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47661",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -883,7 +883,7 @@ archive/issue_comments_047663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47663",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -901,7 +901,7 @@ archive/issue_comments_047664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47664",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -919,7 +919,7 @@ archive/issue_comments_047665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47665",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -937,7 +937,7 @@ archive/issue_comments_047666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47666",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -958,7 +958,7 @@ archive/issue_comments_047667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47667",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -984,7 +984,7 @@ archive/issue_comments_047668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47668",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1011,7 +1011,7 @@ archive/issue_comments_047669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47669",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1029,7 +1029,7 @@ archive/issue_comments_047670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47670",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1049,7 +1049,7 @@ archive/issue_comments_047671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47671",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1075,7 +1075,7 @@ archive/issue_comments_047672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47672",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1095,7 +1095,7 @@ archive/issue_comments_047673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47673",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1122,7 +1122,7 @@ archive/issue_comments_047674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47674",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1140,7 +1140,7 @@ archive/issue_comments_047675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47675",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1168,7 +1168,7 @@ archive/issue_comments_047676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47676",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1194,7 +1194,7 @@ archive/issue_comments_047677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47677",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1212,7 +1212,7 @@ archive/issue_comments_047678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47678",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1233,7 +1233,7 @@ archive/issue_comments_047679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47679",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1257,7 +1257,7 @@ archive/issue_comments_047680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47680",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1275,7 +1275,7 @@ archive/issue_comments_047681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47681",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1295,7 +1295,7 @@ archive/issue_comments_047682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47682",
-    "user": "jmantysalo"
+    "user": "@jm58660"
 }
 ```
 
@@ -1313,7 +1313,7 @@ archive/issue_comments_047683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47683",
-    "user": "jmantysalo"
+    "user": "@jm58660"
 }
 ```
 
@@ -1337,7 +1337,7 @@ archive/issue_comments_047684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47684",
-    "user": "jmantysalo"
+    "user": "@jm58660"
 }
 ```
 
@@ -1355,7 +1355,7 @@ archive/issue_comments_047685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47685",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1373,7 +1373,7 @@ archive/issue_comments_047686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5994#issuecomment-47686",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

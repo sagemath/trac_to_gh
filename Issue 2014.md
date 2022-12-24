@@ -14,7 +14,7 @@ archive/issues_002014.json:
     "title": "crap -- matplotlib contains an annoying OS X temp file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2014",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

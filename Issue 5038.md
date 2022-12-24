@@ -3,7 +3,7 @@
 archive/issues_005038.json:
 ```json
 {
-    "body": "Assignee: slabbe\n\nCC:  sage-combinat saliola abmasse\n\nThis module implements word paths which belongs to Discrete Geometry seen from Combinatorics on Words point of view. A word path is the representation of a word\nas a discrete path in a two (or more) dimensions space using a one-to-one\ncorrespondence between the alphabet and a set of vectors called steps. Using combinatorics on words, many problems on discrete polygons on 2d lattice grid may be solved in linear time in length of the perimeter (self-intersecting, area, inertia moment, etc.). For now, the goal is to create all the classes hierarchy. Cool algorithms will come into an other ticket.\n\nHere are some examples taken from the documentation of the current state of paths.py available in the sage-combinat tree.\n\nThe combinatorial class of all paths defined over three given steps:\n\n```\nsage: P = WordPaths('abc', steps=[(1,2), (-3,4), (0,-3)]); P\nFinite Word Paths over 3 steps\n```\n\n\nCreation of a path from the combinatorial class P:\n\n```\nsage: p = P('abaccba'); p\nPath: abaccba\nsage: list(p.points())\n[(0, 0), (1, 2), (-2, 6), (-1, 8), (-1, 5), (-1, 2), (-4, 6), (-3, 8)]\nsage: p.is_closed()\nFalse\nsage: p.plot() \n```\n\n\nSince p is a finite word, many functions from the word library are available:\n\n```\nsage: p.crochemore_factorization()\n(a.b.a.c.c.ba)\nsage: p.is_palindrome()\nFalse\nsage: p[:3]\nPath: aba\nsage: len(p)\n7 \n```\n\n\nSome built-in combinatorial classes of paths:\n\n```\nsage: P = WordPaths('abAB', steps='square_grid'); P\nFinite Word Paths on the square grid\n```\n\n\n```\nsage: D = WordPaths('()', steps='dyck'); D\nFinite Dyck paths\nsage: d = D('()()()(())'); d\nPath: ()()()(())\nsage: d.plot()\n```\n\n\n```\nsage: P = WordPaths('abcdef', steps='triangle_grid')\nsage: p = P('babaddefadabcadefaadfafabacdefa')\nsage: p.plot() \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5038\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  sage-combinat @saliola abmasse\n\nThis module implements word paths which belongs to Discrete Geometry seen from Combinatorics on Words point of view. A word path is the representation of a word\nas a discrete path in a two (or more) dimensions space using a one-to-one\ncorrespondence between the alphabet and a set of vectors called steps. Using combinatorics on words, many problems on discrete polygons on 2d lattice grid may be solved in linear time in length of the perimeter (self-intersecting, area, inertia moment, etc.). For now, the goal is to create all the classes hierarchy. Cool algorithms will come into an other ticket.\n\nHere are some examples taken from the documentation of the current state of paths.py available in the sage-combinat tree.\n\nThe combinatorial class of all paths defined over three given steps:\n\n```\nsage: P = WordPaths('abc', steps=[(1,2), (-3,4), (0,-3)]); P\nFinite Word Paths over 3 steps\n```\n\n\nCreation of a path from the combinatorial class P:\n\n```\nsage: p = P('abaccba'); p\nPath: abaccba\nsage: list(p.points())\n[(0, 0), (1, 2), (-2, 6), (-1, 8), (-1, 5), (-1, 2), (-4, 6), (-3, 8)]\nsage: p.is_closed()\nFalse\nsage: p.plot() \n```\n\n\nSince p is a finite word, many functions from the word library are available:\n\n```\nsage: p.crochemore_factorization()\n(a.b.a.c.c.ba)\nsage: p.is_palindrome()\nFalse\nsage: p[:3]\nPath: aba\nsage: len(p)\n7 \n```\n\n\nSome built-in combinatorial classes of paths:\n\n```\nsage: P = WordPaths('abAB', steps='square_grid'); P\nFinite Word Paths on the square grid\n```\n\n\n```\nsage: D = WordPaths('()', steps='dyck'); D\nFinite Dyck paths\nsage: d = D('()()()(())'); d\nPath: ()()()(())\nsage: d.plot()\n```\n\n\n```\nsage: P = WordPaths('abcdef', steps='triangle_grid')\nsage: p = P('babaddefadabcadefaadfafabacdefa')\nsage: p.plot() \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5038\n\n",
     "created_at": "2009-01-20T19:56:41Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_005038.json:
     "title": "Add word path support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5038",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: slabbe
+Assignee: @seblabbe
 
-CC:  sage-combinat saliola abmasse
+CC:  sage-combinat @saliola abmasse
 
 This module implements word paths which belongs to Discrete Geometry seen from Combinatorics on Words point of view. A word path is the representation of a word
 as a discrete path in a two (or more) dimensions space using a one-to-one
@@ -102,7 +102,7 @@ archive/issue_comments_038348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38348",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_038349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38349",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_038350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38350",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_038351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38351",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_038352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38352",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_038353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38353",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_038354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38354",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -225,16 +225,16 @@ Depends on #6903.
 archive/issue_comments_038355.json:
 ```json
 {
-    "body": "Attachment [trac_5038_paths-sl.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038_paths-sl.patch) by slabbe created at 2009-09-18 21:31:38\n\nNew patch uploaded. Doctest coverage of paths.py : 100%. Added paths.py to the documentation.",
+    "body": "Attachment [trac_5038_paths-sl.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038_paths-sl.patch) by @seblabbe created at 2009-09-18 21:31:38\n\nNew patch uploaded. Doctest coverage of paths.py : 100%. Added paths.py to the documentation.",
     "created_at": "2009-09-18T21:31:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38355",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_5038_paths-sl.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038_paths-sl.patch) by slabbe created at 2009-09-18 21:31:38
+Attachment [trac_5038_paths-sl.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038_paths-sl.patch) by @seblabbe created at 2009-09-18 21:31:38
 
 New patch uploaded. Doctest coverage of paths.py : 100%. Added paths.py to the documentation.
 
@@ -250,7 +250,7 @@ archive/issue_comments_038356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38356",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_038357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38357",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -281,16 +281,16 @@ Looks good to me.  I attached a patch to remove the import of GridLines since it
 archive/issue_comments_038358.json:
 ```json
 {
-    "body": "Attachment [trac_5038-remove-gridlines.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038-remove-gridlines.patch) by mhansen created at 2009-09-26 03:33:53",
+    "body": "Attachment [trac_5038-remove-gridlines.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038-remove-gridlines.patch) by @mwhansen created at 2009-09-26 03:33:53",
     "created_at": "2009-09-26T03:33:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38358",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5038-remove-gridlines.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038-remove-gridlines.patch) by mhansen created at 2009-09-26 03:33:53
+Attachment [trac_5038-remove-gridlines.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038-remove-gridlines.patch) by @mwhansen created at 2009-09-26 03:33:53
 
 
 
@@ -352,7 +352,7 @@ archive/issue_comments_038360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38360",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -365,16 +365,16 @@ Applies over the precedent 2 patches.
 archive/issue_comments_038361.json:
 ```json
 {
-    "body": "Attachment [trac_5038_pickle_jar_fix-sl.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038_pickle_jar_fix-sl.patch) by slabbe created at 2009-09-29 12:24:44\n\nThe above failure is now fixed by the patch I just uploaded. Needs review.",
+    "body": "Attachment [trac_5038_pickle_jar_fix-sl.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038_pickle_jar_fix-sl.patch) by @seblabbe created at 2009-09-29 12:24:44\n\nThe above failure is now fixed by the patch I just uploaded. Needs review.",
     "created_at": "2009-09-29T12:24:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38361",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_5038_pickle_jar_fix-sl.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038_pickle_jar_fix-sl.patch) by slabbe created at 2009-09-29 12:24:44
+Attachment [trac_5038_pickle_jar_fix-sl.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038_pickle_jar_fix-sl.patch) by @seblabbe created at 2009-09-29 12:24:44
 
 The above failure is now fixed by the patch I just uploaded. Needs review.
 
@@ -390,7 +390,7 @@ archive/issue_comments_038362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38362",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -408,7 +408,7 @@ archive/issue_comments_038363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38363",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -477,7 +477,7 @@ archive/issue_comments_038364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38364",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -516,16 +516,16 @@ Hope this helps.
 archive/issue_comments_038365.json:
 ```json
 {
-    "body": "Attachment [trac_5038_improved_doc-sl.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038_improved_doc-sl.patch) by slabbe created at 2009-10-20 11:24:14",
+    "body": "Attachment [trac_5038_improved_doc-sl.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038_improved_doc-sl.patch) by @seblabbe created at 2009-10-20 11:24:14",
     "created_at": "2009-10-20T11:24:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38365",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_5038_improved_doc-sl.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038_improved_doc-sl.patch) by slabbe created at 2009-10-20 11:24:14
+Attachment [trac_5038_improved_doc-sl.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038_improved_doc-sl.patch) by @seblabbe created at 2009-10-20 11:24:14
 
 
 
@@ -539,7 +539,7 @@ archive/issue_comments_038366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38366",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -557,7 +557,7 @@ archive/issue_comments_038367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38367",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -582,16 +582,16 @@ Needs review!
 archive/issue_comments_038368.json:
 ```json
 {
-    "body": "Attachment [trac_5038_doc_fixes-fs.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038_doc_fixes-fs.patch) by saliola created at 2009-10-20 16:52:41\n\napply on top of the others",
+    "body": "Attachment [trac_5038_doc_fixes-fs.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038_doc_fixes-fs.patch) by @saliola created at 2009-10-20 16:52:41\n\napply on top of the others",
     "created_at": "2009-10-20T16:52:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38368",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_5038_doc_fixes-fs.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038_doc_fixes-fs.patch) by saliola created at 2009-10-20 16:52:41
+Attachment [trac_5038_doc_fixes-fs.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038_doc_fixes-fs.patch) by @saliola created at 2009-10-20 16:52:41
 
 apply on top of the others
 
@@ -607,7 +607,7 @@ archive/issue_comments_038369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38369",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -625,7 +625,7 @@ archive/issue_comments_038370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38370",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -643,7 +643,7 @@ archive/issue_comments_038371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38371",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -661,7 +661,7 @@ archive/issue_comments_038372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38372",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

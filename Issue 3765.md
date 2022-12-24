@@ -3,7 +3,7 @@
 archive/issues_003765.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis would be just a few lines of code to implement and would make doing \"sage -br\" much faster. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3765\n\n",
+    "body": "Assignee: @williamstein\n\nThis would be just a few lines of code to implement and would make doing \"sage -br\" much faster. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3765\n\n",
     "created_at": "2008-08-03T18:26:24Z",
     "labels": [
         "build",
@@ -14,10 +14,10 @@ archive/issues_003765.json:
     "title": "make it so \"sage -br\" does the cythonization in parallel using pyprocessing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3765",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This would be just a few lines of code to implement and would make doing "sage -br" much faster. 
 
@@ -37,7 +37,7 @@ archive/issue_comments_026773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3765#issuecomment-26773",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_026774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3765#issuecomment-26774",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_026775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3765#issuecomment-26775",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_026776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3765#issuecomment-26776",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_026777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3765#issuecomment-26777",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_026779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3765#issuecomment-26779",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_026781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3765#issuecomment-26781",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -278,7 +278,7 @@ archive/issue_comments_026783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3765#issuecomment-26783",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -321,16 +321,16 @@ William
 archive/issue_comments_026784.json:
 ```json
 {
-    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket3765/deps) by was created at 2008-09-22 04:54:43",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket3765/deps) by @williamstein created at 2008-09-22 04:54:43",
     "created_at": "2008-09-22T04:54:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3765#issuecomment-26784",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [deps](tarball://root/attachments/some-uuid/ticket3765/deps) by was created at 2008-09-22 04:54:43
+Attachment [deps](tarball://root/attachments/some-uuid/ticket3765/deps) by @williamstein created at 2008-09-22 04:54:43
 
 
 
@@ -344,7 +344,7 @@ archive/issue_comments_026785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3765#issuecomment-26785",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -385,7 +385,7 @@ archive/issue_comments_026786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3765#issuecomment-26786",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

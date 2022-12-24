@@ -3,7 +3,7 @@
 archive/issues_009857.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  burcin mhansen was davidloeffler\n\nKeywords: SAGE_CHECK mpz_random\n\nDue to the use of deprecated/obsolete GMP functions, the test suite of flint-1.5.0.p5 fails to build (i.e. the package's installation also currently fails if `SAGE_CHECK=yes`):\n\n\n```\n...\nSuccessfully installed flint-1.5.0.p5\nRunning the test suite.\n*************************************************\nRunning test suite. This should take 6-20 minutes\n   Please report all failures to sage-devel      \n*************************************************\nmake[2]: Entering directory `/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/spkg/build/flint-1.5.0.p5/src'\nmake[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.\ngcc -std=c99 -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include/ -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include  -fPIC -funroll-loops   -O2 -c F_mpz-test.c -o F_mpz-test.o\ngcc -std=c99 -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include/ -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include  -fPIC -funroll-loops   -O2 -c test-support.c -o test-support.o\ng++  -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include/ -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include  -fPIC -funroll-loops   -O2 F_mpz-test.o test-support.o -o F_mpz-test zn_mod.o misc.o mul_ks.o pack.o mul.o mulmid.o mulmid_ks.o ks_support.o mpn_mulmid.o nuss.o pmf.o pmfvec_fft.o tuning.o mul_fft.o mul_fft_dft.o array.o invert.o mpn_extras.o mpz_extras.o memory-manager.o ZmodF.o ZmodF_mul.o ZmodF_mul-tuning.o fmpz.o fmpz_poly.o mpz_poly-tuning.o mpz_poly.o ZmodF_poly.o long_extras.o zmod_poly.o theta.o zmod_mat.o F_mpz.o tinyQS.o factor_base.o poly.o sieve.o linear_algebra.o block_lanczos.o NTL-interface.o -L/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/lib/ -L/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/lib/  -lgmp -lpthread -lntl -lm \ngcc -std=c99 -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include/ -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include  -fPIC -funroll-loops   -O2 -c mpn_extras-test.c -o mpn_extras-test.o\ng++  -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include/ -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include  -fPIC -funroll-loops   -O2 mpn_extras-test.o test-support.o -o mpn_extras-test zn_mod.o misc.o mul_ks.o pack.o mul.o mulmid.o mulmid_ks.o ks_support.o mpn_mulmid.o nuss.o pmf.o pmfvec_fft.o tuning.o mul_fft.o mul_fft_dft.o array.o invert.o mpn_extras.o mpz_extras.o memory-manager.o ZmodF.o ZmodF_mul.o ZmodF_mul-tuning.o fmpz.o fmpz_poly.o mpz_poly-tuning.o mpz_poly.o ZmodF_poly.o long_extras.o zmod_poly.o theta.o zmod_mat.o F_mpz.o tinyQS.o factor_base.o poly.o sieve.o linear_algebra.o block_lanczos.o NTL-interface.o -L/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/lib/ -L/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/lib/  -lgmp -lpthread -lntl -lm \ngcc -std=c99 -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include/ -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include  -fPIC -funroll-loops   -O2 -c fmpz_poly-test.c -o fmpz_poly-test.o\ng++  -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include/ -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include  -fPIC -funroll-loops   -O2 fmpz_poly-test.o test-support.o -o fmpz_poly-test zn_mod.o misc.o mul_ks.o pack.o mul.o mulmid.o mulmid_ks.o ks_support.o mpn_mulmid.o nuss.o pmf.o pmfvec_fft.o tuning.o mul_fft.o mul_fft_dft.o array.o invert.o mpn_extras.o mpz_extras.o memory-manager.o ZmodF.o ZmodF_mul.o ZmodF_mul-tuning.o fmpz.o fmpz_poly.o mpz_poly-tuning.o mpz_poly.o ZmodF_poly.o long_extras.o zmod_poly.o theta.o zmod_mat.o F_mpz.o tinyQS.o factor_base.o poly.o sieve.o linear_algebra.o block_lanczos.o NTL-interface.o -L/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/lib/ -L/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/lib/  -lgmp -lpthread -lntl -lm \ngcc -std=c99 -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include/ -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include  -fPIC -funroll-loops   -O2 -c fmpz-test.c -o fmpz-test.o\nfmpz-test.c: In function 'test___fmpz_normalise':\nfmpz-test.c:1379: warning: implicit declaration of function 'mpz_random'\ng++  -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include/ -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include  -fPIC -funroll-loops   -O2 fmpz-test.o test-support.o -o fmpz-test zn_mod.o misc.o mul_ks.o pack.o mul.o mulmid.o mulmid_ks.o ks_support.o mpn_mulmid.o nuss.o pmf.o pmfvec_fft.o tuning.o mul_fft.o mul_fft_dft.o array.o invert.o mpn_extras.o mpz_extras.o memory-manager.o ZmodF.o ZmodF_mul.o ZmodF_mul-tuning.o fmpz.o fmpz_poly.o mpz_poly-tuning.o mpz_poly.o ZmodF_poly.o long_extras.o zmod_poly.o theta.o zmod_mat.o F_mpz.o tinyQS.o factor_base.o poly.o sieve.o linear_algebra.o block_lanczos.o NTL-interface.o -L/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/lib/ -L/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/lib/  -lgmp -lpthread -lntl -lm \nfmpz-test.o: In function `test___fmpz_normalise':\nfmpz-test.c:(.text+0x26a6): undefined reference to `mpz_random'\ncollect2: ld returned 1 exit status\nmake[2]: *** [fmpz-test] Error 1\nmake[2]: Leaving directory `/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/spkg/build/flint-1.5.0.p5/src'\nError building the test suite for FLINT\n*************************************\nError testing package ** flint-1.5.0.p5 **\n*************************************\nsage: An error occurred while testing flint-1.5.0.p5\n...\n```\n\n\n(This is actually Sage 4.6.prealpha3 with MPIR 2.1.**2** and [GMP-]ECM 6.3, see #9343/[NewPARI wiki page](http://wiki.sagemath.org/NewPARI), #8664 and #5847, respectively.)\n\nI guess Bill has already fixed that in FLINT 1.5.2, which was released a month ago. So simply updating the spkg might suffice.\n\nBtw, at least the current FLINT in Sage ignores user-provided `CFLAGS`; one could perhaps \"move\" them into some other environment variable used by FLINT.\n\n----\n\nUpstream: http://www.flintlib.org/\n\nIssue created by migration from https://trac.sagemath.org/ticket/9858\n\n",
+    "body": "Assignee: tbd\n\nCC:  @burcin @mwhansen @williamstein @loefflerd\n\nKeywords: SAGE_CHECK mpz_random\n\nDue to the use of deprecated/obsolete GMP functions, the test suite of flint-1.5.0.p5 fails to build (i.e. the package's installation also currently fails if `SAGE_CHECK=yes`):\n\n\n```\n...\nSuccessfully installed flint-1.5.0.p5\nRunning the test suite.\n*************************************************\nRunning test suite. This should take 6-20 minutes\n   Please report all failures to sage-devel      \n*************************************************\nmake[2]: Entering directory `/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/spkg/build/flint-1.5.0.p5/src'\nmake[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.\ngcc -std=c99 -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include/ -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include  -fPIC -funroll-loops   -O2 -c F_mpz-test.c -o F_mpz-test.o\ngcc -std=c99 -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include/ -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include  -fPIC -funroll-loops   -O2 -c test-support.c -o test-support.o\ng++  -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include/ -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include  -fPIC -funroll-loops   -O2 F_mpz-test.o test-support.o -o F_mpz-test zn_mod.o misc.o mul_ks.o pack.o mul.o mulmid.o mulmid_ks.o ks_support.o mpn_mulmid.o nuss.o pmf.o pmfvec_fft.o tuning.o mul_fft.o mul_fft_dft.o array.o invert.o mpn_extras.o mpz_extras.o memory-manager.o ZmodF.o ZmodF_mul.o ZmodF_mul-tuning.o fmpz.o fmpz_poly.o mpz_poly-tuning.o mpz_poly.o ZmodF_poly.o long_extras.o zmod_poly.o theta.o zmod_mat.o F_mpz.o tinyQS.o factor_base.o poly.o sieve.o linear_algebra.o block_lanczos.o NTL-interface.o -L/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/lib/ -L/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/lib/  -lgmp -lpthread -lntl -lm \ngcc -std=c99 -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include/ -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include  -fPIC -funroll-loops   -O2 -c mpn_extras-test.c -o mpn_extras-test.o\ng++  -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include/ -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include  -fPIC -funroll-loops   -O2 mpn_extras-test.o test-support.o -o mpn_extras-test zn_mod.o misc.o mul_ks.o pack.o mul.o mulmid.o mulmid_ks.o ks_support.o mpn_mulmid.o nuss.o pmf.o pmfvec_fft.o tuning.o mul_fft.o mul_fft_dft.o array.o invert.o mpn_extras.o mpz_extras.o memory-manager.o ZmodF.o ZmodF_mul.o ZmodF_mul-tuning.o fmpz.o fmpz_poly.o mpz_poly-tuning.o mpz_poly.o ZmodF_poly.o long_extras.o zmod_poly.o theta.o zmod_mat.o F_mpz.o tinyQS.o factor_base.o poly.o sieve.o linear_algebra.o block_lanczos.o NTL-interface.o -L/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/lib/ -L/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/lib/  -lgmp -lpthread -lntl -lm \ngcc -std=c99 -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include/ -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include  -fPIC -funroll-loops   -O2 -c fmpz_poly-test.c -o fmpz_poly-test.o\ng++  -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include/ -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include  -fPIC -funroll-loops   -O2 fmpz_poly-test.o test-support.o -o fmpz_poly-test zn_mod.o misc.o mul_ks.o pack.o mul.o mulmid.o mulmid_ks.o ks_support.o mpn_mulmid.o nuss.o pmf.o pmfvec_fft.o tuning.o mul_fft.o mul_fft_dft.o array.o invert.o mpn_extras.o mpz_extras.o memory-manager.o ZmodF.o ZmodF_mul.o ZmodF_mul-tuning.o fmpz.o fmpz_poly.o mpz_poly-tuning.o mpz_poly.o ZmodF_poly.o long_extras.o zmod_poly.o theta.o zmod_mat.o F_mpz.o tinyQS.o factor_base.o poly.o sieve.o linear_algebra.o block_lanczos.o NTL-interface.o -L/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/lib/ -L/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/lib/  -lgmp -lpthread -lntl -lm \ngcc -std=c99 -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include/ -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include  -fPIC -funroll-loops   -O2 -c fmpz-test.c -o fmpz-test.o\nfmpz-test.c: In function 'test___fmpz_normalise':\nfmpz-test.c:1379: warning: implicit declaration of function 'mpz_random'\ng++  -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include/ -I/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/include  -fPIC -funroll-loops   -O2 fmpz-test.o test-support.o -o fmpz-test zn_mod.o misc.o mul_ks.o pack.o mul.o mulmid.o mulmid_ks.o ks_support.o mpn_mulmid.o nuss.o pmf.o pmfvec_fft.o tuning.o mul_fft.o mul_fft_dft.o array.o invert.o mpn_extras.o mpz_extras.o memory-manager.o ZmodF.o ZmodF_mul.o ZmodF_mul-tuning.o fmpz.o fmpz_poly.o mpz_poly-tuning.o mpz_poly.o ZmodF_poly.o long_extras.o zmod_poly.o theta.o zmod_mat.o F_mpz.o tinyQS.o factor_base.o poly.o sieve.o linear_algebra.o block_lanczos.o NTL-interface.o -L/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/lib/ -L/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/lib/  -lgmp -lpthread -lntl -lm \nfmpz-test.o: In function `test___fmpz_normalise':\nfmpz-test.c:(.text+0x26a6): undefined reference to `mpz_random'\ncollect2: ld returned 1 exit status\nmake[2]: *** [fmpz-test] Error 1\nmake[2]: Leaving directory `/home/sage/sage-4.6.prealpha3-with-mpir-2.1.1/spkg/build/flint-1.5.0.p5/src'\nError building the test suite for FLINT\n*************************************\nError testing package ** flint-1.5.0.p5 **\n*************************************\nsage: An error occurred while testing flint-1.5.0.p5\n...\n```\n\n\n(This is actually Sage 4.6.prealpha3 with MPIR 2.1.**2** and [GMP-]ECM 6.3, see #9343/[NewPARI wiki page](http://wiki.sagemath.org/NewPARI), #8664 and #5847, respectively.)\n\nI guess Bill has already fixed that in FLINT 1.5.2, which was released a month ago. So simply updating the spkg might suffice.\n\nBtw, at least the current FLINT in Sage ignores user-provided `CFLAGS`; one could perhaps \"move\" them into some other environment variable used by FLINT.\n\n----\n\nUpstream: http://www.flintlib.org/\n\nIssue created by migration from https://trac.sagemath.org/ticket/9858\n\n",
     "created_at": "2010-09-05T20:51:28Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_009857.json:
     "title": "FLINT 1.5.0.p5's test suite fails to build with new GMP/MPIR",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9857",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 Assignee: tbd
 
-CC:  burcin mhansen was davidloeffler
+CC:  @burcin @mwhansen @williamstein @loefflerd
 
 Keywords: SAGE_CHECK mpz_random
 
@@ -87,7 +87,7 @@ archive/issue_comments_097309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9857#issuecomment-97309",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_097310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9857#issuecomment-97310",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_097311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9857#issuecomment-97311",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -164,16 +164,16 @@ Feel free to ping me w.r.t. uploading a new spkg in case this ticket further dra
 archive/issue_comments_097312.json:
 ```json
 {
-    "body": "Changing assignee from tbd to leif.",
+    "body": "Changing assignee from tbd to @nexttime.",
     "created_at": "2011-06-04T13:15:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9857#issuecomment-97312",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Changing assignee from tbd to leif.
+Changing assignee from tbd to @nexttime.
 
 
 
@@ -187,7 +187,7 @@ archive/issue_comments_097313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9857#issuecomment-97313",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_097314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9857#issuecomment-97314",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_097315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9857#issuecomment-97315",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_097316.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9857#issuecomment-97316",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_097317.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9857#issuecomment-97317",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_097318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9857#issuecomment-97318",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_097319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9857#issuecomment-97319",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -322,7 +322,7 @@ archive/issue_comments_097320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9857#issuecomment-97320",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -349,7 +349,7 @@ archive/issue_comments_097321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9857#issuecomment-97321",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -367,7 +367,7 @@ archive/issue_comments_097322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9857#issuecomment-97322",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -387,7 +387,7 @@ archive/issue_comments_097323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9857#issuecomment-97323",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -411,7 +411,7 @@ archive/issue_comments_097324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9857#issuecomment-97324",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -429,7 +429,7 @@ archive/issue_comments_097325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9857#issuecomment-97325",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -442,16 +442,16 @@ Diff between the p9 and the p10. For reference / review only.
 archive/issue_comments_097326.json:
 ```json
 {
-    "body": "Attachment [flint-1.5.0.p9-p10.diff](tarball://root/attachments/some-uuid/ticket9858/flint-1.5.0.p9-p10.diff) by leif created at 2011-10-11 19:41:10\n\nI've attached a diff between the p9 and the p10 spkg for review.",
+    "body": "Attachment [flint-1.5.0.p9-p10.diff](tarball://root/attachments/some-uuid/ticket9858/flint-1.5.0.p9-p10.diff) by @nexttime created at 2011-10-11 19:41:10\n\nI've attached a diff between the p9 and the p10 spkg for review.",
     "created_at": "2011-10-11T19:41:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9857#issuecomment-97326",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [flint-1.5.0.p9-p10.diff](tarball://root/attachments/some-uuid/ticket9858/flint-1.5.0.p9-p10.diff) by leif created at 2011-10-11 19:41:10
+Attachment [flint-1.5.0.p9-p10.diff](tarball://root/attachments/some-uuid/ticket9858/flint-1.5.0.p9-p10.diff) by @nexttime created at 2011-10-11 19:41:10
 
 I've attached a diff between the p9 and the p10 spkg for review.
 
@@ -467,7 +467,7 @@ archive/issue_comments_097327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9857#issuecomment-97327",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -485,7 +485,7 @@ archive/issue_comments_097328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9857#issuecomment-97328",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -503,7 +503,7 @@ archive/issue_comments_097329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9857#issuecomment-97329",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009452.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  was\n\n> We wrote the strip_automount_prefix() function for\n> sage-test to get around problems with automounted\n> file system having wierd mount points.\n> Unfotunately the strip_automount_prefix() does not\n> work at all!\n>\n> Here is a patch:\n>\n> % diff sage-test.old sage-test.new\n> 20c20\n> <     return strip_automount_prefix(os.path.abspath(x))\n> ---\n>>     return os.path.abspath(x)\n> 57c57\n> <         f = g[len(SAGE_ROOT)+1:]\n> ---\n>>         f = g[g.find(SAGE_ROOT)+len(SAGE_ROOT)+1:]\n> %\n>\n> You can remove - or deprecate - the function strip_automount_prefix().\n\nIssue created by migration from https://trac.sagemath.org/ticket/9452\n\n",
+    "body": "Assignee: tbd\n\nCC:  @williamstein\n\n> We wrote the strip_automount_prefix() function for\n> sage-test to get around problems with automounted\n> file system having wierd mount points.\n> Unfotunately the strip_automount_prefix() does not\n> work at all!\n>\n> Here is a patch:\n>\n> % diff sage-test.old sage-test.new\n> 20c20\n> <     return strip_automount_prefix(os.path.abspath(x))\n> ---\n>>     return os.path.abspath(x)\n> 57c57\n> <         f = g[len(SAGE_ROOT)+1:]\n> ---\n>>         f = g[g.find(SAGE_ROOT)+len(SAGE_ROOT)+1:]\n> %\n>\n> You can remove - or deprecate - the function strip_automount_prefix().\n\nIssue created by migration from https://trac.sagemath.org/ticket/9452\n\n",
     "created_at": "2010-07-08T08:00:49Z",
     "labels": [
         "distribution",
@@ -14,12 +14,12 @@ archive/issues_009452.json:
     "title": "strip_automount_prefix() is useless",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9452",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: tbd
 
-CC:  was
+CC:  @williamstein
 
 > We wrote the strip_automount_prefix() function for
 > sage-test to get around problems with automounted
@@ -53,16 +53,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9452
 archive/issue_comments_090577.json:
 ```json
 {
-    "body": "Attachment [trac-9452-strip_automount_prefix.patch](tarball://root/attachments/some-uuid/ticket9452/trac-9452-strip_automount_prefix.patch) by jason created at 2011-02-23 23:28:03",
+    "body": "Attachment [trac-9452-strip_automount_prefix.patch](tarball://root/attachments/some-uuid/ticket9452/trac-9452-strip_automount_prefix.patch) by @jasongrout created at 2011-02-23 23:28:03",
     "created_at": "2011-02-23T23:28:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9452#issuecomment-90577",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-9452-strip_automount_prefix.patch](tarball://root/attachments/some-uuid/ticket9452/trac-9452-strip_automount_prefix.patch) by jason created at 2011-02-23 23:28:03
+Attachment [trac-9452-strip_automount_prefix.patch](tarball://root/attachments/some-uuid/ticket9452/trac-9452-strip_automount_prefix.patch) by @jasongrout created at 2011-02-23 23:28:03
 
 
 
@@ -76,7 +76,7 @@ archive/issue_comments_090578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9452#issuecomment-90578",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_090579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9452#issuecomment-90579",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_090580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9452#issuecomment-90580",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_090581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9452#issuecomment-90581",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_090582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9452#issuecomment-90582",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

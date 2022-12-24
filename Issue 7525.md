@@ -14,7 +14,7 @@ archive/issues_007525.json:
     "title": "developer's guide: add information about editing python files in the sage library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7525",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: mvngu
@@ -33,16 +33,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7525
 archive/issue_comments_063787.json:
 ```json
 {
-    "body": "Attachment [trac_7525-developer.patch](tarball://root/attachments/some-uuid/ticket7525/trac_7525-developer.patch) by jhpalmieri created at 2009-11-24 18:15:30",
+    "body": "Attachment [trac_7525-developer.patch](tarball://root/attachments/some-uuid/ticket7525/trac_7525-developer.patch) by @jhpalmieri created at 2009-11-24 18:15:30",
     "created_at": "2009-11-24T18:15:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7525",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7525#issuecomment-63787",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_7525-developer.patch](tarball://root/attachments/some-uuid/ticket7525/trac_7525-developer.patch) by jhpalmieri created at 2009-11-24 18:15:30
+Attachment [trac_7525-developer.patch](tarball://root/attachments/some-uuid/ticket7525/trac_7525-developer.patch) by @jhpalmieri created at 2009-11-24 18:15:30
 
 
 
@@ -56,7 +56,7 @@ archive/issue_comments_063788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7525",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7525#issuecomment-63788",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_063791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7525",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7525#issuecomment-63791",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_063792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7525",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7525#issuecomment-63792",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

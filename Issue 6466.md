@@ -13,7 +13,7 @@ archive/issues_006466.json:
     "title": "Implement functional derivative and Euler-Lagrange equation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6466",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 One of the elementary tool that is often needed to compute equation of motion in Physics, is functional derivative. This along with the implementation of Euler-Lagrange equation will make Sage extremely useful for physicists. 
@@ -34,7 +34,7 @@ archive/issue_comments_052283.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6466",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6466#issuecomment-52283",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

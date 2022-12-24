@@ -14,7 +14,7 @@ archive/issues_001601.json:
     "title": "issue with noclobber and building sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1601",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty

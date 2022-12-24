@@ -3,7 +3,7 @@
 archive/issues_007386.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThis generators for the n-dimensional hypercube lacks proper documentation, and may have to be renamed to reflect what it really is.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7386\n\n",
+    "body": "Assignee: @rlmill\n\nThis generators for the n-dimensional hypercube lacks proper documentation, and may have to be renamed to reflect what it really is.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7386\n\n",
     "created_at": "2009-11-03T23:21:13Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007386.json:
     "title": "Docstrings for graphs_generators.CubeGraph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7386",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 This generators for the n-dimensional hypercube lacks proper documentation, and may have to be renamed to reflect what it really is.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7386
 archive/issue_comments_062117.json:
 ```json
 {
-    "body": "Attachment [trac_7386.patch](tarball://root/attachments/some-uuid/ticket7386/trac_7386.patch) by ncohen created at 2009-11-29 14:21:04",
+    "body": "Attachment [trac_7386.patch](tarball://root/attachments/some-uuid/ticket7386/trac_7386.patch) by @nathanncohen created at 2009-11-29 14:21:04",
     "created_at": "2009-11-29T14:21:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7386#issuecomment-62117",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_7386.patch](tarball://root/attachments/some-uuid/ticket7386/trac_7386.patch) by ncohen created at 2009-11-29 14:21:04
+Attachment [trac_7386.patch](tarball://root/attachments/some-uuid/ticket7386/trac_7386.patch) by @nathanncohen created at 2009-11-29 14:21:04
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_062118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7386#issuecomment-62118",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_062119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7386#issuecomment-62119",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_062120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7386#issuecomment-62120",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

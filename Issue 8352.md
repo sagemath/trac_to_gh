@@ -14,7 +14,7 @@ archive/issues_008352.json:
     "title": "twisted-8.2.0.p1 fails to build in Open Solaris x64 as 64 bit even if SAGE64=yes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8352",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: drkirkby
@@ -43,7 +43,7 @@ archive/issue_comments_074592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8352",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8352#issuecomment-74592",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -56,16 +56,16 @@ Changing status from new to needs_review.
 archive/issue_comments_074593.json:
 ```json
 {
-    "body": "Attachment [twisted-8.2.0.p2.patch](tarball://root/attachments/some-uuid/ticket8352/twisted-8.2.0.p2.patch) by jsp created at 2010-02-24 21:17:04\n\nThe new spkg can be found here:\n\n[http://boxen.math.washington.edu/home/jsp/ports/twisted-8.2.0.p2.spkg](http://boxen.math.washington.edu/home/jsp/ports/twisted-8.2.0.p2.spkg)\n\nJaap",
+    "body": "Attachment [twisted-8.2.0.p2.patch](tarball://root/attachments/some-uuid/ticket8352/twisted-8.2.0.p2.patch) by @jaapspies created at 2010-02-24 21:17:04\n\nThe new spkg can be found here:\n\n[http://boxen.math.washington.edu/home/jsp/ports/twisted-8.2.0.p2.spkg](http://boxen.math.washington.edu/home/jsp/ports/twisted-8.2.0.p2.spkg)\n\nJaap",
     "created_at": "2010-02-24T21:17:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8352",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8352#issuecomment-74593",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [twisted-8.2.0.p2.patch](tarball://root/attachments/some-uuid/ticket8352/twisted-8.2.0.p2.patch) by jsp created at 2010-02-24 21:17:04
+Attachment [twisted-8.2.0.p2.patch](tarball://root/attachments/some-uuid/ticket8352/twisted-8.2.0.p2.patch) by @jaapspies created at 2010-02-24 21:17:04
 
 The new spkg can be found here:
 
@@ -124,7 +124,7 @@ archive/issue_comments_074596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8352",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8352#issuecomment-74596",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_074597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8352",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8352#issuecomment-74597",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003113.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  wjp\n\n\n```\nDATA = '/tmp'\ndef ranks(N):\n    filename = '%sranks-%s.sobj'%(DATA,N)\n    if os.path.exists(filename):\n         D = load(filename)\n    else:\n         D = ModularSymbols(N,sign=1).cuspidal_submodule().new_submodule().decomposition()\n    for i,A in enumerate(D):\n        eps = -A.atkin_lehner_operator().matrix()[0,0]\n        winding_element = A.rational_period_mapping()(A.ambient_module()([0,oo]))\n        print N, i, eps, winding_element == 0\n    save(D, filename)\n\n```\n\n\nthen\n\n\n```\nsage: ranks(11)\n11 0 1 False\nsage: ranks(11)\nBOOM!\n```\n\n\nGDB gives\n\n```\nsage: ranks(11)\n\nProgram received signal EXC_BAD_ACCESS, Could not access memory.\nReason: KERN_PROTECTION_FAILURE at address: 0x00000001\n0x0077231c in __gmpn_gcd_1 ()\n(gdb) bt\n#0  0x0077231c in __gmpn_gcd_1 ()\n#1  0x0075ba88 in __gmpz_gcd ()\nCannot access memory at address 0x5\n(gdb) The program is running.  Exit anyway? (y or n) lo^H^H\nPlease answer y or n.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3113\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @wjp\n\n\n```\nDATA = '/tmp'\ndef ranks(N):\n    filename = '%sranks-%s.sobj'%(DATA,N)\n    if os.path.exists(filename):\n         D = load(filename)\n    else:\n         D = ModularSymbols(N,sign=1).cuspidal_submodule().new_submodule().decomposition()\n    for i,A in enumerate(D):\n        eps = -A.atkin_lehner_operator().matrix()[0,0]\n        winding_element = A.rational_period_mapping()(A.ambient_module()([0,oo]))\n        print N, i, eps, winding_element == 0\n    save(D, filename)\n\n```\n\n\nthen\n\n\n```\nsage: ranks(11)\n11 0 1 False\nsage: ranks(11)\nBOOM!\n```\n\n\nGDB gives\n\n```\nsage: ranks(11)\n\nProgram received signal EXC_BAD_ACCESS, Could not access memory.\nReason: KERN_PROTECTION_FAILURE at address: 0x00000001\n0x0077231c in __gmpn_gcd_1 ()\n(gdb) bt\n#0  0x0077231c in __gmpn_gcd_1 ()\n#1  0x0075ba88 in __gmpz_gcd ()\nCannot access memory at address 0x5\n(gdb) The program is running.  Exit anyway? (y or n) lo^H^H\nPlease answer y or n.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3113\n\n",
     "created_at": "2008-05-06T20:14:27Z",
     "labels": [
         "modular forms",
@@ -14,12 +14,12 @@ archive/issues_003113.json:
     "title": "Major segfault related to modular symbols and pickling",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3113",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
-CC:  wjp
+CC:  @wjp
 
 
 ```
@@ -272,7 +272,7 @@ archive/issue_comments_021551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3113#issuecomment-21551",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -346,7 +346,7 @@ archive/issue_comments_021552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3113#issuecomment-21552",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -403,7 +403,7 @@ archive/issue_comments_021553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3113#issuecomment-21553",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -416,16 +416,16 @@ Probably we shouldn't be using dictionaries (that compare with equals) to cache 
 archive/issue_comments_021554.json:
 ```json
 {
-    "body": "Attachment [3113-coerce-checks.patch](tarball://root/attachments/some-uuid/ticket3113/3113-coerce-checks.patch) by robertwb created at 2008-05-07 06:17:46",
+    "body": "Attachment [3113-coerce-checks.patch](tarball://root/attachments/some-uuid/ticket3113/3113-coerce-checks.patch) by @robertwb created at 2008-05-07 06:17:46",
     "created_at": "2008-05-07T06:17:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3113#issuecomment-21554",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3113-coerce-checks.patch](tarball://root/attachments/some-uuid/ticket3113/3113-coerce-checks.patch) by robertwb created at 2008-05-07 06:17:46
+Attachment [3113-coerce-checks.patch](tarball://root/attachments/some-uuid/ticket3113/3113-coerce-checks.patch) by @robertwb created at 2008-05-07 06:17:46
 
 
 
@@ -439,7 +439,7 @@ archive/issue_comments_021555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3113#issuecomment-21555",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -457,7 +457,7 @@ archive/issue_comments_021556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3113#issuecomment-21556",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -509,7 +509,7 @@ archive/issue_comments_021557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3113#issuecomment-21557",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -522,16 +522,16 @@ Changing priority from major to blocker.
 archive/issue_comments_021558.json:
 ```json
 {
-    "body": "Attachment [trac-3113-pt2.patch](tarball://root/attachments/some-uuid/ticket3113/trac-3113-pt2.patch) by craigcitro created at 2008-06-15 05:35:28",
+    "body": "Attachment [trac-3113-pt2.patch](tarball://root/attachments/some-uuid/ticket3113/trac-3113-pt2.patch) by @craigcitro created at 2008-06-15 05:35:28",
     "created_at": "2008-06-15T05:35:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3113#issuecomment-21558",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-3113-pt2.patch](tarball://root/attachments/some-uuid/ticket3113/trac-3113-pt2.patch) by craigcitro created at 2008-06-15 05:35:28
+Attachment [trac-3113-pt2.patch](tarball://root/attachments/some-uuid/ticket3113/trac-3113-pt2.patch) by @craigcitro created at 2008-06-15 05:35:28
 
 
 
@@ -545,7 +545,7 @@ archive/issue_comments_021559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3113#issuecomment-21559",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -563,7 +563,7 @@ archive/issue_comments_021560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3113#issuecomment-21560",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

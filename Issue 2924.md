@@ -14,7 +14,7 @@ archive/issues_002924.json:
     "title": "programming guide section on style is terrible!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2924",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -55,16 +55,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2924
 archive/issue_comments_020134.json:
 ```json
 {
-    "body": "Attachment [doc-2924.patch](tarball://root/attachments/some-uuid/ticket2924/doc-2924.patch) by was created at 2008-04-15 00:04:28",
+    "body": "Attachment [doc-2924.patch](tarball://root/attachments/some-uuid/ticket2924/doc-2924.patch) by @williamstein created at 2008-04-15 00:04:28",
     "created_at": "2008-04-15T00:04:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2924#issuecomment-20134",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [doc-2924.patch](tarball://root/attachments/some-uuid/ticket2924/doc-2924.patch) by was created at 2008-04-15 00:04:28
+Attachment [doc-2924.patch](tarball://root/attachments/some-uuid/ticket2924/doc-2924.patch) by @williamstein created at 2008-04-15 00:04:28
 
 
 
@@ -78,7 +78,7 @@ archive/issue_comments_020135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2924#issuecomment-20135",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003115.json:
     "title": "scientific notation exponents should be multiples of 3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3115",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 Assignee: jkantor
@@ -49,7 +49,7 @@ archive/issue_comments_021566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3115#issuecomment-21566",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_021567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3115#issuecomment-21567",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_021568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3115#issuecomment-21568",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_021569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3115#issuecomment-21569",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_021571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3115#issuecomment-21571",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 

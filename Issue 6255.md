@@ -3,7 +3,7 @@
 archive/issues_006255.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  mhansen craigcitro\n\nKeywords: documentation build sphinx parallel\n\nThis is a reminder ticket for mhansen.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6255\n\n",
+    "body": "Assignee: tba\n\nCC:  @mwhansen @craigcitro\n\nKeywords: documentation build sphinx parallel\n\nThis is a reminder ticket for mhansen.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6255\n\n",
     "created_at": "2009-06-10T00:32:33Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_006255.json:
     "title": "update doc system to latex sphinx and improve build system",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6255",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 Assignee: tba
 
-CC:  mhansen craigcitro
+CC:  @mwhansen @craigcitro
 
 Keywords: documentation build sphinx parallel
 
@@ -41,7 +41,7 @@ archive/issue_comments_049958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6255#issuecomment-49958",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -54,16 +54,16 @@ Changing status from new to assigned.
 archive/issue_comments_049959.json:
 ```json
 {
-    "body": "Changing assignee from tba to mhansen.",
+    "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2009-06-10T00:36:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6255#issuecomment-49959",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tba to mhansen.
+Changing assignee from tba to @mwhansen.
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_049960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6255#issuecomment-49960",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_049961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6255#issuecomment-49961",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_049962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6255#issuecomment-49962",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -165,16 +165,16 @@ Experimental timing patch
 archive/issue_comments_049963.json:
 ```json
 {
-    "body": "Attachment [timing.patch](tarball://root/attachments/some-uuid/ticket6255/timing.patch) by hivert created at 2012-04-21 16:00:24\n\nExperimental parallel doc output patch",
+    "body": "Attachment [timing.patch](tarball://root/attachments/some-uuid/ticket6255/timing.patch) by @hivert created at 2012-04-21 16:00:24\n\nExperimental parallel doc output patch",
     "created_at": "2012-04-21T16:00:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6255#issuecomment-49963",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [timing.patch](tarball://root/attachments/some-uuid/ticket6255/timing.patch) by hivert created at 2012-04-21 16:00:24
+Attachment [timing.patch](tarball://root/attachments/some-uuid/ticket6255/timing.patch) by @hivert created at 2012-04-21 16:00:24
 
 Experimental parallel doc output patch
 
@@ -185,16 +185,16 @@ Experimental parallel doc output patch
 archive/issue_comments_049964.json:
 ```json
 {
-    "body": "Attachment [paral.patch](tarball://root/attachments/some-uuid/ticket6255/paral.patch) by hivert created at 2012-04-21 16:09:56\n\nHi there,\n\nI just attached two patches. They need to be applied in\n\n```\n$SAGE_ROOT/local/lib/python2.7/site-packages/Sphinx-1.1.2-py2.7.egg/sphinx/\n```\n\n(I didn't regenerate a spkg yet). Those two packages are very experimental and\nthey certainly break a lot of things. The goal of `timing.patch` is to\nimprove Sphinx timning and progress report. The second one uses\n``@`parallel` to parallelize the writing part of the doc generation. This is\nvery raw and could certainly be optimized using Pool, Queue and the\nlike. Still the improvement is allready here:\nOn a intel i7 8 multithreaded core:\n- serie:\n\n```\nreading sources...  Elapsed time = 385.334967136\nwriting output...  Elapsed time = 1903.10733795\n```\n\n- parallel:\n\n```\nreading sources...  Elapsed time = 418.675282001\nwriting output...  Elapsed time = 253.907614946\n```\n\nOn a 24 core server:\n- serie:\n\n```\nreading sources...  Elapsed time = 243.982397079\nwriting output...  Elapsed time = 1366.98643208\n```\n\n- parallel:\n\n```\nreading sources...  Elapsed time = 243.729380131\nwriting output...  Elapsed time = 176.76424408\n```\n\n\nFlorent",
+    "body": "Attachment [paral.patch](tarball://root/attachments/some-uuid/ticket6255/paral.patch) by @hivert created at 2012-04-21 16:09:56\n\nHi there,\n\nI just attached two patches. They need to be applied in\n\n```\n$SAGE_ROOT/local/lib/python2.7/site-packages/Sphinx-1.1.2-py2.7.egg/sphinx/\n```\n\n(I didn't regenerate a spkg yet). Those two packages are very experimental and\nthey certainly break a lot of things. The goal of `timing.patch` is to\nimprove Sphinx timning and progress report. The second one uses\n``@`parallel` to parallelize the writing part of the doc generation. This is\nvery raw and could certainly be optimized using Pool, Queue and the\nlike. Still the improvement is allready here:\nOn a intel i7 8 multithreaded core:\n- serie:\n\n```\nreading sources...  Elapsed time = 385.334967136\nwriting output...  Elapsed time = 1903.10733795\n```\n\n- parallel:\n\n```\nreading sources...  Elapsed time = 418.675282001\nwriting output...  Elapsed time = 253.907614946\n```\n\nOn a 24 core server:\n- serie:\n\n```\nreading sources...  Elapsed time = 243.982397079\nwriting output...  Elapsed time = 1366.98643208\n```\n\n- parallel:\n\n```\nreading sources...  Elapsed time = 243.729380131\nwriting output...  Elapsed time = 176.76424408\n```\n\n\nFlorent",
     "created_at": "2012-04-21T16:09:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6255#issuecomment-49964",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [paral.patch](tarball://root/attachments/some-uuid/ticket6255/paral.patch) by hivert created at 2012-04-21 16:09:56
+Attachment [paral.patch](tarball://root/attachments/some-uuid/ticket6255/paral.patch) by @hivert created at 2012-04-21 16:09:56
 
 Hi there,
 
@@ -255,7 +255,7 @@ archive/issue_comments_049965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6255#issuecomment-49965",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_049966.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6255#issuecomment-49966",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_049967.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6255#issuecomment-49967",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -316,7 +316,7 @@ archive/issue_comments_049968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6255#issuecomment-49968",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -334,7 +334,7 @@ archive/issue_comments_049969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6255#issuecomment-49969",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

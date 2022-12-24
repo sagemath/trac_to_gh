@@ -3,7 +3,7 @@
 archive/issues_008935.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  georgsweber kcrisman\n\nAs the subject says. This is a follow-up to #8841. See this [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/9b0ed0b58400cc18) thread for some background information.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8935\n\n",
+    "body": "Assignee: mvngu\n\nCC:  georgsweber @kcrisman\n\nAs the subject says. This is a follow-up to #8841. See this [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/9b0ed0b58400cc18) thread for some background information.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8935\n\n",
     "created_at": "2010-05-09T00:47:30Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_008935.json:
 ```
 Assignee: mvngu
 
-CC:  georgsweber kcrisman
+CC:  georgsweber @kcrisman
 
 As the subject says. This is a follow-up to #8841. See this [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/9b0ed0b58400cc18) thread for some background information.
 
@@ -119,7 +119,7 @@ archive/issue_comments_082281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8935",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8935#issuecomment-82281",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_082282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8935",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8935#issuecomment-82282",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

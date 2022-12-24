@@ -14,7 +14,7 @@ archive/issues_004890.json:
     "title": "get rid of nauty's stupid interactive license agreement in the optional spkg install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4890",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -69,7 +69,7 @@ archive/issue_comments_037075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4890#issuecomment-37075",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_037077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4890#issuecomment-37077",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_037078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4890#issuecomment-37078",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_037079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4890#issuecomment-37079",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_037081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4890#issuecomment-37081",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_037082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4890#issuecomment-37082",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_037083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4890#issuecomment-37083",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_037084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4890#issuecomment-37084",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008482.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  sage-combinat\n\nKeywords: notebook, live documentation\n\nTask: in the static documentation that appears embedded in the\nnotebook upon, say,\n\n        sage: sage.categories.primer?\n\nadd a link to the corresponding live documentation page\n(e.g. http://localhost:8000/doc/live/reference/sage/categories/primer.html)\n\nThis would be very handy, and make a strong advertisement for the live\ndocumentation (a really cool feature that I had never stumbled upon\nuntil Mike hinted me about it; and apparently, no one at Sage 20 knew\nabout it either).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8482\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  sage-combinat\n\nKeywords: notebook, live documentation\n\nTask: in the static documentation that appears embedded in the\nnotebook upon, say,\n\n        sage: sage.categories.primer?\n\nadd a link to the corresponding live documentation page\n(e.g. http://localhost:8000/doc/live/reference/sage/categories/primer.html)\n\nThis would be very handy, and make a strong advertisement for the live\ndocumentation (a really cool feature that I had never stumbled upon\nuntil Mike hinted me about it; and apparently, no one at Sage 20 knew\nabout it either).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8482\n\n",
     "created_at": "2010-03-08T21:50:17Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_008482.json:
     "title": "Add a link from the static help embedded in the notebook to the corresponding live documentation page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8482",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  sage-combinat
 
@@ -53,7 +53,7 @@ archive/issue_comments_076446.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8482#issuecomment-76446",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_076447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8482#issuecomment-76447",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_076448.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8482#issuecomment-76448",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_076449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8482#issuecomment-76449",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_076450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8482#issuecomment-76450",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_076451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8482#issuecomment-76451",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_076452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8482#issuecomment-76452",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_076453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8482#issuecomment-76453",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

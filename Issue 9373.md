@@ -73,7 +73,7 @@ archive/issue_comments_089074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9373#issuecomment-89074",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_089076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9373#issuecomment-89076",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -130,16 +130,16 @@ Nathann
 archive/issue_comments_089077.json:
 ```json
 {
-    "body": "Attachment [trac_9373.patch](tarball://root/attachments/some-uuid/ticket9373/trac_9373.patch) by ncohen created at 2010-07-16 03:15:20\n\nOk, I just edited the corresponding line and replaced it with what was written in your patch.\n\nI really hadn't thought of it... I'm very very sorry for that :-/\n\nNathann",
+    "body": "Attachment [trac_9373.patch](tarball://root/attachments/some-uuid/ticket9373/trac_9373.patch) by @nathanncohen created at 2010-07-16 03:15:20\n\nOk, I just edited the corresponding line and replaced it with what was written in your patch.\n\nI really hadn't thought of it... I'm very very sorry for that :-/\n\nNathann",
     "created_at": "2010-07-16T03:15:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9373#issuecomment-89077",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_9373.patch](tarball://root/attachments/some-uuid/ticket9373/trac_9373.patch) by ncohen created at 2010-07-16 03:15:20
+Attachment [trac_9373.patch](tarball://root/attachments/some-uuid/ticket9373/trac_9373.patch) by @nathanncohen created at 2010-07-16 03:15:20
 
 Ok, I just edited the corresponding line and replaced it with what was written in your patch.
 
@@ -195,7 +195,7 @@ archive/issue_comments_089080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9373#issuecomment-89080",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

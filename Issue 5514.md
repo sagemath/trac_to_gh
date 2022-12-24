@@ -3,7 +3,7 @@
 archive/issues_005514.json:
 ```json
 {
-    "body": "Assignee: wcauchois\n\nCC:  jason rbeezer\n\nThis feature would emulate Mathematica's [RegionFunction](http://reference.wolfram.com/mathematica/ref/RegionFunction.html). The user should be able to provide a function to parametric_plot3d which, given a (u,v) coordinate, would return whether to include that point in the overall plot. In this way, the user can specify which region to include in the plot drawn.\n\nThe syntax would look something like this:\n\n```\nvar('u,v')\nparametric_plot3d([u,v,u^2+v^2], (-2, 2), (-2, 2), region_function=lambda u,v: u^2+v^2>1)\n```\n\nThis would draw a paraboloid with a circle cut out of the middle.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5514\n\n",
+    "body": "Assignee: wcauchois\n\nCC:  @jasongrout @rbeezer\n\nThis feature would emulate Mathematica's [RegionFunction](http://reference.wolfram.com/mathematica/ref/RegionFunction.html). The user should be able to provide a function to parametric_plot3d which, given a (u,v) coordinate, would return whether to include that point in the overall plot. In this way, the user can specify which region to include in the plot drawn.\n\nThe syntax would look something like this:\n\n```\nvar('u,v')\nparametric_plot3d([u,v,u^2+v^2], (-2, 2), (-2, 2), region_function=lambda u,v: u^2+v^2>1)\n```\n\nThis would draw a paraboloid with a circle cut out of the middle.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5514\n\n",
     "created_at": "2009-03-13T23:23:11Z",
     "labels": [
         "graphics",
@@ -19,7 +19,7 @@ archive/issues_005514.json:
 ```
 Assignee: wcauchois
 
-CC:  jason rbeezer
+CC:  @jasongrout @rbeezer
 
 This feature would emulate Mathematica's [RegionFunction](http://reference.wolfram.com/mathematica/ref/RegionFunction.html). The user should be able to provide a function to parametric_plot3d which, given a (u,v) coordinate, would return whether to include that point in the overall plot. In this way, the user can specify which region to include in the plot drawn.
 
@@ -48,7 +48,7 @@ archive/issue_comments_042853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5514#issuecomment-42853",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -120,16 +120,16 @@ Bill
 archive/issue_comments_042857.json:
 ```json
 {
-    "body": "Attachment [trac-5514-region-function.patch](tarball://root/attachments/some-uuid/ticket5514/trac-5514-region-function.patch) by jason created at 2009-04-22 19:36:55\n\napply instead of previous patch.",
+    "body": "Attachment [trac-5514-region-function.patch](tarball://root/attachments/some-uuid/ticket5514/trac-5514-region-function.patch) by @jasongrout created at 2009-04-22 19:36:55\n\napply instead of previous patch.",
     "created_at": "2009-04-22T19:36:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5514#issuecomment-42857",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-5514-region-function.patch](tarball://root/attachments/some-uuid/ticket5514/trac-5514-region-function.patch) by jason created at 2009-04-22 19:36:55
+Attachment [trac-5514-region-function.patch](tarball://root/attachments/some-uuid/ticket5514/trac-5514-region-function.patch) by @jasongrout created at 2009-04-22 19:36:55
 
 apply instead of previous patch.
 
@@ -145,7 +145,7 @@ archive/issue_comments_042858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5514#issuecomment-42858",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_042859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5514#issuecomment-42859",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_042860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5514#issuecomment-42860",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_042862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5514#issuecomment-42862",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_042863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5514#issuecomment-42863",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -404,7 +404,7 @@ archive/issue_comments_042866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5514#issuecomment-42866",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

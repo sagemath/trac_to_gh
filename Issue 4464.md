@@ -14,7 +14,7 @@ archive/issues_004464.json:
     "title": "devel/sage/sage/combinat/root_system/weyl_characters.py test (too) long",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4464",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: mabshoff
@@ -50,7 +50,7 @@ archive/issue_comments_032968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4464",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4464#issuecomment-32968",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006182.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  was mhansen mpatel\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6182\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein @mwhansen @qed777\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6182\n\n",
     "created_at": "2009-06-02T07:26:37Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_006182.json:
     "title": "notebook -- saving a worksheet with double quotes in the worksheet name fails with a weird error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6182",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
 
-CC:  was mhansen mpatel
+CC:  @williamstein @mwhansen @qed777
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_049353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6182",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6182#issuecomment-49353",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_049354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6182",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6182#issuecomment-49354",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -70,16 +70,16 @@ Escapes worksheet names passed to javascript
 archive/issue_comments_049355.json:
 ```json
 {
-    "body": "Attachment [trac_6182-double-quotes-ws.patch](tarball://root/attachments/some-uuid/ticket6182/trac_6182-double-quotes-ws.patch) by timdumol created at 2010-01-18 19:12:41\n\nI take that back. It doesn't fail immediately, but it does fail.",
+    "body": "Attachment [trac_6182-double-quotes-ws.patch](tarball://root/attachments/some-uuid/ticket6182/trac_6182-double-quotes-ws.patch) by @TimDumol created at 2010-01-18 19:12:41\n\nI take that back. It doesn't fail immediately, but it does fail.",
     "created_at": "2010-01-18T19:12:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6182",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6182#issuecomment-49355",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_6182-double-quotes-ws.patch](tarball://root/attachments/some-uuid/ticket6182/trac_6182-double-quotes-ws.patch) by timdumol created at 2010-01-18 19:12:41
+Attachment [trac_6182-double-quotes-ws.patch](tarball://root/attachments/some-uuid/ticket6182/trac_6182-double-quotes-ws.patch) by @TimDumol created at 2010-01-18 19:12:41
 
 I take that back. It doesn't fail immediately, but it does fail.
 
@@ -95,7 +95,7 @@ archive/issue_comments_049356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6182",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6182#issuecomment-49356",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_049357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6182",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6182#issuecomment-49357",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_049358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6182",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6182#issuecomment-49358",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_049359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6182",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6182#issuecomment-49359",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -162,16 +162,16 @@ V2 is rebased to drop changes to `template.py` (earlier patch).
 archive/issue_comments_049360.json:
 ```json
 {
-    "body": "Attachment [trac_6182-double-quotes-ws.2.patch](tarball://root/attachments/some-uuid/ticket6182/trac_6182-double-quotes-ws.2.patch) by mpatel created at 2010-01-20 02:04:13\n\nRebased version without changes to `template.py`. Replaces previous.",
+    "body": "Attachment [trac_6182-double-quotes-ws.2.patch](tarball://root/attachments/some-uuid/ticket6182/trac_6182-double-quotes-ws.2.patch) by @qed777 created at 2010-01-20 02:04:13\n\nRebased version without changes to `template.py`. Replaces previous.",
     "created_at": "2010-01-20T02:04:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6182",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6182#issuecomment-49360",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6182-double-quotes-ws.2.patch](tarball://root/attachments/some-uuid/ticket6182/trac_6182-double-quotes-ws.2.patch) by mpatel created at 2010-01-20 02:04:13
+Attachment [trac_6182-double-quotes-ws.2.patch](tarball://root/attachments/some-uuid/ticket6182/trac_6182-double-quotes-ws.2.patch) by @qed777 created at 2010-01-20 02:04:13
 
 Rebased version without changes to `template.py`. Replaces previous.
 
@@ -187,7 +187,7 @@ archive/issue_comments_049361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6182",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6182#issuecomment-49361",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

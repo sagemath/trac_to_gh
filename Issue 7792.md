@@ -3,7 +3,7 @@
 archive/issues_007792.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: povray\n\nTo improve docs of Povray.\nTo have width and height parameters in Povray.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7792\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: povray\n\nTo improve docs of Povray.\nTo have width and height parameters in Povray.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7792\n\n",
     "created_at": "2009-12-29T23:01:38Z",
     "labels": [
         "interfaces",
@@ -17,7 +17,7 @@ archive/issues_007792.json:
     "user": "slosoi"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: povray
 

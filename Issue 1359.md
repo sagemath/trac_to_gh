@@ -3,7 +3,7 @@
 archive/issues_001359.json:
 ```json
 {
-    "body": "Assignee: was\n\nHere's the code, basically:\n\nbug day 6 -- #1342\nsystem:sage\n\n\n```\nK.<zeta> = CyclotomicField(7)\n```\n\n\n\n```\ndef norm_symbol_prime(a, P):\n     K = P.number_field()\n     zeta = K.gen()\n     n = K.zeta_order()\n     exponent = (1/n) * ( P.norm() - 1)\n     exponent = ZZ(exponent)\n     FF = K.residue_field(P)\n     aa = FF(a)\n     b = FF(a)^exponent\n     zeta_mod = FF(zeta)\n     # Find power m of zeta_mod that is equal to b, then\n     # return zeta^m\n     m = 0\n     w = FF(1)\n     while w != b:\n         w = w * zeta_mod\n         m += 1\n         assert m <= n, \"bug in norm_symbol_prime\"\n     return zeta^m\n\ndef norm_symbol(a, b):\n     F = K.fractional_ideal([b]).factor()\n     return prod([norm_symbol_prime(a, P)^e for P, e in F],\n               K(1))\n```\n\n\n\n```\nnorm_symbol(zeta^3, 13*zeta)\n///\n-zeta^5 - zeta^4 - zeta^3 - zeta^2 - zeta - 1\n```\n\n\n\n```\nnorm_symbol(zeta^7, K(11))\n///\n1\n```\n\n\n\n```\nnorm_symbol((1+zeta)^2, 23*zeta)\n///\nzeta^4\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1359\n\n",
+    "body": "Assignee: @williamstein\n\nHere's the code, basically:\n\nbug day 6 -- #1342\nsystem:sage\n\n\n```\nK.<zeta> = CyclotomicField(7)\n```\n\n\n\n```\ndef norm_symbol_prime(a, P):\n     K = P.number_field()\n     zeta = K.gen()\n     n = K.zeta_order()\n     exponent = (1/n) * ( P.norm() - 1)\n     exponent = ZZ(exponent)\n     FF = K.residue_field(P)\n     aa = FF(a)\n     b = FF(a)^exponent\n     zeta_mod = FF(zeta)\n     # Find power m of zeta_mod that is equal to b, then\n     # return zeta^m\n     m = 0\n     w = FF(1)\n     while w != b:\n         w = w * zeta_mod\n         m += 1\n         assert m <= n, \"bug in norm_symbol_prime\"\n     return zeta^m\n\ndef norm_symbol(a, b):\n     F = K.fractional_ideal([b]).factor()\n     return prod([norm_symbol_prime(a, P)^e for P, e in F],\n               K(1))\n```\n\n\n\n```\nnorm_symbol(zeta^3, 13*zeta)\n///\n-zeta^5 - zeta^4 - zeta^3 - zeta^2 - zeta - 1\n```\n\n\n\n```\nnorm_symbol(zeta^7, K(11))\n///\n1\n```\n\n\n\n```\nnorm_symbol((1+zeta)^2, 23*zeta)\n///\nzeta^4\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1359\n\n",
     "created_at": "2007-12-02T02:52:02Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_001359.json:
     "title": "implement cyclotomic norm residues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1359",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Here's the code, basically:
 
@@ -100,7 +100,7 @@ archive/issue_comments_008689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8689",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -113,16 +113,16 @@ Changing component from number theory to number fields.
 archive/issue_comments_008690.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-07-20T20:00:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8690",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 
@@ -136,7 +136,7 @@ archive/issue_comments_008691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8691",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_008692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8692",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_008693.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8693",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_008694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8694",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_008696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8696",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_008697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8697",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_008699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8699",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_008700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8700",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_008701.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8701",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_008702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8702",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 

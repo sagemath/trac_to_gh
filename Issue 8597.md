@@ -3,7 +3,7 @@
 archive/issues_008597.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kcrisman\n\nThe following works :\n\n\n```\nsage: point((2,3))\n\nsage: point((2,3,4))\n\nsage: point(vector((2,3)))\n```\n\n\nbut the following doesn't :\n\n\n```\nsage: point(vector((2,3,4)))\nTraceback (most recent call last):\n\n/Users/slabbe/<ipython console> in <module>()\n\n/Users/slabbe/Applications/sage-4.3.4/local/lib/python2.6/site-packages/sage/plot/point.pyc in point(points, **kwds)\n    300     except (ValueError, TypeError):\n    301         from sage.plot.plot3d.shapes2 import point3d\n--> 302         return point3d(points, **kwds)\n    303 \n    304 @rename_keyword(color='rgbcolor')\n\n/Users/slabbe/Applications/sage-4.3.4/local/lib/python2.6/site-packages/sage/plot/plot3d/shapes2.pyc in point3d(v, size, **kwds)\n    712         return Point(v, size, **kwds)\n    713     else:\n--> 714         A = sum([Point(z, size, **kwds) for z in v])\n    715         A._set_extra_kwds(kwds)\n    716         return A\n\n/Users/slabbe/Applications/sage-4.3.4/local/lib/python2.6/site-packages/sage/plot/plot3d/shapes2.pyc in __init__(self, center, size, **kwds)\n    478     def __init__(self, center, size=1, **kwds):\n    479         PrimitiveObject.__init__(self, **kwds)\n--> 480         self.loc = (float(center[0]), float(center[1]), float(center[2]))\n    481         self.size = size\n    482         self._set_extra_kwds(kwds)\n\nTypeError: 'sage.rings.integer.Integer' object does not support indexing\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8597\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nThe following works :\n\n\n```\nsage: point((2,3))\n\nsage: point((2,3,4))\n\nsage: point(vector((2,3)))\n```\n\n\nbut the following doesn't :\n\n\n```\nsage: point(vector((2,3,4)))\nTraceback (most recent call last):\n\n/Users/slabbe/<ipython console> in <module>()\n\n/Users/slabbe/Applications/sage-4.3.4/local/lib/python2.6/site-packages/sage/plot/point.pyc in point(points, **kwds)\n    300     except (ValueError, TypeError):\n    301         from sage.plot.plot3d.shapes2 import point3d\n--> 302         return point3d(points, **kwds)\n    303 \n    304 @rename_keyword(color='rgbcolor')\n\n/Users/slabbe/Applications/sage-4.3.4/local/lib/python2.6/site-packages/sage/plot/plot3d/shapes2.pyc in point3d(v, size, **kwds)\n    712         return Point(v, size, **kwds)\n    713     else:\n--> 714         A = sum([Point(z, size, **kwds) for z in v])\n    715         A._set_extra_kwds(kwds)\n    716         return A\n\n/Users/slabbe/Applications/sage-4.3.4/local/lib/python2.6/site-packages/sage/plot/plot3d/shapes2.pyc in __init__(self, center, size, **kwds)\n    478     def __init__(self, center, size=1, **kwds):\n    479         PrimitiveObject.__init__(self, **kwds)\n--> 480         self.loc = (float(center[0]), float(center[1]), float(center[2]))\n    481         self.size = size\n    482         self._set_extra_kwds(kwds)\n\nTypeError: 'sage.rings.integer.Integer' object does not support indexing\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8597\n\n",
     "created_at": "2010-03-24T15:14:00Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_008597.json:
     "title": "point(vector((2,3,4))) is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8597",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kcrisman
+CC:  @kcrisman
 
 The following works :
 
@@ -84,7 +84,7 @@ archive/issue_comments_077833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8597#issuecomment-77833",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_077839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8597#issuecomment-77839",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_077840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8597#issuecomment-77840",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_077843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8597#issuecomment-77843",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

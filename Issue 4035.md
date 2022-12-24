@@ -3,7 +3,7 @@
 archive/issues_004035.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  mhansen\n\nSee attached patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4035\n\n",
+    "body": "Assignee: @malb\n\nCC:  @mwhansen\n\nSee attached patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4035\n\n",
     "created_at": "2008-09-01T09:55:46Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_004035.json:
     "title": "[with patch, needs review] fix optional doctests for multivariate polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4035",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  mhansen
+CC:  @mwhansen
 
 See attached patch.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4035
 archive/issue_comments_029107.json:
 ```json
 {
-    "body": "Attachment [m2_optional_doctests.patch](tarball://root/attachments/some-uuid/ticket4035/m2_optional_doctests.patch) by malb created at 2008-09-01 09:56:22\n\nGary, can you review this (I'm asking you since it involves M2)",
+    "body": "Attachment [m2_optional_doctests.patch](tarball://root/attachments/some-uuid/ticket4035/m2_optional_doctests.patch) by @malb created at 2008-09-01 09:56:22\n\nGary, can you review this (I'm asking you since it involves M2)",
     "created_at": "2008-09-01T09:56:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4035",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4035#issuecomment-29107",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [m2_optional_doctests.patch](tarball://root/attachments/some-uuid/ticket4035/m2_optional_doctests.patch) by malb created at 2008-09-01 09:56:22
+Attachment [m2_optional_doctests.patch](tarball://root/attachments/some-uuid/ticket4035/m2_optional_doctests.patch) by @malb created at 2008-09-01 09:56:22
 
 Gary, can you review this (I'm asking you since it involves M2)
 
@@ -81,7 +81,7 @@ archive/issue_comments_029109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4035",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4035#issuecomment-29109",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_029110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4035",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4035#issuecomment-29110",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

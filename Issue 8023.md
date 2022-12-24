@@ -14,7 +14,7 @@ archive/issues_008023.json:
     "title": "doctest in combinat/words/morphism.py creates a file \"test.sobj\" not in a temporary directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8023",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: sage-combinat
@@ -37,7 +37,7 @@ archive/issue_comments_070098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8023#issuecomment-70098",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to needs_review.
 archive/issue_comments_070099.json:
 ```json
 {
-    "body": "Attachment [trac_8023-sagetmp.patch](tarball://root/attachments/some-uuid/ticket8023/trac_8023-sagetmp.patch) by jhpalmieri created at 2010-01-21 06:35:52",
+    "body": "Attachment [trac_8023-sagetmp.patch](tarball://root/attachments/some-uuid/ticket8023/trac_8023-sagetmp.patch) by @jhpalmieri created at 2010-01-21 06:35:52",
     "created_at": "2010-01-21T06:35:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8023#issuecomment-70099",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8023-sagetmp.patch](tarball://root/attachments/some-uuid/ticket8023/trac_8023-sagetmp.patch) by jhpalmieri created at 2010-01-21 06:35:52
+Attachment [trac_8023-sagetmp.patch](tarball://root/attachments/some-uuid/ticket8023/trac_8023-sagetmp.patch) by @jhpalmieri created at 2010-01-21 06:35:52
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_070100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8023#issuecomment-70100",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_070101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8023#issuecomment-70101",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_070102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8023#issuecomment-70102",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

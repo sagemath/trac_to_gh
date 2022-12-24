@@ -3,7 +3,7 @@
 archive/issues_001529.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1529\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1529\n\n",
     "created_at": "2007-12-16T00:54:26Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_001529.json:
     "title": "update install_scripts to also install R script.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1529",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1529
 archive/issue_comments_009774.json:
 ```json
 {
-    "body": "Attachment [trac-1529.patch](tarball://root/attachments/some-uuid/ticket1529/trac-1529.patch) by was created at 2007-12-16 00:56:13",
+    "body": "Attachment [trac-1529.patch](tarball://root/attachments/some-uuid/ticket1529/trac-1529.patch) by @williamstein created at 2007-12-16 00:56:13",
     "created_at": "2007-12-16T00:56:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1529#issuecomment-9774",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1529.patch](tarball://root/attachments/some-uuid/ticket1529/trac-1529.patch) by was created at 2007-12-16 00:56:13
+Attachment [trac-1529.patch](tarball://root/attachments/some-uuid/ticket1529/trac-1529.patch) by @williamstein created at 2007-12-16 00:56:13
 
 
 

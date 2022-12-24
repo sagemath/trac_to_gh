@@ -3,7 +3,7 @@
 archive/issues_003631.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nThe pbuild install in 3.0.4 was broken by (among other things) *.pyc files left in data/extcode/sagebuild.  All pyc files here should automatically get nuked when the spkg is created. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3631\n\n",
+    "body": "Assignee: @garyfurnish\n\nThe pbuild install in 3.0.4 was broken by (among other things) *.pyc files left in data/extcode/sagebuild.  All pyc files here should automatically get nuked when the spkg is created. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3631\n\n",
     "created_at": "2008-07-10T08:57:57Z",
     "labels": [
         "pbuild",
@@ -14,10 +14,10 @@ archive/issues_003631.json:
     "title": "pbuild broken by binary *.pyc files in extcode",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3631",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 The pbuild install in 3.0.4 was broken by (among other things) *.pyc files left in data/extcode/sagebuild.  All pyc files here should automatically get nuked when the spkg is created. 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3631
 archive/issue_comments_025688.json:
 ```json
 {
-    "body": "Changing assignee from gfurnish to mabshoff.",
+    "body": "Changing assignee from @garyfurnish to mabshoff.",
     "created_at": "2008-07-14T10:49:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3631#issuecomment-25688",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from gfurnish to mabshoff.
+Changing assignee from @garyfurnish to mabshoff.
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_025689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3631#issuecomment-25689",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_025690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3631#issuecomment-25690",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

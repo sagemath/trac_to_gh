@@ -3,7 +3,7 @@
 archive/issues_005746.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: rational points finite field\n\nRight now, if X is a scheme over a finite field F and we ask for the list of rational points over a subfield K of F, Sage raises an error because it tries to base change X to K first.\n\nIt would be very easy to implement this as follows: take the list of all rational points over F and find the ones that are fixed by the appropriate power of the Frobenius morphism.  These are then the K-rational points.\n\nA sample of what this would return:\n\n\n```\nsage: P = ProjectiveSpace(1, GF(3^2, 'b'))\nsage: P.rational_points()\n[(0 : 1),\n (2*b : 1),\n (b + 1 : 1),\n (b + 2 : 1),\n (2 : 1),\n (b : 1),\n (2*b + 2 : 1),\n (2*b + 1 : 1),\n (1 : 1),\n (1 : 0)]\nsage: P.rational_points(GF(3))  # this doesn't work right now\n[(0 : 1),\n (2 : 1),\n (1 : 1),\n (1 : 0)]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5746\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: rational points finite field\n\nRight now, if X is a scheme over a finite field F and we ask for the list of rational points over a subfield K of F, Sage raises an error because it tries to base change X to K first.\n\nIt would be very easy to implement this as follows: take the list of all rational points over F and find the ones that are fixed by the appropriate power of the Frobenius morphism.  These are then the K-rational points.\n\nA sample of what this would return:\n\n\n```\nsage: P = ProjectiveSpace(1, GF(3^2, 'b'))\nsage: P.rational_points()\n[(0 : 1),\n (2*b : 1),\n (b + 1 : 1),\n (b + 2 : 1),\n (2 : 1),\n (b : 1),\n (2*b + 2 : 1),\n (2*b + 1 : 1),\n (1 : 1),\n (1 : 0)]\nsage: P.rational_points(GF(3))  # this doesn't work right now\n[(0 : 1),\n (2 : 1),\n (1 : 1),\n (1 : 0)]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5746\n\n",
     "created_at": "2009-04-11T05:08:48Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_005746.json:
     "title": "rational points over subfields of the (finite) field of definition",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5746",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: rational points finite field
 
@@ -61,16 +61,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5746
 archive/issue_comments_044921.json:
 ```json
 {
-    "body": "Changing assignee from was to AlexGhitza.",
+    "body": "Changing assignee from @williamstein to @aghitza.",
     "created_at": "2009-05-05T07:40:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5746#issuecomment-44921",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from was to AlexGhitza.
+Changing assignee from @williamstein to @aghitza.
 
 
 
@@ -84,7 +84,7 @@ archive/issue_comments_044922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5746#issuecomment-44922",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_044923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5746#issuecomment-44923",
-    "user": "bantieau"
+    "user": "@antieau"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_044924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5746#issuecomment-44924",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_044925.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5746#issuecomment-44925",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_044926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5746#issuecomment-44926",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_044927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5746#issuecomment-44927",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_044928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5746#issuecomment-44928",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 

@@ -52,16 +52,16 @@ Patch sage-4011_1.patch doesn't seem to resolve the problem.
 archive/issue_comments_028945.json:
 ```json
 {
-    "body": "Attachment [trac_4011.patch](tarball://root/attachments/some-uuid/ticket4011/trac_4011.patch) by mhansen created at 2009-01-24 06:20:35",
+    "body": "Attachment [trac_4011.patch](tarball://root/attachments/some-uuid/ticket4011/trac_4011.patch) by @mwhansen created at 2009-01-24 06:20:35",
     "created_at": "2009-01-24T06:20:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4011",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4011#issuecomment-28945",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4011.patch](tarball://root/attachments/some-uuid/ticket4011/trac_4011.patch) by mhansen created at 2009-01-24 06:20:35
+Attachment [trac_4011.patch](tarball://root/attachments/some-uuid/ticket4011/trac_4011.patch) by @mwhansen created at 2009-01-24 06:20:35
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_028946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4011",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4011#issuecomment-28946",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_028947.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4011",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4011#issuecomment-28947",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -106,16 +106,16 @@ Changing status from new to assigned.
 archive/issue_comments_028948.json:
 ```json
 {
-    "body": "Changing assignee from boothby to mhansen.",
+    "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2009-01-24T06:21:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4011",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4011#issuecomment-28948",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from boothby to mhansen.
+Changing assignee from boothby to @mwhansen.
 
 
 
@@ -129,7 +129,7 @@ archive/issue_comments_028949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4011",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4011#issuecomment-28949",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_028950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4011",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4011#issuecomment-28950",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

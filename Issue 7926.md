@@ -3,7 +3,7 @@
 archive/issues_007926.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jen kedlaya\n\nThere's still lots to do here, but I started plowing through the file. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7926\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jbalakrishnan @kedlaya\n\nThere's still lots to do here, but I started plowing through the file. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7926\n\n",
     "created_at": "2010-01-14T06:52:08Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_007926.json:
     "title": "Bring coverage of monsky_washnitzer up to 50%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7926",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jen kedlaya
+CC:  @jbalakrishnan @kedlaya
 
 There's still lots to do here, but I started plowing through the file. 
 
@@ -39,7 +39,7 @@ archive/issue_comments_068981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7926#issuecomment-68981",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_068982.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7926#issuecomment-68982",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_068983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7926#issuecomment-68983",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_068984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7926#issuecomment-68984",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_068985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7926#issuecomment-68985",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
 
@@ -142,16 +142,16 @@ Changing keywords from "ecc2011" to "ecc2011, rd2".
 archive/issue_comments_068986.json:
 ```json
 {
-    "body": "Attachment [trac_7926_new.patch](tarball://root/attachments/some-uuid/ticket7926/trac_7926_new.patch) by jen created at 2012-03-21 18:44:52\n\nThis is a rebase against 5.0.beta9.",
+    "body": "Attachment [trac_7926_new.patch](tarball://root/attachments/some-uuid/ticket7926/trac_7926_new.patch) by @jbalakrishnan created at 2012-03-21 18:44:52\n\nThis is a rebase against 5.0.beta9.",
     "created_at": "2012-03-21T18:44:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7926#issuecomment-68986",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
 
-Attachment [trac_7926_new.patch](tarball://root/attachments/some-uuid/ticket7926/trac_7926_new.patch) by jen created at 2012-03-21 18:44:52
+Attachment [trac_7926_new.patch](tarball://root/attachments/some-uuid/ticket7926/trac_7926_new.patch) by @jbalakrishnan created at 2012-03-21 18:44:52
 
 This is a rebase against 5.0.beta9.
 
@@ -167,7 +167,7 @@ archive/issue_comments_068987.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7926#issuecomment-68987",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_068988.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7926#issuecomment-68988",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_068989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7926#issuecomment-68989",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_068990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7926#issuecomment-68990",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_068991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7926#issuecomment-68991",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_068992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7926#issuecomment-68992",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_068993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7926#issuecomment-68993",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -307,7 +307,7 @@ archive/issue_comments_068994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7926#issuecomment-68994",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -340,7 +340,7 @@ archive/issue_comments_068995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7926#issuecomment-68995",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -358,7 +358,7 @@ archive/issue_comments_068996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7926#issuecomment-68996",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -378,7 +378,7 @@ archive/issue_comments_068997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7926#issuecomment-68997",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -396,7 +396,7 @@ archive/issue_comments_068998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7926#issuecomment-68998",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -409,16 +409,16 @@ Apply over previous patch
 archive/issue_comments_068999.json:
 ```json
 {
-    "body": "Attachment [trac_7926-fix.patch](tarball://root/attachments/some-uuid/ticket7926/trac_7926-fix.patch) by davidloeffler created at 2012-03-28 12:26:08\n\nHere's a patch which makes the reference manual build without errors, and corrects a few other minor formatting problems which I spotted while I was fixing this.",
+    "body": "Attachment [trac_7926-fix.patch](tarball://root/attachments/some-uuid/ticket7926/trac_7926-fix.patch) by @loefflerd created at 2012-03-28 12:26:08\n\nHere's a patch which makes the reference manual build without errors, and corrects a few other minor formatting problems which I spotted while I was fixing this.",
     "created_at": "2012-03-28T12:26:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7926#issuecomment-68999",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_7926-fix.patch](tarball://root/attachments/some-uuid/ticket7926/trac_7926-fix.patch) by davidloeffler created at 2012-03-28 12:26:08
+Attachment [trac_7926-fix.patch](tarball://root/attachments/some-uuid/ticket7926/trac_7926-fix.patch) by @loefflerd created at 2012-03-28 12:26:08
 
 Here's a patch which makes the reference manual build without errors, and corrects a few other minor formatting problems which I spotted while I was fixing this.
 
@@ -434,7 +434,7 @@ archive/issue_comments_069000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7926#issuecomment-69000",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -452,7 +452,7 @@ archive/issue_comments_069001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7926#issuecomment-69001",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -470,7 +470,7 @@ archive/issue_comments_069002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7926#issuecomment-69002",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -488,7 +488,7 @@ archive/issue_comments_069003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7926#issuecomment-69003",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -508,7 +508,7 @@ archive/issue_comments_069004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7926#issuecomment-69004",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

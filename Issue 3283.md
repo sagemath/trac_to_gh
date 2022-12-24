@@ -3,7 +3,7 @@
 archive/issues_003283.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  burcin polybori\n\nKeywords: PolyBoRi, memleak\n\nAll PolyBoRi iterators only destruct the iterator objects but never the object they act on. However, since we assign objects and not pointers/references a copy is triggered during creation and thus the destructor of the object ought to be called on self destruction of the iterator. So far the theory. In practice, while I didn't see any problems, I'd appreciate if somebody with more intime knowledge of the interface would take a careful look.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3283\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin polybori\n\nKeywords: PolyBoRi, memleak\n\nAll PolyBoRi iterators only destruct the iterator objects but never the object they act on. However, since we assign objects and not pointers/references a copy is triggered during creation and thus the destructor of the object ought to be called on self destruction of the iterator. So far the theory. In practice, while I didn't see any problems, I'd appreciate if somebody with more intime knowledge of the interface would take a careful look.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3283\n\n",
     "created_at": "2008-05-23T17:10:11Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_003283.json:
     "title": "[with patch, needs review] fix some memholes in PolyBoRi interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3283",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  burcin polybori
+CC:  @burcin polybori
 
 Keywords: PolyBoRi, memleak
 
@@ -84,7 +84,7 @@ archive/issue_comments_022703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22703",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_022706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22706",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -203,16 +203,16 @@ So the strategy is either of the following?
 archive/issue_comments_022707.json:
 ```json
 {
-    "body": "Attachment [pbori_memleak_nex_attempt.patch](tarball://root/attachments/some-uuid/ticket3283/pbori_memleak_nex_attempt.patch) by malb created at 2008-05-25 13:52:30",
+    "body": "Attachment [pbori_memleak_nex_attempt.patch](tarball://root/attachments/some-uuid/ticket3283/pbori_memleak_nex_attempt.patch) by @malb created at 2008-05-25 13:52:30",
     "created_at": "2008-05-25T13:52:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22707",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [pbori_memleak_nex_attempt.patch](tarball://root/attachments/some-uuid/ticket3283/pbori_memleak_nex_attempt.patch) by malb created at 2008-05-25 13:52:30
+Attachment [pbori_memleak_nex_attempt.patch](tarball://root/attachments/some-uuid/ticket3283/pbori_memleak_nex_attempt.patch) by @malb created at 2008-05-25 13:52:30
 
 
 
@@ -226,7 +226,7 @@ archive/issue_comments_022708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22708",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -239,16 +239,16 @@ The attached patch removes all `.obj` members from the iterators and replaces th
 archive/issue_comments_022709.json:
 ```json
 {
-    "body": "Attachment [trac3283_bpi_object_reference.patch](tarball://root/attachments/some-uuid/ticket3283/trac3283_bpi_object_reference.patch) by burcin created at 2008-05-25 19:36:13\n\nremove object references from BooleanPolynomialIterator",
+    "body": "Attachment [trac3283_bpi_object_reference.patch](tarball://root/attachments/some-uuid/ticket3283/trac3283_bpi_object_reference.patch) by @burcin created at 2008-05-25 19:36:13\n\nremove object references from BooleanPolynomialIterator",
     "created_at": "2008-05-25T19:36:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22709",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac3283_bpi_object_reference.patch](tarball://root/attachments/some-uuid/ticket3283/trac3283_bpi_object_reference.patch) by burcin created at 2008-05-25 19:36:13
+Attachment [trac3283_bpi_object_reference.patch](tarball://root/attachments/some-uuid/ticket3283/trac3283_bpi_object_reference.patch) by @burcin created at 2008-05-25 19:36:13
 
 remove object references from BooleanPolynomialIterator
 
@@ -264,7 +264,7 @@ archive/issue_comments_022710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22710",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -307,7 +307,7 @@ archive/issue_comments_022712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22712",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_022713.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22713",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -375,7 +375,7 @@ archive/issue_comments_022715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22715",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -393,7 +393,7 @@ archive/issue_comments_022716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22716",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -413,7 +413,7 @@ archive/issue_comments_022717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22717",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -436,7 +436,7 @@ archive/issue_comments_022718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22718",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -458,7 +458,7 @@ archive/issue_comments_022719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22719",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -471,16 +471,16 @@ new version addresses burcin's review
 archive/issue_comments_022720.json:
 ```json
 {
-    "body": "Attachment [pbori_iterators.patch](tarball://root/attachments/some-uuid/ticket3283/pbori_iterators.patch) by malb created at 2008-07-06 12:18:30\n\nSince the pending changes are in the updated patch, I give the patch a positive review.",
+    "body": "Attachment [pbori_iterators.patch](tarball://root/attachments/some-uuid/ticket3283/pbori_iterators.patch) by @malb created at 2008-07-06 12:18:30\n\nSince the pending changes are in the updated patch, I give the patch a positive review.",
     "created_at": "2008-07-06T12:18:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22720",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [pbori_iterators.patch](tarball://root/attachments/some-uuid/ticket3283/pbori_iterators.patch) by malb created at 2008-07-06 12:18:30
+Attachment [pbori_iterators.patch](tarball://root/attachments/some-uuid/ticket3283/pbori_iterators.patch) by @malb created at 2008-07-06 12:18:30
 
 Since the pending changes are in the updated patch, I give the patch a positive review.
 

@@ -3,7 +3,7 @@
 archive/issues_007079.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  fwclarke jason timdumol ddrake\n\nWith a freshly compiled Sage 4.1.2.alpha4, or take the sage.math binary for Sage 4.1.2.alpha4, follow these steps and watch the carnage:\n\n1. Delete the directory HOME/.sage, yes that directory and everything under it. Or you could just make sure that HOME/.sage/tmp doesn't exist. Yes, it's \"tmp\", not \"temp\".\n2. Go to SAGE_ROOT.\n3. Open SAGE_ROOT/makefile and give the variable NUM_THREADS a positive integer such as 2, or say anything positive integer from 2 to 10 on sage.math.\n4. From SAGE_ROOT, do \"make ptestlong\" and watch Sage give a bunch of file not found errors:\n {{{\nsage -t -long devel/sage/doc/en/tutorial/distributed.rst\n         [0.1Traceback (most recent call last):\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 754, in <module>\n    test_file(argv[1], library_code = library_code)\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 587, in test_file\n    open(f,\"w\").write(s)\nIOError: [Errno 2] No such file or directory: '/home/mvngu/.sage//tmp/.doctest_tour_algebra.py'\nTraceback (most recent call last):\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 754, in <module>\n    test_file(argv[1], library_code = library_code)\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 587, in test_file\n    open(f,\"w\").write(s)\nIOError: [Errno 2] No such file or directory: '/home/mvngu/.sage//tmp/.doctest_tour_help.py'\nTraceback (most recent call last):\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 754, in <module>\n    test_file(argv[1], library_code = library_code)\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 587, in test_file\n    open(f,\"w\").write(s)\nIOError: [Errno 2] No such file or directory: '/home/mvngu/.sage//tmp/.doctest_programming.py'\nTraceback (most recent call last):\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 754, in <module>\n    test_file(argv[1], library_code = library_code)\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 587, in test_file\n    open(f,\"w\").write(s)\nIOError: [Errno 2] No such file or directory: '/home/mvngu/.sage//tmp/.doctest_tour_polynomial.py'\nTraceback (most recent call last):\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 754, in <module>\n    test_file(argv[1], library_code = library_code)\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 587, in test_file\n    open(f,\"w\").write(s)\nIOError: [Errno 2] No such file or directory: '/home/mvngu/.sage//tmp/.doctest_tour_groups.py'\nTraceback (most recent call last):\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 754, in <module>\n    test_file(argv[1], library_code = library_code)\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 587, in test_file\n    open(f,\"w\").write(s)\nIOError: [Errno 2] No such file or directory: '/home/mvngu/.sage//tmp/.doctest_tour_plotting.py'\nTraceback (most recent call last):\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 754, in <module>\n    test_file(argv[1], library_code = library_code)\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 587, in test_file\n    open(f,\"w\").write(s)\nIOError: [Errno 2] No such file or directory: '/home/mvngu/.sage//tmp/.doctest_introduction.py'\n s]\n }}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/7079\n\n",
+    "body": "Assignee: tbd\n\nCC:  fwclarke @jasongrout @TimDumol @dandrake\n\nWith a freshly compiled Sage 4.1.2.alpha4, or take the sage.math binary for Sage 4.1.2.alpha4, follow these steps and watch the carnage:\n\n1. Delete the directory HOME/.sage, yes that directory and everything under it. Or you could just make sure that HOME/.sage/tmp doesn't exist. Yes, it's \"tmp\", not \"temp\".\n2. Go to SAGE_ROOT.\n3. Open SAGE_ROOT/makefile and give the variable NUM_THREADS a positive integer such as 2, or say anything positive integer from 2 to 10 on sage.math.\n4. From SAGE_ROOT, do \"make ptestlong\" and watch Sage give a bunch of file not found errors:\n {{{\nsage -t -long devel/sage/doc/en/tutorial/distributed.rst\n         [0.1Traceback (most recent call last):\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 754, in <module>\n    test_file(argv[1], library_code = library_code)\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 587, in test_file\n    open(f,\"w\").write(s)\nIOError: [Errno 2] No such file or directory: '/home/mvngu/.sage//tmp/.doctest_tour_algebra.py'\nTraceback (most recent call last):\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 754, in <module>\n    test_file(argv[1], library_code = library_code)\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 587, in test_file\n    open(f,\"w\").write(s)\nIOError: [Errno 2] No such file or directory: '/home/mvngu/.sage//tmp/.doctest_tour_help.py'\nTraceback (most recent call last):\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 754, in <module>\n    test_file(argv[1], library_code = library_code)\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 587, in test_file\n    open(f,\"w\").write(s)\nIOError: [Errno 2] No such file or directory: '/home/mvngu/.sage//tmp/.doctest_programming.py'\nTraceback (most recent call last):\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 754, in <module>\n    test_file(argv[1], library_code = library_code)\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 587, in test_file\n    open(f,\"w\").write(s)\nIOError: [Errno 2] No such file or directory: '/home/mvngu/.sage//tmp/.doctest_tour_polynomial.py'\nTraceback (most recent call last):\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 754, in <module>\n    test_file(argv[1], library_code = library_code)\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 587, in test_file\n    open(f,\"w\").write(s)\nIOError: [Errno 2] No such file or directory: '/home/mvngu/.sage//tmp/.doctest_tour_groups.py'\nTraceback (most recent call last):\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 754, in <module>\n    test_file(argv[1], library_code = library_code)\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 587, in test_file\n    open(f,\"w\").write(s)\nIOError: [Errno 2] No such file or directory: '/home/mvngu/.sage//tmp/.doctest_tour_plotting.py'\nTraceback (most recent call last):\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 754, in <module>\n    test_file(argv[1], library_code = library_code)\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 587, in test_file\n    open(f,\"w\").write(s)\nIOError: [Errno 2] No such file or directory: '/home/mvngu/.sage//tmp/.doctest_introduction.py'\n s]\n }}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/7079\n\n",
     "created_at": "2009-09-30T07:07:28Z",
     "labels": [
         "doctest coverage",
@@ -19,7 +19,7 @@ archive/issues_007079.json:
 ```
 Assignee: tbd
 
-CC:  fwclarke jason timdumol ddrake
+CC:  fwclarke @jasongrout @TimDumol @dandrake
 
 With a freshly compiled Sage 4.1.2.alpha4, or take the sage.math binary for Sage 4.1.2.alpha4, follow these steps and watch the carnage:
 
@@ -282,7 +282,7 @@ archive/issue_comments_058536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7079#issuecomment-58536",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_058537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7079#issuecomment-58537",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_058538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7079#issuecomment-58538",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -354,7 +354,7 @@ archive/issue_comments_058539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7079#issuecomment-58539",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

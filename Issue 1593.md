@@ -14,7 +14,7 @@ archive/issues_001593.json:
     "title": "m4ri -- the documentation of the echelon command only lists 1 algorithm but >= 2 algorithms are supported",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1593",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -37,7 +37,7 @@ archive/issue_comments_010135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1593#issuecomment-10135",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -51,16 +51,16 @@ check for mutability and doesn't clear the cache.
 archive/issue_comments_010136.json:
 ```json
 {
-    "body": "Changing assignee from tba to malb.",
+    "body": "Changing assignee from tba to @malb.",
     "created_at": "2007-12-24T17:37:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1593#issuecomment-10136",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from tba to malb.
+Changing assignee from tba to @malb.
 
 
 
@@ -69,16 +69,16 @@ Changing assignee from tba to malb.
 archive/issue_comments_010137.json:
 ```json
 {
-    "body": "Attachment [trac_1593.patch](tarball://root/attachments/some-uuid/ticket1593/trac_1593.patch) by malb created at 2007-12-25 16:17:49",
+    "body": "Attachment [trac_1593.patch](tarball://root/attachments/some-uuid/ticket1593/trac_1593.patch) by @malb created at 2007-12-25 16:17:49",
     "created_at": "2007-12-25T16:17:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1593#issuecomment-10137",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_1593.patch](tarball://root/attachments/some-uuid/ticket1593/trac_1593.patch) by malb created at 2007-12-25 16:17:49
+Attachment [trac_1593.patch](tarball://root/attachments/some-uuid/ticket1593/trac_1593.patch) by @malb created at 2007-12-25 16:17:49
 
 
 
@@ -92,7 +92,7 @@ archive/issue_comments_010138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1593#issuecomment-10138",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_010139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1593#issuecomment-10139",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

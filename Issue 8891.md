@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8891
 archive/issue_comments_081742.json:
 ```json
 {
-    "body": "Attachment [trac_8891.patch](tarball://root/attachments/some-uuid/ticket8891/trac_8891.patch) by mhansen created at 2010-05-05 16:48:11\n\nIt was explicitly disabled long ago (before Trac), but I don't see any reason why it should be now.",
+    "body": "Attachment [trac_8891.patch](tarball://root/attachments/some-uuid/ticket8891/trac_8891.patch) by @mwhansen created at 2010-05-05 16:48:11\n\nIt was explicitly disabled long ago (before Trac), but I don't see any reason why it should be now.",
     "created_at": "2010-05-05T16:48:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8891#issuecomment-81742",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_8891.patch](tarball://root/attachments/some-uuid/ticket8891/trac_8891.patch) by mhansen created at 2010-05-05 16:48:11
+Attachment [trac_8891.patch](tarball://root/attachments/some-uuid/ticket8891/trac_8891.patch) by @mwhansen created at 2010-05-05 16:48:11
 
 It was explicitly disabled long ago (before Trac), but I don't see any reason why it should be now.
 
@@ -57,7 +57,7 @@ archive/issue_comments_081743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8891#issuecomment-81743",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_081744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8891#issuecomment-81744",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_081745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8891#issuecomment-81745",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_081746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8891#issuecomment-81746",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

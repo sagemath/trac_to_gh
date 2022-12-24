@@ -3,7 +3,7 @@
 archive/issues_006622.json:
 ```json
 {
-    "body": "Assignee: burcin\n\n\n```\nsage: var('v t')\nsage: f = v*t\nsage: D = {v: 2}\nsage: f(D, t=3)\n6\nsage: D\n{v: 2, t: 3}\n```\n\n\nAfter the call above, D should *not* be changed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6622\n\n",
+    "body": "Assignee: @burcin\n\n\n```\nsage: var('v t')\nsage: f = v*t\nsage: D = {v: 2}\nsage: f(D, t=3)\n6\nsage: D\n{v: 2, t: 3}\n```\n\n\nAfter the call above, D should *not* be changed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6622\n\n",
     "created_at": "2009-07-25T20:05:50Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_006622.json:
     "title": "substitution of a dict into a symbolic expression modifies the dict",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6622",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 
 ```
@@ -49,7 +49,7 @@ archive/issue_comments_054257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6622#issuecomment-54257",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

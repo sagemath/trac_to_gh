@@ -3,7 +3,7 @@
 archive/issues_009078.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nKeywords: fraction field, random element\n\nHi,\n\nRandom element in fraction fields is broken.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9078\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: fraction field, random element\n\nHi,\n\nRandom element in fraction fields is broken.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9078\n\n",
     "created_at": "2010-05-28T21:59:34Z",
     "labels": [
         "algebra",
@@ -17,7 +17,7 @@ archive/issues_009078.json:
     "user": "ralle"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Keywords: fraction field, random element
 

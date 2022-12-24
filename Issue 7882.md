@@ -3,7 +3,7 @@
 archive/issues_007882.json:
 ```json
 {
-    "body": "Assignee: was\n\nPresent version of Macaulay2 interface breaks on\n\n\n```\nmacaulay2(\"help matrix\")\n```\n\n\nalthough\n\n\n```\nmacaulay2.help(\"matrix\")\n```\n\n\ndoes work fine.\n\nThe problem is that pexpect detects input prompts inside of examples. The patch changes the input prompt to get matches only in the beginning of lines.\n\nThe interface still breaks if you try to print input prompts at the beginning of the line, but that is probably a rare situation...\n\nIssue created by migration from https://trac.sagemath.org/ticket/7882\n\n",
+    "body": "Assignee: @williamstein\n\nPresent version of Macaulay2 interface breaks on\n\n\n```\nmacaulay2(\"help matrix\")\n```\n\n\nalthough\n\n\n```\nmacaulay2.help(\"matrix\")\n```\n\n\ndoes work fine.\n\nThe problem is that pexpect detects input prompts inside of examples. The patch changes the input prompt to get matches only in the beginning of lines.\n\nThe interface still breaks if you try to print input prompts at the beginning of the line, but that is probably a rare situation...\n\nIssue created by migration from https://trac.sagemath.org/ticket/7882\n\n",
     "created_at": "2010-01-09T20:02:02Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_007882.json:
     "title": "Macaulay2 interface breaks on examples",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7882",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Present version of Macaulay2 interface breaks on
 
@@ -52,16 +52,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7882
 archive/issue_comments_068509.json:
 ```json
 {
-    "body": "Attachment [Macaulay2_prompt_only_in_the_beginning_of_lines.patch](tarball://root/attachments/some-uuid/ticket7882/Macaulay2_prompt_only_in_the_beginning_of_lines.patch) by novoselt created at 2010-01-09 20:02:48",
+    "body": "Attachment [Macaulay2_prompt_only_in_the_beginning_of_lines.patch](tarball://root/attachments/some-uuid/ticket7882/Macaulay2_prompt_only_in_the_beginning_of_lines.patch) by @novoselt created at 2010-01-09 20:02:48",
     "created_at": "2010-01-09T20:02:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7882#issuecomment-68509",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [Macaulay2_prompt_only_in_the_beginning_of_lines.patch](tarball://root/attachments/some-uuid/ticket7882/Macaulay2_prompt_only_in_the_beginning_of_lines.patch) by novoselt created at 2010-01-09 20:02:48
+Attachment [Macaulay2_prompt_only_in_the_beginning_of_lines.patch](tarball://root/attachments/some-uuid/ticket7882/Macaulay2_prompt_only_in_the_beginning_of_lines.patch) by @novoselt created at 2010-01-09 20:02:48
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_068510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7882#issuecomment-68510",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_068511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7882#issuecomment-68511",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_068512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7882#issuecomment-68512",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 

@@ -113,16 +113,16 @@ Michael
 archive/issue_comments_036798.json:
 ```json
 {
-    "body": "Attachment [trac_4853.patch](tarball://root/attachments/some-uuid/ticket4853/trac_4853.patch) by rlm created at 2008-12-23 23:11:30\n\n+1 \u00b1 0.000001",
+    "body": "Attachment [trac_4853.patch](tarball://root/attachments/some-uuid/ticket4853/trac_4853.patch) by @rlmill created at 2008-12-23 23:11:30\n\n+1 \u00b1 0.000001",
     "created_at": "2008-12-23T23:11:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4853",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4853#issuecomment-36798",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_4853.patch](tarball://root/attachments/some-uuid/ticket4853/trac_4853.patch) by rlm created at 2008-12-23 23:11:30
+Attachment [trac_4853.patch](tarball://root/attachments/some-uuid/ticket4853/trac_4853.patch) by @rlmill created at 2008-12-23 23:11:30
 
 +1 ± 0.000001
 

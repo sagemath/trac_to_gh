@@ -14,7 +14,7 @@ archive/issues_005070.json:
     "title": "randomized shift testing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5070",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: cwitty

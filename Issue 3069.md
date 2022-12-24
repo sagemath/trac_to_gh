@@ -14,7 +14,7 @@ archive/issues_003069.json:
     "title": "notebook -- typeset checkbox doesn't work after save/reload",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3069",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -51,16 +51,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3069
 archive/issue_comments_021181.json:
 ```json
 {
-    "body": "Attachment [sage-3069.patch](tarball://root/attachments/some-uuid/ticket3069/sage-3069.patch) by was created at 2008-05-11 08:40:38",
+    "body": "Attachment [sage-3069.patch](tarball://root/attachments/some-uuid/ticket3069/sage-3069.patch) by @williamstein created at 2008-05-11 08:40:38",
     "created_at": "2008-05-11T08:40:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3069#issuecomment-21181",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3069.patch](tarball://root/attachments/some-uuid/ticket3069/sage-3069.patch) by was created at 2008-05-11 08:40:38
+Attachment [sage-3069.patch](tarball://root/attachments/some-uuid/ticket3069/sage-3069.patch) by @williamstein created at 2008-05-11 08:40:38
 
 
 
@@ -74,7 +74,7 @@ archive/issue_comments_021182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3069#issuecomment-21182",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_021183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3069#issuecomment-21183",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_021188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3069#issuecomment-21188",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

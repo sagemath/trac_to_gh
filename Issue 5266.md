@@ -3,7 +3,7 @@
 archive/issues_005266.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nvar('x,y')\nplot_vector_field( (-1,y), (x, -1, 1), (y, -1, 1), plot_points=4)\n```\n\n\npicks the 4 points at x=-1, -0.5,0, and 0.5, but doesn't get x=1!  The points it should pick are x=-1, -1/3, 1/3, and 1 (so we hit the end of the x-range).  The same applies to y.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5266\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nvar('x,y')\nplot_vector_field( (-1,y), (x, -1, 1), (y, -1, 1), plot_points=4)\n```\n\n\npicks the 4 points at x=-1, -0.5,0, and 0.5, but doesn't get x=1!  The points it should pick are x=-1, -1/3, 1/3, and 1 (so we hit the end of the x-range).  The same applies to y.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5266\n\n",
     "created_at": "2009-02-14T10:22:25Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_005266.json:
     "title": "plot_vector_field does not plot the end of the range when given plot_points argument",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5266",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5266
 archive/issue_comments_040425.json:
 ```json
 {
-    "body": "Changing assignee from was to jason.",
+    "body": "Changing assignee from @williamstein to @jasongrout.",
     "created_at": "2009-02-14T11:00:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5266#issuecomment-40425",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from was to jason.
+Changing assignee from @williamstein to @jasongrout.
 
 
 
@@ -58,16 +58,16 @@ Changing assignee from was to jason.
 archive/issue_comments_040426.json:
 ```json
 {
-    "body": "Attachment [trac_5266-plotting-fencepost-error.patch](tarball://root/attachments/some-uuid/ticket5266/trac_5266-plotting-fencepost-error.patch) by jason created at 2009-02-14 11:00:09",
+    "body": "Attachment [trac_5266-plotting-fencepost-error.patch](tarball://root/attachments/some-uuid/ticket5266/trac_5266-plotting-fencepost-error.patch) by @jasongrout created at 2009-02-14 11:00:09",
     "created_at": "2009-02-14T11:00:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5266#issuecomment-40426",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_5266-plotting-fencepost-error.patch](tarball://root/attachments/some-uuid/ticket5266/trac_5266-plotting-fencepost-error.patch) by jason created at 2009-02-14 11:00:09
+Attachment [trac_5266-plotting-fencepost-error.patch](tarball://root/attachments/some-uuid/ticket5266/trac_5266-plotting-fencepost-error.patch) by @jasongrout created at 2009-02-14 11:00:09
 
 
 
@@ -81,7 +81,7 @@ archive/issue_comments_040427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5266#issuecomment-40427",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_040428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5266#issuecomment-40428",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_040429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5266#issuecomment-40429",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_040431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5266#issuecomment-40431",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

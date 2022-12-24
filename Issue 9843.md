@@ -13,7 +13,7 @@ archive/issues_009843.json:
     "title": "Fix relevant 'make doc-pdf' warnings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9843",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: mvngu
@@ -83,7 +83,7 @@ archive/issue_comments_097145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9843#issuecomment-97145",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_097146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9843#issuecomment-97146",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008315.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  hivert jhpalmieri nthiery klee\n\nJavaScript additions to `layout.html` that transform a reference manual HTML page on display.\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/a34a80097ad47805/2e57eb60d7f9881d?#2e57eb60d7f9881d) for some background.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8315\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @hivert @jhpalmieri @nthiery @kwankyu\n\nJavaScript additions to `layout.html` that transform a reference manual HTML page on display.\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/a34a80097ad47805/2e57eb60d7f9881d?#2e57eb60d7f9881d) for some background.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8315\n\n",
     "created_at": "2010-02-20T21:02:10Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_008315.json:
     "title": "Reference manual layout: toggles, sidebar links",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8315",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: mvngu
 
-CC:  hivert jhpalmieri nthiery klee
+CC:  @hivert @jhpalmieri @nthiery @kwankyu
 
 JavaScript additions to `layout.html` that transform a reference manual HTML page on display.
 
@@ -41,7 +41,7 @@ archive/issue_comments_073740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8315#issuecomment-73740",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -54,16 +54,16 @@ Reference manual toggles and sidebar links.  sage repo.
 archive/issue_comments_073741.json:
 ```json
 {
-    "body": "Attachment [trac_8315-doc_sidebar.patch](tarball://root/attachments/some-uuid/ticket8315/trac_8315-doc_sidebar.patch) by mpatel created at 2010-02-21 07:13:01\n\nI've attached a first take.  Remarks:\n\n* I haven't tested this extensively.\n* The sticky sidebar doesn't work in the live docs.\n* All of the transformations are done in the browser when it renders the page.\n* Feel free to change the colors or suggest other changes!",
+    "body": "Attachment [trac_8315-doc_sidebar.patch](tarball://root/attachments/some-uuid/ticket8315/trac_8315-doc_sidebar.patch) by @qed777 created at 2010-02-21 07:13:01\n\nI've attached a first take.  Remarks:\n\n* I haven't tested this extensively.\n* The sticky sidebar doesn't work in the live docs.\n* All of the transformations are done in the browser when it renders the page.\n* Feel free to change the colors or suggest other changes!",
     "created_at": "2010-02-21T07:13:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8315#issuecomment-73741",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8315-doc_sidebar.patch](tarball://root/attachments/some-uuid/ticket8315/trac_8315-doc_sidebar.patch) by mpatel created at 2010-02-21 07:13:01
+Attachment [trac_8315-doc_sidebar.patch](tarball://root/attachments/some-uuid/ticket8315/trac_8315-doc_sidebar.patch) by @qed777 created at 2010-02-21 07:13:01
 
 I've attached a first take.  Remarks:
 
@@ -84,7 +84,7 @@ archive/issue_comments_073742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8315#issuecomment-73742",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_073743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8315#issuecomment-73743",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_073744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8315#issuecomment-73744",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_073745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8315#issuecomment-73745",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_073746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8315#issuecomment-73746",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_073747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8315#issuecomment-73747",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_073748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8315#issuecomment-73748",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_073749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8315#issuecomment-73749",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_073750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8315#issuecomment-73750",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_073751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8315#issuecomment-73751",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_073752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8315#issuecomment-73752",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_073753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8315#issuecomment-73753",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -316,7 +316,7 @@ archive/issue_comments_073754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8315#issuecomment-73754",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -334,7 +334,7 @@ archive/issue_comments_073755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8315#issuecomment-73755",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

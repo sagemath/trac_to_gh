@@ -14,7 +14,7 @@ archive/issues_007690.json:
     "title": "maxima stats too many files on startup, which is a performance issue",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7690",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -95,7 +95,7 @@ archive/issue_comments_065981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7690",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7690#issuecomment-65981",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_065982.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7690",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7690#issuecomment-65982",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_065983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7690",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7690#issuecomment-65983",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_065984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7690",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7690#issuecomment-65984",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_065985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7690",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7690#issuecomment-65985",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

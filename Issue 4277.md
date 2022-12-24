@@ -3,7 +3,7 @@
 archive/issues_004277.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe patch improves the doctest coverage of ell_point.py to 100%. However, a test is failing, with _magma_init_(), and I wasn't able to fix it, it seems the _magma_().name() implementation is buggy:\n\n```\nFile \"/usr/local/sage-3.1.2/sage/tmp/ell_point.py\", line 1289:\n    sage: P._magma_init_()\nExpected:\n    'EllipticCurve([GF(17)!1,GF(17)!16])![13,4]'\nGot:\n    '_sage_[2]![_sage_[3],_sage_[4]]'\n```\n\nAlso, I believe ell_padic.py should be removed, since it is said it is deprecated, and it does\nnot seem to be used anywhere.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4277\n\n",
+    "body": "Assignee: @williamstein\n\nThe patch improves the doctest coverage of ell_point.py to 100%. However, a test is failing, with _magma_init_(), and I wasn't able to fix it, it seems the _magma_().name() implementation is buggy:\n\n```\nFile \"/usr/local/sage-3.1.2/sage/tmp/ell_point.py\", line 1289:\n    sage: P._magma_init_()\nExpected:\n    'EllipticCurve([GF(17)!1,GF(17)!16])![13,4]'\nGot:\n    '_sage_[2]![_sage_[3],_sage_[4]]'\n```\n\nAlso, I believe ell_padic.py should be removed, since it is said it is deprecated, and it does\nnot seem to be used anywhere.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4277\n\n",
     "created_at": "2008-10-13T19:48:41Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_004277.json:
     "title": "[with patch, needs review] improve doctest coverage of ell_point.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4277",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The patch improves the doctest coverage of ell_point.py to 100%. However, a test is failing, with _magma_init_(), and I wasn't able to fix it, it seems the _magma_().name() implementation is buggy:
 
@@ -44,16 +44,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4277
 archive/issue_comments_031271.json:
 ```json
 {
-    "body": "Attachment [trac4277.patch](tarball://root/attachments/some-uuid/ticket4277/trac4277.patch) by robertwb created at 2008-10-14 20:51:05",
+    "body": "Attachment [trac4277.patch](tarball://root/attachments/some-uuid/ticket4277/trac4277.patch) by @robertwb created at 2008-10-14 20:51:05",
     "created_at": "2008-10-14T20:51:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4277#issuecomment-31271",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [trac4277.patch](tarball://root/attachments/some-uuid/ticket4277/trac4277.patch) by robertwb created at 2008-10-14 20:51:05
+Attachment [trac4277.patch](tarball://root/attachments/some-uuid/ticket4277/trac4277.patch) by @robertwb created at 2008-10-14 20:51:05
 
 
 
@@ -67,7 +67,7 @@ archive/issue_comments_031272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4277#issuecomment-31272",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_031273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4277#issuecomment-31273",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_031274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4277#issuecomment-31274",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_031276.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4277#issuecomment-31276",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_031277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4277#issuecomment-31277",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_031279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4277#issuecomment-31279",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

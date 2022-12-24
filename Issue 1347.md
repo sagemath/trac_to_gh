@@ -14,7 +14,7 @@ archive/issues_001347.json:
     "title": "display the path to the sage_notebook directory when starting the notebook server",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1347",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
@@ -38,7 +38,7 @@ archive/issue_comments_008639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1347#issuecomment-8639",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -56,7 +56,7 @@ archive/issue_comments_008640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1347#issuecomment-8640",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

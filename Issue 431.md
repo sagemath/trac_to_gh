@@ -3,7 +3,7 @@
 archive/issues_000431.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nApparently, a large number of jobs in a small time can cause the dsage server to hang, while there are waiting jobs and workers. \n\nIssue created by migration from https://trac.sagemath.org/ticket/431\n\n",
+    "body": "Assignee: @rlmill\n\nApparently, a large number of jobs in a small time can cause the dsage server to hang, while there are waiting jobs and workers. \n\nIssue created by migration from https://trac.sagemath.org/ticket/431\n\n",
     "created_at": "2007-08-16T03:12:35Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_000431.json:
     "title": "dsage server hangs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/431",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Apparently, a large number of jobs in a small time can cause the dsage server to hang, while there are waiting jobs and workers. 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/431
 archive/issue_comments_002158.json:
 ```json
 {
-    "body": "Changing assignee from rlm to yi.",
+    "body": "Changing assignee from @rlmill to @yqiang.",
     "created_at": "2007-08-16T17:25:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/431#issuecomment-2158",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Changing assignee from rlm to yi.
+Changing assignee from @rlmill to @yqiang.
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_002159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/431#issuecomment-2159",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_002160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/431#issuecomment-2160",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_002161.json:
     "issue": "https://github.com/sagemath/sagetest/issues/431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/431#issuecomment-2161",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_002162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/431#issuecomment-2162",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

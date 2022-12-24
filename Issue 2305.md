@@ -3,7 +3,7 @@
 archive/issues_002305.json:
 ```json
 {
-    "body": "Assignee: cswiercz\n\nKeywords: docstring, doctest\n\nProvide missing docstrings and doctests for all non-\"_\" functions in rings/ideal.py. These include:\n\nid_Ideal(x)\nbase_ring(self)\nis_maximal(self)\nis_prime(self)\nis_principal(self)\nis_principal(self)\ngen(self)\ngcd(self, other)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2305\n\n",
+    "body": "Assignee: @cswiercz\n\nKeywords: docstring, doctest\n\nProvide missing docstrings and doctests for all non-\"_\" functions in rings/ideal.py. These include:\n\nid_Ideal(x)\nbase_ring(self)\nis_maximal(self)\nis_prime(self)\nis_principal(self)\nis_principal(self)\ngen(self)\ngcd(self, other)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2305\n\n",
     "created_at": "2008-02-25T21:48:54Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_002305.json:
     "title": "Docstrings and doctests for rings/ideal.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2305",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
-Assignee: cswiercz
+Assignee: @cswiercz
 
 Keywords: docstring, doctest
 
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2305
 archive/issue_comments_015337.json:
 ```json
 {
-    "body": "Attachment [ring.ideal.patch](tarball://root/attachments/some-uuid/ticket2305/ring.ideal.patch) by cswiercz created at 2008-02-27 23:39:15\n\nRemaining docstrings and doctetst for rings/ideal.py",
+    "body": "Attachment [ring.ideal.patch](tarball://root/attachments/some-uuid/ticket2305/ring.ideal.patch) by @cswiercz created at 2008-02-27 23:39:15\n\nRemaining docstrings and doctetst for rings/ideal.py",
     "created_at": "2008-02-27T23:39:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2305#issuecomment-15337",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Attachment [ring.ideal.patch](tarball://root/attachments/some-uuid/ticket2305/ring.ideal.patch) by cswiercz created at 2008-02-27 23:39:15
+Attachment [ring.ideal.patch](tarball://root/attachments/some-uuid/ticket2305/ring.ideal.patch) by @cswiercz created at 2008-02-27 23:39:15
 
 Remaining docstrings and doctetst for rings/ideal.py
 
@@ -68,7 +68,7 @@ archive/issue_comments_015338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2305#issuecomment-15338",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_015339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2305#issuecomment-15339",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -130,16 +130,16 @@ Also, there are *tons* of typos.  'th' instead of 'the', incorrectly spelled wor
 archive/issue_comments_015340.json:
 ```json
 {
-    "body": "Attachment [rings.ideal.patch](tarball://root/attachments/some-uuid/ticket2305/rings.ideal.patch) by cswiercz created at 2008-02-28 23:18:24\n\nCorrected docstring and doctest patch for rings/ideal.py",
+    "body": "Attachment [rings.ideal.patch](tarball://root/attachments/some-uuid/ticket2305/rings.ideal.patch) by @cswiercz created at 2008-02-28 23:18:24\n\nCorrected docstring and doctest patch for rings/ideal.py",
     "created_at": "2008-02-28T23:18:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2305#issuecomment-15340",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Attachment [rings.ideal.patch](tarball://root/attachments/some-uuid/ticket2305/rings.ideal.patch) by cswiercz created at 2008-02-28 23:18:24
+Attachment [rings.ideal.patch](tarball://root/attachments/some-uuid/ticket2305/rings.ideal.patch) by @cswiercz created at 2008-02-28 23:18:24
 
 Corrected docstring and doctest patch for rings/ideal.py
 
@@ -155,7 +155,7 @@ archive/issue_comments_015341.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2305#issuecomment-15341",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_015342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2305#issuecomment-15342",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_015345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2305#issuecomment-15345",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

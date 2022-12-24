@@ -14,7 +14,7 @@ archive/issues_003572.json:
     "title": "optimize sage startup time by not importing any modules that import linbox by default.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3572",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3572
 archive/issue_comments_025229.json:
 ```json
 {
-    "body": "Attachment [sage-3572.patch](tarball://root/attachments/some-uuid/ticket3572/sage-3572.patch) by was created at 2008-07-06 22:43:20",
+    "body": "Attachment [sage-3572.patch](tarball://root/attachments/some-uuid/ticket3572/sage-3572.patch) by @williamstein created at 2008-07-06 22:43:20",
     "created_at": "2008-07-06T22:43:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3572#issuecomment-25229",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3572.patch](tarball://root/attachments/some-uuid/ticket3572/sage-3572.patch) by was created at 2008-07-06 22:43:20
+Attachment [sage-3572.patch](tarball://root/attachments/some-uuid/ticket3572/sage-3572.patch) by @williamstein created at 2008-07-06 22:43:20
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_025230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3572#issuecomment-25230",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_025232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3572#issuecomment-25232",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

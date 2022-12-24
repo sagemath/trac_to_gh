@@ -14,7 +14,7 @@ archive/issues_002986.json:
     "title": "[with patch - actually tuning tarball] add atlas pretuning for Pentium D / 64 bits (ARCH=P4D64SSE3)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2986",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 Assignee: mabshoff
@@ -39,7 +39,7 @@ archive/issue_comments_020559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2986#issuecomment-20559",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -52,16 +52,16 @@ Tuning information for Pentium D / 64 bit
 archive/issue_comments_020560.json:
 ```json
 {
-    "body": "Attachment [P4D64SSE3.tgz](tarball://root/attachments/some-uuid/ticket2986/P4D64SSE3.tgz) by tornaria created at 2008-04-21 06:01:08\n\nFor the record: I followed instructions in r1886 (using atlas-3.8.1.p0).",
+    "body": "Attachment [P4D64SSE3.tgz](tarball://root/attachments/some-uuid/ticket2986/P4D64SSE3.tgz) by @tornaria created at 2008-04-21 06:01:08\n\nFor the record: I followed instructions in r1886 (using atlas-3.8.1.p0).",
     "created_at": "2008-04-21T06:01:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2986#issuecomment-20560",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
-Attachment [P4D64SSE3.tgz](tarball://root/attachments/some-uuid/ticket2986/P4D64SSE3.tgz) by tornaria created at 2008-04-21 06:01:08
+Attachment [P4D64SSE3.tgz](tarball://root/attachments/some-uuid/ticket2986/P4D64SSE3.tgz) by @tornaria created at 2008-04-21 06:01:08
 
 For the record: I followed instructions in r1886 (using atlas-3.8.1.p0).
 

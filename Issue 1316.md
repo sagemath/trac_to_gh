@@ -3,7 +3,7 @@
 archive/issues_001316.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nKeywords: graphs\n\n\n```\n>> * compare cliques() and related functions with the routine at\n>> http://users.tkk.fi/~pat/cliquer.html (the routine is released under GPL)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1316\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\n\n```\n>> * compare cliques() and related functions with the routine at\n>> http://users.tkk.fi/~pat/cliquer.html (the routine is released under GPL)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1316\n\n",
     "created_at": "2007-11-28T20:03:45Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001316.json:
     "title": "[graphs] evaluate speed of cliques() function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1316",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 Keywords: graphs
 
@@ -45,7 +45,7 @@ archive/issue_comments_008369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1316#issuecomment-8369",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_008370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1316#issuecomment-8370",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -76,16 +76,16 @@ Changing component from combinatorics to graph theory.
 archive/issue_comments_008371.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to rlm.",
+    "body": "Changing assignee from @mwhansen to @rlmill.",
     "created_at": "2007-12-17T15:20:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1316#issuecomment-8371",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Changing assignee from mhansen to rlm.
+Changing assignee from @mwhansen to @rlmill.
 
 
 
@@ -99,7 +99,7 @@ archive/issue_comments_008372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1316#issuecomment-8372",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_008373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1316#issuecomment-8373",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001368.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1368\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1368\n\n",
     "created_at": "2007-12-02T09:44:38Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_001368.json:
     "title": "fix a bug introduced in #787 -- algorithm for computing quotient was sometimes wrong.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1368",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 

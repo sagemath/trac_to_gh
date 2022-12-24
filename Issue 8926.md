@@ -14,7 +14,7 @@ archive/issues_008926.json:
     "title": "Family cannot completely handle a class as an argument",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8926",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 Assignee: sage-combinat
@@ -51,16 +51,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8926
 archive/issue_comments_082233.json:
 ```json
 {
-    "body": "Attachment [trac_8926_family_repr-fh.patch](tarball://root/attachments/some-uuid/ticket8926/trac_8926_family_repr-fh.patch) by hivert created at 2010-05-07 23:02:25",
+    "body": "Attachment [trac_8926_family_repr-fh.patch](tarball://root/attachments/some-uuid/ticket8926/trac_8926_family_repr-fh.patch) by @hivert created at 2010-05-07 23:02:25",
     "created_at": "2010-05-07T23:02:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8926#issuecomment-82233",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8926_family_repr-fh.patch](tarball://root/attachments/some-uuid/ticket8926/trac_8926_family_repr-fh.patch) by hivert created at 2010-05-07 23:02:25
+Attachment [trac_8926_family_repr-fh.patch](tarball://root/attachments/some-uuid/ticket8926/trac_8926_family_repr-fh.patch) by @hivert created at 2010-05-07 23:02:25
 
 
 
@@ -74,7 +74,7 @@ archive/issue_comments_082234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8926#issuecomment-82234",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_082235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8926#issuecomment-82235",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_082236.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8926#issuecomment-82236",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -129,16 +129,16 @@ We had a all tests passed on the server massena. Therefore I allow myself to put
 archive/issue_comments_082237.json:
 ```json
 {
-    "body": "Changing assignee from sage-combinat to hivert.",
+    "body": "Changing assignee from sage-combinat to @hivert.",
     "created_at": "2010-06-02T18:26:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8926#issuecomment-82237",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Changing assignee from sage-combinat to hivert.
+Changing assignee from sage-combinat to @hivert.
 
 
 
@@ -152,7 +152,7 @@ archive/issue_comments_082238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8926#issuecomment-82238",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_008028.json:
     "title": "Improvements to element_wrapper",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8028",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 Assignee: sage-combinat
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8028
 archive/issue_comments_070124.json:
 ```json
 {
-    "body": "Attachment [trac_8028_element_wrapper-improvement-nt.patch](tarball://root/attachments/some-uuid/ticket8028/trac_8028_element_wrapper-improvement-nt.patch) by nthiery created at 2010-01-21 17:13:25",
+    "body": "Attachment [trac_8028_element_wrapper-improvement-nt.patch](tarball://root/attachments/some-uuid/ticket8028/trac_8028_element_wrapper-improvement-nt.patch) by @nthiery created at 2010-01-21 17:13:25",
     "created_at": "2010-01-21T17:13:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8028",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8028#issuecomment-70124",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_8028_element_wrapper-improvement-nt.patch](tarball://root/attachments/some-uuid/ticket8028/trac_8028_element_wrapper-improvement-nt.patch) by nthiery created at 2010-01-21 17:13:25
+Attachment [trac_8028_element_wrapper-improvement-nt.patch](tarball://root/attachments/some-uuid/ticket8028/trac_8028_element_wrapper-improvement-nt.patch) by @nthiery created at 2010-01-21 17:13:25
 
 
 
@@ -66,7 +66,7 @@ archive/issue_comments_070125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8028",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8028#issuecomment-70125",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_070126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8028",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8028#issuecomment-70126",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_070127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8028",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8028#issuecomment-70127",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 

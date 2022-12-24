@@ -14,7 +14,7 @@ archive/issues_005045.json:
     "title": "sage's \"make check\" should check that the sage build flags (in sage-flags.txt) are right",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5045",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5045
 archive/issue_comments_038424.json:
 ```json
 {
-    "body": "Attachment [trac_5045_scripts-rep.patch](tarball://root/attachments/some-uuid/ticket5045/trac_5045_scripts-rep.patch) by was created at 2009-01-22 10:10:18",
+    "body": "Attachment [trac_5045_scripts-rep.patch](tarball://root/attachments/some-uuid/ticket5045/trac_5045_scripts-rep.patch) by @williamstein created at 2009-01-22 10:10:18",
     "created_at": "2009-01-22T10:10:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5045",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5045#issuecomment-38424",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5045_scripts-rep.patch](tarball://root/attachments/some-uuid/ticket5045/trac_5045_scripts-rep.patch) by was created at 2009-01-22 10:10:18
+Attachment [trac_5045_scripts-rep.patch](tarball://root/attachments/some-uuid/ticket5045/trac_5045_scripts-rep.patch) by @williamstein created at 2009-01-22 10:10:18
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_038425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5045",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5045#issuecomment-38425",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_000587.json:
     "title": "bug in floating point complex number creation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/587",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/587
 archive/issue_comments_003025.json:
 ```json
 {
-    "body": "Changing assignee from somebody to mhansen.",
+    "body": "Changing assignee from somebody to @mwhansen.",
     "created_at": "2007-09-04T19:11:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/587#issuecomment-3025",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from somebody to mhansen.
+Changing assignee from somebody to @mwhansen.
 
 
 
@@ -63,7 +63,7 @@ archive/issue_comments_003026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/587#issuecomment-3026",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_003027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/587#issuecomment-3027",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -97,16 +97,16 @@ patch for calculus.py
 archive/issue_comments_003028.json:
 ```json
 {
-    "body": "Attachment [587-2.patch](tarball://root/attachments/some-uuid/ticket587/587-2.patch) by mhansen created at 2007-09-04 19:37:42\n\npatch for constants.py",
+    "body": "Attachment [587-2.patch](tarball://root/attachments/some-uuid/ticket587/587-2.patch) by @mwhansen created at 2007-09-04 19:37:42\n\npatch for constants.py",
     "created_at": "2007-09-04T19:37:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/587#issuecomment-3028",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [587-2.patch](tarball://root/attachments/some-uuid/ticket587/587-2.patch) by mhansen created at 2007-09-04 19:37:42
+Attachment [587-2.patch](tarball://root/attachments/some-uuid/ticket587/587-2.patch) by @mwhansen created at 2007-09-04 19:37:42
 
 patch for constants.py
 
@@ -122,7 +122,7 @@ archive/issue_comments_003029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/587#issuecomment-3029",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_003030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/587#issuecomment-3030",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

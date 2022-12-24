@@ -3,7 +3,7 @@
 archive/issues_005496.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis is not good:\n\n```\nsage: is_prime(GF(5)(3))\nTrue\nsage: is_prime(GF(5)(4))\nFalse\n```\n\n\nThe fix is to totally 100% rewrite is_prime in arith.py so that it first calls x.is_prime() and if that isn't defined, then in some special cases (e.g., python ints) converts to Integer and calls is_prime.  Otherwise, it raises a NotImplementedError. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5496\n\n",
+    "body": "Assignee: @williamstein\n\nThis is not good:\n\n```\nsage: is_prime(GF(5)(3))\nTrue\nsage: is_prime(GF(5)(4))\nFalse\n```\n\n\nThe fix is to totally 100% rewrite is_prime in arith.py so that it first calls x.is_prime() and if that isn't defined, then in some special cases (e.g., python ints) converts to Integer and calls is_prime.  Otherwise, it raises a NotImplementedError. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5496\n\n",
     "created_at": "2009-03-12T02:55:11Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_005496.json:
     "title": "fix bugs in is_prime  (EASY)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5496",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This is not good:
 
@@ -216,7 +216,7 @@ archive/issue_comments_042692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5496#issuecomment-42692",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_042693.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5496#issuecomment-42693",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_042694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5496#issuecomment-42694",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -400,7 +400,7 @@ archive/issue_comments_042701.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5496#issuecomment-42701",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

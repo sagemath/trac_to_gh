@@ -14,7 +14,7 @@ archive/issues_008848.json:
     "title": "the fast eval interpreters do not build on Cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8848",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_081343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8848",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8848#issuecomment-81343",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to needs_review.
 archive/issue_comments_081344.json:
 ```json
 {
-    "body": "Attachment [trac_8848-fix_interpreters.patch](tarball://root/attachments/some-uuid/ticket8848/trac_8848-fix_interpreters.patch) by mhansen created at 2010-05-25 05:54:00",
+    "body": "Attachment [trac_8848-fix_interpreters.patch](tarball://root/attachments/some-uuid/ticket8848/trac_8848-fix_interpreters.patch) by @mwhansen created at 2010-05-25 05:54:00",
     "created_at": "2010-05-25T05:54:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8848",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8848#issuecomment-81344",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_8848-fix_interpreters.patch](tarball://root/attachments/some-uuid/ticket8848/trac_8848-fix_interpreters.patch) by mhansen created at 2010-05-25 05:54:00
+Attachment [trac_8848-fix_interpreters.patch](tarball://root/attachments/some-uuid/ticket8848/trac_8848-fix_interpreters.patch) by @mwhansen created at 2010-05-25 05:54:00
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_081345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8848",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8848#issuecomment-81345",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_081346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8848",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8848#issuecomment-81346",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007863.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  timdumol\n\n[JSLint](http://www.jslint.com/) on \"The Good Parts\" setting, applied to `sagenb/data/sage/js/*.js` but *not* `notebook_lib.js`.  The latter will have its own ticket.\n\nFor now, I've have not enabled [strict mode](http://ejohn.org/blog/ecmascript-5-strict-mode-json-and-more/), since most (all?) current browsers don't yet have it.\n\nGiven the overall current design of the notebook JS library --- use lots of global variables, etc. --- I haven't implemented *all* of JSLint's suggestions.  More generally:\n\n    \"If you're writing javascript code, [JSLint](http://www.jslint.com/) is a really fine piece of software, too. You don't have to follow its recommendations blindly, but understanding what it says about your code can greatly improve your skills.\" -- http://jsbeautifier.org/\n\nIssue created by migration from https://trac.sagemath.org/ticket/7863\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @TimDumol\n\n[JSLint](http://www.jslint.com/) on \"The Good Parts\" setting, applied to `sagenb/data/sage/js/*.js` but *not* `notebook_lib.js`.  The latter will have its own ticket.\n\nFor now, I've have not enabled [strict mode](http://ejohn.org/blog/ecmascript-5-strict-mode-json-and-more/), since most (all?) current browsers don't yet have it.\n\nGiven the overall current design of the notebook JS library --- use lots of global variables, etc. --- I haven't implemented *all* of JSLint's suggestions.  More generally:\n\n    \"If you're writing javascript code, [JSLint](http://www.jslint.com/) is a really fine piece of software, too. You don't have to follow its recommendations blindly, but understanding what it says about your code can greatly improve your skills.\" -- http://jsbeautifier.org/\n\nIssue created by migration from https://trac.sagemath.org/ticket/7863\n\n",
     "created_at": "2010-01-07T03:11:23Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007863.json:
     "title": "Remove lint from auxiliary JS files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7863",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  timdumol
+CC:  @TimDumol
 
 [JSLint](http://www.jslint.com/) on "The Good Parts" setting, applied to `sagenb/data/sage/js/*.js` but *not* `notebook_lib.js`.  The latter will have its own ticket.
 
@@ -45,7 +45,7 @@ archive/issue_comments_068167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7863#issuecomment-68167",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -58,16 +58,16 @@ Changing status from new to needs_review.
 archive/issue_comments_068168.json:
 ```json
 {
-    "body": "Attachment [trac_7863-declare_vars_aux_js.patch](tarball://root/attachments/some-uuid/ticket7863/trac_7863-declare_vars_aux_js.patch) by mpatel created at 2010-01-07 03:21:17\n\nDeclare vars in functions, etc., in aux JS files.  Depends on #7786.  sagenb repo.",
+    "body": "Attachment [trac_7863-declare_vars_aux_js.patch](tarball://root/attachments/some-uuid/ticket7863/trac_7863-declare_vars_aux_js.patch) by @qed777 created at 2010-01-07 03:21:17\n\nDeclare vars in functions, etc., in aux JS files.  Depends on #7786.  sagenb repo.",
     "created_at": "2010-01-07T03:21:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7863#issuecomment-68168",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7863-declare_vars_aux_js.patch](tarball://root/attachments/some-uuid/ticket7863/trac_7863-declare_vars_aux_js.patch) by mpatel created at 2010-01-07 03:21:17
+Attachment [trac_7863-declare_vars_aux_js.patch](tarball://root/attachments/some-uuid/ticket7863/trac_7863-declare_vars_aux_js.patch) by @qed777 created at 2010-01-07 03:21:17
 
 Declare vars in functions, etc., in aux JS files.  Depends on #7786.  sagenb repo.
 
@@ -78,16 +78,16 @@ Declare vars in functions, etc., in aux JS files.  Depends on #7786.  sagenb rep
 archive/issue_comments_068169.json:
 ```json
 {
-    "body": "Attachment [trac_7863-declare_vars_aux_js_v2.patch](tarball://root/attachments/some-uuid/ticket7863/trac_7863-declare_vars_aux_js_v2.patch) by mpatel created at 2010-01-08 17:17:01\n\nRebased vs. #7786 v11.  Replaces previous.",
+    "body": "Attachment [trac_7863-declare_vars_aux_js_v2.patch](tarball://root/attachments/some-uuid/ticket7863/trac_7863-declare_vars_aux_js_v2.patch) by @qed777 created at 2010-01-08 17:17:01\n\nRebased vs. #7786 v11.  Replaces previous.",
     "created_at": "2010-01-08T17:17:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7863#issuecomment-68169",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7863-declare_vars_aux_js_v2.patch](tarball://root/attachments/some-uuid/ticket7863/trac_7863-declare_vars_aux_js_v2.patch) by mpatel created at 2010-01-08 17:17:01
+Attachment [trac_7863-declare_vars_aux_js_v2.patch](tarball://root/attachments/some-uuid/ticket7863/trac_7863-declare_vars_aux_js_v2.patch) by @qed777 created at 2010-01-08 17:17:01
 
 Rebased vs. #7786 v11.  Replaces previous.
 
@@ -103,7 +103,7 @@ archive/issue_comments_068170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7863#issuecomment-68170",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_068171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7863#issuecomment-68171",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_068172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7863#issuecomment-68172",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

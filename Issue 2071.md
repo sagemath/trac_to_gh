@@ -3,7 +3,7 @@
 archive/issues_002071.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: var('x')\nx\nsage: x.conjugate()\nx\n```\n\n\nUnder the assumption that x might be complex, this should really return conjugate(x).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2071\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: var('x')\nx\nsage: x.conjugate()\nx\n```\n\n\nUnder the assumption that x might be complex, this should really return conjugate(x).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2071\n\n",
     "created_at": "2008-02-06T06:37:57Z",
     "labels": [
         "calculus",
@@ -17,7 +17,7 @@ archive/issues_002071.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2071
 archive/issue_comments_013394.json:
 ```json
 {
-    "body": "Changing assignee from was to gfurnish.",
+    "body": "Changing assignee from @williamstein to @garyfurnish.",
     "created_at": "2008-03-16T20:10:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2071#issuecomment-13394",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from was to gfurnish.
+Changing assignee from @williamstein to @garyfurnish.
 
 
 
@@ -65,7 +65,7 @@ archive/issue_comments_013395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2071#issuecomment-13395",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_013396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2071#issuecomment-13396",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_013397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2071#issuecomment-13397",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_013398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2071#issuecomment-13398",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

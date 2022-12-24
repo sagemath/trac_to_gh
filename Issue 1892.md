@@ -14,7 +14,7 @@ archive/issues_001892.json:
     "title": "notebook -- uploading a data file should give some help about the DATA variable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1892",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1892
 archive/issue_comments_011982.json:
 ```json
 {
-    "body": "Attachment [sage-1892.patch](tarball://root/attachments/some-uuid/ticket1892/sage-1892.patch) by was created at 2008-05-11 06:19:41",
+    "body": "Attachment [sage-1892.patch](tarball://root/attachments/some-uuid/ticket1892/sage-1892.patch) by @williamstein created at 2008-05-11 06:19:41",
     "created_at": "2008-05-11T06:19:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1892",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1892#issuecomment-11982",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-1892.patch](tarball://root/attachments/some-uuid/ticket1892/sage-1892.patch) by was created at 2008-05-11 06:19:41
+Attachment [sage-1892.patch](tarball://root/attachments/some-uuid/ticket1892/sage-1892.patch) by @williamstein created at 2008-05-11 06:19:41
 
 
 

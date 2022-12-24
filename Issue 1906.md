@@ -3,7 +3,7 @@
 archive/issues_001906.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nThe function eisenstein_series_qexp() has a parameter K which is supposed to say what field the coefficients of the series should live in, but it always returns rational coefficients:\n\n\n```\nsage: eisenstein_series_qexp(10,6,GF(5))\n-1/264 + q + 513*q^2 + 19684*q^3 + 262657*q^4 + 1953126*q^5 + O(q^6)\nsage: eisenstein_series_qexp(10,6,QQ)\n-1/264 + q + 513*q^2 + 19684*q^3 + 262657*q^4 + 1953126*q^5 + O(q^6)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1906\n\n",
+    "body": "Assignee: @aghitza\n\nThe function eisenstein_series_qexp() has a parameter K which is supposed to say what field the coefficients of the series should live in, but it always returns rational coefficients:\n\n\n```\nsage: eisenstein_series_qexp(10,6,GF(5))\n-1/264 + q + 513*q^2 + 19684*q^3 + 262657*q^4 + 1953126*q^5 + O(q^6)\nsage: eisenstein_series_qexp(10,6,QQ)\n-1/264 + q + 513*q^2 + 19684*q^3 + 262657*q^4 + 1953126*q^5 + O(q^6)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1906\n\n",
     "created_at": "2008-01-24T03:34:38Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_001906.json:
     "title": "[with patch, needs review] eisenstein_series_qexp does not pay attention to the field parameter",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1906",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 The function eisenstein_series_qexp() has a parameter K which is supposed to say what field the coefficients of the series should live in, but it always returns rational coefficients:
 
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1906
 archive/issue_comments_012072.json:
 ```json
 {
-    "body": "Attachment [1906-qexp-field.patch](tarball://root/attachments/some-uuid/ticket1906/1906-qexp-field.patch) by AlexGhitza created at 2008-01-24 03:37:29",
+    "body": "Attachment [1906-qexp-field.patch](tarball://root/attachments/some-uuid/ticket1906/1906-qexp-field.patch) by @aghitza created at 2008-01-24 03:37:29",
     "created_at": "2008-01-24T03:37:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1906#issuecomment-12072",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [1906-qexp-field.patch](tarball://root/attachments/some-uuid/ticket1906/1906-qexp-field.patch) by AlexGhitza created at 2008-01-24 03:37:29
+Attachment [1906-qexp-field.patch](tarball://root/attachments/some-uuid/ticket1906/1906-qexp-field.patch) by @aghitza created at 2008-01-24 03:37:29
 
 
 
@@ -64,7 +64,7 @@ archive/issue_comments_012073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1906#issuecomment-12073",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_012074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1906#issuecomment-12074",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_012077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1906#issuecomment-12077",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

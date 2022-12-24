@@ -3,7 +3,7 @@
 archive/issues_006521.json:
 ```json
 {
-    "body": "Assignee: was\n\nSee also #111, where this originates.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6521\n\n",
+    "body": "Assignee: @williamstein\n\nSee also #111, where this originates.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6521\n\n",
     "created_at": "2009-07-13T10:20:55Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_006521.json:
     "title": "replace .copy() with .__copy__() in matrix/matrix0.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6521",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 See also #111, where this originates.
 
@@ -38,7 +38,7 @@ archive/issue_comments_053164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6521#issuecomment-53164",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -51,16 +51,16 @@ Based on 4.1.1
 archive/issue_comments_053165.json:
 ```json
 {
-    "body": "Attachment [trac_6521-copy-matrix.patch](tarball://root/attachments/some-uuid/ticket6521/trac_6521-copy-matrix.patch) by kcrisman created at 2009-08-26 19:42:58\n\nThis passed all doctests in sage.matrix, sage.modules, and sage.groups.matrix_gps, so hopefully I got all of them.",
+    "body": "Attachment [trac_6521-copy-matrix.patch](tarball://root/attachments/some-uuid/ticket6521/trac_6521-copy-matrix.patch) by @kcrisman created at 2009-08-26 19:42:58\n\nThis passed all doctests in sage.matrix, sage.modules, and sage.groups.matrix_gps, so hopefully I got all of them.",
     "created_at": "2009-08-26T19:42:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6521#issuecomment-53165",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6521-copy-matrix.patch](tarball://root/attachments/some-uuid/ticket6521/trac_6521-copy-matrix.patch) by kcrisman created at 2009-08-26 19:42:58
+Attachment [trac_6521-copy-matrix.patch](tarball://root/attachments/some-uuid/ticket6521/trac_6521-copy-matrix.patch) by @kcrisman created at 2009-08-26 19:42:58
 
 This passed all doctests in sage.matrix, sage.modules, and sage.groups.matrix_gps, so hopefully I got all of them.
 
@@ -76,7 +76,7 @@ archive/issue_comments_053166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6521#issuecomment-53166",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_053167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6521#issuecomment-53167",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_053168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6521#issuecomment-53168",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_053169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6521#issuecomment-53169",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_053170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6521#issuecomment-53170",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -179,16 +179,16 @@ Ouch, okay.  I'll post a quick patch to this ticket (since I know at least some 
 archive/issue_comments_053171.json:
 ```json
 {
-    "body": "Attachment [trac_6521-deprecation.patch](tarball://root/attachments/some-uuid/ticket6521/trac_6521-deprecation.patch) by jason created at 2009-09-15 16:42:07\n\napply on top of previous patch",
+    "body": "Attachment [trac_6521-deprecation.patch](tarball://root/attachments/some-uuid/ticket6521/trac_6521-deprecation.patch) by @jasongrout created at 2009-09-15 16:42:07\n\napply on top of previous patch",
     "created_at": "2009-09-15T16:42:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6521#issuecomment-53171",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_6521-deprecation.patch](tarball://root/attachments/some-uuid/ticket6521/trac_6521-deprecation.patch) by jason created at 2009-09-15 16:42:07
+Attachment [trac_6521-deprecation.patch](tarball://root/attachments/some-uuid/ticket6521/trac_6521-deprecation.patch) by @jasongrout created at 2009-09-15 16:42:07
 
 apply on top of previous patch
 
@@ -204,7 +204,7 @@ archive/issue_comments_053172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6521#issuecomment-53172",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_053173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6521#issuecomment-53173",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -373,16 +373,16 @@ For whitespace errors, see the file /scratch/mvngu/release/sage-4.1.2.alpha1/tmp
 archive/issue_comments_053175.json:
 ```json
 {
-    "body": "Attachment [trac_6521-deprecation-fixes.patch](tarball://root/attachments/some-uuid/ticket6521/trac_6521-deprecation-fixes.patch) by jason created at 2009-09-17 08:39:32\n\napply on top of previous patches",
+    "body": "Attachment [trac_6521-deprecation-fixes.patch](tarball://root/attachments/some-uuid/ticket6521/trac_6521-deprecation-fixes.patch) by @jasongrout created at 2009-09-17 08:39:32\n\napply on top of previous patches",
     "created_at": "2009-09-17T08:39:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6521#issuecomment-53175",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_6521-deprecation-fixes.patch](tarball://root/attachments/some-uuid/ticket6521/trac_6521-deprecation-fixes.patch) by jason created at 2009-09-17 08:39:32
+Attachment [trac_6521-deprecation-fixes.patch](tarball://root/attachments/some-uuid/ticket6521/trac_6521-deprecation-fixes.patch) by @jasongrout created at 2009-09-17 08:39:32
 
 apply on top of previous patches
 
@@ -398,7 +398,7 @@ archive/issue_comments_053176.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6521#issuecomment-53176",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

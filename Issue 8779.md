@@ -3,7 +3,7 @@
 archive/issues_008779.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat\n\nKeywords: polynomial rings, categories\n\n\n```\nsage: QQ[x].categories()\n[Category of commutative rings, Category of rings, ...]\n```\n\n\nThis list should at least contain `EuclideanDomains()` and `GradedAlgebrasWithBasis(QQ)`. Maybe even `GradedHopfAlgebrasWithBasis(QQ)`.\n\nAt that occasion, the various accessors (term, ...) here and in ModulesWithBasis should be made consistent.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8779\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: polynomial rings, categories\n\n\n```\nsage: QQ[x].categories()\n[Category of commutative rings, Category of rings, ...]\n```\n\n\nThis list should at least contain `EuclideanDomains()` and `GradedAlgebrasWithBasis(QQ)`. Maybe even `GradedHopfAlgebrasWithBasis(QQ)`.\n\nAt that occasion, the various accessors (term, ...) here and in ModulesWithBasis should be made consistent.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8779\n\n",
     "created_at": "2010-04-27T06:19:21Z",
     "labels": [
         "categories",
@@ -13,10 +13,10 @@ archive/issues_008779.json:
     "title": "Categories for polynomial rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8779",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
 CC:  sage-combinat
 
@@ -67,7 +67,7 @@ archive/issue_comments_080368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8779#issuecomment-80368",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 

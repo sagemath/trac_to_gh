@@ -3,7 +3,7 @@
 archive/issues_007503.json:
 ```json
 {
-    "body": "Assignee: malb\n\nWhilst reviewing #7375 (upgrade M4RI to newest upstream release), for which I gave a positive review, I did notice some issues which should at least be investigated by Martin Albrecht. They are shown in a log file I attached to #7375 \n\nOverall the update of M4RI solves two obvious problems (#7171 and #7037), and is clearly an improvement over the previous version of M4RI, so I felt fully justified in giving #7375 a positive review, even though I am aware of problems in the source code. \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/7503\n\n",
+    "body": "Assignee: @malb\n\nWhilst reviewing #7375 (upgrade M4RI to newest upstream release), for which I gave a positive review, I did notice some issues which should at least be investigated by Martin Albrecht. They are shown in a log file I attached to #7375 \n\nOverall the update of M4RI solves two obvious problems (#7171 and #7037), and is clearly an improvement over the previous version of M4RI, so I felt fully justified in giving #7375 a positive review, even though I am aware of problems in the source code. \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/7503\n\n",
     "created_at": "2009-11-20T12:38:10Z",
     "labels": [
         "packages: standard",
@@ -17,7 +17,7 @@ archive/issues_007503.json:
     "user": "drkirkby"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Whilst reviewing #7375 (upgrade M4RI to newest upstream release), for which I gave a positive review, I did notice some issues which should at least be investigated by Martin Albrecht. They are shown in a log file I attached to #7375 
 
@@ -61,7 +61,7 @@ archive/issue_comments_063432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7503#issuecomment-63432",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_063433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7503#issuecomment-63433",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_063434.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7503#issuecomment-63434",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_063435.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7503#issuecomment-63435",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

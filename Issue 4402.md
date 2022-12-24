@@ -3,7 +3,7 @@
 archive/issues_004402.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage -t -long -optional devel/doc/prog/prog.tex\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.alpha1/tmp/prog.py\", line 520:\n    sage: E._magma_init_() # optional -- requires Magma\nExpected:\n    'EllipticCurve([_sage_[1]|GF(41)!0,GF(41)!0,GF(41)!0,GF(41)!2,GF(41)!5])'\nGot:\n    'EllipticCurve([GF(41)|GF(41)!0,GF(41)!0,GF(41)!0,GF(41)!2,GF(41)!5])'\n**********************************************************************\n```\n\n\nTrivial to fix since this is just a printing issue.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4402\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage -t -long -optional devel/doc/prog/prog.tex\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.alpha1/tmp/prog.py\", line 520:\n    sage: E._magma_init_() # optional -- requires Magma\nExpected:\n    'EllipticCurve([_sage_[1]|GF(41)!0,GF(41)!0,GF(41)!0,GF(41)!2,GF(41)!5])'\nGot:\n    'EllipticCurve([GF(41)|GF(41)!0,GF(41)!0,GF(41)!0,GF(41)!2,GF(41)!5])'\n**********************************************************************\n```\n\n\nTrivial to fix since this is just a printing issue.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4402\n\n",
     "created_at": "2008-10-30T17:34:25Z",
     "labels": [
         "doctest coverage",
@@ -17,7 +17,7 @@ archive/issues_004402.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -74,16 +74,16 @@ Michael
 archive/issue_comments_032372.json:
 ```json
 {
-    "body": "Attachment [trac_4402_doc.patch](tarball://root/attachments/some-uuid/ticket4402/trac_4402_doc.patch) by was created at 2008-11-30 07:46:55",
+    "body": "Attachment [trac_4402_doc.patch](tarball://root/attachments/some-uuid/ticket4402/trac_4402_doc.patch) by @williamstein created at 2008-11-30 07:46:55",
     "created_at": "2008-11-30T07:46:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4402#issuecomment-32372",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4402_doc.patch](tarball://root/attachments/some-uuid/ticket4402/trac_4402_doc.patch) by was created at 2008-11-30 07:46:55
+Attachment [trac_4402_doc.patch](tarball://root/attachments/some-uuid/ticket4402/trac_4402_doc.patch) by @williamstein created at 2008-11-30 07:46:55
 
 
 

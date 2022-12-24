@@ -3,7 +3,7 @@
 archive/issues_000820.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nKeywords: coverage\n\nThere are situations where functions aren't easy to doctest, and shouldn't have this counted against the file's coverage. Think about the right way to implement this.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/820\n\n",
+    "body": "Assignee: @craigcitro\n\nKeywords: coverage\n\nThere are situations where functions aren't easy to doctest, and shouldn't have this counted against the file's coverage. Think about the right way to implement this.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/820\n\n",
     "created_at": "2007-10-04T03:27:23Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_000820.json:
     "title": "more sage -coverage improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/820",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 Keywords: coverage
 
@@ -41,7 +41,7 @@ archive/issue_comments_005087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/820#issuecomment-5087",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_005088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/820#issuecomment-5088",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_005089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/820#issuecomment-5089",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

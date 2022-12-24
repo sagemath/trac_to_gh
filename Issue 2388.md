@@ -14,7 +14,7 @@ archive/issues_002388.json:
     "title": "linbox charpoly crashes on OS X 10.5-intel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2388",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 Assignee: mabshoff
@@ -35,16 +35,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2388
 archive/issue_comments_016116.json:
 ```json
 {
-    "body": "Attachment [ticket-staticinit.txt](tarball://root/attachments/some-uuid/ticket2388/ticket-staticinit.txt) by cpernet created at 2008-03-04 21:56:02",
+    "body": "Attachment [ticket-staticinit.txt](tarball://root/attachments/some-uuid/ticket2388/ticket-staticinit.txt) by @ClementPernet created at 2008-03-04 21:56:02",
     "created_at": "2008-03-04T21:56:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2388#issuecomment-16116",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 
-Attachment [ticket-staticinit.txt](tarball://root/attachments/some-uuid/ticket2388/ticket-staticinit.txt) by cpernet created at 2008-03-04 21:56:02
+Attachment [ticket-staticinit.txt](tarball://root/attachments/some-uuid/ticket2388/ticket-staticinit.txt) by @ClementPernet created at 2008-03-04 21:56:02
 
 
 
@@ -58,7 +58,7 @@ archive/issue_comments_016117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2388#issuecomment-16117",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 
@@ -77,16 +77,16 @@ The clean fix will be in ticket 2389.
 archive/issue_comments_016118.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to cpernet.",
+    "body": "Changing assignee from mabshoff to @ClementPernet.",
     "created_at": "2008-03-04T22:03:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2388#issuecomment-16118",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 
-Changing assignee from mabshoff to cpernet.
+Changing assignee from mabshoff to @ClementPernet.
 
 
 

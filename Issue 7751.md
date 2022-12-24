@@ -3,7 +3,7 @@
 archive/issues_007751.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  sage-combinat\n\nKeywords: Kazhdan-Lusztig, Bruhat order\n\nThis patch includes algorithms for the Bruhat order, Kazhdan-Lusztig polynomials, improvements to the `__repr__` method of WeylGroup elements, and other enhancements.\n\nSome of the methods should be moved to `coxeter_group.py`.\n\nMike Hansen is working on an interface to coxeter3, which is be able to compute Kazhdan-Lusztig polynomials rather faster. However I think this patch still contains things that are needed.\n\nFor discussion see this thread:\n\nhttp://groups.google.com/group/sage-combinat-devel/browse_thread/thread/d324f6fcb6d2a436?hl=en\n\nIssue created by migration from https://trac.sagemath.org/ticket/7751\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nKeywords: Kazhdan-Lusztig, Bruhat order\n\nThis patch includes algorithms for the Bruhat order, Kazhdan-Lusztig polynomials, improvements to the `__repr__` method of WeylGroup elements, and other enhancements.\n\nSome of the methods should be moved to `coxeter_group.py`.\n\nMike Hansen is working on an interface to coxeter3, which is be able to compute Kazhdan-Lusztig polynomials rather faster. However I think this patch still contains things that are needed.\n\nFor discussion see this thread:\n\nhttp://groups.google.com/group/sage-combinat-devel/browse_thread/thread/d324f6fcb6d2a436?hl=en\n\nIssue created by migration from https://trac.sagemath.org/ticket/7751\n\n",
     "created_at": "2009-12-22T21:56:00Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_007751.json:
     "title": "Kazhdan-Lusztig polynomials, Bruhat order, and related features [with patch, needs review]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7751",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 CC:  sage-combinat
 
@@ -49,7 +49,7 @@ archive/issue_comments_066743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7751#issuecomment-66743",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -62,16 +62,16 @@ Changing component from algebra to combinatorics.
 archive/issue_comments_066744.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to bump.",
+    "body": "Changing assignee from @aghitza to @dwbump.",
     "created_at": "2009-12-22T22:54:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7751#issuecomment-66744",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Changing assignee from AlexGhitza to bump.
+Changing assignee from @aghitza to @dwbump.
 
 
 
@@ -85,7 +85,7 @@ archive/issue_comments_066745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7751#issuecomment-66745",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_066746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7751#issuecomment-66746",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_066747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7751#issuecomment-66747",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_066748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7751#issuecomment-66748",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_066749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7751#issuecomment-66749",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_066750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7751#issuecomment-66750",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_066751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7751#issuecomment-66751",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_066752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7751#issuecomment-66752",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -283,16 +283,16 @@ This patch implements Kazhdan--Lusztig polynomials and R-polynomials associated 
 archive/issue_comments_066755.json:
 ```json
 {
-    "body": "Remove assignee bump.",
+    "body": "Remove assignee @dwbump.",
     "created_at": "2010-02-11T06:37:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7751#issuecomment-66755",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Remove assignee bump.
+Remove assignee @dwbump.
 
 
 
@@ -306,7 +306,7 @@ archive/issue_comments_066756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7751#issuecomment-66756",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -324,7 +324,7 @@ archive/issue_comments_066757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7751#issuecomment-66757",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -365,7 +365,7 @@ archive/issue_comments_066758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7751#issuecomment-66758",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -385,7 +385,7 @@ archive/issue_comments_066759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7751#issuecomment-66759",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -404,7 +404,7 @@ archive/issue_comments_066760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7751#issuecomment-66760",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -417,16 +417,16 @@ Kazhdan-Lusztig polynomials, Bruhat order, improved `__repr__` for WeylGroups.
 archive/issue_comments_066761.json:
 ```json
 {
-    "body": "Attachment [kazhdan_lusztig.patch](tarball://root/attachments/some-uuid/ticket7751/kazhdan_lusztig.patch) by bump created at 2010-02-13 01:26:45\n\nPatch rebased to sage-4.3.3.alpha0. This fixes the conflict\nreported by mpatel with no other changes.",
+    "body": "Attachment [kazhdan_lusztig.patch](tarball://root/attachments/some-uuid/ticket7751/kazhdan_lusztig.patch) by @dwbump created at 2010-02-13 01:26:45\n\nPatch rebased to sage-4.3.3.alpha0. This fixes the conflict\nreported by mpatel with no other changes.",
     "created_at": "2010-02-13T01:26:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7751#issuecomment-66761",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [kazhdan_lusztig.patch](tarball://root/attachments/some-uuid/ticket7751/kazhdan_lusztig.patch) by bump created at 2010-02-13 01:26:45
+Attachment [kazhdan_lusztig.patch](tarball://root/attachments/some-uuid/ticket7751/kazhdan_lusztig.patch) by @dwbump created at 2010-02-13 01:26:45
 
 Patch rebased to sage-4.3.3.alpha0. This fixes the conflict
 reported by mpatel with no other changes.

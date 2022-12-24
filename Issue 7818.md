@@ -3,7 +3,7 @@
 archive/issues_007818.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  was jsp\n\nThis is an update to the sage-env file. It should allow a much improved build process, simplifying the code in spkg install files, as much of it will be taken care of. The code will also be more portable. \n\n* Little or no need for any SAGE64 rubbish in any spkg-install files. The appropriate flag to build 64-bit code is added if SAGE64 is set to use. \n* No need to add -Wall or -g, as these are added by default. \n* GNU specific compiler options can be replaced by variables with similar names to the GNU ones, making substitution a relatively easy task. \n* Will enable code to be much more portable. \n\nThe changes mainly affect the 3 variables for compiler flags  - CFLAGS, CXXFLAGS and FCFLAGS.  \n\nThe user may set CFLAGS, CXXFLAGS and FCFLAGS, but the following will be appended. \n\n == General flags ==\n* The -g  option is added to enable debugging unless SAGE_DEBUG is set to \"no\". \n* -Wall is added for gcc, g++ and gfortran.\n\n == 64-bit Flags ==\nIf SAGE64 is \"yes\"\n* -m64 is added for GCC\n* -m64 is added for Sun Studio\n* -q64 is added for IBM's compiler on AIX\n* +DA2.OW is added on HP-UX. (This will not work on Itanium processors running on HP-UX. I'll update when I have more information). \n \nA variable CFLAG64 is set to the correct option for building 64-bit binaries with the C compiler. So if -m64 is replaced by $CFLAG64, the code will work on any C compiler. \n\n(Some compilers may require a different option for C and C++ files. The names CXXFLAG64 and FCFLAG64 are reserved for this, but its not suggested they are used now) \n\n == C++ library flags ==\nDue to changes in the C++ standard, it is impossible for compiler vendors to distribute a C++ runtime library which is both compatible with the old standard and the new one. Both HP and Sun use the older library by default, and need a switch added to enable the newer libraries, which more closely follow the latest C++ standard. See:\n\nhttp://developers.sun.com/solaris/articles/cmp_stlport_libCstd.html\n\nhttp://docs.hp.com/en/14487/faq.htm\n\n\nTherefore\n* If the compiler is Sun Studio, library=stlport4 is added to CXXFLAGS. \n* If the Compiler is HP's on HP-UX, the option -AA is added to CXXFLAGS. \n\n == Shared Library Flags ==\nFive new variables are set in sage-env. These are for building shared libraries and take on names very similar to the GNU names for the flags. \n\n|             |                  |                         |\n|-------------|------------------|-------------------------|\n|**Flag name**|**Value with GCC**|**Value with Sun Studio**|\n|FPIC_FLAG|-fPIC|-xcode=pic32|\n|SHARED_FLAG|-shared|-G|\n|SONAME_FLAG|-soname|-h|\nA reviewer may notice two further variable names used. These options can be linker dependent and will be finalized once some code to detect the linker is in place.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7818\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @williamstein @jaapspies\n\nThis is an update to the sage-env file. It should allow a much improved build process, simplifying the code in spkg install files, as much of it will be taken care of. The code will also be more portable. \n\n* Little or no need for any SAGE64 rubbish in any spkg-install files. The appropriate flag to build 64-bit code is added if SAGE64 is set to use. \n* No need to add -Wall or -g, as these are added by default. \n* GNU specific compiler options can be replaced by variables with similar names to the GNU ones, making substitution a relatively easy task. \n* Will enable code to be much more portable. \n\nThe changes mainly affect the 3 variables for compiler flags  - CFLAGS, CXXFLAGS and FCFLAGS.  \n\nThe user may set CFLAGS, CXXFLAGS and FCFLAGS, but the following will be appended. \n\n == General flags ==\n* The -g  option is added to enable debugging unless SAGE_DEBUG is set to \"no\". \n* -Wall is added for gcc, g++ and gfortran.\n\n == 64-bit Flags ==\nIf SAGE64 is \"yes\"\n* -m64 is added for GCC\n* -m64 is added for Sun Studio\n* -q64 is added for IBM's compiler on AIX\n* +DA2.OW is added on HP-UX. (This will not work on Itanium processors running on HP-UX. I'll update when I have more information). \n \nA variable CFLAG64 is set to the correct option for building 64-bit binaries with the C compiler. So if -m64 is replaced by $CFLAG64, the code will work on any C compiler. \n\n(Some compilers may require a different option for C and C++ files. The names CXXFLAG64 and FCFLAG64 are reserved for this, but its not suggested they are used now) \n\n == C++ library flags ==\nDue to changes in the C++ standard, it is impossible for compiler vendors to distribute a C++ runtime library which is both compatible with the old standard and the new one. Both HP and Sun use the older library by default, and need a switch added to enable the newer libraries, which more closely follow the latest C++ standard. See:\n\nhttp://developers.sun.com/solaris/articles/cmp_stlport_libCstd.html\n\nhttp://docs.hp.com/en/14487/faq.htm\n\n\nTherefore\n* If the compiler is Sun Studio, library=stlport4 is added to CXXFLAGS. \n* If the Compiler is HP's on HP-UX, the option -AA is added to CXXFLAGS. \n\n == Shared Library Flags ==\nFive new variables are set in sage-env. These are for building shared libraries and take on names very similar to the GNU names for the flags. \n\n|             |                  |                         |\n|-------------|------------------|-------------------------|\n|**Flag name**|**Value with GCC**|**Value with Sun Studio**|\n|FPIC_FLAG|-fPIC|-xcode=pic32|\n|SHARED_FLAG|-shared|-G|\n|SONAME_FLAG|-soname|-h|\nA reviewer may notice two further variable names used. These options can be linker dependent and will be finalized once some code to detect the linker is in place.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7818\n\n",
     "created_at": "2010-01-02T11:35:05Z",
     "labels": [
         "porting",
@@ -19,7 +19,7 @@ archive/issues_007818.json:
 ```
 Assignee: drkirkby
 
-CC:  was jsp
+CC:  @williamstein @jaapspies
 
 This is an update to the sage-env file. It should allow a much improved build process, simplifying the code in spkg install files, as much of it will be taken care of. The code will also be more portable. 
 
@@ -142,7 +142,7 @@ archive/issue_comments_067640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67640",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_067642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67642",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_067643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67643",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_067645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67645",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -326,7 +326,7 @@ archive/issue_comments_067647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67647",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -369,7 +369,7 @@ archive/issue_comments_067648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67648",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -421,7 +421,7 @@ archive/issue_comments_067649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67649",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -439,7 +439,7 @@ archive/issue_comments_067650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67650",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -459,7 +459,7 @@ archive/issue_comments_067651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67651",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -623,7 +623,7 @@ archive/issue_comments_067658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67658",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -641,7 +641,7 @@ archive/issue_comments_067659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67659",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -719,7 +719,7 @@ archive/issue_comments_067661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67661",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -737,7 +737,7 @@ archive/issue_comments_067662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67662",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -755,7 +755,7 @@ archive/issue_comments_067663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67663",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -773,7 +773,7 @@ archive/issue_comments_067664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67664",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -791,7 +791,7 @@ archive/issue_comments_067665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67665",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -809,7 +809,7 @@ archive/issue_comments_067666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67666",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -829,7 +829,7 @@ archive/issue_comments_067667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67667",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -873,7 +873,7 @@ archive/issue_comments_067669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67669",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -893,7 +893,7 @@ archive/issue_comments_067670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67670",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -914,7 +914,7 @@ archive/issue_comments_067671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67671",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -932,7 +932,7 @@ archive/issue_comments_067672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67672",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

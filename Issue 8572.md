@@ -3,7 +3,7 @@
 archive/issues_008572.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  jhpalmieri mpatel\n\nKeywords: Poset, sphinx\n\nTry\n\n```\nPoset?\n```\n\nunder the console and nothing appear.\nSee\n\n```\nhttp://groups.google.com/group/sage-devel/t/b9baaa6943fc0df4\n```\n\nfor a discussion: It is not clear if it's a sphinx bug or a Poset doc bug. I haven't been able to reproduce it from any other file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8572\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri @qed777\n\nKeywords: Poset, sphinx\n\nTry\n\n```\nPoset?\n```\n\nunder the console and nothing appear.\nSee\n\n```\nhttp://groups.google.com/group/sage-devel/t/b9baaa6943fc0df4\n```\n\nfor a discussion: It is not clear if it's a sphinx bug or a Poset doc bug. I haven't been able to reproduce it from any other file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8572\n\n",
     "created_at": "2010-03-21T19:52:16Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_008572.json:
     "title": "Doc of poset appear as void if called from the console.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8572",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 Assignee: mvngu
 
-CC:  jhpalmieri mpatel
+CC:  @jhpalmieri @qed777
 
 Keywords: Poset, sphinx
 
@@ -54,7 +54,7 @@ archive/issue_comments_077632.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8572#issuecomment-77632",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -78,16 +78,16 @@ sage: len(sphinxify(r[:1439], format='text'))
 archive/issue_comments_077633.json:
 ```json
 {
-    "body": "Changing assignee from mvngu to hivert.",
+    "body": "Changing assignee from mvngu to @hivert.",
     "created_at": "2010-03-21T21:57:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8572#issuecomment-77633",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Changing assignee from mvngu to hivert.
+Changing assignee from mvngu to @hivert.
 
 
 
@@ -96,16 +96,16 @@ Changing assignee from mvngu to hivert.
 archive/issue_comments_077634.json:
 ```json
 {
-    "body": "Attachment [trac_8572-poset_doc_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8572/trac_8572-poset_doc_fix-fh.patch) by hivert created at 2010-03-21 21:57:33\n\nHi John,\n\n> A little more data:\n\n```\nsage: from sage.misc.sageinspect import _sage_getdoc_unformatted\nsage: from sagenb.misc.sphinxify import sphinxify\nsage: r = _sage_getdoc_unformatted(Poset)\nsage: len(sphinxify(r[:1438], format='text'))\n1382\nsage: len(sphinxify(r[:1439], format='text'))\n0\n```\n\n\nI don't know how you got it but this was exactly the problem: an extraneous space at the 1438th character ! Please review.\n\nFlorent",
+    "body": "Attachment [trac_8572-poset_doc_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8572/trac_8572-poset_doc_fix-fh.patch) by @hivert created at 2010-03-21 21:57:33\n\nHi John,\n\n> A little more data:\n\n```\nsage: from sage.misc.sageinspect import _sage_getdoc_unformatted\nsage: from sagenb.misc.sphinxify import sphinxify\nsage: r = _sage_getdoc_unformatted(Poset)\nsage: len(sphinxify(r[:1438], format='text'))\n1382\nsage: len(sphinxify(r[:1439], format='text'))\n0\n```\n\n\nI don't know how you got it but this was exactly the problem: an extraneous space at the 1438th character ! Please review.\n\nFlorent",
     "created_at": "2010-03-21T21:57:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8572#issuecomment-77634",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8572-poset_doc_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8572/trac_8572-poset_doc_fix-fh.patch) by hivert created at 2010-03-21 21:57:33
+Attachment [trac_8572-poset_doc_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8572/trac_8572-poset_doc_fix-fh.patch) by @hivert created at 2010-03-21 21:57:33
 
 Hi John,
 
@@ -138,7 +138,7 @@ archive/issue_comments_077635.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8572#issuecomment-77635",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_077636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8572#issuecomment-77636",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_077637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8572#issuecomment-77637",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_077638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8572#issuecomment-77638",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_077639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8572#issuecomment-77639",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_077640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8572#issuecomment-77640",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_001344.json:
     "title": "make it crystal clear that one should use tar not some .app to extract sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1344",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -49,7 +49,7 @@ archive/issue_comments_008619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1344#issuecomment-8619",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

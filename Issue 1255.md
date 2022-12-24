@@ -3,7 +3,7 @@
 archive/issues_001255.json:
 ```json
 {
-    "body": "Assignee: wdj\n\nI have found a code C which crashes C.permutation_automorphism_group().\nThis function basically is a wrapper for GAP's `MatrixAutomorphisms` \nfunction. The code that causes it to fail is [20,14] in\nhttp://sage.math.washington.edu/home/wdj/research/coding-theory/sd_codes.sage\n\nIssue created by migration from https://trac.sagemath.org/ticket/1255\n\n",
+    "body": "Assignee: @wdjoyner\n\nI have found a code C which crashes C.permutation_automorphism_group().\nThis function basically is a wrapper for GAP's `MatrixAutomorphisms` \nfunction. The code that causes it to fail is [20,14] in\nhttp://sage.math.washington.edu/home/wdj/research/coding-theory/sd_codes.sage\n\nIssue created by migration from https://trac.sagemath.org/ticket/1255\n\n",
     "created_at": "2007-11-24T19:33:26Z",
     "labels": [
         "coding theory",
@@ -14,10 +14,10 @@ archive/issues_001255.json:
     "title": "bug in permutation_automorphism_group",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1255",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: wdj
+Assignee: @wdjoyner
 
 I have found a code C which crashes C.permutation_automorphism_group().
 This function basically is a wrapper for GAP's `MatrixAutomorphisms` 
@@ -40,7 +40,7 @@ archive/issue_comments_007845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1255#issuecomment-7845",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -58,7 +58,7 @@ archive/issue_comments_007846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1255#issuecomment-7846",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_007847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1255#issuecomment-7847",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_007848.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1255#issuecomment-7848",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_007849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1255#issuecomment-7849",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

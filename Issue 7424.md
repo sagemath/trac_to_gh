@@ -14,7 +14,7 @@ archive/issues_007424.json:
     "title": "inconsistency between constructors SL and PSL",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7424",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 Assignee: joyner
@@ -84,16 +84,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7424
 archive/issue_comments_062487.json:
 ```json
 {
-    "body": "Attachment [trac_7424.patch](tarball://root/attachments/some-uuid/ticket7424/trac_7424.patch) by chapoton created at 2013-08-02 19:17:20\n\nhere is a patch, that also cleans a bit the doc",
+    "body": "Attachment [trac_7424.patch](tarball://root/attachments/some-uuid/ticket7424/trac_7424.patch) by @fchapoton created at 2013-08-02 19:17:20\n\nhere is a patch, that also cleans a bit the doc",
     "created_at": "2013-08-02T19:17:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7424",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7424#issuecomment-62487",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac_7424.patch](tarball://root/attachments/some-uuid/ticket7424/trac_7424.patch) by chapoton created at 2013-08-02 19:17:20
+Attachment [trac_7424.patch](tarball://root/attachments/some-uuid/ticket7424/trac_7424.patch) by @fchapoton created at 2013-08-02 19:17:20
 
 here is a patch, that also cleans a bit the doc
 
@@ -109,7 +109,7 @@ archive/issue_comments_062488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7424",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7424#issuecomment-62488",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_062489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7424",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7424#issuecomment-62489",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_062490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7424",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7424#issuecomment-62490",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

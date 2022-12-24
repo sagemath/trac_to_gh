@@ -14,7 +14,7 @@ archive/issues_008026.json:
     "title": "If possible -- update prereq to require gfortran when installing on any OS except OS X.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8026",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: GeorgSWeber

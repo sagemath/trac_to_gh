@@ -14,7 +14,7 @@ archive/issues_000039.json:
     "title": "Misleading polynomial ring behavior",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/39",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -45,7 +45,7 @@ archive/issue_comments_000248.json:
     "issue": "https://github.com/sagemath/sagetest/issues/39",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/39#issuecomment-248",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_000249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/39",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/39#issuecomment-249",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

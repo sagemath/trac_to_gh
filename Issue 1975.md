@@ -3,7 +3,7 @@
 archive/issues_001975.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n\nThey definitely very useful sometimes.  E.g., there is something\ncalled the elliptic curve factorization method that is a brilliant trick\nto factor integers.  You want to factor an integer N so you pretend\nthat it is prime, do a bunch of arithmetic with N, and if something goes\nwrong, the error message gives just the information you need to factor N.\nBut it's important that the error message be an exception that you can\ncatch and that can contain some interesting Python data in it.  Custom\nexceptions work very nicely for that. \n\n(This used to be trivial to implement in Sage, but for some reason\nSage changed and now it is isn't... :-(\n\nsage: E = EllipticCurve(Integers(15),[1,-1])\nsage: P = E.point([1,0,1], check=False)\ngoes boom but didn't used to...\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1975\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n\nThey definitely very useful sometimes.  E.g., there is something\ncalled the elliptic curve factorization method that is a brilliant trick\nto factor integers.  You want to factor an integer N so you pretend\nthat it is prime, do a bunch of arithmetic with N, and if something goes\nwrong, the error message gives just the information you need to factor N.\nBut it's important that the error message be an exception that you can\ncatch and that can contain some interesting Python data in it.  Custom\nexceptions work very nicely for that. \n\n(This used to be trivial to implement in Sage, but for some reason\nSage changed and now it is isn't... :-(\n\nsage: E = EllipticCurve(Integers(15),[1,-1])\nsage: P = E.point([1,0,1], check=False)\ngoes boom but didn't used to...\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1975\n\n",
     "created_at": "2008-01-30T03:38:42Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_001975.json:
     "title": "elliptic curve method -- one should trivially be able to implement a toy version, but can't anymore, which sucks",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1975",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -58,7 +58,7 @@ archive/issue_comments_012795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1975#issuecomment-12795",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -71,16 +71,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_012796.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-07-20T19:47:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1975#issuecomment-12796",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 
@@ -94,7 +94,7 @@ archive/issue_comments_012797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1975#issuecomment-12797",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -107,16 +107,16 @@ Changing component from number theory to elliptic curves.
 archive/issue_comments_012798.json:
 ```json
 {
-    "body": "Remove assignee davidloeffler.",
+    "body": "Remove assignee @loefflerd.",
     "created_at": "2009-10-09T09:11:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1975#issuecomment-12798",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Remove assignee davidloeffler.
+Remove assignee @loefflerd.
 
 
 
@@ -130,7 +130,7 @@ archive/issue_comments_012799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1975#issuecomment-12799",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_012800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1975#issuecomment-12800",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -167,16 +167,16 @@ after creating E and before attempting to create points.
 archive/issue_comments_012801.json:
 ```json
 {
-    "body": "Attachment [trac_1975-points-mod-N.patch](tarball://root/attachments/some-uuid/ticket1975/trac_1975-points-mod-N.patch) by cremona created at 2010-05-05 19:27:05\n\nApplies to 4.4.1",
+    "body": "Attachment [trac_1975-points-mod-N.patch](tarball://root/attachments/some-uuid/ticket1975/trac_1975-points-mod-N.patch) by @JohnCremona created at 2010-05-05 19:27:05\n\nApplies to 4.4.1",
     "created_at": "2010-05-05T19:27:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1975#issuecomment-12801",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_1975-points-mod-N.patch](tarball://root/attachments/some-uuid/ticket1975/trac_1975-points-mod-N.patch) by cremona created at 2010-05-05 19:27:05
+Attachment [trac_1975-points-mod-N.patch](tarball://root/attachments/some-uuid/ticket1975/trac_1975-points-mod-N.patch) by @JohnCremona created at 2010-05-05 19:27:05
 
 Applies to 4.4.1
 
@@ -192,7 +192,7 @@ archive/issue_comments_012802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1975#issuecomment-12802",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_012803.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1975#issuecomment-12803",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_012804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1975#issuecomment-12804",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_012805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1975#issuecomment-12805",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_012806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1975#issuecomment-12806",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_012807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1975#issuecomment-12807",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_012808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1975#issuecomment-12808",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_012809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1975#issuecomment-12809",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -349,7 +349,7 @@ archive/issue_comments_012810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1975#issuecomment-12810",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -367,7 +367,7 @@ archive/issue_comments_012811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1975#issuecomment-12811",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

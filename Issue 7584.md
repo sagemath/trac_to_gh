@@ -14,7 +14,7 @@ archive/issues_007584.json:
     "title": "Pari spkg: remove junk file pari-2.3.3.p5.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7584",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 Assignee: tbd
@@ -51,7 +51,7 @@ archive/issue_comments_064648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7584",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7584#issuecomment-64648",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_064649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7584",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7584#issuecomment-64649",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

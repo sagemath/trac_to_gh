@@ -3,7 +3,7 @@
 archive/issues_004142.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nAs discussed in http://groups.google.com/group/sage-devel/browse_thread/thread/7afc9f414413906 , some limits are not evaluated correctly:\n\n\n```\nsage: f = sqrt(1-x^2)\nsage: g = diff(f, x); g\n-x/sqrt(1 - x^2)\nsage: limit(g, x=1, dir='below')\n+Infinity\n```\n\n\nThe last command should give -Infinity, of course, since `f` is a semicircle. At the other endpoint, the limit is correct (+Infinity). \n\nIssue created by migration from https://trac.sagemath.org/ticket/4142\n\n",
+    "body": "Assignee: @burcin\n\nAs discussed in http://groups.google.com/group/sage-devel/browse_thread/thread/7afc9f414413906 , some limits are not evaluated correctly:\n\n\n```\nsage: f = sqrt(1-x^2)\nsage: g = diff(f, x); g\n-x/sqrt(1 - x^2)\nsage: limit(g, x=1, dir='below')\n+Infinity\n```\n\n\nThe last command should give -Infinity, of course, since `f` is a semicircle. At the other endpoint, the limit is correct (+Infinity). \n\nIssue created by migration from https://trac.sagemath.org/ticket/4142\n\n",
     "created_at": "2008-09-18T06:14:18Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_004142.json:
     "title": "limit bug: should be -Infinity, but gives +Infinity",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4142",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 As discussed in http://groups.google.com/group/sage-devel/browse_thread/thread/7afc9f414413906 , some limits are not evaluated correctly:
 
@@ -49,7 +49,7 @@ archive/issue_comments_030073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4142#issuecomment-30073",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_030074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4142#issuecomment-30074",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_030075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4142#issuecomment-30075",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_030076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4142#issuecomment-30076",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_030077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4142#issuecomment-30077",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_030078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4142#issuecomment-30078",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -170,16 +170,16 @@ Based on 4.3.alpha1
 archive/issue_comments_030079.json:
 ```json
 {
-    "body": "Attachment [trac_4142-limit-sqrt.patch](tarball://root/attachments/some-uuid/ticket4142/trac_4142-limit-sqrt.patch) by ddrake created at 2009-12-23 08:12:20\n\nThe spkg and patch at #7745 fix this problem, and the doctest passes. Positive review; this can be merged as soon as #7745 is in.",
+    "body": "Attachment [trac_4142-limit-sqrt.patch](tarball://root/attachments/some-uuid/ticket4142/trac_4142-limit-sqrt.patch) by @dandrake created at 2009-12-23 08:12:20\n\nThe spkg and patch at #7745 fix this problem, and the doctest passes. Positive review; this can be merged as soon as #7745 is in.",
     "created_at": "2009-12-23T08:12:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4142#issuecomment-30079",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_4142-limit-sqrt.patch](tarball://root/attachments/some-uuid/ticket4142/trac_4142-limit-sqrt.patch) by ddrake created at 2009-12-23 08:12:20
+Attachment [trac_4142-limit-sqrt.patch](tarball://root/attachments/some-uuid/ticket4142/trac_4142-limit-sqrt.patch) by @dandrake created at 2009-12-23 08:12:20
 
 The spkg and patch at #7745 fix this problem, and the doctest passes. Positive review; this can be merged as soon as #7745 is in.
 
@@ -195,7 +195,7 @@ archive/issue_comments_030080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4142#issuecomment-30080",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_030081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4142#issuecomment-30081",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_004533.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  craigcitro\n\nThere's *tons* of room for optimization for the divisors function in sage/rings/arith.py. This should probably be generalized to do more than integers, with a specialized divisors method on Integer. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4533\n\n",
+    "body": "Assignee: tbd\n\nCC:  @craigcitro\n\nThere's *tons* of room for optimization for the divisors function in sage/rings/arith.py. This should probably be generalized to do more than integers, with a specialized divisors method on Integer. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4533\n\n",
     "created_at": "2008-11-16T08:21:30Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_004533.json:
     "title": "divisors function slow for integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4533",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tbd
 
-CC:  craigcitro
+CC:  @craigcitro
 
 There's *tons* of room for optimization for the divisors function in sage/rings/arith.py. This should probably be generalized to do more than integers, with a specialized divisors method on Integer. 
 
@@ -39,7 +39,7 @@ archive/issue_comments_033762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4533#issuecomment-33762",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_033763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4533#issuecomment-33763",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_033764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4533#issuecomment-33764",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_033766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4533#issuecomment-33766",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_033767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4533#issuecomment-33767",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_033768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4533#issuecomment-33768",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_033769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4533#issuecomment-33769",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_033770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4533#issuecomment-33770",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -414,7 +414,7 @@ archive/issue_comments_033771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4533#issuecomment-33771",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -434,7 +434,7 @@ archive/issue_comments_033772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4533#issuecomment-33772",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -452,7 +452,7 @@ archive/issue_comments_033773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4533#issuecomment-33773",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -472,7 +472,7 @@ archive/issue_comments_033774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4533#issuecomment-33774",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -490,7 +490,7 @@ archive/issue_comments_033775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4533#issuecomment-33775",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -532,16 +532,16 @@ sage: %timeit v = magma_n.Divisors()
 archive/issue_comments_033776.json:
 ```json
 {
-    "body": "Attachment [4533-divisors-final.patch](tarball://root/attachments/some-uuid/ticket4533/4533-divisors-final.patch) by robertwb created at 2008-11-20 23:54:47",
+    "body": "Attachment [4533-divisors-final.patch](tarball://root/attachments/some-uuid/ticket4533/4533-divisors-final.patch) by @robertwb created at 2008-11-20 23:54:47",
     "created_at": "2008-11-20T23:54:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4533#issuecomment-33776",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4533-divisors-final.patch](tarball://root/attachments/some-uuid/ticket4533/4533-divisors-final.patch) by robertwb created at 2008-11-20 23:54:47
+Attachment [4533-divisors-final.patch](tarball://root/attachments/some-uuid/ticket4533/4533-divisors-final.patch) by @robertwb created at 2008-11-20 23:54:47
 
 
 

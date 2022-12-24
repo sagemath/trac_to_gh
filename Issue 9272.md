@@ -14,7 +14,7 @@ archive/issues_009272.json:
     "title": "make -only-optional=... case-insensitive",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9272",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: mvngu
@@ -38,7 +38,7 @@ archive/issue_comments_087326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9272#issuecomment-87326",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -56,7 +56,7 @@ archive/issue_comments_087327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9272#issuecomment-87327",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_087328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9272#issuecomment-87328",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_087329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9272#issuecomment-87329",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -105,16 +105,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_087330.json:
 ```json
 {
-    "body": "Attachment [trac_9272-only-optional-case-insensitive.patch](tarball://root/attachments/some-uuid/ticket9272/trac_9272-only-optional-case-insensitive.patch) by rlm created at 2010-06-20 22:55:27\n\nLooks good to me!",
+    "body": "Attachment [trac_9272-only-optional-case-insensitive.patch](tarball://root/attachments/some-uuid/ticket9272/trac_9272-only-optional-case-insensitive.patch) by @rlmill created at 2010-06-20 22:55:27\n\nLooks good to me!",
     "created_at": "2010-06-20T22:55:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9272#issuecomment-87330",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_9272-only-optional-case-insensitive.patch](tarball://root/attachments/some-uuid/ticket9272/trac_9272-only-optional-case-insensitive.patch) by rlm created at 2010-06-20 22:55:27
+Attachment [trac_9272-only-optional-case-insensitive.patch](tarball://root/attachments/some-uuid/ticket9272/trac_9272-only-optional-case-insensitive.patch) by @rlmill created at 2010-06-20 22:55:27
 
 Looks good to me!
 
@@ -130,7 +130,7 @@ archive/issue_comments_087331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9272#issuecomment-87331",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

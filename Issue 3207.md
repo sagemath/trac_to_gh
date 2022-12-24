@@ -14,7 +14,7 @@ archive/issues_003207.json:
     "title": "upgrade jsmath to version 3.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3207",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3207
 archive/issue_comments_022164.json:
 ```json
 {
-    "body": "Attachment [sage-3207-jsmath-upgrade-to-3.5.patch](tarball://root/attachments/some-uuid/ticket3207/sage-3207-jsmath-upgrade-to-3.5.patch) by jason created at 2008-05-14 22:34:17\n\nApply to the extcode repository",
+    "body": "Attachment [sage-3207-jsmath-upgrade-to-3.5.patch](tarball://root/attachments/some-uuid/ticket3207/sage-3207-jsmath-upgrade-to-3.5.patch) by @jasongrout created at 2008-05-14 22:34:17\n\nApply to the extcode repository",
     "created_at": "2008-05-14T22:34:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3207",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3207#issuecomment-22164",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [sage-3207-jsmath-upgrade-to-3.5.patch](tarball://root/attachments/some-uuid/ticket3207/sage-3207-jsmath-upgrade-to-3.5.patch) by jason created at 2008-05-14 22:34:17
+Attachment [sage-3207-jsmath-upgrade-to-3.5.patch](tarball://root/attachments/some-uuid/ticket3207/sage-3207-jsmath-upgrade-to-3.5.patch) by @jasongrout created at 2008-05-14 22:34:17
 
 Apply to the extcode repository
 
@@ -57,7 +57,7 @@ archive/issue_comments_022165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3207",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3207#issuecomment-22165",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_022166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3207",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3207#issuecomment-22166",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_022170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3207",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3207#issuecomment-22170",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

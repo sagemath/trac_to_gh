@@ -14,7 +14,7 @@ archive/issues_009269.json:
     "title": "clean up #optional tags in sage/graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9269",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: mvngu
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9269
 archive/issue_comments_087303.json:
 ```json
 {
-    "body": "Attachment [trac_9269.patch](tarball://root/attachments/some-uuid/ticket9269/trac_9269.patch) by rlm created at 2010-06-18 22:50:21",
+    "body": "Attachment [trac_9269.patch](tarball://root/attachments/some-uuid/ticket9269/trac_9269.patch) by @rlmill created at 2010-06-18 22:50:21",
     "created_at": "2010-06-18T22:50:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9269#issuecomment-87303",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_9269.patch](tarball://root/attachments/some-uuid/ticket9269/trac_9269.patch) by rlm created at 2010-06-18 22:50:21
+Attachment [trac_9269.patch](tarball://root/attachments/some-uuid/ticket9269/trac_9269.patch) by @rlmill created at 2010-06-18 22:50:21
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_087304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9269#issuecomment-87304",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -70,16 +70,16 @@ Changing status from new to needs_review.
 archive/issue_comments_087305.json:
 ```json
 {
-    "body": "Attachment [trac_9269-part2.patch](tarball://root/attachments/some-uuid/ticket9269/trac_9269-part2.patch) by jhpalmieri created at 2010-06-19 18:12:19\n\nWhy has CPLEX been removed from some tags and not others?",
+    "body": "Attachment [trac_9269-part2.patch](tarball://root/attachments/some-uuid/ticket9269/trac_9269-part2.patch) by @jhpalmieri created at 2010-06-19 18:12:19\n\nWhy has CPLEX been removed from some tags and not others?",
     "created_at": "2010-06-19T18:12:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9269#issuecomment-87305",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_9269-part2.patch](tarball://root/attachments/some-uuid/ticket9269/trac_9269-part2.patch) by jhpalmieri created at 2010-06-19 18:12:19
+Attachment [trac_9269-part2.patch](tarball://root/attachments/some-uuid/ticket9269/trac_9269-part2.patch) by @jhpalmieri created at 2010-06-19 18:12:19
 
 Why has CPLEX been removed from some tags and not others?
 
@@ -95,7 +95,7 @@ archive/issue_comments_087306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9269#issuecomment-87306",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_087307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9269#issuecomment-87307",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_087308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9269#issuecomment-87308",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_087309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9269#issuecomment-87309",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_087310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9269#issuecomment-87310",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_087311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9269#issuecomment-87311",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_087312.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9269#issuecomment-87312",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_087313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9269#issuecomment-87313",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_087314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9269#issuecomment-87314",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -310,7 +310,7 @@ archive/issue_comments_087315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9269#issuecomment-87315",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000482.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mvngu kcrisman\n\nHere are some ideas from a user for improving the SAGE tutorial:\n\n* 2nd para of abstract: point reader to the official python tutorial for syntax issues\n* section 5 \"programming\": mention X? and X?? again\n* why doesn't \"print?\" work?  \"attach?\"\n* why does att[tab] give me attr and not \"attach\"?\n* Why does \"time for M in L:\" break. \n* Putting cputime(t) alone by itself in the script doesn't print anything.  Why? (Because you have to put \"print cputime(t)\")\n* In many cases using xrange instead of range can be vastly better\n* nohup sage file.sage > out&   # very useful\n* How to change a .sage file to a .spyx file:\n   1. Profile your file.sage file with %prun -- premature optimization is root of all evil\n   2. Start with file.py instead of file.sage.\n   3. Use \"from sage.all import stuff you need\" at the top\n   4. Consider cdef'ing classes, cdef'ing methods, and cdef'ing variables.\n\nIssue created by migration from https://trac.sagemath.org/ticket/482\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  mvngu @kcrisman\n\nHere are some ideas from a user for improving the SAGE tutorial:\n\n* 2nd para of abstract: point reader to the official python tutorial for syntax issues\n* section 5 \"programming\": mention X? and X?? again\n* why doesn't \"print?\" work?  \"attach?\"\n* why does att[tab] give me attr and not \"attach\"?\n* Why does \"time for M in L:\" break. \n* Putting cputime(t) alone by itself in the script doesn't print anything.  Why? (Because you have to put \"print cputime(t)\")\n* In many cases using xrange instead of range can be vastly better\n* nohup sage file.sage > out&   # very useful\n* How to change a .sage file to a .spyx file:\n   1. Profile your file.sage file with %prun -- premature optimization is root of all evil\n   2. Start with file.py instead of file.sage.\n   3. Use \"from sage.all import stuff you need\" at the top\n   4. Consider cdef'ing classes, cdef'ing methods, and cdef'ing variables.\n\nIssue created by migration from https://trac.sagemath.org/ticket/482\n\n",
     "created_at": "2007-08-23T01:25:54Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_000482.json:
     "title": "ideals for improving the SAGE tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/482",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  mvngu kcrisman
+CC:  mvngu @kcrisman
 
 Here are some ideas from a user for improving the SAGE tutorial:
 
@@ -75,7 +75,7 @@ archive/issue_comments_002407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/482#issuecomment-2407",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_002410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/482#issuecomment-2410",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 

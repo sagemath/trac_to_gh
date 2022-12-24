@@ -14,7 +14,7 @@ archive/issues_003698.json:
     "title": "[with patch; needs review] add multinomial_coefficients and binomial_coefficients to sage.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3698",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3698
 archive/issue_comments_026238.json:
 ```json
 {
-    "body": "Attachment [sage-3698.patch](tarball://root/attachments/some-uuid/ticket3698/sage-3698.patch) by was created at 2008-07-21 21:28:45",
+    "body": "Attachment [sage-3698.patch](tarball://root/attachments/some-uuid/ticket3698/sage-3698.patch) by @williamstein created at 2008-07-21 21:28:45",
     "created_at": "2008-07-21T21:28:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3698#issuecomment-26238",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3698.patch](tarball://root/attachments/some-uuid/ticket3698/sage-3698.patch) by was created at 2008-07-21 21:28:45
+Attachment [sage-3698.patch](tarball://root/attachments/some-uuid/ticket3698/sage-3698.patch) by @williamstein created at 2008-07-21 21:28:45
 
 
 
@@ -65,7 +65,7 @@ archive/issue_comments_026239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3698#issuecomment-26239",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -78,16 +78,16 @@ archive/issue_comments_026239.json:
 archive/issue_comments_026240.json:
 ```json
 {
-    "body": "Attachment [sage-3698-part2.patch](tarball://root/attachments/some-uuid/ticket3698/sage-3698-part2.patch) by was created at 2008-07-21 21:53:54",
+    "body": "Attachment [sage-3698-part2.patch](tarball://root/attachments/some-uuid/ticket3698/sage-3698-part2.patch) by @williamstein created at 2008-07-21 21:53:54",
     "created_at": "2008-07-21T21:53:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3698#issuecomment-26240",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3698-part2.patch](tarball://root/attachments/some-uuid/ticket3698/sage-3698-part2.patch) by was created at 2008-07-21 21:53:54
+Attachment [sage-3698-part2.patch](tarball://root/attachments/some-uuid/ticket3698/sage-3698-part2.patch) by @williamstein created at 2008-07-21 21:53:54
 
 
 
@@ -101,7 +101,7 @@ archive/issue_comments_026241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3698#issuecomment-26241",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

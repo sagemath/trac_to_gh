@@ -3,7 +3,7 @@
 archive/issues_006114.json:
 ```json
 {
-    "body": "Assignee: burcin\n\n\n```\nUpgrading from alpha0 on Fedora 10 failed somehow. I had to remove constants.so\nby hand.\n\n$ rm devel/sage/build/sage/symbolic/constants.so\n\nNow testing.\n\nOn Fedora 9 I'll do a fresh install.\n\n```\n\n\nI (=william) did remove enough constants.* files, which resulted in the above.  I will attach a patch to fix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6114\n\n",
+    "body": "Assignee: @burcin\n\n\n```\nUpgrading from alpha0 on Fedora 10 failed somehow. I had to remove constants.so\nby hand.\n\n$ rm devel/sage/build/sage/symbolic/constants.so\n\nNow testing.\n\nOn Fedora 9 I'll do a fresh install.\n\n```\n\n\nI (=william) did remove enough constants.* files, which resulted in the above.  I will attach a patch to fix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6114\n\n",
     "created_at": "2009-05-21T18:38:31Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_006114.json:
     "title": "symbolics -- fix removal of constants.so",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6114",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 
 ```
@@ -51,7 +51,7 @@ archive/issue_comments_048856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6114#issuecomment-48856",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_048857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6114#issuecomment-48857",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -82,16 +82,16 @@ Craig's sync-build at #5977 gives a cleaner way to do this.
 archive/issue_comments_048858.json:
 ```json
 {
-    "body": "Changing assignee from burcin to mhansen.",
+    "body": "Changing assignee from @burcin to @mwhansen.",
     "created_at": "2009-05-28T02:59:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6114#issuecomment-48858",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from burcin to mhansen.
+Changing assignee from @burcin to @mwhansen.
 
 
 
@@ -105,7 +105,7 @@ archive/issue_comments_048859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6114#issuecomment-48859",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -118,16 +118,16 @@ Actually, this won't work if there is a stale constants.cpp file sitting around 
 archive/issue_comments_048860.json:
 ```json
 {
-    "body": "Attachment [trac_6114.patch](tarball://root/attachments/some-uuid/ticket6114/trac_6114.patch) by was created at 2009-05-28 08:01:13",
+    "body": "Attachment [trac_6114.patch](tarball://root/attachments/some-uuid/ticket6114/trac_6114.patch) by @williamstein created at 2009-05-28 08:01:13",
     "created_at": "2009-05-28T08:01:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6114#issuecomment-48860",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6114.patch](tarball://root/attachments/some-uuid/ticket6114/trac_6114.patch) by was created at 2009-05-28 08:01:13
+Attachment [trac_6114.patch](tarball://root/attachments/some-uuid/ticket6114/trac_6114.patch) by @williamstein created at 2009-05-28 08:01:13
 
 
 
@@ -141,7 +141,7 @@ archive/issue_comments_048861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6114#issuecomment-48861",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_048862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6114#issuecomment-48862",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

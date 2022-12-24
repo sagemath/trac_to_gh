@@ -14,7 +14,7 @@ archive/issues_001719.json:
     "title": "problems building documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1719",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -119,7 +119,7 @@ archive/issue_comments_010894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1719#issuecomment-10894",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_010895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1719#issuecomment-10895",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -151,16 +151,16 @@ Apply to the doc repository
 archive/issue_comments_010896.json:
 ```json
 {
-    "body": "Attachment [cyrillic-doc.patch](tarball://root/attachments/some-uuid/ticket1719/cyrillic-doc.patch) by jason created at 2008-08-13 14:56:20\n\nBoy, that was easy.  Adding the appropriate package took care of at least this error for me on Ubuntu Hardy.",
+    "body": "Attachment [cyrillic-doc.patch](tarball://root/attachments/some-uuid/ticket1719/cyrillic-doc.patch) by @jasongrout created at 2008-08-13 14:56:20\n\nBoy, that was easy.  Adding the appropriate package took care of at least this error for me on Ubuntu Hardy.",
     "created_at": "2008-08-13T14:56:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1719#issuecomment-10896",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [cyrillic-doc.patch](tarball://root/attachments/some-uuid/ticket1719/cyrillic-doc.patch) by jason created at 2008-08-13 14:56:20
+Attachment [cyrillic-doc.patch](tarball://root/attachments/some-uuid/ticket1719/cyrillic-doc.patch) by @jasongrout created at 2008-08-13 14:56:20
 
 Boy, that was easy.  Adding the appropriate package took care of at least this error for me on Ubuntu Hardy.
 

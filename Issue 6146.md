@@ -14,7 +14,7 @@ archive/issues_006146.json:
     "title": "[with patch, needs review] the detection of SAGE_ROOT in $SAGE_ROOT/sage script should expand symlinks recursively (fix this on systems that do *NOT* support readlink -f)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6146",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -37,7 +37,7 @@ archive/issue_comments_049060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6146#issuecomment-49060",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -50,16 +50,16 @@ test implementation of realpath in bash for systems which don't support realpath
 archive/issue_comments_049061.json:
 ```json
 {
-    "body": "Attachment [sage-realpath-test.tar.gz](tarball://root/attachments/some-uuid/ticket6146/sage-realpath-test.tar.gz) by tornaria created at 2009-07-02 00:09:49\n\nI've attached a proof-of-concept of a bash script which correctly computes the SAGE_ROOT as a fully canonicalized path. This is a tarball which includes the script itself, and a bunch of symlinks to the same script in different configurations, plus a test script which shows the result of the computation of SAGE_ROOT in the different cases.\n\nTo test, untar, `cd sage-realpath-test` and run `./test`. Sample output:\n\n```\n==========================================================\nThe following lines of output should all be identical, and\npoint to the canonicalized path of directory sage_root\n==========================================================\n\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\n```\n\nThis is a correct run, because all the runs gave the same canonical path (which is the correct canonical path).\n\nThe script uses `realpath`, then `readlink -f`, and fall back to a bash function; but for testing purposes, the fallback to bash function is always tried.\n\nI've successfully tested this on:\n- linux with no realpath, but readlink -f works (my laptop)\n- linux with realpath (sage.math)\n- mac with fink (which supports readlink -f)\n- mac with fink disabled (remove it from path)\n- t2 (trying this found out some gnuisms or non-sunisms which I had to fix)\n\nMaybe somebody can try this on the build farm to check that it is safe... Assuming what we really want is for SAGE_ROOT to be the fully canonicalized path (see the last comments in #5852).\n\nBTW, this already gives an absolute path, so there would be no need to `cd $SAGE_ROOT` here and `cd $CUR` back in sage-sage (ugly hack).",
+    "body": "Attachment [sage-realpath-test.tar.gz](tarball://root/attachments/some-uuid/ticket6146/sage-realpath-test.tar.gz) by @tornaria created at 2009-07-02 00:09:49\n\nI've attached a proof-of-concept of a bash script which correctly computes the SAGE_ROOT as a fully canonicalized path. This is a tarball which includes the script itself, and a bunch of symlinks to the same script in different configurations, plus a test script which shows the result of the computation of SAGE_ROOT in the different cases.\n\nTo test, untar, `cd sage-realpath-test` and run `./test`. Sample output:\n\n```\n==========================================================\nThe following lines of output should all be identical, and\npoint to the canonicalized path of directory sage_root\n==========================================================\n\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\nSAGE_ROOT:/home/tornaria/sage-realpath-test/sage_root:\n```\n\nThis is a correct run, because all the runs gave the same canonical path (which is the correct canonical path).\n\nThe script uses `realpath`, then `readlink -f`, and fall back to a bash function; but for testing purposes, the fallback to bash function is always tried.\n\nI've successfully tested this on:\n- linux with no realpath, but readlink -f works (my laptop)\n- linux with realpath (sage.math)\n- mac with fink (which supports readlink -f)\n- mac with fink disabled (remove it from path)\n- t2 (trying this found out some gnuisms or non-sunisms which I had to fix)\n\nMaybe somebody can try this on the build farm to check that it is safe... Assuming what we really want is for SAGE_ROOT to be the fully canonicalized path (see the last comments in #5852).\n\nBTW, this already gives an absolute path, so there would be no need to `cd $SAGE_ROOT` here and `cd $CUR` back in sage-sage (ugly hack).",
     "created_at": "2009-07-02T00:09:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6146#issuecomment-49061",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
-Attachment [sage-realpath-test.tar.gz](tarball://root/attachments/some-uuid/ticket6146/sage-realpath-test.tar.gz) by tornaria created at 2009-07-02 00:09:49
+Attachment [sage-realpath-test.tar.gz](tarball://root/attachments/some-uuid/ticket6146/sage-realpath-test.tar.gz) by @tornaria created at 2009-07-02 00:09:49
 
 I've attached a proof-of-concept of a bash script which correctly computes the SAGE_ROOT as a fully canonicalized path. This is a tarball which includes the script itself, and a bunch of symlinks to the same script in different configurations, plus a test script which shows the result of the computation of SAGE_ROOT in the different cases.
 
@@ -122,7 +122,7 @@ archive/issue_comments_049062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6146#issuecomment-49062",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_049063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6146#issuecomment-49063",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_049064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6146#issuecomment-49064",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_049065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6146#issuecomment-49065",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_049066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6146#issuecomment-49066",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 

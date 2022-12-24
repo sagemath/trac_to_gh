@@ -3,7 +3,7 @@
 archive/issues_008787.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  schilly\n\nAmazingly, openssl released version *1.0*! Let's upgrade to this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8787\n\n",
+    "body": "Assignee: tbd\n\nCC:  @haraldschilly\n\nAmazingly, openssl released version *1.0*! Let's upgrade to this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8787\n\n",
     "created_at": "2010-04-27T23:02:19Z",
     "labels": [
         "packages: optional",
@@ -14,12 +14,12 @@ archive/issues_008787.json:
     "title": "upgrade the openssl optional spkg to version 1.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8787",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
 
-CC:  schilly
+CC:  @haraldschilly
 
 Amazingly, openssl released version *1.0*! Let's upgrade to this.
 
@@ -39,7 +39,7 @@ archive/issue_comments_080454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8787#issuecomment-80454",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_080455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8787#issuecomment-80455",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_080458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8787#issuecomment-80458",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_080461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8787#issuecomment-80461",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_080462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8787#issuecomment-80462",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -307,7 +307,7 @@ archive/issue_comments_080465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8787#issuecomment-80465",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

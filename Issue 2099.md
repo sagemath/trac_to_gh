@@ -3,7 +3,7 @@
 archive/issues_002099.json:
 ```json
 {
-    "body": "Assignee: ncalexan\n\nCC:  ncalexander@gmail.com\n\nKeywords: sage test doctest multiple parallel\n\nIt would greatly speed testing if `sage-test` doctested multiple files in parallel.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2099\n\n",
+    "body": "Assignee: @ncalexan\n\nCC:  ncalexander@gmail.com\n\nKeywords: sage test doctest multiple parallel\n\nIt would greatly speed testing if `sage-test` doctested multiple files in parallel.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2099\n\n",
     "created_at": "2008-02-08T04:40:23Z",
     "labels": [
         "doctest coverage",
@@ -14,10 +14,10 @@ archive/issues_002099.json:
     "title": "Make sage-test execute multiple doctests in parallel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2099",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: ncalexan
+Assignee: @ncalexan
 
 CC:  ncalexander@gmail.com
 
@@ -41,7 +41,7 @@ archive/issue_comments_013579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2099#issuecomment-13579",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -54,16 +54,16 @@ Mike Abshoff suggested a short document explaining how the current doctesting sy
 archive/issue_comments_013580.json:
 ```json
 {
-    "body": "Attachment [sage-doctesting.tex](tarball://root/attachments/some-uuid/ticket2099/sage-doctesting.tex) by ncalexan created at 2008-02-08 04:42:45",
+    "body": "Attachment [sage-doctesting.tex](tarball://root/attachments/some-uuid/ticket2099/sage-doctesting.tex) by @ncalexan created at 2008-02-08 04:42:45",
     "created_at": "2008-02-08T04:42:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2099#issuecomment-13580",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [sage-doctesting.tex](tarball://root/attachments/some-uuid/ticket2099/sage-doctesting.tex) by ncalexan created at 2008-02-08 04:42:45
+Attachment [sage-doctesting.tex](tarball://root/attachments/some-uuid/ticket2099/sage-doctesting.tex) by @ncalexan created at 2008-02-08 04:42:45
 
 
 
@@ -72,16 +72,16 @@ Attachment [sage-doctesting.tex](tarball://root/attachments/some-uuid/ticket2099
 archive/issue_comments_013581.json:
 ```json
 {
-    "body": "Attachment [ncalexan-parallel-testing-1.hg](tarball://root/attachments/some-uuid/ticket2099/ncalexan-parallel-testing-1.hg) by ncalexan created at 2008-02-09 02:36:00",
+    "body": "Attachment [ncalexan-parallel-testing-1.hg](tarball://root/attachments/some-uuid/ticket2099/ncalexan-parallel-testing-1.hg) by @ncalexan created at 2008-02-09 02:36:00",
     "created_at": "2008-02-09T02:36:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2099#issuecomment-13581",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [ncalexan-parallel-testing-1.hg](tarball://root/attachments/some-uuid/ticket2099/ncalexan-parallel-testing-1.hg) by ncalexan created at 2008-02-09 02:36:00
+Attachment [ncalexan-parallel-testing-1.hg](tarball://root/attachments/some-uuid/ticket2099/ncalexan-parallel-testing-1.hg) by @ncalexan created at 2008-02-09 02:36:00
 
 
 
@@ -95,7 +95,7 @@ archive/issue_comments_013582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2099#issuecomment-13582",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -108,16 +108,16 @@ The patch `ncalexan-parallel-testing-1.hg` applies to `hg_scripts` in `local/bin
 archive/issue_comments_013583.json:
 ```json
 {
-    "body": "Attachment [2099-ncalexan-parallel-testing-2.hg](tarball://root/attachments/some-uuid/ticket2099/2099-ncalexan-parallel-testing-2.hg) by ncalexan created at 2008-02-10 11:05:16",
+    "body": "Attachment [2099-ncalexan-parallel-testing-2.hg](tarball://root/attachments/some-uuid/ticket2099/2099-ncalexan-parallel-testing-2.hg) by @ncalexan created at 2008-02-10 11:05:16",
     "created_at": "2008-02-10T11:05:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2099#issuecomment-13583",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [2099-ncalexan-parallel-testing-2.hg](tarball://root/attachments/some-uuid/ticket2099/2099-ncalexan-parallel-testing-2.hg) by ncalexan created at 2008-02-10 11:05:16
+Attachment [2099-ncalexan-parallel-testing-2.hg](tarball://root/attachments/some-uuid/ticket2099/2099-ncalexan-parallel-testing-2.hg) by @ncalexan created at 2008-02-10 11:05:16
 
 
 
@@ -131,7 +131,7 @@ archive/issue_comments_013584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2099#issuecomment-13584",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -150,16 +150,16 @@ Output is not yet collated.  Timeouts are not yet implemented.
 archive/issue_comments_013585.json:
 ```json
 {
-    "body": "Attachment [2099-ncalexan-parallel-testing-3.hg](tarball://root/attachments/some-uuid/ticket2099/2099-ncalexan-parallel-testing-3.hg) by ncalexan created at 2008-02-15 01:36:35\n\n`2099-ncalexan-parallel-testing-3.hg` should not depend on earlier bundles.\n\nThis is a work in progress bundle that adds\n* working per-test timeouts\n* parsing SAGE_DOCTEST_OPTIONAL, _LONG, _TIMEOUT from the environment\n* output via -o OUTFILE\n* improves handling of sage-doctest crashing\n\n\n```\n[5:25pm] ncalexan: mabshoff: I have parallel testing with output and timeout working, or mostly working.\n[5:25pm] mabshoff: ncalexan: cool\n[5:26pm] ncalexan: mabshoff: I can't think of a way to get partial output correct.  You can display it while it comes, but if you don't wait until the entire test is done, you won't get the sorted output.\n[5:26pm] ncalexan: I'll post another bundle.\n[5:26pm] ncalexan: Use -v for verbose, -q for quiet, -o OUTFILE.\n[5:26pm] ncalexan: (All to sage-test or sage -t)\n```\n",
+    "body": "Attachment [2099-ncalexan-parallel-testing-3.hg](tarball://root/attachments/some-uuid/ticket2099/2099-ncalexan-parallel-testing-3.hg) by @ncalexan created at 2008-02-15 01:36:35\n\n`2099-ncalexan-parallel-testing-3.hg` should not depend on earlier bundles.\n\nThis is a work in progress bundle that adds\n* working per-test timeouts\n* parsing SAGE_DOCTEST_OPTIONAL, _LONG, _TIMEOUT from the environment\n* output via -o OUTFILE\n* improves handling of sage-doctest crashing\n\n\n```\n[5:25pm] ncalexan: mabshoff: I have parallel testing with output and timeout working, or mostly working.\n[5:25pm] mabshoff: ncalexan: cool\n[5:26pm] ncalexan: mabshoff: I can't think of a way to get partial output correct.  You can display it while it comes, but if you don't wait until the entire test is done, you won't get the sorted output.\n[5:26pm] ncalexan: I'll post another bundle.\n[5:26pm] ncalexan: Use -v for verbose, -q for quiet, -o OUTFILE.\n[5:26pm] ncalexan: (All to sage-test or sage -t)\n```\n",
     "created_at": "2008-02-15T01:36:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2099#issuecomment-13585",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [2099-ncalexan-parallel-testing-3.hg](tarball://root/attachments/some-uuid/ticket2099/2099-ncalexan-parallel-testing-3.hg) by ncalexan created at 2008-02-15 01:36:35
+Attachment [2099-ncalexan-parallel-testing-3.hg](tarball://root/attachments/some-uuid/ticket2099/2099-ncalexan-parallel-testing-3.hg) by @ncalexan created at 2008-02-15 01:36:35
 
 `2099-ncalexan-parallel-testing-3.hg` should not depend on earlier bundles.
 
@@ -192,7 +192,7 @@ archive/issue_comments_013586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2099#issuecomment-13586",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -205,16 +205,16 @@ Changing status from new to assigned.
 archive/issue_comments_013587.json:
 ```json
 {
-    "body": "Changing assignee from ncalexan to gfurnish.",
+    "body": "Changing assignee from @ncalexan to @garyfurnish.",
     "created_at": "2008-03-02T23:05:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2099#issuecomment-13587",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from ncalexan to gfurnish.
+Changing assignee from @ncalexan to @garyfurnish.
 
 
 
@@ -228,7 +228,7 @@ archive/issue_comments_013588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2099#issuecomment-13588",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_013589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2099#issuecomment-13589",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

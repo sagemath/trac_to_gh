@@ -3,7 +3,7 @@
 archive/issues_009682.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  hivert\n\neverything is in the title\n\n[[[\nsage: PerfectMatching(6)\n...\nNameError: global name 'sage' is not defined\n]]]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9682\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  @hivert\n\neverything is in the title\n\n[[[\nsage: PerfectMatching(6)\n...\nNameError: global name 'sage' is not defined\n]]]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9682\n\n",
     "created_at": "2010-08-04T03:59:47Z",
     "labels": [
         "combinatorics",
@@ -19,7 +19,7 @@ archive/issues_009682.json:
 ```
 Assignee: sage-combinat
 
-CC:  hivert
+CC:  @hivert
 
 everything is in the title
 
@@ -76,16 +76,16 @@ Changing status from new to needs_review.
 archive/issue_comments_094125.json:
 ```json
 {
-    "body": "Attachment [trac_9682_fix_perfectmatching_error_message_vf.patch](tarball://root/attachments/some-uuid/ticket9682/trac_9682_fix_perfectmatching_error_message_vf.patch) by hivert created at 2010-08-04 05:23:31\n\nPatch good to go !",
+    "body": "Attachment [trac_9682_fix_perfectmatching_error_message_vf.patch](tarball://root/attachments/some-uuid/ticket9682/trac_9682_fix_perfectmatching_error_message_vf.patch) by @hivert created at 2010-08-04 05:23:31\n\nPatch good to go !",
     "created_at": "2010-08-04T05:23:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9682#issuecomment-94125",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_9682_fix_perfectmatching_error_message_vf.patch](tarball://root/attachments/some-uuid/ticket9682/trac_9682_fix_perfectmatching_error_message_vf.patch) by hivert created at 2010-08-04 05:23:31
+Attachment [trac_9682_fix_perfectmatching_error_message_vf.patch](tarball://root/attachments/some-uuid/ticket9682/trac_9682_fix_perfectmatching_error_message_vf.patch) by @hivert created at 2010-08-04 05:23:31
 
 Patch good to go !
 
@@ -101,7 +101,7 @@ archive/issue_comments_094126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9682#issuecomment-94126",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_094127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9682#issuecomment-94127",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_094128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9682#issuecomment-94128",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_094129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9682#issuecomment-94129",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_094130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9682#issuecomment-94130",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

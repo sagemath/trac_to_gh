@@ -3,7 +3,7 @@
 archive/issues_002353.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  malb\n\nIt seems that the constructors `PolynomialRing` and `MPolynomialRing` are actually the same function.\n\nsage.rings.polynomial.multi_polynomial_ring imports `PolynomialRing` as `MPolynomialRing`, and this gets imported into global scope.\n\nKeeping to the python mantra \"there is only one way to do it\", the alias `MPolynomialRing` should be removed.\n\nSee ticket:2000 about this issue as well, though I don't see creating multivariate polynomial rings with only 1 variable as a valid use case to keep `MPolynomialRing`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2353\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @malb\n\nIt seems that the constructors `PolynomialRing` and `MPolynomialRing` are actually the same function.\n\nsage.rings.polynomial.multi_polynomial_ring imports `PolynomialRing` as `MPolynomialRing`, and this gets imported into global scope.\n\nKeeping to the python mantra \"there is only one way to do it\", the alias `MPolynomialRing` should be removed.\n\nSee ticket:2000 about this issue as well, though I don't see creating multivariate polynomial rings with only 1 variable as a valid use case to keep `MPolynomialRing`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2353\n\n",
     "created_at": "2008-02-29T10:02:59Z",
     "labels": [
         "user interface",
@@ -14,12 +14,12 @@ archive/issues_002353.json:
     "title": "MPolynomialRing should be deprecated",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2353",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  malb
+CC:  @malb
 
 It seems that the constructors `PolynomialRing` and `MPolynomialRing` are actually the same function.
 
@@ -45,7 +45,7 @@ archive/issue_comments_015818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2353#issuecomment-15818",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_015819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2353#issuecomment-15819",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -89,16 +89,16 @@ add deprecation notice to MPolynomialRing, change doctests
 archive/issue_comments_015820.json:
 ```json
 {
-    "body": "Attachment [2353_deprecate_MPolynomialRing.patch](tarball://root/attachments/some-uuid/ticket2353/2353_deprecate_MPolynomialRing.patch) by burcin created at 2008-05-11 02:03:46\n\ndocumentation changes",
+    "body": "Attachment [2353_deprecate_MPolynomialRing.patch](tarball://root/attachments/some-uuid/ticket2353/2353_deprecate_MPolynomialRing.patch) by @burcin created at 2008-05-11 02:03:46\n\ndocumentation changes",
     "created_at": "2008-05-11T02:03:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2353#issuecomment-15820",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [2353_deprecate_MPolynomialRing.patch](tarball://root/attachments/some-uuid/ticket2353/2353_deprecate_MPolynomialRing.patch) by burcin created at 2008-05-11 02:03:46
+Attachment [2353_deprecate_MPolynomialRing.patch](tarball://root/attachments/some-uuid/ticket2353/2353_deprecate_MPolynomialRing.patch) by @burcin created at 2008-05-11 02:03:46
 
 documentation changes
 
@@ -109,16 +109,16 @@ documentation changes
 archive/issue_comments_015821.json:
 ```json
 {
-    "body": "Changing assignee from was to burcin.",
+    "body": "Changing assignee from @williamstein to @burcin.",
     "created_at": "2008-05-11T02:17:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2353#issuecomment-15821",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Changing assignee from was to burcin.
+Changing assignee from @williamstein to @burcin.
 
 
 
@@ -132,7 +132,7 @@ archive/issue_comments_015822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2353#issuecomment-15822",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -145,16 +145,16 @@ Changing status from new to assigned.
 archive/issue_comments_015823.json:
 ```json
 {
-    "body": "Attachment [2353_deprecate_MPolynomialRing-doc_changes.patch](tarball://root/attachments/some-uuid/ticket2353/2353_deprecate_MPolynomialRing-doc_changes.patch) by burcin created at 2008-05-11 02:17:44\n\nattachment:2353_deprecate_MPolynomialRing.patch adds a deprecation notice to `MPolynomialRing` using Python's `warnings` module. It also prepends the docstring for `PolynomialRing` with the text:\n\n```\n    This function is deprecated and will be removed in a future version of\n    Sage. Please use PolynomialRing instead.\n\n    If you have questions regarding this function and it's replacement,\n    please send your comments to sage-support@googlegroups.com.\n```\n\n\nattachment:2353_deprecate_MPolynomialRing-doc_changes.patch replaces occurences of `MPolynomialRing` in the documentation with `PolynomialRing`. I don't know why the file `commontex/patchlevel.tex` appears in this patch.",
+    "body": "Attachment [2353_deprecate_MPolynomialRing-doc_changes.patch](tarball://root/attachments/some-uuid/ticket2353/2353_deprecate_MPolynomialRing-doc_changes.patch) by @burcin created at 2008-05-11 02:17:44\n\nattachment:2353_deprecate_MPolynomialRing.patch adds a deprecation notice to `MPolynomialRing` using Python's `warnings` module. It also prepends the docstring for `PolynomialRing` with the text:\n\n```\n    This function is deprecated and will be removed in a future version of\n    Sage. Please use PolynomialRing instead.\n\n    If you have questions regarding this function and it's replacement,\n    please send your comments to sage-support@googlegroups.com.\n```\n\n\nattachment:2353_deprecate_MPolynomialRing-doc_changes.patch replaces occurences of `MPolynomialRing` in the documentation with `PolynomialRing`. I don't know why the file `commontex/patchlevel.tex` appears in this patch.",
     "created_at": "2008-05-11T02:17:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2353#issuecomment-15823",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [2353_deprecate_MPolynomialRing-doc_changes.patch](tarball://root/attachments/some-uuid/ticket2353/2353_deprecate_MPolynomialRing-doc_changes.patch) by burcin created at 2008-05-11 02:17:44
+Attachment [2353_deprecate_MPolynomialRing-doc_changes.patch](tarball://root/attachments/some-uuid/ticket2353/2353_deprecate_MPolynomialRing-doc_changes.patch) by @burcin created at 2008-05-11 02:17:44
 
 attachment:2353_deprecate_MPolynomialRing.patch adds a deprecation notice to `MPolynomialRing` using Python's `warnings` module. It also prepends the docstring for `PolynomialRing` with the text:
 
@@ -181,7 +181,7 @@ archive/issue_comments_015824.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2353#issuecomment-15824",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

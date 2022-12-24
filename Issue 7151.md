@@ -3,7 +3,7 @@
 archive/issues_007151.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nCC:  wdj mhansen\n\nKeywords: group quaternion\n\nIt is easy to create most of the small groups (n < 16) as permutation groups with existing constructions.  This is one group that is \"missing\" - the non-abelian, non-dihedral group of order 8.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7151\n\n",
+    "body": "Assignee: joyner\n\nCC:  @wdjoyner @mwhansen\n\nKeywords: group quaternion\n\nIt is easy to create most of the small groups (n < 16) as permutation groups with existing constructions.  This is one group that is \"missing\" - the non-abelian, non-dihedral group of order 8.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7151\n\n",
     "created_at": "2009-10-08T05:49:18Z",
     "labels": [
         "group theory",
@@ -14,12 +14,12 @@ archive/issues_007151.json:
     "title": "Add the quaternion group to the named permutation groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7151",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 Assignee: joyner
 
-CC:  wdj mhansen
+CC:  @wdjoyner @mwhansen
 
 Keywords: group quaternion
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7151
 archive/issue_comments_059246.json:
 ```json
 {
-    "body": "Attachment [trac_7151_quaternion_group.patch](tarball://root/attachments/some-uuid/ticket7151/trac_7151_quaternion_group.patch) by rbeezer created at 2009-10-08 05:56:40",
+    "body": "Attachment [trac_7151_quaternion_group.patch](tarball://root/attachments/some-uuid/ticket7151/trac_7151_quaternion_group.patch) by @rbeezer created at 2009-10-08 05:56:40",
     "created_at": "2009-10-08T05:56:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7151#issuecomment-59246",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_7151_quaternion_group.patch](tarball://root/attachments/some-uuid/ticket7151/trac_7151_quaternion_group.patch) by rbeezer created at 2009-10-08 05:56:40
+Attachment [trac_7151_quaternion_group.patch](tarball://root/attachments/some-uuid/ticket7151/trac_7151_quaternion_group.patch) by @rbeezer created at 2009-10-08 05:56:40
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_059247.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7151#issuecomment-59247",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_059248.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7151#issuecomment-59248",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_059249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7151#issuecomment-59249",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_059250.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7151#issuecomment-59250",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_059251.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7151#issuecomment-59251",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_059252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7151#issuecomment-59252",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_059253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7151#issuecomment-59253",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

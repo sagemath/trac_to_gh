@@ -3,7 +3,7 @@
 archive/issues_001867.json:
 ```json
 {
-    "body": "Assignee: malb\n\nThere is a standard algorithm to factor polynomials over a non-prime field that reduces the problem to factoring over a prime field and using gcd over the non-prime field.  It seems that gcd works fine over non-prime fields in Singular, as does factoring over prime fields, so this should work for us.   Probably singular doesn't do this because either it is slower or it is too much of a pain to implement in Singular (which isn't much of a language), or maybe they just don't care about this problem.\n\nAnyway, to start this off, here is a sample session that illustrates the idea:\n\n```\nsage: k.<a> = GF(9)\nsage: R.<x,y> = PolynomialRing(k)\nsage: f = (x-a)*(y-a)\nsage: f.factor()\nTraceback (most recent call last):\n...\nNotImplementedError: factorization of multivariate polynomials over non-prime fields explicitly disabled due to bugs in Singular\nsage: singular(f)\nsage: x*y+(-a)*x+(-a)*y+(a+1)\nx*y + ( - a)*x + ( - a)*y + (a + 1)\nsage: singular(f).factorH()\n[1]:\n   _[1]=1\n   _[2]=x*y+(-a)*x+(-a)*y+(a+1)\n[2]:\n   1,1\nsage: g = f*(x-a^3)*(y-a^3); g\nx^2*y^2 - x^2*y - x*y^2 - x^2 + x*y - y^2 + x + y + 1\nsage: gg = GF(3)['x,y'](repr(g))    # why doesn't change ring or coerce work\nsage: F = gg.factor()\nsage: factor1 = R(F[0][0])\nsage: factor2 = R(F[1][0])\nsage: factor1.gcd(f)\n(a)*y + ( - a - 1)\nsage: factor2.gcd(f)\n(a)*x + ( - a - 1)\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1867\n\n",
+    "body": "Assignee: @malb\n\nThere is a standard algorithm to factor polynomials over a non-prime field that reduces the problem to factoring over a prime field and using gcd over the non-prime field.  It seems that gcd works fine over non-prime fields in Singular, as does factoring over prime fields, so this should work for us.   Probably singular doesn't do this because either it is slower or it is too much of a pain to implement in Singular (which isn't much of a language), or maybe they just don't care about this problem.\n\nAnyway, to start this off, here is a sample session that illustrates the idea:\n\n```\nsage: k.<a> = GF(9)\nsage: R.<x,y> = PolynomialRing(k)\nsage: f = (x-a)*(y-a)\nsage: f.factor()\nTraceback (most recent call last):\n...\nNotImplementedError: factorization of multivariate polynomials over non-prime fields explicitly disabled due to bugs in Singular\nsage: singular(f)\nsage: x*y+(-a)*x+(-a)*y+(a+1)\nx*y + ( - a)*x + ( - a)*y + (a + 1)\nsage: singular(f).factorH()\n[1]:\n   _[1]=1\n   _[2]=x*y+(-a)*x+(-a)*y+(a+1)\n[2]:\n   1,1\nsage: g = f*(x-a^3)*(y-a^3); g\nx^2*y^2 - x^2*y - x*y^2 - x^2 + x*y - y^2 + x + y + 1\nsage: gg = GF(3)['x,y'](repr(g))    # why doesn't change ring or coerce work\nsage: F = gg.factor()\nsage: factor1 = R(F[0][0])\nsage: factor2 = R(F[1][0])\nsage: factor1.gcd(f)\n(a)*y + ( - a - 1)\nsage: factor2.gcd(f)\n(a)*x + ( - a - 1)\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1867\n\n",
     "created_at": "2008-01-20T16:50:41Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_001867.json:
     "title": "suggested way to fix #1705 -- factoring multivariate polynomials over finite fields is broken in Singular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1867",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 There is a standard algorithm to factor polynomials over a non-prime field that reduces the problem to factoring over a prime field and using gcd over the non-prime field.  It seems that gcd works fine over non-prime fields in Singular, as does factoring over prime fields, so this should work for us.   Probably singular doesn't do this because either it is slower or it is too much of a pain to implement in Singular (which isn't much of a language), or maybe they just don't care about this problem.
 
@@ -70,7 +70,7 @@ archive/issue_comments_011820.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1867#issuecomment-11820",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_011821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1867#issuecomment-11821",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -191,16 +191,16 @@ for i in range(100):
 archive/issue_comments_011822.json:
 ```json
 {
-    "body": "Attachment [trac_1867.patch](tarball://root/attachments/some-uuid/ticket1867/trac_1867.patch) by was created at 2009-01-23 15:51:51",
+    "body": "Attachment [trac_1867.patch](tarball://root/attachments/some-uuid/ticket1867/trac_1867.patch) by @williamstein created at 2009-01-23 15:51:51",
     "created_at": "2009-01-23T15:51:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1867#issuecomment-11822",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_1867.patch](tarball://root/attachments/some-uuid/ticket1867/trac_1867.patch) by was created at 2009-01-23 15:51:51
+Attachment [trac_1867.patch](tarball://root/attachments/some-uuid/ticket1867/trac_1867.patch) by @williamstein created at 2009-01-23 15:51:51
 
 
 
@@ -214,7 +214,7 @@ archive/issue_comments_011823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1867#issuecomment-11823",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -233,16 +233,16 @@ fails a few doctests when I try it because of missing `proof=False` arguments. S
 archive/issue_comments_011824.json:
 ```json
 {
-    "body": "Attachment [trac_1867-part2.patch](tarball://root/attachments/some-uuid/ticket1867/trac_1867-part2.patch) by was created at 2009-01-24 06:43:33\n\nthis fixes the other problems in the doctests",
+    "body": "Attachment [trac_1867-part2.patch](tarball://root/attachments/some-uuid/ticket1867/trac_1867-part2.patch) by @williamstein created at 2009-01-24 06:43:33\n\nthis fixes the other problems in the doctests",
     "created_at": "2009-01-24T06:43:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1867#issuecomment-11824",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_1867-part2.patch](tarball://root/attachments/some-uuid/ticket1867/trac_1867-part2.patch) by was created at 2009-01-24 06:43:33
+Attachment [trac_1867-part2.patch](tarball://root/attachments/some-uuid/ticket1867/trac_1867-part2.patch) by @williamstein created at 2009-01-24 06:43:33
 
 this fixes the other problems in the doctests
 
@@ -258,7 +258,7 @@ archive/issue_comments_011825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1867#issuecomment-11825",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_011826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1867#issuecomment-11826",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 

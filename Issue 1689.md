@@ -113,7 +113,7 @@ archive/issue_comments_010731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1689",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1689#issuecomment-10731",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_010732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1689",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1689#issuecomment-10732",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -162,16 +162,16 @@ this is a modified version of README.txt from sage-3.0.alpha3
 archive/issue_comments_010733.json:
 ```json
 {
-    "body": "Attachment [README.txt](tarball://root/attachments/some-uuid/ticket1689/README.txt) by was created at 2008-04-11 00:08:55\n\nThe \"patch\" is just a new README.txt",
+    "body": "Attachment [README.txt](tarball://root/attachments/some-uuid/ticket1689/README.txt) by @williamstein created at 2008-04-11 00:08:55\n\nThe \"patch\" is just a new README.txt",
     "created_at": "2008-04-11T00:08:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1689",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1689#issuecomment-10733",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [README.txt](tarball://root/attachments/some-uuid/ticket1689/README.txt) by was created at 2008-04-11 00:08:55
+Attachment [README.txt](tarball://root/attachments/some-uuid/ticket1689/README.txt) by @williamstein created at 2008-04-11 00:08:55
 
 The "patch" is just a new README.txt
 

@@ -3,7 +3,7 @@
 archive/issues_008244.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  mvngu jhpalmieri mhansen craigcitro robertwb\n\nLet's fix or suppress these, so that it's easier to identify new problems.\n\nSee the attachment.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8244\n\n",
+    "body": "Assignee: mvngu\n\nCC:  mvngu @jhpalmieri @mwhansen @craigcitro @robertwb\n\nLet's fix or suppress these, so that it's easier to identify new problems.\n\nSee the attachment.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8244\n\n",
     "created_at": "2010-02-11T21:43:46Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_008244.json:
     "title": "Annoying warnings when building the HTML reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8244",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: mvngu
 
-CC:  mvngu jhpalmieri mhansen craigcitro robertwb
+CC:  mvngu @jhpalmieri @mwhansen @craigcitro @robertwb
 
 Let's fix or suppress these, so that it's easier to identify new problems.
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8244
 archive/issue_comments_072895.json:
 ```json
 {
-    "body": "Attachment [refbuild.log](tarball://root/attachments/some-uuid/ticket8244/refbuild.log) by mpatel created at 2010-02-11 21:46:55\n\nHTML reference manual docbuild warnings for 4.3.3.alpha0.  Not a patch.",
+    "body": "Attachment [refbuild.log](tarball://root/attachments/some-uuid/ticket8244/refbuild.log) by @qed777 created at 2010-02-11 21:46:55\n\nHTML reference manual docbuild warnings for 4.3.3.alpha0.  Not a patch.",
     "created_at": "2010-02-11T21:46:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72895",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [refbuild.log](tarball://root/attachments/some-uuid/ticket8244/refbuild.log) by mpatel created at 2010-02-11 21:46:55
+Attachment [refbuild.log](tarball://root/attachments/some-uuid/ticket8244/refbuild.log) by @qed777 created at 2010-02-11 21:46:55
 
 HTML reference manual docbuild warnings for 4.3.3.alpha0.  Not a patch.
 
@@ -61,7 +61,7 @@ archive/issue_comments_072896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72896",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_072897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72897",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_072899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72899",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_072900.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72900",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_072901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72901",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_072902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72902",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_072903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72903",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -314,7 +314,7 @@ archive/issue_comments_072904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72904",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -357,7 +357,7 @@ archive/issue_comments_072905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72905",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -370,16 +370,16 @@ Handle `*.next` methods.  sage repo.
 archive/issue_comments_072906.json:
 ```json
 {
-    "body": "Attachment [trac_8244-slot_wrapper_argspec.patch](tarball://root/attachments/some-uuid/ticket8244/trac_8244-slot_wrapper_argspec.patch) by mpatel created at 2010-02-19 03:29:52\n\nThe attached patch should remove the warnings that end in\n\n```\n.next: arg is not a module, class, method, function, traceback, frame, or code object\n```\n",
+    "body": "Attachment [trac_8244-slot_wrapper_argspec.patch](tarball://root/attachments/some-uuid/ticket8244/trac_8244-slot_wrapper_argspec.patch) by @qed777 created at 2010-02-19 03:29:52\n\nThe attached patch should remove the warnings that end in\n\n```\n.next: arg is not a module, class, method, function, traceback, frame, or code object\n```\n",
     "created_at": "2010-02-19T03:29:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72906",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8244-slot_wrapper_argspec.patch](tarball://root/attachments/some-uuid/ticket8244/trac_8244-slot_wrapper_argspec.patch) by mpatel created at 2010-02-19 03:29:52
+Attachment [trac_8244-slot_wrapper_argspec.patch](tarball://root/attachments/some-uuid/ticket8244/trac_8244-slot_wrapper_argspec.patch) by @qed777 created at 2010-02-19 03:29:52
 
 The attached patch should remove the warnings that end in
 
@@ -400,7 +400,7 @@ archive/issue_comments_072907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72907",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -422,7 +422,7 @@ archive/issue_comments_072908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72908",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -462,7 +462,7 @@ archive/issue_comments_072909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72909",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -475,16 +475,16 @@ My patch also skips `sagenb.notebook.twist.UserToplevel.userchild_download_works
 archive/issue_comments_072910.json:
 ```json
 {
-    "body": "Attachment [trac_8244-conf-autodoc.patch](tarball://root/attachments/some-uuid/ticket8244/trac_8244-conf-autodoc.patch) by jhpalmieri created at 2010-02-19 21:23:27\n\napply on top of other patch",
+    "body": "Attachment [trac_8244-conf-autodoc.patch](tarball://root/attachments/some-uuid/ticket8244/trac_8244-conf-autodoc.patch) by @jhpalmieri created at 2010-02-19 21:23:27\n\napply on top of other patch",
     "created_at": "2010-02-19T21:23:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72910",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8244-conf-autodoc.patch](tarball://root/attachments/some-uuid/ticket8244/trac_8244-conf-autodoc.patch) by jhpalmieri created at 2010-02-19 21:23:27
+Attachment [trac_8244-conf-autodoc.patch](tarball://root/attachments/some-uuid/ticket8244/trac_8244-conf-autodoc.patch) by @jhpalmieri created at 2010-02-19 21:23:27
 
 apply on top of other patch
 
@@ -500,7 +500,7 @@ archive/issue_comments_072911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72911",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -513,16 +513,16 @@ Here's one more patch: this fixes one last warning message about sage.misc.proce
 archive/issue_comments_072912.json:
 ```json
 {
-    "body": "Attachment [trac_8244-sagedoc.patch](tarball://root/attachments/some-uuid/ticket8244/trac_8244-sagedoc.patch) by jhpalmieri created at 2010-02-19 22:21:16\n\napply on top of other patches",
+    "body": "Attachment [trac_8244-sagedoc.patch](tarball://root/attachments/some-uuid/ticket8244/trac_8244-sagedoc.patch) by @jhpalmieri created at 2010-02-19 22:21:16\n\napply on top of other patches",
     "created_at": "2010-02-19T22:21:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72912",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8244-sagedoc.patch](tarball://root/attachments/some-uuid/ticket8244/trac_8244-sagedoc.patch) by jhpalmieri created at 2010-02-19 22:21:16
+Attachment [trac_8244-sagedoc.patch](tarball://root/attachments/some-uuid/ticket8244/trac_8244-sagedoc.patch) by @jhpalmieri created at 2010-02-19 22:21:16
 
 apply on top of other patches
 
@@ -538,7 +538,7 @@ archive/issue_comments_072913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72913",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -567,7 +567,7 @@ archive/issue_comments_072914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72914",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -585,7 +585,7 @@ archive/issue_comments_072915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72915",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -603,7 +603,7 @@ archive/issue_comments_072916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72916",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -616,16 +616,16 @@ Replaces "conf_autodoc" patch.
 archive/issue_comments_072917.json:
 ```json
 {
-    "body": "Attachment [trac_8244-conf-autodoc.2.patch](tarball://root/attachments/some-uuid/ticket8244/trac_8244-conf-autodoc.2.patch) by mpatel created at 2010-02-23 03:29:15\n\nI've attached a replacement for the \"conf-autodoc\" patch that adds all of `autodoc` (as `sage_autodoc`) and, with some redefinition, avoids the `ExtensionError`.\n\nA self-contained `sage_autodoc` should make it less likely that `sage_autodoc` stops working, when we upgrade or test new versions of Sphinx.  (I was just hit by this during experiments with [a development version](http://bitbucket.org/birkenfeld/sphinx/)).\n\nWhat do you think?",
+    "body": "Attachment [trac_8244-conf-autodoc.2.patch](tarball://root/attachments/some-uuid/ticket8244/trac_8244-conf-autodoc.2.patch) by @qed777 created at 2010-02-23 03:29:15\n\nI've attached a replacement for the \"conf-autodoc\" patch that adds all of `autodoc` (as `sage_autodoc`) and, with some redefinition, avoids the `ExtensionError`.\n\nA self-contained `sage_autodoc` should make it less likely that `sage_autodoc` stops working, when we upgrade or test new versions of Sphinx.  (I was just hit by this during experiments with [a development version](http://bitbucket.org/birkenfeld/sphinx/)).\n\nWhat do you think?",
     "created_at": "2010-02-23T03:29:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72917",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8244-conf-autodoc.2.patch](tarball://root/attachments/some-uuid/ticket8244/trac_8244-conf-autodoc.2.patch) by mpatel created at 2010-02-23 03:29:15
+Attachment [trac_8244-conf-autodoc.2.patch](tarball://root/attachments/some-uuid/ticket8244/trac_8244-conf-autodoc.2.patch) by @qed777 created at 2010-02-23 03:29:15
 
 I've attached a replacement for the "conf-autodoc" patch that adds all of `autodoc` (as `sage_autodoc`) and, with some redefinition, avoids the `ExtensionError`.
 
@@ -645,7 +645,7 @@ archive/issue_comments_072918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72918",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

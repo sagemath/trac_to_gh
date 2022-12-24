@@ -3,7 +3,7 @@
 archive/issues_006187.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  mhansen mvngu davidloeffler\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/87a143a395bd1297):\n\n```\n> What does force a complete rebuild is making a new branch with \"sage - \n> clone\". This is annoying; I don't know enough about the build \n> machinery to know if this can be changed. \n\nI agree.  If I have built the docs in the main branch and make a \nclone, it would be great of the docs were clones too, as then we would \nonly need to build the docs once per release. \nI imagine this is easily doable by adapting the clone script.  If \npeople agree, could someone  make a ticket? \n```\n\nNote that the documentation output is copied (because of #5469), but something is still triggering a rebuild.  I don't know enough about Sphinx to know what is causing this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6187\n\n",
+    "body": "Assignee: tba\n\nCC:  @mwhansen mvngu @loefflerd\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/87a143a395bd1297):\n\n```\n> What does force a complete rebuild is making a new branch with \"sage - \n> clone\". This is annoying; I don't know enough about the build \n> machinery to know if this can be changed. \n\nI agree.  If I have built the docs in the main branch and make a \nclone, it would be great of the docs were clones too, as then we would \nonly need to build the docs once per release. \nI imagine this is easily doable by adapting the clone script.  If \npeople agree, could someone  make a ticket? \n```\n\nNote that the documentation output is copied (because of #5469), but something is still triggering a rebuild.  I don't know enough about Sphinx to know what is causing this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6187\n\n",
     "created_at": "2009-06-02T17:00:10Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_006187.json:
     "title": "After making a clone, the reference manual (and other docs) should not have to be completely rebuilt.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6187",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: tba
 
-CC:  mhansen mvngu davidloeffler
+CC:  @mwhansen mvngu @loefflerd
 
 From [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/87a143a395bd1297):
 
@@ -53,7 +53,7 @@ archive/issue_comments_049393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49393",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_049394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49394",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_049395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49395",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_049396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49396",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_049397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49397",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_049398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49398",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -198,16 +198,16 @@ This patch might very well be a bad idea, but I don't know enough about the Sage
 archive/issue_comments_049399.json:
 ```json
 {
-    "body": "Attachment [cloning_scripts.patch](tarball://root/attachments/some-uuid/ticket6187/cloning_scripts.patch) by jhpalmieri created at 2009-06-16 04:14:02\n\nuse this patch or cloning_scripts.patch, but not both -- see my comments",
+    "body": "Attachment [cloning_scripts.patch](tarball://root/attachments/some-uuid/ticket6187/cloning_scripts.patch) by @jhpalmieri created at 2009-06-16 04:14:02\n\nuse this patch or cloning_scripts.patch, but not both -- see my comments",
     "created_at": "2009-06-16T04:14:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49399",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [cloning_scripts.patch](tarball://root/attachments/some-uuid/ticket6187/cloning_scripts.patch) by jhpalmieri created at 2009-06-16 04:14:02
+Attachment [cloning_scripts.patch](tarball://root/attachments/some-uuid/ticket6187/cloning_scripts.patch) by @jhpalmieri created at 2009-06-16 04:14:02
 
 use this patch or cloning_scripts.patch, but not both -- see my comments
 
@@ -218,16 +218,16 @@ use this patch or cloning_scripts.patch, but not both -- see my comments
 archive/issue_comments_049400.json:
 ```json
 {
-    "body": "Attachment [cloning_scripts_short.patch](tarball://root/attachments/some-uuid/ticket6187/cloning_scripts_short.patch) by cremona created at 2009-06-17 14:32:05\n\nI have read the comments here with interest, and could try out those patches, but I'm not qualified to say whether they work \"well\" or are robust enough to be released -- sorry!",
+    "body": "Attachment [cloning_scripts_short.patch](tarball://root/attachments/some-uuid/ticket6187/cloning_scripts_short.patch) by @JohnCremona created at 2009-06-17 14:32:05\n\nI have read the comments here with interest, and could try out those patches, but I'm not qualified to say whether they work \"well\" or are robust enough to be released -- sorry!",
     "created_at": "2009-06-17T14:32:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49400",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [cloning_scripts_short.patch](tarball://root/attachments/some-uuid/ticket6187/cloning_scripts_short.patch) by cremona created at 2009-06-17 14:32:05
+Attachment [cloning_scripts_short.patch](tarball://root/attachments/some-uuid/ticket6187/cloning_scripts_short.patch) by @JohnCremona created at 2009-06-17 14:32:05
 
 I have read the comments here with interest, and could try out those patches, but I'm not qualified to say whether they work "well" or are robust enough to be released -- sorry!
 
@@ -243,7 +243,7 @@ archive/issue_comments_049401.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49401",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_049402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49402",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -274,16 +274,16 @@ rebased against 4.1.alpha1, use instead of either of the other patches
 archive/issue_comments_049403.json:
 ```json
 {
-    "body": "Attachment [cloning_6187_scripts.patch](tarball://root/attachments/some-uuid/ticket6187/cloning_6187_scripts.patch) by cremona created at 2009-06-28 14:24:21\n\nHere's what I did.  1. Starting in main branch of a 4.1.alpha2 build, did \"sage -docbuild all html\" and waited until it finished.  2. Made a clone called test1.  3.  In that clone, did \"sage -docbuild again\" and watched it build all over again.  4. In the clone, applied the third patch.  5. From that clone made a new clone test2.  6. In the new clone once again did \"sage -docbuild all html\" -- and nothing was rebuilt!\n\nThat looks like success to me.  The new script also looks very much simpler than the old one, which is good.\n\nThis is on linux (ubuntu 32-bit);  since you use a standard python utility for the copying I would hope that it would work anywhere, so I'm giving it a positive review and hope that others will try on other systems.",
+    "body": "Attachment [cloning_6187_scripts.patch](tarball://root/attachments/some-uuid/ticket6187/cloning_6187_scripts.patch) by @JohnCremona created at 2009-06-28 14:24:21\n\nHere's what I did.  1. Starting in main branch of a 4.1.alpha2 build, did \"sage -docbuild all html\" and waited until it finished.  2. Made a clone called test1.  3.  In that clone, did \"sage -docbuild again\" and watched it build all over again.  4. In the clone, applied the third patch.  5. From that clone made a new clone test2.  6. In the new clone once again did \"sage -docbuild all html\" -- and nothing was rebuilt!\n\nThat looks like success to me.  The new script also looks very much simpler than the old one, which is good.\n\nThis is on linux (ubuntu 32-bit);  since you use a standard python utility for the copying I would hope that it would work anywhere, so I'm giving it a positive review and hope that others will try on other systems.",
     "created_at": "2009-06-28T14:24:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49403",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [cloning_6187_scripts.patch](tarball://root/attachments/some-uuid/ticket6187/cloning_6187_scripts.patch) by cremona created at 2009-06-28 14:24:21
+Attachment [cloning_6187_scripts.patch](tarball://root/attachments/some-uuid/ticket6187/cloning_6187_scripts.patch) by @JohnCremona created at 2009-06-28 14:24:21
 
 Here's what I did.  1. Starting in main branch of a 4.1.alpha2 build, did "sage -docbuild all html" and waited until it finished.  2. Made a clone called test1.  3.  In that clone, did "sage -docbuild again" and watched it build all over again.  4. In the clone, applied the third patch.  5. From that clone made a new clone test2.  6. In the new clone once again did "sage -docbuild all html" -- and nothing was rebuilt!
 
@@ -303,7 +303,7 @@ archive/issue_comments_049404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49404",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -375,7 +375,7 @@ archive/issue_comments_049405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49405",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -398,16 +398,16 @@ Apply "trac_6187_mpatel.patch" to the sage repository, and apply "trac_6187_new_
 archive/issue_comments_049406.json:
 ```json
 {
-    "body": "Attachment [trac_6187_mpatel.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_mpatel.patch) by mpatel created at 2009-07-01 09:40:21\n\nI noticed an error occurs during cloning if `environment.pickle` doesn't already exist.\n\nI'll try to make a new patch for `builder.py,` after I build 4.1.alpha2.",
+    "body": "Attachment [trac_6187_mpatel.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_mpatel.patch) by @qed777 created at 2009-07-01 09:40:21\n\nI noticed an error occurs during cloning if `environment.pickle` doesn't already exist.\n\nI'll try to make a new patch for `builder.py,` after I build 4.1.alpha2.",
     "created_at": "2009-07-01T09:40:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49406",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6187_mpatel.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_mpatel.patch) by mpatel created at 2009-07-01 09:40:21
+Attachment [trac_6187_mpatel.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_mpatel.patch) by @qed777 created at 2009-07-01 09:40:21
 
 I noticed an error occurs during cloning if `environment.pickle` doesn't already exist.
 
@@ -425,7 +425,7 @@ archive/issue_comments_049407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49407",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -438,16 +438,16 @@ use this and trac_6187_new_scripts.patch only
 archive/issue_comments_049408.json:
 ```json
 {
-    "body": "Attachment [trac_6187_mpatel_v2.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_mpatel_v2.patch) by mpatel created at 2009-07-01 15:18:52\n\nReplying to [comment:12 mpatel]:\n> I noticed an error occurs during cloning if `environment.pickle` doesn't already exist.\n\nThe new patch should now work in this case.\n\nThe pickle's `srcdir` attribute contains what appears to be the only trace of the name of the cloned (i.e., previous) branch.  This can become an issue when branches are renamed or deleted, as Sphinx will throw an OSError.  The new patch now tells Sphinx to use the sym-linked '.../devel/sage/...'\n\n> I'll try to make a new patch for `builder.py,` after I build 4.1.alpha2.\n\nApply [trac_6187_new_scripts.patch] to the scripts repository and [trac_6187_mpatel_v2.patch] to the sage repository.",
+    "body": "Attachment [trac_6187_mpatel_v2.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_mpatel_v2.patch) by @qed777 created at 2009-07-01 15:18:52\n\nReplying to [comment:12 mpatel]:\n> I noticed an error occurs during cloning if `environment.pickle` doesn't already exist.\n\nThe new patch should now work in this case.\n\nThe pickle's `srcdir` attribute contains what appears to be the only trace of the name of the cloned (i.e., previous) branch.  This can become an issue when branches are renamed or deleted, as Sphinx will throw an OSError.  The new patch now tells Sphinx to use the sym-linked '.../devel/sage/...'\n\n> I'll try to make a new patch for `builder.py,` after I build 4.1.alpha2.\n\nApply [trac_6187_new_scripts.patch] to the scripts repository and [trac_6187_mpatel_v2.patch] to the sage repository.",
     "created_at": "2009-07-01T15:18:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49408",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6187_mpatel_v2.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_mpatel_v2.patch) by mpatel created at 2009-07-01 15:18:52
+Attachment [trac_6187_mpatel_v2.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_mpatel_v2.patch) by @qed777 created at 2009-07-01 15:18:52
 
 Replying to [comment:12 mpatel]:
 > I noticed an error occurs during cloning if `environment.pickle` doesn't already exist.
@@ -472,7 +472,7 @@ archive/issue_comments_049409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49409",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -497,16 +497,16 @@ Since it's not actually building anything (is it?), I think this is misleading. 
 archive/issue_comments_049410.json:
 ```json
 {
-    "body": "Attachment [trac_6187_new_scripts.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_new_scripts.patch) by jhpalmieri created at 2009-07-02 22:54:45\n\napply to scripts repo. use this and trac_6187_mpatel_v2.patch only.",
+    "body": "Attachment [trac_6187_new_scripts.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_new_scripts.patch) by @jhpalmieri created at 2009-07-02 22:54:45\n\napply to scripts repo. use this and trac_6187_mpatel_v2.patch only.",
     "created_at": "2009-07-02T22:54:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49410",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_6187_new_scripts.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_new_scripts.patch) by jhpalmieri created at 2009-07-02 22:54:45
+Attachment [trac_6187_new_scripts.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_new_scripts.patch) by @jhpalmieri created at 2009-07-02 22:54:45
 
 apply to scripts repo. use this and trac_6187_mpatel_v2.patch only.
 
@@ -517,16 +517,16 @@ apply to scripts repo. use this and trac_6187_mpatel_v2.patch only.
 archive/issue_comments_049411.json:
 ```json
 {
-    "body": "Attachment [trac_6187_new_scripts_v3.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_new_scripts_v3.patch) by mpatel created at 2009-07-06 11:01:48\n\nApply this to scripts repo and trac_6187_mpatel_v3.patch to sage repo.",
+    "body": "Attachment [trac_6187_new_scripts_v3.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_new_scripts_v3.patch) by @qed777 created at 2009-07-06 11:01:48\n\nApply this to scripts repo and trac_6187_mpatel_v3.patch to sage repo.",
     "created_at": "2009-07-06T11:01:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49411",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6187_new_scripts_v3.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_new_scripts_v3.patch) by mpatel created at 2009-07-06 11:01:48
+Attachment [trac_6187_new_scripts_v3.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_new_scripts_v3.patch) by @qed777 created at 2009-07-06 11:01:48
 
 Apply this to scripts repo and trac_6187_mpatel_v3.patch to sage repo.
 
@@ -542,7 +542,7 @@ archive/issue_comments_049412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49412",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -555,16 +555,16 @@ Apply this to sage repo and trac_6187_new_scripts_v3.patch to scripts repo.
 archive/issue_comments_049413.json:
 ```json
 {
-    "body": "Attachment [trac_6187_mpatel_v3.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_mpatel_v3.patch) by mpatel created at 2009-07-06 11:51:20\n\nI've attached new versions of both patches.  Apply only the `v3` pair to the indicated repositories.  Changes:\n\n* `sage-clone` now copies any existing auto-generated `.rst` files to the new branch, preserving modification times.\n* `builder.py` now updates the pickle first, since otherwise it always regenerates existing `.rst` files after cloning.\n* `jsMath` --> `jsmath` in `sage-clone`.\n\nIt's OK to delete existing auto-generated `.rst` files prior to cloning, as long as `doc/output/doctrees/en/reference/reference.pickle` disappears, too.  The patches don't cover this case, since I think it occurs rarely in practice.  I conjecture that **most** of the time, the `update_mtimes` line doesn't actually build anything, but I've been wrong before.",
+    "body": "Attachment [trac_6187_mpatel_v3.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_mpatel_v3.patch) by @qed777 created at 2009-07-06 11:51:20\n\nI've attached new versions of both patches.  Apply only the `v3` pair to the indicated repositories.  Changes:\n\n* `sage-clone` now copies any existing auto-generated `.rst` files to the new branch, preserving modification times.\n* `builder.py` now updates the pickle first, since otherwise it always regenerates existing `.rst` files after cloning.\n* `jsMath` --> `jsmath` in `sage-clone`.\n\nIt's OK to delete existing auto-generated `.rst` files prior to cloning, as long as `doc/output/doctrees/en/reference/reference.pickle` disappears, too.  The patches don't cover this case, since I think it occurs rarely in practice.  I conjecture that **most** of the time, the `update_mtimes` line doesn't actually build anything, but I've been wrong before.",
     "created_at": "2009-07-06T11:51:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49413",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6187_mpatel_v3.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_mpatel_v3.patch) by mpatel created at 2009-07-06 11:51:20
+Attachment [trac_6187_mpatel_v3.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_mpatel_v3.patch) by @qed777 created at 2009-07-06 11:51:20
 
 I've attached new versions of both patches.  Apply only the `v3` pair to the indicated repositories.  Changes:
 
@@ -586,7 +586,7 @@ archive/issue_comments_049414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49414",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -599,16 +599,16 @@ Adds a document called 'testreference' for testing the reference builder.  It's 
 archive/issue_comments_049415.json:
 ```json
 {
-    "body": "Attachment [trac_6187_testreference.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_testreference.patch) by mpatel created at 2009-07-14 19:22:03\n\nApply to scripts repo.  Apply trac_6187_builder_v4.patch to the sage repo.",
+    "body": "Attachment [trac_6187_testreference.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_testreference.patch) by @qed777 created at 2009-07-14 19:22:03\n\nApply to scripts repo.  Apply trac_6187_builder_v4.patch to the sage repo.",
     "created_at": "2009-07-14T19:22:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49415",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6187_testreference.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_testreference.patch) by mpatel created at 2009-07-14 19:22:03
+Attachment [trac_6187_testreference.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_testreference.patch) by @qed777 created at 2009-07-14 19:22:03
 
 Apply to scripts repo.  Apply trac_6187_builder_v4.patch to the sage repo.
 
@@ -619,16 +619,16 @@ Apply to scripts repo.  Apply trac_6187_builder_v4.patch to the sage repo.
 archive/issue_comments_049416.json:
 ```json
 {
-    "body": "Attachment [trac_6187_new_scripts_v4.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_new_scripts_v4.patch) by mpatel created at 2009-07-14 19:22:42\n\nApply to sage repo.  Apply trac_6187_new_scripts_v4.patch to the scripts repo.",
+    "body": "Attachment [trac_6187_new_scripts_v4.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_new_scripts_v4.patch) by @qed777 created at 2009-07-14 19:22:42\n\nApply to sage repo.  Apply trac_6187_new_scripts_v4.patch to the scripts repo.",
     "created_at": "2009-07-14T19:22:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49416",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6187_new_scripts_v4.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_new_scripts_v4.patch) by mpatel created at 2009-07-14 19:22:42
+Attachment [trac_6187_new_scripts_v4.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_new_scripts_v4.patch) by @qed777 created at 2009-07-14 19:22:42
 
 Apply to sage repo.  Apply trac_6187_new_scripts_v4.patch to the scripts repo.
 
@@ -639,16 +639,16 @@ Apply to sage repo.  Apply trac_6187_new_scripts_v4.patch to the scripts repo.
 archive/issue_comments_049417.json:
 ```json
 {
-    "body": "Attachment [trac_6187_builder_v4.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_builder_v4.patch) by mpatel created at 2009-07-14 20:23:59\n\nApply only the v4 pair to the appropriate repositories.  The `testreference` patch just adds a non-trivial test document that should build quickly.  It may give an indication, at least, of the behavior to expect when building the full reference manual.\n\nChanges in v4:\n* Reordering of some code and somewhat better case / exception handling in the reference builder.\n* First steps with Python's [logging](http://docs.python.org/library/logging.html) framework.  It's powerful and easy to use, at least inside one module.  One of Sphinx's utility modules colorizes some of the output.\n* More aggressive use of Python's [optparse](http://docs.python.org/library/optparse.html) module, in order to provide several new command-line options (cf. #6488).  The previous syntax should still work, however.\n* `sage-clone` should now be compatible with #6512. `--update_mtimes` is now `--update-mtimes`.\n\nI've focused on the reference manual, but I hope the new pieces make it easier to improve the docbuild system for the other documents, too.  Feel free to make constructive comments, as well as changes.  In particular, we should settle on the option names.\n\nAnyway, if possible, please test the patches in multiple real-world scenarios, including those mentioned on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/f28cef82a0a3ccd1/05b695146514021d?#05b695146514021d).  I'd like to take care of all known, relevant \"ref-cloning\" issues (cf. #5350) before this ticket closes.  It is likely we're not there yet.\n\nI've added a few recipients to the CC list.  I hope that's OK.",
+    "body": "Attachment [trac_6187_builder_v4.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_builder_v4.patch) by @qed777 created at 2009-07-14 20:23:59\n\nApply only the v4 pair to the appropriate repositories.  The `testreference` patch just adds a non-trivial test document that should build quickly.  It may give an indication, at least, of the behavior to expect when building the full reference manual.\n\nChanges in v4:\n* Reordering of some code and somewhat better case / exception handling in the reference builder.\n* First steps with Python's [logging](http://docs.python.org/library/logging.html) framework.  It's powerful and easy to use, at least inside one module.  One of Sphinx's utility modules colorizes some of the output.\n* More aggressive use of Python's [optparse](http://docs.python.org/library/optparse.html) module, in order to provide several new command-line options (cf. #6488).  The previous syntax should still work, however.\n* `sage-clone` should now be compatible with #6512. `--update_mtimes` is now `--update-mtimes`.\n\nI've focused on the reference manual, but I hope the new pieces make it easier to improve the docbuild system for the other documents, too.  Feel free to make constructive comments, as well as changes.  In particular, we should settle on the option names.\n\nAnyway, if possible, please test the patches in multiple real-world scenarios, including those mentioned on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/f28cef82a0a3ccd1/05b695146514021d?#05b695146514021d).  I'd like to take care of all known, relevant \"ref-cloning\" issues (cf. #5350) before this ticket closes.  It is likely we're not there yet.\n\nI've added a few recipients to the CC list.  I hope that's OK.",
     "created_at": "2009-07-14T20:23:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49417",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6187_builder_v4.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_builder_v4.patch) by mpatel created at 2009-07-14 20:23:59
+Attachment [trac_6187_builder_v4.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_builder_v4.patch) by @qed777 created at 2009-07-14 20:23:59
 
 Apply only the v4 pair to the appropriate repositories.  The `testreference` patch just adds a non-trivial test document that should build quickly.  It may give an indication, at least, of the behavior to expect when building the full reference manual.
 
@@ -676,7 +676,7 @@ archive/issue_comments_049418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49418",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -700,7 +700,7 @@ archive/issue_comments_049419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49419",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -720,7 +720,7 @@ archive/issue_comments_049420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49420",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -738,7 +738,7 @@ archive/issue_comments_049421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49421",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -758,7 +758,7 @@ archive/issue_comments_049422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49422",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -790,7 +790,7 @@ archive/issue_comments_049423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49423",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -808,7 +808,7 @@ archive/issue_comments_049424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49424",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -823,16 +823,16 @@ Also:  Update the scripts patch, if necessary, for consistency with #6614.
 archive/issue_comments_049425.json:
 ```json
 {
-    "body": "Attachment [trac_6187-new_scripts_v5.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187-new_scripts_v5.patch) by mpatel created at 2009-08-22 14:35:03\n\nUpdated for #6673.  Apply to scripts repo.",
+    "body": "Attachment [trac_6187-new_scripts_v5.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187-new_scripts_v5.patch) by @qed777 created at 2009-08-22 14:35:03\n\nUpdated for #6673.  Apply to scripts repo.",
     "created_at": "2009-08-22T14:35:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49425",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6187-new_scripts_v5.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187-new_scripts_v5.patch) by mpatel created at 2009-08-22 14:35:03
+Attachment [trac_6187-new_scripts_v5.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187-new_scripts_v5.patch) by @qed777 created at 2009-08-22 14:35:03
 
 Updated for #6673.  Apply to scripts repo.
 
@@ -843,16 +843,16 @@ Updated for #6673.  Apply to scripts repo.
 archive/issue_comments_049426.json:
 ```json
 {
-    "body": "Attachment [trac_6187-builder_v5.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187-builder_v5.patch) by mpatel created at 2009-08-22 14:45:50\n\nFixed sys.exit() code. Apply to sage repo.",
+    "body": "Attachment [trac_6187-builder_v5.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187-builder_v5.patch) by @qed777 created at 2009-08-22 14:45:50\n\nFixed sys.exit() code. Apply to sage repo.",
     "created_at": "2009-08-22T14:45:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49426",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6187-builder_v5.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187-builder_v5.patch) by mpatel created at 2009-08-22 14:45:50
+Attachment [trac_6187-builder_v5.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187-builder_v5.patch) by @qed777 created at 2009-08-22 14:45:50
 
 Fixed sys.exit() code. Apply to sage repo.
 
@@ -868,7 +868,7 @@ archive/issue_comments_049427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49427",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -886,7 +886,7 @@ archive/issue_comments_049428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49428",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -904,7 +904,7 @@ archive/issue_comments_049429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49429",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -922,7 +922,7 @@ archive/issue_comments_049430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49430",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -940,7 +940,7 @@ archive/issue_comments_049431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49431",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -958,7 +958,7 @@ archive/issue_comments_049432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49432",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

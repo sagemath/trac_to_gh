@@ -3,7 +3,7 @@
 archive/issues_007003.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  gutow\n\nHere's an spkg updating jmol to 11.8.6 (we currently have 11.6.something).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7003\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @gutow\n\nHere's an spkg updating jmol to 11.8.6 (we currently have 11.6.something).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7003\n\n",
     "created_at": "2009-09-24T18:01:08Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_007003.json:
     "title": "[with spkg, needs review] update jmol",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7003",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: mabshoff
 
-CC:  gutow
+CC:  @gutow
 
 Here's an spkg updating jmol to 11.8.6 (we currently have 11.6.something).
 
@@ -39,7 +39,7 @@ archive/issue_comments_057900.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7003",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7003#issuecomment-57900",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -52,16 +52,16 @@ Hrm, with this spkg in 4.1.2.alpha1 there seems to be no  lighting on the top of
 archive/issue_comments_057901.json:
 ```json
 {
-    "body": "Attachment [jmol-lighting-screenshot.png](tarball://root/attachments/some-uuid/ticket7003/jmol-lighting-screenshot.png) by mhansen created at 2009-11-05 01:56:03",
+    "body": "Attachment [jmol-lighting-screenshot.png](tarball://root/attachments/some-uuid/ticket7003/jmol-lighting-screenshot.png) by @mwhansen created at 2009-11-05 01:56:03",
     "created_at": "2009-11-05T01:56:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7003",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7003#issuecomment-57901",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [jmol-lighting-screenshot.png](tarball://root/attachments/some-uuid/ticket7003/jmol-lighting-screenshot.png) by mhansen created at 2009-11-05 01:56:03
+Attachment [jmol-lighting-screenshot.png](tarball://root/attachments/some-uuid/ticket7003/jmol-lighting-screenshot.png) by @mwhansen created at 2009-11-05 01:56:03
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_057902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7003",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7003#issuecomment-57902",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_057903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7003",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7003#issuecomment-57903",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_057904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7003",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7003#issuecomment-57904",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_057905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7003",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7003#issuecomment-57905",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_057906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7003",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7003#issuecomment-57906",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_057907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7003",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7003#issuecomment-57907",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

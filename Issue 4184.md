@@ -3,7 +3,7 @@
 archive/issues_004184.json:
 ```json
 {
-    "body": "Assignee: itolkov\n\nCurrently we are supporting a fork of jQueryUI-Slider. An upgrade would eliminate the need to support that fork.\n\nThis ticket is related to #3767.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4184\n\n",
+    "body": "Assignee: @itolkov\n\nCurrently we are supporting a fork of jQueryUI-Slider. An upgrade would eliminate the need to support that fork.\n\nThis ticket is related to #3767.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4184\n\n",
     "created_at": "2008-09-24T02:40:17Z",
     "labels": [
         "interact",
@@ -14,10 +14,10 @@ archive/issues_004184.json:
     "title": "Upgrade jQueryUI",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4184",
-    "user": "itolkov"
+    "user": "@itolkov"
 }
 ```
-Assignee: itolkov
+Assignee: @itolkov
 
 Currently we are supporting a fork of jQueryUI-Slider. An upgrade would eliminate the need to support that fork.
 
@@ -39,7 +39,7 @@ archive/issue_comments_030367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4184#issuecomment-30367",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_030368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4184#issuecomment-30368",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -70,16 +70,16 @@ Changing status from new to assigned.
 archive/issue_comments_030369.json:
 ```json
 {
-    "body": "Changing assignee from itolkov to jason.",
+    "body": "Changing assignee from @itolkov to @jasongrout.",
     "created_at": "2008-10-18T04:02:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4184#issuecomment-30369",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from itolkov to jason.
+Changing assignee from @itolkov to @jasongrout.
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_030370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4184#issuecomment-30370",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

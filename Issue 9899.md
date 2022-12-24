@@ -3,7 +3,7 @@
 archive/issues_009899.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nKeywords: pynac\n\nAdd doctests to test enhancements to conjugates of some special functions in pynac/GiNaC.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9900\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: pynac\n\nAdd doctests to test enhancements to conjugates of some special functions in pynac/GiNaC.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9900\n\n",
     "created_at": "2010-09-12T09:52:40Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_009899.json:
     "title": "better conjugation for special functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9899",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 Keywords: pynac
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9900
 archive/issue_comments_098414.json:
 ```json
 {
-    "body": "Attachment [trac_9900_conjugate_doctests.patch](tarball://root/attachments/some-uuid/ticket9900/trac_9900_conjugate_doctests.patch) by burcin created at 2010-09-12 11:08:12",
+    "body": "Attachment [trac_9900_conjugate_doctests.patch](tarball://root/attachments/some-uuid/ticket9900/trac_9900_conjugate_doctests.patch) by @burcin created at 2010-09-12 11:08:12",
     "created_at": "2010-09-12T11:08:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9899#issuecomment-98414",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9900_conjugate_doctests.patch](tarball://root/attachments/some-uuid/ticket9900/trac_9900_conjugate_doctests.patch) by burcin created at 2010-09-12 11:08:12
+Attachment [trac_9900_conjugate_doctests.patch](tarball://root/attachments/some-uuid/ticket9900/trac_9900_conjugate_doctests.patch) by @burcin created at 2010-09-12 11:08:12
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_098415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9899#issuecomment-98415",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_098416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9899#issuecomment-98416",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_098417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9899#issuecomment-98417",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_098418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9899#issuecomment-98418",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_098419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9899#issuecomment-98419",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -146,16 +146,16 @@ Other than one spot where `arccos` should be `arccosh` in the new doctests, this
 archive/issue_comments_098420.json:
 ```json
 {
-    "body": "Attachment [trac_9900_conjugate_doctests-rebase.patch](tarball://root/attachments/some-uuid/ticket9900/trac_9900_conjugate_doctests-rebase.patch) by kcrisman created at 2010-10-05 01:14:14\n\nRebase of original patch with respect to reviewer patches of #9879 and #9881",
+    "body": "Attachment [trac_9900_conjugate_doctests-rebase.patch](tarball://root/attachments/some-uuid/ticket9900/trac_9900_conjugate_doctests-rebase.patch) by @kcrisman created at 2010-10-05 01:14:14\n\nRebase of original patch with respect to reviewer patches of #9879 and #9881",
     "created_at": "2010-10-05T01:14:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9899#issuecomment-98420",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_9900_conjugate_doctests-rebase.patch](tarball://root/attachments/some-uuid/ticket9900/trac_9900_conjugate_doctests-rebase.patch) by kcrisman created at 2010-10-05 01:14:14
+Attachment [trac_9900_conjugate_doctests-rebase.patch](tarball://root/attachments/some-uuid/ticket9900/trac_9900_conjugate_doctests-rebase.patch) by @kcrisman created at 2010-10-05 01:14:14
 
 Rebase of original patch with respect to reviewer patches of #9879 and #9881
 
@@ -171,7 +171,7 @@ archive/issue_comments_098421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9899#issuecomment-98421",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_098422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9899#issuecomment-98422",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -204,16 +204,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_098423.json:
 ```json
 {
-    "body": "Attachment [trac_9900-reviewer.patch](tarball://root/attachments/some-uuid/ticket9900/trac_9900-reviewer.patch) by kcrisman created at 2010-10-05 13:01:38\n\nReviewer patch, apply after rebase patch",
+    "body": "Attachment [trac_9900-reviewer.patch](tarball://root/attachments/some-uuid/ticket9900/trac_9900-reviewer.patch) by @kcrisman created at 2010-10-05 13:01:38\n\nReviewer patch, apply after rebase patch",
     "created_at": "2010-10-05T13:01:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9899#issuecomment-98423",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_9900-reviewer.patch](tarball://root/attachments/some-uuid/ticket9900/trac_9900-reviewer.patch) by kcrisman created at 2010-10-05 13:01:38
+Attachment [trac_9900-reviewer.patch](tarball://root/attachments/some-uuid/ticket9900/trac_9900-reviewer.patch) by @kcrisman created at 2010-10-05 13:01:38
 
 Reviewer patch, apply after rebase patch
 
@@ -229,7 +229,7 @@ archive/issue_comments_098424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9899#issuecomment-98424",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

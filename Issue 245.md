@@ -14,7 +14,7 @@ archive/issues_000245.json:
     "title": "a bunch of random notebook improvement ideas",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/245",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -109,7 +109,7 @@ archive/issue_comments_001084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/245#issuecomment-1084",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_001085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/245#issuecomment-1085",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

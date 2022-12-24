@@ -14,7 +14,7 @@ archive/issues_008874.json:
     "title": "Matrices are missing a is_skew_symmetric method.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8874",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: jason, was
@@ -37,7 +37,7 @@ archive/issue_comments_081557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8874#issuecomment-81557",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_081558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8874#issuecomment-81558",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_081559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8874#issuecomment-81559",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_081560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8874#issuecomment-81560",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -104,16 +104,16 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_081561.json:
 ```json
 {
-    "body": "Attachment [trac_8874.patch](tarball://root/attachments/some-uuid/ticket8874/trac_8874.patch) by mhansen created at 2010-05-04 21:03:52\n\nI've made it so that it checks the diagonal entries.",
+    "body": "Attachment [trac_8874.patch](tarball://root/attachments/some-uuid/ticket8874/trac_8874.patch) by @mwhansen created at 2010-05-04 21:03:52\n\nI've made it so that it checks the diagonal entries.",
     "created_at": "2010-05-04T21:03:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8874#issuecomment-81561",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_8874.patch](tarball://root/attachments/some-uuid/ticket8874/trac_8874.patch) by mhansen created at 2010-05-04 21:03:52
+Attachment [trac_8874.patch](tarball://root/attachments/some-uuid/ticket8874/trac_8874.patch) by @mwhansen created at 2010-05-04 21:03:52
 
 I've made it so that it checks the diagonal entries.
 

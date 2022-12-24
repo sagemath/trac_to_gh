@@ -73,7 +73,7 @@ archive/issue_comments_056989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6898#issuecomment-56989",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -86,16 +86,16 @@ I don't understand the part about running "./sage" first to set up environment v
 archive/issue_comments_056990.json:
 ```json
 {
-    "body": "Attachment [trac_6898-part2.patch](tarball://root/attachments/some-uuid/ticket6898/trac_6898-part2.patch) by jhpalmieri created at 2009-09-22 23:35:49\n\napply on top of other patch",
+    "body": "Attachment [trac_6898-part2.patch](tarball://root/attachments/some-uuid/ticket6898/trac_6898-part2.patch) by @jhpalmieri created at 2009-09-22 23:35:49\n\napply on top of other patch",
     "created_at": "2009-09-22T23:35:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6898#issuecomment-56990",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_6898-part2.patch](tarball://root/attachments/some-uuid/ticket6898/trac_6898-part2.patch) by jhpalmieri created at 2009-09-22 23:35:49
+Attachment [trac_6898-part2.patch](tarball://root/attachments/some-uuid/ticket6898/trac_6898-part2.patch) by @jhpalmieri created at 2009-09-22 23:35:49
 
 apply on top of other patch
 
@@ -111,7 +111,7 @@ archive/issue_comments_056991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6898#issuecomment-56991",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

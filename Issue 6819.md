@@ -14,7 +14,7 @@ archive/issues_006819.json:
     "title": "multinomial to accept lists as argument too",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6819",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 Assignee: tbd
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6819
 archive/issue_comments_056226.json:
 ```json
 {
-    "body": "Attachment [12846.patch](tarball://root/attachments/some-uuid/ticket6819/12846.patch) by rishi created at 2009-08-24 18:32:29",
+    "body": "Attachment [12846.patch](tarball://root/attachments/some-uuid/ticket6819/12846.patch) by @rishikesha created at 2009-08-24 18:32:29",
     "created_at": "2009-08-24T18:32:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6819",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6819#issuecomment-56226",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
-Attachment [12846.patch](tarball://root/attachments/some-uuid/ticket6819/12846.patch) by rishi created at 2009-08-24 18:32:29
+Attachment [12846.patch](tarball://root/attachments/some-uuid/ticket6819/12846.patch) by @rishikesha created at 2009-08-24 18:32:29
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_056227.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6819",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6819#issuecomment-56227",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -72,16 +72,16 @@ By the way, I added some docstrings to the function, so if you think it is ok.. 
 archive/issue_comments_056228.json:
 ```json
 {
-    "body": "Attachment [multinomial_list.patch](tarball://root/attachments/some-uuid/ticket6819/multinomial_list.patch) by ncohen created at 2009-08-25 07:27:04\n\npatch reviewed + some docstrings",
+    "body": "Attachment [multinomial_list.patch](tarball://root/attachments/some-uuid/ticket6819/multinomial_list.patch) by @nathanncohen created at 2009-08-25 07:27:04\n\npatch reviewed + some docstrings",
     "created_at": "2009-08-25T07:27:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6819",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6819#issuecomment-56228",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [multinomial_list.patch](tarball://root/attachments/some-uuid/ticket6819/multinomial_list.patch) by ncohen created at 2009-08-25 07:27:04
+Attachment [multinomial_list.patch](tarball://root/attachments/some-uuid/ticket6819/multinomial_list.patch) by @nathanncohen created at 2009-08-25 07:27:04
 
 patch reviewed + some docstrings
 
@@ -97,7 +97,7 @@ archive/issue_comments_056229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6819",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6819#issuecomment-56229",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 

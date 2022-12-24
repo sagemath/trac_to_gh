@@ -3,7 +3,7 @@
 archive/issues_007465.json:
 ```json
 {
-    "body": "Assignee: was\n\nTry this in a notebook cell on OS X:\n\n\n```\n%fortran          \t\nC FILE: FIB1.F\n      SUBROUTINE FIB(A,N)\nC\nC     CALCULATE FIRST N FIBONACCI NUMBERS\nC\n      INTEGER N\n      REAL*8 A(N)\n      DO I=1,N\n         IF (I.EQ.1) THEN\n            A(I) = 0.0D0\n         ELSEIF (I.EQ.2) THEN\n            A(I) = 1.0D0\n         ELSE \n            A(I) = A(I-1) + A(I-2)\n         ENDIF\n      ENDDO\n      END\nC END FILE FIB1.F\n```\n\n\nBoom!!  This despite us shipping a Fortran compiler. \n\nThe problem is really that the doctests for `fortran.eval` were marked (by me, doh) as optional, and we don't test optional doctests frequently.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7465\n\n",
+    "body": "Assignee: @williamstein\n\nTry this in a notebook cell on OS X:\n\n\n```\n%fortran          \t\nC FILE: FIB1.F\n      SUBROUTINE FIB(A,N)\nC\nC     CALCULATE FIRST N FIBONACCI NUMBERS\nC\n      INTEGER N\n      REAL*8 A(N)\n      DO I=1,N\n         IF (I.EQ.1) THEN\n            A(I) = 0.0D0\n         ELSEIF (I.EQ.2) THEN\n            A(I) = 1.0D0\n         ELSE \n            A(I) = A(I-1) + A(I-2)\n         ENDIF\n      ENDDO\n      END\nC END FILE FIB1.F\n```\n\n\nBoom!!  This despite us shipping a Fortran compiler. \n\nThe problem is really that the doctests for `fortran.eval` were marked (by me, doh) as optional, and we don't test optional doctests frequently.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7465\n\n",
     "created_at": "2009-11-14T22:13:25Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_007465.json:
     "title": "%fortran in the notebook (and fortran.eval on command line) is completely broken on OS X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7465",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Try this in a notebook cell on OS X:
 

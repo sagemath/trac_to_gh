@@ -3,7 +3,7 @@
 archive/issues_007963.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  timdumol jason\n\nI do the following:\n\n1. Start the notebook with `notebook()`\n2. click the checkboxes next to a few worksheets\n3. hit the \"Download\" button\n\nand I get an error:\n\n\n```\nThe resource /download_worksheets?filenames=admin/77___S_A_G_E___admin/76___S_A_G_E___admin/75___S_A_G_E___&sep=___S_A_G_E___ cannot be found.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7963\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @TimDumol @jasongrout\n\nI do the following:\n\n1. Start the notebook with `notebook()`\n2. click the checkboxes next to a few worksheets\n3. hit the \"Download\" button\n\nand I get an error:\n\n\n```\nThe resource /download_worksheets?filenames=admin/77___S_A_G_E___admin/76___S_A_G_E___admin/75___S_A_G_E___&sep=___S_A_G_E___ cannot be found.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7963\n\n",
     "created_at": "2010-01-17T10:18:51Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007963.json:
     "title": "Downloading multiple worksheets does not work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7963",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  timdumol jason
+CC:  @TimDumol @jasongrout
 
 I do the following:
 
@@ -51,7 +51,7 @@ archive/issue_comments_069482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7963#issuecomment-69482",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_069483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7963#issuecomment-69483",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_069484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7963#issuecomment-69484",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -115,16 +115,16 @@ Changing status from new to needs_review.
 archive/issue_comments_069485.json:
 ```json
 {
-    "body": "Attachment [trac_7963-download-multiple-worksheets.patch](tarball://root/attachments/some-uuid/ticket7963/trac_7963-download-multiple-worksheets.patch) by timdumol created at 2010-01-19 08:58:00\n\nThis adds what mpatel suggested.",
+    "body": "Attachment [trac_7963-download-multiple-worksheets.patch](tarball://root/attachments/some-uuid/ticket7963/trac_7963-download-multiple-worksheets.patch) by @TimDumol created at 2010-01-19 08:58:00\n\nThis adds what mpatel suggested.",
     "created_at": "2010-01-19T08:58:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7963#issuecomment-69485",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7963-download-multiple-worksheets.patch](tarball://root/attachments/some-uuid/ticket7963/trac_7963-download-multiple-worksheets.patch) by timdumol created at 2010-01-19 08:58:00
+Attachment [trac_7963-download-multiple-worksheets.patch](tarball://root/attachments/some-uuid/ticket7963/trac_7963-download-multiple-worksheets.patch) by @TimDumol created at 2010-01-19 08:58:00
 
 This adds what mpatel suggested.
 
@@ -140,7 +140,7 @@ archive/issue_comments_069486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7963#issuecomment-69486",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_069489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7963#issuecomment-69489",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

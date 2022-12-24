@@ -14,7 +14,7 @@ archive/issues_005683.json:
     "title": "Inverse operation for matrices over non integral domain",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5683",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 Assignee: somebody
@@ -48,16 +48,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5683
 archive/issue_comments_044441.json:
 ```json
 {
-    "body": "Attachment [trac_5683.patch](tarball://root/attachments/some-uuid/ticket5683/trac_5683.patch) by was created at 2009-04-05 06:00:41",
+    "body": "Attachment [trac_5683.patch](tarball://root/attachments/some-uuid/ticket5683/trac_5683.patch) by @williamstein created at 2009-04-05 06:00:41",
     "created_at": "2009-04-05T06:00:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5683#issuecomment-44441",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5683.patch](tarball://root/attachments/some-uuid/ticket5683/trac_5683.patch) by was created at 2009-04-05 06:00:41
+Attachment [trac_5683.patch](tarball://root/attachments/some-uuid/ticket5683/trac_5683.patch) by @williamstein created at 2009-04-05 06:00:41
 
 
 
@@ -71,7 +71,7 @@ archive/issue_comments_044442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5683#issuecomment-44442",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_044443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5683#issuecomment-44443",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -106,16 +106,16 @@ apply on top of the other patch
 archive/issue_comments_044444.json:
 ```json
 {
-    "body": "Attachment [5683-doc.patch](tarball://root/attachments/some-uuid/ticket5683/5683-doc.patch) by jhpalmieri created at 2009-04-05 16:50:48\n\nYou have a slightly misformatted docstring which the second patch fixes.\n\n(This is another use of the patches at #5653: you can view the Sphinx version of an individual docstring to see if it's formatted correctly.  This even works for docstrings which don't appear in the reference manual, such as for functions like `__invert__` which start with an underscore.)",
+    "body": "Attachment [5683-doc.patch](tarball://root/attachments/some-uuid/ticket5683/5683-doc.patch) by @jhpalmieri created at 2009-04-05 16:50:48\n\nYou have a slightly misformatted docstring which the second patch fixes.\n\n(This is another use of the patches at #5653: you can view the Sphinx version of an individual docstring to see if it's formatted correctly.  This even works for docstrings which don't appear in the reference manual, such as for functions like `__invert__` which start with an underscore.)",
     "created_at": "2009-04-05T16:50:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5683#issuecomment-44444",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [5683-doc.patch](tarball://root/attachments/some-uuid/ticket5683/5683-doc.patch) by jhpalmieri created at 2009-04-05 16:50:48
+Attachment [5683-doc.patch](tarball://root/attachments/some-uuid/ticket5683/5683-doc.patch) by @jhpalmieri created at 2009-04-05 16:50:48
 
 You have a slightly misformatted docstring which the second patch fixes.
 
@@ -133,7 +133,7 @@ archive/issue_comments_044445.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5683#issuecomment-44445",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

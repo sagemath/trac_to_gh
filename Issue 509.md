@@ -14,7 +14,7 @@ archive/issues_000509.json:
     "title": "gdb mode for sage-ipython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/509",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 Assignee: mabshoff
@@ -39,7 +39,7 @@ archive/issue_comments_002556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/509#issuecomment-2556",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_002559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/509#issuecomment-2559",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_002560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/509#issuecomment-2560",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

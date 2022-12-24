@@ -3,7 +3,7 @@
 archive/issues_007324.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  cremona rhinton\n\nThis function is used in many places, and can be greatly improved.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7324\n\n",
+    "body": "Assignee: tbd\n\nCC:  @JohnCremona @rhinton\n\nThis function is used in many places, and can be greatly improved.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7324\n\n",
     "created_at": "2009-10-27T19:40:00Z",
     "labels": [
         "algebra",
@@ -19,7 +19,7 @@ archive/issues_007324.json:
 ```
 Assignee: tbd
 
-CC:  cremona rhinton
+CC:  @JohnCremona @rhinton
 
 This function is used in many places, and can be greatly improved.
 
@@ -245,7 +245,7 @@ archive/issue_comments_061206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7324#issuecomment-61206",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

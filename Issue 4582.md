@@ -3,7 +3,7 @@
 archive/issues_004582.json:
 ```json
 {
-    "body": "Assignee: malb\n\nGuillaume Moroz wrote on [sage-devel]:\n\n\"\nit seems that the sage interface to singular is not aware that Singular handles multivariate polynomial rings with coefficients in a fraction field.\n\n\n```\nsage: from sage.rings.polynomial.polynomial_singular_interface import\ncan_convert_to_singular\nsage: r=Frac(QQ['a,b'])['x,y']\nsage: can_convert_to_singular(r)\nFalse\n```\n\n\nHowever, it is possible to define it in Singular: in this case, it would be\n\n\n```\nring R=(0,a,b),(x,y),dp;\n```\n\n\n(following the syntax 2. given at http://www.singular.uni-kl.de/Manual/latest/sing_30.htm#SEC40)\n\nIn particular, Gr\u00f6bner basis can be computed by Singular in these polynomial rings more efficiently than the toy algorithm currently used.\n\"\n\n\nI hope this can help!\n\nBest regards,\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4582\n\n",
+    "body": "Assignee: @malb\n\nGuillaume Moroz wrote on [sage-devel]:\n\n\"\nit seems that the sage interface to singular is not aware that Singular handles multivariate polynomial rings with coefficients in a fraction field.\n\n\n```\nsage: from sage.rings.polynomial.polynomial_singular_interface import\ncan_convert_to_singular\nsage: r=Frac(QQ['a,b'])['x,y']\nsage: can_convert_to_singular(r)\nFalse\n```\n\n\nHowever, it is possible to define it in Singular: in this case, it would be\n\n\n```\nring R=(0,a,b),(x,y),dp;\n```\n\n\n(following the syntax 2. given at http://www.singular.uni-kl.de/Manual/latest/sing_30.htm#SEC40)\n\nIn particular, Gr\u00f6bner basis can be computed by Singular in these polynomial rings more efficiently than the toy algorithm currently used.\n\"\n\n\nI hope this can help!\n\nBest regards,\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4582\n\n",
     "created_at": "2008-11-22T12:01:16Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_004582.json:
     "title": "use Singular's capabilities for computing over fraction fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4582",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Guillaume Moroz wrote on [sage-devel]:
 
@@ -271,16 +271,16 @@ Standard mercurial patch
 archive/issue_comments_034366.json:
 ```json
 {
-    "body": "Attachment [fraction_field.patch](tarball://root/attachments/some-uuid/ticket4582/fraction_field.patch) by malb created at 2008-11-30 21:53:53\n\nPatch applies cleanly against 3.2, doctests in `sage.rings` pass, patch contains doctest.",
+    "body": "Attachment [fraction_field.patch](tarball://root/attachments/some-uuid/ticket4582/fraction_field.patch) by @malb created at 2008-11-30 21:53:53\n\nPatch applies cleanly against 3.2, doctests in `sage.rings` pass, patch contains doctest.",
     "created_at": "2008-11-30T21:53:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4582",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4582#issuecomment-34366",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [fraction_field.patch](tarball://root/attachments/some-uuid/ticket4582/fraction_field.patch) by malb created at 2008-11-30 21:53:53
+Attachment [fraction_field.patch](tarball://root/attachments/some-uuid/ticket4582/fraction_field.patch) by @malb created at 2008-11-30 21:53:53
 
 Patch applies cleanly against 3.2, doctests in `sage.rings` pass, patch contains doctest.
 

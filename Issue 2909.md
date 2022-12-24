@@ -3,7 +3,7 @@
 archive/issues_002909.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  mpatel\n\nThe canonical example to get to work is the following (submitted by Jason Grout):\n\n\n```\nfor i in range(5):\n    print html('<script>alert(%s)</script>'%i)\n    sleep(1)\n```\n\n\nwould pop up a dialog box about every second.\n\n\nThis feature was requested by `gerhard <ge01705`@`yahoo.de>`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2909\n\n",
+    "body": "Assignee: boothby\n\nCC:  @qed777\n\nThe canonical example to get to work is the following (submitted by Jason Grout):\n\n\n```\nfor i in range(5):\n    print html('<script>alert(%s)</script>'%i)\n    sleep(1)\n```\n\n\nwould pop up a dialog box about every second.\n\n\nThis feature was requested by `gerhard <ge01705`@`yahoo.de>`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2909\n\n",
     "created_at": "2008-04-13T18:04:03Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_002909.json:
     "title": "notebook -- implement a way of parsing script tags in output as they appear (but none that already appeared)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2909",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
 
-CC:  mpatel
+CC:  @qed777
 
 The canonical example to get to work is the following (submitted by Jason Grout):
 
@@ -52,7 +52,7 @@ archive/issue_comments_020044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2909",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2909#issuecomment-20044",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_020045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2909",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2909#issuecomment-20045",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_020046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2909",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2909#issuecomment-20046",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_020047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2909",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2909#issuecomment-20047",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

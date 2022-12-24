@@ -14,7 +14,7 @@ archive/issues_000346.json:
     "title": "Notebook input cell focus",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/346",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 Assignee: boothby
@@ -47,7 +47,7 @@ archive/issue_comments_001683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/346#issuecomment-1683",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_001684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/346#issuecomment-1684",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_001685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/346#issuecomment-1685",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_001686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/346#issuecomment-1686",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

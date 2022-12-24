@@ -3,7 +3,7 @@
 archive/issues_008122.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  jsp mvngu\n\nThe symmerica package says in SPKG.txt\n\n\n```\n## Special Update/Build Instructions\n\nAgainst common policy the patches in the patches directory have been applied to \nthe src directory:\n\n * de.patch (Turn off banner)\n * macro.h.patch (Change some return types, this can be avoided)\n * makefile.patch (Fix compiler, inject CFLAGS)\n * sort_sum_rename.patch (rename sort tp sym_sort, sum to sym_sum) \n```\n\n\nIt would appear various patches have been made to the source code. \n\n\nhttp://boxen.math.washington.edu/home/kirkby/portability/symmetrica-2.0.p5/\n\nhas an updated version of symmetica, which will build with any compiler, and in 64-bit mode. However, it does not resolve the issue of patching the source directly. I modified the makefile, which had already been modified before. A patch was left, so I have tried to recreate the original makefile. But other files have been changed too. The packages is basically a bit of a mess\n\nIssue created by migration from https://trac.sagemath.org/ticket/8122\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @jaapspies mvngu\n\nThe symmerica package says in SPKG.txt\n\n\n```\n## Special Update/Build Instructions\n\nAgainst common policy the patches in the patches directory have been applied to \nthe src directory:\n\n * de.patch (Turn off banner)\n * macro.h.patch (Change some return types, this can be avoided)\n * makefile.patch (Fix compiler, inject CFLAGS)\n * sort_sum_rename.patch (rename sort tp sym_sort, sum to sym_sum) \n```\n\n\nIt would appear various patches have been made to the source code. \n\n\nhttp://boxen.math.washington.edu/home/kirkby/portability/symmetrica-2.0.p5/\n\nhas an updated version of symmetica, which will build with any compiler, and in 64-bit mode. However, it does not resolve the issue of patching the source directly. I modified the makefile, which had already been modified before. A patch was left, so I have tried to recreate the original makefile. But other files have been changed too. The packages is basically a bit of a mess\n\nIssue created by migration from https://trac.sagemath.org/ticket/8122\n\n",
     "created_at": "2010-01-29T18:51:48Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_008122.json:
 ```
 Assignee: GeorgSWeber
 
-CC:  jsp mvngu
+CC:  @jaapspies mvngu
 
 The symmerica package says in SPKG.txt
 
@@ -60,7 +60,7 @@ archive/issue_comments_071403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8122",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8122#issuecomment-71403",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_071404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8122",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8122#issuecomment-71404",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_071405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8122",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8122#issuecomment-71405",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_071406.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8122",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8122#issuecomment-71406",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_071407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8122",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8122#issuecomment-71407",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

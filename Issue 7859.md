@@ -3,7 +3,7 @@
 archive/issues_007859.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\n\n```\nThe code\n\nR.<x> = AA[]\nv1 = QQbar.polynomial_root(AA.common_polynomial(x^4 + 3*x^2 + 1),\\\n CIF(RIF(-RR(2.7018838812806391e-55), RR(2.5616917931009833e-55)),\\\n RIF(RR(1.6180339887498947), RR(1.6180339887498949))))\nv2 = (2/3*v1^3 + 2/3*v1^2 + 4/3*v1 + 1).norm()\nsqrt(v2 - 1)\n\nyields the error\n\nNameError: global name 'AlgebriacNumber' is not defined\n\nApparently there is a small typo in line 3394 of the file qqbar.py\n\nBest regards,\n\n/H\u00e5kan\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7859\n\n",
+    "body": "Assignee: @aghitza\n\n\n```\nThe code\n\nR.<x> = AA[]\nv1 = QQbar.polynomial_root(AA.common_polynomial(x^4 + 3*x^2 + 1),\\\n CIF(RIF(-RR(2.7018838812806391e-55), RR(2.5616917931009833e-55)),\\\n RIF(RR(1.6180339887498947), RR(1.6180339887498949))))\nv2 = (2/3*v1^3 + 2/3*v1^2 + 4/3*v1 + 1).norm()\nsqrt(v2 - 1)\n\nyields the error\n\nNameError: global name 'AlgebriacNumber' is not defined\n\nApparently there is a small typo in line 3394 of the file qqbar.py\n\nBest regards,\n\n/H\u00e5kan\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7859\n\n",
     "created_at": "2010-01-06T19:45:02Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_007859.json:
     "title": "bug in QQbar (easy to fix!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7859",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 
 ```
@@ -76,7 +76,7 @@ archive/issue_comments_068121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68121",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_068122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68122",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_068123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68123",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_068127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68127",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_068128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68128",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_068129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68129",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_068130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68130",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_068131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68131",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -308,16 +308,16 @@ I agree.  This is fixed.  Possibly the doctest should be added, though.
 archive/issue_comments_068132.json:
 ```json
 {
-    "body": "Attachment [trac_7859-qqbar_sqrt_doctest.patch](tarball://root/attachments/some-uuid/ticket7859/trac_7859-qqbar_sqrt_doctest.patch) by davidloeffler created at 2010-06-29 09:23:16\n\napply only this patch",
+    "body": "Attachment [trac_7859-qqbar_sqrt_doctest.patch](tarball://root/attachments/some-uuid/ticket7859/trac_7859-qqbar_sqrt_doctest.patch) by @loefflerd created at 2010-06-29 09:23:16\n\napply only this patch",
     "created_at": "2010-06-29T09:23:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68132",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_7859-qqbar_sqrt_doctest.patch](tarball://root/attachments/some-uuid/ticket7859/trac_7859-qqbar_sqrt_doctest.patch) by davidloeffler created at 2010-06-29 09:23:16
+Attachment [trac_7859-qqbar_sqrt_doctest.patch](tarball://root/attachments/some-uuid/ticket7859/trac_7859-qqbar_sqrt_doctest.patch) by @loefflerd created at 2010-06-29 09:23:16
 
 apply only this patch
 
@@ -333,7 +333,7 @@ archive/issue_comments_068133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68133",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -351,7 +351,7 @@ archive/issue_comments_068134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68134",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -369,7 +369,7 @@ archive/issue_comments_068135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68135",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -387,7 +387,7 @@ archive/issue_comments_068136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68136",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -405,7 +405,7 @@ archive/issue_comments_068137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68137",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

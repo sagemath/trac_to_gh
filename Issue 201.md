@@ -3,7 +3,7 @@
 archive/issues_000201.json:
 ```json
 {
-    "body": "Assignee: was\n\nI'm not sure if this is a bug in SAGE or mwrank or if I'm just getting unlucky....\n\n\n```\nsage: E = EllipticCurve([3, -15675])\n\nsage: E.rank()\n---------------------------------------------------------------------------\n<type 'exceptions.RuntimeError'>          Traceback (most recent call last)\n\n/home/dmharvey/<ipython console> in <module>()\n\n/home/was/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py in rank(self, use_database, verbose, only_use_mwrank, algorithm)\n    839             elif algorithm == 'mwrank_shell':\n    840                 misc.verbose(\"using mwrank shell\")\n--> 841                 X = self.mwrank()\n    842                 if not 'The rank and full Mordell-Weil basis have been determined unconditionally' in X:\n    843                     raise RuntimeError, '%s\\nRank not provably correct (maybe try rank with only_use_mwrank=False).'%X\n\n/home/was/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py in mwrank(self, options)\n    142             from sage.interfaces.all import Mwrank\n    143             mwrank = Mwrank(options=options)\n--> 144         return mwrank(self.a_invariants())\n    145 \n    146     def conductor(self, algorithm=\"pari\"):\n\n/home/was/sage/local/lib/python2.5/site-packages/sage/interfaces/mwrank.py in __call__(self, cmd)\n     68 \n     69     def __call__(self, cmd):\n---> 70         return self.eval(cmd)\n     71 \n     72     def console(self):\n\n/home/was/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py in eval(self, code, strip)\n    463         code = code.strip()\n    464         try:\n--> 465             return '\\n'.join([self._eval_line(L) for L in code.split('\\n') if L != ''])\n    466         except KeyboardInterrupt:\n    467             self._keyboard_interrupt()\n\n/home/was/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py in _eval_line(self, line, allow_use_file, wait_for_prompt)\n    426                         return ''\n    427                     raise RuntimeError, \"%s\\n%s crashed executing %s\"%(msg,\n--> 428                                                    self, line)\n    429                 out = E.before\n    430             else:\n\n<type 'exceptions.RuntimeError'>: End Of File (EOF) in read_nonblocking(). Exception style platform.\n<pexpect.spawn instance at 0x2aaabad74d40>\nversion: 2.0 ($Revision: 1.151 $)\ncommand: /home/was/sage/local/bin/mwrank\nargs: ['/home/was/sage/local/bin/mwrank']\npatterns:\n    Enter curve: \nbuffer (last 100 chars): \nbefore (last 100 chars): [0, 0, 0, 3, -15675]\n\nafter: <class 'pexpect.EOF'>\nmatch: None\nmatch_index: None\nexitstatus: None\nflag_eof: 1\npid: 20884\nchild_fd: 3\ntimeout: None\ndelimiter: <class 'pexpect.EOF'>\nlogfile: None\nmaxread: 10000\nsearchwindowsize: None\ndelaybeforesend: 0\nMwrank crashed executing [0, 0, 0, 3, -15675]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/201\n\n",
+    "body": "Assignee: @williamstein\n\nI'm not sure if this is a bug in SAGE or mwrank or if I'm just getting unlucky....\n\n\n```\nsage: E = EllipticCurve([3, -15675])\n\nsage: E.rank()\n---------------------------------------------------------------------------\n<type 'exceptions.RuntimeError'>          Traceback (most recent call last)\n\n/home/dmharvey/<ipython console> in <module>()\n\n/home/was/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py in rank(self, use_database, verbose, only_use_mwrank, algorithm)\n    839             elif algorithm == 'mwrank_shell':\n    840                 misc.verbose(\"using mwrank shell\")\n--> 841                 X = self.mwrank()\n    842                 if not 'The rank and full Mordell-Weil basis have been determined unconditionally' in X:\n    843                     raise RuntimeError, '%s\\nRank not provably correct (maybe try rank with only_use_mwrank=False).'%X\n\n/home/was/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py in mwrank(self, options)\n    142             from sage.interfaces.all import Mwrank\n    143             mwrank = Mwrank(options=options)\n--> 144         return mwrank(self.a_invariants())\n    145 \n    146     def conductor(self, algorithm=\"pari\"):\n\n/home/was/sage/local/lib/python2.5/site-packages/sage/interfaces/mwrank.py in __call__(self, cmd)\n     68 \n     69     def __call__(self, cmd):\n---> 70         return self.eval(cmd)\n     71 \n     72     def console(self):\n\n/home/was/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py in eval(self, code, strip)\n    463         code = code.strip()\n    464         try:\n--> 465             return '\\n'.join([self._eval_line(L) for L in code.split('\\n') if L != ''])\n    466         except KeyboardInterrupt:\n    467             self._keyboard_interrupt()\n\n/home/was/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py in _eval_line(self, line, allow_use_file, wait_for_prompt)\n    426                         return ''\n    427                     raise RuntimeError, \"%s\\n%s crashed executing %s\"%(msg,\n--> 428                                                    self, line)\n    429                 out = E.before\n    430             else:\n\n<type 'exceptions.RuntimeError'>: End Of File (EOF) in read_nonblocking(). Exception style platform.\n<pexpect.spawn instance at 0x2aaabad74d40>\nversion: 2.0 ($Revision: 1.151 $)\ncommand: /home/was/sage/local/bin/mwrank\nargs: ['/home/was/sage/local/bin/mwrank']\npatterns:\n    Enter curve: \nbuffer (last 100 chars): \nbefore (last 100 chars): [0, 0, 0, 3, -15675]\n\nafter: <class 'pexpect.EOF'>\nmatch: None\nmatch_index: None\nexitstatus: None\nflag_eof: 1\npid: 20884\nchild_fd: 3\ntimeout: None\ndelimiter: <class 'pexpect.EOF'>\nlogfile: None\nmaxread: 10000\nsearchwindowsize: None\ndelaybeforesend: 0\nMwrank crashed executing [0, 0, 0, 3, -15675]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/201\n\n",
     "created_at": "2007-01-19T21:27:32Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_000201.json:
     "user": "dmharvey"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I'm not sure if this is a bug in SAGE or mwrank or if I'm just getting unlucky....
 
@@ -110,7 +110,7 @@ archive/issue_comments_000905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/201#issuecomment-905",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_000906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/201#issuecomment-906",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -258,16 +258,16 @@ Excellent, thanks!
 archive/issue_comments_000907.json:
 ```json
 {
-    "body": "Attachment [options.h](tarball://root/attachments/some-uuid/ticket201/options.h) by was created at 2007-08-17 14:35:10",
+    "body": "Attachment [options.h](tarball://root/attachments/some-uuid/ticket201/options.h) by @williamstein created at 2007-08-17 14:35:10",
     "created_at": "2007-08-17T14:35:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/201#issuecomment-907",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [options.h](tarball://root/attachments/some-uuid/ticket201/options.h) by was created at 2007-08-17 14:35:10
+Attachment [options.h](tarball://root/attachments/some-uuid/ticket201/options.h) by @williamstein created at 2007-08-17 14:35:10
 
 
 
@@ -276,16 +276,16 @@ Attachment [options.h](tarball://root/attachments/some-uuid/ticket201/options.h)
 archive/issue_comments_000908.json:
 ```json
 {
-    "body": "Attachment [realroots.cc](tarball://root/attachments/some-uuid/ticket201/realroots.cc) by was created at 2007-08-18 21:18:23",
+    "body": "Attachment [realroots.cc](tarball://root/attachments/some-uuid/ticket201/realroots.cc) by @williamstein created at 2007-08-18 21:18:23",
     "created_at": "2007-08-18T21:18:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/201#issuecomment-908",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [realroots.cc](tarball://root/attachments/some-uuid/ticket201/realroots.cc) by was created at 2007-08-18 21:18:23
+Attachment [realroots.cc](tarball://root/attachments/some-uuid/ticket201/realroots.cc) by @williamstein created at 2007-08-18 21:18:23
 
 
 
@@ -436,7 +436,7 @@ archive/issue_comments_000911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/201#issuecomment-911",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -454,7 +454,7 @@ archive/issue_comments_000912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/201#issuecomment-912",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

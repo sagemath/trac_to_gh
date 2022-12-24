@@ -3,7 +3,7 @@
 archive/issues_002482.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\n$SAGE_TEST_ITER sets the number of times each file test runs (local repeat)\n$SAGE_TEST_GLOBAL_ITER sets the number of times all tests run (global repeat)\n$SAGE_TEST_TEX sets if ptest should run the latex tests by default\n\nIssue created by migration from https://trac.sagemath.org/ticket/2482\n\n",
+    "body": "Assignee: @garyfurnish\n\n$SAGE_TEST_ITER sets the number of times each file test runs (local repeat)\n$SAGE_TEST_GLOBAL_ITER sets the number of times all tests run (global repeat)\n$SAGE_TEST_TEX sets if ptest should run the latex tests by default\n\nIssue created by migration from https://trac.sagemath.org/ticket/2482\n\n",
     "created_at": "2008-03-12T07:01:52Z",
     "labels": [
         "build",
@@ -14,10 +14,10 @@ archive/issues_002482.json:
     "title": "[with patch, needs review] ptest iterators",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2482",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 $SAGE_TEST_ITER sets the number of times each file test runs (local repeat)
 $SAGE_TEST_GLOBAL_ITER sets the number of times all tests run (global repeat)
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2482
 archive/issue_comments_016821.json:
 ```json
 {
-    "body": "Attachment [trac_2482.patch](tarball://root/attachments/some-uuid/ticket2482/trac_2482.patch) by gfurnish created at 2008-03-12 07:02:08",
+    "body": "Attachment [trac_2482.patch](tarball://root/attachments/some-uuid/ticket2482/trac_2482.patch) by @garyfurnish created at 2008-03-12 07:02:08",
     "created_at": "2008-03-12T07:02:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2482#issuecomment-16821",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_2482.patch](tarball://root/attachments/some-uuid/ticket2482/trac_2482.patch) by gfurnish created at 2008-03-12 07:02:08
+Attachment [trac_2482.patch](tarball://root/attachments/some-uuid/ticket2482/trac_2482.patch) by @garyfurnish created at 2008-03-12 07:02:08
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_016822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2482#issuecomment-16822",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

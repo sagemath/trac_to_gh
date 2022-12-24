@@ -3,7 +3,7 @@
 archive/issues_007599.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nAs the title says, this patch implements the functions vertex_cut and edge_cut in Graph.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7599\n\n",
+    "body": "Assignee: @rlmill\n\nAs the title says, this patch implements the functions vertex_cut and edge_cut in Graph.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7599\n\n",
     "created_at": "2009-12-04T07:44:20Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007599.json:
     "title": "vertex_cut and edge_cut ( minimum s-t cut )",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7599",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 As the title says, this patch implements the functions vertex_cut and edge_cut in Graph.
 
@@ -37,7 +37,7 @@ archive/issue_comments_064825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64825",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_064826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64826",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_064827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64827",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_064828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64828",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_064829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64829",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_064830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64830",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -140,16 +140,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_064831.json:
 ```json
 {
-    "body": "Attachment [trac_7599.patch](tarball://root/attachments/some-uuid/ticket7599/trac_7599.patch) by ncohen created at 2009-12-16 01:48:18",
+    "body": "Attachment [trac_7599.patch](tarball://root/attachments/some-uuid/ticket7599/trac_7599.patch) by @nathanncohen created at 2009-12-16 01:48:18",
     "created_at": "2009-12-16T01:48:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64831",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_7599.patch](tarball://root/attachments/some-uuid/ticket7599/trac_7599.patch) by ncohen created at 2009-12-16 01:48:18
+Attachment [trac_7599.patch](tarball://root/attachments/some-uuid/ticket7599/trac_7599.patch) by @nathanncohen created at 2009-12-16 01:48:18
 
 
 
@@ -163,7 +163,7 @@ archive/issue_comments_064832.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64832",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_064833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64833",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_064834.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64834",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_064835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64835",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_064836.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64836",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_064837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64837",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008784.json:
 ```json
 {
-    "body": "Assignee: jason\n\nIt is stupid that it is this easy to accidentally destabilize and segfault Sage.    Also, having a function \"quit_sage()\" available at the sage: prompt by default that does not quit sage, is dumb. \n\n```\nwstein@boxen:~/build/sage-4.4$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: quit_sage()\nExiting Sage (CPU time 0m0.04s, Wall time 0m3.16s).\nsage: quit\nExiting Sage (CPU time 0m0.07s, Wall time 0m4.80s).\n/virtual/scratch/wstein/build/sage-4.4/local/bin/sage-sage: line 206: 11559 Segmentation fault      sage-ipython \"$@\" -i\nwstein@boxen:~/build/sage-4.4$            \n```\n\n| Sage Version 4.4, Release Date: 2010-04-24                         |\n| Type notebook() for the GUI, and license() for information.        |\nThe fix is to rename quit_sage() somehow and change *all* code that calls it. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8784\n\n",
+    "body": "Assignee: @jasongrout\n\nIt is stupid that it is this easy to accidentally destabilize and segfault Sage.    Also, having a function \"quit_sage()\" available at the sage: prompt by default that does not quit sage, is dumb. \n\n```\nwstein@boxen:~/build/sage-4.4$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: quit_sage()\nExiting Sage (CPU time 0m0.04s, Wall time 0m3.16s).\nsage: quit\nExiting Sage (CPU time 0m0.07s, Wall time 0m4.80s).\n/virtual/scratch/wstein/build/sage-4.4/local/bin/sage-sage: line 206: 11559 Segmentation fault      sage-ipython \"$@\" -i\nwstein@boxen:~/build/sage-4.4$            \n```\n\n| Sage Version 4.4, Release Date: 2010-04-24                         |\n| Type notebook() for the GUI, and license() for information.        |\nThe fix is to rename quit_sage() somehow and change *all* code that calls it. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8784\n\n",
     "created_at": "2010-04-27T20:47:41Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_008784.json:
     "title": "remove quit_sage() command from all.py top level",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8784",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: jason
+Assignee: @jasongrout
 
 It is stupid that it is this easy to accidentally destabilize and segfault Sage.    Also, having a function "quit_sage()" available at the sage: prompt by default that does not quit sage, is dumb. 
 
@@ -53,7 +53,7 @@ archive/issue_comments_080422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8784#issuecomment-80422",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_080423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8784#issuecomment-80423",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_080424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8784#issuecomment-80424",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_080425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8784#issuecomment-80425",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_080426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8784#issuecomment-80426",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_080427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8784#issuecomment-80427",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_080428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8784#issuecomment-80428",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_080429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8784#issuecomment-80429",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_080430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8784#issuecomment-80430",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_080433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8784#issuecomment-80433",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_080434.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8784#issuecomment-80434",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_080435.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8784#issuecomment-80435",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_080436.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8784#issuecomment-80436",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_080437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8784#issuecomment-80437",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 

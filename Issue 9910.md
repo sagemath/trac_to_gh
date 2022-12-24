@@ -14,7 +14,7 @@ archive/issues_009910.json:
     "title": "Changing the LP formulation of feedback vertex/arc set to improve the speed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9910",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -43,7 +43,7 @@ archive/issue_comments_098577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9910",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9910#issuecomment-98577",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_098578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9910",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9910#issuecomment-98578",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_098581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9910",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9910#issuecomment-98581",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_098582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9910",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9910#issuecomment-98582",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_098583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9910",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9910#issuecomment-98583",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -195,16 +195,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_098584.json:
 ```json
 {
-    "body": "Attachment [trac_9911.patch](tarball://root/attachments/some-uuid/ticket9911/trac_9911.patch) by rlm created at 2011-01-12 01:42:33\n\nYou're still using the list syntax for constraint addition loops at the end of the patch:\n\n```\n[p.add_constraint(d[u]-d[v]+n*(b[u]+b[v]),min=1) for (u,v) in self.edges(labels=None)] \n[p.add_constraint(d[u],max=n) for u in self]\n```\n\n\nOther than that, this patch looks good. All long tests pass against sage-4.6.1.rc1 and I'm otherwise happy. Fix the one issue, ping me and I'll set this to positive review.",
+    "body": "Attachment [trac_9911.patch](tarball://root/attachments/some-uuid/ticket9911/trac_9911.patch) by @rlmill created at 2011-01-12 01:42:33\n\nYou're still using the list syntax for constraint addition loops at the end of the patch:\n\n```\n[p.add_constraint(d[u]-d[v]+n*(b[u]+b[v]),min=1) for (u,v) in self.edges(labels=None)] \n[p.add_constraint(d[u],max=n) for u in self]\n```\n\n\nOther than that, this patch looks good. All long tests pass against sage-4.6.1.rc1 and I'm otherwise happy. Fix the one issue, ping me and I'll set this to positive review.",
     "created_at": "2011-01-12T01:42:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9910",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9910#issuecomment-98584",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_9911.patch](tarball://root/attachments/some-uuid/ticket9911/trac_9911.patch) by rlm created at 2011-01-12 01:42:33
+Attachment [trac_9911.patch](tarball://root/attachments/some-uuid/ticket9911/trac_9911.patch) by @rlmill created at 2011-01-12 01:42:33
 
 You're still using the list syntax for constraint addition loops at the end of the patch:
 
@@ -264,7 +264,7 @@ archive/issue_comments_098587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9910",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9910#issuecomment-98587",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_098588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9910",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9910#issuecomment-98588",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_098589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9910",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9910#issuecomment-98589",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_098590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9910",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9910#issuecomment-98590",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

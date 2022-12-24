@@ -14,7 +14,7 @@ archive/issues_001823.json:
     "title": "[with patch] RDF/CDF coverage, consistent hashing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1823",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1823
 archive/issue_comments_011535.json:
 ```json
 {
-    "body": "Attachment [rdf-cdf-coverage.diff](tarball://root/attachments/some-uuid/ticket1823/rdf-cdf-coverage.diff) by robertwb created at 2008-01-18 02:14:43",
+    "body": "Attachment [rdf-cdf-coverage.diff](tarball://root/attachments/some-uuid/ticket1823/rdf-cdf-coverage.diff) by @robertwb created at 2008-01-18 02:14:43",
     "created_at": "2008-01-18T02:14:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1823#issuecomment-11535",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [rdf-cdf-coverage.diff](tarball://root/attachments/some-uuid/ticket1823/rdf-cdf-coverage.diff) by robertwb created at 2008-01-18 02:14:43
+Attachment [rdf-cdf-coverage.diff](tarball://root/attachments/some-uuid/ticket1823/rdf-cdf-coverage.diff) by @robertwb created at 2008-01-18 02:14:43
 
 
 
@@ -52,16 +52,16 @@ Attachment [rdf-cdf-coverage.diff](tarball://root/attachments/some-uuid/ticket18
 archive/issue_comments_011536.json:
 ```json
 {
-    "body": "Changing assignee from somebody to robertwb.",
+    "body": "Changing assignee from somebody to @robertwb.",
     "created_at": "2008-01-18T02:15:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1823#issuecomment-11536",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from somebody to robertwb.
+Changing assignee from somebody to @robertwb.
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_011537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1823#issuecomment-11537",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_011538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1823#issuecomment-11538",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_011539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1823#issuecomment-11539",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_011540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1823#issuecomment-11540",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_011541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1823#issuecomment-11541",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_011542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1823#issuecomment-11542",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_006535.json:
     "title": "add environ variables to \"sage -pkg\" script so don't get OS X metatfiles",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6535",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -58,7 +58,7 @@ archive/issue_comments_053278.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6535#issuecomment-53278",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_053279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6535#issuecomment-53279",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_053280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6535#issuecomment-53280",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

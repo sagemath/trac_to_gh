@@ -3,7 +3,7 @@
 archive/issues_001562.json:
 ```json
 {
-    "body": "Assignee: was\n\nImplement acot, asin, etc. in Sage. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1562\n\n",
+    "body": "Assignee: @williamstein\n\nImplement acot, asin, etc. in Sage. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1562\n\n",
     "created_at": "2007-12-19T03:20:27Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_001562.json:
     "title": "Inverse trig functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1562",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Implement acot, asin, etc. in Sage. 
 
@@ -37,7 +37,7 @@ archive/issue_comments_009944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1562#issuecomment-9944",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_009946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1562#issuecomment-9946",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_009947.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1562#issuecomment-9947",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_009948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1562#issuecomment-9948",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

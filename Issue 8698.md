@@ -3,7 +3,7 @@
 archive/issues_008698.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  bblochl@arcor.de simon.king@nuigalway.ie leif minz\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8698\n\n",
+    "body": "Assignee: mvngu\n\nCC:  bblochl@arcor.de simon.king@nuigalway.ie @nexttime minz\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8698\n\n",
     "created_at": "2010-04-17T02:49:06Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_008698.json:
 ```
 Assignee: mvngu
 
-CC:  bblochl@arcor.de simon.king@nuigalway.ie leif minz
+CC:  bblochl@arcor.de simon.king@nuigalway.ie @nexttime minz
 
 As the subject says.
 
@@ -75,7 +75,7 @@ archive/issue_comments_079230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79230",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_079231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79231",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -146,16 +146,16 @@ based on Sage 4.3.5
 archive/issue_comments_079233.json:
 ```json
 {
-    "body": "Attachment [trac_8698-tour-de.patch](tarball://root/attachments/some-uuid/ticket8698/trac_8698-tour-de.patch) by leif created at 2010-04-19 02:22:59\n\nThanks, Simon... ;-)\n\nI think what's at all meant by \"Notebook\" has to be explained, too. A typical German reader would first think of his laptop, not a user interface (which is funny if not annoying in the translation of the user guide when talking about `ssh_keygen`...).\n\nIt would be nice if you could supply a patch on top of Minh's.\n\n-Leif",
+    "body": "Attachment [trac_8698-tour-de.patch](tarball://root/attachments/some-uuid/ticket8698/trac_8698-tour-de.patch) by @nexttime created at 2010-04-19 02:22:59\n\nThanks, Simon... ;-)\n\nI think what's at all meant by \"Notebook\" has to be explained, too. A typical German reader would first think of his laptop, not a user interface (which is funny if not annoying in the translation of the user guide when talking about `ssh_keygen`...).\n\nIt would be nice if you could supply a patch on top of Minh's.\n\n-Leif",
     "created_at": "2010-04-19T02:22:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79233",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_8698-tour-de.patch](tarball://root/attachments/some-uuid/ticket8698/trac_8698-tour-de.patch) by leif created at 2010-04-19 02:22:59
+Attachment [trac_8698-tour-de.patch](tarball://root/attachments/some-uuid/ticket8698/trac_8698-tour-de.patch) by @nexttime created at 2010-04-19 02:22:59
 
 Thanks, Simon... ;-)
 
@@ -177,7 +177,7 @@ archive/issue_comments_079234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79234",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -190,16 +190,16 @@ Adding a section on the notebook; adding the missing plots; some proof reading
 archive/issue_comments_079235.json:
 ```json
 {
-    "body": "Attachment [trac_8698-tour-de-sage_reviewer.patch](tarball://root/attachments/some-uuid/ticket8698/trac_8698-tour-de-sage_reviewer.patch) by SimonKing created at 2010-04-19 09:20:20\n\nReplying to [comment:5 leif]:\n> I think what's at all meant by \"Notebook\" has to be explained, too. \n\nGood idea (and perhaps it would make sense to have this in English, too).\n\n> It would be nice if you could supply a patch on top of Minh's.\n\nDone. \n\nMy patch adds a section on the notebook (I hope I didn't write too much nonsense, because I hardly ever use the notebook) and the two png-plots that were missing.\n\nMinh: Is it OK to first finish this ticket off before focusing on #8660? Or should the two tickets be united at an earlier stage?\n\nBest regards, Simon",
+    "body": "Attachment [trac_8698-tour-de-sage_reviewer.patch](tarball://root/attachments/some-uuid/ticket8698/trac_8698-tour-de-sage_reviewer.patch) by @simon-king-jena created at 2010-04-19 09:20:20\n\nReplying to [comment:5 leif]:\n> I think what's at all meant by \"Notebook\" has to be explained, too. \n\nGood idea (and perhaps it would make sense to have this in English, too).\n\n> It would be nice if you could supply a patch on top of Minh's.\n\nDone. \n\nMy patch adds a section on the notebook (I hope I didn't write too much nonsense, because I hardly ever use the notebook) and the two png-plots that were missing.\n\nMinh: Is it OK to first finish this ticket off before focusing on #8660? Or should the two tickets be united at an earlier stage?\n\nBest regards, Simon",
     "created_at": "2010-04-19T09:20:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79235",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [trac_8698-tour-de-sage_reviewer.patch](tarball://root/attachments/some-uuid/ticket8698/trac_8698-tour-de-sage_reviewer.patch) by SimonKing created at 2010-04-19 09:20:20
+Attachment [trac_8698-tour-de-sage_reviewer.patch](tarball://root/attachments/some-uuid/ticket8698/trac_8698-tour-de-sage_reviewer.patch) by @simon-king-jena created at 2010-04-19 09:20:20
 
 Replying to [comment:5 leif]:
 > I think what's at all meant by "Notebook" has to be explained, too. 
@@ -228,7 +228,7 @@ archive/issue_comments_079236.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79236",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_079237.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79237",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_079239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79239",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -321,7 +321,7 @@ archive/issue_comments_079240.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79240",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_079241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79241",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -357,7 +357,7 @@ archive/issue_comments_079242.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79242",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -377,7 +377,7 @@ archive/issue_comments_079243.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79243",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -395,7 +395,7 @@ archive/issue_comments_079244.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79244",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -413,7 +413,7 @@ archive/issue_comments_079245.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79245",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -449,7 +449,7 @@ archive/issue_comments_079247.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79247",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -467,7 +467,7 @@ archive/issue_comments_079248.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79248",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -485,7 +485,7 @@ archive/issue_comments_079249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79249",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -503,7 +503,7 @@ archive/issue_comments_079250.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79250",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -521,7 +521,7 @@ archive/issue_comments_079251.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79251",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -539,7 +539,7 @@ archive/issue_comments_079252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79252",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003748.json:
     "title": "bug in integers modulo n",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3748",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: somebody

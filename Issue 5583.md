@@ -3,7 +3,7 @@
 archive/issues_005583.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nCC:  tscrim\n\n\n```\nsage: PermutationGroup([(), (1,3)]).has_coerce_map_from( PermutationGroup([(), (1,2)]) )\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5583\n\n",
+    "body": "Assignee: joyner\n\nCC:  @tscrim\n\n\n```\nsage: PermutationGroup([(), (1,3)]).has_coerce_map_from( PermutationGroup([(), (1,2)]) )\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5583\n\n",
     "created_at": "2009-03-22T11:36:05Z",
     "labels": [
         "group theory",
@@ -14,12 +14,12 @@ archive/issues_005583.json:
     "title": "coercion bug in perm groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5583",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: joyner
 
-CC:  tscrim
+CC:  @tscrim
 
 
 ```
@@ -44,7 +44,7 @@ archive/issue_comments_043519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5583#issuecomment-43519",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_043520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5583#issuecomment-43520",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_043521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5583#issuecomment-43521",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_043522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5583#issuecomment-43522",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_043523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5583#issuecomment-43523",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_043524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5583#issuecomment-43524",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_043525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5583#issuecomment-43525",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_043526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5583#issuecomment-43526",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_043527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5583#issuecomment-43527",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_043528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5583#issuecomment-43528",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_043529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5583#issuecomment-43529",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

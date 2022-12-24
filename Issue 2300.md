@@ -3,7 +3,7 @@
 archive/issues_002300.json:
 ```json
 {
-    "body": "Assignee: SimonKing\n\nCC:  malb@informatik.uni-bremen.de\n\nKeywords: copy SingularElement\n\nSo far, there was no method for copying a `SingularElement`. Calling `copy` on a `SingularElement` resulted in an `(invalid object -- defined in terms of closed session)`.\n\nThe patch provides a `__copy__` method. In fact, this is quite easy: For most objects `S` of type `SingularElement`, it suffices to return `singular(S.name())`. One has to make an exception when `S` is a ring, because `singular(S.name)())` would just yield another name for *the same* ring. Therefore, `(S.ringlist()).ring()` is used for duplication of a ring. Examples:\n\n\n```\nsage: R=singular.ring(0,'(x,y)','dp')\nsage: M=singular.matrix(3,3,'0,0,-x, 0,y,0, x*y,0,0')\nsage: N=copy(M)\nsage: N[1,1]=singular('x+y')\nsage: N\nx+y,0,-x,\n0,  y,0,\nx*y,0,0\nsage: M\n0,  0,-x,\n0,  y,0,\nx*y,0,0\n```\n\nHence, N really is a copy of M. Changing N does not affect M\n\n```\nsage: S=copy(R)\nsage: S.set_ring()\nsage: S\n//   characteristic : 0\n//   number of vars : 2\n//        block   1 : ordering dp\n//                  : names    x y\n//        block   2 : ordering C\nsage: R.fetch(M)\n0,  0,-x,\n0,  y,0,\nx*y,0,0\nsage: M\n`sage1`\n```\n\nNote that in the last example, `M` is unknown after making `S` active. So, `S` is a copy of `R`, but not identical to `R`.\nDefining `S=singular(R.name())` would be a mistake: The matrix `M` would be known in `S`, and any change to `M` when `S` is active would persist after returning to `R`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2300\n\n",
+    "body": "Assignee: @simon-king-jena\n\nCC:  malb@informatik.uni-bremen.de\n\nKeywords: copy SingularElement\n\nSo far, there was no method for copying a `SingularElement`. Calling `copy` on a `SingularElement` resulted in an `(invalid object -- defined in terms of closed session)`.\n\nThe patch provides a `__copy__` method. In fact, this is quite easy: For most objects `S` of type `SingularElement`, it suffices to return `singular(S.name())`. One has to make an exception when `S` is a ring, because `singular(S.name)())` would just yield another name for *the same* ring. Therefore, `(S.ringlist()).ring()` is used for duplication of a ring. Examples:\n\n\n```\nsage: R=singular.ring(0,'(x,y)','dp')\nsage: M=singular.matrix(3,3,'0,0,-x, 0,y,0, x*y,0,0')\nsage: N=copy(M)\nsage: N[1,1]=singular('x+y')\nsage: N\nx+y,0,-x,\n0,  y,0,\nx*y,0,0\nsage: M\n0,  0,-x,\n0,  y,0,\nx*y,0,0\n```\n\nHence, N really is a copy of M. Changing N does not affect M\n\n```\nsage: S=copy(R)\nsage: S.set_ring()\nsage: S\n//   characteristic : 0\n//   number of vars : 2\n//        block   1 : ordering dp\n//                  : names    x y\n//        block   2 : ordering C\nsage: R.fetch(M)\n0,  0,-x,\n0,  y,0,\nx*y,0,0\nsage: M\n`sage1`\n```\n\nNote that in the last example, `M` is unknown after making `S` active. So, `S` is a copy of `R`, but not identical to `R`.\nDefining `S=singular(R.name())` would be a mistake: The matrix `M` would be known in `S`, and any change to `M` when `S` is active would persist after returning to `R`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2300\n\n",
     "created_at": "2008-02-25T09:57:08Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_002300.json:
     "title": "A copy method for SingularElement [with patch, needs review]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2300",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
-Assignee: SimonKing
+Assignee: @simon-king-jena
 
 CC:  malb@informatik.uni-bremen.de
 
@@ -81,7 +81,7 @@ archive/issue_comments_015263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2300#issuecomment-15263",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_015264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2300#issuecomment-15264",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_015265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2300#issuecomment-15265",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -139,16 +139,16 @@ EXAMPLE:
 archive/issue_comments_015266.json:
 ```json
 {
-    "body": "Attachment [SingularElementCopy.patch](tarball://root/attachments/some-uuid/ticket2300/SingularElementCopy.patch) by SimonKing created at 2008-02-26 23:29:10\n\nSorry for being late, and sorry for accidentally adding the same patch twice.\n\nI changed the patch according to the referee report, hence, the examples are indented, and it is `self.parent()(self.name())`. \n\nThe patch is relative to sage-2.10.3.alpha0",
+    "body": "Attachment [SingularElementCopy.patch](tarball://root/attachments/some-uuid/ticket2300/SingularElementCopy.patch) by @simon-king-jena created at 2008-02-26 23:29:10\n\nSorry for being late, and sorry for accidentally adding the same patch twice.\n\nI changed the patch according to the referee report, hence, the examples are indented, and it is `self.parent()(self.name())`. \n\nThe patch is relative to sage-2.10.3.alpha0",
     "created_at": "2008-02-26T23:29:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2300#issuecomment-15266",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [SingularElementCopy.patch](tarball://root/attachments/some-uuid/ticket2300/SingularElementCopy.patch) by SimonKing created at 2008-02-26 23:29:10
+Attachment [SingularElementCopy.patch](tarball://root/attachments/some-uuid/ticket2300/SingularElementCopy.patch) by @simon-king-jena created at 2008-02-26 23:29:10
 
 Sorry for being late, and sorry for accidentally adding the same patch twice.
 
@@ -204,7 +204,7 @@ archive/issue_comments_015269.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2300#issuecomment-15269",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -217,16 +217,16 @@ Changing status from closed to reopened.
 archive/issue_comments_015270.json:
 ```json
 {
-    "body": "Attachment [bugfix__copy__.patch](tarball://root/attachments/some-uuid/ticket2300/bugfix__copy__.patch) by SimonKing created at 2008-02-28 12:01:17\n\nSorry, i have to re-open the ticket because i found a bug in my patch:\n\n\n```\nsage: R=singular.ring(0,'(x,y)','dp')\nsage: L=R.ringlist()\nsage: L[4]=singular.ideal('x**2-5')\nsage: Q=L.ring()\nsage: otherR=singular.ring(5,'(x)','dp')\nsage: cpQ=copy(Q)\n<snip>\n<type 'exceptions.TypeError'>: Singular error:\n   ? ring with polynomial data must be the base ring or compatible\n   ? error occurred in STDIN line 36: `def sage12=ringlist(sage10);`\n```\n\n\nThe problem is that `ringlist` contains polynomial data, and thus only works if the basering fits.\n\nSolution: If `self` is a ring/qring then we first make it active `basering`, copy `self` using `ringlist`, return to the old `basering`, and return the copy of `self`.\n\nI extended the doc tests accordingly. The new doc test would fail with the old version of `__copy__`.\n\nThe patch `bugfix__copy__.patch` is relative to `sage-2.10.3.rc0`.",
+    "body": "Attachment [bugfix__copy__.patch](tarball://root/attachments/some-uuid/ticket2300/bugfix__copy__.patch) by @simon-king-jena created at 2008-02-28 12:01:17\n\nSorry, i have to re-open the ticket because i found a bug in my patch:\n\n\n```\nsage: R=singular.ring(0,'(x,y)','dp')\nsage: L=R.ringlist()\nsage: L[4]=singular.ideal('x**2-5')\nsage: Q=L.ring()\nsage: otherR=singular.ring(5,'(x)','dp')\nsage: cpQ=copy(Q)\n<snip>\n<type 'exceptions.TypeError'>: Singular error:\n   ? ring with polynomial data must be the base ring or compatible\n   ? error occurred in STDIN line 36: `def sage12=ringlist(sage10);`\n```\n\n\nThe problem is that `ringlist` contains polynomial data, and thus only works if the basering fits.\n\nSolution: If `self` is a ring/qring then we first make it active `basering`, copy `self` using `ringlist`, return to the old `basering`, and return the copy of `self`.\n\nI extended the doc tests accordingly. The new doc test would fail with the old version of `__copy__`.\n\nThe patch `bugfix__copy__.patch` is relative to `sage-2.10.3.rc0`.",
     "created_at": "2008-02-28T12:01:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2300#issuecomment-15270",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [bugfix__copy__.patch](tarball://root/attachments/some-uuid/ticket2300/bugfix__copy__.patch) by SimonKing created at 2008-02-28 12:01:17
+Attachment [bugfix__copy__.patch](tarball://root/attachments/some-uuid/ticket2300/bugfix__copy__.patch) by @simon-king-jena created at 2008-02-28 12:01:17
 
 Sorry, i have to re-open the ticket because i found a bug in my patch:
 
@@ -265,7 +265,7 @@ archive/issue_comments_015271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2300#issuecomment-15271",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_015272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2300#issuecomment-15272",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_015273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2300#issuecomment-15273",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -319,7 +319,7 @@ archive/issue_comments_015274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2300#issuecomment-15274",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -374,7 +374,7 @@ archive/issue_comments_015276.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2300#issuecomment-15276",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -392,7 +392,7 @@ archive/issue_comments_015277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2300#issuecomment-15277",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 

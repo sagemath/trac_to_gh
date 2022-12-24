@@ -14,7 +14,7 @@ archive/issues_007006.json:
     "title": "[with patch; needs review] os x 10.6 port -- update mpir to autodetect ABI on OS X since ABI=32 is *no* longer necessarily the default on 10.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7006",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -41,7 +41,7 @@ archive/issue_comments_057939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7006",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7006#issuecomment-57939",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_057940.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7006",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7006#issuecomment-57940",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

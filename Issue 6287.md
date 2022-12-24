@@ -3,7 +3,7 @@
 archive/issues_006287.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  awebb\n\nWhen we upgraded Sage from Clisp to ECL we forgot to make it so\n\n```\nsage -lisp\n```\n \nworks and runs ecl.  Right now it still runs clisp if that happens to be on your system, which is silly.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6287\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @maxthemouse\n\nWhen we upgraded Sage from Clisp to ECL we forgot to make it so\n\n```\nsage -lisp\n```\n \nworks and runs ecl.  Right now it still runs clisp if that happens to be on your system, which is silly.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6287\n\n",
     "created_at": "2009-06-14T20:56:44Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_006287.json:
     "title": "sage -lisp should run ECL",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6287",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
 
-CC:  awebb
+CC:  @maxthemouse
 
 When we upgraded Sage from Clisp to ECL we forgot to make it so
 
@@ -46,7 +46,7 @@ archive/issue_comments_050197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6287#issuecomment-50197",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -59,16 +59,16 @@ Replaced sage -clisp with sage -ecl and pointed sage -lisp at ecl.
 archive/issue_comments_050198.json:
 ```json
 {
-    "body": "Attachment [trac_6287_run_ecl.patch](tarball://root/attachments/some-uuid/ticket6287/trac_6287_run_ecl.patch) by awebb created at 2009-08-17 10:10:14\n\noops, forgot to change clisp to ecl in one line.  ~ Adam",
+    "body": "Attachment [trac_6287_run_ecl.patch](tarball://root/attachments/some-uuid/ticket6287/trac_6287_run_ecl.patch) by @maxthemouse created at 2009-08-17 10:10:14\n\noops, forgot to change clisp to ecl in one line.  ~ Adam",
     "created_at": "2009-08-17T10:10:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6287#issuecomment-50198",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
-Attachment [trac_6287_run_ecl.patch](tarball://root/attachments/some-uuid/ticket6287/trac_6287_run_ecl.patch) by awebb created at 2009-08-17 10:10:14
+Attachment [trac_6287_run_ecl.patch](tarball://root/attachments/some-uuid/ticket6287/trac_6287_run_ecl.patch) by @maxthemouse created at 2009-08-17 10:10:14
 
 oops, forgot to change clisp to ecl in one line.  ~ Adam
 
@@ -102,7 +102,7 @@ archive/issue_comments_050200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6287#issuecomment-50200",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_050202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6287#issuecomment-50202",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_050203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6287#issuecomment-50203",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 

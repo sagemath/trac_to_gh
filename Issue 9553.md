@@ -3,7 +3,7 @@
 archive/issues_009553.json:
 ```json
 {
-    "body": "Assignee: was\n\nWhen doing \"sage -ba\" from the shell, one gets a prompt:\n\n```\n *** WARNING ***\n You are about to rebuild the entire Sage library.\n This will take a significant amount of time.\n Do you want to proceed? [y/n]\n```\n\n\nSince this waits forever for user input, it is harder to use in non-interactive scripts.  I propose to change the prompt and add a timer such that \"sage -ba\" continues anyway when nothing has been typed for 30 seconds or so.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9553\n\n",
+    "body": "Assignee: @williamstein\n\nWhen doing \"sage -ba\" from the shell, one gets a prompt:\n\n```\n *** WARNING ***\n You are about to rebuild the entire Sage library.\n This will take a significant amount of time.\n Do you want to proceed? [y/n]\n```\n\n\nSince this waits forever for user input, it is harder to use in non-interactive scripts.  I propose to change the prompt and add a timer such that \"sage -ba\" continues anyway when nothing has been typed for 30 seconds or so.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9553\n\n",
     "created_at": "2010-07-20T08:44:27Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_009553.json:
     "title": "sage -ba (build all) waits for input, making it harder to use in scripts",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9553",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 When doing "sage -ba" from the shell, one gets a prompt:
 
@@ -47,7 +47,7 @@ archive/issue_comments_092076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9553#issuecomment-92076",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_092077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9553#issuecomment-92077",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -87,16 +87,16 @@ Changing status from new to needs_review.
 archive/issue_comments_092078.json:
 ```json
 {
-    "body": "Attachment [9553.patch](tarball://root/attachments/some-uuid/ticket9553/9553.patch) by jdemeyer created at 2010-07-23 11:13:46\n\nApply this to the local/bin branch",
+    "body": "Attachment [9553.patch](tarball://root/attachments/some-uuid/ticket9553/9553.patch) by @jdemeyer created at 2010-07-23 11:13:46\n\nApply this to the local/bin branch",
     "created_at": "2010-07-23T11:13:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9553#issuecomment-92078",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9553.patch](tarball://root/attachments/some-uuid/ticket9553/9553.patch) by jdemeyer created at 2010-07-23 11:13:46
+Attachment [9553.patch](tarball://root/attachments/some-uuid/ticket9553/9553.patch) by @jdemeyer created at 2010-07-23 11:13:46
 
 Apply this to the local/bin branch
 
@@ -112,7 +112,7 @@ archive/issue_comments_092079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9553#issuecomment-92079",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_092080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9553#issuecomment-92080",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -157,16 +157,16 @@ As far as I'm concerned, we could even complete remove the prompt and make -ba a
 archive/issue_comments_092081.json:
 ```json
 {
-    "body": "Attachment [trac_9553-use_the_baforce_message.patch](tarball://root/attachments/some-uuid/ticket9553/trac_9553-use_the_baforce_message.patch) by mpatel created at 2010-08-19 21:49:34\n\n\"use\" --> \"Use\".  scripts repository.  Apply only this patch.",
+    "body": "Attachment [trac_9553-use_the_baforce_message.patch](tarball://root/attachments/some-uuid/ticket9553/trac_9553-use_the_baforce_message.patch) by @qed777 created at 2010-08-19 21:49:34\n\n\"use\" --> \"Use\".  scripts repository.  Apply only this patch.",
     "created_at": "2010-08-19T21:49:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9553#issuecomment-92081",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_9553-use_the_baforce_message.patch](tarball://root/attachments/some-uuid/ticket9553/trac_9553-use_the_baforce_message.patch) by mpatel created at 2010-08-19 21:49:34
+Attachment [trac_9553-use_the_baforce_message.patch](tarball://root/attachments/some-uuid/ticket9553/trac_9553-use_the_baforce_message.patch) by @qed777 created at 2010-08-19 21:49:34
 
 "use" --> "Use".  scripts repository.  Apply only this patch.
 
@@ -182,7 +182,7 @@ archive/issue_comments_092082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9553#issuecomment-92082",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_092083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9553#issuecomment-92083",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_092084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9553#issuecomment-92084",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_092085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9553#issuecomment-92085",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_092086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9553#issuecomment-92086",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 

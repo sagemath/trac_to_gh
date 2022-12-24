@@ -3,7 +3,7 @@
 archive/issues_009461.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  jmantysalo\n\nStart with a build of 4.5.alpha4 for which all long doctests pass.  Run, e.g.,\n\n```sh\n$ ./sage -t -long -sagenb -randorder=12345 devel/sage\n```\n\nMany tests fail.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9461\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @jm58660\n\nStart with a build of 4.5.alpha4 for which all long doctests pass.  Run, e.g.,\n\n```sh\n$ ./sage -t -long -sagenb -randorder=12345 devel/sage\n```\n\nMany tests fail.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9461\n\n",
     "created_at": "2010-07-09T05:28:56Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_009461.json:
     "title": "Doctest failures with sage -t -randorder=X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9461",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: mvngu
 
-CC:  jmantysalo
+CC:  @jm58660
 
 Start with a build of 4.5.alpha4 for which all long doctests pass.  Run, e.g.,
 
@@ -45,7 +45,7 @@ archive/issue_comments_090741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9461",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9461#issuecomment-90741",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_090742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9461",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9461#issuecomment-90742",
-    "user": "jmantysalo"
+    "user": "@jm58660"
 }
 ```
 

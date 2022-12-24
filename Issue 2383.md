@@ -14,7 +14,7 @@ archive/issues_002383.json:
     "title": "memory leak when converting between GMP-based types and numpy types",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2383",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 Assignee: mabshoff
@@ -136,7 +136,7 @@ archive/issue_comments_016076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2383#issuecomment-16076",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_016077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2383#issuecomment-16077",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -205,16 +205,16 @@ sage: get_memory_usage()
 archive/issue_comments_016078.json:
 ```json
 {
-    "body": "Attachment [memleak.py](tarball://root/attachments/some-uuid/ticket2383/memleak.py) by robertwb created at 2008-03-16 09:14:12\n\nThe attached pure python file leaks too.",
+    "body": "Attachment [memleak.py](tarball://root/attachments/some-uuid/ticket2383/memleak.py) by @robertwb created at 2008-03-16 09:14:12\n\nThe attached pure python file leaks too.",
     "created_at": "2008-03-16T09:14:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2383#issuecomment-16078",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [memleak.py](tarball://root/attachments/some-uuid/ticket2383/memleak.py) by robertwb created at 2008-03-16 09:14:12
+Attachment [memleak.py](tarball://root/attachments/some-uuid/ticket2383/memleak.py) by @robertwb created at 2008-03-16 09:14:12
 
 The attached pure python file leaks too.
 

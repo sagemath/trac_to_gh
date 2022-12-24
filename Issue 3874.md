@@ -3,7 +3,7 @@
 archive/issues_003874.json:
 ```json
 {
-    "body": "Assignee: was\n\nplot(moebius) plots the Moebius function nicely from 0 to 50.\nplot(moebius,50,100) plots the y-values of the Moebius function nicely from 50 to 100. Unfortunately, the x-values are still from 0 to 50!\n\nIssue created by migration from https://trac.sagemath.org/ticket/3874\n\n",
+    "body": "Assignee: @williamstein\n\nplot(moebius) plots the Moebius function nicely from 0 to 50.\nplot(moebius,50,100) plots the y-values of the Moebius function nicely from 50 to 100. Unfortunately, the x-values are still from 0 to 50!\n\nIssue created by migration from https://trac.sagemath.org/ticket/3874\n\n",
     "created_at": "2008-08-15T13:20:01Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_003874.json:
     "title": "Moebius plot bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3874",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 plot(moebius) plots the Moebius function nicely from 0 to 50.
 plot(moebius,50,100) plots the y-values of the Moebius function nicely from 50 to 100. Unfortunately, the x-values are still from 0 to 50!
@@ -33,16 +33,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3874
 archive/issue_comments_027628.json:
 ```json
 {
-    "body": "Attachment [moebius.patch](tarball://root/attachments/some-uuid/ticket3874/moebius.patch) by kcrisman created at 2008-08-15 13:22:46",
+    "body": "Attachment [moebius.patch](tarball://root/attachments/some-uuid/ticket3874/moebius.patch) by @kcrisman created at 2008-08-15 13:22:46",
     "created_at": "2008-08-15T13:22:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3874#issuecomment-27628",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [moebius.patch](tarball://root/attachments/some-uuid/ticket3874/moebius.patch) by kcrisman created at 2008-08-15 13:22:46
+Attachment [moebius.patch](tarball://root/attachments/some-uuid/ticket3874/moebius.patch) by @kcrisman created at 2008-08-15 13:22:46
 
 
 
@@ -51,16 +51,16 @@ Attachment [moebius.patch](tarball://root/attachments/some-uuid/ticket3874/moebi
 archive/issue_comments_027629.json:
 ```json
 {
-    "body": "Changing assignee from was to kcrisman.",
+    "body": "Changing assignee from @williamstein to @kcrisman.",
     "created_at": "2008-08-15T13:22:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3874#issuecomment-27629",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Changing assignee from was to kcrisman.
+Changing assignee from @williamstein to @kcrisman.
 
 
 
@@ -74,7 +74,7 @@ archive/issue_comments_027630.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3874#issuecomment-27630",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_027631.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3874#issuecomment-27631",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

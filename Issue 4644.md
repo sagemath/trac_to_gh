@@ -3,7 +3,7 @@
 archive/issues_004644.json:
 ```json
 {
-    "body": "Assignee: was\n\nWe used to have:\n\n\n```\n[jaap@paix sage-3.1.1]$ ./sage -sh\n\nStarting subshell with Sage environment variables set.\nBe sure to exit when you are done and do not do anything\nwith other copies of Sage!\n\nSage subshell$ exit\nexit\nExited Sage subshell.\n[jaap@paix sage-3.1.1]$ \n\n```\n\n\nBut in sage-3.2:\n\n\n```\n[jaap@paix sage-3.2]$ ./sage -sh\n\nStarting subshell with Sage environment variables set.\nBe sure to exit when you are done and do not do anything\nwith other copies of Sage!\n\n[jaap@paix sage-3.2]$ \n\n```\n\n\nI've been bitten by this once more!\n\nJaap\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4644\n\n",
+    "body": "Assignee: @williamstein\n\nWe used to have:\n\n\n```\n[jaap@paix sage-3.1.1]$ ./sage -sh\n\nStarting subshell with Sage environment variables set.\nBe sure to exit when you are done and do not do anything\nwith other copies of Sage!\n\nSage subshell$ exit\nexit\nExited Sage subshell.\n[jaap@paix sage-3.1.1]$ \n\n```\n\n\nBut in sage-3.2:\n\n\n```\n[jaap@paix sage-3.2]$ ./sage -sh\n\nStarting subshell with Sage environment variables set.\nBe sure to exit when you are done and do not do anything\nwith other copies of Sage!\n\n[jaap@paix sage-3.2]$ \n\n```\n\n\nI've been bitten by this once more!\n\nJaap\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4644\n\n",
     "created_at": "2008-11-28T18:24:42Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_004644.json:
     "title": "No new prompt when doing a ./sage -sh",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4644",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 We used to have:
 
@@ -102,7 +102,7 @@ archive/issue_comments_034957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4644#issuecomment-34957",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_034958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4644#issuecomment-34958",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_034959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4644#issuecomment-34959",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_034960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4644#issuecomment-34960",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -229,16 +229,16 @@ I'll upload the patch from that thread in a moment.
 archive/issue_comments_034961.json:
 ```json
 {
-    "body": "Attachment [trac_4644.patch](tarball://root/attachments/some-uuid/ticket4644/trac_4644.patch) by ddrake created at 2009-09-28 23:15:38",
+    "body": "Attachment [trac_4644.patch](tarball://root/attachments/some-uuid/ticket4644/trac_4644.patch) by @dandrake created at 2009-09-28 23:15:38",
     "created_at": "2009-09-28T23:15:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4644#issuecomment-34961",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_4644.patch](tarball://root/attachments/some-uuid/ticket4644/trac_4644.patch) by ddrake created at 2009-09-28 23:15:38
+Attachment [trac_4644.patch](tarball://root/attachments/some-uuid/ticket4644/trac_4644.patch) by @dandrake created at 2009-09-28 23:15:38
 
 
 
@@ -252,7 +252,7 @@ archive/issue_comments_034962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4644#issuecomment-34962",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_034963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4644#issuecomment-34963",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_034964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4644#issuecomment-34964",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

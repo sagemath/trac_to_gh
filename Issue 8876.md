@@ -3,7 +3,7 @@
 archive/issues_008876.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nKeywords: Triangular Morphisms\n\nPatch in progress on sage-combinat queue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8876\n\n",
+    "body": "Assignee: @hivert\n\nKeywords: Triangular Morphisms\n\nPatch in progress on sage-combinat queue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8876\n\n",
     "created_at": "2010-05-04T22:37:22Z",
     "labels": [
         "categories",
@@ -14,10 +14,10 @@ archive/issues_008876.json:
     "title": "Allows triangular morphisms to have domain and codomain with different index sets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8876",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
 Keywords: Triangular Morphisms
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8876
 archive/issue_comments_081571.json:
 ```json
 {
-    "body": "Attachment [trac_8876-triangular_morphisms_improve-fh.patch](tarball://root/attachments/some-uuid/ticket8876/trac_8876-triangular_morphisms_improve-fh.patch) by hivert created at 2010-06-02 10:15:19",
+    "body": "Attachment [trac_8876-triangular_morphisms_improve-fh.patch](tarball://root/attachments/some-uuid/ticket8876/trac_8876-triangular_morphisms_improve-fh.patch) by @hivert created at 2010-06-02 10:15:19",
     "created_at": "2010-06-02T10:15:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8876#issuecomment-81571",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8876-triangular_morphisms_improve-fh.patch](tarball://root/attachments/some-uuid/ticket8876/trac_8876-triangular_morphisms_improve-fh.patch) by hivert created at 2010-06-02 10:15:19
+Attachment [trac_8876-triangular_morphisms_improve-fh.patch](tarball://root/attachments/some-uuid/ticket8876/trac_8876-triangular_morphisms_improve-fh.patch) by @hivert created at 2010-06-02 10:15:19
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_081572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8876#issuecomment-81572",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -70,16 +70,16 @@ Changing status from new to needs_review.
 archive/issue_comments_081573.json:
 ```json
 {
-    "body": "Attachment [trac_8876-reviewer_patch-jb.patch](tarball://root/attachments/some-uuid/ticket8876/trac_8876-reviewer_patch-jb.patch) by jbandlow created at 2010-06-03 22:44:36\n\nHi Florent, I found some issues with the file as I was going through it, which I've fixed in the attached reviewer patch. (Many were probably my fault to begin with.)  Everything else looks good to me.  If you approve my reviewer patch and verify that all tests pass on massena without prereqs, you can set a positive review.  (I will post my reviewer patch on the combinat queue immediately below yours right now.)",
+    "body": "Attachment [trac_8876-reviewer_patch-jb.patch](tarball://root/attachments/some-uuid/ticket8876/trac_8876-reviewer_patch-jb.patch) by @jbandlow created at 2010-06-03 22:44:36\n\nHi Florent, I found some issues with the file as I was going through it, which I've fixed in the attached reviewer patch. (Many were probably my fault to begin with.)  Everything else looks good to me.  If you approve my reviewer patch and verify that all tests pass on massena without prereqs, you can set a positive review.  (I will post my reviewer patch on the combinat queue immediately below yours right now.)",
     "created_at": "2010-06-03T22:44:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8876#issuecomment-81573",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
-Attachment [trac_8876-reviewer_patch-jb.patch](tarball://root/attachments/some-uuid/ticket8876/trac_8876-reviewer_patch-jb.patch) by jbandlow created at 2010-06-03 22:44:36
+Attachment [trac_8876-reviewer_patch-jb.patch](tarball://root/attachments/some-uuid/ticket8876/trac_8876-reviewer_patch-jb.patch) by @jbandlow created at 2010-06-03 22:44:36
 
 Hi Florent, I found some issues with the file as I was going through it, which I've fixed in the attached reviewer patch. (Many were probably my fault to begin with.)  Everything else looks good to me.  If you approve my reviewer patch and verify that all tests pass on massena without prereqs, you can set a positive review.  (I will post my reviewer patch on the combinat queue immediately below yours right now.)
 
@@ -95,7 +95,7 @@ archive/issue_comments_081574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8876#issuecomment-81574",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_081575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8876#issuecomment-81575",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_081576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8876#issuecomment-81576",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

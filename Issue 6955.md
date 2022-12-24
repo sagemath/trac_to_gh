@@ -3,7 +3,7 @@
 archive/issues_006955.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nKeywords: two descent,\n\nI found out that sage comes with old versions of the files ell.gp,  ellQ.gp,  qfsolve.gp. This should be updated. The newest version can be found at http://www.math.unicaen.fr/~simon/ .\n\nIssue created by migration from https://trac.sagemath.org/ticket/6955\n\n",
+    "body": "Assignee: @loefflerd\n\nKeywords: two descent,\n\nI found out that sage comes with old versions of the files ell.gp,  ellQ.gp,  qfsolve.gp. This should be updated. The newest version can be found at http://www.math.unicaen.fr/~simon/ .\n\nIssue created by migration from https://trac.sagemath.org/ticket/6955\n\n",
     "created_at": "2009-09-18T11:03:40Z",
     "labels": [
         "elliptic curves",
@@ -14,10 +14,10 @@ archive/issues_006955.json:
     "title": "update simon denis pari-scripts",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6955",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
 Keywords: two descent,
 
@@ -39,7 +39,7 @@ archive/issue_comments_057514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57514",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -52,16 +52,16 @@ This should be very easy to do, but I don't know how to submit a patch for this.
 archive/issue_comments_057515.json:
 ```json
 {
-    "body": "Remove assignee davidloeffler.",
+    "body": "Remove assignee @loefflerd.",
     "created_at": "2009-10-09T09:10:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57515",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Remove assignee davidloeffler.
+Remove assignee @loefflerd.
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_057516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57516",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_057517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57517",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -112,16 +112,16 @@ This does not fix other issues with these scripts, as in #5153.
 archive/issue_comments_057518.json:
 ```json
 {
-    "body": "Attachment [ellQ.gp](tarball://root/attachments/some-uuid/ticket6955/ellQ.gp) by cremona created at 2010-04-03 16:37:19",
+    "body": "Attachment [ellQ.gp](tarball://root/attachments/some-uuid/ticket6955/ellQ.gp) by @JohnCremona created at 2010-04-03 16:37:19",
     "created_at": "2010-04-03T16:37:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57518",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [ellQ.gp](tarball://root/attachments/some-uuid/ticket6955/ellQ.gp) by cremona created at 2010-04-03 16:37:19
+Attachment [ellQ.gp](tarball://root/attachments/some-uuid/ticket6955/ellQ.gp) by @JohnCremona created at 2010-04-03 16:37:19
 
 
 
@@ -130,16 +130,16 @@ Attachment [ellQ.gp](tarball://root/attachments/some-uuid/ticket6955/ellQ.gp) by
 archive/issue_comments_057519.json:
 ```json
 {
-    "body": "Attachment [trac_6955-simon-update.patch](tarball://root/attachments/some-uuid/ticket6955/trac_6955-simon-update.patch) by cremona created at 2010-04-03 16:42:29\n\nApplies to 4.3.5",
+    "body": "Attachment [trac_6955-simon-update.patch](tarball://root/attachments/some-uuid/ticket6955/trac_6955-simon-update.patch) by @JohnCremona created at 2010-04-03 16:42:29\n\nApplies to 4.3.5",
     "created_at": "2010-04-03T16:42:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57519",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_6955-simon-update.patch](tarball://root/attachments/some-uuid/ticket6955/trac_6955-simon-update.patch) by cremona created at 2010-04-03 16:42:29
+Attachment [trac_6955-simon-update.patch](tarball://root/attachments/some-uuid/ticket6955/trac_6955-simon-update.patch) by @JohnCremona created at 2010-04-03 16:42:29
 
 Applies to 4.3.5
 
@@ -155,7 +155,7 @@ archive/issue_comments_057520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57520",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_057521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57521",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_057522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57522",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -204,16 +204,16 @@ Apply in SAGE_ROOT/data/extcode before other patch
 archive/issue_comments_057523.json:
 ```json
 {
-    "body": "Attachment [trac_6955-simon-update-extcode.patch](tarball://root/attachments/some-uuid/ticket6955/trac_6955-simon-update-extcode.patch) by cremona created at 2010-04-03 18:35:21\n\nThe patch trac_6955-simon-update-extcode.patch should be applied in the directory SAGE_ROOT/data/extcode in addition to the usual patch for sage-main.  The gp files on the ticket are just for reference.",
+    "body": "Attachment [trac_6955-simon-update-extcode.patch](tarball://root/attachments/some-uuid/ticket6955/trac_6955-simon-update-extcode.patch) by @JohnCremona created at 2010-04-03 18:35:21\n\nThe patch trac_6955-simon-update-extcode.patch should be applied in the directory SAGE_ROOT/data/extcode in addition to the usual patch for sage-main.  The gp files on the ticket are just for reference.",
     "created_at": "2010-04-03T18:35:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57523",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_6955-simon-update-extcode.patch](tarball://root/attachments/some-uuid/ticket6955/trac_6955-simon-update-extcode.patch) by cremona created at 2010-04-03 18:35:21
+Attachment [trac_6955-simon-update-extcode.patch](tarball://root/attachments/some-uuid/ticket6955/trac_6955-simon-update-extcode.patch) by @JohnCremona created at 2010-04-03 18:35:21
 
 The patch trac_6955-simon-update-extcode.patch should be applied in the directory SAGE_ROOT/data/extcode in addition to the usual patch for sage-main.  The gp files on the ticket are just for reference.
 
@@ -229,7 +229,7 @@ archive/issue_comments_057524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57524",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_057525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57525",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_057526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57526",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -328,16 +328,16 @@ The modified patch corrects this.
 archive/issue_comments_057527.json:
 ```json
 {
-    "body": "Attachment [trac_6955-simon-update_reviewer.patch](tarball://root/attachments/some-uuid/ticket6955/trac_6955-simon-update_reviewer.patch) by wuthrich created at 2010-04-09 17:17:37\n\nreplaces the previous patch of this name",
+    "body": "Attachment [trac_6955-simon-update_reviewer.patch](tarball://root/attachments/some-uuid/ticket6955/trac_6955-simon-update_reviewer.patch) by @categorie created at 2010-04-09 17:17:37\n\nreplaces the previous patch of this name",
     "created_at": "2010-04-09T17:17:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57527",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_6955-simon-update_reviewer.patch](tarball://root/attachments/some-uuid/ticket6955/trac_6955-simon-update_reviewer.patch) by wuthrich created at 2010-04-09 17:17:37
+Attachment [trac_6955-simon-update_reviewer.patch](tarball://root/attachments/some-uuid/ticket6955/trac_6955-simon-update_reviewer.patch) by @categorie created at 2010-04-09 17:17:37
 
 replaces the previous patch of this name
 
@@ -353,7 +353,7 @@ archive/issue_comments_057528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57528",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -371,7 +371,7 @@ archive/issue_comments_057529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57529",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -389,7 +389,7 @@ archive/issue_comments_057530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57530",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -407,7 +407,7 @@ archive/issue_comments_057531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57531",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -425,7 +425,7 @@ archive/issue_comments_057532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57532",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -443,7 +443,7 @@ archive/issue_comments_057533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57533",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -464,7 +464,7 @@ archive/issue_comments_057534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57534",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -485,7 +485,7 @@ archive/issue_comments_057535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57535",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -503,7 +503,7 @@ archive/issue_comments_057536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57536",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -521,7 +521,7 @@ archive/issue_comments_057537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57537",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -541,7 +541,7 @@ archive/issue_comments_057538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57538",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -559,7 +559,7 @@ archive/issue_comments_057539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57539",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

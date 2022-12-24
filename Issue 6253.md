@@ -3,7 +3,7 @@
 archive/issues_006253.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat mhansen jason\n\nKeywords: constant functions\n\nThis trivial patch adds basic support for constant functions\n\nSuch a function could be written as lambda x: constant, but that's not picklable. Besides, this should eventually be cythoned for speed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6253\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @mwhansen @jasongrout\n\nKeywords: constant functions\n\nThis trivial patch adds basic support for constant functions\n\nSuch a function could be written as lambda x: constant, but that's not picklable. Besides, this should eventually be cythoned for speed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6253\n\n",
     "created_at": "2009-06-09T22:08:39Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_006253.json:
     "title": "[with patch, needs review] Constant functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6253",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
-CC:  sage-combinat mhansen jason
+CC:  sage-combinat @mwhansen @jasongrout
 
 Keywords: constant functions
 
@@ -43,7 +43,7 @@ archive/issue_comments_049943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6253#issuecomment-49943",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_049944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6253#issuecomment-49944",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_049945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6253#issuecomment-49945",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_049946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6253#issuecomment-49946",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -138,16 +138,16 @@ Changing status from new to assigned.
 archive/issue_comments_049947.json:
 ```json
 {
-    "body": "Attachment [trac_6253-constant_function-nt.patch](tarball://root/attachments/some-uuid/ticket6253/trac_6253-constant_function-nt.patch) by nthiery created at 2009-07-26 23:07:12",
+    "body": "Attachment [trac_6253-constant_function-nt.patch](tarball://root/attachments/some-uuid/ticket6253/trac_6253-constant_function-nt.patch) by @nthiery created at 2009-07-26 23:07:12",
     "created_at": "2009-07-26T23:07:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6253#issuecomment-49947",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_6253-constant_function-nt.patch](tarball://root/attachments/some-uuid/ticket6253/trac_6253-constant_function-nt.patch) by nthiery created at 2009-07-26 23:07:12
+Attachment [trac_6253-constant_function-nt.patch](tarball://root/attachments/some-uuid/ticket6253/trac_6253-constant_function-nt.patch) by @nthiery created at 2009-07-26 23:07:12
 
 
 
@@ -161,7 +161,7 @@ archive/issue_comments_049948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6253#issuecomment-49948",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_049949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6253#issuecomment-49949",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_049952.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6253#issuecomment-49952",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

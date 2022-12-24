@@ -3,7 +3,7 @@
 archive/issues_007515.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nCC:  combinat\n\nKeywords: deprecation:\n\nAlong the cleanup of combinat, a lot of methods and function get renamed. It is painfull to write backward compatibility aliases.\nThe patch given here should make it easier. I take also the chance to add a version optional argument to `deprecation` to store and print in which version of sage the method/function was deprecated.\n\nHere is an excerpt from the doc:\n\n```\n        sage: from sage.misc.misc import deprecated_function_alias\n        sage: g = deprecated_function_alias(number_of_partitions,\n        ...     'Sage Version 42.132, Release Date: 5123-04-01')\n        sage: g(5)\n        doctest:1: DeprecationWarning: (Since Sage Version 42.132, Release Date: 5123-04-01) g is deprecated. Please use number_of_partitions instead.\n        7\n```\n\nThis also works for methods:\n\n```\n        sage: from sage.misc.misc import deprecated_method_alias\n        sage: class cls(object):\n        ...      def new_meth(self): return 42\n        ...      old_meth = deprecated_method_alias(new_meth,\n        ...            'Sage Version 42.132, Release Date: 5123-04-01')\n        sage: cls().old_meth()\n        doctest:...: DeprecationWarning: (Since Sage Version 42.132, Release Date: 5123-04-01) old_meth is deprecated. Please use new_meth instead.\n        42\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7515\n\n",
+    "body": "Assignee: @hivert\n\nCC:  combinat\n\nKeywords: deprecation:\n\nAlong the cleanup of combinat, a lot of methods and function get renamed. It is painfull to write backward compatibility aliases.\nThe patch given here should make it easier. I take also the chance to add a version optional argument to `deprecation` to store and print in which version of sage the method/function was deprecated.\n\nHere is an excerpt from the doc:\n\n```\n        sage: from sage.misc.misc import deprecated_function_alias\n        sage: g = deprecated_function_alias(number_of_partitions,\n        ...     'Sage Version 42.132, Release Date: 5123-04-01')\n        sage: g(5)\n        doctest:1: DeprecationWarning: (Since Sage Version 42.132, Release Date: 5123-04-01) g is deprecated. Please use number_of_partitions instead.\n        7\n```\n\nThis also works for methods:\n\n```\n        sage: from sage.misc.misc import deprecated_method_alias\n        sage: class cls(object):\n        ...      def new_meth(self): return 42\n        ...      old_meth = deprecated_method_alias(new_meth,\n        ...            'Sage Version 42.132, Release Date: 5123-04-01')\n        sage: cls().old_meth()\n        doctest:...: DeprecationWarning: (Since Sage Version 42.132, Release Date: 5123-04-01) old_meth is deprecated. Please use new_meth instead.\n        42\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7515\n\n",
     "created_at": "2009-11-22T17:19:12Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_007515.json:
     "title": "Improved deprecation and renaming of function and methods.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7515",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
 CC:  combinat
 
@@ -68,7 +68,7 @@ archive/issue_comments_063656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7515#issuecomment-63656",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_063657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7515#issuecomment-63657",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -99,16 +99,16 @@ Adressed William comments on sage-devel.
 archive/issue_comments_063658.json:
 ```json
 {
-    "body": "Attachment [trac_7515_method_alias_decorator-fh.patch](tarball://root/attachments/some-uuid/ticket7515/trac_7515_method_alias_decorator-fh.patch) by hivert created at 2009-11-30 10:13:08\n\nUpdated patch to remark on sage-devel (i.e. just put the version of deprecation, without the date). Reday for review.",
+    "body": "Attachment [trac_7515_method_alias_decorator-fh.patch](tarball://root/attachments/some-uuid/ticket7515/trac_7515_method_alias_decorator-fh.patch) by @hivert created at 2009-11-30 10:13:08\n\nUpdated patch to remark on sage-devel (i.e. just put the version of deprecation, without the date). Reday for review.",
     "created_at": "2009-11-30T10:13:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7515#issuecomment-63658",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_7515_method_alias_decorator-fh.patch](tarball://root/attachments/some-uuid/ticket7515/trac_7515_method_alias_decorator-fh.patch) by hivert created at 2009-11-30 10:13:08
+Attachment [trac_7515_method_alias_decorator-fh.patch](tarball://root/attachments/some-uuid/ticket7515/trac_7515_method_alias_decorator-fh.patch) by @hivert created at 2009-11-30 10:13:08
 
 Updated patch to remark on sage-devel (i.e. just put the version of deprecation, without the date). Reday for review.
 
@@ -124,7 +124,7 @@ archive/issue_comments_063659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7515#issuecomment-63659",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_063660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7515#issuecomment-63660",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_063661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7515#issuecomment-63661",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_063662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7515#issuecomment-63662",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_063663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7515#issuecomment-63663",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_063664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7515#issuecomment-63664",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

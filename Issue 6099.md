@@ -3,7 +3,7 @@
 archive/issues_006099.json:
 ```json
 {
-    "body": "Assignee: bantieau\n\nCC:  jhpalmieri\n\nAdd functionality to sage to create morphisms between simplicial complexes, and to associate to these morphisms the chain complex maps on the homological and cohomological chain complexes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6099\n\n",
+    "body": "Assignee: @antieau\n\nCC:  @jhpalmieri\n\nAdd functionality to sage to create morphisms between simplicial complexes, and to associate to these morphisms the chain complex maps on the homological and cohomological chain complexes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6099\n\n",
     "created_at": "2009-05-21T03:37:46Z",
     "labels": [
         "algebraic topology",
@@ -14,12 +14,12 @@ archive/issues_006099.json:
     "title": "morphisms of simplicial complexes and the associated chain complex morphisms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6099",
-    "user": "bantieau"
+    "user": "@antieau"
 }
 ```
-Assignee: bantieau
+Assignee: @antieau
 
-CC:  jhpalmieri
+CC:  @jhpalmieri
 
 Add functionality to sage to create morphisms between simplicial complexes, and to associate to these morphisms the chain complex maps on the homological and cohomological chain complexes.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6099
 archive/issue_comments_048634.json:
 ```json
 {
-    "body": "Attachment [12335.patch](tarball://root/attachments/some-uuid/ticket6099/12335.patch) by bantieau created at 2009-06-01 23:10:24\n\nThis patch implements the chain complex morphisms part of this trac ticket.",
+    "body": "Attachment [12335.patch](tarball://root/attachments/some-uuid/ticket6099/12335.patch) by @antieau created at 2009-06-01 23:10:24\n\nThis patch implements the chain complex morphisms part of this trac ticket.",
     "created_at": "2009-06-01T23:10:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6099#issuecomment-48634",
-    "user": "bantieau"
+    "user": "@antieau"
 }
 ```
 
-Attachment [12335.patch](tarball://root/attachments/some-uuid/ticket6099/12335.patch) by bantieau created at 2009-06-01 23:10:24
+Attachment [12335.patch](tarball://root/attachments/some-uuid/ticket6099/12335.patch) by @antieau created at 2009-06-01 23:10:24
 
 This patch implements the chain complex morphisms part of this trac ticket.
 
@@ -54,16 +54,16 @@ This patch implements the chain complex morphisms part of this trac ticket.
 archive/issue_comments_048635.json:
 ```json
 {
-    "body": "Attachment [6099-1.patch](tarball://root/attachments/some-uuid/ticket6099/6099-1.patch) by bantieau created at 2009-06-01 23:14:34\n\nThis patch implements the chain complex morphisms part of this trac ticket.",
+    "body": "Attachment [6099-1.patch](tarball://root/attachments/some-uuid/ticket6099/6099-1.patch) by @antieau created at 2009-06-01 23:14:34\n\nThis patch implements the chain complex morphisms part of this trac ticket.",
     "created_at": "2009-06-01T23:14:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6099#issuecomment-48635",
-    "user": "bantieau"
+    "user": "@antieau"
 }
 ```
 
-Attachment [6099-1.patch](tarball://root/attachments/some-uuid/ticket6099/6099-1.patch) by bantieau created at 2009-06-01 23:14:34
+Attachment [6099-1.patch](tarball://root/attachments/some-uuid/ticket6099/6099-1.patch) by @antieau created at 2009-06-01 23:14:34
 
 This patch implements the chain complex morphisms part of this trac ticket.
 
@@ -79,7 +79,7 @@ archive/issue_comments_048636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6099#issuecomment-48636",
-    "user": "bantieau"
+    "user": "@antieau"
 }
 ```
 
@@ -92,16 +92,16 @@ Ignore 12335.patch. I would take it off, but I do not know how.
 archive/issue_comments_048637.json:
 ```json
 {
-    "body": "Attachment [6099-2.patch](tarball://root/attachments/some-uuid/ticket6099/6099-2.patch) by bantieau created at 2009-06-16 06:21:12",
+    "body": "Attachment [6099-2.patch](tarball://root/attachments/some-uuid/ticket6099/6099-2.patch) by @antieau created at 2009-06-16 06:21:12",
     "created_at": "2009-06-16T06:21:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6099#issuecomment-48637",
-    "user": "bantieau"
+    "user": "@antieau"
 }
 ```
 
-Attachment [6099-2.patch](tarball://root/attachments/some-uuid/ticket6099/6099-2.patch) by bantieau created at 2009-06-16 06:21:12
+Attachment [6099-2.patch](tarball://root/attachments/some-uuid/ticket6099/6099-2.patch) by @antieau created at 2009-06-16 06:21:12
 
 
 
@@ -110,16 +110,16 @@ Attachment [6099-2.patch](tarball://root/attachments/some-uuid/ticket6099/6099-2
 archive/issue_comments_048638.json:
 ```json
 {
-    "body": "Attachment [6099-3.patch](tarball://root/attachments/some-uuid/ticket6099/6099-3.patch) by bantieau created at 2009-06-17 00:50:46\n\ntweak to be compatibe with #6141, which changes facets to facets().",
+    "body": "Attachment [6099-3.patch](tarball://root/attachments/some-uuid/ticket6099/6099-3.patch) by @antieau created at 2009-06-17 00:50:46\n\ntweak to be compatibe with #6141, which changes facets to facets().",
     "created_at": "2009-06-17T00:50:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6099#issuecomment-48638",
-    "user": "bantieau"
+    "user": "@antieau"
 }
 ```
 
-Attachment [6099-3.patch](tarball://root/attachments/some-uuid/ticket6099/6099-3.patch) by bantieau created at 2009-06-17 00:50:46
+Attachment [6099-3.patch](tarball://root/attachments/some-uuid/ticket6099/6099-3.patch) by @antieau created at 2009-06-17 00:50:46
 
 tweak to be compatibe with #6141, which changes facets to facets().
 
@@ -135,7 +135,7 @@ archive/issue_comments_048639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6099#issuecomment-48639",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -185,16 +185,16 @@ sage: type(S.effective_vertices())
 archive/issue_comments_048640.json:
 ```json
 {
-    "body": "Attachment [ref_6099.patch](tarball://root/attachments/some-uuid/ticket6099/ref_6099.patch) by jhpalmieri created at 2009-06-17 18:19:40",
+    "body": "Attachment [ref_6099.patch](tarball://root/attachments/some-uuid/ticket6099/ref_6099.patch) by @jhpalmieri created at 2009-06-17 18:19:40",
     "created_at": "2009-06-17T18:19:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6099#issuecomment-48640",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [ref_6099.patch](tarball://root/attachments/some-uuid/ticket6099/ref_6099.patch) by jhpalmieri created at 2009-06-17 18:19:40
+Attachment [ref_6099.patch](tarball://root/attachments/some-uuid/ticket6099/ref_6099.patch) by @jhpalmieri created at 2009-06-17 18:19:40
 
 
 
@@ -208,7 +208,7 @@ archive/issue_comments_048641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6099#issuecomment-48641",
-    "user": "bantieau"
+    "user": "@antieau"
 }
 ```
 
@@ -221,16 +221,16 @@ Hopefully final merged patch.
 archive/issue_comments_048642.json:
 ```json
 {
-    "body": "Attachment [6099-merged.patch](tarball://root/attachments/some-uuid/ticket6099/6099-merged.patch) by bantieau created at 2009-11-06 21:20:28\n\nOK. I've uploaded a patch that includes all of the patches above, and also includes all of your recommendations, except for inheriting from ModuleElement. Perhaps that can be another ticket, if someone wants that. Coverage and doctest are %100.",
+    "body": "Attachment [6099-merged.patch](tarball://root/attachments/some-uuid/ticket6099/6099-merged.patch) by @antieau created at 2009-11-06 21:20:28\n\nOK. I've uploaded a patch that includes all of the patches above, and also includes all of your recommendations, except for inheriting from ModuleElement. Perhaps that can be another ticket, if someone wants that. Coverage and doctest are %100.",
     "created_at": "2009-11-06T21:20:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6099#issuecomment-48642",
-    "user": "bantieau"
+    "user": "@antieau"
 }
 ```
 
-Attachment [6099-merged.patch](tarball://root/attachments/some-uuid/ticket6099/6099-merged.patch) by bantieau created at 2009-11-06 21:20:28
+Attachment [6099-merged.patch](tarball://root/attachments/some-uuid/ticket6099/6099-merged.patch) by @antieau created at 2009-11-06 21:20:28
 
 OK. I've uploaded a patch that includes all of the patches above, and also includes all of your recommendations, except for inheriting from ModuleElement. Perhaps that can be another ticket, if someone wants that. Coverage and doctest are %100.
 
@@ -246,7 +246,7 @@ archive/issue_comments_048643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6099#issuecomment-48643",
-    "user": "bantieau"
+    "user": "@antieau"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_048644.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6099#issuecomment-48644",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -323,16 +323,16 @@ I'm giving your patch a positive review.  If you're happy with my new patch, cha
 archive/issue_comments_048645.json:
 ```json
 {
-    "body": "Attachment [trac_6099-part2.patch](tarball://root/attachments/some-uuid/ticket6099/trac_6099-part2.patch) by jhpalmieri created at 2009-11-10 23:38:12\n\napply on top of 6099-merged.patch",
+    "body": "Attachment [trac_6099-part2.patch](tarball://root/attachments/some-uuid/ticket6099/trac_6099-part2.patch) by @jhpalmieri created at 2009-11-10 23:38:12\n\napply on top of 6099-merged.patch",
     "created_at": "2009-11-10T23:38:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6099#issuecomment-48645",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_6099-part2.patch](tarball://root/attachments/some-uuid/ticket6099/trac_6099-part2.patch) by jhpalmieri created at 2009-11-10 23:38:12
+Attachment [trac_6099-part2.patch](tarball://root/attachments/some-uuid/ticket6099/trac_6099-part2.patch) by @jhpalmieri created at 2009-11-10 23:38:12
 
 apply on top of 6099-merged.patch
 
@@ -348,7 +348,7 @@ archive/issue_comments_048646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6099#issuecomment-48646",
-    "user": "bantieau"
+    "user": "@antieau"
 }
 ```
 
@@ -366,7 +366,7 @@ archive/issue_comments_048647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6099#issuecomment-48647",
-    "user": "bantieau"
+    "user": "@antieau"
 }
 ```
 
@@ -384,7 +384,7 @@ archive/issue_comments_048648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6099#issuecomment-48648",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -402,7 +402,7 @@ archive/issue_comments_048649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6099#issuecomment-48649",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -420,7 +420,7 @@ archive/issue_comments_048650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6099#issuecomment-48650",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -438,7 +438,7 @@ archive/issue_comments_048651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6099#issuecomment-48651",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -456,7 +456,7 @@ archive/issue_comments_048652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6099#issuecomment-48652",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -481,7 +481,7 @@ archive/issue_comments_048653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6099#issuecomment-48653",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -507,7 +507,7 @@ archive/issue_comments_048654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6099#issuecomment-48654",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -525,7 +525,7 @@ archive/issue_comments_048655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6099#issuecomment-48655",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -543,7 +543,7 @@ archive/issue_comments_048656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6099#issuecomment-48656",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -561,7 +561,7 @@ archive/issue_comments_048657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6099#issuecomment-48657",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -586,7 +586,7 @@ archive/issue_comments_048658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6099#issuecomment-48658",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -604,7 +604,7 @@ archive/issue_comments_048659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6099#issuecomment-48659",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -631,7 +631,7 @@ archive/issue_comments_048660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6099#issuecomment-48660",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -649,7 +649,7 @@ archive/issue_comments_048661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6099#issuecomment-48661",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -674,7 +674,7 @@ archive/issue_comments_048662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6099#issuecomment-48662",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -692,7 +692,7 @@ archive/issue_comments_048663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6099#issuecomment-48663",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -705,13 +705,13 @@ Resolution: fixed
 archive/issue_comments_048664.json:
 ```json
 {
-    "body": "Attachment [trac_6099-rebased.patch](tarball://root/attachments/some-uuid/ticket6099/trac_6099-rebased.patch) by mhansen created at 2009-11-29 04:55:49",
+    "body": "Attachment [trac_6099-rebased.patch](tarball://root/attachments/some-uuid/ticket6099/trac_6099-rebased.patch) by @mwhansen created at 2009-11-29 04:55:49",
     "created_at": "2009-11-29T04:55:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6099#issuecomment-48664",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6099-rebased.patch](tarball://root/attachments/some-uuid/ticket6099/trac_6099-rebased.patch) by mhansen created at 2009-11-29 04:55:49
+Attachment [trac_6099-rebased.patch](tarball://root/attachments/some-uuid/ticket6099/trac_6099-rebased.patch) by @mwhansen created at 2009-11-29 04:55:49

@@ -14,7 +14,7 @@ archive/issues_006559.json:
     "title": "Real domain for symbolic variables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6559",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 In new symbolics, the default symbolic variables are complex.
@@ -60,16 +60,16 @@ archive/issue_comments_053478.json:
 archive/issue_comments_053479.json:
 ```json
 {
-    "body": "Attachment [trac_6559-domain-and-latex_name-for-variable.patch](tarball://root/attachments/some-uuid/ticket6559/trac_6559-domain-and-latex_name-for-variable.patch) by gmhossain created at 2009-09-05 21:29:20",
+    "body": "Attachment [trac_6559-domain-and-latex_name-for-variable.patch](tarball://root/attachments/some-uuid/ticket6559/trac_6559-domain-and-latex_name-for-variable.patch) by @golam-m-hossain created at 2009-09-05 21:29:20",
     "created_at": "2009-09-05T21:29:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6559#issuecomment-53479",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
-Attachment [trac_6559-domain-and-latex_name-for-variable.patch](tarball://root/attachments/some-uuid/ticket6559/trac_6559-domain-and-latex_name-for-variable.patch) by gmhossain created at 2009-09-05 21:29:20
+Attachment [trac_6559-domain-and-latex_name-for-variable.patch](tarball://root/attachments/some-uuid/ticket6559/trac_6559-domain-and-latex_name-for-variable.patch) by @golam-m-hossain created at 2009-09-05 21:29:20
 
 
 
@@ -83,7 +83,7 @@ archive/issue_comments_053480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6559#issuecomment-53480",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -188,16 +188,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_053485.json:
 ```json
 {
-    "body": "Attachment [trac_6559-domain-and-latex_name-for-variable.take2.3.patch](tarball://root/attachments/some-uuid/ticket6559/trac_6559-domain-and-latex_name-for-variable.take2.3.patch) by burcin created at 2010-01-19 13:56:13\n\nrebased to 4.3.1.rc0",
+    "body": "Attachment [trac_6559-domain-and-latex_name-for-variable.take2.3.patch](tarball://root/attachments/some-uuid/ticket6559/trac_6559-domain-and-latex_name-for-variable.take2.3.patch) by @burcin created at 2010-01-19 13:56:13\n\nrebased to 4.3.1.rc0",
     "created_at": "2010-01-19T13:56:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6559#issuecomment-53485",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6559-domain-and-latex_name-for-variable.take2.3.patch](tarball://root/attachments/some-uuid/ticket6559/trac_6559-domain-and-latex_name-for-variable.take2.3.patch) by burcin created at 2010-01-19 13:56:13
+Attachment [trac_6559-domain-and-latex_name-for-variable.take2.3.patch](tarball://root/attachments/some-uuid/ticket6559/trac_6559-domain-and-latex_name-for-variable.take2.3.patch) by @burcin created at 2010-01-19 13:56:13
 
 rebased to 4.3.1.rc0
 
@@ -213,7 +213,7 @@ archive/issue_comments_053486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6559#issuecomment-53486",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -226,16 +226,16 @@ Changing keywords from "" to "pynac".
 archive/issue_comments_053487.json:
 ```json
 {
-    "body": "Attachment [trac_6559-referee.patch](tarball://root/attachments/some-uuid/ticket6559/trac_6559-referee.patch) by burcin created at 2010-01-19 14:38:15\n\nI uploaded a revised version of Golam's patch at attachment:trac_6559-domain-and-latex_name-for-variable.take2.3.patch, and a referee patch at attachment:trac_6559-referee.patch.\n\nThe changes in the revised patch over Golam's version are\n* rebased to 4.3.rc0\n* removed `sage.symbolic.ring.SR.new_var()` and `sage.symbolic.ring.is_ComplexVariable()` functions. The first is same as `SR.symbol()` and I don't see a use for the second, since all variables are complex. :)\n* removed pickling changes in sage.symbolic.expression.Expression, since unpickling in this case could create a new variable with the same name as an existing one, but with a different domain. This would lead to rather confusing situations.\n\nThe referee patch reorganizes the new code a little to make it more efficient. Apparently the new variable creation is an important operation and being sloppy here greatly increases doctest timings. It also adds new methods like `_is_positive()`, `_is_real()` to the expression class to allow querying for more properties.\n\nOnly the patches \n* attachment:trac_6559-domain-and-latex_name-for-variable.take2.3.patch and\n* attachment:trac_6559-referee.patch \nshould be applied.\n\nThis ticket depends on the new pynac package here:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.11.spkg\n\nwhich in turns depends on the patches at #7822, #7876, #7363, #7955, #7957, #7916 and #6465 (in that order).\n\nThe changes here seem to slow down the maxima interface dramatically, so I'm leaving this as needs work for now.",
+    "body": "Attachment [trac_6559-referee.patch](tarball://root/attachments/some-uuid/ticket6559/trac_6559-referee.patch) by @burcin created at 2010-01-19 14:38:15\n\nI uploaded a revised version of Golam's patch at attachment:trac_6559-domain-and-latex_name-for-variable.take2.3.patch, and a referee patch at attachment:trac_6559-referee.patch.\n\nThe changes in the revised patch over Golam's version are\n* rebased to 4.3.rc0\n* removed `sage.symbolic.ring.SR.new_var()` and `sage.symbolic.ring.is_ComplexVariable()` functions. The first is same as `SR.symbol()` and I don't see a use for the second, since all variables are complex. :)\n* removed pickling changes in sage.symbolic.expression.Expression, since unpickling in this case could create a new variable with the same name as an existing one, but with a different domain. This would lead to rather confusing situations.\n\nThe referee patch reorganizes the new code a little to make it more efficient. Apparently the new variable creation is an important operation and being sloppy here greatly increases doctest timings. It also adds new methods like `_is_positive()`, `_is_real()` to the expression class to allow querying for more properties.\n\nOnly the patches \n* attachment:trac_6559-domain-and-latex_name-for-variable.take2.3.patch and\n* attachment:trac_6559-referee.patch \nshould be applied.\n\nThis ticket depends on the new pynac package here:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.11.spkg\n\nwhich in turns depends on the patches at #7822, #7876, #7363, #7955, #7957, #7916 and #6465 (in that order).\n\nThe changes here seem to slow down the maxima interface dramatically, so I'm leaving this as needs work for now.",
     "created_at": "2010-01-19T14:38:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6559#issuecomment-53487",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6559-referee.patch](tarball://root/attachments/some-uuid/ticket6559/trac_6559-referee.patch) by burcin created at 2010-01-19 14:38:15
+Attachment [trac_6559-referee.patch](tarball://root/attachments/some-uuid/ticket6559/trac_6559-referee.patch) by @burcin created at 2010-01-19 14:38:15
 
 I uploaded a revised version of Golam's patch at attachment:trac_6559-domain-and-latex_name-for-variable.take2.3.patch, and a referee patch at attachment:trac_6559-referee.patch.
 
@@ -271,7 +271,7 @@ archive/issue_comments_053488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6559#issuecomment-53488",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -284,16 +284,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_053489.json:
 ```json
 {
-    "body": "Attachment [trac_6559-referee.take2.patch](tarball://root/attachments/some-uuid/ticket6559/trac_6559-referee.take2.patch) by burcin created at 2010-01-20 04:11:21\n\nNew patches up, ready for review.\n\nApply only:\n* attachment:trac_6559-domain-and-latex_name-for-variable.take2.3.patch\n* attachment:trac_6559-referee.take2.patch\n\nDepends on the pynac package here:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.11.spkg\n\nand the tickets #7822, #7876, #7363, #7955, #7957, #7916 and #6465 (in that order).",
+    "body": "Attachment [trac_6559-referee.take2.patch](tarball://root/attachments/some-uuid/ticket6559/trac_6559-referee.take2.patch) by @burcin created at 2010-01-20 04:11:21\n\nNew patches up, ready for review.\n\nApply only:\n* attachment:trac_6559-domain-and-latex_name-for-variable.take2.3.patch\n* attachment:trac_6559-referee.take2.patch\n\nDepends on the pynac package here:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.11.spkg\n\nand the tickets #7822, #7876, #7363, #7955, #7957, #7916 and #6465 (in that order).",
     "created_at": "2010-01-20T04:11:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6559#issuecomment-53489",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6559-referee.take2.patch](tarball://root/attachments/some-uuid/ticket6559/trac_6559-referee.take2.patch) by burcin created at 2010-01-20 04:11:21
+Attachment [trac_6559-referee.take2.patch](tarball://root/attachments/some-uuid/ticket6559/trac_6559-referee.take2.patch) by @burcin created at 2010-01-20 04:11:21
 
 New patches up, ready for review.
 
@@ -319,7 +319,7 @@ archive/issue_comments_053490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6559#issuecomment-53490",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -358,7 +358,7 @@ archive/issue_comments_053491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6559#issuecomment-53491",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -376,7 +376,7 @@ archive/issue_comments_053492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6559#issuecomment-53492",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -438,7 +438,7 @@ archive/issue_comments_053493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6559#issuecomment-53493",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -464,7 +464,7 @@ archive/issue_comments_053494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6559#issuecomment-53494",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -486,7 +486,7 @@ archive/issue_comments_053495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6559#issuecomment-53495",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -504,7 +504,7 @@ archive/issue_comments_053496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6559#issuecomment-53496",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -526,7 +526,7 @@ archive/issue_comments_053497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6559#issuecomment-53497",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -544,7 +544,7 @@ archive/issue_comments_053498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6559#issuecomment-53498",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -566,7 +566,7 @@ archive/issue_comments_053499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6559#issuecomment-53499",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -642,7 +642,7 @@ archive/issue_comments_053500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6559#issuecomment-53500",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -696,7 +696,7 @@ archive/issue_comments_053502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6559#issuecomment-53502",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -772,7 +772,7 @@ archive/issue_comments_053504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6559#issuecomment-53504",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -812,7 +812,7 @@ archive/issue_comments_053506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6559#issuecomment-53506",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

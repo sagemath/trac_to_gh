@@ -3,7 +3,7 @@
 archive/issues_006071.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nCC:  was\n\nComputing weight 1 cusp forms is hard (cf. #2330), but computing weight 1 Eisenstein series isn't; only very slight modifications are needed to the code we already have.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6071\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @williamstein\n\nComputing weight 1 cusp forms is hard (cf. #2330), but computing weight 1 Eisenstein series isn't; only very slight modifications are needed to the code we already have.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6071\n\n",
     "created_at": "2009-05-18T15:20:16Z",
     "labels": [
         "modular forms",
@@ -14,12 +14,12 @@ archive/issues_006071.json:
     "title": "Weight 1 Eisenstein series",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6071",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
-CC:  was
+CC:  @williamstein
 
 Computing weight 1 cusp forms is hard (cf. #2330), but computing weight 1 Eisenstein series isn't; only very slight modifications are needed to the code we already have.
 
@@ -39,7 +39,7 @@ archive/issue_comments_048323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6071#issuecomment-48323",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_048324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6071#issuecomment-48324",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -70,16 +70,16 @@ Changing status from new to assigned.
 archive/issue_comments_048325.json:
 ```json
 {
-    "body": "Attachment [trac_6071.patch](tarball://root/attachments/some-uuid/ticket6071/trac_6071.patch) by davidloeffler created at 2009-05-18 15:23:12",
+    "body": "Attachment [trac_6071.patch](tarball://root/attachments/some-uuid/ticket6071/trac_6071.patch) by @loefflerd created at 2009-05-18 15:23:12",
     "created_at": "2009-05-18T15:23:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6071#issuecomment-48325",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_6071.patch](tarball://root/attachments/some-uuid/ticket6071/trac_6071.patch) by davidloeffler created at 2009-05-18 15:23:12
+Attachment [trac_6071.patch](tarball://root/attachments/some-uuid/ticket6071/trac_6071.patch) by @loefflerd created at 2009-05-18 15:23:12
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_048326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6071#issuecomment-48326",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_048327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6071#issuecomment-48327",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_048328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6071#issuecomment-48328",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_048329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6071#issuecomment-48329",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_048330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6071#issuecomment-48330",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_048331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6071#issuecomment-48331",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -218,16 +218,16 @@ For what it's worth: that sounds like a good explanation.  Perhaps when you put 
 archive/issue_comments_048332.json:
 ```json
 {
-    "body": "Attachment [trac_6071-weight1_eisenstein.patch](tarball://root/attachments/some-uuid/ticket6071/trac_6071-weight1_eisenstein.patch) by davidloeffler created at 2009-06-25 21:40:41\n\nReplaces previous patch",
+    "body": "Attachment [trac_6071-weight1_eisenstein.patch](tarball://root/attachments/some-uuid/ticket6071/trac_6071-weight1_eisenstein.patch) by @loefflerd created at 2009-06-25 21:40:41\n\nReplaces previous patch",
     "created_at": "2009-06-25T21:40:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6071#issuecomment-48332",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_6071-weight1_eisenstein.patch](tarball://root/attachments/some-uuid/ticket6071/trac_6071-weight1_eisenstein.patch) by davidloeffler created at 2009-06-25 21:40:41
+Attachment [trac_6071-weight1_eisenstein.patch](tarball://root/attachments/some-uuid/ticket6071/trac_6071-weight1_eisenstein.patch) by @loefflerd created at 2009-06-25 21:40:41
 
 Replaces previous patch
 
@@ -243,7 +243,7 @@ archive/issue_comments_048333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6071#issuecomment-48333",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -284,16 +284,16 @@ This ticket should be changed to "[with patch; positive review]" as soon as some
 archive/issue_comments_048334.json:
 ```json
 {
-    "body": "Attachment [trac_6071-referee.patch](tarball://root/attachments/some-uuid/ticket6071/trac_6071-referee.patch) by davidloeffler created at 2009-07-21 07:55:17\n\nFair point. The new patch looks fine to me, so positive review.",
+    "body": "Attachment [trac_6071-referee.patch](tarball://root/attachments/some-uuid/ticket6071/trac_6071-referee.patch) by @loefflerd created at 2009-07-21 07:55:17\n\nFair point. The new patch looks fine to me, so positive review.",
     "created_at": "2009-07-21T07:55:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6071#issuecomment-48334",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_6071-referee.patch](tarball://root/attachments/some-uuid/ticket6071/trac_6071-referee.patch) by davidloeffler created at 2009-07-21 07:55:17
+Attachment [trac_6071-referee.patch](tarball://root/attachments/some-uuid/ticket6071/trac_6071-referee.patch) by @loefflerd created at 2009-07-21 07:55:17
 
 Fair point. The new patch looks fine to me, so positive review.
 

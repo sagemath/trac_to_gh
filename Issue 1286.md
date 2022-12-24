@@ -3,7 +3,7 @@
 archive/issues_001286.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis sucks:\n\n```\nsage: SR(1.93902384092834082309480238482348293402384908) + SR(1)\n2.939023840928341\n```\n\n\nIt should do this:\n\n```\nsage: SR(1.93902384092834082309480238482348293402384908) + SR(1)\n2.93902384092834082309480238482348293402384908\n```\n\n\nHow to implement this?  Use bfloat in Maxima.  Here are some examples:\n\n```\n(%i41) block([fpprec:50], bfloat(%pi));\n(%o41)       3.1415926535897932384626433832795028841971693993751b0\n```\n\nHave to do some weird crap to coerce in mpfr's:\n\n```\n(%i1) block([fpprec:50], bfloat(1.93902384092834082309480238482348293402384908));\nWarning:  Float to bigfloat conversion of 1.939023840928341\n(%o1)        1.9390238409283409299344632850674846197472777518007b0\n(%i3) block([fpprec:50], bfloat(193902384092834082309480238482348293402384908)/10^44);\n(%o3)          1.93902384092834082309480238482348293402384908b0\n```\n\n\nWhen simplifying an expression be sure to compute the prec of it as\nthe min of the precs of all the leaves; integers have infinite precision.\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1286\n\n",
+    "body": "Assignee: @williamstein\n\nThis sucks:\n\n```\nsage: SR(1.93902384092834082309480238482348293402384908) + SR(1)\n2.939023840928341\n```\n\n\nIt should do this:\n\n```\nsage: SR(1.93902384092834082309480238482348293402384908) + SR(1)\n2.93902384092834082309480238482348293402384908\n```\n\n\nHow to implement this?  Use bfloat in Maxima.  Here are some examples:\n\n```\n(%i41) block([fpprec:50], bfloat(%pi));\n(%o41)       3.1415926535897932384626433832795028841971693993751b0\n```\n\nHave to do some weird crap to coerce in mpfr's:\n\n```\n(%i1) block([fpprec:50], bfloat(1.93902384092834082309480238482348293402384908));\nWarning:  Float to bigfloat conversion of 1.939023840928341\n(%o1)        1.9390238409283409299344632850674846197472777518007b0\n(%i3) block([fpprec:50], bfloat(193902384092834082309480238482348293402384908)/10^44);\n(%o3)          1.93902384092834082309480238482348293402384908b0\n```\n\n\nWhen simplifying an expression be sure to compute the prec of it as\nthe min of the precs of all the leaves; integers have infinite precision.\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1286\n\n",
     "created_at": "2007-11-27T00:35:16Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_001286.json:
     "title": "fix maxima floating point precision handling",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1286",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This sucks:
 
@@ -75,7 +75,7 @@ archive/issue_comments_008078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1286#issuecomment-8078",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_008079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1286#issuecomment-8079",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_008080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1286#issuecomment-8080",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

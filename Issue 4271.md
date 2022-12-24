@@ -14,7 +14,7 @@ archive/issues_004271.json:
     "title": "[with patch, needs review] improve coverage test of ell_generic.py to 100%, and fix typos",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4271",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: mabshoff
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4271
 archive/issue_comments_031181.json:
 ```json
 {
-    "body": "Attachment [10553.patch](tarball://root/attachments/some-uuid/ticket4271/10553.patch) by zimmerma created at 2008-10-12 20:07:38",
+    "body": "Attachment [10553.patch](tarball://root/attachments/some-uuid/ticket4271/10553.patch) by @zimmermann6 created at 2008-10-12 20:07:38",
     "created_at": "2008-10-12T20:07:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4271",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4271#issuecomment-31181",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [10553.patch](tarball://root/attachments/some-uuid/ticket4271/10553.patch) by zimmerma created at 2008-10-12 20:07:38
+Attachment [10553.patch](tarball://root/attachments/some-uuid/ticket4271/10553.patch) by @zimmermann6 created at 2008-10-12 20:07:38
 
 
 
@@ -70,7 +70,7 @@ archive/issue_comments_031182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4271",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4271#issuecomment-31182",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

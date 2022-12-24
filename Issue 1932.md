@@ -14,7 +14,7 @@ archive/issues_001932.json:
     "title": "weird hg bug?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1932",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 Assignee: mabshoff
@@ -137,7 +137,7 @@ archive/issue_comments_012254.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1932#issuecomment-12254",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_012255.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1932#issuecomment-12255",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_012256.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1932#issuecomment-12256",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_012257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1932#issuecomment-12257",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -217,16 +217,16 @@ Changing status from new to assigned.
 archive/issue_comments_012258.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to craigcitro.",
+    "body": "Changing assignee from mabshoff to @craigcitro.",
     "created_at": "2008-05-21T07:38:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1932#issuecomment-12258",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from mabshoff to craigcitro.
+Changing assignee from mabshoff to @craigcitro.
 
 
 
@@ -240,7 +240,7 @@ archive/issue_comments_012259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1932#issuecomment-12259",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_012260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1932#issuecomment-12260",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_012261.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1932#issuecomment-12261",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_012262.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1932#issuecomment-12262",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -320,7 +320,7 @@ archive/issue_comments_012263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1932#issuecomment-12263",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -338,7 +338,7 @@ archive/issue_comments_012264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1932#issuecomment-12264",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -356,7 +356,7 @@ archive/issue_comments_012265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1932#issuecomment-12265",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -369,16 +369,16 @@ apply later
 archive/issue_comments_012266.json:
 ```json
 {
-    "body": "Attachment [trac-1932-pt2.patch](tarball://root/attachments/some-uuid/ticket1932/trac-1932-pt2.patch) by AlexGhitza created at 2008-09-23 06:34:05\n\napply now (ignore the other patch with same name)",
+    "body": "Attachment [trac-1932-pt2.patch](tarball://root/attachments/some-uuid/ticket1932/trac-1932-pt2.patch) by @aghitza created at 2008-09-23 06:34:05\n\napply now (ignore the other patch with same name)",
     "created_at": "2008-09-23T06:34:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1932#issuecomment-12266",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac-1932-pt2.patch](tarball://root/attachments/some-uuid/ticket1932/trac-1932-pt2.patch) by AlexGhitza created at 2008-09-23 06:34:05
+Attachment [trac-1932-pt2.patch](tarball://root/attachments/some-uuid/ticket1932/trac-1932-pt2.patch) by @aghitza created at 2008-09-23 06:34:05
 
 apply now (ignore the other patch with same name)
 
@@ -389,16 +389,16 @@ apply now (ignore the other patch with same name)
 archive/issue_comments_012267.json:
 ```json
 {
-    "body": "Attachment [trac-1932-pt1.2.patch](tarball://root/attachments/some-uuid/ticket1932/trac-1932-pt1.2.patch) by AlexGhitza created at 2008-09-23 06:39:57\n\npositive review.  i had to tweak craig's first patch a bit (after checking with him) and i tried to just replace it but trac didn't like that.\n\ni checked both the deprecation warning with the first patch, and the fact that the issue is completely resolved with the second patch (yay i can use hg in schemes/elliptic_curves/ again!)\n\nso: apply trac-1932-pt1.2.patch now, and apply trac-1932-pt2.patch when the deprecation period is over.",
+    "body": "Attachment [trac-1932-pt1.2.patch](tarball://root/attachments/some-uuid/ticket1932/trac-1932-pt1.2.patch) by @aghitza created at 2008-09-23 06:39:57\n\npositive review.  i had to tweak craig's first patch a bit (after checking with him) and i tried to just replace it but trac didn't like that.\n\ni checked both the deprecation warning with the first patch, and the fact that the issue is completely resolved with the second patch (yay i can use hg in schemes/elliptic_curves/ again!)\n\nso: apply trac-1932-pt1.2.patch now, and apply trac-1932-pt2.patch when the deprecation period is over.",
     "created_at": "2008-09-23T06:39:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1932#issuecomment-12267",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac-1932-pt1.2.patch](tarball://root/attachments/some-uuid/ticket1932/trac-1932-pt1.2.patch) by AlexGhitza created at 2008-09-23 06:39:57
+Attachment [trac-1932-pt1.2.patch](tarball://root/attachments/some-uuid/ticket1932/trac-1932-pt1.2.patch) by @aghitza created at 2008-09-23 06:39:57
 
 positive review.  i had to tweak craig's first patch a bit (after checking with him) and i tried to just replace it but trac didn't like that.
 

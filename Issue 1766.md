@@ -14,7 +14,7 @@ archive/issues_001766.json:
     "title": "[with patch] enhancing latex embedding with plots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1766",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 Assignee: tba
@@ -42,7 +42,7 @@ archive/issue_comments_011152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11152",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -55,16 +55,16 @@ archive/issue_comments_011152.json:
 archive/issue_comments_011153.json:
 ```json
 {
-    "body": "Attachment [latex_embedding.hg](tarball://root/attachments/some-uuid/ticket1766/latex_embedding.hg) by schilly created at 2008-01-16 21:57:26\n\nignore the .hg, it is outdated and i cannot upload the current one because of it's size\n\n\n\n** use the link above to the zip file! **",
+    "body": "Attachment [latex_embedding.hg](tarball://root/attachments/some-uuid/ticket1766/latex_embedding.hg) by @haraldschilly created at 2008-01-16 21:57:26\n\nignore the .hg, it is outdated and i cannot upload the current one because of it's size\n\n\n\n** use the link above to the zip file! **",
     "created_at": "2008-01-16T21:57:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11153",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
-Attachment [latex_embedding.hg](tarball://root/attachments/some-uuid/ticket1766/latex_embedding.hg) by schilly created at 2008-01-16 21:57:26
+Attachment [latex_embedding.hg](tarball://root/attachments/some-uuid/ticket1766/latex_embedding.hg) by @haraldschilly created at 2008-01-16 21:57:26
 
 ignore the .hg, it is outdated and i cannot upload the current one because of it's size
 
@@ -84,7 +84,7 @@ archive/issue_comments_011154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11154",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_011155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11155",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_011156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11156",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_011157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11157",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_011158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11158",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_011159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11159",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -200,16 +200,16 @@ This is now #1925
 archive/issue_comments_011160.json:
 ```json
 {
-    "body": "Attachment [latex_embed_updates.hg](tarball://root/attachments/some-uuid/ticket1766/latex_embed_updates.hg) by ddrake created at 2008-02-25 05:55:13\n\npatch to current version of sagetex.{sty,py}",
+    "body": "Attachment [latex_embed_updates.hg](tarball://root/attachments/some-uuid/ticket1766/latex_embed_updates.hg) by @dandrake created at 2008-02-25 05:55:13\n\npatch to current version of sagetex.{sty,py}",
     "created_at": "2008-02-25T05:55:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11160",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [latex_embed_updates.hg](tarball://root/attachments/some-uuid/ticket1766/latex_embed_updates.hg) by ddrake created at 2008-02-25 05:55:13
+Attachment [latex_embed_updates.hg](tarball://root/attachments/some-uuid/ticket1766/latex_embed_updates.hg) by @dandrake created at 2008-02-25 05:55:13
 
 patch to current version of sagetex.{sty,py}
 
@@ -225,7 +225,7 @@ archive/issue_comments_011161.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11161",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -238,16 +238,16 @@ patch to current version of sagetex.{sty,py}
 archive/issue_comments_011162.json:
 ```json
 {
-    "body": "Attachment [latex_embed_updates.2.hg](tarball://root/attachments/some-uuid/ticket1766/latex_embed_updates.2.hg) by ddrake created at 2008-02-25 07:03:21\n\nPlease ignore the bundles! I'm still new to Mercurial.\n\nThe patch updates sagetex.{sty,py}, but there's more to be done. The biggest issue is that when running Sage on the produced .sage file, it pops up windows with all the plots. (In Ubuntu gutsy, at least.) We need to find a way to keep Sage from doing this while processing the script.",
+    "body": "Attachment [latex_embed_updates.2.hg](tarball://root/attachments/some-uuid/ticket1766/latex_embed_updates.2.hg) by @dandrake created at 2008-02-25 07:03:21\n\nPlease ignore the bundles! I'm still new to Mercurial.\n\nThe patch updates sagetex.{sty,py}, but there's more to be done. The biggest issue is that when running Sage on the produced .sage file, it pops up windows with all the plots. (In Ubuntu gutsy, at least.) We need to find a way to keep Sage from doing this while processing the script.",
     "created_at": "2008-02-25T07:03:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11162",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [latex_embed_updates.2.hg](tarball://root/attachments/some-uuid/ticket1766/latex_embed_updates.2.hg) by ddrake created at 2008-02-25 07:03:21
+Attachment [latex_embed_updates.2.hg](tarball://root/attachments/some-uuid/ticket1766/latex_embed_updates.2.hg) by @dandrake created at 2008-02-25 07:03:21
 
 Please ignore the bundles! I'm still new to Mercurial.
 
@@ -265,7 +265,7 @@ archive/issue_comments_011163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11163",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_011164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11164",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -303,7 +303,7 @@ archive/issue_comments_011165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11165",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -331,7 +331,7 @@ archive/issue_comments_011166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11166",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -356,7 +356,7 @@ archive/issue_comments_011167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11167",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -378,7 +378,7 @@ archive/issue_comments_011168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11168",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -408,7 +408,7 @@ archive/issue_comments_011169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11169",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -465,7 +465,7 @@ archive/issue_comments_011170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11170",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -485,7 +485,7 @@ archive/issue_comments_011171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11171",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -509,7 +509,7 @@ archive/issue_comments_011172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11172",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -527,7 +527,7 @@ archive/issue_comments_011173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11173",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -552,7 +552,7 @@ archive/issue_comments_011174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11174",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -565,16 +565,16 @@ The current version of the patch fixes a misplaced brace, and adds the imagemagi
 archive/issue_comments_011175.json:
 ```json
 {
-    "body": "Attachment [sagetex.patch](tarball://root/attachments/some-uuid/ticket1766/sagetex.patch) by was created at 2008-03-12 04:49:24",
+    "body": "Attachment [sagetex.patch](tarball://root/attachments/some-uuid/ticket1766/sagetex.patch) by @williamstein created at 2008-03-12 04:49:24",
     "created_at": "2008-03-12T04:49:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11175",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sagetex.patch](tarball://root/attachments/some-uuid/ticket1766/sagetex.patch) by was created at 2008-03-12 04:49:24
+Attachment [sagetex.patch](tarball://root/attachments/some-uuid/ticket1766/sagetex.patch) by @williamstein created at 2008-03-12 04:49:24
 
 
 
@@ -588,7 +588,7 @@ archive/issue_comments_011176.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11176",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -603,16 +603,16 @@ Therefore the entire latex_embed directory should be replaced by [these files](h
 archive/issue_comments_011177.json:
 ```json
 {
-    "body": "Changing assignee from tba to mhansen.",
+    "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2008-03-31T14:36:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11177",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tba to mhansen.
+Changing assignee from tba to @mwhansen.
 
 
 
@@ -626,7 +626,7 @@ archive/issue_comments_011178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11178",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -644,7 +644,7 @@ archive/issue_comments_011179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11179",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

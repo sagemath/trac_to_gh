@@ -3,7 +3,7 @@
 archive/issues_007720.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  rlm\n\nThis function should be rewritten much more efficiently :\n\nFirst, there should be a way to reverse the arcs \"in place\" ( without building a copy, by modifying the current graph -- I do not know if the expression used in frech translates in this case ). Such a function, for c_graphs, should be written in Cython and consist in the case of sparse graph in reverting the two copies kept of the graph.\nIn the end, this function should consist in an (optional) copy of the graph (=fast) and a call to the functionr reverting the arcs ( O(1) )\n\nIf possible and if deemed useful, the same should be made for NetworkX graphs.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7720\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @rlmill\n\nThis function should be rewritten much more efficiently :\n\nFirst, there should be a way to reverse the arcs \"in place\" ( without building a copy, by modifying the current graph -- I do not know if the expression used in frech translates in this case ). Such a function, for c_graphs, should be written in Cython and consist in the case of sparse graph in reverting the two copies kept of the graph.\nIn the end, this function should consist in an (optional) copy of the graph (=fast) and a call to the functionr reverting the arcs ( O(1) )\n\nIf possible and if deemed useful, the same should be made for NetworkX graphs.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7720\n\n",
     "created_at": "2009-12-17T12:47:49Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_007720.json:
     "title": "Digraph.reverse() should be rewritten more efficiently ( not hard )",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7720",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  rlm
+CC:  @rlmill
 
 This function should be rewritten much more efficiently :
 
@@ -44,7 +44,7 @@ archive/issue_comments_066328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7720#issuecomment-66328",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -62,7 +62,7 @@ archive/issue_comments_066329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7720#issuecomment-66329",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_066330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7720#issuecomment-66330",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

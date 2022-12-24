@@ -3,7 +3,7 @@
 archive/issues_003801.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThis was originally motivated by removing `bruhat_sn.pyx`, but once Franco sat me down, he convinced me to work out spring layout for the `heights=` option. And it was easy!! Along the way we found and fixed several small bugs.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3801\n\n",
+    "body": "Assignee: @rlmill\n\nThis was originally motivated by removing `bruhat_sn.pyx`, but once Franco sat me down, he convinced me to work out spring layout for the `heights=` option. And it was easy!! Along the way we found and fixed several small bugs.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3801\n\n",
     "created_at": "2008-08-10T22:55:11Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_003801.json:
     "title": "[with patch, needs review] Spring layout for posets!!!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3801",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 This was originally motivated by removing `bruhat_sn.pyx`, but once Franco sat me down, he convinced me to work out spring layout for the `heights=` option. And it was easy!! Along the way we found and fixed several small bugs.
 
@@ -37,7 +37,7 @@ archive/issue_comments_027023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3801#issuecomment-27023",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -50,16 +50,16 @@ This needs a small separate patch, on its way...
 archive/issue_comments_027024.json:
 ```json
 {
-    "body": "Attachment [trac3801-spring-layout-posets.patch](tarball://root/attachments/some-uuid/ticket3801/trac3801-spring-layout-posets.patch) by rlm created at 2008-08-10 23:07:14",
+    "body": "Attachment [trac3801-spring-layout-posets.patch](tarball://root/attachments/some-uuid/ticket3801/trac3801-spring-layout-posets.patch) by @rlmill created at 2008-08-10 23:07:14",
     "created_at": "2008-08-10T23:07:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3801#issuecomment-27024",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac3801-spring-layout-posets.patch](tarball://root/attachments/some-uuid/ticket3801/trac3801-spring-layout-posets.patch) by rlm created at 2008-08-10 23:07:14
+Attachment [trac3801-spring-layout-posets.patch](tarball://root/attachments/some-uuid/ticket3801/trac3801-spring-layout-posets.patch) by @rlmill created at 2008-08-10 23:07:14
 
 
 
@@ -68,16 +68,16 @@ Attachment [trac3801-spring-layout-posets.patch](tarball://root/attachments/some
 archive/issue_comments_027025.json:
 ```json
 {
-    "body": "Attachment [trac3801-oops.patch](tarball://root/attachments/some-uuid/ticket3801/trac3801-oops.patch) by rlm created at 2008-08-10 23:21:58",
+    "body": "Attachment [trac3801-oops.patch](tarball://root/attachments/some-uuid/ticket3801/trac3801-oops.patch) by @rlmill created at 2008-08-10 23:21:58",
     "created_at": "2008-08-10T23:21:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3801#issuecomment-27025",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac3801-oops.patch](tarball://root/attachments/some-uuid/ticket3801/trac3801-oops.patch) by rlm created at 2008-08-10 23:21:58
+Attachment [trac3801-oops.patch](tarball://root/attachments/some-uuid/ticket3801/trac3801-oops.patch) by @rlmill created at 2008-08-10 23:21:58
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_027026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3801#issuecomment-27026",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 

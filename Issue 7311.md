@@ -14,7 +14,7 @@ archive/issues_007311.json:
     "title": "Change min/max arguments",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7311",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jkantor
@@ -39,7 +39,7 @@ archive/issue_comments_061071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7311#issuecomment-61071",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_061072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7311#issuecomment-61072",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_061073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7311#issuecomment-61073",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_061075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7311#issuecomment-61075",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -378,7 +378,7 @@ archive/issue_comments_061077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7311#issuecomment-61077",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -454,7 +454,7 @@ archive/issue_comments_061080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7311#issuecomment-61080",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -533,7 +533,7 @@ archive/issue_comments_061083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7311#issuecomment-61083",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -575,7 +575,7 @@ archive/issue_comments_061085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7311#issuecomment-61085",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -651,7 +651,7 @@ archive/issue_comments_061088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7311#issuecomment-61088",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -722,7 +722,7 @@ archive/issue_comments_061090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7311#issuecomment-61090",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -744,7 +744,7 @@ archive/issue_comments_061091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7311#issuecomment-61091",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -854,7 +854,7 @@ archive/issue_comments_061097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7311#issuecomment-61097",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -872,7 +872,7 @@ archive/issue_comments_061098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7311#issuecomment-61098",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

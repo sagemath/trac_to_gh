@@ -14,7 +14,7 @@ archive/issues_006377.json:
     "title": "exp(x) is broken at x=Infinity and x=-Infinity",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6377",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 Keywords: symbolic exp
@@ -54,16 +54,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6377
 archive/issue_comments_051028.json:
 ```json
 {
-    "body": "Set assignee to burcin.",
+    "body": "Set assignee to @burcin.",
     "created_at": "2009-06-22T13:02:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6377#issuecomment-51028",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Set assignee to burcin.
+Set assignee to @burcin.
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_051029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6377#issuecomment-51029",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_051030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6377#issuecomment-51030",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -110,16 +110,16 @@ The fix for `exp()` needs to go into pynac. I don't know what other functions ar
 archive/issue_comments_051031.json:
 ```json
 {
-    "body": "Attachment [trac_6377-exp_infinity.patch](tarball://root/attachments/some-uuid/ticket6377/trac_6377-exp_infinity.patch) by burcin created at 2009-07-31 23:52:10\n\ndoctests for the fix",
+    "body": "Attachment [trac_6377-exp_infinity.patch](tarball://root/attachments/some-uuid/ticket6377/trac_6377-exp_infinity.patch) by @burcin created at 2009-07-31 23:52:10\n\ndoctests for the fix",
     "created_at": "2009-07-31T23:52:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6377#issuecomment-51031",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6377-exp_infinity.patch](tarball://root/attachments/some-uuid/ticket6377/trac_6377-exp_infinity.patch) by burcin created at 2009-07-31 23:52:10
+Attachment [trac_6377-exp_infinity.patch](tarball://root/attachments/some-uuid/ticket6377/trac_6377-exp_infinity.patch) by @burcin created at 2009-07-31 23:52:10
 
 doctests for the fix
 
@@ -135,7 +135,7 @@ archive/issue_comments_051032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6377#issuecomment-51032",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_051033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6377#issuecomment-51033",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_051034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6377#issuecomment-51034",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_051035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6377#issuecomment-51035",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 

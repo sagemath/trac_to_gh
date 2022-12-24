@@ -3,7 +3,7 @@
 archive/issues_002402.json:
 ```json
 {
-    "body": "Assignee: was\n\nLike the summary says, there should be a hg_examples mercurial wrapper for the examples repository.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2402\n\n",
+    "body": "Assignee: @williamstein\n\nLike the summary says, there should be a hg_examples mercurial wrapper for the examples repository.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2402\n\n",
     "created_at": "2008-03-06T02:14:31Z",
     "labels": [
         "user interface",
@@ -17,7 +17,7 @@ archive/issues_002402.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Like the summary says, there should be a hg_examples mercurial wrapper for the examples repository.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2402
 archive/issue_comments_016221.json:
 ```json
 {
-    "body": "Attachment [trac_2402.patch](tarball://root/attachments/some-uuid/ticket2402/trac_2402.patch) by mhansen created at 2009-01-23 13:30:11",
+    "body": "Attachment [trac_2402.patch](tarball://root/attachments/some-uuid/ticket2402/trac_2402.patch) by @mwhansen created at 2009-01-23 13:30:11",
     "created_at": "2009-01-23T13:30:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2402#issuecomment-16221",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_2402.patch](tarball://root/attachments/some-uuid/ticket2402/trac_2402.patch) by mhansen created at 2009-01-23 13:30:11
+Attachment [trac_2402.patch](tarball://root/attachments/some-uuid/ticket2402/trac_2402.patch) by @mwhansen created at 2009-01-23 13:30:11
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_016222.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2402#issuecomment-16222",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing status from new to assigned.
 archive/issue_comments_016223.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2009-01-23T13:30:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2402#issuecomment-16223",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 

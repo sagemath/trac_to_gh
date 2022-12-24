@@ -3,7 +3,7 @@
 archive/issues_003362.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\n\n```\nInteger(5)._lmul_(Integer(3))\n```\n\n should produce 15, but instead throws\n\n```\nNotImplementedError: parents Integer Ring Integer Ring True\n```\n\nThis makes it hard to write general code that works with noncomutative multiplication.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3362\n\n",
+    "body": "Assignee: @robertwb\n\n\n```\nInteger(5)._lmul_(Integer(3))\n```\n\n should produce 15, but instead throws\n\n```\nNotImplementedError: parents Integer Ring Integer Ring True\n```\n\nThis makes it hard to write general code that works with noncomutative multiplication.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3362\n\n",
     "created_at": "2008-06-04T16:19:22Z",
     "labels": [
         "coercion",
@@ -14,10 +14,10 @@ archive/issues_003362.json:
     "title": "lmul is broken for modules.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3362",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 
 ```
@@ -48,7 +48,7 @@ archive/issue_comments_023526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3362",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3362#issuecomment-23526",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_023528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3362",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3362#issuecomment-23528",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006482.json:
 ```json
 {
-    "body": "Assignee: malb\n\n\n```\nOn Wed, Jul 8, 2009 at 1:28 AM, Kwankyu<...> wrote:\n>\n> Hi,\n>\n> I was surprised to see\n>\n> sage: R.<x,y>=QQ[]\n> sage: g=x+y\n> sage: g.subs({x:x+1,y:x*y})\n> x*y + x + y + 1\n>\n> So the order of substitution matters...unfortunately.\n>\n> sage: g.subs({x:x+1}).subs({y:x*y})\n> x*y + x + 1\n> sage: g.subs({y:x*y}).subs({x:x+1})\n> x*y + x + y + 1\n>\n> So the order seems to be from right to left. This seems to me\n> unnatural. Anyway this is undocumented. \n\nActually, i guess it is documented.  However, I consider it a serious design flaw.\nMany thanks for pointing this out!!\n\nI consider this a serious design flaw for the following reasons:\n\n (1) it is too hard to understand the above behavior, since it depends on the hash values symbolic variables, which might possibly be system-dependent.\n\n (2) it is totally inconsistent with the behavior for symbolic expressions, where things are done right.\n\n (3) it is totally inconsistent with the behavior of *homomorphisms*, where things are also done right.\n\nHere is a session to illustrate the above points:\n\n# BAD\nsage: R.<x,y>=QQ[]\nsage: g=x+y\nsage: g.subs({x:x+1,y:x*y})\nx*y + x + y + 1\n\n# BAD\nsage: R.<x,y>=QQ[]\nsage: g=x+y\nsage: g.subs(x=x+1,y=x*y)\nx*y + x + y + 1\n\n# GOOD\nsage: R.<x,y>=QQ[]\nsage: phi = R.hom([x+1,x*y])\nsage: g=x+y\nsage: phi(g)\nx*y + x + 1\n\n# GOOD\nsage: var('x,y')\nsage: g = x+y\nsage: g.subs({x:x+1,y:x*y})\nx*y + x + 1\n\n# GOOD\nsage: var('x,y')\nsage: g = x+y\nsage: g.subs(x=x+1,y=x*y)\nx*y + x + 1\n        \n\n> What should be done to this?\n\n1. I suggest that for now you use Hom, as illustrated above, as a workaround.  \n\n2. I think subs should be reimplemented using Hom ASAP.  Note that this could break existing code, so will have to be done carefully.    We can leave the old behavior in for speed, but as a non-default option.\n\n3. Come up with a fast way to implement the new behavior. \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6482\n\n",
+    "body": "Assignee: @malb\n\n\n```\nOn Wed, Jul 8, 2009 at 1:28 AM, Kwankyu<...> wrote:\n>\n> Hi,\n>\n> I was surprised to see\n>\n> sage: R.<x,y>=QQ[]\n> sage: g=x+y\n> sage: g.subs({x:x+1,y:x*y})\n> x*y + x + y + 1\n>\n> So the order of substitution matters...unfortunately.\n>\n> sage: g.subs({x:x+1}).subs({y:x*y})\n> x*y + x + 1\n> sage: g.subs({y:x*y}).subs({x:x+1})\n> x*y + x + y + 1\n>\n> So the order seems to be from right to left. This seems to me\n> unnatural. Anyway this is undocumented. \n\nActually, i guess it is documented.  However, I consider it a serious design flaw.\nMany thanks for pointing this out!!\n\nI consider this a serious design flaw for the following reasons:\n\n (1) it is too hard to understand the above behavior, since it depends on the hash values symbolic variables, which might possibly be system-dependent.\n\n (2) it is totally inconsistent with the behavior for symbolic expressions, where things are done right.\n\n (3) it is totally inconsistent with the behavior of *homomorphisms*, where things are also done right.\n\nHere is a session to illustrate the above points:\n\n# BAD\nsage: R.<x,y>=QQ[]\nsage: g=x+y\nsage: g.subs({x:x+1,y:x*y})\nx*y + x + y + 1\n\n# BAD\nsage: R.<x,y>=QQ[]\nsage: g=x+y\nsage: g.subs(x=x+1,y=x*y)\nx*y + x + y + 1\n\n# GOOD\nsage: R.<x,y>=QQ[]\nsage: phi = R.hom([x+1,x*y])\nsage: g=x+y\nsage: phi(g)\nx*y + x + 1\n\n# GOOD\nsage: var('x,y')\nsage: g = x+y\nsage: g.subs({x:x+1,y:x*y})\nx*y + x + 1\n\n# GOOD\nsage: var('x,y')\nsage: g = x+y\nsage: g.subs(x=x+1,y=x*y)\nx*y + x + 1\n        \n\n> What should be done to this?\n\n1. I suggest that for now you use Hom, as illustrated above, as a workaround.  \n\n2. I think subs should be reimplemented using Hom ASAP.  Note that this could break existing code, so will have to be done carefully.    We can leave the old behavior in for speed, but as a non-default option.\n\n3. Come up with a fast way to implement the new behavior. \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6482\n\n",
     "created_at": "2009-07-08T13:08:58Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_006482.json:
     "title": "multivariate polynomial substitution has a design flaw",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6482",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 
 ```
@@ -114,7 +114,7 @@ archive/issue_comments_052402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6482#issuecomment-52402",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_052403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6482#issuecomment-52403",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_052404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6482#issuecomment-52404",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -236,16 +236,16 @@ sage: %timeit phi(f)
 archive/issue_comments_052405.json:
 ```json
 {
-    "body": "Attachment [fix_mpoly_subs.patch](tarball://root/attachments/some-uuid/ticket6482/fix_mpoly_subs.patch) by malb created at 2009-09-09 20:12:43\n\n**Performance**\n\n\n```python\nsage: P.<a,b,c,d,e> = PolynomialRing(QQ)\nsage: f = P.random_element(degree=3,terms=50)\nsage: g = {a:b,b:c,c:d,d:e,e:a}\nsage: %timeit f.subs(g)\n1000 loops, best of 3: 271 \u00b5s per loop\n```\n\n\n\n```python\nsage: phi = P.hom([b,c,d,e,a])\nsage: %timeit phi(f)\n1000 loops, best of 3: 939 \u00b5s per loop\n```\n\n\n\n```python\nsage: phi(f)\n-a^2*b - 11/2*b^3 - 8*a^2*c + 1/51*b*c^2 + 1/2*c^3 - a^2*d + 1/3*a*b*d - 2/11*a*c*d + 195*b*c*d + 1/3*a*d^2 + 2*b*d^2 - c*d^2 - 2/3*a^2*e + 1/2*a*b*e - 203*b^2*e + 1/4*a*c*e + b*c*e - 5*c^2*e + 6*a*e^2 + b*e^2 - 1/3*c*e^2 - 5*d*e^2 + 3*e^3 + 1/3*a^2 - a*b - 7/48*a*c - 2*b*c - 53/2*c^2 - 1/3*a*d - 1/2*b*d + c*d - d^2 - a*e - 4*b*e - d*e + 13*e^2 - 2*a - 1/2*b - c + 9/2*d - 1/2\nsage: f.sub\nf.sub_m_mul_q  f.subs         f.substitute\nsage: f.subs(g)\n-a^2*b - 11/2*b^3 - 8*a^2*c + 1/51*b*c^2 + 1/2*c^3 - a^2*d + 1/3*a*b*d - 2/11*a*c*d + 195*b*c*d + 1/3*a*d^2 + 2*b*d^2 - c*d^2 - 2/3*a^2*e + 1/2*a*b*e - 203*b^2*e + 1/4*a*c*e + b*c*e - 5*c^2*e + 6*a*e^2 + b*e^2 - 1/3*c*e^2 - 5*d*e^2 + 3*e^3 + 1/3*a^2 - a*b - 7/48*a*c - 2*b*c - 53/2*c^2 - 1/3*a*d - 1/2*b*d + c*d - d^2 - a*e - 4*b*e - d*e + 13*e^2 - 2*a - 1/2*b - c + 9/2*d - 1/2\n```\n",
+    "body": "Attachment [fix_mpoly_subs.patch](tarball://root/attachments/some-uuid/ticket6482/fix_mpoly_subs.patch) by @malb created at 2009-09-09 20:12:43\n\n**Performance**\n\n\n```python\nsage: P.<a,b,c,d,e> = PolynomialRing(QQ)\nsage: f = P.random_element(degree=3,terms=50)\nsage: g = {a:b,b:c,c:d,d:e,e:a}\nsage: %timeit f.subs(g)\n1000 loops, best of 3: 271 \u00b5s per loop\n```\n\n\n\n```python\nsage: phi = P.hom([b,c,d,e,a])\nsage: %timeit phi(f)\n1000 loops, best of 3: 939 \u00b5s per loop\n```\n\n\n\n```python\nsage: phi(f)\n-a^2*b - 11/2*b^3 - 8*a^2*c + 1/51*b*c^2 + 1/2*c^3 - a^2*d + 1/3*a*b*d - 2/11*a*c*d + 195*b*c*d + 1/3*a*d^2 + 2*b*d^2 - c*d^2 - 2/3*a^2*e + 1/2*a*b*e - 203*b^2*e + 1/4*a*c*e + b*c*e - 5*c^2*e + 6*a*e^2 + b*e^2 - 1/3*c*e^2 - 5*d*e^2 + 3*e^3 + 1/3*a^2 - a*b - 7/48*a*c - 2*b*c - 53/2*c^2 - 1/3*a*d - 1/2*b*d + c*d - d^2 - a*e - 4*b*e - d*e + 13*e^2 - 2*a - 1/2*b - c + 9/2*d - 1/2\nsage: f.sub\nf.sub_m_mul_q  f.subs         f.substitute\nsage: f.subs(g)\n-a^2*b - 11/2*b^3 - 8*a^2*c + 1/51*b*c^2 + 1/2*c^3 - a^2*d + 1/3*a*b*d - 2/11*a*c*d + 195*b*c*d + 1/3*a*d^2 + 2*b*d^2 - c*d^2 - 2/3*a^2*e + 1/2*a*b*e - 203*b^2*e + 1/4*a*c*e + b*c*e - 5*c^2*e + 6*a*e^2 + b*e^2 - 1/3*c*e^2 - 5*d*e^2 + 3*e^3 + 1/3*a^2 - a*b - 7/48*a*c - 2*b*c - 53/2*c^2 - 1/3*a*d - 1/2*b*d + c*d - d^2 - a*e - 4*b*e - d*e + 13*e^2 - 2*a - 1/2*b - c + 9/2*d - 1/2\n```\n",
     "created_at": "2009-09-09T20:12:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6482#issuecomment-52405",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [fix_mpoly_subs.patch](tarball://root/attachments/some-uuid/ticket6482/fix_mpoly_subs.patch) by malb created at 2009-09-09 20:12:43
+Attachment [fix_mpoly_subs.patch](tarball://root/attachments/some-uuid/ticket6482/fix_mpoly_subs.patch) by @malb created at 2009-09-09 20:12:43
 
 **Performance**
 
@@ -290,7 +290,7 @@ archive/issue_comments_052406.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6482#issuecomment-52406",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -310,7 +310,7 @@ archive/issue_comments_052407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6482#issuecomment-52407",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -343,7 +343,7 @@ archive/issue_comments_052408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6482#issuecomment-52408",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -361,7 +361,7 @@ archive/issue_comments_052409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6482#issuecomment-52409",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -381,7 +381,7 @@ archive/issue_comments_052410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6482#issuecomment-52410",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

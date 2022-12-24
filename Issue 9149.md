@@ -14,7 +14,7 @@ archive/issues_009149.json:
     "title": "spelling error (trivial to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9149",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: GeorgSWeber
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9149
 archive/issue_comments_085425.json:
 ```json
 {
-    "body": "Attachment [trac_9149.patch](tarball://root/attachments/some-uuid/ticket9149/trac_9149.patch) by zimmerma created at 2010-06-05 12:24:12",
+    "body": "Attachment [trac_9149.patch](tarball://root/attachments/some-uuid/ticket9149/trac_9149.patch) by @zimmermann6 created at 2010-06-05 12:24:12",
     "created_at": "2010-06-05T12:24:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9149",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9149#issuecomment-85425",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [trac_9149.patch](tarball://root/attachments/some-uuid/ticket9149/trac_9149.patch) by zimmerma created at 2010-06-05 12:24:12
+Attachment [trac_9149.patch](tarball://root/attachments/some-uuid/ticket9149/trac_9149.patch) by @zimmermann6 created at 2010-06-05 12:24:12
 
 
 
@@ -66,7 +66,7 @@ archive/issue_comments_085426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9149",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9149#issuecomment-85426",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_085427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9149",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9149#issuecomment-85427",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_085430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9149",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9149#issuecomment-85430",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

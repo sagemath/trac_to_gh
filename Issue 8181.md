@@ -3,7 +3,7 @@
 archive/issues_008181.json:
 ```json
 {
-    "body": "Assignee: roed\n\nCC:  roed mjo\n\nI should be able to coerce elements of the residue field of a p-adic ring back into the ring, but I can't:\n\n\n```\nsage: R.<z> = Zq(9)\nsage: F = R.residue_class_field()\nsage: F\nFinite Field in z0 of size 3^2\nsage: a = F.gen()\nsage: R(a)\n---------------------------------------------------------------------------\nTypeError\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8181\n\n",
+    "body": "Assignee: @roed314\n\nCC:  @roed314 @orlitzky\n\nI should be able to coerce elements of the residue field of a p-adic ring back into the ring, but I can't:\n\n\n```\nsage: R.<z> = Zq(9)\nsage: F = R.residue_class_field()\nsage: F\nFinite Field in z0 of size 3^2\nsage: a = F.gen()\nsage: R(a)\n---------------------------------------------------------------------------\nTypeError\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8181\n\n",
     "created_at": "2010-02-03T23:35:50Z",
     "labels": [
         "padics",
@@ -17,9 +17,9 @@ archive/issues_008181.json:
     "user": "dmharvey"
 }
 ```
-Assignee: roed
+Assignee: @roed314
 
-CC:  roed mjo
+CC:  @roed314 @orlitzky
 
 I should be able to coerce elements of the residue field of a p-adic ring back into the ring, but I can't:
 
@@ -73,7 +73,7 @@ archive/issue_comments_072097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8181",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8181#issuecomment-72097",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_072098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8181",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8181#issuecomment-72098",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_072099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8181",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8181#issuecomment-72099",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_072100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8181",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8181#issuecomment-72100",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_072101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8181",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8181#issuecomment-72101",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_072102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8181",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8181#issuecomment-72102",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_072103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8181",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8181#issuecomment-72103",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_072104.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8181",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8181#issuecomment-72104",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_072105.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8181",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8181#issuecomment-72105",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_072106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8181",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8181#issuecomment-72106",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_072107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8181",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8181#issuecomment-72107",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_072108.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8181",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8181#issuecomment-72108",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_072109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8181",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8181#issuecomment-72109",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_072110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8181",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8181#issuecomment-72110",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_072111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8181",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8181#issuecomment-72111",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

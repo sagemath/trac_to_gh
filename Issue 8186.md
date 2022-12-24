@@ -14,7 +14,7 @@ archive/issues_008186.json:
     "title": "iterated_right_palindromic_closure of a finite word should return a finite word",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8186",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 Assignee: sage-combinat
@@ -65,7 +65,7 @@ archive/issue_comments_072143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8186",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8186#issuecomment-72143",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_072144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8186",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8186#issuecomment-72144",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_072150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8186",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8186#issuecomment-72150",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_072151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8186",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8186#issuecomment-72151",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_072152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8186",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8186#issuecomment-72152",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -319,7 +319,7 @@ archive/issue_comments_072153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8186",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8186#issuecomment-72153",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_072154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8186",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8186#issuecomment-72154",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_072155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8186",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8186#issuecomment-72155",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

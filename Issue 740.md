@@ -14,7 +14,7 @@ archive/issues_000740.json:
     "title": "Implement standard transformations for elliptic curves & points",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/740",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 Assignee: John Cremona
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/740
 archive/issue_comments_004329.json:
 ```json
 {
-    "body": "Changing assignee from John Cremona to cremona.",
+    "body": "Changing assignee from John Cremona to @JohnCremona.",
     "created_at": "2007-09-23T21:43:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/740#issuecomment-4329",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Changing assignee from John Cremona to cremona.
+Changing assignee from John Cremona to @JohnCremona.
 
 
 
@@ -65,7 +65,7 @@ archive/issue_comments_004330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/740#issuecomment-4330",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_004331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/740#issuecomment-4331",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_004332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/740#issuecomment-4332",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_004333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/740#issuecomment-4333",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -198,16 +198,16 @@ The patch I will post will do this properly.
 archive/issue_comments_004334.json:
 ```json
 {
-    "body": "Attachment [eciso.hg](tarball://root/attachments/some-uuid/ticket740/eciso.hg) by cremona created at 2008-01-25 18:18:46\n\nAttached patch fixes the bugs (was made against 2.9.3)",
+    "body": "Attachment [eciso.hg](tarball://root/attachments/some-uuid/ticket740/eciso.hg) by @JohnCremona created at 2008-01-25 18:18:46\n\nAttached patch fixes the bugs (was made against 2.9.3)",
     "created_at": "2008-01-25T18:18:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/740#issuecomment-4334",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [eciso.hg](tarball://root/attachments/some-uuid/ticket740/eciso.hg) by cremona created at 2008-01-25 18:18:46
+Attachment [eciso.hg](tarball://root/attachments/some-uuid/ticket740/eciso.hg) by @JohnCremona created at 2008-01-25 18:18:46
 
 Attached patch fixes the bugs (was made against 2.9.3)
 
@@ -223,7 +223,7 @@ archive/issue_comments_004335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/740#issuecomment-4335",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -271,16 +271,16 @@ Should we throw an error, or indicate (in the docstring or elsewhere) that the r
 archive/issue_comments_004336.json:
 ```json
 {
-    "body": "Attachment [8087.patch](tarball://root/attachments/some-uuid/ticket740/8087.patch) by cremona created at 2008-01-27 03:44:40\n\nThis coimpletely replaces the previous patch (eciso.hg)",
+    "body": "Attachment [8087.patch](tarball://root/attachments/some-uuid/ticket740/8087.patch) by @JohnCremona created at 2008-01-27 03:44:40\n\nThis coimpletely replaces the previous patch (eciso.hg)",
     "created_at": "2008-01-27T03:44:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/740#issuecomment-4336",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [8087.patch](tarball://root/attachments/some-uuid/ticket740/8087.patch) by cremona created at 2008-01-27 03:44:40
+Attachment [8087.patch](tarball://root/attachments/some-uuid/ticket740/8087.patch) by @JohnCremona created at 2008-01-27 03:44:40
 
 This coimpletely replaces the previous patch (eciso.hg)
 
@@ -291,16 +291,16 @@ This coimpletely replaces the previous patch (eciso.hg)
 archive/issue_comments_004337.json:
 ```json
 {
-    "body": "Attachment [8088.patch](tarball://root/attachments/some-uuid/ticket740/8088.patch) by cremona created at 2008-01-27 04:00:43\n\nMinor additional patch to 8087.patch (fix 2 doctests)",
+    "body": "Attachment [8088.patch](tarball://root/attachments/some-uuid/ticket740/8088.patch) by @JohnCremona created at 2008-01-27 04:00:43\n\nMinor additional patch to 8087.patch (fix 2 doctests)",
     "created_at": "2008-01-27T04:00:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/740#issuecomment-4337",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [8088.patch](tarball://root/attachments/some-uuid/ticket740/8088.patch) by cremona created at 2008-01-27 04:00:43
+Attachment [8088.patch](tarball://root/attachments/some-uuid/ticket740/8088.patch) by @JohnCremona created at 2008-01-27 04:00:43
 
 Minor additional patch to 8087.patch (fix 2 doctests)
 
@@ -316,7 +316,7 @@ archive/issue_comments_004338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/740#issuecomment-4338",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003026.json:
 ```json
 {
-    "body": "Assignee: malb\n\nThe following output from sage does not make too much sense.\n\nsage: PolynomialRing(QQ, names=[])\nMultivariate Polynomial Ring in  over Rational Field\n\nwstein suggested that it might print something like the following.\n\nMultivariate Polynomial Ring in no variables over Rational Field\n\nIssue created by migration from https://trac.sagemath.org/ticket/3026\n\n",
+    "body": "Assignee: @malb\n\nThe following output from sage does not make too much sense.\n\nsage: PolynomialRing(QQ, names=[])\nMultivariate Polynomial Ring in  over Rational Field\n\nwstein suggested that it might print something like the following.\n\nMultivariate Polynomial Ring in no variables over Rational Field\n\nIssue created by migration from https://trac.sagemath.org/ticket/3026\n\n",
     "created_at": "2008-04-26T00:24:06Z",
     "labels": [
         "commutative algebra",
@@ -17,7 +17,7 @@ archive/issues_003026.json:
     "user": "broune"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 The following output from sage does not make too much sense.
 
@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3026
 archive/issue_comments_020805.json:
 ```json
 {
-    "body": "Changing assignee from malb to broune.",
+    "body": "Changing assignee from @malb to broune.",
     "created_at": "2008-05-07T20:15:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3026",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_020805.json:
 }
 ```
 
-Changing assignee from malb to broune.
+Changing assignee from @malb to broune.
 
 
 

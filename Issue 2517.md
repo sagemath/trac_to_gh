@@ -3,7 +3,7 @@
 archive/issues_002517.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n> >  Hi,\n> >\n> >  With sage-2.10.3 the following plot fails:\n> >\n> >  plot(-x*log(x),0,1, plot_points=1000)\n> >\n> >  This worked fine in sage-2.10.2. Note that the left hand limit is\n> >  well-defined and can be approximated:\n> >\n> >  plot(-x*log(x),0.00000000000000001,1, plot_points=1000)\n> >\n> >  Is this a feature or a bug?\n\nIt fails because it used to be that there was a bug where when\nplotting the left and right endpoints were omitted, because the sample\npoints were *all* randomized!  This really\nannoyed a lot of people, especially people making animations,\nbut allowed the above example to work.\n\nI think the solution is to fix our plotting code so that it just automatically\ncompletely ignores a few bad values (like it used to), possibly printing\na warning.\n\n -- William\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2517\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n> >  Hi,\n> >\n> >  With sage-2.10.3 the following plot fails:\n> >\n> >  plot(-x*log(x),0,1, plot_points=1000)\n> >\n> >  This worked fine in sage-2.10.2. Note that the left hand limit is\n> >  well-defined and can be approximated:\n> >\n> >  plot(-x*log(x),0.00000000000000001,1, plot_points=1000)\n> >\n> >  Is this a feature or a bug?\n\nIt fails because it used to be that there was a bug where when\nplotting the left and right endpoints were omitted, because the sample\npoints were *all* randomized!  This really\nannoyed a lot of people, especially people making animations,\nbut allowed the above example to work.\n\nI think the solution is to fix our plotting code so that it just automatically\ncompletely ignores a few bad values (like it used to), possibly printing\na warning.\n\n -- William\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2517\n\n",
     "created_at": "2008-03-14T16:58:53Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_002517.json:
     "title": "ignore bad values in plot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2517",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -65,7 +65,7 @@ archive/issue_comments_017165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2517",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2517#issuecomment-17165",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_017166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2517",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2517#issuecomment-17166",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_017167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2517",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2517#issuecomment-17167",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -122,16 +122,16 @@ was for debugging purposes and should be deleted.
 archive/issue_comments_017168.json:
 ```json
 {
-    "body": "Attachment [plot_undefined.patch](tarball://root/attachments/some-uuid/ticket2517/plot_undefined.patch) by jason created at 2008-03-14 21:36:53",
+    "body": "Attachment [plot_undefined.patch](tarball://root/attachments/some-uuid/ticket2517/plot_undefined.patch) by @jasongrout created at 2008-03-14 21:36:53",
     "created_at": "2008-03-14T21:36:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2517",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2517#issuecomment-17168",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [plot_undefined.patch](tarball://root/attachments/some-uuid/ticket2517/plot_undefined.patch) by jason created at 2008-03-14 21:36:53
+Attachment [plot_undefined.patch](tarball://root/attachments/some-uuid/ticket2517/plot_undefined.patch) by @jasongrout created at 2008-03-14 21:36:53
 
 
 
@@ -145,7 +145,7 @@ archive/issue_comments_017169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2517",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2517#issuecomment-17169",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_017170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2517",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2517#issuecomment-17170",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_017171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2517",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2517#issuecomment-17171",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -252,16 +252,16 @@ Second patch is rebased against 2.10.4 and works correctly.
 archive/issue_comments_017172.json:
 ```json
 {
-    "body": "Attachment [plot_undefined.2.patch](tarball://root/attachments/some-uuid/ticket2517/plot_undefined.2.patch) by jason created at 2008-03-18 21:52:00",
+    "body": "Attachment [plot_undefined.2.patch](tarball://root/attachments/some-uuid/ticket2517/plot_undefined.2.patch) by @jasongrout created at 2008-03-18 21:52:00",
     "created_at": "2008-03-18T21:52:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2517",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2517#issuecomment-17172",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [plot_undefined.2.patch](tarball://root/attachments/some-uuid/ticket2517/plot_undefined.2.patch) by jason created at 2008-03-18 21:52:00
+Attachment [plot_undefined.2.patch](tarball://root/attachments/some-uuid/ticket2517/plot_undefined.2.patch) by @jasongrout created at 2008-03-18 21:52:00
 
 
 
@@ -275,7 +275,7 @@ archive/issue_comments_017173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2517",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2517#issuecomment-17173",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

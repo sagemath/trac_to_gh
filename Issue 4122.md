@@ -14,7 +14,7 @@ archive/issues_004122.json:
     "title": "python debug mode, add sleep(2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4122",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: mabshoff
@@ -81,7 +81,7 @@ archive/issue_comments_029892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4122",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4122#issuecomment-29892",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009666.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nI propose to use a HNF Z-basis of number field ideals to compute the hash of an ideal.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9666\n\n",
+    "body": "Assignee: @loefflerd\n\nI propose to use a HNF Z-basis of number field ideals to compute the hash of an ideal.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9666\n\n",
     "created_at": "2010-08-01T21:41:36Z",
     "labels": [
         "number fields",
@@ -14,10 +14,10 @@ archive/issues_009666.json:
     "title": "Implement __hash__ for NumberFieldIdeal",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9666",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
 I propose to use a HNF Z-basis of number field ideals to compute the hash of an ideal.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9666
 archive/issue_comments_093846.json:
 ```json
 {
-    "body": "Attachment [9666.patch](tarball://root/attachments/some-uuid/ticket9666/9666.patch) by jdemeyer created at 2010-08-02 11:55:18",
+    "body": "Attachment [9666.patch](tarball://root/attachments/some-uuid/ticket9666/9666.patch) by @jdemeyer created at 2010-08-02 11:55:18",
     "created_at": "2010-08-02T11:55:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9666#issuecomment-93846",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9666.patch](tarball://root/attachments/some-uuid/ticket9666/9666.patch) by jdemeyer created at 2010-08-02 11:55:18
+Attachment [9666.patch](tarball://root/attachments/some-uuid/ticket9666/9666.patch) by @jdemeyer created at 2010-08-02 11:55:18
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_093847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9666#issuecomment-93847",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_093848.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9666#issuecomment-93848",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_093849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9666#issuecomment-93849",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_093850.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9666#issuecomment-93850",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_093851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9666#issuecomment-93851",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_093852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9666#issuecomment-93852",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_093853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9666#issuecomment-93853",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

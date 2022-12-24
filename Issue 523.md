@@ -3,7 +3,7 @@
 archive/issues_000523.json:
 ```json
 {
-    "body": "Assignee: was\n\nWould be nice if the trac email notification was switched on.\n\nSee e.g.\n\nhttp://www.sagemath.org:9002/sage_trac/wiki/TracNotification\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/523\n\n",
+    "body": "Assignee: @williamstein\n\nWould be nice if the trac email notification was switched on.\n\nSee e.g.\n\nhttp://www.sagemath.org:9002/sage_trac/wiki/TracNotification\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/523\n\n",
     "created_at": "2007-08-29T22:57:33Z",
     "labels": [
         "website/wiki",
@@ -17,7 +17,7 @@ archive/issues_000523.json:
     "user": "dmharvey"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Would be nice if the trac email notification was switched on.
 
@@ -64,7 +64,7 @@ archive/issue_comments_002657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/523#issuecomment-2657",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

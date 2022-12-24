@@ -14,7 +14,7 @@ archive/issues_009830.json:
     "title": "Strange behaviour of Permutation(list) when list contains 0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9830",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 Assignee: sage-combinat
@@ -74,7 +74,7 @@ archive/issue_comments_097006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9830#issuecomment-97006",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_097013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9830#issuecomment-97013",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_097014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9830#issuecomment-97014",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

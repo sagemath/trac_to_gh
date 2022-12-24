@@ -3,7 +3,7 @@
 archive/issues_002905.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nThis patch moves some things to cpdef and fixes various slowdowns.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2905\n\n",
+    "body": "Assignee: @garyfurnish\n\nThis patch moves some things to cpdef and fixes various slowdowns.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2905\n\n",
     "created_at": "2008-04-13T06:02:46Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_002905.json:
     "title": "Various speedups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2905",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 This patch moves some things to cpdef and fixes various slowdowns.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2905
 archive/issue_comments_020024.json:
 ```json
 {
-    "body": "Attachment [trac_2905.patch](tarball://root/attachments/some-uuid/ticket2905/trac_2905.patch) by gfurnish created at 2008-04-13 06:05:50",
+    "body": "Attachment [trac_2905.patch](tarball://root/attachments/some-uuid/ticket2905/trac_2905.patch) by @garyfurnish created at 2008-04-13 06:05:50",
     "created_at": "2008-04-13T06:05:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2905#issuecomment-20024",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_2905.patch](tarball://root/attachments/some-uuid/ticket2905/trac_2905.patch) by gfurnish created at 2008-04-13 06:05:50
+Attachment [trac_2905.patch](tarball://root/attachments/some-uuid/ticket2905/trac_2905.patch) by @garyfurnish created at 2008-04-13 06:05:50
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_020025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2905#issuecomment-20025",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_020026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2905#issuecomment-20026",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

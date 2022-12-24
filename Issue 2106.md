@@ -3,7 +3,7 @@
 archive/issues_002106.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  malb\n\nMarshall Buck on [sage-support] writes:\n\nIt is a shame that normal arithmetic for polys over GF(2) still seems\nto be implemented by the ntl ZZ_pX library, which is usually at least\n10 times slower than GF2X,  up to degree 2<sup>17</sup> anyway. In that range\nGF2X matches the speed of magma.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2106\n\n",
+    "body": "Assignee: somebody\n\nCC:  @malb\n\nMarshall Buck on [sage-support] writes:\n\nIt is a shame that normal arithmetic for polys over GF(2) still seems\nto be implemented by the ntl ZZ_pX library, which is usually at least\n10 times slower than GF2X,  up to degree 2<sup>17</sup> anyway. In that range\nGF2X matches the speed of magma.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2106\n\n",
     "created_at": "2008-02-08T09:44:08Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_002106.json:
     "title": "Implement univariate polynomials over GF(2) via ntl.GF2X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2106",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: somebody
 
-CC:  malb
+CC:  @malb
 
 Marshall Buck on [sage-support] writes:
 
@@ -44,7 +44,7 @@ archive/issue_comments_013733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2106#issuecomment-13733",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_013734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2106#issuecomment-13734",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_013735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2106#issuecomment-13735",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

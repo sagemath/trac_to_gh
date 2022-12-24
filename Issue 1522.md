@@ -14,7 +14,7 @@ archive/issues_001522.json:
     "title": "more 2.9-alpha7 ppc osx prebuilt problems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1522",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 Assignee: mabshoff

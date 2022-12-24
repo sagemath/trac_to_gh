@@ -3,7 +3,7 @@
 archive/issues_007980.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat\n\nThis code currently exists on the sage-combinat queue, in the ncsf patch.  It should be put in a more natural place in the category code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7980\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nThis code currently exists on the sage-combinat queue, in the ncsf patch.  It should be put in a more natural place in the category code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7980\n\n",
     "created_at": "2010-01-18T18:04:02Z",
     "labels": [
         "categories",
@@ -14,10 +14,10 @@ archive/issues_007980.json:
     "title": "Move 'Category with concrete representation' code into Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7980",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
 CC:  sage-combinat
 
@@ -39,7 +39,7 @@ archive/issue_comments_069618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7980#issuecomment-69618",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_069619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7980#issuecomment-69619",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_069620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7980#issuecomment-69620",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_069621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7980#issuecomment-69621",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_069622.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7980#issuecomment-69622",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_069623.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7980#issuecomment-69623",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_069624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7980#issuecomment-69624",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_069625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7980#issuecomment-69625",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_069626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7980#issuecomment-69626",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_069627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7980#issuecomment-69627",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -375,7 +375,7 @@ archive/issue_comments_069628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7980#issuecomment-69628",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -393,7 +393,7 @@ archive/issue_comments_069629.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7980#issuecomment-69629",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -414,7 +414,7 @@ archive/issue_comments_069630.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7980#issuecomment-69630",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -435,7 +435,7 @@ archive/issue_comments_069631.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7980#issuecomment-69631",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -453,7 +453,7 @@ archive/issue_comments_069632.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7980#issuecomment-69632",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -477,7 +477,7 @@ archive/issue_comments_069633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7980#issuecomment-69633",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -492,16 +492,16 @@ Florent
 archive/issue_comments_069634.json:
 ```json
 {
-    "body": "Attachment [trac_7980-multiple-realizations-nt.patch](tarball://root/attachments/some-uuid/ticket7980/trac_7980-multiple-realizations-nt.patch) by nthiery created at 2012-03-16 16:44:10",
+    "body": "Attachment [trac_7980-multiple-realizations-nt.patch](tarball://root/attachments/some-uuid/ticket7980/trac_7980-multiple-realizations-nt.patch) by @nthiery created at 2012-03-16 16:44:10",
     "created_at": "2012-03-16T16:44:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7980#issuecomment-69634",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_7980-multiple-realizations-nt.patch](tarball://root/attachments/some-uuid/ticket7980/trac_7980-multiple-realizations-nt.patch) by nthiery created at 2012-03-16 16:44:10
+Attachment [trac_7980-multiple-realizations-nt.patch](tarball://root/attachments/some-uuid/ticket7980/trac_7980-multiple-realizations-nt.patch) by @nthiery created at 2012-03-16 16:44:10
 
 
 
@@ -515,7 +515,7 @@ archive/issue_comments_069635.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7980#issuecomment-69635",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -535,7 +535,7 @@ archive/issue_comments_069636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7980#issuecomment-69636",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -553,7 +553,7 @@ archive/issue_comments_069637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7980#issuecomment-69637",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -573,7 +573,7 @@ archive/issue_comments_069638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7980#issuecomment-69638",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

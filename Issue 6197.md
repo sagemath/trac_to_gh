@@ -150,7 +150,7 @@ archive/issue_comments_049493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6197",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6197#issuecomment-49493",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_049494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6197",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6197#issuecomment-49494",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_049495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6197",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6197#issuecomment-49495",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_049497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6197",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6197#issuecomment-49497",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -264,16 +264,16 @@ Adding a new function changes the list random_expr uses.  This is actually fixed
 archive/issue_comments_049498.json:
 ```json
 {
-    "body": "Attachment [trac_6197-binomial-maxima.patch](tarball://root/attachments/some-uuid/ticket6197/trac_6197-binomial-maxima.patch) by kcrisman created at 2009-09-08 13:50:58\n\nOkay, this should do it.  Literally the only change is that doctest, so hopefully just testing that should restore positive review.",
+    "body": "Attachment [trac_6197-binomial-maxima.patch](tarball://root/attachments/some-uuid/ticket6197/trac_6197-binomial-maxima.patch) by @kcrisman created at 2009-09-08 13:50:58\n\nOkay, this should do it.  Literally the only change is that doctest, so hopefully just testing that should restore positive review.",
     "created_at": "2009-09-08T13:50:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6197",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6197#issuecomment-49498",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6197-binomial-maxima.patch](tarball://root/attachments/some-uuid/ticket6197/trac_6197-binomial-maxima.patch) by kcrisman created at 2009-09-08 13:50:58
+Attachment [trac_6197-binomial-maxima.patch](tarball://root/attachments/some-uuid/ticket6197/trac_6197-binomial-maxima.patch) by @kcrisman created at 2009-09-08 13:50:58
 
 Okay, this should do it.  Literally the only change is that doctest, so hopefully just testing that should restore positive review.
 
@@ -289,7 +289,7 @@ archive/issue_comments_049499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6197",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6197#issuecomment-49499",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

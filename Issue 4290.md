@@ -3,7 +3,7 @@
 archive/issues_004290.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis is a function to turn plane curves of genus 1 with a known point into objects of type EllipticCurve. It relies on MAGMA (as does EllipticCurve_from_cubic) but will add a little functionality. Here is an example of how it works:\n\n\n```\nsage: x,y,z=MPolynomialRing(QQ,Integer(3),'xyz').gens() # optional\nsage: C=Curve(x^4+x^2*y^2-z^4) \nsage: P=C(1,0,1) \nsage: E=EllipticCurve_from_plane_curve(C,P) \nsage: E \nElliptic Curve defined by y^2  = x^3 + 4*x over Rational Field\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4290\n\n",
+    "body": "Assignee: @williamstein\n\nThis is a function to turn plane curves of genus 1 with a known point into objects of type EllipticCurve. It relies on MAGMA (as does EllipticCurve_from_cubic) but will add a little functionality. Here is an example of how it works:\n\n\n```\nsage: x,y,z=MPolynomialRing(QQ,Integer(3),'xyz').gens() # optional\nsage: C=Curve(x^4+x^2*y^2-z^4) \nsage: P=C(1,0,1) \nsage: E=EllipticCurve_from_plane_curve(C,P) \nsage: E \nElliptic Curve defined by y^2  = x^3 + 4*x over Rational Field\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4290\n\n",
     "created_at": "2008-10-14T22:39:08Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_004290.json:
     "user": "ljpk"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This is a function to turn plane curves of genus 1 with a known point into objects of type EllipticCurve. It relies on MAGMA (as does EllipticCurve_from_cubic) but will add a little functionality. Here is an example of how it works:
 
@@ -64,7 +64,7 @@ implementation of EllipticCurve_from_plane_curve
 archive/issue_comments_031400.json:
 ```json
 {
-    "body": "Changing assignee from was to craigcitro.",
+    "body": "Changing assignee from @williamstein to @craigcitro.",
     "created_at": "2008-10-14T22:41:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4290",
     "type": "issue_comment",
@@ -73,7 +73,7 @@ archive/issue_comments_031400.json:
 }
 ```
 
-Changing assignee from was to craigcitro.
+Changing assignee from @williamstein to @craigcitro.
 
 
 
@@ -87,7 +87,7 @@ archive/issue_comments_031401.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4290#issuecomment-31401",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_031404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4290#issuecomment-31404",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -162,16 +162,16 @@ Patch based on the above, based on 3.4.1.rc0
 archive/issue_comments_031405.json:
 ```json
 {
-    "body": "Attachment [trac_4290.patch](tarball://root/attachments/some-uuid/ticket4290/trac_4290.patch) by cremona created at 2009-04-06 10:14:49\n\nI have made a proper patch based on Lloyd's function (based on 3.4.1.rc0), which also fixes his function so that it works when the variable names are something other than 'x','y','z' (which it did not before).\n\nYou might think that this function makes the existing EllipicCurve_from_cubic redundant;  it nearly does, but that function takes a homogeneous polynomial while this one takes an actual curve.  It would probably be better to combine these when all this is rewritten in Sage.\n\nI added the new function to all.py so that it is in the global namespace.  I am not sure what the convention is here, given that it is an optional-only function requiring magma!  Also I have nto tested my patch o na machine without magma since I don't have one handy :)",
+    "body": "Attachment [trac_4290.patch](tarball://root/attachments/some-uuid/ticket4290/trac_4290.patch) by @JohnCremona created at 2009-04-06 10:14:49\n\nI have made a proper patch based on Lloyd's function (based on 3.4.1.rc0), which also fixes his function so that it works when the variable names are something other than 'x','y','z' (which it did not before).\n\nYou might think that this function makes the existing EllipicCurve_from_cubic redundant;  it nearly does, but that function takes a homogeneous polynomial while this one takes an actual curve.  It would probably be better to combine these when all this is rewritten in Sage.\n\nI added the new function to all.py so that it is in the global namespace.  I am not sure what the convention is here, given that it is an optional-only function requiring magma!  Also I have nto tested my patch o na machine without magma since I don't have one handy :)",
     "created_at": "2009-04-06T10:14:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4290#issuecomment-31405",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_4290.patch](tarball://root/attachments/some-uuid/ticket4290/trac_4290.patch) by cremona created at 2009-04-06 10:14:49
+Attachment [trac_4290.patch](tarball://root/attachments/some-uuid/ticket4290/trac_4290.patch) by @JohnCremona created at 2009-04-06 10:14:49
 
 I have made a proper patch based on Lloyd's function (based on 3.4.1.rc0), which also fixes his function so that it works when the variable names are something other than 'x','y','z' (which it did not before).
 
@@ -191,7 +191,7 @@ archive/issue_comments_031406.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4290#issuecomment-31406",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_031407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4290#issuecomment-31407",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -234,16 +234,16 @@ Replaces previous; rebased to 4.0.1
 archive/issue_comments_031408.json:
 ```json
 {
-    "body": "Attachment [trac_4290-rebase.patch](tarball://root/attachments/some-uuid/ticket4290/trac_4290-rebase.patch) by cremona created at 2009-06-11 20:39:20\n\nThe new patch replaces previous ones.  It marks the doctests as William asked;  testing then revealed bugs which have been fixed.  Also rebased to 4.0.1 and the docstrings properly ReSTified to the reference manual page looks good.",
+    "body": "Attachment [trac_4290-rebase.patch](tarball://root/attachments/some-uuid/ticket4290/trac_4290-rebase.patch) by @JohnCremona created at 2009-06-11 20:39:20\n\nThe new patch replaces previous ones.  It marks the doctests as William asked;  testing then revealed bugs which have been fixed.  Also rebased to 4.0.1 and the docstrings properly ReSTified to the reference manual page looks good.",
     "created_at": "2009-06-11T20:39:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4290#issuecomment-31408",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_4290-rebase.patch](tarball://root/attachments/some-uuid/ticket4290/trac_4290-rebase.patch) by cremona created at 2009-06-11 20:39:20
+Attachment [trac_4290-rebase.patch](tarball://root/attachments/some-uuid/ticket4290/trac_4290-rebase.patch) by @JohnCremona created at 2009-06-11 20:39:20
 
 The new patch replaces previous ones.  It marks the doctests as William asked;  testing then revealed bugs which have been fixed.  Also rebased to 4.0.1 and the docstrings properly ReSTified to the reference manual page looks good.
 
@@ -259,7 +259,7 @@ archive/issue_comments_031409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4290#issuecomment-31409",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_031410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4290#issuecomment-31410",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

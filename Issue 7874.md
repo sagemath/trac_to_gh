@@ -3,7 +3,7 @@
 archive/issues_007874.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  rbeezer\n\nCan we typeset the labels of interact controls\n\n```python\n@interact\ndef test(x=slider(-2,2,1, label='$x^2$')):\n    print \"Doing nothing in an interact\"\n```\n\n?\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/312cab9514bece7c).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7874\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @rbeezer\n\nCan we typeset the labels of interact controls\n\n```python\n@interact\ndef test(x=slider(-2,2,1, label='$x^2$')):\n    print \"Doing nothing in an interact\"\n```\n\n?\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/312cab9514bece7c).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7874\n\n",
     "created_at": "2010-01-08T21:34:57Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007874.json:
     "title": "Typeset labels for interact controls",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7874",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  rbeezer
+CC:  @rbeezer
 
 Can we typeset the labels of interact controls
 
@@ -44,16 +44,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7874
 archive/issue_comments_068395.json:
 ```json
 {
-    "body": "Attachment [trac_7874-typeset_interact_labels.patch](tarball://root/attachments/some-uuid/ticket7874/trac_7874-typeset_interact_labels.patch) by mpatel created at 2010-01-08 21:40:21\n\n`jsMath.Process()` wrapped output text for interacts.  sagenb repo.",
+    "body": "Attachment [trac_7874-typeset_interact_labels.patch](tarball://root/attachments/some-uuid/ticket7874/trac_7874-typeset_interact_labels.patch) by @qed777 created at 2010-01-08 21:40:21\n\n`jsMath.Process()` wrapped output text for interacts.  sagenb repo.",
     "created_at": "2010-01-08T21:40:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7874#issuecomment-68395",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7874-typeset_interact_labels.patch](tarball://root/attachments/some-uuid/ticket7874/trac_7874-typeset_interact_labels.patch) by mpatel created at 2010-01-08 21:40:21
+Attachment [trac_7874-typeset_interact_labels.patch](tarball://root/attachments/some-uuid/ticket7874/trac_7874-typeset_interact_labels.patch) by @qed777 created at 2010-01-08 21:40:21
 
 `jsMath.Process()` wrapped output text for interacts.  sagenb repo.
 
@@ -69,7 +69,7 @@ archive/issue_comments_068396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7874#issuecomment-68396",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_068397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7874#issuecomment-68397",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_068398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7874#issuecomment-68398",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_068399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7874#issuecomment-68399",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_068400.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7874#issuecomment-68400",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_068401.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7874#issuecomment-68401",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_068402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7874#issuecomment-68402",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_068403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7874#issuecomment-68403",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_068404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7874#issuecomment-68404",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -262,16 +262,16 @@ Rob
 archive/issue_comments_068405.json:
 ```json
 {
-    "body": "Attachment [interact-controls-formatted.png](tarball://root/attachments/some-uuid/ticket7874/interact-controls-formatted.png) by rbeezer created at 2010-01-09 00:52:04\n\nReplying to [comment:7 mpatel]:\n> Hi Rob -- If you're feeling adventurous and have some spare time, please try testing the spkg at #7666.\n\nYes, to adventurous, no to spare time.  But I think adventure wins.  \n\nBut (this is embarrassing) I've never installed an spkg.  How should I do this so I can back it out again without having a mess on my hands?  ;-)  I don't have anything important to lose, so it won't be a crisis if I screw up.  Can you give me another short primer?\n\nShould have said above: I don't think I know enough to give a review.  But I'm going to go right now and advertise how good the patch is and see if we can get one.\n\nRob",
+    "body": "Attachment [interact-controls-formatted.png](tarball://root/attachments/some-uuid/ticket7874/interact-controls-formatted.png) by @rbeezer created at 2010-01-09 00:52:04\n\nReplying to [comment:7 mpatel]:\n> Hi Rob -- If you're feeling adventurous and have some spare time, please try testing the spkg at #7666.\n\nYes, to adventurous, no to spare time.  But I think adventure wins.  \n\nBut (this is embarrassing) I've never installed an spkg.  How should I do this so I can back it out again without having a mess on my hands?  ;-)  I don't have anything important to lose, so it won't be a crisis if I screw up.  Can you give me another short primer?\n\nShould have said above: I don't think I know enough to give a review.  But I'm going to go right now and advertise how good the patch is and see if we can get one.\n\nRob",
     "created_at": "2010-01-09T00:52:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7874#issuecomment-68405",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [interact-controls-formatted.png](tarball://root/attachments/some-uuid/ticket7874/interact-controls-formatted.png) by rbeezer created at 2010-01-09 00:52:04
+Attachment [interact-controls-formatted.png](tarball://root/attachments/some-uuid/ticket7874/interact-controls-formatted.png) by @rbeezer created at 2010-01-09 00:52:04
 
 Replying to [comment:7 mpatel]:
 > Hi Rob -- If you're feeling adventurous and have some spare time, please try testing the spkg at #7666.
@@ -296,7 +296,7 @@ archive/issue_comments_068406.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7874#issuecomment-68406",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -328,7 +328,7 @@ archive/issue_comments_068407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7874#issuecomment-68407",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -354,7 +354,7 @@ archive/issue_comments_068408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7874#issuecomment-68408",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -373,7 +373,7 @@ archive/issue_comments_068409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7874#issuecomment-68409",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -391,7 +391,7 @@ archive/issue_comments_068410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7874#issuecomment-68410",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -412,7 +412,7 @@ archive/issue_comments_068411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7874#issuecomment-68411",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -430,7 +430,7 @@ archive/issue_comments_068412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7874#issuecomment-68412",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -448,7 +448,7 @@ archive/issue_comments_068413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7874#issuecomment-68413",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -466,7 +466,7 @@ archive/issue_comments_068414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7874#issuecomment-68414",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

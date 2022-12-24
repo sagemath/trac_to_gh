@@ -14,7 +14,7 @@ archive/issues_002961.json:
     "title": "[with patch; needs review] add doctest for alarm function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2961",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2961
 archive/issue_comments_020423.json:
 ```json
 {
-    "body": "Attachment [sage-2961.patch](tarball://root/attachments/some-uuid/ticket2961/sage-2961.patch) by was created at 2008-04-19 22:17:52",
+    "body": "Attachment [sage-2961.patch](tarball://root/attachments/some-uuid/ticket2961/sage-2961.patch) by @williamstein created at 2008-04-19 22:17:52",
     "created_at": "2008-04-19T22:17:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2961#issuecomment-20423",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2961.patch](tarball://root/attachments/some-uuid/ticket2961/sage-2961.patch) by was created at 2008-04-19 22:17:52
+Attachment [sage-2961.patch](tarball://root/attachments/some-uuid/ticket2961/sage-2961.patch) by @williamstein created at 2008-04-19 22:17:52
 
 
 

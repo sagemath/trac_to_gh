@@ -14,7 +14,7 @@ archive/issues_008684.json:
     "title": "clean up graph theory documentation in the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8684",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: jason, ncohen, rlm

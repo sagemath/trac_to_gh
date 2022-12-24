@@ -14,7 +14,7 @@ archive/issues_006974.json:
     "title": "cygwin port: make all the crypto ssl-ish spkg's into dummy packages on Cygwin (where we can use the system openssl instead)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6974",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -39,7 +39,7 @@ archive/issue_comments_057681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6974#issuecomment-57681",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_057682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6974#issuecomment-57682",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_057683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6974#issuecomment-57683",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_057684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6974#issuecomment-57684",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_057685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6974#issuecomment-57685",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_057686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6974#issuecomment-57686",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

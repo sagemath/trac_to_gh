@@ -3,7 +3,7 @@
 archive/issues_000891.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/891\n\n",
+    "body": "Assignee: @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/891\n\n",
     "created_at": "2007-10-13T20:44:34Z",
     "labels": [
         "memleak",
@@ -14,10 +14,10 @@ archive/issues_000891.json:
     "title": "[with patch] symmetrica needs to have its deallocation routine called upon exit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/891",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 
 
@@ -104,7 +104,7 @@ archive/issue_comments_005495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/891#issuecomment-5495",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005066.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: relative number fields files\n\nThis has been some time coming, but let's separate relative number fields from generic/absolute number fields now, while I'm looking at them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5066\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: relative number fields files\n\nThis has been some time coming, but let's separate relative number fields from generic/absolute number fields now, while I'm looking at them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5066\n\n",
     "created_at": "2009-01-23T08:59:32Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_005066.json:
     "title": "[with patch, needs review] break out relative number fields into separate file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5066",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: relative number fields files
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5066
 archive/issue_comments_038592.json:
 ```json
 {
-    "body": "Attachment [trac_5066-relnf-file.patch](tarball://root/attachments/some-uuid/ticket5066/trac_5066-relnf-file.patch) by ncalexan created at 2009-01-23 09:21:23\n\nFails a doctest, to be addressed by patches to #1357 (which will depend on this)",
+    "body": "Attachment [trac_5066-relnf-file.patch](tarball://root/attachments/some-uuid/ticket5066/trac_5066-relnf-file.patch) by @ncalexan created at 2009-01-23 09:21:23\n\nFails a doctest, to be addressed by patches to #1357 (which will depend on this)",
     "created_at": "2009-01-23T09:21:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5066",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5066#issuecomment-38592",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [trac_5066-relnf-file.patch](tarball://root/attachments/some-uuid/ticket5066/trac_5066-relnf-file.patch) by ncalexan created at 2009-01-23 09:21:23
+Attachment [trac_5066-relnf-file.patch](tarball://root/attachments/some-uuid/ticket5066/trac_5066-relnf-file.patch) by @ncalexan created at 2009-01-23 09:21:23
 
 Fails a doctest, to be addressed by patches to #1357 (which will depend on this)
 
@@ -59,7 +59,7 @@ archive/issue_comments_038593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5066",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5066#issuecomment-38593",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_038594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5066",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5066#issuecomment-38594",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

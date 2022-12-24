@@ -14,7 +14,7 @@ archive/issues_005451.json:
     "title": "Bug in addition of rational functions over a finite field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5451",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 Assignee: tbd
@@ -96,7 +96,7 @@ archive/issue_comments_042202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5451#issuecomment-42202",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_042205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5451#issuecomment-42205",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_042206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5451#issuecomment-42206",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_042207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5451#issuecomment-42207",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_042208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5451#issuecomment-42208",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -279,16 +279,16 @@ Michael
 archive/issue_comments_042210.json:
 ```json
 {
-    "body": "Attachment [trac_5451-ratfun_doctest.patch](tarball://root/attachments/some-uuid/ticket5451/trac_5451-ratfun_doctest.patch) by burcin created at 2009-03-25 20:31:08\n\nadd doctest",
+    "body": "Attachment [trac_5451-ratfun_doctest.patch](tarball://root/attachments/some-uuid/ticket5451/trac_5451-ratfun_doctest.patch) by @burcin created at 2009-03-25 20:31:08\n\nadd doctest",
     "created_at": "2009-03-25T20:31:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5451#issuecomment-42210",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_5451-ratfun_doctest.patch](tarball://root/attachments/some-uuid/ticket5451/trac_5451-ratfun_doctest.patch) by burcin created at 2009-03-25 20:31:08
+Attachment [trac_5451-ratfun_doctest.patch](tarball://root/attachments/some-uuid/ticket5451/trac_5451-ratfun_doctest.patch) by @burcin created at 2009-03-25 20:31:08
 
 add doctest
 
@@ -304,7 +304,7 @@ archive/issue_comments_042211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5451#issuecomment-42211",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_042212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5451#issuecomment-42212",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_042213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5451#issuecomment-42213",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

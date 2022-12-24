@@ -3,7 +3,7 @@
 archive/issues_004244.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  was mhansen\n\nKeywords: pynac, symbolics\n\nThe patches attached contain various enhancements to the pynac interface:\n* variables.patch - adds a .variables() method to sage.symbolic.expression.Expression\n* custom_eval_func.patch - allows the user to set custom python functions to perform evaluation, numeric evaluation, derivation, series expansion etc. on the given function (sage.symbolic.function.SFunction).\n\nChanges in custom_eval_func.patch depend on the package at #4243, which in turn depends on #3872.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4244\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @williamstein @mwhansen\n\nKeywords: pynac, symbolics\n\nThe patches attached contain various enhancements to the pynac interface:\n* variables.patch - adds a .variables() method to sage.symbolic.expression.Expression\n* custom_eval_func.patch - allows the user to set custom python functions to perform evaluation, numeric evaluation, derivation, series expansion etc. on the given function (sage.symbolic.function.SFunction).\n\nChanges in custom_eval_func.patch depend on the package at #4243, which in turn depends on #3872.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4244\n\n",
     "created_at": "2008-10-04T20:36:40Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_004244.json:
     "title": "[with patch, needs review] pynac interface enhancements, symbolic functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4244",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  was mhansen
+CC:  @williamstein @mwhansen
 
 Keywords: pynac, symbolics
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4244
 archive/issue_comments_030846.json:
 ```json
 {
-    "body": "Attachment [variables.patch](tarball://root/attachments/some-uuid/ticket4244/variables.patch) by burcin created at 2008-10-04 20:37:42\n\nadd .variables() function to sage.symbolic.expression.Expression",
+    "body": "Attachment [variables.patch](tarball://root/attachments/some-uuid/ticket4244/variables.patch) by @burcin created at 2008-10-04 20:37:42\n\nadd .variables() function to sage.symbolic.expression.Expression",
     "created_at": "2008-10-04T20:37:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4244#issuecomment-30846",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [variables.patch](tarball://root/attachments/some-uuid/ticket4244/variables.patch) by burcin created at 2008-10-04 20:37:42
+Attachment [variables.patch](tarball://root/attachments/some-uuid/ticket4244/variables.patch) by @burcin created at 2008-10-04 20:37:42
 
 add .variables() function to sage.symbolic.expression.Expression
 
@@ -60,16 +60,16 @@ add .variables() function to sage.symbolic.expression.Expression
 archive/issue_comments_030847.json:
 ```json
 {
-    "body": "Attachment [custom_eval_func.patch](tarball://root/attachments/some-uuid/ticket4244/custom_eval_func.patch) by burcin created at 2008-10-04 20:38:40\n\nallow sage.symbolic.function.SFunction to use custom python function for evalution, series expansion, derivation, etc.",
+    "body": "Attachment [custom_eval_func.patch](tarball://root/attachments/some-uuid/ticket4244/custom_eval_func.patch) by @burcin created at 2008-10-04 20:38:40\n\nallow sage.symbolic.function.SFunction to use custom python function for evalution, series expansion, derivation, etc.",
     "created_at": "2008-10-04T20:38:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4244#issuecomment-30847",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [custom_eval_func.patch](tarball://root/attachments/some-uuid/ticket4244/custom_eval_func.patch) by burcin created at 2008-10-04 20:38:40
+Attachment [custom_eval_func.patch](tarball://root/attachments/some-uuid/ticket4244/custom_eval_func.patch) by @burcin created at 2008-10-04 20:38:40
 
 allow sage.symbolic.function.SFunction to use custom python function for evalution, series expansion, derivation, etc.
 
@@ -85,7 +85,7 @@ archive/issue_comments_030848.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4244#issuecomment-30848",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -98,16 +98,16 @@ fix some problems with modular coefficients
 archive/issue_comments_030849.json:
 ```json
 {
-    "body": "Attachment [symbolics_modular.patch](tarball://root/attachments/some-uuid/ticket4244/symbolics_modular.patch) by burcin created at 2008-10-15 09:16:08\n\nNote that you need the package at #4243 to try these patches.",
+    "body": "Attachment [symbolics_modular.patch](tarball://root/attachments/some-uuid/ticket4244/symbolics_modular.patch) by @burcin created at 2008-10-15 09:16:08\n\nNote that you need the package at #4243 to try these patches.",
     "created_at": "2008-10-15T09:16:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4244#issuecomment-30849",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [symbolics_modular.patch](tarball://root/attachments/some-uuid/ticket4244/symbolics_modular.patch) by burcin created at 2008-10-15 09:16:08
+Attachment [symbolics_modular.patch](tarball://root/attachments/some-uuid/ticket4244/symbolics_modular.patch) by @burcin created at 2008-10-15 09:16:08
 
 Note that you need the package at #4243 to try these patches.
 
@@ -123,7 +123,7 @@ archive/issue_comments_030850.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4244#issuecomment-30850",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

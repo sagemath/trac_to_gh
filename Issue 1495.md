@@ -14,7 +14,7 @@ archive/issues_001495.json:
     "title": "ATLAS fails to compile on FC7 32 bit with multiple cores",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1495",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: mabshoff
@@ -74,7 +74,7 @@ archive/issue_comments_009606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1495#issuecomment-9606",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

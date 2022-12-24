@@ -3,7 +3,7 @@
 archive/issues_002364.json:
 ```json
 {
-    "body": "Assignee: was\n\nIt should be better documented in animate.py how to specify the interframe delay and the number of iterations.  At the very least, this should be described in the .show() docstring; better yet if it was also documented in the class docstring for Animation, which is what you see when you type:\n\n```\nsage: animate?\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2364\n\n",
+    "body": "Assignee: @williamstein\n\nIt should be better documented in animate.py how to specify the interframe delay and the number of iterations.  At the very least, this should be described in the .show() docstring; better yet if it was also documented in the class docstring for Animation, which is what you see when you type:\n\n```\nsage: animate?\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2364\n\n",
     "created_at": "2008-03-01T22:14:14Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_002364.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 It should be better documented in animate.py how to specify the interframe delay and the number of iterations.  At the very least, this should be described in the .show() docstring; better yet if it was also documented in the class docstring for Animation, which is what you see when you type:
 
@@ -43,7 +43,7 @@ archive/issue_comments_015939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15939",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -56,16 +56,16 @@ Changing component from algebraic geometry to documentation.
 archive/issue_comments_015940.json:
 ```json
 {
-    "body": "Changing assignee from was to tba.",
+    "body": "Changing assignee from @williamstein to tba.",
     "created_at": "2008-03-16T02:23:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15940",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from was to tba.
+Changing assignee from @williamstein to tba.
 
 
 
@@ -74,16 +74,16 @@ Changing assignee from was to tba.
 archive/issue_comments_015941.json:
 ```json
 {
-    "body": "Attachment [2364.patch](tarball://root/attachments/some-uuid/ticket2364/2364.patch) by jhpalmieri created at 2008-10-01 21:07:15\n\nHere's a patch, based on 3.1.3.alpha2. I started working on animate.py before I knew about this ticket, so the patch does more than is required:\n\n1. It improves the documentation for `show` and `animate`, as requested.\n\n2. It adds docstrings and doctests to several functions for which they were missing; the file now has over 90% coverage.  (Only `__init__` is undocumented now.)\n\n3. Many doctests used to be optional, things like\n\n```\nsage: a = animate([sin(x + float(k)) for k in srange(0,2*pi,0.3)], \n...                xmin=0, xmax=2*pi, figsize=[2,1])\n```\n\nThese don't need to be optional -- the optional part comes in calls to `a.show()`, which calls the `convert` program -- so I've removed lots of optional tags. This way more of the code is actually doctested.\n\n4. I also deleted one method: `_set_axes`. This method was undocumented. It was short and pretty simple. It was also called every time an animation was created; indeed, that was its only appearance in the code. So I just copied its contents (only 5 lines) to where it was called in the `__init__` method.",
+    "body": "Attachment [2364.patch](tarball://root/attachments/some-uuid/ticket2364/2364.patch) by @jhpalmieri created at 2008-10-01 21:07:15\n\nHere's a patch, based on 3.1.3.alpha2. I started working on animate.py before I knew about this ticket, so the patch does more than is required:\n\n1. It improves the documentation for `show` and `animate`, as requested.\n\n2. It adds docstrings and doctests to several functions for which they were missing; the file now has over 90% coverage.  (Only `__init__` is undocumented now.)\n\n3. Many doctests used to be optional, things like\n\n```\nsage: a = animate([sin(x + float(k)) for k in srange(0,2*pi,0.3)], \n...                xmin=0, xmax=2*pi, figsize=[2,1])\n```\n\nThese don't need to be optional -- the optional part comes in calls to `a.show()`, which calls the `convert` program -- so I've removed lots of optional tags. This way more of the code is actually doctested.\n\n4. I also deleted one method: `_set_axes`. This method was undocumented. It was short and pretty simple. It was also called every time an animation was created; indeed, that was its only appearance in the code. So I just copied its contents (only 5 lines) to where it was called in the `__init__` method.",
     "created_at": "2008-10-01T21:07:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15941",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [2364.patch](tarball://root/attachments/some-uuid/ticket2364/2364.patch) by jhpalmieri created at 2008-10-01 21:07:15
+Attachment [2364.patch](tarball://root/attachments/some-uuid/ticket2364/2364.patch) by @jhpalmieri created at 2008-10-01 21:07:15
 
 Here's a patch, based on 3.1.3.alpha2. I started working on animate.py before I knew about this ticket, so the patch does more than is required:
 
@@ -114,7 +114,7 @@ archive/issue_comments_015942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15942",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_015943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15943",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_015945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15945",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -189,16 +189,16 @@ do not apply: this is only here to help the referee
 archive/issue_comments_015946.json:
 ```json
 {
-    "body": "Attachment [2364-delta.patch](tarball://root/attachments/some-uuid/ticket2364/2364-delta.patch) by jhpalmieri created at 2008-10-22 21:04:46\n\nHere are two new patches to deal with mhampton's comments.  The one which should be applied is **2364-new.patch**.  The other patch, **2364-delta.patch**, shows the difference between the old patch and the new patch.  This way mhampton (for example) can referee the new patch more easily, I hope.  \n\n(That is, if you apply the original patch and then 2364-delta.patch, it should give the same result as just applying the new patch.  I'm trying to achieve ease of refereeing as well as ease of incorporating the patch...)",
+    "body": "Attachment [2364-delta.patch](tarball://root/attachments/some-uuid/ticket2364/2364-delta.patch) by @jhpalmieri created at 2008-10-22 21:04:46\n\nHere are two new patches to deal with mhampton's comments.  The one which should be applied is **2364-new.patch**.  The other patch, **2364-delta.patch**, shows the difference between the old patch and the new patch.  This way mhampton (for example) can referee the new patch more easily, I hope.  \n\n(That is, if you apply the original patch and then 2364-delta.patch, it should give the same result as just applying the new patch.  I'm trying to achieve ease of refereeing as well as ease of incorporating the patch...)",
     "created_at": "2008-10-22T21:04:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15946",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [2364-delta.patch](tarball://root/attachments/some-uuid/ticket2364/2364-delta.patch) by jhpalmieri created at 2008-10-22 21:04:46
+Attachment [2364-delta.patch](tarball://root/attachments/some-uuid/ticket2364/2364-delta.patch) by @jhpalmieri created at 2008-10-22 21:04:46
 
 Here are two new patches to deal with mhampton's comments.  The one which should be applied is **2364-new.patch**.  The other patch, **2364-delta.patch**, shows the difference between the old patch and the new patch.  This way mhampton (for example) can referee the new patch more easily, I hope.  
 
@@ -238,7 +238,7 @@ archive/issue_comments_015948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15948",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_015950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15950",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -332,7 +332,7 @@ archive/issue_comments_015952.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15952",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -423,7 +423,7 @@ archive/issue_comments_015954.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15954",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -436,16 +436,16 @@ fix optional doctests
 archive/issue_comments_015955.json:
 ```json
 {
-    "body": "Attachment [2364-doctest-delta.patch](tarball://root/attachments/some-uuid/ticket2364/2364-doctest-delta.patch) by jhpalmieri created at 2008-10-28 19:58:56\n\nonly apply this patch!",
+    "body": "Attachment [2364-doctest-delta.patch](tarball://root/attachments/some-uuid/ticket2364/2364-doctest-delta.patch) by @jhpalmieri created at 2008-10-28 19:58:56\n\nonly apply this patch!",
     "created_at": "2008-10-28T19:58:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15955",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [2364-doctest-delta.patch](tarball://root/attachments/some-uuid/ticket2364/2364-doctest-delta.patch) by jhpalmieri created at 2008-10-28 19:58:56
+Attachment [2364-doctest-delta.patch](tarball://root/attachments/some-uuid/ticket2364/2364-doctest-delta.patch) by @jhpalmieri created at 2008-10-28 19:58:56
 
 only apply this patch!
 
@@ -456,16 +456,16 @@ only apply this patch!
 archive/issue_comments_015956.json:
 ```json
 {
-    "body": "Attachment [2364-new.patch](tarball://root/attachments/some-uuid/ticket2364/2364-new.patch) by jhpalmieri created at 2008-10-28 20:04:12\n\nHere are two patches, fixing the optional doctests.  Now `sage -t -optional animate.py` works on my machine.\n\nThe patch **2364-doctest-delta.patch** shows the differences between the previous patch and this one: only a few doctests were changed.\n\nThe patch **2364-new.patch** incorporates all of the patches into one file (so if you apply 2364.patch, 2364-delta.patch, and 2364-doctest-delta.patch, you will get the same as if you just applied this one).\n\nSo: either the two delta patches need to be refereed (since 2364.patch has received an essentially positive review), or 2364-new.patch needs to be refereed.",
+    "body": "Attachment [2364-new.patch](tarball://root/attachments/some-uuid/ticket2364/2364-new.patch) by @jhpalmieri created at 2008-10-28 20:04:12\n\nHere are two patches, fixing the optional doctests.  Now `sage -t -optional animate.py` works on my machine.\n\nThe patch **2364-doctest-delta.patch** shows the differences between the previous patch and this one: only a few doctests were changed.\n\nThe patch **2364-new.patch** incorporates all of the patches into one file (so if you apply 2364.patch, 2364-delta.patch, and 2364-doctest-delta.patch, you will get the same as if you just applied this one).\n\nSo: either the two delta patches need to be refereed (since 2364.patch has received an essentially positive review), or 2364-new.patch needs to be refereed.",
     "created_at": "2008-10-28T20:04:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15956",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [2364-new.patch](tarball://root/attachments/some-uuid/ticket2364/2364-new.patch) by jhpalmieri created at 2008-10-28 20:04:12
+Attachment [2364-new.patch](tarball://root/attachments/some-uuid/ticket2364/2364-new.patch) by @jhpalmieri created at 2008-10-28 20:04:12
 
 Here are two patches, fixing the optional doctests.  Now `sage -t -optional animate.py` works on my machine.
 

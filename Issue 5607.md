@@ -3,7 +3,7 @@
 archive/issues_005607.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  jason\n\nIn a [comment:ticket:5413:12 comment] to #5413 Jason pointed out the following confusing behavior:\n\n\n```\nsage: g(x)=sin\nsage: g(3)\nsin(3)\nsage: g(x)=sin+x\nsage: g(3)\nsin + 3\n\nsage: g(x)=sin+cos; g(3)\nsin + cos\n```\n\n\nI think the syntax for this should be:\n\n\n```\nsage: g(x) = sin(x) + 3\nsage: g(3)\nsin(3) + 3\n\nsage: g(x) = sin(x) + cos(x)\nsage: g(3)\nsin(3) + cos(3)\n```\n\n\nSince it is not clear which variable to use if only `sin` is specified. Also consider this situation:\n\n\n```\nsage: g(x,y) = sin + y\nsage: g(3,4)\n???\n```\n\n\nWe have two options:\n\n* We could allow this syntax for convenience:\n\n\n```\nsage: g(x) = sin + x\n```\n\n\nand convert the function arguments to appropriate callable expressions if the number of arguments of `g` match the number of arguments of the given function, raise an error otherwise.\n\n* We raise an error whenever a function object is specified without variables.\n\nComments?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5607\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @jasongrout\n\nIn a [comment:ticket:5413:12 comment] to #5413 Jason pointed out the following confusing behavior:\n\n\n```\nsage: g(x)=sin\nsage: g(3)\nsin(3)\nsage: g(x)=sin+x\nsage: g(3)\nsin + 3\n\nsage: g(x)=sin+cos; g(3)\nsin + cos\n```\n\n\nI think the syntax for this should be:\n\n\n```\nsage: g(x) = sin(x) + 3\nsage: g(3)\nsin(3) + 3\n\nsage: g(x) = sin(x) + cos(x)\nsage: g(3)\nsin(3) + cos(3)\n```\n\n\nSince it is not clear which variable to use if only `sin` is specified. Also consider this situation:\n\n\n```\nsage: g(x,y) = sin + y\nsage: g(3,4)\n???\n```\n\n\nWe have two options:\n\n* We could allow this syntax for convenience:\n\n\n```\nsage: g(x) = sin + x\n```\n\n\nand convert the function arguments to appropriate callable expressions if the number of arguments of `g` match the number of arguments of the given function, raise an error otherwise.\n\n* We raise an error whenever a function object is specified without variables.\n\nComments?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5607\n\n",
     "created_at": "2009-03-25T10:57:55Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_005607.json:
     "title": "confusing syntax for creating symbolic functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5607",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  jason
+CC:  @jasongrout
 
 In a [comment:ticket:5413:12 comment] to #5413 Jason pointed out the following confusing behavior:
 
@@ -93,7 +93,7 @@ archive/issue_comments_043765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5607#issuecomment-43765",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_043766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5607#issuecomment-43766",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

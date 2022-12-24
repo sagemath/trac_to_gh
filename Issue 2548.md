@@ -75,16 +75,16 @@ Michael
 archive/issue_comments_017402.json:
 ```json
 {
-    "body": "Changing assignee from cwitty to gfurnish.",
+    "body": "Changing assignee from cwitty to @garyfurnish.",
     "created_at": "2008-03-16T20:08:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2548",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2548#issuecomment-17402",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from cwitty to gfurnish.
+Changing assignee from cwitty to @garyfurnish.
 
 
 
@@ -98,7 +98,7 @@ archive/issue_comments_017403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2548",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2548#issuecomment-17403",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_017404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2548",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2548#issuecomment-17404",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_017405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2548",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2548#issuecomment-17405",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_005050.json:
     "title": "clean up how the percent directives at the top of cells are processed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5050",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: boothby
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5050
 archive/issue_comments_038480.json:
 ```json
 {
-    "body": "Attachment [trac_5050.patch](tarball://root/attachments/some-uuid/ticket5050/trac_5050.patch) by mhansen created at 2009-01-22 06:41:54",
+    "body": "Attachment [trac_5050.patch](tarball://root/attachments/some-uuid/ticket5050/trac_5050.patch) by @mwhansen created at 2009-01-22 06:41:54",
     "created_at": "2009-01-22T06:41:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5050",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5050#issuecomment-38480",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5050.patch](tarball://root/attachments/some-uuid/ticket5050/trac_5050.patch) by mhansen created at 2009-01-22 06:41:54
+Attachment [trac_5050.patch](tarball://root/attachments/some-uuid/ticket5050/trac_5050.patch) by @mwhansen created at 2009-01-22 06:41:54
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_038481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5050",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5050#issuecomment-38481",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -73,16 +73,16 @@ Notes from Mike looking at this:
 archive/issue_comments_038482.json:
 ```json
 {
-    "body": "Attachment [trac_5050-2.patch](tarball://root/attachments/some-uuid/ticket5050/trac_5050-2.patch) by mhansen created at 2009-01-22 15:40:29",
+    "body": "Attachment [trac_5050-2.patch](tarball://root/attachments/some-uuid/ticket5050/trac_5050-2.patch) by @mwhansen created at 2009-01-22 15:40:29",
     "created_at": "2009-01-22T15:40:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5050",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5050#issuecomment-38482",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5050-2.patch](tarball://root/attachments/some-uuid/ticket5050/trac_5050-2.patch) by mhansen created at 2009-01-22 15:40:29
+Attachment [trac_5050-2.patch](tarball://root/attachments/some-uuid/ticket5050/trac_5050-2.patch) by @mwhansen created at 2009-01-22 15:40:29
 
 
 
@@ -96,7 +96,7 @@ archive/issue_comments_038483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5050",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5050#issuecomment-38483",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_038484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5050",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5050#issuecomment-38484",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_038485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5050",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5050#issuecomment-38485",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

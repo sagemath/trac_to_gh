@@ -3,7 +3,7 @@
 archive/issues_008169.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  mhampton novoselt\n\nTOPCOM is a C++ program for triangulating polyhedra. More generally, it can find a single triangulation as well as enumerate all triangulations of a \"point configuration\", that is, the convex hull of points in euclidean space such that all vertices of simplices of the triangulation are in the given (finite) list of points.\n\nOne problem with the upstream distribution is that it statically links many helper programs, yielding almost 200mb of binaries. Therefore, I suggest the following:\n\n- dynamically link TOPCOM via libtools to reduce size\n- Write a sage<->TOPCOM interface at sage.geometry.triangulation.py\n\nAs an initial submission, my libtoolized TOPCOM spkg is here:\n\nhttp://www.stp.dias.ie/~vbraun/TOPCOM-0.16.2.spkg\n\nand a first draft of triangulation.py is attached. The basic usage is\n\n\n```\nsage: points = PointConfiguration([[0,0],[0,1],[1,0],[1,1],[-1,-1]]);\nsage: points\nA point configuration in QQ^2 consisting of 5 points.\nsage: triang = points.triangulate()   # find one triangulation       \nsage: triang\nA triangulation in QQ^2 consisting of 4 simplices.\nsage: triang.plot(axes=False)                                        \n```\n\n\nAfter we confirm that the libtoolized TOPCOM builds on all sage platforms, I'll contact upstream for eventual inclusion of the autotools sources.\n\nNote: see #8115 for a modified cddlib (required by TOPCOM) that provides a non-static cddlib library.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8169\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  mhampton @novoselt\n\nTOPCOM is a C++ program for triangulating polyhedra. More generally, it can find a single triangulation as well as enumerate all triangulations of a \"point configuration\", that is, the convex hull of points in euclidean space such that all vertices of simplices of the triangulation are in the given (finite) list of points.\n\nOne problem with the upstream distribution is that it statically links many helper programs, yielding almost 200mb of binaries. Therefore, I suggest the following:\n\n- dynamically link TOPCOM via libtools to reduce size\n- Write a sage<->TOPCOM interface at sage.geometry.triangulation.py\n\nAs an initial submission, my libtoolized TOPCOM spkg is here:\n\nhttp://www.stp.dias.ie/~vbraun/TOPCOM-0.16.2.spkg\n\nand a first draft of triangulation.py is attached. The basic usage is\n\n\n```\nsage: points = PointConfiguration([[0,0],[0,1],[1,0],[1,1],[-1,-1]]);\nsage: points\nA point configuration in QQ^2 consisting of 5 points.\nsage: triang = points.triangulate()   # find one triangulation       \nsage: triang\nA triangulation in QQ^2 consisting of 4 simplices.\nsage: triang.plot(axes=False)                                        \n```\n\n\nAfter we confirm that the libtoolized TOPCOM builds on all sage platforms, I'll contact upstream for eventual inclusion of the autotools sources.\n\nNote: see #8115 for a modified cddlib (required by TOPCOM) that provides a non-static cddlib library.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8169\n\n",
     "created_at": "2010-02-03T12:11:31Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_008169.json:
     "title": "include TOPCOM",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8169",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  mhampton novoselt
+CC:  mhampton @novoselt
 
 TOPCOM is a C++ program for triangulating polyhedra. More generally, it can find a single triangulation as well as enumerate all triangulations of a "point configuration", that is, the convex hull of points in euclidean space such that all vertices of simplices of the triangulation are in the given (finite) list of points.
 
@@ -86,7 +86,7 @@ archive/issue_comments_071882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8169#issuecomment-71882",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_071883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8169#issuecomment-71883",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -119,16 +119,16 @@ updated version
 archive/issue_comments_071884.json:
 ```json
 {
-    "body": "Attachment [triangulation.2.py](tarball://root/attachments/some-uuid/ticket8169/triangulation.2.py) by vbraun created at 2010-06-05 20:04:42\n\nI fixed the segfaulting regularity check, it works for me now. Updated spkg is here:\n[http://www.stp.dias.ie/~vbraun/Sage/spkg/TOPCOM-0.16.2.p1.spkg](http://www.stp.dias.ie/~vbraun/Sage/spkg/TOPCOM-0.16.2.p1.spkg)\n\nAlso, doctests now all pass in the updated triangulation.py",
+    "body": "Attachment [triangulation.2.py](tarball://root/attachments/some-uuid/ticket8169/triangulation.2.py) by @vbraun created at 2010-06-05 20:04:42\n\nI fixed the segfaulting regularity check, it works for me now. Updated spkg is here:\n[http://www.stp.dias.ie/~vbraun/Sage/spkg/TOPCOM-0.16.2.p1.spkg](http://www.stp.dias.ie/~vbraun/Sage/spkg/TOPCOM-0.16.2.p1.spkg)\n\nAlso, doctests now all pass in the updated triangulation.py",
     "created_at": "2010-06-05T20:04:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8169#issuecomment-71884",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [triangulation.2.py](tarball://root/attachments/some-uuid/ticket8169/triangulation.2.py) by vbraun created at 2010-06-05 20:04:42
+Attachment [triangulation.2.py](tarball://root/attachments/some-uuid/ticket8169/triangulation.2.py) by @vbraun created at 2010-06-05 20:04:42
 
 I fixed the segfaulting regularity check, it works for me now. Updated spkg is here:
 [http://www.stp.dias.ie/~vbraun/Sage/spkg/TOPCOM-0.16.2.p1.spkg](http://www.stp.dias.ie/~vbraun/Sage/spkg/TOPCOM-0.16.2.p1.spkg)
@@ -147,7 +147,7 @@ archive/issue_comments_071885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8169#issuecomment-71885",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -160,16 +160,16 @@ updated version
 archive/issue_comments_071886.json:
 ```json
 {
-    "body": "Attachment [triangulation.4.py](tarball://root/attachments/some-uuid/ticket8169/triangulation.4.py) by vbraun created at 2010-08-09 19:38:14\n\nUpdated patch for timeout issue",
+    "body": "Attachment [triangulation.4.py](tarball://root/attachments/some-uuid/ticket8169/triangulation.4.py) by @vbraun created at 2010-08-09 19:38:14\n\nUpdated patch for timeout issue",
     "created_at": "2010-08-09T19:38:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8169#issuecomment-71886",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [triangulation.4.py](tarball://root/attachments/some-uuid/ticket8169/triangulation.4.py) by vbraun created at 2010-08-09 19:38:14
+Attachment [triangulation.4.py](tarball://root/attachments/some-uuid/ticket8169/triangulation.4.py) by @vbraun created at 2010-08-09 19:38:14
 
 Updated patch for timeout issue
 
@@ -185,7 +185,7 @@ archive/issue_comments_071887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8169#issuecomment-71887",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_071889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8169#issuecomment-71889",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_071891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8169#issuecomment-71891",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -378,7 +378,7 @@ archive/issue_comments_071894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8169#issuecomment-71894",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -396,7 +396,7 @@ archive/issue_comments_071895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8169#issuecomment-71895",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -447,7 +447,7 @@ archive/issue_comments_071897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8169#issuecomment-71897",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -465,7 +465,7 @@ archive/issue_comments_071898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8169#issuecomment-71898",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -491,7 +491,7 @@ archive/issue_comments_071899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8169#issuecomment-71899",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -515,7 +515,7 @@ archive/issue_comments_071900.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8169#issuecomment-71900",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -614,7 +614,7 @@ archive/issue_comments_071904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8169#issuecomment-71904",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -721,7 +721,7 @@ archive/issue_comments_071908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8169#issuecomment-71908",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -739,16 +739,16 @@ I'll work on it later today.
 archive/issue_comments_071909.json:
 ```json
 {
-    "body": "Attachment [trac_8169_triangulate_using_TOPCOM.patch](tarball://root/attachments/some-uuid/ticket8169/trac_8169_triangulate_using_TOPCOM.patch) by vbraun created at 2010-09-12 20:30:47\n\nUpdated patch",
+    "body": "Attachment [trac_8169_triangulate_using_TOPCOM.patch](tarball://root/attachments/some-uuid/ticket8169/trac_8169_triangulate_using_TOPCOM.patch) by @vbraun created at 2010-09-12 20:30:47\n\nUpdated patch",
     "created_at": "2010-09-12T20:30:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8169#issuecomment-71909",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [trac_8169_triangulate_using_TOPCOM.patch](tarball://root/attachments/some-uuid/ticket8169/trac_8169_triangulate_using_TOPCOM.patch) by vbraun created at 2010-09-12 20:30:47
+Attachment [trac_8169_triangulate_using_TOPCOM.patch](tarball://root/attachments/some-uuid/ticket8169/trac_8169_triangulate_using_TOPCOM.patch) by @vbraun created at 2010-09-12 20:30:47
 
 Updated patch
 
@@ -764,7 +764,7 @@ archive/issue_comments_071910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8169#issuecomment-71910",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -782,7 +782,7 @@ archive/issue_comments_071911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8169#issuecomment-71911",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -795,16 +795,16 @@ Changing status from needs_info to needs_work.
 archive/issue_comments_071912.json:
 ```json
 {
-    "body": "Attachment [triangulation.py](tarball://root/attachments/some-uuid/ticket8169/triangulation.py) by vbraun created at 2010-09-12 20:41:48\n\nI've dealt with 3. and 4. in comment 15, and 6. in comment 16. Now generally tuples instead of lists are returned, and a new `class Point` is added which has methods for affine, projective, or reduced (with linearities removed) coordinates. This should also fix Marshall's problems.\n\nNow `PointConfiguration`/`Triangulation` have a Parent/Element relationship. In particular, the `PointConfiguration` is unique and immutable. The `restrict_to_...` interface for restricting the admissible triangulations has been slightly changed, and now returns a **new** `PointConfiguration`. I think that also fits better with the general Sage philosophy.",
+    "body": "Attachment [triangulation.py](tarball://root/attachments/some-uuid/ticket8169/triangulation.py) by @vbraun created at 2010-09-12 20:41:48\n\nI've dealt with 3. and 4. in comment 15, and 6. in comment 16. Now generally tuples instead of lists are returned, and a new `class Point` is added which has methods for affine, projective, or reduced (with linearities removed) coordinates. This should also fix Marshall's problems.\n\nNow `PointConfiguration`/`Triangulation` have a Parent/Element relationship. In particular, the `PointConfiguration` is unique and immutable. The `restrict_to_...` interface for restricting the admissible triangulations has been slightly changed, and now returns a **new** `PointConfiguration`. I think that also fits better with the general Sage philosophy.",
     "created_at": "2010-09-12T20:41:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8169#issuecomment-71912",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [triangulation.py](tarball://root/attachments/some-uuid/ticket8169/triangulation.py) by vbraun created at 2010-09-12 20:41:48
+Attachment [triangulation.py](tarball://root/attachments/some-uuid/ticket8169/triangulation.py) by @vbraun created at 2010-09-12 20:41:48
 
 I've dealt with 3. and 4. in comment 15, and 6. in comment 16. Now generally tuples instead of lists are returned, and a new `class Point` is added which has methods for affine, projective, or reduced (with linearities removed) coordinates. This should also fix Marshall's problems.
 
@@ -822,7 +822,7 @@ archive/issue_comments_071913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8169#issuecomment-71913",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -842,7 +842,7 @@ archive/issue_comments_071914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8169#issuecomment-71914",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -860,7 +860,7 @@ archive/issue_comments_071915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8169#issuecomment-71915",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -921,7 +921,7 @@ Error building TOPCOM.
 archive/issue_comments_071917.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to mhampton.",
+    "body": "Changing assignee from @aghitza to mhampton.",
     "created_at": "2010-09-26T16:21:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
@@ -930,7 +930,7 @@ archive/issue_comments_071917.json:
 }
 ```
 
-Changing assignee from AlexGhitza to mhampton.
+Changing assignee from @aghitza to mhampton.
 
 
 
@@ -939,7 +939,7 @@ Changing assignee from AlexGhitza to mhampton.
 archive/issue_comments_071918.json:
 ```json
 {
-    "body": "Changing assignee from mhampton to vbraun.",
+    "body": "Changing assignee from mhampton to @vbraun.",
     "created_at": "2010-09-26T16:22:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
@@ -948,7 +948,7 @@ archive/issue_comments_071918.json:
 }
 ```
 
-Changing assignee from mhampton to vbraun.
+Changing assignee from mhampton to @vbraun.
 
 
 
@@ -962,7 +962,7 @@ archive/issue_comments_071919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8169#issuecomment-71919",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -980,7 +980,7 @@ archive/issue_comments_071920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8169#issuecomment-71920",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1099,7 +1099,7 @@ archive/issue_comments_071924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8169#issuecomment-71924",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1117,7 +1117,7 @@ archive/issue_comments_071925.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8169#issuecomment-71925",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1157,7 +1157,7 @@ archive/issue_comments_071927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8169#issuecomment-71927",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1195,7 +1195,7 @@ archive/issue_comments_071929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8169#issuecomment-71929",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1256,7 +1256,7 @@ archive/issue_comments_071931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8169#issuecomment-71931",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1310,7 +1310,7 @@ archive/issue_comments_071934.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8169#issuecomment-71934",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1328,7 +1328,7 @@ archive/issue_comments_071935.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8169#issuecomment-71935",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003565.json:
 ```json
 {
-    "body": "Assignee: failure\n\nCC:  timdumol mpatel\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3565\n\n",
+    "body": "Assignee: failure\n\nCC:  @TimDumol @qed777\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3565\n\n",
     "created_at": "2008-07-06T19:05:49Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_003565.json:
     "title": "worksheet.py -- increase doctest coverage to 50%.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3565",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: failure
 
-CC:  timdumol mpatel
+CC:  @TimDumol @qed777
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_025189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3565",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3565#issuecomment-25189",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_025190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3565",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3565#issuecomment-25190",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_025191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3565",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3565#issuecomment-25191",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_025192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3565",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3565#issuecomment-25192",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_025193.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3565",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3565#issuecomment-25193",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_025194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3565",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3565#issuecomment-25194",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_025195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3565",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3565#issuecomment-25195",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000471.json:
 ```json
 {
-    "body": "Assignee: was\n\nHello,\n\nTrac Mercurial plugin -  see http://trac.edgewall.org/wiki/TracMercurial\nAdd to Ticket Properties - Component: \n- Misc\n- Documentation\n\nIt would also be nice if trac could send an email to sage-devel if a ticket were added, but that might cause too much traffic. As an alternative we might install an RSS plugin.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/471\n\n",
+    "body": "Assignee: @williamstein\n\nHello,\n\nTrac Mercurial plugin -  see http://trac.edgewall.org/wiki/TracMercurial\nAdd to Ticket Properties - Component: \n- Misc\n- Documentation\n\nIt would also be nice if trac could send an email to sage-devel if a ticket were added, but that might cause too much traffic. As an alternative we might install an RSS plugin.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/471\n\n",
     "created_at": "2007-08-20T23:12:43Z",
     "labels": [
         "user interface",
@@ -17,7 +17,7 @@ archive/issues_000471.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Hello,
 
@@ -130,7 +130,7 @@ archive/issue_comments_002356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/471",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/471#issuecomment-2356",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

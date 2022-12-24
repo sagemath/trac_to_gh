@@ -14,7 +14,7 @@ archive/issues_005632.json:
     "title": "[with spkg; needs review] doc fixes for quaternion algebra element",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5632",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_043984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5632",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5632#issuecomment-43984",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to assigned.
 archive/issue_comments_043985.json:
 ```json
 {
-    "body": "Changing assignee from tbd to jhpalmieri.",
+    "body": "Changing assignee from tbd to @jhpalmieri.",
     "created_at": "2009-03-29T16:15:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5632",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5632#issuecomment-43985",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Changing assignee from tbd to jhpalmieri.
+Changing assignee from tbd to @jhpalmieri.
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_043987.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5632",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5632#issuecomment-43987",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_043990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5632",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5632#issuecomment-43990",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -205,16 +205,16 @@ OSError: [Errno 2] No such file or directory: '/Applications/sage_builds/sage-3.
 archive/issue_comments_043991.json:
 ```json
 {
-    "body": "Attachment [quaternion.patch](tarball://root/attachments/some-uuid/ticket5632/quaternion.patch) by jhpalmieri created at 2009-03-31 15:38:05\n\nrebased post #5520, positive review for this patch",
+    "body": "Attachment [quaternion.patch](tarball://root/attachments/some-uuid/ticket5632/quaternion.patch) by @jhpalmieri created at 2009-03-31 15:38:05\n\nrebased post #5520, positive review for this patch",
     "created_at": "2009-03-31T15:38:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5632",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5632#issuecomment-43991",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [quaternion.patch](tarball://root/attachments/some-uuid/ticket5632/quaternion.patch) by jhpalmieri created at 2009-03-31 15:38:05
+Attachment [quaternion.patch](tarball://root/attachments/some-uuid/ticket5632/quaternion.patch) by @jhpalmieri created at 2009-03-31 15:38:05
 
 rebased post #5520, positive review for this patch
 

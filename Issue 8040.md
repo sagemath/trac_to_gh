@@ -3,7 +3,7 @@
 archive/issues_008040.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nI think this should work:\n\n```\nsage: CRT(Mod(3,19), Mod(5, 13))\n...\nValueError: arguments a and b must be coprime\n```\n\n\nThis fix is to check the gcd precondition more carefully. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8040\n\n",
+    "body": "Assignee: @aghitza\n\nI think this should work:\n\n```\nsage: CRT(Mod(3,19), Mod(5, 13))\n...\nValueError: arguments a and b must be coprime\n```\n\n\nThis fix is to check the gcd precondition more carefully. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8040\n\n",
     "created_at": "2010-01-22T15:24:37Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_008040.json:
     "title": "given that m,n are optional inputs to CRT(a,b,m,n), given a,b mod m,n should work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8040",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 I think this should work:
 

@@ -3,7 +3,7 @@
 archive/issues_000580.json:
 ```json
 {
-    "body": "Assignee: was\n\nIt seems from the cubegroup.py code that RubiksCube().move\naccepts a group element as an argument. Even if it doesn't the\nerror below seems confusing.\n\n\n```\nsage: rubik = CubeGroup()\nsage: G = rubik.group()\nsage: Z = G.center()\nsage: superflip = Z.list()[1]\nsage: superflip\n\n(2,34)(4,10)(5,26)(7,18)(12,37)(13,20)(15,44)(21,28)(23,42)(29,36)(31,45)(39,\n47)\nsage: r = rubik.R(); l = rubik.L(); f = rubik.F()\nsage: b = rubik.B(); u = rubik.U(); d = rubik.D()\nsage: superflip in G\nTrue\nsage: C = RubiksCube().move(superflip)\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/mnt/hd200/sagefiles/sage-2.8.3.rc3/<ipython console> in <module>()\n\n/home/wdj/sagefiles/sage-2.8.3.rc3/local/lib/python2.5/site-packages/sage/groups/perm_gps/cubegroup.py\nin move(self, g)\n  1090     def move(self, g):\n  1091         if not g in self._group:\n-> 1092             g = self._group.move(g)[0]\n  1093         return RubiksCube(self._state * g, self._history +\n[g], self.colors)\n  1094\n\n/home/wdj/sagefiles/sage-2.8.3.rc3/local/lib/python2.5/site-packages/sage/groups/perm_gps/cubegroup.py\nin move(self, mv)\n   730\n   731         \"\"\"\n--> 732         mv = mv.strip().replace(\" \",\"*\").replace(\"**\",\n\"*\").replace(\"'\", \"^(-1)\")\n   733         m = mv.split(\"*\")\n   734         M = [x.split(\"^\") for x in m]\n\n<type 'exceptions.AttributeError'>: 'PermutationGroupElement' object\nhas no attribute 'strip'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/580\n\n",
+    "body": "Assignee: @williamstein\n\nIt seems from the cubegroup.py code that RubiksCube().move\naccepts a group element as an argument. Even if it doesn't the\nerror below seems confusing.\n\n\n```\nsage: rubik = CubeGroup()\nsage: G = rubik.group()\nsage: Z = G.center()\nsage: superflip = Z.list()[1]\nsage: superflip\n\n(2,34)(4,10)(5,26)(7,18)(12,37)(13,20)(15,44)(21,28)(23,42)(29,36)(31,45)(39,\n47)\nsage: r = rubik.R(); l = rubik.L(); f = rubik.F()\nsage: b = rubik.B(); u = rubik.U(); d = rubik.D()\nsage: superflip in G\nTrue\nsage: C = RubiksCube().move(superflip)\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/mnt/hd200/sagefiles/sage-2.8.3.rc3/<ipython console> in <module>()\n\n/home/wdj/sagefiles/sage-2.8.3.rc3/local/lib/python2.5/site-packages/sage/groups/perm_gps/cubegroup.py\nin move(self, g)\n  1090     def move(self, g):\n  1091         if not g in self._group:\n-> 1092             g = self._group.move(g)[0]\n  1093         return RubiksCube(self._state * g, self._history +\n[g], self.colors)\n  1094\n\n/home/wdj/sagefiles/sage-2.8.3.rc3/local/lib/python2.5/site-packages/sage/groups/perm_gps/cubegroup.py\nin move(self, mv)\n   730\n   731         \"\"\"\n--> 732         mv = mv.strip().replace(\" \",\"*\").replace(\"**\",\n\"*\").replace(\"'\", \"^(-1)\")\n   733         m = mv.split(\"*\")\n   734         M = [x.split(\"^\") for x in m]\n\n<type 'exceptions.AttributeError'>: 'PermutationGroupElement' object\nhas no attribute 'strip'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/580\n\n",
     "created_at": "2007-09-03T16:37:33Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_000580.json:
     "title": "bug in cubegroup (group action)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/580",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 It seems from the cubegroup.py code that RubiksCube().move
 accepts a group element as an argument. Even if it doesn't the
@@ -82,7 +82,7 @@ archive/issue_comments_003000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/580#issuecomment-3000",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -142,16 +142,16 @@ Replying to [ticket:580 wdj]:
 archive/issue_comments_003001.json:
 ```json
 {
-    "body": "Changing assignee from was to wdj.",
+    "body": "Changing assignee from @williamstein to @wdjoyner.",
     "created_at": "2007-09-03T16:40:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/580#issuecomment-3001",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Changing assignee from was to wdj.
+Changing assignee from @williamstein to @wdjoyner.
 
 
 
@@ -165,7 +165,7 @@ archive/issue_comments_003002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/580#issuecomment-3002",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_003003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/580#issuecomment-3003",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

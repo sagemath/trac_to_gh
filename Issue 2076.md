@@ -3,7 +3,7 @@
 archive/issues_002076.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: color hue point plot 3\n\nWhen I call, \n\nsage: point(((1,1), (2,2), (3,3)), rgbcolor=hue(1), pointsize=30)\n\nI expect to get a plot of 3 red points, but (1,1) is plotted as dark red and the other two points are blue.  So far I've only been able to recreate this issue when only three points are in the tuple.  The rgbcolor value doesn't seem to affect the color of the three plotted points.\n\nI hope to look at the code soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2076\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: color hue point plot 3\n\nWhen I call, \n\nsage: point(((1,1), (2,2), (3,3)), rgbcolor=hue(1), pointsize=30)\n\nI expect to get a plot of 3 red points, but (1,1) is plotted as dark red and the other two points are blue.  So far I've only been able to recreate this issue when only three points are in the tuple.  The rgbcolor value doesn't seem to affect the color of the three plotted points.\n\nI hope to look at the code soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2076\n\n",
     "created_at": "2008-02-06T20:04:23Z",
     "labels": [
         "graphics",
@@ -17,7 +17,7 @@ archive/issues_002076.json:
     "user": "jmitchell"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: color hue point plot 3
 
@@ -45,7 +45,7 @@ archive/issue_comments_013433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2076#issuecomment-13433",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_013434.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2076#issuecomment-13434",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -144,16 +144,16 @@ I propose the following:
 archive/issue_comments_013435.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-09-03T00:52:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2076#issuecomment-13435",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -167,7 +167,7 @@ archive/issue_comments_013436.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2076#issuecomment-13436",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -180,16 +180,16 @@ Changing status from new to assigned.
 archive/issue_comments_013437.json:
 ```json
 {
-    "body": "Attachment [trac_2076.patch](tarball://root/attachments/some-uuid/ticket2076/trac_2076.patch) by mhansen created at 2008-09-04 03:43:45\n\nThis is actually a bug on our part according to the matplotlib 0.98 documentation for scatter.",
+    "body": "Attachment [trac_2076.patch](tarball://root/attachments/some-uuid/ticket2076/trac_2076.patch) by @mwhansen created at 2008-09-04 03:43:45\n\nThis is actually a bug on our part according to the matplotlib 0.98 documentation for scatter.",
     "created_at": "2008-09-04T03:43:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2076#issuecomment-13437",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_2076.patch](tarball://root/attachments/some-uuid/ticket2076/trac_2076.patch) by mhansen created at 2008-09-04 03:43:45
+Attachment [trac_2076.patch](tarball://root/attachments/some-uuid/ticket2076/trac_2076.patch) by @mwhansen created at 2008-09-04 03:43:45
 
 This is actually a bug on our part according to the matplotlib 0.98 documentation for scatter.
 
@@ -205,7 +205,7 @@ archive/issue_comments_013438.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2076#issuecomment-13438",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_013440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2076#issuecomment-13440",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

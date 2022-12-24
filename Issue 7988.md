@@ -3,7 +3,7 @@
 archive/issues_007988.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7988\n\n",
+    "body": "Assignee: @aghitza\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7988\n\n",
     "created_at": "2010-01-19T02:08:41Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_007988.json:
     "title": "add testcc and testcxx to hgignore in scripts repo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7988",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7988
 archive/issue_comments_069767.json:
 ```json
 {
-    "body": "Attachment [scripts_7988_hgignore.patch](tarball://root/attachments/some-uuid/ticket7988/scripts_7988_hgignore.patch) by wjp created at 2010-01-19 02:10:31",
+    "body": "Attachment [scripts_7988_hgignore.patch](tarball://root/attachments/some-uuid/ticket7988/scripts_7988_hgignore.patch) by @wjp created at 2010-01-19 02:10:31",
     "created_at": "2010-01-19T02:10:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7988#issuecomment-69767",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [scripts_7988_hgignore.patch](tarball://root/attachments/some-uuid/ticket7988/scripts_7988_hgignore.patch) by wjp created at 2010-01-19 02:10:31
+Attachment [scripts_7988_hgignore.patch](tarball://root/attachments/some-uuid/ticket7988/scripts_7988_hgignore.patch) by @wjp created at 2010-01-19 02:10:31
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_069768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7988#issuecomment-69768",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_069769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7988#issuecomment-69769",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_069770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7988#issuecomment-69770",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_069771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7988#issuecomment-69771",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_069772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7988#issuecomment-69772",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_069773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7988#issuecomment-69773",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000181.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: recursive load source file\n\nWe use the example in examples/programming/recursive_load.\n\nfile1.sage defines a symbol foo.\nfile2.sage defines a symbol bar.\n\nEach file loads the other recursively.\n\nIf we load file2.sage first, then the source code for foo is displayed correctly by foo?? but the File: information is wrong.  The File: should read file1.sage.\n\n\n```\nsage: load file2.sage\nloaded file1.sage\nI'm now defining s\nloaded file1.sage\n\nsage: foo??\nType:           function\nBase Class:     <type 'function'>\nString Form:    <function foo at 0x8fd6db0>\nNamespace:      Interactive\nFile:           /Users/nalexand/Devel/sage-alpha8/examples/programming/recursive_load/file2.py\nDefinition:     foo(n)\nSource:\ndef foo(n):\n    print \"foo\"\n    return n**Integer(2)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/181\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: recursive load source file\n\nWe use the example in examples/programming/recursive_load.\n\nfile1.sage defines a symbol foo.\nfile2.sage defines a symbol bar.\n\nEach file loads the other recursively.\n\nIf we load file2.sage first, then the source code for foo is displayed correctly by foo?? but the File: information is wrong.  The File: should read file1.sage.\n\n\n```\nsage: load file2.sage\nloaded file1.sage\nI'm now defining s\nloaded file1.sage\n\nsage: foo??\nType:           function\nBase Class:     <type 'function'>\nString Form:    <function foo at 0x8fd6db0>\nNamespace:      Interactive\nFile:           /Users/nalexand/Devel/sage-alpha8/examples/programming/recursive_load/file2.py\nDefinition:     foo(n)\nSource:\ndef foo(n):\n    print \"foo\"\n    return n**Integer(2)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/181\n\n",
     "created_at": "2006-12-11T18:58:16Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_000181.json:
     "title": "Recursive load makes symbol?? display the wrong File: information",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/181",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: recursive load source file
 
@@ -67,7 +67,7 @@ archive/issue_comments_000831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/181",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/181#issuecomment-831",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_000832.json:
     "issue": "https://github.com/sagemath/sagetest/issues/181",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/181#issuecomment-832",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_000833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/181",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/181#issuecomment-833",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

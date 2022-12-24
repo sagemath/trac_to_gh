@@ -3,7 +3,7 @@
 archive/issues_000296.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/296\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/296\n\n",
     "created_at": "2007-02-26T18:25:21Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_000296.json:
     "title": "don't create old doc directories when upgrading SAGE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/296",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_001402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/296#issuecomment-1402",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_001403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/296#issuecomment-1403",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

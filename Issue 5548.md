@@ -3,7 +3,7 @@
 archive/issues_005548.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  burcin jdemeyer\n\n\n```\nteragon:algebras wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: a = random_matrix(ZZ,16,4)\nsage: a._hnf_mod(100)\n| Sage Version 3.4, Release Date: 2009-03-11                         |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGFPE: An unhandled floating point exception occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5548\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @burcin @jdemeyer\n\n\n```\nteragon:algebras wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: a = random_matrix(ZZ,16,4)\nsage: a._hnf_mod(100)\n| Sage Version 3.4, Release Date: 2009-03-11                         |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGFPE: An unhandled floating point exception occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5548\n\n",
     "created_at": "2009-03-17T11:53:49Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_005548.json:
     "title": "fix that _hnf_mod segfaults sage completely",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5548",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  burcin jdemeyer
+CC:  @burcin @jdemeyer
 
 
 ```
@@ -58,7 +58,7 @@ archive/issue_comments_043153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5548",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5548#issuecomment-43153",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_043157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5548",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5548#issuecomment-43157",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_043158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5548",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5548#issuecomment-43158",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_043159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5548",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5548#issuecomment-43159",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_043161.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5548",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5548#issuecomment-43161",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_043162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5548",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5548#issuecomment-43162",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -312,7 +312,7 @@ archive/issue_comments_043164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5548",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5548#issuecomment-43164",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -330,7 +330,7 @@ archive/issue_comments_043165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5548",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5548#issuecomment-43165",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

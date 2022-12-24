@@ -3,7 +3,7 @@
 archive/issues_000427.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mhansen\n\nThe infix operator '\\' does not print properly in the notebook\nwhen used in the examples of solve_right (for a matrix)\n(file:\n`local/lib/python/site-packages/sage/matrix/matrix2.pyx`)\nI suspect that these backslashes simply end up escaping the space after them. Some more preprocessing may be needed to escape backslashes occurring in examples in documentation?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/427\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\nThe infix operator '\\' does not print properly in the notebook\nwhen used in the examples of solve_right (for a matrix)\n(file:\n`local/lib/python/site-packages/sage/matrix/matrix2.pyx`)\nI suspect that these backslashes simply end up escaping the space after them. Some more preprocessing may be needed to escape backslashes occurring in examples in documentation?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/427\n\n",
     "created_at": "2007-08-13T20:50:31Z",
     "labels": [
         "algebraic geometry",
@@ -14,12 +14,12 @@ archive/issues_000427.json:
     "title": "backslash infix operator does not print properly in documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/427",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  mhansen
+CC:  @mwhansen
 
 The infix operator '\' does not print properly in the notebook
 when used in the examples of solve_right (for a matrix)
@@ -44,7 +44,7 @@ archive/issue_comments_002138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/427",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/427#issuecomment-2138",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -62,7 +62,7 @@ archive/issue_comments_002139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/427",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/427#issuecomment-2139",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_002141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/427",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/427#issuecomment-2141",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -115,16 +115,16 @@ This behaves fine in the Sphinx documentation.
 archive/issue_comments_002142.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2009-01-22T13:57:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/427",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/427#issuecomment-2142",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -138,7 +138,7 @@ archive/issue_comments_002143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/427",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/427#issuecomment-2143",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_002144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/427",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/427#issuecomment-2144",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001053.json:
 ```json
 {
-    "body": "Assignee: was\n\nSpkg up at http://sage.math.washington.edu/home/robertwb/cython/ The biggest change is it incorporates changes from Pyrex 0.9.6.3, and it also has some memory leak and refcount bug fixes. \n\nCompiles and tests SAGE fine. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1053\n\n",
+    "body": "Assignee: @williamstein\n\nSpkg up at http://sage.math.washington.edu/home/robertwb/cython/ The biggest change is it incorporates changes from Pyrex 0.9.6.3, and it also has some memory leak and refcount bug fixes. \n\nCompiles and tests SAGE fine. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1053\n\n",
     "created_at": "2007-11-01T19:47:09Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_001053.json:
     "title": "Cython 0.9.6.8b",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1053",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Spkg up at http://sage.math.washington.edu/home/robertwb/cython/ The biggest change is it incorporates changes from Pyrex 0.9.6.3, and it also has some memory leak and refcount bug fixes. 
 

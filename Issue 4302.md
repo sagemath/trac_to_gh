@@ -3,7 +3,7 @@
 archive/issues_004302.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  robertwb zimmerma malb\n\nHere is a toy implementation of polynomial modular composition over GF(2). It implements\nBrent-Kung's Algorithm 2.1 (Fast Algorithms for Manipulation Formal Power Series, JACM 1978).\n\n```\n# compute f(g) mod h\ndef ModularComposition(f,g,h,k=None):\n    print \"enter ModularComposition\", f.degree(), g.degree(), h.degree()\n    t = cputime()\n    R = h.parent()\n    n = h.degree()\n    if k is None:\n        k = ceil(Integer(n+1).sqrt_approx())\n    l = ceil((f.degree() + 1) / k)\n    # first compute g^j mod h, 2 <= j < k\n    G = Matrix(GF(2),n,k)\n    gpow = R(1)\n    for j in range(0, k):\n        # gpow = g^j mod h\n        row = gpow.coeffs()\n        if len(row)<n:\n            row.extend([R(0) for _ in range(n - len(row))])\n        G.set_column(j, row)\n        gpow = (gpow * g) % h # we'll need g^k below\n    print \"Creating G took\", cputime(t)\n    t = cputime()\n    # split f in chunks of degree < k\n    F = Matrix(GF(2),k,l)\n    row = f.coeffs()\n    if len(row)<k*l:\n            row.extend([R(0) for _ in range(k*l - len(row))])\n    for j in range(0, l):\n        F.set_column(j, row[j*k:j*k+k])\n    print \"Creating F took\", cputime(t)\n    t = cputime()\n    H = G * F # this is the most time-computing step, but M4RI is fast!\n    print \"Computing H took\", cputime(t)\n    t = cputime()\n    # H is a n x l matrix\n    # now H[i,j] = sum(G[i,m]*F[m,j], m=0..k-1)\n    #            = sum(g^m[i] * f[j*k+m], m=0..k-1)\n    # where g^m[i] is the coefficient of degree i in g^m\n    # and f[j*k+m] is the coefficient of degree j*k+m in f\n    # thus f[j*k+m]*g^m[i] should be multiplied by g^(j*k)\n    # gpow = (g^k) % h\n    x = h.variables()[0]\n    res = R(0)\n    j = l - 1\n    H = H.transpose()\n    while j >= 0:\n        res = (res * gpow) % h\n        # res = res + R([H[j,i] for i in range(0,n)])\n        res = res + R(H.submatrix(j,0,1,n).list())\n        j = j - 1\n    print \"Forming result took\", cputime(t)\n    sys.stdout.flush()\n    return res\n\n# computes x^(2^r) mod f\ndef ModCompPower (f, r):\n    l = r.digits()\n    l.reverse()\n    n = len(l)\n    g = f.variables()[0]\n    for i in range(n):\n        g = ModularComposition(g,g,f)\n        if l[i] == 1:\n           g = (g * g) % f\n    return g\n```\n\nThe following benchmark gives on a 2.4Ghz Core 2:\n\n```\nsage: r=1279\nsage: time a = ModCompPower(R(x^r+x+1), r)\nenter ModularComposition 1 1 1279\n   Creating G took 3.948399\n   Creating F took 0.00299900000005\n   Computing H took 0.000999999999976\n   Forming result took 0.0169980000001\nenter ModularComposition 2 2 1279\n   Creating G took 3.896408\n   Creating F took 0.004999\n   Computing H took 0.0\n   Forming result took 0.018997\nenter ModularComposition 4 4 1279\n   Creating G took 3.802422\n   Creating F took 0.00300000000004\n   Computing H took 0.000999999999976\n   Forming result took 0.018997\nenter ModularComposition 16 16 1279\n   Creating G took 3.208512\n   Creating F took 0.00299900000005\n   Computing H took 0.0\n   Forming result took 0.0169979999999\nenter ModularComposition 512 512 1279\n   Creating G took 2.413633\n   Creating F took 0.004999\n   Computing H took 0.00100000000009\n   Forming result took 0.307953\nenter ModularComposition 1202 1202 1279\n   Creating G took 0.895864\n   Creating F took 0.00999899999999\n   Computing H took 0.0\n   Forming result took 0.787879\nenter ModularComposition 1272 1272 1279\n   Creating G took 0.528921\n   Creating F took 0.009997\n   Computing H took 0.000999999999976\n   Forming result took 0.633905\nenter ModularComposition 1275 1275 1279\n   Creating G took 0.474927\n   Creating F took 0.00899800000002\n   Computing H took 0.000999999999976\n   Forming result took 0.630905\nenter ModularComposition 1278 1278 1279\n   Creating G took 0.533918\n   Creating F took 0.00799899999993\n   Computing H took 0.0\n   Forming result took 0.631904\nenter ModularComposition 1277 1277 1279\n   Creating G took 0.482927\n   Creating F took 0.00599899999997\n   Computing H took 0.000999999999976\n   Forming result took 0.609907\nenter ModularComposition 1277 1277 1279\n   Creating G took 0.563913\n   Creating F took 0.00899900000002\n   Computing H took 0.0\n   Forming result took 0.602908\nCPU times: user 24.37 s, sys: 0.79 s, total: 25.16 s\nWall time: 27.67 s\n```\n\nSeveral remarks: (a) the time spent in M4RI (Computing H) is negligible;\n                 (b) the time spent in \"Creating G\" and \"Forming result\" is large,\n                     and is even larger when the inputs have small degree!\n                     Something strange happens here.\n\nAs a comparison, on the same machine, Magma V2.14-8 takes only 0.02s with the following code:\n\n```\nR<x> := PolynomialRing(GF(2));\n\n/* computes x^(2^r) mod f */\nModCompPower := function(f, r)\n   l := [];\n   t := r;\n   while t ne 0 do\n      l := Append(l, t mod 2);\n      t := t div 2;\n   end while;\n   g := x;\n   for i := #l to 1 by -1 do\n      g := ModularComposition(g,g,f);\n      if l[i] eq 1 then\n         g := Modexp(g,2,f);\n      end if;\n   end for;\n   return g;\nend function;\n\n> r:=1279; time a:=ModCompPower(x^r+x+1, r);\nTime: 0.020\n```\n\nThe challenge is to do better than Magma within Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4302\n\n",
+    "body": "Assignee: somebody\n\nCC:  @robertwb @zimmermann6 @malb\n\nHere is a toy implementation of polynomial modular composition over GF(2). It implements\nBrent-Kung's Algorithm 2.1 (Fast Algorithms for Manipulation Formal Power Series, JACM 1978).\n\n```\n# compute f(g) mod h\ndef ModularComposition(f,g,h,k=None):\n    print \"enter ModularComposition\", f.degree(), g.degree(), h.degree()\n    t = cputime()\n    R = h.parent()\n    n = h.degree()\n    if k is None:\n        k = ceil(Integer(n+1).sqrt_approx())\n    l = ceil((f.degree() + 1) / k)\n    # first compute g^j mod h, 2 <= j < k\n    G = Matrix(GF(2),n,k)\n    gpow = R(1)\n    for j in range(0, k):\n        # gpow = g^j mod h\n        row = gpow.coeffs()\n        if len(row)<n:\n            row.extend([R(0) for _ in range(n - len(row))])\n        G.set_column(j, row)\n        gpow = (gpow * g) % h # we'll need g^k below\n    print \"Creating G took\", cputime(t)\n    t = cputime()\n    # split f in chunks of degree < k\n    F = Matrix(GF(2),k,l)\n    row = f.coeffs()\n    if len(row)<k*l:\n            row.extend([R(0) for _ in range(k*l - len(row))])\n    for j in range(0, l):\n        F.set_column(j, row[j*k:j*k+k])\n    print \"Creating F took\", cputime(t)\n    t = cputime()\n    H = G * F # this is the most time-computing step, but M4RI is fast!\n    print \"Computing H took\", cputime(t)\n    t = cputime()\n    # H is a n x l matrix\n    # now H[i,j] = sum(G[i,m]*F[m,j], m=0..k-1)\n    #            = sum(g^m[i] * f[j*k+m], m=0..k-1)\n    # where g^m[i] is the coefficient of degree i in g^m\n    # and f[j*k+m] is the coefficient of degree j*k+m in f\n    # thus f[j*k+m]*g^m[i] should be multiplied by g^(j*k)\n    # gpow = (g^k) % h\n    x = h.variables()[0]\n    res = R(0)\n    j = l - 1\n    H = H.transpose()\n    while j >= 0:\n        res = (res * gpow) % h\n        # res = res + R([H[j,i] for i in range(0,n)])\n        res = res + R(H.submatrix(j,0,1,n).list())\n        j = j - 1\n    print \"Forming result took\", cputime(t)\n    sys.stdout.flush()\n    return res\n\n# computes x^(2^r) mod f\ndef ModCompPower (f, r):\n    l = r.digits()\n    l.reverse()\n    n = len(l)\n    g = f.variables()[0]\n    for i in range(n):\n        g = ModularComposition(g,g,f)\n        if l[i] == 1:\n           g = (g * g) % f\n    return g\n```\n\nThe following benchmark gives on a 2.4Ghz Core 2:\n\n```\nsage: r=1279\nsage: time a = ModCompPower(R(x^r+x+1), r)\nenter ModularComposition 1 1 1279\n   Creating G took 3.948399\n   Creating F took 0.00299900000005\n   Computing H took 0.000999999999976\n   Forming result took 0.0169980000001\nenter ModularComposition 2 2 1279\n   Creating G took 3.896408\n   Creating F took 0.004999\n   Computing H took 0.0\n   Forming result took 0.018997\nenter ModularComposition 4 4 1279\n   Creating G took 3.802422\n   Creating F took 0.00300000000004\n   Computing H took 0.000999999999976\n   Forming result took 0.018997\nenter ModularComposition 16 16 1279\n   Creating G took 3.208512\n   Creating F took 0.00299900000005\n   Computing H took 0.0\n   Forming result took 0.0169979999999\nenter ModularComposition 512 512 1279\n   Creating G took 2.413633\n   Creating F took 0.004999\n   Computing H took 0.00100000000009\n   Forming result took 0.307953\nenter ModularComposition 1202 1202 1279\n   Creating G took 0.895864\n   Creating F took 0.00999899999999\n   Computing H took 0.0\n   Forming result took 0.787879\nenter ModularComposition 1272 1272 1279\n   Creating G took 0.528921\n   Creating F took 0.009997\n   Computing H took 0.000999999999976\n   Forming result took 0.633905\nenter ModularComposition 1275 1275 1279\n   Creating G took 0.474927\n   Creating F took 0.00899800000002\n   Computing H took 0.000999999999976\n   Forming result took 0.630905\nenter ModularComposition 1278 1278 1279\n   Creating G took 0.533918\n   Creating F took 0.00799899999993\n   Computing H took 0.0\n   Forming result took 0.631904\nenter ModularComposition 1277 1277 1279\n   Creating G took 0.482927\n   Creating F took 0.00599899999997\n   Computing H took 0.000999999999976\n   Forming result took 0.609907\nenter ModularComposition 1277 1277 1279\n   Creating G took 0.563913\n   Creating F took 0.00899900000002\n   Computing H took 0.0\n   Forming result took 0.602908\nCPU times: user 24.37 s, sys: 0.79 s, total: 25.16 s\nWall time: 27.67 s\n```\n\nSeveral remarks: (a) the time spent in M4RI (Computing H) is negligible;\n                 (b) the time spent in \"Creating G\" and \"Forming result\" is large,\n                     and is even larger when the inputs have small degree!\n                     Something strange happens here.\n\nAs a comparison, on the same machine, Magma V2.14-8 takes only 0.02s with the following code:\n\n```\nR<x> := PolynomialRing(GF(2));\n\n/* computes x^(2^r) mod f */\nModCompPower := function(f, r)\n   l := [];\n   t := r;\n   while t ne 0 do\n      l := Append(l, t mod 2);\n      t := t div 2;\n   end while;\n   g := x;\n   for i := #l to 1 by -1 do\n      g := ModularComposition(g,g,f);\n      if l[i] eq 1 then\n         g := Modexp(g,2,f);\n      end if;\n   end for;\n   return g;\nend function;\n\n> r:=1279; time a:=ModCompPower(x^r+x+1, r);\nTime: 0.020\n```\n\nThe challenge is to do better than Magma within Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4302\n\n",
     "created_at": "2008-10-15T16:36:18Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_004302.json:
     "title": "[challenge] improve modular composition in GF(2)[x]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4302",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: somebody
 
-CC:  robertwb zimmerma malb
+CC:  @robertwb @zimmermann6 @malb
 
 Here is a toy implementation of polynomial modular composition over GF(2). It implements
 Brent-Kung's Algorithm 2.1 (Fast Algorithms for Manipulation Formal Power Series, JACM 1978).
@@ -205,7 +205,7 @@ archive/issue_comments_031456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31456",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_031457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31457",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_031458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31458",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -328,7 +328,7 @@ archive/issue_comments_031459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31459",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -346,7 +346,7 @@ archive/issue_comments_031460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31460",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -382,7 +382,7 @@ archive/issue_comments_031461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31461",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -406,7 +406,7 @@ archive/issue_comments_031462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31462",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -446,7 +446,7 @@ archive/issue_comments_031463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31463",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -464,7 +464,7 @@ archive/issue_comments_031464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31464",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -569,7 +569,7 @@ archive/issue_comments_031467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31467",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -608,7 +608,7 @@ archive/issue_comments_031468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31468",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -665,7 +665,7 @@ archive/issue_comments_031469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31469",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -692,7 +692,7 @@ archive/issue_comments_031470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31470",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -718,7 +718,7 @@ archive/issue_comments_031471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31471",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -789,7 +789,7 @@ archive/issue_comments_031472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31472",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -805,16 +805,16 @@ Unfortunately I don't know how to fix the other ones.
 archive/issue_comments_031473.json:
 ```json
 {
-    "body": "Attachment [4302_speedup1.patch](tarball://root/attachments/some-uuid/ticket4302/4302_speedup1.patch) by zimmerma created at 2008-10-18 16:48:16",
+    "body": "Attachment [4302_speedup1.patch](tarball://root/attachments/some-uuid/ticket4302/4302_speedup1.patch) by @zimmermann6 created at 2008-10-18 16:48:16",
     "created_at": "2008-10-18T16:48:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31473",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [4302_speedup1.patch](tarball://root/attachments/some-uuid/ticket4302/4302_speedup1.patch) by zimmerma created at 2008-10-18 16:48:16
+Attachment [4302_speedup1.patch](tarball://root/attachments/some-uuid/ticket4302/4302_speedup1.patch) by @zimmermann6 created at 2008-10-18 16:48:16
 
 
 
@@ -828,7 +828,7 @@ archive/issue_comments_031474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31474",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -862,7 +862,7 @@ archive/issue_comments_031475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31475",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -904,7 +904,7 @@ archive/issue_comments_031476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31476",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -944,7 +944,7 @@ archive/issue_comments_031477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31477",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -962,7 +962,7 @@ archive/issue_comments_031478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31478",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -975,16 +975,16 @@ fixes all known doctest failures
 archive/issue_comments_031479.json:
 ```json
 {
-    "body": "Attachment [polynomial_gf2x.patch](tarball://root/attachments/some-uuid/ticket4302/polynomial_gf2x.patch) by malb created at 2008-10-19 15:18:59\n\nthe updated patch fixes all known doctest failures. The failure was caused by the fact that two GF(2) objects existed such that `x.parent() is parent` wasn't true anymore. Apply Paul's performance patch after `polynomial_gf2x.patch`",
+    "body": "Attachment [polynomial_gf2x.patch](tarball://root/attachments/some-uuid/ticket4302/polynomial_gf2x.patch) by @malb created at 2008-10-19 15:18:59\n\nthe updated patch fixes all known doctest failures. The failure was caused by the fact that two GF(2) objects existed such that `x.parent() is parent` wasn't true anymore. Apply Paul's performance patch after `polynomial_gf2x.patch`",
     "created_at": "2008-10-19T15:18:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31479",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [polynomial_gf2x.patch](tarball://root/attachments/some-uuid/ticket4302/polynomial_gf2x.patch) by malb created at 2008-10-19 15:18:59
+Attachment [polynomial_gf2x.patch](tarball://root/attachments/some-uuid/ticket4302/polynomial_gf2x.patch) by @malb created at 2008-10-19 15:18:59
 
 the updated patch fixes all known doctest failures. The failure was caused by the fact that two GF(2) objects existed such that `x.parent() is parent` wasn't true anymore. Apply Paul's performance patch after `polynomial_gf2x.patch`
 
@@ -1022,7 +1022,7 @@ archive/issue_comments_031481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31481",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1043,7 +1043,7 @@ archive/issue_comments_031482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31482",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1061,7 +1061,7 @@ archive/issue_comments_031483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31483",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1079,7 +1079,7 @@ archive/issue_comments_031484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31484",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1102,7 +1102,7 @@ archive/issue_comments_031485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31485",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1120,7 +1120,7 @@ archive/issue_comments_031486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31486",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

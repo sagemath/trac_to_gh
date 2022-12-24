@@ -3,7 +3,7 @@
 archive/issues_009067.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  was\n\nThis has the same error as #7336.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9067\n\n",
+    "body": "Assignee: tbd\n\nCC:  @williamstein\n\nThis has the same error as #7336.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9067\n\n",
     "created_at": "2010-05-27T18:41:04Z",
     "labels": [
         "porting: Cygwin",
@@ -14,12 +14,12 @@ archive/issues_009067.json:
     "title": "boehm_gc (still) fails to build on Cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9067",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
 
-CC:  was
+CC:  @williamstein
 
 This has the same error as #7336.
 
@@ -39,7 +39,7 @@ archive/issue_comments_084151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9067",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9067#issuecomment-84151",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_084152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9067",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9067#issuecomment-84152",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_084153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9067",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9067#issuecomment-84153",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_084154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9067",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9067#issuecomment-84154",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

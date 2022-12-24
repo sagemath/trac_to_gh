@@ -3,7 +3,7 @@
 archive/issues_006185.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  mvngu rpw burcin\n\nKeywords: crypto, cnf\n\nWhile not really complicated it is nice to have a direct conversion from S-Boxes to CNF since SAT-solves enjoy some attention right now in crypto.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6185\n\n",
+    "body": "Assignee: @malb\n\nCC:  mvngu rpw @burcin\n\nKeywords: crypto, cnf\n\nWhile not really complicated it is nice to have a direct conversion from S-Boxes to CNF since SAT-solves enjoy some attention right now in crypto.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6185\n\n",
     "created_at": "2009-06-02T13:56:38Z",
     "labels": [
         "cryptography",
@@ -14,12 +14,12 @@ archive/issues_006185.json:
     "title": "[with patch, needs review] Add SBox -> CNF Conversion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6185",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  mvngu rpw burcin
+CC:  mvngu rpw @burcin
 
 Keywords: crypto, cnf
 
@@ -41,7 +41,7 @@ archive/issue_comments_049378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6185",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6185#issuecomment-49378",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_049380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6185",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6185#issuecomment-49380",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_049381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6185",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6185#issuecomment-49381",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -164,16 +164,16 @@ otherwise seems good to me.
 archive/issue_comments_049383.json:
 ```json
 {
-    "body": "Attachment [sbox_cnf.patch](tarball://root/attachments/some-uuid/ticket6185/sbox_cnf.patch) by malb created at 2009-06-11 11:36:35\n\nThe attached updated patch addresses the reviewer's comments. Is that a positive review then?",
+    "body": "Attachment [sbox_cnf.patch](tarball://root/attachments/some-uuid/ticket6185/sbox_cnf.patch) by @malb created at 2009-06-11 11:36:35\n\nThe attached updated patch addresses the reviewer's comments. Is that a positive review then?",
     "created_at": "2009-06-11T11:36:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6185",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6185#issuecomment-49383",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [sbox_cnf.patch](tarball://root/attachments/some-uuid/ticket6185/sbox_cnf.patch) by malb created at 2009-06-11 11:36:35
+Attachment [sbox_cnf.patch](tarball://root/attachments/some-uuid/ticket6185/sbox_cnf.patch) by @malb created at 2009-06-11 11:36:35
 
 The attached updated patch addresses the reviewer's comments. Is that a positive review then?
 
@@ -207,7 +207,7 @@ archive/issue_comments_049385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6185",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6185#issuecomment-49385",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

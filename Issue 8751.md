@@ -3,7 +3,7 @@
 archive/issues_008751.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  cremona jpflori defeo pbruin\n\nI noticed the following with Sage 4.3.5:\n\n```\nsage: R = GF(9,name='x')\nsage: Q.<x> = PolynomialRing(GF(3))\nsage: R2 = GF(9,name='x',modulus=x^2+1)\nsage: a=R(x+1)\nsage: R2(a)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/users/caramel/zimmerma/svn/sagebook/tex/<ipython console> in <module>()\n\n/usr/local/sage-core2/local/lib/python2.6/site-packages/sage/rings/finite_field_givaro.so in sage.rings.finite_field_givaro.FiniteField_givaro.__call__ (sage/rings/finite_field_givaro.cpp:4754)()\n\nTypeError: unable to coerce from a finite field other than the prime subfield\n```\n\nThis is ok since indeed a=x+1 is not in the prime subfield.\nBut:\n\n```\nsage: b=R(1)\nsage: R2(b)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/users/caramel/zimmerma/svn/sagebook/tex/<ipython console> in <module>()\n\n/usr/local/sage-core2/local/lib/python2.6/site-packages/sage/rings/finite_field_givaro.so in sage.rings.finite_field_givaro.FiniteField_givaro.__call__ (sage/rings/finite_field_givaro.cpp:4754)()\n\nTypeError: unable to coerce from a finite field other than the prime subfield\n```\n\nIn this case b=1 ***is*** in the prime subfield!!!\n\nSide question: is there a (simple) way to get the isomorphism between R and R2?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8751\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @JohnCremona jpflori @defeo @pjbruin\n\nI noticed the following with Sage 4.3.5:\n\n```\nsage: R = GF(9,name='x')\nsage: Q.<x> = PolynomialRing(GF(3))\nsage: R2 = GF(9,name='x',modulus=x^2+1)\nsage: a=R(x+1)\nsage: R2(a)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/users/caramel/zimmerma/svn/sagebook/tex/<ipython console> in <module>()\n\n/usr/local/sage-core2/local/lib/python2.6/site-packages/sage/rings/finite_field_givaro.so in sage.rings.finite_field_givaro.FiniteField_givaro.__call__ (sage/rings/finite_field_givaro.cpp:4754)()\n\nTypeError: unable to coerce from a finite field other than the prime subfield\n```\n\nThis is ok since indeed a=x+1 is not in the prime subfield.\nBut:\n\n```\nsage: b=R(1)\nsage: R2(b)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/users/caramel/zimmerma/svn/sagebook/tex/<ipython console> in <module>()\n\n/usr/local/sage-core2/local/lib/python2.6/site-packages/sage/rings/finite_field_givaro.so in sage.rings.finite_field_givaro.FiniteField_givaro.__call__ (sage/rings/finite_field_givaro.cpp:4754)()\n\nTypeError: unable to coerce from a finite field other than the prime subfield\n```\n\nIn this case b=1 ***is*** in the prime subfield!!!\n\nSide question: is there a (simple) way to get the isomorphism between R and R2?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8751\n\n",
     "created_at": "2010-04-23T09:28:49Z",
     "labels": [
         "basic arithmetic",
@@ -13,12 +13,12 @@ archive/issues_008751.json:
     "title": "conversion between non-prime finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8751",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  cremona jpflori defeo pbruin
+CC:  @JohnCremona jpflori @defeo @pjbruin
 
 I noticed the following with Sage 4.3.5:
 
@@ -74,7 +74,7 @@ archive/issue_comments_080060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8751#issuecomment-80060",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_080061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8751#issuecomment-80061",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_080065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8751#issuecomment-80065",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_080067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8751#issuecomment-80067",
-    "user": "defeo"
+    "user": "@defeo"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_080068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8751#issuecomment-80068",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_080069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8751#issuecomment-80069",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 

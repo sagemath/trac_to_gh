@@ -3,7 +3,7 @@
 archive/issues_003320.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: gap, linear algebra\n\nThis should be much faster:\n\n```\nsage: A = random_matrix(GF(2),200,200)\nsage: time Am = magma(A)\nCPU times: user 0.03 s, sys: 0.01 s, total: 0.04 s\nWall time: 0.50\nsage: time Ag = gap(A) #<-------------\nCPU times: user 10.35 s, sys: 0.63 s, total: 10.98 s\nWall time: 11.76\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3320\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: gap, linear algebra\n\nThis should be much faster:\n\n```\nsage: A = random_matrix(GF(2),200,200)\nsage: time Am = magma(A)\nCPU times: user 0.03 s, sys: 0.01 s, total: 0.04 s\nWall time: 0.50\nsage: time Ag = gap(A) #<-------------\nCPU times: user 10.35 s, sys: 0.63 s, total: 10.98 s\nWall time: 11.76\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3320\n\n",
     "created_at": "2008-05-28T13:26:33Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_003320.json:
     "title": "Gap <-> Sage interface for Dense Matrices over GF(2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3320",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: gap, linear algebra
 
@@ -50,7 +50,7 @@ archive/issue_comments_023018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3320#issuecomment-23018",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_023019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3320#issuecomment-23019",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_023020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3320#issuecomment-23020",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_023021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3320#issuecomment-23021",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_023022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3320#issuecomment-23022",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_023023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3320#issuecomment-23023",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_023024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3320#issuecomment-23024",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_023025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3320#issuecomment-23025",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

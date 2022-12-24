@@ -14,7 +14,7 @@ archive/issues_001008.json:
     "title": "dumb mistake in setup.py -- touching has adverse consequences",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1008",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1008
 archive/issue_comments_006161.json:
 ```json
 {
-    "body": "Attachment [7147.patch](tarball://root/attachments/some-uuid/ticket1008/7147.patch) by was created at 2007-10-27 03:28:12",
+    "body": "Attachment [7147.patch](tarball://root/attachments/some-uuid/ticket1008/7147.patch) by @williamstein created at 2007-10-27 03:28:12",
     "created_at": "2007-10-27T03:28:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1008",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1008#issuecomment-6161",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [7147.patch](tarball://root/attachments/some-uuid/ticket1008/7147.patch) by was created at 2007-10-27 03:28:12
+Attachment [7147.patch](tarball://root/attachments/some-uuid/ticket1008/7147.patch) by @williamstein created at 2007-10-27 03:28:12
 
 
 

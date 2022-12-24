@@ -3,7 +3,7 @@
 archive/issues_002687.json:
 ```json
 {
-    "body": "Assignee: rlm\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2687\n\n",
+    "body": "Assignee: @rlmill\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2687\n\n",
     "created_at": "2008-03-27T20:54:22Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_002687.json:
     "title": "database.py - update to work with sqlalchemy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2687",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_018502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2687",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2687#issuecomment-18502",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_018503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2687",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2687#issuecomment-18503",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_018504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2687",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2687#issuecomment-18504",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_018505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2687",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2687#issuecomment-18505",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

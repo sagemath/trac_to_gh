@@ -3,7 +3,7 @@
 archive/issues_006645.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  mhansen\n\n\n```\nHi,\n\nI took the sage-4.1.1.alpha1 release build I had, then did \"./sage -bdist\", took the result, extracted it, and did \"make test\". \n\n 1) It sits there and builds the documentation again, which takes a *long* time.  It shouldn't do this for a binary.\n\n 2) Worse, every single test failed, with errors like this:\n\nsage -t  \"/home/wstein/build/sage-4.1.1.alpha1/dist/sage-4.1.1.alpha1-x86_64-Linux/devel/sage/doc/common/buil\nder.py\"\n  File \"./builder.py\", line 18\n    from /home/wstein/build/sage-4.1.1.alpha1/dist/sage-4.1.1.alpha1-x86_64-Linux/devel/sage/doc/common/build\ner import *\n         ^\n\n  3) I tried do \"./sage\" to run Sage, then typed \"make test\" again about 10 minutes ago.  For some reason, the docs are building again... and I expect the same behavior as above after that finally finishes.\n\nBuiding Sage, doing \"./sage -bdist\", then extracting the result and having \"make test\" 100% is a blocker for making the sage-4.1.1 release.\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6645\n\n",
+    "body": "Assignee: tbd\n\nCC:  @mwhansen\n\n\n```\nHi,\n\nI took the sage-4.1.1.alpha1 release build I had, then did \"./sage -bdist\", took the result, extracted it, and did \"make test\". \n\n 1) It sits there and builds the documentation again, which takes a *long* time.  It shouldn't do this for a binary.\n\n 2) Worse, every single test failed, with errors like this:\n\nsage -t  \"/home/wstein/build/sage-4.1.1.alpha1/dist/sage-4.1.1.alpha1-x86_64-Linux/devel/sage/doc/common/buil\nder.py\"\n  File \"./builder.py\", line 18\n    from /home/wstein/build/sage-4.1.1.alpha1/dist/sage-4.1.1.alpha1-x86_64-Linux/devel/sage/doc/common/build\ner import *\n         ^\n\n  3) I tried do \"./sage\" to run Sage, then typed \"make test\" again about 10 minutes ago.  For some reason, the docs are building again... and I expect the same behavior as above after that finally finishes.\n\nBuiding Sage, doing \"./sage -bdist\", then extracting the result and having \"make test\" 100% is a blocker for making the sage-4.1.1 release.\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6645\n\n",
     "created_at": "2009-07-28T03:01:36Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_006645.json:
     "title": "make sure bdist of sage-4.1.1 works before release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6645",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
 
-CC:  mhansen
+CC:  @mwhansen
 
 
 ```
@@ -62,7 +62,7 @@ archive/issue_comments_054490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6645",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6645#issuecomment-54490",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_054491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6645",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6645#issuecomment-54491",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -104,16 +104,16 @@ Apply to scripts repository.
 archive/issue_comments_054492.json:
 ```json
 {
-    "body": "Attachment [trac_6645-scripts_doctest.patch](tarball://root/attachments/some-uuid/ticket6645/trac_6645-scripts_doctest.patch) by mpatel created at 2009-07-28 14:07:38\n\nOn the failed tests:  The attached patch may help.  [os.path.realpath()](http://docs.python.org/library/os.path.html#os.path.realpath) expands all symbolic links.\n\nShould `sage-bdist` set `SAGE_ROOT=\".....\"` in `SAGE_ROOT/sage`?  **Lots** of tests fail, if `SAGE_ROOT` points to the original source distribution, at least for me.\n\nOn rebuilding the docs:  Is it enough to remove just the `rm -rf` lines?",
+    "body": "Attachment [trac_6645-scripts_doctest.patch](tarball://root/attachments/some-uuid/ticket6645/trac_6645-scripts_doctest.patch) by @qed777 created at 2009-07-28 14:07:38\n\nOn the failed tests:  The attached patch may help.  [os.path.realpath()](http://docs.python.org/library/os.path.html#os.path.realpath) expands all symbolic links.\n\nShould `sage-bdist` set `SAGE_ROOT=\".....\"` in `SAGE_ROOT/sage`?  **Lots** of tests fail, if `SAGE_ROOT` points to the original source distribution, at least for me.\n\nOn rebuilding the docs:  Is it enough to remove just the `rm -rf` lines?",
     "created_at": "2009-07-28T14:07:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6645",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6645#issuecomment-54492",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6645-scripts_doctest.patch](tarball://root/attachments/some-uuid/ticket6645/trac_6645-scripts_doctest.patch) by mpatel created at 2009-07-28 14:07:38
+Attachment [trac_6645-scripts_doctest.patch](tarball://root/attachments/some-uuid/ticket6645/trac_6645-scripts_doctest.patch) by @qed777 created at 2009-07-28 14:07:38
 
 On the failed tests:  The attached patch may help.  [os.path.realpath()](http://docs.python.org/library/os.path.html#os.path.realpath) expands all symbolic links.
 
@@ -164,7 +164,7 @@ archive/issue_comments_054494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6645",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6645#issuecomment-54494",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_054495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6645",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6645#issuecomment-54495",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -214,16 +214,16 @@ Non-Mercurial patch for SAGE_ROOT/spkg/install
 archive/issue_comments_054496.json:
 ```json
 {
-    "body": "Attachment [trac_6645-spkg_install.patch](tarball://root/attachments/some-uuid/ticket6645/trac_6645-spkg_install.patch) by mpatel created at 2009-08-07 23:09:02\n\nTo apply the new **non-Mercurial** patch, save it to `SAGE_ROOT/spkg`.  In that directory, run `patch < trac_6645-spkg_install.patch`.\n\nBoth patches together appear to solve the problems described in this ticket's description, at least for me.  But let me know, if they're not enough.\n\nWhy were the `rm -rf` lines first added to `spkg/install`?",
+    "body": "Attachment [trac_6645-spkg_install.patch](tarball://root/attachments/some-uuid/ticket6645/trac_6645-spkg_install.patch) by @qed777 created at 2009-08-07 23:09:02\n\nTo apply the new **non-Mercurial** patch, save it to `SAGE_ROOT/spkg`.  In that directory, run `patch < trac_6645-spkg_install.patch`.\n\nBoth patches together appear to solve the problems described in this ticket's description, at least for me.  But let me know, if they're not enough.\n\nWhy were the `rm -rf` lines first added to `spkg/install`?",
     "created_at": "2009-08-07T23:09:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6645",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6645#issuecomment-54496",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6645-spkg_install.patch](tarball://root/attachments/some-uuid/ticket6645/trac_6645-spkg_install.patch) by mpatel created at 2009-08-07 23:09:02
+Attachment [trac_6645-spkg_install.patch](tarball://root/attachments/some-uuid/ticket6645/trac_6645-spkg_install.patch) by @qed777 created at 2009-08-07 23:09:02
 
 To apply the new **non-Mercurial** patch, save it to `SAGE_ROOT/spkg`.  In that directory, run `patch < trac_6645-spkg_install.patch`.
 
@@ -243,7 +243,7 @@ archive/issue_comments_054497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6645",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6645#issuecomment-54497",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_054499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6645",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6645#issuecomment-54499",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -335,7 +335,7 @@ archive/issue_comments_054500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6645",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6645#issuecomment-54500",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -355,7 +355,7 @@ archive/issue_comments_054501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6645",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6645#issuecomment-54501",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -422,7 +422,7 @@ archive/issue_comments_054503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6645",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6645#issuecomment-54503",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -497,7 +497,7 @@ archive/issue_comments_054507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6645",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6645#issuecomment-54507",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

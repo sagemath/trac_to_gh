@@ -3,7 +3,7 @@
 archive/issues_006457.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: ideal\n\nThis is not difficult but for some reason it wasn't implemented before. Here it is.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6457\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: ideal\n\nThis is not difficult but for some reason it wasn't implemented before. Here it is.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6457\n\n",
     "created_at": "2009-07-02T13:10:13Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_006457.json:
     "title": "Intersection of ideals in a number field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6457",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: ideal
 
@@ -39,7 +39,7 @@ archive/issue_comments_052182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6457#issuecomment-52182",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -52,16 +52,16 @@ patch against 4.1.alpha2
 archive/issue_comments_052183.json:
 ```json
 {
-    "body": "Attachment [trac_6457-ideal_intersection.patch](tarball://root/attachments/some-uuid/ticket6457/trac_6457-ideal_intersection.patch) by davidloeffler created at 2009-07-02 13:13:04",
+    "body": "Attachment [trac_6457-ideal_intersection.patch](tarball://root/attachments/some-uuid/ticket6457/trac_6457-ideal_intersection.patch) by @loefflerd created at 2009-07-02 13:13:04",
     "created_at": "2009-07-02T13:13:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6457#issuecomment-52183",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_6457-ideal_intersection.patch](tarball://root/attachments/some-uuid/ticket6457/trac_6457-ideal_intersection.patch) by davidloeffler created at 2009-07-02 13:13:04
+Attachment [trac_6457-ideal_intersection.patch](tarball://root/attachments/some-uuid/ticket6457/trac_6457-ideal_intersection.patch) by @loefflerd created at 2009-07-02 13:13:04
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_052184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6457#issuecomment-52184",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_052185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6457#issuecomment-52185",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

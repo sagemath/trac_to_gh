@@ -13,7 +13,7 @@ archive/issues_000038.json:
     "title": "bug in notebook (too much text clipped)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/38",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -90,7 +90,7 @@ archive/issue_comments_000246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/38",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/38#issuecomment-246",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_000247.json:
     "issue": "https://github.com/sagemath/sagetest/issues/38",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/38#issuecomment-247",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000396.json:
 ```json
 {
-    "body": "Assignee: was\n\nMultiplying a mix of vectors and matrices is allowed presently in sage, but it is not associative:\n\n```\nv=vector([1,2,3])\nM=matrix([[1,0],[0,1],[1,1]])\nw=vector([1,2])\n\nprint v*M*w\nprint (v*M)*w\nprint v*(M*w)\n///\n(4, 10)\n(4, 10)\n(1, 4, 9)\n```\n\nIt is a combination of vectors not knowing whether they are row- or column vectors (probably good)\nand that v * w has the odd meaning of doing a component-wise multiplication. Perhaps it inherits the method from lists or something? It would be safest to explicitly cast an error if one tries to multiply vectors.\n\nIssue created by migration from https://trac.sagemath.org/ticket/396\n\n",
+    "body": "Assignee: @williamstein\n\nMultiplying a mix of vectors and matrices is allowed presently in sage, but it is not associative:\n\n```\nv=vector([1,2,3])\nM=matrix([[1,0],[0,1],[1,1]])\nw=vector([1,2])\n\nprint v*M*w\nprint (v*M)*w\nprint v*(M*w)\n///\n(4, 10)\n(4, 10)\n(1, 4, 9)\n```\n\nIt is a combination of vectors not knowing whether they are row- or column vectors (probably good)\nand that v * w has the odd meaning of doing a component-wise multiplication. Perhaps it inherits the method from lists or something? It would be safest to explicitly cast an error if one tries to multiply vectors.\n\nIssue created by migration from https://trac.sagemath.org/ticket/396\n\n",
     "created_at": "2007-06-28T23:46:25Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_000396.json:
     "title": "vector-vector produc ts",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/396",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Multiplying a mix of vectors and matrices is allowed presently in sage, but it is not associative:
 
@@ -54,7 +54,7 @@ archive/issue_comments_001949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/396#issuecomment-1949",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_001950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/396#issuecomment-1950",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -93,16 +93,16 @@ Changing component from algebraic geometry to linear algebra.
 archive/issue_comments_001951.json:
 ```json
 {
-    "body": "Attachment [396.patch](tarball://root/attachments/some-uuid/ticket396/396.patch) by mhansen created at 2007-09-06 23:02:48",
+    "body": "Attachment [396.patch](tarball://root/attachments/some-uuid/ticket396/396.patch) by @mwhansen created at 2007-09-06 23:02:48",
     "created_at": "2007-09-06T23:02:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/396#issuecomment-1951",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [396.patch](tarball://root/attachments/some-uuid/ticket396/396.patch) by mhansen created at 2007-09-06 23:02:48
+Attachment [396.patch](tarball://root/attachments/some-uuid/ticket396/396.patch) by @mwhansen created at 2007-09-06 23:02:48
 
 
 
@@ -116,7 +116,7 @@ archive/issue_comments_001952.json:
     "issue": "https://github.com/sagemath/sagetest/issues/396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/396#issuecomment-1952",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

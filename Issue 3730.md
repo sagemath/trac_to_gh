@@ -14,7 +14,7 @@ archive/issues_003730.json:
     "title": "Sage scripts ending with .py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3730",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 Assignee: tba
@@ -51,7 +51,7 @@ archive/issue_comments_026484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3730",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3730#issuecomment-26484",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_026485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3730",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3730#issuecomment-26485",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_026486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3730",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3730#issuecomment-26486",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_026487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3730",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3730#issuecomment-26487",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_026488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3730",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3730#issuecomment-26488",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_004807.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nThis was reported by M. Yurko in an email to sage-support:\n\nhere are some examples of what I did:\n#First, an example of the bug\n\n```\nEi(20)\nOutput: 25615646.4145 + 6.28318530718*I \n```\n\nit should instead be just 25615646.4145\n\n```\nEi(19)\nOutput: 9950907.25105 \n```\n\nthe error doesn't occur here\n\n```\n-exponential_integral_1(-20).n(digits=50)\nOutput: 25615652.664056588 \n```\n\nhere the bug doesn't occur, although the\ncode for exponential_integral_1  loses a lot \nof accuracy by converting the number returned \nfrom PARI into a float, so it has much less\naccuracy\n\n```\n-pari(-20).eint1().n(digits = 50)\nOutput: 2.5615652664056588773746625520288944244384765625000e7 }}}\nhere the full accuracy from PARI is preserved\nthe following shows the difference in the speed \nof the two methods \n\nthe current implementation\n{{{\n%time\nfor i in srange (1,10^6):\n   num = Ei(10)\nOutput: CPU time: 51.64 s,  Wall time: 51.81 s\n}}}\nthe time of PARI's implementation\n{{{\n%time\nfor i in srange (1,10^6):\n   num = pari(-i).eint1()\nOutput: CPU time: 20.12 s,  Wall time: 20.32 s\n}}}\nPARI's implementation seems to be more than twice as fast\n\nWilliam Stein added this:\n\nA quick remark: The Pari Ei only works with *real* input, whereas the scipy one works with complex input.\nThe Sage function will have to fixed in the meantime or\nat least as a bare minimum have a big comment at the top explaining that there is a bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4807\n\n",
+    "body": "Assignee: @burcin\n\nThis was reported by M. Yurko in an email to sage-support:\n\nhere are some examples of what I did:\n#First, an example of the bug\n\n```\nEi(20)\nOutput: 25615646.4145 + 6.28318530718*I \n```\n\nit should instead be just 25615646.4145\n\n```\nEi(19)\nOutput: 9950907.25105 \n```\n\nthe error doesn't occur here\n\n```\n-exponential_integral_1(-20).n(digits=50)\nOutput: 25615652.664056588 \n```\n\nhere the bug doesn't occur, although the\ncode for exponential_integral_1  loses a lot \nof accuracy by converting the number returned \nfrom PARI into a float, so it has much less\naccuracy\n\n```\n-pari(-20).eint1().n(digits = 50)\nOutput: 2.5615652664056588773746625520288944244384765625000e7 }}}\nhere the full accuracy from PARI is preserved\nthe following shows the difference in the speed \nof the two methods \n\nthe current implementation\n{{{\n%time\nfor i in srange (1,10^6):\n   num = Ei(10)\nOutput: CPU time: 51.64 s,  Wall time: 51.81 s\n}}}\nthe time of PARI's implementation\n{{{\n%time\nfor i in srange (1,10^6):\n   num = pari(-i).eint1()\nOutput: CPU time: 20.12 s,  Wall time: 20.32 s\n}}}\nPARI's implementation seems to be more than twice as fast\n\nWilliam Stein added this:\n\nA quick remark: The Pari Ei only works with *real* input, whereas the scipy one works with complex input.\nThe Sage function will have to fixed in the meantime or\nat least as a bare minimum have a big comment at the top explaining that there is a bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4807\n\n",
     "created_at": "2008-12-16T04:49:43Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_004807.json:
     "title": "bug in exponential integral",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4807",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 This was reported by M. Yurko in an email to sage-support:
 
@@ -137,7 +137,7 @@ archive/issue_comments_036440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4807#issuecomment-36440",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_036441.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4807#issuecomment-36441",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -195,16 +195,16 @@ If I find the time, I'll try to both optimize and assure accuracy everywhere for
 archive/issue_comments_036442.json:
 ```json
 {
-    "body": "Changing assignee from burcin to fredrik.",
+    "body": "Changing assignee from @burcin to fredrik.",
     "created_at": "2009-06-04T23:39:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4807#issuecomment-36442",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from burcin to fredrik.
+Changing assignee from @burcin to fredrik.
 
 
 
@@ -249,16 +249,16 @@ Attachment [trac_4807.patch](tarball://root/attachments/some-uuid/ticket4807/tra
 archive/issue_comments_036445.json:
 ```json
 {
-    "body": "Attachment [trac_4807.2.patch](tarball://root/attachments/some-uuid/ticket4807/trac_4807.2.patch) by mhansen created at 2009-09-30 03:56:17\n\nI posted a new patch with a few changes to the original patch.  I'm using mpmath for everything since for uniformity and because it handles the increased precision.  Also, I changed the second example to highlight the branch cut and added the failing example in the ticket as a test.\n\nMichael, if you're okay with my changes, then you can mark the patch as positive review.  I left the patch in your name.",
+    "body": "Attachment [trac_4807.2.patch](tarball://root/attachments/some-uuid/ticket4807/trac_4807.2.patch) by @mwhansen created at 2009-09-30 03:56:17\n\nI posted a new patch with a few changes to the original patch.  I'm using mpmath for everything since for uniformity and because it handles the increased precision.  Also, I changed the second example to highlight the branch cut and added the failing example in the ticket as a test.\n\nMichael, if you're okay with my changes, then you can mark the patch as positive review.  I left the patch in your name.",
     "created_at": "2009-09-30T03:56:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4807#issuecomment-36445",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4807.2.patch](tarball://root/attachments/some-uuid/ticket4807/trac_4807.2.patch) by mhansen created at 2009-09-30 03:56:17
+Attachment [trac_4807.2.patch](tarball://root/attachments/some-uuid/ticket4807/trac_4807.2.patch) by @mwhansen created at 2009-09-30 03:56:17
 
 I posted a new patch with a few changes to the original patch.  I'm using mpmath for everything since for uniformity and because it handles the increased precision.  Also, I changed the second example to highlight the branch cut and added the failing example in the ticket as a test.
 
@@ -294,7 +294,7 @@ archive/issue_comments_036447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4807#issuecomment-36447",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

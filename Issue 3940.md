@@ -14,7 +14,7 @@ archive/issues_003940.json:
     "title": "Add a warnings framework to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3940",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: cwitty
@@ -65,7 +65,7 @@ archive/issue_comments_028243.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3940",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3940#issuecomment-28243",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_028244.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3940",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3940#issuecomment-28244",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_028245.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3940",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3940#issuecomment-28245",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_028248.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3940",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3940#issuecomment-28248",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_028251.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3940",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3940#issuecomment-28251",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_028252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3940",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3940#issuecomment-28252",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_028253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3940",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3940#issuecomment-28253",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_028254.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3940",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3940#issuecomment-28254",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_028255.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3940",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3940#issuecomment-28255",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

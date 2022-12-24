@@ -3,7 +3,7 @@
 archive/issues_000438.json:
 ```json
 {
-    "body": "Assignee: was\n\nInstead of some version number I get\n\n[mabshoff`@`m940 sage-2.8.1]$ cython -v\nCython (http://cython.org) is a compiler for code written in the\nCython language.  Cython is based on Pyrex by Greg Ewing.\n\nUsage: cython [options] sourcefile.pyx ...\n\nOptions:\n  -v, --version                  Display version number of cython compiler\n  -l, --create-listing           Write error messages to a listing file\n  -I, --include-dir <directory>  Search for include files in named directory\n                                 (multiply include directories are allowed).\n  -o, --output-file <filename>   Specify name of generated C file\n  -p, --embed-positions          If specified, the positions in Cython files of each\n                                 function definition is embedded in its docstring.\n  -z, --pre-import <module>      If specified, assume undeclared names in this\nmodule. Emulates the behavior of putting\n                                 \"from <module> import *\" at the top of the file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/438\n\n",
+    "body": "Assignee: @williamstein\n\nInstead of some version number I get\n\n[mabshoff`@`m940 sage-2.8.1]$ cython -v\nCython (http://cython.org) is a compiler for code written in the\nCython language.  Cython is based on Pyrex by Greg Ewing.\n\nUsage: cython [options] sourcefile.pyx ...\n\nOptions:\n  -v, --version                  Display version number of cython compiler\n  -l, --create-listing           Write error messages to a listing file\n  -I, --include-dir <directory>  Search for include files in named directory\n                                 (multiply include directories are allowed).\n  -o, --output-file <filename>   Specify name of generated C file\n  -p, --embed-positions          If specified, the positions in Cython files of each\n                                 function definition is embedded in its docstring.\n  -z, --pre-import <module>      If specified, assume undeclared names in this\nmodule. Emulates the behavior of putting\n                                 \"from <module> import *\" at the top of the file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/438\n\n",
     "created_at": "2007-08-18T17:52:27Z",
     "labels": [
         "packages: standard",
@@ -17,7 +17,7 @@ archive/issues_000438.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Instead of some version number I get
 
@@ -94,7 +94,7 @@ Michael
 archive/issue_comments_002194.json:
 ```json
 {
-    "body": "Changing assignee from was to robertwb.",
+    "body": "Changing assignee from @williamstein to @robertwb.",
     "created_at": "2008-02-16T01:32:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/438",
     "type": "issue_comment",
@@ -103,7 +103,7 @@ archive/issue_comments_002194.json:
 }
 ```
 
-Changing assignee from was to robertwb.
+Changing assignee from @williamstein to @robertwb.
 
 
 
@@ -117,7 +117,7 @@ archive/issue_comments_002195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/438#issuecomment-2195",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_004368.json:
     "title": "Create a function which gets an attributed from an object and calls it with specified arguments and keywords",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4368",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: cwitty
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4368
 archive/issue_comments_032096.json:
 ```json
 {
-    "body": "Changing assignee from cwitty to mhansen.",
+    "body": "Changing assignee from cwitty to @mwhansen.",
     "created_at": "2008-10-25T21:34:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4368",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4368#issuecomment-32096",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from cwitty to mhansen.
+Changing assignee from cwitty to @mwhansen.
 
 
 
@@ -65,7 +65,7 @@ archive/issue_comments_032097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4368",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4368#issuecomment-32097",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_032099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4368",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4368#issuecomment-32099",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_032100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4368",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4368#issuecomment-32100",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -154,16 +154,16 @@ Positive review, pending the (presumably just a typo) fix from mvngu above. BTW,
 archive/issue_comments_032101.json:
 ```json
 {
-    "body": "Attachment [trac_4368.patch](tarball://root/attachments/some-uuid/ticket4368/trac_4368.patch) by mhansen created at 2008-10-30 22:32:43",
+    "body": "Attachment [trac_4368.patch](tarball://root/attachments/some-uuid/ticket4368/trac_4368.patch) by @mwhansen created at 2008-10-30 22:32:43",
     "created_at": "2008-10-30T22:32:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4368",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4368#issuecomment-32101",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4368.patch](tarball://root/attachments/some-uuid/ticket4368/trac_4368.patch) by mhansen created at 2008-10-30 22:32:43
+Attachment [trac_4368.patch](tarball://root/attachments/some-uuid/ticket4368/trac_4368.patch) by @mwhansen created at 2008-10-30 22:32:43
 
 
 
@@ -177,7 +177,7 @@ archive/issue_comments_032102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4368",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4368#issuecomment-32102",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

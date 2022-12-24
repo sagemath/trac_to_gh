@@ -3,7 +3,7 @@
 archive/issues_008509.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  jhpalmieri\n\n## Hardware\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs.\n* 2 GB RAM\n \n == Software ==\n* Solaris 10 03/2005 (the first release)\n* Sage 4.3.4.alpha1 (The first Sage release to build and pass all doctests on Solaris)\n\n## The problem\n\nDespite the fact that Sage builds and pass all doctests (including the long ones), installing optional packages is problematic, as it would appear something is calling 'grep' with the '-o' option which is not POSIX compatible\n\nhttp://www.opengroup.org/onlinepubs/9699919799/utilities/grep.html\n\nThis causes the problems below:\n\n\n```\nsage: for X in optional_packages()[1]:  install_package(X)\n....: \nForce installing ace-5.0.p0\nCalling sage-spkg on ace-5.0.p0\nWarning: Attempted to overwrite SAGE_ROOT environment variable\nace-5.0.p0\nMachine:\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\nDeleting directories from past builds of previous/current versions of ace-5.0.p0\n/export/home/drkirkby/sage-4.3.4.alpha1/local/bin/sage-spkg: file ace-5.0.p0 does not exist\nAttempting to download it.\ngrep: illegal option -- o\nUsage: grep -hblcnsviw pattern file . . .\nSearching for latest version of ace-5.0.p0\nCould not find a version for ace-5.0.p0.\n\nForce installing biopython-1.53.p0\nCalling sage-spkg on biopython-1.53.p0\nWarning: Attempted to overwrite SAGE_ROOT environment variable\nbiopython-1.53.p0\nMachine:\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\nDeleting directories from past builds of previous/current versions of biopython-1.53.p0\n/export/home/drkirkby/sage-4.3.4.alpha1/local/bin/sage-spkg: file biopython-1.53.p0 does not exist\nAttempting to download it.\ngrep: illegal option -- o\nUsage: grep -hblcnsviw pattern file . . .\nSearching for latest version of biopython-1.53.p0\nCould not find a version for biopython-1.53.p0.\n```\n\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8509\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jhpalmieri\n\n## Hardware\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs.\n* 2 GB RAM\n \n == Software ==\n* Solaris 10 03/2005 (the first release)\n* Sage 4.3.4.alpha1 (The first Sage release to build and pass all doctests on Solaris)\n\n## The problem\n\nDespite the fact that Sage builds and pass all doctests (including the long ones), installing optional packages is problematic, as it would appear something is calling 'grep' with the '-o' option which is not POSIX compatible\n\nhttp://www.opengroup.org/onlinepubs/9699919799/utilities/grep.html\n\nThis causes the problems below:\n\n\n```\nsage: for X in optional_packages()[1]:  install_package(X)\n....: \nForce installing ace-5.0.p0\nCalling sage-spkg on ace-5.0.p0\nWarning: Attempted to overwrite SAGE_ROOT environment variable\nace-5.0.p0\nMachine:\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\nDeleting directories from past builds of previous/current versions of ace-5.0.p0\n/export/home/drkirkby/sage-4.3.4.alpha1/local/bin/sage-spkg: file ace-5.0.p0 does not exist\nAttempting to download it.\ngrep: illegal option -- o\nUsage: grep -hblcnsviw pattern file . . .\nSearching for latest version of ace-5.0.p0\nCould not find a version for ace-5.0.p0.\n\nForce installing biopython-1.53.p0\nCalling sage-spkg on biopython-1.53.p0\nWarning: Attempted to overwrite SAGE_ROOT environment variable\nbiopython-1.53.p0\nMachine:\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\nDeleting directories from past builds of previous/current versions of biopython-1.53.p0\n/export/home/drkirkby/sage-4.3.4.alpha1/local/bin/sage-spkg: file biopython-1.53.p0 does not exist\nAttempting to download it.\ngrep: illegal option -- o\nUsage: grep -hblcnsviw pattern file . . .\nSearching for latest version of biopython-1.53.p0\nCould not find a version for biopython-1.53.p0.\n```\n\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8509\n\n",
     "created_at": "2010-03-12T17:55:33Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_008509.json:
 ```
 Assignee: drkirkby
 
-CC:  jhpalmieri
+CC:  @jhpalmieri
 
 ## Hardware
 * Sun Blade 1000
@@ -148,7 +148,7 @@ archive/issue_comments_076832.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8509#issuecomment-76832",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_076835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8509#issuecomment-76835",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_076836.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8509#issuecomment-76836",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_076837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8509#issuecomment-76837",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_076838.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8509#issuecomment-76838",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -313,7 +313,7 @@ archive/issue_comments_076840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8509#issuecomment-76840",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -373,7 +373,7 @@ archive/issue_comments_076843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8509#issuecomment-76843",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -398,7 +398,7 @@ archive/issue_comments_076844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8509#issuecomment-76844",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -416,7 +416,7 @@ archive/issue_comments_076845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8509#issuecomment-76845",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -434,7 +434,7 @@ archive/issue_comments_076846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8509#issuecomment-76846",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_006210.json:
     "title": "docs for the property option of graphs() should include a pointer to the docs for the augment parameter",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6210",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: tba
@@ -75,7 +75,7 @@ archive/issue_comments_049616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6210",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6210#issuecomment-49616",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_049617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6210",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6210#issuecomment-49617",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_049618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6210",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6210#issuecomment-49618",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_049619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6210",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6210#issuecomment-49619",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_049620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6210",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6210#issuecomment-49620",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_049621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6210",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6210#issuecomment-49621",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_049622.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6210",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6210#issuecomment-49622",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

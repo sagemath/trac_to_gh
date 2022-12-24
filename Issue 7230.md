@@ -3,7 +3,7 @@
 archive/issues_007230.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  wstein mhansen leif\n\nDistribute is a fork of setuptools that aims to be open and actively maintained. It's also run by a handful of core Python devs.\n\nThere's a new spkg file, as well as updates to `spkg/install` and `spkg/standard/deps`. All three are sitting in this directory:\n\n  http://sage.math.washington.edu/home/craigcitro/distribute-spkg/\n\nTo test, delete the setuptools spkg, drop in the new `install` and `deps`, and then build sage. (Or, alternately, build the two spkgs that currently depend on setuptools -- Jinja and SQLAlchemy.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7230\n\n",
+    "body": "Assignee: tbd\n\nCC:  wstein @mwhansen @nexttime\n\nDistribute is a fork of setuptools that aims to be open and actively maintained. It's also run by a handful of core Python devs.\n\nThere's a new spkg file, as well as updates to `spkg/install` and `spkg/standard/deps`. All three are sitting in this directory:\n\n  http://sage.math.washington.edu/home/craigcitro/distribute-spkg/\n\nTo test, delete the setuptools spkg, drop in the new `install` and `deps`, and then build sage. (Or, alternately, build the two spkgs that currently depend on setuptools -- Jinja and SQLAlchemy.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7230\n\n",
     "created_at": "2009-10-16T00:05:56Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_007230.json:
     "title": "[with spkg, needs review] Switch from setuptools to Distribute",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7230",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 Assignee: tbd
 
-CC:  wstein mhansen leif
+CC:  wstein @mwhansen @nexttime
 
 Distribute is a fork of setuptools that aims to be open and actively maintained. It's also run by a handful of core Python devs.
 
@@ -45,7 +45,7 @@ archive/issue_comments_059971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7230",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7230#issuecomment-59971",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_059972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7230",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7230#issuecomment-59972",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_059973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7230",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7230#issuecomment-59973",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_059974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7230",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7230#issuecomment-59974",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_059975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7230",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7230#issuecomment-59975",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_059976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7230",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7230#issuecomment-59976",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_059977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7230",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7230#issuecomment-59977",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_059978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7230",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7230#issuecomment-59978",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_059979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7230",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7230#issuecomment-59979",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

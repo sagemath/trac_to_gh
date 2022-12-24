@@ -14,7 +14,7 @@ archive/issues_000998.json:
     "title": "segmentation fault doctesting crypto/mq/sr.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/998",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -179,7 +179,7 @@ archive/issue_comments_006074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/998#issuecomment-6074",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_006080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/998#issuecomment-6080",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

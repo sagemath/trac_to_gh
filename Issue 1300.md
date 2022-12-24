@@ -3,7 +3,7 @@
 archive/issues_001300.json:
 ```json
 {
-    "body": "Assignee: Martin Albrecht\n\nCC:  malb\n\nKeywords: Singular matrix\n\nWhen Singular prints a matrix M then it tries to keep the row-column structure of M visible on screen. If this is impossible (for large polynomials), the entries are abbreviated:\n\n```\n> ring r = 7,(x(1..2)),dp;\n> matrix M[1][3] = x(1)^7*x(2)-x(1)*x(2)^7, x(1)^12-2*x(1)^9*x(2)^3-x(1)^6*x(2)^6+2*x(1)^3*x(2)^9+x(2)^12, x(1)^18+2*x(1)^15*x(2)^3+3*x(1)^12*x(2)^6+3*x(1)^6*x(2)^12-2*x(1)^3*x(2)^15+x(2)^18;\n> print(M);\nx(1)^7*x(2)-x(1)*x(2)^7,M[1,2],M[1,3]\n```\n\n\nThe Singular developers have good reasons for it and wouldn't like to change it.\n\nUnfortunate consequence for Sage: Creating this matrix via the Singular interface, it is assigned an automatically generated name; printing it, Singular uses that name, that the user probably is not aware of:\n\n```\nsage: R=singular.ring(7,'(x(1..2))','dp')\nsage: M=singular.matrix(1,3,'x(1)^7*x(2)-x(1)*x(2)^7,x(1)^12-2*x(1)^9*x(2)^3-x(1)^6*x(2)^6+2*x(1)^3*x(2)^9+x(2)^12,x(1)^18+2*x(1)^15*x(2)^3+3*x(1)^12*x(2)^6+3*x(1)^6*x(2)^12-2*x(1)^3*x(2)^15+x(2)^18')\nsage: M\nx(1)^7*x(2)-x(1)*x(2)^7,sage1[1,2],sage1[1,3]\nsage: print M\nx(1)^7*x(2)-x(1)*x(2)^7,sage1[1,2],sage1[1,3]\n```\n\n\nI believe it is confusing for the user to be confronted with variable names that he/she has not defined him/herself. Therefore i think the printing of Singular-matrices in Sage should be customized.\n\n**Remarks**\n* Singular's reason for abbreviation is obvious: When printing a matrix, its shape should be apparent. This problem should also be addressed in some way by a new version of `SingularElement.__str__`.\n* One **solution mimicking Singular's behaviour** is to replace the automatically generated name (`sage1` in the example above) by the user-defined name (`M` in the example above). In that way, one has an output that preserves the shape of the matrix but reduces confusion of the user by cryptic variable names.\n* Singular provides several other ways to show a matrix; perhaps you'll find one of them nicer. \n\n-----\nIn the following, i show several ways to continue the Singular-example above, which may provide a nicer printing.\n\n```\n> LIB \"inout.lib\";\n// ** loaded /usr/local/lib/Singular/3-0-3/LIB/inout.lib (1.28,2006/07/20)\n> pmat(M);\nx(1)^7*x(2)-x(1)*x(2)^7,\nx(1)^12-2*x(1)^9*x(2)^3-x(1)^6*x(2)^6+2*x(1)^3*x(2)^9+x(2)^12,\nx(1)^18+2*x(1)^15*x(2)^3+3*x(1)^12*x(2)^6+3*x(1)^6*x(2)^12-2*x(1)^3*x(2)^15+x(2)^18\n> pmat(M,14);\nx(1)^7*x(2)-x( x(1)^12-2*x(1) x(1)^18+2*x(1)\n```\n\nThe first shows everything without abbreviation, even though this destroys the visible matrix shape. The latter shows at most the leading 15 letters of each column, which is another form of abbreviation. However, for the last two polynomials, it is impossible to guess whether they are abbreviated or not!\n\n**I think this is a solution that could almost be adopted by Sage.** However, IMHO, the user __must__ be alerted about the presence of an abbreviation, e.g., by appending '`...`' if there has been an abbreviation. So, the following output would be clearer:\n\n```\nx(1)^7*x(2)-x(... x(1)^12-2*x(1)... x(1)^18+2*x(1)...\n```\n\n-----\n\n```\n> M;\nM[1,1]=x(1)^7*x(2)-x(1)*x(2)^7\nM[1,2]=x(1)^12-2*x(1)^9*x(2)^3-x(1)^6*x(2)^6+2*x(1)^3*x(2)^9+x(2)^12\nM[1,3]=x(1)^18+2*x(1)^15*x(2)^3+3*x(1)^12*x(2)^6+3*x(1)^6*x(2)^12-2*x(1)^3*x(2)^15+x(2)^18\n```\n\nThis is not good, since this doesn't show the shape of the matrix and, called via the interface, would again show the automatically generated variable name.\n-----\n\n```\n> print(M,\"%l\");\nmatrix(ideal(x(1)^7*x(2)-x(1)*x(2)^7,x(1)^12-2*x(1)^9*x(2)^3-x(1)^6*x(2)^6+2*x(1)^3*x(2)^9+x(2)^12,x(1)^18+2*x(1)^15*x(2)^3+3*x(1)^12*x(2)^6+3*x(1)^6*x(2)^12-2*x(1)^3*x(2)^15+x(2)^18),1,3)\n```\n\nThis shows a definition of the matrix, but the shape is invisible\n\nSorry for such long description of a minor problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1300\n\n",
+    "body": "Assignee: Martin Albrecht\n\nCC:  @malb\n\nKeywords: Singular matrix\n\nWhen Singular prints a matrix M then it tries to keep the row-column structure of M visible on screen. If this is impossible (for large polynomials), the entries are abbreviated:\n\n```\n> ring r = 7,(x(1..2)),dp;\n> matrix M[1][3] = x(1)^7*x(2)-x(1)*x(2)^7, x(1)^12-2*x(1)^9*x(2)^3-x(1)^6*x(2)^6+2*x(1)^3*x(2)^9+x(2)^12, x(1)^18+2*x(1)^15*x(2)^3+3*x(1)^12*x(2)^6+3*x(1)^6*x(2)^12-2*x(1)^3*x(2)^15+x(2)^18;\n> print(M);\nx(1)^7*x(2)-x(1)*x(2)^7,M[1,2],M[1,3]\n```\n\n\nThe Singular developers have good reasons for it and wouldn't like to change it.\n\nUnfortunate consequence for Sage: Creating this matrix via the Singular interface, it is assigned an automatically generated name; printing it, Singular uses that name, that the user probably is not aware of:\n\n```\nsage: R=singular.ring(7,'(x(1..2))','dp')\nsage: M=singular.matrix(1,3,'x(1)^7*x(2)-x(1)*x(2)^7,x(1)^12-2*x(1)^9*x(2)^3-x(1)^6*x(2)^6+2*x(1)^3*x(2)^9+x(2)^12,x(1)^18+2*x(1)^15*x(2)^3+3*x(1)^12*x(2)^6+3*x(1)^6*x(2)^12-2*x(1)^3*x(2)^15+x(2)^18')\nsage: M\nx(1)^7*x(2)-x(1)*x(2)^7,sage1[1,2],sage1[1,3]\nsage: print M\nx(1)^7*x(2)-x(1)*x(2)^7,sage1[1,2],sage1[1,3]\n```\n\n\nI believe it is confusing for the user to be confronted with variable names that he/she has not defined him/herself. Therefore i think the printing of Singular-matrices in Sage should be customized.\n\n**Remarks**\n* Singular's reason for abbreviation is obvious: When printing a matrix, its shape should be apparent. This problem should also be addressed in some way by a new version of `SingularElement.__str__`.\n* One **solution mimicking Singular's behaviour** is to replace the automatically generated name (`sage1` in the example above) by the user-defined name (`M` in the example above). In that way, one has an output that preserves the shape of the matrix but reduces confusion of the user by cryptic variable names.\n* Singular provides several other ways to show a matrix; perhaps you'll find one of them nicer. \n\n-----\nIn the following, i show several ways to continue the Singular-example above, which may provide a nicer printing.\n\n```\n> LIB \"inout.lib\";\n// ** loaded /usr/local/lib/Singular/3-0-3/LIB/inout.lib (1.28,2006/07/20)\n> pmat(M);\nx(1)^7*x(2)-x(1)*x(2)^7,\nx(1)^12-2*x(1)^9*x(2)^3-x(1)^6*x(2)^6+2*x(1)^3*x(2)^9+x(2)^12,\nx(1)^18+2*x(1)^15*x(2)^3+3*x(1)^12*x(2)^6+3*x(1)^6*x(2)^12-2*x(1)^3*x(2)^15+x(2)^18\n> pmat(M,14);\nx(1)^7*x(2)-x( x(1)^12-2*x(1) x(1)^18+2*x(1)\n```\n\nThe first shows everything without abbreviation, even though this destroys the visible matrix shape. The latter shows at most the leading 15 letters of each column, which is another form of abbreviation. However, for the last two polynomials, it is impossible to guess whether they are abbreviated or not!\n\n**I think this is a solution that could almost be adopted by Sage.** However, IMHO, the user __must__ be alerted about the presence of an abbreviation, e.g., by appending '`...`' if there has been an abbreviation. So, the following output would be clearer:\n\n```\nx(1)^7*x(2)-x(... x(1)^12-2*x(1)... x(1)^18+2*x(1)...\n```\n\n-----\n\n```\n> M;\nM[1,1]=x(1)^7*x(2)-x(1)*x(2)^7\nM[1,2]=x(1)^12-2*x(1)^9*x(2)^3-x(1)^6*x(2)^6+2*x(1)^3*x(2)^9+x(2)^12\nM[1,3]=x(1)^18+2*x(1)^15*x(2)^3+3*x(1)^12*x(2)^6+3*x(1)^6*x(2)^12-2*x(1)^3*x(2)^15+x(2)^18\n```\n\nThis is not good, since this doesn't show the shape of the matrix and, called via the interface, would again show the automatically generated variable name.\n-----\n\n```\n> print(M,\"%l\");\nmatrix(ideal(x(1)^7*x(2)-x(1)*x(2)^7,x(1)^12-2*x(1)^9*x(2)^3-x(1)^6*x(2)^6+2*x(1)^3*x(2)^9+x(2)^12,x(1)^18+2*x(1)^15*x(2)^3+3*x(1)^12*x(2)^6+3*x(1)^6*x(2)^12-2*x(1)^3*x(2)^15+x(2)^18),1,3)\n```\n\nThis shows a definition of the matrix, but the shape is invisible\n\nSorry for such long description of a minor problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1300\n\n",
     "created_at": "2007-11-28T16:43:37Z",
     "labels": [
         "interfaces",
@@ -14,12 +14,12 @@ archive/issues_001300.json:
     "title": "Customize the output of Singular matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1300",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 Assignee: Martin Albrecht
 
-CC:  malb
+CC:  @malb
 
 Keywords: Singular matrix
 
@@ -108,7 +108,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1300
 archive/issue_comments_008161.json:
 ```json
 {
-    "body": "Changing assignee from Martin Albrecht to malb.",
+    "body": "Changing assignee from Martin Albrecht to @malb.",
     "created_at": "2007-11-28T16:46:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1300",
     "type": "issue_comment",
@@ -117,7 +117,7 @@ archive/issue_comments_008161.json:
 }
 ```
 
-Changing assignee from Martin Albrecht to malb.
+Changing assignee from Martin Albrecht to @malb.
 
 
 
@@ -167,7 +167,7 @@ archive/issue_comments_008164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1300#issuecomment-8164",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_008165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1300#issuecomment-8165",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_008166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1300#issuecomment-8166",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -261,16 +261,16 @@ is now the standard behaviour.
 archive/issue_comments_008167.json:
 ```json
 {
-    "body": "Attachment [SingularMatrix.patch](tarball://root/attachments/some-uuid/ticket1300/SingularMatrix.patch) by SimonKing created at 2008-08-14 11:13:19\n\nTry to avoid autogenerated names when printing pexpect objects",
+    "body": "Attachment [SingularMatrix.patch](tarball://root/attachments/some-uuid/ticket1300/SingularMatrix.patch) by @simon-king-jena created at 2008-08-14 11:13:19\n\nTry to avoid autogenerated names when printing pexpect objects",
     "created_at": "2008-08-14T11:13:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1300#issuecomment-8167",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [SingularMatrix.patch](tarball://root/attachments/some-uuid/ticket1300/SingularMatrix.patch) by SimonKing created at 2008-08-14 11:13:19
+Attachment [SingularMatrix.patch](tarball://root/attachments/some-uuid/ticket1300/SingularMatrix.patch) by @simon-king-jena created at 2008-08-14 11:13:19
 
 Try to avoid autogenerated names when printing pexpect objects
 
@@ -286,7 +286,7 @@ archive/issue_comments_008168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1300#issuecomment-8168",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -326,7 +326,7 @@ archive/issue_comments_008169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1300#issuecomment-8169",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -339,16 +339,16 @@ fixes issues found in review
 archive/issue_comments_008170.json:
 ```json
 {
-    "body": "Attachment [trac_1300_fixup.patch](tarball://root/attachments/some-uuid/ticket1300/trac_1300_fixup.patch) by malb created at 2008-08-18 11:33:24\n\n**Review**\n* no doctest was added to demonstrate the new behavior (added in attached patch)\n* `expect.py` is not the right place for Singular specific interface issue, thus it should be moved code to `singular.py` (done in attached patch).\n\nI'll give Simon's patch a positive review if my patch is applied afterwards. So my patch needs a review.",
+    "body": "Attachment [trac_1300_fixup.patch](tarball://root/attachments/some-uuid/ticket1300/trac_1300_fixup.patch) by @malb created at 2008-08-18 11:33:24\n\n**Review**\n* no doctest was added to demonstrate the new behavior (added in attached patch)\n* `expect.py` is not the right place for Singular specific interface issue, thus it should be moved code to `singular.py` (done in attached patch).\n\nI'll give Simon's patch a positive review if my patch is applied afterwards. So my patch needs a review.",
     "created_at": "2008-08-18T11:33:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1300#issuecomment-8170",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_1300_fixup.patch](tarball://root/attachments/some-uuid/ticket1300/trac_1300_fixup.patch) by malb created at 2008-08-18 11:33:24
+Attachment [trac_1300_fixup.patch](tarball://root/attachments/some-uuid/ticket1300/trac_1300_fixup.patch) by @malb created at 2008-08-18 11:33:24
 
 **Review**
 * no doctest was added to demonstrate the new behavior (added in attached patch)
@@ -368,7 +368,7 @@ archive/issue_comments_008171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1300#issuecomment-8171",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -392,16 +392,16 @@ However, one new feature for the `__repr__` method (custom names) is not in the 
 archive/issue_comments_008172.json:
 ```json
 {
-    "body": "Attachment [SingularMatrixMoreTest.patch](tarball://root/attachments/some-uuid/ticket1300/SingularMatrixMoreTest.patch) by malb created at 2008-08-19 10:49:53\n\nslight layout fixups",
+    "body": "Attachment [SingularMatrixMoreTest.patch](tarball://root/attachments/some-uuid/ticket1300/SingularMatrixMoreTest.patch) by @malb created at 2008-08-19 10:49:53\n\nslight layout fixups",
     "created_at": "2008-08-19T10:49:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1300#issuecomment-8172",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [SingularMatrixMoreTest.patch](tarball://root/attachments/some-uuid/ticket1300/SingularMatrixMoreTest.patch) by malb created at 2008-08-19 10:49:53
+Attachment [SingularMatrixMoreTest.patch](tarball://root/attachments/some-uuid/ticket1300/SingularMatrixMoreTest.patch) by @malb created at 2008-08-19 10:49:53
 
 slight layout fixups
 
@@ -417,7 +417,7 @@ archive/issue_comments_008173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1300#issuecomment-8173",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

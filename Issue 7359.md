@@ -3,7 +3,7 @@
 archive/issues_007359.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nA graph is said to be k-degenerated if it can be totally decomposed by successively removing vertices of degree <= k.\n\nThere should be in Sage a function answering if a graph is k-degenerated, and in this case giving the order in which the vertices should be deleted.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7359\n\n",
+    "body": "Assignee: @rlmill\n\nA graph is said to be k-degenerated if it can be totally decomposed by successively removing vertices of degree <= k.\n\nThere should be in Sage a function answering if a graph is k-degenerated, and in this case giving the order in which the vertices should be deleted.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7359\n\n",
     "created_at": "2009-10-31T08:53:48Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007359.json:
     "title": "Methods for degenerated graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7359",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 A graph is said to be k-degenerated if it can be totally decomposed by successively removing vertices of degree <= k.
 
@@ -39,7 +39,7 @@ archive/issue_comments_061673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7359#issuecomment-61673",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_061674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7359#issuecomment-61674",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_061675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7359#issuecomment-61675",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_004889.json:
 ```json
 {
-    "body": "Assignee: was\n\nlist(M) and M.list() returning different lists is inconsistent. As discussed at http://groups.google.com/group/sage-support/browse_thread/thread/a7d8b439df769e7 we should have  M.entries() which replaces M.list() and deprecate the latter. \n\nThe behavior of list(M) will remain the same, and consistency with M[i]. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4889\n\n",
+    "body": "Assignee: @williamstein\n\nlist(M) and M.list() returning different lists is inconsistent. As discussed at http://groups.google.com/group/sage-support/browse_thread/thread/a7d8b439df769e7 we should have  M.entries() which replaces M.list() and deprecate the latter. \n\nThe behavior of list(M) will remain the same, and consistency with M[i]. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4889\n\n",
     "created_at": "2008-12-30T01:01:47Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_004889.json:
     "title": "deprecate matrix.list()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4889",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 list(M) and M.list() returning different lists is inconsistent. As discussed at http://groups.google.com/group/sage-support/browse_thread/thread/a7d8b439df769e7 we should have  M.entries() which replaces M.list() and deprecate the latter. 
 
@@ -39,7 +39,7 @@ archive/issue_comments_037054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4889#issuecomment-37054",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_037055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4889#issuecomment-37055",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_037056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4889#issuecomment-37056",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_037057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4889#issuecomment-37057",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_037058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4889#issuecomment-37058",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_037059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4889#issuecomment-37059",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -152,16 +152,16 @@ Though I just spent a substantial amount of time on this ticket, I'm *seriously*
 archive/issue_comments_037060.json:
 ```json
 {
-    "body": "Attachment [trac_4889-part1.patch](tarball://root/attachments/some-uuid/ticket4889/trac_4889-part1.patch) by was created at 2010-01-18 00:48:36\n\npart 1, which does what is needed in the matrix directory; another part will mop up.",
+    "body": "Attachment [trac_4889-part1.patch](tarball://root/attachments/some-uuid/ticket4889/trac_4889-part1.patch) by @williamstein created at 2010-01-18 00:48:36\n\npart 1, which does what is needed in the matrix directory; another part will mop up.",
     "created_at": "2010-01-18T00:48:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4889#issuecomment-37060",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4889-part1.patch](tarball://root/attachments/some-uuid/ticket4889/trac_4889-part1.patch) by was created at 2010-01-18 00:48:36
+Attachment [trac_4889-part1.patch](tarball://root/attachments/some-uuid/ticket4889/trac_4889-part1.patch) by @williamstein created at 2010-01-18 00:48:36
 
 part 1, which does what is needed in the matrix directory; another part will mop up.
 
@@ -177,7 +177,7 @@ archive/issue_comments_037061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4889#issuecomment-37061",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_037062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4889#issuecomment-37062",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -208,16 +208,16 @@ apply this instead of the previous
 archive/issue_comments_037063.json:
 ```json
 {
-    "body": "Attachment [trac_4889-document_instead_of_deprecate.patch](tarball://root/attachments/some-uuid/ticket4889/trac_4889-document_instead_of_deprecate.patch) by was created at 2010-01-18 01:08:24",
+    "body": "Attachment [trac_4889-document_instead_of_deprecate.patch](tarball://root/attachments/some-uuid/ticket4889/trac_4889-document_instead_of_deprecate.patch) by @williamstein created at 2010-01-18 01:08:24",
     "created_at": "2010-01-18T01:08:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4889#issuecomment-37063",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4889-document_instead_of_deprecate.patch](tarball://root/attachments/some-uuid/ticket4889/trac_4889-document_instead_of_deprecate.patch) by was created at 2010-01-18 01:08:24
+Attachment [trac_4889-document_instead_of_deprecate.patch](tarball://root/attachments/some-uuid/ticket4889/trac_4889-document_instead_of_deprecate.patch) by @williamstein created at 2010-01-18 01:08:24
 
 
 
@@ -231,7 +231,7 @@ archive/issue_comments_037064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4889#issuecomment-37064",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_037065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4889#issuecomment-37065",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_037066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4889#issuecomment-37066",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_037067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4889#issuecomment-37067",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -303,7 +303,7 @@ archive/issue_comments_037068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4889#issuecomment-37068",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -321,7 +321,7 @@ archive/issue_comments_037069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4889#issuecomment-37069",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -375,7 +375,7 @@ archive/issue_comments_037072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4889#issuecomment-37072",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -393,7 +393,7 @@ archive/issue_comments_037073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4889#issuecomment-37073",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

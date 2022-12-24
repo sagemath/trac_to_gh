@@ -3,7 +3,7 @@
 archive/issues_004273.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jason\n\nKeywords: jordan form, matrix\n\nGetting the change of basis matrix for Jordan forms fails if there are multiple blocks with the same eigenvalue, e.g.:\n\n```\nm = matrix(QQ,[[0,1,0], [0,0,0], [0,0,0]])\nm.jordan_form(base_ring=QQ, transformation=True) \n```\n\ngives \n\n```\nValueError: cannot compute the basis of the Jordan block of size 2 with eigenvalue 0\n```\n\nThis was reported on sage-support by Rob Beezer, subject line is: \"Transformation to Jordan form for tame 6x6 integer matrix\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/4273\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nKeywords: jordan form, matrix\n\nGetting the change of basis matrix for Jordan forms fails if there are multiple blocks with the same eigenvalue, e.g.:\n\n```\nm = matrix(QQ,[[0,1,0], [0,0,0], [0,0,0]])\nm.jordan_form(base_ring=QQ, transformation=True) \n```\n\ngives \n\n```\nValueError: cannot compute the basis of the Jordan block of size 2 with eigenvalue 0\n```\n\nThis was reported on sage-support by Rob Beezer, subject line is: \"Transformation to Jordan form for tame 6x6 integer matrix\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/4273\n\n",
     "created_at": "2008-10-13T11:59:45Z",
     "labels": [
         "linear algebra",
@@ -17,9 +17,9 @@ archive/issues_004273.json:
     "user": "mhampton"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jason
+CC:  @jasongrout
 
 Keywords: jordan form, matrix
 
@@ -49,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4273
 archive/issue_comments_031195.json:
 ```json
 {
-    "body": "Changing assignee from was to mhampton.",
+    "body": "Changing assignee from @williamstein to mhampton.",
     "created_at": "2008-10-15T03:36:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4273",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_031195.json:
 }
 ```
 
-Changing assignee from was to mhampton.
+Changing assignee from @williamstein to mhampton.
 
 
 
@@ -67,16 +67,16 @@ Changing assignee from was to mhampton.
 archive/issue_comments_031196.json:
 ```json
 {
-    "body": "Attachment [trac-4273-jordan_form.patch](tarball://root/attachments/some-uuid/ticket4273/trac-4273-jordan_form.patch) by jason created at 2008-11-18 04:31:34",
+    "body": "Attachment [trac-4273-jordan_form.patch](tarball://root/attachments/some-uuid/ticket4273/trac-4273-jordan_form.patch) by @jasongrout created at 2008-11-18 04:31:34",
     "created_at": "2008-11-18T04:31:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4273",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4273#issuecomment-31196",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-4273-jordan_form.patch](tarball://root/attachments/some-uuid/ticket4273/trac-4273-jordan_form.patch) by jason created at 2008-11-18 04:31:34
+Attachment [trac-4273-jordan_form.patch](tarball://root/attachments/some-uuid/ticket4273/trac-4273-jordan_form.patch) by @jasongrout created at 2008-11-18 04:31:34
 
 
 
@@ -90,7 +90,7 @@ archive/issue_comments_031197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4273",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4273#issuecomment-31197",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -103,16 +103,16 @@ Tests pass in matrix2.pyx.
 archive/issue_comments_031198.json:
 ```json
 {
-    "body": "Changing assignee from mhampton to jason.",
+    "body": "Changing assignee from mhampton to @jasongrout.",
     "created_at": "2008-11-18T04:32:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4273",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4273#issuecomment-31198",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from mhampton to jason.
+Changing assignee from mhampton to @jasongrout.
 
 
 
@@ -126,7 +126,7 @@ archive/issue_comments_031199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4273",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4273#issuecomment-31199",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

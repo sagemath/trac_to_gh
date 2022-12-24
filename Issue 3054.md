@@ -3,7 +3,7 @@
 archive/issues_003054.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThis means that changing the position of nodes in the copy will affect the original.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3054\n\n",
+    "body": "Assignee: @rlmill\n\nThis means that changing the position of nodes in the copy will affect the original.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3054\n\n",
     "created_at": "2008-04-29T20:40:10Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_003054.json:
     "title": "copying a graph doesn't copy _pos or _boundary",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3054",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 This means that changing the position of nodes in the copy will affect the original.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3054
 archive/issue_comments_021085.json:
 ```json
 {
-    "body": "Attachment [trac-3054-graph-copy.patch](tarball://root/attachments/some-uuid/ticket3054/trac-3054-graph-copy.patch) by jason created at 2008-04-29 21:09:03\n\nWith #3054 and #3055 applied, doctests pass in the graphs/ directory.",
+    "body": "Attachment [trac-3054-graph-copy.patch](tarball://root/attachments/some-uuid/ticket3054/trac-3054-graph-copy.patch) by @jasongrout created at 2008-04-29 21:09:03\n\nWith #3054 and #3055 applied, doctests pass in the graphs/ directory.",
     "created_at": "2008-04-29T21:09:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3054#issuecomment-21085",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-3054-graph-copy.patch](tarball://root/attachments/some-uuid/ticket3054/trac-3054-graph-copy.patch) by jason created at 2008-04-29 21:09:03
+Attachment [trac-3054-graph-copy.patch](tarball://root/attachments/some-uuid/ticket3054/trac-3054-graph-copy.patch) by @jasongrout created at 2008-04-29 21:09:03
 
 With #3054 and #3055 applied, doctests pass in the graphs/ directory.
 
@@ -57,7 +57,7 @@ archive/issue_comments_021086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3054#issuecomment-21086",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

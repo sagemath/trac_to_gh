@@ -14,7 +14,7 @@ archive/issues_008767.json:
     "title": "libpng -- sage-4.4 fails to build on itanium with GCC-4.5.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8767",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: GeorgSWeber
@@ -101,7 +101,7 @@ archive/issue_comments_080230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8767#issuecomment-80230",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_080231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8767#issuecomment-80231",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_080232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8767#issuecomment-80232",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_080233.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8767#issuecomment-80233",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_080234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8767#issuecomment-80234",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_080235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8767#issuecomment-80235",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

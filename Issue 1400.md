@@ -3,7 +3,7 @@
 archive/issues_001400.json:
 ```json
 {
-    "body": "Assignee: was\n\nSAGE can compute the class group of a quadratic field, but it has issues with computing the order of elements within that class group:\n\nQF.<x>=QuadraticField(-39)\nCF=QF.class_group()\nCF(QF.ideal(1+x)).order()\n\ngives\n\nNotImplementedErrorTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/server2/sage_notebook/worksheets/ljpk/0/code/6.py\", line 6, in <module>\n    CF(QF.ideal(Integer(1)+x)).order()\n  File \"/home/sage10/\", line 1, in <module>\n    \n  File \"element.pyx\", line 1190, in sage.structure.element.MultiplicativeGroupElement.order\n  File \"element.pyx\", line 1130, in sage.structure.element.MonoidElement.multiplicative_order\nNotImplementedError\n\nIssue created by migration from https://trac.sagemath.org/ticket/1400\n\n",
+    "body": "Assignee: @williamstein\n\nSAGE can compute the class group of a quadratic field, but it has issues with computing the order of elements within that class group:\n\nQF.<x>=QuadraticField(-39)\nCF=QF.class_group()\nCF(QF.ideal(1+x)).order()\n\ngives\n\nNotImplementedErrorTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/server2/sage_notebook/worksheets/ljpk/0/code/6.py\", line 6, in <module>\n    CF(QF.ideal(Integer(1)+x)).order()\n  File \"/home/sage10/\", line 1, in <module>\n    \n  File \"element.pyx\", line 1190, in sage.structure.element.MultiplicativeGroupElement.order\n  File \"element.pyx\", line 1130, in sage.structure.element.MonoidElement.multiplicative_order\nNotImplementedError\n\nIssue created by migration from https://trac.sagemath.org/ticket/1400\n\n",
     "created_at": "2007-12-04T23:10:59Z",
     "labels": [
         "number theory",
@@ -17,7 +17,7 @@ archive/issues_001400.json:
     "user": "ljpk"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 SAGE can compute the class group of a quadratic field, but it has issues with computing the order of elements within that class group:
 
@@ -48,16 +48,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1400
 archive/issue_comments_009028.json:
 ```json
 {
-    "body": "Attachment [1400-quadratic_field_order.patch](tarball://root/attachments/some-uuid/ticket1400/1400-quadratic_field_order.patch) by AlexGhitza created at 2008-04-25 02:47:55",
+    "body": "Attachment [1400-quadratic_field_order.patch](tarball://root/attachments/some-uuid/ticket1400/1400-quadratic_field_order.patch) by @aghitza created at 2008-04-25 02:47:55",
     "created_at": "2008-04-25T02:47:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1400#issuecomment-9028",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [1400-quadratic_field_order.patch](tarball://root/attachments/some-uuid/ticket1400/1400-quadratic_field_order.patch) by AlexGhitza created at 2008-04-25 02:47:55
+Attachment [1400-quadratic_field_order.patch](tarball://root/attachments/some-uuid/ticket1400/1400-quadratic_field_order.patch) by @aghitza created at 2008-04-25 02:47:55
 
 
 
@@ -71,7 +71,7 @@ archive/issue_comments_009029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1400#issuecomment-9029",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_009030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1400#issuecomment-9030",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_009031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1400#issuecomment-9031",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

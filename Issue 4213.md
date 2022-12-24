@@ -3,7 +3,7 @@
 archive/issues_004213.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\n\n```\nsage: list(Permutations([1,2,3,4,5], 4))\n\n[ ...\n [2, 3, 1, 5],\n [2, 3, 3, 1],\n [2, 3, 3, 4],\n [2, 3, 3, 5],\n [2, 3, 4, 1],\n ...\n [3, 2, 1, 5],\n [3, 2, 2, 1],\n [3, 2, 2, 4],\n [3, 2, 2, 5],\n [3, 2, 4, 1],\n ...\n [4, 2, 1, 5],\n [4, 2, 2, 1],\n [4, 2, 2, 3],\n [4, 2, 2, 5],\n [4, 2, 3, 1],\n ...\n [5, 2, 1, 4],\n [5, 2, 2, 1],\n [5, 2, 2, 3],\n [5, 2, 2, 4],\n [5, 2, 3, 1],\n```\n\n\nOnly the buggy parts are shown.\n\nThis does not occur for lists smaller that 5 or when len(n) == k.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4213\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n```\nsage: list(Permutations([1,2,3,4,5], 4))\n\n[ ...\n [2, 3, 1, 5],\n [2, 3, 3, 1],\n [2, 3, 3, 4],\n [2, 3, 3, 5],\n [2, 3, 4, 1],\n ...\n [3, 2, 1, 5],\n [3, 2, 2, 1],\n [3, 2, 2, 4],\n [3, 2, 2, 5],\n [3, 2, 4, 1],\n ...\n [4, 2, 1, 5],\n [4, 2, 2, 1],\n [4, 2, 2, 3],\n [4, 2, 2, 5],\n [4, 2, 3, 1],\n ...\n [5, 2, 1, 4],\n [5, 2, 2, 1],\n [5, 2, 2, 3],\n [5, 2, 2, 4],\n [5, 2, 3, 1],\n```\n\n\nOnly the buggy parts are shown.\n\nThis does not occur for lists smaller that 5 or when len(n) == k.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4213\n\n",
     "created_at": "2008-09-28T21:26:17Z",
     "labels": [
         "combinatorics",
@@ -17,7 +17,7 @@ archive/issues_004213.json:
     "user": "anakha"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -67,16 +67,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4213
 archive/issue_comments_030614.json:
 ```json
 {
-    "body": "Attachment [trac_4213.patch](tarball://root/attachments/some-uuid/ticket4213/trac_4213.patch) by mhansen created at 2008-09-28 21:51:14",
+    "body": "Attachment [trac_4213.patch](tarball://root/attachments/some-uuid/ticket4213/trac_4213.patch) by @mwhansen created at 2008-09-28 21:51:14",
     "created_at": "2008-09-28T21:51:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4213",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4213#issuecomment-30614",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4213.patch](tarball://root/attachments/some-uuid/ticket4213/trac_4213.patch) by mhansen created at 2008-09-28 21:51:14
+Attachment [trac_4213.patch](tarball://root/attachments/some-uuid/ticket4213/trac_4213.patch) by @mwhansen created at 2008-09-28 21:51:14
 
 
 
@@ -90,7 +90,7 @@ archive/issue_comments_030615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4213",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4213#issuecomment-30615",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003523.json:
     "title": "[with spkg; needs review] upgrade flint to 1.0.10",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3523",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -37,7 +37,7 @@ archive/issue_comments_024825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3523#issuecomment-24825",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_024826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3523#issuecomment-24826",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_024827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3523#issuecomment-24827",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_024830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3523#issuecomment-24830",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_024831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3523#issuecomment-24831",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

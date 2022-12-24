@@ -3,7 +3,7 @@
 archive/issues_008133.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  was\n\nKeywords: dirichlet characters\n\nThe current representation of Dirichlet characters as something like `[1,zeta6,-1]` is not very helpful, especially because it is not even clear what generator we are taling about in (Z/N)*.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8133\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @williamstein\n\nKeywords: dirichlet characters\n\nThe current representation of Dirichlet characters as something like `[1,zeta6,-1]` is not very helpful, especially because it is not even clear what generator we are taling about in (Z/N)*.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8133\n\n",
     "created_at": "2010-01-31T01:33:06Z",
     "labels": [
         "modular forms",
@@ -14,12 +14,12 @@ archive/issues_008133.json:
     "title": "changing the string representation of Dirichlet charachters",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8133",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
-CC:  was
+CC:  @williamstein
 
 Keywords: dirichlet characters
 
@@ -41,7 +41,7 @@ archive/issue_comments_071513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8133#issuecomment-71513",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_071514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8133#issuecomment-71514",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_071515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8133#issuecomment-71515",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_071516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8133#issuecomment-71516",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_071517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8133#issuecomment-71517",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_071518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8133#issuecomment-71518",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_071519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8133#issuecomment-71519",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -277,16 +277,16 @@ or maybe with () around it. Or we could leave it there as values_on_gens().
 archive/issue_comments_071520.json:
 ```json
 {
-    "body": "Attachment [trac_8133.patch](tarball://root/attachments/some-uuid/ticket8133/trac_8133.patch) by wuthrich created at 2010-03-27 21:08:47\n\nexported against 4.3.4",
+    "body": "Attachment [trac_8133.patch](tarball://root/attachments/some-uuid/ticket8133/trac_8133.patch) by @categorie created at 2010-03-27 21:08:47\n\nexported against 4.3.4",
     "created_at": "2010-03-27T21:08:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8133#issuecomment-71520",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_8133.patch](tarball://root/attachments/some-uuid/ticket8133/trac_8133.patch) by wuthrich created at 2010-03-27 21:08:47
+Attachment [trac_8133.patch](tarball://root/attachments/some-uuid/ticket8133/trac_8133.patch) by @categorie created at 2010-03-27 21:08:47
 
 exported against 4.3.4
 
@@ -302,7 +302,7 @@ archive/issue_comments_071521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8133#issuecomment-71521",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -320,7 +320,7 @@ archive/issue_comments_071522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8133#issuecomment-71522",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -356,7 +356,7 @@ archive/issue_comments_071523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8133#issuecomment-71523",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -376,7 +376,7 @@ archive/issue_comments_071524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8133#issuecomment-71524",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -394,7 +394,7 @@ archive/issue_comments_071525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8133#issuecomment-71525",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -412,7 +412,7 @@ archive/issue_comments_071526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8133#issuecomment-71526",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -441,7 +441,7 @@ archive/issue_comments_071527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8133#issuecomment-71527",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -461,7 +461,7 @@ archive/issue_comments_071528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8133#issuecomment-71528",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -479,7 +479,7 @@ archive/issue_comments_071529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8133#issuecomment-71529",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -497,7 +497,7 @@ archive/issue_comments_071530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8133#issuecomment-71530",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002246.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe attached patches fix const.tex and fix numerous small issues with special.py that would lead to subtle and not so subtle bugs and mistakes. \n\nI also fixed a problem with const.tex caused by Cremona's #1946.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2246\n\n",
+    "body": "Assignee: @williamstein\n\nThe attached patches fix const.tex and fix numerous small issues with special.py that would lead to subtle and not so subtle bugs and mistakes. \n\nI also fixed a problem with const.tex caused by Cremona's #1946.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2246\n\n",
     "created_at": "2008-02-21T16:17:48Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_002246.json:
     "title": "[with patch; needs quick review] sage-2.10.2.alpha2: special.py -- fix it -- several bugs etc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2246",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The attached patches fix const.tex and fix numerous small issues with special.py that would lead to subtle and not so subtle bugs and mistakes. 
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2246
 archive/issue_comments_014891.json:
 ```json
 {
-    "body": "Attachment [doc-2246.patch](tarball://root/attachments/some-uuid/ticket2246/doc-2246.patch) by was created at 2008-02-21 16:22:46",
+    "body": "Attachment [doc-2246.patch](tarball://root/attachments/some-uuid/ticket2246/doc-2246.patch) by @williamstein created at 2008-02-21 16:22:46",
     "created_at": "2008-02-21T16:22:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2246",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2246#issuecomment-14891",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [doc-2246.patch](tarball://root/attachments/some-uuid/ticket2246/doc-2246.patch) by was created at 2008-02-21 16:22:46
+Attachment [doc-2246.patch](tarball://root/attachments/some-uuid/ticket2246/doc-2246.patch) by @williamstein created at 2008-02-21 16:22:46
 
 
 

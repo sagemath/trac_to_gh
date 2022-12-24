@@ -3,7 +3,7 @@
 archive/issues_006703.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  dimpase\n\nA well known issue and one I think may be fixable without a huge effort. The Sun compilers give better performance on Solaris than GNU.\n\nNote, Sun Studio which contains the latest Solaris compilers is now free from Sun - it used to cost a lot of money. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6703\n\n",
+    "body": "Assignee: tbd\n\nCC:  @dimpase\n\nA well known issue and one I think may be fixable without a huge effort. The Sun compilers give better performance on Solaris than GNU.\n\nNote, Sun Studio which contains the latest Solaris compilers is now free from Sun - it used to cost a lot of money. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6703\n\n",
     "created_at": "2009-08-09T09:22:34Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_006703.json:
 ```
 Assignee: tbd
 
-CC:  dimpase
+CC:  @dimpase
 
 A well known issue and one I think may be fixable without a huge effort. The Sun compilers give better performance on Solaris than GNU.
 
@@ -43,7 +43,7 @@ archive/issue_comments_055059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6703#issuecomment-55059",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_055060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6703#issuecomment-55060",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_055061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6703#issuecomment-55061",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_055062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6703#issuecomment-55062",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_055063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6703#issuecomment-55063",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

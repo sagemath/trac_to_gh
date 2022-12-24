@@ -3,7 +3,7 @@
 archive/issues_004136.json:
 ```json
 {
-    "body": "Assignee: malb\n\nThis was reported on **[sage-support]**:\n\n```\nhi there,\n\nthis is going to be even worse than my recent bug report in terms of\nreproducing the error. I guess i'll start with describing what\nhappens, and then if someone tells me that it's a bug and not a\nfeature, then i'll try to get a minimal example.\n\nSo I've got a polynomial ring with a few dozens variables, over a\ncyclotomic field, and i've got an ideal J with hundreds of generators.\nJ contains at least y9 + y12. Then i got something like:\n\nsage: J.reduce(y9 - y12)\n2*y9   #which is fine\n\nsage: J.reduce(y13*y15)\ny13*y15 #why not\n\nsage: J.reduce(y13*y15 + y9 - y12)\ny13*y15 + y9 - y12\n\nNow what's up with that ? shouldn't it be y13*y15 + 2*y9 ? that's what\ni expect from the term 'reduction' anyway. Is this normal or is it a\nbug ? if it's a bug, could it influence the equivalence x in J iff\nJ.reduce(x) == 0 ?\n\nSo if this is a bug i'll give you more details.\n\nthanks!\nPierre\n```\n\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/138e473f31c2f2b5\n\n```\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4136\n\n",
+    "body": "Assignee: @malb\n\nThis was reported on **[sage-support]**:\n\n```\nhi there,\n\nthis is going to be even worse than my recent bug report in terms of\nreproducing the error. I guess i'll start with describing what\nhappens, and then if someone tells me that it's a bug and not a\nfeature, then i'll try to get a minimal example.\n\nSo I've got a polynomial ring with a few dozens variables, over a\ncyclotomic field, and i've got an ideal J with hundreds of generators.\nJ contains at least y9 + y12. Then i got something like:\n\nsage: J.reduce(y9 - y12)\n2*y9   #which is fine\n\nsage: J.reduce(y13*y15)\ny13*y15 #why not\n\nsage: J.reduce(y13*y15 + y9 - y12)\ny13*y15 + y9 - y12\n\nNow what's up with that ? shouldn't it be y13*y15 + 2*y9 ? that's what\ni expect from the term 'reduction' anyway. Is this normal or is it a\nbug ? if it's a bug, could it influence the equivalence x in J iff\nJ.reduce(x) == 0 ?\n\nSo if this is a bug i'll give you more details.\n\nthanks!\nPierre\n```\n\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/138e473f31c2f2b5\n\n```\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4136\n\n",
     "created_at": "2008-09-16T17:53:33Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_004136.json:
     "title": "[with patch, needs review] enable tail reduction when reducing multivariate polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4136",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 This was reported on **[sage-support]**:
 
@@ -78,7 +78,7 @@ archive/issue_comments_030028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4136",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4136#issuecomment-30028",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -140,16 +140,16 @@ Michael
 archive/issue_comments_030031.json:
 ```json
 {
-    "body": "Attachment [tail_reduce.patch](tarball://root/attachments/some-uuid/ticket4136/tail_reduce.patch) by malb created at 2008-10-20 13:20:34",
+    "body": "Attachment [tail_reduce.patch](tarball://root/attachments/some-uuid/ticket4136/tail_reduce.patch) by @malb created at 2008-10-20 13:20:34",
     "created_at": "2008-10-20T13:20:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4136",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4136#issuecomment-30031",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [tail_reduce.patch](tarball://root/attachments/some-uuid/ticket4136/tail_reduce.patch) by malb created at 2008-10-20 13:20:34
+Attachment [tail_reduce.patch](tarball://root/attachments/some-uuid/ticket4136/tail_reduce.patch) by @malb created at 2008-10-20 13:20:34
 
 
 
@@ -163,7 +163,7 @@ archive/issue_comments_030032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4136",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4136#issuecomment-30032",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006020.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nKeywords: delta q-expansion finite field\n\nThis is in sage-3.4.2:\n\n\n```\nsage: delta_qexp(K=GF(5))\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: unable to coerce <type 'sage.libs.ntl.ntl_ZZX.ntl_ZZX'> to an integer\n```\n\n\nI don't have time to investigate this right now, but it might be a similar issue as #5102.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6020\n\n",
+    "body": "Assignee: @craigcitro\n\nKeywords: delta q-expansion finite field\n\nThis is in sage-3.4.2:\n\n\n```\nsage: delta_qexp(K=GF(5))\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: unable to coerce <type 'sage.libs.ntl.ntl_ZZX.ntl_ZZX'> to an integer\n```\n\n\nI don't have time to investigate this right now, but it might be a similar issue as #5102.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6020\n\n",
     "created_at": "2009-05-11T12:08:47Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_006020.json:
     "title": "bug in delta_qexp over finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6020",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 Keywords: delta q-expansion finite field
 
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6020
 archive/issue_comments_047927.json:
 ```json
 {
-    "body": "Attachment [trac-6020.patch](tarball://root/attachments/some-uuid/ticket6020/trac-6020.patch) by craigcitro created at 2009-05-11 17:00:36",
+    "body": "Attachment [trac-6020.patch](tarball://root/attachments/some-uuid/ticket6020/trac-6020.patch) by @craigcitro created at 2009-05-11 17:00:36",
     "created_at": "2009-05-11T17:00:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6020#issuecomment-47927",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-6020.patch](tarball://root/attachments/some-uuid/ticket6020/trac-6020.patch) by craigcitro created at 2009-05-11 17:00:36
+Attachment [trac-6020.patch](tarball://root/attachments/some-uuid/ticket6020/trac-6020.patch) by @craigcitro created at 2009-05-11 17:00:36
 
 
 
@@ -69,7 +69,7 @@ archive/issue_comments_047928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6020#issuecomment-47928",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_047929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6020#issuecomment-47929",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_047930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6020#issuecomment-47930",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_047931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6020#issuecomment-47931",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_047933.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6020#issuecomment-47933",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_047935.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6020#issuecomment-47935",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -363,7 +363,7 @@ archive/issue_comments_047936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6020#issuecomment-47936",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -381,7 +381,7 @@ archive/issue_comments_047937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6020#issuecomment-47937",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_047938.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6020#issuecomment-47938",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_006524.json:
     "title": "Ratio of two symbolic expressions involving derivative does not simplify",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6524",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 In new symbolics, ratio of two symbolic expressions involving derivative does not simplify
@@ -55,16 +55,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6524
 archive/issue_comments_053205.json:
 ```json
 {
-    "body": "Attachment [trac_6524-fderivative_compare.patch](tarball://root/attachments/some-uuid/ticket6524/trac_6524-fderivative_compare.patch) by burcin created at 2009-09-19 15:15:46",
+    "body": "Attachment [trac_6524-fderivative_compare.patch](tarball://root/attachments/some-uuid/ticket6524/trac_6524-fderivative_compare.patch) by @burcin created at 2009-09-19 15:15:46",
     "created_at": "2009-09-19T15:15:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6524#issuecomment-53205",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6524-fderivative_compare.patch](tarball://root/attachments/some-uuid/ticket6524/trac_6524-fderivative_compare.patch) by burcin created at 2009-09-19 15:15:46
+Attachment [trac_6524-fderivative_compare.patch](tarball://root/attachments/some-uuid/ticket6524/trac_6524-fderivative_compare.patch) by @burcin created at 2009-09-19 15:15:46
 
 
 
@@ -78,7 +78,7 @@ archive/issue_comments_053206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6524#issuecomment-53206",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_053207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6524#issuecomment-53207",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -111,16 +111,16 @@ I will post a new pynac package and review instructions soon.
 archive/issue_comments_053208.json:
 ```json
 {
-    "body": "Set assignee to burcin.",
+    "body": "Set assignee to @burcin.",
     "created_at": "2009-09-19T15:17:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6524#issuecomment-53208",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Set assignee to burcin.
+Set assignee to @burcin.
 
 
 
@@ -134,7 +134,7 @@ archive/issue_comments_053209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6524#issuecomment-53209",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_053210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6524#issuecomment-53210",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

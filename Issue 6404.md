@@ -14,7 +14,7 @@ archive/issues_006404.json:
     "title": "Typeseting for conjugate() of symbolic function is inadequate",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6404",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 In current Sage (4.0.2), while typesetting conjugate() of
@@ -51,16 +51,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6404
 archive/issue_comments_051431.json:
 ```json
 {
-    "body": "Attachment [trac_6404-conjugate_typesetting.patch](tarball://root/attachments/some-uuid/ticket6404/trac_6404-conjugate_typesetting.patch) by burcin created at 2009-07-28 12:10:22\n\ndoctest fixes for conjugate typesetting change",
+    "body": "Attachment [trac_6404-conjugate_typesetting.patch](tarball://root/attachments/some-uuid/ticket6404/trac_6404-conjugate_typesetting.patch) by @burcin created at 2009-07-28 12:10:22\n\ndoctest fixes for conjugate typesetting change",
     "created_at": "2009-07-28T12:10:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6404#issuecomment-51431",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6404-conjugate_typesetting.patch](tarball://root/attachments/some-uuid/ticket6404/trac_6404-conjugate_typesetting.patch) by burcin created at 2009-07-28 12:10:22
+Attachment [trac_6404-conjugate_typesetting.patch](tarball://root/attachments/some-uuid/ticket6404/trac_6404-conjugate_typesetting.patch) by @burcin created at 2009-07-28 12:10:22
 
 doctest fixes for conjugate typesetting change
 
@@ -76,7 +76,7 @@ archive/issue_comments_051432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6404#issuecomment-51432",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_051433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6404#issuecomment-51433",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -107,16 +107,16 @@ I have a fix for this in my local pynac tree. I'll make a new pynac package avai
 archive/issue_comments_051434.json:
 ```json
 {
-    "body": "Set assignee to burcin.",
+    "body": "Set assignee to @burcin.",
     "created_at": "2009-07-28T12:14:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6404#issuecomment-51434",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Set assignee to burcin.
+Set assignee to @burcin.
 
 
 
@@ -130,7 +130,7 @@ archive/issue_comments_051435.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6404#issuecomment-51435",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_051436.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6404#issuecomment-51436",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 

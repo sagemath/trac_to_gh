@@ -3,7 +3,7 @@
 archive/issues_007522.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jason rbeezer\n\nIt should be easy to get the orthogonal complement of a subspace W of a vector space V.   From Jason Grout: \n\n```\nsage: def orthogonal_complement(space):\n....:     if space.dimension()==0:\n....:         return space.ambient_vector_space()\n....:     else:\n....:         return space.basis_matrix().right_kernel()\n```\n\nOne would also want to add an option to specify the larger space in which you were dealing, with it defaulting to the ambient vector space.  Probably 'perp()' should be an alias.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7522\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @rbeezer\n\nIt should be easy to get the orthogonal complement of a subspace W of a vector space V.   From Jason Grout: \n\n```\nsage: def orthogonal_complement(space):\n....:     if space.dimension()==0:\n....:         return space.ambient_vector_space()\n....:     else:\n....:         return space.basis_matrix().right_kernel()\n```\n\nOne would also want to add an option to specify the larger space in which you were dealing, with it defaulting to the ambient vector space.  Probably 'perp()' should be an alias.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7522\n\n",
     "created_at": "2009-11-24T01:27:57Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_007522.json:
     "title": "Implement orthogonal complement in vector spaces",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7522",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jason rbeezer
+CC:  @jasongrout @rbeezer
 
 It should be easy to get the orthogonal complement of a subspace W of a vector space V.   From Jason Grout: 
 
@@ -44,16 +44,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7522
 archive/issue_comments_063735.json:
 ```json
 {
-    "body": "Attachment [7522-perp.patch](tarball://root/attachments/some-uuid/ticket7522/7522-perp.patch) by jason created at 2010-09-22 03:02:04",
+    "body": "Attachment [7522-perp.patch](tarball://root/attachments/some-uuid/ticket7522/7522-perp.patch) by @jasongrout created at 2010-09-22 03:02:04",
     "created_at": "2010-09-22T03:02:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7522#issuecomment-63735",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [7522-perp.patch](tarball://root/attachments/some-uuid/ticket7522/7522-perp.patch) by jason created at 2010-09-22 03:02:04
+Attachment [7522-perp.patch](tarball://root/attachments/some-uuid/ticket7522/7522-perp.patch) by @jasongrout created at 2010-09-22 03:02:04
 
 
 
@@ -67,7 +67,7 @@ archive/issue_comments_063736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7522#issuecomment-63736",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_063737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7522#issuecomment-63737",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_063738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7522#issuecomment-63738",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_063739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7522#issuecomment-63739",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -138,16 +138,16 @@ apply on top of previous patches
 archive/issue_comments_063740.json:
 ```json
 {
-    "body": "Attachment [7522-review.patch](tarball://root/attachments/some-uuid/ticket7522/7522-review.patch) by jason created at 2010-09-23 23:28:31\n\nReplying to [comment:2 kcrisman]:\n\n\n> The documentation should make it clear what the ambient space is by default, perhaps by adding an example where things fail?  Or at least commenting that the first example just shows itself as the ambient space.  What would happen if one took a double subspace - what would it consider to be the ambient subspace?  \n\nReview patch attached.  Better now?",
+    "body": "Attachment [7522-review.patch](tarball://root/attachments/some-uuid/ticket7522/7522-review.patch) by @jasongrout created at 2010-09-23 23:28:31\n\nReplying to [comment:2 kcrisman]:\n\n\n> The documentation should make it clear what the ambient space is by default, perhaps by adding an example where things fail?  Or at least commenting that the first example just shows itself as the ambient space.  What would happen if one took a double subspace - what would it consider to be the ambient subspace?  \n\nReview patch attached.  Better now?",
     "created_at": "2010-09-23T23:28:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7522#issuecomment-63740",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [7522-review.patch](tarball://root/attachments/some-uuid/ticket7522/7522-review.patch) by jason created at 2010-09-23 23:28:31
+Attachment [7522-review.patch](tarball://root/attachments/some-uuid/ticket7522/7522-review.patch) by @jasongrout created at 2010-09-23 23:28:31
 
 Replying to [comment:2 kcrisman]:
 
@@ -168,7 +168,7 @@ archive/issue_comments_063741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7522#issuecomment-63741",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_063742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7522#issuecomment-63742",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_063743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7522#issuecomment-63743",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_063744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7522#issuecomment-63744",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_063745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7522#issuecomment-63745",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_063746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7522#issuecomment-63746",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_063747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7522#issuecomment-63747",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_063748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7522#issuecomment-63748",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -357,7 +357,7 @@ archive/issue_comments_063749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7522#issuecomment-63749",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -375,7 +375,7 @@ archive/issue_comments_063750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7522#issuecomment-63750",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -398,7 +398,7 @@ archive/issue_comments_063751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7522#issuecomment-63751",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -430,7 +430,7 @@ archive/issue_comments_063752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7522#issuecomment-63752",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -455,7 +455,7 @@ archive/issue_comments_063753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7522#issuecomment-63753",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -502,7 +502,7 @@ archive/issue_comments_063754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7522#issuecomment-63754",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -520,7 +520,7 @@ archive/issue_comments_063755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7522#issuecomment-63755",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -538,7 +538,7 @@ archive/issue_comments_063756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7522#issuecomment-63756",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -551,16 +551,16 @@ Rather than testing if the base ring is a field, shouldn't you place the method 
 archive/issue_comments_063757.json:
 ```json
 {
-    "body": "Attachment [trac_7522-perp-ts.patch](tarball://root/attachments/some-uuid/ticket7522/trac_7522-perp-ts.patch) by tscrim created at 2013-04-05 18:46:26\n\nHere I was looking for something called `VectorSpace`... Done. Now just waiting on a response from Rob or Jason.",
+    "body": "Attachment [trac_7522-perp-ts.patch](tarball://root/attachments/some-uuid/ticket7522/trac_7522-perp-ts.patch) by @tscrim created at 2013-04-05 18:46:26\n\nHere I was looking for something called `VectorSpace`... Done. Now just waiting on a response from Rob or Jason.",
     "created_at": "2013-04-05T18:46:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7522#issuecomment-63757",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
-Attachment [trac_7522-perp-ts.patch](tarball://root/attachments/some-uuid/ticket7522/trac_7522-perp-ts.patch) by tscrim created at 2013-04-05 18:46:26
+Attachment [trac_7522-perp-ts.patch](tarball://root/attachments/some-uuid/ticket7522/trac_7522-perp-ts.patch) by @tscrim created at 2013-04-05 18:46:26
 
 Here I was looking for something called `VectorSpace`... Done. Now just waiting on a response from Rob or Jason.
 
@@ -576,7 +576,7 @@ archive/issue_comments_063758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7522#issuecomment-63758",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -596,7 +596,7 @@ archive/issue_comments_063759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7522#issuecomment-63759",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -614,7 +614,7 @@ archive/issue_comments_063760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7522#issuecomment-63760",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -632,7 +632,7 @@ archive/issue_comments_063761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7522#issuecomment-63761",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -652,7 +652,7 @@ archive/issue_comments_063762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7522#issuecomment-63762",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -673,16 +673,16 @@ Travis
 archive/issue_comments_063763.json:
 ```json
 {
-    "body": "Attachment [trac_7522-finite.patch](tarball://root/attachments/some-uuid/ticket7522/trac_7522-finite.patch) by kcrisman created at 2013-06-18 23:59:32\n\nThanks, fixed.\n\nPatchbot, apply trac_7522-perp-ts.patch and trac_7522-finite.patch",
+    "body": "Attachment [trac_7522-finite.patch](tarball://root/attachments/some-uuid/ticket7522/trac_7522-finite.patch) by @kcrisman created at 2013-06-18 23:59:32\n\nThanks, fixed.\n\nPatchbot, apply trac_7522-perp-ts.patch and trac_7522-finite.patch",
     "created_at": "2013-06-18T23:59:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7522#issuecomment-63763",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_7522-finite.patch](tarball://root/attachments/some-uuid/ticket7522/trac_7522-finite.patch) by kcrisman created at 2013-06-18 23:59:32
+Attachment [trac_7522-finite.patch](tarball://root/attachments/some-uuid/ticket7522/trac_7522-finite.patch) by @kcrisman created at 2013-06-18 23:59:32
 
 Thanks, fixed.
 
@@ -700,7 +700,7 @@ archive/issue_comments_063764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7522#issuecomment-63764",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -718,7 +718,7 @@ archive/issue_comments_063765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7522#issuecomment-63765",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003745.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\n\n```\nOn Tue, Jul 29, 2008 at 6:05 PM, jamlatino <medrano.antonio@gmail.com> wrote:\n>\n> While working on the video tutorial for Sage I tried the following\n> equation:\n>\n> (sin(x) - 8*cos(x)*sin(x))*(sin(x)^2 + cos(x)) - (2*cos(x)*sin(x) -\n> sin(x))*(-2*sin(x)^2 + 2*cos(x)^2 - cos(x))\n>\n> if I use find_root in the interval 1,2 I get the following answer:\n> 1.9106332362490561\n>\n> but when I use solve to find the solution I get\n> [x == pi, x == pi/2, x == 0]\n>\n> pi/2 is 1.57, but when I try find_root in the interval 1.5,1.6 it\n> tells me that the equation has no zero in that interval, can someone\n> explain??\n\nThis appears to me to be a bug as pi/2 is not a solution.\nIf you do the following it is pretty clear that the 0's are\nat 0, 1.9..., etc. and not at pi/2:\n\nsage: f = (sin(x) - 8*cos(x)*sin(x))*(sin(x)^2 + cos(x)) -\n(2*cos(x)*sin(x) - sin(x))*(-2*sin(x)^2 + 2*cos(x)^2 - cos(x))\nsage: f(pi/2)\n-1\nsage: f.plot(-1,4)\n\nSage finds the numerical 0's using a numerical root\nfinder (from scipy).\n\nSage finds the exact solutions by calling the computer\nalgebra system Maxima, which indeed strangely claims that pi/2 is a solution:\n\n(%i1) solve((sin(x)-8*cos(x)*sin(x))*(sin(x)^2+cos(x))-(2*cos(x)*sin(x)-sin(x))*(-2*sin(x)^2+2*cos(x)^2-cos(x))=0,\nx);\n\n`solve' is using arc-trig functions to get a solution.\nSome solutions will be lost.\n                                        %pi\n(%o1)                      [x = %pi, x = ---, x = 0]\n                                         2\n\nIt looks like this might be a bug in Maxima's solve function.\n\nThere's not much for me to do besides:\n  * report this to the maxima folks (I've cc'd Robert Dodier\nin this email),\n  * completely rewrite Sage's solve to not use Maxima.\n\nFrom Robert Dodier:\n\n\nYup, that's a bug, all right ... I'll make a bug report.\n\n>    * completely rewrite Sage's solve to not use Maxima.\n\nWell, if you do that, please write it in pure Python so it is easier\nto translate to Lisp.\n\nMaxima's code for solving equations has more than a few bugs,\nand it's not clear what classes of problems it can handle, nor is\nit clear what method is used for each class, and there certainly\nare interesting and useful equations which it just can't handle.\nAll of this motivates a complete rewrite. Not that I'm volunteering;\nnot yet, anyway.\n\nFWIW\n\nRobert Dodier\n```\n\n\nI think we need to rewrite solve for Sage.  Any volunteers?  It will have to wait until we change to use either \"Gary's symbolics\" or \"Sympy\" for Sage's symbolics, since the current symbolics likely don't support enough to make implementing solve practical.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3745\n\n",
+    "body": "Assignee: @garyfurnish\n\n\n```\nOn Tue, Jul 29, 2008 at 6:05 PM, jamlatino <medrano.antonio@gmail.com> wrote:\n>\n> While working on the video tutorial for Sage I tried the following\n> equation:\n>\n> (sin(x) - 8*cos(x)*sin(x))*(sin(x)^2 + cos(x)) - (2*cos(x)*sin(x) -\n> sin(x))*(-2*sin(x)^2 + 2*cos(x)^2 - cos(x))\n>\n> if I use find_root in the interval 1,2 I get the following answer:\n> 1.9106332362490561\n>\n> but when I use solve to find the solution I get\n> [x == pi, x == pi/2, x == 0]\n>\n> pi/2 is 1.57, but when I try find_root in the interval 1.5,1.6 it\n> tells me that the equation has no zero in that interval, can someone\n> explain??\n\nThis appears to me to be a bug as pi/2 is not a solution.\nIf you do the following it is pretty clear that the 0's are\nat 0, 1.9..., etc. and not at pi/2:\n\nsage: f = (sin(x) - 8*cos(x)*sin(x))*(sin(x)^2 + cos(x)) -\n(2*cos(x)*sin(x) - sin(x))*(-2*sin(x)^2 + 2*cos(x)^2 - cos(x))\nsage: f(pi/2)\n-1\nsage: f.plot(-1,4)\n\nSage finds the numerical 0's using a numerical root\nfinder (from scipy).\n\nSage finds the exact solutions by calling the computer\nalgebra system Maxima, which indeed strangely claims that pi/2 is a solution:\n\n(%i1) solve((sin(x)-8*cos(x)*sin(x))*(sin(x)^2+cos(x))-(2*cos(x)*sin(x)-sin(x))*(-2*sin(x)^2+2*cos(x)^2-cos(x))=0,\nx);\n\n`solve' is using arc-trig functions to get a solution.\nSome solutions will be lost.\n                                        %pi\n(%o1)                      [x = %pi, x = ---, x = 0]\n                                         2\n\nIt looks like this might be a bug in Maxima's solve function.\n\nThere's not much for me to do besides:\n  * report this to the maxima folks (I've cc'd Robert Dodier\nin this email),\n  * completely rewrite Sage's solve to not use Maxima.\n\nFrom Robert Dodier:\n\n\nYup, that's a bug, all right ... I'll make a bug report.\n\n>    * completely rewrite Sage's solve to not use Maxima.\n\nWell, if you do that, please write it in pure Python so it is easier\nto translate to Lisp.\n\nMaxima's code for solving equations has more than a few bugs,\nand it's not clear what classes of problems it can handle, nor is\nit clear what method is used for each class, and there certainly\nare interesting and useful equations which it just can't handle.\nAll of this motivates a complete rewrite. Not that I'm volunteering;\nnot yet, anyway.\n\nFWIW\n\nRobert Dodier\n```\n\n\nI think we need to rewrite solve for Sage.  Any volunteers?  It will have to wait until we change to use either \"Gary's symbolics\" or \"Sympy\" for Sage's symbolics, since the current symbolics likely don't support enough to make implementing solve practical.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3745\n\n",
     "created_at": "2008-07-30T12:45:59Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_003745.json:
     "title": "calculus -- bug in solve",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3745",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 
 ```
@@ -112,7 +112,7 @@ archive/issue_comments_026595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3745#issuecomment-26595",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_026596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3745#issuecomment-26596",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_026597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3745#issuecomment-26597",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_026598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3745#issuecomment-26598",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_026599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3745#issuecomment-26599",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_026600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3745#issuecomment-26600",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_026601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3745#issuecomment-26601",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_026602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3745#issuecomment-26602",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_026603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3745#issuecomment-26603",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -346,7 +346,7 @@ archive/issue_comments_026605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3745#issuecomment-26605",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

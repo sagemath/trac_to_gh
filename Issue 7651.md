@@ -3,7 +3,7 @@
 archive/issues_007651.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  ncohen jason\n\nThis is because the data structure for sparse graphs is itself directed, and in_neighbors is a slow function, as it needs to check each node.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7651\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @nathanncohen @jasongrout\n\nThis is because the data structure for sparse graphs is itself directed, and in_neighbors is a slow function, as it needs to check each node.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7651\n\n",
     "created_at": "2009-12-10T06:17:45Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_007651.json:
     "title": "c_graph backends should include a \"reversed\" copy for digraphs in the sparse case",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7651",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  ncohen jason
+CC:  @nathanncohen @jasongrout
 
 This is because the data structure for sparse graphs is itself directed, and in_neighbors is a slow function, as it needs to check each node.
 
@@ -39,7 +39,7 @@ archive/issue_comments_065431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7651#issuecomment-65431",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_065433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7651#issuecomment-65433",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_065434.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7651#issuecomment-65434",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -106,16 +106,16 @@ Yes! Good catch!
 archive/issue_comments_065435.json:
 ```json
 {
-    "body": "Attachment [trac_7651.patch](tarball://root/attachments/some-uuid/ticket7651/trac_7651.patch) by rlm created at 2009-12-15 01:02:26\n\napply to sage-4.3.rc0 + #7640 + #7674 + #7673",
+    "body": "Attachment [trac_7651.patch](tarball://root/attachments/some-uuid/ticket7651/trac_7651.patch) by @rlmill created at 2009-12-15 01:02:26\n\napply to sage-4.3.rc0 + #7640 + #7674 + #7673",
     "created_at": "2009-12-15T01:02:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7651#issuecomment-65435",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_7651.patch](tarball://root/attachments/some-uuid/ticket7651/trac_7651.patch) by rlm created at 2009-12-15 01:02:26
+Attachment [trac_7651.patch](tarball://root/attachments/some-uuid/ticket7651/trac_7651.patch) by @rlmill created at 2009-12-15 01:02:26
 
 apply to sage-4.3.rc0 + #7640 + #7674 + #7673
 
@@ -131,7 +131,7 @@ archive/issue_comments_065436.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7651#issuecomment-65436",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_065437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7651#issuecomment-65437",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_065438.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7651#issuecomment-65438",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_065439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7651#issuecomment-65439",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_065440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7651#issuecomment-65440",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_065441.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7651#issuecomment-65441",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_065442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7651#issuecomment-65442",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_065443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7651#issuecomment-65443",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_065444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7651#issuecomment-65444",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_065445.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7651#issuecomment-65445",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -352,7 +352,7 @@ archive/issue_comments_065446.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7651#issuecomment-65446",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

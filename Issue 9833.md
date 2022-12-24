@@ -3,7 +3,7 @@
 archive/issues_009833.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  burcin\n\nKeywords: latex, fraction, pynac\n\nSimilarly as in #9314\n\n\n```\nsage: latex(-(x+1)/(x+2))\n\\frac{-x + 1}{x + 2}\n```\n\n\nnote the minus sign :(\n\nIssue created by migration from https://trac.sagemath.org/ticket/9834\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @burcin\n\nKeywords: latex, fraction, pynac\n\nSimilarly as in #9314\n\n\n```\nsage: latex(-(x+1)/(x+2))\n\\frac{-x + 1}{x + 2}\n```\n\n\nnote the minus sign :(\n\nIssue created by migration from https://trac.sagemath.org/ticket/9834\n\n",
     "created_at": "2010-08-28T20:21:05Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_009833.json:
     "title": "LaTeX representation of fractions still broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9833",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  burcin
+CC:  @burcin
 
 Keywords: latex, fraction, pynac
 
@@ -50,7 +50,7 @@ archive/issue_comments_097028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9833#issuecomment-97028",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_097029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9833#issuecomment-97029",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_097030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9833#issuecomment-97030",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_097031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9833#issuecomment-97031",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_097032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9833#issuecomment-97032",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_097033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9833#issuecomment-97033",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

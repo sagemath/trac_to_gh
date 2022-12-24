@@ -3,7 +3,7 @@
 archive/issues_001258.json:
 ```json
 {
-    "body": "Assignee: wdj\n\nThe patch\nhttp://sage.math.washington.edu/home/wdj/patches/linear_codes20071124.hg\ncontains a new functions zeta_polynomial, weight_enumerator, \nchinen_polynomial, is_equivalent (for binary codes); an improved \nbest_known_code; many pythonic revisions (suggested by William Stein \nlong ago). Also, there are some minor docstring improvements. \nNone of these are major improvements but I have a student working\non Duursma zeta functions of self-dual codes and these will be useful \nfor her.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1258\n\n",
+    "body": "Assignee: @wdjoyner\n\nThe patch\nhttp://sage.math.washington.edu/home/wdj/patches/linear_codes20071124.hg\ncontains a new functions zeta_polynomial, weight_enumerator, \nchinen_polynomial, is_equivalent (for binary codes); an improved \nbest_known_code; many pythonic revisions (suggested by William Stein \nlong ago). Also, there are some minor docstring improvements. \nNone of these are major improvements but I have a student working\non Duursma zeta functions of self-dual codes and these will be useful \nfor her.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1258\n\n",
     "created_at": "2007-11-25T04:06:48Z",
     "labels": [
         "coding theory",
@@ -14,10 +14,10 @@ archive/issues_001258.json:
     "title": "additions and changes to linear_codes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1258",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: wdj
+Assignee: @wdjoyner
 
 The patch
 http://sage.math.washington.edu/home/wdj/patches/linear_codes20071124.hg
@@ -45,7 +45,7 @@ archive/issue_comments_007864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1258#issuecomment-7864",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_007865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1258#issuecomment-7865",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_007866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1258#issuecomment-7866",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -161,16 +161,16 @@ http://sage.math.washington.edu/home/wdj/patches/linear_code.py
 archive/issue_comments_007867.json:
 ```json
 {
-    "body": "Attachment [codes.hg](tarball://root/attachments/some-uuid/ticket1258/codes.hg) by rlm created at 2007-12-11 18:44:53",
+    "body": "Attachment [codes.hg](tarball://root/attachments/some-uuid/ticket1258/codes.hg) by @rlmill created at 2007-12-11 18:44:53",
     "created_at": "2007-12-11T18:44:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1258#issuecomment-7867",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [codes.hg](tarball://root/attachments/some-uuid/ticket1258/codes.hg) by rlm created at 2007-12-11 18:44:53
+Attachment [codes.hg](tarball://root/attachments/some-uuid/ticket1258/codes.hg) by @rlmill created at 2007-12-11 18:44:53
 
 
 
@@ -184,7 +184,7 @@ archive/issue_comments_007868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1258#issuecomment-7868",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -199,16 +199,16 @@ should apply cleanly to sage-2.9.alpha5
 archive/issue_comments_007869.json:
 ```json
 {
-    "body": "Attachment [trac-1258-ref.patch](tarball://root/attachments/some-uuid/ticket1258/trac-1258-ref.patch) by was created at 2007-12-15 23:24:58",
+    "body": "Attachment [trac-1258-ref.patch](tarball://root/attachments/some-uuid/ticket1258/trac-1258-ref.patch) by @williamstein created at 2007-12-15 23:24:58",
     "created_at": "2007-12-15T23:24:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1258#issuecomment-7869",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1258-ref.patch](tarball://root/attachments/some-uuid/ticket1258/trac-1258-ref.patch) by was created at 2007-12-15 23:24:58
+Attachment [trac-1258-ref.patch](tarball://root/attachments/some-uuid/ticket1258/trac-1258-ref.patch) by @williamstein created at 2007-12-15 23:24:58
 
 
 
@@ -222,7 +222,7 @@ archive/issue_comments_007870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1258#issuecomment-7870",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

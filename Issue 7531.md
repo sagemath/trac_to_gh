@@ -3,7 +3,7 @@
 archive/issues_007531.json:
 ```json
 {
-    "body": "Assignee: was\n\nAll this patch does is to add a Python interface to `mzd_lqup` which might be handy for some people. It doesn't have any impact on existing functions etc. and thus should be a fairly low risk merge.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7531\n\n",
+    "body": "Assignee: @williamstein\n\nAll this patch does is to add a Python interface to `mzd_lqup` which might be handy for some people. It doesn't have any impact on existing functions etc. and thus should be a fairly low risk merge.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7531\n\n",
     "created_at": "2009-11-25T17:49:48Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_007531.json:
     "title": "Python interface to M4RI's LQUP function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7531",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 All this patch does is to add a Python interface to `mzd_lqup` which might be handy for some people. It doesn't have any impact on existing functions etc. and thus should be a fairly low risk merge.
 
@@ -37,7 +37,7 @@ archive/issue_comments_063838.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7531",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7531#issuecomment-63838",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_063841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7531",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7531#issuecomment-63841",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -127,16 +127,16 @@ maybe just add `lqup(A)==lqup(A,algorithm="naive")` and `lqup(A)==lqup(A,algorit
 archive/issue_comments_063843.json:
 ```json
 {
-    "body": "Attachment [m4ri_lqup.patch](tarball://root/attachments/some-uuid/ticket7531/m4ri_lqup.patch) by malb created at 2009-11-26 14:56:05\n\nThanks, fixed.",
+    "body": "Attachment [m4ri_lqup.patch](tarball://root/attachments/some-uuid/ticket7531/m4ri_lqup.patch) by @malb created at 2009-11-26 14:56:05\n\nThanks, fixed.",
     "created_at": "2009-11-26T14:56:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7531",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7531#issuecomment-63843",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [m4ri_lqup.patch](tarball://root/attachments/some-uuid/ticket7531/m4ri_lqup.patch) by malb created at 2009-11-26 14:56:05
+Attachment [m4ri_lqup.patch](tarball://root/attachments/some-uuid/ticket7531/m4ri_lqup.patch) by @malb created at 2009-11-26 14:56:05
 
 Thanks, fixed.
 
@@ -152,7 +152,7 @@ archive/issue_comments_063844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7531",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7531#issuecomment-63844",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_063847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7531",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7531#issuecomment-63847",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

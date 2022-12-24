@@ -3,7 +3,7 @@
 archive/issues_008372.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  wdj rbeezer dcoudert\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/b9e4114047427c2e):\n\n```\nFor discussion purposes, let me toss out some ideas on improving the\ninterface for computing incidence matrices. For a graph object G, I\npropose we add a keyword to G.incidence_matrix() so that the interface\nis now changed to the following method signature:\n\ndef G.incidence_matrix(orientation=False)\n\nThe keyword \"orientation\" takes on a Boolean value. So\nG.incidence_matrix(orientation=False) or G.incidence_matrix() returns\nthe unoriented incidence matrix of an undirected graph G. Furthermore,\nG.incidence_matrix(orientation=True) returns the oriented incidence\nmatrix of an undirected graph G, which is the current behaviour. The\nkeyword \"orientation\" has no effect if G is a digraph. So\n\"orientation\" is only meant to affect undirected graphs.\n\nLet's consider whether or not to leave the method incidence_matrix()\nin the module generic_graph.py. I consider it more appropriate for\ngraph.py (a module for undirected graphs) to deal with incidence\nmatrices for undirected graphs. Similarly, digraph.py can deal with\nincidence matrices for digraphs. At the moment, incidence_matrix()\nresides in generic_graph.py, a module with over 10 thousand lines. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8372\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @wdjoyner @rbeezer @dcoudert\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/b9e4114047427c2e):\n\n```\nFor discussion purposes, let me toss out some ideas on improving the\ninterface for computing incidence matrices. For a graph object G, I\npropose we add a keyword to G.incidence_matrix() so that the interface\nis now changed to the following method signature:\n\ndef G.incidence_matrix(orientation=False)\n\nThe keyword \"orientation\" takes on a Boolean value. So\nG.incidence_matrix(orientation=False) or G.incidence_matrix() returns\nthe unoriented incidence matrix of an undirected graph G. Furthermore,\nG.incidence_matrix(orientation=True) returns the oriented incidence\nmatrix of an undirected graph G, which is the current behaviour. The\nkeyword \"orientation\" has no effect if G is a digraph. So\n\"orientation\" is only meant to affect undirected graphs.\n\nLet's consider whether or not to leave the method incidence_matrix()\nin the module generic_graph.py. I consider it more appropriate for\ngraph.py (a module for undirected graphs) to deal with incidence\nmatrices for undirected graphs. Similarly, digraph.py can deal with\nincidence matrices for digraphs. At the moment, incidence_matrix()\nresides in generic_graph.py, a module with over 10 thousand lines. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8372\n\n",
     "created_at": "2010-02-26T05:01:41Z",
     "labels": [
         "graph theory",
@@ -17,9 +17,9 @@ archive/issues_008372.json:
     "user": "mvngu"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  wdj rbeezer dcoudert
+CC:  @wdjoyner @rbeezer @dcoudert
 
 From [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/b9e4114047427c2e):
 
@@ -105,7 +105,7 @@ archive/issue_comments_074841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8372#issuecomment-74841",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_074842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8372#issuecomment-74842",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_074843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8372#issuecomment-74843",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -320,7 +320,7 @@ archive/issue_comments_074847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8372#issuecomment-74847",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -385,7 +385,7 @@ archive/issue_comments_074849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8372#issuecomment-74849",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
@@ -432,7 +432,7 @@ archive/issue_comments_074851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8372#issuecomment-74851",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
@@ -477,7 +477,7 @@ archive/issue_comments_074853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8372#issuecomment-74853",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -495,7 +495,7 @@ archive/issue_comments_074854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8372#issuecomment-74854",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -513,7 +513,7 @@ archive/issue_comments_074855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8372#issuecomment-74855",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

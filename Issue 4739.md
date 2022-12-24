@@ -3,7 +3,7 @@
 archive/issues_004739.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  robertwb\n\nKeywords: abelian group\n\nSee also #1849 and #3999.\n\nThe patch adds code to the AbelianGroups_class so that additive groups can be created, and are output with additive notation.\n\nFurther doctests are required to show examples of both additive and multiplicative type in every case.  Subgroup creation (which interfaces with GAP) does not yet work.\n\nAs an example (more to come), torsion subgroups of elliptic curves over number fields are now additive.\n\nrobertwb asked to have a look at this even though it is not yet finished, so here it is!\n\nNB I still think that the whole abelian group code needs rewriting (as was started in #1849)!\n\nIssue created by migration from https://trac.sagemath.org/ticket/4739\n\n",
+    "body": "Assignee: tbd\n\nCC:  @robertwb\n\nKeywords: abelian group\n\nSee also #1849 and #3999.\n\nThe patch adds code to the AbelianGroups_class so that additive groups can be created, and are output with additive notation.\n\nFurther doctests are required to show examples of both additive and multiplicative type in every case.  Subgroup creation (which interfaces with GAP) does not yet work.\n\nAs an example (more to come), torsion subgroups of elliptic curves over number fields are now additive.\n\nrobertwb asked to have a look at this even though it is not yet finished, so here it is!\n\nNB I still think that the whole abelian group code needs rewriting (as was started in #1849)!\n\nIssue created by migration from https://trac.sagemath.org/ticket/4739\n\n",
     "created_at": "2008-12-07T22:39:42Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_004739.json:
     "title": "[with patch, not ready for review] Add support for additive abelian groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4739",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 Assignee: tbd
 
-CC:  robertwb
+CC:  @robertwb
 
 Keywords: abelian group
 
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4739
 archive/issue_comments_035779.json:
 ```json
 {
-    "body": "Attachment [abgr.patch](tarball://root/attachments/some-uuid/ticket4739/abgr.patch) by cremona created at 2008-12-07 22:41:25\n\nApplies to 3.2.1 after #3810 and #4061 patches.",
+    "body": "Attachment [abgr.patch](tarball://root/attachments/some-uuid/ticket4739/abgr.patch) by @JohnCremona created at 2008-12-07 22:41:25\n\nApplies to 3.2.1 after #3810 and #4061 patches.",
     "created_at": "2008-12-07T22:41:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4739#issuecomment-35779",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [abgr.patch](tarball://root/attachments/some-uuid/ticket4739/abgr.patch) by cremona created at 2008-12-07 22:41:25
+Attachment [abgr.patch](tarball://root/attachments/some-uuid/ticket4739/abgr.patch) by @JohnCremona created at 2008-12-07 22:41:25
 
 Applies to 3.2.1 after #3810 and #4061 patches.
 
@@ -71,7 +71,7 @@ archive/issue_comments_035780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4739#issuecomment-35780",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_035781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4739#issuecomment-35781",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_035782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4739#issuecomment-35782",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_035783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4739#issuecomment-35783",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_035784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4739#issuecomment-35784",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_035785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4739#issuecomment-35785",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_035786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4739#issuecomment-35786",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_035787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4739#issuecomment-35787",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_035788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4739#issuecomment-35788",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_035789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4739#issuecomment-35789",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

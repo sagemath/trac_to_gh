@@ -14,7 +14,7 @@ archive/issues_006207.json:
     "title": "roots of polynomial have incorrect parent when ring=R is specified",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6207",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 Assignee: tbd
@@ -407,16 +407,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6207
 archive/issue_comments_049583.json:
 ```json
 {
-    "body": "Attachment [roots-parent-2.patch](tarball://root/attachments/some-uuid/ticket6207/roots-parent-2.patch) by AlexGhitza created at 2009-07-11 10:44:51",
+    "body": "Attachment [roots-parent-2.patch](tarball://root/attachments/some-uuid/ticket6207/roots-parent-2.patch) by @aghitza created at 2009-07-11 10:44:51",
     "created_at": "2009-07-11T10:44:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6207",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6207#issuecomment-49583",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [roots-parent-2.patch](tarball://root/attachments/some-uuid/ticket6207/roots-parent-2.patch) by AlexGhitza created at 2009-07-11 10:44:51
+Attachment [roots-parent-2.patch](tarball://root/attachments/some-uuid/ticket6207/roots-parent-2.patch) by @aghitza created at 2009-07-11 10:44:51
 
 
 
@@ -430,7 +430,7 @@ archive/issue_comments_049584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6207",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6207#issuecomment-49584",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -443,16 +443,16 @@ I don't think this was really meant for review. Nick's patch just demonstrates t
 archive/issue_comments_049585.json:
 ```json
 {
-    "body": "Attachment [trac_6207.patch](tarball://root/attachments/some-uuid/ticket6207/trac_6207.patch) by was created at 2010-01-17 06:10:11\n\nApply only the patch I posted. \n\nNote -- with the first patch the checks about parents are left on, so the referee can run the test suite with them on.  The second part2 patch turns them off.\n\nNOTE: I did not fix the issues with precision being too hire for CIF and RIF, since that behavior is already very clearly documented (IMHO) by Carl Witty in the roots method. \n\nIn part2 I get rid of all the debug code.  My reasoning is:\n\n  (1) I want the roots docstring to be on that method.\n\n  (2) The code was really specifically for debugging this problem, which turned out to be mostly caused by my non-uniqueness of the RealField object. \n\nBy the way, the main work of this patch is to make it so RealField caching and naming is more sensible, systematic, correct, and the same as is already done for ComplexField.",
+    "body": "Attachment [trac_6207.patch](tarball://root/attachments/some-uuid/ticket6207/trac_6207.patch) by @williamstein created at 2010-01-17 06:10:11\n\nApply only the patch I posted. \n\nNote -- with the first patch the checks about parents are left on, so the referee can run the test suite with them on.  The second part2 patch turns them off.\n\nNOTE: I did not fix the issues with precision being too hire for CIF and RIF, since that behavior is already very clearly documented (IMHO) by Carl Witty in the roots method. \n\nIn part2 I get rid of all the debug code.  My reasoning is:\n\n  (1) I want the roots docstring to be on that method.\n\n  (2) The code was really specifically for debugging this problem, which turned out to be mostly caused by my non-uniqueness of the RealField object. \n\nBy the way, the main work of this patch is to make it so RealField caching and naming is more sensible, systematic, correct, and the same as is already done for ComplexField.",
     "created_at": "2010-01-17T06:10:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6207",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6207#issuecomment-49585",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6207.patch](tarball://root/attachments/some-uuid/ticket6207/trac_6207.patch) by was created at 2010-01-17 06:10:11
+Attachment [trac_6207.patch](tarball://root/attachments/some-uuid/ticket6207/trac_6207.patch) by @williamstein created at 2010-01-17 06:10:11
 
 Apply only the patch I posted. 
 
@@ -475,16 +475,16 @@ By the way, the main work of this patch is to make it so RealField caching and n
 archive/issue_comments_049586.json:
 ```json
 {
-    "body": "Attachment [trac_6207-part2.patch](tarball://root/attachments/some-uuid/ticket6207/trac_6207-part2.patch) by was created at 2010-01-17 06:10:23",
+    "body": "Attachment [trac_6207-part2.patch](tarball://root/attachments/some-uuid/ticket6207/trac_6207-part2.patch) by @williamstein created at 2010-01-17 06:10:23",
     "created_at": "2010-01-17T06:10:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6207",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6207#issuecomment-49586",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6207-part2.patch](tarball://root/attachments/some-uuid/ticket6207/trac_6207-part2.patch) by was created at 2010-01-17 06:10:23
+Attachment [trac_6207-part2.patch](tarball://root/attachments/some-uuid/ticket6207/trac_6207-part2.patch) by @williamstein created at 2010-01-17 06:10:23
 
 
 
@@ -498,7 +498,7 @@ archive/issue_comments_049587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6207",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6207#issuecomment-49587",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -516,7 +516,7 @@ archive/issue_comments_049588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6207",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6207#issuecomment-49588",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -595,7 +595,7 @@ archive/issue_comments_049589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6207",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6207#issuecomment-49589",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -613,7 +613,7 @@ archive/issue_comments_049590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6207",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6207#issuecomment-49590",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -641,7 +641,7 @@ archive/issue_comments_049591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6207",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6207#issuecomment-49591",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -661,7 +661,7 @@ archive/issue_comments_049592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6207",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6207#issuecomment-49592",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -674,16 +674,16 @@ apply after the previous two patches
 archive/issue_comments_049593.json:
 ```json
 {
-    "body": "Attachment [trac_6207-review.patch](tarball://root/attachments/some-uuid/ticket6207/trac_6207-review.patch) by AlexGhitza created at 2010-01-20 09:37:26\n\nOK, this looks good.  I give a positive review to William's two patches.\n\nIt remains for someone to look at my reviewer patch -- this should be very quick now.  Note that, apart from fixing the build, I made the comment at the top of the interpreter files a little more explicit.",
+    "body": "Attachment [trac_6207-review.patch](tarball://root/attachments/some-uuid/ticket6207/trac_6207-review.patch) by @aghitza created at 2010-01-20 09:37:26\n\nOK, this looks good.  I give a positive review to William's two patches.\n\nIt remains for someone to look at my reviewer patch -- this should be very quick now.  Note that, apart from fixing the build, I made the comment at the top of the interpreter files a little more explicit.",
     "created_at": "2010-01-20T09:37:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6207",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6207#issuecomment-49593",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_6207-review.patch](tarball://root/attachments/some-uuid/ticket6207/trac_6207-review.patch) by AlexGhitza created at 2010-01-20 09:37:26
+Attachment [trac_6207-review.patch](tarball://root/attachments/some-uuid/ticket6207/trac_6207-review.patch) by @aghitza created at 2010-01-20 09:37:26
 
 OK, this looks good.  I give a positive review to William's two patches.
 
@@ -701,7 +701,7 @@ archive/issue_comments_049594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6207",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6207#issuecomment-49594",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -719,7 +719,7 @@ archive/issue_comments_049595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6207",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6207#issuecomment-49595",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -737,7 +737,7 @@ archive/issue_comments_049596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6207",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6207#issuecomment-49596",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_004897.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  tnagel mardaus\n\nKeywords: elliptic curve integral points\n\nFrancois Glineur reported to me that for the elliptic curve \"20160bg2\" not all integral points are found.\n\n```\nsage: E=EllipticCurve('20160bg2')\nsage: [P[0] for P in E.integral_points()]\n[-24, -18, -14, -6, -3, 4, 6, 18, 21, 24, 36, 46, 102, 186, 1476, 2034, 67246]\n```\n\nwhile Magma gives\n\n```\n> E:=EllipticCurve([0, 0, 0, -468, 2592]);\n> Sort([P[1] : P in IntegralPoints(E)]);\n[ -24, -18, -14, -6, -3, 4, 6, 18, 21, 24, 36, 46, 102, 168, 186, 381, \n1476, 2034, 67246 ]\n```\n\nso we are missing x=168 and x=381.\n\nThe curve has rank 2 and full 2-torsion.\nThe point Q=(168,2160) is the unique integral point its coset modulo torsion and I think that is why it is being missed.  In fact it seems incredible that this has not been seen before in all the testing which was done!\n\nI therefore think that the function  integral_points_with_bounded_mw_coeffs() is at fault, and will fix it.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4897\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  tnagel mardaus\n\nKeywords: elliptic curve integral points\n\nFrancois Glineur reported to me that for the elliptic curve \"20160bg2\" not all integral points are found.\n\n```\nsage: E=EllipticCurve('20160bg2')\nsage: [P[0] for P in E.integral_points()]\n[-24, -18, -14, -6, -3, 4, 6, 18, 21, 24, 36, 46, 102, 186, 1476, 2034, 67246]\n```\n\nwhile Magma gives\n\n```\n> E:=EllipticCurve([0, 0, 0, -468, 2592]);\n> Sort([P[1] : P in IntegralPoints(E)]);\n[ -24, -18, -14, -6, -3, 4, 6, 18, 21, 24, 36, 46, 102, 168, 186, 381, \n1476, 2034, 67246 ]\n```\n\nso we are missing x=168 and x=381.\n\nThe curve has rank 2 and full 2-torsion.\nThe point Q=(168,2160) is the unique integral point its coset modulo torsion and I think that is why it is being missed.  In fact it seems incredible that this has not been seen before in all the testing which was done!\n\nI therefore think that the function  integral_points_with_bounded_mw_coeffs() is at fault, and will fix it.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4897\n\n",
     "created_at": "2008-12-31T10:42:46Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004897.json:
     "title": "integral_points() misses some points",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4897",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  tnagel mardaus
 
@@ -86,7 +86,7 @@ archive/issue_comments_037132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4897#issuecomment-37132",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -122,16 +122,16 @@ I have implemented this change and am currently testing.  Patch up later today!
 archive/issue_comments_037133.json:
 ```json
 {
-    "body": "Attachment [trac_4897.patch](tarball://root/attachments/some-uuid/ticket4897/trac_4897.patch) by cremona created at 2009-01-04 17:44:05\n\nThe patch is based on 3.2.2 + #4901 (which has a positive review but is not yet merged).\n\nIt does what was promised above, i.e. corrects the function  point_preprocessing().  A doctest is added with example from Francois Glineur.  In addition, I reran every single curve in the database (as reported to sage-nt) and have uploaded the revised files to my web page:  in about 1% of cases (over 8000 curves) there are more integral points than before.\n\nThe only file touched here is schemes/elliptic_curves/ell_rational_field.py, which is one of the ones which has already been sphinxified (see #4926) so this patch will need to be merged with that one at some point.",
+    "body": "Attachment [trac_4897.patch](tarball://root/attachments/some-uuid/ticket4897/trac_4897.patch) by @JohnCremona created at 2009-01-04 17:44:05\n\nThe patch is based on 3.2.2 + #4901 (which has a positive review but is not yet merged).\n\nIt does what was promised above, i.e. corrects the function  point_preprocessing().  A doctest is added with example from Francois Glineur.  In addition, I reran every single curve in the database (as reported to sage-nt) and have uploaded the revised files to my web page:  in about 1% of cases (over 8000 curves) there are more integral points than before.\n\nThe only file touched here is schemes/elliptic_curves/ell_rational_field.py, which is one of the ones which has already been sphinxified (see #4926) so this patch will need to be merged with that one at some point.",
     "created_at": "2009-01-04T17:44:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4897#issuecomment-37133",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_4897.patch](tarball://root/attachments/some-uuid/ticket4897/trac_4897.patch) by cremona created at 2009-01-04 17:44:05
+Attachment [trac_4897.patch](tarball://root/attachments/some-uuid/ticket4897/trac_4897.patch) by @JohnCremona created at 2009-01-04 17:44:05
 
 The patch is based on 3.2.2 + #4901 (which has a positive review but is not yet merged).
 
@@ -151,7 +151,7 @@ archive/issue_comments_037134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4897#issuecomment-37134",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_037137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4897#issuecomment-37137",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -349,7 +349,7 @@ archive/issue_comments_037142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4897#issuecomment-37142",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

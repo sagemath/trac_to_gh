@@ -3,7 +3,7 @@
 archive/issues_009764.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nIn matrix2.pyx, there is a doctest (line 6406):\n\n```\n            sage: all(imag(e) < 1.1e-15 for e in eigs)\n```\n\nWe should replace \"imag(e)\" by \"abs(imag(e))\".\n\nThe attached patch depends on #9760.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9765\n\n",
+    "body": "Assignee: @aghitza\n\nIn matrix2.pyx, there is a doctest (line 6406):\n\n```\n            sage: all(imag(e) < 1.1e-15 for e in eigs)\n```\n\nWe should replace \"imag(e)\" by \"abs(imag(e))\".\n\nThe attached patch depends on #9760.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9765\n\n",
     "created_at": "2010-08-18T22:14:49Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_009764.json:
     "title": "matrix2.pyx: replace \"x < 1e-15\" by \"abs(x) < 1e-15\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9764",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 In matrix2.pyx, there is a doctest (line 6406):
 
@@ -46,7 +46,7 @@ archive/issue_comments_095662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9764#issuecomment-95662",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -59,16 +59,16 @@ Changing status from new to needs_review.
 archive/issue_comments_095663.json:
 ```json
 {
-    "body": "Attachment [trac_9765-matrix2-abs.patch](tarball://root/attachments/some-uuid/ticket9765/trac_9765-matrix2-abs.patch) by jhpalmieri created at 2010-08-18 22:16:48",
+    "body": "Attachment [trac_9765-matrix2-abs.patch](tarball://root/attachments/some-uuid/ticket9765/trac_9765-matrix2-abs.patch) by @jhpalmieri created at 2010-08-18 22:16:48",
     "created_at": "2010-08-18T22:16:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9764#issuecomment-95663",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_9765-matrix2-abs.patch](tarball://root/attachments/some-uuid/ticket9765/trac_9765-matrix2-abs.patch) by jhpalmieri created at 2010-08-18 22:16:48
+Attachment [trac_9765-matrix2-abs.patch](tarball://root/attachments/some-uuid/ticket9765/trac_9765-matrix2-abs.patch) by @jhpalmieri created at 2010-08-18 22:16:48
 
 
 
@@ -82,7 +82,7 @@ archive/issue_comments_095664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9764#issuecomment-95664",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_095665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9764#issuecomment-95665",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_095666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9764#issuecomment-95666",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_095667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9764#issuecomment-95667",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

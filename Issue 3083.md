@@ -3,7 +3,7 @@
 archive/issues_003083.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  was\n\nIf I type `sage.graphs.chrompoly??` for example in a cell, and evaluate, I get a nice chunk of code. But when I hit \"print\", all I get is the input. Docs should be included in the printed worksheets.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3083\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein\n\nIf I type `sage.graphs.chrompoly??` for example in a cell, and evaluate, I get a nice chunk of code. But when I hit \"print\", all I get is the input. Docs should be included in the printed worksheets.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3083\n\n",
     "created_at": "2008-05-02T19:43:37Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_003083.json:
     "title": "Print does not include documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3083",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: boothby
 
-CC:  was
+CC:  @williamstein
 
 If I type `sage.graphs.chrompoly??` for example in a cell, and evaluate, I get a nice chunk of code. But when I hit "print", all I get is the input. Docs should be included in the printed worksheets.
 
@@ -39,7 +39,7 @@ archive/issue_comments_021270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3083#issuecomment-21270",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_021271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3083#issuecomment-21271",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_021272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3083#issuecomment-21272",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_021273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3083#issuecomment-21273",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -106,16 +106,16 @@ Makes evaluated (S-Enter, eval link, etc.) introspection show up in print while 
 archive/issue_comments_021274.json:
 ```json
 {
-    "body": "Attachment [trac_3083-print-documentation.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.patch) by was created at 2010-01-17 08:50:35\n\nBig +1 to this design approach.",
+    "body": "Attachment [trac_3083-print-documentation.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.patch) by @williamstein created at 2010-01-17 08:50:35\n\nBig +1 to this design approach.",
     "created_at": "2010-01-17T08:50:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3083#issuecomment-21274",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_3083-print-documentation.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.patch) by was created at 2010-01-17 08:50:35
+Attachment [trac_3083-print-documentation.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.patch) by @williamstein created at 2010-01-17 08:50:35
 
 Big +1 to this design approach.
 
@@ -131,7 +131,7 @@ archive/issue_comments_021275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3083#issuecomment-21275",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -144,16 +144,16 @@ Rebase on a new patch set.
 archive/issue_comments_021276.json:
 ```json
 {
-    "body": "Attachment [trac_3083-print-documentation.2.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.2.patch) by timdumol created at 2010-01-17 22:04:25\n\nThe new patch set is:\n\n\n```\ntrac_7650-sagenb_doctesting_v6.patch\ntrac_7650-reviewer.patch\ntrac_7648-missing_indent.patch\ntrac_7663-rstrip_prompt.patch\ntrac_7847-empty-trash-no-referer.patch\ntrac_7786-template-jinja-idiomatic.patch\ntrac_7863-declare_vars_aux_js_v2.patch\ntrac_7874-typeset_interact_labels.patch\ntrac_7858-key_binding_vars_v2.patch\ntrac_7666-alphanumeric_cell_ids_B5.patch\ntrac_7666-reviewer.patch\ntrac_7835-preparsing-unicode_v2.patch\ntrac_7249_jinja2_v5.patch\ntrac_2779-sagenb-error-message.patch\n2779_2_banner.patch\ntrac_3154-spurious-u0027-output.patch\ntrac_7969-escaped-backslash.patch\ntrac_7937-sass_manifest.patch\ntrac_4217-html-system-formatting.patch\ntrac_3083-print-documentation.patch\n```\n\n\nSorry for the immense patch queue.",
+    "body": "Attachment [trac_3083-print-documentation.2.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.2.patch) by @TimDumol created at 2010-01-17 22:04:25\n\nThe new patch set is:\n\n\n```\ntrac_7650-sagenb_doctesting_v6.patch\ntrac_7650-reviewer.patch\ntrac_7648-missing_indent.patch\ntrac_7663-rstrip_prompt.patch\ntrac_7847-empty-trash-no-referer.patch\ntrac_7786-template-jinja-idiomatic.patch\ntrac_7863-declare_vars_aux_js_v2.patch\ntrac_7874-typeset_interact_labels.patch\ntrac_7858-key_binding_vars_v2.patch\ntrac_7666-alphanumeric_cell_ids_B5.patch\ntrac_7666-reviewer.patch\ntrac_7835-preparsing-unicode_v2.patch\ntrac_7249_jinja2_v5.patch\ntrac_2779-sagenb-error-message.patch\n2779_2_banner.patch\ntrac_3154-spurious-u0027-output.patch\ntrac_7969-escaped-backslash.patch\ntrac_7937-sass_manifest.patch\ntrac_4217-html-system-formatting.patch\ntrac_3083-print-documentation.patch\n```\n\n\nSorry for the immense patch queue.",
     "created_at": "2010-01-17T22:04:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3083#issuecomment-21276",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_3083-print-documentation.2.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.2.patch) by timdumol created at 2010-01-17 22:04:25
+Attachment [trac_3083-print-documentation.2.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.2.patch) by @TimDumol created at 2010-01-17 22:04:25
 
 The new patch set is:
 
@@ -196,7 +196,7 @@ archive/issue_comments_021277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3083#issuecomment-21277",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_021278.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3083#issuecomment-21278",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_021279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3083#issuecomment-21279",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_021280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3083#issuecomment-21280",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -273,16 +273,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_021281.json:
 ```json
 {
-    "body": "Attachment [trac_3083-print-documentation.3.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.3.patch) by timdumol created at 2010-01-20 08:36:44\n\nThanks for catching all of that, especially the last point. That was what I intended, and William and others here agreed with it, so it seems to be ok to implement. This patch should implement everything. I have opened a new patch to include sagenb.notebook.tutorial into the ReST documentation too: #8011.",
+    "body": "Attachment [trac_3083-print-documentation.3.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.3.patch) by @TimDumol created at 2010-01-20 08:36:44\n\nThanks for catching all of that, especially the last point. That was what I intended, and William and others here agreed with it, so it seems to be ok to implement. This patch should implement everything. I have opened a new patch to include sagenb.notebook.tutorial into the ReST documentation too: #8011.",
     "created_at": "2010-01-20T08:36:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3083#issuecomment-21281",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_3083-print-documentation.3.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.3.patch) by timdumol created at 2010-01-20 08:36:44
+Attachment [trac_3083-print-documentation.3.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.3.patch) by @TimDumol created at 2010-01-20 08:36:44
 
 Thanks for catching all of that, especially the last point. That was what I intended, and William and others here agreed with it, so it seems to be ok to implement. This patch should implement everything. I have opened a new patch to include sagenb.notebook.tutorial into the ReST documentation too: #8011.
 
@@ -298,7 +298,7 @@ archive/issue_comments_021282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3083#issuecomment-21282",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -311,16 +311,16 @@ Various fixes, small enhancements.  See comment.  Replaces previous.
 archive/issue_comments_021283.json:
 ```json
 {
-    "body": "Attachment [trac_3083-print-documentation.4.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.4.patch) by mpatel created at 2010-01-21 12:55:33",
+    "body": "Attachment [trac_3083-print-documentation.4.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.4.patch) by @qed777 created at 2010-01-21 12:55:33",
     "created_at": "2010-01-21T12:55:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3083#issuecomment-21283",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_3083-print-documentation.4.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.4.patch) by mpatel created at 2010-01-21 12:55:33
+Attachment [trac_3083-print-documentation.4.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.4.patch) by @qed777 created at 2010-01-21 12:55:33
 
 
 
@@ -329,16 +329,16 @@ Attachment [trac_3083-print-documentation.4.patch](tarball://root/attachments/so
 archive/issue_comments_021284.json:
 ```json
 {
-    "body": "Attachment [trac_3083-print-documentation.4.2.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.4.2.patch) by mpatel created at 2010-01-21 13:15:43\n\nV4.2\n\n* Implements the \"last point\" above in a different way.  With V3, the output formatting didn't persist --- docstrings in restarted/reopened and published worksheets were escaped.  Docstrings also appeared twice in each output cell.\n\n* Popping now\n  * Resets the cell's introspection state.\n  * Puts the object's name in the dialog title, with a bit of color.\n  * Destroys just that dialog on close.  The previous query was broad enough that it could close multiple dialogs.\n\n* Moves `\"\"\"nodoctest\\n\"\"\"` back to the top of `notebook_object.py`.\n\nAgain, great work!  My review is positive, but someone should review my changes.",
+    "body": "Attachment [trac_3083-print-documentation.4.2.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.4.2.patch) by @qed777 created at 2010-01-21 13:15:43\n\nV4.2\n\n* Implements the \"last point\" above in a different way.  With V3, the output formatting didn't persist --- docstrings in restarted/reopened and published worksheets were escaped.  Docstrings also appeared twice in each output cell.\n\n* Popping now\n  * Resets the cell's introspection state.\n  * Puts the object's name in the dialog title, with a bit of color.\n  * Destroys just that dialog on close.  The previous query was broad enough that it could close multiple dialogs.\n\n* Moves `\"\"\"nodoctest\\n\"\"\"` back to the top of `notebook_object.py`.\n\nAgain, great work!  My review is positive, but someone should review my changes.",
     "created_at": "2010-01-21T13:15:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3083#issuecomment-21284",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_3083-print-documentation.4.2.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.4.2.patch) by mpatel created at 2010-01-21 13:15:43
+Attachment [trac_3083-print-documentation.4.2.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.4.2.patch) by @qed777 created at 2010-01-21 13:15:43
 
 V4.2
 
@@ -365,7 +365,7 @@ archive/issue_comments_021285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3083#issuecomment-21285",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -383,7 +383,7 @@ archive/issue_comments_021286.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3083#issuecomment-21286",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -396,16 +396,16 @@ Moves the module docstring to the top as well.
 archive/issue_comments_021287.json:
 ```json
 {
-    "body": "Attachment [trac_3083-print-documentation.5.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.5.patch) by timdumol created at 2010-01-22 23:34:36\n\nPositive review for your changes, but I've added a new patch that moves the module docstring of `notebook_object.py` to the top of the file, otherwise documentation won't build (the notebook must be `setup.py instal`ed for the updated documentation to build).",
+    "body": "Attachment [trac_3083-print-documentation.5.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.5.patch) by @TimDumol created at 2010-01-22 23:34:36\n\nPositive review for your changes, but I've added a new patch that moves the module docstring of `notebook_object.py` to the top of the file, otherwise documentation won't build (the notebook must be `setup.py instal`ed for the updated documentation to build).",
     "created_at": "2010-01-22T23:34:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3083#issuecomment-21287",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_3083-print-documentation.5.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.5.patch) by timdumol created at 2010-01-22 23:34:36
+Attachment [trac_3083-print-documentation.5.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-print-documentation.5.patch) by @TimDumol created at 2010-01-22 23:34:36
 
 Positive review for your changes, but I've added a new patch that moves the module docstring of `notebook_object.py` to the top of the file, otherwise documentation won't build (the notebook must be `setup.py instal`ed for the updated documentation to build).
 
@@ -421,7 +421,7 @@ archive/issue_comments_021288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3083#issuecomment-21288",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -439,7 +439,7 @@ archive/issue_comments_021289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3083#issuecomment-21289",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -452,16 +452,16 @@ Don't truncate long docstrings.  Apply on top of previous patch, e.g., #8051's s
 archive/issue_comments_021290.json:
 ```json
 {
-    "body": "Attachment [trac_3083-notruncate.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-notruncate.patch) by mpatel created at 2010-01-30 05:53:41\n\nI've added a \"notruncate\" patch that blocks #8051.",
+    "body": "Attachment [trac_3083-notruncate.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-notruncate.patch) by @qed777 created at 2010-01-30 05:53:41\n\nI've added a \"notruncate\" patch that blocks #8051.",
     "created_at": "2010-01-30T05:53:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3083#issuecomment-21290",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_3083-notruncate.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-notruncate.patch) by mpatel created at 2010-01-30 05:53:41
+Attachment [trac_3083-notruncate.patch](tarball://root/attachments/some-uuid/ticket3083/trac_3083-notruncate.patch) by @qed777 created at 2010-01-30 05:53:41
 
 I've added a "notruncate" patch that blocks #8051.
 
@@ -477,7 +477,7 @@ archive/issue_comments_021291.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3083#issuecomment-21291",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

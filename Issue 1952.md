@@ -3,7 +3,7 @@
 archive/issues_001952.json:
 ```json
 {
-    "body": "Assignee: malb\n\n\n```\n[21:30] <wstein-1649> one thing about #1940...\n[21:30] <wstein-1649> If you're comparing two ideals, it might make sense to use the term ordering for which\n[21:30] <wstein-1649> computing groebner basis is *easy*.\n[21:31] <wstein-1649> E.g., wrt one order it can be super super hard, and wrt to another, quite easy.\n[21:31] <mabshoff> Yep. That sounds like a great idea.\n[21:31] <mabshoff> i.e. degrevlex per default.\n[21:31] <mabshoff> Ticket?\n[21:31] <wstein-1649> But in malb's code for #1940 he just uses whatever term order.\n[21:31] <mabshoff> Well, I think he caches the gbasis, so in some cases it might already exist.\n[21:32] <wstein-1649> Also, he doesn't even seem to check that other is an ideal.\n[21:32] <wstein-1649> Also, if the two ideals are in the same ring but with two different term orders,\n[21:32] <wstein-1649> that __cmp__ function will get the wrong answer.\n[21:32] <mabshoff> mmh.\n[21:32] <mabshoff> I guess reopen, but leave the patch applied?\n[21:32] <wstein-1649> I think his patch perfectly addresses the given #1940.\n[21:32] <wstein-1649> But there should be another trac ticket about my points above.\n[21:33] <wstein-1649> Yeah?\n[21:33] <mabshoff> Yep.\n[21:33] <wstein-1649> Can you open it and maybe paste this discussion in?\n[21:33] <mabshoff> Already on the way :)\n[21:33] <wstein-1649> cool.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1952\n\n",
+    "body": "Assignee: @malb\n\n\n```\n[21:30] <wstein-1649> one thing about #1940...\n[21:30] <wstein-1649> If you're comparing two ideals, it might make sense to use the term ordering for which\n[21:30] <wstein-1649> computing groebner basis is *easy*.\n[21:31] <wstein-1649> E.g., wrt one order it can be super super hard, and wrt to another, quite easy.\n[21:31] <mabshoff> Yep. That sounds like a great idea.\n[21:31] <mabshoff> i.e. degrevlex per default.\n[21:31] <mabshoff> Ticket?\n[21:31] <wstein-1649> But in malb's code for #1940 he just uses whatever term order.\n[21:31] <mabshoff> Well, I think he caches the gbasis, so in some cases it might already exist.\n[21:32] <wstein-1649> Also, he doesn't even seem to check that other is an ideal.\n[21:32] <wstein-1649> Also, if the two ideals are in the same ring but with two different term orders,\n[21:32] <wstein-1649> that __cmp__ function will get the wrong answer.\n[21:32] <mabshoff> mmh.\n[21:32] <mabshoff> I guess reopen, but leave the patch applied?\n[21:32] <wstein-1649> I think his patch perfectly addresses the given #1940.\n[21:32] <wstein-1649> But there should be another trac ticket about my points above.\n[21:33] <wstein-1649> Yeah?\n[21:33] <mabshoff> Yep.\n[21:33] <wstein-1649> Can you open it and maybe paste this discussion in?\n[21:33] <mabshoff> Already on the way :)\n[21:33] <wstein-1649> cool.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1952\n\n",
     "created_at": "2008-01-27T20:47:54Z",
     "labels": [
         "commutative algebra",
@@ -17,7 +17,7 @@ archive/issues_001952.json:
     "user": "mabshoff"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 
 ```
@@ -61,7 +61,7 @@ archive/issue_comments_012424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1952#issuecomment-12424",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_012425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1952#issuecomment-12425",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_012428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1952#issuecomment-12428",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -281,16 +281,16 @@ Michael
 archive/issue_comments_012431.json:
 ```json
 {
-    "body": "Attachment [mpolynomial_ideal_refactor.patch](tarball://root/attachments/some-uuid/ticket1952/mpolynomial_ideal_refactor.patch) by malb created at 2008-08-19 15:00:37\n\nThe attached patch fixes that issue and also refactors caching of Gr\u00f6bner bases.",
+    "body": "Attachment [mpolynomial_ideal_refactor.patch](tarball://root/attachments/some-uuid/ticket1952/mpolynomial_ideal_refactor.patch) by @malb created at 2008-08-19 15:00:37\n\nThe attached patch fixes that issue and also refactors caching of Gr\u00f6bner bases.",
     "created_at": "2008-08-19T15:00:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1952#issuecomment-12431",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [mpolynomial_ideal_refactor.patch](tarball://root/attachments/some-uuid/ticket1952/mpolynomial_ideal_refactor.patch) by malb created at 2008-08-19 15:00:37
+Attachment [mpolynomial_ideal_refactor.patch](tarball://root/attachments/some-uuid/ticket1952/mpolynomial_ideal_refactor.patch) by @malb created at 2008-08-19 15:00:37
 
 The attached patch fixes that issue and also refactors caching of Gröbner bases.
 
@@ -306,7 +306,7 @@ archive/issue_comments_012432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1952#issuecomment-12432",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -319,16 +319,16 @@ was, can I ask you to review my patch?
 archive/issue_comments_012433.json:
 ```json
 {
-    "body": "Attachment [trac_1952-2.patch](tarball://root/attachments/some-uuid/ticket1952/trac_1952-2.patch) by mhansen created at 2008-08-26 23:07:01",
+    "body": "Attachment [trac_1952-2.patch](tarball://root/attachments/some-uuid/ticket1952/trac_1952-2.patch) by @mwhansen created at 2008-08-26 23:07:01",
     "created_at": "2008-08-26T23:07:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1952#issuecomment-12433",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_1952-2.patch](tarball://root/attachments/some-uuid/ticket1952/trac_1952-2.patch) by mhansen created at 2008-08-26 23:07:01
+Attachment [trac_1952-2.patch](tarball://root/attachments/some-uuid/ticket1952/trac_1952-2.patch) by @mwhansen created at 2008-08-26 23:07:01
 
 
 
@@ -342,7 +342,7 @@ archive/issue_comments_012434.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1952#issuecomment-12434",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -428,16 +428,16 @@ Got:
 archive/issue_comments_012436.json:
 ```json
 {
-    "body": "Attachment [trac_1952-tutfix.patch](tarball://root/attachments/some-uuid/ticket1952/trac_1952-tutfix.patch) by malb created at 2008-08-27 20:10:09\n\nApply all three patches in order (last one goes to doc repo).",
+    "body": "Attachment [trac_1952-tutfix.patch](tarball://root/attachments/some-uuid/ticket1952/trac_1952-tutfix.patch) by @malb created at 2008-08-27 20:10:09\n\nApply all three patches in order (last one goes to doc repo).",
     "created_at": "2008-08-27T20:10:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1952#issuecomment-12436",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_1952-tutfix.patch](tarball://root/attachments/some-uuid/ticket1952/trac_1952-tutfix.patch) by malb created at 2008-08-27 20:10:09
+Attachment [trac_1952-tutfix.patch](tarball://root/attachments/some-uuid/ticket1952/trac_1952-tutfix.patch) by @malb created at 2008-08-27 20:10:09
 
 Apply all three patches in order (last one goes to doc repo).
 

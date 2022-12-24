@@ -3,7 +3,7 @@
 archive/issues_003056.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  burcin\n\nThe first computation of z^2 is incorrect, whereas the second is correct:\n\n```\nsage: C.<t> = PowerSeriesRing(ZZ)\nsage: D.<s> = PolynomialRing(C)\nsage: z = (1 + O(t)) + t*s^2\nsage: z^2\n t^2*s^4 + 1 + O(t)\nsage: z._mul_generic(z)\n t^2*s^4 + (2*t + O(t^2))*s^2 + 1 + O(t)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3056\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @burcin\n\nThe first computation of z^2 is incorrect, whereas the second is correct:\n\n```\nsage: C.<t> = PowerSeriesRing(ZZ)\nsage: D.<s> = PolynomialRing(C)\nsage: z = (1 + O(t)) + t*s^2\nsage: z^2\n t^2*s^4 + 1 + O(t)\nsage: z._mul_generic(z)\n t^2*s^4 + (2*t + O(t^2))*s^2 + 1 + O(t)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3056\n\n",
     "created_at": "2008-04-29T21:04:34Z",
     "labels": [
         "Cygwin",
@@ -14,12 +14,12 @@ archive/issues_003056.json:
     "title": "bug with polynomials over power series",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3056",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 Assignee: mabshoff
 
-CC:  burcin
+CC:  @burcin
 
 The first computation of z^2 is incorrect, whereas the second is correct:
 
@@ -50,7 +50,7 @@ archive/issue_comments_021097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3056#issuecomment-21097",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_021098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3056#issuecomment-21098",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_021099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3056#issuecomment-21099",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_021100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3056#issuecomment-21100",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_021101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3056#issuecomment-21101",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -135,16 +135,16 @@ A bit of experimentation by David Harvey suggests that _mul_karatsuba is at faul
 archive/issue_comments_021102.json:
 ```json
 {
-    "body": "Changing assignee from dmharvey to roed.",
+    "body": "Changing assignee from dmharvey to @roed314.",
     "created_at": "2008-04-29T21:14:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3056#issuecomment-21102",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
-Changing assignee from dmharvey to roed.
+Changing assignee from dmharvey to @roed314.
 
 
 
@@ -158,7 +158,7 @@ archive/issue_comments_021103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3056#issuecomment-21103",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_021108.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3056#issuecomment-21108",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002432.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2432\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2432\n\n",
     "created_at": "2008-03-09T02:57:53Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_002432.json:
     "title": "Add support for Macdonald polynomials, LLT polynomials, Jack polynomials, etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2432",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -39,7 +39,7 @@ archive/issue_comments_016452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2432",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2432#issuecomment-16452",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_016453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2432",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2432#issuecomment-16453",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_016454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2432",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2432#issuecomment-16454",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_016456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2432",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2432#issuecomment-16456",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_016457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2432",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2432#issuecomment-16457",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -608,7 +608,7 @@ archive/issue_comments_016458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2432",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2432#issuecomment-16458",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -727,7 +727,7 @@ archive/issue_comments_016459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2432",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2432#issuecomment-16459",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -925,7 +925,7 @@ archive/issue_comments_016460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2432",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2432#issuecomment-16460",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -960,16 +960,16 @@ Great job!
 archive/issue_comments_016461.json:
 ```json
 {
-    "body": "Attachment [2432-referee.patch](tarball://root/attachments/some-uuid/ticket2432/2432-referee.patch) by mhansen created at 2008-03-14 19:01:52\n\nI've updated the patch to fix the typos.",
+    "body": "Attachment [2432-referee.patch](tarball://root/attachments/some-uuid/ticket2432/2432-referee.patch) by @mwhansen created at 2008-03-14 19:01:52\n\nI've updated the patch to fix the typos.",
     "created_at": "2008-03-14T19:01:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2432",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2432#issuecomment-16461",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2432-referee.patch](tarball://root/attachments/some-uuid/ticket2432/2432-referee.patch) by mhansen created at 2008-03-14 19:01:52
+Attachment [2432-referee.patch](tarball://root/attachments/some-uuid/ticket2432/2432-referee.patch) by @mwhansen created at 2008-03-14 19:01:52
 
 I've updated the patch to fix the typos.
 

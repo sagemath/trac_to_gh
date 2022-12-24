@@ -3,7 +3,7 @@
 archive/issues_001887.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  boothby\n\nBased on an idea by Tom Boothby for translating multigraphs to plain graphs with more vertices.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1887\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  boothby\n\nBased on an idea by Tom Boothby for translating multigraphs to plain graphs with more vertices.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1887\n\n",
     "created_at": "2008-01-23T00:50:42Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_001887.json:
     "title": "[with patch, needs review] graph isomorphism for multiple edges",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1887",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 CC:  boothby
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1887
 archive/issue_comments_011952.json:
 ```json
 {
-    "body": "Attachment [multinice.patch](tarball://root/attachments/some-uuid/ticket1887/multinice.patch) by rlm created at 2008-01-26 19:25:27\n\nPatch on top of multinice.patch",
+    "body": "Attachment [multinice.patch](tarball://root/attachments/some-uuid/ticket1887/multinice.patch) by @rlmill created at 2008-01-26 19:25:27\n\nPatch on top of multinice.patch",
     "created_at": "2008-01-26T19:25:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1887#issuecomment-11952",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [multinice.patch](tarball://root/attachments/some-uuid/ticket1887/multinice.patch) by rlm created at 2008-01-26 19:25:27
+Attachment [multinice.patch](tarball://root/attachments/some-uuid/ticket1887/multinice.patch) by @rlmill created at 2008-01-26 19:25:27
 
 Patch on top of multinice.patch
 
@@ -54,16 +54,16 @@ Patch on top of multinice.patch
 archive/issue_comments_011953.json:
 ```json
 {
-    "body": "Attachment [multinice-3.patch](tarball://root/attachments/some-uuid/ticket1887/multinice-3.patch) by rlm created at 2008-01-26 19:37:41\n\nPatch on top of multinice-2.patch",
+    "body": "Attachment [multinice-3.patch](tarball://root/attachments/some-uuid/ticket1887/multinice-3.patch) by @rlmill created at 2008-01-26 19:37:41\n\nPatch on top of multinice-2.patch",
     "created_at": "2008-01-26T19:37:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1887#issuecomment-11953",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [multinice-3.patch](tarball://root/attachments/some-uuid/ticket1887/multinice-3.patch) by rlm created at 2008-01-26 19:37:41
+Attachment [multinice-3.patch](tarball://root/attachments/some-uuid/ticket1887/multinice-3.patch) by @rlmill created at 2008-01-26 19:37:41
 
 Patch on top of multinice-2.patch
 

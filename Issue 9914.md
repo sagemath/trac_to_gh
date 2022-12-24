@@ -3,7 +3,7 @@
 archive/issues_009914.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nKeywords: NZMATH\n\nNZMATH uses a subtype of Python's \"long\" for its bignum type.  This works fine with plain mpmath, but when mpmath runs under Sage it uses Cython code that's incompatible with NZMATH.  This patch fixes mpmath-under-sage to fix some incompatibilities with NZMATH.  (It also modifies ZZ to allow initialization from a subclass of int/long/float.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9915\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: NZMATH\n\nNZMATH uses a subtype of Python's \"long\" for its bignum type.  This works fine with plain mpmath, but when mpmath runs under Sage it uses Cython code that's incompatible with NZMATH.  This patch fixes mpmath-under-sage to fix some incompatibilities with NZMATH.  (It also modifies ZZ to allow initialization from a subclass of int/long/float.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9915\n\n",
     "created_at": "2010-09-16T08:48:13Z",
     "labels": [
         "basic arithmetic",
@@ -17,7 +17,7 @@ archive/issues_009914.json:
     "user": "cwitty"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Keywords: NZMATH
 
@@ -76,7 +76,7 @@ archive/issue_comments_098649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9914#issuecomment-98649",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_098650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9914#issuecomment-98650",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_098651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9914#issuecomment-98651",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_098652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9914#issuecomment-98652",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_098653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9914#issuecomment-98653",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_098654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9914#issuecomment-98654",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

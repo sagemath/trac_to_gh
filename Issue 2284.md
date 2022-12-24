@@ -3,7 +3,7 @@
 archive/issues_002284.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: f(x,y,z) = 2*x + 3*z^3 - sin(y)\nsage: f._latex_()\n'\\\\left((x, y, z) \\\\right)\\\\ {\\\\mapsto}\\\\ {3 {z}^{3} } - \\\\sin \\\\left( y\n\\\\right) + {2 x}'\n```\n\n(note the extra parens on the left of the arrow)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2284\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: f(x,y,z) = 2*x + 3*z^3 - sin(y)\nsage: f._latex_()\n'\\\\left((x, y, z) \\\\right)\\\\ {\\\\mapsto}\\\\ {3 {z}^{3} } - \\\\sin \\\\left( y\n\\\\right) + {2 x}'\n```\n\n(note the extra parens on the left of the arrow)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2284\n\n",
     "created_at": "2008-02-24T00:01:19Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_002284.json:
     "title": "CallableSymbolicExpression._latex_() has some odd behavior",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2284",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -45,7 +45,7 @@ archive/issue_comments_015154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2284#issuecomment-15154",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_015155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2284#issuecomment-15155",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 
@@ -85,16 +85,16 @@ latex fix
 archive/issue_comments_015156.json:
 ```json
 {
-    "body": "Attachment [latex.hg](tarball://root/attachments/some-uuid/ticket2284/latex.hg) by moretti created at 2008-02-24 00:36:40\n\nOkay, submitted a fix; need a review.",
+    "body": "Attachment [latex.hg](tarball://root/attachments/some-uuid/ticket2284/latex.hg) by @bobmoretti created at 2008-02-24 00:36:40\n\nOkay, submitted a fix; need a review.",
     "created_at": "2008-02-24T00:36:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2284#issuecomment-15156",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 
-Attachment [latex.hg](tarball://root/attachments/some-uuid/ticket2284/latex.hg) by moretti created at 2008-02-24 00:36:40
+Attachment [latex.hg](tarball://root/attachments/some-uuid/ticket2284/latex.hg) by @bobmoretti created at 2008-02-24 00:36:40
 
 Okay, submitted a fix; need a review.
 
@@ -110,7 +110,7 @@ archive/issue_comments_015157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2284#issuecomment-15157",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

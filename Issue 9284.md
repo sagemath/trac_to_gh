@@ -3,7 +3,7 @@
 archive/issues_009284.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mkoeppe\n\nCurrently on SAGE online (at least on http://www.sagenb.org/) account user settings, the user cannot choose what language to have one's SAGE session in.  If this were enabled, then more users might be attracted to SAGE.  Having the user specify his preferred SAGE session language as the default when setting up a new account will attract more users worldwide.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9284\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @mkoeppe\n\nCurrently on SAGE online (at least on http://www.sagenb.org/) account user settings, the user cannot choose what language to have one's SAGE session in.  If this were enabled, then more users might be attracted to SAGE.  Having the user specify his preferred SAGE session language as the default when setting up a new account will attract more users worldwide.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9284\n\n",
     "created_at": "2010-06-20T19:46:48Z",
     "labels": [
         "user interface",
@@ -17,9 +17,9 @@ archive/issues_009284.json:
     "user": "q10"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  mkoeppe
+CC:  @mkoeppe
 
 Currently on SAGE online (at least on http://www.sagenb.org/) account user settings, the user cannot choose what language to have one's SAGE session in.  If this were enabled, then more users might be attracted to SAGE.  Having the user specify his preferred SAGE session language as the default when setting up a new account will attract more users worldwide.
 
@@ -39,7 +39,7 @@ archive/issue_comments_087450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9284#issuecomment-87450",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_087451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9284#issuecomment-87451",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_087452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9284#issuecomment-87452",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_087453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9284#issuecomment-87453",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_087454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9284#issuecomment-87454",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_087455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9284#issuecomment-87455",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_087456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9284#issuecomment-87456",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

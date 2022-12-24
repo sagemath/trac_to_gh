@@ -14,7 +14,7 @@ archive/issues_004553.json:
     "title": "[with patch, needs review] a few new methods for FiniteFieldElement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4553",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: somebody
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4553
 archive/issue_comments_034128.json:
 ```json
 {
-    "body": "Attachment [finitefieldelement.patch](tarball://root/attachments/some-uuid/ticket4553/finitefieldelement.patch) by jhpalmieri created at 2008-11-19 18:05:19",
+    "body": "Attachment [finitefieldelement.patch](tarball://root/attachments/some-uuid/ticket4553/finitefieldelement.patch) by @jhpalmieri created at 2008-11-19 18:05:19",
     "created_at": "2008-11-19T18:05:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4553#issuecomment-34128",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [finitefieldelement.patch](tarball://root/attachments/some-uuid/ticket4553/finitefieldelement.patch) by jhpalmieri created at 2008-11-19 18:05:19
+Attachment [finitefieldelement.patch](tarball://root/attachments/some-uuid/ticket4553/finitefieldelement.patch) by @jhpalmieri created at 2008-11-19 18:05:19
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_034129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4553#issuecomment-34129",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_034130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4553#issuecomment-34130",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_034131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4553#issuecomment-34131",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -154,16 +154,16 @@ this replaces the other patch
 archive/issue_comments_034132.json:
 ```json
 {
-    "body": "Attachment [finitefieldelement_new.patch](tarball://root/attachments/some-uuid/ticket4553/finitefieldelement_new.patch) by cremona created at 2008-11-24 08:58:04\n\nSorry about my silly comment about q'th power against p'th power, I was not thinking.\n\nThe linear algebra approach will have to wait until we have a common interface for all finite fields -- currently the functions available depend on q since they differ according to whether we use givaro or NTL or pari.  (e.g. an element a in GF(q) sometimes has a._coordinates() but not always.  So it's fine to go ahead with this one for now, perhaps with a note that a better implementation might be possible in future.\n\nI hope to review this properly, but Monday morning calls...",
+    "body": "Attachment [finitefieldelement_new.patch](tarball://root/attachments/some-uuid/ticket4553/finitefieldelement_new.patch) by @JohnCremona created at 2008-11-24 08:58:04\n\nSorry about my silly comment about q'th power against p'th power, I was not thinking.\n\nThe linear algebra approach will have to wait until we have a common interface for all finite fields -- currently the functions available depend on q since they differ according to whether we use givaro or NTL or pari.  (e.g. an element a in GF(q) sometimes has a._coordinates() but not always.  So it's fine to go ahead with this one for now, perhaps with a note that a better implementation might be possible in future.\n\nI hope to review this properly, but Monday morning calls...",
     "created_at": "2008-11-24T08:58:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4553#issuecomment-34132",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [finitefieldelement_new.patch](tarball://root/attachments/some-uuid/ticket4553/finitefieldelement_new.patch) by cremona created at 2008-11-24 08:58:04
+Attachment [finitefieldelement_new.patch](tarball://root/attachments/some-uuid/ticket4553/finitefieldelement_new.patch) by @JohnCremona created at 2008-11-24 08:58:04
 
 Sorry about my silly comment about q'th power against p'th power, I was not thinking.
 
@@ -183,7 +183,7 @@ archive/issue_comments_034133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4553#issuecomment-34133",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

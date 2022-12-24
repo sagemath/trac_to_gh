@@ -14,7 +14,7 @@ archive/issues_008769.json:
     "title": "linbox fails on Fedora Core 12 x86_64 with gcc-4.5.0, due to \"Givaro not good enough\" error.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8769",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: GeorgSWeber
@@ -107,7 +107,7 @@ archive/issue_comments_080253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8769",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8769#issuecomment-80253",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_080254.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8769",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8769#issuecomment-80254",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_080255.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8769",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8769#issuecomment-80255",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

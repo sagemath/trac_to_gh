@@ -3,7 +3,7 @@
 archive/issues_001837.json:
 ```json
 {
-    "body": "Assignee: malb\n\nNow this has an effect:\n\n```\nsage: sr = mq.SR()\nsage: F,s = sr.polynomial_system()\nsage: F.groebner_basis(redSB=False)\n[(a)*k002 + (a^2)*k003 + 1, k001 + (a^2 + 1)*k002 + (a^3 + a + 1), k000 + (a^3 + a^2 + 1)*k003 + (a^3 + a^2 + a), (a^2)*s003 + (a^3 + a^2)*k003 + (a + 1), s002 + (a^2)*k002 + (a), s001 + (a)*k001 + (a^2 + 1), s000 + (a^2 + 1)*k000 + (a + 1), w103 + k003 + (a^3 + a^2 + 1), w102 + k002 + (a^3 + 1), w101 + k001 + (a^3 + a + 1), w100 + k000 + (a^3 + a^2 + a), (a^2)*x103 + (a^2)*s003 + (a + 1), x102 + s002 + (a), x101 + (a^3 + a + 1)*x102 + (a^3 + 1)*x103 + s001 + (a^3 + a + 1)*s002 + (a^3 + 1)*s003 + (a), x100 + (a^3)*x101 + (a + 1)*x102 + (a + 1)*x103 + s000 + (a^3)*s001 + (a + 1)*s002 + (a + 1)*s003 + (a^2 + a + 1), k103 + s000 + (a^3)*s001 + (a + 1)*s002 + (a + 1)*s003 + (a^2 + a), k102 + (a^3 + a)*s000 + (a^2)*s001 + (a^2)*s002 + s003 + (a^2 + a + 1), k101 + (a)*s000 + (a)*s001 + s002 + (a^3 + a^2 + a + 1)*s003 + (a^2 + a), k100 + (a^2 + 1)*s000 + s001 + (a^3 + a^2)*s002 + (a^2 + 1)*s003 + (a^2 + a + 1), k003^2 + k000]\n\nsage: F.groebner_basis(redSB=True)\n[(a)*k002 + (a^2)*k003 + 1, (a)*k001 + (a^2 + a + 1)*k003, k000 + (a^3 + a^2 + 1)*k003 + (a^3 + a^2 + a), (a^2)*s003 + (a^3 + a^2)*k003 + (a + 1), (a)*s002 + (a + 1)*k003, s001 + (a^2 + a + 1)*k003 + (a^2 + 1), s000 + (a^3 + a^2)*k003, w103 + k003 + (a^3 + a^2 + 1), w102 + (a)*k003, (a)*w101 + (a^2 + a + 1)*k003 + (a^2 + 1), w100 + (a^3 + a^2 + 1)*k003, x103 + (a + 1)*k003, (a)*x102 + (a + 1)*k003 + (a^2), (a^3)*x101 + (a^3 + a^2 + 1)*k003, (a^2)*x100 + (a^2 + 1)*k003 + (a^3 + a^2), (a^3)*k103 + k003 + (a^2 + a), (a^3)*k102 + (a^2 + a + 1)*k003 + (a^2 + a), (a^3)*k101 + k003 + (a^3 + a^2 + a), (a^3)*k100 + (a^2 + a + 1)*k003 + (a^3 + a^2 + a), k003^2 + (a^3 + a^2 + 1)*k003 + (a^3 + a^2 + a)]\n```\n\n\nThis is not equivalent to #1396 because this isn't unified yet.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1837\n\n",
+    "body": "Assignee: @malb\n\nNow this has an effect:\n\n```\nsage: sr = mq.SR()\nsage: F,s = sr.polynomial_system()\nsage: F.groebner_basis(redSB=False)\n[(a)*k002 + (a^2)*k003 + 1, k001 + (a^2 + 1)*k002 + (a^3 + a + 1), k000 + (a^3 + a^2 + 1)*k003 + (a^3 + a^2 + a), (a^2)*s003 + (a^3 + a^2)*k003 + (a + 1), s002 + (a^2)*k002 + (a), s001 + (a)*k001 + (a^2 + 1), s000 + (a^2 + 1)*k000 + (a + 1), w103 + k003 + (a^3 + a^2 + 1), w102 + k002 + (a^3 + 1), w101 + k001 + (a^3 + a + 1), w100 + k000 + (a^3 + a^2 + a), (a^2)*x103 + (a^2)*s003 + (a + 1), x102 + s002 + (a), x101 + (a^3 + a + 1)*x102 + (a^3 + 1)*x103 + s001 + (a^3 + a + 1)*s002 + (a^3 + 1)*s003 + (a), x100 + (a^3)*x101 + (a + 1)*x102 + (a + 1)*x103 + s000 + (a^3)*s001 + (a + 1)*s002 + (a + 1)*s003 + (a^2 + a + 1), k103 + s000 + (a^3)*s001 + (a + 1)*s002 + (a + 1)*s003 + (a^2 + a), k102 + (a^3 + a)*s000 + (a^2)*s001 + (a^2)*s002 + s003 + (a^2 + a + 1), k101 + (a)*s000 + (a)*s001 + s002 + (a^3 + a^2 + a + 1)*s003 + (a^2 + a), k100 + (a^2 + 1)*s000 + s001 + (a^3 + a^2)*s002 + (a^2 + 1)*s003 + (a^2 + a + 1), k003^2 + k000]\n\nsage: F.groebner_basis(redSB=True)\n[(a)*k002 + (a^2)*k003 + 1, (a)*k001 + (a^2 + a + 1)*k003, k000 + (a^3 + a^2 + 1)*k003 + (a^3 + a^2 + a), (a^2)*s003 + (a^3 + a^2)*k003 + (a + 1), (a)*s002 + (a + 1)*k003, s001 + (a^2 + a + 1)*k003 + (a^2 + 1), s000 + (a^3 + a^2)*k003, w103 + k003 + (a^3 + a^2 + 1), w102 + (a)*k003, (a)*w101 + (a^2 + a + 1)*k003 + (a^2 + 1), w100 + (a^3 + a^2 + 1)*k003, x103 + (a + 1)*k003, (a)*x102 + (a + 1)*k003 + (a^2), (a^3)*x101 + (a^3 + a^2 + 1)*k003, (a^2)*x100 + (a^2 + 1)*k003 + (a^3 + a^2), (a^3)*k103 + k003 + (a^2 + a), (a^3)*k102 + (a^2 + a + 1)*k003 + (a^2 + a), (a^3)*k101 + k003 + (a^3 + a^2 + a), (a^3)*k100 + (a^2 + a + 1)*k003 + (a^3 + a^2 + a), k003^2 + (a^3 + a^2 + 1)*k003 + (a^3 + a^2 + a)]\n```\n\n\nThis is not equivalent to #1396 because this isn't unified yet.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1837\n\n",
     "created_at": "2008-01-18T19:53:57Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_001837.json:
     "title": "[with patch] pass through options from groebner_basis",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1837",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Now this has an effect:
 
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1837
 archive/issue_comments_011627.json:
 ```json
 {
-    "body": "Attachment [groebner-kwds.patch](tarball://root/attachments/some-uuid/ticket1837/groebner-kwds.patch) by malb created at 2008-01-18 19:54:15",
+    "body": "Attachment [groebner-kwds.patch](tarball://root/attachments/some-uuid/ticket1837/groebner-kwds.patch) by @malb created at 2008-01-18 19:54:15",
     "created_at": "2008-01-18T19:54:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1837#issuecomment-11627",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [groebner-kwds.patch](tarball://root/attachments/some-uuid/ticket1837/groebner-kwds.patch) by malb created at 2008-01-18 19:54:15
+Attachment [groebner-kwds.patch](tarball://root/attachments/some-uuid/ticket1837/groebner-kwds.patch) by @malb created at 2008-01-18 19:54:15
 
 
 
@@ -197,7 +197,7 @@ archive/issue_comments_011633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1837#issuecomment-11633",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

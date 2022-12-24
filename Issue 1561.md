@@ -3,7 +3,7 @@
 archive/issues_001561.json:
 ```json
 {
-    "body": "Assignee: malb\n\nKeywords: matrix vector transpose FreeModuleElement\n\nThis makes `matrix(vector(2, 3, 4))` and `transpose(vector(2, 3, 4))` work -- very handy when translating PARI code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1561\n\n",
+    "body": "Assignee: @malb\n\nKeywords: matrix vector transpose FreeModuleElement\n\nThis makes `matrix(vector(2, 3, 4))` and `transpose(vector(2, 3, 4))` work -- very handy when translating PARI code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1561\n\n",
     "created_at": "2007-12-18T19:36:47Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_001561.json:
     "title": "[with patch] add ._matrix_() and .transpose() to vector/FreeModuleElement.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1561",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Keywords: matrix vector transpose FreeModuleElement
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1561
 archive/issue_comments_009941.json:
 ```json
 {
-    "body": "Attachment [ncalexan-vector-matrix.hg](tarball://root/attachments/some-uuid/ticket1561/ncalexan-vector-matrix.hg) by ncalexan created at 2007-12-18 19:37:27",
+    "body": "Attachment [ncalexan-vector-matrix.hg](tarball://root/attachments/some-uuid/ticket1561/ncalexan-vector-matrix.hg) by @ncalexan created at 2007-12-18 19:37:27",
     "created_at": "2007-12-18T19:37:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1561",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1561#issuecomment-9941",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [ncalexan-vector-matrix.hg](tarball://root/attachments/some-uuid/ticket1561/ncalexan-vector-matrix.hg) by ncalexan created at 2007-12-18 19:37:27
+Attachment [ncalexan-vector-matrix.hg](tarball://root/attachments/some-uuid/ticket1561/ncalexan-vector-matrix.hg) by @ncalexan created at 2007-12-18 19:37:27
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_009942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1561",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1561#issuecomment-9942",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_009943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1561",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1561#issuecomment-9943",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

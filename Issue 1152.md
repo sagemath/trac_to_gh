@@ -3,7 +3,7 @@
 archive/issues_001152.json:
 ```json
 {
-    "body": "Assignee: was\n\nhttp://sage.math.washington.edu/home/yqiang/sqlite-3.5.2.p1.spkg\n\nbuild and tested on OS X 10.5, needs some more testing before going into 2.8.13\n\nIssue created by migration from https://trac.sagemath.org/ticket/1152\n\n",
+    "body": "Assignee: @williamstein\n\nhttp://sage.math.washington.edu/home/yqiang/sqlite-3.5.2.p1.spkg\n\nbuild and tested on OS X 10.5, needs some more testing before going into 2.8.13\n\nIssue created by migration from https://trac.sagemath.org/ticket/1152\n\n",
     "created_at": "2007-11-12T06:52:55Z",
     "labels": [
         "distribution",
@@ -14,10 +14,10 @@ archive/issues_001152.json:
     "title": "[UPDATED SPKG] sqlite 3.5.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1152",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 http://sage.math.washington.edu/home/yqiang/sqlite-3.5.2.p1.spkg
 
@@ -39,7 +39,7 @@ archive/issue_comments_007034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1152",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1152#issuecomment-7034",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

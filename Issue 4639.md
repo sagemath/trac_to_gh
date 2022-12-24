@@ -3,7 +3,7 @@
 archive/issues_004639.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  robertwb\n\nI think that the following example speaks for itself. (This was on an x86, 32 bit, running Ubuntu.)\n\nAlso, I believe that these examples had no problems in sage 3.0.2.\n\n\n```\nbober@bober:~/math/tests$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.2, Release Date: 2008-11-20                         |\n| Type notebook() for the GUI, and license() for information.        |\nsage: get_memory_usage()\n114.5546875\nsage: for z in xrange(10000):\n   ...:     a = 3^i\n   ...:     \nsage: get_memory_usage()\n121.4375\nsage: for z in xrange(10000):\n    a = 3^CC.0\n   ...:     \nsage: get_memory_usage()\n128.96484375\nsage: for z in xrange(10000):\n    a = 3.0^CC.0\n   ...:     \nsage: get_memory_usage()\n187.36328125\nsage: var('t')\nt\nsage: for z in xrange(10000):\n    a = 3.0^t\n   ....:     \nsage: get_memory_usage()\n231.4609375\nsage: #But, integer^integer is OK:\nsage: for z in xrange(10000):\n    a = 3^3\n   ....:     \nsage: get_memory_usage\n<function get_memory_usage at 0x8415f0c>\nsage: get_memory_usage()\n231.58984375\nsage: for z in xrange(10000):\n    a = 3^3\n   ....:     \nsage: get_memory_usage()\n231.58984375\nsage: for z in xrange(10000):\n    a = 3.0^CC.0\n   ....:     \nsaget_memory_usage()\n290.1640625\nsage: for z in xrange(10000):\n    a = CC.0^CC.0\n   ....:     \nsage: get_memory_usage()\n290.1640625\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4639\n\n",
+    "body": "Assignee: somebody\n\nCC:  @robertwb\n\nI think that the following example speaks for itself. (This was on an x86, 32 bit, running Ubuntu.)\n\nAlso, I believe that these examples had no problems in sage 3.0.2.\n\n\n```\nbober@bober:~/math/tests$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.2, Release Date: 2008-11-20                         |\n| Type notebook() for the GUI, and license() for information.        |\nsage: get_memory_usage()\n114.5546875\nsage: for z in xrange(10000):\n   ...:     a = 3^i\n   ...:     \nsage: get_memory_usage()\n121.4375\nsage: for z in xrange(10000):\n    a = 3^CC.0\n   ...:     \nsage: get_memory_usage()\n128.96484375\nsage: for z in xrange(10000):\n    a = 3.0^CC.0\n   ...:     \nsage: get_memory_usage()\n187.36328125\nsage: var('t')\nt\nsage: for z in xrange(10000):\n    a = 3.0^t\n   ....:     \nsage: get_memory_usage()\n231.4609375\nsage: #But, integer^integer is OK:\nsage: for z in xrange(10000):\n    a = 3^3\n   ....:     \nsage: get_memory_usage\n<function get_memory_usage at 0x8415f0c>\nsage: get_memory_usage()\n231.58984375\nsage: for z in xrange(10000):\n    a = 3^3\n   ....:     \nsage: get_memory_usage()\n231.58984375\nsage: for z in xrange(10000):\n    a = 3.0^CC.0\n   ....:     \nsaget_memory_usage()\n290.1640625\nsage: for z in xrange(10000):\n    a = CC.0^CC.0\n   ....:     \nsage: get_memory_usage()\n290.1640625\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4639\n\n",
     "created_at": "2008-11-27T19:06:08Z",
     "labels": [
         "basic arithmetic",
@@ -19,7 +19,7 @@ archive/issues_004639.json:
 ```
 Assignee: somebody
 
-CC:  robertwb
+CC:  @robertwb
 
 I think that the following example speaks for itself. (This was on an x86, 32 bit, running Ubuntu.)
 
@@ -193,7 +193,7 @@ archive/issue_comments_034898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4639#issuecomment-34898",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_034900.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4639#issuecomment-34900",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_034902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4639#issuecomment-34902",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -324,16 +324,16 @@ I think I can dig further, this is just as far as I got last night. It's probabl
 archive/issue_comments_034903.json:
 ```json
 {
-    "body": "Attachment [4639-coerce-leak.patch](tarball://root/attachments/some-uuid/ticket4639/4639-coerce-leak.patch) by robertwb created at 2008-12-02 22:25:18\n\nthis fixes the leak in coerce, not in exponentiation",
+    "body": "Attachment [4639-coerce-leak.patch](tarball://root/attachments/some-uuid/ticket4639/4639-coerce-leak.patch) by @robertwb created at 2008-12-02 22:25:18\n\nthis fixes the leak in coerce, not in exponentiation",
     "created_at": "2008-12-02T22:25:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4639#issuecomment-34903",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4639-coerce-leak.patch](tarball://root/attachments/some-uuid/ticket4639/4639-coerce-leak.patch) by robertwb created at 2008-12-02 22:25:18
+Attachment [4639-coerce-leak.patch](tarball://root/attachments/some-uuid/ticket4639/4639-coerce-leak.patch) by @robertwb created at 2008-12-02 22:25:18
 
 this fixes the leak in coerce, not in exponentiation
 
@@ -349,7 +349,7 @@ archive/issue_comments_034904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4639#issuecomment-34904",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -433,7 +433,7 @@ archive/issue_comments_034908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4639#issuecomment-34908",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -475,7 +475,7 @@ archive/issue_comments_034910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4639#issuecomment-34910",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -549,7 +549,7 @@ archive/issue_comments_034911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4639#issuecomment-34911",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -586,7 +586,7 @@ archive/issue_comments_034912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4639#issuecomment-34912",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -628,7 +628,7 @@ archive/issue_comments_034914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4639#issuecomment-34914",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -674,7 +674,7 @@ archive/issue_comments_034915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4639#issuecomment-34915",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -780,7 +780,7 @@ archive/issue_comments_034918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4639#issuecomment-34918",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -820,7 +820,7 @@ archive/issue_comments_034920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4639#issuecomment-34920",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -871,16 +871,16 @@ Therefore it seems to me that the problem is not exponentiation but a failure in
 archive/issue_comments_034921.json:
 ```json
 {
-    "body": "Attachment [4639-parent-memleak.patch](tarball://root/attachments/some-uuid/ticket4639/4639-parent-memleak.patch) by robertwb created at 2008-12-16 20:29:23\n\nI believe I have located and resolved the issue. After tracing through all kinds of coercion and homset code, and reading tons of Cython code looking for memory leaks, it turns out that this was caused by all Parents ever created being cached due to old debugging code. (Wow, wish I'd looked there first! :)\n\nSome old, unnecessary code has been removed from the generic __call__ method as well.",
+    "body": "Attachment [4639-parent-memleak.patch](tarball://root/attachments/some-uuid/ticket4639/4639-parent-memleak.patch) by @robertwb created at 2008-12-16 20:29:23\n\nI believe I have located and resolved the issue. After tracing through all kinds of coercion and homset code, and reading tons of Cython code looking for memory leaks, it turns out that this was caused by all Parents ever created being cached due to old debugging code. (Wow, wish I'd looked there first! :)\n\nSome old, unnecessary code has been removed from the generic __call__ method as well.",
     "created_at": "2008-12-16T20:29:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4639#issuecomment-34921",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4639-parent-memleak.patch](tarball://root/attachments/some-uuid/ticket4639/4639-parent-memleak.patch) by robertwb created at 2008-12-16 20:29:23
+Attachment [4639-parent-memleak.patch](tarball://root/attachments/some-uuid/ticket4639/4639-parent-memleak.patch) by @robertwb created at 2008-12-16 20:29:23
 
 I believe I have located and resolved the issue. After tracing through all kinds of coercion and homset code, and reading tons of Cython code looking for memory leaks, it turns out that this was caused by all Parents ever created being cached due to old debugging code. (Wow, wish I'd looked there first! :)
 

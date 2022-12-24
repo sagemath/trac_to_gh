@@ -14,7 +14,7 @@ archive/issues_003453.json:
     "title": "[with patch, needs review] add function pickling to sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3453",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 Assignee: cwitty
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3453
 archive/issue_comments_024349.json:
 ```json
 {
-    "body": "Attachment [fpickle.patch](tarball://root/attachments/some-uuid/ticket3453/fpickle.patch) by was created at 2008-06-18 00:24:55",
+    "body": "Attachment [fpickle.patch](tarball://root/attachments/some-uuid/ticket3453/fpickle.patch) by @williamstein created at 2008-06-18 00:24:55",
     "created_at": "2008-06-18T00:24:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3453#issuecomment-24349",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [fpickle.patch](tarball://root/attachments/some-uuid/ticket3453/fpickle.patch) by was created at 2008-06-18 00:24:55
+Attachment [fpickle.patch](tarball://root/attachments/some-uuid/ticket3453/fpickle.patch) by @williamstein created at 2008-06-18 00:24:55
 
 
 
@@ -50,16 +50,16 @@ Attachment [fpickle.patch](tarball://root/attachments/some-uuid/ticket3453/fpick
 archive/issue_comments_024350.json:
 ```json
 {
-    "body": "Attachment [sage-3453-part2.patch](tarball://root/attachments/some-uuid/ticket3453/sage-3453-part2.patch) by was created at 2008-06-18 06:16:33\n\npart 2 of 2  -- this adds full doctests.",
+    "body": "Attachment [sage-3453-part2.patch](tarball://root/attachments/some-uuid/ticket3453/sage-3453-part2.patch) by @williamstein created at 2008-06-18 06:16:33\n\npart 2 of 2  -- this adds full doctests.",
     "created_at": "2008-06-18T06:16:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3453#issuecomment-24350",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3453-part2.patch](tarball://root/attachments/some-uuid/ticket3453/sage-3453-part2.patch) by was created at 2008-06-18 06:16:33
+Attachment [sage-3453-part2.patch](tarball://root/attachments/some-uuid/ticket3453/sage-3453-part2.patch) by @williamstein created at 2008-06-18 06:16:33
 
 part 2 of 2  -- this adds full doctests.
 

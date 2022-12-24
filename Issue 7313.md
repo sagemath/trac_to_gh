@@ -3,7 +3,7 @@
 archive/issues_007313.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  ddrake\n\nHello !!!\n\nOut of curiosity, I tried to look for a function I knew in Sage :\n\n```\nsage: search_doc(\"Floyd-Warshall\")\nhtml/en/reference/sage/graphs/graph.html:5797:<dd><p>Uses the Floyd-Warshall algorithm to find a shortest weighted path\nsage: search_doc(\"Floyd-Warshall\",\"pair\")\nsage: Graph.shortest_path_all_pairs?\n```\n\n\nI understand the current way to look for things in the doc is to grep it, and that for some reason we may need to keep our lines short ( less than 80 characters or so ).. I also understand that finding another way to search the doc ( if there is none available already ) may be some big amount of work. Even though, this really isn't the expected behaviour of the function, and I think we should do something about it.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7313\n\n",
+    "body": "Assignee: tba\n\nCC:  @dandrake\n\nHello !!!\n\nOut of curiosity, I tried to look for a function I knew in Sage :\n\n```\nsage: search_doc(\"Floyd-Warshall\")\nhtml/en/reference/sage/graphs/graph.html:5797:<dd><p>Uses the Floyd-Warshall algorithm to find a shortest weighted path\nsage: search_doc(\"Floyd-Warshall\",\"pair\")\nsage: Graph.shortest_path_all_pairs?\n```\n\n\nI understand the current way to look for things in the doc is to grep it, and that for some reason we may need to keep our lines short ( less than 80 characters or so ).. I also understand that finding another way to search the doc ( if there is none available already ) may be some big amount of work. Even though, this really isn't the expected behaviour of the function, and I think we should do something about it.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7313\n\n",
     "created_at": "2009-10-26T13:44:46Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_007313.json:
     "title": "Very bad thing in the behaviour of search_doc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7313",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: tba
 
-CC:  ddrake
+CC:  @dandrake
 
 Hello !!!
 
@@ -53,7 +53,7 @@ archive/issue_comments_061106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7313#issuecomment-61106",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_061107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7313#issuecomment-61107",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_061108.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7313#issuecomment-61108",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_061109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7313#issuecomment-61109",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_061110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7313#issuecomment-61110",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_061111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7313#issuecomment-61111",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -168,16 +168,16 @@ homology/simplicial_complex.py
 archive/issue_comments_061112.json:
 ```json
 {
-    "body": "Attachment [trac_7313-multiline.patch](tarball://root/attachments/some-uuid/ticket7313/trac_7313-multiline.patch) by jhpalmieri created at 2010-01-20 04:35:14\n\ndepends on #7018",
+    "body": "Attachment [trac_7313-multiline.patch](tarball://root/attachments/some-uuid/ticket7313/trac_7313-multiline.patch) by @jhpalmieri created at 2010-01-20 04:35:14\n\ndepends on #7018",
     "created_at": "2010-01-20T04:35:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7313#issuecomment-61112",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_7313-multiline.patch](tarball://root/attachments/some-uuid/ticket7313/trac_7313-multiline.patch) by jhpalmieri created at 2010-01-20 04:35:14
+Attachment [trac_7313-multiline.patch](tarball://root/attachments/some-uuid/ticket7313/trac_7313-multiline.patch) by @jhpalmieri created at 2010-01-20 04:35:14
 
 depends on #7018
 
@@ -234,7 +234,7 @@ archive/issue_comments_061114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7313#issuecomment-61114",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_061115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7313#issuecomment-61115",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_061116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7313#issuecomment-61116",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_061118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7313#issuecomment-61118",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

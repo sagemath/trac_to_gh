@@ -3,7 +3,7 @@
 archive/issues_008565.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nKeywords: pynac\n\nFrom sage-devel:\n\n\n```\nthe summary is:\n-------------------\natan2(3,0)   --> 1/2*pi\natan2(-3,0)  --> -1/2*pi\natan2(pi,0)  --> 1/2*pi\natan2(-pi,0) -->  RuntimeError: power::eval(): division by zero\n--------------------\n```\n\n\nsage-devel thread is here:\n\nhttp://groups.google.com/group/sage-devel/t/317e6bfe11fabb4\n\nalso reported on sage-support:\n\nhttp://groups.google.com/group/sage-support/t/02f3446e68381346\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8565\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: pynac\n\nFrom sage-devel:\n\n\n```\nthe summary is:\n-------------------\natan2(3,0)   --> 1/2*pi\natan2(-3,0)  --> -1/2*pi\natan2(pi,0)  --> 1/2*pi\natan2(-pi,0) -->  RuntimeError: power::eval(): division by zero\n--------------------\n```\n\n\nsage-devel thread is here:\n\nhttp://groups.google.com/group/sage-devel/t/317e6bfe11fabb4\n\nalso reported on sage-support:\n\nhttp://groups.google.com/group/sage-support/t/02f3446e68381346\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8565\n\n",
     "created_at": "2010-03-20T10:33:22Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_008565.json:
     "title": "atan2(-pi,0) throws \"divide by zero\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8565",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 Keywords: pynac
 
@@ -60,7 +60,7 @@ archive/issue_comments_077544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8565",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8565#issuecomment-77544",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -73,16 +73,16 @@ add doctests
 archive/issue_comments_077545.json:
 ```json
 {
-    "body": "Attachment [trac_8565-neg_pi.patch](tarball://root/attachments/some-uuid/ticket8565/trac_8565-neg_pi.patch) by burcin created at 2010-04-02 14:52:12\n\nThe pynac package at #8644 includes the patches that were merged in `GiNaC` to fix this problem. attachment:trac_8565-neg_pi.patch adds doctests for the fix.\n\nThis ticket now depends on #8644.",
+    "body": "Attachment [trac_8565-neg_pi.patch](tarball://root/attachments/some-uuid/ticket8565/trac_8565-neg_pi.patch) by @burcin created at 2010-04-02 14:52:12\n\nThe pynac package at #8644 includes the patches that were merged in `GiNaC` to fix this problem. attachment:trac_8565-neg_pi.patch adds doctests for the fix.\n\nThis ticket now depends on #8644.",
     "created_at": "2010-04-02T14:52:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8565",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8565#issuecomment-77545",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_8565-neg_pi.patch](tarball://root/attachments/some-uuid/ticket8565/trac_8565-neg_pi.patch) by burcin created at 2010-04-02 14:52:12
+Attachment [trac_8565-neg_pi.patch](tarball://root/attachments/some-uuid/ticket8565/trac_8565-neg_pi.patch) by @burcin created at 2010-04-02 14:52:12
 
 The pynac package at #8644 includes the patches that were merged in `GiNaC` to fix this problem. attachment:trac_8565-neg_pi.patch adds doctests for the fix.
 
@@ -100,7 +100,7 @@ archive/issue_comments_077546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8565",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8565#issuecomment-77546",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_077547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8565",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8565#issuecomment-77547",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_077548.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8565",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8565#issuecomment-77548",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_077549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8565",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8565#issuecomment-77549",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

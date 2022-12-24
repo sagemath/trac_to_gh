@@ -3,7 +3,7 @@
 archive/issues_004718.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  mhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4718\n\n",
+    "body": "Assignee: boothby\n\nCC:  @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4718\n\n",
     "created_at": "2008-12-05T18:45:52Z",
     "labels": [
         "notebook",
@@ -19,7 +19,7 @@ archive/issues_004718.json:
 ```
 Assignee: boothby
 
-CC:  mhansen
+CC:  @mwhansen
 
 
 
@@ -81,7 +81,7 @@ archive/issue_comments_035590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4718#issuecomment-35590",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -94,16 +94,16 @@ Changing status from new to assigned.
 archive/issue_comments_035591.json:
 ```json
 {
-    "body": "Attachment [trac_4718.patch](tarball://root/attachments/some-uuid/ticket4718/trac_4718.patch) by mhansen created at 2009-01-19 07:35:06\n\nLooks good and works for me.  Note that this does NOT depend on #4552.",
+    "body": "Attachment [trac_4718.patch](tarball://root/attachments/some-uuid/ticket4718/trac_4718.patch) by @mwhansen created at 2009-01-19 07:35:06\n\nLooks good and works for me.  Note that this does NOT depend on #4552.",
     "created_at": "2009-01-19T07:35:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4718#issuecomment-35591",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4718.patch](tarball://root/attachments/some-uuid/ticket4718/trac_4718.patch) by mhansen created at 2009-01-19 07:35:06
+Attachment [trac_4718.patch](tarball://root/attachments/some-uuid/ticket4718/trac_4718.patch) by @mwhansen created at 2009-01-19 07:35:06
 
 Looks good and works for me.  Note that this does NOT depend on #4552.
 
@@ -114,16 +114,16 @@ Looks good and works for me.  Note that this does NOT depend on #4552.
 archive/issue_comments_035592.json:
 ```json
 {
-    "body": "Changing assignee from boothby to mhansen.",
+    "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2009-01-19T07:35:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4718#issuecomment-35592",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from boothby to mhansen.
+Changing assignee from boothby to @mwhansen.
 
 
 

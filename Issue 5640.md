@@ -3,7 +3,7 @@
 archive/issues_005640.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis sentence, which is in the help for contour_plot, should also be in the help for the plot method on matrices:\n\n\n```\n                        cmap -- the name of\n                        a predefined colormap, a list of colors\n                        or an instance of a matplotlib Colormap.\n                        Type: import matplotlib.cm; matplotlib.cm.datad.keys()\n                        for available colormap names.\n```\n\n\nIt should also be in the output here too:\n\n```\nsage: matrix(QQ,1,1).plot(cmap0=0)\n          \t\n\nverbose 0 (84: primitive.py, options) WARNING: Ignoring option 'cmap0'=0\nverbose 0 (84: primitive.py, options) \nThe allowed options for MatrixPlot defined by a 1 x 1 data grid are:\n    cmap           the name of a predefined colormap, \n                        a list of colors or an instance of a \n                        matplotlib Colormap.\n    zorder         The layer level in which to draw                     \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5640\n\n",
+    "body": "Assignee: @williamstein\n\nThis sentence, which is in the help for contour_plot, should also be in the help for the plot method on matrices:\n\n\n```\n                        cmap -- the name of\n                        a predefined colormap, a list of colors\n                        or an instance of a matplotlib Colormap.\n                        Type: import matplotlib.cm; matplotlib.cm.datad.keys()\n                        for available colormap names.\n```\n\n\nIt should also be in the output here too:\n\n```\nsage: matrix(QQ,1,1).plot(cmap0=0)\n          \t\n\nverbose 0 (84: primitive.py, options) WARNING: Ignoring option 'cmap0'=0\nverbose 0 (84: primitive.py, options) \nThe allowed options for MatrixPlot defined by a 1 x 1 data grid are:\n    cmap           the name of a predefined colormap, \n                        a list of colors or an instance of a \n                        matplotlib Colormap.\n    zorder         The layer level in which to draw                     \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5640\n\n",
     "created_at": "2009-03-30T03:16:35Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_005640.json:
     "title": "no way to figure out list of colormaps from matrix plot's docstring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5640",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This sentence, which is in the help for contour_plot, should also be in the help for the plot method on matrices:
 
@@ -63,7 +63,7 @@ archive/issue_comments_044055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5640#issuecomment-44055",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -76,16 +76,16 @@ Depends on #6269, at least potentially
 archive/issue_comments_044056.json:
 ```json
 {
-    "body": "Attachment [trac_5640.patch](tarball://root/attachments/some-uuid/ticket5640/trac_5640.patch) by kcrisman created at 2009-06-20 01:16:31\n\nThis should take care of the issue on the description.  Patch may depend on #6269; even though I can't find any specific instances where they overlap on code hunks, they do overlap in files, so better to be safe.  Note that this patch does not take care of #5083.  I have also added/improved documentation on the files in question.",
+    "body": "Attachment [trac_5640.patch](tarball://root/attachments/some-uuid/ticket5640/trac_5640.patch) by @kcrisman created at 2009-06-20 01:16:31\n\nThis should take care of the issue on the description.  Patch may depend on #6269; even though I can't find any specific instances where they overlap on code hunks, they do overlap in files, so better to be safe.  Note that this patch does not take care of #5083.  I have also added/improved documentation on the files in question.",
     "created_at": "2009-06-20T01:16:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5640#issuecomment-44056",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_5640.patch](tarball://root/attachments/some-uuid/ticket5640/trac_5640.patch) by kcrisman created at 2009-06-20 01:16:31
+Attachment [trac_5640.patch](tarball://root/attachments/some-uuid/ticket5640/trac_5640.patch) by @kcrisman created at 2009-06-20 01:16:31
 
 This should take care of the issue on the description.  Patch may depend on #6269; even though I can't find any specific instances where they overlap on code hunks, they do overlap in files, so better to be safe.  Note that this patch does not take care of #5083.  I have also added/improved documentation on the files in question.
 
@@ -96,16 +96,16 @@ This should take care of the issue on the description.  Patch may depend on #626
 archive/issue_comments_044057.json:
 ```json
 {
-    "body": "Changing assignee from was to kcrisman.",
+    "body": "Changing assignee from @williamstein to @kcrisman.",
     "created_at": "2009-06-20T01:16:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5640#issuecomment-44057",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Changing assignee from was to kcrisman.
+Changing assignee from @williamstein to @kcrisman.
 
 
 
@@ -119,7 +119,7 @@ archive/issue_comments_044058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5640#issuecomment-44058",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

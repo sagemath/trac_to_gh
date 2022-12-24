@@ -14,7 +14,7 @@ archive/issues_000220.json:
     "title": "SageX: generic power series over arbitrary ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/220",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -37,7 +37,7 @@ archive/issue_comments_000985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/220#issuecomment-985",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_000986.json:
     "issue": "https://github.com/sagemath/sagetest/issues/220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/220#issuecomment-986",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_000987.json:
     "issue": "https://github.com/sagemath/sagetest/issues/220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/220#issuecomment-987",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_000988.json:
     "issue": "https://github.com/sagemath/sagetest/issues/220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/220#issuecomment-988",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

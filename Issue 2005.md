@@ -3,7 +3,7 @@
 archive/issues_002005.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2005\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2005\n\n",
     "created_at": "2008-01-31T22:53:47Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_002005.json:
     "title": "The .sage directory -- adjust permissions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2005",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_012972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2005#issuecomment-12972",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

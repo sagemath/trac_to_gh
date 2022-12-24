@@ -14,7 +14,7 @@ archive/issues_008841.json:
     "title": "os x 10.4 -- sage-4.4.1 doesn't start up",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8841",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -163,7 +163,7 @@ archive/issue_comments_081284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8841#issuecomment-81284",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_081285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8841#issuecomment-81285",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_081286.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8841#issuecomment-81286",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

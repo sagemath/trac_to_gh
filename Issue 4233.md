@@ -14,7 +14,7 @@ archive/issues_004233.json:
     "title": "[with patch, needs review] fix doctest failure due to deprecation warning in calculus/all.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4233",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: somebody
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4233
 archive/issue_comments_030763.json:
 ```json
 {
-    "body": "Attachment [calc.patch](tarball://root/attachments/some-uuid/ticket4233/calc.patch) by mhansen created at 2008-10-02 00:33:21\n\nLooks good to me.",
+    "body": "Attachment [calc.patch](tarball://root/attachments/some-uuid/ticket4233/calc.patch) by @mwhansen created at 2008-10-02 00:33:21\n\nLooks good to me.",
     "created_at": "2008-10-02T00:33:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4233",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4233#issuecomment-30763",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [calc.patch](tarball://root/attachments/some-uuid/ticket4233/calc.patch) by mhansen created at 2008-10-02 00:33:21
+Attachment [calc.patch](tarball://root/attachments/some-uuid/ticket4233/calc.patch) by @mwhansen created at 2008-10-02 00:33:21
 
 Looks good to me.
 

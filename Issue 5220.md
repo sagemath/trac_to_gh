@@ -14,7 +14,7 @@ archive/issues_005220.json:
     "title": "Weird or non-appearance of default in input_box in interact",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5220",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: boothby
@@ -61,7 +61,7 @@ archive/issue_comments_040005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5220#issuecomment-40005",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_040006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5220#issuecomment-40006",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_040007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5220#issuecomment-40007",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -140,16 +140,16 @@ The problem is a str versus repr call in the interact code.  I've attached a pat
 archive/issue_comments_040008.json:
 ```json
 {
-    "body": "Attachment [interact-quote.patch](tarball://root/attachments/some-uuid/ticket5220/interact-quote.patch) by jason created at 2009-02-09 20:22:39\n\nNote that the attached patch changes two other doctests in the affected function.  This should be discussed, as this changes how interacts work, I believe.",
+    "body": "Attachment [interact-quote.patch](tarball://root/attachments/some-uuid/ticket5220/interact-quote.patch) by @jasongrout created at 2009-02-09 20:22:39\n\nNote that the attached patch changes two other doctests in the affected function.  This should be discussed, as this changes how interacts work, I believe.",
     "created_at": "2009-02-09T20:22:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5220#issuecomment-40008",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [interact-quote.patch](tarball://root/attachments/some-uuid/ticket5220/interact-quote.patch) by jason created at 2009-02-09 20:22:39
+Attachment [interact-quote.patch](tarball://root/attachments/some-uuid/ticket5220/interact-quote.patch) by @jasongrout created at 2009-02-09 20:22:39
 
 Note that the attached patch changes two other doctests in the affected function.  This should be discussed, as this changes how interacts work, I believe.
 
@@ -165,7 +165,7 @@ archive/issue_comments_040009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5220#issuecomment-40009",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_040010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5220#issuecomment-40010",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -262,16 +262,16 @@ def plotfunction(f=input_box("'my string'")):
 archive/issue_comments_040011.json:
 ```json
 {
-    "body": "Attachment [trac_5220-referee.patch](tarball://root/attachments/some-uuid/ticket5220/trac_5220-referee.patch) by was created at 2009-03-05 05:18:39",
+    "body": "Attachment [trac_5220-referee.patch](tarball://root/attachments/some-uuid/ticket5220/trac_5220-referee.patch) by @williamstein created at 2009-03-05 05:18:39",
     "created_at": "2009-03-05T05:18:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5220#issuecomment-40011",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5220-referee.patch](tarball://root/attachments/some-uuid/ticket5220/trac_5220-referee.patch) by was created at 2009-03-05 05:18:39
+Attachment [trac_5220-referee.patch](tarball://root/attachments/some-uuid/ticket5220/trac_5220-referee.patch) by @williamstein created at 2009-03-05 05:18:39
 
 
 
@@ -285,7 +285,7 @@ archive/issue_comments_040012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5220#issuecomment-40012",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -303,7 +303,7 @@ archive/issue_comments_040013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5220#issuecomment-40013",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

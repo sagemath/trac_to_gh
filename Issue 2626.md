@@ -54,7 +54,7 @@ archive/issue_comments_018044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2626#issuecomment-18044",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -67,16 +67,16 @@ fixes the issue for crypto.mq
 archive/issue_comments_018045.json:
 ```json
 {
-    "body": "Attachment [crypto_mq__list__.patch](tarball://root/attachments/some-uuid/ticket2626/crypto_mq__list__.patch) by malb created at 2008-03-21 11:16:56\n\nfixes the issue for elliptic curve points over fields",
+    "body": "Attachment [crypto_mq__list__.patch](tarball://root/attachments/some-uuid/ticket2626/crypto_mq__list__.patch) by @malb created at 2008-03-21 11:16:56\n\nfixes the issue for elliptic curve points over fields",
     "created_at": "2008-03-21T11:16:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2626#issuecomment-18045",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [crypto_mq__list__.patch](tarball://root/attachments/some-uuid/ticket2626/crypto_mq__list__.patch) by malb created at 2008-03-21 11:16:56
+Attachment [crypto_mq__list__.patch](tarball://root/attachments/some-uuid/ticket2626/crypto_mq__list__.patch) by @malb created at 2008-03-21 11:16:56
 
 fixes the issue for elliptic curve points over fields
 
@@ -87,16 +87,16 @@ fixes the issue for elliptic curve points over fields
 archive/issue_comments_018046.json:
 ```json
 {
-    "body": "Attachment [morphism__list__.patch](tarball://root/attachments/some-uuid/ticket2626/morphism__list__.patch) by malb created at 2008-03-21 11:19:05",
+    "body": "Attachment [morphism__list__.patch](tarball://root/attachments/some-uuid/ticket2626/morphism__list__.patch) by @malb created at 2008-03-21 11:19:05",
     "created_at": "2008-03-21T11:19:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2626#issuecomment-18046",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [morphism__list__.patch](tarball://root/attachments/some-uuid/ticket2626/morphism__list__.patch) by malb created at 2008-03-21 11:19:05
+Attachment [morphism__list__.patch](tarball://root/attachments/some-uuid/ticket2626/morphism__list__.patch) by @malb created at 2008-03-21 11:19:05
 
 
 
@@ -110,7 +110,7 @@ archive/issue_comments_018047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2626#issuecomment-18047",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

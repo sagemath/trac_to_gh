@@ -3,7 +3,7 @@
 archive/issues_009932.json:
 ```json
 {
-    "body": "Assignee: malb\n\n\n```\nR = BooleanPolynomialRing(5,'x')\ne = R.random_element()\nprint e\nprint e.lt()\nprint e.lt() in R  ## says false???\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9933\n\n",
+    "body": "Assignee: @malb\n\n\n```\nR = BooleanPolynomialRing(5,'x')\ne = R.random_element()\nprint e\nprint e.lt()\nprint e.lt() in R  ## says false???\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9933\n\n",
     "created_at": "2010-09-17T13:57:20Z",
     "labels": [
         "commutative algebra",
@@ -17,7 +17,7 @@ archive/issues_009932.json:
     "user": "mariah"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 
 ```
@@ -45,7 +45,7 @@ archive/issue_comments_098899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9932#issuecomment-98899",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -58,16 +58,16 @@ Changing status from new to needs_review.
 archive/issue_comments_098900.json:
 ```json
 {
-    "body": "Attachment [trac_9933.patch](tarball://root/attachments/some-uuid/ticket9933/trac_9933.patch) by malb created at 2010-10-12 16:41:44\n\nThe attached patch fixes the reported issue. In the process I also fixed a very annoying performance issue\n\n\n```python\n# Old\nsage: B = BooleanPolynomialRing(200,'x')\nsage: %timeit B(\"x0\")\n25 loops, best of 3: 17.1 ms per loop\n\n# New\nsage: B = BooleanPolynomialRing(200,'x')\nsage: %timeit B(\"x0\")\n625 loops, best of 3: 11.6 \u00b5s per loop\n\n# \"optimal\"\nsage: gd = B.gens_dict()\nsage: %timeit gd['x0']\n625 loops, best of 3: 94.2 ns per loop\n```\n",
+    "body": "Attachment [trac_9933.patch](tarball://root/attachments/some-uuid/ticket9933/trac_9933.patch) by @malb created at 2010-10-12 16:41:44\n\nThe attached patch fixes the reported issue. In the process I also fixed a very annoying performance issue\n\n\n```python\n# Old\nsage: B = BooleanPolynomialRing(200,'x')\nsage: %timeit B(\"x0\")\n25 loops, best of 3: 17.1 ms per loop\n\n# New\nsage: B = BooleanPolynomialRing(200,'x')\nsage: %timeit B(\"x0\")\n625 loops, best of 3: 11.6 \u00b5s per loop\n\n# \"optimal\"\nsage: gd = B.gens_dict()\nsage: %timeit gd['x0']\n625 loops, best of 3: 94.2 ns per loop\n```\n",
     "created_at": "2010-10-12T16:41:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9932#issuecomment-98900",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_9933.patch](tarball://root/attachments/some-uuid/ticket9933/trac_9933.patch) by malb created at 2010-10-12 16:41:44
+Attachment [trac_9933.patch](tarball://root/attachments/some-uuid/ticket9933/trac_9933.patch) by @malb created at 2010-10-12 16:41:44
 
 The attached patch fixes the reported issue. In the process I also fixed a very annoying performance issue
 
@@ -102,7 +102,7 @@ archive/issue_comments_098901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9932#issuecomment-98901",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_098905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9932#issuecomment-98905",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

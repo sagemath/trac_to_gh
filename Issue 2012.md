@@ -14,7 +14,7 @@ archive/issues_002012.json:
     "title": "crap -- jmol contains some os x files that shouldn't be there",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2012",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

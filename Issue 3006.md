@@ -3,7 +3,7 @@
 archive/issues_003006.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe following problem was reported by Dustin Vaselaar to sage-support:\n\n\nHello,\nI am looking to use a complete elliptic integral of the first kind in\nsage, however I'm not sure if this has been implemented.  The link\nhttp://www.sagemath.org/doc/html/ref/module-sage.functions.special.html\nmentions a function \"elliptic_kc\", but it doesn't seem to be\nimplemented in sage version 3.0, judging from the result of this\ncommand:\n\n\n```\nsage: elliptic_kc?\nObject `elliptic_kc` not found.\n```\n\n\nAny insights on using a a complete elliptic integral of the first kind\nin sage?\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3006\n\n",
+    "body": "Assignee: @williamstein\n\nThe following problem was reported by Dustin Vaselaar to sage-support:\n\n\nHello,\nI am looking to use a complete elliptic integral of the first kind in\nsage, however I'm not sure if this has been implemented.  The link\nhttp://www.sagemath.org/doc/html/ref/module-sage.functions.special.html\nmentions a function \"elliptic_kc\", but it doesn't seem to be\nimplemented in sage version 3.0, judging from the result of this\ncommand:\n\n\n```\nsage: elliptic_kc?\nObject `elliptic_kc` not found.\n```\n\n\nAny insights on using a a complete elliptic integral of the first kind\nin sage?\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3006\n\n",
     "created_at": "2008-04-23T14:27:55Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_003006.json:
     "title": "missing elliptic integrals in special.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3006",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The following problem was reported by Dustin Vaselaar to sage-support:
 
@@ -58,7 +58,7 @@ archive/issue_comments_020673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3006",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3006#issuecomment-20673",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -80,16 +80,16 @@ I'll submit a patch soon.
 archive/issue_comments_020674.json:
 ```json
 {
-    "body": "Attachment [9607.patch](tarball://root/attachments/some-uuid/ticket3006/9607.patch) by wdj created at 2008-04-23 22:15:38\n\nThinking about this problem more, I think it is my fault. In any case, a patch is attached.  It is based on 3.0 and passes sage -t but my (old) machine froze (as it very often does) during the sage -testall. No errors were reported before the freeze.",
+    "body": "Attachment [9607.patch](tarball://root/attachments/some-uuid/ticket3006/9607.patch) by @wdjoyner created at 2008-04-23 22:15:38\n\nThinking about this problem more, I think it is my fault. In any case, a patch is attached.  It is based on 3.0 and passes sage -t but my (old) machine froze (as it very often does) during the sage -testall. No errors were reported before the freeze.",
     "created_at": "2008-04-23T22:15:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3006",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3006#issuecomment-20674",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [9607.patch](tarball://root/attachments/some-uuid/ticket3006/9607.patch) by wdj created at 2008-04-23 22:15:38
+Attachment [9607.patch](tarball://root/attachments/some-uuid/ticket3006/9607.patch) by @wdjoyner created at 2008-04-23 22:15:38
 
 Thinking about this problem more, I think it is my fault. In any case, a patch is attached.  It is based on 3.0 and passes sage -t but my (old) machine froze (as it very often does) during the sage -testall. No errors were reported before the freeze.
 
@@ -105,7 +105,7 @@ archive/issue_comments_020675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3006",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3006#issuecomment-20675",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

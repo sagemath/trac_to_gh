@@ -3,7 +3,7 @@
 archive/issues_007549.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  hivert jhpalmieri nthiery mvngu jason\n\nIn the Sage reference manual, it might be useful to\n\n* List the base classes for a class.\n* List inherited members but not their docstrings.\n* Include docstrings for \"private\" variables (e.g., `__init__`, `_foo`).\n* Include inheritance diagrams.\n\nSphinx extensions of interest: [autodoc](http://sphinx.pocoo.org/ext/autodoc.html), [inheritance_diagram](http://sphinx.pocoo.org/ext/inheritance.html).\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/a34a80097ad47805/2e57eb60d7f9881d?#2e57eb60d7f9881d) for some discussions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7549\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @hivert @jhpalmieri @nthiery mvngu @jasongrout\n\nIn the Sage reference manual, it might be useful to\n\n* List the base classes for a class.\n* List inherited members but not their docstrings.\n* Include docstrings for \"private\" variables (e.g., `__init__`, `_foo`).\n* Include inheritance diagrams.\n\nSphinx extensions of interest: [autodoc](http://sphinx.pocoo.org/ext/autodoc.html), [inheritance_diagram](http://sphinx.pocoo.org/ext/inheritance.html).\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/a34a80097ad47805/2e57eb60d7f9881d?#2e57eb60d7f9881d) for some discussions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7549\n\n",
     "created_at": "2009-11-28T13:42:38Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_007549.json:
     "title": "Reference manual: class hierarchy, inherited members, underscore variables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7549",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: mvngu
 
-CC:  hivert jhpalmieri nthiery mvngu jason
+CC:  @hivert @jhpalmieri @nthiery mvngu @jasongrout
 
 In the Sage reference manual, it might be useful to
 
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7549
 archive/issue_comments_064121.json:
 ```json
 {
-    "body": "Attachment [trac_7549-doc_inheritance_underscore.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore.patch) by mpatel created at 2009-11-28 13:55:05\n\nDoc build options for inherited members, private variables.  Inheritance diagrams.  Apply to sage repo.",
+    "body": "Attachment [trac_7549-doc_inheritance_underscore.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore.patch) by @qed777 created at 2009-11-28 13:55:05\n\nDoc build options for inherited members, private variables.  Inheritance diagrams.  Apply to sage repo.",
     "created_at": "2009-11-28T13:55:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64121",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7549-doc_inheritance_underscore.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore.patch) by mpatel created at 2009-11-28 13:55:05
+Attachment [trac_7549-doc_inheritance_underscore.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore.patch) by @qed777 created at 2009-11-28 13:55:05
 
 Doc build options for inherited members, private variables.  Inheritance diagrams.  Apply to sage repo.
 
@@ -68,7 +68,7 @@ archive/issue_comments_064122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64122",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_064123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64123",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_064124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64124",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_064125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64125",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_064126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64126",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_064127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64127",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_064128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64128",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_064129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64129",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_064130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64130",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_064131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64131",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_064132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64132",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -352,16 +352,16 @@ Set up intersphinx for Python docs.  *Replaces* previous patch. sage repo.
 archive/issue_comments_064133.json:
 ```json
 {
-    "body": "Attachment [trac_7549-doc_inheritance_underscore_v2.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v2.patch) by mpatel created at 2009-11-29 09:11:42\n\nVersion 2, which replaces the previous patch,\n\n* Enables `intersphinx` for the Python docs.  This is *easy* to use, e.g.,\n\n```\nFor more information, please consult :mod:`subprocess`.  Blah, blah, whatever...\n```\n\n* Adds `# -*- coding: utf-8 -*-` to the top of `sage.combinat.lyndon_word`.\n* Drops a `sage.interfaces.singular.SingularFunctionElement._sage_doc_` doctest.\n* Prepares for `extlinks`.  Sphinx 1.0 will include this new extension.",
+    "body": "Attachment [trac_7549-doc_inheritance_underscore_v2.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v2.patch) by @qed777 created at 2009-11-29 09:11:42\n\nVersion 2, which replaces the previous patch,\n\n* Enables `intersphinx` for the Python docs.  This is *easy* to use, e.g.,\n\n```\nFor more information, please consult :mod:`subprocess`.  Blah, blah, whatever...\n```\n\n* Adds `# -*- coding: utf-8 -*-` to the top of `sage.combinat.lyndon_word`.\n* Drops a `sage.interfaces.singular.SingularFunctionElement._sage_doc_` doctest.\n* Prepares for `extlinks`.  Sphinx 1.0 will include this new extension.",
     "created_at": "2009-11-29T09:11:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64133",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7549-doc_inheritance_underscore_v2.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v2.patch) by mpatel created at 2009-11-29 09:11:42
+Attachment [trac_7549-doc_inheritance_underscore_v2.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v2.patch) by @qed777 created at 2009-11-29 09:11:42
 
 Version 2, which replaces the previous patch,
 
@@ -387,7 +387,7 @@ archive/issue_comments_064134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64134",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -405,7 +405,7 @@ archive/issue_comments_064135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64135",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -423,7 +423,7 @@ archive/issue_comments_064136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64136",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -436,16 +436,16 @@ Rebased for 4.3.alpha1.  Replaces previous patches.
 archive/issue_comments_064137.json:
 ```json
 {
-    "body": "Attachment [trac_7549-doc_inheritance_underscore_v3.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v3.patch) by mpatel created at 2009-12-06 00:38:58\n\nI should add that we can also link directly to [matplotlib's docs](http://matplotlib.sourceforge.net/contents.html) from the Sage documentation.  We just need to update `doc.common.conf.intersphinx_mapping` (the object inventory is [here](http://matplotlib.sourceforge.net/objects.inv)).  Perhaps there are others of interest in [this list](http://sphinx.pocoo.org/examples.html)?",
+    "body": "Attachment [trac_7549-doc_inheritance_underscore_v3.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v3.patch) by @qed777 created at 2009-12-06 00:38:58\n\nI should add that we can also link directly to [matplotlib's docs](http://matplotlib.sourceforge.net/contents.html) from the Sage documentation.  We just need to update `doc.common.conf.intersphinx_mapping` (the object inventory is [here](http://matplotlib.sourceforge.net/objects.inv)).  Perhaps there are others of interest in [this list](http://sphinx.pocoo.org/examples.html)?",
     "created_at": "2009-12-06T00:38:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64137",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7549-doc_inheritance_underscore_v3.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v3.patch) by mpatel created at 2009-12-06 00:38:58
+Attachment [trac_7549-doc_inheritance_underscore_v3.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v3.patch) by @qed777 created at 2009-12-06 00:38:58
 
 I should add that we can also link directly to [matplotlib's docs](http://matplotlib.sourceforge.net/contents.html) from the Sage documentation.  We just need to update `doc.common.conf.intersphinx_mapping` (the object inventory is [here](http://matplotlib.sourceforge.net/objects.inv)).  Perhaps there are others of interest in [this list](http://sphinx.pocoo.org/examples.html)?
 
@@ -461,7 +461,7 @@ archive/issue_comments_064138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64138",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -487,7 +487,7 @@ archive/issue_comments_064139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64139",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -510,7 +510,7 @@ archive/issue_comments_064140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64140",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -523,16 +523,16 @@ Rebased vs. 4.3.3.alpha0.  See comment.  Apply only this patch.  sage repo.
 archive/issue_comments_064141.json:
 ```json
 {
-    "body": "Attachment [trac_7549-doc_inheritance_underscore_v4.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v4.patch) by mpatel created at 2010-02-14 08:44:20\n\nV4\n\n* Rebased vs. 4.3.3.alpha0.\n* Combines the skip member handlers, since Sphinx takes the first answer that's not `None`.  (I suppose we could keep them separate but return `None` when a test is inconclusive).\n* Detects changes in `-u`, too.  Toggling either new option should trigger a rebuild.\n\nShould we move the new options to the \"Advanced\" section?  Add \"may use lots of memory\"?\n\nNote: I still haven't done a complete build in each configuration.",
+    "body": "Attachment [trac_7549-doc_inheritance_underscore_v4.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v4.patch) by @qed777 created at 2010-02-14 08:44:20\n\nV4\n\n* Rebased vs. 4.3.3.alpha0.\n* Combines the skip member handlers, since Sphinx takes the first answer that's not `None`.  (I suppose we could keep them separate but return `None` when a test is inconclusive).\n* Detects changes in `-u`, too.  Toggling either new option should trigger a rebuild.\n\nShould we move the new options to the \"Advanced\" section?  Add \"may use lots of memory\"?\n\nNote: I still haven't done a complete build in each configuration.",
     "created_at": "2010-02-14T08:44:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64141",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7549-doc_inheritance_underscore_v4.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v4.patch) by mpatel created at 2010-02-14 08:44:20
+Attachment [trac_7549-doc_inheritance_underscore_v4.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v4.patch) by @qed777 created at 2010-02-14 08:44:20
 
 V4
 
@@ -556,7 +556,7 @@ archive/issue_comments_064142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64142",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -574,7 +574,7 @@ archive/issue_comments_064143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64143",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -623,7 +623,7 @@ archive/issue_comments_064144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64144",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -645,7 +645,7 @@ archive/issue_comments_064145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64145",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -689,7 +689,7 @@ archive/issue_comments_064146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64146",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -713,7 +713,7 @@ archive/issue_comments_064147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64147",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -737,7 +737,7 @@ archive/issue_comments_064148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64148",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -755,7 +755,7 @@ archive/issue_comments_064149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64149",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -785,7 +785,7 @@ archive/issue_comments_064150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64150",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -804,16 +804,16 @@ But I don't know if this is responsible for what we see.
 archive/issue_comments_064151.json:
 ```json
 {
-    "body": "Attachment [trac_7549-doc_inheritance_underscore_v5.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v5.patch) by mpatel created at 2010-03-11 06:21:32\n\nRebase vs. 4.3.4.alpha1 + #8457.  Apply only this patch.",
+    "body": "Attachment [trac_7549-doc_inheritance_underscore_v5.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v5.patch) by @qed777 created at 2010-03-11 06:21:32\n\nRebase vs. 4.3.4.alpha1 + #8457.  Apply only this patch.",
     "created_at": "2010-03-11T06:21:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64151",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7549-doc_inheritance_underscore_v5.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v5.patch) by mpatel created at 2010-03-11 06:21:32
+Attachment [trac_7549-doc_inheritance_underscore_v5.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v5.patch) by @qed777 created at 2010-03-11 06:21:32
 
 Rebase vs. 4.3.4.alpha1 + #8457.  Apply only this patch.
 
@@ -829,7 +829,7 @@ archive/issue_comments_064152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64152",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -847,7 +847,7 @@ archive/issue_comments_064153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64153",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -865,7 +865,7 @@ archive/issue_comments_064154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64154",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -908,7 +908,7 @@ archive/issue_comments_064155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64155",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -926,7 +926,7 @@ archive/issue_comments_064156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64156",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -944,7 +944,7 @@ archive/issue_comments_064157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64157",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -957,16 +957,16 @@ apply on top of other patch
 archive/issue_comments_064158.json:
 ```json
 {
-    "body": "Attachment [trac_7549-doc_inheritance_underscore_v6.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v6.patch) by mpatel created at 2010-03-13 08:27:04\n\nFix recursion problem.  Apply only this combined patch.",
+    "body": "Attachment [trac_7549-doc_inheritance_underscore_v6.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v6.patch) by @qed777 created at 2010-03-13 08:27:04\n\nFix recursion problem.  Apply only this combined patch.",
     "created_at": "2010-03-13T08:27:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64158",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7549-doc_inheritance_underscore_v6.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v6.patch) by mpatel created at 2010-03-13 08:27:04
+Attachment [trac_7549-doc_inheritance_underscore_v6.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v6.patch) by @qed777 created at 2010-03-13 08:27:04
 
 Fix recursion problem.  Apply only this combined patch.
 
@@ -982,7 +982,7 @@ archive/issue_comments_064159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64159",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1000,7 +1000,7 @@ archive/issue_comments_064160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64160",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1018,7 +1018,7 @@ archive/issue_comments_064161.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64161",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1031,16 +1031,16 @@ The only change is in `sage_autodoc.py`.
 archive/issue_comments_064162.json:
 ```json
 {
-    "body": "Attachment [trac_7549-doc_inheritance_underscore_v7.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v7.patch) by mpatel created at 2010-03-13 09:01:03\n\nHelp notes.  Replaces V6.",
+    "body": "Attachment [trac_7549-doc_inheritance_underscore_v7.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v7.patch) by @qed777 created at 2010-03-13 09:01:03\n\nHelp notes.  Replaces V6.",
     "created_at": "2010-03-13T09:01:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64162",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7549-doc_inheritance_underscore_v7.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v7.patch) by mpatel created at 2010-03-13 09:01:03
+Attachment [trac_7549-doc_inheritance_underscore_v7.patch](tarball://root/attachments/some-uuid/ticket7549/trac_7549-doc_inheritance_underscore_v7.patch) by @qed777 created at 2010-03-13 09:01:03
 
 Help notes.  Replaces V6.
 
@@ -1056,7 +1056,7 @@ archive/issue_comments_064163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64163",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -1079,7 +1079,7 @@ archive/issue_comments_064164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64164",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1097,7 +1097,7 @@ archive/issue_comments_064165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64165",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1115,7 +1115,7 @@ archive/issue_comments_064166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64166",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1135,7 +1135,7 @@ archive/issue_comments_064167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7549#issuecomment-64167",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_001679.json:
     "title": "two documentation typos",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1679",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -64,16 +64,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1679
 archive/issue_comments_010650.json:
 ```json
 {
-    "body": "Attachment [1679.patch](tarball://root/attachments/some-uuid/ticket1679/1679.patch) by mhansen created at 2008-01-13 13:53:33",
+    "body": "Attachment [1679.patch](tarball://root/attachments/some-uuid/ticket1679/1679.patch) by @mwhansen created at 2008-01-13 13:53:33",
     "created_at": "2008-01-13T13:53:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1679#issuecomment-10650",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1679.patch](tarball://root/attachments/some-uuid/ticket1679/1679.patch) by mhansen created at 2008-01-13 13:53:33
+Attachment [1679.patch](tarball://root/attachments/some-uuid/ticket1679/1679.patch) by @mwhansen created at 2008-01-13 13:53:33
 
 
 

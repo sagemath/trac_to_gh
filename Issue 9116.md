@@ -14,7 +14,7 @@ archive/issues_009116.json:
     "title": "sage-4.4.3.alpha1 fails to build on OS X due to png library issue",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9116",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: GeorgSWeber
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9116
 archive/issue_comments_084805.json:
 ```json
 {
-    "body": "Attachment [trac_9116.patch](tarball://root/attachments/some-uuid/ticket9116/trac_9116.patch) by was created at 2010-06-02 23:28:21",
+    "body": "Attachment [trac_9116.patch](tarball://root/attachments/some-uuid/ticket9116/trac_9116.patch) by @williamstein created at 2010-06-02 23:28:21",
     "created_at": "2010-06-02T23:28:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9116#issuecomment-84805",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_9116.patch](tarball://root/attachments/some-uuid/ticket9116/trac_9116.patch) by was created at 2010-06-02 23:28:21
+Attachment [trac_9116.patch](tarball://root/attachments/some-uuid/ticket9116/trac_9116.patch) by @williamstein created at 2010-06-02 23:28:21
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_084806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9116#issuecomment-84806",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_084807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9116#issuecomment-84807",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_084808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9116#issuecomment-84808",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_084809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9116#issuecomment-84809",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_084810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9116#issuecomment-84810",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 

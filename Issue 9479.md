@@ -3,7 +3,7 @@
 archive/issues_009479.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  was drkirkby\n\nKeywords: license\n\nIn sage 4.4.4, the file SPKG.txt says:\n\n```\n## License\n\n * GPL V2+\n```\n\nwhereas src/COPYING says:\n\n```\n                    GNU GENERAL PUBLIC LICENSE\n                       Version 3, 29 June 2007\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9479\n\n",
+    "body": "Assignee: tbd\n\nCC:  @williamstein drkirkby\n\nKeywords: license\n\nIn sage 4.4.4, the file SPKG.txt says:\n\n```\n## License\n\n * GPL V2+\n```\n\nwhereas src/COPYING says:\n\n```\n                    GNU GENERAL PUBLIC LICENSE\n                       Version 3, 29 June 2007\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9479\n\n",
     "created_at": "2010-07-12T12:30:20Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_009479.json:
     "title": "wrong license in readline SPKG.txt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9479",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: tbd
 
-CC:  was drkirkby
+CC:  @williamstein drkirkby
 
 Keywords: license
 
@@ -50,16 +50,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9479
 archive/issue_comments_091002.json:
 ```json
 {
-    "body": "Attachment [readline-6.2.p4.spkg](tarball://root/attachments/some-uuid/ticket9479/readline-6.2.p4.spkg) by zimmerma created at 2013-08-23 14:39:23\n\nthe attached spkg should fix that issue.\n\nPaul",
+    "body": "Attachment [readline-6.2.p4.spkg](tarball://root/attachments/some-uuid/ticket9479/readline-6.2.p4.spkg) by @zimmermann6 created at 2013-08-23 14:39:23\n\nthe attached spkg should fix that issue.\n\nPaul",
     "created_at": "2013-08-23T14:39:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9479#issuecomment-91002",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [readline-6.2.p4.spkg](tarball://root/attachments/some-uuid/ticket9479/readline-6.2.p4.spkg) by zimmerma created at 2013-08-23 14:39:23
+Attachment [readline-6.2.p4.spkg](tarball://root/attachments/some-uuid/ticket9479/readline-6.2.p4.spkg) by @zimmermann6 created at 2013-08-23 14:39:23
 
 the attached spkg should fix that issue.
 
@@ -77,7 +77,7 @@ archive/issue_comments_091003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9479#issuecomment-91003",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_091004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9479#issuecomment-91004",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_091005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9479#issuecomment-91005",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_091006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9479#issuecomment-91006",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

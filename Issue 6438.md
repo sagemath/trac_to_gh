@@ -14,7 +14,7 @@ archive/issues_006438.json:
     "title": "Upgrade to Cython 0.11.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6438",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: mabshoff
@@ -39,7 +39,7 @@ archive/issue_comments_051681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6438#issuecomment-51681",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_051682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6438#issuecomment-51682",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_051683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6438#issuecomment-51683",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_051684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6438#issuecomment-51684",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_051685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6438#issuecomment-51685",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -126,16 +126,16 @@ I don't see anything in SPKG.txt that needs changing--the changelog would be pre
 archive/issue_comments_051686.json:
 ```json
 {
-    "body": "Attachment [6438-cython.patch](tarball://root/attachments/some-uuid/ticket6438/6438-cython.patch) by robertwb created at 2009-07-22 14:19:27\n\nAll tests pass with the above spkg and patch.",
+    "body": "Attachment [6438-cython.patch](tarball://root/attachments/some-uuid/ticket6438/6438-cython.patch) by @robertwb created at 2009-07-22 14:19:27\n\nAll tests pass with the above spkg and patch.",
     "created_at": "2009-07-22T14:19:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6438#issuecomment-51686",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [6438-cython.patch](tarball://root/attachments/some-uuid/ticket6438/6438-cython.patch) by robertwb created at 2009-07-22 14:19:27
+Attachment [6438-cython.patch](tarball://root/attachments/some-uuid/ticket6438/6438-cython.patch) by @robertwb created at 2009-07-22 14:19:27
 
 All tests pass with the above spkg and patch.
 

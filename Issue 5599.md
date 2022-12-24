@@ -3,7 +3,7 @@
 archive/issues_005599.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  wcauchois\n\n\n```\nsage: var('x,y')\n(x, y)\nsage: density_plot(1/(x^10+y^10), (x, -10, 10), (y, -10, 10))\n\n```\n\n\nclearly illustrates this problem\n\nIssue created by migration from https://trac.sagemath.org/ticket/5599\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  wcauchois\n\n\n```\nsage: var('x,y')\n(x, y)\nsage: density_plot(1/(x^10+y^10), (x, -10, 10), (y, -10, 10))\n\n```\n\n\nclearly illustrates this problem\n\nIssue created by migration from https://trac.sagemath.org/ticket/5599\n\n",
     "created_at": "2009-03-24T10:28:46Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_005599.json:
     "title": "density_plot not centered correctly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5599",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  wcauchois
 
@@ -48,7 +48,7 @@ archive/issue_comments_043649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5599#issuecomment-43649",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_043650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5599#issuecomment-43650",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -115,16 +115,16 @@ Michael
 archive/issue_comments_043652.json:
 ```json
 {
-    "body": "Attachment [trac-5599-plot-center.patch](tarball://root/attachments/some-uuid/ticket5599/trac-5599-plot-center.patch) by jason created at 2009-05-30 08:23:33",
+    "body": "Attachment [trac-5599-plot-center.patch](tarball://root/attachments/some-uuid/ticket5599/trac-5599-plot-center.patch) by @jasongrout created at 2009-05-30 08:23:33",
     "created_at": "2009-05-30T08:23:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5599#issuecomment-43652",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-5599-plot-center.patch](tarball://root/attachments/some-uuid/ticket5599/trac-5599-plot-center.patch) by jason created at 2009-05-30 08:23:33
+Attachment [trac-5599-plot-center.patch](tarball://root/attachments/some-uuid/ticket5599/trac-5599-plot-center.patch) by @jasongrout created at 2009-05-30 08:23:33
 
 
 
@@ -138,7 +138,7 @@ archive/issue_comments_043653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5599#issuecomment-43653",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_043654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5599#issuecomment-43654",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_043656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5599#issuecomment-43656",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_043657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5599#issuecomment-43657",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

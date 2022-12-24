@@ -3,7 +3,7 @@
 archive/issues_004451.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  was mhansen\n\nWhen using the cursor to move between cells, the text cells stop the cursor, instead of the cursor skipping the text cells to move to the input cells beyond the text cell.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4451\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein @mwhansen\n\nWhen using the cursor to move between cells, the text cells stop the cursor, instead of the cursor skipping the text cells to move to the input cells beyond the text cell.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4451\n\n",
     "created_at": "2008-11-06T00:14:34Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_004451.json:
     "title": "notebook - cursor keys do not navigate around text cells",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4451",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
 
-CC:  was mhansen
+CC:  @williamstein @mwhansen
 
 When using the cursor to move between cells, the text cells stop the cursor, instead of the cursor skipping the text cells to move to the input cells beyond the text cell.
 
@@ -39,7 +39,7 @@ archive/issue_comments_032816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4451#issuecomment-32816",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_032817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4451#issuecomment-32817",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_032818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4451#issuecomment-32818",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_032819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4451#issuecomment-32819",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

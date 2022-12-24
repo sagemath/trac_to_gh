@@ -3,7 +3,7 @@
 archive/issues_006826.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  was\n\nKeywords: magma free internet interface\n\nThe magma free interface has changed slightly.  The attached patch updates the interface.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6826\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\nKeywords: magma free internet interface\n\nThe magma free interface has changed slightly.  The attached patch updates the interface.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6826\n\n",
     "created_at": "2009-08-26T01:16:34Z",
     "labels": [
         "interfaces",
@@ -14,12 +14,12 @@ archive/issues_006826.json:
     "title": "[with patch, needs review] magma_free interface is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6826",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  was
+CC:  @williamstein
 
 Keywords: magma free internet interface
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6826
 archive/issue_comments_056304.json:
 ```json
 {
-    "body": "Attachment [trac_6826-magma_free.patch](tarball://root/attachments/some-uuid/ticket6826/trac_6826-magma_free.patch) by ncalexan created at 2009-08-26 01:17:41",
+    "body": "Attachment [trac_6826-magma_free.patch](tarball://root/attachments/some-uuid/ticket6826/trac_6826-magma_free.patch) by @ncalexan created at 2009-08-26 01:17:41",
     "created_at": "2009-08-26T01:17:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6826#issuecomment-56304",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [trac_6826-magma_free.patch](tarball://root/attachments/some-uuid/ticket6826/trac_6826-magma_free.patch) by ncalexan created at 2009-08-26 01:17:41
+Attachment [trac_6826-magma_free.patch](tarball://root/attachments/some-uuid/ticket6826/trac_6826-magma_free.patch) by @ncalexan created at 2009-08-26 01:17:41
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_056305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6826#issuecomment-56305",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_056306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6826#issuecomment-56306",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_056307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6826#issuecomment-56307",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_056308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6826#issuecomment-56308",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

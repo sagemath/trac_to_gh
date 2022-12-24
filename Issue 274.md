@@ -3,7 +3,7 @@
 archive/issues_000274.json:
 ```json
 {
-    "body": "Assignee: was\n\nLeaks like a bad ...\n\n\n```\n\nsage: get_memory_usage()\n'276M'\nsage: K = GF(10007^2, 'a')\nsage: X = PolynomialRing(K, 'x').gen()\nsage: for i in range(1000):\n    s = K.random_element(); t = K.random_element()\n    poly = s + t*X\n....:     \nsage: get_memory_usage()\n'281M'\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/274\n\n",
+    "body": "Assignee: @williamstein\n\nLeaks like a bad ...\n\n\n```\n\nsage: get_memory_usage()\n'276M'\nsage: K = GF(10007^2, 'a')\nsage: X = PolynomialRing(K, 'x').gen()\nsage: for i in range(1000):\n    s = K.random_element(); t = K.random_element()\n    poly = s + t*X\n....:     \nsage: get_memory_usage()\n'281M'\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/274\n\n",
     "created_at": "2007-02-21T08:50:03Z",
     "labels": [
         "number theory",
@@ -17,7 +17,7 @@ archive/issues_000274.json:
     "user": "ifti"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Leaks like a bad ...
 
@@ -54,7 +54,7 @@ archive/issue_comments_001300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/274#issuecomment-1300",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_001301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/274#issuecomment-1301",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_001302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/274#issuecomment-1302",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_001303.json:
     "issue": "https://github.com/sagemath/sagetest/issues/274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/274#issuecomment-1303",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_001305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/274#issuecomment-1305",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_001306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/274#issuecomment-1306",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_001307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/274#issuecomment-1307",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

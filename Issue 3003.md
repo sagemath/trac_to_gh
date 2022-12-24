@@ -3,7 +3,7 @@
 archive/issues_003003.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nKeywords: crystals, tableaux\n\nCurrent behaviour:\n    sage: C = CrystalOfTableaux(['A',3],shape=[2,1])\n    sage: h = C.highest_weight_vector()\n    sage: t = h.to_tableau()\n    sage: w = t.to_word(); w\n    [2, 1, 1]\n    sage: type(w[0])\n    <class 'sage.combinat.crystals.letters.Crystal_of_letters_type_A_element'>\n    sage: t.evaluation()\n    <BOOM>\n\nThis patch ensures we get a tableau of integers instead of a tableau of crystal elements.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3003\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: crystals, tableaux\n\nCurrent behaviour:\n    sage: C = CrystalOfTableaux(['A',3],shape=[2,1])\n    sage: h = C.highest_weight_vector()\n    sage: t = h.to_tableau()\n    sage: w = t.to_word(); w\n    [2, 1, 1]\n    sage: type(w[0])\n    <class 'sage.combinat.crystals.letters.Crystal_of_letters_type_A_element'>\n    sage: t.evaluation()\n    <BOOM>\n\nThis patch ensures we get a tableau of integers instead of a tableau of crystal elements.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3003\n\n",
     "created_at": "2008-04-22T17:14:31Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_003003.json:
     "title": "Bugfix for to_tableau() method of CrystalOfTableaux elements (with patch; needs review)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3003",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3003
 archive/issue_comments_020658.json:
 ```json
 {
-    "body": "Attachment [to_tab.patch](tarball://root/attachments/some-uuid/ticket3003/to_tab.patch) by jbandlow created at 2008-04-22 17:15:03",
+    "body": "Attachment [to_tab.patch](tarball://root/attachments/some-uuid/ticket3003/to_tab.patch) by @jbandlow created at 2008-04-22 17:15:03",
     "created_at": "2008-04-22T17:15:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3003",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3003#issuecomment-20658",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
-Attachment [to_tab.patch](tarball://root/attachments/some-uuid/ticket3003/to_tab.patch) by jbandlow created at 2008-04-22 17:15:03
+Attachment [to_tab.patch](tarball://root/attachments/some-uuid/ticket3003/to_tab.patch) by @jbandlow created at 2008-04-22 17:15:03
 
 
 
@@ -70,7 +70,7 @@ archive/issue_comments_020659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3003",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3003#issuecomment-20659",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -105,16 +105,16 @@ Michael
 archive/issue_comments_020661.json:
 ```json
 {
-    "body": "Attachment [3003.patch](tarball://root/attachments/some-uuid/ticket3003/3003.patch) by mhansen created at 2008-04-22 22:45:10",
+    "body": "Attachment [3003.patch](tarball://root/attachments/some-uuid/ticket3003/3003.patch) by @mwhansen created at 2008-04-22 22:45:10",
     "created_at": "2008-04-22T22:45:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3003",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3003#issuecomment-20661",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [3003.patch](tarball://root/attachments/some-uuid/ticket3003/3003.patch) by mhansen created at 2008-04-22 22:45:10
+Attachment [3003.patch](tarball://root/attachments/some-uuid/ticket3003/3003.patch) by @mwhansen created at 2008-04-22 22:45:10
 
 
 
@@ -128,7 +128,7 @@ archive/issue_comments_020662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3003",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3003#issuecomment-20662",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

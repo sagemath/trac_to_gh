@@ -3,7 +3,7 @@
 archive/issues_001859.json:
 ```json
 {
-    "body": "Assignee: was\n\nMake it so that the following sort of thing works:\n\n\n```\nsage: sphere() + plot(sin(x), (x,0,10))\nsage: plot(sin(x), (x,0,10)).graphic3d()\n```\n\n\nand\n\n\n```\nsage: plot(sin(x), (x,0,10)).show(viewer='jmol')\n```\n\n\nIn each case the plot would be rendered using 3d primitives instead of 2d primitives, when possible -- primitives that aren't implemented in 3d would degrade or be removed.   Basically make a way of *coercing* 2d plots into the world of 3d plots. \n\nThis would make it possible to view whole arrays, groups, whatever of 2d plots all organized in some spatial way in 3d, and also to zoom in very close, etc., on 2d plots.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1859\n\n",
+    "body": "Assignee: @williamstein\n\nMake it so that the following sort of thing works:\n\n\n```\nsage: sphere() + plot(sin(x), (x,0,10))\nsage: plot(sin(x), (x,0,10)).graphic3d()\n```\n\n\nand\n\n\n```\nsage: plot(sin(x), (x,0,10)).show(viewer='jmol')\n```\n\n\nIn each case the plot would be rendered using 3d primitives instead of 2d primitives, when possible -- primitives that aren't implemented in 3d would degrade or be removed.   Basically make a way of *coercing* 2d plots into the world of 3d plots. \n\nThis would make it possible to view whole arrays, groups, whatever of 2d plots all organized in some spatial way in 3d, and also to zoom in very close, etc., on 2d plots.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1859\n\n",
     "created_at": "2008-01-20T01:27:25Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001859.json:
     "title": "3d and 2d graphics -- some unification",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1859",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Make it so that the following sort of thing works:
 
@@ -52,16 +52,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1859
 archive/issue_comments_011763.json:
 ```json
 {
-    "body": "Changing assignee from was to robertwb.",
+    "body": "Changing assignee from @williamstein to @robertwb.",
     "created_at": "2008-01-20T01:44:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1859#issuecomment-11763",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from was to robertwb.
+Changing assignee from @williamstein to @robertwb.
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_011764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1859#issuecomment-11764",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -88,16 +88,16 @@ Changing status from new to assigned.
 archive/issue_comments_011765.json:
 ```json
 {
-    "body": "Attachment [1859-2d-3d.diff](tarball://root/attachments/some-uuid/ticket1859/1859-2d-3d.diff) by robertwb created at 2008-01-20 04:15:03",
+    "body": "Attachment [1859-2d-3d.diff](tarball://root/attachments/some-uuid/ticket1859/1859-2d-3d.diff) by @robertwb created at 2008-01-20 04:15:03",
     "created_at": "2008-01-20T04:15:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1859#issuecomment-11765",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [1859-2d-3d.diff](tarball://root/attachments/some-uuid/ticket1859/1859-2d-3d.diff) by robertwb created at 2008-01-20 04:15:03
+Attachment [1859-2d-3d.diff](tarball://root/attachments/some-uuid/ticket1859/1859-2d-3d.diff) by @robertwb created at 2008-01-20 04:15:03
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_011766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1859#issuecomment-11766",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_011767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1859#issuecomment-11767",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

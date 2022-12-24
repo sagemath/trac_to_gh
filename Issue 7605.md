@@ -3,7 +3,7 @@
 archive/issues_007605.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nAs the title says, this patch implements the function vertex_connectivity for Graphs.\n\nYou could be in need of #7270 and GLPK from  http://sagemath.org/packages/optional/glpk-4.38.p4.spkg depending on the version of Sage you are using !!!\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7605\n\n",
+    "body": "Assignee: @rlmill\n\nAs the title says, this patch implements the function vertex_connectivity for Graphs.\n\nYou could be in need of #7270 and GLPK from  http://sagemath.org/packages/optional/glpk-4.38.p4.spkg depending on the version of Sage you are using !!!\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7605\n\n",
     "created_at": "2009-12-04T18:25:28Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007605.json:
     "title": "Graph.vertex_connectivity",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7605",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 As the title says, this patch implements the function vertex_connectivity for Graphs.
 
@@ -40,7 +40,7 @@ archive/issue_comments_064881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7605#issuecomment-64881",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -58,7 +58,7 @@ archive/issue_comments_064882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7605#issuecomment-64882",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_064883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7605#issuecomment-64883",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -89,16 +89,16 @@ You need a doctest which illustrates the `sets` input option.
 archive/issue_comments_064884.json:
 ```json
 {
-    "body": "Attachment [trac_7605.patch](tarball://root/attachments/some-uuid/ticket7605/trac_7605.patch) by ncohen created at 2009-12-16 11:05:36",
+    "body": "Attachment [trac_7605.patch](tarball://root/attachments/some-uuid/ticket7605/trac_7605.patch) by @nathanncohen created at 2009-12-16 11:05:36",
     "created_at": "2009-12-16T11:05:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7605#issuecomment-64884",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_7605.patch](tarball://root/attachments/some-uuid/ticket7605/trac_7605.patch) by ncohen created at 2009-12-16 11:05:36
+Attachment [trac_7605.patch](tarball://root/attachments/some-uuid/ticket7605/trac_7605.patch) by @nathanncohen created at 2009-12-16 11:05:36
 
 
 
@@ -112,7 +112,7 @@ archive/issue_comments_064885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7605#issuecomment-64885",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_064886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7605#issuecomment-64886",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_064887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7605#issuecomment-64887",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_064888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7605#issuecomment-64888",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

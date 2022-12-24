@@ -3,7 +3,7 @@
 archive/issues_001213.json:
 ```json
 {
-    "body": "Assignee: was\n\nI think that mpl_wrapper.py is obsolete, dead code.  Nothing else in Sage refers to it, it talks about an optional matplotlib package (when matplotlib has been standard in Sage for quite a while), and it mentions downloading matplotlib from UCSD.\n\nAlso, in mpl_wrapper.py it mentions the \"sage -mpl\" option.  In sage-sage, it says\n\n```\n    echo \"  -mpl          -- run with matplotlib support (requires optional matplotlib package)\"\n```\n\nbut \"sage -mpl\" does not act obviously different than just \"sage\".  I'm guessing that all the \"-mpl\" stuff should be removed from sage-sage, as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1213\n\n",
+    "body": "Assignee: @williamstein\n\nI think that mpl_wrapper.py is obsolete, dead code.  Nothing else in Sage refers to it, it talks about an optional matplotlib package (when matplotlib has been standard in Sage for quite a while), and it mentions downloading matplotlib from UCSD.\n\nAlso, in mpl_wrapper.py it mentions the \"sage -mpl\" option.  In sage-sage, it says\n\n```\n    echo \"  -mpl          -- run with matplotlib support (requires optional matplotlib package)\"\n```\n\nbut \"sage -mpl\" does not act obviously different than just \"sage\".  I'm guessing that all the \"-mpl\" stuff should be removed from sage-sage, as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1213\n\n",
     "created_at": "2007-11-20T05:16:21Z",
     "labels": [
         "misc",
@@ -17,7 +17,7 @@ archive/issues_001213.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I think that mpl_wrapper.py is obsolete, dead code.  Nothing else in Sage refers to it, it talks about an optional matplotlib package (when matplotlib has been standard in Sage for quite a while), and it mentions downloading matplotlib from UCSD.
 
@@ -114,7 +114,7 @@ Michael
 archive/issue_comments_007528.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2008-05-24T02:17:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1213",
     "type": "issue_comment",
@@ -123,7 +123,7 @@ archive/issue_comments_007528.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 
@@ -150,16 +150,16 @@ Changing status from new to assigned.
 archive/issue_comments_007530.json:
 ```json
 {
-    "body": "Attachment [nuke_mpl_wrapper.patch](tarball://root/attachments/some-uuid/ticket1213/nuke_mpl_wrapper.patch) by jwmerrill created at 2008-08-31 04:50:34\n\nI tried deleting this file, and all indications are good.  Here's a patch that kills it.",
+    "body": "Attachment [nuke_mpl_wrapper.patch](tarball://root/attachments/some-uuid/ticket1213/nuke_mpl_wrapper.patch) by @jicama created at 2008-08-31 04:50:34\n\nI tried deleting this file, and all indications are good.  Here's a patch that kills it.",
     "created_at": "2008-08-31T04:50:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1213",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1213#issuecomment-7530",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
-Attachment [nuke_mpl_wrapper.patch](tarball://root/attachments/some-uuid/ticket1213/nuke_mpl_wrapper.patch) by jwmerrill created at 2008-08-31 04:50:34
+Attachment [nuke_mpl_wrapper.patch](tarball://root/attachments/some-uuid/ticket1213/nuke_mpl_wrapper.patch) by @jicama created at 2008-08-31 04:50:34
 
 I tried deleting this file, and all indications are good.  Here's a patch that kills it.
 
@@ -192,16 +192,16 @@ Michael
 archive/issue_comments_007532.json:
 ```json
 {
-    "body": "Attachment [nuke_mpl_cmdline_option.patch](tarball://root/attachments/some-uuid/ticket1213/nuke_mpl_cmdline_option.patch) by jwmerrill created at 2008-08-31 05:09:11",
+    "body": "Attachment [nuke_mpl_cmdline_option.patch](tarball://root/attachments/some-uuid/ticket1213/nuke_mpl_cmdline_option.patch) by @jicama created at 2008-08-31 05:09:11",
     "created_at": "2008-08-31T05:09:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1213",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1213#issuecomment-7532",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
-Attachment [nuke_mpl_cmdline_option.patch](tarball://root/attachments/some-uuid/ticket1213/nuke_mpl_cmdline_option.patch) by jwmerrill created at 2008-08-31 05:09:11
+Attachment [nuke_mpl_cmdline_option.patch](tarball://root/attachments/some-uuid/ticket1213/nuke_mpl_cmdline_option.patch) by @jicama created at 2008-08-31 05:09:11
 
 
 
@@ -215,7 +215,7 @@ archive/issue_comments_007533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1213",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1213#issuecomment-7533",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 

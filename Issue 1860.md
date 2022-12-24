@@ -3,7 +3,7 @@
 archive/issues_001860.json:
 ```json
 {
-    "body": "Assignee: was\n\nTry\n\n```\nsage: arrow((0,1), (2,3))\n```\n\nThe top of the arrow is completely not visible.  It's like 1/2 a unit off the screen.  Terrible. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1860\n\n",
+    "body": "Assignee: @williamstein\n\nTry\n\n```\nsage: arrow((0,1), (2,3))\n```\n\nThe top of the arrow is completely not visible.  It's like 1/2 a unit off the screen.  Terrible. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1860\n\n",
     "created_at": "2008-01-20T02:24:47Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001860.json:
     "title": "arrow -- 2d plot truncates badly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1860",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Try
 
@@ -43,7 +43,7 @@ archive/issue_comments_011770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1860",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1860#issuecomment-11770",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

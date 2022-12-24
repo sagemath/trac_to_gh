@@ -3,7 +3,7 @@
 archive/issues_003244.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  jbandlow sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3244\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @jbandlow sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3244\n\n",
     "created_at": "2008-05-17T20:45:56Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_003244.json:
     "title": "[with patch, needs review] add support for inner plethysms of symmetric functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3244",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
-CC:  jbandlow sage-combinat
+CC:  @jbandlow sage-combinat
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_022458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3244#issuecomment-22458",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_022459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3244#issuecomment-22459",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -83,16 +83,16 @@ Changing status from new to assigned.
 archive/issue_comments_022460.json:
 ```json
 {
-    "body": "Attachment [3244.patch](tarball://root/attachments/some-uuid/ticket3244/3244.patch) by mhansen created at 2008-05-22 20:15:35\n\nI updated the patch to address your concerns.  Note that inner plethysm isn't bilinear, but only linear in the first argument.\n\n(I also updated 2144 to have this patch.)",
+    "body": "Attachment [3244.patch](tarball://root/attachments/some-uuid/ticket3244/3244.patch) by @mwhansen created at 2008-05-22 20:15:35\n\nI updated the patch to address your concerns.  Note that inner plethysm isn't bilinear, but only linear in the first argument.\n\n(I also updated 2144 to have this patch.)",
     "created_at": "2008-05-22T20:15:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3244#issuecomment-22460",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [3244.patch](tarball://root/attachments/some-uuid/ticket3244/3244.patch) by mhansen created at 2008-05-22 20:15:35
+Attachment [3244.patch](tarball://root/attachments/some-uuid/ticket3244/3244.patch) by @mwhansen created at 2008-05-22 20:15:35
 
 I updated the patch to address your concerns.  Note that inner plethysm isn't bilinear, but only linear in the first argument.
 
@@ -110,7 +110,7 @@ archive/issue_comments_022461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3244#issuecomment-22461",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -145,16 +145,16 @@ sigma. Now sigma circ rho is an S_n representation and, by
 archive/issue_comments_022462.json:
 ```json
 {
-    "body": "Attachment [3244.2.patch](tarball://root/attachments/some-uuid/ticket3244/3244.2.patch) by jbandlow created at 2008-05-25 07:03:50\n\nThis looks good to me now.  Nice work, Mike.",
+    "body": "Attachment [3244.2.patch](tarball://root/attachments/some-uuid/ticket3244/3244.2.patch) by @jbandlow created at 2008-05-25 07:03:50\n\nThis looks good to me now.  Nice work, Mike.",
     "created_at": "2008-05-25T07:03:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3244#issuecomment-22462",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
-Attachment [3244.2.patch](tarball://root/attachments/some-uuid/ticket3244/3244.2.patch) by jbandlow created at 2008-05-25 07:03:50
+Attachment [3244.2.patch](tarball://root/attachments/some-uuid/ticket3244/3244.2.patch) by @jbandlow created at 2008-05-25 07:03:50
 
 This looks good to me now.  Nice work, Mike.
 

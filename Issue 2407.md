@@ -14,7 +14,7 @@ archive/issues_002407.json:
     "title": "Notebook fails without explanation when cookies are disabled",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2407",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 Assignee: boothby
@@ -132,7 +132,7 @@ archive/issue_comments_016256.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2407#issuecomment-16256",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_016258.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2407#issuecomment-16258",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_016259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2407#issuecomment-16259",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

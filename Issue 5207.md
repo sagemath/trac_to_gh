@@ -3,7 +3,7 @@
 archive/issues_005207.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  cremona\n\nAs discussed at\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/48b893e904634273\n\nthere are two doctests in weierstrass_morphism.py that use symbolic variables.  This is slow, completely unnecessary, and causes trouble given that Maxima has a tendency to hang.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5207\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\nAs discussed at\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/48b893e904634273\n\nthere are two doctests in weierstrass_morphism.py that use symbolic variables.  This is slow, completely unnecessary, and causes trouble given that Maxima has a tendency to hang.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5207\n\n",
     "created_at": "2009-02-08T13:11:37Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_005207.json:
     "title": "remove unnecessary use of symbolics in doctests in weierstrass_morphism.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5207",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  cremona
+CC:  @JohnCremona
 
 As discussed at
 
@@ -39,16 +39,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5207
 archive/issue_comments_039895.json:
 ```json
 {
-    "body": "Attachment [trac_5207.patch](tarball://root/attachments/some-uuid/ticket5207/trac_5207.patch) by AlexGhitza created at 2009-02-08 13:13:57\n\nAs suggested by John Cremona, the attached patch replaces the use of symbolic variables by variables in a polynomial ring over QQ.",
+    "body": "Attachment [trac_5207.patch](tarball://root/attachments/some-uuid/ticket5207/trac_5207.patch) by @aghitza created at 2009-02-08 13:13:57\n\nAs suggested by John Cremona, the attached patch replaces the use of symbolic variables by variables in a polynomial ring over QQ.",
     "created_at": "2009-02-08T13:13:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5207",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5207#issuecomment-39895",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_5207.patch](tarball://root/attachments/some-uuid/ticket5207/trac_5207.patch) by AlexGhitza created at 2009-02-08 13:13:57
+Attachment [trac_5207.patch](tarball://root/attachments/some-uuid/ticket5207/trac_5207.patch) by @aghitza created at 2009-02-08 13:13:57
 
 As suggested by John Cremona, the attached patch replaces the use of symbolic variables by variables in a polynomial ring over QQ.
 
@@ -64,7 +64,7 @@ archive/issue_comments_039896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5207",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5207#issuecomment-39896",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

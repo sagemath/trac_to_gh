@@ -3,7 +3,7 @@
 archive/issues_000542.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/542\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/542\n\n",
     "created_at": "2007-08-31T19:30:21Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_000542.json:
     "title": "get gmp-4.2.2 into SAGE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/542",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 

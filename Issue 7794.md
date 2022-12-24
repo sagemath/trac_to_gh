@@ -3,7 +3,7 @@
 archive/issues_007794.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nKeywords: Polynomial Ring KeyboardInterrupt\n\nThe following was reported by Alex P on [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/d92efb12f35e758a):\n\n```\nsage: F.<a> = FiniteField(3)\nsage: P.<T> = PolynomialRing(F)\nsage: PP.<z> = PolynomialRing(P)\nsage: PP\nUnivariate Polynomial Ring in z over Univariate Polynomial Ring in T over Finite Field of size 3\nsage: type(PP)\n<class 'sage.rings.polynomial.polynomial_ring.PolynomialRing_integral_domain'>\nsage: (z^3 + T*z)^(81*3)\n^CException KeyboardInterrupt: KeyboardInterrupt() in 'sage.rings.polynomial.polynomial_zmod_flint.get_cparent' ignored\n^C^C\n\n------------------------------------------------------------\nUnhandled SIGFPE: An unhandled floating point exception occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nSo: First, Ctrl-C is ignored, which is bad IMO. Then, hitting Ctrl-C again (actually twice) results in a segfault, which is a desaster.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7794\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: Polynomial Ring KeyboardInterrupt\n\nThe following was reported by Alex P on [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/d92efb12f35e758a):\n\n```\nsage: F.<a> = FiniteField(3)\nsage: P.<T> = PolynomialRing(F)\nsage: PP.<z> = PolynomialRing(P)\nsage: PP\nUnivariate Polynomial Ring in z over Univariate Polynomial Ring in T over Finite Field of size 3\nsage: type(PP)\n<class 'sage.rings.polynomial.polynomial_ring.PolynomialRing_integral_domain'>\nsage: (z^3 + T*z)^(81*3)\n^CException KeyboardInterrupt: KeyboardInterrupt() in 'sage.rings.polynomial.polynomial_zmod_flint.get_cparent' ignored\n^C^C\n\n------------------------------------------------------------\nUnhandled SIGFPE: An unhandled floating point exception occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nSo: First, Ctrl-C is ignored, which is bad IMO. Then, hitting Ctrl-C again (actually twice) results in a segfault, which is a desaster.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7794\n\n",
     "created_at": "2009-12-30T10:52:47Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_007794.json:
     "title": "PolynomialRing_integral_domain ignores Ctrl-C and segfaults",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7794",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Keywords: Polynomial Ring KeyboardInterrupt
 
@@ -66,7 +66,7 @@ archive/issue_comments_067266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67266",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_067267.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67267",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_067268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67268",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_067269.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67269",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_067270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67270",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_067271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67271",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_067272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67272",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_067273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67273",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -319,7 +319,7 @@ archive/issue_comments_067274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67274",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -337,7 +337,7 @@ archive/issue_comments_067275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67275",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -355,7 +355,7 @@ archive/issue_comments_067276.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67276",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -373,7 +373,7 @@ archive/issue_comments_067277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67277",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -395,7 +395,7 @@ archive/issue_comments_067278.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67278",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -413,7 +413,7 @@ archive/issue_comments_067279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67279",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -433,7 +433,7 @@ archive/issue_comments_067280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67280",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -459,7 +459,7 @@ archive/issue_comments_067281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67281",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -486,7 +486,7 @@ archive/issue_comments_067282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67282",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -507,7 +507,7 @@ archive/issue_comments_067283.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67283",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -544,7 +544,7 @@ archive/issue_comments_067284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67284",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -562,7 +562,7 @@ archive/issue_comments_067285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67285",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -580,7 +580,7 @@ archive/issue_comments_067286.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67286",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -600,7 +600,7 @@ archive/issue_comments_067287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67287",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -628,7 +628,7 @@ archive/issue_comments_067288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67288",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -646,7 +646,7 @@ archive/issue_comments_067289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67289",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -711,16 +711,16 @@ Can you update your patch, so that the attribute error is caught? Then I'll run 
 archive/issue_comments_067290.json:
 ```json
 {
-    "body": "Attachment [7794_get_cparent.patch](tarball://root/attachments/some-uuid/ticket7794/7794_get_cparent.patch) by jdemeyer created at 2011-05-21 06:23:19",
+    "body": "Attachment [7794_get_cparent.patch](tarball://root/attachments/some-uuid/ticket7794/7794_get_cparent.patch) by @jdemeyer created at 2011-05-21 06:23:19",
     "created_at": "2011-05-21T06:23:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67290",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [7794_get_cparent.patch](tarball://root/attachments/some-uuid/ticket7794/7794_get_cparent.patch) by jdemeyer created at 2011-05-21 06:23:19
+Attachment [7794_get_cparent.patch](tarball://root/attachments/some-uuid/ticket7794/7794_get_cparent.patch) by @jdemeyer created at 2011-05-21 06:23:19
 
 
 
@@ -734,7 +734,7 @@ archive/issue_comments_067291.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67291",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -752,7 +752,7 @@ archive/issue_comments_067292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67292",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -811,7 +811,7 @@ archive/issue_comments_067293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67293",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -832,7 +832,7 @@ archive/issue_comments_067294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67294",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -850,7 +850,7 @@ archive/issue_comments_067295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67295",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -868,7 +868,7 @@ archive/issue_comments_067296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67296",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -912,7 +912,7 @@ archive/issue_comments_067297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67297",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -930,7 +930,7 @@ archive/issue_comments_067298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67298",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -951,7 +951,7 @@ archive/issue_comments_067299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67299",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

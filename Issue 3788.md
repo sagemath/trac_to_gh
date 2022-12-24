@@ -3,7 +3,7 @@
 archive/issues_003788.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis is because they use the generic algorithms (extracting each element as a Python object). \n\nSee discussion at http://groups.google.com/group/sage-devel/browse_thread/thread/dae70440d7fd41\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3788\n\n",
+    "body": "Assignee: @williamstein\n\nThis is because they use the generic algorithms (extracting each element as a Python object). \n\nSee discussion at http://groups.google.com/group/sage-devel/browse_thread/thread/dae70440d7fd41\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3788\n\n",
     "created_at": "2008-08-07T10:04:21Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_003788.json:
     "title": "[with patch, needs review] many matrix_dense_modn operations are unreasonably slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3788",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This is because they use the generic algorithms (extracting each element as a Python object). 
 
@@ -41,7 +41,7 @@ archive/issue_comments_026936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3788#issuecomment-26936",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -71,16 +71,16 @@ Shouldn't int(-2) go to 5 instead of either 2 or 0?
 archive/issue_comments_026937.json:
 ```json
 {
-    "body": "Attachment [3788-matrix-modn.patch](tarball://root/attachments/some-uuid/ticket3788/3788-matrix-modn.patch) by robertwb created at 2008-08-07 17:01:40",
+    "body": "Attachment [3788-matrix-modn.patch](tarball://root/attachments/some-uuid/ticket3788/3788-matrix-modn.patch) by @robertwb created at 2008-08-07 17:01:40",
     "created_at": "2008-08-07T17:01:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3788#issuecomment-26937",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3788-matrix-modn.patch](tarball://root/attachments/some-uuid/ticket3788/3788-matrix-modn.patch) by robertwb created at 2008-08-07 17:01:40
+Attachment [3788-matrix-modn.patch](tarball://root/attachments/some-uuid/ticket3788/3788-matrix-modn.patch) by @robertwb created at 2008-08-07 17:01:40
 
 
 
@@ -94,7 +94,7 @@ archive/issue_comments_026938.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3788#issuecomment-26938",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_026939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3788#issuecomment-26939",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_026940.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3788#issuecomment-26940",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -173,16 +173,16 @@ Me too--no idea why that just changed, it used to work and I thought I only touc
 archive/issue_comments_026941.json:
 ```json
 {
-    "body": "Attachment [3788-matrix-modn.2.patch](tarball://root/attachments/some-uuid/ticket3788/3788-matrix-modn.2.patch) by robertwb created at 2008-08-08 02:44:40\n\nThere was certainly a bug, but not in the code I touched so I don't know why it suddenly showed up now. I've fixed it, it should be working find again.",
+    "body": "Attachment [3788-matrix-modn.2.patch](tarball://root/attachments/some-uuid/ticket3788/3788-matrix-modn.2.patch) by @robertwb created at 2008-08-08 02:44:40\n\nThere was certainly a bug, but not in the code I touched so I don't know why it suddenly showed up now. I've fixed it, it should be working find again.",
     "created_at": "2008-08-08T02:44:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3788#issuecomment-26941",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3788-matrix-modn.2.patch](tarball://root/attachments/some-uuid/ticket3788/3788-matrix-modn.2.patch) by robertwb created at 2008-08-08 02:44:40
+Attachment [3788-matrix-modn.2.patch](tarball://root/attachments/some-uuid/ticket3788/3788-matrix-modn.2.patch) by @robertwb created at 2008-08-08 02:44:40
 
 There was certainly a bug, but not in the code I touched so I don't know why it suddenly showed up now. I've fixed it, it should be working find again.
 
@@ -193,16 +193,16 @@ There was certainly a bug, but not in the code I touched so I don't know why it 
 archive/issue_comments_026942.json:
 ```json
 {
-    "body": "Attachment [3788.patch](tarball://root/attachments/some-uuid/ticket3788/3788.patch) by mhansen created at 2008-08-08 06:23:54",
+    "body": "Attachment [3788.patch](tarball://root/attachments/some-uuid/ticket3788/3788.patch) by @mwhansen created at 2008-08-08 06:23:54",
     "created_at": "2008-08-08T06:23:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3788#issuecomment-26942",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [3788.patch](tarball://root/attachments/some-uuid/ticket3788/3788.patch) by mhansen created at 2008-08-08 06:23:54
+Attachment [3788.patch](tarball://root/attachments/some-uuid/ticket3788/3788.patch) by @mwhansen created at 2008-08-08 06:23:54
 
 
 
@@ -216,7 +216,7 @@ archive/issue_comments_026943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3788#issuecomment-26943",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

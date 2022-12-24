@@ -14,7 +14,7 @@ archive/issues_001333.json:
     "title": "[with trivial patch] fix a major inefficiency in floating point square root computation in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1333",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1333
 archive/issue_comments_008527.json:
 ```json
 {
-    "body": "Attachment [trac1333.patch](tarball://root/attachments/some-uuid/ticket1333/trac1333.patch) by was created at 2007-11-29 06:54:49",
+    "body": "Attachment [trac1333.patch](tarball://root/attachments/some-uuid/ticket1333/trac1333.patch) by @williamstein created at 2007-11-29 06:54:49",
     "created_at": "2007-11-29T06:54:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1333#issuecomment-8527",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac1333.patch](tarball://root/attachments/some-uuid/ticket1333/trac1333.patch) by was created at 2007-11-29 06:54:49
+Attachment [trac1333.patch](tarball://root/attachments/some-uuid/ticket1333/trac1333.patch) by @williamstein created at 2007-11-29 06:54:49
 
 
 

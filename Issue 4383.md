@@ -14,7 +14,7 @@ archive/issues_004383.json:
     "title": "composition_series() returns no generators for trivial subgroup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4383",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 Assignee: somebody
@@ -84,7 +84,7 @@ archive/issue_comments_032244.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4383#issuecomment-32244",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_032245.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4383#issuecomment-32245",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -134,16 +134,16 @@ Patch attached is based on sage-3.2.alpha1 and pases sage -t.
 archive/issue_comments_032246.json:
 ```json
 {
-    "body": "Attachment [trac_4383-order-trivial-permgp.patch](tarball://root/attachments/some-uuid/ticket4383/trac_4383-order-trivial-permgp.patch) by wdj created at 2008-10-30 19:15:43\n\nbased on 3.2.alpha1",
+    "body": "Attachment [trac_4383-order-trivial-permgp.patch](tarball://root/attachments/some-uuid/ticket4383/trac_4383-order-trivial-permgp.patch) by @wdjoyner created at 2008-10-30 19:15:43\n\nbased on 3.2.alpha1",
     "created_at": "2008-10-30T19:15:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4383#issuecomment-32246",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_4383-order-trivial-permgp.patch](tarball://root/attachments/some-uuid/ticket4383/trac_4383-order-trivial-permgp.patch) by wdj created at 2008-10-30 19:15:43
+Attachment [trac_4383-order-trivial-permgp.patch](tarball://root/attachments/some-uuid/ticket4383/trac_4383-order-trivial-permgp.patch) by @wdjoyner created at 2008-10-30 19:15:43
 
 based on 3.2.alpha1
 
@@ -183,7 +183,7 @@ archive/issue_comments_032248.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4383#issuecomment-32248",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -196,16 +196,16 @@ Sorry - I added a doctest in the 2nd patch. I could not figure out what I did wr
 archive/issue_comments_032249.json:
 ```json
 {
-    "body": "Attachment [trac_4383-order-trivial-permgp2.patch](tarball://root/attachments/some-uuid/ticket4383/trac_4383-order-trivial-permgp2.patch) by wdj created at 2008-10-30 19:55:50\n\nbased on 3.2.alpha1 - apply after the first patch",
+    "body": "Attachment [trac_4383-order-trivial-permgp2.patch](tarball://root/attachments/some-uuid/ticket4383/trac_4383-order-trivial-permgp2.patch) by @wdjoyner created at 2008-10-30 19:55:50\n\nbased on 3.2.alpha1 - apply after the first patch",
     "created_at": "2008-10-30T19:55:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4383#issuecomment-32249",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_4383-order-trivial-permgp2.patch](tarball://root/attachments/some-uuid/ticket4383/trac_4383-order-trivial-permgp2.patch) by wdj created at 2008-10-30 19:55:50
+Attachment [trac_4383-order-trivial-permgp2.patch](tarball://root/attachments/some-uuid/ticket4383/trac_4383-order-trivial-permgp2.patch) by @wdjoyner created at 2008-10-30 19:55:50
 
 based on 3.2.alpha1 - apply after the first patch
 
@@ -221,7 +221,7 @@ archive/issue_comments_032250.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4383#issuecomment-32250",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_032251.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4383#issuecomment-32251",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_032252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4383#issuecomment-32252",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -314,7 +314,7 @@ archive/issue_comments_032253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4383#issuecomment-32253",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -332,7 +332,7 @@ archive/issue_comments_032254.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4383#issuecomment-32254",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -352,7 +352,7 @@ archive/issue_comments_032255.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4383#issuecomment-32255",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -374,16 +374,16 @@ Please clarify and ping me.
 archive/issue_comments_032256.json:
 ```json
 {
-    "body": "Attachment [trac_4383-order-trivial-permgp3.patch](tarball://root/attachments/some-uuid/ticket4383/trac_4383-order-trivial-permgp3.patch) by wdj created at 2008-11-28 22:56:25",
+    "body": "Attachment [trac_4383-order-trivial-permgp3.patch](tarball://root/attachments/some-uuid/ticket4383/trac_4383-order-trivial-permgp3.patch) by @wdjoyner created at 2008-11-28 22:56:25",
     "created_at": "2008-11-28T22:56:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4383#issuecomment-32256",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_4383-order-trivial-permgp3.patch](tarball://root/attachments/some-uuid/ticket4383/trac_4383-order-trivial-permgp3.patch) by wdj created at 2008-11-28 22:56:25
+Attachment [trac_4383-order-trivial-permgp3.patch](tarball://root/attachments/some-uuid/ticket4383/trac_4383-order-trivial-permgp3.patch) by @wdjoyner created at 2008-11-28 22:56:25
 
 
 
@@ -397,7 +397,7 @@ archive/issue_comments_032257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4383#issuecomment-32257",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -420,16 +420,16 @@ trac_4383-order-trivial-permgp3-REBASE.patch
 archive/issue_comments_032258.json:
 ```json
 {
-    "body": "Attachment [trac_4383-order-trivial-permgp3-REBASE.patch](tarball://root/attachments/some-uuid/ticket4383/trac_4383-order-trivial-permgp3-REBASE.patch) by was created at 2008-11-29 01:50:12",
+    "body": "Attachment [trac_4383-order-trivial-permgp3-REBASE.patch](tarball://root/attachments/some-uuid/ticket4383/trac_4383-order-trivial-permgp3-REBASE.patch) by @williamstein created at 2008-11-29 01:50:12",
     "created_at": "2008-11-29T01:50:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4383#issuecomment-32258",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4383-order-trivial-permgp3-REBASE.patch](tarball://root/attachments/some-uuid/ticket4383/trac_4383-order-trivial-permgp3-REBASE.patch) by was created at 2008-11-29 01:50:12
+Attachment [trac_4383-order-trivial-permgp3-REBASE.patch](tarball://root/attachments/some-uuid/ticket4383/trac_4383-order-trivial-permgp3-REBASE.patch) by @williamstein created at 2008-11-29 01:50:12
 
 
 
@@ -473,7 +473,7 @@ archive/issue_comments_032260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4383#issuecomment-32260",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

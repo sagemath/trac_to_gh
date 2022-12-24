@@ -147,7 +147,7 @@ archive/issue_comments_007876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1259#issuecomment-7876",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_007877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1259#issuecomment-7877",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

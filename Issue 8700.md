@@ -14,7 +14,7 @@ archive/issues_008700.json:
     "title": "the libpng-1.2.35.p0 in sage-4.4.alpha0 contains an extra copy of libpng-1.2.35!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8700",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -46,7 +46,7 @@ archive/issue_comments_079268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8700",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8700#issuecomment-79268",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_079269.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8700",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8700#issuecomment-79269",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_079270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8700",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8700#issuecomment-79270",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_079271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8700",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8700#issuecomment-79271",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_079272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8700",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8700#issuecomment-79272",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

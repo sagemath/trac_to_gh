@@ -14,7 +14,7 @@ archive/issues_001983.json:
     "title": "[with patch; needs review] change 0^0, for 0 a Sage integer, to evaluate to 1 for consistency with Python, PARI, Magma, Maple, MPFR, GMP, etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1983",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -55,16 +55,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1983
 archive/issue_comments_012848.json:
 ```json
 {
-    "body": "Attachment [trac-1983-0to0.patch](tarball://root/attachments/some-uuid/ticket1983/trac-1983-0to0.patch) by was created at 2008-01-30 13:36:17",
+    "body": "Attachment [trac-1983-0to0.patch](tarball://root/attachments/some-uuid/ticket1983/trac-1983-0to0.patch) by @williamstein created at 2008-01-30 13:36:17",
     "created_at": "2008-01-30T13:36:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1983#issuecomment-12848",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1983-0to0.patch](tarball://root/attachments/some-uuid/ticket1983/trac-1983-0to0.patch) by was created at 2008-01-30 13:36:17
+Attachment [trac-1983-0to0.patch](tarball://root/attachments/some-uuid/ticket1983/trac-1983-0to0.patch) by @williamstein created at 2008-01-30 13:36:17
 
 
 

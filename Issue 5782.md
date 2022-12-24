@@ -98,16 +98,16 @@ Michael
 archive/issue_comments_045261.json:
 ```json
 {
-    "body": "Attachment [5782-rdf-pow.patch](tarball://root/attachments/some-uuid/ticket5782/5782-rdf-pow.patch) by robertwb created at 2009-04-16 04:58:55",
+    "body": "Attachment [5782-rdf-pow.patch](tarball://root/attachments/some-uuid/ticket5782/5782-rdf-pow.patch) by @robertwb created at 2009-04-16 04:58:55",
     "created_at": "2009-04-16T04:58:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5782#issuecomment-45261",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5782-rdf-pow.patch](tarball://root/attachments/some-uuid/ticket5782/5782-rdf-pow.patch) by robertwb created at 2009-04-16 04:58:55
+Attachment [5782-rdf-pow.patch](tarball://root/attachments/some-uuid/ticket5782/5782-rdf-pow.patch) by @robertwb created at 2009-04-16 04:58:55
 
 
 
@@ -121,7 +121,7 @@ archive/issue_comments_045262.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5782#issuecomment-45262",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_045266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5782#issuecomment-45266",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

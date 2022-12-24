@@ -3,7 +3,7 @@
 archive/issues_004849.json:
 ```json
 {
-    "body": "Assignee: was\n\nSee #4848 for a motivation. Attached is some Magma code, but note that according to William\n\n```\nThen the file heegner.py should be attached to that ticket, since to do that \nticket, one might want to port some of what's in there to Sage. That said, it's \nnot so simple, since better algorithms for computing Heegner points were found \nafter that code was written.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4849\n\n",
+    "body": "Assignee: @williamstein\n\nSee #4848 for a motivation. Attached is some Magma code, but note that according to William\n\n```\nThen the file heegner.py should be attached to that ticket, since to do that \nticket, one might want to port some of what's in there to Sage. That said, it's \nnot so simple, since better algorithms for computing Heegner points were found \nafter that code was written.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4849\n\n",
     "created_at": "2008-12-21T22:08:10Z",
     "labels": [
         "number theory",
@@ -17,7 +17,7 @@ archive/issues_004849.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 See #4848 for a motivation. Attached is some Magma code, but note that according to William
 
@@ -83,7 +83,7 @@ archive/issue_comments_036770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4849#issuecomment-36770",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 

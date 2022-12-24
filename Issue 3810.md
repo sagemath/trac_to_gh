@@ -3,7 +3,7 @@
 archive/issues_003810.json:
 ```json
 {
-    "body": "Assignee: was\n\nlist/iter on abelian groups does not agree with .list().\n\nAlso, list on classgroups returned abstract group elements -- essentially useless:\n\n\n```\nsage: x = QQ['x'].0\nsage: K.<a> = NumberField(x^4 + 23)\nsage: G = K.class_group()\nsage: G\nClass group of order 3 with structure C3 of Number Field in a with defining polynomial x^4 + 23\nsage: list(G)\n[1, c, c^2]\n```\n\n\nThis actually lists representatives in the class group.\n\nApply abelian group patch before classgroup patch.\n\nPasses relevant tests:\n\n```\n/Users/ncalexan/sage-3.0.6/sage -b >/dev/null && /Users/ncalexan/sage-3.0.6/sage -t /Users/ncalexan/sage-3.0.6/devel/sage-nca/sage/groups/abelian_gps/*\n\nreal\t0m1.610s\nuser\t0m0.958s\nsys\t0m0.623s\nsage -t  devel/sage-nca/sage/groups/abelian_gps/abelian_group.py\n\t [5.3 s]\nsage -t  devel/sage-nca/sage/groups/abelian_gps/abelian_group_element.py\n\t [3.6 s]\nsage -t  devel/sage-nca/sage/groups/abelian_gps/abelian_group_morphism.py\n\t [3.0 s]\nsage -t  devel/sage-nca/sage/groups/abelian_gps/all.py      \n\t [2.2 s]\nsage -t  devel/sage-nca/sage/groups/abelian_gps/dual_abelian_group.py\n\t [3.9 s]\nsage -t  devel/sage-nca/sage/groups/abelian_gps/dual_abelian_group_element.py\n\t [3.0 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 20.9 seconds\n```\n\n\nand\n\n\n```\n/Users/ncalexan/sage-3.0.6/sage -b >/dev/null && /Users/ncalexan/sage-3.0.6/sage -t /Users/ncalexan/sage-3.0.6/devel/sage-nca/sage/rings/number_field/*\n\nreal\t0m1.672s\nuser\t0m0.959s\nsys\t0m0.618s\nsage -t  devel/sage-nca/sage/rings/number_field/all.py      \n\t [2.0 s]\nsage -t  devel/sage-nca/sage/rings/number_field/class_group.py\n\t [4.9 s]\nsage -t  devel/sage-nca/sage/rings/number_field/galois_group.py\n\t [3.5 s]\nsage -t  devel/sage-nca/sage/rings/number_field/maps.py     \n\t [2.9 s]\nsage -t  devel/sage-nca/sage/rings/number_field/morphism.py \n\t [4.1 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field.py\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n\n\t [28.9 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field_base.pyx\n\t [3.7 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field_element.pyx\n\t [9.0 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field_element_quadratic.pyx\n\t [4.0 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field_ideal.py\n\t [6.6 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field_ideal_rel.py\n\t [3.4 s]\nsage -t  devel/sage-nca/sage/rings/number_field/order.py    \n\t [10.2 s]\nsage -t  devel/sage-nca/sage/rings/number_field/small_primes_of_degree_one.py\n\t [3.5 s]\nsage -t  devel/sage-nca/sage/rings/number_field/todo.py     \n\t [2.1 s]\nsage -t  devel/sage-nca/sage/rings/number_field/totallyreal.py\n\t [3.1 s]\nsage -t  devel/sage-nca/sage/rings/number_field/totallyreal_data.pyx\n\t [2.1 s]\nsage -t  devel/sage-nca/sage/rings/number_field/totallyreal_phc.py\n\t [2.1 s]\nsage -t  devel/sage-nca/sage/rings/number_field/totallyreal_rel.py\n\t [4.3 s]\nsage -t  devel/sage-nca/sage/rings/number_field/unit_group.py\n\t [2.0 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 102.5 seconds\n\nsage-test finished (all test passed) at Mon Aug 11 21:53:13\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3810\n\n",
+    "body": "Assignee: @williamstein\n\nlist/iter on abelian groups does not agree with .list().\n\nAlso, list on classgroups returned abstract group elements -- essentially useless:\n\n\n```\nsage: x = QQ['x'].0\nsage: K.<a> = NumberField(x^4 + 23)\nsage: G = K.class_group()\nsage: G\nClass group of order 3 with structure C3 of Number Field in a with defining polynomial x^4 + 23\nsage: list(G)\n[1, c, c^2]\n```\n\n\nThis actually lists representatives in the class group.\n\nApply abelian group patch before classgroup patch.\n\nPasses relevant tests:\n\n```\n/Users/ncalexan/sage-3.0.6/sage -b >/dev/null && /Users/ncalexan/sage-3.0.6/sage -t /Users/ncalexan/sage-3.0.6/devel/sage-nca/sage/groups/abelian_gps/*\n\nreal\t0m1.610s\nuser\t0m0.958s\nsys\t0m0.623s\nsage -t  devel/sage-nca/sage/groups/abelian_gps/abelian_group.py\n\t [5.3 s]\nsage -t  devel/sage-nca/sage/groups/abelian_gps/abelian_group_element.py\n\t [3.6 s]\nsage -t  devel/sage-nca/sage/groups/abelian_gps/abelian_group_morphism.py\n\t [3.0 s]\nsage -t  devel/sage-nca/sage/groups/abelian_gps/all.py      \n\t [2.2 s]\nsage -t  devel/sage-nca/sage/groups/abelian_gps/dual_abelian_group.py\n\t [3.9 s]\nsage -t  devel/sage-nca/sage/groups/abelian_gps/dual_abelian_group_element.py\n\t [3.0 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 20.9 seconds\n```\n\n\nand\n\n\n```\n/Users/ncalexan/sage-3.0.6/sage -b >/dev/null && /Users/ncalexan/sage-3.0.6/sage -t /Users/ncalexan/sage-3.0.6/devel/sage-nca/sage/rings/number_field/*\n\nreal\t0m1.672s\nuser\t0m0.959s\nsys\t0m0.618s\nsage -t  devel/sage-nca/sage/rings/number_field/all.py      \n\t [2.0 s]\nsage -t  devel/sage-nca/sage/rings/number_field/class_group.py\n\t [4.9 s]\nsage -t  devel/sage-nca/sage/rings/number_field/galois_group.py\n\t [3.5 s]\nsage -t  devel/sage-nca/sage/rings/number_field/maps.py     \n\t [2.9 s]\nsage -t  devel/sage-nca/sage/rings/number_field/morphism.py \n\t [4.1 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field.py\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n\n\t [28.9 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field_base.pyx\n\t [3.7 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field_element.pyx\n\t [9.0 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field_element_quadratic.pyx\n\t [4.0 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field_ideal.py\n\t [6.6 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field_ideal_rel.py\n\t [3.4 s]\nsage -t  devel/sage-nca/sage/rings/number_field/order.py    \n\t [10.2 s]\nsage -t  devel/sage-nca/sage/rings/number_field/small_primes_of_degree_one.py\n\t [3.5 s]\nsage -t  devel/sage-nca/sage/rings/number_field/todo.py     \n\t [2.1 s]\nsage -t  devel/sage-nca/sage/rings/number_field/totallyreal.py\n\t [3.1 s]\nsage -t  devel/sage-nca/sage/rings/number_field/totallyreal_data.pyx\n\t [2.1 s]\nsage -t  devel/sage-nca/sage/rings/number_field/totallyreal_phc.py\n\t [2.1 s]\nsage -t  devel/sage-nca/sage/rings/number_field/totallyreal_rel.py\n\t [4.3 s]\nsage -t  devel/sage-nca/sage/rings/number_field/unit_group.py\n\t [2.0 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 102.5 seconds\n\nsage-test finished (all test passed) at Mon Aug 11 21:53:13\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3810\n\n",
     "created_at": "2008-08-12T04:56:23Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_003810.json:
     "title": "make abelian group list/iter and classgroup list/iter more modern",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3810",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 list/iter on abelian groups does not agree with .list().
 
@@ -136,16 +136,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3810
 archive/issue_comments_027068.json:
 ```json
 {
-    "body": "Attachment [3810-ncalexan-class-group-list.patch](tarball://root/attachments/some-uuid/ticket3810/3810-ncalexan-class-group-list.patch) by ncalexan created at 2008-08-12 04:57:37",
+    "body": "Attachment [3810-ncalexan-class-group-list.patch](tarball://root/attachments/some-uuid/ticket3810/3810-ncalexan-class-group-list.patch) by @ncalexan created at 2008-08-12 04:57:37",
     "created_at": "2008-08-12T04:57:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3810#issuecomment-27068",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [3810-ncalexan-class-group-list.patch](tarball://root/attachments/some-uuid/ticket3810/3810-ncalexan-class-group-list.patch) by ncalexan created at 2008-08-12 04:57:37
+Attachment [3810-ncalexan-class-group-list.patch](tarball://root/attachments/some-uuid/ticket3810/3810-ncalexan-class-group-list.patch) by @ncalexan created at 2008-08-12 04:57:37
 
 
 
@@ -159,7 +159,7 @@ archive/issue_comments_027069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3810#issuecomment-27069",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -182,16 +182,16 @@ sage: G.list()
 archive/issue_comments_027070.json:
 ```json
 {
-    "body": "Attachment [3810-ncalexan-abelian-group-iter-2.patch](tarball://root/attachments/some-uuid/ticket3810/3810-ncalexan-abelian-group-iter-2.patch) by ncalexan created at 2008-08-13 21:42:44",
+    "body": "Attachment [3810-ncalexan-abelian-group-iter-2.patch](tarball://root/attachments/some-uuid/ticket3810/3810-ncalexan-abelian-group-iter-2.patch) by @ncalexan created at 2008-08-13 21:42:44",
     "created_at": "2008-08-13T21:42:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3810#issuecomment-27070",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [3810-ncalexan-abelian-group-iter-2.patch](tarball://root/attachments/some-uuid/ticket3810/3810-ncalexan-abelian-group-iter-2.patch) by ncalexan created at 2008-08-13 21:42:44
+Attachment [3810-ncalexan-abelian-group-iter-2.patch](tarball://root/attachments/some-uuid/ticket3810/3810-ncalexan-abelian-group-iter-2.patch) by @ncalexan created at 2008-08-13 21:42:44
 
 
 
@@ -205,7 +205,7 @@ archive/issue_comments_027071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3810#issuecomment-27071",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_027072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3810#issuecomment-27072",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_027074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3810#issuecomment-27074",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -310,7 +310,7 @@ archive/issue_comments_027075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3810#issuecomment-27075",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -328,7 +328,7 @@ archive/issue_comments_027076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3810#issuecomment-27076",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -346,7 +346,7 @@ archive/issue_comments_027077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3810#issuecomment-27077",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -380,7 +380,7 @@ archive/issue_comments_027078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3810#issuecomment-27078",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -393,16 +393,16 @@ NB The patch at #4061 which has just been merged into 3.2.2 contains a fix for t
 archive/issue_comments_027079.json:
 ```json
 {
-    "body": "Attachment [sage-3810-combined.patch](tarball://root/attachments/some-uuid/ticket3810/sage-3810-combined.patch) by cremona created at 2008-12-07 17:07:15\n\nReplaces all previous; apply to 3.2.1 + #4061 patches",
+    "body": "Attachment [sage-3810-combined.patch](tarball://root/attachments/some-uuid/ticket3810/sage-3810-combined.patch) by @JohnCremona created at 2008-12-07 17:07:15\n\nReplaces all previous; apply to 3.2.1 + #4061 patches",
     "created_at": "2008-12-07T17:07:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3810#issuecomment-27079",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [sage-3810-combined.patch](tarball://root/attachments/some-uuid/ticket3810/sage-3810-combined.patch) by cremona created at 2008-12-07 17:07:15
+Attachment [sage-3810-combined.patch](tarball://root/attachments/some-uuid/ticket3810/sage-3810-combined.patch) by @JohnCremona created at 2008-12-07 17:07:15
 
 Replaces all previous; apply to 3.2.1 + #4061 patches
 
@@ -418,7 +418,7 @@ archive/issue_comments_027080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3810#issuecomment-27080",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -478,7 +478,7 @@ archive/issue_comments_027082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3810#issuecomment-27082",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -553,7 +553,7 @@ archive/issue_comments_027084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3810#issuecomment-27084",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -587,16 +587,16 @@ John
 archive/issue_comments_027085.json:
 ```json
 {
-    "body": "Attachment [sage-3810-fix64.patch](tarball://root/attachments/some-uuid/ticket3810/sage-3810-fix64.patch) by cremona created at 2008-12-08 10:07:42",
+    "body": "Attachment [sage-3810-fix64.patch](tarball://root/attachments/some-uuid/ticket3810/sage-3810-fix64.patch) by @JohnCremona created at 2008-12-08 10:07:42",
     "created_at": "2008-12-08T10:07:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3810#issuecomment-27085",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [sage-3810-fix64.patch](tarball://root/attachments/some-uuid/ticket3810/sage-3810-fix64.patch) by cremona created at 2008-12-08 10:07:42
+Attachment [sage-3810-fix64.patch](tarball://root/attachments/some-uuid/ticket3810/sage-3810-fix64.patch) by @JohnCremona created at 2008-12-08 10:07:42
 
 
 
@@ -610,7 +610,7 @@ archive/issue_comments_027086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3810#issuecomment-27086",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

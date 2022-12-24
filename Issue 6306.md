@@ -3,7 +3,7 @@
 archive/issues_006306.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nThe attached patch should fix several of the reference manual warnings for 4.0.2.  There is still one outstanding -- sage/misc/misc.py -- but I can't figure that one out.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6306\n\n",
+    "body": "Assignee: @jhpalmieri\n\nThe attached patch should fix several of the reference manual warnings for 4.0.2.  There is still one outstanding -- sage/misc/misc.py -- but I can't figure that one out.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6306\n\n",
     "created_at": "2009-06-16T02:06:05Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_006306.json:
     "title": "[with patch, needs review] fix some reference manual issues for 4.0.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6306",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 The attached patch should fix several of the reference manual warnings for 4.0.2.  There is still one outstanding -- sage/misc/misc.py -- but I can't figure that one out.
 
@@ -33,16 +33,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6306
 archive/issue_comments_050327.json:
 ```json
 {
-    "body": "Attachment [trac_6306.patch](tarball://root/attachments/some-uuid/ticket6306/trac_6306.patch) by jhpalmieri created at 2009-06-16 02:06:31",
+    "body": "Attachment [trac_6306.patch](tarball://root/attachments/some-uuid/ticket6306/trac_6306.patch) by @jhpalmieri created at 2009-06-16 02:06:31",
     "created_at": "2009-06-16T02:06:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6306#issuecomment-50327",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_6306.patch](tarball://root/attachments/some-uuid/ticket6306/trac_6306.patch) by jhpalmieri created at 2009-06-16 02:06:31
+Attachment [trac_6306.patch](tarball://root/attachments/some-uuid/ticket6306/trac_6306.patch) by @jhpalmieri created at 2009-06-16 02:06:31
 
 
 
@@ -74,7 +74,7 @@ archive/issue_comments_050329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6306#issuecomment-50329",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

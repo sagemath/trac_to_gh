@@ -3,7 +3,7 @@
 archive/issues_004898.json:
 ```json
 {
-    "body": "Assignee: abergeron\n\nCC:  wcauchois jason\n\nThis patch add the option of styling lines, either individually or all at once, and adding contour level labels.\n\nAnother one is coming to support this in combination with #2770.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4898\n\n",
+    "body": "Assignee: abergeron\n\nCC:  wcauchois @jasongrout\n\nThis patch add the option of styling lines, either individually or all at once, and adding contour level labels.\n\nAnother one is coming to support this in combination with #2770.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4898\n\n",
     "created_at": "2008-12-31T21:49:27Z",
     "labels": [
         "graphics",
@@ -19,7 +19,7 @@ archive/issues_004898.json:
 ```
 Assignee: abergeron
 
-CC:  wcauchois jason
+CC:  wcauchois @jasongrout
 
 This patch add the option of styling lines, either individually or all at once, and adding contour level labels.
 
@@ -97,7 +97,7 @@ archive/issue_comments_037146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4898#issuecomment-37146",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_037147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4898#issuecomment-37147",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_037148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4898#issuecomment-37148",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_037150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4898#issuecomment-37150",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_037151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4898#issuecomment-37151",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_037152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4898#issuecomment-37152",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -259,16 +259,16 @@ I'm excited for this to get in!
 archive/issue_comments_037153.json:
 ```json
 {
-    "body": "Attachment [trac_4898-contour-labels-rebase.2.patch](tarball://root/attachments/some-uuid/ticket4898/trac_4898-contour-labels-rebase.2.patch) by kcrisman created at 2009-10-08 02:39:07\n\nBased on 4.1.2.rc1.alpha3",
+    "body": "Attachment [trac_4898-contour-labels-rebase.2.patch](tarball://root/attachments/some-uuid/ticket4898/trac_4898-contour-labels-rebase.2.patch) by @kcrisman created at 2009-10-08 02:39:07\n\nBased on 4.1.2.rc1.alpha3",
     "created_at": "2009-10-08T02:39:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4898#issuecomment-37153",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_4898-contour-labels-rebase.2.patch](tarball://root/attachments/some-uuid/ticket4898/trac_4898-contour-labels-rebase.2.patch) by kcrisman created at 2009-10-08 02:39:07
+Attachment [trac_4898-contour-labels-rebase.2.patch](tarball://root/attachments/some-uuid/ticket4898/trac_4898-contour-labels-rebase.2.patch) by @kcrisman created at 2009-10-08 02:39:07
 
 Based on 4.1.2.rc1.alpha3
 
@@ -284,7 +284,7 @@ archive/issue_comments_037154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4898#issuecomment-37154",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -302,7 +302,7 @@ archive/issue_comments_037155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4898#issuecomment-37155",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -317,16 +317,16 @@ Anyway, there was a one-character (in fact, one space) thing that prevented it f
 archive/issue_comments_037156.json:
 ```json
 {
-    "body": "Attachment [trac_4898-contour-labels-rebase.patch](tarball://root/attachments/some-uuid/ticket4898/trac_4898-contour-labels-rebase.patch) by kcrisman created at 2009-11-05 19:55:56\n\nBased on 4.2 - apply only this!",
+    "body": "Attachment [trac_4898-contour-labels-rebase.patch](tarball://root/attachments/some-uuid/ticket4898/trac_4898-contour-labels-rebase.patch) by @kcrisman created at 2009-11-05 19:55:56\n\nBased on 4.2 - apply only this!",
     "created_at": "2009-11-05T19:55:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4898#issuecomment-37156",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_4898-contour-labels-rebase.patch](tarball://root/attachments/some-uuid/ticket4898/trac_4898-contour-labels-rebase.patch) by kcrisman created at 2009-11-05 19:55:56
+Attachment [trac_4898-contour-labels-rebase.patch](tarball://root/attachments/some-uuid/ticket4898/trac_4898-contour-labels-rebase.patch) by @kcrisman created at 2009-11-05 19:55:56
 
 Based on 4.2 - apply only this!
 
@@ -342,7 +342,7 @@ archive/issue_comments_037157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4898#issuecomment-37157",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -360,7 +360,7 @@ archive/issue_comments_037158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4898#issuecomment-37158",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -373,16 +373,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_037159.json:
 ```json
 {
-    "body": "Attachment [trac-4898-reviewer.patch](tarball://root/attachments/some-uuid/ticket4898/trac-4898-reviewer.patch) by jason created at 2009-11-10 17:16:00\n\napply on top of previous patch",
+    "body": "Attachment [trac-4898-reviewer.patch](tarball://root/attachments/some-uuid/ticket4898/trac-4898-reviewer.patch) by @jasongrout created at 2009-11-10 17:16:00\n\napply on top of previous patch",
     "created_at": "2009-11-10T17:16:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4898#issuecomment-37159",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-4898-reviewer.patch](tarball://root/attachments/some-uuid/ticket4898/trac-4898-reviewer.patch) by jason created at 2009-11-10 17:16:00
+Attachment [trac-4898-reviewer.patch](tarball://root/attachments/some-uuid/ticket4898/trac-4898-reviewer.patch) by @jasongrout created at 2009-11-10 17:16:00
 
 apply on top of previous patch
 
@@ -398,7 +398,7 @@ archive/issue_comments_037160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4898#issuecomment-37160",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

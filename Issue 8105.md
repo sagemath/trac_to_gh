@@ -3,7 +3,7 @@
 archive/issues_008105.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jason ddrake jhpalmieri robert.marik kcrisman\n\nThis is an experimental process for converting Latex documents into Sage worksheets.\n\nAttached archive contains code, configuration files, templates and hints to begin using the system.  See README.txt to get started.\n\nOver time, this should get easier through automation of some of the tasks, and more general with cross-worksheet linking.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8105\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jasongrout @dandrake @jhpalmieri @robert-marik @kcrisman\n\nThis is an experimental process for converting Latex documents into Sage worksheets.\n\nAttached archive contains code, configuration files, templates and hints to begin using the system.  See README.txt to get started.\n\nOver time, this should get easier through automation of some of the tasks, and more general with cross-worksheet linking.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8105\n\n",
     "created_at": "2010-01-28T04:55:08Z",
     "labels": [
         "packages: experimental",
@@ -14,12 +14,12 @@ archive/issues_008105.json:
     "title": "LaTex to Sage worksheet conversion system",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8105",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 Assignee: tbd
 
-CC:  jason ddrake jhpalmieri robert.marik kcrisman
+CC:  @jasongrout @dandrake @jhpalmieri @robert-marik @kcrisman
 
 This is an experimental process for converting Latex documents into Sage worksheets.
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8105
 archive/issue_comments_071116.json:
 ```json
 {
-    "body": "Attachment [latex2sage-20100127.tar.gz](tarball://root/attachments/some-uuid/ticket8105/latex2sage-20100127.tar.gz) by rbeezer created at 2010-01-28 06:43:02\n\nCode like the following, added to the Python script, will automate the cut/paste final step, producing a Sage worksheet as the final output.  (Ignore the line outputting W's cells.)\n\nNote that the `.edit_save()` method needs a title as the first line of the string, and this clobbers the title given in the initialization.\n\n\n```\nsage: nb = sage.server.notebook.notebook.Notebook(\"/tmp\")\nsage: W = nb.create_new_worksheet('A Weird Worksheet', 'admin')\nsage: W.edit_save('Weirder Title\\n`2+3\\n///\\n5\\n`')\nsage: W\n[Cell 0; in=2+3, out=\n5]\nsage: nb.export_worksheet(W.filename(), \"/tmp/weird.sws\", verbose=False)\nsage: nb.delete()\n```\n",
+    "body": "Attachment [latex2sage-20100127.tar.gz](tarball://root/attachments/some-uuid/ticket8105/latex2sage-20100127.tar.gz) by @rbeezer created at 2010-01-28 06:43:02\n\nCode like the following, added to the Python script, will automate the cut/paste final step, producing a Sage worksheet as the final output.  (Ignore the line outputting W's cells.)\n\nNote that the `.edit_save()` method needs a title as the first line of the string, and this clobbers the title given in the initialization.\n\n\n```\nsage: nb = sage.server.notebook.notebook.Notebook(\"/tmp\")\nsage: W = nb.create_new_worksheet('A Weird Worksheet', 'admin')\nsage: W.edit_save('Weirder Title\\n`2+3\\n///\\n5\\n`')\nsage: W\n[Cell 0; in=2+3, out=\n5]\nsage: nb.export_worksheet(W.filename(), \"/tmp/weird.sws\", verbose=False)\nsage: nb.delete()\n```\n",
     "created_at": "2010-01-28T06:43:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71116",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [latex2sage-20100127.tar.gz](tarball://root/attachments/some-uuid/ticket8105/latex2sage-20100127.tar.gz) by rbeezer created at 2010-01-28 06:43:02
+Attachment [latex2sage-20100127.tar.gz](tarball://root/attachments/some-uuid/ticket8105/latex2sage-20100127.tar.gz) by @rbeezer created at 2010-01-28 06:43:02
 
 Code like the following, added to the Python script, will automate the cut/paste final step, producing a Sage worksheet as the final output.  (Ignore the line outputting W's cells.)
 
@@ -78,7 +78,7 @@ archive/issue_comments_071117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71117",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -101,16 +101,16 @@ which would spit out a proper .sws file. Sound right?
 archive/issue_comments_071118.json:
 ```json
 {
-    "body": "Attachment [tex2sws-20100129.tar.gz](tarball://root/attachments/some-uuid/ticket8105/tex2sws-20100129.tar.gz) by rbeezer created at 2010-01-30 07:13:05\n\nThe notebook code above works for the *old* notebook.  But I've added the right code for the *new* notebook and have the script creating an sws file as output.\n\nSo there are now just two inputs to the script (see the README), and one less manual step, but at the small cost that you now need Sage in your path.  Though one could install the new notebook locally and have the script run as pure Python rather than within Sage.\n\nThere's now a Mercurial repo in the archive, and I'll work on a bitbucket site soon.",
+    "body": "Attachment [tex2sws-20100129.tar.gz](tarball://root/attachments/some-uuid/ticket8105/tex2sws-20100129.tar.gz) by @rbeezer created at 2010-01-30 07:13:05\n\nThe notebook code above works for the *old* notebook.  But I've added the right code for the *new* notebook and have the script creating an sws file as output.\n\nSo there are now just two inputs to the script (see the README), and one less manual step, but at the small cost that you now need Sage in your path.  Though one could install the new notebook locally and have the script run as pure Python rather than within Sage.\n\nThere's now a Mercurial repo in the archive, and I'll work on a bitbucket site soon.",
     "created_at": "2010-01-30T07:13:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71118",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [tex2sws-20100129.tar.gz](tarball://root/attachments/some-uuid/ticket8105/tex2sws-20100129.tar.gz) by rbeezer created at 2010-01-30 07:13:05
+Attachment [tex2sws-20100129.tar.gz](tarball://root/attachments/some-uuid/ticket8105/tex2sws-20100129.tar.gz) by @rbeezer created at 2010-01-30 07:13:05
 
 The notebook code above works for the *old* notebook.  But I've added the right code for the *new* notebook and have the script creating an sws file as output.
 
@@ -130,7 +130,7 @@ archive/issue_comments_071119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71119",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_071120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71120",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -181,16 +181,16 @@ I have TeXLive 2009 installed, separately from the Ubuntu package manager. TeXLi
 archive/issue_comments_071121.json:
 ```json
 {
-    "body": "Changing assignee from tbd to rbeezer.",
+    "body": "Changing assignee from tbd to @rbeezer.",
     "created_at": "2010-01-31T01:05:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71121",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Changing assignee from tbd to rbeezer.
+Changing assignee from tbd to @rbeezer.
 
 
 
@@ -204,7 +204,7 @@ archive/issue_comments_071122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71122",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_071123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71123",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -241,16 +241,16 @@ The oposite sws -> LaTeX conversion can be done with [sws2tex](http://bitbucket.
 archive/issue_comments_071124.json:
 ```json
 {
-    "body": "Attachment [tex2sws-20100131.tar.gz](tarball://root/attachments/some-uuid/ticket8105/tex2sws-20100131.tar.gz) by rbeezer created at 2010-02-01 05:09:02",
+    "body": "Attachment [tex2sws-20100131.tar.gz](tarball://root/attachments/some-uuid/ticket8105/tex2sws-20100131.tar.gz) by @rbeezer created at 2010-02-01 05:09:02",
     "created_at": "2010-02-01T05:09:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71124",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [tex2sws-20100131.tar.gz](tarball://root/attachments/some-uuid/ticket8105/tex2sws-20100131.tar.gz) by rbeezer created at 2010-02-01 05:09:02
+Attachment [tex2sws-20100131.tar.gz](tarball://root/attachments/some-uuid/ticket8105/tex2sws-20100131.tar.gz) by @rbeezer created at 2010-02-01 05:09:02
 
 
 
@@ -264,7 +264,7 @@ archive/issue_comments_071125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71125",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_071126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71126",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -307,7 +307,7 @@ archive/issue_comments_071127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71127",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -320,16 +320,16 @@ the version which does not replace \infty etc. by unicode characters
 archive/issue_comments_071128.json:
 ```json
 {
-    "body": "Attachment [tex4ht-sage.cfg](tarball://root/attachments/some-uuid/ticket8105/tex4ht-sage.cfg) by robert.marik created at 2010-02-01 14:22:26\n\nI looked briefly at the converter. Two ideas: \n\n* \\infty and other characters are replaced by unicode characters. I fixed this few years before using \\HCode command, see the attached tex4ht-sage.cfg file. Another solution has been suggested by [Eitan Gurari](http://groups.google.cz/group/comp.text.tex/browse_thread/thread/221b01a29dc59745/f16d44bca4d0f20a). I remember that when I worked on my [materials](http://user.mendelu.cz/marik/mat-web/mat-web.html) (sorry for Czech language), I had to fix also align and similar enviroments. You can see my [jsmath config file](http://user.mendelu.cz/marik/latex/marik-jsmath.4ht)\n\n* $\\lim_{x\\to\\infty}$ hangs the compilation. Commenting out \\usepackage{syntax} and two following lines solves the problem - but breaks other things, of course :)",
+    "body": "Attachment [tex4ht-sage.cfg](tarball://root/attachments/some-uuid/ticket8105/tex4ht-sage.cfg) by @robert-marik created at 2010-02-01 14:22:26\n\nI looked briefly at the converter. Two ideas: \n\n* \\infty and other characters are replaced by unicode characters. I fixed this few years before using \\HCode command, see the attached tex4ht-sage.cfg file. Another solution has been suggested by [Eitan Gurari](http://groups.google.cz/group/comp.text.tex/browse_thread/thread/221b01a29dc59745/f16d44bca4d0f20a). I remember that when I worked on my [materials](http://user.mendelu.cz/marik/mat-web/mat-web.html) (sorry for Czech language), I had to fix also align and similar enviroments. You can see my [jsmath config file](http://user.mendelu.cz/marik/latex/marik-jsmath.4ht)\n\n* $\\lim_{x\\to\\infty}$ hangs the compilation. Commenting out \\usepackage{syntax} and two following lines solves the problem - but breaks other things, of course :)",
     "created_at": "2010-02-01T14:22:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71128",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Attachment [tex4ht-sage.cfg](tarball://root/attachments/some-uuid/ticket8105/tex4ht-sage.cfg) by robert.marik created at 2010-02-01 14:22:26
+Attachment [tex4ht-sage.cfg](tarball://root/attachments/some-uuid/ticket8105/tex4ht-sage.cfg) by @robert-marik created at 2010-02-01 14:22:26
 
 I looked briefly at the converter. Two ideas: 
 
@@ -349,7 +349,7 @@ archive/issue_comments_071129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71129",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -365,16 +365,16 @@ this second problem seems to be limited to older installations of TeX, texlive20
 archive/issue_comments_071130.json:
 ```json
 {
-    "body": "Attachment [tex2sws-20100203.tar.gz](tarball://root/attachments/some-uuid/ticket8105/tex2sws-20100203.tar.gz) by rbeezer created at 2010-02-04 05:26:50",
+    "body": "Attachment [tex2sws-20100203.tar.gz](tarball://root/attachments/some-uuid/ticket8105/tex2sws-20100203.tar.gz) by @rbeezer created at 2010-02-04 05:26:50",
     "created_at": "2010-02-04T05:26:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71130",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [tex2sws-20100203.tar.gz](tarball://root/attachments/some-uuid/ticket8105/tex2sws-20100203.tar.gz) by rbeezer created at 2010-02-04 05:26:50
+Attachment [tex2sws-20100203.tar.gz](tarball://root/attachments/some-uuid/ticket8105/tex2sws-20100203.tar.gz) by @rbeezer created at 2010-02-04 05:26:50
 
 
 
@@ -388,7 +388,7 @@ archive/issue_comments_071131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71131",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -406,7 +406,7 @@ archive/issue_comments_071132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71132",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -445,7 +445,7 @@ archive/issue_comments_071133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71133",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -468,16 +468,16 @@ Rob
 archive/issue_comments_071134.json:
 ```json
 {
-    "body": "Attachment [mini-graph.tex](tarball://root/attachments/some-uuid/ticket8105/mini-graph.tex) by rbeezer created at 2010-02-08 03:11:06\n\ntkz-graph example unrecognized by tex4ht",
+    "body": "Attachment [mini-graph.tex](tarball://root/attachments/some-uuid/ticket8105/mini-graph.tex) by @rbeezer created at 2010-02-08 03:11:06\n\ntkz-graph example unrecognized by tex4ht",
     "created_at": "2010-02-08T03:11:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71134",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [mini-graph.tex](tarball://root/attachments/some-uuid/ticket8105/mini-graph.tex) by rbeezer created at 2010-02-08 03:11:06
+Attachment [mini-graph.tex](tarball://root/attachments/some-uuid/ticket8105/mini-graph.tex) by @rbeezer created at 2010-02-08 03:11:06
 
 tkz-graph example unrecognized by tex4ht
 
@@ -493,7 +493,7 @@ archive/issue_comments_071135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71135",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -519,7 +519,7 @@ archive/issue_comments_071136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71136",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -555,7 +555,7 @@ archive/issue_comments_071137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71137",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -581,7 +581,7 @@ archive/issue_comments_071138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71138",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -611,7 +611,7 @@ archive/issue_comments_071139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71139",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -626,16 +626,16 @@ All this gives better rendering in the browser.
 archive/issue_comments_071140.json:
 ```json
 {
-    "body": "Attachment [jsmath-noexpand.4ht](tarball://root/attachments/some-uuid/ticket8105/jsmath-noexpand.4ht) by robert.marik created at 2010-02-20 21:37:02",
+    "body": "Attachment [jsmath-noexpand.4ht](tarball://root/attachments/some-uuid/ticket8105/jsmath-noexpand.4ht) by @robert-marik created at 2010-02-20 21:37:02",
     "created_at": "2010-02-20T21:37:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71140",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Attachment [jsmath-noexpand.4ht](tarball://root/attachments/some-uuid/ticket8105/jsmath-noexpand.4ht) by robert.marik created at 2010-02-20 21:37:02
+Attachment [jsmath-noexpand.4ht](tarball://root/attachments/some-uuid/ticket8105/jsmath-noexpand.4ht) by @robert-marik created at 2010-02-20 21:37:02
 
 
 
@@ -649,7 +649,7 @@ archive/issue_comments_071141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71141",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -674,7 +674,7 @@ archive/issue_comments_071142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71142",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -704,7 +704,7 @@ archive/issue_comments_071143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71143",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -722,7 +722,7 @@ archive/issue_comments_071144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71144",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

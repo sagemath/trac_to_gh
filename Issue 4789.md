@@ -3,7 +3,7 @@
 archive/issues_004789.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  cpernet slelievre\n\nI think this message might be useful:\n\nhttp://projects.scipy.org/pipermail/scipy-user/2008-December/019064.html\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4789\n\n",
+    "body": "Assignee: tbd\n\nCC:  @ClementPernet @slel\n\nI think this message might be useful:\n\nhttp://projects.scipy.org/pipermail/scipy-user/2008-December/019064.html\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4789\n\n",
     "created_at": "2008-12-14T01:57:58Z",
     "labels": [
         "algebra",
@@ -13,12 +13,12 @@ archive/issues_004789.json:
     "title": "numerically stable computation of nullspace of RDF/CDF matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4789",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: tbd
 
-CC:  cpernet slelievre
+CC:  @ClementPernet @slel
 
 I think this message might be useful:
 
@@ -42,7 +42,7 @@ archive/issue_comments_036305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4789",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4789#issuecomment-36305",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -55,16 +55,16 @@ Changing component from algebra to linear algebra.
 archive/issue_comments_036306.json:
 ```json
 {
-    "body": "Changing assignee from tbd to jason.",
+    "body": "Changing assignee from tbd to @jasongrout.",
     "created_at": "2008-12-14T01:58:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4789",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4789#issuecomment-36306",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from tbd to jason.
+Changing assignee from tbd to @jasongrout.
 
 
 
@@ -78,7 +78,7 @@ archive/issue_comments_036307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4789",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4789#issuecomment-36307",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_036308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4789",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4789#issuecomment-36308",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_036309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4789",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4789#issuecomment-36309",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

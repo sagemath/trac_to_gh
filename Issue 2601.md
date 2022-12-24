@@ -3,7 +3,7 @@
 archive/issues_002601.json:
 ```json
 {
-    "body": "Assignee: malb\n\nKeywords: ideal, change_ring\n\nThe following produces errors:\n\n\n```\nsage: testR.<a,b,c> = PolynomialRing(QQ,3)\nsage: id_ringA = ideal([a^2-b,b^2-c,c^2-a])\nsage: id_ringB = ideal(id_ringA.gens()).change_ring(PolynomialRing(QQ,'c,b,a')) \n```\n\n\nalthough this does not:\n\n```\nsage: testR.<a,b,c> = PolynomialRing(QQ,3)\nsage: id_ringA = ideal([a^2-b,b^2-c,c^2-a])\nsage: id_ringB = ideal(id_ringA.gens()).change_ring(PolynomialRing(QQ,'c,a,b')) \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2601\n\n",
+    "body": "Assignee: @malb\n\nKeywords: ideal, change_ring\n\nThe following produces errors:\n\n\n```\nsage: testR.<a,b,c> = PolynomialRing(QQ,3)\nsage: id_ringA = ideal([a^2-b,b^2-c,c^2-a])\nsage: id_ringB = ideal(id_ringA.gens()).change_ring(PolynomialRing(QQ,'c,b,a')) \n```\n\n\nalthough this does not:\n\n```\nsage: testR.<a,b,c> = PolynomialRing(QQ,3)\nsage: id_ringA = ideal([a^2-b,b^2-c,c^2-a])\nsage: id_ringB = ideal(id_ringA.gens()).change_ring(PolynomialRing(QQ,'c,a,b')) \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2601\n\n",
     "created_at": "2008-03-19T19:14:33Z",
     "labels": [
         "commutative algebra",
@@ -17,7 +17,7 @@ archive/issues_002601.json:
     "user": "mhampton"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Keywords: ideal, change_ring
 
@@ -56,7 +56,7 @@ archive/issue_comments_017798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2601#issuecomment-17798",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_017799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2601#issuecomment-17799",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -119,16 +119,16 @@ This should return {(0, 0, 1): 1}.  I'm having trouble understanding exactly how
 archive/issue_comments_017800.json:
 ```json
 {
-    "body": "Attachment [trac_2601.patch](tarball://root/attachments/some-uuid/ticket2601/trac_2601.patch) by was created at 2009-01-24 10:19:17",
+    "body": "Attachment [trac_2601.patch](tarball://root/attachments/some-uuid/ticket2601/trac_2601.patch) by @williamstein created at 2009-01-24 10:19:17",
     "created_at": "2009-01-24T10:19:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2601#issuecomment-17800",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_2601.patch](tarball://root/attachments/some-uuid/ticket2601/trac_2601.patch) by was created at 2009-01-24 10:19:17
+Attachment [trac_2601.patch](tarball://root/attachments/some-uuid/ticket2601/trac_2601.patch) by @williamstein created at 2009-01-24 10:19:17
 
 
 
@@ -142,7 +142,7 @@ archive/issue_comments_017801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2601#issuecomment-17801",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

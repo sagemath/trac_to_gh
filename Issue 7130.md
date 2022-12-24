@@ -3,7 +3,7 @@
 archive/issues_007130.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jsp\n\nUsing\n* A Sun Blade 2000 running Solaris 10 update 7\n* Sage 4.1.2.rc0\n* gcc 4.4.1\n* SAGE64 exported to \"yes\"\n\nWe can see that libpng is building 32-bit libraries, despite other packages are building 64-bit libraries. \n\n\n```\nlibpng12.so:    ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped\nlibpng12.so.0:  ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped\nlibpng12.so.0.35.0:     ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped\nlibreadline.a:  current ar archive, not a dynamic executable or shared object\nlibreadline.so: ELF 64-bit MSB dynamic lib SPARCV9 Version 1, dynamically linked, not stripped\nlibreadline.so.6:       ELF 64-bit MSB dynamic lib SPARCV9 Version 1, dynamically linked, not stripped\n```\n\n\nOther packages building 32-bit libraries, even when SAGE64 is set to  yes include, but are probably not limited to. \n* zlib #7128\n* libgpg_error #7129\n\nI will sort this package out after creating a new sage-env, which exports all the variables properly, including the flag for building 64-bit code, which is not always -m64.\n\nAlthough there is no support for AIX or HP-UX in Sage yet, we could potentially add it - I personally own machines running AIX and HP-UX.\n\nIBM's compiler on AIX uses -q64, and HP's on HP-UX uses +DD64.\n\nThe sensible way to resolve this is to add the correct flag on every platform. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7130\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jaapspies\n\nUsing\n* A Sun Blade 2000 running Solaris 10 update 7\n* Sage 4.1.2.rc0\n* gcc 4.4.1\n* SAGE64 exported to \"yes\"\n\nWe can see that libpng is building 32-bit libraries, despite other packages are building 64-bit libraries. \n\n\n```\nlibpng12.so:    ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped\nlibpng12.so.0:  ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped\nlibpng12.so.0.35.0:     ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped\nlibreadline.a:  current ar archive, not a dynamic executable or shared object\nlibreadline.so: ELF 64-bit MSB dynamic lib SPARCV9 Version 1, dynamically linked, not stripped\nlibreadline.so.6:       ELF 64-bit MSB dynamic lib SPARCV9 Version 1, dynamically linked, not stripped\n```\n\n\nOther packages building 32-bit libraries, even when SAGE64 is set to  yes include, but are probably not limited to. \n* zlib #7128\n* libgpg_error #7129\n\nI will sort this package out after creating a new sage-env, which exports all the variables properly, including the flag for building 64-bit code, which is not always -m64.\n\nAlthough there is no support for AIX or HP-UX in Sage yet, we could potentially add it - I personally own machines running AIX and HP-UX.\n\nIBM's compiler on AIX uses -q64, and HP's on HP-UX uses +DD64.\n\nThe sensible way to resolve this is to add the correct flag on every platform. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7130\n\n",
     "created_at": "2009-10-05T23:21:28Z",
     "labels": [
         "algebra",
@@ -19,7 +19,7 @@ archive/issues_007130.json:
 ```
 Assignee: tbd
 
-CC:  jsp
+CC:  @jaapspies
 
 Using
 * A Sun Blade 2000 running Solaris 10 update 7

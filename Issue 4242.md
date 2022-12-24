@@ -3,7 +3,7 @@
 archive/issues_004242.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\np.dominates(q) would give the wrong answer (True) if q had more boxes than p, but the first (length of p) parts of q were dominated by p.  Attached patch fixes this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4242\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\np.dominates(q) would give the wrong answer (True) if q had more boxes than p, but the first (length of p) parts of q were dominated by p.  Attached patch fixes this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4242\n\n",
     "created_at": "2008-10-04T14:06:47Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_004242.json:
     "title": "Bugfix for dominates() method of partition.py (with patch; needs review)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4242",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4242
 archive/issue_comments_030832.json:
 ```json
 {
-    "body": "Attachment [4242.patch](tarball://root/attachments/some-uuid/ticket4242/4242.patch) by jbandlow created at 2008-10-04 14:07:50",
+    "body": "Attachment [4242.patch](tarball://root/attachments/some-uuid/ticket4242/4242.patch) by @jbandlow created at 2008-10-04 14:07:50",
     "created_at": "2008-10-04T14:07:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4242#issuecomment-30832",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
-Attachment [4242.patch](tarball://root/attachments/some-uuid/ticket4242/4242.patch) by jbandlow created at 2008-10-04 14:07:50
+Attachment [4242.patch](tarball://root/attachments/some-uuid/ticket4242/4242.patch) by @jbandlow created at 2008-10-04 14:07:50
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_030833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4242#issuecomment-30833",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

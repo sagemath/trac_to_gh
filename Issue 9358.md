@@ -3,7 +3,7 @@
 archive/issues_009358.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  jhpalmieri jsp\n\nznpoly passes about 40 self-tests, but fails to install properly. \n\n\n```\nzn_array_mulmid_fft()... ok\nzn_array_mul_fft_dft()... ok\nzn_array_invert()... ok\n\nAll tests passed.\ngcc -O3 -g -m64 -fPIC -L. -I/export/home/drkirkby/sage-4.5.alpha0/local/include \n-I./include -DNDEBUG -o src/tuning.o -c src/tuning.c\nIn file included from ./include/zn_poly.h:75,\n                 from ./include/zn_poly_internal.h:41,\n                 from src/tuning.c:28:\n./include/wide_arith.h:297:2: warning: #warning No assembly implementation of wi\nde multiplication available for this machine; using generic C code instead.\nar -r libzn_poly.a src/array.o src/invert.o src/ks_support.o src/mulmid.o src/mu\nlmid_ks.o src/misc.o src/mpn_mulmid.o src/mul.o src/mul_fft.o src/mul_fft_dft.o \nsrc/mul_ks.o src/nuss.o src/pack.o src/pmf.o src/pmfvec_fft.o src/tuning.o src/z\nn_mod.o\nar: creating libzn_poly.a\nranlib libzn_poly.a\ngcc -shared -m64  -Wl,-soname,libzn_poly-`cat VERSION`.so -o libzn_poly-`cat VER\nSION`.so src/array.o src/invert.o src/ks_support.o src/mulmid.o src/mulmid_ks.o \nsrc/misc.o src/mpn_mulmid.o src/mul.o src/mul_fft.o src/mul_fft_dft.o src/mul_ks\n.o src/nuss.o src/pack.o src/pmf.o src/pmfvec_fft.o src/tuning.o src/zn_mod.o -L\n/export/home/drkirkby/sage-4.5.alpha0/local/lib -lgmp -lm\nld: warning: option -o appears more than once, first setting taken\nld: fatal: file libzn_poly-0.9.so: unknown file type\nld: fatal: File processing errors. No output written to libzn_poly-0.9.so\ncollect2: ld returned 1 exit status\nmake: *** [libzn_poly.so] Error 1\nError building zn_poly shared library.\n\nreal\t1m38.825s\nuser\t1m34.368s\nsys\t0m3.849s\nsage: An error occurred while installing zn_poly-0.9.p4\n```\n\n\nThis looks like a problem in spkg-install, which is undoubtedly my fault. The script has in if/elif/else/fi which considers\n\n* A 64-bit build\n* A Solaris build with the Sun linker. \n\nIt does **not** cover the possibility of a 64-bit build on Solaris with the Sun linker. \n\nThis should be hopefully quite easy to fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9358\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jhpalmieri @jaapspies\n\nznpoly passes about 40 self-tests, but fails to install properly. \n\n\n```\nzn_array_mulmid_fft()... ok\nzn_array_mul_fft_dft()... ok\nzn_array_invert()... ok\n\nAll tests passed.\ngcc -O3 -g -m64 -fPIC -L. -I/export/home/drkirkby/sage-4.5.alpha0/local/include \n-I./include -DNDEBUG -o src/tuning.o -c src/tuning.c\nIn file included from ./include/zn_poly.h:75,\n                 from ./include/zn_poly_internal.h:41,\n                 from src/tuning.c:28:\n./include/wide_arith.h:297:2: warning: #warning No assembly implementation of wi\nde multiplication available for this machine; using generic C code instead.\nar -r libzn_poly.a src/array.o src/invert.o src/ks_support.o src/mulmid.o src/mu\nlmid_ks.o src/misc.o src/mpn_mulmid.o src/mul.o src/mul_fft.o src/mul_fft_dft.o \nsrc/mul_ks.o src/nuss.o src/pack.o src/pmf.o src/pmfvec_fft.o src/tuning.o src/z\nn_mod.o\nar: creating libzn_poly.a\nranlib libzn_poly.a\ngcc -shared -m64  -Wl,-soname,libzn_poly-`cat VERSION`.so -o libzn_poly-`cat VER\nSION`.so src/array.o src/invert.o src/ks_support.o src/mulmid.o src/mulmid_ks.o \nsrc/misc.o src/mpn_mulmid.o src/mul.o src/mul_fft.o src/mul_fft_dft.o src/mul_ks\n.o src/nuss.o src/pack.o src/pmf.o src/pmfvec_fft.o src/tuning.o src/zn_mod.o -L\n/export/home/drkirkby/sage-4.5.alpha0/local/lib -lgmp -lm\nld: warning: option -o appears more than once, first setting taken\nld: fatal: file libzn_poly-0.9.so: unknown file type\nld: fatal: File processing errors. No output written to libzn_poly-0.9.so\ncollect2: ld returned 1 exit status\nmake: *** [libzn_poly.so] Error 1\nError building zn_poly shared library.\n\nreal\t1m38.825s\nuser\t1m34.368s\nsys\t0m3.849s\nsage: An error occurred while installing zn_poly-0.9.p4\n```\n\n\nThis looks like a problem in spkg-install, which is undoubtedly my fault. The script has in if/elif/else/fi which considers\n\n* A 64-bit build\n* A Solaris build with the Sun linker. \n\nIt does **not** cover the possibility of a 64-bit build on Solaris with the Sun linker. \n\nThis should be hopefully quite easy to fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9358\n\n",
     "created_at": "2010-06-28T16:47:26Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_009358.json:
 ```
 Assignee: drkirkby
 
-CC:  jhpalmieri jsp
+CC:  @jhpalmieri @jaapspies
 
 znpoly passes about 40 self-tests, but fails to install properly. 
 
@@ -107,7 +107,7 @@ archive/issue_comments_088845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9358#issuecomment-88845",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_088851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9358#issuecomment-88851",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_088852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9358#issuecomment-88852",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_088853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9358#issuecomment-88853",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

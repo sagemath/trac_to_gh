@@ -145,16 +145,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/505
 archive/issue_comments_002528.json:
 ```json
 {
-    "body": "Changing assignee from somebody to malb.",
+    "body": "Changing assignee from somebody to @malb.",
     "created_at": "2007-08-28T23:44:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/505#issuecomment-2528",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from somebody to malb.
+Changing assignee from somebody to @malb.
 
 
 
@@ -163,16 +163,16 @@ Changing assignee from somebody to malb.
 archive/issue_comments_002529.json:
 ```json
 {
-    "body": "Attachment [m4ri_cleanup.patch](tarball://root/attachments/some-uuid/ticket505/m4ri_cleanup.patch) by was created at 2007-08-28 23:52:25\n\nThis fixes the m4ri not being cleaned up issue, I hope.",
+    "body": "Attachment [m4ri_cleanup.patch](tarball://root/attachments/some-uuid/ticket505/m4ri_cleanup.patch) by @williamstein created at 2007-08-28 23:52:25\n\nThis fixes the m4ri not being cleaned up issue, I hope.",
     "created_at": "2007-08-28T23:52:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/505#issuecomment-2529",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [m4ri_cleanup.patch](tarball://root/attachments/some-uuid/ticket505/m4ri_cleanup.patch) by was created at 2007-08-28 23:52:25
+Attachment [m4ri_cleanup.patch](tarball://root/attachments/some-uuid/ticket505/m4ri_cleanup.patch) by @williamstein created at 2007-08-28 23:52:25
 
 This fixes the m4ri not being cleaned up issue, I hope.
 
@@ -188,7 +188,7 @@ archive/issue_comments_002530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/505#issuecomment-2530",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

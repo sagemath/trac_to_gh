@@ -3,7 +3,7 @@
 archive/issues_001774.json:
 ```json
 {
-    "body": "Assignee: was\n\nI just received this off-list from Bill Alombert:\n\n\n```\nAs you much probably already now, we released PARI/GP 2.3.3 in December.\n\nFurthermore, I started to review the GP script for SEA and we fixed\nseveral problems that could lead to wrong results being returned,\nso I would suggest you update the copy in SAGE to the current CVS\nversion of SEA.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1774\n\n",
+    "body": "Assignee: @williamstein\n\nI just received this off-list from Bill Alombert:\n\n\n```\nAs you much probably already now, we released PARI/GP 2.3.3 in December.\n\nFurthermore, I started to review the GP script for SEA and we fixed\nseveral problems that could lead to wrong results being returned,\nso I would suggest you update the copy in SAGE to the current CVS\nversion of SEA.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1774\n\n",
     "created_at": "2008-01-14T06:14:31Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_001774.json:
     "title": "potential very serious problems with SEA and PARI-2.3.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1774",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I just received this off-list from Bill Alombert:
 
@@ -48,7 +48,7 @@ archive/issue_comments_011232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1774#issuecomment-11232",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_011233.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1774#issuecomment-11233",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_011234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1774#issuecomment-11234",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_011235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1774#issuecomment-11235",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

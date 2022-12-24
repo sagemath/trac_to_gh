@@ -3,7 +3,7 @@
 archive/issues_005986.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat cwitty\n\nKeywords: pickling, nested classes\n\nWith the python code below::\n    class A:\n        class B:\n            pass\nPython 2.6 erroneously set the B.__name__ to \"B\" instead of \"A.B\".\n\nFurthermore, upon pickling (here in save_global)\n*and* unpickling (in load_global) a class\nwith name \"A.B\" in a module mod, the standard\ncPickle module searches for \"A.B\" in mod.__dict__\ninstead of looking up \"A\" and then \"B\" in the result.\n\nThis patch works around this by a patch to cPickle.c which fixes the\nname for B to its appropriate value A.B, and inserts 'A.B' = A.B in\nmod.__dict__ (hacky, but seems to work) the first time A.B is pickled,\nand fixes load_global to implement a proper lookup upon unpickling.\n\nIt also ensures that sage/interfaces/sage0.py uses loads/dumps from\nsage_object rather than calling directly cPickle.loads/dumps\n(+1 by cwitty on this change)\n\nDepends on #5483 and #5985\n\nIssue created by migration from https://trac.sagemath.org/ticket/5986\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat cwitty\n\nKeywords: pickling, nested classes\n\nWith the python code below::\n    class A:\n        class B:\n            pass\nPython 2.6 erroneously set the B.__name__ to \"B\" instead of \"A.B\".\n\nFurthermore, upon pickling (here in save_global)\n*and* unpickling (in load_global) a class\nwith name \"A.B\" in a module mod, the standard\ncPickle module searches for \"A.B\" in mod.__dict__\ninstead of looking up \"A\" and then \"B\" in the result.\n\nThis patch works around this by a patch to cPickle.c which fixes the\nname for B to its appropriate value A.B, and inserts 'A.B' = A.B in\nmod.__dict__ (hacky, but seems to work) the first time A.B is pickled,\nand fixes load_global to implement a proper lookup upon unpickling.\n\nIt also ensures that sage/interfaces/sage0.py uses loads/dumps from\nsage_object rather than calling directly cPickle.loads/dumps\n(+1 by cwitty on this change)\n\nDepends on #5483 and #5985\n\nIssue created by migration from https://trac.sagemath.org/ticket/5986\n\n",
     "created_at": "2009-05-05T07:14:13Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_005986.json:
     "title": "[with patch, needs review] Workaround mishandled nested classes in Python and cPickle",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5986",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
 CC:  sage-combinat cwitty
 
@@ -57,16 +57,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5986
 archive/issue_comments_047569.json:
 ```json
 {
-    "body": "Attachment [cPickle-5986-nested-classes-submitted.patch](tarball://root/attachments/some-uuid/ticket5986/cPickle-5986-nested-classes-submitted.patch) by nthiery created at 2009-05-06 06:56:46",
+    "body": "Attachment [cPickle-5986-nested-classes-submitted.patch](tarball://root/attachments/some-uuid/ticket5986/cPickle-5986-nested-classes-submitted.patch) by @nthiery created at 2009-05-06 06:56:46",
     "created_at": "2009-05-06T06:56:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5986#issuecomment-47569",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [cPickle-5986-nested-classes-submitted.patch](tarball://root/attachments/some-uuid/ticket5986/cPickle-5986-nested-classes-submitted.patch) by nthiery created at 2009-05-06 06:56:46
+Attachment [cPickle-5986-nested-classes-submitted.patch](tarball://root/attachments/some-uuid/ticket5986/cPickle-5986-nested-classes-submitted.patch) by @nthiery created at 2009-05-06 06:56:46
 
 
 
@@ -80,7 +80,7 @@ archive/issue_comments_047570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5986#issuecomment-47570",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_047571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5986#issuecomment-47571",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_047572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5986#issuecomment-47572",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_047573.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5986#issuecomment-47573",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -157,16 +157,16 @@ See discussion on Sage devel.
 archive/issue_comments_047574.json:
 ```json
 {
-    "body": "Attachment [trac_5986-use-nested_class_metaclass.patch](tarball://root/attachments/some-uuid/ticket5986/trac_5986-use-nested_class_metaclass.patch) by nthiery created at 2009-10-11 08:47:16\n\nApply only this one",
+    "body": "Attachment [trac_5986-use-nested_class_metaclass.patch](tarball://root/attachments/some-uuid/ticket5986/trac_5986-use-nested_class_metaclass.patch) by @nthiery created at 2009-10-11 08:47:16\n\nApply only this one",
     "created_at": "2009-10-11T08:47:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5986#issuecomment-47574",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_5986-use-nested_class_metaclass.patch](tarball://root/attachments/some-uuid/ticket5986/trac_5986-use-nested_class_metaclass.patch) by nthiery created at 2009-10-11 08:47:16
+Attachment [trac_5986-use-nested_class_metaclass.patch](tarball://root/attachments/some-uuid/ticket5986/trac_5986-use-nested_class_metaclass.patch) by @nthiery created at 2009-10-11 08:47:16
 
 Apply only this one
 
@@ -182,7 +182,7 @@ archive/issue_comments_047575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5986#issuecomment-47575",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_047576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5986#issuecomment-47576",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_047577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5986#issuecomment-47577",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_047578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5986#issuecomment-47578",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

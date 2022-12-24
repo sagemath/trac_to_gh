@@ -14,7 +14,7 @@ archive/issues_008894.json:
     "title": "topological minor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8894",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -37,7 +37,7 @@ archive/issue_comments_081769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8894",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8894#issuecomment-81769",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_081770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8894",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8894#issuecomment-81770",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_081771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8894",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8894#issuecomment-81771",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_081774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8894",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8894#issuecomment-81774",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_081775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8894",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8894#issuecomment-81775",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -164,16 +164,16 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_081776.json:
 ```json
 {
-    "body": "Attachment [trac_8894.patch](tarball://root/attachments/some-uuid/ticket8894/trac_8894.patch) by ncohen created at 2011-01-18 17:24:18",
+    "body": "Attachment [trac_8894.patch](tarball://root/attachments/some-uuid/ticket8894/trac_8894.patch) by @nathanncohen created at 2011-01-18 17:24:18",
     "created_at": "2011-01-18T17:24:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8894",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8894#issuecomment-81776",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_8894.patch](tarball://root/attachments/some-uuid/ticket8894/trac_8894.patch) by ncohen created at 2011-01-18 17:24:18
+Attachment [trac_8894.patch](tarball://root/attachments/some-uuid/ticket8894/trac_8894.patch) by @nathanncohen created at 2011-01-18 17:24:18
 
 
 
@@ -187,7 +187,7 @@ archive/issue_comments_081777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8894",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8894#issuecomment-81777",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_081778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8894",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8894#issuecomment-81778",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_081779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8894",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8894#issuecomment-81779",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

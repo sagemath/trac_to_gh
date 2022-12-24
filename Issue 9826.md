@@ -14,7 +14,7 @@ archive/issues_009826.json:
     "title": "Intermittent doctest failure in sage/interfaces/psage.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9826",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: mvngu
@@ -73,7 +73,7 @@ archive/issue_comments_096931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9826#issuecomment-96931",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_096932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9826#issuecomment-96932",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -110,16 +110,16 @@ Is this still relevant after #12415?
 archive/issue_comments_096933.json:
 ```json
 {
-    "body": "Changing assignee from mvngu to was.",
+    "body": "Changing assignee from mvngu to @williamstein.",
     "created_at": "2013-03-28T22:16:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9826#issuecomment-96933",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Changing assignee from mvngu to was.
+Changing assignee from mvngu to @williamstein.
 
 
 
@@ -133,7 +133,7 @@ archive/issue_comments_096934.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9826#issuecomment-96934",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_096935.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9826#issuecomment-96935",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -164,16 +164,16 @@ Changing component from doctest to interfaces.
 archive/issue_comments_096936.json:
 ```json
 {
-    "body": "Attachment [9827_custom_name.patch](tarball://root/attachments/some-uuid/ticket9827/9827_custom_name.patch) by jdemeyer created at 2013-04-05 13:27:11",
+    "body": "Attachment [9827_custom_name.patch](tarball://root/attachments/some-uuid/ticket9827/9827_custom_name.patch) by @jdemeyer created at 2013-04-05 13:27:11",
     "created_at": "2013-04-05T13:27:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9826#issuecomment-96936",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9827_custom_name.patch](tarball://root/attachments/some-uuid/ticket9827/9827_custom_name.patch) by jdemeyer created at 2013-04-05 13:27:11
+Attachment [9827_custom_name.patch](tarball://root/attachments/some-uuid/ticket9827/9827_custom_name.patch) by @jdemeyer created at 2013-04-05 13:27:11
 
 
 
@@ -187,7 +187,7 @@ archive/issue_comments_096937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9826#issuecomment-96937",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_096938.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9826#issuecomment-96938",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_096939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9826#issuecomment-96939",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_096941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9826#issuecomment-96941",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_096942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9826#issuecomment-96942",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_096943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9826#issuecomment-96943",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

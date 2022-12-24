@@ -3,7 +3,7 @@
 archive/issues_009722.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  ggrafendorfer leif jdemeyer jsp\n\nReported by Georg Grafendorfer on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/7abfbeedb07abb53/42338e44dc36ae3f#42338e44dc36ae3f):\n\n```\nsage does not built on my machine, AMD Phenom(tm) II X4 925, Fedora\n13,\n\nhere are the relevant lines of the log file:\n\nShall we try to build pari 2.3.5 (released) now (y/n)? [n]\nOk. Type \"make install\" when you are ready\nBye !\nBuilding and install PARI\nmake[2]: Entering directory `/scratch/sage-4.5.3.alpha0/spkg/build/\npari-2.3.5.p2/src'\nMaking gp in Olinux-x86_64\nmake[3]: Entering directory `/scratch/sage-4.5.3.alpha0/spkg/build/\npari-2.3.5.p2/src/Olinux-x86_64'\nFile ../src/funclist not changed.\n../config/genkernel ../src/kernel/x86_64/asm0.h > parilvl0.h\ncat ../src/kernel/gmp/tune.h ../src/kernel/gmp/int.h ../src/kernel/\nnone/level1.h > parilvl1.h\ncat parilvl0.h parilvl1.h > pariinl.h\ngcc  -c -O1 -Wall -fno-strict-aliasing -fomit-frame-pointer    -I. -\nI../src/headers -I../src/language -I/scratch/sage-4.5.3.alpha0/local/\ninclude -o gp.o ../src/gp/gp.c\ncd ../src/desc && /usr/bin/perl merge_822 ../functions/*/* > def-linux-\nx86_64-6659.tmp\nmv ../src/desc/def-linux-x86_64-6659.tmp ../src/desc/pari.desc\ncd ../src/desc && /usr/bin/perl gen_proto gp pari.desc > gp_init-linux-\nx86_64-6659.tmp\nmv ../src/desc/gp_init-linux-x86_64-6659.tmp ../src/gp/gp_init.h\ngcc  -c -O1 -Wall -fno-strict-aliasing -fomit-frame-pointer    -I. -\nI../src/headers -I../src/graph -o gp_init.o ../src/gp/gp_init.c\ngcc  -c -O1 -Wall -fno-strict-aliasing -fomit-frame-pointer    -I. -\nI../src/headers -I../src/language -I/scratch/sage-4.5.3.alpha0/local/\ninclude -o gp_rl.o ../src/gp/gp_rl.c\ncd ../src/desc && /usr/bin/perl gen_proto highlevel pari.desc >\nhighlvl-linux-x86_64-6659.tmp\nmv ../src/desc/highlvl-linux-x86_64-6659.tmp ../src/gp/highlvl.h\ngcc  -c -O1 -Wall -fno-strict-aliasing -fomit-frame-pointer    -I. -\nI../src/headers -DDL_DFLT_NAME=NULL -o highlvl.o ../src/gp/highlvl.c\ngcc  -c -O1 -Wall -fno-strict-aliasing -fomit-frame-pointer    -I. -\nI../src/headers -o whatnow.o ../src/gp/whatnow.c\ngcc  -c -O1 -Wall -fno-strict-aliasing -fomit-frame-pointer    -I. -\nI../src/headers -I../src/graph -o plotport.o ../src/graph/plotport.c\ng++ -c -O1 -Wall -fno-strict-aliasing -fomit-frame-pointer    -I. -I../\nsrc/headers -I\"/usr/local\"/include  -o plotfltk.o ../src/graph/\nplotfltk.c\n../src/graph/plotfltk.c:27:19: error: FL/Fl.H: No such file or\ndirectory\n../src/graph/plotfltk.c:28:26: error: FL/Fl_Window.H: No such file or\ndirectory\n../src/graph/plotfltk.c:29:24: error: FL/fl_draw.H: No such file or\ndirectory\n../src/graph/plotfltk.c:31: error: expected class-name before '{'\ntoken\n../src/graph/plotfltk.c:45: error: 'Fl_Color' does not name a type\n../src/graph/plotfltk.c:48: error: 'Fl_Color' does not name a type\n../src/graph/plotfltk.c: In constructor 'Plotter::Plotter(long int*,\nlong int*, long int*, long int, const char*)':\n../src/graph/plotfltk.c:56: error: class 'Plotter' does not have any\nfield named 'Fl_Window'\n../src/graph/plotfltk.c:60: error: 'color' was not declared in this\nscope\n../src/graph/plotfltk.c:60: error: 'FL_WHITE' was not declared in this\nscope\n../src/graph/plotfltk.c:61: error: 'FL_BLACK' was not declared in this\nscope\n../src/graph/plotfltk.c:62: error: 'FL_BLUE' was not declared in this\nscope\n../src/graph/plotfltk.c:63: error: 'rgb_color' was not declared in\nthis scope\n../src/graph/plotfltk.c:64: error: 'FL_RED' was not declared in this\nscope\n../src/graph/plotfltk.c:65: error: 'FL_GREEN' was not declared in this\nscope\n../src/graph/plotfltk.c: In function 'void DrawPoint(void*, long int,\nlong int)':\n../src/graph/plotfltk.c:73: error: 'fl_point' was not declared in this\nscope\n../src/graph/plotfltk.c: In function 'void DrawLine(void*, long int,\nlong int, long int, long int)':\n../src/graph/plotfltk.c:79: error: 'fl_line' was not declared in this\nscope\n../src/graph/plotfltk.c: In function 'void DrawRectangle(void*, long\nint, long int, long int, long int)':\n../src/graph/plotfltk.c:85: error: 'fl_rect' was not declared in this\nscope\n../src/graph/plotfltk.c: In function 'void DrawPoints(void*, long int,\nplot_points*)':\n../src/graph/plotfltk.c:92: error: 'fl_point' was not declared in this\nscope\n../src/graph/plotfltk.c: In function 'void SetForeground(void*, long\nint)':\n../src/graph/plotfltk.c:97: error: 'Fl_Color' was not declared in this\nscope\n../src/graph/plotfltk.c:97: error: 'color' was not declared in this\nscope\n../src/graph/plotfltk.c:97: error: expected primary-expression before\n')' token\n../src/graph/plotfltk.c:97: error: expected ';' before 'data'\n../src/graph/plotfltk.c:98: error: 'fl_color' was not declared in this\nscope\n../src/graph/plotfltk.c: In function 'void DrawLines(void*, long int,\nplot_points*)':\n../src/graph/plotfltk.c:105: error: 'fl_line' was not declared in this\nscope\n../src/graph/plotfltk.c: In function 'void DrawString(void*, long int,\nlong int, char*, long int)':\n../src/graph/plotfltk.c:111: error: 'fl_draw' was not declared in this\nscope\n../src/graph/plotfltk.c: In member function 'void Plotter::draw()':\n../src/graph/plotfltk.c:118: error: 'class Plotter' has no member\nnamed 'w'\n../src/graph/plotfltk.c:119: error: 'class Plotter' has no member\nnamed 'h'\n../src/graph/plotfltk.c:121: error: 'FL_COURIER' was not declared in\nthis scope\n../src/graph/plotfltk.c:121: error: 'fl_font' was not declared in this\nscope\n../src/graph/plotfltk.c:122: error: 'FL_WHITE' was not declared in\nthis scope\n../src/graph/plotfltk.c:122: error: 'fl_color' was not declared in\nthis scope\n../src/graph/plotfltk.c:123: error: 'class Plotter' has no member\nnamed 'w'\n../src/graph/plotfltk.c:123: error: 'class Plotter' has no member\nnamed 'h'\n../src/graph/plotfltk.c:123: error: 'fl_rectf' was not declared in\nthis scope\n../src/graph/plotfltk.c:133: error: 'color' was not declared in this\nscope\n../src/graph/plotfltk.c: In member function 'int\nPlotter::handle(int)':\n../src/graph/plotfltk.c:140: error: 'FL_PUSH' was not declared in this\nscope\n../src/graph/plotfltk.c:141: error: 'Fl' has not been declared\n../src/graph/plotfltk.c:155: error: 'class Plotter' has no member\nnamed 'x'\n../src/graph/plotfltk.c:156: error: 'class Plotter' has no member\nnamed 'y'\n../src/graph/plotfltk.c:157: error: 'class Plotter' has no member\nnamed 'w'\n../src/graph/plotfltk.c:158: error: 'class Plotter' has no member\nnamed 'h'\n../src/graph/plotfltk.c:159: error: 'class Plotter' has no member\nnamed 'fullscreen'\n../src/graph/plotfltk.c:163: error: 'class Plotter' has no member\nnamed 'fullscreen_off'\n../src/graph/plotfltk.c:164: error: 'class Plotter' has no member\nnamed 'size_range'\n../src/graph/plotfltk.c: In function 'void rectdraw0(long int*, long\nint*, long int*, long int)':\n../src/graph/plotfltk.c:188: error: 'Fl' has not been declared\n../src/graph/plotfltk.c:188: error: 'FL_DOUBLE' was not declared in\nthis scope\n../src/graph/plotfltk.c:188: error: 'FL_INDEX' was not declared in\nthis scope\n../src/graph/plotfltk.c:190: error: 'class Plotter' has no member\nnamed 'size_range'\n../src/graph/plotfltk.c:191: error: 'class Plotter' has no member\nnamed 'box'\n../src/graph/plotfltk.c:191: error: 'FL_FLAT_BOX' was not declared in\nthis scope\n../src/graph/plotfltk.c:192: error: 'class Plotter' has no member\nnamed 'end'\n../src/graph/plotfltk.c:193: error: 'class Plotter' has no member\nnamed 'show'\n../src/graph/plotfltk.c:194: error: 'Fl' has not been declared\nmake[3]: *** [plotfltk.o] Error 1\nmake[3]: Leaving directory `/scratch/sage-4.5.3.alpha0/spkg/build/\npari-2.3.5.p2/src/Olinux-x86_64'\nmake[2]: *** [gp] Error 2\nmake[2]: Leaving directory `/scratch/sage-4.5.3.alpha0/spkg/build/\npari-2.3.5.p2/src'\nError building GP \n```\n\nThere's now a [dedicated thread](http://groups.google.com/group/sage-release/browse_thread/thread/e1fe601e7e184479/e9a241101d3fb776#e9a241101d3fb776).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9722\n\n",
+    "body": "Assignee: tbd\n\nCC:  ggrafendorfer @nexttime @jdemeyer @jaapspies\n\nReported by Georg Grafendorfer on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/7abfbeedb07abb53/42338e44dc36ae3f#42338e44dc36ae3f):\n\n```\nsage does not built on my machine, AMD Phenom(tm) II X4 925, Fedora\n13,\n\nhere are the relevant lines of the log file:\n\nShall we try to build pari 2.3.5 (released) now (y/n)? [n]\nOk. Type \"make install\" when you are ready\nBye !\nBuilding and install PARI\nmake[2]: Entering directory `/scratch/sage-4.5.3.alpha0/spkg/build/\npari-2.3.5.p2/src'\nMaking gp in Olinux-x86_64\nmake[3]: Entering directory `/scratch/sage-4.5.3.alpha0/spkg/build/\npari-2.3.5.p2/src/Olinux-x86_64'\nFile ../src/funclist not changed.\n../config/genkernel ../src/kernel/x86_64/asm0.h > parilvl0.h\ncat ../src/kernel/gmp/tune.h ../src/kernel/gmp/int.h ../src/kernel/\nnone/level1.h > parilvl1.h\ncat parilvl0.h parilvl1.h > pariinl.h\ngcc  -c -O1 -Wall -fno-strict-aliasing -fomit-frame-pointer    -I. -\nI../src/headers -I../src/language -I/scratch/sage-4.5.3.alpha0/local/\ninclude -o gp.o ../src/gp/gp.c\ncd ../src/desc && /usr/bin/perl merge_822 ../functions/*/* > def-linux-\nx86_64-6659.tmp\nmv ../src/desc/def-linux-x86_64-6659.tmp ../src/desc/pari.desc\ncd ../src/desc && /usr/bin/perl gen_proto gp pari.desc > gp_init-linux-\nx86_64-6659.tmp\nmv ../src/desc/gp_init-linux-x86_64-6659.tmp ../src/gp/gp_init.h\ngcc  -c -O1 -Wall -fno-strict-aliasing -fomit-frame-pointer    -I. -\nI../src/headers -I../src/graph -o gp_init.o ../src/gp/gp_init.c\ngcc  -c -O1 -Wall -fno-strict-aliasing -fomit-frame-pointer    -I. -\nI../src/headers -I../src/language -I/scratch/sage-4.5.3.alpha0/local/\ninclude -o gp_rl.o ../src/gp/gp_rl.c\ncd ../src/desc && /usr/bin/perl gen_proto highlevel pari.desc >\nhighlvl-linux-x86_64-6659.tmp\nmv ../src/desc/highlvl-linux-x86_64-6659.tmp ../src/gp/highlvl.h\ngcc  -c -O1 -Wall -fno-strict-aliasing -fomit-frame-pointer    -I. -\nI../src/headers -DDL_DFLT_NAME=NULL -o highlvl.o ../src/gp/highlvl.c\ngcc  -c -O1 -Wall -fno-strict-aliasing -fomit-frame-pointer    -I. -\nI../src/headers -o whatnow.o ../src/gp/whatnow.c\ngcc  -c -O1 -Wall -fno-strict-aliasing -fomit-frame-pointer    -I. -\nI../src/headers -I../src/graph -o plotport.o ../src/graph/plotport.c\ng++ -c -O1 -Wall -fno-strict-aliasing -fomit-frame-pointer    -I. -I../\nsrc/headers -I\"/usr/local\"/include  -o plotfltk.o ../src/graph/\nplotfltk.c\n../src/graph/plotfltk.c:27:19: error: FL/Fl.H: No such file or\ndirectory\n../src/graph/plotfltk.c:28:26: error: FL/Fl_Window.H: No such file or\ndirectory\n../src/graph/plotfltk.c:29:24: error: FL/fl_draw.H: No such file or\ndirectory\n../src/graph/plotfltk.c:31: error: expected class-name before '{'\ntoken\n../src/graph/plotfltk.c:45: error: 'Fl_Color' does not name a type\n../src/graph/plotfltk.c:48: error: 'Fl_Color' does not name a type\n../src/graph/plotfltk.c: In constructor 'Plotter::Plotter(long int*,\nlong int*, long int*, long int, const char*)':\n../src/graph/plotfltk.c:56: error: class 'Plotter' does not have any\nfield named 'Fl_Window'\n../src/graph/plotfltk.c:60: error: 'color' was not declared in this\nscope\n../src/graph/plotfltk.c:60: error: 'FL_WHITE' was not declared in this\nscope\n../src/graph/plotfltk.c:61: error: 'FL_BLACK' was not declared in this\nscope\n../src/graph/plotfltk.c:62: error: 'FL_BLUE' was not declared in this\nscope\n../src/graph/plotfltk.c:63: error: 'rgb_color' was not declared in\nthis scope\n../src/graph/plotfltk.c:64: error: 'FL_RED' was not declared in this\nscope\n../src/graph/plotfltk.c:65: error: 'FL_GREEN' was not declared in this\nscope\n../src/graph/plotfltk.c: In function 'void DrawPoint(void*, long int,\nlong int)':\n../src/graph/plotfltk.c:73: error: 'fl_point' was not declared in this\nscope\n../src/graph/plotfltk.c: In function 'void DrawLine(void*, long int,\nlong int, long int, long int)':\n../src/graph/plotfltk.c:79: error: 'fl_line' was not declared in this\nscope\n../src/graph/plotfltk.c: In function 'void DrawRectangle(void*, long\nint, long int, long int, long int)':\n../src/graph/plotfltk.c:85: error: 'fl_rect' was not declared in this\nscope\n../src/graph/plotfltk.c: In function 'void DrawPoints(void*, long int,\nplot_points*)':\n../src/graph/plotfltk.c:92: error: 'fl_point' was not declared in this\nscope\n../src/graph/plotfltk.c: In function 'void SetForeground(void*, long\nint)':\n../src/graph/plotfltk.c:97: error: 'Fl_Color' was not declared in this\nscope\n../src/graph/plotfltk.c:97: error: 'color' was not declared in this\nscope\n../src/graph/plotfltk.c:97: error: expected primary-expression before\n')' token\n../src/graph/plotfltk.c:97: error: expected ';' before 'data'\n../src/graph/plotfltk.c:98: error: 'fl_color' was not declared in this\nscope\n../src/graph/plotfltk.c: In function 'void DrawLines(void*, long int,\nplot_points*)':\n../src/graph/plotfltk.c:105: error: 'fl_line' was not declared in this\nscope\n../src/graph/plotfltk.c: In function 'void DrawString(void*, long int,\nlong int, char*, long int)':\n../src/graph/plotfltk.c:111: error: 'fl_draw' was not declared in this\nscope\n../src/graph/plotfltk.c: In member function 'void Plotter::draw()':\n../src/graph/plotfltk.c:118: error: 'class Plotter' has no member\nnamed 'w'\n../src/graph/plotfltk.c:119: error: 'class Plotter' has no member\nnamed 'h'\n../src/graph/plotfltk.c:121: error: 'FL_COURIER' was not declared in\nthis scope\n../src/graph/plotfltk.c:121: error: 'fl_font' was not declared in this\nscope\n../src/graph/plotfltk.c:122: error: 'FL_WHITE' was not declared in\nthis scope\n../src/graph/plotfltk.c:122: error: 'fl_color' was not declared in\nthis scope\n../src/graph/plotfltk.c:123: error: 'class Plotter' has no member\nnamed 'w'\n../src/graph/plotfltk.c:123: error: 'class Plotter' has no member\nnamed 'h'\n../src/graph/plotfltk.c:123: error: 'fl_rectf' was not declared in\nthis scope\n../src/graph/plotfltk.c:133: error: 'color' was not declared in this\nscope\n../src/graph/plotfltk.c: In member function 'int\nPlotter::handle(int)':\n../src/graph/plotfltk.c:140: error: 'FL_PUSH' was not declared in this\nscope\n../src/graph/plotfltk.c:141: error: 'Fl' has not been declared\n../src/graph/plotfltk.c:155: error: 'class Plotter' has no member\nnamed 'x'\n../src/graph/plotfltk.c:156: error: 'class Plotter' has no member\nnamed 'y'\n../src/graph/plotfltk.c:157: error: 'class Plotter' has no member\nnamed 'w'\n../src/graph/plotfltk.c:158: error: 'class Plotter' has no member\nnamed 'h'\n../src/graph/plotfltk.c:159: error: 'class Plotter' has no member\nnamed 'fullscreen'\n../src/graph/plotfltk.c:163: error: 'class Plotter' has no member\nnamed 'fullscreen_off'\n../src/graph/plotfltk.c:164: error: 'class Plotter' has no member\nnamed 'size_range'\n../src/graph/plotfltk.c: In function 'void rectdraw0(long int*, long\nint*, long int*, long int)':\n../src/graph/plotfltk.c:188: error: 'Fl' has not been declared\n../src/graph/plotfltk.c:188: error: 'FL_DOUBLE' was not declared in\nthis scope\n../src/graph/plotfltk.c:188: error: 'FL_INDEX' was not declared in\nthis scope\n../src/graph/plotfltk.c:190: error: 'class Plotter' has no member\nnamed 'size_range'\n../src/graph/plotfltk.c:191: error: 'class Plotter' has no member\nnamed 'box'\n../src/graph/plotfltk.c:191: error: 'FL_FLAT_BOX' was not declared in\nthis scope\n../src/graph/plotfltk.c:192: error: 'class Plotter' has no member\nnamed 'end'\n../src/graph/plotfltk.c:193: error: 'class Plotter' has no member\nnamed 'show'\n../src/graph/plotfltk.c:194: error: 'Fl' has not been declared\nmake[3]: *** [plotfltk.o] Error 1\nmake[3]: Leaving directory `/scratch/sage-4.5.3.alpha0/spkg/build/\npari-2.3.5.p2/src/Olinux-x86_64'\nmake[2]: *** [gp] Error 2\nmake[2]: Leaving directory `/scratch/sage-4.5.3.alpha0/spkg/build/\npari-2.3.5.p2/src'\nError building GP \n```\n\nThere's now a [dedicated thread](http://groups.google.com/group/sage-release/browse_thread/thread/e1fe601e7e184479/e9a241101d3fb776#e9a241101d3fb776).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9722\n\n",
     "created_at": "2010-08-11T01:34:21Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_009722.json:
     "title": "PARI/GP build error on Fedora 13",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9722",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: tbd
 
-CC:  ggrafendorfer leif jdemeyer jsp
+CC:  ggrafendorfer @nexttime @jdemeyer @jaapspies
 
 Reported by Georg Grafendorfer on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/7abfbeedb07abb53/42338e44dc36ae3f#42338e44dc36ae3f):
 
@@ -217,7 +217,7 @@ archive/issue_comments_094907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94907",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -400,7 +400,7 @@ archive/issue_comments_094910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94910",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -468,7 +468,7 @@ archive/issue_comments_094912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94912",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -537,7 +537,7 @@ archive/issue_comments_094914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94914",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -555,7 +555,7 @@ archive/issue_comments_094915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94915",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -584,7 +584,7 @@ archive/issue_comments_094916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94916",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -649,7 +649,7 @@ archive/issue_comments_094917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94917",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -667,7 +667,7 @@ archive/issue_comments_094918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94918",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -689,7 +689,7 @@ archive/issue_comments_094919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94919",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -797,7 +797,7 @@ archive/issue_comments_094922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94922",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -815,7 +815,7 @@ archive/issue_comments_094923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94923",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -877,7 +877,7 @@ archive/issue_comments_094924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94924",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -897,7 +897,7 @@ archive/issue_comments_094925.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94925",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -917,7 +917,7 @@ archive/issue_comments_094926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94926",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -946,7 +946,7 @@ archive/issue_comments_094927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94927",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -964,7 +964,7 @@ archive/issue_comments_094928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94928",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1002,7 +1002,7 @@ archive/issue_comments_094929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94929",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1020,7 +1020,7 @@ archive/issue_comments_094930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94930",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1045,7 +1045,7 @@ archive/issue_comments_094931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94931",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1126,7 +1126,7 @@ archive/issue_comments_094935.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94935",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1160,7 +1160,7 @@ archive/issue_comments_094936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94936",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1208,16 +1208,16 @@ Georg
 archive/issue_comments_094938.json:
 ```json
 {
-    "body": "Attachment [log_with_fltk-devel_--graphic=none](tarball://root/attachments/some-uuid/ticket9722/log_with_fltk-devel_--graphic=none) by leif created at 2010-08-19 16:54:03\n\nReplying to [comment:28 ggrafendorfer]:\n> Replying to [comment:27 leif]:\n> > Thanks, does the same happen if you run `./Configure --graphic=none`?\n> \n> yes, I'll attach the log file,\n\nLOL, that's because you *don't* have *X11* development packages installed! :)\n\n`config/get_fltk`:\n\n```sh\nif test -z \"$with_fltk\"; then\n  case \"$which_graphic_lib\" in\n    fltk) with_fltk=yes;;\n  esac\n  if test -z \"$X11\"; then with_fltk=yes; fi\nfi\n...\n```\n\n\nPARI is really funny. I'll fix *all three* issues and upload a second patch here later...",
+    "body": "Attachment [log_with_fltk-devel_--graphic=none](tarball://root/attachments/some-uuid/ticket9722/log_with_fltk-devel_--graphic=none) by @nexttime created at 2010-08-19 16:54:03\n\nReplying to [comment:28 ggrafendorfer]:\n> Replying to [comment:27 leif]:\n> > Thanks, does the same happen if you run `./Configure --graphic=none`?\n> \n> yes, I'll attach the log file,\n\nLOL, that's because you *don't* have *X11* development packages installed! :)\n\n`config/get_fltk`:\n\n```sh\nif test -z \"$with_fltk\"; then\n  case \"$which_graphic_lib\" in\n    fltk) with_fltk=yes;;\n  esac\n  if test -z \"$X11\"; then with_fltk=yes; fi\nfi\n...\n```\n\n\nPARI is really funny. I'll fix *all three* issues and upload a second patch here later...",
     "created_at": "2010-08-19T16:54:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94938",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [log_with_fltk-devel_--graphic=none](tarball://root/attachments/some-uuid/ticket9722/log_with_fltk-devel_--graphic=none) by leif created at 2010-08-19 16:54:03
+Attachment [log_with_fltk-devel_--graphic=none](tarball://root/attachments/some-uuid/ticket9722/log_with_fltk-devel_--graphic=none) by @nexttime created at 2010-08-19 16:54:03
 
 Replying to [comment:28 ggrafendorfer]:
 > Replying to [comment:27 leif]:
@@ -1254,7 +1254,7 @@ archive/issue_comments_094939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94939",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1272,7 +1272,7 @@ archive/issue_comments_094940.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94940",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1292,7 +1292,7 @@ archive/issue_comments_094941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94941",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1328,7 +1328,7 @@ archive/issue_comments_094942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94942",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1351,7 +1351,7 @@ archive/issue_comments_094943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94943",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1369,7 +1369,7 @@ archive/issue_comments_094944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94944",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1387,7 +1387,7 @@ archive/issue_comments_094945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94945",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1408,7 +1408,7 @@ archive/issue_comments_094946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94946",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1421,16 +1421,16 @@ SPKG patch, apply to PARI 2.3.5.p2. Fixes Fedora 13 link error when FLTK is used
 archive/issue_comments_094947.json:
 ```json
 {
-    "body": "Attachment [trac_9722-pari-2.3.5.p2-p3.patch](tarball://root/attachments/some-uuid/ticket9722/trac_9722-pari-2.3.5.p2-p3.patch) by leif created at 2010-08-22 21:04:31\n\n**New PARI spkg (p3)**, with the attached patch applied:\n\nhttp://spkg-upload.googlecode.com/files/pari-2.3.5.p3.spkg\n\nThis **only fixes the linker error** on Fedora 13 (that occurred when `fltk-devel` was installed).\n\nIf you run into the *compiler* error, convince your system administrator to\n* *either* install `fltk-devel`\n* *or* remove an (invalid) *unversioned* link to the FLTK library installed. (I.e., if only `fltk` is installed, there should be no `libfltk.so`, but just versioned filenames like e.g. `libfltk.so.1.1`, perhaps including *versioned* symbolic links to the actual libraries.)\n\nI'll perhaps later upload an improved (p4) spkg that also makes the FLTK-devel detection more robust, s.t. the compiler error shouldn't occur either, even with such unexpected links present.",
+    "body": "Attachment [trac_9722-pari-2.3.5.p2-p3.patch](tarball://root/attachments/some-uuid/ticket9722/trac_9722-pari-2.3.5.p2-p3.patch) by @nexttime created at 2010-08-22 21:04:31\n\n**New PARI spkg (p3)**, with the attached patch applied:\n\nhttp://spkg-upload.googlecode.com/files/pari-2.3.5.p3.spkg\n\nThis **only fixes the linker error** on Fedora 13 (that occurred when `fltk-devel` was installed).\n\nIf you run into the *compiler* error, convince your system administrator to\n* *either* install `fltk-devel`\n* *or* remove an (invalid) *unversioned* link to the FLTK library installed. (I.e., if only `fltk` is installed, there should be no `libfltk.so`, but just versioned filenames like e.g. `libfltk.so.1.1`, perhaps including *versioned* symbolic links to the actual libraries.)\n\nI'll perhaps later upload an improved (p4) spkg that also makes the FLTK-devel detection more robust, s.t. the compiler error shouldn't occur either, even with such unexpected links present.",
     "created_at": "2010-08-22T21:04:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94947",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_9722-pari-2.3.5.p2-p3.patch](tarball://root/attachments/some-uuid/ticket9722/trac_9722-pari-2.3.5.p2-p3.patch) by leif created at 2010-08-22 21:04:31
+Attachment [trac_9722-pari-2.3.5.p2-p3.patch](tarball://root/attachments/some-uuid/ticket9722/trac_9722-pari-2.3.5.p2-p3.patch) by @nexttime created at 2010-08-22 21:04:31
 
 **New PARI spkg (p3)**, with the attached patch applied:
 
@@ -1456,7 +1456,7 @@ archive/issue_comments_094948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94948",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1474,7 +1474,7 @@ archive/issue_comments_094949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94949",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1497,7 +1497,7 @@ archive/issue_comments_094950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94950",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1515,7 +1515,7 @@ archive/issue_comments_094951.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94951",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1573,7 +1573,7 @@ archive/issue_comments_094952.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94952",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1593,7 +1593,7 @@ archive/issue_comments_094953.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94953",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1616,7 +1616,7 @@ archive/issue_comments_094954.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94954",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1642,7 +1642,7 @@ archive/issue_comments_094955.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94955",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1662,7 +1662,7 @@ archive/issue_comments_094956.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94956",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1675,16 +1675,16 @@ Just to ease seeing some of the changes I made... (Do not apply, it's in the pat
 archive/issue_comments_094957.json:
 ```json
 {
-    "body": "Attachment [get_X11-against-upstream.diff](tarball://root/attachments/some-uuid/ticket9722/get_X11-against-upstream.diff) by leif created at 2010-08-23 08:31:40\n\nJust to ease seeing some of the changes I made... (Do not apply, it's in the patch, too.)",
+    "body": "Attachment [get_X11-against-upstream.diff](tarball://root/attachments/some-uuid/ticket9722/get_X11-against-upstream.diff) by @nexttime created at 2010-08-23 08:31:40\n\nJust to ease seeing some of the changes I made... (Do not apply, it's in the patch, too.)",
     "created_at": "2010-08-23T08:31:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94957",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [get_X11-against-upstream.diff](tarball://root/attachments/some-uuid/ticket9722/get_X11-against-upstream.diff) by leif created at 2010-08-23 08:31:40
+Attachment [get_X11-against-upstream.diff](tarball://root/attachments/some-uuid/ticket9722/get_X11-against-upstream.diff) by @nexttime created at 2010-08-23 08:31:40
 
 Just to ease seeing some of the changes I made... (Do not apply, it's in the patch, too.)
 
@@ -1733,7 +1733,7 @@ archive/issue_comments_094959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94959",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1746,16 +1746,16 @@ SPKG patch, now a proper Mercurial changeset. Apply to pari-2.3.5.p3.spkg. (Furt
 archive/issue_comments_094960.json:
 ```json
 {
-    "body": "Attachment [trac_9722-pari-2.3.5.p3-p4.patch](tarball://root/attachments/some-uuid/ticket9722/trac_9722-pari-2.3.5.p3-p4.patch) by leif created at 2010-08-23 10:28:42\n\nAfter testing various combinations of installed (graphics) packages and PARI configure options (`$PARI_EXTRA_OPTS`) on 64-bit Fedora 13, 32-bit and 64-bit Ubuntu 9.04, I'm now quite confident with it and will \"release\" PARI 2.3.5.p4.\n\nI've replaced the p4-preview diff by a Mercurial patch, and will shortly provide a link to the \"final\" spkg, with all changes committed.\n\n*\"Please build, test, and report!  We'd love to hear about your experiences with this new package.\"*<sup>TM</sup>\n\n(I've so far only tested the spkg on top of Sage 4.5.3.alpha0 and 4.5.3.alpha1.)",
+    "body": "Attachment [trac_9722-pari-2.3.5.p3-p4.patch](tarball://root/attachments/some-uuid/ticket9722/trac_9722-pari-2.3.5.p3-p4.patch) by @nexttime created at 2010-08-23 10:28:42\n\nAfter testing various combinations of installed (graphics) packages and PARI configure options (`$PARI_EXTRA_OPTS`) on 64-bit Fedora 13, 32-bit and 64-bit Ubuntu 9.04, I'm now quite confident with it and will \"release\" PARI 2.3.5.p4.\n\nI've replaced the p4-preview diff by a Mercurial patch, and will shortly provide a link to the \"final\" spkg, with all changes committed.\n\n*\"Please build, test, and report!  We'd love to hear about your experiences with this new package.\"*<sup>TM</sup>\n\n(I've so far only tested the spkg on top of Sage 4.5.3.alpha0 and 4.5.3.alpha1.)",
     "created_at": "2010-08-23T10:28:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94960",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_9722-pari-2.3.5.p3-p4.patch](tarball://root/attachments/some-uuid/ticket9722/trac_9722-pari-2.3.5.p3-p4.patch) by leif created at 2010-08-23 10:28:42
+Attachment [trac_9722-pari-2.3.5.p3-p4.patch](tarball://root/attachments/some-uuid/ticket9722/trac_9722-pari-2.3.5.p3-p4.patch) by @nexttime created at 2010-08-23 10:28:42
 
 After testing various combinations of installed (graphics) packages and PARI configure options (`$PARI_EXTRA_OPTS`) on 64-bit Fedora 13, 32-bit and 64-bit Ubuntu 9.04, I'm now quite confident with it and will "release" PARI 2.3.5.p4.
 
@@ -1777,7 +1777,7 @@ archive/issue_comments_094961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94961",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1827,7 +1827,7 @@ archive/issue_comments_094962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94962",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1845,7 +1845,7 @@ archive/issue_comments_094963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94963",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1863,7 +1863,7 @@ archive/issue_comments_094964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94964",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1905,7 +1905,7 @@ archive/issue_comments_094966.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94966",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1929,7 +1929,7 @@ archive/issue_comments_094967.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94967",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1950,7 +1950,7 @@ archive/issue_comments_094968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94968",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1974,7 +1974,7 @@ archive/issue_comments_094969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94969",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -2043,7 +2043,7 @@ archive/issue_comments_094970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94970",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -2068,7 +2068,7 @@ archive/issue_comments_094971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94971",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -2086,7 +2086,7 @@ archive/issue_comments_094972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94972",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -2099,16 +2099,16 @@ Combined p2-p4 SPKG patch
 archive/issue_comments_094973.json:
 ```json
 {
-    "body": "Attachment [trac_9722-combined.patch](tarball://root/attachments/some-uuid/ticket9722/trac_9722-combined.patch) by leif created at 2010-08-23 15:07:33\n\nReplying to [comment:45 leif]:\n> Replying to [comment:44 leif]:\n> > (I've so far only tested the spkg on top of Sage 4.5.3.alpha0 and 4.5.3.alpha1.)\n> \n> Also installed without problems on Sage 4.5.2, now running `ptest`.\n\n* Passed `make ptest` with Sage 4.5.2, Ubuntu 9.04 x86 (P4 Prescott, gcc 4.3.3).\n* Passed `make test` with Sage 4.5.3.alpha1, Ubuntu 9.04 x86_64 (Core2, gcc 4.3.3).\n* Passed `make ptestlong` with Sage 4.5.3.alpha1, Fedora 13 x86_64 (Core2, gcc 4.4.4).",
+    "body": "Attachment [trac_9722-combined.patch](tarball://root/attachments/some-uuid/ticket9722/trac_9722-combined.patch) by @nexttime created at 2010-08-23 15:07:33\n\nReplying to [comment:45 leif]:\n> Replying to [comment:44 leif]:\n> > (I've so far only tested the spkg on top of Sage 4.5.3.alpha0 and 4.5.3.alpha1.)\n> \n> Also installed without problems on Sage 4.5.2, now running `ptest`.\n\n* Passed `make ptest` with Sage 4.5.2, Ubuntu 9.04 x86 (P4 Prescott, gcc 4.3.3).\n* Passed `make test` with Sage 4.5.3.alpha1, Ubuntu 9.04 x86_64 (Core2, gcc 4.3.3).\n* Passed `make ptestlong` with Sage 4.5.3.alpha1, Fedora 13 x86_64 (Core2, gcc 4.4.4).",
     "created_at": "2010-08-23T15:07:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94973",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_9722-combined.patch](tarball://root/attachments/some-uuid/ticket9722/trac_9722-combined.patch) by leif created at 2010-08-23 15:07:33
+Attachment [trac_9722-combined.patch](tarball://root/attachments/some-uuid/ticket9722/trac_9722-combined.patch) by @nexttime created at 2010-08-23 15:07:33
 
 Replying to [comment:45 leif]:
 > Replying to [comment:44 leif]:
@@ -2154,7 +2154,7 @@ archive/issue_comments_094975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94975",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2174,7 +2174,7 @@ archive/issue_comments_094976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94976",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -2195,7 +2195,7 @@ archive/issue_comments_094977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94977",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -2223,7 +2223,7 @@ archive/issue_comments_094978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94978",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -2241,7 +2241,7 @@ archive/issue_comments_094979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9722#issuecomment-94979",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

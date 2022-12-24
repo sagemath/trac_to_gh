@@ -3,7 +3,7 @@
 archive/issues_006160.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  malb wjp\n\nThis is an example over a 2- variable polynomial ring over QQ (although sage does not see K as isomorphic to QQ\n\nlogin`@`sage:~$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: K.<j> = NumberField(x-1728)\nsage: R.<b,c> = K[]\nsage: f = b-j*c\n| Sage Version 3.4.1, Release Date: 2009-04-21                       |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\nlogin`@`sage:~$\n\nNote that this does not pose a problem if the number field is not QQ\n\nsage: K.<j> = NumberField(x^2 - 2)\nsage: R.<b,c> = K[]\nsage: f = b-j*c\nsage: f\nb + (-j)*c\n\nNor if the Polynomial Ring is Univariate\n\nsage: F.<i> = NumberField(x-1728)\nsage: S.<y> = F[]\nsage: y - i\ny - 1728\nsage: g = y - i\nsage: g = i*y^2 + 1\nsage: g\n1728*y^2 + 1\n\nAlso note that this has nothing to do with Pari's occasional trouble with the ordering of variables\n\nsage: K.<j> = NumberField(x-1728)\nsage: R.<k,l> = K[]\nsage: f = k - j*l\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n\nlogin`@`sage:~$\n\nIssue created by migration from https://trac.sagemath.org/ticket/6160\n\n",
+    "body": "Assignee: somebody\n\nCC:  @malb @wjp\n\nThis is an example over a 2- variable polynomial ring over QQ (although sage does not see K as isomorphic to QQ\n\nlogin`@`sage:~$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: K.<j> = NumberField(x-1728)\nsage: R.<b,c> = K[]\nsage: f = b-j*c\n| Sage Version 3.4.1, Release Date: 2009-04-21                       |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\nlogin`@`sage:~$\n\nNote that this does not pose a problem if the number field is not QQ\n\nsage: K.<j> = NumberField(x^2 - 2)\nsage: R.<b,c> = K[]\nsage: f = b-j*c\nsage: f\nb + (-j)*c\n\nNor if the Polynomial Ring is Univariate\n\nsage: F.<i> = NumberField(x-1728)\nsage: S.<y> = F[]\nsage: y - i\ny - 1728\nsage: g = y - i\nsage: g = i*y^2 + 1\nsage: g\n1728*y^2 + 1\n\nAlso note that this has nothing to do with Pari's occasional trouble with the ordering of variables\n\nsage: K.<j> = NumberField(x-1728)\nsage: R.<k,l> = K[]\nsage: f = k - j*l\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n\nlogin`@`sage:~$\n\nIssue created by migration from https://trac.sagemath.org/ticket/6160\n\n",
     "created_at": "2009-05-30T21:04:28Z",
     "labels": [
         "algebra",
@@ -19,7 +19,7 @@ archive/issues_006160.json:
 ```
 Assignee: somebody
 
-CC:  malb wjp
+CC:  @malb @wjp
 
 This is an example over a 2- variable polynomial ring over QQ (although sage does not see K as isomorphic to QQ
 
@@ -97,7 +97,7 @@ archive/issue_comments_049139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6160#issuecomment-49139",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_049140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6160#issuecomment-49140",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_049141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6160#issuecomment-49141",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

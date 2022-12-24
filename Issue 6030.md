@@ -14,7 +14,7 @@ archive/issues_006030.json:
     "title": "Bring plot/circle.py to 100% coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6030",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6030
 archive/issue_comments_048010.json:
 ```json
 {
-    "body": "Attachment [trac_6030.patch](tarball://root/attachments/some-uuid/ticket6030/trac_6030.patch) by kcrisman created at 2009-05-12 16:09:13",
+    "body": "Attachment [trac_6030.patch](tarball://root/attachments/some-uuid/ticket6030/trac_6030.patch) by @kcrisman created at 2009-05-12 16:09:13",
     "created_at": "2009-05-12T16:09:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6030#issuecomment-48010",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6030.patch](tarball://root/attachments/some-uuid/ticket6030/trac_6030.patch) by kcrisman created at 2009-05-12 16:09:13
+Attachment [trac_6030.patch](tarball://root/attachments/some-uuid/ticket6030/trac_6030.patch) by @kcrisman created at 2009-05-12 16:09:13
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_048011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6030#issuecomment-48011",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_048012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6030#issuecomment-48012",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -88,16 +88,16 @@ Changing status from new to assigned.
 archive/issue_comments_048013.json:
 ```json
 {
-    "body": "Changing assignee from tba to kcrisman.",
+    "body": "Changing assignee from tba to @kcrisman.",
     "created_at": "2009-05-12T16:11:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6030#issuecomment-48013",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Changing assignee from tba to kcrisman.
+Changing assignee from tba to @kcrisman.
 
 
 
@@ -181,7 +181,7 @@ archive/issue_comments_048015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6030#issuecomment-48015",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -240,16 +240,16 @@ Michael
 archive/issue_comments_048018.json:
 ```json
 {
-    "body": "Attachment [trac_6030-fix.patch](tarball://root/attachments/some-uuid/ticket6030/trac_6030-fix.patch) by kcrisman created at 2009-05-14 16:17:21\n\nBoth depend on #6023",
+    "body": "Attachment [trac_6030-fix.patch](tarball://root/attachments/some-uuid/ticket6030/trac_6030-fix.patch) by @kcrisman created at 2009-05-14 16:17:21\n\nBoth depend on #6023",
     "created_at": "2009-05-14T16:17:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6030#issuecomment-48018",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6030-fix.patch](tarball://root/attachments/some-uuid/ticket6030/trac_6030-fix.patch) by kcrisman created at 2009-05-14 16:17:21
+Attachment [trac_6030-fix.patch](tarball://root/attachments/some-uuid/ticket6030/trac_6030-fix.patch) by @kcrisman created at 2009-05-14 16:17:21
 
 Both depend on #6023
 

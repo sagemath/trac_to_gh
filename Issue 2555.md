@@ -3,7 +3,7 @@
 archive/issues_002555.json:
 ```json
 {
-    "body": "Assignee: yi\n\nVarious users have reported that the dsage unit tests fail on linux. This is a known issue and a fix is being worked on by me. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2555\n\n",
+    "body": "Assignee: @yqiang\n\nVarious users have reported that the dsage unit tests fail on linux. This is a known issue and a fix is being worked on by me. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2555\n\n",
     "created_at": "2008-03-16T21:41:29Z",
     "labels": [
         "dsage",
@@ -14,10 +14,10 @@ archive/issues_002555.json:
     "title": "dsage unit tests fail on linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2555",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
-Assignee: yi
+Assignee: @yqiang
 
 Various users have reported that the dsage unit tests fail on linux. This is a known issue and a fix is being worked on by me. 
 

@@ -14,7 +14,7 @@ archive/issues_008176.json:
     "title": "libpng fails to build in Open Solaris x64 as 64 bit even if SAGE64=yes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8176",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: drkirkby
@@ -43,7 +43,7 @@ archive/issue_comments_072033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8176",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8176#issuecomment-72033",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -56,16 +56,16 @@ Changing status from new to needs_review.
 archive/issue_comments_072034.json:
 ```json
 {
-    "body": "Attachment [libpng-1.2.35.p0.patch](tarball://root/attachments/some-uuid/ticket8176/libpng-1.2.35.p0.patch) by jsp created at 2010-02-03 18:19:44\n\nAn spkgs can be found here:\n\n[http://boxen.math.washington.edu/home/jsp/ports/libpng-1.2.35.p0.spkg](http://boxen.math.washington.edu/home/jsp/ports/libpng-1.2.35.p0.spkg)\n\n\n\n\n```\nlib/libpng12.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\nlib/libpng12.so.0:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\nlib/libpng12.so.0.35.0:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n\n```\n\n\nJaap",
+    "body": "Attachment [libpng-1.2.35.p0.patch](tarball://root/attachments/some-uuid/ticket8176/libpng-1.2.35.p0.patch) by @jaapspies created at 2010-02-03 18:19:44\n\nAn spkgs can be found here:\n\n[http://boxen.math.washington.edu/home/jsp/ports/libpng-1.2.35.p0.spkg](http://boxen.math.washington.edu/home/jsp/ports/libpng-1.2.35.p0.spkg)\n\n\n\n\n```\nlib/libpng12.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\nlib/libpng12.so.0:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\nlib/libpng12.so.0.35.0:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n\n```\n\n\nJaap",
     "created_at": "2010-02-03T18:19:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8176",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8176#issuecomment-72034",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [libpng-1.2.35.p0.patch](tarball://root/attachments/some-uuid/ticket8176/libpng-1.2.35.p0.patch) by jsp created at 2010-02-03 18:19:44
+Attachment [libpng-1.2.35.p0.patch](tarball://root/attachments/some-uuid/ticket8176/libpng-1.2.35.p0.patch) by @jaapspies created at 2010-02-03 18:19:44
 
 An spkgs can be found here:
 
@@ -137,16 +137,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_072037.json:
 ```json
 {
-    "body": "Attachment [libpng-1.2.35.p0+.patch](tarball://root/attachments/some-uuid/ticket8176/libpng-1.2.35.p0+.patch) by jsp created at 2010-02-04 18:44:05\n\nSome stupid error I had corrected I thought.\n\n[http://boxen.math.washington.edu/home/jsp/ports/libpng-1.2.35.p0.spkg](http://boxen.math.washington.edu/home/jsp/ports/libpng-1.2.35.p0.spkg)\n\nDidn't change the patch level.\n\nJaap",
+    "body": "Attachment [libpng-1.2.35.p0+.patch](tarball://root/attachments/some-uuid/ticket8176/libpng-1.2.35.p0+.patch) by @jaapspies created at 2010-02-04 18:44:05\n\nSome stupid error I had corrected I thought.\n\n[http://boxen.math.washington.edu/home/jsp/ports/libpng-1.2.35.p0.spkg](http://boxen.math.washington.edu/home/jsp/ports/libpng-1.2.35.p0.spkg)\n\nDidn't change the patch level.\n\nJaap",
     "created_at": "2010-02-04T18:44:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8176",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8176#issuecomment-72037",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [libpng-1.2.35.p0+.patch](tarball://root/attachments/some-uuid/ticket8176/libpng-1.2.35.p0+.patch) by jsp created at 2010-02-04 18:44:05
+Attachment [libpng-1.2.35.p0+.patch](tarball://root/attachments/some-uuid/ticket8176/libpng-1.2.35.p0+.patch) by @jaapspies created at 2010-02-04 18:44:05
 
 Some stupid error I had corrected I thought.
 
@@ -168,7 +168,7 @@ archive/issue_comments_072038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8176",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8176#issuecomment-72038",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_072041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8176",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8176#issuecomment-72041",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

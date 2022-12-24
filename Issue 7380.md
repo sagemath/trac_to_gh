@@ -3,7 +3,7 @@
 archive/issues_007380.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nAs the title says, there are many places where Graph.vertices() is used when Graph.vertex_iterator ( or even self ) would be better. The same goes for edges.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7380\n\n",
+    "body": "Assignee: @rlmill\n\nAs the title says, there are many places where Graph.vertices() is used when Graph.vertex_iterator ( or even self ) would be better. The same goes for edges.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7380\n\n",
     "created_at": "2009-11-03T11:25:56Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007380.json:
     "title": "Replace Graph.vertices() by Graph.vertex_iterator when possible",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7380",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 As the title says, there are many places where Graph.vertices() is used when Graph.vertex_iterator ( or even self ) would be better. The same goes for edges.
 
@@ -39,7 +39,7 @@ archive/issue_comments_062079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7380",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7380#issuecomment-62079",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_062080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7380",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7380#issuecomment-62080",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_062082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7380",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7380#issuecomment-62082",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_062085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7380",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7380#issuecomment-62085",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_062086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7380",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7380#issuecomment-62086",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_062087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7380",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7380#issuecomment-62087",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

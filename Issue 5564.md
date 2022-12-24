@@ -3,7 +3,7 @@
 archive/issues_005564.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  jason ddrake\n\nKeywords: utf-8 tinymce\n\nThis patch when applied on top of #4547 and #5211 will fix the issues people have been having in #2896, #1477, and #4956.\n\nAlso, I'm tired of working on Javascript code in triple-quoted strings, so I have moved the code to its own file.  It breaks history but is less crazy.\n\nI will attach two patches -- one for most of the javascript moving and the other for the interesting changes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5564\n\n",
+    "body": "Assignee: boothby\n\nCC:  @jasongrout @dandrake\n\nKeywords: utf-8 tinymce\n\nThis patch when applied on top of #4547 and #5211 will fix the issues people have been having in #2896, #1477, and #4956.\n\nAlso, I'm tired of working on Javascript code in triple-quoted strings, so I have moved the code to its own file.  It breaks history but is less crazy.\n\nI will attach two patches -- one for most of the javascript moving and the other for the interesting changes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5564\n\n",
     "created_at": "2009-03-19T12:06:25Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_005564.json:
     "title": "[with patch, needs review] fix character encoding problems in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5564",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: boothby
 
-CC:  jason ddrake
+CC:  @jasongrout @dandrake
 
 Keywords: utf-8 tinymce
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5564
 archive/issue_comments_043303.json:
 ```json
 {
-    "body": "Attachment [trac_5564-1.patch](tarball://root/attachments/some-uuid/ticket5564/trac_5564-1.patch) by mhansen created at 2009-03-19 12:07:18",
+    "body": "Attachment [trac_5564-1.patch](tarball://root/attachments/some-uuid/ticket5564/trac_5564-1.patch) by @mwhansen created at 2009-03-19 12:07:18",
     "created_at": "2009-03-19T12:07:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43303",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5564-1.patch](tarball://root/attachments/some-uuid/ticket5564/trac_5564-1.patch) by mhansen created at 2009-03-19 12:07:18
+Attachment [trac_5564-1.patch](tarball://root/attachments/some-uuid/ticket5564/trac_5564-1.patch) by @mwhansen created at 2009-03-19 12:07:18
 
 
 
@@ -58,16 +58,16 @@ Attachment [trac_5564-1.patch](tarball://root/attachments/some-uuid/ticket5564/t
 archive/issue_comments_043304.json:
 ```json
 {
-    "body": "Attachment [trac_5564-2.patch](tarball://root/attachments/some-uuid/ticket5564/trac_5564-2.patch) by mhansen created at 2009-03-19 12:08:40",
+    "body": "Attachment [trac_5564-2.patch](tarball://root/attachments/some-uuid/ticket5564/trac_5564-2.patch) by @mwhansen created at 2009-03-19 12:08:40",
     "created_at": "2009-03-19T12:08:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43304",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5564-2.patch](tarball://root/attachments/some-uuid/ticket5564/trac_5564-2.patch) by mhansen created at 2009-03-19 12:08:40
+Attachment [trac_5564-2.patch](tarball://root/attachments/some-uuid/ticket5564/trac_5564-2.patch) by @mwhansen created at 2009-03-19 12:08:40
 
 
 
@@ -81,7 +81,7 @@ archive/issue_comments_043305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43305",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_043306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43306",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_043307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43307",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -160,16 +160,16 @@ I will be applying #4547 + #5211 in a live sage notebook (3.4), and will report 
 archive/issue_comments_043308.json:
 ```json
 {
-    "body": "Attachment [trac_5564-3.patch](tarball://root/attachments/some-uuid/ticket5564/trac_5564-3.patch) by mhansen created at 2009-03-23 11:15:02",
+    "body": "Attachment [trac_5564-3.patch](tarball://root/attachments/some-uuid/ticket5564/trac_5564-3.patch) by @mwhansen created at 2009-03-23 11:15:02",
     "created_at": "2009-03-23T11:15:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43308",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5564-3.patch](tarball://root/attachments/some-uuid/ticket5564/trac_5564-3.patch) by mhansen created at 2009-03-23 11:15:02
+Attachment [trac_5564-3.patch](tarball://root/attachments/some-uuid/ticket5564/trac_5564-3.patch) by @mwhansen created at 2009-03-23 11:15:02
 
 
 
@@ -183,7 +183,7 @@ archive/issue_comments_043309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43309",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_043310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43310",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -218,16 +218,16 @@ Changing status from new to assigned.
 archive/issue_comments_043311.json:
 ```json
 {
-    "body": "Changing assignee from boothby to mhansen.",
+    "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2009-03-23T11:25:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43311",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from boothby to mhansen.
+Changing assignee from boothby to @mwhansen.
 
 
 
@@ -241,7 +241,7 @@ archive/issue_comments_043312.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43312",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_043313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43313",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -274,16 +274,16 @@ This ticket is intended to fix [this problem](http://groups.google.com/group/sag
 archive/issue_comments_043314.json:
 ```json
 {
-    "body": "Attachment [trac_5564-problem.png](tarball://root/attachments/some-uuid/ticket5564/trac_5564-problem.png) by ddrake created at 2009-06-03 02:57:36\n\nscreenshot of the save and re-edit problem",
+    "body": "Attachment [trac_5564-problem.png](tarball://root/attachments/some-uuid/ticket5564/trac_5564-problem.png) by @dandrake created at 2009-06-03 02:57:36\n\nscreenshot of the save and re-edit problem",
     "created_at": "2009-06-03T02:57:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43314",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_5564-problem.png](tarball://root/attachments/some-uuid/ticket5564/trac_5564-problem.png) by ddrake created at 2009-06-03 02:57:36
+Attachment [trac_5564-problem.png](tarball://root/attachments/some-uuid/ticket5564/trac_5564-problem.png) by @dandrake created at 2009-06-03 02:57:36
 
 screenshot of the save and re-edit problem
 
@@ -353,7 +353,7 @@ archive/issue_comments_043318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43318",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -425,7 +425,7 @@ archive/issue_comments_043322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43322",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

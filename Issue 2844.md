@@ -61,7 +61,7 @@ archive/issue_comments_019520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2844#issuecomment-19520",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -74,16 +74,16 @@ Nice work!  Applies to 3.0.alpha2 and passes tests for me.
 archive/issue_comments_019521.json:
 ```json
 {
-    "body": "Attachment [2844.patch](tarball://root/attachments/some-uuid/ticket2844/2844.patch) by mhansen created at 2008-04-07 22:49:10\n\nI added 2844.patch which applies to the current 3.0.alpha3.  Apply it instead.",
+    "body": "Attachment [2844.patch](tarball://root/attachments/some-uuid/ticket2844/2844.patch) by @mwhansen created at 2008-04-07 22:49:10\n\nI added 2844.patch which applies to the current 3.0.alpha3.  Apply it instead.",
     "created_at": "2008-04-07T22:49:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2844#issuecomment-19521",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2844.patch](tarball://root/attachments/some-uuid/ticket2844/2844.patch) by mhansen created at 2008-04-07 22:49:10
+Attachment [2844.patch](tarball://root/attachments/some-uuid/ticket2844/2844.patch) by @mwhansen created at 2008-04-07 22:49:10
 
 I added 2844.patch which applies to the current 3.0.alpha3.  Apply it instead.
 

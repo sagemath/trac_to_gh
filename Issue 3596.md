@@ -14,7 +14,7 @@ archive/issues_003596.json:
     "title": "can't build tut.tex; latex errors in ref.tex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3596",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3596
 archive/issue_comments_025410.json:
 ```json
 {
-    "body": "Attachment [doc-3596.patch](tarball://root/attachments/some-uuid/ticket3596/doc-3596.patch) by was created at 2008-07-07 23:55:16",
+    "body": "Attachment [doc-3596.patch](tarball://root/attachments/some-uuid/ticket3596/doc-3596.patch) by @williamstein created at 2008-07-07 23:55:16",
     "created_at": "2008-07-07T23:55:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3596#issuecomment-25410",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [doc-3596.patch](tarball://root/attachments/some-uuid/ticket3596/doc-3596.patch) by was created at 2008-07-07 23:55:16
+Attachment [doc-3596.patch](tarball://root/attachments/some-uuid/ticket3596/doc-3596.patch) by @williamstein created at 2008-07-07 23:55:16
 
 
 
@@ -50,16 +50,16 @@ Attachment [doc-3596.patch](tarball://root/attachments/some-uuid/ticket3596/doc-
 archive/issue_comments_025411.json:
 ```json
 {
-    "body": "Attachment [sage-3596.patch](tarball://root/attachments/some-uuid/ticket3596/sage-3596.patch) by was created at 2008-07-07 23:55:27",
+    "body": "Attachment [sage-3596.patch](tarball://root/attachments/some-uuid/ticket3596/sage-3596.patch) by @williamstein created at 2008-07-07 23:55:27",
     "created_at": "2008-07-07T23:55:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3596#issuecomment-25411",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3596.patch](tarball://root/attachments/some-uuid/ticket3596/sage-3596.patch) by was created at 2008-07-07 23:55:27
+Attachment [sage-3596.patch](tarball://root/attachments/some-uuid/ticket3596/sage-3596.patch) by @williamstein created at 2008-07-07 23:55:27
 
 
 
@@ -68,16 +68,16 @@ Attachment [sage-3596.patch](tarball://root/attachments/some-uuid/ticket3596/sag
 archive/issue_comments_025412.json:
 ```json
 {
-    "body": "Attachment [doc-3596-part2.patch](tarball://root/attachments/some-uuid/ticket3596/doc-3596-part2.patch) by was created at 2008-07-08 00:12:42\n\nOK, this patch puts the \"rm *.ind\" back, and simply issues two makes instead of one.  It works fine for me.",
+    "body": "Attachment [doc-3596-part2.patch](tarball://root/attachments/some-uuid/ticket3596/doc-3596-part2.patch) by @williamstein created at 2008-07-08 00:12:42\n\nOK, this patch puts the \"rm *.ind\" back, and simply issues two makes instead of one.  It works fine for me.",
     "created_at": "2008-07-08T00:12:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3596#issuecomment-25412",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [doc-3596-part2.patch](tarball://root/attachments/some-uuid/ticket3596/doc-3596-part2.patch) by was created at 2008-07-08 00:12:42
+Attachment [doc-3596-part2.patch](tarball://root/attachments/some-uuid/ticket3596/doc-3596-part2.patch) by @williamstein created at 2008-07-08 00:12:42
 
 OK, this patch puts the "rm *.ind" back, and simply issues two makes instead of one.  It works fine for me.
 

@@ -3,7 +3,7 @@
 archive/issues_009232.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  kcrisman jason jdemeyer\n\nI can't see Graphics3d objects on the command line. For example, \n\n```\nsage: sphere()\nsage: \n```\n\nThe command returns without starting jmol or producing any other graphical output.\n\nStrangely enough, I can start jmol from the sage command line:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: !jmol\nsplash_image=jar:file:/home/vbraun/opt/sage-hg/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/data/jmol/Jmol.jar!/org/openscience/jmol/images/Jmol_splash.jpg\nhistory file is /home/vbraun/.jmol/history\nusing Smarter Model Adapter\n(C) 2008 Jmol Development\nJmol Version 11.6.16  2008-11-24 13:39\njava.vendor:Sun Microsystems Inc.\njava.version:1.6.0_18\nos.name:Linux\nmemory:9.8/21.1\nuseCommandThread: false\nUser macros dir: /home/vbraun/.jmol/macros\n       exists: false\n  isDirectory: false\n```\n\n| Sage Version 4.4.3, Release Date: 2010-06-04                       |\n| Type notebook() for the GUI, and license() for information.        |\nThe following also works and shows a tachyon-generated plot:\n\n```\nsphere(viewer='tachyon')\n```\n\n\nMore verbosity:\n\n```\nsage: sphere(verbosity=99)\nTraceback (most recent call last):\n  File \"/home/vbraun/Sage/sage/local/bin/sage-pypkg-location\", line 3, in <module>\n    from pkg_resources import Requirement, working_set\nzipimport.ZipImportError: can't decompress data; zlib not available\nJmol.jar not found\n```\n\n\nFor the record, I'm running Fedora 13 x86_64\n\nIssue created by migration from https://trac.sagemath.org/ticket/9232\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @kcrisman @jasongrout @jdemeyer\n\nI can't see Graphics3d objects on the command line. For example, \n\n```\nsage: sphere()\nsage: \n```\n\nThe command returns without starting jmol or producing any other graphical output.\n\nStrangely enough, I can start jmol from the sage command line:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: !jmol\nsplash_image=jar:file:/home/vbraun/opt/sage-hg/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/data/jmol/Jmol.jar!/org/openscience/jmol/images/Jmol_splash.jpg\nhistory file is /home/vbraun/.jmol/history\nusing Smarter Model Adapter\n(C) 2008 Jmol Development\nJmol Version 11.6.16  2008-11-24 13:39\njava.vendor:Sun Microsystems Inc.\njava.version:1.6.0_18\nos.name:Linux\nmemory:9.8/21.1\nuseCommandThread: false\nUser macros dir: /home/vbraun/.jmol/macros\n       exists: false\n  isDirectory: false\n```\n\n| Sage Version 4.4.3, Release Date: 2010-06-04                       |\n| Type notebook() for the GUI, and license() for information.        |\nThe following also works and shows a tachyon-generated plot:\n\n```\nsphere(viewer='tachyon')\n```\n\n\nMore verbosity:\n\n```\nsage: sphere(verbosity=99)\nTraceback (most recent call last):\n  File \"/home/vbraun/Sage/sage/local/bin/sage-pypkg-location\", line 3, in <module>\n    from pkg_resources import Requirement, working_set\nzipimport.ZipImportError: can't decompress data; zlib not available\nJmol.jar not found\n```\n\n\nFor the record, I'm running Fedora 13 x86_64\n\nIssue created by migration from https://trac.sagemath.org/ticket/9232\n\n",
     "created_at": "2010-06-13T20:57:16Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_009232.json:
     "title": "jmol on commandline broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9232",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 Assignee: jason, was
 
-CC:  kcrisman jason jdemeyer
+CC:  @kcrisman @jasongrout @jdemeyer
 
 I can't see Graphics3d objects on the command line. For example, 
 
@@ -90,7 +90,7 @@ archive/issue_comments_086629.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86629",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_086630.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86630",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_086631.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86631",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_086632.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86632",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_086633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86633",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_086634.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86634",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_086635.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86635",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_086636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86636",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_086637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86637",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -361,7 +361,7 @@ archive/issue_comments_086638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86638",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -374,16 +374,16 @@ archive/issue_comments_086638.json:
 archive/issue_comments_086639.json:
 ```json
 {
-    "body": "Changing assignee from jason, was to gutow.",
+    "body": "Changing assignee from jason, was to @gutow.",
     "created_at": "2011-03-21T13:49:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86639",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
-Changing assignee from jason, was to gutow.
+Changing assignee from jason, was to @gutow.
 
 
 
@@ -397,7 +397,7 @@ archive/issue_comments_086640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86640",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -410,16 +410,16 @@ Changing status from new to needs_work.
 archive/issue_comments_086641.json:
 ```json
 {
-    "body": "Attachment [trac_9232_plot3d_base_pyx.patch](tarball://root/attachments/some-uuid/ticket9232/trac_9232_plot3d_base_pyx.patch) by gutow created at 2011-03-22 14:49:28\n\nplot3d/base.pyx fixes to launch Jmol from cmd line",
+    "body": "Attachment [trac_9232_plot3d_base_pyx.patch](tarball://root/attachments/some-uuid/ticket9232/trac_9232_plot3d_base_pyx.patch) by @gutow created at 2011-03-22 14:49:28\n\nplot3d/base.pyx fixes to launch Jmol from cmd line",
     "created_at": "2011-03-22T14:49:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86641",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
-Attachment [trac_9232_plot3d_base_pyx.patch](tarball://root/attachments/some-uuid/ticket9232/trac_9232_plot3d_base_pyx.patch) by gutow created at 2011-03-22 14:49:28
+Attachment [trac_9232_plot3d_base_pyx.patch](tarball://root/attachments/some-uuid/ticket9232/trac_9232_plot3d_base_pyx.patch) by @gutow created at 2011-03-22 14:49:28
 
 plot3d/base.pyx fixes to launch Jmol from cmd line
 
@@ -435,7 +435,7 @@ archive/issue_comments_086642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86642",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -448,16 +448,16 @@ Notebook fixes for launch Jmol from cmd line
 archive/issue_comments_086643.json:
 ```json
 {
-    "body": "Attachment [trac_9232_notebook_fixes.patch](tarball://root/attachments/some-uuid/ticket9232/trac_9232_notebook_fixes.patch) by gutow created at 2011-03-22 15:09:44\n\nThe above patches combined with installation of a newer version of Jmol fix this problem for Sage 4.6.2.  To install the new Jmol\n\n```\n./sage -f \"http://www.uwosh.edu/faculty_staff/gutow/Jmol_for_SageNoteBook-1.1.5.spkg\"\n```\n\n\nNote that my linux and MacOS versions of sage seemed to have slightly different mercurial tracking.  On MacOS you get a warning about the SageMenu.mnu file, when you apply the notebook_fixes patch.  That is OK, the other untracked files are properly added.",
+    "body": "Attachment [trac_9232_notebook_fixes.patch](tarball://root/attachments/some-uuid/ticket9232/trac_9232_notebook_fixes.patch) by @gutow created at 2011-03-22 15:09:44\n\nThe above patches combined with installation of a newer version of Jmol fix this problem for Sage 4.6.2.  To install the new Jmol\n\n```\n./sage -f \"http://www.uwosh.edu/faculty_staff/gutow/Jmol_for_SageNoteBook-1.1.5.spkg\"\n```\n\n\nNote that my linux and MacOS versions of sage seemed to have slightly different mercurial tracking.  On MacOS you get a warning about the SageMenu.mnu file, when you apply the notebook_fixes patch.  That is OK, the other untracked files are properly added.",
     "created_at": "2011-03-22T15:09:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86643",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
-Attachment [trac_9232_notebook_fixes.patch](tarball://root/attachments/some-uuid/ticket9232/trac_9232_notebook_fixes.patch) by gutow created at 2011-03-22 15:09:44
+Attachment [trac_9232_notebook_fixes.patch](tarball://root/attachments/some-uuid/ticket9232/trac_9232_notebook_fixes.patch) by @gutow created at 2011-03-22 15:09:44
 
 The above patches combined with installation of a newer version of Jmol fix this problem for Sage 4.6.2.  To install the new Jmol
 
@@ -480,7 +480,7 @@ archive/issue_comments_086644.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86644",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -498,7 +498,7 @@ archive/issue_comments_086645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86645",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -516,7 +516,7 @@ archive/issue_comments_086646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86646",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -537,7 +537,7 @@ archive/issue_comments_086647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86647",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -560,7 +560,7 @@ archive/issue_comments_086648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86648",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -585,7 +585,7 @@ archive/issue_comments_086649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86649",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -650,7 +650,7 @@ archive/issue_comments_086650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86650",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -674,7 +674,7 @@ archive/issue_comments_086651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86651",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -695,7 +695,7 @@ archive/issue_comments_086652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86652",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -749,7 +749,7 @@ archive/issue_comments_086653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86653",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -767,7 +767,7 @@ archive/issue_comments_086654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86654",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -785,7 +785,7 @@ archive/issue_comments_086655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86655",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -803,7 +803,7 @@ archive/issue_comments_086656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86656",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -823,7 +823,7 @@ archive/issue_comments_086657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86657",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -836,16 +836,16 @@ Yes, it would be fine to move `trac_10286_call_jmol_correctly.patch` here. Only 
 archive/issue_comments_086658.json:
 ```json
 {
-    "body": "Attachment [trac_9232_call_jmol_correctly.patch](tarball://root/attachments/some-uuid/ticket9232/trac_9232_call_jmol_correctly.patch) by kcrisman created at 2011-03-25 18:44:00\n\nApply this second.",
+    "body": "Attachment [trac_9232_call_jmol_correctly.patch](tarball://root/attachments/some-uuid/ticket9232/trac_9232_call_jmol_correctly.patch) by @kcrisman created at 2011-03-25 18:44:00\n\nApply this second.",
     "created_at": "2011-03-25T18:44:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86658",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_9232_call_jmol_correctly.patch](tarball://root/attachments/some-uuid/ticket9232/trac_9232_call_jmol_correctly.patch) by kcrisman created at 2011-03-25 18:44:00
+Attachment [trac_9232_call_jmol_correctly.patch](tarball://root/attachments/some-uuid/ticket9232/trac_9232_call_jmol_correctly.patch) by @kcrisman created at 2011-03-25 18:44:00
 
 Apply this second.
 
@@ -861,7 +861,7 @@ archive/issue_comments_086659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86659",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -879,7 +879,7 @@ archive/issue_comments_086660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86660",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -897,7 +897,7 @@ archive/issue_comments_086661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86661",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -919,7 +919,7 @@ archive/issue_comments_086662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86662",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -939,7 +939,7 @@ archive/issue_comments_086663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86663",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -957,7 +957,7 @@ archive/issue_comments_086664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86664",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -975,7 +975,7 @@ archive/issue_comments_086665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86665",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -992,16 +992,16 @@ I'm just testing quick, and then I'll post patches.  Since they aren't mine, I f
 archive/issue_comments_086666.json:
 ```json
 {
-    "body": "Attachment [trac_9232-lighting.patch](tarball://root/attachments/some-uuid/ticket9232/trac_9232-lighting.patch) by kcrisman created at 2011-03-29 13:36:54",
+    "body": "Attachment [trac_9232-lighting.patch](tarball://root/attachments/some-uuid/ticket9232/trac_9232-lighting.patch) by @kcrisman created at 2011-03-29 13:36:54",
     "created_at": "2011-03-29T13:36:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86666",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_9232-lighting.patch](tarball://root/attachments/some-uuid/ticket9232/trac_9232-lighting.patch) by kcrisman created at 2011-03-29 13:36:54
+Attachment [trac_9232-lighting.patch](tarball://root/attachments/some-uuid/ticket9232/trac_9232-lighting.patch) by @kcrisman created at 2011-03-29 13:36:54
 
 
 
@@ -1015,7 +1015,7 @@ archive/issue_comments_086667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86667",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1033,7 +1033,7 @@ archive/issue_comments_086668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86668",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1053,7 +1053,7 @@ archive/issue_comments_086669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86669",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1071,7 +1071,7 @@ archive/issue_comments_086670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86670",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1089,7 +1089,7 @@ archive/issue_comments_086671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86671",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -1107,7 +1107,7 @@ archive/issue_comments_086672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9232#issuecomment-86672",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

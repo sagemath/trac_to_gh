@@ -3,7 +3,7 @@
 archive/issues_009056.json:
 ```json
 {
-    "body": "Assignee: nborie\n\nCC:  sage-combinat nthiery\n\nKeywords: semiring\n\nAll is in the title, we want :\n\n\n```\nsage: SemiRings()\nsage: Category of semi rings\nsage: NN = NonNegativeIntegers()\nsage: NN.category()\nCategory of semi rings\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9056\n\n",
+    "body": "Assignee: nborie\n\nCC:  sage-combinat @nthiery\n\nKeywords: semiring\n\nAll is in the title, we want :\n\n\n```\nsage: SemiRings()\nsage: Category of semi rings\nsage: NN = NonNegativeIntegers()\nsage: NN.category()\nCategory of semi rings\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9056\n\n",
     "created_at": "2010-05-26T14:26:00Z",
     "labels": [
         "categories",
@@ -19,7 +19,7 @@ archive/issues_009056.json:
 ```
 Assignee: nborie
 
-CC:  sage-combinat nthiery
+CC:  sage-combinat @nthiery
 
 Keywords: semiring
 
@@ -87,7 +87,7 @@ archive/issue_comments_084011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9056#issuecomment-84011",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_084012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9056#issuecomment-84012",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_084013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9056#issuecomment-84013",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_084014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9056#issuecomment-84014",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_084020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9056#issuecomment-84020",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -333,7 +333,7 @@ archive/issue_comments_084023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9056#issuecomment-84023",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -352,7 +352,7 @@ archive/issue_comments_084024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9056#issuecomment-84024",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_084025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9056#issuecomment-84025",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_084026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9056#issuecomment-84026",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -440,7 +440,7 @@ archive/issue_comments_084027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9056#issuecomment-84027",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -486,16 +486,16 @@ trac_9056_semirings_category-review-nt.patch
 archive/issue_comments_084028.json:
 ```json
 {
-    "body": "Attachment [trac_9056-disable-llt-test.patch](tarball://root/attachments/some-uuid/ticket9056/trac_9056-disable-llt-test.patch) by mhansen created at 2010-06-09 03:06:45",
+    "body": "Attachment [trac_9056-disable-llt-test.patch](tarball://root/attachments/some-uuid/ticket9056/trac_9056-disable-llt-test.patch) by @mwhansen created at 2010-06-09 03:06:45",
     "created_at": "2010-06-09T03:06:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9056#issuecomment-84028",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_9056-disable-llt-test.patch](tarball://root/attachments/some-uuid/ticket9056/trac_9056-disable-llt-test.patch) by mhansen created at 2010-06-09 03:06:45
+Attachment [trac_9056-disable-llt-test.patch](tarball://root/attachments/some-uuid/ticket9056/trac_9056-disable-llt-test.patch) by @mwhansen created at 2010-06-09 03:06:45
 
 
 
@@ -509,7 +509,7 @@ archive/issue_comments_084029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9056#issuecomment-84029",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -527,7 +527,7 @@ archive/issue_comments_084030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9056#issuecomment-84030",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -548,7 +548,7 @@ archive/issue_comments_084031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9056#issuecomment-84031",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -566,7 +566,7 @@ archive/issue_comments_084032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9056#issuecomment-84032",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -584,7 +584,7 @@ archive/issue_comments_084033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9056#issuecomment-84033",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -653,7 +653,7 @@ archive/issue_comments_084035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9056#issuecomment-84035",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -678,7 +678,7 @@ archive/issue_comments_084036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9056#issuecomment-84036",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

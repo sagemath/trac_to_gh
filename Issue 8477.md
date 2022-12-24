@@ -14,7 +14,7 @@ archive/issues_008477.json:
     "title": "Force GNU make to build PALP serially",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8477",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: tbd
@@ -69,7 +69,7 @@ archive/issue_comments_076398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8477",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76398",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_076399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8477",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76399",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_076400.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8477",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76400",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_076403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8477",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76403",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -204,16 +204,16 @@ archive/issue_comments_076403.json:
 archive/issue_comments_076404.json:
 ```json
 {
-    "body": "Attachment [spkg_8477-palp_makefile.patch](tarball://root/attachments/some-uuid/ticket8477/spkg_8477-palp_makefile.patch) by mpatel created at 2010-03-12 17:58:02\n\nI've updated\n\n* http://sage.math.washington.edu/home/mpatel/trac/8477/palp-1.1.p2.spkg\n\nwith your suggestions, except for removing `CC=gcc`.  See the attached the patch, which also has a workaround for parallel spkg builds that seems to work on sage.math and bsd (at least).  The makefiles differ by\n\n```diff\n NEF_SRC= E_Poly.c Nefpart.c LG.c\n NEF_OBJ= $(NEF_SRC:.c=.o)\n \n-CC=cc \n+CC=gcc\n \n-CFLAGS=-O3 -fast\n+CFLAGS=-O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE\n # CFLAGS=-O3 -g                                      # add -g for GNU debugger gdb\n # CFLAGS=-Ofast -O3 -mips4 -n32                      # SGI / 32 bit\n # CFLAGS=-Ofast -O3 -mips4 -64                # SGI / 64 bit\n```\n\nLooking at the source, I think `-D_FILE_OFFSET_BITS=64` and `-D_LARGEFILE_SOURCE` are intended for 32-bit architectures.  But it appears the first definition is not used and the makefiles don't check the architecture.",
+    "body": "Attachment [spkg_8477-palp_makefile.patch](tarball://root/attachments/some-uuid/ticket8477/spkg_8477-palp_makefile.patch) by @qed777 created at 2010-03-12 17:58:02\n\nI've updated\n\n* http://sage.math.washington.edu/home/mpatel/trac/8477/palp-1.1.p2.spkg\n\nwith your suggestions, except for removing `CC=gcc`.  See the attached the patch, which also has a workaround for parallel spkg builds that seems to work on sage.math and bsd (at least).  The makefiles differ by\n\n```diff\n NEF_SRC= E_Poly.c Nefpart.c LG.c\n NEF_OBJ= $(NEF_SRC:.c=.o)\n \n-CC=cc \n+CC=gcc\n \n-CFLAGS=-O3 -fast\n+CFLAGS=-O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE\n # CFLAGS=-O3 -g                                      # add -g for GNU debugger gdb\n # CFLAGS=-Ofast -O3 -mips4 -n32                      # SGI / 32 bit\n # CFLAGS=-Ofast -O3 -mips4 -64                # SGI / 64 bit\n```\n\nLooking at the source, I think `-D_FILE_OFFSET_BITS=64` and `-D_LARGEFILE_SOURCE` are intended for 32-bit architectures.  But it appears the first definition is not used and the makefiles don't check the architecture.",
     "created_at": "2010-03-12T17:58:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8477",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76404",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [spkg_8477-palp_makefile.patch](tarball://root/attachments/some-uuid/ticket8477/spkg_8477-palp_makefile.patch) by mpatel created at 2010-03-12 17:58:02
+Attachment [spkg_8477-palp_makefile.patch](tarball://root/attachments/some-uuid/ticket8477/spkg_8477-palp_makefile.patch) by @qed777 created at 2010-03-12 17:58:02
 
 I've updated
 
@@ -249,7 +249,7 @@ archive/issue_comments_076405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8477",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76405",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_076406.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8477",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76406",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_076408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8477",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76408",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -378,7 +378,7 @@ archive/issue_comments_076411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8477",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76411",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -396,7 +396,7 @@ archive/issue_comments_076412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8477",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76412",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

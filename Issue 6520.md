@@ -3,7 +3,7 @@
 archive/issues_006520.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  sage-combinat roed simonking\n\nKeywords: cached function, weakref\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6520\n\n",
+    "body": "Assignee: cwitty\n\nCC:  sage-combinat @roed314 simonking\n\nKeywords: cached function, weakref\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6520\n\n",
     "created_at": "2009-07-13T06:16:28Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_006520.json:
     "title": "[with patch, needs work] Implement cached_function with weakref cache",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6520",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 Assignee: cwitty
 
-CC:  sage-combinat roed simonking
+CC:  sage-combinat @roed314 simonking
 
 Keywords: cached function, weakref
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6520
 archive/issue_comments_053154.json:
 ```json
 {
-    "body": "Changing assignee from cwitty to nthiery.",
+    "body": "Changing assignee from cwitty to @nthiery.",
     "created_at": "2009-07-13T06:22:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6520#issuecomment-53154",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Changing assignee from cwitty to nthiery.
+Changing assignee from cwitty to @nthiery.
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_053155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6520#issuecomment-53155",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_053156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6520#issuecomment-53156",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -90,16 +90,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_053157.json:
 ```json
 {
-    "body": "Attachment [trac_6520_weakref-cached-function-dr.patch](tarball://root/attachments/some-uuid/ticket6520/trac_6520_weakref-cached-function-dr.patch) by nthiery created at 2009-07-13 06:36:07",
+    "body": "Attachment [trac_6520_weakref-cached-function-dr.patch](tarball://root/attachments/some-uuid/ticket6520/trac_6520_weakref-cached-function-dr.patch) by @nthiery created at 2009-07-13 06:36:07",
     "created_at": "2009-07-13T06:36:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6520#issuecomment-53157",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_6520_weakref-cached-function-dr.patch](tarball://root/attachments/some-uuid/ticket6520/trac_6520_weakref-cached-function-dr.patch) by nthiery created at 2009-07-13 06:36:07
+Attachment [trac_6520_weakref-cached-function-dr.patch](tarball://root/attachments/some-uuid/ticket6520/trac_6520_weakref-cached-function-dr.patch) by @nthiery created at 2009-07-13 06:36:07
 
 
 
@@ -113,7 +113,7 @@ archive/issue_comments_053158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6520#issuecomment-53158",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_053159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6520#issuecomment-53159",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_053160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6520#issuecomment-53160",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_053161.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6520#issuecomment-53161",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_053162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6520#issuecomment-53162",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_053163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6520#issuecomment-53163",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

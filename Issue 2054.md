@@ -3,7 +3,7 @@
 archive/issues_002054.json:
 ```json
 {
-    "body": "Assignee: was\n\nIf one uses the Python profiler through Sage's Ipython command line, the input line is not preparsed, which is potentially very confusing.  E.g., this should print 256:\n\n\n```\nsage: %prun print 2^8\n10\n         2 function calls in 0.000 CPU seconds\n\n   Ordered by: internal time\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        1    0.000    0.000    0.000    0.000 <string>:1(<module>)\n        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}\n\nsage: \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2054\n\n",
+    "body": "Assignee: @williamstein\n\nIf one uses the Python profiler through Sage's Ipython command line, the input line is not preparsed, which is potentially very confusing.  E.g., this should print 256:\n\n\n```\nsage: %prun print 2^8\n10\n         2 function calls in 0.000 CPU seconds\n\n   Ordered by: internal time\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        1    0.000    0.000    0.000    0.000 <string>:1(<module>)\n        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}\n\nsage: \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2054\n\n",
     "created_at": "2008-02-05T14:31:08Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_002054.json:
     "title": "prun is not preparsed -- potentially very confusing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2054",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 If one uses the Python profiler through Sage's Ipython command line, the input line is not preparsed, which is potentially very confusing.  E.g., this should print 256:
 
@@ -53,7 +53,7 @@ archive/issue_comments_013296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2054#issuecomment-13296",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -97,16 +97,16 @@ f
 archive/issue_comments_013297.json:
 ```json
 {
-    "body": "Attachment [scripts_2054.patch](tarball://root/attachments/some-uuid/ticket2054/scripts_2054.patch) by mhansen created at 2010-02-02 19:53:15",
+    "body": "Attachment [scripts_2054.patch](tarball://root/attachments/some-uuid/ticket2054/scripts_2054.patch) by @mwhansen created at 2010-02-02 19:53:15",
     "created_at": "2010-02-02T19:53:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2054#issuecomment-13297",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [scripts_2054.patch](tarball://root/attachments/some-uuid/ticket2054/scripts_2054.patch) by mhansen created at 2010-02-02 19:53:15
+Attachment [scripts_2054.patch](tarball://root/attachments/some-uuid/ticket2054/scripts_2054.patch) by @mwhansen created at 2010-02-02 19:53:15
 
 
 
@@ -120,7 +120,7 @@ archive/issue_comments_013298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2054#issuecomment-13298",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_013300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2054#issuecomment-13300",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_013304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2054#issuecomment-13304",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_013305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2054#issuecomment-13305",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

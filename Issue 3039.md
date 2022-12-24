@@ -3,7 +3,7 @@
 archive/issues_003039.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3039\n\n",
+    "body": "Assignee: @timabbott\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3039\n\n",
     "created_at": "2008-04-27T02:36:29Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_003039.json:
     "title": "[with patch; needs review] Improve auto-generated version numbers for Debian packages",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3039",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3039
 archive/issue_comments_020910.json:
 ```json
 {
-    "body": "Attachment [sage-debsource-versions.patch](tarball://root/attachments/some-uuid/ticket3039/sage-debsource-versions.patch) by tabbott created at 2008-04-27 02:36:34",
+    "body": "Attachment [sage-debsource-versions.patch](tarball://root/attachments/some-uuid/ticket3039/sage-debsource-versions.patch) by @timabbott created at 2008-04-27 02:36:34",
     "created_at": "2008-04-27T02:36:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3039#issuecomment-20910",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [sage-debsource-versions.patch](tarball://root/attachments/some-uuid/ticket3039/sage-debsource-versions.patch) by tabbott created at 2008-04-27 02:36:34
+Attachment [sage-debsource-versions.patch](tarball://root/attachments/some-uuid/ticket3039/sage-debsource-versions.patch) by @timabbott created at 2008-04-27 02:36:34
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_020911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3039#issuecomment-20911",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 

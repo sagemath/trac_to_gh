@@ -14,7 +14,7 @@ archive/issues_006602.json:
     "title": "[with SPKG, need review] GLPK for SAGE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6602",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jkantor
@@ -43,7 +43,7 @@ archive/issue_comments_054032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6602#issuecomment-54032",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_054033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6602#issuecomment-54033",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_054037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6602#issuecomment-54037",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_054039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6602#issuecomment-54039",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_054040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6602#issuecomment-54040",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_054041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6602#issuecomment-54041",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_054042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6602#issuecomment-54042",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

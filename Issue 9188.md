@@ -3,7 +3,7 @@
 archive/issues_009188.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  novoselt\n\nIn general, `lattice_polytope._embedding_matrix` is not orthogonal. But `facet_normal()` implicitly makes this assumption by embedding the normals (which live in the dual vector space) by the transpose of the `_embedding_matrix`. \n\nHere is an example of the incorrect result:\n\n```\nsage: lp = LatticePolytope(matrix([[1,1,-1,0],[1,-1,-1,0],[1,1,1,0],[3,3,3,0]]))\nsage: lp.vertices()\n[ 1  1 -1  0]\n[ 1 -1 -1  0]\n[ 1  1  1  0]\n[ 3  3  3  0]\nsage: lp.facet_normal(0)\n(-1, 0, 1, 3)\nsage: lp.vertices() * lp.facet_normal(0)\n(-2, -2, 0, 0)\nsage: lp.facet_constant(0)\n-9\n```\n\nIf `lp.facet_normal(0)` would define a facet then its equation would be satisfied at 3 out of 4 vertices. \n\nThe attached patch fixes this issue. A scale factor for the dual embedding is introduced to keep the facet normal coordinates integral. Moreover, a suitable doctest is added.\n\nNOTE: This bug impacts the toric variety code under development in #8986, #8987:\n\n```\nsage: c = Cone([(1,0,0,0),(0,1,0,0),(0,0,1,0)])\nsage: c.faces()\n((0-dimensional face of 3-dimensional cone,), (1-dimensional face of 3-dimensional cone, 1-dimensional face of 3-dimensional cone, 1-dimensional face of 3-dimensional cone), (2-dimensional face of 3-dimensional cone, 2-dimensional face of 3-dimensional cone, 2-dimensional face of 3-dimensional cone), (3-dimensional face of 3-dimensional cone,))\nsage: c = Cone([(1,1,1,3),(1,-1,1,3),(-1,-1,1,3)])\nsage: c.faces()\n((0-dimensional face of 3-dimensional cone,), (2-dimensional face of 3-dimensional cone,), (3-dimensional face of 3-dimensional cone,))\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9188\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @novoselt\n\nIn general, `lattice_polytope._embedding_matrix` is not orthogonal. But `facet_normal()` implicitly makes this assumption by embedding the normals (which live in the dual vector space) by the transpose of the `_embedding_matrix`. \n\nHere is an example of the incorrect result:\n\n```\nsage: lp = LatticePolytope(matrix([[1,1,-1,0],[1,-1,-1,0],[1,1,1,0],[3,3,3,0]]))\nsage: lp.vertices()\n[ 1  1 -1  0]\n[ 1 -1 -1  0]\n[ 1  1  1  0]\n[ 3  3  3  0]\nsage: lp.facet_normal(0)\n(-1, 0, 1, 3)\nsage: lp.vertices() * lp.facet_normal(0)\n(-2, -2, 0, 0)\nsage: lp.facet_constant(0)\n-9\n```\n\nIf `lp.facet_normal(0)` would define a facet then its equation would be satisfied at 3 out of 4 vertices. \n\nThe attached patch fixes this issue. A scale factor for the dual embedding is introduced to keep the facet normal coordinates integral. Moreover, a suitable doctest is added.\n\nNOTE: This bug impacts the toric variety code under development in #8986, #8987:\n\n```\nsage: c = Cone([(1,0,0,0),(0,1,0,0),(0,0,1,0)])\nsage: c.faces()\n((0-dimensional face of 3-dimensional cone,), (1-dimensional face of 3-dimensional cone, 1-dimensional face of 3-dimensional cone, 1-dimensional face of 3-dimensional cone), (2-dimensional face of 3-dimensional cone, 2-dimensional face of 3-dimensional cone, 2-dimensional face of 3-dimensional cone), (3-dimensional face of 3-dimensional cone,))\nsage: c = Cone([(1,1,1,3),(1,-1,1,3),(-1,-1,1,3)])\nsage: c.faces()\n((0-dimensional face of 3-dimensional cone,), (2-dimensional face of 3-dimensional cone,), (3-dimensional face of 3-dimensional cone,))\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9188\n\n",
     "created_at": "2010-06-08T10:39:56Z",
     "labels": [
         "geometry",
@@ -14,12 +14,12 @@ archive/issues_009188.json:
     "title": "lattice_polytope.facet_normal bug with polytopes of less that full dimension",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9188",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 Assignee: mhampton
 
-CC:  novoselt
+CC:  @novoselt
 
 In general, `lattice_polytope._embedding_matrix` is not orthogonal. But `facet_normal()` implicitly makes this assumption by embedding the normals (which live in the dual vector space) by the transpose of the `_embedding_matrix`. 
 
@@ -73,7 +73,7 @@ archive/issue_comments_085974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9188#issuecomment-85974",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_085975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9188#issuecomment-85975",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -104,16 +104,16 @@ I missed two doctests that were failing; Some of the old doctests actually did g
 archive/issue_comments_085976.json:
 ```json
 {
-    "body": "Changing assignee from mhampton to novoselt.",
+    "body": "Changing assignee from mhampton to @novoselt.",
     "created_at": "2010-06-08T15:08:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9188#issuecomment-85976",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Changing assignee from mhampton to novoselt.
+Changing assignee from mhampton to @novoselt.
 
 
 
@@ -127,7 +127,7 @@ archive/issue_comments_085977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9188#issuecomment-85977",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_085978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9188#issuecomment-85978",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -158,16 +158,16 @@ I forgot one more transposition of a matrix %-)  This version should be correct 
 archive/issue_comments_085979.json:
 ```json
 {
-    "body": "Attachment [trac_9188_fix_facet_normal.patch](tarball://root/attachments/some-uuid/ticket9188/trac_9188_fix_facet_normal.patch) by vbraun created at 2010-06-08 18:45:30\n\nUpdated patch",
+    "body": "Attachment [trac_9188_fix_facet_normal.patch](tarball://root/attachments/some-uuid/ticket9188/trac_9188_fix_facet_normal.patch) by @vbraun created at 2010-06-08 18:45:30\n\nUpdated patch",
     "created_at": "2010-06-08T18:45:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9188#issuecomment-85979",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [trac_9188_fix_facet_normal.patch](tarball://root/attachments/some-uuid/ticket9188/trac_9188_fix_facet_normal.patch) by vbraun created at 2010-06-08 18:45:30
+Attachment [trac_9188_fix_facet_normal.patch](tarball://root/attachments/some-uuid/ticket9188/trac_9188_fix_facet_normal.patch) by @vbraun created at 2010-06-08 18:45:30
 
 Updated patch
 
@@ -183,7 +183,7 @@ archive/issue_comments_085980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9188#issuecomment-85980",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_085981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9188#issuecomment-85981",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -214,16 +214,16 @@ Apply on top of the original patch.
 archive/issue_comments_085982.json:
 ```json
 {
-    "body": "Attachment [trac_9188_fix_facet_normal_reviewer.patch](tarball://root/attachments/some-uuid/ticket9188/trac_9188_fix_facet_normal_reviewer.patch) by novoselt created at 2010-06-08 20:55:14\n\nOK, my patch looks big, but the only real change to the original is taking the absolute value of the dual scaling factor, so that normals remain inner.\n\nIn addition I (hopefully) made doctests more clear, since they do appear in the documentation. Polytopes are now created using coordinates of points with all the necessary transpositions after that. I also made doctest lines shorter for better looks of the documentation.\n\nI have changed \"parallel\" to \"orthogonal to integer kernel\" in the description of normals (and now I do remember that I didn't like this \"parallel\" when I wrote it...).\n\nIf you are fine with all these changes, I will switch it to positive review. Thank you for catching this bug!",
+    "body": "Attachment [trac_9188_fix_facet_normal_reviewer.patch](tarball://root/attachments/some-uuid/ticket9188/trac_9188_fix_facet_normal_reviewer.patch) by @novoselt created at 2010-06-08 20:55:14\n\nOK, my patch looks big, but the only real change to the original is taking the absolute value of the dual scaling factor, so that normals remain inner.\n\nIn addition I (hopefully) made doctests more clear, since they do appear in the documentation. Polytopes are now created using coordinates of points with all the necessary transpositions after that. I also made doctest lines shorter for better looks of the documentation.\n\nI have changed \"parallel\" to \"orthogonal to integer kernel\" in the description of normals (and now I do remember that I didn't like this \"parallel\" when I wrote it...).\n\nIf you are fine with all these changes, I will switch it to positive review. Thank you for catching this bug!",
     "created_at": "2010-06-08T20:55:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9188#issuecomment-85982",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_9188_fix_facet_normal_reviewer.patch](tarball://root/attachments/some-uuid/ticket9188/trac_9188_fix_facet_normal_reviewer.patch) by novoselt created at 2010-06-08 20:55:14
+Attachment [trac_9188_fix_facet_normal_reviewer.patch](tarball://root/attachments/some-uuid/ticket9188/trac_9188_fix_facet_normal_reviewer.patch) by @novoselt created at 2010-06-08 20:55:14
 
 OK, my patch looks big, but the only real change to the original is taking the absolute value of the dual scaling factor, so that normals remain inner.
 
@@ -245,7 +245,7 @@ archive/issue_comments_085983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9188#issuecomment-85983",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_085984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9188#issuecomment-85984",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_085985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9188#issuecomment-85985",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_085986.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9188#issuecomment-85986",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_007910.json:
     "title": "mpir.1.2.2 fails to build on Open Solaris 06/2009 in VirtualBox no ABI=64",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7910",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: GeorgSWeber
@@ -185,7 +185,7 @@ archive/issue_comments_068788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7910",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7910#issuecomment-68788",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_068789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7910",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7910#issuecomment-68789",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -326,7 +326,7 @@ archive/issue_comments_068790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7910",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7910#issuecomment-68790",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_068791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7910",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7910#issuecomment-68791",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -415,7 +415,7 @@ archive/issue_comments_068792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7910",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7910#issuecomment-68792",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -450,16 +450,16 @@ I suspect a hack to the configure script directly should work. I'd just make it 
 archive/issue_comments_068794.json:
 ```json
 {
-    "body": "Changing assignee from GeorgSWeber to jdemeyer.",
+    "body": "Changing assignee from GeorgSWeber to @jdemeyer.",
     "created_at": "2015-09-08T12:48:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7910",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7910#issuecomment-68794",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Changing assignee from GeorgSWeber to jdemeyer.
+Changing assignee from GeorgSWeber to @jdemeyer.
 
 
 
@@ -473,7 +473,7 @@ archive/issue_comments_068795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7910",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7910#issuecomment-68795",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -491,7 +491,7 @@ archive/issue_comments_068796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7910",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7910#issuecomment-68796",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -509,7 +509,7 @@ archive/issue_comments_068797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7910",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7910#issuecomment-68797",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

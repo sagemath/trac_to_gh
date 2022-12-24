@@ -105,16 +105,16 @@ Michael
 archive/issue_comments_032208.json:
 ```json
 {
-    "body": "Attachment [sage-4377.patch](tarball://root/attachments/some-uuid/ticket4377/sage-4377.patch) by was created at 2008-10-28 15:49:53",
+    "body": "Attachment [sage-4377.patch](tarball://root/attachments/some-uuid/ticket4377/sage-4377.patch) by @williamstein created at 2008-10-28 15:49:53",
     "created_at": "2008-10-28T15:49:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4377#issuecomment-32208",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-4377.patch](tarball://root/attachments/some-uuid/ticket4377/sage-4377.patch) by was created at 2008-10-28 15:49:53
+Attachment [sage-4377.patch](tarball://root/attachments/some-uuid/ticket4377/sage-4377.patch) by @williamstein created at 2008-10-28 15:49:53
 
 
 

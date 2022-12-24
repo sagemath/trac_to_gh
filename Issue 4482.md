@@ -3,7 +3,7 @@
 archive/issues_004482.json:
 ```json
 {
-    "body": "Assignee: was\n\n#4395 fixes a similar issue, but the following still fails after applying that patch:\n\n```\nsage -t -long -optional devel/sage/sage/rings/polynomial/pbori.pyx\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.final/tmp/pbori.py\", line 988:\n    sage: B._magma_() # optional requires magma\nExpected:\n    Affine Algebra of rank 3 over GF(2)\n    Lexicographical Order\n    Variables: x, y, z\n    Quotient relations:\n    [\n    x^2 + x,\n    y^2 + y,\n    z^2 + z\n    ]\nGot:\n    Affine Algebra of rank 3 over GF(2)\n    Lexicographical Order\n    Variables: x, y, z\n    Quotient relations:\n    [\n    0,\n    0,\n    0\n    ]\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.final/tmp/pbori.py\", line 1024:\n    sage: B._magma_() # optional requires magma, indirect doctest\nExpected:\n    Affine Algebra of rank 3 over GF(2)\n    Lexicographical Order\n    Variables: x, y, z\n    Quotient relations:\n    [\n    x^2 + x,\n    y^2 + y,\n    z^2 + z\n    ]\nGot:\n    Affine Algebra of rank 3 over GF(2)\n    Lexicographical Order\n    Variables: x, y, z\n    Quotient relations:\n    [\n    0,\n    0,\n    0\n    ]\n**********************************************************************\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4482\n\n",
+    "body": "Assignee: @williamstein\n\n#4395 fixes a similar issue, but the following still fails after applying that patch:\n\n```\nsage -t -long -optional devel/sage/sage/rings/polynomial/pbori.pyx\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.final/tmp/pbori.py\", line 988:\n    sage: B._magma_() # optional requires magma\nExpected:\n    Affine Algebra of rank 3 over GF(2)\n    Lexicographical Order\n    Variables: x, y, z\n    Quotient relations:\n    [\n    x^2 + x,\n    y^2 + y,\n    z^2 + z\n    ]\nGot:\n    Affine Algebra of rank 3 over GF(2)\n    Lexicographical Order\n    Variables: x, y, z\n    Quotient relations:\n    [\n    0,\n    0,\n    0\n    ]\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.final/tmp/pbori.py\", line 1024:\n    sage: B._magma_() # optional requires magma, indirect doctest\nExpected:\n    Affine Algebra of rank 3 over GF(2)\n    Lexicographical Order\n    Variables: x, y, z\n    Quotient relations:\n    [\n    x^2 + x,\n    y^2 + y,\n    z^2 + z\n    ]\nGot:\n    Affine Algebra of rank 3 over GF(2)\n    Lexicographical Order\n    Variables: x, y, z\n    Quotient relations:\n    [\n    0,\n    0,\n    0\n    ]\n**********************************************************************\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4482\n\n",
     "created_at": "2008-11-09T17:37:22Z",
     "labels": [
         "doctest coverage",
@@ -17,7 +17,7 @@ archive/issues_004482.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 #4395 fixes a similar issue, but the following still fails after applying that patch:
 

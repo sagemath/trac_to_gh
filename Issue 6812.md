@@ -60,7 +60,7 @@ Changing component from algebra to combinatorics.
 archive/issue_comments_056070.json:
 ```json
 {
-    "body": "Changing assignee from tbd to mhansen.",
+    "body": "Changing assignee from tbd to @mwhansen.",
     "created_at": "2009-08-23T08:09:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_056070.json:
 }
 ```
 
-Changing assignee from tbd to mhansen.
+Changing assignee from tbd to @mwhansen.
 
 
 
@@ -137,7 +137,7 @@ This code stay really strongly connected to the Invariant theory and connected w
 archive/issue_comments_056074.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to nborie.",
+    "body": "Changing assignee from @mwhansen to nborie.",
     "created_at": "2009-09-04T11:52:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
@@ -146,7 +146,7 @@ archive/issue_comments_056074.json:
 }
 ```
 
-Changing assignee from mhansen to nborie.
+Changing assignee from @mwhansen to nborie.
 
 
 
@@ -178,7 +178,7 @@ archive/issue_comments_056076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56076",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_056077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56077",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -393,7 +393,7 @@ archive/issue_comments_056087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56087",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -545,7 +545,7 @@ archive/issue_comments_056094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56094",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -563,7 +563,7 @@ archive/issue_comments_056095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56095",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -733,7 +733,7 @@ archive/issue_comments_056101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56101",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1117,7 +1117,7 @@ archive/issue_comments_056119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56119",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1269,7 +1269,7 @@ archive/issue_comments_056127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56127",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1311,7 +1311,7 @@ archive/issue_comments_056129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56129",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1382,7 +1382,7 @@ archive/issue_comments_056132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56132",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1451,7 +1451,7 @@ archive/issue_comments_056134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56134",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1469,7 +1469,7 @@ archive/issue_comments_056135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56135",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1487,7 +1487,7 @@ archive/issue_comments_056136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56136",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1526,7 +1526,7 @@ archive/issue_comments_056138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56138",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1667,7 +1667,7 @@ archive/issue_comments_056144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56144",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1722,7 +1722,7 @@ archive/issue_comments_056146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56146",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1782,7 +1782,7 @@ archive/issue_comments_056148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56148",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1800,7 +1800,7 @@ archive/issue_comments_056149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56149",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -1823,7 +1823,7 @@ archive/issue_comments_056150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56150",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1859,7 +1859,7 @@ archive/issue_comments_056151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56151",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1884,7 +1884,7 @@ archive/issue_comments_056152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56152",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1902,7 +1902,7 @@ archive/issue_comments_056153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56153",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1921,7 +1921,7 @@ archive/issue_comments_056154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56154",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1942,7 +1942,7 @@ archive/issue_comments_056155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56155",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1964,7 +1964,7 @@ archive/issue_comments_056156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56156",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -2006,7 +2006,7 @@ archive/issue_comments_056157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56157",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -2076,7 +2076,7 @@ archive/issue_comments_056158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56158",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -2259,7 +2259,7 @@ archive/issue_comments_056163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56163",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -2282,7 +2282,7 @@ archive/issue_comments_056164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56164",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -2313,7 +2313,7 @@ archive/issue_comments_056165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56165",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -2340,7 +2340,7 @@ archive/issue_comments_056166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56166",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -2468,7 +2468,7 @@ archive/issue_comments_056168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56168",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -2571,7 +2571,7 @@ archive/issue_comments_056170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56170",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -2611,7 +2611,7 @@ archive/issue_comments_056171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56171",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -2624,16 +2624,16 @@ Speed-ups and doc fixes
 archive/issue_comments_056172.json:
 ```json
 {
-    "body": "Attachment [trac_6812_reviewer.patch](tarball://root/attachments/some-uuid/ticket6812/trac_6812_reviewer.patch) by SimonKing created at 2012-05-25 22:09:35\n\nMy patch is posted.\n\nI hesitate to directly give it a positive review, since I somehow think that my patch is not just a reviewer patch (in spite of its name), because it changes the code non-trivially. So, please have a closer look on it!\n\nApart from the code changes, I went through the doc strings and tried to fix some grammar. But I am not a native speaker - take my changes with a grain of salt...\n\nApply trac_6812_integer_vectors_mod_permgroup.patch trac_6812_reviewer.patch]",
+    "body": "Attachment [trac_6812_reviewer.patch](tarball://root/attachments/some-uuid/ticket6812/trac_6812_reviewer.patch) by @simon-king-jena created at 2012-05-25 22:09:35\n\nMy patch is posted.\n\nI hesitate to directly give it a positive review, since I somehow think that my patch is not just a reviewer patch (in spite of its name), because it changes the code non-trivially. So, please have a closer look on it!\n\nApart from the code changes, I went through the doc strings and tried to fix some grammar. But I am not a native speaker - take my changes with a grain of salt...\n\nApply trac_6812_integer_vectors_mod_permgroup.patch trac_6812_reviewer.patch]",
     "created_at": "2012-05-25T22:09:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56172",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [trac_6812_reviewer.patch](tarball://root/attachments/some-uuid/ticket6812/trac_6812_reviewer.patch) by SimonKing created at 2012-05-25 22:09:35
+Attachment [trac_6812_reviewer.patch](tarball://root/attachments/some-uuid/ticket6812/trac_6812_reviewer.patch) by @simon-king-jena created at 2012-05-25 22:09:35
 
 My patch is posted.
 
@@ -2655,7 +2655,7 @@ archive/issue_comments_056173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56173",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -2675,7 +2675,7 @@ archive/issue_comments_056174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56174",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -2688,16 +2688,16 @@ Fixing a corner case, adding a doc test
 archive/issue_comments_056175.json:
 ```json
 {
-    "body": "Attachment [trac_6812_reviewer2.patch](tarball://root/attachments/some-uuid/ticket6812/trac_6812_reviewer2.patch) by SimonKing created at 2012-05-26 07:26:20\n\nI posted an additional reviewer patch. Namely, in my first patch, I forgot to add a doctest (shame on me), and consequently the code contained a bug: Integer vectores `[1,2,3,1]` and `[1,2,3]` would have compared equal. That' fixed and tested with the second reviewer patch.\n\nFor the record: I give a positive review to Nicolas' patch. My first reviewer patch needs review, I believe. The second patch is trivial enough to be considered a \"real\" reviewer patch.\n\nApply trac_6812_integer_vectors_mod_permgroup.patch trac_6812_reviewer.patch trac_6812_reviewer2.patch",
+    "body": "Attachment [trac_6812_reviewer2.patch](tarball://root/attachments/some-uuid/ticket6812/trac_6812_reviewer2.patch) by @simon-king-jena created at 2012-05-26 07:26:20\n\nI posted an additional reviewer patch. Namely, in my first patch, I forgot to add a doctest (shame on me), and consequently the code contained a bug: Integer vectores `[1,2,3,1]` and `[1,2,3]` would have compared equal. That' fixed and tested with the second reviewer patch.\n\nFor the record: I give a positive review to Nicolas' patch. My first reviewer patch needs review, I believe. The second patch is trivial enough to be considered a \"real\" reviewer patch.\n\nApply trac_6812_integer_vectors_mod_permgroup.patch trac_6812_reviewer.patch trac_6812_reviewer2.patch",
     "created_at": "2012-05-26T07:26:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56175",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [trac_6812_reviewer2.patch](tarball://root/attachments/some-uuid/ticket6812/trac_6812_reviewer2.patch) by SimonKing created at 2012-05-26 07:26:20
+Attachment [trac_6812_reviewer2.patch](tarball://root/attachments/some-uuid/ticket6812/trac_6812_reviewer2.patch) by @simon-king-jena created at 2012-05-26 07:26:20
 
 I posted an additional reviewer patch. Namely, in my first patch, I forgot to add a doctest (shame on me), and consequently the code contained a bug: Integer vectores `[1,2,3,1]` and `[1,2,3]` would have compared equal. That' fixed and tested with the second reviewer patch.
 
@@ -2781,7 +2781,7 @@ archive/issue_comments_056179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56179",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2801,16 +2801,16 @@ Also, can you fix this?
 archive/issue_comments_056180.json:
 ```json
 {
-    "body": "Attachment [trac_6812-reviewer.patch](tarball://root/attachments/some-uuid/ticket6812/trac_6812-reviewer.patch) by kcrisman created at 2012-05-26 15:41:05\n\nPatchbot apply trac_6812_integer_vectors_mod_permgroup-final.patch and trac_6812-reviewer.patch.",
+    "body": "Attachment [trac_6812-reviewer.patch](tarball://root/attachments/some-uuid/ticket6812/trac_6812-reviewer.patch) by @kcrisman created at 2012-05-26 15:41:05\n\nPatchbot apply trac_6812_integer_vectors_mod_permgroup-final.patch and trac_6812-reviewer.patch.",
     "created_at": "2012-05-26T15:41:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56180",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6812-reviewer.patch](tarball://root/attachments/some-uuid/ticket6812/trac_6812-reviewer.patch) by kcrisman created at 2012-05-26 15:41:05
+Attachment [trac_6812-reviewer.patch](tarball://root/attachments/some-uuid/ticket6812/trac_6812-reviewer.patch) by @kcrisman created at 2012-05-26 15:41:05
 
 Patchbot apply trac_6812_integer_vectors_mod_permgroup-final.patch and trac_6812-reviewer.patch.
 
@@ -2848,7 +2848,7 @@ archive/issue_comments_056182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56182",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2866,7 +2866,7 @@ archive/issue_comments_056183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6812#issuecomment-56183",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

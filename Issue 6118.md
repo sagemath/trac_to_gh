@@ -14,7 +14,7 @@ archive/issues_006118.json:
     "title": "integer shifting slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6118",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6118
 archive/issue_comments_048887.json:
 ```json
 {
-    "body": "Attachment [6118-integer-shift.patch](tarball://root/attachments/some-uuid/ticket6118/6118-integer-shift.patch) by robertwb created at 2009-05-22 00:39:11",
+    "body": "Attachment [6118-integer-shift.patch](tarball://root/attachments/some-uuid/ticket6118/6118-integer-shift.patch) by @robertwb created at 2009-05-22 00:39:11",
     "created_at": "2009-05-22T00:39:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48887",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [6118-integer-shift.patch](tarball://root/attachments/some-uuid/ticket6118/6118-integer-shift.patch) by robertwb created at 2009-05-22 00:39:11
+Attachment [6118-integer-shift.patch](tarball://root/attachments/some-uuid/ticket6118/6118-integer-shift.patch) by @robertwb created at 2009-05-22 00:39:11
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_048888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48888",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_048889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48889",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_048890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48890",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_048891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48891",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_048892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48892",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -272,16 +272,16 @@ I'm (pleasantly) surprised making it a cpdef function didn't slow it down. I don
 archive/issue_comments_048893.json:
 ```json
 {
-    "body": "Attachment [trac-6118-pt2.patch](tarball://root/attachments/some-uuid/ticket6118/trac-6118-pt2.patch) by craigcitro created at 2009-06-20 08:38:50\n\nI've added a new version of the second patch, which mostly just adds comments and removes the inconsistencies with things like `_lshift` and `_rshift_`. \n\nIn particular, I've come around to Robert's point that we want to speed up the `Integer << int` and `Integer >> int` cases the most -- I just did a `search_src('>>')`, and there seems to be a lot of code that shifts by literals (which will be Python `int`s). I also removed the one extra error check in `_shift_helper` and made a note about it. \n\nOne last question, though -- do we really need the case where `y = ZZ(y)` raises a `ValueError`? Looking at the `Integer` constructor, this seems to only happen when we're given a string in a base larger than 36; in this case, the code in the `except` clause won't work, anyway. So are there other cases where this is used that I'm not thinking of? (It's obviously not too important, but I'm curious.)",
+    "body": "Attachment [trac-6118-pt2.patch](tarball://root/attachments/some-uuid/ticket6118/trac-6118-pt2.patch) by @craigcitro created at 2009-06-20 08:38:50\n\nI've added a new version of the second patch, which mostly just adds comments and removes the inconsistencies with things like `_lshift` and `_rshift_`. \n\nIn particular, I've come around to Robert's point that we want to speed up the `Integer << int` and `Integer >> int` cases the most -- I just did a `search_src('>>')`, and there seems to be a lot of code that shifts by literals (which will be Python `int`s). I also removed the one extra error check in `_shift_helper` and made a note about it. \n\nOne last question, though -- do we really need the case where `y = ZZ(y)` raises a `ValueError`? Looking at the `Integer` constructor, this seems to only happen when we're given a string in a base larger than 36; in this case, the code in the `except` clause won't work, anyway. So are there other cases where this is used that I'm not thinking of? (It's obviously not too important, but I'm curious.)",
     "created_at": "2009-06-20T08:38:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48893",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-6118-pt2.patch](tarball://root/attachments/some-uuid/ticket6118/trac-6118-pt2.patch) by craigcitro created at 2009-06-20 08:38:50
+Attachment [trac-6118-pt2.patch](tarball://root/attachments/some-uuid/ticket6118/trac-6118-pt2.patch) by @craigcitro created at 2009-06-20 08:38:50
 
 I've added a new version of the second patch, which mostly just adds comments and removes the inconsistencies with things like `_lshift` and `_rshift_`. 
 
@@ -301,7 +301,7 @@ archive/issue_comments_048894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48894",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -358,7 +358,7 @@ archive/issue_comments_048896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48896",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -376,7 +376,7 @@ archive/issue_comments_048897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48897",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -394,7 +394,7 @@ archive/issue_comments_048898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48898",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -412,7 +412,7 @@ archive/issue_comments_048899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48899",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

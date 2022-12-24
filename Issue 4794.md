@@ -3,7 +3,7 @@
 archive/issues_004794.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  ncalexan boothby craigcitro\n\nThe following spkgs depend on pari and need to be bumped:\n\n```\n * genus2reduction\n * lcalc \n * eclib\n```\n\nThe Sage library also depends on pari, but is linked dynamically. Note that once this ticket is solved we should also fix #1891. For update to lcalc see #4793, for eclib see #3358.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4794\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @ncalexan boothby @craigcitro\n\nThe following spkgs depend on pari and need to be bumped:\n\n```\n * genus2reduction\n * lcalc \n * eclib\n```\n\nThe Sage library also depends on pari, but is linked dynamically. Note that once this ticket is solved we should also fix #1891. For update to lcalc see #4793, for eclib see #3358.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4794\n\n",
     "created_at": "2008-12-14T07:45:53Z",
     "labels": [
         "packages: standard",
@@ -19,7 +19,7 @@ archive/issues_004794.json:
 ```
 Assignee: mabshoff
 
-CC:  ncalexan boothby craigcitro
+CC:  @ncalexan boothby @craigcitro
 
 The following spkgs depend on pari and need to be bumped:
 
@@ -198,7 +198,7 @@ archive/issue_comments_036348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4794#issuecomment-36348",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_036349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4794#issuecomment-36349",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_036350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4794#issuecomment-36350",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_036351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4794#issuecomment-36351",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_036352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4794#issuecomment-36352",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

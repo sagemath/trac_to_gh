@@ -14,7 +14,7 @@ archive/issues_008689.json:
     "title": "sage notebook: add mention of cell:// for referencing data to notebook help page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8689",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jason, was
@@ -37,7 +37,7 @@ archive/issue_comments_079165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8689",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8689#issuecomment-79165",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_079166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8689",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8689#issuecomment-79166",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_079167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8689",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8689#issuecomment-79167",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_079168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8689",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8689#issuecomment-79168",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_079169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8689",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8689#issuecomment-79169",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

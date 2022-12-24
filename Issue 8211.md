@@ -3,7 +3,7 @@
 archive/issues_008211.json:
 ```json
 {
-    "body": "Assignee: malb\n\nKeywords: RealField, PolynomialRing\n\nas reported on sage-devel [Segfault: Polynomials over RealField]\nsage: P.<x> = PolynomialRing(RealField()) \nsage: P(0)*P(0)+P(0) \nProgram received signal SIGSEGV, Segmentation fault. \n\nit can be traced down to a bug in _mul_ that computes the degree\nof the polynomial P(0)*P(0) wrongly (-2 istead of -1 !)\nPatch is trivial, and attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8211\n\n",
+    "body": "Assignee: @malb\n\nKeywords: RealField, PolynomialRing\n\nas reported on sage-devel [Segfault: Polynomials over RealField]\nsage: P.<x> = PolynomialRing(RealField()) \nsage: P(0)*P(0)+P(0) \nProgram received signal SIGSEGV, Segmentation fault. \n\nit can be traced down to a bug in _mul_ that computes the degree\nof the polynomial P(0)*P(0) wrongly (-2 istead of -1 !)\nPatch is trivial, and attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8211\n\n",
     "created_at": "2010-02-08T05:32:29Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_008211.json:
     "title": "bug in multiplication of polynomials over RR",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8211",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Keywords: RealField, PolynomialRing
 
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8211
 archive/issue_comments_072411.json:
 ```json
 {
-    "body": "Attachment [trac-8211.patch](tarball://root/attachments/some-uuid/ticket8211/trac-8211.patch) by dimpase created at 2010-02-08 05:34:32",
+    "body": "Attachment [trac-8211.patch](tarball://root/attachments/some-uuid/ticket8211/trac-8211.patch) by @dimpase created at 2010-02-08 05:34:32",
     "created_at": "2010-02-08T05:34:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8211#issuecomment-72411",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
-Attachment [trac-8211.patch](tarball://root/attachments/some-uuid/ticket8211/trac-8211.patch) by dimpase created at 2010-02-08 05:34:32
+Attachment [trac-8211.patch](tarball://root/attachments/some-uuid/ticket8211/trac-8211.patch) by @dimpase created at 2010-02-08 05:34:32
 
 
 
@@ -64,7 +64,7 @@ archive/issue_comments_072412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8211#issuecomment-72412",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_072413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8211#issuecomment-72413",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_072414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8211#issuecomment-72414",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_072415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8211#issuecomment-72415",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_072416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8211#issuecomment-72416",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

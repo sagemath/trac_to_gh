@@ -14,7 +14,7 @@ archive/issues_004527.json:
     "title": "Exception in 'sage.matrix.matrix_integer_dense.Matrix_integer_dense._hnf_modn_impl'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4527",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
 Assignee: tbd
@@ -166,7 +166,7 @@ Michael
 archive/issue_comments_033615.json:
 ```json
 {
-    "body": "Changing assignee from tbd to craigcitro.",
+    "body": "Changing assignee from tbd to @craigcitro.",
     "created_at": "2008-11-14T20:22:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4527",
     "type": "issue_comment",
@@ -175,7 +175,7 @@ archive/issue_comments_033615.json:
 }
 ```
 
-Changing assignee from tbd to craigcitro.
+Changing assignee from tbd to @craigcitro.
 
 
 
@@ -207,7 +207,7 @@ archive/issue_comments_033617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4527",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4527#issuecomment-33617",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -220,16 +220,16 @@ this should fix it.  the main bug was an off by a factor of two overflow.
 archive/issue_comments_033618.json:
 ```json
 {
-    "body": "Attachment [sage-4527.patch](tarball://root/attachments/some-uuid/ticket4527/sage-4527.patch) by was created at 2008-11-15 01:32:26",
+    "body": "Attachment [sage-4527.patch](tarball://root/attachments/some-uuid/ticket4527/sage-4527.patch) by @williamstein created at 2008-11-15 01:32:26",
     "created_at": "2008-11-15T01:32:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4527",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4527#issuecomment-33618",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-4527.patch](tarball://root/attachments/some-uuid/ticket4527/sage-4527.patch) by was created at 2008-11-15 01:32:26
+Attachment [sage-4527.patch](tarball://root/attachments/some-uuid/ticket4527/sage-4527.patch) by @williamstein created at 2008-11-15 01:32:26
 
 
 
@@ -300,16 +300,16 @@ Michael
 archive/issue_comments_033621.json:
 ```json
 {
-    "body": "Attachment [trac-4527-doc.patch](tarball://root/attachments/some-uuid/ticket4527/trac-4527-doc.patch) by craigcitro created at 2008-11-15 09:02:01\n\nLooks good. I added a doctest based on Soroosh's original example in the extra patch above.",
+    "body": "Attachment [trac-4527-doc.patch](tarball://root/attachments/some-uuid/ticket4527/trac-4527-doc.patch) by @craigcitro created at 2008-11-15 09:02:01\n\nLooks good. I added a doctest based on Soroosh's original example in the extra patch above.",
     "created_at": "2008-11-15T09:02:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4527",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4527#issuecomment-33621",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4527-doc.patch](tarball://root/attachments/some-uuid/ticket4527/trac-4527-doc.patch) by craigcitro created at 2008-11-15 09:02:01
+Attachment [trac-4527-doc.patch](tarball://root/attachments/some-uuid/ticket4527/trac-4527-doc.patch) by @craigcitro created at 2008-11-15 09:02:01
 
 Looks good. I added a doctest based on Soroosh's original example in the extra patch above.
 

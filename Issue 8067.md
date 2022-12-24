@@ -3,7 +3,7 @@
 archive/issues_008067.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  drkirby was\n\nMake sure SAGE64=\"yes\" is respected on Open Solaris 64 bit\n\nThe package can be found here:\n[http://boxen.math.washington.edu/home/jsp/ports/linbox-1.1.6.p3.spkg](http://boxen.math.washington.edu/home/jsp/ports/linbox-1.1.6.p3.spkg)\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8067\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  drkirby @williamstein\n\nMake sure SAGE64=\"yes\" is respected on Open Solaris 64 bit\n\nThe package can be found here:\n[http://boxen.math.washington.edu/home/jsp/ports/linbox-1.1.6.p3.spkg](http://boxen.math.washington.edu/home/jsp/ports/linbox-1.1.6.p3.spkg)\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8067\n\n",
     "created_at": "2010-01-25T23:04:06Z",
     "labels": [
         "porting",
@@ -14,12 +14,12 @@ archive/issues_008067.json:
     "title": "New linbox-1.1.6.p3.spkg works with Open Solaris 64 bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8067",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: drkirkby
 
-CC:  drkirby was
+CC:  drkirby @williamstein
 
 Make sure SAGE64="yes" is respected on Open Solaris 64 bit
 
@@ -46,7 +46,7 @@ archive/issue_comments_070695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8067",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8067#issuecomment-70695",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -99,16 +99,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_070698.json:
 ```json
 {
-    "body": "Attachment [linbox-1.1.6.p3.patch](tarball://root/attachments/some-uuid/ticket8067/linbox-1.1.6.p3.patch) by jsp created at 2010-01-26 18:15:23",
+    "body": "Attachment [linbox-1.1.6.p3.patch](tarball://root/attachments/some-uuid/ticket8067/linbox-1.1.6.p3.patch) by @jaapspies created at 2010-01-26 18:15:23",
     "created_at": "2010-01-26T18:15:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8067",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8067#issuecomment-70698",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [linbox-1.1.6.p3.patch](tarball://root/attachments/some-uuid/ticket8067/linbox-1.1.6.p3.patch) by jsp created at 2010-01-26 18:15:23
+Attachment [linbox-1.1.6.p3.patch](tarball://root/attachments/some-uuid/ticket8067/linbox-1.1.6.p3.patch) by @jaapspies created at 2010-01-26 18:15:23
 
 
 
@@ -122,7 +122,7 @@ archive/issue_comments_070699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8067",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8067#issuecomment-70699",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_070703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8067",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8067#issuecomment-70703",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007551.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  was\n\nThe package fortran-20071120.p9 has Fortran compilers for various systems. William Stein said:\n\nhttp://groups.google.com/group/sage-devel/msg/b4cf0f10ed040d5d?hl=en\n\n*\"I think in sage-4.3 on, we should *only* include fortran compilers for OS X, and *nothing* else.\"*\n\nI've looked at the fortran package, with a view to removing these, but it looks an quite a complex spkg-install, and since William is listed as the maintainer, I've assigned this to him. Feel free to unassign yourself William, but I think you are probably the best person for this. \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/7551\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\nThe package fortran-20071120.p9 has Fortran compilers for various systems. William Stein said:\n\nhttp://groups.google.com/group/sage-devel/msg/b4cf0f10ed040d5d?hl=en\n\n*\"I think in sage-4.3 on, we should *only* include fortran compilers for OS X, and *nothing* else.\"*\n\nI've looked at the fortran package, with a view to removing these, but it looks an quite a complex spkg-install, and since William is listed as the maintainer, I've assigned this to him. Feel free to unassign yourself William, but I think you are probably the best person for this. \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/7551\n\n",
     "created_at": "2009-11-28T22:22:58Z",
     "labels": [
         "build",
@@ -17,9 +17,9 @@ archive/issues_007551.json:
     "user": "drkirkby"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  was
+CC:  @williamstein
 
 The package fortran-20071120.p9 has Fortran compilers for various systems. William Stein said:
 
@@ -106,7 +106,7 @@ archive/issue_comments_064173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7551#issuecomment-64173",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

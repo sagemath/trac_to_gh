@@ -3,7 +3,7 @@
 archive/issues_009209.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  jason\n\nThere are at least two failed reports of Sage failing to build properly if there is an installation of python in /usr/local\n\n* http://groups.google.com/group/sage-solaris/browse_thread/thread/5dcc7ed68d279f67?hl=en\n* http://groups.google.com/group/sage-devel/browse_thread/thread/37a67ce63e68d55b?hl=en-GB\n\nwhere an installation in /usr/local of python screw up Sage. \n\nIn my own case, the only way I could find to stop the install in /usr/local preventing Sage building, was to execute as root\n\n\n```\nchmod 000 /usr/local/lib/libpython2.6.a /usr/local/lib/python2.6\n```\n\n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9209\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @jasongrout\n\nThere are at least two failed reports of Sage failing to build properly if there is an installation of python in /usr/local\n\n* http://groups.google.com/group/sage-solaris/browse_thread/thread/5dcc7ed68d279f67?hl=en\n* http://groups.google.com/group/sage-devel/browse_thread/thread/37a67ce63e68d55b?hl=en-GB\n\nwhere an installation in /usr/local of python screw up Sage. \n\nIn my own case, the only way I could find to stop the install in /usr/local preventing Sage building, was to execute as root\n\n\n```\nchmod 000 /usr/local/lib/libpython2.6.a /usr/local/lib/python2.6\n```\n\n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9209\n\n",
     "created_at": "2010-06-10T23:45:54Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_009209.json:
 ```
 Assignee: GeorgSWeber
 
-CC:  jason
+CC:  @jasongrout
 
 There are at least two failed reports of Sage failing to build properly if there is an installation of python in /usr/local
 
@@ -108,7 +108,7 @@ archive/issue_comments_086199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9209#issuecomment-86199",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_086200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9209#issuecomment-86200",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_086201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9209#issuecomment-86201",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_086202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9209#issuecomment-86202",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_086203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9209#issuecomment-86203",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

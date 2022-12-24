@@ -3,7 +3,7 @@
 archive/issues_008641.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  wjp\n\nRight now, if I run doctests with \"sage -t\" and some doctests fail, the exit code is zero -- but it would be very handy to have a nonzero exit code; for example, it would make using Mercurial's bisect command very useful.\n\nIn #7995, it seems like sage-doctest is passing back some useful exit codes, so we just need to pass those on in a reasonable way.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8641\n\n",
+    "body": "Assignee: tbd\n\nCC:  @wjp\n\nRight now, if I run doctests with \"sage -t\" and some doctests fail, the exit code is zero -- but it would be very handy to have a nonzero exit code; for example, it would make using Mercurial's bisect command very useful.\n\nIn #7995, it seems like sage-doctest is passing back some useful exit codes, so we just need to pass those on in a reasonable way.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8641\n\n",
     "created_at": "2010-04-02T02:41:39Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_008641.json:
     "title": "\"sage -t\" should exit with nonzero exit code if doctests fail",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8641",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: tbd
 
-CC:  wjp
+CC:  @wjp
 
 Right now, if I run doctests with "sage -t" and some doctests fail, the exit code is zero -- but it would be very handy to have a nonzero exit code; for example, it would make using Mercurial's bisect command very useful.
 
@@ -41,7 +41,7 @@ archive/issue_comments_078349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78349",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_078350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78350",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_078351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78351",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_078352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78352",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_078353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78353",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_078354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78354",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_078355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78355",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -168,16 +168,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_078356.json:
 ```json
 {
-    "body": "Attachment [trac_8641-sage-test.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641-sage-test.patch) by jhpalmieri created at 2010-04-13 22:34:25\n\nscripts repo",
+    "body": "Attachment [trac_8641-sage-test.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641-sage-test.patch) by @jhpalmieri created at 2010-04-13 22:34:25\n\nscripts repo",
     "created_at": "2010-04-13T22:34:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78356",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8641-sage-test.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641-sage-test.patch) by jhpalmieri created at 2010-04-13 22:34:25
+Attachment [trac_8641-sage-test.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641-sage-test.patch) by @jhpalmieri created at 2010-04-13 22:34:25
 
 scripts repo
 
@@ -193,7 +193,7 @@ archive/issue_comments_078357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78357",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_078358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78358",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_078359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78359",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_078360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78360",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_078361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78361",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -303,16 +303,16 @@ apply to scripts repo. Replaces previous.
 archive/issue_comments_078362.json:
 ```json
 {
-    "body": "Attachment [trac_8641.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641.patch) by jhpalmieri created at 2010-04-14 03:01:47\n\nThis isn't quite working for me: I get errors if I do \"sage -t -long FILE\".  I'm attaching a patch on top of yours which fixes it for me on my iMac, on sage.math, and on t2 (Solaris).",
+    "body": "Attachment [trac_8641.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641.patch) by @jhpalmieri created at 2010-04-14 03:01:47\n\nThis isn't quite working for me: I get errors if I do \"sage -t -long FILE\".  I'm attaching a patch on top of yours which fixes it for me on my iMac, on sage.math, and on t2 (Solaris).",
     "created_at": "2010-04-14T03:01:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78362",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8641.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641.patch) by jhpalmieri created at 2010-04-14 03:01:47
+Attachment [trac_8641.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641.patch) by @jhpalmieri created at 2010-04-14 03:01:47
 
 This isn't quite working for me: I get errors if I do "sage -t -long FILE".  I'm attaching a patch on top of yours which fixes it for me on my iMac, on sage.math, and on t2 (Solaris).
 
@@ -328,7 +328,7 @@ archive/issue_comments_078363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78363",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -341,16 +341,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_078364.json:
 ```json
 {
-    "body": "Attachment [trac_8641-part2.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641-part2.patch) by jhpalmieri created at 2010-04-14 03:02:14\n\napply on top of trac_8641.patch",
+    "body": "Attachment [trac_8641-part2.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641-part2.patch) by @jhpalmieri created at 2010-04-14 03:02:14\n\napply on top of trac_8641.patch",
     "created_at": "2010-04-14T03:02:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78364",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8641-part2.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641-part2.patch) by jhpalmieri created at 2010-04-14 03:02:14
+Attachment [trac_8641-part2.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641-part2.patch) by @jhpalmieri created at 2010-04-14 03:02:14
 
 apply on top of trac_8641.patch
 
@@ -366,7 +366,7 @@ archive/issue_comments_078365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78365",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -391,7 +391,7 @@ archive/issue_comments_078366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78366",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -427,7 +427,7 @@ archive/issue_comments_078367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78367",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -455,7 +455,7 @@ archive/issue_comments_078368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78368",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -479,7 +479,7 @@ archive/issue_comments_078369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78369",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -492,16 +492,16 @@ Combined patch rebased vs 4.4.4.alpha0 + #8891.  Replaces all previous.
 archive/issue_comments_078370.json:
 ```json
 {
-    "body": "Attachment [trac_8641-doctest_exit_codes.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641-doctest_exit_codes.patch) by mpatel created at 2010-06-14 09:32:06\n\nReplying to [comment:13 mpatel]:\n\n> By the way, we may need to rebase these for #8891.\n\nI've attached a [attachment:trac_8641-doctest_exit_codes.patch combined, rebased patch].",
+    "body": "Attachment [trac_8641-doctest_exit_codes.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641-doctest_exit_codes.patch) by @qed777 created at 2010-06-14 09:32:06\n\nReplying to [comment:13 mpatel]:\n\n> By the way, we may need to rebase these for #8891.\n\nI've attached a [attachment:trac_8641-doctest_exit_codes.patch combined, rebased patch].",
     "created_at": "2010-06-14T09:32:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78370",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8641-doctest_exit_codes.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641-doctest_exit_codes.patch) by mpatel created at 2010-06-14 09:32:06
+Attachment [trac_8641-doctest_exit_codes.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641-doctest_exit_codes.patch) by @qed777 created at 2010-06-14 09:32:06
 
 Replying to [comment:13 mpatel]:
 
@@ -521,7 +521,7 @@ archive/issue_comments_078371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78371",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -560,7 +560,7 @@ archive/issue_comments_078372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78372",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -581,7 +581,7 @@ archive/issue_comments_078373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78373",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -602,7 +602,7 @@ archive/issue_comments_078374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78374",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -618,16 +618,16 @@ Should you still want to try, the example in ticket #7993 will trigger one of th
 archive/issue_comments_078375.json:
 ```json
 {
-    "body": "Attachment [trac_8641-doctest_exit_codes.2.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641-doctest_exit_codes.2.patch) by mpatel created at 2010-06-15 09:25:57\n\nModify `sage-ptest`, too.  Apply to 4.4.4.alpha0 + #8891.  Apply only this patch.",
+    "body": "Attachment [trac_8641-doctest_exit_codes.2.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641-doctest_exit_codes.2.patch) by @qed777 created at 2010-06-15 09:25:57\n\nModify `sage-ptest`, too.  Apply to 4.4.4.alpha0 + #8891.  Apply only this patch.",
     "created_at": "2010-06-15T09:25:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78375",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8641-doctest_exit_codes.2.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641-doctest_exit_codes.2.patch) by mpatel created at 2010-06-15 09:25:57
+Attachment [trac_8641-doctest_exit_codes.2.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641-doctest_exit_codes.2.patch) by @qed777 created at 2010-06-15 09:25:57
 
 Modify `sage-ptest`, too.  Apply to 4.4.4.alpha0 + #8891.  Apply only this patch.
 
@@ -643,7 +643,7 @@ archive/issue_comments_078376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78376",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -658,16 +658,16 @@ It seems there's much room for improvement in `sage-ptest`.  For example, are th
 archive/issue_comments_078377.json:
 ```json
 {
-    "body": "Changing assignee from tbd to ddrake.",
+    "body": "Changing assignee from tbd to @dandrake.",
     "created_at": "2010-06-16T04:20:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78377",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Changing assignee from tbd to ddrake.
+Changing assignee from tbd to @dandrake.
 
 
 
@@ -681,7 +681,7 @@ archive/issue_comments_078378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78378",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -705,7 +705,7 @@ archive/issue_comments_078379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78379",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -718,16 +718,16 @@ Use `err = err | 2` for `KeyboardInterrupt`.  Apply only this patch, to 4.4.4.al
 archive/issue_comments_078380.json:
 ```json
 {
-    "body": "Attachment [trac_8641-doctest_exit_codes.3.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641-doctest_exit_codes.3.patch) by mpatel created at 2010-06-16 07:20:05\n\nDone.  [attachment:trac_8641-doctest_exit_codes.3.patch V3] uses `err = 2 | err` for `KeyboardInterrupt`s to both scripts.",
+    "body": "Attachment [trac_8641-doctest_exit_codes.3.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641-doctest_exit_codes.3.patch) by @qed777 created at 2010-06-16 07:20:05\n\nDone.  [attachment:trac_8641-doctest_exit_codes.3.patch V3] uses `err = 2 | err` for `KeyboardInterrupt`s to both scripts.",
     "created_at": "2010-06-16T07:20:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78380",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8641-doctest_exit_codes.3.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641-doctest_exit_codes.3.patch) by mpatel created at 2010-06-16 07:20:05
+Attachment [trac_8641-doctest_exit_codes.3.patch](tarball://root/attachments/some-uuid/ticket8641/trac_8641-doctest_exit_codes.3.patch) by @qed777 created at 2010-06-16 07:20:05
 
 Done.  [attachment:trac_8641-doctest_exit_codes.3.patch V3] uses `err = 2 | err` for `KeyboardInterrupt`s to both scripts.
 
@@ -743,7 +743,7 @@ archive/issue_comments_078381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78381",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -761,7 +761,7 @@ archive/issue_comments_078382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78382",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -779,7 +779,7 @@ archive/issue_comments_078383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78383",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -842,7 +842,7 @@ archive/issue_comments_078384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78384",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -864,7 +864,7 @@ archive/issue_comments_078385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78385",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -882,7 +882,7 @@ archive/issue_comments_078386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78386",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -902,7 +902,7 @@ archive/issue_comments_078387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78387",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -920,7 +920,7 @@ archive/issue_comments_078388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78388",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -938,7 +938,7 @@ archive/issue_comments_078389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8641#issuecomment-78389",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

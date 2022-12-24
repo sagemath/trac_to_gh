@@ -3,7 +3,7 @@
 archive/issues_009312.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  ncohen mpatel\n\nFrom the discussion at\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/b9429bcb929cda7\n\nThe GLPK spkg ignores the SAGE64 variable.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9312\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nathanncohen @qed777\n\nFrom the discussion at\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/b9429bcb929cda7\n\nThe GLPK spkg ignores the SAGE64 variable.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9312\n\n",
     "created_at": "2010-06-22T15:39:15Z",
     "labels": [
         "optional packages",
@@ -14,12 +14,12 @@ archive/issues_009312.json:
     "title": "Fix GLPK spkg for SAGE64",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9312",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: tbd
 
-CC:  ncohen mpatel
+CC:  @nathanncohen @qed777
 
 From the discussion at
 
@@ -188,7 +188,7 @@ archive/issue_comments_087702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9312#issuecomment-87702",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -400,7 +400,7 @@ archive/issue_comments_087706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9312#issuecomment-87706",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -444,7 +444,7 @@ archive/issue_comments_087708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9312#issuecomment-87708",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -487,7 +487,7 @@ archive/issue_comments_087710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9312#issuecomment-87710",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -725,7 +725,7 @@ archive/issue_comments_087718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9312#issuecomment-87718",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -743,7 +743,7 @@ archive/issue_comments_087719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9312#issuecomment-87719",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -761,7 +761,7 @@ archive/issue_comments_087720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9312#issuecomment-87720",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -899,7 +899,7 @@ archive/issue_comments_087727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9312#issuecomment-87727",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -915,16 +915,16 @@ Nope. This is part of #9274, and belongs there.
 archive/issue_comments_087728.json:
 ```json
 {
-    "body": "Attachment [trac_9312-optional.patch](tarball://root/attachments/some-uuid/ticket9312/trac_9312-optional.patch) by ncohen created at 2010-07-05 22:01:56\n\nA new patch to remove the #optional GLPK from Sage's code.\n\nI know 2 or 3 are still missing in other files, which I will remove later in another patch to simplify - now useless - code. I leave them here for the moment as touching it would conflict with other patches already written.\n\nNathann",
+    "body": "Attachment [trac_9312-optional.patch](tarball://root/attachments/some-uuid/ticket9312/trac_9312-optional.patch) by @nathanncohen created at 2010-07-05 22:01:56\n\nA new patch to remove the #optional GLPK from Sage's code.\n\nI know 2 or 3 are still missing in other files, which I will remove later in another patch to simplify - now useless - code. I leave them here for the moment as touching it would conflict with other patches already written.\n\nNathann",
     "created_at": "2010-07-05T22:01:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9312#issuecomment-87728",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_9312-optional.patch](tarball://root/attachments/some-uuid/ticket9312/trac_9312-optional.patch) by ncohen created at 2010-07-05 22:01:56
+Attachment [trac_9312-optional.patch](tarball://root/attachments/some-uuid/ticket9312/trac_9312-optional.patch) by @nathanncohen created at 2010-07-05 22:01:56
 
 A new patch to remove the #optional GLPK from Sage's code.
 
@@ -944,7 +944,7 @@ archive/issue_comments_087729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9312#issuecomment-87729",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -962,7 +962,7 @@ archive/issue_comments_087730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9312#issuecomment-87730",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -980,7 +980,7 @@ archive/issue_comments_087731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9312#issuecomment-87731",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -1000,7 +1000,7 @@ archive/issue_comments_087732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9312#issuecomment-87732",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -1018,7 +1018,7 @@ archive/issue_comments_087733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9312#issuecomment-87733",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1042,7 +1042,7 @@ archive/issue_comments_087734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9312#issuecomment-87734",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1060,7 +1060,7 @@ archive/issue_comments_087735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9312#issuecomment-87735",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -1081,7 +1081,7 @@ archive/issue_comments_087736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9312#issuecomment-87736",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -1103,7 +1103,7 @@ archive/issue_comments_087737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9312#issuecomment-87737",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -1128,7 +1128,7 @@ archive/issue_comments_087738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9312#issuecomment-87738",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

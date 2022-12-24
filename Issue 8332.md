@@ -3,7 +3,7 @@
 archive/issues_008332.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nResidue fields and others would like to be able to multiply inherit from finite field parents.  This is the first of the two switches needed to enable that (the other being sage.rings.finite_rings.element_ntl_gf2e.FiniteField_ntl_gf2e).\n\nThis depends on 8218.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8332\n\n",
+    "body": "Assignee: @aghitza\n\nResidue fields and others would like to be able to multiply inherit from finite field parents.  This is the first of the two switches needed to enable that (the other being sage.rings.finite_rings.element_ntl_gf2e.FiniteField_ntl_gf2e).\n\nThis depends on 8218.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8332\n\n",
     "created_at": "2010-02-23T14:48:18Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_008332.json:
     "title": "Changes FiniteField_givaro to Python",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8332",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Residue fields and others would like to be able to multiply inherit from finite field parents.  This is the first of the two switches needed to enable that (the other being sage.rings.finite_rings.element_ntl_gf2e.FiniteField_ntl_gf2e).
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8332
 archive/issue_comments_074195.json:
 ```json
 {
-    "body": "Attachment [trac_8332_givaro_python.patch](tarball://root/attachments/some-uuid/ticket8332/trac_8332_givaro_python.patch) by roed created at 2010-02-23 14:50:58",
+    "body": "Attachment [trac_8332_givaro_python.patch](tarball://root/attachments/some-uuid/ticket8332/trac_8332_givaro_python.patch) by @roed314 created at 2010-02-23 14:50:58",
     "created_at": "2010-02-23T14:50:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8332",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8332#issuecomment-74195",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [trac_8332_givaro_python.patch](tarball://root/attachments/some-uuid/ticket8332/trac_8332_givaro_python.patch) by roed created at 2010-02-23 14:50:58
+Attachment [trac_8332_givaro_python.patch](tarball://root/attachments/some-uuid/ticket8332/trac_8332_givaro_python.patch) by @roed314 created at 2010-02-23 14:50:58
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_074196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8332",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8332#issuecomment-74196",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_074197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8332",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8332#issuecomment-74197",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_074198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8332",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8332#issuecomment-74198",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_074199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8332",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8332#issuecomment-74199",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_074200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8332",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8332#issuecomment-74200",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -148,16 +148,16 @@ apply over previous patch
 archive/issue_comments_074201.json:
 ```json
 {
-    "body": "Attachment [trac_8332_fix.patch](tarball://root/attachments/some-uuid/ticket8332/trac_8332_fix.patch) by davidloeffler created at 2010-04-04 14:33:38\n\nHere is a tiny patch to fix that failure. With this patch installed, all tests (including long) pass on selmer.warwick.ac.uk (Ubuntu x86_64), except an unrelated existing problem in sage/schemes/elliptic_curves/heegner.py; and a selection of tests in sage/rings/finite_rings pass on t2.math.washington.edu (Solaris) as well.",
+    "body": "Attachment [trac_8332_fix.patch](tarball://root/attachments/some-uuid/ticket8332/trac_8332_fix.patch) by @loefflerd created at 2010-04-04 14:33:38\n\nHere is a tiny patch to fix that failure. With this patch installed, all tests (including long) pass on selmer.warwick.ac.uk (Ubuntu x86_64), except an unrelated existing problem in sage/schemes/elliptic_curves/heegner.py; and a selection of tests in sage/rings/finite_rings pass on t2.math.washington.edu (Solaris) as well.",
     "created_at": "2010-04-04T14:33:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8332",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8332#issuecomment-74201",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_8332_fix.patch](tarball://root/attachments/some-uuid/ticket8332/trac_8332_fix.patch) by davidloeffler created at 2010-04-04 14:33:38
+Attachment [trac_8332_fix.patch](tarball://root/attachments/some-uuid/ticket8332/trac_8332_fix.patch) by @loefflerd created at 2010-04-04 14:33:38
 
 Here is a tiny patch to fix that failure. With this patch installed, all tests (including long) pass on selmer.warwick.ac.uk (Ubuntu x86_64), except an unrelated existing problem in sage/schemes/elliptic_curves/heegner.py; and a selection of tests in sage/rings/finite_rings pass on t2.math.washington.edu (Solaris) as well.
 
@@ -168,16 +168,16 @@ Here is a tiny patch to fix that failure. With this patch installed, all tests (
 archive/issue_comments_074202.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to davidloeffler.",
+    "body": "Changing assignee from @aghitza to @loefflerd.",
     "created_at": "2010-04-04T14:33:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8332",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8332#issuecomment-74202",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from AlexGhitza to davidloeffler.
+Changing assignee from @aghitza to @loefflerd.
 
 
 
@@ -191,7 +191,7 @@ archive/issue_comments_074203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8332",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8332#issuecomment-74203",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_074204.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8332",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8332#issuecomment-74204",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_074205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8332",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8332#issuecomment-74205",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_074206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8332",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8332#issuecomment-74206",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_074207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8332",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8332#issuecomment-74207",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

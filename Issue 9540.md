@@ -3,7 +3,7 @@
 archive/issues_009540.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\n\n```\nsage: x = 5\nsage: y = 3/5\nsage: z = (5+I).pyobject()\nsage: z.parent()\nNumber Field in I with defining polynomial x^2 + 1\nsage: %timeit x in ZZ\n625 loops, best of 3: 103 ns per loop\nsage: %timeit y in ZZ\n625 loops, best of 3: 7.19 \u00b5s per loop\nsage: %timeit z in ZZ\n625 loops, best of 3: 381 \u00b5s per loop\n\n```\n\n\nBy extension, this massively affects performance of the ._is_integer() method for symbolic expressions containing complex numbers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9540\n\n",
+    "body": "Assignee: @aghitza\n\n\n```\nsage: x = 5\nsage: y = 3/5\nsage: z = (5+I).pyobject()\nsage: z.parent()\nNumber Field in I with defining polynomial x^2 + 1\nsage: %timeit x in ZZ\n625 loops, best of 3: 103 ns per loop\nsage: %timeit y in ZZ\n625 loops, best of 3: 7.19 \u00b5s per loop\nsage: %timeit z in ZZ\n625 loops, best of 3: 381 \u00b5s per loop\n\n```\n\n\nBy extension, this massively affects performance of the ._is_integer() method for symbolic expressions containing complex numbers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9540\n\n",
     "created_at": "2010-07-18T16:28:32Z",
     "labels": [
         "basic arithmetic",
@@ -13,10 +13,10 @@ archive/issues_009540.json:
     "title": "Testing whether a Gaussian integer is in ZZ is extremely slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9540",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 
 ```
@@ -53,7 +53,7 @@ archive/issue_comments_091929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9540",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9540#issuecomment-91929",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_091930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9540",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9540#issuecomment-91930",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_091931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9540",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9540#issuecomment-91931",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_091932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9540",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9540#issuecomment-91932",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_091933.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9540",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9540#issuecomment-91933",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 

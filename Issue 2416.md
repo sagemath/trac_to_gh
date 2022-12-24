@@ -48,7 +48,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2416
 archive/issue_comments_016293.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to was.",
+    "body": "Changing assignee from mabshoff to @williamstein.",
     "created_at": "2008-03-07T04:41:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2416",
     "type": "issue_comment",
@@ -57,7 +57,7 @@ archive/issue_comments_016293.json:
 }
 ```
 
-Changing assignee from mabshoff to was.
+Changing assignee from mabshoff to @williamstein.
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_000679.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCurrently we print something like:\n\n```\nfailures:\n\n        sage -t  calculus/calculus.py\n        sage -t  functions/constants.py\n<SNIP>\n```\n\nIt would be nice if we get more precise failure reports, something like:\n\n```\nfailures:\n\n        sage -t  calculus/calculus.py: 1 out of 27 tests failed\n        sage -t  functions/constants.py: segfault\n        sage -t  server/notebook/twist.py: CTRL-C invoked\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/679\n\n",
+    "body": "Assignee: @mwhansen\n\nCurrently we print something like:\n\n```\nfailures:\n\n        sage -t  calculus/calculus.py\n        sage -t  functions/constants.py\n<SNIP>\n```\n\nIt would be nice if we get more precise failure reports, something like:\n\n```\nfailures:\n\n        sage -t  calculus/calculus.py: 1 out of 27 tests failed\n        sage -t  functions/constants.py: segfault\n        sage -t  server/notebook/twist.py: CTRL-C invoked\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/679\n\n",
     "created_at": "2007-09-17T05:46:44Z",
     "labels": [
         "doctest coverage",
@@ -17,7 +17,7 @@ archive/issues_000679.json:
     "user": "mabshoff"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 Currently we print something like:
 
@@ -56,7 +56,7 @@ archive/issue_comments_003518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/679#issuecomment-3518",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -69,16 +69,16 @@ Changing status from new to assigned.
 archive/issue_comments_003519.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to gfurnish.",
+    "body": "Changing assignee from @mwhansen to @garyfurnish.",
     "created_at": "2008-03-20T11:17:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/679#issuecomment-3519",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from mhansen to gfurnish.
+Changing assignee from @mwhansen to @garyfurnish.
 
 
 
@@ -92,7 +92,7 @@ archive/issue_comments_003520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/679#issuecomment-3520",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -105,16 +105,16 @@ This also fixes the segfault hang bug and the keyboard interrupt functionality o
 archive/issue_comments_003521.json:
 ```json
 {
-    "body": "Attachment [trac_679.patch](tarball://root/attachments/some-uuid/ticket679/trac_679.patch) by gfurnish created at 2008-03-20 23:05:48",
+    "body": "Attachment [trac_679.patch](tarball://root/attachments/some-uuid/ticket679/trac_679.patch) by @garyfurnish created at 2008-03-20 23:05:48",
     "created_at": "2008-03-20T23:05:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/679#issuecomment-3521",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_679.patch](tarball://root/attachments/some-uuid/ticket679/trac_679.patch) by gfurnish created at 2008-03-20 23:05:48
+Attachment [trac_679.patch](tarball://root/attachments/some-uuid/ticket679/trac_679.patch) by @garyfurnish created at 2008-03-20 23:05:48
 
 
 
@@ -234,16 +234,16 @@ Michael
 archive/issue_comments_003526.json:
 ```json
 {
-    "body": "Attachment [trac_679n2.patch](tarball://root/attachments/some-uuid/ticket679/trac_679n2.patch) by gfurnish created at 2008-03-21 00:55:11\n\nFix for plot.py bug",
+    "body": "Attachment [trac_679n2.patch](tarball://root/attachments/some-uuid/ticket679/trac_679n2.patch) by @garyfurnish created at 2008-03-21 00:55:11\n\nFix for plot.py bug",
     "created_at": "2008-03-21T00:55:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/679#issuecomment-3526",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_679n2.patch](tarball://root/attachments/some-uuid/ticket679/trac_679n2.patch) by gfurnish created at 2008-03-21 00:55:11
+Attachment [trac_679n2.patch](tarball://root/attachments/some-uuid/ticket679/trac_679n2.patch) by @garyfurnish created at 2008-03-21 00:55:11
 
 Fix for plot.py bug
 

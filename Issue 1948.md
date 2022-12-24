@@ -3,7 +3,7 @@
 archive/issues_001948.json:
 ```json
 {
-    "body": "Assignee: was\n\nFor K a number field, K.factor_integer slices, dices, and also factors rationals, elements of the number field, etc.:\n\n\n```\nsage: K.<a> = NumberField(x^2 + 1)\nsage: K.factor_integer(1/3)\nFractional ideal (3)^-1\nsage: K.factor_integer(1+a)\nFractional ideal (a + 1)\nsage: K.factor_integer(1+a/5)\n(Fractional ideal (-3*a - 2)) * (Fractional ideal (a + 1)) * (Fractional ideal (-a - 2))^-1 * (Fractional ideal (2*a + 1))^-1\nsage: \n```\n\n\nSo it needs to be named something else.  Suggestions welcome.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/1948\n\n",
+    "body": "Assignee: @williamstein\n\nFor K a number field, K.factor_integer slices, dices, and also factors rationals, elements of the number field, etc.:\n\n\n```\nsage: K.<a> = NumberField(x^2 + 1)\nsage: K.factor_integer(1/3)\nFractional ideal (3)^-1\nsage: K.factor_integer(1+a)\nFractional ideal (a + 1)\nsage: K.factor_integer(1+a/5)\n(Fractional ideal (-3*a - 2)) * (Fractional ideal (a + 1)) * (Fractional ideal (-a - 2))^-1 * (Fractional ideal (2*a + 1))^-1\nsage: \n```\n\n\nSo it needs to be named something else.  Suggestions welcome.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/1948\n\n",
     "created_at": "2008-01-27T15:33:16Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_001948.json:
     "title": "K.factor_integer needs a name change, since now it does much more",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1948",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 For K a number field, K.factor_integer slices, dices, and also factors rationals, elements of the number field, etc.:
 
@@ -52,7 +52,7 @@ archive/issue_comments_012388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1948",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1948#issuecomment-12388",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -65,16 +65,16 @@ How about just calling it K.factor()?
 archive/issue_comments_012389.json:
 ```json
 {
-    "body": "Attachment [trac1948.patch](tarball://root/attachments/some-uuid/ticket1948/trac1948.patch) by cremona created at 2008-04-05 14:26:01",
+    "body": "Attachment [trac1948.patch](tarball://root/attachments/some-uuid/ticket1948/trac1948.patch) by @JohnCremona created at 2008-04-05 14:26:01",
     "created_at": "2008-04-05T14:26:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1948",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1948#issuecomment-12389",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac1948.patch](tarball://root/attachments/some-uuid/ticket1948/trac1948.patch) by cremona created at 2008-04-05 14:26:01
+Attachment [trac1948.patch](tarball://root/attachments/some-uuid/ticket1948/trac1948.patch) by @JohnCremona created at 2008-04-05 14:26:01
 
 
 
@@ -88,7 +88,7 @@ archive/issue_comments_012390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1948",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1948#issuecomment-12390",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_012391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1948",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1948#issuecomment-12391",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -121,16 +121,16 @@ Looks good to me.
 archive/issue_comments_012392.json:
 ```json
 {
-    "body": "Attachment [trac1948-doctests.patch](tarball://root/attachments/some-uuid/ticket1948/trac1948-doctests.patch) by AlexGhitza created at 2008-04-13 00:59:18\n\napply after trac1948.patch",
+    "body": "Attachment [trac1948-doctests.patch](tarball://root/attachments/some-uuid/ticket1948/trac1948-doctests.patch) by @aghitza created at 2008-04-13 00:59:18\n\napply after trac1948.patch",
     "created_at": "2008-04-13T00:59:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1948",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1948#issuecomment-12392",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac1948-doctests.patch](tarball://root/attachments/some-uuid/ticket1948/trac1948-doctests.patch) by AlexGhitza created at 2008-04-13 00:59:18
+Attachment [trac1948-doctests.patch](tarball://root/attachments/some-uuid/ticket1948/trac1948-doctests.patch) by @aghitza created at 2008-04-13 00:59:18
 
 apply after trac1948.patch
 
@@ -146,7 +146,7 @@ archive/issue_comments_012393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1948",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1948#issuecomment-12393",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -195,16 +195,16 @@ Resolution: fixed
 archive/issue_comments_012396.json:
 ```json
 {
-    "body": "Attachment [trac1948-ell_finite_field.patch](tarball://root/attachments/some-uuid/ticket1948/trac1948-ell_finite_field.patch) by AlexGhitza created at 2008-04-13 14:45:43",
+    "body": "Attachment [trac1948-ell_finite_field.patch](tarball://root/attachments/some-uuid/ticket1948/trac1948-ell_finite_field.patch) by @aghitza created at 2008-04-13 14:45:43",
     "created_at": "2008-04-13T14:45:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1948",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1948#issuecomment-12396",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac1948-ell_finite_field.patch](tarball://root/attachments/some-uuid/ticket1948/trac1948-ell_finite_field.patch) by AlexGhitza created at 2008-04-13 14:45:43
+Attachment [trac1948-ell_finite_field.patch](tarball://root/attachments/some-uuid/ticket1948/trac1948-ell_finite_field.patch) by @aghitza created at 2008-04-13 14:45:43
 
 
 
@@ -218,7 +218,7 @@ archive/issue_comments_012397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1948",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1948#issuecomment-12397",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_012398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1948",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1948#issuecomment-12398",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_012399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1948",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1948#issuecomment-12399",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -351,7 +351,7 @@ archive/issue_comments_012403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1948",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1948#issuecomment-12403",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_007535.json:
     "title": "Errors should be raised, not returned.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7535",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 Assignee: tbd
@@ -75,7 +75,7 @@ archive/issue_comments_063905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7535#issuecomment-63905",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_063906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7535#issuecomment-63906",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_063907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7535#issuecomment-63907",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_063908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7535#issuecomment-63908",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_063909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7535#issuecomment-63909",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -160,16 +160,16 @@ Makes all remaining returns of exceptions into raising.
 archive/issue_comments_063910.json:
 ```json
 {
-    "body": "Attachment [trac_7535-errors-raise.patch](tarball://root/attachments/some-uuid/ticket7535/trac_7535-errors-raise.patch) by jhpalmieri created at 2010-01-19 00:44:35\n\nI'm not sure what you mean by \"remaining\", since there is no patch at #7532 (or elsewhere?) fixing any other instances of this.  I'm attaching a patch dealing with two more of these, leaving, I think, just the one in rings.pyx.  See #7532 for that one.\n\nPositive review for timdumol's patch, so if mine is okay, this whole ticket can get a positive review.",
+    "body": "Attachment [trac_7535-errors-raise.patch](tarball://root/attachments/some-uuid/ticket7535/trac_7535-errors-raise.patch) by @jhpalmieri created at 2010-01-19 00:44:35\n\nI'm not sure what you mean by \"remaining\", since there is no patch at #7532 (or elsewhere?) fixing any other instances of this.  I'm attaching a patch dealing with two more of these, leaving, I think, just the one in rings.pyx.  See #7532 for that one.\n\nPositive review for timdumol's patch, so if mine is okay, this whole ticket can get a positive review.",
     "created_at": "2010-01-19T00:44:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7535#issuecomment-63910",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_7535-errors-raise.patch](tarball://root/attachments/some-uuid/ticket7535/trac_7535-errors-raise.patch) by jhpalmieri created at 2010-01-19 00:44:35
+Attachment [trac_7535-errors-raise.patch](tarball://root/attachments/some-uuid/ticket7535/trac_7535-errors-raise.patch) by @jhpalmieri created at 2010-01-19 00:44:35
 
 I'm not sure what you mean by "remaining", since there is no patch at #7532 (or elsewhere?) fixing any other instances of this.  I'm attaching a patch dealing with two more of these, leaving, I think, just the one in rings.pyx.  See #7532 for that one.
 
@@ -187,7 +187,7 @@ archive/issue_comments_063911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7535#issuecomment-63911",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -200,16 +200,16 @@ apply on top of the other patch
 archive/issue_comments_063912.json:
 ```json
 {
-    "body": "Attachment [trac_7535-part2.patch](tarball://root/attachments/some-uuid/ticket7535/trac_7535-part2.patch) by cremona created at 2010-01-19 12:43:09\n\nI am about to add a patch to #7532 which fixes (for me) the remaining issue in schemes/elliptic_curves.",
+    "body": "Attachment [trac_7535-part2.patch](tarball://root/attachments/some-uuid/ticket7535/trac_7535-part2.patch) by @JohnCremona created at 2010-01-19 12:43:09\n\nI am about to add a patch to #7532 which fixes (for me) the remaining issue in schemes/elliptic_curves.",
     "created_at": "2010-01-19T12:43:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7535#issuecomment-63912",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_7535-part2.patch](tarball://root/attachments/some-uuid/ticket7535/trac_7535-part2.patch) by cremona created at 2010-01-19 12:43:09
+Attachment [trac_7535-part2.patch](tarball://root/attachments/some-uuid/ticket7535/trac_7535-part2.patch) by @JohnCremona created at 2010-01-19 12:43:09
 
 I am about to add a patch to #7532 which fixes (for me) the remaining issue in schemes/elliptic_curves.
 
@@ -225,7 +225,7 @@ archive/issue_comments_063913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7535#issuecomment-63913",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_063914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7535#issuecomment-63914",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

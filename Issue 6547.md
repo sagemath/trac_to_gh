@@ -3,7 +3,7 @@
 archive/issues_006547.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  kini\n\nFor historical reasons, we are using `foo.all.py` instead of `foo.__init__.py`. This is not Pythonic and we should change that (gradually).\n\nAlso, the developer's guide needs an update reflecting this change:\n\nhttp://www.sagemath.org/doc/developer/coding_in_python.html#creating-a-new-directory\n\nThis was discussed on [sage-devel]: http://groups.google.com/group/sage-devel/browse_thread/thread/1112fcc8345ecfd2\n\nIssue created by migration from https://trac.sagemath.org/ticket/6547\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @kini\n\nFor historical reasons, we are using `foo.all.py` instead of `foo.__init__.py`. This is not Pythonic and we should change that (gradually).\n\nAlso, the developer's guide needs an update reflecting this change:\n\nhttp://www.sagemath.org/doc/developer/coding_in_python.html#creating-a-new-directory\n\nThis was discussed on [sage-devel]: http://groups.google.com/group/sage-devel/browse_thread/thread/1112fcc8345ecfd2\n\nIssue created by migration from https://trac.sagemath.org/ticket/6547\n\n",
     "created_at": "2009-07-17T09:51:16Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_006547.json:
     "title": "deprecate the use of all.py instead of __init__.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6547",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: cwitty
 
-CC:  kini
+CC:  @kini
 
 For historical reasons, we are using `foo.all.py` instead of `foo.__init__.py`. This is not Pythonic and we should change that (gradually).
 
@@ -45,7 +45,7 @@ archive/issue_comments_053383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6547#issuecomment-53383",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_053384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6547#issuecomment-53384",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_053385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6547#issuecomment-53385",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_053386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6547#issuecomment-53386",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_053387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6547#issuecomment-53387",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_053388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6547#issuecomment-53388",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_053389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6547#issuecomment-53389",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_053390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6547#issuecomment-53390",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_053391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6547#issuecomment-53391",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_053392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6547#issuecomment-53392",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_053393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6547#issuecomment-53393",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

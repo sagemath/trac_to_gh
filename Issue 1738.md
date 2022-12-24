@@ -3,7 +3,7 @@
 archive/issues_001738.json:
 ```json
 {
-    "body": "Assignee: was\n\nNegative exponents put fraction field elements in the denominator of a fraction field element.\n\n\n```\nsage: R.<x>=ZZ[]\nsage: (1/x)^-3\n1/(1/x^3)\n```\n\n\nWith the patch:\n\n```\nsage: R.<x>=ZZ[]\nsage: (1/x)^-3\nx^3\n```\n\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/1738\n\n",
+    "body": "Assignee: @williamstein\n\nNegative exponents put fraction field elements in the denominator of a fraction field element.\n\n\n```\nsage: R.<x>=ZZ[]\nsage: (1/x)^-3\n1/(1/x^3)\n```\n\n\nWith the patch:\n\n```\nsage: R.<x>=ZZ[]\nsage: (1/x)^-3\nx^3\n```\n\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/1738\n\n",
     "created_at": "2008-01-10T01:49:26Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_001738.json:
     "user": "jbmohler"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Negative exponents put fraction field elements in the denominator of a fraction field element.
 
@@ -50,16 +50,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1738
 archive/issue_comments_010995.json:
 ```json
 {
-    "body": "Attachment [fraction_field_pow.patch](tarball://root/attachments/some-uuid/ticket1738/fraction_field_pow.patch) by was created at 2008-01-10 03:43:39\n\nIt looks good to me except change the somewhat too verbose\n\n```\n  sage: x = PolynomialRing(RationalField(),'x').gen() \n```\n\nto one of the following (take your pick):\n\n```\n  sage: x = polygen(QQ, 'x')\n```\n\nor \n\n```\n  sage: R.<x> = QQ[]\n```\n\nor \n\n```\n  sage: x = PolynomialRing(QQ,'x').gen()\n```\n\n\nI think it is important that the docstrings give illustrations of good usage of Sage.",
+    "body": "Attachment [fraction_field_pow.patch](tarball://root/attachments/some-uuid/ticket1738/fraction_field_pow.patch) by @williamstein created at 2008-01-10 03:43:39\n\nIt looks good to me except change the somewhat too verbose\n\n```\n  sage: x = PolynomialRing(RationalField(),'x').gen() \n```\n\nto one of the following (take your pick):\n\n```\n  sage: x = polygen(QQ, 'x')\n```\n\nor \n\n```\n  sage: R.<x> = QQ[]\n```\n\nor \n\n```\n  sage: x = PolynomialRing(QQ,'x').gen()\n```\n\n\nI think it is important that the docstrings give illustrations of good usage of Sage.",
     "created_at": "2008-01-10T03:43:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1738#issuecomment-10995",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [fraction_field_pow.patch](tarball://root/attachments/some-uuid/ticket1738/fraction_field_pow.patch) by was created at 2008-01-10 03:43:39
+Attachment [fraction_field_pow.patch](tarball://root/attachments/some-uuid/ticket1738/fraction_field_pow.patch) by @williamstein created at 2008-01-10 03:43:39
 
 It looks good to me except change the somewhat too verbose
 
@@ -100,7 +100,7 @@ archive/issue_comments_010996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1738#issuecomment-10996",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_010997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1738#issuecomment-10997",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

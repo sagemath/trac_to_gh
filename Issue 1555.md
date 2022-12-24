@@ -14,7 +14,7 @@ archive/issues_001555.json:
     "title": "[with patch] typos in tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1555",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -61,7 +61,7 @@ archive/issue_comments_009917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1555#issuecomment-9917",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_009918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1555#issuecomment-9918",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

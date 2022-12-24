@@ -3,7 +3,7 @@
 archive/issues_006614.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  rlm\n\nAfter the merge of #5799, we have jsMath installed in two places: `$SAGE_ROOT/local/notebook/javascript` **and** `$SAGE_DOC/common/static`.  Moreover, all of jsMath is under version control in the Sage library.  However, the standard practice for Sage development is to keep most upstream spkg code out of Mercurial's reach.\n\nIn particular, we'll need to do unnecessary extra work when we upgrade to new upstream versions of jsMath or keep track of local customizations (cf. #4714).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6614\n\n",
+    "body": "Assignee: tbd\n\nCC:  @rlmill\n\nAfter the merge of #5799, we have jsMath installed in two places: `$SAGE_ROOT/local/notebook/javascript` **and** `$SAGE_DOC/common/static`.  Moreover, all of jsMath is under version control in the Sage library.  However, the standard practice for Sage development is to keep most upstream spkg code out of Mercurial's reach.\n\nIn particular, we'll need to do unnecessary extra work when we upgrade to new upstream versions of jsMath or keep track of local customizations (cf. #4714).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6614\n\n",
     "created_at": "2009-07-24T14:50:30Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_006614.json:
     "title": "Remove jsMath from version control in the Sage library.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6614",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: tbd
 
-CC:  rlm
+CC:  @rlmill
 
 After the merge of #5799, we have jsMath installed in two places: `$SAGE_ROOT/local/notebook/javascript` **and** `$SAGE_DOC/common/static`.  Moreover, all of jsMath is under version control in the Sage library.  However, the standard practice for Sage development is to keep most upstream spkg code out of Mercurial's reach.
 
@@ -42,7 +42,7 @@ archive/issue_comments_054141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6614#issuecomment-54141",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -55,16 +55,16 @@ Changing assignee from tbd to tba.
 archive/issue_comments_054142.json:
 ```json
 {
-    "body": "Attachment [trac_6614-distutils_symlinks.patch](tarball://root/attachments/some-uuid/ticket6614/trac_6614-distutils_symlinks.patch) by mpatel created at 2009-07-24 15:27:39\n\nThis [attachment:trac_6614-distutils_symlinks.patch patch] alters `setup.py` so that distutils includes broken symbolic links as it builds a source distribution of the Sage library.  Is this appropriate?\n\nIf so, I can add another patch that replaces the `jsmath` directory in `$SAGE_DOC/common/static` with a symlink and updates the repository accordingly (i.e., reverses the patch mentioned [here](http://trac.sagemath.org/sage_trac/ticket/5799#comment:11)).\n\nOne caveat is that Python's [os](http://docs.python.org/library/os.html) module supports symbolic links only on Unix systems.  If we need to avoid links altogether, we could instead copy jsMath to multiple locations from its own `spkg-install` script.",
+    "body": "Attachment [trac_6614-distutils_symlinks.patch](tarball://root/attachments/some-uuid/ticket6614/trac_6614-distutils_symlinks.patch) by @qed777 created at 2009-07-24 15:27:39\n\nThis [attachment:trac_6614-distutils_symlinks.patch patch] alters `setup.py` so that distutils includes broken symbolic links as it builds a source distribution of the Sage library.  Is this appropriate?\n\nIf so, I can add another patch that replaces the `jsmath` directory in `$SAGE_DOC/common/static` with a symlink and updates the repository accordingly (i.e., reverses the patch mentioned [here](http://trac.sagemath.org/sage_trac/ticket/5799#comment:11)).\n\nOne caveat is that Python's [os](http://docs.python.org/library/os.html) module supports symbolic links only on Unix systems.  If we need to avoid links altogether, we could instead copy jsMath to multiple locations from its own `spkg-install` script.",
     "created_at": "2009-07-24T15:27:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6614#issuecomment-54142",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6614-distutils_symlinks.patch](tarball://root/attachments/some-uuid/ticket6614/trac_6614-distutils_symlinks.patch) by mpatel created at 2009-07-24 15:27:39
+Attachment [trac_6614-distutils_symlinks.patch](tarball://root/attachments/some-uuid/ticket6614/trac_6614-distutils_symlinks.patch) by @qed777 created at 2009-07-24 15:27:39
 
 This [attachment:trac_6614-distutils_symlinks.patch patch] alters `setup.py` so that distutils includes broken symbolic links as it builds a source distribution of the Sage library.  Is this appropriate?
 
@@ -84,7 +84,7 @@ archive/issue_comments_054143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6614#issuecomment-54143",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_054144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6614#issuecomment-54144",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_054145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6614#issuecomment-54145",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -133,16 +133,16 @@ Should we add the jsmath directory to devel/sage/.hgignore?
 archive/issue_comments_054146.json:
 ```json
 {
-    "body": "Attachment [trac_6614-jsmath_repo.patch](tarball://root/attachments/some-uuid/ticket6614/trac_6614-jsmath_repo.patch) by mpatel created at 2009-07-25 12:38:28\n\nDifferent approach.",
+    "body": "Attachment [trac_6614-jsmath_repo.patch](tarball://root/attachments/some-uuid/ticket6614/trac_6614-jsmath_repo.patch) by @qed777 created at 2009-07-25 12:38:28\n\nDifferent approach.",
     "created_at": "2009-07-25T12:38:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6614#issuecomment-54146",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6614-jsmath_repo.patch](tarball://root/attachments/some-uuid/ticket6614/trac_6614-jsmath_repo.patch) by mpatel created at 2009-07-25 12:38:28
+Attachment [trac_6614-jsmath_repo.patch](tarball://root/attachments/some-uuid/ticket6614/trac_6614-jsmath_repo.patch) by @qed777 created at 2009-07-25 12:38:28
 
 Different approach.
 
@@ -158,7 +158,7 @@ archive/issue_comments_054147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6614#issuecomment-54147",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_054148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6614#issuecomment-54148",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -193,16 +193,16 @@ New version that puts jsMath path first.
 archive/issue_comments_054149.json:
 ```json
 {
-    "body": "Attachment [trac_6614-jsmath_repo_v2.patch](tarball://root/attachments/some-uuid/ticket6614/trac_6614-jsmath_repo_v2.patch) by mpatel created at 2009-08-02 19:00:25\n\nThe new version *prepends* jsMath's path to `html_static_path`, so that custom files copied subsequently from, e.g., `doc/common/static`,  can override certain settings, at our option.\n\nThe same caveats apply.",
+    "body": "Attachment [trac_6614-jsmath_repo_v2.patch](tarball://root/attachments/some-uuid/ticket6614/trac_6614-jsmath_repo_v2.patch) by @qed777 created at 2009-08-02 19:00:25\n\nThe new version *prepends* jsMath's path to `html_static_path`, so that custom files copied subsequently from, e.g., `doc/common/static`,  can override certain settings, at our option.\n\nThe same caveats apply.",
     "created_at": "2009-08-02T19:00:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6614#issuecomment-54149",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6614-jsmath_repo_v2.patch](tarball://root/attachments/some-uuid/ticket6614/trac_6614-jsmath_repo_v2.patch) by mpatel created at 2009-08-02 19:00:25
+Attachment [trac_6614-jsmath_repo_v2.patch](tarball://root/attachments/some-uuid/ticket6614/trac_6614-jsmath_repo_v2.patch) by @qed777 created at 2009-08-02 19:00:25
 
 The new version *prepends* jsMath's path to `html_static_path`, so that custom files copied subsequently from, e.g., `doc/common/static`,  can override certain settings, at our option.
 
@@ -220,7 +220,7 @@ archive/issue_comments_054150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6614#issuecomment-54150",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_054151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6614#issuecomment-54151",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_054152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6614#issuecomment-54152",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_054153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6614#issuecomment-54153",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_054154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6614#issuecomment-54154",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_054158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6614#issuecomment-54158",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -447,7 +447,7 @@ archive/issue_comments_054160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6614#issuecomment-54160",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008299.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nClearly this is undesirable:\n\n\n```\nsage: 5r + True\n6\nsage: 5 + True\n2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8299\n\n",
+    "body": "Assignee: @robertwb\n\nClearly this is undesirable:\n\n\n```\nsage: 5r + True\n6\nsage: 5 + True\n2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8299\n\n",
     "created_at": "2010-02-18T22:28:12Z",
     "labels": [
         "coercion",
@@ -14,10 +14,10 @@ archive/issues_008299.json:
     "title": "coercion and the bool type",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8299",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 Clearly this is undesirable:
 
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8299
 archive/issue_comments_073516.json:
 ```json
 {
-    "body": "Attachment [8299-integer-bool-coerce.patch](tarball://root/attachments/some-uuid/ticket8299/8299-integer-bool-coerce.patch) by robertwb created at 2010-02-18 22:30:21",
+    "body": "Attachment [8299-integer-bool-coerce.patch](tarball://root/attachments/some-uuid/ticket8299/8299-integer-bool-coerce.patch) by @robertwb created at 2010-02-18 22:30:21",
     "created_at": "2010-02-18T22:30:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8299",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8299#issuecomment-73516",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [8299-integer-bool-coerce.patch](tarball://root/attachments/some-uuid/ticket8299/8299-integer-bool-coerce.patch) by robertwb created at 2010-02-18 22:30:21
+Attachment [8299-integer-bool-coerce.patch](tarball://root/attachments/some-uuid/ticket8299/8299-integer-bool-coerce.patch) by @robertwb created at 2010-02-18 22:30:21
 
 
 
@@ -64,7 +64,7 @@ archive/issue_comments_073517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8299",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8299#issuecomment-73517",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

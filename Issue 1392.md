@@ -14,7 +14,7 @@ archive/issues_001392.json:
     "title": "factors of factorizations weren't fully sorted -- they were only sorted based on the degree and exponent, but not the actual irreducible factor.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1392",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1392
 archive/issue_comments_008956.json:
 ```json
 {
-    "body": "Attachment [trac1392-part2.patch](tarball://root/attachments/some-uuid/ticket1392/trac1392-part2.patch) by was created at 2007-12-04 05:41:07",
+    "body": "Attachment [trac1392-part2.patch](tarball://root/attachments/some-uuid/ticket1392/trac1392-part2.patch) by @williamstein created at 2007-12-04 05:41:07",
     "created_at": "2007-12-04T05:41:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1392#issuecomment-8956",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac1392-part2.patch](tarball://root/attachments/some-uuid/ticket1392/trac1392-part2.patch) by was created at 2007-12-04 05:41:07
+Attachment [trac1392-part2.patch](tarball://root/attachments/some-uuid/ticket1392/trac1392-part2.patch) by @williamstein created at 2007-12-04 05:41:07
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_008957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1392#issuecomment-8957",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

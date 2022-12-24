@@ -14,7 +14,7 @@ archive/issues_005336.json:
     "title": "make the live documentation in the notebook work with Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5336",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: boothby
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5336
 archive/issue_comments_041106.json:
 ```json
 {
-    "body": "Changing assignee from boothby to mhansen.",
+    "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2009-02-22T16:57:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5336",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5336#issuecomment-41106",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from boothby to mhansen.
+Changing assignee from boothby to @mwhansen.
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_041107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5336",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5336#issuecomment-41107",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_041108.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5336",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5336#issuecomment-41108",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -86,16 +86,16 @@ This should go on top of #5330.
 archive/issue_comments_041109.json:
 ```json
 {
-    "body": "Attachment [trac_5336.patch](tarball://root/attachments/some-uuid/ticket5336/trac_5336.patch) by mhansen created at 2009-02-24 14:06:25",
+    "body": "Attachment [trac_5336.patch](tarball://root/attachments/some-uuid/ticket5336/trac_5336.patch) by @mwhansen created at 2009-02-24 14:06:25",
     "created_at": "2009-02-24T14:06:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5336",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5336#issuecomment-41109",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5336.patch](tarball://root/attachments/some-uuid/ticket5336/trac_5336.patch) by mhansen created at 2009-02-24 14:06:25
+Attachment [trac_5336.patch](tarball://root/attachments/some-uuid/ticket5336/trac_5336.patch) by @mwhansen created at 2009-02-24 14:06:25
 
 
 

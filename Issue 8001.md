@@ -3,7 +3,7 @@
 archive/issues_008001.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat\n\nKeywords: TestSuite, Category\n\n- More category tests: _test_category, _test_elements\n- Improvements to TestSuite\n  - Partial support for nested test suites\n  - Support for basic TestSuite(x) for x any Python object\n- Added TestSuite call for Spec and ref to #7946\n- Corresponding doctest updates\n\nDepends on #7921\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8001\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: TestSuite, Category\n\n- More category tests: _test_category, _test_elements\n- Improvements to TestSuite\n  - Partial support for nested test suites\n  - Support for basic TestSuite(x) for x any Python object\n- Added TestSuite call for Spec and ref to #7946\n- Corresponding doctest updates\n\nDepends on #7921\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8001\n\n",
     "created_at": "2010-01-19T18:20:02Z",
     "labels": [
         "doctest coverage",
@@ -14,10 +14,10 @@ archive/issues_008001.json:
     "title": "Stronger category tests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8001",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
 CC:  sage-combinat
 
@@ -44,16 +44,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8001
 archive/issue_comments_069918.json:
 ```json
 {
-    "body": "Attachment [trac_8001-categories_testsuite-nt.patch](tarball://root/attachments/some-uuid/ticket8001/trac_8001-categories_testsuite-nt.patch) by nthiery created at 2010-01-19 18:29:31",
+    "body": "Attachment [trac_8001-categories_testsuite-nt.patch](tarball://root/attachments/some-uuid/ticket8001/trac_8001-categories_testsuite-nt.patch) by @nthiery created at 2010-01-19 18:29:31",
     "created_at": "2010-01-19T18:29:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8001#issuecomment-69918",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_8001-categories_testsuite-nt.patch](tarball://root/attachments/some-uuid/ticket8001/trac_8001-categories_testsuite-nt.patch) by nthiery created at 2010-01-19 18:29:31
+Attachment [trac_8001-categories_testsuite-nt.patch](tarball://root/attachments/some-uuid/ticket8001/trac_8001-categories_testsuite-nt.patch) by @nthiery created at 2010-01-19 18:29:31
 
 
 
@@ -67,7 +67,7 @@ archive/issue_comments_069919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8001#issuecomment-69919",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_069920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8001#issuecomment-69920",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_069921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8001#issuecomment-69921",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -123,16 +123,16 @@ Nicolas: You can add positive review once you had a look on my review patch.
 archive/issue_comments_069922.json:
 ```json
 {
-    "body": "Attachment [trac_8001-categories_testsuite-review-fh.patch](tarball://root/attachments/some-uuid/ticket8001/trac_8001-categories_testsuite-review-fh.patch) by hivert created at 2010-01-23 11:00:09",
+    "body": "Attachment [trac_8001-categories_testsuite-review-fh.patch](tarball://root/attachments/some-uuid/ticket8001/trac_8001-categories_testsuite-review-fh.patch) by @hivert created at 2010-01-23 11:00:09",
     "created_at": "2010-01-23T11:00:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8001#issuecomment-69922",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8001-categories_testsuite-review-fh.patch](tarball://root/attachments/some-uuid/ticket8001/trac_8001-categories_testsuite-review-fh.patch) by hivert created at 2010-01-23 11:00:09
+Attachment [trac_8001-categories_testsuite-review-fh.patch](tarball://root/attachments/some-uuid/ticket8001/trac_8001-categories_testsuite-review-fh.patch) by @hivert created at 2010-01-23 11:00:09
 
 
 
@@ -146,7 +146,7 @@ archive/issue_comments_069923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8001#issuecomment-69923",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_069924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8001#issuecomment-69924",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

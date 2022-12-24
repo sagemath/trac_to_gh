@@ -14,7 +14,7 @@ archive/issues_006150.json:
     "title": "numerical noise issues in 4.0.rc1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6150",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
@@ -78,7 +78,7 @@ archive/issue_comments_049089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6150#issuecomment-49089",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -91,16 +91,16 @@ Changing status from new to assigned.
 archive/issue_comments_049090.json:
 ```json
 {
-    "body": "Changing assignee from tbd to mhansen.",
+    "body": "Changing assignee from tbd to @mwhansen.",
     "created_at": "2009-05-28T16:49:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6150#issuecomment-49090",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tbd to mhansen.
+Changing assignee from tbd to @mwhansen.
 
 
 
@@ -114,7 +114,7 @@ archive/issue_comments_049091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6150#issuecomment-49091",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -127,16 +127,16 @@ I've attached a patch which fixes the above issues.
 archive/issue_comments_049092.json:
 ```json
 {
-    "body": "Attachment [trac_6150.patch](tarball://root/attachments/some-uuid/ticket6150/trac_6150.patch) by mhansen created at 2009-05-28 16:54:09",
+    "body": "Attachment [trac_6150.patch](tarball://root/attachments/some-uuid/ticket6150/trac_6150.patch) by @mwhansen created at 2009-05-28 16:54:09",
     "created_at": "2009-05-28T16:54:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6150#issuecomment-49092",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6150.patch](tarball://root/attachments/some-uuid/ticket6150/trac_6150.patch) by mhansen created at 2009-05-28 16:54:09
+Attachment [trac_6150.patch](tarball://root/attachments/some-uuid/ticket6150/trac_6150.patch) by @mwhansen created at 2009-05-28 16:54:09
 
 
 
@@ -150,7 +150,7 @@ archive/issue_comments_049093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6150#issuecomment-49093",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_049094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6150#issuecomment-49094",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

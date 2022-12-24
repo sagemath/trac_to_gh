@@ -3,7 +3,7 @@
 archive/issues_001718.json:
 ```json
 {
-    "body": "Assignee: was\n\nsage: parametric_plot([t, t + RR(pi)], -2, 2, rgbcolor=(1,0,0))\n\nworks but not this:\n\nsage: parametric_plot([t, t + pi], -2, 2, rgbcolor=(1,0,0))\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n....\n\n<type 'exceptions.AttributeError'>: 'Pi' object has no attribute\n'number_of_arguments'\n\nIssue created by migration from https://trac.sagemath.org/ticket/1718\n\n",
+    "body": "Assignee: @williamstein\n\nsage: parametric_plot([t, t + RR(pi)], -2, 2, rgbcolor=(1,0,0))\n\nworks but not this:\n\nsage: parametric_plot([t, t + pi], -2, 2, rgbcolor=(1,0,0))\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n....\n\n<type 'exceptions.AttributeError'>: 'Pi' object has no attribute\n'number_of_arguments'\n\nIssue created by migration from https://trac.sagemath.org/ticket/1718\n\n",
     "created_at": "2008-01-07T22:34:39Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001718.json:
     "title": "bug in parametric_plot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1718",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 sage: parametric_plot([t, t + RR(pi)], -2, 2, rgbcolor=(1,0,0))
 
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1718
 archive/issue_comments_010889.json:
 ```json
 {
-    "body": "Attachment [trac-1718.patch](tarball://root/attachments/some-uuid/ticket1718/trac-1718.patch) by was created at 2008-01-18 16:19:44",
+    "body": "Attachment [trac-1718.patch](tarball://root/attachments/some-uuid/ticket1718/trac-1718.patch) by @williamstein created at 2008-01-18 16:19:44",
     "created_at": "2008-01-18T16:19:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1718#issuecomment-10889",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1718.patch](tarball://root/attachments/some-uuid/ticket1718/trac-1718.patch) by was created at 2008-01-18 16:19:44
+Attachment [trac-1718.patch](tarball://root/attachments/some-uuid/ticket1718/trac-1718.patch) by @williamstein created at 2008-01-18 16:19:44
 
 
 

@@ -14,7 +14,7 @@ archive/issues_004101.json:
     "title": "[with spkg, needs review] cpdef horribly broken in last Cython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4101",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: mabshoff
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4101
 archive/issue_comments_029591.json:
 ```json
 {
-    "body": "Attachment [4101-cpdef-fix.patch](tarball://root/attachments/some-uuid/ticket4101/4101-cpdef-fix.patch) by robertwb created at 2008-09-11 17:15:19",
+    "body": "Attachment [4101-cpdef-fix.patch](tarball://root/attachments/some-uuid/ticket4101/4101-cpdef-fix.patch) by @robertwb created at 2008-09-11 17:15:19",
     "created_at": "2008-09-11T17:15:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4101",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4101#issuecomment-29591",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4101-cpdef-fix.patch](tarball://root/attachments/some-uuid/ticket4101/4101-cpdef-fix.patch) by robertwb created at 2008-09-11 17:15:19
+Attachment [4101-cpdef-fix.patch](tarball://root/attachments/some-uuid/ticket4101/4101-cpdef-fix.patch) by @robertwb created at 2008-09-11 17:15:19
 
 
 
@@ -147,7 +147,7 @@ archive/issue_comments_029596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4101",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4101#issuecomment-29596",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

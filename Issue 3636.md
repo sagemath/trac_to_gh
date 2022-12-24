@@ -3,7 +3,7 @@
 archive/issues_003636.json:
 ```json
 {
-    "body": "Assignee: itolkov\n\nAllows adding text among the controls:\n\n\n```\n@interact\ndef _(t1=text_control(\"Factors an integer.\"), n=\"1\"):\n    print factor(Integer(n))\n```\n\n\nAdditionally, the way labels are displayed is changed. If an empty label ('') is specified, the input block is aligned with the left edge of the table, rather than the rest of the controls. This is useful for controls that should not have a label, such as text. However, if label=' ' (space) is set, the input is aligned with the rest of the inputs with no label showing.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3636\n\n",
+    "body": "Assignee: @itolkov\n\nAllows adding text among the controls:\n\n\n```\n@interact\ndef _(t1=text_control(\"Factors an integer.\"), n=\"1\"):\n    print factor(Integer(n))\n```\n\n\nAdditionally, the way labels are displayed is changed. If an empty label ('') is specified, the input block is aligned with the left edge of the table, rather than the rest of the controls. This is useful for controls that should not have a label, such as text. However, if label=' ' (space) is set, the input is aligned with the rest of the inputs with no label showing.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3636\n\n",
     "created_at": "2008-07-10T21:07:58Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_003636.json:
     "title": "Text control, no label",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3636",
-    "user": "itolkov"
+    "user": "@itolkov"
 }
 ```
-Assignee: itolkov
+Assignee: @itolkov
 
 Allows adding text among the controls:
 
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3636
 archive/issue_comments_025717.json:
 ```json
 {
-    "body": "Attachment [trac3636_1.patch](tarball://root/attachments/some-uuid/ticket3636/trac3636_1.patch) by itolkov created at 2008-07-10 21:10:15",
+    "body": "Attachment [trac3636_1.patch](tarball://root/attachments/some-uuid/ticket3636/trac3636_1.patch) by @itolkov created at 2008-07-10 21:10:15",
     "created_at": "2008-07-10T21:10:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3636",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3636#issuecomment-25717",
-    "user": "itolkov"
+    "user": "@itolkov"
 }
 ```
 
-Attachment [trac3636_1.patch](tarball://root/attachments/some-uuid/ticket3636/trac3636_1.patch) by itolkov created at 2008-07-10 21:10:15
+Attachment [trac3636_1.patch](tarball://root/attachments/some-uuid/ticket3636/trac3636_1.patch) by @itolkov created at 2008-07-10 21:10:15
 
 
 
@@ -66,7 +66,7 @@ archive/issue_comments_025718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3636",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3636#issuecomment-25718",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -101,16 +101,16 @@ Michael
 archive/issue_comments_025720.json:
 ```json
 {
-    "body": "Attachment [trac3636_2.patch](tarball://root/attachments/some-uuid/ticket3636/trac3636_2.patch) by itolkov created at 2008-07-22 20:01:39",
+    "body": "Attachment [trac3636_2.patch](tarball://root/attachments/some-uuid/ticket3636/trac3636_2.patch) by @itolkov created at 2008-07-22 20:01:39",
     "created_at": "2008-07-22T20:01:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3636",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3636#issuecomment-25720",
-    "user": "itolkov"
+    "user": "@itolkov"
 }
 ```
 
-Attachment [trac3636_2.patch](tarball://root/attachments/some-uuid/ticket3636/trac3636_2.patch) by itolkov created at 2008-07-22 20:01:39
+Attachment [trac3636_2.patch](tarball://root/attachments/some-uuid/ticket3636/trac3636_2.patch) by @itolkov created at 2008-07-22 20:01:39
 
 
 
@@ -124,7 +124,7 @@ archive/issue_comments_025721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3636",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3636#issuecomment-25721",
-    "user": "itolkov"
+    "user": "@itolkov"
 }
 ```
 

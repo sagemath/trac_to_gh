@@ -60,7 +60,7 @@ archive/issue_comments_001863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/383#issuecomment-1863",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_001864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/383#issuecomment-1864",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -91,16 +91,16 @@ Typo:  arithmatic  --> arithmetic
 archive/issue_comments_001865.json:
 ```json
 {
-    "body": "Attachment [383-binop-decorator.patch](tarball://root/attachments/some-uuid/ticket383/383-binop-decorator.patch) by robertwb created at 2010-01-17 10:24:52\n\nOops. Thanks, fixed.",
+    "body": "Attachment [383-binop-decorator.patch](tarball://root/attachments/some-uuid/ticket383/383-binop-decorator.patch) by @robertwb created at 2010-01-17 10:24:52\n\nOops. Thanks, fixed.",
     "created_at": "2010-01-17T10:24:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/383#issuecomment-1865",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [383-binop-decorator.patch](tarball://root/attachments/some-uuid/ticket383/383-binop-decorator.patch) by robertwb created at 2010-01-17 10:24:52
+Attachment [383-binop-decorator.patch](tarball://root/attachments/some-uuid/ticket383/383-binop-decorator.patch) by @robertwb created at 2010-01-17 10:24:52
 
 Oops. Thanks, fixed.
 
@@ -116,7 +116,7 @@ archive/issue_comments_001866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/383#issuecomment-1866",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -162,16 +162,16 @@ wstein@boxen:~/build/sage-4.3.1.rc0$
 archive/issue_comments_001867.json:
 ```json
 {
-    "body": "Attachment [383-fixes.patch](tarball://root/attachments/some-uuid/ticket383/383-fixes.patch) by robertwb created at 2010-01-17 11:40:45",
+    "body": "Attachment [383-fixes.patch](tarball://root/attachments/some-uuid/ticket383/383-fixes.patch) by @robertwb created at 2010-01-17 11:40:45",
     "created_at": "2010-01-17T11:40:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/383#issuecomment-1867",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [383-fixes.patch](tarball://root/attachments/some-uuid/ticket383/383-fixes.patch) by robertwb created at 2010-01-17 11:40:45
+Attachment [383-fixes.patch](tarball://root/attachments/some-uuid/ticket383/383-fixes.patch) by @robertwb created at 2010-01-17 11:40:45
 
 
 
@@ -185,7 +185,7 @@ archive/issue_comments_001868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/383#issuecomment-1868",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_001869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/383#issuecomment-1869",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_001870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/383#issuecomment-1870",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -253,16 +253,16 @@ wstein@boxen:~/build/sage-4.3.1.rc0-boxen-x86_64-Linux$
 archive/issue_comments_001871.json:
 ```json
 {
-    "body": "Attachment [383-more-fixes.patch](tarball://root/attachments/some-uuid/ticket383/383-more-fixes.patch) by robertwb created at 2010-01-19 12:16:57\n\nOK, I've doctested the entire sage library this time.",
+    "body": "Attachment [383-more-fixes.patch](tarball://root/attachments/some-uuid/ticket383/383-more-fixes.patch) by @robertwb created at 2010-01-19 12:16:57\n\nOK, I've doctested the entire sage library this time.",
     "created_at": "2010-01-19T12:16:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/383#issuecomment-1871",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [383-more-fixes.patch](tarball://root/attachments/some-uuid/ticket383/383-more-fixes.patch) by robertwb created at 2010-01-19 12:16:57
+Attachment [383-more-fixes.patch](tarball://root/attachments/some-uuid/ticket383/383-more-fixes.patch) by @robertwb created at 2010-01-19 12:16:57
 
 OK, I've doctested the entire sage library this time.
 
@@ -278,7 +278,7 @@ archive/issue_comments_001872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/383#issuecomment-1872",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -296,7 +296,7 @@ archive/issue_comments_001873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/383#issuecomment-1873",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -314,7 +314,7 @@ archive/issue_comments_001874.json:
     "issue": "https://github.com/sagemath/sagetest/issues/383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/383#issuecomment-1874",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

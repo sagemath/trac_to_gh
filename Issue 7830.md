@@ -3,7 +3,7 @@
 archive/issues_007830.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nHere's a function that answers the question posed in http://groups.google.com/group/sage-devel/browse_thread/thread/c8c75b483f2c47f6 -- give the sign, mantissa, and exponent of a floating point number.\n\nI also cleaned up a few minor other things.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7830\n\n",
+    "body": "Assignee: @aghitza\n\nHere's a function that answers the question posed in http://groups.google.com/group/sage-devel/browse_thread/thread/c8c75b483f2c47f6 -- give the sign, mantissa, and exponent of a floating point number.\n\nI also cleaned up a few minor other things.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7830\n\n",
     "created_at": "2010-01-03T07:37:21Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_007830.json:
     "title": "function for floating point representation of a number",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7830",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Here's a function that answers the question posed in http://groups.google.com/group/sage-devel/browse_thread/thread/c8c75b483f2c47f6 -- give the sign, mantissa, and exponent of a floating point number.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7830
 archive/issue_comments_067800.json:
 ```json
 {
-    "body": "Attachment [trac-7830-floating_point_representation.patch](tarball://root/attachments/some-uuid/ticket7830/trac-7830-floating_point_representation.patch) by jason created at 2010-01-03 07:41:58",
+    "body": "Attachment [trac-7830-floating_point_representation.patch](tarball://root/attachments/some-uuid/ticket7830/trac-7830-floating_point_representation.patch) by @jasongrout created at 2010-01-03 07:41:58",
     "created_at": "2010-01-03T07:41:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7830#issuecomment-67800",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-7830-floating_point_representation.patch](tarball://root/attachments/some-uuid/ticket7830/trac-7830-floating_point_representation.patch) by jason created at 2010-01-03 07:41:58
+Attachment [trac-7830-floating_point_representation.patch](tarball://root/attachments/some-uuid/ticket7830/trac-7830-floating_point_representation.patch) by @jasongrout created at 2010-01-03 07:41:58
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_067801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7830#issuecomment-67801",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_067802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7830#issuecomment-67802",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_067803.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7830#issuecomment-67803",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_067804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7830#issuecomment-67804",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_067805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7830#issuecomment-67805",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -144,16 +144,16 @@ apply on top of previous patch
 archive/issue_comments_067806.json:
 ```json
 {
-    "body": "Attachment [trac-7830-change-name.patch](tarball://root/attachments/some-uuid/ticket7830/trac-7830-change-name.patch) by jason created at 2010-01-08 12:28:29\n\nOkay, I added a patch which changes the name.  This is hopefully ready for a positive review now :).",
+    "body": "Attachment [trac-7830-change-name.patch](tarball://root/attachments/some-uuid/ticket7830/trac-7830-change-name.patch) by @jasongrout created at 2010-01-08 12:28:29\n\nOkay, I added a patch which changes the name.  This is hopefully ready for a positive review now :).",
     "created_at": "2010-01-08T12:28:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7830#issuecomment-67806",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-7830-change-name.patch](tarball://root/attachments/some-uuid/ticket7830/trac-7830-change-name.patch) by jason created at 2010-01-08 12:28:29
+Attachment [trac-7830-change-name.patch](tarball://root/attachments/some-uuid/ticket7830/trac-7830-change-name.patch) by @jasongrout created at 2010-01-08 12:28:29
 
 Okay, I added a patch which changes the name.  This is hopefully ready for a positive review now :).
 
@@ -169,7 +169,7 @@ archive/issue_comments_067807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7830#issuecomment-67807",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_067808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7830#issuecomment-67808",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -200,16 +200,16 @@ Very good point.  I'll look at this.  I might just end up creating an RR number 
 archive/issue_comments_067809.json:
 ```json
 {
-    "body": "Attachment [trac-7830-sign_m_e.patch](tarball://root/attachments/some-uuid/ticket7830/trac-7830-sign_m_e.patch) by jason created at 2010-01-20 08:41:38\n\napply on top of previous patches",
+    "body": "Attachment [trac-7830-sign_m_e.patch](tarball://root/attachments/some-uuid/ticket7830/trac-7830-sign_m_e.patch) by @jasongrout created at 2010-01-20 08:41:38\n\napply on top of previous patches",
     "created_at": "2010-01-20T08:41:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7830#issuecomment-67809",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-7830-sign_m_e.patch](tarball://root/attachments/some-uuid/ticket7830/trac-7830-sign_m_e.patch) by jason created at 2010-01-20 08:41:38
+Attachment [trac-7830-sign_m_e.patch](tarball://root/attachments/some-uuid/ticket7830/trac-7830-sign_m_e.patch) by @jasongrout created at 2010-01-20 08:41:38
 
 apply on top of previous patches
 
@@ -225,7 +225,7 @@ archive/issue_comments_067810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7830#issuecomment-67810",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_067811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7830#issuecomment-67811",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_067812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7830#issuecomment-67812",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -278,16 +278,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_067813.json:
 ```json
 {
-    "body": "Attachment [trac-7830-fixes.patch](tarball://root/attachments/some-uuid/ticket7830/trac-7830-fixes.patch) by jason created at 2010-01-20 09:32:08\n\napply on top of previous patches",
+    "body": "Attachment [trac-7830-fixes.patch](tarball://root/attachments/some-uuid/ticket7830/trac-7830-fixes.patch) by @jasongrout created at 2010-01-20 09:32:08\n\napply on top of previous patches",
     "created_at": "2010-01-20T09:32:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7830#issuecomment-67813",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-7830-fixes.patch](tarball://root/attachments/some-uuid/ticket7830/trac-7830-fixes.patch) by jason created at 2010-01-20 09:32:08
+Attachment [trac-7830-fixes.patch](tarball://root/attachments/some-uuid/ticket7830/trac-7830-fixes.patch) by @jasongrout created at 2010-01-20 09:32:08
 
 apply on top of previous patches
 
@@ -303,7 +303,7 @@ archive/issue_comments_067814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7830#issuecomment-67814",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -321,7 +321,7 @@ archive/issue_comments_067815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7830#issuecomment-67815",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_067816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7830#issuecomment-67816",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -352,16 +352,16 @@ all four of the above folded into one
 archive/issue_comments_067817.json:
 ```json
 {
-    "body": "Attachment [7830-real-rep-all.patch](tarball://root/attachments/some-uuid/ticket7830/7830-real-rep-all.patch) by robertwb created at 2010-01-20 09:40:55\n\nLooks good.",
+    "body": "Attachment [7830-real-rep-all.patch](tarball://root/attachments/some-uuid/ticket7830/7830-real-rep-all.patch) by @robertwb created at 2010-01-20 09:40:55\n\nLooks good.",
     "created_at": "2010-01-20T09:40:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7830#issuecomment-67817",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [7830-real-rep-all.patch](tarball://root/attachments/some-uuid/ticket7830/7830-real-rep-all.patch) by robertwb created at 2010-01-20 09:40:55
+Attachment [7830-real-rep-all.patch](tarball://root/attachments/some-uuid/ticket7830/7830-real-rep-all.patch) by @robertwb created at 2010-01-20 09:40:55
 
 Looks good.
 
@@ -377,7 +377,7 @@ archive/issue_comments_067818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7830#issuecomment-67818",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -413,7 +413,7 @@ archive/issue_comments_067820.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7830#issuecomment-67820",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

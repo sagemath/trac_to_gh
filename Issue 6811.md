@@ -3,7 +3,7 @@
 archive/issues_006811.json:
 ```json
 {
-    "body": "Assignee: was\n\nI was computed Riemann's analytic formula for pi(X), and was disturbed it wasn't converging to pi(X).  It turned out that the function in Sage for a while for plotting prime_pi is buggy! For example, try this:\n\n```\nsage: prime_pi.plot(5,10).show(gridlines='minor',frame=True)\nsage: prime_pi(8)\n4\n```\n\nYou'll see a plot that has a horizontal line at height 5 on it.  \n\nThis is very bad and embarrassing!\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6811\n\n",
+    "body": "Assignee: @williamstein\n\nI was computed Riemann's analytic formula for pi(X), and was disturbed it wasn't converging to pi(X).  It turned out that the function in Sage for a while for plotting prime_pi is buggy! For example, try this:\n\n```\nsage: prime_pi.plot(5,10).show(gridlines='minor',frame=True)\nsage: prime_pi(8)\n4\n```\n\nYou'll see a plot that has a horizontal line at height 5 on it.  \n\nThis is very bad and embarrassing!\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6811\n\n",
     "created_at": "2009-08-23T04:11:08Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_006811.json:
     "title": "prime_pi.plot is wrong (!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6811",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I was computed Riemann's analytic formula for pi(X), and was disturbed it wasn't converging to pi(X).  It turned out that the function in Sage for a while for plotting prime_pi is buggy! For example, try this:
 
@@ -48,7 +48,7 @@ archive/issue_comments_056061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6811",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6811#issuecomment-56061",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -69,16 +69,16 @@ I've attached code to fix this bug.  It does things right.
 archive/issue_comments_056062.json:
 ```json
 {
-    "body": "Attachment [trac_6811.patch](tarball://root/attachments/some-uuid/ticket6811/trac_6811.patch) by was created at 2009-08-23 05:14:09",
+    "body": "Attachment [trac_6811.patch](tarball://root/attachments/some-uuid/ticket6811/trac_6811.patch) by @williamstein created at 2009-08-23 05:14:09",
     "created_at": "2009-08-23T05:14:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6811",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6811#issuecomment-56062",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6811.patch](tarball://root/attachments/some-uuid/ticket6811/trac_6811.patch) by was created at 2009-08-23 05:14:09
+Attachment [trac_6811.patch](tarball://root/attachments/some-uuid/ticket6811/trac_6811.patch) by @williamstein created at 2009-08-23 05:14:09
 
 
 
@@ -92,7 +92,7 @@ archive/issue_comments_056063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6811",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6811#issuecomment-56063",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_056064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6811",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6811#issuecomment-56064",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 

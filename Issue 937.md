@@ -14,7 +14,7 @@ archive/issues_000937.json:
     "title": "If g is a graphics object then in doctest mode g.show() should save to a specific (always the same) temp file.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/937",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: failure
@@ -38,7 +38,7 @@ archive/issue_comments_005731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/937#issuecomment-5731",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -56,7 +56,7 @@ archive/issue_comments_005732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/937#issuecomment-5732",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

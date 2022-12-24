@@ -3,7 +3,7 @@
 archive/issues_009473.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  chapoton\n\nThe execute bit is set on some pickles in sage_notebook.sagenb for no reason:\n\n```\n\nexecutable bit set?  huh?\n\nsage: !ls -l\ntotal 28\n-rwx------  1 sagenb sagenb   253 2010-07-06 00:52 conf.pickle\ndrwxr-xr-x 39 sagenb sagenb  4096 2010-05-22 08:58 home\n-rw-r--r--  1 sagenb sagenb     4 2010-05-20 12:04 twistd.pid\n-rw-r--r--  1 sagenb sagenb  2560 2010-05-20 12:04 twistedconf.tac\n-rwx------  1 sagenb sagenb 11116 2010-07-06 00:52 users.pickle\n```\n\n\nFix this.   This is probably really easy.   I think the notebook server does a chmod somewhere to make sure other and group don't have access, and this is done incorrectly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9473\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @fchapoton\n\nThe execute bit is set on some pickles in sage_notebook.sagenb for no reason:\n\n```\n\nexecutable bit set?  huh?\n\nsage: !ls -l\ntotal 28\n-rwx------  1 sagenb sagenb   253 2010-07-06 00:52 conf.pickle\ndrwxr-xr-x 39 sagenb sagenb  4096 2010-05-22 08:58 home\n-rw-r--r--  1 sagenb sagenb     4 2010-05-20 12:04 twistd.pid\n-rw-r--r--  1 sagenb sagenb  2560 2010-05-20 12:04 twistedconf.tac\n-rwx------  1 sagenb sagenb 11116 2010-07-06 00:52 users.pickle\n```\n\n\nFix this.   This is probably really easy.   I think the notebook server does a chmod somewhere to make sure other and group don't have access, and this is done incorrectly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9473\n\n",
     "created_at": "2010-07-11T08:51:04Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_009473.json:
     "title": "notebook: execute bit set on pickle's, but shouldn't be (really easy to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9473",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jason, was
 
-CC:  chapoton
+CC:  @fchapoton
 
 The execute bit is set on some pickles in sage_notebook.sagenb for no reason:
 
@@ -55,7 +55,7 @@ archive/issue_comments_090864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9473#issuecomment-90864",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_090865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9473#issuecomment-90865",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_090866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9473#issuecomment-90866",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

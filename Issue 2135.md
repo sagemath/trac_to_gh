@@ -3,7 +3,7 @@
 archive/issues_002135.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nsuggested by Peter Jipsen (does he have a track account yet?)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2135\n\n",
+    "body": "Assignee: @rlmill\n\nsuggested by Peter Jipsen (does he have a track account yet?)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2135\n\n",
     "created_at": "2008-02-10T01:06:42Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_002135.json:
     "title": "[with patch, needs easy review] allow for specifying initial position in spring layout",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2135",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 suggested by Peter Jipsen (does he have a track account yet?)
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2135
 archive/issue_comments_014004.json:
 ```json
 {
-    "body": "Attachment [plot_positions_with_spring-graphs.patch](tarball://root/attachments/some-uuid/ticket2135/plot_positions_with_spring-graphs.patch) by ncalexan created at 2008-02-15 03:50:25\n\nApply.  There are no doctests, but how would one doctest this?  There is a small typo in the docstring, I think -- a missing apostrophe.",
+    "body": "Attachment [plot_positions_with_spring-graphs.patch](tarball://root/attachments/some-uuid/ticket2135/plot_positions_with_spring-graphs.patch) by @ncalexan created at 2008-02-15 03:50:25\n\nApply.  There are no doctests, but how would one doctest this?  There is a small typo in the docstring, I think -- a missing apostrophe.",
     "created_at": "2008-02-15T03:50:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2135#issuecomment-14004",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [plot_positions_with_spring-graphs.patch](tarball://root/attachments/some-uuid/ticket2135/plot_positions_with_spring-graphs.patch) by ncalexan created at 2008-02-15 03:50:25
+Attachment [plot_positions_with_spring-graphs.patch](tarball://root/attachments/some-uuid/ticket2135/plot_positions_with_spring-graphs.patch) by @ncalexan created at 2008-02-15 03:50:25
 
 Apply.  There are no doctests, but how would one doctest this?  There is a small typo in the docstring, I think -- a missing apostrophe.
 
@@ -57,7 +57,7 @@ archive/issue_comments_014005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2135#issuecomment-14005",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

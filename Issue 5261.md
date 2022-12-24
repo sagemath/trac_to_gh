@@ -3,7 +3,7 @@
 archive/issues_005261.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  kcrisman\n\nThis is somewhat of a multi issue ticket, but I don't think that doing all four of them individually will give us much of a benefit.\n\n* default the name to Sage-x.y.z.app - that way you can have many Sage releases in parallel :) \n* fix a bug that causes the app to fail to start if the name of the app contains spaces \n* remove the extra copyright work in credits as well as give credit to \"William Stein and the Sage Development Team\" \n* do not put the app skeleton in a tar.gz in the ext repo since it makes applying patches very expensive and opaque \n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5261\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @kcrisman\n\nThis is somewhat of a multi issue ticket, but I don't think that doing all four of them individually will give us much of a benefit.\n\n* default the name to Sage-x.y.z.app - that way you can have many Sage releases in parallel :) \n* fix a bug that causes the app to fail to start if the name of the app contains spaces \n* remove the extra copyright work in credits as well as give credit to \"William Stein and the Sage Development Team\" \n* do not put the app skeleton in a tar.gz in the ext repo since it makes applying patches very expensive and opaque \n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5261\n\n",
     "created_at": "2009-02-14T00:09:23Z",
     "labels": [
         "porting",
@@ -19,7 +19,7 @@ archive/issues_005261.json:
 ```
 Assignee: mabshoff
 
-CC:  kcrisman
+CC:  @kcrisman
 
 This is somewhat of a multi issue ticket, but I don't think that doing all four of them individually will give us much of a benefit.
 
@@ -131,16 +131,16 @@ Michael
 archive/issue_comments_040382.json:
 ```json
 {
-    "body": "Attachment [spaces-5261.patch](tarball://root/attachments/some-uuid/ticket5261/spaces-5261.patch) by iandrus created at 2009-11-28 09:05:20",
+    "body": "Attachment [spaces-5261.patch](tarball://root/attachments/some-uuid/ticket5261/spaces-5261.patch) by @gvol created at 2009-11-28 09:05:20",
     "created_at": "2009-11-28T09:05:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5261#issuecomment-40382",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
-Attachment [spaces-5261.patch](tarball://root/attachments/some-uuid/ticket5261/spaces-5261.patch) by iandrus created at 2009-11-28 09:05:20
+Attachment [spaces-5261.patch](tarball://root/attachments/some-uuid/ticket5261/spaces-5261.patch) by @gvol created at 2009-11-28 09:05:20
 
 
 
@@ -154,7 +154,7 @@ archive/issue_comments_040383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5261#issuecomment-40383",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_040384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5261#issuecomment-40384",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_040385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5261#issuecomment-40385",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_040386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5261#issuecomment-40386",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_040387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5261#issuecomment-40387",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_040388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5261#issuecomment-40388",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_040389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5261#issuecomment-40389",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_040390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5261#issuecomment-40390",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -312,7 +312,7 @@ archive/issue_comments_040391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5261#issuecomment-40391",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -330,7 +330,7 @@ archive/issue_comments_040392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5261#issuecomment-40392",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

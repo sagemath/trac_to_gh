@@ -14,7 +14,7 @@ archive/issues_006970.json:
     "title": "port R spkg to os x 10.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6970",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_057659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6970#issuecomment-57659",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_057660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6970#issuecomment-57660",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_057661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6970#issuecomment-57661",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

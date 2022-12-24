@@ -3,7 +3,7 @@
 archive/issues_005643.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nThe summary says it all...\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5643\n\n",
+    "body": "Assignee: @jhpalmieri\n\nThe summary says it all...\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5643\n\n",
     "created_at": "2009-03-30T20:15:26Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_005643.json:
     "title": "[with patch, needs review] trivial doctest patch for steenrod_algebra.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5643",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 The summary says it all...
 

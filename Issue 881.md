@@ -14,7 +14,7 @@ archive/issues_000881.json:
     "title": "new notebook bug -- saving a worksheet gets rid of all the html between cells?!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/881",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_005452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/881#issuecomment-5452",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -56,7 +56,7 @@ archive/issue_comments_005453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/881#issuecomment-5453",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_005454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/881#issuecomment-5454",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

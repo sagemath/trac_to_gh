@@ -3,7 +3,7 @@
 archive/issues_003665.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3665\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3665\n\n",
     "created_at": "2008-07-16T00:44:45Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_003665.json:
     "title": "add initial species code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3665",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3665
 archive/issue_comments_025906.json:
 ```json
 {
-    "body": "Attachment [trac_3665.patch](tarball://root/attachments/some-uuid/ticket3665/trac_3665.patch) by mhansen created at 2008-10-07 23:32:43",
+    "body": "Attachment [trac_3665.patch](tarball://root/attachments/some-uuid/ticket3665/trac_3665.patch) by @mwhansen created at 2008-10-07 23:32:43",
     "created_at": "2008-10-07T23:32:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3665#issuecomment-25906",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3665.patch](tarball://root/attachments/some-uuid/ticket3665/trac_3665.patch) by mhansen created at 2008-10-07 23:32:43
+Attachment [trac_3665.patch](tarball://root/attachments/some-uuid/ticket3665/trac_3665.patch) by @mwhansen created at 2008-10-07 23:32:43
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_025907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3665#issuecomment-25907",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_025908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3665#issuecomment-25908",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -128,13 +128,13 @@ Merged in Sage 3.1.3.alpha3
 archive/issue_comments_025911.json:
 ```json
 {
-    "body": "Attachment [trac_3665-2.patch](tarball://root/attachments/some-uuid/ticket3665/trac_3665-2.patch) by nthiery created at 2009-04-14 03:52:53",
+    "body": "Attachment [trac_3665-2.patch](tarball://root/attachments/some-uuid/ticket3665/trac_3665-2.patch) by @nthiery created at 2009-04-14 03:52:53",
     "created_at": "2009-04-14T03:52:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3665#issuecomment-25911",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_3665-2.patch](tarball://root/attachments/some-uuid/ticket3665/trac_3665-2.patch) by nthiery created at 2009-04-14 03:52:53
+Attachment [trac_3665-2.patch](tarball://root/attachments/some-uuid/ticket3665/trac_3665-2.patch) by @nthiery created at 2009-04-14 03:52:53

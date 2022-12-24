@@ -3,7 +3,7 @@
 archive/issues_001574.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  craigcitro tornaria\n\nWhen applying a patch to a non `pyx|pxi|pxd` file (mwrank.cc in this case) and running `sage -b` odd things happen:\n\n```\n\nrunning install\nrunning build\nrunning build_py\nrunning build_ext\nbuilding 'sage.libs.mwrank.mwrank' extension\nerror: unknown file type '.pyx' (from 'sage/libs/mwrank/mwrank.pyx')\nsage: There was an error installing modified sage library code.\n\nrunning install\nrunning build\nrunning build_py\nrunning build_ext\nbuilding 'sage.libs.mwrank.mwrank' extension\nerror: unknown file type '.pyx' (from 'sage/libs/mwrank/mwrank.pyx')\nsage: There was an error installing modified sage library code.\n```\n\nTouching a pyx file that the particular file depends upon (mwrank.pyx) in this case fixes the issue and everything is properly recompiled.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1574\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @craigcitro @tornaria\n\nWhen applying a patch to a non `pyx|pxi|pxd` file (mwrank.cc in this case) and running `sage -b` odd things happen:\n\n```\n\nrunning install\nrunning build\nrunning build_py\nrunning build_ext\nbuilding 'sage.libs.mwrank.mwrank' extension\nerror: unknown file type '.pyx' (from 'sage/libs/mwrank/mwrank.pyx')\nsage: There was an error installing modified sage library code.\n\nrunning install\nrunning build\nrunning build_py\nrunning build_ext\nbuilding 'sage.libs.mwrank.mwrank' extension\nerror: unknown file type '.pyx' (from 'sage/libs/mwrank/mwrank.pyx')\nsage: There was an error installing modified sage library code.\n```\n\nTouching a pyx file that the particular file depends upon (mwrank.pyx) in this case fixes the issue and everything is properly recompiled.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1574\n\n",
     "created_at": "2007-12-20T12:14:49Z",
     "labels": [
         "distribution",
@@ -17,9 +17,9 @@ archive/issues_001574.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  craigcitro tornaria
+CC:  @craigcitro @tornaria
 
 When applying a patch to a non `pyx|pxi|pxd` file (mwrank.cc in this case) and running `sage -b` odd things happen:
 
@@ -147,7 +147,7 @@ archive/issue_comments_010015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1574#issuecomment-10015",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

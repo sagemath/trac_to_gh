@@ -14,7 +14,7 @@ archive/issues_000997.json:
     "title": "when installing sage and when installing sage binaries should do some sort of touch to avoid unecessary rebuilds",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/997",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty

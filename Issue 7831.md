@@ -3,7 +3,7 @@
 archive/issues_007831.json:
 ```json
 {
-    "body": "Assignee: pjeremy\n\n* !__init!__.py needs a sage-specific patch to prefer sage_fortran on FreeBSD.  Without this, numpy reports:\n\n```\nRunning from numpy source directory.\nF2PY Version 2\nblas_opt_info:\nblas_mkl_info:\n  libraries mkl,vml,guide not found in /home/peter/sage/sage-4.3/local/lib\n  NOT AVAILABLE\n\natlas_blas_threads_info:\nSetting PTATLAS=ATLAS\n  libraries ptf77blas,ptcblas,atlas_r not found in /home/peter/sage/sage-4.3/local/lib\n  NOT AVAILABLE\n\natlas_blas_info:\n  libraries f77blas,cblas,atlas_r not found in /home/peter/sage/sage-4.3/local/lib\n  NOT AVAILABLE\n\n/home/peter/sage/sage-4.3/spkg/build/numpy-1.3.0.p2/src/numpy/distutils/system_info.py:1383: UserWarning: \n    Atlas (http://math-atlas.sourceforge.net/) libraries not found.\n    Directories to search for the libraries can be specified in the\n    numpy/distutils/site.cfg file (section [atlas]) or by setting\n    the ATLAS environment variable.\n  warnings.warn(AtlasNotFoundError.__doc__)\nblas_info:\n  FOUND:\n    libraries = ['blas']\n    library_dirs = ['/home/peter/sage/sage-4.3/local/lib']\n    language = f77\n\n  FOUND:\n```\n\n\nThis also causes matplotlib to die with\n\n```\nREQUIRED DEPENDENCIES\n                 numpy: no\n                        * You must install numpy 1.1 or later to build\n                        * matplotlib.\n```\n\n\n* By default, numpy references threaded atlas libraries, as well as a custom variant on the lapack library, on FreeBSD. The reasoning behind this is unclear - there is nothing in the numpy documentation to indicate whether a threaded or non-threaded atlas is needed and the publicly available SVN logs do not mention this code. A query to the numpy mailing list elicited a response that either threaded or non-threaded atlas can be used and suggesting that the special-casing for FreeBSD may be obsolete. By default, atlas is built non-threaded and r-2.6.1.p23 assumes a non-threaded atlas and fails when only the threaded libraries are installed. Based on this, the special casing for FreeBSD was removed from numpy - it now uses the same libraries irrespective of the host OS.  This part of the patch could potentially be integrated upstream but this has not been done yet.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7831\n\n",
+    "body": "Assignee: @peterjeremy\n\n* !__init!__.py needs a sage-specific patch to prefer sage_fortran on FreeBSD.  Without this, numpy reports:\n\n```\nRunning from numpy source directory.\nF2PY Version 2\nblas_opt_info:\nblas_mkl_info:\n  libraries mkl,vml,guide not found in /home/peter/sage/sage-4.3/local/lib\n  NOT AVAILABLE\n\natlas_blas_threads_info:\nSetting PTATLAS=ATLAS\n  libraries ptf77blas,ptcblas,atlas_r not found in /home/peter/sage/sage-4.3/local/lib\n  NOT AVAILABLE\n\natlas_blas_info:\n  libraries f77blas,cblas,atlas_r not found in /home/peter/sage/sage-4.3/local/lib\n  NOT AVAILABLE\n\n/home/peter/sage/sage-4.3/spkg/build/numpy-1.3.0.p2/src/numpy/distutils/system_info.py:1383: UserWarning: \n    Atlas (http://math-atlas.sourceforge.net/) libraries not found.\n    Directories to search for the libraries can be specified in the\n    numpy/distutils/site.cfg file (section [atlas]) or by setting\n    the ATLAS environment variable.\n  warnings.warn(AtlasNotFoundError.__doc__)\nblas_info:\n  FOUND:\n    libraries = ['blas']\n    library_dirs = ['/home/peter/sage/sage-4.3/local/lib']\n    language = f77\n\n  FOUND:\n```\n\n\nThis also causes matplotlib to die with\n\n```\nREQUIRED DEPENDENCIES\n                 numpy: no\n                        * You must install numpy 1.1 or later to build\n                        * matplotlib.\n```\n\n\n* By default, numpy references threaded atlas libraries, as well as a custom variant on the lapack library, on FreeBSD. The reasoning behind this is unclear - there is nothing in the numpy documentation to indicate whether a threaded or non-threaded atlas is needed and the publicly available SVN logs do not mention this code. A query to the numpy mailing list elicited a response that either threaded or non-threaded atlas can be used and suggesting that the special-casing for FreeBSD may be obsolete. By default, atlas is built non-threaded and r-2.6.1.p23 assumes a non-threaded atlas and fails when only the threaded libraries are installed. Based on this, the special casing for FreeBSD was removed from numpy - it now uses the same libraries irrespective of the host OS.  This part of the patch could potentially be integrated upstream but this has not been done yet.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7831\n\n",
     "created_at": "2010-01-03T09:14:11Z",
     "labels": [
         "porting: BSD",
@@ -14,10 +14,10 @@ archive/issues_007831.json:
     "title": "numpy-1.3.0.p2 fixes for FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7831",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
-Assignee: pjeremy
+Assignee: @peterjeremy
 
 * !__init!__.py needs a sage-specific patch to prefer sage_fortran on FreeBSD.  Without this, numpy reports:
 
@@ -82,7 +82,7 @@ archive/issue_comments_067821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67821",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_067822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67822",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_067823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67823",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_067827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67827",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_067828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67828",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_067829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67829",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_067830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67830",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_067831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67831",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_067833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67833",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
@@ -319,16 +319,16 @@ The __init__.py changes don't appear to be needed any longer but the remaining f
 archive/issue_comments_067834.json:
 ```json
 {
-    "body": "Attachment [7831.numpy.patch](tarball://root/attachments/some-uuid/ticket7831/7831.numpy.patch) by kcrisman created at 2011-03-12 04:11:32\n\nNote that numpy 1.5.1 is on the way to Sage - #10792.   It would be great to get this incorporated with that.",
+    "body": "Attachment [7831.numpy.patch](tarball://root/attachments/some-uuid/ticket7831/7831.numpy.patch) by @kcrisman created at 2011-03-12 04:11:32\n\nNote that numpy 1.5.1 is on the way to Sage - #10792.   It would be great to get this incorporated with that.",
     "created_at": "2011-03-12T04:11:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67834",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [7831.numpy.patch](tarball://root/attachments/some-uuid/ticket7831/7831.numpy.patch) by kcrisman created at 2011-03-12 04:11:32
+Attachment [7831.numpy.patch](tarball://root/attachments/some-uuid/ticket7831/7831.numpy.patch) by @kcrisman created at 2011-03-12 04:11:32
 
 Note that numpy 1.5.1 is on the way to Sage - #10792.   It would be great to get this incorporated with that.
 
@@ -344,7 +344,7 @@ archive/issue_comments_067835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67835",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_067836.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67836",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -380,7 +380,7 @@ archive/issue_comments_067837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67837",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -398,7 +398,7 @@ archive/issue_comments_067838.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67838",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -418,7 +418,7 @@ archive/issue_comments_067839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67839",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -436,7 +436,7 @@ archive/issue_comments_067840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67840",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -454,7 +454,7 @@ archive/issue_comments_067841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67841",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

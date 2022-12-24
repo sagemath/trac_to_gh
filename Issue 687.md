@@ -14,7 +14,7 @@ archive/issues_000687.json:
     "title": "Wrap libSINGULAR's quotient ring implementation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/687",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: somebody
@@ -37,7 +37,7 @@ archive/issue_comments_003578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/687",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/687#issuecomment-3578",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -50,13 +50,13 @@ Changing status from new to assigned.
 archive/issue_comments_003579.json:
 ```json
 {
-    "body": "Changing assignee from somebody to malb.",
+    "body": "Changing assignee from somebody to @malb.",
     "created_at": "2007-10-21T22:51:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/687",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/687#issuecomment-3579",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from somebody to malb.
+Changing assignee from somebody to @malb.

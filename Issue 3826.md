@@ -3,7 +3,7 @@
 archive/issues_003826.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  saliola\n\nKeywords: interact empty string\n\nIn the notebook of sage 3.0.6: \n\nWrite\n\n\n```\n@interact\ndef f(a=input_box(default='aaa',type=str,label='Your name :')):\n    print a\n    print [1,2,3,a]\n```\n\n\nThen, delete 'aaa' from the box. Press enter and the list prints like this :\n\n\n```\n[1, 2, 3, '\\x00']\n```\n\n\nwhile should be :\n\n\n```\n[1, 2, 3, '']\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3826\n\n",
+    "body": "Assignee: boothby\n\nCC:  @saliola\n\nKeywords: interact empty string\n\nIn the notebook of sage 3.0.6: \n\nWrite\n\n\n```\n@interact\ndef f(a=input_box(default='aaa',type=str,label='Your name :')):\n    print a\n    print [1,2,3,a]\n```\n\n\nThen, delete 'aaa' from the box. Press enter and the list prints like this :\n\n\n```\n[1, 2, 3, '\\x00']\n```\n\n\nwhile should be :\n\n\n```\n[1, 2, 3, '']\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3826\n\n",
     "created_at": "2008-08-12T23:23:21Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_003826.json:
     "title": "Empty string in interact prints \\x00",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3826",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 Assignee: boothby
 
-CC:  saliola
+CC:  @saliola
 
 Keywords: interact empty string
 
@@ -64,7 +64,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3826
 archive/issue_comments_027216.json:
 ```json
 {
-    "body": "Changing assignee from boothby to itolkov.",
+    "body": "Changing assignee from boothby to @itolkov.",
     "created_at": "2008-08-13T00:01:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3826",
     "type": "issue_comment",
@@ -73,7 +73,7 @@ archive/issue_comments_027216.json:
 }
 ```
 
-Changing assignee from boothby to itolkov.
+Changing assignee from boothby to @itolkov.
 
 
 
@@ -122,16 +122,16 @@ Michael
 archive/issue_comments_027219.json:
 ```json
 {
-    "body": "Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3826/sage.patch) by itolkov created at 2008-08-13 21:19:06\n\n\n```\njavascript: encode64(\"\")\n```\n\nAA==\n\n\n```\nsage.server.notebook.interact.standard_b64decode(\"AA==\")\n```\n\n'\\x00'\n\nMy patch adds a check in the interact() function. However, encode64() and decode64() seem to be buggy. In particular, they are not inverses. For example,\n\n```\njavascript: encode64(decode64(\"\"))\n```\n\nAAAA",
+    "body": "Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3826/sage.patch) by @itolkov created at 2008-08-13 21:19:06\n\n\n```\njavascript: encode64(\"\")\n```\n\nAA==\n\n\n```\nsage.server.notebook.interact.standard_b64decode(\"AA==\")\n```\n\n'\\x00'\n\nMy patch adds a check in the interact() function. However, encode64() and decode64() seem to be buggy. In particular, they are not inverses. For example,\n\n```\njavascript: encode64(decode64(\"\"))\n```\n\nAAAA",
     "created_at": "2008-08-13T21:19:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3826#issuecomment-27219",
-    "user": "itolkov"
+    "user": "@itolkov"
 }
 ```
 
-Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3826/sage.patch) by itolkov created at 2008-08-13 21:19:06
+Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3826/sage.patch) by @itolkov created at 2008-08-13 21:19:06
 
 
 ```
@@ -203,7 +203,7 @@ archive/issue_comments_027222.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3826#issuecomment-27222",
-    "user": "itolkov"
+    "user": "@itolkov"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000361.json:
 ```json
 {
-    "body": "Assignee: was\n\nSee attached file.\n\n```\nFrom John Cremona:\n\nSorry I promised this a while ago.\n\nThis is essentially the file I gave to Magma in '02 or '03 which became\ntheir package/Geometry/CrvEll/minmodel.m after a bit of work by Nils\nBruin and Geoff Bailey.  From what I can tell their changes are only\ncosmetic (e.g. replacing my intrinsic with function somewhere, and also\nfiddling with the input & output parameters to make the order of terms\nconsistent with other Magma functions.\n\nApart from that I just replaced UniformizingParameter() with\nMyUniformizingParameter() as explained in the comment.\n\nYou can do what you like with this now!\n\nJohn\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/361\n\n",
+    "body": "Assignee: @williamstein\n\nSee attached file.\n\n```\nFrom John Cremona:\n\nSorry I promised this a while ago.\n\nThis is essentially the file I gave to Magma in '02 or '03 which became\ntheir package/Geometry/CrvEll/minmodel.m after a bit of work by Nils\nBruin and Geoff Bailey.  From what I can tell their changes are only\ncosmetic (e.g. replacing my intrinsic with function somewhere, and also\nfiddling with the input & output parameters to make the order of terms\nconsistent with other Magma functions.\n\nApart from that I just replaced UniformizingParameter() with\nMyUniformizingParameter() as explained in the comment.\n\nYou can do what you like with this now!\n\nJohn\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/361\n\n",
     "created_at": "2007-05-07T16:18:33Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_000361.json:
     "title": "implement tate's algorithm over number fields.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/361",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 See attached file.
 
@@ -58,7 +58,7 @@ archive/issue_comments_001754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/361",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/361#issuecomment-1754",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -89,16 +89,16 @@ Attachment [tate.m](tarball://root/attachments/some-uuid/ticket361/tate.m) by ma
 archive/issue_comments_001756.json:
 ```json
 {
-    "body": "Changing assignee from was to roed.",
+    "body": "Changing assignee from @williamstein to @roed314.",
     "created_at": "2007-10-09T13:11:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/361",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/361#issuecomment-1756",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Changing assignee from was to roed.
+Changing assignee from @williamstein to @roed314.
 
 
 
@@ -112,7 +112,7 @@ archive/issue_comments_001757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/361",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/361#issuecomment-1757",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_001758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/361",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/361#issuecomment-1758",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

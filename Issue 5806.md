@@ -3,7 +3,7 @@
 archive/issues_005806.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  jhpalmieri\n\nOn fedora 9, 32 bit this fails:\n\n\n\n```\nsage -t  \"devel/sage/sage/misc/sagedoc.py\"                  \n**********************************************************************\nFile \"/home/jaap/downloads/sage-3.4.1.rc0/devel/sage/sage/misc/sagedoc.py\", line 411:\n    sage: print \"ignore this\";  search_doc('this creates a polynomial ring') # random # this function has no output: it just prints a string\nException raised:\n    Traceback (most recent call last):\n      File \"/home/jaap/downloads/sage-3.4.1.rc0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/jaap/downloads/sage-3.4.1.rc0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/jaap/downloads/sage-3.4.1.rc0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_8[2]>\", line 1, in <module>\n        print \"ignore this\";  search_doc('this creates a polynomial ring') # random # this function has no output: it just prints a string###line 411:\n    sage: print \"ignore this\";  search_doc('this creates a polynomial ring') # random # this function has no output: it just prints a string\n      File \"/home/jaap/downloads/sage-3.4.1.rc0/local/lib/python2.5/site-packages/sage/misc/sagedoc.py\", line 431, in search_doc\n        pager()(r)\n      File \"/home/jaap/downloads/sage-3.4.1.rc0/local/lib/python2.5/site-packages/IPython/genutils.py\", line 1664, in page\n        term_flags = termios.tcgetattr(sys.stdout)\n    TypeError: argument must be an int, or have a fileno() method.\n**********************************************************************\n1 items had failures:\n   1 of   3 in __main__.example_8\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/jaap/downloads/sage-3.4.1.rc0/tmp/.doctest_sagedoc.py\n\t [46.3 s]\nexit code: 1024\n\n```\n\n\nWhatever :)\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/5806\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @jhpalmieri\n\nOn fedora 9, 32 bit this fails:\n\n\n\n```\nsage -t  \"devel/sage/sage/misc/sagedoc.py\"                  \n**********************************************************************\nFile \"/home/jaap/downloads/sage-3.4.1.rc0/devel/sage/sage/misc/sagedoc.py\", line 411:\n    sage: print \"ignore this\";  search_doc('this creates a polynomial ring') # random # this function has no output: it just prints a string\nException raised:\n    Traceback (most recent call last):\n      File \"/home/jaap/downloads/sage-3.4.1.rc0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/jaap/downloads/sage-3.4.1.rc0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/jaap/downloads/sage-3.4.1.rc0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_8[2]>\", line 1, in <module>\n        print \"ignore this\";  search_doc('this creates a polynomial ring') # random # this function has no output: it just prints a string###line 411:\n    sage: print \"ignore this\";  search_doc('this creates a polynomial ring') # random # this function has no output: it just prints a string\n      File \"/home/jaap/downloads/sage-3.4.1.rc0/local/lib/python2.5/site-packages/sage/misc/sagedoc.py\", line 431, in search_doc\n        pager()(r)\n      File \"/home/jaap/downloads/sage-3.4.1.rc0/local/lib/python2.5/site-packages/IPython/genutils.py\", line 1664, in page\n        term_flags = termios.tcgetattr(sys.stdout)\n    TypeError: argument must be an int, or have a fileno() method.\n**********************************************************************\n1 items had failures:\n   1 of   3 in __main__.example_8\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/jaap/downloads/sage-3.4.1.rc0/tmp/.doctest_sagedoc.py\n\t [46.3 s]\nexit code: 1024\n\n```\n\n\nWhatever :)\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/5806\n\n",
     "created_at": "2009-04-16T21:40:09Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_005806.json:
     "title": "failing test \"devel/sage/sage/misc/sagedoc.py\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5806",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: cwitty
 
-CC:  jhpalmieri
+CC:  @jhpalmieri
 
 On fedora 9, 32 bit this fails:
 
@@ -77,7 +77,7 @@ archive/issue_comments_045571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5806#issuecomment-45571",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_045572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5806#issuecomment-45572",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_045575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5806#issuecomment-45575",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_045576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5806#issuecomment-45576",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_045577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5806#issuecomment-45577",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_045578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5806#issuecomment-45578",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -349,7 +349,7 @@ archive/issue_comments_045579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5806#issuecomment-45579",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -369,7 +369,7 @@ archive/issue_comments_045580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5806#issuecomment-45580",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -407,7 +407,7 @@ archive/issue_comments_045581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5806#issuecomment-45581",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -443,7 +443,7 @@ archive/issue_comments_045582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5806#issuecomment-45582",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -463,7 +463,7 @@ archive/issue_comments_045583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5806#issuecomment-45583",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -481,7 +481,7 @@ archive/issue_comments_045584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5806#issuecomment-45584",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -548,7 +548,7 @@ archive/issue_comments_045586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5806#issuecomment-45586",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -595,7 +595,7 @@ archive/issue_comments_045588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5806#issuecomment-45588",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -621,7 +621,7 @@ archive/issue_comments_045589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5806#issuecomment-45589",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -648,7 +648,7 @@ archive/issue_comments_045590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5806#issuecomment-45590",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -683,7 +683,7 @@ archive/issue_comments_045591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5806#issuecomment-45591",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -696,16 +696,16 @@ Changing status from new to assigned.
 archive/issue_comments_045592.json:
 ```json
 {
-    "body": "Changing assignee from cwitty to ddrake.",
+    "body": "Changing assignee from cwitty to @dandrake.",
     "created_at": "2009-05-20T13:20:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5806#issuecomment-45592",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Changing assignee from cwitty to ddrake.
+Changing assignee from cwitty to @dandrake.
 
 
 
@@ -719,7 +719,7 @@ archive/issue_comments_045593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5806#issuecomment-45593",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -746,7 +746,7 @@ archive/issue_comments_045594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5806#issuecomment-45594",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -816,7 +816,7 @@ archive/issue_comments_045596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5806#issuecomment-45596",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -834,16 +834,16 @@ When doctesting on sage.math, I started seeing the "argument must be an int, or 
 archive/issue_comments_045597.json:
 ```json
 {
-    "body": "Attachment [trac_5806-part2.patch](tarball://root/attachments/some-uuid/ticket5806/trac_5806-part2.patch) by ddrake created at 2009-05-21 06:14:38\n\napply in addition to first patch; adds AUTHORS and removes nodoctest from sageinspect.py",
+    "body": "Attachment [trac_5806-part2.patch](tarball://root/attachments/some-uuid/ticket5806/trac_5806-part2.patch) by @dandrake created at 2009-05-21 06:14:38\n\napply in addition to first patch; adds AUTHORS and removes nodoctest from sageinspect.py",
     "created_at": "2009-05-21T06:14:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5806#issuecomment-45597",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_5806-part2.patch](tarball://root/attachments/some-uuid/ticket5806/trac_5806-part2.patch) by ddrake created at 2009-05-21 06:14:38
+Attachment [trac_5806-part2.patch](tarball://root/attachments/some-uuid/ticket5806/trac_5806-part2.patch) by @dandrake created at 2009-05-21 06:14:38
 
 apply in addition to first patch; adds AUTHORS and removes nodoctest from sageinspect.py
 
@@ -859,7 +859,7 @@ archive/issue_comments_045598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5806#issuecomment-45598",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -879,7 +879,7 @@ archive/issue_comments_045599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5806#issuecomment-45599",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -900,7 +900,7 @@ archive/issue_comments_045600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5806#issuecomment-45600",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -944,7 +944,7 @@ archive/issue_comments_045601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5806#issuecomment-45601",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -957,16 +957,16 @@ I think this is OS specific, and maybe it has to do with the BSD-style find comm
 archive/issue_comments_045602.json:
 ```json
 {
-    "body": "Attachment [trac_5806-part3.patch](tarball://root/attachments/some-uuid/ticket5806/trac_5806-part3.patch) by ddrake created at 2009-05-27 01:26:26\n\nReplying to [comment:29 jhpalmieri]:\n> I think this is OS specific, and maybe it has to do with the BSD-style find command on Mac OS X.  That is: with just your two patches, all tests pass on sage.math and on another linux box I have access to.  On my Intel Mac running OS X 10.5, I get the error listed above because of the leading slash \"/\".  Even worse, though, from the notebook interface, the links are broken, again because of the slash.  I think the right thing to do is to strip the leading slash if it's present.  Here's a patch which does that; it passes all tests on sage.math and on my mac.\n\nAh, perfect. Your patch3 passes doctests and works in the notebook on my own machine (amd64 Ubuntu, so no surprise there since it works on sage.math), and passes doctests on a 32-bit Fedora 10 machine.\n\nI did notice that `search_doc` was not actually searching the documentation...I was a little too quick with cut and paste. I'll upload a new version of the first patch (all I did was change a `'src'` to `'doc'`). Now we need to get someone to review this.",
+    "body": "Attachment [trac_5806-part3.patch](tarball://root/attachments/some-uuid/ticket5806/trac_5806-part3.patch) by @dandrake created at 2009-05-27 01:26:26\n\nReplying to [comment:29 jhpalmieri]:\n> I think this is OS specific, and maybe it has to do with the BSD-style find command on Mac OS X.  That is: with just your two patches, all tests pass on sage.math and on another linux box I have access to.  On my Intel Mac running OS X 10.5, I get the error listed above because of the leading slash \"/\".  Even worse, though, from the notebook interface, the links are broken, again because of the slash.  I think the right thing to do is to strip the leading slash if it's present.  Here's a patch which does that; it passes all tests on sage.math and on my mac.\n\nAh, perfect. Your patch3 passes doctests and works in the notebook on my own machine (amd64 Ubuntu, so no surprise there since it works on sage.math), and passes doctests on a 32-bit Fedora 10 machine.\n\nI did notice that `search_doc` was not actually searching the documentation...I was a little too quick with cut and paste. I'll upload a new version of the first patch (all I did was change a `'src'` to `'doc'`). Now we need to get someone to review this.",
     "created_at": "2009-05-27T01:26:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5806#issuecomment-45602",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_5806-part3.patch](tarball://root/attachments/some-uuid/ticket5806/trac_5806-part3.patch) by ddrake created at 2009-05-27 01:26:26
+Attachment [trac_5806-part3.patch](tarball://root/attachments/some-uuid/ticket5806/trac_5806-part3.patch) by @dandrake created at 2009-05-27 01:26:26
 
 Replying to [comment:29 jhpalmieri]:
 > I think this is OS specific, and maybe it has to do with the BSD-style find command on Mac OS X.  That is: with just your two patches, all tests pass on sage.math and on another linux box I have access to.  On my Intel Mac running OS X 10.5, I get the error listed above because of the leading slash "/".  Even worse, though, from the notebook interface, the links are broken, again because of the slash.  I think the right thing to do is to strip the leading slash if it's present.  Here's a patch which does that; it passes all tests on sage.math and on my mac.
@@ -982,16 +982,16 @@ I did notice that `search_doc` was not actually searching the documentation...I 
 archive/issue_comments_045603.json:
 ```json
 {
-    "body": "Attachment [trac_5806.patch](tarball://root/attachments/some-uuid/ticket5806/trac_5806.patch) by ddrake created at 2009-05-27 01:32:07",
+    "body": "Attachment [trac_5806.patch](tarball://root/attachments/some-uuid/ticket5806/trac_5806.patch) by @dandrake created at 2009-05-27 01:32:07",
     "created_at": "2009-05-27T01:32:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5806#issuecomment-45603",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_5806.patch](tarball://root/attachments/some-uuid/ticket5806/trac_5806.patch) by ddrake created at 2009-05-27 01:32:07
+Attachment [trac_5806.patch](tarball://root/attachments/some-uuid/ticket5806/trac_5806.patch) by @dandrake created at 2009-05-27 01:32:07
 
 
 
@@ -1005,7 +1005,7 @@ archive/issue_comments_045604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5806#issuecomment-45604",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -1023,7 +1023,7 @@ archive/issue_comments_045605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5806#issuecomment-45605",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -1041,7 +1041,7 @@ archive/issue_comments_045606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5806#issuecomment-45606",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1061,7 +1061,7 @@ archive/issue_comments_045607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5806#issuecomment-45607",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_004382.json:
     "title": "[with patch; needs review] notebook -- use sage-native-execute for ssh'ing for remote pexpect",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4382",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby

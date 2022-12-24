@@ -3,7 +3,7 @@
 archive/issues_007539.json:
 ```json
 {
-    "body": "Assignee: ohanar\n\nCC:  kevin.stueve robertwb was victor leif dimpase\n\nThis ticket was split away from #7013:\n\nLet's create a \"primes.p0.spkg\" (better names appreciated ...) which provides the \"prime_sieve.c\" code/functionality from T. Oliveira e Silva as a library.\n\nPrimary goal: The function \"primes_interval()\" from \"prime_sieve.c\" is accessible from a dynamic library \"libprimes.so\" resp. \"libprimes.dylib\" (resp. \"libprimes.dll\" if Cygwin is in our scope), which in turn compiles (and works correctly ...) on the platforms Sage supports, to be a part of future versions of Sage.\n\nSecondary goal: This spkg also provides (i.e. contains) certain precomputed tables from Kevin Stueve (which in a Sage installation will be installed under \"data/prime_pi_tables/\").\n\nTertiary goal: Provide the LMO code/functionality from Victor Miller in the same way, too. (Eventually outside the scope of this ticket, so potentially another follow-up ticket.)\n\nMaintainers till end 2010: Andrew Rohana, Georg S. Weber\n\nIssue created by migration from https://trac.sagemath.org/ticket/7539\n\n",
+    "body": "Assignee: @ohanar\n\nCC:  kevin.stueve @robertwb @williamstein victor @nexttime @dimpase\n\nThis ticket was split away from #7013:\n\nLet's create a \"primes.p0.spkg\" (better names appreciated ...) which provides the \"prime_sieve.c\" code/functionality from T. Oliveira e Silva as a library.\n\nPrimary goal: The function \"primes_interval()\" from \"prime_sieve.c\" is accessible from a dynamic library \"libprimes.so\" resp. \"libprimes.dylib\" (resp. \"libprimes.dll\" if Cygwin is in our scope), which in turn compiles (and works correctly ...) on the platforms Sage supports, to be a part of future versions of Sage.\n\nSecondary goal: This spkg also provides (i.e. contains) certain precomputed tables from Kevin Stueve (which in a Sage installation will be installed under \"data/prime_pi_tables/\").\n\nTertiary goal: Provide the LMO code/functionality from Victor Miller in the same way, too. (Eventually outside the scope of this ticket, so potentially another follow-up ticket.)\n\nMaintainers till end 2010: Andrew Rohana, Georg S. Weber\n\nIssue created by migration from https://trac.sagemath.org/ticket/7539\n\n",
     "created_at": "2009-11-26T21:48:06Z",
     "labels": [
         "number theory",
@@ -17,9 +17,9 @@ archive/issues_007539.json:
     "user": "GeorgSWeber"
 }
 ```
-Assignee: ohanar
+Assignee: @ohanar
 
-CC:  kevin.stueve robertwb was victor leif dimpase
+CC:  kevin.stueve @robertwb @williamstein victor @nexttime @dimpase
 
 This ticket was split away from #7013:
 
@@ -493,7 +493,7 @@ archive/issue_comments_063962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7539#issuecomment-63962",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -520,7 +520,7 @@ archive/issue_comments_063963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7539#issuecomment-63963",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -544,7 +544,7 @@ archive/issue_comments_063964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7539#issuecomment-63964",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -605,7 +605,7 @@ archive/issue_comments_063967.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7539#issuecomment-63967",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -680,7 +680,7 @@ archive/issue_comments_063969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7539#issuecomment-63969",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -763,7 +763,7 @@ archive/issue_comments_063971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7539#issuecomment-63971",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -783,7 +783,7 @@ archive/issue_comments_063972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7539#issuecomment-63972",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -883,7 +883,7 @@ archive/issue_comments_063977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7539#issuecomment-63977",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -896,16 +896,16 @@ Changing status from new to needs_review.
 archive/issue_comments_063978.json:
 ```json
 {
-    "body": "Attachment [02_primesieve-sage-main.patch](tarball://root/attachments/some-uuid/ticket7539/02_primesieve-sage-main.patch) by ohanar created at 2013-09-10 03:42:57\n\nI've reviewed this code while Kim was writing it, so other than the following questions/concerns, it has a positive review from me.\n\n1. What is our policy with licencing files in the Sage library. This patch adds two files which are marked as BSD licensed, is this ok? (given that the Sage library as a whole is GPL licensed)\n2. What is the current policy on adding new standard SPKGs? At some point it was decided that all new SPKGs had to be optional before they were made standard, but this requirement has been repeatedly ignored.\n3. Would it make sense stripping out the directory src/src/apps/gui? This would reduce the size of the spkg by over half.\n\nP.S. Kim, would you please update the list of developers on trac's homepage so people know who you are.",
+    "body": "Attachment [02_primesieve-sage-main.patch](tarball://root/attachments/some-uuid/ticket7539/02_primesieve-sage-main.patch) by @ohanar created at 2013-09-10 03:42:57\n\nI've reviewed this code while Kim was writing it, so other than the following questions/concerns, it has a positive review from me.\n\n1. What is our policy with licencing files in the Sage library. This patch adds two files which are marked as BSD licensed, is this ok? (given that the Sage library as a whole is GPL licensed)\n2. What is the current policy on adding new standard SPKGs? At some point it was decided that all new SPKGs had to be optional before they were made standard, but this requirement has been repeatedly ignored.\n3. Would it make sense stripping out the directory src/src/apps/gui? This would reduce the size of the spkg by over half.\n\nP.S. Kim, would you please update the list of developers on trac's homepage so people know who you are.",
     "created_at": "2013-09-10T03:42:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7539#issuecomment-63978",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
-Attachment [02_primesieve-sage-main.patch](tarball://root/attachments/some-uuid/ticket7539/02_primesieve-sage-main.patch) by ohanar created at 2013-09-10 03:42:57
+Attachment [02_primesieve-sage-main.patch](tarball://root/attachments/some-uuid/ticket7539/02_primesieve-sage-main.patch) by @ohanar created at 2013-09-10 03:42:57
 
 I've reviewed this code while Kim was writing it, so other than the following questions/concerns, it has a positive review from me.
 
@@ -927,7 +927,7 @@ archive/issue_comments_063979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7539#issuecomment-63979",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -1016,7 +1016,7 @@ archive/issue_comments_063983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7539#issuecomment-63983",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -1034,7 +1034,7 @@ archive/issue_comments_063984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7539#issuecomment-63984",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -1052,7 +1052,7 @@ archive/issue_comments_063985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7539#issuecomment-63985",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -1071,7 +1071,7 @@ archive/issue_comments_063986.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7539#issuecomment-63986",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -1089,7 +1089,7 @@ archive/issue_comments_063987.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7539#issuecomment-63987",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

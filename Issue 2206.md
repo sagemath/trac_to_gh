@@ -14,7 +14,7 @@ archive/issues_002206.json:
     "title": "Factorizations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2206",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: somebody
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2206
 archive/issue_comments_014559.json:
 ```json
 {
-    "body": "Attachment [factorization.patch](tarball://root/attachments/some-uuid/ticket2206/factorization.patch) by jason created at 2008-02-18 21:27:19",
+    "body": "Attachment [factorization.patch](tarball://root/attachments/some-uuid/ticket2206/factorization.patch) by @jasongrout created at 2008-02-18 21:27:19",
     "created_at": "2008-02-18T21:27:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2206#issuecomment-14559",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [factorization.patch](tarball://root/attachments/some-uuid/ticket2206/factorization.patch) by jason created at 2008-02-18 21:27:19
+Attachment [factorization.patch](tarball://root/attachments/some-uuid/ticket2206/factorization.patch) by @jasongrout created at 2008-02-18 21:27:19
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_014560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2206#issuecomment-14560",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_014561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2206#issuecomment-14561",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -127,16 +127,16 @@ Michael
 archive/issue_comments_014563.json:
 ```json
 {
-    "body": "Attachment [factorization.2.patch](tarball://root/attachments/some-uuid/ticket2206/factorization.2.patch) by AlexGhitza created at 2008-02-25 04:10:56\n\nRebased against 2.10.2.",
+    "body": "Attachment [factorization.2.patch](tarball://root/attachments/some-uuid/ticket2206/factorization.2.patch) by @aghitza created at 2008-02-25 04:10:56\n\nRebased against 2.10.2.",
     "created_at": "2008-02-25T04:10:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2206#issuecomment-14563",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [factorization.2.patch](tarball://root/attachments/some-uuid/ticket2206/factorization.2.patch) by AlexGhitza created at 2008-02-25 04:10:56
+Attachment [factorization.2.patch](tarball://root/attachments/some-uuid/ticket2206/factorization.2.patch) by @aghitza created at 2008-02-25 04:10:56
 
 Rebased against 2.10.2.
 

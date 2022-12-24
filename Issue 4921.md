@@ -14,7 +14,7 @@ archive/issues_004921.json:
     "title": "convert sage.modules.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4921",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4921
 archive/issue_comments_037347.json:
 ```json
 {
-    "body": "Attachment [trac_4921.patch](tarball://root/attachments/some-uuid/ticket4921/trac_4921.patch) by mhansen created at 2009-01-24 23:10:48",
+    "body": "Attachment [trac_4921.patch](tarball://root/attachments/some-uuid/ticket4921/trac_4921.patch) by @mwhansen created at 2009-01-24 23:10:48",
     "created_at": "2009-01-24T23:10:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4921#issuecomment-37347",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4921.patch](tarball://root/attachments/some-uuid/ticket4921/trac_4921.patch) by mhansen created at 2009-01-24 23:10:48
+Attachment [trac_4921.patch](tarball://root/attachments/some-uuid/ticket4921/trac_4921.patch) by @mwhansen created at 2009-01-24 23:10:48
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_037348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4921#issuecomment-37348",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -70,16 +70,16 @@ The patch should be applied on top of mhansen's.
 archive/issue_comments_037349.json:
 ```json
 {
-    "body": "Attachment [trac_4921_1.patch](tarball://root/attachments/some-uuid/ticket4921/trac_4921_1.patch) by AlexGhitza created at 2009-01-25 00:48:59\n\napply after trac_4921.patch",
+    "body": "Attachment [trac_4921_1.patch](tarball://root/attachments/some-uuid/ticket4921/trac_4921_1.patch) by @aghitza created at 2009-01-25 00:48:59\n\napply after trac_4921.patch",
     "created_at": "2009-01-25T00:48:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4921#issuecomment-37349",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_4921_1.patch](tarball://root/attachments/some-uuid/ticket4921/trac_4921_1.patch) by AlexGhitza created at 2009-01-25 00:48:59
+Attachment [trac_4921_1.patch](tarball://root/attachments/some-uuid/ticket4921/trac_4921_1.patch) by @aghitza created at 2009-01-25 00:48:59
 
 apply after trac_4921.patch
 
@@ -90,16 +90,16 @@ apply after trac_4921.patch
 archive/issue_comments_037350.json:
 ```json
 {
-    "body": "Attachment [sage.modules-final.patch](tarball://root/attachments/some-uuid/ticket4921/sage.modules-final.patch) by mhansen created at 2009-02-21 19:28:41",
+    "body": "Attachment [sage.modules-final.patch](tarball://root/attachments/some-uuid/ticket4921/sage.modules-final.patch) by @mwhansen created at 2009-02-21 19:28:41",
     "created_at": "2009-02-21T19:28:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4921#issuecomment-37350",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [sage.modules-final.patch](tarball://root/attachments/some-uuid/ticket4921/sage.modules-final.patch) by mhansen created at 2009-02-21 19:28:41
+Attachment [sage.modules-final.patch](tarball://root/attachments/some-uuid/ticket4921/sage.modules-final.patch) by @mwhansen created at 2009-02-21 19:28:41
 
 
 

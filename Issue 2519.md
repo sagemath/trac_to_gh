@@ -3,7 +3,7 @@
 archive/issues_002519.json:
 ```json
 {
-    "body": "Assignee: saliola\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2519\n\n",
+    "body": "Assignee: @saliola\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2519\n\n",
     "created_at": "2008-03-14T19:49:15Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_002519.json:
     "title": "Add support for posets, semi-lattices, etc. to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2519",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
-Assignee: saliola
+Assignee: @saliola
 
 CC:  sage-combinat
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2519
 archive/issue_comments_017184.json:
 ```json
 {
-    "body": "Attachment [posets.2008-04-23.patch](tarball://root/attachments/some-uuid/ticket2519/posets.2008-04-23.patch) by saliola created at 2008-04-23 17:49:01\n\nInitial support for finite posets. (Patch against sage-3.0.)",
+    "body": "Attachment [posets.2008-04-23.patch](tarball://root/attachments/some-uuid/ticket2519/posets.2008-04-23.patch) by @saliola created at 2008-04-23 17:49:01\n\nInitial support for finite posets. (Patch against sage-3.0.)",
     "created_at": "2008-04-23T17:49:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2519#issuecomment-17184",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [posets.2008-04-23.patch](tarball://root/attachments/some-uuid/ticket2519/posets.2008-04-23.patch) by saliola created at 2008-04-23 17:49:01
+Attachment [posets.2008-04-23.patch](tarball://root/attachments/some-uuid/ticket2519/posets.2008-04-23.patch) by @saliola created at 2008-04-23 17:49:01
 
 Initial support for finite posets. (Patch against sage-3.0.)
 
@@ -59,7 +59,7 @@ archive/issue_comments_017185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2519#issuecomment-17185",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_017186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2519#issuecomment-17186",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_017187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2519#issuecomment-17187",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_017188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2519#issuecomment-17188",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_017189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2519#issuecomment-17189",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -179,16 +179,16 @@ Apply both patches in order!
 archive/issue_comments_017190.json:
 ```json
 {
-    "body": "Attachment [posets.2008-05-15.patch](tarball://root/attachments/some-uuid/ticket2519/posets.2008-05-15.patch) by saliola created at 2008-05-16 07:06:37\n\nReplying to [comment:5 rlm]:\n> Regarding `show` versus `plot`, you don't even really need a `show`: most Sage objects give LaTeX when you call `show`, and if you do `sage: P.plot()`, the graphics object will appear.\n\nI'll leave it as is, as this is how it is implemented for Graphs/DiGraphs.\n \n> Also, it looks like you need both patches in order, right?\n\nYes, I patched against the previous patch. I've corrected what I wrote.\n\nI can provide a single patch instead if that is easier.",
+    "body": "Attachment [posets.2008-05-15.patch](tarball://root/attachments/some-uuid/ticket2519/posets.2008-05-15.patch) by @saliola created at 2008-05-16 07:06:37\n\nReplying to [comment:5 rlm]:\n> Regarding `show` versus `plot`, you don't even really need a `show`: most Sage objects give LaTeX when you call `show`, and if you do `sage: P.plot()`, the graphics object will appear.\n\nI'll leave it as is, as this is how it is implemented for Graphs/DiGraphs.\n \n> Also, it looks like you need both patches in order, right?\n\nYes, I patched against the previous patch. I've corrected what I wrote.\n\nI can provide a single patch instead if that is easier.",
     "created_at": "2008-05-16T07:06:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2519#issuecomment-17190",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [posets.2008-05-15.patch](tarball://root/attachments/some-uuid/ticket2519/posets.2008-05-15.patch) by saliola created at 2008-05-16 07:06:37
+Attachment [posets.2008-05-15.patch](tarball://root/attachments/some-uuid/ticket2519/posets.2008-05-15.patch) by @saliola created at 2008-05-16 07:06:37
 
 Replying to [comment:5 rlm]:
 > Regarding `show` versus `plot`, you don't even really need a `show`: most Sage objects give LaTeX when you call `show`, and if you do `sage: P.plot()`, the graphics object will appear.
@@ -213,7 +213,7 @@ archive/issue_comments_017191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2519#issuecomment-17191",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

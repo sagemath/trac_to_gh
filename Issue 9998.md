@@ -3,7 +3,7 @@
 archive/issues_009998.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  chapoton\n\nThis ticket lists those parts of Sage that have built in Sage, along with whether they have passed the tests. Unless otherwise stated, they results are from the following hardware. \n\n* IBM [RS/6000 7025 F50](http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.pseries.doc/hardware_docs/rs6000_7025f50series.htm)\n* 4 x 332 MHz 32-bit PowerPC CPUs\n* 3 GB RAM\n* A fairly wide mixture of disks sizes (3 x 9 GB, 1 x 18 GB, 2 x 36 GB and 1 x 73 GB)\n* DDS-4 tape drive \n* AIX 5.3 (A POSIX certified operating system)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9999\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @fchapoton\n\nThis ticket lists those parts of Sage that have built in Sage, along with whether they have passed the tests. Unless otherwise stated, they results are from the following hardware. \n\n* IBM [RS/6000 7025 F50](http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.pseries.doc/hardware_docs/rs6000_7025f50series.htm)\n* 4 x 332 MHz 32-bit PowerPC CPUs\n* 3 GB RAM\n* A fairly wide mixture of disks sizes (3 x 9 GB, 1 x 18 GB, 2 x 36 GB and 1 x 73 GB)\n* DDS-4 tape drive \n* AIX 5.3 (A POSIX certified operating system)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9999\n\n",
     "created_at": "2010-09-24T02:40:34Z",
     "labels": [
         "porting: AIX or HP-UX",
@@ -19,7 +19,7 @@ archive/issues_009998.json:
 ```
 Assignee: drkirkby
 
-CC:  chapoton
+CC:  @fchapoton
 
 This ticket lists those parts of Sage that have built in Sage, along with whether they have passed the tests. Unless otherwise stated, they results are from the following hardware. 
 
@@ -47,7 +47,7 @@ archive/issue_comments_100449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9998#issuecomment-100449",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_100450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9998#issuecomment-100450",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_100452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9998#issuecomment-100452",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_100454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9998#issuecomment-100454",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_100455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9998#issuecomment-100455",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_100456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9998#issuecomment-100456",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_100457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9998#issuecomment-100457",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

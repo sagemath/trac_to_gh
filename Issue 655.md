@@ -3,7 +3,7 @@
 archive/issues_000655.json:
 ```json
 {
-    "body": "Assignee: was\n\nApparently, LinBox can compute echelon forms for sparse matrices over finite fields. And it seems to be faster than what we have now:\n\nSAGE:\n\n```\nsage: A = random_matrix(GF(127),10000,10000,density=0.0002,sparse=True)\nsage: time A.echelonize()\nCPU times: user 99.64 s, sys: 0.22 s, total: 99.85 s\n```\n\n\nLinBox:\n\n```\nmatrix size :10000x10000\ndensity = 0.0002\nsize before = 19981\nGaussian elimination (no reordering)...done (9.08057 s)\nDONE\nsize after = 0 # Bug\n```\n\n\nI was told that `SparseMatrixBase::NoReordering` works but `InPlaceLinearPivoting` crashes.\n\nAlso, it claims to support GF(q) which is very very slow in SAGE right now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/655\n\n",
+    "body": "Assignee: @williamstein\n\nApparently, LinBox can compute echelon forms for sparse matrices over finite fields. And it seems to be faster than what we have now:\n\nSAGE:\n\n```\nsage: A = random_matrix(GF(127),10000,10000,density=0.0002,sparse=True)\nsage: time A.echelonize()\nCPU times: user 99.64 s, sys: 0.22 s, total: 99.85 s\n```\n\n\nLinBox:\n\n```\nmatrix size :10000x10000\ndensity = 0.0002\nsize before = 19981\nGaussian elimination (no reordering)...done (9.08057 s)\nDONE\nsize after = 0 # Bug\n```\n\n\nI was told that `SparseMatrixBase::NoReordering` works but `InPlaceLinearPivoting` crashes.\n\nAlso, it claims to support GF(q) which is very very slow in SAGE right now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/655\n\n",
     "created_at": "2007-09-14T09:22:40Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_000655.json:
     "title": "Wrap LinBox's Sparse Matrix Echelonizer over Finite Fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/655",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Apparently, LinBox can compute echelon forms for sparse matrices over finite fields. And it seems to be faster than what we have now:
 
@@ -62,7 +62,7 @@ archive/issue_comments_003405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/655#issuecomment-3405",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -77,16 +77,16 @@ Also, `InPlaceLinearPivoting` does not crash if called correctly and is often fa
 archive/issue_comments_003406.json:
 ```json
 {
-    "body": "Attachment [sparsegfp.patch](tarball://root/attachments/some-uuid/ticket655/sparsegfp.patch) by malb created at 2007-09-15 14:28:13",
+    "body": "Attachment [sparsegfp.patch](tarball://root/attachments/some-uuid/ticket655/sparsegfp.patch) by @malb created at 2007-09-15 14:28:13",
     "created_at": "2007-09-15T14:28:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/655#issuecomment-3406",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [sparsegfp.patch](tarball://root/attachments/some-uuid/ticket655/sparsegfp.patch) by malb created at 2007-09-15 14:28:13
+Attachment [sparsegfp.patch](tarball://root/attachments/some-uuid/ticket655/sparsegfp.patch) by @malb created at 2007-09-15 14:28:13
 
 
 
@@ -100,7 +100,7 @@ archive/issue_comments_003407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/655#issuecomment-3407",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -113,16 +113,16 @@ archive/issue_comments_003407.json:
 archive/issue_comments_003408.json:
 ```json
 {
-    "body": "Attachment [sparsegfq-solve.patch](tarball://root/attachments/some-uuid/ticket655/sparsegfq-solve.patch) by malb created at 2007-09-15 21:26:25",
+    "body": "Attachment [sparsegfq-solve.patch](tarball://root/attachments/some-uuid/ticket655/sparsegfq-solve.patch) by @malb created at 2007-09-15 21:26:25",
     "created_at": "2007-09-15T21:26:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/655#issuecomment-3408",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [sparsegfq-solve.patch](tarball://root/attachments/some-uuid/ticket655/sparsegfq-solve.patch) by malb created at 2007-09-15 21:26:25
+Attachment [sparsegfq-solve.patch](tarball://root/attachments/some-uuid/ticket655/sparsegfq-solve.patch) by @malb created at 2007-09-15 21:26:25
 
 
 
@@ -136,7 +136,7 @@ archive/issue_comments_003409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/655#issuecomment-3409",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

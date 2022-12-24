@@ -3,7 +3,7 @@
 archive/issues_001295.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nKeywords: graphs\n\nAdded code to make the butterfly graph:\n\n[http://mathworld.wolfram.com/ButterflyGraph.html](http://mathworld.wolfram.com/ButterflyGraph.html)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1295\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\nAdded code to make the butterfly graph:\n\n[http://mathworld.wolfram.com/ButterflyGraph.html](http://mathworld.wolfram.com/ButterflyGraph.html)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1295\n\n",
     "created_at": "2007-11-28T00:08:49Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001295.json:
     "title": "butterfly graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1295",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 Keywords: graphs
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1295
 archive/issue_comments_008132.json:
 ```json
 {
-    "body": "Attachment [butterfly-graph.patch](tarball://root/attachments/some-uuid/ticket1295/butterfly-graph.patch) by jason created at 2007-11-28 00:09:01",
+    "body": "Attachment [butterfly-graph.patch](tarball://root/attachments/some-uuid/ticket1295/butterfly-graph.patch) by @jasongrout created at 2007-11-28 00:09:01",
     "created_at": "2007-11-28T00:09:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1295",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1295#issuecomment-8132",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [butterfly-graph.patch](tarball://root/attachments/some-uuid/ticket1295/butterfly-graph.patch) by jason created at 2007-11-28 00:09:01
+Attachment [butterfly-graph.patch](tarball://root/attachments/some-uuid/ticket1295/butterfly-graph.patch) by @jasongrout created at 2007-11-28 00:09:01
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_008133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1295",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1295#issuecomment-8133",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -74,16 +74,16 @@ apply this instead of butterfly-graph.patch
 archive/issue_comments_008134.json:
 ```json
 {
-    "body": "Attachment [butterfly-graph-2.patch](tarball://root/attachments/some-uuid/ticket1295/butterfly-graph-2.patch) by jason created at 2007-11-28 06:44:21\n\nbutterfly-graph-2.patch adds a very fast bit-fiddling method from Robert Miller which works nicely when n<=30.",
+    "body": "Attachment [butterfly-graph-2.patch](tarball://root/attachments/some-uuid/ticket1295/butterfly-graph-2.patch) by @jasongrout created at 2007-11-28 06:44:21\n\nbutterfly-graph-2.patch adds a very fast bit-fiddling method from Robert Miller which works nicely when n<=30.",
     "created_at": "2007-11-28T06:44:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1295",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1295#issuecomment-8134",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [butterfly-graph-2.patch](tarball://root/attachments/some-uuid/ticket1295/butterfly-graph-2.patch) by jason created at 2007-11-28 06:44:21
+Attachment [butterfly-graph-2.patch](tarball://root/attachments/some-uuid/ticket1295/butterfly-graph-2.patch) by @jasongrout created at 2007-11-28 06:44:21
 
 butterfly-graph-2.patch adds a very fast bit-fiddling method from Robert Miller which works nicely when n<=30.
 
@@ -99,7 +99,7 @@ archive/issue_comments_008135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1295",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1295#issuecomment-8135",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

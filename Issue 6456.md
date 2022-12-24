@@ -14,7 +14,7 @@ archive/issues_006456.json:
     "title": "Upgrade cvxopt in sage from 0.9 to 1.1.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6456",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -39,7 +39,7 @@ archive/issue_comments_051979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-51979",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_051980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-51980",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_051981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-51981",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_051983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-51983",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_051984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-51984",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -198,16 +198,16 @@ Can you reproduce this on a stand-alone build of cvxopt?
 archive/issue_comments_051985.json:
 ```json
 {
-    "body": "Attachment [trac-6456.patch](tarball://root/attachments/some-uuid/ticket6456/trac-6456.patch) by dimpase created at 2010-02-04 16:22:54\n\npatch for cvxopt-1.1.2.p1/src/src/setup.py",
+    "body": "Attachment [trac-6456.patch](tarball://root/attachments/some-uuid/ticket6456/trac-6456.patch) by @dimpase created at 2010-02-04 16:22:54\n\npatch for cvxopt-1.1.2.p1/src/src/setup.py",
     "created_at": "2010-02-04T16:22:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-51985",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
-Attachment [trac-6456.patch](tarball://root/attachments/some-uuid/ticket6456/trac-6456.patch) by dimpase created at 2010-02-04 16:22:54
+Attachment [trac-6456.patch](tarball://root/attachments/some-uuid/ticket6456/trac-6456.patch) by @dimpase created at 2010-02-04 16:22:54
 
 patch for cvxopt-1.1.2.p1/src/src/setup.py
 
@@ -223,7 +223,7 @@ archive/issue_comments_051986.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-51986",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_051987.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-51987",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_051988.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-51988",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_051989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-51989",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -319,7 +319,7 @@ archive/issue_comments_051990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-51990",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -337,7 +337,7 @@ archive/issue_comments_051991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-51991",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_051993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-51993",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -478,7 +478,7 @@ archive/issue_comments_051995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-51995",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -570,7 +570,7 @@ archive/issue_comments_051997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-51997",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -609,7 +609,7 @@ archive/issue_comments_051998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-51998",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -695,7 +695,7 @@ archive/issue_comments_052000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52000",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -721,7 +721,7 @@ archive/issue_comments_052001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52001",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -739,7 +739,7 @@ archive/issue_comments_052002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52002",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -759,7 +759,7 @@ archive/issue_comments_052003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52003",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -777,7 +777,7 @@ archive/issue_comments_052004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52004",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -804,7 +804,7 @@ archive/issue_comments_052005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52005",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -822,7 +822,7 @@ archive/issue_comments_052006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52006",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -845,7 +845,7 @@ archive/issue_comments_052007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52007",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -871,7 +871,7 @@ archive/issue_comments_052008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52008",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -892,7 +892,7 @@ archive/issue_comments_052009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52009",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -920,7 +920,7 @@ archive/issue_comments_052010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52010",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -938,7 +938,7 @@ archive/issue_comments_052011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52011",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -959,7 +959,7 @@ archive/issue_comments_052012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52012",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -972,16 +972,16 @@ trival changes to the cvxopt chapter in the numerical sage tutorial
 archive/issue_comments_052013.json:
 ```json
 {
-    "body": "Attachment [6456-numerical_sage_cvxopt.patch](tarball://root/attachments/some-uuid/ticket6456/6456-numerical_sage_cvxopt.patch) by jhpalmieri created at 2010-04-19 21:58:42\n\nAny ideas why the new spkg is so much smaller than the old one?\n\n```\n-rw-r--r-- 1 palmieri palmieri 2463336 2010-02-11 08:56 spkg/standard/cvxopt-0.9.p8.spkg\n-rw-r--r-- 1 palmieri palmieri  733213 2010-03-24 09:49 spkg/standard/cvxopt-1.1.2.spkg\n```\n",
+    "body": "Attachment [6456-numerical_sage_cvxopt.patch](tarball://root/attachments/some-uuid/ticket6456/6456-numerical_sage_cvxopt.patch) by @jhpalmieri created at 2010-04-19 21:58:42\n\nAny ideas why the new spkg is so much smaller than the old one?\n\n```\n-rw-r--r-- 1 palmieri palmieri 2463336 2010-02-11 08:56 spkg/standard/cvxopt-0.9.p8.spkg\n-rw-r--r-- 1 palmieri palmieri  733213 2010-03-24 09:49 spkg/standard/cvxopt-1.1.2.spkg\n```\n",
     "created_at": "2010-04-19T21:58:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52013",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [6456-numerical_sage_cvxopt.patch](tarball://root/attachments/some-uuid/ticket6456/6456-numerical_sage_cvxopt.patch) by jhpalmieri created at 2010-04-19 21:58:42
+Attachment [6456-numerical_sage_cvxopt.patch](tarball://root/attachments/some-uuid/ticket6456/6456-numerical_sage_cvxopt.patch) by @jhpalmieri created at 2010-04-19 21:58:42
 
 Any ideas why the new spkg is so much smaller than the old one?
 
@@ -1003,7 +1003,7 @@ archive/issue_comments_052014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52014",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -1024,7 +1024,7 @@ archive/issue_comments_052015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52015",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -1042,7 +1042,7 @@ archive/issue_comments_052016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52016",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -1068,7 +1068,7 @@ archive/issue_comments_052017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52017",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -1108,7 +1108,7 @@ archive/issue_comments_052018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52018",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -1129,7 +1129,7 @@ archive/issue_comments_052019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52019",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -1153,7 +1153,7 @@ archive/issue_comments_052020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52020",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -1174,7 +1174,7 @@ archive/issue_comments_052021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52021",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -1199,7 +1199,7 @@ archive/issue_comments_052022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52022",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -1237,7 +1237,7 @@ archive/issue_comments_052024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52024",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -1255,7 +1255,7 @@ archive/issue_comments_052025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52025",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -1288,7 +1288,7 @@ archive/issue_comments_052026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52026",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 
@@ -1306,7 +1306,7 @@ archive/issue_comments_052027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52027",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -1326,7 +1326,7 @@ archive/issue_comments_052028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52028",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 
@@ -1458,7 +1458,7 @@ archive/issue_comments_052031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52031",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -1479,7 +1479,7 @@ archive/issue_comments_052032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52032",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -1507,7 +1507,7 @@ archive/issue_comments_052033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52033",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -1554,7 +1554,7 @@ archive/issue_comments_052034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52034",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 
@@ -1670,7 +1670,7 @@ archive/issue_comments_052038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52038",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 
@@ -1688,7 +1688,7 @@ archive/issue_comments_052039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52039",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -1759,16 +1759,16 @@ Dave
 archive/issue_comments_052041.json:
 ```json
 {
-    "body": "Attachment [6456-freebsd-spkg-install.patch](tarball://root/attachments/some-uuid/ticket6456/6456-freebsd-spkg-install.patch) by pjeremy created at 2010-07-27 23:01:20\n\n6456-freebsd-spkg-install.patch adds support for FreeBSD (this is a port of the patch in #9601).  I have compile-tested this but not yet tried to use the resultant module.\n\nNote that further changes are necessary for cvxopt-1.1.2.p1.spkg to work on most 64-bit OSs.\nCompiling in FreeBSD/amd64 (with or without the above patch) gives:\n\n```\ngcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I/mnt/sage-4.5/local/include -fPIC -DDLONG= -I/mnt/sage-4.5/local/include/python2.6 -c C/misc_solvers.c -o build/temp.freebsd-8.1-PRERELEASE-amd64-2.6/C/misc_solvers.o\nC/misc_solvers.c: In function 'scale':\nC/misc_solvers.c:152:13: warning: passing argument 1 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:152:13: warning: passing argument 4 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:155:13: warning: passing argument 3 of 'dgemv_' from incompatible pointer type\nC/misc_solvers.c:39:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:156:9: warning: passing argument 1 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:156:9: warning: passing argument 4 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:158:13: warning: passing argument 2 of 'dger_' from incompatible pointer type\nC/misc_solvers.c:41:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:160:13: warning: passing argument 1 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:160:13: warning: passing argument 4 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c: In function 'pack2':\nC/misc_solvers.c:459:17: warning: passing argument 3 of 'dlacpy_' from incompatible pointer type\nC/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:459:17: warning: passing argument 5 of 'dlacpy_' from incompatible pointer type\nC/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:461:17: warning: passing argument 1 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:463:17: warning: passing argument 3 of 'dlacpy_' from incompatible pointer type\nC/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:463:17: warning: passing argument 7 of 'dlacpy_' from incompatible pointer type\nC/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\n```\n\n\n`Py_ssize_t` is typedef'd from `ssize_t`, which is `long` on at least FreeBSD, Linux and Solaris.  I believe this is a blocking issue.",
+    "body": "Attachment [6456-freebsd-spkg-install.patch](tarball://root/attachments/some-uuid/ticket6456/6456-freebsd-spkg-install.patch) by @peterjeremy created at 2010-07-27 23:01:20\n\n6456-freebsd-spkg-install.patch adds support for FreeBSD (this is a port of the patch in #9601).  I have compile-tested this but not yet tried to use the resultant module.\n\nNote that further changes are necessary for cvxopt-1.1.2.p1.spkg to work on most 64-bit OSs.\nCompiling in FreeBSD/amd64 (with or without the above patch) gives:\n\n```\ngcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I/mnt/sage-4.5/local/include -fPIC -DDLONG= -I/mnt/sage-4.5/local/include/python2.6 -c C/misc_solvers.c -o build/temp.freebsd-8.1-PRERELEASE-amd64-2.6/C/misc_solvers.o\nC/misc_solvers.c: In function 'scale':\nC/misc_solvers.c:152:13: warning: passing argument 1 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:152:13: warning: passing argument 4 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:155:13: warning: passing argument 3 of 'dgemv_' from incompatible pointer type\nC/misc_solvers.c:39:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:156:9: warning: passing argument 1 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:156:9: warning: passing argument 4 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:158:13: warning: passing argument 2 of 'dger_' from incompatible pointer type\nC/misc_solvers.c:41:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:160:13: warning: passing argument 1 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:160:13: warning: passing argument 4 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c: In function 'pack2':\nC/misc_solvers.c:459:17: warning: passing argument 3 of 'dlacpy_' from incompatible pointer type\nC/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:459:17: warning: passing argument 5 of 'dlacpy_' from incompatible pointer type\nC/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:461:17: warning: passing argument 1 of 'dscal_' from incompatible pointer type\nC/misc_solvers.c:32:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:463:17: warning: passing argument 3 of 'dlacpy_' from incompatible pointer type\nC/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\nC/misc_solvers.c:463:17: warning: passing argument 7 of 'dlacpy_' from incompatible pointer type\nC/misc_solvers.c:49:13: note: expected 'int *' but argument is of type 'Py_ssize_t *'\n```\n\n\n`Py_ssize_t` is typedef'd from `ssize_t`, which is `long` on at least FreeBSD, Linux and Solaris.  I believe this is a blocking issue.",
     "created_at": "2010-07-27T23:01:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52041",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
-Attachment [6456-freebsd-spkg-install.patch](tarball://root/attachments/some-uuid/ticket6456/6456-freebsd-spkg-install.patch) by pjeremy created at 2010-07-27 23:01:20
+Attachment [6456-freebsd-spkg-install.patch](tarball://root/attachments/some-uuid/ticket6456/6456-freebsd-spkg-install.patch) by @peterjeremy created at 2010-07-27 23:01:20
 
 6456-freebsd-spkg-install.patch adds support for FreeBSD (this is a port of the patch in #9601).  I have compile-tested this but not yet tried to use the resultant module.
 
@@ -1822,7 +1822,7 @@ archive/issue_comments_052042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52042",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1905,7 +1905,7 @@ archive/issue_comments_052044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52044",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1925,7 +1925,7 @@ archive/issue_comments_052045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52045",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -1952,7 +1952,7 @@ archive/issue_comments_052046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52046",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -2125,7 +2125,7 @@ archive/issue_comments_052051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52051",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -2253,16 +2253,16 @@ Results from running cvxopt's self tests on a Linux system (sage.math), but sett
 archive/issue_comments_052055.json:
 ```json
 {
-    "body": "Attachment [cvxopt-1.1.2-Linux-tests.log](tarball://root/attachments/some-uuid/ticket6456/cvxopt-1.1.2-Linux-tests.log) by schilly created at 2010-07-28 17:58:48\n\nReplying to [comment:58 drkirkby]:\n> I'm not sure what to make of this. I don't feel this is ready, given the high failure rate of the self-tests. \n\nI've run them locally and many open a plot window. Do you have installed all the appropriate libraries for plotting? For me, this smells like it is clearly not designed for automated testing because I had to close all windows manually. Besides that, your script also tests `/chap7/covsel.bin` which is not a python file and also not found by the appropriate `/chap7/covsel` script due to relative paths.\n\nI appreciate to try to include testing - and in general it makes sense to do it - but my point of view is that it is much more important to update this years old library and get compiling working on all platforms and resort fixing the library later in separate tickets. 0.9 is not useful at all.",
+    "body": "Attachment [cvxopt-1.1.2-Linux-tests.log](tarball://root/attachments/some-uuid/ticket6456/cvxopt-1.1.2-Linux-tests.log) by @haraldschilly created at 2010-07-28 17:58:48\n\nReplying to [comment:58 drkirkby]:\n> I'm not sure what to make of this. I don't feel this is ready, given the high failure rate of the self-tests. \n\nI've run them locally and many open a plot window. Do you have installed all the appropriate libraries for plotting? For me, this smells like it is clearly not designed for automated testing because I had to close all windows manually. Besides that, your script also tests `/chap7/covsel.bin` which is not a python file and also not found by the appropriate `/chap7/covsel` script due to relative paths.\n\nI appreciate to try to include testing - and in general it makes sense to do it - but my point of view is that it is much more important to update this years old library and get compiling working on all platforms and resort fixing the library later in separate tickets. 0.9 is not useful at all.",
     "created_at": "2010-07-28T17:58:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52055",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
-Attachment [cvxopt-1.1.2-Linux-tests.log](tarball://root/attachments/some-uuid/ticket6456/cvxopt-1.1.2-Linux-tests.log) by schilly created at 2010-07-28 17:58:48
+Attachment [cvxopt-1.1.2-Linux-tests.log](tarball://root/attachments/some-uuid/ticket6456/cvxopt-1.1.2-Linux-tests.log) by @haraldschilly created at 2010-07-28 17:58:48
 
 Replying to [comment:58 drkirkby]:
 > I'm not sure what to make of this. I don't feel this is ready, given the high failure rate of the self-tests. 
@@ -2283,7 +2283,7 @@ archive/issue_comments_052056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52056",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -2296,16 +2296,16 @@ ok, i have to take that back, with spkg-check there are no popup windows and wit
 archive/issue_comments_052057.json:
 ```json
 {
-    "body": "Attachment [cvxopt-1.1.2-SAGE_CHECK.log](tarball://root/attachments/some-uuid/ticket6456/cvxopt-1.1.2-SAGE_CHECK.log) by schilly created at 2010-07-28 18:15:55\n\nubuntu 10.4, pentium 4",
+    "body": "Attachment [cvxopt-1.1.2-SAGE_CHECK.log](tarball://root/attachments/some-uuid/ticket6456/cvxopt-1.1.2-SAGE_CHECK.log) by @haraldschilly created at 2010-07-28 18:15:55\n\nubuntu 10.4, pentium 4",
     "created_at": "2010-07-28T18:15:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52057",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
-Attachment [cvxopt-1.1.2-SAGE_CHECK.log](tarball://root/attachments/some-uuid/ticket6456/cvxopt-1.1.2-SAGE_CHECK.log) by schilly created at 2010-07-28 18:15:55
+Attachment [cvxopt-1.1.2-SAGE_CHECK.log](tarball://root/attachments/some-uuid/ticket6456/cvxopt-1.1.2-SAGE_CHECK.log) by @haraldschilly created at 2010-07-28 18:15:55
 
 ubuntu 10.4, pentium 4
 
@@ -2321,7 +2321,7 @@ archive/issue_comments_052058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52058",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -2345,7 +2345,7 @@ archive/issue_comments_052059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52059",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -2434,7 +2434,7 @@ archive/issue_comments_052061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52061",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
@@ -2468,7 +2468,7 @@ archive/issue_comments_052062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52062",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -2616,7 +2616,7 @@ archive/issue_comments_052066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52066",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
@@ -2645,7 +2645,7 @@ archive/issue_comments_052067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52067",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -2669,7 +2669,7 @@ archive/issue_comments_052068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52068",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -2703,7 +2703,7 @@ archive/issue_comments_052069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52069",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -2822,7 +2822,7 @@ archive/issue_comments_052072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52072",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -2962,7 +2962,7 @@ archive/issue_comments_052074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52074",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -3044,7 +3044,7 @@ archive/issue_comments_052075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52075",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -3132,7 +3132,7 @@ archive/issue_comments_052077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52077",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
@@ -3381,7 +3381,7 @@ archive/issue_comments_052082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52082",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -3481,7 +3481,7 @@ archive/issue_comments_052084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52084",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -3545,7 +3545,7 @@ archive/issue_comments_052085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52085",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -3595,7 +3595,7 @@ archive/issue_comments_052087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52087",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -3619,7 +3619,7 @@ archive/issue_comments_052088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52088",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -3651,7 +3651,7 @@ archive/issue_comments_052089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52089",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -3671,7 +3671,7 @@ archive/issue_comments_052090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52090",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -3695,7 +3695,7 @@ archive/issue_comments_052091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52091",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -3722,7 +3722,7 @@ archive/issue_comments_052092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52092",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -3857,7 +3857,7 @@ archive/issue_comments_052098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52098",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -3881,7 +3881,7 @@ archive/issue_comments_052099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52099",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -3899,7 +3899,7 @@ archive/issue_comments_052100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52100",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -3917,7 +3917,7 @@ archive/issue_comments_052101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52101",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -3938,7 +3938,7 @@ archive/issue_comments_052102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52102",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -3956,7 +3956,7 @@ archive/issue_comments_052103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52103",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -3979,7 +3979,7 @@ archive/issue_comments_052104.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52104",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -3997,7 +3997,7 @@ archive/issue_comments_052105.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52105",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -4025,7 +4025,7 @@ archive/issue_comments_052106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52106",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -4043,7 +4043,7 @@ archive/issue_comments_052107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52107",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -4068,7 +4068,7 @@ archive/issue_comments_052108.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52108",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -4086,7 +4086,7 @@ archive/issue_comments_052109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52109",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -4127,7 +4127,7 @@ archive/issue_comments_052110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52110",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -4224,7 +4224,7 @@ archive/issue_comments_052113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52113",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -4258,7 +4258,7 @@ archive/issue_comments_052114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52114",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -4286,7 +4286,7 @@ archive/issue_comments_052115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52115",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -4304,7 +4304,7 @@ archive/issue_comments_052116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52116",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -4327,7 +4327,7 @@ archive/issue_comments_052117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52117",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -4345,7 +4345,7 @@ archive/issue_comments_052118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52118",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -4432,7 +4432,7 @@ archive/issue_comments_052121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52121",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -4474,7 +4474,7 @@ archive/issue_comments_052122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52122",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -4531,7 +4531,7 @@ archive/issue_comments_052124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52124",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -4655,7 +4655,7 @@ archive/issue_comments_052127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52127",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -4673,7 +4673,7 @@ archive/issue_comments_052128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52128",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -4706,7 +4706,7 @@ archive/issue_comments_052129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52129",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -4743,7 +4743,7 @@ archive/issue_comments_052130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52130",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -4775,7 +4775,7 @@ archive/issue_comments_052131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52131",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -4825,7 +4825,7 @@ archive/issue_comments_052132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52132",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -4852,7 +4852,7 @@ archive/issue_comments_052133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52133",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -4889,7 +4889,7 @@ archive/issue_comments_052134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52134",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -4907,7 +4907,7 @@ archive/issue_comments_052135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52135",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -4973,7 +4973,7 @@ archive/issue_comments_052136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52136",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -5017,7 +5017,7 @@ archive/issue_comments_052137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52137",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -5065,7 +5065,7 @@ archive/issue_comments_052138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52138",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -5083,7 +5083,7 @@ archive/issue_comments_052139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52139",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -5105,7 +5105,7 @@ archive/issue_comments_052140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52140",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -5128,7 +5128,7 @@ archive/issue_comments_052141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52141",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -5153,7 +5153,7 @@ archive/issue_comments_052142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52142",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -5217,7 +5217,7 @@ archive/issue_comments_052143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52143",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -5243,7 +5243,7 @@ archive/issue_comments_052144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52144",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -5264,7 +5264,7 @@ archive/issue_comments_052145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52145",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -5296,7 +5296,7 @@ archive/issue_comments_052146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52146",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -5339,7 +5339,7 @@ archive/issue_comments_052147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52147",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -5387,7 +5387,7 @@ archive/issue_comments_052149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52149",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -5412,7 +5412,7 @@ archive/issue_comments_052150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52150",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -5465,7 +5465,7 @@ archive/issue_comments_052151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52151",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -5496,7 +5496,7 @@ archive/issue_comments_052152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52152",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -5528,7 +5528,7 @@ archive/issue_comments_052153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52153",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -5622,7 +5622,7 @@ archive/issue_comments_052155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52155",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -5635,16 +5635,16 @@ Patch for spkg/standard/deps assuming #9418 has been applied
 archive/issue_comments_052156.json:
 ```json
 {
-    "body": "Attachment [6456_after_9418_deps.patch](tarball://root/attachments/some-uuid/ticket6456/6456_after_9418_deps.patch) by jdemeyer created at 2010-11-15 12:38:17\n\nPlease make it clear which patches have to be applied.  I am assuming the following, but I can't be sure:\n\n1. [attachment:6456-numerical_sage_cvxopt.patch]\n2. [attachment:6456-cvxopt-glpk-interface.patch]\n3. [attachment:6456_after_9418_deps.patch] (assuming #9418 is merged of course)\n\nAlso, you should change the commit message of the patches (use `hg qrefresh -e` for that) such that the first line contains the ticket number and a short description of the patch (you may use following lines for a longer description).",
+    "body": "Attachment [6456_after_9418_deps.patch](tarball://root/attachments/some-uuid/ticket6456/6456_after_9418_deps.patch) by @jdemeyer created at 2010-11-15 12:38:17\n\nPlease make it clear which patches have to be applied.  I am assuming the following, but I can't be sure:\n\n1. [attachment:6456-numerical_sage_cvxopt.patch]\n2. [attachment:6456-cvxopt-glpk-interface.patch]\n3. [attachment:6456_after_9418_deps.patch] (assuming #9418 is merged of course)\n\nAlso, you should change the commit message of the patches (use `hg qrefresh -e` for that) such that the first line contains the ticket number and a short description of the patch (you may use following lines for a longer description).",
     "created_at": "2010-11-15T12:38:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52156",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [6456_after_9418_deps.patch](tarball://root/attachments/some-uuid/ticket6456/6456_after_9418_deps.patch) by jdemeyer created at 2010-11-15 12:38:17
+Attachment [6456_after_9418_deps.patch](tarball://root/attachments/some-uuid/ticket6456/6456_after_9418_deps.patch) by @jdemeyer created at 2010-11-15 12:38:17
 
 Please make it clear which patches have to be applied.  I am assuming the following, but I can't be sure:
 
@@ -5666,7 +5666,7 @@ archive/issue_comments_052157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52157",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -5679,16 +5679,16 @@ option to linear_program() to use glpk as the solver
 archive/issue_comments_052158.json:
 ```json
 {
-    "body": "Attachment [6456-cvxopt-glpk-interface.patch](tarball://root/attachments/some-uuid/ticket6456/6456-cvxopt-glpk-interface.patch) by dimpase created at 2010-11-15 13:29:34\n\nReplying to [comment:150 jdemeyer]:\n> Please make it clear which patches have to be applied.  I am assuming the following, but I can't be sure:\n> \n>  1. [attachment:6456-numerical_sage_cvxopt.patch]\n>  1. [attachment:6456-cvxopt-glpk-interface.patch]\n>  1. [attachment:6456_after_9418_deps.patch] (assuming #9418 is merged of course)\n> \n\nright, only instead of [attachment:6456-numerical_sage_cvxopt.patch] please take [attachment:6456-numerical_sage_cvxopt-with-updated-commitmessage.patch] (I am not its author, so I can't just update).\n\n> Also, you should change the commit message of the patches (use `hg qrefresh -e` for that) such that the first line contains the ticket number and a short description of the patch (you may use following lines for a longer description).\n\ndone.\n\nDima",
+    "body": "Attachment [6456-cvxopt-glpk-interface.patch](tarball://root/attachments/some-uuid/ticket6456/6456-cvxopt-glpk-interface.patch) by @dimpase created at 2010-11-15 13:29:34\n\nReplying to [comment:150 jdemeyer]:\n> Please make it clear which patches have to be applied.  I am assuming the following, but I can't be sure:\n> \n>  1. [attachment:6456-numerical_sage_cvxopt.patch]\n>  1. [attachment:6456-cvxopt-glpk-interface.patch]\n>  1. [attachment:6456_after_9418_deps.patch] (assuming #9418 is merged of course)\n> \n\nright, only instead of [attachment:6456-numerical_sage_cvxopt.patch] please take [attachment:6456-numerical_sage_cvxopt-with-updated-commitmessage.patch] (I am not its author, so I can't just update).\n\n> Also, you should change the commit message of the patches (use `hg qrefresh -e` for that) such that the first line contains the ticket number and a short description of the patch (you may use following lines for a longer description).\n\ndone.\n\nDima",
     "created_at": "2010-11-15T13:29:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52158",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
-Attachment [6456-cvxopt-glpk-interface.patch](tarball://root/attachments/some-uuid/ticket6456/6456-cvxopt-glpk-interface.patch) by dimpase created at 2010-11-15 13:29:34
+Attachment [6456-cvxopt-glpk-interface.patch](tarball://root/attachments/some-uuid/ticket6456/6456-cvxopt-glpk-interface.patch) by @dimpase created at 2010-11-15 13:29:34
 
 Replying to [comment:150 jdemeyer]:
 > Please make it clear which patches have to be applied.  I am assuming the following, but I can't be sure:
@@ -5718,7 +5718,7 @@ archive/issue_comments_052159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52159",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -5736,7 +5736,7 @@ archive/issue_comments_052160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52160",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -5756,7 +5756,7 @@ archive/issue_comments_052161.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52161",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -5774,7 +5774,7 @@ archive/issue_comments_052162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52162",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -5797,7 +5797,7 @@ archive/issue_comments_052163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52163",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -5815,7 +5815,7 @@ archive/issue_comments_052164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52164",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -5828,16 +5828,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_052165.json:
 ```json
 {
-    "body": "Attachment [6456-numerical_sage_cvxopt-with-updated-commitmessage.patch](tarball://root/attachments/some-uuid/ticket6456/6456-numerical_sage_cvxopt-with-updated-commitmessage.patch) by dimpase created at 2010-11-15 15:41:37\n\nReplying to [comment:153 jdemeyer]:\n> Replying to [comment:151 dimpase]:\n> > > Also, you should change the commit message of the patches (use `hg qrefresh -e` for that) such that the first line contains the ticket number and a short description of the patch (you may use following lines for a longer description).\n> > \n> > done.\n> \n> Except that the ticket number in [attachment:6456-numerical_sage_cvxopt-with-updated-commitmessage.patch] is wrong...\n\nAUB",
+    "body": "Attachment [6456-numerical_sage_cvxopt-with-updated-commitmessage.patch](tarball://root/attachments/some-uuid/ticket6456/6456-numerical_sage_cvxopt-with-updated-commitmessage.patch) by @dimpase created at 2010-11-15 15:41:37\n\nReplying to [comment:153 jdemeyer]:\n> Replying to [comment:151 dimpase]:\n> > > Also, you should change the commit message of the patches (use `hg qrefresh -e` for that) such that the first line contains the ticket number and a short description of the patch (you may use following lines for a longer description).\n> > \n> > done.\n> \n> Except that the ticket number in [attachment:6456-numerical_sage_cvxopt-with-updated-commitmessage.patch] is wrong...\n\nAUB",
     "created_at": "2010-11-15T15:41:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52165",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
-Attachment [6456-numerical_sage_cvxopt-with-updated-commitmessage.patch](tarball://root/attachments/some-uuid/ticket6456/6456-numerical_sage_cvxopt-with-updated-commitmessage.patch) by dimpase created at 2010-11-15 15:41:37
+Attachment [6456-numerical_sage_cvxopt-with-updated-commitmessage.patch](tarball://root/attachments/some-uuid/ticket6456/6456-numerical_sage_cvxopt-with-updated-commitmessage.patch) by @dimpase created at 2010-11-15 15:41:37
 
 Replying to [comment:153 jdemeyer]:
 > Replying to [comment:151 dimpase]:
@@ -5861,7 +5861,7 @@ archive/issue_comments_052166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52166",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -5895,7 +5895,7 @@ archive/issue_comments_052167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52167",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -5911,16 +5911,16 @@ Patch at #10309
 archive/issue_comments_052168.json:
 ```json
 {
-    "body": "Attachment [10309_cvxopt_doctest.patch](tarball://root/attachments/some-uuid/ticket6456/10309_cvxopt_doctest.patch) by jdemeyer created at 2010-11-22 14:28:34",
+    "body": "Attachment [10309_cvxopt_doctest.patch](tarball://root/attachments/some-uuid/ticket6456/10309_cvxopt_doctest.patch) by @jdemeyer created at 2010-11-22 14:28:34",
     "created_at": "2010-11-22T14:28:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52168",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [10309_cvxopt_doctest.patch](tarball://root/attachments/some-uuid/ticket6456/10309_cvxopt_doctest.patch) by jdemeyer created at 2010-11-22 14:28:34
+Attachment [10309_cvxopt_doctest.patch](tarball://root/attachments/some-uuid/ticket6456/10309_cvxopt_doctest.patch) by @jdemeyer created at 2010-11-22 14:28:34
 
 
 
@@ -5934,7 +5934,7 @@ archive/issue_comments_052169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52169",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -5952,7 +5952,7 @@ archive/issue_comments_052170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52170",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -5973,7 +5973,7 @@ archive/issue_comments_052171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52171",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -5997,7 +5997,7 @@ archive/issue_comments_052172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52172",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -6031,7 +6031,7 @@ archive/issue_comments_052173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52173",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -6067,7 +6067,7 @@ archive/issue_comments_052174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52174",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -6085,7 +6085,7 @@ archive/issue_comments_052175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52175",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -6103,7 +6103,7 @@ archive/issue_comments_052176.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52176",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -6121,7 +6121,7 @@ archive/issue_comments_052177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52177",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -6162,7 +6162,7 @@ archive/issue_comments_052179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52179",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -6184,7 +6184,7 @@ archive/issue_comments_052180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52180",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -6202,7 +6202,7 @@ archive/issue_comments_052181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6456#issuecomment-52181",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

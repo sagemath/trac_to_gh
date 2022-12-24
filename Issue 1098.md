@@ -3,7 +3,7 @@
 archive/issues_001098.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1098\n\n",
+    "body": "Assignee: @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1098\n\n",
     "created_at": "2007-11-04T03:00:11Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_001098.json:
     "title": "make rpy work with SAGE data types",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1098",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1098
 archive/issue_comments_006638.json:
 ```json
 {
-    "body": "Attachment [1098.patch](tarball://root/attachments/some-uuid/ticket1098/1098.patch) by mhansen created at 2007-11-04 05:18:59",
+    "body": "Attachment [1098.patch](tarball://root/attachments/some-uuid/ticket1098/1098.patch) by @mwhansen created at 2007-11-04 05:18:59",
     "created_at": "2007-11-04T05:18:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1098#issuecomment-6638",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1098.patch](tarball://root/attachments/some-uuid/ticket1098/1098.patch) by mhansen created at 2007-11-04 05:18:59
+Attachment [1098.patch](tarball://root/attachments/some-uuid/ticket1098/1098.patch) by @mwhansen created at 2007-11-04 05:18:59
 
 
 

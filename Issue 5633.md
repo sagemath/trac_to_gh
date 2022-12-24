@@ -14,7 +14,7 @@ archive/issues_005633.json:
     "title": "[with patch, needs review] add pix to the documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5633",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5633
 archive/issue_comments_043995.json:
 ```json
 {
-    "body": "Changing assignee from tba to jhpalmieri.",
+    "body": "Changing assignee from tba to @jhpalmieri.",
     "created_at": "2009-03-29T16:14:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5633",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5633#issuecomment-43995",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Changing assignee from tba to jhpalmieri.
+Changing assignee from tba to @jhpalmieri.
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_043996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5633",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5633#issuecomment-43996",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_043997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5633",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5633#issuecomment-43997",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_043999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5633",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5633#issuecomment-43999",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_044000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5633",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5633#issuecomment-44000",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_044002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5633",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5633#issuecomment-44002",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -193,16 +193,16 @@ Okay.  Note that this means that if someone decides to add pictures to the tutor
 archive/issue_comments_044003.json:
 ```json
 {
-    "body": "Attachment [pic.patch](tarball://root/attachments/some-uuid/ticket5633/pic.patch) by jhpalmieri created at 2009-04-06 05:12:55",
+    "body": "Attachment [pic.patch](tarball://root/attachments/some-uuid/ticket5633/pic.patch) by @jhpalmieri created at 2009-04-06 05:12:55",
     "created_at": "2009-04-06T05:12:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5633",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5633#issuecomment-44003",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [pic.patch](tarball://root/attachments/some-uuid/ticket5633/pic.patch) by jhpalmieri created at 2009-04-06 05:12:55
+Attachment [pic.patch](tarball://root/attachments/some-uuid/ticket5633/pic.patch) by @jhpalmieri created at 2009-04-06 05:12:55
 
 
 

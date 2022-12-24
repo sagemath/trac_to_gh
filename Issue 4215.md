@@ -14,7 +14,7 @@ archive/issues_004215.json:
     "title": "[with patch, needs review] Bug in creating sparse vectors using a dictionary",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4215",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd

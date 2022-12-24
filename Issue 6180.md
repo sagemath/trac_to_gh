@@ -14,7 +14,7 @@ archive/issues_006180.json:
     "title": "[with patch; needs review] fix typo in spkg-install for pynac",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6180",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -37,7 +37,7 @@ archive/issue_comments_049345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6180#issuecomment-49345",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_049346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6180#issuecomment-49346",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_049347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6180#issuecomment-49347",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

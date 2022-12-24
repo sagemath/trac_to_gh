@@ -3,7 +3,7 @@
 archive/issues_007576.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nThis patch makes several improvements to the prove_BSD function:\n\n- better handling of when the Heegner index is computed\n- speeds up several cases and makes some other cases possible\n\nIssue created by migration from https://trac.sagemath.org/ticket/7576\n\n",
+    "body": "Assignee: @JohnCremona\n\nThis patch makes several improvements to the prove_BSD function:\n\n- better handling of when the Heegner index is computed\n- speeds up several cases and makes some other cases possible\n\nIssue created by migration from https://trac.sagemath.org/ticket/7576\n\n",
     "created_at": "2009-12-01T22:03:36Z",
     "labels": [
         "elliptic curves",
@@ -14,10 +14,10 @@ archive/issues_007576.json:
     "title": "improvements to the prove_BSD function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7576",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 This patch makes several improvements to the prove_BSD function:
 
@@ -40,7 +40,7 @@ archive/issue_comments_064513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7576#issuecomment-64513",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -58,7 +58,7 @@ archive/issue_comments_064514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7576#issuecomment-64514",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_064515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7576#issuecomment-64515",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_064516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7576#issuecomment-64516",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_064517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7576#issuecomment-64517",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_064518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7576#issuecomment-64518",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_064519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7576#issuecomment-64519",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_064520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7576#issuecomment-64520",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_064521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7576#issuecomment-64521",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_064522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7576#issuecomment-64522",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -308,7 +308,7 @@ archive/issue_comments_064523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7576#issuecomment-64523",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -349,7 +349,7 @@ archive/issue_comments_064524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7576#issuecomment-64524",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -380,7 +380,7 @@ archive/issue_comments_064525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7576#issuecomment-64525",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -400,7 +400,7 @@ archive/issue_comments_064526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7576#issuecomment-64526",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -449,7 +449,7 @@ archive/issue_comments_064527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7576#issuecomment-64527",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -467,7 +467,7 @@ archive/issue_comments_064528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7576#issuecomment-64528",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -480,16 +480,16 @@ I wasn't able to include a doctest for `EllipticCurve('1014g1').prove_BSD(verbos
 archive/issue_comments_064529.json:
 ```json
 {
-    "body": "Attachment [trac_7576-flat.patch](tarball://root/attachments/some-uuid/ticket7576/trac_7576-flat.patch) by rlm created at 2010-01-19 01:56:54",
+    "body": "Attachment [trac_7576-flat.patch](tarball://root/attachments/some-uuid/ticket7576/trac_7576-flat.patch) by @rlmill created at 2010-01-19 01:56:54",
     "created_at": "2010-01-19T01:56:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7576#issuecomment-64529",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_7576-flat.patch](tarball://root/attachments/some-uuid/ticket7576/trac_7576-flat.patch) by rlm created at 2010-01-19 01:56:54
+Attachment [trac_7576-flat.patch](tarball://root/attachments/some-uuid/ticket7576/trac_7576-flat.patch) by @rlmill created at 2010-01-19 01:56:54
 
 
 
@@ -503,7 +503,7 @@ archive/issue_comments_064530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7576#issuecomment-64530",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -525,7 +525,7 @@ archive/issue_comments_064531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7576#issuecomment-64531",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -543,7 +543,7 @@ archive/issue_comments_064532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7576#issuecomment-64532",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -561,7 +561,7 @@ archive/issue_comments_064533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7576#issuecomment-64533",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

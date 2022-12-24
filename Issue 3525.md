@@ -3,7 +3,7 @@
 archive/issues_003525.json:
 ```json
 {
-    "body": "Assignee: was\n\nTake the static page at http://timothyclemans.com/nb_homepage/ and merge it into the Sage Notebook code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3525\n\n",
+    "body": "Assignee: @williamstein\n\nTake the static page at http://timothyclemans.com/nb_homepage/ and merge it into the Sage Notebook code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3525\n\n",
     "created_at": "2008-06-28T06:40:47Z",
     "labels": [
         "number theory",
@@ -17,7 +17,7 @@ archive/issues_003525.json:
     "user": "TimothyClemans"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Take the static page at http://timothyclemans.com/nb_homepage/ and merge it into the Sage Notebook code.
 
@@ -68,7 +68,7 @@ Changing component from number theory to notebook.
 archive/issue_comments_024852.json:
 ```json
 {
-    "body": "Changing assignee from was to TimothyClemans.",
+    "body": "Changing assignee from @williamstein to TimothyClemans.",
     "created_at": "2008-06-28T08:07:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_024852.json:
 }
 ```
 
-Changing assignee from was to TimothyClemans.
+Changing assignee from @williamstein to TimothyClemans.
 
 
 
@@ -225,16 +225,16 @@ used Tidy to deal with point 5 of Harald's criticism
 archive/issue_comments_024858.json:
 ```json
 {
-    "body": "Attachment [extcode-3525_2.patch](tarball://root/attachments/some-uuid/ticket3525/extcode-3525_2.patch) by was created at 2008-06-28 12:30:57",
+    "body": "Attachment [extcode-3525_2.patch](tarball://root/attachments/some-uuid/ticket3525/extcode-3525_2.patch) by @williamstein created at 2008-06-28 12:30:57",
     "created_at": "2008-06-28T12:30:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24858",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [extcode-3525_2.patch](tarball://root/attachments/some-uuid/ticket3525/extcode-3525_2.patch) by was created at 2008-06-28 12:30:57
+Attachment [extcode-3525_2.patch](tarball://root/attachments/some-uuid/ticket3525/extcode-3525_2.patch) by @williamstein created at 2008-06-28 12:30:57
 
 
 
@@ -278,7 +278,7 @@ archive/issue_comments_024860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24860",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -403,7 +403,7 @@ archive/issue_comments_024866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24866",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -421,7 +421,7 @@ archive/issue_comments_024867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24867",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -439,7 +439,7 @@ archive/issue_comments_024868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24868",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -457,7 +457,7 @@ archive/issue_comments_024869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24869",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -475,7 +475,7 @@ archive/issue_comments_024870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24870",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

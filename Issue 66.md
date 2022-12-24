@@ -3,7 +3,7 @@
 archive/issues_000066.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  robert.marik kcrisman kini\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/66\n\n",
+    "body": "Assignee: somebody\n\nCC:  @robert-marik @kcrisman @kini\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/66\n\n",
     "created_at": "2006-09-17T21:48:12Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_000066.json:
     "title": "notebook -- should be able export (=print) to latex/pdf/dvi",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/66",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
 
-CC:  robert.marik kcrisman kini
+CC:  @robert-marik @kcrisman @kini
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_000339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/66",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/66#issuecomment-339",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -139,16 +139,16 @@ http://wstein.org
 archive/issue_comments_000340.json:
 ```json
 {
-    "body": "Attachment [html2tex.txt](tarball://root/attachments/some-uuid/ticket66/html2tex.txt) by was created at 2007-09-23 17:27:10\n\nthis is a sed file to do something useful.",
+    "body": "Attachment [html2tex.txt](tarball://root/attachments/some-uuid/ticket66/html2tex.txt) by @williamstein created at 2007-09-23 17:27:10\n\nthis is a sed file to do something useful.",
     "created_at": "2007-09-23T17:27:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/66",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/66#issuecomment-340",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [html2tex.txt](tarball://root/attachments/some-uuid/ticket66/html2tex.txt) by was created at 2007-09-23 17:27:10
+Attachment [html2tex.txt](tarball://root/attachments/some-uuid/ticket66/html2tex.txt) by @williamstein created at 2007-09-23 17:27:10
 
 this is a sed file to do something useful.
 
@@ -164,7 +164,7 @@ archive/issue_comments_000341.json:
     "issue": "https://github.com/sagemath/sagetest/issues/66",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/66#issuecomment-341",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_000342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/66",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/66#issuecomment-342",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_000343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/66",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/66#issuecomment-343",
-    "user": "tjlahey"
+    "user": "@tjl"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_000344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/66",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/66#issuecomment-344",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_000345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/66",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/66#issuecomment-345",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_000346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/66",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/66#issuecomment-346",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_000347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/66",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/66#issuecomment-347",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_000348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/66",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/66#issuecomment-348",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_000349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/66",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/66#issuecomment-349",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_000350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/66",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/66#issuecomment-350",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -354,7 +354,7 @@ archive/issue_comments_000351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/66",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/66#issuecomment-351",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -372,7 +372,7 @@ archive/issue_comments_000352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/66",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/66#issuecomment-352",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -390,7 +390,7 @@ archive/issue_comments_000353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/66",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/66#issuecomment-353",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 

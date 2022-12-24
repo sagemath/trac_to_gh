@@ -3,7 +3,7 @@
 archive/issues_005310.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  zimmerma wstein boothby leif jpflori\n\nKeywords: msieve, factorization\n\nThis addition of Msieve will hopefully enhance Sage's Integer Factorization ability for all integers of a reasonable size, and provide the opportunity for users to utilize the Number Field Sieve.\n\nspkg located:  \n\nhttp://309codesign.com/code/\n\nAn explanation of Msieve from its documentation:\n\"There are plenty of algorithms for performing integer factorization. \nThe Msieve library implements most of them from scratch, and relies on\noptional external libraries for the rest of them. Trial division and\nPollard Rho is used on all inputs; if the result is less than 25 digits \nin size, tiny custom routines do the factoring. For larger numbers, the code\nswitches to the GMP-ECM library and runs the P-1, P+1 and ECM algorithms,\nexpending a user-configurable amount of effort to do so. If these do not \ncompletely factor the input number, the library switches to the heavy  \nartillery. Unless told otherwise, Msieve runs the self-initializing quadratic\nsieve algorithm, and if this doesn't factor the input number then you've\nfound a library problem. If you know what you're doing, Msieve also contains\na complete implementation of the number field sieve, that has helped complete\nsome of the largest public factorization efforts known.\"\nand\n\"To be as fast as possible. I claim (without proof) that for\n          completely factoring general inputs between 40 and 100 digits\n          in size, Msieve is faster than any other code implementing any\n          other algorithm.\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/5310\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @zimmermann6 wstein boothby @nexttime jpflori\n\nKeywords: msieve, factorization\n\nThis addition of Msieve will hopefully enhance Sage's Integer Factorization ability for all integers of a reasonable size, and provide the opportunity for users to utilize the Number Field Sieve.\n\nspkg located:  \n\nhttp://309codesign.com/code/\n\nAn explanation of Msieve from its documentation:\n\"There are plenty of algorithms for performing integer factorization. \nThe Msieve library implements most of them from scratch, and relies on\noptional external libraries for the rest of them. Trial division and\nPollard Rho is used on all inputs; if the result is less than 25 digits \nin size, tiny custom routines do the factoring. For larger numbers, the code\nswitches to the GMP-ECM library and runs the P-1, P+1 and ECM algorithms,\nexpending a user-configurable amount of effort to do so. If these do not \ncompletely factor the input number, the library switches to the heavy  \nartillery. Unless told otherwise, Msieve runs the self-initializing quadratic\nsieve algorithm, and if this doesn't factor the input number then you've\nfound a library problem. If you know what you're doing, Msieve also contains\na complete implementation of the number field sieve, that has helped complete\nsome of the largest public factorization efforts known.\"\nand\n\"To be as fast as possible. I claim (without proof) that for\n          completely factoring general inputs between 40 and 100 digits\n          in size, Msieve is faster than any other code implementing any\n          other algorithm.\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/5310\n\n",
     "created_at": "2009-02-19T04:25:19Z",
     "labels": [
         "interfaces",
@@ -19,7 +19,7 @@ archive/issues_005310.json:
 ```
 Assignee: mabshoff
 
-CC:  zimmerma wstein boothby leif jpflori
+CC:  @zimmermann6 wstein boothby @nexttime jpflori
 
 Keywords: msieve, factorization
 
@@ -83,7 +83,7 @@ archive/issue_comments_040864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40864",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_040865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40865",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_040869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40869",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -344,7 +344,7 @@ archive/issue_comments_040870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40870",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -455,16 +455,16 @@ If it fails again can you give os type and error info.  Thank you.
 archive/issue_comments_040875.json:
 ```json
 {
-    "body": "Attachment [msieve-1.47.spkg](tarball://root/attachments/some-uuid/ticket5310/msieve-1.47.spkg) by aapitzsch created at 2010-10-27 14:16:05\n\nI attached a patch for the msieve interface updated to version 1.47.\n\nSomeone has to check whether msieve can be compiled on every relevant system and if necessary update the spkg-file.\nIt works on x86_64.",
+    "body": "Attachment [msieve-1.47.spkg](tarball://root/attachments/some-uuid/ticket5310/msieve-1.47.spkg) by @a-andre created at 2010-10-27 14:16:05\n\nI attached a patch for the msieve interface updated to version 1.47.\n\nSomeone has to check whether msieve can be compiled on every relevant system and if necessary update the spkg-file.\nIt works on x86_64.",
     "created_at": "2010-10-27T14:16:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40875",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
-Attachment [msieve-1.47.spkg](tarball://root/attachments/some-uuid/ticket5310/msieve-1.47.spkg) by aapitzsch created at 2010-10-27 14:16:05
+Attachment [msieve-1.47.spkg](tarball://root/attachments/some-uuid/ticket5310/msieve-1.47.spkg) by @a-andre created at 2010-10-27 14:16:05
 
 I attached a patch for the msieve interface updated to version 1.47.
 
@@ -483,7 +483,7 @@ archive/issue_comments_040876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40876",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -501,7 +501,7 @@ archive/issue_comments_040877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40877",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -514,16 +514,16 @@ Remove assignee mabshoff.
 archive/issue_comments_040878.json:
 ```json
 {
-    "body": "Attachment [msieve1.47.patch](tarball://root/attachments/some-uuid/ticket5310/msieve1.47.patch) by aapitzsch created at 2010-11-03 08:38:45",
+    "body": "Attachment [msieve1.47.patch](tarball://root/attachments/some-uuid/ticket5310/msieve1.47.patch) by @a-andre created at 2010-11-03 08:38:45",
     "created_at": "2010-11-03T08:38:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40878",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
-Attachment [msieve1.47.patch](tarball://root/attachments/some-uuid/ticket5310/msieve1.47.patch) by aapitzsch created at 2010-11-03 08:38:45
+Attachment [msieve1.47.patch](tarball://root/attachments/some-uuid/ticket5310/msieve1.47.patch) by @a-andre created at 2010-11-03 08:38:45
 
 
 
@@ -532,16 +532,16 @@ Attachment [msieve1.47.patch](tarball://root/attachments/some-uuid/ticket5310/ms
 archive/issue_comments_040879.json:
 ```json
 {
-    "body": "Attachment [trac_5310_msieve_148.patch](tarball://root/attachments/some-uuid/ticket5310/trac_5310_msieve_148.patch) by aapitzsch created at 2011-01-17 17:13:18",
+    "body": "Attachment [trac_5310_msieve_148.patch](tarball://root/attachments/some-uuid/ticket5310/trac_5310_msieve_148.patch) by @a-andre created at 2011-01-17 17:13:18",
     "created_at": "2011-01-17T17:13:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40879",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
-Attachment [trac_5310_msieve_148.patch](tarball://root/attachments/some-uuid/ticket5310/trac_5310_msieve_148.patch) by aapitzsch created at 2011-01-17 17:13:18
+Attachment [trac_5310_msieve_148.patch](tarball://root/attachments/some-uuid/ticket5310/trac_5310_msieve_148.patch) by @a-andre created at 2011-01-17 17:13:18
 
 
 
@@ -633,7 +633,7 @@ archive/issue_comments_040883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40883",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -651,7 +651,7 @@ archive/issue_comments_040884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40884",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -664,16 +664,16 @@ see also #6232
 archive/issue_comments_040885.json:
 ```json
 {
-    "body": "Attachment [msieve-1.49.p0.spkg](tarball://root/attachments/some-uuid/ticket5310/msieve-1.49.p0.spkg) by aapitzsch created at 2011-11-01 18:36:22",
+    "body": "Attachment [msieve-1.49.p0.spkg](tarball://root/attachments/some-uuid/ticket5310/msieve-1.49.p0.spkg) by @a-andre created at 2011-11-01 18:36:22",
     "created_at": "2011-11-01T18:36:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40885",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
-Attachment [msieve-1.49.p0.spkg](tarball://root/attachments/some-uuid/ticket5310/msieve-1.49.p0.spkg) by aapitzsch created at 2011-11-01 18:36:22
+Attachment [msieve-1.49.p0.spkg](tarball://root/attachments/some-uuid/ticket5310/msieve-1.49.p0.spkg) by @a-andre created at 2011-11-01 18:36:22
 
 
 
@@ -687,7 +687,7 @@ archive/issue_comments_040886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40886",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -705,7 +705,7 @@ archive/issue_comments_040887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40887",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -723,7 +723,7 @@ archive/issue_comments_040888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40888",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -747,7 +747,7 @@ archive/issue_comments_040889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40889",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -765,7 +765,7 @@ archive/issue_comments_040890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40890",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -799,7 +799,7 @@ archive/issue_comments_040891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40891",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -819,7 +819,7 @@ archive/issue_comments_040892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40892",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -849,16 +849,16 @@ The `TMPDIR` environment variable must not be modified globally; if there's no o
 archive/issue_comments_040893.json:
 ```json
 {
-    "body": "Attachment [trac_5310_msieve_149.patch](tarball://root/attachments/some-uuid/ticket5310/trac_5310_msieve_149.patch) by aapitzsch created at 2011-11-12 15:40:36\n\nPatch updated.\n\nReplying to [comment:27 leif]:\n> Replying to [comment:25 aapitzsch]:\n> > [...] in case msieve isn't installed there is warning.\n> \n> How about printing that message and raising `NotImplementedError` (or `RuntimeError`)?\n> \nNow `NotImplementedError` is raised.\n> \n> *SAGE* should be *Sage* btw.\n> \nDone.\n> \n> The `TMPDIR` environment variable must not be modified globally; if there's no other way to tell `msieve` where it should put temporary files, a modified environment has to be passed to `msieve`.\n\nFixed.",
+    "body": "Attachment [trac_5310_msieve_149.patch](tarball://root/attachments/some-uuid/ticket5310/trac_5310_msieve_149.patch) by @a-andre created at 2011-11-12 15:40:36\n\nPatch updated.\n\nReplying to [comment:27 leif]:\n> Replying to [comment:25 aapitzsch]:\n> > [...] in case msieve isn't installed there is warning.\n> \n> How about printing that message and raising `NotImplementedError` (or `RuntimeError`)?\n> \nNow `NotImplementedError` is raised.\n> \n> *SAGE* should be *Sage* btw.\n> \nDone.\n> \n> The `TMPDIR` environment variable must not be modified globally; if there's no other way to tell `msieve` where it should put temporary files, a modified environment has to be passed to `msieve`.\n\nFixed.",
     "created_at": "2011-11-12T15:40:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40893",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
-Attachment [trac_5310_msieve_149.patch](tarball://root/attachments/some-uuid/ticket5310/trac_5310_msieve_149.patch) by aapitzsch created at 2011-11-12 15:40:36
+Attachment [trac_5310_msieve_149.patch](tarball://root/attachments/some-uuid/ticket5310/trac_5310_msieve_149.patch) by @a-andre created at 2011-11-12 15:40:36
 
 Patch updated.
 
@@ -890,7 +890,7 @@ archive/issue_comments_040894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40894",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -946,7 +946,7 @@ archive/issue_comments_040895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40895",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1076,7 +1076,7 @@ archive/issue_comments_040898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40898",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1094,7 +1094,7 @@ archive/issue_comments_040899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40899",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1169,7 +1169,7 @@ archive/issue_comments_040903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40903",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1201,7 +1201,7 @@ archive/issue_comments_040904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40904",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1255,7 +1255,7 @@ archive/issue_comments_040907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40907",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1273,7 +1273,7 @@ archive/issue_comments_040908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40908",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -1291,7 +1291,7 @@ archive/issue_comments_040909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40909",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

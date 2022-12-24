@@ -3,7 +3,7 @@
 archive/issues_001822.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1822\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1822\n\n",
     "created_at": "2008-01-18T01:04:14Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001822.json:
     "title": "update documentation for combinat/partition.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1822",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -39,7 +39,7 @@ archive/issue_comments_011526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1822#issuecomment-11526",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -112,16 +112,16 @@ Resolution: fixed
 archive/issue_comments_011530.json:
 ```json
 {
-    "body": "Attachment [1822_problems.patch](tarball://root/attachments/some-uuid/ticket1822/1822_problems.patch) by mhansen created at 2008-04-06 21:41:29\n\n1822_problems.patch fixes the issue with the set partitions.",
+    "body": "Attachment [1822_problems.patch](tarball://root/attachments/some-uuid/ticket1822/1822_problems.patch) by @mwhansen created at 2008-04-06 21:41:29\n\n1822_problems.patch fixes the issue with the set partitions.",
     "created_at": "2008-04-06T21:41:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1822#issuecomment-11530",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1822_problems.patch](tarball://root/attachments/some-uuid/ticket1822/1822_problems.patch) by mhansen created at 2008-04-06 21:41:29
+Attachment [1822_problems.patch](tarball://root/attachments/some-uuid/ticket1822/1822_problems.patch) by @mwhansen created at 2008-04-06 21:41:29
 
 1822_problems.patch fixes the issue with the set partitions.
 
@@ -137,7 +137,7 @@ archive/issue_comments_011531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1822#issuecomment-11531",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_011532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1822#issuecomment-11532",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

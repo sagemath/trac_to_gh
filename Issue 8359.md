@@ -14,7 +14,7 @@ archive/issues_008359.json:
     "title": "Coxeter groups as permutation groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8359",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 Assignee: sage-combinat
@@ -41,7 +41,7 @@ archive/issue_comments_074683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8359#issuecomment-74683",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_074684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8359#issuecomment-74684",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_074685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8359#issuecomment-74685",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_074686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8359#issuecomment-74686",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_074687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8359#issuecomment-74687",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_074688.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8359#issuecomment-74688",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_074689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8359#issuecomment-74689",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_074690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8359#issuecomment-74690",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_074691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8359#issuecomment-74691",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_074692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8359#issuecomment-74692",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_074693.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8359#issuecomment-74693",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_074694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8359#issuecomment-74694",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -267,16 +267,16 @@ Anne
 archive/issue_comments_074695.json:
 ```json
 {
-    "body": "Attachment [trac_8359-coxeter-groups-permutation-nt.patch](tarball://root/attachments/some-uuid/ticket8359/trac_8359-coxeter-groups-permutation-nt.patch) by aschilling created at 2013-02-04 23:07:09",
+    "body": "Attachment [trac_8359-coxeter-groups-permutation-nt.patch](tarball://root/attachments/some-uuid/ticket8359/trac_8359-coxeter-groups-permutation-nt.patch) by @anneschilling created at 2013-02-04 23:07:09",
     "created_at": "2013-02-04T23:07:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8359#issuecomment-74695",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
-Attachment [trac_8359-coxeter-groups-permutation-nt.patch](tarball://root/attachments/some-uuid/ticket8359/trac_8359-coxeter-groups-permutation-nt.patch) by aschilling created at 2013-02-04 23:07:09
+Attachment [trac_8359-coxeter-groups-permutation-nt.patch](tarball://root/attachments/some-uuid/ticket8359/trac_8359-coxeter-groups-permutation-nt.patch) by @anneschilling created at 2013-02-04 23:07:09
 
 
 
@@ -290,7 +290,7 @@ archive/issue_comments_074696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8359#issuecomment-74696",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -310,7 +310,7 @@ archive/issue_comments_074697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8359#issuecomment-74697",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

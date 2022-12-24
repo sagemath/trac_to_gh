@@ -14,7 +14,7 @@ archive/issues_009146.json:
     "title": "cygwin: gd doesn't correctly link in libpng with sage-4.4.3.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9146",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_085399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9146#issuecomment-85399",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_085400.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9146#issuecomment-85400",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_085401.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9146#issuecomment-85401",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_085402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9146#issuecomment-85402",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_085403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9146#issuecomment-85403",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_085404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9146#issuecomment-85404",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_085405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9146#issuecomment-85405",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_085406.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9146#issuecomment-85406",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_085407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9146#issuecomment-85407",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_085408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9146#issuecomment-85408",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_085409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9146#issuecomment-85409",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_085410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9146#issuecomment-85410",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_085411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9146#issuecomment-85411",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

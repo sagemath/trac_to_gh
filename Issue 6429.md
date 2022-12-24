@@ -3,7 +3,7 @@
 archive/issues_006429.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nCC:  ddrake craigcitro\n\nAs discussed in [this thread](http://groups.google.com/group/sage-devel/browse_thread/thread/603e2b5337993fc6?tvc=2) on sage-devel, the search_src, search_doc, and search_def functions use the unix 'find' command, and since there are different versions of the command which take incompatible arguments, there are problems with those functions.  The attached patch reworks all of these to use pure Python rather than 'find'.  It might be a little slower, but it should be more robust.\n\nThis patch also adds two new arguments to those functions.  From the docstring:\n\n```\n    - ``path_re`` (optional, default '') - regular expression which\n      the filename (including the path) must match.\n\n    - ``module`` (optional, default 'sage') - the module in which to\n      search.  The default is 'sage', the entire Sage library.\n```\n\n(Actually, `module` doesn't make sense for search_doc, so it's not available there.)\n\nFor example:\n\n```\nsearch_src(\"matrix\", module=\"sage.calculus\")\n```\n\nwith tab completion available as you type in \"sage.calculus\", or to accomplish essentially the same thing:\n\n```\nsearch_src(\"matrix\", path_re=\"calc\")\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6429\n\n",
+    "body": "Assignee: @jhpalmieri\n\nCC:  @dandrake @craigcitro\n\nAs discussed in [this thread](http://groups.google.com/group/sage-devel/browse_thread/thread/603e2b5337993fc6?tvc=2) on sage-devel, the search_src, search_doc, and search_def functions use the unix 'find' command, and since there are different versions of the command which take incompatible arguments, there are problems with those functions.  The attached patch reworks all of these to use pure Python rather than 'find'.  It might be a little slower, but it should be more robust.\n\nThis patch also adds two new arguments to those functions.  From the docstring:\n\n```\n    - ``path_re`` (optional, default '') - regular expression which\n      the filename (including the path) must match.\n\n    - ``module`` (optional, default 'sage') - the module in which to\n      search.  The default is 'sage', the entire Sage library.\n```\n\n(Actually, `module` doesn't make sense for search_doc, so it's not available there.)\n\nFor example:\n\n```\nsearch_src(\"matrix\", module=\"sage.calculus\")\n```\n\nwith tab completion available as you type in \"sage.calculus\", or to accomplish essentially the same thing:\n\n```\nsearch_src(\"matrix\", path_re=\"calc\")\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6429\n\n",
     "created_at": "2009-06-27T03:34:20Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_006429.json:
     "title": "[with patch; needs review] sagedoc: make search_src and friends less OS dependent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6429",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
-CC:  ddrake craigcitro
+CC:  @dandrake @craigcitro
 
 As discussed in [this thread](http://groups.google.com/group/sage-devel/browse_thread/thread/603e2b5337993fc6?tvc=2) on sage-devel, the search_src, search_doc, and search_def functions use the unix 'find' command, and since there are different versions of the command which take incompatible arguments, there are problems with those functions.  The attached patch reworks all of these to use pure Python rather than 'find'.  It might be a little slower, but it should be more robust.
 
@@ -64,7 +64,7 @@ archive/issue_comments_051633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6429#issuecomment-51633",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -80,16 +80,16 @@ This looks good, but I do have two notes:
 archive/issue_comments_051634.json:
 ```json
 {
-    "body": "Attachment [sagedoc_6429.patch](tarball://root/attachments/some-uuid/ticket6429/sagedoc_6429.patch) by jhpalmieri created at 2009-06-29 04:31:13\n\nOkay, this new patch just adds my name to the AUTHORS block.  Line numbers would be nice -- good luck!",
+    "body": "Attachment [sagedoc_6429.patch](tarball://root/attachments/some-uuid/ticket6429/sagedoc_6429.patch) by @jhpalmieri created at 2009-06-29 04:31:13\n\nOkay, this new patch just adds my name to the AUTHORS block.  Line numbers would be nice -- good luck!",
     "created_at": "2009-06-29T04:31:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6429#issuecomment-51634",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [sagedoc_6429.patch](tarball://root/attachments/some-uuid/ticket6429/sagedoc_6429.patch) by jhpalmieri created at 2009-06-29 04:31:13
+Attachment [sagedoc_6429.patch](tarball://root/attachments/some-uuid/ticket6429/sagedoc_6429.patch) by @jhpalmieri created at 2009-06-29 04:31:13
 
 Okay, this new patch just adds my name to the AUTHORS block.  Line numbers would be nice -- good luck!
 
@@ -105,7 +105,7 @@ archive/issue_comments_051635.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6429#issuecomment-51635",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -136,16 +136,16 @@ Your patch gets a positive review, although I've only tested it on sage.math and
 archive/issue_comments_051636.json:
 ```json
 {
-    "body": "Attachment [trac_6429_line_numbers.patch](tarball://root/attachments/some-uuid/ticket6429/trac_6429_line_numbers.patch) by ddrake created at 2009-06-29 23:50:59",
+    "body": "Attachment [trac_6429_line_numbers.patch](tarball://root/attachments/some-uuid/ticket6429/trac_6429_line_numbers.patch) by @dandrake created at 2009-06-29 23:50:59",
     "created_at": "2009-06-29T23:50:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6429#issuecomment-51636",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_6429_line_numbers.patch](tarball://root/attachments/some-uuid/ticket6429/trac_6429_line_numbers.patch) by ddrake created at 2009-06-29 23:50:59
+Attachment [trac_6429_line_numbers.patch](tarball://root/attachments/some-uuid/ticket6429/trac_6429_line_numbers.patch) by @dandrake created at 2009-06-29 23:50:59
 
 
 
@@ -159,7 +159,7 @@ archive/issue_comments_051637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6429#issuecomment-51637",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -172,16 +172,16 @@ Okay, trac was restarted and now the patch is available here.
 archive/issue_comments_051638.json:
 ```json
 {
-    "body": "Attachment [trac_6429_ref.patch](tarball://root/attachments/some-uuid/ticket6429/trac_6429_ref.patch) by jhpalmieri created at 2009-06-30 00:18:21\n\n> What do you think of the line numbers patch?\n\nLooks good except that line numbers are indexed starting at 0, and I think the first line of a file should be line 1, not line 0.  I've added a referee's patch to fix this.\n\nApply all three patches in this order: sagedoc_6429.patch, trac_6429_line_numbers.patch, trac_6429_ref.patch.",
+    "body": "Attachment [trac_6429_ref.patch](tarball://root/attachments/some-uuid/ticket6429/trac_6429_ref.patch) by @jhpalmieri created at 2009-06-30 00:18:21\n\n> What do you think of the line numbers patch?\n\nLooks good except that line numbers are indexed starting at 0, and I think the first line of a file should be line 1, not line 0.  I've added a referee's patch to fix this.\n\nApply all three patches in this order: sagedoc_6429.patch, trac_6429_line_numbers.patch, trac_6429_ref.patch.",
     "created_at": "2009-06-30T00:18:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6429#issuecomment-51638",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_6429_ref.patch](tarball://root/attachments/some-uuid/ticket6429/trac_6429_ref.patch) by jhpalmieri created at 2009-06-30 00:18:21
+Attachment [trac_6429_ref.patch](tarball://root/attachments/some-uuid/ticket6429/trac_6429_ref.patch) by @jhpalmieri created at 2009-06-30 00:18:21
 
 > What do you think of the line numbers patch?
 
@@ -201,7 +201,7 @@ archive/issue_comments_051639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6429#issuecomment-51639",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_051640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6429#issuecomment-51640",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_051641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6429#issuecomment-51641",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_051642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6429#issuecomment-51642",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

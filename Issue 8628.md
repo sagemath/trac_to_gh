@@ -3,7 +3,7 @@
 archive/issues_008628.json:
 ```json
 {
-    "body": "Assignee: roed\n\n(sage 4.3.1)\n\nabsolute or relative is the default?\n\n\n```\nsage: R = Zp(5)\nsage: R\n5-adic Ring with capped relative precision 20\nsage: R.<a> = Zq(25)\nsage: R\nUnramified Extension of 5-adic Ring with capped absolute precision 20 in a defined by (1 + O(5^20))*x^2 + (4 + O(5^20))*x + (2 + O(5^20))\nsage: R = Zq(5)\nsage: R\n5-adic Ring with capped absolute precision 20\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8628\n\n",
+    "body": "Assignee: @roed314\n\n(sage 4.3.1)\n\nabsolute or relative is the default?\n\n\n```\nsage: R = Zp(5)\nsage: R\n5-adic Ring with capped relative precision 20\nsage: R.<a> = Zq(25)\nsage: R\nUnramified Extension of 5-adic Ring with capped absolute precision 20 in a defined by (1 + O(5^20))*x^2 + (4 + O(5^20))*x + (2 + O(5^20))\nsage: R = Zq(5)\nsage: R\n5-adic Ring with capped absolute precision 20\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8628\n\n",
     "created_at": "2010-03-30T00:50:51Z",
     "labels": [
         "padics",
@@ -17,7 +17,7 @@ archive/issues_008628.json:
     "user": "dmharvey"
 }
 ```
-Assignee: roed
+Assignee: @roed314
 
 (sage 4.3.1)
 
@@ -108,7 +108,7 @@ archive/issue_comments_078227.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8628#issuecomment-78227",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_078228.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8628#issuecomment-78228",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_078229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8628#issuecomment-78229",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_078230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8628#issuecomment-78230",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_078231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8628#issuecomment-78231",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_078233.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8628#issuecomment-78233",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_078234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8628#issuecomment-78234",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_078235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8628#issuecomment-78235",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 

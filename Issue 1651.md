@@ -3,7 +3,7 @@
 archive/issues_001651.json:
 ```json
 {
-    "body": "Assignee: wdj\n\nReported by Harald Schilly:\n\nHere what I've tried (documentation does it a bit more \"difficult\",\nbut should be the same -- at least I hope so)\nhttp://www.sagemath.org/doc/html/const/node37.html\n\nC = HammingCode(2,GF(5))\nv = matrix(GF(5),[This is the Trac macro *1,0,0,2,1,0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,0,0,2,1,0-macro))\nC.decode(v)\n\nworks (at least no errors), but\n\nv = vector(GF(5),[1,0,0,2,1,0])\nC.decode(v)\n\nsays:\n\nTypeError: Gap produced error output\nPermutation: <expr> must be a positive integer (not a integer)\nexecuting $sage333:=(1, 0, 0, 2, 1, 0);;\n\nI can see the different braces in the output, but internally a 1xn/nx1\nmatrix should handled in some way the same as a vector.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1651\n\n",
+    "body": "Assignee: @wdjoyner\n\nReported by Harald Schilly:\n\nHere what I've tried (documentation does it a bit more \"difficult\",\nbut should be the same -- at least I hope so)\nhttp://www.sagemath.org/doc/html/const/node37.html\n\nC = HammingCode(2,GF(5))\nv = matrix(GF(5),[This is the Trac macro *1,0,0,2,1,0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,0,0,2,1,0-macro))\nC.decode(v)\n\nworks (at least no errors), but\n\nv = vector(GF(5),[1,0,0,2,1,0])\nC.decode(v)\n\nsays:\n\nTypeError: Gap produced error output\nPermutation: <expr> must be a positive integer (not a integer)\nexecuting $sage333:=(1, 0, 0, 2, 1, 0);;\n\nI can see the different braces in the output, but internally a 1xn/nx1\nmatrix should handled in some way the same as a vector.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1651\n\n",
     "created_at": "2008-01-01T14:46:56Z",
     "labels": [
         "coding theory",
@@ -14,10 +14,10 @@ archive/issues_001651.json:
     "title": "bug in decode",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1651",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: wdj
+Assignee: @wdjoyner
 
 Reported by Harald Schilly:
 
@@ -60,7 +60,7 @@ archive/issue_comments_010504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1651#issuecomment-10504",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_010505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1651#issuecomment-10505",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -93,16 +93,16 @@ patch for bug fix of decode in linear_code.py
 archive/issue_comments_010506.json:
 ```json
 {
-    "body": "Attachment [linear_code20080102.hg](tarball://root/attachments/some-uuid/ticket1651/linear_code20080102.hg) by mhansen created at 2008-01-13 13:44:40",
+    "body": "Attachment [linear_code20080102.hg](tarball://root/attachments/some-uuid/ticket1651/linear_code20080102.hg) by @mwhansen created at 2008-01-13 13:44:40",
     "created_at": "2008-01-13T13:44:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1651#issuecomment-10506",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [linear_code20080102.hg](tarball://root/attachments/some-uuid/ticket1651/linear_code20080102.hg) by mhansen created at 2008-01-13 13:44:40
+Attachment [linear_code20080102.hg](tarball://root/attachments/some-uuid/ticket1651/linear_code20080102.hg) by @mwhansen created at 2008-01-13 13:44:40
 
 
 
@@ -111,16 +111,16 @@ Attachment [linear_code20080102.hg](tarball://root/attachments/some-uuid/ticket1
 archive/issue_comments_010507.json:
 ```json
 {
-    "body": "Attachment [1651-doctest.patch](tarball://root/attachments/some-uuid/ticket1651/1651-doctest.patch) by mhansen created at 2008-01-15 06:41:55",
+    "body": "Attachment [1651-doctest.patch](tarball://root/attachments/some-uuid/ticket1651/1651-doctest.patch) by @mwhansen created at 2008-01-15 06:41:55",
     "created_at": "2008-01-15T06:41:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1651#issuecomment-10507",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1651-doctest.patch](tarball://root/attachments/some-uuid/ticket1651/1651-doctest.patch) by mhansen created at 2008-01-15 06:41:55
+Attachment [1651-doctest.patch](tarball://root/attachments/some-uuid/ticket1651/1651-doctest.patch) by @mwhansen created at 2008-01-15 06:41:55
 
 
 
@@ -134,7 +134,7 @@ archive/issue_comments_010508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1651#issuecomment-10508",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -147,16 +147,16 @@ Seems reasonable, I say apply.  The formatting on the 1651-doctest patch is not 
 archive/issue_comments_010509.json:
 ```json
 {
-    "body": "Attachment [linear_code20080127.hg](tarball://root/attachments/some-uuid/ticket1651/linear_code20080127.hg) by wdj created at 2008-01-27 17:07:45\n\nI added an attachment which includes (1) my fix of the H Schilly bug, (2) M Hansen's docstring addition (reformatted, as the referee suggested), (3) an additional doctest (as suggested by the referee).",
+    "body": "Attachment [linear_code20080127.hg](tarball://root/attachments/some-uuid/ticket1651/linear_code20080127.hg) by @wdjoyner created at 2008-01-27 17:07:45\n\nI added an attachment which includes (1) my fix of the H Schilly bug, (2) M Hansen's docstring addition (reformatted, as the referee suggested), (3) an additional doctest (as suggested by the referee).",
     "created_at": "2008-01-27T17:07:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1651#issuecomment-10509",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [linear_code20080127.hg](tarball://root/attachments/some-uuid/ticket1651/linear_code20080127.hg) by wdj created at 2008-01-27 17:07:45
+Attachment [linear_code20080127.hg](tarball://root/attachments/some-uuid/ticket1651/linear_code20080127.hg) by @wdjoyner created at 2008-01-27 17:07:45
 
 I added an attachment which includes (1) my fix of the H Schilly bug, (2) M Hansen's docstring addition (reformatted, as the referee suggested), (3) an additional doctest (as suggested by the referee).
 
@@ -194,7 +194,7 @@ archive/issue_comments_010511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1651#issuecomment-10511",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

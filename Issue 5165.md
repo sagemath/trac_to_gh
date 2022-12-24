@@ -3,7 +3,7 @@
 archive/issues_005165.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nConsider this situation:\n\n\n```\nsage: f = ModularForms(28,2).q_expansion_basis()[-1]\nsage: f\nq^7 + O(q^20)\n```\n\n\nAt this point, I would like to be able to do f.padded_list() and have this take f.prec() as default parameter.  It's not a big deal, but it would be more convenient than having to type f.padded_list(f.prec()).  There might be other situations (power series in general, for instance?) where this change could also be made.\n\nI'll have a patch up for this soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5165\n\n",
+    "body": "Assignee: @aghitza\n\nConsider this situation:\n\n\n```\nsage: f = ModularForms(28,2).q_expansion_basis()[-1]\nsage: f\nq^7 + O(q^20)\n```\n\n\nAt this point, I would like to be able to do f.padded_list() and have this take f.prec() as default parameter.  It's not a big deal, but it would be more convenient than having to type f.padded_list(f.prec()).  There might be other situations (power series in general, for instance?) where this change could also be made.\n\nI'll have a patch up for this soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5165\n\n",
     "created_at": "2009-02-03T05:59:54Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_005165.json:
     "title": "make padded_list use prec by default",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5165",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Consider this situation:
 
@@ -49,7 +49,7 @@ archive/issue_comments_039579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5165#issuecomment-39579",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_039580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5165#issuecomment-39580",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -82,16 +82,16 @@ See the attached patch.
 archive/issue_comments_039581.json:
 ```json
 {
-    "body": "Attachment [trac_5165.patch](tarball://root/attachments/some-uuid/ticket5165/trac_5165.patch) by AlexGhitza created at 2010-01-03 10:20:37",
+    "body": "Attachment [trac_5165.patch](tarball://root/attachments/some-uuid/ticket5165/trac_5165.patch) by @aghitza created at 2010-01-03 10:20:37",
     "created_at": "2010-01-03T10:20:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5165#issuecomment-39581",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_5165.patch](tarball://root/attachments/some-uuid/ticket5165/trac_5165.patch) by AlexGhitza created at 2010-01-03 10:20:37
+Attachment [trac_5165.patch](tarball://root/attachments/some-uuid/ticket5165/trac_5165.patch) by @aghitza created at 2010-01-03 10:20:37
 
 
 
@@ -105,7 +105,7 @@ archive/issue_comments_039582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5165#issuecomment-39582",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_039583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5165#issuecomment-39583",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_039584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5165#issuecomment-39584",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_039585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5165#issuecomment-39585",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_039586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5165#issuecomment-39586",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

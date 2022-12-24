@@ -3,7 +3,7 @@
 archive/issues_009053.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  minz\n\nThe last output below should obviously be True, but it is False.\n\n\n```\nsage: R.<x> = GF(7)[]\nsage: A = R^3\nsage: L = A.span([x*A.0 + (x^3 + 1)*A.1, x*A.2]); L\nFree module of degree 3 and rank 2 over Univariate Polynomial Ring in x over Finite Field of size 7\nEchelon basis matrix:\n[      x x^3 + 1       0]\n[      0       0       x]\nsage: M = A.span([x*L.0]); M\nFree module of degree 3 and rank 1 over Univariate Polynomial Ring in x over Finite Field of size 7\nEchelon basis matrix:\n[    x^2 x^4 + x       0]\nsage: M.0 in L\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9053\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  minz\n\nThe last output below should obviously be True, but it is False.\n\n\n```\nsage: R.<x> = GF(7)[]\nsage: A = R^3\nsage: L = A.span([x*A.0 + (x^3 + 1)*A.1, x*A.2]); L\nFree module of degree 3 and rank 2 over Univariate Polynomial Ring in x over Finite Field of size 7\nEchelon basis matrix:\n[      x x^3 + 1       0]\n[      0       0       x]\nsage: M = A.span([x*L.0]); M\nFree module of degree 3 and rank 1 over Univariate Polynomial Ring in x over Finite Field of size 7\nEchelon basis matrix:\n[    x^2 x^4 + x       0]\nsage: M.0 in L\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9053\n\n",
     "created_at": "2010-05-26T08:41:23Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_009053.json:
     "title": "Sage's new generic HNF doesn't quite work right wrt the free modules code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9053",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 CC:  minz
 
@@ -52,16 +52,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9053
 archive/issue_comments_083843.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to jason, was.",
+    "body": "Changing assignee from @aghitza to jason, was.",
     "created_at": "2010-09-02T10:59:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9053",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9053#issuecomment-83843",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from AlexGhitza to jason, was.
+Changing assignee from @aghitza to jason, was.
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_083844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9053",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9053#issuecomment-83844",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_083848.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9053",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9053#issuecomment-83848",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -174,16 +174,16 @@ line wrapping
 archive/issue_comments_083849.json:
 ```json
 {
-    "body": "Attachment [trac_9053_fixes_pivots.v2.patch](tarball://root/attachments/some-uuid/ticket9053/trac_9053_fixes_pivots.v2.patch) by kini created at 2011-03-22 00:06:10\n\nI can't replicate your doctest failures. Everything passes on sage.math, except the ever-troublesome devel/sage/sage/tests/startup.py , which I tried again individually with no problems. The fix itself looks good. Reference builds, though how that could be affected I don't know. IIRC all code should be within 79 columns, so I split some lines in this function for you while you're at it. Feel free to rewrite it if it looks ugly, haha.",
+    "body": "Attachment [trac_9053_fixes_pivots.v2.patch](tarball://root/attachments/some-uuid/ticket9053/trac_9053_fixes_pivots.v2.patch) by @kini created at 2011-03-22 00:06:10\n\nI can't replicate your doctest failures. Everything passes on sage.math, except the ever-troublesome devel/sage/sage/tests/startup.py , which I tried again individually with no problems. The fix itself looks good. Reference builds, though how that could be affected I don't know. IIRC all code should be within 79 columns, so I split some lines in this function for you while you're at it. Feel free to rewrite it if it looks ugly, haha.",
     "created_at": "2011-03-22T00:06:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9053",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9053#issuecomment-83849",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
-Attachment [trac_9053_fixes_pivots.v2.patch](tarball://root/attachments/some-uuid/ticket9053/trac_9053_fixes_pivots.v2.patch) by kini created at 2011-03-22 00:06:10
+Attachment [trac_9053_fixes_pivots.v2.patch](tarball://root/attachments/some-uuid/ticket9053/trac_9053_fixes_pivots.v2.patch) by @kini created at 2011-03-22 00:06:10
 
 I can't replicate your doctest failures. Everything passes on sage.math, except the ever-troublesome devel/sage/sage/tests/startup.py , which I tried again individually with no problems. The fix itself looks good. Reference builds, though how that could be affected I don't know. IIRC all code should be within 79 columns, so I split some lines in this function for you while you're at it. Feel free to rewrite it if it looks ugly, haha.
 
@@ -199,7 +199,7 @@ archive/issue_comments_083850.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9053",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9053#issuecomment-83850",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_083851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9053",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9053#issuecomment-83851",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_083852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9053",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9053#issuecomment-83852",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

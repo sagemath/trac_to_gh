@@ -3,7 +3,7 @@
 archive/issues_009871.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  polybori jhpalmieri alexanderdreyer\n\nWhen I try to build PolyBoRi on a Sun Ultra 27 running OpenSolaris, I notice the message:\n\n\n```\nGNU linker detected!\n```\n\n\nThis message is in the SConstruct file and comes from some discussions on #6437.\n\nIt would appear the test is not useful on OpenSolaris, as the linker now takes the GNU options too. however, I don't feel this is a the cause of the main problem. \n\nA problem exists in that the link-editor thinks the library contains code which is not position independant - i.e. it is not PIC. This can be seen with the `elfdump` command. \n\n\n```\ndrkirkby@hawk:~/sage-4.5.3/local/lib$ elfdump -d libpolybori-0.6.4.so | grep TEXTREL\n      [25]  TEXTREL           0                   \n      [34]  FLAGS             0x4                 [ TEXTREL ]\n```\n\n\nand, what I assume is part of PolyBoRi as the version number is identical. \n\n\n```\ndrkirkby@hawk:~/sage-4.5.3/local/lib$ elfdump -d libgroebner-0.6.4.so  | grep TEXTREL\n      [25]  TEXTREL           0                   \n      [34]  FLAGS             0x4                 [ TEXTREL ]\n```\n\n\nThis is a bad sign - see for example \n\nhttp://blogs.sun.com/rie/entry/my_relocations_don_t_fit\n\nThere should be no output from the above command, which is the case with most libraries. (Only ECL, PolyBoRi and Cliquer have this problem, but I've solved the Cliquer issue - see #9871)\n\nAs far as I can tell, -fPIC is used when building all the files, so there must be another reason for this problem. \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/9872\n\n",
+    "body": "Assignee: tbd\n\nCC:  polybori @jhpalmieri alexanderdreyer\n\nWhen I try to build PolyBoRi on a Sun Ultra 27 running OpenSolaris, I notice the message:\n\n\n```\nGNU linker detected!\n```\n\n\nThis message is in the SConstruct file and comes from some discussions on #6437.\n\nIt would appear the test is not useful on OpenSolaris, as the linker now takes the GNU options too. however, I don't feel this is a the cause of the main problem. \n\nA problem exists in that the link-editor thinks the library contains code which is not position independant - i.e. it is not PIC. This can be seen with the `elfdump` command. \n\n\n```\ndrkirkby@hawk:~/sage-4.5.3/local/lib$ elfdump -d libpolybori-0.6.4.so | grep TEXTREL\n      [25]  TEXTREL           0                   \n      [34]  FLAGS             0x4                 [ TEXTREL ]\n```\n\n\nand, what I assume is part of PolyBoRi as the version number is identical. \n\n\n```\ndrkirkby@hawk:~/sage-4.5.3/local/lib$ elfdump -d libgroebner-0.6.4.so  | grep TEXTREL\n      [25]  TEXTREL           0                   \n      [34]  FLAGS             0x4                 [ TEXTREL ]\n```\n\n\nThis is a bad sign - see for example \n\nhttp://blogs.sun.com/rie/entry/my_relocations_don_t_fit\n\nThere should be no output from the above command, which is the case with most libraries. (Only ECL, PolyBoRi and Cliquer have this problem, but I've solved the Cliquer issue - see #9871)\n\nAs far as I can tell, -fPIC is used when building all the files, so there must be another reason for this problem. \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/9872\n\n",
     "created_at": "2010-09-08T03:52:49Z",
     "labels": [
         "packages: standard",
@@ -19,7 +19,7 @@ archive/issues_009871.json:
 ```
 Assignee: tbd
 
-CC:  polybori jhpalmieri alexanderdreyer
+CC:  polybori @jhpalmieri alexanderdreyer
 
 When I try to build PolyBoRi on a Sun Ultra 27 running OpenSolaris, I notice the message:
 
@@ -79,7 +79,7 @@ archive/issue_comments_097555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9871",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9871#issuecomment-97555",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_097558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9871",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9871#issuecomment-97558",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_097560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9871",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9871#issuecomment-97560",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -310,7 +310,7 @@ archive/issue_comments_097562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9871",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9871#issuecomment-97562",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -361,7 +361,7 @@ archive/issue_comments_097564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9871",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9871#issuecomment-97564",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -451,7 +451,7 @@ archive/issue_comments_097566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9871",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9871#issuecomment-97566",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -513,7 +513,7 @@ archive/issue_comments_097568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9871",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9871#issuecomment-97568",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -535,7 +535,7 @@ archive/issue_comments_097569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9871",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9871#issuecomment-97569",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -601,7 +601,7 @@ archive/issue_comments_097572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9871",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9871#issuecomment-97572",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -641,7 +641,7 @@ archive/issue_comments_097574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9871",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9871#issuecomment-97574",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

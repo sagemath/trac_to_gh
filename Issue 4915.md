@@ -14,7 +14,7 @@ archive/issues_004915.json:
     "title": "convert sage.interfaces.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4915",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tba
@@ -37,7 +37,7 @@ archive/issue_comments_037304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4915",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4915#issuecomment-37304",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -50,16 +50,16 @@ Patch at http://sage.math.washington.edu/home/mhansen/trac_4915.patch
 archive/issue_comments_037305.json:
 ```json
 {
-    "body": "Attachment [sage.interfaces-final.patch](tarball://root/attachments/some-uuid/ticket4915/sage.interfaces-final.patch) by mhansen created at 2009-02-21 19:18:50",
+    "body": "Attachment [sage.interfaces-final.patch](tarball://root/attachments/some-uuid/ticket4915/sage.interfaces-final.patch) by @mwhansen created at 2009-02-21 19:18:50",
     "created_at": "2009-02-21T19:18:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4915",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4915#issuecomment-37305",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [sage.interfaces-final.patch](tarball://root/attachments/some-uuid/ticket4915/sage.interfaces-final.patch) by mhansen created at 2009-02-21 19:18:50
+Attachment [sage.interfaces-final.patch](tarball://root/attachments/some-uuid/ticket4915/sage.interfaces-final.patch) by @mwhansen created at 2009-02-21 19:18:50
 
 
 

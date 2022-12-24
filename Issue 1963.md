@@ -3,7 +3,7 @@
 archive/issues_001963.json:
 ```json
 {
-    "body": "Assignee: roed\n\nKeywords: p-adics\n\nAdds unramified and eisenstein extensions of Qp and Zp.  Adds printing features for p-adics, improves construction of p-adic elements, fixes some bugs and memleaks.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1963\n\n",
+    "body": "Assignee: @roed314\n\nKeywords: p-adics\n\nAdds unramified and eisenstein extensions of Qp and Zp.  Adds printing features for p-adics, improves construction of p-adic elements, fixes some bugs and memleaks.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1963\n\n",
     "created_at": "2008-01-28T22:49:59Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_001963.json:
     "title": "unramified and eisenstein extensions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1963",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
-Assignee: roed
+Assignee: @roed314
 
 Keywords: p-adics
 
@@ -39,7 +39,7 @@ archive/issue_comments_012677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1963#issuecomment-12677",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_012682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1963#issuecomment-12682",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_012684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1963#issuecomment-12684",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -264,16 +264,16 @@ Traceback (most recent call last):
 archive/issue_comments_012685.json:
 ```json
 {
-    "body": "Attachment [padic_ZZ_pX_CR_element-1.patch](tarball://root/attachments/some-uuid/ticket1963/padic_ZZ_pX_CR_element-1.patch) by robertwb created at 2008-02-06 06:52:33",
+    "body": "Attachment [padic_ZZ_pX_CR_element-1.patch](tarball://root/attachments/some-uuid/ticket1963/padic_ZZ_pX_CR_element-1.patch) by @robertwb created at 2008-02-06 06:52:33",
     "created_at": "2008-02-06T06:52:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1963#issuecomment-12685",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [padic_ZZ_pX_CR_element-1.patch](tarball://root/attachments/some-uuid/ticket1963/padic_ZZ_pX_CR_element-1.patch) by robertwb created at 2008-02-06 06:52:33
+Attachment [padic_ZZ_pX_CR_element-1.patch](tarball://root/attachments/some-uuid/ticket1963/padic_ZZ_pX_CR_element-1.patch) by @robertwb created at 2008-02-06 06:52:33
 
 
 
@@ -282,16 +282,16 @@ Attachment [padic_ZZ_pX_CR_element-1.patch](tarball://root/attachments/some-uuid
 archive/issue_comments_012686.json:
 ```json
 {
-    "body": "Attachment [padic_ZZ_pX_CR_element-2.patch](tarball://root/attachments/some-uuid/ticket1963/padic_ZZ_pX_CR_element-2.patch) by robertwb created at 2008-02-06 06:52:55",
+    "body": "Attachment [padic_ZZ_pX_CR_element-2.patch](tarball://root/attachments/some-uuid/ticket1963/padic_ZZ_pX_CR_element-2.patch) by @robertwb created at 2008-02-06 06:52:55",
     "created_at": "2008-02-06T06:52:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1963#issuecomment-12686",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [padic_ZZ_pX_CR_element-2.patch](tarball://root/attachments/some-uuid/ticket1963/padic_ZZ_pX_CR_element-2.patch) by robertwb created at 2008-02-06 06:52:55
+Attachment [padic_ZZ_pX_CR_element-2.patch](tarball://root/attachments/some-uuid/ticket1963/padic_ZZ_pX_CR_element-2.patch) by @robertwb created at 2008-02-06 06:52:55
 
 
 
@@ -300,16 +300,16 @@ Attachment [padic_ZZ_pX_CR_element-2.patch](tarball://root/attachments/some-uuid
 archive/issue_comments_012687.json:
 ```json
 {
-    "body": "Attachment [padic_capped_absolute_element.diff](tarball://root/attachments/some-uuid/ticket1963/padic_capped_absolute_element.diff) by robertwb created at 2008-02-06 09:31:51",
+    "body": "Attachment [padic_capped_absolute_element.diff](tarball://root/attachments/some-uuid/ticket1963/padic_capped_absolute_element.diff) by @robertwb created at 2008-02-06 09:31:51",
     "created_at": "2008-02-06T09:31:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1963#issuecomment-12687",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [padic_capped_absolute_element.diff](tarball://root/attachments/some-uuid/ticket1963/padic_capped_absolute_element.diff) by robertwb created at 2008-02-06 09:31:51
+Attachment [padic_capped_absolute_element.diff](tarball://root/attachments/some-uuid/ticket1963/padic_capped_absolute_element.diff) by @robertwb created at 2008-02-06 09:31:51
 
 
 
@@ -318,16 +318,16 @@ Attachment [padic_capped_absolute_element.diff](tarball://root/attachments/some-
 archive/issue_comments_012688.json:
 ```json
 {
-    "body": "Attachment [padic-printing-2.patch](tarball://root/attachments/some-uuid/ticket1963/padic-printing-2.patch) by robertwb created at 2008-02-06 12:05:24",
+    "body": "Attachment [padic-printing-2.patch](tarball://root/attachments/some-uuid/ticket1963/padic-printing-2.patch) by @robertwb created at 2008-02-06 12:05:24",
     "created_at": "2008-02-06T12:05:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1963#issuecomment-12688",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [padic-printing-2.patch](tarball://root/attachments/some-uuid/ticket1963/padic-printing-2.patch) by robertwb created at 2008-02-06 12:05:24
+Attachment [padic-printing-2.patch](tarball://root/attachments/some-uuid/ticket1963/padic-printing-2.patch) by @robertwb created at 2008-02-06 12:05:24
 
 
 
@@ -336,16 +336,16 @@ Attachment [padic-printing-2.patch](tarball://root/attachments/some-uuid/ticket1
 archive/issue_comments_012689.json:
 ```json
 {
-    "body": "Attachment [padic-printing-3.patch](tarball://root/attachments/some-uuid/ticket1963/padic-printing-3.patch) by kedlaya created at 2008-02-06 19:31:30",
+    "body": "Attachment [padic-printing-3.patch](tarball://root/attachments/some-uuid/ticket1963/padic-printing-3.patch) by @kedlaya created at 2008-02-06 19:31:30",
     "created_at": "2008-02-06T19:31:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1963#issuecomment-12689",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
-Attachment [padic-printing-3.patch](tarball://root/attachments/some-uuid/ticket1963/padic-printing-3.patch) by kedlaya created at 2008-02-06 19:31:30
+Attachment [padic-printing-3.patch](tarball://root/attachments/some-uuid/ticket1963/padic-printing-3.patch) by @kedlaya created at 2008-02-06 19:31:30
 
 
 
@@ -354,16 +354,16 @@ Attachment [padic-printing-3.patch](tarball://root/attachments/some-uuid/ticket1
 archive/issue_comments_012690.json:
 ```json
 {
-    "body": "Attachment [padics-review-all.hg](tarball://root/attachments/some-uuid/ticket1963/padics-review-all.hg) by robertwb created at 2008-02-08 18:04:53",
+    "body": "Attachment [padics-review-all.hg](tarball://root/attachments/some-uuid/ticket1963/padics-review-all.hg) by @robertwb created at 2008-02-08 18:04:53",
     "created_at": "2008-02-08T18:04:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1963#issuecomment-12690",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [padics-review-all.hg](tarball://root/attachments/some-uuid/ticket1963/padics-review-all.hg) by robertwb created at 2008-02-08 18:04:53
+Attachment [padics-review-all.hg](tarball://root/attachments/some-uuid/ticket1963/padics-review-all.hg) by @robertwb created at 2008-02-08 18:04:53
 
 
 
@@ -372,16 +372,16 @@ Attachment [padics-review-all.hg](tarball://root/attachments/some-uuid/ticket196
 archive/issue_comments_012691.json:
 ```json
 {
-    "body": "Attachment [kedlaya2.patch](tarball://root/attachments/some-uuid/ticket1963/kedlaya2.patch) by kedlaya created at 2008-02-08 23:34:40\n\nMust apply against latest bundle",
+    "body": "Attachment [kedlaya2.patch](tarball://root/attachments/some-uuid/ticket1963/kedlaya2.patch) by @kedlaya created at 2008-02-08 23:34:40\n\nMust apply against latest bundle",
     "created_at": "2008-02-08T23:34:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1963#issuecomment-12691",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
-Attachment [kedlaya2.patch](tarball://root/attachments/some-uuid/ticket1963/kedlaya2.patch) by kedlaya created at 2008-02-08 23:34:40
+Attachment [kedlaya2.patch](tarball://root/attachments/some-uuid/ticket1963/kedlaya2.patch) by @kedlaya created at 2008-02-08 23:34:40
 
 Must apply against latest bundle
 
@@ -392,16 +392,16 @@ Must apply against latest bundle
 archive/issue_comments_012692.json:
 ```json
 {
-    "body": "Attachment [kedlaya2.2.patch](tarball://root/attachments/some-uuid/ticket1963/kedlaya2.2.patch) by kedlaya created at 2008-02-08 23:35:24\n\nMust apply against latest bundle",
+    "body": "Attachment [kedlaya2.2.patch](tarball://root/attachments/some-uuid/ticket1963/kedlaya2.2.patch) by @kedlaya created at 2008-02-08 23:35:24\n\nMust apply against latest bundle",
     "created_at": "2008-02-08T23:35:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1963#issuecomment-12692",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
-Attachment [kedlaya2.2.patch](tarball://root/attachments/some-uuid/ticket1963/kedlaya2.2.patch) by kedlaya created at 2008-02-08 23:35:24
+Attachment [kedlaya2.2.patch](tarball://root/attachments/some-uuid/ticket1963/kedlaya2.2.patch) by @kedlaya created at 2008-02-08 23:35:24
 
 Must apply against latest bundle
 
@@ -417,7 +417,7 @@ archive/issue_comments_012693.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1963#issuecomment-12693",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -430,16 +430,16 @@ Must apply against latest bundle
 archive/issue_comments_012694.json:
 ```json
 {
-    "body": "Attachment [multipoly.patch](tarball://root/attachments/some-uuid/ticket1963/multipoly.patch) by kedlaya created at 2008-02-09 00:35:50\n\nThe patches kedlaya2.patch and kedlaya2.2.patch are identical, so no need to grab the second one. Sorry about that.",
+    "body": "Attachment [multipoly.patch](tarball://root/attachments/some-uuid/ticket1963/multipoly.patch) by @kedlaya created at 2008-02-09 00:35:50\n\nThe patches kedlaya2.patch and kedlaya2.2.patch are identical, so no need to grab the second one. Sorry about that.",
     "created_at": "2008-02-09T00:35:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1963#issuecomment-12694",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
-Attachment [multipoly.patch](tarball://root/attachments/some-uuid/ticket1963/multipoly.patch) by kedlaya created at 2008-02-09 00:35:50
+Attachment [multipoly.patch](tarball://root/attachments/some-uuid/ticket1963/multipoly.patch) by @kedlaya created at 2008-02-09 00:35:50
 
 The patches kedlaya2.patch and kedlaya2.2.patch are identical, so no need to grab the second one. Sorry about that.
 
@@ -450,16 +450,16 @@ The patches kedlaya2.patch and kedlaya2.2.patch are identical, so no need to gra
 archive/issue_comments_012695.json:
 ```json
 {
-    "body": "Attachment [1963-padics-bundle-sd7-final.hg](tarball://root/attachments/some-uuid/ticket1963/1963-padics-bundle-sd7-final.hg) by roed created at 2008-02-10 02:38:15\n\nBundle as of end of SD7",
+    "body": "Attachment [1963-padics-bundle-sd7-final.hg](tarball://root/attachments/some-uuid/ticket1963/1963-padics-bundle-sd7-final.hg) by @roed314 created at 2008-02-10 02:38:15\n\nBundle as of end of SD7",
     "created_at": "2008-02-10T02:38:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1963#issuecomment-12695",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [1963-padics-bundle-sd7-final.hg](tarball://root/attachments/some-uuid/ticket1963/1963-padics-bundle-sd7-final.hg) by roed created at 2008-02-10 02:38:15
+Attachment [1963-padics-bundle-sd7-final.hg](tarball://root/attachments/some-uuid/ticket1963/1963-padics-bundle-sd7-final.hg) by @roed314 created at 2008-02-10 02:38:15
 
 Bundle as of end of SD7
 
@@ -470,16 +470,16 @@ Bundle as of end of SD7
 archive/issue_comments_012696.json:
 ```json
 {
-    "body": "Attachment [padic-sd7-fix.patch](tarball://root/attachments/some-uuid/ticket1963/padic-sd7-fix.patch) by roed created at 2008-02-10 03:02:27\n\ndoctest fix",
+    "body": "Attachment [padic-sd7-fix.patch](tarball://root/attachments/some-uuid/ticket1963/padic-sd7-fix.patch) by @roed314 created at 2008-02-10 03:02:27\n\ndoctest fix",
     "created_at": "2008-02-10T03:02:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1963#issuecomment-12696",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [padic-sd7-fix.patch](tarball://root/attachments/some-uuid/ticket1963/padic-sd7-fix.patch) by roed created at 2008-02-10 03:02:27
+Attachment [padic-sd7-fix.patch](tarball://root/attachments/some-uuid/ticket1963/padic-sd7-fix.patch) by @roed314 created at 2008-02-10 03:02:27
 
 doctest fix
 
@@ -519,7 +519,7 @@ archive/issue_comments_012698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1963#issuecomment-12698",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

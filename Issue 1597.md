@@ -3,7 +3,7 @@
 archive/issues_001597.json:
 ```json
 {
-    "body": "Assignee: was\n\nI forgot to when I added jmol in 2.9.1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1597\n\n",
+    "body": "Assignee: @williamstein\n\nI forgot to when I added jmol in 2.9.1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1597\n\n",
     "created_at": "2007-12-25T20:37:08Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001597.json:
     "title": "put jmol in spkg/install and spkg/standard/deps",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1597",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I forgot to when I added jmol in 2.9.1.
 

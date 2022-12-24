@@ -3,7 +3,7 @@
 archive/issues_009069.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  burcin mderickx minz\n\nImplement weak Popov form for a matrix over a rational function field k(t)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9069\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @burcin @koffie minz\n\nImplement weak Popov form for a matrix over a rational function field k(t)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9069\n\n",
     "created_at": "2010-05-28T00:25:47Z",
     "labels": [
         "linear algebra",
@@ -19,7 +19,7 @@ archive/issues_009069.json:
 ```
 Assignee: jason, was
 
-CC:  burcin mderickx minz
+CC:  @burcin @koffie minz
 
 Implement weak Popov form for a matrix over a rational function field k(t)
 
@@ -57,7 +57,7 @@ archive/issue_comments_084161.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9069#issuecomment-84161",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_084162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9069#issuecomment-84162",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_084166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9069#issuecomment-84166",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_084167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9069#issuecomment-84167",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_084168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9069#issuecomment-84168",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_084169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9069#issuecomment-84169",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

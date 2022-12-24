@@ -3,7 +3,7 @@
 archive/issues_003134.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nI'm running sage-3.0.1 on linux/amd64 (using the precompiled binary) and binomial throws an exception if its second argument is greater than 2^63.\n\n\n```\nsage: binomial(2^100, 2^100)\n---------------------------------------------------------------------------\n<type 'exceptions.OverflowError'>         Traceback (most recent call last)\n\n/home/gebner/build/sage-3.0.1-debian64-intel-sse2-x86_64-Linux/<ipython console> in <module>()\n\n/home/gebner/build/sage-3.0.1-debian64-intel-sse2-x86_64-Linux/local/lib/python2.5/site-packages/sage/rings/arith.py in binomial(x, m)\n   2009             raise TypeError, 'Either m or x-m must be an integer'\n   2010     if isinstance(x, (int, long, integer.Integer)):\n-> 2011         return integer_ring.ZZ(pari(x).binomial(m))\n   2012     try:\n   2013         P = x.parent()\n\n/home/gebner/build/sage-3.0.1-debian64-intel-sse2-x86_64-Linux/gen.pyx in sage.libs.pari.gen.gen.binomial (sage/libs/pari/gen.c:13841)()\n\n<type 'exceptions.OverflowError'>: long int too large to convert to int\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3134\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nI'm running sage-3.0.1 on linux/amd64 (using the precompiled binary) and binomial throws an exception if its second argument is greater than 2^63.\n\n\n```\nsage: binomial(2^100, 2^100)\n---------------------------------------------------------------------------\n<type 'exceptions.OverflowError'>         Traceback (most recent call last)\n\n/home/gebner/build/sage-3.0.1-debian64-intel-sse2-x86_64-Linux/<ipython console> in <module>()\n\n/home/gebner/build/sage-3.0.1-debian64-intel-sse2-x86_64-Linux/local/lib/python2.5/site-packages/sage/rings/arith.py in binomial(x, m)\n   2009             raise TypeError, 'Either m or x-m must be an integer'\n   2010     if isinstance(x, (int, long, integer.Integer)):\n-> 2011         return integer_ring.ZZ(pari(x).binomial(m))\n   2012     try:\n   2013         P = x.parent()\n\n/home/gebner/build/sage-3.0.1-debian64-intel-sse2-x86_64-Linux/gen.pyx in sage.libs.pari.gen.gen.binomial (sage/libs/pari/gen.c:13841)()\n\n<type 'exceptions.OverflowError'>: long int too large to convert to int\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3134\n\n",
     "created_at": "2008-05-08T17:05:33Z",
     "labels": [
         "combinatorics",
@@ -17,7 +17,7 @@ archive/issues_003134.json:
     "user": "gebner"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -55,16 +55,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3134
 archive/issue_comments_021770.json:
 ```json
 {
-    "body": "Attachment [trac_3134.patch](tarball://root/attachments/some-uuid/ticket3134/trac_3134.patch) by mhansen created at 2008-12-02 09:44:00",
+    "body": "Attachment [trac_3134.patch](tarball://root/attachments/some-uuid/ticket3134/trac_3134.patch) by @mwhansen created at 2008-12-02 09:44:00",
     "created_at": "2008-12-02T09:44:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3134",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3134#issuecomment-21770",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3134.patch](tarball://root/attachments/some-uuid/ticket3134/trac_3134.patch) by mhansen created at 2008-12-02 09:44:00
+Attachment [trac_3134.patch](tarball://root/attachments/some-uuid/ticket3134/trac_3134.patch) by @mwhansen created at 2008-12-02 09:44:00
 
 
 
@@ -78,7 +78,7 @@ archive/issue_comments_021771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3134",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3134#issuecomment-21771",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -91,16 +91,16 @@ Changing status from new to assigned.
 archive/issue_comments_021772.json:
 ```json
 {
-    "body": "Attachment [trac_3134-2.patch](tarball://root/attachments/some-uuid/ticket3134/trac_3134-2.patch) by mhansen created at 2008-12-02 09:45:30\n\nI've attached two patches each of which fixes the problem.  I couldn't decide which one is better so I've left it up to the reviewer.  In my tests, PARI seemed to be a bit faster than the GMP routine.",
+    "body": "Attachment [trac_3134-2.patch](tarball://root/attachments/some-uuid/ticket3134/trac_3134-2.patch) by @mwhansen created at 2008-12-02 09:45:30\n\nI've attached two patches each of which fixes the problem.  I couldn't decide which one is better so I've left it up to the reviewer.  In my tests, PARI seemed to be a bit faster than the GMP routine.",
     "created_at": "2008-12-02T09:45:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3134",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3134#issuecomment-21772",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3134-2.patch](tarball://root/attachments/some-uuid/ticket3134/trac_3134-2.patch) by mhansen created at 2008-12-02 09:45:30
+Attachment [trac_3134-2.patch](tarball://root/attachments/some-uuid/ticket3134/trac_3134-2.patch) by @mwhansen created at 2008-12-02 09:45:30
 
 I've attached two patches each of which fixes the problem.  I couldn't decide which one is better so I've left it up to the reviewer.  In my tests, PARI seemed to be a bit faster than the GMP routine.
 
@@ -140,7 +140,7 @@ archive/issue_comments_021774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3134",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3134#issuecomment-21774",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005467.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nON OS X and Linux with Macaulay 1.2.\n\n\n```\nteragon:~ wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: macaulay2(10^10000)\nsage0\nsage: macaulay2(10^10000)\nsage1\nsage: macaulay2(10^10000)\nsage2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5467\n\n",
+    "body": "Assignee: @mwhansen\n\nON OS X and Linux with Macaulay 1.2.\n\n\n```\nteragon:~ wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: macaulay2(10^10000)\nsage0\nsage: macaulay2(10^10000)\nsage1\nsage: macaulay2(10^10000)\nsage2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5467\n\n",
     "created_at": "2009-03-10T18:03:16Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_005467.json:
     "title": "The sage/macaulay2 interface doesn't work at all on large input",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5467",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 ON OS X and Linux with Macaulay 1.2.
 
@@ -51,7 +51,7 @@ archive/issue_comments_042434.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5467#issuecomment-42434",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_042435.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5467#issuecomment-42435",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_042436.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5467#issuecomment-42436",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -102,16 +102,16 @@ Must be applied after the first patch.
 archive/issue_comments_042437.json:
 ```json
 {
-    "body": "Attachment [5467_long_input_to_Macaulay2_second_part.patch](tarball://root/attachments/some-uuid/ticket5467/5467_long_input_to_Macaulay2_second_part.patch) by novoselt created at 2010-01-09 20:42:36\n\nI managed to make a trivial mistake in this trivial fix - one of the test lines was not marked with #optional. Now it is.",
+    "body": "Attachment [5467_long_input_to_Macaulay2_second_part.patch](tarball://root/attachments/some-uuid/ticket5467/5467_long_input_to_Macaulay2_second_part.patch) by @novoselt created at 2010-01-09 20:42:36\n\nI managed to make a trivial mistake in this trivial fix - one of the test lines was not marked with #optional. Now it is.",
     "created_at": "2010-01-09T20:42:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5467#issuecomment-42437",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [5467_long_input_to_Macaulay2_second_part.patch](tarball://root/attachments/some-uuid/ticket5467/5467_long_input_to_Macaulay2_second_part.patch) by novoselt created at 2010-01-09 20:42:36
+Attachment [5467_long_input_to_Macaulay2_second_part.patch](tarball://root/attachments/some-uuid/ticket5467/5467_long_input_to_Macaulay2_second_part.patch) by @novoselt created at 2010-01-09 20:42:36
 
 I managed to make a trivial mistake in this trivial fix - one of the test lines was not marked with #optional. Now it is.
 
@@ -127,7 +127,7 @@ archive/issue_comments_042438.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5467#issuecomment-42438",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_042439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5467#issuecomment-42439",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -158,16 +158,16 @@ Only this patch should be applied.
 archive/issue_comments_042440.json:
 ```json
 {
-    "body": "Attachment [5467_long_input_to_Macaulay2.patch](tarball://root/attachments/some-uuid/ticket5467/5467_long_input_to_Macaulay2.patch) by novoselt created at 2010-02-07 17:02:33",
+    "body": "Attachment [5467_long_input_to_Macaulay2.patch](tarball://root/attachments/some-uuid/ticket5467/5467_long_input_to_Macaulay2.patch) by @novoselt created at 2010-02-07 17:02:33",
     "created_at": "2010-02-07T17:02:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5467#issuecomment-42440",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [5467_long_input_to_Macaulay2.patch](tarball://root/attachments/some-uuid/ticket5467/5467_long_input_to_Macaulay2.patch) by novoselt created at 2010-02-07 17:02:33
+Attachment [5467_long_input_to_Macaulay2.patch](tarball://root/attachments/some-uuid/ticket5467/5467_long_input_to_Macaulay2.patch) by @novoselt created at 2010-02-07 17:02:33
 
 
 
@@ -181,7 +181,7 @@ archive/issue_comments_042441.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5467#issuecomment-42441",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_042442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5467#issuecomment-42442",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_042443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5467#issuecomment-42443",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

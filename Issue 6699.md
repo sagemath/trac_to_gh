@@ -63,7 +63,7 @@ archive/issue_comments_055030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55030",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_055031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55031",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_055032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55032",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -416,7 +416,7 @@ archive/issue_comments_055033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55033",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -456,7 +456,7 @@ archive/issue_comments_055035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55035",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -499,7 +499,7 @@ archive/issue_comments_055036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55036",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -517,7 +517,7 @@ archive/issue_comments_055037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55037",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -530,16 +530,16 @@ apply after the ecl and maxima spkg's
 archive/issue_comments_055038.json:
 ```json
 {
-    "body": "Attachment [maxima_doctests.patch](tarball://root/attachments/some-uuid/ticket6699/maxima_doctests.patch) by gmhossain created at 2009-08-21 13:30:25\n\nReplying to [comment:6 AlexGhitza]:\n\n> {{{\n sage -t  \"expression.pyx\"                                   \n**********************************************************************\n File \"/opt/sage-4.1.1/devel/sage-main/sage/symbolic/expression.pyx\", line 5541:\n     sage: solve(Q*sqrt(Q^2 + 2) - 1,Q)\n Expected:\n     [Q == 1/sqrt(-sqrt(2) + 1), Q == 1/sqrt(sqrt(2) + 1)]\n Got:\n     [Q == 1/sqrt(sqrt(2) + 1)]\n **********************************************************************\n }}}\n> \n> I think this is due to the fact that Maxima now only returns the real solution, and ignores the complex solution.  I'm not sure what we should do about this.\n\nI think you are right. Maxima treats variables to be real by default. To see that in maxima\n\n```\nsage: !maxima\nMaxima 5.16.3 http://maxima.sourceforge.net\nUsing Lisp ECL 9.4.1\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) conjugate(Q);\n(%o1)                                  Q\n```\n\n\nSo, if maxima is throwing away complex solution then its consistent with its own assumptions. \nUnless someone else has different opinion then we should simply accept what maxima is returning\nnow.",
+    "body": "Attachment [maxima_doctests.patch](tarball://root/attachments/some-uuid/ticket6699/maxima_doctests.patch) by @golam-m-hossain created at 2009-08-21 13:30:25\n\nReplying to [comment:6 AlexGhitza]:\n\n> {{{\n sage -t  \"expression.pyx\"                                   \n**********************************************************************\n File \"/opt/sage-4.1.1/devel/sage-main/sage/symbolic/expression.pyx\", line 5541:\n     sage: solve(Q*sqrt(Q^2 + 2) - 1,Q)\n Expected:\n     [Q == 1/sqrt(-sqrt(2) + 1), Q == 1/sqrt(sqrt(2) + 1)]\n Got:\n     [Q == 1/sqrt(sqrt(2) + 1)]\n **********************************************************************\n }}}\n> \n> I think this is due to the fact that Maxima now only returns the real solution, and ignores the complex solution.  I'm not sure what we should do about this.\n\nI think you are right. Maxima treats variables to be real by default. To see that in maxima\n\n```\nsage: !maxima\nMaxima 5.16.3 http://maxima.sourceforge.net\nUsing Lisp ECL 9.4.1\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) conjugate(Q);\n(%o1)                                  Q\n```\n\n\nSo, if maxima is throwing away complex solution then its consistent with its own assumptions. \nUnless someone else has different opinion then we should simply accept what maxima is returning\nnow.",
     "created_at": "2009-08-21T13:30:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55038",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
-Attachment [maxima_doctests.patch](tarball://root/attachments/some-uuid/ticket6699/maxima_doctests.patch) by gmhossain created at 2009-08-21 13:30:25
+Attachment [maxima_doctests.patch](tarball://root/attachments/some-uuid/ticket6699/maxima_doctests.patch) by @golam-m-hossain created at 2009-08-21 13:30:25
 
 Replying to [comment:6 AlexGhitza]:
 
@@ -587,7 +587,7 @@ archive/issue_comments_055039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55039",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -609,7 +609,7 @@ archive/issue_comments_055040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55040",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -627,7 +627,7 @@ archive/issue_comments_055041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55041",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -649,7 +649,7 @@ archive/issue_comments_055042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55042",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -697,7 +697,7 @@ archive/issue_comments_055043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55043",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -717,7 +717,7 @@ archive/issue_comments_055044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55044",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -769,7 +769,7 @@ archive/issue_comments_055045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55045",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005375.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nThis fixes the few open problems from ticket #4912.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5375\n\n",
+    "body": "Assignee: @jhpalmieri\n\nThis fixes the few open problems from ticket #4912.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5375\n\n",
     "created_at": "2009-02-26T00:22:43Z",
     "labels": [
         "geometry",
@@ -14,10 +14,10 @@ archive/issues_005375.json:
     "title": "[with patch, needs review] minor problems with ReST in geometry/lattice_polytope.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5375",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 This fixes the few open problems from ticket #4912.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5375
 archive/issue_comments_041398.json:
 ```json
 {
-    "body": "Attachment [geom-rst.patch](tarball://root/attachments/some-uuid/ticket5375/geom-rst.patch) by jhpalmieri created at 2009-02-26 00:37:33",
+    "body": "Attachment [geom-rst.patch](tarball://root/attachments/some-uuid/ticket5375/geom-rst.patch) by @jhpalmieri created at 2009-02-26 00:37:33",
     "created_at": "2009-02-26T00:37:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5375",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5375#issuecomment-41398",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [geom-rst.patch](tarball://root/attachments/some-uuid/ticket5375/geom-rst.patch) by jhpalmieri created at 2009-02-26 00:37:33
+Attachment [geom-rst.patch](tarball://root/attachments/some-uuid/ticket5375/geom-rst.patch) by @jhpalmieri created at 2009-02-26 00:37:33
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_041399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5375",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5375#issuecomment-41399",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

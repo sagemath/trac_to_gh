@@ -14,7 +14,7 @@ archive/issues_004515.json:
     "title": "make it so \"make check\" runs Sage once before running itself, to ensure that sage-location is called, and that sage works",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4515",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4515
 archive/issue_comments_033511.json:
 ```json
 {
-    "body": "Attachment [sage-4515-sage_c_bug.patch](tarball://root/attachments/some-uuid/ticket4515/sage-4515-sage_c_bug.patch) by was created at 2008-11-13 23:48:22",
+    "body": "Attachment [sage-4515-sage_c_bug.patch](tarball://root/attachments/some-uuid/ticket4515/sage-4515-sage_c_bug.patch) by @williamstein created at 2008-11-13 23:48:22",
     "created_at": "2008-11-13T23:48:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4515#issuecomment-33511",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-4515-sage_c_bug.patch](tarball://root/attachments/some-uuid/ticket4515/sage-4515-sage_c_bug.patch) by was created at 2008-11-13 23:48:22
+Attachment [sage-4515-sage_c_bug.patch](tarball://root/attachments/some-uuid/ticket4515/sage-4515-sage_c_bug.patch) by @williamstein created at 2008-11-13 23:48:22
 
 
 
@@ -50,16 +50,16 @@ Attachment [sage-4515-sage_c_bug.patch](tarball://root/attachments/some-uuid/tic
 archive/issue_comments_033512.json:
 ```json
 {
-    "body": "Attachment [sage-4515-sage_starts.patch](tarball://root/attachments/some-uuid/ticket4515/sage-4515-sage_starts.patch) by was created at 2008-11-13 23:50:13\n\npart 2 -- creates a sage-starts script which is used to verify that sage works.",
+    "body": "Attachment [sage-4515-sage_starts.patch](tarball://root/attachments/some-uuid/ticket4515/sage-4515-sage_starts.patch) by @williamstein created at 2008-11-13 23:50:13\n\npart 2 -- creates a sage-starts script which is used to verify that sage works.",
     "created_at": "2008-11-13T23:50:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4515#issuecomment-33512",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-4515-sage_starts.patch](tarball://root/attachments/some-uuid/ticket4515/sage-4515-sage_starts.patch) by was created at 2008-11-13 23:50:13
+Attachment [sage-4515-sage_starts.patch](tarball://root/attachments/some-uuid/ticket4515/sage-4515-sage_starts.patch) by @williamstein created at 2008-11-13 23:50:13
 
 part 2 -- creates a sage-starts script which is used to verify that sage works.
 
@@ -75,7 +75,7 @@ archive/issue_comments_033513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4515#issuecomment-33513",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -88,16 +88,16 @@ carefully place this in SAGE_ROOT -- do a diff before doing so.  This is against
 archive/issue_comments_033514.json:
 ```json
 {
-    "body": "Attachment [makefile](tarball://root/attachments/some-uuid/ticket4515/makefile) by was created at 2008-11-13 23:56:28\n\nThis ticket includes three files.  sage-4515-sage_c_bug.patch fixes a bug in the sage-sage script where `sage -c \"...\"` didn't correctly run the sage_setup function in sage-sage.   The second file sage-4515-sage_starts.patch adds a sage-starts script, that verifies that ones sage actually starts up.  The third file `makefile` replaces the makefile in SAGE_ROOT by a new one that runs sage-starts before running any of the make check targets. \n\nTo test this patch, take any sage install, edit the file SAGE_ROOT/local/lib/sage-current-location.txt and put some random crap in there.  Then do \n\n```\nsage -c \"2+2\"\n```\n\nand see that the current location stuff gets updated.  Corrupt sage-current-location.txgt again, then do\n\n```\nmake check  # or any other target\n```\n\nand verify that the location stuff gets updated.",
+    "body": "Attachment [makefile](tarball://root/attachments/some-uuid/ticket4515/makefile) by @williamstein created at 2008-11-13 23:56:28\n\nThis ticket includes three files.  sage-4515-sage_c_bug.patch fixes a bug in the sage-sage script where `sage -c \"...\"` didn't correctly run the sage_setup function in sage-sage.   The second file sage-4515-sage_starts.patch adds a sage-starts script, that verifies that ones sage actually starts up.  The third file `makefile` replaces the makefile in SAGE_ROOT by a new one that runs sage-starts before running any of the make check targets. \n\nTo test this patch, take any sage install, edit the file SAGE_ROOT/local/lib/sage-current-location.txt and put some random crap in there.  Then do \n\n```\nsage -c \"2+2\"\n```\n\nand see that the current location stuff gets updated.  Corrupt sage-current-location.txgt again, then do\n\n```\nmake check  # or any other target\n```\n\nand verify that the location stuff gets updated.",
     "created_at": "2008-11-13T23:56:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4515#issuecomment-33514",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [makefile](tarball://root/attachments/some-uuid/ticket4515/makefile) by was created at 2008-11-13 23:56:28
+Attachment [makefile](tarball://root/attachments/some-uuid/ticket4515/makefile) by @williamstein created at 2008-11-13 23:56:28
 
 This ticket includes three files.  sage-4515-sage_c_bug.patch fixes a bug in the sage-sage script where `sage -c "..."` didn't correctly run the sage_setup function in sage-sage.   The second file sage-4515-sage_starts.patch adds a sage-starts script, that verifies that ones sage actually starts up.  The third file `makefile` replaces the makefile in SAGE_ROOT by a new one that runs sage-starts before running any of the make check targets. 
 

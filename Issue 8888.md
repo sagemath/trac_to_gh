@@ -3,7 +3,7 @@
 archive/issues_008888.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nCC:  sage-combinat\n\nKeywords: Partitions border rim\n\nThe name of the actual method is being discussed on [sage-combinat](http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/27e68b86cf8e0578/1869144ca150bda6?hl=en&lnk=gst&q=frontier#1869144ca150bda6)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8888\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: Partitions border rim\n\nThe name of the actual method is being discussed on [sage-combinat](http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/27e68b86cf8e0578/1869144ca150bda6?hl=en&lnk=gst&q=frontier#1869144ca150bda6)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8888\n\n",
     "created_at": "2010-05-05T11:33:20Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_008888.json:
     "title": "Returns the frontier of a partition",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8888",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
 CC:  sage-combinat
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8888
 archive/issue_comments_081711.json:
 ```json
 {
-    "body": "Attachment [trac_8888_partition_rim-fh.patch](tarball://root/attachments/some-uuid/ticket8888/trac_8888_partition_rim-fh.patch) by hivert created at 2010-05-05 17:01:29\n\nPlease review.",
+    "body": "Attachment [trac_8888_partition_rim-fh.patch](tarball://root/attachments/some-uuid/ticket8888/trac_8888_partition_rim-fh.patch) by @hivert created at 2010-05-05 17:01:29\n\nPlease review.",
     "created_at": "2010-05-05T17:01:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8888",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8888#issuecomment-81711",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8888_partition_rim-fh.patch](tarball://root/attachments/some-uuid/ticket8888/trac_8888_partition_rim-fh.patch) by hivert created at 2010-05-05 17:01:29
+Attachment [trac_8888_partition_rim-fh.patch](tarball://root/attachments/some-uuid/ticket8888/trac_8888_partition_rim-fh.patch) by @hivert created at 2010-05-05 17:01:29
 
 Please review.
 
@@ -61,7 +61,7 @@ archive/issue_comments_081712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8888",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8888#issuecomment-81712",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_081713.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8888",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8888#issuecomment-81713",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_081714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8888",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8888#issuecomment-81714",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_081715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8888",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8888#issuecomment-81715",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_081716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8888",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8888#issuecomment-81716",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -164,16 +164,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_081717.json:
 ```json
 {
-    "body": "Attachment [trac_8888_reviewer_jb.patch](tarball://root/attachments/some-uuid/ticket8888/trac_8888_reviewer_jb.patch) by jbandlow created at 2010-05-13 14:57:55",
+    "body": "Attachment [trac_8888_reviewer_jb.patch](tarball://root/attachments/some-uuid/ticket8888/trac_8888_reviewer_jb.patch) by @jbandlow created at 2010-05-13 14:57:55",
     "created_at": "2010-05-13T14:57:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8888",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8888#issuecomment-81717",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
-Attachment [trac_8888_reviewer_jb.patch](tarball://root/attachments/some-uuid/ticket8888/trac_8888_reviewer_jb.patch) by jbandlow created at 2010-05-13 14:57:55
+Attachment [trac_8888_reviewer_jb.patch](tarball://root/attachments/some-uuid/ticket8888/trac_8888_reviewer_jb.patch) by @jbandlow created at 2010-05-13 14:57:55
 
 
 
@@ -187,7 +187,7 @@ archive/issue_comments_081718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8888",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8888#issuecomment-81718",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_081719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8888",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8888#issuecomment-81719",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_081720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8888",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8888#issuecomment-81720",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_081721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8888",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8888#issuecomment-81721",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_081722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8888",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8888#issuecomment-81722",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

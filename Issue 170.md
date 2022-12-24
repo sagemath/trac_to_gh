@@ -13,7 +13,7 @@ archive/issues_000170.json:
     "title": "QQ('1/0')",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/170",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -36,7 +36,7 @@ archive/issue_comments_000782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/170",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/170#issuecomment-782",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_000783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/170",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/170#issuecomment-783",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

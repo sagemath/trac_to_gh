@@ -3,7 +3,7 @@
 archive/issues_009901.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  novoselt niles\n\nThe base `class Ring` defines `base_extend()`, but the implementation needs to be overridden in the derived class `MPolynomialRing`:\n\n```\nsage: sage: P.<x,y,z> = PolynomialRing(QQ,'x, y, z'); P\nMultivariate Polynomial Ring in x, y, z over Rational Field\nsage: P.base_extend(CC)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/vbraun/opt/sage-4.5.3/devel/sage-main/<ipython console> in <module>()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/rings/ring.so in sage.rings.ring.Ring.base_extend (sage/rings/ring.c:3190)()\n\nTypeError: no base extension defined\n```\n\nThe patch implements the override and adds documentation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9902\n\n",
+    "body": "Assignee: @malb\n\nCC:  @novoselt @nilesjohnson\n\nThe base `class Ring` defines `base_extend()`, but the implementation needs to be overridden in the derived class `MPolynomialRing`:\n\n```\nsage: sage: P.<x,y,z> = PolynomialRing(QQ,'x, y, z'); P\nMultivariate Polynomial Ring in x, y, z over Rational Field\nsage: P.base_extend(CC)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/vbraun/opt/sage-4.5.3/devel/sage-main/<ipython console> in <module>()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/rings/ring.so in sage.rings.ring.Ring.base_extend (sage/rings/ring.c:3190)()\n\nTypeError: no base extension defined\n```\n\nThe patch implements the override and adds documentation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9902\n\n",
     "created_at": "2010-09-12T11:15:06Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_009901.json:
     "title": "base_extend() not implemented in MPolynomialRing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9901",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  novoselt niles
+CC:  @novoselt @nilesjohnson
 
 The base `class Ring` defines `base_extend()`, but the implementation needs to be overridden in the derived class `MPolynomialRing`:
 
@@ -50,16 +50,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9902
 archive/issue_comments_098436.json:
 ```json
 {
-    "body": "Attachment [trax_9902_fix_base_extension.patch](tarball://root/attachments/some-uuid/ticket9902/trax_9902_fix_base_extension.patch) by vbraun created at 2010-09-12 11:17:44\n\nInitial patch",
+    "body": "Attachment [trax_9902_fix_base_extension.patch](tarball://root/attachments/some-uuid/ticket9902/trax_9902_fix_base_extension.patch) by @vbraun created at 2010-09-12 11:17:44\n\nInitial patch",
     "created_at": "2010-09-12T11:17:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9901#issuecomment-98436",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [trax_9902_fix_base_extension.patch](tarball://root/attachments/some-uuid/ticket9902/trax_9902_fix_base_extension.patch) by vbraun created at 2010-09-12 11:17:44
+Attachment [trax_9902_fix_base_extension.patch](tarball://root/attachments/some-uuid/ticket9902/trax_9902_fix_base_extension.patch) by @vbraun created at 2010-09-12 11:17:44
 
 Initial patch
 
@@ -75,7 +75,7 @@ archive/issue_comments_098437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9901#issuecomment-98437",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_098438.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9901#issuecomment-98438",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_098439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9901#issuecomment-98439",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_098440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9901#issuecomment-98440",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 

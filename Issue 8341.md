@@ -3,7 +3,7 @@
 archive/issues_008341.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  whuss robert.marik\n\nIt seems like this should show a vertical asymptote at x=1, but it doesn't:\n\n\n```\nplot(1/((x-1)^2), (x, -3.5, 3.5), detect_poles='show', ymin = -5, ymax = 5) \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8341\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  whuss @robert-marik\n\nIt seems like this should show a vertical asymptote at x=1, but it doesn't:\n\n\n```\nplot(1/((x-1)^2), (x, -3.5, 3.5), detect_poles='show', ymin = -5, ymax = 5) \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8341\n\n",
     "created_at": "2010-02-24T01:07:10Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_008341.json:
     "title": "detect_poles doesn't find a vertical asymptote where both sides go to infinity",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8341",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  whuss robert.marik
+CC:  whuss @robert-marik
 
 It seems like this should show a vertical asymptote at x=1, but it doesn't:
 
@@ -46,7 +46,7 @@ archive/issue_comments_074456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8341#issuecomment-74456",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_074457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8341#issuecomment-74457",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

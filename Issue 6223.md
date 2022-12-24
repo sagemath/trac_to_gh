@@ -14,7 +14,7 @@ archive/issues_006223.json:
     "title": "Remove ext/python_*.pxi",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6223",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_049682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6223#issuecomment-49682",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_049683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6223#issuecomment-49683",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -88,16 +88,16 @@ Changing status from new to needs_work.
 archive/issue_comments_049684.json:
 ```json
 {
-    "body": "Attachment [6223_ext_python_part1.patch](tarball://root/attachments/some-uuid/ticket6223/6223_ext_python_part1.patch) by jdemeyer created at 2013-04-12 21:52:24",
+    "body": "Attachment [6223_ext_python_part1.patch](tarball://root/attachments/some-uuid/ticket6223/6223_ext_python_part1.patch) by @jdemeyer created at 2013-04-12 21:52:24",
     "created_at": "2013-04-12T21:52:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6223#issuecomment-49684",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [6223_ext_python_part1.patch](tarball://root/attachments/some-uuid/ticket6223/6223_ext_python_part1.patch) by jdemeyer created at 2013-04-12 21:52:24
+Attachment [6223_ext_python_part1.patch](tarball://root/attachments/some-uuid/ticket6223/6223_ext_python_part1.patch) by @jdemeyer created at 2013-04-12 21:52:24
 
 
 
@@ -106,16 +106,16 @@ Attachment [6223_ext_python_part1.patch](tarball://root/attachments/some-uuid/ti
 archive/issue_comments_049685.json:
 ```json
 {
-    "body": "Attachment [6223_remove_pxi.patch](tarball://root/attachments/some-uuid/ticket6223/6223_remove_pxi.patch) by jdemeyer created at 2013-04-13 15:47:35",
+    "body": "Attachment [6223_remove_pxi.patch](tarball://root/attachments/some-uuid/ticket6223/6223_remove_pxi.patch) by @jdemeyer created at 2013-04-13 15:47:35",
     "created_at": "2013-04-13T15:47:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6223#issuecomment-49685",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [6223_remove_pxi.patch](tarball://root/attachments/some-uuid/ticket6223/6223_remove_pxi.patch) by jdemeyer created at 2013-04-13 15:47:35
+Attachment [6223_remove_pxi.patch](tarball://root/attachments/some-uuid/ticket6223/6223_remove_pxi.patch) by @jdemeyer created at 2013-04-13 15:47:35
 
 
 
@@ -129,7 +129,7 @@ archive/issue_comments_049686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6223#issuecomment-49686",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -142,16 +142,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_049687.json:
 ```json
 {
-    "body": "Attachment [6223_ext_python_manual.patch](tarball://root/attachments/some-uuid/ticket6223/6223_ext_python_manual.patch) by jdemeyer created at 2013-04-15 11:48:13",
+    "body": "Attachment [6223_ext_python_manual.patch](tarball://root/attachments/some-uuid/ticket6223/6223_ext_python_manual.patch) by @jdemeyer created at 2013-04-15 11:48:13",
     "created_at": "2013-04-15T11:48:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6223#issuecomment-49687",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [6223_ext_python_manual.patch](tarball://root/attachments/some-uuid/ticket6223/6223_ext_python_manual.patch) by jdemeyer created at 2013-04-15 11:48:13
+Attachment [6223_ext_python_manual.patch](tarball://root/attachments/some-uuid/ticket6223/6223_ext_python_manual.patch) by @jdemeyer created at 2013-04-15 11:48:13
 
 
 
@@ -165,7 +165,7 @@ archive/issue_comments_049688.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6223#issuecomment-49688",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_049689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6223#issuecomment-49689",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_049690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6223#issuecomment-49690",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_049691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6223#issuecomment-49691",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

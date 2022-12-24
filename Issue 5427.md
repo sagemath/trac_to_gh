@@ -3,7 +3,7 @@
 archive/issues_005427.json:
 ```json
 {
-    "body": "Assignee: jonhanke\n\nCompare the naming of methods in the QuadraticForm class for consistency with other Sage naming conventions.  In particular, it would be nice if there were a set of standard variable substitution methods for classes of objects involving variables (e.g. polynomials, quaternion algebras, Hermitian/symplectic/linear forms).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5427\n\n",
+    "body": "Assignee: @jonhanke\n\nCompare the naming of methods in the QuadraticForm class for consistency with other Sage naming conventions.  In particular, it would be nice if there were a set of standard variable substitution methods for classes of objects involving variables (e.g. polynomials, quaternion algebras, Hermitian/symplectic/linear forms).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5427\n\n",
     "created_at": "2009-03-03T12:40:48Z",
     "labels": [
         "quadratic forms",
@@ -14,10 +14,10 @@ archive/issues_005427.json:
     "title": "Evaluate the naming of (variable substitution) routines in Quadratic forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5427",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
-Assignee: jonhanke
+Assignee: @jonhanke
 
 Compare the naming of methods in the QuadraticForm class for consistency with other Sage naming conventions.  In particular, it would be nice if there were a set of standard variable substitution methods for classes of objects involving variables (e.g. polynomials, quaternion algebras, Hermitian/symplectic/linear forms).
 
@@ -37,7 +37,7 @@ archive/issue_comments_041988.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5427",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5427#issuecomment-41988",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
 

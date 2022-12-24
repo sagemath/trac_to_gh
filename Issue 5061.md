@@ -175,7 +175,7 @@ archive/issue_comments_038559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5061",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5061#issuecomment-38559",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -188,16 +188,16 @@ Looks good. The documentation should probably be fixed as well though, and you n
 archive/issue_comments_038560.json:
 ```json
 {
-    "body": "Attachment [5061-doc.patch](tarball://root/attachments/some-uuid/ticket5061/5061-doc.patch) by jhpalmieri created at 2009-02-26 18:49:30\n\napply on top of other patch",
+    "body": "Attachment [5061-doc.patch](tarball://root/attachments/some-uuid/ticket5061/5061-doc.patch) by @jhpalmieri created at 2009-02-26 18:49:30\n\napply on top of other patch",
     "created_at": "2009-02-26T18:49:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5061",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5061#issuecomment-38560",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [5061-doc.patch](tarball://root/attachments/some-uuid/ticket5061/5061-doc.patch) by jhpalmieri created at 2009-02-26 18:49:30
+Attachment [5061-doc.patch](tarball://root/attachments/some-uuid/ticket5061/5061-doc.patch) by @jhpalmieri created at 2009-02-26 18:49:30
 
 apply on top of other patch
 
@@ -213,7 +213,7 @@ archive/issue_comments_038561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5061",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5061#issuecomment-38561",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_038562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5061",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5061#issuecomment-38562",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

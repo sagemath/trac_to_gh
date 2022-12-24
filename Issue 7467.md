@@ -3,7 +3,7 @@
 archive/issues_007467.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  mpatel was\n\nCurrently, SageNB makes use of `distutils`. The standard method of package distribution, though, is [setuptools](http://peak.telecommunity.com/DevCenter/setuptools). This has several advantages, the foremost being a `setup.py develop` command, which bypasses the need to reinstall the package in order to propagate a change, as well as the ability to upload the package to PyPI with a single command. There is also additional functionality regards packaging, etc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7467\n\n",
+    "body": "Assignee: boothby\n\nCC:  @qed777 @williamstein\n\nCurrently, SageNB makes use of `distutils`. The standard method of package distribution, though, is [setuptools](http://peak.telecommunity.com/DevCenter/setuptools). This has several advantages, the foremost being a `setup.py develop` command, which bypasses the need to reinstall the package in order to propagate a change, as well as the ability to upload the package to PyPI with a single command. There is also additional functionality regards packaging, etc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7467\n\n",
     "created_at": "2009-11-15T05:05:48Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007467.json:
     "title": "Make SageNB use `setuptools` instead of `distutils`",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7467",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 Assignee: boothby
 
-CC:  mpatel was
+CC:  @qed777 @williamstein
 
 Currently, SageNB makes use of `distutils`. The standard method of package distribution, though, is [setuptools](http://peak.telecommunity.com/DevCenter/setuptools). This has several advantages, the foremost being a `setup.py develop` command, which bypasses the need to reinstall the package in order to propagate a change, as well as the ability to upload the package to PyPI with a single command. There is also additional functionality regards packaging, etc.
 
@@ -39,7 +39,7 @@ archive/issue_comments_062883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7467#issuecomment-62883",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_062884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7467#issuecomment-62884",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -70,16 +70,16 @@ This should do it.
 archive/issue_comments_062885.json:
 ```json
 {
-    "body": "Attachment [trac_7467-setuptools.patch](tarball://root/attachments/some-uuid/ticket7467/trac_7467-setuptools.patch) by timdumol created at 2009-11-15 05:45:48\n\nMakes `setup.py` use `setuptools` instead of `distutils`. Depends on #7402 for things to work properly.",
+    "body": "Attachment [trac_7467-setuptools.patch](tarball://root/attachments/some-uuid/ticket7467/trac_7467-setuptools.patch) by @TimDumol created at 2009-11-15 05:45:48\n\nMakes `setup.py` use `setuptools` instead of `distutils`. Depends on #7402 for things to work properly.",
     "created_at": "2009-11-15T05:45:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7467#issuecomment-62885",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7467-setuptools.patch](tarball://root/attachments/some-uuid/ticket7467/trac_7467-setuptools.patch) by timdumol created at 2009-11-15 05:45:48
+Attachment [trac_7467-setuptools.patch](tarball://root/attachments/some-uuid/ticket7467/trac_7467-setuptools.patch) by @TimDumol created at 2009-11-15 05:45:48
 
 Makes `setup.py` use `setuptools` instead of `distutils`. Depends on #7402 for things to work properly.
 
@@ -90,16 +90,16 @@ Makes `setup.py` use `setuptools` instead of `distutils`. Depends on #7402 for t
 archive/issue_comments_062886.json:
 ```json
 {
-    "body": "Attachment [trac_7467-setuptools.2.patch](tarball://root/attachments/some-uuid/ticket7467/trac_7467-setuptools.2.patch) by timdumol created at 2009-11-15 06:09:57\n\nAdded necessary .hgignore lines.",
+    "body": "Attachment [trac_7467-setuptools.2.patch](tarball://root/attachments/some-uuid/ticket7467/trac_7467-setuptools.2.patch) by @TimDumol created at 2009-11-15 06:09:57\n\nAdded necessary .hgignore lines.",
     "created_at": "2009-11-15T06:09:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7467#issuecomment-62886",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7467-setuptools.2.patch](tarball://root/attachments/some-uuid/ticket7467/trac_7467-setuptools.2.patch) by timdumol created at 2009-11-15 06:09:57
+Attachment [trac_7467-setuptools.2.patch](tarball://root/attachments/some-uuid/ticket7467/trac_7467-setuptools.2.patch) by @TimDumol created at 2009-11-15 06:09:57
 
 Added necessary .hgignore lines.
 
@@ -115,7 +115,7 @@ archive/issue_comments_062887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7467#issuecomment-62887",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_062888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7467#issuecomment-62888",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_062889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7467#issuecomment-62889",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_062890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7467#issuecomment-62890",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_062891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7467#issuecomment-62891",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_062892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7467#issuecomment-62892",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_062893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7467#issuecomment-62893",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -296,7 +296,7 @@ archive/issue_comments_062894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7467#issuecomment-62894",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_062895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7467#issuecomment-62895",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -343,7 +343,7 @@ archive/issue_comments_062896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7467#issuecomment-62896",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -361,7 +361,7 @@ archive/issue_comments_062897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7467#issuecomment-62897",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -379,7 +379,7 @@ archive/issue_comments_062898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7467#issuecomment-62898",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -397,7 +397,7 @@ archive/issue_comments_062899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7467#issuecomment-62899",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

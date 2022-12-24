@@ -3,7 +3,7 @@
 archive/issues_006480.json:
 ```json
 {
-    "body": "CC:  kcrisman mjo eviatarbach jakobkroeker\n\nIn computing functional derivative, one needs to vary\na functional. For example, in sage-3.4 one can do as follows\n\n```\nsage: f(x) = function('f',x)\nsage: df(x) = function('df',x)\nsage: g = f(x).diff(x)\nsage: g\ndiff(f(x), x, 1)\nsage: g.subs_expr(f(x)==f(x)+df(x))\ndiff(f(x) + df(x), x, 1)\n```\n\n\nIn new symbolics, if I do the same I get\n\n\n```\nsage: g\nD[0](f)(x)\nsage: g.subs_expr(f(x)==f(x)+df(x))\nD[0](f)(x)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6480\n\n",
+    "body": "CC:  @kcrisman @orlitzky @eviatarbach jakobkroeker\n\nIn computing functional derivative, one needs to vary\na functional. For example, in sage-3.4 one can do as follows\n\n```\nsage: f(x) = function('f',x)\nsage: df(x) = function('df',x)\nsage: g = f(x).diff(x)\nsage: g\ndiff(f(x), x, 1)\nsage: g.subs_expr(f(x)==f(x)+df(x))\ndiff(f(x) + df(x), x, 1)\n```\n\n\nIn new symbolics, if I do the same I get\n\n\n```\nsage: g\nD[0](f)(x)\nsage: g.subs_expr(f(x)==f(x)+df(x))\nD[0](f)(x)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6480\n\n",
     "created_at": "2009-07-08T11:37:56Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_006480.json:
     "title": ".subs_expr() method doesn't work for argument of D derivative operator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6480",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
-CC:  kcrisman mjo eviatarbach jakobkroeker
+CC:  @kcrisman @orlitzky @eviatarbach jakobkroeker
 
 In computing functional derivative, one needs to vary
 a functional. For example, in sage-3.4 one can do as follows
@@ -60,7 +60,7 @@ archive/issue_comments_052388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6480#issuecomment-52388",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_052389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6480#issuecomment-52389",
-    "user": "eviatarbach"
+    "user": "@eviatarbach"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_052390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6480#issuecomment-52390",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_052391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6480#issuecomment-52391",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_052392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6480#issuecomment-52392",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_052393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6480#issuecomment-52393",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_052394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6480#issuecomment-52394",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_052395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6480#issuecomment-52395",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -363,7 +363,7 @@ archive/issue_comments_052396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6480#issuecomment-52396",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -381,7 +381,7 @@ archive/issue_comments_052397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6480#issuecomment-52397",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -402,7 +402,7 @@ archive/issue_comments_052398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6480#issuecomment-52398",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

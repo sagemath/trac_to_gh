@@ -3,7 +3,7 @@
 archive/issues_007991.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  rbeezer\n\nThis patch implements generic testing for left and right kernels.  It exposes lots of bugs.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7991\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @rbeezer\n\nThis patch implements generic testing for left and right kernels.  It exposes lots of bugs.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7991\n\n",
     "created_at": "2010-01-19T03:39:28Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_007991.json:
     "title": "Generic matrix testing -- left and right kernel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7991",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  rbeezer
+CC:  @rbeezer
 
 This patch implements generic testing for left and right kernels.  It exposes lots of bugs.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7991
 archive/issue_comments_069796.json:
 ```json
 {
-    "body": "Attachment [trac-7991-generic-kernel-testing.patch](tarball://root/attachments/some-uuid/ticket7991/trac-7991-generic-kernel-testing.patch) by jason created at 2010-01-19 03:42:33",
+    "body": "Attachment [trac-7991-generic-kernel-testing.patch](tarball://root/attachments/some-uuid/ticket7991/trac-7991-generic-kernel-testing.patch) by @jasongrout created at 2010-01-19 03:42:33",
     "created_at": "2010-01-19T03:42:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7991",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7991#issuecomment-69796",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-7991-generic-kernel-testing.patch](tarball://root/attachments/some-uuid/ticket7991/trac-7991-generic-kernel-testing.patch) by jason created at 2010-01-19 03:42:33
+Attachment [trac-7991-generic-kernel-testing.patch](tarball://root/attachments/some-uuid/ticket7991/trac-7991-generic-kernel-testing.patch) by @jasongrout created at 2010-01-19 03:42:33
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_069797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7991",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7991#issuecomment-69797",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_069798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7991",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7991#issuecomment-69798",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_069799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7991",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7991#issuecomment-69799",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

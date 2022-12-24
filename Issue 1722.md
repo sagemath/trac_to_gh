@@ -3,7 +3,7 @@
 archive/issues_001722.json:
 ```json
 {
-    "body": "Assignee: was\n\nMatrices of symbolic objects should either be callable, or support substitution, per user request at conference.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1722\n\n",
+    "body": "Assignee: @williamstein\n\nMatrices of symbolic objects should either be callable, or support substitution, per user request at conference.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1722\n\n",
     "created_at": "2008-01-08T19:11:43Z",
     "labels": [
         "linear algebra",
@@ -17,7 +17,7 @@ archive/issues_001722.json:
     "user": "boothby"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Matrices of symbolic objects should either be callable, or support substitution, per user request at conference.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1722
 archive/issue_comments_010913.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-01-27T01:17:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1722#issuecomment-10913",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_010914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1722#issuecomment-10914",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_010915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1722#issuecomment-10915",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -122,16 +122,16 @@ Michael
 archive/issue_comments_010917.json:
 ```json
 {
-    "body": "Attachment [1722.patch](tarball://root/attachments/some-uuid/ticket1722/1722.patch) by mhansen created at 2008-02-27 20:16:25",
+    "body": "Attachment [1722.patch](tarball://root/attachments/some-uuid/ticket1722/1722.patch) by @mwhansen created at 2008-02-27 20:16:25",
     "created_at": "2008-02-27T20:16:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1722#issuecomment-10917",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1722.patch](tarball://root/attachments/some-uuid/ticket1722/1722.patch) by mhansen created at 2008-02-27 20:16:25
+Attachment [1722.patch](tarball://root/attachments/some-uuid/ticket1722/1722.patch) by @mwhansen created at 2008-02-27 20:16:25
 
 
 
@@ -145,7 +145,7 @@ archive/issue_comments_010918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1722#issuecomment-10918",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

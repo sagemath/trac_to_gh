@@ -14,7 +14,7 @@ archive/issues_009161.json:
     "title": "update nzmath optional package to 1.0 and post about this to NMBRTHY",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9161",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_085526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9161",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9161#issuecomment-85526",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_085527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9161",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9161#issuecomment-85527",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_085528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9161",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9161#issuecomment-85528",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_085529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9161",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9161#issuecomment-85529",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_085530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9161",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9161#issuecomment-85530",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_085531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9161",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9161#issuecomment-85531",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

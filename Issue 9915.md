@@ -3,7 +3,7 @@
 archive/issues_009915.json:
 ```json
 {
-    "body": "Assignee: leif\n\nCC:  cremona kcrisman mpatel wuthrich\n\nDue to #9330, some doctests have to be adapted (and also the documentation).\n\nI've **not** changed the name in the in the references' titles of course.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9916\n\n",
+    "body": "Assignee: @nexttime\n\nCC:  @JohnCremona @kcrisman @qed777 @categorie\n\nDue to #9330, some doctests have to be adapted (and also the documentation).\n\nI've **not** changed the name in the in the references' titles of course.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9916\n\n",
     "created_at": "2010-09-16T09:41:21Z",
     "labels": [
         "elliptic curves",
@@ -14,12 +14,12 @@ archive/issues_009915.json:
     "title": "Change Shafarevich-Tate in BSD.py (also fixes doctests)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9915",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
-Assignee: leif
+Assignee: @nexttime
 
-CC:  cremona kcrisman mpatel wuthrich
+CC:  @JohnCremona @kcrisman @qed777 @categorie
 
 Due to #9330, some doctests have to be adapted (and also the documentation).
 
@@ -41,7 +41,7 @@ archive/issue_comments_098655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9915",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9915#issuecomment-98655",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_098656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9915",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9915#issuecomment-98656",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -72,16 +72,16 @@ Changing status from new to needs_review.
 archive/issue_comments_098657.json:
 ```json
 {
-    "body": "Attachment [trac_9916-fix_Shafarevich-Tate_in_BSD.py.patch](tarball://root/attachments/some-uuid/ticket9916/trac_9916-fix_Shafarevich-Tate_in_BSD.py.patch) by leif created at 2010-09-16 09:46:49\n\nPatch is up.",
+    "body": "Attachment [trac_9916-fix_Shafarevich-Tate_in_BSD.py.patch](tarball://root/attachments/some-uuid/ticket9916/trac_9916-fix_Shafarevich-Tate_in_BSD.py.patch) by @nexttime created at 2010-09-16 09:46:49\n\nPatch is up.",
     "created_at": "2010-09-16T09:46:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9915",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9915#issuecomment-98657",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_9916-fix_Shafarevich-Tate_in_BSD.py.patch](tarball://root/attachments/some-uuid/ticket9916/trac_9916-fix_Shafarevich-Tate_in_BSD.py.patch) by leif created at 2010-09-16 09:46:49
+Attachment [trac_9916-fix_Shafarevich-Tate_in_BSD.py.patch](tarball://root/attachments/some-uuid/ticket9916/trac_9916-fix_Shafarevich-Tate_in_BSD.py.patch) by @nexttime created at 2010-09-16 09:46:49
 
 Patch is up.
 
@@ -97,7 +97,7 @@ archive/issue_comments_098658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9915",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9915#issuecomment-98658",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_098659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9915",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9915#issuecomment-98659",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_098660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9915",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9915#issuecomment-98660",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_098661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9915",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9915#issuecomment-98661",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_098662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9915",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9915#issuecomment-98662",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_098663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9915",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9915#issuecomment-98663",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_098664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9915",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9915#issuecomment-98664",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -249,16 +249,16 @@ So I'll upload a second patch in a few seconds.
 archive/issue_comments_098665.json:
 ```json
 {
-    "body": "Attachment [trac_9916-fix_Shafarevich-Tate_in_ell_rat_field_and_padic_lseries_too.patch](tarball://root/attachments/some-uuid/ticket9916/trac_9916-fix_Shafarevich-Tate_in_ell_rat_field_and_padic_lseries_too.patch) by leif created at 2010-09-17 01:06:57\n\nApply to Sage library. Based on (not yet released) Sage 4.6.alpha1.",
+    "body": "Attachment [trac_9916-fix_Shafarevich-Tate_in_ell_rat_field_and_padic_lseries_too.patch](tarball://root/attachments/some-uuid/ticket9916/trac_9916-fix_Shafarevich-Tate_in_ell_rat_field_and_padic_lseries_too.patch) by @nexttime created at 2010-09-17 01:06:57\n\nApply to Sage library. Based on (not yet released) Sage 4.6.alpha1.",
     "created_at": "2010-09-17T01:06:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9915",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9915#issuecomment-98665",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_9916-fix_Shafarevich-Tate_in_ell_rat_field_and_padic_lseries_too.patch](tarball://root/attachments/some-uuid/ticket9916/trac_9916-fix_Shafarevich-Tate_in_ell_rat_field_and_padic_lseries_too.patch) by leif created at 2010-09-17 01:06:57
+Attachment [trac_9916-fix_Shafarevich-Tate_in_ell_rat_field_and_padic_lseries_too.patch](tarball://root/attachments/some-uuid/ticket9916/trac_9916-fix_Shafarevich-Tate_in_ell_rat_field_and_padic_lseries_too.patch) by @nexttime created at 2010-09-17 01:06:57
 
 Apply to Sage library. Based on (not yet released) Sage 4.6.alpha1.
 
@@ -274,7 +274,7 @@ archive/issue_comments_098666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9915",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9915#issuecomment-98666",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_098667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9915",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9915#issuecomment-98667",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -312,7 +312,7 @@ archive/issue_comments_098668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9915",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9915#issuecomment-98668",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -330,7 +330,7 @@ archive/issue_comments_098669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9915",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9915#issuecomment-98669",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -350,7 +350,7 @@ archive/issue_comments_098670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9915",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9915#issuecomment-98670",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -373,7 +373,7 @@ archive/issue_comments_098671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9915",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9915#issuecomment-98671",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_098672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9915",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9915#issuecomment-98672",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

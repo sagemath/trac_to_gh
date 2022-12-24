@@ -3,7 +3,7 @@
 archive/issues_004322.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  robertwb\n\nKeywords: modular polynomial database\n\nIn 3.1.4, install this optional spkg with\n\n\n```\nsage -i database_kohel-20060803\n```\n\n\nthen \n\n\n```\nsage: DBMP = ClassicalModularPolynomialDatabase()\nsage: DBMP[29]\n<string>:1: Warning: 'with' will become a reserved keyword in Python 2.6\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1683, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/opt/sage-3.1.4/devel/sage-main/sage/structure/<ipython console> in <module>()\n\n/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/databases/db_modular_polynomials.pyc in __getitem__(self, level)\n     93             for cff in coeff_list:\n     94                 poly[(cff[0],cff[1])] = Integer(cff[2])\n---> 95         return P(polydict.PolyDict(poly))\n     96 \n     97 class ModularCorrespondenceDatabase(ModularPolynomialDatabase):\n\n/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__ (sage/rings/polynomial/multi_polynomial_libsingular.cpp:6996)()\n\n/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:3732)()\n    303                         del self._convert_from_list[i]\n    304                         break\n--> 305                 raise\n    306             \n    307         raise TypeError, \"No conversion defined from %s to %s\"%(R, self)\n\n/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.structure.parent.__call__ (sage/structure/parent.c:3619)()\n    294             try:\n    295                 if no_extra_args:\n--> 296                     return mor._call_(x)\n    297                 else:\n    298                     return mor._call_with_args(x, args, kwds)\n\n/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:2622)()\n     74                 print type(self._codomain), self._codomain\n     75                 print type(self._codomain._element_constructor), self._codomain._element_constructor\n---> 76             raise\n     77 \n     78     cpdef Element _call_with_args(self, x, args=(), kwds={}):\n\n/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps._call_ (sage/structure/coerce_maps.c:2537)()\n     69     cpdef Element _call_(self, x):\n     70         try:\n---> 71             return self._codomain._element_constructor(x)\n     72         except:\n     73             if print_warnings:\n\n/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/rings/integer.so in sage.rings.integer.Integer.__init__ (sage/rings/integer.c:5688)()\n\nTypeError: unable to coerce <type 'sage.rings.polynomial.polydict.PolyDict'> to an integer\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4322\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @robertwb\n\nKeywords: modular polynomial database\n\nIn 3.1.4, install this optional spkg with\n\n\n```\nsage -i database_kohel-20060803\n```\n\n\nthen \n\n\n```\nsage: DBMP = ClassicalModularPolynomialDatabase()\nsage: DBMP[29]\n<string>:1: Warning: 'with' will become a reserved keyword in Python 2.6\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1683, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/opt/sage-3.1.4/devel/sage-main/sage/structure/<ipython console> in <module>()\n\n/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/databases/db_modular_polynomials.pyc in __getitem__(self, level)\n     93             for cff in coeff_list:\n     94                 poly[(cff[0],cff[1])] = Integer(cff[2])\n---> 95         return P(polydict.PolyDict(poly))\n     96 \n     97 class ModularCorrespondenceDatabase(ModularPolynomialDatabase):\n\n/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__ (sage/rings/polynomial/multi_polynomial_libsingular.cpp:6996)()\n\n/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:3732)()\n    303                         del self._convert_from_list[i]\n    304                         break\n--> 305                 raise\n    306             \n    307         raise TypeError, \"No conversion defined from %s to %s\"%(R, self)\n\n/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.structure.parent.__call__ (sage/structure/parent.c:3619)()\n    294             try:\n    295                 if no_extra_args:\n--> 296                     return mor._call_(x)\n    297                 else:\n    298                     return mor._call_with_args(x, args, kwds)\n\n/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:2622)()\n     74                 print type(self._codomain), self._codomain\n     75                 print type(self._codomain._element_constructor), self._codomain._element_constructor\n---> 76             raise\n     77 \n     78     cpdef Element _call_with_args(self, x, args=(), kwds={}):\n\n/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps._call_ (sage/structure/coerce_maps.c:2537)()\n     69     cpdef Element _call_(self, x):\n     70         try:\n---> 71             return self._codomain._element_constructor(x)\n     72         except:\n     73             if print_warnings:\n\n/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/rings/integer.so in sage.rings.integer.Integer.__init__ (sage/rings/integer.c:5688)()\n\nTypeError: unable to coerce <type 'sage.rings.polynomial.polydict.PolyDict'> to an integer\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4322\n\n",
     "created_at": "2008-10-18T21:43:44Z",
     "labels": [
         "optional packages",
@@ -14,12 +14,12 @@ archive/issues_004322.json:
     "title": "modular polynomials database is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4322",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 Assignee: mabshoff
 
-CC:  robertwb
+CC:  @robertwb
 
 Keywords: modular polynomial database
 
@@ -128,7 +128,7 @@ to be accessible. In that case he can send it back to me.
 archive/issue_comments_031664.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to robertwb.",
+    "body": "Changing assignee from mabshoff to @robertwb.",
     "created_at": "2008-10-20T22:27:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4322",
     "type": "issue_comment",
@@ -137,7 +137,7 @@ archive/issue_comments_031664.json:
 }
 ```
 
-Changing assignee from mabshoff to robertwb.
+Changing assignee from mabshoff to @robertwb.
 
 
 
@@ -191,7 +191,7 @@ archive/issue_comments_031667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4322#issuecomment-31667",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -204,16 +204,16 @@ Changing component from coercion to optional packages.
 archive/issue_comments_031668.json:
 ```json
 {
-    "body": "Changing assignee from robertwb to mabshoff.",
+    "body": "Changing assignee from @robertwb to mabshoff.",
     "created_at": "2008-10-21T19:06:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4322#issuecomment-31668",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from robertwb to mabshoff.
+Changing assignee from @robertwb to mabshoff.
 
 
 
@@ -227,7 +227,7 @@ archive/issue_comments_031669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4322#issuecomment-31669",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -259,16 +259,16 @@ x - y
 archive/issue_comments_031670.json:
 ```json
 {
-    "body": "Attachment [trac_4322.patch](tarball://root/attachments/some-uuid/ticket4322/trac_4322.patch) by AlexGhitza created at 2009-01-23 18:40:41\n\nThe attached patch removes the uses of polydict.",
+    "body": "Attachment [trac_4322.patch](tarball://root/attachments/some-uuid/ticket4322/trac_4322.patch) by @aghitza created at 2009-01-23 18:40:41\n\nThe attached patch removes the uses of polydict.",
     "created_at": "2009-01-23T18:40:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4322#issuecomment-31670",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_4322.patch](tarball://root/attachments/some-uuid/ticket4322/trac_4322.patch) by AlexGhitza created at 2009-01-23 18:40:41
+Attachment [trac_4322.patch](tarball://root/attachments/some-uuid/ticket4322/trac_4322.patch) by @aghitza created at 2009-01-23 18:40:41
 
 The attached patch removes the uses of polydict.
 

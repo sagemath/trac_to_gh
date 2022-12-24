@@ -14,7 +14,7 @@ archive/issues_004270.json:
     "title": "Add sage-combinat script and sage-combinat",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4270",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 Assignee: mabshoff
@@ -38,7 +38,7 @@ archive/issue_comments_031174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4270#issuecomment-31174",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -51,16 +51,16 @@ patch
 archive/issue_comments_031175.json:
 ```json
 {
-    "body": "Attachment [sage-combinat-script.patch](tarball://root/attachments/some-uuid/ticket4270/sage-combinat-script.patch) by mhansen created at 2008-10-12 20:17:10",
+    "body": "Attachment [sage-combinat-script.patch](tarball://root/attachments/some-uuid/ticket4270/sage-combinat-script.patch) by @mwhansen created at 2008-10-12 20:17:10",
     "created_at": "2008-10-12T20:17:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4270#issuecomment-31175",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [sage-combinat-script.patch](tarball://root/attachments/some-uuid/ticket4270/sage-combinat-script.patch) by mhansen created at 2008-10-12 20:17:10
+Attachment [sage-combinat-script.patch](tarball://root/attachments/some-uuid/ticket4270/sage-combinat-script.patch) by @mwhansen created at 2008-10-12 20:17:10
 
 
 
@@ -69,16 +69,16 @@ Attachment [sage-combinat-script.patch](tarball://root/attachments/some-uuid/tic
 archive/issue_comments_031176.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to mhansen.",
+    "body": "Changing assignee from mabshoff to @mwhansen.",
     "created_at": "2008-10-12T20:17:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4270#issuecomment-31176",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from mabshoff to mhansen.
+Changing assignee from mabshoff to @mwhansen.
 
 
 
@@ -92,7 +92,7 @@ archive/issue_comments_031177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4270#issuecomment-31177",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

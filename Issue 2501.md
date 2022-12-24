@@ -3,7 +3,7 @@
 archive/issues_002501.json:
 ```json
 {
-    "body": "Assignee: malb\n\nThe attached patch adds a class SBox to the module `sage.crypto.mq` which offers basic functionality to work with cryptographic substitution boxes like:\n* substitution (obviously)\n* difference distribution and linear approximation matrices\n* multivariate polynomial system generation\n* univariate polynomial interpolation\n\nIt might be a bit controversial if this functionality should go in (it is not math but applied math), so here are some points in favour:\n* Sage has a `sage.crypto` module with LFSRs and such.\n* `SBox` supports (algebraic) cryptanalysis by simplifying experiments with ciphers and algebraic aspects of cryptography is an application of Sage (Sage was advertised for this application in the past)\n* Some people have expressed (some) interest in such a class.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2501\n\n",
+    "body": "Assignee: @malb\n\nThe attached patch adds a class SBox to the module `sage.crypto.mq` which offers basic functionality to work with cryptographic substitution boxes like:\n* substitution (obviously)\n* difference distribution and linear approximation matrices\n* multivariate polynomial system generation\n* univariate polynomial interpolation\n\nIt might be a bit controversial if this functionality should go in (it is not math but applied math), so here are some points in favour:\n* Sage has a `sage.crypto` module with LFSRs and such.\n* `SBox` supports (algebraic) cryptanalysis by simplifying experiments with ciphers and algebraic aspects of cryptography is an application of Sage (Sage was advertised for this application in the past)\n* Some people have expressed (some) interest in such a class.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2501\n\n",
     "created_at": "2008-03-12T18:05:16Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_002501.json:
     "title": "[with patch, needs review] SBox class for Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2501",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 The attached patch adds a class SBox to the module `sage.crypto.mq` which offers basic functionality to work with cryptographic substitution boxes like:
 * substitution (obviously)
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2501
 archive/issue_comments_016950.json:
 ```json
 {
-    "body": "Attachment [sbox.patch](tarball://root/attachments/some-uuid/ticket2501/sbox.patch) by malb created at 2008-03-12 18:05:29",
+    "body": "Attachment [sbox.patch](tarball://root/attachments/some-uuid/ticket2501/sbox.patch) by @malb created at 2008-03-12 18:05:29",
     "created_at": "2008-03-12T18:05:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2501",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2501#issuecomment-16950",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [sbox.patch](tarball://root/attachments/some-uuid/ticket2501/sbox.patch) by malb created at 2008-03-12 18:05:29
+Attachment [sbox.patch](tarball://root/attachments/some-uuid/ticket2501/sbox.patch) by @malb created at 2008-03-12 18:05:29
 
 
 
@@ -64,7 +64,7 @@ archive/issue_comments_016951.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2501",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2501#issuecomment-16951",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_016952.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2501",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2501#issuecomment-16952",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

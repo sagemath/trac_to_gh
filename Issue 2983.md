@@ -14,7 +14,7 @@ archive/issues_002983.json:
     "title": "Itanium (RHEL 5) -- singular interface problems in matrix_group.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2983",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -143,7 +143,7 @@ archive/issue_comments_020538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2983#issuecomment-20538",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

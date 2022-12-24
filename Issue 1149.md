@@ -14,7 +14,7 @@ archive/issues_001149.json:
     "title": "documentation: example output does not agree with 2.8.12",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1149",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1149
 archive/issue_comments_007014.json:
 ```json
 {
-    "body": "Attachment [7330.patch](tarball://root/attachments/some-uuid/ticket1149/7330.patch) by zimmerma created at 2007-11-11 23:33:41",
+    "body": "Attachment [7330.patch](tarball://root/attachments/some-uuid/ticket1149/7330.patch) by @zimmermann6 created at 2007-11-11 23:33:41",
     "created_at": "2007-11-11T23:33:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1149",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1149#issuecomment-7014",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [7330.patch](tarball://root/attachments/some-uuid/ticket1149/7330.patch) by zimmerma created at 2007-11-11 23:33:41
+Attachment [7330.patch](tarball://root/attachments/some-uuid/ticket1149/7330.patch) by @zimmermann6 created at 2007-11-11 23:33:41
 
 
 

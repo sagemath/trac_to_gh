@@ -3,7 +3,7 @@
 archive/issues_004109.json:
 ```json
 {
-    "body": "Assignee: rlm\n\n\n```\ng=graphs.PathGraph(6)\ng.show()\nh = g.complement()\nh.show()\n```\n\nThe last command shows the original P_6, not the complement.  However, calling `h.edges()` seems to return the right results.  Also, `Graph(h).show()` shows the correct thing, I think.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4109\n\n",
+    "body": "Assignee: @rlmill\n\n\n```\ng=graphs.PathGraph(6)\ng.show()\nh = g.complement()\nh.show()\n```\n\nThe last command shows the original P_6, not the complement.  However, calling `h.edges()` seems to return the right results.  Also, `Graph(h).show()` shows the correct thing, I think.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4109\n\n",
     "created_at": "2008-09-13T04:43:20Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_004109.json:
     "title": "The complement of a graph shows as the original graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4109",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 
 ```
@@ -47,7 +47,7 @@ archive/issue_comments_029751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4109#issuecomment-29751",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_029752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4109#issuecomment-29752",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_029753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4109#issuecomment-29753",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_029754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4109#issuecomment-29754",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

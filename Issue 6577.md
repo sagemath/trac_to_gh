@@ -14,7 +14,7 @@ archive/issues_006577.json:
     "title": "Reference manual build errors in 4.1.1.alpha0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6577",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 Assignee: tba
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6577
 archive/issue_comments_053693.json:
 ```json
 {
-    "body": "Attachment [trac_6577-refmanual_warnings_4_1_1_alpha0.patch](tarball://root/attachments/some-uuid/ticket6577/trac_6577-refmanual_warnings_4_1_1_alpha0.patch) by davidloeffler created at 2009-07-21 11:21:40",
+    "body": "Attachment [trac_6577-refmanual_warnings_4_1_1_alpha0.patch](tarball://root/attachments/some-uuid/ticket6577/trac_6577-refmanual_warnings_4_1_1_alpha0.patch) by @loefflerd created at 2009-07-21 11:21:40",
     "created_at": "2009-07-21T11:21:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6577#issuecomment-53693",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_6577-refmanual_warnings_4_1_1_alpha0.patch](tarball://root/attachments/some-uuid/ticket6577/trac_6577-refmanual_warnings_4_1_1_alpha0.patch) by davidloeffler created at 2009-07-21 11:21:40
+Attachment [trac_6577-refmanual_warnings_4_1_1_alpha0.patch](tarball://root/attachments/some-uuid/ticket6577/trac_6577-refmanual_warnings_4_1_1_alpha0.patch) by @loefflerd created at 2009-07-21 11:21:40
 
 
 
@@ -64,7 +64,7 @@ archive/issue_comments_053694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6577#issuecomment-53694",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_053695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6577#issuecomment-53695",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 

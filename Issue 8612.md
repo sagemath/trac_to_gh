@@ -3,7 +3,7 @@
 archive/issues_008612.json:
 ```json
 {
-    "body": "Assignee: was\n\nI was browsing the code in matrix/misc.pyx, and noticed:\n\n```\nThese lines are in misc.pyx:\n\n        if not proof:\n            verbose(\"Not checking validity of result (since proof=False).\", level=2, caller_name=\"multimod echelon\")\n            break\n        d   = E.denominator()\n        hdE = long(E.height())\n        if True or hdE * self.ncols() * height < prod:\n            break\n        M = prod * p*p*p\n\n```\n\n\nNotice the \"if True\" -- that disables proof checking no matter what!!  This must be removed.  This could get hit in rare cased by, e.g., the modular symbols code, and it would lead to weird inconsistencies later on.... which is something we've seen on big examples.\n\nI'm guessing this was the result of disabling proof checking while developing the code, then never switching it back.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8612\n\n",
+    "body": "Assignee: @williamstein\n\nI was browsing the code in matrix/misc.pyx, and noticed:\n\n```\nThese lines are in misc.pyx:\n\n        if not proof:\n            verbose(\"Not checking validity of result (since proof=False).\", level=2, caller_name=\"multimod echelon\")\n            break\n        d   = E.denominator()\n        hdE = long(E.height())\n        if True or hdE * self.ncols() * height < prod:\n            break\n        M = prod * p*p*p\n\n```\n\n\nNotice the \"if True\" -- that disables proof checking no matter what!!  This must be removed.  This could get hit in rare cased by, e.g., the modular symbols code, and it would lead to weird inconsistencies later on.... which is something we've seen on big examples.\n\nI'm guessing this was the result of disabling proof checking while developing the code, then never switching it back.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8612\n\n",
     "created_at": "2010-03-26T05:46:26Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_008612.json:
     "title": "potentially horrible multimodular matrix echelon bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8612",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I was browsing the code in matrix/misc.pyx, and noticed:
 
@@ -56,7 +56,7 @@ archive/issue_comments_078034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-78034",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -69,16 +69,16 @@ Changing status from new to needs_review.
 archive/issue_comments_078035.json:
 ```json
 {
-    "body": "Attachment [trac_8612.patch](tarball://root/attachments/some-uuid/ticket8612/trac_8612.patch) by was created at 2010-03-26 05:51:05",
+    "body": "Attachment [trac_8612.patch](tarball://root/attachments/some-uuid/ticket8612/trac_8612.patch) by @williamstein created at 2010-03-26 05:51:05",
     "created_at": "2010-03-26T05:51:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-78035",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_8612.patch](tarball://root/attachments/some-uuid/ticket8612/trac_8612.patch) by was created at 2010-03-26 05:51:05
+Attachment [trac_8612.patch](tarball://root/attachments/some-uuid/ticket8612/trac_8612.patch) by @williamstein created at 2010-03-26 05:51:05
 
 
 
@@ -92,7 +92,7 @@ archive/issue_comments_078036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-78036",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_078037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-78037",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -147,16 +147,16 @@ I've posted a part2 patch that fixes the issue you've pointed out.
 archive/issue_comments_078038.json:
 ```json
 {
-    "body": "Attachment [trac_8612-part2.patch](tarball://root/attachments/some-uuid/ticket8612/trac_8612-part2.patch) by was created at 2010-03-29 04:30:33",
+    "body": "Attachment [trac_8612-part2.patch](tarball://root/attachments/some-uuid/ticket8612/trac_8612-part2.patch) by @williamstein created at 2010-03-29 04:30:33",
     "created_at": "2010-03-29T04:30:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-78038",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_8612-part2.patch](tarball://root/attachments/some-uuid/ticket8612/trac_8612-part2.patch) by was created at 2010-03-29 04:30:33
+Attachment [trac_8612-part2.patch](tarball://root/attachments/some-uuid/ticket8612/trac_8612-part2.patch) by @williamstein created at 2010-03-29 04:30:33
 
 
 
@@ -170,7 +170,7 @@ archive/issue_comments_078039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-78039",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_078040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-78040",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_078041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-78041",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_078042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-78042",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_078043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-78043",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -259,15 +259,15 @@ Resolution: fixed
 archive/issue_comments_078044.json:
 ```json
 {
-    "body": "Attachment [trac_8612_multimodular_echelon.patch](tarball://root/attachments/some-uuid/ticket8612/trac_8612_multimodular_echelon.patch) by was created at 2010-03-29 22:06:58\n\nMerged into sage-4.3.5",
+    "body": "Attachment [trac_8612_multimodular_echelon.patch](tarball://root/attachments/some-uuid/ticket8612/trac_8612_multimodular_echelon.patch) by @williamstein created at 2010-03-29 22:06:58\n\nMerged into sage-4.3.5",
     "created_at": "2010-03-29T22:06:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-78044",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_8612_multimodular_echelon.patch](tarball://root/attachments/some-uuid/ticket8612/trac_8612_multimodular_echelon.patch) by was created at 2010-03-29 22:06:58
+Attachment [trac_8612_multimodular_echelon.patch](tarball://root/attachments/some-uuid/ticket8612/trac_8612_multimodular_echelon.patch) by @williamstein created at 2010-03-29 22:06:58
 
 Merged into sage-4.3.5

@@ -3,7 +3,7 @@
 archive/issues_007791.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jkantor mpatel\n\nNumpy 1.4 has been released.  As a matter of procedure, we probably ought to upgrade our numpy spkg.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7791\n\n",
+    "body": "Assignee: tbd\n\nCC:  jkantor @qed777\n\nNumpy 1.4 has been released.  As a matter of procedure, we probably ought to upgrade our numpy spkg.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7791\n\n",
     "created_at": "2009-12-29T19:19:41Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_007791.json:
     "title": "upgrade numpy to 1.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7791",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: tbd
 
-CC:  jkantor mpatel
+CC:  jkantor @qed777
 
 Numpy 1.4 has been released.  As a matter of procedure, we probably ought to upgrade our numpy spkg.
 
@@ -39,7 +39,7 @@ archive/issue_comments_067246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7791#issuecomment-67246",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_067248.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7791#issuecomment-67248",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_067249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7791#issuecomment-67249",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

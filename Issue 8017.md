@@ -3,7 +3,7 @@
 archive/issues_008017.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  was\n\n\n```\ncontinued_fraction(sqrt(2))\n[1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1]\n```\n\n\nFollowup to and depends on #5107, which documents the function better. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8017\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @williamstein\n\n\n```\ncontinued_fraction(sqrt(2))\n[1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1]\n```\n\n\nFollowup to and depends on #5107, which documents the function better. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8017\n\n",
     "created_at": "2010-01-21T00:12:58Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_008017.json:
     "title": "incorrect trailing digits for continued fraction",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8017",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  was
+CC:  @williamstein
 
 
 ```
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8017
 archive/issue_comments_070045.json:
 ```json
 {
-    "body": "Attachment [8017-cont-frac.patch](tarball://root/attachments/some-uuid/ticket8017/8017-cont-frac.patch) by robertwb created at 2010-01-21 01:23:43",
+    "body": "Attachment [8017-cont-frac.patch](tarball://root/attachments/some-uuid/ticket8017/8017-cont-frac.patch) by @robertwb created at 2010-01-21 01:23:43",
     "created_at": "2010-01-21T01:23:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8017#issuecomment-70045",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [8017-cont-frac.patch](tarball://root/attachments/some-uuid/ticket8017/8017-cont-frac.patch) by robertwb created at 2010-01-21 01:23:43
+Attachment [8017-cont-frac.patch](tarball://root/attachments/some-uuid/ticket8017/8017-cont-frac.patch) by @robertwb created at 2010-01-21 01:23:43
 
 
 
@@ -64,7 +64,7 @@ archive/issue_comments_070046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8017#issuecomment-70046",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_070047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8017#issuecomment-70047",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_070048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8017#issuecomment-70048",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_070049.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8017#issuecomment-70049",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -151,16 +151,16 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_070050.json:
 ```json
 {
-    "body": "Attachment [8017-contfrac-referee-fixes.patch](tarball://root/attachments/some-uuid/ticket8017/8017-contfrac-referee-fixes.patch) by robertwb created at 2010-03-15 20:06:32",
+    "body": "Attachment [8017-contfrac-referee-fixes.patch](tarball://root/attachments/some-uuid/ticket8017/8017-contfrac-referee-fixes.patch) by @robertwb created at 2010-03-15 20:06:32",
     "created_at": "2010-03-15T20:06:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8017#issuecomment-70050",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [8017-contfrac-referee-fixes.patch](tarball://root/attachments/some-uuid/ticket8017/8017-contfrac-referee-fixes.patch) by robertwb created at 2010-03-15 20:06:32
+Attachment [8017-contfrac-referee-fixes.patch](tarball://root/attachments/some-uuid/ticket8017/8017-contfrac-referee-fixes.patch) by @robertwb created at 2010-03-15 20:06:32
 
 
 
@@ -174,7 +174,7 @@ archive/issue_comments_070051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8017#issuecomment-70051",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_070052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8017#issuecomment-70052",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_070053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8017#issuecomment-70053",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_070054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8017#issuecomment-70054",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_070055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8017#issuecomment-70055",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_070056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8017#issuecomment-70056",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_070057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8017#issuecomment-70057",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -322,16 +322,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_070058.json:
 ```json
 {
-    "body": "Attachment [8017-contfrac-referee2.patch](tarball://root/attachments/some-uuid/ticket8017/8017-contfrac-referee2.patch) by robertwb created at 2010-07-29 18:15:23\n\nThanks for being so quick to look at this after such a long wait. Yes, I was thinking about this when I made these changes. The answers are not substantially different, and should be clear to any user that the current behavior is correct (e.g. by computing things out to higher precision or consulting external sources). \n\nMost importantly, the commands used are not broken or semantically different, which would be really bad. I refreshed the patch just inserting a little note about the change (and, of course, it will be fully recorded in the revision control system).",
+    "body": "Attachment [8017-contfrac-referee2.patch](tarball://root/attachments/some-uuid/ticket8017/8017-contfrac-referee2.patch) by @robertwb created at 2010-07-29 18:15:23\n\nThanks for being so quick to look at this after such a long wait. Yes, I was thinking about this when I made these changes. The answers are not substantially different, and should be clear to any user that the current behavior is correct (e.g. by computing things out to higher precision or consulting external sources). \n\nMost importantly, the commands used are not broken or semantically different, which would be really bad. I refreshed the patch just inserting a little note about the change (and, of course, it will be fully recorded in the revision control system).",
     "created_at": "2010-07-29T18:15:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8017#issuecomment-70058",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [8017-contfrac-referee2.patch](tarball://root/attachments/some-uuid/ticket8017/8017-contfrac-referee2.patch) by robertwb created at 2010-07-29 18:15:23
+Attachment [8017-contfrac-referee2.patch](tarball://root/attachments/some-uuid/ticket8017/8017-contfrac-referee2.patch) by @robertwb created at 2010-07-29 18:15:23
 
 Thanks for being so quick to look at this after such a long wait. Yes, I was thinking about this when I made these changes. The answers are not substantially different, and should be clear to any user that the current behavior is correct (e.g. by computing things out to higher precision or consulting external sources). 
 
@@ -349,7 +349,7 @@ archive/issue_comments_070059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8017#issuecomment-70059",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -367,7 +367,7 @@ archive/issue_comments_070060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8017#issuecomment-70060",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -380,16 +380,16 @@ Changing status from positive_review to needs_info.
 archive/issue_comments_070061.json:
 ```json
 {
-    "body": "Attachment [8017-all.patch](tarball://root/attachments/some-uuid/ticket8017/8017-all.patch) by robertwb created at 2010-08-04 07:43:06\n\napply only this patch",
+    "body": "Attachment [8017-all.patch](tarball://root/attachments/some-uuid/ticket8017/8017-all.patch) by @robertwb created at 2010-08-04 07:43:06\n\napply only this patch",
     "created_at": "2010-08-04T07:43:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8017#issuecomment-70061",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [8017-all.patch](tarball://root/attachments/some-uuid/ticket8017/8017-all.patch) by robertwb created at 2010-08-04 07:43:06
+Attachment [8017-all.patch](tarball://root/attachments/some-uuid/ticket8017/8017-all.patch) by @robertwb created at 2010-08-04 07:43:06
 
 apply only this patch
 
@@ -405,7 +405,7 @@ archive/issue_comments_070062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8017#issuecomment-70062",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -423,7 +423,7 @@ archive/issue_comments_070063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8017#issuecomment-70063",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -441,7 +441,7 @@ archive/issue_comments_070064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8017#issuecomment-70064",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -459,7 +459,7 @@ archive/issue_comments_070065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8017#issuecomment-70065",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

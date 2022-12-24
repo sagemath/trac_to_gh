@@ -3,7 +3,7 @@
 archive/issues_005229.json:
 ```json
 {
-    "body": "Assignee: was\n\nAs is, it appears that 3d plots are wrong, according to the jmol axes, because the jmol axes apparently don't default to being centered at the origin.  This patch makes the jmol axes centered at the origin.  To show the jmol axes, you still need to right-click on the jmol plot, select Style, then Axes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5229\n\n",
+    "body": "Assignee: @williamstein\n\nAs is, it appears that 3d plots are wrong, according to the jmol axes, because the jmol axes apparently don't default to being centered at the origin.  This patch makes the jmol axes centered at the origin.  To show the jmol axes, you still need to right-click on the jmol plot, select Style, then Axes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5229\n\n",
     "created_at": "2009-02-10T21:18:01Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_005229.json:
     "title": "[with patch, needs review] Jmol axes in the wrong place",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5229",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 As is, it appears that 3d plots are wrong, according to the jmol axes, because the jmol axes apparently don't default to being centered at the origin.  This patch makes the jmol axes centered at the origin.  To show the jmol axes, you still need to right-click on the jmol plot, select Style, then Axes.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5229
 archive/issue_comments_040079.json:
 ```json
 {
-    "body": "Attachment [trac_5229-jmol-axes.patch](tarball://root/attachments/some-uuid/ticket5229/trac_5229-jmol-axes.patch) by ncalexan created at 2009-02-10 21:49:16\n\n\n```\n[1:28pm] ncalexan: jason|log: either it's not working or I don't get it.\n[1:28pm] ncalexan: plot3d(lambda x, y: x^2 + y^2, (-2,2), (-2,2))\n[1:28pm] ncalexan: gives me a smooth cup-like surface.\n[1:28pm] ncalexan: But the value at x=0, y=0 (which is z=0) does not coincide with the jmol axes.\n```\n",
+    "body": "Attachment [trac_5229-jmol-axes.patch](tarball://root/attachments/some-uuid/ticket5229/trac_5229-jmol-axes.patch) by @ncalexan created at 2009-02-10 21:49:16\n\n\n```\n[1:28pm] ncalexan: jason|log: either it's not working or I don't get it.\n[1:28pm] ncalexan: plot3d(lambda x, y: x^2 + y^2, (-2,2), (-2,2))\n[1:28pm] ncalexan: gives me a smooth cup-like surface.\n[1:28pm] ncalexan: But the value at x=0, y=0 (which is z=0) does not coincide with the jmol axes.\n```\n",
     "created_at": "2009-02-10T21:49:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5229",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5229#issuecomment-40079",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [trac_5229-jmol-axes.patch](tarball://root/attachments/some-uuid/ticket5229/trac_5229-jmol-axes.patch) by ncalexan created at 2009-02-10 21:49:16
+Attachment [trac_5229-jmol-axes.patch](tarball://root/attachments/some-uuid/ticket5229/trac_5229-jmol-axes.patch) by @ncalexan created at 2009-02-10 21:49:16
 
 
 ```
@@ -64,7 +64,7 @@ archive/issue_comments_040080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5229",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5229#issuecomment-40080",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_040082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5229",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5229#issuecomment-40082",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

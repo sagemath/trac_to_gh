@@ -3,7 +3,7 @@
 archive/issues_003588.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\n\n```\nsage: p = random_prime(2^1000, proof=False)\n\nsage: r = Integers(p)(2)\n\nsage: time 1/r\nCPU times: user 8.33 s, sys: 0.04 s, total: 8.37 s\nWall time: 8.38 s\n 3499526081536621642679042248089160305431650460015592790597504050874839449753564641181241694531732168529968232075793871659087004627036430097798051425534663680136477216778245568521334956231031996455409743133009480089945324001250066901998383114487031466512725971538453941363837544198631115493811447198845\n```\n\n\nThe generic fraction_field() call does primality testing here, takes too long. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3588\n\n",
+    "body": "Assignee: @robertwb\n\n\n```\nsage: p = random_prime(2^1000, proof=False)\n\nsage: r = Integers(p)(2)\n\nsage: time 1/r\nCPU times: user 8.33 s, sys: 0.04 s, total: 8.37 s\nWall time: 8.38 s\n 3499526081536621642679042248089160305431650460015592790597504050874839449753564641181241694531732168529968232075793871659087004627036430097798051425534663680136477216778245568521334956231031996455409743133009480089945324001250066901998383114487031466512725971538453941363837544198631115493811447198845\n```\n\n\nThe generic fraction_field() call does primality testing here, takes too long. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3588\n\n",
     "created_at": "2008-07-07T20:23:11Z",
     "labels": [
         "coercion",
@@ -14,10 +14,10 @@ archive/issues_003588.json:
     "title": "Divison may involve lengthy calculations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3588",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 
 ```
@@ -50,7 +50,7 @@ archive/issue_comments_025352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3588#issuecomment-25352",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -63,16 +63,16 @@ Changing status from new to assigned.
 archive/issue_comments_025353.json:
 ```json
 {
-    "body": "Attachment [3588-slowdiv.patch](tarball://root/attachments/some-uuid/ticket3588/3588-slowdiv.patch) by robertwb created at 2008-07-07 21:06:12",
+    "body": "Attachment [3588-slowdiv.patch](tarball://root/attachments/some-uuid/ticket3588/3588-slowdiv.patch) by @robertwb created at 2008-07-07 21:06:12",
     "created_at": "2008-07-07T21:06:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3588#issuecomment-25353",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3588-slowdiv.patch](tarball://root/attachments/some-uuid/ticket3588/3588-slowdiv.patch) by robertwb created at 2008-07-07 21:06:12
+Attachment [3588-slowdiv.patch](tarball://root/attachments/some-uuid/ticket3588/3588-slowdiv.patch) by @robertwb created at 2008-07-07 21:06:12
 
 
 
@@ -108,7 +108,7 @@ archive/issue_comments_025355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3588#issuecomment-25355",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_025356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3588#issuecomment-25356",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_025357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3588#issuecomment-25357",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_025358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3588#issuecomment-25358",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -175,16 +175,16 @@ Resolution changed from fixed to
 archive/issue_comments_025359.json:
 ```json
 {
-    "body": "Attachment [quickfix.patch](tarball://root/attachments/some-uuid/ticket3588/quickfix.patch) by was created at 2008-07-11 18:48:11",
+    "body": "Attachment [quickfix.patch](tarball://root/attachments/some-uuid/ticket3588/quickfix.patch) by @williamstein created at 2008-07-11 18:48:11",
     "created_at": "2008-07-11T18:48:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3588#issuecomment-25359",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [quickfix.patch](tarball://root/attachments/some-uuid/ticket3588/quickfix.patch) by was created at 2008-07-11 18:48:11
+Attachment [quickfix.patch](tarball://root/attachments/some-uuid/ticket3588/quickfix.patch) by @williamstein created at 2008-07-11 18:48:11
 
 
 
@@ -198,7 +198,7 @@ archive/issue_comments_025360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3588#issuecomment-25360",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

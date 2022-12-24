@@ -59,7 +59,7 @@ archive/issue_comments_037406.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4931#issuecomment-37406",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_037408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4931#issuecomment-37408",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -110,16 +110,16 @@ With the attached referee followup patch this gets positive review.
 archive/issue_comments_037409.json:
 ```json
 {
-    "body": "Attachment [trac_4931_ref.patch](tarball://root/attachments/some-uuid/ticket4931/trac_4931_ref.patch) by was created at 2009-01-03 06:33:56",
+    "body": "Attachment [trac_4931_ref.patch](tarball://root/attachments/some-uuid/ticket4931/trac_4931_ref.patch) by @williamstein created at 2009-01-03 06:33:56",
     "created_at": "2009-01-03T06:33:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4931#issuecomment-37409",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4931_ref.patch](tarball://root/attachments/some-uuid/ticket4931/trac_4931_ref.patch) by was created at 2009-01-03 06:33:56
+Attachment [trac_4931_ref.patch](tarball://root/attachments/some-uuid/ticket4931/trac_4931_ref.patch) by @williamstein created at 2009-01-03 06:33:56
 
 
 

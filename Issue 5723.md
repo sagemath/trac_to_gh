@@ -14,7 +14,7 @@ archive/issues_005723.json:
     "title": "sage new symbolics/pynac misbehave when evaluating with CDF elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5723",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 Keywords: sage symbolics pynac evaluating n CDF
@@ -54,7 +54,7 @@ archive/issue_comments_044719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5723#issuecomment-44719",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -67,16 +67,16 @@ add doctest
 archive/issue_comments_044720.json:
 ```json
 {
-    "body": "Attachment [trac_5723.patch](tarball://root/attachments/some-uuid/ticket5723/trac_5723.patch) by burcin created at 2009-04-13 16:14:55\n\nThis is fixed with the changes in #5777, attached patch adds the doctest to sage/symbolic/function.pyx.",
+    "body": "Attachment [trac_5723.patch](tarball://root/attachments/some-uuid/ticket5723/trac_5723.patch) by @burcin created at 2009-04-13 16:14:55\n\nThis is fixed with the changes in #5777, attached patch adds the doctest to sage/symbolic/function.pyx.",
     "created_at": "2009-04-13T16:14:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5723#issuecomment-44720",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_5723.patch](tarball://root/attachments/some-uuid/ticket5723/trac_5723.patch) by burcin created at 2009-04-13 16:14:55
+Attachment [trac_5723.patch](tarball://root/attachments/some-uuid/ticket5723/trac_5723.patch) by @burcin created at 2009-04-13 16:14:55
 
 This is fixed with the changes in #5777, attached patch adds the doctest to sage/symbolic/function.pyx.
 
@@ -92,7 +92,7 @@ archive/issue_comments_044721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5723#issuecomment-44721",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -105,16 +105,16 @@ Changing status from new to assigned.
 archive/issue_comments_044722.json:
 ```json
 {
-    "body": "Set assignee to burcin.",
+    "body": "Set assignee to @burcin.",
     "created_at": "2009-04-13T16:14:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5723#issuecomment-44722",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Set assignee to burcin.
+Set assignee to @burcin.
 
 
 
@@ -128,7 +128,7 @@ archive/issue_comments_044723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5723#issuecomment-44723",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_044724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5723#issuecomment-44724",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_044725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5723#issuecomment-44725",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_044726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5723#issuecomment-44726",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_044727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5723#issuecomment-44727",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

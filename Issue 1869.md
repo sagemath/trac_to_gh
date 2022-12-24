@@ -3,7 +3,7 @@
 archive/issues_001869.json:
 ```json
 {
-    "body": "Assignee: rlm\n\n`show` is in `sage/misc/functional.py`. It should be easy to get graphs_list functionality in there, if it applies.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1869\n\n",
+    "body": "Assignee: @rlmill\n\n`show` is in `sage/misc/functional.py`. It should be easy to get graphs_list functionality in there, if it applies.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1869\n\n",
     "created_at": "2008-01-20T20:35:34Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_001869.json:
     "title": "Implement show(list(graphs(n))) et al",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1869",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 `show` is in `sage/misc/functional.py`. It should be easy to get graphs_list functionality in there, if it applies.
 
@@ -37,7 +37,7 @@ archive/issue_comments_011835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1869#issuecomment-11835",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to assigned.
 archive/issue_comments_011836.json:
 ```json
 {
-    "body": "Attachment [show_graphs.patch](tarball://root/attachments/some-uuid/ticket1869/show_graphs.patch) by rlm created at 2008-01-23 22:25:12",
+    "body": "Attachment [show_graphs.patch](tarball://root/attachments/some-uuid/ticket1869/show_graphs.patch) by @rlmill created at 2008-01-23 22:25:12",
     "created_at": "2008-01-23T22:25:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1869#issuecomment-11836",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [show_graphs.patch](tarball://root/attachments/some-uuid/ticket1869/show_graphs.patch) by rlm created at 2008-01-23 22:25:12
+Attachment [show_graphs.patch](tarball://root/attachments/some-uuid/ticket1869/show_graphs.patch) by @rlmill created at 2008-01-23 22:25:12
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_011837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1869#issuecomment-11837",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

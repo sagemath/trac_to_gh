@@ -3,7 +3,7 @@
 archive/issues_007347.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  jason kcrisman\n\n\n```\nsage: numerical_integral(SR(0), 0, 1)\nTraceback (most recent call last):\n...\nValueError: Integrand has wrong number of parameters\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7347\n\n",
+    "body": "Assignee: jkantor\n\nCC:  @jasongrout @kcrisman\n\n\n```\nsage: numerical_integral(SR(0), 0, 1)\nTraceback (most recent call last):\n...\nValueError: Integrand has wrong number of parameters\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7347\n\n",
     "created_at": "2009-10-29T07:12:05Z",
     "labels": [
         "numerical",
@@ -14,12 +14,12 @@ archive/issues_007347.json:
     "title": "numerical_integral(SR(0), 0, 1) gives an error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7347",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jkantor
 
-CC:  jason kcrisman
+CC:  @jasongrout @kcrisman
 
 
 ```
@@ -64,7 +64,7 @@ archive/issue_comments_061569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7347#issuecomment-61569",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_061570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7347#issuecomment-61570",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_061571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7347#issuecomment-61571",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_061572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7347#issuecomment-61572",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

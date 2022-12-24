@@ -14,7 +14,7 @@ archive/issues_009442.json:
     "title": "reference manual issues for 4.5.alpha4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9442",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: mvngu
@@ -39,16 +39,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9442
 archive/issue_comments_090467.json:
 ```json
 {
-    "body": "Attachment [trac_9442-ref-manual.patch](tarball://root/attachments/some-uuid/ticket9442/trac_9442-ref-manual.patch) by jhpalmieri created at 2010-07-06 22:43:25",
+    "body": "Attachment [trac_9442-ref-manual.patch](tarball://root/attachments/some-uuid/ticket9442/trac_9442-ref-manual.patch) by @jhpalmieri created at 2010-07-06 22:43:25",
     "created_at": "2010-07-06T22:43:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9442#issuecomment-90467",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_9442-ref-manual.patch](tarball://root/attachments/some-uuid/ticket9442/trac_9442-ref-manual.patch) by jhpalmieri created at 2010-07-06 22:43:25
+Attachment [trac_9442-ref-manual.patch](tarball://root/attachments/some-uuid/ticket9442/trac_9442-ref-manual.patch) by @jhpalmieri created at 2010-07-06 22:43:25
 
 
 
@@ -62,7 +62,7 @@ archive/issue_comments_090468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9442#issuecomment-90468",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_090469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9442#issuecomment-90469",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_090470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9442#issuecomment-90470",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

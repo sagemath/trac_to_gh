@@ -3,7 +3,7 @@
 archive/issues_006783.json:
 ```json
 {
-    "body": "Assignee: was\n\nOn Solaris (SPARC), the following test failed. Both ECL and Maxima were updated - ECL version 9.8.4, Maxima version 5.19.1\n\n\n```\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nThu Aug 20 20:02:37 BST 2009\ndsage-trial tmp directory doesn't exist - creating ...\nThis script will run the unit tests for DSage\n```\n\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n<SNIP>\n\n\n```\nsage -t  \"devel/sage/doc/en/constructions/linear_algebra.rst\"\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/en/constructions/linear_algebra.rst\", line 276:\n    sage: eig\nExpected:\n    [[[-sqrt(3)*%i,sqrt(3)*%i],[1,1]],[1,(sqrt(3)*%i+1)/4],[1,-(sqrt(3)*%i-1)/4]]\nGot:\n    [[[-sqrt(3)*%i,sqrt(3)*%i],[1,1]],[[[1,(sqrt(3)*%i+1)/4]],[[1,-(sqrt(3)*%i-1)/4]]]]\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/en/constructions/linear_algebra.rst\", line 291:\n    sage: A.eigenvectors()\nExpected:\n    [[[2,11],[1,2]],[0,0,1],[0,1,1/3]]\nGot:\n    [[[2,11],[1,2]],[[[0,0,1]],[[0,1,1/3]]]]\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/en/constructions/linear_algebra.rst\", line 294:\n    sage: A.eigenvectors()\nExpected:\n     [[[-1,2],[2,1]],[0,1,-1],[0,0,1]]\nGot:\n    [[[-1,2],[2,1]],[[[0,1,-1]],[[0,0,1]]]]\n**********************************************************************\n2 items had failures:\n   1 of   5 in __main__.example_11\n   2 of   6 in __main__.example_12\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /export/home/drkirkby/sage/sage-4.1.1/tmp/.doctest_linear_algebra.py\n         [19.2 s]\nsage -t  \"devel/sage/doc/en/constructions/number_theory.rst\"\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6783\n\n",
+    "body": "Assignee: @williamstein\n\nOn Solaris (SPARC), the following test failed. Both ECL and Maxima were updated - ECL version 9.8.4, Maxima version 5.19.1\n\n\n```\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nThu Aug 20 20:02:37 BST 2009\ndsage-trial tmp directory doesn't exist - creating ...\nThis script will run the unit tests for DSage\n```\n\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n<SNIP>\n\n\n```\nsage -t  \"devel/sage/doc/en/constructions/linear_algebra.rst\"\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/en/constructions/linear_algebra.rst\", line 276:\n    sage: eig\nExpected:\n    [[[-sqrt(3)*%i,sqrt(3)*%i],[1,1]],[1,(sqrt(3)*%i+1)/4],[1,-(sqrt(3)*%i-1)/4]]\nGot:\n    [[[-sqrt(3)*%i,sqrt(3)*%i],[1,1]],[[[1,(sqrt(3)*%i+1)/4]],[[1,-(sqrt(3)*%i-1)/4]]]]\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/en/constructions/linear_algebra.rst\", line 291:\n    sage: A.eigenvectors()\nExpected:\n    [[[2,11],[1,2]],[0,0,1],[0,1,1/3]]\nGot:\n    [[[2,11],[1,2]],[[[0,0,1]],[[0,1,1/3]]]]\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/en/constructions/linear_algebra.rst\", line 294:\n    sage: A.eigenvectors()\nExpected:\n     [[[-1,2],[2,1]],[0,1,-1],[0,0,1]]\nGot:\n    [[[-1,2],[2,1]],[[[0,1,-1]],[[0,0,1]]]]\n**********************************************************************\n2 items had failures:\n   1 of   5 in __main__.example_11\n   2 of   6 in __main__.example_12\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /export/home/drkirkby/sage/sage-4.1.1/tmp/.doctest_linear_algebra.py\n         [19.2 s]\nsage -t  \"devel/sage/doc/en/constructions/number_theory.rst\"\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6783\n\n",
     "created_at": "2009-08-20T21:34:42Z",
     "labels": [
         "linear algebra",
@@ -17,7 +17,7 @@ archive/issues_006783.json:
     "user": "drkirkby"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 On Solaris (SPARC), the following test failed. Both ECL and Maxima were updated - ECL version 9.8.4, Maxima version 5.19.1
 
@@ -86,7 +86,7 @@ archive/issue_comments_055906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6783#issuecomment-55906",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_055907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6783#issuecomment-55907",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -117,16 +117,16 @@ This is due to changes in Maxima's formatting of the output for eigenvectors.  S
 archive/issue_comments_055908.json:
 ```json
 {
-    "body": "Attachment [trac_6783.patch](tarball://root/attachments/some-uuid/ticket6783/trac_6783.patch) by AlexGhitza created at 2009-08-20 23:28:28\n\napply after the spkg's at #6564 and #6699",
+    "body": "Attachment [trac_6783.patch](tarball://root/attachments/some-uuid/ticket6783/trac_6783.patch) by @aghitza created at 2009-08-20 23:28:28\n\napply after the spkg's at #6564 and #6699",
     "created_at": "2009-08-20T23:28:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6783#issuecomment-55908",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_6783.patch](tarball://root/attachments/some-uuid/ticket6783/trac_6783.patch) by AlexGhitza created at 2009-08-20 23:28:28
+Attachment [trac_6783.patch](tarball://root/attachments/some-uuid/ticket6783/trac_6783.patch) by @aghitza created at 2009-08-20 23:28:28
 
 apply after the spkg's at #6564 and #6699
 
@@ -137,16 +137,16 @@ apply after the spkg's at #6564 and #6699
 archive/issue_comments_055909.json:
 ```json
 {
-    "body": "Changing assignee from was to AlexGhitza.",
+    "body": "Changing assignee from @williamstein to @aghitza.",
     "created_at": "2009-08-20T23:29:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6783#issuecomment-55909",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from was to AlexGhitza.
+Changing assignee from @williamstein to @aghitza.
 
 
 
@@ -160,7 +160,7 @@ archive/issue_comments_055910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6783#issuecomment-55910",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003130.json:
     "title": "permgps: added normal_subgroups and fixed image and kernel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3130",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 Assignee: joyner
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3130
 archive/issue_comments_021685.json:
 ```json
 {
-    "body": "Attachment [9670.patch](tarball://root/attachments/some-uuid/ticket3130/9670.patch) by wdj created at 2008-05-08 03:58:37\n\npermgp.py+permgp_morphism.py patch based on 3.0.1",
+    "body": "Attachment [9670.patch](tarball://root/attachments/some-uuid/ticket3130/9670.patch) by @wdjoyner created at 2008-05-08 03:58:37\n\npermgp.py+permgp_morphism.py patch based on 3.0.1",
     "created_at": "2008-05-08T03:58:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3130#issuecomment-21685",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [9670.patch](tarball://root/attachments/some-uuid/ticket3130/9670.patch) by wdj created at 2008-05-08 03:58:37
+Attachment [9670.patch](tarball://root/attachments/some-uuid/ticket3130/9670.patch) by @wdjoyner created at 2008-05-08 03:58:37
 
 permgp.py+permgp_morphism.py patch based on 3.0.1
 
@@ -63,7 +63,7 @@ archive/issue_comments_021686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3130#issuecomment-21686",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_021687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3130#issuecomment-21687",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -133,16 +133,16 @@ I agree with everything said. I'm not looking forward to having to rebase this, 
 archive/issue_comments_021688.json:
 ```json
 {
-    "body": "Attachment [9670-factored-a.patch](tarball://root/attachments/some-uuid/ticket3130/9670-factored-a.patch) by bump created at 2008-05-29 20:32:43",
+    "body": "Attachment [9670-factored-a.patch](tarball://root/attachments/some-uuid/ticket3130/9670-factored-a.patch) by @dwbump created at 2008-05-29 20:32:43",
     "created_at": "2008-05-29T20:32:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3130#issuecomment-21688",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [9670-factored-a.patch](tarball://root/attachments/some-uuid/ticket3130/9670-factored-a.patch) by bump created at 2008-05-29 20:32:43
+Attachment [9670-factored-a.patch](tarball://root/attachments/some-uuid/ticket3130/9670-factored-a.patch) by @dwbump created at 2008-05-29 20:32:43
 
 
 
@@ -151,16 +151,16 @@ Attachment [9670-factored-a.patch](tarball://root/attachments/some-uuid/ticket31
 archive/issue_comments_021689.json:
 ```json
 {
-    "body": "Attachment [9670-factored-b.patch](tarball://root/attachments/some-uuid/ticket3130/9670-factored-b.patch) by bump created at 2008-05-29 20:33:19",
+    "body": "Attachment [9670-factored-b.patch](tarball://root/attachments/some-uuid/ticket3130/9670-factored-b.patch) by @dwbump created at 2008-05-29 20:33:19",
     "created_at": "2008-05-29T20:33:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3130#issuecomment-21689",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [9670-factored-b.patch](tarball://root/attachments/some-uuid/ticket3130/9670-factored-b.patch) by bump created at 2008-05-29 20:33:19
+Attachment [9670-factored-b.patch](tarball://root/attachments/some-uuid/ticket3130/9670-factored-b.patch) by @dwbump created at 2008-05-29 20:33:19
 
 
 
@@ -174,7 +174,7 @@ archive/issue_comments_021690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3130#issuecomment-21690",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_021691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3130#issuecomment-21691",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_021692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3130#issuecomment-21692",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -236,16 +236,16 @@ Dan
 archive/issue_comments_021693.json:
 ```json
 {
-    "body": "Attachment [9792.patch](tarball://root/attachments/some-uuid/ticket3130/9792.patch) by wdj created at 2008-05-30 03:41:48\n\npatch based on 3.0.3.alpha0",
+    "body": "Attachment [9792.patch](tarball://root/attachments/some-uuid/ticket3130/9792.patch) by @wdjoyner created at 2008-05-30 03:41:48\n\npatch based on 3.0.3.alpha0",
     "created_at": "2008-05-30T03:41:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3130#issuecomment-21693",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [9792.patch](tarball://root/attachments/some-uuid/ticket3130/9792.patch) by wdj created at 2008-05-30 03:41:48
+Attachment [9792.patch](tarball://root/attachments/some-uuid/ticket3130/9792.patch) by @wdjoyner created at 2008-05-30 03:41:48
 
 patch based on 3.0.3.alpha0
 
@@ -261,7 +261,7 @@ archive/issue_comments_021694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3130#issuecomment-21694",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_021695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3130#issuecomment-21695",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_021696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3130#issuecomment-21696",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -360,7 +360,7 @@ archive/issue_comments_021698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3130#issuecomment-21698",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -414,7 +414,7 @@ archive/issue_comments_021699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3130#issuecomment-21699",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -434,7 +434,7 @@ archive/issue_comments_021700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3130#issuecomment-21700",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -457,7 +457,7 @@ archive/issue_comments_021701.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3130#issuecomment-21701",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -511,7 +511,7 @@ archive/issue_comments_021703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3130#issuecomment-21703",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -559,7 +559,7 @@ archive/issue_comments_021705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3130#issuecomment-21705",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -706,7 +706,7 @@ archive/issue_comments_021710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3130#issuecomment-21710",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -724,7 +724,7 @@ archive/issue_comments_021711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3130#issuecomment-21711",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -1013,7 +1013,7 @@ archive/issue_comments_021712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3130#issuecomment-21712",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -1031,7 +1031,7 @@ archive/issue_comments_021713.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3130#issuecomment-21713",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -1071,7 +1071,7 @@ archive/issue_comments_021715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3130#issuecomment-21715",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -1084,16 +1084,16 @@ Please apply both of these patches. The 2 pass sage -testall. There is no alphab
 archive/issue_comments_021716.json:
 ```json
 {
-    "body": "Attachment [9807.patch](tarball://root/attachments/some-uuid/ticket3130/9807.patch) by wdj created at 2008-06-09 02:19:06\n\nthis and 9807 are based on sage 3.0.3alpha1",
+    "body": "Attachment [9807.patch](tarball://root/attachments/some-uuid/ticket3130/9807.patch) by @wdjoyner created at 2008-06-09 02:19:06\n\nthis and 9807 are based on sage 3.0.3alpha1",
     "created_at": "2008-06-09T02:19:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3130#issuecomment-21716",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [9807.patch](tarball://root/attachments/some-uuid/ticket3130/9807.patch) by wdj created at 2008-06-09 02:19:06
+Attachment [9807.patch](tarball://root/attachments/some-uuid/ticket3130/9807.patch) by @wdjoyner created at 2008-06-09 02:19:06
 
 this and 9807 are based on sage 3.0.3alpha1
 
@@ -1104,16 +1104,16 @@ this and 9807 are based on sage 3.0.3alpha1
 archive/issue_comments_021717.json:
 ```json
 {
-    "body": "Attachment [9808.patch](tarball://root/attachments/some-uuid/ticket3130/9808.patch) by bump created at 2008-06-09 05:41:25\n\nI went through the patch (9807.patch+9808.patch) and it looks good to me. It is\nexactly what was discussed before without the realphabetizing.\n\nI hope that this ticket is closed before 3364. When 3364 is closed maybe someone\ncan come back and remove the # random output comments this patch adds.",
+    "body": "Attachment [9808.patch](tarball://root/attachments/some-uuid/ticket3130/9808.patch) by @dwbump created at 2008-06-09 05:41:25\n\nI went through the patch (9807.patch+9808.patch) and it looks good to me. It is\nexactly what was discussed before without the realphabetizing.\n\nI hope that this ticket is closed before 3364. When 3364 is closed maybe someone\ncan come back and remove the # random output comments this patch adds.",
     "created_at": "2008-06-09T05:41:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3130#issuecomment-21717",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [9808.patch](tarball://root/attachments/some-uuid/ticket3130/9808.patch) by bump created at 2008-06-09 05:41:25
+Attachment [9808.patch](tarball://root/attachments/some-uuid/ticket3130/9808.patch) by @dwbump created at 2008-06-09 05:41:25
 
 I went through the patch (9807.patch+9808.patch) and it looks good to me. It is
 exactly what was discussed before without the realphabetizing.

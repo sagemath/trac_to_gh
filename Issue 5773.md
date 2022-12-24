@@ -3,7 +3,7 @@
 archive/issues_005773.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  was\n\nI uploaded a corrupted tarball and get a blank screen from the server instead of a useful error.  I also get this in the server logs\n\n```\n2009-04-12 21:12:35-0700 [-] cd \"/Users/wstein/.sage/temp/teragon.local/61279/dir_1\"; tar -jxf \"/Users/wstein/.sage/temp/teragon.local/61279/dir_0/Homework_1____Devon_McMinn.sws\"\n\nbzip2: Data integrity error when decompressing.\n\tInput file = (stdin), output file = (stdout)\n\nIt is possible that the compressed file(s) have become corrupted.\nYou can use the -tvv option to test integrity of such files.\n\nYou can use the `bzip2recover' program to attempt to recover\ndata from undamaged sections of corrupted files.\n\ntar: Child returned status 2\ntar: Error exit delayed from previous errors\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5773\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein\n\nI uploaded a corrupted tarball and get a blank screen from the server instead of a useful error.  I also get this in the server logs\n\n```\n2009-04-12 21:12:35-0700 [-] cd \"/Users/wstein/.sage/temp/teragon.local/61279/dir_1\"; tar -jxf \"/Users/wstein/.sage/temp/teragon.local/61279/dir_0/Homework_1____Devon_McMinn.sws\"\n\nbzip2: Data integrity error when decompressing.\n\tInput file = (stdin), output file = (stdout)\n\nIt is possible that the compressed file(s) have become corrupted.\nYou can use the -tvv option to test integrity of such files.\n\nYou can use the `bzip2recover' program to attempt to recover\ndata from undamaged sections of corrupted files.\n\ntar: Child returned status 2\ntar: Error exit delayed from previous errors\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5773\n\n",
     "created_at": "2009-04-13T04:13:46Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_005773.json:
     "title": "notebook -- uploading a corrupted worksheet (sws file) results in blank screen (no useful error message)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5773",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
 
-CC:  was
+CC:  @williamstein
 
 I uploaded a corrupted tarball and get a blank screen from the server instead of a useful error.  I also get this in the server logs
 
@@ -58,7 +58,7 @@ archive/issue_comments_045151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5773#issuecomment-45151",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_045152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5773#issuecomment-45152",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_045153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5773#issuecomment-45153",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

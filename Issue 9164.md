@@ -3,7 +3,7 @@
 archive/issues_009164.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jpflori dimpase\n\n\n```\n\nsage: gap.cputime()\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n\n/home/wstein/sage-4.4.3/<ipython console> in <module>()\n\n/home/wstein/sage-4.4.3/local/lib/python2.6/site-packages/sage/interfaces/gap.pyc in cputime(self, t)\n    429         else:\n    430             self.eval('_r_ := Runtimes();')\n--> 431             r = sum(eval(self.eval('[_r_.user_time, _r_.system_time, _r_.user_time_children, _r_.system_time_children]')))\n    432             return r/1000.0\n    433 \n\n/home/wstein/sage-4.4.3/local/lib/python2.6/site-packages/sage/interfaces/gap.pyc in <module>()\n\nNameError: name 'fail' is not defined\nsage: \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9164\n\n",
+    "body": "Assignee: tbd\n\nCC:  jpflori @dimpase\n\n\n```\n\nsage: gap.cputime()\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n\n/home/wstein/sage-4.4.3/<ipython console> in <module>()\n\n/home/wstein/sage-4.4.3/local/lib/python2.6/site-packages/sage/interfaces/gap.pyc in cputime(self, t)\n    429         else:\n    430             self.eval('_r_ := Runtimes();')\n--> 431             r = sum(eval(self.eval('[_r_.user_time, _r_.system_time, _r_.user_time_children, _r_.system_time_children]')))\n    432             return r/1000.0\n    433 \n\n/home/wstein/sage-4.4.3/local/lib/python2.6/site-packages/sage/interfaces/gap.pyc in <module>()\n\nNameError: name 'fail' is not defined\nsage: \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9164\n\n",
     "created_at": "2010-06-07T04:02:22Z",
     "labels": [
         "porting: Cygwin",
@@ -14,12 +14,12 @@ archive/issues_009164.json:
     "title": "cygwin: gap.cputime() does not work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9164",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
 
-CC:  jpflori dimpase
+CC:  jpflori @dimpase
 
 
 ```
@@ -60,7 +60,7 @@ archive/issue_comments_085558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9164",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9164#issuecomment-85558",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_085563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9164",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9164#issuecomment-85563",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_085564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9164",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9164#issuecomment-85564",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_085565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9164",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9164#issuecomment-85565",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_085566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9164",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9164#issuecomment-85566",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_085567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9164",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9164#issuecomment-85567",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

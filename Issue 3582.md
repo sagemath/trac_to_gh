@@ -3,7 +3,7 @@
 archive/issues_003582.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  was\n\nSeting MAKE to \"make -j4\" blows up with\n\n```\ntest -d boot || (mkdir boot && cd boot && for f in lisp.a libnoreadline.a gllib/uniwidth/width.o gllib/uniname/uniname.o gllib/localcharset.o   modules.h modules.o lisp.run lispinit.mem; do ln -s ../$f .; done && (grep -v '^FILES=' ../makevars; fl=''; for f in lisp.a libnoreadline.a gllib/uniwidth/width.o gllib/uniname/uniname.o gllib/localcharset.o  ; do fl=$fl' '`basename $f`; done; echo 'FILES='\"'\"$fl\"'\") > makevars) || (rm -rf boot ; exit 1)\nrm -rf base\nCLISP_LINKKIT=. MAKE=make -j4 ./clisp-link add-module-sets boot base i18n syscalls regexp || (rm -rf base ; exit 1)\n/bin/sh: -j4: command not found\nmake[2]: *** [base] Error 1\nmake[2]: Leaving directory `/scratch/mabshoff/release-cycle/sage-3.0.4.rc0/spkg/build/clisp-2.46/src/src'\nError building clisp\n\nreal    4m22.614s\nuser    3m33.769s\nsys     0m54.775s\n```\n\nThe fix is obvious :)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3582\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @williamstein\n\nSeting MAKE to \"make -j4\" blows up with\n\n```\ntest -d boot || (mkdir boot && cd boot && for f in lisp.a libnoreadline.a gllib/uniwidth/width.o gllib/uniname/uniname.o gllib/localcharset.o   modules.h modules.o lisp.run lispinit.mem; do ln -s ../$f .; done && (grep -v '^FILES=' ../makevars; fl=''; for f in lisp.a libnoreadline.a gllib/uniwidth/width.o gllib/uniname/uniname.o gllib/localcharset.o  ; do fl=$fl' '`basename $f`; done; echo 'FILES='\"'\"$fl\"'\") > makevars) || (rm -rf boot ; exit 1)\nrm -rf base\nCLISP_LINKKIT=. MAKE=make -j4 ./clisp-link add-module-sets boot base i18n syscalls regexp || (rm -rf base ; exit 1)\n/bin/sh: -j4: command not found\nmake[2]: *** [base] Error 1\nmake[2]: Leaving directory `/scratch/mabshoff/release-cycle/sage-3.0.4.rc0/spkg/build/clisp-2.46/src/src'\nError building clisp\n\nreal    4m22.614s\nuser    3m33.769s\nsys     0m54.775s\n```\n\nThe fix is obvious :)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3582\n\n",
     "created_at": "2008-07-07T12:40:28Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_003582.json:
 ```
 Assignee: mabshoff
 
-CC:  was
+CC:  @williamstein
 
 Seting MAKE to "make -j4" blows up with
 
@@ -103,7 +103,7 @@ archive/issue_comments_025294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3582",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3582#issuecomment-25294",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_025295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3582",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3582#issuecomment-25295",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

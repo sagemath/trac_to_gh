@@ -3,7 +3,7 @@
 archive/issues_008064.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  drkirby was malb\n\nMake iml-1.0.1.p12.spkg install on Open Solaris 64 bit\n\nThe spkg is here:\n[http://boxen.math.washington.edu/home/jsp/ports/iml-1.0.1.p12.spkg](http://boxen.math.washington.edu/home/jsp/ports/iml-1.0.1.p12.spkg)\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8064\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  drkirby @williamstein @malb\n\nMake iml-1.0.1.p12.spkg install on Open Solaris 64 bit\n\nThe spkg is here:\n[http://boxen.math.washington.edu/home/jsp/ports/iml-1.0.1.p12.spkg](http://boxen.math.washington.edu/home/jsp/ports/iml-1.0.1.p12.spkg)\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8064\n\n",
     "created_at": "2010-01-25T22:19:26Z",
     "labels": [
         "porting",
@@ -14,12 +14,12 @@ archive/issues_008064.json:
     "title": "New iml-1.0.1.p12.spkg works with Open Solaris 64 bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8064",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: drkirkby
 
-CC:  drkirby was malb
+CC:  drkirby @williamstein @malb
 
 Make iml-1.0.1.p12.spkg install on Open Solaris 64 bit
 
@@ -46,7 +46,7 @@ archive/issue_comments_070677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8064#issuecomment-70677",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_070680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8064#issuecomment-70680",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

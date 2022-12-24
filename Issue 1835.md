@@ -3,7 +3,7 @@
 archive/issues_001835.json:
 ```json
 {
-    "body": "Assignee: malb\n\nSee attached patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1835\n\n",
+    "body": "Assignee: @malb\n\nSee attached patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1835\n\n",
     "created_at": "2008-01-18T18:42:32Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_001835.json:
     "title": "[with patch] some minor changes to the documentation of basis_is_groebner",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1835",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 See attached patch.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1835
 archive/issue_comments_011616.json:
 ```json
 {
-    "body": "Attachment [basis_is_groebner_doc.patch](tarball://root/attachments/some-uuid/ticket1835/basis_is_groebner_doc.patch) by malb created at 2008-01-18 18:44:08",
+    "body": "Attachment [basis_is_groebner_doc.patch](tarball://root/attachments/some-uuid/ticket1835/basis_is_groebner_doc.patch) by @malb created at 2008-01-18 18:44:08",
     "created_at": "2008-01-18T18:44:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1835#issuecomment-11616",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [basis_is_groebner_doc.patch](tarball://root/attachments/some-uuid/ticket1835/basis_is_groebner_doc.patch) by malb created at 2008-01-18 18:44:08
+Attachment [basis_is_groebner_doc.patch](tarball://root/attachments/some-uuid/ticket1835/basis_is_groebner_doc.patch) by @malb created at 2008-01-18 18:44:08
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_011617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1835#issuecomment-11617",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

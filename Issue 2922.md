@@ -3,7 +3,7 @@
 archive/issues_002922.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jason novoselt\n\nWhen plotting a vector field, it is useful to be able to scale the length of the arrows. This is similar to [mma:ScaleFunction](http://reference.wolfram.com/mathematica/VectorFieldPlots/ref/ScaleFunction.html). \n\ne.g.:\n* an upper therehold: `lambda x: min(1,x)`\n* logarithmic: `lambda x: log(1+x)`\n\nwhere x is the positive absolute length of the vector and each coordinate is divided by that - or some generalization of that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2922\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @novoselt\n\nWhen plotting a vector field, it is useful to be able to scale the length of the arrows. This is similar to [mma:ScaleFunction](http://reference.wolfram.com/mathematica/VectorFieldPlots/ref/ScaleFunction.html). \n\ne.g.:\n* an upper therehold: `lambda x: min(1,x)`\n* logarithmic: `lambda x: log(1+x)`\n\nwhere x is the positive absolute length of the vector and each coordinate is divided by that - or some generalization of that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2922\n\n",
     "created_at": "2008-04-14T21:28:18Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_002922.json:
     "title": "scale function for plot_vector_field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2922",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jason novoselt
+CC:  @jasongrout @novoselt
 
 When plotting a vector field, it is useful to be able to scale the length of the arrows. This is similar to [mma:ScaleFunction](http://reference.wolfram.com/mathematica/VectorFieldPlots/ref/ScaleFunction.html). 
 
@@ -45,7 +45,7 @@ archive/issue_comments_020115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20115",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_020116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20116",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_020117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20117",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_020118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20118",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_020119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20119",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_020120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20120",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_020121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20121",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_020123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20123",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_020124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20124",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_020125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20125",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_020126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20126",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_020127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20127",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -310,7 +310,7 @@ archive/issue_comments_020128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20128",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

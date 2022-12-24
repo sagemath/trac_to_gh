@@ -3,7 +3,7 @@
 archive/issues_006824.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  was\n\n> During sage -upgrade (from a mirror)\n> \n> <snip>\n> python `which cython` --embed-positions --incref-local-binop -I/usr/local/src/sage-4.1/devel/sage-main -o sage/finance/time_series.c sage/finance/time_series.pyx\n> warning: /usr/local/src/sage-4.1/devel/sage-main/sage/finance/time_series.pyx:1722:24: cdef variable 'j' declared after it is used\n\n\n\nInteresting.  We have in that function:\n\n        `v = [(mn + j*step, mn + (j+1)*step) for j in range(bins)]`\n\nand then a few lines later:\n\n        `cdef Py_ssize_t j`\n\n\nThat's probably a bad idea.  The cdef line should be above that first line.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6824\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\n> During sage -upgrade (from a mirror)\n> \n> <snip>\n> python `which cython` --embed-positions --incref-local-binop -I/usr/local/src/sage-4.1/devel/sage-main -o sage/finance/time_series.c sage/finance/time_series.pyx\n> warning: /usr/local/src/sage-4.1/devel/sage-main/sage/finance/time_series.pyx:1722:24: cdef variable 'j' declared after it is used\n\n\n\nInteresting.  We have in that function:\n\n        `v = [(mn + j*step, mn + (j+1)*step) for j in range(bins)]`\n\nand then a few lines later:\n\n        `cdef Py_ssize_t j`\n\n\nThat's probably a bad idea.  The cdef line should be above that first line.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6824\n\n",
     "created_at": "2009-08-25T15:36:37Z",
     "labels": [
         "finance",
@@ -14,12 +14,12 @@ archive/issues_006824.json:
     "title": "cdef in timeseries.pyx follows use of variable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6824",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  was
+CC:  @williamstein
 
 > During sage -upgrade (from a mirror)
 > 
@@ -52,16 +52,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6824
 archive/issue_comments_056280.json:
 ```json
 {
-    "body": "Attachment [trac_6824-cdef-in-timeseries.pyx](tarball://root/attachments/some-uuid/ticket6824/trac_6824-cdef-in-timeseries.pyx) by jason created at 2009-08-25 15:38:21",
+    "body": "Attachment [trac_6824-cdef-in-timeseries.pyx](tarball://root/attachments/some-uuid/ticket6824/trac_6824-cdef-in-timeseries.pyx) by @jasongrout created at 2009-08-25 15:38:21",
     "created_at": "2009-08-25T15:38:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6824",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6824#issuecomment-56280",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_6824-cdef-in-timeseries.pyx](tarball://root/attachments/some-uuid/ticket6824/trac_6824-cdef-in-timeseries.pyx) by jason created at 2009-08-25 15:38:21
+Attachment [trac_6824-cdef-in-timeseries.pyx](tarball://root/attachments/some-uuid/ticket6824/trac_6824-cdef-in-timeseries.pyx) by @jasongrout created at 2009-08-25 15:38:21
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_056281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6824",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6824#issuecomment-56281",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -106,16 +106,16 @@ Jason: You should change the file extension to ".patch" so the patch would displ
 archive/issue_comments_056283.json:
 ```json
 {
-    "body": "Attachment [trac_6824-cdef-in-timeseries.patch](tarball://root/attachments/some-uuid/ticket6824/trac_6824-cdef-in-timeseries.patch) by jason created at 2009-08-25 18:37:00\n\nsame as above, but with a \".patch\" extension",
+    "body": "Attachment [trac_6824-cdef-in-timeseries.patch](tarball://root/attachments/some-uuid/ticket6824/trac_6824-cdef-in-timeseries.patch) by @jasongrout created at 2009-08-25 18:37:00\n\nsame as above, but with a \".patch\" extension",
     "created_at": "2009-08-25T18:37:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6824",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6824#issuecomment-56283",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_6824-cdef-in-timeseries.patch](tarball://root/attachments/some-uuid/ticket6824/trac_6824-cdef-in-timeseries.patch) by jason created at 2009-08-25 18:37:00
+Attachment [trac_6824-cdef-in-timeseries.patch](tarball://root/attachments/some-uuid/ticket6824/trac_6824-cdef-in-timeseries.patch) by @jasongrout created at 2009-08-25 18:37:00
 
 same as above, but with a ".patch" extension
 
@@ -131,7 +131,7 @@ archive/issue_comments_056284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6824",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6824#issuecomment-56284",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

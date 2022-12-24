@@ -14,7 +14,7 @@ archive/issues_003628.json:
     "title": "[with spkg; needs review] (take 2) building sage on opensuse x86_64 fails with readline detection error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3628",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -37,7 +37,7 @@ archive/issue_comments_025674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3628#issuecomment-25674",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_025675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3628#issuecomment-25675",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_025676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3628#issuecomment-25676",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

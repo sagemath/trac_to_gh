@@ -3,7 +3,7 @@
 archive/issues_007435.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  acleone mpatel\n\nSo... delete the section about the DIR variable, or make sure it is defined as explained in the help screen.  What do people prefer?\n\nIssue created by migration from https://trac.sagemath.org/ticket/7435\n\n",
+    "body": "Assignee: boothby\n\nCC:  acleone @qed777\n\nSo... delete the section about the DIR variable, or make sure it is defined as explained in the help screen.  What do people prefer?\n\nIssue created by migration from https://trac.sagemath.org/ticket/7435\n\n",
     "created_at": "2009-11-11T22:30:19Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007435.json:
     "title": "notebook: help screen talks about DIR variable, which was removed from the notebook a while ago",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7435",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
 
-CC:  acleone mpatel
+CC:  acleone @qed777
 
 So... delete the section about the DIR variable, or make sure it is defined as explained in the help screen.  What do people prefer?
 
@@ -39,7 +39,7 @@ archive/issue_comments_062560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7435#issuecomment-62560",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -52,16 +52,16 @@ Adds the DIR variable
 archive/issue_comments_062561.json:
 ```json
 {
-    "body": "Attachment [trac_7435-dir-var.patch](tarball://root/attachments/some-uuid/ticket7435/trac_7435-dir-var.patch) by timdumol created at 2010-01-19 09:47:17\n\nThis patch adds the DIR variable.",
+    "body": "Attachment [trac_7435-dir-var.patch](tarball://root/attachments/some-uuid/ticket7435/trac_7435-dir-var.patch) by @TimDumol created at 2010-01-19 09:47:17\n\nThis patch adds the DIR variable.",
     "created_at": "2010-01-19T09:47:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7435#issuecomment-62561",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7435-dir-var.patch](tarball://root/attachments/some-uuid/ticket7435/trac_7435-dir-var.patch) by timdumol created at 2010-01-19 09:47:17
+Attachment [trac_7435-dir-var.patch](tarball://root/attachments/some-uuid/ticket7435/trac_7435-dir-var.patch) by @TimDumol created at 2010-01-19 09:47:17
 
 This patch adds the DIR variable.
 
@@ -77,7 +77,7 @@ archive/issue_comments_062562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7435#issuecomment-62562",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -126,16 +126,16 @@ LGTM.
 archive/issue_comments_062565.json:
 ```json
 {
-    "body": "Attachment [trac_7435-dir-var.2.patch](tarball://root/attachments/some-uuid/ticket7435/trac_7435-dir-var.2.patch) by mpatel created at 2010-01-25 01:08:26\n\nRebased for SageNB 0.6 + queue in comment.  Replaces previous.",
+    "body": "Attachment [trac_7435-dir-var.2.patch](tarball://root/attachments/some-uuid/ticket7435/trac_7435-dir-var.2.patch) by @qed777 created at 2010-01-25 01:08:26\n\nRebased for SageNB 0.6 + queue in comment.  Replaces previous.",
     "created_at": "2010-01-25T01:08:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7435#issuecomment-62565",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7435-dir-var.2.patch](tarball://root/attachments/some-uuid/ticket7435/trac_7435-dir-var.2.patch) by mpatel created at 2010-01-25 01:08:26
+Attachment [trac_7435-dir-var.2.patch](tarball://root/attachments/some-uuid/ticket7435/trac_7435-dir-var.2.patch) by @qed777 created at 2010-01-25 01:08:26
 
 Rebased for SageNB 0.6 + queue in comment.  Replaces previous.
 
@@ -151,7 +151,7 @@ archive/issue_comments_062566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7435#issuecomment-62566",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_062567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7435#issuecomment-62567",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_062568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7435#issuecomment-62568",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_062569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7435#issuecomment-62569",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -242,16 +242,16 @@ Changing status from closed to needs_work.
 archive/issue_comments_062570.json:
 ```json
 {
-    "body": "Attachment [trac_7435-dir-var.3.patch](tarball://root/attachments/some-uuid/ticket7435/trac_7435-dir-var.3.patch) by mpatel created at 2010-01-25 03:18:50\n\nV3 adds `DIR        = None` near the top of `twist.py`, to fix failed doctests in `cell.py` and `worksheet.py`.",
+    "body": "Attachment [trac_7435-dir-var.3.patch](tarball://root/attachments/some-uuid/ticket7435/trac_7435-dir-var.3.patch) by @qed777 created at 2010-01-25 03:18:50\n\nV3 adds `DIR        = None` near the top of `twist.py`, to fix failed doctests in `cell.py` and `worksheet.py`.",
     "created_at": "2010-01-25T03:18:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7435#issuecomment-62570",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7435-dir-var.3.patch](tarball://root/attachments/some-uuid/ticket7435/trac_7435-dir-var.3.patch) by mpatel created at 2010-01-25 03:18:50
+Attachment [trac_7435-dir-var.3.patch](tarball://root/attachments/some-uuid/ticket7435/trac_7435-dir-var.3.patch) by @qed777 created at 2010-01-25 03:18:50
 
 V3 adds `DIR        = None` near the top of `twist.py`, to fix failed doctests in `cell.py` and `worksheet.py`.
 
@@ -267,7 +267,7 @@ archive/issue_comments_062571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7435#issuecomment-62571",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -321,7 +321,7 @@ archive/issue_comments_062574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7435#issuecomment-62574",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

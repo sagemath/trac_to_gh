@@ -3,7 +3,7 @@
 archive/issues_008555.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  jakobkroeker\n\nConsider the following commands:\n\n```\nsage: x = PolynomialRing(RealField(42), 'x', 2).gens() \nsage: x[0]^2 - x[1]^2 == SR(1)\nx0^2 - x1^2 == 1\nsage: x[0]^2 - x[1]^2 == SR(0)\nFalse\n```\n\n\nIt seems the symbolic zero is behaving in an unexpected way.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8555\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  jakobkroeker\n\nConsider the following commands:\n\n```\nsage: x = PolynomialRing(RealField(42), 'x', 2).gens() \nsage: x[0]^2 - x[1]^2 == SR(1)\nx0^2 - x1^2 == 1\nsage: x[0]^2 - x[1]^2 == SR(0)\nFalse\n```\n\n\nIt seems the symbolic zero is behaving in an unexpected way.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8555\n\n",
     "created_at": "2010-03-17T20:17:19Z",
     "labels": [
         "algebra",
@@ -16,7 +16,7 @@ archive/issues_008555.json:
     "user": "lfousse"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 CC:  jakobkroeker
 
@@ -62,7 +62,7 @@ Changing component from algebra to symbolics.
 archive/issue_comments_077402.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to burcin.",
+    "body": "Changing assignee from @aghitza to @burcin.",
     "created_at": "2010-03-17T20:19:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8555",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_077402.json:
 }
 ```
 
-Changing assignee from AlexGhitza to burcin.
+Changing assignee from @aghitza to @burcin.
 
 
 
@@ -85,7 +85,7 @@ archive/issue_comments_077403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8555#issuecomment-77403",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_077404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8555#issuecomment-77404",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_077405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8555#issuecomment-77405",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_077406.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8555#issuecomment-77406",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_077407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8555#issuecomment-77407",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 

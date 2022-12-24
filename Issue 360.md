@@ -3,7 +3,7 @@
 archive/issues_000360.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  cremona pbruin\n\nJohn Cremona has implemented a wide range of height bounds for elliptic curves in \nthis magma program:\n\n  http://www.maths.nott.ac.uk/personal/jec/ftp/progs/magma/nfhtbound.m\n\n(see also attached file).  Upon my request he GPL'd this program.  Thus we can\nlegally port it line-by-line to SAGE.  \n\nwilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/360\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona @pjbruin\n\nJohn Cremona has implemented a wide range of height bounds for elliptic curves in \nthis magma program:\n\n  http://www.maths.nott.ac.uk/personal/jec/ftp/progs/magma/nfhtbound.m\n\n(see also attached file).  Upon my request he GPL'd this program.  Thus we can\nlegally port it line-by-line to SAGE.  \n\nwilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/360\n\n",
     "created_at": "2007-04-27T16:15:33Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_000360.json:
     "title": "Port Cremona's implementation of elliptic curve height bounds to SAGE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/360",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  cremona pbruin
+CC:  @JohnCremona @pjbruin
 
 John Cremona has implemented a wide range of height bounds for elliptic curves in 
 this magma program:
@@ -60,16 +60,16 @@ Attachment [nfhtbound.m](tarball://root/attachments/some-uuid/ticket360/nfhtboun
 archive/issue_comments_001735.json:
 ```json
 {
-    "body": "Changing assignee from was to roed.",
+    "body": "Changing assignee from @williamstein to @roed314.",
     "created_at": "2007-10-13T00:32:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/360#issuecomment-1735",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Changing assignee from was to roed.
+Changing assignee from @williamstein to @roed314.
 
 
 
@@ -83,7 +83,7 @@ archive/issue_comments_001736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/360#issuecomment-1736",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_001739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/360#issuecomment-1739",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_001741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/360#issuecomment-1741",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -230,16 +230,16 @@ By the way, before this (=height bounds) is done we should also implement height
 archive/issue_comments_001742.json:
 ```json
 {
-    "body": "Changing assignee from roed to cremona.",
+    "body": "Changing assignee from @roed314 to @JohnCremona.",
     "created_at": "2008-04-07T19:42:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/360#issuecomment-1742",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Changing assignee from roed to cremona.
+Changing assignee from @roed314 to @JohnCremona.
 
 
 
@@ -253,7 +253,7 @@ archive/issue_comments_001743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/360#issuecomment-1743",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_001744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/360#issuecomment-1744",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_001745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/360#issuecomment-1745",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -307,7 +307,7 @@ archive/issue_comments_001746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/360#issuecomment-1746",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_001747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/360#issuecomment-1747",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_001748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/360#issuecomment-1748",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -363,7 +363,7 @@ archive/issue_comments_001749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/360#issuecomment-1749",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -381,7 +381,7 @@ archive/issue_comments_001750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/360#issuecomment-1750",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_001751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/360#issuecomment-1751",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -417,7 +417,7 @@ archive/issue_comments_001752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/360#issuecomment-1752",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -435,7 +435,7 @@ archive/issue_comments_001753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/360#issuecomment-1753",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 

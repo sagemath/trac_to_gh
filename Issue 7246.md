@@ -3,7 +3,7 @@
 archive/issues_007246.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThis patch adds the DeBruijn digraph to the ( still very short ) list of digraphs generators.\n\nMore information here : http://en.wikipedia.org/wiki/De_Bruijn_graph\n\nI found no way to define automatically a layout for this graph. If you have an idea, do not hesitate to tell me :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7246\n\n",
+    "body": "Assignee: @rlmill\n\nThis patch adds the DeBruijn digraph to the ( still very short ) list of digraphs generators.\n\nMore information here : http://en.wikipedia.org/wiki/De_Bruijn_graph\n\nI found no way to define automatically a layout for this graph. If you have an idea, do not hesitate to tell me :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7246\n\n",
     "created_at": "2009-10-19T07:00:16Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007246.json:
     "title": "digraph.DeBruijn in graph_generators",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7246",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 This patch adds the DeBruijn digraph to the ( still very short ) list of digraphs generators.
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7246
 archive/issue_comments_060161.json:
 ```json
 {
-    "body": "Attachment [trac_7246.patch](tarball://root/attachments/some-uuid/ticket7246/trac_7246.patch) by ncohen created at 2009-10-19 07:00:33",
+    "body": "Attachment [trac_7246.patch](tarball://root/attachments/some-uuid/ticket7246/trac_7246.patch) by @nathanncohen created at 2009-10-19 07:00:33",
     "created_at": "2009-10-19T07:00:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7246",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7246#issuecomment-60161",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_7246.patch](tarball://root/attachments/some-uuid/ticket7246/trac_7246.patch) by ncohen created at 2009-10-19 07:00:33
+Attachment [trac_7246.patch](tarball://root/attachments/some-uuid/ticket7246/trac_7246.patch) by @nathanncohen created at 2009-10-19 07:00:33
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_060162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7246",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7246#issuecomment-60162",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_060163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7246",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7246#issuecomment-60163",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -96,16 +96,16 @@ I am giving a positive review to your patch pending a solution for the case k=0.
 archive/issue_comments_060164.json:
 ```json
 {
-    "body": "Attachment [trac_7246_review.patch](tarball://root/attachments/some-uuid/ticket7246/trac_7246_review.patch) by ncohen created at 2009-10-19 16:55:35\n\nI think your patch is perfect, including the case k=0... I did not think about empty words, though it can not hurt :-)\n\nPositive review !\n\nNathann",
+    "body": "Attachment [trac_7246_review.patch](tarball://root/attachments/some-uuid/ticket7246/trac_7246_review.patch) by @nathanncohen created at 2009-10-19 16:55:35\n\nI think your patch is perfect, including the case k=0... I did not think about empty words, though it can not hurt :-)\n\nPositive review !\n\nNathann",
     "created_at": "2009-10-19T16:55:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7246",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7246#issuecomment-60164",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_7246_review.patch](tarball://root/attachments/some-uuid/ticket7246/trac_7246_review.patch) by ncohen created at 2009-10-19 16:55:35
+Attachment [trac_7246_review.patch](tarball://root/attachments/some-uuid/ticket7246/trac_7246_review.patch) by @nathanncohen created at 2009-10-19 16:55:35
 
 I think your patch is perfect, including the case k=0... I did not think about empty words, though it can not hurt :-)
 
@@ -125,7 +125,7 @@ archive/issue_comments_060165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7246",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7246#issuecomment-60165",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_060166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7246",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7246#issuecomment-60166",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002271.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nThe Dancing Links algorithm (DLX) is sweet.  It solves the Exact Cover problem with the quickness.\n\nArguments for including Ajanki's code:\n    1) It's the only Python implementation of DLX I've seen.\n    2) I emailed the author, who happily added the \"or later\" bit after the GPL2\n    3) With my Sage Matrix -> DLXMatrix code (plus docstrings to everything I\nadded), the file dlx.py is only 8kB!\n    4) It will resolve tickets #1311 and #1313\n\nIssue created by migration from https://trac.sagemath.org/ticket/2271\n\n",
+    "body": "Assignee: @mwhansen\n\nThe Dancing Links algorithm (DLX) is sweet.  It solves the Exact Cover problem with the quickness.\n\nArguments for including Ajanki's code:\n    1) It's the only Python implementation of DLX I've seen.\n    2) I emailed the author, who happily added the \"or later\" bit after the GPL2\n    3) With my Sage Matrix -> DLXMatrix code (plus docstrings to everything I\nadded), the file dlx.py is only 8kB!\n    4) It will resolve tickets #1311 and #1313\n\nIssue created by migration from https://trac.sagemath.org/ticket/2271\n\n",
     "created_at": "2008-02-22T23:27:49Z",
     "labels": [
         "combinatorics",
@@ -17,7 +17,7 @@ archive/issues_002271.json:
     "user": "boothby"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 The Dancing Links algorithm (DLX) is sweet.  It solves the Exact Cover problem with the quickness.
 
@@ -80,7 +80,7 @@ archive/issue_comments_015057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2271",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2271#issuecomment-15057",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -115,16 +115,16 @@ Oops, I forgot to add the functions to all.py, so the tests fail.  New patch up 
 archive/issue_comments_015059.json:
 ```json
 {
-    "body": "Attachment [2271_adds_DLX.patch](tarball://root/attachments/some-uuid/ticket2271/2271_adds_DLX.patch) by rlm created at 2008-02-24 19:32:29\n\nThis patch (although awesome) doesn't quite obey the new doctest-for-every-function rule, since the following functions do not have doctests:\n\n1. `walknodes`\n2. `constructmatrix`\n3. `covercolumn`\n4. `uncovercolumn`\n5. `dosearch`\n6. `solve`",
+    "body": "Attachment [2271_adds_DLX.patch](tarball://root/attachments/some-uuid/ticket2271/2271_adds_DLX.patch) by @rlmill created at 2008-02-24 19:32:29\n\nThis patch (although awesome) doesn't quite obey the new doctest-for-every-function rule, since the following functions do not have doctests:\n\n1. `walknodes`\n2. `constructmatrix`\n3. `covercolumn`\n4. `uncovercolumn`\n5. `dosearch`\n6. `solve`",
     "created_at": "2008-02-24T19:32:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2271",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2271#issuecomment-15059",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [2271_adds_DLX.patch](tarball://root/attachments/some-uuid/ticket2271/2271_adds_DLX.patch) by rlm created at 2008-02-24 19:32:29
+Attachment [2271_adds_DLX.patch](tarball://root/attachments/some-uuid/ticket2271/2271_adds_DLX.patch) by @rlmill created at 2008-02-24 19:32:29
 
 This patch (although awesome) doesn't quite obey the new doctest-for-every-function rule, since the following functions do not have doctests:
 
@@ -185,7 +185,7 @@ archive/issue_comments_015062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2271",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2271#issuecomment-15062",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

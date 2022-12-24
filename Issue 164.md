@@ -3,7 +3,7 @@
 archive/issues_000164.json:
 ```json
 {
-    "body": "Assignee: was\n\nIt would be nice if, when one line of a doctest fails, then the doctest doesn't run the rest of that \"example block\". What tends to happen is e.g. one line fails, so then a bunch of variables aren't defined, and then you get tons of garbage in your doctest output, which is hard to sift through. After the first failure, it would be good if it would just stop there, and move onto the next example. (Or at least if there was an option for this behaviour.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/164\n\n",
+    "body": "Assignee: @williamstein\n\nIt would be nice if, when one line of a doctest fails, then the doctest doesn't run the rest of that \"example block\". What tends to happen is e.g. one line fails, so then a bunch of variables aren't defined, and then you get tons of garbage in your doctest output, which is hard to sift through. After the first failure, it would be good if it would just stop there, and move onto the next example. (Or at least if there was an option for this behaviour.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/164\n\n",
     "created_at": "2006-10-29T23:07:46Z",
     "labels": [
         "user interface",
@@ -17,7 +17,7 @@ archive/issues_000164.json:
     "user": "dmharvey"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 It would be nice if, when one line of a doctest fails, then the doctest doesn't run the rest of that "example block". What tends to happen is e.g. one line fails, so then a bunch of variables aren't defined, and then you get tons of garbage in your doctest output, which is hard to sift through. After the first failure, it would be good if it would just stop there, and move onto the next example. (Or at least if there was an option for this behaviour.)
 
@@ -37,7 +37,7 @@ archive/issue_comments_000731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/164",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/164#issuecomment-731",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -58,7 +58,7 @@ archive/issue_comments_000732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/164",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/164#issuecomment-732",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_000733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/164",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/164#issuecomment-733",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_000734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/164",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/164#issuecomment-734",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_000735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/164",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/164#issuecomment-735",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_000736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/164",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/164#issuecomment-736",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_000737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/164",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/164#issuecomment-737",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

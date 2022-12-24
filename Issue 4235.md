@@ -3,7 +3,7 @@
 archive/issues_004235.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  mhansen\n\nKeywords: installation guide, inst.tex\n\nThis patch fixes various typos in the installation guide. It also expands the section \"Steps to Install from Source\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/4235\n\n",
+    "body": "Assignee: tba\n\nCC:  @mwhansen\n\nKeywords: installation guide, inst.tex\n\nThis patch fixes various typos in the installation guide. It also expands the section \"Steps to Install from Source\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/4235\n\n",
     "created_at": "2008-10-02T01:53:47Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_004235.json:
 ```
 Assignee: tba
 
-CC:  mhansen
+CC:  @mwhansen
 
 Keywords: installation guide, inst.tex
 
@@ -103,7 +103,7 @@ archive/issue_comments_030774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4235#issuecomment-30774",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

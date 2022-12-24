@@ -3,7 +3,7 @@
 archive/issues_006395.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6395\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6395\n\n",
     "created_at": "2009-06-24T16:34:49Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_006395.json:
     "title": "magma interface: make magma_colon_equals mode work in both command line and notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6395",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6395
 archive/issue_comments_051379.json:
 ```json
 {
-    "body": "Attachment [trac_6395.patch](tarball://root/attachments/some-uuid/ticket6395/trac_6395.patch) by was created at 2009-06-24 16:43:19",
+    "body": "Attachment [trac_6395.patch](tarball://root/attachments/some-uuid/ticket6395/trac_6395.patch) by @williamstein created at 2009-06-24 16:43:19",
     "created_at": "2009-06-24T16:43:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6395#issuecomment-51379",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6395.patch](tarball://root/attachments/some-uuid/ticket6395/trac_6395.patch) by was created at 2009-06-24 16:43:19
+Attachment [trac_6395.patch](tarball://root/attachments/some-uuid/ticket6395/trac_6395.patch) by @williamstein created at 2009-06-24 16:43:19
 
 
 
@@ -68,7 +68,7 @@ Changing status from new to assigned.
 archive/issue_comments_051381.json:
 ```json
 {
-    "body": "Changing assignee from was to kohel.",
+    "body": "Changing assignee from @williamstein to kohel.",
     "created_at": "2009-06-26T23:09:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6395",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_051381.json:
 }
 ```
 
-Changing assignee from was to kohel.
+Changing assignee from @williamstein to kohel.
 
 
 

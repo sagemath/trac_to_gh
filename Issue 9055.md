@@ -3,7 +3,7 @@
 archive/issues_009055.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  cremona wdj\n\nKeywords: rational points enumeration\n\nI think it would be sensible to move the functions\n\n\nenum_projective_rational_field\n\n\nenum_projective_finite_field\n\n\nenum_affine_rational_field\n\n\nenum_affine_finite field\n\n\n\nfrom their current position at the top of sage.schemes.generic.homset, and to clean up their code to make it easier to read whilst (I believe) keeping the timing about the same.\n\nI have started work on a patch that does this, putting them into a new file sage.schemes.generic.rational_point and using the cartesian_product_iterator function to make the code much more readable.\n\nThis is a preamble to putting other (more efficient) functions that find rational points in specific cases into the same file - I am currently working on this, and will make a separate ticket for it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9055\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @JohnCremona @wdjoyner\n\nKeywords: rational points enumeration\n\nI think it would be sensible to move the functions\n\n\nenum_projective_rational_field\n\n\nenum_projective_finite_field\n\n\nenum_affine_rational_field\n\n\nenum_affine_finite field\n\n\n\nfrom their current position at the top of sage.schemes.generic.homset, and to clean up their code to make it easier to read whilst (I believe) keeping the timing about the same.\n\nI have started work on a patch that does this, putting them into a new file sage.schemes.generic.rational_point and using the cartesian_product_iterator function to make the code much more readable.\n\nThis is a preamble to putting other (more efficient) functions that find rational points in specific cases into the same file - I am currently working on this, and will make a separate ticket for it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9055\n\n",
     "created_at": "2010-05-26T11:34:42Z",
     "labels": [
         "algebraic geometry",
@@ -17,9 +17,9 @@ archive/issues_009055.json:
     "user": "cturner"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  cremona wdj
+CC:  @JohnCremona @wdjoyner
 
 Keywords: rational points enumeration
 
@@ -79,7 +79,7 @@ archive/issue_comments_083982.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9055#issuecomment-83982",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_083985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9055#issuecomment-83985",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_083986.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9055#issuecomment-83986",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_083992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9055#issuecomment-83992",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -316,7 +316,7 @@ archive/issue_comments_083993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9055#issuecomment-83993",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_083994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9055#issuecomment-83994",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -363,7 +363,7 @@ archive/issue_comments_083995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9055#issuecomment-83995",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -386,7 +386,7 @@ archive/issue_comments_083996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9055#issuecomment-83996",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -404,7 +404,7 @@ archive/issue_comments_083997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9055#issuecomment-83997",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -459,16 +459,16 @@ Programming no-nos:
 archive/issue_comments_083998.json:
 ```json
 {
-    "body": "Attachment [trac_9055_reviewer.patch](tarball://root/attachments/some-uuid/ticket9055/trac_9055_reviewer.patch) by novoselt created at 2010-12-01 17:34:12\n\nApply last",
+    "body": "Attachment [trac_9055_reviewer.patch](tarball://root/attachments/some-uuid/ticket9055/trac_9055_reviewer.patch) by @novoselt created at 2010-12-01 17:34:12\n\nApply last",
     "created_at": "2010-12-01T17:34:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9055#issuecomment-83998",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_9055_reviewer.patch](tarball://root/attachments/some-uuid/ticket9055/trac_9055_reviewer.patch) by novoselt created at 2010-12-01 17:34:12
+Attachment [trac_9055_reviewer.patch](tarball://root/attachments/some-uuid/ticket9055/trac_9055_reviewer.patch) by @novoselt created at 2010-12-01 17:34:12
 
 Apply last
 
@@ -484,7 +484,7 @@ archive/issue_comments_083999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9055#issuecomment-83999",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -513,7 +513,7 @@ archive/issue_comments_084000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9055#issuecomment-84000",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -531,7 +531,7 @@ archive/issue_comments_084001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9055#issuecomment-84001",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -549,7 +549,7 @@ archive/issue_comments_084002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9055#issuecomment-84002",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -562,16 +562,16 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_084003.json:
 ```json
 {
-    "body": "Attachment [trac_9055-rebased.patch](tarball://root/attachments/some-uuid/ticket9055/trac_9055-rebased.patch) by rlm created at 2010-12-05 10:40:29\n\nrebased on sage-4.6.1.alpha2 + #6094",
+    "body": "Attachment [trac_9055-rebased.patch](tarball://root/attachments/some-uuid/ticket9055/trac_9055-rebased.patch) by @rlmill created at 2010-12-05 10:40:29\n\nrebased on sage-4.6.1.alpha2 + #6094",
     "created_at": "2010-12-05T10:40:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9055#issuecomment-84003",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_9055-rebased.patch](tarball://root/attachments/some-uuid/ticket9055/trac_9055-rebased.patch) by rlm created at 2010-12-05 10:40:29
+Attachment [trac_9055-rebased.patch](tarball://root/attachments/some-uuid/ticket9055/trac_9055-rebased.patch) by @rlmill created at 2010-12-05 10:40:29
 
 rebased on sage-4.6.1.alpha2 + #6094
 
@@ -587,7 +587,7 @@ archive/issue_comments_084004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9055#issuecomment-84004",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -605,7 +605,7 @@ archive/issue_comments_084005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9055#issuecomment-84005",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -623,7 +623,7 @@ archive/issue_comments_084006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9055#issuecomment-84006",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -641,7 +641,7 @@ archive/issue_comments_084007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9055#issuecomment-84007",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -659,7 +659,7 @@ archive/issue_comments_084008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9055#issuecomment-84008",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

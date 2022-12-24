@@ -3,7 +3,7 @@
 archive/issues_007666.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  was timdumol boothby mhansen\n\nPreparatory work for #6855.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7666\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein @TimDumol boothby @mwhansen\n\nPreparatory work for #6855.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7666\n\n",
     "created_at": "2009-12-11T20:25:16Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007666.json:
     "title": "Alphanumeric cell IDs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7666",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  was timdumol boothby mhansen
+CC:  @williamstein @TimDumol boothby @mwhansen
 
 Preparatory work for #6855.
 
@@ -39,7 +39,7 @@ archive/issue_comments_065686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65686",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_065687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65687",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_065688.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65688",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_065689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65689",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_065690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65690",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_065691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65691",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_065692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65692",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_065693.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65693",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_065694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65694",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_065695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65695",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_065696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65696",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_065697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65697",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_065698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65698",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_065699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65699",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_065700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65700",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_065701.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65701",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -363,7 +363,7 @@ archive/issue_comments_065702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65702",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -389,7 +389,7 @@ archive/issue_comments_065703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65703",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -407,7 +407,7 @@ archive/issue_comments_065704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65704",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -449,7 +449,7 @@ archive/issue_comments_065705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65705",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -481,7 +481,7 @@ archive/issue_comments_065706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65706",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -499,7 +499,7 @@ archive/issue_comments_065707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65707",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -521,7 +521,7 @@ archive/issue_comments_065708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65708",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -564,7 +564,7 @@ archive/issue_comments_065709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65709",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -582,7 +582,7 @@ archive/issue_comments_065710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65710",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -600,7 +600,7 @@ archive/issue_comments_065711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65711",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -656,7 +656,7 @@ archive/issue_comments_065712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65712",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -669,16 +669,16 @@ Rebase on a new patch set.
 archive/issue_comments_065713.json:
 ```json
 {
-    "body": "Attachment [trac_7666-reviewer.patch](tarball://root/attachments/some-uuid/ticket7666/trac_7666-reviewer.patch) by timdumol created at 2010-01-17 21:34:35\n\nA few style tweaks.",
+    "body": "Attachment [trac_7666-reviewer.patch](tarball://root/attachments/some-uuid/ticket7666/trac_7666-reviewer.patch) by @TimDumol created at 2010-01-17 21:34:35\n\nA few style tweaks.",
     "created_at": "2010-01-17T21:34:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65713",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7666-reviewer.patch](tarball://root/attachments/some-uuid/ticket7666/trac_7666-reviewer.patch) by timdumol created at 2010-01-17 21:34:35
+Attachment [trac_7666-reviewer.patch](tarball://root/attachments/some-uuid/ticket7666/trac_7666-reviewer.patch) by @TimDumol created at 2010-01-17 21:34:35
 
 A few style tweaks.
 
@@ -694,7 +694,7 @@ archive/issue_comments_065714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65714",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -712,7 +712,7 @@ archive/issue_comments_065715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65715",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -725,16 +725,16 @@ Combined patch.  See comment.  Apply only this patch.
 archive/issue_comments_065716.json:
 ```json
 {
-    "body": "Attachment [trac_7666-alphanumeric_cell_ids_B6.patch](tarball://root/attachments/some-uuid/ticket7666/trac_7666-alphanumeric_cell_ids_B6.patch) by mpatel created at 2010-01-18 06:05:59\n\nI've attached a combined patch that incorporates most of the reviewer patch.  Thanks for further simplifying `handle_introspection`!  If it's OK, I'd like to adhere to [Crockford's one-var-statement-per-function rule (see Scope)](http://www.jslint.com/lint.html), to minimize false positives from JSLint on its \"The Good Parts\" setting.",
+    "body": "Attachment [trac_7666-alphanumeric_cell_ids_B6.patch](tarball://root/attachments/some-uuid/ticket7666/trac_7666-alphanumeric_cell_ids_B6.patch) by @qed777 created at 2010-01-18 06:05:59\n\nI've attached a combined patch that incorporates most of the reviewer patch.  Thanks for further simplifying `handle_introspection`!  If it's OK, I'd like to adhere to [Crockford's one-var-statement-per-function rule (see Scope)](http://www.jslint.com/lint.html), to minimize false positives from JSLint on its \"The Good Parts\" setting.",
     "created_at": "2010-01-18T06:05:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65716",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7666-alphanumeric_cell_ids_B6.patch](tarball://root/attachments/some-uuid/ticket7666/trac_7666-alphanumeric_cell_ids_B6.patch) by mpatel created at 2010-01-18 06:05:59
+Attachment [trac_7666-alphanumeric_cell_ids_B6.patch](tarball://root/attachments/some-uuid/ticket7666/trac_7666-alphanumeric_cell_ids_B6.patch) by @qed777 created at 2010-01-18 06:05:59
 
 I've attached a combined patch that incorporates most of the reviewer patch.  Thanks for further simplifying `handle_introspection`!  If it's OK, I'd like to adhere to [Crockford's one-var-statement-per-function rule (see Scope)](http://www.jslint.com/lint.html), to minimize false positives from JSLint on its "The Good Parts" setting.
 
@@ -750,7 +750,7 @@ archive/issue_comments_065717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65717",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -768,7 +768,7 @@ archive/issue_comments_065718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65718",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -790,16 +790,16 @@ function bar() {
 archive/issue_comments_065719.json:
 ```json
 {
-    "body": "Attachment [trac_7666-alphanumeric_cell_ids_B7.patch](tarball://root/attachments/some-uuid/ticket7666/trac_7666-alphanumeric_cell_ids_B7.patch) by mpatel created at 2010-01-18 07:42:43\n\nCombined patch.  Apply only this patch.",
+    "body": "Attachment [trac_7666-alphanumeric_cell_ids_B7.patch](tarball://root/attachments/some-uuid/ticket7666/trac_7666-alphanumeric_cell_ids_B7.patch) by @qed777 created at 2010-01-18 07:42:43\n\nCombined patch.  Apply only this patch.",
     "created_at": "2010-01-18T07:42:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65719",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7666-alphanumeric_cell_ids_B7.patch](tarball://root/attachments/some-uuid/ticket7666/trac_7666-alphanumeric_cell_ids_B7.patch) by mpatel created at 2010-01-18 07:42:43
+Attachment [trac_7666-alphanumeric_cell_ids_B7.patch](tarball://root/attachments/some-uuid/ticket7666/trac_7666-alphanumeric_cell_ids_B7.patch) by @qed777 created at 2010-01-18 07:42:43
 
 Combined patch.  Apply only this patch.
 
@@ -815,7 +815,7 @@ archive/issue_comments_065720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7666#issuecomment-65720",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

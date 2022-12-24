@@ -14,7 +14,7 @@ archive/issues_009370.json:
     "title": "customize printing of elements in CombinatorialFreeModules",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9370",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: sage-combinat
@@ -39,7 +39,7 @@ archive/issue_comments_089012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9370#issuecomment-89012",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_089013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9370#issuecomment-89013",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_089014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9370#issuecomment-89014",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_089015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9370#issuecomment-89015",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_089016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9370#issuecomment-89016",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_089017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9370#issuecomment-89017",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_089018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9370#issuecomment-89018",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_089019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9370#issuecomment-89019",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_089020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9370#issuecomment-89020",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_089021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9370#issuecomment-89021",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_089022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9370#issuecomment-89022",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -364,7 +364,7 @@ archive/issue_comments_089023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9370#issuecomment-89023",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -382,7 +382,7 @@ archive/issue_comments_089024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9370#issuecomment-89024",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -411,7 +411,7 @@ archive/issue_comments_089025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9370#issuecomment-89025",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -466,7 +466,7 @@ archive/issue_comments_089027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9370#issuecomment-89027",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -566,7 +566,7 @@ archive/issue_comments_089031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9370#issuecomment-89031",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -591,16 +591,16 @@ Ideally, everyone would set latex_prefix when they set prefix, but if they don't
 archive/issue_comments_089032.json:
 ```json
 {
-    "body": "Attachment [trac_9370-module-elt-repr-third.patch](tarball://root/attachments/some-uuid/ticket9370/trac_9370-module-elt-repr-third.patch) by jhpalmieri created at 2011-03-07 23:26:38\n\napply on top of other two patches",
+    "body": "Attachment [trac_9370-module-elt-repr-third.patch](tarball://root/attachments/some-uuid/ticket9370/trac_9370-module-elt-repr-third.patch) by @jhpalmieri created at 2011-03-07 23:26:38\n\napply on top of other two patches",
     "created_at": "2011-03-07T23:26:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9370#issuecomment-89032",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_9370-module-elt-repr-third.patch](tarball://root/attachments/some-uuid/ticket9370/trac_9370-module-elt-repr-third.patch) by jhpalmieri created at 2011-03-07 23:26:38
+Attachment [trac_9370-module-elt-repr-third.patch](tarball://root/attachments/some-uuid/ticket9370/trac_9370-module-elt-repr-third.patch) by @jhpalmieri created at 2011-03-07 23:26:38
 
 apply on top of other two patches
 
@@ -616,7 +616,7 @@ archive/issue_comments_089033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9370#issuecomment-89033",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -655,7 +655,7 @@ archive/issue_comments_089034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9370#issuecomment-89034",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -677,7 +677,7 @@ archive/issue_comments_089035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9370#issuecomment-89035",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -694,16 +694,16 @@ Apply only
 archive/issue_comments_089036.json:
 ```json
 {
-    "body": "Attachment [trac_9370-module-elt-repr-third.v2.patch](tarball://root/attachments/some-uuid/ticket9370/trac_9370-module-elt-repr-third.v2.patch) by jhpalmieri created at 2011-03-11 05:56:28\n\napply on top of other two patches instead of ...-third.patch",
+    "body": "Attachment [trac_9370-module-elt-repr-third.v2.patch](tarball://root/attachments/some-uuid/ticket9370/trac_9370-module-elt-repr-third.v2.patch) by @jhpalmieri created at 2011-03-11 05:56:28\n\napply on top of other two patches instead of ...-third.patch",
     "created_at": "2011-03-11T05:56:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9370#issuecomment-89036",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_9370-module-elt-repr-third.v2.patch](tarball://root/attachments/some-uuid/ticket9370/trac_9370-module-elt-repr-third.v2.patch) by jhpalmieri created at 2011-03-11 05:56:28
+Attachment [trac_9370-module-elt-repr-third.v2.patch](tarball://root/attachments/some-uuid/ticket9370/trac_9370-module-elt-repr-third.v2.patch) by @jhpalmieri created at 2011-03-11 05:56:28
 
 apply on top of other two patches instead of ...-third.patch
 
@@ -719,7 +719,7 @@ archive/issue_comments_089037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9370#issuecomment-89037",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -746,16 +746,16 @@ so it only does the replacement if the length `l` of `ast_replace` is positive. 
 archive/issue_comments_089038.json:
 ```json
 {
-    "body": "Attachment [trac_9370-module-elt-repr-fourth.patch](tarball://root/attachments/some-uuid/ticket9370/trac_9370-module-elt-repr-fourth.patch) by jhpalmieri created at 2011-03-11 22:36:24\n\napply on top of first 3 patches, for review only",
+    "body": "Attachment [trac_9370-module-elt-repr-fourth.patch](tarball://root/attachments/some-uuid/ticket9370/trac_9370-module-elt-repr-fourth.patch) by @jhpalmieri created at 2011-03-11 22:36:24\n\napply on top of first 3 patches, for review only",
     "created_at": "2011-03-11T22:36:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9370#issuecomment-89038",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_9370-module-elt-repr-fourth.patch](tarball://root/attachments/some-uuid/ticket9370/trac_9370-module-elt-repr-fourth.patch) by jhpalmieri created at 2011-03-11 22:36:24
+Attachment [trac_9370-module-elt-repr-fourth.patch](tarball://root/attachments/some-uuid/ticket9370/trac_9370-module-elt-repr-fourth.patch) by @jhpalmieri created at 2011-03-11 22:36:24
 
 apply on top of first 3 patches, for review only
 
@@ -766,16 +766,16 @@ apply on top of first 3 patches, for review only
 archive/issue_comments_089039.json:
 ```json
 {
-    "body": "Attachment [trac_9370-module-elt-repr-all-in-one.patch](tarball://root/attachments/some-uuid/ticket9370/trac_9370-module-elt-repr-all-in-one.patch) by jhpalmieri created at 2011-03-11 22:37:08\n\napply only this patch",
+    "body": "Attachment [trac_9370-module-elt-repr-all-in-one.patch](tarball://root/attachments/some-uuid/ticket9370/trac_9370-module-elt-repr-all-in-one.patch) by @jhpalmieri created at 2011-03-11 22:37:08\n\napply only this patch",
     "created_at": "2011-03-11T22:37:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9370#issuecomment-89039",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_9370-module-elt-repr-all-in-one.patch](tarball://root/attachments/some-uuid/ticket9370/trac_9370-module-elt-repr-all-in-one.patch) by jhpalmieri created at 2011-03-11 22:37:08
+Attachment [trac_9370-module-elt-repr-all-in-one.patch](tarball://root/attachments/some-uuid/ticket9370/trac_9370-module-elt-repr-all-in-one.patch) by @jhpalmieri created at 2011-03-11 22:37:08
 
 apply only this patch
 
@@ -829,7 +829,7 @@ archive/issue_comments_089042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9370#issuecomment-89042",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

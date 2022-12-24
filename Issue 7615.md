@@ -14,7 +14,7 @@ archive/issues_007615.json:
     "title": "Fix arctan2 documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7615",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: mvngu
@@ -44,7 +44,7 @@ archive/issue_comments_065025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7615#issuecomment-65025",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -62,7 +62,7 @@ archive/issue_comments_065026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7615#issuecomment-65026",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_065027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7615#issuecomment-65027",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -99,16 +99,16 @@ Nathann
 archive/issue_comments_065028.json:
 ```json
 {
-    "body": "Attachment [trac_7615.patch](tarball://root/attachments/some-uuid/ticket7615/trac_7615.patch) by kcrisman created at 2009-12-08 15:46:04\n\nBased on 4.3.alpha1",
+    "body": "Attachment [trac_7615.patch](tarball://root/attachments/some-uuid/ticket7615/trac_7615.patch) by @kcrisman created at 2009-12-08 15:46:04\n\nBased on 4.3.alpha1",
     "created_at": "2009-12-08T15:46:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7615#issuecomment-65028",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_7615.patch](tarball://root/attachments/some-uuid/ticket7615/trac_7615.patch) by kcrisman created at 2009-12-08 15:46:04
+Attachment [trac_7615.patch](tarball://root/attachments/some-uuid/ticket7615/trac_7615.patch) by @kcrisman created at 2009-12-08 15:46:04
 
 Based on 4.3.alpha1
 
@@ -124,7 +124,7 @@ archive/issue_comments_065029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7615#issuecomment-65029",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_065030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7615#issuecomment-65030",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_065031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7615#issuecomment-65031",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_065032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7615#issuecomment-65032",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009616.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  leif jhpalmieri kcrisman malb mvngu simonking was\n\nKeywords: fork nfs segfault\n\nIn 4.5.2.alpha1, we have for many people:\n\n```\nsage -t -long \"devel/sage/sage/parallel/decorate.py\"        \n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occurred in Sage.\nThis probably occurred because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n\n**********************************************************************\nFile \"/mnt/usb1/scratch/drake/release/tmp/sage-4.5.2.alpha1/devel/sage/sage/parallel/decorate.py\", line 300:\n    sage: g()\nExpected:\n    '10'\nGot:\n    [Errno 16] Device or resource busy: '/home/drake/.sage/temp/sage.math.washington.edu/30336/dir_0/.nfs0000000000591f8700069d5c'\n    '10'\n**********************************************************************\nFile \"/mnt/usb1/scratch/drake/release/tmp/sage-4.5.2.alpha1/devel/sage/sage/parallel/decorate.py\", line 311:\n    sage: g()\nExpected:\n    'a'\nGot:\n    [Errno 16] Device or resource busy: '/home/drake/.sage/temp/sage.math.washington.edu/30336/dir_1/.nfs0000000000591f8d00069d5d'\n    'a'\n**********************************************************************\n```\n\nand so on. See https://groups.google.com/group/sage-release/msg/88b030aa31926459 and that thread.\n\nThis seems related to #9501.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9616\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @nexttime @jhpalmieri @kcrisman @malb mvngu simonking @williamstein\n\nKeywords: fork nfs segfault\n\nIn 4.5.2.alpha1, we have for many people:\n\n```\nsage -t -long \"devel/sage/sage/parallel/decorate.py\"        \n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occurred in Sage.\nThis probably occurred because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n\n**********************************************************************\nFile \"/mnt/usb1/scratch/drake/release/tmp/sage-4.5.2.alpha1/devel/sage/sage/parallel/decorate.py\", line 300:\n    sage: g()\nExpected:\n    '10'\nGot:\n    [Errno 16] Device or resource busy: '/home/drake/.sage/temp/sage.math.washington.edu/30336/dir_0/.nfs0000000000591f8700069d5c'\n    '10'\n**********************************************************************\nFile \"/mnt/usb1/scratch/drake/release/tmp/sage-4.5.2.alpha1/devel/sage/sage/parallel/decorate.py\", line 311:\n    sage: g()\nExpected:\n    'a'\nGot:\n    [Errno 16] Device or resource busy: '/home/drake/.sage/temp/sage.math.washington.edu/30336/dir_1/.nfs0000000000591f8d00069d5d'\n    'a'\n**********************************************************************\n```\n\nand so on. See https://groups.google.com/group/sage-release/msg/88b030aa31926459 and that thread.\n\nThis seems related to #9501.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9616\n\n",
     "created_at": "2010-07-28T02:51:53Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_009616.json:
     "title": "segfault / NFS problems with parallel/decorate.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9616",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: mvngu
 
-CC:  leif jhpalmieri kcrisman malb mvngu simonking was
+CC:  @nexttime @jhpalmieri @kcrisman @malb mvngu simonking @williamstein
 
 Keywords: fork nfs segfault
 
@@ -77,7 +77,7 @@ archive/issue_comments_093129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9616#issuecomment-93129",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_093130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9616#issuecomment-93130",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_093131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9616#issuecomment-93131",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_093132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9616#issuecomment-93132",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_093133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9616#issuecomment-93133",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_093134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9616#issuecomment-93134",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -231,16 +231,16 @@ If we backout the whole patch, I have more confidence that the doctests will get
 archive/issue_comments_093135.json:
 ```json
 {
-    "body": "Attachment [trac_9616-backout_9501_fork_deco.patch](tarball://root/attachments/some-uuid/ticket9616/trac_9616-backout_9501_fork_deco.patch) by mpatel created at 2010-07-28 22:32:06\n\nBackout #9501",
+    "body": "Attachment [trac_9616-backout_9501_fork_deco.patch](tarball://root/attachments/some-uuid/ticket9616/trac_9616-backout_9501_fork_deco.patch) by @qed777 created at 2010-07-28 22:32:06\n\nBackout #9501",
     "created_at": "2010-07-28T22:32:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9616#issuecomment-93135",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_9616-backout_9501_fork_deco.patch](tarball://root/attachments/some-uuid/ticket9616/trac_9616-backout_9501_fork_deco.patch) by mpatel created at 2010-07-28 22:32:06
+Attachment [trac_9616-backout_9501_fork_deco.patch](tarball://root/attachments/some-uuid/ticket9616/trac_9616-backout_9501_fork_deco.patch) by @qed777 created at 2010-07-28 22:32:06
 
 Backout #9501
 
@@ -256,7 +256,7 @@ archive/issue_comments_093136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9616#issuecomment-93136",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_093137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9616#issuecomment-93137",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_093138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9616#issuecomment-93138",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -313,16 +313,16 @@ But I can live with that. (And I'm currently too (laz|bus)y to sort out the desi
 archive/issue_comments_093139.json:
 ```json
 {
-    "body": "Attachment [trac_9616-backout_only_some_of_9501.patch](tarball://root/attachments/some-uuid/ticket9616/trac_9616-backout_only_some_of_9501.patch) by leif created at 2010-07-28 23:44:14\n\nBackouts only ticket-relevant parts of #9501 (subset of Mitesh's patch)",
+    "body": "Attachment [trac_9616-backout_only_some_of_9501.patch](tarball://root/attachments/some-uuid/ticket9616/trac_9616-backout_only_some_of_9501.patch) by @nexttime created at 2010-07-28 23:44:14\n\nBackouts only ticket-relevant parts of #9501 (subset of Mitesh's patch)",
     "created_at": "2010-07-28T23:44:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9616#issuecomment-93139",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_9616-backout_only_some_of_9501.patch](tarball://root/attachments/some-uuid/ticket9616/trac_9616-backout_only_some_of_9501.patch) by leif created at 2010-07-28 23:44:14
+Attachment [trac_9616-backout_only_some_of_9501.patch](tarball://root/attachments/some-uuid/ticket9616/trac_9616-backout_only_some_of_9501.patch) by @nexttime created at 2010-07-28 23:44:14
 
 Backouts only ticket-relevant parts of #9501 (subset of Mitesh's patch)
 
@@ -338,7 +338,7 @@ archive/issue_comments_093140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9616#issuecomment-93140",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -364,7 +364,7 @@ archive/issue_comments_093141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9616#issuecomment-93141",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -386,7 +386,7 @@ archive/issue_comments_093142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9616#issuecomment-93142",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -404,7 +404,7 @@ archive/issue_comments_093143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9616#issuecomment-93143",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -422,7 +422,7 @@ archive/issue_comments_093144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9616#issuecomment-93144",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -443,7 +443,7 @@ archive/issue_comments_093145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9616#issuecomment-93145",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -464,7 +464,7 @@ archive/issue_comments_093146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9616#issuecomment-93146",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -490,7 +490,7 @@ archive/issue_comments_093147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9616#issuecomment-93147",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -508,7 +508,7 @@ archive/issue_comments_093148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9616#issuecomment-93148",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -530,7 +530,7 @@ archive/issue_comments_093149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9616#issuecomment-93149",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

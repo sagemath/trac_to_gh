@@ -14,7 +14,7 @@ archive/issues_005571.json:
     "title": "fast_callable improvements (followup for #5093)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5571",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody

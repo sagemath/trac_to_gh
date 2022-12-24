@@ -3,7 +3,7 @@
 archive/issues_007864.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  jsp jhpalmieri\n\n## Build environment\n* Sun Ultra 27 3.333 GHz Intel Xeon. 12 GB RAM\n* OpenSolaris 2009.06 snv_111b X86\n* Sage 4.3.1.alpha1 (with a few packages hacked to work on 64-bit)\n* gcc 4.3.4 configured with Sun linker and GNU assembler from binutils version 2.20.\n* 64-bit build. SAGE64 was set to yes, plus various other tricks to get -m64 into packages. \n\n == The problem ==\nDespite the fact all the objects file (.o) are created 64-bit (as intended), the final link phase tries to link against a 32-bit library \n\n```\n /usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/libstdc++.so\n```\n\nrather than the 64-bit version:\n\n```\n/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/amd64/libstdc\n```\n\nI don't understand why Here is the the failed part of the build. \n\n```\nif g++ -DPACKAGE_NAME=\\\"libfplll\\\" -DPACKAGE_TARNAME=\\\"libfplll\\\" -DPACKAGE_VERSION=\\\"3.0.12\\\" -DPACKAGE_STRING=\\\"libfplll\\ 3.0.12\\\" -DPACKAGE_BUGREPORT=\\\"\\\" -DPACKAGE=\\\"libfplll\\\" -DVERSION=\\\"3.0.12\\\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DHAVE_LIBGMP=1 -DHAVE_LIBMPFR=1 -DSTDC_HEADERS=1 -DHAVE_FLOAT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_STDLIB_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDBOOL_H=1 -DHAVE_FLOOR=1 -DHAVE_POW=1 -DHAVE_RINT=1 -DHAVE_SQRT=1 -DHAVE_STRTOL=1 -DHAVE_LIBGMP=1 -DHAVE_LIBMPFR=1 -I. -I.  -DFAST_BUILD -I/export/home/drkirkby/sage-4.3.1.alpha1/local/include/  -m64 -fPIC -I/export/home/drkirkby/sage-4.3.1.alpha1/local/include/ -L/export/home/drkirkby/sage-4.3.1.alpha1/local/lib -MT fplll_micro-topenum.o -MD -MP -MF \".deps/fplll_micro-topenum.Tpo\" -c -o fplll_micro-topenum.o `test -f 'topenum.cpp' || echo './'`topenum.cpp; \\\n\tthen mv -f \".deps/fplll_micro-topenum.Tpo\" \".deps/fplll_micro-topenum.Po\"; else rm -f \".deps/fplll_micro-topenum.Tpo\"; exit 1; fi\n/bin/sh ../libtool --tag=CXX --mode=link g++  -m64 -fPIC -I/export/home/drkirkby/sage-4.3.1.alpha1/local/include/ -L/export/home/drkirkby/sage-4.3.1.alpha1/local/lib   -o fplll_micro  fplll_micro-main.o fplll_micro-enumerate.o fplll_micro-evaluator.o fplll_micro-solver.o fplll_micro-tools.o fplll_micro-topenum.o  -lmpfr -lgmp -lmpfr -lgmp \ng++ -m64 -fPIC -I/export/home/drkirkby/sage-4.3.1.alpha1/local/include/ -o fplll_micro fplll_micro-main.o fplll_micro-enumerate.o fplll_micro-evaluator.o fplll_micro-solver.o fplll_micro-tools.o fplll_micro-topenum.o  -L/export/home/drkirkby/sage-4.3.1.alpha1/local/lib /export/home/drkirkby/sage-4.3.1.alpha1/local/lib/libmpfr.so /export/home/drkirkby/sage-4.3.1.alpha1/local/lib/libgmp.so -Wl,-R -Wl,/export/home/drkirkby/sage-4.3.1.alpha1/local/lib -Wl,-R -Wl,/export/home/drkirkby/sage-4.3.1.alpha1/local/lib\nmake[3]: Leaving directory `/export/home/drkirkby/sage-4.3.1.alpha1/spkg/build/libfplll-3.0.12.p0/src/src'\nmake[3]: Entering directory `/export/home/drkirkby/sage-4.3.1.alpha1/spkg/build/libfplll-3.0.12.p0/src'\nif /bin/sh ./libtool --tag=CXX --mode=compile g++ -DPACKAGE_NAME=\\\"libfplll\\\" -DPACKAGE_TARNAME=\\\"libfplll\\\" -DPACKAGE_VERSION=\\\"3.0.12\\\" -DPACKAGE_STRING=\\\"libfplll\\ 3.0.12\\\" -DPACKAGE_BUGREPORT=\\\"\\\" -DPACKAGE=\\\"libfplll\\\" -DVERSION=\\\"3.0.12\\\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DHAVE_LIBGMP=1 -DHAVE_LIBMPFR=1 -DSTDC_HEADERS=1 -DHAVE_FLOAT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_STDLIB_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDBOOL_H=1 -DHAVE_FLOOR=1 -DHAVE_POW=1 -DHAVE_RINT=1 -DHAVE_SQRT=1 -DHAVE_STRTOL=1 -DHAVE_LIBGMP=1 -DHAVE_LIBMPFR=1 -I. -I.   -I/export/home/drkirkby/sage-4.3.1.alpha1/local/include/  -m64 -fPIC -I/export/home/drkirkby/sage-4.3.1.alpha1/local/include/ -L/export/home/drkirkby/sage-4.3.1.alpha1/local/lib -MT dummy.lo -MD -MP -MF \".deps/dummy.Tpo\" -c -o dummy.lo dummy.cpp; \\\n\tthen mv -f \".deps/dummy.Tpo\" \".deps/dummy.Plo\"; else rm -f \".deps/dummy.Tpo\"; exit 1; fi\nmkdir .libs\n g++ \"-DPACKAGE_NAME=\\\"libfplll\\\"\" \"-DPACKAGE_TARNAME=\\\"libfplll\\\"\" \"-DPACKAGE_VERSION=\\\"3.0.12\\\"\" \"-DPACKAGE_STRING=\\\"libfplll 3.0.12\\\"\" \"-DPACKAGE_BUGREPORT=\\\"\\\"\" \"-DPACKAGE=\\\"libfplll\\\"\" \"-DVERSION=\\\"3.0.12\\\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DHAVE_LIBGMP=1 -DHAVE_LIBMPFR=1 -DSTDC_HEADERS=1 -DHAVE_FLOAT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_STDLIB_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDBOOL_H=1 -DHAVE_FLOOR=1 -DHAVE_POW=1 -DHAVE_RINT=1 -DHAVE_SQRT=1 -DHAVE_STRTOL=1 -DHAVE_LIBGMP=1 -DHAVE_LIBMPFR=1 -I. -I. -I/export/home/drkirkby/sage-4.3.1.alpha1/local/include/ -m64 -fPIC -I/export/home/drkirkby/sage-4.3.1.alpha1/local/include/ -L/export/home/drkirkby/sage-4.3.1.alpha1/local/lib -MT dummy.lo -MD -MP -MF .deps/dummy.Tpo -c dummy.cpp  -fPIC -DPIC -o .libs/dummy.o\nIn file included from src/main.h:27,\n                 from dummy.cpp:11:\nsrc/fplll.h:29:1: warning: \"NAN\" redefined\nIn file included from src/defs.h:36,\n                 from src/util.h:29,\n                 from src/lexer.h:26,\n                 from src/main.h:26,\n                 from dummy.cpp:11:\nsrc/dpe.h:30:1: warning: this is the location of the previous definition\n g++ \"-DPACKAGE_NAME=\\\"libfplll\\\"\" \"-DPACKAGE_TARNAME=\\\"libfplll\\\"\" \"-DPACKAGE_VERSION=\\\"3.0.12\\\"\" \"-DPACKAGE_STRING=\\\"libfplll 3.0.12\\\"\" \"-DPACKAGE_BUGREPORT=\\\"\\\"\" \"-DPACKAGE=\\\"libfplll\\\"\" \"-DVERSION=\\\"3.0.12\\\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DHAVE_LIBGMP=1 -DHAVE_LIBMPFR=1 -DSTDC_HEADERS=1 -DHAVE_FLOAT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_STDLIB_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDBOOL_H=1 -DHAVE_FLOOR=1 -DHAVE_POW=1 -DHAVE_RINT=1 -DHAVE_SQRT=1 -DHAVE_STRTOL=1 -DHAVE_LIBGMP=1 -DHAVE_LIBMPFR=1 -I. -I. -I/export/home/drkirkby/sage-4.3.1.alpha1/local/include/ -m64 -fPIC -I/export/home/drkirkby/sage-4.3.1.alpha1/local/include/ -L/export/home/drkirkby/sage-4.3.1.alpha1/local/lib -MT dummy.lo -MD -MP -MF .deps/dummy.Tpo -c dummy.cpp -o dummy.o >/dev/null 2>&1\n/bin/sh ./libtool --tag=CXX --mode=link g++  -m64 -fPIC -I/export/home/drkirkby/sage-4.3.1.alpha1/local/include/ -L/export/home/drkirkby/sage-4.3.1.alpha1/local/lib   -o libfplll.la -rpath /export/home/drkirkby/sage-4.3.1.alpha1/local/lib -version-info 1:0:1 dummy.lo -lgmp -lmpfr -lmpfr -lgmp -lmpfr -lgmp \ng++ -shared -nostdlib  /usr/lib/amd64/crti.o /usr/lib/amd64/values-Xa.o /usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/gcc/i386-pc-solaris2.11/4.3.4/amd64/crtbegin.o  .libs/dummy.o  -Wl,-R -Wl,/export/home/drkirkby/sage-4.3.1.alpha1/local/lib -Wl,-R -Wl,/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib -Wl,-R -Wl,/export/home/drkirkby/sage-4.3.1.alpha1/local/lib -Wl,-R -Wl,/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib -L/export/home/drkirkby/sage-4.3.1.alpha1/local/lib /export/home/drkirkby/sage-4.3.1.alpha1/local/lib/libmpfr.so /export/home/drkirkby/sage-4.3.1.alpha1/local/lib/libgmp.so -L/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/gcc/i386-pc-solaris2.11/4.3.4/amd64 -L/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/gcc/i386-pc-solaris2.11/4.3.4/../../../amd64 -L/lib/amd64 -L/usr/lib/amd64 -L/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/gcc/i386-pc-solaris2.11/4.3.4 -L/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/gcc/i386-pc-solaris2.11/4.3.4/../../.. /usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/libstdc++.so -lm -lgcc_s /usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/gcc/i386-pc-solaris2.11/4.3.4/amd64/crtend.o /usr/lib/amd64/crtn.o  -m64 -Wl,-h -Wl,libfplll.so.0 -o .libs/libfplll.so.0.1.0\nld: fatal: file /usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/libstdc++.so: wrong ELF class: ELFCLASS32\nld: fatal: file processing errors. No output written to .libs/libfplll.so.0.1.0\ncollect2: ld returned 1 exit status\nmake[3]: *** [libfplll.la] Error 1\nmake[3]: Leaving directory `/export/home/drkirkby/sage-4.3.1.alpha1/spkg/build/libfplll-3.0.12.p0/src'\nmake[2]: *** [all-recursive] Error 1\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.3.1.alpha1/spkg/build/libfplll-3.0.12.p0/src'\nError building libfplll\n\nreal\t0m22.114s\nuser\t0m16.829s\nsys\t0m4.053s\nsage: An error occurred while installing libfplll-3.0.12.p0\n```\n\n == Workaround ==\nA workaround is to delete the library, then create a link to the same library in the amd64 directory. But this is a hack, and obviously means gcc would not work properly for 32-bit builds in this case.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7864\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jaapspies @jhpalmieri\n\n## Build environment\n* Sun Ultra 27 3.333 GHz Intel Xeon. 12 GB RAM\n* OpenSolaris 2009.06 snv_111b X86\n* Sage 4.3.1.alpha1 (with a few packages hacked to work on 64-bit)\n* gcc 4.3.4 configured with Sun linker and GNU assembler from binutils version 2.20.\n* 64-bit build. SAGE64 was set to yes, plus various other tricks to get -m64 into packages. \n\n == The problem ==\nDespite the fact all the objects file (.o) are created 64-bit (as intended), the final link phase tries to link against a 32-bit library \n\n```\n /usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/libstdc++.so\n```\n\nrather than the 64-bit version:\n\n```\n/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/amd64/libstdc\n```\n\nI don't understand why Here is the the failed part of the build. \n\n```\nif g++ -DPACKAGE_NAME=\\\"libfplll\\\" -DPACKAGE_TARNAME=\\\"libfplll\\\" -DPACKAGE_VERSION=\\\"3.0.12\\\" -DPACKAGE_STRING=\\\"libfplll\\ 3.0.12\\\" -DPACKAGE_BUGREPORT=\\\"\\\" -DPACKAGE=\\\"libfplll\\\" -DVERSION=\\\"3.0.12\\\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DHAVE_LIBGMP=1 -DHAVE_LIBMPFR=1 -DSTDC_HEADERS=1 -DHAVE_FLOAT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_STDLIB_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDBOOL_H=1 -DHAVE_FLOOR=1 -DHAVE_POW=1 -DHAVE_RINT=1 -DHAVE_SQRT=1 -DHAVE_STRTOL=1 -DHAVE_LIBGMP=1 -DHAVE_LIBMPFR=1 -I. -I.  -DFAST_BUILD -I/export/home/drkirkby/sage-4.3.1.alpha1/local/include/  -m64 -fPIC -I/export/home/drkirkby/sage-4.3.1.alpha1/local/include/ -L/export/home/drkirkby/sage-4.3.1.alpha1/local/lib -MT fplll_micro-topenum.o -MD -MP -MF \".deps/fplll_micro-topenum.Tpo\" -c -o fplll_micro-topenum.o `test -f 'topenum.cpp' || echo './'`topenum.cpp; \\\n\tthen mv -f \".deps/fplll_micro-topenum.Tpo\" \".deps/fplll_micro-topenum.Po\"; else rm -f \".deps/fplll_micro-topenum.Tpo\"; exit 1; fi\n/bin/sh ../libtool --tag=CXX --mode=link g++  -m64 -fPIC -I/export/home/drkirkby/sage-4.3.1.alpha1/local/include/ -L/export/home/drkirkby/sage-4.3.1.alpha1/local/lib   -o fplll_micro  fplll_micro-main.o fplll_micro-enumerate.o fplll_micro-evaluator.o fplll_micro-solver.o fplll_micro-tools.o fplll_micro-topenum.o  -lmpfr -lgmp -lmpfr -lgmp \ng++ -m64 -fPIC -I/export/home/drkirkby/sage-4.3.1.alpha1/local/include/ -o fplll_micro fplll_micro-main.o fplll_micro-enumerate.o fplll_micro-evaluator.o fplll_micro-solver.o fplll_micro-tools.o fplll_micro-topenum.o  -L/export/home/drkirkby/sage-4.3.1.alpha1/local/lib /export/home/drkirkby/sage-4.3.1.alpha1/local/lib/libmpfr.so /export/home/drkirkby/sage-4.3.1.alpha1/local/lib/libgmp.so -Wl,-R -Wl,/export/home/drkirkby/sage-4.3.1.alpha1/local/lib -Wl,-R -Wl,/export/home/drkirkby/sage-4.3.1.alpha1/local/lib\nmake[3]: Leaving directory `/export/home/drkirkby/sage-4.3.1.alpha1/spkg/build/libfplll-3.0.12.p0/src/src'\nmake[3]: Entering directory `/export/home/drkirkby/sage-4.3.1.alpha1/spkg/build/libfplll-3.0.12.p0/src'\nif /bin/sh ./libtool --tag=CXX --mode=compile g++ -DPACKAGE_NAME=\\\"libfplll\\\" -DPACKAGE_TARNAME=\\\"libfplll\\\" -DPACKAGE_VERSION=\\\"3.0.12\\\" -DPACKAGE_STRING=\\\"libfplll\\ 3.0.12\\\" -DPACKAGE_BUGREPORT=\\\"\\\" -DPACKAGE=\\\"libfplll\\\" -DVERSION=\\\"3.0.12\\\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DHAVE_LIBGMP=1 -DHAVE_LIBMPFR=1 -DSTDC_HEADERS=1 -DHAVE_FLOAT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_STDLIB_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDBOOL_H=1 -DHAVE_FLOOR=1 -DHAVE_POW=1 -DHAVE_RINT=1 -DHAVE_SQRT=1 -DHAVE_STRTOL=1 -DHAVE_LIBGMP=1 -DHAVE_LIBMPFR=1 -I. -I.   -I/export/home/drkirkby/sage-4.3.1.alpha1/local/include/  -m64 -fPIC -I/export/home/drkirkby/sage-4.3.1.alpha1/local/include/ -L/export/home/drkirkby/sage-4.3.1.alpha1/local/lib -MT dummy.lo -MD -MP -MF \".deps/dummy.Tpo\" -c -o dummy.lo dummy.cpp; \\\n\tthen mv -f \".deps/dummy.Tpo\" \".deps/dummy.Plo\"; else rm -f \".deps/dummy.Tpo\"; exit 1; fi\nmkdir .libs\n g++ \"-DPACKAGE_NAME=\\\"libfplll\\\"\" \"-DPACKAGE_TARNAME=\\\"libfplll\\\"\" \"-DPACKAGE_VERSION=\\\"3.0.12\\\"\" \"-DPACKAGE_STRING=\\\"libfplll 3.0.12\\\"\" \"-DPACKAGE_BUGREPORT=\\\"\\\"\" \"-DPACKAGE=\\\"libfplll\\\"\" \"-DVERSION=\\\"3.0.12\\\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DHAVE_LIBGMP=1 -DHAVE_LIBMPFR=1 -DSTDC_HEADERS=1 -DHAVE_FLOAT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_STDLIB_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDBOOL_H=1 -DHAVE_FLOOR=1 -DHAVE_POW=1 -DHAVE_RINT=1 -DHAVE_SQRT=1 -DHAVE_STRTOL=1 -DHAVE_LIBGMP=1 -DHAVE_LIBMPFR=1 -I. -I. -I/export/home/drkirkby/sage-4.3.1.alpha1/local/include/ -m64 -fPIC -I/export/home/drkirkby/sage-4.3.1.alpha1/local/include/ -L/export/home/drkirkby/sage-4.3.1.alpha1/local/lib -MT dummy.lo -MD -MP -MF .deps/dummy.Tpo -c dummy.cpp  -fPIC -DPIC -o .libs/dummy.o\nIn file included from src/main.h:27,\n                 from dummy.cpp:11:\nsrc/fplll.h:29:1: warning: \"NAN\" redefined\nIn file included from src/defs.h:36,\n                 from src/util.h:29,\n                 from src/lexer.h:26,\n                 from src/main.h:26,\n                 from dummy.cpp:11:\nsrc/dpe.h:30:1: warning: this is the location of the previous definition\n g++ \"-DPACKAGE_NAME=\\\"libfplll\\\"\" \"-DPACKAGE_TARNAME=\\\"libfplll\\\"\" \"-DPACKAGE_VERSION=\\\"3.0.12\\\"\" \"-DPACKAGE_STRING=\\\"libfplll 3.0.12\\\"\" \"-DPACKAGE_BUGREPORT=\\\"\\\"\" \"-DPACKAGE=\\\"libfplll\\\"\" \"-DVERSION=\\\"3.0.12\\\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DHAVE_LIBGMP=1 -DHAVE_LIBMPFR=1 -DSTDC_HEADERS=1 -DHAVE_FLOAT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_STDLIB_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDBOOL_H=1 -DHAVE_FLOOR=1 -DHAVE_POW=1 -DHAVE_RINT=1 -DHAVE_SQRT=1 -DHAVE_STRTOL=1 -DHAVE_LIBGMP=1 -DHAVE_LIBMPFR=1 -I. -I. -I/export/home/drkirkby/sage-4.3.1.alpha1/local/include/ -m64 -fPIC -I/export/home/drkirkby/sage-4.3.1.alpha1/local/include/ -L/export/home/drkirkby/sage-4.3.1.alpha1/local/lib -MT dummy.lo -MD -MP -MF .deps/dummy.Tpo -c dummy.cpp -o dummy.o >/dev/null 2>&1\n/bin/sh ./libtool --tag=CXX --mode=link g++  -m64 -fPIC -I/export/home/drkirkby/sage-4.3.1.alpha1/local/include/ -L/export/home/drkirkby/sage-4.3.1.alpha1/local/lib   -o libfplll.la -rpath /export/home/drkirkby/sage-4.3.1.alpha1/local/lib -version-info 1:0:1 dummy.lo -lgmp -lmpfr -lmpfr -lgmp -lmpfr -lgmp \ng++ -shared -nostdlib  /usr/lib/amd64/crti.o /usr/lib/amd64/values-Xa.o /usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/gcc/i386-pc-solaris2.11/4.3.4/amd64/crtbegin.o  .libs/dummy.o  -Wl,-R -Wl,/export/home/drkirkby/sage-4.3.1.alpha1/local/lib -Wl,-R -Wl,/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib -Wl,-R -Wl,/export/home/drkirkby/sage-4.3.1.alpha1/local/lib -Wl,-R -Wl,/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib -L/export/home/drkirkby/sage-4.3.1.alpha1/local/lib /export/home/drkirkby/sage-4.3.1.alpha1/local/lib/libmpfr.so /export/home/drkirkby/sage-4.3.1.alpha1/local/lib/libgmp.so -L/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/gcc/i386-pc-solaris2.11/4.3.4/amd64 -L/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/gcc/i386-pc-solaris2.11/4.3.4/../../../amd64 -L/lib/amd64 -L/usr/lib/amd64 -L/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/gcc/i386-pc-solaris2.11/4.3.4 -L/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/gcc/i386-pc-solaris2.11/4.3.4/../../.. /usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/libstdc++.so -lm -lgcc_s /usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/gcc/i386-pc-solaris2.11/4.3.4/amd64/crtend.o /usr/lib/amd64/crtn.o  -m64 -Wl,-h -Wl,libfplll.so.0 -o .libs/libfplll.so.0.1.0\nld: fatal: file /usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/libstdc++.so: wrong ELF class: ELFCLASS32\nld: fatal: file processing errors. No output written to .libs/libfplll.so.0.1.0\ncollect2: ld returned 1 exit status\nmake[3]: *** [libfplll.la] Error 1\nmake[3]: Leaving directory `/export/home/drkirkby/sage-4.3.1.alpha1/spkg/build/libfplll-3.0.12.p0/src'\nmake[2]: *** [all-recursive] Error 1\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.3.1.alpha1/spkg/build/libfplll-3.0.12.p0/src'\nError building libfplll\n\nreal\t0m22.114s\nuser\t0m16.829s\nsys\t0m4.053s\nsage: An error occurred while installing libfplll-3.0.12.p0\n```\n\n == Workaround ==\nA workaround is to delete the library, then create a link to the same library in the amd64 directory. But this is a hack, and obviously means gcc would not work properly for 32-bit builds in this case.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7864\n\n",
     "created_at": "2010-01-07T05:30:12Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_007864.json:
 ```
 Assignee: drkirkby
 
-CC:  jsp jhpalmieri
+CC:  @jaapspies @jhpalmieri
 
 ## Build environment
 * Sun Ultra 27 3.333 GHz Intel Xeon. 12 GB RAM
@@ -100,7 +100,7 @@ archive/issue_comments_068173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7864#issuecomment-68173",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -415,7 +415,7 @@ archive/issue_comments_068178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7864#issuecomment-68178",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -486,7 +486,7 @@ archive/issue_comments_068180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7864#issuecomment-68180",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -649,7 +649,7 @@ archive/issue_comments_068185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7864#issuecomment-68185",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -690,7 +690,7 @@ archive/issue_comments_068187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7864#issuecomment-68187",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -745,7 +745,7 @@ archive/issue_comments_068189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7864#issuecomment-68189",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -792,7 +792,7 @@ archive/issue_comments_068191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7864#issuecomment-68191",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -1108,7 +1108,7 @@ archive/issue_comments_068197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7864#issuecomment-68197",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -1198,7 +1198,7 @@ archive/issue_comments_068200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7864#issuecomment-68200",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1216,7 +1216,7 @@ archive/issue_comments_068201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7864#issuecomment-68201",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1234,7 +1234,7 @@ archive/issue_comments_068202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7864#issuecomment-68202",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1275,7 +1275,7 @@ archive/issue_comments_068204.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7864#issuecomment-68204",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

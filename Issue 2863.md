@@ -14,7 +14,7 @@ archive/issues_002863.json:
     "title": "Integer() does not specify that numbers beginning with 0 and 0x are treated specially",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2863",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: somebody
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2863
 archive/issue_comments_019640.json:
 ```json
 {
-    "body": "Attachment [integer-doc.patch](tarball://root/attachments/some-uuid/ticket2863/integer-doc.patch) by ddrake created at 2008-04-09 08:46:12",
+    "body": "Attachment [integer-doc.patch](tarball://root/attachments/some-uuid/ticket2863/integer-doc.patch) by @dandrake created at 2008-04-09 08:46:12",
     "created_at": "2008-04-09T08:46:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2863#issuecomment-19640",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [integer-doc.patch](tarball://root/attachments/some-uuid/ticket2863/integer-doc.patch) by ddrake created at 2008-04-09 08:46:12
+Attachment [integer-doc.patch](tarball://root/attachments/some-uuid/ticket2863/integer-doc.patch) by @dandrake created at 2008-04-09 08:46:12
 
 
 

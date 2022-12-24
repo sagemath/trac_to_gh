@@ -14,7 +14,7 @@ archive/issues_004902.json:
     "title": "convert sage.algebras.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4902",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4902
 archive/issue_comments_037186.json:
 ```json
 {
-    "body": "Attachment [trac_4902.patch](tarball://root/attachments/some-uuid/ticket4902/trac_4902.patch) by mhansen created at 2009-01-02 03:00:24",
+    "body": "Attachment [trac_4902.patch](tarball://root/attachments/some-uuid/ticket4902/trac_4902.patch) by @mwhansen created at 2009-01-02 03:00:24",
     "created_at": "2009-01-02T03:00:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4902#issuecomment-37186",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4902.patch](tarball://root/attachments/some-uuid/ticket4902/trac_4902.patch) by mhansen created at 2009-01-02 03:00:24
+Attachment [trac_4902.patch](tarball://root/attachments/some-uuid/ticket4902/trac_4902.patch) by @mwhansen created at 2009-01-02 03:00:24
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_037187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4902#issuecomment-37187",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -106,16 +106,16 @@ steenrod_algebra_element.py, line 1530: change ``k`th` to ``k^{th}``
 archive/issue_comments_037188.json:
 ```json
 {
-    "body": "Attachment [trac_4902-2.patch](tarball://root/attachments/some-uuid/ticket4902/trac_4902-2.patch) by mhansen created at 2009-01-08 21:10:42",
+    "body": "Attachment [trac_4902-2.patch](tarball://root/attachments/some-uuid/ticket4902/trac_4902-2.patch) by @mwhansen created at 2009-01-08 21:10:42",
     "created_at": "2009-01-08T21:10:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4902#issuecomment-37188",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4902-2.patch](tarball://root/attachments/some-uuid/ticket4902/trac_4902-2.patch) by mhansen created at 2009-01-08 21:10:42
+Attachment [trac_4902-2.patch](tarball://root/attachments/some-uuid/ticket4902/trac_4902-2.patch) by @mwhansen created at 2009-01-08 21:10:42
 
 
 
@@ -129,7 +129,7 @@ archive/issue_comments_037189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4902#issuecomment-37189",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_037190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4902#issuecomment-37190",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_037191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4902#issuecomment-37191",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -189,16 +189,16 @@ Looks good, positive review.  You also caught some things that I had missed, or 
 archive/issue_comments_037192.json:
 ```json
 {
-    "body": "Attachment [sage.algebras-final.patch](tarball://root/attachments/some-uuid/ticket4902/sage.algebras-final.patch) by mhansen created at 2009-02-21 19:14:47",
+    "body": "Attachment [sage.algebras-final.patch](tarball://root/attachments/some-uuid/ticket4902/sage.algebras-final.patch) by @mwhansen created at 2009-02-21 19:14:47",
     "created_at": "2009-02-21T19:14:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4902#issuecomment-37192",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [sage.algebras-final.patch](tarball://root/attachments/some-uuid/ticket4902/sage.algebras-final.patch) by mhansen created at 2009-02-21 19:14:47
+Attachment [sage.algebras-final.patch](tarball://root/attachments/some-uuid/ticket4902/sage.algebras-final.patch) by @mwhansen created at 2009-02-21 19:14:47
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_008818.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\n\n```\nsage: ZZ.range(1r, 10r)\n...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8818\n\n",
+    "body": "Assignee: @aghitza\n\n\n```\nsage: ZZ.range(1r, 10r)\n...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8818\n\n",
     "created_at": "2010-04-29T07:06:09Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_008818.json:
     "title": "Infinite loop in ZZ.range()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8818",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 
 ```
@@ -42,7 +42,7 @@ archive/issue_comments_080937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8818#issuecomment-80937",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -55,16 +55,16 @@ Changing status from new to needs_review.
 archive/issue_comments_080938.json:
 ```json
 {
-    "body": "Attachment [8818-ZZ-range.patch](tarball://root/attachments/some-uuid/ticket8818/8818-ZZ-range.patch) by robertwb created at 2010-04-29 07:09:35\n\nLooks like it was a typo in that function, easy fix.",
+    "body": "Attachment [8818-ZZ-range.patch](tarball://root/attachments/some-uuid/ticket8818/8818-ZZ-range.patch) by @robertwb created at 2010-04-29 07:09:35\n\nLooks like it was a typo in that function, easy fix.",
     "created_at": "2010-04-29T07:09:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8818#issuecomment-80938",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [8818-ZZ-range.patch](tarball://root/attachments/some-uuid/ticket8818/8818-ZZ-range.patch) by robertwb created at 2010-04-29 07:09:35
+Attachment [8818-ZZ-range.patch](tarball://root/attachments/some-uuid/ticket8818/8818-ZZ-range.patch) by @robertwb created at 2010-04-29 07:09:35
 
 Looks like it was a typo in that function, easy fix.
 
@@ -80,7 +80,7 @@ archive/issue_comments_080939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8818#issuecomment-80939",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_080940.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8818#issuecomment-80940",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_080941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8818#issuecomment-80941",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 

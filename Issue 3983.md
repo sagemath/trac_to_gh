@@ -3,7 +3,7 @@
 archive/issues_003983.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3983\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3983\n\n",
     "created_at": "2008-08-28T23:53:13Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_003983.json:
     "title": "[with patch, needs review] get coverage for sage/interfaces/sage0.py up to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3983",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 

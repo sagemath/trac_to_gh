@@ -3,7 +3,7 @@
 archive/issues_009989.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  jdemeyer\n\nThe Pari svn snapshot 12577 is failing to build properly on AIX. **If the Pari developers would like access to AIX hardware (I don't think they have it), then I can provide access to my personal RS/6000**\n\n == Hardware and software ==\n* IBM [RS/6000 7025 F50](http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.pseries.doc/hardware_docs/rs6000_7025f50series.htm)\n* 4 x 332 MHz 32-bit PowerPC CPUs\n* 3 GB RAM\n* A fairly wide mixture of disks sizes (3 x 9 GB, 1 x 18 GB, 2 x 36 GB and 1 x 73 GB)\n* DDS-4 tape drive \n* AIX 5.3 (A POSIX certified operating system)\n* gcc 4.2.4 downloaded from [pware](http://pware.hvcc.edu/)\n* sage-4.6.alpha1 with Pari  svn snapshot 12577, with some fixes applied in Sage. \n\n == The Problem ==\nA full build log is attached, but the main problem seems to be that Pari is using the conventional `.so` for the extension of shared libraries, whereas on AIX, IBM use `.a` for shared libraries. \n\n```\ngcc  -c -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer  -O3 -g   -I. -I../src/headers -fPIC -o thue.o ../src/modules/thue.c\ngcc  -c -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer  -O3 -g   -I. -I../src/headers -I../src/graph -o gp_init.o ../src/gp/gp_init.c\ngcc  -c -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer  -O3 -g   -I. -I../src/headers -DDL_DFLT_NAME=NULL -o highlvl.o ../src/gp/highlvl.c\nrm -f libpari-gmp-2.4.so.3.0.0\ngcc  -o \"/home/users/drkirkby/sage-4.6.alpha1/spkg/build/pari-2.4.3.svn-12577.p5/src/Oaix-ppc\"/libpari-gmp-2.4.so.3.0.0 -shared  -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer  -O3 -g   -fP\nIC -Wl,-r  mp.o mpinl.o F2x.o FF.o Flx.o FpE.o FpV.o FpX.o Qfb.o RgV.o RgX.o ZV.o ZX.o alglin1.o alglin2.o arith1.o arith2.o base1.o base2.o base3.o base4.o base5.o bb_group.o bibli1.o bibli2.o\nbit.o buch1.o buch2.o buch3.o buch4.o concat.o ellanal.o elliptic.o galconj.o gen1.o gen2.o gen3.o hnf_snf.o ifactor1.o lll.o perm.o polarit1.o polarit2.o polarit3.o prime.o random.o rootpol.o s\nubcyclo.o subgroup.o trans1.o trans2.o trans3.o anal.o compat.o compile.o default.o errmsg.o es.o eval.o hash.o init.o intnum.o members.o pariinl.o parse.o sumiter.o DedekZeta.o Hensel.o QX_fact\nor.o aprcl.o elldata.o ellsea.o galois.o galpol.o groupid.o krasner.o kummer.o mpqs.o nffactor.o part.o stark.o subfield.o thue.o  -L/home/users/drkirkby/sage-4.6.alpha1/local/lib -lgmp\nif test \"libpari-gmp-2.4.so.3.0.0\" != \"libpari.so\"; then          rm -f libpari.so;       ln -s libpari-gmp-2.4.so.3.0.0 libpari.so; fi\nif test \"libpari-gmp-2.4.so.3.0.0\" != \"libpari-gmp-2.4.so.3\"; then        rm -f libpari-gmp-2.4.so.3;     ln -s libpari-gmp-2.4.so.3.0.0 libpari-gmp-2.4.so.3; fi\nrm -f gp-dyn\ngcc  -o gp-dyn -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer  -O3 -g   -Wl,-brtl  gp.o gp_init.o gp_rl.o highlvl.o whatnow.o plotport.o plotnull.o  -L\"/home/users/drkirkby/sage-4.6.alpha1/\nspkg/build/pari-2.4.3.svn-12577.p5/src/Oaix-ppc\" -L/home/users/drkirkby/sage-4.6.alpha1/local/lib -lreadline -L/home/users/drkirkby/sage-4.6.alpha1/local/lib/ -ltermcap -L\"/home/users/drkirkby/s\nage-4.6.alpha1/local/lib\" -lpari  -lm\nld: 0711-434 SEVERE ERROR: Shared object /home/users/drkirkby/sage-4.6.alpha1/spkg/build/pari-2.4.3.svn-12577.p5/src/Oaix-ppc/libpari.so\n        The shared object has no .loader section and is being ignored.\ncollect2: ld returned 12 exit status\nmake[3]: *** [gp-dyn] Error 1\nmake[3]: Target `gp' not remade because of errors.\nmake[3]: Leaving directory `/home/users/drkirkby/sage-4.6.alpha1/spkg/build/pari-2.4.3.svn-12577.p5/src/Oaix-ppc'\nmake[2]: *** [gp] Error 2\nmake[2]: Leaving directory `/home/users/drkirkby/sage-4.6.alpha1/spkg/build/pari-2.4.3.svn-12577.p5/src'\nError building GP\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9990\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jdemeyer\n\nThe Pari svn snapshot 12577 is failing to build properly on AIX. **If the Pari developers would like access to AIX hardware (I don't think they have it), then I can provide access to my personal RS/6000**\n\n == Hardware and software ==\n* IBM [RS/6000 7025 F50](http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.pseries.doc/hardware_docs/rs6000_7025f50series.htm)\n* 4 x 332 MHz 32-bit PowerPC CPUs\n* 3 GB RAM\n* A fairly wide mixture of disks sizes (3 x 9 GB, 1 x 18 GB, 2 x 36 GB and 1 x 73 GB)\n* DDS-4 tape drive \n* AIX 5.3 (A POSIX certified operating system)\n* gcc 4.2.4 downloaded from [pware](http://pware.hvcc.edu/)\n* sage-4.6.alpha1 with Pari  svn snapshot 12577, with some fixes applied in Sage. \n\n == The Problem ==\nA full build log is attached, but the main problem seems to be that Pari is using the conventional `.so` for the extension of shared libraries, whereas on AIX, IBM use `.a` for shared libraries. \n\n```\ngcc  -c -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer  -O3 -g   -I. -I../src/headers -fPIC -o thue.o ../src/modules/thue.c\ngcc  -c -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer  -O3 -g   -I. -I../src/headers -I../src/graph -o gp_init.o ../src/gp/gp_init.c\ngcc  -c -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer  -O3 -g   -I. -I../src/headers -DDL_DFLT_NAME=NULL -o highlvl.o ../src/gp/highlvl.c\nrm -f libpari-gmp-2.4.so.3.0.0\ngcc  -o \"/home/users/drkirkby/sage-4.6.alpha1/spkg/build/pari-2.4.3.svn-12577.p5/src/Oaix-ppc\"/libpari-gmp-2.4.so.3.0.0 -shared  -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer  -O3 -g   -fP\nIC -Wl,-r  mp.o mpinl.o F2x.o FF.o Flx.o FpE.o FpV.o FpX.o Qfb.o RgV.o RgX.o ZV.o ZX.o alglin1.o alglin2.o arith1.o arith2.o base1.o base2.o base3.o base4.o base5.o bb_group.o bibli1.o bibli2.o\nbit.o buch1.o buch2.o buch3.o buch4.o concat.o ellanal.o elliptic.o galconj.o gen1.o gen2.o gen3.o hnf_snf.o ifactor1.o lll.o perm.o polarit1.o polarit2.o polarit3.o prime.o random.o rootpol.o s\nubcyclo.o subgroup.o trans1.o trans2.o trans3.o anal.o compat.o compile.o default.o errmsg.o es.o eval.o hash.o init.o intnum.o members.o pariinl.o parse.o sumiter.o DedekZeta.o Hensel.o QX_fact\nor.o aprcl.o elldata.o ellsea.o galois.o galpol.o groupid.o krasner.o kummer.o mpqs.o nffactor.o part.o stark.o subfield.o thue.o  -L/home/users/drkirkby/sage-4.6.alpha1/local/lib -lgmp\nif test \"libpari-gmp-2.4.so.3.0.0\" != \"libpari.so\"; then          rm -f libpari.so;       ln -s libpari-gmp-2.4.so.3.0.0 libpari.so; fi\nif test \"libpari-gmp-2.4.so.3.0.0\" != \"libpari-gmp-2.4.so.3\"; then        rm -f libpari-gmp-2.4.so.3;     ln -s libpari-gmp-2.4.so.3.0.0 libpari-gmp-2.4.so.3; fi\nrm -f gp-dyn\ngcc  -o gp-dyn -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer  -O3 -g   -Wl,-brtl  gp.o gp_init.o gp_rl.o highlvl.o whatnow.o plotport.o plotnull.o  -L\"/home/users/drkirkby/sage-4.6.alpha1/\nspkg/build/pari-2.4.3.svn-12577.p5/src/Oaix-ppc\" -L/home/users/drkirkby/sage-4.6.alpha1/local/lib -lreadline -L/home/users/drkirkby/sage-4.6.alpha1/local/lib/ -ltermcap -L\"/home/users/drkirkby/s\nage-4.6.alpha1/local/lib\" -lpari  -lm\nld: 0711-434 SEVERE ERROR: Shared object /home/users/drkirkby/sage-4.6.alpha1/spkg/build/pari-2.4.3.svn-12577.p5/src/Oaix-ppc/libpari.so\n        The shared object has no .loader section and is being ignored.\ncollect2: ld returned 12 exit status\nmake[3]: *** [gp-dyn] Error 1\nmake[3]: Target `gp' not remade because of errors.\nmake[3]: Leaving directory `/home/users/drkirkby/sage-4.6.alpha1/spkg/build/pari-2.4.3.svn-12577.p5/src/Oaix-ppc'\nmake[2]: *** [gp] Error 2\nmake[2]: Leaving directory `/home/users/drkirkby/sage-4.6.alpha1/spkg/build/pari-2.4.3.svn-12577.p5/src'\nError building GP\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9990\n\n",
     "created_at": "2010-09-23T22:25:56Z",
     "labels": [
         "porting: AIX or HP-UX",
@@ -19,7 +19,7 @@ archive/issues_009989.json:
 ```
 Assignee: drkirkby
 
-CC:  jdemeyer
+CC:  @jdemeyer
 
 The Pari svn snapshot 12577 is failing to build properly on AIX. **If the Pari developers would like access to AIX hardware (I don't think they have it), then I can provide access to my personal RS/6000**
 
@@ -81,7 +81,7 @@ archive/issue_comments_100385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9989",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9989#issuecomment-100385",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_100387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9989",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9989#issuecomment-100387",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_100390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9989",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9989#issuecomment-100390",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_100391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9989",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9989#issuecomment-100391",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -312,7 +312,7 @@ archive/issue_comments_100394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9989",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9989#issuecomment-100394",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -330,7 +330,7 @@ archive/issue_comments_100395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9989",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9989#issuecomment-100395",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_100396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9989",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9989#issuecomment-100396",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -394,7 +394,7 @@ archive/issue_comments_100397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9989",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9989#issuecomment-100397",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -412,7 +412,7 @@ archive/issue_comments_100398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9989",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9989#issuecomment-100398",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000673.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: Solaris 10, doctest, real double\n\n\n```\nsage -t  rings/real_double.pyx                              **********************************************************************\nFile \"real_double.pyx\", line 952:\n    sage: RDF(0).log()\nExpected:\n    -inf\nGot:\n    -Infinity\n**********************************************************************\nFile \"real_double.pyx\", line 954:\n    sage: RDF(-1).log()\nExpected:\n    nan\nGot:\n    -NaN\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/673\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: Solaris 10, doctest, real double\n\n\n```\nsage -t  rings/real_double.pyx                              **********************************************************************\nFile \"real_double.pyx\", line 952:\n    sage: RDF(0).log()\nExpected:\n    -inf\nGot:\n    -Infinity\n**********************************************************************\nFile \"real_double.pyx\", line 954:\n    sage: RDF(-1).log()\nExpected:\n    nan\nGot:\n    -NaN\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/673\n\n",
     "created_at": "2007-09-17T00:34:27Z",
     "labels": [
         "packages",
@@ -17,7 +17,7 @@ archive/issues_000673.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: Solaris 10, doctest, real double
 
@@ -52,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/673
 archive/issue_comments_003484.json:
 ```json
 {
-    "body": "Changing assignee from was to failure.",
+    "body": "Changing assignee from @williamstein to failure.",
     "created_at": "2007-09-17T01:24:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/673",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_003484.json:
 }
 ```
 
-Changing assignee from was to failure.
+Changing assignee from @williamstein to failure.
 
 
 
@@ -110,16 +110,16 @@ Michael
 archive/issue_comments_003487.json:
 ```json
 {
-    "body": "Attachment [trac_673.patch](tarball://root/attachments/some-uuid/ticket673/trac_673.patch) by was created at 2009-04-09 05:29:10",
+    "body": "Attachment [trac_673.patch](tarball://root/attachments/some-uuid/ticket673/trac_673.patch) by @williamstein created at 2009-04-09 05:29:10",
     "created_at": "2009-04-09T05:29:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/673",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/673#issuecomment-3487",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_673.patch](tarball://root/attachments/some-uuid/ticket673/trac_673.patch) by was created at 2009-04-09 05:29:10
+Attachment [trac_673.patch](tarball://root/attachments/some-uuid/ticket673/trac_673.patch) by @williamstein created at 2009-04-09 05:29:10
 
 
 

@@ -14,7 +14,7 @@ archive/issues_001146.json:
     "title": "[with patch] documentation typo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1146",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: tba

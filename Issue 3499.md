@@ -3,7 +3,7 @@
 archive/issues_003499.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nThis fails:\n\n\n```\nsage: N1 = Matrix(CyclotomicField(6), 1, [1])\nsage: cf6 = CyclotomicField(6) ; z6 = cf6.0\nsage: N2 = Matrix(CyclotomicField(6), 1, 5, [0,1,z6,-z6,-z6+1])\nsage: N1*N2\n[         0          1      zeta6     -zeta6 -zeta6 + 1]\n```\n\n\nThe attached patch fixes it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3499\n\n",
+    "body": "Assignee: @craigcitro\n\nThis fails:\n\n\n```\nsage: N1 = Matrix(CyclotomicField(6), 1, [1])\nsage: cf6 = CyclotomicField(6) ; z6 = cf6.0\nsage: N2 = Matrix(CyclotomicField(6), 1, 5, [0,1,z6,-z6,-z6+1])\nsage: N1*N2\n[         0          1      zeta6     -zeta6 -zeta6 + 1]\n```\n\n\nThe attached patch fixes it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3499\n\n",
     "created_at": "2008-06-24T00:23:31Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_003499.json:
     "title": "[with patch, needs review] cyclotomic linear algebra: multiplying 1x1 identity matrix by anything fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3499",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 This fails:
 
@@ -49,7 +49,7 @@ archive/issue_comments_024682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3499#issuecomment-24682",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -62,16 +62,16 @@ Changing status from new to assigned.
 archive/issue_comments_024683.json:
 ```json
 {
-    "body": "Attachment [trac-3499.2.patch](tarball://root/attachments/some-uuid/ticket3499/trac-3499.2.patch) by craigcitro created at 2008-06-24 00:26:42\n\nI just realized that this may depend on trac #3495. Sorry.",
+    "body": "Attachment [trac-3499.2.patch](tarball://root/attachments/some-uuid/ticket3499/trac-3499.2.patch) by @craigcitro created at 2008-06-24 00:26:42\n\nI just realized that this may depend on trac #3495. Sorry.",
     "created_at": "2008-06-24T00:26:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3499#issuecomment-24683",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-3499.2.patch](tarball://root/attachments/some-uuid/ticket3499/trac-3499.2.patch) by craigcitro created at 2008-06-24 00:26:42
+Attachment [trac-3499.2.patch](tarball://root/attachments/some-uuid/ticket3499/trac-3499.2.patch) by @craigcitro created at 2008-06-24 00:26:42
 
 I just realized that this may depend on trac #3495. Sorry.
 
@@ -87,7 +87,7 @@ archive/issue_comments_024684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3499#issuecomment-24684",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_024685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3499#issuecomment-24685",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -148,16 +148,16 @@ part 2
 archive/issue_comments_024686.json:
 ```json
 {
-    "body": "Attachment [trac-3499-2.patch](tarball://root/attachments/some-uuid/ticket3499/trac-3499-2.patch) by was created at 2008-06-24 03:08:50",
+    "body": "Attachment [trac-3499-2.patch](tarball://root/attachments/some-uuid/ticket3499/trac-3499-2.patch) by @williamstein created at 2008-06-24 03:08:50",
     "created_at": "2008-06-24T03:08:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3499#issuecomment-24686",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-3499-2.patch](tarball://root/attachments/some-uuid/ticket3499/trac-3499-2.patch) by was created at 2008-06-24 03:08:50
+Attachment [trac-3499-2.patch](tarball://root/attachments/some-uuid/ticket3499/trac-3499-2.patch) by @williamstein created at 2008-06-24 03:08:50
 
 
 
@@ -171,7 +171,7 @@ archive/issue_comments_024687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3499#issuecomment-24687",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003365.json:
     "title": "[with patch; needs review] add a %c mode to the notebook (like %fortran)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3365",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3365
 archive/issue_comments_023545.json:
 ```json
 {
-    "body": "Attachment [sage-3365.patch](tarball://root/attachments/some-uuid/ticket3365/sage-3365.patch) by was created at 2008-06-04 18:42:38",
+    "body": "Attachment [sage-3365.patch](tarball://root/attachments/some-uuid/ticket3365/sage-3365.patch) by @williamstein created at 2008-06-04 18:42:38",
     "created_at": "2008-06-04T18:42:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3365#issuecomment-23545",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3365.patch](tarball://root/attachments/some-uuid/ticket3365/sage-3365.patch) by was created at 2008-06-04 18:42:38
+Attachment [sage-3365.patch](tarball://root/attachments/some-uuid/ticket3365/sage-3365.patch) by @williamstein created at 2008-06-04 18:42:38
 
 
 
@@ -70,7 +70,7 @@ archive/issue_comments_023546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3365#issuecomment-23546",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -83,16 +83,16 @@ this satandard python package must be installed with ' sage -python setup.py ins
 archive/issue_comments_023547.json:
 ```json
 {
-    "body": "Attachment [py_inline-0.03.tar.bz2](tarball://root/attachments/some-uuid/ticket3365/py_inline-0.03.tar.bz2) by was created at 2008-06-04 18:45:22",
+    "body": "Attachment [py_inline-0.03.tar.bz2](tarball://root/attachments/some-uuid/ticket3365/py_inline-0.03.tar.bz2) by @williamstein created at 2008-06-04 18:45:22",
     "created_at": "2008-06-04T18:45:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3365#issuecomment-23547",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [py_inline-0.03.tar.bz2](tarball://root/attachments/some-uuid/ticket3365/py_inline-0.03.tar.bz2) by was created at 2008-06-04 18:45:22
+Attachment [py_inline-0.03.tar.bz2](tarball://root/attachments/some-uuid/ticket3365/py_inline-0.03.tar.bz2) by @williamstein created at 2008-06-04 18:45:22
 
 
 
@@ -162,16 +162,16 @@ Michael
 archive/issue_comments_023551.json:
 ```json
 {
-    "body": "Attachment [fixedtheproblem.zip](tarball://root/attachments/some-uuid/ticket3365/fixedtheproblem.zip) by was created at 2008-06-09 20:56:30\n\nthis zip file contains both the patch and the new to-be-made spkg; it replaces the previous attached patches",
+    "body": "Attachment [fixedtheproblem.zip](tarball://root/attachments/some-uuid/ticket3365/fixedtheproblem.zip) by @williamstein created at 2008-06-09 20:56:30\n\nthis zip file contains both the patch and the new to-be-made spkg; it replaces the previous attached patches",
     "created_at": "2008-06-09T20:56:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3365#issuecomment-23551",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [fixedtheproblem.zip](tarball://root/attachments/some-uuid/ticket3365/fixedtheproblem.zip) by was created at 2008-06-09 20:56:30
+Attachment [fixedtheproblem.zip](tarball://root/attachments/some-uuid/ticket3365/fixedtheproblem.zip) by @williamstein created at 2008-06-09 20:56:30
 
 this zip file contains both the patch and the new to-be-made spkg; it replaces the previous attached patches
 
@@ -187,7 +187,7 @@ archive/issue_comments_023552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3365#issuecomment-23552",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

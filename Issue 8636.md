@@ -14,7 +14,7 @@ archive/issues_008636.json:
     "title": "iconv -- put the \"do not build check\" in the right place",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8636",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: GeorgSWeber
@@ -41,7 +41,7 @@ archive/issue_comments_078317.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8636",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8636#issuecomment-78317",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_078318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8636",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8636#issuecomment-78318",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_078319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8636",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8636#issuecomment-78319",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_078320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8636",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8636#issuecomment-78320",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_078321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8636",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8636#issuecomment-78321",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

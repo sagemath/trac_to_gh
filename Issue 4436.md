@@ -150,7 +150,7 @@ archive/issue_comments_032619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4436",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4436#issuecomment-32619",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

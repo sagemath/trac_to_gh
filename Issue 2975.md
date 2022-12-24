@@ -14,7 +14,7 @@ archive/issues_002975.json:
     "title": "opening ports to conservative -- breaks on some os x systems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2975",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -61,16 +61,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2975
 archive/issue_comments_020499.json:
 ```json
 {
-    "body": "Attachment [sage-2975.patch](tarball://root/attachments/some-uuid/ticket2975/sage-2975.patch) by was created at 2008-04-20 21:52:55",
+    "body": "Attachment [sage-2975.patch](tarball://root/attachments/some-uuid/ticket2975/sage-2975.patch) by @williamstein created at 2008-04-20 21:52:55",
     "created_at": "2008-04-20T21:52:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2975#issuecomment-20499",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2975.patch](tarball://root/attachments/some-uuid/ticket2975/sage-2975.patch) by was created at 2008-04-20 21:52:55
+Attachment [sage-2975.patch](tarball://root/attachments/some-uuid/ticket2975/sage-2975.patch) by @williamstein created at 2008-04-20 21:52:55
 
 
 
@@ -84,7 +84,7 @@ archive/issue_comments_020500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2975#issuecomment-20500",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

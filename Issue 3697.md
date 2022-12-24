@@ -14,7 +14,7 @@ archive/issues_003697.json:
     "title": "[with patch, needs review] Adds is_primitive() method to polynomials over Finite Fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3697",
-    "user": "TomDraper"
+    "user": "@SmoothDragon"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_026230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3697#issuecomment-26230",
-    "user": "TomDraper"
+    "user": "@SmoothDragon"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to assigned.
 archive/issue_comments_026231.json:
 ```json
 {
-    "body": "Changing assignee from tbd to TomDraper.",
+    "body": "Changing assignee from tbd to @SmoothDragon.",
     "created_at": "2008-07-21T21:21:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3697#issuecomment-26231",
-    "user": "TomDraper"
+    "user": "@SmoothDragon"
 }
 ```
 
-Changing assignee from tbd to TomDraper.
+Changing assignee from tbd to @SmoothDragon.
 
 
 
@@ -68,16 +68,16 @@ Changing assignee from tbd to TomDraper.
 archive/issue_comments_026232.json:
 ```json
 {
-    "body": "Attachment [is_primitive.patch](tarball://root/attachments/some-uuid/ticket3697/is_primitive.patch) by TomDraper created at 2008-07-21 21:21:29",
+    "body": "Attachment [is_primitive.patch](tarball://root/attachments/some-uuid/ticket3697/is_primitive.patch) by @SmoothDragon created at 2008-07-21 21:21:29",
     "created_at": "2008-07-21T21:21:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3697#issuecomment-26232",
-    "user": "TomDraper"
+    "user": "@SmoothDragon"
 }
 ```
 
-Attachment [is_primitive.patch](tarball://root/attachments/some-uuid/ticket3697/is_primitive.patch) by TomDraper created at 2008-07-21 21:21:29
+Attachment [is_primitive.patch](tarball://root/attachments/some-uuid/ticket3697/is_primitive.patch) by @SmoothDragon created at 2008-07-21 21:21:29
 
 
 
@@ -110,16 +110,16 @@ Michael
 archive/issue_comments_026234.json:
 ```json
 {
-    "body": "Attachment [is_primitive.2.patch](tarball://root/attachments/some-uuid/ticket3697/is_primitive.2.patch) by robertwb created at 2008-07-31 05:36:57\n\nfixed the typo",
+    "body": "Attachment [is_primitive.2.patch](tarball://root/attachments/some-uuid/ticket3697/is_primitive.2.patch) by @robertwb created at 2008-07-31 05:36:57\n\nfixed the typo",
     "created_at": "2008-07-31T05:36:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3697#issuecomment-26234",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [is_primitive.2.patch](tarball://root/attachments/some-uuid/ticket3697/is_primitive.2.patch) by robertwb created at 2008-07-31 05:36:57
+Attachment [is_primitive.2.patch](tarball://root/attachments/some-uuid/ticket3697/is_primitive.2.patch) by @robertwb created at 2008-07-31 05:36:57
 
 fixed the typo
 
@@ -135,7 +135,7 @@ archive/issue_comments_026235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3697#issuecomment-26235",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

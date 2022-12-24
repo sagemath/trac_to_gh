@@ -14,7 +14,7 @@ archive/issues_004873.json:
     "title": "sage -optional should not require write access to sage repo; e.g., people may want to check on what packages are installed system-wide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4873",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

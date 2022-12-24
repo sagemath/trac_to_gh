@@ -3,7 +3,7 @@
 archive/issues_008144.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  ddrake\n\nKeywords: sagetex\n\nTicket #7617 adds SageTeX as a standard spkg. However, despite modifying the spkg dependency rules in `SAGE_ROOT/spkg/install` and `SAGE_ROOT/spkg/standard/deps` to account for this new package, SageTeX isn't actually installed at all in Sage 4.3.2.alpha1. This was reported on [sage-devel](http://groups.google.com/group/sage-devel/msg/fa6ed48cba5037e0).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8144\n\n",
+    "body": "Assignee: tbd\n\nCC:  @dandrake\n\nKeywords: sagetex\n\nTicket #7617 adds SageTeX as a standard spkg. However, despite modifying the spkg dependency rules in `SAGE_ROOT/spkg/install` and `SAGE_ROOT/spkg/standard/deps` to account for this new package, SageTeX isn't actually installed at all in Sage 4.3.2.alpha1. This was reported on [sage-devel](http://groups.google.com/group/sage-devel/msg/fa6ed48cba5037e0).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8144\n\n",
     "created_at": "2010-02-01T18:14:12Z",
     "labels": [
         "packages: standard",
@@ -19,7 +19,7 @@ archive/issues_008144.json:
 ```
 Assignee: tbd
 
-CC:  ddrake
+CC:  @dandrake
 
 Keywords: sagetex
 
@@ -41,7 +41,7 @@ archive/issue_comments_071596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8144#issuecomment-71596",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_071597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8144#issuecomment-71597",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_071598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8144#issuecomment-71598",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -90,16 +90,16 @@ Changing status from new to needs_review.
 archive/issue_comments_071599.json:
 ```json
 {
-    "body": "Attachment [deps.patch](tarball://root/attachments/some-uuid/ticket8144/deps.patch) by jhpalmieri created at 2010-02-01 22:44:09",
+    "body": "Attachment [deps.patch](tarball://root/attachments/some-uuid/ticket8144/deps.patch) by @jhpalmieri created at 2010-02-01 22:44:09",
     "created_at": "2010-02-01T22:44:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8144#issuecomment-71599",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [deps.patch](tarball://root/attachments/some-uuid/ticket8144/deps.patch) by jhpalmieri created at 2010-02-01 22:44:09
+Attachment [deps.patch](tarball://root/attachments/some-uuid/ticket8144/deps.patch) by @jhpalmieri created at 2010-02-01 22:44:09
 
 
 
@@ -113,7 +113,7 @@ archive/issue_comments_071600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8144#issuecomment-71600",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_071601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8144#issuecomment-71601",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002599.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\n\n```\nsage: Permutation([1,2,3]).to_permutation_group_element()\n---------------------------------------------------------------------------\n<type 'exceptions.IndexError'>            Traceback (most recent call last)\n\n/home/mhansen/sage-2.10.4.alpha0-sage.math-only-x86_64-Linux/devel/sage-review/<ipython console> in <module>()\n\n/home/mhansen/sage-2.10.4.alpha0-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/combinat/permutation.py in to_permutation_group_element(self)\n    438         \"\"\"\n    439 \n--> 440         return PermutationGroupElement(self.to_cycles(singletons=False))\n    441 \n    442     def signature(p):\n\n/home/mhansen/sage-2.10.4.alpha0-sage.math-only-x86_64-Linux/devel/sage-review/permgroup_element.pyx in sage.groups.perm_gps.permgroup_element.PermutationGroupElement.__init__()\n\n/home/mhansen/sage-2.10.4.alpha0-sage.math-only-x86_64-Linux/devel/sage-review/permgroup_element.pyx in sage.groups.perm_gps.permgroup_element.gap_format()\n\n<type 'exceptions.IndexError'>: list index out of range\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2599\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n```\nsage: Permutation([1,2,3]).to_permutation_group_element()\n---------------------------------------------------------------------------\n<type 'exceptions.IndexError'>            Traceback (most recent call last)\n\n/home/mhansen/sage-2.10.4.alpha0-sage.math-only-x86_64-Linux/devel/sage-review/<ipython console> in <module>()\n\n/home/mhansen/sage-2.10.4.alpha0-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/combinat/permutation.py in to_permutation_group_element(self)\n    438         \"\"\"\n    439 \n--> 440         return PermutationGroupElement(self.to_cycles(singletons=False))\n    441 \n    442     def signature(p):\n\n/home/mhansen/sage-2.10.4.alpha0-sage.math-only-x86_64-Linux/devel/sage-review/permgroup_element.pyx in sage.groups.perm_gps.permgroup_element.PermutationGroupElement.__init__()\n\n/home/mhansen/sage-2.10.4.alpha0-sage.math-only-x86_64-Linux/devel/sage-review/permgroup_element.pyx in sage.groups.perm_gps.permgroup_element.gap_format()\n\n<type 'exceptions.IndexError'>: list index out of range\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2599\n\n",
     "created_at": "2008-03-19T18:46:00Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_002599.json:
     "title": "Permutation -> PermutationGroupElement fails for the identity",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2599",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -55,16 +55,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2599
 archive/issue_comments_017789.json:
 ```json
 {
-    "body": "Attachment [2599.patch](tarball://root/attachments/some-uuid/ticket2599/2599.patch) by mhansen created at 2008-03-19 19:03:02",
+    "body": "Attachment [2599.patch](tarball://root/attachments/some-uuid/ticket2599/2599.patch) by @mwhansen created at 2008-03-19 19:03:02",
     "created_at": "2008-03-19T19:03:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2599#issuecomment-17789",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2599.patch](tarball://root/attachments/some-uuid/ticket2599/2599.patch) by mhansen created at 2008-03-19 19:03:02
+Attachment [2599.patch](tarball://root/attachments/some-uuid/ticket2599/2599.patch) by @mwhansen created at 2008-03-19 19:03:02
 
 
 
@@ -78,7 +78,7 @@ archive/issue_comments_017790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2599#issuecomment-17790",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_017791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2599#issuecomment-17791",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

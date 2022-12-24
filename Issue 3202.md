@@ -14,7 +14,7 @@ archive/issues_003202.json:
     "title": "show() smashes multiplied numbers together so the product looks like a number",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3202",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
@@ -61,7 +61,7 @@ This is a problem with that object's show method, not with the notebook.
 archive/issue_comments_022129.json:
 ```json
 {
-    "body": "Changing assignee from boothby to burcin.",
+    "body": "Changing assignee from boothby to @burcin.",
     "created_at": "2009-01-22T00:36:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3202",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_022129.json:
 }
 ```
 
-Changing assignee from boothby to burcin.
+Changing assignee from boothby to @burcin.
 
 
 
@@ -102,7 +102,7 @@ archive/issue_comments_022131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3202#issuecomment-22131",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_022132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3202#issuecomment-22132",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_022133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3202#issuecomment-22133",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_022134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3202#issuecomment-22134",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_005655.json:
     "title": "[with patch, needs review] Improved enumeration of vertices and 0-dimensional faces",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5655",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 Assignee: mhampton
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5655
 archive/issue_comments_044224.json:
 ```json
 {
-    "body": "Attachment [11805.patch](tarball://root/attachments/some-uuid/ticket5655/11805.patch) by novoselt created at 2009-04-01 02:55:19",
+    "body": "Attachment [11805.patch](tarball://root/attachments/some-uuid/ticket5655/11805.patch) by @novoselt created at 2009-04-01 02:55:19",
     "created_at": "2009-04-01T02:55:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5655#issuecomment-44224",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [11805.patch](tarball://root/attachments/some-uuid/ticket5655/11805.patch) by novoselt created at 2009-04-01 02:55:19
+Attachment [11805.patch](tarball://root/attachments/some-uuid/ticket5655/11805.patch) by @novoselt created at 2009-04-01 02:55:19
 
 
 

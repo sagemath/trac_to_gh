@@ -14,7 +14,7 @@ archive/issues_006107.json:
     "title": "[with patch, needs review] misc. fixes for symbolics for 4.0.rc0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6107",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6107
 archive/issue_comments_048794.json:
 ```json
 {
-    "body": "Changing assignee from tbd to mhansen.",
+    "body": "Changing assignee from tbd to @mwhansen.",
     "created_at": "2009-05-21T05:54:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6107",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6107#issuecomment-48794",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tbd to mhansen.
+Changing assignee from tbd to @mwhansen.
 
 
 
@@ -50,16 +50,16 @@ Changing assignee from tbd to mhansen.
 archive/issue_comments_048795.json:
 ```json
 {
-    "body": "Attachment [trac_6107.patch](tarball://root/attachments/some-uuid/ticket6107/trac_6107.patch) by mhansen created at 2009-05-21 05:54:39\n\nThis should fix problems with sage/calculus/all.py and the reference manual.",
+    "body": "Attachment [trac_6107.patch](tarball://root/attachments/some-uuid/ticket6107/trac_6107.patch) by @mwhansen created at 2009-05-21 05:54:39\n\nThis should fix problems with sage/calculus/all.py and the reference manual.",
     "created_at": "2009-05-21T05:54:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6107",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6107#issuecomment-48795",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6107.patch](tarball://root/attachments/some-uuid/ticket6107/trac_6107.patch) by mhansen created at 2009-05-21 05:54:39
+Attachment [trac_6107.patch](tarball://root/attachments/some-uuid/ticket6107/trac_6107.patch) by @mwhansen created at 2009-05-21 05:54:39
 
 This should fix problems with sage/calculus/all.py and the reference manual.
 
@@ -75,7 +75,7 @@ archive/issue_comments_048796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6107",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6107#issuecomment-48796",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_048797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6107",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6107#issuecomment-48797",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

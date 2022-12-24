@@ -3,7 +3,7 @@
 archive/issues_009737.json:
 ```json
 {
-    "body": "Assignee: itolkov, jason\n\nCC:  mkoeppe dimpase slelievre tscrim\n\nMoved the interact that shows an induced subgraph obtained on deleting a vertex, from the wiki to library. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9737\n\n",
+    "body": "Assignee: itolkov, jason\n\nCC:  @mkoeppe @dimpase @slel @tscrim\n\nMoved the interact that shows an induced subgraph obtained on deleting a vertex, from the wiki to library. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9737\n\n",
     "created_at": "2010-08-12T20:39:21Z",
     "labels": [
         "interact",
@@ -19,7 +19,7 @@ archive/issues_009737.json:
 ```
 Assignee: itolkov, jason
 
-CC:  mkoeppe dimpase slelievre tscrim
+CC:  @mkoeppe @dimpase @slel @tscrim
 
 Moved the interact that shows an induced subgraph obtained on deleting a vertex, from the wiki to library. 
 
@@ -63,7 +63,7 @@ archive/issue_comments_095201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9737#issuecomment-95201",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_095202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9737#issuecomment-95202",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_095203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9737#issuecomment-95203",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_095204.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9737#issuecomment-95204",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_095205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9737#issuecomment-95205",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_095206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9737#issuecomment-95206",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

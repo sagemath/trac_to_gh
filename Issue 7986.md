@@ -3,7 +3,7 @@
 archive/issues_007986.json:
 ```json
 {
-    "body": "Assignee: timdumol\n\nCC:  boothby kcrisman jhpalmieri\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7986\n\n",
+    "body": "Assignee: @TimDumol\n\nCC:  boothby @kcrisman @jhpalmieri\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7986\n\n",
     "created_at": "2010-01-19T01:35:20Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007986.json:
     "title": "notebook: _sage_ worksheets used by docbrowser never get deleted",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7986",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: timdumol
+Assignee: @TimDumol
 
-CC:  boothby kcrisman jhpalmieri
+CC:  boothby @kcrisman @jhpalmieri
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_069745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7986#issuecomment-69745",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_069746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7986#issuecomment-69746",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_069747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7986#issuecomment-69747",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_069748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7986#issuecomment-69748",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_069749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7986#issuecomment-69749",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_069750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7986#issuecomment-69750",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

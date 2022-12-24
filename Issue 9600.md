@@ -3,7 +3,7 @@
 archive/issues_009600.json:
 ```json
 {
-    "body": "Assignee: pjeremy\n\nCC:  jhpalmieri stephen dimpase\n\nliblapack.so includes undefined references to __powidf2 and __powisf2, which are defined in libgcc (no other Sage shared libraries appear to rely on libgcc helper functions). Unfortunately, for reasons I don't fully understand, linking liblapack.so against libgcc.a fails, even when building a normal executable. The symptom is a message like:\n\nusr/local/bin/ld: _configtest: hidden symbol `__powidf2' in /usr/local/lib/gcc45/gcc/x86_64-portbld-freebsd8.1/4.5.1/libgcc.a(_powidf2.o) is referenced by DSO\n/usr/local/bin/ld: final link failed: Nonrepresentable section on output\n\nThe fix is to add a dependency on libgcc_s.so when (re-)building \nliblapack.so in make_correct_shared.sh.\n\nIt's not clear whether this is a defect in atlas or not - the liblapack.so used in Sage is custom-built for Sage and so this particular fix cannot be reported.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9600\n\n",
+    "body": "Assignee: @peterjeremy\n\nCC:  @jhpalmieri stephen @dimpase\n\nliblapack.so includes undefined references to __powidf2 and __powisf2, which are defined in libgcc (no other Sage shared libraries appear to rely on libgcc helper functions). Unfortunately, for reasons I don't fully understand, linking liblapack.so against libgcc.a fails, even when building a normal executable. The symptom is a message like:\n\nusr/local/bin/ld: _configtest: hidden symbol `__powidf2' in /usr/local/lib/gcc45/gcc/x86_64-portbld-freebsd8.1/4.5.1/libgcc.a(_powidf2.o) is referenced by DSO\n/usr/local/bin/ld: final link failed: Nonrepresentable section on output\n\nThe fix is to add a dependency on libgcc_s.so when (re-)building \nliblapack.so in make_correct_shared.sh.\n\nIt's not clear whether this is a defect in atlas or not - the liblapack.so used in Sage is custom-built for Sage and so this particular fix cannot be reported.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9600\n\n",
     "created_at": "2010-07-26T10:56:43Z",
     "labels": [
         "freebsd",
@@ -14,12 +14,12 @@ archive/issues_009600.json:
     "title": "Fix atlas/liblapack.so linkage on FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9600",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
-Assignee: pjeremy
+Assignee: @peterjeremy
 
-CC:  jhpalmieri stephen dimpase
+CC:  @jhpalmieri stephen @dimpase
 
 liblapack.so includes undefined references to __powidf2 and __powisf2, which are defined in libgcc (no other Sage shared libraries appear to rely on libgcc helper functions). Unfortunately, for reasons I don't fully understand, linking liblapack.so against libgcc.a fails, even when building a normal executable. The symptom is a message like:
 
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9600
 archive/issue_comments_092892.json:
 ```json
 {
-    "body": "Attachment [atlas-3.8.3.p12.patch](tarball://root/attachments/some-uuid/ticket9600/atlas-3.8.3.p12.patch) by dimpase created at 2010-08-02 12:43:42\n\nThis does not seem to be FreeBSD-specific!\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/4cfaff6722c62c9b",
+    "body": "Attachment [atlas-3.8.3.p12.patch](tarball://root/attachments/some-uuid/ticket9600/atlas-3.8.3.p12.patch) by @dimpase created at 2010-08-02 12:43:42\n\nThis does not seem to be FreeBSD-specific!\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/4cfaff6722c62c9b",
     "created_at": "2010-08-02T12:43:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92892",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
-Attachment [atlas-3.8.3.p12.patch](tarball://root/attachments/some-uuid/ticket9600/atlas-3.8.3.p12.patch) by dimpase created at 2010-08-02 12:43:42
+Attachment [atlas-3.8.3.p12.patch](tarball://root/attachments/some-uuid/ticket9600/atlas-3.8.3.p12.patch) by @dimpase created at 2010-08-02 12:43:42
 
 This does not seem to be FreeBSD-specific!
 See http://groups.google.com/group/sage-devel/browse_thread/thread/4cfaff6722c62c9b
@@ -63,7 +63,7 @@ See http://groups.google.com/group/sage-devel/browse_thread/thread/4cfaff6722c62
 archive/issue_comments_092893.json:
 ```json
 {
-    "body": "Changing assignee from pjeremy to GeorgSWeber.",
+    "body": "Changing assignee from @peterjeremy to GeorgSWeber.",
     "created_at": "2010-08-02T16:56:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9600",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_092893.json:
 }
 ```
 
-Changing assignee from pjeremy to GeorgSWeber.
+Changing assignee from @peterjeremy to GeorgSWeber.
 
 
 
@@ -137,7 +137,7 @@ archive/issue_comments_092896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92896",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_092897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92897",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_092898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92898",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_092900.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92900",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -389,16 +389,16 @@ Test script to convert static to shared libs. Run from $SAGE_LOCAL/lib.
 archive/issue_comments_092905.json:
 ```json
 {
-    "body": "Attachment [static2shared.sh](tarball://root/attachments/some-uuid/ticket9600/static2shared.sh) by jhpalmieri created at 2010-08-03 02:21:43\n\nmpatel also [had a suggestion](http://trac.sagemath.org/sage_trac/ticket/9356#comment:7) about creating shared libraries.  I know nothing about this; how do these approaches compare?",
+    "body": "Attachment [static2shared.sh](tarball://root/attachments/some-uuid/ticket9600/static2shared.sh) by @jhpalmieri created at 2010-08-03 02:21:43\n\nmpatel also [had a suggestion](http://trac.sagemath.org/sage_trac/ticket/9356#comment:7) about creating shared libraries.  I know nothing about this; how do these approaches compare?",
     "created_at": "2010-08-03T02:21:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92905",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [static2shared.sh](tarball://root/attachments/some-uuid/ticket9600/static2shared.sh) by jhpalmieri created at 2010-08-03 02:21:43
+Attachment [static2shared.sh](tarball://root/attachments/some-uuid/ticket9600/static2shared.sh) by @jhpalmieri created at 2010-08-03 02:21:43
 
 mpatel also [had a suggestion](http://trac.sagemath.org/sage_trac/ticket/9356#comment:7) about creating shared libraries.  I know nothing about this; how do these approaches compare?
 
@@ -436,7 +436,7 @@ archive/issue_comments_092907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92907",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -534,7 +534,7 @@ archive/issue_comments_092909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92909",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
@@ -740,16 +740,16 @@ Dave
 archive/issue_comments_092912.json:
 ```json
 {
-    "body": "Attachment [make_correct_shared.sh](tarball://root/attachments/some-uuid/ticket9600/make_correct_shared.sh) by pjeremy created at 2010-08-03 10:58:43\n\nReplying to [comment:15 drkirkby]:\n> I thought it might be wise to link in the Fortran and maths libraries. I note this was done in the original code (at least for some libraries), but when I tried to build something with libraries, it worked OK without that, so I did not include them. I've attached a second version. Let me know how that works\n\nAnd attached is my adapted variant of make_correct_shared.sh that basically replicates the shared library dependencies from the original.  I have cleaned up the overall structure but haven't touched the OS-X or Solaris since I don't know the correct OS-X incantation and am not sure whether the Solaris section is still valid (I suspect not).",
+    "body": "Attachment [make_correct_shared.sh](tarball://root/attachments/some-uuid/ticket9600/make_correct_shared.sh) by @peterjeremy created at 2010-08-03 10:58:43\n\nReplying to [comment:15 drkirkby]:\n> I thought it might be wise to link in the Fortran and maths libraries. I note this was done in the original code (at least for some libraries), but when I tried to build something with libraries, it worked OK without that, so I did not include them. I've attached a second version. Let me know how that works\n\nAnd attached is my adapted variant of make_correct_shared.sh that basically replicates the shared library dependencies from the original.  I have cleaned up the overall structure but haven't touched the OS-X or Solaris since I don't know the correct OS-X incantation and am not sure whether the Solaris section is still valid (I suspect not).",
     "created_at": "2010-08-03T10:58:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92912",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
-Attachment [make_correct_shared.sh](tarball://root/attachments/some-uuid/ticket9600/make_correct_shared.sh) by pjeremy created at 2010-08-03 10:58:43
+Attachment [make_correct_shared.sh](tarball://root/attachments/some-uuid/ticket9600/make_correct_shared.sh) by @peterjeremy created at 2010-08-03 10:58:43
 
 Replying to [comment:15 drkirkby]:
 > I thought it might be wise to link in the Fortran and maths libraries. I note this was done in the original code (at least for some libraries), but when I tried to build something with libraries, it worked OK without that, so I did not include them. I've attached a second version. Let me know how that works
@@ -768,7 +768,7 @@ archive/issue_comments_092913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92913",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -786,7 +786,7 @@ archive/issue_comments_092914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92914",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -837,7 +837,7 @@ archive/issue_comments_092915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92915",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -870,7 +870,7 @@ archive/issue_comments_092916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92916",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -888,7 +888,7 @@ archive/issue_comments_092917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92917",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -906,7 +906,7 @@ archive/issue_comments_092918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92918",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -924,7 +924,7 @@ archive/issue_comments_092919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92919",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -942,7 +942,7 @@ archive/issue_comments_092920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92920",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001685.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1685\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1685\n\n",
     "created_at": "2008-01-04T23:35:55Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001685.json:
     "title": "restructuring symmetric functions and misc. combinatorics updates.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1685",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -39,7 +39,7 @@ archive/issue_comments_010702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1685#issuecomment-10702",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_010703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1685#issuecomment-10703",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -75,16 +75,16 @@ combinat/hall_polynomial.py
 archive/issue_comments_010704.json:
 ```json
 {
-    "body": "Attachment [1685.patch](tarball://root/attachments/some-uuid/ticket1685/1685.patch) by mhansen created at 2008-01-05 00:08:40",
+    "body": "Attachment [1685.patch](tarball://root/attachments/some-uuid/ticket1685/1685.patch) by @mwhansen created at 2008-01-05 00:08:40",
     "created_at": "2008-01-05T00:08:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1685#issuecomment-10704",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1685.patch](tarball://root/attachments/some-uuid/ticket1685/1685.patch) by mhansen created at 2008-01-05 00:08:40
+Attachment [1685.patch](tarball://root/attachments/some-uuid/ticket1685/1685.patch) by @mwhansen created at 2008-01-05 00:08:40
 
 
 
@@ -93,16 +93,16 @@ Attachment [1685.patch](tarball://root/attachments/some-uuid/ticket1685/1685.pat
 archive/issue_comments_010705.json:
 ```json
 {
-    "body": "Attachment [1685-2.patch](tarball://root/attachments/some-uuid/ticket1685/1685-2.patch) by mhansen created at 2008-01-05 00:09:24",
+    "body": "Attachment [1685-2.patch](tarball://root/attachments/some-uuid/ticket1685/1685-2.patch) by @mwhansen created at 2008-01-05 00:09:24",
     "created_at": "2008-01-05T00:09:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1685#issuecomment-10705",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1685-2.patch](tarball://root/attachments/some-uuid/ticket1685/1685-2.patch) by mhansen created at 2008-01-05 00:09:24
+Attachment [1685-2.patch](tarball://root/attachments/some-uuid/ticket1685/1685-2.patch) by @mwhansen created at 2008-01-05 00:09:24
 
 
 

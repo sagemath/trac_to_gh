@@ -14,7 +14,7 @@ archive/issues_003344.json:
     "title": "small changes to documentation for erf, n",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3344",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: somebody
@@ -59,7 +59,7 @@ archive/issue_comments_023225.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3344#issuecomment-23225",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

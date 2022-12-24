@@ -3,7 +3,7 @@
 archive/issues_000690.json:
 ```json
 {
-    "body": "Assignee: was\n\nI could be mistaken, but running sage under VMware on a Windows machine (e.g. for a huge DSage project) won't allow the creation of a file.  If you log in under manage, you are not given the permissions to create a file!\n\nIssue created by migration from https://trac.sagemath.org/ticket/690\n\n",
+    "body": "Assignee: @williamstein\n\nI could be mistaken, but running sage under VMware on a Windows machine (e.g. for a huge DSage project) won't allow the creation of a file.  If you log in under manage, you are not given the permissions to create a file!\n\nIssue created by migration from https://trac.sagemath.org/ticket/690\n\n",
     "created_at": "2007-09-18T20:28:43Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_000690.json:
     "title": "VMware sage doesn't allow creation of files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/690",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I could be mistaken, but running sage under VMware on a Windows machine (e.g. for a huge DSage project) won't allow the creation of a file.  If you log in under manage, you are not given the permissions to create a file!
 
@@ -37,7 +37,7 @@ archive/issue_comments_003588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/690",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/690#issuecomment-3588",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_003590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/690",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/690#issuecomment-3590",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 

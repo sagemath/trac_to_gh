@@ -3,7 +3,7 @@
 archive/issues_000133.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: Galois group, algebric number theory\n\nIt would be great if something like the following worked:\n\n\n```\nsage: F = CyclotomicField(7)\n\nsage: z = F.gen()\n\nsage: G = F.galois_group()\n\nsage: phi = G.random()\n\nsage: z.galois_action(phi)\n```\n\n\nAlso needed, I think, are embedding into CC.\nAFAIK, neither of these has been entered onto the SAGE\n\"wish list\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/133\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: Galois group, algebric number theory\n\nIt would be great if something like the following worked:\n\n\n```\nsage: F = CyclotomicField(7)\n\nsage: z = F.gen()\n\nsage: G = F.galois_group()\n\nsage: phi = G.random()\n\nsage: z.galois_action(phi)\n```\n\n\nAlso needed, I think, are embedding into CC.\nAFAIK, neither of these has been entered onto the SAGE\n\"wish list\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/133\n\n",
     "created_at": "2006-10-15T16:47:17Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_000133.json:
     "title": "Galois action",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/133",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: Galois group, algebric number theory
 
@@ -57,7 +57,7 @@ archive/issue_comments_000627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/133#issuecomment-627",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_000628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/133#issuecomment-628",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_000629.json:
     "issue": "https://github.com/sagemath/sagetest/issues/133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/133#issuecomment-629",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_000630.json:
     "issue": "https://github.com/sagemath/sagetest/issues/133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/133#issuecomment-630",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -175,16 +175,16 @@ Changing status from new to assigned.
 archive/issue_comments_000631.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-05-25T13:39:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/133#issuecomment-631",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 
@@ -198,7 +198,7 @@ archive/issue_comments_000632.json:
     "issue": "https://github.com/sagemath/sagetest/issues/133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/133#issuecomment-632",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -211,16 +211,16 @@ patch against 4.0.rc1
 archive/issue_comments_000633.json:
 ```json
 {
-    "body": "Attachment [trac_133.patch](tarball://root/attachments/some-uuid/ticket133/trac_133.patch) by davidloeffler created at 2009-05-28 15:42:41\n\nThe previous patch broke a doctest due to silly sorting issues; here's a better patch.",
+    "body": "Attachment [trac_133.patch](tarball://root/attachments/some-uuid/ticket133/trac_133.patch) by @loefflerd created at 2009-05-28 15:42:41\n\nThe previous patch broke a doctest due to silly sorting issues; here's a better patch.",
     "created_at": "2009-05-28T15:42:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/133#issuecomment-633",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_133.patch](tarball://root/attachments/some-uuid/ticket133/trac_133.patch) by davidloeffler created at 2009-05-28 15:42:41
+Attachment [trac_133.patch](tarball://root/attachments/some-uuid/ticket133/trac_133.patch) by @loefflerd created at 2009-05-28 15:42:41
 
 The previous patch broke a doctest due to silly sorting issues; here's a better patch.
 
@@ -236,7 +236,7 @@ archive/issue_comments_000634.json:
     "issue": "https://github.com/sagemath/sagetest/issues/133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/133#issuecomment-634",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_000635.json:
     "issue": "https://github.com/sagemath/sagetest/issues/133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/133#issuecomment-635",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_000636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/133#issuecomment-636",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_000637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/133#issuecomment-637",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -308,7 +308,7 @@ archive/issue_comments_000638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/133#issuecomment-638",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

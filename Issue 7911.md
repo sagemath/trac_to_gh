@@ -3,7 +3,7 @@
 archive/issues_007911.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mvngu\n\nKeywords: scilab,notebook\n\nThe dropdown menu that shows the different interfaces is missing scilab.\n\nUsing %scilab in a notebook cell works though\n\nIssue created by migration from https://trac.sagemath.org/ticket/7911\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  mvngu\n\nKeywords: scilab,notebook\n\nThe dropdown menu that shows the different interfaces is missing scilab.\n\nUsing %scilab in a notebook cell works though\n\nIssue created by migration from https://trac.sagemath.org/ticket/7911\n\n",
     "created_at": "2010-01-12T18:20:31Z",
     "labels": [
         "notebook",
@@ -17,7 +17,7 @@ archive/issues_007911.json:
     "user": "olazo"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  mvngu
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7911
 archive/issue_comments_068798.json:
 ```json
 {
-    "body": "Attachment [trac_7911-missing_scilab.patch](tarball://root/attachments/some-uuid/ticket7911/trac_7911-missing_scilab.patch) by mpatel created at 2010-01-25 14:52:05\n\nAdd scilab to drop-down list.  sagenb repo.",
+    "body": "Attachment [trac_7911-missing_scilab.patch](tarball://root/attachments/some-uuid/ticket7911/trac_7911-missing_scilab.patch) by @qed777 created at 2010-01-25 14:52:05\n\nAdd scilab to drop-down list.  sagenb repo.",
     "created_at": "2010-01-25T14:52:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7911#issuecomment-68798",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7911-missing_scilab.patch](tarball://root/attachments/some-uuid/ticket7911/trac_7911-missing_scilab.patch) by mpatel created at 2010-01-25 14:52:05
+Attachment [trac_7911-missing_scilab.patch](tarball://root/attachments/some-uuid/ticket7911/trac_7911-missing_scilab.patch) by @qed777 created at 2010-01-25 14:52:05
 
 Add scilab to drop-down list.  sagenb repo.
 
@@ -63,7 +63,7 @@ archive/issue_comments_068799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7911#issuecomment-68799",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_068800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7911#issuecomment-68800",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_068801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7911#issuecomment-68801",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_068804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7911#issuecomment-68804",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_068805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7911#issuecomment-68805",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_068806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7911#issuecomment-68806",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -233,16 +233,16 @@ I applied the patch to the alpha0 version of sage on my local PC - built from so
 archive/issue_comments_068808.json:
 ```json
 {
-    "body": "Attachment [trac_7911-missing_scilab.2.patch](tarball://root/attachments/some-uuid/ticket7911/trac_7911-missing_scilab.2.patch) by mpatel created at 2010-02-01 12:35:57\n\nSame as previous, except for SageNB 0.6.  Apply just one of these.  sagenb repo.",
+    "body": "Attachment [trac_7911-missing_scilab.2.patch](tarball://root/attachments/some-uuid/ticket7911/trac_7911-missing_scilab.2.patch) by @qed777 created at 2010-02-01 12:35:57\n\nSame as previous, except for SageNB 0.6.  Apply just one of these.  sagenb repo.",
     "created_at": "2010-02-01T12:35:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7911#issuecomment-68808",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7911-missing_scilab.2.patch](tarball://root/attachments/some-uuid/ticket7911/trac_7911-missing_scilab.2.patch) by mpatel created at 2010-02-01 12:35:57
+Attachment [trac_7911-missing_scilab.2.patch](tarball://root/attachments/some-uuid/ticket7911/trac_7911-missing_scilab.2.patch) by @qed777 created at 2010-02-01 12:35:57
 
 Same as previous, except for SageNB 0.6.  Apply just one of these.  sagenb repo.
 
@@ -258,7 +258,7 @@ archive/issue_comments_068809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7911#issuecomment-68809",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -356,7 +356,7 @@ archive/issue_comments_068812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7911#issuecomment-68812",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -369,16 +369,16 @@ Make `scilab.eval` accept extra non-keyword arguments.  **sage** repository.
 archive/issue_comments_068813.json:
 ```json
 {
-    "body": "Attachment [trac_7911-sage_scilab.patch](tarball://root/attachments/some-uuid/ticket7911/trac_7911-sage_scilab.patch) by mpatel created at 2010-02-02 20:57:22\n\nWe may need to update the Scilab interface (and its `optional` doctests).  I've posted a [attachment:trac_7911-sage_scilab.patch workaround patch] to the main Sage library.  I'm not sure it's the best way to proceed --- we should get some expert input ---  but it seems to work.  Let me know what happens.\n\nTo apply the patch:\n\n```\ncd $SAGE_ROOT/devel/sage/\nhg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7911/trac_7911-sage_scilab.patch\nhg qpush\nsage -b    # This rebuilds the updated files.\n```\n",
+    "body": "Attachment [trac_7911-sage_scilab.patch](tarball://root/attachments/some-uuid/ticket7911/trac_7911-sage_scilab.patch) by @qed777 created at 2010-02-02 20:57:22\n\nWe may need to update the Scilab interface (and its `optional` doctests).  I've posted a [attachment:trac_7911-sage_scilab.patch workaround patch] to the main Sage library.  I'm not sure it's the best way to proceed --- we should get some expert input ---  but it seems to work.  Let me know what happens.\n\nTo apply the patch:\n\n```\ncd $SAGE_ROOT/devel/sage/\nhg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7911/trac_7911-sage_scilab.patch\nhg qpush\nsage -b    # This rebuilds the updated files.\n```\n",
     "created_at": "2010-02-02T20:57:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7911#issuecomment-68813",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7911-sage_scilab.patch](tarball://root/attachments/some-uuid/ticket7911/trac_7911-sage_scilab.patch) by mpatel created at 2010-02-02 20:57:22
+Attachment [trac_7911-sage_scilab.patch](tarball://root/attachments/some-uuid/ticket7911/trac_7911-sage_scilab.patch) by @qed777 created at 2010-02-02 20:57:22
 
 We may need to update the Scilab interface (and its `optional` doctests).  I've posted a [attachment:trac_7911-sage_scilab.patch workaround patch] to the main Sage library.  I'm not sure it's the best way to proceed --- we should get some expert input ---  but it seems to work.  Let me know what happens.
 
@@ -466,7 +466,7 @@ archive/issue_comments_068815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7911#issuecomment-68815",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -583,7 +583,7 @@ archive/issue_comments_068817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7911#issuecomment-68817",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -630,7 +630,7 @@ archive/issue_comments_068819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7911#issuecomment-68819",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -682,7 +682,7 @@ archive/issue_comments_068821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7911#issuecomment-68821",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -776,7 +776,7 @@ archive/issue_comments_068823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7911#issuecomment-68823",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -794,7 +794,7 @@ archive/issue_comments_068824.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7911#issuecomment-68824",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -823,7 +823,7 @@ archive/issue_comments_068825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7911#issuecomment-68825",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -859,7 +859,7 @@ archive/issue_comments_068827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7911#issuecomment-68827",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -872,16 +872,16 @@ Also fix doctests.  Replaces previous **sage** repository patch.
 archive/issue_comments_068828.json:
 ```json
 {
-    "body": "Attachment [trac_7911-sage_scilab.2.patch](tarball://root/attachments/some-uuid/ticket7911/trac_7911-sage_scilab.2.patch) by mpatel created at 2010-02-15 22:29:39\n\nV2 of the sage repository patch should fix the failed doctests.  (I decided not to create a new ticket.)  It seems that parts of the Sage library have changed significantly since we last updated the Scilab interface.  It would be great to get feedback from an interface expert!\n\nI'm changing this ticket's component to 'interfaces.'",
+    "body": "Attachment [trac_7911-sage_scilab.2.patch](tarball://root/attachments/some-uuid/ticket7911/trac_7911-sage_scilab.2.patch) by @qed777 created at 2010-02-15 22:29:39\n\nV2 of the sage repository patch should fix the failed doctests.  (I decided not to create a new ticket.)  It seems that parts of the Sage library have changed significantly since we last updated the Scilab interface.  It would be great to get feedback from an interface expert!\n\nI'm changing this ticket's component to 'interfaces.'",
     "created_at": "2010-02-15T22:29:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7911#issuecomment-68828",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7911-sage_scilab.2.patch](tarball://root/attachments/some-uuid/ticket7911/trac_7911-sage_scilab.2.patch) by mpatel created at 2010-02-15 22:29:39
+Attachment [trac_7911-sage_scilab.2.patch](tarball://root/attachments/some-uuid/ticket7911/trac_7911-sage_scilab.2.patch) by @qed777 created at 2010-02-15 22:29:39
 
 V2 of the sage repository patch should fix the failed doctests.  (I decided not to create a new ticket.)  It seems that parts of the Sage library have changed significantly since we last updated the Scilab interface.  It would be great to get feedback from an interface expert!
 
@@ -899,7 +899,7 @@ archive/issue_comments_068829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7911#issuecomment-68829",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -917,7 +917,7 @@ archive/issue_comments_068830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7911#issuecomment-68830",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1019,7 +1019,7 @@ archive/issue_comments_068833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7911#issuecomment-68833",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1073,7 +1073,7 @@ archive/issue_comments_068836.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7911#issuecomment-68836",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

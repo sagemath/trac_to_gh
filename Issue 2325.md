@@ -3,7 +3,7 @@
 archive/issues_002325.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  ncalexan\n\nKeywords: p-adic extension crash segfault ntl\n\n\n```\nsage: F = list(Qp(19)['x'](cyclotomic_polynomial(5)).factor())[0][0]\nsage: L = Qp(19).extension(F, names='a')\nfatal error:\n   internal error: can't grow this _ntl_gbigint\nexit...\n/Users/ncalexan/sage-2.10.2.alpha0/local/bin/sage-sage: line 220: 21707 Abort trap              sage-ipython -c \"$SAGE_STARTUP_COMMAND;\" \"$@\"\n\nProcess SAGE exited abnormally with code 134\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2325\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nKeywords: p-adic extension crash segfault ntl\n\n\n```\nsage: F = list(Qp(19)['x'](cyclotomic_polynomial(5)).factor())[0][0]\nsage: L = Qp(19).extension(F, names='a')\nfatal error:\n   internal error: can't grow this _ntl_gbigint\nexit...\n/Users/ncalexan/sage-2.10.2.alpha0/local/bin/sage-sage: line 220: 21707 Abort trap              sage-ipython -c \"$SAGE_STARTUP_COMMAND;\" \"$@\"\n\nProcess SAGE exited abnormally with code 134\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2325\n\n",
     "created_at": "2008-02-26T23:05:17Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_002325.json:
     "title": "segfault in p-adic extension() method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2325",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  ncalexan
+CC:  @ncalexan
 
 Keywords: p-adic extension crash segfault ntl
 
@@ -94,7 +94,7 @@ archive/issue_comments_015468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2325#issuecomment-15468",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_015469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2325#issuecomment-15469",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_015471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2325#issuecomment-15471",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_015472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2325#issuecomment-15472",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_015473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2325#issuecomment-15473",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_015474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2325#issuecomment-15474",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_015475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2325#issuecomment-15475",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_015476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2325#issuecomment-15476",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -273,16 +273,16 @@ The fix for 2928 fixes this as well.
 archive/issue_comments_015477.json:
 ```json
 {
-    "body": "Attachment [9596.patch](tarball://root/attachments/some-uuid/ticket2325/9596.patch) by kedlaya created at 2008-04-21 19:06:52",
+    "body": "Attachment [9596.patch](tarball://root/attachments/some-uuid/ticket2325/9596.patch) by @kedlaya created at 2008-04-21 19:06:52",
     "created_at": "2008-04-21T19:06:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2325#issuecomment-15477",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
-Attachment [9596.patch](tarball://root/attachments/some-uuid/ticket2325/9596.patch) by kedlaya created at 2008-04-21 19:06:52
+Attachment [9596.patch](tarball://root/attachments/some-uuid/ticket2325/9596.patch) by @kedlaya created at 2008-04-21 19:06:52
 
 
 
@@ -296,7 +296,7 @@ archive/issue_comments_015478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2325#issuecomment-15478",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 

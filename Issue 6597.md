@@ -3,7 +3,7 @@
 archive/issues_006597.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nCC:  sage-combinat cwitty saliola\n\nKeywords: doctest, SetMorphism, pickling\n\nThis patch raises SetMorphism to 100% doctest, and implements equality and pickling.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6597\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  sage-combinat cwitty @saliola\n\nKeywords: doctest, SetMorphism, pickling\n\nThis patch raises SetMorphism to 100% doctest, and implements equality and pickling.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6597\n\n",
     "created_at": "2009-07-23T08:51:13Z",
     "labels": [
         "coercion",
@@ -14,12 +14,12 @@ archive/issues_006597.json:
     "title": "[with patch, needs review] SetMorphism: 100% doctest + equality + pickling",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6597",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
-CC:  sage-combinat cwitty saliola
+CC:  sage-combinat cwitty @saliola
 
 Keywords: doctest, SetMorphism, pickling
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6597
 archive/issue_comments_054009.json:
 ```json
 {
-    "body": "Changing assignee from robertwb to nthiery.",
+    "body": "Changing assignee from @robertwb to @nthiery.",
     "created_at": "2009-09-02T15:12:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6597#issuecomment-54009",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Changing assignee from robertwb to nthiery.
+Changing assignee from @robertwb to @nthiery.
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_054010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6597#issuecomment-54010",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -72,16 +72,16 @@ Changing status from new to assigned.
 archive/issue_comments_054011.json:
 ```json
 {
-    "body": "Attachment [trac_6597_set_morphism_doc_pickling.patch](tarball://root/attachments/some-uuid/ticket6597/trac_6597_set_morphism_doc_pickling.patch) by nthiery created at 2009-09-02 15:17:04",
+    "body": "Attachment [trac_6597_set_morphism_doc_pickling.patch](tarball://root/attachments/some-uuid/ticket6597/trac_6597_set_morphism_doc_pickling.patch) by @nthiery created at 2009-09-02 15:17:04",
     "created_at": "2009-09-02T15:17:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6597#issuecomment-54011",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_6597_set_morphism_doc_pickling.patch](tarball://root/attachments/some-uuid/ticket6597/trac_6597_set_morphism_doc_pickling.patch) by nthiery created at 2009-09-02 15:17:04
+Attachment [trac_6597_set_morphism_doc_pickling.patch](tarball://root/attachments/some-uuid/ticket6597/trac_6597_set_morphism_doc_pickling.patch) by @nthiery created at 2009-09-02 15:17:04
 
 
 
@@ -95,7 +95,7 @@ archive/issue_comments_054012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6597#issuecomment-54012",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_054013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6597#issuecomment-54013",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

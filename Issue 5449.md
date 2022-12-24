@@ -3,7 +3,7 @@
 archive/issues_005449.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat\n\nWhen the elements of a parent do not have unique representation, it can be desirable to store the cache of (some of) the methods in the parent rather than in the element.\n\nComments, suggestions?\n\n`@`cached_in_parent_method ?\n\nI'll write a quick patch in sage-combinat\n\nIssue created by migration from https://trac.sagemath.org/ticket/5449\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nWhen the elements of a parent do not have unique representation, it can be desirable to store the cache of (some of) the methods in the parent rather than in the element.\n\nComments, suggestions?\n\n`@`cached_in_parent_method ?\n\nI'll write a quick patch in sage-combinat\n\nIssue created by migration from https://trac.sagemath.org/ticket/5449\n\n",
     "created_at": "2009-03-06T15:57:38Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_005449.json:
     "title": "Implement @cache_method with cache stored in the parent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5449",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
 CC:  sage-combinat
 
@@ -45,7 +45,7 @@ archive/issue_comments_042188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5449#issuecomment-42188",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -58,16 +58,16 @@ Changing keywords from "" to "cached_method, cache".
 archive/issue_comments_042189.json:
 ```json
 {
-    "body": "Attachment [cached_in_parent_method-5449-submitted.patch](tarball://root/attachments/some-uuid/ticket5449/cached_in_parent_method-5449-submitted.patch) by nthiery created at 2009-05-02 00:41:31",
+    "body": "Attachment [cached_in_parent_method-5449-submitted.patch](tarball://root/attachments/some-uuid/ticket5449/cached_in_parent_method-5449-submitted.patch) by @nthiery created at 2009-05-02 00:41:31",
     "created_at": "2009-05-02T00:41:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5449#issuecomment-42189",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [cached_in_parent_method-5449-submitted.patch](tarball://root/attachments/some-uuid/ticket5449/cached_in_parent_method-5449-submitted.patch) by nthiery created at 2009-05-02 00:41:31
+Attachment [cached_in_parent_method-5449-submitted.patch](tarball://root/attachments/some-uuid/ticket5449/cached_in_parent_method-5449-submitted.patch) by @nthiery created at 2009-05-02 00:41:31
 
 
 
@@ -81,7 +81,7 @@ archive/issue_comments_042190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5449#issuecomment-42190",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_042191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5449#issuecomment-42191",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

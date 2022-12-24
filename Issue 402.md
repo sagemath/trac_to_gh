@@ -14,7 +14,7 @@ archive/issues_000402.json:
     "title": "%slide directive produces segfault in dvipng",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/402",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 Assignee: boothby
@@ -52,7 +52,7 @@ archive/issue_comments_001977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/402#issuecomment-1977",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

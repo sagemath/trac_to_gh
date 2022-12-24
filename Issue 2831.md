@@ -3,7 +3,7 @@
 archive/issues_002831.json:
 ```json
 {
-    "body": "Assignee: was\n\nIn the notebook of sage-2.11:\n\ntime plot(1.0 - x * floor(1/x), (x,0.00001,1.0)\n\nCPU time: 143.77 s,  Wall time: 1660.39 s\n\nwith a correct image.\n\nMaple is almost immediate.\n\n\nEven worse:\n\ntime plot(1.0 - x * floor(1/x), (x, 0.0, 1.0), plot_points=1000)\n\n        \t\nCPU time: 244.71 s,  Wall time: 5155.23 s\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/2831\n\n",
+    "body": "Assignee: @williamstein\n\nIn the notebook of sage-2.11:\n\ntime plot(1.0 - x * floor(1/x), (x,0.00001,1.0)\n\nCPU time: 143.77 s,  Wall time: 1660.39 s\n\nwith a correct image.\n\nMaple is almost immediate.\n\n\nEven worse:\n\ntime plot(1.0 - x * floor(1/x), (x, 0.0, 1.0), plot_points=1000)\n\n        \t\nCPU time: 244.71 s,  Wall time: 5155.23 s\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/2831\n\n",
     "created_at": "2008-04-06T16:40:19Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_002831.json:
     "title": "plot taking a very, very long time",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2831",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 In the notebook of sage-2.11:
 
@@ -78,7 +78,7 @@ archive/issue_comments_019429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2831#issuecomment-19429",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -101,16 +101,16 @@ CPU times: user 0.03 s, sys: 0.01 s, total: 0.04 s
 archive/issue_comments_019430.json:
 ```json
 {
-    "body": "Attachment [sage-2831.patch](tarball://root/attachments/some-uuid/ticket2831/sage-2831.patch) by was created at 2008-04-06 19:35:19",
+    "body": "Attachment [sage-2831.patch](tarball://root/attachments/some-uuid/ticket2831/sage-2831.patch) by @williamstein created at 2008-04-06 19:35:19",
     "created_at": "2008-04-06T19:35:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2831#issuecomment-19430",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2831.patch](tarball://root/attachments/some-uuid/ticket2831/sage-2831.patch) by was created at 2008-04-06 19:35:19
+Attachment [sage-2831.patch](tarball://root/attachments/some-uuid/ticket2831/sage-2831.patch) by @williamstein created at 2008-04-06 19:35:19
 
 
 
@@ -124,7 +124,7 @@ archive/issue_comments_019431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2831#issuecomment-19431",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -231,16 +231,16 @@ Michael
 archive/issue_comments_019435.json:
 ```json
 {
-    "body": "Attachment [sage-2831_part2.patch](tarball://root/attachments/some-uuid/ticket2831/sage-2831_part2.patch) by jsp created at 2008-04-06 21:31:14\n\nReplying to [comment:6 mabshoff]:\n> Ok, somebody didn't doctest properly:\n\nYou may call me names is you like :-)!\n\nJaap",
+    "body": "Attachment [sage-2831_part2.patch](tarball://root/attachments/some-uuid/ticket2831/sage-2831_part2.patch) by @jaapspies created at 2008-04-06 21:31:14\n\nReplying to [comment:6 mabshoff]:\n> Ok, somebody didn't doctest properly:\n\nYou may call me names is you like :-)!\n\nJaap",
     "created_at": "2008-04-06T21:31:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2831#issuecomment-19435",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [sage-2831_part2.patch](tarball://root/attachments/some-uuid/ticket2831/sage-2831_part2.patch) by jsp created at 2008-04-06 21:31:14
+Attachment [sage-2831_part2.patch](tarball://root/attachments/some-uuid/ticket2831/sage-2831_part2.patch) by @jaapspies created at 2008-04-06 21:31:14
 
 Replying to [comment:6 mabshoff]:
 > Ok, somebody didn't doctest properly:

@@ -3,7 +3,7 @@
 archive/issues_004110.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  malb\n\nThis is in sage-3.1.2.rc1.\n\nIf I do\n\n```\nsage: L = [random_matrix(GF(2), 20, 20) for _ in xrange(10^5)]\n```\n\nthen my process is here:\n\n```\n  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND          \n15889 rlmill    25   0  446m 131m  17m S    0  0.2   0:06.30 sage-ipython\n```\n\n\nThen I do the following:\n\n```\nsage: save(L, 'crap')\nsage: del L\n```\n\n\nAnd my process is here:\n\n```\n  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND          \n15889 rlmill    16   0 1471m 1.1g  17m S    0  1.8   1:02.37 sage-ipython\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4110\n\n",
+    "body": "Assignee: tbd\n\nCC:  @malb\n\nThis is in sage-3.1.2.rc1.\n\nIf I do\n\n```\nsage: L = [random_matrix(GF(2), 20, 20) for _ in xrange(10^5)]\n```\n\nthen my process is here:\n\n```\n  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND          \n15889 rlmill    25   0  446m 131m  17m S    0  0.2   0:06.30 sage-ipython\n```\n\n\nThen I do the following:\n\n```\nsage: save(L, 'crap')\nsage: del L\n```\n\n\nAnd my process is here:\n\n```\n  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND          \n15889 rlmill    16   0 1471m 1.1g  17m S    0  1.8   1:02.37 sage-ipython\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4110\n\n",
     "created_at": "2008-09-13T19:00:31Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_004110.json:
     "title": "Memory leak in saving matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4110",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: tbd
 
-CC:  malb
+CC:  @malb
 
 This is in sage-3.1.2.rc1.
 
@@ -69,7 +69,7 @@ archive/issue_comments_029755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4110",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4110#issuecomment-29755",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_029756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4110",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4110#issuecomment-29756",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

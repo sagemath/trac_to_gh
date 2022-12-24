@@ -3,7 +3,7 @@
 archive/issues_006262.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  was\n\nEven with no worksheets active, with sage-4.0.1 the server takes a long time to quit after pressing ctrl-C.  This did not use to be the case, and is extremely annoying.  It consistently happens to me on an OS 10.5 intel mac.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/6262\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein\n\nEven with no worksheets active, with sage-4.0.1 the server takes a long time to quit after pressing ctrl-C.  This did not use to be the case, and is extremely annoying.  It consistently happens to me on an OS 10.5 intel mac.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/6262\n\n",
     "created_at": "2009-06-11T19:34:49Z",
     "labels": [
         "notebook",
@@ -18,7 +18,7 @@ archive/issues_006262.json:
 ```
 Assignee: boothby
 
-CC:  was
+CC:  @williamstein
 
 Even with no worksheets active, with sage-4.0.1 the server takes a long time to quit after pressing ctrl-C.  This did not use to be the case, and is extremely annoying.  It consistently happens to me on an OS 10.5 intel mac.  
 
@@ -92,7 +92,7 @@ archive/issue_comments_050001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6262",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6262#issuecomment-50001",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_050003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6262",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6262#issuecomment-50003",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_050004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6262",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6262#issuecomment-50004",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_050005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6262",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6262#issuecomment-50005",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

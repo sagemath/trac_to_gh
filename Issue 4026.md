@@ -14,7 +14,7 @@ archive/issues_004026.json:
     "title": "[with spkg, needs review] Move Macaulay2  to latest upstream",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4026",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 Assignee: mabshoff
@@ -41,7 +41,7 @@ archive/issue_comments_029034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4026",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4026#issuecomment-29034",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_029035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4026",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4026#issuecomment-29035",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_029036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4026",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4026#issuecomment-29036",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

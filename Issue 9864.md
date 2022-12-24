@@ -3,7 +3,7 @@
 archive/issues_009864.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  ddrake mvngu alexanderdreyer\n\nReported by Dan Drake on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/23fd468a4d406389/56ad02c448380af9?#56ad02c448380af9) and [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/a865f2fa728335c0/2fbf4ba1859e76bb#2fbf4ba1859e76bb):\n\n```\nTwo builds of 4.3.4 are not doctesting properly for me; both are failing\nthe doctest for free_module.py because Singular won't start. The\nfailures always end with \"TypeError: Unable to start singular because\nthe command 'Singular -t --ticks-per-sec 1000' failed.\"\n\nThis happens on two virtual machines: one running Ubuntu Hardy, the\nother running Ubuntu Lucid. I've tried rebuilding Singular, but it\ndidn't work in either case. I tried a couple of the doctests manually,\nand they seemed to work, and I can start Singular using the above\ncommand with no troubles.\n\nI've built 4.3.4 on two different machines (not virtual machines) and\neverything works fine. I'm attaching a log of the failed doctest. Any\nideas? \n```\n\nTracebacks:\n\n```\nsage -t  \"devel/sage/sage/modules/free_module.py\"           \n**********************************************************************\nFile \"/home/alex/sage-4.3.4/devel/sage/sage/modules/free_module.py\", line 2533:\n    sage: W = M.submodule([x*B[0], 2*B[1]- x*B[2]]); W\nException raised:\n    Traceback (most recent call last):\n      File \"/home/alex/sage-4.3.4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/alex/sage-4.3.4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/alex/sage-4.3.4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_69[11]>\", line 1, in <module>\n        W = M.submodule([x*B[Integer(0)], Integer(2)*B[Integer(1)]- x*B[Integer(2)]]); W###line 2533:\n    sage: W = M.submodule([x*B[0], 2*B[1]- x*B[2]]); W\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/modules/free_module.py\", line 2545, in submodule\n        V = self.span(gens, check=check, already_echelonized=already_echelonized)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/modules/free_module.py\", line 2461, in span\n        self.ambient_module(), gens, check=check, already_echelonized=already_echelonized)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/modules/free_module.py\", line 5446, in __init__\n        echelonize=True, already_echelonized=already_echelonized)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/modules/free_module.py\", line 4553, in __init__\n        basis = self._echelonized_basis(ambient, basis)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/modules/free_module.py\", line 4666, in _echelonized_basis\n        d = self._denominator(basis)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/modules/free_module.py\", line 4774, in _denominator\n        d = sage.rings.integer.Integer(B[0].denominator())\n      File \"free_module_element.pyx\", line 958, in sage.modules.free_module_element.FreeModuleElement.denominator (sage/modules/free_module_element.c:8071)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/rings/polynomial/polynomial_singular_interface.py\", line 343, in lcm\n        return lcm_func(self, singular, have_ring)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/rings/polynomial/polynomial_singular_interface.py\", line 451, in lcm_func\n        lcm = self._singular_(have_ring=have_ring).lcm(right._singular_(have_ring=have_ring))\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/rings/polynomial/polynomial_singular_interface.py\", line 339, in _singular_\n        return _singular_func(self, singular, have_ring)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/rings/polynomial/polynomial_singular_interface.py\", line 383, in _singular_func\n        self.parent()._singular_(singular).set_ring() #this is expensive\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/rings/polynomial/polynomial_singular_interface.py\", line 196, in _singular_\n        return self._singular_init_(singular)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/rings/polynomial/polynomial_singular_interface.py\", line 241, in _singular_init_\n        self.__singular = singular.ring(self.characteristic(), _vars, order=order, check=False)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/interfaces/singular.py\", line 897, in ring\n        R = self('%s,%s,%s'%(char, vars, order), 'ring')\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/interfaces/singular.py\", line 660, in __call__\n        return SingularElement(self, type, x, False)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/interfaces/singular.py\", line 1109, in __init__\n        raise TypeError, x\n    TypeError: Unable to start singular because the command 'Singular -t --ticks-per-sec 1000' failed.\n\n**********************************************************************\nFile \"/home/alex/sage-4.3.4/devel/sage/sage/modules/free_module.py\", line 2538:\n    sage: W.ambient_module()\nExpected:\n    Ambient free module of rank 3 over the principal ideal domain Univariate Polynomial Ring in x over Rational Field\nGot:\n    Ambient free module of rank 3 over the principal ideal domain Integer Ring\n**********************************************************************\nFile \"/home/alex/sage-4.3.4/devel/sage/sage/modules/free_module.py\", line 2681:\n    sage: W = M.submodule_with_basis([x*B[0], 2*B[0]- x*B[2]]); W\nException raised:\n    Traceback (most recent call last):\n      File \"/home/alex/sage-4.3.4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/alex/sage-4.3.4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/alex/sage-4.3.4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_71[15]>\", line 1, in <module>\n        W = M.submodule_with_basis([x*B[Integer(0)], Integer(2)*B[Integer(0)]- x*B[Integer(2)]]); W###line 2681:\n    sage: W = M.submodule_with_basis([x*B[0], 2*B[0]- x*B[2]]); W\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/modules/free_module.py\", line 2687, in submodule_with_basis\n        V = self.span_of_basis(basis=basis, check=check, already_echelonized=already_echelonized)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/modules/free_module.py\", line 2602, in span_of_basis\n        already_echelonized=already_echelonized)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/modules/free_module.py\", line 4577, in __init__\n        w = self._echelonized_basis(ambient, basis)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/modules/free_module.py\", line 4666, in _echelonized_basis\n        d = self._denominator(basis)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/modules/free_module.py\", line 4774, in _denominator\n        d = sage.rings.integer.Integer(B[0].denominator())\n      File \"free_module_element.pyx\", line 958, in sage.modules.free_module_element.FreeModuleElement.denominator (sage/modules/free_module_element.c:8071)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/rings/polynomial/polynomial_singular_interface.py\", line 343, in lcm\n        return lcm_func(self, singular, have_ring)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/rings/polynomial/polynomial_singular_interface.py\", line 451, in lcm_func\n        lcm = self._singular_(have_ring=have_ring).lcm(right._singular_(have_ring=have_ring))\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/rings/polynomial/polynomial_singular_interface.py\", line 339, in _singular_\n        return _singular_func(self, singular, have_ring)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/rings/polynomial/polynomial_singular_interface.py\", line 383, in _singular_func\n        self.parent()._singular_(singular).set_ring() #this is expensive\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/rings/polynomial/polynomial_singular_interface.py\", line 196, in _singular_\n        return self._singular_init_(singular)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/rings/polynomial/polynomial_singular_interface.py\", line 241, in _singular_init_\n        self.__singular = singular.ring(self.characteristic(), _vars, order=order, check=False)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/interfaces/singular.py\", line 897, in ring\n        R = self('%s,%s,%s'%(char, vars, order), 'ring')\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/interfaces/singular.py\", line 660, in __call__\n        return SingularElement(self, type, x, False)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/interfaces/singular.py\", line 1109, in __init__\n        raise TypeError, x\n    TypeError: Unable to start singular because the command 'Singular -t --ticks-per-sec 1000' failed.\n\n**********************************************************************\n2 items had failures:\n   2 of  13 in __main__.example_69\n   1 of  16 in __main__.example_71\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /home/alex/.sage//tmp/.doctest_free_module.py\n\t [13.0 s]\n```\n\n\nMinh Nguyen reports seeing the same error a Debian 5.0 machine (gcc100.fsffrance.org, AMD Opteron(tm) Processor 252 `@` 2647.708 MHz).  [Here](http://wiki.sagemath.org/devel/BuildFarm/sage-4.5.3?action=AttachFile&do=get&target=gcc100.fsffrance.log.bz2) is the test log.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9865\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @dandrake mvngu alexanderdreyer\n\nReported by Dan Drake on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/23fd468a4d406389/56ad02c448380af9?#56ad02c448380af9) and [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/a865f2fa728335c0/2fbf4ba1859e76bb#2fbf4ba1859e76bb):\n\n```\nTwo builds of 4.3.4 are not doctesting properly for me; both are failing\nthe doctest for free_module.py because Singular won't start. The\nfailures always end with \"TypeError: Unable to start singular because\nthe command 'Singular -t --ticks-per-sec 1000' failed.\"\n\nThis happens on two virtual machines: one running Ubuntu Hardy, the\nother running Ubuntu Lucid. I've tried rebuilding Singular, but it\ndidn't work in either case. I tried a couple of the doctests manually,\nand they seemed to work, and I can start Singular using the above\ncommand with no troubles.\n\nI've built 4.3.4 on two different machines (not virtual machines) and\neverything works fine. I'm attaching a log of the failed doctest. Any\nideas? \n```\n\nTracebacks:\n\n```\nsage -t  \"devel/sage/sage/modules/free_module.py\"           \n**********************************************************************\nFile \"/home/alex/sage-4.3.4/devel/sage/sage/modules/free_module.py\", line 2533:\n    sage: W = M.submodule([x*B[0], 2*B[1]- x*B[2]]); W\nException raised:\n    Traceback (most recent call last):\n      File \"/home/alex/sage-4.3.4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/alex/sage-4.3.4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/alex/sage-4.3.4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_69[11]>\", line 1, in <module>\n        W = M.submodule([x*B[Integer(0)], Integer(2)*B[Integer(1)]- x*B[Integer(2)]]); W###line 2533:\n    sage: W = M.submodule([x*B[0], 2*B[1]- x*B[2]]); W\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/modules/free_module.py\", line 2545, in submodule\n        V = self.span(gens, check=check, already_echelonized=already_echelonized)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/modules/free_module.py\", line 2461, in span\n        self.ambient_module(), gens, check=check, already_echelonized=already_echelonized)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/modules/free_module.py\", line 5446, in __init__\n        echelonize=True, already_echelonized=already_echelonized)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/modules/free_module.py\", line 4553, in __init__\n        basis = self._echelonized_basis(ambient, basis)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/modules/free_module.py\", line 4666, in _echelonized_basis\n        d = self._denominator(basis)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/modules/free_module.py\", line 4774, in _denominator\n        d = sage.rings.integer.Integer(B[0].denominator())\n      File \"free_module_element.pyx\", line 958, in sage.modules.free_module_element.FreeModuleElement.denominator (sage/modules/free_module_element.c:8071)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/rings/polynomial/polynomial_singular_interface.py\", line 343, in lcm\n        return lcm_func(self, singular, have_ring)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/rings/polynomial/polynomial_singular_interface.py\", line 451, in lcm_func\n        lcm = self._singular_(have_ring=have_ring).lcm(right._singular_(have_ring=have_ring))\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/rings/polynomial/polynomial_singular_interface.py\", line 339, in _singular_\n        return _singular_func(self, singular, have_ring)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/rings/polynomial/polynomial_singular_interface.py\", line 383, in _singular_func\n        self.parent()._singular_(singular).set_ring() #this is expensive\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/rings/polynomial/polynomial_singular_interface.py\", line 196, in _singular_\n        return self._singular_init_(singular)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/rings/polynomial/polynomial_singular_interface.py\", line 241, in _singular_init_\n        self.__singular = singular.ring(self.characteristic(), _vars, order=order, check=False)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/interfaces/singular.py\", line 897, in ring\n        R = self('%s,%s,%s'%(char, vars, order), 'ring')\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/interfaces/singular.py\", line 660, in __call__\n        return SingularElement(self, type, x, False)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/interfaces/singular.py\", line 1109, in __init__\n        raise TypeError, x\n    TypeError: Unable to start singular because the command 'Singular -t --ticks-per-sec 1000' failed.\n\n**********************************************************************\nFile \"/home/alex/sage-4.3.4/devel/sage/sage/modules/free_module.py\", line 2538:\n    sage: W.ambient_module()\nExpected:\n    Ambient free module of rank 3 over the principal ideal domain Univariate Polynomial Ring in x over Rational Field\nGot:\n    Ambient free module of rank 3 over the principal ideal domain Integer Ring\n**********************************************************************\nFile \"/home/alex/sage-4.3.4/devel/sage/sage/modules/free_module.py\", line 2681:\n    sage: W = M.submodule_with_basis([x*B[0], 2*B[0]- x*B[2]]); W\nException raised:\n    Traceback (most recent call last):\n      File \"/home/alex/sage-4.3.4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/alex/sage-4.3.4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/alex/sage-4.3.4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_71[15]>\", line 1, in <module>\n        W = M.submodule_with_basis([x*B[Integer(0)], Integer(2)*B[Integer(0)]- x*B[Integer(2)]]); W###line 2681:\n    sage: W = M.submodule_with_basis([x*B[0], 2*B[0]- x*B[2]]); W\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/modules/free_module.py\", line 2687, in submodule_with_basis\n        V = self.span_of_basis(basis=basis, check=check, already_echelonized=already_echelonized)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/modules/free_module.py\", line 2602, in span_of_basis\n        already_echelonized=already_echelonized)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/modules/free_module.py\", line 4577, in __init__\n        w = self._echelonized_basis(ambient, basis)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/modules/free_module.py\", line 4666, in _echelonized_basis\n        d = self._denominator(basis)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/modules/free_module.py\", line 4774, in _denominator\n        d = sage.rings.integer.Integer(B[0].denominator())\n      File \"free_module_element.pyx\", line 958, in sage.modules.free_module_element.FreeModuleElement.denominator (sage/modules/free_module_element.c:8071)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/rings/polynomial/polynomial_singular_interface.py\", line 343, in lcm\n        return lcm_func(self, singular, have_ring)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/rings/polynomial/polynomial_singular_interface.py\", line 451, in lcm_func\n        lcm = self._singular_(have_ring=have_ring).lcm(right._singular_(have_ring=have_ring))\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/rings/polynomial/polynomial_singular_interface.py\", line 339, in _singular_\n        return _singular_func(self, singular, have_ring)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/rings/polynomial/polynomial_singular_interface.py\", line 383, in _singular_func\n        self.parent()._singular_(singular).set_ring() #this is expensive\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/rings/polynomial/polynomial_singular_interface.py\", line 196, in _singular_\n        return self._singular_init_(singular)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/rings/polynomial/polynomial_singular_interface.py\", line 241, in _singular_init_\n        self.__singular = singular.ring(self.characteristic(), _vars, order=order, check=False)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/interfaces/singular.py\", line 897, in ring\n        R = self('%s,%s,%s'%(char, vars, order), 'ring')\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/interfaces/singular.py\", line 660, in __call__\n        return SingularElement(self, type, x, False)\n      File \"/home/alex/sage-4.3.4/local/lib/python/site-packages/sage/interfaces/singular.py\", line 1109, in __init__\n        raise TypeError, x\n    TypeError: Unable to start singular because the command 'Singular -t --ticks-per-sec 1000' failed.\n\n**********************************************************************\n2 items had failures:\n   2 of  13 in __main__.example_69\n   1 of  16 in __main__.example_71\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /home/alex/.sage//tmp/.doctest_free_module.py\n\t [13.0 s]\n```\n\n\nMinh Nguyen reports seeing the same error a Debian 5.0 machine (gcc100.fsffrance.org, AMD Opteron(tm) Processor 252 `@` 2647.708 MHz).  [Here](http://wiki.sagemath.org/devel/BuildFarm/sage-4.5.3?action=AttachFile&do=get&target=gcc100.fsffrance.log.bz2) is the test log.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9865\n\n",
     "created_at": "2010-09-07T07:08:54Z",
     "labels": [
         "doctest",
@@ -14,12 +14,12 @@ archive/issues_009864.json:
     "title": "Unable to start singular because the command 'Singular -t --ticks-per-sec 1000' failed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9864",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: mvngu
 
-CC:  ddrake mvngu alexanderdreyer
+CC:  @dandrake mvngu alexanderdreyer
 
 Reported by Dan Drake on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/23fd468a4d406389/56ad02c448380af9?#56ad02c448380af9) and [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/a865f2fa728335c0/2fbf4ba1859e76bb#2fbf4ba1859e76bb):
 
@@ -171,7 +171,7 @@ archive/issue_comments_097451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9864#issuecomment-97451",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_097452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9864#issuecomment-97452",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_097454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9864#issuecomment-97454",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -312,7 +312,7 @@ archive/issue_comments_097455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9864#issuecomment-97455",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -330,7 +330,7 @@ archive/issue_comments_097456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9864#issuecomment-97456",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -358,7 +358,7 @@ archive/issue_comments_097457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9864#issuecomment-97457",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -378,7 +378,7 @@ archive/issue_comments_097458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9864#issuecomment-97458",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -396,7 +396,7 @@ archive/issue_comments_097459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9864#issuecomment-97459",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -541,7 +541,7 @@ archive/issue_comments_097460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9864#issuecomment-97460",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -561,7 +561,7 @@ archive/issue_comments_097461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9864#issuecomment-97461",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -579,7 +579,7 @@ archive/issue_comments_097462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9864#issuecomment-97462",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -592,16 +592,16 @@ Changing component from doctest to interfaces.
 archive/issue_comments_097463.json:
 ```json
 {
-    "body": "Changing assignee from mvngu to was.",
+    "body": "Changing assignee from mvngu to @williamstein.",
     "created_at": "2013-03-28T23:01:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9864#issuecomment-97463",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Changing assignee from mvngu to was.
+Changing assignee from mvngu to @williamstein.
 
 
 
@@ -615,7 +615,7 @@ archive/issue_comments_097464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9864#issuecomment-97464",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -633,7 +633,7 @@ archive/issue_comments_097465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9864#issuecomment-97465",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -651,7 +651,7 @@ archive/issue_comments_097466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9864#issuecomment-97466",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -669,7 +669,7 @@ archive/issue_comments_097467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9864#issuecomment-97467",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

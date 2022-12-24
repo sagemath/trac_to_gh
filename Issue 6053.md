@@ -50,16 +50,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6053
 archive/issue_comments_048216.json:
 ```json
 {
-    "body": "Attachment [trac-6053-cython-numpy-header.patch](tarball://root/attachments/some-uuid/ticket6053/trac-6053-cython-numpy-header.patch) by jason created at 2009-05-28 07:09:28",
+    "body": "Attachment [trac-6053-cython-numpy-header.patch](tarball://root/attachments/some-uuid/ticket6053/trac-6053-cython-numpy-header.patch) by @jasongrout created at 2009-05-28 07:09:28",
     "created_at": "2009-05-28T07:09:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6053",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6053#issuecomment-48216",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-6053-cython-numpy-header.patch](tarball://root/attachments/some-uuid/ticket6053/trac-6053-cython-numpy-header.patch) by jason created at 2009-05-28 07:09:28
+Attachment [trac-6053-cython-numpy-header.patch](tarball://root/attachments/some-uuid/ticket6053/trac-6053-cython-numpy-header.patch) by @jasongrout created at 2009-05-28 07:09:28
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_048217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6053",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6053#issuecomment-48217",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_048218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6053",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6053#issuecomment-48218",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003752.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nOn Thu, Jul 31, 2008 at 11:20 AM, Peter <> wrote:\n>\n> Hi,\n>\n> I'm trying to use some GAP code in the Sage notebook, and the code has\n> many one-line comments in it (starting with #). I switched the\n> notebook to gap mode (using the dropdown menu) and then noticed that\n> in each cell only commands that appear before the first comment are\n> processed by GAP. The same happens in cells that start with %gap.\n>\n> Can someone perhaps verify this behaviour and/or suggest a fix? (I'm\n> using Sage 3.0.5, and the same behaviour seems to occur on\n> Sagenb.org.)\n\nYes, here's an example of this in the sage notebook text form (I made the triple {'s into double for this ticket): \n\n{{{\nUntitled\nsystem:gap\n\n\n{{id=112|\nPrint(2 + 2); # add numbers\nPrint(3 + 3); # add more numbers\n///\n\n4\n}}\n}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/3752\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nOn Thu, Jul 31, 2008 at 11:20 AM, Peter <> wrote:\n>\n> Hi,\n>\n> I'm trying to use some GAP code in the Sage notebook, and the code has\n> many one-line comments in it (starting with #). I switched the\n> notebook to gap mode (using the dropdown menu) and then noticed that\n> in each cell only commands that appear before the first comment are\n> processed by GAP. The same happens in cells that start with %gap.\n>\n> Can someone perhaps verify this behaviour and/or suggest a fix? (I'm\n> using Sage 3.0.5, and the same behaviour seems to occur on\n> Sagenb.org.)\n\nYes, here's an example of this in the sage notebook text form (I made the triple {'s into double for this ticket): \n\n{{{\nUntitled\nsystem:gap\n\n\n{{id=112|\nPrint(2 + 2); # add numbers\nPrint(3 + 3); # add more numbers\n///\n\n4\n}}\n}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/3752\n\n",
     "created_at": "2008-08-01T01:13:39Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_003752.json:
     "title": "gap.eval -- oddity in parsing multiline input and comments",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3752",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -108,16 +108,16 @@ test();
 archive/issue_comments_026661.json:
 ```json
 {
-    "body": "Attachment [trac_3752.patch](tarball://root/attachments/some-uuid/ticket3752/trac_3752.patch) by mhansen created at 2009-01-23 10:31:30",
+    "body": "Attachment [trac_3752.patch](tarball://root/attachments/some-uuid/ticket3752/trac_3752.patch) by @mwhansen created at 2009-01-23 10:31:30",
     "created_at": "2009-01-23T10:31:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3752",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3752#issuecomment-26661",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3752.patch](tarball://root/attachments/some-uuid/ticket3752/trac_3752.patch) by mhansen created at 2009-01-23 10:31:30
+Attachment [trac_3752.patch](tarball://root/attachments/some-uuid/ticket3752/trac_3752.patch) by @mwhansen created at 2009-01-23 10:31:30
 
 
 
@@ -131,7 +131,7 @@ archive/issue_comments_026662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3752",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3752#issuecomment-26662",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -144,16 +144,16 @@ Changing status from new to assigned.
 archive/issue_comments_026663.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2009-01-23T10:31:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3752",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3752#issuecomment-26663",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -167,7 +167,7 @@ archive/issue_comments_026664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3752",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3752#issuecomment-26664",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009490.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  jhpalmieri justin cremona rlm\n\n## Hardware + software\n* Sun T5240 with two T2+ UltraSPARC processors\n* 2 CPUS = 16 cores = 128 hardware threads \n* 1167 MHz\n* 32 GB RAM\n* Solaris 10 update 7 (5/09)\n* sage-4.5.rc0 with:\n  * A library patch from #7379\n  * An ECL patch from #9187\n* gcc 4.4.1 configured to use the Sun linker and Sun assembler. \n\n## The problem\nJohn Palmieri built Sage and run the long doctests. After inspecting Joh's ptestlong.log, I find the following test fails, even if run from the command line, and with SAGE_TIMEOUT_LONG increased to 10,000 seconds, which ensures there are no timeouts (around 3600 seconds should be sufficient on 't2.math' for SAGE_TIMEOUT_LONG)\n\n\n```\nsage -t -long \"devel/sage/sage/libs/galrep/wrapper.pyx\"     \n\n\n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occurred in Sage.\nThis probably occurred because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n\n\n\t [18.0 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage/sage/libs/galrep/wrapper.pyx\"\nTotal time for all tests: 18.0 seconds\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9490\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri justin @JohnCremona @rlmill\n\n## Hardware + software\n* Sun T5240 with two T2+ UltraSPARC processors\n* 2 CPUS = 16 cores = 128 hardware threads \n* 1167 MHz\n* 32 GB RAM\n* Solaris 10 update 7 (5/09)\n* sage-4.5.rc0 with:\n  * A library patch from #7379\n  * An ECL patch from #9187\n* gcc 4.4.1 configured to use the Sun linker and Sun assembler. \n\n## The problem\nJohn Palmieri built Sage and run the long doctests. After inspecting Joh's ptestlong.log, I find the following test fails, even if run from the command line, and with SAGE_TIMEOUT_LONG increased to 10,000 seconds, which ensures there are no timeouts (around 3600 seconds should be sufficient on 't2.math' for SAGE_TIMEOUT_LONG)\n\n\n```\nsage -t -long \"devel/sage/sage/libs/galrep/wrapper.pyx\"     \n\n\n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occurred in Sage.\nThis probably occurred because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n\n\n\t [18.0 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage/sage/libs/galrep/wrapper.pyx\"\nTotal time for all tests: 18.0 seconds\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9490\n\n",
     "created_at": "2010-07-13T14:18:12Z",
     "labels": [
         "doctest coverage",
@@ -19,7 +19,7 @@ archive/issues_009490.json:
 ```
 Assignee: mvngu
 
-CC:  jhpalmieri justin cremona rlm
+CC:  @jhpalmieri justin @JohnCremona @rlmill
 
 ## Hardware + software
 * Sun T5240 with two T2+ UltraSPARC processors
@@ -97,7 +97,7 @@ archive/issue_comments_091109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9490#issuecomment-91109",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

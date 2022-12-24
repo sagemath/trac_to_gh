@@ -3,7 +3,7 @@
 archive/issues_005602.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mvngu\n\nSee the end of http://groups.google.com/group/sage-support/browse_thread/thread/44971aa416574675\n\nFor reference, here is what MMA does: \n\nhttp://reference.wolfram.com/mathematica/ref/Darker.html\n\nhttp://reference.wolfram.com/mathematica/ref/Lighter.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/5602\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  mvngu\n\nSee the end of http://groups.google.com/group/sage-support/browse_thread/thread/44971aa416574675\n\nFor reference, here is what MMA does: \n\nhttp://reference.wolfram.com/mathematica/ref/Darker.html\n\nhttp://reference.wolfram.com/mathematica/ref/Lighter.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/5602\n\n",
     "created_at": "2009-03-24T21:28:09Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_005602.json:
     "title": "make .lighter() and .darker() methods for Sage Color objects",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5602",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  mvngu
 
@@ -45,7 +45,7 @@ archive/issue_comments_043732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5602#issuecomment-43732",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_043733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5602#issuecomment-43733",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_043734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5602#issuecomment-43734",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

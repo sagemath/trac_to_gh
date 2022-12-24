@@ -3,7 +3,7 @@
 archive/issues_005958.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  john_perry\n\nKeywords: singular, factor\n\nThe parameter should be ignored, but for compatibility it is necessary.\n\nE.g. this should work:\n\n\n```\nsage: R.<x,y> = CC[]\nsage: I = R.ideal(x^2+y^2-1,x*y-1)\nsage: I.variety()\n```\n\n\nbut it raises an except in 3.4.1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5958\n\n",
+    "body": "Assignee: @malb\n\nCC:  @johnperry-math\n\nKeywords: singular, factor\n\nThe parameter should be ignored, but for compatibility it is necessary.\n\nE.g. this should work:\n\n\n```\nsage: R.<x,y> = CC[]\nsage: I = R.ideal(x^2+y^2-1,x*y-1)\nsage: I.variety()\n```\n\n\nbut it raises an except in 3.4.1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5958\n\n",
     "created_at": "2009-05-01T15:09:53Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_005958.json:
     "title": "[with patch, needs work] MPolynomial_polydict.factor() should accept proof parameter",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5958",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  john_perry
+CC:  @johnperry-math
 
 Keywords: singular, factor
 
@@ -53,7 +53,7 @@ archive/issue_comments_047165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47165",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_047166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47166",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -96,16 +96,16 @@ It seems `toy_variety` does not switch to 'lex' when it should?
 archive/issue_comments_047167.json:
 ```json
 {
-    "body": "Attachment [toy_variety_fix.patch](tarball://root/attachments/some-uuid/ticket5958/toy_variety_fix.patch) by malb created at 2009-05-01 15:29:13",
+    "body": "Attachment [toy_variety_fix.patch](tarball://root/attachments/some-uuid/ticket5958/toy_variety_fix.patch) by @malb created at 2009-05-01 15:29:13",
     "created_at": "2009-05-01T15:29:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47167",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [toy_variety_fix.patch](tarball://root/attachments/some-uuid/ticket5958/toy_variety_fix.patch) by malb created at 2009-05-01 15:29:13
+Attachment [toy_variety_fix.patch](tarball://root/attachments/some-uuid/ticket5958/toy_variety_fix.patch) by @malb created at 2009-05-01 15:29:13
 
 
 
@@ -119,7 +119,7 @@ archive/issue_comments_047168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47168",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_047169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47169",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_047171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47171",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -230,16 +230,16 @@ fix typo
 archive/issue_comments_047172.json:
 ```json
 {
-    "body": "Attachment [mpoly_factor_proof.patch](tarball://root/attachments/some-uuid/ticket5958/mpoly_factor_proof.patch) by malb created at 2009-05-07 13:50:45\n\nI fixed the \"proofable\" vs. \"provable\" typo. However, I am a bit clueless how to deal with the numerical noise. The `...` works for most of it but not for `0.49999999999` vs. {{{0.500000000}}. Ideas?",
+    "body": "Attachment [mpoly_factor_proof.patch](tarball://root/attachments/some-uuid/ticket5958/mpoly_factor_proof.patch) by @malb created at 2009-05-07 13:50:45\n\nI fixed the \"proofable\" vs. \"provable\" typo. However, I am a bit clueless how to deal with the numerical noise. The `...` works for most of it but not for `0.49999999999` vs. {{{0.500000000}}. Ideas?",
     "created_at": "2009-05-07T13:50:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47172",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [mpoly_factor_proof.patch](tarball://root/attachments/some-uuid/ticket5958/mpoly_factor_proof.patch) by malb created at 2009-05-07 13:50:45
+Attachment [mpoly_factor_proof.patch](tarball://root/attachments/some-uuid/ticket5958/mpoly_factor_proof.patch) by @malb created at 2009-05-07 13:50:45
 
 I fixed the "proofable" vs. "provable" typo. However, I am a bit clueless how to deal with the numerical noise. The `...` works for most of it but not for `0.49999999999` vs. {{{0.500000000}}. Ideas?
 
@@ -255,7 +255,7 @@ archive/issue_comments_047173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47173",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_047174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47174",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_047175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47175",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -334,7 +334,7 @@ archive/issue_comments_047176.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47176",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_047177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47177",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -408,7 +408,7 @@ archive/issue_comments_047178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47178",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -426,7 +426,7 @@ archive/issue_comments_047179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47179",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -448,7 +448,7 @@ archive/issue_comments_047180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47180",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -461,16 +461,16 @@ Yes, I mean fixed precision floating point numbers. We could just print a warnin
 archive/issue_comments_047181.json:
 ```json
 {
-    "body": "Attachment [variety_CC.patch](tarball://root/attachments/some-uuid/ticket5958/variety_CC.patch) by john_perry created at 2009-08-26 17:31:53",
+    "body": "Attachment [variety_CC.patch](tarball://root/attachments/some-uuid/ticket5958/variety_CC.patch) by @johnperry-math created at 2009-08-26 17:31:53",
     "created_at": "2009-08-26T17:31:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47181",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
-Attachment [variety_CC.patch](tarball://root/attachments/some-uuid/ticket5958/variety_CC.patch) by john_perry created at 2009-08-26 17:31:53
+Attachment [variety_CC.patch](tarball://root/attachments/some-uuid/ticket5958/variety_CC.patch) by @johnperry-math created at 2009-08-26 17:31:53
 
 
 
@@ -484,7 +484,7 @@ archive/issue_comments_047182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47182",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -502,7 +502,7 @@ archive/issue_comments_047183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47183",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -520,7 +520,7 @@ archive/issue_comments_047184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47184",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -538,7 +538,7 @@ archive/issue_comments_047185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47185",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -556,7 +556,7 @@ archive/issue_comments_047186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47186",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -574,7 +574,7 @@ archive/issue_comments_047187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47187",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -587,16 +587,16 @@ apply over variety_CC.patch
 archive/issue_comments_047188.json:
 ```json
 {
-    "body": "Attachment [variety_CC2.patch](tarball://root/attachments/some-uuid/ticket5958/variety_CC2.patch) by john_perry created at 2009-08-26 20:50:08\n\nOkay, double colons on that file. They aren't prepended to the example, though; they appear at the end of line 1849 in the same way as at the end of 1831.\n\nPLEASE tell me this is okay now. Fixing this drove me crazy with hg...",
+    "body": "Attachment [variety_CC2.patch](tarball://root/attachments/some-uuid/ticket5958/variety_CC2.patch) by @johnperry-math created at 2009-08-26 20:50:08\n\nOkay, double colons on that file. They aren't prepended to the example, though; they appear at the end of line 1849 in the same way as at the end of 1831.\n\nPLEASE tell me this is okay now. Fixing this drove me crazy with hg...",
     "created_at": "2009-08-26T20:50:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47188",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
-Attachment [variety_CC2.patch](tarball://root/attachments/some-uuid/ticket5958/variety_CC2.patch) by john_perry created at 2009-08-26 20:50:08
+Attachment [variety_CC2.patch](tarball://root/attachments/some-uuid/ticket5958/variety_CC2.patch) by @johnperry-math created at 2009-08-26 20:50:08
 
 Okay, double colons on that file. They aren't prepended to the example, though; they appear at the end of line 1849 in the same way as at the end of 1831.
 
@@ -614,7 +614,7 @@ archive/issue_comments_047189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47189",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -632,7 +632,7 @@ archive/issue_comments_047190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47190",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -650,7 +650,7 @@ archive/issue_comments_047191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47191",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -668,7 +668,7 @@ archive/issue_comments_047192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47192",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -686,7 +686,7 @@ archive/issue_comments_047193.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47193",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -722,7 +722,7 @@ archive/issue_comments_047195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47195",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

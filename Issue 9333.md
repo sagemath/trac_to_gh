@@ -14,7 +14,7 @@ archive/issues_009333.json:
     "title": "the kash optional spkg doesn't work at all on OS X due to mistake in use of tar",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9333",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9333
 archive/issue_comments_088060.json:
 ```json
 {
-    "body": "Attachment [trac_9333-kash-tar.patch](tarball://root/attachments/some-uuid/ticket9333/trac_9333-kash-tar.patch) by jhpalmieri created at 2011-05-27 04:58:07\n\nfor reference only; do not apply",
+    "body": "Attachment [trac_9333-kash-tar.patch](tarball://root/attachments/some-uuid/ticket9333/trac_9333-kash-tar.patch) by @jhpalmieri created at 2011-05-27 04:58:07\n\nfor reference only; do not apply",
     "created_at": "2011-05-27T04:58:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9333#issuecomment-88060",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_9333-kash-tar.patch](tarball://root/attachments/some-uuid/ticket9333/trac_9333-kash-tar.patch) by jhpalmieri created at 2011-05-27 04:58:07
+Attachment [trac_9333-kash-tar.patch](tarball://root/attachments/some-uuid/ticket9333/trac_9333-kash-tar.patch) by @jhpalmieri created at 2011-05-27 04:58:07
 
 for reference only; do not apply
 
@@ -57,7 +57,7 @@ archive/issue_comments_088061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9333#issuecomment-88061",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_088062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9333#issuecomment-88062",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_088063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9333#issuecomment-88063",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_088064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9333#issuecomment-88064",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -138,16 +138,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_088065.json:
 ```json
 {
-    "body": "Attachment [trac_9333-kash-sage-library.patch](tarball://root/attachments/some-uuid/ticket9333/trac_9333-kash-sage-library.patch) by jhpalmieri created at 2011-06-08 21:44:37\n\npatch for sage library",
+    "body": "Attachment [trac_9333-kash-sage-library.patch](tarball://root/attachments/some-uuid/ticket9333/trac_9333-kash-sage-library.patch) by @jhpalmieri created at 2011-06-08 21:44:37\n\npatch for sage library",
     "created_at": "2011-06-08T21:44:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9333#issuecomment-88065",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_9333-kash-sage-library.patch](tarball://root/attachments/some-uuid/ticket9333/trac_9333-kash-sage-library.patch) by jhpalmieri created at 2011-06-08 21:44:37
+Attachment [trac_9333-kash-sage-library.patch](tarball://root/attachments/some-uuid/ticket9333/trac_9333-kash-sage-library.patch) by @jhpalmieri created at 2011-06-08 21:44:37
 
 patch for sage library
 
@@ -163,7 +163,7 @@ archive/issue_comments_088066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9333#issuecomment-88066",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_088067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9333#issuecomment-88067",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_088068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9333#issuecomment-88068",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_088069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9333#issuecomment-88069",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_088070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9333#issuecomment-88070",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_088071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9333#issuecomment-88071",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_088072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9333#issuecomment-88072",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

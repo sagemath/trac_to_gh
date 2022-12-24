@@ -14,7 +14,7 @@ archive/issues_001374.json:
     "title": "segfault in coercion with matrices and ints",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1374",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 Assignee: somebody
@@ -63,16 +63,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1374
 archive/issue_comments_008811.json:
 ```json
 {
-    "body": "Changing assignee from somebody to robertwb.",
+    "body": "Changing assignee from somebody to @robertwb.",
     "created_at": "2007-12-02T19:26:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1374",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8811",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from somebody to robertwb.
+Changing assignee from somebody to @robertwb.
 
 
 
@@ -86,7 +86,7 @@ archive/issue_comments_008812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1374",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8812",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_008813.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1374",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8813",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_008814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1374",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8814",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_008815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1374",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8815",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_008816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1374",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8816",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -207,16 +207,16 @@ Unhandled SIGBUS: A bus error occured in SAGE.
 archive/issue_comments_008817.json:
 ```json
 {
-    "body": "Attachment [trac-1374.patch](tarball://root/attachments/some-uuid/ticket1374/trac-1374.patch) by was created at 2007-12-02 21:32:57",
+    "body": "Attachment [trac-1374.patch](tarball://root/attachments/some-uuid/ticket1374/trac-1374.patch) by @williamstein created at 2007-12-02 21:32:57",
     "created_at": "2007-12-02T21:32:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1374",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8817",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1374.patch](tarball://root/attachments/some-uuid/ticket1374/trac-1374.patch) by was created at 2007-12-02 21:32:57
+Attachment [trac-1374.patch](tarball://root/attachments/some-uuid/ticket1374/trac-1374.patch) by @williamstein created at 2007-12-02 21:32:57
 
 
 

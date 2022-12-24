@@ -3,7 +3,7 @@
 archive/issues_001407.json:
 ```json
 {
-    "body": "Assignee: was\n\nConsider this:\n\n\n```\nsage: P.<a,b,c> = QQ[2^(1/2), 2^(1/3), 2^(1/5)]\nsage: P.order([1,a])\n*should* go boom very quickly... but runs forever and runs out of RAM\n```\n\n\nIn the situation above, a satisfies only a quadratic polynomial so \nthere is no possible way it will generate an order in a degree 8 field,\nsince the index [O_K : ZZ[a]] is clearly infinite.   Sage should\nquickly detect this and give an error message, but doesn't for some\nreason. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1407\n\n",
+    "body": "Assignee: @williamstein\n\nConsider this:\n\n\n```\nsage: P.<a,b,c> = QQ[2^(1/2), 2^(1/3), 2^(1/5)]\nsage: P.order([1,a])\n*should* go boom very quickly... but runs forever and runs out of RAM\n```\n\n\nIn the situation above, a satisfies only a quadratic polynomial so \nthere is no possible way it will generate an order in a degree 8 field,\nsince the index [O_K : ZZ[a]] is clearly infinite.   Sage should\nquickly detect this and give an error message, but doesn't for some\nreason. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1407\n\n",
     "created_at": "2007-12-06T04:02:24Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_001407.json:
     "title": "deciding that generators don't generate an order in some extensions can be way way too slow.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1407",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Consider this:
 
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1407
 archive/issue_comments_009080.json:
 ```json
 {
-    "body": "Attachment [trac1407.patch](tarball://root/attachments/some-uuid/ticket1407/trac1407.patch) by was created at 2007-12-06 15:30:37",
+    "body": "Attachment [trac1407.patch](tarball://root/attachments/some-uuid/ticket1407/trac1407.patch) by @williamstein created at 2007-12-06 15:30:37",
     "created_at": "2007-12-06T15:30:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1407#issuecomment-9080",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac1407.patch](tarball://root/attachments/some-uuid/ticket1407/trac1407.patch) by was created at 2007-12-06 15:30:37
+Attachment [trac1407.patch](tarball://root/attachments/some-uuid/ticket1407/trac1407.patch) by @williamstein created at 2007-12-06 15:30:37
 
 
 
@@ -65,16 +65,16 @@ Attachment [trac1407.patch](tarball://root/attachments/some-uuid/ticket1407/trac
 archive/issue_comments_009081.json:
 ```json
 {
-    "body": "Attachment [trac_1407-2.patch](tarball://root/attachments/some-uuid/ticket1407/trac_1407-2.patch) by craigcitro created at 2007-12-15 11:52:34\n\nMinor doctest touchups.",
+    "body": "Attachment [trac_1407-2.patch](tarball://root/attachments/some-uuid/ticket1407/trac_1407-2.patch) by @craigcitro created at 2007-12-15 11:52:34\n\nMinor doctest touchups.",
     "created_at": "2007-12-15T11:52:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1407#issuecomment-9081",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac_1407-2.patch](tarball://root/attachments/some-uuid/ticket1407/trac_1407-2.patch) by craigcitro created at 2007-12-15 11:52:34
+Attachment [trac_1407-2.patch](tarball://root/attachments/some-uuid/ticket1407/trac_1407-2.patch) by @craigcitro created at 2007-12-15 11:52:34
 
 Minor doctest touchups.
 

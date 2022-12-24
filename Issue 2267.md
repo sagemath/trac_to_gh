@@ -3,7 +3,7 @@
 archive/issues_002267.json:
 ```json
 {
-    "body": "Assignee: was\n\nAs a last step after merging all the patches we need to regenerate the documentation. That does involve fixing a bunch of LaTeX errors from the docstrings.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2267\n\n",
+    "body": "Assignee: @williamstein\n\nAs a last step after merging all the patches we need to regenerate the documentation. That does involve fixing a bunch of LaTeX errors from the docstrings.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2267\n\n",
     "created_at": "2008-02-22T21:54:45Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_002267.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 As a last step after merging all the patches we need to regenerate the documentation. That does involve fixing a bunch of LaTeX errors from the docstrings.
 
@@ -90,7 +90,7 @@ Changing priority from major to blocker.
 archive/issue_comments_015019.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2008-02-22T21:55:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2267",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_015019.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 
@@ -131,7 +131,7 @@ archive/issue_comments_015021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2267#issuecomment-15021",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_015025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2267#issuecomment-15025",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

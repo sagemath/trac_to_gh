@@ -14,7 +14,7 @@ archive/issues_001595.json:
     "title": "do something about the pari overflow test",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1595",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: failure
@@ -76,7 +76,7 @@ archive/issue_comments_010149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1595#issuecomment-10149",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -113,16 +113,16 @@ Michael
 archive/issue_comments_010151.json:
 ```json
 {
-    "body": "Attachment [gen.patch](tarball://root/attachments/some-uuid/ticket1595/gen.patch) by was created at 2009-04-08 00:57:43",
+    "body": "Attachment [gen.patch](tarball://root/attachments/some-uuid/ticket1595/gen.patch) by @williamstein created at 2009-04-08 00:57:43",
     "created_at": "2009-04-08T00:57:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1595#issuecomment-10151",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [gen.patch](tarball://root/attachments/some-uuid/ticket1595/gen.patch) by was created at 2009-04-08 00:57:43
+Attachment [gen.patch](tarball://root/attachments/some-uuid/ticket1595/gen.patch) by @williamstein created at 2009-04-08 00:57:43
 
 
 

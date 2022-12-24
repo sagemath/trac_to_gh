@@ -3,7 +3,7 @@
 archive/issues_003470.json:
 ```json
 {
-    "body": "Assignee: yi\n\nThis has been officially excepted for Python 2.7, but we need it now.  It is Python/c and takes literally 1 second to install, and supports OSX, Linux, Windows, etc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3470\n\n",
+    "body": "Assignee: @yqiang\n\nThis has been officially excepted for Python 2.7, but we need it now.  It is Python/c and takes literally 1 second to install, and supports OSX, Linux, Windows, etc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3470\n\n",
     "created_at": "2008-06-19T16:32:23Z",
     "labels": [
         "dsage",
@@ -14,10 +14,10 @@ archive/issues_003470.json:
     "title": "[with spkg; needs review] add pyprocessing (=multiproccessing) to sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3470",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: yi
+Assignee: @yqiang
 
 This has been officially excepted for Python 2.7, but we need it now.  It is Python/c and takes literally 1 second to install, and supports OSX, Linux, Windows, etc.
 
@@ -57,7 +57,7 @@ archive/issue_comments_024466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3470#issuecomment-24466",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_024467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3470#issuecomment-24467",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_024468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3470#issuecomment-24468",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_024469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3470#issuecomment-24469",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

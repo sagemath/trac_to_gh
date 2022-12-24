@@ -3,7 +3,7 @@
 archive/issues_002447.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: lfunctions\n\nThe three modules in sage/lfunctions have extremely good documentation in their source files but not in way which gives good scores in --coverage tests.  A little more has been added (though nothing which gives more essential information than before).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2447\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: lfunctions\n\nThe three modules in sage/lfunctions have extremely good documentation in their source files but not in way which gives good scores in --coverage tests.  A little more has been added (though nothing which gives more essential information than before).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2447\n\n",
     "created_at": "2008-03-09T21:46:59Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_002447.json:
     "title": "lfunctions modules scores low on doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2447",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: lfunctions
 
@@ -35,16 +35,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2447
 archive/issue_comments_016539.json:
 ```json
 {
-    "body": "Attachment [8822.patch](tarball://root/attachments/some-uuid/ticket2447/8822.patch) by cremona created at 2008-03-09 21:47:08",
+    "body": "Attachment [8822.patch](tarball://root/attachments/some-uuid/ticket2447/8822.patch) by @JohnCremona created at 2008-03-09 21:47:08",
     "created_at": "2008-03-09T21:47:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2447#issuecomment-16539",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [8822.patch](tarball://root/attachments/some-uuid/ticket2447/8822.patch) by cremona created at 2008-03-09 21:47:08
+Attachment [8822.patch](tarball://root/attachments/some-uuid/ticket2447/8822.patch) by @JohnCremona created at 2008-03-09 21:47:08
 
 
 
@@ -58,7 +58,7 @@ archive/issue_comments_016540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2447#issuecomment-16540",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000299.json:
 ```json
 {
-    "body": "Assignee: was\n\nProject:\nGo through every spkg in the SAGE standard distribution and add a file\n\n   spkg-check\n\nthat runs whatever the standard test program is for that package, assuming\nspkg-install has already run successfully.  For example, for many programs\n(e.g., gmp), this will just be:\n\n  make check\n\nor maybe \"make test\".\n\nThe program spkg-check should exit with a 0 code if and only if all tests pass.\n\nThen when building SAGE, if one did something like\n\n   export CHECK=1\n   make\n\nthen all spkg-check's would get run along the way.  The build would take much longer,\nbut would be much more confidence inspiring. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/299\n\n",
+    "body": "Assignee: @williamstein\n\nProject:\nGo through every spkg in the SAGE standard distribution and add a file\n\n   spkg-check\n\nthat runs whatever the standard test program is for that package, assuming\nspkg-install has already run successfully.  For example, for many programs\n(e.g., gmp), this will just be:\n\n  make check\n\nor maybe \"make test\".\n\nThe program spkg-check should exit with a 0 code if and only if all tests pass.\n\nThen when building SAGE, if one did something like\n\n   export CHECK=1\n   make\n\nthen all spkg-check's would get run along the way.  The build would take much longer,\nbut would be much more confidence inspiring. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/299\n\n",
     "created_at": "2007-02-27T14:49:57Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_000299.json:
     "title": "make check and its analogues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/299",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Project:
 Go through every spkg in the SAGE standard distribution and add a file
@@ -84,7 +84,7 @@ Michael
 archive/issue_comments_001424.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2008-01-26T13:22:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/299",
     "type": "issue_comment",
@@ -93,7 +93,7 @@ archive/issue_comments_001424.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 

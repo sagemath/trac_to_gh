@@ -14,7 +14,7 @@ archive/issues_003653.json:
     "title": "Better random complex numbers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3653",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 Assignee: somebody
@@ -91,7 +91,7 @@ archive/issue_comments_025833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3653#issuecomment-25833",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

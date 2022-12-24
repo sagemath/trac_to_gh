@@ -3,7 +3,7 @@
 archive/issues_006638.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nImplement a way to import default shortcuts, say from SymmetricFunctions(QQ), WeylGroups([\"A\",3]), or RootSystem([\"A\",3])\n\nOption 1:\n\n```\n    sage: Sym = SymmetricFunctions(QQ)\n    sage: %from Sym.shortcuts() import *\n    sage: s[3] + h[2]\n    s[3] + s[2]\n\n    sage: %from Sym.shortcuts() import s, h, p\n\n    sage: Sym.shorcuts()\n    { s: SymmetricFunctions in the Schur basis,\n      h: SymmetricFunctions in the complete basis,\n      ...\n    }\n```\n\n\nOption 2:\n\n```\n    sage: Sym = SymmetricFunctions(QQ)\n    sage: Sym.import_shortcuts()\n    sage: s[3] + h[2]\n    s[3] + s[2]\n\n    sage: Sym.import_shortcuts(\"s\", \"h\", \"p\")\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6638\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nImplement a way to import default shortcuts, say from SymmetricFunctions(QQ), WeylGroups([\"A\",3]), or RootSystem([\"A\",3])\n\nOption 1:\n\n```\n    sage: Sym = SymmetricFunctions(QQ)\n    sage: %from Sym.shortcuts() import *\n    sage: s[3] + h[2]\n    s[3] + s[2]\n\n    sage: %from Sym.shortcuts() import s, h, p\n\n    sage: Sym.shorcuts()\n    { s: SymmetricFunctions in the Schur basis,\n      h: SymmetricFunctions in the complete basis,\n      ...\n    }\n```\n\n\nOption 2:\n\n```\n    sage: Sym = SymmetricFunctions(QQ)\n    sage: Sym.import_shortcuts()\n    sage: s[3] + h[2]\n    s[3] + s[2]\n\n    sage: Sym.import_shortcuts(\"s\", \"h\", \"p\")\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6638\n\n",
     "created_at": "2009-07-27T12:50:53Z",
     "labels": [
         "combinatorics",
@@ -13,10 +13,10 @@ archive/issues_006638.json:
     "title": "Implement a way to import default shortcuts, say from SymmetricFunctions(QQ)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6638",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -68,7 +68,7 @@ archive/issue_comments_054432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6638",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6638#issuecomment-54432",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

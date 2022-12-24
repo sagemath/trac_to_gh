@@ -14,7 +14,7 @@ archive/issues_004813.json:
     "title": "[with patch, needs review] contribution to the tests/ directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4813",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: mabshoff
@@ -48,16 +48,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4813
 archive/issue_comments_036487.json:
 ```json
 {
-    "body": "Attachment [arxiv_0812_2725_code.patch](tarball://root/attachments/some-uuid/ticket4813/arxiv_0812_2725_code.patch) by ddrake created at 2008-12-16 13:49:13",
+    "body": "Attachment [arxiv_0812_2725_code.patch](tarball://root/attachments/some-uuid/ticket4813/arxiv_0812_2725_code.patch) by @dandrake created at 2008-12-16 13:49:13",
     "created_at": "2008-12-16T13:49:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4813#issuecomment-36487",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [arxiv_0812_2725_code.patch](tarball://root/attachments/some-uuid/ticket4813/arxiv_0812_2725_code.patch) by ddrake created at 2008-12-16 13:49:13
+Attachment [arxiv_0812_2725_code.patch](tarball://root/attachments/some-uuid/ticket4813/arxiv_0812_2725_code.patch) by @dandrake created at 2008-12-16 13:49:13
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_036489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4813#issuecomment-36489",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -111,16 +111,16 @@ Either way, I would like this code to get put into the tests/ directory; William
 archive/issue_comments_036490.json:
 ```json
 {
-    "body": "Attachment [trac_4813-2.patch](tarball://root/attachments/some-uuid/ticket4813/trac_4813-2.patch) by mhansen created at 2009-01-24 03:00:48\n\nI think this is good to go in.  I've added a patch which does some minor formatting issues.  \n\nDan: Could you just give my little patch a positive review?",
+    "body": "Attachment [trac_4813-2.patch](tarball://root/attachments/some-uuid/ticket4813/trac_4813-2.patch) by @mwhansen created at 2009-01-24 03:00:48\n\nI think this is good to go in.  I've added a patch which does some minor formatting issues.  \n\nDan: Could you just give my little patch a positive review?",
     "created_at": "2009-01-24T03:00:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4813#issuecomment-36490",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4813-2.patch](tarball://root/attachments/some-uuid/ticket4813/trac_4813-2.patch) by mhansen created at 2009-01-24 03:00:48
+Attachment [trac_4813-2.patch](tarball://root/attachments/some-uuid/ticket4813/trac_4813-2.patch) by @mwhansen created at 2009-01-24 03:00:48
 
 I think this is good to go in.  I've added a patch which does some minor formatting issues.  
 
@@ -138,7 +138,7 @@ archive/issue_comments_036491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4813#issuecomment-36491",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

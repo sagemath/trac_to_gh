@@ -14,7 +14,7 @@ archive/issues_008712.json:
     "title": "Use `optparse` in sage -merge for increased usability.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8712",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 Assignee: GeorgSWeber
@@ -37,7 +37,7 @@ archive/issue_comments_079491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8712#issuecomment-79491",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_079492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8712#issuecomment-79492",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing status from new to needs_review.
 archive/issue_comments_079493.json:
 ```json
 {
-    "body": "Attachment [trac_8712-sage-merge-optparse.patch](tarball://root/attachments/some-uuid/ticket8712/trac_8712-sage-merge-optparse.patch) by timdumol created at 2010-04-18 12:16:53\n\nThis patch makes `sage-apply-ticket` use `optparse` instead of `getopt`, making things more robust, and adding a help/usage message, which displays all options and normal usage cases.",
+    "body": "Attachment [trac_8712-sage-merge-optparse.patch](tarball://root/attachments/some-uuid/ticket8712/trac_8712-sage-merge-optparse.patch) by @TimDumol created at 2010-04-18 12:16:53\n\nThis patch makes `sage-apply-ticket` use `optparse` instead of `getopt`, making things more robust, and adding a help/usage message, which displays all options and normal usage cases.",
     "created_at": "2010-04-18T12:16:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8712#issuecomment-79493",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_8712-sage-merge-optparse.patch](tarball://root/attachments/some-uuid/ticket8712/trac_8712-sage-merge-optparse.patch) by timdumol created at 2010-04-18 12:16:53
+Attachment [trac_8712-sage-merge-optparse.patch](tarball://root/attachments/some-uuid/ticket8712/trac_8712-sage-merge-optparse.patch) by @TimDumol created at 2010-04-18 12:16:53
 
 This patch makes `sage-apply-ticket` use `optparse` instead of `getopt`, making things more robust, and adding a help/usage message, which displays all options and normal usage cases.
 
@@ -88,16 +88,16 @@ This patch makes `sage-apply-ticket` use `optparse` instead of `getopt`, making 
 archive/issue_comments_079494.json:
 ```json
 {
-    "body": "Attachment [trac_8712-sage-merge-optparse.2.patch](tarball://root/attachments/some-uuid/ticket8712/trac_8712-sage-merge-optparse.2.patch) by timdumol created at 2010-04-18 12:48:43\n\nFixes at typo. Apply this patch only.",
+    "body": "Attachment [trac_8712-sage-merge-optparse.2.patch](tarball://root/attachments/some-uuid/ticket8712/trac_8712-sage-merge-optparse.2.patch) by @TimDumol created at 2010-04-18 12:48:43\n\nFixes at typo. Apply this patch only.",
     "created_at": "2010-04-18T12:48:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8712#issuecomment-79494",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_8712-sage-merge-optparse.2.patch](tarball://root/attachments/some-uuid/ticket8712/trac_8712-sage-merge-optparse.2.patch) by timdumol created at 2010-04-18 12:48:43
+Attachment [trac_8712-sage-merge-optparse.2.patch](tarball://root/attachments/some-uuid/ticket8712/trac_8712-sage-merge-optparse.2.patch) by @TimDumol created at 2010-04-18 12:48:43
 
 Fixes at typo. Apply this patch only.
 
@@ -113,7 +113,7 @@ archive/issue_comments_079495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8712#issuecomment-79495",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_079496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8712#issuecomment-79496",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -196,16 +196,16 @@ Looks pretty good. I found two small bugs (num_threads wasn't being passed corre
 archive/issue_comments_079497.json:
 ```json
 {
-    "body": "Attachment [trac_8712-reviewer.patch](tarball://root/attachments/some-uuid/ticket8712/trac_8712-reviewer.patch) by jhpalmieri created at 2010-06-22 05:07:46\n\napply on top of trac_8712-sage-merge-optparse.2.patch",
+    "body": "Attachment [trac_8712-reviewer.patch](tarball://root/attachments/some-uuid/ticket8712/trac_8712-reviewer.patch) by @jhpalmieri created at 2010-06-22 05:07:46\n\napply on top of trac_8712-sage-merge-optparse.2.patch",
     "created_at": "2010-06-22T05:07:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8712#issuecomment-79497",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8712-reviewer.patch](tarball://root/attachments/some-uuid/ticket8712/trac_8712-reviewer.patch) by jhpalmieri created at 2010-06-22 05:07:46
+Attachment [trac_8712-reviewer.patch](tarball://root/attachments/some-uuid/ticket8712/trac_8712-reviewer.patch) by @jhpalmieri created at 2010-06-22 05:07:46
 
 apply on top of trac_8712-sage-merge-optparse.2.patch
 
@@ -221,7 +221,7 @@ archive/issue_comments_079498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8712#issuecomment-79498",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_079499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8712#issuecomment-79499",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_079500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8712#issuecomment-79500",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_079501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8712#issuecomment-79501",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

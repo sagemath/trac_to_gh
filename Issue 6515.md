@@ -3,7 +3,7 @@
 archive/issues_006515.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nThis has been brought up several times on the mailing lists. As a specific example \n\n\n```\nsage: assume(x>0)\nsage: solve([x^2-1],x)\n[x == -1, x == 1]\n```\n\n\nAt the very least, we could probably filter out the \"solutions\" that violate the assumptions. \n\n\n\n```\nsage: [all(a.subs(s) for a in assumptions()) for s in solve(x^2-1==0, x)]\n[False, True]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6515\n\n",
+    "body": "Assignee: @burcin\n\nThis has been brought up several times on the mailing lists. As a specific example \n\n\n```\nsage: assume(x>0)\nsage: solve([x^2-1],x)\n[x == -1, x == 1]\n```\n\n\nAt the very least, we could probably filter out the \"solutions\" that violate the assumptions. \n\n\n\n```\nsage: [all(a.subs(s) for a in assumptions()) for s in solve(x^2-1==0, x)]\n[False, True]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6515\n\n",
     "created_at": "2009-07-12T04:22:28Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_006515.json:
     "title": "assume doesn't interact well with solve",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6515",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 This has been brought up several times on the mailing lists. As a specific example 
 
@@ -55,7 +55,7 @@ archive/issue_comments_053074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6515#issuecomment-53074",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_053075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6515#issuecomment-53075",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -86,16 +86,16 @@ Update:  the solution above works well for single equations in one variable, but
 archive/issue_comments_053076.json:
 ```json
 {
-    "body": "Attachment [6515-solve-assume.patch](tarball://root/attachments/some-uuid/ticket6515/6515-solve-assume.patch) by robertwb created at 2010-01-19 21:14:31",
+    "body": "Attachment [6515-solve-assume.patch](tarball://root/attachments/some-uuid/ticket6515/6515-solve-assume.patch) by @robertwb created at 2010-01-19 21:14:31",
     "created_at": "2010-01-19T21:14:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6515#issuecomment-53076",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [6515-solve-assume.patch](tarball://root/attachments/some-uuid/ticket6515/6515-solve-assume.patch) by robertwb created at 2010-01-19 21:14:31
+Attachment [6515-solve-assume.patch](tarball://root/attachments/some-uuid/ticket6515/6515-solve-assume.patch) by @robertwb created at 2010-01-19 21:14:31
 
 
 
@@ -109,7 +109,7 @@ archive/issue_comments_053077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6515#issuecomment-53077",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_053078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6515#issuecomment-53078",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -140,16 +140,16 @@ It doesn't catch everything, but is better than what we have now.
 archive/issue_comments_053079.json:
 ```json
 {
-    "body": "Attachment [trac_6515-referee.patch](tarball://root/attachments/some-uuid/ticket6515/trac_6515-referee.patch) by burcin created at 2010-02-03 16:50:53\n\nminor documentation fixes",
+    "body": "Attachment [trac_6515-referee.patch](tarball://root/attachments/some-uuid/ticket6515/trac_6515-referee.patch) by @burcin created at 2010-02-03 16:50:53\n\nminor documentation fixes",
     "created_at": "2010-02-03T16:50:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6515#issuecomment-53079",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6515-referee.patch](tarball://root/attachments/some-uuid/ticket6515/trac_6515-referee.patch) by burcin created at 2010-02-03 16:50:53
+Attachment [trac_6515-referee.patch](tarball://root/attachments/some-uuid/ticket6515/trac_6515-referee.patch) by @burcin created at 2010-02-03 16:50:53
 
 minor documentation fixes
 
@@ -165,7 +165,7 @@ archive/issue_comments_053080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6515#issuecomment-53080",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_053081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6515#issuecomment-53081",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_053082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6515#issuecomment-53082",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_053083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6515#issuecomment-53083",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_053084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6515#issuecomment-53084",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_053085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6515#issuecomment-53085",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

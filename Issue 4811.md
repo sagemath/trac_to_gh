@@ -14,7 +14,7 @@ archive/issues_004811.json:
     "title": "doctesting line numbers in report are now completely broken.  They were fine ins age-3.2.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4811",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -59,16 +59,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4811
 archive/issue_comments_036473.json:
 ```json
 {
-    "body": "Attachment [trac_4811_bin.patch](tarball://root/attachments/some-uuid/ticket4811/trac_4811_bin.patch) by gfurnish created at 2008-12-16 07:37:39",
+    "body": "Attachment [trac_4811_bin.patch](tarball://root/attachments/some-uuid/ticket4811/trac_4811_bin.patch) by @garyfurnish created at 2008-12-16 07:37:39",
     "created_at": "2008-12-16T07:37:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4811",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4811#issuecomment-36473",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_4811_bin.patch](tarball://root/attachments/some-uuid/ticket4811/trac_4811_bin.patch) by gfurnish created at 2008-12-16 07:37:39
+Attachment [trac_4811_bin.patch](tarball://root/attachments/some-uuid/ticket4811/trac_4811_bin.patch) by @garyfurnish created at 2008-12-16 07:37:39
 
 
 
@@ -82,7 +82,7 @@ archive/issue_comments_036474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4811",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4811#issuecomment-36474",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -95,16 +95,16 @@ Changing status from new to assigned.
 archive/issue_comments_036475.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to gfurnish.",
+    "body": "Changing assignee from mabshoff to @garyfurnish.",
     "created_at": "2008-12-16T07:37:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4811",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4811#issuecomment-36475",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from mabshoff to gfurnish.
+Changing assignee from mabshoff to @garyfurnish.
 
 
 

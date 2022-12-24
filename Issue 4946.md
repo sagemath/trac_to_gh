@@ -14,7 +14,7 @@ archive/issues_004946.json:
     "title": "readline on opensuse11 64-bit still doesn't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4946",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -141,7 +141,7 @@ archive/issue_comments_037546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4946#issuecomment-37546",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

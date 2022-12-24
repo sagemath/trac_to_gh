@@ -14,7 +14,7 @@ archive/issues_004296.json:
     "title": "univariate polynomial power ignores 2nd argument",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4296",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: somebody
@@ -48,7 +48,7 @@ archive/issue_comments_031425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4296#issuecomment-31425",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_031427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4296#issuecomment-31427",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -117,16 +117,16 @@ OK, a patch with the doctest is attached.
 archive/issue_comments_031428.json:
 ```json
 {
-    "body": "Attachment [trac_4296.patch](tarball://root/attachments/some-uuid/ticket4296/trac_4296.patch) by robertwb created at 2008-12-29 20:20:59\n\nThe attached patch seems to be just the doctest, no new code...",
+    "body": "Attachment [trac_4296.patch](tarball://root/attachments/some-uuid/ticket4296/trac_4296.patch) by @robertwb created at 2008-12-29 20:20:59\n\nThe attached patch seems to be just the doctest, no new code...",
     "created_at": "2008-12-29T20:20:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4296#issuecomment-31428",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [trac_4296.patch](tarball://root/attachments/some-uuid/ticket4296/trac_4296.patch) by robertwb created at 2008-12-29 20:20:59
+Attachment [trac_4296.patch](tarball://root/attachments/some-uuid/ticket4296/trac_4296.patch) by @robertwb created at 2008-12-29 20:20:59
 
 The attached patch seems to be just the doctest, no new code...
 
@@ -167,7 +167,7 @@ archive/issue_comments_031430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4296#issuecomment-31430",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_031432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4296#issuecomment-31432",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

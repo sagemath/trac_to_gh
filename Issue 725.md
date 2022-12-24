@@ -3,7 +3,7 @@
 archive/issues_000725.json:
 ```json
 {
-    "body": "Assignee: was\n\nFor the diagonal case, the `__init__` function of `Matrix_integer_dense` contains the following code:\n\n\n```\n            self._zero_out_matrix()\n            j = 0\n            for i from 0 <= i < self._nrows:\n                mpz_init_set(self._entries[j], x.value)\n                j = j + self._nrows + 1\n            self._initialized = True\n```\n\n\nas the _zero_out_matrix function calls mpz_init on self.entries, we should use mpz_set instead of mpz_init_set.\n\nAttached patch fixes this.\n\nThe valgrind output of this error is similar to that of #621, but the example on that ticket uses a different code path. So this is not related.\n\nIssue created by migration from https://trac.sagemath.org/ticket/725\n\n",
+    "body": "Assignee: @williamstein\n\nFor the diagonal case, the `__init__` function of `Matrix_integer_dense` contains the following code:\n\n\n```\n            self._zero_out_matrix()\n            j = 0\n            for i from 0 <= i < self._nrows:\n                mpz_init_set(self._entries[j], x.value)\n                j = j + self._nrows + 1\n            self._initialized = True\n```\n\n\nas the _zero_out_matrix function calls mpz_init on self.entries, we should use mpz_set instead of mpz_init_set.\n\nAttached patch fixes this.\n\nThe valgrind output of this error is similar to that of #621, but the example on that ticket uses a different code path. So this is not related.\n\nIssue created by migration from https://trac.sagemath.org/ticket/725\n\n",
     "created_at": "2007-09-21T02:34:04Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_000725.json:
     "title": "memleak in initialization of diagonal Matrix_integer_dense objects",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/725",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 For the diagonal case, the `__init__` function of `Matrix_integer_dense` contains the following code:
 
@@ -49,16 +49,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/725
 archive/issue_comments_004227.json:
 ```json
 {
-    "body": "Attachment [matrix_integer_dense_diagonal_memleak.patch](tarball://root/attachments/some-uuid/ticket725/matrix_integer_dense_diagonal_memleak.patch) by burcin created at 2007-09-21 02:36:24",
+    "body": "Attachment [matrix_integer_dense_diagonal_memleak.patch](tarball://root/attachments/some-uuid/ticket725/matrix_integer_dense_diagonal_memleak.patch) by @burcin created at 2007-09-21 02:36:24",
     "created_at": "2007-09-21T02:36:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/725",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/725#issuecomment-4227",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [matrix_integer_dense_diagonal_memleak.patch](tarball://root/attachments/some-uuid/ticket725/matrix_integer_dense_diagonal_memleak.patch) by burcin created at 2007-09-21 02:36:24
+Attachment [matrix_integer_dense_diagonal_memleak.patch](tarball://root/attachments/some-uuid/ticket725/matrix_integer_dense_diagonal_memleak.patch) by @burcin created at 2007-09-21 02:36:24
 
 
 
@@ -67,16 +67,16 @@ Attachment [matrix_integer_dense_diagonal_memleak.patch](tarball://root/attachme
 archive/issue_comments_004228.json:
 ```json
 {
-    "body": "Changing assignee from was to burcin.",
+    "body": "Changing assignee from @williamstein to @burcin.",
     "created_at": "2007-09-21T02:36:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/725",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/725#issuecomment-4228",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Changing assignee from was to burcin.
+Changing assignee from @williamstein to @burcin.
 
 
 
@@ -90,7 +90,7 @@ archive/issue_comments_004229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/725",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/725#issuecomment-4229",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_004230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/725",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/725#issuecomment-4230",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_004231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/725",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/725#issuecomment-4231",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

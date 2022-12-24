@@ -3,7 +3,7 @@
 archive/issues_005648.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nThe attached patch implements !__mul!__ for ModularFormElement objects, so one can say\n\n```\nsage: M = ModularForms(DirichletGroup(3).0, 5)\nsage: f = M.0\nsage: f * f\n```\n\n\nand get back a modular form (in this case a weight 5 modular form of level 3 and trivial character).\n\nIn order to get this to work, I've made a few small adjustments elsewhere: \n\n* DirichletGroup objects now have a base_extend method\n\n* a bug when multiplying two characters of the same modulus but different zeta orders is fixed\n\n* Dirichlet characters now always compare as unequal unless they have the same modulus (in particular, == for Dirichlet characters is now transitive, which it previously wasn't)\n\n* ambient spaces of modular forms with character now have a decent base_extend method (previously base_extend would forget the character and return an ambient space of modular forms for Gamma1(N)).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5648\n\n",
+    "body": "Assignee: @loefflerd\n\nThe attached patch implements !__mul!__ for ModularFormElement objects, so one can say\n\n```\nsage: M = ModularForms(DirichletGroup(3).0, 5)\nsage: f = M.0\nsage: f * f\n```\n\n\nand get back a modular form (in this case a weight 5 modular form of level 3 and trivial character).\n\nIn order to get this to work, I've made a few small adjustments elsewhere: \n\n* DirichletGroup objects now have a base_extend method\n\n* a bug when multiplying two characters of the same modulus but different zeta orders is fixed\n\n* Dirichlet characters now always compare as unequal unless they have the same modulus (in particular, == for Dirichlet characters is now transitive, which it previously wasn't)\n\n* ambient spaces of modular forms with character now have a decent base_extend method (previously base_extend would forget the character and return an ambient space of modular forms for Gamma1(N)).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5648\n\n",
     "created_at": "2009-03-31T12:25:20Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_005648.json:
     "title": "Multiplication for modular forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5648",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
 The attached patch implements !__mul!__ for ModularFormElement objects, so one can say
 
@@ -52,16 +52,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5648
 archive/issue_comments_044100.json:
 ```json
 {
-    "body": "Attachment [modform_product.patch](tarball://root/attachments/some-uuid/ticket5648/modform_product.patch) by davidloeffler created at 2009-03-31 12:25:36\n\npatch against 3.4.1.alpha0",
+    "body": "Attachment [modform_product.patch](tarball://root/attachments/some-uuid/ticket5648/modform_product.patch) by @loefflerd created at 2009-03-31 12:25:36\n\npatch against 3.4.1.alpha0",
     "created_at": "2009-03-31T12:25:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5648#issuecomment-44100",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [modform_product.patch](tarball://root/attachments/some-uuid/ticket5648/modform_product.patch) by davidloeffler created at 2009-03-31 12:25:36
+Attachment [modform_product.patch](tarball://root/attachments/some-uuid/ticket5648/modform_product.patch) by @loefflerd created at 2009-03-31 12:25:36
 
 patch against 3.4.1.alpha0
 
@@ -77,7 +77,7 @@ archive/issue_comments_044101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5648#issuecomment-44101",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_044102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5648#issuecomment-44102",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_044103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5648#issuecomment-44103",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 

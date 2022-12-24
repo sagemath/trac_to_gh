@@ -14,7 +14,7 @@ archive/issues_003723.json:
     "title": "alarm doesn't work with the factor command on os x (but control c does)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3723",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -63,7 +63,7 @@ archive/issue_comments_026408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3723#issuecomment-26408",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_026409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3723#issuecomment-26409",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_026410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3723#issuecomment-26410",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_026411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3723#issuecomment-26411",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

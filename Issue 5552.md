@@ -3,7 +3,7 @@
 archive/issues_005552.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nplot_slope_field((f, g), (xvar, xmin, xmax), (yvar, ymin, ymax)) \n```\n\nshould only have one function, not the two functions left over from plot_vector_field\n\nIssue created by migration from https://trac.sagemath.org/ticket/5552\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nplot_slope_field((f, g), (xvar, xmin, xmax), (yvar, ymin, ymax)) \n```\n\nshould only have one function, not the two functions left over from plot_vector_field\n\nIssue created by migration from https://trac.sagemath.org/ticket/5552\n\n",
     "created_at": "2009-03-17T20:45:26Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_005552.json:
     "title": "plot_slope_field typo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5552",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -42,7 +42,7 @@ archive/issue_comments_043188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5552#issuecomment-43188",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -55,16 +55,16 @@ This is in the docs, not in the def, of course.
 archive/issue_comments_043189.json:
 ```json
 {
-    "body": "Attachment [slope_field_typo.patch](tarball://root/attachments/some-uuid/ticket5552/slope_field_typo.patch) by kcrisman created at 2009-03-18 00:40:52",
+    "body": "Attachment [slope_field_typo.patch](tarball://root/attachments/some-uuid/ticket5552/slope_field_typo.patch) by @kcrisman created at 2009-03-18 00:40:52",
     "created_at": "2009-03-18T00:40:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5552#issuecomment-43189",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [slope_field_typo.patch](tarball://root/attachments/some-uuid/ticket5552/slope_field_typo.patch) by kcrisman created at 2009-03-18 00:40:52
+Attachment [slope_field_typo.patch](tarball://root/attachments/some-uuid/ticket5552/slope_field_typo.patch) by @kcrisman created at 2009-03-18 00:40:52
 
 
 
@@ -78,7 +78,7 @@ archive/issue_comments_043190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5552#issuecomment-43190",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_043191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5552#issuecomment-43191",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

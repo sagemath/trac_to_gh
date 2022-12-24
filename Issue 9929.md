@@ -14,7 +14,7 @@ archive/issues_009929.json:
     "title": "Additional test in is_even_hole_free",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9929",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -39,7 +39,7 @@ archive/issue_comments_098876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9929",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9929#issuecomment-98876",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to needs_review.
 archive/issue_comments_098877.json:
 ```json
 {
-    "body": "Attachment [trac_9930.patch](tarball://root/attachments/some-uuid/ticket9930/trac_9930.patch) by ncohen created at 2010-09-17 08:16:22",
+    "body": "Attachment [trac_9930.patch](tarball://root/attachments/some-uuid/ticket9930/trac_9930.patch) by @nathanncohen created at 2010-09-17 08:16:22",
     "created_at": "2010-09-17T08:16:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9929",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9929#issuecomment-98877",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_9930.patch](tarball://root/attachments/some-uuid/ticket9930/trac_9930.patch) by ncohen created at 2010-09-17 08:16:22
+Attachment [trac_9930.patch](tarball://root/attachments/some-uuid/ticket9930/trac_9930.patch) by @nathanncohen created at 2010-09-17 08:16:22
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_098878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9929",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9929#issuecomment-98878",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_098879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9929",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9929#issuecomment-98879",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_098880.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9929",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9929#issuecomment-98880",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_098881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9929",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9929#issuecomment-98881",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_098882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9929",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9929#issuecomment-98882",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_098883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9929",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9929#issuecomment-98883",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_098884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9929",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9929#issuecomment-98884",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_098885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9929",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9929#issuecomment-98885",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_098886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9929",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9929#issuecomment-98886",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_098887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9929",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9929#issuecomment-98887",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

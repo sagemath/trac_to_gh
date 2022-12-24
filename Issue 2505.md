@@ -14,7 +14,7 @@ archive/issues_002505.json:
     "title": "[with patch, needs review] Sage has no Wronskian function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2505",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: mabshoff
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2505
 archive/issue_comments_016969.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to was.",
+    "body": "Changing assignee from mabshoff to @williamstein.",
     "created_at": "2008-03-13T08:06:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2505#issuecomment-16969",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Changing assignee from mabshoff to was.
+Changing assignee from mabshoff to @williamstein.
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_016970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2505#issuecomment-16970",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -72,16 +72,16 @@ Changing component from Cygwin to calculus.
 archive/issue_comments_016971.json:
 ```json
 {
-    "body": "Attachment [wronskian.patch](tarball://root/attachments/some-uuid/ticket2505/wronskian.patch) by ddrake created at 2008-03-13 09:24:13",
+    "body": "Attachment [wronskian.patch](tarball://root/attachments/some-uuid/ticket2505/wronskian.patch) by @dandrake created at 2008-03-13 09:24:13",
     "created_at": "2008-03-13T09:24:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2505#issuecomment-16971",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [wronskian.patch](tarball://root/attachments/some-uuid/ticket2505/wronskian.patch) by ddrake created at 2008-03-13 09:24:13
+Attachment [wronskian.patch](tarball://root/attachments/some-uuid/ticket2505/wronskian.patch) by @dandrake created at 2008-03-13 09:24:13
 
 
 
@@ -95,7 +95,7 @@ archive/issue_comments_016972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2505#issuecomment-16972",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_016973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2505#issuecomment-16973",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

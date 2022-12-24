@@ -3,7 +3,7 @@
 archive/issues_006887.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nCC:  was wuthrich shumow kohel jcooley\n\nKeywords: elliptic curve isogeny\n\nThanks mainly to Dan Shumow, 4.1.1 has some very useful code for constructing elliptic curve isogenies.  Together with a summer student Jenny Cooley, I am implementing the following:\n\n1. For `l=2,3,5,7,13` over any field, find all `l`-isogenies of a given elliptic curve. (These are the `l` for which `X_0(l)` has genus 0).\n\n2. For the remaining `l` for which `l`-isogenies exist over QQ, similarly.\n\n3. Given an elliptic curve over QQ, find the whole isogeny class (this currently exists by wrapping some eclib code, but that it not very robust -- what we are writing will be!)\n\n4. Testing if two curves are isogenous (at least over QQ;  we can do something over other number fields but I am still working out how to make it rigorous.)\n\nAt the moment I am not planning anything over finite fields, where the situation is very different, though the generic code for `l=2,3,5,7,13` will work (as it is right now, only as long as the characteristic is not 2, 3 or `l`, but eventually that will change).\n\nSome of the methods we are implementing were worked out by  Mark Watkins and me in an unfinished preprint c.2005.\n\nAs one major test of the code for curves over QQ, we are intending to check that the databases are closed under isogeny (as they should be!  at least my own should be).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6887\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @williamstein @categorie shumow kohel jcooley\n\nKeywords: elliptic curve isogeny\n\nThanks mainly to Dan Shumow, 4.1.1 has some very useful code for constructing elliptic curve isogenies.  Together with a summer student Jenny Cooley, I am implementing the following:\n\n1. For `l=2,3,5,7,13` over any field, find all `l`-isogenies of a given elliptic curve. (These are the `l` for which `X_0(l)` has genus 0).\n\n2. For the remaining `l` for which `l`-isogenies exist over QQ, similarly.\n\n3. Given an elliptic curve over QQ, find the whole isogeny class (this currently exists by wrapping some eclib code, but that it not very robust -- what we are writing will be!)\n\n4. Testing if two curves are isogenous (at least over QQ;  we can do something over other number fields but I am still working out how to make it rigorous.)\n\nAt the moment I am not planning anything over finite fields, where the situation is very different, though the generic code for `l=2,3,5,7,13` will work (as it is right now, only as long as the characteristic is not 2, 3 or `l`, but eventually that will change).\n\nSome of the methods we are implementing were worked out by  Mark Watkins and me in an unfinished preprint c.2005.\n\nAs one major test of the code for curves over QQ, we are intending to check that the databases are closed under isogeny (as they should be!  at least my own should be).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6887\n\n",
     "created_at": "2009-09-04T11:59:29Z",
     "labels": [
         "elliptic curves",
@@ -14,12 +14,12 @@ archive/issues_006887.json:
     "title": "Implement elliptic curve isogenies (continued)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6887",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
-CC:  was wuthrich shumow kohel jcooley
+CC:  @williamstein @categorie shumow kohel jcooley
 
 Keywords: elliptic curve isogeny
 
@@ -50,16 +50,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6887
 archive/issue_comments_056905.json:
 ```json
 {
-    "body": "Remove assignee davidloeffler.",
+    "body": "Remove assignee @loefflerd.",
     "created_at": "2009-10-09T09:08:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56905",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Remove assignee davidloeffler.
+Remove assignee @loefflerd.
 
 
 
@@ -68,16 +68,16 @@ Remove assignee davidloeffler.
 archive/issue_comments_056906.json:
 ```json
 {
-    "body": "Attachment [URSS_Poster_Computing_Elliptic_Curve_Isogenies_October_2009.pdf](tarball://root/attachments/some-uuid/ticket6887/URSS_Poster_Computing_Elliptic_Curve_Isogenies_October_2009.pdf) by cremona created at 2009-11-09 09:22:51\n\nposter by Jenny for an exhibition at U of Warwick",
+    "body": "Attachment [URSS_Poster_Computing_Elliptic_Curve_Isogenies_October_2009.pdf](tarball://root/attachments/some-uuid/ticket6887/URSS_Poster_Computing_Elliptic_Curve_Isogenies_October_2009.pdf) by @JohnCremona created at 2009-11-09 09:22:51\n\nposter by Jenny for an exhibition at U of Warwick",
     "created_at": "2009-11-09T09:22:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56906",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [URSS_Poster_Computing_Elliptic_Curve_Isogenies_October_2009.pdf](tarball://root/attachments/some-uuid/ticket6887/URSS_Poster_Computing_Elliptic_Curve_Isogenies_October_2009.pdf) by cremona created at 2009-11-09 09:22:51
+Attachment [URSS_Poster_Computing_Elliptic_Curve_Isogenies_October_2009.pdf](tarball://root/attachments/some-uuid/ticket6887/URSS_Poster_Computing_Elliptic_Curve_Isogenies_October_2009.pdf) by @JohnCremona created at 2009-11-09 09:22:51
 
 poster by Jenny for an exhibition at U of Warwick
 
@@ -93,7 +93,7 @@ archive/issue_comments_056907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56907",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_056908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56908",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_056909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56909",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_056910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56910",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_056911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56911",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_056912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56912",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -217,16 +217,16 @@ How weird -- I did not edit any "introspect" files.  I will try to edit the patc
 archive/issue_comments_056913.json:
 ```json
 {
-    "body": "Attachment [trac_6887-isogeny.patch](tarball://root/attachments/some-uuid/ticket6887/trac_6887-isogeny.patch) by cremona created at 2009-11-27 20:44:35\n\napplies to 4.3.alpha0",
+    "body": "Attachment [trac_6887-isogeny.patch](tarball://root/attachments/some-uuid/ticket6887/trac_6887-isogeny.patch) by @JohnCremona created at 2009-11-27 20:44:35\n\napplies to 4.3.alpha0",
     "created_at": "2009-11-27T20:44:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56913",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_6887-isogeny.patch](tarball://root/attachments/some-uuid/ticket6887/trac_6887-isogeny.patch) by cremona created at 2009-11-27 20:44:35
+Attachment [trac_6887-isogeny.patch](tarball://root/attachments/some-uuid/ticket6887/trac_6887-isogeny.patch) by @JohnCremona created at 2009-11-27 20:44:35
 
 applies to 4.3.alpha0
 
@@ -242,7 +242,7 @@ archive/issue_comments_056914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56914",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_056915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56915",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_056916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56916",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -322,7 +322,7 @@ archive/issue_comments_056917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56917",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -339,16 +339,16 @@ Hope to finish and re-post patch on Wednesday.
 archive/issue_comments_056918.json:
 ```json
 {
-    "body": "Attachment [trac_6887-isogeny2.patch](tarball://root/attachments/some-uuid/ticket6887/trac_6887-isogeny2.patch) by cremona created at 2009-12-09 20:20:46\n\nReplaces previous, applies to 4.3.alpha1",
+    "body": "Attachment [trac_6887-isogeny2.patch](tarball://root/attachments/some-uuid/ticket6887/trac_6887-isogeny2.patch) by @JohnCremona created at 2009-12-09 20:20:46\n\nReplaces previous, applies to 4.3.alpha1",
     "created_at": "2009-12-09T20:20:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56918",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_6887-isogeny2.patch](tarball://root/attachments/some-uuid/ticket6887/trac_6887-isogeny2.patch) by cremona created at 2009-12-09 20:20:46
+Attachment [trac_6887-isogeny2.patch](tarball://root/attachments/some-uuid/ticket6887/trac_6887-isogeny2.patch) by @JohnCremona created at 2009-12-09 20:20:46
 
 Replaces previous, applies to 4.3.alpha1
 
@@ -364,7 +364,7 @@ archive/issue_comments_056919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56919",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -384,7 +384,7 @@ archive/issue_comments_056920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56920",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -402,7 +402,7 @@ archive/issue_comments_056921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56921",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -420,7 +420,7 @@ archive/issue_comments_056922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56922",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -444,7 +444,7 @@ archive/issue_comments_056923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56923",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -464,7 +464,7 @@ archive/issue_comments_056924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56924",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -482,7 +482,7 @@ archive/issue_comments_056925.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56925",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -500,7 +500,7 @@ archive/issue_comments_056926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56926",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -520,7 +520,7 @@ archive/issue_comments_056927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56927",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

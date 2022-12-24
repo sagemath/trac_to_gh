@@ -3,7 +3,7 @@
 archive/issues_009179.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  jason ryan mvngu\n\n\n```\n    to the `xy`-plane.\n```\n\nshould have a colon in line 259, I think.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9179\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @jasongrout ryan mvngu\n\n\n```\n    to the `xy`-plane.\n```\n\nshould have a colon in line 259, I think.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9179\n\n",
     "created_at": "2010-06-07T15:40:03Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_009179.json:
     "title": "Typo makes docs not perfect in plot/disk.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9179",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: jason, was
 
-CC:  jason ryan mvngu
+CC:  @jasongrout ryan mvngu
 
 
 ```
@@ -44,7 +44,7 @@ archive/issue_comments_085876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9179",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9179#issuecomment-85876",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -62,7 +62,7 @@ archive/issue_comments_085877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9179",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9179#issuecomment-85877",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_085878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9179",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9179#issuecomment-85878",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_085881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9179",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9179#issuecomment-85881",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

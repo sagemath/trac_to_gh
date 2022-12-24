@@ -14,7 +14,7 @@ archive/issues_002755.json:
     "title": "[with patch, needs review] lattice_polytope.py update",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2755",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 Assignee: mhampton
@@ -52,16 +52,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2755
 archive/issue_comments_018926.json:
 ```json
 {
-    "body": "Attachment [lattice_polytope2.patch](tarball://root/attachments/some-uuid/ticket2755/lattice_polytope2.patch) by novoselt created at 2008-04-01 17:21:02",
+    "body": "Attachment [lattice_polytope2.patch](tarball://root/attachments/some-uuid/ticket2755/lattice_polytope2.patch) by @novoselt created at 2008-04-01 17:21:02",
     "created_at": "2008-04-01T17:21:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2755#issuecomment-18926",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [lattice_polytope2.patch](tarball://root/attachments/some-uuid/ticket2755/lattice_polytope2.patch) by novoselt created at 2008-04-01 17:21:02
+Attachment [lattice_polytope2.patch](tarball://root/attachments/some-uuid/ticket2755/lattice_polytope2.patch) by @novoselt created at 2008-04-01 17:21:02
 
 
 
@@ -70,16 +70,16 @@ Attachment [lattice_polytope2.patch](tarball://root/attachments/some-uuid/ticket
 archive/issue_comments_018927.json:
 ```json
 {
-    "body": "Attachment [reflexive_polytopes_2d.sobj](tarball://root/attachments/some-uuid/ticket2755/reflexive_polytopes_2d.sobj) by novoselt created at 2008-04-01 17:21:25",
+    "body": "Attachment [reflexive_polytopes_2d.sobj](tarball://root/attachments/some-uuid/ticket2755/reflexive_polytopes_2d.sobj) by @novoselt created at 2008-04-01 17:21:25",
     "created_at": "2008-04-01T17:21:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2755#issuecomment-18927",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [reflexive_polytopes_2d.sobj](tarball://root/attachments/some-uuid/ticket2755/reflexive_polytopes_2d.sobj) by novoselt created at 2008-04-01 17:21:25
+Attachment [reflexive_polytopes_2d.sobj](tarball://root/attachments/some-uuid/ticket2755/reflexive_polytopes_2d.sobj) by @novoselt created at 2008-04-01 17:21:25
 
 
 
@@ -88,16 +88,16 @@ Attachment [reflexive_polytopes_2d.sobj](tarball://root/attachments/some-uuid/ti
 archive/issue_comments_018928.json:
 ```json
 {
-    "body": "Attachment [reflexive_polytopes_2d_dict.sobj](tarball://root/attachments/some-uuid/ticket2755/reflexive_polytopes_2d_dict.sobj) by novoselt created at 2008-04-01 17:22:21",
+    "body": "Attachment [reflexive_polytopes_2d_dict.sobj](tarball://root/attachments/some-uuid/ticket2755/reflexive_polytopes_2d_dict.sobj) by @novoselt created at 2008-04-01 17:22:21",
     "created_at": "2008-04-01T17:22:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2755#issuecomment-18928",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [reflexive_polytopes_2d_dict.sobj](tarball://root/attachments/some-uuid/ticket2755/reflexive_polytopes_2d_dict.sobj) by novoselt created at 2008-04-01 17:22:21
+Attachment [reflexive_polytopes_2d_dict.sobj](tarball://root/attachments/some-uuid/ticket2755/reflexive_polytopes_2d_dict.sobj) by @novoselt created at 2008-04-01 17:22:21
 
 
 
@@ -106,16 +106,16 @@ Attachment [reflexive_polytopes_2d_dict.sobj](tarball://root/attachments/some-uu
 archive/issue_comments_018929.json:
 ```json
 {
-    "body": "Attachment [reflexive_polytopes_3d_dict.sobj](tarball://root/attachments/some-uuid/ticket2755/reflexive_polytopes_3d_dict.sobj) by novoselt created at 2008-04-01 17:24:36\n\nThere is one more file which is too big for attaching it to the ticket. All four are available at\nhttp://sage.math.washington.edu/home/novoselt/patch%202008-04-01/",
+    "body": "Attachment [reflexive_polytopes_3d_dict.sobj](tarball://root/attachments/some-uuid/ticket2755/reflexive_polytopes_3d_dict.sobj) by @novoselt created at 2008-04-01 17:24:36\n\nThere is one more file which is too big for attaching it to the ticket. All four are available at\nhttp://sage.math.washington.edu/home/novoselt/patch%202008-04-01/",
     "created_at": "2008-04-01T17:24:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2755#issuecomment-18929",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [reflexive_polytopes_3d_dict.sobj](tarball://root/attachments/some-uuid/ticket2755/reflexive_polytopes_3d_dict.sobj) by novoselt created at 2008-04-01 17:24:36
+Attachment [reflexive_polytopes_3d_dict.sobj](tarball://root/attachments/some-uuid/ticket2755/reflexive_polytopes_3d_dict.sobj) by @novoselt created at 2008-04-01 17:24:36
 
 There is one more file which is too big for attaching it to the ticket. All four are available at
 http://sage.math.washington.edu/home/novoselt/patch%202008-04-01/
@@ -246,7 +246,7 @@ archive/issue_comments_018936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2755#issuecomment-18936",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_018938.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2755#issuecomment-18938",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -352,7 +352,7 @@ archive/issue_comments_018941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2755#issuecomment-18941",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -427,7 +427,7 @@ archive/issue_comments_018944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2755#issuecomment-18944",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -469,16 +469,16 @@ Michael
 archive/issue_comments_018946.json:
 ```json
 {
-    "body": "Attachment [lp_patch_for_3.0.1.alpha1.patch](tarball://root/attachments/some-uuid/ticket2755/lp_patch_for_3.0.1.alpha1.patch) by novoselt created at 2008-05-01 23:49:45\n\nUpdated patch",
+    "body": "Attachment [lp_patch_for_3.0.1.alpha1.patch](tarball://root/attachments/some-uuid/ticket2755/lp_patch_for_3.0.1.alpha1.patch) by @novoselt created at 2008-05-01 23:49:45\n\nUpdated patch",
     "created_at": "2008-05-01T23:49:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2755#issuecomment-18946",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [lp_patch_for_3.0.1.alpha1.patch](tarball://root/attachments/some-uuid/ticket2755/lp_patch_for_3.0.1.alpha1.patch) by novoselt created at 2008-05-01 23:49:45
+Attachment [lp_patch_for_3.0.1.alpha1.patch](tarball://root/attachments/some-uuid/ticket2755/lp_patch_for_3.0.1.alpha1.patch) by @novoselt created at 2008-05-01 23:49:45
 
 Updated patch
 
@@ -494,7 +494,7 @@ archive/issue_comments_018947.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2755#issuecomment-18947",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 

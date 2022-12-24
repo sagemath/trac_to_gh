@@ -212,16 +212,16 @@ Michael
 archive/issue_comments_027637.json:
 ```json
 {
-    "body": "Attachment [sage-3875.patch](tarball://root/attachments/some-uuid/ticket3875/sage-3875.patch) by was created at 2008-08-16 20:41:32",
+    "body": "Attachment [sage-3875.patch](tarball://root/attachments/some-uuid/ticket3875/sage-3875.patch) by @williamstein created at 2008-08-16 20:41:32",
     "created_at": "2008-08-16T20:41:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3875",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3875#issuecomment-27637",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3875.patch](tarball://root/attachments/some-uuid/ticket3875/sage-3875.patch) by was created at 2008-08-16 20:41:32
+Attachment [sage-3875.patch](tarball://root/attachments/some-uuid/ticket3875/sage-3875.patch) by @williamstein created at 2008-08-16 20:41:32
 
 
 

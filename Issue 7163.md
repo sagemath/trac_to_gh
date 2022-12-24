@@ -14,7 +14,7 @@ archive/issues_007163.json:
     "title": "right kernel does not respect sparse=True",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7163",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
@@ -45,7 +45,7 @@ archive/issue_comments_059383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7163#issuecomment-59383",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_059384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7163#issuecomment-59384",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

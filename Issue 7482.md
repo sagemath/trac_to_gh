@@ -14,7 +14,7 @@ archive/issues_007482.json:
     "title": "provide a mode so that undeclared variables magically spring into existence and object oriented notation is not necessary",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7482",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -41,7 +41,7 @@ archive/issue_comments_063157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63157",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_063158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63158",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_063159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63159",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -163,16 +163,16 @@ NameError: Too many automatic variable names and functions created (limit=10000)
 archive/issue_comments_063160.json:
 ```json
 {
-    "body": "Attachment [sagenb_7482.patch](tarball://root/attachments/some-uuid/ticket7482/sagenb_7482.patch) by was created at 2009-11-18 03:29:41\n\napply to the sagenb spkg",
+    "body": "Attachment [sagenb_7482.patch](tarball://root/attachments/some-uuid/ticket7482/sagenb_7482.patch) by @williamstein created at 2009-11-18 03:29:41\n\napply to the sagenb spkg",
     "created_at": "2009-11-18T03:29:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63160",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sagenb_7482.patch](tarball://root/attachments/some-uuid/ticket7482/sagenb_7482.patch) by was created at 2009-11-18 03:29:41
+Attachment [sagenb_7482.patch](tarball://root/attachments/some-uuid/ticket7482/sagenb_7482.patch) by @williamstein created at 2009-11-18 03:29:41
 
 apply to the sagenb spkg
 
@@ -183,16 +183,16 @@ apply to the sagenb spkg
 archive/issue_comments_063161.json:
 ```json
 {
-    "body": "Attachment [sagelib_7482.patch](tarball://root/attachments/some-uuid/ticket7482/sagelib_7482.patch) by was created at 2009-11-18 03:29:54\n\napply to the core sage library",
+    "body": "Attachment [sagelib_7482.patch](tarball://root/attachments/some-uuid/ticket7482/sagelib_7482.patch) by @williamstein created at 2009-11-18 03:29:54\n\napply to the core sage library",
     "created_at": "2009-11-18T03:29:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63161",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sagelib_7482.patch](tarball://root/attachments/some-uuid/ticket7482/sagelib_7482.patch) by was created at 2009-11-18 03:29:54
+Attachment [sagelib_7482.patch](tarball://root/attachments/some-uuid/ticket7482/sagelib_7482.patch) by @williamstein created at 2009-11-18 03:29:54
 
 apply to the core sage library
 
@@ -208,7 +208,7 @@ archive/issue_comments_063162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63162",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_063163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63163",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_063164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63164",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_063165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63165",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -284,7 +284,7 @@ archive/issue_comments_063166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63166",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_063167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63167",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -322,7 +322,7 @@ archive/issue_comments_063168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63168",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_063169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63169",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -361,16 +361,16 @@ Fix typo.  Replaces **sagenb** patch.
 archive/issue_comments_063170.json:
 ```json
 {
-    "body": "Attachment [sagenb_7482.2.patch](tarball://root/attachments/some-uuid/ticket7482/sagenb_7482.2.patch) by mpatel created at 2009-12-10 06:20:39\n\nV3 changes\n\n```\n            sage: automatic_names(True)\n```\n\nto\n\n```\n            sage: automatic_names(True)      # not tested\n```\n",
+    "body": "Attachment [sagenb_7482.2.patch](tarball://root/attachments/some-uuid/ticket7482/sagenb_7482.2.patch) by @qed777 created at 2009-12-10 06:20:39\n\nV3 changes\n\n```\n            sage: automatic_names(True)\n```\n\nto\n\n```\n            sage: automatic_names(True)      # not tested\n```\n",
     "created_at": "2009-12-10T06:20:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63170",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [sagenb_7482.2.patch](tarball://root/attachments/some-uuid/ticket7482/sagenb_7482.2.patch) by mpatel created at 2009-12-10 06:20:39
+Attachment [sagenb_7482.2.patch](tarball://root/attachments/some-uuid/ticket7482/sagenb_7482.2.patch) by @qed777 created at 2009-12-10 06:20:39
 
 V3 changes
 
@@ -392,16 +392,16 @@ to
 archive/issue_comments_063171.json:
 ```json
 {
-    "body": "Attachment [sagenb_7482.3.patch](tarball://root/attachments/some-uuid/ticket7482/sagenb_7482.3.patch) by mpatel created at 2009-12-10 06:21:38\n\nSuppress a doctest (cf. #7650).  Replaces **sagenb** patch.",
+    "body": "Attachment [sagenb_7482.3.patch](tarball://root/attachments/some-uuid/ticket7482/sagenb_7482.3.patch) by @qed777 created at 2009-12-10 06:21:38\n\nSuppress a doctest (cf. #7650).  Replaces **sagenb** patch.",
     "created_at": "2009-12-10T06:21:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63171",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [sagenb_7482.3.patch](tarball://root/attachments/some-uuid/ticket7482/sagenb_7482.3.patch) by mpatel created at 2009-12-10 06:21:38
+Attachment [sagenb_7482.3.patch](tarball://root/attachments/some-uuid/ticket7482/sagenb_7482.3.patch) by @qed777 created at 2009-12-10 06:21:38
 
 Suppress a doctest (cf. #7650).  Replaces **sagenb** patch.
 
@@ -417,7 +417,7 @@ archive/issue_comments_063172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63172",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -435,7 +435,7 @@ archive/issue_comments_063173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63173",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -448,16 +448,16 @@ Rebased vs. #7514's "part3.2".  Replaces **sagenb** patch.
 archive/issue_comments_063174.json:
 ```json
 {
-    "body": "Attachment [sagenb_7482.4.patch](tarball://root/attachments/some-uuid/ticket7482/sagenb_7482.4.patch) by mhansen created at 2010-01-03 22:08:41\n\nI've merged the sagelib patch in 4.3.1.alpha0.",
+    "body": "Attachment [sagenb_7482.4.patch](tarball://root/attachments/some-uuid/ticket7482/sagenb_7482.4.patch) by @mwhansen created at 2010-01-03 22:08:41\n\nI've merged the sagelib patch in 4.3.1.alpha0.",
     "created_at": "2010-01-03T22:08:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63174",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [sagenb_7482.4.patch](tarball://root/attachments/some-uuid/ticket7482/sagenb_7482.4.patch) by mhansen created at 2010-01-03 22:08:41
+Attachment [sagenb_7482.4.patch](tarball://root/attachments/some-uuid/ticket7482/sagenb_7482.4.patch) by @mwhansen created at 2010-01-03 22:08:41
 
 I've merged the sagelib patch in 4.3.1.alpha0.
 
@@ -473,7 +473,7 @@ archive/issue_comments_063175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63175",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -491,7 +491,7 @@ archive/issue_comments_063176.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63176",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

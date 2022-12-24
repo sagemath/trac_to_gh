@@ -3,7 +3,7 @@
 archive/issues_006632.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  rlm\n\nThere is a bug in the blocks_and_cut_vertices() function for graphs such that an incorrect result is returned if the vertex 0 is a cut vertex.\n\n\n```\nsage: G=Graph()\nsage: G.add_vertices(range(5))\nsage: G.add_edges([(0,1),(0,2),(1,2),(2,3),(2,4),(3,4)])\nsage: print G.blocks_and_cut_vertices()\n([[0, 1, 2]], [])\n```\n\n\nThe bug arises because the algorithm as presented in the referenced book uses 0 to indicate a vertex not in the graph.  However, in Sage, we number the vertices of a graph starting at 0.\n\nA patch will be attached below.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6632\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @rlmill\n\nThere is a bug in the blocks_and_cut_vertices() function for graphs such that an incorrect result is returned if the vertex 0 is a cut vertex.\n\n\n```\nsage: G=Graph()\nsage: G.add_vertices(range(5))\nsage: G.add_edges([(0,1),(0,2),(1,2),(2,3),(2,4),(3,4)])\nsage: print G.blocks_and_cut_vertices()\n([[0, 1, 2]], [])\n```\n\n\nThe bug arises because the algorithm as presented in the referenced book uses 0 to indicate a vertex not in the graph.  However, in Sage, we number the vertices of a graph starting at 0.\n\nA patch will be attached below.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6632\n\n",
     "created_at": "2009-07-26T22:10:42Z",
     "labels": [
         "graph theory",
@@ -17,9 +17,9 @@ archive/issues_006632.json:
     "user": "hartke"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  rlm
+CC:  @rlmill
 
 There is a bug in the blocks_and_cut_vertices() function for graphs such that an incorrect result is returned if the vertex 0 is a cut vertex.
 
@@ -130,7 +130,7 @@ archive/issue_comments_054354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6632",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6632#issuecomment-54354",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -186,16 +186,16 @@ sage: g.blocks_and_cut_vertices() # your implementation
 archive/issue_comments_054355.json:
 ```json
 {
-    "body": "Attachment [trac_6632-ref.patch](tarball://root/attachments/some-uuid/ticket6632/trac_6632-ref.patch) by rlm created at 2009-08-03 01:14:39\n\nApply both patches.",
+    "body": "Attachment [trac_6632-ref.patch](tarball://root/attachments/some-uuid/ticket6632/trac_6632-ref.patch) by @rlmill created at 2009-08-03 01:14:39\n\nApply both patches.",
     "created_at": "2009-08-03T01:14:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6632",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6632#issuecomment-54355",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_6632-ref.patch](tarball://root/attachments/some-uuid/ticket6632/trac_6632-ref.patch) by rlm created at 2009-08-03 01:14:39
+Attachment [trac_6632-ref.patch](tarball://root/attachments/some-uuid/ticket6632/trac_6632-ref.patch) by @rlmill created at 2009-08-03 01:14:39
 
 Apply both patches.
 

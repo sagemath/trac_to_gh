@@ -3,7 +3,7 @@
 archive/issues_009848.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  jason eviatarbach\n\nMaple at least seems to implement certain limits of two-variable functions.  This could be good to have.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9849\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @jasongrout @eviatarbach\n\nMaple at least seems to implement certain limits of two-variable functions.  This could be good to have.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9849\n\n",
     "created_at": "2010-09-01T12:49:24Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_009848.json:
     "title": "Multivariable limits",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9848",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  jason eviatarbach
+CC:  @jasongrout @eviatarbach
 
 Maple at least seems to implement certain limits of two-variable functions.  This could be good to have.
 
@@ -39,7 +39,7 @@ archive/issue_comments_097201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9848",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9848#issuecomment-97201",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_097202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9848",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9848#issuecomment-97202",
-    "user": "eviatarbach"
+    "user": "@eviatarbach"
 }
 ```
 

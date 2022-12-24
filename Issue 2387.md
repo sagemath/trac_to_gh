@@ -3,7 +3,7 @@
 archive/issues_002387.json:
 ```json
 {
-    "body": "Assignee: was\n\nCreate a _sage_init_ function that behaves like the _maxima_init_, _magma_init_, etc., functions which returns a string sufficient to construct the given object in Sage.\n\nFor example:\n\n\n```\nsage: a=matrix([[1,2,3],[4,5,6],[7,8,9]])\nsage: a._sage_init_\n'matrix([[1,2,3],[4,5,6],[7,8,9]])'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2387\n\n",
+    "body": "Assignee: @williamstein\n\nCreate a _sage_init_ function that behaves like the _maxima_init_, _magma_init_, etc., functions which returns a string sufficient to construct the given object in Sage.\n\nFor example:\n\n\n```\nsage: a=matrix([[1,2,3],[4,5,6],[7,8,9]])\nsage: a._sage_init_\n'matrix([[1,2,3],[4,5,6],[7,8,9]])'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2387\n\n",
     "created_at": "2008-03-04T20:45:45Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_002387.json:
     "title": "Create a _sage_init_ function for all objects",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2387",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Create a _sage_init_ function that behaves like the _maxima_init_, _magma_init_, etc., functions which returns a string sufficient to construct the given object in Sage.
 
@@ -48,7 +48,7 @@ archive/issue_comments_016110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2387#issuecomment-16110",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -74,16 +74,16 @@ The string returned will not construct the object usually since y is not a varia
 archive/issue_comments_016111.json:
 ```json
 {
-    "body": "Attachment [sage_init.patch](tarball://root/attachments/some-uuid/ticket2387/sage_init.patch) by jason created at 2008-03-05 19:09:40\n\nAlso, there aren't any doctests...I'll be adding those.  If anyone wants to comment on something I did, please do so!  I'm not very familiar with the coercion system and did the above mainly by searching for _magma_init_ and copying where it made sense.",
+    "body": "Attachment [sage_init.patch](tarball://root/attachments/some-uuid/ticket2387/sage_init.patch) by @jasongrout created at 2008-03-05 19:09:40\n\nAlso, there aren't any doctests...I'll be adding those.  If anyone wants to comment on something I did, please do so!  I'm not very familiar with the coercion system and did the above mainly by searching for _magma_init_ and copying where it made sense.",
     "created_at": "2008-03-05T19:09:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2387#issuecomment-16111",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [sage_init.patch](tarball://root/attachments/some-uuid/ticket2387/sage_init.patch) by jason created at 2008-03-05 19:09:40
+Attachment [sage_init.patch](tarball://root/attachments/some-uuid/ticket2387/sage_init.patch) by @jasongrout created at 2008-03-05 19:09:40
 
 Also, there aren't any doctests...I'll be adding those.  If anyone wants to comment on something I did, please do so!  I'm not very familiar with the coercion system and did the above mainly by searching for _magma_init_ and copying where it made sense.
 
@@ -99,7 +99,7 @@ archive/issue_comments_016112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2387#issuecomment-16112",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_016113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2387#issuecomment-16113",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006041.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  rlm jason\n\nAs the subject says. This is a follow-up to #5934.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6041\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @rlmill @jasongrout\n\nAs the subject says. This is a follow-up to #5934.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6041\n\n",
     "created_at": "2009-05-15T06:14:08Z",
     "labels": [
         "graph theory",
@@ -17,9 +17,9 @@ archive/issues_006041.json:
     "user": "mvngu"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  rlm jason
+CC:  @rlmill @jasongrout
 
 As the subject says. This is a follow-up to #5934.
 
@@ -93,7 +93,7 @@ archive/issue_comments_048104.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6041#issuecomment-48104",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -419,7 +419,7 @@ archive/issue_comments_048106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6041#issuecomment-48106",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -514,7 +514,7 @@ archive/issue_comments_048108.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6041#issuecomment-48108",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -551,7 +551,7 @@ archive/issue_comments_048109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6041#issuecomment-48109",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

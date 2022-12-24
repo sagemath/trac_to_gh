@@ -3,7 +3,7 @@
 archive/issues_008563.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  mhansen\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: var('r')\nr\nsage: simplify((r-1)^3 *r)\n(r - 1)^3*r\nsage: quit\nExiting SAGE (CPU time 0m0.08s, Wall time 0m32.87s).\nExiting spawned R Interpreter process.\nExiting spawned Maxima process.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8563\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @mwhansen\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: var('r')\nr\nsage: simplify((r-1)^3 *r)\n(r - 1)^3*r\nsage: quit\nExiting SAGE (CPU time 0m0.08s, Wall time 0m32.87s).\nExiting spawned R Interpreter process.\nExiting spawned Maxima process.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8563\n\n",
     "created_at": "2010-03-20T01:48:46Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_008563.json:
     "title": "R interpreter starts (seemingly) without reason",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8563",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  mhansen
+CC:  @mwhansen
 
 
 ```
@@ -52,7 +52,7 @@ archive/issue_comments_077533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8563",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8563#issuecomment-77533",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_077534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8563",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8563#issuecomment-77534",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001516.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1516\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1516\n\n",
     "created_at": "2007-12-15T02:18:58Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001516.json:
     "title": "jmol spkg, use from notebook and command line",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1516",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1516
 archive/issue_comments_009717.json:
 ```json
 {
-    "body": "Changing assignee from was to robertwb.",
+    "body": "Changing assignee from @williamstein to @robertwb.",
     "created_at": "2007-12-15T02:19:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1516",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1516#issuecomment-9717",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from was to robertwb.
+Changing assignee from @williamstein to @robertwb.
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_009718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1516",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1516#issuecomment-9718",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing status from new to assigned.
 archive/issue_comments_009719.json:
 ```json
 {
-    "body": "Attachment [jmol-cmdline.hg](tarball://root/attachments/some-uuid/ticket1516/jmol-cmdline.hg) by robertwb created at 2007-12-16 10:08:10\n\nSee spkg at http://sage.math.washington.edu/home/robertwb/3d/jmol-11.2.14.spkg\n\nNote, this is 14MB, but it is just the full Jmol bundle which has about 4MB docs, 6MB source, and 3M redundant applet binaries, not all of which we may want to include. \n\nI realize the bundle has other patches from other tickets (e.g. #1533), but these are needed.",
+    "body": "Attachment [jmol-cmdline.hg](tarball://root/attachments/some-uuid/ticket1516/jmol-cmdline.hg) by @robertwb created at 2007-12-16 10:08:10\n\nSee spkg at http://sage.math.washington.edu/home/robertwb/3d/jmol-11.2.14.spkg\n\nNote, this is 14MB, but it is just the full Jmol bundle which has about 4MB docs, 6MB source, and 3M redundant applet binaries, not all of which we may want to include. \n\nI realize the bundle has other patches from other tickets (e.g. #1533), but these are needed.",
     "created_at": "2007-12-16T10:08:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1516",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1516#issuecomment-9719",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [jmol-cmdline.hg](tarball://root/attachments/some-uuid/ticket1516/jmol-cmdline.hg) by robertwb created at 2007-12-16 10:08:10
+Attachment [jmol-cmdline.hg](tarball://root/attachments/some-uuid/ticket1516/jmol-cmdline.hg) by @robertwb created at 2007-12-16 10:08:10
 
 See spkg at http://sage.math.washington.edu/home/robertwb/3d/jmol-11.2.14.spkg
 
@@ -97,7 +97,7 @@ archive/issue_comments_009720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1516",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1516#issuecomment-9720",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

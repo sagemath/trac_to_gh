@@ -58,16 +58,16 @@ Michael
 archive/issue_comments_040625.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to mhansen.",
+    "body": "Changing assignee from mabshoff to @mwhansen.",
     "created_at": "2009-05-28T20:24:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5286#issuecomment-40625",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from mabshoff to mhansen.
+Changing assignee from mabshoff to @mwhansen.
 
 
 
@@ -81,7 +81,7 @@ archive/issue_comments_040626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5286#issuecomment-40626",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_040627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5286#issuecomment-40627",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_040628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5286#issuecomment-40628",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

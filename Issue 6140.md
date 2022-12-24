@@ -14,7 +14,7 @@ archive/issues_006140.json:
     "title": "Upgrade numpy to 1.3.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6140",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: mabshoff
@@ -37,7 +37,7 @@ archive/issue_comments_049028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6140",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6140#issuecomment-49028",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -50,16 +50,16 @@ This is related to #3391.  Also, #4205 can likely be closed once this ticket is 
 archive/issue_comments_049029.json:
 ```json
 {
-    "body": "Attachment [numpy-1.3.0-update.patch](tarball://root/attachments/some-uuid/ticket6140/numpy-1.3.0-update.patch) by jason created at 2009-05-27 22:11:17\n\nThere are a few minor doctest updates that need to be done.  See above for a patch which addresses at least some of these.\n\nWhen doing all doctests on 4.0.rc0, I get failures in:\n\n\n```\nThe following tests failed:\n\n        sage -t  devel/sage/sage/misc/banner.py # 5 doctests failed\n        sage -t  devel/sage/sage/matrix/matrix_symbolic_dense.pyx # 3 doctests failed\n        sage -t  devel/sage/sage/matrix/tests.py # 1 doctests failed\n        sage -t  devel/sage/sage/rings/polynomial/polynomial_element.pyx # 2 doctests failed\n        sage -t  devel/sage/sage/calculus/functions.py # 1 doctests failed\n        sage -t  devel/sage/sage/plot/plot_field.py # 1 doctests failed\n----------------------------------------------------------------------\n```\n\n\nHowever, some of these failures are from rc0, not from the numpy update.  The patch above corrects the failures that I know are from the numpy updated.  Please let me know if there are any other doctests that need to be updated in this ticket.",
+    "body": "Attachment [numpy-1.3.0-update.patch](tarball://root/attachments/some-uuid/ticket6140/numpy-1.3.0-update.patch) by @jasongrout created at 2009-05-27 22:11:17\n\nThere are a few minor doctest updates that need to be done.  See above for a patch which addresses at least some of these.\n\nWhen doing all doctests on 4.0.rc0, I get failures in:\n\n\n```\nThe following tests failed:\n\n        sage -t  devel/sage/sage/misc/banner.py # 5 doctests failed\n        sage -t  devel/sage/sage/matrix/matrix_symbolic_dense.pyx # 3 doctests failed\n        sage -t  devel/sage/sage/matrix/tests.py # 1 doctests failed\n        sage -t  devel/sage/sage/rings/polynomial/polynomial_element.pyx # 2 doctests failed\n        sage -t  devel/sage/sage/calculus/functions.py # 1 doctests failed\n        sage -t  devel/sage/sage/plot/plot_field.py # 1 doctests failed\n----------------------------------------------------------------------\n```\n\n\nHowever, some of these failures are from rc0, not from the numpy update.  The patch above corrects the failures that I know are from the numpy updated.  Please let me know if there are any other doctests that need to be updated in this ticket.",
     "created_at": "2009-05-27T22:11:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6140",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6140#issuecomment-49029",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [numpy-1.3.0-update.patch](tarball://root/attachments/some-uuid/ticket6140/numpy-1.3.0-update.patch) by jason created at 2009-05-27 22:11:17
+Attachment [numpy-1.3.0-update.patch](tarball://root/attachments/some-uuid/ticket6140/numpy-1.3.0-update.patch) by @jasongrout created at 2009-05-27 22:11:17
 
 There are a few minor doctest updates that need to be done.  See above for a patch which addresses at least some of these.
 
@@ -121,7 +121,7 @@ archive/issue_comments_049031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6140",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6140#issuecomment-49031",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_049032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6140",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6140#issuecomment-49032",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -156,16 +156,16 @@ I'm going to be bold and say that my one-character patch doesn't really need a r
 archive/issue_comments_049033.json:
 ```json
 {
-    "body": "Attachment [trac-6140-pt2.patch](tarball://root/attachments/some-uuid/ticket6140/trac-6140-pt2.patch) by craigcitro created at 2009-06-11 09:38:03\n\napply after spkg and patch above",
+    "body": "Attachment [trac-6140-pt2.patch](tarball://root/attachments/some-uuid/ticket6140/trac-6140-pt2.patch) by @craigcitro created at 2009-06-11 09:38:03\n\napply after spkg and patch above",
     "created_at": "2009-06-11T09:38:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6140",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6140#issuecomment-49033",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-6140-pt2.patch](tarball://root/attachments/some-uuid/ticket6140/trac-6140-pt2.patch) by craigcitro created at 2009-06-11 09:38:03
+Attachment [trac-6140-pt2.patch](tarball://root/attachments/some-uuid/ticket6140/trac-6140-pt2.patch) by @craigcitro created at 2009-06-11 09:38:03
 
 apply after spkg and patch above
 
@@ -181,7 +181,7 @@ archive/issue_comments_049034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6140",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6140#issuecomment-49034",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_049035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6140",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6140#issuecomment-49035",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001526.json:
 ```json
 {
-    "body": "Assignee: was\n\nE.g., in linear_code.py line 780 (in extended_code()), this line dominates:\n\n\n```\n        Gxs = Gx._matrix_(F)           # this is the killer\n```\n\n\nThat is dumb.  Optimize this a lot.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1526\n\n",
+    "body": "Assignee: @williamstein\n\nE.g., in linear_code.py line 780 (in extended_code()), this line dominates:\n\n\n```\n        Gxs = Gx._matrix_(F)           # this is the killer\n```\n\n\nThat is dumb.  Optimize this a lot.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1526\n\n",
     "created_at": "2007-12-15T23:10:22Z",
     "labels": [
         "interfaces",
@@ -13,10 +13,10 @@ archive/issues_001526.json:
     "title": "conversion from gap matrix over finite field to sage matrix is VERY VERY VERY slow -- but robust.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1526",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 E.g., in linear_code.py line 780 (in extended_code()), this line dominates:
 
@@ -44,7 +44,7 @@ archive/issue_comments_009764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1526",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1526#issuecomment-9764",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_009765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1526",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1526#issuecomment-9765",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_009766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1526",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1526#issuecomment-9766",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

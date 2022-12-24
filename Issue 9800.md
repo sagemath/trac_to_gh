@@ -3,7 +3,7 @@
 archive/issues_009800.json:
 ```json
 {
-    "body": "Assignee: ncohen\n\nKeywords: linear programming, constructions, doc\n\nThe linear programming page in the Sage Constructions document has a few errors. \n\n1.  In the vertex cover example, the objective should be to minimize, not maximize the sum.  Also, the example code is missing the objective function.\n\n2.  The maximal matching example code is also missing the objective function.\n\n3.  I couldn't run the examples even after having installed glpk according to the instructions.  Sage complained that no solver was installed.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9801\n\n",
+    "body": "Assignee: @nathanncohen\n\nKeywords: linear programming, constructions, doc\n\nThe linear programming page in the Sage Constructions document has a few errors. \n\n1.  In the vertex cover example, the objective should be to minimize, not maximize the sum.  Also, the example code is missing the objective function.\n\n2.  The maximal matching example code is also missing the objective function.\n\n3.  I couldn't run the examples even after having installed glpk according to the instructions.  Sage complained that no solver was installed.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9801\n\n",
     "created_at": "2010-08-25T13:48:21Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_009800.json:
     "title": "Linear programming construction doc fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9800",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
-Assignee: ncohen
+Assignee: @nathanncohen
 
 Keywords: linear programming, constructions, doc
 
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9801
 archive/issue_comments_096292.json:
 ```json
 {
-    "body": "Attachment [trac-9801-linear-programming-constructions-doc.patch](tarball://root/attachments/some-uuid/ticket9801/trac-9801-linear-programming-constructions-doc.patch) by rhinton created at 2010-08-25 14:01:24",
+    "body": "Attachment [trac-9801-linear-programming-constructions-doc.patch](tarball://root/attachments/some-uuid/ticket9801/trac-9801-linear-programming-constructions-doc.patch) by @rhinton created at 2010-08-25 14:01:24",
     "created_at": "2010-08-25T14:01:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9800#issuecomment-96292",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
-Attachment [trac-9801-linear-programming-constructions-doc.patch](tarball://root/attachments/some-uuid/ticket9801/trac-9801-linear-programming-constructions-doc.patch) by rhinton created at 2010-08-25 14:01:24
+Attachment [trac-9801-linear-programming-constructions-doc.patch](tarball://root/attachments/some-uuid/ticket9801/trac-9801-linear-programming-constructions-doc.patch) by @rhinton created at 2010-08-25 14:01:24
 
 
 
@@ -64,7 +64,7 @@ archive/issue_comments_096293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9800#issuecomment-96293",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_096294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9800#issuecomment-96294",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_096295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9800#issuecomment-96295",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_096296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9800#issuecomment-96296",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 

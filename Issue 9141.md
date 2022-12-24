@@ -3,7 +3,7 @@
 archive/issues_009141.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  ncohen rlm\n\nThis patch adds a function to the graphs object that finds cospectral graphs.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9141\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @nathanncohen @rlmill\n\nThis patch adds a function to the graphs object that finds cospectral graphs.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9141\n\n",
     "created_at": "2010-06-04T20:29:27Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_009141.json:
     "title": "find cospectral graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9141",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jason, ncohen, rlm
 
-CC:  ncohen rlm
+CC:  @nathanncohen @rlmill
 
 This patch adds a function to the graphs object that finds cospectral graphs.
 
@@ -39,7 +39,7 @@ archive/issue_comments_085336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9141#issuecomment-85336",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_085337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9141#issuecomment-85337",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_085338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9141#issuecomment-85338",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_085339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9141#issuecomment-85339",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_085340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9141#issuecomment-85340",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_085341.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9141#issuecomment-85341",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_085342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9141#issuecomment-85342",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_085343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9141#issuecomment-85343",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_085344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9141#issuecomment-85344",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_085345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9141#issuecomment-85345",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_085346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9141#issuecomment-85346",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_085347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9141#issuecomment-85347",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -303,7 +303,7 @@ archive/issue_comments_085348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9141#issuecomment-85348",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -316,16 +316,16 @@ Okok :-)
 archive/issue_comments_085349.json:
 ```json
 {
-    "body": "Attachment [trac-9141-cospectral_graphs.patch](tarball://root/attachments/some-uuid/ticket9141/trac-9141-cospectral_graphs.patch) by jason created at 2010-06-04 21:52:29",
+    "body": "Attachment [trac-9141-cospectral_graphs.patch](tarball://root/attachments/some-uuid/ticket9141/trac-9141-cospectral_graphs.patch) by @jasongrout created at 2010-06-04 21:52:29",
     "created_at": "2010-06-04T21:52:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9141#issuecomment-85349",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-9141-cospectral_graphs.patch](tarball://root/attachments/some-uuid/ticket9141/trac-9141-cospectral_graphs.patch) by jason created at 2010-06-04 21:52:29
+Attachment [trac-9141-cospectral_graphs.patch](tarball://root/attachments/some-uuid/ticket9141/trac-9141-cospectral_graphs.patch) by @jasongrout created at 2010-06-04 21:52:29
 
 
 
@@ -339,7 +339,7 @@ archive/issue_comments_085350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9141#issuecomment-85350",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -357,7 +357,7 @@ archive/issue_comments_085351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9141#issuecomment-85351",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -377,7 +377,7 @@ archive/issue_comments_085352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9141#issuecomment-85352",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -395,7 +395,7 @@ archive/issue_comments_085353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9141#issuecomment-85353",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -413,7 +413,7 @@ archive/issue_comments_085354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9141#issuecomment-85354",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -426,16 +426,16 @@ Thanks for the review!  If you change "ommitted" to "omitted" (http://www.merria
 archive/issue_comments_085355.json:
 ```json
 {
-    "body": "Attachment [trac_9141-smallfixes.patch](tarball://root/attachments/some-uuid/ticket9141/trac_9141-smallfixes.patch) by ncohen created at 2010-07-09 06:50:14",
+    "body": "Attachment [trac_9141-smallfixes.patch](tarball://root/attachments/some-uuid/ticket9141/trac_9141-smallfixes.patch) by @nathanncohen created at 2010-07-09 06:50:14",
     "created_at": "2010-07-09T06:50:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9141#issuecomment-85355",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_9141-smallfixes.patch](tarball://root/attachments/some-uuid/ticket9141/trac_9141-smallfixes.patch) by ncohen created at 2010-07-09 06:50:14
+Attachment [trac_9141-smallfixes.patch](tarball://root/attachments/some-uuid/ticket9141/trac_9141-smallfixes.patch) by @nathanncohen created at 2010-07-09 06:50:14
 
 
 
@@ -449,7 +449,7 @@ archive/issue_comments_085356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9141#issuecomment-85356",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -469,7 +469,7 @@ archive/issue_comments_085357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9141#issuecomment-85357",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -487,7 +487,7 @@ archive/issue_comments_085358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9141#issuecomment-85358",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -516,16 +516,16 @@ Please check and let me know if there are any problems.
 archive/issue_comments_085359.json:
 ```json
 {
-    "body": "Attachment [trac-9141-cospectral_graphs.2.patch](tarball://root/attachments/some-uuid/ticket9141/trac-9141-cospectral_graphs.2.patch) by mpatel created at 2010-07-21 02:18:33\n\nRebased for queue in comment 15.  Replaces previous version.",
+    "body": "Attachment [trac-9141-cospectral_graphs.2.patch](tarball://root/attachments/some-uuid/ticket9141/trac-9141-cospectral_graphs.2.patch) by @qed777 created at 2010-07-21 02:18:33\n\nRebased for queue in comment 15.  Replaces previous version.",
     "created_at": "2010-07-21T02:18:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9141#issuecomment-85359",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac-9141-cospectral_graphs.2.patch](tarball://root/attachments/some-uuid/ticket9141/trac-9141-cospectral_graphs.2.patch) by mpatel created at 2010-07-21 02:18:33
+Attachment [trac-9141-cospectral_graphs.2.patch](tarball://root/attachments/some-uuid/ticket9141/trac-9141-cospectral_graphs.2.patch) by @qed777 created at 2010-07-21 02:18:33
 
 Rebased for queue in comment 15.  Replaces previous version.
 
@@ -541,7 +541,7 @@ archive/issue_comments_085360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9141#issuecomment-85360",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -572,7 +572,7 @@ archive/issue_comments_085361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9141#issuecomment-85361",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -590,7 +590,7 @@ archive/issue_comments_085362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9141#issuecomment-85362",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -608,7 +608,7 @@ archive/issue_comments_085363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9141#issuecomment-85363",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -626,7 +626,7 @@ archive/issue_comments_085364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9141#issuecomment-85364",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -644,7 +644,7 @@ archive/issue_comments_085365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9141#issuecomment-85365",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003873.json:
     "title": "Doctest should test for warnings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3873",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: mabshoff
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3873
 archive/issue_comments_027618.json:
 ```json
 {
-    "body": "Attachment [doctest-warnings.patch](tarball://root/attachments/some-uuid/ticket3873/doctest-warnings.patch) by mhansen created at 2008-08-15 21:53:49",
+    "body": "Attachment [doctest-warnings.patch](tarball://root/attachments/some-uuid/ticket3873/doctest-warnings.patch) by @mwhansen created at 2008-08-15 21:53:49",
     "created_at": "2008-08-15T21:53:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3873#issuecomment-27618",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [doctest-warnings.patch](tarball://root/attachments/some-uuid/ticket3873/doctest-warnings.patch) by mhansen created at 2008-08-15 21:53:49
+Attachment [doctest-warnings.patch](tarball://root/attachments/some-uuid/ticket3873/doctest-warnings.patch) by @mwhansen created at 2008-08-15 21:53:49
 
 
 
@@ -70,7 +70,7 @@ archive/issue_comments_027619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3873#issuecomment-27619",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_027620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3873#issuecomment-27620",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

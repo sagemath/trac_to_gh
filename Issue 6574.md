@@ -3,7 +3,7 @@
 archive/issues_006574.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nCC:  cremona\n\nKeywords: elliptic curve, quadratic twist\n\n\n```\nE = EllipticCurve('32a1')\nD = E.is_quadratic_twist(E)\nD, type(D)\n```\n\n\nyields\n\n\n```\n(1, <type 'sage.rings.rational.Rational'>)\n```\n\n\nbut\n\n\n```\nD = E.is_quadratic_twist(E.quadratic_twist(5))\nD, type(D)\n```\n\n\ngives back\n\n\n```\n(5, <type 'sage.rings.integer.Integer'>)\n```\n\n\nI think in the first case, we should also give back the integer 1. The cause of this is in ell_field.py. In the first case we exit is_quadratic_twist at line 353 with\n\n\n```\nreturn K.one_element()\n```\n\n\nIn the second case we exit at the end after\nline 394 has changed the type by \n\n\n```\nif K is rings.QQ:\n    D = D.squarefree_part()\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6574\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @JohnCremona\n\nKeywords: elliptic curve, quadratic twist\n\n\n```\nE = EllipticCurve('32a1')\nD = E.is_quadratic_twist(E)\nD, type(D)\n```\n\n\nyields\n\n\n```\n(1, <type 'sage.rings.rational.Rational'>)\n```\n\n\nbut\n\n\n```\nD = E.is_quadratic_twist(E.quadratic_twist(5))\nD, type(D)\n```\n\n\ngives back\n\n\n```\n(5, <type 'sage.rings.integer.Integer'>)\n```\n\n\nI think in the first case, we should also give back the integer 1. The cause of this is in ell_field.py. In the first case we exit is_quadratic_twist at line 353 with\n\n\n```\nreturn K.one_element()\n```\n\n\nIn the second case we exit at the end after\nline 394 has changed the type by \n\n\n```\nif K is rings.QQ:\n    D = D.squarefree_part()\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6574\n\n",
     "created_at": "2009-07-20T23:03:04Z",
     "labels": [
         "elliptic curves",
@@ -14,12 +14,12 @@ archive/issues_006574.json:
     "title": "Type issue in is_quadratic_twist",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6574",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
-CC:  cremona
+CC:  @JohnCremona
 
 Keywords: elliptic curve, quadratic twist
 
@@ -92,7 +92,7 @@ archive/issue_comments_053682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6574#issuecomment-53682",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -107,16 +107,16 @@ On second thoughts we already have special code for QQ (calling squarefree_part(
 archive/issue_comments_053683.json:
 ```json
 {
-    "body": "Attachment [trac_6574.patch](tarball://root/attachments/some-uuid/ticket6574/trac_6574.patch) by wuthrich created at 2009-07-21 18:31:38\n\nI opted for your second suggestion. In case K is QQ it is ZZ(1) that is returned.",
+    "body": "Attachment [trac_6574.patch](tarball://root/attachments/some-uuid/ticket6574/trac_6574.patch) by @categorie created at 2009-07-21 18:31:38\n\nI opted for your second suggestion. In case K is QQ it is ZZ(1) that is returned.",
     "created_at": "2009-07-21T18:31:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6574#issuecomment-53683",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_6574.patch](tarball://root/attachments/some-uuid/ticket6574/trac_6574.patch) by wuthrich created at 2009-07-21 18:31:38
+Attachment [trac_6574.patch](tarball://root/attachments/some-uuid/ticket6574/trac_6574.patch) by @categorie created at 2009-07-21 18:31:38
 
 I opted for your second suggestion. In case K is QQ it is ZZ(1) that is returned.
 
@@ -132,7 +132,7 @@ archive/issue_comments_053684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6574#issuecomment-53684",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

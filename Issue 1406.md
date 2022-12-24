@@ -14,7 +14,7 @@ archive/issues_001406.json:
     "title": "bug in coercion of multivariate polynomials (possibly libsingular related)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1406",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -58,7 +58,7 @@ archive/issue_comments_009070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1406#issuecomment-9070",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -73,16 +73,16 @@ I have a fix for this, but it causes a segfault in the testing of multi_polynomi
 archive/issue_comments_009071.json:
 ```json
 {
-    "body": "Changing assignee from somebody to mhansen.",
+    "body": "Changing assignee from somebody to @mwhansen.",
     "created_at": "2007-12-06T06:12:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1406#issuecomment-9071",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from somebody to mhansen.
+Changing assignee from somebody to @mwhansen.
 
 
 
@@ -96,7 +96,7 @@ archive/issue_comments_009072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1406#issuecomment-9072",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -109,16 +109,16 @@ Changing status from new to assigned.
 archive/issue_comments_009073.json:
 ```json
 {
-    "body": "Attachment [1406.patch](tarball://root/attachments/some-uuid/ticket1406/1406.patch) by mhansen created at 2007-12-06 08:28:44",
+    "body": "Attachment [1406.patch](tarball://root/attachments/some-uuid/ticket1406/1406.patch) by @mwhansen created at 2007-12-06 08:28:44",
     "created_at": "2007-12-06T08:28:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1406#issuecomment-9073",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1406.patch](tarball://root/attachments/some-uuid/ticket1406/1406.patch) by mhansen created at 2007-12-06 08:28:44
+Attachment [1406.patch](tarball://root/attachments/some-uuid/ticket1406/1406.patch) by @mwhansen created at 2007-12-06 08:28:44
 
 
 
@@ -127,16 +127,16 @@ Attachment [1406.patch](tarball://root/attachments/some-uuid/ticket1406/1406.pat
 archive/issue_comments_009074.json:
 ```json
 {
-    "body": "Attachment [trac-1406.patch](tarball://root/attachments/some-uuid/ticket1406/trac-1406.patch) by was created at 2007-12-06 15:55:33\n\nThis is a -- I think -- better version of the 1406.patch that mhansen attached -- use it instead.",
+    "body": "Attachment [trac-1406.patch](tarball://root/attachments/some-uuid/ticket1406/trac-1406.patch) by @williamstein created at 2007-12-06 15:55:33\n\nThis is a -- I think -- better version of the 1406.patch that mhansen attached -- use it instead.",
     "created_at": "2007-12-06T15:55:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1406#issuecomment-9074",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1406.patch](tarball://root/attachments/some-uuid/ticket1406/trac-1406.patch) by was created at 2007-12-06 15:55:33
+Attachment [trac-1406.patch](tarball://root/attachments/some-uuid/ticket1406/trac-1406.patch) by @williamstein created at 2007-12-06 15:55:33
 
 This is a -- I think -- better version of the 1406.patch that mhansen attached -- use it instead.
 
@@ -152,7 +152,7 @@ archive/issue_comments_009075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1406#issuecomment-9075",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_009076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1406#issuecomment-9076",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

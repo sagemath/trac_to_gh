@@ -3,7 +3,7 @@
 archive/issues_004243.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  was mhansen\n\nKeywords: pynac, symbolics\n\nThere is a new version of pynac available. :)\n\nThis version allows setting custom python functions to perform evaluation, numeric evaluation, derivation, series expansion, etc. on symbolic functions.\n\nThe new package is available is here:\n\nhttp://www.risc.jku.at/people/berocal/sage/pynac-0.1.1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/4243\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @williamstein @mwhansen\n\nKeywords: pynac, symbolics\n\nThere is a new version of pynac available. :)\n\nThis version allows setting custom python functions to perform evaluation, numeric evaluation, derivation, series expansion, etc. on symbolic functions.\n\nThe new package is available is here:\n\nhttp://www.risc.jku.at/people/berocal/sage/pynac-0.1.1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/4243\n\n",
     "created_at": "2008-10-04T20:26:25Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_004243.json:
     "title": "[with spkg, needs review] pynac package version bump to 0.1.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4243",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 Assignee: mabshoff
 
-CC:  was mhansen
+CC:  @williamstein @mwhansen
 
 Keywords: pynac, symbolics
 
@@ -47,7 +47,7 @@ archive/issue_comments_030842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4243#issuecomment-30842",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

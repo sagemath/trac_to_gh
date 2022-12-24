@@ -3,7 +3,7 @@
 archive/issues_001185.json:
 ```json
 {
-    "body": "Assignee: was\n\nI run into some coercion trouble when I reduce a fourier coefficient\nof a cusp form modulo a prime ideal.\n\nAny idea how I can avoid this?\n\n\n```\nsage: M = ModularSymbols(77, 2)\n\nsage: s = M.cuspidal_subspace().new_subspace()\n\nsage: N = s.decomposition()\n\nsage: f = N[3].q_eigenform()\n\nsage: R = f.base_ring()\n\nsage: K = R.number_field()\n\nsage: O = K.ring_of_integers()\n\nsage: I = O.ideal(7)\n\nsage: F = O.residue_field(I)\n\nsage: F(f[2])\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call\nlast)\n\n/home/burhanud/tau_nov14_07/<ipython console> in <module>()\n\n/home/burhanud/tau_nov14_07/residue_field.pyx in\nsage.rings.residue_field.ResidueFiniteField_givaro.__call__()\n\n/home/burhanud/tau_nov14_07/finite_field_givaro.pyx in\nsage.rings.finite_field_givaro.FiniteField_givaro.__call__()\n\n<type 'exceptions.TypeError'>: unable to coerce\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1185\n\n",
+    "body": "Assignee: @williamstein\n\nI run into some coercion trouble when I reduce a fourier coefficient\nof a cusp form modulo a prime ideal.\n\nAny idea how I can avoid this?\n\n\n```\nsage: M = ModularSymbols(77, 2)\n\nsage: s = M.cuspidal_subspace().new_subspace()\n\nsage: N = s.decomposition()\n\nsage: f = N[3].q_eigenform()\n\nsage: R = f.base_ring()\n\nsage: K = R.number_field()\n\nsage: O = K.ring_of_integers()\n\nsage: I = O.ideal(7)\n\nsage: F = O.residue_field(I)\n\nsage: F(f[2])\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call\nlast)\n\n/home/burhanud/tau_nov14_07/<ipython console> in <module>()\n\n/home/burhanud/tau_nov14_07/residue_field.pyx in\nsage.rings.residue_field.ResidueFiniteField_givaro.__call__()\n\n/home/burhanud/tau_nov14_07/finite_field_givaro.pyx in\nsage.rings.finite_field_givaro.FiniteField_givaro.__call__()\n\n<type 'exceptions.TypeError'>: unable to coerce\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1185\n\n",
     "created_at": "2007-11-16T10:39:30Z",
     "labels": [
         "number theory",
@@ -17,7 +17,7 @@ archive/issues_001185.json:
     "user": "ifti"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I run into some coercion trouble when I reduce a fourier coefficient
 of a cusp form modulo a prime ideal.
@@ -117,7 +117,7 @@ archive/issue_comments_007317.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1185",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1185#issuecomment-7317",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

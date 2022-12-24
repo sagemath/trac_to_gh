@@ -3,7 +3,7 @@
 archive/issues_003799.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  rlm\n\nThis is part of Jason Grout's formatting of his database, but it should be translated to and from a sequence of integers for the user.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3799\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @rlmill\n\nThis is part of Jason Grout's formatting of his database, but it should be translated to and from a sequence of integers for the user.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3799\n\n",
     "created_at": "2008-08-10T10:04:30Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_003799.json:
     "title": "degree sequence should not be a single integer in graph_database",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3799",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  rlm
+CC:  @rlmill
 
 This is part of Jason Grout's formatting of his database, but it should be translated to and from a sequence of integers for the user.
 
@@ -111,7 +111,7 @@ archive/issue_comments_027013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3799#issuecomment-27013",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_027016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3799#issuecomment-27016",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

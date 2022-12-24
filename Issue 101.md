@@ -3,7 +3,7 @@
 archive/issues_000101.json:
 ```json
 {
-    "body": "Assignee: was\n\nSee http://sage.math.washington.edu/home/rlmill/graph_software.html for\ninitial research that Robert Miller and Emily Kirkman are doing on this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/101\n\n",
+    "body": "Assignee: @williamstein\n\nSee http://sage.math.washington.edu/home/rlmill/graph_software.html for\ninitial research that Robert Miller and Emily Kirkman are doing on this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/101\n\n",
     "created_at": "2006-10-01T12:55:13Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_000101.json:
     "title": "graph theory -- create a graph theory package for SAGE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/101",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 See http://sage.math.washington.edu/home/rlmill/graph_software.html for
 initial research that Robert Miller and Emily Kirkman are doing on this.
@@ -38,7 +38,7 @@ archive/issue_comments_000476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/101",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/101#issuecomment-476",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

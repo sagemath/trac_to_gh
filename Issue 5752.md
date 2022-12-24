@@ -14,7 +14,7 @@ archive/issues_005752.json:
     "title": "Bring doctests of sage/games/sudoku.py to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5752",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 Assignee: mabshoff
@@ -37,7 +37,7 @@ archive/issue_comments_044962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5752",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5752#issuecomment-44962",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -50,16 +50,16 @@ Coverage is now 100%, Several additional examples, including a minimal-hint, uni
 archive/issue_comments_044963.json:
 ```json
 {
-    "body": "Attachment [trac_5752_sudoku_doctest.patch](tarball://root/attachments/some-uuid/ticket5752/trac_5752_sudoku_doctest.patch) by rbeezer created at 2009-04-11 19:29:09",
+    "body": "Attachment [trac_5752_sudoku_doctest.patch](tarball://root/attachments/some-uuid/ticket5752/trac_5752_sudoku_doctest.patch) by @rbeezer created at 2009-04-11 19:29:09",
     "created_at": "2009-04-11T19:29:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5752",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5752#issuecomment-44963",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_5752_sudoku_doctest.patch](tarball://root/attachments/some-uuid/ticket5752/trac_5752_sudoku_doctest.patch) by rbeezer created at 2009-04-11 19:29:09
+Attachment [trac_5752_sudoku_doctest.patch](tarball://root/attachments/some-uuid/ticket5752/trac_5752_sudoku_doctest.patch) by @rbeezer created at 2009-04-11 19:29:09
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_044964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5752",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5752#issuecomment-44964",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_044965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5752",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5752#issuecomment-44965",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 

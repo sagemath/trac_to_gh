@@ -35,16 +35,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5659
 archive/issue_comments_044243.json:
 ```json
 {
-    "body": "Attachment [solve_mod.patch](tarball://root/attachments/some-uuid/ticket5659/solve_mod.patch) by was created at 2009-04-12 04:25:02",
+    "body": "Attachment [solve_mod.patch](tarball://root/attachments/some-uuid/ticket5659/solve_mod.patch) by @williamstein created at 2009-04-12 04:25:02",
     "created_at": "2009-04-12T04:25:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5659#issuecomment-44243",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [solve_mod.patch](tarball://root/attachments/some-uuid/ticket5659/solve_mod.patch) by was created at 2009-04-12 04:25:02
+Attachment [solve_mod.patch](tarball://root/attachments/some-uuid/ticket5659/solve_mod.patch) by @williamstein created at 2009-04-12 04:25:02
 
 
 

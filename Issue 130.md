@@ -3,7 +3,7 @@
 archive/issues_000130.json:
 ```json
 {
-    "body": "Assignee: was\n\nIf you type a loop at the sage prompt:\n\n----------------------------------\nsage: for i in range(1,3):\n   ...:     print i\n   ...:\n1\n2\n----------------------------------\n\nand then do an \"arrow up\" key, it seems like the loop is recalled. However, it seems only the first line is actually still there:\n\n-----------------------------------------\nsage: for i in range(1,3):\n    print i\n   ....:     print \"done\"\n   ....:\ndone\ndone\n-----------------------------------------\n\nIssue created by migration from https://trac.sagemath.org/ticket/130\n\n",
+    "body": "Assignee: @williamstein\n\nIf you type a loop at the sage prompt:\n\n----------------------------------\nsage: for i in range(1,3):\n   ...:     print i\n   ...:\n1\n2\n----------------------------------\n\nand then do an \"arrow up\" key, it seems like the loop is recalled. However, it seems only the first line is actually still there:\n\n-----------------------------------------\nsage: for i in range(1,3):\n    print i\n   ....:     print \"done\"\n   ....:\ndone\ndone\n-----------------------------------------\n\nIssue created by migration from https://trac.sagemath.org/ticket/130\n\n",
     "created_at": "2006-10-14T05:44:23Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_000130.json:
     "title": "problem with multiline history recall in IPython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/130",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 If you type a loop at the sage prompt:
 
@@ -56,7 +56,7 @@ archive/issue_comments_000610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/130#issuecomment-610",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_000611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/130#issuecomment-611",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_000612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/130#issuecomment-612",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

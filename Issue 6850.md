@@ -3,7 +3,7 @@
 archive/issues_006850.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  davidloeffler cremona\n\nThe patch `trac_6531-restify_generic_ring-rebase.patch` at #6531 was intended to provide documentation and doctests for the module `sage/rings/ring.pyx`. It was also meant to add that module to the reference manual, but doesn't really make any changes to `doc/en/reference/rings.rst` to allow this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6850\n\n",
+    "body": "Assignee: tba\n\nCC:  @loefflerd @JohnCremona\n\nThe patch `trac_6531-restify_generic_ring-rebase.patch` at #6531 was intended to provide documentation and doctests for the module `sage/rings/ring.pyx`. It was also meant to add that module to the reference manual, but doesn't really make any changes to `doc/en/reference/rings.rst` to allow this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6850\n\n",
     "created_at": "2009-08-31T05:44:47Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_006850.json:
 ```
 Assignee: tba
 
-CC:  davidloeffler cremona
+CC:  @loefflerd @JohnCremona
 
 The patch `trac_6531-restify_generic_ring-rebase.patch` at #6531 was intended to provide documentation and doctests for the module `sage/rings/ring.pyx`. It was also meant to add that module to the reference manual, but doesn't really make any changes to `doc/en/reference/rings.rst` to allow this.
 
@@ -77,7 +77,7 @@ archive/issue_comments_056491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6850#issuecomment-56491",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_056492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6850#issuecomment-56492",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

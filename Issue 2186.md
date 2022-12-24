@@ -3,7 +3,7 @@
 archive/issues_002186.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThis allows one to see what the tree that is traversed actually looks like.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2186\n\n",
+    "body": "Assignee: @rlmill\n\nThis allows one to see what the tree that is traversed actually looks like.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2186\n\n",
     "created_at": "2008-02-17T00:00:30Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_002186.json:
     "title": "[with patch, needs easy review] verbosity for graph_isom - visualize the tree that is traversed during search",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2186",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 This allows one to see what the tree that is traversed actually looks like.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2186
 archive/issue_comments_014354.json:
 ```json
 {
-    "body": "Attachment [graph_isom_verbosity_5.patch](tarball://root/attachments/some-uuid/ticket2186/graph_isom_verbosity_5.patch) by rlm created at 2008-02-17 00:00:39",
+    "body": "Attachment [graph_isom_verbosity_5.patch](tarball://root/attachments/some-uuid/ticket2186/graph_isom_verbosity_5.patch) by @rlmill created at 2008-02-17 00:00:39",
     "created_at": "2008-02-17T00:00:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2186",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2186#issuecomment-14354",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [graph_isom_verbosity_5.patch](tarball://root/attachments/some-uuid/ticket2186/graph_isom_verbosity_5.patch) by rlm created at 2008-02-17 00:00:39
+Attachment [graph_isom_verbosity_5.patch](tarball://root/attachments/some-uuid/ticket2186/graph_isom_verbosity_5.patch) by @rlmill created at 2008-02-17 00:00:39
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_014355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2186",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2186#issuecomment-14355",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_014356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2186",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2186#issuecomment-14356",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_014357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2186",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2186#issuecomment-14357",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

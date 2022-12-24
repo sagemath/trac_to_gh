@@ -3,7 +3,7 @@
 archive/issues_009803.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  mvngu mpatel ncohen\n\ncliquer used use to SCons, but for various reasons it was replaced by a simple `Makefile`. (IMHO, a good idea, as fighting with SCons seems to be a nightmare). Minh did the replacment, but there is an unnecessary dependency in `spkg/standard/deps`, which potentially means parallel builds are slower than they need be, as currently cliquer can't be built without SCons first being built.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9804\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  mvngu @qed777 @nathanncohen\n\ncliquer used use to SCons, but for various reasons it was replaced by a simple `Makefile`. (IMHO, a good idea, as fighting with SCons seems to be a nightmare). Minh did the replacment, but there is an unnecessary dependency in `spkg/standard/deps`, which potentially means parallel builds are slower than they need be, as currently cliquer can't be built without SCons first being built.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9804\n\n",
     "created_at": "2010-08-26T01:17:47Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_009803.json:
 ```
 Assignee: GeorgSWeber
 
-CC:  mvngu mpatel ncohen
+CC:  mvngu @qed777 @nathanncohen
 
 cliquer used use to SCons, but for various reasons it was replaced by a simple `Makefile`. (IMHO, a good idea, as fighting with SCons seems to be a nightmare). Minh did the replacment, but there is an unnecessary dependency in `spkg/standard/deps`, which potentially means parallel builds are slower than they need be, as currently cliquer can't be built without SCons first being built.
 
@@ -151,7 +151,7 @@ archive/issue_comments_096325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9803#issuecomment-96325",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_096326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9803#issuecomment-96326",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_096327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9803#issuecomment-96327",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_096328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9803#issuecomment-96328",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

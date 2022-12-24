@@ -3,7 +3,7 @@
 archive/issues_004844.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  gfurnish\n\nThe DSage doctests still cause trouble. Disable them for now until we start merging fixes again in 3.4.alpha0.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4844\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @garyfurnish\n\nThe DSage doctests still cause trouble. Disable them for now until we start merging fixes again in 3.4.alpha0.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4844\n\n",
     "created_at": "2008-12-20T22:58:19Z",
     "labels": [
         "doctest coverage",
@@ -19,7 +19,7 @@ archive/issues_004844.json:
 ```
 Assignee: mabshoff
 
-CC:  gfurnish
+CC:  @garyfurnish
 
 The DSage doctests still cause trouble. Disable them for now until we start merging fixes again in 3.4.alpha0.
 

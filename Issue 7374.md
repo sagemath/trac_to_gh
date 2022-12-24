@@ -14,7 +14,7 @@ archive/issues_007374.json:
     "title": "wrong docstring for is_isomorphic() in permgroup.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7374",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 Assignee: joyner
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7374
 archive/issue_comments_061776.json:
 ```json
 {
-    "body": "Attachment [trac_7374.patch](tarball://root/attachments/some-uuid/ticket7374/trac_7374.patch) by AlexGhitza created at 2009-11-02 06:20:31",
+    "body": "Attachment [trac_7374.patch](tarball://root/attachments/some-uuid/ticket7374/trac_7374.patch) by @aghitza created at 2009-11-02 06:20:31",
     "created_at": "2009-11-02T06:20:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7374",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7374#issuecomment-61776",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_7374.patch](tarball://root/attachments/some-uuid/ticket7374/trac_7374.patch) by AlexGhitza created at 2009-11-02 06:20:31
+Attachment [trac_7374.patch](tarball://root/attachments/some-uuid/ticket7374/trac_7374.patch) by @aghitza created at 2009-11-02 06:20:31
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_061777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7374",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7374#issuecomment-61777",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_061778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7374",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7374#issuecomment-61778",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_061779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7374",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7374#issuecomment-61779",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_061780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7374",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7374#issuecomment-61780",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

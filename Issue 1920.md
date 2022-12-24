@@ -3,7 +3,7 @@
 archive/issues_001920.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mhansen cwitty jason\n\nThis works:\n\n```\nvar('x,y')\nplot3d(0, (x,-1,1), (y,-1,1))\n```\n\n\nThis doesn't:\n\n```\nplot3d(0, (-1,1), (-1,1))\n```\n\n\nIt seems completely reasonable that we fix the above so it does.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1920\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @mwhansen cwitty @jasongrout\n\nThis works:\n\n```\nvar('x,y')\nplot3d(0, (x,-1,1), (y,-1,1))\n```\n\n\nThis doesn't:\n\n```\nplot3d(0, (-1,1), (-1,1))\n```\n\n\nIt seems completely reasonable that we fix the above so it does.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1920\n\n",
     "created_at": "2008-01-25T05:59:46Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_001920.json:
     "title": "3d graphics -- constant plot3d's",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1920",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  mhansen cwitty jason
+CC:  @mwhansen cwitty @jasongrout
 
 This works:
 
@@ -176,7 +176,7 @@ archive/issue_comments_012170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1920#issuecomment-12170",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_012171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1920#issuecomment-12171",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_012172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1920#issuecomment-12172",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_012173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1920#issuecomment-12173",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -249,16 +249,16 @@ I can't figure out quite which upgrade did it, though I found several possible s
 archive/issue_comments_012174.json:
 ```json
 {
-    "body": "Attachment [trac_1920-verify.patch](tarball://root/attachments/some-uuid/ticket1920/trac_1920-verify.patch) by kcrisman created at 2012-07-07 03:55:00\n\nApply [attachment:trac_1920-verify.patch].  I couldn't find a better place to add this... and if someone knows that this is already tested, please let me know.  I did a grep through the Sage library for plotting the 0 function, but of course if it is more like my test, then one could never find it.",
+    "body": "Attachment [trac_1920-verify.patch](tarball://root/attachments/some-uuid/ticket1920/trac_1920-verify.patch) by @kcrisman created at 2012-07-07 03:55:00\n\nApply [attachment:trac_1920-verify.patch].  I couldn't find a better place to add this... and if someone knows that this is already tested, please let me know.  I did a grep through the Sage library for plotting the 0 function, but of course if it is more like my test, then one could never find it.",
     "created_at": "2012-07-07T03:55:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1920#issuecomment-12174",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_1920-verify.patch](tarball://root/attachments/some-uuid/ticket1920/trac_1920-verify.patch) by kcrisman created at 2012-07-07 03:55:00
+Attachment [trac_1920-verify.patch](tarball://root/attachments/some-uuid/ticket1920/trac_1920-verify.patch) by @kcrisman created at 2012-07-07 03:55:00
 
 Apply [attachment:trac_1920-verify.patch].  I couldn't find a better place to add this... and if someone knows that this is already tested, please let me know.  I did a grep through the Sage library for plotting the 0 function, but of course if it is more like my test, then one could never find it.
 
@@ -274,7 +274,7 @@ archive/issue_comments_012175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1920#issuecomment-12175",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_012176.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1920#issuecomment-12176",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -310,7 +310,7 @@ archive/issue_comments_012177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1920#issuecomment-12177",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -328,7 +328,7 @@ archive/issue_comments_012178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1920#issuecomment-12178",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

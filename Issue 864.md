@@ -3,7 +3,7 @@
 archive/issues_000864.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nKeywords: pari\n\nThis is really a leftover from ticket #467, split because I wanted the first half of the fix to make it into 2.8.7. Here's a summary of the badness:\n\n\n```\nsage: x = 10^100000\n\nsage: time y = pari(x)\nCPU times: user 1.18 s, sys: 0.01 s, total: 1.19 s\nWall time: 1.26\n\nsage: time z = Integer(y)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.02\n\nsage: time u = int(y)\nCPU times: user 1.94 s, sys: 1.33 s, total: 3.27 s\nWall time: 3.58\n\nsage: time u = int(Integer(y))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.03\n\n\nsage: x = 10^1000000\n\nsage: time y = pari(x)\nCPU times: user 105.12 s, sys: 1.26 s, total: 106.38 s\nWall time: 121.86\n\nsage: time z = Integer(y)\nCPU times: user 0.03 s, sys: 0.02 s, total: 0.05 s\nWall time: 0.09\n\nsage: time u = int(y)\nCPU times: user 188.17 s, sys: 145.12 s, total: 333.28 s\nWall time: 364.80\n\nsage: time u = int(Integer(y))\nCPU times: user 0.04 s, sys: 0.02 s, total: 0.06 s\nWall time: 0.07\n```\n\n\nAnd here's the state of affairs after the first patch:\n\n\n```\nsage: x = 10^100000\n\nsage: time y = pari(x)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n\nsage: time z = Integer(y)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n\nsage: time u = int(y)\nCPU times: user 1.64 s, sys: 1.09 s, total: 2.73 s\nWall time: 2.79\n\nsage: time u = int(Integer(y))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n\nsage: x = 10^1000000\n\nsage: time y = pari(x)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01\n\nsage: time z = Integer(y)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n\nsage: time u = int(y)\nCPU times: user 220.90 s, sys: 137.34 s, total: 358.24 s\nWall time: 408.11\n\nsage: time u = int(Integer(y))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01\n\n```\n\n\nClearly that third function call needs to be fixed, and it will be within a few days.\n\nIssue created by migration from https://trac.sagemath.org/ticket/864\n\n",
+    "body": "Assignee: @craigcitro\n\nKeywords: pari\n\nThis is really a leftover from ticket #467, split because I wanted the first half of the fix to make it into 2.8.7. Here's a summary of the badness:\n\n\n```\nsage: x = 10^100000\n\nsage: time y = pari(x)\nCPU times: user 1.18 s, sys: 0.01 s, total: 1.19 s\nWall time: 1.26\n\nsage: time z = Integer(y)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.02\n\nsage: time u = int(y)\nCPU times: user 1.94 s, sys: 1.33 s, total: 3.27 s\nWall time: 3.58\n\nsage: time u = int(Integer(y))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.03\n\n\nsage: x = 10^1000000\n\nsage: time y = pari(x)\nCPU times: user 105.12 s, sys: 1.26 s, total: 106.38 s\nWall time: 121.86\n\nsage: time z = Integer(y)\nCPU times: user 0.03 s, sys: 0.02 s, total: 0.05 s\nWall time: 0.09\n\nsage: time u = int(y)\nCPU times: user 188.17 s, sys: 145.12 s, total: 333.28 s\nWall time: 364.80\n\nsage: time u = int(Integer(y))\nCPU times: user 0.04 s, sys: 0.02 s, total: 0.06 s\nWall time: 0.07\n```\n\n\nAnd here's the state of affairs after the first patch:\n\n\n```\nsage: x = 10^100000\n\nsage: time y = pari(x)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n\nsage: time z = Integer(y)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n\nsage: time u = int(y)\nCPU times: user 1.64 s, sys: 1.09 s, total: 2.73 s\nWall time: 2.79\n\nsage: time u = int(Integer(y))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n\nsage: x = 10^1000000\n\nsage: time y = pari(x)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01\n\nsage: time z = Integer(y)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n\nsage: time u = int(y)\nCPU times: user 220.90 s, sys: 137.34 s, total: 358.24 s\nWall time: 408.11\n\nsage: time u = int(Integer(y))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01\n\n```\n\n\nClearly that third function call needs to be fixed, and it will be within a few days.\n\nIssue created by migration from https://trac.sagemath.org/ticket/864\n\n",
     "created_at": "2007-10-12T19:47:59Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_000864.json:
     "title": "Asymptotically slow pari <--> python long conversions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/864",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 Keywords: pari
 
@@ -125,7 +125,7 @@ archive/issue_comments_005331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/864#issuecomment-5331",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_005333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/864#issuecomment-5333",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_005334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/864#issuecomment-5334",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_005335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/864#issuecomment-5335",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -256,16 +256,16 @@ Changing status from new to needs_review.
 archive/issue_comments_005336.json:
 ```json
 {
-    "body": "Attachment [trac_864-pari_long_conversion.patch](tarball://root/attachments/some-uuid/ticket864/trac_864-pari_long_conversion.patch) by pbruin created at 2013-09-09 18:40:22",
+    "body": "Attachment [trac_864-pari_long_conversion.patch](tarball://root/attachments/some-uuid/ticket864/trac_864-pari_long_conversion.patch) by @pjbruin created at 2013-09-09 18:40:22",
     "created_at": "2013-09-09T18:40:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/864#issuecomment-5336",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
-Attachment [trac_864-pari_long_conversion.patch](tarball://root/attachments/some-uuid/ticket864/trac_864-pari_long_conversion.patch) by pbruin created at 2013-09-09 18:40:22
+Attachment [trac_864-pari_long_conversion.patch](tarball://root/attachments/some-uuid/ticket864/trac_864-pari_long_conversion.patch) by @pjbruin created at 2013-09-09 18:40:22
 
 
 
@@ -279,7 +279,7 @@ archive/issue_comments_005337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/864#issuecomment-5337",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_005338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/864#issuecomment-5338",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -324,7 +324,7 @@ archive/issue_comments_005339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/864#issuecomment-5339",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -356,7 +356,7 @@ archive/issue_comments_005340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/864#issuecomment-5340",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -369,16 +369,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_005341.json:
 ```json
 {
-    "body": "Attachment [trac_864-pari_int_long_conversion.patch](tarball://root/attachments/some-uuid/ticket864/trac_864-pari_int_long_conversion.patch) by pbruin created at 2013-10-29 12:13:23",
+    "body": "Attachment [trac_864-pari_int_long_conversion.patch](tarball://root/attachments/some-uuid/ticket864/trac_864-pari_int_long_conversion.patch) by @pjbruin created at 2013-10-29 12:13:23",
     "created_at": "2013-10-29T12:13:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/864#issuecomment-5341",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
-Attachment [trac_864-pari_int_long_conversion.patch](tarball://root/attachments/some-uuid/ticket864/trac_864-pari_int_long_conversion.patch) by pbruin created at 2013-10-29 12:13:23
+Attachment [trac_864-pari_int_long_conversion.patch](tarball://root/attachments/some-uuid/ticket864/trac_864-pari_int_long_conversion.patch) by @pjbruin created at 2013-10-29 12:13:23
 
 
 
@@ -392,7 +392,7 @@ archive/issue_comments_005342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/864#issuecomment-5342",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -410,7 +410,7 @@ archive/issue_comments_005343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/864#issuecomment-5343",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -428,7 +428,7 @@ archive/issue_comments_005344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/864#issuecomment-5344",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -446,7 +446,7 @@ archive/issue_comments_005345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/864#issuecomment-5345",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

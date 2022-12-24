@@ -14,7 +14,7 @@ archive/issues_004369.json:
     "title": "[with patch, needs review] completed reference",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4369",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4369
 archive/issue_comments_032105.json:
 ```json
 {
-    "body": "Attachment [trac_4369.patch](tarball://root/attachments/some-uuid/ticket4369/trac_4369.patch) by zimmerma created at 2008-10-26 12:44:05",
+    "body": "Attachment [trac_4369.patch](tarball://root/attachments/some-uuid/ticket4369/trac_4369.patch) by @zimmermann6 created at 2008-10-26 12:44:05",
     "created_at": "2008-10-26T12:44:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4369",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4369#issuecomment-32105",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [trac_4369.patch](tarball://root/attachments/some-uuid/ticket4369/trac_4369.patch) by zimmerma created at 2008-10-26 12:44:05
+Attachment [trac_4369.patch](tarball://root/attachments/some-uuid/ticket4369/trac_4369.patch) by @zimmermann6 created at 2008-10-26 12:44:05
 
 
 

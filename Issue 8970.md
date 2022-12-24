@@ -3,7 +3,7 @@
 archive/issues_008970.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nThe code to convert elements of integer mod rings into Gap elements is needlessly complicated, and also very broken when the modulus isn't prime. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8970\n\n",
+    "body": "Assignee: @aghitza\n\nThe code to convert elements of integer mod rings into Gap elements is needlessly complicated, and also very broken when the modulus isn't prime. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8970\n\n",
     "created_at": "2010-05-14T20:57:25Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_008970.json:
     "title": "conversion of integer mods to Gap",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8970",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 The code to convert elements of integer mod rings into Gap elements is needlessly complicated, and also very broken when the modulus isn't prime. 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8970
 archive/issue_comments_082665.json:
 ```json
 {
-    "body": "Attachment [trac_8970-gap_integer_mod.patch](tarball://root/attachments/some-uuid/ticket8970/trac_8970-gap_integer_mod.patch) by davidloeffler created at 2010-05-15 18:26:49\n\npatch against 4.4.1",
+    "body": "Attachment [trac_8970-gap_integer_mod.patch](tarball://root/attachments/some-uuid/ticket8970/trac_8970-gap_integer_mod.patch) by @loefflerd created at 2010-05-15 18:26:49\n\npatch against 4.4.1",
     "created_at": "2010-05-15T18:26:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8970#issuecomment-82665",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_8970-gap_integer_mod.patch](tarball://root/attachments/some-uuid/ticket8970/trac_8970-gap_integer_mod.patch) by davidloeffler created at 2010-05-15 18:26:49
+Attachment [trac_8970-gap_integer_mod.patch](tarball://root/attachments/some-uuid/ticket8970/trac_8970-gap_integer_mod.patch) by @loefflerd created at 2010-05-15 18:26:49
 
 patch against 4.4.1
 
@@ -57,7 +57,7 @@ archive/issue_comments_082666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8970#issuecomment-82666",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_082667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8970#issuecomment-82667",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_082668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8970#issuecomment-82668",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_082669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8970#issuecomment-82669",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_082670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8970#issuecomment-82670",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

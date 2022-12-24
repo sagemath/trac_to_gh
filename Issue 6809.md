@@ -3,7 +3,7 @@
 archive/issues_006809.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat\n\nKeywords: abstract methods\n\nImplement a utility abstract_methods_of_class which lists all the optional and mandatory abstract methods of the class.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6809\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: abstract methods\n\nImplement a utility abstract_methods_of_class which lists all the optional and mandatory abstract methods of the class.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6809\n\n",
     "created_at": "2009-08-22T22:57:13Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_006809.json:
     "title": "abstract_methods_of_class",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6809",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
 CC:  sage-combinat
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6809
 archive/issue_comments_056046.json:
 ```json
 {
-    "body": "Attachment [trac_6809_abstract_methods_of_class.patch](tarball://root/attachments/some-uuid/ticket6809/trac_6809_abstract_methods_of_class.patch) by nthiery created at 2009-10-16 11:03:12",
+    "body": "Attachment [trac_6809_abstract_methods_of_class.patch](tarball://root/attachments/some-uuid/ticket6809/trac_6809_abstract_methods_of_class.patch) by @nthiery created at 2009-10-16 11:03:12",
     "created_at": "2009-10-16T11:03:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6809#issuecomment-56046",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_6809_abstract_methods_of_class.patch](tarball://root/attachments/some-uuid/ticket6809/trac_6809_abstract_methods_of_class.patch) by nthiery created at 2009-10-16 11:03:12
+Attachment [trac_6809_abstract_methods_of_class.patch](tarball://root/attachments/some-uuid/ticket6809/trac_6809_abstract_methods_of_class.patch) by @nthiery created at 2009-10-16 11:03:12
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_056047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6809#issuecomment-56047",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_056048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6809#issuecomment-56048",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -92,16 +92,16 @@ Changing status from new to needs_review.
 archive/issue_comments_056049.json:
 ```json
 {
-    "body": "Attachment [trac_6809_abstract_methods_of_class.2.patch](tarball://root/attachments/some-uuid/ticket6809/trac_6809_abstract_methods_of_class.2.patch) by hivert created at 2009-10-16 11:41:13\n\nI'm done reviewing this patch. It is good upto a small detail: the code access to a private attribute. I've added an accessor method. \n\nI just uploaded a new version of the patch after review which add a is_optional method for better encapsulation (as suggested by former comment in the code).\n\nNicolas: please add a positive review when you finished reviewing my changes.\n\nCheers,\n\nFlorent",
+    "body": "Attachment [trac_6809_abstract_methods_of_class.2.patch](tarball://root/attachments/some-uuid/ticket6809/trac_6809_abstract_methods_of_class.2.patch) by @hivert created at 2009-10-16 11:41:13\n\nI'm done reviewing this patch. It is good upto a small detail: the code access to a private attribute. I've added an accessor method. \n\nI just uploaded a new version of the patch after review which add a is_optional method for better encapsulation (as suggested by former comment in the code).\n\nNicolas: please add a positive review when you finished reviewing my changes.\n\nCheers,\n\nFlorent",
     "created_at": "2009-10-16T11:41:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6809#issuecomment-56049",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_6809_abstract_methods_of_class.2.patch](tarball://root/attachments/some-uuid/ticket6809/trac_6809_abstract_methods_of_class.2.patch) by hivert created at 2009-10-16 11:41:13
+Attachment [trac_6809_abstract_methods_of_class.2.patch](tarball://root/attachments/some-uuid/ticket6809/trac_6809_abstract_methods_of_class.2.patch) by @hivert created at 2009-10-16 11:41:13
 
 I'm done reviewing this patch. It is good upto a small detail: the code access to a private attribute. I've added an accessor method. 
 
@@ -125,7 +125,7 @@ archive/issue_comments_056050.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6809#issuecomment-56050",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_056051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6809#issuecomment-56051",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -160,16 +160,16 @@ Added missing blank line
 archive/issue_comments_056052.json:
 ```json
 {
-    "body": "Attachment [trac_6809_abstract_methods_of_class.3.patch](tarball://root/attachments/some-uuid/ticket6809/trac_6809_abstract_methods_of_class.3.patch) by hivert created at 2009-10-16 11:58:03\n\nAfter Blank line added, Nicolas allows me to put the positive review. \n\nOnly apply the last trac_6809_abstract_methods_of_class.3.patch\n\nFlorent",
+    "body": "Attachment [trac_6809_abstract_methods_of_class.3.patch](tarball://root/attachments/some-uuid/ticket6809/trac_6809_abstract_methods_of_class.3.patch) by @hivert created at 2009-10-16 11:58:03\n\nAfter Blank line added, Nicolas allows me to put the positive review. \n\nOnly apply the last trac_6809_abstract_methods_of_class.3.patch\n\nFlorent",
     "created_at": "2009-10-16T11:58:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6809#issuecomment-56052",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_6809_abstract_methods_of_class.3.patch](tarball://root/attachments/some-uuid/ticket6809/trac_6809_abstract_methods_of_class.3.patch) by hivert created at 2009-10-16 11:58:03
+Attachment [trac_6809_abstract_methods_of_class.3.patch](tarball://root/attachments/some-uuid/ticket6809/trac_6809_abstract_methods_of_class.3.patch) by @hivert created at 2009-10-16 11:58:03
 
 After Blank line added, Nicolas allows me to put the positive review. 
 
@@ -189,7 +189,7 @@ archive/issue_comments_056053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6809#issuecomment-56053",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_056054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6809#issuecomment-56054",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

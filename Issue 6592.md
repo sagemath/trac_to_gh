@@ -3,7 +3,7 @@
 archive/issues_006592.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  mforets\n\ne.g.:\n\n```\nsage: var('x y')\nsage: f = (100 - x) + (1000 - y)\nsage: c = x + y - 479 # > 0\nsage: minimize_constrained(f,[c],[100,300])\nTraceback (most recent call last):\n...\nUnboundLocalError: local variable 'min' referenced before assignment\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6592\n\n",
+    "body": "Assignee: jkantor\n\nCC:  @mforets\n\ne.g.:\n\n```\nsage: var('x y')\nsage: f = (100 - x) + (1000 - y)\nsage: c = x + y - 479 # > 0\nsage: minimize_constrained(f,[c],[100,300])\nTraceback (most recent call last):\n...\nUnboundLocalError: local variable 'min' referenced before assignment\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6592\n\n",
     "created_at": "2009-07-22T15:31:31Z",
     "labels": [
         "numerical",
@@ -14,12 +14,12 @@ archive/issues_006592.json:
     "title": "minimize_constrained only takes lambda functions as constraints",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6592",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: jkantor
 
-CC:  mforets
+CC:  @mforets
 
 e.g.:
 
@@ -50,7 +50,7 @@ archive/issue_comments_053948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6592#issuecomment-53948",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_053949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6592#issuecomment-53949",
-    "user": "mforets"
+    "user": "@mforets"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_053950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6592#issuecomment-53950",
-    "user": "mforets"
+    "user": "@mforets"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_053951.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6592#issuecomment-53951",
-    "user": "mforets"
+    "user": "@mforets"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_053952.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6592#issuecomment-53952",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_053953.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6592#issuecomment-53953",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_053954.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6592#issuecomment-53954",
-    "user": "mforets"
+    "user": "@mforets"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_053955.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6592#issuecomment-53955",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

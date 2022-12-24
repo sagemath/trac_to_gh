@@ -14,7 +14,7 @@ archive/issues_002479.json:
     "title": "RDF polynomial factoring bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2479",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2479
 archive/issue_comments_016799.json:
 ```json
 {
-    "body": "Attachment [sage-2479.patch](tarball://root/attachments/some-uuid/ticket2479/sage-2479.patch) by was created at 2008-03-12 00:55:17\n\nAttached patch fixes this problem.",
+    "body": "Attachment [sage-2479.patch](tarball://root/attachments/some-uuid/ticket2479/sage-2479.patch) by @williamstein created at 2008-03-12 00:55:17\n\nAttached patch fixes this problem.",
     "created_at": "2008-03-12T00:55:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2479#issuecomment-16799",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2479.patch](tarball://root/attachments/some-uuid/ticket2479/sage-2479.patch) by was created at 2008-03-12 00:55:17
+Attachment [sage-2479.patch](tarball://root/attachments/some-uuid/ticket2479/sage-2479.patch) by @williamstein created at 2008-03-12 00:55:17
 
 Attached patch fixes this problem.
 
@@ -65,7 +65,7 @@ archive/issue_comments_016800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2479#issuecomment-16800",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_016801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2479#issuecomment-16801",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_016802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2479#issuecomment-16802",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -116,16 +116,16 @@ Ok, re-based the patch. The name on the commit should get changed to William, si
 archive/issue_comments_016803.json:
 ```json
 {
-    "body": "Attachment [trac-2479-v2.patch](tarball://root/attachments/some-uuid/ticket2479/trac-2479-v2.patch) by craigcitro created at 2008-03-12 01:51:46\n\nsame patch as above, but applies clean against 2.10.3",
+    "body": "Attachment [trac-2479-v2.patch](tarball://root/attachments/some-uuid/ticket2479/trac-2479-v2.patch) by @craigcitro created at 2008-03-12 01:51:46\n\nsame patch as above, but applies clean against 2.10.3",
     "created_at": "2008-03-12T01:51:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2479#issuecomment-16803",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-2479-v2.patch](tarball://root/attachments/some-uuid/ticket2479/trac-2479-v2.patch) by craigcitro created at 2008-03-12 01:51:46
+Attachment [trac-2479-v2.patch](tarball://root/attachments/some-uuid/ticket2479/trac-2479-v2.patch) by @craigcitro created at 2008-03-12 01:51:46
 
 same patch as above, but applies clean against 2.10.3
 

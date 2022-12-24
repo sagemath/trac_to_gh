@@ -3,7 +3,7 @@
 archive/issues_000590.json:
 ```json
 {
-    "body": "Assignee: roed\n\nThe rings/extended_rational_field.py file is terribly documented.  There are no doctests, no copyright notice, no author, etc.   I think David Roe wrote this:\n\nwas`@`ubuntu:~/d/sage/sage/rings$ sage -coverage extended_rational_field.py\n----------------------------------------------------------------------\nextended_rational_field.py\nERROR: Please define a s == loads(dumps(s)) doctest.\nOVERALL SCORE: 0%  (2 good, 71 bad)\n\nMissing documentation:\n* __init__(self)\n* _repr_(self)\n* _latex_(self)\n* __call__(self, x, base = 0)\n* _coerce_impl(self, x)\n* _is_valid_homomorphism(self, codomain, im_gens)\n* __iter__(self)\n* complex_embedding(self, prec=53)\n* gens(self)\n* gen(self, n=0)\n* is_prime_field(self)\n* ngens(self)\n* numberfield(self, poly_var, nf_var)\n* __init__(self, x = None, base = 0)\n* __cmp__(self, other)\n* copy(self)\n* lcm(self, other)\n* square_root(self)\n* nth_root(self)\n* _add_(self, right)\n* _sub_(self, right)\n* _neg_(self)\n* _mul_(self, right)\n* _div_(self, right)\n* __invert__(self)\n* __pow__(self, n)\n* __abs__(self)\n* floor(self)\n* ceil(self)\n* __lshift__(self, n)\n* __rshift__(self, n)\n* __init__(self)\n* __cmp__(self, other)\n* __repr__(self)\n* _latex_(self)\n* _add_(self, other)\n* _mul_(self, other)\n* _sub_(self, other)\n* _div_(self, other)\n* _neg_(self)\n* __invert__(self)\n* __abs__(self)\n* __pow__(self, right)\n* sqrt(self)\n* square_root(self)\n* nth_root(self, n)\n* floor(self)\n* ceil(self)\n* numerator(self)\n* denominator(self)\n* __init__(self)\n* __cmp__(self, other)\n* _repr_(self)\n* _latex_(self)\n* _add_(self, other)\n* _mul_(self, other)\n* _sub_(self, other)\n* _div_(self, other)\n* _neg_(self)\n* __invert__(self)\n* __abs__(self)\n* __pow__(self, right)\n* sqrt(self)\n* square_root(self)\n* nth_root(self, n)\n* floor(self)\n* ceil(self)\n* numerator(self)\n* denominator(self)\n\n\nMissing doctests:\n* numerator(self)\n* denominator(self)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/590\n\n",
+    "body": "Assignee: @roed314\n\nThe rings/extended_rational_field.py file is terribly documented.  There are no doctests, no copyright notice, no author, etc.   I think David Roe wrote this:\n\nwas`@`ubuntu:~/d/sage/sage/rings$ sage -coverage extended_rational_field.py\n----------------------------------------------------------------------\nextended_rational_field.py\nERROR: Please define a s == loads(dumps(s)) doctest.\nOVERALL SCORE: 0%  (2 good, 71 bad)\n\nMissing documentation:\n* __init__(self)\n* _repr_(self)\n* _latex_(self)\n* __call__(self, x, base = 0)\n* _coerce_impl(self, x)\n* _is_valid_homomorphism(self, codomain, im_gens)\n* __iter__(self)\n* complex_embedding(self, prec=53)\n* gens(self)\n* gen(self, n=0)\n* is_prime_field(self)\n* ngens(self)\n* numberfield(self, poly_var, nf_var)\n* __init__(self, x = None, base = 0)\n* __cmp__(self, other)\n* copy(self)\n* lcm(self, other)\n* square_root(self)\n* nth_root(self)\n* _add_(self, right)\n* _sub_(self, right)\n* _neg_(self)\n* _mul_(self, right)\n* _div_(self, right)\n* __invert__(self)\n* __pow__(self, n)\n* __abs__(self)\n* floor(self)\n* ceil(self)\n* __lshift__(self, n)\n* __rshift__(self, n)\n* __init__(self)\n* __cmp__(self, other)\n* __repr__(self)\n* _latex_(self)\n* _add_(self, other)\n* _mul_(self, other)\n* _sub_(self, other)\n* _div_(self, other)\n* _neg_(self)\n* __invert__(self)\n* __abs__(self)\n* __pow__(self, right)\n* sqrt(self)\n* square_root(self)\n* nth_root(self, n)\n* floor(self)\n* ceil(self)\n* numerator(self)\n* denominator(self)\n* __init__(self)\n* __cmp__(self, other)\n* _repr_(self)\n* _latex_(self)\n* _add_(self, other)\n* _mul_(self, other)\n* _sub_(self, other)\n* _div_(self, other)\n* _neg_(self)\n* __invert__(self)\n* __abs__(self)\n* __pow__(self, right)\n* sqrt(self)\n* square_root(self)\n* nth_root(self, n)\n* floor(self)\n* ceil(self)\n* numerator(self)\n* denominator(self)\n\n\nMissing doctests:\n* numerator(self)\n* denominator(self)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/590\n\n",
     "created_at": "2007-09-05T15:37:42Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_000590.json:
     "title": "document extended_rational_field.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/590",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: roed
+Assignee: @roed314
 
 The rings/extended_rational_field.py file is terribly documented.  There are no doctests, no copyright notice, no author, etc.   I think David Roe wrote this:
 
@@ -116,16 +116,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/590
 archive/issue_comments_003041.json:
 ```json
 {
-    "body": "Changing assignee from roed to mhansen.",
+    "body": "Changing assignee from @roed314 to @mwhansen.",
     "created_at": "2008-02-29T06:38:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/590#issuecomment-3041",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from roed to mhansen.
+Changing assignee from @roed314 to @mwhansen.
 
 
 
@@ -139,7 +139,7 @@ archive/issue_comments_003042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/590#issuecomment-3042",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -152,16 +152,16 @@ Changing status from new to assigned.
 archive/issue_comments_003043.json:
 ```json
 {
-    "body": "Attachment [590.patch](tarball://root/attachments/some-uuid/ticket590/590.patch) by mhansen created at 2008-02-29 07:34:31",
+    "body": "Attachment [590.patch](tarball://root/attachments/some-uuid/ticket590/590.patch) by @mwhansen created at 2008-02-29 07:34:31",
     "created_at": "2008-02-29T07:34:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/590#issuecomment-3043",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [590.patch](tarball://root/attachments/some-uuid/ticket590/590.patch) by mhansen created at 2008-02-29 07:34:31
+Attachment [590.patch](tarball://root/attachments/some-uuid/ticket590/590.patch) by @mwhansen created at 2008-02-29 07:34:31
 
 
 
@@ -210,7 +210,7 @@ archive/issue_comments_003045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/590#issuecomment-3045",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_003046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/590#issuecomment-3046",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_003048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/590#issuecomment-3048",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_003050.json:
     "issue": "https://github.com/sagemath/sagetest/issues/590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/590#issuecomment-3050",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003729.json:
     "title": "[with patch; needs review] Only overwrite RHOME environment variable when it is unset",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3729",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 Assignee: mabshoff
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3729
 archive/issue_comments_026476.json:
 ```json
 {
-    "body": "Attachment [system-rhome.patch](tarball://root/attachments/some-uuid/ticket3729/system-rhome.patch) by tabbott created at 2008-07-26 17:28:54",
+    "body": "Attachment [system-rhome.patch](tarball://root/attachments/some-uuid/ticket3729/system-rhome.patch) by @timabbott created at 2008-07-26 17:28:54",
     "created_at": "2008-07-26T17:28:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3729",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3729#issuecomment-26476",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [system-rhome.patch](tarball://root/attachments/some-uuid/ticket3729/system-rhome.patch) by tabbott created at 2008-07-26 17:28:54
+Attachment [system-rhome.patch](tarball://root/attachments/some-uuid/ticket3729/system-rhome.patch) by @timabbott created at 2008-07-26 17:28:54
 
 
 
@@ -81,7 +81,7 @@ archive/issue_comments_026478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3729",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3729#issuecomment-26478",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_026480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3729",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3729#issuecomment-26480",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 

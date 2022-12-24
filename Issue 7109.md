@@ -3,7 +3,7 @@
 archive/issues_007109.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  cswiercz novoselt\n\nKeywords: polyhedra\n\nThe Polyhedron class is an interface to cdd, but does not correctly map some of the features that go beyond compact, full-dimensional polyhedra. For starters, \"linearities\" means two different things for H- and V-representation (equalities or lines), but there is only one self.linearities() method. For reference:\n\n**H-representation: inequalities and equalities**\n\n**V-representation: conv(vertices) + IR_+{rays} + IR{lines}**\n\nIt is often confusing what has already been computed from the complementary representation and what has not been computed, and the package does not always get it right. For example:\n\n```\n  sage: vert_to_ieq(vertices=[[0]], rays=[[1]]).linearities()\n  [[0, 1]]\n  sage: Polyhedron(vertices=[[0]], rays=[[1]]).linearities() \n  []\n```\n\nAlso, the constructor by default eliminates redundant vertices but not other redundant data which can be confusing.\n\nFinally, ccd pivots and hence changes the enumeration of the data. This makes parsing the incidences and adjacencies tricky. \n\n### Proposal\n\nI propose to change the behaviour of Polyhedron such that the constructor automatically computes both an optimized H-representation and an optimized V-representation. Thereafter, no more calls to cdd would be necessary. \n\nIf one really wants to use Polyhedron as a container for only H-representation or only V-representation, then a special class constructing function can do that. Any calls to methods that require the complementary data shall then fail with an `AttributeError` exception.\n\n\n### cdd caveats\n\ncdd sometimes omits the origin as a vertex:\n\n```\n  sage: Polyhedron(ieqs=[[0, 1]]).vertices()\n  []\n```\n\ncdd also sometimes adds a \"inequality at infininty\"; Contrary to the output below, the half-line has only one face\n\n```\n  sage: Polyhedron(vertices=[[0]], rays=[[1]]).facial_incidences()\n  [[0, [0]], [1, [1]]]\n```\n\nGiven equations/inequalities without a solution, cdd will return an empty polyhedron (no vertices). But conversely, given an empty polyhedron, cdd will error out instead of producing equations without solution (one of the cases where the H-representation is not unique)\n\n### Plan\n\n1) Write a binary based on cddlib that acts as a filter stdin->stdout and computes an canonical H- and V-representation. I'll attach a suitable patch against the contents of cddlib-094f.spkg\n\n2) change polyhedra.py to run cdd only once in the constructor (TODO)\n\n3) compute incidence matrix within sage as cddlib does not have a convenient function to do so without adding an \"inequality at infinity\" (TODO)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7109\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @cswiercz @novoselt\n\nKeywords: polyhedra\n\nThe Polyhedron class is an interface to cdd, but does not correctly map some of the features that go beyond compact, full-dimensional polyhedra. For starters, \"linearities\" means two different things for H- and V-representation (equalities or lines), but there is only one self.linearities() method. For reference:\n\n**H-representation: inequalities and equalities**\n\n**V-representation: conv(vertices) + IR_+{rays} + IR{lines}**\n\nIt is often confusing what has already been computed from the complementary representation and what has not been computed, and the package does not always get it right. For example:\n\n```\n  sage: vert_to_ieq(vertices=[[0]], rays=[[1]]).linearities()\n  [[0, 1]]\n  sage: Polyhedron(vertices=[[0]], rays=[[1]]).linearities() \n  []\n```\n\nAlso, the constructor by default eliminates redundant vertices but not other redundant data which can be confusing.\n\nFinally, ccd pivots and hence changes the enumeration of the data. This makes parsing the incidences and adjacencies tricky. \n\n### Proposal\n\nI propose to change the behaviour of Polyhedron such that the constructor automatically computes both an optimized H-representation and an optimized V-representation. Thereafter, no more calls to cdd would be necessary. \n\nIf one really wants to use Polyhedron as a container for only H-representation or only V-representation, then a special class constructing function can do that. Any calls to methods that require the complementary data shall then fail with an `AttributeError` exception.\n\n\n### cdd caveats\n\ncdd sometimes omits the origin as a vertex:\n\n```\n  sage: Polyhedron(ieqs=[[0, 1]]).vertices()\n  []\n```\n\ncdd also sometimes adds a \"inequality at infininty\"; Contrary to the output below, the half-line has only one face\n\n```\n  sage: Polyhedron(vertices=[[0]], rays=[[1]]).facial_incidences()\n  [[0, [0]], [1, [1]]]\n```\n\nGiven equations/inequalities without a solution, cdd will return an empty polyhedron (no vertices). But conversely, given an empty polyhedron, cdd will error out instead of producing equations without solution (one of the cases where the H-representation is not unique)\n\n### Plan\n\n1) Write a binary based on cddlib that acts as a filter stdin->stdout and computes an canonical H- and V-representation. I'll attach a suitable patch against the contents of cddlib-094f.spkg\n\n2) change polyhedra.py to run cdd only once in the constructor (TODO)\n\n3) compute incidence matrix within sage as cddlib does not have a convenient function to do so without adding an \"inequality at infinity\" (TODO)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7109\n\n",
     "created_at": "2009-10-04T13:46:52Z",
     "labels": [
         "geometry",
@@ -14,12 +14,12 @@ archive/issues_007109.json:
     "title": "polyhedra bugs with linearities, rewrite proposal",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7109",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 Assignee: mhampton
 
-CC:  cswiercz novoselt
+CC:  @cswiercz @novoselt
 
 Keywords: polyhedra
 
@@ -93,7 +93,7 @@ archive/issue_comments_058854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58854",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_058856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58856",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_058857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58857",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -173,16 +173,16 @@ Changing status from new to needs_work.
 archive/issue_comments_058858.json:
 ```json
 {
-    "body": "Attachment [polyhedra.py](tarball://root/attachments/some-uuid/ticket7109/polyhedra.py) by vbraun created at 2009-10-12 17:08:54\n\nRefactored version of polyhedra.py",
+    "body": "Attachment [polyhedra.py](tarball://root/attachments/some-uuid/ticket7109/polyhedra.py) by @vbraun created at 2009-10-12 17:08:54\n\nRefactored version of polyhedra.py",
     "created_at": "2009-10-12T17:08:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58858",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [polyhedra.py](tarball://root/attachments/some-uuid/ticket7109/polyhedra.py) by vbraun created at 2009-10-12 17:08:54
+Attachment [polyhedra.py](tarball://root/attachments/some-uuid/ticket7109/polyhedra.py) by @vbraun created at 2009-10-12 17:08:54
 
 Refactored version of polyhedra.py
 
@@ -198,7 +198,7 @@ archive/issue_comments_058859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58859",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -211,16 +211,16 @@ patch version of polyhedra.py, also touches manual and all.py
 archive/issue_comments_058860.json:
 ```json
 {
-    "body": "Attachment [polyhedron-v8.patch](tarball://root/attachments/some-uuid/ticket7109/polyhedron-v8.patch) by vbraun created at 2009-10-12 17:16:37\n\nCurrent revision is final version, all goals accomplished.",
+    "body": "Attachment [polyhedron-v8.patch](tarball://root/attachments/some-uuid/ticket7109/polyhedron-v8.patch) by @vbraun created at 2009-10-12 17:16:37\n\nCurrent revision is final version, all goals accomplished.",
     "created_at": "2009-10-12T17:16:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58860",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [polyhedron-v8.patch](tarball://root/attachments/some-uuid/ticket7109/polyhedron-v8.patch) by vbraun created at 2009-10-12 17:16:37
+Attachment [polyhedron-v8.patch](tarball://root/attachments/some-uuid/ticket7109/polyhedron-v8.patch) by @vbraun created at 2009-10-12 17:16:37
 
 Current revision is final version, all goals accomplished.
 
@@ -236,7 +236,7 @@ archive/issue_comments_058861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58861",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_058863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58863",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_058864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58864",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_058867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58867",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -400,7 +400,7 @@ archive/issue_comments_058869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58869",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -474,7 +474,7 @@ archive/issue_comments_058872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58872",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -550,16 +550,16 @@ About 2/3 of the total time is spent on computing facet adjacencies. This part o
 archive/issue_comments_058873.json:
 ```json
 {
-    "body": "Attachment [cddlib-094f.spkg](tarball://root/attachments/some-uuid/ticket7109/cddlib-094f.spkg) by vbraun created at 2009-10-28 17:11:56\n\ncdd_both_reps now reports timing information for individual operations",
+    "body": "Attachment [cddlib-094f.spkg](tarball://root/attachments/some-uuid/ticket7109/cddlib-094f.spkg) by @vbraun created at 2009-10-28 17:11:56\n\ncdd_both_reps now reports timing information for individual operations",
     "created_at": "2009-10-28T17:11:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58873",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [cddlib-094f.spkg](tarball://root/attachments/some-uuid/ticket7109/cddlib-094f.spkg) by vbraun created at 2009-10-28 17:11:56
+Attachment [cddlib-094f.spkg](tarball://root/attachments/some-uuid/ticket7109/cddlib-094f.spkg) by @vbraun created at 2009-10-28 17:11:56
 
 cdd_both_reps now reports timing information for individual operations
 
@@ -601,7 +601,7 @@ archive/issue_comments_058875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58875",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -953,16 +953,16 @@ Ignore previous referee patch, I didn't do it correctly
 archive/issue_comments_058892.json:
 ```json
 {
-    "body": "Attachment [trac_7109_referee2.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109_referee2.patch) by vbraun created at 2010-01-22 22:51:24\n\nI looked through the patch and it looks pretty good! Some minor changes:\n\n* Beautified documentation\n* Made clear that ieqs() is an alias for inequalities().\n* Fixed the crash _init_from_cdd_output() for the input\n  sage: p = Polyhedron(ieqs = [[0,1,0,0],[0,0,1,0]]) \n* Renamed the generator for incident V-representation objects from\n  Hrepresentation.facet() to Hrepresentation.incident(). Wrote the\n  analogous Vrepresentation.incident()\n* Added aliases Hrepresentation.adjacent() for\n  Hrepresentation.neighbors() and Vrepresentation.adjacent() for\n  Vrepresentation.neighbors()\n* Hrepresentation now accepts an optional argumment: \n  Hrepresentation(i) now returns Hrepresentation()[i]. same with Vrepresentation\n* Rewrote facial_adjacencies(), facial_incidences(),\n  vertex_adjacencies(), vertex_incidences() to make use of the\n  Hrepresentation/Vrepresentation objects.\n* Equation._repr_() fixed.\n\nAs far as I am concerned, this is now ready for inclusion in sage.",
+    "body": "Attachment [trac_7109_referee2.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109_referee2.patch) by @vbraun created at 2010-01-22 22:51:24\n\nI looked through the patch and it looks pretty good! Some minor changes:\n\n* Beautified documentation\n* Made clear that ieqs() is an alias for inequalities().\n* Fixed the crash _init_from_cdd_output() for the input\n  sage: p = Polyhedron(ieqs = [[0,1,0,0],[0,0,1,0]]) \n* Renamed the generator for incident V-representation objects from\n  Hrepresentation.facet() to Hrepresentation.incident(). Wrote the\n  analogous Vrepresentation.incident()\n* Added aliases Hrepresentation.adjacent() for\n  Hrepresentation.neighbors() and Vrepresentation.adjacent() for\n  Vrepresentation.neighbors()\n* Hrepresentation now accepts an optional argumment: \n  Hrepresentation(i) now returns Hrepresentation()[i]. same with Vrepresentation\n* Rewrote facial_adjacencies(), facial_incidences(),\n  vertex_adjacencies(), vertex_incidences() to make use of the\n  Hrepresentation/Vrepresentation objects.\n* Equation._repr_() fixed.\n\nAs far as I am concerned, this is now ready for inclusion in sage.",
     "created_at": "2010-01-22T22:51:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58892",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [trac_7109_referee2.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109_referee2.patch) by vbraun created at 2010-01-22 22:51:24
+Attachment [trac_7109_referee2.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109_referee2.patch) by @vbraun created at 2010-01-22 22:51:24
 
 I looked through the patch and it looks pretty good! Some minor changes:
 
@@ -997,7 +997,7 @@ archive/issue_comments_058893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58893",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1010,16 +1010,16 @@ Based on trac_7109_mh1.patch together with the (minor) changes outlined in my co
 archive/issue_comments_058894.json:
 ```json
 {
-    "body": "Attachment [trac_7109_vb1.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109_vb1.patch) by AlexGhitza created at 2010-01-22 23:35:03\n\nIt would help if somebody could write down which spkgs and patches need to be applied and in which order.  Also, since at least one patch depends on #7820, that ticket would need to be reviewed before any of this can be merged into Sage.  (The somewhat ugly alternative would be to make this independent of #7820, merge it, and then put the necessary changes at #7820.)\n\nAnyway, I think we're getting very close with this ticket.",
+    "body": "Attachment [trac_7109_vb1.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109_vb1.patch) by @aghitza created at 2010-01-22 23:35:03\n\nIt would help if somebody could write down which spkgs and patches need to be applied and in which order.  Also, since at least one patch depends on #7820, that ticket would need to be reviewed before any of this can be merged into Sage.  (The somewhat ugly alternative would be to make this independent of #7820, merge it, and then put the necessary changes at #7820.)\n\nAnyway, I think we're getting very close with this ticket.",
     "created_at": "2010-01-22T23:35:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58894",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_7109_vb1.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109_vb1.patch) by AlexGhitza created at 2010-01-22 23:35:03
+Attachment [trac_7109_vb1.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109_vb1.patch) by @aghitza created at 2010-01-22 23:35:03
 
 It would help if somebody could write down which spkgs and patches need to be applied and in which order.  Also, since at least one patch depends on #7820, that ticket would need to be reviewed before any of this can be merged into Sage.  (The somewhat ugly alternative would be to make this independent of #7820, merge it, and then put the necessary changes at #7820.)
 
@@ -1037,7 +1037,7 @@ archive/issue_comments_058895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58895",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -1055,7 +1055,7 @@ archive/issue_comments_058896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58896",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1096,7 +1096,7 @@ archive/issue_comments_058897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58897",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1114,7 +1114,7 @@ archive/issue_comments_058898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58898",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1194,7 +1194,7 @@ archive/issue_comments_058902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58902",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -1268,7 +1268,7 @@ archive/issue_comments_058903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58903",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -1346,7 +1346,7 @@ archive/issue_comments_058907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58907",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1394,7 +1394,7 @@ archive/issue_comments_058909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58909",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1412,7 +1412,7 @@ archive/issue_comments_058910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58910",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -1430,7 +1430,7 @@ archive/issue_comments_058911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58911",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -1513,7 +1513,7 @@ archive/issue_comments_058914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58914",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -1526,16 +1526,16 @@ Minh, I'll try to rebase on top of #7535 right now.
 archive/issue_comments_058915.json:
 ```json
 {
-    "body": "Attachment [trac_7109-rebase.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109-rebase.patch) by AlexGhitza created at 2010-01-25 05:34:30\n\ncumulative patch, rebased on top of #7535; apply only this patch",
+    "body": "Attachment [trac_7109-rebase.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109-rebase.patch) by @aghitza created at 2010-01-25 05:34:30\n\ncumulative patch, rebased on top of #7535; apply only this patch",
     "created_at": "2010-01-25T05:34:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58915",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_7109-rebase.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109-rebase.patch) by AlexGhitza created at 2010-01-25 05:34:30
+Attachment [trac_7109-rebase.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109-rebase.patch) by @aghitza created at 2010-01-25 05:34:30
 
 cumulative patch, rebased on top of #7535; apply only this patch
 
@@ -1551,7 +1551,7 @@ archive/issue_comments_058916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58916",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -1573,7 +1573,7 @@ archive/issue_comments_058917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58917",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -1715,15 +1715,15 @@ Cumulative patch, with 7535, fixes deletions in multi_polynomial.pyx
 archive/issue_comments_058925.json:
 ```json
 {
-    "body": "Attachment [trac_7109_and_7535.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109_and_7535.patch) by kini created at 2012-02-10 15:33:39\n\nI don't understand what the `Polyhedron().radius_square()` function included in this ticket is trying to do. I've rewritten it at #12492, if anyone wants to take a look.",
+    "body": "Attachment [trac_7109_and_7535.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109_and_7535.patch) by @kini created at 2012-02-10 15:33:39\n\nI don't understand what the `Polyhedron().radius_square()` function included in this ticket is trying to do. I've rewritten it at #12492, if anyone wants to take a look.",
     "created_at": "2012-02-10T15:33:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58925",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
-Attachment [trac_7109_and_7535.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109_and_7535.patch) by kini created at 2012-02-10 15:33:39
+Attachment [trac_7109_and_7535.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109_and_7535.patch) by @kini created at 2012-02-10 15:33:39
 
 I don't understand what the `Polyhedron().radius_square()` function included in this ticket is trying to do. I've rewritten it at #12492, if anyone wants to take a look.

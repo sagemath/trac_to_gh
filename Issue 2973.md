@@ -14,7 +14,7 @@ archive/issues_002973.json:
     "title": "RDF doctest failures on arch linux (gcc 4.3)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2973",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -150,7 +150,7 @@ archive/issue_comments_020489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2973#issuecomment-20489",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

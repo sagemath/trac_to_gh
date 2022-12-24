@@ -3,7 +3,7 @@
 archive/issues_004860.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  jason\n\nSee http://networkx.lanl.gov/reference/news.html\n\nIt seems that this could still come in handy since we will need it for Python 2.6 support for example. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4860\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @jasongrout\n\nSee http://networkx.lanl.gov/reference/news.html\n\nIt seems that this could still come in handy since we will need it for Python 2.6 support for example. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4860\n\n",
     "created_at": "2008-12-23T21:23:00Z",
     "labels": [
         "graph theory",
@@ -17,9 +17,9 @@ archive/issues_004860.json:
     "user": "mabshoff"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  jason
+CC:  @jasongrout
 
 See http://networkx.lanl.gov/reference/news.html
 
@@ -45,7 +45,7 @@ archive/issue_comments_036836.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4860",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4860#issuecomment-36836",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_036838.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4860",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4860#issuecomment-36838",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

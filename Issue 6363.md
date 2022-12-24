@@ -14,7 +14,7 @@ archive/issues_006363.json:
     "title": "[with patch, needs review] Display Sage version on notebook login page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6363",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: boothby
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6363
 archive/issue_comments_050908.json:
 ```json
 {
-    "body": "Attachment [trac_6363_notebook_version.patch](tarball://root/attachments/some-uuid/ticket6363/trac_6363_notebook_version.patch) by mpatel created at 2009-06-20 12:26:40",
+    "body": "Attachment [trac_6363_notebook_version.patch](tarball://root/attachments/some-uuid/ticket6363/trac_6363_notebook_version.patch) by @qed777 created at 2009-06-20 12:26:40",
     "created_at": "2009-06-20T12:26:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6363",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6363#issuecomment-50908",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6363_notebook_version.patch](tarball://root/attachments/some-uuid/ticket6363/trac_6363_notebook_version.patch) by mpatel created at 2009-06-20 12:26:40
+Attachment [trac_6363_notebook_version.patch](tarball://root/attachments/some-uuid/ticket6363/trac_6363_notebook_version.patch) by @qed777 created at 2009-06-20 12:26:40
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_050909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6363",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6363#issuecomment-50909",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_050910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6363",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6363#issuecomment-50910",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_050911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6363",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6363#issuecomment-50911",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

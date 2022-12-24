@@ -14,7 +14,7 @@ archive/issues_006173.json:
     "title": "atlas -- change from SAGE_SIMD_MODE to SAGE_FAT_BINARY",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6173",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_049232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6173#issuecomment-49232",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_049233.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6173#issuecomment-49233",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_049234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6173#issuecomment-49234",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

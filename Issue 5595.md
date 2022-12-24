@@ -14,7 +14,7 @@ archive/issues_005595.json:
     "title": "[with patch, needs review] minor dependancy checking glitch",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5595",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: mabshoff
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5595
 archive/issue_comments_043574.json:
 ```json
 {
-    "body": "Attachment [5595-dep-fix.patch](tarball://root/attachments/some-uuid/ticket5595/5595-dep-fix.patch) by robertwb created at 2009-03-24 01:59:56",
+    "body": "Attachment [5595-dep-fix.patch](tarball://root/attachments/some-uuid/ticket5595/5595-dep-fix.patch) by @robertwb created at 2009-03-24 01:59:56",
     "created_at": "2009-03-24T01:59:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5595#issuecomment-43574",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5595-dep-fix.patch](tarball://root/attachments/some-uuid/ticket5595/5595-dep-fix.patch) by robertwb created at 2009-03-24 01:59:56
+Attachment [5595-dep-fix.patch](tarball://root/attachments/some-uuid/ticket5595/5595-dep-fix.patch) by @robertwb created at 2009-03-24 01:59:56
 
 
 

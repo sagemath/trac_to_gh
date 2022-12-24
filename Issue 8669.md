@@ -3,7 +3,7 @@
 archive/issues_008669.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  leif\n\nIf you run `sage-spkg PKG_NAME` and hit ctrl-c during downloading, you end up with a partial spkg file.  Then if you run `sage-spkg PKG_NAME` again, it just opens up that file and then crashes because the file is incomplete.\n\nThe attached patch attempts to fix this.  It seems to work, deleting the partially downloaded file, but for reasons I don't understand, it's not printing any of the accompanying messages.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8669\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nexttime\n\nIf you run `sage-spkg PKG_NAME` and hit ctrl-c during downloading, you end up with a partial spkg file.  Then if you run `sage-spkg PKG_NAME` again, it just opens up that file and then crashes because the file is incomplete.\n\nThe attached patch attempts to fix this.  It seems to work, deleting the partially downloaded file, but for reasons I don't understand, it's not printing any of the accompanying messages.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8669\n\n",
     "created_at": "2010-04-10T18:56:51Z",
     "labels": [
         "packages: optional",
@@ -14,12 +14,12 @@ archive/issues_008669.json:
     "title": "interrupting download in sage-spkg should delete the spkg file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8669",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: tbd
 
-CC:  leif
+CC:  @nexttime
 
 If you run `sage-spkg PKG_NAME` and hit ctrl-c during downloading, you end up with a partial spkg file.  Then if you run `sage-spkg PKG_NAME` again, it just opens up that file and then crashes because the file is incomplete.
 
@@ -42,7 +42,7 @@ archive/issue_comments_078877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8669#issuecomment-78877",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -60,7 +60,7 @@ archive/issue_comments_078878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8669#issuecomment-78878",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_078879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8669#issuecomment-78879",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_078880.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8669#issuecomment-78880",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_078881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8669#issuecomment-78881",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_078882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8669#issuecomment-78882",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -162,16 +162,16 @@ scripts repo
 archive/issue_comments_078883.json:
 ```json
 {
-    "body": "Attachment [trac_8669-download.2.patch](tarball://root/attachments/some-uuid/ticket8669/trac_8669-download.2.patch) by jhpalmieri created at 2010-04-10 23:46:55\n\nscripts repo",
+    "body": "Attachment [trac_8669-download.2.patch](tarball://root/attachments/some-uuid/ticket8669/trac_8669-download.2.patch) by @jhpalmieri created at 2010-04-10 23:46:55\n\nscripts repo",
     "created_at": "2010-04-10T23:46:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8669#issuecomment-78883",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8669-download.2.patch](tarball://root/attachments/some-uuid/ticket8669/trac_8669-download.2.patch) by jhpalmieri created at 2010-04-10 23:46:55
+Attachment [trac_8669-download.2.patch](tarball://root/attachments/some-uuid/ticket8669/trac_8669-download.2.patch) by @jhpalmieri created at 2010-04-10 23:46:55
 
 scripts repo
 
@@ -182,16 +182,16 @@ scripts repo
 archive/issue_comments_078884.json:
 ```json
 {
-    "body": "Attachment [trac_8669-download.patch](tarball://root/attachments/some-uuid/ticket8669/trac_8669-download.patch) by jhpalmieri created at 2010-04-10 23:47:11\n\nscripts repo (same as other patch)",
+    "body": "Attachment [trac_8669-download.patch](tarball://root/attachments/some-uuid/ticket8669/trac_8669-download.patch) by @jhpalmieri created at 2010-04-10 23:47:11\n\nscripts repo (same as other patch)",
     "created_at": "2010-04-10T23:47:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8669#issuecomment-78884",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8669-download.patch](tarball://root/attachments/some-uuid/ticket8669/trac_8669-download.patch) by jhpalmieri created at 2010-04-10 23:47:11
+Attachment [trac_8669-download.patch](tarball://root/attachments/some-uuid/ticket8669/trac_8669-download.patch) by @jhpalmieri created at 2010-04-10 23:47:11
 
 scripts repo (same as other patch)
 
@@ -202,16 +202,16 @@ scripts repo (same as other patch)
 archive/issue_comments_078885.json:
 ```json
 {
-    "body": "Attachment [trac_8669-download.3.patch](tarball://root/attachments/some-uuid/ticket8669/trac_8669-download.3.patch) by jhpalmieri created at 2010-04-10 23:47:47\n\nTo the release manager: please delete all but \"trac_8669-download.patch\".",
+    "body": "Attachment [trac_8669-download.3.patch](tarball://root/attachments/some-uuid/ticket8669/trac_8669-download.3.patch) by @jhpalmieri created at 2010-04-10 23:47:47\n\nTo the release manager: please delete all but \"trac_8669-download.patch\".",
     "created_at": "2010-04-10T23:47:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8669#issuecomment-78885",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8669-download.3.patch](tarball://root/attachments/some-uuid/ticket8669/trac_8669-download.3.patch) by jhpalmieri created at 2010-04-10 23:47:47
+Attachment [trac_8669-download.3.patch](tarball://root/attachments/some-uuid/ticket8669/trac_8669-download.3.patch) by @jhpalmieri created at 2010-04-10 23:47:47
 
 To the release manager: please delete all but "trac_8669-download.patch".
 
@@ -227,7 +227,7 @@ archive/issue_comments_078886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8669#issuecomment-78886",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_078887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8669#issuecomment-78887",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_078888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8669#issuecomment-78888",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_078889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8669#issuecomment-78889",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_000608.json:
     "title": "bug in mobius",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/608",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -102,7 +102,7 @@ archive/issue_comments_003130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/608#issuecomment-3130",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -115,16 +115,16 @@ Fixed -- see attached patch.
 archive/issue_comments_003131.json:
 ```json
 {
-    "body": "Attachment [6197.patch](tarball://root/attachments/some-uuid/ticket608/6197.patch) by was created at 2007-09-07 01:37:59",
+    "body": "Attachment [6197.patch](tarball://root/attachments/some-uuid/ticket608/6197.patch) by @williamstein created at 2007-09-07 01:37:59",
     "created_at": "2007-09-07T01:37:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/608#issuecomment-3131",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [6197.patch](tarball://root/attachments/some-uuid/ticket608/6197.patch) by was created at 2007-09-07 01:37:59
+Attachment [6197.patch](tarball://root/attachments/some-uuid/ticket608/6197.patch) by @williamstein created at 2007-09-07 01:37:59
 
 
 
@@ -138,7 +138,7 @@ archive/issue_comments_003132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/608#issuecomment-3132",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

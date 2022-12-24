@@ -14,7 +14,7 @@ archive/issues_005681.json:
     "title": "[with patch; needs review] notebook -- worksheets open in new page/tab",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5681",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -108,7 +108,7 @@ archive/issue_comments_044435.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5681#issuecomment-44435",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

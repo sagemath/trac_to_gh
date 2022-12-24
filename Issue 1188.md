@@ -3,7 +3,7 @@
 archive/issues_001188.json:
 ```json
 {
-    "body": "Assignee: was\n\nConsider this example from the Magma handbook:\n\n```\n# n integers which's GCD we are interested in\nsage: Q = [ 67015143, 248934363018, 109210, 25590011055, 74631449, 10230248, 709487, 68965012139, 972065, 864972271 ]\nsage: n = len(Q)\nsage: S = 100 \nsage: X = Matrix(IntegerRing(), n, n + 1)\nsage: for i in xrange(n):\n...     X[i,i + 1] = 1\nsage: for i in xrange(n): \n...     X[i,0] = S*Q[i]\nsage: L = X.LLL()\nsage: show(L)\nsage: M = L[n-1].list()[1:]\nsage: add([Q[i]*M[i] for i in range(n)])\n864972271\n```\n\n\nwhich isn't quite right, we expect:\n\n```\n# n integers which's GCD we are interested in\nsage: Q = [ 67015143, 248934363018, 109210, 25590011055, 74631449, 10230248, 709487, 68965012139, 972065, 864972271 ]\nsage: n = len(Q)\nsage: S = 100 \nsage: X = Matrix(IntegerRing(), n, n + 1)\nsage: for i in xrange(n):\n...     X[i,i + 1] = 1\nsage: for i in xrange(n): \n...     X[i,0] = S*Q[i]\nsage: L = X.LLL(algorithm='NTL:LLL')\nsage: show(L)\nsage: M = L[n-1].list()[1:]\nsage: add([Q[i]*M[i] for i in range(n)])\n-1\n```\n\n\nIs this my lack of understanding of LLL reduction or is this a bug?\n\nIssue created by migration from https://trac.sagemath.org/ticket/1188\n\n",
+    "body": "Assignee: @williamstein\n\nConsider this example from the Magma handbook:\n\n```\n# n integers which's GCD we are interested in\nsage: Q = [ 67015143, 248934363018, 109210, 25590011055, 74631449, 10230248, 709487, 68965012139, 972065, 864972271 ]\nsage: n = len(Q)\nsage: S = 100 \nsage: X = Matrix(IntegerRing(), n, n + 1)\nsage: for i in xrange(n):\n...     X[i,i + 1] = 1\nsage: for i in xrange(n): \n...     X[i,0] = S*Q[i]\nsage: L = X.LLL()\nsage: show(L)\nsage: M = L[n-1].list()[1:]\nsage: add([Q[i]*M[i] for i in range(n)])\n864972271\n```\n\n\nwhich isn't quite right, we expect:\n\n```\n# n integers which's GCD we are interested in\nsage: Q = [ 67015143, 248934363018, 109210, 25590011055, 74631449, 10230248, 709487, 68965012139, 972065, 864972271 ]\nsage: n = len(Q)\nsage: S = 100 \nsage: X = Matrix(IntegerRing(), n, n + 1)\nsage: for i in xrange(n):\n...     X[i,i + 1] = 1\nsage: for i in xrange(n): \n...     X[i,0] = S*Q[i]\nsage: L = X.LLL(algorithm='NTL:LLL')\nsage: show(L)\nsage: M = L[n-1].list()[1:]\nsage: add([Q[i]*M[i] for i in range(n)])\n-1\n```\n\n\nIs this my lack of understanding of LLL reduction or is this a bug?\n\nIssue created by migration from https://trac.sagemath.org/ticket/1188\n\n",
     "created_at": "2007-11-16T21:48:40Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_001188.json:
     "title": "unexpected results after LLL?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1188",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Consider this example from the Magma handbook:
 
@@ -77,7 +77,7 @@ archive/issue_comments_007337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1188#issuecomment-7337",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_007338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1188#issuecomment-7338",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_007339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1188#issuecomment-7339",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_007340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1188#issuecomment-7340",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -145,16 +145,16 @@ Changing priority from major to blocker.
 archive/issue_comments_007341.json:
 ```json
 {
-    "body": "Changing assignee from was to malb.",
+    "body": "Changing assignee from @williamstein to @malb.",
     "created_at": "2007-11-17T14:26:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1188#issuecomment-7341",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from was to malb.
+Changing assignee from @williamstein to @malb.
 
 
 
@@ -168,7 +168,7 @@ archive/issue_comments_007342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1188#issuecomment-7342",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_007343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1188#issuecomment-7343",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_007344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1188#issuecomment-7344",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_007345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1188#issuecomment-7345",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_007346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1188#issuecomment-7346",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_007347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1188#issuecomment-7347",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -328,7 +328,7 @@ archive/issue_comments_007349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1188#issuecomment-7349",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -341,16 +341,16 @@ doctests + documentation update
 archive/issue_comments_007350.json:
 ```json
 {
-    "body": "Attachment [fplll.patch](tarball://root/attachments/some-uuid/ticket1188/fplll.patch) by wjp created at 2007-11-19 11:41:47\n\nmalb: The error codes from LLL() are positive when an error occurs. Attaching an updated (non-hg) patch that replaces the ret < 0 checks by ret != 0.",
+    "body": "Attachment [fplll.patch](tarball://root/attachments/some-uuid/ticket1188/fplll.patch) by @wjp created at 2007-11-19 11:41:47\n\nmalb: The error codes from LLL() are positive when an error occurs. Attaching an updated (non-hg) patch that replaces the ret < 0 checks by ret != 0.",
     "created_at": "2007-11-19T11:41:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1188#issuecomment-7350",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [fplll.patch](tarball://root/attachments/some-uuid/ticket1188/fplll.patch) by wjp created at 2007-11-19 11:41:47
+Attachment [fplll.patch](tarball://root/attachments/some-uuid/ticket1188/fplll.patch) by @wjp created at 2007-11-19 11:41:47
 
 malb: The error codes from LLL() are positive when an error occurs. Attaching an updated (non-hg) patch that replaces the ret < 0 checks by ret != 0.
 
@@ -361,16 +361,16 @@ malb: The error codes from LLL() are positive when an error occurs. Attaching an
 archive/issue_comments_007351.json:
 ```json
 {
-    "body": "Attachment [fplll2.patch](tarball://root/attachments/some-uuid/ticket1188/fplll2.patch) by wjp created at 2007-11-19 11:42:13\n\nupdated fplll.patch",
+    "body": "Attachment [fplll2.patch](tarball://root/attachments/some-uuid/ticket1188/fplll2.patch) by @wjp created at 2007-11-19 11:42:13\n\nupdated fplll.patch",
     "created_at": "2007-11-19T11:42:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1188#issuecomment-7351",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [fplll2.patch](tarball://root/attachments/some-uuid/ticket1188/fplll2.patch) by wjp created at 2007-11-19 11:42:13
+Attachment [fplll2.patch](tarball://root/attachments/some-uuid/ticket1188/fplll2.patch) by @wjp created at 2007-11-19 11:42:13
 
 updated fplll.patch
 
@@ -386,7 +386,7 @@ archive/issue_comments_007352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1188#issuecomment-7352",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -420,7 +420,7 @@ archive/issue_comments_007353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1188#issuecomment-7353",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

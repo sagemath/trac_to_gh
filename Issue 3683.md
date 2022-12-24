@@ -3,7 +3,7 @@
 archive/issues_003683.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nCC:  wdj\n\nThis is a start for anyone interested in G-module decompositions using GAP's Meataxe implementations.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3683\n\n",
+    "body": "Assignee: joyner\n\nCC:  @wdjoyner\n\nThis is a start for anyone interested in G-module decompositions using GAP's Meataxe implementations.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3683\n\n",
     "created_at": "2008-07-20T03:02:11Z",
     "labels": [
         "group theory",
@@ -14,12 +14,12 @@ archive/issues_003683.json:
     "title": "meataxe interface [with patch, not ready for review]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3683",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 Assignee: joyner
 
-CC:  wdj
+CC:  @wdjoyner
 
 This is a start for anyone interested in G-module decompositions using GAP's Meataxe implementations.
 
@@ -39,7 +39,7 @@ archive/issue_comments_026083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3683#issuecomment-26083",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_026084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3683#issuecomment-26084",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_026085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3683#issuecomment-26085",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_026086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3683#issuecomment-26086",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -128,16 +128,16 @@ This is a new patch based on sage 3.1.alpha0. Does not require other patches.
 archive/issue_comments_026087.json:
 ```json
 {
-    "body": "Attachment [10128.patch](tarball://root/attachments/some-uuid/ticket3683/10128.patch) by wdj created at 2008-08-03 02:57:32\n\nThe attached patch 10128 fixes the bug Simon found (thanks Simon!).",
+    "body": "Attachment [10128.patch](tarball://root/attachments/some-uuid/ticket3683/10128.patch) by @wdjoyner created at 2008-08-03 02:57:32\n\nThe attached patch 10128 fixes the bug Simon found (thanks Simon!).",
     "created_at": "2008-08-03T02:57:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3683#issuecomment-26087",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [10128.patch](tarball://root/attachments/some-uuid/ticket3683/10128.patch) by wdj created at 2008-08-03 02:57:32
+Attachment [10128.patch](tarball://root/attachments/some-uuid/ticket3683/10128.patch) by @wdjoyner created at 2008-08-03 02:57:32
 
 The attached patch 10128 fixes the bug Simon found (thanks Simon!).
 
@@ -153,7 +153,7 @@ archive/issue_comments_026088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3683#issuecomment-26088",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_026089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3683#issuecomment-26089",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -208,16 +208,16 @@ Regarding a "better" "smaller" example, they are not so easy to find! I did find
 archive/issue_comments_026090.json:
 ```json
 {
-    "body": "Attachment [10129.patch](tarball://root/attachments/some-uuid/ticket3683/10129.patch) by wdj created at 2008-08-12 18:36:47\n\nbased on 3.1.alpha0",
+    "body": "Attachment [10129.patch](tarball://root/attachments/some-uuid/ticket3683/10129.patch) by @wdjoyner created at 2008-08-12 18:36:47\n\nbased on 3.1.alpha0",
     "created_at": "2008-08-12T18:36:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3683#issuecomment-26090",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [10129.patch](tarball://root/attachments/some-uuid/ticket3683/10129.patch) by wdj created at 2008-08-12 18:36:47
+Attachment [10129.patch](tarball://root/attachments/some-uuid/ticket3683/10129.patch) by @wdjoyner created at 2008-08-12 18:36:47
 
 based on 3.1.alpha0
 
@@ -233,7 +233,7 @@ archive/issue_comments_026091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3683#issuecomment-26091",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_026092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3683#issuecomment-26092",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_026094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3683#issuecomment-26094",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_026095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3683#issuecomment-26095",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -352,7 +352,7 @@ archive/issue_comments_026096.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3683#issuecomment-26096",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -365,16 +365,16 @@ based on sage-3.1.alpha0, as the others
 archive/issue_comments_026097.json:
 ```json
 {
-    "body": "Attachment [10130.patch](tarball://root/attachments/some-uuid/ticket3683/10130.patch) by wdj created at 2008-08-13 20:57:39\n\nThe last patch 10130 is a docstring change only. \n\nFollowing Michael Abshoff's suggestion, I emailed sage-devel and mentioned the problem I was having with the random comments. It seems I was using the current_randstate().set_seed_gap() command incorrectly for the situation. I added some set_random_seed(n) statements (where n is chosen in a specific way) and removed the \"# random output\" comments. I did multiple test passes and this seems to work each time now.\n\nHopefully, with 10130, everyone is okay with this now.",
+    "body": "Attachment [10130.patch](tarball://root/attachments/some-uuid/ticket3683/10130.patch) by @wdjoyner created at 2008-08-13 20:57:39\n\nThe last patch 10130 is a docstring change only. \n\nFollowing Michael Abshoff's suggestion, I emailed sage-devel and mentioned the problem I was having with the random comments. It seems I was using the current_randstate().set_seed_gap() command incorrectly for the situation. I added some set_random_seed(n) statements (where n is chosen in a specific way) and removed the \"# random output\" comments. I did multiple test passes and this seems to work each time now.\n\nHopefully, with 10130, everyone is okay with this now.",
     "created_at": "2008-08-13T20:57:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3683#issuecomment-26097",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [10130.patch](tarball://root/attachments/some-uuid/ticket3683/10130.patch) by wdj created at 2008-08-13 20:57:39
+Attachment [10130.patch](tarball://root/attachments/some-uuid/ticket3683/10130.patch) by @wdjoyner created at 2008-08-13 20:57:39
 
 The last patch 10130 is a docstring change only. 
 

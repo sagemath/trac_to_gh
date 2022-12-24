@@ -14,7 +14,7 @@ archive/issues_005226.json:
     "title": "convert sage.structure.* to ReST",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5226",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tba

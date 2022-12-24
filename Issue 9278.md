@@ -3,7 +3,7 @@
 archive/issues_009278.json:
 ```json
 {
-    "body": "Assignee: jason\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9278\n\n",
+    "body": "Assignee: @jasongrout\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9278\n\n",
     "created_at": "2010-06-19T23:08:14Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_009278.json:
     "title": "remove databases/kohel.py since it is not used and broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9278",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: jason
+Assignee: @jasongrout
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9278
 archive/issue_comments_087388.json:
 ```json
 {
-    "body": "Attachment [trac_9278.patch](tarball://root/attachments/some-uuid/ticket9278/trac_9278.patch) by AlexGhitza created at 2010-06-19 23:09:56",
+    "body": "Attachment [trac_9278.patch](tarball://root/attachments/some-uuid/ticket9278/trac_9278.patch) by @aghitza created at 2010-06-19 23:09:56",
     "created_at": "2010-06-19T23:09:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9278#issuecomment-87388",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_9278.patch](tarball://root/attachments/some-uuid/ticket9278/trac_9278.patch) by AlexGhitza created at 2010-06-19 23:09:56
+Attachment [trac_9278.patch](tarball://root/attachments/some-uuid/ticket9278/trac_9278.patch) by @aghitza created at 2010-06-19 23:09:56
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_087389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9278#issuecomment-87389",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_087390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9278#issuecomment-87390",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_087391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9278#issuecomment-87391",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_087392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9278#issuecomment-87392",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_087393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9278#issuecomment-87393",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

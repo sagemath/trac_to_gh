@@ -3,7 +3,7 @@
 archive/issues_001513.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe title pretty much says it all. make 3.79.1 doesn't support make -B, and I'm likely not the only person with a slightly outdated version of make, so we should see if this can be switched around at all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1513\n\n",
+    "body": "Assignee: @williamstein\n\nThe title pretty much says it all. make 3.79.1 doesn't support make -B, and I'm likely not the only person with a slightly outdated version of make, so we should see if this can be switched around at all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1513\n\n",
     "created_at": "2007-12-14T23:21:40Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_001513.json:
     "title": "FLINT install uses make -B, which isn't an option on (slightly) older make versions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1513",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The title pretty much says it all. make 3.79.1 doesn't support make -B, and I'm likely not the only person with a slightly outdated version of make, so we should see if this can be switched around at all.
 
@@ -76,7 +76,7 @@ Changing status from new to assigned.
 archive/issue_comments_009701.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2007-12-14T23:44:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1513",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_009701.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 

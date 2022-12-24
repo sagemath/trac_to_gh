@@ -14,7 +14,7 @@ archive/issues_005394.json:
     "title": "[with patch, needs review] Remove the remnants of the docs from sage-ptest and make it ignore the devel/sage/build directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5394",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: cwitty

@@ -14,7 +14,7 @@ archive/issues_007780.json:
     "title": "latex problems from underscores in docstrings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7780",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 Assignee: mvngu
@@ -46,7 +46,7 @@ archive/issue_comments_067081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7780#issuecomment-67081",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -59,16 +59,16 @@ Applies to 4.3
 archive/issue_comments_067082.json:
 ```json
 {
-    "body": "Attachment [trac_7780-docstring.patch](tarball://root/attachments/some-uuid/ticket7780/trac_7780-docstring.patch) by cremona created at 2009-12-28 16:58:31\n\nPatch attached.  Review is trivial but requires waiting for docs to rebuild...",
+    "body": "Attachment [trac_7780-docstring.patch](tarball://root/attachments/some-uuid/ticket7780/trac_7780-docstring.patch) by @JohnCremona created at 2009-12-28 16:58:31\n\nPatch attached.  Review is trivial but requires waiting for docs to rebuild...",
     "created_at": "2009-12-28T16:58:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7780#issuecomment-67082",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_7780-docstring.patch](tarball://root/attachments/some-uuid/ticket7780/trac_7780-docstring.patch) by cremona created at 2009-12-28 16:58:31
+Attachment [trac_7780-docstring.patch](tarball://root/attachments/some-uuid/ticket7780/trac_7780-docstring.patch) by @JohnCremona created at 2009-12-28 16:58:31
 
 Patch attached.  Review is trivial but requires waiting for docs to rebuild...
 
@@ -84,7 +84,7 @@ archive/issue_comments_067083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7780#issuecomment-67083",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_067086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7780#issuecomment-67086",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_002006.json:
     "title": "crap -- gap contains a binary",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2006",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -45,7 +45,7 @@ archive/issue_comments_012976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2006",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2006#issuecomment-12976",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

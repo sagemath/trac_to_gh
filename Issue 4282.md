@@ -3,7 +3,7 @@
 archive/issues_004282.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nThe current minpoly algorithm on symbolic objects is slow and often fails. This patch makes it work in many more cases, as well as implementing better conversion into QQbar. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4282\n\n",
+    "body": "Assignee: @burcin\n\nThe current minpoly algorithm on symbolic objects is slow and often fails. This patch makes it work in many more cases, as well as implementing better conversion into QQbar. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4282\n\n",
     "created_at": "2008-10-14T14:18:11Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_004282.json:
     "title": "[with patch, needs review] symbolic minpoly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4282",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 The current minpoly algorithm on symbolic objects is slow and often fails. This patch makes it work in many more cases, as well as implementing better conversion into QQbar. 
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4282
 archive/issue_comments_031327.json:
 ```json
 {
-    "body": "Attachment [4282-symbolic-minpoly.patch](tarball://root/attachments/some-uuid/ticket4282/4282-symbolic-minpoly.patch) by robertwb created at 2008-10-14 14:21:04\n\nIt's still not super fast, but it's a lot better. Perhaps working with resultants directly could be faster (or improving QQbar's implementation, though I'm not sure how much is overhead vs. being a hard computational problem).",
+    "body": "Attachment [4282-symbolic-minpoly.patch](tarball://root/attachments/some-uuid/ticket4282/4282-symbolic-minpoly.patch) by @robertwb created at 2008-10-14 14:21:04\n\nIt's still not super fast, but it's a lot better. Perhaps working with resultants directly could be faster (or improving QQbar's implementation, though I'm not sure how much is overhead vs. being a hard computational problem).",
     "created_at": "2008-10-14T14:21:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4282",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4282#issuecomment-31327",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4282-symbolic-minpoly.patch](tarball://root/attachments/some-uuid/ticket4282/4282-symbolic-minpoly.patch) by robertwb created at 2008-10-14 14:21:04
+Attachment [4282-symbolic-minpoly.patch](tarball://root/attachments/some-uuid/ticket4282/4282-symbolic-minpoly.patch) by @robertwb created at 2008-10-14 14:21:04
 
 It's still not super fast, but it's a lot better. Perhaps working with resultants directly could be faster (or improving QQbar's implementation, though I'm not sure how much is overhead vs. being a hard computational problem).
 
@@ -111,7 +111,7 @@ archive/issue_comments_031329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4282",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4282#issuecomment-31329",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -124,16 +124,16 @@ Ah. That should be an easy fix... (must have fixed it in my branch elsewhere, pe
 archive/issue_comments_031330.json:
 ```json
 {
-    "body": "Attachment [4282-sqrt-fix.patch](tarball://root/attachments/some-uuid/ticket4282/4282-sqrt-fix.patch) by robertwb created at 2008-11-13 23:12:22",
+    "body": "Attachment [4282-sqrt-fix.patch](tarball://root/attachments/some-uuid/ticket4282/4282-sqrt-fix.patch) by @robertwb created at 2008-11-13 23:12:22",
     "created_at": "2008-11-13T23:12:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4282",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4282#issuecomment-31330",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4282-sqrt-fix.patch](tarball://root/attachments/some-uuid/ticket4282/4282-sqrt-fix.patch) by robertwb created at 2008-11-13 23:12:22
+Attachment [4282-sqrt-fix.patch](tarball://root/attachments/some-uuid/ticket4282/4282-sqrt-fix.patch) by @robertwb created at 2008-11-13 23:12:22
 
 
 
@@ -147,7 +147,7 @@ archive/issue_comments_031331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4282",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4282#issuecomment-31331",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_031332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4282",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4282#issuecomment-31332",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_031333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4282",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4282#issuecomment-31333",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_031334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4282",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4282#issuecomment-31334",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -276,16 +276,16 @@ William
 archive/issue_comments_031335.json:
 ```json
 {
-    "body": "Changing assignee from burcin to robertwb.",
+    "body": "Changing assignee from @burcin to @robertwb.",
     "created_at": "2008-12-07T09:11:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4282",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4282#issuecomment-31335",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from burcin to robertwb.
+Changing assignee from @burcin to @robertwb.
 
 
 
@@ -299,7 +299,7 @@ archive/issue_comments_031336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4282",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4282#issuecomment-31336",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_031337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4282",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4282#issuecomment-31337",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -340,16 +340,16 @@ There are several mistakes in English in the new documentation that you added:
 archive/issue_comments_031338.json:
 ```json
 {
-    "body": "Attachment [4282-symbolic-minpoly-referee-fixes.patch](tarball://root/attachments/some-uuid/ticket4282/4282-symbolic-minpoly-referee-fixes.patch) by robertwb created at 2008-12-08 19:21:20\n\nI made these changes and refreshed the patch. On your first (= last) point, I prefer the word \"that\" as there is no question of whether or not the result is correct, it just may not be obvious without the right simplification.",
+    "body": "Attachment [4282-symbolic-minpoly-referee-fixes.patch](tarball://root/attachments/some-uuid/ticket4282/4282-symbolic-minpoly-referee-fixes.patch) by @robertwb created at 2008-12-08 19:21:20\n\nI made these changes and refreshed the patch. On your first (= last) point, I prefer the word \"that\" as there is no question of whether or not the result is correct, it just may not be obvious without the right simplification.",
     "created_at": "2008-12-08T19:21:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4282",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4282#issuecomment-31338",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4282-symbolic-minpoly-referee-fixes.patch](tarball://root/attachments/some-uuid/ticket4282/4282-symbolic-minpoly-referee-fixes.patch) by robertwb created at 2008-12-08 19:21:20
+Attachment [4282-symbolic-minpoly-referee-fixes.patch](tarball://root/attachments/some-uuid/ticket4282/4282-symbolic-minpoly-referee-fixes.patch) by @robertwb created at 2008-12-08 19:21:20
 
 I made these changes and refreshed the patch. On your first (= last) point, I prefer the word "that" as there is no question of whether or not the result is correct, it just may not be obvious without the right simplification.
 
@@ -365,7 +365,7 @@ archive/issue_comments_031339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4282",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4282#issuecomment-31339",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -430,16 +430,16 @@ sage: %timeit sqrt(sqrt(5) + sqrt(2)).minpoly()
 archive/issue_comments_031340.json:
 ```json
 {
-    "body": "Attachment [4282-symbolic-minpoly-referee-fixes-2.patch](tarball://root/attachments/some-uuid/ticket4282/4282-symbolic-minpoly-referee-fixes-2.patch) by ncalexan created at 2008-12-09 19:48:18",
+    "body": "Attachment [4282-symbolic-minpoly-referee-fixes-2.patch](tarball://root/attachments/some-uuid/ticket4282/4282-symbolic-minpoly-referee-fixes-2.patch) by @ncalexan created at 2008-12-09 19:48:18",
     "created_at": "2008-12-09T19:48:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4282",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4282#issuecomment-31340",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [4282-symbolic-minpoly-referee-fixes-2.patch](tarball://root/attachments/some-uuid/ticket4282/4282-symbolic-minpoly-referee-fixes-2.patch) by ncalexan created at 2008-12-09 19:48:18
+Attachment [4282-symbolic-minpoly-referee-fixes-2.patch](tarball://root/attachments/some-uuid/ticket4282/4282-symbolic-minpoly-referee-fixes-2.patch) by @ncalexan created at 2008-12-09 19:48:18
 
 
 
@@ -453,7 +453,7 @@ archive/issue_comments_031341.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4282",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4282#issuecomment-31341",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

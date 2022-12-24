@@ -3,7 +3,7 @@
 archive/issues_007704.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  spancratz\n\n\n```\nsage: matrix(ZZ,4,sparse=True).det()\n...\nTypeError: charpoly() takes at most 1 positional argument (2 given)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7704\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  spancratz\n\n\n```\nsage: matrix(ZZ,4,sparse=True).det()\n...\nTypeError: charpoly() takes at most 1 positional argument (2 given)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7704\n\n",
     "created_at": "2009-12-16T08:13:27Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_007704.json:
     "title": "bug in sparse matrix det",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7704",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  spancratz
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7704
 archive/issue_comments_066115.json:
 ```json
 {
-    "body": "Attachment [trac_7704.patch](tarball://root/attachments/some-uuid/ticket7704/trac_7704.patch) by was created at 2009-12-16 08:34:24",
+    "body": "Attachment [trac_7704.patch](tarball://root/attachments/some-uuid/ticket7704/trac_7704.patch) by @williamstein created at 2009-12-16 08:34:24",
     "created_at": "2009-12-16T08:34:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7704#issuecomment-66115",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7704.patch](tarball://root/attachments/some-uuid/ticket7704/trac_7704.patch) by was created at 2009-12-16 08:34:24
+Attachment [trac_7704.patch](tarball://root/attachments/some-uuid/ticket7704/trac_7704.patch) by @williamstein created at 2009-12-16 08:34:24
 
 
 
@@ -63,7 +63,7 @@ archive/issue_comments_066116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7704#issuecomment-66116",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_066119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7704#issuecomment-66119",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_066120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7704#issuecomment-66120",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

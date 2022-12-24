@@ -3,7 +3,7 @@
 archive/issues_002066.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2066\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2066\n\n",
     "created_at": "2008-02-05T22:26:56Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_002066.json:
     "title": "[with patch; needs review] animate -- bug fix for xmin/ymin/xmax/ymax + add a nice example requested by a user",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2066",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2066
 archive/issue_comments_013377.json:
 ```json
 {
-    "body": "Attachment [trac-2066-animate.patch](tarball://root/attachments/some-uuid/ticket2066/trac-2066-animate.patch) by was created at 2008-03-12 05:02:09",
+    "body": "Attachment [trac-2066-animate.patch](tarball://root/attachments/some-uuid/ticket2066/trac-2066-animate.patch) by @williamstein created at 2008-03-12 05:02:09",
     "created_at": "2008-03-12T05:02:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2066",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2066#issuecomment-13377",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-2066-animate.patch](tarball://root/attachments/some-uuid/ticket2066/trac-2066-animate.patch) by was created at 2008-03-12 05:02:09
+Attachment [trac-2066-animate.patch](tarball://root/attachments/some-uuid/ticket2066/trac-2066-animate.patch) by @williamstein created at 2008-03-12 05:02:09
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_013378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2066",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2066#issuecomment-13378",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

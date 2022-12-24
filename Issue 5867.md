@@ -14,7 +14,7 @@ archive/issues_005867.json:
     "title": "Fix gd build on FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5867",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 Assignee: mabshoff
@@ -77,7 +77,7 @@ archive/issue_comments_046347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5867#issuecomment-46347",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_046348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5867#issuecomment-46348",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -110,16 +110,16 @@ The spkg with this fix is at http://sage.math.washington.edu/home/mhansen/gd-2.0
 archive/issue_comments_046349.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to mhansen.",
+    "body": "Changing assignee from mabshoff to @mwhansen.",
     "created_at": "2009-06-20T02:07:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5867#issuecomment-46349",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from mabshoff to mhansen.
+Changing assignee from mabshoff to @mwhansen.
 
 
 
@@ -133,7 +133,7 @@ archive/issue_comments_046350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5867#issuecomment-46350",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

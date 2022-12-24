@@ -3,7 +3,7 @@
 archive/issues_009289.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  sage-combinat\n\nImplement the ring of Puiseux polynomials. Those are usual\npolynomials, except that exponents can be any rational number.\n\n\n```\n   sage: S = PolynomialRing(QQ, ['a','b','c']); S\n   Multivariate Puiseux Polynomial Ring in a, b, c over Rational Field\n```\n\n\n\nSee also: http://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Puiseux, http://en.wikipedia.org/wiki/Puiseux_series\n\nIssue created by migration from https://trac.sagemath.org/ticket/9289\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nImplement the ring of Puiseux polynomials. Those are usual\npolynomials, except that exponents can be any rational number.\n\n\n```\n   sage: S = PolynomialRing(QQ, ['a','b','c']); S\n   Multivariate Puiseux Polynomial Ring in a, b, c over Rational Field\n```\n\n\n\nSee also: http://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Puiseux, http://en.wikipedia.org/wiki/Puiseux_series\n\nIssue created by migration from https://trac.sagemath.org/ticket/9289\n\n",
     "created_at": "2010-06-21T07:34:53Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_009289.json:
     "title": "Implement Puiseux polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9289",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 CC:  sage-combinat
 
@@ -50,7 +50,7 @@ archive/issue_comments_087485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9289",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9289#issuecomment-87485",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_087486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9289",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9289#issuecomment-87486",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_087487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9289",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9289#issuecomment-87487",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_087488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9289",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9289#issuecomment-87488",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_087489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9289",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9289#issuecomment-87489",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_087490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9289",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9289#issuecomment-87490",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

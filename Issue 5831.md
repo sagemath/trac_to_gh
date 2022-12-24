@@ -3,7 +3,7 @@
 archive/issues_005831.json:
 ```json
 {
-    "body": "Assignee: bump\n\nCC:  sage-combinat\n\nThe methods simple_roots(), fundamental_weights() and simple_coroots() for the ambient space of a root system are supposed to return a family. This was never correctly implemented for the reducible types, and the patch corrects this.\n\nThere are also some changes in weyl_characters.py, where it was assumed that the root system was irreducible in a few places. The patch corrects this.\n\nThe patch is probably correct but I haven't confirmed that it applies cleanly to sage-3.4.1.rc3 or that it passes `sage --testall` so wait to review.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5831\n\n",
+    "body": "Assignee: @dwbump\n\nCC:  sage-combinat\n\nThe methods simple_roots(), fundamental_weights() and simple_coroots() for the ambient space of a root system are supposed to return a family. This was never correctly implemented for the reducible types, and the patch corrects this.\n\nThere are also some changes in weyl_characters.py, where it was assumed that the root system was irreducible in a few places. The patch corrects this.\n\nThe patch is probably correct but I haven't confirmed that it applies cleanly to sage-3.4.1.rc3 or that it passes `sage --testall` so wait to review.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5831\n\n",
     "created_at": "2009-04-20T05:10:13Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_005831.json:
     "title": "[with patch, not ready for review] reducible root system fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5831",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
-Assignee: bump
+Assignee: @dwbump
 
 CC:  sage-combinat
 
@@ -43,7 +43,7 @@ archive/issue_comments_045831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5831#issuecomment-45831",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_045832.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5831#issuecomment-45832",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -74,16 +74,16 @@ Changing status from new to assigned.
 archive/issue_comments_045833.json:
 ```json
 {
-    "body": "Attachment [reducible.patch](tarball://root/attachments/some-uuid/ticket5831/reducible.patch) by bump created at 2009-04-20 05:18:01",
+    "body": "Attachment [reducible.patch](tarball://root/attachments/some-uuid/ticket5831/reducible.patch) by @dwbump created at 2009-04-20 05:18:01",
     "created_at": "2009-04-20T05:18:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5831#issuecomment-45833",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [reducible.patch](tarball://root/attachments/some-uuid/ticket5831/reducible.patch) by bump created at 2009-04-20 05:18:01
+Attachment [reducible.patch](tarball://root/attachments/some-uuid/ticket5831/reducible.patch) by @dwbump created at 2009-04-20 05:18:01
 
 
 
@@ -97,7 +97,7 @@ archive/issue_comments_045834.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5831#issuecomment-45834",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_045835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5831#issuecomment-45835",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_045836.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5831#issuecomment-45836",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -163,16 +163,16 @@ Thanks!
 archive/issue_comments_045837.json:
 ```json
 {
-    "body": "Attachment [trac_5831.patch](tarball://root/attachments/some-uuid/ticket5831/trac_5831.patch) by bump created at 2009-04-23 01:24:09",
+    "body": "Attachment [trac_5831.patch](tarball://root/attachments/some-uuid/ticket5831/trac_5831.patch) by @dwbump created at 2009-04-23 01:24:09",
     "created_at": "2009-04-23T01:24:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5831#issuecomment-45837",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [trac_5831.patch](tarball://root/attachments/some-uuid/ticket5831/trac_5831.patch) by bump created at 2009-04-23 01:24:09
+Attachment [trac_5831.patch](tarball://root/attachments/some-uuid/ticket5831/trac_5831.patch) by @dwbump created at 2009-04-23 01:24:09
 
 
 
@@ -186,7 +186,7 @@ archive/issue_comments_045838.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5831#issuecomment-45838",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_045839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5831#issuecomment-45839",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 

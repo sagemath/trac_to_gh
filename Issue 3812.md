@@ -3,7 +3,7 @@
 archive/issues_003812.json:
 ```json
 {
-    "body": "Assignee: malb\n\nKeywords: ideal apply_morphism morphism apply\n\napply_morphism is so useful on matrices, and I didn't know that psi(J) was valid for ideals -- so here is documentation and tests for both functions for general ideals.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3812\n\n",
+    "body": "Assignee: @malb\n\nKeywords: ideal apply_morphism morphism apply\n\napply_morphism is so useful on matrices, and I didn't know that psi(J) was valid for ideals -- so here is documentation and tests for both functions for general ideals.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3812\n\n",
     "created_at": "2008-08-12T05:30:18Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_003812.json:
     "title": "add apply_morphism to ideal",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3812",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Keywords: ideal apply_morphism morphism apply
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3812
 archive/issue_comments_027094.json:
 ```json
 {
-    "body": "Attachment [3812-ncalexan-number-field-ideal-apply-morphism.patch](tarball://root/attachments/some-uuid/ticket3812/3812-ncalexan-number-field-ideal-apply-morphism.patch) by ncalexan created at 2008-08-12 05:31:04",
+    "body": "Attachment [3812-ncalexan-number-field-ideal-apply-morphism.patch](tarball://root/attachments/some-uuid/ticket3812/3812-ncalexan-number-field-ideal-apply-morphism.patch) by @ncalexan created at 2008-08-12 05:31:04",
     "created_at": "2008-08-12T05:31:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3812#issuecomment-27094",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [3812-ncalexan-number-field-ideal-apply-morphism.patch](tarball://root/attachments/some-uuid/ticket3812/3812-ncalexan-number-field-ideal-apply-morphism.patch) by ncalexan created at 2008-08-12 05:31:04
+Attachment [3812-ncalexan-number-field-ideal-apply-morphism.patch](tarball://root/attachments/some-uuid/ticket3812/3812-ncalexan-number-field-ideal-apply-morphism.patch) by @ncalexan created at 2008-08-12 05:31:04
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_027095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3812#issuecomment-27095",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -98,16 +98,16 @@ return phi(R)
 archive/issue_comments_027096.json:
 ```json
 {
-    "body": "Attachment [3812-ncalexan-number-field-ideal-apply-morphism-2.patch](tarball://root/attachments/some-uuid/ticket3812/3812-ncalexan-number-field-ideal-apply-morphism-2.patch) by ncalexan created at 2008-08-13 22:03:26\n\n`3812-ncalexan-number-field-ideal-apply-morphism-2.patch` replaces earlier patch and addresses referee comment.",
+    "body": "Attachment [3812-ncalexan-number-field-ideal-apply-morphism-2.patch](tarball://root/attachments/some-uuid/ticket3812/3812-ncalexan-number-field-ideal-apply-morphism-2.patch) by @ncalexan created at 2008-08-13 22:03:26\n\n`3812-ncalexan-number-field-ideal-apply-morphism-2.patch` replaces earlier patch and addresses referee comment.",
     "created_at": "2008-08-13T22:03:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3812#issuecomment-27096",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [3812-ncalexan-number-field-ideal-apply-morphism-2.patch](tarball://root/attachments/some-uuid/ticket3812/3812-ncalexan-number-field-ideal-apply-morphism-2.patch) by ncalexan created at 2008-08-13 22:03:26
+Attachment [3812-ncalexan-number-field-ideal-apply-morphism-2.patch](tarball://root/attachments/some-uuid/ticket3812/3812-ncalexan-number-field-ideal-apply-morphism-2.patch) by @ncalexan created at 2008-08-13 22:03:26
 
 `3812-ncalexan-number-field-ideal-apply-morphism-2.patch` replaces earlier patch and addresses referee comment.
 
@@ -118,16 +118,16 @@ Attachment [3812-ncalexan-number-field-ideal-apply-morphism-2.patch](tarball://r
 archive/issue_comments_027097.json:
 ```json
 {
-    "body": "Changing assignee from malb to ncalexan.",
+    "body": "Changing assignee from @malb to @ncalexan.",
     "created_at": "2008-08-18T14:06:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3812#issuecomment-27097",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from malb to ncalexan.
+Changing assignee from @malb to @ncalexan.
 
 
 
@@ -141,7 +141,7 @@ archive/issue_comments_027098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3812#issuecomment-27098",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -178,16 +178,16 @@ Michael
 archive/issue_comments_027100.json:
 ```json
 {
-    "body": "Attachment [3812_doctest.patch](tarball://root/attachments/some-uuid/ticket3812/3812_doctest.patch) by cremona created at 2009-04-06 09:35:00\n\nApply after previous patch",
+    "body": "Attachment [3812_doctest.patch](tarball://root/attachments/some-uuid/ticket3812/3812_doctest.patch) by @JohnCremona created at 2009-04-06 09:35:00\n\nApply after previous patch",
     "created_at": "2009-04-06T09:35:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3812#issuecomment-27100",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [3812_doctest.patch](tarball://root/attachments/some-uuid/ticket3812/3812_doctest.patch) by cremona created at 2009-04-06 09:35:00
+Attachment [3812_doctest.patch](tarball://root/attachments/some-uuid/ticket3812/3812_doctest.patch) by @JohnCremona created at 2009-04-06 09:35:00
 
 Apply after previous patch
 
@@ -203,7 +203,7 @@ archive/issue_comments_027101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3812#issuecomment-27101",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_027105.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3812#issuecomment-27105",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

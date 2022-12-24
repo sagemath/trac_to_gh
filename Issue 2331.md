@@ -3,7 +3,7 @@
 archive/issues_002331.json:
 ```json
 {
-    "body": "Assignee: malb\n\n* the superclass injection trick is a bad design decision\n* derivatives don't need to be handled by Singular\n* the `have_ring` option should go, because we don't need this dirty speed improvement anymore (we have libSingular)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2331\n\n",
+    "body": "Assignee: @malb\n\n* the superclass injection trick is a bad design decision\n* derivatives don't need to be handled by Singular\n* the `have_ring` option should go, because we don't need this dirty speed improvement anymore (we have libSingular)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2331\n\n",
     "created_at": "2008-02-27T11:04:18Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_002331.json:
     "title": "Polynomial_singular_repr is pretty messed up",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2331",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 * the superclass injection trick is a bad design decision
 * derivatives don't need to be handled by Singular
@@ -39,7 +39,7 @@ archive/issue_comments_015592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2331",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2331#issuecomment-15592",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_015593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2331",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2331#issuecomment-15593",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_015594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2331",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2331#issuecomment-15594",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_015595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2331",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2331#issuecomment-15595",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_015596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2331",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2331#issuecomment-15596",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_015597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2331",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2331#issuecomment-15597",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_015598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2331",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2331#issuecomment-15598",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

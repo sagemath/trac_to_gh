@@ -3,7 +3,7 @@
 archive/issues_006685.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  mpatel\n\nIncluding pictures in the documentation is easy: a new \"pictures\" directory in doc/en/reference and a quick patch to MANIFEST.in to make sure the contents of that directory are included in distributions.  Then in a docstring, a line like\n\n```\n.. image:: /pictures/sine.png\n```\n\nwill include that file when the reference manual is built.\n\nGetting those pictures included in docstrings in the notebook is trickier.\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/60074982a58f1166?tvc=2) for some discussion.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6685\n\n",
+    "body": "Assignee: tba\n\nCC:  @qed777\n\nIncluding pictures in the documentation is easy: a new \"pictures\" directory in doc/en/reference and a quick patch to MANIFEST.in to make sure the contents of that directory are included in distributions.  Then in a docstring, a line like\n\n```\n.. image:: /pictures/sine.png\n```\n\nwill include that file when the reference manual is built.\n\nGetting those pictures included in docstrings in the notebook is trickier.\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/60074982a58f1166?tvc=2) for some discussion.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6685\n\n",
     "created_at": "2009-08-07T17:35:35Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_006685.json:
     "title": "include pictures in the reference manual and notebook introspection",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6685",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: tba
 
-CC:  mpatel
+CC:  @qed777
 
 Including pictures in the documentation is easy: a new "pictures" directory in doc/en/reference and a quick patch to MANIFEST.in to make sure the contents of that directory are included in distributions.  Then in a docstring, a line like
 
@@ -50,7 +50,7 @@ archive/issue_comments_054960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6685#issuecomment-54960",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_054961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6685#issuecomment-54961",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -91,16 +91,16 @@ Okay, the patch now creates the symlink.  I say we don't worry about modifying `
 archive/issue_comments_054962.json:
 ```json
 {
-    "body": "Attachment [trac_6685-first-draft.patch](tarball://root/attachments/some-uuid/ticket6685/trac_6685-first-draft.patch) by jhpalmieri created at 2009-08-07 21:07:46",
+    "body": "Attachment [trac_6685-first-draft.patch](tarball://root/attachments/some-uuid/ticket6685/trac_6685-first-draft.patch) by @jhpalmieri created at 2009-08-07 21:07:46",
     "created_at": "2009-08-07T21:07:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6685#issuecomment-54962",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_6685-first-draft.patch](tarball://root/attachments/some-uuid/ticket6685/trac_6685-first-draft.patch) by jhpalmieri created at 2009-08-07 21:07:46
+Attachment [trac_6685-first-draft.patch](tarball://root/attachments/some-uuid/ticket6685/trac_6685-first-draft.patch) by @jhpalmieri created at 2009-08-07 21:07:46
 
 
 
@@ -114,7 +114,7 @@ archive/issue_comments_054963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6685#issuecomment-54963",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -127,16 +127,16 @@ Attempt to avoid symbolic links. Apply only this patch.
 archive/issue_comments_054964.json:
 ```json
 {
-    "body": "Attachment [trac_6685-ref_pictures_no_symlinks.patch](tarball://root/attachments/some-uuid/ticket6685/trac_6685-ref_pictures_no_symlinks.patch) by mpatel created at 2009-08-07 22:35:29\n\nIn an attempt to avoid potential problems with symlinks (cf. #5799, #6614), I've made some changes and attached a patch that\n* Uses the notebook server to map picture URLs.  (If necessary, I can later \"fix\" #4460 to use `/doc/static/pdf` instead of `/pdf`.)\n* Moves the virtual `pictures` directory to `doc/static/reference/`.\n* Drops `http://localhost:8000` from the substitution.\n* Breaks something, probably.\nFollowing the great mathematical tradition of generalization, shall we rename `pictures` to `media`?\n\nI wish Sphinx could already generate collapsible `div`s for a docstring's various sections (`EXAMPLES`, `TESTS`, etc.).",
+    "body": "Attachment [trac_6685-ref_pictures_no_symlinks.patch](tarball://root/attachments/some-uuid/ticket6685/trac_6685-ref_pictures_no_symlinks.patch) by @qed777 created at 2009-08-07 22:35:29\n\nIn an attempt to avoid potential problems with symlinks (cf. #5799, #6614), I've made some changes and attached a patch that\n* Uses the notebook server to map picture URLs.  (If necessary, I can later \"fix\" #4460 to use `/doc/static/pdf` instead of `/pdf`.)\n* Moves the virtual `pictures` directory to `doc/static/reference/`.\n* Drops `http://localhost:8000` from the substitution.\n* Breaks something, probably.\nFollowing the great mathematical tradition of generalization, shall we rename `pictures` to `media`?\n\nI wish Sphinx could already generate collapsible `div`s for a docstring's various sections (`EXAMPLES`, `TESTS`, etc.).",
     "created_at": "2009-08-07T22:35:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6685#issuecomment-54964",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6685-ref_pictures_no_symlinks.patch](tarball://root/attachments/some-uuid/ticket6685/trac_6685-ref_pictures_no_symlinks.patch) by mpatel created at 2009-08-07 22:35:29
+Attachment [trac_6685-ref_pictures_no_symlinks.patch](tarball://root/attachments/some-uuid/ticket6685/trac_6685-ref_pictures_no_symlinks.patch) by @qed777 created at 2009-08-07 22:35:29
 
 In an attempt to avoid potential problems with symlinks (cf. #5799, #6614), I've made some changes and attached a patch that
 * Uses the notebook server to map picture URLs.  (If necessary, I can later "fix" #4460 to use `/doc/static/pdf` instead of `/pdf`.)
@@ -159,7 +159,7 @@ archive/issue_comments_054965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6685#issuecomment-54965",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_054966.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6685#issuecomment-54966",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_054967.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6685#issuecomment-54967",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -208,16 +208,16 @@ Should work with Sphinx 0.5.1.  Changed 'pictures' to 'media'.  Apply only this 
 archive/issue_comments_054968.json:
 ```json
 {
-    "body": "Attachment [trac_6685-ref_pictures_no_symlinks_v2.patch](tarball://root/attachments/some-uuid/ticket6685/trac_6685-ref_pictures_no_symlinks_v2.patch) by mpatel created at 2009-08-08 00:10:11\n\nDone.  Auto-generating and adding all 2D images under `sage/plot/` seems to be less straightforward.",
+    "body": "Attachment [trac_6685-ref_pictures_no_symlinks_v2.patch](tarball://root/attachments/some-uuid/ticket6685/trac_6685-ref_pictures_no_symlinks_v2.patch) by @qed777 created at 2009-08-08 00:10:11\n\nDone.  Auto-generating and adding all 2D images under `sage/plot/` seems to be less straightforward.",
     "created_at": "2009-08-08T00:10:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6685#issuecomment-54968",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6685-ref_pictures_no_symlinks_v2.patch](tarball://root/attachments/some-uuid/ticket6685/trac_6685-ref_pictures_no_symlinks_v2.patch) by mpatel created at 2009-08-08 00:10:11
+Attachment [trac_6685-ref_pictures_no_symlinks_v2.patch](tarball://root/attachments/some-uuid/ticket6685/trac_6685-ref_pictures_no_symlinks_v2.patch) by @qed777 created at 2009-08-08 00:10:11
 
 Done.  Auto-generating and adding all 2D images under `sage/plot/` seems to be less straightforward.
 
@@ -233,7 +233,7 @@ archive/issue_comments_054969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6685#issuecomment-54969",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_054970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6685#issuecomment-54970",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_054971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6685#issuecomment-54971",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -308,7 +308,7 @@ archive/issue_comments_054972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6685#issuecomment-54972",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -327,16 +327,16 @@ The idea of remotely hosting media is interesting, but I don't see a way to embe
 archive/issue_comments_054973.json:
 ```json
 {
-    "body": "Attachment [trac_6685-proposal.patch](tarball://root/attachments/some-uuid/ticket6685/trac_6685-proposal.patch) by ddrake created at 2009-08-27 02:15:52\n\nLike the \"v2\" patch, but just adds support for including images",
+    "body": "Attachment [trac_6685-proposal.patch](tarball://root/attachments/some-uuid/ticket6685/trac_6685-proposal.patch) by @dandrake created at 2009-08-27 02:15:52\n\nLike the \"v2\" patch, but just adds support for including images",
     "created_at": "2009-08-27T02:15:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6685#issuecomment-54973",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_6685-proposal.patch](tarball://root/attachments/some-uuid/ticket6685/trac_6685-proposal.patch) by ddrake created at 2009-08-27 02:15:52
+Attachment [trac_6685-proposal.patch](tarball://root/attachments/some-uuid/ticket6685/trac_6685-proposal.patch) by @dandrake created at 2009-08-27 02:15:52
 
 Like the "v2" patch, but just adds support for including images
 
@@ -352,7 +352,7 @@ archive/issue_comments_054974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6685#issuecomment-54974",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -372,16 +372,16 @@ I propose that we *not* merge the usage examples patch and just leave it here so
 archive/issue_comments_054975.json:
 ```json
 {
-    "body": "Attachment [trac_6685-usage-examples.patch](tarball://root/attachments/some-uuid/ticket6685/trac_6685-usage-examples.patch) by ddrake created at 2009-08-27 05:50:04\n\nOops, I didn't see this before.\n\nReplying to [comment:10 jhpalmieri]:\n> I don't have any strong feelings about the particular picture included in the patch here; it was included as a test case, and I didn't put a lot of thought into finding a place in the reference manual where a picture would help but where that picture couldn't be easily (or quickly) autogenerated.  I certainly have in mind some applications -- triangulations of various topological spaces, to be used in the simplicial complexes code -- where I want to include pictures that can not be produced by Sage.\n\nI like this idea, since if Sage can't produce the graphic, we need to track the image file. How about you find one of your applications and put up a patch here (to be applied on top of the \"proposal\" patch), and then we can ignore the usage-examples patch?\n\n> The idea of remotely hosting media is interesting, but I don't see a way to embed a remotely hosted image in reST: it looks like the image directive needs a path, not a URL.  (I know how to do it in html, certainly, but is there Sphinx/reST code which would let us pass a URL to an image directive?)\n\nRemote hosting sounds nice, but I'd like to keep the documentation self-contained, so that one can have everything available while, say, working on a laptop on an airplane. Although I wouldn't mind if a nonessential bit was linked, and something in the text said that the bit won't show up unless you have a network connection. Then one could include, say, a really big video file. Although all of this is moot if we can't figure out how to get the links into the docs! (I certainly don't know how.)",
+    "body": "Attachment [trac_6685-usage-examples.patch](tarball://root/attachments/some-uuid/ticket6685/trac_6685-usage-examples.patch) by @dandrake created at 2009-08-27 05:50:04\n\nOops, I didn't see this before.\n\nReplying to [comment:10 jhpalmieri]:\n> I don't have any strong feelings about the particular picture included in the patch here; it was included as a test case, and I didn't put a lot of thought into finding a place in the reference manual where a picture would help but where that picture couldn't be easily (or quickly) autogenerated.  I certainly have in mind some applications -- triangulations of various topological spaces, to be used in the simplicial complexes code -- where I want to include pictures that can not be produced by Sage.\n\nI like this idea, since if Sage can't produce the graphic, we need to track the image file. How about you find one of your applications and put up a patch here (to be applied on top of the \"proposal\" patch), and then we can ignore the usage-examples patch?\n\n> The idea of remotely hosting media is interesting, but I don't see a way to embed a remotely hosted image in reST: it looks like the image directive needs a path, not a URL.  (I know how to do it in html, certainly, but is there Sphinx/reST code which would let us pass a URL to an image directive?)\n\nRemote hosting sounds nice, but I'd like to keep the documentation self-contained, so that one can have everything available while, say, working on a laptop on an airplane. Although I wouldn't mind if a nonessential bit was linked, and something in the text said that the bit won't show up unless you have a network connection. Then one could include, say, a really big video file. Although all of this is moot if we can't figure out how to get the links into the docs! (I certainly don't know how.)",
     "created_at": "2009-08-27T05:50:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6685#issuecomment-54975",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_6685-usage-examples.patch](tarball://root/attachments/some-uuid/ticket6685/trac_6685-usage-examples.patch) by ddrake created at 2009-08-27 05:50:04
+Attachment [trac_6685-usage-examples.patch](tarball://root/attachments/some-uuid/ticket6685/trac_6685-usage-examples.patch) by @dandrake created at 2009-08-27 05:50:04
 
 Oops, I didn't see this before.
 
@@ -465,7 +465,7 @@ archive/issue_comments_054978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6685#issuecomment-54978",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -495,7 +495,7 @@ archive/issue_comments_054979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6685#issuecomment-54979",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

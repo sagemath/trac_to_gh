@@ -3,7 +3,7 @@
 archive/issues_008309.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  craigcitro\n\nUses Pari's `NEXT_PRIME_VIADIFF` directly, which avoids the intermediate GEN objects. Also adds a `py_ints` option for a 5x speedup, and is much faster for ranges not starting at 0. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8309\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @craigcitro\n\nUses Pari's `NEXT_PRIME_VIADIFF` directly, which avoids the intermediate GEN objects. Also adds a `py_ints` option for a 5x speedup, and is much faster for ranges not starting at 0. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8309\n\n",
     "created_at": "2010-02-20T01:49:28Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_008309.json:
     "title": "speedup prime range",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8309",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  craigcitro
+CC:  @craigcitro
 
 Uses Pari's `NEXT_PRIME_VIADIFF` directly, which avoids the intermediate GEN objects. Also adds a `py_ints` option for a 5x speedup, and is much faster for ranges not starting at 0. 
 
@@ -39,7 +39,7 @@ archive/issue_comments_073698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8309#issuecomment-73698",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_073699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8309#issuecomment-73699",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_073700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8309#issuecomment-73700",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -90,16 +90,16 @@ Paul
 archive/issue_comments_073701.json:
 ```json
 {
-    "body": "Attachment [8309-fast-primerange.patch](tarball://root/attachments/some-uuid/ticket8309/8309-fast-primerange.patch) by robertwb created at 2010-02-26 08:06:49",
+    "body": "Attachment [8309-fast-primerange.patch](tarball://root/attachments/some-uuid/ticket8309/8309-fast-primerange.patch) by @robertwb created at 2010-02-26 08:06:49",
     "created_at": "2010-02-26T08:06:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8309#issuecomment-73701",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [8309-fast-primerange.patch](tarball://root/attachments/some-uuid/ticket8309/8309-fast-primerange.patch) by robertwb created at 2010-02-26 08:06:49
+Attachment [8309-fast-primerange.patch](tarball://root/attachments/some-uuid/ticket8309/8309-fast-primerange.patch) by @robertwb created at 2010-02-26 08:06:49
 
 
 
@@ -113,7 +113,7 @@ archive/issue_comments_073702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8309#issuecomment-73702",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_073703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8309#issuecomment-73703",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_073704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8309#issuecomment-73704",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_073705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8309#issuecomment-73705",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -333,7 +333,7 @@ archive/issue_comments_073706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8309#issuecomment-73706",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

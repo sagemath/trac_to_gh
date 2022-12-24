@@ -14,7 +14,7 @@ archive/issues_005686.json:
     "title": "mpi4py is very outdated",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5686",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
 Assignee: mabshoff
@@ -77,7 +77,7 @@ archive/issue_comments_044472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5686",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5686#issuecomment-44472",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_044473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5686",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5686#issuecomment-44473",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_044474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5686",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5686#issuecomment-44474",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_044475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5686",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5686#issuecomment-44475",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_044476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5686",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5686#issuecomment-44476",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_044477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5686",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5686#issuecomment-44477",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001341.json:
 ```json
 {
-    "body": "Assignee: was\n\nI added a script to the fortran package which gets installed to local/bin\n\nwhich_fortran\n\nwill return g95 or gfortran.\n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/fortran-20071120.p1.spkg\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1341\n\n",
+    "body": "Assignee: @williamstein\n\nI added a script to the fortran package which gets installed to local/bin\n\nwhich_fortran\n\nwill return g95 or gfortran.\n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/fortran-20071120.p1.spkg\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1341\n\n",
     "created_at": "2007-11-30T05:25:59Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_001341.json:
     "user": "jkantor"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I added a script to the fortran package which gets installed to local/bin
 
@@ -93,7 +93,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_008606.json:
 ```json
 {
-    "body": "Changing assignee from was to jkantor.",
+    "body": "Changing assignee from @williamstein to jkantor.",
     "created_at": "2007-11-30T05:26:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1341",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_008606.json:
 }
 ```
 
-Changing assignee from was to jkantor.
+Changing assignee from @williamstein to jkantor.
 
 
 

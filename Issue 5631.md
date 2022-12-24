@@ -3,7 +3,7 @@
 archive/issues_005631.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: doctest affine space\n\nThe attached patch improves the doctest coverage of `affine_space.py` from 45% (9 of 20) to 80% (16 of 20) and fixes a few tiny bugs along the way.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5631\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: doctest affine space\n\nThe attached patch improves the doctest coverage of `affine_space.py` from 45% (9 of 20) to 80% (16 of 20) and fixes a few tiny bugs along the way.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5631\n\n",
     "created_at": "2009-03-29T07:59:52Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_005631.json:
     "title": "improve doctest coverage for schemes/generic/affine_space.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5631",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: doctest affine space
 
@@ -35,16 +35,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5631
 archive/issue_comments_043972.json:
 ```json
 {
-    "body": "Changing assignee from was to AlexGhitza.",
+    "body": "Changing assignee from @williamstein to @aghitza.",
     "created_at": "2009-03-29T08:17:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5631#issuecomment-43972",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from was to AlexGhitza.
+Changing assignee from @williamstein to @aghitza.
 
 
 
@@ -58,7 +58,7 @@ archive/issue_comments_043973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5631#issuecomment-43973",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_043974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5631#issuecomment-43974",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_043975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5631#issuecomment-43975",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_043976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5631#issuecomment-43976",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_043977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5631#issuecomment-43977",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -186,16 +186,16 @@ So I looked at algebraic_scheme.py and noticed that there is a method `X.exclude
 archive/issue_comments_043978.json:
 ```json
 {
-    "body": "Attachment [trac_5631.patch](tarball://root/attachments/some-uuid/ticket5631/trac_5631.patch) by AlexGhitza created at 2009-04-03 10:09:26",
+    "body": "Attachment [trac_5631.patch](tarball://root/attachments/some-uuid/ticket5631/trac_5631.patch) by @aghitza created at 2009-04-03 10:09:26",
     "created_at": "2009-04-03T10:09:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5631#issuecomment-43978",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_5631.patch](tarball://root/attachments/some-uuid/ticket5631/trac_5631.patch) by AlexGhitza created at 2009-04-03 10:09:26
+Attachment [trac_5631.patch](tarball://root/attachments/some-uuid/ticket5631/trac_5631.patch) by @aghitza created at 2009-04-03 10:09:26
 
 
 
@@ -209,7 +209,7 @@ archive/issue_comments_043979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5631#issuecomment-43979",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -246,16 +246,16 @@ sage:
 archive/issue_comments_043980.json:
 ```json
 {
-    "body": "Attachment [trac_5631_rebased.patch](tarball://root/attachments/some-uuid/ticket5631/trac_5631_rebased.patch) by AlexGhitza created at 2009-04-10 08:23:40\n\napply instead of the previous patch",
+    "body": "Attachment [trac_5631_rebased.patch](tarball://root/attachments/some-uuid/ticket5631/trac_5631_rebased.patch) by @aghitza created at 2009-04-10 08:23:40\n\napply instead of the previous patch",
     "created_at": "2009-04-10T08:23:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5631#issuecomment-43980",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_5631_rebased.patch](tarball://root/attachments/some-uuid/ticket5631/trac_5631_rebased.patch) by AlexGhitza created at 2009-04-10 08:23:40
+Attachment [trac_5631_rebased.patch](tarball://root/attachments/some-uuid/ticket5631/trac_5631_rebased.patch) by @aghitza created at 2009-04-10 08:23:40
 
 apply instead of the previous patch
 
@@ -271,7 +271,7 @@ archive/issue_comments_043981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5631#issuecomment-43981",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_004629.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4629\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4629\n\n",
     "created_at": "2008-11-26T23:01:39Z",
     "labels": [
         "build",
@@ -14,10 +14,10 @@ archive/issues_004629.json:
     "title": "build: \"sage -upgrade URL\" will install all *newer* spkg's from the given URL, which can also be a local directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4629",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_034805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4629#issuecomment-34805",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_034806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4629#issuecomment-34806",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

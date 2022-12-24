@@ -3,7 +3,7 @@
 archive/issues_005321.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  was\n\nThe attached patch addresses some outstanding referee remarks from #5287.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5321\n\n",
+    "body": "Assignee: @malb\n\nCC:  @williamstein\n\nThe attached patch addresses some outstanding referee remarks from #5287.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5321\n\n",
     "created_at": "2009-02-20T11:51:37Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_005321.json:
     "title": "[with patch, needs review] follow up to #5287",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5321",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  was
+CC:  @williamstein
 
 The attached patch addresses some outstanding referee remarks from #5287.
 
@@ -61,7 +61,7 @@ archive/issue_comments_040973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5321#issuecomment-40973",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_040974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5321#issuecomment-40974",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -92,16 +92,16 @@ AFAICS, this already had a positive review from was and only needed to be rebase
 archive/issue_comments_040975.json:
 ```json
 {
-    "body": "Attachment [sr_doctests.patch](tarball://root/attachments/some-uuid/ticket5321/sr_doctests.patch) by malb created at 2009-06-08 10:58:57\n\nThe updated patch _only_ changes ` \\var{foo} ` to ` ``foo`` `.",
+    "body": "Attachment [sr_doctests.patch](tarball://root/attachments/some-uuid/ticket5321/sr_doctests.patch) by @malb created at 2009-06-08 10:58:57\n\nThe updated patch _only_ changes ` \\var{foo} ` to ` ``foo`` `.",
     "created_at": "2009-06-08T10:58:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5321#issuecomment-40975",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [sr_doctests.patch](tarball://root/attachments/some-uuid/ticket5321/sr_doctests.patch) by malb created at 2009-06-08 10:58:57
+Attachment [sr_doctests.patch](tarball://root/attachments/some-uuid/ticket5321/sr_doctests.patch) by @malb created at 2009-06-08 10:58:57
 
 The updated patch _only_ changes ` \var{foo} ` to ` ``foo`` `.
 
@@ -117,7 +117,7 @@ archive/issue_comments_040976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5321#issuecomment-40976",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

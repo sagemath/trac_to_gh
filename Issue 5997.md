@@ -14,7 +14,7 @@ archive/issues_005997.json:
     "title": "deprecate the \"order\" method on elements of rings.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5997",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -39,7 +39,7 @@ archive/issue_comments_047716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5997#issuecomment-47716",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_047718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5997#issuecomment-47718",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

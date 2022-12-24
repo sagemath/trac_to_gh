@@ -3,7 +3,7 @@
 archive/issues_009178.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat mhansen\n\nKeywords: attrcall, hash\n\nThis patch implements `attrcall.__hash__`. Its absence caused the\nfollowing misbehavior:\n\n\n```\n    sage: x = attrcall(\"blah\")\n    sage: y = attrcall(\"blah\")\n    sage: x == y\n    True\n    sage: hash(x) == hash(y)\n    False\n```\n\n\nwhich in particular broke unique representation and pickling of some\ncrystals (see #8911).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9178\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @mwhansen\n\nKeywords: attrcall, hash\n\nThis patch implements `attrcall.__hash__`. Its absence caused the\nfollowing misbehavior:\n\n\n```\n    sage: x = attrcall(\"blah\")\n    sage: y = attrcall(\"blah\")\n    sage: x == y\n    True\n    sage: hash(x) == hash(y)\n    False\n```\n\n\nwhich in particular broke unique representation and pickling of some\ncrystals (see #8911).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9178\n\n",
     "created_at": "2010-06-07T15:23:23Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_009178.json:
     "title": "attrcall: add missing hash function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9178",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
-CC:  sage-combinat mhansen
+CC:  sage-combinat @mwhansen
 
 Keywords: attrcall, hash
 
@@ -52,16 +52,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9178
 archive/issue_comments_085871.json:
 ```json
 {
-    "body": "Attachment [trac_9178-attrcall_hash_fix-nt.patch](tarball://root/attachments/some-uuid/ticket9178/trac_9178-attrcall_hash_fix-nt.patch) by nthiery created at 2010-06-07 15:25:44",
+    "body": "Attachment [trac_9178-attrcall_hash_fix-nt.patch](tarball://root/attachments/some-uuid/ticket9178/trac_9178-attrcall_hash_fix-nt.patch) by @nthiery created at 2010-06-07 15:25:44",
     "created_at": "2010-06-07T15:25:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9178#issuecomment-85871",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_9178-attrcall_hash_fix-nt.patch](tarball://root/attachments/some-uuid/ticket9178/trac_9178-attrcall_hash_fix-nt.patch) by nthiery created at 2010-06-07 15:25:44
+Attachment [trac_9178-attrcall_hash_fix-nt.patch](tarball://root/attachments/some-uuid/ticket9178/trac_9178-attrcall_hash_fix-nt.patch) by @nthiery created at 2010-06-07 15:25:44
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_085872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9178#issuecomment-85872",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_085873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9178#issuecomment-85873",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_085874.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9178#issuecomment-85874",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_085875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9178#issuecomment-85875",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

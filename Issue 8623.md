@@ -3,7 +3,7 @@
 archive/issues_008623.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  bober cremona craigcitro was robertwb ylchapuy\n\nI am attaching a patch which gives a user interface to lcalc library wrapper. Please give me feedback. Right now only Elliptic Curve L functions are implemented.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8623\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  bober @JohnCremona @craigcitro @williamstein @robertwb ylchapuy\n\nI am attaching a patch which gives a user interface to lcalc library wrapper. Please give me feedback. Right now only Elliptic Curve L functions are implemented.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8623\n\n",
     "created_at": "2010-03-29T12:54:49Z",
     "labels": [
         "number theory",
@@ -13,12 +13,12 @@ archive/issues_008623.json:
     "title": "User interface to lcalc library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8623",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  bober cremona craigcitro was robertwb ylchapuy
+CC:  bober @JohnCremona @craigcitro @williamstein @robertwb ylchapuy
 
 I am attaching a patch which gives a user interface to lcalc library wrapper. Please give me feedback. Right now only Elliptic Curve L functions are implemented.
 
@@ -38,7 +38,7 @@ archive/issue_comments_078169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8623#issuecomment-78169",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -77,16 +77,16 @@ sage: L.analytic_rank()
 archive/issue_comments_078170.json:
 ```json
 {
-    "body": "Attachment [trac_8623.patch](tarball://root/attachments/some-uuid/ticket8623/trac_8623.patch) by rishi created at 2010-03-29 13:14:36",
+    "body": "Attachment [trac_8623.patch](tarball://root/attachments/some-uuid/ticket8623/trac_8623.patch) by @rishikesha created at 2010-03-29 13:14:36",
     "created_at": "2010-03-29T13:14:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8623#issuecomment-78170",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
-Attachment [trac_8623.patch](tarball://root/attachments/some-uuid/ticket8623/trac_8623.patch) by rishi created at 2010-03-29 13:14:36
+Attachment [trac_8623.patch](tarball://root/attachments/some-uuid/ticket8623/trac_8623.patch) by @rishikesha created at 2010-03-29 13:14:36
 
 
 
@@ -100,7 +100,7 @@ archive/issue_comments_078171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8623#issuecomment-78171",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

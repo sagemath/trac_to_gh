@@ -3,7 +3,7 @@
 archive/issues_004983.json:
 ```json
 {
-    "body": "Assignee: was\n\nI do not like this:\n\n\n```\nsage: sage: a = matrix(ZZ,4,[1, 0, 0, 0, 0, 1, 0, 0, 1, -1, 1, 0, 1, -1, 1, 2])\nsage: sage: b=a.jordan_form()\nsage: b.subdivisions\n([0, 1, 3, 4], [0, 1, 3, 4])\nsage: b.subdivisions = 10\nsage: b.subdivisions\n10\n```\n\n\nNotice that you can make the subdivisions nonsense because it can be changed.\nAlso, of course,\n\n```\nsage: b.subdivisions?\n...     The Integer class represents arbitrary precision\n        integers.  It derives from the Element class, so\n[other useless stuff]\n```\n\n\n\nI don't like that at all either.  I wish that subdivisions were a method with a proper docstring, doctests, etc., and that variable were hidden.\n\n\nThen one would do:\n\n```\n   sage: b.subdivisions?\n   useful stuff (and also it would be in the reference manual)\nand\n   sage: b.subdivisions()\n   ([0, 1, 3, 4], [0, 1, 3, 4])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4983\n\n",
+    "body": "Assignee: @williamstein\n\nI do not like this:\n\n\n```\nsage: sage: a = matrix(ZZ,4,[1, 0, 0, 0, 0, 1, 0, 0, 1, -1, 1, 0, 1, -1, 1, 2])\nsage: sage: b=a.jordan_form()\nsage: b.subdivisions\n([0, 1, 3, 4], [0, 1, 3, 4])\nsage: b.subdivisions = 10\nsage: b.subdivisions\n10\n```\n\n\nNotice that you can make the subdivisions nonsense because it can be changed.\nAlso, of course,\n\n```\nsage: b.subdivisions?\n...     The Integer class represents arbitrary precision\n        integers.  It derives from the Element class, so\n[other useless stuff]\n```\n\n\n\nI don't like that at all either.  I wish that subdivisions were a method with a proper docstring, doctests, etc., and that variable were hidden.\n\n\nThen one would do:\n\n```\n   sage: b.subdivisions?\n   useful stuff (and also it would be in the reference manual)\nand\n   sage: b.subdivisions()\n   ([0, 1, 3, 4], [0, 1, 3, 4])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4983\n\n",
     "created_at": "2009-01-16T00:30:50Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_004983.json:
     "title": "replace subdivisions attribute for matrices with a function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4983",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I do not like this:
 
@@ -75,7 +75,7 @@ archive/issue_comments_037988.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4983#issuecomment-37988",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_037989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4983#issuecomment-37989",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_037990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4983#issuecomment-37990",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_037991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4983#issuecomment-37991",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_037992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4983#issuecomment-37992",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_037993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4983#issuecomment-37993",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_037994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4983#issuecomment-37994",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_037995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4983#issuecomment-37995",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_037996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4983#issuecomment-37996",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_037997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4983#issuecomment-37997",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_037998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4983#issuecomment-37998",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -284,7 +284,7 @@ archive/issue_comments_037999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4983#issuecomment-37999",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -299,16 +299,16 @@ Thanks, I appreciate it.  I was aware of the incompatibility, just didn't have t
 archive/issue_comments_038000.json:
 ```json
 {
-    "body": "Attachment [trac_4983-subdivisions.patch](tarball://root/attachments/some-uuid/ticket4983/trac_4983-subdivisions.patch) by jhpalmieri created at 2011-03-23 17:51:05",
+    "body": "Attachment [trac_4983-subdivisions.patch](tarball://root/attachments/some-uuid/ticket4983/trac_4983-subdivisions.patch) by @jhpalmieri created at 2011-03-23 17:51:05",
     "created_at": "2011-03-23T17:51:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4983#issuecomment-38000",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_4983-subdivisions.patch](tarball://root/attachments/some-uuid/ticket4983/trac_4983-subdivisions.patch) by jhpalmieri created at 2011-03-23 17:51:05
+Attachment [trac_4983-subdivisions.patch](tarball://root/attachments/some-uuid/ticket4983/trac_4983-subdivisions.patch) by @jhpalmieri created at 2011-03-23 17:51:05
 
 
 
@@ -322,7 +322,7 @@ archive/issue_comments_038001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4983#issuecomment-38001",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -346,7 +346,7 @@ archive/issue_comments_038002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4983#issuecomment-38002",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -364,7 +364,7 @@ archive/issue_comments_038003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4983#issuecomment-38003",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -382,7 +382,7 @@ archive/issue_comments_038004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4983#issuecomment-38004",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -400,7 +400,7 @@ archive/issue_comments_038005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4983#issuecomment-38005",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -413,16 +413,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_038006.json:
 ```json
 {
-    "body": "Attachment [trac_4983-subdivisions-rebased.patch](tarball://root/attachments/some-uuid/ticket4983/trac_4983-subdivisions-rebased.patch) by jhpalmieri created at 2011-04-04 19:24:10",
+    "body": "Attachment [trac_4983-subdivisions-rebased.patch](tarball://root/attachments/some-uuid/ticket4983/trac_4983-subdivisions-rebased.patch) by @jhpalmieri created at 2011-04-04 19:24:10",
     "created_at": "2011-04-04T19:24:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4983#issuecomment-38006",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_4983-subdivisions-rebased.patch](tarball://root/attachments/some-uuid/ticket4983/trac_4983-subdivisions-rebased.patch) by jhpalmieri created at 2011-04-04 19:24:10
+Attachment [trac_4983-subdivisions-rebased.patch](tarball://root/attachments/some-uuid/ticket4983/trac_4983-subdivisions-rebased.patch) by @jhpalmieri created at 2011-04-04 19:24:10
 
 
 
@@ -436,7 +436,7 @@ archive/issue_comments_038007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4983#issuecomment-38007",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -454,7 +454,7 @@ archive/issue_comments_038008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4983#issuecomment-38008",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -481,7 +481,7 @@ archive/issue_comments_038009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4983#issuecomment-38009",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -499,7 +499,7 @@ archive/issue_comments_038010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4983#issuecomment-38010",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -517,7 +517,7 @@ archive/issue_comments_038011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4983#issuecomment-38011",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -537,7 +537,7 @@ archive/issue_comments_038012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4983#issuecomment-38012",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -560,7 +560,7 @@ archive/issue_comments_038013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4983#issuecomment-38013",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

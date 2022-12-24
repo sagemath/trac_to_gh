@@ -3,7 +3,7 @@
 archive/issues_002191.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nI forgot to include the gfan spkg in the list of spkgs to update last time:\nhttp://sage.math.washington.edu/home/tabbott/gfan-0.2.2.p3.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/2191\n\n",
+    "body": "Assignee: @timabbott\n\nI forgot to include the gfan spkg in the list of spkgs to update last time:\nhttp://sage.math.washington.edu/home/tabbott/gfan-0.2.2.p3.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/2191\n\n",
     "created_at": "2008-02-17T08:17:29Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_002191.json:
     "title": "[with spkg] Debianize gfan spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2191",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 I forgot to include the gfan spkg in the list of spkgs to update last time:
 http://sage.math.washington.edu/home/tabbott/gfan-0.2.2.p3.spkg

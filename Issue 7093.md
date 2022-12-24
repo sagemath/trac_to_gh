@@ -14,7 +14,7 @@ archive/issues_007093.json:
     "title": "fast_eval -- numerical noise on OS X 10.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7093",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -48,16 +48,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7093
 archive/issue_comments_058616.json:
 ```json
 {
-    "body": "Attachment [trac_7093.patch](tarball://root/attachments/some-uuid/ticket7093/trac_7093.patch) by was created at 2009-10-01 19:45:12",
+    "body": "Attachment [trac_7093.patch](tarball://root/attachments/some-uuid/ticket7093/trac_7093.patch) by @williamstein created at 2009-10-01 19:45:12",
     "created_at": "2009-10-01T19:45:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7093#issuecomment-58616",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7093.patch](tarball://root/attachments/some-uuid/ticket7093/trac_7093.patch) by was created at 2009-10-01 19:45:12
+Attachment [trac_7093.patch](tarball://root/attachments/some-uuid/ticket7093/trac_7093.patch) by @williamstein created at 2009-10-01 19:45:12
 
 
 
@@ -71,7 +71,7 @@ archive/issue_comments_058617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7093#issuecomment-58617",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_058618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7093#issuecomment-58618",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_058619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7093#issuecomment-58619",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

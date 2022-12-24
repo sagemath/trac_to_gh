@@ -14,7 +14,7 @@ archive/issues_005339.json:
     "title": "update README.txt to reflect what platforms we currently supporting building sage with",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5339",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -108,7 +108,7 @@ archive/issue_comments_041137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5339",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5339#issuecomment-41137",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_041139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5339",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5339#issuecomment-41139",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

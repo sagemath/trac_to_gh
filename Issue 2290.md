@@ -14,7 +14,7 @@ archive/issues_002290.json:
     "title": "[with easy patch] typo in calculus.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2290",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2290
 archive/issue_comments_015188.json:
 ```json
 {
-    "body": "Attachment [8681.patch](tarball://root/attachments/some-uuid/ticket2290/8681.patch) by zimmerma created at 2008-02-24 09:48:36",
+    "body": "Attachment [8681.patch](tarball://root/attachments/some-uuid/ticket2290/8681.patch) by @zimmermann6 created at 2008-02-24 09:48:36",
     "created_at": "2008-02-24T09:48:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2290#issuecomment-15188",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [8681.patch](tarball://root/attachments/some-uuid/ticket2290/8681.patch) by zimmerma created at 2008-02-24 09:48:36
+Attachment [8681.patch](tarball://root/attachments/some-uuid/ticket2290/8681.patch) by @zimmermann6 created at 2008-02-24 09:48:36
 
 
 
@@ -84,16 +84,16 @@ Michael
 archive/issue_comments_015190.json:
 ```json
 {
-    "body": "Attachment [sage-2290-english.patch](tarball://root/attachments/some-uuid/ticket2290/sage-2290-english.patch) by was created at 2008-02-24 20:47:18\n\nmy attempt, as a native english speaker",
+    "body": "Attachment [sage-2290-english.patch](tarball://root/attachments/some-uuid/ticket2290/sage-2290-english.patch) by @williamstein created at 2008-02-24 20:47:18\n\nmy attempt, as a native english speaker",
     "created_at": "2008-02-24T20:47:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2290#issuecomment-15190",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2290-english.patch](tarball://root/attachments/some-uuid/ticket2290/sage-2290-english.patch) by was created at 2008-02-24 20:47:18
+Attachment [sage-2290-english.patch](tarball://root/attachments/some-uuid/ticket2290/sage-2290-english.patch) by @williamstein created at 2008-02-24 20:47:18
 
 my attempt, as a native english speaker
 
@@ -109,7 +109,7 @@ archive/issue_comments_015191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2290#issuecomment-15191",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 

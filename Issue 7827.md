@@ -3,7 +3,7 @@
 archive/issues_007827.json:
 ```json
 {
-    "body": "Assignee: pjeremy\n\nCC:  drkirby was\n\n* FreeBSD uses an '_fbsd' suffix on the ELF format supported by ld - prevents ld: unrecognised emulation mode: elf_x86_64 error during atlas build. Reported upstream as https://sourceforge.net/tracker/index.php?func=detail&aid=2728930&group_id=23725&atid=379482\n\n* Treat shared libraries the same as Linux - otherwise they aren't correctly detected by (eg) numpy. (sage-specific) \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7827\n\n",
+    "body": "Assignee: @peterjeremy\n\nCC:  drkirby @williamstein\n\n* FreeBSD uses an '_fbsd' suffix on the ELF format supported by ld - prevents ld: unrecognised emulation mode: elf_x86_64 error during atlas build. Reported upstream as https://sourceforge.net/tracker/index.php?func=detail&aid=2728930&group_id=23725&atid=379482\n\n* Treat shared libraries the same as Linux - otherwise they aren't correctly detected by (eg) numpy. (sage-specific) \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7827\n\n",
     "created_at": "2010-01-03T04:15:58Z",
     "labels": [
         "porting: BSD",
@@ -14,12 +14,12 @@ archive/issues_007827.json:
     "title": "Fix atlas-3.8.3.p9 compilation on FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7827",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
-Assignee: pjeremy
+Assignee: @peterjeremy
 
-CC:  drkirby was
+CC:  drkirby @williamstein
 
 * FreeBSD uses an '_fbsd' suffix on the ELF format supported by ld - prevents ld: unrecognised emulation mode: elf_x86_64 error during atlas build. Reported upstream as https://sourceforge.net/tracker/index.php?func=detail&aid=2728930&group_id=23725&atid=379482
 
@@ -37,16 +37,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7827
 archive/issue_comments_067755.json:
 ```json
 {
-    "body": "Attachment [7827.atlas.patch](tarball://root/attachments/some-uuid/ticket7827/7827.atlas.patch) by pjeremy created at 2010-01-03 04:18:09",
+    "body": "Attachment [7827.atlas.patch](tarball://root/attachments/some-uuid/ticket7827/7827.atlas.patch) by @peterjeremy created at 2010-01-03 04:18:09",
     "created_at": "2010-01-03T04:18:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7827#issuecomment-67755",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
-Attachment [7827.atlas.patch](tarball://root/attachments/some-uuid/ticket7827/7827.atlas.patch) by pjeremy created at 2010-01-03 04:18:09
+Attachment [7827.atlas.patch](tarball://root/attachments/some-uuid/ticket7827/7827.atlas.patch) by @peterjeremy created at 2010-01-03 04:18:09
 
 
 
@@ -60,7 +60,7 @@ archive/issue_comments_067756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7827#issuecomment-67756",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_067759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7827#issuecomment-67759",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

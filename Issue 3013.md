@@ -3,7 +3,7 @@
 archive/issues_003013.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: integrate(sin(x)*cos(10*x)*log(x))\nTraceback (most recent call last):\n...\nTypeError: Error executing code in Maxima\nCODE:\n\tsage22 : integrate(sage21,sage3)$\nMaxima ERROR:\n\t\n\nToo many contexts.\nsage: show(integrate(sin(x^2)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3013\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: integrate(sin(x)*cos(10*x)*log(x))\nTraceback (most recent call last):\n...\nTypeError: Error executing code in Maxima\nCODE:\n\tsage22 : integrate(sage21,sage3)$\nMaxima ERROR:\n\t\n\nToo many contexts.\nsage: show(integrate(sin(x^2)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3013\n\n",
     "created_at": "2008-04-23T23:50:42Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_003013.json:
     "title": "bug in integrate (found during a talk!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3013",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -51,7 +51,7 @@ archive/issue_comments_020708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3013",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3013#issuecomment-20708",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

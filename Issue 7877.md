@@ -3,7 +3,7 @@
 archive/issues_007877.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  rbeezer mvngu\n\nA lot of the great stuff in the docstrings for the matrix __getitem__ and __setitem__ functions should be in the reference manual somewhere, maybe http://sagemath.org/doc/reference/sage/matrix/docs.html.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7877\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @rbeezer mvngu\n\nA lot of the great stuff in the docstrings for the matrix __getitem__ and __setitem__ functions should be in the reference manual somewhere, maybe http://sagemath.org/doc/reference/sage/matrix/docs.html.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7877\n\n",
     "created_at": "2010-01-09T17:51:19Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_007877.json:
     "title": "matrix indexing should be explained in the manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7877",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: mvngu
 
-CC:  rbeezer mvngu
+CC:  @rbeezer mvngu
 
 A lot of the great stuff in the docstrings for the matrix __getitem__ and __setitem__ functions should be in the reference manual somewhere, maybe http://sagemath.org/doc/reference/sage/matrix/docs.html.
 
@@ -39,7 +39,7 @@ archive/issue_comments_068435.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7877#issuecomment-68435",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to needs_review.
 archive/issue_comments_068436.json:
 ```json
 {
-    "body": "Attachment [trac-7877-doc-matrix-indexing.patch](tarball://root/attachments/some-uuid/ticket7877/trac-7877-doc-matrix-indexing.patch) by jason created at 2010-01-20 07:05:49",
+    "body": "Attachment [trac-7877-doc-matrix-indexing.patch](tarball://root/attachments/some-uuid/ticket7877/trac-7877-doc-matrix-indexing.patch) by @jasongrout created at 2010-01-20 07:05:49",
     "created_at": "2010-01-20T07:05:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7877#issuecomment-68436",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-7877-doc-matrix-indexing.patch](tarball://root/attachments/some-uuid/ticket7877/trac-7877-doc-matrix-indexing.patch) by jason created at 2010-01-20 07:05:49
+Attachment [trac-7877-doc-matrix-indexing.patch](tarball://root/attachments/some-uuid/ticket7877/trac-7877-doc-matrix-indexing.patch) by @jasongrout created at 2010-01-20 07:05:49
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_068437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7877#issuecomment-68437",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_068438.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7877#issuecomment-68438",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -201,16 +201,16 @@ I have attached patch for this, which needs some review. Otherwise the whole tic
 archive/issue_comments_068443.json:
 ```json
 {
-    "body": "Attachment [trac-7877-doc-error.patch](tarball://root/attachments/some-uuid/ticket7877/trac-7877-doc-error.patch) by jason created at 2010-01-20 10:11:48",
+    "body": "Attachment [trac-7877-doc-error.patch](tarball://root/attachments/some-uuid/ticket7877/trac-7877-doc-error.patch) by @jasongrout created at 2010-01-20 10:11:48",
     "created_at": "2010-01-20T10:11:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7877#issuecomment-68443",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-7877-doc-error.patch](tarball://root/attachments/some-uuid/ticket7877/trac-7877-doc-error.patch) by jason created at 2010-01-20 10:11:48
+Attachment [trac-7877-doc-error.patch](tarball://root/attachments/some-uuid/ticket7877/trac-7877-doc-error.patch) by @jasongrout created at 2010-01-20 10:11:48
 
 
 
@@ -224,7 +224,7 @@ archive/issue_comments_068444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7877#issuecomment-68444",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_068445.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7877#issuecomment-68445",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_068446.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7877#issuecomment-68446",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

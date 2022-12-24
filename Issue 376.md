@@ -14,7 +14,7 @@ archive/issues_000376.json:
     "title": "finite field homomorphisms don't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/376",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -71,16 +71,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/376
 archive/issue_comments_001793.json:
 ```json
 {
-    "body": "Changing assignee from somebody to craigcitro.",
+    "body": "Changing assignee from somebody to @craigcitro.",
     "created_at": "2007-09-07T02:31:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/376#issuecomment-1793",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from somebody to craigcitro.
+Changing assignee from somebody to @craigcitro.
 
 
 
@@ -94,7 +94,7 @@ archive/issue_comments_001794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/376#issuecomment-1794",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -107,16 +107,16 @@ I think this patch fixes this bug. Turns out that the whole morphism system depe
 archive/issue_comments_001795.json:
 ```json
 {
-    "body": "Attachment [trac_376.hg](tarball://root/attachments/some-uuid/ticket376/trac_376.hg) by was created at 2007-09-07 02:51:26",
+    "body": "Attachment [trac_376.hg](tarball://root/attachments/some-uuid/ticket376/trac_376.hg) by @williamstein created at 2007-09-07 02:51:26",
     "created_at": "2007-09-07T02:51:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/376#issuecomment-1795",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_376.hg](tarball://root/attachments/some-uuid/ticket376/trac_376.hg) by was created at 2007-09-07 02:51:26
+Attachment [trac_376.hg](tarball://root/attachments/some-uuid/ticket376/trac_376.hg) by @williamstein created at 2007-09-07 02:51:26
 
 
 
@@ -130,7 +130,7 @@ archive/issue_comments_001796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/376#issuecomment-1796",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

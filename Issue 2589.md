@@ -14,7 +14,7 @@ archive/issues_002589.json:
     "title": "Notebook improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2589",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 Assignee: mabshoff
@@ -81,7 +81,7 @@ archive/issue_comments_017719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2589",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2589#issuecomment-17719",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_017720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2589",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2589#issuecomment-17720",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_017723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2589",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2589#issuecomment-17723",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_007005.json:
     "title": "[with patch; needs review] singular -- port to cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7005",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -43,7 +43,7 @@ archive/issue_comments_057932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7005#issuecomment-57932",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_057934.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7005#issuecomment-57934",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_057935.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7005#issuecomment-57935",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_057936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7005#issuecomment-57936",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_057937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7005#issuecomment-57937",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_057938.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7005#issuecomment-57938",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

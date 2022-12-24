@@ -3,7 +3,7 @@
 archive/issues_009274.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  drkirkby jhpalmieri\n\n\n```\n\nHere is an excerpt from \"deps\" , the makefile in spkg/standard\n\n$(INST)/$(FORTRAN):\n       $(SAGE_SPKG) $(FORTRAN) 2>&1\n\n$(INST)/$(F2C): $(INST)/$(FORTRAN)\n       $(SAGE_SPKG) $(INST)/$(F2C) 2>&1\n                    ^^^^^^^ --------------------Notice that this is\nwrong.\n                                              the INST is not needed\nand is wrong.\n$(INST)/$(PIL): $(INST)/$(PYTHON)\n       $(SAGE_SPKG) $(PIL) 2>&1\n\n\nThe only reason it works is that the script that reads it cleans it up\nwith\n\"basename\".\n\nBut that's imperfect.\n\n\nThere are 3 instances, shown in this diff:\n\n\n401c400\n<       $(SAGE_SPKG) $(F2C) 2>&1\n---\n>       $(SAGE_SPKG) $(INST)/$(F2C) 2>&1\n413c412\n<       $(SAGE_SPKG) $(LAPACK) 2>&1\n---\n>       $(SAGE_SPKG) $(INST)/$(LAPACK) 2>&1\n416c415\n<       $(SAGE_SPKG) $(BLAS) 2>&1\n---\n>       $(SAGE_SPKG) $(INST)/$(BLAS) 2>&1\n\n\n\n\nAlso in deps there are references to   TWISTEDWEB2  but that doesn't\nseem to exist anymore.\n\n\nI do not write access to the code. I hope someone who does will take\nthis\nand do right thing with it.\n\n************************************************\ncarlhansen1234\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9274\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  drkirkby @jhpalmieri\n\n\n```\n\nHere is an excerpt from \"deps\" , the makefile in spkg/standard\n\n$(INST)/$(FORTRAN):\n       $(SAGE_SPKG) $(FORTRAN) 2>&1\n\n$(INST)/$(F2C): $(INST)/$(FORTRAN)\n       $(SAGE_SPKG) $(INST)/$(F2C) 2>&1\n                    ^^^^^^^ --------------------Notice that this is\nwrong.\n                                              the INST is not needed\nand is wrong.\n$(INST)/$(PIL): $(INST)/$(PYTHON)\n       $(SAGE_SPKG) $(PIL) 2>&1\n\n\nThe only reason it works is that the script that reads it cleans it up\nwith\n\"basename\".\n\nBut that's imperfect.\n\n\nThere are 3 instances, shown in this diff:\n\n\n401c400\n<       $(SAGE_SPKG) $(F2C) 2>&1\n---\n>       $(SAGE_SPKG) $(INST)/$(F2C) 2>&1\n413c412\n<       $(SAGE_SPKG) $(LAPACK) 2>&1\n---\n>       $(SAGE_SPKG) $(INST)/$(LAPACK) 2>&1\n416c415\n<       $(SAGE_SPKG) $(BLAS) 2>&1\n---\n>       $(SAGE_SPKG) $(INST)/$(BLAS) 2>&1\n\n\n\n\nAlso in deps there are references to   TWISTEDWEB2  but that doesn't\nseem to exist anymore.\n\n\nI do not write access to the code. I hope someone who does will take\nthis\nand do right thing with it.\n\n************************************************\ncarlhansen1234\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9274\n\n",
     "created_at": "2010-06-19T17:01:07Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_009274.json:
     "title": "do some cleanup of the deps file, as suggested by Carl Hansen",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9274",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: GeorgSWeber
 
-CC:  drkirkby jhpalmieri
+CC:  drkirkby @jhpalmieri
 
 
 ```
@@ -94,7 +94,7 @@ archive/issue_comments_087345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9274#issuecomment-87345",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_087346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9274#issuecomment-87346",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -125,16 +125,16 @@ Updated `spkg/install/deps` based on 4.5.alpha1.
 archive/issue_comments_087347.json:
 ```json
 {
-    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9274/deps.diff) by mpatel created at 2010-06-30 02:43:53\n\nDiff of `spkg/install/deps` vs. 4.5.alpha1.",
+    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9274/deps.diff) by @qed777 created at 2010-06-30 02:43:53\n\nDiff of `spkg/install/deps` vs. 4.5.alpha1.",
     "created_at": "2010-06-30T02:43:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9274#issuecomment-87347",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9274/deps.diff) by mpatel created at 2010-06-30 02:43:53
+Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9274/deps.diff) by @qed777 created at 2010-06-30 02:43:53
 
 Diff of `spkg/install/deps` vs. 4.5.alpha1.
 
@@ -150,7 +150,7 @@ archive/issue_comments_087348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9274#issuecomment-87348",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_087349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9274#issuecomment-87349",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_087350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9274#issuecomment-87350",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_087352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9274#issuecomment-87352",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_087353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9274#issuecomment-87353",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -313,7 +313,7 @@ archive/issue_comments_087355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9274#issuecomment-87355",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -331,7 +331,7 @@ archive/issue_comments_087356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9274#issuecomment-87356",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -356,7 +356,7 @@ archive/issue_comments_087357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9274#issuecomment-87357",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -369,16 +369,16 @@ rebased against 4.5.alpha3
 archive/issue_comments_087358.json:
 ```json
 {
-    "body": "Attachment [deps-new.diff](tarball://root/attachments/some-uuid/ticket9274/deps-new.diff) by jhpalmieri created at 2010-07-06 03:44:10",
+    "body": "Attachment [deps-new.diff](tarball://root/attachments/some-uuid/ticket9274/deps-new.diff) by @jhpalmieri created at 2010-07-06 03:44:10",
     "created_at": "2010-07-06T03:44:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9274#issuecomment-87358",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [deps-new.diff](tarball://root/attachments/some-uuid/ticket9274/deps-new.diff) by jhpalmieri created at 2010-07-06 03:44:10
+Attachment [deps-new.diff](tarball://root/attachments/some-uuid/ticket9274/deps-new.diff) by @jhpalmieri created at 2010-07-06 03:44:10
 
 
 
@@ -392,7 +392,7 @@ archive/issue_comments_087359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9274#issuecomment-87359",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -410,7 +410,7 @@ archive/issue_comments_087360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9274#issuecomment-87360",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -428,7 +428,7 @@ archive/issue_comments_087361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9274#issuecomment-87361",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -446,7 +446,7 @@ archive/issue_comments_087362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9274#issuecomment-87362",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -464,7 +464,7 @@ archive/issue_comments_087363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9274#issuecomment-87363",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -482,7 +482,7 @@ archive/issue_comments_087364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9274#issuecomment-87364",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -504,7 +504,7 @@ archive/issue_comments_087365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9274#issuecomment-87365",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -560,7 +560,7 @@ archive/issue_comments_087367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9274#issuecomment-87367",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

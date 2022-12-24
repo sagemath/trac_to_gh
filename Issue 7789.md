@@ -14,7 +14,7 @@ archive/issues_007789.json:
     "title": "Improve the arguments for the default type of a variable in MixedIntegerLinearProgram",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7789",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jkantor
@@ -51,7 +51,7 @@ archive/issue_comments_067225.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7789",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7789#issuecomment-67225",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_067226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7789",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7789#issuecomment-67226",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_067227.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7789",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7789#issuecomment-67227",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_067228.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7789",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7789#issuecomment-67228",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_067229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7789",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7789#issuecomment-67229",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_067230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7789",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7789#issuecomment-67230",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_067231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7789",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7789#issuecomment-67231",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_067232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7789",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7789#issuecomment-67232",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_067233.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7789",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7789#issuecomment-67233",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_067236.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7789",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7789#issuecomment-67236",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_067237.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7789",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7789#issuecomment-67237",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -331,7 +331,7 @@ archive/issue_comments_067240.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7789",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7789#issuecomment-67240",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -344,16 +344,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_067241.json:
 ```json
 {
-    "body": "Attachment [trac_7789.patch](tarball://root/attachments/some-uuid/ticket7789/trac_7789.patch) by ncohen created at 2010-05-13 21:22:28\n\nDone.",
+    "body": "Attachment [trac_7789.patch](tarball://root/attachments/some-uuid/ticket7789/trac_7789.patch) by @nathanncohen created at 2010-05-13 21:22:28\n\nDone.",
     "created_at": "2010-05-13T21:22:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7789",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7789#issuecomment-67241",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_7789.patch](tarball://root/attachments/some-uuid/ticket7789/trac_7789.patch) by ncohen created at 2010-05-13 21:22:28
+Attachment [trac_7789.patch](tarball://root/attachments/some-uuid/ticket7789/trac_7789.patch) by @nathanncohen created at 2010-05-13 21:22:28
 
 Done.
 
@@ -405,7 +405,7 @@ archive/issue_comments_067244.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7789",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7789#issuecomment-67244",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_004607.json:
     "title": "double backslash not properly handled in latex mode",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4607",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 Assignee: boothby
@@ -74,7 +74,7 @@ archive/issue_comments_034587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4607#issuecomment-34587",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_034588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4607#issuecomment-34588",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

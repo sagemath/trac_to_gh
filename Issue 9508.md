@@ -3,7 +3,7 @@
 archive/issues_009508.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  jhpalmieri jsp\n\nThe ATLAS package in Sage (atlas-3.8.3.p12 in sage 4.5.rc1) has a problem in the way shared libraries are built and installed. \n* libatlas and libcblas never get built as shared libraries on Solaris or OpenSolaris, despite they do get built on Linux, OS X and FreeBSD.\n*  liblapack gets built, but later gets removed by the following few lines of code in the script `make_correct_shared.sh`, which was probably added in #5024. \n {{{\n# on Solaris a dynamic liblapack.so leads to import errors in numpy, so delete them for now.\nif [ `uname` = \"SunOS\" ]; then\n    echo \"Deleting liblapack.so on Solaris due to bug in numpy/scipy\"\n    cd \"$SAGE_LOCAL\"/lib\n    rm -rf liblapack.so*\nfi\n }}}\n* On 64-bit builds of Sage, Linbox reports ATLAS is not installed - see #9101. Closer inspection of Linbox's config.log shows that linbox determines the ATLAS libraries are 32-bit, not 64-bit. Since it finds no 64-bit libraries, it considers ATLAS is not installed. \n\nI suspect the reasons the shared libraries are not currently built in Sage is that they were originally built incorrectly, so rather than fix the problem, they were just deleted. I'm aware  Michael Abshoff was using the GNU linker, despite this has never had a good reputation on Solaris, and even the GCC documentation advises using the Sun linker. Hence I think we should\n\n* Build the shared libraries properly, using the Sun linker `/usr/ccs/bin/ld`\n* Consider deleting the static libraries. I don't think they would perform any useful function if the shared libraries existed. \n\nThis will have several advantages. \n\n* Shared libraries are much smaller than static libraries. \n* Shared libraries take up far less memory when th\n* Linbox will hopefully not report ATLAS is not installed. \n\nThe following command will build a a 32-bit or 64-bit shared library liblapack.so, although it could easily be extended to other libraries too. \n\n```\n  if [ \"x$SAGE64\" = xyes ] ; then \n      # To create a 64-bit shared library, the linker flag\n      # '-64' must be added. Note this is not the same as \n      # the compiler flag '-m64'\n      LINKER_BITS=-64 \n   else\n      LINKER_BITS=-32 \n   fi\n\n   # Build liblapack.so\n   lapack_command=\"/usr/ccs/bin/ld $LINKER_BITS -L\"$SAGE_LOCAL/lib\"  -G -h liblapack.so -o liblapack.so  -zallextract  liblapack.a -zdefaultextract -\nlc -lm -lgfortran\"\n   $lapack_command\n```\n\n\nThis will need some testing, but at least this will all be specific to Solaris or OpenSolaris, so will not cause any problems on other platforms. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9508\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jhpalmieri @jaapspies\n\nThe ATLAS package in Sage (atlas-3.8.3.p12 in sage 4.5.rc1) has a problem in the way shared libraries are built and installed. \n* libatlas and libcblas never get built as shared libraries on Solaris or OpenSolaris, despite they do get built on Linux, OS X and FreeBSD.\n*  liblapack gets built, but later gets removed by the following few lines of code in the script `make_correct_shared.sh`, which was probably added in #5024. \n {{{\n# on Solaris a dynamic liblapack.so leads to import errors in numpy, so delete them for now.\nif [ `uname` = \"SunOS\" ]; then\n    echo \"Deleting liblapack.so on Solaris due to bug in numpy/scipy\"\n    cd \"$SAGE_LOCAL\"/lib\n    rm -rf liblapack.so*\nfi\n }}}\n* On 64-bit builds of Sage, Linbox reports ATLAS is not installed - see #9101. Closer inspection of Linbox's config.log shows that linbox determines the ATLAS libraries are 32-bit, not 64-bit. Since it finds no 64-bit libraries, it considers ATLAS is not installed. \n\nI suspect the reasons the shared libraries are not currently built in Sage is that they were originally built incorrectly, so rather than fix the problem, they were just deleted. I'm aware  Michael Abshoff was using the GNU linker, despite this has never had a good reputation on Solaris, and even the GCC documentation advises using the Sun linker. Hence I think we should\n\n* Build the shared libraries properly, using the Sun linker `/usr/ccs/bin/ld`\n* Consider deleting the static libraries. I don't think they would perform any useful function if the shared libraries existed. \n\nThis will have several advantages. \n\n* Shared libraries are much smaller than static libraries. \n* Shared libraries take up far less memory when th\n* Linbox will hopefully not report ATLAS is not installed. \n\nThe following command will build a a 32-bit or 64-bit shared library liblapack.so, although it could easily be extended to other libraries too. \n\n```\n  if [ \"x$SAGE64\" = xyes ] ; then \n      # To create a 64-bit shared library, the linker flag\n      # '-64' must be added. Note this is not the same as \n      # the compiler flag '-m64'\n      LINKER_BITS=-64 \n   else\n      LINKER_BITS=-32 \n   fi\n\n   # Build liblapack.so\n   lapack_command=\"/usr/ccs/bin/ld $LINKER_BITS -L\"$SAGE_LOCAL/lib\"  -G -h liblapack.so -o liblapack.so  -zallextract  liblapack.a -zdefaultextract -\nlc -lm -lgfortran\"\n   $lapack_command\n```\n\n\nThis will need some testing, but at least this will all be specific to Solaris or OpenSolaris, so will not cause any problems on other platforms. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9508\n\n",
     "created_at": "2010-07-15T14:20:22Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_009508.json:
 ```
 Assignee: drkirkby
 
-CC:  jhpalmieri jsp
+CC:  @jhpalmieri @jaapspies
 
 The ATLAS package in Sage (atlas-3.8.3.p12 in sage 4.5.rc1) has a problem in the way shared libraries are built and installed. 
 * libatlas and libcblas never get built as shared libraries on Solaris or OpenSolaris, despite they do get built on Linux, OS X and FreeBSD.
@@ -392,7 +392,7 @@ archive/issue_comments_091356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9508",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9508#issuecomment-91356",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -479,7 +479,7 @@ archive/issue_comments_091359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9508",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9508#issuecomment-91359",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -550,7 +550,7 @@ archive/issue_comments_091361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9508",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9508#issuecomment-91361",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -576,7 +576,7 @@ archive/issue_comments_091362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9508",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9508#issuecomment-91362",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -594,7 +594,7 @@ archive/issue_comments_091363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9508",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9508#issuecomment-91363",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -654,7 +654,7 @@ archive/issue_comments_091365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9508",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9508#issuecomment-91365",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -789,7 +789,7 @@ archive/issue_comments_091371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9508",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9508#issuecomment-91371",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -807,7 +807,7 @@ archive/issue_comments_091372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9508",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9508#issuecomment-91372",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -825,7 +825,7 @@ archive/issue_comments_091373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9508",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9508#issuecomment-91373",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -843,7 +843,7 @@ archive/issue_comments_091374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9508",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9508#issuecomment-91374",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

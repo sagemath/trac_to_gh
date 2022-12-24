@@ -14,7 +14,7 @@ archive/issues_007694.json:
     "title": "change pickle jar doctest to make it a bit more robust and flexible...",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7694",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -45,7 +45,7 @@ archive/issue_comments_066012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7694#issuecomment-66012",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_066013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7694#issuecomment-66013",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_066014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7694#issuecomment-66014",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_066015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7694#issuecomment-66015",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

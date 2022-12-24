@@ -3,7 +3,7 @@
 archive/issues_002644.json:
 ```json
 {
-    "body": "Assignee: was\n\nOn 2.11alpha0, the doctest for `__invert__` randomly fails\n\nIssue created by migration from https://trac.sagemath.org/ticket/2644\n\n",
+    "body": "Assignee: @williamstein\n\nOn 2.11alpha0, the doctest for `__invert__` randomly fails\n\nIssue created by migration from https://trac.sagemath.org/ticket/2644\n\n",
     "created_at": "2008-03-22T14:39:47Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_002644.json:
     "title": "doctest failures in matrix_real_double_dense",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2644",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 On 2.11alpha0, the doctest for `__invert__` randomly fails
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2644
 archive/issue_comments_018176.json:
 ```json
 {
-    "body": "Attachment [2644.patch](tarball://root/attachments/some-uuid/ticket2644/2644.patch) by dfdeshom created at 2008-03-22 15:36:24\n\npatch against 2.11alpha",
+    "body": "Attachment [2644.patch](tarball://root/attachments/some-uuid/ticket2644/2644.patch) by @dfdeshom created at 2008-03-22 15:36:24\n\npatch against 2.11alpha",
     "created_at": "2008-03-22T15:36:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2644#issuecomment-18176",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Attachment [2644.patch](tarball://root/attachments/some-uuid/ticket2644/2644.patch) by dfdeshom created at 2008-03-22 15:36:24
+Attachment [2644.patch](tarball://root/attachments/some-uuid/ticket2644/2644.patch) by @dfdeshom created at 2008-03-22 15:36:24
 
 patch against 2.11alpha
 
@@ -57,7 +57,7 @@ archive/issue_comments_018177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2644#issuecomment-18177",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -70,16 +70,16 @@ Here is a patch against 2.11alpha0
 archive/issue_comments_018178.json:
 ```json
 {
-    "body": "Changing assignee from was to dfdeshom.",
+    "body": "Changing assignee from @williamstein to @dfdeshom.",
     "created_at": "2008-03-22T15:38:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2644#issuecomment-18178",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Changing assignee from was to dfdeshom.
+Changing assignee from @williamstein to @dfdeshom.
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_018179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2644#issuecomment-18179",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

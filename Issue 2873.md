@@ -3,7 +3,7 @@
 archive/issues_002873.json:
 ```json
 {
-    "body": "Assignee: was\n\nIt would be nice to shorten the menu quite a bit and pick the options that make sense to us.\n\nSee http://chemapps.stolaf.edu/jmol/docs/examples-11/new4.htm point 13 for how to do this.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2873\n\n",
+    "body": "Assignee: @williamstein\n\nIt would be nice to shorten the menu quite a bit and pick the options that make sense to us.\n\nSee http://chemapps.stolaf.edu/jmol/docs/examples-11/new4.htm point 13 for how to do this.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2873\n\n",
     "created_at": "2008-04-10T22:42:45Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_002873.json:
     "title": "Customize JMOL menu",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2873",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 It would be nice to shorten the menu quite a bit and pick the options that make sense to us.
 
@@ -41,7 +41,7 @@ archive/issue_comments_019733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2873#issuecomment-19733",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_019734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2873#issuecomment-19734",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -72,16 +72,16 @@ Whoever fixes this, please make sure that #1777 is taken care of (which can be f
 archive/issue_comments_019735.json:
 ```json
 {
-    "body": "Attachment [jmol-custom-menu.patch](tarball://root/attachments/some-uuid/ticket2873/jmol-custom-menu.patch) by jason created at 2009-02-14 09:48:17",
+    "body": "Attachment [jmol-custom-menu.patch](tarball://root/attachments/some-uuid/ticket2873/jmol-custom-menu.patch) by @jasongrout created at 2009-02-14 09:48:17",
     "created_at": "2009-02-14T09:48:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2873#issuecomment-19735",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [jmol-custom-menu.patch](tarball://root/attachments/some-uuid/ticket2873/jmol-custom-menu.patch) by jason created at 2009-02-14 09:48:17
+Attachment [jmol-custom-menu.patch](tarball://root/attachments/some-uuid/ticket2873/jmol-custom-menu.patch) by @jasongrout created at 2009-02-14 09:48:17
 
 
 
@@ -95,7 +95,7 @@ archive/issue_comments_019736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2873#issuecomment-19736",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_019737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2873#issuecomment-19737",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -126,16 +126,16 @@ This patch and spkg take care of #1777 too.
 archive/issue_comments_019738.json:
 ```json
 {
-    "body": "Changing assignee from was to jason.",
+    "body": "Changing assignee from @williamstein to @jasongrout.",
     "created_at": "2009-02-14T10:04:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2873#issuecomment-19738",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from was to jason.
+Changing assignee from @williamstein to @jasongrout.
 
 
 
@@ -149,7 +149,7 @@ archive/issue_comments_019739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2873#issuecomment-19739",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

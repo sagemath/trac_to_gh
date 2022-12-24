@@ -3,7 +3,7 @@
 archive/issues_009608.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  ddrake mhansen rossk leif\n\nDocbuild warnings in Sage 4.5.2.alpha1:\n\n```sh\n$ ./sage -docbuild all html -j\n[...]\n/mnt/usb1/scratch/mpatel/tmp/sage-4.5.2.alpha1/local/lib/python2.6/site-packages/sage/interfaces/matlab.py:docstring of sage.interfaces.matlab.Matlab.strip_answer:6: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\n/mnt/usb1/scratch/mpatel/tmp/sage-4.5.2.alpha1/local/lib/python2.6/site-packages/sage/interfaces/matlab.py:docstring of sage.interfaces.matlab.Matlab.strip_answer:9: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\n[...]\n```\n\n\nPossibly related ticket: #2119.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9608\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @dandrake @mwhansen rossk @nexttime\n\nDocbuild warnings in Sage 4.5.2.alpha1:\n\n```sh\n$ ./sage -docbuild all html -j\n[...]\n/mnt/usb1/scratch/mpatel/tmp/sage-4.5.2.alpha1/local/lib/python2.6/site-packages/sage/interfaces/matlab.py:docstring of sage.interfaces.matlab.Matlab.strip_answer:6: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\n/mnt/usb1/scratch/mpatel/tmp/sage-4.5.2.alpha1/local/lib/python2.6/site-packages/sage/interfaces/matlab.py:docstring of sage.interfaces.matlab.Matlab.strip_answer:9: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\n[...]\n```\n\n\nPossibly related ticket: #2119.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9608\n\n",
     "created_at": "2010-07-27T07:08:40Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_009608.json:
     "title": "Docbuild warnings in sage/interfaces/matlab.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9608",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: mvngu
 
-CC:  ddrake mhansen rossk leif
+CC:  @dandrake @mwhansen rossk @nexttime
 
 Docbuild warnings in Sage 4.5.2.alpha1:
 
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9608
 archive/issue_comments_093073.json:
 ```json
 {
-    "body": "Attachment [trac_9608-matlab_docbuild.patch](tarball://root/attachments/some-uuid/ticket9608/trac_9608-matlab_docbuild.patch) by mpatel created at 2010-07-27 07:55:33\n\nMake the docstring raw",
+    "body": "Attachment [trac_9608-matlab_docbuild.patch](tarball://root/attachments/some-uuid/ticket9608/trac_9608-matlab_docbuild.patch) by @qed777 created at 2010-07-27 07:55:33\n\nMake the docstring raw",
     "created_at": "2010-07-27T07:55:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9608#issuecomment-93073",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_9608-matlab_docbuild.patch](tarball://root/attachments/some-uuid/ticket9608/trac_9608-matlab_docbuild.patch) by mpatel created at 2010-07-27 07:55:33
+Attachment [trac_9608-matlab_docbuild.patch](tarball://root/attachments/some-uuid/ticket9608/trac_9608-matlab_docbuild.patch) by @qed777 created at 2010-07-27 07:55:33
 
 Make the docstring raw
 
@@ -70,7 +70,7 @@ archive/issue_comments_093074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9608#issuecomment-93074",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_093075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9608#issuecomment-93075",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_093076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9608#issuecomment-93076",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_093077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9608#issuecomment-93077",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_093078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9608#issuecomment-93078",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_093079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9608#issuecomment-93079",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_093080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9608#issuecomment-93080",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

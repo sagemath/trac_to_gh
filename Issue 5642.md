@@ -3,7 +3,7 @@
 archive/issues_005642.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nI have written some code that computes approximations to the q-expansions of overconvergent p-adic modular forms of tame level 1, when p is one of the primes {2, 3, 5, 7, 13} (so X_0(p) has genus 0). See the notes of my talk at the Heilbronn Institute for background: \n\nhttp://www.dpmms.cam.ac.uk/~dl267/maths/lecturenotes/overconvergent_lecture.pdf.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5642\n\n",
+    "body": "Assignee: @loefflerd\n\nI have written some code that computes approximations to the q-expansions of overconvergent p-adic modular forms of tame level 1, when p is one of the primes {2, 3, 5, 7, 13} (so X_0(p) has genus 0). See the notes of my talk at the Heilbronn Institute for background: \n\nhttp://www.dpmms.cam.ac.uk/~dl267/maths/lecturenotes/overconvergent_lecture.pdf.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5642\n\n",
     "created_at": "2009-03-30T09:50:20Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_005642.json:
     "title": "Overconvergent modular forms for genus 0 primes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5642",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
 I have written some code that computes approximations to the q-expansions of overconvergent p-adic modular forms of tame level 1, when p is one of the primes {2, 3, 5, 7, 13} (so X_0(p) has genus 0). See the notes of my talk at the Heilbronn Institute for background: 
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5642
 archive/issue_comments_044065.json:
 ```json
 {
-    "body": "Attachment [overconvergent-1.patch](tarball://root/attachments/some-uuid/ticket5642/overconvergent-1.patch) by davidloeffler created at 2009-03-30 09:50:45\n\npatch against 3.4.1.alpha0",
+    "body": "Attachment [overconvergent-1.patch](tarball://root/attachments/some-uuid/ticket5642/overconvergent-1.patch) by @loefflerd created at 2009-03-30 09:50:45\n\npatch against 3.4.1.alpha0",
     "created_at": "2009-03-30T09:50:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5642#issuecomment-44065",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [overconvergent-1.patch](tarball://root/attachments/some-uuid/ticket5642/overconvergent-1.patch) by davidloeffler created at 2009-03-30 09:50:45
+Attachment [overconvergent-1.patch](tarball://root/attachments/some-uuid/ticket5642/overconvergent-1.patch) by @loefflerd created at 2009-03-30 09:50:45
 
 patch against 3.4.1.alpha0
 
@@ -59,7 +59,7 @@ archive/issue_comments_044066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5642#issuecomment-44066",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_044067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5642#issuecomment-44067",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -284,7 +284,7 @@ archive/issue_comments_044068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5642#issuecomment-44068",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -297,16 +297,16 @@ Most of these are plain stupidity on my part and I will fix them, and add doctes
 archive/issue_comments_044069.json:
 ```json
 {
-    "body": "Attachment [overconvergent-2.patch](tarball://root/attachments/some-uuid/ticket5642/overconvergent-2.patch) by davidloeffler created at 2009-04-01 14:19:54\n\napply over previous patch",
+    "body": "Attachment [overconvergent-2.patch](tarball://root/attachments/some-uuid/ticket5642/overconvergent-2.patch) by @loefflerd created at 2009-04-01 14:19:54\n\napply over previous patch",
     "created_at": "2009-04-01T14:19:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5642#issuecomment-44069",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [overconvergent-2.patch](tarball://root/attachments/some-uuid/ticket5642/overconvergent-2.patch) by davidloeffler created at 2009-04-01 14:19:54
+Attachment [overconvergent-2.patch](tarball://root/attachments/some-uuid/ticket5642/overconvergent-2.patch) by @loefflerd created at 2009-04-01 14:19:54
 
 apply over previous patch
 
@@ -322,7 +322,7 @@ archive/issue_comments_044070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5642#issuecomment-44070",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -340,7 +340,7 @@ archive/issue_comments_044071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5642#issuecomment-44071",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

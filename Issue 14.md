@@ -13,7 +13,7 @@ archive/issues_000014.json:
     "title": "SAGE notebook freeze's firefox windows client when jsmath enabled",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/14",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -37,7 +37,7 @@ archive/issue_comments_000065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/14",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/14#issuecomment-65",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_000066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/14",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/14#issuecomment-66",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

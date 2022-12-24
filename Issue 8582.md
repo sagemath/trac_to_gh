@@ -3,7 +3,7 @@
 archive/issues_008582.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nFrom [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/658b0fe8413b86f8):\n\n```\nBut I want to make a comment, also from this documentation. It says\nsum(1/(1+k^2), k, -oo, oo, algorithm = 'mathematica')     # optional\n-- requires mathematica\n\nOK, I understand that sage do not kown how to evaluate\nsum(1/(1+k^2), k, -oo, oo)\n\nBut it answer     0      , that is wrong!!!\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8582\n\n",
+    "body": "Assignee: @burcin\n\nFrom [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/658b0fe8413b86f8):\n\n```\nBut I want to make a comment, also from this documentation. It says\nsum(1/(1+k^2), k, -oo, oo, algorithm = 'mathematica')     # optional\n-- requires mathematica\n\nOK, I understand that sage do not kown how to evaluate\nsum(1/(1+k^2), k, -oo, oo)\n\nBut it answer     0      , that is wrong!!!\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8582\n\n",
     "created_at": "2010-03-23T04:13:54Z",
     "labels": [
         "symbolics",
@@ -17,7 +17,7 @@ archive/issues_008582.json:
     "user": "mvngu"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 From [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/658b0fe8413b86f8):
 
@@ -49,7 +49,7 @@ archive/issue_comments_077726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8582",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8582#issuecomment-77726",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_077727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8582",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8582#issuecomment-77727",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_077730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8582",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8582#issuecomment-77730",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

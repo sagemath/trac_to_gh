@@ -14,7 +14,7 @@ archive/issues_009285.json:
     "title": "Challenge: iterating through E8 in 5 minutes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9285",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 Assignee: sage-combinat
@@ -86,7 +86,7 @@ archive/issue_comments_087458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9285",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9285#issuecomment-87458",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_087459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9285",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9285#issuecomment-87459",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_087460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9285",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9285#issuecomment-87460",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_087461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9285",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9285#issuecomment-87461",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 

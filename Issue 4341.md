@@ -3,7 +3,7 @@
 archive/issues_004341.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\n* Removed code that used gap.Representative in an unsafe manner (assumed that the ordering would be the same on each execution but the GAP manual says that this may not be the case). Previous code did work but was not safe.\n\n* Replacement tau_to_bitrade uses correct and straightforward combinatorial approach.\n\n* Replacement of p3_group_bitrade_generators is orders of magnitude faster; uses GAP's IsomorphismPermGroup instead of explicitly constructing a natural homomorphism.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4341\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n* Removed code that used gap.Representative in an unsafe manner (assumed that the ordering would be the same on each execution but the GAP manual says that this may not be the case). Previous code did work but was not safe.\n\n* Replacement tau_to_bitrade uses correct and straightforward combinatorial approach.\n\n* Replacement of p3_group_bitrade_generators is orders of magnitude faster; uses GAP's IsomorphismPermGroup instead of explicitly constructing a natural homomorphism.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4341\n\n",
     "created_at": "2008-10-22T19:53:25Z",
     "labels": [
         "combinatorics",
@@ -17,7 +17,7 @@ archive/issues_004341.json:
     "user": "carlohamalainen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -43,7 +43,7 @@ archive/issue_comments_031846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4341#issuecomment-31846",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -56,16 +56,16 @@ This applies cleanly to 3.2 and passes sage -testall. However, I have several (p
 archive/issue_comments_031847.json:
 ```json
 {
-    "body": "Attachment [ch-latin.patch](tarball://root/attachments/some-uuid/ticket4341/ch-latin.patch) by wdj created at 2008-11-23 12:51:21\n\nRegarding the \"to do\" using nauty: please don't. Robert Miller's code NICE does this fine:\n\n\n```\nsage: from sage.combinat.matrices.latin import *\nsage: M = matrix([(0, 1, 2, 3), (2, 3, 0, 1), (3, 2, 1, 0), (1, 0, 3, 2)])\nsage: L = LatinSquare(M)\nsage: L.is_latin_square()\nTrue\nsage: from sage.groups.perm_gps.partn_ref.refinement_matrices import MatrixStruct\nsage: A = MatrixStruct(M)\nsage: autgp = A.automorphism_group()\nsage: gens = [[j+1 for j in autgp[0][i]] for i in range(len(autgp[0]))]\nsage: S4 = SymmetricGroup(4)\nsage: G = PermutationGroup([S4(x) for x in gens]); G\nPermutation Group with generators [(1,2)(3,4)]\n```\n\nAn easy \"to do\": take the very short MOLS codes in Guava (included in Sage), at\nhttp://sage.math.washington.edu/home/wdj/guava/lib/matrices.gi,\nand translate it into Python/Sage/latin.py code. (MOLS are used to construct optimal non-linear codes, but non-linear codes have not yet been implemented in Sage.)\n\nI'm currently running tests on this (second) patch and will post again soon.",
+    "body": "Attachment [ch-latin.patch](tarball://root/attachments/some-uuid/ticket4341/ch-latin.patch) by @wdjoyner created at 2008-11-23 12:51:21\n\nRegarding the \"to do\" using nauty: please don't. Robert Miller's code NICE does this fine:\n\n\n```\nsage: from sage.combinat.matrices.latin import *\nsage: M = matrix([(0, 1, 2, 3), (2, 3, 0, 1), (3, 2, 1, 0), (1, 0, 3, 2)])\nsage: L = LatinSquare(M)\nsage: L.is_latin_square()\nTrue\nsage: from sage.groups.perm_gps.partn_ref.refinement_matrices import MatrixStruct\nsage: A = MatrixStruct(M)\nsage: autgp = A.automorphism_group()\nsage: gens = [[j+1 for j in autgp[0][i]] for i in range(len(autgp[0]))]\nsage: S4 = SymmetricGroup(4)\nsage: G = PermutationGroup([S4(x) for x in gens]); G\nPermutation Group with generators [(1,2)(3,4)]\n```\n\nAn easy \"to do\": take the very short MOLS codes in Guava (included in Sage), at\nhttp://sage.math.washington.edu/home/wdj/guava/lib/matrices.gi,\nand translate it into Python/Sage/latin.py code. (MOLS are used to construct optimal non-linear codes, but non-linear codes have not yet been implemented in Sage.)\n\nI'm currently running tests on this (second) patch and will post again soon.",
     "created_at": "2008-11-23T12:51:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4341#issuecomment-31847",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [ch-latin.patch](tarball://root/attachments/some-uuid/ticket4341/ch-latin.patch) by wdj created at 2008-11-23 12:51:21
+Attachment [ch-latin.patch](tarball://root/attachments/some-uuid/ticket4341/ch-latin.patch) by @wdjoyner created at 2008-11-23 12:51:21
 
 Regarding the "to do" using nauty: please don't. Robert Miller's code NICE does this fine:
 
@@ -103,7 +103,7 @@ archive/issue_comments_031848.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4341#issuecomment-31848",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

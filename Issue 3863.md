@@ -3,7 +3,7 @@
 archive/issues_003863.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nKeywords: integration integral calculus symbolic\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.6, Release Date: 2008-07-30                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: x = var('x')\nsage: integrate(x^2.7 * e^(-2.4*x), x, 0, 3).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/drake/sage-3.0.6.final/<ipython console> in <module>()\n\n/home/was/s/local/lib/python2.5/site-packages/sage/calculus/calculus.py in numerical_approx(self, prec, digits)\n   1266         except TypeError:\n   1267             # try to return a complex result\n-> 1268             approx = self._complex_mpfr_field_(ComplexField(prec))\n   1269 \n   1270         return approx\n\n/home/was/s/local/lib/python2.5/site-packages/sage/calculus/calculus.py in _complex_mpfr_field_(self, field)\n   1419 \n   1420     def _complex_mpfr_field_(self, field):\n-> 1421         raise TypeError\n   1422 \n   1423     def _complex_double_(self, C):\n\nTypeError: \nsage: \n```\n\n\nOddly, the `plot` function has no difficulty, so *some* part of Sage can numerically evaluate the function:\n\n\n```\nplot(x^2.7 * e^(-2.4*x), x, 0, 3)\n```\n\nworks fine.\n\nSome values for the exponents do work -- it seems like the exponent of `x` needs to be an integer or half-integer:\n\n\n```\n(2.7, -2.4): this is the above example\n(27/10, -2.4): same error as above\n(1.5, -2.4): works\n(1.6, -2.4): same error as above\n(1.6, -2.0): same error as above\n(1.0, -2.4): works\n(5.5, -2.4): works\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3863\n\n",
+    "body": "Assignee: @garyfurnish\n\nKeywords: integration integral calculus symbolic\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.6, Release Date: 2008-07-30                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: x = var('x')\nsage: integrate(x^2.7 * e^(-2.4*x), x, 0, 3).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/drake/sage-3.0.6.final/<ipython console> in <module>()\n\n/home/was/s/local/lib/python2.5/site-packages/sage/calculus/calculus.py in numerical_approx(self, prec, digits)\n   1266         except TypeError:\n   1267             # try to return a complex result\n-> 1268             approx = self._complex_mpfr_field_(ComplexField(prec))\n   1269 \n   1270         return approx\n\n/home/was/s/local/lib/python2.5/site-packages/sage/calculus/calculus.py in _complex_mpfr_field_(self, field)\n   1419 \n   1420     def _complex_mpfr_field_(self, field):\n-> 1421         raise TypeError\n   1422 \n   1423     def _complex_double_(self, C):\n\nTypeError: \nsage: \n```\n\n\nOddly, the `plot` function has no difficulty, so *some* part of Sage can numerically evaluate the function:\n\n\n```\nplot(x^2.7 * e^(-2.4*x), x, 0, 3)\n```\n\nworks fine.\n\nSome values for the exponents do work -- it seems like the exponent of `x` needs to be an integer or half-integer:\n\n\n```\n(2.7, -2.4): this is the above example\n(27/10, -2.4): same error as above\n(1.5, -2.4): works\n(1.6, -2.4): same error as above\n(1.6, -2.0): same error as above\n(1.0, -2.4): works\n(5.5, -2.4): works\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3863\n\n",
     "created_at": "2008-08-15T00:46:06Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_003863.json:
     "title": "numerical integration of x^2.7 * e^(-2.4*x) fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3863",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 Keywords: integration integral calculus symbolic
 
@@ -92,7 +92,7 @@ archive/issue_comments_027521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27521",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_027522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27522",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_027523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27523",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_027524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27524",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_027525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27525",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_027526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27526",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -248,16 +248,16 @@ Changing status from new to assigned.
 archive/issue_comments_027527.json:
 ```json
 {
-    "body": "Changing assignee from gfurnish to mhansen.",
+    "body": "Changing assignee from @garyfurnish to @mwhansen.",
     "created_at": "2009-06-04T23:28:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27527",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from gfurnish to mhansen.
+Changing assignee from @garyfurnish to @mwhansen.
 
 
 
@@ -271,7 +271,7 @@ archive/issue_comments_027528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27528",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_027529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27529",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_027530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27530",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -334,16 +334,16 @@ Replying to [comment:6 kcrisman]:
 archive/issue_comments_027531.json:
 ```json
 {
-    "body": "Attachment [trac_3863-doctest.patch](tarball://root/attachments/some-uuid/ticket3863/trac_3863-doctest.patch) by burcin created at 2010-04-05 13:02:56\n\ntrivial doctest",
+    "body": "Attachment [trac_3863-doctest.patch](tarball://root/attachments/some-uuid/ticket3863/trac_3863-doctest.patch) by @burcin created at 2010-04-05 13:02:56\n\ntrivial doctest",
     "created_at": "2010-04-05T13:02:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27531",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_3863-doctest.patch](tarball://root/attachments/some-uuid/ticket3863/trac_3863-doctest.patch) by burcin created at 2010-04-05 13:02:56
+Attachment [trac_3863-doctest.patch](tarball://root/attachments/some-uuid/ticket3863/trac_3863-doctest.patch) by @burcin created at 2010-04-05 13:02:56
 
 trivial doctest
 
@@ -359,7 +359,7 @@ archive/issue_comments_027532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27532",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -397,7 +397,7 @@ archive/issue_comments_027533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27533",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -415,7 +415,7 @@ archive/issue_comments_027534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27534",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -433,7 +433,7 @@ archive/issue_comments_027535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27535",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -468,7 +468,7 @@ archive/issue_comments_027536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27536",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -488,7 +488,7 @@ archive/issue_comments_027537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27537",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -506,7 +506,7 @@ archive/issue_comments_027538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27538",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -549,7 +549,7 @@ archive/issue_comments_027539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27539",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -569,7 +569,7 @@ archive/issue_comments_027540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27540",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -601,7 +601,7 @@ archive/issue_comments_027541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27541",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -619,7 +619,7 @@ archive/issue_comments_027542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27542",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -637,7 +637,7 @@ archive/issue_comments_027543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27543",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -658,7 +658,7 @@ archive/issue_comments_027544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27544",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -676,7 +676,7 @@ archive/issue_comments_027545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27545",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

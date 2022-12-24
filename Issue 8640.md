@@ -3,7 +3,7 @@
 archive/issues_008640.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  rhinton\n\nFor the moment, Sage's documentation does not include the BipartiteGraph class. \n\nFor the moment, patches #8329 #8421 and #8425 are still to be merged, and waiting for them to be is a lazy way to avoid conflicts :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8640\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @rhinton\n\nFor the moment, Sage's documentation does not include the BipartiteGraph class. \n\nFor the moment, patches #8329 #8421 and #8425 are still to be merged, and waiting for them to be is a lazy way to avoid conflicts :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8640\n\n",
     "created_at": "2010-04-01T14:32:22Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_008640.json:
     "title": "Add BipartiteGraph to the documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8640",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: mvngu
 
-CC:  rhinton
+CC:  @rhinton
 
 For the moment, Sage's documentation does not include the BipartiteGraph class. 
 
@@ -137,7 +137,7 @@ archive/issue_comments_078346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8640#issuecomment-78346",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_078347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8640#issuecomment-78347",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

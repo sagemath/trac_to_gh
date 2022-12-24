@@ -3,7 +3,7 @@
 archive/issues_003371.json:
 ```json
 {
-    "body": "Assignee: malb\n\n\nUniformi Z er\n\n\n```\nsage : A = Zp(7,10)\nsage : B.<t> = A.ext(x^2+7)\nsage : B.uniformizer()\nt + O(t^21)\n```\n\n\nversus Uniformi S er\n\n\n```\nsage : B.uniformiser()\n6*t^2 + t^4 + O(t^22)\n```\n\n\nwhich is NOT a uniformiser.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3371\n\n",
+    "body": "Assignee: @malb\n\n\nUniformi Z er\n\n\n```\nsage : A = Zp(7,10)\nsage : B.<t> = A.ext(x^2+7)\nsage : B.uniformizer()\nt + O(t^21)\n```\n\n\nversus Uniformi S er\n\n\n```\nsage : B.uniformiser()\n6*t^2 + t^4 + O(t^22)\n```\n\n\nwhich is NOT a uniformiser.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3371\n\n",
     "created_at": "2008-06-05T14:01:32Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_003371.json:
     "title": "bug in uniformiSer for p-adic rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3371",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 
 Uniformi Z er
@@ -95,7 +95,7 @@ archive/issue_comments_023586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3371#issuecomment-23586",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_023587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3371#issuecomment-23587",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -126,16 +126,16 @@ extra touch-ups
 archive/issue_comments_023588.json:
 ```json
 {
-    "body": "Attachment [trac-3371.patch](tarball://root/attachments/some-uuid/ticket3371/trac-3371.patch) by roed created at 2008-06-18 09:05:14\n\nI approve of the changes in this ticket.",
+    "body": "Attachment [trac-3371.patch](tarball://root/attachments/some-uuid/ticket3371/trac-3371.patch) by @roed314 created at 2008-06-18 09:05:14\n\nI approve of the changes in this ticket.",
     "created_at": "2008-06-18T09:05:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3371#issuecomment-23588",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [trac-3371.patch](tarball://root/attachments/some-uuid/ticket3371/trac-3371.patch) by roed created at 2008-06-18 09:05:14
+Attachment [trac-3371.patch](tarball://root/attachments/some-uuid/ticket3371/trac-3371.patch) by @roed314 created at 2008-06-18 09:05:14
 
 I approve of the changes in this ticket.
 
@@ -146,16 +146,16 @@ I approve of the changes in this ticket.
 archive/issue_comments_023589.json:
 ```json
 {
-    "body": "Attachment [trac-3371-doctest.patch](tarball://root/attachments/some-uuid/ticket3371/trac-3371-doctest.patch) by craigcitro created at 2008-06-18 09:05:31\n\nadd a doctest",
+    "body": "Attachment [trac-3371-doctest.patch](tarball://root/attachments/some-uuid/ticket3371/trac-3371-doctest.patch) by @craigcitro created at 2008-06-18 09:05:31\n\nadd a doctest",
     "created_at": "2008-06-18T09:05:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3371#issuecomment-23589",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-3371-doctest.patch](tarball://root/attachments/some-uuid/ticket3371/trac-3371-doctest.patch) by craigcitro created at 2008-06-18 09:05:31
+Attachment [trac-3371-doctest.patch](tarball://root/attachments/some-uuid/ticket3371/trac-3371-doctest.patch) by @craigcitro created at 2008-06-18 09:05:31
 
 add a doctest
 

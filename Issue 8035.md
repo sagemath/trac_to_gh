@@ -3,7 +3,7 @@
 archive/issues_008035.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jhpalmieri\n\nKeywords: sagetex\n\nIn comment:21:ticket:7617, John Palmieri suggested that SageTeX detect version mismatches between the Python module (installed in Sage) and the LaTeX style file. We should implement this.\n\nOne difficulty is that people have lots of old sagetex.sty files around, and whatever mechanism we use would need to work with those.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8035\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jhpalmieri\n\nKeywords: sagetex\n\nIn comment:21:ticket:7617, John Palmieri suggested that SageTeX detect version mismatches between the Python module (installed in Sage) and the LaTeX style file. We should implement this.\n\nOne difficulty is that people have lots of old sagetex.sty files around, and whatever mechanism we use would need to work with those.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8035\n\n",
     "created_at": "2010-01-22T00:49:53Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_008035.json:
     "title": "make SageTeX able to detect version mismatches",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8035",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: tbd
 
-CC:  jhpalmieri
+CC:  @jhpalmieri
 
 Keywords: sagetex
 
@@ -43,7 +43,7 @@ archive/issue_comments_070180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8035",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8035#issuecomment-70180",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_070181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8035",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8035#issuecomment-70181",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_070182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8035",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8035#issuecomment-70182",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_070183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8035",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8035#issuecomment-70183",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_070184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8035",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8035#issuecomment-70184",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

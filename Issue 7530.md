@@ -3,7 +3,7 @@
 archive/issues_007530.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nKeywords: Laurent Polynomial\n\nIt is not possible to form a polynomial ring over a Laurent polynomial ring.  This is because the function `is_integral_domain` for Laurent polynomial rings lacks the optional parameter `proof=True` (unlike every other instance of `is_integral_domain`).  The patch corrects this omission, which solves the problem.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7530\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: Laurent Polynomial\n\nIt is not possible to form a polynomial ring over a Laurent polynomial ring.  This is because the function `is_integral_domain` for Laurent polynomial rings lacks the optional parameter `proof=True` (unlike every other instance of `is_integral_domain`).  The patch corrects this omission, which solves the problem.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7530\n\n",
     "created_at": "2009-11-25T13:14:29Z",
     "labels": [
         "algebra",
@@ -17,7 +17,7 @@ archive/issues_007530.json:
     "user": "fwclarke"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Keywords: Laurent Polynomial
 
@@ -76,7 +76,7 @@ archive/issue_comments_063830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7530#issuecomment-63830",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_063831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7530#issuecomment-63831",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_063835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7530#issuecomment-63835",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_063836.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7530#issuecomment-63836",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_063837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7530#issuecomment-63837",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

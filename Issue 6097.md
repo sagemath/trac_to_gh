@@ -3,7 +3,7 @@
 archive/issues_006097.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat\n\nKeywords: abstract methods\n\nThis patch implements a decorator tha can be used to declare a method\nthat should be implemented by derived classes. This declaration should\ntypically include documentation for the specification for this method.\n\nThe purpose is to enforce a consistent and visual mantra for such\ndeclarations. In the long run, this will be used for automated\nsystematic signature checks.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6097\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: abstract methods\n\nThis patch implements a decorator tha can be used to declare a method\nthat should be implemented by derived classes. This declaration should\ntypically include documentation for the specification for this method.\n\nThe purpose is to enforce a consistent and visual mantra for such\ndeclarations. In the long run, this will be used for automated\nsystematic signature checks.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6097\n\n",
     "created_at": "2009-05-21T01:19:28Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_006097.json:
     "title": "Implements a mantra for declaring abstract methods",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6097",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
 CC:  sage-combinat
 
@@ -47,7 +47,7 @@ archive/issue_comments_048606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6097#issuecomment-48606",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -74,16 +74,16 @@ This must be fixed by improving sageinspect.  That should be easy.
 archive/issue_comments_048607.json:
 ```json
 {
-    "body": "Attachment [abstract_method-6097-nt.patch](tarball://root/attachments/some-uuid/ticket6097/abstract_method-6097-nt.patch) by nthiery created at 2009-05-21 23:41:43",
+    "body": "Attachment [abstract_method-6097-nt.patch](tarball://root/attachments/some-uuid/ticket6097/abstract_method-6097-nt.patch) by @nthiery created at 2009-05-21 23:41:43",
     "created_at": "2009-05-21T23:41:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6097#issuecomment-48607",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [abstract_method-6097-nt.patch](tarball://root/attachments/some-uuid/ticket6097/abstract_method-6097-nt.patch) by nthiery created at 2009-05-21 23:41:43
+Attachment [abstract_method-6097-nt.patch](tarball://root/attachments/some-uuid/ticket6097/abstract_method-6097-nt.patch) by @nthiery created at 2009-05-21 23:41:43
 
 
 
@@ -97,7 +97,7 @@ archive/issue_comments_048608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6097#issuecomment-48608",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_048609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6097#issuecomment-48609",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_048610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6097#issuecomment-48610",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_048611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6097#issuecomment-48611",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_048612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6097#issuecomment-48612",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_048613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6097#issuecomment-48613",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_048614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6097#issuecomment-48614",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_048615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6097#issuecomment-48615",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_048616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6097#issuecomment-48616",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_048617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6097#issuecomment-48617",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -361,7 +361,7 @@ archive/issue_comments_048618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6097#issuecomment-48618",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -389,7 +389,7 @@ archive/issue_comments_048619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6097#issuecomment-48619",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -415,7 +415,7 @@ archive/issue_comments_048620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6097#issuecomment-48620",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -447,7 +447,7 @@ archive/issue_comments_048621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6097#issuecomment-48621",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -486,7 +486,7 @@ archive/issue_comments_048622.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6097#issuecomment-48622",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -536,7 +536,7 @@ archive/issue_comments_048623.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6097#issuecomment-48623",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -654,7 +654,7 @@ archive/issue_comments_048624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6097#issuecomment-48624",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -672,7 +672,7 @@ archive/issue_comments_048625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6097#issuecomment-48625",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

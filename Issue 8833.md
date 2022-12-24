@@ -3,7 +3,7 @@
 archive/issues_008833.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nA new patch introduced some new noise.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8833\n\n",
+    "body": "Assignee: @burcin\n\nA new patch introduced some new noise.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8833\n\n",
     "created_at": "2010-05-01T06:01:55Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_008833.json:
     "title": "fix riemann.pyx numerical noise issues on t2 (etc.)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8833",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 A new patch introduced some new noise.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8833
 archive/issue_comments_081225.json:
 ```json
 {
-    "body": "Attachment [trac_8833.patch](tarball://root/attachments/some-uuid/ticket8833/trac_8833.patch) by was created at 2010-05-01 06:03:02",
+    "body": "Attachment [trac_8833.patch](tarball://root/attachments/some-uuid/ticket8833/trac_8833.patch) by @williamstein created at 2010-05-01 06:03:02",
     "created_at": "2010-05-01T06:03:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8833#issuecomment-81225",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_8833.patch](tarball://root/attachments/some-uuid/ticket8833/trac_8833.patch) by was created at 2010-05-01 06:03:02
+Attachment [trac_8833.patch](tarball://root/attachments/some-uuid/ticket8833/trac_8833.patch) by @williamstein created at 2010-05-01 06:03:02
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_081226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8833#issuecomment-81226",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_081227.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8833#issuecomment-81227",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_081228.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8833#issuecomment-81228",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_081229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8833#issuecomment-81229",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

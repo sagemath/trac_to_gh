@@ -14,7 +14,7 @@ archive/issues_000767.json:
     "title": "animate has cryptic error message when imagemagick is not installed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/767",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 Assignee: boothby
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/767
 archive/issue_comments_004534.json:
 ```json
 {
-    "body": "Attachment [767.patch](tarball://root/attachments/some-uuid/ticket767/767.patch) by jhpalmieri created at 2008-09-30 16:58:56",
+    "body": "Attachment [767.patch](tarball://root/attachments/some-uuid/ticket767/767.patch) by @jhpalmieri created at 2008-09-30 16:58:56",
     "created_at": "2008-09-30T16:58:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/767#issuecomment-4534",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [767.patch](tarball://root/attachments/some-uuid/ticket767/767.patch) by jhpalmieri created at 2008-09-30 16:58:56
+Attachment [767.patch](tarball://root/attachments/some-uuid/ticket767/767.patch) by @jhpalmieri created at 2008-09-30 16:58:56
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_004535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/767#issuecomment-4535",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_004536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/767#issuecomment-4536",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_004538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/767#issuecomment-4538",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_004540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/767#issuecomment-4540",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

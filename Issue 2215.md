@@ -3,7 +3,7 @@
 archive/issues_002215.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  sage-combinat\n\nit seems like matrix(thing) should usually work if we can think of \"thing\" as a matrix.  In this case, we even already have a p.to_matrix() function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2215\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  sage-combinat\n\nit seems like matrix(thing) should usually work if we can think of \"thing\" as a matrix.  In this case, we even already have a p.to_matrix() function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2215\n\n",
     "created_at": "2008-02-19T22:37:39Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_002215.json:
     "title": "if p is a permutation, matrix(p) should call p.to_matrix()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2215",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  sage-combinat
 
@@ -39,7 +39,7 @@ archive/issue_comments_014630.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14630",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_014631.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14631",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_014632.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14632",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_014633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14633",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -106,16 +106,16 @@ Changing priority from major to minor.
 archive/issue_comments_014634.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-02-20T03:45:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14634",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -124,16 +124,16 @@ Changing assignee from was to mhansen.
 archive/issue_comments_014635.json:
 ```json
 {
-    "body": "Attachment [2215.patch](tarball://root/attachments/some-uuid/ticket2215/2215.patch) by wdj created at 2008-02-20 18:17:02\n\nI created an hg bundle which modifies this patch. It makes it such that \nperm -> matrix(perm) is consistent with the corresponding map on perm gp\nelements and respects multiplication. It passes sage -t but sage -testall failed\nin *many* places, though none which seemed related to this patch.",
+    "body": "Attachment [2215.patch](tarball://root/attachments/some-uuid/ticket2215/2215.patch) by @wdjoyner created at 2008-02-20 18:17:02\n\nI created an hg bundle which modifies this patch. It makes it such that \nperm -> matrix(perm) is consistent with the corresponding map on perm gp\nelements and respects multiplication. It passes sage -t but sage -testall failed\nin *many* places, though none which seemed related to this patch.",
     "created_at": "2008-02-20T18:17:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14635",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [2215.patch](tarball://root/attachments/some-uuid/ticket2215/2215.patch) by wdj created at 2008-02-20 18:17:02
+Attachment [2215.patch](tarball://root/attachments/some-uuid/ticket2215/2215.patch) by @wdjoyner created at 2008-02-20 18:17:02
 
 I created an hg bundle which modifies this patch. It makes it such that 
 perm -> matrix(perm) is consistent with the corresponding map on perm gp
@@ -152,7 +152,7 @@ archive/issue_comments_014636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14636",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_014638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14638",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -246,16 +246,16 @@ Michael
 archive/issue_comments_014640.json:
 ```json
 {
-    "body": "Attachment [8631.patch](tarball://root/attachments/some-uuid/ticket2215/8631.patch) by wdj created at 2008-02-20 19:04:32",
+    "body": "Attachment [8631.patch](tarball://root/attachments/some-uuid/ticket2215/8631.patch) by @wdjoyner created at 2008-02-20 19:04:32",
     "created_at": "2008-02-20T19:04:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14640",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [8631.patch](tarball://root/attachments/some-uuid/ticket2215/8631.patch) by wdj created at 2008-02-20 19:04:32
+Attachment [8631.patch](tarball://root/attachments/some-uuid/ticket2215/8631.patch) by @wdjoyner created at 2008-02-20 19:04:32
 
 
 
@@ -269,7 +269,7 @@ archive/issue_comments_014641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14641",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_014643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14643",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_014644.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14644",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_014645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14645",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -368,7 +368,7 @@ archive/issue_comments_014646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14646",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -410,7 +410,7 @@ archive/issue_comments_014648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14648",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -428,7 +428,7 @@ archive/issue_comments_014649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14649",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -446,7 +446,7 @@ archive/issue_comments_014650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14650",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -464,7 +464,7 @@ archive/issue_comments_014651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14651",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

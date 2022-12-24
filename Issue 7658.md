@@ -14,7 +14,7 @@ archive/issues_007658.json:
     "title": "installation guide still refers to VMWare, not VirtualBox",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7658",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: mvngu
@@ -93,7 +93,7 @@ archive/issue_comments_065509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7658#issuecomment-65509",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_065510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7658#issuecomment-65510",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_065511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7658#issuecomment-65511",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

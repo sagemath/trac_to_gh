@@ -14,7 +14,7 @@ archive/issues_008112.json:
     "title": "flint fails to build in Open Solaris x64 as 64 bit if CFLAGS is not set",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8112",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: drkirkby
@@ -41,7 +41,7 @@ archive/issue_comments_071215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8112#issuecomment-71215",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_071216.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8112#issuecomment-71216",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_071219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8112#issuecomment-71219",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_071220.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8112#issuecomment-71220",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_071221.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8112#issuecomment-71221",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -343,7 +343,7 @@ archive/issue_comments_071224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8112#issuecomment-71224",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -361,7 +361,7 @@ archive/issue_comments_071225.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8112#issuecomment-71225",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -404,16 +404,16 @@ Jaap
 archive/issue_comments_071226.json:
 ```json
 {
-    "body": "Attachment [flint-1.5.0.p4.patch](tarball://root/attachments/some-uuid/ticket8112/flint-1.5.0.p4.patch) by jsp created at 2010-02-23 16:07:25",
+    "body": "Attachment [flint-1.5.0.p4.patch](tarball://root/attachments/some-uuid/ticket8112/flint-1.5.0.p4.patch) by @jaapspies created at 2010-02-23 16:07:25",
     "created_at": "2010-02-23T16:07:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8112#issuecomment-71226",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [flint-1.5.0.p4.patch](tarball://root/attachments/some-uuid/ticket8112/flint-1.5.0.p4.patch) by jsp created at 2010-02-23 16:07:25
+Attachment [flint-1.5.0.p4.patch](tarball://root/attachments/some-uuid/ticket8112/flint-1.5.0.p4.patch) by @jaapspies created at 2010-02-23 16:07:25
 
 
 
@@ -478,7 +478,7 @@ archive/issue_comments_071229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8112#issuecomment-71229",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -101,7 +101,7 @@ archive/issue_comments_011656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1840#issuecomment-11656",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -114,16 +114,16 @@ Patch looks good and applies cleanly against 2.10. Only detail: It uses `__repr_
 archive/issue_comments_011657.json:
 ```json
 {
-    "body": "Attachment [1840-repr.patch](tarball://root/attachments/some-uuid/ticket1840/1840-repr.patch) by mhansen created at 2008-01-21 05:39:15",
+    "body": "Attachment [1840-repr.patch](tarball://root/attachments/some-uuid/ticket1840/1840-repr.patch) by @mwhansen created at 2008-01-21 05:39:15",
     "created_at": "2008-01-21T05:39:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1840#issuecomment-11657",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1840-repr.patch](tarball://root/attachments/some-uuid/ticket1840/1840-repr.patch) by mhansen created at 2008-01-21 05:39:15
+Attachment [1840-repr.patch](tarball://root/attachments/some-uuid/ticket1840/1840-repr.patch) by @mwhansen created at 2008-01-21 05:39:15
 
 
 
@@ -137,7 +137,7 @@ archive/issue_comments_011658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1840#issuecomment-11658",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

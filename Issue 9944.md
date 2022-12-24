@@ -3,7 +3,7 @@
 archive/issues_009944.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\n\n```\n> sage: R.<x> = GF(3)[]\n> sage: q = (x+1)/(x^3+x+1)\n> sage: q.partial_fraction_decomposition()\n```\n\n\nSee http://groups.google.com/group/sage-support/browse_thread/thread/5423a314227309b3#\n\nIssue created by migration from https://trac.sagemath.org/ticket/9945\n\n",
+    "body": "Assignee: @aghitza\n\n\n```\n> sage: R.<x> = GF(3)[]\n> sage: q = (x+1)/(x^3+x+1)\n> sage: q.partial_fraction_decomposition()\n```\n\n\nSee http://groups.google.com/group/sage-support/browse_thread/thread/5423a314227309b3#\n\nIssue created by migration from https://trac.sagemath.org/ticket/9945\n\n",
     "created_at": "2010-09-18T23:41:19Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_009944.json:
     "title": "partial_fraction_decomposition broken for FpT elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9944",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 
 ```
@@ -45,7 +45,7 @@ archive/issue_comments_099133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9944",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9944#issuecomment-99133",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -58,16 +58,16 @@ Changing status from new to needs_review.
 archive/issue_comments_099134.json:
 ```json
 {
-    "body": "Attachment [9945-part-frac-FpT.patch](tarball://root/attachments/some-uuid/ticket9945/9945-part-frac-FpT.patch) by robertwb created at 2010-09-19 00:11:51",
+    "body": "Attachment [9945-part-frac-FpT.patch](tarball://root/attachments/some-uuid/ticket9945/9945-part-frac-FpT.patch) by @robertwb created at 2010-09-19 00:11:51",
     "created_at": "2010-09-19T00:11:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9944",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9944#issuecomment-99134",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [9945-part-frac-FpT.patch](tarball://root/attachments/some-uuid/ticket9945/9945-part-frac-FpT.patch) by robertwb created at 2010-09-19 00:11:51
+Attachment [9945-part-frac-FpT.patch](tarball://root/attachments/some-uuid/ticket9945/9945-part-frac-FpT.patch) by @robertwb created at 2010-09-19 00:11:51
 
 
 
@@ -81,7 +81,7 @@ archive/issue_comments_099135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9944",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9944#issuecomment-99135",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_099136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9944",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9944#issuecomment-99136",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_099137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9944",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9944#issuecomment-99137",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_099138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9944",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9944#issuecomment-99138",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -162,16 +162,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_099139.json:
 ```json
 {
-    "body": "Attachment [9945-referee-fixes.patch](tarball://root/attachments/some-uuid/ticket9945/9945-referee-fixes.patch) by robertwb created at 2010-09-21 06:27:34\n\nI was just moving code, but it doesn't hurt to clean it up as I do so (and I was the original author, so the criticism is just :) I removed the TODO, I was thinking about changing the factor command to group \"equal\" roots but that would be too invasive of a change to consider right now.",
+    "body": "Attachment [9945-referee-fixes.patch](tarball://root/attachments/some-uuid/ticket9945/9945-referee-fixes.patch) by @robertwb created at 2010-09-21 06:27:34\n\nI was just moving code, but it doesn't hurt to clean it up as I do so (and I was the original author, so the criticism is just :) I removed the TODO, I was thinking about changing the factor command to group \"equal\" roots but that would be too invasive of a change to consider right now.",
     "created_at": "2010-09-21T06:27:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9944",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9944#issuecomment-99139",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [9945-referee-fixes.patch](tarball://root/attachments/some-uuid/ticket9945/9945-referee-fixes.patch) by robertwb created at 2010-09-21 06:27:34
+Attachment [9945-referee-fixes.patch](tarball://root/attachments/some-uuid/ticket9945/9945-referee-fixes.patch) by @robertwb created at 2010-09-21 06:27:34
 
 I was just moving code, but it doesn't hurt to clean it up as I do so (and I was the original author, so the criticism is just :) I removed the TODO, I was thinking about changing the factor command to group "equal" roots but that would be too invasive of a change to consider right now.
 
@@ -187,7 +187,7 @@ archive/issue_comments_099140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9944",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9944#issuecomment-99140",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_099141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9944",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9944#issuecomment-99141",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -243,16 +243,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_099142.json:
 ```json
 {
-    "body": "Attachment [9945-rebased.patch](tarball://root/attachments/some-uuid/ticket9945/9945-rebased.patch) by robertwb created at 2010-09-22 03:46:00\n\napply only this patch",
+    "body": "Attachment [9945-rebased.patch](tarball://root/attachments/some-uuid/ticket9945/9945-rebased.patch) by @robertwb created at 2010-09-22 03:46:00\n\napply only this patch",
     "created_at": "2010-09-22T03:46:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9944",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9944#issuecomment-99142",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [9945-rebased.patch](tarball://root/attachments/some-uuid/ticket9945/9945-rebased.patch) by robertwb created at 2010-09-22 03:46:00
+Attachment [9945-rebased.patch](tarball://root/attachments/some-uuid/ticket9945/9945-rebased.patch) by @robertwb created at 2010-09-22 03:46:00
 
 apply only this patch
 
@@ -268,7 +268,7 @@ archive/issue_comments_099143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9944",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9944#issuecomment-99143",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_099144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9944",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9944#issuecomment-99144",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_099145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9944",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9944#issuecomment-99145",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -322,7 +322,7 @@ archive/issue_comments_099146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9944",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9944#issuecomment-99146",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -335,16 +335,16 @@ Rebased against #8334 which should be in 4.6.alpha2.  Apply only this patch.
 archive/issue_comments_099147.json:
 ```json
 {
-    "body": "Attachment [9945-rebased.2.patch](tarball://root/attachments/some-uuid/ticket9945/9945-rebased.2.patch) by mpatel created at 2010-09-29 09:22:46\n\nI've attached a patch rebased for the queue in [merger-4.6.alpha2](http://sage.math.washington.edu/home/release/sage-4.6.alpha2/merger-4.6.alpha2).",
+    "body": "Attachment [9945-rebased.2.patch](tarball://root/attachments/some-uuid/ticket9945/9945-rebased.2.patch) by @qed777 created at 2010-09-29 09:22:46\n\nI've attached a patch rebased for the queue in [merger-4.6.alpha2](http://sage.math.washington.edu/home/release/sage-4.6.alpha2/merger-4.6.alpha2).",
     "created_at": "2010-09-29T09:22:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9944",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9944#issuecomment-99147",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [9945-rebased.2.patch](tarball://root/attachments/some-uuid/ticket9945/9945-rebased.2.patch) by mpatel created at 2010-09-29 09:22:46
+Attachment [9945-rebased.2.patch](tarball://root/attachments/some-uuid/ticket9945/9945-rebased.2.patch) by @qed777 created at 2010-09-29 09:22:46
 
 I've attached a patch rebased for the queue in [merger-4.6.alpha2](http://sage.math.washington.edu/home/release/sage-4.6.alpha2/merger-4.6.alpha2).
 
@@ -360,7 +360,7 @@ archive/issue_comments_099148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9944",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9944#issuecomment-99148",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

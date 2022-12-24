@@ -112,16 +112,16 @@ fixed it
 archive/issue_comments_007010.json:
 ```json
 {
-    "body": "Attachment [1148-more.patch](tarball://root/attachments/some-uuid/ticket1148/1148-more.patch) by robertwb created at 2007-11-18 08:52:58",
+    "body": "Attachment [1148-more.patch](tarball://root/attachments/some-uuid/ticket1148/1148-more.patch) by @robertwb created at 2007-11-18 08:52:58",
     "created_at": "2007-11-18T08:52:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1148",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1148#issuecomment-7010",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [1148-more.patch](tarball://root/attachments/some-uuid/ticket1148/1148-more.patch) by robertwb created at 2007-11-18 08:52:58
+Attachment [1148-more.patch](tarball://root/attachments/some-uuid/ticket1148/1148-more.patch) by @robertwb created at 2007-11-18 08:52:58
 
 
 

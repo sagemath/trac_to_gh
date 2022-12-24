@@ -3,7 +3,7 @@
 archive/issues_009649.json:
 ```json
 {
-    "body": "Assignee: jason\n\nIn c_lib/include/interrupt.h, there is\n\n```\n#ifndef FOO_H\n#define FOO_H\n```\n\nto protect the header.  This FOO_H should be changed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9649\n\n",
+    "body": "Assignee: @jasongrout\n\nIn c_lib/include/interrupt.h, there is\n\n```\n#ifndef FOO_H\n#define FOO_H\n```\n\nto protect the header.  This FOO_H should be changed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9649\n\n",
     "created_at": "2010-07-31T08:23:54Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_009649.json:
     "title": "c_lib/include/interrupt.h: rename FOO_H",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9649",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
-Assignee: jason
+Assignee: @jasongrout
 
 In c_lib/include/interrupt.h, there is
 
@@ -44,7 +44,7 @@ archive/issue_comments_093571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9649",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9649#issuecomment-93571",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -62,7 +62,7 @@ archive/issue_comments_093572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9649",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9649#issuecomment-93572",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_093573.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9649",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9649#issuecomment-93573",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -93,16 +93,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_093574.json:
 ```json
 {
-    "body": "Attachment [9649.patch](tarball://root/attachments/some-uuid/ticket9649/9649.patch) by robertwb created at 2010-07-31 19:00:35\n\nThis is obviously code that went in before the referee process :).",
+    "body": "Attachment [9649.patch](tarball://root/attachments/some-uuid/ticket9649/9649.patch) by @robertwb created at 2010-07-31 19:00:35\n\nThis is obviously code that went in before the referee process :).",
     "created_at": "2010-07-31T19:00:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9649",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9649#issuecomment-93574",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [9649.patch](tarball://root/attachments/some-uuid/ticket9649/9649.patch) by robertwb created at 2010-07-31 19:00:35
+Attachment [9649.patch](tarball://root/attachments/some-uuid/ticket9649/9649.patch) by @robertwb created at 2010-07-31 19:00:35
 
 This is obviously code that went in before the referee process :).
 
@@ -118,7 +118,7 @@ archive/issue_comments_093575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9649",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9649#issuecomment-93575",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

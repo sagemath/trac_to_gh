@@ -14,7 +14,7 @@ archive/issues_001974.json:
     "title": "notebook -- when changing the title of a worksheet, the javascript should change the document title (via DOM or at worst forced reload)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1974",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -57,7 +57,7 @@ archive/issue_comments_012792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1974#issuecomment-12792",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

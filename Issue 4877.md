@@ -14,7 +14,7 @@ archive/issues_004877.json:
     "title": "[with spkg; needs review] update optional spkg to newest version of pyopenssl and get spkg into proper format",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4877",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -88,7 +88,7 @@ archive/issue_comments_036930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4877#issuecomment-36930",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_036931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4877#issuecomment-36931",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_036932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4877#issuecomment-36932",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_036933.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4877#issuecomment-36933",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

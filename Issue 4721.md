@@ -3,7 +3,7 @@
 archive/issues_004721.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  mhansen\n\nIt would be nice to be able to do indefinite integration of piecewise functions in Sage.\n\nI've created a patch which does this. I have made the default behavior of the integral() function of a piecewise function be to return the indefinite integral, and the definite integral is returned only when definite=True is supplied.\n\n\n```\nsage: pw = Piecewise([[(0,1), x*2], [(1,2), x + 3]])\nsage: pw.integral()\nPiecewise defined function with 2 parts, [[(0, 1), x^2], [(1, 2), (x^2 + 6*x)/2 - 5/2]]\nsage: pw.integral(definite=True)\n11/2\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4721\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @mwhansen\n\nIt would be nice to be able to do indefinite integration of piecewise functions in Sage.\n\nI've created a patch which does this. I have made the default behavior of the integral() function of a piecewise function be to return the indefinite integral, and the definite integral is returned only when definite=True is supplied.\n\n\n```\nsage: pw = Piecewise([[(0,1), x*2], [(1,2), x + 3]])\nsage: pw.integral()\nPiecewise defined function with 2 parts, [[(0, 1), x^2], [(1, 2), (x^2 + 6*x)/2 - 5/2]]\nsage: pw.integral(definite=True)\n11/2\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4721\n\n",
     "created_at": "2008-12-05T22:37:17Z",
     "labels": [
         "calculus",
@@ -17,9 +17,9 @@ archive/issues_004721.json:
     "user": "pbutler"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  mhansen
+CC:  @mwhansen
 
 It would be nice to be able to do indefinite integration of piecewise functions in Sage.
 
@@ -53,7 +53,7 @@ archive/issue_comments_035610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4721#issuecomment-35610",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_035613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4721#issuecomment-35613",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_035619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4721#issuecomment-35619",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_035621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4721#issuecomment-35621",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -390,7 +390,7 @@ archive/issue_comments_035624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4721#issuecomment-35624",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -408,7 +408,7 @@ archive/issue_comments_035625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4721#issuecomment-35625",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -450,7 +450,7 @@ archive/issue_comments_035627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4721#issuecomment-35627",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -547,7 +547,7 @@ archive/issue_comments_035629.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4721#issuecomment-35629",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -660,7 +660,7 @@ archive/issue_comments_035633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4721#issuecomment-35633",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -734,7 +734,7 @@ archive/issue_comments_035635.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4721#issuecomment-35635",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -810,7 +810,7 @@ archive/issue_comments_035637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4721#issuecomment-35637",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -857,7 +857,7 @@ archive/issue_comments_035639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4721#issuecomment-35639",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003485.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  ncalexan wstein\n\nThis patch creates a new sage_input function, that does things like this:\n\n```\nsage: sage_input((polygen(GF(3))+1)^4)\n\nR.<x> = GF(3)[]\nx^4 + x^3 + x + 1\n```\n\n\nI am not done writing docstrings and doctests, so the patch is not ready for review; but any comments on the general approach would be appreciated.  (Also, sage_input is implemented for only a few types; but I picked \"complicated\" types, so I think the underlying framework is ready to go.)\n\nThis patch depends on #3484.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3485\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @ncalexan wstein\n\nThis patch creates a new sage_input function, that does things like this:\n\n```\nsage: sage_input((polygen(GF(3))+1)^4)\n\nR.<x> = GF(3)[]\nx^4 + x^3 + x + 1\n```\n\n\nI am not done writing docstrings and doctests, so the patch is not ready for review; but any comments on the general approach would be appreciated.  (Also, sage_input is implemented for only a few types; but I picked \"complicated\" types, so I think the underlying framework is ready to go.)\n\nThis patch depends on #3484.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3485\n\n",
     "created_at": "2008-06-20T08:18:11Z",
     "labels": [
         "misc",
@@ -19,7 +19,7 @@ archive/issues_003485.json:
 ```
 Assignee: cwitty
 
-CC:  ncalexan wstein
+CC:  @ncalexan wstein
 
 This patch creates a new sage_input function, that does things like this:
 
@@ -127,7 +127,7 @@ archive/issue_comments_024565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3485#issuecomment-24565",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

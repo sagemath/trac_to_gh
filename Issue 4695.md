@@ -3,7 +3,7 @@
 archive/issues_004695.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  was cc\n\nKeywords: relative rnf ideal down\n\nThe attached patch adds support for pari's rnfidealdown.  This is simple but exposes a weakness in Sage's number field relativize() function, which I address at the same time.  Namely, relativize always constructs a new base number field and embedding rather than (possibly) using an existing one.  The doctests are extensive and reveal (and document!) a bug in the existing code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4695\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  was cc\n\nKeywords: relative rnf ideal down\n\nThe attached patch adds support for pari's rnfidealdown.  This is simple but exposes a weakness in Sage's number field relativize() function, which I address at the same time.  Namely, relativize always constructs a new base number field and embedding rather than (possibly) using an existing one.  The doctests are extensive and reveal (and document!) a bug in the existing code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4695\n\n",
     "created_at": "2008-12-04T18:43:58Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004695.json:
     "title": "[with patch, needs review] add support for pari's rnfidealdown",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4695",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  was cc
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4695
 archive/issue_comments_035377.json:
 ```json
 {
-    "body": "Attachment [4695-ncalexan-rnfidealdown.patch](tarball://root/attachments/some-uuid/ticket4695/4695-ncalexan-rnfidealdown.patch) by was created at 2008-12-04 22:57:27\n\nI read through the code and the only problem I have is that  \n\n```\ndef rnfidealdown(self, x): \n```\n\nhas no docstring or doctest, which violates our 100% coverage rule.\n\nAlso, a bunch of doctests fail on x86_64 linux (sage.math), and these all have to get fixed.  So once these are fixed and the above function has a doctest, I'll be happy.  The doctest failures (except the segfault) look like some kind of randomness in the output.  \n\n\n```\nwas@sage:~/build/sage-3.2.1.rc1$ ./sage -tp 12 devel/sage/sage/rings/\nGlobal iterations: 1\nFile iterations: 1\nTeX files: 0\n \n----------------------------------------------------------------------\nsage -t  devel/sage/sage/rings/padics/padic_field_base_generic.py\n\t [0.1 s]\nsage -t  devel/sage/sage/rings/padics/lazy_ring_generic.py\n\t [0.1 s]\n... passes\nsage -t  devel/sage/sage/rings/number_field/number_field_ideal_rel.py\n**********************************************************************\nFile \"/home/was/build/sage-3.2.1.rc1/devel/sage-main/sage/rings/number_field/number_field_ideal_rel.py\", line 197:\n    sage: K0.factor(19)\nExpected:\n    (Fractional ideal (-a0 + 1)) * (Fractional ideal (-a0 + 5))\nGot:\n    (Fractional ideal (a0 - 1)) * (Fractional ideal (-a0 + 5))\n**********************************************************************\nFile \"/home/was/build/sage-3.2.1.rc1/devel/sage-main/sage/rings/number_field/number_field_ideal_rel.py\", line 200:\n    sage: P1, w1\nExpected:\n    (Fractional ideal (-a0 + 1), -a0 + 1)\nGot:\n    (Fractional ideal (a0 - 1), a0 - 1)\n**********************************************************************\nFile \"/home/was/build/sage-3.2.1.rc1/devel/sage-main/sage/rings/number_field/number_field_ideal_rel.py\", line 216:\n    sage: K_into_L1(P).ideal_below()\nExpected:\n    Fractional ideal (-a0 + 1)\nGot:\n    Fractional ideal (a0 - 1)\n**********************************************************************\n1 items had failures:\n   3 of  36 in __main__.example_6\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /home/was/build/sage-3.2.1.rc1/tmp/.doctest_number_field_ideal_rel.py\n\n\t [3.9 s]\n\nsage -t  devel/sage/sage/rings/number_field/number_field.py\n**********************************************************************\nFile \"/home/was/build/sage-3.2.1.rc1/devel/sage-main/sage/rings/number_field/number_field.py\", line 4200:\n    sage: Pp = L1.ideal(K_into_L1(w1)).ideal_below(); Pp\nExpected:\n    Fractional ideal (4*a0 + 1)\nGot:\n    Fractional ideal (5*a0 - 9)\nFor whitespace errors, see the file /home/was/build/sage-3.2.1.rc1/tmp/.doctest_number_field.py\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n\nA mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\n\n\t [8.0 s]\n```\n",
+    "body": "Attachment [4695-ncalexan-rnfidealdown.patch](tarball://root/attachments/some-uuid/ticket4695/4695-ncalexan-rnfidealdown.patch) by @williamstein created at 2008-12-04 22:57:27\n\nI read through the code and the only problem I have is that  \n\n```\ndef rnfidealdown(self, x): \n```\n\nhas no docstring or doctest, which violates our 100% coverage rule.\n\nAlso, a bunch of doctests fail on x86_64 linux (sage.math), and these all have to get fixed.  So once these are fixed and the above function has a doctest, I'll be happy.  The doctest failures (except the segfault) look like some kind of randomness in the output.  \n\n\n```\nwas@sage:~/build/sage-3.2.1.rc1$ ./sage -tp 12 devel/sage/sage/rings/\nGlobal iterations: 1\nFile iterations: 1\nTeX files: 0\n \n----------------------------------------------------------------------\nsage -t  devel/sage/sage/rings/padics/padic_field_base_generic.py\n\t [0.1 s]\nsage -t  devel/sage/sage/rings/padics/lazy_ring_generic.py\n\t [0.1 s]\n... passes\nsage -t  devel/sage/sage/rings/number_field/number_field_ideal_rel.py\n**********************************************************************\nFile \"/home/was/build/sage-3.2.1.rc1/devel/sage-main/sage/rings/number_field/number_field_ideal_rel.py\", line 197:\n    sage: K0.factor(19)\nExpected:\n    (Fractional ideal (-a0 + 1)) * (Fractional ideal (-a0 + 5))\nGot:\n    (Fractional ideal (a0 - 1)) * (Fractional ideal (-a0 + 5))\n**********************************************************************\nFile \"/home/was/build/sage-3.2.1.rc1/devel/sage-main/sage/rings/number_field/number_field_ideal_rel.py\", line 200:\n    sage: P1, w1\nExpected:\n    (Fractional ideal (-a0 + 1), -a0 + 1)\nGot:\n    (Fractional ideal (a0 - 1), a0 - 1)\n**********************************************************************\nFile \"/home/was/build/sage-3.2.1.rc1/devel/sage-main/sage/rings/number_field/number_field_ideal_rel.py\", line 216:\n    sage: K_into_L1(P).ideal_below()\nExpected:\n    Fractional ideal (-a0 + 1)\nGot:\n    Fractional ideal (a0 - 1)\n**********************************************************************\n1 items had failures:\n   3 of  36 in __main__.example_6\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /home/was/build/sage-3.2.1.rc1/tmp/.doctest_number_field_ideal_rel.py\n\n\t [3.9 s]\n\nsage -t  devel/sage/sage/rings/number_field/number_field.py\n**********************************************************************\nFile \"/home/was/build/sage-3.2.1.rc1/devel/sage-main/sage/rings/number_field/number_field.py\", line 4200:\n    sage: Pp = L1.ideal(K_into_L1(w1)).ideal_below(); Pp\nExpected:\n    Fractional ideal (4*a0 + 1)\nGot:\n    Fractional ideal (5*a0 - 9)\nFor whitespace errors, see the file /home/was/build/sage-3.2.1.rc1/tmp/.doctest_number_field.py\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n\nA mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\n\n\t [8.0 s]\n```\n",
     "created_at": "2008-12-04T22:57:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4695#issuecomment-35377",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [4695-ncalexan-rnfidealdown.patch](tarball://root/attachments/some-uuid/ticket4695/4695-ncalexan-rnfidealdown.patch) by was created at 2008-12-04 22:57:27
+Attachment [4695-ncalexan-rnfidealdown.patch](tarball://root/attachments/some-uuid/ticket4695/4695-ncalexan-rnfidealdown.patch) by @williamstein created at 2008-12-04 22:57:27
 
 I read through the code and the only problem I have is that  
 
@@ -133,16 +133,16 @@ A mysterious error (perphaps a memory error?) occurred, which may have crashed d
 archive/issue_comments_035378.json:
 ```json
 {
-    "body": "Attachment [4695-ncalexan-rnfidealdown.2.patch](tarball://root/attachments/some-uuid/ticket4695/4695-ncalexan-rnfidealdown.2.patch) by ncalexan created at 2008-12-07 01:21:15\n\n4695-ncalexan-rnfidealdown.2.patch addresses the referee's concerns and implements relativize over relative fields.  This required updating the number field isomorphisms to the newer coercion model.  Along the way I added lots of doctests.\n\nI haven't addressed the crashes on sage.math.",
+    "body": "Attachment [4695-ncalexan-rnfidealdown.2.patch](tarball://root/attachments/some-uuid/ticket4695/4695-ncalexan-rnfidealdown.2.patch) by @ncalexan created at 2008-12-07 01:21:15\n\n4695-ncalexan-rnfidealdown.2.patch addresses the referee's concerns and implements relativize over relative fields.  This required updating the number field isomorphisms to the newer coercion model.  Along the way I added lots of doctests.\n\nI haven't addressed the crashes on sage.math.",
     "created_at": "2008-12-07T01:21:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4695#issuecomment-35378",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [4695-ncalexan-rnfidealdown.2.patch](tarball://root/attachments/some-uuid/ticket4695/4695-ncalexan-rnfidealdown.2.patch) by ncalexan created at 2008-12-07 01:21:15
+Attachment [4695-ncalexan-rnfidealdown.2.patch](tarball://root/attachments/some-uuid/ticket4695/4695-ncalexan-rnfidealdown.2.patch) by @ncalexan created at 2008-12-07 01:21:15
 
 4695-ncalexan-rnfidealdown.2.patch addresses the referee's concerns and implements relativize over relative fields.  This required updating the number field isomorphisms to the newer coercion model.  Along the way I added lots of doctests.
 
@@ -160,7 +160,7 @@ archive/issue_comments_035379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4695#issuecomment-35379",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

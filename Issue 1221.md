@@ -3,7 +3,7 @@
 archive/issues_001221.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jason\n\nI think we should use this syntax for integration:\n\n```\n>>> integrate(x**3, (x, -1, 1))\n0\n>>> integrate(sin(x), (x, 0, pi/2))\n1\n>>> integrate(cos(x), (x, -pi/2, pi/2))\n2\n```\n\n\ninstead of\n\n```\nsage: integral(x/(x^2+1), x, 0, 1)\n     log(2)/2\n```\n\n\nas in SAGE currently, to be close to Mathematica. Because then you can\nuse the syntax:\n\nintegrate(cos(x*y), (x, -pi/2, pi/2), (y, 0, pi))\n\nfor multiple integrals.\n\nSee also [1], how we discussed this in SymPy.\n\n[1] http://code.google.com/p/sympy/issues/detail?id=25\n\nIssue created by migration from https://trac.sagemath.org/ticket/1221\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nI think we should use this syntax for integration:\n\n```\n>>> integrate(x**3, (x, -1, 1))\n0\n>>> integrate(sin(x), (x, 0, pi/2))\n1\n>>> integrate(cos(x), (x, -pi/2, pi/2))\n2\n```\n\n\ninstead of\n\n```\nsage: integral(x/(x^2+1), x, 0, 1)\n     log(2)/2\n```\n\n\nas in SAGE currently, to be close to Mathematica. Because then you can\nuse the syntax:\n\nintegrate(cos(x*y), (x, -pi/2, pi/2), (y, 0, pi))\n\nfor multiple integrals.\n\nSee also [1], how we discussed this in SymPy.\n\n[1] http://code.google.com/p/sympy/issues/detail?id=25\n\nIssue created by migration from https://trac.sagemath.org/ticket/1221\n\n",
     "created_at": "2007-11-20T22:22:35Z",
     "labels": [
         "algebraic geometry",
@@ -14,12 +14,12 @@ archive/issues_001221.json:
     "title": "Use Mathematica syntax for integration",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1221",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jason
+CC:  @jasongrout
 
 I think we should use this syntax for integration:
 
@@ -68,7 +68,7 @@ archive/issue_comments_007592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1221",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1221#issuecomment-7592",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_007593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1221",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1221#issuecomment-7593",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_007594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1221",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1221#issuecomment-7594",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -271,16 +271,16 @@ Changing component from algebraic geometry to calculus.
 archive/issue_comments_007595.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-12-06T21:10:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1221",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1221#issuecomment-7595",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -294,7 +294,7 @@ archive/issue_comments_007596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1221",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1221#issuecomment-7596",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -334,7 +334,7 @@ archive/issue_comments_007598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1221",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1221#issuecomment-7598",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -358,7 +358,7 @@ archive/issue_comments_007599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1221",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1221#issuecomment-7599",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -376,7 +376,7 @@ archive/issue_comments_007600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1221",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1221#issuecomment-7600",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -422,7 +422,7 @@ archive/issue_comments_007601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1221",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1221#issuecomment-7601",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -440,7 +440,7 @@ archive/issue_comments_007602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1221",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1221#issuecomment-7602",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -458,7 +458,7 @@ archive/issue_comments_007603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1221",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1221#issuecomment-7603",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -476,7 +476,7 @@ archive/issue_comments_007604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1221",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1221#issuecomment-7604",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

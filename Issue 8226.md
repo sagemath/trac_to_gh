@@ -3,7 +3,7 @@
 archive/issues_008226.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nKeywords: elementary divisors\n\nOver maximal orders O in number fields K the elementary divisors provide a complete system of invariants for in matrices GL_n(K). Here the elementary divisors are the ideals e_i = d_i / d_{i-1} where d_i are the determinantal divisors. This patch provides the possibility to compute these elementary divisors.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8226\n\n",
+    "body": "Assignee: @loefflerd\n\nKeywords: elementary divisors\n\nOver maximal orders O in number fields K the elementary divisors provide a complete system of invariants for in matrices GL_n(K). Here the elementary divisors are the ideals e_i = d_i / d_{i-1} where d_i are the determinantal divisors. This patch provides the possibility to compute these elementary divisors.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8226\n\n",
     "created_at": "2010-02-10T08:48:32Z",
     "labels": [
         "number fields",
@@ -17,7 +17,7 @@ archive/issues_008226.json:
     "user": "mraum"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
 Keywords: elementary divisors
 
@@ -75,7 +75,7 @@ archive/issue_comments_072637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8226",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8226#issuecomment-72637",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_072638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8226",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8226#issuecomment-72638",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_072640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8226",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8226#issuecomment-72640",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 

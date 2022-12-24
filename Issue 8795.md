@@ -3,7 +3,7 @@
 archive/issues_008795.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  rws\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8795\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @rwst\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8795\n\n",
     "created_at": "2010-04-28T06:52:28Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_008795.json:
 ```
 Assignee: mvngu
 
-CC:  rws
+CC:  @rwst
 
 As the subject says.
 
@@ -39,7 +39,7 @@ archive/issue_comments_080564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8795#issuecomment-80564",
-    "user": "knsam"
+    "user": "@KPanComputes"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_080565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8795#issuecomment-80565",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_080566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8795#issuecomment-80566",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_080567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8795#issuecomment-80567",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_080568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8795#issuecomment-80568",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_080569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8795#issuecomment-80569",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

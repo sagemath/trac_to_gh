@@ -3,7 +3,7 @@
 archive/issues_006059.json:
 ```json
 {
-    "body": "Assignee: tornaria\n\nCC:  cremona\n\nKeywords: regression\n\nThe following hilbert symbol computation\n\n```\nsage: a=(next_prime(10**22)*next_prime(10**23))\nsage: time hilbert_symbol(a,-1,2)\nCPU times: user 0.62 s, sys: 0.06 s, total: 0.68 s\nWall time: 0.68 s\n1\n```\n\nused to be almost instant before the patch in #5834 (in 4.0.alpha0).\n\nThe patch extends hilbert_symbol to work with rationals, by using the `squarefree_part()` function. However, that function needs to factor. Fortunately, we don't need the actual squarefree part to compute the hilbert symbol, rather we could use `numerator()*denominator()` to achieve the same result; the hilbert symbol can thus be computed without factoring.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6059\n\n",
+    "body": "Assignee: @tornaria\n\nCC:  @JohnCremona\n\nKeywords: regression\n\nThe following hilbert symbol computation\n\n```\nsage: a=(next_prime(10**22)*next_prime(10**23))\nsage: time hilbert_symbol(a,-1,2)\nCPU times: user 0.62 s, sys: 0.06 s, total: 0.68 s\nWall time: 0.68 s\n1\n```\n\nused to be almost instant before the patch in #5834 (in 4.0.alpha0).\n\nThe patch extends hilbert_symbol to work with rationals, by using the `squarefree_part()` function. However, that function needs to factor. Fortunately, we don't need the actual squarefree part to compute the hilbert symbol, rather we could use `numerator()*denominator()` to achieve the same result; the hilbert symbol can thus be computed without factoring.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6059\n\n",
     "created_at": "2009-05-17T22:54:54Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_006059.json:
     "title": "speed regresion in hilbert_symbol after #5834",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6059",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
-Assignee: tornaria
+Assignee: @tornaria
 
-CC:  cremona
+CC:  @JohnCremona
 
 Keywords: regression
 
@@ -54,7 +54,7 @@ archive/issue_comments_048240.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6059",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6059#issuecomment-48240",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -67,16 +67,16 @@ Since this fixes a speed regression, and the patch is really simple, I think it'
 archive/issue_comments_048241.json:
 ```json
 {
-    "body": "Attachment [trac_6059.patch](tarball://root/attachments/some-uuid/ticket6059/trac_6059.patch) by tornaria created at 2009-05-18 03:15:14\n\nFix speed regression in hilbert_symbol (revised)",
+    "body": "Attachment [trac_6059.patch](tarball://root/attachments/some-uuid/ticket6059/trac_6059.patch) by @tornaria created at 2009-05-18 03:15:14\n\nFix speed regression in hilbert_symbol (revised)",
     "created_at": "2009-05-18T03:15:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6059",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6059#issuecomment-48241",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
-Attachment [trac_6059.patch](tarball://root/attachments/some-uuid/ticket6059/trac_6059.patch) by tornaria created at 2009-05-18 03:15:14
+Attachment [trac_6059.patch](tarball://root/attachments/some-uuid/ticket6059/trac_6059.patch) by @tornaria created at 2009-05-18 03:15:14
 
 Fix speed regression in hilbert_symbol (revised)
 
@@ -92,7 +92,7 @@ archive/issue_comments_048242.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6059",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6059#issuecomment-48242",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_048243.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6059",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6059#issuecomment-48243",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

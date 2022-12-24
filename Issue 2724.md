@@ -3,7 +3,7 @@
 archive/issues_002724.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nIn the following:\n\n\n```\nsage: g=graphs.PetersenGraph()\nsage: g.show3d()\n```\n\n\nthe edges look messed up (some are darker and some are lighter and it changes as you rotate the graph).  Putting aspect_ratio=[1,1,1] fixes the problem:\n\n\n```\nsage: g=graphs.PetersenGraph()\nsage: g.show3d(aspect_ratio=[1,1,1])\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2724\n\n",
+    "body": "Assignee: @rlmill\n\nIn the following:\n\n\n```\nsage: g=graphs.PetersenGraph()\nsage: g.show3d()\n```\n\n\nthe edges look messed up (some are darker and some are lighter and it changes as you rotate the graph).  Putting aspect_ratio=[1,1,1] fixes the problem:\n\n\n```\nsage: g=graphs.PetersenGraph()\nsage: g.show3d(aspect_ratio=[1,1,1])\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2724\n\n",
     "created_at": "2008-03-29T19:37:19Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_002724.json:
     "title": "Graph.show3D should have default aspect ratio of [1,1,1]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2724",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 In the following:
 
@@ -76,7 +76,7 @@ archive/issue_comments_018772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2724#issuecomment-18772",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_018773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2724#issuecomment-18773",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_018774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2724#issuecomment-18774",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

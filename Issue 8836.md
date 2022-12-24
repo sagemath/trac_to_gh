@@ -14,7 +14,7 @@ archive/issues_008836.json:
     "title": "sagenb doctest issue discovered on t2.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8836",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jason, was
@@ -109,7 +109,7 @@ archive/issue_comments_081246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8836#issuecomment-81246",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -122,16 +122,16 @@ Changing status from new to needs_review.
 archive/issue_comments_081247.json:
 ```json
 {
-    "body": "Attachment [trac_8836.patch](tarball://root/attachments/some-uuid/ticket8836/trac_8836.patch) by mhansen created at 2010-05-01 06:42:06",
+    "body": "Attachment [trac_8836.patch](tarball://root/attachments/some-uuid/ticket8836/trac_8836.patch) by @mwhansen created at 2010-05-01 06:42:06",
     "created_at": "2010-05-01T06:42:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8836#issuecomment-81247",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_8836.patch](tarball://root/attachments/some-uuid/ticket8836/trac_8836.patch) by mhansen created at 2010-05-01 06:42:06
+Attachment [trac_8836.patch](tarball://root/attachments/some-uuid/ticket8836/trac_8836.patch) by @mwhansen created at 2010-05-01 06:42:06
 
 
 
@@ -145,7 +145,7 @@ archive/issue_comments_081248.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8836#issuecomment-81248",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

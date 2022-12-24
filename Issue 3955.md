@@ -14,7 +14,7 @@ archive/issues_003955.json:
     "title": "make find_minimum_on_interval use _fast_float_",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3955",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -67,7 +67,7 @@ archive/issue_comments_028388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28388",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -80,16 +80,16 @@ Changing component from algebra to calculus.
 archive/issue_comments_028389.json:
 ```json
 {
-    "body": "Changing assignee from tbd to burcin.",
+    "body": "Changing assignee from tbd to @burcin.",
     "created_at": "2008-08-26T09:12:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28389",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from tbd to burcin.
+Changing assignee from tbd to @burcin.
 
 
 
@@ -103,7 +103,7 @@ archive/issue_comments_028390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28390",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_028391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28391",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_028392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28392",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_028393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28393",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_028394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28394",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_028397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28397",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_028399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28399",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -329,16 +329,16 @@ Ah, forgot about that. Thanks for reminder, done now.
 archive/issue_comments_028401.json:
 ```json
 {
-    "body": "Attachment [trac3955-find_local_maximum-ff.2.patch](tarball://root/attachments/some-uuid/ticket3955/trac3955-find_local_maximum-ff.2.patch) by tkluck created at 2012-12-23 20:59:24\n\nrebased on v5.4",
+    "body": "Attachment [trac3955-find_local_maximum-ff.2.patch](tarball://root/attachments/some-uuid/ticket3955/trac3955-find_local_maximum-ff.2.patch) by @tkluck created at 2012-12-23 20:59:24\n\nrebased on v5.4",
     "created_at": "2012-12-23T20:59:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28401",
-    "user": "tkluck"
+    "user": "@tkluck"
 }
 ```
 
-Attachment [trac3955-find_local_maximum-ff.2.patch](tarball://root/attachments/some-uuid/ticket3955/trac3955-find_local_maximum-ff.2.patch) by tkluck created at 2012-12-23 20:59:24
+Attachment [trac3955-find_local_maximum-ff.2.patch](tarball://root/attachments/some-uuid/ticket3955/trac3955-find_local_maximum-ff.2.patch) by @tkluck created at 2012-12-23 20:59:24
 
 rebased on v5.4
 
@@ -354,7 +354,7 @@ archive/issue_comments_028402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28402",
-    "user": "tkluck"
+    "user": "@tkluck"
 }
 ```
 
@@ -374,7 +374,7 @@ archive/issue_comments_028403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28403",
-    "user": "tkluck"
+    "user": "@tkluck"
 }
 ```
 
@@ -392,7 +392,7 @@ archive/issue_comments_028404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28404",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -410,7 +410,7 @@ archive/issue_comments_028405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28405",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -430,7 +430,7 @@ archive/issue_comments_028406.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28406",
-    "user": "tkluck"
+    "user": "@tkluck"
 }
 ```
 
@@ -456,7 +456,7 @@ archive/issue_comments_028407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28407",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -474,7 +474,7 @@ archive/issue_comments_028408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28408",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -492,7 +492,7 @@ archive/issue_comments_028409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28409",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

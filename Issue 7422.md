@@ -3,7 +3,7 @@
 archive/issues_007422.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  rbeezer wdj\n\nKeywords: Block Design, Incidence Structure, Residual, Derived, Complement, Supplement, Point Deletion\n\nI have added two references; fixed the points() method to return points in lexicographic order so __eq__ works properly; made is_simple() its own standalone method and call it from block_design_checker and added the following constructions: Derived at a Point, Residual at a Point, Derived at a Block, Residual at a Block, Complementary, Supplementary, Point Deletion and Extraction of Blocks by size.\n\nSome relevant discussion is here:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/305158ab5d3181bc\n\nReviewers:\n\n- Please think about my first item on the TODO list; is that a better way to proceed with derived_blck and residual_blck?\n\n-I do not know whether this is \"Minor\" or \"Major\" (I am pretty sure it is not the others) so I have put \"Major\".  Please tell me if I was wrong.\n\n- I have no idea what to put in Milestone so I have left it blank.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7422\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @rbeezer @wdjoyner\n\nKeywords: Block Design, Incidence Structure, Residual, Derived, Complement, Supplement, Point Deletion\n\nI have added two references; fixed the points() method to return points in lexicographic order so __eq__ works properly; made is_simple() its own standalone method and call it from block_design_checker and added the following constructions: Derived at a Point, Residual at a Point, Derived at a Block, Residual at a Block, Complementary, Supplementary, Point Deletion and Extraction of Blocks by size.\n\nSome relevant discussion is here:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/305158ab5d3181bc\n\nReviewers:\n\n- Please think about my first item on the TODO list; is that a better way to proceed with derived_blck and residual_blck?\n\n-I do not know whether this is \"Minor\" or \"Major\" (I am pretty sure it is not the others) so I have put \"Major\".  Please tell me if I was wrong.\n\n- I have no idea what to put in Milestone so I have left it blank.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7422\n\n",
     "created_at": "2009-11-10T02:09:23Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_007422.json:
     "title": "New Incidence Structure and Block Design constructions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7422",
-    "user": "brett"
+    "user": "@brettpim"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
-CC:  rbeezer wdj
+CC:  @rbeezer @wdjoyner
 
 Keywords: Block Design, Incidence Structure, Residual, Derived, Complement, Supplement, Point Deletion
 
@@ -53,7 +53,7 @@ archive/issue_comments_062462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7422#issuecomment-62462",
-    "user": "brett"
+    "user": "@brettpim"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_062463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7422#issuecomment-62463",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_062464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7422#issuecomment-62464",
-    "user": "brett"
+    "user": "@brettpim"
 }
 ```
 
@@ -106,16 +106,16 @@ OK, I will make this change, thanks.
 archive/issue_comments_062465.json:
 ```json
 {
-    "body": "Attachment [trac_7422_block_design_constructions.patch](tarball://root/attachments/some-uuid/ticket7422/trac_7422_block_design_constructions.patch) by brett created at 2009-11-14 18:42:17\n\nPatch with new constructions",
+    "body": "Attachment [trac_7422_block_design_constructions.patch](tarball://root/attachments/some-uuid/ticket7422/trac_7422_block_design_constructions.patch) by @brettpim created at 2009-11-14 18:42:17\n\nPatch with new constructions",
     "created_at": "2009-11-14T18:42:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7422#issuecomment-62465",
-    "user": "brett"
+    "user": "@brettpim"
 }
 ```
 
-Attachment [trac_7422_block_design_constructions.patch](tarball://root/attachments/some-uuid/ticket7422/trac_7422_block_design_constructions.patch) by brett created at 2009-11-14 18:42:17
+Attachment [trac_7422_block_design_constructions.patch](tarball://root/attachments/some-uuid/ticket7422/trac_7422_block_design_constructions.patch) by @brettpim created at 2009-11-14 18:42:17
 
 Patch with new constructions
 
@@ -131,7 +131,7 @@ archive/issue_comments_062466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7422#issuecomment-62466",
-    "user": "brett"
+    "user": "@brettpim"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_062467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7422#issuecomment-62467",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -180,7 +180,7 @@ I don't know where this is documented, but there probably is a mailing list mess
 archive/issue_comments_062468.json:
 ```json
 {
-    "body": "Remove assignee mhansen.",
+    "body": "Remove assignee @mwhansen.",
     "created_at": "2010-02-21T23:39:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7422",
     "type": "issue_comment",
@@ -189,7 +189,7 @@ archive/issue_comments_062468.json:
 }
 ```
 
-Remove assignee mhansen.
+Remove assignee @mwhansen.
 
 
 
@@ -233,7 +233,7 @@ archive/issue_comments_062470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7422#issuecomment-62470",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_062471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7422#issuecomment-62471",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -272,16 +272,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_062472.json:
 ```json
 {
-    "body": "Set assignee to brett.",
+    "body": "Set assignee to @brettpim.",
     "created_at": "2015-03-10T02:33:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7422#issuecomment-62472",
-    "user": "brett"
+    "user": "@brettpim"
 }
 ```
 
-Set assignee to brett.
+Set assignee to @brettpim.
 
 
 
@@ -295,7 +295,7 @@ archive/issue_comments_062473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7422#issuecomment-62473",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_062474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7422#issuecomment-62474",
-    "user": "brett"
+    "user": "@brettpim"
 }
 ```
 
@@ -335,7 +335,7 @@ archive/issue_comments_062475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7422#issuecomment-62475",
-    "user": "brett"
+    "user": "@brettpim"
 }
 ```
 
@@ -353,7 +353,7 @@ archive/issue_comments_062476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7422#issuecomment-62476",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -371,7 +371,7 @@ archive/issue_comments_062477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7422#issuecomment-62477",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -389,7 +389,7 @@ archive/issue_comments_062478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7422#issuecomment-62478",
-    "user": "brett"
+    "user": "@brettpim"
 }
 ```
 

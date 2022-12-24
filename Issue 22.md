@@ -14,7 +14,7 @@ archive/issues_000022.json:
     "title": "32/64/32-bit building switch",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/22",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -38,7 +38,7 @@ archive/issue_comments_000163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/22",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/22#issuecomment-163",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_000164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/22",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/22#issuecomment-164",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -123,16 +123,16 @@ Changing status from new to assigned.
 archive/issue_comments_000167.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to gfurnish.",
+    "body": "Changing assignee from mabshoff to @garyfurnish.",
     "created_at": "2008-03-21T23:52:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/22",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/22#issuecomment-167",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from mabshoff to gfurnish.
+Changing assignee from mabshoff to @garyfurnish.
 
 
 
@@ -146,7 +146,7 @@ archive/issue_comments_000168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/22",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/22#issuecomment-168",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_000169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/22",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/22#issuecomment-169",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_000170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/22",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/22#issuecomment-170",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_000171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/22",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/22#issuecomment-171",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -249,7 +249,7 @@ Changing status from assigned to new.
 archive/issue_comments_000174.json:
 ```json
 {
-    "body": "Changing assignee from gfurnish to mabshoff.",
+    "body": "Changing assignee from @garyfurnish to mabshoff.",
     "created_at": "2009-01-16T17:30:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/22",
     "type": "issue_comment",
@@ -258,7 +258,7 @@ archive/issue_comments_000174.json:
 }
 ```
 
-Changing assignee from gfurnish to mabshoff.
+Changing assignee from @garyfurnish to mabshoff.
 
 
 
@@ -381,7 +381,7 @@ archive/issue_comments_000179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/22",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/22#issuecomment-179",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

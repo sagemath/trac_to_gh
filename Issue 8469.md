@@ -3,7 +3,7 @@
 archive/issues_008469.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  malb\n\nKeywords: RSA, public-key cryptosystem\n\nAdd the document [Number Theory and the RSA Public Key Cryptosystem](http://sites.google.com/site/nguyenminh2/numtheory-crypto-sage.pdf) to the documentation category \"Sage HOWTOs\". The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8469\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @malb\n\nKeywords: RSA, public-key cryptosystem\n\nAdd the document [Number Theory and the RSA Public Key Cryptosystem](http://sites.google.com/site/nguyenminh2/numtheory-crypto-sage.pdf) to the documentation category \"Sage HOWTOs\". The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8469\n\n",
     "created_at": "2010-03-07T02:25:47Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_008469.json:
 ```
 Assignee: mvngu
 
-CC:  malb
+CC:  @malb
 
 Keywords: RSA, public-key cryptosystem
 
@@ -290,7 +290,7 @@ archive/issue_comments_076282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8469#issuecomment-76282",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_076285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8469#issuecomment-76285",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_076286.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8469#issuecomment-76286",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -401,16 +401,16 @@ Changing status from needs_work to needs_info.
 archive/issue_comments_076287.json:
 ```json
 {
-    "body": "Attachment [trac_8469-rsa-rebase.patch](tarball://root/attachments/some-uuid/ticket8469/trac_8469-rsa-rebase.patch) by rbeezer created at 2011-08-23 17:52:45",
+    "body": "Attachment [trac_8469-rsa-rebase.patch](tarball://root/attachments/some-uuid/ticket8469/trac_8469-rsa-rebase.patch) by @rbeezer created at 2011-08-23 17:52:45",
     "created_at": "2011-08-23T17:52:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8469#issuecomment-76287",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_8469-rsa-rebase.patch](tarball://root/attachments/some-uuid/ticket8469/trac_8469-rsa-rebase.patch) by rbeezer created at 2011-08-23 17:52:45
+Attachment [trac_8469-rsa-rebase.patch](tarball://root/attachments/some-uuid/ticket8469/trac_8469-rsa-rebase.patch) by @rbeezer created at 2011-08-23 17:52:45
 
 
 
@@ -419,16 +419,16 @@ Attachment [trac_8469-rsa-rebase.patch](tarball://root/attachments/some-uuid/tic
 archive/issue_comments_076288.json:
 ```json
 {
-    "body": "Attachment [trac_8469-rsa-bibliography.patch](tarball://root/attachments/some-uuid/ticket8469/trac_8469-rsa-bibliography.patch) by rbeezer created at 2011-08-23 17:52:56",
+    "body": "Attachment [trac_8469-rsa-bibliography.patch](tarball://root/attachments/some-uuid/ticket8469/trac_8469-rsa-bibliography.patch) by @rbeezer created at 2011-08-23 17:52:56",
     "created_at": "2011-08-23T17:52:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8469#issuecomment-76288",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_8469-rsa-bibliography.patch](tarball://root/attachments/some-uuid/ticket8469/trac_8469-rsa-bibliography.patch) by rbeezer created at 2011-08-23 17:52:56
+Attachment [trac_8469-rsa-bibliography.patch](tarball://root/attachments/some-uuid/ticket8469/trac_8469-rsa-bibliography.patch) by @rbeezer created at 2011-08-23 17:52:56
 
 
 
@@ -442,7 +442,7 @@ archive/issue_comments_076289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8469#issuecomment-76289",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -460,7 +460,7 @@ archive/issue_comments_076290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8469#issuecomment-76290",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -482,7 +482,7 @@ archive/issue_comments_076291.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8469#issuecomment-76291",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -500,7 +500,7 @@ archive/issue_comments_076292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8469#issuecomment-76292",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -518,7 +518,7 @@ archive/issue_comments_076293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8469#issuecomment-76293",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -536,7 +536,7 @@ archive/issue_comments_076294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8469#issuecomment-76294",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 

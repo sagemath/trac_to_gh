@@ -3,7 +3,7 @@
 archive/issues_002480.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  ncalexan robertwb mhansen\n\nKeywords: number field order arguments\n\n\n```\nsage: y = ZZ['y'].0; K = NumberField(y^4 + 4*y^2 + 2, 'a'); K\nNumber Field in a with defining polynomial y^4 + 4*y^2 + 2\nsage: B = K.integral_basis()\nsage: B\n[1, a, a^2, a^3]\nsage: K.order(B)\nOrder in Number Field in a with defining polynomial y^4 + 4*y^2 + 2\nsage: K.order(gens=B)\n+Infinity\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2480\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ncalexan @robertwb @mwhansen\n\nKeywords: number field order arguments\n\n\n```\nsage: y = ZZ['y'].0; K = NumberField(y^4 + 4*y^2 + 2, 'a'); K\nNumber Field in a with defining polynomial y^4 + 4*y^2 + 2\nsage: B = K.integral_basis()\nsage: B\n[1, a, a^2, a^3]\nsage: K.order(B)\nOrder in Number Field in a with defining polynomial y^4 + 4*y^2 + 2\nsage: K.order(gens=B)\n+Infinity\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2480\n\n",
     "created_at": "2008-03-12T03:19:59Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_002480.json:
     "title": "problem parsing arguments to NumberField.order()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2480",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  ncalexan robertwb mhansen
+CC:  @ncalexan @robertwb @mwhansen
 
 Keywords: number field order arguments
 
@@ -48,16 +48,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2480
 archive/issue_comments_016806.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-07-20T19:57:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2480#issuecomment-16806",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 
@@ -71,7 +71,7 @@ archive/issue_comments_016807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2480#issuecomment-16807",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_016808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2480#issuecomment-16808",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_016809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2480#issuecomment-16809",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_016810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2480#issuecomment-16810",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_016811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2480#issuecomment-16811",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_016812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2480#issuecomment-16812",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -190,16 +190,16 @@ gens = kwds.pop('gens', args)
 archive/issue_comments_016813.json:
 ```json
 {
-    "body": "Attachment [trac_2480.patch](tarball://root/attachments/some-uuid/ticket2480/trac_2480.patch) by craigcitro created at 2010-01-20 07:07:39\n\nNice. New patch with Mike's suggestion incorporated posted.",
+    "body": "Attachment [trac_2480.patch](tarball://root/attachments/some-uuid/ticket2480/trac_2480.patch) by @craigcitro created at 2010-01-20 07:07:39\n\nNice. New patch with Mike's suggestion incorporated posted.",
     "created_at": "2010-01-20T07:07:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2480#issuecomment-16813",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac_2480.patch](tarball://root/attachments/some-uuid/ticket2480/trac_2480.patch) by craigcitro created at 2010-01-20 07:07:39
+Attachment [trac_2480.patch](tarball://root/attachments/some-uuid/ticket2480/trac_2480.patch) by @craigcitro created at 2010-01-20 07:07:39
 
 Nice. New patch with Mike's suggestion incorporated posted.
 
@@ -215,7 +215,7 @@ archive/issue_comments_016814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2480#issuecomment-16814",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008604.json:
 ```json
 {
-    "body": "Assignee: slabbe\n\nCC:  abmasse jleroy\n\nAdd a class for factor-enumerable words, i.e. having an algorithm that enumerates the factor of length n which includes finite words and some family of infinite words. The new file gathers methods (e.g. ``rauzy_graph``) that depends only on the existence of such an algorithm.\n\nIt also adds some method about left,right and bi special words:\n\n\n```\n    sage: f = words.FibonacciWord()[:30]\n    sage: f.number_of_left_special_factors(7)\n    8\n```\n\n\nThe new class ``Word_nfactor_enumerable`` inherits from the abstract ``Word_class`` and `FiniteWord_class` now inherits from this ``Word_nfactor_enumerable`` class. Later, inifinite words having a such an algorithm will inherit also from this new class (in some other ticket).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8604\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  abmasse jleroy\n\nAdd a class for factor-enumerable words, i.e. having an algorithm that enumerates the factor of length n which includes finite words and some family of infinite words. The new file gathers methods (e.g. ``rauzy_graph``) that depends only on the existence of such an algorithm.\n\nIt also adds some method about left,right and bi special words:\n\n\n```\n    sage: f = words.FibonacciWord()[:30]\n    sage: f.number_of_left_special_factors(7)\n    8\n```\n\n\nThe new class ``Word_nfactor_enumerable`` inherits from the abstract ``Word_class`` and `FiniteWord_class` now inherits from this ``Word_nfactor_enumerable`` class. Later, inifinite words having a such an algorithm will inherit also from this new class (in some other ticket).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8604\n\n",
     "created_at": "2010-03-25T12:00:26Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_008604.json:
     "title": "Add a class for factor-enumerable words",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8604",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: slabbe
+Assignee: @seblabbe
 
 CC:  abmasse jleroy
 
@@ -51,7 +51,7 @@ archive/issue_comments_077940.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8604#issuecomment-77940",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_077943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8604#issuecomment-77943",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -143,16 +143,16 @@ Sébastien
 archive/issue_comments_077944.json:
 ```json
 {
-    "body": "Attachment [trac_8604_nfactor_enumerable-sl.patch](tarball://root/attachments/some-uuid/ticket8604/trac_8604_nfactor_enumerable-sl.patch) by slabbe created at 2010-04-13 18:25:59\n\nDepends on #8429.",
+    "body": "Attachment [trac_8604_nfactor_enumerable-sl.patch](tarball://root/attachments/some-uuid/ticket8604/trac_8604_nfactor_enumerable-sl.patch) by @seblabbe created at 2010-04-13 18:25:59\n\nDepends on #8429.",
     "created_at": "2010-04-13T18:25:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8604#issuecomment-77944",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8604_nfactor_enumerable-sl.patch](tarball://root/attachments/some-uuid/ticket8604/trac_8604_nfactor_enumerable-sl.patch) by slabbe created at 2010-04-13 18:25:59
+Attachment [trac_8604_nfactor_enumerable-sl.patch](tarball://root/attachments/some-uuid/ticket8604/trac_8604_nfactor_enumerable-sl.patch) by @seblabbe created at 2010-04-13 18:25:59
 
 Depends on #8429.
 
@@ -168,7 +168,7 @@ archive/issue_comments_077945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8604#issuecomment-77945",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -248,16 +248,16 @@ I say yes! I know one of your argument about that was that it would reduce the n
 archive/issue_comments_077948.json:
 ```json
 {
-    "body": "Attachment [trac_8604-corrections-sl.patch](tarball://root/attachments/some-uuid/ticket8604/trac_8604-corrections-sl.patch) by slabbe created at 2010-04-18 19:28:21\n\nApplies over the precedent patch",
+    "body": "Attachment [trac_8604-corrections-sl.patch](tarball://root/attachments/some-uuid/ticket8604/trac_8604-corrections-sl.patch) by @seblabbe created at 2010-04-18 19:28:21\n\nApplies over the precedent patch",
     "created_at": "2010-04-18T19:28:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8604#issuecomment-77948",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8604-corrections-sl.patch](tarball://root/attachments/some-uuid/ticket8604/trac_8604-corrections-sl.patch) by slabbe created at 2010-04-18 19:28:21
+Attachment [trac_8604-corrections-sl.patch](tarball://root/attachments/some-uuid/ticket8604/trac_8604-corrections-sl.patch) by @seblabbe created at 2010-04-18 19:28:21
 
 Applies over the precedent patch
 
@@ -273,7 +273,7 @@ archive/issue_comments_077949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8604#issuecomment-77949",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_077950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8604#issuecomment-77950",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -368,7 +368,7 @@ archive/issue_comments_077954.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8604#issuecomment-77954",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -386,7 +386,7 @@ archive/issue_comments_077955.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8604#issuecomment-77955",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

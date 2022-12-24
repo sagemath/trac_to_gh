@@ -3,7 +3,7 @@
 archive/issues_008208.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  timdumol acleone was\n\nFollow-up to #7786.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8208\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @TimDumol acleone @williamstein\n\nFollow-up to #7786.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8208\n\n",
     "created_at": "2010-02-07T16:20:18Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_008208.json:
     "title": "Click \"No\" actually publishes a worksheet in SageNB 0.7.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8208",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  timdumol acleone was
+CC:  @TimDumol acleone @williamstein
 
 Follow-up to #7786.
 
@@ -39,7 +39,7 @@ archive/issue_comments_072383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72383",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_072384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72384",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -70,16 +70,16 @@ Changing status from new to needs_review.
 archive/issue_comments_072385.json:
 ```json
 {
-    "body": "Attachment [trac_8208-publish_buttons.patch](tarball://root/attachments/some-uuid/ticket8208/trac_8208-publish_buttons.patch) by mpatel created at 2010-02-07 16:22:37",
+    "body": "Attachment [trac_8208-publish_buttons.patch](tarball://root/attachments/some-uuid/ticket8208/trac_8208-publish_buttons.patch) by @qed777 created at 2010-02-07 16:22:37",
     "created_at": "2010-02-07T16:22:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72385",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8208-publish_buttons.patch](tarball://root/attachments/some-uuid/ticket8208/trac_8208-publish_buttons.patch) by mpatel created at 2010-02-07 16:22:37
+Attachment [trac_8208-publish_buttons.patch](tarball://root/attachments/some-uuid/ticket8208/trac_8208-publish_buttons.patch) by @qed777 created at 2010-02-07 16:22:37
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_072386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72386",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_072387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72387",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_072388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72388",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_072389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72389",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_072390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72390",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -308,7 +308,7 @@ archive/issue_comments_072394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72394",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -326,7 +326,7 @@ archive/issue_comments_072395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72395",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -344,7 +344,7 @@ archive/issue_comments_072396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72396",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

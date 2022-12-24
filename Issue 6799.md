@@ -14,7 +14,7 @@ archive/issues_006799.json:
     "title": "Speed up symbolic comparison",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6799",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 It takes too long to check whether x is in a list in new symbolics
@@ -74,7 +74,7 @@ archive/issue_comments_055991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6799#issuecomment-55991",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_055992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6799#issuecomment-55992",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

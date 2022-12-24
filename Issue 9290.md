@@ -14,7 +14,7 @@ archive/issues_009290.json:
     "title": "Implement Coxeter groups in their geometric representation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9290",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 Assignee: sage-combinat
@@ -39,7 +39,7 @@ archive/issue_comments_087491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9290#issuecomment-87491",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_087492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9290#issuecomment-87492",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_087493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9290#issuecomment-87493",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_087494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9290#issuecomment-87494",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_087495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9290#issuecomment-87495",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_087496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9290#issuecomment-87496",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_087497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9290#issuecomment-87497",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_087498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9290#issuecomment-87498",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_087499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9290#issuecomment-87499",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_087500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9290#issuecomment-87500",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_087501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9290#issuecomment-87501",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_087502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9290#issuecomment-87502",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -313,7 +313,7 @@ archive/issue_comments_087503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9290#issuecomment-87503",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_087504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9290#issuecomment-87504",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -366,7 +366,7 @@ archive/issue_comments_087505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9290#issuecomment-87505",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -379,16 +379,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_087506.json:
 ```json
 {
-    "body": "Attachment [trac_9290-geometric_coxeter_groups-ts.patch](tarball://root/attachments/some-uuid/ticket9290/trac_9290-geometric_coxeter_groups-ts.patch) by tscrim created at 2013-09-23 02:20:41\n\nI made `CoxeterMatrixGroup` lazy import in to fix the numpy startup import.",
+    "body": "Attachment [trac_9290-geometric_coxeter_groups-ts.patch](tarball://root/attachments/some-uuid/ticket9290/trac_9290-geometric_coxeter_groups-ts.patch) by @tscrim created at 2013-09-23 02:20:41\n\nI made `CoxeterMatrixGroup` lazy import in to fix the numpy startup import.",
     "created_at": "2013-09-23T02:20:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9290#issuecomment-87506",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
-Attachment [trac_9290-geometric_coxeter_groups-ts.patch](tarball://root/attachments/some-uuid/ticket9290/trac_9290-geometric_coxeter_groups-ts.patch) by tscrim created at 2013-09-23 02:20:41
+Attachment [trac_9290-geometric_coxeter_groups-ts.patch](tarball://root/attachments/some-uuid/ticket9290/trac_9290-geometric_coxeter_groups-ts.patch) by @tscrim created at 2013-09-23 02:20:41
 
 I made `CoxeterMatrixGroup` lazy import in to fix the numpy startup import.
 
@@ -404,7 +404,7 @@ archive/issue_comments_087507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9290#issuecomment-87507",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -417,16 +417,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_087508.json:
 ```json
 {
-    "body": "Attachment [trac-9290-review.patch](tarball://root/attachments/some-uuid/ticket9290/trac-9290-review.patch) by chapoton created at 2013-10-20 20:29:30",
+    "body": "Attachment [trac-9290-review.patch](tarball://root/attachments/some-uuid/ticket9290/trac-9290-review.patch) by @fchapoton created at 2013-10-20 20:29:30",
     "created_at": "2013-10-20T20:29:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9290#issuecomment-87508",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac-9290-review.patch](tarball://root/attachments/some-uuid/ticket9290/trac-9290-review.patch) by chapoton created at 2013-10-20 20:29:30
+Attachment [trac-9290-review.patch](tarball://root/attachments/some-uuid/ticket9290/trac-9290-review.patch) by @fchapoton created at 2013-10-20 20:29:30
 
 
 
@@ -440,7 +440,7 @@ archive/issue_comments_087509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9290#issuecomment-87509",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -469,7 +469,7 @@ archive/issue_comments_087510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9290#issuecomment-87510",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -489,7 +489,7 @@ archive/issue_comments_087511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9290#issuecomment-87511",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -507,7 +507,7 @@ archive/issue_comments_087512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9290#issuecomment-87512",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -531,7 +531,7 @@ archive/issue_comments_087513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9290#issuecomment-87513",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009734.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  jsp jhpalmieri\n\nAlthough the 32-bit SPARC version of Sage passes all doc tests, there are still issues on 32-bit versions of Solaris/OpenSolaris on x86 hardware. This ticket summaries lists only failures on 32-bit builds, versions on x86 processors. \n\n64-bit versions have far more failures, and will need another ticket to address them. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9734\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jaapspies @jhpalmieri\n\nAlthough the 32-bit SPARC version of Sage passes all doc tests, there are still issues on 32-bit versions of Solaris/OpenSolaris on x86 hardware. This ticket summaries lists only failures on 32-bit builds, versions on x86 processors. \n\n64-bit versions have far more failures, and will need another ticket to address them. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9734\n\n",
     "created_at": "2010-08-12T16:09:46Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_009734.json:
 ```
 Assignee: drkirkby
 
-CC:  jsp jhpalmieri
+CC:  @jaapspies @jhpalmieri
 
 Although the 32-bit SPARC version of Sage passes all doc tests, there are still issues on 32-bit versions of Solaris/OpenSolaris on x86 hardware. This ticket summaries lists only failures on 32-bit builds, versions on x86 processors. 
 
@@ -62,7 +62,7 @@ archive/issue_comments_095187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9734",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9734#issuecomment-95187",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_095188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9734",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9734#issuecomment-95188",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_095189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9734",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9734#issuecomment-95189",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_095190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9734",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9734#issuecomment-95190",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

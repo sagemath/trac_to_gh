@@ -3,7 +3,7 @@
 archive/issues_005426.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5426\n\n",
+    "body": "Assignee: @robertwb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5426\n\n",
     "created_at": "2009-03-03T09:24:17Z",
     "labels": [
         "coercion",
@@ -14,10 +14,10 @@ archive/issues_005426.json:
     "title": "Move finite fields to new coercion model",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5426",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_041984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5426#issuecomment-41984",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_041985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5426#issuecomment-41985",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_041986.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5426#issuecomment-41986",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_041987.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5426#issuecomment-41987",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

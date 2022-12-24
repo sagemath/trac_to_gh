@@ -3,7 +3,7 @@
 archive/issues_000867.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/867\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/867\n\n",
     "created_at": "2007-10-12T23:18:36Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_000867.json:
     "title": "[with patch] support for rook monoid and planar rook monoid (as well as their diagram/partition algebras)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/867",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/867
 archive/issue_comments_005356.json:
 ```json
 {
-    "body": "Attachment [6504.patch](tarball://root/attachments/some-uuid/ticket867/6504.patch) by mhansen created at 2007-10-12 23:18:49",
+    "body": "Attachment [6504.patch](tarball://root/attachments/some-uuid/ticket867/6504.patch) by @mwhansen created at 2007-10-12 23:18:49",
     "created_at": "2007-10-12T23:18:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/867#issuecomment-5356",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [6504.patch](tarball://root/attachments/some-uuid/ticket867/6504.patch) by mhansen created at 2007-10-12 23:18:49
+Attachment [6504.patch](tarball://root/attachments/some-uuid/ticket867/6504.patch) by @mwhansen created at 2007-10-12 23:18:49
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_005357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/867#issuecomment-5357",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_005358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/867#issuecomment-5358",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

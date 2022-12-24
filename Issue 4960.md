@@ -3,7 +3,7 @@
 archive/issues_004960.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  was mhansen\n\n\n```\nHello,\n\nI'm running my server with account creation disabled and when I want\nto add a user I restart it briefly with notebook(...,accounts=true)\n\nStage 1:\nI through the \"create a new account\" procedure without trying the\nnewly created user then immediately restarts the server with accounts\ndisabled (as I don't want to run too much with account creation open)\nI try to log in -> the user \"doesn't exist\".\n\nStage 2:\nI restart the server accounts=true, create the user and log in a first\ntime with the newly created account, then logout and restart the\nserver with accounts creation disabled.\nSame error, user doesn't exist anymore.\n\nStage 3:\n- Create account\n- Log in with it\n- Create a new (first) worksheet\n- Logout\n- Restart the server\n- Alleluia the user finally exists and can log in.\n\nApparently existence of the user seems to be linked to the existence\nof a first sheet or at least the user directory under .sage/\nsage_notebook/worksheets/\n\nI would rather expect stage1 to be enough to create a new account,\nmaybe creating the user directory during what is supposed to be the\ninitial user creation would be enough?\n\nPhil\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4960\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein @mwhansen\n\n\n```\nHello,\n\nI'm running my server with account creation disabled and when I want\nto add a user I restart it briefly with notebook(...,accounts=true)\n\nStage 1:\nI through the \"create a new account\" procedure without trying the\nnewly created user then immediately restarts the server with accounts\ndisabled (as I don't want to run too much with account creation open)\nI try to log in -> the user \"doesn't exist\".\n\nStage 2:\nI restart the server accounts=true, create the user and log in a first\ntime with the newly created account, then logout and restart the\nserver with accounts creation disabled.\nSame error, user doesn't exist anymore.\n\nStage 3:\n- Create account\n- Log in with it\n- Create a new (first) worksheet\n- Logout\n- Restart the server\n- Alleluia the user finally exists and can log in.\n\nApparently existence of the user seems to be linked to the existence\nof a first sheet or at least the user directory under .sage/\nsage_notebook/worksheets/\n\nI would rather expect stage1 to be enough to create a new account,\nmaybe creating the user directory during what is supposed to be the\ninitial user creation would be enough?\n\nPhil\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4960\n\n",
     "created_at": "2009-01-09T22:50:11Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_004960.json:
     "title": "issue with user account creation in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4960",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
 
-CC:  was mhansen
+CC:  @williamstein @mwhansen
 
 
 ```
@@ -76,7 +76,7 @@ archive/issue_comments_037703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4960#issuecomment-37703",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_037704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4960#issuecomment-37704",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_037705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4960#issuecomment-37705",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

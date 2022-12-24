@@ -3,7 +3,7 @@
 archive/issues_001777.json:
 ```json
 {
-    "body": "Assignee: was\n\nI noticed a potentially confusing thing in the totally awesome 3d \ngraphics we now have with jmol.\n\nsage: arrow3d((0,0,0),(1,1,1))\n\ndraws a very nice-looking 3d arrow in a bounding cube.  When I \nright-click on the graphic and choose \"View | front\", it swings the \nviewpoint around so that I'm looking at the *top* of the original cube \n(so that I'm looking in the direction of the negative z-axis).  I \nrealize that the standard computer graphics viewpoint has the z-axis \ncoming out of the monitor, so \"front\" is a valid label for this position \nin that sense, but it can be confusing to students who would have said \nthat what is labeled as the \"front\" position is actually showing the top \nof graph.  I imagine that it would be even more confusing to calc 3 \nstudents that the labeled \"top\" position is looking in the negative \ny-axis direction *with the positive z pointing down*.\n\nThe positions and actual viewing directions are thus:\n\n\"front\" = looking down negative z-axis, positive y-axis pointing up\n\"back\" = looking down positive z-axis, positive y-axis pointing up\n\n\"left\" = looking down positive x-axis, positive y-axis pointing up\n\"right\" = looking down negative x-axis, positive y-axis pointing up\n\n\"top\" = looking down negative y-axis, positive z-axis pointing *down*\n\"bottom\" = looking down positive y-axis, positive z-axis pointing up\n\nI think it would be less confusing if the View menu just listed viewing \ndirections instead of assigning a \"up\" and \"down\" metaphor that can \nchange depending on if you are doing math or doing computer science.\n\nJason\n\nIssue created by migration from https://trac.sagemath.org/ticket/1777\n\n",
+    "body": "Assignee: @williamstein\n\nI noticed a potentially confusing thing in the totally awesome 3d \ngraphics we now have with jmol.\n\nsage: arrow3d((0,0,0),(1,1,1))\n\ndraws a very nice-looking 3d arrow in a bounding cube.  When I \nright-click on the graphic and choose \"View | front\", it swings the \nviewpoint around so that I'm looking at the *top* of the original cube \n(so that I'm looking in the direction of the negative z-axis).  I \nrealize that the standard computer graphics viewpoint has the z-axis \ncoming out of the monitor, so \"front\" is a valid label for this position \nin that sense, but it can be confusing to students who would have said \nthat what is labeled as the \"front\" position is actually showing the top \nof graph.  I imagine that it would be even more confusing to calc 3 \nstudents that the labeled \"top\" position is looking in the negative \ny-axis direction *with the positive z pointing down*.\n\nThe positions and actual viewing directions are thus:\n\n\"front\" = looking down negative z-axis, positive y-axis pointing up\n\"back\" = looking down positive z-axis, positive y-axis pointing up\n\n\"left\" = looking down positive x-axis, positive y-axis pointing up\n\"right\" = looking down negative x-axis, positive y-axis pointing up\n\n\"top\" = looking down negative y-axis, positive z-axis pointing *down*\n\"bottom\" = looking down positive y-axis, positive z-axis pointing up\n\nI think it would be less confusing if the View menu just listed viewing \ndirections instead of assigning a \"up\" and \"down\" metaphor that can \nchange depending on if you are doing math or doing computer science.\n\nJason\n\nIssue created by migration from https://trac.sagemath.org/ticket/1777\n\n",
     "created_at": "2008-01-14T17:55:53Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001777.json:
     "title": "jmol up/down metaphor confusing in the \"View\" right-click menu",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1777",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I noticed a potentially confusing thing in the totally awesome 3d 
 graphics we now have with jmol.
@@ -69,7 +69,7 @@ archive/issue_comments_011249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1777#issuecomment-11249",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_011250.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1777#issuecomment-11250",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -100,16 +100,16 @@ Changing status from new to assigned.
 archive/issue_comments_011251.json:
 ```json
 {
-    "body": "Changing assignee from was to jason.",
+    "body": "Changing assignee from @williamstein to @jasongrout.",
     "created_at": "2009-02-14T10:04:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1777#issuecomment-11251",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from was to jason.
+Changing assignee from @williamstein to @jasongrout.
 
 
 

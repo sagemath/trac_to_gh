@@ -14,7 +14,7 @@ archive/issues_000030.json:
     "title": "left multiplication of scalar times vector",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/30",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -71,7 +71,7 @@ archive/issue_comments_000209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/30",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/30#issuecomment-209",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

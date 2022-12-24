@@ -3,7 +3,7 @@
 archive/issues_004784.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nKeywords: reference manual\n\nmissing $ in a docstring screws up reference manual\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4784\n\n",
+    "body": "Assignee: @jhpalmieri\n\nKeywords: reference manual\n\nmissing $ in a docstring screws up reference manual\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4784\n\n",
     "created_at": "2008-12-13T21:04:08Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_004784.json:
     "title": "[with patch, needs review] trivial ref manual fix for 3.2.2.alpha2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4784",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 Keywords: reference manual
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4784
 archive/issue_comments_036269.json:
 ```json
 {
-    "body": "Attachment [4784.patch](tarball://root/attachments/some-uuid/ticket4784/4784.patch) by jhpalmieri created at 2008-12-13 21:04:37",
+    "body": "Attachment [4784.patch](tarball://root/attachments/some-uuid/ticket4784/4784.patch) by @jhpalmieri created at 2008-12-13 21:04:37",
     "created_at": "2008-12-13T21:04:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4784#issuecomment-36269",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [4784.patch](tarball://root/attachments/some-uuid/ticket4784/4784.patch) by jhpalmieri created at 2008-12-13 21:04:37
+Attachment [4784.patch](tarball://root/attachments/some-uuid/ticket4784/4784.patch) by @jhpalmieri created at 2008-12-13 21:04:37
 
 
 

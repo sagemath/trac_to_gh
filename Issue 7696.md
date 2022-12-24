@@ -14,7 +14,7 @@ archive/issues_007696.json:
     "title": "zlib -- source spkg contains precompiled binary crap (.obj files)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7696",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -48,7 +48,7 @@ archive/issue_comments_066031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7696",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7696#issuecomment-66031",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_066032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7696",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7696#issuecomment-66032",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_066033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7696",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7696#issuecomment-66033",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_066034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7696",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7696#issuecomment-66034",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_066035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7696",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7696#issuecomment-66035",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

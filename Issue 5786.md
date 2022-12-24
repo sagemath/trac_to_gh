@@ -3,7 +3,7 @@
 archive/issues_005786.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  was mhansen boothby\n\nIf you print a large amount, but interrupt while the cell is evaluating, then you can't see the middle, because the output is truncated but the link to see it isn't there yet.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5786\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein @mwhansen boothby\n\nIf you print a large amount, but interrupt while the cell is evaluating, then you can't see the middle, because the output is truncated but the link to see it isn't there yet.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5786\n\n",
     "created_at": "2009-04-14T18:47:45Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_005786.json:
     "title": "interrupt makes truncated output --> /dev/null",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5786",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: boothby
 
-CC:  was mhansen boothby
+CC:  @williamstein @mwhansen boothby
 
 If you print a large amount, but interrupt while the cell is evaluating, then you can't see the middle, because the output is truncated but the link to see it isn't there yet.
 
@@ -39,7 +39,7 @@ archive/issue_comments_045289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5786#issuecomment-45289",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_045290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5786#issuecomment-45290",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_045291.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5786#issuecomment-45291",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_045292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5786#issuecomment-45292",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

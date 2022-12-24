@@ -3,7 +3,7 @@
 archive/issues_007595.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nThis wasn't hard to implement, since all the hard work was already done.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7595\n\n",
+    "body": "Assignee: @aghitza\n\nThis wasn't hard to implement, since all the hard work was already done.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7595\n\n",
     "created_at": "2009-12-03T17:27:53Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_007595.json:
     "title": "Chinese Remainder Theorem for polynomials over a field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7595",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 This wasn't hard to implement, since all the hard work was already done.
 
@@ -37,7 +37,7 @@ archive/issue_comments_064762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7595#issuecomment-64762",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_064763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7595#issuecomment-64763",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_064764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7595#issuecomment-64764",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_064765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7595#issuecomment-64765",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_064766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7595#issuecomment-64766",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_064767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7595#issuecomment-64767",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_064768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7595#issuecomment-64768",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_064769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7595#issuecomment-64769",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_064770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7595#issuecomment-64770",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -203,16 +203,16 @@ rebased on 4.3.rc0
 archive/issue_comments_064771.json:
 ```json
 {
-    "body": "Attachment [trac_7595.patch](tarball://root/attachments/some-uuid/ticket7595/trac_7595.patch) by rlm created at 2009-12-15 23:16:31\n\nJust caught a doctest failure in sage/rings/arith.py. Oops!",
+    "body": "Attachment [trac_7595.patch](tarball://root/attachments/some-uuid/ticket7595/trac_7595.patch) by @rlmill created at 2009-12-15 23:16:31\n\nJust caught a doctest failure in sage/rings/arith.py. Oops!",
     "created_at": "2009-12-15T23:16:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7595#issuecomment-64771",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_7595.patch](tarball://root/attachments/some-uuid/ticket7595/trac_7595.patch) by rlm created at 2009-12-15 23:16:31
+Attachment [trac_7595.patch](tarball://root/attachments/some-uuid/ticket7595/trac_7595.patch) by @rlmill created at 2009-12-15 23:16:31
 
 Just caught a doctest failure in sage/rings/arith.py. Oops!
 
@@ -228,7 +228,7 @@ archive/issue_comments_064772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7595#issuecomment-64772",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_064773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7595#issuecomment-64773",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_064774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7595#issuecomment-64774",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_064775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7595#issuecomment-64775",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_064776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7595#issuecomment-64776",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -326,7 +326,7 @@ archive/issue_comments_064777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7595#issuecomment-64777",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -344,7 +344,7 @@ archive/issue_comments_064778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7595#issuecomment-64778",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_064779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7595#issuecomment-64779",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -380,7 +380,7 @@ archive/issue_comments_064780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7595#issuecomment-64780",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -398,7 +398,7 @@ archive/issue_comments_064781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7595#issuecomment-64781",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -474,16 +474,16 @@ Exception raised:
 archive/issue_comments_064782.json:
 ```json
 {
-    "body": "Attachment [trac_7595-failures.patch](tarball://root/attachments/some-uuid/ticket7595/trac_7595-failures.patch) by rlm created at 2010-01-04 15:37:39\n\nShould fix the issues in quadratic_form__ternary_Tornaria.py",
+    "body": "Attachment [trac_7595-failures.patch](tarball://root/attachments/some-uuid/ticket7595/trac_7595-failures.patch) by @rlmill created at 2010-01-04 15:37:39\n\nShould fix the issues in quadratic_form__ternary_Tornaria.py",
     "created_at": "2010-01-04T15:37:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7595#issuecomment-64782",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_7595-failures.patch](tarball://root/attachments/some-uuid/ticket7595/trac_7595-failures.patch) by rlm created at 2010-01-04 15:37:39
+Attachment [trac_7595-failures.patch](tarball://root/attachments/some-uuid/ticket7595/trac_7595-failures.patch) by @rlmill created at 2010-01-04 15:37:39
 
 Should fix the issues in quadratic_form__ternary_Tornaria.py
 
@@ -499,7 +499,7 @@ archive/issue_comments_064783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7595#issuecomment-64783",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -517,7 +517,7 @@ archive/issue_comments_064784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7595#issuecomment-64784",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -535,7 +535,7 @@ archive/issue_comments_064785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7595#issuecomment-64785",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -553,7 +553,7 @@ archive/issue_comments_064786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7595#issuecomment-64786",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -589,7 +589,7 @@ archive/issue_comments_064788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7595#issuecomment-64788",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

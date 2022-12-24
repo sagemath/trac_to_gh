@@ -3,7 +3,7 @@
 archive/issues_002352.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  ncalexan\n\nKeywords: univariate polynomial homogenize\n\nTicket #2349 fixes the multivariate case.  This ticket is for the univariate case.  Some examples (these work after like this AFTER #2349 has been applied):\n\n\n```\nsage: x = Zmod(3)['x'].0; (x^2 + x).homogenize()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/ncalexan/<ipython console> in <module>()\n\n<type 'exceptions.AttributeError'>: 'sage.rings.polynomial.polynomial_modn_dense_ntl.Po' object has no attribute 'homogenize'\nsage: x = PolynomialRing(Zmod(3), 1, 'x').0; (x^2 + x).homogenize()\nx^2 + x*h\nsage: x = GF(3)['x'].0; (x^2 + x).homogenize()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/ncalexan/<ipython console> in <module>()\n\n<type 'exceptions.AttributeError'>: 'sage.rings.polynomial.polynomial_modn_dense_ntl.Po' object has no attribute 'homogenize'\nsage: x = PolynomialRing(GF(3), 1, 'x').0; (x^2 + x).homogenize()\nx^2 + x*h\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2352\n\n",
+    "body": "Assignee: @malb\n\nCC:  @ncalexan\n\nKeywords: univariate polynomial homogenize\n\nTicket #2349 fixes the multivariate case.  This ticket is for the univariate case.  Some examples (these work after like this AFTER #2349 has been applied):\n\n\n```\nsage: x = Zmod(3)['x'].0; (x^2 + x).homogenize()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/ncalexan/<ipython console> in <module>()\n\n<type 'exceptions.AttributeError'>: 'sage.rings.polynomial.polynomial_modn_dense_ntl.Po' object has no attribute 'homogenize'\nsage: x = PolynomialRing(Zmod(3), 1, 'x').0; (x^2 + x).homogenize()\nx^2 + x*h\nsage: x = GF(3)['x'].0; (x^2 + x).homogenize()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/ncalexan/<ipython console> in <module>()\n\n<type 'exceptions.AttributeError'>: 'sage.rings.polynomial.polynomial_modn_dense_ntl.Po' object has no attribute 'homogenize'\nsage: x = PolynomialRing(GF(3), 1, 'x').0; (x^2 + x).homogenize()\nx^2 + x*h\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2352\n\n",
     "created_at": "2008-02-29T08:24:09Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_002352.json:
     "title": "univariate homogenize is not the same as multivariate homogenize",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2352",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  ncalexan
+CC:  @ncalexan
 
 Keywords: univariate polynomial homogenize
 
@@ -64,7 +64,7 @@ archive/issue_comments_015808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2352",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2352#issuecomment-15808",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_015809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2352",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2352#issuecomment-15809",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_015810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2352",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2352#issuecomment-15810",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_015811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2352",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2352#issuecomment-15811",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_015812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2352",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2352#issuecomment-15812",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_015813.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2352",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2352#issuecomment-15813",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_015814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2352",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2352#issuecomment-15814",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_015815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2352",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2352#issuecomment-15815",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_015816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2352",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2352#issuecomment-15816",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_015817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2352",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2352#issuecomment-15817",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

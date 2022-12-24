@@ -3,7 +3,7 @@
 archive/issues_004113.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nI added a doctest in #4091 without realizing that it might differ from architecture to architecture, even though this was the reason for adding it. I've added # random and some explanation. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4113\n\n",
+    "body": "Assignee: @craigcitro\n\nI added a doctest in #4091 without realizing that it might differ from architecture to architecture, even though this was the reason for adding it. I've added # random and some explanation. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4113\n\n",
     "created_at": "2008-09-14T06:29:58Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_004113.json:
     "title": "[with patch, needs review] Doctest failure in free_module.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4113",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 I added a doctest in #4091 without realizing that it might differ from architecture to architecture, even though this was the reason for adding it. I've added # random and some explanation. 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4113
 archive/issue_comments_029785.json:
 ```json
 {
-    "body": "Attachment [trac-4113.patch](tarball://root/attachments/some-uuid/ticket4113/trac-4113.patch) by craigcitro created at 2008-09-14 06:30:13",
+    "body": "Attachment [trac-4113.patch](tarball://root/attachments/some-uuid/ticket4113/trac-4113.patch) by @craigcitro created at 2008-09-14 06:30:13",
     "created_at": "2008-09-14T06:30:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4113#issuecomment-29785",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4113.patch](tarball://root/attachments/some-uuid/ticket4113/trac-4113.patch) by craigcitro created at 2008-09-14 06:30:13
+Attachment [trac-4113.patch](tarball://root/attachments/some-uuid/ticket4113/trac-4113.patch) by @craigcitro created at 2008-09-14 06:30:13
 
 
 

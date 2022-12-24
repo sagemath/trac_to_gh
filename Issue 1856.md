@@ -3,7 +3,7 @@
 archive/issues_001856.json:
 ```json
 {
-    "body": "Assignee: was\n\nTry this:\n\n```\nsage: sphere((0,0,0), figsize=2).show(viewer='tachyon', figsize=10)\n```\n\nA tiny picture of a sphere appears.  It should be that the second figsize overwrites the first.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1856\n\n",
+    "body": "Assignee: @williamstein\n\nTry this:\n\n```\nsage: sphere((0,0,0), figsize=2).show(viewer='tachyon', figsize=10)\n```\n\nA tiny picture of a sphere appears.  It should be that the second figsize overwrites the first.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1856\n\n",
     "created_at": "2008-01-19T23:45:50Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001856.json:
     "title": "3d graphics -- bug in setting options via the show command",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1856",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Try this:
 
@@ -43,7 +43,7 @@ archive/issue_comments_011741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1856",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1856#issuecomment-11741",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -56,16 +56,16 @@ Changing status from new to assigned.
 archive/issue_comments_011742.json:
 ```json
 {
-    "body": "Attachment [trac-1856.patch](tarball://root/attachments/some-uuid/ticket1856/trac-1856.patch) by was created at 2008-01-20 00:07:59",
+    "body": "Attachment [trac-1856.patch](tarball://root/attachments/some-uuid/ticket1856/trac-1856.patch) by @williamstein created at 2008-01-20 00:07:59",
     "created_at": "2008-01-20T00:07:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1856",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1856#issuecomment-11742",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1856.patch](tarball://root/attachments/some-uuid/ticket1856/trac-1856.patch) by was created at 2008-01-20 00:07:59
+Attachment [trac-1856.patch](tarball://root/attachments/some-uuid/ticket1856/trac-1856.patch) by @williamstein created at 2008-01-20 00:07:59
 
 
 
@@ -79,7 +79,7 @@ archive/issue_comments_011743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1856",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1856#issuecomment-11743",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -92,16 +92,16 @@ This fixes the problem mentioned above in a simple clean way, adds the ability t
 archive/issue_comments_011744.json:
 ```json
 {
-    "body": "Attachment [1856.patch](tarball://root/attachments/some-uuid/ticket1856/1856.patch) by mhansen created at 2008-01-21 03:55:29",
+    "body": "Attachment [1856.patch](tarball://root/attachments/some-uuid/ticket1856/1856.patch) by @mwhansen created at 2008-01-21 03:55:29",
     "created_at": "2008-01-21T03:55:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1856",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1856#issuecomment-11744",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1856.patch](tarball://root/attachments/some-uuid/ticket1856/1856.patch) by mhansen created at 2008-01-21 03:55:29
+Attachment [1856.patch](tarball://root/attachments/some-uuid/ticket1856/1856.patch) by @mwhansen created at 2008-01-21 03:55:29
 
 
 
@@ -115,7 +115,7 @@ archive/issue_comments_011745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1856",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1856#issuecomment-11745",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

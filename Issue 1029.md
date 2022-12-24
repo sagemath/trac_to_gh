@@ -14,7 +14,7 @@ archive/issues_001029.json:
     "title": "update flint in sage again",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1029",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -58,7 +58,7 @@ archive/issue_comments_006285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1029#issuecomment-6285",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -80,16 +80,16 @@ allocate -1 limbs won't run into unexpected trouble.
 archive/issue_comments_006286.json:
 ```json
 {
-    "body": "Changing assignee from somebody to was.",
+    "body": "Changing assignee from somebody to @williamstein.",
     "created_at": "2007-11-15T01:39:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1029#issuecomment-6286",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from somebody to was.
+Changing assignee from somebody to @williamstein.
 
 
 
@@ -103,7 +103,7 @@ archive/issue_comments_006287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1029#issuecomment-6287",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_006288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1029#issuecomment-6288",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

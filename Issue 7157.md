@@ -3,7 +3,7 @@
 archive/issues_007157.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  jason rlm nthiery\n\nAs the title says, and following the discussion on Sage-devel :\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/bfeb9b1828a04350/10681dbb1f189b2f\n\nIssue created by migration from https://trac.sagemath.org/ticket/7157\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @jasongrout @rlmill @nthiery\n\nAs the title says, and following the discussion on Sage-devel :\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/bfeb9b1828a04350/10681dbb1f189b2f\n\nIssue created by migration from https://trac.sagemath.org/ticket/7157\n\n",
     "created_at": "2009-10-08T16:31:05Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_007157.json:
     "title": "[with patch, needs review] neighbors_out/in instead of predecessor/successor in DiGraph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7157",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  jason rlm nthiery
+CC:  @jasongrout @rlmill @nthiery
 
 As the title says, and following the discussion on Sage-devel :
 http://groups.google.com/group/sage-devel/browse_thread/thread/bfeb9b1828a04350/10681dbb1f189b2f
@@ -40,7 +40,7 @@ archive/issue_comments_059293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7157#issuecomment-59293",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -58,7 +58,7 @@ archive/issue_comments_059294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7157#issuecomment-59294",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_059295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7157#issuecomment-59295",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_059296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7157#issuecomment-59296",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_059297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7157#issuecomment-59297",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_059298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7157#issuecomment-59298",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_059299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7157#issuecomment-59299",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_059300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7157#issuecomment-59300",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_059301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7157#issuecomment-59301",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_059302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7157#issuecomment-59302",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_059303.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7157#issuecomment-59303",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -240,16 +240,16 @@ Updated !
 archive/issue_comments_059304.json:
 ```json
 {
-    "body": "Attachment [trac_7157.patch](tarball://root/attachments/some-uuid/ticket7157/trac_7157.patch) by hivert created at 2009-11-30 10:48:39\n\nReplying to [comment:8 ncohen]:\n> Updated !\n\nIt was decided on sage-devel only to put the version and not the date in the message of deprecation aliases. I just uploaded a patch witch does that. Please review. Aside from that\n\nYou have a Positive review on trac_7157.patch. You can change the status as soon as you had an eye on my trivial review patch. \n\nCheers,\n\nFlorent\n\nBy the way a review on #7515 is welcome ;-)",
+    "body": "Attachment [trac_7157.patch](tarball://root/attachments/some-uuid/ticket7157/trac_7157.patch) by @hivert created at 2009-11-30 10:48:39\n\nReplying to [comment:8 ncohen]:\n> Updated !\n\nIt was decided on sage-devel only to put the version and not the date in the message of deprecation aliases. I just uploaded a patch witch does that. Please review. Aside from that\n\nYou have a Positive review on trac_7157.patch. You can change the status as soon as you had an eye on my trivial review patch. \n\nCheers,\n\nFlorent\n\nBy the way a review on #7515 is welcome ;-)",
     "created_at": "2009-11-30T10:48:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7157#issuecomment-59304",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_7157.patch](tarball://root/attachments/some-uuid/ticket7157/trac_7157.patch) by hivert created at 2009-11-30 10:48:39
+Attachment [trac_7157.patch](tarball://root/attachments/some-uuid/ticket7157/trac_7157.patch) by @hivert created at 2009-11-30 10:48:39
 
 Replying to [comment:8 ncohen]:
 > Updated !
@@ -276,7 +276,7 @@ archive/issue_comments_059305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7157#issuecomment-59305",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_059306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7157#issuecomment-59306",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -307,16 +307,16 @@ Resolution: fixed
 archive/issue_comments_059307.json:
 ```json
 {
-    "body": "Attachment [trac_7157_review.patch](tarball://root/attachments/some-uuid/ticket7157/trac_7157_review.patch) by mhansen created at 2009-12-01 04:37:12\n\nI've added a new trac_7157_review.patch patch with two function calls that were missed.",
+    "body": "Attachment [trac_7157_review.patch](tarball://root/attachments/some-uuid/ticket7157/trac_7157_review.patch) by @mwhansen created at 2009-12-01 04:37:12\n\nI've added a new trac_7157_review.patch patch with two function calls that were missed.",
     "created_at": "2009-12-01T04:37:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7157#issuecomment-59307",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_7157_review.patch](tarball://root/attachments/some-uuid/ticket7157/trac_7157_review.patch) by mhansen created at 2009-12-01 04:37:12
+Attachment [trac_7157_review.patch](tarball://root/attachments/some-uuid/ticket7157/trac_7157_review.patch) by @mwhansen created at 2009-12-01 04:37:12
 
 I've added a new trac_7157_review.patch patch with two function calls that were missed.
 
@@ -332,7 +332,7 @@ archive/issue_comments_059308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7157#issuecomment-59308",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008304.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jen robertwb\n\nKeywords: Coleman integration, hyperelliptic curves\n\nJen discovered some stray factors of 2 buried in the Coleman integration code. (Apply patches at #7927 before trying these examples.)\n\nOn one hand, the invariant differential sometimes thinks it's dx/2y (as it should):\n\n```\nsage: R.<x> = QQ['x']\nsage: H = HyperellipticCurve(x^3+1)\nsage: K = Qp(5,8)\nsage: HK = H.change_ring(K)\nsage: w = HK.invariant_differential()\nsage: P = HK(0,1)\nsage: Q = HK.lift_x(5)\nsage: x,y = HK.monsky_washnitzer_gens()\nsage: (2*y*w).coleman_integral(P,Q)\n5 + O(5^9)\n```\n\nbut on the other hand, it sometimes behaves as if it were dx/y (as it shouldn't):\n\n```\nsage: x,y,z = HK.local_analytic_interpolation(P,Q)\nsage: I1 = (x.derivative()/y).integral()\nsage: I2 = (x.derivative()/(2*y)).integral()\nsage: I1(1)-I1(0)\n5 + 3*5^4 + 3*5^6 + 3*5^7 + O(5^9)\nsage: I2(1)-I2(0)\n3*5 + 2*5^2 + 2*5^3 + 5^4 + 4*5^6 + 5^7 + O(5^9)\nsage: HK.coleman_integral(w,P,Q)\n5 + 3*5^4 + 3*5^6 + 3*5^7 + O(5^9)\n```\n\nThe apparent fix is to insert an extra division by two in tiny_integrals (which then needs a corrected docstring and some doctests, and similarly for tiny_integrals_on_basis) and then remove the multiplication by 2 in coleman_integrals_on_basis. Then correct all the doctests which currently give answers which are off by a factor of 2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8304\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jbalakrishnan @robertwb\n\nKeywords: Coleman integration, hyperelliptic curves\n\nJen discovered some stray factors of 2 buried in the Coleman integration code. (Apply patches at #7927 before trying these examples.)\n\nOn one hand, the invariant differential sometimes thinks it's dx/2y (as it should):\n\n```\nsage: R.<x> = QQ['x']\nsage: H = HyperellipticCurve(x^3+1)\nsage: K = Qp(5,8)\nsage: HK = H.change_ring(K)\nsage: w = HK.invariant_differential()\nsage: P = HK(0,1)\nsage: Q = HK.lift_x(5)\nsage: x,y = HK.monsky_washnitzer_gens()\nsage: (2*y*w).coleman_integral(P,Q)\n5 + O(5^9)\n```\n\nbut on the other hand, it sometimes behaves as if it were dx/y (as it shouldn't):\n\n```\nsage: x,y,z = HK.local_analytic_interpolation(P,Q)\nsage: I1 = (x.derivative()/y).integral()\nsage: I2 = (x.derivative()/(2*y)).integral()\nsage: I1(1)-I1(0)\n5 + 3*5^4 + 3*5^6 + 3*5^7 + O(5^9)\nsage: I2(1)-I2(0)\n3*5 + 2*5^2 + 2*5^3 + 5^4 + 4*5^6 + 5^7 + O(5^9)\nsage: HK.coleman_integral(w,P,Q)\n5 + 3*5^4 + 3*5^6 + 3*5^7 + O(5^9)\n```\n\nThe apparent fix is to insert an extra division by two in tiny_integrals (which then needs a corrected docstring and some doctests, and similarly for tiny_integrals_on_basis) and then remove the multiplication by 2 in coleman_integrals_on_basis. Then correct all the doctests which currently give answers which are off by a factor of 2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8304\n\n",
     "created_at": "2010-02-19T02:56:02Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_008304.json:
     "title": "Remove stray factors of 2 in Coleman integration",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8304",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jen robertwb
+CC:  @jbalakrishnan @robertwb
 
 Keywords: Coleman integration, hyperelliptic curves
 
@@ -72,7 +72,7 @@ archive/issue_comments_073577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8304",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8304#issuecomment-73577",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
 
@@ -85,16 +85,16 @@ Changing status from new to needs_review.
 archive/issue_comments_073578.json:
 ```json
 {
-    "body": "Attachment [13542.patch](tarball://root/attachments/some-uuid/ticket8304/13542.patch) by jen created at 2010-02-19 20:38:50\n\nThe attached patch should fix these issues (+doctests), so that invariant differential always behaves as dx/2y:\n\n\n```\nsage: R.<x> = QQ['x']\nsage: H = HyperellipticCurve(x^3+1)\nsage: K = Qp(5,8)\nsage: HK = H.change_ring(K)\nsage: w = HK.invariant_differential()\nsage: P = HK(0,1)\nsage: Q = HK.lift_x(5)\nsage: x,y = HK.monsky_washnitzer_gens()\nsage: (2*y*w).coleman_integral(P,Q)\n5 + O(5^9)\nsage: x,y,z = HK.local_analytic_interpolation(P,Q)\nsage: I2 = (x.derivative()/(2*y)).integral()\nsage: I2(1)-I2(0)\n3*5 + 2*5^2 + 2*5^3 + 5^4 + 4*5^6 + 5^7 + O(5^9)\nsage: HK.coleman_integral(w,P,Q)\n3*5 + 2*5^2 + 2*5^3 + 5^4 + 4*5^6 + 5^7 + O(5^9)\n```\n",
+    "body": "Attachment [13542.patch](tarball://root/attachments/some-uuid/ticket8304/13542.patch) by @jbalakrishnan created at 2010-02-19 20:38:50\n\nThe attached patch should fix these issues (+doctests), so that invariant differential always behaves as dx/2y:\n\n\n```\nsage: R.<x> = QQ['x']\nsage: H = HyperellipticCurve(x^3+1)\nsage: K = Qp(5,8)\nsage: HK = H.change_ring(K)\nsage: w = HK.invariant_differential()\nsage: P = HK(0,1)\nsage: Q = HK.lift_x(5)\nsage: x,y = HK.monsky_washnitzer_gens()\nsage: (2*y*w).coleman_integral(P,Q)\n5 + O(5^9)\nsage: x,y,z = HK.local_analytic_interpolation(P,Q)\nsage: I2 = (x.derivative()/(2*y)).integral()\nsage: I2(1)-I2(0)\n3*5 + 2*5^2 + 2*5^3 + 5^4 + 4*5^6 + 5^7 + O(5^9)\nsage: HK.coleman_integral(w,P,Q)\n3*5 + 2*5^2 + 2*5^3 + 5^4 + 4*5^6 + 5^7 + O(5^9)\n```\n",
     "created_at": "2010-02-19T20:38:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8304",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8304#issuecomment-73578",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
 
-Attachment [13542.patch](tarball://root/attachments/some-uuid/ticket8304/13542.patch) by jen created at 2010-02-19 20:38:50
+Attachment [13542.patch](tarball://root/attachments/some-uuid/ticket8304/13542.patch) by @jbalakrishnan created at 2010-02-19 20:38:50
 
 The attached patch should fix these issues (+doctests), so that invariant differential always behaves as dx/2y:
 
@@ -126,16 +126,16 @@ sage: HK.coleman_integral(w,P,Q)
 archive/issue_comments_073579.json:
 ```json
 {
-    "body": "Attachment [13543.patch](tarball://root/attachments/some-uuid/ticket8304/13543.patch) by jen created at 2010-02-20 05:29:38\n\nadded doctests for tiny_integrals",
+    "body": "Attachment [13543.patch](tarball://root/attachments/some-uuid/ticket8304/13543.patch) by @jbalakrishnan created at 2010-02-20 05:29:38\n\nadded doctests for tiny_integrals",
     "created_at": "2010-02-20T05:29:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8304",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8304#issuecomment-73579",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
 
-Attachment [13543.patch](tarball://root/attachments/some-uuid/ticket8304/13543.patch) by jen created at 2010-02-20 05:29:38
+Attachment [13543.patch](tarball://root/attachments/some-uuid/ticket8304/13543.patch) by @jbalakrishnan created at 2010-02-20 05:29:38
 
 added doctests for tiny_integrals
 
@@ -151,7 +151,7 @@ archive/issue_comments_073580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8304",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8304#issuecomment-73580",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_073581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8304",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8304#issuecomment-73581",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 

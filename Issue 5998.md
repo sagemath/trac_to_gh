@@ -14,7 +14,7 @@ archive/issues_005998.json:
     "title": "add fxsr to cpuflags.txt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5998",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -184,7 +184,7 @@ archive/issue_comments_047725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5998#issuecomment-47725",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_047726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5998#issuecomment-47726",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000489.json:
 ```json
 {
-    "body": "Assignee: was\n\nNow, that LiE ( http://www-math.univ-poitiers.fr/~maavl/LiE/ ) is officially GPL, we can include it in SAGE.  Things to do:\n\n1) Write an interface to the LiE interpreter.\n\n2) Begin making a C/Pyrex wrapper.  (I've looked at the code, and it looks like it'll be pretty clean.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/489\n\n",
+    "body": "Assignee: @williamstein\n\nNow, that LiE ( http://www-math.univ-poitiers.fr/~maavl/LiE/ ) is officially GPL, we can include it in SAGE.  Things to do:\n\n1) Write an interface to the LiE interpreter.\n\n2) Begin making a C/Pyrex wrapper.  (I've looked at the code, and it looks like it'll be pretty clean.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/489\n\n",
     "created_at": "2007-08-24T16:06:44Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_000489.json:
     "title": "Expose LiE functionality in SAGE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/489",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Now, that LiE ( http://www-math.univ-poitiers.fr/~maavl/LiE/ ) is officially GPL, we can include it in SAGE.  Things to do:
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/489
 archive/issue_comments_002436.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-08-24T16:06:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/489#issuecomment-2436",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_002437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/489#issuecomment-2437",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_002443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/489#issuecomment-2443",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_002444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/489#issuecomment-2444",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -292,16 +292,16 @@ LiE expect interface bundle
 archive/issue_comments_002445.json:
 ```json
 {
-    "body": "Attachment [lie.py](tarball://root/attachments/some-uuid/ticket489/lie.py) by mhansen created at 2007-08-28 17:21:09",
+    "body": "Attachment [lie.py](tarball://root/attachments/some-uuid/ticket489/lie.py) by @mwhansen created at 2007-08-28 17:21:09",
     "created_at": "2007-08-28T17:21:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/489#issuecomment-2445",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [lie.py](tarball://root/attachments/some-uuid/ticket489/lie.py) by mhansen created at 2007-08-28 17:21:09
+Attachment [lie.py](tarball://root/attachments/some-uuid/ticket489/lie.py) by @mwhansen created at 2007-08-28 17:21:09
 
 
 
@@ -315,7 +315,7 @@ archive/issue_comments_002446.json:
     "issue": "https://github.com/sagemath/sagetest/issues/489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/489#issuecomment-2446",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

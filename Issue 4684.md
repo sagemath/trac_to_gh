@@ -14,7 +14,7 @@ archive/issues_004684.json:
     "title": "should be easier to change how many threads used for \"make ptest\" and friends",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4684",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: mabshoff
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4684
 archive/issue_comments_035306.json:
 ```json
 {
-    "body": "Attachment [makefile](tarball://root/attachments/some-uuid/ticket4684/makefile) by ddrake created at 2008-12-03 05:53:44",
+    "body": "Attachment [makefile](tarball://root/attachments/some-uuid/ticket4684/makefile) by @dandrake created at 2008-12-03 05:53:44",
     "created_at": "2008-12-03T05:53:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4684",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4684#issuecomment-35306",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [makefile](tarball://root/attachments/some-uuid/ticket4684/makefile) by ddrake created at 2008-12-03 05:53:44
+Attachment [makefile](tarball://root/attachments/some-uuid/ticket4684/makefile) by @dandrake created at 2008-12-03 05:53:44
 
 
 
@@ -143,7 +143,7 @@ archive/issue_comments_035311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4684",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4684#issuecomment-35311",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_035313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4684",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4684#issuecomment-35313",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

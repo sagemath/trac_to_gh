@@ -14,7 +14,7 @@ archive/issues_003147.json:
     "title": "\"Quit Worksheet\" in notebook doesn't seem to work anymore",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3147",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 Assignee: anybody
@@ -70,7 +70,7 @@ archive/issue_comments_021835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3147",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3147#issuecomment-21835",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_021836.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3147",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3147#issuecomment-21836",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_021837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3147",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3147#issuecomment-21837",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006359.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  sage-combinat nthiery\n\nThis requires updating a few other spkgs as well as some fixes in the Sage library.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6359\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  sage-combinat @nthiery\n\nThis requires updating a few other spkgs as well as some fixes in the Sage library.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6359\n\n",
     "created_at": "2009-06-18T23:44:09Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_006359.json:
     "title": "update to Python 2.6.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6359",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: mabshoff
 
-CC:  sage-combinat nthiery
+CC:  sage-combinat @nthiery
 
 This requires updating a few other spkgs as well as some fixes in the Sage library.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6359
 archive/issue_comments_050850.json:
 ```json
 {
-    "body": "Attachment [trac_6359-scripts.patch](tarball://root/attachments/some-uuid/ticket6359/trac_6359-scripts.patch) by mhansen created at 2009-06-19 20:08:29",
+    "body": "Attachment [trac_6359-scripts.patch](tarball://root/attachments/some-uuid/ticket6359/trac_6359-scripts.patch) by @mwhansen created at 2009-06-19 20:08:29",
     "created_at": "2009-06-19T20:08:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6359#issuecomment-50850",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6359-scripts.patch](tarball://root/attachments/some-uuid/ticket6359/trac_6359-scripts.patch) by mhansen created at 2009-06-19 20:08:29
+Attachment [trac_6359-scripts.patch](tarball://root/attachments/some-uuid/ticket6359/trac_6359-scripts.patch) by @mwhansen created at 2009-06-19 20:08:29
 
 
 
@@ -52,16 +52,16 @@ Attachment [trac_6359-scripts.patch](tarball://root/attachments/some-uuid/ticket
 archive/issue_comments_050851.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to mhansen.",
+    "body": "Changing assignee from mabshoff to @mwhansen.",
     "created_at": "2009-06-19T20:09:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6359#issuecomment-50851",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from mabshoff to mhansen.
+Changing assignee from mabshoff to @mwhansen.
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_050852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6359#issuecomment-50852",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_050853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6359#issuecomment-50853",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_050854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6359#issuecomment-50854",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_050855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6359#issuecomment-50855",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_050857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6359#issuecomment-50857",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_050858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6359#issuecomment-50858",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_050859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6359#issuecomment-50859",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -262,16 +262,16 @@ Also, your step 4) above is a bit lacking. What did you have to do, exactly, to 
 archive/issue_comments_050860.json:
 ```json
 {
-    "body": "Attachment [trac_6359-1.patch](tarball://root/attachments/some-uuid/ticket6359/trac_6359-1.patch) by mhansen created at 2009-06-25 01:19:28",
+    "body": "Attachment [trac_6359-1.patch](tarball://root/attachments/some-uuid/ticket6359/trac_6359-1.patch) by @mwhansen created at 2009-06-25 01:19:28",
     "created_at": "2009-06-25T01:19:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6359#issuecomment-50860",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6359-1.patch](tarball://root/attachments/some-uuid/ticket6359/trac_6359-1.patch) by mhansen created at 2009-06-25 01:19:28
+Attachment [trac_6359-1.patch](tarball://root/attachments/some-uuid/ticket6359/trac_6359-1.patch) by @mwhansen created at 2009-06-25 01:19:28
 
 
 
@@ -280,16 +280,16 @@ Attachment [trac_6359-1.patch](tarball://root/attachments/some-uuid/ticket6359/t
 archive/issue_comments_050861.json:
 ```json
 {
-    "body": "Attachment [trac_6359-2.patch](tarball://root/attachments/some-uuid/ticket6359/trac_6359-2.patch) by mhansen created at 2009-06-25 01:19:46",
+    "body": "Attachment [trac_6359-2.patch](tarball://root/attachments/some-uuid/ticket6359/trac_6359-2.patch) by @mwhansen created at 2009-06-25 01:19:46",
     "created_at": "2009-06-25T01:19:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6359#issuecomment-50861",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6359-2.patch](tarball://root/attachments/some-uuid/ticket6359/trac_6359-2.patch) by mhansen created at 2009-06-25 01:19:46
+Attachment [trac_6359-2.patch](tarball://root/attachments/some-uuid/ticket6359/trac_6359-2.patch) by @mwhansen created at 2009-06-25 01:19:46
 
 
 
@@ -303,7 +303,7 @@ archive/issue_comments_050862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6359#issuecomment-50862",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -321,7 +321,7 @@ archive/issue_comments_050863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6359#issuecomment-50863",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_050864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6359#issuecomment-50864",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -357,7 +357,7 @@ archive/issue_comments_050865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6359#issuecomment-50865",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -381,7 +381,7 @@ archive/issue_comments_050866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6359#issuecomment-50866",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_050867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6359#issuecomment-50867",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -417,7 +417,7 @@ archive/issue_comments_050868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6359#issuecomment-50868",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -435,7 +435,7 @@ archive/issue_comments_050869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6359#issuecomment-50869",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

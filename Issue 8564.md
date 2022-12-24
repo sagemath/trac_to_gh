@@ -3,7 +3,7 @@
 archive/issues_008564.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nHi,\n\nplease apply the attached patch. The corresponding test is in sympy in sympy/test_external/test_sage.py. It'd be cool to execute that file automatically in sage doctests, not sure currently how to do it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8564\n\n",
+    "body": "Assignee: @aghitza\n\nHi,\n\nplease apply the attached patch. The corresponding test is in sympy in sympy/test_external/test_sage.py. It'd be cool to execute that file automatically in sage doctests, not sure currently how to do it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8564\n\n",
     "created_at": "2010-03-20T02:29:43Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_008564.json:
     "title": "fix atan2() conversions between Sage and SymPy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8564",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Hi,
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8564
 archive/issue_comments_077535.json:
 ```json
 {
-    "body": "Attachment [sympy1.patch](tarball://root/attachments/some-uuid/ticket8564/sympy1.patch) by burcin created at 2010-04-02 16:49:32\n\nondrej's patch with a header",
+    "body": "Attachment [sympy1.patch](tarball://root/attachments/some-uuid/ticket8564/sympy1.patch) by @burcin created at 2010-04-02 16:49:32\n\nondrej's patch with a header",
     "created_at": "2010-04-02T16:49:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8564#issuecomment-77535",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [sympy1.patch](tarball://root/attachments/some-uuid/ticket8564/sympy1.patch) by burcin created at 2010-04-02 16:49:32
+Attachment [sympy1.patch](tarball://root/attachments/some-uuid/ticket8564/sympy1.patch) by @burcin created at 2010-04-02 16:49:32
 
 ondrej's patch with a header
 
@@ -54,16 +54,16 @@ ondrej's patch with a header
 archive/issue_comments_077536.json:
 ```json
 {
-    "body": "Attachment [trac_8564-doctests.patch](tarball://root/attachments/some-uuid/ticket8564/trac_8564-doctests.patch) by burcin created at 2010-04-02 16:49:53\n\ndoctest",
+    "body": "Attachment [trac_8564-doctests.patch](tarball://root/attachments/some-uuid/ticket8564/trac_8564-doctests.patch) by @burcin created at 2010-04-02 16:49:53\n\ndoctest",
     "created_at": "2010-04-02T16:49:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8564#issuecomment-77536",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_8564-doctests.patch](tarball://root/attachments/some-uuid/ticket8564/trac_8564-doctests.patch) by burcin created at 2010-04-02 16:49:53
+Attachment [trac_8564-doctests.patch](tarball://root/attachments/some-uuid/ticket8564/trac_8564-doctests.patch) by @burcin created at 2010-04-02 16:49:53
 
 doctest
 
@@ -79,7 +79,7 @@ archive/issue_comments_077537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8564#issuecomment-77537",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_077538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8564#issuecomment-77538",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_077539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8564#issuecomment-77539",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_077540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8564#issuecomment-77540",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_077541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8564#issuecomment-77541",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_077542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8564#issuecomment-77542",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_077543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8564#issuecomment-77543",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

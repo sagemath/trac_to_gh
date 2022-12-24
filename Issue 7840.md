@@ -3,7 +3,7 @@
 archive/issues_007840.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7840\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7840\n\n",
     "created_at": "2010-01-04T07:11:16Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007840.json:
     "title": "include sagenb-0.4.9 in sage-4.3.1.alpha0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7840",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  mhansen
+CC:  @mwhansen
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_067909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7840#issuecomment-67909",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_067910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7840#issuecomment-67910",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

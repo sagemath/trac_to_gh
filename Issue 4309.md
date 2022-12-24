@@ -3,7 +3,7 @@
 archive/issues_004309.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  embray jdemeyer fbissey\n\nThis patch adds Kerberos authentification support for the SAGE notebook. It also adds the options krb_srv, krb_realm for the notebook() command.\n\nThis patch however depends on pykerberos which depends on kerberos which depends on a couple of other libraries all in all a little less size than SAGE itself and all not in SAGE :-). Nevertheless ... \n\nGreetings, \nKilian. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4309\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @embray @jdemeyer @kiwifb\n\nThis patch adds Kerberos authentification support for the SAGE notebook. It also adds the options krb_srv, krb_realm for the notebook() command.\n\nThis patch however depends on pykerberos which depends on kerberos which depends on a couple of other libraries all in all a little less size than SAGE itself and all not in SAGE :-). Nevertheless ... \n\nGreetings, \nKilian. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4309\n\n",
     "created_at": "2008-10-16T17:30:31Z",
     "labels": [
         "user interface",
@@ -17,9 +17,9 @@ archive/issues_004309.json:
     "user": "kkilger"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  embray jdemeyer fbissey
+CC:  @embray @jdemeyer @kiwifb
 
 This patch adds Kerberos authentification support for the SAGE notebook. It also adds the options krb_srv, krb_realm for the notebook() command.
 
@@ -201,7 +201,7 @@ Changing component from user interface to notebook.
 archive/issue_comments_031550.json:
 ```json
 {
-    "body": "Changing assignee from was to kkilger.",
+    "body": "Changing assignee from @williamstein to kkilger.",
     "created_at": "2008-11-10T04:31:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4309",
     "type": "issue_comment",
@@ -210,7 +210,7 @@ archive/issue_comments_031550.json:
 }
 ```
 
-Changing assignee from was to kkilger.
+Changing assignee from @williamstein to kkilger.
 
 
 
@@ -224,7 +224,7 @@ archive/issue_comments_031551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4309#issuecomment-31551",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_031552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4309#issuecomment-31552",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_031553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4309#issuecomment-31553",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_031554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4309#issuecomment-31554",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -310,7 +310,7 @@ archive/issue_comments_031555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4309#issuecomment-31555",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -328,7 +328,7 @@ archive/issue_comments_031556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4309#issuecomment-31556",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

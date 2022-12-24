@@ -80,7 +80,7 @@ archive/issue_comments_025047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3542",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3542#issuecomment-25047",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_025048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3542",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3542#issuecomment-25048",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_025050.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3542",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3542#issuecomment-25050",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -253,16 +253,16 @@ Are you talking about adding the bernmm.pyx wrapper to the manual? It's not at a
 archive/issue_comments_025052.json:
 ```json
 {
-    "body": "Attachment [3542-dharvey-bernoulli-numbers-multimodular.patch](tarball://root/attachments/some-uuid/ticket3542/3542-dharvey-bernoulli-numbers-multimodular.patch) by ncalexan created at 2008-08-10 19:59:10\n\nI think this looks good.  I added a few doctests that verify that your code agrees with the pari code, for a few of the cases that William found did not agree.\n\nApply only `3542-dharvey-bernoulli-numbers-multimodular.patch`.",
+    "body": "Attachment [3542-dharvey-bernoulli-numbers-multimodular.patch](tarball://root/attachments/some-uuid/ticket3542/3542-dharvey-bernoulli-numbers-multimodular.patch) by @ncalexan created at 2008-08-10 19:59:10\n\nI think this looks good.  I added a few doctests that verify that your code agrees with the pari code, for a few of the cases that William found did not agree.\n\nApply only `3542-dharvey-bernoulli-numbers-multimodular.patch`.",
     "created_at": "2008-08-10T19:59:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3542",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3542#issuecomment-25052",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [3542-dharvey-bernoulli-numbers-multimodular.patch](tarball://root/attachments/some-uuid/ticket3542/3542-dharvey-bernoulli-numbers-multimodular.patch) by ncalexan created at 2008-08-10 19:59:10
+Attachment [3542-dharvey-bernoulli-numbers-multimodular.patch](tarball://root/attachments/some-uuid/ticket3542/3542-dharvey-bernoulli-numbers-multimodular.patch) by @ncalexan created at 2008-08-10 19:59:10
 
 I think this looks good.  I added a few doctests that verify that your code agrees with the pari code, for a few of the cases that William found did not agree.
 

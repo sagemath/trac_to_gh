@@ -14,7 +14,7 @@ archive/issues_007698.json:
     "title": "Delete crap in the HMM spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7698",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -42,7 +42,7 @@ archive/issue_comments_066041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7698#issuecomment-66041",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -60,7 +60,7 @@ archive/issue_comments_066042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7698#issuecomment-66042",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

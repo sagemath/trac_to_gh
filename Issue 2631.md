@@ -14,7 +14,7 @@ archive/issues_002631.json:
     "title": "Distinguishing between (un)evaluated  cells",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2631",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_018081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2631#issuecomment-18081",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_018082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2631#issuecomment-18082",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 

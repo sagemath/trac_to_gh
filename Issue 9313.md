@@ -3,7 +3,7 @@
 archive/issues_009313.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nCC:  wstein\n\nThis file, implementing an interface for the p-adic height computation in MAGMA, is deprecated for a long time and no one is using it any more. This should be deleted now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9313\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  wstein\n\nThis file, implementing an interface for the p-adic height computation in MAGMA, is deprecated for a long time and no one is using it any more. This should be deleted now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9313\n\n",
     "created_at": "2010-06-22T17:11:36Z",
     "labels": [
         "elliptic curves",
@@ -14,10 +14,10 @@ archive/issues_009313.json:
     "title": "delete padic_height.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9313",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 CC:  wstein
 
@@ -39,7 +39,7 @@ archive/issue_comments_087740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9313#issuecomment-87740",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_087741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9313#issuecomment-87741",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -70,16 +70,16 @@ Changing status from new to needs_review.
 archive/issue_comments_087742.json:
 ```json
 {
-    "body": "Attachment [trac_9313-remove_padic_height.patch](tarball://root/attachments/some-uuid/ticket9313/trac_9313-remove_padic_height.patch) by davidloeffler created at 2010-06-29 09:16:25\n\nHere's a patch.",
+    "body": "Attachment [trac_9313-remove_padic_height.patch](tarball://root/attachments/some-uuid/ticket9313/trac_9313-remove_padic_height.patch) by @loefflerd created at 2010-06-29 09:16:25\n\nHere's a patch.",
     "created_at": "2010-06-29T09:16:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9313#issuecomment-87742",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_9313-remove_padic_height.patch](tarball://root/attachments/some-uuid/ticket9313/trac_9313-remove_padic_height.patch) by davidloeffler created at 2010-06-29 09:16:25
+Attachment [trac_9313-remove_padic_height.patch](tarball://root/attachments/some-uuid/ticket9313/trac_9313-remove_padic_height.patch) by @loefflerd created at 2010-06-29 09:16:25
 
 Here's a patch.
 
@@ -131,7 +131,7 @@ archive/issue_comments_087745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9313#issuecomment-87745",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_087746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9313#issuecomment-87746",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

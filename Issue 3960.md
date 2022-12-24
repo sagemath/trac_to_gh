@@ -14,7 +14,7 @@ archive/issues_003960.json:
     "title": "\"edit this\" on published worksheets doesn't work anymore in 3.1.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3960",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 Assignee: boothby
@@ -93,7 +93,7 @@ archive/issue_comments_028444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3960#issuecomment-28444",
-    "user": "itolkov"
+    "user": "@itolkov"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_028445.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3960#issuecomment-28445",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -126,16 +126,16 @@ Changing status from new to assigned.
 archive/issue_comments_028446.json:
 ```json
 {
-    "body": "Changing assignee from boothby to mhansen.",
+    "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2008-09-03T00:53:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3960#issuecomment-28446",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from boothby to mhansen.
+Changing assignee from boothby to @mwhansen.
 
 
 
@@ -144,16 +144,16 @@ Changing assignee from boothby to mhansen.
 archive/issue_comments_028447.json:
 ```json
 {
-    "body": "Attachment [trac_3960.patch](tarball://root/attachments/some-uuid/ticket3960/trac_3960.patch) by mhansen created at 2008-09-04 01:35:54",
+    "body": "Attachment [trac_3960.patch](tarball://root/attachments/some-uuid/ticket3960/trac_3960.patch) by @mwhansen created at 2008-09-04 01:35:54",
     "created_at": "2008-09-04T01:35:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3960#issuecomment-28447",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3960.patch](tarball://root/attachments/some-uuid/ticket3960/trac_3960.patch) by mhansen created at 2008-09-04 01:35:54
+Attachment [trac_3960.patch](tarball://root/attachments/some-uuid/ticket3960/trac_3960.patch) by @mwhansen created at 2008-09-04 01:35:54
 
 
 

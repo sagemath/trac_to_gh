@@ -3,7 +3,7 @@
 archive/issues_007665.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jason schilly drkirkby jverzani@gmail.com\n\nKeywords: plot, R, graphics, statistics\n\nThis is probably hard.  It would increase our potential user base, though, as well as make it possible for people to use Sage in virtually any college course very easily (with the exception of most geometry courses, but a Geogebra plugin would do that).\n\nExamples from the recommended (not currently installed) MASS package; one can certainly come up with one's own examples, this just shows what isn't supported and the current error messages.\n\n```\nsage: r.bwplot('MPG.highway ~ Origin', data = 'Cars93')\n\nWarning message:\nIn grid.newpage() : No png support in this version of R\n\nsage: r.histogram('~ MPG.highway',data='Cars93')\n\n\n(process:46382): Pango-WARNING **: failed to create cairo scaled font, expect ugly output. the offending font is 'Helvetica 9'\n\n(process:46382): Pango-WARNING **: font_font status is: out of memory\n\n(process:46382): Pango-WARNING **: scaled_font status is: out of memory\n\n(process:46382): Pango-WARNING **: shaping failure, expect ugly output. shape-engine='BasicEngineFc', font='Helvetica 9', text='M'\n\n(process:46382): Pango-WARNING **: failed to create cairo scaled font, expect ugly output. the offending font is 'Helvetica 7.1982421875'\n\n(process:46382): Pango-WARNING **: font_font status is: out of memory\n\n(process:46382): Pango-WARNING **: scaled_font status is: out of memory\n\n(process:46382): Pango-WARNING **: shaping failure, expect ugly output. shape-engine='BasicEngineFc', font='Helvetica 7.1982421875', text='0'\n\nsage: r.plot('MPG.highway ~ Weight', data='Cars93')\nNULL\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7665\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @haraldschilly drkirkby jverzani@gmail.com\n\nKeywords: plot, R, graphics, statistics\n\nThis is probably hard.  It would increase our potential user base, though, as well as make it possible for people to use Sage in virtually any college course very easily (with the exception of most geometry courses, but a Geogebra plugin would do that).\n\nExamples from the recommended (not currently installed) MASS package; one can certainly come up with one's own examples, this just shows what isn't supported and the current error messages.\n\n```\nsage: r.bwplot('MPG.highway ~ Origin', data = 'Cars93')\n\nWarning message:\nIn grid.newpage() : No png support in this version of R\n\nsage: r.histogram('~ MPG.highway',data='Cars93')\n\n\n(process:46382): Pango-WARNING **: failed to create cairo scaled font, expect ugly output. the offending font is 'Helvetica 9'\n\n(process:46382): Pango-WARNING **: font_font status is: out of memory\n\n(process:46382): Pango-WARNING **: scaled_font status is: out of memory\n\n(process:46382): Pango-WARNING **: shaping failure, expect ugly output. shape-engine='BasicEngineFc', font='Helvetica 9', text='M'\n\n(process:46382): Pango-WARNING **: failed to create cairo scaled font, expect ugly output. the offending font is 'Helvetica 7.1982421875'\n\n(process:46382): Pango-WARNING **: font_font status is: out of memory\n\n(process:46382): Pango-WARNING **: scaled_font status is: out of memory\n\n(process:46382): Pango-WARNING **: shaping failure, expect ugly output. shape-engine='BasicEngineFc', font='Helvetica 7.1982421875', text='0'\n\nsage: r.plot('MPG.highway ~ Weight', data='Cars93')\nNULL\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7665\n\n",
     "created_at": "2009-12-11T20:23:06Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_007665.json:
     "title": "Make support for R graphics",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7665",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jason schilly drkirkby jverzani@gmail.com
+CC:  @jasongrout @haraldschilly drkirkby jverzani@gmail.com
 
 Keywords: plot, R, graphics, statistics
 
@@ -73,7 +73,7 @@ archive/issue_comments_065634.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65634",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_065635.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65635",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_065636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65636",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_065637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65637",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_065638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65638",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_065639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65639",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_065640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65640",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_065641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65641",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -297,7 +297,7 @@ archive/issue_comments_065642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65642",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -312,16 +312,16 @@ The patch still should apply, but still needs some work to deal with all the cas
 archive/issue_comments_065643.json:
 ```json
 {
-    "body": "Attachment [trac_7655-sagenb-R-plotting.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7655-sagenb-R-plotting.patch) by timdumol created at 2010-04-13 17:19:48\n\nRemoves the chdir in sagenb.notebook.worksheet_eval_cmd. Read comments for more info. Depends on #7997",
+    "body": "Attachment [trac_7655-sagenb-R-plotting.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7655-sagenb-R-plotting.patch) by @TimDumol created at 2010-04-13 17:19:48\n\nRemoves the chdir in sagenb.notebook.worksheet_eval_cmd. Read comments for more info. Depends on #7997",
     "created_at": "2010-04-13T17:19:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65643",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7655-sagenb-R-plotting.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7655-sagenb-R-plotting.patch) by timdumol created at 2010-04-13 17:19:48
+Attachment [trac_7655-sagenb-R-plotting.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7655-sagenb-R-plotting.patch) by @TimDumol created at 2010-04-13 17:19:48
 
 Removes the chdir in sagenb.notebook.worksheet_eval_cmd. Read comments for more info. Depends on #7997
 
@@ -337,7 +337,7 @@ archive/issue_comments_065644.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65644",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -357,7 +357,7 @@ archive/issue_comments_065645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65645",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -377,7 +377,7 @@ archive/issue_comments_065646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65646",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -395,7 +395,7 @@ archive/issue_comments_065647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65647",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -423,7 +423,7 @@ archive/issue_comments_065648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65648",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -443,7 +443,7 @@ archive/issue_comments_065649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65649",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -464,7 +464,7 @@ archive/issue_comments_065650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65650",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -492,7 +492,7 @@ archive/issue_comments_065651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65651",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -517,7 +517,7 @@ archive/issue_comments_065652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65652",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -535,7 +535,7 @@ archive/issue_comments_065653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65653",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -548,16 +548,16 @@ Makes systems change to the current tempdir instead. Depends on #7997.
 archive/issue_comments_065654.json:
 ```json
 {
-    "body": "Attachment [trac_7633-nb_settings_buttons-reviewer.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7633-nb_settings_buttons-reviewer.patch) by timdumol created at 2010-04-14 01:12:02\n\nAdds a ``chdir`` function to the R interface.",
+    "body": "Attachment [trac_7633-nb_settings_buttons-reviewer.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7633-nb_settings_buttons-reviewer.patch) by @TimDumol created at 2010-04-14 01:12:02\n\nAdds a ``chdir`` function to the R interface.",
     "created_at": "2010-04-14T01:12:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65654",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7633-nb_settings_buttons-reviewer.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7633-nb_settings_buttons-reviewer.patch) by timdumol created at 2010-04-14 01:12:02
+Attachment [trac_7633-nb_settings_buttons-reviewer.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7633-nb_settings_buttons-reviewer.patch) by @TimDumol created at 2010-04-14 01:12:02
 
 Adds a ``chdir`` function to the R interface.
 
@@ -573,7 +573,7 @@ archive/issue_comments_065655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65655",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -591,7 +591,7 @@ archive/issue_comments_065656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65656",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -609,7 +609,7 @@ archive/issue_comments_065657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65657",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -627,7 +627,7 @@ archive/issue_comments_065658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65658",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -645,7 +645,7 @@ archive/issue_comments_065659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65659",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -665,7 +665,7 @@ archive/issue_comments_065660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65660",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -678,16 +678,16 @@ I posted the wrong patch. Let me get the right one.
 archive/issue_comments_065661.json:
 ```json
 {
-    "body": "Attachment [trac_7665-sage-library-R-plotting.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7665-sage-library-R-plotting.patch) by timdumol created at 2010-04-14 17:54:05\n\nAdds a ``chdir`` function to the R interface.",
+    "body": "Attachment [trac_7665-sage-library-R-plotting.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7665-sage-library-R-plotting.patch) by @TimDumol created at 2010-04-14 17:54:05\n\nAdds a ``chdir`` function to the R interface.",
     "created_at": "2010-04-14T17:54:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65661",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7665-sage-library-R-plotting.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7665-sage-library-R-plotting.patch) by timdumol created at 2010-04-14 17:54:05
+Attachment [trac_7665-sage-library-R-plotting.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7665-sage-library-R-plotting.patch) by @TimDumol created at 2010-04-14 17:54:05
 
 Adds a ``chdir`` function to the R interface.
 
@@ -703,7 +703,7 @@ archive/issue_comments_065662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65662",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -721,7 +721,7 @@ archive/issue_comments_065663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65663",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -743,7 +743,7 @@ archive/issue_comments_065664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65664",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -761,7 +761,7 @@ archive/issue_comments_065665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65665",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -774,16 +774,16 @@ Fixes a few doctests. Replaces trac_7655-sagenb-R-plotting.2.patch
 archive/issue_comments_065666.json:
 ```json
 {
-    "body": "Attachment [trac_7665-sagenb-R-plotting.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7665-sagenb-R-plotting.patch) by kcrisman created at 2010-04-19 16:33:18\n\nThe substantive changes in the sagenb patch make it work on sage.math and my Macintel with OSX 10.6.  I don't know how to doctest sagenb stuff :(  And unfortunately the linked spkg is ... weird, to say the least.  It didn't unpack properly, for instance, and there was something inside I had to use instead - see [http://sage.math.washington.edu/home/kcrisman/sagenb-0.7.5.3.p0.spkg](http://sage.math.washington.edu/home/kcrisman/sagenb-0.7.5.3.p0.spkg) for something that does work, though of course the p0 and the 7.5.3 are not \"official\" by any means.\n\nI will test this tonight on PPC OSX, and then post an omnibus patch to the Sage library.  Do you know of any way to test %r type commands?  That would be helpful, also for documenting how to use it.",
+    "body": "Attachment [trac_7665-sagenb-R-plotting.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7665-sagenb-R-plotting.patch) by @kcrisman created at 2010-04-19 16:33:18\n\nThe substantive changes in the sagenb patch make it work on sage.math and my Macintel with OSX 10.6.  I don't know how to doctest sagenb stuff :(  And unfortunately the linked spkg is ... weird, to say the least.  It didn't unpack properly, for instance, and there was something inside I had to use instead - see [http://sage.math.washington.edu/home/kcrisman/sagenb-0.7.5.3.p0.spkg](http://sage.math.washington.edu/home/kcrisman/sagenb-0.7.5.3.p0.spkg) for something that does work, though of course the p0 and the 7.5.3 are not \"official\" by any means.\n\nI will test this tonight on PPC OSX, and then post an omnibus patch to the Sage library.  Do you know of any way to test %r type commands?  That would be helpful, also for documenting how to use it.",
     "created_at": "2010-04-19T16:33:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65666",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_7665-sagenb-R-plotting.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7665-sagenb-R-plotting.patch) by kcrisman created at 2010-04-19 16:33:18
+Attachment [trac_7665-sagenb-R-plotting.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7665-sagenb-R-plotting.patch) by @kcrisman created at 2010-04-19 16:33:18
 
 The substantive changes in the sagenb patch make it work on sage.math and my Macintel with OSX 10.6.  I don't know how to doctest sagenb stuff :(  And unfortunately the linked spkg is ... weird, to say the least.  It didn't unpack properly, for instance, and there was something inside I had to use instead - see [http://sage.math.washington.edu/home/kcrisman/sagenb-0.7.5.3.p0.spkg](http://sage.math.washington.edu/home/kcrisman/sagenb-0.7.5.3.p0.spkg) for something that does work, though of course the p0 and the 7.5.3 are not "official" by any means.
 
@@ -801,7 +801,7 @@ archive/issue_comments_065667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65667",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -822,7 +822,7 @@ archive/issue_comments_065668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65668",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -879,7 +879,7 @@ archive/issue_comments_065669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65669",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -897,7 +897,7 @@ archive/issue_comments_065670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65670",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -910,16 +910,16 @@ I get test failures in sagenb/notebook/cell.py and sagenb/notebook/notebook.py w
 archive/issue_comments_065671.json:
 ```json
 {
-    "body": "Attachment [trac_7665-r-plotting.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7665-r-plotting.patch) by kcrisman created at 2010-04-20 01:31:25\n\nBased on 4.3.5 - this is the only patch to apply to main Sage library",
+    "body": "Attachment [trac_7665-r-plotting.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7665-r-plotting.patch) by @kcrisman created at 2010-04-20 01:31:25\n\nBased on 4.3.5 - this is the only patch to apply to main Sage library",
     "created_at": "2010-04-20T01:31:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65671",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_7665-r-plotting.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7665-r-plotting.patch) by kcrisman created at 2010-04-20 01:31:25
+Attachment [trac_7665-r-plotting.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7665-r-plotting.patch) by @kcrisman created at 2010-04-20 01:31:25
 
 Based on 4.3.5 - this is the only patch to apply to main Sage library
 
@@ -935,7 +935,7 @@ archive/issue_comments_065672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65672",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -953,7 +953,7 @@ archive/issue_comments_065673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65673",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -971,7 +971,7 @@ archive/issue_comments_065674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65674",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -1004,16 +1004,16 @@ So I think fixing a few typos, testing a little more in the notebook, and we're 
 archive/issue_comments_065675.json:
 ```json
 {
-    "body": "Attachment [trac_7665-sagenb-rebased-against-sagenb0.8.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7665-sagenb-rebased-against-sagenb0.8.patch) by was created at 2010-04-24 23:43:47\n\nI rebased this against the new sagenb-0.8, and fixed the \"it's\" --> \"its\" issue.  and tested.",
+    "body": "Attachment [trac_7665-sagenb-rebased-against-sagenb0.8.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7665-sagenb-rebased-against-sagenb0.8.patch) by @williamstein created at 2010-04-24 23:43:47\n\nI rebased this against the new sagenb-0.8, and fixed the \"it's\" --> \"its\" issue.  and tested.",
     "created_at": "2010-04-24T23:43:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65675",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7665-sagenb-rebased-against-sagenb0.8.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7665-sagenb-rebased-against-sagenb0.8.patch) by was created at 2010-04-24 23:43:47
+Attachment [trac_7665-sagenb-rebased-against-sagenb0.8.patch](tarball://root/attachments/some-uuid/ticket7665/trac_7665-sagenb-rebased-against-sagenb0.8.patch) by @williamstein created at 2010-04-24 23:43:47
 
 I rebased this against the new sagenb-0.8, and fixed the "it's" --> "its" issue.  and tested.
 
@@ -1029,7 +1029,7 @@ archive/issue_comments_065676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65676",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -1047,7 +1047,7 @@ archive/issue_comments_065677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65677",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1065,7 +1065,7 @@ archive/issue_comments_065678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65678",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -1083,7 +1083,7 @@ archive/issue_comments_065679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65679",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -1105,7 +1105,7 @@ archive/issue_comments_065680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65680",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1123,7 +1123,7 @@ archive/issue_comments_065681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65681",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1141,7 +1141,7 @@ archive/issue_comments_065682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65682",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -1159,7 +1159,7 @@ archive/issue_comments_065683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7665#issuecomment-65683",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

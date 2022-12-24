@@ -3,7 +3,7 @@
 archive/issues_006368.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  timdumol\n\nRight now, in the notebook, usually shift-tab goes back to the previous input cell.  Since tab goes forward 4 spaces (or if text is highlighted, indents it), and shift-tab unindents highlighted text, it would by far make the most sense if shift-tab when no text is highlighted just goes back 4 spaces.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6368\n\n",
+    "body": "Assignee: boothby\n\nCC:  @TimDumol\n\nRight now, in the notebook, usually shift-tab goes back to the previous input cell.  Since tab goes forward 4 spaces (or if text is highlighted, indents it), and shift-tab unindents highlighted text, it would by far make the most sense if shift-tab when no text is highlighted just goes back 4 spaces.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6368\n\n",
     "created_at": "2009-06-20T15:27:19Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_006368.json:
     "title": "shift-tab in the notebook should go back 4 spaces instead of going to the previous input cell",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6368",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
 
-CC:  timdumol
+CC:  @TimDumol
 
 Right now, in the notebook, usually shift-tab goes back to the previous input cell.  Since tab goes forward 4 spaces (or if text is highlighted, indents it), and shift-tab unindents highlighted text, it would by far make the most sense if shift-tab when no text is highlighted just goes back 4 spaces.
 
@@ -77,7 +77,7 @@ archive/issue_comments_050939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6368",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6368#issuecomment-50939",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_050940.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6368",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6368#issuecomment-50940",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_050941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6368",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6368#issuecomment-50941",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

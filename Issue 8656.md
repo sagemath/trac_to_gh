@@ -3,7 +3,7 @@
 archive/issues_008656.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  vbraun\n\nRecent ticket #8650 (required for the output below) fixed a bug in face_lattice computation for polytopes. However, I think that both of the following examples for unbounded polyhedra are incorrect.\n\n\n```\nsage: for lset in Polyhedron(rays=[(1,0)]).face_lattice().level_sets(): lset\n[(None, (0, 1))]\n[((0,), (0,)), ((1,), (0, 1))]\n[((0, 1), (0,))]\n[((0, 1), None)]\n```\n\nThis ray has three faces: empty, vertex, and the whole ray (including the vertex at which it originates). Five are shown, including a face containing the ray, but not the vertex from which it originates.\n\n\n```\nsage: for lset in Polyhedron(rays=[(1,0), (0,1)]).face_lattice().level_sets(): lset\n[(None, (0, 1))]\n[((1,), (0,)), ((0,), (1,)), ((2,), (0, 1))]\n[((1, 2), (0,)), ((0, 2), (1,))]\n[((0, 1, 2), None)]\n```\n\nFor the quadrant we have five faces: empty, vertex, two rays, and the whole quadrant. The above output has seven.\n\nThe easiest fix is probably to raise an exception if the polyhedron is unbounded and state in the documentation that face_lattice works only for polytopes, but of course it would be nice to be able to compute correct faces in all cases.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8656\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @vbraun\n\nRecent ticket #8650 (required for the output below) fixed a bug in face_lattice computation for polytopes. However, I think that both of the following examples for unbounded polyhedra are incorrect.\n\n\n```\nsage: for lset in Polyhedron(rays=[(1,0)]).face_lattice().level_sets(): lset\n[(None, (0, 1))]\n[((0,), (0,)), ((1,), (0, 1))]\n[((0, 1), (0,))]\n[((0, 1), None)]\n```\n\nThis ray has three faces: empty, vertex, and the whole ray (including the vertex at which it originates). Five are shown, including a face containing the ray, but not the vertex from which it originates.\n\n\n```\nsage: for lset in Polyhedron(rays=[(1,0), (0,1)]).face_lattice().level_sets(): lset\n[(None, (0, 1))]\n[((1,), (0,)), ((0,), (1,)), ((2,), (0, 1))]\n[((1, 2), (0,)), ((0, 2), (1,))]\n[((0, 1, 2), None)]\n```\n\nFor the quadrant we have five faces: empty, vertex, two rays, and the whole quadrant. The above output has seven.\n\nThe easiest fix is probably to raise an exception if the polyhedron is unbounded and state in the documentation that face_lattice works only for polytopes, but of course it would be nice to be able to compute correct faces in all cases.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8656\n\n",
     "created_at": "2010-04-06T20:26:33Z",
     "labels": [
         "geometry",
@@ -14,12 +14,12 @@ archive/issues_008656.json:
     "title": "face_lattice does not seem to work for unbounded polyhedra",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8656",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 Assignee: mhampton
 
-CC:  vbraun
+CC:  @vbraun
 
 Recent ticket #8650 (required for the output below) fixed a bug in face_lattice computation for polytopes. However, I think that both of the following examples for unbounded polyhedra are incorrect.
 
@@ -63,7 +63,7 @@ archive/issue_comments_078546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8656#issuecomment-78546",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_078547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8656#issuecomment-78547",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_078548.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8656#issuecomment-78548",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_078549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8656#issuecomment-78549",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_078550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8656#issuecomment-78550",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_078551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8656#issuecomment-78551",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_078552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8656#issuecomment-78552",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_078553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8656#issuecomment-78553",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_078554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8656#issuecomment-78554",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_078555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8656#issuecomment-78555",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

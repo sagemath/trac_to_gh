@@ -3,7 +3,7 @@
 archive/issues_000156.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nx,y = QQ['x,y'].gens() \ni = ideal(x^2 - y^2 + 1)\ng = i.groebner_fan()\ng.reduced_groebner_bases()\n\n[[mysterious freeze]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/156\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nx,y = QQ['x,y'].gens() \ni = ideal(x^2 - y^2 + 1)\ng = i.groebner_fan()\ng.reduced_groebner_bases()\n\n[[mysterious freeze]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/156\n\n",
     "created_at": "2006-10-27T18:47:06Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_000156.json:
     "title": "freeze of gfan (actually singular -- not gfan's fault)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/156",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -46,7 +46,7 @@ archive/issue_comments_000704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/156",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/156#issuecomment-704",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_000705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/156",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/156#issuecomment-705",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

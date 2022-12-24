@@ -14,7 +14,7 @@ archive/issues_002181.json:
     "title": "pari 2.3.3 on osx -- gets build without readline",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2181",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -101,7 +101,7 @@ archive/issue_comments_014331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2181",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2181#issuecomment-14331",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_014332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2181",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2181#issuecomment-14332",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

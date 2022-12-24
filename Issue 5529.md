@@ -75,7 +75,7 @@ archive/issue_comments_043002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5529#issuecomment-43002",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -92,16 +92,16 @@ I give mvngu's part of this a positive review, so only my patch needs reviewing.
 archive/issue_comments_043003.json:
 ```json
 {
-    "body": "Attachment [5529-new.patch](tarball://root/attachments/some-uuid/ticket5529/5529-new.patch) by jhpalmieri created at 2009-03-23 02:46:46\n\napply this on top of the other patch",
+    "body": "Attachment [5529-new.patch](tarball://root/attachments/some-uuid/ticket5529/5529-new.patch) by @jhpalmieri created at 2009-03-23 02:46:46\n\napply this on top of the other patch",
     "created_at": "2009-03-23T02:46:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5529#issuecomment-43003",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [5529-new.patch](tarball://root/attachments/some-uuid/ticket5529/5529-new.patch) by jhpalmieri created at 2009-03-23 02:46:46
+Attachment [5529-new.patch](tarball://root/attachments/some-uuid/ticket5529/5529-new.patch) by @jhpalmieri created at 2009-03-23 02:46:46
 
 apply this on top of the other patch
 

@@ -3,7 +3,7 @@
 archive/issues_005863.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nCoverage of some files in algebras:\n\n```\nalgebra_ideal.py: 0% (0 of 19)\nalgebra_ideal_element.py: 0% (0 of 1)\nalgebra_order.py: 0% (0 of 16)\nalgebra_order_element.py: 0% (0 of 13)\nalgebra_order_frac_ideal.py: 0% (0 of 17)\nalgebra_order_ideal.py: 0% (0 of 21)\nalgebra_order_ideal_element.py: 0% (0 of 1)\n```\n\nFurthermore, these don't seem to be used by any of the rest of the Sage code, so let's delete them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5863\n\n",
+    "body": "Assignee: @jhpalmieri\n\nCoverage of some files in algebras:\n\n```\nalgebra_ideal.py: 0% (0 of 19)\nalgebra_ideal_element.py: 0% (0 of 1)\nalgebra_order.py: 0% (0 of 16)\nalgebra_order_element.py: 0% (0 of 13)\nalgebra_order_frac_ideal.py: 0% (0 of 17)\nalgebra_order_ideal.py: 0% (0 of 21)\nalgebra_order_ideal_element.py: 0% (0 of 1)\n```\n\nFurthermore, these don't seem to be used by any of the rest of the Sage code, so let's delete them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5863\n\n",
     "created_at": "2009-04-23T06:07:02Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_005863.json:
     "title": "[with patch, needs review] remove some files from sage/algebras",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5863",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 Coverage of some files in algebras:
 
@@ -44,16 +44,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5863
 archive/issue_comments_046322.json:
 ```json
 {
-    "body": "Attachment [nuke_algebras.patch](tarball://root/attachments/some-uuid/ticket5863/nuke_algebras.patch) by jhpalmieri created at 2009-04-23 06:07:20",
+    "body": "Attachment [nuke_algebras.patch](tarball://root/attachments/some-uuid/ticket5863/nuke_algebras.patch) by @jhpalmieri created at 2009-04-23 06:07:20",
     "created_at": "2009-04-23T06:07:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5863#issuecomment-46322",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [nuke_algebras.patch](tarball://root/attachments/some-uuid/ticket5863/nuke_algebras.patch) by jhpalmieri created at 2009-04-23 06:07:20
+Attachment [nuke_algebras.patch](tarball://root/attachments/some-uuid/ticket5863/nuke_algebras.patch) by @jhpalmieri created at 2009-04-23 06:07:20
 
 
 
@@ -67,7 +67,7 @@ archive/issue_comments_046323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5863#issuecomment-46323",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

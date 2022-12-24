@@ -3,7 +3,7 @@
 archive/issues_009532.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  rlm\n\nThere are several places in sage/graphs that use random numbers that aren't under the control of randstate.pyx.  I'm going to fix them now.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9532\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @rlmill\n\nThere are several places in sage/graphs that use random numbers that aren't under the control of randstate.pyx.  I'm going to fix them now.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9532\n\n",
     "created_at": "2010-07-17T20:12:40Z",
     "labels": [
         "graph theory",
@@ -19,7 +19,7 @@ archive/issues_009532.json:
 ```
 Assignee: cwitty
 
-CC:  rlm
+CC:  @rlmill
 
 There are several places in sage/graphs that use random numbers that aren't under the control of randstate.pyx.  I'm going to fix them now.
 
@@ -94,7 +94,7 @@ archive/issue_comments_091765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9532#issuecomment-91765",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_091766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9532#issuecomment-91766",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_091767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9532#issuecomment-91767",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

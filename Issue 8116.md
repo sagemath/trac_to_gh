@@ -3,7 +3,7 @@
 archive/issues_008116.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  robertwb\n\nIf $SAGE64 = \"yes\" we need CFLAGS=-m64 on Open Solaris.\n\nPatch coming up.\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/8116\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @robertwb\n\nIf $SAGE64 = \"yes\" we need CFLAGS=-m64 on Open Solaris.\n\nPatch coming up.\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/8116\n\n",
     "created_at": "2010-01-29T12:53:27Z",
     "labels": [
         "porting",
@@ -14,12 +14,12 @@ archive/issues_008116.json:
     "title": "cython fails to build in Open Solaris x64 as 64 bit if CFLAGS is not set to -m64 globally",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8116",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: drkirkby
 
-CC:  robertwb
+CC:  @robertwb
 
 If $SAGE64 = "yes" we need CFLAGS=-m64 on Open Solaris.
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8116
 archive/issue_comments_071288.json:
 ```json
 {
-    "body": "Attachment [cython-0.12.p0.patch](tarball://root/attachments/some-uuid/ticket8116/cython-0.12.p0.patch) by jsp created at 2010-01-29 13:23:27\n\n[http://boxen.math.washington.edu/home/jsp/ports/cython-0.12.p0.spkg](http://boxen.math.washington.edu/home/jsp/ports/cython-0.12.p0.spkg)\n\nThis spkg needs testing on OSX with $SAGE64 = \"yes\"\n\nJaap",
+    "body": "Attachment [cython-0.12.p0.patch](tarball://root/attachments/some-uuid/ticket8116/cython-0.12.p0.patch) by @jaapspies created at 2010-01-29 13:23:27\n\n[http://boxen.math.washington.edu/home/jsp/ports/cython-0.12.p0.spkg](http://boxen.math.washington.edu/home/jsp/ports/cython-0.12.p0.spkg)\n\nThis spkg needs testing on OSX with $SAGE64 = \"yes\"\n\nJaap",
     "created_at": "2010-01-29T13:23:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8116#issuecomment-71288",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [cython-0.12.p0.patch](tarball://root/attachments/some-uuid/ticket8116/cython-0.12.p0.patch) by jsp created at 2010-01-29 13:23:27
+Attachment [cython-0.12.p0.patch](tarball://root/attachments/some-uuid/ticket8116/cython-0.12.p0.patch) by @jaapspies created at 2010-01-29 13:23:27
 
 [http://boxen.math.washington.edu/home/jsp/ports/cython-0.12.p0.spkg](http://boxen.math.washington.edu/home/jsp/ports/cython-0.12.p0.spkg)
 
@@ -62,16 +62,16 @@ Jaap
 archive/issue_comments_071289.json:
 ```json
 {
-    "body": "Changing assignee from drkirkby to jsp.",
+    "body": "Changing assignee from drkirkby to @jaapspies.",
     "created_at": "2010-01-29T13:23:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8116#issuecomment-71289",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Changing assignee from drkirkby to jsp.
+Changing assignee from drkirkby to @jaapspies.
 
 
 
@@ -80,16 +80,16 @@ Changing assignee from drkirkby to jsp.
 archive/issue_comments_071290.json:
 ```json
 {
-    "body": "Changing assignee from jsp to drkirkby.",
+    "body": "Changing assignee from @jaapspies to drkirkby.",
     "created_at": "2010-01-29T16:41:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8116#issuecomment-71290",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Changing assignee from jsp to drkirkby.
+Changing assignee from @jaapspies to drkirkby.
 
 
 
@@ -103,7 +103,7 @@ archive/issue_comments_071291.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8116#issuecomment-71291",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_071294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8116#issuecomment-71294",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_071295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8116#issuecomment-71295",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_071296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8116#issuecomment-71296",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_071297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8116#issuecomment-71297",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -314,7 +314,7 @@ archive/issue_comments_071298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8116#issuecomment-71298",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -335,7 +335,7 @@ archive/issue_comments_071299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8116#issuecomment-71299",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -363,7 +363,7 @@ archive/issue_comments_071300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8116#issuecomment-71300",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 

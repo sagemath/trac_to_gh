@@ -3,7 +3,7 @@
 archive/issues_006382.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mhansen mvngu\n\nThis should work:\n\n\n```\nsage: E = EllipticCurve('11a'); P = E.torsion_subgroup().gens()[0]; P\n(5 : 5 : 1)\nsage: P.additive_order()\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/Users/wstein/.sage/temp/resid_tg105.upc.es/5930/_Users_wstein__sage_init_sage_0.py in <module>()\n\n/Users/wstein/build/sage/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.ModuleElement.additive_order (sage/structure/element.c:8113)()\n\nNotImplementedError: \nsage: P.order()\n5\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6382\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @mwhansen mvngu\n\nThis should work:\n\n\n```\nsage: E = EllipticCurve('11a'); P = E.torsion_subgroup().gens()[0]; P\n(5 : 5 : 1)\nsage: P.additive_order()\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/Users/wstein/.sage/temp/resid_tg105.upc.es/5930/_Users_wstein__sage_init_sage_0.py in <module>()\n\n/Users/wstein/build/sage/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.ModuleElement.additive_order (sage/structure/element.c:8113)()\n\nNotImplementedError: \nsage: P.order()\n5\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6382\n\n",
     "created_at": "2009-06-21T23:39:34Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_006382.json:
     "title": "implement additive_order for points on an elliptic curve",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6382",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  mhansen mvngu
+CC:  @mwhansen mvngu
 
 This should work:
 
@@ -57,7 +57,7 @@ archive/issue_comments_051088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6382",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6382#issuecomment-51088",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -70,16 +70,16 @@ Changing component from number theory to elliptic curves.
 archive/issue_comments_051089.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-07-20T19:56:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6382",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6382#issuecomment-51089",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_051090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6382",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6382#issuecomment-51090",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_051091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6382",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6382#issuecomment-51091",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_051092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6382",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6382#issuecomment-51092",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_051093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6382",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6382#issuecomment-51093",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

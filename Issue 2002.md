@@ -14,7 +14,7 @@ archive/issues_002002.json:
     "title": "creating a fresh new notebook in sage-2.10.1.rc3 is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2002",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -49,7 +49,7 @@ archive/issue_comments_012953.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2002#issuecomment-12953",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_012954.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2002#issuecomment-12954",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -80,16 +80,16 @@ archive/issue_comments_012954.json:
 archive/issue_comments_012955.json:
 ```json
 {
-    "body": "Attachment [pretty-print-notebook.patch](tarball://root/attachments/some-uuid/ticket2002/pretty-print-notebook.patch) by jason created at 2008-01-31 21:07:43",
+    "body": "Attachment [pretty-print-notebook.patch](tarball://root/attachments/some-uuid/ticket2002/pretty-print-notebook.patch) by @jasongrout created at 2008-01-31 21:07:43",
     "created_at": "2008-01-31T21:07:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2002#issuecomment-12955",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [pretty-print-notebook.patch](tarball://root/attachments/some-uuid/ticket2002/pretty-print-notebook.patch) by jason created at 2008-01-31 21:07:43
+Attachment [pretty-print-notebook.patch](tarball://root/attachments/some-uuid/ticket2002/pretty-print-notebook.patch) by @jasongrout created at 2008-01-31 21:07:43
 
 
 
@@ -103,7 +103,7 @@ archive/issue_comments_012956.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2002#issuecomment-12956",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

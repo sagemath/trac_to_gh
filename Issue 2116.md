@@ -14,7 +14,7 @@ archive/issues_002116.json:
     "title": "is package installed function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2116",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: mabshoff
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2116
 archive/issue_comments_013874.json:
 ```json
 {
-    "body": "Attachment [is-installed-package.patch](tarball://root/attachments/some-uuid/ticket2116/is-installed-package.patch) by jason created at 2008-02-09 04:37:01",
+    "body": "Attachment [is-installed-package.patch](tarball://root/attachments/some-uuid/ticket2116/is-installed-package.patch) by @jasongrout created at 2008-02-09 04:37:01",
     "created_at": "2008-02-09T04:37:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2116#issuecomment-13874",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [is-installed-package.patch](tarball://root/attachments/some-uuid/ticket2116/is-installed-package.patch) by jason created at 2008-02-09 04:37:01
+Attachment [is-installed-package.patch](tarball://root/attachments/some-uuid/ticket2116/is-installed-package.patch) by @jasongrout created at 2008-02-09 04:37:01
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_013875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2116#issuecomment-13875",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_013876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2116#issuecomment-13876",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

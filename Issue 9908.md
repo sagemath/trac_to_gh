@@ -3,7 +3,7 @@
 archive/issues_009908.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  jason chapoton\n\nFrom a user who found it difficult to uninvite Share people:\n\n```\nI wouldn't call it a bug either, but it just wasn't obvious that to remove a collaborator, you would click \"invite collaborators.\" \u00a0I had tried deleting the name and then clicking \"save and quit\" in the upper right.\n```\n\nThis should be clarified.  Perhaps it should be \"update collaborator list\" or something like that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9909\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @jasongrout @fchapoton\n\nFrom a user who found it difficult to uninvite Share people:\n\n```\nI wouldn't call it a bug either, but it just wasn't obvious that to remove a collaborator, you would click \"invite collaborators.\" \u00a0I had tried deleting the name and then clicking \"save and quit\" in the upper right.\n```\n\nThis should be clarified.  Perhaps it should be \"update collaborator list\" or something like that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9909\n\n",
     "created_at": "2010-09-14T13:19:38Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_009908.json:
     "title": "Clarify how to invite and remove collaborators in sharing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9908",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: jason, was
 
-CC:  jason chapoton
+CC:  @jasongrout @fchapoton
 
 From a user who found it difficult to uninvite Share people:
 
@@ -45,7 +45,7 @@ archive/issue_comments_098558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9908",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9908#issuecomment-98558",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_098559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9908",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9908#issuecomment-98559",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_098560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9908",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9908#issuecomment-98560",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_098561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9908",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9908#issuecomment-98561",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

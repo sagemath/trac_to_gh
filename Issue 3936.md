@@ -14,7 +14,7 @@ archive/issues_003936.json:
     "title": "Throw exceptions on nonsensical comparisons?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3936",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 Assignee: tbd
@@ -53,7 +53,7 @@ archive/issue_comments_028206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3936#issuecomment-28206",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_028207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3936#issuecomment-28207",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_028208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3936#issuecomment-28208",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

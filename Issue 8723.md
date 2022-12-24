@@ -3,7 +3,7 @@
 archive/issues_008723.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nAs reported to sage-nt:\n\nIf E is an elliptic curve over K and m is a nonzero integer, then E.multiplication_by_m(m) returns a tuple (X,Y) where X and Y are both in K(x,y) and give the \"formula\" for the multiplcation-by-m map on E.  Of course, mathematically, X is in K(x), but it is returned with the same parent as Y, namely K(x,y) (i.e. the fraction field of the 2-variable polynomial ring over K).\n\nThere is an optional parameter x_only which by default is False, but if True the return value is just X as above, an element of K(x,y) which happens not to involve y.\n\nI propose to change the function so that there is no change when x_only is False (the default), but when it is True the rational function returned would be in K(x) and not in K(x,y);  in this case one would not need to construct any bivariate polynomial rings or fields at all.\n\nWould anyone be unhappy about this?  The only issue which I can see is that if you construct phi to be the multiplcation-by-m isogeny, then phi.rational_maps() is currently of the form (X,Y) as above, so now one can check that\n\nphi.rational_maps()[0] == E.multiplication_by_m(m,True)\n\nwhile after my proposed change this would be False (I think, unless coercion would magically embed K(x) into K(x,y), which I have not checked).  \n\nImplementation and checking would be very easy.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8723\n\n",
+    "body": "Assignee: @JohnCremona\n\nAs reported to sage-nt:\n\nIf E is an elliptic curve over K and m is a nonzero integer, then E.multiplication_by_m(m) returns a tuple (X,Y) where X and Y are both in K(x,y) and give the \"formula\" for the multiplcation-by-m map on E.  Of course, mathematically, X is in K(x), but it is returned with the same parent as Y, namely K(x,y) (i.e. the fraction field of the 2-variable polynomial ring over K).\n\nThere is an optional parameter x_only which by default is False, but if True the return value is just X as above, an element of K(x,y) which happens not to involve y.\n\nI propose to change the function so that there is no change when x_only is False (the default), but when it is True the rational function returned would be in K(x) and not in K(x,y);  in this case one would not need to construct any bivariate polynomial rings or fields at all.\n\nWould anyone be unhappy about this?  The only issue which I can see is that if you construct phi to be the multiplcation-by-m isogeny, then phi.rational_maps() is currently of the form (X,Y) as above, so now one can check that\n\nphi.rational_maps()[0] == E.multiplication_by_m(m,True)\n\nwhile after my proposed change this would be False (I think, unless coercion would magically embed K(x) into K(x,y), which I have not checked).  \n\nImplementation and checking would be very easy.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8723\n\n",
     "created_at": "2010-04-20T10:53:54Z",
     "labels": [
         "elliptic curves",
@@ -14,10 +14,10 @@ archive/issues_008723.json:
     "title": "Change to return type of E.multiplcation_by_m(m,True)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8723",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 As reported to sage-nt:
 
@@ -52,7 +52,7 @@ archive/issue_comments_079657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8723#issuecomment-79657",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_079658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8723#issuecomment-79658",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_079659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8723#issuecomment-79659",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_079660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8723#issuecomment-79660",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_079661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8723#issuecomment-79661",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_079662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8723#issuecomment-79662",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_079663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8723#issuecomment-79663",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_079666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8723#issuecomment-79666",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_079667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8723#issuecomment-79667",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_079668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8723#issuecomment-79668",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_079669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8723#issuecomment-79669",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -319,7 +319,7 @@ archive/issue_comments_079670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8723#issuecomment-79670",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -365,7 +365,7 @@ archive/issue_comments_079671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8723#issuecomment-79671",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -430,7 +430,7 @@ archive/issue_comments_079672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8723#issuecomment-79672",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -454,7 +454,7 @@ archive/issue_comments_079673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8723#issuecomment-79673",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -472,7 +472,7 @@ archive/issue_comments_079674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8723#issuecomment-79674",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -498,7 +498,7 @@ archive/issue_comments_079675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8723#issuecomment-79675",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -516,7 +516,7 @@ archive/issue_comments_079676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8723#issuecomment-79676",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -538,7 +538,7 @@ archive/issue_comments_079677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8723#issuecomment-79677",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -556,7 +556,7 @@ archive/issue_comments_079678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8723#issuecomment-79678",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -574,7 +574,7 @@ archive/issue_comments_079679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8723#issuecomment-79679",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -599,7 +599,7 @@ archive/issue_comments_079680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8723#issuecomment-79680",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -621,7 +621,7 @@ archive/issue_comments_079681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8723#issuecomment-79681",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -641,7 +641,7 @@ archive/issue_comments_079682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8723#issuecomment-79682",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -659,7 +659,7 @@ archive/issue_comments_079683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8723#issuecomment-79683",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -677,7 +677,7 @@ archive/issue_comments_079684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8723#issuecomment-79684",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -695,7 +695,7 @@ archive/issue_comments_079685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8723#issuecomment-79685",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -713,7 +713,7 @@ archive/issue_comments_079686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8723#issuecomment-79686",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -772,7 +772,7 @@ archive/issue_comments_079687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8723#issuecomment-79687",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -792,7 +792,7 @@ archive/issue_comments_079688.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8723#issuecomment-79688",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -828,7 +828,7 @@ archive/issue_comments_079689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8723#issuecomment-79689",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -865,7 +865,7 @@ archive/issue_comments_079690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8723#issuecomment-79690",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 

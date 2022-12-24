@@ -3,7 +3,7 @@
 archive/issues_003969.json:
 ```json
 {
-    "body": "Assignee: was\n\nRobert wrote:\n\"\"\"\n\n```\nMatrix hashes are specifically designed to be compatible with each other: \nsage: M = random_matrix(GF(2), 10, 10)\nsage: M.set_immutable()\nsage: hash(M)\n561\nsage: MZ = M.change_ring(ZZ)\nsage: MZ.set_immutable()\nsage: hash(MZ)\n561\nsage: MS = M.sparse_matrix()\nsage: MS.set_immutable()\nsage: hash(MS)\n561\n```\n\nThis patch seems to break that. At a minimum, it seems sparse and dense should hash to the same thing. If we want to change this policy, we should at least ask on sage-devel.\n\"\"\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/3969\n\n",
+    "body": "Assignee: @williamstein\n\nRobert wrote:\n\"\"\"\n\n```\nMatrix hashes are specifically designed to be compatible with each other: \nsage: M = random_matrix(GF(2), 10, 10)\nsage: M.set_immutable()\nsage: hash(M)\n561\nsage: MZ = M.change_ring(ZZ)\nsage: MZ.set_immutable()\nsage: hash(MZ)\n561\nsage: MS = M.sparse_matrix()\nsage: MS.set_immutable()\nsage: hash(MS)\n561\n```\n\nThis patch seems to break that. At a minimum, it seems sparse and dense should hash to the same thing. If we want to change this policy, we should at least ask on sage-devel.\n\"\"\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/3969\n\n",
     "created_at": "2008-08-27T19:52:53Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_003969.json:
     "title": "Matrix_mod2_dense hashs follow-up (see #3724)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3969",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Robert wrote:
 """
@@ -52,16 +52,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3969
 archive/issue_comments_028520.json:
 ```json
 {
-    "body": "Attachment [3969-fast-matmod2-hash.patch](tarball://root/attachments/some-uuid/ticket3969/3969-fast-matmod2-hash.patch) by robertwb created at 2008-08-31 10:36:46\n\nThis is not as fast as xoring all the matrix entries, but is still very fast, and compatible (as possible) with the all the other matrices. \n\n\n```\nsage: M = random_matrix(GF(2), 3500, 3500)\nsage: M.set_immutable()\nsage: time hash(M)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n1523294\nsage: M = random_matrix(GF(2), 10000, 10000)\nsage: M.set_immutable()\nsage: time hash(M)\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02 s\n37785898\n```\n",
+    "body": "Attachment [3969-fast-matmod2-hash.patch](tarball://root/attachments/some-uuid/ticket3969/3969-fast-matmod2-hash.patch) by @robertwb created at 2008-08-31 10:36:46\n\nThis is not as fast as xoring all the matrix entries, but is still very fast, and compatible (as possible) with the all the other matrices. \n\n\n```\nsage: M = random_matrix(GF(2), 3500, 3500)\nsage: M.set_immutable()\nsage: time hash(M)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n1523294\nsage: M = random_matrix(GF(2), 10000, 10000)\nsage: M.set_immutable()\nsage: time hash(M)\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02 s\n37785898\n```\n",
     "created_at": "2008-08-31T10:36:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3969",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3969#issuecomment-28520",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3969-fast-matmod2-hash.patch](tarball://root/attachments/some-uuid/ticket3969/3969-fast-matmod2-hash.patch) by robertwb created at 2008-08-31 10:36:46
+Attachment [3969-fast-matmod2-hash.patch](tarball://root/attachments/some-uuid/ticket3969/3969-fast-matmod2-hash.patch) by @robertwb created at 2008-08-31 10:36:46
 
 This is not as fast as xoring all the matrix entries, but is still very fast, and compatible (as possible) with the all the other matrices. 
 
@@ -89,16 +89,16 @@ Wall time: 0.02 s
 archive/issue_comments_028521.json:
 ```json
 {
-    "body": "Attachment [3969-fast-matmod2-hash-rebased.patch](tarball://root/attachments/some-uuid/ticket3969/3969-fast-matmod2-hash-rebased.patch) by malb created at 2008-08-31 19:33:53",
+    "body": "Attachment [3969-fast-matmod2-hash-rebased.patch](tarball://root/attachments/some-uuid/ticket3969/3969-fast-matmod2-hash-rebased.patch) by @malb created at 2008-08-31 19:33:53",
     "created_at": "2008-08-31T19:33:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3969",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3969#issuecomment-28521",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [3969-fast-matmod2-hash-rebased.patch](tarball://root/attachments/some-uuid/ticket3969/3969-fast-matmod2-hash-rebased.patch) by malb created at 2008-08-31 19:33:53
+Attachment [3969-fast-matmod2-hash-rebased.patch](tarball://root/attachments/some-uuid/ticket3969/3969-fast-matmod2-hash-rebased.patch) by @malb created at 2008-08-31 19:33:53
 
 
 
@@ -112,7 +112,7 @@ archive/issue_comments_028522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3969",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3969#issuecomment-28522",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_028524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3969",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3969#issuecomment-28524",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008580.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nwstein@boxen:~$ /usr/local/bin/sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: V = GF(2)^3\nsage: (V/V)(V.0)\n| Sage Version 4.3.4, Release Date: 2010-03-19                       |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8580\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nwstein@boxen:~$ /usr/local/bin/sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: V = GF(2)^3\nsage: (V/V)(V.0)\n| Sage Version 4.3.4, Release Date: 2010-03-19                       |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8580\n\n",
     "created_at": "2010-03-22T21:39:50Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_008580.json:
     "title": "Bug in coercing into a 0-dimensional qotient vector space",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8580",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -56,7 +56,7 @@ archive/issue_comments_077712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8580#issuecomment-77712",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -110,16 +110,16 @@ mzd_submatrix (S=0x41f5410, M=0x0, startrow=0, startcol=0, endrow=1, endcol=0) a
 archive/issue_comments_077713.json:
 ```json
 {
-    "body": "Changing assignee from was to malb.",
+    "body": "Changing assignee from @williamstein to @malb.",
     "created_at": "2010-03-22T21:43:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8580#issuecomment-77713",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from was to malb.
+Changing assignee from @williamstein to @malb.
 
 
 
@@ -128,16 +128,16 @@ Changing assignee from was to malb.
 archive/issue_comments_077714.json:
 ```json
 {
-    "body": "Attachment [vector_mod2_dense_zero.patch](tarball://root/attachments/some-uuid/ticket8580/vector_mod2_dense_zero.patch) by malb created at 2010-03-22 23:10:42",
+    "body": "Attachment [vector_mod2_dense_zero.patch](tarball://root/attachments/some-uuid/ticket8580/vector_mod2_dense_zero.patch) by @malb created at 2010-03-22 23:10:42",
     "created_at": "2010-03-22T23:10:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8580#issuecomment-77714",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [vector_mod2_dense_zero.patch](tarball://root/attachments/some-uuid/ticket8580/vector_mod2_dense_zero.patch) by malb created at 2010-03-22 23:10:42
+Attachment [vector_mod2_dense_zero.patch](tarball://root/attachments/some-uuid/ticket8580/vector_mod2_dense_zero.patch) by @malb created at 2010-03-22 23:10:42
 
 
 
@@ -151,7 +151,7 @@ archive/issue_comments_077715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8580#issuecomment-77715",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_077716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8580#issuecomment-77716",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_077717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8580#issuecomment-77717",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_077718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8580#issuecomment-77718",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_077719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8580#issuecomment-77719",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

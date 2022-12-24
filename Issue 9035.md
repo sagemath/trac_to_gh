@@ -3,7 +3,7 @@
 archive/issues_009035.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nAttached patch adds a `degree` argument to the `reverse()` method of univariate polynomials and wraps the methods provided by FLINT in `polynomial_zmod_flint` and `polynomial_integer_dense_flint` classes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9035\n\n",
+    "body": "Assignee: @aghitza\n\nAttached patch adds a `degree` argument to the `reverse()` method of univariate polynomials and wraps the methods provided by FLINT in `polynomial_zmod_flint` and `polynomial_integer_dense_flint` classes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9035\n\n",
     "created_at": "2010-05-24T13:06:18Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_009035.json:
     "title": "add degree argument to univariate polynomial reverse() method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9035",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Attached patch adds a `degree` argument to the `reverse()` method of univariate polynomials and wraps the methods provided by FLINT in `polynomial_zmod_flint` and `polynomial_integer_dense_flint` classes.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9035
 archive/issue_comments_083646.json:
 ```json
 {
-    "body": "Attachment [trac_9035-zmod_poly_reverse.patch](tarball://root/attachments/some-uuid/ticket9035/trac_9035-zmod_poly_reverse.patch) by burcin created at 2010-05-24 13:10:39",
+    "body": "Attachment [trac_9035-zmod_poly_reverse.patch](tarball://root/attachments/some-uuid/ticket9035/trac_9035-zmod_poly_reverse.patch) by @burcin created at 2010-05-24 13:10:39",
     "created_at": "2010-05-24T13:10:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9035",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9035#issuecomment-83646",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9035-zmod_poly_reverse.patch](tarball://root/attachments/some-uuid/ticket9035/trac_9035-zmod_poly_reverse.patch) by burcin created at 2010-05-24 13:10:39
+Attachment [trac_9035-zmod_poly_reverse.patch](tarball://root/attachments/some-uuid/ticket9035/trac_9035-zmod_poly_reverse.patch) by @burcin created at 2010-05-24 13:10:39
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_083647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9035",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9035#issuecomment-83647",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_083648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9035",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9035#issuecomment-83648",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_083649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9035",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9035#issuecomment-83649",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_083650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9035",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9035#issuecomment-83650",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

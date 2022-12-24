@@ -14,7 +14,7 @@ archive/issues_002145.json:
     "title": "doc -- add shift-enter prominently to both the reference manual and tutorial (easy doc fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2145",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -44,7 +44,7 @@ archive/issue_comments_014075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2145#issuecomment-14075",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_014076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2145#issuecomment-14076",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_014077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2145#issuecomment-14077",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_014078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2145#issuecomment-14078",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_014079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2145#issuecomment-14079",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

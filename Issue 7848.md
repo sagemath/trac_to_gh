@@ -3,7 +3,7 @@
 archive/issues_007848.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  timdumol\n\nFrom sage-support:\n\n```\nThe directive given in the help doesn't work: \nShift click between cells to create a new HTML cell. Double click on \nexisting HTML to edit it. \nUse $...$ and $$...$$ to include typeset math in the HTML block. \n```\n\nThere is no mention of the horizontal blue line.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7848\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @TimDumol\n\nFrom sage-support:\n\n```\nThe directive given in the help doesn't work: \nShift click between cells to create a new HTML cell. Double click on \nexisting HTML to edit it. \nUse $...$ and $$...$$ to include typeset math in the HTML block. \n```\n\nThere is no mention of the horizontal blue line.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7848\n\n",
     "created_at": "2010-01-05T04:12:35Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007848.json:
     "title": "Fix misleading stuff about HTML cells on sagenb",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7848",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  timdumol
+CC:  @TimDumol
 
 From sage-support:
 
@@ -48,7 +48,7 @@ archive/issue_comments_067978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7848",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7848#issuecomment-67978",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_067979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7848",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7848#issuecomment-67979",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_067983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7848",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7848#issuecomment-67983",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_067984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7848",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7848#issuecomment-67984",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_067985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7848",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7848#issuecomment-67985",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

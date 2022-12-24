@@ -3,7 +3,7 @@
 archive/issues_005105.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe p-adic norm seems to be defined differently in SAGE to the standard textbook definition, in which it is usually normalized so that $|p|=1/p$, but this is what SAGE does:\n\n```\nsage: Q11=pAdicField(11)\nsage: n=Q11(11)\nsage: n.norm()\n11 + O(11^21)\n```\n\nWould it be possible to swap it round so that the norm of 11 is given as 1/11?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5105\n\n",
+    "body": "Assignee: @williamstein\n\nThe p-adic norm seems to be defined differently in SAGE to the standard textbook definition, in which it is usually normalized so that $|p|=1/p$, but this is what SAGE does:\n\n```\nsage: Q11=pAdicField(11)\nsage: n=Q11(11)\nsage: n.norm()\n11 + O(11^21)\n```\n\nWould it be possible to swap it round so that the norm of 11 is given as 1/11?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5105\n\n",
     "created_at": "2009-01-26T18:16:35Z",
     "labels": [
         "number theory",
@@ -17,7 +17,7 @@ archive/issues_005105.json:
     "user": "ljpk"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The p-adic norm seems to be defined differently in SAGE to the standard textbook definition, in which it is usually normalized so that $|p|=1/p$, but this is what SAGE does:
 
@@ -141,7 +141,7 @@ archive/issue_comments_038989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5105#issuecomment-38989",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -300,7 +300,7 @@ I have absolutely no idea what in the patch has caused this, but it needs to be 
 archive/issue_comments_038990.json:
 ```json
 {
-    "body": "Changing assignee from was to roed.",
+    "body": "Changing assignee from @williamstein to @roed314.",
     "created_at": "2009-04-26T19:55:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5105",
     "type": "issue_comment",
@@ -309,7 +309,7 @@ archive/issue_comments_038990.json:
 }
 ```
 
-Changing assignee from was to roed.
+Changing assignee from @williamstein to @roed314.
 
 
 
@@ -363,7 +363,7 @@ archive/issue_comments_038993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5105#issuecomment-38993",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 

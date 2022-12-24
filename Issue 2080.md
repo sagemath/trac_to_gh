@@ -14,7 +14,7 @@ archive/issues_002080.json:
     "title": "notebook -- create eval_asap cells; fix bug in checkbox functionality",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2080",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -55,7 +55,7 @@ archive/issue_comments_013469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2080#issuecomment-13469",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002021.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: a = matrix(SR, 2, [1,2,3,4])\nsage: a.eigenspaces()\nTraceback (most recent call last):\n...\nTypeError: 'SymbolicArithmetic' object is not iterable\nsage: a.eigenvalues()\n[]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2021\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: a = matrix(SR, 2, [1,2,3,4])\nsage: a.eigenspaces()\nTraceback (most recent call last):\n...\nTypeError: 'SymbolicArithmetic' object is not iterable\nsage: a.eigenvalues()\n[]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2021\n\n",
     "created_at": "2008-02-01T03:29:51Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_002021.json:
     "title": "SR eigenvalues and eigenvectors returns nonsense in both cases in the simplest example",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2021",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -47,7 +47,7 @@ archive/issue_comments_013041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2021#issuecomment-13041",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_013042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2021#issuecomment-13042",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_013043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2021#issuecomment-13043",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_013044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2021#issuecomment-13044",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_013045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2021#issuecomment-13045",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_013046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2021#issuecomment-13046",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_013047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2021#issuecomment-13047",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -283,16 +283,16 @@ appears to fix the problem.  However, it appears that this issue is unrelated to
 archive/issue_comments_013048.json:
 ```json
 {
-    "body": "Attachment [symbolic-matrix-maxima.patch](tarball://root/attachments/some-uuid/ticket2021/symbolic-matrix-maxima.patch) by jason created at 2008-02-01 19:09:46\n\nThanks to gfurnish's brilliance, we found a sticky maxima issue corrected in the first patch (with an added doctest to make sure something like that doesn't happen again!)",
+    "body": "Attachment [symbolic-matrix-maxima.patch](tarball://root/attachments/some-uuid/ticket2021/symbolic-matrix-maxima.patch) by @jasongrout created at 2008-02-01 19:09:46\n\nThanks to gfurnish's brilliance, we found a sticky maxima issue corrected in the first patch (with an added doctest to make sure something like that doesn't happen again!)",
     "created_at": "2008-02-01T19:09:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2021#issuecomment-13048",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [symbolic-matrix-maxima.patch](tarball://root/attachments/some-uuid/ticket2021/symbolic-matrix-maxima.patch) by jason created at 2008-02-01 19:09:46
+Attachment [symbolic-matrix-maxima.patch](tarball://root/attachments/some-uuid/ticket2021/symbolic-matrix-maxima.patch) by @jasongrout created at 2008-02-01 19:09:46
 
 Thanks to gfurnish's brilliance, we found a sticky maxima issue corrected in the first patch (with an added doctest to make sure something like that doesn't happen again!)
 
@@ -308,7 +308,7 @@ archive/issue_comments_013049.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2021#issuecomment-13049",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -342,7 +342,7 @@ archive/issue_comments_013050.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2021#issuecomment-13050",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_013051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2021#issuecomment-13051",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_013052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2021#issuecomment-13052",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003051.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nKeywords: Weyl characters, branching rules\n\nThis was announced here:\n\nhttp://groups.google.com/group/sage-combinat-devel/browse_thread/thread/74ed91d5153e6022?hl=en\n\nSee also:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/f713ed4bf3df8c22?hl=en\n\nAt Mike Hansen and Nicolas Thiery's suggestions the default separator is now \",\" and the separator is configurable. \n\nI believe all branching rules to maximal subgroups of compact Lie groups are implemented with two (large) exceptions: reducible subgroups like A1 x A1, and branching rules involving the exceptional groups. Mike requested that the branching be made a method, and the new syntax is something like\nchi.branch(B3,rule=\"symmetric\"). However I left Branch as a standalone program and the\nmain docstring is Branch? This of course can be changed. \n\nAn issue is that the caching is a substantial speedup but at a potentially large cost in memory. I hesitated to make it the default so cache=False is the default. But the user will be happier with cache=True.\n\nIt is possible to cache more aggressively. I have not implemented but know how to implement caching the results of multiplications instead of just the characters themselves.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3051\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: Weyl characters, branching rules\n\nThis was announced here:\n\nhttp://groups.google.com/group/sage-combinat-devel/browse_thread/thread/74ed91d5153e6022?hl=en\n\nSee also:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/f713ed4bf3df8c22?hl=en\n\nAt Mike Hansen and Nicolas Thiery's suggestions the default separator is now \",\" and the separator is configurable. \n\nI believe all branching rules to maximal subgroups of compact Lie groups are implemented with two (large) exceptions: reducible subgroups like A1 x A1, and branching rules involving the exceptional groups. Mike requested that the branching be made a method, and the new syntax is something like\nchi.branch(B3,rule=\"symmetric\"). However I left Branch as a standalone program and the\nmain docstring is Branch? This of course can be changed. \n\nAn issue is that the caching is a substantial speedup but at a potentially large cost in memory. I hesitated to make it the default so cache=False is the default. But the user will be happier with cache=True.\n\nIt is possible to cache more aggressively. I have not implemented but know how to implement caching the results of multiplications instead of just the characters themselves.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3051\n\n",
     "created_at": "2008-04-28T22:52:26Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_003051.json:
     "title": "Weyl Characters",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3051",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -54,16 +54,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3051
 archive/issue_comments_021023.json:
 ```json
 {
-    "body": "Attachment [9607.patch](tarball://root/attachments/some-uuid/ticket3051/9607.patch) by bump created at 2008-04-28 22:52:48",
+    "body": "Attachment [9607.patch](tarball://root/attachments/some-uuid/ticket3051/9607.patch) by @dwbump created at 2008-04-28 22:52:48",
     "created_at": "2008-04-28T22:52:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21023",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [9607.patch](tarball://root/attachments/some-uuid/ticket3051/9607.patch) by bump created at 2008-04-28 22:52:48
+Attachment [9607.patch](tarball://root/attachments/some-uuid/ticket3051/9607.patch) by @dwbump created at 2008-04-28 22:52:48
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_021024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21024",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_021026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21026",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_021027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21027",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_021028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21028",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_021029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21029",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -229,16 +229,16 @@ In view of Michael Abshoff's comments the caching should be left off by default 
 archive/issue_comments_021030.json:
 ```json
 {
-    "body": "Attachment [9608.patch](tarball://root/attachments/some-uuid/ticket3051/9608.patch) by bump created at 2008-04-29 16:09:22\n\nname change: Branch -> branch_weyl_character",
+    "body": "Attachment [9608.patch](tarball://root/attachments/some-uuid/ticket3051/9608.patch) by @dwbump created at 2008-04-29 16:09:22\n\nname change: Branch -> branch_weyl_character",
     "created_at": "2008-04-29T16:09:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21030",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [9608.patch](tarball://root/attachments/some-uuid/ticket3051/9608.patch) by bump created at 2008-04-29 16:09:22
+Attachment [9608.patch](tarball://root/attachments/some-uuid/ticket3051/9608.patch) by @dwbump created at 2008-04-29 16:09:22
 
 name change: Branch -> branch_weyl_character
 
@@ -254,7 +254,7 @@ archive/issue_comments_021031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21031",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_021032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21032",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -285,16 +285,16 @@ I'll go through and get it 100% doctested so it can go in.
 archive/issue_comments_021033.json:
 ```json
 {
-    "body": "Attachment [9609.patch](tarball://root/attachments/some-uuid/ticket3051/9609.patch) by bump created at 2008-05-02 14:53:51",
+    "body": "Attachment [9609.patch](tarball://root/attachments/some-uuid/ticket3051/9609.patch) by @dwbump created at 2008-05-02 14:53:51",
     "created_at": "2008-05-02T14:53:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21033",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [9609.patch](tarball://root/attachments/some-uuid/ticket3051/9609.patch) by bump created at 2008-05-02 14:53:51
+Attachment [9609.patch](tarball://root/attachments/some-uuid/ticket3051/9609.patch) by @dwbump created at 2008-05-02 14:53:51
 
 
 
@@ -308,7 +308,7 @@ archive/issue_comments_021034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21034",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -327,16 +327,16 @@ Corrects a minor bug (`__repr__` misspelled somewhere).
 archive/issue_comments_021035.json:
 ```json
 {
-    "body": "Attachment [9610.patch](tarball://root/attachments/some-uuid/ticket3051/9610.patch) by bump created at 2008-05-02 21:53:11\n\nThe patch 9610.patch completes the doctesting to 100%.\n\nI found 2 bugs which are fixed. In _add_ some code had the wrong\nindent level and this has been fixed. and `_neg_` was misspelled\nsomewhere.\n\nDan",
+    "body": "Attachment [9610.patch](tarball://root/attachments/some-uuid/ticket3051/9610.patch) by @dwbump created at 2008-05-02 21:53:11\n\nThe patch 9610.patch completes the doctesting to 100%.\n\nI found 2 bugs which are fixed. In _add_ some code had the wrong\nindent level and this has been fixed. and `_neg_` was misspelled\nsomewhere.\n\nDan",
     "created_at": "2008-05-02T21:53:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21035",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [9610.patch](tarball://root/attachments/some-uuid/ticket3051/9610.patch) by bump created at 2008-05-02 21:53:11
+Attachment [9610.patch](tarball://root/attachments/some-uuid/ticket3051/9610.patch) by @dwbump created at 2008-05-02 21:53:11
 
 The patch 9610.patch completes the doctesting to 100%.
 
@@ -353,16 +353,16 @@ Dan
 archive/issue_comments_021036.json:
 ```json
 {
-    "body": "Attachment [9611.patch](tarball://root/attachments/some-uuid/ticket3051/9611.patch) by bump created at 2008-05-04 17:17:43\n\nAdded 9611.patch.\n\nMinor bugfixes and improvements.\n\nThe bugfixes are in WeylCharacterRing's `__call__` method, which worked reasonably well over ZZ but not over a polynomial ring. After the patch, we first intercept integers, then try to coerce elements into the base ring, but we check the parent first since it is possible to coerce a list of integers into a polynomial ring.  In other words, we don't want to break calls like `R([2,1,0])`.\n\nI found that changing the way `repr_lincomb` is called resulted in nicer output.\n\nA parent method is added to elements.\n\nMore doctests are added in response to the problems I found in __call__ and there are revisions to old doctests in response to the revised lincomb call.",
+    "body": "Attachment [9611.patch](tarball://root/attachments/some-uuid/ticket3051/9611.patch) by @dwbump created at 2008-05-04 17:17:43\n\nAdded 9611.patch.\n\nMinor bugfixes and improvements.\n\nThe bugfixes are in WeylCharacterRing's `__call__` method, which worked reasonably well over ZZ but not over a polynomial ring. After the patch, we first intercept integers, then try to coerce elements into the base ring, but we check the parent first since it is possible to coerce a list of integers into a polynomial ring.  In other words, we don't want to break calls like `R([2,1,0])`.\n\nI found that changing the way `repr_lincomb` is called resulted in nicer output.\n\nA parent method is added to elements.\n\nMore doctests are added in response to the problems I found in __call__ and there are revisions to old doctests in response to the revised lincomb call.",
     "created_at": "2008-05-04T17:17:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21036",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [9611.patch](tarball://root/attachments/some-uuid/ticket3051/9611.patch) by bump created at 2008-05-04 17:17:43
+Attachment [9611.patch](tarball://root/attachments/some-uuid/ticket3051/9611.patch) by @dwbump created at 2008-05-04 17:17:43
 
 Added 9611.patch.
 
@@ -383,16 +383,16 @@ More doctests are added in response to the problems I found in __call__ and ther
 archive/issue_comments_021037.json:
 ```json
 {
-    "body": "Attachment [9673.patch](tarball://root/attachments/some-uuid/ticket3051/9673.patch) by bump created at 2008-05-06 18:56:07",
+    "body": "Attachment [9673.patch](tarball://root/attachments/some-uuid/ticket3051/9673.patch) by @dwbump created at 2008-05-06 18:56:07",
     "created_at": "2008-05-06T18:56:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21037",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [9673.patch](tarball://root/attachments/some-uuid/ticket3051/9673.patch) by bump created at 2008-05-06 18:56:07
+Attachment [9673.patch](tarball://root/attachments/some-uuid/ticket3051/9673.patch) by @dwbump created at 2008-05-06 18:56:07
 
 
 
@@ -406,7 +406,7 @@ archive/issue_comments_021038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21038",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -425,16 +425,16 @@ One test result was changed because the weights of B3(spin) are calculated in a 
 archive/issue_comments_021039.json:
 ```json
 {
-    "body": "Attachment [9674.patch](tarball://root/attachments/some-uuid/ticket3051/9674.patch) by bump created at 2008-05-07 21:54:17",
+    "body": "Attachment [9674.patch](tarball://root/attachments/some-uuid/ticket3051/9674.patch) by @dwbump created at 2008-05-07 21:54:17",
     "created_at": "2008-05-07T21:54:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21039",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [9674.patch](tarball://root/attachments/some-uuid/ticket3051/9674.patch) by bump created at 2008-05-07 21:54:17
+Attachment [9674.patch](tarball://root/attachments/some-uuid/ticket3051/9674.patch) by @dwbump created at 2008-05-07 21:54:17
 
 
 
@@ -443,16 +443,16 @@ Attachment [9674.patch](tarball://root/attachments/some-uuid/ticket3051/9674.pat
 archive/issue_comments_021040.json:
 ```json
 {
-    "body": "Attachment [3051-unified.patch](tarball://root/attachments/some-uuid/ticket3051/3051-unified.patch) by bump created at 2008-05-07 21:55:37",
+    "body": "Attachment [3051-unified.patch](tarball://root/attachments/some-uuid/ticket3051/3051-unified.patch) by @dwbump created at 2008-05-07 21:55:37",
     "created_at": "2008-05-07T21:55:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21040",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [3051-unified.patch](tarball://root/attachments/some-uuid/ticket3051/3051-unified.patch) by bump created at 2008-05-07 21:55:37
+Attachment [3051-unified.patch](tarball://root/attachments/some-uuid/ticket3051/3051-unified.patch) by @dwbump created at 2008-05-07 21:55:37
 
 
 
@@ -466,7 +466,7 @@ archive/issue_comments_021041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21041",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -493,7 +493,7 @@ archive/issue_comments_021042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21042",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -511,7 +511,7 @@ archive/issue_comments_021043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21043",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -529,7 +529,7 @@ archive/issue_comments_021044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21044",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -542,16 +542,16 @@ Don't worry about that. If you want to make a new unified patch, do so and let m
 archive/issue_comments_021045.json:
 ```json
 {
-    "body": "Attachment [3051-1.patch](tarball://root/attachments/some-uuid/ticket3051/3051-1.patch) by bump created at 2008-05-08 14:41:24\n\n> Don't worry about that. If you want to make a new unified patch, do so and let me know. I'll re-run sage -testall.\n\nThanks.\n\nI made a separate patch called 3051-1.patch containing just the changes to\ncrystals.py. This goes on top of 3051-1.unified.",
+    "body": "Attachment [3051-1.patch](tarball://root/attachments/some-uuid/ticket3051/3051-1.patch) by @dwbump created at 2008-05-08 14:41:24\n\n> Don't worry about that. If you want to make a new unified patch, do so and let me know. I'll re-run sage -testall.\n\nThanks.\n\nI made a separate patch called 3051-1.patch containing just the changes to\ncrystals.py. This goes on top of 3051-1.unified.",
     "created_at": "2008-05-08T14:41:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21045",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [3051-1.patch](tarball://root/attachments/some-uuid/ticket3051/3051-1.patch) by bump created at 2008-05-08 14:41:24
+Attachment [3051-1.patch](tarball://root/attachments/some-uuid/ticket3051/3051-1.patch) by @dwbump created at 2008-05-08 14:41:24
 
 > Don't worry about that. If you want to make a new unified patch, do so and let me know. I'll re-run sage -testall.
 
@@ -572,7 +572,7 @@ archive/issue_comments_021046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21046",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -612,7 +612,7 @@ archive/issue_comments_021047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21047",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -638,7 +638,7 @@ archive/issue_comments_021048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21048",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -665,16 +665,16 @@ I'll put up another patch (I hope by 5PM PDT) addressing (1) and (3) but not (2)
 archive/issue_comments_021049.json:
 ```json
 {
-    "body": "Attachment [3051-2.patch](tarball://root/attachments/some-uuid/ticket3051/3051-2.patch) by bump created at 2008-05-09 00:10:57",
+    "body": "Attachment [3051-2.patch](tarball://root/attachments/some-uuid/ticket3051/3051-2.patch) by @dwbump created at 2008-05-09 00:10:57",
     "created_at": "2008-05-09T00:10:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21049",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [3051-2.patch](tarball://root/attachments/some-uuid/ticket3051/3051-2.patch) by bump created at 2008-05-09 00:10:57
+Attachment [3051-2.patch](tarball://root/attachments/some-uuid/ticket3051/3051-2.patch) by @dwbump created at 2008-05-09 00:10:57
 
 
 
@@ -683,16 +683,16 @@ Attachment [3051-2.patch](tarball://root/attachments/some-uuid/ticket3051/3051-2
 archive/issue_comments_021050.json:
 ```json
 {
-    "body": "Attachment [3051-unified-1.patch](tarball://root/attachments/some-uuid/ticket3051/3051-unified-1.patch) by bump created at 2008-05-09 00:11:53",
+    "body": "Attachment [3051-unified-1.patch](tarball://root/attachments/some-uuid/ticket3051/3051-unified-1.patch) by @dwbump created at 2008-05-09 00:11:53",
     "created_at": "2008-05-09T00:11:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21050",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [3051-unified-1.patch](tarball://root/attachments/some-uuid/ticket3051/3051-unified-1.patch) by bump created at 2008-05-09 00:11:53
+Attachment [3051-unified-1.patch](tarball://root/attachments/some-uuid/ticket3051/3051-unified-1.patch) by @dwbump created at 2008-05-09 00:11:53
 
 
 
@@ -706,7 +706,7 @@ archive/issue_comments_021051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21051",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -728,7 +728,7 @@ archive/issue_comments_021052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21052",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -741,16 +741,16 @@ This patch 3051-unified-1.patch applied cleanly to 3.0.1 and passes sage -testal
 archive/issue_comments_021053.json:
 ```json
 {
-    "body": "Attachment [3051-3.patch](tarball://root/attachments/some-uuid/ticket3051/3051-3.patch) by bump created at 2008-05-17 04:56:21\n\nGoes on top of 3051-unified-1.patch. Revises the __repr to avoid string notation and adds _coerce_impl methods",
+    "body": "Attachment [3051-3.patch](tarball://root/attachments/some-uuid/ticket3051/3051-3.patch) by @dwbump created at 2008-05-17 04:56:21\n\nGoes on top of 3051-unified-1.patch. Revises the __repr to avoid string notation and adds _coerce_impl methods",
     "created_at": "2008-05-17T04:56:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21053",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [3051-3.patch](tarball://root/attachments/some-uuid/ticket3051/3051-3.patch) by bump created at 2008-05-17 04:56:21
+Attachment [3051-3.patch](tarball://root/attachments/some-uuid/ticket3051/3051-3.patch) by @dwbump created at 2008-05-17 04:56:21
 
 Goes on top of 3051-unified-1.patch. Revises the __repr to avoid string notation and adds _coerce_impl methods
 
@@ -766,7 +766,7 @@ archive/issue_comments_021054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21054",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -781,16 +781,16 @@ Also, _coerce_impl methods were added to WeylCharacterRing and WeightRing, so th
 archive/issue_comments_021055.json:
 ```json
 {
-    "body": "Attachment [3051-unified-2.patch](tarball://root/attachments/some-uuid/ticket3051/3051-unified-2.patch) by bump created at 2008-05-17 14:26:06\n\nUnified patch equivalent to 3051-unified-1.patch plus 3051-3.patch plus 3051-4.patch",
+    "body": "Attachment [3051-unified-2.patch](tarball://root/attachments/some-uuid/ticket3051/3051-unified-2.patch) by @dwbump created at 2008-05-17 14:26:06\n\nUnified patch equivalent to 3051-unified-1.patch plus 3051-3.patch plus 3051-4.patch",
     "created_at": "2008-05-17T14:26:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21055",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [3051-unified-2.patch](tarball://root/attachments/some-uuid/ticket3051/3051-unified-2.patch) by bump created at 2008-05-17 14:26:06
+Attachment [3051-unified-2.patch](tarball://root/attachments/some-uuid/ticket3051/3051-unified-2.patch) by @dwbump created at 2008-05-17 14:26:06
 
 Unified patch equivalent to 3051-unified-1.patch plus 3051-3.patch plus 3051-4.patch
 
@@ -806,7 +806,7 @@ archive/issue_comments_021056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21056",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -824,7 +824,7 @@ archive/issue_comments_021057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21057",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -868,7 +868,7 @@ archive/issue_comments_021058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21058",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -889,16 +889,16 @@ file sage/combinat/root_system/weyl_characters.py already exists
 archive/issue_comments_021059.json:
 ```json
 {
-    "body": "Attachment [3051-doctest.patch](tarball://root/attachments/some-uuid/ticket3051/3051-doctest.patch) by mhansen created at 2008-05-18 00:05:24",
+    "body": "Attachment [3051-doctest.patch](tarball://root/attachments/some-uuid/ticket3051/3051-doctest.patch) by @mwhansen created at 2008-05-18 00:05:24",
     "created_at": "2008-05-18T00:05:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21059",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [3051-doctest.patch](tarball://root/attachments/some-uuid/ticket3051/3051-doctest.patch) by mhansen created at 2008-05-18 00:05:24
+Attachment [3051-doctest.patch](tarball://root/attachments/some-uuid/ticket3051/3051-doctest.patch) by @mwhansen created at 2008-05-18 00:05:24
 
 
 
@@ -912,7 +912,7 @@ archive/issue_comments_021060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21060",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

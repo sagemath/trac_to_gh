@@ -3,7 +3,7 @@
 archive/issues_009675.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  mhansen mvngu schilly\n\nKeywords: brian brain simulator neuronal dynamics\n\nI've created a Sage package from an already existing Python package called Brian (see http://www.briansimulator.org/ for more information). The description that is provided in this webpage is the following:\n\n*Brian is a simulator for spiking neural networks available on almost all platforms. The motivation for this project is that a simulator should not only save the time of processors, but also the time of scientists. It is easy to learn and use, highly flexible and easily extensible. The Brian package itself and simulations using it are all written in the Python programming language.*\n\nI'm not sure whether this package should be proposed as experimental or optional. For the moment I've put it as an experimental package. However, I think it could be optional, because as a Python package it has been widely tested and works perfectly, so I don't think there'll be a lot of problems as a Sage package. Please, let me know your opinion on that.\n\nI must say I detected some problems with Brian units related to the Sage classes 'RealNumber' and 'Integer', so I created a patch so that when Brian is imported these two classes are redefined as follows:\n\n\n```\nRealNumber=float\nInteger=int\n```\n\n\nThis solves the problems. \n\nI attach the .spkg here (I know it's better just to provide a link, but I don't have anywhere else to upload it to).\n\nPlease, let me know what you think!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9675\n\n",
+    "body": "Assignee: tbd\n\nCC:  @mwhansen mvngu @haraldschilly\n\nKeywords: brian brain simulator neuronal dynamics\n\nI've created a Sage package from an already existing Python package called Brian (see http://www.briansimulator.org/ for more information). The description that is provided in this webpage is the following:\n\n*Brian is a simulator for spiking neural networks available on almost all platforms. The motivation for this project is that a simulator should not only save the time of processors, but also the time of scientists. It is easy to learn and use, highly flexible and easily extensible. The Brian package itself and simulations using it are all written in the Python programming language.*\n\nI'm not sure whether this package should be proposed as experimental or optional. For the moment I've put it as an experimental package. However, I think it could be optional, because as a Python package it has been widely tested and works perfectly, so I don't think there'll be a lot of problems as a Sage package. Please, let me know your opinion on that.\n\nI must say I detected some problems with Brian units related to the Sage classes 'RealNumber' and 'Integer', so I created a patch so that when Brian is imported these two classes are redefined as follows:\n\n\n```\nRealNumber=float\nInteger=int\n```\n\n\nThis solves the problems. \n\nI attach the .spkg here (I know it's better just to provide a link, but I don't have anywhere else to upload it to).\n\nPlease, let me know what you think!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9675\n\n",
     "created_at": "2010-08-03T16:02:16Z",
     "labels": [
         "packages: experimental",
@@ -19,7 +19,7 @@ archive/issues_009675.json:
 ```
 Assignee: tbd
 
-CC:  mhansen mvngu schilly
+CC:  @mwhansen mvngu @haraldschilly
 
 Keywords: brian brain simulator neuronal dynamics
 
@@ -78,7 +78,7 @@ archive/issue_comments_094018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9675",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9675#issuecomment-94018",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_094021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9675",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9675#issuecomment-94021",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_094023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9675",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9675#issuecomment-94023",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_094024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9675",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9675#issuecomment-94024",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_094025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9675",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9675#issuecomment-94025",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_094026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9675",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9675#issuecomment-94026",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_094027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9675",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9675#issuecomment-94027",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -398,7 +398,7 @@ archive/issue_comments_094030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9675",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9675#issuecomment-94030",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -482,7 +482,7 @@ archive/issue_comments_094034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9675",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9675#issuecomment-94034",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -495,16 +495,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_094035.json:
 ```json
 {
-    "body": "Attachment [brian-1.2.1.p0.spkg](tarball://root/attachments/some-uuid/ticket9675/brian-1.2.1.p0.spkg) by mpatel created at 2010-09-01 09:36:14",
+    "body": "Attachment [brian-1.2.1.p0.spkg](tarball://root/attachments/some-uuid/ticket9675/brian-1.2.1.p0.spkg) by @qed777 created at 2010-09-01 09:36:14",
     "created_at": "2010-09-01T09:36:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9675",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9675#issuecomment-94035",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [brian-1.2.1.p0.spkg](tarball://root/attachments/some-uuid/ticket9675/brian-1.2.1.p0.spkg) by mpatel created at 2010-09-01 09:36:14
+Attachment [brian-1.2.1.p0.spkg](tarball://root/attachments/some-uuid/ticket9675/brian-1.2.1.p0.spkg) by @qed777 created at 2010-09-01 09:36:14
 
 
 
@@ -518,7 +518,7 @@ archive/issue_comments_094036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9675",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9675#issuecomment-94036",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -536,7 +536,7 @@ archive/issue_comments_094037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9675",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9675#issuecomment-94037",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -554,7 +554,7 @@ archive/issue_comments_094038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9675",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9675#issuecomment-94038",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -574,7 +574,7 @@ archive/issue_comments_094039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9675",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9675#issuecomment-94039",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -592,7 +592,7 @@ archive/issue_comments_094040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9675",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9675#issuecomment-94040",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -613,7 +613,7 @@ archive/issue_comments_094041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9675",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9675#issuecomment-94041",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -677,7 +677,7 @@ archive/issue_comments_094044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9675",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9675#issuecomment-94044",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

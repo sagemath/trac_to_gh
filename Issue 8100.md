@@ -3,7 +3,7 @@
 archive/issues_008100.json:
 ```json
 {
-    "body": "Assignee: was\n\nIn sage-4.3.2.alpha0 (and all earlier versions I can remember), running the notebook changes my working directory:\n\n```\nsage: pwd\n'/Users/palmieri'\nsage: notebook()\nThe notebook files are stored in: sage_notebook.sagenb\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:8000 *\n*                                                *\n**************************************************\n...\n^C\n...\nsage: pwd\n'/Users/palmieri/.sage'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8100\n\n",
+    "body": "Assignee: @williamstein\n\nIn sage-4.3.2.alpha0 (and all earlier versions I can remember), running the notebook changes my working directory:\n\n```\nsage: pwd\n'/Users/palmieri'\nsage: notebook()\nThe notebook files are stored in: sage_notebook.sagenb\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:8000 *\n*                                                *\n**************************************************\n...\n^C\n...\nsage: pwd\n'/Users/palmieri/.sage'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8100\n\n",
     "created_at": "2010-01-27T23:45:50Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_008100.json:
     "title": "running the notebook should not change the working directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8100",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 In sage-4.3.2.alpha0 (and all earlier versions I can remember), running the notebook changes my working directory:
 
@@ -56,7 +56,7 @@ archive/issue_comments_071075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8100#issuecomment-71075",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_071076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8100#issuecomment-71076",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -87,16 +87,16 @@ Changing status from new to needs_review.
 archive/issue_comments_071077.json:
 ```json
 {
-    "body": "Attachment [trac_8100-run_notebook_cwd.patch](tarball://root/attachments/some-uuid/ticket8100/trac_8100-run_notebook_cwd.patch) by mpatel created at 2010-02-05 13:17:25\n\nPatch attached.",
+    "body": "Attachment [trac_8100-run_notebook_cwd.patch](tarball://root/attachments/some-uuid/ticket8100/trac_8100-run_notebook_cwd.patch) by @qed777 created at 2010-02-05 13:17:25\n\nPatch attached.",
     "created_at": "2010-02-05T13:17:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8100#issuecomment-71077",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8100-run_notebook_cwd.patch](tarball://root/attachments/some-uuid/ticket8100/trac_8100-run_notebook_cwd.patch) by mpatel created at 2010-02-05 13:17:25
+Attachment [trac_8100-run_notebook_cwd.patch](tarball://root/attachments/some-uuid/ticket8100/trac_8100-run_notebook_cwd.patch) by @qed777 created at 2010-02-05 13:17:25
 
 Patch attached.
 
@@ -112,7 +112,7 @@ archive/issue_comments_071078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8100#issuecomment-71078",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_071079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8100#issuecomment-71079",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_071080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8100#issuecomment-71080",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

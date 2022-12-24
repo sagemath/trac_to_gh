@@ -3,7 +3,7 @@
 archive/issues_002899.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\n\n```\n> Also, round(RR(3.0)) returns an Integer...should RDF behave the same\n> > way? (currently round(RDF(3.0)) returns an RDF).\n\nWe recently changed round, floor, ceiling, and trunc on RR to return\nintegers; yes, I think the corresponding RDF methods should change as\nwell.\n\nCarl\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2899\n\n",
+    "body": "Assignee: @robertwb\n\n\n```\n> Also, round(RR(3.0)) returns an Integer...should RDF behave the same\n> > way? (currently round(RDF(3.0)) returns an RDF).\n\nWe recently changed round, floor, ceiling, and trunc on RR to return\nintegers; yes, I think the corresponding RDF methods should change as\nwell.\n\nCarl\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2899\n\n",
     "created_at": "2008-04-12T16:09:26Z",
     "labels": [
         "coercion",
@@ -14,10 +14,10 @@ archive/issues_002899.json:
     "title": "Make RDF round and friends return Integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2899",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 
 ```
@@ -49,7 +49,7 @@ archive/issue_comments_019969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2899#issuecomment-19969",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -62,16 +62,16 @@ The fix for #2898 will fix this.
 archive/issue_comments_019970.json:
 ```json
 {
-    "body": "Attachment [2899-ncalexan-RIF-floor-ceil-1.patch](tarball://root/attachments/some-uuid/ticket2899/2899-ncalexan-RIF-floor-ceil-1.patch) by ncalexan created at 2008-08-14 00:38:58\n\nThis makes floor and ceil do what I expect for RIF.  I believe that #2898 does make RDF work.",
+    "body": "Attachment [2899-ncalexan-RIF-floor-ceil-1.patch](tarball://root/attachments/some-uuid/ticket2899/2899-ncalexan-RIF-floor-ceil-1.patch) by @ncalexan created at 2008-08-14 00:38:58\n\nThis makes floor and ceil do what I expect for RIF.  I believe that #2898 does make RDF work.",
     "created_at": "2008-08-14T00:38:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2899#issuecomment-19970",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [2899-ncalexan-RIF-floor-ceil-1.patch](tarball://root/attachments/some-uuid/ticket2899/2899-ncalexan-RIF-floor-ceil-1.patch) by ncalexan created at 2008-08-14 00:38:58
+Attachment [2899-ncalexan-RIF-floor-ceil-1.patch](tarball://root/attachments/some-uuid/ticket2899/2899-ncalexan-RIF-floor-ceil-1.patch) by @ncalexan created at 2008-08-14 00:38:58
 
 This makes floor and ceil do what I expect for RIF.  I believe that #2898 does make RDF work.
 
@@ -87,7 +87,7 @@ archive/issue_comments_019971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2899#issuecomment-19971",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_019972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2899#issuecomment-19972",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_019973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2899#issuecomment-19973",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_019978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2899#issuecomment-19978",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -404,7 +404,7 @@ archive/issue_comments_019984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2899#issuecomment-19984",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -422,7 +422,7 @@ archive/issue_comments_019985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2899#issuecomment-19985",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

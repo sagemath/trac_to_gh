@@ -14,7 +14,7 @@ archive/issues_004430.json:
     "title": "optimize new worksheet startup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4430",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tbd
@@ -69,16 +69,16 @@ Changing assignee from tbd to boothby.
 archive/issue_comments_032554.json:
 ```json
 {
-    "body": "Attachment [trac_4330.patch](tarball://root/attachments/some-uuid/ticket4430/trac_4330.patch) by mhansen created at 2008-11-21 21:39:20",
+    "body": "Attachment [trac_4330.patch](tarball://root/attachments/some-uuid/ticket4430/trac_4330.patch) by @mwhansen created at 2008-11-21 21:39:20",
     "created_at": "2008-11-21T21:39:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4430#issuecomment-32554",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4330.patch](tarball://root/attachments/some-uuid/ticket4430/trac_4330.patch) by mhansen created at 2008-11-21 21:39:20
+Attachment [trac_4330.patch](tarball://root/attachments/some-uuid/ticket4430/trac_4330.patch) by @mwhansen created at 2008-11-21 21:39:20
 
 
 
@@ -92,7 +92,7 @@ archive/issue_comments_032555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4430#issuecomment-32555",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_032556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4430#issuecomment-32556",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

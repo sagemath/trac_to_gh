@@ -14,7 +14,7 @@ archive/issues_003844.json:
     "title": "notebook -- worksheet should call sys.path.append(DATA) when being initalized",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3844",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3844
 archive/issue_comments_027345.json:
 ```json
 {
-    "body": "Attachment [sage-3844.patch](tarball://root/attachments/some-uuid/ticket3844/sage-3844.patch) by was created at 2008-08-14 03:07:50",
+    "body": "Attachment [sage-3844.patch](tarball://root/attachments/some-uuid/ticket3844/sage-3844.patch) by @williamstein created at 2008-08-14 03:07:50",
     "created_at": "2008-08-14T03:07:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27345",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3844.patch](tarball://root/attachments/some-uuid/ticket3844/sage-3844.patch) by was created at 2008-08-14 03:07:50
+Attachment [sage-3844.patch](tarball://root/attachments/some-uuid/ticket3844/sage-3844.patch) by @williamstein created at 2008-08-14 03:07:50
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_027347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27347",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_027348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27348",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -113,16 +113,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_027349.json:
 ```json
 {
-    "body": "Attachment [sagenb_3844.patch](tarball://root/attachments/some-uuid/ticket3844/sagenb_3844.patch) by was created at 2009-11-19 23:51:07\n\napply only this -- ignore the old sage-3844.patch",
+    "body": "Attachment [sagenb_3844.patch](tarball://root/attachments/some-uuid/ticket3844/sagenb_3844.patch) by @williamstein created at 2009-11-19 23:51:07\n\napply only this -- ignore the old sage-3844.patch",
     "created_at": "2009-11-19T23:51:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27349",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sagenb_3844.patch](tarball://root/attachments/some-uuid/ticket3844/sagenb_3844.patch) by was created at 2009-11-19 23:51:07
+Attachment [sagenb_3844.patch](tarball://root/attachments/some-uuid/ticket3844/sagenb_3844.patch) by @williamstein created at 2009-11-19 23:51:07
 
 apply only this -- ignore the old sage-3844.patch
 
@@ -138,7 +138,7 @@ archive/issue_comments_027350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27350",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_027351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27351",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -169,16 +169,16 @@ I've come across the same problem as TimothyClemans -- importing it after attach
 archive/issue_comments_027352.json:
 ```json
 {
-    "body": "Attachment [trac_3844-DATA_in_sys_path.2.patch](tarball://root/attachments/some-uuid/ticket3844/trac_3844-DATA_in_sys_path.2.patch) by mpatel created at 2010-01-22 03:57:41\n\nUpdates `tutorial.py`. Replaces previous.",
+    "body": "Attachment [trac_3844-DATA_in_sys_path.2.patch](tarball://root/attachments/some-uuid/ticket3844/trac_3844-DATA_in_sys_path.2.patch) by @qed777 created at 2010-01-22 03:57:41\n\nUpdates `tutorial.py`. Replaces previous.",
     "created_at": "2010-01-22T03:57:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27352",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_3844-DATA_in_sys_path.2.patch](tarball://root/attachments/some-uuid/ticket3844/trac_3844-DATA_in_sys_path.2.patch) by mpatel created at 2010-01-22 03:57:41
+Attachment [trac_3844-DATA_in_sys_path.2.patch](tarball://root/attachments/some-uuid/ticket3844/trac_3844-DATA_in_sys_path.2.patch) by @qed777 created at 2010-01-22 03:57:41
 
 Updates `tutorial.py`. Replaces previous.
 
@@ -194,7 +194,7 @@ archive/issue_comments_027353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27353",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_027354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27354",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_027355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27355",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -249,16 +249,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_027356.json:
 ```json
 {
-    "body": "Attachment [trac_3844-DATA_in_sys_path.3.patch](tarball://root/attachments/some-uuid/ticket3844/trac_3844-DATA_in_sys_path.3.patch) by mpatel created at 2010-01-25 01:14:37\n\nRebased for SageNB 0.6 + queue in comment.  Replaces previous.",
+    "body": "Attachment [trac_3844-DATA_in_sys_path.3.patch](tarball://root/attachments/some-uuid/ticket3844/trac_3844-DATA_in_sys_path.3.patch) by @qed777 created at 2010-01-25 01:14:37\n\nRebased for SageNB 0.6 + queue in comment.  Replaces previous.",
     "created_at": "2010-01-25T01:14:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27356",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_3844-DATA_in_sys_path.3.patch](tarball://root/attachments/some-uuid/ticket3844/trac_3844-DATA_in_sys_path.3.patch) by mpatel created at 2010-01-25 01:14:37
+Attachment [trac_3844-DATA_in_sys_path.3.patch](tarball://root/attachments/some-uuid/ticket3844/trac_3844-DATA_in_sys_path.3.patch) by @qed777 created at 2010-01-25 01:14:37
 
 Rebased for SageNB 0.6 + queue in comment.  Replaces previous.
 
@@ -274,7 +274,7 @@ archive/issue_comments_027357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27357",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_027358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27358",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

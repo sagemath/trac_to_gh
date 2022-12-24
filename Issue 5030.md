@@ -3,7 +3,7 @@
 archive/issues_005030.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5030\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5030\n\n",
     "created_at": "2009-01-20T04:39:44Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005030.json:
     "title": "[with patch; needs review] get matrix/constructor.py up to 100% coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5030",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_038314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5030#issuecomment-38314",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -50,16 +50,16 @@ this is against sage-3.3.alpha0
 archive/issue_comments_038315.json:
 ```json
 {
-    "body": "Attachment [trac_5030.patch](tarball://root/attachments/some-uuid/ticket5030/trac_5030.patch) by mhansen created at 2009-01-20 21:36:45\n\nLooks good to me.",
+    "body": "Attachment [trac_5030.patch](tarball://root/attachments/some-uuid/ticket5030/trac_5030.patch) by @mwhansen created at 2009-01-20 21:36:45\n\nLooks good to me.",
     "created_at": "2009-01-20T21:36:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5030#issuecomment-38315",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5030.patch](tarball://root/attachments/some-uuid/ticket5030/trac_5030.patch) by mhansen created at 2009-01-20 21:36:45
+Attachment [trac_5030.patch](tarball://root/attachments/some-uuid/ticket5030/trac_5030.patch) by @mwhansen created at 2009-01-20 21:36:45
 
 Looks good to me.
 

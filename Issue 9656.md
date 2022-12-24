@@ -3,7 +3,7 @@
 archive/issues_009656.json:
 ```json
 {
-    "body": "Assignee: olazo\n\nCC:  acleone was mpatel jason\n\nThis was reported some time ago in sage-support. As the reporter said, a picture is worth a thousand words, so here's a screenshot.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9656\n\n",
+    "body": "Assignee: olazo\n\nCC:  acleone @williamstein @qed777 @jasongrout\n\nThis was reported some time ago in sage-support. As the reporter said, a picture is worth a thousand words, so here's a screenshot.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9656\n\n",
     "created_at": "2010-08-01T02:32:38Z",
     "labels": [
         "notebook",
@@ -19,7 +19,7 @@ archive/issues_009656.json:
 ```
 Assignee: olazo
 
-CC:  acleone was mpatel jason
+CC:  acleone @williamstein @qed777 @jasongrout
 
 This was reported some time ago in sage-support. As the reporter said, a picture is worth a thousand words, so here's a screenshot.
 
@@ -52,16 +52,16 @@ Attachment [ugly_help.png](tarball://root/attachments/some-uuid/ticket9656/ugly_
 archive/issue_comments_093716.json:
 ```json
 {
-    "body": "Attachment [trac_9556-code-blocks-kerning.patch](tarball://root/attachments/some-uuid/ticket9656/trac_9556-code-blocks-kerning.patch) by timdumol created at 2010-08-19 12:56:27\n\nForces Firefox to recompute span width after jsMath text processing.",
+    "body": "Attachment [trac_9556-code-blocks-kerning.patch](tarball://root/attachments/some-uuid/ticket9656/trac_9556-code-blocks-kerning.patch) by @TimDumol created at 2010-08-19 12:56:27\n\nForces Firefox to recompute span width after jsMath text processing.",
     "created_at": "2010-08-19T12:56:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9656#issuecomment-93716",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_9556-code-blocks-kerning.patch](tarball://root/attachments/some-uuid/ticket9656/trac_9556-code-blocks-kerning.patch) by timdumol created at 2010-08-19 12:56:27
+Attachment [trac_9556-code-blocks-kerning.patch](tarball://root/attachments/some-uuid/ticket9656/trac_9556-code-blocks-kerning.patch) by @TimDumol created at 2010-08-19 12:56:27
 
 Forces Firefox to recompute span width after jsMath text processing.
 
@@ -77,7 +77,7 @@ archive/issue_comments_093717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9656#issuecomment-93717",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_093718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9656#issuecomment-93718",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_093723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9656#issuecomment-93723",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_093724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9656#issuecomment-93724",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -220,16 +220,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_093725.json:
 ```json
 {
-    "body": "Attachment [trac_9556-code-blocks-kerning.2.patch](tarball://root/attachments/some-uuid/ticket9656/trac_9556-code-blocks-kerning.2.patch) by timdumol created at 2010-09-18 02:44:41\n\nThanks for noting that. I didn't notice. Here's another, simpler, patch.",
+    "body": "Attachment [trac_9556-code-blocks-kerning.2.patch](tarball://root/attachments/some-uuid/ticket9656/trac_9556-code-blocks-kerning.2.patch) by @TimDumol created at 2010-09-18 02:44:41\n\nThanks for noting that. I didn't notice. Here's another, simpler, patch.",
     "created_at": "2010-09-18T02:44:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9656#issuecomment-93725",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_9556-code-blocks-kerning.2.patch](tarball://root/attachments/some-uuid/ticket9656/trac_9556-code-blocks-kerning.2.patch) by timdumol created at 2010-09-18 02:44:41
+Attachment [trac_9556-code-blocks-kerning.2.patch](tarball://root/attachments/some-uuid/ticket9656/trac_9556-code-blocks-kerning.2.patch) by @TimDumol created at 2010-09-18 02:44:41
 
 Thanks for noting that. I didn't notice. Here's another, simpler, patch.
 
@@ -281,7 +281,7 @@ archive/issue_comments_093728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9656#issuecomment-93728",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_093729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9656#issuecomment-93729",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -333,7 +333,7 @@ archive/issue_comments_093730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9656#issuecomment-93730",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -351,7 +351,7 @@ archive/issue_comments_093731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9656#issuecomment-93731",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -369,7 +369,7 @@ archive/issue_comments_093732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9656#issuecomment-93732",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

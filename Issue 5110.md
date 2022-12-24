@@ -3,7 +3,7 @@
 archive/issues_005110.json:
 ```json
 {
-    "body": "Assignee: was\n\nSee the patches at #3704, which rewrite diagonal_matrix.  On that ticket, however, we finally just went with a basic patch that fixed the specific bug mentioned.  There is good code in the other patches that ought to be used, though.  This ticket is here so that we eventually use the cleaner rewrite contained in the first patches at #3704.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5110\n\n",
+    "body": "Assignee: @williamstein\n\nSee the patches at #3704, which rewrite diagonal_matrix.  On that ticket, however, we finally just went with a basic patch that fixed the specific bug mentioned.  There is good code in the other patches that ought to be used, though.  This ticket is here so that we eventually use the cleaner rewrite contained in the first patches at #3704.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5110\n\n",
     "created_at": "2009-01-27T03:54:59Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005110.json:
     "title": "rewrite diagonal_matrix to be more general",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5110",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 See the patches at #3704, which rewrite diagonal_matrix.  On that ticket, however, we finally just went with a basic patch that fixed the specific bug mentioned.  There is good code in the other patches that ought to be used, though.  This ticket is here so that we eventually use the cleaner rewrite contained in the first patches at #3704.
 
@@ -55,7 +55,7 @@ archive/issue_comments_039040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5110",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5110#issuecomment-39040",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_039042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5110",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5110#issuecomment-39042",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_039043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5110",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5110#issuecomment-39043",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_039044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5110",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5110#issuecomment-39044",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_039045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5110",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5110#issuecomment-39045",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_039046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5110",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5110#issuecomment-39046",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 

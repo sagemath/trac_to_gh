@@ -3,7 +3,7 @@
 archive/issues_008331.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  jason rlm\n\nKeywords: BipartiteGraph\n\nThe BipartiteGraph constructor does not create partitions for dict inputs.\n\n\n```\nsage: t1 = BipartiteGraph({'a': ['b'], 'b':['c']})\nsage: t1.left\n...\nAttributeError: 'BipartiteGraph' object has no attribute 'left'\n```\n\n\nThe problem comes in the constructor in the \"other inputs\" case.  A Graph object is created, but not all the control paths find a bipartition.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8331\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @jasongrout @rlmill\n\nKeywords: BipartiteGraph\n\nThe BipartiteGraph constructor does not create partitions for dict inputs.\n\n\n```\nsage: t1 = BipartiteGraph({'a': ['b'], 'b':['c']})\nsage: t1.left\n...\nAttributeError: 'BipartiteGraph' object has no attribute 'left'\n```\n\n\nThe problem comes in the constructor in the \"other inputs\" case.  A Graph object is created, but not all the control paths find a bipartition.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8331\n\n",
     "created_at": "2010-02-23T01:04:44Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_008331.json:
     "title": "BipartiteGraph constructor does not create partitions for dict inputs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8331",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  jason rlm
+CC:  @jasongrout @rlmill
 
 Keywords: BipartiteGraph
 
@@ -53,7 +53,7 @@ archive/issue_comments_074187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8331",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8331#issuecomment-74187",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -66,16 +66,16 @@ another duplicate of part of #1941.
 archive/issue_comments_074188.json:
 ```json
 {
-    "body": "Attachment [trac_8331-bipartite-dict-initializer.patch](tarball://root/attachments/some-uuid/ticket8331/trac_8331-bipartite-dict-initializer.patch) by rhinton created at 2010-02-23 01:29:33\n\nThe patch trac_8331-... fixes the bug, adds a doctest, and slightly improves the ReST markup for the constructor.  (I am certainly not an expert.)",
+    "body": "Attachment [trac_8331-bipartite-dict-initializer.patch](tarball://root/attachments/some-uuid/ticket8331/trac_8331-bipartite-dict-initializer.patch) by @rhinton created at 2010-02-23 01:29:33\n\nThe patch trac_8331-... fixes the bug, adds a doctest, and slightly improves the ReST markup for the constructor.  (I am certainly not an expert.)",
     "created_at": "2010-02-23T01:29:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8331",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8331#issuecomment-74188",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
-Attachment [trac_8331-bipartite-dict-initializer.patch](tarball://root/attachments/some-uuid/ticket8331/trac_8331-bipartite-dict-initializer.patch) by rhinton created at 2010-02-23 01:29:33
+Attachment [trac_8331-bipartite-dict-initializer.patch](tarball://root/attachments/some-uuid/ticket8331/trac_8331-bipartite-dict-initializer.patch) by @rhinton created at 2010-02-23 01:29:33
 
 The patch trac_8331-... fixes the bug, adds a doctest, and slightly improves the ReST markup for the constructor.  (I am certainly not an expert.)
 
@@ -91,7 +91,7 @@ archive/issue_comments_074189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8331",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8331#issuecomment-74189",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -104,16 +104,16 @@ Changing status from new to needs_review.
 archive/issue_comments_074190.json:
 ```json
 {
-    "body": "Changing assignee from rlm to rhinton.",
+    "body": "Changing assignee from @rlmill to @rhinton.",
     "created_at": "2010-02-23T01:32:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8331",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8331#issuecomment-74190",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
-Changing assignee from rlm to rhinton.
+Changing assignee from @rlmill to @rhinton.
 
 
 
@@ -127,7 +127,7 @@ archive/issue_comments_074191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8331",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8331#issuecomment-74191",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_074192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8331",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8331#issuecomment-74192",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

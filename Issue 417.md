@@ -3,7 +3,7 @@
 archive/issues_000417.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  ylchapuy mderickx\n\nThe Pari+Python interface is too slow. ntl.ZZ_pE+Cython should be much faster.\n\nIssue created by migration from https://trac.sagemath.org/ticket/417\n\n",
+    "body": "Assignee: somebody\n\nCC:  ylchapuy @koffie\n\nThe Pari+Python interface is too slow. ntl.ZZ_pE+Cython should be much faster.\n\nIssue created by migration from https://trac.sagemath.org/ticket/417\n\n",
     "created_at": "2007-08-10T15:15:29Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_000417.json:
     "title": "Faster GF(p^n) arithmetic for p^n >= 2^16",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/417",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: somebody
 
-CC:  ylchapuy mderickx
+CC:  ylchapuy @koffie
 
 The Pari+Python interface is too slow. ntl.ZZ_pE+Cython should be much faster.
 
@@ -61,7 +61,7 @@ archive/issue_comments_002057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/417",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/417#issuecomment-2057",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_002059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/417",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/417#issuecomment-2059",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_008070.json:
     "title": "New  pycrypto-2.0.1.p5.spkg works with Open Solaris 64 bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8070",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: drkirkby
@@ -66,7 +66,7 @@ archive/issue_comments_070721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8070",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8070#issuecomment-70721",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -79,16 +79,16 @@ Changing status from new to needs_review.
 archive/issue_comments_070722.json:
 ```json
 {
-    "body": "Attachment [pycrypto-2.0.1.p5.patch](tarball://root/attachments/some-uuid/ticket8070/pycrypto-2.0.1.p5.patch) by jsp created at 2010-01-26 19:00:17",
+    "body": "Attachment [pycrypto-2.0.1.p5.patch](tarball://root/attachments/some-uuid/ticket8070/pycrypto-2.0.1.p5.patch) by @jaapspies created at 2010-01-26 19:00:17",
     "created_at": "2010-01-26T19:00:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8070",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8070#issuecomment-70722",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [pycrypto-2.0.1.p5.patch](tarball://root/attachments/some-uuid/ticket8070/pycrypto-2.0.1.p5.patch) by jsp created at 2010-01-26 19:00:17
+Attachment [pycrypto-2.0.1.p5.patch](tarball://root/attachments/some-uuid/ticket8070/pycrypto-2.0.1.p5.patch) by @jaapspies created at 2010-01-26 19:00:17
 
 
 
@@ -138,7 +138,7 @@ archive/issue_comments_070725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8070",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8070#issuecomment-70725",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -151,16 +151,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_070726.json:
 ```json
 {
-    "body": "Attachment [pycrypto-2.0.1.p5+.patch](tarball://root/attachments/some-uuid/ticket8070/pycrypto-2.0.1.p5+.patch) by jsp created at 2010-01-27 14:07:55\n\nDone.\n\nJaap",
+    "body": "Attachment [pycrypto-2.0.1.p5+.patch](tarball://root/attachments/some-uuid/ticket8070/pycrypto-2.0.1.p5+.patch) by @jaapspies created at 2010-01-27 14:07:55\n\nDone.\n\nJaap",
     "created_at": "2010-01-27T14:07:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8070",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8070#issuecomment-70726",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [pycrypto-2.0.1.p5+.patch](tarball://root/attachments/some-uuid/ticket8070/pycrypto-2.0.1.p5+.patch) by jsp created at 2010-01-27 14:07:55
+Attachment [pycrypto-2.0.1.p5+.patch](tarball://root/attachments/some-uuid/ticket8070/pycrypto-2.0.1.p5+.patch) by @jaapspies created at 2010-01-27 14:07:55
 
 Done.
 
@@ -257,7 +257,7 @@ archive/issue_comments_070729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8070",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8070#issuecomment-70729",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

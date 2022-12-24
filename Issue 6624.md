@@ -3,7 +3,7 @@
 archive/issues_006624.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  jason\n\nIn twist.py, we have our own json-encoding function, which is no longer necessary now that we use Python 2.6. It should be removed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6624\n\n",
+    "body": "Assignee: boothby\n\nCC:  @jasongrout\n\nIn twist.py, we have our own json-encoding function, which is no longer necessary now that we use Python 2.6. It should be removed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6624\n\n",
     "created_at": "2009-07-26T05:38:49Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_006624.json:
     "title": "remove json function from server/simple/twist.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6624",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: boothby
 
-CC:  jason
+CC:  @jasongrout
 
 In twist.py, we have our own json-encoding function, which is no longer necessary now that we use Python 2.6. It should be removed.
 
@@ -39,7 +39,7 @@ archive/issue_comments_054265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6624#issuecomment-54265",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_054266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6624#issuecomment-54266",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_054267.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6624#issuecomment-54267",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -91,16 +91,16 @@ Changing status from new to assigned.
 archive/issue_comments_054268.json:
 ```json
 {
-    "body": "Changing assignee from boothby to ddrake.",
+    "body": "Changing assignee from boothby to @dandrake.",
     "created_at": "2009-07-26T08:02:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6624#issuecomment-54268",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Changing assignee from boothby to ddrake.
+Changing assignee from boothby to @dandrake.
 
 
 
@@ -114,7 +114,7 @@ archive/issue_comments_054269.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6624#issuecomment-54269",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_054270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6624#issuecomment-54270",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_054271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6624#issuecomment-54271",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_054272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6624#issuecomment-54272",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_054273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6624#issuecomment-54273",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_054274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6624#issuecomment-54274",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_054275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6624#issuecomment-54275",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_054276.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6624#issuecomment-54276",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

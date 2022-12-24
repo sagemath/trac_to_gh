@@ -14,7 +14,7 @@ archive/issues_006928.json:
     "title": "Upgrade the Trac spkg to 0.11.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6928",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: tbd
@@ -41,7 +41,7 @@ archive/issue_comments_057257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6928#issuecomment-57257",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_057258.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6928#issuecomment-57258",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_057259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6928#issuecomment-57259",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_057260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6928#issuecomment-57260",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -128,16 +128,16 @@ Apply with spkg.
 archive/issue_comments_057261.json:
 ```json
 {
-    "body": "Attachment [trac_6928-trac_spkg.patch](tarball://root/attachments/some-uuid/ticket6928/trac_6928-trac_spkg.patch) by mpatel created at 2009-09-22 08:48:32",
+    "body": "Attachment [trac_6928-trac_spkg.patch](tarball://root/attachments/some-uuid/ticket6928/trac_6928-trac_spkg.patch) by @qed777 created at 2009-09-22 08:48:32",
     "created_at": "2009-09-22T08:48:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6928#issuecomment-57261",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6928-trac_spkg.patch](tarball://root/attachments/some-uuid/ticket6928/trac_6928-trac_spkg.patch) by mpatel created at 2009-09-22 08:48:32
+Attachment [trac_6928-trac_spkg.patch](tarball://root/attachments/some-uuid/ticket6928/trac_6928-trac_spkg.patch) by @qed777 created at 2009-09-22 08:48:32
 
 
 
@@ -151,7 +151,7 @@ archive/issue_comments_057262.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6928#issuecomment-57262",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_057263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6928#issuecomment-57263",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_057264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6928#issuecomment-57264",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_057265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6928#issuecomment-57265",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_057266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6928#issuecomment-57266",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_057267.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6928#issuecomment-57267",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_057268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6928#issuecomment-57268",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_057269.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6928#issuecomment-57269",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

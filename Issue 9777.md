@@ -3,7 +3,7 @@
 archive/issues_009777.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  was eviatarbach\n\nKeywords: latex, SI prefixes, units\n\nSince maybe the developers are reluctant to implement the \"metrology\" module I submitted in #9763, when there's already a \"units\" module that has the same purpose, I'm trying to port the `LaTeX` capabilities to the already existing \"units\" module.\n\nTO DO: Complete the latexdict list of units and `LaTeX` representation (if a unit isn't there, its symbol will be replaced by its name)\n\nAlso, I'm implementing an easier way to use `SI` prefixes on the units module. The patch I submitted in #9759 wasn't very intuitive (you had to type \"units.length.meter.kilo\"), partly because I didn't know very well how did that module work. This new version allows you to simply type \"units.length.kilometer\" (even if it's not tab-completed) and it will do the rest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9778\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @williamstein @eviatarbach\n\nKeywords: latex, SI prefixes, units\n\nSince maybe the developers are reluctant to implement the \"metrology\" module I submitted in #9763, when there's already a \"units\" module that has the same purpose, I'm trying to port the `LaTeX` capabilities to the already existing \"units\" module.\n\nTO DO: Complete the latexdict list of units and `LaTeX` representation (if a unit isn't there, its symbol will be replaced by its name)\n\nAlso, I'm implementing an easier way to use `SI` prefixes on the units module. The patch I submitted in #9759 wasn't very intuitive (you had to type \"units.length.meter.kilo\"), partly because I didn't know very well how did that module work. This new version allows you to simply type \"units.length.kilometer\" (even if it's not tab-completed) and it will do the rest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9778\n\n",
     "created_at": "2010-08-21T20:42:35Z",
     "labels": [
         "symbolics",
@@ -13,12 +13,12 @@ archive/issues_009777.json:
     "title": "Addition of LaTeX and better support of SI prefixes on units module",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9777",
-    "user": "cousteau"
+    "user": "@cousteaulecommandant"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  was eviatarbach
+CC:  @williamstein @eviatarbach
 
 Keywords: latex, SI prefixes, units
 
@@ -39,16 +39,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9778
 archive/issue_comments_095953.json:
 ```json
 {
-    "body": "Attachment [trac_9778_latex_prefixes_units.patch](tarball://root/attachments/some-uuid/ticket9778/trac_9778_latex_prefixes_units.patch) by cousteau created at 2010-08-21 20:46:48\n\nAdds `LaTeX` symbols and `SI` prefixes to the units module",
+    "body": "Attachment [trac_9778_latex_prefixes_units.patch](tarball://root/attachments/some-uuid/ticket9778/trac_9778_latex_prefixes_units.patch) by @cousteaulecommandant created at 2010-08-21 20:46:48\n\nAdds `LaTeX` symbols and `SI` prefixes to the units module",
     "created_at": "2010-08-21T20:46:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9777#issuecomment-95953",
-    "user": "cousteau"
+    "user": "@cousteaulecommandant"
 }
 ```
 
-Attachment [trac_9778_latex_prefixes_units.patch](tarball://root/attachments/some-uuid/ticket9778/trac_9778_latex_prefixes_units.patch) by cousteau created at 2010-08-21 20:46:48
+Attachment [trac_9778_latex_prefixes_units.patch](tarball://root/attachments/some-uuid/ticket9778/trac_9778_latex_prefixes_units.patch) by @cousteaulecommandant created at 2010-08-21 20:46:48
 
 Adds `LaTeX` symbols and `SI` prefixes to the units module
 
@@ -64,7 +64,7 @@ archive/issue_comments_095954.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9777#issuecomment-95954",
-    "user": "cousteau"
+    "user": "@cousteaulecommandant"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_095955.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9777#issuecomment-95955",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_095956.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9777#issuecomment-95956",
-    "user": "cousteau"
+    "user": "@cousteaulecommandant"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_095957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9777#issuecomment-95957",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_095958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9777#issuecomment-95958",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

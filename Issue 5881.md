@@ -3,7 +3,7 @@
 archive/issues_005881.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nThis is happening with gcc 4.3.3:\n\n```\nsage -t  \"devel/sage/sage/combinat/root_system/type_dual.py\"\n**********************************************************************\nFile \"/home/mariah/sage/sage-3.4.1-x86_64-Linux-fc/devel/sage/sage/combinat/root\n_system/type_dual.py\", line 43:\n   sage: [[x.__cmp__(y) for x in ct] for y in ct]\nExpected:\n   [[0, 1, -1], [-1, 0, -1], [1, 1, 0]]\nGot:\n   [[0, 1, 1], [-1, 0, 1], [1, 1, 0]]\n**********************************************************************\nFile \"/home/mariah/sage/sage-3.4.1-x86_64-Linux-fc/devel/sage/sage/combinat/root\n_system/type_dual.py\", line 45:\n   sage: sorted(ct)\nExpected:\n   [['A', 4], A1xB2, B2xA1]\nGot:\n   [A1xB2, B2xA1, ['A', 4]]\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5881\n\n",
+    "body": "Assignee: @mwhansen\n\nThis is happening with gcc 4.3.3:\n\n```\nsage -t  \"devel/sage/sage/combinat/root_system/type_dual.py\"\n**********************************************************************\nFile \"/home/mariah/sage/sage-3.4.1-x86_64-Linux-fc/devel/sage/sage/combinat/root\n_system/type_dual.py\", line 43:\n   sage: [[x.__cmp__(y) for x in ct] for y in ct]\nExpected:\n   [[0, 1, -1], [-1, 0, -1], [1, 1, 0]]\nGot:\n   [[0, 1, 1], [-1, 0, 1], [1, 1, 0]]\n**********************************************************************\nFile \"/home/mariah/sage/sage-3.4.1-x86_64-Linux-fc/devel/sage/sage/combinat/root\n_system/type_dual.py\", line 45:\n   sage: sorted(ct)\nExpected:\n   [['A', 4], A1xB2, B2xA1]\nGot:\n   [A1xB2, B2xA1, ['A', 4]]\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5881\n\n",
     "created_at": "2009-04-23T21:10:28Z",
     "labels": [
         "doctest coverage",
@@ -17,7 +17,7 @@ archive/issues_005881.json:
     "user": "mabshoff"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 This is happening with gcc 4.3.3:
 
@@ -59,7 +59,7 @@ archive/issue_comments_046471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5881#issuecomment-46471",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -72,16 +72,16 @@ Changing status from new to assigned.
 archive/issue_comments_046472.json:
 ```json
 {
-    "body": "Attachment [trac_5881.patch](tarball://root/attachments/some-uuid/ticket5881/trac_5881.patch) by mhansen created at 2009-04-30 07:52:32",
+    "body": "Attachment [trac_5881.patch](tarball://root/attachments/some-uuid/ticket5881/trac_5881.patch) by @mwhansen created at 2009-04-30 07:52:32",
     "created_at": "2009-04-30T07:52:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5881#issuecomment-46472",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5881.patch](tarball://root/attachments/some-uuid/ticket5881/trac_5881.patch) by mhansen created at 2009-04-30 07:52:32
+Attachment [trac_5881.patch](tarball://root/attachments/some-uuid/ticket5881/trac_5881.patch) by @mwhansen created at 2009-04-30 07:52:32
 
 
 

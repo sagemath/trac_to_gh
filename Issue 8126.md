@@ -14,7 +14,7 @@ archive/issues_008126.json:
     "title": "fix typo in doc of circle",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8126",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 Assignee: mvngu
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8126
 archive/issue_comments_071444.json:
 ```json
 {
-    "body": "Attachment [doc-circle.patch](tarball://root/attachments/some-uuid/ticket8126/doc-circle.patch) by robert.marik created at 2010-01-29 21:49:40",
+    "body": "Attachment [doc-circle.patch](tarball://root/attachments/some-uuid/ticket8126/doc-circle.patch) by @robert-marik created at 2010-01-29 21:49:40",
     "created_at": "2010-01-29T21:49:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8126",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8126#issuecomment-71444",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Attachment [doc-circle.patch](tarball://root/attachments/some-uuid/ticket8126/doc-circle.patch) by robert.marik created at 2010-01-29 21:49:40
+Attachment [doc-circle.patch](tarball://root/attachments/some-uuid/ticket8126/doc-circle.patch) by @robert-marik created at 2010-01-29 21:49:40
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_071445.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8126",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8126#issuecomment-71445",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_071446.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8126",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8126#issuecomment-71446",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_071447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8126",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8126#issuecomment-71447",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_071449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8126",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8126#issuecomment-71449",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 

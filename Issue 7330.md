@@ -14,7 +14,7 @@ archive/issues_007330.json:
     "title": "notebook download to a file broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7330",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: boothby
@@ -91,7 +91,7 @@ archive/issue_comments_061298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7330#issuecomment-61298",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_061299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7330#issuecomment-61299",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_061300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7330#issuecomment-61300",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

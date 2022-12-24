@@ -3,7 +3,7 @@
 archive/issues_005839.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  malb\n\nIn `__dealloc__`, if currRing is NULL on entry, then currRing will be the ring we just deleted on exit.  The patch fixes this bug, so that currRing never points to freed memory.\n\nIt took me quite a while to come up with a small reproducible test case for the problem; here it is.  (This test case is also in the patch, as a doctest.)\n\n```\nimport gc\nfrom sage.rings.polynomial.multi_polynomial_libsingular import MPolynomialRing_libsingular\nR1 = MPolynomialRing_libsingular(GF(5), 2, ('x', 'y'), TermOrder('degrevlex', 2))\nR2 = MPolynomialRing_libsingular(GF(11), 2, ('x', 'y'), TermOrder('degrevlex', 2))\nR3 = MPolynomialRing_libsingular(GF(13), 2, ('x', 'y'), TermOrder('degrevlex', 2))\ngc.collect()\nfoo = R1.gen(0)\ndel foo\ndel R1\ngc.collect()\ndel R2\ngc.collect()\ndel R3\ngc.collect()\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5839\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @malb\n\nIn `__dealloc__`, if currRing is NULL on entry, then currRing will be the ring we just deleted on exit.  The patch fixes this bug, so that currRing never points to freed memory.\n\nIt took me quite a while to come up with a small reproducible test case for the problem; here it is.  (This test case is also in the patch, as a doctest.)\n\n```\nimport gc\nfrom sage.rings.polynomial.multi_polynomial_libsingular import MPolynomialRing_libsingular\nR1 = MPolynomialRing_libsingular(GF(5), 2, ('x', 'y'), TermOrder('degrevlex', 2))\nR2 = MPolynomialRing_libsingular(GF(11), 2, ('x', 'y'), TermOrder('degrevlex', 2))\nR3 = MPolynomialRing_libsingular(GF(13), 2, ('x', 'y'), TermOrder('degrevlex', 2))\ngc.collect()\nfoo = R1.gen(0)\ndel foo\ndel R1\ngc.collect()\ndel R2\ngc.collect()\ndel R3\ngc.collect()\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5839\n\n",
     "created_at": "2009-04-20T22:22:09Z",
     "labels": [
         "commutative algebra",
@@ -19,7 +19,7 @@ archive/issues_005839.json:
 ```
 Assignee: cwitty
 
-CC:  malb
+CC:  @malb
 
 In `__dealloc__`, if currRing is NULL on entry, then currRing will be the ring we just deleted on exit.  The patch fixes this bug, so that currRing never points to freed memory.
 
@@ -55,16 +55,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5839
 archive/issue_comments_045904.json:
 ```json
 {
-    "body": "Attachment [fix-mp-libsingular-dealloc.patch](tarball://root/attachments/some-uuid/ticket5839/fix-mp-libsingular-dealloc.patch) by malb created at 2009-04-21 09:13:14\n\nDoctests pass, patch reads good.",
+    "body": "Attachment [fix-mp-libsingular-dealloc.patch](tarball://root/attachments/some-uuid/ticket5839/fix-mp-libsingular-dealloc.patch) by @malb created at 2009-04-21 09:13:14\n\nDoctests pass, patch reads good.",
     "created_at": "2009-04-21T09:13:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5839#issuecomment-45904",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [fix-mp-libsingular-dealloc.patch](tarball://root/attachments/some-uuid/ticket5839/fix-mp-libsingular-dealloc.patch) by malb created at 2009-04-21 09:13:14
+Attachment [fix-mp-libsingular-dealloc.patch](tarball://root/attachments/some-uuid/ticket5839/fix-mp-libsingular-dealloc.patch) by @malb created at 2009-04-21 09:13:14
 
 Doctests pass, patch reads good.
 

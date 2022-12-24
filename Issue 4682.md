@@ -3,7 +3,7 @@
 archive/issues_004682.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mvngu schilly\n\nThere are about 36 people missing at \n\n\n  http://sagemath.org/development-map.html\n\nthat have contributed to Sage. Contact them and if they would like to be added get them on there. This is a join project by Michael Abshoff, Minh Van Nguyen and Harald Schilly.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4682\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  mvngu @haraldschilly\n\nThere are about 36 people missing at \n\n\n  http://sagemath.org/development-map.html\n\nthat have contributed to Sage. Contact them and if they would like to be added get them on there. This is a join project by Michael Abshoff, Minh Van Nguyen and Harald Schilly.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4682\n\n",
     "created_at": "2008-12-03T00:38:16Z",
     "labels": [
         "website/wiki",
@@ -17,9 +17,9 @@ archive/issues_004682.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  mvngu schilly
+CC:  mvngu @haraldschilly
 
 There are about 36 people missing at 
 
@@ -61,7 +61,7 @@ Changing status from new to assigned.
 archive/issue_comments_035291.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2008-12-03T00:38:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4682",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_035291.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 
@@ -122,7 +122,7 @@ archive/issue_comments_035294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4682#issuecomment-35294",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_035295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4682#issuecomment-35295",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_035296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4682#issuecomment-35296",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 

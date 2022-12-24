@@ -3,7 +3,7 @@
 archive/issues_009691.json:
 ```json
 {
-    "body": "Assignee: mvngu, schilly\n\nCC:  embray slelievre\n\nOr something like that.  The problem is that Search at the top gives all tickets, closed or open, with the content, while often one wants just to search open tickets.  Since the only other option is clicking View Tickets, then Custom Query, etc. (notice that even the Search tab doesn't do anything useful different from the Search box), and THEN clicking all the non-'closed' options, we should improve this.  \n\nI'm putting component website/wiki, but only because there isn't a trac component.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9691\n\n",
+    "body": "Assignee: mvngu, schilly\n\nCC:  @embray @slel\n\nOr something like that.  The problem is that Search at the top gives all tickets, closed or open, with the content, while often one wants just to search open tickets.  Since the only other option is clicking View Tickets, then Custom Query, etc. (notice that even the Search tab doesn't do anything useful different from the Search box), and THEN clicking all the non-'closed' options, we should improve this.  \n\nI'm putting component website/wiki, but only because there isn't a trac component.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9691\n\n",
     "created_at": "2010-08-05T15:11:13Z",
     "labels": [
         "website/wiki",
@@ -14,12 +14,12 @@ archive/issues_009691.json:
     "title": "Make another Trac search box or button",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9691",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: mvngu, schilly
 
-CC:  embray slelievre
+CC:  @embray @slel
 
 Or something like that.  The problem is that Search at the top gives all tickets, closed or open, with the content, while often one wants just to search open tickets.  Since the only other option is clicking View Tickets, then Custom Query, etc. (notice that even the Search tab doesn't do anything useful different from the Search box), and THEN clicking all the non-'closed' options, we should improve this.  
 
@@ -41,7 +41,7 @@ archive/issue_comments_094198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9691",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9691#issuecomment-94198",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_094199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9691",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9691#issuecomment-94199",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_094200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9691",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9691#issuecomment-94200",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_094201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9691",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9691#issuecomment-94201",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_094202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9691",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9691#issuecomment-94202",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_094203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9691",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9691#issuecomment-94203",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_094204.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9691",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9691#issuecomment-94204",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

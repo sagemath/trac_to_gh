@@ -14,7 +14,7 @@ archive/issues_002738.json:
     "title": "[with patch, positive review] LaTeX description environment in docstrings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2738",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: tba
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2738
 archive/issue_comments_018832.json:
 ```json
 {
-    "body": "Attachment [latex_description_envirnment.patch](tarball://root/attachments/some-uuid/ticket2738/latex_description_envirnment.patch) by malb created at 2008-03-31 15:04:28",
+    "body": "Attachment [latex_description_envirnment.patch](tarball://root/attachments/some-uuid/ticket2738/latex_description_envirnment.patch) by @malb created at 2008-03-31 15:04:28",
     "created_at": "2008-03-31T15:04:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2738#issuecomment-18832",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [latex_description_envirnment.patch](tarball://root/attachments/some-uuid/ticket2738/latex_description_envirnment.patch) by malb created at 2008-03-31 15:04:28
+Attachment [latex_description_envirnment.patch](tarball://root/attachments/some-uuid/ticket2738/latex_description_envirnment.patch) by @malb created at 2008-03-31 15:04:28
 
 
 

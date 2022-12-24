@@ -3,7 +3,7 @@
 archive/issues_002794.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  burcin\n\nKeywords: polybori, magma\n\nThis now works:\n\n```\nsage: B.<a,b,z> = BooleanPolynomialRing(3)\nsage: B._magma_()\n\nAffine Algebra of rank 3 over GF(2)\nLexicographical Order\nVariables: a, b, z\nQuotient relations:\n[\na^2 + a,\nb^2 + b,\nz^2 + z\n]\nsage: magma(a+b)\na + b\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2794\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin\n\nKeywords: polybori, magma\n\nThis now works:\n\n```\nsage: B.<a,b,z> = BooleanPolynomialRing(3)\nsage: B._magma_()\n\nAffine Algebra of rank 3 over GF(2)\nLexicographical Order\nVariables: a, b, z\nQuotient relations:\n[\na^2 + a,\nb^2 + b,\nz^2 + z\n]\nsage: magma(a+b)\na + b\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2794\n\n",
     "created_at": "2008-04-04T09:50:44Z",
     "labels": [
         "interfaces",
@@ -14,12 +14,12 @@ archive/issues_002794.json:
     "title": "[with patch, needs review] PolyBoRi to Magma conversion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2794",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  burcin
+CC:  @burcin
 
 Keywords: polybori, magma
 
@@ -54,16 +54,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2794
 archive/issue_comments_019185.json:
 ```json
 {
-    "body": "Attachment [polybori_2_magma.patch](tarball://root/attachments/some-uuid/ticket2794/polybori_2_magma.patch) by malb created at 2008-04-04 09:50:57",
+    "body": "Attachment [polybori_2_magma.patch](tarball://root/attachments/some-uuid/ticket2794/polybori_2_magma.patch) by @malb created at 2008-04-04 09:50:57",
     "created_at": "2008-04-04T09:50:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2794#issuecomment-19185",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [polybori_2_magma.patch](tarball://root/attachments/some-uuid/ticket2794/polybori_2_magma.patch) by malb created at 2008-04-04 09:50:57
+Attachment [polybori_2_magma.patch](tarball://root/attachments/some-uuid/ticket2794/polybori_2_magma.patch) by @malb created at 2008-04-04 09:50:57
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_019186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2794#issuecomment-19186",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

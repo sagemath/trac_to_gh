@@ -3,7 +3,7 @@
 archive/issues_004820.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: elliptic curves\n\nPoints on elliptic curves over Q which are not [0:1:0] have their last coordinate =1 but sometimes this is an int (not even an Integer) which breaks some code:\n\n\n```\nsage: E=EllipticCurve('37a1')\nsage: [type(c) for c in E(0)]\n\n[<type 'sage.rings.rational.Rational'>,\n <type 'sage.rings.rational.Rational'>,\n <type 'sage.rings.rational.Rational'>]\nsage: [type(c) for c in E.gen(0)]\n\n[<type 'sage.rings.rational.Rational'>,\n <type 'sage.rings.rational.Rational'>,\n <type 'sage.rings.rational.Rational'>]\nsage: [type(c) for c in 2*E.gen(0)]\n\n[<type 'sage.rings.rational.Rational'>,\n <type 'sage.rings.rational.Rational'>,\n <type 'int'>]\n```\n\nI am tracking this down and will post a patch soon.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4820\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: elliptic curves\n\nPoints on elliptic curves over Q which are not [0:1:0] have their last coordinate =1 but sometimes this is an int (not even an Integer) which breaks some code:\n\n\n```\nsage: E=EllipticCurve('37a1')\nsage: [type(c) for c in E(0)]\n\n[<type 'sage.rings.rational.Rational'>,\n <type 'sage.rings.rational.Rational'>,\n <type 'sage.rings.rational.Rational'>]\nsage: [type(c) for c in E.gen(0)]\n\n[<type 'sage.rings.rational.Rational'>,\n <type 'sage.rings.rational.Rational'>,\n <type 'sage.rings.rational.Rational'>]\nsage: [type(c) for c in 2*E.gen(0)]\n\n[<type 'sage.rings.rational.Rational'>,\n <type 'sage.rings.rational.Rational'>,\n <type 'int'>]\n```\n\nI am tracking this down and will post a patch soon.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4820\n\n",
     "created_at": "2008-12-17T11:55:08Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004820.json:
     "title": "Type inconsistency in rational points on elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4820",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: elliptic curves
 
@@ -57,16 +57,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4820
 archive/issue_comments_036542.json:
 ```json
 {
-    "body": "Attachment [trac-4820.patch](tarball://root/attachments/some-uuid/ticket4820/trac-4820.patch) by cremona created at 2008-12-17 15:39:35",
+    "body": "Attachment [trac-4820.patch](tarball://root/attachments/some-uuid/ticket4820/trac-4820.patch) by @JohnCremona created at 2008-12-17 15:39:35",
     "created_at": "2008-12-17T15:39:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4820#issuecomment-36542",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac-4820.patch](tarball://root/attachments/some-uuid/ticket4820/trac-4820.patch) by cremona created at 2008-12-17 15:39:35
+Attachment [trac-4820.patch](tarball://root/attachments/some-uuid/ticket4820/trac-4820.patch) by @JohnCremona created at 2008-12-17 15:39:35
 
 
 
@@ -80,7 +80,7 @@ archive/issue_comments_036543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4820#issuecomment-36543",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -115,7 +115,7 @@ Michael
 archive/issue_comments_036545.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2009-01-23T10:26:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4820",
     "type": "issue_comment",
@@ -124,7 +124,7 @@ archive/issue_comments_036545.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 
@@ -169,7 +169,7 @@ Changing status from assigned to new.
 archive/issue_comments_036548.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to was.",
+    "body": "Changing assignee from mabshoff to @williamstein.",
     "created_at": "2009-01-23T10:28:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4820",
     "type": "issue_comment",
@@ -178,7 +178,7 @@ archive/issue_comments_036548.json:
 }
 ```
 
-Changing assignee from mabshoff to was.
+Changing assignee from mabshoff to @williamstein.
 
 
 

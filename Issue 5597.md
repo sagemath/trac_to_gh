@@ -3,7 +3,7 @@
 archive/issues_005597.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nCC:  nthiery georgsweber craigcitro\n\n\n```\nCurrently, if A has an action on B (where B is not an A-module) one  \nimplements either a._l_action_ or b._r_action_. This is because  \nsometimes it makes sense to put the method on the actor (e.g. Galois  \ngroups acting on field elements) and sometimes on the acted on (e.g.  \nmatrices acting on quadratic forms). However, the _x_action_ is hard  \nto remember and doesn't always correspond to right/left actions. This  \nmay be why they're hardly used up to this point.\n\nThe proposal is to make the methods a._act_on_(b, self_on_left) and  \nb._acted_upon_(a, self_on_left). In other words, a*b would try  \n\"a._act_on_(b, True)\" and \"b._acted_upon_(a, False)\". \n```\n\n\nSee discussion at \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/4c6ce1731ace1016\n\nIssue created by migration from https://trac.sagemath.org/ticket/5597\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  @nthiery georgsweber @craigcitro\n\n\n```\nCurrently, if A has an action on B (where B is not an A-module) one  \nimplements either a._l_action_ or b._r_action_. This is because  \nsometimes it makes sense to put the method on the actor (e.g. Galois  \ngroups acting on field elements) and sometimes on the acted on (e.g.  \nmatrices acting on quadratic forms). However, the _x_action_ is hard  \nto remember and doesn't always correspond to right/left actions. This  \nmay be why they're hardly used up to this point.\n\nThe proposal is to make the methods a._act_on_(b, self_on_left) and  \nb._acted_upon_(a, self_on_left). In other words, a*b would try  \n\"a._act_on_(b, True)\" and \"b._acted_upon_(a, False)\". \n```\n\n\nSee discussion at \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/4c6ce1731ace1016\n\nIssue created by migration from https://trac.sagemath.org/ticket/5597\n\n",
     "created_at": "2009-03-24T05:09:01Z",
     "labels": [
         "coercion",
@@ -14,12 +14,12 @@ archive/issues_005597.json:
     "title": "[with patch, needs review] rename coercion action methods",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5597",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
-CC:  nthiery georgsweber craigcitro
+CC:  @nthiery georgsweber @craigcitro
 
 
 ```
@@ -52,16 +52,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5597
 archive/issue_comments_043602.json:
 ```json
 {
-    "body": "Attachment [5597-coerce-actions.patch](tarball://root/attachments/some-uuid/ticket5597/5597-coerce-actions.patch) by robertwb created at 2009-03-24 05:17:58",
+    "body": "Attachment [5597-coerce-actions.patch](tarball://root/attachments/some-uuid/ticket5597/5597-coerce-actions.patch) by @robertwb created at 2009-03-24 05:17:58",
     "created_at": "2009-03-24T05:17:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43602",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5597-coerce-actions.patch](tarball://root/attachments/some-uuid/ticket5597/5597-coerce-actions.patch) by robertwb created at 2009-03-24 05:17:58
+Attachment [5597-coerce-actions.patch](tarball://root/attachments/some-uuid/ticket5597/5597-coerce-actions.patch) by @robertwb created at 2009-03-24 05:17:58
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_043603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43603",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_043605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43605",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_043606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43606",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -147,16 +147,16 @@ rebased against 4.1.1
 archive/issue_comments_043607.json:
 ```json
 {
-    "body": "Attachment [5597-coerce-actions-new.patch](tarball://root/attachments/some-uuid/ticket5597/5597-coerce-actions-new.patch) by robertwb created at 2009-09-25 08:40:50",
+    "body": "Attachment [5597-coerce-actions-new.patch](tarball://root/attachments/some-uuid/ticket5597/5597-coerce-actions-new.patch) by @robertwb created at 2009-09-25 08:40:50",
     "created_at": "2009-09-25T08:40:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43607",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5597-coerce-actions-new.patch](tarball://root/attachments/some-uuid/ticket5597/5597-coerce-actions-new.patch) by robertwb created at 2009-09-25 08:40:50
+Attachment [5597-coerce-actions-new.patch](tarball://root/attachments/some-uuid/ticket5597/5597-coerce-actions-new.patch) by @robertwb created at 2009-09-25 08:40:50
 
 
 
@@ -165,16 +165,16 @@ Attachment [5597-coerce-actions-new.patch](tarball://root/attachments/some-uuid/
 archive/issue_comments_043608.json:
 ```json
 {
-    "body": "Attachment [5597-coerce-actions-examples.patch](tarball://root/attachments/some-uuid/ticket5597/5597-coerce-actions-examples.patch) by robertwb created at 2009-09-25 08:41:36",
+    "body": "Attachment [5597-coerce-actions-examples.patch](tarball://root/attachments/some-uuid/ticket5597/5597-coerce-actions-examples.patch) by @robertwb created at 2009-09-25 08:41:36",
     "created_at": "2009-09-25T08:41:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43608",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5597-coerce-actions-examples.patch](tarball://root/attachments/some-uuid/ticket5597/5597-coerce-actions-examples.patch) by robertwb created at 2009-09-25 08:41:36
+Attachment [5597-coerce-actions-examples.patch](tarball://root/attachments/some-uuid/ticket5597/5597-coerce-actions-examples.patch) by @robertwb created at 2009-09-25 08:41:36
 
 
 
@@ -183,16 +183,16 @@ Attachment [5597-coerce-actions-examples.patch](tarball://root/attachments/some-
 archive/issue_comments_043609.json:
 ```json
 {
-    "body": "Attachment [5597-referee-comments.patch](tarball://root/attachments/some-uuid/ticket5597/5597-referee-comments.patch) by robertwb created at 2009-09-29 18:27:10",
+    "body": "Attachment [5597-referee-comments.patch](tarball://root/attachments/some-uuid/ticket5597/5597-referee-comments.patch) by @robertwb created at 2009-09-29 18:27:10",
     "created_at": "2009-09-29T18:27:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43609",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5597-referee-comments.patch](tarball://root/attachments/some-uuid/ticket5597/5597-referee-comments.patch) by robertwb created at 2009-09-29 18:27:10
+Attachment [5597-referee-comments.patch](tarball://root/attachments/some-uuid/ticket5597/5597-referee-comments.patch) by @robertwb created at 2009-09-29 18:27:10
 
 
 
@@ -206,7 +206,7 @@ archive/issue_comments_043610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43610",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_043611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43611",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_043612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43612",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_043613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43613",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_043614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43614",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_043615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43615",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_043616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43616",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -374,7 +374,7 @@ archive/issue_comments_043617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43617",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -387,16 +387,16 @@ Changing keywords from "" to "actions, left actions, right actions".
 archive/issue_comments_043618.json:
 ```json
 {
-    "body": "Attachment [trac_5597-infinite_polynomial_ring.patch](tarball://root/attachments/some-uuid/ticket5597/trac_5597-infinite_polynomial_ring.patch) by mhansen created at 2009-10-21 06:03:57",
+    "body": "Attachment [trac_5597-infinite_polynomial_ring.patch](tarball://root/attachments/some-uuid/ticket5597/trac_5597-infinite_polynomial_ring.patch) by @mwhansen created at 2009-10-21 06:03:57",
     "created_at": "2009-10-21T06:03:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43618",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5597-infinite_polynomial_ring.patch](tarball://root/attachments/some-uuid/ticket5597/trac_5597-infinite_polynomial_ring.patch) by mhansen created at 2009-10-21 06:03:57
+Attachment [trac_5597-infinite_polynomial_ring.patch](tarball://root/attachments/some-uuid/ticket5597/trac_5597-infinite_polynomial_ring.patch) by @mwhansen created at 2009-10-21 06:03:57
 
 
 
@@ -410,7 +410,7 @@ archive/issue_comments_043619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43619",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -430,7 +430,7 @@ archive/issue_comments_043620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43620",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -448,7 +448,7 @@ archive/issue_comments_043621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43621",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -466,7 +466,7 @@ archive/issue_comments_043622.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43622",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -484,7 +484,7 @@ archive/issue_comments_043623.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43623",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -502,7 +502,7 @@ archive/issue_comments_043624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43624",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -41,7 +41,7 @@ archive/issue_comments_028354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3950#issuecomment-28354",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_028360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3950#issuecomment-28360",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -182,16 +182,16 @@ I haven't made a template for every html_* yet but the worksheet listing templat
 archive/issue_comments_028362.json:
 ```json
 {
-    "body": "Attachment [trac_3950.patch](tarball://root/attachments/some-uuid/ticket3950/trac_3950.patch) by mhansen created at 2008-12-02 10:33:36",
+    "body": "Attachment [trac_3950.patch](tarball://root/attachments/some-uuid/ticket3950/trac_3950.patch) by @mwhansen created at 2008-12-02 10:33:36",
     "created_at": "2008-12-02T10:33:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3950#issuecomment-28362",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3950.patch](tarball://root/attachments/some-uuid/ticket3950/trac_3950.patch) by mhansen created at 2008-12-02 10:33:36
+Attachment [trac_3950.patch](tarball://root/attachments/some-uuid/ticket3950/trac_3950.patch) by @mwhansen created at 2008-12-02 10:33:36
 
 
 
@@ -200,16 +200,16 @@ Attachment [trac_3950.patch](tarball://root/attachments/some-uuid/ticket3950/tra
 archive/issue_comments_028363.json:
 ```json
 {
-    "body": "Attachment [trac_3950-2.patch](tarball://root/attachments/some-uuid/ticket3950/trac_3950-2.patch) by mhansen created at 2008-12-03 00:43:35",
+    "body": "Attachment [trac_3950-2.patch](tarball://root/attachments/some-uuid/ticket3950/trac_3950-2.patch) by @mwhansen created at 2008-12-03 00:43:35",
     "created_at": "2008-12-03T00:43:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3950#issuecomment-28363",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3950-2.patch](tarball://root/attachments/some-uuid/ticket3950/trac_3950-2.patch) by mhansen created at 2008-12-03 00:43:35
+Attachment [trac_3950-2.patch](tarball://root/attachments/some-uuid/ticket3950/trac_3950-2.patch) by @mwhansen created at 2008-12-03 00:43:35
 
 
 
@@ -218,16 +218,16 @@ Attachment [trac_3950-2.patch](tarball://root/attachments/some-uuid/ticket3950/t
 archive/issue_comments_028364.json:
 ```json
 {
-    "body": "Attachment [trac_3950-folded.patch](tarball://root/attachments/some-uuid/ticket3950/trac_3950-folded.patch) by mhansen created at 2008-12-03 00:50:00\n\nI attached my changes as trac_3950-2.patch.  trac_3950-folded.patch is a patch showing the combined effect of the two patches.  It is helpful for reviewing purposes, but the two other ones are the ones that should be applied for credit reasons.",
+    "body": "Attachment [trac_3950-folded.patch](tarball://root/attachments/some-uuid/ticket3950/trac_3950-folded.patch) by @mwhansen created at 2008-12-03 00:50:00\n\nI attached my changes as trac_3950-2.patch.  trac_3950-folded.patch is a patch showing the combined effect of the two patches.  It is helpful for reviewing purposes, but the two other ones are the ones that should be applied for credit reasons.",
     "created_at": "2008-12-03T00:50:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3950#issuecomment-28364",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3950-folded.patch](tarball://root/attachments/some-uuid/ticket3950/trac_3950-folded.patch) by mhansen created at 2008-12-03 00:50:00
+Attachment [trac_3950-folded.patch](tarball://root/attachments/some-uuid/ticket3950/trac_3950-folded.patch) by @mwhansen created at 2008-12-03 00:50:00
 
 I attached my changes as trac_3950-2.patch.  trac_3950-folded.patch is a patch showing the combined effect of the two patches.  It is helpful for reviewing purposes, but the two other ones are the ones that should be applied for credit reasons.
 

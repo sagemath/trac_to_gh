@@ -3,7 +3,7 @@
 archive/issues_004510.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThis patch adds a few references for the original distribution of this code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4510\n\n",
+    "body": "Assignee: @rlmill\n\nThis patch adds a few references for the original distribution of this code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4510\n\n",
     "created_at": "2008-11-13T06:57:53Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_004510.json:
     "title": "Add references for Boyer's planarity code implementation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4510",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 This patch adds a few references for the original distribution of this code.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4510
 archive/issue_comments_033451.json:
 ```json
 {
-    "body": "Attachment [planarity-reference.patch](tarball://root/attachments/some-uuid/ticket4510/planarity-reference.patch) by jason created at 2008-11-13 06:58:04",
+    "body": "Attachment [planarity-reference.patch](tarball://root/attachments/some-uuid/ticket4510/planarity-reference.patch) by @jasongrout created at 2008-11-13 06:58:04",
     "created_at": "2008-11-13T06:58:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4510#issuecomment-33451",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [planarity-reference.patch](tarball://root/attachments/some-uuid/ticket4510/planarity-reference.patch) by jason created at 2008-11-13 06:58:04
+Attachment [planarity-reference.patch](tarball://root/attachments/some-uuid/ticket4510/planarity-reference.patch) by @jasongrout created at 2008-11-13 06:58:04
 
 
 

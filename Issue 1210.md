@@ -3,7 +3,7 @@
 archive/issues_001210.json:
 ```json
 {
-    "body": "Assignee: roed\n\nKeywords: polynomial p-adic print mode cache caching\n\nThe issue is in the caching:\n\n\n```\nsage: R = Qp(7, print_mode='val-unit')\nsage: S = Qp(7)\nsage: R(7^2 + 1)\n7^2 * 1 + O(7^22)\nsage: S(7^2)\n7^2 + O(7^22)\nsage: R(7^2 + 1)\n50 + O(7^20)\nsage: S(7^2 + 1)\n1 + 7^2 + O(7^20)\nsage: R is S\nFalse\nsage: R['x'] is S['x']\nTrue\n```\n\nThe issue manifests itself in polynomial_ring_constructor, which fails because the cache is keyed by ==, not identity, and\n\n```\nsage: R == S\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1210\n\n",
+    "body": "Assignee: @roed314\n\nKeywords: polynomial p-adic print mode cache caching\n\nThe issue is in the caching:\n\n\n```\nsage: R = Qp(7, print_mode='val-unit')\nsage: S = Qp(7)\nsage: R(7^2 + 1)\n7^2 * 1 + O(7^22)\nsage: S(7^2)\n7^2 + O(7^22)\nsage: R(7^2 + 1)\n50 + O(7^20)\nsage: S(7^2 + 1)\n1 + 7^2 + O(7^20)\nsage: R is S\nFalse\nsage: R['x'] is S['x']\nTrue\n```\n\nThe issue manifests itself in polynomial_ring_constructor, which fails because the cache is keyed by ==, not identity, and\n\n```\nsage: R == S\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1210\n\n",
     "created_at": "2007-11-19T21:54:44Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_001210.json:
     "title": "Cannot create distinct polynomial rings over p-adic rings with different print_modes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1210",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: roed
+Assignee: @roed314
 
 Keywords: polynomial p-adic print mode cache caching
 
@@ -60,16 +60,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1210
 archive/issue_comments_007505.json:
 ```json
 {
-    "body": "Attachment [1210](tarball://root/attachments/some-uuid/ticket1210/1210) by roed created at 2009-01-23 02:45:02",
+    "body": "Attachment [1210](tarball://root/attachments/some-uuid/ticket1210/1210) by @roed314 created at 2009-01-23 02:45:02",
     "created_at": "2009-01-23T02:45:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1210",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1210#issuecomment-7505",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [1210](tarball://root/attachments/some-uuid/ticket1210/1210) by roed created at 2009-01-23 02:45:02
+Attachment [1210](tarball://root/attachments/some-uuid/ticket1210/1210) by @roed314 created at 2009-01-23 02:45:02
 
 
 
@@ -78,16 +78,16 @@ Attachment [1210](tarball://root/attachments/some-uuid/ticket1210/1210) by roed 
 archive/issue_comments_007506.json:
 ```json
 {
-    "body": "Attachment [1210.2](tarball://root/attachments/some-uuid/ticket1210/1210.2) by roed created at 2009-01-24 02:43:40\n\nUse this one instead",
+    "body": "Attachment [1210.2](tarball://root/attachments/some-uuid/ticket1210/1210.2) by @roed314 created at 2009-01-24 02:43:40\n\nUse this one instead",
     "created_at": "2009-01-24T02:43:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1210",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1210#issuecomment-7506",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [1210.2](tarball://root/attachments/some-uuid/ticket1210/1210.2) by roed created at 2009-01-24 02:43:40
+Attachment [1210.2](tarball://root/attachments/some-uuid/ticket1210/1210.2) by @roed314 created at 2009-01-24 02:43:40
 
 Use this one instead
 
@@ -103,7 +103,7 @@ archive/issue_comments_007507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1210",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1210#issuecomment-7507",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_007509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1210",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1210#issuecomment-7509",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_007510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1210",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1210#issuecomment-7510",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -297,7 +297,7 @@ archive/issue_comments_007511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1210",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1210#issuecomment-7511",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_007512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1210",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1210#issuecomment-7512",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -359,7 +359,7 @@ archive/issue_comments_007513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1210",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1210#issuecomment-7513",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -377,7 +377,7 @@ archive/issue_comments_007514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1210",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1210#issuecomment-7514",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

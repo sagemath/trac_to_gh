@@ -3,7 +3,7 @@
 archive/issues_008586.json:
 ```json
 {
-    "body": "Assignee: malb\n\n\n```python\nsage: P.<x> = PolynomialRing(GF(32003),1)\nsage: sage.rings.ideal.FieldIdeal(P).vector_space_dimension()\n32003\n\nsage: P.<x,y> = PolynomialRing(GF(32003),2)\nsage: sage.rings.ideal.FieldIdeal(P).vector_space_dimension()\n1024192009\n\nsage: P.<x,y,z> = PolynomialRing(GF(32003),3)\nsage: sage.rings.ideal.FieldIdeal(P).vector_space_dimension()\n-1973539045 # 2^32 - (32003^3) % 2^32 == 1973539045\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8586\n\n",
+    "body": "Assignee: @malb\n\n\n```python\nsage: P.<x> = PolynomialRing(GF(32003),1)\nsage: sage.rings.ideal.FieldIdeal(P).vector_space_dimension()\n32003\n\nsage: P.<x,y> = PolynomialRing(GF(32003),2)\nsage: sage.rings.ideal.FieldIdeal(P).vector_space_dimension()\n1024192009\n\nsage: P.<x,y,z> = PolynomialRing(GF(32003),3)\nsage: sage.rings.ideal.FieldIdeal(P).vector_space_dimension()\n-1973539045 # 2^32 - (32003^3) % 2^32 == 1973539045\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8586\n\n",
     "created_at": "2010-03-23T11:29:29Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_008586.json:
     "title": "Integer overflow in vector_space_dimension()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8586",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 
 ```python
@@ -51,7 +51,7 @@ archive/issue_comments_077761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8586#issuecomment-77761",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_077765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8586#issuecomment-77765",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_077766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8586#issuecomment-77766",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

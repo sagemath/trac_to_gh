@@ -3,7 +3,7 @@
 archive/issues_009627.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nCC:  katestange mjo\n\nHere is simple example:\n\n```\nsage: h = 3^64;\nsage: int(h)==int(SR(h))\nFALSE\n```\n\nLooking a bit deeper into this, it seems that the first 100 bits are correct, and after that int(SR(h)) is just zeroes. (As a side note, the conversion to ZZ works without a problem.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9627\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  @katestange @orlitzky\n\nHere is simple example:\n\n```\nsage: h = 3^64;\nsage: int(h)==int(SR(h))\nFALSE\n```\n\nLooking a bit deeper into this, it seems that the first 100 bits are correct, and after that int(SR(h)) is just zeroes. (As a side note, the conversion to ZZ works without a problem.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9627\n\n",
     "created_at": "2010-07-28T20:33:03Z",
     "labels": [
         "coercion",
@@ -14,12 +14,12 @@ archive/issues_009627.json:
     "title": "converting from symbolic ring to int is broken,",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9627",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
-CC:  katestange mjo
+CC:  @katestange @orlitzky
 
 Here is simple example:
 
@@ -48,7 +48,7 @@ archive/issue_comments_093299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9627",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9627#issuecomment-93299",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_093300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9627",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9627#issuecomment-93300",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_093301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9627",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9627#issuecomment-93301",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_093302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9627",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9627#issuecomment-93302",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_093304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9627",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9627#issuecomment-93304",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_093305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9627",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9627#issuecomment-93305",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_093306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9627",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9627#issuecomment-93306",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_093307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9627",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9627#issuecomment-93307",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

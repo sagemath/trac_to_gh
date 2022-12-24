@@ -80,16 +80,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6717
 archive/issue_comments_055128.json:
 ```json
 {
-    "body": "Attachment [trac_6717.patch](tarball://root/attachments/some-uuid/ticket6717/trac_6717.patch) by burcin created at 2009-08-09 19:45:27\n\nfix random printing problems in doctests",
+    "body": "Attachment [trac_6717.patch](tarball://root/attachments/some-uuid/ticket6717/trac_6717.patch) by @burcin created at 2009-08-09 19:45:27\n\nfix random printing problems in doctests",
     "created_at": "2009-08-09T19:45:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6717",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6717#issuecomment-55128",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6717.patch](tarball://root/attachments/some-uuid/ticket6717/trac_6717.patch) by burcin created at 2009-08-09 19:45:27
+Attachment [trac_6717.patch](tarball://root/attachments/some-uuid/ticket6717/trac_6717.patch) by @burcin created at 2009-08-09 19:45:27
 
 fix random printing problems in doctests
 
@@ -100,16 +100,16 @@ fix random printing problems in doctests
 archive/issue_comments_055129.json:
 ```json
 {
-    "body": "Changing assignee from tbd to burcin.",
+    "body": "Changing assignee from tbd to @burcin.",
     "created_at": "2009-08-09T19:47:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6717",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6717#issuecomment-55129",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Changing assignee from tbd to burcin.
+Changing assignee from tbd to @burcin.
 
 
 
@@ -123,7 +123,7 @@ archive/issue_comments_055130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6717",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6717#issuecomment-55130",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_055131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6717",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6717#issuecomment-55131",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

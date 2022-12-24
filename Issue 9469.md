@@ -3,7 +3,7 @@
 archive/issues_009469.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat\n\nCurrently one can do:\n\n```\n    sage: F = FreeModule(QQ,3)\n    sage: F in VectorSpaces(QQ)\n    True\n```\n\n\nThis patch implements:\n\n```\n    sage: F in VectorSpaces\n    True\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9469\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nCurrently one can do:\n\n```\n    sage: F = FreeModule(QQ,3)\n    sage: F in VectorSpaces(QQ)\n    True\n```\n\n\nThis patch implements:\n\n```\n    sage: F in VectorSpaces\n    True\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9469\n\n",
     "created_at": "2010-07-10T02:52:00Z",
     "labels": [
         "categories",
@@ -14,10 +14,10 @@ archive/issues_009469.json:
     "title": "Category membership, without arguments",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9469",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
 CC:  sage-combinat
 
@@ -54,7 +54,7 @@ archive/issue_comments_090823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9469#issuecomment-90823",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_090824.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9469#issuecomment-90824",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_090825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9469#issuecomment-90825",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_090826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9469#issuecomment-90826",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_090827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9469#issuecomment-90827",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_090828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9469#issuecomment-90828",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_090829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9469#issuecomment-90829",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_090830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9469#issuecomment-90830",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_090831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9469#issuecomment-90831",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_090832.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9469#issuecomment-90832",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_090833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9469#issuecomment-90833",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_090834.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9469#issuecomment-90834",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_090835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9469#issuecomment-90835",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -319,7 +319,7 @@ archive/issue_comments_090836.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9469#issuecomment-90836",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -337,7 +337,7 @@ archive/issue_comments_090837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9469#issuecomment-90837",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -350,16 +350,16 @@ Note: I fixed the missing 's' in 'Non category objects'.
 archive/issue_comments_090838.json:
 ```json
 {
-    "body": "Attachment [trac_9469-category-membership_without_arguments-nt.patch](tarball://root/attachments/some-uuid/ticket9469/trac_9469-category-membership_without_arguments-nt.patch) by nthiery created at 2012-02-21 07:42:42",
+    "body": "Attachment [trac_9469-category-membership_without_arguments-nt.patch](tarball://root/attachments/some-uuid/ticket9469/trac_9469-category-membership_without_arguments-nt.patch) by @nthiery created at 2012-02-21 07:42:42",
     "created_at": "2012-02-21T07:42:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9469#issuecomment-90838",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_9469-category-membership_without_arguments-nt.patch](tarball://root/attachments/some-uuid/ticket9469/trac_9469-category-membership_without_arguments-nt.patch) by nthiery created at 2012-02-21 07:42:42
+Attachment [trac_9469-category-membership_without_arguments-nt.patch](tarball://root/attachments/some-uuid/ticket9469/trac_9469-category-membership_without_arguments-nt.patch) by @nthiery created at 2012-02-21 07:42:42
 
 
 
@@ -373,7 +373,7 @@ archive/issue_comments_090839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9469#issuecomment-90839",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -391,7 +391,7 @@ archive/issue_comments_090840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9469#issuecomment-90840",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -409,7 +409,7 @@ archive/issue_comments_090841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9469#issuecomment-90841",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -427,7 +427,7 @@ archive/issue_comments_090842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9469#issuecomment-90842",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

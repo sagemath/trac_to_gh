@@ -3,7 +3,7 @@
 archive/issues_002316.json:
 ```json
 {
-    "body": "Assignee: yi\n\nCC:  was\n\nKeywords: dsage\n\nIf you do dsage.start_all() and kill the server without killing the workers, the workers will be left hanging around so that the next time you do dsage.start_all(), you'll have twice as many workers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2316\n\n",
+    "body": "Assignee: @yqiang\n\nCC:  @williamstein\n\nKeywords: dsage\n\nIf you do dsage.start_all() and kill the server without killing the workers, the workers will be left hanging around so that the next time you do dsage.start_all(), you'll have twice as many workers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2316\n\n",
     "created_at": "2008-02-26T17:40:08Z",
     "labels": [
         "dsage",
@@ -14,12 +14,12 @@ archive/issues_002316.json:
     "title": "dsage.start_all() can leave zombie workers around",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2316",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
-Assignee: yi
+Assignee: @yqiang
 
-CC:  was
+CC:  @williamstein
 
 Keywords: dsage
 
@@ -41,7 +41,7 @@ archive/issue_comments_015414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2316#issuecomment-15414",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -54,16 +54,16 @@ patch which kills dsage server and workers when exiting sage
 archive/issue_comments_015415.json:
 ```json
 {
-    "body": "Attachment [kill_zombies.patch](tarball://root/attachments/some-uuid/ticket2316/kill_zombies.patch) by yi created at 2008-04-01 22:47:28\n\nAttached patch which kills the dsage server and worker on exit. This in conjunction with the sage cleaner should fix the zombie issues.",
+    "body": "Attachment [kill_zombies.patch](tarball://root/attachments/some-uuid/ticket2316/kill_zombies.patch) by @yqiang created at 2008-04-01 22:47:28\n\nAttached patch which kills the dsage server and worker on exit. This in conjunction with the sage cleaner should fix the zombie issues.",
     "created_at": "2008-04-01T22:47:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2316#issuecomment-15415",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Attachment [kill_zombies.patch](tarball://root/attachments/some-uuid/ticket2316/kill_zombies.patch) by yi created at 2008-04-01 22:47:28
+Attachment [kill_zombies.patch](tarball://root/attachments/some-uuid/ticket2316/kill_zombies.patch) by @yqiang created at 2008-04-01 22:47:28
 
 Attached patch which kills the dsage server and worker on exit. This in conjunction with the sage cleaner should fix the zombie issues.
 
@@ -79,7 +79,7 @@ archive/issue_comments_015416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2316#issuecomment-15416",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

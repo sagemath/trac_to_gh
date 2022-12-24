@@ -14,7 +14,7 @@ archive/issues_000506.json:
     "title": "add %timeit support to the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/506",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -35,16 +35,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/506
 archive/issue_comments_002532.json:
 ```json
 {
-    "body": "Changing assignee from boothby to was.",
+    "body": "Changing assignee from boothby to @williamstein.",
     "created_at": "2008-02-15T05:09:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/506#issuecomment-2532",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from boothby to was.
+Changing assignee from boothby to @williamstein.
 
 
 
@@ -58,7 +58,7 @@ archive/issue_comments_002533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/506#issuecomment-2533",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -71,16 +71,16 @@ Changing status from new to assigned.
 archive/issue_comments_002534.json:
 ```json
 {
-    "body": "Attachment [trac-506_timeit.patch](tarball://root/attachments/some-uuid/ticket506/trac-506_timeit.patch) by was created at 2008-02-15 06:34:47\n\nIn addition to adding the requested functionality there is now a command timeit that one can also use from the command line, which correctly uses the preparser.",
+    "body": "Attachment [trac-506_timeit.patch](tarball://root/attachments/some-uuid/ticket506/trac-506_timeit.patch) by @williamstein created at 2008-02-15 06:34:47\n\nIn addition to adding the requested functionality there is now a command timeit that one can also use from the command line, which correctly uses the preparser.",
     "created_at": "2008-02-15T06:34:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/506#issuecomment-2534",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-506_timeit.patch](tarball://root/attachments/some-uuid/ticket506/trac-506_timeit.patch) by was created at 2008-02-15 06:34:47
+Attachment [trac-506_timeit.patch](tarball://root/attachments/some-uuid/ticket506/trac-506_timeit.patch) by @williamstein created at 2008-02-15 06:34:47
 
 In addition to adding the requested functionality there is now a command timeit that one can also use from the command line, which correctly uses the preparser.
 
@@ -91,16 +91,16 @@ In addition to adding the requested functionality there is now a command timeit 
 archive/issue_comments_002535.json:
 ```json
 {
-    "body": "Attachment [trac-506-part2_of_2.patch](tarball://root/attachments/some-uuid/ticket506/trac-506-part2_of_2.patch) by was created at 2008-02-15 06:39:33\n\napply both this and trac-506.ptch",
+    "body": "Attachment [trac-506-part2_of_2.patch](tarball://root/attachments/some-uuid/ticket506/trac-506-part2_of_2.patch) by @williamstein created at 2008-02-15 06:39:33\n\napply both this and trac-506.ptch",
     "created_at": "2008-02-15T06:39:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/506#issuecomment-2535",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-506-part2_of_2.patch](tarball://root/attachments/some-uuid/ticket506/trac-506-part2_of_2.patch) by was created at 2008-02-15 06:39:33
+Attachment [trac-506-part2_of_2.patch](tarball://root/attachments/some-uuid/ticket506/trac-506-part2_of_2.patch) by @williamstein created at 2008-02-15 06:39:33
 
 apply both this and trac-506.ptch
 
@@ -116,7 +116,7 @@ archive/issue_comments_002536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/506#issuecomment-2536",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_002537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/506#issuecomment-2537",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

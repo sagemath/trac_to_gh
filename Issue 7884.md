@@ -3,7 +3,7 @@
 archive/issues_007884.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7884\n\n",
+    "body": "Assignee: @aghitza\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7884\n\n",
     "created_at": "2010-01-09T20:14:55Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_007884.json:
     "title": "Coercion for fraction fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7884",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_068527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7884#issuecomment-68527",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_068528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7884#issuecomment-68528",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_068529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7884#issuecomment-68529",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

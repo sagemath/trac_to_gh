@@ -3,7 +3,7 @@
 archive/issues_007951.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  malb\n\n\n```\nsage: R.<x,y> = QQ[]\nsage: P = PolynomialRing(QQ,0,'')\nsage: P\nMultivariate Polynomial Ring in no variables over Rational Field\nsage: t = P.random_element()\nsage: t\n-1\nsage: t*x\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/burcin/.sage/temp/karr/24426/_home_burcin__sage_init_sage_0.py in <module>()\n\n/home/burcin/sage/sage-4.3.alpha0/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__mul__ (sage/structure/element.c:10153)()\n\n/home/burcin/sage/sage-4.3.alpha0/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6988)()\n\nTypeError: unsupported operand parent(s) for '*': 'Multivariate Polynomial Ring in no variables over Rational Field' and 'Multivariate Polynomial Ring in x, y over Rational Field'\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7951\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @malb\n\n\n```\nsage: R.<x,y> = QQ[]\nsage: P = PolynomialRing(QQ,0,'')\nsage: P\nMultivariate Polynomial Ring in no variables over Rational Field\nsage: t = P.random_element()\nsage: t\n-1\nsage: t*x\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/burcin/.sage/temp/karr/24426/_home_burcin__sage_init_sage_0.py in <module>()\n\n/home/burcin/sage/sage-4.3.alpha0/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__mul__ (sage/structure/element.c:10153)()\n\n/home/burcin/sage/sage-4.3.alpha0/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6988)()\n\nTypeError: unsupported operand parent(s) for '*': 'Multivariate Polynomial Ring in no variables over Rational Field' and 'Multivariate Polynomial Ring in x, y over Rational Field'\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7951\n\n",
     "created_at": "2010-01-16T17:56:27Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_007951.json:
     "title": "coercion problem with 0 variable polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7951",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  malb
+CC:  @malb
 
 
 ```
@@ -54,16 +54,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7951
 archive/issue_comments_069377.json:
 ```json
 {
-    "body": "Attachment [trac_7951-zero_variable_poly_coercion.patch](tarball://root/attachments/some-uuid/ticket7951/trac_7951-zero_variable_poly_coercion.patch) by burcin created at 2010-01-17 22:50:27",
+    "body": "Attachment [trac_7951-zero_variable_poly_coercion.patch](tarball://root/attachments/some-uuid/ticket7951/trac_7951-zero_variable_poly_coercion.patch) by @burcin created at 2010-01-17 22:50:27",
     "created_at": "2010-01-17T22:50:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7951",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7951#issuecomment-69377",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_7951-zero_variable_poly_coercion.patch](tarball://root/attachments/some-uuid/ticket7951/trac_7951-zero_variable_poly_coercion.patch) by burcin created at 2010-01-17 22:50:27
+Attachment [trac_7951-zero_variable_poly_coercion.patch](tarball://root/attachments/some-uuid/ticket7951/trac_7951-zero_variable_poly_coercion.patch) by @burcin created at 2010-01-17 22:50:27
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_069378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7951",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7951#issuecomment-69378",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_069379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7951",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7951#issuecomment-69379",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_069380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7951",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7951#issuecomment-69380",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_069381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7951",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7951#issuecomment-69381",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_069382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7951",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7951#issuecomment-69382",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_069383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7951",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7951#issuecomment-69383",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_069384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7951",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7951#issuecomment-69384",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007449.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  hivert nthiery\n\nKeywords: doc\n\nIf I type\n\n```\nsage: MS = MatrixSpace(QQ,6,6,sparse=True); MS\nFull MatrixSpace of 6 by 6 sparse matrices over Rational Field\nsage: MS?\n```\n\nThen sage hangs eating all the memory. I don't have the less idea why it happens with `MatrixSpace`. I didn't try very hard but I can't manage any other request with the same effect. I checked that this is not a problem of installation on my computer: It happens as well on boxen. Though, on the contrary to my own computer, I didn't check that it effectively eat all the memory on boxen ;-)\n\nCheers,\n\nFlorent\n  \n\nIssue created by migration from https://trac.sagemath.org/ticket/7449\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @hivert @nthiery\n\nKeywords: doc\n\nIf I type\n\n```\nsage: MS = MatrixSpace(QQ,6,6,sparse=True); MS\nFull MatrixSpace of 6 by 6 sparse matrices over Rational Field\nsage: MS?\n```\n\nThen sage hangs eating all the memory. I don't have the less idea why it happens with `MatrixSpace`. I didn't try very hard but I can't manage any other request with the same effect. I checked that this is not a problem of installation on my computer: It happens as well on boxen. Though, on the contrary to my own computer, I didn't check that it effectively eat all the memory on boxen ;-)\n\nCheers,\n\nFlorent\n  \n\nIssue created by migration from https://trac.sagemath.org/ticket/7449\n\n",
     "created_at": "2009-11-12T21:49:17Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_007449.json:
     "title": "Some doc request hangs sage eating all memory.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7449",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 Assignee: mvngu
 
-CC:  hivert nthiery
+CC:  @hivert @nthiery
 
 Keywords: doc
 
@@ -54,7 +54,7 @@ archive/issue_comments_062742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7449#issuecomment-62742",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_062743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7449#issuecomment-62743",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_062744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7449#issuecomment-62744",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_062745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7449#issuecomment-62745",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -205,16 +205,16 @@ Changing status from new to needs_review.
 archive/issue_comments_062746.json:
 ```json
 {
-    "body": "Attachment [sagelib_7449.patch](tarball://root/attachments/some-uuid/ticket7449/sagelib_7449.patch) by was created at 2009-11-16 17:26:32",
+    "body": "Attachment [sagelib_7449.patch](tarball://root/attachments/some-uuid/ticket7449/sagelib_7449.patch) by @williamstein created at 2009-11-16 17:26:32",
     "created_at": "2009-11-16T17:26:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7449#issuecomment-62746",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sagelib_7449.patch](tarball://root/attachments/some-uuid/ticket7449/sagelib_7449.patch) by was created at 2009-11-16 17:26:32
+Attachment [sagelib_7449.patch](tarball://root/attachments/some-uuid/ticket7449/sagelib_7449.patch) by @williamstein created at 2009-11-16 17:26:32
 
 
 
@@ -228,7 +228,7 @@ archive/issue_comments_062747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7449#issuecomment-62747",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_062748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7449#issuecomment-62748",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_062749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7449#issuecomment-62749",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

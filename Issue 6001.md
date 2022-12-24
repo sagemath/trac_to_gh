@@ -3,7 +3,7 @@
 archive/issues_006001.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  jhpalmieri\n\nAs mentioned in [this message](http://groups.google.com/group/sage-devel/msg/d021522accd00e81), it might be useful to tear/pop/pull/rip out/off/up at least some notebook introspection window(s) into a separate window(s) [1].\n\nThis ticket, which builds on #5653 (see comments [comment:ticket:5653:19 19ff]), is currently a ~~disaster~~ test area for variations on this theme.\n\nIn the near future, I'm hoping to send a message to sage-devel to gauge interest, get more suggestions, etc., about similar potential improvements.\n\nRelated: #4714, #5644, #5653. [2]\n\n[1] Nevertheless, they're all fine docstrings.\n[2] Almost surely, this is far from exhaustive or even representative.  Feel free to add to the list.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6001\n\n",
+    "body": "Assignee: boothby\n\nCC:  @jhpalmieri\n\nAs mentioned in [this message](http://groups.google.com/group/sage-devel/msg/d021522accd00e81), it might be useful to tear/pop/pull/rip out/off/up at least some notebook introspection window(s) into a separate window(s) [1].\n\nThis ticket, which builds on #5653 (see comments [comment:ticket:5653:19 19ff]), is currently a ~~disaster~~ test area for variations on this theme.\n\nIn the near future, I'm hoping to send a message to sage-devel to gauge interest, get more suggestions, etc., about similar potential improvements.\n\nRelated: #4714, #5644, #5653. [2]\n\n[1] Nevertheless, they're all fine docstrings.\n[2] Almost surely, this is far from exhaustive or even representative.  Feel free to add to the list.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6001\n\n",
     "created_at": "2009-05-06T23:14:40Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_006001.json:
     "title": "[with patch, needs work] tear out docstrings in the notebook into a new window",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6001",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: boothby
 
-CC:  jhpalmieri
+CC:  @jhpalmieri
 
 As mentioned in [this message](http://groups.google.com/group/sage-devel/msg/d021522accd00e81), it might be useful to tear/pop/pull/rip out/off/up at least some notebook introspection window(s) into a separate window(s) [1].
 
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6001
 archive/issue_comments_047733.json:
 ```json
 {
-    "body": "Attachment [trac_6001_tearout_docstring_v1.patch](tarball://root/attachments/some-uuid/ticket6001/trac_6001_tearout_docstring_v1.patch) by mpatel created at 2009-05-06 23:19:50\n\nNeeds accompanying introspect.js",
+    "body": "Attachment [trac_6001_tearout_docstring_v1.patch](tarball://root/attachments/some-uuid/ticket6001/trac_6001_tearout_docstring_v1.patch) by @qed777 created at 2009-05-06 23:19:50\n\nNeeds accompanying introspect.js",
     "created_at": "2009-05-06T23:19:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6001#issuecomment-47733",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6001_tearout_docstring_v1.patch](tarball://root/attachments/some-uuid/ticket6001/trac_6001_tearout_docstring_v1.patch) by mpatel created at 2009-05-06 23:19:50
+Attachment [trac_6001_tearout_docstring_v1.patch](tarball://root/attachments/some-uuid/ticket6001/trac_6001_tearout_docstring_v1.patch) by @qed777 created at 2009-05-06 23:19:50
 
 Needs accompanying introspect.js
 
@@ -63,16 +63,16 @@ Needs accompanying introspect.js
 archive/issue_comments_047734.json:
 ```json
 {
-    "body": "Attachment [introspect_v1.js](tarball://root/attachments/some-uuid/ticket6001/introspect_v1.js) by mpatel created at 2009-05-06 23:21:10\n\nFor now, this should be javascript_local/introspect.js",
+    "body": "Attachment [introspect_v1.js](tarball://root/attachments/some-uuid/ticket6001/introspect_v1.js) by @qed777 created at 2009-05-06 23:21:10\n\nFor now, this should be javascript_local/introspect.js",
     "created_at": "2009-05-06T23:21:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6001#issuecomment-47734",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [introspect_v1.js](tarball://root/attachments/some-uuid/ticket6001/introspect_v1.js) by mpatel created at 2009-05-06 23:21:10
+Attachment [introspect_v1.js](tarball://root/attachments/some-uuid/ticket6001/introspect_v1.js) by @qed777 created at 2009-05-06 23:21:10
 
 For now, this should be javascript_local/introspect.js
 
@@ -88,7 +88,7 @@ archive/issue_comments_047735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6001#issuecomment-47735",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_047736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6001#issuecomment-47736",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_047737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6001#issuecomment-47737",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -163,16 +163,16 @@ Opera 9 Linux snapshot
 archive/issue_comments_047738.json:
 ```json
 {
-    "body": "Attachment [tearout_opera.png](tarball://root/attachments/some-uuid/ticket6001/tearout_opera.png) by mpatel created at 2009-05-07 01:25:46\n\nFirefox 3 Linux snapshot of \"torn out\" docstrings",
+    "body": "Attachment [tearout_opera.png](tarball://root/attachments/some-uuid/ticket6001/tearout_opera.png) by @qed777 created at 2009-05-07 01:25:46\n\nFirefox 3 Linux snapshot of \"torn out\" docstrings",
     "created_at": "2009-05-07T01:25:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6001#issuecomment-47738",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [tearout_opera.png](tarball://root/attachments/some-uuid/ticket6001/tearout_opera.png) by mpatel created at 2009-05-07 01:25:46
+Attachment [tearout_opera.png](tarball://root/attachments/some-uuid/ticket6001/tearout_opera.png) by @qed777 created at 2009-05-07 01:25:46
 
 Firefox 3 Linux snapshot of "torn out" docstrings
 
@@ -183,16 +183,16 @@ Firefox 3 Linux snapshot of "torn out" docstrings
 archive/issue_comments_047739.json:
 ```json
 {
-    "body": "Attachment [tornout_firefox.png](tarball://root/attachments/some-uuid/ticket6001/tornout_firefox.png) by mpatel created at 2009-05-07 01:49:55\n\nUnexciting inaction shots:\n\n<img src=\"tearout_opera.png\" width=200px, right>\n<img src=\"tornout_firefox.png\" width=200px, left>\n\nThis ticket could *really* use *your* help.\n\nBy the way, to get rounded [docstring] borders in Firefox 3, put something like\n\n```\ndiv.docstring {\n    -moz-border-radius: 0.5em;\n    -webkit-border-radius: 0.5em;\n}\n```\n\nin `DOT_SAGE/notebook.css` .  I haven't tested this in Safari.",
+    "body": "Attachment [tornout_firefox.png](tarball://root/attachments/some-uuid/ticket6001/tornout_firefox.png) by @qed777 created at 2009-05-07 01:49:55\n\nUnexciting inaction shots:\n\n<img src=\"tearout_opera.png\" width=200px, right>\n<img src=\"tornout_firefox.png\" width=200px, left>\n\nThis ticket could *really* use *your* help.\n\nBy the way, to get rounded [docstring] borders in Firefox 3, put something like\n\n```\ndiv.docstring {\n    -moz-border-radius: 0.5em;\n    -webkit-border-radius: 0.5em;\n}\n```\n\nin `DOT_SAGE/notebook.css` .  I haven't tested this in Safari.",
     "created_at": "2009-05-07T01:49:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6001#issuecomment-47739",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [tornout_firefox.png](tarball://root/attachments/some-uuid/ticket6001/tornout_firefox.png) by mpatel created at 2009-05-07 01:49:55
+Attachment [tornout_firefox.png](tarball://root/attachments/some-uuid/ticket6001/tornout_firefox.png) by @qed777 created at 2009-05-07 01:49:55
 
 Unexciting inaction shots:
 
@@ -224,7 +224,7 @@ archive/issue_comments_047740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6001#issuecomment-47740",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -239,16 +239,16 @@ With Firefox, looks great, and I like font-resizing and toggling.
 archive/issue_comments_047741.json:
 ```json
 {
-    "body": "Attachment [introspect_v2.js](tarball://root/attachments/some-uuid/ticket6001/introspect_v2.js) by mpatel created at 2009-05-19 15:50:53\n\nAttempted support for WebKit browsers.  Replaces v1.",
+    "body": "Attachment [introspect_v2.js](tarball://root/attachments/some-uuid/ticket6001/introspect_v2.js) by @qed777 created at 2009-05-19 15:50:53\n\nAttempted support for WebKit browsers.  Replaces v1.",
     "created_at": "2009-05-19T15:50:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6001#issuecomment-47741",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [introspect_v2.js](tarball://root/attachments/some-uuid/ticket6001/introspect_v2.js) by mpatel created at 2009-05-19 15:50:53
+Attachment [introspect_v2.js](tarball://root/attachments/some-uuid/ticket6001/introspect_v2.js) by @qed777 created at 2009-05-19 15:50:53
 
 Attempted support for WebKit browsers.  Replaces v1.
 
@@ -264,7 +264,7 @@ archive/issue_comments_047742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6001#issuecomment-47742",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -315,16 +315,16 @@ Some ideas related to #5653:
 archive/issue_comments_047743.json:
 ```json
 {
-    "body": "Attachment [introspect_v3.js](tarball://root/attachments/some-uuid/ticket6001/introspect_v3.js) by mpatel created at 2009-05-28 04:02:06\n\nGoes with layout_v3.html.",
+    "body": "Attachment [introspect_v3.js](tarball://root/attachments/some-uuid/ticket6001/introspect_v3.js) by @qed777 created at 2009-05-28 04:02:06\n\nGoes with layout_v3.html.",
     "created_at": "2009-05-28T04:02:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6001#issuecomment-47743",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [introspect_v3.js](tarball://root/attachments/some-uuid/ticket6001/introspect_v3.js) by mpatel created at 2009-05-28 04:02:06
+Attachment [introspect_v3.js](tarball://root/attachments/some-uuid/ticket6001/introspect_v3.js) by @qed777 created at 2009-05-28 04:02:06
 
 Goes with layout_v3.html.
 
@@ -335,16 +335,16 @@ Goes with layout_v3.html.
 archive/issue_comments_047744.json:
 ```json
 {
-    "body": "Attachment [layout_v3.html](tarball://root/attachments/some-uuid/ticket6001/layout_v3.html) by mpatel created at 2009-05-28 04:02:28\n\nGoes with introspect_v3.js.",
+    "body": "Attachment [layout_v3.html](tarball://root/attachments/some-uuid/ticket6001/layout_v3.html) by @qed777 created at 2009-05-28 04:02:28\n\nGoes with introspect_v3.js.",
     "created_at": "2009-05-28T04:02:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6001#issuecomment-47744",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [layout_v3.html](tarball://root/attachments/some-uuid/ticket6001/layout_v3.html) by mpatel created at 2009-05-28 04:02:28
+Attachment [layout_v3.html](tarball://root/attachments/some-uuid/ticket6001/layout_v3.html) by @qed777 created at 2009-05-28 04:02:28
 
 Goes with introspect_v3.js.
 
@@ -360,7 +360,7 @@ archive/issue_comments_047745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6001#issuecomment-47745",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -380,7 +380,7 @@ archive/issue_comments_047746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6001#issuecomment-47746",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -393,16 +393,16 @@ Goes with layout_v4.html.
 archive/issue_comments_047747.json:
 ```json
 {
-    "body": "Attachment [layout_v4.html](tarball://root/attachments/some-uuid/ticket6001/layout_v4.html) by mpatel created at 2009-06-04 09:46:24\n\nGoes with introspect_v4.js.",
+    "body": "Attachment [layout_v4.html](tarball://root/attachments/some-uuid/ticket6001/layout_v4.html) by @qed777 created at 2009-06-04 09:46:24\n\nGoes with introspect_v4.js.",
     "created_at": "2009-06-04T09:46:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6001#issuecomment-47747",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [layout_v4.html](tarball://root/attachments/some-uuid/ticket6001/layout_v4.html) by mpatel created at 2009-06-04 09:46:24
+Attachment [layout_v4.html](tarball://root/attachments/some-uuid/ticket6001/layout_v4.html) by @qed777 created at 2009-06-04 09:46:24
 
 Goes with introspect_v4.js.
 
@@ -418,7 +418,7 @@ archive/issue_comments_047748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6001#issuecomment-47748",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -448,7 +448,7 @@ archive/issue_comments_047749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6001#issuecomment-47749",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -466,7 +466,7 @@ archive/issue_comments_047750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6001#issuecomment-47750",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -484,7 +484,7 @@ archive/issue_comments_047751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6001#issuecomment-47751",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -502,7 +502,7 @@ archive/issue_comments_047752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6001#issuecomment-47752",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -520,7 +520,7 @@ archive/issue_comments_047753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6001#issuecomment-47753",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -538,7 +538,7 @@ archive/issue_comments_047754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6001#issuecomment-47754",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

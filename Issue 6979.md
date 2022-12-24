@@ -3,7 +3,7 @@
 archive/issues_006979.json:
 ```json
 {
-    "body": "Assignee: was\n\nwe add ad hoc methods in matrix_sparse.pyx\n\nIssue created by migration from https://trac.sagemath.org/ticket/6979\n\n",
+    "body": "Assignee: @williamstein\n\nwe add ad hoc methods in matrix_sparse.pyx\n\nIssue created by migration from https://trac.sagemath.org/ticket/6979\n\n",
     "created_at": "2009-09-21T19:01:46Z",
     "labels": [
         "linear algebra",
@@ -17,7 +17,7 @@ archive/issues_006979.json:
     "user": "ylchapuy"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 we add ad hoc methods in matrix_sparse.pyx
 
@@ -75,7 +75,7 @@ archive/issue_comments_057715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6979#issuecomment-57715",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_057717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6979#issuecomment-57717",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_057719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6979#issuecomment-57719",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_057721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6979#issuecomment-57721",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_057722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6979#issuecomment-57722",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_057726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6979#issuecomment-57726",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -335,7 +335,7 @@ archive/issue_comments_057727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6979#issuecomment-57727",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -355,7 +355,7 @@ archive/issue_comments_057728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6979#issuecomment-57728",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

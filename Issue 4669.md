@@ -3,7 +3,7 @@
 archive/issues_004669.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n> What is really confusing me is that the docstring for\n> matrix_complex_double_dense.pyx\n> (presumably *complex* matrices) is more or less the same as the docstring for\n> matrix_real_double_dense.pyx at\n> http://www.sagemath.org/hg/sage-main/file/8b1d19463fc4/sage/matrix/matrix_real_double_dense.pyx\n> In other words, there are no examples of *complex* matrices in the\n> docstring for\n> matrix_complex_double_dense.pyx, which seems odd.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4669\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n> What is really confusing me is that the docstring for\n> matrix_complex_double_dense.pyx\n> (presumably *complex* matrices) is more or less the same as the docstring for\n> matrix_real_double_dense.pyx at\n> http://www.sagemath.org/hg/sage-main/file/8b1d19463fc4/sage/matrix/matrix_real_double_dense.pyx\n> In other words, there are no examples of *complex* matrices in the\n> docstring for\n> matrix_complex_double_dense.pyx, which seems odd.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4669\n\n",
     "created_at": "2008-12-01T15:31:59Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_004669.json:
     "title": "CDF matrices need complex doctests (see matrix/matrix_complex_double_dense.pyx)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4669",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -49,7 +49,7 @@ archive/issue_comments_035169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4669#issuecomment-35169",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -62,16 +62,16 @@ Changing status from new to assigned.
 archive/issue_comments_035170.json:
 ```json
 {
-    "body": "Changing assignee from was to jason.",
+    "body": "Changing assignee from @williamstein to @jasongrout.",
     "created_at": "2008-12-01T16:04:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4669#issuecomment-35170",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from was to jason.
+Changing assignee from @williamstein to @jasongrout.
 
 
 
@@ -80,16 +80,16 @@ Changing assignee from was to jason.
 archive/issue_comments_035171.json:
 ```json
 {
-    "body": "Attachment [CDF-matrix-doctests.patch](tarball://root/attachments/some-uuid/ticket4669/CDF-matrix-doctests.patch) by jason created at 2008-12-05 08:40:13",
+    "body": "Attachment [CDF-matrix-doctests.patch](tarball://root/attachments/some-uuid/ticket4669/CDF-matrix-doctests.patch) by @jasongrout created at 2008-12-05 08:40:13",
     "created_at": "2008-12-05T08:40:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4669#issuecomment-35171",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [CDF-matrix-doctests.patch](tarball://root/attachments/some-uuid/ticket4669/CDF-matrix-doctests.patch) by jason created at 2008-12-05 08:40:13
+Attachment [CDF-matrix-doctests.patch](tarball://root/attachments/some-uuid/ticket4669/CDF-matrix-doctests.patch) by @jasongrout created at 2008-12-05 08:40:13
 
 
 
@@ -103,7 +103,7 @@ archive/issue_comments_035172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4669#issuecomment-35172",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007971.json:
 ```json
 {
-    "body": "Assignee: wdj\n\nCC:  wdj\n\nThis is a follow-on to #6094.  More places where the keyword argument \"method=\" should be changed to \"algorithm=\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/7971\n\n",
+    "body": "Assignee: @wdjoyner\n\nCC:  @wdjoyner\n\nThis is a follow-on to #6094.  More places where the keyword argument \"method=\" should be changed to \"algorithm=\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/7971\n\n",
     "created_at": "2010-01-18T04:37:28Z",
     "labels": [
         "coding theory",
@@ -14,12 +14,12 @@ archive/issues_007971.json:
     "title": "Change all occurrences of \"method\" to \"algorithm\" in coding/code_bounds.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7971",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
-Assignee: wdj
+Assignee: @wdjoyner
 
-CC:  wdj
+CC:  @wdjoyner
 
 This is a follow-on to #6094.  More places where the keyword argument "method=" should be changed to "algorithm=".
 
@@ -39,7 +39,7 @@ archive/issue_comments_069531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7971#issuecomment-69531",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -54,16 +54,16 @@ David - maybe you can run the optional tests as part of a review?
 archive/issue_comments_069532.json:
 ```json
 {
-    "body": "Attachment [trac_7971_method_algorithm.patch](tarball://root/attachments/some-uuid/ticket7971/trac_7971_method_algorithm.patch) by rbeezer created at 2010-01-18 05:42:18",
+    "body": "Attachment [trac_7971_method_algorithm.patch](tarball://root/attachments/some-uuid/ticket7971/trac_7971_method_algorithm.patch) by @rbeezer created at 2010-01-18 05:42:18",
     "created_at": "2010-01-18T05:42:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7971#issuecomment-69532",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_7971_method_algorithm.patch](tarball://root/attachments/some-uuid/ticket7971/trac_7971_method_algorithm.patch) by rbeezer created at 2010-01-18 05:42:18
+Attachment [trac_7971_method_algorithm.patch](tarball://root/attachments/some-uuid/ticket7971/trac_7971_method_algorithm.patch) by @rbeezer created at 2010-01-18 05:42:18
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_069533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7971#issuecomment-69533",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_069536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7971#issuecomment-69536",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_069537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7971#issuecomment-69537",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_069538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7971#issuecomment-69538",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_069539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7971#issuecomment-69539",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001664.json:
 ```json
 {
-    "body": "Assignee: was\n\nLatest up at \n\nhttp://sage.math.washington.edu/home/robertwb/3d/\n\nIssue created by migration from https://trac.sagemath.org/ticket/1664\n\n",
+    "body": "Assignee: @williamstein\n\nLatest up at \n\nhttp://sage.math.washington.edu/home/robertwb/3d/\n\nIssue created by migration from https://trac.sagemath.org/ticket/1664\n\n",
     "created_at": "2008-01-03T10:05:54Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001664.json:
     "title": "[with spkg] new version of jmol",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1664",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Latest up at 
 

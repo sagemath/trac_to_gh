@@ -3,7 +3,7 @@
 archive/issues_009633.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  kcrisman\n\n\n```\nsage: binomial(0.5r,5)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call\nlast)\n\n/home/bo198214/projects/<ipython console> in <module>()\n\n/opt/sage-4.5-linux-32bit-ubuntu_10.04_lts-i686-Linux/local/lib/\npython2.6/site-packages/sage/rings/arith.pyc in binomial(x, m)\n   2887     if isinstance(x, (float, sage.rings.real_mpfr.RealNumber,\n   2888                       sage.rings.real_mpfr.RealLiteral)):\n-> 2889         P = x.parent()\n   2890         if m < 0:\n   2891             return P(0)\n\nAttributeError: 'float' object has no attribute 'parent' \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9633\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @kcrisman\n\n\n```\nsage: binomial(0.5r,5)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call\nlast)\n\n/home/bo198214/projects/<ipython console> in <module>()\n\n/opt/sage-4.5-linux-32bit-ubuntu_10.04_lts-i686-Linux/local/lib/\npython2.6/site-packages/sage/rings/arith.pyc in binomial(x, m)\n   2887     if isinstance(x, (float, sage.rings.real_mpfr.RealNumber,\n   2888                       sage.rings.real_mpfr.RealLiteral)):\n-> 2889         P = x.parent()\n   2890         if m < 0:\n   2891             return P(0)\n\nAttributeError: 'float' object has no attribute 'parent' \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9633\n\n",
     "created_at": "2010-07-29T07:23:07Z",
     "labels": [
         "basic arithmetic",
@@ -17,9 +17,9 @@ archive/issues_009633.json:
     "user": "Henryk.Trappmann"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  kcrisman
+CC:  @kcrisman
 
 
 ```
@@ -131,7 +131,7 @@ archive/issue_comments_093363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9633",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9633#issuecomment-93363",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_093364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9633",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9633#issuecomment-93364",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_093365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9633",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9633#issuecomment-93365",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_093366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9633",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9633#issuecomment-93366",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

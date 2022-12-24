@@ -3,7 +3,7 @@
 archive/issues_000433.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: version root branch\n\n Add -version, -root, and -branch for printing version, SAGE_ROOT, and branch information.\n\nUseful from the command line.\n\nVersion information is taken from sage-banner; I would prefer it to be taken from the mercurial tags, but these are not kept updated.\n\nThe root information is taken from the environment via sage-env.\n\nThe branch information is taken from readlink SAGE_ROOT/devel/sage.\n\nmero:~/sage/local/bin ncalexan$ sage -v\nSAGE Version 2.8, Release Date: 2007-08-12\n\nmero:~/sage/local/bin ncalexan$ sage -version\nSAGE Version 2.8, Release Date: 2007-08-12\n\nmero:~/sage/local/bin ncalexan$ sage -branch\nnca\n\nmero:~/sage/local/bin ncalexan$ sage -root\n/Users/ncalexan/sage\n\nIssue created by migration from https://trac.sagemath.org/ticket/433\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: version root branch\n\n Add -version, -root, and -branch for printing version, SAGE_ROOT, and branch information.\n\nUseful from the command line.\n\nVersion information is taken from sage-banner; I would prefer it to be taken from the mercurial tags, but these are not kept updated.\n\nThe root information is taken from the environment via sage-env.\n\nThe branch information is taken from readlink SAGE_ROOT/devel/sage.\n\nmero:~/sage/local/bin ncalexan$ sage -v\nSAGE Version 2.8, Release Date: 2007-08-12\n\nmero:~/sage/local/bin ncalexan$ sage -version\nSAGE Version 2.8, Release Date: 2007-08-12\n\nmero:~/sage/local/bin ncalexan$ sage -branch\nnca\n\nmero:~/sage/local/bin ncalexan$ sage -root\n/Users/ncalexan/sage\n\nIssue created by migration from https://trac.sagemath.org/ticket/433\n\n",
     "created_at": "2007-08-16T20:06:59Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_000433.json:
     "title": "Add -version, -root, and -branch for printing version, SAGE_ROOT, and branch information.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/433",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: version root branch
 
@@ -59,7 +59,7 @@ archive/issue_comments_002173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/433",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/433#issuecomment-2173",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_002174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/433",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/433#issuecomment-2174",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_002175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/433",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/433#issuecomment-2175",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -174,16 +174,16 @@ http://sage.math.washington.edu/home/ncalexan/patches/ncalexan-version-branch-ro
 archive/issue_comments_002176.json:
 ```json
 {
-    "body": "Changing assignee from was to ncalexan.",
+    "body": "Changing assignee from @williamstein to @ncalexan.",
     "created_at": "2007-08-18T19:40:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/433",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/433#issuecomment-2176",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Changing assignee from was to ncalexan.
+Changing assignee from @williamstein to @ncalexan.
 
 
 
@@ -197,7 +197,7 @@ archive/issue_comments_002177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/433",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/433#issuecomment-2177",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

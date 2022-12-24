@@ -3,7 +3,7 @@
 archive/issues_003929.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nSee http://wiki.wstein.org/2008/480a/theprojects\n\nIssue created by migration from https://trac.sagemath.org/ticket/3929\n\n",
+    "body": "Assignee: @rlmill\n\nSee http://wiki.wstein.org/2008/480a/theprojects\n\nIssue created by migration from https://trac.sagemath.org/ticket/3929\n\n",
     "created_at": "2008-08-22T18:06:59Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_003929.json:
     "title": "Merge the max-flow min-cut code from Scott Clifford and Jerin Schneider",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3929",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 See http://wiki.wstein.org/2008/480a/theprojects
 
@@ -37,7 +37,7 @@ archive/issue_comments_028126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3929",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3929#issuecomment-28126",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_028127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3929",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3929#issuecomment-28127",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_028128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3929",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3929#issuecomment-28128",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_028129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3929",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3929#issuecomment-28129",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_028130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3929",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3929#issuecomment-28130",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

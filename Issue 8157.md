@@ -3,7 +3,7 @@
 archive/issues_008157.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\n\n```\nsage: R = RealField(16777217)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/users/caramel/zimmerma/.sage/temp/patate.loria.fr/31828/_users_caramel_zimmerm\\\na__sage_init_sage_0.py in <module>()\n\n/usr/local/sage-core2/local/lib/python2.6/site-packages/sage/rings/real_mpfr.so\\\n in sage.rings.real_mpfr.RealField_constructor (sage/rings/real_mpfr.c:3723)()\n\n/usr/local/sage-core2/local/lib/python2.6/site-packages/sage/rings/real_mpfr.so\\\n in sage.rings.real_mpfr.RealField.__init__ (sage/rings/real_mpfr.c:3945)()\n\nValueError: prec (=16777217) must be >= 2 and <= 16777216.\n```\n\nNote that 2^24 bits is only slightly above 5M digits, which is\nquite small (Fabrice Bellard recently computed 2700 billions of digits of Pi on a personal desktop, i.e., about 500,000 times more).\nof Pi\n\nIssue created by migration from https://trac.sagemath.org/ticket/8157\n\n",
+    "body": "Assignee: @aghitza\n\n\n```\nsage: R = RealField(16777217)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/users/caramel/zimmerma/.sage/temp/patate.loria.fr/31828/_users_caramel_zimmerm\\\na__sage_init_sage_0.py in <module>()\n\n/usr/local/sage-core2/local/lib/python2.6/site-packages/sage/rings/real_mpfr.so\\\n in sage.rings.real_mpfr.RealField_constructor (sage/rings/real_mpfr.c:3723)()\n\n/usr/local/sage-core2/local/lib/python2.6/site-packages/sage/rings/real_mpfr.so\\\n in sage.rings.real_mpfr.RealField.__init__ (sage/rings/real_mpfr.c:3945)()\n\nValueError: prec (=16777217) must be >= 2 and <= 16777216.\n```\n\nNote that 2^24 bits is only slightly above 5M digits, which is\nquite small (Fabrice Bellard recently computed 2700 billions of digits of Pi on a personal desktop, i.e., about 500,000 times more).\nof Pi\n\nIssue created by migration from https://trac.sagemath.org/ticket/8157\n\n",
     "created_at": "2010-02-02T21:23:35Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_008157.json:
     "title": "why the bit limit of 2^24 in RealField?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8157",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 
 ```
@@ -52,16 +52,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8157
 archive/issue_comments_071738.json:
 ```json
 {
-    "body": "Attachment [trac_8157.patch](tarball://root/attachments/some-uuid/ticket8157/trac_8157.patch) by zimmerma created at 2010-02-23 21:51:07",
+    "body": "Attachment [trac_8157.patch](tarball://root/attachments/some-uuid/ticket8157/trac_8157.patch) by @zimmermann6 created at 2010-02-23 21:51:07",
     "created_at": "2010-02-23T21:51:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8157#issuecomment-71738",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [trac_8157.patch](tarball://root/attachments/some-uuid/ticket8157/trac_8157.patch) by zimmerma created at 2010-02-23 21:51:07
+Attachment [trac_8157.patch](tarball://root/attachments/some-uuid/ticket8157/trac_8157.patch) by @zimmermann6 created at 2010-02-23 21:51:07
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_071739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8157#issuecomment-71739",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_071740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8157#issuecomment-71740",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_071741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8157#issuecomment-71741",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_071742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8157#issuecomment-71742",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -151,16 +151,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_071743.json:
 ```json
 {
-    "body": "Attachment [trac_8157-doctest.patch](tarball://root/attachments/some-uuid/ticket8157/trac_8157-doctest.patch) by AlexGhitza created at 2010-02-25 10:49:40\n\napply after the first patch",
+    "body": "Attachment [trac_8157-doctest.patch](tarball://root/attachments/some-uuid/ticket8157/trac_8157-doctest.patch) by @aghitza created at 2010-02-25 10:49:40\n\napply after the first patch",
     "created_at": "2010-02-25T10:49:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8157#issuecomment-71743",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_8157-doctest.patch](tarball://root/attachments/some-uuid/ticket8157/trac_8157-doctest.patch) by AlexGhitza created at 2010-02-25 10:49:40
+Attachment [trac_8157-doctest.patch](tarball://root/attachments/some-uuid/ticket8157/trac_8157-doctest.patch) by @aghitza created at 2010-02-25 10:49:40
 
 apply after the first patch
 
@@ -217,7 +217,7 @@ archive/issue_comments_071746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8157#issuecomment-71746",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

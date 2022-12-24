@@ -50,7 +50,7 @@ Changing component from Cygwin to linear algebra.
 archive/issue_comments_018716.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to was.",
+    "body": "Changing assignee from mabshoff to @williamstein.",
     "created_at": "2008-03-29T13:57:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2716",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_018716.json:
 }
 ```
 
-Changing assignee from mabshoff to was.
+Changing assignee from mabshoff to @williamstein.
 
 
 
@@ -86,7 +86,7 @@ Changing component from linear algebra to geometry.
 archive/issue_comments_018718.json:
 ```json
 {
-    "body": "Changing assignee from was to mhampton.",
+    "body": "Changing assignee from @williamstein to mhampton.",
     "created_at": "2008-03-29T13:58:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2716",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_018718.json:
 }
 ```
 
-Changing assignee from was to mhampton.
+Changing assignee from @williamstein to mhampton.
 
 
 
@@ -181,7 +181,7 @@ archive/issue_comments_018723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2716#issuecomment-18723",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_018725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2716#issuecomment-18725",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_018729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2716#issuecomment-18729",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

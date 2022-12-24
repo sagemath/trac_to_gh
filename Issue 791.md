@@ -3,7 +3,7 @@
 archive/issues_000791.json:
 ```json
 {
-    "body": "Assignee: was\n\nI'm not happy with the profusion of code to deal with the absprec parameter in Polynomial-related code (for example, search for the string \"absprec\" in sage/rings/polynomial/polynomial_element.pyx). Something feels wrong with this design; the code keeps splitting into branches to deal with \"absprec\" or \"no absprec\" cases. I believe the \"absprec\" parameter has something to do with polynomials over p-adics. There has to be a cleaner way to deal with this issue. Please add comments below.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/791\n\n",
+    "body": "Assignee: @williamstein\n\nI'm not happy with the profusion of code to deal with the absprec parameter in Polynomial-related code (for example, search for the string \"absprec\" in sage/rings/polynomial/polynomial_element.pyx). Something feels wrong with this design; the code keeps splitting into branches to deal with \"absprec\" or \"no absprec\" cases. I believe the \"absprec\" parameter has something to do with polynomials over p-adics. There has to be a cleaner way to deal with this issue. Please add comments below.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/791\n\n",
     "created_at": "2007-10-02T18:38:47Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_000791.json:
     "user": "dmharvey"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I'm not happy with the profusion of code to deal with the absprec parameter in Polynomial-related code (for example, search for the string "absprec" in sage/rings/polynomial/polynomial_element.pyx). Something feels wrong with this design; the code keeps splitting into branches to deal with "absprec" or "no absprec" cases. I believe the "absprec" parameter has something to do with polynomials over p-adics. There has to be a cleaner way to deal with this issue. Please add comments below.
 
@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/791
 archive/issue_comments_004756.json:
 ```json
 {
-    "body": "Changing assignee from was to somebody.",
+    "body": "Changing assignee from @williamstein to somebody.",
     "created_at": "2007-10-04T19:49:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/791",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_004756.json:
 }
 ```
 
-Changing assignee from was to somebody.
+Changing assignee from @williamstein to somebody.
 
 
 
@@ -69,16 +69,16 @@ Changing component from algebraic geometry to basic arithmetic.
 archive/issue_comments_004758.json:
 ```json
 {
-    "body": "Attachment [791.patch](tarball://root/attachments/some-uuid/ticket791/791.patch) by roed created at 2009-01-24 08:38:13",
+    "body": "Attachment [791.patch](tarball://root/attachments/some-uuid/ticket791/791.patch) by @roed314 created at 2009-01-24 08:38:13",
     "created_at": "2009-01-24T08:38:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/791#issuecomment-4758",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [791.patch](tarball://root/attachments/some-uuid/ticket791/791.patch) by roed created at 2009-01-24 08:38:13
+Attachment [791.patch](tarball://root/attachments/some-uuid/ticket791/791.patch) by @roed314 created at 2009-01-24 08:38:13
 
 
 
@@ -92,7 +92,7 @@ archive/issue_comments_004759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/791#issuecomment-4759",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -105,16 +105,16 @@ rebase of previous patch against 3.3.alpha2
 archive/issue_comments_004760.json:
 ```json
 {
-    "body": "Attachment [791_rebased.patch](tarball://root/attachments/some-uuid/ticket791/791_rebased.patch) by AlexGhitza created at 2009-01-27 06:04:38\n\nLooks good.  I have rebased the patch against 3.3.alpha2, since it got entangled in the whole Sage Days 12 flurry of activity.",
+    "body": "Attachment [791_rebased.patch](tarball://root/attachments/some-uuid/ticket791/791_rebased.patch) by @aghitza created at 2009-01-27 06:04:38\n\nLooks good.  I have rebased the patch against 3.3.alpha2, since it got entangled in the whole Sage Days 12 flurry of activity.",
     "created_at": "2009-01-27T06:04:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/791#issuecomment-4760",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [791_rebased.patch](tarball://root/attachments/some-uuid/ticket791/791_rebased.patch) by AlexGhitza created at 2009-01-27 06:04:38
+Attachment [791_rebased.patch](tarball://root/attachments/some-uuid/ticket791/791_rebased.patch) by @aghitza created at 2009-01-27 06:04:38
 
 Looks good.  I have rebased the patch against 3.3.alpha2, since it got entangled in the whole Sage Days 12 flurry of activity.
 

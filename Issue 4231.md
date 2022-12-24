@@ -3,7 +3,7 @@
 archive/issues_004231.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  georgsweber\n\n\n```\n> temp2 := Derivative(temp[1],w) + Derivative(temp[2],x) +\n> Derivative(temp[3],y) + Derivative(temp[4],z);\n> ---\n> I get the funny error message:\n> ---\n> Loading\n> \"/home/r1/kedlaya/.sage//temp/DWORK.MIT.EDU/5272//interface//tmp5272\"\n> ---\n> but I think the calculation goes through. I'm guessing this is because\n> Magma is returning a long output which gets saved to  a temporary\n> file. But does the notebook user really need to see this message? I\n> don't.\n>\n> Incidentally, if I change the last line to the following two lines:\n> ---\n> temp2 := Derivative(temp[1],w) + Derivative(temp[2],x);\n> temp2 := temp2 + Derivative(temp[3],y) + Derivative(temp[4],z);\n> ---\n> then I don't get any error message.\n\nI believe that Sage uses temp files for inputs larger than a certain\nsize.  It seems this long input passed that size and you're seeing a\n\"verbose loading\" message.  Not really an error message, but I'm sure\nWilliam can add it to his list of Magma interface things to do.\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4231\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  georgsweber\n\n\n```\n> temp2 := Derivative(temp[1],w) + Derivative(temp[2],x) +\n> Derivative(temp[3],y) + Derivative(temp[4],z);\n> ---\n> I get the funny error message:\n> ---\n> Loading\n> \"/home/r1/kedlaya/.sage//temp/DWORK.MIT.EDU/5272//interface//tmp5272\"\n> ---\n> but I think the calculation goes through. I'm guessing this is because\n> Magma is returning a long output which gets saved to  a temporary\n> file. But does the notebook user really need to see this message? I\n> don't.\n>\n> Incidentally, if I change the last line to the following two lines:\n> ---\n> temp2 := Derivative(temp[1],w) + Derivative(temp[2],x);\n> temp2 := temp2 + Derivative(temp[3],y) + Derivative(temp[4],z);\n> ---\n> then I don't get any error message.\n\nI believe that Sage uses temp files for inputs larger than a certain\nsize.  It seems this long input passed that size and you're seeing a\n\"verbose loading\" message.  Not really an error message, but I'm sure\nWilliam can add it to his list of Magma interface things to do.\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4231\n\n",
     "created_at": "2008-10-01T16:18:13Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_004231.json:
     "title": "magma -- long input too verbose in some cases",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4231",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  georgsweber
 
@@ -67,7 +67,7 @@ archive/issue_comments_030751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4231",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4231#issuecomment-30751",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -80,16 +80,16 @@ Changing status from new to assigned.
 archive/issue_comments_030752.json:
 ```json
 {
-    "body": "Attachment [sage-4231.patch](tarball://root/attachments/some-uuid/ticket4231/sage-4231.patch) by was created at 2008-10-04 03:37:55",
+    "body": "Attachment [sage-4231.patch](tarball://root/attachments/some-uuid/ticket4231/sage-4231.patch) by @williamstein created at 2008-10-04 03:37:55",
     "created_at": "2008-10-04T03:37:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4231",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4231#issuecomment-30752",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-4231.patch](tarball://root/attachments/some-uuid/ticket4231/sage-4231.patch) by was created at 2008-10-04 03:37:55
+Attachment [sage-4231.patch](tarball://root/attachments/some-uuid/ticket4231/sage-4231.patch) by @williamstein created at 2008-10-04 03:37:55
 
 
 
@@ -103,7 +103,7 @@ archive/issue_comments_030753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4231",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4231#issuecomment-30753",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

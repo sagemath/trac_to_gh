@@ -3,7 +3,7 @@
 archive/issues_004513.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  wdj malb\n\nKeywords: matrix group, action, polynomial ring\n\nA group of n by n matrices over a field K acts on a polynomial ring with n variables over K. However, this is not implemented yet.\n\nOff list, David Joyner suggested to implement it with a `__call__` method in `matrix_group_element.py`. Then, the following should work:\n\n```\nsage: M=Matrix(GF(3),[[1,2],[1,1]])\nsage: G=MatrixGroup([M])\nsage: g=G.0\nsage: p=x*y^2\nsage: g(p)\nx^3 + x^2*y - x*y^2 - y^3\nsage: _==(x+2*y)*(x+y)^2\nTrue\n```\n\n\nAlthough it concerns `matrix_group_element.py`, I believe this ticket belongs to Commutative Algebra, for two reasons:\n1. An efficient implementation probably requires knowledge of the guts of MPolynomialElement.\n2. My long-term goal is to re-implement my algorithms for the computation of non-modular invariant rings. The current implementation is in the `finvar.lib` library of Singular -- the slow Singular interpreter sometimes is a bottle necks.\n\nOne more general technical question: It is `matrix_group_element.py`, hence seems to be pure python. Is it possible to define an additional method in some `.pyx` file using Cython? I don't know if this would be reasonable to do here, but perhaps this could come in handy at some point...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4513\n\n",
+    "body": "Assignee: tbd\n\nCC:  @wdjoyner @malb\n\nKeywords: matrix group, action, polynomial ring\n\nA group of n by n matrices over a field K acts on a polynomial ring with n variables over K. However, this is not implemented yet.\n\nOff list, David Joyner suggested to implement it with a `__call__` method in `matrix_group_element.py`. Then, the following should work:\n\n```\nsage: M=Matrix(GF(3),[[1,2],[1,1]])\nsage: G=MatrixGroup([M])\nsage: g=G.0\nsage: p=x*y^2\nsage: g(p)\nx^3 + x^2*y - x*y^2 - y^3\nsage: _==(x+2*y)*(x+y)^2\nTrue\n```\n\n\nAlthough it concerns `matrix_group_element.py`, I believe this ticket belongs to Commutative Algebra, for two reasons:\n1. An efficient implementation probably requires knowledge of the guts of MPolynomialElement.\n2. My long-term goal is to re-implement my algorithms for the computation of non-modular invariant rings. The current implementation is in the `finvar.lib` library of Singular -- the slow Singular interpreter sometimes is a bottle necks.\n\nOne more general technical question: It is `matrix_group_element.py`, hence seems to be pure python. Is it possible to define an additional method in some `.pyx` file using Cython? I don't know if this would be reasonable to do here, but perhaps this could come in handy at some point...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4513\n\n",
     "created_at": "2008-11-13T16:03:53Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_004513.json:
     "title": "Action of MatrixGroup on a MPolynomialRing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4513",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 Assignee: tbd
 
-CC:  wdj malb
+CC:  @wdjoyner @malb
 
 Keywords: matrix group, action, polynomial ring
 
@@ -56,16 +56,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4513
 archive/issue_comments_033473.json:
 ```json
 {
-    "body": "Changing assignee from tbd to malb.",
+    "body": "Changing assignee from tbd to @malb.",
     "created_at": "2008-11-13T22:11:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4513#issuecomment-33473",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Changing assignee from tbd to malb.
+Changing assignee from tbd to @malb.
 
 
 
@@ -79,7 +79,7 @@ archive/issue_comments_033474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4513#issuecomment-33474",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_033475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4513#issuecomment-33475",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_033476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4513#issuecomment-33476",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -152,16 +152,16 @@ x^3 + x^2*y - x*y^2 - y^3
 archive/issue_comments_033477.json:
 ```json
 {
-    "body": "Attachment [matrixgroupCall.patch](tarball://root/attachments/some-uuid/ticket4513/matrixgroupCall.patch) by SimonKing created at 2008-11-14 07:26:53\n\ncall method for MatrixGroupelement (this time with doc test) and left_matrix_action for MPolynomial",
+    "body": "Attachment [matrixgroupCall.patch](tarball://root/attachments/some-uuid/ticket4513/matrixgroupCall.patch) by @simon-king-jena created at 2008-11-14 07:26:53\n\ncall method for MatrixGroupelement (this time with doc test) and left_matrix_action for MPolynomial",
     "created_at": "2008-11-14T07:26:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4513#issuecomment-33477",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [matrixgroupCall.patch](tarball://root/attachments/some-uuid/ticket4513/matrixgroupCall.patch) by SimonKing created at 2008-11-14 07:26:53
+Attachment [matrixgroupCall.patch](tarball://root/attachments/some-uuid/ticket4513/matrixgroupCall.patch) by @simon-king-jena created at 2008-11-14 07:26:53
 
 call method for MatrixGroupelement (this time with doc test) and left_matrix_action for MPolynomial
 
@@ -172,16 +172,16 @@ call method for MatrixGroupelement (this time with doc test) and left_matrix_act
 archive/issue_comments_033478.json:
 ```json
 {
-    "body": "Changing assignee from malb to SimonKing.",
+    "body": "Changing assignee from @malb to @simon-king-jena.",
     "created_at": "2008-11-14T07:43:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4513#issuecomment-33478",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Changing assignee from malb to SimonKing.
+Changing assignee from @malb to @simon-king-jena.
 
 
 
@@ -195,7 +195,7 @@ archive/issue_comments_033479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4513#issuecomment-33479",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_033480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4513#issuecomment-33480",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -246,16 +246,16 @@ Another version of left_matrix_action
 archive/issue_comments_033481.json:
 ```json
 {
-    "body": "Attachment [matrixgroupCallNew.patch](tarball://root/attachments/some-uuid/ticket4513/matrixgroupCallNew.patch) by SimonKing created at 2008-11-14 09:36:29\n\nIn `matrixgroupCallNew.patch` (to be applied after the first patch), I modified the method according to my above concerns. In the example from my original post, the average running time improves from ~240 microseconds to 164 microseconds, and in a larger example it improved from 6.5s to 5.4s\n\nNevertheless, I made two separate patches, so that the reviewer (if there is any...) can compare by him- or herself.\n\nCheers\n   Simon",
+    "body": "Attachment [matrixgroupCallNew.patch](tarball://root/attachments/some-uuid/ticket4513/matrixgroupCallNew.patch) by @simon-king-jena created at 2008-11-14 09:36:29\n\nIn `matrixgroupCallNew.patch` (to be applied after the first patch), I modified the method according to my above concerns. In the example from my original post, the average running time improves from ~240 microseconds to 164 microseconds, and in a larger example it improved from 6.5s to 5.4s\n\nNevertheless, I made two separate patches, so that the reviewer (if there is any...) can compare by him- or herself.\n\nCheers\n   Simon",
     "created_at": "2008-11-14T09:36:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4513#issuecomment-33481",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [matrixgroupCallNew.patch](tarball://root/attachments/some-uuid/ticket4513/matrixgroupCallNew.patch) by SimonKing created at 2008-11-14 09:36:29
+Attachment [matrixgroupCallNew.patch](tarball://root/attachments/some-uuid/ticket4513/matrixgroupCallNew.patch) by @simon-king-jena created at 2008-11-14 09:36:29
 
 In `matrixgroupCallNew.patch` (to be applied after the first patch), I modified the method according to my above concerns. In the example from my original post, the average running time improves from ~240 microseconds to 164 microseconds, and in a larger example it improved from 6.5s to 5.4s
 
@@ -276,7 +276,7 @@ archive/issue_comments_033482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4513#issuecomment-33482",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_033483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4513#issuecomment-33483",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -322,16 +322,16 @@ Slight improvement; extended functionality
 archive/issue_comments_033484.json:
 ```json
 {
-    "body": "Attachment [matrixgroupCallNew2.patch](tarball://root/attachments/some-uuid/ticket4513/matrixgroupCallNew2.patch) by SimonKing created at 2008-11-14 12:25:13\n\nReplying to [comment:6 SimonKing]:\n> One observation: \n> Reverse the outer loop\n> {{{\n>         for i from l>i>=0:\n>             X = tuple(Expo[i])\n>             c = Coef[i]\n>             for k from 0<=k<n:\n>                 if X[k]:\n>                     c *= Im[k]**X[k]\n>             q += c\n> }}}\n> It results in a further improvement of computation time. Is this coincidence? Or is it since summation of polynomials should better start with the smallest summands?\n\nI made a couple of tests, and there was a small but consistent improvement. So, in the third patch (to be applied after the other two) I did it in that way.\n\nThe `left_matrix_action` shall eventually be used for computing the Reynolds operator of a group action; moreover, the Reynolds operator should be applicable on a *list* of polynomials. Then, the function would repeatedly compute the image of the ring variables under the action of some group element. But then it would be better to compute that image only *once* and pass it to `left_matrix_action`. The new patch provides this functionality. Example (continuing the original example):\n\n```\nsage: L=[X.left_matrix_action(g) for X in R.gens()]\nsage: p.left_matrix_action(L)\nx^3 + x^2*y - x*y^2 - y^3\n```\n",
+    "body": "Attachment [matrixgroupCallNew2.patch](tarball://root/attachments/some-uuid/ticket4513/matrixgroupCallNew2.patch) by @simon-king-jena created at 2008-11-14 12:25:13\n\nReplying to [comment:6 SimonKing]:\n> One observation: \n> Reverse the outer loop\n> {{{\n>         for i from l>i>=0:\n>             X = tuple(Expo[i])\n>             c = Coef[i]\n>             for k from 0<=k<n:\n>                 if X[k]:\n>                     c *= Im[k]**X[k]\n>             q += c\n> }}}\n> It results in a further improvement of computation time. Is this coincidence? Or is it since summation of polynomials should better start with the smallest summands?\n\nI made a couple of tests, and there was a small but consistent improvement. So, in the third patch (to be applied after the other two) I did it in that way.\n\nThe `left_matrix_action` shall eventually be used for computing the Reynolds operator of a group action; moreover, the Reynolds operator should be applicable on a *list* of polynomials. Then, the function would repeatedly compute the image of the ring variables under the action of some group element. But then it would be better to compute that image only *once* and pass it to `left_matrix_action`. The new patch provides this functionality. Example (continuing the original example):\n\n```\nsage: L=[X.left_matrix_action(g) for X in R.gens()]\nsage: p.left_matrix_action(L)\nx^3 + x^2*y - x*y^2 - y^3\n```\n",
     "created_at": "2008-11-14T12:25:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4513#issuecomment-33484",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [matrixgroupCallNew2.patch](tarball://root/attachments/some-uuid/ticket4513/matrixgroupCallNew2.patch) by SimonKing created at 2008-11-14 12:25:13
+Attachment [matrixgroupCallNew2.patch](tarball://root/attachments/some-uuid/ticket4513/matrixgroupCallNew2.patch) by @simon-king-jena created at 2008-11-14 12:25:13
 
 Replying to [comment:6 SimonKing]:
 > One observation: 
@@ -370,7 +370,7 @@ archive/issue_comments_033485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4513#issuecomment-33485",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -431,7 +431,7 @@ archive/issue_comments_033486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4513#issuecomment-33486",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -457,7 +457,7 @@ archive/issue_comments_033487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4513#issuecomment-33487",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -475,7 +475,7 @@ archive/issue_comments_033488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4513#issuecomment-33488",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -511,7 +511,7 @@ archive/issue_comments_033489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4513#issuecomment-33489",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -541,7 +541,7 @@ archive/issue_comments_033490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4513#issuecomment-33490",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -570,7 +570,7 @@ archive/issue_comments_033491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4513#issuecomment-33491",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -585,16 +585,16 @@ Substitution is a right action. Substitution of the *inverse* is a left action.
 archive/issue_comments_033492.json:
 ```json
 {
-    "body": "Attachment [trac-4513_matrix_action_on_polynomials.patch](tarball://root/attachments/some-uuid/ticket4513/trac-4513_matrix_action_on_polynomials.patch) by SimonKing created at 2010-07-17 13:49:02\n\nReplaces the other patches",
+    "body": "Attachment [trac-4513_matrix_action_on_polynomials.patch](tarball://root/attachments/some-uuid/ticket4513/trac-4513_matrix_action_on_polynomials.patch) by @simon-king-jena created at 2010-07-17 13:49:02\n\nReplaces the other patches",
     "created_at": "2010-07-17T13:49:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4513#issuecomment-33492",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [trac-4513_matrix_action_on_polynomials.patch](tarball://root/attachments/some-uuid/ticket4513/trac-4513_matrix_action_on_polynomials.patch) by SimonKing created at 2010-07-17 13:49:02
+Attachment [trac-4513_matrix_action_on_polynomials.patch](tarball://root/attachments/some-uuid/ticket4513/trac-4513_matrix_action_on_polynomials.patch) by @simon-king-jena created at 2010-07-17 13:49:02
 
 Replaces the other patches
 
@@ -610,7 +610,7 @@ archive/issue_comments_033493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4513#issuecomment-33493",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -628,7 +628,7 @@ archive/issue_comments_033494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4513#issuecomment-33494",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -660,7 +660,7 @@ archive/issue_comments_033495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4513#issuecomment-33495",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -730,7 +730,7 @@ archive/issue_comments_033498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4513#issuecomment-33498",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -769,7 +769,7 @@ archive/issue_comments_033499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4513#issuecomment-33499",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -807,7 +807,7 @@ archive/issue_comments_033501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4513#issuecomment-33501",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -836,7 +836,7 @@ archive/issue_comments_033502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4513#issuecomment-33502",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -856,7 +856,7 @@ archive/issue_comments_033503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4513#issuecomment-33503",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -876,7 +876,7 @@ archive/issue_comments_033504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4513#issuecomment-33504",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -900,7 +900,7 @@ archive/issue_comments_033505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4513#issuecomment-33505",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -936,7 +936,7 @@ archive/issue_comments_033506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4513#issuecomment-33506",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 

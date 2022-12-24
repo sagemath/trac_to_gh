@@ -14,7 +14,7 @@ archive/issues_004220.json:
     "title": "include Sphinx, Docutils, Jinja, and Pygments in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4220",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: mabshoff
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4220
 archive/issue_comments_030667.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to mhansen.",
+    "body": "Changing assignee from mabshoff to @mwhansen.",
     "created_at": "2008-09-30T10:34:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4220#issuecomment-30667",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from mabshoff to mhansen.
+Changing assignee from mabshoff to @mwhansen.
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_030668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4220#issuecomment-30668",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

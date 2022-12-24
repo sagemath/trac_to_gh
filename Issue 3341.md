@@ -3,7 +3,7 @@
 archive/issues_003341.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\n\n```\nsage: Partition([2,1])/Partition([1])\n/home/was/s/local/lib/python2.5/site-packages/sage/combinat/partition.py in __div__(self, p)\n    325             \n    326         \"\"\"\n--> 327         if not self.dominates(Partition_class(p)):\n    328             raise ValueError, \"the partition must dominate p\"\n    329 \n\n/home/was/s/local/lib/python2.5/site-packages/sage/combinat/combinat.py in __init__(self, l)\n    546         \"\"\"\n    547         if not isinstance(l, list):\n--> 548             raise ValueError, 'l must be a list'\n    549         self._list = l\n    550         self._hash = None\n\nValueError: l must be a list\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3341\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n```\nsage: Partition([2,1])/Partition([1])\n/home/was/s/local/lib/python2.5/site-packages/sage/combinat/partition.py in __div__(self, p)\n    325             \n    326         \"\"\"\n--> 327         if not self.dominates(Partition_class(p)):\n    328             raise ValueError, \"the partition must dominate p\"\n    329 \n\n/home/was/s/local/lib/python2.5/site-packages/sage/combinat/combinat.py in __init__(self, l)\n    546         \"\"\"\n    547         if not isinstance(l, list):\n--> 548             raise ValueError, 'l must be a list'\n    549         self._list = l\n    550         self._hash = None\n\nValueError: l must be a list\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3341\n\n",
     "created_at": "2008-05-31T06:56:01Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_003341.json:
     "title": "fix minor issue with creating skew partitions by dividng partitions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3341",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -55,16 +55,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3341
 archive/issue_comments_023199.json:
 ```json
 {
-    "body": "Attachment [3341.patch](tarball://root/attachments/some-uuid/ticket3341/3341.patch) by mhansen created at 2008-05-31 06:59:25",
+    "body": "Attachment [3341.patch](tarball://root/attachments/some-uuid/ticket3341/3341.patch) by @mwhansen created at 2008-05-31 06:59:25",
     "created_at": "2008-05-31T06:59:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3341#issuecomment-23199",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [3341.patch](tarball://root/attachments/some-uuid/ticket3341/3341.patch) by mhansen created at 2008-05-31 06:59:25
+Attachment [3341.patch](tarball://root/attachments/some-uuid/ticket3341/3341.patch) by @mwhansen created at 2008-05-31 06:59:25
 
 
 
@@ -78,7 +78,7 @@ archive/issue_comments_023200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3341#issuecomment-23200",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_023201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3341#issuecomment-23201",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_023202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3341#issuecomment-23202",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009536.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  jdemeyer embray leif fbissey vbraun\n\nHi,\nseveral packages do use `python setup.py`. This picks up the customized settings from ~/.pydistutils.cfg. This is bad, because it overrides the prefix setting. \n\nFor sage-main, I'll attach a patch: `setup.cfg` in the corresponding directory overrides the usere settings. Maybe there's a global solution.\n\nRegards,\n  Alexander Dreyer\n\nIssue created by migration from https://trac.sagemath.org/ticket/9536\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @jdemeyer @embray @nexttime @kiwifb @vbraun\n\nHi,\nseveral packages do use `python setup.py`. This picks up the customized settings from ~/.pydistutils.cfg. This is bad, because it overrides the prefix setting. \n\nFor sage-main, I'll attach a patch: `setup.cfg` in the corresponding directory overrides the usere settings. Maybe there's a global solution.\n\nRegards,\n  Alexander Dreyer\n\nIssue created by migration from https://trac.sagemath.org/ticket/9536\n\n",
     "created_at": "2010-07-18T14:07:14Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_009536.json:
     "title": "python setup.py picks prefix from ~/.pydistutils.cfg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9536",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  jdemeyer embray leif fbissey vbraun
+CC:  @jdemeyer @embray @nexttime @kiwifb @vbraun
 
 Hi,
 several packages do use `python setup.py`. This picks up the customized settings from ~/.pydistutils.cfg. This is bad, because it overrides the prefix setting. 
@@ -45,7 +45,7 @@ archive/issue_comments_091846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91846",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -58,16 +58,16 @@ Patch for sage-main
 archive/issue_comments_091847.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to AlexanderDreyer.",
+    "body": "Changing assignee from @aghitza to @alexanderdreyer.",
     "created_at": "2010-07-18T14:46:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91847",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
-Changing assignee from AlexGhitza to AlexanderDreyer.
+Changing assignee from @aghitza to @alexanderdreyer.
 
 
 
@@ -76,16 +76,16 @@ Changing assignee from AlexGhitza to AlexanderDreyer.
 archive/issue_comments_091848.json:
 ```json
 {
-    "body": "Attachment [setup_py_issue.patch](tarball://root/attachments/some-uuid/ticket9536/setup_py_issue.patch) by AlexanderDreyer created at 2010-07-18 14:46:44",
+    "body": "Attachment [setup_py_issue.patch](tarball://root/attachments/some-uuid/ticket9536/setup_py_issue.patch) by @alexanderdreyer created at 2010-07-18 14:46:44",
     "created_at": "2010-07-18T14:46:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91848",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
-Attachment [setup_py_issue.patch](tarball://root/attachments/some-uuid/ticket9536/setup_py_issue.patch) by AlexanderDreyer created at 2010-07-18 14:46:44
+Attachment [setup_py_issue.patch](tarball://root/attachments/some-uuid/ticket9536/setup_py_issue.patch) by @alexanderdreyer created at 2010-07-18 14:46:44
 
 
 
@@ -99,7 +99,7 @@ archive/issue_comments_091849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91849",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_091851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91851",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_091853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91853",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_091854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91854",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -285,16 +285,16 @@ patch for sage/spkg/base/sage-env sage/local/bin/sage-env (needs python 2.6.4.p1
 archive/issue_comments_091855.json:
 ```json
 {
-    "body": "Attachment [sage-env.patch](tarball://root/attachments/some-uuid/ticket9536/sage-env.patch) by AlexanderDreyer created at 2010-07-19 20:50:41\n\nHi,\nI backported the handling of setup.py --no-user-cfg from  Python 2.7 to Python 2.6.4 and also added the handling of the environment variable `DISTUTILS_NO_USER_CFG` to python's distutils. \n\nThe new spkg can be found here: \nhttp://sage.math.washington.edu/home/dreyer/suse101/python-2.6.4.p10.spkg\n\nThe last patch adds this variable to `sage-env`.\n\nRegards,\n  Alexander",
+    "body": "Attachment [sage-env.patch](tarball://root/attachments/some-uuid/ticket9536/sage-env.patch) by @alexanderdreyer created at 2010-07-19 20:50:41\n\nHi,\nI backported the handling of setup.py --no-user-cfg from  Python 2.7 to Python 2.6.4 and also added the handling of the environment variable `DISTUTILS_NO_USER_CFG` to python's distutils. \n\nThe new spkg can be found here: \nhttp://sage.math.washington.edu/home/dreyer/suse101/python-2.6.4.p10.spkg\n\nThe last patch adds this variable to `sage-env`.\n\nRegards,\n  Alexander",
     "created_at": "2010-07-19T20:50:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91855",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
-Attachment [sage-env.patch](tarball://root/attachments/some-uuid/ticket9536/sage-env.patch) by AlexanderDreyer created at 2010-07-19 20:50:41
+Attachment [sage-env.patch](tarball://root/attachments/some-uuid/ticket9536/sage-env.patch) by @alexanderdreyer created at 2010-07-19 20:50:41
 
 Hi,
 I backported the handling of setup.py --no-user-cfg from  Python 2.7 to Python 2.6.4 and also added the handling of the environment variable `DISTUTILS_NO_USER_CFG` to python's distutils. 
@@ -319,7 +319,7 @@ archive/issue_comments_091856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91856",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -337,7 +337,7 @@ archive/issue_comments_091857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91857",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -356,7 +356,7 @@ archive/issue_comments_091858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91858",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -398,7 +398,7 @@ archive/issue_comments_091860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91860",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -411,16 +411,16 @@ Maybe a misunderstanding: the patch of python is necessary  to fix that issue an
 archive/issue_comments_091861.json:
 ```json
 {
-    "body": "Attachment [python-2.6.4.p10.patch](tarball://root/attachments/some-uuid/ticket9536/python-2.6.4.p10.patch) by AlexanderDreyer created at 2010-07-21 15:58:15\n\nAdding handling of environment variable DISTUTILS_NO_USER_CFG to python's distutils",
+    "body": "Attachment [python-2.6.4.p10.patch](tarball://root/attachments/some-uuid/ticket9536/python-2.6.4.p10.patch) by @alexanderdreyer created at 2010-07-21 15:58:15\n\nAdding handling of environment variable DISTUTILS_NO_USER_CFG to python's distutils",
     "created_at": "2010-07-21T15:58:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91861",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
-Attachment [python-2.6.4.p10.patch](tarball://root/attachments/some-uuid/ticket9536/python-2.6.4.p10.patch) by AlexanderDreyer created at 2010-07-21 15:58:15
+Attachment [python-2.6.4.p10.patch](tarball://root/attachments/some-uuid/ticket9536/python-2.6.4.p10.patch) by @alexanderdreyer created at 2010-07-21 15:58:15
 
 Adding handling of environment variable DISTUTILS_NO_USER_CFG to python's distutils
 
@@ -436,7 +436,7 @@ archive/issue_comments_091862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91862",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -454,7 +454,7 @@ archive/issue_comments_091863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91863",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -472,7 +472,7 @@ archive/issue_comments_091864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91864",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -491,7 +491,7 @@ archive/issue_comments_091865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91865",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -509,7 +509,7 @@ archive/issue_comments_091866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91866",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -527,7 +527,7 @@ archive/issue_comments_091867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91867",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -545,7 +545,7 @@ archive/issue_comments_091868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91868",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -563,7 +563,7 @@ archive/issue_comments_091869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91869",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -581,7 +581,7 @@ archive/issue_comments_091870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91870",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -599,7 +599,7 @@ archive/issue_comments_091871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91871",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -617,7 +617,7 @@ archive/issue_comments_091872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91872",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -635,7 +635,7 @@ archive/issue_comments_091873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91873",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -653,7 +653,7 @@ archive/issue_comments_091874.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91874",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -671,7 +671,7 @@ archive/issue_comments_091875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91875",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -689,7 +689,7 @@ archive/issue_comments_091876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91876",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -733,7 +733,7 @@ archive/issue_comments_091877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91877",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -752,7 +752,7 @@ archive/issue_comments_091878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91878",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -770,7 +770,7 @@ archive/issue_comments_091879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91879",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -790,7 +790,7 @@ archive/issue_comments_091880.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91880",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -828,7 +828,7 @@ archive/issue_comments_091882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91882",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -846,7 +846,7 @@ archive/issue_comments_091883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91883",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -864,7 +864,7 @@ archive/issue_comments_091884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91884",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -882,7 +882,7 @@ archive/issue_comments_091885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91885",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -900,7 +900,7 @@ archive/issue_comments_091886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91886",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -936,7 +936,7 @@ archive/issue_comments_091888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91888",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -954,7 +954,7 @@ archive/issue_comments_091889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91889",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -972,7 +972,7 @@ archive/issue_comments_091890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91890",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -990,7 +990,7 @@ archive/issue_comments_091891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91891",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -1008,7 +1008,7 @@ archive/issue_comments_091892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9536#issuecomment-91892",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

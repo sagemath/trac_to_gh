@@ -3,7 +3,7 @@
 archive/issues_000448.json:
 ```json
 {
-    "body": "Assignee: was\n\nspkg-check should be run upon demand after spkg-install has been run but before the build directory is deleted. In spkg-check any possible \"make check\" target the package offers should be run in order to catch bugs early on, especially on more exotic platforms.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/448\n\n",
+    "body": "Assignee: @williamstein\n\nspkg-check should be run upon demand after spkg-install has been run but before the build directory is deleted. In spkg-check any possible \"make check\" target the package offers should be run in order to catch bugs early on, especially on more exotic platforms.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/448\n\n",
     "created_at": "2007-08-19T05:34:57Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_000448.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 spkg-check should be run upon demand after spkg-install has been run but before the build directory is deleted. In spkg-check any possible "make check" target the package offers should be run in order to catch bugs early on, especially on more exotic platforms.
 

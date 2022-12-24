@@ -14,7 +14,7 @@ archive/issues_003002.json:
     "title": "A lot of  spkgs check for fortran even if they don't need it",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3002",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 Assignee: mabshoff
@@ -87,7 +87,7 @@ archive/issue_comments_020657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3002#issuecomment-20657",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

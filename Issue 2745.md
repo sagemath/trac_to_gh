@@ -14,7 +14,7 @@ archive/issues_002745.json:
     "title": "upgrade twisted to 8.0.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2745",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 Assignee: mabshoff
@@ -51,7 +51,7 @@ archive/issue_comments_018865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2745#issuecomment-18865",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 

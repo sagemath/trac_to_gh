@@ -3,7 +3,7 @@
 archive/issues_004287.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  robertwb\n\nThis is for the file formal_group.py. Note that adding a s == loads(dumps(s)) test revealed a\nfailure:\n\n```\nsage: E = EllipticCurve('11a')\nsage: F = E.formal_group()\nsage: F == loads(dumps(F))\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4287\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\nThis is for the file formal_group.py. Note that adding a s == loads(dumps(s)) test revealed a\nfailure:\n\n```\nsage: E = EllipticCurve('11a')\nsage: F = E.formal_group()\nsage: F == loads(dumps(F))\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4287\n\n",
     "created_at": "2008-10-14T19:58:56Z",
     "labels": [
         "algebraic geometry",
@@ -14,12 +14,12 @@ archive/issues_004287.json:
     "title": "[with patch, needs review] improve elliptic curve doctest (part 5)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4287",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  robertwb
+CC:  @robertwb
 
 This is for the file formal_group.py. Note that adding a s == loads(dumps(s)) test revealed a
 failure:
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4287
 archive/issue_comments_031378.json:
 ```json
 {
-    "body": "Attachment [trac_4287.patch](tarball://root/attachments/some-uuid/ticket4287/trac_4287.patch) by zimmerma created at 2008-10-14 20:00:19",
+    "body": "Attachment [trac_4287.patch](tarball://root/attachments/some-uuid/ticket4287/trac_4287.patch) by @zimmermann6 created at 2008-10-14 20:00:19",
     "created_at": "2008-10-14T20:00:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4287#issuecomment-31378",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [trac_4287.patch](tarball://root/attachments/some-uuid/ticket4287/trac_4287.patch) by zimmerma created at 2008-10-14 20:00:19
+Attachment [trac_4287.patch](tarball://root/attachments/some-uuid/ticket4287/trac_4287.patch) by @zimmermann6 created at 2008-10-14 20:00:19
 
 
 
@@ -66,7 +66,7 @@ archive/issue_comments_031379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4287#issuecomment-31379",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -81,16 +81,16 @@ I don't know how to fix this.
 archive/issue_comments_031380.json:
 ```json
 {
-    "body": "Attachment [trac_4287_2.patch](tarball://root/attachments/some-uuid/ticket4287/trac_4287_2.patch) by cremona created at 2008-10-19 21:02:46",
+    "body": "Attachment [trac_4287_2.patch](tarball://root/attachments/some-uuid/ticket4287/trac_4287_2.patch) by @JohnCremona created at 2008-10-19 21:02:46",
     "created_at": "2008-10-19T21:02:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4287#issuecomment-31380",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_4287_2.patch](tarball://root/attachments/some-uuid/ticket4287/trac_4287_2.patch) by cremona created at 2008-10-19 21:02:46
+Attachment [trac_4287_2.patch](tarball://root/attachments/some-uuid/ticket4287/trac_4287_2.patch) by @JohnCremona created at 2008-10-19 21:02:46
 
 
 
@@ -104,7 +104,7 @@ archive/issue_comments_031381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4287#issuecomment-31381",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_031382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4287#issuecomment-31382",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_031383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4287#issuecomment-31383",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_031384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4287#issuecomment-31384",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

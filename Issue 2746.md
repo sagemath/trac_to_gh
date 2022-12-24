@@ -14,7 +14,7 @@ archive/issues_002746.json:
     "title": "[with patch; needs review] Support for writing test-related files in SAGE_TESTDIR",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2746",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 Assignee: failure
@@ -37,16 +37,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2746
 archive/issue_comments_018870.json:
 ```json
 {
-    "body": "Attachment [doctest-typo.patch](tarball://root/attachments/some-uuid/ticket2746/doctest-typo.patch) by tabbott created at 2008-04-01 01:49:21",
+    "body": "Attachment [doctest-typo.patch](tarball://root/attachments/some-uuid/ticket2746/doctest-typo.patch) by @timabbott created at 2008-04-01 01:49:21",
     "created_at": "2008-04-01T01:49:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2746#issuecomment-18870",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [doctest-typo.patch](tarball://root/attachments/some-uuid/ticket2746/doctest-typo.patch) by tabbott created at 2008-04-01 01:49:21
+Attachment [doctest-typo.patch](tarball://root/attachments/some-uuid/ticket2746/doctest-typo.patch) by @timabbott created at 2008-04-01 01:49:21
 
 
 

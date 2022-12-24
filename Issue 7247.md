@@ -14,7 +14,7 @@ archive/issues_007247.json:
     "title": "sage-4.2.alpha0: mercurial doesn't build on OS X 10.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7247",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -49,7 +49,7 @@ archive/issue_comments_060167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7247",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7247#issuecomment-60167",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_060168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7247",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7247#issuecomment-60168",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_060169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7247",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7247#issuecomment-60169",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_060170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7247",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7247#issuecomment-60170",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

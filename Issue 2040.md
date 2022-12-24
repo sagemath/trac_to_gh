@@ -3,7 +3,7 @@
 archive/issues_002040.json:
 ```json
 {
-    "body": "Assignee: was\n\n1. 2d graphics -- the show method of a 2d graphics option *must* document e.g., the axes_labels option, but doesn't, making it useless\n\n\n```\nsage: P = point((0,0))\nsage: P.show?\n```\n\n\nnothing about axes labels.\n\n2. The axes labels appear in the notebook but not from the command line.  Try\nthis in the notebook (good), and command line (bad):\n\n```\nsage: plot(sin,0,1).show(axes_labels=['x','Pr(x)'])\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2040\n\n",
+    "body": "Assignee: @williamstein\n\n1. 2d graphics -- the show method of a 2d graphics option *must* document e.g., the axes_labels option, but doesn't, making it useless\n\n\n```\nsage: P = point((0,0))\nsage: P.show?\n```\n\n\nnothing about axes labels.\n\n2. The axes labels appear in the notebook but not from the command line.  Try\nthis in the notebook (good), and command line (bad):\n\n```\nsage: plot(sin,0,1).show(axes_labels=['x','Pr(x)'])\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2040\n\n",
     "created_at": "2008-02-03T22:37:57Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_002040.json:
     "title": "2d graphics -- problems with axes_labels options",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2040",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 1. 2d graphics -- the show method of a 2d graphics option *must* document e.g., the axes_labels option, but doesn't, making it useless
 
@@ -56,7 +56,7 @@ archive/issue_comments_013209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2040",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2040#issuecomment-13209",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -69,16 +69,16 @@ add axes_labels to documentation to show
 archive/issue_comments_013210.json:
 ```json
 {
-    "body": "Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket2040/plot.patch) by jhpalmieri created at 2008-05-13 21:54:26\n\nI've attached a patch for point 1.  I don't know anything about point 2.",
+    "body": "Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket2040/plot.patch) by @jhpalmieri created at 2008-05-13 21:54:26\n\nI've attached a patch for point 1.  I don't know anything about point 2.",
     "created_at": "2008-05-13T21:54:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2040",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2040#issuecomment-13210",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket2040/plot.patch) by jhpalmieri created at 2008-05-13 21:54:26
+Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket2040/plot.patch) by @jhpalmieri created at 2008-05-13 21:54:26
 
 I've attached a patch for point 1.  I don't know anything about point 2.
 
@@ -89,16 +89,16 @@ I've attached a patch for point 1.  I don't know anything about point 2.
 archive/issue_comments_013211.json:
 ```json
 {
-    "body": "Attachment [plot2.patch](tarball://root/attachments/some-uuid/ticket2040/plot2.patch) by jhpalmieri created at 2008-05-13 21:57:34\n\nshow axes_labels when called from command line",
+    "body": "Attachment [plot2.patch](tarball://root/attachments/some-uuid/ticket2040/plot2.patch) by @jhpalmieri created at 2008-05-13 21:57:34\n\nshow axes_labels when called from command line",
     "created_at": "2008-05-13T21:57:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2040",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2040#issuecomment-13211",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [plot2.patch](tarball://root/attachments/some-uuid/ticket2040/plot2.patch) by jhpalmieri created at 2008-05-13 21:57:34
+Attachment [plot2.patch](tarball://root/attachments/some-uuid/ticket2040/plot2.patch) by @jhpalmieri created at 2008-05-13 21:57:34
 
 show axes_labels when called from command line
 
@@ -114,7 +114,7 @@ archive/issue_comments_013212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2040",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2040#issuecomment-13212",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

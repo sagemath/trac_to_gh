@@ -14,7 +14,7 @@ archive/issues_002878.json:
     "title": "notebook -- cython .c and .html links should open in new links (use target=\"_new\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2878",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2878
 archive/issue_comments_019801.json:
 ```json
 {
-    "body": "Attachment [sage-2878.patch](tarball://root/attachments/some-uuid/ticket2878/sage-2878.patch) by was created at 2008-04-12 04:17:09",
+    "body": "Attachment [sage-2878.patch](tarball://root/attachments/some-uuid/ticket2878/sage-2878.patch) by @williamstein created at 2008-04-12 04:17:09",
     "created_at": "2008-04-12T04:17:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2878",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2878#issuecomment-19801",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2878.patch](tarball://root/attachments/some-uuid/ticket2878/sage-2878.patch) by was created at 2008-04-12 04:17:09
+Attachment [sage-2878.patch](tarball://root/attachments/some-uuid/ticket2878/sage-2878.patch) by @williamstein created at 2008-04-12 04:17:09
 
 
 

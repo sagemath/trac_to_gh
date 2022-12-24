@@ -3,7 +3,7 @@
 archive/issues_003291.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nOn some systems pbuild seems to leave out wrap.o of mwrank.so, resulting in a undefined symbol error\n\nIssue created by migration from https://trac.sagemath.org/ticket/3291\n\n",
+    "body": "Assignee: @garyfurnish\n\nOn some systems pbuild seems to leave out wrap.o of mwrank.so, resulting in a undefined symbol error\n\nIssue created by migration from https://trac.sagemath.org/ticket/3291\n\n",
     "created_at": "2008-05-23T22:38:03Z",
     "labels": [
         "pbuild",
@@ -14,10 +14,10 @@ archive/issues_003291.json:
     "title": "[with patch, needs review] pbuild doesn't properly compile mwrank.so on some systems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3291",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 On some systems pbuild seems to leave out wrap.o of mwrank.so, resulting in a undefined symbol error
 
@@ -37,7 +37,7 @@ archive/issue_comments_022769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3291",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3291#issuecomment-22769",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to assigned.
 archive/issue_comments_022770.json:
 ```json
 {
-    "body": "Attachment [trac_3291_extcode.patch](tarball://root/attachments/some-uuid/ticket3291/trac_3291_extcode.patch) by gfurnish created at 2008-05-23 22:41:11",
+    "body": "Attachment [trac_3291_extcode.patch](tarball://root/attachments/some-uuid/ticket3291/trac_3291_extcode.patch) by @garyfurnish created at 2008-05-23 22:41:11",
     "created_at": "2008-05-23T22:41:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3291",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3291#issuecomment-22770",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_3291_extcode.patch](tarball://root/attachments/some-uuid/ticket3291/trac_3291_extcode.patch) by gfurnish created at 2008-05-23 22:41:11
+Attachment [trac_3291_extcode.patch](tarball://root/attachments/some-uuid/ticket3291/trac_3291_extcode.patch) by @garyfurnish created at 2008-05-23 22:41:11
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_022771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3291",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3291#issuecomment-22771",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007662.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCreate a module for chordal graphs :\n\n* Perfect elimination order ( use 7541 )\n* Move is-chordal in this module\n* Polynomial-time algorithms for\n     * Vertex coloring\n     * Max clique/stable\n* MaxBFS\n* BFS*\n\nIssue created by migration from https://trac.sagemath.org/ticket/7662\n\n",
+    "body": "Assignee: @rlmill\n\nCreate a module for chordal graphs :\n\n* Perfect elimination order ( use 7541 )\n* Move is-chordal in this module\n* Polynomial-time algorithms for\n     * Vertex coloring\n     * Max clique/stable\n* MaxBFS\n* BFS*\n\nIssue created by migration from https://trac.sagemath.org/ticket/7662\n\n",
     "created_at": "2009-12-11T14:27:34Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007662.json:
     "title": "Chordal Graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7662",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Create a module for chordal graphs :
 
@@ -45,7 +45,7 @@ archive/issue_comments_065604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7662",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7662#issuecomment-65604",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_065605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7662",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7662#issuecomment-65605",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_065606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7662",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7662#issuecomment-65606",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_065607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7662",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7662#issuecomment-65607",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_065608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7662",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7662#issuecomment-65608",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_065609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7662",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7662#issuecomment-65609",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_065610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7662",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7662#issuecomment-65610",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_065611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7662",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7662#issuecomment-65611",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -235,16 +235,16 @@ Changing status from needs_info to needs_work.
 archive/issue_comments_065612.json:
 ```json
 {
-    "body": "Attachment [trac_7662.patch](tarball://root/attachments/some-uuid/ticket7662/trac_7662.patch) by ncohen created at 2010-11-26 11:19:46\n\nWhat about this one, then ?\n\nIt was a good idea to explain it... I quite liked writing it `:-)`\n\nNathann",
+    "body": "Attachment [trac_7662.patch](tarball://root/attachments/some-uuid/ticket7662/trac_7662.patch) by @nathanncohen created at 2010-11-26 11:19:46\n\nWhat about this one, then ?\n\nIt was a good idea to explain it... I quite liked writing it `:-)`\n\nNathann",
     "created_at": "2010-11-26T11:19:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7662",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7662#issuecomment-65612",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_7662.patch](tarball://root/attachments/some-uuid/ticket7662/trac_7662.patch) by ncohen created at 2010-11-26 11:19:46
+Attachment [trac_7662.patch](tarball://root/attachments/some-uuid/ticket7662/trac_7662.patch) by @nathanncohen created at 2010-11-26 11:19:46
 
 What about this one, then ?
 
@@ -264,7 +264,7 @@ archive/issue_comments_065613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7662",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7662#issuecomment-65613",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_065614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7662",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7662#issuecomment-65614",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_065615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7662",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7662#issuecomment-65615",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_065616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7662",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7662#issuecomment-65616",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

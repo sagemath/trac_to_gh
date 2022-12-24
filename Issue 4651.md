@@ -3,7 +3,7 @@
 archive/issues_004651.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nWe decided to temporarily disable the caching of the cython dependencies during the build, simply because it was causing so much grief. However, this should be re-enabled once someone takes the time to sit down and work out the last kinks. In particular, **removing** files from the sage tree and rebuilding tends to cause exceptions.\n\nSee `$SAGE_ROOT/devel/sage/setup.py` for some comments, and to play with this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4651\n\n",
+    "body": "Assignee: @craigcitro\n\nWe decided to temporarily disable the caching of the cython dependencies during the build, simply because it was causing so much grief. However, this should be re-enabled once someone takes the time to sit down and work out the last kinks. In particular, **removing** files from the sage tree and rebuilding tends to cause exceptions.\n\nSee `$SAGE_ROOT/devel/sage/setup.py` for some comments, and to play with this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4651\n\n",
     "created_at": "2008-11-29T07:05:55Z",
     "labels": [
         "build",
@@ -14,10 +14,10 @@ archive/issues_004651.json:
     "title": "re-enable caching of cython dependencies during build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4651",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 We decided to temporarily disable the caching of the cython dependencies during the build, simply because it was causing so much grief. However, this should be re-enabled once someone takes the time to sit down and work out the last kinks. In particular, **removing** files from the sage tree and rebuilding tends to cause exceptions.
 
@@ -39,7 +39,7 @@ archive/issue_comments_035004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4651#issuecomment-35004",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_035005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4651#issuecomment-35005",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_035006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4651#issuecomment-35006",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_035007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4651#issuecomment-35007",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

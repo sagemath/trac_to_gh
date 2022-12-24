@@ -14,7 +14,7 @@ archive/issues_005411.json:
     "title": "QuadraticForm: implement clifford_invariant and replace hasse_conductor with clifford_conductor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5411",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 Assignee: gonzalo
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5411
 archive/issue_comments_041833.json:
 ```json
 {
-    "body": "Attachment [patch.5411.clifford_invariant](tarball://root/attachments/some-uuid/ticket5411/patch.5411.clifford_invariant) by tornaria created at 2009-03-01 15:33:47",
+    "body": "Attachment [patch.5411.clifford_invariant](tarball://root/attachments/some-uuid/ticket5411/patch.5411.clifford_invariant) by @tornaria created at 2009-03-01 15:33:47",
     "created_at": "2009-03-01T15:33:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5411#issuecomment-41833",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
-Attachment [patch.5411.clifford_invariant](tarball://root/attachments/some-uuid/ticket5411/patch.5411.clifford_invariant) by tornaria created at 2009-03-01 15:33:47
+Attachment [patch.5411.clifford_invariant](tarball://root/attachments/some-uuid/ticket5411/patch.5411.clifford_invariant) by @tornaria created at 2009-03-01 15:33:47
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_041834.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5411#issuecomment-41834",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -74,16 +74,16 @@ same file with correct name
 archive/issue_comments_041835.json:
 ```json
 {
-    "body": "Attachment [trac_5411.clifford_invariant.patch](tarball://root/attachments/some-uuid/ticket5411/trac_5411.clifford_invariant.patch) by tornaria created at 2009-03-01 16:04:31",
+    "body": "Attachment [trac_5411.clifford_invariant.patch](tarball://root/attachments/some-uuid/ticket5411/trac_5411.clifford_invariant.patch) by @tornaria created at 2009-03-01 16:04:31",
     "created_at": "2009-03-01T16:04:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5411#issuecomment-41835",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
-Attachment [trac_5411.clifford_invariant.patch](tarball://root/attachments/some-uuid/ticket5411/trac_5411.clifford_invariant.patch) by tornaria created at 2009-03-01 16:04:31
+Attachment [trac_5411.clifford_invariant.patch](tarball://root/attachments/some-uuid/ticket5411/trac_5411.clifford_invariant.patch) by @tornaria created at 2009-03-01 16:04:31
 
 
 
@@ -92,16 +92,16 @@ Attachment [trac_5411.clifford_invariant.patch](tarball://root/attachments/some-
 archive/issue_comments_041836.json:
 ```json
 {
-    "body": "Changing assignee from gonzalo to tornaria.",
+    "body": "Changing assignee from gonzalo to @tornaria.",
     "created_at": "2009-03-01T16:04:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5411#issuecomment-41836",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
-Changing assignee from gonzalo to tornaria.
+Changing assignee from gonzalo to @tornaria.
 
 
 
@@ -115,7 +115,7 @@ archive/issue_comments_041837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5411#issuecomment-41837",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_041840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5411#issuecomment-41840",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -190,16 +190,16 @@ replaces previous patch --- this one doesn't remove hasse_conductor
 archive/issue_comments_041841.json:
 ```json
 {
-    "body": "Attachment [trac_5411.clifford_invariant.2nd.patch](tarball://root/attachments/some-uuid/ticket5411/trac_5411.clifford_invariant.2nd.patch) by tornaria created at 2009-03-02 04:24:33\n\nThe new patch (2nd patch) preserves `hasse_conductor` as requested by Jon, and it also fixes the imports in `quadratic_form.py`, so it is meant to be applied on top of #5403.",
+    "body": "Attachment [trac_5411.clifford_invariant.2nd.patch](tarball://root/attachments/some-uuid/ticket5411/trac_5411.clifford_invariant.2nd.patch) by @tornaria created at 2009-03-02 04:24:33\n\nThe new patch (2nd patch) preserves `hasse_conductor` as requested by Jon, and it also fixes the imports in `quadratic_form.py`, so it is meant to be applied on top of #5403.",
     "created_at": "2009-03-02T04:24:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5411#issuecomment-41841",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
-Attachment [trac_5411.clifford_invariant.2nd.patch](tarball://root/attachments/some-uuid/ticket5411/trac_5411.clifford_invariant.2nd.patch) by tornaria created at 2009-03-02 04:24:33
+Attachment [trac_5411.clifford_invariant.2nd.patch](tarball://root/attachments/some-uuid/ticket5411/trac_5411.clifford_invariant.2nd.patch) by @tornaria created at 2009-03-02 04:24:33
 
 The new patch (2nd patch) preserves `hasse_conductor` as requested by Jon, and it also fixes the imports in `quadratic_form.py`, so it is meant to be applied on top of #5403.
 
@@ -215,7 +215,7 @@ archive/issue_comments_041842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5411#issuecomment-41842",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
 

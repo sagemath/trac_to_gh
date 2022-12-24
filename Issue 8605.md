@@ -14,7 +14,7 @@ archive/issues_008605.json:
     "title": "upgrade SageTeX spkg to 2.2.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8605",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: tbd
@@ -39,7 +39,7 @@ archive/issue_comments_077956.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8605#issuecomment-77956",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_077957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8605#issuecomment-77957",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_077958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8605#issuecomment-77958",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_077959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8605#issuecomment-77959",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_077960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8605#issuecomment-77960",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_077961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8605#issuecomment-77961",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

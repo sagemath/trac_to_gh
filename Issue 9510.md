@@ -14,7 +14,7 @@ archive/issues_009510.json:
     "title": "gfan fails to build on skynet machines eno, taurus",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9510",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: tbd
@@ -51,7 +51,7 @@ archive/issue_comments_091386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9510#issuecomment-91386",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_091387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9510#issuecomment-91387",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_091388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9510#issuecomment-91388",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

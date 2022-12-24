@@ -3,7 +3,7 @@
 archive/issues_008695.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nCC:  sage-combinat\n\nKeywords: UniqueRepresentation, equality\n\nPython manuals says:\n\n    There are no implied relationships among the comparison operators. The truth of x==y does not imply that x!=y is false. Accordingly, when defining __eq__(), one should also define __ne__() so that the operators will behave as expected.\n\nUniqueRepresentation fails to comply with this. As a consequence:\n\n```\nsage: G6 = GL(6, QQ)\nsage: G6 == G6\nTrue\nsage: G6 != G6\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n...\nNotImplementedError: Matrix group over Rational Field not implemented.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8695\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: UniqueRepresentation, equality\n\nPython manuals says:\n\n    There are no implied relationships among the comparison operators. The truth of x==y does not imply that x!=y is false. Accordingly, when defining __eq__(), one should also define __ne__() so that the operators will behave as expected.\n\nUniqueRepresentation fails to comply with this. As a consequence:\n\n```\nsage: G6 = GL(6, QQ)\nsage: G6 == G6\nTrue\nsage: G6 != G6\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n...\nNotImplementedError: Matrix group over Rational Field not implemented.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8695\n\n",
     "created_at": "2010-04-16T15:13:49Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_008695.json:
     "title": "UniqueRepresentations implements __eq__ but not __ne__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8695",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
 CC:  sage-combinat
 
@@ -57,7 +57,7 @@ archive/issue_comments_079208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8695#issuecomment-79208",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_079209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8695#issuecomment-79209",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_079212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8695#issuecomment-79212",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_079213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8695#issuecomment-79213",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_079214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8695#issuecomment-79214",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_079215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8695#issuecomment-79215",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_079216.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8695#issuecomment-79216",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_079217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8695#issuecomment-79217",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_079218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8695#issuecomment-79218",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_079219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8695#issuecomment-79219",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -290,16 +290,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_079220.json:
 ```json
 {
-    "body": "Attachment [trac_8695-uniquerep_missing__ne__-fh.patch](tarball://root/attachments/some-uuid/ticket8695/trac_8695-uniquerep_missing__ne__-fh.patch) by hivert created at 2010-04-17 20:45:09\n\n> We discussed with Florent over the phone. He will remove the inheritance from object, reupload the patch, and set a positive review on my behalf.\n\nDone !",
+    "body": "Attachment [trac_8695-uniquerep_missing__ne__-fh.patch](tarball://root/attachments/some-uuid/ticket8695/trac_8695-uniquerep_missing__ne__-fh.patch) by @hivert created at 2010-04-17 20:45:09\n\n> We discussed with Florent over the phone. He will remove the inheritance from object, reupload the patch, and set a positive review on my behalf.\n\nDone !",
     "created_at": "2010-04-17T20:45:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8695#issuecomment-79220",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8695-uniquerep_missing__ne__-fh.patch](tarball://root/attachments/some-uuid/ticket8695/trac_8695-uniquerep_missing__ne__-fh.patch) by hivert created at 2010-04-17 20:45:09
+Attachment [trac_8695-uniquerep_missing__ne__-fh.patch](tarball://root/attachments/some-uuid/ticket8695/trac_8695-uniquerep_missing__ne__-fh.patch) by @hivert created at 2010-04-17 20:45:09
 
 > We discussed with Florent over the phone. He will remove the inheritance from object, reupload the patch, and set a positive review on my behalf.
 
@@ -317,7 +317,7 @@ archive/issue_comments_079221.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8695#issuecomment-79221",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -335,7 +335,7 @@ archive/issue_comments_079222.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8695#issuecomment-79222",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -358,7 +358,7 @@ archive/issue_comments_079223.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8695#issuecomment-79223",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -376,7 +376,7 @@ archive/issue_comments_079224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8695#issuecomment-79224",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

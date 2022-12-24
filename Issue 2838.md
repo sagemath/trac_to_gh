@@ -3,7 +3,7 @@
 archive/issues_002838.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nthis function is not included in PyList.pxi\n\nIssue created by migration from https://trac.sagemath.org/ticket/2838\n\n",
+    "body": "Assignee: @garyfurnish\n\nthis function is not included in PyList.pxi\n\nIssue created by migration from https://trac.sagemath.org/ticket/2838\n\n",
     "created_at": "2008-04-07T01:07:34Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_002838.json:
     "title": "_PyList_Extend missing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2838",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 this function is not included in PyList.pxi
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2838
 archive/issue_comments_019467.json:
 ```json
 {
-    "body": "Attachment [trac_2838.patch](tarball://root/attachments/some-uuid/ticket2838/trac_2838.patch) by gfurnish created at 2008-04-07 01:08:12",
+    "body": "Attachment [trac_2838.patch](tarball://root/attachments/some-uuid/ticket2838/trac_2838.patch) by @garyfurnish created at 2008-04-07 01:08:12",
     "created_at": "2008-04-07T01:08:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2838#issuecomment-19467",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_2838.patch](tarball://root/attachments/some-uuid/ticket2838/trac_2838.patch) by gfurnish created at 2008-04-07 01:08:12
+Attachment [trac_2838.patch](tarball://root/attachments/some-uuid/ticket2838/trac_2838.patch) by @garyfurnish created at 2008-04-07 01:08:12
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_019468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2838#issuecomment-19468",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

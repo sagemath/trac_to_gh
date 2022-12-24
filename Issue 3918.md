@@ -14,7 +14,7 @@ archive/issues_003918.json:
     "title": "notebook -- MAJOR BUG involving uploading file from URL",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3918",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3918
 archive/issue_comments_028027.json:
 ```json
 {
-    "body": "Changing assignee from boothby to mhansen.",
+    "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2008-09-08T10:25:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3918#issuecomment-28027",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from boothby to mhansen.
+Changing assignee from boothby to @mwhansen.
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_028028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3918#issuecomment-28028",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -72,16 +72,16 @@ Changing status from new to assigned.
 archive/issue_comments_028029.json:
 ```json
 {
-    "body": "Attachment [trac_3918.patch](tarball://root/attachments/some-uuid/ticket3918/trac_3918.patch) by mhansen created at 2008-09-08 10:25:03",
+    "body": "Attachment [trac_3918.patch](tarball://root/attachments/some-uuid/ticket3918/trac_3918.patch) by @mwhansen created at 2008-09-08 10:25:03",
     "created_at": "2008-09-08T10:25:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3918#issuecomment-28029",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3918.patch](tarball://root/attachments/some-uuid/ticket3918/trac_3918.patch) by mhansen created at 2008-09-08 10:25:03
+Attachment [trac_3918.patch](tarball://root/attachments/some-uuid/ticket3918/trac_3918.patch) by @mwhansen created at 2008-09-08 10:25:03
 
 
 

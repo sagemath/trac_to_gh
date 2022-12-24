@@ -107,7 +107,7 @@ archive/issue_comments_002828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/549#issuecomment-2828",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_002829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/549#issuecomment-2829",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005104.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  sbarthelemy robertwb\n\nIn addition to the problems fixed on trac #5060, we also have the following, reported by `sbarthelemy`:\n\nHello,\n\nreading the code, I see another problem if ones has the following line in its `.pyx`:\n\n`cimport mod#mycomment`\n\nIn such a case, we'll look for a dependency `mod#mycomment.pxd` instead of `mod.pxd`.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5104\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  sbarthelemy @robertwb\n\nIn addition to the problems fixed on trac #5060, we also have the following, reported by `sbarthelemy`:\n\nHello,\n\nreading the code, I see another problem if ones has the following line in its `.pyx`:\n\n`cimport mod#mycomment`\n\nIn such a case, we'll look for a dependency `mod#mycomment.pxd` instead of `mod.pxd`.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5104\n\n",
     "created_at": "2009-01-26T16:47:03Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_005104.json:
     "title": "setup.py dependency checking issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5104",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 Assignee: mabshoff
 
-CC:  sbarthelemy robertwb
+CC:  sbarthelemy @robertwb
 
 In addition to the problems fixed on trac #5060, we also have the following, reported by `sbarthelemy`:
 
@@ -49,7 +49,7 @@ archive/issue_comments_038972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5104",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5104#issuecomment-38972",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_038973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5104",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5104#issuecomment-38973",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_038974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5104",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5104#issuecomment-38974",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_038975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5104",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5104#issuecomment-38975",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_038976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5104",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5104#issuecomment-38976",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -250,16 +250,16 @@ Michael
 archive/issue_comments_038981.json:
 ```json
 {
-    "body": "Attachment [5104-cimport-dep.patch](tarball://root/attachments/some-uuid/ticket5104/5104-cimport-dep.patch) by robertwb created at 2009-02-17 10:38:23",
+    "body": "Attachment [5104-cimport-dep.patch](tarball://root/attachments/some-uuid/ticket5104/5104-cimport-dep.patch) by @robertwb created at 2009-02-17 10:38:23",
     "created_at": "2009-02-17T10:38:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5104",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5104#issuecomment-38981",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5104-cimport-dep.patch](tarball://root/attachments/some-uuid/ticket5104/5104-cimport-dep.patch) by robertwb created at 2009-02-17 10:38:23
+Attachment [5104-cimport-dep.patch](tarball://root/attachments/some-uuid/ticket5104/5104-cimport-dep.patch) by @robertwb created at 2009-02-17 10:38:23
 
 
 
@@ -273,7 +273,7 @@ archive/issue_comments_038982.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5104",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5104#issuecomment-38982",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

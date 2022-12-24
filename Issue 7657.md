@@ -3,7 +3,7 @@
 archive/issues_007657.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  was boothby kcrisman jhpalmieri\n\nThe sagenb.org log has this error in it a bunch:\n\n```\n2009-12-10 13:58:06-0800 [HTTPChannel,203984,127.0.0.1] Exception rendering:2009-12-10 13:58:06-0800 [HTTPChannel,203984,127.0.0.1] Unhandled Error\n        Traceback (most recent call last):\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/Twisted-8.2.0-py2.6-linux-x86_64.egg/twisted/internet/defer.py\", line 630, in gotResult\n            _deferGenerator(g, deferred)\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/Twisted-8.2.0-py2.6-linux-x86_64.egg/twisted/internet/defer.py\", line 607, in _deferGenerator\n            deferred.callback(result)\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/Twisted-8.2.0-py2.6-linux-x86_64.egg/twisted/internet/defer.py\", line 243, in callback\n            self._startRunCallbacks(result)\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/Twisted-8.2.0-py2.6-linux-x86_64.egg/twisted/internet/defer.py\", line 312, in _startRunCallbacks\n            self._runCallbacks()\n        --- <exception caught here> ---\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/Twisted-8.2.0-py2.6-linux-x86_64.eg\ng/twisted/internet/defer.py\", line 328, in _runCallbacks\n            self.result = callback(self.result, *args, **kw)\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/Twisted-8.2.0-py2.6-linux-x86_64.eg\ng/twisted/web2/resource.py\", line 230, in <lambda>            ).addCallback(lambda res: self.render(request))\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/sagenb/notebook/twist.py\", line 113\n1, in render            worksheet.check_comp()\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/sagenb/notebook/worksheet.py\", line\n 3133, in check_comp            out = self.postprocess_output(output_status.output, C)\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/sagenb/notebook/worksheet.py\", line\n 3619, in postprocess_output            I = C._before_preparse.split('\\n')\n        exceptions.AttributeError: Cell instance has no attribute '_before_preparse'\n```\n\n\nFix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7657\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein boothby @kcrisman @jhpalmieri\n\nThe sagenb.org log has this error in it a bunch:\n\n```\n2009-12-10 13:58:06-0800 [HTTPChannel,203984,127.0.0.1] Exception rendering:2009-12-10 13:58:06-0800 [HTTPChannel,203984,127.0.0.1] Unhandled Error\n        Traceback (most recent call last):\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/Twisted-8.2.0-py2.6-linux-x86_64.egg/twisted/internet/defer.py\", line 630, in gotResult\n            _deferGenerator(g, deferred)\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/Twisted-8.2.0-py2.6-linux-x86_64.egg/twisted/internet/defer.py\", line 607, in _deferGenerator\n            deferred.callback(result)\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/Twisted-8.2.0-py2.6-linux-x86_64.egg/twisted/internet/defer.py\", line 243, in callback\n            self._startRunCallbacks(result)\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/Twisted-8.2.0-py2.6-linux-x86_64.egg/twisted/internet/defer.py\", line 312, in _startRunCallbacks\n            self._runCallbacks()\n        --- <exception caught here> ---\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/Twisted-8.2.0-py2.6-linux-x86_64.eg\ng/twisted/internet/defer.py\", line 328, in _runCallbacks\n            self.result = callback(self.result, *args, **kw)\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/Twisted-8.2.0-py2.6-linux-x86_64.eg\ng/twisted/web2/resource.py\", line 230, in <lambda>            ).addCallback(lambda res: self.render(request))\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/sagenb/notebook/twist.py\", line 113\n1, in render            worksheet.check_comp()\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/sagenb/notebook/worksheet.py\", line\n 3133, in check_comp            out = self.postprocess_output(output_status.output, C)\n          File \"/usr/local/sage/local/lib/python2.6/site-packages/sagenb/notebook/worksheet.py\", line\n 3619, in postprocess_output            I = C._before_preparse.split('\\n')\n        exceptions.AttributeError: Cell instance has no attribute '_before_preparse'\n```\n\n\nFix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7657\n\n",
     "created_at": "2009-12-11T05:04:23Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007657.json:
     "title": "notebook -- traceback involving \"_before_preparse\" in sagenb.org log",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7657",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  was boothby kcrisman jhpalmieri
+CC:  @williamstein boothby @kcrisman @jhpalmieri
 
 The sagenb.org log has this error in it a bunch:
 
@@ -68,7 +68,7 @@ archive/issue_comments_065500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7657#issuecomment-65500",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_065501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7657#issuecomment-65501",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_065502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7657#issuecomment-65502",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_065503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7657#issuecomment-65503",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_065504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7657#issuecomment-65504",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_065505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7657#issuecomment-65505",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 

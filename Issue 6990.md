@@ -3,7 +3,7 @@
 archive/issues_006990.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  kcrisman\n\nThis is the same problem we had in #2469, which apparently again crops up with the upgrade to readline-6.0.\n\nI get it with a fresh compile of 4.1.2.alpha2 on ubuntu 9.04.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6990\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @kcrisman\n\nThis is the same problem we had in #2469, which apparently again crops up with the upgrade to readline-6.0.\n\nI get it with a fresh compile of 4.1.2.alpha2 on ubuntu 9.04.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6990\n\n",
     "created_at": "2009-09-22T18:09:11Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_006990.json:
     "title": "readline tab completion has an extra space appended",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6990",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: mabshoff
 
-CC:  kcrisman
+CC:  @kcrisman
 
 This is the same problem we had in #2469, which apparently again crops up with the upgrade to readline-6.0.
 
@@ -41,7 +41,7 @@ archive/issue_comments_057814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6990#issuecomment-57814",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_057815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6990#issuecomment-57815",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_057816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6990#issuecomment-57816",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_057817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6990#issuecomment-57817",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_057819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6990#issuecomment-57819",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_057821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6990#issuecomment-57821",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_057822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6990#issuecomment-57822",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_057824.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6990#issuecomment-57824",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_057825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6990#issuecomment-57825",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

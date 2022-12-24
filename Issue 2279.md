@@ -3,7 +3,7 @@
 archive/issues_002279.json:
 ```json
 {
-    "body": "Assignee: was\n\nA fresh 64-bit install of 2.10.2 gives this (and only this) error with\n\"make check\":\n\n\n```\nsage -t  devel/sage-main/sage/rings/number_field/totallyreal.py**********************************************************************\nFile \"totallyreal.py\", line 410:\n   sage: sage.rings.number_field.totallyreal.__selberg_zograf_bound(8,7)\nExpected:\n   15.851871776151311\nGot:\n   15.851871776151313\n**********************************************************************\n1 items had failures:\n  1 of   1 in __main__.example_5\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_totallyreal.py\n        [1.7 s]\nexit code: 256\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n       sage -t  devel/sage-main/sage/rings/number_field/totallyreal.py\n```\n\n\nOS info:\n\n```\njec@host-57-71%uname -a\nLinux host-57-71 2.6.18.8-0.3-default #1 SMP Tue Apr 17 08:42:35 UTC 2007 x86_64 x86_64 x86_64 GNU/Linux\n```\n\n\n```\ngcc version 4.1.2 20061115 (prerelease) (SUSE Linux)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2279\n\n",
+    "body": "Assignee: @williamstein\n\nA fresh 64-bit install of 2.10.2 gives this (and only this) error with\n\"make check\":\n\n\n```\nsage -t  devel/sage-main/sage/rings/number_field/totallyreal.py**********************************************************************\nFile \"totallyreal.py\", line 410:\n   sage: sage.rings.number_field.totallyreal.__selberg_zograf_bound(8,7)\nExpected:\n   15.851871776151311\nGot:\n   15.851871776151313\n**********************************************************************\n1 items had failures:\n  1 of   1 in __main__.example_5\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_totallyreal.py\n        [1.7 s]\nexit code: 256\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n       sage -t  devel/sage-main/sage/rings/number_field/totallyreal.py\n```\n\n\nOS info:\n\n```\njec@host-57-71%uname -a\nLinux host-57-71 2.6.18.8-0.3-default #1 SMP Tue Apr 17 08:42:35 UTC 2007 x86_64 x86_64 x86_64 GNU/Linux\n```\n\n\n```\ngcc version 4.1.2 20061115 (prerelease) (SUSE Linux)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2279\n\n",
     "created_at": "2008-02-23T20:25:21Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_002279.json:
     "title": "numerical noise? doctest failure in sage.rings.number_field.totallyreal.__selberg_zograf_bound with 2.10.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2279",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 A fresh 64-bit install of 2.10.2 gives this (and only this) error with
 "make check":
@@ -77,7 +77,7 @@ archive/issue_comments_015114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2279#issuecomment-15114",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 
@@ -90,16 +90,16 @@ Deleted the function __selberg_zograf_bound.  Patch attached.  JV
 archive/issue_comments_015115.json:
 ```json
 {
-    "body": "Attachment [8682.patch](tarball://root/attachments/some-uuid/ticket2279/8682.patch) by was created at 2008-02-28 06:28:20",
+    "body": "Attachment [8682.patch](tarball://root/attachments/some-uuid/ticket2279/8682.patch) by @williamstein created at 2008-02-28 06:28:20",
     "created_at": "2008-02-28T06:28:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2279#issuecomment-15115",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [8682.patch](tarball://root/attachments/some-uuid/ticket2279/8682.patch) by was created at 2008-02-28 06:28:20
+Attachment [8682.patch](tarball://root/attachments/some-uuid/ticket2279/8682.patch) by @williamstein created at 2008-02-28 06:28:20
 
 
 
@@ -108,16 +108,16 @@ Attachment [8682.patch](tarball://root/attachments/some-uuid/ticket2279/8682.pat
 archive/issue_comments_015116.json:
 ```json
 {
-    "body": "Attachment [trac-2279.patch](tarball://root/attachments/some-uuid/ticket2279/trac-2279.patch) by craigcitro created at 2008-02-28 06:53:08\n\nSame patch as the above, but it's a patch against 2.10.2, as opposed to the current working version of the code John and I are using (which is what the other patch above is against. ;) )",
+    "body": "Attachment [trac-2279.patch](tarball://root/attachments/some-uuid/ticket2279/trac-2279.patch) by @craigcitro created at 2008-02-28 06:53:08\n\nSame patch as the above, but it's a patch against 2.10.2, as opposed to the current working version of the code John and I are using (which is what the other patch above is against. ;) )",
     "created_at": "2008-02-28T06:53:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2279#issuecomment-15116",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-2279.patch](tarball://root/attachments/some-uuid/ticket2279/trac-2279.patch) by craigcitro created at 2008-02-28 06:53:08
+Attachment [trac-2279.patch](tarball://root/attachments/some-uuid/ticket2279/trac-2279.patch) by @craigcitro created at 2008-02-28 06:53:08
 
 Same patch as the above, but it's a patch against 2.10.2, as opposed to the current working version of the code John and I are using (which is what the other patch above is against. ;) )
 
@@ -169,7 +169,7 @@ archive/issue_comments_015119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2279#issuecomment-15119",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_015120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2279#issuecomment-15120",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_015121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2279#issuecomment-15121",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_015122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2279#issuecomment-15122",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_015123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2279#issuecomment-15123",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -263,16 +263,16 @@ Yep, I'm still waiting for my copy of rc0 to finish its `sage -clone` on sage.ma
 archive/issue_comments_015124.json:
 ```json
 {
-    "body": "Attachment [trac-2279.pt2.patch](tarball://root/attachments/some-uuid/ticket2279/trac-2279.pt2.patch) by craigcitro created at 2008-02-28 23:05:12",
+    "body": "Attachment [trac-2279.pt2.patch](tarball://root/attachments/some-uuid/ticket2279/trac-2279.pt2.patch) by @craigcitro created at 2008-02-28 23:05:12",
     "created_at": "2008-02-28T23:05:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2279#issuecomment-15124",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-2279.pt2.patch](tarball://root/attachments/some-uuid/ticket2279/trac-2279.pt2.patch) by craigcitro created at 2008-02-28 23:05:12
+Attachment [trac-2279.pt2.patch](tarball://root/attachments/some-uuid/ticket2279/trac-2279.pt2.patch) by @craigcitro created at 2008-02-28 23:05:12
 
 
 
@@ -286,7 +286,7 @@ archive/issue_comments_015125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2279#issuecomment-15125",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

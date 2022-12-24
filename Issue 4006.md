@@ -3,7 +3,7 @@
 archive/issues_004006.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4006\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4006\n\n",
     "created_at": "2008-08-30T19:05:49Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_004006.json:
     "title": "[with patch, needs review] Remove unused code in sage/libs/pari/functional.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4006",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4006
 archive/issue_comments_028925.json:
 ```json
 {
-    "body": "Attachment [trac_4006.patch](tarball://root/attachments/some-uuid/ticket4006/trac_4006.patch) by mhansen created at 2008-08-30 20:01:45\n\nThis code is totally broken due to the imports at the top.  Plus, it's old, untested, and a bit crufty.",
+    "body": "Attachment [trac_4006.patch](tarball://root/attachments/some-uuid/ticket4006/trac_4006.patch) by @mwhansen created at 2008-08-30 20:01:45\n\nThis code is totally broken due to the imports at the top.  Plus, it's old, untested, and a bit crufty.",
     "created_at": "2008-08-30T20:01:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4006",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4006#issuecomment-28925",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4006.patch](tarball://root/attachments/some-uuid/ticket4006/trac_4006.patch) by mhansen created at 2008-08-30 20:01:45
+Attachment [trac_4006.patch](tarball://root/attachments/some-uuid/ticket4006/trac_4006.patch) by @mwhansen created at 2008-08-30 20:01:45
 
 This code is totally broken due to the imports at the top.  Plus, it's old, untested, and a bit crufty.
 

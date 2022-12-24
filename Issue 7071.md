@@ -3,7 +3,7 @@
 archive/issues_007071.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  mjo\n\nUsing\n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha4\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used #7021\n\nThis is one of the many packages that ignore the setting of the variable CC. \n\n```\npalp-1.1.p1/src/GNUmakefile\npalp-1.1.p1/src/mori.c\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nmake[2]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/palp-1.1.p1/src'\ngcc -O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE   -c -o poly.o poly.c\ngcc -O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE   -c -o Coord.o Coord.c\ngcc -O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE   -c -o Rat.o Rat.c\ngcc -O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE   -c -o Vertex.o Vertex.c\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7071\n\n",
+    "body": "Assignee: tbd\n\nCC:  @orlitzky\n\nUsing\n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha4\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used #7021\n\nThis is one of the many packages that ignore the setting of the variable CC. \n\n```\npalp-1.1.p1/src/GNUmakefile\npalp-1.1.p1/src/mori.c\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nmake[2]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/palp-1.1.p1/src'\ngcc -O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE   -c -o poly.o poly.c\ngcc -O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE   -c -o Coord.o Coord.c\ngcc -O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE   -c -o Rat.o Rat.c\ngcc -O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE   -c -o Vertex.o Vertex.c\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7071\n\n",
     "created_at": "2009-09-29T13:27:04Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_007071.json:
 ```
 Assignee: tbd
 
-CC:  mjo
+CC:  @orlitzky
 
 Using
 
@@ -69,7 +69,7 @@ archive/issue_comments_058481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7071#issuecomment-58481",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -82,16 +82,16 @@ Changing status from new to needs_review.
 archive/issue_comments_058482.json:
 ```json
 {
-    "body": "Attachment [palp-1.1.p4.patch](tarball://root/attachments/some-uuid/ticket7071/palp-1.1.p4.patch) by ohanar created at 2012-02-09 14:46:10\n\nfor review purposes",
+    "body": "Attachment [palp-1.1.p4.patch](tarball://root/attachments/some-uuid/ticket7071/palp-1.1.p4.patch) by @ohanar created at 2012-02-09 14:46:10\n\nfor review purposes",
     "created_at": "2012-02-09T14:46:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7071#issuecomment-58482",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
-Attachment [palp-1.1.p4.patch](tarball://root/attachments/some-uuid/ticket7071/palp-1.1.p4.patch) by ohanar created at 2012-02-09 14:46:10
+Attachment [palp-1.1.p4.patch](tarball://root/attachments/some-uuid/ticket7071/palp-1.1.p4.patch) by @ohanar created at 2012-02-09 14:46:10
 
 for review purposes
 
@@ -107,7 +107,7 @@ archive/issue_comments_058483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7071#issuecomment-58483",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_058484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7071#issuecomment-58484",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_058485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7071#issuecomment-58485",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_058486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7071#issuecomment-58486",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_058487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7071#issuecomment-58487",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -192,16 +192,16 @@ ok, I've based my changes off of the new version at #12055 and have made `CFLAGS
 archive/issue_comments_058488.json:
 ```json
 {
-    "body": "Attachment [palp-2.0.p1.patch](tarball://root/attachments/some-uuid/ticket7071/palp-2.0.p1.patch) by ohanar created at 2012-02-27 00:35:26\n\nfor review purposes",
+    "body": "Attachment [palp-2.0.p1.patch](tarball://root/attachments/some-uuid/ticket7071/palp-2.0.p1.patch) by @ohanar created at 2012-02-27 00:35:26\n\nfor review purposes",
     "created_at": "2012-02-27T00:35:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7071#issuecomment-58488",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
-Attachment [palp-2.0.p1.patch](tarball://root/attachments/some-uuid/ticket7071/palp-2.0.p1.patch) by ohanar created at 2012-02-27 00:35:26
+Attachment [palp-2.0.p1.patch](tarball://root/attachments/some-uuid/ticket7071/palp-2.0.p1.patch) by @ohanar created at 2012-02-27 00:35:26
 
 for review purposes
 
@@ -217,7 +217,7 @@ archive/issue_comments_058489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7071#issuecomment-58489",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_058490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7071#issuecomment-58490",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_058491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7071#issuecomment-58491",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -266,16 +266,16 @@ Patch from #12055 needs to be applied
 archive/issue_comments_058492.json:
 ```json
 {
-    "body": "Attachment [trac-12055-SAGELOCAL_BIN.patch](tarball://root/attachments/some-uuid/ticket7071/trac-12055-SAGELOCAL_BIN.patch) by vbraun created at 2012-02-27 01:09:59\n\nI've switched the old ticket #12055 to invalid to not make Jeroen replace the spkg twice. But we still need the patch to the Sage library from there.",
+    "body": "Attachment [trac-12055-SAGELOCAL_BIN.patch](tarball://root/attachments/some-uuid/ticket7071/trac-12055-SAGELOCAL_BIN.patch) by @vbraun created at 2012-02-27 01:09:59\n\nI've switched the old ticket #12055 to invalid to not make Jeroen replace the spkg twice. But we still need the patch to the Sage library from there.",
     "created_at": "2012-02-27T01:09:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7071#issuecomment-58492",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [trac-12055-SAGELOCAL_BIN.patch](tarball://root/attachments/some-uuid/ticket7071/trac-12055-SAGELOCAL_BIN.patch) by vbraun created at 2012-02-27 01:09:59
+Attachment [trac-12055-SAGELOCAL_BIN.patch](tarball://root/attachments/some-uuid/ticket7071/trac-12055-SAGELOCAL_BIN.patch) by @vbraun created at 2012-02-27 01:09:59
 
 I've switched the old ticket #12055 to invalid to not make Jeroen replace the spkg twice. But we still need the patch to the Sage library from there.
 
@@ -334,7 +334,7 @@ archive/issue_comments_058495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7071#issuecomment-58495",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -352,7 +352,7 @@ archive/issue_comments_058496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7071#issuecomment-58496",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -374,7 +374,7 @@ archive/issue_comments_058497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7071#issuecomment-58497",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

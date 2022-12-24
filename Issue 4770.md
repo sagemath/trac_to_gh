@@ -3,7 +3,7 @@
 archive/issues_004770.json:
 ```json
 {
-    "body": "Assignee: malb\n\nThis should work:\n\n\n```\nsage: t = maxima.cputime()\nsage: _ = maxima.de_solve('diff(y,x,2) + 3*x = y', ['x','y'], [1,1,1])\nsage: maxima.cputime(t)\n0.568913\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4770\n\n",
+    "body": "Assignee: @malb\n\nThis should work:\n\n\n```\nsage: t = maxima.cputime()\nsage: _ = maxima.de_solve('diff(y,x,2) + 3*x = y', ['x','y'], [1,1,1])\nsage: maxima.cputime(t)\n0.568913\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4770\n\n",
     "created_at": "2008-12-12T16:34:29Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_004770.json:
     "title": "[with patch, needs review] implement maxima.cputime()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4770",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 This should work:
 
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4770
 archive/issue_comments_036135.json:
 ```json
 {
-    "body": "Attachment [maxima_cputime.patch](tarball://root/attachments/some-uuid/ticket4770/maxima_cputime.patch) by malb created at 2008-12-12 16:34:39",
+    "body": "Attachment [maxima_cputime.patch](tarball://root/attachments/some-uuid/ticket4770/maxima_cputime.patch) by @malb created at 2008-12-12 16:34:39",
     "created_at": "2008-12-12T16:34:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4770#issuecomment-36135",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [maxima_cputime.patch](tarball://root/attachments/some-uuid/ticket4770/maxima_cputime.patch) by malb created at 2008-12-12 16:34:39
+Attachment [maxima_cputime.patch](tarball://root/attachments/some-uuid/ticket4770/maxima_cputime.patch) by @malb created at 2008-12-12 16:34:39
 
 
 
@@ -64,7 +64,7 @@ archive/issue_comments_036136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4770#issuecomment-36136",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_036137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4770#issuecomment-36137",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 

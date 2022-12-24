@@ -14,7 +14,7 @@ archive/issues_001800.json:
     "title": "bug with RealIntervalField / MPFI",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1800",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: jkantor
@@ -135,7 +135,7 @@ archive/issue_comments_011389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1800#issuecomment-11389",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

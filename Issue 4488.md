@@ -3,7 +3,7 @@
 archive/issues_004488.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  mhansen\n\nShould redirect to login page instead of giving an error message.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4488\n\n",
+    "body": "Assignee: boothby\n\nCC:  @mwhansen\n\nShould redirect to login page instead of giving an error message.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4488\n\n",
     "created_at": "2008-11-10T03:28:03Z",
     "labels": [
         "notebook",
@@ -19,7 +19,7 @@ archive/issues_004488.json:
 ```
 Assignee: boothby
 
-CC:  mhansen
+CC:  @mwhansen
 
 Should redirect to login page instead of giving an error message.
 
@@ -111,7 +111,7 @@ archive/issue_comments_033152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4488",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4488#issuecomment-33152",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009683.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mhansen\n\nKeywords: pretty_print, history\n\nAfter using `pretty_print`, the first history variable (`_`) no longer updates.\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: combinat\nsage: 17\n17\nsage: _\n17\nsage: 23\n23\nsage: _\n23\nsage: pretty_print(17)\n<html><span class=\"math\">\\newcommand{\\Bold}[1]{\\mathbf{#1}}17</span></html>\nsage: _\n17\nsage: 23\n23\nsage: _\n17\n```\n\n| Sage Version 4.5.1, Release Date: 2010-07-19                       |\n| Type notebook() for the GUI, and license() for information.        |\nThe relevant function seems to be `pretty_print` in `/sage/misc/latex.py`, but I don't know the right way to fix it. The function and `pretty_print_default` in same file, and the functions `displayhook` and `install` in `/sage/misc/displayhook.py` may also be relevant.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9683\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\nKeywords: pretty_print, history\n\nAfter using `pretty_print`, the first history variable (`_`) no longer updates.\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: combinat\nsage: 17\n17\nsage: _\n17\nsage: 23\n23\nsage: _\n23\nsage: pretty_print(17)\n<html><span class=\"math\">\\newcommand{\\Bold}[1]{\\mathbf{#1}}17</span></html>\nsage: _\n17\nsage: 23\n23\nsage: _\n17\n```\n\n| Sage Version 4.5.1, Release Date: 2010-07-19                       |\n| Type notebook() for the GUI, and license() for information.        |\nThe relevant function seems to be `pretty_print` in `/sage/misc/latex.py`, but I don't know the right way to fix it. The function and `pretty_print_default` in same file, and the functions `displayhook` and `install` in `/sage/misc/displayhook.py` may also be relevant.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9683\n\n",
     "created_at": "2010-08-04T05:05:14Z",
     "labels": [
         "user interface",
@@ -14,12 +14,12 @@ archive/issues_009683.json:
     "title": "pretty_print clobbers _ (history)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9683",
-    "user": "mguaypaq"
+    "user": "@mguaypaq"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  mhansen
+CC:  @mwhansen
 
 Keywords: pretty_print, history
 
@@ -69,7 +69,7 @@ archive/issue_comments_094131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9683#issuecomment-94131",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
@@ -97,16 +97,16 @@ In the  ipython `displayhook` it checks to see if underscore was set explicitly 
 archive/issue_comments_094132.json:
 ```json
 {
-    "body": "Attachment [trac_9683.patch](tarball://root/attachments/some-uuid/ticket9683/trac_9683.patch) by mhansen created at 2013-07-24 16:09:34\n\nI've posted a patch.  It doesn't have a test for this problem. I could make one, but it's slightly annoying since you have to do everything indirectly through an IPython shell object.",
+    "body": "Attachment [trac_9683.patch](tarball://root/attachments/some-uuid/ticket9683/trac_9683.patch) by @mwhansen created at 2013-07-24 16:09:34\n\nI've posted a patch.  It doesn't have a test for this problem. I could make one, but it's slightly annoying since you have to do everything indirectly through an IPython shell object.",
     "created_at": "2013-07-24T16:09:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9683#issuecomment-94132",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_9683.patch](tarball://root/attachments/some-uuid/ticket9683/trac_9683.patch) by mhansen created at 2013-07-24 16:09:34
+Attachment [trac_9683.patch](tarball://root/attachments/some-uuid/ticket9683/trac_9683.patch) by @mwhansen created at 2013-07-24 16:09:34
 
 I've posted a patch.  It doesn't have a test for this problem. I could make one, but it's slightly annoying since you have to do everything indirectly through an IPython shell object.
 
@@ -122,7 +122,7 @@ archive/issue_comments_094133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9683#issuecomment-94133",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_094134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9683#issuecomment-94134",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_094135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9683#issuecomment-94135",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_094136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9683#issuecomment-94136",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_094137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9683#issuecomment-94137",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

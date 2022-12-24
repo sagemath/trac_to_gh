@@ -3,7 +3,7 @@
 archive/issues_006860.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: dimension_cusp_forms(Gamma(11))\n[hangs forever]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6860\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: dimension_cusp_forms(Gamma(11))\n[hangs forever]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6860\n\n",
     "created_at": "2009-09-02T02:22:05Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_006860.json:
     "title": "dimensions of modular forms spaces for Gamma(N) is busted / not implemented",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6860",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -42,7 +42,7 @@ archive/issue_comments_056579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6860",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6860#issuecomment-56579",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -60,7 +60,7 @@ archive/issue_comments_056580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6860",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6860#issuecomment-56580",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_056581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6860",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6860#issuecomment-56581",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_056582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6860",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6860#issuecomment-56582",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_056583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6860",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6860#issuecomment-56583",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_056584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6860",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6860#issuecomment-56584",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_056585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6860",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6860#issuecomment-56585",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_056586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6860",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6860#issuecomment-56586",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_056587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6860",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6860#issuecomment-56587",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_056588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6860",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6860#issuecomment-56588",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

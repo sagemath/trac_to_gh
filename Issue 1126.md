@@ -3,7 +3,7 @@
 archive/issues_001126.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n> \n> ***\n> x86_64-Linux\n> ***\n> While compiling libfplll-2.1-20071024, I get\n> \n> g++ -shared -nostdlib /usr/lib/../lib64/crti.o\n> /usr/local/gcc-4.2.2/x86_64-Linux/lib/gcc/x86_64-unknown-linux-gnu/4.2.2/crtbeginS.o\n>  .libs/fplll.o  -Wl,--rpath\n> -Wl,/usr/local/gcc-4.2.2/x86_64-Linux/lib/../lib64 -Wl,--rpath\n> -Wl,/usr/local/gcc-4.2.2/x86_64-Linux/lib/../lib64 -lmpfr -lgmp\n> -L/usr/local/gcc-4.2.2/x86_64-Linux/lib/gcc/x86_64-unknown-linux-gnu/4.2.2\n> -L/usr/local/gcc-4.2.2/x86_64-Linux/lib/gcc/x86_64-unknown-linux-gnu/4.2.2/../../../../lib64\n> -L/lib/../lib64 -L/usr/lib/../lib64\n> -L/home/kate/sage/sage-2.8.12-x86_64-Linux/local/lib\n> -L/usr/local/gcc-4.2.2/x86_64-Linux/lib/gcc/x86_64-unknown-linux-gnu/4.2.2/../../..\n> /usr/local/gcc-4.2.2/x86_64-Linux/lib/../lib64/libstdc++.so -lm -lc\n> -lgcc_s /usr/local/gcc-4.2.2/x86_64-Linux/lib/gcc/x86_64-unknown-linux-gnu/4.2.2/crtendS.o\n> /usr/lib/../lib64/crtn.o  -Wl,-soname -Wl,libfplll.so.0 -o\n> .libs/libfplll.so.0.0.0\n> /usr/bin/ld: /usr/lib/../lib64/libmpfr.a(exceptions.o): relocation\n> R_X86_64_32 against `a local symbol' can not be used when making a\n> shared object; recompile with -fPIC\n> /usr/lib/../lib64/libmpfr.a: could not read symbols: Bad value\n> \n> Why is Sage trying to use libmpfr.a out of /usr/lib?  Should it not be\n> using the version\n> in [sage]/local/lib?\n\nI agree.  Note that libfpll is a brand new package in Sage (it does very fast LLL reduction,\nso is quite important), but it hasn't been as widely tested as other components of Sage. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1126\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n> \n> ***\n> x86_64-Linux\n> ***\n> While compiling libfplll-2.1-20071024, I get\n> \n> g++ -shared -nostdlib /usr/lib/../lib64/crti.o\n> /usr/local/gcc-4.2.2/x86_64-Linux/lib/gcc/x86_64-unknown-linux-gnu/4.2.2/crtbeginS.o\n>  .libs/fplll.o  -Wl,--rpath\n> -Wl,/usr/local/gcc-4.2.2/x86_64-Linux/lib/../lib64 -Wl,--rpath\n> -Wl,/usr/local/gcc-4.2.2/x86_64-Linux/lib/../lib64 -lmpfr -lgmp\n> -L/usr/local/gcc-4.2.2/x86_64-Linux/lib/gcc/x86_64-unknown-linux-gnu/4.2.2\n> -L/usr/local/gcc-4.2.2/x86_64-Linux/lib/gcc/x86_64-unknown-linux-gnu/4.2.2/../../../../lib64\n> -L/lib/../lib64 -L/usr/lib/../lib64\n> -L/home/kate/sage/sage-2.8.12-x86_64-Linux/local/lib\n> -L/usr/local/gcc-4.2.2/x86_64-Linux/lib/gcc/x86_64-unknown-linux-gnu/4.2.2/../../..\n> /usr/local/gcc-4.2.2/x86_64-Linux/lib/../lib64/libstdc++.so -lm -lc\n> -lgcc_s /usr/local/gcc-4.2.2/x86_64-Linux/lib/gcc/x86_64-unknown-linux-gnu/4.2.2/crtendS.o\n> /usr/lib/../lib64/crtn.o  -Wl,-soname -Wl,libfplll.so.0 -o\n> .libs/libfplll.so.0.0.0\n> /usr/bin/ld: /usr/lib/../lib64/libmpfr.a(exceptions.o): relocation\n> R_X86_64_32 against `a local symbol' can not be used when making a\n> shared object; recompile with -fPIC\n> /usr/lib/../lib64/libmpfr.a: could not read symbols: Bad value\n> \n> Why is Sage trying to use libmpfr.a out of /usr/lib?  Should it not be\n> using the version\n> in [sage]/local/lib?\n\nI agree.  Note that libfpll is a brand new package in Sage (it does very fast LLL reduction,\nso is quite important), but it hasn't been as widely tested as other components of Sage. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1126\n\n",
     "created_at": "2007-11-07T19:07:40Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_001126.json:
     "title": "building of fplll is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1126",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -84,7 +84,7 @@ Changing status from new to assigned.
 archive/issue_comments_006802.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2007-11-07T23:15:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1126",
     "type": "issue_comment",
@@ -93,7 +93,7 @@ archive/issue_comments_006802.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 
@@ -153,7 +153,7 @@ archive/issue_comments_006805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1126",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1126#issuecomment-6805",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

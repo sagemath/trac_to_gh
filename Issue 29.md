@@ -14,7 +14,7 @@ archive/issues_000029.json:
     "title": "implement len for elliptic curve over finite field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/29",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -84,7 +84,7 @@ archive/issue_comments_000204.json:
     "issue": "https://github.com/sagemath/sagetest/issues/29",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/29#issuecomment-204",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_000205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/29",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/29#issuecomment-205",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

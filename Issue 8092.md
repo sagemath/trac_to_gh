@@ -3,7 +3,7 @@
 archive/issues_008092.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  was\n\nFrom the main notebook help page:\n\n   The file `$HOME/.sage/init.sage` is attached on startup if it exists.\n\nBut the file is not `attach`ed --- try evaluating `attached_files()`.  This is a follow-up to #7514.\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/856f02edb25e8781#), [sage-notebook](http://groups.google.com/group/sage-notebook/browse_thread/thread/320d494175d46012).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8092\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\nFrom the main notebook help page:\n\n   The file `$HOME/.sage/init.sage` is attached on startup if it exists.\n\nBut the file is not `attach`ed --- try evaluating `attached_files()`.  This is a follow-up to #7514.\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/856f02edb25e8781#), [sage-notebook](http://groups.google.com/group/sage-notebook/browse_thread/thread/320d494175d46012).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8092\n\n",
     "created_at": "2010-01-27T10:09:52Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_008092.json:
     "title": "init.sage not attached in worksheets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8092",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  was
+CC:  @williamstein
 
 From the main notebook help page:
 
@@ -45,7 +45,7 @@ archive/issue_comments_070906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8092#issuecomment-70906",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_070907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8092#issuecomment-70907",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -76,16 +76,16 @@ Changing status from new to needs_review.
 archive/issue_comments_070908.json:
 ```json
 {
-    "body": "Attachment [trac_8092-init_sage.patch](tarball://root/attachments/some-uuid/ticket8092/trac_8092-init_sage.patch) by mpatel created at 2010-01-27 13:09:54\n\nThe attached patch seems to work for me.\u00a0 `DOT_SAGE/init.sage` is equivalent to `os.environ['SAGE_STARTUP_FILE']` (see `SAGE_LOCAL/bin/ipy_profile_sage.py`).",
+    "body": "Attachment [trac_8092-init_sage.patch](tarball://root/attachments/some-uuid/ticket8092/trac_8092-init_sage.patch) by @qed777 created at 2010-01-27 13:09:54\n\nThe attached patch seems to work for me.\u00a0 `DOT_SAGE/init.sage` is equivalent to `os.environ['SAGE_STARTUP_FILE']` (see `SAGE_LOCAL/bin/ipy_profile_sage.py`).",
     "created_at": "2010-01-27T13:09:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8092#issuecomment-70908",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8092-init_sage.patch](tarball://root/attachments/some-uuid/ticket8092/trac_8092-init_sage.patch) by mpatel created at 2010-01-27 13:09:54
+Attachment [trac_8092-init_sage.patch](tarball://root/attachments/some-uuid/ticket8092/trac_8092-init_sage.patch) by @qed777 created at 2010-01-27 13:09:54
 
 The attached patch seems to work for me.  `DOT_SAGE/init.sage` is equivalent to `os.environ['SAGE_STARTUP_FILE']` (see `SAGE_LOCAL/bin/ipy_profile_sage.py`).
 
@@ -101,7 +101,7 @@ archive/issue_comments_070909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8092#issuecomment-70909",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_070910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8092#issuecomment-70910",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -145,16 +145,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_070911.json:
 ```json
 {
-    "body": "Attachment [trac_8092-init_sage.2.patch](tarball://root/attachments/some-uuid/ticket8092/trac_8092-init_sage.2.patch) by mpatel created at 2010-01-28 01:47:57\n\nFixes Oops!  Replaces previous.",
+    "body": "Attachment [trac_8092-init_sage.2.patch](tarball://root/attachments/some-uuid/ticket8092/trac_8092-init_sage.2.patch) by @qed777 created at 2010-01-28 01:47:57\n\nFixes Oops!  Replaces previous.",
     "created_at": "2010-01-28T01:47:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8092#issuecomment-70911",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8092-init_sage.2.patch](tarball://root/attachments/some-uuid/ticket8092/trac_8092-init_sage.2.patch) by mpatel created at 2010-01-28 01:47:57
+Attachment [trac_8092-init_sage.2.patch](tarball://root/attachments/some-uuid/ticket8092/trac_8092-init_sage.2.patch) by @qed777 created at 2010-01-28 01:47:57
 
 Fixes Oops!  Replaces previous.
 
@@ -170,7 +170,7 @@ archive/issue_comments_070912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8092#issuecomment-70912",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_070913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8092#issuecomment-70913",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_070914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8092#issuecomment-70914",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_070915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8092#issuecomment-70915",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

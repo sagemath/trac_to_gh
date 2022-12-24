@@ -14,7 +14,7 @@ archive/issues_006744.json:
     "title": "[with patch, needs review] install script stores start time of build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6744",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 Assignee: tbd
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6744
 archive/issue_comments_055487.json:
 ```json
 {
-    "body": "Attachment [install_script_stores_start_time.patch](tarball://root/attachments/some-uuid/ticket6744/install_script_stores_start_time.patch) by schilly created at 2009-08-14 10:01:08",
+    "body": "Attachment [install_script_stores_start_time.patch](tarball://root/attachments/some-uuid/ticket6744/install_script_stores_start_time.patch) by @haraldschilly created at 2009-08-14 10:01:08",
     "created_at": "2009-08-14T10:01:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6744#issuecomment-55487",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
-Attachment [install_script_stores_start_time.patch](tarball://root/attachments/some-uuid/ticket6744/install_script_stores_start_time.patch) by schilly created at 2009-08-14 10:01:08
+Attachment [install_script_stores_start_time.patch](tarball://root/attachments/some-uuid/ticket6744/install_script_stores_start_time.patch) by @haraldschilly created at 2009-08-14 10:01:08
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_055489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6744#issuecomment-55489",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_055490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6744#issuecomment-55490",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

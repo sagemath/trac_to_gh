@@ -14,7 +14,7 @@ archive/issues_004783.json:
     "title": "[with patch; needs review] email -- create an \"email\" command, so users can easily notify themselves when their sage programs have completed some task",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4783",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4783
 archive/issue_comments_036266.json:
 ```json
 {
-    "body": "Attachment [trac_4783.patch](tarball://root/attachments/some-uuid/ticket4783/trac_4783.patch) by was created at 2008-12-13 16:25:01",
+    "body": "Attachment [trac_4783.patch](tarball://root/attachments/some-uuid/ticket4783/trac_4783.patch) by @williamstein created at 2008-12-13 16:25:01",
     "created_at": "2008-12-13T16:25:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4783#issuecomment-36266",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4783.patch](tarball://root/attachments/some-uuid/ticket4783/trac_4783.patch) by was created at 2008-12-13 16:25:01
+Attachment [trac_4783.patch](tarball://root/attachments/some-uuid/ticket4783/trac_4783.patch) by @williamstein created at 2008-12-13 16:25:01
 
 
 

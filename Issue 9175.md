@@ -14,7 +14,7 @@ archive/issues_009175.json:
     "title": "cygwin: pari's sea.gp program just segfaults on Cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9175",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -65,7 +65,7 @@ archive/issue_comments_085824.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9175",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9175#issuecomment-85824",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_085825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9175",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9175#issuecomment-85825",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_085826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9175",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9175#issuecomment-85826",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

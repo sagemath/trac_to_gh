@@ -13,7 +13,7 @@ archive/issues_000060.json:
     "title": "notebook cuts output of latex view",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/60",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 Assignee: somebody
@@ -116,7 +116,7 @@ archive/issue_comments_000319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/60",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/60#issuecomment-319",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_000320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/60",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/60#issuecomment-320",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_000321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/60",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/60#issuecomment-321",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

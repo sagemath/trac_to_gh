@@ -3,7 +3,7 @@
 archive/issues_003285.json:
 ```json
 {
-    "body": "Assignee: rlm\n\n\n```\nwas@ubuntu:~/build/sage-3.0.2.rc0$ ./sage -t --gdb devel/sage/sage/coding/binary_code.pyx\nsage -t --gdb devel/sage/sage/coding/binary_code.pyx        ********************************************************************************\nType r at the (gdb) prompt to run the doctests.\nType bt if there is a crash to see a traceback.\n********************************************************************************\nGNU gdb 6.6-debian\nCopyright (C) 2006 Free Software Foundation, Inc.\nGDB is free software, covered by the GNU General Public License, and you are\nwelcome to change it and/or distribute copies of it under certain conditions.\nType \"show copying\" to see the conditions.\nThere is absolutely no warranty for GDB.  Type \"show warranty\" for details.\nThis GDB was configured as \"i486-linux-gnu\"...\nUsing host libthread_db library \"/lib/tls/i686/cmov/libthread_db.so.1\".\n(gdb) r\nStarting program: /home/was/build/sage-3.0.2.rc0/local/bin/python /home/was/build/sage-3.0.2.rc0/tmp/.doctest_binary_code.py\n[Thread debugging using libthread_db enabled]\n[New Thread -1210054448 (LWP 28921)]\n\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread -1210054448 (LWP 28921)]\n0xb7e6699f in ?? () from /lib/tls/i686/cmov/libc.so.6\n(gdb) bt\n#0  0xb7e6699f in ?? () from /lib/tls/i686/cmov/libc.so.6\n#1  0x00000000 in ?? ()\n(gdb) \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3285\n\n",
+    "body": "Assignee: @rlmill\n\n\n```\nwas@ubuntu:~/build/sage-3.0.2.rc0$ ./sage -t --gdb devel/sage/sage/coding/binary_code.pyx\nsage -t --gdb devel/sage/sage/coding/binary_code.pyx        ********************************************************************************\nType r at the (gdb) prompt to run the doctests.\nType bt if there is a crash to see a traceback.\n********************************************************************************\nGNU gdb 6.6-debian\nCopyright (C) 2006 Free Software Foundation, Inc.\nGDB is free software, covered by the GNU General Public License, and you are\nwelcome to change it and/or distribute copies of it under certain conditions.\nType \"show copying\" to see the conditions.\nThere is absolutely no warranty for GDB.  Type \"show warranty\" for details.\nThis GDB was configured as \"i486-linux-gnu\"...\nUsing host libthread_db library \"/lib/tls/i686/cmov/libthread_db.so.1\".\n(gdb) r\nStarting program: /home/was/build/sage-3.0.2.rc0/local/bin/python /home/was/build/sage-3.0.2.rc0/tmp/.doctest_binary_code.py\n[Thread debugging using libthread_db enabled]\n[New Thread -1210054448 (LWP 28921)]\n\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread -1210054448 (LWP 28921)]\n0xb7e6699f in ?? () from /lib/tls/i686/cmov/libc.so.6\n(gdb) bt\n#0  0xb7e6699f in ?? () from /lib/tls/i686/cmov/libc.so.6\n#1  0x00000000 in ?? ()\n(gdb) \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3285\n\n",
     "created_at": "2008-05-23T17:20:39Z",
     "labels": [
         "coding theory",
@@ -14,10 +14,10 @@ archive/issues_003285.json:
     "title": "segfault in binary_code.pyx on 32-bit linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3285",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 
 ```
@@ -413,7 +413,7 @@ archive/issue_comments_022738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3285",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3285#issuecomment-22738",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

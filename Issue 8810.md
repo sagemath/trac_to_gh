@@ -14,7 +14,7 @@ archive/issues_008810.json:
     "title": "Implementation of Stanley symmetric functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8810",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 Assignee: sage-combinat
@@ -75,7 +75,7 @@ archive/issue_comments_080858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8810#issuecomment-80858",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_080859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8810#issuecomment-80859",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_080860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8810#issuecomment-80860",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_080861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8810#issuecomment-80861",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_080864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8810#issuecomment-80864",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_080865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8810#issuecomment-80865",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_080866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8810#issuecomment-80866",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -328,7 +328,7 @@ archive/issue_comments_080869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8810#issuecomment-80869",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -355,7 +355,7 @@ archive/issue_comments_080870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8810#issuecomment-80870",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -419,7 +419,7 @@ archive/issue_comments_080871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8810#issuecomment-80871",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -439,7 +439,7 @@ archive/issue_comments_080872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8810#issuecomment-80872",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -462,7 +462,7 @@ archive/issue_comments_080873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8810#issuecomment-80873",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -475,16 +475,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_080874.json:
 ```json
 {
-    "body": "Attachment [trac_8810_stanley_symmetric_functions-sp-as.2.patch](tarball://root/attachments/some-uuid/ticket8810/trac_8810_stanley_symmetric_functions-sp-as.2.patch) by aschilling created at 2010-06-25 03:14:33\n\nNicolas Thiery did the technical review of this patch.\nThomas Lam did the mathematical review of this patch. His comments are:\n\nAnne,\n\nI dont really know with the code, but I looked at some of the examples\nand I could not find any problem.\n\nThomas\n\nHence I am setting a positive review on this patch.\n\nRelease manager, please merge only:\n\ntrac_8810_stanley_symmetric_functions-sp-as.2.patch",
+    "body": "Attachment [trac_8810_stanley_symmetric_functions-sp-as.2.patch](tarball://root/attachments/some-uuid/ticket8810/trac_8810_stanley_symmetric_functions-sp-as.2.patch) by @anneschilling created at 2010-06-25 03:14:33\n\nNicolas Thiery did the technical review of this patch.\nThomas Lam did the mathematical review of this patch. His comments are:\n\nAnne,\n\nI dont really know with the code, but I looked at some of the examples\nand I could not find any problem.\n\nThomas\n\nHence I am setting a positive review on this patch.\n\nRelease manager, please merge only:\n\ntrac_8810_stanley_symmetric_functions-sp-as.2.patch",
     "created_at": "2010-06-25T03:14:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8810#issuecomment-80874",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
-Attachment [trac_8810_stanley_symmetric_functions-sp-as.2.patch](tarball://root/attachments/some-uuid/ticket8810/trac_8810_stanley_symmetric_functions-sp-as.2.patch) by aschilling created at 2010-06-25 03:14:33
+Attachment [trac_8810_stanley_symmetric_functions-sp-as.2.patch](tarball://root/attachments/some-uuid/ticket8810/trac_8810_stanley_symmetric_functions-sp-as.2.patch) by @anneschilling created at 2010-06-25 03:14:33
 
 Nicolas Thiery did the technical review of this patch.
 Thomas Lam did the mathematical review of this patch. His comments are:
@@ -509,16 +509,16 @@ trac_8810_stanley_symmetric_functions-sp-as.2.patch
 archive/issue_comments_080875.json:
 ```json
 {
-    "body": "Attachment [trac_8810_stanley_symmetric_functions-untabified.patch](tarball://root/attachments/some-uuid/ticket8810/trac_8810_stanley_symmetric_functions-untabified.patch) by davidloeffler created at 2010-06-30 17:16:43\n\nVersion without tabs - apply only this patch",
+    "body": "Attachment [trac_8810_stanley_symmetric_functions-untabified.patch](tarball://root/attachments/some-uuid/ticket8810/trac_8810_stanley_symmetric_functions-untabified.patch) by @loefflerd created at 2010-06-30 17:16:43\n\nVersion without tabs - apply only this patch",
     "created_at": "2010-06-30T17:16:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8810#issuecomment-80875",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_8810_stanley_symmetric_functions-untabified.patch](tarball://root/attachments/some-uuid/ticket8810/trac_8810_stanley_symmetric_functions-untabified.patch) by davidloeffler created at 2010-06-30 17:16:43
+Attachment [trac_8810_stanley_symmetric_functions-untabified.patch](tarball://root/attachments/some-uuid/ticket8810/trac_8810_stanley_symmetric_functions-untabified.patch) by @loefflerd created at 2010-06-30 17:16:43
 
 Version without tabs - apply only this patch
 
@@ -534,7 +534,7 @@ archive/issue_comments_080876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8810#issuecomment-80876",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -552,7 +552,7 @@ archive/issue_comments_080877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8810#issuecomment-80877",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -572,7 +572,7 @@ archive/issue_comments_080878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8810#issuecomment-80878",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -590,7 +590,7 @@ archive/issue_comments_080879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8810#issuecomment-80879",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -611,7 +611,7 @@ archive/issue_comments_080880.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8810#issuecomment-80880",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -629,7 +629,7 @@ archive/issue_comments_080881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8810#issuecomment-80881",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -653,7 +653,7 @@ archive/issue_comments_080882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8810#issuecomment-80882",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -671,7 +671,7 @@ archive/issue_comments_080883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8810#issuecomment-80883",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -684,16 +684,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_080884.json:
 ```json
 {
-    "body": "Attachment [trac_8810_stanley_symmetric_functions-docfix.patch](tarball://root/attachments/some-uuid/ticket8810/trac_8810_stanley_symmetric_functions-docfix.patch) by mpatel created at 2010-07-21 01:40:08",
+    "body": "Attachment [trac_8810_stanley_symmetric_functions-docfix.patch](tarball://root/attachments/some-uuid/ticket8810/trac_8810_stanley_symmetric_functions-docfix.patch) by @qed777 created at 2010-07-21 01:40:08",
     "created_at": "2010-07-21T01:40:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8810#issuecomment-80884",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8810_stanley_symmetric_functions-docfix.patch](tarball://root/attachments/some-uuid/ticket8810/trac_8810_stanley_symmetric_functions-docfix.patch) by mpatel created at 2010-07-21 01:40:08
+Attachment [trac_8810_stanley_symmetric_functions-docfix.patch](tarball://root/attachments/some-uuid/ticket8810/trac_8810_stanley_symmetric_functions-docfix.patch) by @qed777 created at 2010-07-21 01:40:08
 
 
 
@@ -707,7 +707,7 @@ archive/issue_comments_080885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8810#issuecomment-80885",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -725,7 +725,7 @@ archive/issue_comments_080886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8810#issuecomment-80886",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -743,7 +743,7 @@ archive/issue_comments_080887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8810#issuecomment-80887",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

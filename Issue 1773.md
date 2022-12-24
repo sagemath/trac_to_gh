@@ -3,7 +3,7 @@
 archive/issues_001773.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kcrisman jondo vbraun slelievre mkoeppe eviatarbach rws\n\n\n```\nOn 1/13/08, Hector Villafuerte <> wrote:\n> \n> I defined a piecewise function (specifically, a triangular wave) like this:\n> \n> sage: f1(x) = -abs(x) + 1\n> sage: f2(x) = abs(x - 2) - 1\n> sage: tri_wave = piecewise([ [(-1,1), f1], [(1,3), f2]])\n> \n> One can plot it and it looks very nice:\n> \n> sage: tri_wave.plot()\n> \n> But while calculating this integral I get \"ValueError: Value not\n> defined outside of domain.\"\n> \n> sage: integrate(tri_wave(x)^2, x, -1, 3)\n> \n> Is there a way to integrate piecewise-defined functions?\n> As always, thanks for your help,\n\nThis is clearly broken.  As a band-aide, you can at least\nnumerically integrate as follows:\n\nsage: integral_numerical(lambda x: tri_wave(x)^2, -1, 3)\n(1.3333333333333333, 1.4765966227514582e-14)\n\nThe first output (1.3333...) is the answer, and the second is an error bound.\n\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1773\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman @jondo @vbraun @slel @mkoeppe @eviatarbach @rwst\n\n\n```\nOn 1/13/08, Hector Villafuerte <> wrote:\n> \n> I defined a piecewise function (specifically, a triangular wave) like this:\n> \n> sage: f1(x) = -abs(x) + 1\n> sage: f2(x) = abs(x - 2) - 1\n> sage: tri_wave = piecewise([ [(-1,1), f1], [(1,3), f2]])\n> \n> One can plot it and it looks very nice:\n> \n> sage: tri_wave.plot()\n> \n> But while calculating this integral I get \"ValueError: Value not\n> defined outside of domain.\"\n> \n> sage: integrate(tri_wave(x)^2, x, -1, 3)\n> \n> Is there a way to integrate piecewise-defined functions?\n> As always, thanks for your help,\n\nThis is clearly broken.  As a band-aide, you can at least\nnumerically integrate as follows:\n\nsage: integral_numerical(lambda x: tri_wave(x)^2, -1, 3)\n(1.3333333333333333, 1.4765966227514582e-14)\n\nThe first output (1.3333...) is the answer, and the second is an error bound.\n\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1773\n\n",
     "created_at": "2008-01-14T06:02:44Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_001773.json:
     "title": "piecewise functions and integration / arithmetic do not play well together",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1773",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kcrisman jondo vbraun slelievre mkoeppe eviatarbach rws
+CC:  @kcrisman @jondo @vbraun @slel @mkoeppe @eviatarbach @rwst
 
 
 ```
@@ -66,16 +66,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1773
 archive/issue_comments_011210.json:
 ```json
 {
-    "body": "Changing assignee from was to gfurnish.",
+    "body": "Changing assignee from @williamstein to @garyfurnish.",
     "created_at": "2008-03-16T20:11:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1773#issuecomment-11210",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from was to gfurnish.
+Changing assignee from @williamstein to @garyfurnish.
 
 
 
@@ -89,7 +89,7 @@ archive/issue_comments_011211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1773#issuecomment-11211",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_011212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1773#issuecomment-11212",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_011213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1773#issuecomment-11213",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_011214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1773#issuecomment-11214",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_011215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1773#issuecomment-11215",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_011216.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1773#issuecomment-11216",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_011217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1773#issuecomment-11217",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -363,7 +363,7 @@ archive/issue_comments_011218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1773#issuecomment-11218",
-    "user": "mforets"
+    "user": "@mforets"
 }
 ```
 
@@ -415,7 +415,7 @@ archive/issue_comments_011219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1773#issuecomment-11219",
-    "user": "mforets"
+    "user": "@mforets"
 }
 ```
 
@@ -433,7 +433,7 @@ archive/issue_comments_011220.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1773#issuecomment-11220",
-    "user": "mforets"
+    "user": "@mforets"
 }
 ```
 
@@ -462,7 +462,7 @@ archive/issue_comments_011221.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1773#issuecomment-11221",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -510,7 +510,7 @@ archive/issue_comments_011223.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1773#issuecomment-11223",
-    "user": "mforets"
+    "user": "@mforets"
 }
 ```
 
@@ -541,7 +541,7 @@ archive/issue_comments_011224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1773#issuecomment-11224",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -559,7 +559,7 @@ archive/issue_comments_011225.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1773#issuecomment-11225",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -595,7 +595,7 @@ archive/issue_comments_011227.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1773#issuecomment-11227",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -613,7 +613,7 @@ archive/issue_comments_011228.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1773#issuecomment-11228",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -631,7 +631,7 @@ archive/issue_comments_011229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1773#issuecomment-11229",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -649,7 +649,7 @@ archive/issue_comments_011230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1773#issuecomment-11230",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -667,7 +667,7 @@ archive/issue_comments_011231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1773#issuecomment-11231",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008109.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nThis should fasten polynomial arithmetic over finite fields of small characteristic.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8109\n\n",
+    "body": "Assignee: @aghitza\n\nThis should fasten polynomial arithmetic over finite fields of small characteristic.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8109\n\n",
     "created_at": "2010-01-28T08:02:42Z",
     "labels": [
         "algebra",
@@ -17,7 +17,7 @@ archive/issues_008109.json:
     "user": "ylchapuy"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 This should fasten polynomial arithmetic over finite fields of small characteristic.
 
@@ -216,7 +216,7 @@ archive/issue_comments_071182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8109#issuecomment-71182",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_071184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8109#issuecomment-71184",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -389,7 +389,7 @@ archive/issue_comments_071191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8109#issuecomment-71191",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -446,7 +446,7 @@ archive/issue_comments_071192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8109#issuecomment-71192",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

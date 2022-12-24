@@ -3,7 +3,7 @@
 archive/issues_009940.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nWith the attached patch multinomial_coefficients(m,n) becomes faster\nthan the unpatched version as m increases\n\nSage-4.5.1\nsage: %timeit w = multinomial_coefficients(int(20),int(5))\n5 loops, best of 3: 4.91 s per loop\n\nwith patch:\nsage: %timeit w = multinomial_coefficients(int(20),int(5))\n5 loops, best of 3: 1.05 s per loop\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9941\n\n",
+    "body": "Assignee: @aghitza\n\nWith the attached patch multinomial_coefficients(m,n) becomes faster\nthan the unpatched version as m increases\n\nSage-4.5.1\nsage: %timeit w = multinomial_coefficients(int(20),int(5))\n5 loops, best of 3: 4.91 s per loop\n\nwith patch:\nsage: %timeit w = multinomial_coefficients(int(20),int(5))\n5 loops, best of 3: 1.05 s per loop\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9941\n\n",
     "created_at": "2010-09-18T15:43:36Z",
     "labels": [
         "basic arithmetic",
@@ -17,7 +17,7 @@ archive/issues_009940.json:
     "user": "pernici"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 With the attached patch multinomial_coefficients(m,n) becomes faster
 than the unpatched version as m increases
@@ -303,7 +303,7 @@ archive/issue_comments_098983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9940",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9940#issuecomment-98983",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -321,7 +321,7 @@ archive/issue_comments_098984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9940",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9940#issuecomment-98984",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -433,7 +433,7 @@ archive/issue_comments_098990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9940",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9940#issuecomment-98990",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

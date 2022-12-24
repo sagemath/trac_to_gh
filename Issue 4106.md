@@ -14,7 +14,7 @@ archive/issues_004106.json:
     "title": "error coercing symbolic variable into polynomial ring modulo 4 (but not mod 3)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4106",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -72,16 +72,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4106
 archive/issue_comments_029736.json:
 ```json
 {
-    "body": "Attachment [trac4106-coerce_symbolic_x_into_poly.patch](tarball://root/attachments/some-uuid/ticket4106/trac4106-coerce_symbolic_x_into_poly.patch) by AlexGhitza created at 2008-10-04 09:48:35\n\nSee the fairly trivial patch attached.",
+    "body": "Attachment [trac4106-coerce_symbolic_x_into_poly.patch](tarball://root/attachments/some-uuid/ticket4106/trac4106-coerce_symbolic_x_into_poly.patch) by @aghitza created at 2008-10-04 09:48:35\n\nSee the fairly trivial patch attached.",
     "created_at": "2008-10-04T09:48:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4106#issuecomment-29736",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac4106-coerce_symbolic_x_into_poly.patch](tarball://root/attachments/some-uuid/ticket4106/trac4106-coerce_symbolic_x_into_poly.patch) by AlexGhitza created at 2008-10-04 09:48:35
+Attachment [trac4106-coerce_symbolic_x_into_poly.patch](tarball://root/attachments/some-uuid/ticket4106/trac4106-coerce_symbolic_x_into_poly.patch) by @aghitza created at 2008-10-04 09:48:35
 
 See the fairly trivial patch attached.
 
@@ -97,7 +97,7 @@ archive/issue_comments_029737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4106#issuecomment-29737",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_029738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4106#issuecomment-29738",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

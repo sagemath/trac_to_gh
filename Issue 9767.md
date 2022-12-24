@@ -3,7 +3,7 @@
 archive/issues_009767.json:
 ```json
 {
-    "body": "Assignee: AlexanderDreyer\n\nCC:  polybori malb wjp mvngu\n\nIn #8830 wqe worked around PolyBoRi's broken dynamic libraries by removing them after build, hence using the static ones instead. The problem was caused by improper handling of a global variable which was fixed for upcoming PolyBoRi 0.7.\n\nThe package at http://sage.math.washington.edu/home/dreyer/pb/polybori-0.6.4.p5.spkg backports this fix and reintroduces the dynamic libraries. The spkg is based on #9717 and assumes its sage-library patch to be applied. It installs, runs and passed testall on boxen.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9768\n\n",
+    "body": "Assignee: @alexanderdreyer\n\nCC:  polybori @malb @wjp mvngu\n\nIn #8830 wqe worked around PolyBoRi's broken dynamic libraries by removing them after build, hence using the static ones instead. The problem was caused by improper handling of a global variable which was fixed for upcoming PolyBoRi 0.7.\n\nThe package at http://sage.math.washington.edu/home/dreyer/pb/polybori-0.6.4.p5.spkg backports this fix and reintroduces the dynamic libraries. The spkg is based on #9717 and assumes its sage-library patch to be applied. It installs, runs and passed testall on boxen.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9768\n\n",
     "created_at": "2010-08-19T20:17:16Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_009767.json:
     "title": "Fix PolyBoRi's broken dynamic libraries",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9767",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
-Assignee: AlexanderDreyer
+Assignee: @alexanderdreyer
 
-CC:  polybori malb wjp mvngu
+CC:  polybori @malb @wjp mvngu
 
 In #8830 wqe worked around PolyBoRi's broken dynamic libraries by removing them after build, hence using the static ones instead. The problem was caused by improper handling of a global variable which was fixed for upcoming PolyBoRi 0.7.
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9768
 archive/issue_comments_095710.json:
 ```json
 {
-    "body": "Attachment [polybori-0.6.4.p5.spkg.patch](tarball://root/attachments/some-uuid/ticket9768/polybori-0.6.4.p5.spkg.patch) by AlexanderDreyer created at 2010-08-19 20:25:51\n\nDiffs of the new package",
+    "body": "Attachment [polybori-0.6.4.p5.spkg.patch](tarball://root/attachments/some-uuid/ticket9768/polybori-0.6.4.p5.spkg.patch) by @alexanderdreyer created at 2010-08-19 20:25:51\n\nDiffs of the new package",
     "created_at": "2010-08-19T20:25:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9767#issuecomment-95710",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
-Attachment [polybori-0.6.4.p5.spkg.patch](tarball://root/attachments/some-uuid/ticket9768/polybori-0.6.4.p5.spkg.patch) by AlexanderDreyer created at 2010-08-19 20:25:51
+Attachment [polybori-0.6.4.p5.spkg.patch](tarball://root/attachments/some-uuid/ticket9768/polybori-0.6.4.p5.spkg.patch) by @alexanderdreyer created at 2010-08-19 20:25:51
 
 Diffs of the new package
 
@@ -61,7 +61,7 @@ archive/issue_comments_095711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9767#issuecomment-95711",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_095712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9767#issuecomment-95712",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_095713.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9767#issuecomment-95713",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_095714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9767#issuecomment-95714",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_095715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9767#issuecomment-95715",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_095716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9767#issuecomment-95716",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_095717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9767#issuecomment-95717",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_095718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9767#issuecomment-95718",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

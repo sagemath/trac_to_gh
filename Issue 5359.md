@@ -14,7 +14,7 @@ archive/issues_005359.json:
     "title": "Block matrix viewing is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5359",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: cwitty
@@ -91,7 +91,7 @@ archive/issue_comments_041288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5359#issuecomment-41288",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -108,16 +108,16 @@ Any ideas on what to do in the notebook?
 archive/issue_comments_041289.json:
 ```json
 {
-    "body": "Attachment [5359.patch](tarball://root/attachments/some-uuid/ticket5359/5359.patch) by jhpalmieri created at 2009-02-24 20:00:18\n\n(will have to be rebased against sage 3.4)",
+    "body": "Attachment [5359.patch](tarball://root/attachments/some-uuid/ticket5359/5359.patch) by @jhpalmieri created at 2009-02-24 20:00:18\n\n(will have to be rebased against sage 3.4)",
     "created_at": "2009-02-24T20:00:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5359#issuecomment-41289",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [5359.patch](tarball://root/attachments/some-uuid/ticket5359/5359.patch) by jhpalmieri created at 2009-02-24 20:00:18
+Attachment [5359.patch](tarball://root/attachments/some-uuid/ticket5359/5359.patch) by @jhpalmieri created at 2009-02-24 20:00:18
 
 (will have to be rebased against sage 3.4)
 
@@ -133,7 +133,7 @@ archive/issue_comments_041290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5359#issuecomment-41290",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_041291.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5359#issuecomment-41291",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_041292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5359#issuecomment-41292",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -207,16 +207,16 @@ Changing status from new to assigned.
 archive/issue_comments_041293.json:
 ```json
 {
-    "body": "Changing assignee from cwitty to jhpalmieri.",
+    "body": "Changing assignee from cwitty to @jhpalmieri.",
     "created_at": "2009-03-05T20:59:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5359#issuecomment-41293",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Changing assignee from cwitty to jhpalmieri.
+Changing assignee from cwitty to @jhpalmieri.
 
 
 
@@ -230,7 +230,7 @@ archive/issue_comments_041294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5359#issuecomment-41294",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -243,16 +243,16 @@ rebased against 3.4; apply only this patch
 archive/issue_comments_041295.json:
 ```json
 {
-    "body": "Attachment [5359-new.patch](tarball://root/attachments/some-uuid/ticket5359/5359-new.patch) by robertwb created at 2009-03-16 23:56:43\n\nI think your solution for block matrices in the notebook is a good idea, at least until jsmath supports the standard way.",
+    "body": "Attachment [5359-new.patch](tarball://root/attachments/some-uuid/ticket5359/5359-new.patch) by @robertwb created at 2009-03-16 23:56:43\n\nI think your solution for block matrices in the notebook is a good idea, at least until jsmath supports the standard way.",
     "created_at": "2009-03-16T23:56:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5359#issuecomment-41295",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5359-new.patch](tarball://root/attachments/some-uuid/ticket5359/5359-new.patch) by robertwb created at 2009-03-16 23:56:43
+Attachment [5359-new.patch](tarball://root/attachments/some-uuid/ticket5359/5359-new.patch) by @robertwb created at 2009-03-16 23:56:43
 
 I think your solution for block matrices in the notebook is a good idea, at least until jsmath supports the standard way.
 

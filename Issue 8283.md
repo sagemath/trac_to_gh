@@ -14,7 +14,7 @@ archive/issues_008283.json:
     "title": "A better Carmichael lambda function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8283",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 Assignee: mvngu
@@ -129,7 +129,7 @@ archive/issue_comments_073336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8283#issuecomment-73336",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_073339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8283#issuecomment-73339",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_073340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8283#issuecomment-73340",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_073342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8283#issuecomment-73342",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_073343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8283#issuecomment-73343",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

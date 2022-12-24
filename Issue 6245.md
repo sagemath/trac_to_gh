@@ -3,7 +3,7 @@
 archive/issues_006245.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  cwitty hivert mhansen kcrisman\n\nIt would be nice to incorporate the code developed in http://groups.google.com/group/sage-devel/browse_thread/thread/100de89e7d402134/fe89570b403344ae (and in the same spirit as the backslash operator).  An example of the final developed code is at http://sagenb.org/home/pub/565.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6245\n\n",
+    "body": "Assignee: cwitty\n\nCC:  cwitty @hivert @mwhansen @kcrisman\n\nIt would be nice to incorporate the code developed in http://groups.google.com/group/sage-devel/browse_thread/thread/100de89e7d402134/fe89570b403344ae (and in the same spirit as the backslash operator).  An example of the final developed code is at http://sagenb.org/home/pub/565.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6245\n\n",
     "created_at": "2009-06-08T11:46:12Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_006245.json:
     "title": "make a custom infix operator decorator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6245",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: cwitty
 
-CC:  cwitty hivert mhansen kcrisman
+CC:  cwitty @hivert @mwhansen @kcrisman
 
 It would be nice to incorporate the code developed in http://groups.google.com/group/sage-devel/browse_thread/thread/100de89e7d402134/fe89570b403344ae (and in the same spirit as the backslash operator).  An example of the final developed code is at http://sagenb.org/home/pub/565.
 
@@ -39,7 +39,7 @@ archive/issue_comments_049871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6245#issuecomment-49871",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_049872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6245#issuecomment-49872",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_049873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6245#issuecomment-49873",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_049874.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6245#issuecomment-49874",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_049875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6245#issuecomment-49875",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_049876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6245#issuecomment-49876",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_049878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6245#issuecomment-49878",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -286,16 +286,16 @@ rebased
 archive/issue_comments_049879.json:
 ```json
 {
-    "body": "Attachment [trac-6245-infix-decorator.patch](tarball://root/attachments/some-uuid/ticket6245/trac-6245-infix-decorator.patch) by jason created at 2010-04-15 03:50:57\n\nI rebased the patch to Sage 4.3.4.  Can you look at it again?",
+    "body": "Attachment [trac-6245-infix-decorator.patch](tarball://root/attachments/some-uuid/ticket6245/trac-6245-infix-decorator.patch) by @jasongrout created at 2010-04-15 03:50:57\n\nI rebased the patch to Sage 4.3.4.  Can you look at it again?",
     "created_at": "2010-04-15T03:50:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6245#issuecomment-49879",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-6245-infix-decorator.patch](tarball://root/attachments/some-uuid/ticket6245/trac-6245-infix-decorator.patch) by jason created at 2010-04-15 03:50:57
+Attachment [trac-6245-infix-decorator.patch](tarball://root/attachments/some-uuid/ticket6245/trac-6245-infix-decorator.patch) by @jasongrout created at 2010-04-15 03:50:57
 
 I rebased the patch to Sage 4.3.4.  Can you look at it again?
 
@@ -468,7 +468,7 @@ archive/issue_comments_049883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6245#issuecomment-49883",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -601,7 +601,7 @@ archive/issue_comments_049886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6245#issuecomment-49886",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -619,7 +619,7 @@ archive/issue_comments_049887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6245#issuecomment-49887",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

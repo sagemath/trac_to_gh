@@ -14,7 +14,7 @@ archive/issues_002090.json:
     "title": "basic univariate polynomial efficiency issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2090",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -68,7 +68,7 @@ archive/issue_comments_013525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2090",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2090#issuecomment-13525",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_013526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2090",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2090#issuecomment-13526",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -4,7 +4,7 @@ segfault with new cython & -ba
 archive/issues_003035.json:
 ```json
 {
-    "body": "Assignee: was\n\ncalculus/equations.py segfaults on test with patched cython and -ba.  However it only segfaults most of the time on automated testing, and does not segfault for gdb, valgrind, etc.\n\nThe test in question is \n\n```\n    sage: loads(dumps(eqn)) == eqn \n    True\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3035\n\n",
+    "body": "Assignee: @williamstein\n\ncalculus/equations.py segfaults on test with patched cython and -ba.  However it only segfaults most of the time on automated testing, and does not segfault for gdb, valgrind, etc.\n\nThe test in question is \n\n```\n    sage: loads(dumps(eqn)) == eqn \n    True\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3035\n\n",
     "created_at": "2008-04-26T23:48:15Z",
     "labels": [
         "calculus",
@@ -15,10 +15,10 @@ archive/issues_003035.json:
     "title": "calculus/equations.py\nsegfault with new cython & -ba",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3035",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 calculus/equations.py segfaults on test with patched cython and -ba.  However it only segfaults most of the time on automated testing, and does not segfault for gdb, valgrind, etc.
 
@@ -46,7 +46,7 @@ archive/issue_comments_020886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3035",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3035#issuecomment-20886",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_020887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3035",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3035#issuecomment-20887",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_020888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3035",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3035#issuecomment-20888",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_020889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3035",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3035#issuecomment-20889",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_020890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3035",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3035#issuecomment-20890",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_020891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3035",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3035#issuecomment-20891",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_020892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3035",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3035#issuecomment-20892",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_020893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3035",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3035#issuecomment-20893",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_020894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3035",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3035#issuecomment-20894",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_020895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3035",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3035#issuecomment-20895",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

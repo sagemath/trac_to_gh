@@ -3,7 +3,7 @@
 archive/issues_007764.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nA block to take care of when the 4.3.1 merge cycle starts is that mhansen did some merging in I think\n\n   /scratch/mhansen/release/4.3/4.3.rc1\n\nwhich might not have been reflected in the final 4.3 release.  This could have resulted in tickets marked as closed when they weren't closed. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7764\n\n",
+    "body": "Assignee: @mwhansen\n\nA block to take care of when the 4.3.1 merge cycle starts is that mhansen did some merging in I think\n\n   /scratch/mhansen/release/4.3/4.3.rc1\n\nwhich might not have been reflected in the final 4.3 release.  This could have resulted in tickets marked as closed when they weren't closed. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7764\n\n",
     "created_at": "2009-12-24T20:19:11Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_007764.json:
     "title": "mhansen's 4.3.rc1 merge tree may have got ahead of wstein's",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7764",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 A block to take care of when the 4.3.1 merge cycle starts is that mhansen did some merging in I think
 
@@ -41,7 +41,7 @@ archive/issue_comments_066893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7764#issuecomment-66893",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_066894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7764#issuecomment-66894",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

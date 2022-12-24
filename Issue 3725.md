@@ -3,7 +3,7 @@
 archive/issues_003725.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  rpw\n\nAdd documentation what the variables in the SR equation systems stand for.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3725\n\n",
+    "body": "Assignee: @malb\n\nCC:  rpw\n\nAdd documentation what the variables in the SR equation systems stand for.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3725\n\n",
     "created_at": "2008-07-25T12:10:06Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_003725.json:
     "title": "[with patch, needs trivial review] tiny doc improvement for mq.SR",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3725",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 CC:  rpw
 

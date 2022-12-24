@@ -3,7 +3,7 @@
 archive/issues_004422.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  mjo dimpase isuruf\n\nSympow can use additional data files, but we do not install them. So create an optional spkg that recreates those data since they might be dependent on the big size as well as the endianess of the box. To get various optional doctests to pass run \n\n```\nsympow -new_data 2\nsympow -new_data 1d0\nsympow -new_data 1d1\nsympow -new_data 1d2\n```\n\nfrom $SAGE_LOCAL. There might be other useful sets of data to create. We should ping Mark Watkins about the issue.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4422\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @orlitzky @dimpase @isuruf\n\nSympow can use additional data files, but we do not install them. So create an optional spkg that recreates those data since they might be dependent on the big size as well as the endianess of the box. To get various optional doctests to pass run \n\n```\nsympow -new_data 2\nsympow -new_data 1d0\nsympow -new_data 1d1\nsympow -new_data 1d2\n```\n\nfrom $SAGE_LOCAL. There might be other useful sets of data to create. We should ping Mark Watkins about the issue.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4422\n\n",
     "created_at": "2008-11-02T02:35:04Z",
     "labels": [
         "packages: optional",
@@ -19,7 +19,7 @@ archive/issues_004422.json:
 ```
 Assignee: mabshoff
 
-CC:  mjo dimpase isuruf
+CC:  @orlitzky @dimpase @isuruf
 
 Sympow can use additional data files, but we do not install them. So create an optional spkg that recreates those data since they might be dependent on the big size as well as the endianess of the box. To get various optional doctests to pass run 
 
@@ -52,7 +52,7 @@ archive/issue_comments_032517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4422#issuecomment-32517",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_032518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4422#issuecomment-32518",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_032519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4422#issuecomment-32519",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_032520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4422#issuecomment-32520",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 

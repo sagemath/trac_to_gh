@@ -14,7 +14,7 @@ archive/issues_003612.json:
     "title": "add linkable tracebacks in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3612",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: boothby

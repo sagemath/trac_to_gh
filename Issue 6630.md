@@ -3,7 +3,7 @@
 archive/issues_006630.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nKeywords: species zero\n\nI'm writing a patch which create the empty species. Before the patch I didn't find any way to create it...\nIt is the species which contains no structure at all and as such does not seems very useful. However, it is the zero of the semi-ring of the species and may be needed when you do computation on species, for example to give the default value for the function sum()...\n\nAnd this is yet another patch from me about empty objects :)\n\nFlorent\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6630\n\n",
+    "body": "Assignee: @hivert\n\nKeywords: species zero\n\nI'm writing a patch which create the empty species. Before the patch I didn't find any way to create it...\nIt is the species which contains no structure at all and as such does not seems very useful. However, it is the zero of the semi-ring of the species and may be needed when you do computation on species, for example to give the default value for the function sum()...\n\nAnd this is yet another patch from me about empty objects :)\n\nFlorent\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6630\n\n",
     "created_at": "2009-07-26T20:49:01Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_006630.json:
     "title": "The empty species exists !!!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6630",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
 Keywords: species zero
 
@@ -45,7 +45,7 @@ archive/issue_comments_054330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54330",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_054331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54331",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_054332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54332",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -164,16 +164,16 @@ Docstring coverage must be 100% for any new module.
 archive/issue_comments_054335.json:
 ```json
 {
-    "body": "Attachment [empty_species-fh-6630-v2.patch](tarball://root/attachments/some-uuid/ticket6630/empty_species-fh-6630-v2.patch) by hivert created at 2009-09-11 15:18:26\n\nNew version of the patch with mgnvu's one folded.",
+    "body": "Attachment [empty_species-fh-6630-v2.patch](tarball://root/attachments/some-uuid/ticket6630/empty_species-fh-6630-v2.patch) by @hivert created at 2009-09-11 15:18:26\n\nNew version of the patch with mgnvu's one folded.",
     "created_at": "2009-09-11T15:18:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54335",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [empty_species-fh-6630-v2.patch](tarball://root/attachments/some-uuid/ticket6630/empty_species-fh-6630-v2.patch) by hivert created at 2009-09-11 15:18:26
+Attachment [empty_species-fh-6630-v2.patch](tarball://root/attachments/some-uuid/ticket6630/empty_species-fh-6630-v2.patch) by @hivert created at 2009-09-11 15:18:26
 
 New version of the patch with mgnvu's one folded.
 
@@ -189,7 +189,7 @@ archive/issue_comments_054336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54336",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_054337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54337",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

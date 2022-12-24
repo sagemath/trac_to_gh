@@ -13,7 +13,7 @@ archive/issues_000214.json:
     "title": "bug in small finite field error checking and modulus type",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/214",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -57,7 +57,7 @@ archive/issue_comments_000958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/214#issuecomment-958",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_000959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/214#issuecomment-959",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

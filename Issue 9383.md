@@ -14,7 +14,7 @@ archive/issues_009383.json:
     "title": "Adding quadratic_forms Code to the Reference Manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9383",
-    "user": "annahaensch"
+    "user": "@annahaensch"
 }
 ```
 Assignee: mvngu
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9383
 archive/issue_comments_089206.json:
 ```json
 {
-    "body": "Attachment [trac_9383.patch](tarball://root/attachments/some-uuid/ticket9383/trac_9383.patch) by annahaensch created at 2010-07-01 05:28:01\n\nquadratic_forms reference manual docbuild",
+    "body": "Attachment [trac_9383.patch](tarball://root/attachments/some-uuid/ticket9383/trac_9383.patch) by @annahaensch created at 2010-07-01 05:28:01\n\nquadratic_forms reference manual docbuild",
     "created_at": "2010-07-01T05:28:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9383#issuecomment-89206",
-    "user": "annahaensch"
+    "user": "@annahaensch"
 }
 ```
 
-Attachment [trac_9383.patch](tarball://root/attachments/some-uuid/ticket9383/trac_9383.patch) by annahaensch created at 2010-07-01 05:28:01
+Attachment [trac_9383.patch](tarball://root/attachments/some-uuid/ticket9383/trac_9383.patch) by @annahaensch created at 2010-07-01 05:28:01
 
 quadratic_forms reference manual docbuild
 
@@ -57,7 +57,7 @@ archive/issue_comments_089207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9383#issuecomment-89207",
-    "user": "annahaensch"
+    "user": "@annahaensch"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_089208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9383#issuecomment-89208",
-    "user": "annahaensch"
+    "user": "@annahaensch"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_089209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9383#issuecomment-89209",
-    "user": "annahaensch"
+    "user": "@annahaensch"
 }
 ```
 
@@ -106,16 +106,16 @@ Use instead of trac_9383.patch
 archive/issue_comments_089210.json:
 ```json
 {
-    "body": "Attachment [trac_9383_v2.patch](tarball://root/attachments/some-uuid/ticket9383/trac_9383_v2.patch) by annahaensch created at 2010-07-01 20:54:40\n\nThis patch should complete the reference documentation for quadratic forms.  It's still returning a warning that the file is not contained in a toctree.  Ideas?",
+    "body": "Attachment [trac_9383_v2.patch](tarball://root/attachments/some-uuid/ticket9383/trac_9383_v2.patch) by @annahaensch created at 2010-07-01 20:54:40\n\nThis patch should complete the reference documentation for quadratic forms.  It's still returning a warning that the file is not contained in a toctree.  Ideas?",
     "created_at": "2010-07-01T20:54:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9383#issuecomment-89210",
-    "user": "annahaensch"
+    "user": "@annahaensch"
 }
 ```
 
-Attachment [trac_9383_v2.patch](tarball://root/attachments/some-uuid/ticket9383/trac_9383_v2.patch) by annahaensch created at 2010-07-01 20:54:40
+Attachment [trac_9383_v2.patch](tarball://root/attachments/some-uuid/ticket9383/trac_9383_v2.patch) by @annahaensch created at 2010-07-01 20:54:40
 
 This patch should complete the reference documentation for quadratic forms.  It's still returning a warning that the file is not contained in a toctree.  Ideas?
 
@@ -131,7 +131,7 @@ archive/issue_comments_089211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9383#issuecomment-89211",
-    "user": "annahaensch"
+    "user": "@annahaensch"
 }
 ```
 
@@ -144,16 +144,16 @@ Changing status from new to needs_review.
 archive/issue_comments_089212.json:
 ```json
 {
-    "body": "Attachment [trac_9383_v3.patch](tarball://root/attachments/some-uuid/ticket9383/trac_9383_v3.patch) by annahaensch created at 2010-07-12 12:51:14\n\nUse in place of all previous patches",
+    "body": "Attachment [trac_9383_v3.patch](tarball://root/attachments/some-uuid/ticket9383/trac_9383_v3.patch) by @annahaensch created at 2010-07-12 12:51:14\n\nUse in place of all previous patches",
     "created_at": "2010-07-12T12:51:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9383#issuecomment-89212",
-    "user": "annahaensch"
+    "user": "@annahaensch"
 }
 ```
 
-Attachment [trac_9383_v3.patch](tarball://root/attachments/some-uuid/ticket9383/trac_9383_v3.patch) by annahaensch created at 2010-07-12 12:51:14
+Attachment [trac_9383_v3.patch](tarball://root/attachments/some-uuid/ticket9383/trac_9383_v3.patch) by @annahaensch created at 2010-07-12 12:51:14
 
 Use in place of all previous patches
 
@@ -169,7 +169,7 @@ archive/issue_comments_089213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9383#issuecomment-89213",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_089214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9383#issuecomment-89214",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_089215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9383#issuecomment-89215",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -222,16 +222,16 @@ BTW: the reference manual building code can behave very oddly when files have be
 archive/issue_comments_089216.json:
 ```json
 {
-    "body": "Attachment [trac_9383_v4.patch](tarball://root/attachments/some-uuid/ticket9383/trac_9383_v4.patch) by davidloeffler created at 2010-08-03 13:57:41\n\nreplaces all previous patches",
+    "body": "Attachment [trac_9383_v4.patch](tarball://root/attachments/some-uuid/ticket9383/trac_9383_v4.patch) by @loefflerd created at 2010-08-03 13:57:41\n\nreplaces all previous patches",
     "created_at": "2010-08-03T13:57:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9383#issuecomment-89216",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_9383_v4.patch](tarball://root/attachments/some-uuid/ticket9383/trac_9383_v4.patch) by davidloeffler created at 2010-08-03 13:57:41
+Attachment [trac_9383_v4.patch](tarball://root/attachments/some-uuid/ticket9383/trac_9383_v4.patch) by @loefflerd created at 2010-08-03 13:57:41
 
 replaces all previous patches
 
@@ -247,7 +247,7 @@ archive/issue_comments_089217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9383#issuecomment-89217",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_089218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9383#issuecomment-89218",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_089219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9383#issuecomment-89219",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_089220.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9383#issuecomment-89220",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -396,7 +396,7 @@ archive/issue_comments_089223.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9383#issuecomment-89223",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -445,7 +445,7 @@ archive/issue_comments_089224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9383#issuecomment-89224",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

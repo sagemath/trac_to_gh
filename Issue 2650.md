@@ -3,7 +3,7 @@
 archive/issues_002650.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis ticket depends on the patch from ticket #2649, without which an exception is raised.\n\nThe following code\n\n```\nsage: matrix({})\n```\n\nreturns the matrix [0].  I think it should return [].\n\nIssue created by migration from https://trac.sagemath.org/ticket/2650\n\n",
+    "body": "Assignee: @williamstein\n\nThis ticket depends on the patch from ticket #2649, without which an exception is raised.\n\nThe following code\n\n```\nsage: matrix({})\n```\n\nreturns the matrix [0].  I think it should return [].\n\nIssue created by migration from https://trac.sagemath.org/ticket/2650\n\n",
     "created_at": "2008-03-22T19:31:04Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_002650.json:
     "title": "matrix() constructor with empty dictionary returns non-empty matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2650",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This ticket depends on the patch from ticket #2649, without which an exception is raised.
 
@@ -45,7 +45,7 @@ archive/issue_comments_018212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2650#issuecomment-18212",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_018213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2650#issuecomment-18213",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 

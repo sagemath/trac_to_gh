@@ -14,7 +14,7 @@ archive/issues_006779.json:
     "title": "[with patch, needs review] positive_integer_relations bug in lattice_polytope",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6779",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 Assignee: mhampton
@@ -92,7 +92,7 @@ archive/issue_comments_055833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6779#issuecomment-55833",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_055834.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6779#issuecomment-55834",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_055835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6779#issuecomment-55835",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

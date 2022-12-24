@@ -3,7 +3,7 @@
 archive/issues_006705.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  dimpase\n\nCode in ATLAS can not detect the processor type on machines like the Sun T5240 ('t2') as it \n\nThis has been passed upstream\n\nhttps://sourceforge.net/tracker/?func=detail&aid=2825994&group_id=23725&atid=379483\n\nbut there is no fix yet. I probably have enough information to fix this, but have not done so yet. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6705\n\n",
+    "body": "Assignee: tbd\n\nCC:  @dimpase\n\nCode in ATLAS can not detect the processor type on machines like the Sun T5240 ('t2') as it \n\nThis has been passed upstream\n\nhttps://sourceforge.net/tracker/?func=detail&aid=2825994&group_id=23725&atid=379483\n\nbut there is no fix yet. I probably have enough information to fix this, but have not done so yet. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6705\n\n",
     "created_at": "2009-08-09T09:48:52Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_006705.json:
 ```
 Assignee: tbd
 
-CC:  dimpase
+CC:  @dimpase
 
 Code in ATLAS can not detect the processor type on machines like the Sun T5240 ('t2') as it 
 
@@ -65,7 +65,7 @@ archive/issue_comments_055068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6705#issuecomment-55068",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_055070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6705#issuecomment-55070",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_055071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6705#issuecomment-55071",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_055072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6705#issuecomment-55072",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_055073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6705#issuecomment-55073",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_055074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6705#issuecomment-55074",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_055075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6705#issuecomment-55075",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

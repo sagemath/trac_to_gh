@@ -14,7 +14,7 @@ archive/issues_003616.json:
     "title": "flint hangs on itanium",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3616",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -45,7 +45,7 @@ archive/issue_comments_025521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3616#issuecomment-25521",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_025522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3616#issuecomment-25522",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_025524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3616#issuecomment-25524",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

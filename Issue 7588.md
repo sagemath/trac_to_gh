@@ -3,7 +3,7 @@
 archive/issues_007588.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nReplace min_vertex_cut and min_edge_cut by LP formulation which does not use min_st_cut.\n\nThis would be way more efficient than the current ( well, under review at the moment ) implementation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7588\n\n",
+    "body": "Assignee: @rlmill\n\nReplace min_vertex_cut and min_edge_cut by LP formulation which does not use min_st_cut.\n\nThis would be way more efficient than the current ( well, under review at the moment ) implementation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7588\n\n",
     "created_at": "2009-12-03T09:02:22Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007588.json:
     "title": "Replace min_vertex_cut and min_edge_cut by LP formulation which does not use min_st_cut",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7588",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Replace min_vertex_cut and min_edge_cut by LP formulation which does not use min_st_cut.
 
@@ -39,7 +39,7 @@ archive/issue_comments_064694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7588#issuecomment-64694",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_064695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7588#issuecomment-64695",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

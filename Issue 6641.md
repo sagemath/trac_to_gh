@@ -3,7 +3,7 @@
 archive/issues_006641.json:
 ```json
 {
-    "body": "Assignee: saliola\n\nCC:  chapoton\n\nThe current implementation of antichains must construct the complete set of antichains, but it can be done via an iterator (using the `GenericBacktracker` class).\n\nI have a patch that I will post shortly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6641\n\n",
+    "body": "Assignee: @saliola\n\nCC:  @fchapoton\n\nThe current implementation of antichains must construct the complete set of antichains, but it can be done via an iterator (using the `GenericBacktracker` class).\n\nI have a patch that I will post shortly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6641\n\n",
     "created_at": "2009-07-27T15:01:27Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_006641.json:
     "title": "switch the poset antichains method to use GenericBacktracker and add antichains_iterator.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6641",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
-Assignee: saliola
+Assignee: @saliola
 
-CC:  chapoton
+CC:  @fchapoton
 
 The current implementation of antichains must construct the complete set of antichains, but it can be done via an iterator (using the `GenericBacktracker` class).
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6641
 archive/issue_comments_054444.json:
 ```json
 {
-    "body": "Attachment [trac_6641-poset_antichains_backtracker.patch](tarball://root/attachments/some-uuid/ticket6641/trac_6641-poset_antichains_backtracker.patch) by saliola created at 2009-07-27 15:29:57",
+    "body": "Attachment [trac_6641-poset_antichains_backtracker.patch](tarball://root/attachments/some-uuid/ticket6641/trac_6641-poset_antichains_backtracker.patch) by @saliola created at 2009-07-27 15:29:57",
     "created_at": "2009-07-27T15:29:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6641#issuecomment-54444",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_6641-poset_antichains_backtracker.patch](tarball://root/attachments/some-uuid/ticket6641/trac_6641-poset_antichains_backtracker.patch) by saliola created at 2009-07-27 15:29:57
+Attachment [trac_6641-poset_antichains_backtracker.patch](tarball://root/attachments/some-uuid/ticket6641/trac_6641-poset_antichains_backtracker.patch) by @saliola created at 2009-07-27 15:29:57
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_054445.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6641#issuecomment-54445",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -72,16 +72,16 @@ Thanks to Dan Drake for teaching me how to use the backtracker.
 archive/issue_comments_054446.json:
 ```json
 {
-    "body": "Attachment [trac_6641-poset_antichains_backtracker-part2.patch](tarball://root/attachments/some-uuid/ticket6641/trac_6641-poset_antichains_backtracker-part2.patch) by saliola created at 2009-07-27 19:56:06",
+    "body": "Attachment [trac_6641-poset_antichains_backtracker-part2.patch](tarball://root/attachments/some-uuid/ticket6641/trac_6641-poset_antichains_backtracker-part2.patch) by @saliola created at 2009-07-27 19:56:06",
     "created_at": "2009-07-27T19:56:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6641#issuecomment-54446",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_6641-poset_antichains_backtracker-part2.patch](tarball://root/attachments/some-uuid/ticket6641/trac_6641-poset_antichains_backtracker-part2.patch) by saliola created at 2009-07-27 19:56:06
+Attachment [trac_6641-poset_antichains_backtracker-part2.patch](tarball://root/attachments/some-uuid/ticket6641/trac_6641-poset_antichains_backtracker-part2.patch) by @saliola created at 2009-07-27 19:56:06
 
 
 
@@ -95,7 +95,7 @@ archive/issue_comments_054447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6641#issuecomment-54447",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_054448.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6641#issuecomment-54448",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_054449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6641#issuecomment-54449",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_054450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6641#issuecomment-54450",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_054451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6641#issuecomment-54451",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -193,16 +193,16 @@ Rebased version against #8735
 archive/issue_comments_054452.json:
 ```json
 {
-    "body": "Attachment [trac_6641-poset_antichains_backtracker.2.patch](tarball://root/attachments/some-uuid/ticket6641/trac_6641-poset_antichains_backtracker.2.patch) by jdemeyer created at 2013-08-13 15:35:53",
+    "body": "Attachment [trac_6641-poset_antichains_backtracker.2.patch](tarball://root/attachments/some-uuid/ticket6641/trac_6641-poset_antichains_backtracker.2.patch) by @jdemeyer created at 2013-08-13 15:35:53",
     "created_at": "2013-08-13T15:35:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6641#issuecomment-54452",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [trac_6641-poset_antichains_backtracker.2.patch](tarball://root/attachments/some-uuid/ticket6641/trac_6641-poset_antichains_backtracker.2.patch) by jdemeyer created at 2013-08-13 15:35:53
+Attachment [trac_6641-poset_antichains_backtracker.2.patch](tarball://root/attachments/some-uuid/ticket6641/trac_6641-poset_antichains_backtracker.2.patch) by @jdemeyer created at 2013-08-13 15:35:53
 
 
 
@@ -216,7 +216,7 @@ archive/issue_comments_054453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6641#issuecomment-54453",
-    "user": "jmantysalo"
+    "user": "@jm58660"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_054454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6641#issuecomment-54454",
-    "user": "jmantysalo"
+    "user": "@jm58660"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_054455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6641#issuecomment-54455",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_054456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6641#issuecomment-54456",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_054457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6641#issuecomment-54457",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_054458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6641#issuecomment-54458",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 

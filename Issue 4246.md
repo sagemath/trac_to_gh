@@ -3,7 +3,7 @@
 archive/issues_004246.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  robertwb\n\nThis was reported by William Stein at #4106:\n\n  I did notice this unfortunate property of the _polynomial_ function that is used\n  to implement this patch, namely it does something dumb when given x+y as input: \n\n  {{{\n  sage: var('x')\n  x\n  sage: var('y')\n  y\n  sage: S = PolynomialRing(Integers(4),1,'x')\n  sage: S(x+y)\n  2*x\n  sage: (x+y)._polynomial_(S)\n  2*x\n  }}}\n\n  I think in this case it should raise a TypeError. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4246\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @robertwb\n\nThis was reported by William Stein at #4106:\n\n  I did notice this unfortunate property of the _polynomial_ function that is used\n  to implement this patch, namely it does something dumb when given x+y as input: \n\n  {{{\n  sage: var('x')\n  x\n  sage: var('y')\n  y\n  sage: S = PolynomialRing(Integers(4),1,'x')\n  sage: S(x+y)\n  2*x\n  sage: (x+y)._polynomial_(S)\n  2*x\n  }}}\n\n  I think in this case it should raise a TypeError. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4246\n\n",
     "created_at": "2008-10-05T21:46:40Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_004246.json:
     "title": "bug in coercing symbolic expressions to polynomial rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4246",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  robertwb
+CC:  @robertwb
 
 This was reported by William Stein at #4106:
 
@@ -52,16 +52,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4246
 archive/issue_comments_030870.json:
 ```json
 {
-    "body": "Attachment [trac4246-coerce_symbolic_into_polyrings.patch](tarball://root/attachments/some-uuid/ticket4246/trac4246-coerce_symbolic_into_polyrings.patch) by AlexGhitza created at 2008-10-05 21:49:01",
+    "body": "Attachment [trac4246-coerce_symbolic_into_polyrings.patch](tarball://root/attachments/some-uuid/ticket4246/trac4246-coerce_symbolic_into_polyrings.patch) by @aghitza created at 2008-10-05 21:49:01",
     "created_at": "2008-10-05T21:49:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4246",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4246#issuecomment-30870",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac4246-coerce_symbolic_into_polyrings.patch](tarball://root/attachments/some-uuid/ticket4246/trac4246-coerce_symbolic_into_polyrings.patch) by AlexGhitza created at 2008-10-05 21:49:01
+Attachment [trac4246-coerce_symbolic_into_polyrings.patch](tarball://root/attachments/some-uuid/ticket4246/trac4246-coerce_symbolic_into_polyrings.patch) by @aghitza created at 2008-10-05 21:49:01
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_030871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4246",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4246#issuecomment-30871",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_030872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4246",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4246#issuecomment-30872",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -167,16 +167,16 @@ Michael
 archive/issue_comments_030874.json:
 ```json
 {
-    "body": "Attachment [trac4246-coerce_symbolic_into_polyrings_1.patch](tarball://root/attachments/some-uuid/ticket4246/trac4246-coerce_symbolic_into_polyrings_1.patch) by AlexGhitza created at 2008-11-29 07:27:37",
+    "body": "Attachment [trac4246-coerce_symbolic_into_polyrings_1.patch](tarball://root/attachments/some-uuid/ticket4246/trac4246-coerce_symbolic_into_polyrings_1.patch) by @aghitza created at 2008-11-29 07:27:37",
     "created_at": "2008-11-29T07:27:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4246",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4246#issuecomment-30874",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac4246-coerce_symbolic_into_polyrings_1.patch](tarball://root/attachments/some-uuid/ticket4246/trac4246-coerce_symbolic_into_polyrings_1.patch) by AlexGhitza created at 2008-11-29 07:27:37
+Attachment [trac4246-coerce_symbolic_into_polyrings_1.patch](tarball://root/attachments/some-uuid/ticket4246/trac4246-coerce_symbolic_into_polyrings_1.patch) by @aghitza created at 2008-11-29 07:27:37
 
 
 
@@ -190,7 +190,7 @@ archive/issue_comments_030875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4246",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4246#issuecomment-30875",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_030876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4246",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4246#issuecomment-30876",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

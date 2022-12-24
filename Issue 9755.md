@@ -3,7 +3,7 @@
 archive/issues_009755.json:
 ```json
 {
-    "body": "Assignee: jbandlow\n\nCC:  sage-combinat\n\nKeywords: symmetric functions\n\nThe following was reported to me by Nicolas Thi\u00e9ry and Lenny Tevlin.\n\n\n```\nR.<q,t> = ZZ[]\nR = FractionField(R)\nP = MacdonaldPolynomialsP(R,q,t) \nQ = HallLittlewoodQ(R,t) # or Q or P (Qp = H)\nPh=HallLittlewoodP(R,t)\nSF = SymmetricFunctions(R)\nSF.inject_shorthands()\nQ(s.one())\n\nTraceback (click to the left of this block for traceback)\n...\nAttributeError: 'int' object has no attribute 'subs'\n```\n\nThe same error occurs with `Ph(s.one())`, although `P(s.one())` works.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9755\n\n",
+    "body": "Assignee: @jbandlow\n\nCC:  sage-combinat\n\nKeywords: symmetric functions\n\nThe following was reported to me by Nicolas Thi\u00e9ry and Lenny Tevlin.\n\n\n```\nR.<q,t> = ZZ[]\nR = FractionField(R)\nP = MacdonaldPolynomialsP(R,q,t) \nQ = HallLittlewoodQ(R,t) # or Q or P (Qp = H)\nPh=HallLittlewoodP(R,t)\nSF = SymmetricFunctions(R)\nSF.inject_shorthands()\nQ(s.one())\n\nTraceback (click to the left of this block for traceback)\n...\nAttributeError: 'int' object has no attribute 'subs'\n```\n\nThe same error occurs with `Ph(s.one())`, although `P(s.one())` works.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9755\n\n",
     "created_at": "2010-08-17T15:27:40Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_009755.json:
     "title": "Symmetric Function coercion issue",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9755",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
-Assignee: jbandlow
+Assignee: @jbandlow
 
 CC:  sage-combinat
 
@@ -59,7 +59,7 @@ archive/issue_comments_095547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9755#issuecomment-95547",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_095548.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9755#issuecomment-95548",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_095549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9755#issuecomment-95549",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_095550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9755#issuecomment-95550",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_095551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9755#issuecomment-95551",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_095552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9755#issuecomment-95552",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_095553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9755#issuecomment-95553",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -180,16 +180,16 @@ Could someone make the commit string a bit more descriptive, e.g., `#9755: Fix c
 archive/issue_comments_095554.json:
 ```json
 {
-    "body": "Attachment [trac_9755_hall_littlewood_coercions-jb.patch](tarball://root/attachments/some-uuid/ticket9755/trac_9755_hall_littlewood_coercions-jb.patch) by jbandlow created at 2010-09-18 14:28:04",
+    "body": "Attachment [trac_9755_hall_littlewood_coercions-jb.patch](tarball://root/attachments/some-uuid/ticket9755/trac_9755_hall_littlewood_coercions-jb.patch) by @jbandlow created at 2010-09-18 14:28:04",
     "created_at": "2010-09-18T14:28:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9755#issuecomment-95554",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
-Attachment [trac_9755_hall_littlewood_coercions-jb.patch](tarball://root/attachments/some-uuid/ticket9755/trac_9755_hall_littlewood_coercions-jb.patch) by jbandlow created at 2010-09-18 14:28:04
+Attachment [trac_9755_hall_littlewood_coercions-jb.patch](tarball://root/attachments/some-uuid/ticket9755/trac_9755_hall_littlewood_coercions-jb.patch) by @jbandlow created at 2010-09-18 14:28:04
 
 
 
@@ -203,7 +203,7 @@ archive/issue_comments_095555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9755#issuecomment-95555",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_095556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9755#issuecomment-95556",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_095557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9755#issuecomment-95557",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_095558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9755#issuecomment-95558",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -284,16 +284,16 @@ summary:     [mq]: trac_9755_hall_littlewood_coercions-jb.patch
 archive/issue_comments_095559.json:
 ```json
 {
-    "body": "Attachment [trac_9755_hall_littlewood_coercions-jb.2.patch](tarball://root/attachments/some-uuid/ticket9755/trac_9755_hall_littlewood_coercions-jb.2.patch) by jbandlow created at 2010-09-18 21:52:28",
+    "body": "Attachment [trac_9755_hall_littlewood_coercions-jb.2.patch](tarball://root/attachments/some-uuid/ticket9755/trac_9755_hall_littlewood_coercions-jb.2.patch) by @jbandlow created at 2010-09-18 21:52:28",
     "created_at": "2010-09-18T21:52:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9755#issuecomment-95559",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
-Attachment [trac_9755_hall_littlewood_coercions-jb.2.patch](tarball://root/attachments/some-uuid/ticket9755/trac_9755_hall_littlewood_coercions-jb.2.patch) by jbandlow created at 2010-09-18 21:52:28
+Attachment [trac_9755_hall_littlewood_coercions-jb.2.patch](tarball://root/attachments/some-uuid/ticket9755/trac_9755_hall_littlewood_coercions-jb.2.patch) by @jbandlow created at 2010-09-18 21:52:28
 
 
 
@@ -307,7 +307,7 @@ archive/issue_comments_095560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9755#issuecomment-95560",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_095561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9755#issuecomment-95561",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -346,7 +346,7 @@ archive/issue_comments_095562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9755#issuecomment-95562",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

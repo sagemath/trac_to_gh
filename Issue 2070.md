@@ -3,7 +3,7 @@
 archive/issues_002070.json:
 ```json
 {
-    "body": "Assignee: was\n\nAlmost always one wants to clone sage-main, rather than the current branch. There should be a warning and a prompt when one is not cloning sage-main\n\nIssue created by migration from https://trac.sagemath.org/ticket/2070\n\n",
+    "body": "Assignee: @williamstein\n\nAlmost always one wants to clone sage-main, rather than the current branch. There should be a warning and a prompt when one is not cloning sage-main\n\nIssue created by migration from https://trac.sagemath.org/ticket/2070\n\n",
     "created_at": "2008-02-06T04:27:38Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_002070.json:
     "title": "Warning on cloning from other branches",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2070",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Almost always one wants to clone sage-main, rather than the current branch. There should be a warning and a prompt when one is not cloning sage-main
 
@@ -37,7 +37,7 @@ archive/issue_comments_013390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2070",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2070#issuecomment-13390",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_013391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2070",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2070#issuecomment-13391",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_013392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2070",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2070#issuecomment-13392",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_013393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2070",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2070#issuecomment-13393",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

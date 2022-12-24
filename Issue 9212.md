@@ -3,7 +3,7 @@
 archive/issues_009212.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  rbeezer florent\n\nAfter #8276, the top-level identity_matrix and zero_matrix functions return immutable matrices, which is a backwards-incompatible change that is inconvenient in many cases (when code starts with those matrices as the base and then modifies them).\n\nThis patch makes these matrices mutable.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9212\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @rbeezer florent\n\nAfter #8276, the top-level identity_matrix and zero_matrix functions return immutable matrices, which is a backwards-incompatible change that is inconvenient in many cases (when code starts with those matrices as the base and then modifies them).\n\nThis patch makes these matrices mutable.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9212\n\n",
     "created_at": "2010-06-11T07:15:15Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_009212.json:
     "title": "top-level identity_matrix and zero_matrix functions should return mutable matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9212",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jason, was
 
-CC:  rbeezer florent
+CC:  @rbeezer florent
 
 After #8276, the top-level identity_matrix and zero_matrix functions return immutable matrices, which is a backwards-incompatible change that is inconvenient in many cases (when code starts with those matrices as the base and then modifies them).
 
@@ -41,7 +41,7 @@ archive/issue_comments_086315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86315",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -54,16 +54,16 @@ Changing status from new to needs_review.
 archive/issue_comments_086316.json:
 ```json
 {
-    "body": "Attachment [trac-9212-identity-zero-mutable.patch](tarball://root/attachments/some-uuid/ticket9212/trac-9212-identity-zero-mutable.patch) by jason created at 2010-06-11 07:17:30",
+    "body": "Attachment [trac-9212-identity-zero-mutable.patch](tarball://root/attachments/some-uuid/ticket9212/trac-9212-identity-zero-mutable.patch) by @jasongrout created at 2010-06-11 07:17:30",
     "created_at": "2010-06-11T07:17:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86316",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-9212-identity-zero-mutable.patch](tarball://root/attachments/some-uuid/ticket9212/trac-9212-identity-zero-mutable.patch) by jason created at 2010-06-11 07:17:30
+Attachment [trac-9212-identity-zero-mutable.patch](tarball://root/attachments/some-uuid/ticket9212/trac-9212-identity-zero-mutable.patch) by @jasongrout created at 2010-06-11 07:17:30
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_086317.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86317",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_086318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86318",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_086319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86319",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_086320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86320",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_086321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86321",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_086322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86322",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_086323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86323",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_086324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86324",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_086325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86325",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_086326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86326",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_086327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86327",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_086328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86328",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_086329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86329",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_086330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86330",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -361,16 +361,16 @@ I have a "positive review" report, but no reviewer patch to make it happen.  So 
 archive/issue_comments_086331.json:
 ```json
 {
-    "body": "Attachment [trac-9212-fix-doctests.patch](tarball://root/attachments/some-uuid/ticket9212/trac-9212-fix-doctests.patch) by jason created at 2010-06-14 20:35:23\n\napply on top of previous patches",
+    "body": "Attachment [trac-9212-fix-doctests.patch](tarball://root/attachments/some-uuid/ticket9212/trac-9212-fix-doctests.patch) by @jasongrout created at 2010-06-14 20:35:23\n\napply on top of previous patches",
     "created_at": "2010-06-14T20:35:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86331",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-9212-fix-doctests.patch](tarball://root/attachments/some-uuid/ticket9212/trac-9212-fix-doctests.patch) by jason created at 2010-06-14 20:35:23
+Attachment [trac-9212-fix-doctests.patch](tarball://root/attachments/some-uuid/ticket9212/trac-9212-fix-doctests.patch) by @jasongrout created at 2010-06-14 20:35:23
 
 apply on top of previous patches
 
@@ -386,7 +386,7 @@ archive/issue_comments_086332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86332",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -404,7 +404,7 @@ archive/issue_comments_086333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86333",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -424,7 +424,7 @@ archive/issue_comments_086334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86334",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -442,7 +442,7 @@ archive/issue_comments_086335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86335",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

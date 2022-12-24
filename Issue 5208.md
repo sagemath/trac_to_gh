@@ -3,7 +3,7 @@
 archive/issues_005208.json:
 ```json
 {
-    "body": "Assignee: rbeezer\n\nKeywords: matrix, left_kernel, right_kernel\n\nCalls to left_kernel() don't properly filter down the class hierarchy for matrices, and so do not always use the most efficient algorithm available.  The transcript below illustrates the difference in time for a mathematically equivalent computation on a random 200 x 200 matrix of two-digit integers.\n\n\n```\nsage: a = random_matrix(ZZ, 200, 200, x=100).change_ring(QQ)\n\nsage: time a.transpose().right_kernel()\n\nVector space of degree 200 and dimension 0 over Rational Field\nBasis matrix:\n0 x 200 dense matrix over Rational Field\nTime: CPU 0.18 s, Wall: 0.18 s\n\nsage: time a.left_kernel()\n\nVector space of degree 200 and dimension 0 over Rational Field\nBasis matrix:\n0 x 200 dense matrix over Rational Field\nCPU time: 70.76 s,  Wall time: 71.55 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5208\n\n",
+    "body": "Assignee: @rbeezer\n\nKeywords: matrix, left_kernel, right_kernel\n\nCalls to left_kernel() don't properly filter down the class hierarchy for matrices, and so do not always use the most efficient algorithm available.  The transcript below illustrates the difference in time for a mathematically equivalent computation on a random 200 x 200 matrix of two-digit integers.\n\n\n```\nsage: a = random_matrix(ZZ, 200, 200, x=100).change_ring(QQ)\n\nsage: time a.transpose().right_kernel()\n\nVector space of degree 200 and dimension 0 over Rational Field\nBasis matrix:\n0 x 200 dense matrix over Rational Field\nTime: CPU 0.18 s, Wall: 0.18 s\n\nsage: time a.left_kernel()\n\nVector space of degree 200 and dimension 0 over Rational Field\nBasis matrix:\n0 x 200 dense matrix over Rational Field\nCPU time: 70.76 s,  Wall time: 71.55 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5208\n\n",
     "created_at": "2009-02-08T19:34:30Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005208.json:
     "title": "Differing behavior for matrix left_kernel vs. right_kernel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5208",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
-Assignee: rbeezer
+Assignee: @rbeezer
 
 Keywords: matrix, left_kernel, right_kernel
 
@@ -54,16 +54,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5208
 archive/issue_comments_039899.json:
 ```json
 {
-    "body": "Attachment [trac_5208_kernels.patch](tarball://root/attachments/some-uuid/ticket5208/trac_5208_kernels.patch) by rbeezer created at 2009-02-08 22:52:12\n\nHigh-level code has been renamed from left_kernel() to simply kernel() to maintain consistency with derived classes.  So kernel() is no longer an alias for left_kernel().\n\nright_kernel() is mostly unchanged, calls kernel() on transpose.\n\nleft_kernel() now just calls kernel().  This should all ensure the proper versions of kernel() in derived classes are reached.\n\nDoctests for kernel() and left_kernel() are identical except for names used in explanations and the actual calls.  Doctests for right_kernel now have \"right\" in explantions, otherwise unchanged.\n\nEach of the three versions has a doctest with a symmetric 500 x 500 matrix of rational entries, which requires about 3 seconds of overhead and 1 second for the actual kernel call when patched.  Unpatched version 3.2.3 will take 589 seconds for left_kernel() on this example.  Runtimes seem to be O(n-cubed) if a smaller (faster) example is better.\n\nTimings on patched versions suggest that for rational matrices, the overhead in right_kernel() of transposing the matrix twice has the effect of doubling the runtime versus left_kernel.",
+    "body": "Attachment [trac_5208_kernels.patch](tarball://root/attachments/some-uuid/ticket5208/trac_5208_kernels.patch) by @rbeezer created at 2009-02-08 22:52:12\n\nHigh-level code has been renamed from left_kernel() to simply kernel() to maintain consistency with derived classes.  So kernel() is no longer an alias for left_kernel().\n\nright_kernel() is mostly unchanged, calls kernel() on transpose.\n\nleft_kernel() now just calls kernel().  This should all ensure the proper versions of kernel() in derived classes are reached.\n\nDoctests for kernel() and left_kernel() are identical except for names used in explanations and the actual calls.  Doctests for right_kernel now have \"right\" in explantions, otherwise unchanged.\n\nEach of the three versions has a doctest with a symmetric 500 x 500 matrix of rational entries, which requires about 3 seconds of overhead and 1 second for the actual kernel call when patched.  Unpatched version 3.2.3 will take 589 seconds for left_kernel() on this example.  Runtimes seem to be O(n-cubed) if a smaller (faster) example is better.\n\nTimings on patched versions suggest that for rational matrices, the overhead in right_kernel() of transposing the matrix twice has the effect of doubling the runtime versus left_kernel.",
     "created_at": "2009-02-08T22:52:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5208#issuecomment-39899",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_5208_kernels.patch](tarball://root/attachments/some-uuid/ticket5208/trac_5208_kernels.patch) by rbeezer created at 2009-02-08 22:52:12
+Attachment [trac_5208_kernels.patch](tarball://root/attachments/some-uuid/ticket5208/trac_5208_kernels.patch) by @rbeezer created at 2009-02-08 22:52:12
 
 High-level code has been renamed from left_kernel() to simply kernel() to maintain consistency with derived classes.  So kernel() is no longer an alias for left_kernel().
 
@@ -111,7 +111,7 @@ archive/issue_comments_039901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5208#issuecomment-39901",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_039902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5208#issuecomment-39902",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_039903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5208#issuecomment-39903",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 

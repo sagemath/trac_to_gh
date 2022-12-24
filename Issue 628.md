@@ -14,7 +14,7 @@ archive/issues_000628.json:
     "title": "Make binomial(x,m) work for symbolic expressions when x-m is an integer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/628",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 Assignee: somebody
@@ -52,16 +52,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/628
 archive/issue_comments_003226.json:
 ```json
 {
-    "body": "Attachment [binomial_symbolic.patch](tarball://root/attachments/some-uuid/ticket628/binomial_symbolic.patch) by pdenapo created at 2007-09-09 14:59:41",
+    "body": "Attachment [binomial_symbolic.patch](tarball://root/attachments/some-uuid/ticket628/binomial_symbolic.patch) by @pdenapo created at 2007-09-09 14:59:41",
     "created_at": "2007-09-09T14:59:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/628#issuecomment-3226",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 
-Attachment [binomial_symbolic.patch](tarball://root/attachments/some-uuid/ticket628/binomial_symbolic.patch) by pdenapo created at 2007-09-09 14:59:41
+Attachment [binomial_symbolic.patch](tarball://root/attachments/some-uuid/ticket628/binomial_symbolic.patch) by @pdenapo created at 2007-09-09 14:59:41
 
 
 
@@ -92,7 +92,7 @@ Michael
 archive/issue_comments_003228.json:
 ```json
 {
-    "body": "Changing assignee from somebody to was.",
+    "body": "Changing assignee from somebody to @williamstein.",
     "created_at": "2007-09-09T18:02:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/628",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_003228.json:
 }
 ```
 
-Changing assignee from somebody to was.
+Changing assignee from somebody to @williamstein.
 
 
 
@@ -285,7 +285,7 @@ archive/issue_comments_003235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/628#issuecomment-3235",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

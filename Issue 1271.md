@@ -3,7 +3,7 @@
 archive/issues_001271.json:
 ```json
 {
-    "body": "Assignee: malb\n\nSingular 3-0-4 should be released shortly. The non-final sources are already available.\n\nThis should also close #1074\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1271\n\n",
+    "body": "Assignee: @malb\n\nSingular 3-0-4 should be released shortly. The non-final sources are already available.\n\nThis should also close #1074\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1271\n\n",
     "created_at": "2007-11-25T18:32:09Z",
     "labels": [
         "packages: standard",
@@ -17,7 +17,7 @@ archive/issues_001271.json:
     "user": "mabshoff"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Singular 3-0-4 should be released shortly. The non-final sources are already available.
 
@@ -43,7 +43,7 @@ archive/issue_comments_007964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1271",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1271#issuecomment-7964",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_007965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1271",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1271#issuecomment-7965",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

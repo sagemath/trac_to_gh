@@ -3,7 +3,7 @@
 archive/issues_003532.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nGDBM is a prerequisite for M2 #10.  It is an optional/experimental spkg and may be downloaded at http://sage.math.washington.edu/home/gfurnish/spkg/gdbm-1.8.3.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/3532\n\n",
+    "body": "Assignee: @garyfurnish\n\nGDBM is a prerequisite for M2 #10.  It is an optional/experimental spkg and may be downloaded at http://sage.math.washington.edu/home/gfurnish/spkg/gdbm-1.8.3.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/3532\n\n",
     "created_at": "2008-06-29T02:59:20Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_003532.json:
     "title": "[With SPKG, needs review] gdbm spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3532",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 GDBM is a prerequisite for M2 #10.  It is an optional/experimental spkg and may be downloaded at http://sage.math.washington.edu/home/gfurnish/spkg/gdbm-1.8.3.spkg
 
@@ -37,7 +37,7 @@ archive/issue_comments_024918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3532#issuecomment-24918",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_024920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3532#issuecomment-24920",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

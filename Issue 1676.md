@@ -14,7 +14,7 @@ archive/issues_001676.json:
     "title": "memleak and unused variable in pAdicCappedAbsoluteElement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1676",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 Assignee: mabshoff
@@ -33,16 +33,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1676
 archive/issue_comments_010631.json:
 ```json
 {
-    "body": "Attachment [7917.patch](tarball://root/attachments/some-uuid/ticket1676/7917.patch) by wjp created at 2008-01-03 21:41:13",
+    "body": "Attachment [7917.patch](tarball://root/attachments/some-uuid/ticket1676/7917.patch) by @wjp created at 2008-01-03 21:41:13",
     "created_at": "2008-01-03T21:41:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1676",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1676#issuecomment-10631",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [7917.patch](tarball://root/attachments/some-uuid/ticket1676/7917.patch) by wjp created at 2008-01-03 21:41:13
+Attachment [7917.patch](tarball://root/attachments/some-uuid/ticket1676/7917.patch) by @wjp created at 2008-01-03 21:41:13
 
 
 

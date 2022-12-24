@@ -3,7 +3,7 @@
 archive/issues_000576.json:
 ```json
 {
-    "body": "Assignee: was\n\nConsider:\n\n\n```\nsage: P = PolynomialRing(QQ,8,'x')\nsage: I = sage.rings.ideal.Cyclic(P)\nsage: I.groebner_basis() # calls Singular and takes a long time\n```\n\n\nNow press Ctrl-C and you'll get:\n\n\n```\nInterrupting Singular...\nInterrupting Singular...\n...\n<type 'exceptions.TypeError'>: Restarting Singular \n(WARNING: all variables defined in previous session are now invalid)\n```\n\n\nSingular supposedly got killed but keeps running in background.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/576\n\n",
+    "body": "Assignee: @williamstein\n\nConsider:\n\n\n```\nsage: P = PolynomialRing(QQ,8,'x')\nsage: I = sage.rings.ideal.Cyclic(P)\nsage: I.groebner_basis() # calls Singular and takes a long time\n```\n\n\nNow press Ctrl-C and you'll get:\n\n\n```\nInterrupting Singular...\nInterrupting Singular...\n...\n<type 'exceptions.TypeError'>: Restarting Singular \n(WARNING: all variables defined in previous session are now invalid)\n```\n\n\nSingular supposedly got killed but keeps running in background.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/576\n\n",
     "created_at": "2007-09-03T13:59:11Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_000576.json:
     "title": "hard interrupting a Singular calculation does not kill Singular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/576",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Consider:
 
@@ -83,7 +83,7 @@ archive/issue_comments_002991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/576#issuecomment-2991",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_002992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/576#issuecomment-2992",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

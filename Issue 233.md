@@ -14,7 +14,7 @@ archive/issues_000233.json:
     "title": "Create QDRF -- quad double real field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/233",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -44,7 +44,7 @@ archive/issue_comments_001031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/233",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/233#issuecomment-1031",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_001033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/233",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/233#issuecomment-1033",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_001034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/233",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/233#issuecomment-1034",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_001035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/233",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/233#issuecomment-1035",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

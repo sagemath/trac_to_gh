@@ -3,7 +3,7 @@
 archive/issues_006655.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nKeywords: Parition\n\nI add a following new feature in partition:\na method returns a list of boxes in the arm.\nand so more.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6655\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: Parition\n\nI add a following new feature in partition:\na method returns a list of boxes in the arm.\nand so more.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6655\n\n",
     "created_at": "2009-07-29T14:25:13Z",
     "labels": [
         "combinatorics",
@@ -17,7 +17,7 @@ archive/issues_006655.json:
     "user": "numata"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -56,7 +56,7 @@ Attachment [trac_6655_partition_newfeature-ny.patch](tarball://root/attachments/
 archive/issue_comments_054626.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to numata.",
+    "body": "Changing assignee from @mwhansen to numata.",
     "created_at": "2009-07-29T15:57:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6655",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_054626.json:
 }
 ```
 
-Changing assignee from mhansen to numata.
+Changing assignee from @mwhansen to numata.
 
 
 
@@ -97,7 +97,7 @@ archive/issue_comments_054628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6655#issuecomment-54628",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -110,16 +110,16 @@ Changing keywords from "Parition" to "Partition cells arm legs".
 archive/issue_comments_054629.json:
 ```json
 {
-    "body": "Changing assignee from numata to hivert.",
+    "body": "Changing assignee from numata to @hivert.",
     "created_at": "2010-04-22T19:03:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6655#issuecomment-54629",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Changing assignee from numata to hivert.
+Changing assignee from numata to @hivert.
 
 
 
@@ -133,7 +133,7 @@ archive/issue_comments_054630.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6655#issuecomment-54630",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_054631.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6655#issuecomment-54631",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_054632.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6655#issuecomment-54632",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_054633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6655#issuecomment-54633",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_054634.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6655#issuecomment-54634",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -229,16 +229,16 @@ Anne
 archive/issue_comments_054635.json:
 ```json
 {
-    "body": "Attachment [trac_6655_partition_corner_cells-fh.patch](tarball://root/attachments/some-uuid/ticket6655/trac_6655_partition_corner_cells-fh.patch) by hivert created at 2010-05-04 23:20:32",
+    "body": "Attachment [trac_6655_partition_corner_cells-fh.patch](tarball://root/attachments/some-uuid/ticket6655/trac_6655_partition_corner_cells-fh.patch) by @hivert created at 2010-05-04 23:20:32",
     "created_at": "2010-05-04T23:20:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6655#issuecomment-54635",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_6655_partition_corner_cells-fh.patch](tarball://root/attachments/some-uuid/ticket6655/trac_6655_partition_corner_cells-fh.patch) by hivert created at 2010-05-04 23:20:32
+Attachment [trac_6655_partition_corner_cells-fh.patch](tarball://root/attachments/some-uuid/ticket6655/trac_6655_partition_corner_cells-fh.patch) by @hivert created at 2010-05-04 23:20:32
 
 
 
@@ -252,7 +252,7 @@ archive/issue_comments_054636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6655#issuecomment-54636",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -272,16 +272,16 @@ Except for `cells` which I just added, they are all accessible through `l.outer(
 archive/issue_comments_054637.json:
 ```json
 {
-    "body": "Attachment [trac_6655_partition_corner_cells-review-as.patch](tarball://root/attachments/some-uuid/ticket6655/trac_6655_partition_corner_cells-review-as.patch) by aschilling created at 2010-05-05 23:34:17\n\nI reviewed the patch. It cleans up several features in partitions. In addition it fixes the slide method in skew_tableaux and adds the cell method to skew_partitions as requested. All tests pass. Positive review!\n\nRelease manager, please apply only\ntrac_6655_partition_corner_cells-fh.patch and \ntrac_6655_partition_corner_cells-review-as.patch (in this order).",
+    "body": "Attachment [trac_6655_partition_corner_cells-review-as.patch](tarball://root/attachments/some-uuid/ticket6655/trac_6655_partition_corner_cells-review-as.patch) by @anneschilling created at 2010-05-05 23:34:17\n\nI reviewed the patch. It cleans up several features in partitions. In addition it fixes the slide method in skew_tableaux and adds the cell method to skew_partitions as requested. All tests pass. Positive review!\n\nRelease manager, please apply only\ntrac_6655_partition_corner_cells-fh.patch and \ntrac_6655_partition_corner_cells-review-as.patch (in this order).",
     "created_at": "2010-05-05T23:34:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6655#issuecomment-54637",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
-Attachment [trac_6655_partition_corner_cells-review-as.patch](tarball://root/attachments/some-uuid/ticket6655/trac_6655_partition_corner_cells-review-as.patch) by aschilling created at 2010-05-05 23:34:17
+Attachment [trac_6655_partition_corner_cells-review-as.patch](tarball://root/attachments/some-uuid/ticket6655/trac_6655_partition_corner_cells-review-as.patch) by @anneschilling created at 2010-05-05 23:34:17
 
 I reviewed the patch. It cleans up several features in partitions. In addition it fixes the slide method in skew_tableaux and adds the cell method to skew_partitions as requested. All tests pass. Positive review!
 
@@ -301,7 +301,7 @@ archive/issue_comments_054638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6655#issuecomment-54638",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008933.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nCC:  sage-combinat\n\nKeywords: Submodule, quotient\n\nPatch in progress in sage-combinat queue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8933\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: Submodule, quotient\n\nPatch in progress in sage-combinat queue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8933\n\n",
     "created_at": "2010-05-08T21:12:31Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_008933.json:
     "title": "Add submodule and quotient in ModuleWithBasis",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8933",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
 CC:  sage-combinat
 

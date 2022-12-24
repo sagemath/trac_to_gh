@@ -14,7 +14,7 @@ archive/issues_009804.json:
     "title": "save_session is completely broken in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9804",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jason, was
@@ -50,16 +50,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9805
 archive/issue_comments_096329.json:
 ```json
 {
-    "body": "Attachment [trac_9805.patch](tarball://root/attachments/some-uuid/ticket9805/trac_9805.patch) by ppurka created at 2013-08-09 17:01:06\n\n[attachment:trac_9805.patch Example patch] is provided to inform user of the workaround. I don't see how to get the worksheet directory of the user automatically. The DATA variable seems inaccessible from session.pyx.",
+    "body": "Attachment [trac_9805.patch](tarball://root/attachments/some-uuid/ticket9805/trac_9805.patch) by @ppurka created at 2013-08-09 17:01:06\n\n[attachment:trac_9805.patch Example patch] is provided to inform user of the workaround. I don't see how to get the worksheet directory of the user automatically. The DATA variable seems inaccessible from session.pyx.",
     "created_at": "2013-08-09T17:01:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9804#issuecomment-96329",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
-Attachment [trac_9805.patch](tarball://root/attachments/some-uuid/ticket9805/trac_9805.patch) by ppurka created at 2013-08-09 17:01:06
+Attachment [trac_9805.patch](tarball://root/attachments/some-uuid/ticket9805/trac_9805.patch) by @ppurka created at 2013-08-09 17:01:06
 
 [attachment:trac_9805.patch Example patch] is provided to inform user of the workaround. I don't see how to get the worksheet directory of the user automatically. The DATA variable seems inaccessible from session.pyx.
 
@@ -75,7 +75,7 @@ archive/issue_comments_096330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9804#issuecomment-96330",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_096331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9804#issuecomment-96331",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_096332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9804#issuecomment-96332",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_096333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9804#issuecomment-96333",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_096334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9804#issuecomment-96334",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_096335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9804#issuecomment-96335",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_096336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9804#issuecomment-96336",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_096337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9804#issuecomment-96337",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

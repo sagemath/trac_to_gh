@@ -3,7 +3,7 @@
 archive/issues_005778.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: doctests\n\nI've added some doctests, and improved ReST compatibility.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5778\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: doctests\n\nI've added some doctests, and improved ReST compatibility.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5778\n\n",
     "created_at": "2009-04-13T17:44:04Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_005778.json:
     "title": "More p-adic doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5778",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: doctests
 
@@ -39,7 +39,7 @@ archive/issue_comments_045189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5778#issuecomment-45189",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_045196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5778#issuecomment-45196",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -393,7 +393,7 @@ archive/issue_comments_045198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5778#issuecomment-45198",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -415,7 +415,7 @@ archive/issue_comments_045199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5778#issuecomment-45199",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -465,7 +465,7 @@ archive/issue_comments_045201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5778#issuecomment-45201",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -556,7 +556,7 @@ archive/issue_comments_045205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5778#issuecomment-45205",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -747,7 +747,7 @@ archive/issue_comments_045209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5778#issuecomment-45209",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -765,7 +765,7 @@ archive/issue_comments_045210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5778#issuecomment-45210",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -783,7 +783,7 @@ archive/issue_comments_045211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5778#issuecomment-45211",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -818,7 +818,7 @@ Michael
 archive/issue_comments_045213.json:
 ```json
 {
-    "body": "Changing assignee from was to roed.",
+    "body": "Changing assignee from @williamstein to @roed314.",
     "created_at": "2009-04-26T19:55:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
@@ -827,7 +827,7 @@ archive/issue_comments_045213.json:
 }
 ```
 
-Changing assignee from was to roed.
+Changing assignee from @williamstein to @roed314.
 
 
 
@@ -859,7 +859,7 @@ archive/issue_comments_045215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5778#issuecomment-45215",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -928,7 +928,7 @@ archive/issue_comments_045218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5778#issuecomment-45218",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -946,7 +946,7 @@ archive/issue_comments_045219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5778#issuecomment-45219",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -964,7 +964,7 @@ archive/issue_comments_045220.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5778#issuecomment-45220",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -990,7 +990,7 @@ archive/issue_comments_045221.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5778#issuecomment-45221",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1016,7 +1016,7 @@ archive/issue_comments_045222.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5778#issuecomment-45222",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1058,7 +1058,7 @@ archive/issue_comments_045223.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5778#issuecomment-45223",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1085,7 +1085,7 @@ archive/issue_comments_045224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5778#issuecomment-45224",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1111,7 +1111,7 @@ archive/issue_comments_045225.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5778#issuecomment-45225",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -1134,7 +1134,7 @@ archive/issue_comments_045226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5778#issuecomment-45226",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1152,7 +1152,7 @@ archive/issue_comments_045227.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5778#issuecomment-45227",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1172,7 +1172,7 @@ archive/issue_comments_045228.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5778#issuecomment-45228",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1198,7 +1198,7 @@ archive/issue_comments_045229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5778#issuecomment-45229",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -1218,7 +1218,7 @@ archive/issue_comments_045230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5778#issuecomment-45230",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1243,7 +1243,7 @@ archive/issue_comments_045231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5778#issuecomment-45231",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -1298,7 +1298,7 @@ archive/issue_comments_045233.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5778#issuecomment-45233",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -1354,16 +1354,16 @@ Replying to [comment:47 mabshoff]:
 archive/issue_comments_045234.json:
 ```json
 {
-    "body": "Attachment [padic_doctests_1.patch](tarball://root/attachments/some-uuid/ticket5778/padic_doctests_1.patch) by roed created at 2009-05-11 09:20:31",
+    "body": "Attachment [padic_doctests_1.patch](tarball://root/attachments/some-uuid/ticket5778/padic_doctests_1.patch) by @roed314 created at 2009-05-11 09:20:31",
     "created_at": "2009-05-11T09:20:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5778#issuecomment-45234",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [padic_doctests_1.patch](tarball://root/attachments/some-uuid/ticket5778/padic_doctests_1.patch) by roed created at 2009-05-11 09:20:31
+Attachment [padic_doctests_1.patch](tarball://root/attachments/some-uuid/ticket5778/padic_doctests_1.patch) by @roed314 created at 2009-05-11 09:20:31
 
 
 
@@ -1372,16 +1372,16 @@ Attachment [padic_doctests_1.patch](tarball://root/attachments/some-uuid/ticket5
 archive/issue_comments_045235.json:
 ```json
 {
-    "body": "Attachment [padic_doctests_3.patch](tarball://root/attachments/some-uuid/ticket5778/padic_doctests_3.patch) by roed created at 2009-05-11 09:20:43",
+    "body": "Attachment [padic_doctests_3.patch](tarball://root/attachments/some-uuid/ticket5778/padic_doctests_3.patch) by @roed314 created at 2009-05-11 09:20:43",
     "created_at": "2009-05-11T09:20:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5778#issuecomment-45235",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [padic_doctests_3.patch](tarball://root/attachments/some-uuid/ticket5778/padic_doctests_3.patch) by roed created at 2009-05-11 09:20:43
+Attachment [padic_doctests_3.patch](tarball://root/attachments/some-uuid/ticket5778/padic_doctests_3.patch) by @roed314 created at 2009-05-11 09:20:43
 
 
 
@@ -1390,16 +1390,16 @@ Attachment [padic_doctests_3.patch](tarball://root/attachments/some-uuid/ticket5
 archive/issue_comments_045236.json:
 ```json
 {
-    "body": "Attachment [padic_referee_fixes.patch](tarball://root/attachments/some-uuid/ticket5778/padic_referee_fixes.patch) by roed created at 2009-05-11 09:21:41",
+    "body": "Attachment [padic_referee_fixes.patch](tarball://root/attachments/some-uuid/ticket5778/padic_referee_fixes.patch) by @roed314 created at 2009-05-11 09:21:41",
     "created_at": "2009-05-11T09:21:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5778#issuecomment-45236",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [padic_referee_fixes.patch](tarball://root/attachments/some-uuid/ticket5778/padic_referee_fixes.patch) by roed created at 2009-05-11 09:21:41
+Attachment [padic_referee_fixes.patch](tarball://root/attachments/some-uuid/ticket5778/padic_referee_fixes.patch) by @roed314 created at 2009-05-11 09:21:41
 
 
 
@@ -1408,16 +1408,16 @@ Attachment [padic_referee_fixes.patch](tarball://root/attachments/some-uuid/tick
 archive/issue_comments_045237.json:
 ```json
 {
-    "body": "Attachment [padic_referee_fixes_2.patch](tarball://root/attachments/some-uuid/ticket5778/padic_referee_fixes_2.patch) by roed created at 2009-05-11 10:16:50",
+    "body": "Attachment [padic_referee_fixes_2.patch](tarball://root/attachments/some-uuid/ticket5778/padic_referee_fixes_2.patch) by @roed314 created at 2009-05-11 10:16:50",
     "created_at": "2009-05-11T10:16:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5778#issuecomment-45237",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [padic_referee_fixes_2.patch](tarball://root/attachments/some-uuid/ticket5778/padic_referee_fixes_2.patch) by roed created at 2009-05-11 10:16:50
+Attachment [padic_referee_fixes_2.patch](tarball://root/attachments/some-uuid/ticket5778/padic_referee_fixes_2.patch) by @roed314 created at 2009-05-11 10:16:50
 
 
 
@@ -1426,16 +1426,16 @@ Attachment [padic_referee_fixes_2.patch](tarball://root/attachments/some-uuid/ti
 archive/issue_comments_045238.json:
 ```json
 {
-    "body": "Attachment [padic_doctests_deletions.patch](tarball://root/attachments/some-uuid/ticket5778/padic_doctests_deletions.patch) by roed created at 2009-05-11 10:19:29",
+    "body": "Attachment [padic_doctests_deletions.patch](tarball://root/attachments/some-uuid/ticket5778/padic_doctests_deletions.patch) by @roed314 created at 2009-05-11 10:19:29",
     "created_at": "2009-05-11T10:19:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5778#issuecomment-45238",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [padic_doctests_deletions.patch](tarball://root/attachments/some-uuid/ticket5778/padic_doctests_deletions.patch) by roed created at 2009-05-11 10:19:29
+Attachment [padic_doctests_deletions.patch](tarball://root/attachments/some-uuid/ticket5778/padic_doctests_deletions.patch) by @roed314 created at 2009-05-11 10:19:29
 
 
 
@@ -1527,7 +1527,7 @@ archive/issue_comments_045242.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5778#issuecomment-45242",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

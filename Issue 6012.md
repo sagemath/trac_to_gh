@@ -3,7 +3,7 @@
 archive/issues_006012.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nCC:  rbeezer fidelbarrera\n\nWith this patch, you can use pdflatex instead of latex, in two different ways: use a %pdflatex cell in the notebook, or call\n\n```\nlatex.pdflatex(True)\n```\n\nafter which any use of latex (in a %latex cell or using the `view` command) will use pdflatex.\n\nThis way, if you have the most recent version of pgf installed, as well as the tkz-graph package, you can get pictures like those at [http://altermundus.com/pages/graph.html](http://altermundus.com/pages/graph.html) in your notebook.  (I think that tkz-graph might require using pdflatex instead of latex.  In any case, I could successfully get the graph in a %pdflatex cell -- see graph.png -- but not in a %latex cell.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6012\n\n",
+    "body": "Assignee: @jhpalmieri\n\nCC:  @rbeezer fidelbarrera\n\nWith this patch, you can use pdflatex instead of latex, in two different ways: use a %pdflatex cell in the notebook, or call\n\n```\nlatex.pdflatex(True)\n```\n\nafter which any use of latex (in a %latex cell or using the `view` command) will use pdflatex.\n\nThis way, if you have the most recent version of pgf installed, as well as the tkz-graph package, you can get pictures like those at [http://altermundus.com/pages/graph.html](http://altermundus.com/pages/graph.html) in your notebook.  (I think that tkz-graph might require using pdflatex instead of latex.  In any case, I could successfully get the graph in a %pdflatex cell -- see graph.png -- but not in a %latex cell.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6012\n\n",
     "created_at": "2009-05-09T17:45:19Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_006012.json:
     "title": "[with patch, needs review] allow use of pdflatex instead of latex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6012",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
-CC:  rbeezer fidelbarrera
+CC:  @rbeezer fidelbarrera
 
 With this patch, you can use pdflatex instead of latex, in two different ways: use a %pdflatex cell in the notebook, or call
 
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6012
 archive/issue_comments_047840.json:
 ```json
 {
-    "body": "Attachment [graph.png](tarball://root/attachments/some-uuid/ticket6012/graph.png) by jhpalmieri created at 2009-05-09 17:47:06\n\nscreenshot",
+    "body": "Attachment [graph.png](tarball://root/attachments/some-uuid/ticket6012/graph.png) by @jhpalmieri created at 2009-05-09 17:47:06\n\nscreenshot",
     "created_at": "2009-05-09T17:47:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6012",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6012#issuecomment-47840",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [graph.png](tarball://root/attachments/some-uuid/ticket6012/graph.png) by jhpalmieri created at 2009-05-09 17:47:06
+Attachment [graph.png](tarball://root/attachments/some-uuid/ticket6012/graph.png) by @jhpalmieri created at 2009-05-09 17:47:06
 
 screenshot
 
@@ -67,7 +67,7 @@ archive/issue_comments_047841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6012",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6012#issuecomment-47841",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_047842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6012",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6012#issuecomment-47842",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_047843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6012",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6012#issuecomment-47843",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_047844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6012",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6012#issuecomment-47844",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_047845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6012",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6012#issuecomment-47845",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 

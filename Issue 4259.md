@@ -3,7 +3,7 @@
 archive/issues_004259.json:
 ```json
 {
-    "body": "Assignee: cpernet\n\nCC:  cpernet\n\nKeywords: linbox, linear algebra\n\nWe should use the faster option if possible. I'm not sure what the constraints on the primes are though.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4259\n\n",
+    "body": "Assignee: @ClementPernet\n\nCC:  @ClementPernet\n\nKeywords: linbox, linear algebra\n\nWe should use the faster option if possible. I'm not sure what the constraints on the primes are though.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4259\n\n",
     "created_at": "2008-10-10T08:51:53Z",
     "labels": [
         "linbox",
@@ -14,12 +14,12 @@ archive/issues_004259.json:
     "title": "use Modular<float> instead of Modular<double> for small primes in LinBox",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4259",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: cpernet
+Assignee: @ClementPernet
 
-CC:  cpernet
+CC:  @ClementPernet
 
 Keywords: linbox, linear algebra
 
@@ -41,7 +41,7 @@ archive/issue_comments_030995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4259#issuecomment-30995",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_030996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4259#issuecomment-30996",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_030997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4259#issuecomment-30997",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_030998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4259#issuecomment-30998",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_030999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4259#issuecomment-30999",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_031000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4259#issuecomment-31000",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_031001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4259#issuecomment-31001",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

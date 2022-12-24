@@ -14,7 +14,7 @@ archive/issues_008957.json:
     "title": "Word problem broken for matrix groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8957",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 Assignee: joyner
@@ -39,7 +39,7 @@ archive/issue_comments_082566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8957#issuecomment-82566",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_082567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8957#issuecomment-82567",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -70,16 +70,16 @@ Changing status from new to needs_review.
 archive/issue_comments_082568.json:
 ```json
 {
-    "body": "Attachment [trac_8957-matrix_group_word_problem.patch](tarball://root/attachments/some-uuid/ticket8957/trac_8957-matrix_group_word_problem.patch) by davidloeffler created at 2010-05-15 18:54:27",
+    "body": "Attachment [trac_8957-matrix_group_word_problem.patch](tarball://root/attachments/some-uuid/ticket8957/trac_8957-matrix_group_word_problem.patch) by @loefflerd created at 2010-05-15 18:54:27",
     "created_at": "2010-05-15T18:54:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8957#issuecomment-82568",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_8957-matrix_group_word_problem.patch](tarball://root/attachments/some-uuid/ticket8957/trac_8957-matrix_group_word_problem.patch) by davidloeffler created at 2010-05-15 18:54:27
+Attachment [trac_8957-matrix_group_word_problem.patch](tarball://root/attachments/some-uuid/ticket8957/trac_8957-matrix_group_word_problem.patch) by @loefflerd created at 2010-05-15 18:54:27
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_082569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8957#issuecomment-82569",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_082570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8957#issuecomment-82570",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_082571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8957#issuecomment-82571",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

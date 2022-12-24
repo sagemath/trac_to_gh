@@ -14,7 +14,7 @@ archive/issues_009714.json:
     "title": "Graph(..., format='incidence_matrix') doesn't work with graphs that have loops, but G.incidence_matrix() does.  So?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9714",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -56,7 +56,7 @@ archive/issue_comments_094771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9714#issuecomment-94771",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_094775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9714#issuecomment-94775",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_094778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9714#issuecomment-94778",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_094779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9714#issuecomment-94779",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_094780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9714#issuecomment-94780",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_094783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9714#issuecomment-94783",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_094784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9714#issuecomment-94784",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -342,16 +342,16 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_094785.json:
 ```json
 {
-    "body": "Attachment [trac_9714_review.patch](tarball://root/attachments/some-uuid/ticket9714/trac_9714_review.patch) by ncohen created at 2012-02-15 10:59:27",
+    "body": "Attachment [trac_9714_review.patch](tarball://root/attachments/some-uuid/ticket9714/trac_9714_review.patch) by @nathanncohen created at 2012-02-15 10:59:27",
     "created_at": "2012-02-15T10:59:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9714#issuecomment-94785",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_9714_review.patch](tarball://root/attachments/some-uuid/ticket9714/trac_9714_review.patch) by ncohen created at 2012-02-15 10:59:27
+Attachment [trac_9714_review.patch](tarball://root/attachments/some-uuid/ticket9714/trac_9714_review.patch) by @nathanncohen created at 2012-02-15 10:59:27
 
 
 
@@ -360,16 +360,16 @@ Attachment [trac_9714_review.patch](tarball://root/attachments/some-uuid/ticket9
 archive/issue_comments_094786.json:
 ```json
 {
-    "body": "Attachment [trac_9714_review_review.patch](tarball://root/attachments/some-uuid/ticket9714/trac_9714_review_review.patch) by ncohen created at 2012-02-15 10:59:53\n\nFixed too `:-)`\n\nNathann",
+    "body": "Attachment [trac_9714_review_review.patch](tarball://root/attachments/some-uuid/ticket9714/trac_9714_review_review.patch) by @nathanncohen created at 2012-02-15 10:59:53\n\nFixed too `:-)`\n\nNathann",
     "created_at": "2012-02-15T10:59:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9714#issuecomment-94786",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_9714_review_review.patch](tarball://root/attachments/some-uuid/ticket9714/trac_9714_review_review.patch) by ncohen created at 2012-02-15 10:59:53
+Attachment [trac_9714_review_review.patch](tarball://root/attachments/some-uuid/ticket9714/trac_9714_review_review.patch) by @nathanncohen created at 2012-02-15 10:59:53
 
 Fixed too `:-)`
 
@@ -387,7 +387,7 @@ archive/issue_comments_094787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9714#issuecomment-94787",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -405,7 +405,7 @@ archive/issue_comments_094788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9714#issuecomment-94788",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

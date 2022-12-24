@@ -14,7 +14,7 @@ archive/issues_006191.json:
     "title": "atlas -- make it so SAGE_FAT_BINARY only used on x86",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6191",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -39,7 +39,7 @@ archive/issue_comments_049452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6191#issuecomment-49452",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_049453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6191#issuecomment-49453",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_049454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6191#issuecomment-49454",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_049455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6191#issuecomment-49455",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005131.json:
 ```json
 {
-    "body": "Assignee: was\n\nIf A is a free module and r a ring element then r*A and A*r used to work fine. But somebody broke them.\n\nIn the good ol days:\n\n```\nwstein@sage:/disk/scratch/mabshoff-sage-releases/sage-0.10.0$ ./sage\n[...]\nsage: A = ZZ^3\nsage: A\n _5 = Ambient free module of rank 3 over the principal ideal domain Integer Ring\nsage: 2*A\n _6 = \nFree module of degree 3 and rank 3 over Integer Ring\nEchelon basis matrix:\n[2 0 0]\n[0 2 0]\n[0 0 2]\n```\n\n\nNow:\n\n```\nsage: A = ZZ^3\nsage: 2*A\nTraceback (most recent call last):\n...\nTypeError: unsupported operand parent(s) for '*': 'Integer Ring' and '<class 'sage.modules.free_module.FreeModule_ambient_pid'>'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5131\n\n",
+    "body": "Assignee: @williamstein\n\nIf A is a free module and r a ring element then r*A and A*r used to work fine. But somebody broke them.\n\nIn the good ol days:\n\n```\nwstein@sage:/disk/scratch/mabshoff-sage-releases/sage-0.10.0$ ./sage\n[...]\nsage: A = ZZ^3\nsage: A\n _5 = Ambient free module of rank 3 over the principal ideal domain Integer Ring\nsage: 2*A\n _6 = \nFree module of degree 3 and rank 3 over Integer Ring\nEchelon basis matrix:\n[2 0 0]\n[0 2 0]\n[0 0 2]\n```\n\n\nNow:\n\n```\nsage: A = ZZ^3\nsage: 2*A\nTraceback (most recent call last):\n...\nTypeError: unsupported operand parent(s) for '*': 'Integer Ring' and '<class 'sage.modules.free_module.FreeModule_ambient_pid'>'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5131\n\n",
     "created_at": "2009-01-29T23:05:17Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005131.json:
     "title": "regression in free modules -- who broke my __mul__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5131",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 If A is a free module and r a ring element then r*A and A*r used to work fine. But somebody broke them.
 
@@ -66,7 +66,7 @@ archive/issue_comments_039234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5131",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5131#issuecomment-39234",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_039235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5131",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5131#issuecomment-39235",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_039239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5131",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5131#issuecomment-39239",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

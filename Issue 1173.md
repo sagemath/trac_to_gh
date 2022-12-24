@@ -3,7 +3,7 @@
 archive/issues_001173.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  benjaminfjones\n\nWhen implemented, this would work:\n\nsage: a = sqrt(pi)*I*erf(2*I)/2\nsage: CC(a)\n...\n\nIssue created by migration from https://trac.sagemath.org/ticket/1173\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @benjaminfjones\n\nWhen implemented, this would work:\n\nsage: a = sqrt(pi)*I*erf(2*I)/2\nsage: CC(a)\n...\n\nIssue created by migration from https://trac.sagemath.org/ticket/1173\n\n",
     "created_at": "2007-11-15T07:45:25Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_001173.json:
     "title": "implement numerical evaluation of erf at complex arguments",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1173",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  benjaminfjones
+CC:  @benjaminfjones
 
 When implemented, this would work:
 
@@ -43,7 +43,7 @@ archive/issue_comments_007196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7196",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_007198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7198",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_007199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7199",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_007200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7200",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_007201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7201",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_007202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7202",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_007204.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7204",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -278,16 +278,16 @@ Changing status from new to needs_work.
 archive/issue_comments_007205.json:
 ```json
 {
-    "body": "Attachment [trac_1173_add_complex_argument_erf.patch](tarball://root/attachments/some-uuid/ticket1173/trac_1173_add_complex_argument_erf.patch) by burcin created at 2011-02-24 09:31:45\n\nThe patch looks really good. The only problem I spotted after a quick reading is that the code blocks in the documentation should be after `::`. If the `TESTS` title is followed by text, you don't need the `::` after that.\n\nAFAIR, mpmath now supports extracting the precision from the input type in Sage. It is not necessary to do this in each calling function any more. I don't have an example handy though.\n\nFor examples of fast methods to check the type of the input you can look at `sage/symbolic/pynac.pyx`. If you replace the `PY_TYPE_CHECK()` calls with `isinstance()` you should get a reasonable speed from python.",
+    "body": "Attachment [trac_1173_add_complex_argument_erf.patch](tarball://root/attachments/some-uuid/ticket1173/trac_1173_add_complex_argument_erf.patch) by @burcin created at 2011-02-24 09:31:45\n\nThe patch looks really good. The only problem I spotted after a quick reading is that the code blocks in the documentation should be after `::`. If the `TESTS` title is followed by text, you don't need the `::` after that.\n\nAFAIR, mpmath now supports extracting the precision from the input type in Sage. It is not necessary to do this in each calling function any more. I don't have an example handy though.\n\nFor examples of fast methods to check the type of the input you can look at `sage/symbolic/pynac.pyx`. If you replace the `PY_TYPE_CHECK()` calls with `isinstance()` you should get a reasonable speed from python.",
     "created_at": "2011-02-24T09:31:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7205",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_1173_add_complex_argument_erf.patch](tarball://root/attachments/some-uuid/ticket1173/trac_1173_add_complex_argument_erf.patch) by burcin created at 2011-02-24 09:31:45
+Attachment [trac_1173_add_complex_argument_erf.patch](tarball://root/attachments/some-uuid/ticket1173/trac_1173_add_complex_argument_erf.patch) by @burcin created at 2011-02-24 09:31:45
 
 The patch looks really good. The only problem I spotted after a quick reading is that the code blocks in the documentation should be after `::`. If the `TESTS` title is followed by text, you don't need the `::` after that.
 
@@ -364,7 +364,7 @@ archive/issue_comments_007207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7207",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -402,7 +402,7 @@ archive/issue_comments_007209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7209",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -425,7 +425,7 @@ archive/issue_comments_007210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7210",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -443,7 +443,7 @@ archive/issue_comments_007211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7211",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -481,7 +481,7 @@ archive/issue_comments_007212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7212",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -499,7 +499,7 @@ archive/issue_comments_007213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7213",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -525,7 +525,7 @@ archive/issue_comments_007214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7214",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -550,7 +550,7 @@ archive/issue_comments_007215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7215",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -576,7 +576,7 @@ archive/issue_comments_007216.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7216",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -603,7 +603,7 @@ archive/issue_comments_007217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7217",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -626,7 +626,7 @@ archive/issue_comments_007218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7218",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -644,7 +644,7 @@ archive/issue_comments_007219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7219",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -682,7 +682,7 @@ archive/issue_comments_007221.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7221",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -828,16 +828,16 @@ archive/issue_comments_007223.json:
 archive/issue_comments_007224.json:
 ```json
 {
-    "body": "Attachment [trac_1173_complex_erf_v2.patch](tarball://root/attachments/some-uuid/ticket1173/trac_1173_complex_erf_v2.patch) by burcin created at 2011-10-30 11:07:58\n\nReplying to [comment:26 dsm]:\n<snip>\n> To wrap up:\n> \n> (1) Both this patch and #11143 suffer a significant slowdown relative to PARI, and have major overheads relative to calling mpmath.  Some of that's unavoidable given the symbolic path, but ISTM we should be able to do better.  Ideally there would be a reasonably efficient general special function implementation pattern, along the lines of what Benjamin used, that intermittent developers like me could be pointed to as a reference.\n\nI agree that we should do better. Note that the pattern you request is being developed in #11143  and here. Even though pynac based symbolics was merged in Sage quite a while ago, it hasn't been used properly yet.\n\nThe code path to call symbolic functions is rather convoluted. This is inevitable since symbolic functions have to play well with many different subsystems, such as fast float, numpy, etc. But it should still be possible to reduce the overhead.\n\nFor `BuiltinFunction`s the code path for evaluation goes through `Function.__call__()` in `sage/symbolic/function.pyx`, then into pynac, then to the python method you define for `_eval_()`, if numeric evaluation is needed to `_evalf_()` later. Here, between the python and C++ code, conversion functions are called to wrap pynac objects in Expression instances or to remove these wrappers.\n\nI believe most of the overhead comes from the `__call__()` method, then having to decide if the arguments are numeric in `_eval_()`, and checking if an argument is zero (#11513).\n\n> (2) In the case of erf and erfc, mpfr offers a very fast evaluation for real numbers, fast enough that it might be worth using as the default in those cases (although Python-level branching is slow in my experience, maybe slow enough to wash away the benefits).  Once we settle on an approach for erf I'll do the same for erfc.\n\nMPFR should be the default numeric evaluation method if it is available. In general, it's better to let the types choose the numeric evaluation method. Most special functions in Sage first see if an object implements a method with the same name first and calls that. For instance `erf()` should call `.erf()` for element of `RR`.\n\nI see that for subclasses of `GinacFunction` the `__call__()` method does this automatically. This is not used for other `BuiltinFunction`s though. It might make sense to move this method to `BuiltinFunction`. This would speed up most of the timings for real numbers above.\n\nUnfortunately, floats would still go through the long path. Since these are used quite often in plotting, perhaps we should add a special case in `__call__()` to go directly to `_evalf_()` as well.\n\nI made this change in attachment:trac_1173-move_call.patch. Now I get:\n\n\n```\nsage: t = RR(2.0)\nsage: %timeit z = t.erf()\n625 loops, best of 3: 16.9 \u00b5s per loop\nsage: %timeit z = erf(t)\n625 loops, best of 3: 18.2 \u00b5s per loop\n```\n\n\nPerformance for `float` is still pretty bad.\n\n\n```\nsage: u = 2.0r\nsage: %timeit z = erf(u)\n625 loops, best of 3: 156 \u00b5s per loop\n```\n\n\nI didn't check if this patch breaks anything.\n\n> (3) Should I move this out of other.py to special.py, where the complementary error_fcn function lives now?  It would seem a more natural location for it.  We also have some unfortunate naming (erf and error_fcn) it might be worth addressing.\n\nI don't think there is a need to move this to `special.py`. That file is also overcrowded and needs serious cleanup. You could create a new file names `error_fn.py` if you think that's necessary.\n\nWhat names do other systems use for these functions? AFAIK, `erf()` and `erfc()` are pretty much standard. I wonder where `error_fcn()` came from.",
+    "body": "Attachment [trac_1173_complex_erf_v2.patch](tarball://root/attachments/some-uuid/ticket1173/trac_1173_complex_erf_v2.patch) by @burcin created at 2011-10-30 11:07:58\n\nReplying to [comment:26 dsm]:\n<snip>\n> To wrap up:\n> \n> (1) Both this patch and #11143 suffer a significant slowdown relative to PARI, and have major overheads relative to calling mpmath.  Some of that's unavoidable given the symbolic path, but ISTM we should be able to do better.  Ideally there would be a reasonably efficient general special function implementation pattern, along the lines of what Benjamin used, that intermittent developers like me could be pointed to as a reference.\n\nI agree that we should do better. Note that the pattern you request is being developed in #11143  and here. Even though pynac based symbolics was merged in Sage quite a while ago, it hasn't been used properly yet.\n\nThe code path to call symbolic functions is rather convoluted. This is inevitable since symbolic functions have to play well with many different subsystems, such as fast float, numpy, etc. But it should still be possible to reduce the overhead.\n\nFor `BuiltinFunction`s the code path for evaluation goes through `Function.__call__()` in `sage/symbolic/function.pyx`, then into pynac, then to the python method you define for `_eval_()`, if numeric evaluation is needed to `_evalf_()` later. Here, between the python and C++ code, conversion functions are called to wrap pynac objects in Expression instances or to remove these wrappers.\n\nI believe most of the overhead comes from the `__call__()` method, then having to decide if the arguments are numeric in `_eval_()`, and checking if an argument is zero (#11513).\n\n> (2) In the case of erf and erfc, mpfr offers a very fast evaluation for real numbers, fast enough that it might be worth using as the default in those cases (although Python-level branching is slow in my experience, maybe slow enough to wash away the benefits).  Once we settle on an approach for erf I'll do the same for erfc.\n\nMPFR should be the default numeric evaluation method if it is available. In general, it's better to let the types choose the numeric evaluation method. Most special functions in Sage first see if an object implements a method with the same name first and calls that. For instance `erf()` should call `.erf()` for element of `RR`.\n\nI see that for subclasses of `GinacFunction` the `__call__()` method does this automatically. This is not used for other `BuiltinFunction`s though. It might make sense to move this method to `BuiltinFunction`. This would speed up most of the timings for real numbers above.\n\nUnfortunately, floats would still go through the long path. Since these are used quite often in plotting, perhaps we should add a special case in `__call__()` to go directly to `_evalf_()` as well.\n\nI made this change in attachment:trac_1173-move_call.patch. Now I get:\n\n\n```\nsage: t = RR(2.0)\nsage: %timeit z = t.erf()\n625 loops, best of 3: 16.9 \u00b5s per loop\nsage: %timeit z = erf(t)\n625 loops, best of 3: 18.2 \u00b5s per loop\n```\n\n\nPerformance for `float` is still pretty bad.\n\n\n```\nsage: u = 2.0r\nsage: %timeit z = erf(u)\n625 loops, best of 3: 156 \u00b5s per loop\n```\n\n\nI didn't check if this patch breaks anything.\n\n> (3) Should I move this out of other.py to special.py, where the complementary error_fcn function lives now?  It would seem a more natural location for it.  We also have some unfortunate naming (erf and error_fcn) it might be worth addressing.\n\nI don't think there is a need to move this to `special.py`. That file is also overcrowded and needs serious cleanup. You could create a new file names `error_fn.py` if you think that's necessary.\n\nWhat names do other systems use for these functions? AFAIK, `erf()` and `erfc()` are pretty much standard. I wonder where `error_fcn()` came from.",
     "created_at": "2011-10-30T11:07:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7224",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_1173_complex_erf_v2.patch](tarball://root/attachments/some-uuid/ticket1173/trac_1173_complex_erf_v2.patch) by burcin created at 2011-10-30 11:07:58
+Attachment [trac_1173_complex_erf_v2.patch](tarball://root/attachments/some-uuid/ticket1173/trac_1173_complex_erf_v2.patch) by @burcin created at 2011-10-30 11:07:58
 
 Replying to [comment:26 dsm]:
 <snip>
@@ -898,16 +898,16 @@ What names do other systems use for these functions? AFAIK, `erf()` and `erfc()`
 archive/issue_comments_007225.json:
 ```json
 {
-    "body": "Attachment [trac_1173-move_call.patch](tarball://root/attachments/some-uuid/ticket1173/trac_1173-move_call.patch) by burcin created at 2011-10-30 11:11:04",
+    "body": "Attachment [trac_1173-move_call.patch](tarball://root/attachments/some-uuid/ticket1173/trac_1173-move_call.patch) by @burcin created at 2011-10-30 11:11:04",
     "created_at": "2011-10-30T11:11:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7225",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_1173-move_call.patch](tarball://root/attachments/some-uuid/ticket1173/trac_1173-move_call.patch) by burcin created at 2011-10-30 11:11:04
+Attachment [trac_1173-move_call.patch](tarball://root/attachments/some-uuid/ticket1173/trac_1173-move_call.patch) by @burcin created at 2011-10-30 11:11:04
 
 
 
@@ -1009,7 +1009,7 @@ archive/issue_comments_007228.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7228",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1032,7 +1032,7 @@ archive/issue_comments_007229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7229",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1068,7 +1068,7 @@ archive/issue_comments_007230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7230",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1086,7 +1086,7 @@ archive/issue_comments_007231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7231",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1113,7 +1113,7 @@ archive/issue_comments_007232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7232",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1133,7 +1133,7 @@ archive/issue_comments_007233.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7233",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1153,7 +1153,7 @@ archive/issue_comments_007234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7234",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1171,7 +1171,7 @@ archive/issue_comments_007235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7235",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1189,7 +1189,7 @@ archive/issue_comments_007236.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7236",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1207,7 +1207,7 @@ archive/issue_comments_007237.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7237",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1225,7 +1225,7 @@ archive/issue_comments_007238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7238",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1243,7 +1243,7 @@ archive/issue_comments_007239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7239",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1264,7 +1264,7 @@ archive/issue_comments_007240.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7240",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1282,7 +1282,7 @@ archive/issue_comments_007241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7241",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1300,7 +1300,7 @@ archive/issue_comments_007242.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7242",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1318,7 +1318,7 @@ archive/issue_comments_007243.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7243",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1340,7 +1340,7 @@ archive/issue_comments_007244.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7244",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1358,7 +1358,7 @@ archive/issue_comments_007245.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7245",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1378,7 +1378,7 @@ archive/issue_comments_007246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7246",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1402,7 +1402,7 @@ archive/issue_comments_007247.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7247",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1420,7 +1420,7 @@ archive/issue_comments_007248.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7248",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1438,7 +1438,7 @@ archive/issue_comments_007249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7249",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1456,7 +1456,7 @@ archive/issue_comments_007250.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7250",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1474,7 +1474,7 @@ archive/issue_comments_007251.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7251",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1492,7 +1492,7 @@ archive/issue_comments_007252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7252",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1510,7 +1510,7 @@ archive/issue_comments_007253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7253",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1528,7 +1528,7 @@ archive/issue_comments_007254.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7254",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1546,7 +1546,7 @@ archive/issue_comments_007255.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1173#issuecomment-7255",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

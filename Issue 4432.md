@@ -3,7 +3,7 @@
 archive/issues_004432.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nThis patches adds symbolic gamma and factorial functions.\n\nThe symbolic factorial is named fact for now, so it does not clash with sage.rings.arith.factorial\n\nIssue created by migration from https://trac.sagemath.org/ticket/4432\n\n",
+    "body": "Assignee: @burcin\n\nThis patches adds symbolic gamma and factorial functions.\n\nThe symbolic factorial is named fact for now, so it does not clash with sage.rings.arith.factorial\n\nIssue created by migration from https://trac.sagemath.org/ticket/4432\n\n",
     "created_at": "2008-11-03T19:55:10Z",
     "labels": [
         "calculus",
@@ -17,7 +17,7 @@ archive/issues_004432.json:
     "user": "whuss"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 This patches adds symbolic gamma and factorial functions.
 
@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4432
 archive/issue_comments_032563.json:
 ```json
 {
-    "body": "Changing assignee from burcin to whuss.",
+    "body": "Changing assignee from @burcin to whuss.",
     "created_at": "2008-11-03T20:12:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4432",
     "type": "issue_comment",
@@ -43,7 +43,7 @@ archive/issue_comments_032563.json:
 }
 ```
 
-Changing assignee from burcin to whuss.
+Changing assignee from @burcin to whuss.
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_032565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4432",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4432#issuecomment-32565",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_032567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4432",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4432#issuecomment-32567",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -129,16 +129,16 @@ I added a patch which I think presents a cleaner solution for #4432 _and_ #4433.
 archive/issue_comments_032568.json:
 ```json
 {
-    "body": "Attachment [trac_4432-gamma.patch](tarball://root/attachments/some-uuid/ticket4432/trac_4432-gamma.patch) by burcin created at 2008-11-15 11:54:53\n\nimprovements to gamma, apply after Mike's trac_4432.patch",
+    "body": "Attachment [trac_4432-gamma.patch](tarball://root/attachments/some-uuid/ticket4432/trac_4432-gamma.patch) by @burcin created at 2008-11-15 11:54:53\n\nimprovements to gamma, apply after Mike's trac_4432.patch",
     "created_at": "2008-11-15T11:54:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4432",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4432#issuecomment-32568",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_4432-gamma.patch](tarball://root/attachments/some-uuid/ticket4432/trac_4432-gamma.patch) by burcin created at 2008-11-15 11:54:53
+Attachment [trac_4432-gamma.patch](tarball://root/attachments/some-uuid/ticket4432/trac_4432-gamma.patch) by @burcin created at 2008-11-15 11:54:53
 
 improvements to gamma, apply after Mike's trac_4432.patch
 
@@ -154,7 +154,7 @@ archive/issue_comments_032569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4432",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4432#issuecomment-32569",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_032570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4432",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4432#issuecomment-32570",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -415,7 +415,7 @@ archive/issue_comments_032576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4432",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4432#issuecomment-32576",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -433,7 +433,7 @@ archive/issue_comments_032577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4432",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4432#issuecomment-32577",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

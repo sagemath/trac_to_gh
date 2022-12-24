@@ -3,7 +3,7 @@
 archive/issues_007438.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  nthiery rlm mhansen ncohen jdemeyer dimpase\n\nI installed ubuntu-9.10, sage-4.2.1 and tried to install all optional spkg.  Graphviz fails after a long time with:\n\n```\ngcc -DHAVE_CONFIG_H -I. -I../..  -I../../lib/common -I../../lib/gvc -I../../lib/pathplan -I../../lib/graph -I../../lib/cdt -I/home/sage/sage/local/include -I/home/sage/sage/local/include  -g -O2 -Wno-unknown-pragmas -Wstrict-prototypes -Wpointer-arith -Wall -ffast-math -MT no_demand_loading.o -MD -MP -MF .deps/no_demand_loading.Tpo -c -o no_demand_loading.o `test -f '../../lib/gvc/no_demand_loading.c' || echo './'`../../lib/gvc/no_demand_loading.c\nmv -f .deps/no_demand_loading.Tpo .deps/no_demand_loading.Po\nmake[3]: *** No rule to make target `../../plugin/pango/libgvplugin_pango.la', needed by `dot_builtins'.  Stop.\nmake[3]: Leaving directory `/home/sage/sage/spkg/build/graphviz-2.16.1.p0/src/cmd/dot'\nmake[2]: *** [all-recursive] Error 1\nmake[2]: Leaving directory `/home/sage/sage/spkg/build/graphviz-2.16.1.p0/src/cmd'\nmake[1]: *** [all-recursive] Error 1\nmake[1]: Leaving directory `/home/sage/sage/spkg/build/graphviz-2.16.1.p0/src'\nmake: *** [all] Error 2\nError building Graphviz\n\nreal    14m54.042s\nuser    3m50.614s\nsys     10m25.267s\nsage: An error occurred while installing graphviz-2.16.1.p0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7438\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nthiery @rlmill @mwhansen @nathanncohen @jdemeyer @dimpase\n\nI installed ubuntu-9.10, sage-4.2.1 and tried to install all optional spkg.  Graphviz fails after a long time with:\n\n```\ngcc -DHAVE_CONFIG_H -I. -I../..  -I../../lib/common -I../../lib/gvc -I../../lib/pathplan -I../../lib/graph -I../../lib/cdt -I/home/sage/sage/local/include -I/home/sage/sage/local/include  -g -O2 -Wno-unknown-pragmas -Wstrict-prototypes -Wpointer-arith -Wall -ffast-math -MT no_demand_loading.o -MD -MP -MF .deps/no_demand_loading.Tpo -c -o no_demand_loading.o `test -f '../../lib/gvc/no_demand_loading.c' || echo './'`../../lib/gvc/no_demand_loading.c\nmv -f .deps/no_demand_loading.Tpo .deps/no_demand_loading.Po\nmake[3]: *** No rule to make target `../../plugin/pango/libgvplugin_pango.la', needed by `dot_builtins'.  Stop.\nmake[3]: Leaving directory `/home/sage/sage/spkg/build/graphviz-2.16.1.p0/src/cmd/dot'\nmake[2]: *** [all-recursive] Error 1\nmake[2]: Leaving directory `/home/sage/sage/spkg/build/graphviz-2.16.1.p0/src/cmd'\nmake[1]: *** [all-recursive] Error 1\nmake[1]: Leaving directory `/home/sage/sage/spkg/build/graphviz-2.16.1.p0/src'\nmake: *** [all] Error 2\nError building Graphviz\n\nreal    14m54.042s\nuser    3m50.614s\nsys     10m25.267s\nsage: An error occurred while installing graphviz-2.16.1.p0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7438\n\n",
     "created_at": "2009-11-12T05:24:09Z",
     "labels": [
         "packages: optional",
@@ -14,12 +14,12 @@ archive/issues_007438.json:
     "title": "the graphviz-2.16.1.p0 optional spkg fails to build on ubuntu-9.10 with a sage-4.2.1 install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7438",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
 
-CC:  nthiery rlm mhansen ncohen jdemeyer dimpase
+CC:  @nthiery @rlmill @mwhansen @nathanncohen @jdemeyer @dimpase
 
 I installed ubuntu-9.10, sage-4.2.1 and tried to install all optional spkg.  Graphviz fails after a long time with:
 
@@ -78,7 +78,7 @@ archive/issue_comments_062588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62588",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_062590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62590",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_062591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62591",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_062592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62592",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_062593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62593",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_062594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62594",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_062595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62595",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_062596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62596",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -333,7 +333,7 @@ archive/issue_comments_062597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62597",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -351,7 +351,7 @@ archive/issue_comments_062598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62598",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -369,7 +369,7 @@ archive/issue_comments_062599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62599",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -387,7 +387,7 @@ archive/issue_comments_062600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62600",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -405,7 +405,7 @@ archive/issue_comments_062601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62601",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 

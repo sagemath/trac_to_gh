@@ -14,7 +14,7 @@ archive/issues_008057.json:
     "title": "New boehm-gc-7.1.p3.spkg works with Open Solaris 64 bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8057",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: drkirkby
@@ -44,7 +44,7 @@ archive/issue_comments_070494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8057",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8057#issuecomment-70494",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -57,16 +57,16 @@ Changing status from new to needs_review.
 archive/issue_comments_070495.json:
 ```json
 {
-    "body": "Attachment [boehm_gc-7.1.p3.patch](tarball://root/attachments/some-uuid/ticket8057/boehm_gc-7.1.p3.patch) by jsp created at 2010-01-26 17:24:39",
+    "body": "Attachment [boehm_gc-7.1.p3.patch](tarball://root/attachments/some-uuid/ticket8057/boehm_gc-7.1.p3.patch) by @jaapspies created at 2010-01-26 17:24:39",
     "created_at": "2010-01-26T17:24:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8057",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8057#issuecomment-70495",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [boehm_gc-7.1.p3.patch](tarball://root/attachments/some-uuid/ticket8057/boehm_gc-7.1.p3.patch) by jsp created at 2010-01-26 17:24:39
+Attachment [boehm_gc-7.1.p3.patch](tarball://root/attachments/some-uuid/ticket8057/boehm_gc-7.1.p3.patch) by @jaapspies created at 2010-01-26 17:24:39
 
 
 

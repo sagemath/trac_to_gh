@@ -3,7 +3,7 @@
 archive/issues_008513.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  ncohen rlm\n\nKeywords: documentation, graph theory\n\nI noticed a few weeks ago while reviewing a patch that important files in the graph theory folder were not appearing anywhere in the reference manual. For instance, functions such as `vertex_cut` or `edge_cut` do not appear, as well as all functions defined only for directed graphs.\n\nAt that time, I thought about adding the missing files with the patch, but since there were a lot of warnings displayed by Sphinx while generating the documentation, I changed my mind.\n\nI think it would be a good idea to use this ticket to fix this, but since it touches many files of graph theory, it may be hard to do it in a clean way. Someone has an idea of what would be the best approach ?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8513\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @nathanncohen @rlmill\n\nKeywords: documentation, graph theory\n\nI noticed a few weeks ago while reviewing a patch that important files in the graph theory folder were not appearing anywhere in the reference manual. For instance, functions such as `vertex_cut` or `edge_cut` do not appear, as well as all functions defined only for directed graphs.\n\nAt that time, I thought about adding the missing files with the patch, but since there were a lot of warnings displayed by Sphinx while generating the documentation, I changed my mind.\n\nI think it would be a good idea to use this ticket to fix this, but since it touches many files of graph theory, it may be hard to do it in a clean way. Someone has an idea of what would be the best approach ?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8513\n\n",
     "created_at": "2010-03-12T23:52:07Z",
     "labels": [
         "graph theory",
@@ -17,9 +17,9 @@ archive/issues_008513.json:
     "user": "abmasse"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  ncohen rlm
+CC:  @nathanncohen @rlmill
 
 Keywords: documentation, graph theory
 
@@ -211,7 +211,7 @@ archive/issue_comments_076879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76879",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_076881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76881",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -357,7 +357,7 @@ archive/issue_comments_076885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76885",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -484,7 +484,7 @@ archive/issue_comments_076889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76889",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -502,7 +502,7 @@ archive/issue_comments_076890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76890",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -581,7 +581,7 @@ archive/issue_comments_076894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76894",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -641,7 +641,7 @@ archive/issue_comments_076897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76897",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -659,7 +659,7 @@ archive/issue_comments_076898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76898",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -677,7 +677,7 @@ archive/issue_comments_076899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76899",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -695,7 +695,7 @@ archive/issue_comments_076900.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76900",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

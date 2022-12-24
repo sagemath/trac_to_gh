@@ -3,7 +3,7 @@
 archive/issues_002996.json:
 ```json
 {
-    "body": "Assignee: was\n\nWith KDE 3.5.9, the background color of the window defaults to white, not purple.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/2996\n\n",
+    "body": "Assignee: @williamstein\n\nWith KDE 3.5.9, the background color of the window defaults to white, not purple.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/2996\n\n",
     "created_at": "2008-04-22T05:49:13Z",
     "labels": [
         "website/wiki",
@@ -14,10 +14,10 @@ archive/issues_002996.json:
     "title": "lite webpage broken under Konqueror",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2996",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 With KDE 3.5.9, the background color of the window defaults to white, not purple.  
 
@@ -37,7 +37,7 @@ archive/issue_comments_020606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2996",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2996#issuecomment-20606",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

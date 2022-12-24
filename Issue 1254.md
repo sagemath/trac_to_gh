@@ -3,7 +3,7 @@
 archive/issues_001254.json:
 ```json
 {
-    "body": "Assignee: wdj\n\nCC:  sage-combinat\n\nThe patch\nhttp://sage.math.washington.edu/home/wdj/patches/combinat20071124.hg\ndoes the following: \n(1) adds a wrapper to guava's HadamardMat, constructing Hadamard matrices of \ncertain types,\n(2) modifies the function permutations following the suggestions in the \n\"bug in permutations\" thread\nhttp://thread.gmane.org/gmane.comp.mathematics.sage.support/2245\n\nIssue created by migration from https://trac.sagemath.org/ticket/1254\n\n",
+    "body": "Assignee: @wdjoyner\n\nCC:  sage-combinat\n\nThe patch\nhttp://sage.math.washington.edu/home/wdj/patches/combinat20071124.hg\ndoes the following: \n(1) adds a wrapper to guava's HadamardMat, constructing Hadamard matrices of \ncertain types,\n(2) modifies the function permutations following the suggestions in the \n\"bug in permutations\" thread\nhttp://thread.gmane.org/gmane.comp.mathematics.sage.support/2245\n\nIssue created by migration from https://trac.sagemath.org/ticket/1254\n\n",
     "created_at": "2007-11-24T17:40:57Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001254.json:
     "title": "revision to combinat.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1254",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: wdj
+Assignee: @wdjoyner
 
 CC:  sage-combinat
 
@@ -46,7 +46,7 @@ archive/issue_comments_007841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1254#issuecomment-7841",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -59,16 +59,16 @@ use this instead of the hg bundle linked to
 archive/issue_comments_007842.json:
 ```json
 {
-    "body": "Attachment [hadamard.hg](tarball://root/attachments/some-uuid/ticket1254/hadamard.hg) by was created at 2007-11-24 18:32:54\n\nI've refereed this -- it has some typos, and bad design, but this is fixed in hadamard.hg.",
+    "body": "Attachment [hadamard.hg](tarball://root/attachments/some-uuid/ticket1254/hadamard.hg) by @williamstein created at 2007-11-24 18:32:54\n\nI've refereed this -- it has some typos, and bad design, but this is fixed in hadamard.hg.",
     "created_at": "2007-11-24T18:32:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1254#issuecomment-7842",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [hadamard.hg](tarball://root/attachments/some-uuid/ticket1254/hadamard.hg) by was created at 2007-11-24 18:32:54
+Attachment [hadamard.hg](tarball://root/attachments/some-uuid/ticket1254/hadamard.hg) by @williamstein created at 2007-11-24 18:32:54
 
 I've refereed this -- it has some typos, and bad design, but this is fixed in hadamard.hg.
 

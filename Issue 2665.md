@@ -3,7 +3,7 @@
 archive/issues_002665.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nCC:  ncalexan\n\nKeywords: symbolic SR complex interval field CIF\n\n\n```\nsage: SR(0) * CIF(I)\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/<ipython console> in <module>()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/element.pyx in sage.structure.element.RingElement.__mul__()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.get_action_c()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.discover_action_c()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/parent.pyx in sage.structure.parent.Parent.get_action_c()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/parent.pyx in sage.structure.parent.Parent.get_action_impl()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/parent.pyx in sage.structure.parent.Parent.get_action_c_impl()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/parent.pyx in sage.structure.parent._register_pair()\n\n<type 'exceptions.NotImplementedError'>: Infinite loop in multiplication of [1.0000000000000000 .. 1.0000000000000000]*I (parent Complex Interval Field with 53 bits of precision) and \n                                       0 (parent Symbolic Ring)!}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/2665\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  @ncalexan\n\nKeywords: symbolic SR complex interval field CIF\n\n\n```\nsage: SR(0) * CIF(I)\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/<ipython console> in <module>()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/element.pyx in sage.structure.element.RingElement.__mul__()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.get_action_c()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.discover_action_c()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/parent.pyx in sage.structure.parent.Parent.get_action_c()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/parent.pyx in sage.structure.parent.Parent.get_action_impl()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/parent.pyx in sage.structure.parent.Parent.get_action_c_impl()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/parent.pyx in sage.structure.parent._register_pair()\n\n<type 'exceptions.NotImplementedError'>: Infinite loop in multiplication of [1.0000000000000000 .. 1.0000000000000000]*I (parent Complex Interval Field with 53 bits of precision) and \n                                       0 (parent Symbolic Ring)!}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/2665\n\n",
     "created_at": "2008-03-25T20:26:38Z",
     "labels": [
         "coercion",
@@ -14,12 +14,12 @@ archive/issues_002665.json:
     "title": "error in coercion between CIF and SR",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2665",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
-CC:  ncalexan
+CC:  @ncalexan
 
 Keywords: symbolic SR complex interval field CIF
 
@@ -66,7 +66,7 @@ archive/issue_comments_018336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2665#issuecomment-18336",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_018337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2665#issuecomment-18337",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_018338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2665#issuecomment-18338",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_018339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2665#issuecomment-18339",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_018340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2665#issuecomment-18340",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

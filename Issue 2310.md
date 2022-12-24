@@ -14,7 +14,7 @@ archive/issues_002310.json:
     "title": "[with patch; needs review] bug attaching files in files that are attached",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2310",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2310
 archive/issue_comments_015373.json:
 ```json
 {
-    "body": "Attachment [sage-2310.patch](tarball://root/attachments/some-uuid/ticket2310/sage-2310.patch) by was created at 2008-02-26 04:17:06\n\nThis likely depends on #1964.",
+    "body": "Attachment [sage-2310.patch](tarball://root/attachments/some-uuid/ticket2310/sage-2310.patch) by @williamstein created at 2008-02-26 04:17:06\n\nThis likely depends on #1964.",
     "created_at": "2008-02-26T04:17:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2310#issuecomment-15373",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2310.patch](tarball://root/attachments/some-uuid/ticket2310/sage-2310.patch) by was created at 2008-02-26 04:17:06
+Attachment [sage-2310.patch](tarball://root/attachments/some-uuid/ticket2310/sage-2310.patch) by @williamstein created at 2008-02-26 04:17:06
 
 This likely depends on #1964.
 
@@ -63,7 +63,7 @@ archive/issue_comments_015374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2310#issuecomment-15374",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_015375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2310#issuecomment-15375",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_015376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2310#issuecomment-15376",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

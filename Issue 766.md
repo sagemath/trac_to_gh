@@ -3,7 +3,7 @@
 archive/issues_000766.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe method an_element_impl() is defined twice (lines 60, 103).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/766\n\n",
+    "body": "Assignee: @williamstein\n\nThe method an_element_impl() is defined twice (lines 60, 103).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/766\n\n",
     "created_at": "2007-09-30T21:01:13Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_000766.json:
     "user": "justin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The method an_element_impl() is defined twice (lines 60, 103).
 
@@ -52,16 +52,16 @@ The bundle
 archive/issue_comments_004532.json:
 ```json
 {
-    "body": "Attachment [Trac766.hg](tarball://root/attachments/some-uuid/ticket766/Trac766.hg) by was created at 2007-11-03 15:28:03",
+    "body": "Attachment [Trac766.hg](tarball://root/attachments/some-uuid/ticket766/Trac766.hg) by @williamstein created at 2007-11-03 15:28:03",
     "created_at": "2007-11-03T15:28:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/766#issuecomment-4532",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [Trac766.hg](tarball://root/attachments/some-uuid/ticket766/Trac766.hg) by was created at 2007-11-03 15:28:03
+Attachment [Trac766.hg](tarball://root/attachments/some-uuid/ticket766/Trac766.hg) by @williamstein created at 2007-11-03 15:28:03
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_004533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/766#issuecomment-4533",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

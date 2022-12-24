@@ -3,7 +3,7 @@
 archive/issues_008997.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  rkirov minz oleksandrmotsak\n\nSee the file schemes/plane_curves/projective_curve.py, where it says\n\n```\n\n        The following example illustrates that the Riemann-Roch space\n        function in Singular doesn't *not* work correctly.\n        \n        ::\n        \n            sage: R.<x,y,z> = GF(5)[]\n            sage: f = x^7 + y^7 + z^7\n            sage: C = Curve(f); pts = C.rational_points()\n            sage: D = C.divisor([ (3, pts[0]), (-1,pts[1]), (10, pts[5]) ])\n            sage: C.riemann_roch_basis(D)    # output is random (!!!!)\n            [x/(y + x), (z + y)/(y + x)]\n        \n        The answer has dimension 2 (confirmed via Magma). But it varies\n        between 1 and quite large with Singular.\n```\n\n\nThe problem can be solved by learning how the relevant code in Singular works then correctly wrapping it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8997\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  rkirov minz oleksandrmotsak\n\nSee the file schemes/plane_curves/projective_curve.py, where it says\n\n```\n\n        The following example illustrates that the Riemann-Roch space\n        function in Singular doesn't *not* work correctly.\n        \n        ::\n        \n            sage: R.<x,y,z> = GF(5)[]\n            sage: f = x^7 + y^7 + z^7\n            sage: C = Curve(f); pts = C.rational_points()\n            sage: D = C.divisor([ (3, pts[0]), (-1,pts[1]), (10, pts[5]) ])\n            sage: C.riemann_roch_basis(D)    # output is random (!!!!)\n            [x/(y + x), (z + y)/(y + x)]\n        \n        The answer has dimension 2 (confirmed via Magma). But it varies\n        between 1 and quite large with Singular.\n```\n\n\nThe problem can be solved by learning how the relevant code in Singular works then correctly wrapping it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8997\n\n",
     "created_at": "2010-05-20T00:19:02Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_008997.json:
     "title": "riemann_roch_basis is implemented incorrectly in sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8997",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 CC:  rkirov minz oleksandrmotsak
 
@@ -60,7 +60,7 @@ archive/issue_comments_083185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8997#issuecomment-83185",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_083186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8997#issuecomment-83186",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_083187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8997#issuecomment-83187",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_083188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8997#issuecomment-83188",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_083189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8997#issuecomment-83189",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -159,16 +159,16 @@ apply to 4.4.2
 archive/issue_comments_083190.json:
 ```json
 {
-    "body": "Attachment [trac_8997-riemann-roch.patch](tarball://root/attachments/some-uuid/ticket8997/trac_8997-riemann-roch.patch) by wdj created at 2010-05-26 18:56:52\n\nThe attached patch seems to fix the problem. When applied to 4.4.2 on a 10.6.3 mac, it passes sage -testall except for an unrelated docstring failure (in interfaces/r.py).\n\nI'm leaving it as needs work for now since I want to test it on more machines. I'm posting it in case others want to test it too.",
+    "body": "Attachment [trac_8997-riemann-roch.patch](tarball://root/attachments/some-uuid/ticket8997/trac_8997-riemann-roch.patch) by @wdjoyner created at 2010-05-26 18:56:52\n\nThe attached patch seems to fix the problem. When applied to 4.4.2 on a 10.6.3 mac, it passes sage -testall except for an unrelated docstring failure (in interfaces/r.py).\n\nI'm leaving it as needs work for now since I want to test it on more machines. I'm posting it in case others want to test it too.",
     "created_at": "2010-05-26T18:56:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8997#issuecomment-83190",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_8997-riemann-roch.patch](tarball://root/attachments/some-uuid/ticket8997/trac_8997-riemann-roch.patch) by wdj created at 2010-05-26 18:56:52
+Attachment [trac_8997-riemann-roch.patch](tarball://root/attachments/some-uuid/ticket8997/trac_8997-riemann-roch.patch) by @wdjoyner created at 2010-05-26 18:56:52
 
 The attached patch seems to fix the problem. When applied to 4.4.2 on a 10.6.3 mac, it passes sage -testall except for an unrelated docstring failure (in interfaces/r.py).
 
@@ -186,7 +186,7 @@ archive/issue_comments_083191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8997#issuecomment-83191",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_083192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8997#issuecomment-83192",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -381,7 +381,7 @@ archive/issue_comments_083199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8997#issuecomment-83199",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -406,7 +406,7 @@ archive/issue_comments_083200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8997#issuecomment-83200",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -426,7 +426,7 @@ archive/issue_comments_083201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8997#issuecomment-83201",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -444,7 +444,7 @@ archive/issue_comments_083202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8997#issuecomment-83202",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -462,7 +462,7 @@ archive/issue_comments_083203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8997#issuecomment-83203",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -482,7 +482,7 @@ archive/issue_comments_083204.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8997#issuecomment-83204",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -510,7 +510,7 @@ archive/issue_comments_083205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8997#issuecomment-83205",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -532,7 +532,7 @@ archive/issue_comments_083206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8997#issuecomment-83206",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -557,7 +557,7 @@ archive/issue_comments_083207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8997#issuecomment-83207",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -575,7 +575,7 @@ archive/issue_comments_083208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8997#issuecomment-83208",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -593,7 +593,7 @@ archive/issue_comments_083209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8997#issuecomment-83209",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

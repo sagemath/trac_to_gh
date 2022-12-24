@@ -14,7 +14,7 @@ archive/issues_006840.json:
     "title": "Fix documentation for Sage Notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6840",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 Assignee: boothby
@@ -62,7 +62,7 @@ archive/issue_comments_056410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6840#issuecomment-56410",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -75,16 +75,16 @@ Fixes docstrings added by patch #6568 in `notebook.py` and `worksheet.py`. Depen
 archive/issue_comments_056411.json:
 ```json
 {
-    "body": "Attachment [trac_6840-notebook-documentation.patch](tarball://root/attachments/some-uuid/ticket6840/trac_6840-notebook-documentation.patch) by mpatel created at 2009-08-30 10:16:59\n\nI think there is some \"overlap\" here with version 2 of the patch at #5360.  But that patch makes only a few changes to `notebook.py`.  To avoid merge conflicts, should I put them in a separate patch or bring them here?",
+    "body": "Attachment [trac_6840-notebook-documentation.patch](tarball://root/attachments/some-uuid/ticket6840/trac_6840-notebook-documentation.patch) by @qed777 created at 2009-08-30 10:16:59\n\nI think there is some \"overlap\" here with version 2 of the patch at #5360.  But that patch makes only a few changes to `notebook.py`.  To avoid merge conflicts, should I put them in a separate patch or bring them here?",
     "created_at": "2009-08-30T10:16:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6840#issuecomment-56411",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6840-notebook-documentation.patch](tarball://root/attachments/some-uuid/ticket6840/trac_6840-notebook-documentation.patch) by mpatel created at 2009-08-30 10:16:59
+Attachment [trac_6840-notebook-documentation.patch](tarball://root/attachments/some-uuid/ticket6840/trac_6840-notebook-documentation.patch) by @qed777 created at 2009-08-30 10:16:59
 
 I think there is some "overlap" here with version 2 of the patch at #5360.  But that patch makes only a few changes to `notebook.py`.  To avoid merge conflicts, should I put them in a separate patch or bring them here?
 
@@ -100,7 +100,7 @@ archive/issue_comments_056412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6840#issuecomment-56412",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_056413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6840#issuecomment-56413",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_056414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6840#issuecomment-56414",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -149,16 +149,16 @@ Merged changes from #5360. Apply only this file.
 archive/issue_comments_056415.json:
 ```json
 {
-    "body": "Attachment [trac_6840-notebook-documentation-v2.patch](tarball://root/attachments/some-uuid/ticket6840/trac_6840-notebook-documentation-v2.patch) by timdumol created at 2009-08-30 18:13:32\n\nOBSOLETE.",
+    "body": "Attachment [trac_6840-notebook-documentation-v2.patch](tarball://root/attachments/some-uuid/ticket6840/trac_6840-notebook-documentation-v2.patch) by @TimDumol created at 2009-08-30 18:13:32\n\nOBSOLETE.",
     "created_at": "2009-08-30T18:13:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6840#issuecomment-56415",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_6840-notebook-documentation-v2.patch](tarball://root/attachments/some-uuid/ticket6840/trac_6840-notebook-documentation-v2.patch) by timdumol created at 2009-08-30 18:13:32
+Attachment [trac_6840-notebook-documentation-v2.patch](tarball://root/attachments/some-uuid/ticket6840/trac_6840-notebook-documentation-v2.patch) by @TimDumol created at 2009-08-30 18:13:32
 
 OBSOLETE.
 
@@ -169,16 +169,16 @@ OBSOLETE.
 archive/issue_comments_056416.json:
 ```json
 {
-    "body": "Attachment [trac_6840-notebook-documentation.v2.patch](tarball://root/attachments/some-uuid/ticket6840/trac_6840-notebook-documentation.v2.patch) by mpatel created at 2009-08-30 18:18:08\n\nI think the patch somehow got doubled in size during the merger.",
+    "body": "Attachment [trac_6840-notebook-documentation.v2.patch](tarball://root/attachments/some-uuid/ticket6840/trac_6840-notebook-documentation.v2.patch) by @qed777 created at 2009-08-30 18:18:08\n\nI think the patch somehow got doubled in size during the merger.",
     "created_at": "2009-08-30T18:18:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6840#issuecomment-56416",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6840-notebook-documentation.v2.patch](tarball://root/attachments/some-uuid/ticket6840/trac_6840-notebook-documentation.v2.patch) by mpatel created at 2009-08-30 18:18:08
+Attachment [trac_6840-notebook-documentation.v2.patch](tarball://root/attachments/some-uuid/ticket6840/trac_6840-notebook-documentation.v2.patch) by @qed777 created at 2009-08-30 18:18:08
 
 I think the patch somehow got doubled in size during the merger.
 
@@ -194,7 +194,7 @@ archive/issue_comments_056417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6840#issuecomment-56417",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_056418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6840#issuecomment-56418",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -231,16 +231,16 @@ Please feel free to make more changes.  Or we can just put this up for review an
 archive/issue_comments_056419.json:
 ```json
 {
-    "body": "Attachment [trac_6840-notebook-documentation-v3.patch](tarball://root/attachments/some-uuid/ticket6840/trac_6840-notebook-documentation-v3.patch) by mpatel created at 2009-08-31 03:08:17\n\nVersion 3.  Apply only this patch.",
+    "body": "Attachment [trac_6840-notebook-documentation-v3.patch](tarball://root/attachments/some-uuid/ticket6840/trac_6840-notebook-documentation-v3.patch) by @qed777 created at 2009-08-31 03:08:17\n\nVersion 3.  Apply only this patch.",
     "created_at": "2009-08-31T03:08:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6840#issuecomment-56419",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6840-notebook-documentation-v3.patch](tarball://root/attachments/some-uuid/ticket6840/trac_6840-notebook-documentation-v3.patch) by mpatel created at 2009-08-31 03:08:17
+Attachment [trac_6840-notebook-documentation-v3.patch](tarball://root/attachments/some-uuid/ticket6840/trac_6840-notebook-documentation-v3.patch) by @qed777 created at 2009-08-31 03:08:17
 
 Version 3.  Apply only this patch.
 
@@ -251,16 +251,16 @@ Version 3.  Apply only this patch.
 archive/issue_comments_056420.json:
 ```json
 {
-    "body": "Attachment [trac_6840-notebook-documentation-v4.patch](tarball://root/attachments/some-uuid/ticket6840/trac_6840-notebook-documentation-v4.patch) by timdumol created at 2009-08-31 10:15:45\n\nVersion 4. Brought up `cell.py` coverage to almost 100%, except for 2 functions.",
+    "body": "Attachment [trac_6840-notebook-documentation-v4.patch](tarball://root/attachments/some-uuid/ticket6840/trac_6840-notebook-documentation-v4.patch) by @TimDumol created at 2009-08-31 10:15:45\n\nVersion 4. Brought up `cell.py` coverage to almost 100%, except for 2 functions.",
     "created_at": "2009-08-31T10:15:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6840#issuecomment-56420",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_6840-notebook-documentation-v4.patch](tarball://root/attachments/some-uuid/ticket6840/trac_6840-notebook-documentation-v4.patch) by timdumol created at 2009-08-31 10:15:45
+Attachment [trac_6840-notebook-documentation-v4.patch](tarball://root/attachments/some-uuid/ticket6840/trac_6840-notebook-documentation-v4.patch) by @TimDumol created at 2009-08-31 10:15:45
 
 Version 4. Brought up `cell.py` coverage to almost 100%, except for 2 functions.
 
@@ -276,7 +276,7 @@ archive/issue_comments_056421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6840#issuecomment-56421",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -359,7 +359,7 @@ archive/issue_comments_056423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6840#issuecomment-56423",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -377,7 +377,7 @@ archive/issue_comments_056424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6840#issuecomment-56424",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -390,16 +390,16 @@ Fixed documentation warnings and doctest failure. Apply this patch only.
 archive/issue_comments_056425.json:
 ```json
 {
-    "body": "Attachment [trac_6840-notebook-documentation-v5.patch](tarball://root/attachments/some-uuid/ticket6840/trac_6840-notebook-documentation-v5.patch) by mpatel created at 2009-08-31 20:43:37\n\nMiscellaneous tiny changes (see comment). Apply only this patch.",
+    "body": "Attachment [trac_6840-notebook-documentation-v5.patch](tarball://root/attachments/some-uuid/ticket6840/trac_6840-notebook-documentation-v5.patch) by @qed777 created at 2009-08-31 20:43:37\n\nMiscellaneous tiny changes (see comment). Apply only this patch.",
     "created_at": "2009-08-31T20:43:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6840#issuecomment-56425",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6840-notebook-documentation-v5.patch](tarball://root/attachments/some-uuid/ticket6840/trac_6840-notebook-documentation-v5.patch) by mpatel created at 2009-08-31 20:43:37
+Attachment [trac_6840-notebook-documentation-v5.patch](tarball://root/attachments/some-uuid/ticket6840/trac_6840-notebook-documentation-v5.patch) by @qed777 created at 2009-08-31 20:43:37
 
 Miscellaneous tiny changes (see comment). Apply only this patch.
 
@@ -410,16 +410,16 @@ Miscellaneous tiny changes (see comment). Apply only this patch.
 archive/issue_comments_056426.json:
 ```json
 {
-    "body": "Attachment [trac_6840-notebook-documentation-v6.patch](tarball://root/attachments/some-uuid/ticket6840/trac_6840-notebook-documentation-v6.patch) by mpatel created at 2009-08-31 20:54:01\n\nv6 changes:\n\n* Fixed `INPUT::` in `template.py`.\n* Removed the space immediately after `:meth:` in two places in `cell.py`.\n* Removed `config.py` from `notebook.rst`, since there's no significant documentation yet on notebook key bindings.\n\nThat's impressive coverage for `cell.py`!  It seems that `Cell.stop_interacting()` isn't even called in the Sage library.",
+    "body": "Attachment [trac_6840-notebook-documentation-v6.patch](tarball://root/attachments/some-uuid/ticket6840/trac_6840-notebook-documentation-v6.patch) by @qed777 created at 2009-08-31 20:54:01\n\nv6 changes:\n\n* Fixed `INPUT::` in `template.py`.\n* Removed the space immediately after `:meth:` in two places in `cell.py`.\n* Removed `config.py` from `notebook.rst`, since there's no significant documentation yet on notebook key bindings.\n\nThat's impressive coverage for `cell.py`!  It seems that `Cell.stop_interacting()` isn't even called in the Sage library.",
     "created_at": "2009-08-31T20:54:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6840#issuecomment-56426",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6840-notebook-documentation-v6.patch](tarball://root/attachments/some-uuid/ticket6840/trac_6840-notebook-documentation-v6.patch) by mpatel created at 2009-08-31 20:54:01
+Attachment [trac_6840-notebook-documentation-v6.patch](tarball://root/attachments/some-uuid/ticket6840/trac_6840-notebook-documentation-v6.patch) by @qed777 created at 2009-08-31 20:54:01
 
 v6 changes:
 
@@ -441,7 +441,7 @@ archive/issue_comments_056427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6840#issuecomment-56427",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -491,7 +491,7 @@ archive/issue_comments_056429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6840#issuecomment-56429",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -513,7 +513,7 @@ archive/issue_comments_056430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6840#issuecomment-56430",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

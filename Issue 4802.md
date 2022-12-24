@@ -3,7 +3,7 @@
 archive/issues_004802.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4802\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4802\n\n",
     "created_at": "2008-12-15T06:19:02Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_004802.json:
     "title": "[with patch, positive review] Add an on the fly ranker to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4802",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -39,7 +39,7 @@ archive/issue_comments_036400.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4802",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4802#issuecomment-36400",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -52,16 +52,16 @@ Patch by Nicolas Thiery, review by Mike Hansen
 archive/issue_comments_036401.json:
 ```json
 {
-    "body": "Attachment [trac_4802.patch](tarball://root/attachments/some-uuid/ticket4802/trac_4802.patch) by mhansen created at 2008-12-15 06:51:09",
+    "body": "Attachment [trac_4802.patch](tarball://root/attachments/some-uuid/ticket4802/trac_4802.patch) by @mwhansen created at 2008-12-15 06:51:09",
     "created_at": "2008-12-15T06:51:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4802",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4802#issuecomment-36401",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4802.patch](tarball://root/attachments/some-uuid/ticket4802/trac_4802.patch) by mhansen created at 2008-12-15 06:51:09
+Attachment [trac_4802.patch](tarball://root/attachments/some-uuid/ticket4802/trac_4802.patch) by @mwhansen created at 2008-12-15 06:51:09
 
 
 

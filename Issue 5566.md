@@ -3,7 +3,7 @@
 archive/issues_005566.json:
 ```json
 {
-    "body": "Assignee: SimonKing\n\nCC:  mhansen malb\n\nThis ticket is related with [#5453], but the patch should apply to a clean `sage-3.4`.\n\n**Symmetric Ideals** were introduced by [Aschenbrenner and Hillar](http://de.arxiv.org/abs/math/0502078/), meaning \"ideals in polynomial rings with countably many variables that are set-wise invariant under all variable permutations\"; it was shown that they are finitely generated. \n\nLater on, Aschenbrenner and Hillar also presented a [Buchberger algorithm](http://de.arxiv.org/abs/0801.4439/) for Symmetric Ideals. \n\nMy aim is to implement this into Sage. The patch provides classes for the Symmetric Polynomial Rings, their elements and their ideals. The methods implement basic polynomial arithmetic, the permutation action, the *Symmetric Cancellation Order* (a notion that is central in the work of Aschenbrenner and Hillar), symmetric reduction, and the computation of Gr\u00f6bner bases.\n\nHere are some examples showing the main features\n\n```\nsage: X.<x,y> = SymmetricPolynomialRing(QQ)\n```\n\n\nNow, x and y are generators of X, meaning that we have two infinite sequences of variables, one obtained by `x[n]` and the other by `y[m]` for integers m, n.\n\nWe can do polynomial arithmetic in X, and we can create ideals in the usual way:\n\n```\nsage: I=X*(x[1]^2+y[2]^2,x[1]*x[2]*y[3]+x[1]*y[4])\n```\n\n\nNow, we can compute a Gr\u00f6bner basis; the default monomial order is lexicographic (see below).\n\n```\nsage: J=I.groebner_basis()\nsage: J\nIdeal (x1^4 + x1^3, x2*x1^2 - x1^3, x2^2 - x1^2, y1*x1^3 + y1*x1^2, y1*x2 + y1*x1^2, y1^2 + x1^2, y2*x1 + y1*x1^2) of Symmetric polynomial ring in x, y over Rational Field\n```\n\n\nWe can do ideal membership test by computing normal forms (symmetric reduction):\n\n```\nsage: I.reduce(J)\nIdeal (0, 0) of Symmetric polynomial ring in x, y over Rational Field\n```\n\n\nNote that J is not point-wise symmetric. E.g., we have\n\n```\nsage: G=J.gens()\nsage: P=Permutation([1, 4, 3, 2])\nsage: G[2]\nx2^2 - x1^2\nsage: G[2]^P\nx4^2 - x1^2\nsage: G.__contains__(G[2]^P)\nFalse\n```\n\n\nBut it is set-wise symmetric, e.g.:\n\n```\nsage: [(p^P).reduce(J) for p in G]\n[0, 0, 0, 0, 0, 0, 0]\n```\n\n\nAs usual, it is a special feature of Gr\u00f6bner bases that they produce unique normal forms. I is not a Gr\u00f6bner basis, and thus ideal membership test wouldn't work:\n\n```\nsage: [p.reduce(I) for p in G]\n\n[x1^4 + x1^3,\n x2*x1^2 - x1^3,\n x2^2 - x1^2,\n y1*x1^3 + y1*x1^2,\n y1*x2 + y1*x1^2,\n y1^2 + x1^2,\n y2*x1 + y1*x1^2]\n```\n\n\nNote that various monomial orders are supported: lex (default), deglex, and degrevlex. \n\nNote that Aschenbrenner and Hillar restrict their attention to the lexicographic order, and it is not entirely clear whether the Buchberger algorithm would terminate in the other orders, too. But here, it does. As usual, the Gr\u00f6bner basis depends on the ordering:\n\n```\nsage: Y.<x,y> = SymmetricPolynomialRing(QQ,order='degrevlex')\nsage: I2=Y*(x[1]^2+y[2]^2,x[1]*x[2]*y[3]+x[1]*y[4])\nsage: J2=I2.groebner_basis()\nsage: J2\nIdeal (y3*x1 - y2*x1, x2^2 - x1^2, y1*x2 - y2*x1, y1^2 + x1^2, x2*x1^2 - x1^3, y1*x1^2 + y2*x1, y2*x1^2 + y2*x1, y2*x2*x1 + y2*x1, y2*y1*x1 + x1^3, x1^4 + x1^3) of Symmetric polynomial ring in x, y over Rational Field\n```\n\n\nNote that we assume an automatic (name-preserving) conversion between X and Y. Hence, we can do the following and see that J2 is not a *lexicographic* Gr\u00f6bner basis:\n\n```\nsage: J.reduce(J2)\nIdeal (0, 0, 0, y2*x1 + y1*x1^2, y2*x1 + y1*x1^2, 0, y2*x1 + y1*x1^2) of Symmetric polynomial ring in x, y over Rational Field\n```\n\n\nIn any order, we insist to have `X.gen(i)[m]<X.gen(j)[n]` if and only if i<j or (i==j and m<n).\n\nProbably the doc tests should be improved, and I think it would also be nice to overload the `__pow__` and `__mul__` methods for Symmetric Ideals, since the default methods do not give the correct result: We should have `(X*(x[1]))^2 == X*(x[1]^2,x[1]*x[2])`.\nAlso, it may be that there should be no coercion between X and Y in the above situation.\n\nTherefore I am uncertain whether it is 'needs review' or 'needs work'. I think I leave it as 'with patch'...\n\nIssue created by migration from https://trac.sagemath.org/ticket/5566\n\n",
+    "body": "Assignee: @simon-king-jena\n\nCC:  @mwhansen @malb\n\nThis ticket is related with [#5453], but the patch should apply to a clean `sage-3.4`.\n\n**Symmetric Ideals** were introduced by [Aschenbrenner and Hillar](http://de.arxiv.org/abs/math/0502078/), meaning \"ideals in polynomial rings with countably many variables that are set-wise invariant under all variable permutations\"; it was shown that they are finitely generated. \n\nLater on, Aschenbrenner and Hillar also presented a [Buchberger algorithm](http://de.arxiv.org/abs/0801.4439/) for Symmetric Ideals. \n\nMy aim is to implement this into Sage. The patch provides classes for the Symmetric Polynomial Rings, their elements and their ideals. The methods implement basic polynomial arithmetic, the permutation action, the *Symmetric Cancellation Order* (a notion that is central in the work of Aschenbrenner and Hillar), symmetric reduction, and the computation of Gr\u00f6bner bases.\n\nHere are some examples showing the main features\n\n```\nsage: X.<x,y> = SymmetricPolynomialRing(QQ)\n```\n\n\nNow, x and y are generators of X, meaning that we have two infinite sequences of variables, one obtained by `x[n]` and the other by `y[m]` for integers m, n.\n\nWe can do polynomial arithmetic in X, and we can create ideals in the usual way:\n\n```\nsage: I=X*(x[1]^2+y[2]^2,x[1]*x[2]*y[3]+x[1]*y[4])\n```\n\n\nNow, we can compute a Gr\u00f6bner basis; the default monomial order is lexicographic (see below).\n\n```\nsage: J=I.groebner_basis()\nsage: J\nIdeal (x1^4 + x1^3, x2*x1^2 - x1^3, x2^2 - x1^2, y1*x1^3 + y1*x1^2, y1*x2 + y1*x1^2, y1^2 + x1^2, y2*x1 + y1*x1^2) of Symmetric polynomial ring in x, y over Rational Field\n```\n\n\nWe can do ideal membership test by computing normal forms (symmetric reduction):\n\n```\nsage: I.reduce(J)\nIdeal (0, 0) of Symmetric polynomial ring in x, y over Rational Field\n```\n\n\nNote that J is not point-wise symmetric. E.g., we have\n\n```\nsage: G=J.gens()\nsage: P=Permutation([1, 4, 3, 2])\nsage: G[2]\nx2^2 - x1^2\nsage: G[2]^P\nx4^2 - x1^2\nsage: G.__contains__(G[2]^P)\nFalse\n```\n\n\nBut it is set-wise symmetric, e.g.:\n\n```\nsage: [(p^P).reduce(J) for p in G]\n[0, 0, 0, 0, 0, 0, 0]\n```\n\n\nAs usual, it is a special feature of Gr\u00f6bner bases that they produce unique normal forms. I is not a Gr\u00f6bner basis, and thus ideal membership test wouldn't work:\n\n```\nsage: [p.reduce(I) for p in G]\n\n[x1^4 + x1^3,\n x2*x1^2 - x1^3,\n x2^2 - x1^2,\n y1*x1^3 + y1*x1^2,\n y1*x2 + y1*x1^2,\n y1^2 + x1^2,\n y2*x1 + y1*x1^2]\n```\n\n\nNote that various monomial orders are supported: lex (default), deglex, and degrevlex. \n\nNote that Aschenbrenner and Hillar restrict their attention to the lexicographic order, and it is not entirely clear whether the Buchberger algorithm would terminate in the other orders, too. But here, it does. As usual, the Gr\u00f6bner basis depends on the ordering:\n\n```\nsage: Y.<x,y> = SymmetricPolynomialRing(QQ,order='degrevlex')\nsage: I2=Y*(x[1]^2+y[2]^2,x[1]*x[2]*y[3]+x[1]*y[4])\nsage: J2=I2.groebner_basis()\nsage: J2\nIdeal (y3*x1 - y2*x1, x2^2 - x1^2, y1*x2 - y2*x1, y1^2 + x1^2, x2*x1^2 - x1^3, y1*x1^2 + y2*x1, y2*x1^2 + y2*x1, y2*x2*x1 + y2*x1, y2*y1*x1 + x1^3, x1^4 + x1^3) of Symmetric polynomial ring in x, y over Rational Field\n```\n\n\nNote that we assume an automatic (name-preserving) conversion between X and Y. Hence, we can do the following and see that J2 is not a *lexicographic* Gr\u00f6bner basis:\n\n```\nsage: J.reduce(J2)\nIdeal (0, 0, 0, y2*x1 + y1*x1^2, y2*x1 + y1*x1^2, 0, y2*x1 + y1*x1^2) of Symmetric polynomial ring in x, y over Rational Field\n```\n\n\nIn any order, we insist to have `X.gen(i)[m]<X.gen(j)[n]` if and only if i<j or (i==j and m<n).\n\nProbably the doc tests should be improved, and I think it would also be nice to overload the `__pow__` and `__mul__` methods for Symmetric Ideals, since the default methods do not give the correct result: We should have `(X*(x[1]))^2 == X*(x[1]^2,x[1]*x[2])`.\nAlso, it may be that there should be no coercion between X and Y in the above situation.\n\nTherefore I am uncertain whether it is 'needs review' or 'needs work'. I think I leave it as 'with patch'...\n\nIssue created by migration from https://trac.sagemath.org/ticket/5566\n\n",
     "created_at": "2009-03-19T15:25:02Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_005566.json:
     "title": "Groebner bases of Symmetric Ideals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5566",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
-Assignee: SimonKing
+Assignee: @simon-king-jena
 
-CC:  mhansen malb
+CC:  @mwhansen @malb
 
 This ticket is related with [#5453], but the patch should apply to a clean `sage-3.4`.
 
@@ -143,7 +143,7 @@ archive/issue_comments_043332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43332",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_043333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43333",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_043334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43334",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_043335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43335",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_043336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43336",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_043337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43337",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -332,7 +332,7 @@ archive/issue_comments_043338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43338",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -395,7 +395,7 @@ archive/issue_comments_043339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43339",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -499,7 +499,7 @@ archive/issue_comments_043340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43340",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -537,7 +537,7 @@ archive/issue_comments_043341.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43341",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -555,7 +555,7 @@ archive/issue_comments_043342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43342",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -580,7 +580,7 @@ archive/issue_comments_043343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43343",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -600,7 +600,7 @@ archive/issue_comments_043344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43344",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -621,7 +621,7 @@ archive/issue_comments_043345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43345",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -653,7 +653,7 @@ archive/issue_comments_043346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43346",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -705,7 +705,7 @@ archive/issue_comments_043347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43347",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -759,7 +759,7 @@ archive/issue_comments_043349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43349",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -855,7 +855,7 @@ archive/issue_comments_043352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43352",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -907,7 +907,7 @@ archive/issue_comments_043353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43353",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -937,7 +937,7 @@ archive/issue_comments_043354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43354",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -962,7 +962,7 @@ archive/issue_comments_043355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43355",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1020,7 +1020,7 @@ archive/issue_comments_043356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43356",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1089,7 +1089,7 @@ archive/issue_comments_043358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43358",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1120,7 +1120,7 @@ archive/issue_comments_043359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43359",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1177,7 +1177,7 @@ archive/issue_comments_043360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43360",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1195,7 +1195,7 @@ archive/issue_comments_043361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43361",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1230,7 +1230,7 @@ archive/issue_comments_043362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43362",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1310,7 +1310,7 @@ archive/issue_comments_043364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43364",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1323,16 +1323,16 @@ Final version (currently...) of Infinite Polynomial Rings and Symmetric Gröbner
 archive/issue_comments_043365.json:
 ```json
 {
-    "body": "Attachment [SymmetricIdealsFinal.patch](tarball://root/attachments/some-uuid/ticket5566/SymmetricIdealsFinal.patch) by SimonKing created at 2009-04-27 11:13:39\n\nDear Martin and Michael,\n\nReplying to [comment:36 malb]:\n> Replying to [comment:35 SimonKing]:\n> > First, some general questions:\n> > \n> >  1. Should previous versions of a patch be preserved, or is it better to overwrite the old patch with the new version? \n> \n> I don't think we established a good practice here yet. But it is certainly easier for the release manager if there is only one patch or a clear description what to apply when.\n\nOK, so I produced a stand-alone patch `SymmetricIdealsFinal.patch` relative to sage-3.4.1.rc3 that I consider final (see below).\n\n\n> > One question to the referee: As mentioned in a comment above, I try to be clever, i.e., in `SymmetricIdeal.symmetrisation()` I only apply elementary transpositions rather than the full symmetric group. I believe it works, but it is a difference to what Aschenbrenner and Hillar suggested. Shall I point it out in the documentation\n> \n> Yes, that should be pointed out clearly.\n\nOK, I did so in the documentation of `SymmetricIdeal.symmetrisation()` and `SymmetricIdeal.groebner_basis()`: I give no evidence *why* I believe that my algorithm is correct, but I state in what respect it differs from the work of Aschenbrenner and Hillar.\n\nMoreover, I made it optional to chose the *original* algorithm of Aschenbrenner and Hillar -- if some users don't trust me.\n \n> Let me know what the 'final' version of your patch is and then I'll review it.\n\nI think this version is final, in the following sense:\n- doc tests pass\n- I am already doing serious computations with that version, and it seems to work well\n- I looked intensely at the html documentation, and I found it alright.\n\nCheers,\n    Simon",
+    "body": "Attachment [SymmetricIdealsFinal.patch](tarball://root/attachments/some-uuid/ticket5566/SymmetricIdealsFinal.patch) by @simon-king-jena created at 2009-04-27 11:13:39\n\nDear Martin and Michael,\n\nReplying to [comment:36 malb]:\n> Replying to [comment:35 SimonKing]:\n> > First, some general questions:\n> > \n> >  1. Should previous versions of a patch be preserved, or is it better to overwrite the old patch with the new version? \n> \n> I don't think we established a good practice here yet. But it is certainly easier for the release manager if there is only one patch or a clear description what to apply when.\n\nOK, so I produced a stand-alone patch `SymmetricIdealsFinal.patch` relative to sage-3.4.1.rc3 that I consider final (see below).\n\n\n> > One question to the referee: As mentioned in a comment above, I try to be clever, i.e., in `SymmetricIdeal.symmetrisation()` I only apply elementary transpositions rather than the full symmetric group. I believe it works, but it is a difference to what Aschenbrenner and Hillar suggested. Shall I point it out in the documentation\n> \n> Yes, that should be pointed out clearly.\n\nOK, I did so in the documentation of `SymmetricIdeal.symmetrisation()` and `SymmetricIdeal.groebner_basis()`: I give no evidence *why* I believe that my algorithm is correct, but I state in what respect it differs from the work of Aschenbrenner and Hillar.\n\nMoreover, I made it optional to chose the *original* algorithm of Aschenbrenner and Hillar -- if some users don't trust me.\n \n> Let me know what the 'final' version of your patch is and then I'll review it.\n\nI think this version is final, in the following sense:\n- doc tests pass\n- I am already doing serious computations with that version, and it seems to work well\n- I looked intensely at the html documentation, and I found it alright.\n\nCheers,\n    Simon",
     "created_at": "2009-04-27T11:13:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43365",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [SymmetricIdealsFinal.patch](tarball://root/attachments/some-uuid/ticket5566/SymmetricIdealsFinal.patch) by SimonKing created at 2009-04-27 11:13:39
+Attachment [SymmetricIdealsFinal.patch](tarball://root/attachments/some-uuid/ticket5566/SymmetricIdealsFinal.patch) by @simon-king-jena created at 2009-04-27 11:13:39
 
 Dear Martin and Michael,
 
@@ -1377,7 +1377,7 @@ archive/issue_comments_043366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43366",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1404,7 +1404,7 @@ archive/issue_comments_043367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43367",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1417,16 +1417,16 @@ To be applied after SymmetricIdealsFinal.patch
 archive/issue_comments_043368.json:
 ```json
 {
-    "body": "Attachment [SymmetricIdealsForgotten.patch](tarball://root/attachments/some-uuid/ticket5566/SymmetricIdealsForgotten.patch) by SimonKing created at 2009-04-27 14:30:15\n\nReplying to [comment:39 malb]:\n> Doctests fail:\n> \n> {{{\n> from sage.rings.polynomial.symmetric_reduction import SymmetricReductionStrategy\n> ImportError: No module named symmetric_reduction\n> }}}\n> \n> Maybe you didn't add the module to `module_list.py`?\n\nYes. So, `SymmetricIdealsFinal.patch` is not the final word. Please also apply `SymmetricIdealsForgotten.patch`.\n\nAnd I think it worked for me since I had built the extension in a different branch, so, it was somehow present.\n\nSorry,\n    Simon",
+    "body": "Attachment [SymmetricIdealsForgotten.patch](tarball://root/attachments/some-uuid/ticket5566/SymmetricIdealsForgotten.patch) by @simon-king-jena created at 2009-04-27 14:30:15\n\nReplying to [comment:39 malb]:\n> Doctests fail:\n> \n> {{{\n> from sage.rings.polynomial.symmetric_reduction import SymmetricReductionStrategy\n> ImportError: No module named symmetric_reduction\n> }}}\n> \n> Maybe you didn't add the module to `module_list.py`?\n\nYes. So, `SymmetricIdealsFinal.patch` is not the final word. Please also apply `SymmetricIdealsForgotten.patch`.\n\nAnd I think it worked for me since I had built the extension in a different branch, so, it was somehow present.\n\nSorry,\n    Simon",
     "created_at": "2009-04-27T14:30:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43368",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [SymmetricIdealsForgotten.patch](tarball://root/attachments/some-uuid/ticket5566/SymmetricIdealsForgotten.patch) by SimonKing created at 2009-04-27 14:30:15
+Attachment [SymmetricIdealsForgotten.patch](tarball://root/attachments/some-uuid/ticket5566/SymmetricIdealsForgotten.patch) by @simon-king-jena created at 2009-04-27 14:30:15
 
 Replying to [comment:39 malb]:
 > Doctests fail:
@@ -1457,7 +1457,7 @@ archive/issue_comments_043369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43369",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1475,7 +1475,7 @@ archive/issue_comments_043370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43370",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1551,16 +1551,16 @@ sage: for p in Permutations(4):
 archive/issue_comments_043371.json:
 ```json
 {
-    "body": "Attachment [SymmetricIdealsBugfix.patch](tarball://root/attachments/some-uuid/ticket5566/SymmetricIdealsBugfix.patch) by malb created at 2009-05-12 00:31:25\n\nI've fixed a few doctest failures in `symmetric_ideal.py` and `infinite_polynomial_ring.py`. Simon, there is still a doctest failure on sage.math with 3.4.2 in `symmetric_ideal.py`. It is the protocol output of the calculation which is somehow different now. Please fix it, then we can merge this big patch.",
+    "body": "Attachment [SymmetricIdealsBugfix.patch](tarball://root/attachments/some-uuid/ticket5566/SymmetricIdealsBugfix.patch) by @malb created at 2009-05-12 00:31:25\n\nI've fixed a few doctest failures in `symmetric_ideal.py` and `infinite_polynomial_ring.py`. Simon, there is still a doctest failure on sage.math with 3.4.2 in `symmetric_ideal.py`. It is the protocol output of the calculation which is somehow different now. Please fix it, then we can merge this big patch.",
     "created_at": "2009-05-12T00:31:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43371",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [SymmetricIdealsBugfix.patch](tarball://root/attachments/some-uuid/ticket5566/SymmetricIdealsBugfix.patch) by malb created at 2009-05-12 00:31:25
+Attachment [SymmetricIdealsBugfix.patch](tarball://root/attachments/some-uuid/ticket5566/SymmetricIdealsBugfix.patch) by @malb created at 2009-05-12 00:31:25
 
 I've fixed a few doctest failures in `symmetric_ideal.py` and `infinite_polynomial_ring.py`. Simon, there is still a doctest failure on sage.math with 3.4.2 in `symmetric_ideal.py`. It is the protocol output of the calculation which is somehow different now. Please fix it, then we can merge this big patch.
 
@@ -1576,7 +1576,7 @@ archive/issue_comments_043372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43372",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1597,7 +1597,7 @@ archive/issue_comments_043373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43373",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1610,16 +1610,16 @@ One trivial doc test fix
 archive/issue_comments_043374.json:
 ```json
 {
-    "body": "Attachment [SymmetricIdealsLastWords.patch](tarball://root/attachments/some-uuid/ticket5566/SymmetricIdealsLastWords.patch) by SimonKing created at 2009-05-15 06:57:49\n\nHi Martin, hi Michael,\n\nit turned out that the doc test failure was not in `infinite_polynomial_ring.py` but in `symmetric_ideal.py`. The fix is trivial, it is just insertion of one ':'.\n\nAfter applying all four patches in order, all doc test for infinite polynomial rings and symmetric ideals pass both on sage.math and at home:\n\n```\nSimonKing@sage:~/SAGE/sage-3.4.2/devel/sage-symmdevel/sage/rings/polynomial$ ~/SAGE/sage-3.4.2/sage -t -optional -long symmetric_ideal.py\nsage -t -optional -long \"devel/sage-symmdevel/sage/rings/polynomial/symmetric_ideal.py\"\n         [12.4 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 12.4 seconds\nSimonKing@sage:~/SAGE/sage-3.4.2/devel/sage-symmdevel/sage/rings/polynomial$ ~/SAGE/sage-3.4.2/sage -t -optional -long symmetric_reduction.pyx\nsage -t -optional -long \"devel/sage-symmdevel/sage/rings/polynomial/symmetric_reduction.pyx\"\n         [4.3 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 4.3 seconds\nSimonKing@sage:~/SAGE/sage-3.4.2/devel/sage-symmdevel/sage/rings/polynomial$ ~/SAGE/sage-3.4.2/sage -t -optional -long infinite_polynomial_element.py\nsage -t -optional -long \"devel/sage-symmdevel/sage/rings/polynomial/infinite_polynomial_element.py\"\n         [6.0 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 6.0 seconds\nSimonKing@sage:~/SAGE/sage-3.4.2/devel/sage-symmdevel/sage/rings/polynomial$ ~/SAGE/sage-3.4.2/sage -t -optional -long infinite_polynomial_ring.py\nsage -t -optional -long \"devel/sage-symmdevel/sage/rings/polynomial/infinite_polynomial_ring.py\"\n         [2.6 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 2.6 seconds\n```\n\n\nI tag the ticket as [needs review], but I hope that Martin's comment can be taken as a positive review already...\n\nCheers,\n    Simon",
+    "body": "Attachment [SymmetricIdealsLastWords.patch](tarball://root/attachments/some-uuid/ticket5566/SymmetricIdealsLastWords.patch) by @simon-king-jena created at 2009-05-15 06:57:49\n\nHi Martin, hi Michael,\n\nit turned out that the doc test failure was not in `infinite_polynomial_ring.py` but in `symmetric_ideal.py`. The fix is trivial, it is just insertion of one ':'.\n\nAfter applying all four patches in order, all doc test for infinite polynomial rings and symmetric ideals pass both on sage.math and at home:\n\n```\nSimonKing@sage:~/SAGE/sage-3.4.2/devel/sage-symmdevel/sage/rings/polynomial$ ~/SAGE/sage-3.4.2/sage -t -optional -long symmetric_ideal.py\nsage -t -optional -long \"devel/sage-symmdevel/sage/rings/polynomial/symmetric_ideal.py\"\n         [12.4 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 12.4 seconds\nSimonKing@sage:~/SAGE/sage-3.4.2/devel/sage-symmdevel/sage/rings/polynomial$ ~/SAGE/sage-3.4.2/sage -t -optional -long symmetric_reduction.pyx\nsage -t -optional -long \"devel/sage-symmdevel/sage/rings/polynomial/symmetric_reduction.pyx\"\n         [4.3 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 4.3 seconds\nSimonKing@sage:~/SAGE/sage-3.4.2/devel/sage-symmdevel/sage/rings/polynomial$ ~/SAGE/sage-3.4.2/sage -t -optional -long infinite_polynomial_element.py\nsage -t -optional -long \"devel/sage-symmdevel/sage/rings/polynomial/infinite_polynomial_element.py\"\n         [6.0 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 6.0 seconds\nSimonKing@sage:~/SAGE/sage-3.4.2/devel/sage-symmdevel/sage/rings/polynomial$ ~/SAGE/sage-3.4.2/sage -t -optional -long infinite_polynomial_ring.py\nsage -t -optional -long \"devel/sage-symmdevel/sage/rings/polynomial/infinite_polynomial_ring.py\"\n         [2.6 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 2.6 seconds\n```\n\n\nI tag the ticket as [needs review], but I hope that Martin's comment can be taken as a positive review already...\n\nCheers,\n    Simon",
     "created_at": "2009-05-15T06:57:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43374",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [SymmetricIdealsLastWords.patch](tarball://root/attachments/some-uuid/ticket5566/SymmetricIdealsLastWords.patch) by SimonKing created at 2009-05-15 06:57:49
+Attachment [SymmetricIdealsLastWords.patch](tarball://root/attachments/some-uuid/ticket5566/SymmetricIdealsLastWords.patch) by @simon-king-jena created at 2009-05-15 06:57:49
 
 Hi Martin, hi Michael,
 
@@ -1740,7 +1740,7 @@ archive/issue_comments_043378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5566#issuecomment-43378",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_007118.json:
     "title": "remove quaddouble from sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7118",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7118
 archive/issue_comments_058987.json:
 ```json
 {
-    "body": "Attachment [trac_7118.patch](tarball://root/attachments/some-uuid/ticket7118/trac_7118.patch) by was created at 2009-10-04 23:12:23",
+    "body": "Attachment [trac_7118.patch](tarball://root/attachments/some-uuid/ticket7118/trac_7118.patch) by @williamstein created at 2009-10-04 23:12:23",
     "created_at": "2009-10-04T23:12:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7118#issuecomment-58987",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7118.patch](tarball://root/attachments/some-uuid/ticket7118/trac_7118.patch) by was created at 2009-10-04 23:12:23
+Attachment [trac_7118.patch](tarball://root/attachments/some-uuid/ticket7118/trac_7118.patch) by @williamstein created at 2009-10-04 23:12:23
 
 
 
@@ -50,16 +50,16 @@ Attachment [trac_7118.patch](tarball://root/attachments/some-uuid/ticket7118/tra
 archive/issue_comments_058988.json:
 ```json
 {
-    "body": "Attachment [trac_7118-part2.patch](tarball://root/attachments/some-uuid/ticket7118/trac_7118-part2.patch) by was created at 2009-10-05 02:54:18",
+    "body": "Attachment [trac_7118-part2.patch](tarball://root/attachments/some-uuid/ticket7118/trac_7118-part2.patch) by @williamstein created at 2009-10-05 02:54:18",
     "created_at": "2009-10-05T02:54:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7118#issuecomment-58988",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7118-part2.patch](tarball://root/attachments/some-uuid/ticket7118/trac_7118-part2.patch) by was created at 2009-10-05 02:54:18
+Attachment [trac_7118-part2.patch](tarball://root/attachments/some-uuid/ticket7118/trac_7118-part2.patch) by @williamstein created at 2009-10-05 02:54:18
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_058989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7118#issuecomment-58989",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_058990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7118#issuecomment-58990",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_058991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7118#issuecomment-58991",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_058993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7118#issuecomment-58993",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -353,7 +353,7 @@ archive/issue_comments_058997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7118#issuecomment-58997",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -639,7 +639,7 @@ archive/issue_comments_059007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7118#issuecomment-59007",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -696,7 +696,7 @@ archive/issue_comments_059010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7118#issuecomment-59010",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

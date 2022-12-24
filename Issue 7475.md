@@ -14,7 +14,7 @@ archive/issues_007475.json:
     "title": "bug pickling ZZ.residue_field's",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7475",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -64,7 +64,7 @@ archive/issue_comments_062997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7475#issuecomment-62997",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -77,16 +77,16 @@ Changing component from misc to pickling.
 archive/issue_comments_062998.json:
 ```json
 {
-    "body": "Changing assignee from tbd to was.",
+    "body": "Changing assignee from tbd to @williamstein.",
     "created_at": "2009-11-16T17:42:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7475#issuecomment-62998",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from tbd to was.
+Changing assignee from tbd to @williamstein.
 
 
 
@@ -95,16 +95,16 @@ Changing assignee from tbd to was.
 archive/issue_comments_062999.json:
 ```json
 {
-    "body": "Attachment [pickle.sobj](tarball://root/attachments/some-uuid/ticket7475/pickle.sobj) by itaibn created at 2012-02-26 04:47:34\n\nThe pickle in a different system",
+    "body": "Attachment [pickle.sobj](tarball://root/attachments/some-uuid/ticket7475/pickle.sobj) by @itaibn created at 2012-02-26 04:47:34\n\nThe pickle in a different system",
     "created_at": "2012-02-26T04:47:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7475#issuecomment-62999",
-    "user": "itaibn"
+    "user": "@itaibn"
 }
 ```
 
-Attachment [pickle.sobj](tarball://root/attachments/some-uuid/ticket7475/pickle.sobj) by itaibn created at 2012-02-26 04:47:34
+Attachment [pickle.sobj](tarball://root/attachments/some-uuid/ticket7475/pickle.sobj) by @itaibn created at 2012-02-26 04:47:34
 
 The pickle in a different system
 
@@ -120,7 +120,7 @@ archive/issue_comments_063000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7475#issuecomment-63000",
-    "user": "itaibn"
+    "user": "@itaibn"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_063001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7475#issuecomment-63001",
-    "user": "itaibn"
+    "user": "@itaibn"
 }
 ```
 
@@ -151,16 +151,16 @@ An explanation of the pickle
 archive/issue_comments_063002.json:
 ```json
 {
-    "body": "Attachment [pickle-explanation](tarball://root/attachments/some-uuid/ticket7475/pickle-explanation) by jdemeyer created at 2013-08-13 15:35:53",
+    "body": "Attachment [pickle-explanation](tarball://root/attachments/some-uuid/ticket7475/pickle-explanation) by @jdemeyer created at 2013-08-13 15:35:53",
     "created_at": "2013-08-13T15:35:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7475#issuecomment-63002",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [pickle-explanation](tarball://root/attachments/some-uuid/ticket7475/pickle-explanation) by jdemeyer created at 2013-08-13 15:35:53
+Attachment [pickle-explanation](tarball://root/attachments/some-uuid/ticket7475/pickle-explanation) by @jdemeyer created at 2013-08-13 15:35:53
 
 
 
@@ -174,7 +174,7 @@ archive/issue_comments_063003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7475#issuecomment-63003",
-    "user": "itaibn"
+    "user": "@itaibn"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_063004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7475#issuecomment-63004",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_063005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7475#issuecomment-63005",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_063006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7475#issuecomment-63006",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

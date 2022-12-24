@@ -3,7 +3,7 @@
 archive/issues_007835.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  was mpatel ddrake\n\n#7483 moves preparsing to the server but does not account for unicode text, i.e., does not have a `# -*- coding: utf-8 -*-` header.\n\nThis patch depends on #7514 and everything it depends on.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7835\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein @qed777 @dandrake\n\n#7483 moves preparsing to the server but does not account for unicode text, i.e., does not have a `# -*- coding: utf-8 -*-` header.\n\nThis patch depends on #7514 and everything it depends on.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7835\n\n",
     "created_at": "2010-01-03T19:15:54Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007835.json:
     "title": "Preparsing on server does not account for unicode text",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7835",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  was mpatel ddrake
+CC:  @williamstein @qed777 @dandrake
 
 #7483 moves preparsing to the server but does not account for unicode text, i.e., does not have a `# -*- coding: utf-8 -*-` header.
 
@@ -41,7 +41,7 @@ archive/issue_comments_067871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7835#issuecomment-67871",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_067872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7835#issuecomment-67872",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_067873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7835#issuecomment-67873",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -90,16 +90,16 @@ Adds '# -*- coding: utf-8 -*-' to the preparsing code.
 archive/issue_comments_067874.json:
 ```json
 {
-    "body": "Attachment [trac_7835-preparsing-unicode.patch](tarball://root/attachments/some-uuid/ticket7835/trac_7835-preparsing-unicode.patch) by mpatel created at 2010-01-06 20:26:42\n\nThis looks good to me.  Is there a simple example that breaks the existing code?",
+    "body": "Attachment [trac_7835-preparsing-unicode.patch](tarball://root/attachments/some-uuid/ticket7835/trac_7835-preparsing-unicode.patch) by @qed777 created at 2010-01-06 20:26:42\n\nThis looks good to me.  Is there a simple example that breaks the existing code?",
     "created_at": "2010-01-06T20:26:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7835#issuecomment-67874",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7835-preparsing-unicode.patch](tarball://root/attachments/some-uuid/ticket7835/trac_7835-preparsing-unicode.patch) by mpatel created at 2010-01-06 20:26:42
+Attachment [trac_7835-preparsing-unicode.patch](tarball://root/attachments/some-uuid/ticket7835/trac_7835-preparsing-unicode.patch) by @qed777 created at 2010-01-06 20:26:42
 
 This looks good to me.  Is there a simple example that breaks the existing code?
 
@@ -115,7 +115,7 @@ archive/issue_comments_067875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7835#issuecomment-67875",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_067876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7835#issuecomment-67876",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_067877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7835#issuecomment-67877",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_067878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7835#issuecomment-67878",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_067879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7835#issuecomment-67879",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_067880.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7835#issuecomment-67880",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -232,16 +232,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_067881.json:
 ```json
 {
-    "body": "Attachment [trac_7835-preparsing-unicode_v2.patch](tarball://root/attachments/some-uuid/ticket7835/trac_7835-preparsing-unicode_v2.patch) by mpatel created at 2010-01-07 01:31:28\n\nV2 wraps the [comment:4 problem above] in a `try-except` block, for now, i.e., until #7249 takes hold.  My review is positive, but someone should review my change.",
+    "body": "Attachment [trac_7835-preparsing-unicode_v2.patch](tarball://root/attachments/some-uuid/ticket7835/trac_7835-preparsing-unicode_v2.patch) by @qed777 created at 2010-01-07 01:31:28\n\nV2 wraps the [comment:4 problem above] in a `try-except` block, for now, i.e., until #7249 takes hold.  My review is positive, but someone should review my change.",
     "created_at": "2010-01-07T01:31:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7835#issuecomment-67881",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7835-preparsing-unicode_v2.patch](tarball://root/attachments/some-uuid/ticket7835/trac_7835-preparsing-unicode_v2.patch) by mpatel created at 2010-01-07 01:31:28
+Attachment [trac_7835-preparsing-unicode_v2.patch](tarball://root/attachments/some-uuid/ticket7835/trac_7835-preparsing-unicode_v2.patch) by @qed777 created at 2010-01-07 01:31:28
 
 V2 wraps the [comment:4 problem above] in a `try-except` block, for now, i.e., until #7249 takes hold.  My review is positive, but someone should review my change.
 
@@ -257,7 +257,7 @@ archive/issue_comments_067882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7835#issuecomment-67882",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_067883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7835#issuecomment-67883",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_067884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7835#issuecomment-67884",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

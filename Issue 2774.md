@@ -3,7 +3,7 @@
 archive/issues_002774.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  burcin\n\nKeywords: polybori\n\n\n```\nsage: B.<x,y> = BooleanPolynomialRing(2)\nsage: B._singular_()\n//   characteristic : 2\n//   number of vars : 2\n//        block   1 : ordering lp\n//                  : names    x y\n//        block   2 : ordering C\n// quotient ring from ideal\n_[1]=x2+x\n_[2]=y2+y\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2774\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin\n\nKeywords: polybori\n\n\n```\nsage: B.<x,y> = BooleanPolynomialRing(2)\nsage: B._singular_()\n//   characteristic : 2\n//   number of vars : 2\n//        block   1 : ordering lp\n//                  : names    x y\n//        block   2 : ordering C\n// quotient ring from ideal\n_[1]=x2+x\n_[2]=y2+y\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2774\n\n",
     "created_at": "2008-04-02T16:09:06Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_002774.json:
     "title": "[with patch, needs review] conversion from PolyBoRi to Singular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2774",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  burcin
+CC:  @burcin
 
 Keywords: polybori
 
@@ -49,16 +49,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2774
 archive/issue_comments_019059.json:
 ```json
 {
-    "body": "Attachment [polybori_to_singular.patch](tarball://root/attachments/some-uuid/ticket2774/polybori_to_singular.patch) by mhansen created at 2008-04-04 21:32:54\n\nLooks good to me.",
+    "body": "Attachment [polybori_to_singular.patch](tarball://root/attachments/some-uuid/ticket2774/polybori_to_singular.patch) by @mwhansen created at 2008-04-04 21:32:54\n\nLooks good to me.",
     "created_at": "2008-04-04T21:32:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2774#issuecomment-19059",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [polybori_to_singular.patch](tarball://root/attachments/some-uuid/ticket2774/polybori_to_singular.patch) by mhansen created at 2008-04-04 21:32:54
+Attachment [polybori_to_singular.patch](tarball://root/attachments/some-uuid/ticket2774/polybori_to_singular.patch) by @mwhansen created at 2008-04-04 21:32:54
 
 Looks good to me.
 

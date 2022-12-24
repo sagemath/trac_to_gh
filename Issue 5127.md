@@ -3,7 +3,7 @@
 archive/issues_005127.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  roed tscrim mkoeppe\n\nKeywords: relative number fields names coercion\n\nA naming one issue: in relative number fields, the family of functions coerce_non_number_field_element_in should probably be a convert function rather than a coerce one.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5127\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @roed314 @tscrim @mkoeppe\n\nKeywords: relative number fields names coercion\n\nA naming one issue: in relative number fields, the family of functions coerce_non_number_field_element_in should probably be a convert function rather than a coerce one.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5127\n\n",
     "created_at": "2009-01-29T05:09:02Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_005127.json:
     "title": "relative number fields have bad names for internal coercion routines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5127",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  roed tscrim mkoeppe
+CC:  @roed314 @tscrim @mkoeppe
 
 Keywords: relative number fields names coercion
 
@@ -42,7 +42,7 @@ archive/issue_comments_039179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5127#issuecomment-39179",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -55,16 +55,16 @@ Changing component from number theory to number fields.
 archive/issue_comments_039180.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-07-21T08:03:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5127#issuecomment-39180",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 
@@ -78,7 +78,7 @@ archive/issue_comments_039181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5127#issuecomment-39181",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_039182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5127#issuecomment-39182",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_039183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5127#issuecomment-39183",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_039184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5127#issuecomment-39184",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

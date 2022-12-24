@@ -3,7 +3,7 @@
 archive/issues_005745.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nKeywords: doctest projective space\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5745\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: doctest projective space\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5745\n\n",
     "created_at": "2009-04-11T03:06:25Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_005745.json:
     "title": "improve doctest coverage for schemes/generic/projective_space.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5745",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Keywords: doctest projective space
 
@@ -39,7 +39,7 @@ archive/issue_comments_044915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5745#issuecomment-44915",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to assigned.
 archive/issue_comments_044916.json:
 ```json
 {
-    "body": "Attachment [trac_5745.patch](tarball://root/attachments/some-uuid/ticket5745/trac_5745.patch) by AlexGhitza created at 2009-04-11 05:13:14\n\ndepends on the patch at #5631",
+    "body": "Attachment [trac_5745.patch](tarball://root/attachments/some-uuid/ticket5745/trac_5745.patch) by @aghitza created at 2009-04-11 05:13:14\n\ndepends on the patch at #5631",
     "created_at": "2009-04-11T05:13:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5745#issuecomment-44916",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_5745.patch](tarball://root/attachments/some-uuid/ticket5745/trac_5745.patch) by AlexGhitza created at 2009-04-11 05:13:14
+Attachment [trac_5745.patch](tarball://root/attachments/some-uuid/ticket5745/trac_5745.patch) by @aghitza created at 2009-04-11 05:13:14
 
 depends on the patch at #5631
 
@@ -77,7 +77,7 @@ archive/issue_comments_044917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5745#issuecomment-44917",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_044918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5745#issuecomment-44918",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

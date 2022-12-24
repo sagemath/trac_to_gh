@@ -3,7 +3,7 @@
 archive/issues_001078.json:
 ```json
 {
-    "body": "Assignee: was\n\nHi Yi,\n\nI'm mostly up to speed, but just tonight I started running into the\nfollowing bug:\n\n       Traceback (most recent call last):\n         File \"/home/jvoight/sage/local/lib/python2.5/site-packages/twisted/internet/posixbase.py\",\nline 220, in run\n           self.mainLoop()\n         File \"/home/jvoight/sage/local/lib/python2.5/site-packages/twisted/internet/posixbase.py\",\nline 228, in mainLoop\n           self.runUntilCurrent()\n         File \"/home/jvoight/sage/local/lib/python2.5/site-packages/twisted/internet/base.py\",\nline 561, in runUntilCurrent\n           call.func(*call.args, **call.kw)\n         File \"/home/jvoight/sage/local/lib/python2.5/site-packages/twisted/internet/task.py\",\nline 108, in __call__\n           d = defer.maybeDeferred(self.f, *self.a, **self.kw)\n       --- <exception caught here> ---\n         File \"/home/jvoight/sage/local/lib/python2.5/site-packages/twisted/internet/defer.py\",\nline 107, in maybeDeferred\n           result = f(*args, **kw)\n         File \"/home/jvoight/sage/local/bin/dsage_worker.py\", line\n372, in check_work\n           cpu_time = cPickle.loads(open('cpu_time.sobj', 'rb').read())\n       exceptions.IOError: [Errno 2] No such file or directory: 'cpu_time.sobj'\n\nHave you patched something recently?\n\nYou can check it out by running your favorite jobs on\n/home/jvoight/sage/sage on sage.math.  It's possible the problem is that I'm running 2.8.9...\n\nIssue created by migration from https://trac.sagemath.org/ticket/1078\n\n",
+    "body": "Assignee: @williamstein\n\nHi Yi,\n\nI'm mostly up to speed, but just tonight I started running into the\nfollowing bug:\n\n       Traceback (most recent call last):\n         File \"/home/jvoight/sage/local/lib/python2.5/site-packages/twisted/internet/posixbase.py\",\nline 220, in run\n           self.mainLoop()\n         File \"/home/jvoight/sage/local/lib/python2.5/site-packages/twisted/internet/posixbase.py\",\nline 228, in mainLoop\n           self.runUntilCurrent()\n         File \"/home/jvoight/sage/local/lib/python2.5/site-packages/twisted/internet/base.py\",\nline 561, in runUntilCurrent\n           call.func(*call.args, **call.kw)\n         File \"/home/jvoight/sage/local/lib/python2.5/site-packages/twisted/internet/task.py\",\nline 108, in __call__\n           d = defer.maybeDeferred(self.f, *self.a, **self.kw)\n       --- <exception caught here> ---\n         File \"/home/jvoight/sage/local/lib/python2.5/site-packages/twisted/internet/defer.py\",\nline 107, in maybeDeferred\n           result = f(*args, **kw)\n         File \"/home/jvoight/sage/local/bin/dsage_worker.py\", line\n372, in check_work\n           cpu_time = cPickle.loads(open('cpu_time.sobj', 'rb').read())\n       exceptions.IOError: [Errno 2] No such file or directory: 'cpu_time.sobj'\n\nHave you patched something recently?\n\nYou can check it out by running your favorite jobs on\n/home/jvoight/sage/sage on sage.math.  It's possible the problem is that I'm running 2.8.9...\n\nIssue created by migration from https://trac.sagemath.org/ticket/1078\n\n",
     "created_at": "2007-11-03T17:09:24Z",
     "labels": [
         "packages: standard",
@@ -13,10 +13,10 @@ archive/issues_001078.json:
     "title": "DSage cannot find Cpu_time.sobj",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1078",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Hi Yi,
 
@@ -61,16 +61,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1078
 archive/issue_comments_006524.json:
 ```json
 {
-    "body": "Changing assignee from was to yi.",
+    "body": "Changing assignee from @williamstein to @yqiang.",
     "created_at": "2007-11-03T17:33:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1078",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1078#issuecomment-6524",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Changing assignee from was to yi.
+Changing assignee from @williamstein to @yqiang.
 
 
 
@@ -84,7 +84,7 @@ archive/issue_comments_006525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1078",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1078#issuecomment-6525",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_006526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1078",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1078#issuecomment-6526",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 

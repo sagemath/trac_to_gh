@@ -3,7 +3,7 @@
 archive/issues_002506.json:
 ```json
 {
-    "body": "Assignee: rlm\n\n\n```\nsage: g = Graph()\nsage: g2 = g.copy()\nsage: g == g   # fine\nTrue\nsage: g != g   # fine\nFalse\nsage: g2 == g  # PROBLEM: either this one\nTrue\nsage: g2 != g  # or this one should be false\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2506\n\n",
+    "body": "Assignee: @rlmill\n\n\n```\nsage: g = Graph()\nsage: g2 = g.copy()\nsage: g == g   # fine\nTrue\nsage: g != g   # fine\nFalse\nsage: g2 == g  # PROBLEM: either this one\nTrue\nsage: g2 != g  # or this one should be false\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2506\n\n",
     "created_at": "2008-03-13T16:56:38Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_002506.json:
     "title": "Problem with inequality operator (!=) in graph.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2506",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 
 ```
@@ -50,7 +50,7 @@ archive/issue_comments_016976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2506#issuecomment-16976",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_016977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2506#issuecomment-16977",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_016978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2506#issuecomment-16978",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -126,16 +126,16 @@ http://www.voidspace.org.uk/python/articles/comparison.shtml
 archive/issue_comments_016979.json:
 ```json
 {
-    "body": "Attachment [2506-fix.patch](tarball://root/attachments/some-uuid/ticket2506/2506-fix.patch) by rlm created at 2008-03-14 13:46:44",
+    "body": "Attachment [2506-fix.patch](tarball://root/attachments/some-uuid/ticket2506/2506-fix.patch) by @rlmill created at 2008-03-14 13:46:44",
     "created_at": "2008-03-14T13:46:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2506#issuecomment-16979",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [2506-fix.patch](tarball://root/attachments/some-uuid/ticket2506/2506-fix.patch) by rlm created at 2008-03-14 13:46:44
+Attachment [2506-fix.patch](tarball://root/attachments/some-uuid/ticket2506/2506-fix.patch) by @rlmill created at 2008-03-14 13:46:44
 
 
 

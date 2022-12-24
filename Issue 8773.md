@@ -3,7 +3,7 @@
 archive/issues_008773.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  wjp\n\nIf you build GAP as part of sage-4.4 with GCC-4.5.0 (on lena):\n\n```\n[wstein@lena sage-4.4]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: gap('2+3')\nA workspace appears to have been corrupted... automatically rebuilding (this is harmless).\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.4, Release Date: 2010-04-24                         |\n| Type notebook() for the GUI, and license() for information.        |\n/home/wstein/screen/lena/sage-4.4/<ipython console> in <module>()\n\n/home/wstein/screen/lena/sage-4.4/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1030\n   1031         if isinstance(x, basestring):\n-> 1032             return cls(self, x, name=name)\n   1033         try:\n   1034             return self._coerce_from_special_method(x)\n\n/home/wstein/screen/lena/sage-4.4/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __init__(self, parent, value, is_name, name)\n   1449             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1450                 self._session_number = -1\n-> 1451                 raise TypeError, x\n   1452         self._session_number = parent._session_number\n   1453\n\nTypeError: Unable to start gap\nsage: gap('2+3')\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/wstein/screen/lena/sage-4.4/<ipython console> in <module>()\n\n/home/wstein/screen/lena/sage-4.4/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1030\n   1031         if isinstance(x, basestring):\n-> 1032             return cls(self, x, name=name)\n   1033         try:\n   1034             return self._coerce_from_special_method(x)\n\n/home/wstein/screen/lena/sage-4.4/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __init__(self, parent, value, is_name, name)\n   1449             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1450                 self._session_number = -1\n-> 1451                 raise TypeError, x\n   1452         self._session_number = parent._session_number\n   1453\n\nTypeError: Unable to start gap\n```\n\n\nExactly the same thing works fine with Sage-4.3.3 built using GCC-4.4.x on lena:\n\n```\n[wstein@lena sage-4.4]$ ../sage-4.3.3/sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: gap('2+3')\n5\n```\n\n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\nDeleting workspaces, etc., doesn't help.   The GAP spkg is unchanged between these two versions of Sage.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8773\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @wjp\n\nIf you build GAP as part of sage-4.4 with GCC-4.5.0 (on lena):\n\n```\n[wstein@lena sage-4.4]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: gap('2+3')\nA workspace appears to have been corrupted... automatically rebuilding (this is harmless).\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.4, Release Date: 2010-04-24                         |\n| Type notebook() for the GUI, and license() for information.        |\n/home/wstein/screen/lena/sage-4.4/<ipython console> in <module>()\n\n/home/wstein/screen/lena/sage-4.4/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1030\n   1031         if isinstance(x, basestring):\n-> 1032             return cls(self, x, name=name)\n   1033         try:\n   1034             return self._coerce_from_special_method(x)\n\n/home/wstein/screen/lena/sage-4.4/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __init__(self, parent, value, is_name, name)\n   1449             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1450                 self._session_number = -1\n-> 1451                 raise TypeError, x\n   1452         self._session_number = parent._session_number\n   1453\n\nTypeError: Unable to start gap\nsage: gap('2+3')\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/wstein/screen/lena/sage-4.4/<ipython console> in <module>()\n\n/home/wstein/screen/lena/sage-4.4/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1030\n   1031         if isinstance(x, basestring):\n-> 1032             return cls(self, x, name=name)\n   1033         try:\n   1034             return self._coerce_from_special_method(x)\n\n/home/wstein/screen/lena/sage-4.4/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __init__(self, parent, value, is_name, name)\n   1449             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1450                 self._session_number = -1\n-> 1451                 raise TypeError, x\n   1452         self._session_number = parent._session_number\n   1453\n\nTypeError: Unable to start gap\n```\n\n\nExactly the same thing works fine with Sage-4.3.3 built using GCC-4.4.x on lena:\n\n```\n[wstein@lena sage-4.4]$ ../sage-4.3.3/sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: gap('2+3')\n5\n```\n\n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\nDeleting workspaces, etc., doesn't help.   The GAP spkg is unchanged between these two versions of Sage.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8773\n\n",
     "created_at": "2010-04-26T22:28:45Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_008773.json:
     "title": "GCC-4.5.0 breaks GAP -- the workspace is broken, hence gap('2+2') fails.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8773",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: GeorgSWeber
 
-CC:  wjp
+CC:  @wjp
 
 If you build GAP as part of sage-4.4 with GCC-4.5.0 (on lena):
 
@@ -105,7 +105,7 @@ archive/issue_comments_080296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8773#issuecomment-80296",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_080297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8773#issuecomment-80297",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_080298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8773#issuecomment-80298",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_080299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8773#issuecomment-80299",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_080300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8773#issuecomment-80300",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_080301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8773#issuecomment-80301",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_080302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8773#issuecomment-80302",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_080303.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8773#issuecomment-80303",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_080304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8773#issuecomment-80304",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -328,7 +328,7 @@ archive/issue_comments_080305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8773#issuecomment-80305",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -346,7 +346,7 @@ archive/issue_comments_080306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8773#issuecomment-80306",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -380,7 +380,7 @@ archive/issue_comments_080307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8773#issuecomment-80307",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -419,7 +419,7 @@ archive/issue_comments_080308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8773#issuecomment-80308",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -449,7 +449,7 @@ archive/issue_comments_080309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8773#issuecomment-80309",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -467,7 +467,7 @@ archive/issue_comments_080310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8773#issuecomment-80310",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -485,7 +485,7 @@ archive/issue_comments_080311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8773#issuecomment-80311",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -503,7 +503,7 @@ archive/issue_comments_080312.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8773#issuecomment-80312",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -535,7 +535,7 @@ archive/issue_comments_080313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8773#issuecomment-80313",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -565,7 +565,7 @@ archive/issue_comments_080314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8773#issuecomment-80314",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 

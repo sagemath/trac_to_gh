@@ -3,7 +3,7 @@
 archive/issues_002475.json:
 ```json
 {
-    "body": "Assignee: was\n\nWhen I started this (sage-2.10.3):\n\n```\ndims.py\nSCORE dims.py: 11% (6 of 54)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2475\n\n",
+    "body": "Assignee: @williamstein\n\nWhen I started this (sage-2.10.3):\n\n```\ndims.py\nSCORE dims.py: 11% (6 of 54)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2475\n\n",
     "created_at": "2008-03-11T23:06:58Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_002475.json:
     "title": "doctest -- get coverage of modular/dims.py up to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2475",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 When I started this (sage-2.10.3):
 
@@ -43,7 +43,7 @@ archive/issue_comments_016762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2475#issuecomment-16762",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -56,16 +56,16 @@ SCORE dims.py: 31% (17 of 54); and I fixed a serious bug in p-new subspace!
 archive/issue_comments_016763.json:
 ```json
 {
-    "body": "Attachment [sage-2475-part1.patch](tarball://root/attachments/some-uuid/ticket2475/sage-2475-part1.patch) by was created at 2008-03-15 02:27:58\n\nthis brings coverage to 100% and fixes a serious bug.",
+    "body": "Attachment [sage-2475-part1.patch](tarball://root/attachments/some-uuid/ticket2475/sage-2475-part1.patch) by @williamstein created at 2008-03-15 02:27:58\n\nthis brings coverage to 100% and fixes a serious bug.",
     "created_at": "2008-03-15T02:27:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2475#issuecomment-16763",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2475-part1.patch](tarball://root/attachments/some-uuid/ticket2475/sage-2475-part1.patch) by was created at 2008-03-15 02:27:58
+Attachment [sage-2475-part1.patch](tarball://root/attachments/some-uuid/ticket2475/sage-2475-part1.patch) by @williamstein created at 2008-03-15 02:27:58
 
 this brings coverage to 100% and fixes a serious bug.
 
@@ -76,16 +76,16 @@ this brings coverage to 100% and fixes a serious bug.
 archive/issue_comments_016764.json:
 ```json
 {
-    "body": "Attachment [sage-2475-part2_of_2.patch](tarball://root/attachments/some-uuid/ticket2475/sage-2475-part2_of_2.patch) by was created at 2008-03-15 02:30:17\n\nTo referee these patches:\n1. verify that they fix the coverage to 100%\n2. look for typos in the docstrings\n3. The p-new subspace \"serious bugfixes\" make it so one doesn't get negative dimensions.  This was because the old new subspace code subtracted off the images of old subspaces from the tiny little new subspace instead of subtracting off from the ful l cuspidal subspace. \n4. This is almost all docstring addition and fixing return types to be Integer.\n\nAfter applying these two patches:\n\n```\nteragon:modular was$ sage -coverage dims.py\n----------------------------------------------------------------------\ndims.py\nSCORE dims.py: 100% (46 of 46)\n----------------------------------------------------------------------\n```\n",
+    "body": "Attachment [sage-2475-part2_of_2.patch](tarball://root/attachments/some-uuid/ticket2475/sage-2475-part2_of_2.patch) by @williamstein created at 2008-03-15 02:30:17\n\nTo referee these patches:\n1. verify that they fix the coverage to 100%\n2. look for typos in the docstrings\n3. The p-new subspace \"serious bugfixes\" make it so one doesn't get negative dimensions.  This was because the old new subspace code subtracted off the images of old subspaces from the tiny little new subspace instead of subtracting off from the ful l cuspidal subspace. \n4. This is almost all docstring addition and fixing return types to be Integer.\n\nAfter applying these two patches:\n\n```\nteragon:modular was$ sage -coverage dims.py\n----------------------------------------------------------------------\ndims.py\nSCORE dims.py: 100% (46 of 46)\n----------------------------------------------------------------------\n```\n",
     "created_at": "2008-03-15T02:30:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2475#issuecomment-16764",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2475-part2_of_2.patch](tarball://root/attachments/some-uuid/ticket2475/sage-2475-part2_of_2.patch) by was created at 2008-03-15 02:30:17
+Attachment [sage-2475-part2_of_2.patch](tarball://root/attachments/some-uuid/ticket2475/sage-2475-part2_of_2.patch) by @williamstein created at 2008-03-15 02:30:17
 
 To referee these patches:
 1. verify that they fix the coverage to 100%
@@ -111,16 +111,16 @@ SCORE dims.py: 100% (46 of 46)
 archive/issue_comments_016765.json:
 ```json
 {
-    "body": "Attachment [sage-2475-part4-touch-ups.patch](tarball://root/attachments/some-uuid/ticket2475/sage-2475-part4-touch-ups.patch) by craigcitro created at 2008-03-15 07:59:23",
+    "body": "Attachment [sage-2475-part4-touch-ups.patch](tarball://root/attachments/some-uuid/ticket2475/sage-2475-part4-touch-ups.patch) by @craigcitro created at 2008-03-15 07:59:23",
     "created_at": "2008-03-15T07:59:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2475#issuecomment-16765",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [sage-2475-part4-touch-ups.patch](tarball://root/attachments/some-uuid/ticket2475/sage-2475-part4-touch-ups.patch) by craigcitro created at 2008-03-15 07:59:23
+Attachment [sage-2475-part4-touch-ups.patch](tarball://root/attachments/some-uuid/ticket2475/sage-2475-part4-touch-ups.patch) by @craigcitro created at 2008-03-15 07:59:23
 
 
 
@@ -134,7 +134,7 @@ archive/issue_comments_016766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2475#issuecomment-16766",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_016767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2475#issuecomment-16767",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -165,16 +165,16 @@ I forgot an `r` on the docstring for `mu30`. mabshoff is correcting this when he
 archive/issue_comments_016768.json:
 ```json
 {
-    "body": "Attachment [trac_2475-part5.patch](tarball://root/attachments/some-uuid/ticket2475/trac_2475-part5.patch) by craigcitro created at 2008-03-15 08:31:06",
+    "body": "Attachment [trac_2475-part5.patch](tarball://root/attachments/some-uuid/ticket2475/trac_2475-part5.patch) by @craigcitro created at 2008-03-15 08:31:06",
     "created_at": "2008-03-15T08:31:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2475#issuecomment-16768",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac_2475-part5.patch](tarball://root/attachments/some-uuid/ticket2475/trac_2475-part5.patch) by craigcitro created at 2008-03-15 08:31:06
+Attachment [trac_2475-part5.patch](tarball://root/attachments/some-uuid/ticket2475/trac_2475-part5.patch) by @craigcitro created at 2008-03-15 08:31:06
 
 
 

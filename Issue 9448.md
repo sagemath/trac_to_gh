@@ -3,7 +3,7 @@
 archive/issues_009448.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  was cremona jhpalmieri\n\nSuggested approaches during SD23 lightning talk:\n\nAdd a big note in the developer guide around where the location of the cloned branch is mentioned\n\nAdd an extra field in the source introspection pointing to the sage source file. (Suggested by John Cremona)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9448\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @williamstein @JohnCremona @jhpalmieri\n\nSuggested approaches during SD23 lightning talk:\n\nAdd a big note in the developer guide around where the location of the cloned branch is mentioned\n\nAdd an extra field in the source introspection pointing to the sage source file. (Suggested by John Cremona)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9448\n\n",
     "created_at": "2010-07-07T10:20:04Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_009448.json:
     "title": "make it clearer not to edit sources in site-packages",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9448",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 Assignee: mvngu
 
-CC:  was cremona jhpalmieri
+CC:  @williamstein @JohnCremona @jhpalmieri
 
 Suggested approaches during SD23 lightning talk:
 
@@ -43,7 +43,7 @@ archive/issue_comments_090536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9448#issuecomment-90536",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -56,16 +56,16 @@ Changing type from enhancement to defect.
 archive/issue_comments_090537.json:
 ```json
 {
-    "body": "Attachment [9448.patch](tarball://root/attachments/some-uuid/ticket9448/9448.patch) by jdemeyer created at 2010-11-12 21:23:32",
+    "body": "Attachment [9448.patch](tarball://root/attachments/some-uuid/ticket9448/9448.patch) by @jdemeyer created at 2010-11-12 21:23:32",
     "created_at": "2010-11-12T21:23:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9448#issuecomment-90537",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9448.patch](tarball://root/attachments/some-uuid/ticket9448/9448.patch) by jdemeyer created at 2010-11-12 21:23:32
+Attachment [9448.patch](tarball://root/attachments/some-uuid/ticket9448/9448.patch) by @jdemeyer created at 2010-11-12 21:23:32
 
 
 
@@ -79,7 +79,7 @@ archive/issue_comments_090538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9448#issuecomment-90538",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_090539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9448#issuecomment-90539",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_090540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9448#issuecomment-90540",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_090543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9448#issuecomment-90543",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_090544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9448#issuecomment-90544",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_002876.json:
     "title": "sage/server/notebook/twist.py doctest fails when dsage certificates are not present",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2876",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_019756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2876#issuecomment-19756",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -50,16 +50,16 @@ Cwitty pointed out that if you use the secure=False option, one gets logged on a
 archive/issue_comments_019757.json:
 ```json
 {
-    "body": "Attachment [simple_server_doctest.patch](tarball://root/attachments/some-uuid/ticket2876/simple_server_doctest.patch) by was created at 2008-04-11 23:45:07\n\nWorks perfectly.",
+    "body": "Attachment [simple_server_doctest.patch](tarball://root/attachments/some-uuid/ticket2876/simple_server_doctest.patch) by @williamstein created at 2008-04-11 23:45:07\n\nWorks perfectly.",
     "created_at": "2008-04-11T23:45:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2876#issuecomment-19757",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [simple_server_doctest.patch](tarball://root/attachments/some-uuid/ticket2876/simple_server_doctest.patch) by was created at 2008-04-11 23:45:07
+Attachment [simple_server_doctest.patch](tarball://root/attachments/some-uuid/ticket2876/simple_server_doctest.patch) by @williamstein created at 2008-04-11 23:45:07
 
 Works perfectly.
 

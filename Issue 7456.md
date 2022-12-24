@@ -3,7 +3,7 @@
 archive/issues_007456.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  jhpalmieri\n\nKeywords: rest citation\n\nAs Martin Albrecht pointed out at #7450, there is a proper way of marking up references and citations, see \nhttp://sphinx.pocoo.org/rest.html#citations\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7456\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri\n\nKeywords: rest citation\n\nAs Martin Albrecht pointed out at #7450, there is a proper way of marking up references and citations, see \nhttp://sphinx.pocoo.org/rest.html#citations\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7456\n\n",
     "created_at": "2009-11-13T22:17:55Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_007456.json:
     "title": "developer guide: discuss proper ReST markup for citations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7456",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 Assignee: mvngu
 
-CC:  jhpalmieri
+CC:  @jhpalmieri
 
 Keywords: rest citation
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7456
 archive/issue_comments_062797.json:
 ```json
 {
-    "body": "Attachment [trac_7456.patch](tarball://root/attachments/some-uuid/ticket7456/trac_7456.patch) by AlexGhitza created at 2009-11-13 22:34:54",
+    "body": "Attachment [trac_7456.patch](tarball://root/attachments/some-uuid/ticket7456/trac_7456.patch) by @aghitza created at 2009-11-13 22:34:54",
     "created_at": "2009-11-13T22:34:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7456#issuecomment-62797",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_7456.patch](tarball://root/attachments/some-uuid/ticket7456/trac_7456.patch) by AlexGhitza created at 2009-11-13 22:34:54
+Attachment [trac_7456.patch](tarball://root/attachments/some-uuid/ticket7456/trac_7456.patch) by @aghitza created at 2009-11-13 22:34:54
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_062798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7456#issuecomment-62798",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_062799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7456#issuecomment-62799",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_062800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7456#issuecomment-62800",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_062801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7456#issuecomment-62801",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_062802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7456#issuecomment-62802",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_062803.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7456#issuecomment-62803",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005092.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5092\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5092\n\n",
     "created_at": "2009-01-25T02:11:19Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_005092.json:
     "title": "Primes()?? gets hung in len call",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5092",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_038802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5092#issuecomment-38802",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_038804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5092#issuecomment-38804",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_038805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5092#issuecomment-38805",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -162,16 +162,16 @@ Michael
 archive/issue_comments_038807.json:
 ```json
 {
-    "body": "Attachment [trac_5092.patch](tarball://root/attachments/some-uuid/ticket5092/trac_5092.patch) by mhansen created at 2009-10-19 19:25:44",
+    "body": "Attachment [trac_5092.patch](tarball://root/attachments/some-uuid/ticket5092/trac_5092.patch) by @mwhansen created at 2009-10-19 19:25:44",
     "created_at": "2009-10-19T19:25:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5092#issuecomment-38807",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5092.patch](tarball://root/attachments/some-uuid/ticket5092/trac_5092.patch) by mhansen created at 2009-10-19 19:25:44
+Attachment [trac_5092.patch](tarball://root/attachments/some-uuid/ticket5092/trac_5092.patch) by @mwhansen created at 2009-10-19 19:25:44
 
 
 
@@ -185,7 +185,7 @@ archive/issue_comments_038808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5092#issuecomment-38808",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_038809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5092#issuecomment-38809",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_038810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5092#issuecomment-38810",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_038811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5092#issuecomment-38811",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_038812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5092#issuecomment-38812",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_038813.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5092#issuecomment-38813",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

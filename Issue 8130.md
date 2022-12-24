@@ -14,7 +14,7 @@ archive/issues_008130.json:
     "title": "UnicodeDecodeError (etc.) with view from the command line",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8130",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: tbd
@@ -54,7 +54,7 @@ archive/issue_comments_071483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8130#issuecomment-71483",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_071484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8130#issuecomment-71484",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_071485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8130#issuecomment-71485",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_071486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8130#issuecomment-71486",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_071487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8130#issuecomment-71487",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

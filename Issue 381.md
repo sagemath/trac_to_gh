@@ -3,7 +3,7 @@
 archive/issues_000381.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nOn May 28, 5:11 pm, Marshall Hampton <hampto...@gmail.com> wrote:\n> This is more of a unixy process control question but I am applying it\n> to sage.\n>\n> I would like to start a notebook on my office machine while I am at a\n> conference.  I tried logging in with ssh, starting the notebook,\n> suspending it with ctrl-z, and then putting the suspended process in\n> the background with bg.  This didn't really work, although I could\n> still restart the notebook server with a browser.  I could figure this\n> out eventually but I am hoping someone reading this list already knows\n> how to do this.\n\nThere are several options:\n\n1) use screen - see www.gnu.org/software/screen/\n2) use nohup - see man nohup\n3) use disown - see http://www.faqs.org/docs/bashman/bashref_79.html\n\nAll have their specific advantages, I would just go with screen.\n\nIt might be worthwhile to offer an option for SAGE to demonize itself.\n\nCheers,\nMichael Abshoff\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/381\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nOn May 28, 5:11 pm, Marshall Hampton <hampto...@gmail.com> wrote:\n> This is more of a unixy process control question but I am applying it\n> to sage.\n>\n> I would like to start a notebook on my office machine while I am at a\n> conference.  I tried logging in with ssh, starting the notebook,\n> suspending it with ctrl-z, and then putting the suspended process in\n> the background with bg.  This didn't really work, although I could\n> still restart the notebook server with a browser.  I could figure this\n> out eventually but I am hoping someone reading this list already knows\n> how to do this.\n\nThere are several options:\n\n1) use screen - see www.gnu.org/software/screen/\n2) use nohup - see man nohup\n3) use disown - see http://www.faqs.org/docs/bashman/bashref_79.html\n\nAll have their specific advantages, I would just go with screen.\n\nIt might be worthwhile to offer an option for SAGE to demonize itself.\n\nCheers,\nMichael Abshoff\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/381\n\n",
     "created_at": "2007-05-28T21:14:39Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_000381.json:
     "title": "SAGE daemon mode",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/381",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -64,7 +64,7 @@ archive/issue_comments_001844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1844",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -102,7 +102,7 @@ might be easier.
 archive/issue_comments_001845.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2007-08-23T11:20:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
@@ -111,7 +111,7 @@ archive/issue_comments_001845.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 
@@ -143,7 +143,7 @@ archive/issue_comments_001847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1847",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_001848.json:
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1848",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_001849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1849",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_001850.json:
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1850",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_001851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1851",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_001852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1852",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_001853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1853",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_001854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1854",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -319,7 +319,7 @@ archive/issue_comments_001855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1855",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -364,7 +364,7 @@ archive/issue_comments_001856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1856",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -382,7 +382,7 @@ archive/issue_comments_001857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1857",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -400,7 +400,7 @@ archive/issue_comments_001858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1858",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -418,7 +418,7 @@ archive/issue_comments_001859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1859",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

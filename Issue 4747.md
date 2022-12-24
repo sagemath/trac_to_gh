@@ -3,7 +3,7 @@
 archive/issues_004747.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis speeds up hash(c) for c a cusp by a lot.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4747\n\n",
+    "body": "Assignee: @williamstein\n\nThis speeds up hash(c) for c a cusp by a lot.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4747\n\n",
     "created_at": "2008-12-09T21:59:30Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004747.json:
     "title": "[with patch; needs review] add custom hash function for cusps.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4747",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This speeds up hash(c) for c a cusp by a lot.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4747
 archive/issue_comments_035918.json:
 ```json
 {
-    "body": "Attachment [trac_4747.patch](tarball://root/attachments/some-uuid/ticket4747/trac_4747.patch) by was created at 2008-12-09 22:00:17",
+    "body": "Attachment [trac_4747.patch](tarball://root/attachments/some-uuid/ticket4747/trac_4747.patch) by @williamstein created at 2008-12-09 22:00:17",
     "created_at": "2008-12-09T22:00:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4747#issuecomment-35918",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4747.patch](tarball://root/attachments/some-uuid/ticket4747/trac_4747.patch) by was created at 2008-12-09 22:00:17
+Attachment [trac_4747.patch](tarball://root/attachments/some-uuid/ticket4747/trac_4747.patch) by @williamstein created at 2008-12-09 22:00:17
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_035919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4747#issuecomment-35919",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_035920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4747#issuecomment-35920",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_035921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4747#issuecomment-35921",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_035922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4747#issuecomment-35922",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -307,7 +307,7 @@ archive/issue_comments_035929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4747#issuecomment-35929",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -321,16 +321,16 @@ The change in hash function means that sets of cusps will be ordered differently
 archive/issue_comments_035930.json:
 ```json
 {
-    "body": "Attachment [trac-4747-doctest.patch](tarball://root/attachments/some-uuid/ticket4747/trac-4747-doctest.patch) by cremona created at 2008-12-14 19:10:14",
+    "body": "Attachment [trac-4747-doctest.patch](tarball://root/attachments/some-uuid/ticket4747/trac-4747-doctest.patch) by @JohnCremona created at 2008-12-14 19:10:14",
     "created_at": "2008-12-14T19:10:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4747#issuecomment-35930",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac-4747-doctest.patch](tarball://root/attachments/some-uuid/ticket4747/trac-4747-doctest.patch) by cremona created at 2008-12-14 19:10:14
+Attachment [trac-4747-doctest.patch](tarball://root/attachments/some-uuid/ticket4747/trac-4747-doctest.patch) by @JohnCremona created at 2008-12-14 19:10:14
 
 
 
@@ -344,7 +344,7 @@ archive/issue_comments_035931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4747#issuecomment-35931",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_035932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4747#issuecomment-35932",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

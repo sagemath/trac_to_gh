@@ -3,7 +3,7 @@
 archive/issues_005536.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nThe subject says it all.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5536\n\n",
+    "body": "Assignee: @jhpalmieri\n\nThe subject says it all.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5536\n\n",
     "created_at": "2009-03-16T22:50:39Z",
     "labels": [
         "group theory",
@@ -14,10 +14,10 @@ archive/issues_005536.json:
     "title": "[with patch, review pending] trivial docstring patches for permgp.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5536",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 The subject says it all.
 

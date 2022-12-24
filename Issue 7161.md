@@ -14,7 +14,7 @@ archive/issues_007161.json:
     "title": "html fragments at special locations in notebook pages",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7161",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 Assignee: boothby

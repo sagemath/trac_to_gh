@@ -3,7 +3,7 @@
 archive/issues_000920.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe following integral should be divergent, but sage (and maxima?) gives an answer.\n\nsage: integrate(1/x^3,x,-1,3)\n4/9\nsage: version()\n'SAGE Version 2.8.7, Release Date: 2007-10-15'\n\nIssue created by migration from https://trac.sagemath.org/ticket/920\n\n",
+    "body": "Assignee: @williamstein\n\nThe following integral should be divergent, but sage (and maxima?) gives an answer.\n\nsage: integrate(1/x^3,x,-1,3)\n4/9\nsage: version()\n'SAGE Version 2.8.7, Release Date: 2007-10-15'\n\nIssue created by migration from https://trac.sagemath.org/ticket/920\n\n",
     "created_at": "2007-10-18T17:18:07Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_000920.json:
     "title": "integrate doesn't handle divergent case correctly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/920",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The following integral should be divergent, but sage (and maxima?) gives an answer.
 
@@ -42,7 +42,7 @@ archive/issue_comments_005638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/920#issuecomment-5638",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_005639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/920#issuecomment-5639",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_005640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/920#issuecomment-5640",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_005641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/920#issuecomment-5641",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -150,16 +150,16 @@ Changing status from new to assigned.
 archive/issue_comments_005642.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-10-24T00:44:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/920#issuecomment-5642",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -173,7 +173,7 @@ archive/issue_comments_005643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/920#issuecomment-5643",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -194,16 +194,16 @@ Looks, good though:
 archive/issue_comments_005644.json:
 ```json
 {
-    "body": "Attachment [920.patch](tarball://root/attachments/some-uuid/ticket920/920.patch) by malb created at 2007-10-24 19:24:49\n\napplied to 2.8.9.alpha1",
+    "body": "Attachment [920.patch](tarball://root/attachments/some-uuid/ticket920/920.patch) by @malb created at 2007-10-24 19:24:49\n\napplied to 2.8.9.alpha1",
     "created_at": "2007-10-24T19:24:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/920#issuecomment-5644",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [920.patch](tarball://root/attachments/some-uuid/ticket920/920.patch) by malb created at 2007-10-24 19:24:49
+Attachment [920.patch](tarball://root/attachments/some-uuid/ticket920/920.patch) by @malb created at 2007-10-24 19:24:49
 
 applied to 2.8.9.alpha1
 
@@ -219,7 +219,7 @@ archive/issue_comments_005645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/920#issuecomment-5645",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

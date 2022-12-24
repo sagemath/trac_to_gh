@@ -14,7 +14,7 @@ archive/issues_006277.json:
     "title": "sage -tp a.py a.py will test a.py twice",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6277",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_050136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6277#issuecomment-50136",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_050137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6277#issuecomment-50137",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

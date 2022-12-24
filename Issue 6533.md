@@ -14,7 +14,7 @@ archive/issues_006533.json:
     "title": "sage >= 4.1.rc1 doesn't build on cleo (ia64-Linux-rhel5)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6533",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_053269.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6533#issuecomment-53269",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_053270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6533#issuecomment-53270",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

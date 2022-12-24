@@ -14,7 +14,7 @@ archive/issues_003479.json:
     "title": "[with patch, needs review] update dsage portion of tut.tex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3479",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 Assignee: tba
@@ -41,7 +41,7 @@ archive/issue_comments_024514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3479#issuecomment-24514",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -54,16 +54,16 @@ Patch for doc/tut/tut.tex
 archive/issue_comments_024515.json:
 ```json
 {
-    "body": "Attachment [3479_dsage_tut.patch](tarball://root/attachments/some-uuid/ticket3479/3479_dsage_tut.patch) by mhansen created at 2008-06-19 22:31:35\n\nYi, does your patch apply with #3347 applied?",
+    "body": "Attachment [3479_dsage_tut.patch](tarball://root/attachments/some-uuid/ticket3479/3479_dsage_tut.patch) by @mwhansen created at 2008-06-19 22:31:35\n\nYi, does your patch apply with #3347 applied?",
     "created_at": "2008-06-19T22:31:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3479#issuecomment-24515",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [3479_dsage_tut.patch](tarball://root/attachments/some-uuid/ticket3479/3479_dsage_tut.patch) by mhansen created at 2008-06-19 22:31:35
+Attachment [3479_dsage_tut.patch](tarball://root/attachments/some-uuid/ticket3479/3479_dsage_tut.patch) by @mwhansen created at 2008-06-19 22:31:35
 
 Yi, does your patch apply with #3347 applied?
 
@@ -79,7 +79,7 @@ archive/issue_comments_024516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3479#issuecomment-24516",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_024517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3479#issuecomment-24517",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_024518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3479#issuecomment-24518",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_024519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3479#issuecomment-24519",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -156,16 +156,16 @@ Changing status from new to assigned.
 archive/issue_comments_024520.json:
 ```json
 {
-    "body": "Changing assignee from tba to mhansen.",
+    "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2009-01-24T09:56:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3479#issuecomment-24520",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tba to mhansen.
+Changing assignee from tba to @mwhansen.
 
 
 
@@ -179,7 +179,7 @@ archive/issue_comments_024521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3479#issuecomment-24521",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

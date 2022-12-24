@@ -3,7 +3,7 @@
 archive/issues_009545.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9545\n\n",
+    "body": "Assignee: @aghitza\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9545\n\n",
     "created_at": "2010-07-18T20:01:59Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_009545.json:
     "title": "Fix flintqs on FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9545",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9545
 archive/issue_comments_092013.json:
 ```json
 {
-    "body": "Attachment [flintqs-20070817.p5.patch](tarball://root/attachments/some-uuid/ticket9545/flintqs-20070817.p5.patch) by pjeremy created at 2010-07-18 20:05:19",
+    "body": "Attachment [flintqs-20070817.p5.patch](tarball://root/attachments/some-uuid/ticket9545/flintqs-20070817.p5.patch) by @peterjeremy created at 2010-07-18 20:05:19",
     "created_at": "2010-07-18T20:05:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9545#issuecomment-92013",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
-Attachment [flintqs-20070817.p5.patch](tarball://root/attachments/some-uuid/ticket9545/flintqs-20070817.p5.patch) by pjeremy created at 2010-07-18 20:05:19
+Attachment [flintqs-20070817.p5.patch](tarball://root/attachments/some-uuid/ticket9545/flintqs-20070817.p5.patch) by @peterjeremy created at 2010-07-18 20:05:19
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_092014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9545#issuecomment-92014",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_092015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9545#issuecomment-92015",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 

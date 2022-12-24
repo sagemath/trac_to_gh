@@ -14,7 +14,7 @@ archive/issues_003036.json:
     "title": "[with patch; needs review] SAGE_TESTDIR broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3036",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 Assignee: failure

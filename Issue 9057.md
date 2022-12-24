@@ -3,7 +3,7 @@
 archive/issues_009057.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nKeywords: elliptic curves, L-functions, function fields\n\nSage currently cannot compute L-functions of elliptic curves over function fields. Chris Hall and I have developed Cython code so that Sage can make use of our ELLFF (elliptic curve L-functions over function fields) library (written in C++ with NTL). The next step is to patch this into Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9057\n\n",
+    "body": "Assignee: @JohnCremona\n\nKeywords: elliptic curves, L-functions, function fields\n\nSage currently cannot compute L-functions of elliptic curves over function fields. Chris Hall and I have developed Cython code so that Sage can make use of our ELLFF (elliptic curve L-functions over function fields) library (written in C++ with NTL). The next step is to patch this into Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9057\n\n",
     "created_at": "2010-05-26T21:10:31Z",
     "labels": [
         "elliptic curves",
@@ -17,7 +17,7 @@ archive/issues_009057.json:
     "user": "salmanhb"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 Keywords: elliptic curves, L-functions, function fields
 
@@ -193,7 +193,7 @@ archive/issue_comments_084045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9057",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9057#issuecomment-84045",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

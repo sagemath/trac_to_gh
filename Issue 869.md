@@ -3,7 +3,7 @@
 archive/issues_000869.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: graphs\n\nHere are a few functions wrapped from the bipartite functions in networkx.\n\nIssue created by migration from https://trac.sagemath.org/ticket/869\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nHere are a few functions wrapped from the bipartite functions in networkx.\n\nIssue created by migration from https://trac.sagemath.org/ticket/869\n\n",
     "created_at": "2007-10-13T00:45:10Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_000869.json:
     "title": "[with patch] graphs: bipartite graph functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/869",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: graphs
 
@@ -57,7 +57,7 @@ archive/issue_comments_005362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/869#issuecomment-5362",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_005363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/869#issuecomment-5363",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

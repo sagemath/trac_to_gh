@@ -14,7 +14,7 @@ archive/issues_003598.json:
     "title": "clisp -- fix building on RHEL5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3598",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -59,7 +59,7 @@ archive/issue_comments_025421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3598#issuecomment-25421",
-    "user": "tjlahey"
+    "user": "@tjl"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_025423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3598#issuecomment-25423",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

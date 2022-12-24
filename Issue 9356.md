@@ -3,7 +3,7 @@
 archive/issues_009356.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  drkirkby fbissey\n\nSAGE_ATLAS_LIB is supposed to allow the use of an external ATLAS installation rather than have Sage build it.  I think if Sage builds ATLAS once, then you ought to be able to copy the relevant files from that build to another directory and then use that directory as SAGE_ATLAS_LIB the next time you build Sage.  But this doesn't work on Solaris: on Solaris, when Sage builds ATLAS, it explicitly deletes the file liblapack.so, installing liblapack.a instead.  But when it tests SAGE_ATLAS_LIB, it tests for the existence of liblapack.so.\n\nThe new spkg just tests for the existence of liblapack.a on Solaris.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9356\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  drkirkby @kiwifb\n\nSAGE_ATLAS_LIB is supposed to allow the use of an external ATLAS installation rather than have Sage build it.  I think if Sage builds ATLAS once, then you ought to be able to copy the relevant files from that build to another directory and then use that directory as SAGE_ATLAS_LIB the next time you build Sage.  But this doesn't work on Solaris: on Solaris, when Sage builds ATLAS, it explicitly deletes the file liblapack.so, installing liblapack.a instead.  But when it tests SAGE_ATLAS_LIB, it tests for the existence of liblapack.so.\n\nThe new spkg just tests for the existence of liblapack.a on Solaris.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9356\n\n",
     "created_at": "2010-06-28T01:26:33Z",
     "labels": [
         "porting: Solaris",
@@ -14,12 +14,12 @@ archive/issues_009356.json:
     "title": "make SAGE_ATLAS_LIB work on Solaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9356",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: drkirkby
 
-CC:  drkirkby fbissey
+CC:  drkirkby @kiwifb
 
 SAGE_ATLAS_LIB is supposed to allow the use of an external ATLAS installation rather than have Sage build it.  I think if Sage builds ATLAS once, then you ought to be able to copy the relevant files from that build to another directory and then use that directory as SAGE_ATLAS_LIB the next time you build Sage.  But this doesn't work on Solaris: on Solaris, when Sage builds ATLAS, it explicitly deletes the file liblapack.so, installing liblapack.a instead.  But when it tests SAGE_ATLAS_LIB, it tests for the existence of liblapack.so.
 
@@ -41,7 +41,7 @@ archive/issue_comments_088810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9356#issuecomment-88810",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_088811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9356#issuecomment-88811",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -72,16 +72,16 @@ Changing priority from major to minor.
 archive/issue_comments_088812.json:
 ```json
 {
-    "body": "Attachment [atlas.patch](tarball://root/attachments/some-uuid/ticket9356/atlas.patch) by jhpalmieri created at 2010-06-28 01:31:30\n\noutput of \"hg diff\" in atlas directory",
+    "body": "Attachment [atlas.patch](tarball://root/attachments/some-uuid/ticket9356/atlas.patch) by @jhpalmieri created at 2010-06-28 01:31:30\n\noutput of \"hg diff\" in atlas directory",
     "created_at": "2010-06-28T01:31:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9356#issuecomment-88812",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [atlas.patch](tarball://root/attachments/some-uuid/ticket9356/atlas.patch) by jhpalmieri created at 2010-06-28 01:31:30
+Attachment [atlas.patch](tarball://root/attachments/some-uuid/ticket9356/atlas.patch) by @jhpalmieri created at 2010-06-28 01:31:30
 
 output of "hg diff" in atlas directory
 
@@ -147,7 +147,7 @@ archive/issue_comments_088815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9356#issuecomment-88815",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_088816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9356#issuecomment-88816",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_088818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9356#issuecomment-88818",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_088820.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9356#issuecomment-88820",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_088821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9356#issuecomment-88821",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -418,7 +418,7 @@ archive/issue_comments_088823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9356#issuecomment-88823",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -475,7 +475,7 @@ archive/issue_comments_088825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9356#issuecomment-88825",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -560,7 +560,7 @@ archive/issue_comments_088828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9356#issuecomment-88828",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -602,7 +602,7 @@ archive/issue_comments_088829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9356#issuecomment-88829",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -639,7 +639,7 @@ archive/issue_comments_088830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9356#issuecomment-88830",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -737,7 +737,7 @@ archive/issue_comments_088833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9356#issuecomment-88833",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -805,7 +805,7 @@ archive/issue_comments_088835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9356#issuecomment-88835",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -892,7 +892,7 @@ archive/issue_comments_088837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9356#issuecomment-88837",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -924,7 +924,7 @@ archive/issue_comments_088838.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9356#issuecomment-88838",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -942,7 +942,7 @@ archive/issue_comments_088839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9356#issuecomment-88839",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

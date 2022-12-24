@@ -14,7 +14,7 @@ archive/issues_000717.json:
     "title": "sage -t timeout stuff works poorly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/717",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: failure
@@ -101,16 +101,16 @@ Michael
 archive/issue_comments_004175.json:
 ```json
 {
-    "body": "Attachment [trac_717_bin.patch](tarball://root/attachments/some-uuid/ticket717/trac_717_bin.patch) by gfurnish created at 2008-12-05 06:24:56\n\nThis code enables timeouts.",
+    "body": "Attachment [trac_717_bin.patch](tarball://root/attachments/some-uuid/ticket717/trac_717_bin.patch) by @garyfurnish created at 2008-12-05 06:24:56\n\nThis code enables timeouts.",
     "created_at": "2008-12-05T06:24:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/717",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/717#issuecomment-4175",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_717_bin.patch](tarball://root/attachments/some-uuid/ticket717/trac_717_bin.patch) by gfurnish created at 2008-12-05 06:24:56
+Attachment [trac_717_bin.patch](tarball://root/attachments/some-uuid/ticket717/trac_717_bin.patch) by @garyfurnish created at 2008-12-05 06:24:56
 
 This code enables timeouts.
 
@@ -126,7 +126,7 @@ archive/issue_comments_004176.json:
     "issue": "https://github.com/sagemath/sagetest/issues/717",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/717#issuecomment-4176",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -139,16 +139,16 @@ Changing status from new to assigned.
 archive/issue_comments_004177.json:
 ```json
 {
-    "body": "Changing assignee from failure to gfurnish.",
+    "body": "Changing assignee from failure to @garyfurnish.",
     "created_at": "2008-12-05T06:24:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/717",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/717#issuecomment-4177",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from failure to gfurnish.
+Changing assignee from failure to @garyfurnish.
 
 
 

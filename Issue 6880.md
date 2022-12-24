@@ -14,7 +14,7 @@ archive/issues_006880.json:
     "title": "docstrings and @cached_method -- if you used cached_method then docstring displays wrong file, etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6880",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -45,7 +45,7 @@ archive/issue_comments_056790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6880#issuecomment-56790",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_056791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6880#issuecomment-56791",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_056792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6880#issuecomment-56792",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_056793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6880#issuecomment-56793",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

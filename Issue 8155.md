@@ -3,7 +3,7 @@
 archive/issues_008155.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nOtherwise a KeyboardInterrupt will be ignored during the call to ratpoints.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8155\n\n",
+    "body": "Assignee: @JohnCremona\n\nOtherwise a KeyboardInterrupt will be ignored during the call to ratpoints.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8155\n\n",
     "created_at": "2010-02-02T19:02:30Z",
     "labels": [
         "elliptic curves",
@@ -14,10 +14,10 @@ archive/issues_008155.json:
     "title": "add sig_on/sig_off to sage.schemes.elliptic_curves.descent_two_isogeny",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8155",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 Otherwise a KeyboardInterrupt will be ignored during the call to ratpoints.
 
@@ -37,7 +37,7 @@ archive/issue_comments_071697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8155#issuecomment-71697",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_071698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8155#issuecomment-71698",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_071699.json:
 ```json
 {
-    "body": "Attachment [trac_8155.patch](tarball://root/attachments/some-uuid/ticket8155/trac_8155.patch) by cremona created at 2010-02-06 17:27:19\n\nI applied the patch successfully to 4.3.2 with the spkg and patches at #8184 already applied, with no problem.\n\nTesting the whole library (without -long):  all test pass.   Positive review!",
+    "body": "Attachment [trac_8155.patch](tarball://root/attachments/some-uuid/ticket8155/trac_8155.patch) by @JohnCremona created at 2010-02-06 17:27:19\n\nI applied the patch successfully to 4.3.2 with the spkg and patches at #8184 already applied, with no problem.\n\nTesting the whole library (without -long):  all test pass.   Positive review!",
     "created_at": "2010-02-06T17:27:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8155#issuecomment-71699",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_8155.patch](tarball://root/attachments/some-uuid/ticket8155/trac_8155.patch) by cremona created at 2010-02-06 17:27:19
+Attachment [trac_8155.patch](tarball://root/attachments/some-uuid/ticket8155/trac_8155.patch) by @JohnCremona created at 2010-02-06 17:27:19
 
 I applied the patch successfully to 4.3.2 with the spkg and patches at #8184 already applied, with no problem.
 
@@ -95,7 +95,7 @@ archive/issue_comments_071700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8155#issuecomment-71700",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

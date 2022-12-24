@@ -3,7 +3,7 @@
 archive/issues_004701.json:
 ```json
 {
-    "body": "Assignee: was\n\nFix this:\n\n```\nsage: R.<x> = GF(9,'a')[]\nsage: magma(x)\nboom\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4701\n\n",
+    "body": "Assignee: @williamstein\n\nFix this:\n\n```\nsage: R.<x> = GF(9,'a')[]\nsage: magma(x)\nboom\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4701\n\n",
     "created_at": "2008-12-05T00:32:30Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_004701.json:
     "title": "magma/sage interface -- coercion for single variable polynomials broken in some cases",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4701",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Fix this:
 
@@ -44,7 +44,7 @@ archive/issue_comments_035414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4701#issuecomment-35414",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -57,16 +57,16 @@ The attached patch fixes the problem by using _ref instead of name in the polyno
 archive/issue_comments_035415.json:
 ```json
 {
-    "body": "Attachment [trac_4701.patch](tarball://root/attachments/some-uuid/ticket4701/trac_4701.patch) by was created at 2008-12-05 01:57:59",
+    "body": "Attachment [trac_4701.patch](tarball://root/attachments/some-uuid/ticket4701/trac_4701.patch) by @williamstein created at 2008-12-05 01:57:59",
     "created_at": "2008-12-05T01:57:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4701#issuecomment-35415",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4701.patch](tarball://root/attachments/some-uuid/ticket4701/trac_4701.patch) by was created at 2008-12-05 01:57:59
+Attachment [trac_4701.patch](tarball://root/attachments/some-uuid/ticket4701/trac_4701.patch) by @williamstein created at 2008-12-05 01:57:59
 
 
 
@@ -75,16 +75,16 @@ Attachment [trac_4701.patch](tarball://root/attachments/some-uuid/ticket4701/tra
 archive/issue_comments_035416.json:
 ```json
 {
-    "body": "Attachment [trac_4701_part2.patch](tarball://root/attachments/some-uuid/ticket4701/trac_4701_part2.patch) by ncalexan created at 2008-12-05 08:02:16\n\nThere are problems.  My referee patch includes a few failing doctests.\n\n\n```\nsage: R = GF(3^5, 'a') # optional - magma\nsage: a = magma(R.gen()) # optional - magma\nsage: a^3 # optional - magma\na^3\nsage: a^3 + a # optional - magma\na^47\nsage: a.sage()\na\nsage: a.sage().parent()\nFinite Field in a of size 3^5\nsage: a.Eltseq()\n[ 0, 1, 0, 0, 0 ]\nsage: a.Sage()\nGF(243, 'a'.replace('$.', 'x').replace('.', ''), modulus=GF(3)['a'.replace('$.', 'x').replace('.', '')]([ 1, 2, 0, 0, 0, 1 ]))(GF(3)['a'.replace('$.', 'x').replace('.', '')]([ 0, 1 ]))\n```\n",
+    "body": "Attachment [trac_4701_part2.patch](tarball://root/attachments/some-uuid/ticket4701/trac_4701_part2.patch) by @ncalexan created at 2008-12-05 08:02:16\n\nThere are problems.  My referee patch includes a few failing doctests.\n\n\n```\nsage: R = GF(3^5, 'a') # optional - magma\nsage: a = magma(R.gen()) # optional - magma\nsage: a^3 # optional - magma\na^3\nsage: a^3 + a # optional - magma\na^47\nsage: a.sage()\na\nsage: a.sage().parent()\nFinite Field in a of size 3^5\nsage: a.Eltseq()\n[ 0, 1, 0, 0, 0 ]\nsage: a.Sage()\nGF(243, 'a'.replace('$.', 'x').replace('.', ''), modulus=GF(3)['a'.replace('$.', 'x').replace('.', '')]([ 1, 2, 0, 0, 0, 1 ]))(GF(3)['a'.replace('$.', 'x').replace('.', '')]([ 0, 1 ]))\n```\n",
     "created_at": "2008-12-05T08:02:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4701#issuecomment-35416",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [trac_4701_part2.patch](tarball://root/attachments/some-uuid/ticket4701/trac_4701_part2.patch) by ncalexan created at 2008-12-05 08:02:16
+Attachment [trac_4701_part2.patch](tarball://root/attachments/some-uuid/ticket4701/trac_4701_part2.patch) by @ncalexan created at 2008-12-05 08:02:16
 
 There are problems.  My referee patch includes a few failing doctests.
 
@@ -114,16 +114,16 @@ GF(243, 'a'.replace('$.', 'x').replace('.', ''), modulus=GF(3)['a'.replace('$.',
 archive/issue_comments_035417.json:
 ```json
 {
-    "body": "Attachment [4701-referee.patch](tarball://root/attachments/some-uuid/ticket4701/4701-referee.patch) by ncalexan created at 2008-12-06 23:16:48\n\nAfter some discussion on IRC, wstein and I decided to review this positive and open a new ticket for the referee comments.  Apply trac_4701.patch and trac_4701_part2.patch only.",
+    "body": "Attachment [4701-referee.patch](tarball://root/attachments/some-uuid/ticket4701/4701-referee.patch) by @ncalexan created at 2008-12-06 23:16:48\n\nAfter some discussion on IRC, wstein and I decided to review this positive and open a new ticket for the referee comments.  Apply trac_4701.patch and trac_4701_part2.patch only.",
     "created_at": "2008-12-06T23:16:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4701#issuecomment-35417",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [4701-referee.patch](tarball://root/attachments/some-uuid/ticket4701/4701-referee.patch) by ncalexan created at 2008-12-06 23:16:48
+Attachment [4701-referee.patch](tarball://root/attachments/some-uuid/ticket4701/4701-referee.patch) by @ncalexan created at 2008-12-06 23:16:48
 
 After some discussion on IRC, wstein and I decided to review this positive and open a new ticket for the referee comments.  Apply trac_4701.patch and trac_4701_part2.patch only.
 
@@ -139,7 +139,7 @@ archive/issue_comments_035418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4701#issuecomment-35418",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

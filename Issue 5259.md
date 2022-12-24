@@ -3,7 +3,7 @@
 archive/issues_005259.json:
 ```json
 {
-    "body": "Assignee: was\n\nA student noticed that sometimes, when a function evaluation gave Inf or NaN, the vector field plot was blank.  Discussing this on the matplotlib-users list revealed that we ought to mask our arrays before sending them to the matplotlib quiver function.  This patch corrects this, so that the plot:\n\n\n```\nplot_vector_field( (-x/sqrt(x^2+y^2), -y/sqrt(x^2+y^2)), (x, -10, 10), (y, -10, 10))\n```\n\n\nnow plots (before it was a blank plot, now it just skips the problematic vectors).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5259\n\n",
+    "body": "Assignee: @williamstein\n\nA student noticed that sometimes, when a function evaluation gave Inf or NaN, the vector field plot was blank.  Discussing this on the matplotlib-users list revealed that we ought to mask our arrays before sending them to the matplotlib quiver function.  This patch corrects this, so that the plot:\n\n\n```\nplot_vector_field( (-x/sqrt(x^2+y^2), -y/sqrt(x^2+y^2)), (x, -10, 10), (y, -10, 10))\n```\n\n\nnow plots (before it was a blank plot, now it just skips the problematic vectors).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5259\n\n",
     "created_at": "2009-02-13T20:50:21Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_005259.json:
     "title": "invalid array elements sent to matplotlib quiver, causing blank plot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5259",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 A student noticed that sometimes, when a function evaluation gave Inf or NaN, the vector field plot was blank.  Discussing this on the matplotlib-users list revealed that we ought to mask our arrays before sending them to the matplotlib quiver function.  This patch corrects this, so that the plot:
 
@@ -46,7 +46,7 @@ archive/issue_comments_040362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5259#issuecomment-40362",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_040363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5259#issuecomment-40363",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -85,16 +85,16 @@ To test this, you might try the following plots before and after the patch:
 archive/issue_comments_040364.json:
 ```json
 {
-    "body": "Changing assignee from was to jason.",
+    "body": "Changing assignee from @williamstein to @jasongrout.",
     "created_at": "2009-02-13T20:55:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5259#issuecomment-40364",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from was to jason.
+Changing assignee from @williamstein to @jasongrout.
 
 
 
@@ -108,7 +108,7 @@ archive/issue_comments_040365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5259#issuecomment-40365",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -121,16 +121,16 @@ For the matplotlib-users discussion, see the messages with subject "quiver and I
 archive/issue_comments_040366.json:
 ```json
 {
-    "body": "Attachment [trac_5259-mask-invalid-quiver-data.patch](tarball://root/attachments/some-uuid/ticket5259/trac_5259-mask-invalid-quiver-data.patch) by jason created at 2009-02-13 21:26:13\n\nupdated patch corrects the silly mistake in the doctest (I didn't account for the output of var('x,y')).  Now doctests pass in plot/*.py.",
+    "body": "Attachment [trac_5259-mask-invalid-quiver-data.patch](tarball://root/attachments/some-uuid/ticket5259/trac_5259-mask-invalid-quiver-data.patch) by @jasongrout created at 2009-02-13 21:26:13\n\nupdated patch corrects the silly mistake in the doctest (I didn't account for the output of var('x,y')).  Now doctests pass in plot/*.py.",
     "created_at": "2009-02-13T21:26:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5259#issuecomment-40366",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_5259-mask-invalid-quiver-data.patch](tarball://root/attachments/some-uuid/ticket5259/trac_5259-mask-invalid-quiver-data.patch) by jason created at 2009-02-13 21:26:13
+Attachment [trac_5259-mask-invalid-quiver-data.patch](tarball://root/attachments/some-uuid/ticket5259/trac_5259-mask-invalid-quiver-data.patch) by @jasongrout created at 2009-02-13 21:26:13
 
 updated patch corrects the silly mistake in the doctest (I didn't account for the output of var('x,y')).  Now doctests pass in plot/*.py.
 
@@ -146,7 +146,7 @@ archive/issue_comments_040367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5259#issuecomment-40367",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_040368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5259#issuecomment-40368",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

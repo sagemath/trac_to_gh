@@ -14,7 +14,7 @@ archive/issues_002089.json:
     "title": "major finite field printing (?) bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2089",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2089
 archive/issue_comments_013517.json:
 ```json
 {
-    "body": "Changing assignee from somebody to malb.",
+    "body": "Changing assignee from somebody to @malb.",
     "created_at": "2008-02-07T22:13:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2089#issuecomment-13517",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from somebody to malb.
+Changing assignee from somebody to @malb.
 
 
 
@@ -66,7 +66,7 @@ archive/issue_comments_013518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2089#issuecomment-13518",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_013519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2089#issuecomment-13519",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -108,16 +108,16 @@ fix
 archive/issue_comments_013520.json:
 ```json
 {
-    "body": "Attachment [trac_2089.patch](tarball://root/attachments/some-uuid/ticket2089/trac_2089.patch) by malb created at 2008-02-18 15:17:16\n\nThe attached patch fixes the issue for me.",
+    "body": "Attachment [trac_2089.patch](tarball://root/attachments/some-uuid/ticket2089/trac_2089.patch) by @malb created at 2008-02-18 15:17:16\n\nThe attached patch fixes the issue for me.",
     "created_at": "2008-02-18T15:17:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2089#issuecomment-13520",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_2089.patch](tarball://root/attachments/some-uuid/ticket2089/trac_2089.patch) by malb created at 2008-02-18 15:17:16
+Attachment [trac_2089.patch](tarball://root/attachments/some-uuid/ticket2089/trac_2089.patch) by @malb created at 2008-02-18 15:17:16
 
 The attached patch fixes the issue for me.
 
@@ -133,7 +133,7 @@ archive/issue_comments_013521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2089#issuecomment-13521",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_013522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2089#issuecomment-13522",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

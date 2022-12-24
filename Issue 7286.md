@@ -14,7 +14,7 @@ archive/issues_007286.json:
     "title": "After installing sphinx-0.6.3.p1.spkg, error occurs during docbuild",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7286",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 Assignee: mabshoff
@@ -45,7 +45,7 @@ archive/issue_comments_060632.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7286#issuecomment-60632",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_060633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7286#issuecomment-60633",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_060634.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7286#issuecomment-60634",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_060635.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7286#issuecomment-60635",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

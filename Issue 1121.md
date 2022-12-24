@@ -3,7 +3,7 @@
 archive/issues_001121.json:
 ```json
 {
-    "body": "Assignee: was\n\nJohn Cremona wrote\n\n\n```\nYou are right of course -- one should always compute the order over\nthe smallest field of definition and then use the easy formula to get\nthe order of E(GF(q^d)) from that of E(GF(q)).\n\nWhile you are at it you should not stop at the smallest field\ncontaining the coefficients of the given curve, it would be enough to\nwork over the field containing the j-invariant, plus a little work\ndeciding which twist your need and all this is as usual a little more\ncomplicated when j=0 or j=1728, or in characteristics 2 and 3.\n\nThis feels like reinventing wheels -- i wonder who has done this already?\n\nAs for implementation, it is *extremely* ugly to work with floating\npoint complex numbers for this (as both Graeme and Alex seem to do.\nIt should be done algebraically!\n\nIf n = #E(GF(q)) then a=1+q-n is the trace of alpha =\n(a+sqrt(a^2-4*q))/2, and then #E(GF(q^d)) = 1+q^d-trace(alpha^d).  The\ntrace of the d'th power of alpha is just a resultant calculation.\n```\n\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/69ebf55ee4f22278/23c61ad57cbff62a\n\n#1119 implements to computing over GF(p) if possible, but it doesn't implement computing over GF(p<sup>m</sup>) if m|n. Also #1119 still relies on floating point arithmetic.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1121\n\n",
+    "body": "Assignee: @williamstein\n\nJohn Cremona wrote\n\n\n```\nYou are right of course -- one should always compute the order over\nthe smallest field of definition and then use the easy formula to get\nthe order of E(GF(q^d)) from that of E(GF(q)).\n\nWhile you are at it you should not stop at the smallest field\ncontaining the coefficients of the given curve, it would be enough to\nwork over the field containing the j-invariant, plus a little work\ndeciding which twist your need and all this is as usual a little more\ncomplicated when j=0 or j=1728, or in characteristics 2 and 3.\n\nThis feels like reinventing wheels -- i wonder who has done this already?\n\nAs for implementation, it is *extremely* ugly to work with floating\npoint complex numbers for this (as both Graeme and Alex seem to do.\nIt should be done algebraically!\n\nIf n = #E(GF(q)) then a=1+q-n is the trace of alpha =\n(a+sqrt(a^2-4*q))/2, and then #E(GF(q^d)) = 1+q^d-trace(alpha^d).  The\ntrace of the d'th power of alpha is just a resultant calculation.\n```\n\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/69ebf55ee4f22278/23c61ad57cbff62a\n\n#1119 implements to computing over GF(p) if possible, but it doesn't implement computing over GF(p<sup>m</sup>) if m|n. Also #1119 still relies on floating point arithmetic.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1121\n\n",
     "created_at": "2007-11-07T15:57:31Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_001121.json:
     "title": "improve point counting for curvers over extension fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1121",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 John Cremona wrote
 
@@ -65,7 +65,7 @@ archive/issue_comments_006772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1121",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1121#issuecomment-6772",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_006774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1121",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1121#issuecomment-6774",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_006776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1121",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1121#issuecomment-6776",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_006778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1121",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1121#issuecomment-6778",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

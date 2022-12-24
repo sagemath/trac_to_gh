@@ -3,7 +3,7 @@
 archive/issues_005575.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: V = QQ^4\nsage: a = [V.random_element() for _ in range(4)]\nsage: span(a)\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n\n/Users/wstein/.sage/temp/teragon.local/19499/_Users_wstein__sage_init_sage_0.py in <module>()\n\n/Users/wstein/build/sage-3.4/local/lib/python2.5/site-packages/sage/modules/free_module.pyc in span(gens, base_ring, check, already_echelonized)\n    456         base_ring, gens = gens, base_ring\n    457         \n--> 458     R = self.base_ring() if base_ring is None else base_ring\n    459 \n    460     if not isinstance(R, principal_ideal_domain.PrincipalIdealDomain):\n\nNameError: global name 'self' is not defined\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5575\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: V = QQ^4\nsage: a = [V.random_element() for _ in range(4)]\nsage: span(a)\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n\n/Users/wstein/.sage/temp/teragon.local/19499/_Users_wstein__sage_init_sage_0.py in <module>()\n\n/Users/wstein/build/sage-3.4/local/lib/python2.5/site-packages/sage/modules/free_module.pyc in span(gens, base_ring, check, already_echelonized)\n    456         base_ring, gens = gens, base_ring\n    457         \n--> 458     R = self.base_ring() if base_ring is None else base_ring\n    459 \n    460     if not isinstance(R, principal_ideal_domain.PrincipalIdealDomain):\n\nNameError: global name 'self' is not defined\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5575\n\n",
     "created_at": "2009-03-20T11:03:00Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005575.json:
     "title": "bug in span",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5575",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -51,16 +51,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5575
 archive/issue_comments_043473.json:
 ```json
 {
-    "body": "Attachment [trac_5575.patch](tarball://root/attachments/some-uuid/ticket5575/trac_5575.patch) by was created at 2009-03-20 11:05:33",
+    "body": "Attachment [trac_5575.patch](tarball://root/attachments/some-uuid/ticket5575/trac_5575.patch) by @williamstein created at 2009-03-20 11:05:33",
     "created_at": "2009-03-20T11:05:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5575#issuecomment-43473",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5575.patch](tarball://root/attachments/some-uuid/ticket5575/trac_5575.patch) by was created at 2009-03-20 11:05:33
+Attachment [trac_5575.patch](tarball://root/attachments/some-uuid/ticket5575/trac_5575.patch) by @williamstein created at 2009-03-20 11:05:33
 
 
 
@@ -74,7 +74,7 @@ archive/issue_comments_043474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5575#issuecomment-43474",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

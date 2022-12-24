@@ -14,7 +14,7 @@ archive/issues_004214.json:
     "title": "elliptic_logarithm gives inaccurate answers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4214",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 Assignee: tbd
@@ -72,16 +72,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4214
 archive/issue_comments_030619.json:
 ```json
 {
-    "body": "Changing assignee from tbd to was.",
+    "body": "Changing assignee from tbd to @williamstein.",
     "created_at": "2008-09-28T22:49:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4214#issuecomment-30619",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from tbd to was.
+Changing assignee from tbd to @williamstein.
 
 
 
@@ -95,7 +95,7 @@ archive/issue_comments_030620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4214#issuecomment-30620",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -108,16 +108,16 @@ Changing component from algebra to number theory.
 archive/issue_comments_030621.json:
 ```json
 {
-    "body": "Changing assignee from was to AlexGhitza.",
+    "body": "Changing assignee from @williamstein to @aghitza.",
     "created_at": "2008-10-01T11:43:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4214#issuecomment-30621",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from was to AlexGhitza.
+Changing assignee from @williamstein to @aghitza.
 
 
 
@@ -131,7 +131,7 @@ archive/issue_comments_030622.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4214#issuecomment-30622",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_030624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4214#issuecomment-30624",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_030625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4214#issuecomment-30625",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -322,16 +322,16 @@ Michael
 archive/issue_comments_030627.json:
 ```json
 {
-    "body": "Attachment [trac4214-elliptic-log.patch](tarball://root/attachments/some-uuid/ticket4214/trac4214-elliptic-log.patch) by AlexGhitza created at 2008-10-10 21:40:43\n\nGrrr.  Yes, I was careless (did I really not test gen.pyx?)\n\nAnyway, it was just a matter of giving a default value to the parameter precision.  It's in the new patch.",
+    "body": "Attachment [trac4214-elliptic-log.patch](tarball://root/attachments/some-uuid/ticket4214/trac4214-elliptic-log.patch) by @aghitza created at 2008-10-10 21:40:43\n\nGrrr.  Yes, I was careless (did I really not test gen.pyx?)\n\nAnyway, it was just a matter of giving a default value to the parameter precision.  It's in the new patch.",
     "created_at": "2008-10-10T21:40:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4214#issuecomment-30627",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac4214-elliptic-log.patch](tarball://root/attachments/some-uuid/ticket4214/trac4214-elliptic-log.patch) by AlexGhitza created at 2008-10-10 21:40:43
+Attachment [trac4214-elliptic-log.patch](tarball://root/attachments/some-uuid/ticket4214/trac4214-elliptic-log.patch) by @aghitza created at 2008-10-10 21:40:43
 
 Grrr.  Yes, I was careless (did I really not test gen.pyx?)
 

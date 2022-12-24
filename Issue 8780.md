@@ -3,7 +3,7 @@
 archive/issues_008780.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  pjeremy\n\nOn Cygwin, Sage needs c99 complex support which can be provided by the cephes library from netlib.org / www.moshier.net\n\nThere is an spkg at http://sage.math.washington.edu/home/mhansen/cygwin_port/cephes-2.8.spkg\n\n\nWe need to decide the best way to include this since it is only need on Cygwin (and maybe FreeBSD, etc.).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8780\n\n",
+    "body": "Assignee: tbd\n\nCC:  @peterjeremy\n\nOn Cygwin, Sage needs c99 complex support which can be provided by the cephes library from netlib.org / www.moshier.net\n\nThere is an spkg at http://sage.math.washington.edu/home/mhansen/cygwin_port/cephes-2.8.spkg\n\n\nWe need to decide the best way to include this since it is only need on Cygwin (and maybe FreeBSD, etc.).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8780\n\n",
     "created_at": "2010-04-27T06:39:57Z",
     "labels": [
         "porting: Cygwin",
@@ -14,12 +14,12 @@ archive/issues_008780.json:
     "title": "add the Cephes spkg to Cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8780",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
 
-CC:  pjeremy
+CC:  @peterjeremy
 
 On Cygwin, Sage needs c99 complex support which can be provided by the cephes library from netlib.org / www.moshier.net
 
@@ -44,7 +44,7 @@ archive/issue_comments_080369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8780#issuecomment-80369",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -62,7 +62,7 @@ archive/issue_comments_080370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8780#issuecomment-80370",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_080371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8780#issuecomment-80371",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_080372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8780#issuecomment-80372",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_080373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8780#issuecomment-80373",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

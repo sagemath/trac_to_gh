@@ -3,7 +3,7 @@
 archive/issues_006954.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: latex\n\nThe attached patch implements latex output for dictionaries:\n\n\n```\nsage: var('x,y')\nsage: latex({x: y^2, y: 1/2})\n\\left\\{y\\rightarrow \\frac{1}{2}, x\\rightarrow y^{2}\\right\\}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6954\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: latex\n\nThe attached patch implements latex output for dictionaries:\n\n\n```\nsage: var('x,y')\nsage: latex({x: y^2, y: 1/2})\n\\left\\{y\\rightarrow \\frac{1}{2}, x\\rightarrow y^{2}\\right\\}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6954\n\n",
     "created_at": "2009-09-18T08:41:21Z",
     "labels": [
         "user interface",
@@ -17,7 +17,7 @@ archive/issues_006954.json:
     "user": "whuss"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: latex
 
@@ -47,7 +47,7 @@ archive/issue_comments_057503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6954#issuecomment-57503",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_057504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6954#issuecomment-57504",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_057505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6954#issuecomment-57505",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_057508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6954#issuecomment-57508",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_057509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6954#issuecomment-57509",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -196,16 +196,16 @@ apply on top of the other patch
 archive/issue_comments_057510.json:
 ```json
 {
-    "body": "Attachment [trac_6954-part2.patch](tarball://root/attachments/some-uuid/ticket6954/trac_6954-part2.patch) by mhansen created at 2009-09-26 04:43:54\n\nLooks good to me.  Apply both patches.",
+    "body": "Attachment [trac_6954-part2.patch](tarball://root/attachments/some-uuid/ticket6954/trac_6954-part2.patch) by @mwhansen created at 2009-09-26 04:43:54\n\nLooks good to me.  Apply both patches.",
     "created_at": "2009-09-26T04:43:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6954#issuecomment-57510",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6954-part2.patch](tarball://root/attachments/some-uuid/ticket6954/trac_6954-part2.patch) by mhansen created at 2009-09-26 04:43:54
+Attachment [trac_6954-part2.patch](tarball://root/attachments/some-uuid/ticket6954/trac_6954-part2.patch) by @mwhansen created at 2009-09-26 04:43:54
 
 Looks good to me.  Apply both patches.
 

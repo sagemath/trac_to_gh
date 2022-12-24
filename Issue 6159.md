@@ -14,7 +14,7 @@ archive/issues_006159.json:
     "title": "Implement real_part for CDF and CC",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6159",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: somebody
@@ -66,7 +66,7 @@ archive/issue_comments_049132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6159#issuecomment-49132",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -79,16 +79,16 @@ Done in the attached patch.  I even threw in imag_part() for free.
 archive/issue_comments_049133.json:
 ```json
 {
-    "body": "Attachment [trac_6159.patch](tarball://root/attachments/some-uuid/ticket6159/trac_6159.patch) by AlexGhitza created at 2009-07-13 14:03:15",
+    "body": "Attachment [trac_6159.patch](tarball://root/attachments/some-uuid/ticket6159/trac_6159.patch) by @aghitza created at 2009-07-13 14:03:15",
     "created_at": "2009-07-13T14:03:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6159#issuecomment-49133",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_6159.patch](tarball://root/attachments/some-uuid/ticket6159/trac_6159.patch) by AlexGhitza created at 2009-07-13 14:03:15
+Attachment [trac_6159.patch](tarball://root/attachments/some-uuid/ticket6159/trac_6159.patch) by @aghitza created at 2009-07-13 14:03:15
 
 
 
@@ -102,7 +102,7 @@ archive/issue_comments_049134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6159#issuecomment-49134",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -115,16 +115,16 @@ Changing status from new to assigned.
 archive/issue_comments_049135.json:
 ```json
 {
-    "body": "Changing assignee from somebody to AlexGhitza.",
+    "body": "Changing assignee from somebody to @aghitza.",
     "created_at": "2009-07-13T14:03:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6159#issuecomment-49135",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from somebody to AlexGhitza.
+Changing assignee from somebody to @aghitza.
 
 
 
@@ -138,7 +138,7 @@ archive/issue_comments_049136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6159#issuecomment-49136",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

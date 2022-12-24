@@ -3,7 +3,7 @@
 archive/issues_006042.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nKeywords: documentation, modular symbols\n\nThis 2500-line file has a low score:\n 26% (26 of 97)\n\nI have nearly finished documenting it and will upload a patch over the weekend.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6042\n\n",
+    "body": "Assignee: @craigcitro\n\nKeywords: documentation, modular symbols\n\nThis 2500-line file has a low score:\n 26% (26 of 97)\n\nI have nearly finished documenting it and will upload a patch over the weekend.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6042\n\n",
     "created_at": "2009-05-15T07:21:34Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_006042.json:
     "title": "Bring doctests of modular/modsym/ambient.py up to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6042",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 Keywords: documentation, modular symbols
 
@@ -43,7 +43,7 @@ archive/issue_comments_048112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6042#issuecomment-48112",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -56,16 +56,16 @@ Applies to 3.4.2
 archive/issue_comments_048113.json:
 ```json
 {
-    "body": "Attachment [trac_6042.patch](tarball://root/attachments/some-uuid/ticket6042/trac_6042.patch) by cremona created at 2009-05-16 15:39:20\n\nThis is just sickening.  I must have spent over 10 hours in the last week documenting this file, resulting in a patch over 2000 lines long, and 100% doctest coverage.  But now I cannot apply it since after the 7 patches on 3 tickets which David warned me about (#5736, #4357 and #5250 all already merged in 4.0alpha0, in that order) I get this mess:\n\n\n```\njohn@ubuntu%sage -hg qpush\napplying trac_6042.patch\npatching file sage/modular/modsym/ambient.py\nHunk #17 FAILED at 800\nHunk #25 FAILED at 1291\nHunk #45 FAILED at 2230\nHunk #60 FAILED at 2829\nHunk #61 FAILED at 2836\nHunk #65 FAILED at 2962\nHunk #71 FAILED at 3195\n7 out of 76 hunks FAILED -- saving rejects to file sage/modular/modsym/ambient.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac_6042.patch\n```\n\n\nI'm really not sure I can be bothered to mess with this any more.  Is there any system to actually help one merge conflicting patches sensibly?  I have never managed to get things like k3diff to work.\n\nI will at least upload my patch  so that it does not get lost, but I have other things to do.",
+    "body": "Attachment [trac_6042.patch](tarball://root/attachments/some-uuid/ticket6042/trac_6042.patch) by @JohnCremona created at 2009-05-16 15:39:20\n\nThis is just sickening.  I must have spent over 10 hours in the last week documenting this file, resulting in a patch over 2000 lines long, and 100% doctest coverage.  But now I cannot apply it since after the 7 patches on 3 tickets which David warned me about (#5736, #4357 and #5250 all already merged in 4.0alpha0, in that order) I get this mess:\n\n\n```\njohn@ubuntu%sage -hg qpush\napplying trac_6042.patch\npatching file sage/modular/modsym/ambient.py\nHunk #17 FAILED at 800\nHunk #25 FAILED at 1291\nHunk #45 FAILED at 2230\nHunk #60 FAILED at 2829\nHunk #61 FAILED at 2836\nHunk #65 FAILED at 2962\nHunk #71 FAILED at 3195\n7 out of 76 hunks FAILED -- saving rejects to file sage/modular/modsym/ambient.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac_6042.patch\n```\n\n\nI'm really not sure I can be bothered to mess with this any more.  Is there any system to actually help one merge conflicting patches sensibly?  I have never managed to get things like k3diff to work.\n\nI will at least upload my patch  so that it does not get lost, but I have other things to do.",
     "created_at": "2009-05-16T15:39:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6042#issuecomment-48113",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_6042.patch](tarball://root/attachments/some-uuid/ticket6042/trac_6042.patch) by cremona created at 2009-05-16 15:39:20
+Attachment [trac_6042.patch](tarball://root/attachments/some-uuid/ticket6042/trac_6042.patch) by @JohnCremona created at 2009-05-16 15:39:20
 
 This is just sickening.  I must have spent over 10 hours in the last week documenting this file, resulting in a patch over 2000 lines long, and 100% doctest coverage.  But now I cannot apply it since after the 7 patches on 3 tickets which David warned me about (#5736, #4357 and #5250 all already merged in 4.0alpha0, in that order) I get this mess:
 
@@ -104,7 +104,7 @@ archive/issue_comments_048114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6042#issuecomment-48114",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_048115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6042#issuecomment-48115",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_048116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6042#issuecomment-48116",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_048117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6042#issuecomment-48117",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_048118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6042#issuecomment-48118",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_048119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6042#issuecomment-48119",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_048121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6042#issuecomment-48121",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -271,16 +271,16 @@ Of course I would like credit to go to David too, if hg will allow.
 archive/issue_comments_048122.json:
 ```json
 {
-    "body": "Attachment [trac_6042-rebase.patch](tarball://root/attachments/some-uuid/ticket6042/trac_6042-rebase.patch) by davidloeffler created at 2009-05-18 15:39:24\n\npatch against 4.0.alpha0",
+    "body": "Attachment [trac_6042-rebase.patch](tarball://root/attachments/some-uuid/ticket6042/trac_6042-rebase.patch) by @loefflerd created at 2009-05-18 15:39:24\n\npatch against 4.0.alpha0",
     "created_at": "2009-05-18T15:39:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6042#issuecomment-48122",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_6042-rebase.patch](tarball://root/attachments/some-uuid/ticket6042/trac_6042-rebase.patch) by davidloeffler created at 2009-05-18 15:39:24
+Attachment [trac_6042-rebase.patch](tarball://root/attachments/some-uuid/ticket6042/trac_6042-rebase.patch) by @loefflerd created at 2009-05-18 15:39:24
 
 patch against 4.0.alpha0
 
@@ -296,7 +296,7 @@ archive/issue_comments_048123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6042#issuecomment-48123",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -314,7 +314,7 @@ archive/issue_comments_048124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6042#issuecomment-48124",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -366,7 +366,7 @@ archive/issue_comments_048126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6042#issuecomment-48126",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

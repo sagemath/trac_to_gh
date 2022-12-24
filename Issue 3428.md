@@ -14,7 +14,7 @@ archive/issues_003428.json:
     "title": "[with patch, needs review] univariate polynomial quo_rem 0 trouble",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3428",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 Assignee: somebody
@@ -51,7 +51,7 @@ archive/issue_comments_024152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3428#issuecomment-24152",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_024153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3428#issuecomment-24153",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -82,16 +82,16 @@ Changing keywords from "" to "editor_craigcitro".
 archive/issue_comments_024154.json:
 ```json
 {
-    "body": "Attachment [univariate_poly_quo_rem_zero.patch](tarball://root/attachments/some-uuid/ticket3428/univariate_poly_quo_rem_zero.patch) by craigcitro created at 2008-06-15 21:55:42",
+    "body": "Attachment [univariate_poly_quo_rem_zero.patch](tarball://root/attachments/some-uuid/ticket3428/univariate_poly_quo_rem_zero.patch) by @craigcitro created at 2008-06-15 21:55:42",
     "created_at": "2008-06-15T21:55:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3428#issuecomment-24154",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [univariate_poly_quo_rem_zero.patch](tarball://root/attachments/some-uuid/ticket3428/univariate_poly_quo_rem_zero.patch) by craigcitro created at 2008-06-15 21:55:42
+Attachment [univariate_poly_quo_rem_zero.patch](tarball://root/attachments/some-uuid/ticket3428/univariate_poly_quo_rem_zero.patch) by @craigcitro created at 2008-06-15 21:55:42
 
 
 
@@ -105,7 +105,7 @@ archive/issue_comments_024155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3428#issuecomment-24155",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_024156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3428#issuecomment-24156",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_024157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3428#issuecomment-24157",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_024158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3428#issuecomment-24158",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_024159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3428#issuecomment-24159",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_024160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3428#issuecomment-24160",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_024161.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3428#issuecomment-24161",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

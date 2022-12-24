@@ -3,7 +3,7 @@
 archive/issues_002161.json:
 ```json
 {
-    "body": "Assignee: malb\n\nHere's a patch improving some things associated with scalar multiplication over ZZ.\n\nPrior to patch:\n\n```\nsage: R.<x,y,z>=ZZ[]\nsage: f=x+y+z\nsage: timeit f*3\n1000 loops, best of 3: 322 \u00c2\u00b5s per loop\n```\n\n\nAfter patch:\n\n```\nsage: R.<x,y,z>=ZZ[]\nsage: f=x+y+z\nsage: timeit f*3\n10000 loops, best of 3: 68 \u00c2\u00b5s per loop\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2161\n\n",
+    "body": "Assignee: @malb\n\nHere's a patch improving some things associated with scalar multiplication over ZZ.\n\nPrior to patch:\n\n```\nsage: R.<x,y,z>=ZZ[]\nsage: f=x+y+z\nsage: timeit f*3\n1000 loops, best of 3: 322 \u00c2\u00b5s per loop\n```\n\n\nAfter patch:\n\n```\nsage: R.<x,y,z>=ZZ[]\nsage: f=x+y+z\nsage: timeit f*3\n10000 loops, best of 3: 68 \u00c2\u00b5s per loop\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2161\n\n",
     "created_at": "2008-02-14T19:18:02Z",
     "labels": [
         "commutative algebra",
@@ -17,7 +17,7 @@ archive/issues_002161.json:
     "user": "jbmohler"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Here's a patch improving some things associated with scalar multiplication over ZZ.
 
@@ -77,7 +77,7 @@ archive/issue_comments_014192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2161",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2161#issuecomment-14192",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_014193.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2161",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2161#issuecomment-14193",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

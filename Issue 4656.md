@@ -3,7 +3,7 @@
 archive/issues_004656.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: padic powerseries\n\nThe following _repr_ does not look good to me\n\n\n```\nsage: R.<T> = Qp(5,5)[[]]\nsage: O(5^3)*T\n0\nsage: 1+O(5^3)*T\n1 + O(5^5) + O(5^3)*T\n```\n\n\nBut that is due to \n\n```\nsage: s= O(5^3)*T\nsage: s.is_zero()\nTrue\nsage: s == R(0)\nFalse\n```\n\n\nThis I consider to be a bug according to the docstring of s.is_zero? saying\n\n```\nReturn True if self equals self.parent()(0).\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4656\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: padic powerseries\n\nThe following _repr_ does not look good to me\n\n\n```\nsage: R.<T> = Qp(5,5)[[]]\nsage: O(5^3)*T\n0\nsage: 1+O(5^3)*T\n1 + O(5^5) + O(5^3)*T\n```\n\n\nBut that is due to \n\n```\nsage: s= O(5^3)*T\nsage: s.is_zero()\nTrue\nsage: s == R(0)\nFalse\n```\n\n\nThis I consider to be a bug according to the docstring of s.is_zero? saying\n\n```\nReturn True if self equals self.parent()(0).\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4656\n\n",
     "created_at": "2008-11-29T21:53:42Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004656.json:
     "title": "power series with zero p-adic coefficients",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4656",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: padic powerseries
 
@@ -62,16 +62,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4656
 archive/issue_comments_035069.json:
 ```json
 {
-    "body": "Attachment [4656.patch](tarball://root/attachments/some-uuid/ticket4656/4656.patch) by roed created at 2009-01-24 11:07:36",
+    "body": "Attachment [4656.patch](tarball://root/attachments/some-uuid/ticket4656/4656.patch) by @roed314 created at 2009-01-24 11:07:36",
     "created_at": "2009-01-24T11:07:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4656#issuecomment-35069",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [4656.patch](tarball://root/attachments/some-uuid/ticket4656/4656.patch) by roed created at 2009-01-24 11:07:36
+Attachment [4656.patch](tarball://root/attachments/some-uuid/ticket4656/4656.patch) by @roed314 created at 2009-01-24 11:07:36
 
 
 
@@ -85,7 +85,7 @@ archive/issue_comments_035070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4656#issuecomment-35070",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_035071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4656#issuecomment-35071",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_035073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4656#issuecomment-35073",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_035074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4656#issuecomment-35074",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_035075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4656#issuecomment-35075",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_035076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4656#issuecomment-35076",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_035077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4656#issuecomment-35077",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -296,16 +296,16 @@ Finally, I came back to this. I will attach a rebased patch. This patch solves t
 archive/issue_comments_035078.json:
 ```json
 {
-    "body": "Attachment [trac_4656_new.patch](tarball://root/attachments/some-uuid/ticket4656/trac_4656_new.patch) by wuthrich created at 2010-02-05 23:15:27\n\nexported against 4.3.2.alpha1",
+    "body": "Attachment [trac_4656_new.patch](tarball://root/attachments/some-uuid/ticket4656/trac_4656_new.patch) by @categorie created at 2010-02-05 23:15:27\n\nexported against 4.3.2.alpha1",
     "created_at": "2010-02-05T23:15:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4656#issuecomment-35078",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_4656_new.patch](tarball://root/attachments/some-uuid/ticket4656/trac_4656_new.patch) by wuthrich created at 2010-02-05 23:15:27
+Attachment [trac_4656_new.patch](tarball://root/attachments/some-uuid/ticket4656/trac_4656_new.patch) by @categorie created at 2010-02-05 23:15:27
 
 exported against 4.3.2.alpha1
 
@@ -321,7 +321,7 @@ archive/issue_comments_035079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4656#issuecomment-35079",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_035080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4656#issuecomment-35080",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -357,7 +357,7 @@ archive/issue_comments_035081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4656#issuecomment-35081",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -375,7 +375,7 @@ archive/issue_comments_035082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4656#issuecomment-35082",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 

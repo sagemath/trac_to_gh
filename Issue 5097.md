@@ -3,7 +3,7 @@
 archive/issues_005097.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nSeveral doctests in interfaces/octave.py and interfaces/maple.py should be marked optional but aren't.  Trivial patch coming up.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5097\n\n",
+    "body": "Assignee: @aghitza\n\nSeveral doctests in interfaces/octave.py and interfaces/maple.py should be marked optional but aren't.  Trivial patch coming up.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5097\n\n",
     "created_at": "2009-01-25T08:20:07Z",
     "labels": [
         "doctest coverage",
@@ -14,10 +14,10 @@ archive/issues_005097.json:
     "title": "doctest failures in 3.3.alpha2 due to lack of #optional tag",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5097",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Several doctests in interfaces/octave.py and interfaces/maple.py should be marked optional but aren't.  Trivial patch coming up.
 
@@ -61,16 +61,16 @@ Michael
 archive/issue_comments_038880.json:
 ```json
 {
-    "body": "Attachment [trac_5097.patch](tarball://root/attachments/some-uuid/ticket5097/trac_5097.patch) by AlexGhitza created at 2009-01-25 16:53:18",
+    "body": "Attachment [trac_5097.patch](tarball://root/attachments/some-uuid/ticket5097/trac_5097.patch) by @aghitza created at 2009-01-25 16:53:18",
     "created_at": "2009-01-25T16:53:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5097#issuecomment-38880",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_5097.patch](tarball://root/attachments/some-uuid/ticket5097/trac_5097.patch) by AlexGhitza created at 2009-01-25 16:53:18
+Attachment [trac_5097.patch](tarball://root/attachments/some-uuid/ticket5097/trac_5097.patch) by @aghitza created at 2009-01-25 16:53:18
 
 
 
@@ -84,7 +84,7 @@ archive/issue_comments_038881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5097#issuecomment-38881",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

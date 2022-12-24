@@ -3,7 +3,7 @@
 archive/issues_002653.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: orders, norm, trace\n\nFor elements of an order, the norm and trace are (mathematically) integers, but Sage returns Rationals.  More generally, the charpoly and minpoly are returned as Rational polynomials when they are (mathematically) in ZZ[].\n\n\n```\nsage: Zi.<i>=ZZ.extension(x^2+1)\nsage: n=(1+i).norm()\nsage: type(n)\n<type 'sage.rings.rational.Rational'>\nsage: t=(1+i).trace()\nsage: type(t)\n<type 'sage.rings.rational.Rational'>\nsage: p=(1+i).charpoly()\nsage: type(p)\n<class 'sage.rings.polynomial.polynomial_element_generic.Polynomial_rational_dense'>\nsage: p=(1+i).minpoly()\nsage: type(p)\n<class 'sage.rings.polynomial.polynomial_element_generic.Polynomial_rational_dense'>\n```\n\n\nI would like this to change, as it led to some very inefficient behaviour until I discovered it, and now I am having to manually coerce norms and traces into ZZ.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2653\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: orders, norm, trace\n\nFor elements of an order, the norm and trace are (mathematically) integers, but Sage returns Rationals.  More generally, the charpoly and minpoly are returned as Rational polynomials when they are (mathematically) in ZZ[].\n\n\n```\nsage: Zi.<i>=ZZ.extension(x^2+1)\nsage: n=(1+i).norm()\nsage: type(n)\n<type 'sage.rings.rational.Rational'>\nsage: t=(1+i).trace()\nsage: type(t)\n<type 'sage.rings.rational.Rational'>\nsage: p=(1+i).charpoly()\nsage: type(p)\n<class 'sage.rings.polynomial.polynomial_element_generic.Polynomial_rational_dense'>\nsage: p=(1+i).minpoly()\nsage: type(p)\n<class 'sage.rings.polynomial.polynomial_element_generic.Polynomial_rational_dense'>\n```\n\n\nI would like this to change, as it led to some very inefficient behaviour until I discovered it, and now I am having to manually coerce norms and traces into ZZ.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2653\n\n",
     "created_at": "2008-03-23T10:34:32Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_002653.json:
     "title": "norm and trace of elements of orders are Rational not Integer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2653",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: orders, norm, trace
 
@@ -60,7 +60,7 @@ archive/issue_comments_018235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2653#issuecomment-18235",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_018236.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2653#issuecomment-18236",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -128,16 +128,16 @@ and have i assigned to 1.
 archive/issue_comments_018237.json:
 ```json
 {
-    "body": "Attachment [2653-integral-norms.patch](tarball://root/attachments/some-uuid/ticket2653/2653-integral-norms.patch) by robertwb created at 2008-03-26 04:34:09",
+    "body": "Attachment [2653-integral-norms.patch](tarball://root/attachments/some-uuid/ticket2653/2653-integral-norms.patch) by @robertwb created at 2008-03-26 04:34:09",
     "created_at": "2008-03-26T04:34:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2653#issuecomment-18237",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2653-integral-norms.patch](tarball://root/attachments/some-uuid/ticket2653/2653-integral-norms.patch) by robertwb created at 2008-03-26 04:34:09
+Attachment [2653-integral-norms.patch](tarball://root/attachments/some-uuid/ticket2653/2653-integral-norms.patch) by @robertwb created at 2008-03-26 04:34:09
 
 
 
@@ -151,7 +151,7 @@ archive/issue_comments_018238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2653#issuecomment-18238",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

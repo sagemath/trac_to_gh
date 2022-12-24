@@ -50,16 +50,16 @@ based on Sage 4.0
 archive/issue_comments_048130.json:
 ```json
 {
-    "body": "Attachment [trac_6043.patch](tarball://root/attachments/some-uuid/ticket6043/trac_6043.patch) by mhansen created at 2009-06-04 19:04:42\n\nLooks good to me.  Nice work!\n\nMerged in 4.0.1.rc1.",
+    "body": "Attachment [trac_6043.patch](tarball://root/attachments/some-uuid/ticket6043/trac_6043.patch) by @mwhansen created at 2009-06-04 19:04:42\n\nLooks good to me.  Nice work!\n\nMerged in 4.0.1.rc1.",
     "created_at": "2009-06-04T19:04:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6043",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6043#issuecomment-48130",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6043.patch](tarball://root/attachments/some-uuid/ticket6043/trac_6043.patch) by mhansen created at 2009-06-04 19:04:42
+Attachment [trac_6043.patch](tarball://root/attachments/some-uuid/ticket6043/trac_6043.patch) by @mwhansen created at 2009-06-04 19:04:42
 
 Looks good to me.  Nice work!
 
@@ -77,7 +77,7 @@ archive/issue_comments_048131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6043",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6043#issuecomment-48131",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

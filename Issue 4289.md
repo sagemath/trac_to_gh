@@ -3,7 +3,7 @@
 archive/issues_004289.json:
 ```json
 {
-    "body": "Assignee: was\n\nIf one types in\n`EllipticCurve(1,2)`\nthen one gets\n\n`Elliptic Curve defined by y^2  = x^3 + 5181*x - 5965058 over Rational Field`\n\nthis seemingly unrelated curve has j-invariant 1 and the 2 is ignored. Could the EllipticCurve function test for the presence of two numerical inputs and either raise an error or cast it to\n`EllipticCurve([1,2])`?\n\nIssue created by migration from https://trac.sagemath.org/ticket/4289\n\n",
+    "body": "Assignee: @williamstein\n\nIf one types in\n`EllipticCurve(1,2)`\nthen one gets\n\n`Elliptic Curve defined by y^2  = x^3 + 5181*x - 5965058 over Rational Field`\n\nthis seemingly unrelated curve has j-invariant 1 and the 2 is ignored. Could the EllipticCurve function test for the presence of two numerical inputs and either raise an error or cast it to\n`EllipticCurve([1,2])`?\n\nIssue created by migration from https://trac.sagemath.org/ticket/4289\n\n",
     "created_at": "2008-10-14T21:30:29Z",
     "labels": [
         "number theory",
@@ -17,7 +17,7 @@ archive/issues_004289.json:
     "user": "ljpk"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 If one types in
 `EllipticCurve(1,2)`
@@ -44,7 +44,7 @@ archive/issue_comments_031392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4289",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4289#issuecomment-31392",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -57,16 +57,16 @@ This should be an easy fix.
 archive/issue_comments_031393.json:
 ```json
 {
-    "body": "Attachment [4289-ell-curve-constructor.patch](tarball://root/attachments/some-uuid/ticket4289/4289-ell-curve-constructor.patch) by robertwb created at 2008-10-14 21:42:16",
+    "body": "Attachment [4289-ell-curve-constructor.patch](tarball://root/attachments/some-uuid/ticket4289/4289-ell-curve-constructor.patch) by @robertwb created at 2008-10-14 21:42:16",
     "created_at": "2008-10-14T21:42:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4289",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4289#issuecomment-31393",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4289-ell-curve-constructor.patch](tarball://root/attachments/some-uuid/ticket4289/4289-ell-curve-constructor.patch) by robertwb created at 2008-10-14 21:42:16
+Attachment [4289-ell-curve-constructor.patch](tarball://root/attachments/some-uuid/ticket4289/4289-ell-curve-constructor.patch) by @robertwb created at 2008-10-14 21:42:16
 
 
 
@@ -80,7 +80,7 @@ archive/issue_comments_031394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4289",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4289#issuecomment-31394",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_031395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4289",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4289#issuecomment-31395",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_031396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4289",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4289#issuecomment-31396",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 

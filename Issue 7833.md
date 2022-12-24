@@ -3,7 +3,7 @@
 archive/issues_007833.json:
 ```json
 {
-    "body": "Assignee: pjeremy\n\nCC:  jason was\n\nPass CFLAGS, CPPFLAGS and LDFLAGS from the environment into the build process.  This also corrects a typo in CPPFLAGS.\n\nNote that FreeBSD needs the path to libiconv to be explicitly specified.  In theory, --with-libiconv-prefix should work but configure script is broken and ignores that path when looking for libiconv.  Hard-wire /usr/local/include and /usr/local/lib via xxFLAGS.  Without this change, you get:\n\n```\nchecking iconv.h usability... no\nchecking iconv.h presence... no\nchecking for iconv.h... no\nchecking for iconv... no\nchecking for iconvlist... no\nconfigure: error: --with-iconv=yes (default) and a suitable iconv is not available\nError configuring R.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7833\n\n",
+    "body": "Assignee: @peterjeremy\n\nCC:  @jasongrout @williamstein\n\nPass CFLAGS, CPPFLAGS and LDFLAGS from the environment into the build process.  This also corrects a typo in CPPFLAGS.\n\nNote that FreeBSD needs the path to libiconv to be explicitly specified.  In theory, --with-libiconv-prefix should work but configure script is broken and ignores that path when looking for libiconv.  Hard-wire /usr/local/include and /usr/local/lib via xxFLAGS.  Without this change, you get:\n\n```\nchecking iconv.h usability... no\nchecking iconv.h presence... no\nchecking for iconv.h... no\nchecking for iconv... no\nchecking for iconvlist... no\nconfigure: error: --with-iconv=yes (default) and a suitable iconv is not available\nError configuring R.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7833\n\n",
     "created_at": "2010-01-03T10:39:43Z",
     "labels": [
         "porting: BSD",
@@ -14,12 +14,12 @@ archive/issues_007833.json:
     "title": "r-2.9.2 - fix compilation on FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7833",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
-Assignee: pjeremy
+Assignee: @peterjeremy
 
-CC:  jason was
+CC:  @jasongrout @williamstein
 
 Pass CFLAGS, CPPFLAGS and LDFLAGS from the environment into the build process.  This also corrects a typo in CPPFLAGS.
 
@@ -48,16 +48,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7833
 archive/issue_comments_067856.json:
 ```json
 {
-    "body": "Attachment [7833.r.patch](tarball://root/attachments/some-uuid/ticket7833/7833.r.patch) by pjeremy created at 2010-01-03 10:40:27",
+    "body": "Attachment [7833.r.patch](tarball://root/attachments/some-uuid/ticket7833/7833.r.patch) by @peterjeremy created at 2010-01-03 10:40:27",
     "created_at": "2010-01-03T10:40:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7833#issuecomment-67856",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
-Attachment [7833.r.patch](tarball://root/attachments/some-uuid/ticket7833/7833.r.patch) by pjeremy created at 2010-01-03 10:40:27
+Attachment [7833.r.patch](tarball://root/attachments/some-uuid/ticket7833/7833.r.patch) by @peterjeremy created at 2010-01-03 10:40:27
 
 
 
@@ -71,7 +71,7 @@ archive/issue_comments_067857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7833#issuecomment-67857",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_067858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7833#issuecomment-67858",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_067862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7833#issuecomment-67862",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_067863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7833#issuecomment-67863",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

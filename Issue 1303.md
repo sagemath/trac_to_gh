@@ -3,7 +3,7 @@
 archive/issues_001303.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nKeywords: graphs\n\nFrom Chris Godsil's wishlist and Robert Miller's reply:\n\n\n```\n>>> (b) Cayley graphs: These can be dealt with in GAP, but I think it would be\n>>> useful to have a class, with the group and generating set explicit. Cayley\n>>> graphs could be directed or undirected. Circulants and Cayley graphs\n>>> for Zd (where p is prime) could be useful special cases.\n> Cayley graphs are implemented, but most likely not to the extent\n> anyone wants. For example, you can call cayley_graph on some groups,\n> and get the graph back, but the functionality is very limited. There\n> is certainly no CayleyGraph class, which would be a thousand times\n> better than the current situation. Definitely create a ticket for\n> this.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1303\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\nFrom Chris Godsil's wishlist and Robert Miller's reply:\n\n\n```\n>>> (b) Cayley graphs: These can be dealt with in GAP, but I think it would be\n>>> useful to have a class, with the group and generating set explicit. Cayley\n>>> graphs could be directed or undirected. Circulants and Cayley graphs\n>>> for Zd (where p is prime) could be useful special cases.\n> Cayley graphs are implemented, but most likely not to the extent\n> anyone wants. For example, you can call cayley_graph on some groups,\n> and get the graph back, but the functionality is very limited. There\n> is certainly no CayleyGraph class, which would be a thousand times\n> better than the current situation. Definitely create a ticket for\n> this.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1303\n\n",
     "created_at": "2007-11-28T19:45:42Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001303.json:
     "title": "Cayley graph class",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1303",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 Keywords: graphs
 
@@ -49,16 +49,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1303
 archive/issue_comments_008195.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to rlm.",
+    "body": "Changing assignee from @mwhansen to @rlmill.",
     "created_at": "2007-12-17T15:12:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1303#issuecomment-8195",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Changing assignee from mhansen to rlm.
+Changing assignee from @mwhansen to @rlmill.
 
 
 
@@ -72,7 +72,7 @@ archive/issue_comments_008196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1303#issuecomment-8196",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_008197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1303#issuecomment-8197",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

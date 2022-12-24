@@ -14,7 +14,7 @@ archive/issues_005710.json:
     "title": "[with patch; needs review] solaris -- fix \"is monic\" issue with NTL in number_field_element.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5710",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5710
 archive/issue_comments_044606.json:
 ```json
 {
-    "body": "Attachment [trac_5710.patch](tarball://root/attachments/some-uuid/ticket5710/trac_5710.patch) by was created at 2009-04-08 02:14:36",
+    "body": "Attachment [trac_5710.patch](tarball://root/attachments/some-uuid/ticket5710/trac_5710.patch) by @williamstein created at 2009-04-08 02:14:36",
     "created_at": "2009-04-08T02:14:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5710#issuecomment-44606",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5710.patch](tarball://root/attachments/some-uuid/ticket5710/trac_5710.patch) by was created at 2009-04-08 02:14:36
+Attachment [trac_5710.patch](tarball://root/attachments/some-uuid/ticket5710/trac_5710.patch) by @williamstein created at 2009-04-08 02:14:36
 
 
 

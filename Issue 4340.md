@@ -3,7 +3,7 @@
 archive/issues_004340.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nThe current Victor Miller basis code in Sage is painfully slow. \n\nI've already written much faster code, which I'll submit shortly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4340\n\n",
+    "body": "Assignee: @craigcitro\n\nThe current Victor Miller basis code in Sage is painfully slow. \n\nI've already written much faster code, which I'll submit shortly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4340\n\n",
     "created_at": "2008-10-22T18:16:47Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_004340.json:
     "title": "Speed up Victor Miller basis code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4340",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 The current Victor Miller basis code in Sage is painfully slow. 
 
@@ -39,7 +39,7 @@ archive/issue_comments_031833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4340#issuecomment-31833",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_031834.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4340#issuecomment-31834",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_031835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4340#issuecomment-31835",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_031836.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4340#issuecomment-31836",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_031837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4340#issuecomment-31837",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -132,16 +132,16 @@ I'd actually change the name of F62.
 archive/issue_comments_031838.json:
 ```json
 {
-    "body": "Attachment [trac-4340.patch](tarball://root/attachments/some-uuid/ticket4340/trac-4340.patch) by craigcitro created at 2008-10-30 21:43:17\n\nNew patch with the name changed.",
+    "body": "Attachment [trac-4340.patch](tarball://root/attachments/some-uuid/ticket4340/trac-4340.patch) by @craigcitro created at 2008-10-30 21:43:17\n\nNew patch with the name changed.",
     "created_at": "2008-10-30T21:43:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4340#issuecomment-31838",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4340.patch](tarball://root/attachments/some-uuid/ticket4340/trac-4340.patch) by craigcitro created at 2008-10-30 21:43:17
+Attachment [trac-4340.patch](tarball://root/attachments/some-uuid/ticket4340/trac-4340.patch) by @craigcitro created at 2008-10-30 21:43:17
 
 New patch with the name changed.
 
@@ -157,7 +157,7 @@ archive/issue_comments_031839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4340#issuecomment-31839",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -210,16 +210,16 @@ Michael
 archive/issue_comments_031841.json:
 ```json
 {
-    "body": "Attachment [trac-4340-pt2.patch](tarball://root/attachments/some-uuid/ticket4340/trac-4340-pt2.patch) by craigcitro created at 2008-10-31 03:23:44",
+    "body": "Attachment [trac-4340-pt2.patch](tarball://root/attachments/some-uuid/ticket4340/trac-4340-pt2.patch) by @craigcitro created at 2008-10-31 03:23:44",
     "created_at": "2008-10-31T03:23:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4340#issuecomment-31841",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4340-pt2.patch](tarball://root/attachments/some-uuid/ticket4340/trac-4340-pt2.patch) by craigcitro created at 2008-10-31 03:23:44
+Attachment [trac-4340-pt2.patch](tarball://root/attachments/some-uuid/ticket4340/trac-4340-pt2.patch) by @craigcitro created at 2008-10-31 03:23:44
 
 
 
@@ -233,7 +233,7 @@ archive/issue_comments_031842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4340#issuecomment-31842",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

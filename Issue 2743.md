@@ -14,7 +14,7 @@ archive/issues_002743.json:
     "title": "make symbolic equalities and inequalities callable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2743",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: mabshoff
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2743
 archive/issue_comments_018856.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to was.",
+    "body": "Changing assignee from mabshoff to @williamstein.",
     "created_at": "2008-03-31T20:36:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2743",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2743#issuecomment-18856",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from mabshoff to was.
+Changing assignee from mabshoff to @williamstein.
 
 
 
@@ -66,7 +66,7 @@ archive/issue_comments_018857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2743",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2743#issuecomment-18857",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_018858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2743",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2743#issuecomment-18858",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -118,16 +118,16 @@ sage: %timeit eq(x=2, y=3)
 archive/issue_comments_018859.json:
 ```json
 {
-    "body": "Attachment [trac-2743-sym-eq-call.patch](tarball://root/attachments/some-uuid/ticket2743/trac-2743-sym-eq-call.patch) by jason created at 2008-04-02 07:09:30",
+    "body": "Attachment [trac-2743-sym-eq-call.patch](tarball://root/attachments/some-uuid/ticket2743/trac-2743-sym-eq-call.patch) by @jasongrout created at 2008-04-02 07:09:30",
     "created_at": "2008-04-02T07:09:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2743",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2743#issuecomment-18859",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-2743-sym-eq-call.patch](tarball://root/attachments/some-uuid/ticket2743/trac-2743-sym-eq-call.patch) by jason created at 2008-04-02 07:09:30
+Attachment [trac-2743-sym-eq-call.patch](tarball://root/attachments/some-uuid/ticket2743/trac-2743-sym-eq-call.patch) by @jasongrout created at 2008-04-02 07:09:30
 
 
 
@@ -141,7 +141,7 @@ archive/issue_comments_018860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2743",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2743#issuecomment-18860",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_018861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2743",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2743#issuecomment-18861",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

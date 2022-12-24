@@ -3,7 +3,7 @@
 archive/issues_009640.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  leif jdemeyer\n\nCurrently, the exceptions thrown by PARI are rather cryptic, like\n\n```\nTraceback (most recent call last):\n...\nPariError:  (15)\n```\n\n\nUsing a mechanism similar to #9636, it should be possible to catch the full text of the exception and use it to throw PariError.  We should change to using cb_pari_handle_exception() instead of err_catch() to catch PARI exceptions.\n\nDependencies: #9343, #9636\n\nIssue created by migration from https://trac.sagemath.org/ticket/9640\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @nexttime @jdemeyer\n\nCurrently, the exceptions thrown by PARI are rather cryptic, like\n\n```\nTraceback (most recent call last):\n...\nPariError:  (15)\n```\n\n\nUsing a mechanism similar to #9636, it should be possible to catch the full text of the exception and use it to throw PariError.  We should change to using cb_pari_handle_exception() instead of err_catch() to catch PARI exceptions.\n\nDependencies: #9343, #9636\n\nIssue created by migration from https://trac.sagemath.org/ticket/9640\n\n",
     "created_at": "2010-07-29T15:47:12Z",
     "labels": [
         "interfaces",
@@ -14,12 +14,12 @@ archive/issues_009640.json:
     "title": "Change PARI error catching mechanism",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9640",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  leif jdemeyer
+CC:  @nexttime @jdemeyer
 
 Currently, the exceptions thrown by PARI are rather cryptic, like
 
@@ -50,7 +50,7 @@ archive/issue_comments_093424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93424",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -63,16 +63,16 @@ Old patch for reference
 archive/issue_comments_093425.json:
 ```json
 {
-    "body": "Attachment [9640old.patch](tarball://root/attachments/some-uuid/ticket9640/9640old.patch) by jdemeyer created at 2010-10-17 18:32:31",
+    "body": "Attachment [9640old.patch](tarball://root/attachments/some-uuid/ticket9640/9640old.patch) by @jdemeyer created at 2010-10-17 18:32:31",
     "created_at": "2010-10-17T18:32:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93425",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9640old.patch](tarball://root/attachments/some-uuid/ticket9640/9640old.patch) by jdemeyer created at 2010-10-17 18:32:31
+Attachment [9640old.patch](tarball://root/attachments/some-uuid/ticket9640/9640old.patch) by @jdemeyer created at 2010-10-17 18:32:31
 
 
 
@@ -86,7 +86,7 @@ archive/issue_comments_093426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93426",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_093427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93427",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -128,16 +128,16 @@ This may make #14894 redundant, although that ticket could be used for general t
 archive/issue_comments_093428.json:
 ```json
 {
-    "body": "Attachment [9640-pari_error_handling.patch](tarball://root/attachments/some-uuid/ticket9640/9640-pari_error_handling.patch) by pbruin created at 2013-09-11 15:22:35\n\nbased on 5.12.beta4 + #15124",
+    "body": "Attachment [9640-pari_error_handling.patch](tarball://root/attachments/some-uuid/ticket9640/9640-pari_error_handling.patch) by @pjbruin created at 2013-09-11 15:22:35\n\nbased on 5.12.beta4 + #15124",
     "created_at": "2013-09-11T15:22:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93428",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
-Attachment [9640-pari_error_handling.patch](tarball://root/attachments/some-uuid/ticket9640/9640-pari_error_handling.patch) by pbruin created at 2013-09-11 15:22:35
+Attachment [9640-pari_error_handling.patch](tarball://root/attachments/some-uuid/ticket9640/9640-pari_error_handling.patch) by @pjbruin created at 2013-09-11 15:22:35
 
 based on 5.12.beta4 + #15124
 
@@ -153,7 +153,7 @@ archive/issue_comments_093429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93429",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_093430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93430",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_093431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93431",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_093432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93432",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_093433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93433",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_093434.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93434",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_093435.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93435",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_093436.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93436",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -310,7 +310,7 @@ archive/issue_comments_093437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93437",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -328,7 +328,7 @@ archive/issue_comments_093438.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93438",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_093439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93439",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -368,7 +368,7 @@ archive/issue_comments_093440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93440",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_093441.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93441",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -406,7 +406,7 @@ archive/issue_comments_093442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93442",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -428,7 +428,7 @@ archive/issue_comments_093443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93443",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -450,7 +450,7 @@ archive/issue_comments_093444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93444",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -470,7 +470,7 @@ archive/issue_comments_093445.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93445",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -490,7 +490,7 @@ archive/issue_comments_093446.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93446",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -508,7 +508,7 @@ archive/issue_comments_093447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93447",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -521,16 +521,16 @@ Working/thinking about this...
 archive/issue_comments_093448.json:
 ```json
 {
-    "body": "Attachment [9640-pari_error_callbacks.patch](tarball://root/attachments/some-uuid/ticket9640/9640-pari_error_callbacks.patch) by jdemeyer created at 2013-11-01 10:32:30\n\nbased on 5.12.beta4 + #15124",
+    "body": "Attachment [9640-pari_error_callbacks.patch](tarball://root/attachments/some-uuid/ticket9640/9640-pari_error_callbacks.patch) by @jdemeyer created at 2013-11-01 10:32:30\n\nbased on 5.12.beta4 + #15124",
     "created_at": "2013-11-01T10:32:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93448",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9640-pari_error_callbacks.patch](tarball://root/attachments/some-uuid/ticket9640/9640-pari_error_callbacks.patch) by jdemeyer created at 2013-11-01 10:32:30
+Attachment [9640-pari_error_callbacks.patch](tarball://root/attachments/some-uuid/ticket9640/9640-pari_error_callbacks.patch) by @jdemeyer created at 2013-11-01 10:32:30
 
 based on 5.12.beta4 + #15124
 
@@ -546,7 +546,7 @@ archive/issue_comments_093449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93449",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -564,7 +564,7 @@ archive/issue_comments_093450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93450",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -582,7 +582,7 @@ archive/issue_comments_093451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93451",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -614,7 +614,7 @@ archive/issue_comments_093452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93452",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -640,16 +640,16 @@ For the time being (at least until we switch to PARI 2.6) or unless someone real
 archive/issue_comments_093453.json:
 ```json
 {
-    "body": "Attachment [9640-pari_error_callbacks_v2.patch](tarball://root/attachments/some-uuid/ticket9640/9640-pari_error_callbacks_v2.patch) by jdemeyer created at 2013-11-03 08:11:00\n\nRemoved `PariError.parimessage()` method and moved the `cdef extern from \"misc.h\":` block to the top of `gen.pyx`.",
+    "body": "Attachment [9640-pari_error_callbacks_v2.patch](tarball://root/attachments/some-uuid/ticket9640/9640-pari_error_callbacks_v2.patch) by @jdemeyer created at 2013-11-03 08:11:00\n\nRemoved `PariError.parimessage()` method and moved the `cdef extern from \"misc.h\":` block to the top of `gen.pyx`.",
     "created_at": "2013-11-03T08:11:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93453",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9640-pari_error_callbacks_v2.patch](tarball://root/attachments/some-uuid/ticket9640/9640-pari_error_callbacks_v2.patch) by jdemeyer created at 2013-11-03 08:11:00
+Attachment [9640-pari_error_callbacks_v2.patch](tarball://root/attachments/some-uuid/ticket9640/9640-pari_error_callbacks_v2.patch) by @jdemeyer created at 2013-11-03 08:11:00
 
 Removed `PariError.parimessage()` method and moved the `cdef extern from "misc.h":` block to the top of `gen.pyx`.
 
@@ -665,7 +665,7 @@ archive/issue_comments_093454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93454",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -683,7 +683,7 @@ archive/issue_comments_093455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93455",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -701,7 +701,7 @@ archive/issue_comments_093456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93456",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -721,7 +721,7 @@ archive/issue_comments_093457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9640#issuecomment-93457",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_009163.json:
     "title": "cygwin: output of a subtle test in expect.py differs slightly on cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9163",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -111,7 +111,7 @@ archive/issue_comments_085541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9163#issuecomment-85541",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_085542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9163#issuecomment-85542",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -142,16 +142,16 @@ Changing keywords from "" to "cygwin osx expect doctest".
 archive/issue_comments_085543.json:
 ```json
 {
-    "body": "Changing assignee from tbd to was.",
+    "body": "Changing assignee from tbd to @williamstein.",
     "created_at": "2010-11-13T10:19:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9163#issuecomment-85543",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Changing assignee from tbd to was.
+Changing assignee from tbd to @williamstein.
 
 
 
@@ -165,7 +165,7 @@ archive/issue_comments_085544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9163#issuecomment-85544",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_085545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9163#issuecomment-85545",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_085546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9163#issuecomment-85546",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -223,16 +223,16 @@ Or remove "Control-C pressed.  Interrupting Singular. Please wait a few seconds.
 archive/issue_comments_085547.json:
 ```json
 {
-    "body": "Changing assignee from was to jdemeyer.",
+    "body": "Changing assignee from @williamstein to @jdemeyer.",
     "created_at": "2010-12-14T19:45:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9163#issuecomment-85547",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Changing assignee from was to jdemeyer.
+Changing assignee from @williamstein to @jdemeyer.
 
 
 
@@ -246,7 +246,7 @@ archive/issue_comments_085548.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9163#issuecomment-85548",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_085549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9163#issuecomment-85549",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_085550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9163#issuecomment-85550",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_085551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9163#issuecomment-85551",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -313,16 +313,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_085552.json:
 ```json
 {
-    "body": "Attachment [9163_expect_expr.patch](tarball://root/attachments/some-uuid/ticket9163/9163_expect_expr.patch) by jdemeyer created at 2010-12-16 20:37:07",
+    "body": "Attachment [9163_expect_expr.patch](tarball://root/attachments/some-uuid/ticket9163/9163_expect_expr.patch) by @jdemeyer created at 2010-12-16 20:37:07",
     "created_at": "2010-12-16T20:37:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9163#issuecomment-85552",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9163_expect_expr.patch](tarball://root/attachments/some-uuid/ticket9163/9163_expect_expr.patch) by jdemeyer created at 2010-12-16 20:37:07
+Attachment [9163_expect_expr.patch](tarball://root/attachments/some-uuid/ticket9163/9163_expect_expr.patch) by @jdemeyer created at 2010-12-16 20:37:07
 
 
 
@@ -336,7 +336,7 @@ archive/issue_comments_085553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9163#issuecomment-85553",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -354,7 +354,7 @@ archive/issue_comments_085554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9163#issuecomment-85554",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -372,7 +372,7 @@ archive/issue_comments_085555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9163#issuecomment-85555",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -390,7 +390,7 @@ archive/issue_comments_085556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9163#issuecomment-85556",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -408,7 +408,7 @@ archive/issue_comments_085557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9163#issuecomment-85557",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

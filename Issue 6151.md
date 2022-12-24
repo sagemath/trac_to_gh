@@ -14,7 +14,7 @@ archive/issues_006151.json:
     "title": "fedora 10 64-bit -- tab completion causes segfault",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6151",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -39,7 +39,7 @@ archive/issue_comments_049095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6151#issuecomment-49095",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_049096.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6151#issuecomment-49096",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_049097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6151#issuecomment-49097",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -307,7 +307,7 @@ archive/issue_comments_049098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6151#issuecomment-49098",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_049099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6151#issuecomment-49099",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -343,7 +343,7 @@ archive/issue_comments_049100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6151#issuecomment-49100",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -361,7 +361,7 @@ archive/issue_comments_049101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6151#issuecomment-49101",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -374,16 +374,16 @@ Changing status from new to assigned.
 archive/issue_comments_049102.json:
 ```json
 {
-    "body": "Changing assignee from cwitty to mhansen.",
+    "body": "Changing assignee from cwitty to @mwhansen.",
     "created_at": "2009-05-28T20:36:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6151#issuecomment-49102",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from cwitty to mhansen.
+Changing assignee from cwitty to @mwhansen.
 
 
 
@@ -397,7 +397,7 @@ archive/issue_comments_049103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6151#issuecomment-49103",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -415,7 +415,7 @@ archive/issue_comments_049104.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6151#issuecomment-49104",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

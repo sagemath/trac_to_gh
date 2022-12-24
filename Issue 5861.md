@@ -60,16 +60,16 @@ Changing status from new to assigned.
 archive/issue_comments_046302.json:
 ```json
 {
-    "body": "Attachment [trac_5861.patch](tarball://root/attachments/some-uuid/ticket5861/trac_5861.patch) by was created at 2009-04-23 05:11:14",
+    "body": "Attachment [trac_5861.patch](tarball://root/attachments/some-uuid/ticket5861/trac_5861.patch) by @williamstein created at 2009-04-23 05:11:14",
     "created_at": "2009-04-23T05:11:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5861",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5861#issuecomment-46302",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5861.patch](tarball://root/attachments/some-uuid/ticket5861/trac_5861.patch) by was created at 2009-04-23 05:11:14
+Attachment [trac_5861.patch](tarball://root/attachments/some-uuid/ticket5861/trac_5861.patch) by @williamstein created at 2009-04-23 05:11:14
 
 
 

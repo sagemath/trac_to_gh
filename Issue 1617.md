@@ -3,7 +3,7 @@
 archive/issues_001617.json:
 ```json
 {
-    "body": "Assignee: was\n\nThere is a huge speed difference. Any special reasons? A novice user would possibly not understand why!\n\n\n\n\n```\nvar('x,y')\ntime p1=factor(x^99+y^99)\n\nTime: CPU 0.05 s, Wall: 58.43 s\n```\n\n\n\n\n\n```\nR.<x,y> = QQ[]\ntime p2=factor(x^99+y^99)\n\nTime: CPU 0.06 s, Wall: 0.06 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1617\n\n",
+    "body": "Assignee: @williamstein\n\nThere is a huge speed difference. Any special reasons? A novice user would possibly not understand why!\n\n\n\n\n```\nvar('x,y')\ntime p1=factor(x^99+y^99)\n\nTime: CPU 0.05 s, Wall: 58.43 s\n```\n\n\n\n\n\n```\nR.<x,y> = QQ[]\ntime p2=factor(x^99+y^99)\n\nTime: CPU 0.06 s, Wall: 0.06 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1617\n\n",
     "created_at": "2007-12-28T22:01:50Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_001617.json:
     "title": "speed problem when factoring polynoms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1617",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 There is a huge speed difference. Any special reasons? A novice user would possibly not understand why!
 
@@ -54,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1617
 archive/issue_comments_010283.json:
 ```json
 {
-    "body": "Changing assignee from was to malb.",
+    "body": "Changing assignee from @williamstein to @malb.",
     "created_at": "2007-12-29T04:22:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1617",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_010283.json:
 }
 ```
 
-Changing assignee from was to malb.
+Changing assignee from @williamstein to @malb.
 
 
 
@@ -117,7 +117,7 @@ archive/issue_comments_010286.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1617#issuecomment-10286",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_010287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1617#issuecomment-10287",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -148,16 +148,16 @@ Changing status from new to assigned.
 archive/issue_comments_010288.json:
 ```json
 {
-    "body": "Changing assignee from malb to was.",
+    "body": "Changing assignee from @malb to @williamstein.",
     "created_at": "2008-01-16T16:13:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1617#issuecomment-10288",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from malb to was.
+Changing assignee from @malb to @williamstein.
 
 
 
@@ -166,16 +166,16 @@ Changing assignee from malb to was.
 archive/issue_comments_010289.json:
 ```json
 {
-    "body": "Attachment [trac-1617.patch](tarball://root/attachments/some-uuid/ticket1617/trac-1617.patch) by was created at 2008-01-16 16:58:31",
+    "body": "Attachment [trac-1617.patch](tarball://root/attachments/some-uuid/ticket1617/trac-1617.patch) by @williamstein created at 2008-01-16 16:58:31",
     "created_at": "2008-01-16T16:58:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1617#issuecomment-10289",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1617.patch](tarball://root/attachments/some-uuid/ticket1617/trac-1617.patch) by was created at 2008-01-16 16:58:31
+Attachment [trac-1617.patch](tarball://root/attachments/some-uuid/ticket1617/trac-1617.patch) by @williamstein created at 2008-01-16 16:58:31
 
 
 
@@ -219,7 +219,7 @@ archive/issue_comments_010291.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1617#issuecomment-10291",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_010292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1617#issuecomment-10292",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_010293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1617#issuecomment-10293",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

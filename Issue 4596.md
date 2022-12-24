@@ -3,7 +3,7 @@
 archive/issues_004596.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nSee trac #1932 ... the time has come to delete `sha.py` already. Just merge `trac-1932-pt2.patch` from that ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4596\n\n",
+    "body": "Assignee: @craigcitro\n\nSee trac #1932 ... the time has come to delete `sha.py` already. Just merge `trac-1932-pt2.patch` from that ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4596\n\n",
     "created_at": "2008-11-23T07:52:23Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004596.json:
     "title": "[with patch, needs review] delete sha.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4596",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 See trac #1932 ... the time has come to delete `sha.py` already. Just merge `trac-1932-pt2.patch` from that ticket.
 

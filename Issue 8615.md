@@ -3,7 +3,7 @@
 archive/issues_008615.json:
 ```json
 {
-    "body": "Assignee: was\n\nBasically, in Google Chrome, creating a new worksheet sometimes (usually?) doesn't work.   Tested in both Linux and OS X.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8615\n\n",
+    "body": "Assignee: @williamstein\n\nBasically, in Google Chrome, creating a new worksheet sometimes (usually?) doesn't work.   Tested in both Linux and OS X.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8615\n\n",
     "created_at": "2010-03-27T17:42:55Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_008615.json:
     "title": "sage notebook: in chrome creating a new worksheet just returns the last opened worksheet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8615",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Basically, in Google Chrome, creating a new worksheet sometimes (usually?) doesn't work.   Tested in both Linux and OS X.
 
@@ -37,7 +37,7 @@ archive/issue_comments_078068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8615#issuecomment-78068",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_078069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8615#issuecomment-78069",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_078070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8615#issuecomment-78070",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_078071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8615#issuecomment-78071",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_078072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8615#issuecomment-78072",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_078073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8615#issuecomment-78073",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_078074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8615#issuecomment-78074",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

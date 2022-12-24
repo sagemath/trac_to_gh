@@ -258,7 +258,7 @@ archive/issue_comments_054822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6672#issuecomment-54822",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -271,16 +271,16 @@ Apply after previous
 archive/issue_comments_054823.json:
 ```json
 {
-    "body": "Attachment [trac_6672-point_construction2.patch](tarball://root/attachments/some-uuid/ticket6672/trac_6672-point_construction2.patch) by cremona created at 2009-08-16 17:54:07\n\nApply after previous",
+    "body": "Attachment [trac_6672-point_construction2.patch](tarball://root/attachments/some-uuid/ticket6672/trac_6672-point_construction2.patch) by @JohnCremona created at 2009-08-16 17:54:07\n\nApply after previous",
     "created_at": "2009-08-16T17:54:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6672#issuecomment-54823",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_6672-point_construction2.patch](tarball://root/attachments/some-uuid/ticket6672/trac_6672-point_construction2.patch) by cremona created at 2009-08-16 17:54:07
+Attachment [trac_6672-point_construction2.patch](tarball://root/attachments/some-uuid/ticket6672/trac_6672-point_construction2.patch) by @JohnCremona created at 2009-08-16 17:54:07
 
 Apply after previous
 
@@ -296,7 +296,7 @@ archive/issue_comments_054824.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6672#issuecomment-54824",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -314,7 +314,7 @@ archive/issue_comments_054825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6672#issuecomment-54825",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

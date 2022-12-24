@@ -3,7 +3,7 @@
 archive/issues_004048.json:
 ```json
 {
-    "body": "Assignee: was\n\nNick Alexander reports in https://groups.google.com/group/sage-devel/browse_thread/thread/e5538e40d2b89002\n\n```\nsage: GF(241^2, 'a')(1).minpoly() \nx + 240 \nsage: GF(241, 'a')(1).minpoly() \n--------------------------------------------------------------------------- \nAttributeError                            Traceback (most recent call   \nlast) \n... \nAttributeError: 'sage.rings.integer_mod.IntegerMod_int' object has no   \nattribute 'minpoly' \n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4048\n\n",
+    "body": "Assignee: @williamstein\n\nNick Alexander reports in https://groups.google.com/group/sage-devel/browse_thread/thread/e5538e40d2b89002\n\n```\nsage: GF(241^2, 'a')(1).minpoly() \nx + 240 \nsage: GF(241, 'a')(1).minpoly() \n--------------------------------------------------------------------------- \nAttributeError                            Traceback (most recent call   \nlast) \n... \nAttributeError: 'sage.rings.integer_mod.IntegerMod_int' object has no   \nattribute 'minpoly' \n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4048\n\n",
     "created_at": "2008-09-03T17:43:18Z",
     "labels": [
         "linear algebra",
@@ -17,7 +17,7 @@ archive/issues_004048.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Nick Alexander reports in https://groups.google.com/group/sage-devel/browse_thread/thread/e5538e40d2b89002
 
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4048
 archive/issue_comments_029190.json:
 ```json
 {
-    "body": "Attachment [trac_4048.patch](tarball://root/attachments/some-uuid/ticket4048/trac_4048.patch) by AlexGhitza created at 2009-01-22 01:21:29",
+    "body": "Attachment [trac_4048.patch](tarball://root/attachments/some-uuid/ticket4048/trac_4048.patch) by @aghitza created at 2009-01-22 01:21:29",
     "created_at": "2009-01-22T01:21:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4048#issuecomment-29190",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_4048.patch](tarball://root/attachments/some-uuid/ticket4048/trac_4048.patch) by AlexGhitza created at 2009-01-22 01:21:29
+Attachment [trac_4048.patch](tarball://root/attachments/some-uuid/ticket4048/trac_4048.patch) by @aghitza created at 2009-01-22 01:21:29
 
 
 
@@ -70,7 +70,7 @@ archive/issue_comments_029191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4048#issuecomment-29191",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

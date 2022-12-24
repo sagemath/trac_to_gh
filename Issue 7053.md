@@ -3,7 +3,7 @@
 archive/issues_007053.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  was\n\nKeywords: sagenb notebook\n\nsagenb failes to display uploaded files due to a bug in template parameters.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7053\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein\n\nKeywords: sagenb notebook\n\nsagenb failes to display uploaded files due to a bug in template parameters.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7053\n\n",
     "created_at": "2009-09-28T17:27:06Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007053.json:
     "title": "SageNB fails to display uploaded files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7053",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 Assignee: boothby
 
-CC:  was
+CC:  @williamstein
 
 Keywords: sagenb notebook
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7053
 archive/issue_comments_058390.json:
 ```json
 {
-    "body": "Attachment [trac_7053-sagenb-uploaded-files.patch](tarball://root/attachments/some-uuid/ticket7053/trac_7053-sagenb-uploaded-files.patch) by timdumol created at 2009-09-28 17:28:49\n\nFixes bug in template arguments.",
+    "body": "Attachment [trac_7053-sagenb-uploaded-files.patch](tarball://root/attachments/some-uuid/ticket7053/trac_7053-sagenb-uploaded-files.patch) by @TimDumol created at 2009-09-28 17:28:49\n\nFixes bug in template arguments.",
     "created_at": "2009-09-28T17:28:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7053",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7053#issuecomment-58390",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7053-sagenb-uploaded-files.patch](tarball://root/attachments/some-uuid/ticket7053/trac_7053-sagenb-uploaded-files.patch) by timdumol created at 2009-09-28 17:28:49
+Attachment [trac_7053-sagenb-uploaded-files.patch](tarball://root/attachments/some-uuid/ticket7053/trac_7053-sagenb-uploaded-files.patch) by @TimDumol created at 2009-09-28 17:28:49
 
 Fixes bug in template arguments.
 
@@ -61,7 +61,7 @@ archive/issue_comments_058391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7053",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7053#issuecomment-58391",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

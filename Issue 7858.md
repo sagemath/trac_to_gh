@@ -3,7 +3,7 @@
 archive/issues_007858.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mhansen timdumol\n\nFrom Firebug's console:\n\n```\nsyntax error\n    KEY_SHIFT = \"16,16\"\n```\n\nWe should declare each variable explicitly (to avoid implicit globals), e.g.,\n\n```js\nvar KEY_SHIFT = \"16,16\";\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7858\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @mwhansen @TimDumol\n\nFrom Firebug's console:\n\n```\nsyntax error\n    KEY_SHIFT = \"16,16\"\n```\n\nWe should declare each variable explicitly (to avoid implicit globals), e.g.,\n\n```js\nvar KEY_SHIFT = \"16,16\";\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7858\n\n",
     "created_at": "2010-01-06T18:51:25Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007858.json:
     "title": "Declare KEY_* binding variables explicitly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7858",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  mhansen timdumol
+CC:  @mwhansen @TimDumol
 
 From Firebug's console:
 
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7858
 archive/issue_comments_068104.json:
 ```json
 {
-    "body": "Attachment [trac_7858-key_binding_vars.patch](tarball://root/attachments/some-uuid/ticket7858/trac_7858-key_binding_vars.patch) by mpatel created at 2010-01-06 19:28:01\n\nUse proper `Content-Type`.  Explicitly declare vars.  sagenb repo.",
+    "body": "Attachment [trac_7858-key_binding_vars.patch](tarball://root/attachments/some-uuid/ticket7858/trac_7858-key_binding_vars.patch) by @qed777 created at 2010-01-06 19:28:01\n\nUse proper `Content-Type`.  Explicitly declare vars.  sagenb repo.",
     "created_at": "2010-01-06T19:28:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7858#issuecomment-68104",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7858-key_binding_vars.patch](tarball://root/attachments/some-uuid/ticket7858/trac_7858-key_binding_vars.patch) by mpatel created at 2010-01-06 19:28:01
+Attachment [trac_7858-key_binding_vars.patch](tarball://root/attachments/some-uuid/ticket7858/trac_7858-key_binding_vars.patch) by @qed777 created at 2010-01-06 19:28:01
 
 Use proper `Content-Type`.  Explicitly declare vars.  sagenb repo.
 
@@ -71,7 +71,7 @@ archive/issue_comments_068105.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7858#issuecomment-68105",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_068106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7858#issuecomment-68106",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_068107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7858#issuecomment-68107",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_068108.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7858#issuecomment-68108",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_068109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7858#issuecomment-68109",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_068110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7858#issuecomment-68110",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_068111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7858#issuecomment-68111",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_068112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7858#issuecomment-68112",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_068113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7858#issuecomment-68113",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -230,16 +230,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_068114.json:
 ```json
 {
-    "body": "Attachment [trac_7858-key_binding_vars_v2.patch](tarball://root/attachments/some-uuid/ticket7858/trac_7858-key_binding_vars_v2.patch) by mpatel created at 2010-01-06 20:21:07\n\nV2 *should* preserve the bindings.  I mistrans*ed from #7666.  I apologize for this.",
+    "body": "Attachment [trac_7858-key_binding_vars_v2.patch](tarball://root/attachments/some-uuid/ticket7858/trac_7858-key_binding_vars_v2.patch) by @qed777 created at 2010-01-06 20:21:07\n\nV2 *should* preserve the bindings.  I mistrans*ed from #7666.  I apologize for this.",
     "created_at": "2010-01-06T20:21:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7858#issuecomment-68114",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7858-key_binding_vars_v2.patch](tarball://root/attachments/some-uuid/ticket7858/trac_7858-key_binding_vars_v2.patch) by mpatel created at 2010-01-06 20:21:07
+Attachment [trac_7858-key_binding_vars_v2.patch](tarball://root/attachments/some-uuid/ticket7858/trac_7858-key_binding_vars_v2.patch) by @qed777 created at 2010-01-06 20:21:07
 
 V2 *should* preserve the bindings.  I mistrans*ed from #7666.  I apologize for this.
 
@@ -255,7 +255,7 @@ archive/issue_comments_068115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7858#issuecomment-68115",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_068116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7858#issuecomment-68116",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_068117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7858#issuecomment-68117",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_068118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7858#issuecomment-68118",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_068119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7858#issuecomment-68119",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003444.json:
     "title": "subgroup/is_subgroup give misleading results",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3444",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 Assignee: joyner
@@ -51,7 +51,7 @@ archive/issue_comments_024302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3444#issuecomment-24302",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_024303.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3444#issuecomment-24303",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

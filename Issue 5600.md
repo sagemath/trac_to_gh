@@ -3,7 +3,7 @@
 archive/issues_005600.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat jbandlow\n\nFix  some weirdness of http://wiki.sagemath.org/combinat/Weirdness:\nSee compositions-cleanup-....-nt.patch\n\nAccept any iterable as input\nAdds concatenation of compositions\n\nIssue created by migration from https://trac.sagemath.org/ticket/5600\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @jbandlow\n\nFix  some weirdness of http://wiki.sagemath.org/combinat/Weirdness:\nSee compositions-cleanup-....-nt.patch\n\nAccept any iterable as input\nAdds concatenation of compositions\n\nIssue created by migration from https://trac.sagemath.org/ticket/5600\n\n",
     "created_at": "2009-03-24T21:10:07Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_005600.json:
     "title": "Cleanup of integer compositions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5600",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
-CC:  sage-combinat jbandlow
+CC:  sage-combinat @jbandlow
 
 Fix  some weirdness of http://wiki.sagemath.org/combinat/Weirdness:
 See compositions-cleanup-....-nt.patch
@@ -43,7 +43,7 @@ archive/issue_comments_043658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5600#issuecomment-43658",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -56,16 +56,16 @@ Changing keywords from "" to "integer compositions".
 archive/issue_comments_043659.json:
 ```json
 {
-    "body": "Attachment [compositions-cleanup-5600-nt.patch](tarball://root/attachments/some-uuid/ticket5600/compositions-cleanup-5600-nt.patch) by nthiery created at 2009-05-19 06:24:25",
+    "body": "Attachment [compositions-cleanup-5600-nt.patch](tarball://root/attachments/some-uuid/ticket5600/compositions-cleanup-5600-nt.patch) by @nthiery created at 2009-05-19 06:24:25",
     "created_at": "2009-05-19T06:24:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5600#issuecomment-43659",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [compositions-cleanup-5600-nt.patch](tarball://root/attachments/some-uuid/ticket5600/compositions-cleanup-5600-nt.patch) by nthiery created at 2009-05-19 06:24:25
+Attachment [compositions-cleanup-5600-nt.patch](tarball://root/attachments/some-uuid/ticket5600/compositions-cleanup-5600-nt.patch) by @nthiery created at 2009-05-19 06:24:25
 
 
 
@@ -79,7 +79,7 @@ archive/issue_comments_043660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5600#issuecomment-43660",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_043661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5600#issuecomment-43661",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_043662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5600#issuecomment-43662",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -149,16 +149,16 @@ The updated patch fixes the (the failure was actually actually a trivial thing i
 archive/issue_comments_043663.json:
 ```json
 {
-    "body": "Attachment [trac_5600-compositions_cleanup-nt.patch](tarball://root/attachments/some-uuid/ticket5600/trac_5600-compositions_cleanup-nt.patch) by nthiery created at 2009-07-29 12:33:00\n\nApply only this one, yes, this one!",
+    "body": "Attachment [trac_5600-compositions_cleanup-nt.patch](tarball://root/attachments/some-uuid/ticket5600/trac_5600-compositions_cleanup-nt.patch) by @nthiery created at 2009-07-29 12:33:00\n\nApply only this one, yes, this one!",
     "created_at": "2009-07-29T12:33:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5600#issuecomment-43663",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_5600-compositions_cleanup-nt.patch](tarball://root/attachments/some-uuid/ticket5600/trac_5600-compositions_cleanup-nt.patch) by nthiery created at 2009-07-29 12:33:00
+Attachment [trac_5600-compositions_cleanup-nt.patch](tarball://root/attachments/some-uuid/ticket5600/trac_5600-compositions_cleanup-nt.patch) by @nthiery created at 2009-07-29 12:33:00
 
 Apply only this one, yes, this one!
 
@@ -174,7 +174,7 @@ archive/issue_comments_043664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5600#issuecomment-43664",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_043667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5600#issuecomment-43667",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

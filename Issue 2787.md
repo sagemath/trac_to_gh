@@ -3,7 +3,7 @@
 archive/issues_002787.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kcrisman ktkohl\n\nIt would be nice if the following worked, if f was a function:\n\n\n```\nsage: integrate(f, x)\n\nsage: # Double indefinite integral wrt x\nsage: integrate(f, x, x)\n\nsage: # limits and a double integral: x is the inner integral, y is the outer integral (note that this order is backwards from Mma...they think of nested integrals as int dx int dy function, so the first parameter is the outer integral in Mma.)\nsage: integrate(f, (x, 0, 1), (y, 1, 2))\nsage: integrate(f, (x, 0, y), (y, 1, 2))\n\nsage: # Double integral, x is the inner integral, y is the outer integral\nsage: integrate(f, x, y)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2787\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman ktkohl\n\nIt would be nice if the following worked, if f was a function:\n\n\n```\nsage: integrate(f, x)\n\nsage: # Double indefinite integral wrt x\nsage: integrate(f, x, x)\n\nsage: # limits and a double integral: x is the inner integral, y is the outer integral (note that this order is backwards from Mma...they think of nested integrals as int dx int dy function, so the first parameter is the outer integral in Mma.)\nsage: integrate(f, (x, 0, 1), (y, 1, 2))\nsage: integrate(f, (x, 0, y), (y, 1, 2))\n\nsage: # Double integral, x is the inner integral, y is the outer integral\nsage: integrate(f, x, y)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2787\n\n",
     "created_at": "2008-04-03T02:38:39Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_002787.json:
     "title": "make the interface to integrate() like the (new consistent) interface to diff()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2787",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kcrisman ktkohl
+CC:  @kcrisman ktkohl
 
 It would be nice if the following worked, if f was a function:
 
@@ -55,7 +55,7 @@ archive/issue_comments_019144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2787#issuecomment-19144",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_019145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2787#issuecomment-19145",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_019146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2787#issuecomment-19146",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_019147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2787#issuecomment-19147",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_019148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2787#issuecomment-19148",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_019149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2787#issuecomment-19149",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_019150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2787#issuecomment-19150",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

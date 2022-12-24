@@ -122,16 +122,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1348
 archive/issue_comments_008641.json:
 ```json
 {
-    "body": "Changing assignee from tba to mhansen.",
+    "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2007-12-06T09:15:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1348#issuecomment-8641",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tba to mhansen.
+Changing assignee from tba to @mwhansen.
 
 
 
@@ -145,7 +145,7 @@ archive/issue_comments_008642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1348#issuecomment-8642",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_008643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1348#issuecomment-8643",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -176,16 +176,16 @@ I'm going to split off the last suggestion into a separate ticket.
 archive/issue_comments_008644.json:
 ```json
 {
-    "body": "Attachment [1348-doc.patch](tarball://root/attachments/some-uuid/ticket1348/1348-doc.patch) by mhansen created at 2007-12-07 21:50:31",
+    "body": "Attachment [1348-doc.patch](tarball://root/attachments/some-uuid/ticket1348/1348-doc.patch) by @mwhansen created at 2007-12-07 21:50:31",
     "created_at": "2007-12-07T21:50:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1348#issuecomment-8644",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1348-doc.patch](tarball://root/attachments/some-uuid/ticket1348/1348-doc.patch) by mhansen created at 2007-12-07 21:50:31
+Attachment [1348-doc.patch](tarball://root/attachments/some-uuid/ticket1348/1348-doc.patch) by @mwhansen created at 2007-12-07 21:50:31
 
 
 

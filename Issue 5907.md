@@ -3,7 +3,7 @@
 archive/issues_005907.json:
 ```json
 {
-    "body": "Assignee: tornaria\n\nKeywords: fast_float\n\nA constant polynomial `a` is incorrectly `_fast_float_`- evaluated as `a*x`:\n\n```\nsage: R.<t> = QQ[]\nsage: f = t + 2 - t\nsage: ff = f._fast_float_()\nsage: ff(3)\n6.0\nsage: list(ff)\n['load 0', 'push 2.0', 'mul']\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5907\n\n",
+    "body": "Assignee: @tornaria\n\nKeywords: fast_float\n\nA constant polynomial `a` is incorrectly `_fast_float_`- evaluated as `a*x`:\n\n```\nsage: R.<t> = QQ[]\nsage: f = t + 2 - t\nsage: ff = f._fast_float_()\nsage: ff(3)\n6.0\nsage: list(ff)\n['load 0', 'push 2.0', 'mul']\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5907\n\n",
     "created_at": "2009-04-27T01:10:19Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_005907.json:
     "title": "[with patch; needs review] incorrect fast_float evaluation of constant polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5907",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
-Assignee: tornaria
+Assignee: @tornaria
 
 Keywords: fast_float
 
@@ -50,7 +50,7 @@ archive/issue_comments_046689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5907#issuecomment-46689",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_046692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5907#issuecomment-46692",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

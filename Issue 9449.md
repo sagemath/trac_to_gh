@@ -3,7 +3,7 @@
 archive/issues_009449.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  simonking jhpalmieri mpatel leif\n\nThe following shows a summary of a doctest failures. They were actually observed on a Solaris machine, but that is unlikely to be relevant. After building Sage\n\n\n```\n$ make ptestlong\n```\n\n\nwas executed. \n\n* 5 of the 6 doctest failures in the summary have 0 tests failing.\n* BSD.py is the only one of the 6 doctest failures which has a non-zero number of failures. \n\n\n```\n\nThe following tests failed:\n\n    sage -t     -long devel/sage/doc/fr/tutorial/programming.rst # 0 doctests failed\n    sage -t     -long devel/sage/sage/schemes/plane_curves/constructor.py # 0 doctests failed\n    sage -t     -long devel/sage/sage/schemes/elliptic_curves/BSD.py # 1 doctests failed\n    sage -t     -long devel/sage/sage/parallel/decorate.py # 0 doctests failed\n    sage -t     -long devel/sage/sage/libs/galrep/wrapper.pyx # 0 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 3990.8 seconds \n```\n\n\nIn the case of one of the tests, it would appear from the log that it actually passed \n\n\n```\nsage -t     -long devel/sage/sage/parallel/decorate.py\n     [44.0 s] \n```\n\n\nThis is pretty damn serious, as it means we can not rely on the doctest results. \n\n == Hardware and software used ==\n* sage-4.5.alpha4\n* A Sun T5240\n* 2 x 8 core, 64-thread UltraSPARC T2+ 1167 MHz\n* 32 GB RAM\n* Solaris 10 update 7 (05/09)\n* t2.math.washtington.edu\n* gcc 4.4.1 configured to use both the Sun linker and assembler.\n* MD5 checksum of matplotlib-1.0.0.spkg was cb9f3cb0ec3da550d2d67ea7e8b6094f\n* 32-bit build (This is the default). The environment variable `SAGE64` was **not** used.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9449\n\n",
+    "body": "Assignee: mvngu\n\nCC:  simonking @jhpalmieri @qed777 @nexttime\n\nThe following shows a summary of a doctest failures. They were actually observed on a Solaris machine, but that is unlikely to be relevant. After building Sage\n\n\n```\n$ make ptestlong\n```\n\n\nwas executed. \n\n* 5 of the 6 doctest failures in the summary have 0 tests failing.\n* BSD.py is the only one of the 6 doctest failures which has a non-zero number of failures. \n\n\n```\n\nThe following tests failed:\n\n    sage -t     -long devel/sage/doc/fr/tutorial/programming.rst # 0 doctests failed\n    sage -t     -long devel/sage/sage/schemes/plane_curves/constructor.py # 0 doctests failed\n    sage -t     -long devel/sage/sage/schemes/elliptic_curves/BSD.py # 1 doctests failed\n    sage -t     -long devel/sage/sage/parallel/decorate.py # 0 doctests failed\n    sage -t     -long devel/sage/sage/libs/galrep/wrapper.pyx # 0 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 3990.8 seconds \n```\n\n\nIn the case of one of the tests, it would appear from the log that it actually passed \n\n\n```\nsage -t     -long devel/sage/sage/parallel/decorate.py\n     [44.0 s] \n```\n\n\nThis is pretty damn serious, as it means we can not rely on the doctest results. \n\n == Hardware and software used ==\n* sage-4.5.alpha4\n* A Sun T5240\n* 2 x 8 core, 64-thread UltraSPARC T2+ 1167 MHz\n* 32 GB RAM\n* Solaris 10 update 7 (05/09)\n* t2.math.washtington.edu\n* gcc 4.4.1 configured to use both the Sun linker and assembler.\n* MD5 checksum of matplotlib-1.0.0.spkg was cb9f3cb0ec3da550d2d67ea7e8b6094f\n* 32-bit build (This is the default). The environment variable `SAGE64` was **not** used.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9449\n\n",
     "created_at": "2010-07-07T19:57:20Z",
     "labels": [
         "doctest coverage",
@@ -19,7 +19,7 @@ archive/issues_009449.json:
 ```
 Assignee: mvngu
 
-CC:  simonking jhpalmieri mpatel leif
+CC:  simonking @jhpalmieri @qed777 @nexttime
 
 The following shows a summary of a doctest failures. They were actually observed on a Solaris machine, but that is unlikely to be relevant. After building Sage
 
@@ -100,16 +100,16 @@ Results from long doctests on t2.math.washington.edu (Solaris 10, UltraSPARC CPU
 archive/issue_comments_090546.json:
 ```json
 {
-    "body": "Attachment [ptestlong.log](tarball://root/attachments/some-uuid/ticket9449/ptestlong.log) by wjp created at 2010-07-07 20:01:44\n\nCould you try with patches #8641, #9243, #9316 to the doctest framework? They clean up and fix parts of the error handling.\n\nIf they don't fix it yet, I can give you a patch which adds some extra debugging info to track this down.",
+    "body": "Attachment [ptestlong.log](tarball://root/attachments/some-uuid/ticket9449/ptestlong.log) by @wjp created at 2010-07-07 20:01:44\n\nCould you try with patches #8641, #9243, #9316 to the doctest framework? They clean up and fix parts of the error handling.\n\nIf they don't fix it yet, I can give you a patch which adds some extra debugging info to track this down.",
     "created_at": "2010-07-07T20:01:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90546",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [ptestlong.log](tarball://root/attachments/some-uuid/ticket9449/ptestlong.log) by wjp created at 2010-07-07 20:01:44
+Attachment [ptestlong.log](tarball://root/attachments/some-uuid/ticket9449/ptestlong.log) by @wjp created at 2010-07-07 20:01:44
 
 Could you try with patches #8641, #9243, #9316 to the doctest framework? They clean up and fix parts of the error handling.
 
@@ -247,7 +247,7 @@ archive/issue_comments_090550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90550",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -465,16 +465,16 @@ The log file 'ptestlong.log' after trac items #8641, #9243- and #9316 had been a
 archive/issue_comments_090556.json:
 ```json
 {
-    "body": "Attachment [ptestlong-after-trac-#8641-#9243-#9316.log](tarball://root/attachments/some-uuid/ticket9449/ptestlong-after-trac-#8641-#9243-#9316.log) by leif created at 2010-07-08 15:50:11",
+    "body": "Attachment [ptestlong-after-trac-#8641-#9243-#9316.log](tarball://root/attachments/some-uuid/ticket9449/ptestlong-after-trac-#8641-#9243-#9316.log) by @nexttime created at 2010-07-08 15:50:11",
     "created_at": "2010-07-08T15:50:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90556",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [ptestlong-after-trac-#8641-#9243-#9316.log](tarball://root/attachments/some-uuid/ticket9449/ptestlong-after-trac-#8641-#9243-#9316.log) by leif created at 2010-07-08 15:50:11
+Attachment [ptestlong-after-trac-#8641-#9243-#9316.log](tarball://root/attachments/some-uuid/ticket9449/ptestlong-after-trac-#8641-#9243-#9316.log) by @nexttime created at 2010-07-08 15:50:11
 
 
 
@@ -488,7 +488,7 @@ archive/issue_comments_090557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90557",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -515,7 +515,7 @@ archive/issue_comments_090558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90558",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -533,7 +533,7 @@ archive/issue_comments_090559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90559",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -594,7 +594,7 @@ archive/issue_comments_090561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90561",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -621,7 +621,7 @@ archive/issue_comments_090562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90562",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -639,7 +639,7 @@ archive/issue_comments_090563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90563",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -753,7 +753,7 @@ archive/issue_comments_090565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90565",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -774,7 +774,7 @@ archive/issue_comments_090566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90566",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -792,7 +792,7 @@ archive/issue_comments_090567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90567",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

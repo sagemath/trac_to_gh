@@ -3,7 +3,7 @@
 archive/issues_007813.json:
 ```json
 {
-    "body": "Assignee: schilly\n\nKeywords: docs\n\nTo disable at least temporarily the dead links, for instance, at\n\n1. http://sagemath.org/doc/genindex.html\n2. http://sagemath.org/doc/tutorial/modindex.html\n3. http://sagemath.org/doc/tutorial/genindex.html\n ...\n\nIssue created by migration from https://trac.sagemath.org/ticket/7813\n\n",
+    "body": "Assignee: @haraldschilly\n\nKeywords: docs\n\nTo disable at least temporarily the dead links, for instance, at\n\n1. http://sagemath.org/doc/genindex.html\n2. http://sagemath.org/doc/tutorial/modindex.html\n3. http://sagemath.org/doc/tutorial/genindex.html\n ...\n\nIssue created by migration from https://trac.sagemath.org/ticket/7813\n\n",
     "created_at": "2010-01-02T03:42:43Z",
     "labels": [
         "website/wiki",
@@ -17,7 +17,7 @@ archive/issues_007813.json:
     "user": "slosoi"
 }
 ```
-Assignee: schilly
+Assignee: @haraldschilly
 
 Keywords: docs
 

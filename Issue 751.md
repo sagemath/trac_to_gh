@@ -3,7 +3,7 @@
 archive/issues_000751.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/751\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/751\n\n",
     "created_at": "2007-09-25T06:34:56Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_000751.json:
     "title": "algebraic number theory -- a bunch of minor updates needed for Stein's book",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/751",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_004443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/751#issuecomment-4443",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_004444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/751#issuecomment-4444",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

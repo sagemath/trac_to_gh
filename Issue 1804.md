@@ -14,7 +14,7 @@ archive/issues_001804.json:
     "title": "Factorization.__mul__ assumes that the primes in the factorization commute, which may not be a valid assumption",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1804",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -47,7 +47,7 @@ archive/issue_comments_011402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1804#issuecomment-11402",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -70,16 +70,16 @@ x^-3 * y^-2
 archive/issue_comments_011403.json:
 ```json
 {
-    "body": "Attachment [ncalexan-1804.patch](tarball://root/attachments/some-uuid/ticket1804/ncalexan-1804.patch) by ncalexan created at 2008-01-20 00:35:07",
+    "body": "Attachment [ncalexan-1804.patch](tarball://root/attachments/some-uuid/ticket1804/ncalexan-1804.patch) by @ncalexan created at 2008-01-20 00:35:07",
     "created_at": "2008-01-20T00:35:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1804#issuecomment-11403",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [ncalexan-1804.patch](tarball://root/attachments/some-uuid/ticket1804/ncalexan-1804.patch) by ncalexan created at 2008-01-20 00:35:07
+Attachment [ncalexan-1804.patch](tarball://root/attachments/some-uuid/ticket1804/ncalexan-1804.patch) by @ncalexan created at 2008-01-20 00:35:07
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_011404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1804#issuecomment-11404",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

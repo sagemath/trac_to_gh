@@ -3,7 +3,7 @@
 archive/issues_002336.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2336\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2336\n\n",
     "created_at": "2008-02-27T20:28:31Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_002336.json:
     "title": "hermite -- this function in sage is broken in more ways than it has lines of code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2336",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_015621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2336",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2336#issuecomment-15621",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -51,16 +51,16 @@ archive/issue_comments_015621.json:
 archive/issue_comments_015622.json:
 ```json
 {
-    "body": "Attachment [sage-2336.patch](tarball://root/attachments/some-uuid/ticket2336/sage-2336.patch) by was created at 2008-02-27 20:31:53",
+    "body": "Attachment [sage-2336.patch](tarball://root/attachments/some-uuid/ticket2336/sage-2336.patch) by @williamstein created at 2008-02-27 20:31:53",
     "created_at": "2008-02-27T20:31:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2336",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2336#issuecomment-15622",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2336.patch](tarball://root/attachments/some-uuid/ticket2336/sage-2336.patch) by was created at 2008-02-27 20:31:53
+Attachment [sage-2336.patch](tarball://root/attachments/some-uuid/ticket2336/sage-2336.patch) by @williamstein created at 2008-02-27 20:31:53
 
 
 
@@ -74,7 +74,7 @@ archive/issue_comments_015623.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2336",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2336#issuecomment-15623",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_015624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2336",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2336#issuecomment-15624",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

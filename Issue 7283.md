@@ -14,7 +14,7 @@ archive/issues_007283.json:
     "title": "typo in reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7283",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tba
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7283
 archive/issue_comments_060612.json:
 ```json
 {
-    "body": "Attachment [trac_7283-ref.patch](tarball://root/attachments/some-uuid/ticket7283/trac_7283-ref.patch) by jhpalmieri created at 2009-11-24 18:15:09",
+    "body": "Attachment [trac_7283-ref.patch](tarball://root/attachments/some-uuid/ticket7283/trac_7283-ref.patch) by @jhpalmieri created at 2009-11-24 18:15:09",
     "created_at": "2009-11-24T18:15:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7283#issuecomment-60612",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_7283-ref.patch](tarball://root/attachments/some-uuid/ticket7283/trac_7283-ref.patch) by jhpalmieri created at 2009-11-24 18:15:09
+Attachment [trac_7283-ref.patch](tarball://root/attachments/some-uuid/ticket7283/trac_7283-ref.patch) by @jhpalmieri created at 2009-11-24 18:15:09
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_060613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7283#issuecomment-60613",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_060614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7283#issuecomment-60614",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_060615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7283#issuecomment-60615",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_060616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7283#issuecomment-60616",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_060617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7283#issuecomment-60617",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

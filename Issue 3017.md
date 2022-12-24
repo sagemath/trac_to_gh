@@ -14,7 +14,7 @@ archive/issues_003017.json:
     "title": "invalid link after make install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3017",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: mabshoff
@@ -109,7 +109,7 @@ archive/issue_comments_020732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3017#issuecomment-20732",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

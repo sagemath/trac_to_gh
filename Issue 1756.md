@@ -3,7 +3,7 @@
 archive/issues_001756.json:
 ```json
 {
-    "body": "Assignee: malb\n\nThe result should be somewhat similar to what MAGMA has to offer\n\n   http://magma.maths.usyd.edu.au/magma/htmlhelp/text1128.htm\n\n. SINGULAR has support for Hilbert Series computation\n\n  http://www.singular.uni-kl.de/Manual/3-0-4/sing_212.htm\n\nwhich probably can be wrapped to provide the desired functionality.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1756\n\n",
+    "body": "Assignee: @malb\n\nThe result should be somewhat similar to what MAGMA has to offer\n\n   http://magma.maths.usyd.edu.au/magma/htmlhelp/text1128.htm\n\n. SINGULAR has support for Hilbert Series computation\n\n  http://www.singular.uni-kl.de/Manual/3-0-4/sing_212.htm\n\nwhich probably can be wrapped to provide the desired functionality.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1756\n\n",
     "created_at": "2008-01-11T18:34:12Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_001756.json:
     "title": "implement MPolynomialIdeal.hilbert_[series|polynomial]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1756",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 The result should be somewhat similar to what MAGMA has to offer
 
@@ -67,7 +67,7 @@ archive/issue_comments_011084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1756#issuecomment-11084",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_011085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1756#issuecomment-11085",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005414.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  mhansen jhpalmieri\n\nThe notebook help screen has links to the reference manual and so on. Those links point to the doc repo where the static html lives. Once #5410 is done those links should be fixed to point to the new static html.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5414\n\n",
+    "body": "Assignee: boothby\n\nCC:  @mwhansen @jhpalmieri\n\nThe notebook help screen has links to the reference manual and so on. Those links point to the doc repo where the static html lives. Once #5410 is done those links should be fixed to point to the new static html.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5414\n\n",
     "created_at": "2009-03-01T21:17:39Z",
     "labels": [
         "notebook",
@@ -19,7 +19,7 @@ archive/issues_005414.json:
 ```
 Assignee: boothby
 
-CC:  mhansen jhpalmieri
+CC:  @mwhansen @jhpalmieri
 
 The notebook help screen has links to the reference manual and so on. Those links point to the doc repo where the static html lives. Once #5410 is done those links should be fixed to point to the new static html.
 
@@ -69,16 +69,16 @@ Michael
 archive/issue_comments_041870.json:
 ```json
 {
-    "body": "Attachment [trac_5414-install.diff](tarball://root/attachments/some-uuid/ticket5414/trac_5414-install.diff) by mhansen created at 2009-03-11 05:11:22",
+    "body": "Attachment [trac_5414-install.diff](tarball://root/attachments/some-uuid/ticket5414/trac_5414-install.diff) by @mwhansen created at 2009-03-11 05:11:22",
     "created_at": "2009-03-11T05:11:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5414#issuecomment-41870",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5414-install.diff](tarball://root/attachments/some-uuid/ticket5414/trac_5414-install.diff) by mhansen created at 2009-03-11 05:11:22
+Attachment [trac_5414-install.diff](tarball://root/attachments/some-uuid/ticket5414/trac_5414-install.diff) by @mwhansen created at 2009-03-11 05:11:22
 
 
 
@@ -87,16 +87,16 @@ Attachment [trac_5414-install.diff](tarball://root/attachments/some-uuid/ticket5
 archive/issue_comments_041871.json:
 ```json
 {
-    "body": "Attachment [trac_5414.patch](tarball://root/attachments/some-uuid/ticket5414/trac_5414.patch) by mhansen created at 2009-03-11 05:18:20",
+    "body": "Attachment [trac_5414.patch](tarball://root/attachments/some-uuid/ticket5414/trac_5414.patch) by @mwhansen created at 2009-03-11 05:18:20",
     "created_at": "2009-03-11T05:18:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5414#issuecomment-41871",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5414.patch](tarball://root/attachments/some-uuid/ticket5414/trac_5414.patch) by mhansen created at 2009-03-11 05:18:20
+Attachment [trac_5414.patch](tarball://root/attachments/some-uuid/ticket5414/trac_5414.patch) by @mwhansen created at 2009-03-11 05:18:20
 
 
 
@@ -110,7 +110,7 @@ archive/issue_comments_041872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5414#issuecomment-41872",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -123,16 +123,16 @@ Changing status from new to assigned.
 archive/issue_comments_041873.json:
 ```json
 {
-    "body": "Changing assignee from boothby to mhansen.",
+    "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2009-03-11T05:24:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5414#issuecomment-41873",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from boothby to mhansen.
+Changing assignee from boothby to @mwhansen.
 
 
 
@@ -163,16 +163,16 @@ Michael
 archive/issue_comments_041875.json:
 ```json
 {
-    "body": "Attachment [trac_5414-scripts.patch](tarball://root/attachments/some-uuid/ticket5414/trac_5414-scripts.patch) by mhansen created at 2009-03-11 05:40:35",
+    "body": "Attachment [trac_5414-scripts.patch](tarball://root/attachments/some-uuid/ticket5414/trac_5414-scripts.patch) by @mwhansen created at 2009-03-11 05:40:35",
     "created_at": "2009-03-11T05:40:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5414#issuecomment-41875",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5414-scripts.patch](tarball://root/attachments/some-uuid/ticket5414/trac_5414-scripts.patch) by mhansen created at 2009-03-11 05:40:35
+Attachment [trac_5414-scripts.patch](tarball://root/attachments/some-uuid/ticket5414/trac_5414-scripts.patch) by @mwhansen created at 2009-03-11 05:40:35
 
 
 
@@ -226,7 +226,7 @@ archive/issue_comments_041878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5414#issuecomment-41878",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_041879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5414#issuecomment-41879",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

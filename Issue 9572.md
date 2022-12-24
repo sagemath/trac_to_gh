@@ -3,7 +3,7 @@
 archive/issues_009572.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  acleone leif timdumol\n\nThis should include #9554 and perhaps other positively reviewed notebook tickets.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9572\n\n",
+    "body": "Assignee: jason, was\n\nCC:  acleone @nexttime @TimDumol\n\nThis should include #9554 and perhaps other positively reviewed notebook tickets.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9572\n\n",
     "created_at": "2010-07-22T03:40:26Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_009572.json:
     "title": "SageNB 0.8.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9572",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: jason, was
 
-CC:  acleone leif timdumol
+CC:  acleone @nexttime @TimDumol
 
 This should include #9554 and perhaps other positively reviewed notebook tickets.
 
@@ -39,7 +39,7 @@ archive/issue_comments_092436.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9572#issuecomment-92436",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_092437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9572#issuecomment-92437",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_092438.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9572#issuecomment-92438",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_092439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9572#issuecomment-92439",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_092440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9572#issuecomment-92440",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_092444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9572#issuecomment-92444",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_092445.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9572#issuecomment-92445",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_092448.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9572#issuecomment-92448",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -284,7 +284,7 @@ archive/issue_comments_092449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9572#issuecomment-92449",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_092450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9572#issuecomment-92450",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -326,7 +326,7 @@ archive/issue_comments_092451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9572#issuecomment-92451",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

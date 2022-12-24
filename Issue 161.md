@@ -3,7 +3,7 @@
 archive/issues_000161.json:
 ```json
 {
-    "body": "Assignee: was\n\n`sage -t` does not pick up segfaults in doctests. For example this code currently causes a segmentation fault:\n\n\n```\nsage: x = 3**10000000\nsage: bits = 31699256\nsage: R = RealField(bits)\nsage: y = x._mpfr_(R)\nsage: z = y.log()\n```\n\n\nIf this appears in a doctest, then the test framework continues without comment, and prints \"All tests passed!\" at the end.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/161\n\n",
+    "body": "Assignee: @williamstein\n\n`sage -t` does not pick up segfaults in doctests. For example this code currently causes a segmentation fault:\n\n\n```\nsage: x = 3**10000000\nsage: bits = 31699256\nsage: R = RealField(bits)\nsage: y = x._mpfr_(R)\nsage: z = y.log()\n```\n\n\nIf this appears in a doctest, then the test framework continues without comment, and prints \"All tests passed!\" at the end.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/161\n\n",
     "created_at": "2006-10-29T21:55:51Z",
     "labels": [
         "user interface",
@@ -16,7 +16,7 @@ archive/issues_000161.json:
     "user": "dmharvey"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 `sage -t` does not pick up segfaults in doctests. For example this code currently causes a segmentation fault:
 
@@ -49,7 +49,7 @@ archive/issue_comments_000719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/161",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/161#issuecomment-719",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_000720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/161",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/161#issuecomment-720",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

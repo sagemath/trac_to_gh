@@ -3,7 +3,7 @@
 archive/issues_007575.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nThe documentation for `EllipticCurve.gens` says:\n\n```\nHINT: If you would like to control the height bounds used in the\n2-descent, first call the two_descent function with those height\nbounds. However that function, while it displays a lot of output,\nreturns no values.\n```\n\n\nHowever, this doesn't work, because `EllipticCurve.gens` doesn't know about it:\n\n\n```\nsage: x,y=var('x,y')\nsage: E = EllipticCurve(y^2 + x*y + y == x^3 - 10525529*x - 21714803524)\nsage: E.two_descent(second_limit=11, verbose=False)\nsage: E.gens()\n*BOOM*\n```\n\n\nDespite:\n\n\n```\nsage: A = E.mwrank_curve()\nsage: A.gens()\n[[1737553736529419603224344006006032245457891558644991945121564365621L, -1605018042749306385493128932071874233128412498544999275367916849231954L, 2038538889602737161869943561394015059980551394212496529475951L]]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7575\n\n",
+    "body": "Assignee: @JohnCremona\n\nThe documentation for `EllipticCurve.gens` says:\n\n```\nHINT: If you would like to control the height bounds used in the\n2-descent, first call the two_descent function with those height\nbounds. However that function, while it displays a lot of output,\nreturns no values.\n```\n\n\nHowever, this doesn't work, because `EllipticCurve.gens` doesn't know about it:\n\n\n```\nsage: x,y=var('x,y')\nsage: E = EllipticCurve(y^2 + x*y + y == x^3 - 10525529*x - 21714803524)\nsage: E.two_descent(second_limit=11, verbose=False)\nsage: E.gens()\n*BOOM*\n```\n\n\nDespite:\n\n\n```\nsage: A = E.mwrank_curve()\nsage: A.gens()\n[[1737553736529419603224344006006032245457891558644991945121564365621L, -1605018042749306385493128932071874233128412498544999275367916849231954L, 2038538889602737161869943561394015059980551394212496529475951L]]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7575\n\n",
     "created_at": "2009-12-01T21:56:26Z",
     "labels": [
         "elliptic curves",
@@ -14,10 +14,10 @@ archive/issues_007575.json:
     "title": "EllipticCurve.gens: height bounds not handled well in two_descent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7575",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 The documentation for `EllipticCurve.gens` says:
 
@@ -67,7 +67,7 @@ archive/issue_comments_064478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64478",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_064479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64479",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_064480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64480",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_064481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64481",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_064482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64482",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_064483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64483",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -278,7 +278,7 @@ archive/issue_comments_064484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64484",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_064485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64485",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -353,7 +353,7 @@ archive/issue_comments_064486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64486",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -371,7 +371,7 @@ archive/issue_comments_064487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64487",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -391,7 +391,7 @@ archive/issue_comments_064488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64488",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -404,16 +404,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_064489.json:
 ```json
 {
-    "body": "Attachment [trac_7575.patch](tarball://root/attachments/some-uuid/ticket7575/trac_7575.patch) by rlm created at 2010-02-04 21:01:45\n\ndepends on #8184, #8155 (and possibly #8124)",
+    "body": "Attachment [trac_7575.patch](tarball://root/attachments/some-uuid/ticket7575/trac_7575.patch) by @rlmill created at 2010-02-04 21:01:45\n\ndepends on #8184, #8155 (and possibly #8124)",
     "created_at": "2010-02-04T21:01:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64489",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_7575.patch](tarball://root/attachments/some-uuid/ticket7575/trac_7575.patch) by rlm created at 2010-02-04 21:01:45
+Attachment [trac_7575.patch](tarball://root/attachments/some-uuid/ticket7575/trac_7575.patch) by @rlmill created at 2010-02-04 21:01:45
 
 depends on #8184, #8155 (and possibly #8124)
 
@@ -429,7 +429,7 @@ archive/issue_comments_064490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64490",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -447,7 +447,7 @@ archive/issue_comments_064491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64491",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -476,7 +476,7 @@ archive/issue_comments_064492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64492",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -494,7 +494,7 @@ archive/issue_comments_064493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64493",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -512,7 +512,7 @@ archive/issue_comments_064494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64494",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -525,16 +525,16 @@ Fixes default search bounds
 archive/issue_comments_064495.json:
 ```json
 {
-    "body": "Attachment [trac_7575-followup.patch](tarball://root/attachments/some-uuid/ticket7575/trac_7575-followup.patch) by rlm created at 2010-02-07 02:05:50\n\nThis last patch sets all defaults (and docstrings) to 12.",
+    "body": "Attachment [trac_7575-followup.patch](tarball://root/attachments/some-uuid/ticket7575/trac_7575-followup.patch) by @rlmill created at 2010-02-07 02:05:50\n\nThis last patch sets all defaults (and docstrings) to 12.",
     "created_at": "2010-02-07T02:05:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64495",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_7575-followup.patch](tarball://root/attachments/some-uuid/ticket7575/trac_7575-followup.patch) by rlm created at 2010-02-07 02:05:50
+Attachment [trac_7575-followup.patch](tarball://root/attachments/some-uuid/ticket7575/trac_7575-followup.patch) by @rlmill created at 2010-02-07 02:05:50
 
 This last patch sets all defaults (and docstrings) to 12.
 
@@ -550,7 +550,7 @@ archive/issue_comments_064496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64496",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -570,7 +570,7 @@ archive/issue_comments_064497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64497",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -596,7 +596,7 @@ archive/issue_comments_064498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64498",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -616,7 +616,7 @@ archive/issue_comments_064499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64499",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -641,7 +641,7 @@ archive/issue_comments_064500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64500",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -654,16 +654,16 @@ Add `PRIMES` to `.hgignore`.  Apply in addition to other patches.
 archive/issue_comments_064501.json:
 ```json
 {
-    "body": "Attachment [trac_7575-hgignore_PRIMES.patch](tarball://root/attachments/some-uuid/ticket7575/trac_7575-hgignore_PRIMES.patch) by mpatel created at 2010-02-11 10:47:30\n\nI've attached an \"hgignore\" patch we can use for 4.3.3.alpha0, if it's OK.",
+    "body": "Attachment [trac_7575-hgignore_PRIMES.patch](tarball://root/attachments/some-uuid/ticket7575/trac_7575-hgignore_PRIMES.patch) by @qed777 created at 2010-02-11 10:47:30\n\nI've attached an \"hgignore\" patch we can use for 4.3.3.alpha0, if it's OK.",
     "created_at": "2010-02-11T10:47:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64501",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7575-hgignore_PRIMES.patch](tarball://root/attachments/some-uuid/ticket7575/trac_7575-hgignore_PRIMES.patch) by mpatel created at 2010-02-11 10:47:30
+Attachment [trac_7575-hgignore_PRIMES.patch](tarball://root/attachments/some-uuid/ticket7575/trac_7575-hgignore_PRIMES.patch) by @qed777 created at 2010-02-11 10:47:30
 
 I've attached an "hgignore" patch we can use for 4.3.3.alpha0, if it's OK.
 
@@ -679,7 +679,7 @@ archive/issue_comments_064502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64502",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -697,7 +697,7 @@ archive/issue_comments_064503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64503",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -722,7 +722,7 @@ archive/issue_comments_064504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64504",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -749,7 +749,7 @@ archive/issue_comments_064505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64505",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -767,7 +767,7 @@ archive/issue_comments_064506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64506",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -785,7 +785,7 @@ archive/issue_comments_064507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64507",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -803,7 +803,7 @@ archive/issue_comments_064508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64508",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -831,7 +831,7 @@ archive/issue_comments_064509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64509",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -852,7 +852,7 @@ archive/issue_comments_064510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64510",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -870,7 +870,7 @@ archive/issue_comments_064511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64511",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -900,7 +900,7 @@ archive/issue_comments_064512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7575#issuecomment-64512",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

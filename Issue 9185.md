@@ -3,7 +3,7 @@
 archive/issues_009185.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  drkirkby jhpalmieri leif mhansen\n\nTo build the Singular spkg with `SAGE_PARALLEL_SPKG_BUILD=\"yes\"` on Mac OS X, we need to add, e.g.,\n\n```sh\nMAKEFLAGS=\nexport MAKEFLAGS\n```\n\nto the package's `spkg-install`.\n\nPlease see #8306 about building spkgs in parallel.  For `MAKEFLAGS`, see [the GNU Make manual](http://www.gnu.org/software/make/manual/html_node/Options_002fRecursion.html).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9185\n\n",
+    "body": "Assignee: tbd\n\nCC:  drkirkby @jhpalmieri @nexttime @mwhansen\n\nTo build the Singular spkg with `SAGE_PARALLEL_SPKG_BUILD=\"yes\"` on Mac OS X, we need to add, e.g.,\n\n```sh\nMAKEFLAGS=\nexport MAKEFLAGS\n```\n\nto the package's `spkg-install`.\n\nPlease see #8306 about building spkgs in parallel.  For `MAKEFLAGS`, see [the GNU Make manual](http://www.gnu.org/software/make/manual/html_node/Options_002fRecursion.html).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9185\n\n",
     "created_at": "2010-06-08T08:40:36Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_009185.json:
     "title": "Update Singular's spkg-install for building multiple spkgs in parallel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9185",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: tbd
 
-CC:  drkirkby jhpalmieri leif mhansen
+CC:  drkirkby @jhpalmieri @nexttime @mwhansen
 
 To build the Singular spkg with `SAGE_PARALLEL_SPKG_BUILD="yes"` on Mac OS X, we need to add, e.g.,
 
@@ -48,7 +48,7 @@ archive/issue_comments_085914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9185",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9185#issuecomment-85914",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -61,16 +61,16 @@ I think we should work from #9160.
 archive/issue_comments_085915.json:
 ```json
 {
-    "body": "Attachment [trac_9185-singular_makeflags.patch](tarball://root/attachments/some-uuid/ticket9185/trac_9185-singular_makeflags.patch) by mpatel created at 2010-06-09 02:30:51\n\nspkg patch. Set empty `MAKEFLAGS`.",
+    "body": "Attachment [trac_9185-singular_makeflags.patch](tarball://root/attachments/some-uuid/ticket9185/trac_9185-singular_makeflags.patch) by @qed777 created at 2010-06-09 02:30:51\n\nspkg patch. Set empty `MAKEFLAGS`.",
     "created_at": "2010-06-09T02:30:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9185",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9185#issuecomment-85915",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_9185-singular_makeflags.patch](tarball://root/attachments/some-uuid/ticket9185/trac_9185-singular_makeflags.patch) by mpatel created at 2010-06-09 02:30:51
+Attachment [trac_9185-singular_makeflags.patch](tarball://root/attachments/some-uuid/ticket9185/trac_9185-singular_makeflags.patch) by @qed777 created at 2010-06-09 02:30:51
 
 spkg patch. Set empty `MAKEFLAGS`.
 
@@ -86,7 +86,7 @@ archive/issue_comments_085916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9185",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9185#issuecomment-85916",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_085917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9185",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9185#issuecomment-85917",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_085918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9185",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9185#issuecomment-85918",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_085919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9185",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9185#issuecomment-85919",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -314,7 +314,7 @@ archive/issue_comments_085922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9185",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9185#issuecomment-85922",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -359,7 +359,7 @@ archive/issue_comments_085923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9185",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9185#issuecomment-85923",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -419,7 +419,7 @@ archive/issue_comments_085926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9185",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9185#issuecomment-85926",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

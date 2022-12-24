@@ -3,7 +3,7 @@
 archive/issues_007194.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  malb burcin hannes@mathematik.uni-kl.de\n\nKeywords: singular\n\nwrapped list, use intvec as input, wrapped ring (RingWrap for return)...\nThis can wrap a lot more of Singular functions now.\n\nThis needs the header file lists.h, which is not installed by default.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7194\n\n",
+    "body": "Assignee: @malb\n\nCC:  @malb @burcin hannes@mathematik.uni-kl.de\n\nKeywords: singular\n\nwrapped list, use intvec as input, wrapped ring (RingWrap for return)...\nThis can wrap a lot more of Singular functions now.\n\nThis needs the header file lists.h, which is not installed by default.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7194\n\n",
     "created_at": "2009-10-12T12:23:23Z",
     "labels": [
         "commutative algebra",
@@ -17,9 +17,9 @@ archive/issues_007194.json:
     "user": "PolyBoRi"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  malb burcin hannes@mathematik.uni-kl.de
+CC:  @malb @burcin hannes@mathematik.uni-kl.de
 
 Keywords: singular
 
@@ -385,16 +385,16 @@ Attachment [singular_list.8.patch](tarball://root/attachments/some-uuid/ticket71
 archive/issue_comments_059666.json:
 ```json
 {
-    "body": "Attachment [singular_list.9.patch](tarball://root/attachments/some-uuid/ticket7194/singular_list.9.patch) by malb created at 2009-11-18 17:10:23\n\nA new SPKG installing `Singular/lists.h` is available here\n\n   http://sage.math.washington.edu/home/malb/spkgs/singular-3-1-0-4-20090818.p2.spkg",
+    "body": "Attachment [singular_list.9.patch](tarball://root/attachments/some-uuid/ticket7194/singular_list.9.patch) by @malb created at 2009-11-18 17:10:23\n\nA new SPKG installing `Singular/lists.h` is available here\n\n   http://sage.math.washington.edu/home/malb/spkgs/singular-3-1-0-4-20090818.p2.spkg",
     "created_at": "2009-11-18T17:10:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59666",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [singular_list.9.patch](tarball://root/attachments/some-uuid/ticket7194/singular_list.9.patch) by malb created at 2009-11-18 17:10:23
+Attachment [singular_list.9.patch](tarball://root/attachments/some-uuid/ticket7194/singular_list.9.patch) by @malb created at 2009-11-18 17:10:23
 
 A new SPKG installing `Singular/lists.h` is available here
 
@@ -407,16 +407,16 @@ A new SPKG installing `Singular/lists.h` is available here
 archive/issue_comments_059667.json:
 ```json
 {
-    "body": "Attachment [singular_lists_referee.patch](tarball://root/attachments/some-uuid/ticket7194/singular_lists_referee.patch) by malb created at 2009-11-18 17:45:30\n\nI give Michael's patch a positive review. However, somebody needs to review my documentation/cleanup patch and the SPKG.\n\nHow to apply:\n* install http://sage.math.washington.edu/home/malb/spkgs/singular-3-1-0-4-20090818.p2.spkg\n* apply singular_list.10.patch\n* apply singular_lists_referee.patch",
+    "body": "Attachment [singular_lists_referee.patch](tarball://root/attachments/some-uuid/ticket7194/singular_lists_referee.patch) by @malb created at 2009-11-18 17:45:30\n\nI give Michael's patch a positive review. However, somebody needs to review my documentation/cleanup patch and the SPKG.\n\nHow to apply:\n* install http://sage.math.washington.edu/home/malb/spkgs/singular-3-1-0-4-20090818.p2.spkg\n* apply singular_list.10.patch\n* apply singular_lists_referee.patch",
     "created_at": "2009-11-18T17:45:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59667",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [singular_lists_referee.patch](tarball://root/attachments/some-uuid/ticket7194/singular_lists_referee.patch) by malb created at 2009-11-18 17:45:30
+Attachment [singular_lists_referee.patch](tarball://root/attachments/some-uuid/ticket7194/singular_lists_referee.patch) by @malb created at 2009-11-18 17:45:30
 
 I give Michael's patch a positive review. However, somebody needs to review my documentation/cleanup patch and the SPKG.
 
@@ -437,7 +437,7 @@ archive/issue_comments_059668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59668",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -455,7 +455,7 @@ archive/issue_comments_059669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59669",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -473,7 +473,7 @@ archive/issue_comments_059670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59670",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -491,7 +491,7 @@ archive/issue_comments_059671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59671",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -509,7 +509,7 @@ archive/issue_comments_059672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59672",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -529,7 +529,7 @@ archive/issue_comments_059673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59673",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -542,16 +542,16 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_059674.json:
 ```json
 {
-    "body": "Attachment [singular_list.10.patch](tarball://root/attachments/some-uuid/ticket7194/singular_list.10.patch) by malb created at 2009-12-02 11:12:03\n\nfixed to work with 4.3",
+    "body": "Attachment [singular_list.10.patch](tarball://root/attachments/some-uuid/ticket7194/singular_list.10.patch) by @malb created at 2009-12-02 11:12:03\n\nfixed to work with 4.3",
     "created_at": "2009-12-02T11:12:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59674",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [singular_list.10.patch](tarball://root/attachments/some-uuid/ticket7194/singular_list.10.patch) by malb created at 2009-12-02 11:12:03
+Attachment [singular_list.10.patch](tarball://root/attachments/some-uuid/ticket7194/singular_list.10.patch) by @malb created at 2009-12-02 11:12:03
 
 fixed to work with 4.3
 
@@ -567,7 +567,7 @@ archive/issue_comments_059675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59675",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -589,7 +589,7 @@ archive/issue_comments_059676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59676",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

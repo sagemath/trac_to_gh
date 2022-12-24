@@ -3,7 +3,7 @@
 archive/issues_001912.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kcrisman\n\n\n```\n\n> As a final comment, I'll note that the following behavior with objects\n> which automatically display is interesting:\n> \n> sage: C=circle((0,0),1);P=plot(sin,0,1)\n> sage: [C,P]\n> [, ]\n> \n> and then a display of circle above a plot of sin (in the notebook) or\n> two separate pictures (in the command line).  I have no idea what, if\n> any, connection should be made with this work, though.\n\nI think it is just printing out the list for you to see and the \"print\" function for a graphics object displays the object, so you see each object \"printed\" out.\n\nIt would be nice if the text display indicated this, instead of \"[, ]\".  Maybe something like \"[<Graphic object>, <Graphic object>]\", since the objects actually are there.  It misleadingly looks like you have an empty list.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1912\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\n\n```\n\n> As a final comment, I'll note that the following behavior with objects\n> which automatically display is interesting:\n> \n> sage: C=circle((0,0),1);P=plot(sin,0,1)\n> sage: [C,P]\n> [, ]\n> \n> and then a display of circle above a plot of sin (in the notebook) or\n> two separate pictures (in the command line).  I have no idea what, if\n> any, connection should be made with this work, though.\n\nI think it is just printing out the list for you to see and the \"print\" function for a graphics object displays the object, so you see each object \"printed\" out.\n\nIt would be nice if the text display indicated this, instead of \"[, ]\".  Maybe something like \"[<Graphic object>, <Graphic object>]\", since the objects actually are there.  It misleadingly looks like you have an empty list.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1912\n\n",
     "created_at": "2008-01-24T16:08:14Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_001912.json:
     "title": "Displaying a list of graphic objects prints what appears to be an empty list",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1912",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kcrisman
+CC:  @kcrisman
 
 
 ```
@@ -58,7 +58,7 @@ archive/issue_comments_012109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1912#issuecomment-12109",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_012110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1912#issuecomment-12110",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_012112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1912#issuecomment-12112",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_012113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1912#issuecomment-12113",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_012114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1912#issuecomment-12114",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_012115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1912#issuecomment-12115",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_012116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1912#issuecomment-12116",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_012117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1912#issuecomment-12117",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_012118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1912#issuecomment-12118",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -310,7 +310,7 @@ archive/issue_comments_012119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1912#issuecomment-12119",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -328,7 +328,7 @@ archive/issue_comments_012120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1912#issuecomment-12120",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

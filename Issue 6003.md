@@ -3,7 +3,7 @@
 archive/issues_006003.json:
 ```json
 {
-    "body": "Assignee: rbeezer\n\nCC:  ncalexan\n\nThese are enhancements to #5554, which have been split off here.  Numbering is the same.  See #5554 for more details\n\n2.  Make a positive-definite check the default, with a keyword to turn it off.\n\n3.  Minor improvements to the docstrings.\n\n4.  Warnings about accuracy for generic algorithm.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6003\n\n",
+    "body": "Assignee: @rbeezer\n\nCC:  @ncalexan\n\nThese are enhancements to #5554, which have been split off here.  Numbering is the same.  See #5554 for more details\n\n2.  Make a positive-definite check the default, with a keyword to turn it off.\n\n3.  Minor improvements to the docstrings.\n\n4.  Warnings about accuracy for generic algorithm.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6003\n\n",
     "created_at": "2009-05-07T19:07:39Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_006003.json:
     "title": "Additions to Cholesky decomposition",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6003",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
-Assignee: rbeezer
+Assignee: @rbeezer
 
-CC:  ncalexan
+CC:  @ncalexan
 
 These are enhancements to #5554, which have been split off here.  Numbering is the same.  See #5554 for more details
 
@@ -63,7 +63,7 @@ archive/issue_comments_047759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6003",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6003#issuecomment-47759",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_047760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6003",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6003#issuecomment-47760",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_047761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6003",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6003#issuecomment-47761",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_047762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6003",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6003#issuecomment-47762",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_047763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6003",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6003#issuecomment-47763",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

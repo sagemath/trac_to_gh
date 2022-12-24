@@ -3,7 +3,7 @@
 archive/issues_009492.json:
 ```json
 {
-    "body": "Assignee: jason\n\nCC:  mstreng\n\nMagma has 'em, so we should to:\n\n   http://magma.maths.usyd.edu.au/magma/htmlhelp/text306.htm\n\nSympy has them:\n   \n\nThis page has a Mathematica notebook with a function that computes them:\n\n   http://mathworld.wolfram.com/Swinnerton-DyerPolynomial.html\n\nI tried it in Mathematica 7, and it is massively, dramatically *SLOW* compared to Magma.   For comparison, the 5th one takes 55 seconds in Mathematica, and in Magma it takes... 0.02 seconds.   \n\n\n```\n  n   time in seconds with Magma 2.15.11 on my macbook air\n----------------\n  5  | 0.02\n  6  | 0.18\n  7  | 6.68\n  8  | 99.99 \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9492\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @mstreng\n\nMagma has 'em, so we should to:\n\n   http://magma.maths.usyd.edu.au/magma/htmlhelp/text306.htm\n\nSympy has them:\n   \n\nThis page has a Mathematica notebook with a function that computes them:\n\n   http://mathworld.wolfram.com/Swinnerton-DyerPolynomial.html\n\nI tried it in Mathematica 7, and it is massively, dramatically *SLOW* compared to Magma.   For comparison, the 5th one takes 55 seconds in Mathematica, and in Magma it takes... 0.02 seconds.   \n\n\n```\n  n   time in seconds with Magma 2.15.11 on my macbook air\n----------------\n  5  | 0.02\n  6  | 0.18\n  7  | 6.68\n  8  | 99.99 \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9492\n\n",
     "created_at": "2010-07-13T22:40:49Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_009492.json:
     "title": "add computation of swinnerton-dyer polynomials to sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9492",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: jason
+Assignee: @jasongrout
 
-CC:  mstreng
+CC:  @mstreng
 
 Magma has 'em, so we should to:
 
@@ -61,7 +61,7 @@ archive/issue_comments_091117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9492#issuecomment-91117",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_091118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9492#issuecomment-91118",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -94,16 +94,16 @@ In the attached file sd.sage, I implemented a few functions, and also copied in 
 archive/issue_comments_091119.json:
 ```json
 {
-    "body": "Attachment [sd.sage](tarball://root/attachments/some-uuid/ticket9492/sd.sage) by was created at 2010-07-13 23:08:23",
+    "body": "Attachment [sd.sage](tarball://root/attachments/some-uuid/ticket9492/sd.sage) by @williamstein created at 2010-07-13 23:08:23",
     "created_at": "2010-07-13T23:08:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9492#issuecomment-91119",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sd.sage](tarball://root/attachments/some-uuid/ticket9492/sd.sage) by was created at 2010-07-13 23:08:23
+Attachment [sd.sage](tarball://root/attachments/some-uuid/ticket9492/sd.sage) by @williamstein created at 2010-07-13 23:08:23
 
 
 
@@ -117,7 +117,7 @@ archive/issue_comments_091120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9492#issuecomment-91120",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -140,16 +140,16 @@ Wall time: 17.50 s
 archive/issue_comments_091121.json:
 ```json
 {
-    "body": "Attachment [sd2.sage](tarball://root/attachments/some-uuid/ticket9492/sd2.sage) by mstreng created at 2010-07-14 11:04:19\n\nI just adapted sdpoly3 to use a binary tree. The result is called sdpoly5, see file sd2.sage. I found sdpoly5 to be slightly faster than sdpoly3 in the tests that I have run.\n\nWhen using naive polynomial multiplication, the algorithms sdpoly3 and sdpoly5 are asymptotically equivalent. As soon as FFT quasi-linear polynomial multiplication is implemented for interval arithmetic and examples become large, the algorithm sdpoly5 should be the faster one (quasi-linear).\n\n\n```\nsage: time sdpoly5(12)\nCPU times: user 845.82 s, sys: 0.10 s, total: 845.92 s\nWall time: 846.13 s\n\nsage: time sdpoly3(12)\nCPU times: user 861.84 s, sys: 0.01 s, total: 861.85 s\nWall time: 861.98 s\n```\n",
+    "body": "Attachment [sd2.sage](tarball://root/attachments/some-uuid/ticket9492/sd2.sage) by @mstreng created at 2010-07-14 11:04:19\n\nI just adapted sdpoly3 to use a binary tree. The result is called sdpoly5, see file sd2.sage. I found sdpoly5 to be slightly faster than sdpoly3 in the tests that I have run.\n\nWhen using naive polynomial multiplication, the algorithms sdpoly3 and sdpoly5 are asymptotically equivalent. As soon as FFT quasi-linear polynomial multiplication is implemented for interval arithmetic and examples become large, the algorithm sdpoly5 should be the faster one (quasi-linear).\n\n\n```\nsage: time sdpoly5(12)\nCPU times: user 845.82 s, sys: 0.10 s, total: 845.92 s\nWall time: 846.13 s\n\nsage: time sdpoly3(12)\nCPU times: user 861.84 s, sys: 0.01 s, total: 861.85 s\nWall time: 861.98 s\n```\n",
     "created_at": "2010-07-14T11:04:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9492#issuecomment-91121",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
-Attachment [sd2.sage](tarball://root/attachments/some-uuid/ticket9492/sd2.sage) by mstreng created at 2010-07-14 11:04:19
+Attachment [sd2.sage](tarball://root/attachments/some-uuid/ticket9492/sd2.sage) by @mstreng created at 2010-07-14 11:04:19
 
 I just adapted sdpoly3 to use a binary tree. The result is called sdpoly5, see file sd2.sage. I found sdpoly5 to be slightly faster than sdpoly3 in the tests that I have run.
 
@@ -179,7 +179,7 @@ archive/issue_comments_091122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9492#issuecomment-91122",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_091123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9492#issuecomment-91123",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_091124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9492#issuecomment-91124",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_091125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9492#issuecomment-91125",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

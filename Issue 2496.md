@@ -14,7 +14,7 @@ archive/issues_002496.json:
     "title": "bug in introspection (probably easy to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2496",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -101,7 +101,7 @@ archive/issue_comments_016923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2496#issuecomment-16923",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_016924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2496#issuecomment-16924",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

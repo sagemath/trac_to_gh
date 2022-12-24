@@ -3,7 +3,7 @@
 archive/issues_009796.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  chapoton\n\nSee \n\n   http://ask.sagemath.org/question/42/is-there-a-way-to-make-an-audible-noise-when-a-computation-is-complete\n\nIssue created by migration from https://trac.sagemath.org/ticket/9797\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @fchapoton\n\nSee \n\n   http://ask.sagemath.org/question/42/is-there-a-way-to-make-an-audible-noise-when-a-computation-is-complete\n\nIssue created by migration from https://trac.sagemath.org/ticket/9797\n\n",
     "created_at": "2010-08-24T21:07:14Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_009796.json:
     "title": "sagenb: Add a beep() command to the sage notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9796",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jason, was
 
-CC:  chapoton
+CC:  @fchapoton
 
 See 
 
@@ -41,7 +41,7 @@ archive/issue_comments_096176.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9796",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9796#issuecomment-96176",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_096177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9796",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9796#issuecomment-96177",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_096178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9796",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9796#issuecomment-96178",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

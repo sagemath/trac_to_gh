@@ -3,7 +3,7 @@
 archive/issues_007819.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\n\n```\nsage: RealInterval(+infinity,+infinity).is_int()\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/Users/rlmill/.sage/temp/rlm_book.local/9535/_Users_rlmill__sage_init_sage_0.py in <module>()\n\n/Users/rlmill/sage-4.3/local/lib/python2.6/site-packages/sage/rings/real_mpfi.so in sage.rings.real_mpfi.RealIntervalFieldElement.is_int (sage/rings/real_mpfi.c:16689)()\n\n/Users/rlmill/sage-4.3/local/lib/python2.6/site-packages/sage/rings/real_mpfr.so in sage.rings.real_mpfr.RealNumber.ceil (sage/rings/real_mpfr.c:14488)()\n\nValueError: Calling ceil() on infinity or NaN\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7819\n\n",
+    "body": "Assignee: @aghitza\n\n\n```\nsage: RealInterval(+infinity,+infinity).is_int()\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/Users/rlmill/.sage/temp/rlm_book.local/9535/_Users_rlmill__sage_init_sage_0.py in <module>()\n\n/Users/rlmill/sage-4.3/local/lib/python2.6/site-packages/sage/rings/real_mpfi.so in sage.rings.real_mpfi.RealIntervalFieldElement.is_int (sage/rings/real_mpfi.c:16689)()\n\n/Users/rlmill/sage-4.3/local/lib/python2.6/site-packages/sage/rings/real_mpfr.so in sage.rings.real_mpfr.RealNumber.ceil (sage/rings/real_mpfr.c:14488)()\n\nValueError: Calling ceil() on infinity or NaN\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7819\n\n",
     "created_at": "2010-01-02T15:02:56Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_007819.json:
     "title": "RealInterval(+infinity,+infinity).is_int() blows up",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7819",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 
 ```
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7819
 archive/issue_comments_067673.json:
 ```json
 {
-    "body": "Attachment [trac_7819.patch](tarball://root/attachments/some-uuid/ticket7819/trac_7819.patch) by rlm created at 2010-01-02 15:03:42",
+    "body": "Attachment [trac_7819.patch](tarball://root/attachments/some-uuid/ticket7819/trac_7819.patch) by @rlmill created at 2010-01-02 15:03:42",
     "created_at": "2010-01-02T15:03:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7819",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7819#issuecomment-67673",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_7819.patch](tarball://root/attachments/some-uuid/ticket7819/trac_7819.patch) by rlm created at 2010-01-02 15:03:42
+Attachment [trac_7819.patch](tarball://root/attachments/some-uuid/ticket7819/trac_7819.patch) by @rlmill created at 2010-01-02 15:03:42
 
 
 
@@ -69,7 +69,7 @@ archive/issue_comments_067674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7819",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7819#issuecomment-67674",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_067675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7819",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7819#issuecomment-67675",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_067676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7819",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7819#issuecomment-67676",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_067677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7819",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7819#issuecomment-67677",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

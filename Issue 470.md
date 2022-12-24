@@ -3,7 +3,7 @@
 archive/issues_000470.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: memory\n\nValgrinding Sage 2.8.2rc1 tells me:\n\n\n```\n==2609== 100,000,000 bytes in 1 blocks are still reachable in loss record 6,989 of 6,989\n==2609==    at 0x4A05809: malloc (vg_replace_malloc.c:149)\n==2609==    by 0xFEE00BA: __pyx_f_3gen_init_stack (gen.c:25497)\n==2609==    by 0xFF0744D: __pyx_f_3gen_12PariInstance___init__ (gen.c:21006)\n==2609==    by 0x459FB1: type_call (typeobject.c:436)\n==2609==    by 0x4156B2: PyObject_Call (abstract.c:1860)\n==2609==    by 0x47D801: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==2609==    by 0xFF096E8: initgen (gen.c:27669)\n==2609==    by 0x49F3F2: _PyImport_LoadDynamicModule (importdl.c:53)\n==2609==    by 0x49D2CE: import_submodule (import.c:2394)\n==2609==    by 0x49D7A1: load_next (import.c:2214)\n==2609==    by 0x49D9FE: import_module_level (import.c:2002)\n==2609==    by 0x49DE34: PyImport_ImportModuleLevel (import.c:2066)\n```\n\n\nAn empty start up & quit immediately Sage session under valgrind shows about 130 MB of memory still reachable at exit. The vast amount of that is the libpari stack.\n\nWilliam stated that this is non-trivial to fix and will probably require changes in libpari itself. \n\nI would like to state that any application that needs that much stack space should be considered \"broken by design\". \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/470\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: memory\n\nValgrinding Sage 2.8.2rc1 tells me:\n\n\n```\n==2609== 100,000,000 bytes in 1 blocks are still reachable in loss record 6,989 of 6,989\n==2609==    at 0x4A05809: malloc (vg_replace_malloc.c:149)\n==2609==    by 0xFEE00BA: __pyx_f_3gen_init_stack (gen.c:25497)\n==2609==    by 0xFF0744D: __pyx_f_3gen_12PariInstance___init__ (gen.c:21006)\n==2609==    by 0x459FB1: type_call (typeobject.c:436)\n==2609==    by 0x4156B2: PyObject_Call (abstract.c:1860)\n==2609==    by 0x47D801: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==2609==    by 0xFF096E8: initgen (gen.c:27669)\n==2609==    by 0x49F3F2: _PyImport_LoadDynamicModule (importdl.c:53)\n==2609==    by 0x49D2CE: import_submodule (import.c:2394)\n==2609==    by 0x49D7A1: load_next (import.c:2214)\n==2609==    by 0x49D9FE: import_module_level (import.c:2002)\n==2609==    by 0x49DE34: PyImport_ImportModuleLevel (import.c:2066)\n```\n\n\nAn empty start up & quit immediately Sage session under valgrind shows about 130 MB of memory still reachable at exit. The vast amount of that is the libpari stack.\n\nWilliam stated that this is non-trivial to fix and will probably require changes in libpari itself. \n\nI would like to state that any application that needs that much stack space should be considered \"broken by design\". \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/470\n\n",
     "created_at": "2007-08-20T22:40:29Z",
     "labels": [
         "packages: standard",
@@ -17,7 +17,7 @@ archive/issues_000470.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: memory
 
@@ -95,7 +95,7 @@ archive/issue_comments_002344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/470#issuecomment-2344",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 

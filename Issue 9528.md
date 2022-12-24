@@ -14,7 +14,7 @@ archive/issues_009528.json:
     "title": "#8306 completely breaks \"sage -upgrade\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9528",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: GeorgSWeber
@@ -37,7 +37,7 @@ archive/issue_comments_091655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9528#issuecomment-91655",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_091656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9528#issuecomment-91656",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_091657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9528#issuecomment-91657",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_091658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9528#issuecomment-91658",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -115,16 +115,16 @@ I disagree -- It's 33 lines long, and  I read it for 2 minutes and didn't fully 
 archive/issue_comments_091659.json:
 ```json
 {
-    "body": "Attachment [create-pipestatus.sh](tarball://root/attachments/some-uuid/ticket9528/create-pipestatus.sh) by leif created at 2010-07-17 13:56:28\n\nBash script to create specific version of \"pipestatus\" in $SAGE_ROOT/spkg",
+    "body": "Attachment [create-pipestatus.sh](tarball://root/attachments/some-uuid/ticket9528/create-pipestatus.sh) by @nexttime created at 2010-07-17 13:56:28\n\nBash script to create specific version of \"pipestatus\" in $SAGE_ROOT/spkg",
     "created_at": "2010-07-17T13:56:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9528#issuecomment-91659",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [create-pipestatus.sh](tarball://root/attachments/some-uuid/ticket9528/create-pipestatus.sh) by leif created at 2010-07-17 13:56:28
+Attachment [create-pipestatus.sh](tarball://root/attachments/some-uuid/ticket9528/create-pipestatus.sh) by @nexttime created at 2010-07-17 13:56:28
 
 Bash script to create specific version of "pipestatus" in $SAGE_ROOT/spkg
 
@@ -140,7 +140,7 @@ archive/issue_comments_091660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9528#issuecomment-91660",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_091661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9528#issuecomment-91661",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_091662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9528#issuecomment-91662",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_091663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9528#issuecomment-91663",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -222,16 +222,16 @@ if [ $# -ne 2 ]; then
 archive/issue_comments_091664.json:
 ```json
 {
-    "body": "Attachment [install](tarball://root/attachments/some-uuid/ticket9528/install) by was created at 2010-07-17 14:59:10\n\nthis should be put as SAGE_ROOT/spkg/install",
+    "body": "Attachment [install](tarball://root/attachments/some-uuid/ticket9528/install) by @williamstein created at 2010-07-17 14:59:10\n\nthis should be put as SAGE_ROOT/spkg/install",
     "created_at": "2010-07-17T14:59:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9528#issuecomment-91664",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [install](tarball://root/attachments/some-uuid/ticket9528/install) by was created at 2010-07-17 14:59:10
+Attachment [install](tarball://root/attachments/some-uuid/ticket9528/install) by @williamstein created at 2010-07-17 14:59:10
 
 this should be put as SAGE_ROOT/spkg/install
 
@@ -242,16 +242,16 @@ this should be put as SAGE_ROOT/spkg/install
 archive/issue_comments_091665.json:
 ```json
 {
-    "body": "Attachment [create-pipestatus-v2.sh](tarball://root/attachments/some-uuid/ticket9528/create-pipestatus-v2.sh) by leif created at 2010-07-17 15:00:40\n\nCreates a slightly improved version of pipestatus, no changes to the script code itself",
+    "body": "Attachment [create-pipestatus-v2.sh](tarball://root/attachments/some-uuid/ticket9528/create-pipestatus-v2.sh) by @nexttime created at 2010-07-17 15:00:40\n\nCreates a slightly improved version of pipestatus, no changes to the script code itself",
     "created_at": "2010-07-17T15:00:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9528#issuecomment-91665",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [create-pipestatus-v2.sh](tarball://root/attachments/some-uuid/ticket9528/create-pipestatus-v2.sh) by leif created at 2010-07-17 15:00:40
+Attachment [create-pipestatus-v2.sh](tarball://root/attachments/some-uuid/ticket9528/create-pipestatus-v2.sh) by @nexttime created at 2010-07-17 15:00:40
 
 Creates a slightly improved version of pipestatus, no changes to the script code itself
 
@@ -267,7 +267,7 @@ archive/issue_comments_091666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9528#issuecomment-91666",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_091667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9528#issuecomment-91667",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_091668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9528#issuecomment-91668",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -365,7 +365,7 @@ archive/issue_comments_091669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9528#issuecomment-91669",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -386,7 +386,7 @@ archive/issue_comments_091670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9528#issuecomment-91670",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -399,16 +399,16 @@ Remove blank line, add chmod.  Updated `spkg/install` based on "4.5"
 archive/issue_comments_091671.json:
 ```json
 {
-    "body": "Attachment [install.diff](tarball://root/attachments/some-uuid/ticket9528/install.diff) by mpatel created at 2010-07-17 21:17:56\n\nDiff of `spkg/install` vs \"4.5\".",
+    "body": "Attachment [install.diff](tarball://root/attachments/some-uuid/ticket9528/install.diff) by @qed777 created at 2010-07-17 21:17:56\n\nDiff of `spkg/install` vs \"4.5\".",
     "created_at": "2010-07-17T21:17:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9528#issuecomment-91671",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [install.diff](tarball://root/attachments/some-uuid/ticket9528/install.diff) by mpatel created at 2010-07-17 21:17:56
+Attachment [install.diff](tarball://root/attachments/some-uuid/ticket9528/install.diff) by @qed777 created at 2010-07-17 21:17:56
 
 Diff of `spkg/install` vs "4.5".
 
@@ -424,7 +424,7 @@ archive/issue_comments_091672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9528#issuecomment-91672",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -444,7 +444,7 @@ archive/issue_comments_091673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9528#issuecomment-91673",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -466,7 +466,7 @@ archive/issue_comments_091674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9528#issuecomment-91674",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -493,7 +493,7 @@ archive/issue_comments_091675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9528#issuecomment-91675",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -517,7 +517,7 @@ archive/issue_comments_091676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9528#issuecomment-91676",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -540,7 +540,7 @@ archive/issue_comments_091677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9528#issuecomment-91677",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -558,7 +558,7 @@ archive/issue_comments_091678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9528#issuecomment-91678",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -576,7 +576,7 @@ archive/issue_comments_091679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9528#issuecomment-91679",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -597,7 +597,7 @@ archive/issue_comments_091680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9528#issuecomment-91680",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -615,7 +615,7 @@ archive/issue_comments_091681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9528#issuecomment-91681",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -636,7 +636,7 @@ archive/issue_comments_091682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9528#issuecomment-91682",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

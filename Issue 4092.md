@@ -3,7 +3,7 @@
 archive/issues_004092.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  anakha\n\nI thought we fixed that:\n\n```\nchecking for a BSD-compatible install... /usr/bin/install -c \nchecking mm_malloc.h usability... no \nchecking mm_malloc.h presence... no \nchecking for mm_malloc.h... no \nchecking for a sed that does not truncate output... /usr/bin/sed \nchecking the number of available CPUs... 1 \nchecking the number of available CPUs... 1 \nchecking for x86 cpuid 0x0 output... unknown \nchecking for the processor vendor... Unknown \n262144 \n32768 \nsecond level name l1cachesize in hw.l1cachesize is invalid \nsecond level name l1cachesize in hw.l1cachesize is invalid \n./configure: line 21633: / 1024: syntax error: operand expected (error \ntoken is \"/ 1024\") \nError configuring libm4ri \n```\n\n\nMalb: any chance we missed a patch that did not make it in?\n\nIssue created by migration from https://trac.sagemath.org/ticket/4092\n\n",
+    "body": "Assignee: @malb\n\nCC:  anakha\n\nI thought we fixed that:\n\n```\nchecking for a BSD-compatible install... /usr/bin/install -c \nchecking mm_malloc.h usability... no \nchecking mm_malloc.h presence... no \nchecking for mm_malloc.h... no \nchecking for a sed that does not truncate output... /usr/bin/sed \nchecking the number of available CPUs... 1 \nchecking the number of available CPUs... 1 \nchecking for x86 cpuid 0x0 output... unknown \nchecking for the processor vendor... Unknown \n262144 \n32768 \nsecond level name l1cachesize in hw.l1cachesize is invalid \nsecond level name l1cachesize in hw.l1cachesize is invalid \n./configure: line 21633: / 1024: syntax error: operand expected (error \ntoken is \"/ 1024\") \nError configuring libm4ri \n```\n\n\nMalb: any chance we missed a patch that did not make it in?\n\nIssue created by migration from https://trac.sagemath.org/ticket/4092\n\n",
     "created_at": "2008-09-09T18:52:10Z",
     "labels": [
         "packages: standard",
@@ -17,7 +17,7 @@ archive/issues_004092.json:
     "user": "mabshoff"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 CC:  anakha
 
@@ -61,7 +61,7 @@ archive/issue_comments_029521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4092#issuecomment-29521",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_029522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4092#issuecomment-29522",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_029523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4092#issuecomment-29523",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

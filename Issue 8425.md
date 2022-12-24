@@ -3,7 +3,7 @@
 archive/issues_008425.json:
 ```json
 {
-    "body": "Assignee: rhinton\n\nCC:  rlm jason ncohen\n\nKeywords: BipartiteGraph, add_edge\n\nadd_edge() needs to be overridden in BipartiteGraph in order to preserve the bipartite property of the graph.\n\n```\nsage: # non-bipartite graphs are rejected by the constructor\nsage: BipartiteGraph(Graph({0:[1,2], 1:[2]}))\nTraceback (most recent call last)\n...\nTypeError: Input graph is not bipartite!\n\nsage: # but the same graph can be constructed edge-by-edge without raising an error\nsage: bg = BipartiteGraph()\nsage: bg.add_vertices([0,1,2], left=[True,False,True])\nsage: bg.add_edges([(0,1), (1,2)])  # good so far\nsage: bg.add_edge(2,0)  # should raise exception!\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8425\n\n",
+    "body": "Assignee: @rhinton\n\nCC:  @rlmill @jasongrout @nathanncohen\n\nKeywords: BipartiteGraph, add_edge\n\nadd_edge() needs to be overridden in BipartiteGraph in order to preserve the bipartite property of the graph.\n\n```\nsage: # non-bipartite graphs are rejected by the constructor\nsage: BipartiteGraph(Graph({0:[1,2], 1:[2]}))\nTraceback (most recent call last)\n...\nTypeError: Input graph is not bipartite!\n\nsage: # but the same graph can be constructed edge-by-edge without raising an error\nsage: bg = BipartiteGraph()\nsage: bg.add_vertices([0,1,2], left=[True,False,True])\nsage: bg.add_edges([(0,1), (1,2)])  # good so far\nsage: bg.add_edge(2,0)  # should raise exception!\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8425\n\n",
     "created_at": "2010-03-03T01:35:07Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_008425.json:
     "title": "BipartiteGraph add_edge allows bipartite property to be violated.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8425",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
-Assignee: rhinton
+Assignee: @rhinton
 
-CC:  rlm jason ncohen
+CC:  @rlmill @jasongrout @nathanncohen
 
 Keywords: BipartiteGraph, add_edge
 
@@ -56,7 +56,7 @@ archive/issue_comments_075527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8425#issuecomment-75527",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_075528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8425#issuecomment-75528",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -95,16 +95,16 @@ Their functionality is more-or-less mutually exclusive, but they all add functio
 archive/issue_comments_075529.json:
 ```json
 {
-    "body": "Attachment [trac_8425-bipartite-add-edge.patch](tarball://root/attachments/some-uuid/ticket8425/trac_8425-bipartite-add-edge.patch) by rhinton created at 2010-03-05 02:04:36\n\napply after #8331, #8329, and #8421",
+    "body": "Attachment [trac_8425-bipartite-add-edge.patch](tarball://root/attachments/some-uuid/ticket8425/trac_8425-bipartite-add-edge.patch) by @rhinton created at 2010-03-05 02:04:36\n\napply after #8331, #8329, and #8421",
     "created_at": "2010-03-05T02:04:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8425#issuecomment-75529",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
-Attachment [trac_8425-bipartite-add-edge.patch](tarball://root/attachments/some-uuid/ticket8425/trac_8425-bipartite-add-edge.patch) by rhinton created at 2010-03-05 02:04:36
+Attachment [trac_8425-bipartite-add-edge.patch](tarball://root/attachments/some-uuid/ticket8425/trac_8425-bipartite-add-edge.patch) by @rhinton created at 2010-03-05 02:04:36
 
 apply after #8331, #8329, and #8421
 
@@ -120,7 +120,7 @@ archive/issue_comments_075530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8425#issuecomment-75530",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_075531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8425#issuecomment-75531",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_075532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8425#issuecomment-75532",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_075533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8425#issuecomment-75533",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_075534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8425#issuecomment-75534",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_075535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8425#issuecomment-75535",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_075536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8425#issuecomment-75536",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_075537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8425#issuecomment-75537",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_075538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8425#issuecomment-75538",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -335,7 +335,7 @@ archive/issue_comments_075539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8425#issuecomment-75539",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -359,7 +359,7 @@ archive/issue_comments_075540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8425#issuecomment-75540",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -377,7 +377,7 @@ archive/issue_comments_075541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8425#issuecomment-75541",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -397,7 +397,7 @@ archive/issue_comments_075542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8425#issuecomment-75542",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

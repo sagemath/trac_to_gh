@@ -3,7 +3,7 @@
 archive/issues_006076.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  was mhansen\n\nThe problem is that Sage notebook doesn't allow the user to redefine the \"python\" symbol. \n\nAs a consequence,\n\n\n```\nfrom sympy import *\n```\n\n\nfails. We can of course fix this particular problem in sympy, but I think this is a bug that should be fixed in the notebook. See this thread for more info:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/ed5db1f344ed6371/\n\nIssue created by migration from https://trac.sagemath.org/ticket/6076\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein @mwhansen\n\nThe problem is that Sage notebook doesn't allow the user to redefine the \"python\" symbol. \n\nAs a consequence,\n\n\n```\nfrom sympy import *\n```\n\n\nfails. We can of course fix this particular problem in sympy, but I think this is a bug that should be fixed in the notebook. See this thread for more info:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/ed5db1f344ed6371/\n\nIssue created by migration from https://trac.sagemath.org/ticket/6076\n\n",
     "created_at": "2009-05-18T21:20:07Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_006076.json:
     "title": "Allow to redefine the python symbol in the Notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6076",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 Assignee: boothby
 
-CC:  was mhansen
+CC:  @williamstein @mwhansen
 
 The problem is that Sage notebook doesn't allow the user to redefine the "python" symbol. 
 
@@ -51,7 +51,7 @@ archive/issue_comments_048364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6076#issuecomment-48364",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_048365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6076#issuecomment-48365",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_048366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6076#issuecomment-48366",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 

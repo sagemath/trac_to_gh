@@ -14,7 +14,7 @@ archive/issues_002112.json:
     "title": "__contains__ sometimes fails with SR elements due to == returning an equation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2112",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: somebody
@@ -39,16 +39,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2112
 archive/issue_comments_013768.json:
 ```json
 {
-    "body": "Changing assignee from somebody to mhansen.",
+    "body": "Changing assignee from somebody to @mwhansen.",
     "created_at": "2008-02-08T13:03:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2112#issuecomment-13768",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from somebody to mhansen.
+Changing assignee from somebody to @mwhansen.
 
 
 
@@ -62,7 +62,7 @@ archive/issue_comments_013769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2112#issuecomment-13769",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -75,16 +75,16 @@ Changing status from new to assigned.
 archive/issue_comments_013770.json:
 ```json
 {
-    "body": "Attachment [2112.patch](tarball://root/attachments/some-uuid/ticket2112/2112.patch) by mhansen created at 2008-02-08 14:21:50\n\nCause no problems with -testall on my machine.",
+    "body": "Attachment [2112.patch](tarball://root/attachments/some-uuid/ticket2112/2112.patch) by @mwhansen created at 2008-02-08 14:21:50\n\nCause no problems with -testall on my machine.",
     "created_at": "2008-02-08T14:21:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2112#issuecomment-13770",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2112.patch](tarball://root/attachments/some-uuid/ticket2112/2112.patch) by mhansen created at 2008-02-08 14:21:50
+Attachment [2112.patch](tarball://root/attachments/some-uuid/ticket2112/2112.patch) by @mwhansen created at 2008-02-08 14:21:50
 
 Cause no problems with -testall on my machine.
 
@@ -100,7 +100,7 @@ archive/issue_comments_013771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2112#issuecomment-13771",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

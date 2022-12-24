@@ -3,7 +3,7 @@
 archive/issues_007506.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  jhpalmieri\n\nKeywords: notebook, documentation, server\n\nFrom Chris Wuthrich on sage-edu:\n\"From my perspective the biggest problem was that I did not allocate\nenough resources to the virtual server the notebook was running on.\nI was a bit disappointed with the documentation for setting up a\nserver etc. For instance the docstring of the notebook still contains\nlines like\n  nb = load('./sage/sage_notebook/nb.sobj')\nwhich do not seem to apply any longer. \"\n\nSo at least that needs to be cleaned up in notebook_object.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7506\n\n",
+    "body": "Assignee: boothby\n\nCC:  @jhpalmieri\n\nKeywords: notebook, documentation, server\n\nFrom Chris Wuthrich on sage-edu:\n\"From my perspective the biggest problem was that I did not allocate\nenough resources to the virtual server the notebook was running on.\nI was a bit disappointed with the documentation for setting up a\nserver etc. For instance the docstring of the notebook still contains\nlines like\n  nb = load('./sage/sage_notebook/nb.sobj')\nwhich do not seem to apply any longer. \"\n\nSo at least that needs to be cleaned up in notebook_object.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7506\n\n",
     "created_at": "2009-11-21T02:46:12Z",
     "labels": [
         "notebook",
@@ -19,7 +19,7 @@ archive/issues_007506.json:
 ```
 Assignee: boothby
 
-CC:  jhpalmieri
+CC:  @jhpalmieri
 
 Keywords: notebook, documentation, server
 
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7506
 archive/issue_comments_063496.json:
 ```json
 {
-    "body": "Attachment [trac_7506-notebook_object-documentation.patch](tarball://root/attachments/some-uuid/ticket7506/trac_7506-notebook_object-documentation.patch) by timdumol created at 2010-01-19 21:58:04\n\nThis updates the notebook_object.py documentation and removes the warnings on build.",
+    "body": "Attachment [trac_7506-notebook_object-documentation.patch](tarball://root/attachments/some-uuid/ticket7506/trac_7506-notebook_object-documentation.patch) by @TimDumol created at 2010-01-19 21:58:04\n\nThis updates the notebook_object.py documentation and removes the warnings on build.",
     "created_at": "2010-01-19T21:58:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7506#issuecomment-63496",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7506-notebook_object-documentation.patch](tarball://root/attachments/some-uuid/ticket7506/trac_7506-notebook_object-documentation.patch) by timdumol created at 2010-01-19 21:58:04
+Attachment [trac_7506-notebook_object-documentation.patch](tarball://root/attachments/some-uuid/ticket7506/trac_7506-notebook_object-documentation.patch) by @TimDumol created at 2010-01-19 21:58:04
 
 This updates the notebook_object.py documentation and removes the warnings on build.
 
@@ -70,7 +70,7 @@ archive/issue_comments_063497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7506#issuecomment-63497",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -83,16 +83,16 @@ Adds `notebook_object` to the reference manual
 archive/issue_comments_063498.json:
 ```json
 {
-    "body": "Attachment [trac_7506-sage_core_lib-notebook-obj-ref.patch](tarball://root/attachments/some-uuid/ticket7506/trac_7506-sage_core_lib-notebook-obj-ref.patch) by mpatel created at 2010-01-20 11:36:54\n\nRelated: #4574.",
+    "body": "Attachment [trac_7506-sage_core_lib-notebook-obj-ref.patch](tarball://root/attachments/some-uuid/ticket7506/trac_7506-sage_core_lib-notebook-obj-ref.patch) by @qed777 created at 2010-01-20 11:36:54\n\nRelated: #4574.",
     "created_at": "2010-01-20T11:36:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7506#issuecomment-63498",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7506-sage_core_lib-notebook-obj-ref.patch](tarball://root/attachments/some-uuid/ticket7506/trac_7506-sage_core_lib-notebook-obj-ref.patch) by mpatel created at 2010-01-20 11:36:54
+Attachment [trac_7506-sage_core_lib-notebook-obj-ref.patch](tarball://root/attachments/some-uuid/ticket7506/trac_7506-sage_core_lib-notebook-obj-ref.patch) by @qed777 created at 2010-01-20 11:36:54
 
 Related: #4574.
 
@@ -108,7 +108,7 @@ archive/issue_comments_063499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7506#issuecomment-63499",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_063500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7506#issuecomment-63500",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -139,16 +139,16 @@ Changing status from new to needs_review.
 archive/issue_comments_063501.json:
 ```json
 {
-    "body": "Attachment [trac_7506-notebook_object-documentation.2.patch](tarball://root/attachments/some-uuid/ticket7506/trac_7506-notebook_object-documentation.2.patch) by mpatel created at 2010-01-24 20:20:21\n\nHi Dan, Jason, and Karl-Dieter -- Could you look at the patch and make/recommend improvements here or at [StartingTheNotebook](http://wiki.sagemath.org/StartingTheNotebook)?\n\nAlso, should the latter have a link to [JustEnoughSageServer](http://wiki.sagemath.org/DanDrake/JustEnoughSageServer)?",
+    "body": "Attachment [trac_7506-notebook_object-documentation.2.patch](tarball://root/attachments/some-uuid/ticket7506/trac_7506-notebook_object-documentation.2.patch) by @qed777 created at 2010-01-24 20:20:21\n\nHi Dan, Jason, and Karl-Dieter -- Could you look at the patch and make/recommend improvements here or at [StartingTheNotebook](http://wiki.sagemath.org/StartingTheNotebook)?\n\nAlso, should the latter have a link to [JustEnoughSageServer](http://wiki.sagemath.org/DanDrake/JustEnoughSageServer)?",
     "created_at": "2010-01-24T20:20:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7506#issuecomment-63501",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7506-notebook_object-documentation.2.patch](tarball://root/attachments/some-uuid/ticket7506/trac_7506-notebook_object-documentation.2.patch) by mpatel created at 2010-01-24 20:20:21
+Attachment [trac_7506-notebook_object-documentation.2.patch](tarball://root/attachments/some-uuid/ticket7506/trac_7506-notebook_object-documentation.2.patch) by @qed777 created at 2010-01-24 20:20:21
 
 Hi Dan, Jason, and Karl-Dieter -- Could you look at the patch and make/recommend improvements here or at [StartingTheNotebook](http://wiki.sagemath.org/StartingTheNotebook)?
 
@@ -166,7 +166,7 @@ archive/issue_comments_063502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7506#issuecomment-63502",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_063503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7506#issuecomment-63503",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_063504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7506#issuecomment-63504",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_063505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7506#issuecomment-63505",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_063506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7506#issuecomment-63506",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_063507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7506#issuecomment-63507",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_063508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7506#issuecomment-63508",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -296,16 +296,16 @@ The patch looks good.  Here's an accompanying patch for the Sage library: for th
 archive/issue_comments_063509.json:
 ```json
 {
-    "body": "Attachment [trac_7506-ref-manual.patch](tarball://root/attachments/some-uuid/ticket7506/trac_7506-ref-manual.patch) by jhpalmieri created at 2010-02-07 21:52:22\n\npatch for the sage repo",
+    "body": "Attachment [trac_7506-ref-manual.patch](tarball://root/attachments/some-uuid/ticket7506/trac_7506-ref-manual.patch) by @jhpalmieri created at 2010-02-07 21:52:22\n\npatch for the sage repo",
     "created_at": "2010-02-07T21:52:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7506#issuecomment-63509",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_7506-ref-manual.patch](tarball://root/attachments/some-uuid/ticket7506/trac_7506-ref-manual.patch) by jhpalmieri created at 2010-02-07 21:52:22
+Attachment [trac_7506-ref-manual.patch](tarball://root/attachments/some-uuid/ticket7506/trac_7506-ref-manual.patch) by @jhpalmieri created at 2010-02-07 21:52:22
 
 patch for the sage repo
 
@@ -321,7 +321,7 @@ archive/issue_comments_063510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7506#issuecomment-63510",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_063511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7506#issuecomment-63511",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_063512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7506#issuecomment-63512",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -380,7 +380,7 @@ archive/issue_comments_063513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7506#issuecomment-63513",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -398,7 +398,7 @@ archive/issue_comments_063514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7506#issuecomment-63514",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

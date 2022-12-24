@@ -78,7 +78,7 @@ archive/issue_comments_034821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4632",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4632#issuecomment-34821",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_034822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4632",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4632#issuecomment-34822",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -240,16 +240,16 @@ sage: f = QQ['x']([6414289575168497252386120928524328241770707532958367491611705
 archive/issue_comments_034823.json:
 ```json
 {
-    "body": "Attachment [trac4632-enormous-coeffs-roots-v2.patch](tarball://root/attachments/some-uuid/ticket4632/trac4632-enormous-coeffs-roots-v2.patch) by ncalexan created at 2008-11-28 19:42:56\n\nAfter some troubleshooting, this works on my machine for very large examples.",
+    "body": "Attachment [trac4632-enormous-coeffs-roots-v2.patch](tarball://root/attachments/some-uuid/ticket4632/trac4632-enormous-coeffs-roots-v2.patch) by @ncalexan created at 2008-11-28 19:42:56\n\nAfter some troubleshooting, this works on my machine for very large examples.",
     "created_at": "2008-11-28T19:42:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4632",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4632#issuecomment-34823",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [trac4632-enormous-coeffs-roots-v2.patch](tarball://root/attachments/some-uuid/ticket4632/trac4632-enormous-coeffs-roots-v2.patch) by ncalexan created at 2008-11-28 19:42:56
+Attachment [trac4632-enormous-coeffs-roots-v2.patch](tarball://root/attachments/some-uuid/ticket4632/trac4632-enormous-coeffs-roots-v2.patch) by @ncalexan created at 2008-11-28 19:42:56
 
 After some troubleshooting, this works on my machine for very large examples.
 

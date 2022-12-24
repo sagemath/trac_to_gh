@@ -3,7 +3,7 @@
 archive/issues_009561.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  kcrisman mvngu\n\nThe forthcoming 4.5.2.alpha0 includes #9219, which appears to cause the following docbuild warnings:\n\n```\ndocstring of sage.stats.hmm.chmm.GaussianHiddenMarkovModel:14: (WARNING/2) Literal block expected; none found.\ndocstring of sage.stats.hmm.chmm.GaussianHiddenMarkovModel.viterbi:20: (WARNING/2) Literal block expected; none found.\ndocstring of sage.stats.hmm.distributions.Distribution.prob:13: (WARNING/2) Literal block expected; none found.\ndocstring of sage.stats.hmm.distributions.Distribution.sample:14: (WARNING/2) Literal block expected; none found.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9561\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @kcrisman mvngu\n\nThe forthcoming 4.5.2.alpha0 includes #9219, which appears to cause the following docbuild warnings:\n\n```\ndocstring of sage.stats.hmm.chmm.GaussianHiddenMarkovModel:14: (WARNING/2) Literal block expected; none found.\ndocstring of sage.stats.hmm.chmm.GaussianHiddenMarkovModel.viterbi:20: (WARNING/2) Literal block expected; none found.\ndocstring of sage.stats.hmm.distributions.Distribution.prob:13: (WARNING/2) Literal block expected; none found.\ndocstring of sage.stats.hmm.distributions.Distribution.sample:14: (WARNING/2) Literal block expected; none found.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9561\n\n",
     "created_at": "2010-07-21T10:01:54Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_009561.json:
     "title": "Docbuild warnings caused by #9219",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9561",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: mvngu
 
-CC:  kcrisman mvngu
+CC:  @kcrisman mvngu
 
 The forthcoming 4.5.2.alpha0 includes #9219, which appears to cause the following docbuild warnings:
 
@@ -47,7 +47,7 @@ archive/issue_comments_092166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9561",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9561#issuecomment-92166",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -66,16 +66,16 @@ which does indeed often introduce actual examples, but now is more likely to hav
 archive/issue_comments_092167.json:
 ```json
 {
-    "body": "Attachment [trac_9561-stats-rst-warnings.patch](tarball://root/attachments/some-uuid/ticket9561/trac_9561-stats-rst-warnings.patch) by kcrisman created at 2010-07-22 14:17:01\n\nBased on 4.5.1 plus relevant patches",
+    "body": "Attachment [trac_9561-stats-rst-warnings.patch](tarball://root/attachments/some-uuid/ticket9561/trac_9561-stats-rst-warnings.patch) by @kcrisman created at 2010-07-22 14:17:01\n\nBased on 4.5.1 plus relevant patches",
     "created_at": "2010-07-22T14:17:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9561",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9561#issuecomment-92167",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_9561-stats-rst-warnings.patch](tarball://root/attachments/some-uuid/ticket9561/trac_9561-stats-rst-warnings.patch) by kcrisman created at 2010-07-22 14:17:01
+Attachment [trac_9561-stats-rst-warnings.patch](tarball://root/attachments/some-uuid/ticket9561/trac_9561-stats-rst-warnings.patch) by @kcrisman created at 2010-07-22 14:17:01
 
 Based on 4.5.1 plus relevant patches
 
@@ -91,7 +91,7 @@ archive/issue_comments_092168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9561",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9561#issuecomment-92168",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_092169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9561",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9561#issuecomment-92169",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_092170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9561",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9561#issuecomment-92170",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_092171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9561",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9561#issuecomment-92171",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

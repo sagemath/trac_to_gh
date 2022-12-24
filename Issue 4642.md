@@ -59,7 +59,7 @@ archive/issue_comments_034941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4642#issuecomment-34941",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_034942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4642#issuecomment-34942",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -115,16 +115,16 @@ Michael
 archive/issue_comments_034944.json:
 ```json
 {
-    "body": "Attachment [trac_4642_sage.patch](tarball://root/attachments/some-uuid/ticket4642/trac_4642_sage.patch) by was created at 2008-11-28 21:08:34\n\nI named the patch trac_4642_sage.patch but it should be trac_4642_scripts.patch",
+    "body": "Attachment [trac_4642_sage.patch](tarball://root/attachments/some-uuid/ticket4642/trac_4642_sage.patch) by @williamstein created at 2008-11-28 21:08:34\n\nI named the patch trac_4642_sage.patch but it should be trac_4642_scripts.patch",
     "created_at": "2008-11-28T21:08:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4642#issuecomment-34944",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4642_sage.patch](tarball://root/attachments/some-uuid/ticket4642/trac_4642_sage.patch) by was created at 2008-11-28 21:08:34
+Attachment [trac_4642_sage.patch](tarball://root/attachments/some-uuid/ticket4642/trac_4642_sage.patch) by @williamstein created at 2008-11-28 21:08:34
 
 I named the patch trac_4642_sage.patch but it should be trac_4642_scripts.patch
 

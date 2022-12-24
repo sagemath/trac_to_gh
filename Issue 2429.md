@@ -3,7 +3,7 @@
 archive/issues_002429.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jdemeyer\n\nThe block matrix command uses a slightly different syntax than the matrix command, leading to confusion.  It would be great to fix it so that the following examples would work.  Assume that the xi variables below are matrices\n\n\n```\nsage: # Throw an error if the dimensions of the blocks don't match up correctly.\nsage: # explicitly specify the positions of the blocks\nsage: block_matrix([[x1,x2],[x3,x4]])\nsage: block_matrix([[x1,x2,x3],[x4,x5,x6]])\nsage: # dimensions are the numbers of block rows and columns\nsage: block_matrix(2,3, [x1,x2,x3,x4,x5,x6])\nsage: # coerce the matrix to a specific ring\nsage: block_matrix(QQ,2,3,[x1,x2,x3,x4,x5,x6])\nsage: # 1 and 0 should still be interpreted as the identity and zero matrices\nsage: block_matrix([[x1,1],[1,x2]])\nsage: # if only one dimension is given, assume the matrix is square\nsage: block_matrix(QQ,2,[x1,x2,x3,x4])\nsage: block_matrix(2,[x1,x2,x3,x4])\nsage: # the following works now\nsage: block_matrix([x1,x2,x3,x4])\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2429\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jdemeyer\n\nThe block matrix command uses a slightly different syntax than the matrix command, leading to confusion.  It would be great to fix it so that the following examples would work.  Assume that the xi variables below are matrices\n\n\n```\nsage: # Throw an error if the dimensions of the blocks don't match up correctly.\nsage: # explicitly specify the positions of the blocks\nsage: block_matrix([[x1,x2],[x3,x4]])\nsage: block_matrix([[x1,x2,x3],[x4,x5,x6]])\nsage: # dimensions are the numbers of block rows and columns\nsage: block_matrix(2,3, [x1,x2,x3,x4,x5,x6])\nsage: # coerce the matrix to a specific ring\nsage: block_matrix(QQ,2,3,[x1,x2,x3,x4,x5,x6])\nsage: # 1 and 0 should still be interpreted as the identity and zero matrices\nsage: block_matrix([[x1,1],[1,x2]])\nsage: # if only one dimension is given, assume the matrix is square\nsage: block_matrix(QQ,2,[x1,x2,x3,x4])\nsage: block_matrix(2,[x1,x2,x3,x4])\nsage: # the following works now\nsage: block_matrix([x1,x2,x3,x4])\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2429\n\n",
     "created_at": "2008-03-08T20:23:19Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_002429.json:
     "title": "block_matrix command should be consistent with the syntax of the matrix command",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2429",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jdemeyer
+CC:  @jdemeyer
 
 The block matrix command uses a slightly different syntax than the matrix command, leading to confusion.  It would be great to fix it so that the following examples would work.  Assume that the xi variables below are matrices
 
@@ -95,7 +95,7 @@ archive/issue_comments_016437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2429#issuecomment-16437",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_016438.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2429#issuecomment-16438",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_016439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2429#issuecomment-16439",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

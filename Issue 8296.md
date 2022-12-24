@@ -3,7 +3,7 @@
 archive/issues_008296.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat\n\nKeywords: tab completion, dir, getattr\n\nThis is caused by #7981.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8296\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: tab completion, dir, getattr\n\nThis is caused by #7981.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8296\n\n",
     "created_at": "2010-02-17T21:12:53Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_008296.json:
     "title": "tab completion broken in emacs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8296",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
 CC:  sage-combinat
 
@@ -41,7 +41,7 @@ archive/issue_comments_073494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8296#issuecomment-73494",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -54,16 +54,16 @@ Changing status from new to needs_review.
 archive/issue_comments_073495.json:
 ```json
 {
-    "body": "Attachment [trac_8296-fix-tab-completion-emacs-nt.patch](tarball://root/attachments/some-uuid/ticket8296/trac_8296-fix-tab-completion-emacs-nt.patch) by nthiery created at 2010-02-17 21:50:50",
+    "body": "Attachment [trac_8296-fix-tab-completion-emacs-nt.patch](tarball://root/attachments/some-uuid/ticket8296/trac_8296-fix-tab-completion-emacs-nt.patch) by @nthiery created at 2010-02-17 21:50:50",
     "created_at": "2010-02-17T21:50:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8296#issuecomment-73495",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_8296-fix-tab-completion-emacs-nt.patch](tarball://root/attachments/some-uuid/ticket8296/trac_8296-fix-tab-completion-emacs-nt.patch) by nthiery created at 2010-02-17 21:50:50
+Attachment [trac_8296-fix-tab-completion-emacs-nt.patch](tarball://root/attachments/some-uuid/ticket8296/trac_8296-fix-tab-completion-emacs-nt.patch) by @nthiery created at 2010-02-17 21:50:50
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_073496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8296#issuecomment-73496",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_073497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8296#issuecomment-73497",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_073498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8296#issuecomment-73498",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_073499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8296#issuecomment-73499",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

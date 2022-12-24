@@ -3,7 +3,7 @@
 archive/issues_002777.json:
 ```json
 {
-    "body": "Assignee: was\n\nHere's an example:\n\n```\nsage: notebook??\n```\n\nThen the screen clears and is replaced by\n\n```\nType:             instance\nBase Class:       sage.server.notebook.notebook_object.NotebookObject\nString Form:   <sage.server.notebook.notebook_object.NotebookObject instance at 0xb5d66c0>\nNamespace:        Interactive\nDocstring [source file open failed]:\n    \n        Start the SAGE Notebook server. \n    \n        INPUT:\n...\n```\n\npiped through my PAGER ('less').  After quitting this, I see\n\n\n```\nError getting source: arg is not a module, class, method, function, traceback, frame, or code object\n\n```\n\n\nThis is in  $SAGE_ROOT for sage-2.11. \"./sage\" is not modified to fix SAGE_ROOT, and \".\" is in my PATH.  Oh, and I'm using the command-line, of course :-}\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2777\n\n",
+    "body": "Assignee: @williamstein\n\nHere's an example:\n\n```\nsage: notebook??\n```\n\nThen the screen clears and is replaced by\n\n```\nType:             instance\nBase Class:       sage.server.notebook.notebook_object.NotebookObject\nString Form:   <sage.server.notebook.notebook_object.NotebookObject instance at 0xb5d66c0>\nNamespace:        Interactive\nDocstring [source file open failed]:\n    \n        Start the SAGE Notebook server. \n    \n        INPUT:\n...\n```\n\npiped through my PAGER ('less').  After quitting this, I see\n\n\n```\nError getting source: arg is not a module, class, method, function, traceback, frame, or code object\n\n```\n\n\nThis is in  $SAGE_ROOT for sage-2.11. \"./sage\" is not modified to fix SAGE_ROOT, and \".\" is in my PATH.  Oh, and I'm using the command-line, of course :-}\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2777\n\n",
     "created_at": "2008-04-02T17:54:30Z",
     "labels": [
         "user interface",
@@ -17,7 +17,7 @@ archive/issues_002777.json:
     "user": "justin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Here's an example:
 
@@ -112,7 +112,7 @@ archive/issue_comments_019080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2777#issuecomment-19080",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

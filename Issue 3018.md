@@ -136,16 +136,16 @@ This is the only patch needed.
 archive/issue_comments_020740.json:
 ```json
 {
-    "body": "Attachment [frobby-0.7.6.patch](tarball://root/attachments/some-uuid/ticket3018/frobby-0.7.6.patch) by mhansen created at 2008-05-22 10:36:59\n\nLooks good to me.",
+    "body": "Attachment [frobby-0.7.6.patch](tarball://root/attachments/some-uuid/ticket3018/frobby-0.7.6.patch) by @mwhansen created at 2008-05-22 10:36:59\n\nLooks good to me.",
     "created_at": "2008-05-22T10:36:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3018#issuecomment-20740",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [frobby-0.7.6.patch](tarball://root/attachments/some-uuid/ticket3018/frobby-0.7.6.patch) by mhansen created at 2008-05-22 10:36:59
+Attachment [frobby-0.7.6.patch](tarball://root/attachments/some-uuid/ticket3018/frobby-0.7.6.patch) by @mwhansen created at 2008-05-22 10:36:59
 
 Looks good to me.
 

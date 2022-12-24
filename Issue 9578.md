@@ -14,7 +14,7 @@ archive/issues_009578.json:
     "title": "Add even more customization of ticks in plots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9578",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: jason, was
@@ -74,7 +74,7 @@ archive/issue_comments_092514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9578#issuecomment-92514",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_092515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9578#issuecomment-92515",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

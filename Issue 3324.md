@@ -3,7 +3,7 @@
 archive/issues_003324.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: gd, linear algebra, gf(2)\n\n1-bit PNGs are a pretty sweet storage format for dense GF(2) matrices\n* they are intuitive (you can even look at them)\n* they are small (since the data is compressed for you)\n* other people wrote fast C libraries to deal with them.\n\nSo this patch adds `to_png` and `from_png` functions to  `sage.matrix.matrix_mod2_dense` and uses those to implement pickling/unpickling.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3324\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: gd, linear algebra, gf(2)\n\n1-bit PNGs are a pretty sweet storage format for dense GF(2) matrices\n* they are intuitive (you can even look at them)\n* they are small (since the data is compressed for you)\n* other people wrote fast C libraries to deal with them.\n\nSo this patch adds `to_png` and `from_png` functions to  `sage.matrix.matrix_mod2_dense` and uses those to implement pickling/unpickling.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3324\n\n",
     "created_at": "2008-05-28T19:07:24Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_003324.json:
     "title": "[with patch, needs review] Matrix_mod2_dense to/from PNG routines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3324",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: gd, linear algebra, gf(2)
 
@@ -44,7 +44,7 @@ archive/issue_comments_023041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3324#issuecomment-23041",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_023042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3324#issuecomment-23042",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_023043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3324#issuecomment-23043",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_023044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3324#issuecomment-23044",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_023045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3324#issuecomment-23045",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_023046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3324#issuecomment-23046",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_023047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3324#issuecomment-23047",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_023048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3324#issuecomment-23048",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -295,16 +295,16 @@ new patch addresses review
 archive/issue_comments_023049.json:
 ```json
 {
-    "body": "Attachment [m4ri_png.patch](tarball://root/attachments/some-uuid/ticket3324/m4ri_png.patch) by malb created at 2008-06-20 03:45:15\n\nThe attached patch addresses this issue.",
+    "body": "Attachment [m4ri_png.patch](tarball://root/attachments/some-uuid/ticket3324/m4ri_png.patch) by @malb created at 2008-06-20 03:45:15\n\nThe attached patch addresses this issue.",
     "created_at": "2008-06-20T03:45:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3324#issuecomment-23049",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [m4ri_png.patch](tarball://root/attachments/some-uuid/ticket3324/m4ri_png.patch) by malb created at 2008-06-20 03:45:15
+Attachment [m4ri_png.patch](tarball://root/attachments/some-uuid/ticket3324/m4ri_png.patch) by @malb created at 2008-06-20 03:45:15
 
 The attached patch addresses this issue.
 
@@ -320,7 +320,7 @@ archive/issue_comments_023050.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3324#issuecomment-23050",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -357,7 +357,7 @@ archive/issue_comments_023051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3324#issuecomment-23051",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -375,7 +375,7 @@ archive/issue_comments_023052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3324#issuecomment-23052",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -497,7 +497,7 @@ archive/issue_comments_023053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3324#issuecomment-23053",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -517,7 +517,7 @@ archive/issue_comments_023054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3324#issuecomment-23054",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

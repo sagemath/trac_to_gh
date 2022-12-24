@@ -3,7 +3,7 @@
 archive/issues_004841.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  mhansen certik\n\nThere is a new Maxima spgk at\n\nhttp://sage.math.washington.edu/home/mabshoff/maxima-5.17.1.spkg\n\nbut there are issues. It will probably (hopefully?) not be the final stable release of 5.17.x.\n\nIssues coming up in the comment section next.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4841\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @mwhansen @certik\n\nThere is a new Maxima spgk at\n\nhttp://sage.math.washington.edu/home/mabshoff/maxima-5.17.1.spkg\n\nbut there are issues. It will probably (hopefully?) not be the final stable release of 5.17.x.\n\nIssues coming up in the comment section next.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4841\n\n",
     "created_at": "2008-12-20T22:24:20Z",
     "labels": [
         "calculus",
@@ -17,9 +17,9 @@ archive/issues_004841.json:
     "user": "mabshoff"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  mhansen certik
+CC:  @mwhansen @certik
 
 There is a new Maxima spgk at
 
@@ -182,7 +182,7 @@ Michael
 archive/issue_comments_036716.json:
 ```json
 {
-    "body": "Changing assignee from burcin to mabshoff.",
+    "body": "Changing assignee from @burcin to mabshoff.",
     "created_at": "2008-12-20T22:28:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4841",
     "type": "issue_comment",
@@ -191,7 +191,7 @@ archive/issue_comments_036716.json:
 }
 ```
 
-Changing assignee from burcin to mabshoff.
+Changing assignee from @burcin to mabshoff.
 
 
 

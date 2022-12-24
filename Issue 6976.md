@@ -14,7 +14,7 @@ archive/issues_006976.json:
     "title": "[with patch; needs review] numpy package fixed to work in cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6976",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 Assignee: mabshoff
@@ -39,7 +39,7 @@ archive/issue_comments_057696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6976#issuecomment-57696",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

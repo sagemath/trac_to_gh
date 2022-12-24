@@ -3,7 +3,7 @@
 archive/issues_002551.json:
 ```json
 {
-    "body": "Assignee: was\n\nIndexing into a relative number field element does unexpected things:\n\n\n```\nsage: K\n Number Field in b with defining polynomial x^3 - 5 over its base field\nsage: K([1,2,3])\n 3*b^2 + (-6*a + 2)*b - 2*a + 7\nsage: K([1,2,3])[0]\n 1\nsage: K([1,2,3])[1]\n 2\n\nsage: K([1,2,3]).list()\n [-2*a + 7, -6*a + 2, 3]\nsage: K([1,2,3]).list()[0]\n -2*a + 7\n\nsage: K([1,2,3]).polynomial()\n 3*x^2 + 2*x + 1\n```\n\n\nThe issue is that it's giving you the entries in the representation of the element as an *absolute* number field element. It should be fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2551\n\n",
+    "body": "Assignee: @williamstein\n\nIndexing into a relative number field element does unexpected things:\n\n\n```\nsage: K\n Number Field in b with defining polynomial x^3 - 5 over its base field\nsage: K([1,2,3])\n 3*b^2 + (-6*a + 2)*b - 2*a + 7\nsage: K([1,2,3])[0]\n 1\nsage: K([1,2,3])[1]\n 2\n\nsage: K([1,2,3]).list()\n [-2*a + 7, -6*a + 2, 3]\nsage: K([1,2,3]).list()[0]\n -2*a + 7\n\nsage: K([1,2,3]).polynomial()\n 3*x^2 + 2*x + 1\n```\n\n\nThe issue is that it's giving you the entries in the representation of the element as an *absolute* number field element. It should be fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2551\n\n",
     "created_at": "2008-03-16T21:10:56Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_002551.json:
     "title": "`__getitem__` for relative number field elements is ... surprising",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2551",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Indexing into a relative number field element does unexpected things:
 

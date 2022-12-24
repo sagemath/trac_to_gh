@@ -14,7 +14,7 @@ archive/issues_002019.json:
     "title": "problem with gap_packages-4.4.10_3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2019",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 Assignee: mabshoff
@@ -80,7 +80,7 @@ archive/issue_comments_013029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2019",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2019#issuecomment-13029",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_013030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2019",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2019#issuecomment-13030",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_013031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2019",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2019#issuecomment-13031",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_013032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2019",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2019#issuecomment-13032",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

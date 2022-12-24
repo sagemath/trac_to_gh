@@ -3,7 +3,7 @@
 archive/issues_004963.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  mhansen tclemans\n\nNot having this causes interacts to jump off the page when updating, for example.  See http://groups.google.com/group/sage-devel/browse_thread/thread/51b538c8212fa2a/b61655921eb0ebab\n\nIssue created by migration from https://trac.sagemath.org/ticket/4963\n\n",
+    "body": "Assignee: boothby\n\nCC:  @mwhansen tclemans\n\nNot having this causes interacts to jump off the page when updating, for example.  See http://groups.google.com/group/sage-devel/browse_thread/thread/51b538c8212fa2a/b61655921eb0ebab\n\nIssue created by migration from https://trac.sagemath.org/ticket/4963\n\n",
     "created_at": "2009-01-11T00:55:31Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_004963.json:
     "title": "Make a screen-full of whitespace at the bottom of the notebook cells",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4963",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
 
-CC:  mhansen tclemans
+CC:  @mwhansen tclemans
 
 Not having this causes interacts to jump off the page when updating, for example.  See http://groups.google.com/group/sage-devel/browse_thread/thread/51b538c8212fa2a/b61655921eb0ebab
 
@@ -39,7 +39,7 @@ archive/issue_comments_037714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4963#issuecomment-37714",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -52,16 +52,16 @@ Fixing this might also help in resolving #2629
 archive/issue_comments_037715.json:
 ```json
 {
-    "body": "Changing assignee from boothby to jason.",
+    "body": "Changing assignee from boothby to @jasongrout.",
     "created_at": "2009-01-14T08:01:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4963#issuecomment-37715",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from boothby to jason.
+Changing assignee from boothby to @jasongrout.
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_037716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4963#issuecomment-37716",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_037717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4963#issuecomment-37717",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_037718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4963#issuecomment-37718",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -132,16 +132,16 @@ I did notice that this patch also extends the "Home" page of the notebook which 
 archive/issue_comments_037719.json:
 ```json
 {
-    "body": "Attachment [notebook-whitespace.patch](tarball://root/attachments/some-uuid/ticket4963/notebook-whitespace.patch) by jason created at 2009-01-21 23:32:25",
+    "body": "Attachment [notebook-whitespace.patch](tarball://root/attachments/some-uuid/ticket4963/notebook-whitespace.patch) by @jasongrout created at 2009-01-21 23:32:25",
     "created_at": "2009-01-21T23:32:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4963#issuecomment-37719",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [notebook-whitespace.patch](tarball://root/attachments/some-uuid/ticket4963/notebook-whitespace.patch) by jason created at 2009-01-21 23:32:25
+Attachment [notebook-whitespace.patch](tarball://root/attachments/some-uuid/ticket4963/notebook-whitespace.patch) by @jasongrout created at 2009-01-21 23:32:25
 
 
 

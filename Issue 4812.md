@@ -3,7 +3,7 @@
 archive/issues_004812.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nHello all,\n\nI'm trying to run the following code:\n\ns     = 7\ns2    = 2^s\nP.<x> = GF(2)[]\nM     = matrix(parent(x),s2)\nfor i in range(s2):\n  p  = (1+x)^i\n  pc = p.coeffs()\n  a  = pc.count(1)\n  for j in range(a):\n    idx        = pc.index(1)\n    M[i,idx+j] = pc.pop(idx)\nmatrixprogram = matrix_plot(M,cmap='Greys')\n\n...but with 3.2.1, it complains:\n\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/drake/.sage/temp/klee/11408/_tmp_foo_sage_2.py in <module>()\n    16        M[i,idx+j] = pc.pop(idx)\n    17\n---> 18 matrixprogram = matrix_plot(M,cmap='Greys')     19\n    20\n\n/opt/sage-3.2.1/local/lib/python2.5/site-packages/sage/plot/misc.pyc in wrapper(*args, **kwds)\n   279                 options['__original_opts'] = kwds\n   280             options.update(kwds)\n--> 281             return func(*args, **options)\n   282\n   283\n\n/opt/sage-3.2.1/local/lib/python2.5/site-packages/sage/plot/matrix_plot.pyc in matrix_plot(mat, **options)\n   123         xrange = (0, len(mat[0]))\n   124         yrange = (0, len(mat))\n--> 125     xy_data_array = [array(r, dtype=float) for r in mat]\n   126\n   127     g = Graphics()\n\n/opt/sage-3.2.1/local/lib/python2.5/site-packages/numpy/oldnumeric/functions.pyc in array(sequence, typecode, copy, savespace, dtype)\n    77 def array(sequence, typecode=None, copy=1, savespace=0, dtype=None):\n    78     dtype = convtypecode2(typecode, dtype)\n---> 79     return mu.array(sequence, dtype, copy=copy)\n    80\n    81 def sarray(a, typecode=None, copy=False, dtype=None):\n\nValueError: setting an array element with a sequence.\n\n\nI know this used to work, because the example distributed with SageTeX\nhas it! See example.{tex,pdf} from\nhttp://tug.ctan.org/tex-archive/macros/latex/contrib/sagetex/. Is the\nabove code still considered correct, or is there now a problem with\nmatrix_plot? The matrix M above has all 1's and 0's despite its parent\nbeing GF(2)[x], so perhaps this is a coercion thing?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4812\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nHello all,\n\nI'm trying to run the following code:\n\ns     = 7\ns2    = 2^s\nP.<x> = GF(2)[]\nM     = matrix(parent(x),s2)\nfor i in range(s2):\n  p  = (1+x)^i\n  pc = p.coeffs()\n  a  = pc.count(1)\n  for j in range(a):\n    idx        = pc.index(1)\n    M[i,idx+j] = pc.pop(idx)\nmatrixprogram = matrix_plot(M,cmap='Greys')\n\n...but with 3.2.1, it complains:\n\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/drake/.sage/temp/klee/11408/_tmp_foo_sage_2.py in <module>()\n    16        M[i,idx+j] = pc.pop(idx)\n    17\n---> 18 matrixprogram = matrix_plot(M,cmap='Greys')     19\n    20\n\n/opt/sage-3.2.1/local/lib/python2.5/site-packages/sage/plot/misc.pyc in wrapper(*args, **kwds)\n   279                 options['__original_opts'] = kwds\n   280             options.update(kwds)\n--> 281             return func(*args, **options)\n   282\n   283\n\n/opt/sage-3.2.1/local/lib/python2.5/site-packages/sage/plot/matrix_plot.pyc in matrix_plot(mat, **options)\n   123         xrange = (0, len(mat[0]))\n   124         yrange = (0, len(mat))\n--> 125     xy_data_array = [array(r, dtype=float) for r in mat]\n   126\n   127     g = Graphics()\n\n/opt/sage-3.2.1/local/lib/python2.5/site-packages/numpy/oldnumeric/functions.pyc in array(sequence, typecode, copy, savespace, dtype)\n    77 def array(sequence, typecode=None, copy=1, savespace=0, dtype=None):\n    78     dtype = convtypecode2(typecode, dtype)\n---> 79     return mu.array(sequence, dtype, copy=copy)\n    80\n    81 def sarray(a, typecode=None, copy=False, dtype=None):\n\nValueError: setting an array element with a sequence.\n\n\nI know this used to work, because the example distributed with SageTeX\nhas it! See example.{tex,pdf} from\nhttp://tug.ctan.org/tex-archive/macros/latex/contrib/sagetex/. Is the\nabove code still considered correct, or is there now a problem with\nmatrix_plot? The matrix M above has all 1's and 0's despite its parent\nbeing GF(2)[x], so perhaps this is a coercion thing?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4812\n\n",
     "created_at": "2008-12-16T11:51:31Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_004812.json:
     "title": "[with patch, needs review] matrix_plot is broken for matrices with \"complicated\" base rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4812",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -98,7 +98,7 @@ archive/issue_comments_036479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4812#issuecomment-36479",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -178,16 +178,16 @@ Michael
 archive/issue_comments_036481.json:
 ```json
 {
-    "body": "Attachment [trac_4812.patch](tarball://root/attachments/some-uuid/ticket4812/trac_4812.patch) by mhansen created at 2008-12-22 16:37:06",
+    "body": "Attachment [trac_4812.patch](tarball://root/attachments/some-uuid/ticket4812/trac_4812.patch) by @mwhansen created at 2008-12-22 16:37:06",
     "created_at": "2008-12-22T16:37:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4812#issuecomment-36481",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4812.patch](tarball://root/attachments/some-uuid/ticket4812/trac_4812.patch) by mhansen created at 2008-12-22 16:37:06
+Attachment [trac_4812.patch](tarball://root/attachments/some-uuid/ticket4812/trac_4812.patch) by @mwhansen created at 2008-12-22 16:37:06
 
 
 
@@ -201,7 +201,7 @@ archive/issue_comments_036482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4812#issuecomment-36482",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_036483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4812#issuecomment-36483",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -232,16 +232,16 @@ I put up a new patch which fixes the issue above.
 archive/issue_comments_036484.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-12-22T16:37:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4812#issuecomment-36484",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 

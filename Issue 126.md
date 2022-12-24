@@ -3,7 +3,7 @@
 archive/issues_000126.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nOK, this looks like a bug for 64-bit linux systems only.  I'll look into it.\nThe tests actually pass fine in about 8 seconds), but for some reasons when \nusing the automated test system it hangs.  I'll look into it.  in the meantime\nyou could put \n\"\"\"nodoctest\nas the first line of maxima.py, and it will skip testing it. \n\nOn Wed, 11 Oct 2006 01:23:43 -0700, Jaap Spies <j.spies@hccnet.nl> wrote:\n\n>\n> In sage-1.4 make test hangs forever on\n> sage -t  devel/sage-main/sage/interfaces/maxima.py\n>\n>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/126\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nOK, this looks like a bug for 64-bit linux systems only.  I'll look into it.\nThe tests actually pass fine in about 8 seconds), but for some reasons when \nusing the automated test system it hangs.  I'll look into it.  in the meantime\nyou could put \n\"\"\"nodoctest\nas the first line of maxima.py, and it will skip testing it. \n\nOn Wed, 11 Oct 2006 01:23:43 -0700, Jaap Spies <j.spies@hccnet.nl> wrote:\n\n>\n> In sage-1.4 make test hangs forever on\n> sage -t  devel/sage-main/sage/interfaces/maxima.py\n>\n>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/126\n\n",
     "created_at": "2006-10-11T15:07:20Z",
     "labels": [
         "user interface",
@@ -13,10 +13,10 @@ archive/issues_000126.json:
     "title": "maxima -- doctest hang",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/126",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```

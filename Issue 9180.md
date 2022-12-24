@@ -3,7 +3,7 @@
 archive/issues_009180.json:
 ```json
 {
-    "body": "Assignee: jason, jkantor\n\nCC:  rishi jdemeyer\n\nNeeded for #4475, but quite self contained and doesn't require any number theory to understand or review. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9180\n\n",
+    "body": "Assignee: jason, jkantor\n\nCC:  @rishikesha @jdemeyer\n\nNeeded for #4475, but quite self contained and doesn't require any number theory to understand or review. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9180\n\n",
     "created_at": "2010-06-07T20:40:08Z",
     "labels": [
         "numerical",
@@ -14,12 +14,12 @@ archive/issues_009180.json:
     "title": "Absolute interval arithmetic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9180",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: jason, jkantor
 
-CC:  rishi jdemeyer
+CC:  @rishikesha @jdemeyer
 
 Needed for #4475, but quite self contained and doesn't require any number theory to understand or review. 
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9180
 archive/issue_comments_085882.json:
 ```json
 {
-    "body": "Attachment [9180-abs-interval.patch](tarball://root/attachments/some-uuid/ticket9180/9180-abs-interval.patch) by robertwb created at 2010-06-07 21:27:04",
+    "body": "Attachment [9180-abs-interval.patch](tarball://root/attachments/some-uuid/ticket9180/9180-abs-interval.patch) by @robertwb created at 2010-06-07 21:27:04",
     "created_at": "2010-06-07T21:27:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9180#issuecomment-85882",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [9180-abs-interval.patch](tarball://root/attachments/some-uuid/ticket9180/9180-abs-interval.patch) by robertwb created at 2010-06-07 21:27:04
+Attachment [9180-abs-interval.patch](tarball://root/attachments/some-uuid/ticket9180/9180-abs-interval.patch) by @robertwb created at 2010-06-07 21:27:04
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_085883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9180#issuecomment-85883",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_085884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9180#issuecomment-85884",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -88,16 +88,16 @@ apply on top of previous
 archive/issue_comments_085885.json:
 ```json
 {
-    "body": "Attachment [9180-real-mpfi-conversion.patch](tarball://root/attachments/some-uuid/ticket9180/9180-real-mpfi-conversion.patch) by rishi created at 2010-08-08 02:47:42",
+    "body": "Attachment [9180-real-mpfi-conversion.patch](tarball://root/attachments/some-uuid/ticket9180/9180-real-mpfi-conversion.patch) by @rishikesha created at 2010-08-08 02:47:42",
     "created_at": "2010-08-08T02:47:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9180#issuecomment-85885",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
-Attachment [9180-real-mpfi-conversion.patch](tarball://root/attachments/some-uuid/ticket9180/9180-real-mpfi-conversion.patch) by rishi created at 2010-08-08 02:47:42
+Attachment [9180-real-mpfi-conversion.patch](tarball://root/attachments/some-uuid/ticket9180/9180-real-mpfi-conversion.patch) by @rishikesha created at 2010-08-08 02:47:42
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_085886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9180#issuecomment-85886",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -124,16 +124,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_085887.json:
 ```json
 {
-    "body": "Attachment [9180-bitrot.patch](tarball://root/attachments/some-uuid/ticket9180/9180-bitrot.patch) by kedlaya created at 2011-06-18 13:32:44\n\nApplies against 4.7, no long doctest failures. Looks fine to me.",
+    "body": "Attachment [9180-bitrot.patch](tarball://root/attachments/some-uuid/ticket9180/9180-bitrot.patch) by @kedlaya created at 2011-06-18 13:32:44\n\nApplies against 4.7, no long doctest failures. Looks fine to me.",
     "created_at": "2011-06-18T13:32:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9180#issuecomment-85887",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
-Attachment [9180-bitrot.patch](tarball://root/attachments/some-uuid/ticket9180/9180-bitrot.patch) by kedlaya created at 2011-06-18 13:32:44
+Attachment [9180-bitrot.patch](tarball://root/attachments/some-uuid/ticket9180/9180-bitrot.patch) by @kedlaya created at 2011-06-18 13:32:44
 
 Applies against 4.7, no long doctest failures. Looks fine to me.
 
@@ -149,7 +149,7 @@ archive/issue_comments_085888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9180#issuecomment-85888",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_085889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9180#issuecomment-85889",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_085890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9180#issuecomment-85890",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_085891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9180#issuecomment-85891",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

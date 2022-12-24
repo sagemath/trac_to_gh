@@ -3,7 +3,7 @@
 archive/issues_003703.json:
 ```json
 {
-    "body": "Assignee: rlm\n\n\n```\nsage: G = Graph({0:{1:1}}, implementation='c_graph')\nsage: G.num_edges()\n1\nsage: G.set_edge_label(0,1,1)\nsage: G.num_edges()\n2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3703\n\n",
+    "body": "Assignee: @rlmill\n\n\n```\nsage: G = Graph({0:{1:1}}, implementation='c_graph')\nsage: G.num_edges()\n1\nsage: G.set_edge_label(0,1,1)\nsage: G.num_edges()\n2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3703\n\n",
     "created_at": "2008-07-22T00:17:40Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_003703.json:
     "title": "[with patch, needs review] bug in set_edge_label",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3703",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 
 ```
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3703
 archive/issue_comments_026262.json:
 ```json
 {
-    "body": "Attachment [trac3703-set_edge_label.patch](tarball://root/attachments/some-uuid/ticket3703/trac3703-set_edge_label.patch) by jason created at 2008-07-22 14:49:19\n\nPositive review.  Good catch!\n\nPasses doctests in graphs/*.py, graphs/*.pyx, and graphs/base/*.pyx",
+    "body": "Attachment [trac3703-set_edge_label.patch](tarball://root/attachments/some-uuid/ticket3703/trac3703-set_edge_label.patch) by @jasongrout created at 2008-07-22 14:49:19\n\nPositive review.  Good catch!\n\nPasses doctests in graphs/*.py, graphs/*.pyx, and graphs/base/*.pyx",
     "created_at": "2008-07-22T14:49:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3703#issuecomment-26262",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac3703-set_edge_label.patch](tarball://root/attachments/some-uuid/ticket3703/trac3703-set_edge_label.patch) by jason created at 2008-07-22 14:49:19
+Attachment [trac3703-set_edge_label.patch](tarball://root/attachments/some-uuid/ticket3703/trac3703-set_edge_label.patch) by @jasongrout created at 2008-07-22 14:49:19
 
 Positive review.  Good catch!
 
@@ -68,7 +68,7 @@ archive/issue_comments_026263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3703#issuecomment-26263",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_026264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3703#issuecomment-26264",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_026265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3703#issuecomment-26265",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

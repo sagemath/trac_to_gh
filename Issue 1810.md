@@ -14,7 +14,7 @@ archive/issues_001810.json:
     "title": "[with patch] refactoring to improve finite field reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1810",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1810
 archive/issue_comments_011440.json:
 ```json
 {
-    "body": "Attachment [finite_field_refactor_doc.patch](tarball://root/attachments/some-uuid/ticket1810/finite_field_refactor_doc.patch) by malb created at 2008-01-17 21:29:32",
+    "body": "Attachment [finite_field_refactor_doc.patch](tarball://root/attachments/some-uuid/ticket1810/finite_field_refactor_doc.patch) by @malb created at 2008-01-17 21:29:32",
     "created_at": "2008-01-17T21:29:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1810#issuecomment-11440",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [finite_field_refactor_doc.patch](tarball://root/attachments/some-uuid/ticket1810/finite_field_refactor_doc.patch) by malb created at 2008-01-17 21:29:32
+Attachment [finite_field_refactor_doc.patch](tarball://root/attachments/some-uuid/ticket1810/finite_field_refactor_doc.patch) by @malb created at 2008-01-17 21:29:32
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_011441.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1810#issuecomment-11441",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_011442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1810#issuecomment-11442",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_011443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1810#issuecomment-11443",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -116,16 +116,16 @@ rebased against 2.10.2
 archive/issue_comments_011444.json:
 ```json
 {
-    "body": "Attachment [finite_field_refactor_doc.2.patch](tarball://root/attachments/some-uuid/ticket1810/finite_field_refactor_doc.2.patch) by malb created at 2008-02-27 20:24:05\n\nrebased against 2.10.3.alpha3",
+    "body": "Attachment [finite_field_refactor_doc.2.patch](tarball://root/attachments/some-uuid/ticket1810/finite_field_refactor_doc.2.patch) by @malb created at 2008-02-27 20:24:05\n\nrebased against 2.10.3.alpha3",
     "created_at": "2008-02-27T20:24:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1810#issuecomment-11444",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [finite_field_refactor_doc.2.patch](tarball://root/attachments/some-uuid/ticket1810/finite_field_refactor_doc.2.patch) by malb created at 2008-02-27 20:24:05
+Attachment [finite_field_refactor_doc.2.patch](tarball://root/attachments/some-uuid/ticket1810/finite_field_refactor_doc.2.patch) by @malb created at 2008-02-27 20:24:05
 
 rebased against 2.10.3.alpha3
 
@@ -136,16 +136,16 @@ rebased against 2.10.3.alpha3
 archive/issue_comments_011445.json:
 ```json
 {
-    "body": "Attachment [finite_field_refactor_doc.3.patch](tarball://root/attachments/some-uuid/ticket1810/finite_field_refactor_doc.3.patch) by malb created at 2008-02-28 00:25:27\n\nadd this on top of the 2.10.3.alpha0 patch, I forgot to hg add a file",
+    "body": "Attachment [finite_field_refactor_doc.3.patch](tarball://root/attachments/some-uuid/ticket1810/finite_field_refactor_doc.3.patch) by @malb created at 2008-02-28 00:25:27\n\nadd this on top of the 2.10.3.alpha0 patch, I forgot to hg add a file",
     "created_at": "2008-02-28T00:25:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1810#issuecomment-11445",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [finite_field_refactor_doc.3.patch](tarball://root/attachments/some-uuid/ticket1810/finite_field_refactor_doc.3.patch) by malb created at 2008-02-28 00:25:27
+Attachment [finite_field_refactor_doc.3.patch](tarball://root/attachments/some-uuid/ticket1810/finite_field_refactor_doc.3.patch) by @malb created at 2008-02-28 00:25:27
 
 add this on top of the 2.10.3.alpha0 patch, I forgot to hg add a file
 
@@ -156,16 +156,16 @@ add this on top of the 2.10.3.alpha0 patch, I forgot to hg add a file
 archive/issue_comments_011446.json:
 ```json
 {
-    "body": "Attachment [gfp.patch](tarball://root/attachments/some-uuid/ticket1810/gfp.patch) by malb created at 2008-02-28 00:26:34\n\nAdd `gfp.patch` on top of `finite_field_refactor_doc.3.patch`, I forgot to `hg add finite_field_prime_modn.py`",
+    "body": "Attachment [gfp.patch](tarball://root/attachments/some-uuid/ticket1810/gfp.patch) by @malb created at 2008-02-28 00:26:34\n\nAdd `gfp.patch` on top of `finite_field_refactor_doc.3.patch`, I forgot to `hg add finite_field_prime_modn.py`",
     "created_at": "2008-02-28T00:26:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1810#issuecomment-11446",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [gfp.patch](tarball://root/attachments/some-uuid/ticket1810/gfp.patch) by malb created at 2008-02-28 00:26:34
+Attachment [gfp.patch](tarball://root/attachments/some-uuid/ticket1810/gfp.patch) by @malb created at 2008-02-28 00:26:34
 
 Add `gfp.patch` on top of `finite_field_refactor_doc.3.patch`, I forgot to `hg add finite_field_prime_modn.py`
 
@@ -176,16 +176,16 @@ Add `gfp.patch` on top of `finite_field_refactor_doc.3.patch`, I forgot to `hg a
 archive/issue_comments_011447.json:
 ```json
 {
-    "body": "Attachment [guava_fix.patch](tarball://root/attachments/some-uuid/ticket1810/guava_fix.patch) by malb created at 2008-02-28 01:14:45\n\nguava_fix.patch needs also to be applied after the other patches",
+    "body": "Attachment [guava_fix.patch](tarball://root/attachments/some-uuid/ticket1810/guava_fix.patch) by @malb created at 2008-02-28 01:14:45\n\nguava_fix.patch needs also to be applied after the other patches",
     "created_at": "2008-02-28T01:14:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1810#issuecomment-11447",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [guava_fix.patch](tarball://root/attachments/some-uuid/ticket1810/guava_fix.patch) by malb created at 2008-02-28 01:14:45
+Attachment [guava_fix.patch](tarball://root/attachments/some-uuid/ticket1810/guava_fix.patch) by @malb created at 2008-02-28 01:14:45
 
 guava_fix.patch needs also to be applied after the other patches
 
@@ -201,7 +201,7 @@ archive/issue_comments_011448.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1810#issuecomment-11448",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

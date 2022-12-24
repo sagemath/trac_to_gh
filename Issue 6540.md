@@ -3,7 +3,7 @@
 archive/issues_006540.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  jason\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6540\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @jasongrout\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6540\n\n",
     "created_at": "2009-07-16T00:53:02Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_006540.json:
     "title": "[with patch, needs review] g.add_edge((u,v), label=l) syntax unsupported for C graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6540",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  jason
+CC:  @jasongrout
 
 
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6540
 archive/issue_comments_053321.json:
 ```json
 {
-    "body": "Attachment [trac_6540-edge_syntax.patch](tarball://root/attachments/some-uuid/ticket6540/trac_6540-edge_syntax.patch) by jason created at 2009-07-17 19:19:10",
+    "body": "Attachment [trac_6540-edge_syntax.patch](tarball://root/attachments/some-uuid/ticket6540/trac_6540-edge_syntax.patch) by @jasongrout created at 2009-07-17 19:19:10",
     "created_at": "2009-07-17T19:19:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6540",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6540#issuecomment-53321",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_6540-edge_syntax.patch](tarball://root/attachments/some-uuid/ticket6540/trac_6540-edge_syntax.patch) by jason created at 2009-07-17 19:19:10
+Attachment [trac_6540-edge_syntax.patch](tarball://root/attachments/some-uuid/ticket6540/trac_6540-edge_syntax.patch) by @jasongrout created at 2009-07-17 19:19:10
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_053322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6540",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6540#issuecomment-53322",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

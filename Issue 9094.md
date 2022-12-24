@@ -3,7 +3,7 @@
 archive/issues_009094.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  mderickx pbruin mstreng minz\n\nDepends on #9093 for correctness.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9094\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @koffie @pjbruin @mstreng minz\n\nDepends on #9093 for correctness.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9094\n\n",
     "created_at": "2010-05-30T08:45:39Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_009094.json:
     "title": "is_square and sqrt for fraction fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9094",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  mderickx pbruin mstreng minz
+CC:  @koffie @pjbruin @mstreng minz
 
 Depends on #9093 for correctness.
 
@@ -39,7 +39,7 @@ archive/issue_comments_084462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84462",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to needs_review.
 archive/issue_comments_084463.json:
 ```json
 {
-    "body": "Attachment [9094-sqrt.patch](tarball://root/attachments/some-uuid/ticket9094/9094-sqrt.patch) by robertwb created at 2010-05-30 09:28:20",
+    "body": "Attachment [9094-sqrt.patch](tarball://root/attachments/some-uuid/ticket9094/9094-sqrt.patch) by @robertwb created at 2010-05-30 09:28:20",
     "created_at": "2010-05-30T09:28:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84463",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [9094-sqrt.patch](tarball://root/attachments/some-uuid/ticket9094/9094-sqrt.patch) by robertwb created at 2010-05-30 09:28:20
+Attachment [9094-sqrt.patch](tarball://root/attachments/some-uuid/ticket9094/9094-sqrt.patch) by @robertwb created at 2010-05-30 09:28:20
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_084464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84464",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_084465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84465",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_084466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84466",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_084467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84467",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_084468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84468",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_084469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84469",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_084470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84470",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_084471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84471",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_084472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84472",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_084473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84473",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -335,7 +335,7 @@ archive/issue_comments_084474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84474",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -353,7 +353,7 @@ archive/issue_comments_084475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84475",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -371,7 +371,7 @@ archive/issue_comments_084476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84476",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_084477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84477",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -417,7 +417,7 @@ archive/issue_comments_084478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84478",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -447,7 +447,7 @@ archive/issue_comments_084479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84479",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -469,7 +469,7 @@ archive/issue_comments_084480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84480",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -487,7 +487,7 @@ archive/issue_comments_084481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84481",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -535,7 +535,7 @@ archive/issue_comments_084482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84482",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -555,7 +555,7 @@ archive/issue_comments_084483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84483",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -575,7 +575,7 @@ archive/issue_comments_084484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84484",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -593,7 +593,7 @@ archive/issue_comments_084485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84485",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -611,7 +611,7 @@ archive/issue_comments_084486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84486",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -645,7 +645,7 @@ archive/issue_comments_084487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84487",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -681,16 +681,16 @@ where 4 is replaced by the number of cores you are willing to use.
 archive/issue_comments_084488.json:
 ```json
 {
-    "body": "Attachment [trac_9094-sqrt-mderickx.2.patch](tarball://root/attachments/some-uuid/ticket9094/trac_9094-sqrt-mderickx.2.patch) by mderickx created at 2011-03-22 01:09:54",
+    "body": "Attachment [trac_9094-sqrt-mderickx.2.patch](tarball://root/attachments/some-uuid/ticket9094/trac_9094-sqrt-mderickx.2.patch) by @koffie created at 2011-03-22 01:09:54",
     "created_at": "2011-03-22T01:09:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84488",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
-Attachment [trac_9094-sqrt-mderickx.2.patch](tarball://root/attachments/some-uuid/ticket9094/trac_9094-sqrt-mderickx.2.patch) by mderickx created at 2011-03-22 01:09:54
+Attachment [trac_9094-sqrt-mderickx.2.patch](tarball://root/attachments/some-uuid/ticket9094/trac_9094-sqrt-mderickx.2.patch) by @koffie created at 2011-03-22 01:09:54
 
 
 
@@ -704,7 +704,7 @@ archive/issue_comments_084489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84489",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -722,7 +722,7 @@ archive/issue_comments_084490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84490",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -763,7 +763,7 @@ in structure/element.pyx
 archive/issue_comments_084492.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to minz.",
+    "body": "Changing assignee from @aghitza to minz.",
     "created_at": "2011-03-22T05:15:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
@@ -772,7 +772,7 @@ archive/issue_comments_084492.json:
 }
 ```
 
-Changing assignee from AlexGhitza to minz.
+Changing assignee from @aghitza to minz.
 
 
 
@@ -781,7 +781,7 @@ Changing assignee from AlexGhitza to minz.
 archive/issue_comments_084493.json:
 ```json
 {
-    "body": "Changing assignee from minz to AlexGhitza.",
+    "body": "Changing assignee from minz to @aghitza.",
     "created_at": "2011-03-22T05:22:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
@@ -790,7 +790,7 @@ archive/issue_comments_084493.json:
 }
 ```
 
-Changing assignee from minz to AlexGhitza.
+Changing assignee from minz to @aghitza.
 
 
 
@@ -804,7 +804,7 @@ archive/issue_comments_084494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84494",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -822,7 +822,7 @@ archive/issue_comments_084495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84495",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -844,7 +844,7 @@ archive/issue_comments_084496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84496",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -897,7 +897,7 @@ archive/issue_comments_084497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84497",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -919,7 +919,7 @@ archive/issue_comments_084498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84498",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -937,7 +937,7 @@ archive/issue_comments_084499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84499",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -961,7 +961,7 @@ archive/issue_comments_084500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84500",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -974,16 +974,16 @@ A patch instead of the other one, which I ofcourse think is better ;)
 archive/issue_comments_084501.json:
 ```json
 {
-    "body": "Attachment [trac_9094-sqrt-mderickx.patch](tarball://root/attachments/some-uuid/ticket9094/trac_9094-sqrt-mderickx.patch) by mderickx created at 2011-03-22 17:26:53\n\nDone :)",
+    "body": "Attachment [trac_9094-sqrt-mderickx.patch](tarball://root/attachments/some-uuid/ticket9094/trac_9094-sqrt-mderickx.patch) by @koffie created at 2011-03-22 17:26:53\n\nDone :)",
     "created_at": "2011-03-22T17:26:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84501",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
-Attachment [trac_9094-sqrt-mderickx.patch](tarball://root/attachments/some-uuid/ticket9094/trac_9094-sqrt-mderickx.patch) by mderickx created at 2011-03-22 17:26:53
+Attachment [trac_9094-sqrt-mderickx.patch](tarball://root/attachments/some-uuid/ticket9094/trac_9094-sqrt-mderickx.patch) by @koffie created at 2011-03-22 17:26:53
 
 Done :)
 
@@ -999,7 +999,7 @@ archive/issue_comments_084502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84502",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1017,7 +1017,7 @@ archive/issue_comments_084503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84503",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1035,7 +1035,7 @@ archive/issue_comments_084504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84504",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007702.json:
 ```json
 {
-    "body": "Assignee: was\n\nInterrupting the notebook is less robust than it used to be.  The attached worksheet is an example where the notebook fails to interrupt.  When this happens, the notebook acts as though it's interrupted.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7702\n\n",
+    "body": "Assignee: @williamstein\n\nInterrupting the notebook is less robust than it used to be.  The attached worksheet is an example where the notebook fails to interrupt.  When this happens, the notebook acts as though it's interrupted.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7702\n\n",
     "created_at": "2009-12-16T03:17:24Z",
     "labels": [
         "notebook",
@@ -17,7 +17,7 @@ archive/issues_007702.json:
     "user": "boothby"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Interrupting the notebook is less robust than it used to be.  The attached worksheet is an example where the notebook fails to interrupt.  When this happens, the notebook acts as though it's interrupted.
 
@@ -55,7 +55,7 @@ archive/issue_comments_066076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7702#issuecomment-66076",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_066077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7702#issuecomment-66077",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_066078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7702#issuecomment-66078",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_066079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7702#issuecomment-66079",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_066080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7702#issuecomment-66080",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_066081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7702#issuecomment-66081",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

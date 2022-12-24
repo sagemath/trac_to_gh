@@ -14,7 +14,7 @@ archive/issues_005587.json:
     "title": "input of hexadecimal integers is corrupted",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5587",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: somebody

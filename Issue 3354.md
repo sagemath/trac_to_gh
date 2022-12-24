@@ -14,7 +14,7 @@ archive/issues_003354.json:
     "title": "Bug in power series sqrt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3354",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -53,7 +53,7 @@ archive/issue_comments_023314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3354#issuecomment-23314",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_023315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3354#issuecomment-23315",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_023316.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3354#issuecomment-23316",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_023317.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3354#issuecomment-23317",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_023318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3354#issuecomment-23318",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_023319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3354#issuecomment-23319",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_023320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3354#issuecomment-23320",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_023321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3354#issuecomment-23321",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_023322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3354#issuecomment-23322",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -297,7 +297,7 @@ archive/issue_comments_023323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3354#issuecomment-23323",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 

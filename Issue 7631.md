@@ -3,7 +3,7 @@
 archive/issues_007631.json:
 ```json
 {
-    "body": "Assignee: was\n\n1. Create a worksheet\n\n2. Publish it\n\n3. Change the title of the original worksheet and republish it.\n\nThe title of the published worksheet doesn't change. \n\nI only noticed this because of #7433.  Without #7433 this bug isn't observable. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7631\n\n",
+    "body": "Assignee: @williamstein\n\n1. Create a worksheet\n\n2. Publish it\n\n3. Change the title of the original worksheet and republish it.\n\nThe title of the published worksheet doesn't change. \n\nI only noticed this because of #7433.  Without #7433 this bug isn't observable. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7631\n\n",
     "created_at": "2009-12-08T23:10:37Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_007631.json:
     "title": "notebook -- republishing a worksheet doesn't update the displayed title",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7631",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 1. Create a worksheet
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7631
 archive/issue_comments_065211.json:
 ```json
 {
-    "body": "Attachment [trac_7631-republish-name.patch](tarball://root/attachments/some-uuid/ticket7631/trac_7631-republish-name.patch) by timdumol created at 2010-01-19 10:14:33\n\nChanges worksheet name on republish",
+    "body": "Attachment [trac_7631-republish-name.patch](tarball://root/attachments/some-uuid/ticket7631/trac_7631-republish-name.patch) by @TimDumol created at 2010-01-19 10:14:33\n\nChanges worksheet name on republish",
     "created_at": "2010-01-19T10:14:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7631#issuecomment-65211",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7631-republish-name.patch](tarball://root/attachments/some-uuid/ticket7631/trac_7631-republish-name.patch) by timdumol created at 2010-01-19 10:14:33
+Attachment [trac_7631-republish-name.patch](tarball://root/attachments/some-uuid/ticket7631/trac_7631-republish-name.patch) by @TimDumol created at 2010-01-19 10:14:33
 
 Changes worksheet name on republish
 
@@ -65,7 +65,7 @@ archive/issue_comments_065212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7631#issuecomment-65212",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_065213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7631#issuecomment-65213",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_065214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7631#issuecomment-65214",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_065215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7631#issuecomment-65215",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

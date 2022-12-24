@@ -14,7 +14,7 @@ archive/issues_002227.json:
     "title": "sage-2.10.2.alpha1 -- doctest broken in sageinspect.py because I added a new option",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2227",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: failure
@@ -112,7 +112,7 @@ archive/issue_comments_014756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2227#issuecomment-14756",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009708.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  kcrisman novoselt kini gutow\n\nI tried the plot3d example that involves \"mesh=True\" and it is completely broken.  The plot simply doesn't show a mesh at all.\n\n```\nplot3d(sin(x-y)*y*cos(x),(x,-3,3),(y,-3,3), mesh=True)\n```\n\n[This is the Trac macro *a 3d plot, but with no mesh* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#a 3d plot, but with no mesh-macro)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9708\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @kcrisman @novoselt @kini @gutow\n\nI tried the plot3d example that involves \"mesh=True\" and it is completely broken.  The plot simply doesn't show a mesh at all.\n\n```\nplot3d(sin(x-y)*y*cos(x),(x,-3,3),(y,-3,3), mesh=True)\n```\n\n[This is the Trac macro *a 3d plot, but with no mesh* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#a 3d plot, but with no mesh-macro)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9708\n\n",
     "created_at": "2010-08-08T00:49:42Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_009708.json:
     "title": "mesh= option to plot3d is completely broken?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9708",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jason, was
 
-CC:  kcrisman novoselt kini gutow
+CC:  @kcrisman @novoselt @kini @gutow
 
 I tried the plot3d example that involves "mesh=True" and it is completely broken.  The plot simply doesn't show a mesh at all.
 
@@ -45,7 +45,7 @@ archive/issue_comments_094621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9708#issuecomment-94621",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_094622.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9708#issuecomment-94622",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_094623.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9708#issuecomment-94623",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_094624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9708#issuecomment-94624",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_094625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9708#issuecomment-94625",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_094626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9708#issuecomment-94626",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_094627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9708#issuecomment-94627",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_094628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9708#issuecomment-94628",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_094629.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9708#issuecomment-94629",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

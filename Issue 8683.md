@@ -3,7 +3,7 @@
 archive/issues_008683.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  rhinton jason jhpalmieri\n\nAs the subject says. See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/277c49764bb2aea) thread for the request and some background information.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8683\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @rhinton @jasongrout @jhpalmieri\n\nAs the subject says. See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/277c49764bb2aea) thread for the request and some background information.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8683\n\n",
     "created_at": "2010-04-13T23:44:34Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_008683.json:
 ```
 Assignee: mvngu
 
-CC:  rhinton jason jhpalmieri
+CC:  @rhinton @jasongrout @jhpalmieri
 
 As the subject says. See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/277c49764bb2aea) thread for the request and some background information.
 
@@ -120,7 +120,7 @@ archive/issue_comments_079134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8683#issuecomment-79134",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_079135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8683#issuecomment-79135",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -151,16 +151,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_079136.json:
 ```json
 {
-    "body": "Attachment [trac_8683-randstate.2.patch](tarball://root/attachments/some-uuid/ticket8683/trac_8683-randstate.2.patch) by jhpalmieri created at 2010-04-16 04:54:44\n\n(just changing the commit message on the patch)",
+    "body": "Attachment [trac_8683-randstate.2.patch](tarball://root/attachments/some-uuid/ticket8683/trac_8683-randstate.2.patch) by @jhpalmieri created at 2010-04-16 04:54:44\n\n(just changing the commit message on the patch)",
     "created_at": "2010-04-16T04:54:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8683#issuecomment-79136",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8683-randstate.2.patch](tarball://root/attachments/some-uuid/ticket8683/trac_8683-randstate.2.patch) by jhpalmieri created at 2010-04-16 04:54:44
+Attachment [trac_8683-randstate.2.patch](tarball://root/attachments/some-uuid/ticket8683/trac_8683-randstate.2.patch) by @jhpalmieri created at 2010-04-16 04:54:44
 
 (just changing the commit message on the patch)
 
@@ -176,7 +176,7 @@ archive/issue_comments_079137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8683#issuecomment-79137",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_079138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8683#issuecomment-79138",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

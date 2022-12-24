@@ -3,7 +3,7 @@
 archive/issues_003865.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nDavid Loeffler ran into the following:\n\n\n```\nsage: v = gp.polrootspadic(x^2-2, 7, 20)[1]\n\nsage: R = Zp(7, 10, \"capped-rel\")\n\nsage: R(v)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/craigcitro/<ipython console> in <module>()\n\n/Users/craigcitro/three-one/local/lib/python2.5/site-packages/sage/rings/padics/padic_generic.py in __call__(self, x, absprec, relprec)\n     82             Casts x into self.  Uses the constructor of self._element_class.\n     83         \"\"\"\n---> 84         return self._element_class(self, x, absprec, relprec)\n     85 \n     86     def _coerce_impl(self, x):\n\n/Users/craigcitro/padic_capped_relative_element.pyx in sage.rings.padics.padic_capped_relative_element.pAdicCappedRelativeElement.__init__ (sage/rings/padics/padic_capped_relative_element.c:4872)()\n\n/Users/craigcitro/rational.pyx in sage.rings.rational.Rational.__init__ (sage/rings/rational.c:3767)()\n\n/Users/craigcitro/rational.pyx in sage.rings.rational.Rational.__set_value (sage/rings/rational.c:4567)()\n\n/Users/craigcitro/three-one/local/lib/python2.5/site-packages/sage/interfaces/expect.py in _rational_(self)\n   1393     def _rational_(self):\n   1394         import sage.rings.all\n-> 1395         return sage.rings.all.Rational(repr(self))\n   1396 \n   1397     def name(self, new_name=None):\n\n/Users/craigcitro/rational.pyx in sage.rings.rational.Rational.__init__ (sage/rings/rational.c:3767)()\n\n/Users/craigcitro/rational.pyx in sage.rings.rational.Rational.__set_value (sage/rings/rational.c:4533)()\n\nTypeError: unable to convert 3 + 7 + 2*7^2 + 6*7^3 + 7^4 + 2*7^5 + 7^6 + 2*7^7 + 4*7^8 + 6*7^9 + 6*7^10 + 2*7^11 + 7^12 + 7^13 + 2*7^15 + 7^16 + 7^17 + 4*7^18 + 6*7^19 + O(7^20) to a rational\n```\n\n\nThe trouble is that the code in the `__init__` method for `pAdicCappedRelativeElement`s only looks for Pari `gen` objects, not `GpElement`s. The fix should be trivial, but I'm going to look at it tomorrow.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3865\n\n",
+    "body": "Assignee: @craigcitro\n\nDavid Loeffler ran into the following:\n\n\n```\nsage: v = gp.polrootspadic(x^2-2, 7, 20)[1]\n\nsage: R = Zp(7, 10, \"capped-rel\")\n\nsage: R(v)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/craigcitro/<ipython console> in <module>()\n\n/Users/craigcitro/three-one/local/lib/python2.5/site-packages/sage/rings/padics/padic_generic.py in __call__(self, x, absprec, relprec)\n     82             Casts x into self.  Uses the constructor of self._element_class.\n     83         \"\"\"\n---> 84         return self._element_class(self, x, absprec, relprec)\n     85 \n     86     def _coerce_impl(self, x):\n\n/Users/craigcitro/padic_capped_relative_element.pyx in sage.rings.padics.padic_capped_relative_element.pAdicCappedRelativeElement.__init__ (sage/rings/padics/padic_capped_relative_element.c:4872)()\n\n/Users/craigcitro/rational.pyx in sage.rings.rational.Rational.__init__ (sage/rings/rational.c:3767)()\n\n/Users/craigcitro/rational.pyx in sage.rings.rational.Rational.__set_value (sage/rings/rational.c:4567)()\n\n/Users/craigcitro/three-one/local/lib/python2.5/site-packages/sage/interfaces/expect.py in _rational_(self)\n   1393     def _rational_(self):\n   1394         import sage.rings.all\n-> 1395         return sage.rings.all.Rational(repr(self))\n   1396 \n   1397     def name(self, new_name=None):\n\n/Users/craigcitro/rational.pyx in sage.rings.rational.Rational.__init__ (sage/rings/rational.c:3767)()\n\n/Users/craigcitro/rational.pyx in sage.rings.rational.Rational.__set_value (sage/rings/rational.c:4533)()\n\nTypeError: unable to convert 3 + 7 + 2*7^2 + 6*7^3 + 7^4 + 2*7^5 + 7^6 + 2*7^7 + 4*7^8 + 6*7^9 + 6*7^10 + 2*7^11 + 7^12 + 7^13 + 2*7^15 + 7^16 + 7^17 + 4*7^18 + 6*7^19 + O(7^20) to a rational\n```\n\n\nThe trouble is that the code in the `__init__` method for `pAdicCappedRelativeElement`s only looks for Pari `gen` objects, not `GpElement`s. The fix should be trivial, but I'm going to look at it tomorrow.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3865\n\n",
     "created_at": "2008-08-15T02:38:07Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_003865.json:
     "title": "Bug in conversion from gp elements to p-adics",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3865",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 David Loeffler ran into the following:
 
@@ -96,16 +96,16 @@ Michael
 archive/issue_comments_027550.json:
 ```json
 {
-    "body": "Attachment [trac_3865.patch](tarball://root/attachments/some-uuid/ticket3865/trac_3865.patch) by davidloeffler created at 2013-07-22 19:46:43\n\nPatch against 5.11.beta3",
+    "body": "Attachment [trac_3865.patch](tarball://root/attachments/some-uuid/ticket3865/trac_3865.patch) by @loefflerd created at 2013-07-22 19:46:43\n\nPatch against 5.11.beta3",
     "created_at": "2013-07-22T19:46:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3865#issuecomment-27550",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_3865.patch](tarball://root/attachments/some-uuid/ticket3865/trac_3865.patch) by davidloeffler created at 2013-07-22 19:46:43
+Attachment [trac_3865.patch](tarball://root/attachments/some-uuid/ticket3865/trac_3865.patch) by @loefflerd created at 2013-07-22 19:46:43
 
 Patch against 5.11.beta3
 
@@ -121,7 +121,7 @@ archive/issue_comments_027551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3865#issuecomment-27551",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_027552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3865#issuecomment-27552",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_027553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3865#issuecomment-27553",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_027556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3865#issuecomment-27556",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

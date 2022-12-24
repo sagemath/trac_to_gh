@@ -14,7 +14,7 @@ archive/issues_006762.json:
     "title": "[with patch, needs review] add __contains__ to quaternion algebra ideals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6762",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tbd
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6762
 archive/issue_comments_055672.json:
 ```json
 {
-    "body": "Attachment [6762-in-qa.patch](tarball://root/attachments/some-uuid/ticket6762/6762-in-qa.patch) by robertwb created at 2009-08-16 09:17:21",
+    "body": "Attachment [6762-in-qa.patch](tarball://root/attachments/some-uuid/ticket6762/6762-in-qa.patch) by @robertwb created at 2009-08-16 09:17:21",
     "created_at": "2009-08-16T09:17:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6762#issuecomment-55672",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [6762-in-qa.patch](tarball://root/attachments/some-uuid/ticket6762/6762-in-qa.patch) by robertwb created at 2009-08-16 09:17:21
+Attachment [6762-in-qa.patch](tarball://root/attachments/some-uuid/ticket6762/6762-in-qa.patch) by @robertwb created at 2009-08-16 09:17:21
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_055673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6762#issuecomment-55673",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

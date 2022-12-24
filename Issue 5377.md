@@ -3,7 +3,7 @@
 archive/issues_005377.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: K.<a> = NumberField(x^2 + 1)\nsage: K.class_group()\nClass group of order 1 with structure  of Number Field in a with defining polynomial x^2 + 1\n```\n\n\nThere is something missing after \"structure\".\n\nThis is possibly related to #2574 (which is marked as fixed...)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5377\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: K.<a> = NumberField(x^2 + 1)\nsage: K.class_group()\nClass group of order 1 with structure  of Number Field in a with defining polynomial x^2 + 1\n```\n\n\nThere is something missing after \"structure\".\n\nThis is possibly related to #2574 (which is marked as fixed...)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5377\n\n",
     "created_at": "2009-02-26T00:53:26Z",
     "labels": [
         "number theory",
@@ -17,7 +17,7 @@ archive/issues_005377.json:
     "user": "dmharvey"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -48,7 +48,7 @@ archive/issue_comments_041406.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5377#issuecomment-41406",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -61,16 +61,16 @@ Changing component from number theory to number fields.
 archive/issue_comments_041407.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-07-21T08:08:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5377#issuecomment-41407",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 
@@ -84,7 +84,7 @@ archive/issue_comments_041408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5377#issuecomment-41408",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_041409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5377#issuecomment-41409",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_009770.json:
     "title": "update instructions for reviewers, especially for new developers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9770",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 Assignee: mvngu
@@ -43,7 +43,7 @@ archive/issue_comments_095753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9770#issuecomment-95753",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_095754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9770#issuecomment-95754",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -110,16 +110,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_095757.json:
 ```json
 {
-    "body": "Attachment [trac_9771_update_instructions_for_reviewers.patch](tarball://root/attachments/some-uuid/ticket9771/trac_9771_update_instructions_for_reviewers.patch) by niles created at 2010-09-07 19:55:29\n\nfirst version",
+    "body": "Attachment [trac_9771_update_instructions_for_reviewers.patch](tarball://root/attachments/some-uuid/ticket9771/trac_9771_update_instructions_for_reviewers.patch) by @nilesjohnson created at 2010-09-07 19:55:29\n\nfirst version",
     "created_at": "2010-09-07T19:55:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9770#issuecomment-95757",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
-Attachment [trac_9771_update_instructions_for_reviewers.patch](tarball://root/attachments/some-uuid/ticket9771/trac_9771_update_instructions_for_reviewers.patch) by niles created at 2010-09-07 19:55:29
+Attachment [trac_9771_update_instructions_for_reviewers.patch](tarball://root/attachments/some-uuid/ticket9771/trac_9771_update_instructions_for_reviewers.patch) by @nilesjohnson created at 2010-09-07 19:55:29
 
 first version
 
@@ -135,7 +135,7 @@ archive/issue_comments_095758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9770#issuecomment-95758",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_095759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9770#issuecomment-95759",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

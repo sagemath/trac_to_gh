@@ -3,7 +3,7 @@
 archive/issues_009245.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  novoselt\n\nHere is some initial shot at constructing toric varieties \"by name\". It might be useful to write doctests for the toric varieties. Once the dust has settled we might want to load pickled objects, but for now we construct the fans from generating cones.\n\nObviously this relies on #8988, which isn't finished yet. Also, I haven't added the import to `all.py` to avoid patch rejects.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9245\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @novoselt\n\nHere is some initial shot at constructing toric varieties \"by name\". It might be useful to write doctests for the toric varieties. Once the dust has settled we might want to load pickled objects, but for now we construct the fans from generating cones.\n\nObviously this relies on #8988, which isn't finished yet. Also, I haven't added the import to `all.py` to avoid patch rejects.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9245\n\n",
     "created_at": "2010-06-15T15:22:17Z",
     "labels": [
         "algebraic geometry",
@@ -14,12 +14,12 @@ archive/issues_009245.json:
     "title": "Add library of toric varieties",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9245",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  novoselt
+CC:  @novoselt
 
 Here is some initial shot at constructing toric varieties "by name". It might be useful to write doctests for the toric varieties. Once the dust has settled we might want to load pickled objects, but for now we construct the fans from generating cones.
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9245
 archive/issue_comments_086967.json:
 ```json
 {
-    "body": "Attachment [named_toric_varieties.py](tarball://root/attachments/some-uuid/ticket9245/named_toric_varieties.py) by vbraun created at 2010-06-15 15:22:55\n\nInitial patch",
+    "body": "Attachment [named_toric_varieties.py](tarball://root/attachments/some-uuid/ticket9245/named_toric_varieties.py) by @vbraun created at 2010-06-15 15:22:55\n\nInitial patch",
     "created_at": "2010-06-15T15:22:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86967",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [named_toric_varieties.py](tarball://root/attachments/some-uuid/ticket9245/named_toric_varieties.py) by vbraun created at 2010-06-15 15:22:55
+Attachment [named_toric_varieties.py](tarball://root/attachments/some-uuid/ticket9245/named_toric_varieties.py) by @vbraun created at 2010-06-15 15:22:55
 
 Initial patch
 
@@ -61,7 +61,7 @@ archive/issue_comments_086968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86968",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_086969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86969",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_086970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86970",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_086971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86971",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_086972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86972",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_086973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86973",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_086974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86974",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_086975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86975",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -241,16 +241,16 @@ Now with commit message. What is the recommended way of extracting a patch from 
 archive/issue_comments_086976.json:
 ```json
 {
-    "body": "Attachment [trac_9245_named_toric_varieties.py](tarball://root/attachments/some-uuid/ticket9245/trac_9245_named_toric_varieties.py) by vbraun created at 2010-06-25 15:58:20\n\nImproved patch",
+    "body": "Attachment [trac_9245_named_toric_varieties.py](tarball://root/attachments/some-uuid/ticket9245/trac_9245_named_toric_varieties.py) by @vbraun created at 2010-06-25 15:58:20\n\nImproved patch",
     "created_at": "2010-06-25T15:58:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86976",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [trac_9245_named_toric_varieties.py](tarball://root/attachments/some-uuid/ticket9245/trac_9245_named_toric_varieties.py) by vbraun created at 2010-06-25 15:58:20
+Attachment [trac_9245_named_toric_varieties.py](tarball://root/attachments/some-uuid/ticket9245/trac_9245_named_toric_varieties.py) by @vbraun created at 2010-06-25 15:58:20
 
 Improved patch
 
@@ -266,7 +266,7 @@ archive/issue_comments_086977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86977",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_086978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86978",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_086979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86979",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -324,7 +324,7 @@ archive/issue_comments_086980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86980",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -342,7 +342,7 @@ archive/issue_comments_086981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86981",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -360,7 +360,7 @@ archive/issue_comments_086982.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86982",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -378,7 +378,7 @@ archive/issue_comments_086983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86983",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -396,7 +396,7 @@ archive/issue_comments_086984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86984",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -427,7 +427,7 @@ archive/issue_comments_086985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86985",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -447,7 +447,7 @@ archive/issue_comments_086986.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86986",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -460,16 +460,16 @@ Refreshed patch to work correctly with the final version of the `CPRFanoToricVar
 archive/issue_comments_086987.json:
 ```json
 {
-    "body": "Attachment [trac_9245_named_toric_varieties.patch](tarball://root/attachments/some-uuid/ticket9245/trac_9245_named_toric_varieties.patch) by vbraun created at 2010-07-02 10:41:44\n\nUpdated patch",
+    "body": "Attachment [trac_9245_named_toric_varieties.patch](tarball://root/attachments/some-uuid/ticket9245/trac_9245_named_toric_varieties.patch) by @vbraun created at 2010-07-02 10:41:44\n\nUpdated patch",
     "created_at": "2010-07-02T10:41:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86987",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [trac_9245_named_toric_varieties.patch](tarball://root/attachments/some-uuid/ticket9245/trac_9245_named_toric_varieties.patch) by vbraun created at 2010-07-02 10:41:44
+Attachment [trac_9245_named_toric_varieties.patch](tarball://root/attachments/some-uuid/ticket9245/trac_9245_named_toric_varieties.patch) by @vbraun created at 2010-07-02 10:41:44
 
 Updated patch
 
@@ -485,7 +485,7 @@ archive/issue_comments_086988.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86988",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -558,7 +558,7 @@ archive/issue_comments_086989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86989",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -576,7 +576,7 @@ archive/issue_comments_086990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86990",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -596,7 +596,7 @@ archive/issue_comments_086991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86991",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -622,7 +622,7 @@ archive/issue_comments_086992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86992",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -637,16 +637,16 @@ Updated patch follows.
 archive/issue_comments_086993.json:
 ```json
 {
-    "body": "Attachment [trac_9245_named_toric_varieties.2.patch](tarball://root/attachments/some-uuid/ticket9245/trac_9245_named_toric_varieties.2.patch) by vbraun created at 2010-07-02 21:56:18\n\nUpdated patch",
+    "body": "Attachment [trac_9245_named_toric_varieties.2.patch](tarball://root/attachments/some-uuid/ticket9245/trac_9245_named_toric_varieties.2.patch) by @vbraun created at 2010-07-02 21:56:18\n\nUpdated patch",
     "created_at": "2010-07-02T21:56:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86993",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [trac_9245_named_toric_varieties.2.patch](tarball://root/attachments/some-uuid/ticket9245/trac_9245_named_toric_varieties.2.patch) by vbraun created at 2010-07-02 21:56:18
+Attachment [trac_9245_named_toric_varieties.2.patch](tarball://root/attachments/some-uuid/ticket9245/trac_9245_named_toric_varieties.2.patch) by @vbraun created at 2010-07-02 21:56:18
 
 Updated patch
 
@@ -662,7 +662,7 @@ archive/issue_comments_086994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86994",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -701,7 +701,7 @@ archive/issue_comments_086995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86995",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -727,7 +727,7 @@ archive/issue_comments_086996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86996",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -740,16 +740,16 @@ I settled on "INPUT: A toric variety" since I like articles... I also beautified
 archive/issue_comments_086997.json:
 ```json
 {
-    "body": "Attachment [trac_9245_named_toric_varieties.3.patch](tarball://root/attachments/some-uuid/ticket9245/trac_9245_named_toric_varieties.3.patch) by vbraun created at 2010-07-03 12:22:54\n\nUpdated patch",
+    "body": "Attachment [trac_9245_named_toric_varieties.3.patch](tarball://root/attachments/some-uuid/ticket9245/trac_9245_named_toric_varieties.3.patch) by @vbraun created at 2010-07-03 12:22:54\n\nUpdated patch",
     "created_at": "2010-07-03T12:22:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86997",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [trac_9245_named_toric_varieties.3.patch](tarball://root/attachments/some-uuid/ticket9245/trac_9245_named_toric_varieties.3.patch) by vbraun created at 2010-07-03 12:22:54
+Attachment [trac_9245_named_toric_varieties.3.patch](tarball://root/attachments/some-uuid/ticket9245/trac_9245_named_toric_varieties.3.patch) by @vbraun created at 2010-07-03 12:22:54
 
 Updated patch
 
@@ -760,16 +760,16 @@ Updated patch
 archive/issue_comments_086998.json:
 ```json
 {
-    "body": "Attachment [trac_9245_toric_library_reviewer.patch](tarball://root/attachments/some-uuid/ticket9245/trac_9245_toric_library_reviewer.patch) by novoselt created at 2010-07-03 18:50:10",
+    "body": "Attachment [trac_9245_toric_library_reviewer.patch](tarball://root/attachments/some-uuid/ticket9245/trac_9245_toric_library_reviewer.patch) by @novoselt created at 2010-07-03 18:50:10",
     "created_at": "2010-07-03T18:50:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86998",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_9245_toric_library_reviewer.patch](tarball://root/attachments/some-uuid/ticket9245/trac_9245_toric_library_reviewer.patch) by novoselt created at 2010-07-03 18:50:10
+Attachment [trac_9245_toric_library_reviewer.patch](tarball://root/attachments/some-uuid/ticket9245/trac_9245_toric_library_reviewer.patch) by @novoselt created at 2010-07-03 18:50:10
 
 
 
@@ -783,7 +783,7 @@ archive/issue_comments_086999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86999",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -805,7 +805,7 @@ archive/issue_comments_087000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-87000",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -823,7 +823,7 @@ archive/issue_comments_087001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-87001",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -841,7 +841,7 @@ archive/issue_comments_087002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-87002",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -859,7 +859,7 @@ archive/issue_comments_087003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-87003",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

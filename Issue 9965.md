@@ -3,7 +3,7 @@
 archive/issues_009965.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  jhpalmieri\n\nThis is a follow-up of problems noted on #8633 (see the bottom of the ticket).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9966\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @jhpalmieri\n\nThis is a follow-up of problems noted on #8633 (see the bottom of the ticket).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9966\n\n",
     "created_at": "2010-09-22T04:00:58Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_009965.json:
     "title": "remove texttt from html.table output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9965",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jason, was
 
-CC:  jhpalmieri
+CC:  @jhpalmieri
 
 This is a follow-up of problems noted on #8633 (see the bottom of the ticket).
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9966
 archive/issue_comments_099812.json:
 ```json
 {
-    "body": "Attachment [9966-texttt.patch](tarball://root/attachments/some-uuid/ticket9966/9966-texttt.patch) by jason created at 2010-09-22 04:03:06",
+    "body": "Attachment [9966-texttt.patch](tarball://root/attachments/some-uuid/ticket9966/9966-texttt.patch) by @jasongrout created at 2010-09-22 04:03:06",
     "created_at": "2010-09-22T04:03:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9965#issuecomment-99812",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [9966-texttt.patch](tarball://root/attachments/some-uuid/ticket9966/9966-texttt.patch) by jason created at 2010-09-22 04:03:06
+Attachment [9966-texttt.patch](tarball://root/attachments/some-uuid/ticket9966/9966-texttt.patch) by @jasongrout created at 2010-09-22 04:03:06
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_099813.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9965#issuecomment-99813",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_099814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9965#issuecomment-99814",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_099815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9965#issuecomment-99815",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_099816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9965#issuecomment-99816",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_099817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9965#issuecomment-99817",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_099818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9965#issuecomment-99818",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_099819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9965#issuecomment-99819",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

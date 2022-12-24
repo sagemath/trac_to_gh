@@ -3,7 +3,7 @@
 archive/issues_009695.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  davidloeffler cremona was\n\nThe `__call__` functions for `AdditiveAbelianGroup` and `AdditiveAbelianGroupWrapper` don't behave as I would expect, nor as the doctests would lead one to believe.\n\nDocumentation for the wrapper class says:\n\n```\n...or an iterable (in which case the result is the corresponding\nproduct of the generators of self).\n```\n\n\nIt seems that the iterable instead gives a linear combination of the generators used in the \"optimized\" version of the quotient modules.  Most (all?) of the doctests use examples where the number of invariants is equal to the number of original generators, so the optimization is trivial and the situations below are not exposed.\n\nSee #9694 for an example of working around this.\n\nHere, I'd expect `M([1,1,1])` to be `M.0+M.1+M.2`, and not an error\n\n```\nsage: E = EllipticCurve('30a2')\nsage: pts = [E(4,-7,1), E(7/4, -11/8, 1), E(3, -2, 1)]\nsage: M = AdditiveAbelianGroupWrapper(pts[0].parent(), pts, [3, 2, 2])\nsage: M.gens()\n((4 : -7 : 1), (7/4 : -11/8 : 1), (3 : -2 : 1))\nsage: M([1,1,1])\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/sage/sage-4.5.2.rc1/devel/sage-main/<ipython console> in <module>()\n\n/sage/sage-4.5.2.rc1/local/lib/python2.6/site-packages/sage/groups/additive_abelian/additive_abelian_wrapper.pyc in __call__(self, x, check)\n    234             elif x.parent() is self.universe():\n    235                 return AdditiveAbelianGroupWrapperElement(self, self._discrete_log(x), element = x)\n--> 236         return addgp.AdditiveAbelianGroup_fixed_gens.__call__(self, x, check)\n    237\n    238 class AdditiveAbelianGroupWrapperElement(addgp.AdditiveAbelianGroupElement):\n\n/sage/sage-4.5.2.rc1/local/lib/python2.6/site-packages/sage/modules/fg_pid/fgp_module.pyc in __call__(self, x, check)\n    481                 x = self.optimized()[0].V().linear_combination_of_basis(x)\n    482             except ValueError, msg:\n--> 483                 raise TypeError, msg\n    484         elif isinstance(x, FGP_Element):\n    485             x = x.lift()\n\nTypeError: length of v must be at most the number of rows of self\n```\n\n\n\nNo problem when the number of invariants equal the number of generators:\n\n```\nsage: G=AdditiveAbelianGroup([17])\nsage: a=G([12])\nsage: a\n(12)\n```\n\n\nThe problem case again, up in the base class\n\n```\nsage: H=AdditiveAbelianGroup([3,7])\nsage: b=H([12])\nsage: b\n(0, 4)\n\nsage: c=H([2,3])\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/sage/sage-4.5.2.rc1/devel/sage-main/<ipython console> in <module>()\n\n/sage/sage-4.5.2.rc1/local/lib/python2.6/site-packages/sage/modules/fg_pid/fgp_module.pyc in __call__(self, x, check)\n    481                 x = self.optimized()[0].V().linear_combination_of_basis(x)\n    482             except ValueError, msg:\n--> 483                 raise TypeError, msg\n    484         elif isinstance(x, FGP_Element):\n    485             x = x.lift()\n\nTypeError: length of v must be at most the number of rows of self\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9695\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @loefflerd @JohnCremona @williamstein\n\nThe `__call__` functions for `AdditiveAbelianGroup` and `AdditiveAbelianGroupWrapper` don't behave as I would expect, nor as the doctests would lead one to believe.\n\nDocumentation for the wrapper class says:\n\n```\n...or an iterable (in which case the result is the corresponding\nproduct of the generators of self).\n```\n\n\nIt seems that the iterable instead gives a linear combination of the generators used in the \"optimized\" version of the quotient modules.  Most (all?) of the doctests use examples where the number of invariants is equal to the number of original generators, so the optimization is trivial and the situations below are not exposed.\n\nSee #9694 for an example of working around this.\n\nHere, I'd expect `M([1,1,1])` to be `M.0+M.1+M.2`, and not an error\n\n```\nsage: E = EllipticCurve('30a2')\nsage: pts = [E(4,-7,1), E(7/4, -11/8, 1), E(3, -2, 1)]\nsage: M = AdditiveAbelianGroupWrapper(pts[0].parent(), pts, [3, 2, 2])\nsage: M.gens()\n((4 : -7 : 1), (7/4 : -11/8 : 1), (3 : -2 : 1))\nsage: M([1,1,1])\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/sage/sage-4.5.2.rc1/devel/sage-main/<ipython console> in <module>()\n\n/sage/sage-4.5.2.rc1/local/lib/python2.6/site-packages/sage/groups/additive_abelian/additive_abelian_wrapper.pyc in __call__(self, x, check)\n    234             elif x.parent() is self.universe():\n    235                 return AdditiveAbelianGroupWrapperElement(self, self._discrete_log(x), element = x)\n--> 236         return addgp.AdditiveAbelianGroup_fixed_gens.__call__(self, x, check)\n    237\n    238 class AdditiveAbelianGroupWrapperElement(addgp.AdditiveAbelianGroupElement):\n\n/sage/sage-4.5.2.rc1/local/lib/python2.6/site-packages/sage/modules/fg_pid/fgp_module.pyc in __call__(self, x, check)\n    481                 x = self.optimized()[0].V().linear_combination_of_basis(x)\n    482             except ValueError, msg:\n--> 483                 raise TypeError, msg\n    484         elif isinstance(x, FGP_Element):\n    485             x = x.lift()\n\nTypeError: length of v must be at most the number of rows of self\n```\n\n\n\nNo problem when the number of invariants equal the number of generators:\n\n```\nsage: G=AdditiveAbelianGroup([17])\nsage: a=G([12])\nsage: a\n(12)\n```\n\n\nThe problem case again, up in the base class\n\n```\nsage: H=AdditiveAbelianGroup([3,7])\nsage: b=H([12])\nsage: b\n(0, 4)\n\nsage: c=H([2,3])\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/sage/sage-4.5.2.rc1/devel/sage-main/<ipython console> in <module>()\n\n/sage/sage-4.5.2.rc1/local/lib/python2.6/site-packages/sage/modules/fg_pid/fgp_module.pyc in __call__(self, x, check)\n    481                 x = self.optimized()[0].V().linear_combination_of_basis(x)\n    482             except ValueError, msg:\n--> 483                 raise TypeError, msg\n    484         elif isinstance(x, FGP_Element):\n    485             x = x.lift()\n\nTypeError: length of v must be at most the number of rows of self\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9695\n\n",
     "created_at": "2010-08-06T03:16:32Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_009695.json:
     "title": "AdditiveAbelianGroup, __call__ is misleading and complicated",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9695",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  davidloeffler cremona was
+CC:  @loefflerd @JohnCremona @williamstein
 
 The `__call__` functions for `AdditiveAbelianGroup` and `AdditiveAbelianGroupWrapper` don't behave as I would expect, nor as the doctests would lead one to believe.
 
@@ -119,7 +119,7 @@ archive/issue_comments_094223.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9695#issuecomment-94223",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_094224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9695#issuecomment-94224",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_094225.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9695#issuecomment-94225",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_094226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9695#issuecomment-94226",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_094227.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9695#issuecomment-94227",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_094228.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9695#issuecomment-94228",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_094229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9695#issuecomment-94229",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_094230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9695#issuecomment-94230",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_094231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9695#issuecomment-94231",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_094232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9695#issuecomment-94232",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

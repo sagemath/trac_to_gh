@@ -3,7 +3,7 @@
 archive/issues_007783.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: sphere()\n```\n\n\ndoesn't work.  The same from the Sage notebook works fine. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7783\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: sphere()\n```\n\n\ndoesn't work.  The same from the Sage notebook works fine. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7783\n\n",
     "created_at": "2009-12-29T06:28:44Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_007783.json:
     "title": "3d graphics (viewed with jmol) do not work from the command line on OS X 10.6 sage-4.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7783",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -43,7 +43,7 @@ archive/issue_comments_067113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7783#issuecomment-67113",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_067114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7783#issuecomment-67114",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_067115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7783#issuecomment-67115",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -128,16 +128,16 @@ Changing status from new to needs_review.
 archive/issue_comments_067116.json:
 ```json
 {
-    "body": "Attachment [sagenb_7783.patch](tarball://root/attachments/some-uuid/ticket7783/sagenb_7783.patch) by timdumol created at 2009-12-29 08:40:50\n\nApply this patch alone to the sagenb repo. Updates scripts to use pkg_resources to look for sagenb.",
+    "body": "Attachment [sagenb_7783.patch](tarball://root/attachments/some-uuid/ticket7783/sagenb_7783.patch) by @TimDumol created at 2009-12-29 08:40:50\n\nApply this patch alone to the sagenb repo. Updates scripts to use pkg_resources to look for sagenb.",
     "created_at": "2009-12-29T08:40:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7783#issuecomment-67116",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [sagenb_7783.patch](tarball://root/attachments/some-uuid/ticket7783/sagenb_7783.patch) by timdumol created at 2009-12-29 08:40:50
+Attachment [sagenb_7783.patch](tarball://root/attachments/some-uuid/ticket7783/sagenb_7783.patch) by @TimDumol created at 2009-12-29 08:40:50
 
 Apply this patch alone to the sagenb repo. Updates scripts to use pkg_resources to look for sagenb.
 
@@ -148,16 +148,16 @@ Apply this patch alone to the sagenb repo. Updates scripts to use pkg_resources 
 archive/issue_comments_067117.json:
 ```json
 {
-    "body": "Attachment [trac_7783-sage-scripts.patch](tarball://root/attachments/some-uuid/ticket7783/trac_7783-sage-scripts.patch) by timdumol created at 2009-12-29 08:41:26\n\nApply this patch alone to the sage scripts repo. Adds a script that uses pkg_resources to find the location of a given package.",
+    "body": "Attachment [trac_7783-sage-scripts.patch](tarball://root/attachments/some-uuid/ticket7783/trac_7783-sage-scripts.patch) by @TimDumol created at 2009-12-29 08:41:26\n\nApply this patch alone to the sage scripts repo. Adds a script that uses pkg_resources to find the location of a given package.",
     "created_at": "2009-12-29T08:41:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7783#issuecomment-67117",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7783-sage-scripts.patch](tarball://root/attachments/some-uuid/ticket7783/trac_7783-sage-scripts.patch) by timdumol created at 2009-12-29 08:41:26
+Attachment [trac_7783-sage-scripts.patch](tarball://root/attachments/some-uuid/ticket7783/trac_7783-sage-scripts.patch) by @TimDumol created at 2009-12-29 08:41:26
 
 Apply this patch alone to the sage scripts repo. Adds a script that uses pkg_resources to find the location of a given package.
 
@@ -173,7 +173,7 @@ archive/issue_comments_067118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7783#issuecomment-67118",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_067119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7783#issuecomment-67119",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_067120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7783#issuecomment-67120",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_067121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7783#issuecomment-67121",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

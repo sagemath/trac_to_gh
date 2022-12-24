@@ -3,7 +3,7 @@
 archive/issues_005739.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  robertwb fredrik\n\n\n```\nwstein@bsd:~/build/sage-3.4.1.rc1$ uname -a\nDarwin bsd.local 9.6.0 Darwin Kernel Version 9.6.0: Mon Nov 24 17:37:00 PST 2008; root:xnu-1228.9.59~1/RELEASE_I386 i386\n\nwstein@bsd:~/build/sage-3.4.1.rc1$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: zeta(CDF(1))\n| Sage Version 3.4.1.rc1, Release Date: 2009-04-05                   |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5739\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb fredrik\n\n\n```\nwstein@bsd:~/build/sage-3.4.1.rc1$ uname -a\nDarwin bsd.local 9.6.0 Darwin Kernel Version 9.6.0: Mon Nov 24 17:37:00 PST 2008; root:xnu-1228.9.59~1/RELEASE_I386 i386\n\nwstein@bsd:~/build/sage-3.4.1.rc1$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: zeta(CDF(1))\n| Sage Version 3.4.1.rc1, Release Date: 2009-04-05                   |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5739\n\n",
     "created_at": "2009-04-10T23:09:59Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_005739.json:
     "title": "zeta(CDF(1)) go boom!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5739",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  robertwb fredrik
+CC:  @robertwb fredrik
 
 
 ```
@@ -61,7 +61,7 @@ archive/issue_comments_044861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5739#issuecomment-44861",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_044862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5739#issuecomment-44862",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -124,16 +124,16 @@ We should be able to replace the calls to pari with calls to mpmath.
 archive/issue_comments_044863.json:
 ```json
 {
-    "body": "Changing assignee from was to fredrik.",
+    "body": "Changing assignee from @williamstein to fredrik.",
     "created_at": "2009-06-05T04:42:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5739#issuecomment-44863",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to fredrik.
+Changing assignee from @williamstein to fredrik.
 
 
 
@@ -147,7 +147,7 @@ archive/issue_comments_044864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5739#issuecomment-44864",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_044865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5739#issuecomment-44865",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -178,16 +178,16 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_044866.json:
 ```json
 {
-    "body": "Attachment [trac_5739.patch](tarball://root/attachments/some-uuid/ticket5739/trac_5739.patch) by kcrisman created at 2010-01-18 16:22:05\n\nThe patch looks fine, but results in zeta of a CDF being approximately fifty times slower.  This seems problematic, and perhaps also something that would happen a lot if we start switching things to mpmath?  Mpmath looks like a great package, but if it has the same issue as NetworkX versus C graphs, we might not want to move default behavior there quite yet. \n\nMarking as needs_info since there does not seem to be a Sage-wide policy on mpmath at this point, and I am reluctant to give positive review to such a marked slowdown.",
+    "body": "Attachment [trac_5739.patch](tarball://root/attachments/some-uuid/ticket5739/trac_5739.patch) by @kcrisman created at 2010-01-18 16:22:05\n\nThe patch looks fine, but results in zeta of a CDF being approximately fifty times slower.  This seems problematic, and perhaps also something that would happen a lot if we start switching things to mpmath?  Mpmath looks like a great package, but if it has the same issue as NetworkX versus C graphs, we might not want to move default behavior there quite yet. \n\nMarking as needs_info since there does not seem to be a Sage-wide policy on mpmath at this point, and I am reluctant to give positive review to such a marked slowdown.",
     "created_at": "2010-01-18T16:22:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5739#issuecomment-44866",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_5739.patch](tarball://root/attachments/some-uuid/ticket5739/trac_5739.patch) by kcrisman created at 2010-01-18 16:22:05
+Attachment [trac_5739.patch](tarball://root/attachments/some-uuid/ticket5739/trac_5739.patch) by @kcrisman created at 2010-01-18 16:22:05
 
 The patch looks fine, but results in zeta of a CDF being approximately fifty times slower.  This seems problematic, and perhaps also something that would happen a lot if we start switching things to mpmath?  Mpmath looks like a great package, but if it has the same issue as NetworkX versus C graphs, we might not want to move default behavior there quite yet. 
 
@@ -200,16 +200,16 @@ Marking as needs_info since there does not seem to be a Sage-wide policy on mpma
 archive/issue_comments_044867.json:
 ```json
 {
-    "body": "Attachment [5739-CDF-zeta.patch](tarball://root/attachments/some-uuid/ticket5739/5739-CDF-zeta.patch) by robertwb created at 2010-01-18 19:45:45",
+    "body": "Attachment [5739-CDF-zeta.patch](tarball://root/attachments/some-uuid/ticket5739/5739-CDF-zeta.patch) by @robertwb created at 2010-01-18 19:45:45",
     "created_at": "2010-01-18T19:45:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5739#issuecomment-44867",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5739-CDF-zeta.patch](tarball://root/attachments/some-uuid/ticket5739/5739-CDF-zeta.patch) by robertwb created at 2010-01-18 19:45:45
+Attachment [5739-CDF-zeta.patch](tarball://root/attachments/some-uuid/ticket5739/5739-CDF-zeta.patch) by @robertwb created at 2010-01-18 19:45:45
 
 
 
@@ -223,7 +223,7 @@ archive/issue_comments_044868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5739#issuecomment-44868",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_044869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5739#issuecomment-44869",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_044870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5739#issuecomment-44870",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -313,7 +313,7 @@ archive/issue_comments_044871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5739#issuecomment-44871",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -331,7 +331,7 @@ archive/issue_comments_044872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5739#issuecomment-44872",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -352,16 +352,16 @@ Other than that, I would recommend keeping Pari where it's faster.
 archive/issue_comments_044873.json:
 ```json
 {
-    "body": "Attachment [5739-CC-RR.patch](tarball://root/attachments/some-uuid/ticket5739/5739-CC-RR.patch) by robertwb created at 2010-01-24 11:11:05\n\napply this and 5739-CDF-zeta.patch",
+    "body": "Attachment [5739-CC-RR.patch](tarball://root/attachments/some-uuid/ticket5739/5739-CC-RR.patch) by @robertwb created at 2010-01-24 11:11:05\n\napply this and 5739-CDF-zeta.patch",
     "created_at": "2010-01-24T11:11:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5739#issuecomment-44873",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5739-CC-RR.patch](tarball://root/attachments/some-uuid/ticket5739/5739-CC-RR.patch) by robertwb created at 2010-01-24 11:11:05
+Attachment [5739-CC-RR.patch](tarball://root/attachments/some-uuid/ticket5739/5739-CC-RR.patch) by @robertwb created at 2010-01-24 11:11:05
 
 apply this and 5739-CDF-zeta.patch
 
@@ -377,7 +377,7 @@ archive/issue_comments_044874.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5739#issuecomment-44874",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -395,7 +395,7 @@ archive/issue_comments_044875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5739#issuecomment-44875",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -423,7 +423,7 @@ archive/issue_comments_044876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5739#issuecomment-44876",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -483,7 +483,7 @@ archive/issue_comments_044877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5739#issuecomment-44877",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -501,7 +501,7 @@ archive/issue_comments_044878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5739#issuecomment-44878",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -514,16 +514,16 @@ Since #8864, `zeta(1)` returns the answer given by GiNaC, which leaves it uneval
 archive/issue_comments_044879.json:
 ```json
 {
-    "body": "Attachment [5739-complex-zeta.patch](tarball://root/attachments/some-uuid/ticket5739/5739-complex-zeta.patch) by robertwb created at 2010-07-29 06:49:38\n\napply only this patch",
+    "body": "Attachment [5739-complex-zeta.patch](tarball://root/attachments/some-uuid/ticket5739/5739-complex-zeta.patch) by @robertwb created at 2010-07-29 06:49:38\n\napply only this patch",
     "created_at": "2010-07-29T06:49:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5739#issuecomment-44879",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5739-complex-zeta.patch](tarball://root/attachments/some-uuid/ticket5739/5739-complex-zeta.patch) by robertwb created at 2010-07-29 06:49:38
+Attachment [5739-complex-zeta.patch](tarball://root/attachments/some-uuid/ticket5739/5739-complex-zeta.patch) by @robertwb created at 2010-07-29 06:49:38
 
 apply only this patch
 
@@ -539,7 +539,7 @@ archive/issue_comments_044880.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5739#issuecomment-44880",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -557,7 +557,7 @@ archive/issue_comments_044881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5739#issuecomment-44881",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -584,7 +584,7 @@ archive/issue_comments_044882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5739#issuecomment-44882",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -602,7 +602,7 @@ archive/issue_comments_044883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5739#issuecomment-44883",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -620,7 +620,7 @@ archive/issue_comments_044884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5739#issuecomment-44884",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -638,7 +638,7 @@ archive/issue_comments_044885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5739#issuecomment-44885",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -656,7 +656,7 @@ archive/issue_comments_044886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5739#issuecomment-44886",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -674,7 +674,7 @@ archive/issue_comments_044887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5739#issuecomment-44887",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -687,16 +687,16 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_044888.json:
 ```json
 {
-    "body": "Attachment [5739-complex-zeta-with-header.patch](tarball://root/attachments/some-uuid/ticket5739/5739-complex-zeta-with-header.patch) by davidloeffler created at 2010-09-28 08:26:27\n\nDone",
+    "body": "Attachment [5739-complex-zeta-with-header.patch](tarball://root/attachments/some-uuid/ticket5739/5739-complex-zeta-with-header.patch) by @loefflerd created at 2010-09-28 08:26:27\n\nDone",
     "created_at": "2010-09-28T08:26:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5739#issuecomment-44888",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [5739-complex-zeta-with-header.patch](tarball://root/attachments/some-uuid/ticket5739/5739-complex-zeta-with-header.patch) by davidloeffler created at 2010-09-28 08:26:27
+Attachment [5739-complex-zeta-with-header.patch](tarball://root/attachments/some-uuid/ticket5739/5739-complex-zeta-with-header.patch) by @loefflerd created at 2010-09-28 08:26:27
 
 Done
 
@@ -712,7 +712,7 @@ archive/issue_comments_044889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5739#issuecomment-44889",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

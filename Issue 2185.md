@@ -3,7 +3,7 @@
 archive/issues_002185.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis improves the way things look when you plot a digraph with the \"heights\" option. The width of the plot is now more intelligently arrived at, so that the arrows aren't so fat.\n\nDepends on #2184 and its dependencies.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2185\n\n",
+    "body": "Assignee: @williamstein\n\nThis improves the way things look when you plot a digraph with the \"heights\" option. The width of the plot is now more intelligently arrived at, so that the arrows aren't so fat.\n\nDepends on #2184 and its dependencies.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2185\n\n",
     "created_at": "2008-02-16T23:36:12Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_002185.json:
     "title": "[with patch, needs easy review] improvement to plotting digraphs with fixed heights",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2185",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This improves the way things look when you plot a digraph with the "heights" option. The width of the plot is now more intelligently arrived at, so that the arrows aren't so fat.
 
@@ -39,7 +39,7 @@ archive/issue_comments_014349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2185",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2185#issuecomment-14349",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing component from algebraic geometry to graph theory.
 archive/issue_comments_014350.json:
 ```json
 {
-    "body": "Changing assignee from was to rlm.",
+    "body": "Changing assignee from @williamstein to @rlmill.",
     "created_at": "2008-02-17T01:16:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2185",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2185#issuecomment-14350",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Changing assignee from was to rlm.
+Changing assignee from @williamstein to @rlmill.
 
 
 
@@ -70,16 +70,16 @@ Changing assignee from was to rlm.
 archive/issue_comments_014351.json:
 ```json
 {
-    "body": "Attachment [ratio-graphs-heights.patch](tarball://root/attachments/some-uuid/ticket2185/ratio-graphs-heights.patch) by rlm created at 2008-02-17 01:16:36",
+    "body": "Attachment [ratio-graphs-heights.patch](tarball://root/attachments/some-uuid/ticket2185/ratio-graphs-heights.patch) by @rlmill created at 2008-02-17 01:16:36",
     "created_at": "2008-02-17T01:16:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2185",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2185#issuecomment-14351",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [ratio-graphs-heights.patch](tarball://root/attachments/some-uuid/ticket2185/ratio-graphs-heights.patch) by rlm created at 2008-02-17 01:16:36
+Attachment [ratio-graphs-heights.patch](tarball://root/attachments/some-uuid/ticket2185/ratio-graphs-heights.patch) by @rlmill created at 2008-02-17 01:16:36
 
 
 

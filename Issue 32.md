@@ -14,7 +14,7 @@ archive/issues_000032.json:
     "title": "missing coercion functionality",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/32",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -44,7 +44,7 @@ archive/issue_comments_000212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/32",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/32#issuecomment-212",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -62,7 +62,7 @@ archive/issue_comments_000213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/32",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/32#issuecomment-213",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

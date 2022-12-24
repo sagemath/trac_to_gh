@@ -3,7 +3,7 @@
 archive/issues_007983.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  darij sage-combinat aschilling tscrim\n\nThe 'descents' and 'major_index' methods of a Tableau return what are more properly known as 'i_descents' and the 'i_maj' statistic.  These should be renamed accordingly, and the proper statistics put in their place.  See, eg., Richard Stanley--Enumerative Combinatorics, Vol. 2 for a reference to the usual definition.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7983\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  @darijgr sage-combinat @anneschilling @tscrim\n\nThe 'descents' and 'major_index' methods of a Tableau return what are more properly known as 'i_descents' and the 'i_maj' statistic.  These should be renamed accordingly, and the proper statistics put in their place.  See, eg., Richard Stanley--Enumerative Combinatorics, Vol. 2 for a reference to the usual definition.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7983\n\n",
     "created_at": "2010-01-18T19:39:19Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_007983.json:
     "title": "Notion of descent/major index in tableau.py is not mathematically standard",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7983",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 Assignee: sage-combinat
 
-CC:  darij sage-combinat aschilling tscrim
+CC:  @darijgr sage-combinat @anneschilling @tscrim
 
 The 'descents' and 'major_index' methods of a Tableau return what are more properly known as 'i_descents' and the 'i_maj' statistic.  These should be renamed accordingly, and the proper statistics put in their place.  See, eg., Richard Stanley--Enumerative Combinatorics, Vol. 2 for a reference to the usual definition.
 
@@ -92,16 +92,16 @@ patch to fix tableaux major index
 archive/issue_comments_069706.json:
 ```json
 {
-    "body": "Attachment [Fix_Tableau_Major_Index_AR.patch](tarball://root/attachments/some-uuid/ticket7983/Fix_Tableau_Major_Index_AR.patch) by jbandlow created at 2010-11-16 14:11:26\n\nThanks for the patch!  While I don't have time for a full review now, the main issue with this patch is going to be backward compatibility.  I'm pretty sure that the Macdonald polynomial code uses these functions, so sage --testall will probably fail after applying your patch.  That part will not be too hard to fix, but the bigger problem is for people who have sage code on their own machine.  When people upgrade sage and this change is included (without them necessarily knowing about it) this change could make their code behave in slightly wrong ways that are not obvious.  We really try to avoid that.\n\nSo I think the thing to do is to deprecate 'descents' and 'major_index' (look up deprecation in the developers guide), use 'i_descents' and 'i_major_index' for the existing statistics (as you have done) and give the classical statistics some new name. (Suggestions welcome!)",
+    "body": "Attachment [Fix_Tableau_Major_Index_AR.patch](tarball://root/attachments/some-uuid/ticket7983/Fix_Tableau_Major_Index_AR.patch) by @jbandlow created at 2010-11-16 14:11:26\n\nThanks for the patch!  While I don't have time for a full review now, the main issue with this patch is going to be backward compatibility.  I'm pretty sure that the Macdonald polynomial code uses these functions, so sage --testall will probably fail after applying your patch.  That part will not be too hard to fix, but the bigger problem is for people who have sage code on their own machine.  When people upgrade sage and this change is included (without them necessarily knowing about it) this change could make their code behave in slightly wrong ways that are not obvious.  We really try to avoid that.\n\nSo I think the thing to do is to deprecate 'descents' and 'major_index' (look up deprecation in the developers guide), use 'i_descents' and 'i_major_index' for the existing statistics (as you have done) and give the classical statistics some new name. (Suggestions welcome!)",
     "created_at": "2010-11-16T14:11:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69706",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
-Attachment [Fix_Tableau_Major_Index_AR.patch](tarball://root/attachments/some-uuid/ticket7983/Fix_Tableau_Major_Index_AR.patch) by jbandlow created at 2010-11-16 14:11:26
+Attachment [Fix_Tableau_Major_Index_AR.patch](tarball://root/attachments/some-uuid/ticket7983/Fix_Tableau_Major_Index_AR.patch) by @jbandlow created at 2010-11-16 14:11:26
 
 Thanks for the patch!  While I don't have time for a full review now, the main issue with this patch is going to be backward compatibility.  I'm pretty sure that the Macdonald polynomial code uses these functions, so sage --testall will probably fail after applying your patch.  That part will not be too hard to fix, but the bigger problem is for people who have sage code on their own machine.  When people upgrade sage and this change is included (without them necessarily knowing about it) this change could make their code behave in slightly wrong ways that are not obvious.  We really try to avoid that.
 
@@ -119,7 +119,7 @@ archive/issue_comments_069707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69707",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_069709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69709",
-    "user": "darij"
+    "user": "@darijgr"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_069710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69710",
-    "user": "darij"
+    "user": "@darijgr"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_069711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69711",
-    "user": "darij"
+    "user": "@darijgr"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_069712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69712",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_069713.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69713",
-    "user": "darij"
+    "user": "@darijgr"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_069714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69714",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_069715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69715",
-    "user": "darij"
+    "user": "@darijgr"
 }
 ```
 
@@ -342,7 +342,7 @@ archive/issue_comments_069716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69716",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -368,7 +368,7 @@ archive/issue_comments_069717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69717",
-    "user": "darij"
+    "user": "@darijgr"
 }
 ```
 
@@ -395,7 +395,7 @@ archive/issue_comments_069718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69718",
-    "user": "darij"
+    "user": "@darijgr"
 }
 ```
 
@@ -413,7 +413,7 @@ archive/issue_comments_069719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69719",
-    "user": "darij"
+    "user": "@darijgr"
 }
 ```
 
@@ -431,7 +431,7 @@ archive/issue_comments_069720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69720",
-    "user": "darij"
+    "user": "@darijgr"
 }
 ```
 
@@ -444,16 +444,16 @@ implements the right notions of major index and descents for standard tableaux w
 archive/issue_comments_069721.json:
 ```json
 {
-    "body": "Attachment [trac_7983-major_index_and_other_tableau_fixes-dg.patch](tarball://root/attachments/some-uuid/ticket7983/trac_7983-major_index_and_other_tableau_fixes-dg.patch) by darij created at 2013-06-17 16:43:39\n\nTypo in a docstring fixed.",
+    "body": "Attachment [trac_7983-major_index_and_other_tableau_fixes-dg.patch](tarball://root/attachments/some-uuid/ticket7983/trac_7983-major_index_and_other_tableau_fixes-dg.patch) by @darijgr created at 2013-06-17 16:43:39\n\nTypo in a docstring fixed.",
     "created_at": "2013-06-17T16:43:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69721",
-    "user": "darij"
+    "user": "@darijgr"
 }
 ```
 
-Attachment [trac_7983-major_index_and_other_tableau_fixes-dg.patch](tarball://root/attachments/some-uuid/ticket7983/trac_7983-major_index_and_other_tableau_fixes-dg.patch) by darij created at 2013-06-17 16:43:39
+Attachment [trac_7983-major_index_and_other_tableau_fixes-dg.patch](tarball://root/attachments/some-uuid/ticket7983/trac_7983-major_index_and_other_tableau_fixes-dg.patch) by @darijgr created at 2013-06-17 16:43:39
 
 Typo in a docstring fixed.
 
@@ -469,7 +469,7 @@ archive/issue_comments_069722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69722",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -491,7 +491,7 @@ archive/issue_comments_069723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69723",
-    "user": "darij"
+    "user": "@darijgr"
 }
 ```
 
@@ -509,7 +509,7 @@ archive/issue_comments_069724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69724",
-    "user": "darij"
+    "user": "@darijgr"
 }
 ```
 
@@ -524,16 +524,16 @@ apply trac_7983-major_index_and_other_tableau_fixes-dg.patch trac_7983-review-ts
 archive/issue_comments_069725.json:
 ```json
 {
-    "body": "Attachment [trac_7983-review-ts.patch](tarball://root/attachments/some-uuid/ticket7983/trac_7983-review-ts.patch) by tscrim created at 2013-07-19 13:14:06",
+    "body": "Attachment [trac_7983-review-ts.patch](tarball://root/attachments/some-uuid/ticket7983/trac_7983-review-ts.patch) by @tscrim created at 2013-07-19 13:14:06",
     "created_at": "2013-07-19T13:14:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69725",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
-Attachment [trac_7983-review-ts.patch](tarball://root/attachments/some-uuid/ticket7983/trac_7983-review-ts.patch) by tscrim created at 2013-07-19 13:14:06
+Attachment [trac_7983-review-ts.patch](tarball://root/attachments/some-uuid/ticket7983/trac_7983-review-ts.patch) by @tscrim created at 2013-07-19 13:14:06
 
 
 
@@ -547,7 +547,7 @@ archive/issue_comments_069726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69726",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -571,7 +571,7 @@ archive/issue_comments_069727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69727",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -593,7 +593,7 @@ archive/issue_comments_069728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69728",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

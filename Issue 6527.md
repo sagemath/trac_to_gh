@@ -13,7 +13,7 @@ archive/issues_006527.json:
     "title": "finish implementing set_circular_planar for graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6527",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: ekirkman

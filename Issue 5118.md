@@ -3,7 +3,7 @@
 archive/issues_005118.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  cremona\n\nBefore:\n\n```\nElliptic Curve defined by y^2  = x^3 + x +1 ...\n```\n\n\nAfter:\n\n```\nElliptic Curve defined by y^2 = x^3 + x + 1 ...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5118\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\nBefore:\n\n```\nElliptic Curve defined by y^2  = x^3 + x +1 ...\n```\n\n\nAfter:\n\n```\nElliptic Curve defined by y^2 = x^3 + x + 1 ...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5118\n\n",
     "created_at": "2009-01-28T19:05:22Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_005118.json:
     "title": "[with patch, needs review] Improve elliptic curve printing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5118",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  cremona
+CC:  @JohnCremona
 
 Before:
 

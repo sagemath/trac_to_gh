@@ -3,7 +3,7 @@
 archive/issues_006741.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe attached patch implements several functions providing a simpler interface to the Python Imaging Library. For example, you can sharpen the image of an image on the internet you have the url of and save it to Sage's tmp subdirectory.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6741\n\n",
+    "body": "Assignee: @williamstein\n\nThe attached patch implements several functions providing a simpler interface to the Python Imaging Library. For example, you can sharpen the image of an image on the internet you have the url of and save it to Sage's tmp subdirectory.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6741\n\n",
     "created_at": "2009-08-13T23:15:11Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_006741.json:
     "title": "pil interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6741",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The attached patch implements several functions providing a simpler interface to the Python Imaging Library. For example, you can sharpen the image of an image on the internet you have the url of and save it to Sage's tmp subdirectory.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6741
 archive/issue_comments_055230.json:
 ```json
 {
-    "body": "Attachment [trac_6741-pil.patch](tarball://root/attachments/some-uuid/ticket6741/trac_6741-pil.patch) by wdj created at 2009-08-13 23:20:20\n\nrequires pil-1.1.6, applies to 4.1.1.rc2",
+    "body": "Attachment [trac_6741-pil.patch](tarball://root/attachments/some-uuid/ticket6741/trac_6741-pil.patch) by @wdjoyner created at 2009-08-13 23:20:20\n\nrequires pil-1.1.6, applies to 4.1.1.rc2",
     "created_at": "2009-08-13T23:20:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55230",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_6741-pil.patch](tarball://root/attachments/some-uuid/ticket6741/trac_6741-pil.patch) by wdj created at 2009-08-13 23:20:20
+Attachment [trac_6741-pil.patch](tarball://root/attachments/some-uuid/ticket6741/trac_6741-pil.patch) by @wdjoyner created at 2009-08-13 23:20:20
 
 requires pil-1.1.6, applies to 4.1.1.rc2
 
@@ -70,7 +70,7 @@ Changing component from interfaces to packages.
 archive/issue_comments_055232.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2009-08-18T17:45:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6741",
     "type": "issue_comment",
@@ -79,7 +79,7 @@ archive/issue_comments_055232.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_055234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55234",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_055235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55235",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_055237.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55237",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_055238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55238",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_055239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55239",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -235,16 +235,16 @@ Bad news: Now I can't even get the code to work. I've tried on an imac (which re
 archive/issue_comments_055240.json:
 ```json
 {
-    "body": "Attachment [trac_6741_cleanup1.patch](tarball://root/attachments/some-uuid/ticket6741/trac_6741_cleanup1.patch) by chapoton created at 2013-08-22 20:11:42\n\nok, here is a cleanup patch.\n\nThere is an issue with fontmanager that I do not understand",
+    "body": "Attachment [trac_6741_cleanup1.patch](tarball://root/attachments/some-uuid/ticket6741/trac_6741_cleanup1.patch) by @fchapoton created at 2013-08-22 20:11:42\n\nok, here is a cleanup patch.\n\nThere is an issue with fontmanager that I do not understand",
     "created_at": "2013-08-22T20:11:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55240",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac_6741_cleanup1.patch](tarball://root/attachments/some-uuid/ticket6741/trac_6741_cleanup1.patch) by chapoton created at 2013-08-22 20:11:42
+Attachment [trac_6741_cleanup1.patch](tarball://root/attachments/some-uuid/ticket6741/trac_6741_cleanup1.patch) by @fchapoton created at 2013-08-22 20:11:42
 
 ok, here is a cleanup patch.
 
@@ -262,7 +262,7 @@ archive/issue_comments_055241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55241",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_055242.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55242",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

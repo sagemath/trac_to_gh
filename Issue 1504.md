@@ -3,7 +3,7 @@
 archive/issues_001504.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1504\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1504\n\n",
     "created_at": "2007-12-14T06:55:10Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001504.json:
     "title": "[with trivial doctest patch] plotting -- add an example",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1504",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_009639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1504",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1504#issuecomment-9639",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

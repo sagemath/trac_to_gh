@@ -3,7 +3,7 @@
 archive/issues_004659.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  robertwb\n\nKeywords: integer\n\nIn the file sage/rings/integer.pyx, line 288 says \n\n```\n    cdef class Integer (sage.structure.element.EuclideanDomainElement): \n```\n\nfollowed by documentation and the various methods for this class.  But earlier in the file, line 137 says \n\n```\n    cdef class Integer(sage.structure.element.EuclideanDomainElement) \n```\n\nThe attached patch removes line 137.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4659\n\n",
+    "body": "Assignee: somebody\n\nCC:  @robertwb\n\nKeywords: integer\n\nIn the file sage/rings/integer.pyx, line 288 says \n\n```\n    cdef class Integer (sage.structure.element.EuclideanDomainElement): \n```\n\nfollowed by documentation and the various methods for this class.  But earlier in the file, line 137 says \n\n```\n    cdef class Integer(sage.structure.element.EuclideanDomainElement) \n```\n\nThe attached patch removes line 137.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4659\n\n",
     "created_at": "2008-11-30T00:44:16Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_004659.json:
     "title": "remove an extra 'cdef class Integer' line from integer.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4659",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: somebody
 
-CC:  robertwb
+CC:  @robertwb
 
 Keywords: integer
 

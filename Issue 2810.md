@@ -14,7 +14,7 @@ archive/issues_002810.json:
     "title": "Use new generic code in elliptic_curve_finite_field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2810",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 Assignee: mabshoff
@@ -35,16 +35,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2810
 archive/issue_comments_019283.json:
 ```json
 {
-    "body": "Attachment [9384.patch](tarball://root/attachments/some-uuid/ticket2810/9384.patch) by cremona created at 2008-04-05 16:49:30",
+    "body": "Attachment [9384.patch](tarball://root/attachments/some-uuid/ticket2810/9384.patch) by @JohnCremona created at 2008-04-05 16:49:30",
     "created_at": "2008-04-05T16:49:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2810#issuecomment-19283",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [9384.patch](tarball://root/attachments/some-uuid/ticket2810/9384.patch) by cremona created at 2008-04-05 16:49:30
+Attachment [9384.patch](tarball://root/attachments/some-uuid/ticket2810/9384.patch) by @JohnCremona created at 2008-04-05 16:49:30
 
 
 
@@ -94,7 +94,7 @@ archive/issue_comments_019286.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2810#issuecomment-19286",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_019287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2810#issuecomment-19287",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_019288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2810#issuecomment-19288",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_019289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2810#issuecomment-19289",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -188,16 +188,16 @@ archive/issue_comments_019289.json:
 archive/issue_comments_019290.json:
 ```json
 {
-    "body": "Attachment [fixes_for_trac_2810_generic_code_ell_curve.patch](tarball://root/attachments/some-uuid/ticket2810/fixes_for_trac_2810_generic_code_ell_curve.patch) by malb created at 2008-04-05 22:59:34",
+    "body": "Attachment [fixes_for_trac_2810_generic_code_ell_curve.patch](tarball://root/attachments/some-uuid/ticket2810/fixes_for_trac_2810_generic_code_ell_curve.patch) by @malb created at 2008-04-05 22:59:34",
     "created_at": "2008-04-05T22:59:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2810#issuecomment-19290",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [fixes_for_trac_2810_generic_code_ell_curve.patch](tarball://root/attachments/some-uuid/ticket2810/fixes_for_trac_2810_generic_code_ell_curve.patch) by malb created at 2008-04-05 22:59:34
+Attachment [fixes_for_trac_2810_generic_code_ell_curve.patch](tarball://root/attachments/some-uuid/ticket2810/fixes_for_trac_2810_generic_code_ell_curve.patch) by @malb created at 2008-04-05 22:59:34
 
 
 

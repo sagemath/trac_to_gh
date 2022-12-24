@@ -3,7 +3,7 @@
 archive/issues_005576.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  mhansen\n\nKeywords: crypto\n\n* clean up of ReST in `mq.MPolynomialSystem`\n* improved documentation of `mq.MPolynomialSystem`\n* deprecated `mq.MPolynomialSystem_gf2e.change_ring()`\n* added `mq.MPolynomialSystem_gf2e.weil_restriction()`\n* added `mq.MPolynomialSystem.connected_components()`\n* added `mq.MPolynomialSystem.connection_graph()`\n* added `mq.MPolynomialSystem_gf2.eliminate_linear_variables()`\n\nIssue created by migration from https://trac.sagemath.org/ticket/5576\n\n",
+    "body": "Assignee: @malb\n\nCC:  @mwhansen\n\nKeywords: crypto\n\n* clean up of ReST in `mq.MPolynomialSystem`\n* improved documentation of `mq.MPolynomialSystem`\n* deprecated `mq.MPolynomialSystem_gf2e.change_ring()`\n* added `mq.MPolynomialSystem_gf2e.weil_restriction()`\n* added `mq.MPolynomialSystem.connected_components()`\n* added `mq.MPolynomialSystem.connection_graph()`\n* added `mq.MPolynomialSystem_gf2.eliminate_linear_variables()`\n\nIssue created by migration from https://trac.sagemath.org/ticket/5576\n\n",
     "created_at": "2009-03-20T13:39:50Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_005576.json:
     "title": "[with patch, needs review] MPolynomialSystem cleanup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5576",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  mhansen
+CC:  @mwhansen
 
 Keywords: crypto
 
@@ -47,7 +47,7 @@ archive/issue_comments_043477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5576#issuecomment-43477",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_043479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5576#issuecomment-43479",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_043480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5576#issuecomment-43480",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_043482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5576#issuecomment-43482",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -192,16 +192,16 @@ I rebased the patch.
 archive/issue_comments_043483.json:
 ```json
 {
-    "body": "Attachment [mpolynomialsystem_rest.patch](tarball://root/attachments/some-uuid/ticket5576/mpolynomialsystem_rest.patch) by malb created at 2009-05-12 00:34:04",
+    "body": "Attachment [mpolynomialsystem_rest.patch](tarball://root/attachments/some-uuid/ticket5576/mpolynomialsystem_rest.patch) by @malb created at 2009-05-12 00:34:04",
     "created_at": "2009-05-12T00:34:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5576#issuecomment-43483",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [mpolynomialsystem_rest.patch](tarball://root/attachments/some-uuid/ticket5576/mpolynomialsystem_rest.patch) by malb created at 2009-05-12 00:34:04
+Attachment [mpolynomialsystem_rest.patch](tarball://root/attachments/some-uuid/ticket5576/mpolynomialsystem_rest.patch) by @malb created at 2009-05-12 00:34:04
 
 
 
@@ -215,7 +215,7 @@ archive/issue_comments_043484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5576#issuecomment-43484",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_043485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5576#issuecomment-43485",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_005084.json:
     "title": "speed regression in number of partitons",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5084",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tbd
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5084
 archive/issue_comments_038746.json:
 ```json
 {
-    "body": "Changing assignee from tbd to mhansen.",
+    "body": "Changing assignee from tbd to @mwhansen.",
     "created_at": "2009-01-24T03:14:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5084",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5084#issuecomment-38746",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from tbd to mhansen.
+Changing assignee from tbd to @mwhansen.
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_038747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5084",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5084#issuecomment-38747",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_038748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5084",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5084#issuecomment-38748",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_038750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5084",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5084#issuecomment-38750",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_038751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5084",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5084#issuecomment-38751",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_038752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5084",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5084#issuecomment-38752",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_038753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5084",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5084#issuecomment-38753",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_038754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5084",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5084#issuecomment-38754",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

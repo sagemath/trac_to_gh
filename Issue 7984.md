@@ -3,7 +3,7 @@
 archive/issues_007984.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\n\n```\nsage: QQbar(2) == GF(7)(2)\nBOOM\n```\n\n\nShould be False. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7984\n\n",
+    "body": "Assignee: @aghitza\n\n\n```\nsage: QQbar(2) == GF(7)(2)\nBOOM\n```\n\n\nShould be False. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7984\n\n",
     "created_at": "2010-01-18T20:29:47Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_007984.json:
     "title": "QQbar doesn't use canonical coercion for comparison",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7984",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 
 ```
@@ -39,16 +39,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7984
 archive/issue_comments_069729.json:
 ```json
 {
-    "body": "Attachment [7984-qqbar-cmp.patch](tarball://root/attachments/some-uuid/ticket7984/7984-qqbar-cmp.patch) by robertwb created at 2010-01-18 20:31:34",
+    "body": "Attachment [7984-qqbar-cmp.patch](tarball://root/attachments/some-uuid/ticket7984/7984-qqbar-cmp.patch) by @robertwb created at 2010-01-18 20:31:34",
     "created_at": "2010-01-18T20:31:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7984",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7984#issuecomment-69729",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [7984-qqbar-cmp.patch](tarball://root/attachments/some-uuid/ticket7984/7984-qqbar-cmp.patch) by robertwb created at 2010-01-18 20:31:34
+Attachment [7984-qqbar-cmp.patch](tarball://root/attachments/some-uuid/ticket7984/7984-qqbar-cmp.patch) by @robertwb created at 2010-01-18 20:31:34
 
 
 
@@ -62,7 +62,7 @@ archive/issue_comments_069730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7984",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7984#issuecomment-69730",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_069731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7984",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7984#issuecomment-69731",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_069732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7984",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7984#issuecomment-69732",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_069733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7984",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7984#issuecomment-69733",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_069734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7984",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7984#issuecomment-69734",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_069735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7984",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7984#issuecomment-69735",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_069736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7984",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7984#issuecomment-69736",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

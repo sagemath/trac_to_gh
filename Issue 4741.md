@@ -3,7 +3,7 @@
 archive/issues_004741.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mardaus tnagel\n\nThis follows on from #3674, where integral points for elliptic curves over Q were implemented.\n\nThe work here was done (again) by Tobias Nagel and Michael Mardaus, with some necessary backup functionality for elliptic curve local data by me (John Cremona) which has already been merged.\n\nTwo functions are defined:  (1) `padic_elliptic_logarithm()` for points on curves over number fields, in ell_point.py; (2) `S_integral_points()` for curves over Q only (so far!), in ell_rational field.py.\n\nThe patch s_int_pts.patch applies to 3.2.1 + the patches at #4715.  Should be ready for review soon...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4741\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  mardaus tnagel\n\nThis follows on from #3674, where integral points for elliptic curves over Q were implemented.\n\nThe work here was done (again) by Tobias Nagel and Michael Mardaus, with some necessary backup functionality for elliptic curve local data by me (John Cremona) which has already been merged.\n\nTwo functions are defined:  (1) `padic_elliptic_logarithm()` for points on curves over number fields, in ell_point.py; (2) `S_integral_points()` for curves over Q only (so far!), in ell_rational field.py.\n\nThe patch s_int_pts.patch applies to 3.2.1 + the patches at #4715.  Should be ready for review soon...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4741\n\n",
     "created_at": "2008-12-08T12:37:24Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004741.json:
     "title": "[with patch, not yet ready for review] Implement S-integral point finding for elliptic curves over Q",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4741",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  mardaus tnagel
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4741
 archive/issue_comments_035829.json:
 ```json
 {
-    "body": "Attachment [trac-4741-padic_log.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-padic_log.patch) by cremona created at 2008-12-08 15:21:17",
+    "body": "Attachment [trac-4741-padic_log.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-padic_log.patch) by @JohnCremona created at 2008-12-08 15:21:17",
     "created_at": "2008-12-08T15:21:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35829",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac-4741-padic_log.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-padic_log.patch) by cremona created at 2008-12-08 15:21:17
+Attachment [trac-4741-padic_log.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-padic_log.patch) by @JohnCremona created at 2008-12-08 15:21:17
 
 
 
@@ -63,7 +63,7 @@ archive/issue_comments_035830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35830",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -84,16 +84,16 @@ The second patch fixes various issues with the padic_log function:
 archive/issue_comments_035831.json:
 ```json
 {
-    "body": "Attachment [trac-4741-fix2.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-fix2.patch) by cremona created at 2008-12-11 14:18:16",
+    "body": "Attachment [trac-4741-fix2.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-fix2.patch) by @JohnCremona created at 2008-12-11 14:18:16",
     "created_at": "2008-12-11T14:18:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35831",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac-4741-fix2.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-fix2.patch) by cremona created at 2008-12-11 14:18:16
+Attachment [trac-4741-fix2.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-fix2.patch) by @JohnCremona created at 2008-12-11 14:18:16
 
 
 
@@ -107,7 +107,7 @@ archive/issue_comments_035832.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35832",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_035833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35833",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_035836.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35836",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -264,16 +264,16 @@ Sorry everyone.  I'll make a new patch which works properly, and with 3.2.2.alph
 archive/issue_comments_035837.json:
 ```json
 {
-    "body": "Attachment [trac-4741-rebase.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-rebase.patch) by cremona created at 2008-12-12 09:47:24\n\nReplaces all the above; based on 3.2.2.alpha1",
+    "body": "Attachment [trac-4741-rebase.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-rebase.patch) by @JohnCremona created at 2008-12-12 09:47:24\n\nReplaces all the above; based on 3.2.2.alpha1",
     "created_at": "2008-12-12T09:47:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35837",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac-4741-rebase.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-rebase.patch) by cremona created at 2008-12-12 09:47:24
+Attachment [trac-4741-rebase.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-rebase.patch) by @JohnCremona created at 2008-12-12 09:47:24
 
 Replaces all the above; based on 3.2.2.alpha1
 
@@ -289,7 +289,7 @@ archive/issue_comments_035838.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35838",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -353,16 +353,16 @@ Michael
 archive/issue_comments_035840.json:
 ```json
 {
-    "body": "Attachment [trac-4741-doctest.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-doctest.patch) by cremona created at 2008-12-12 17:17:22",
+    "body": "Attachment [trac-4741-doctest.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-doctest.patch) by @JohnCremona created at 2008-12-12 17:17:22",
     "created_at": "2008-12-12T17:17:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35840",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac-4741-doctest.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-doctest.patch) by cremona created at 2008-12-12 17:17:22
+Attachment [trac-4741-doctest.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-doctest.patch) by @JohnCremona created at 2008-12-12 17:17:22
 
 
 
@@ -376,7 +376,7 @@ archive/issue_comments_035841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35841",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -436,7 +436,7 @@ archive/issue_comments_035844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35844",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -454,7 +454,7 @@ archive/issue_comments_035845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35845",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -484,16 +484,16 @@ sage.rings.padics.precision_error.PrecisionError: cannot divide by something ind
 archive/issue_comments_035846.json:
 ```json
 {
-    "body": "Attachment [trac-4741-prec.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-prec.patch) by cremona created at 2008-12-13 22:16:05",
+    "body": "Attachment [trac-4741-prec.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-prec.patch) by @JohnCremona created at 2008-12-13 22:16:05",
     "created_at": "2008-12-13T22:16:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35846",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac-4741-prec.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-prec.patch) by cremona created at 2008-12-13 22:16:05
+Attachment [trac-4741-prec.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-prec.patch) by @JohnCremona created at 2008-12-13 22:16:05
 
 
 
@@ -507,7 +507,7 @@ archive/issue_comments_035847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35847",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -520,16 +520,16 @@ The *-prec.patch fixes that for your example but a more itelligent solution woul
 archive/issue_comments_035848.json:
 ```json
 {
-    "body": "Attachment [trac-4741-typos.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-typos.patch) by cremona created at 2008-12-13 22:21:30\n\nSorry, forgot to fix the typos: see *-typos.patch.  Sorry for the extra hassle.",
+    "body": "Attachment [trac-4741-typos.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-typos.patch) by @JohnCremona created at 2008-12-13 22:21:30\n\nSorry, forgot to fix the typos: see *-typos.patch.  Sorry for the extra hassle.",
     "created_at": "2008-12-13T22:21:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35848",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac-4741-typos.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-typos.patch) by cremona created at 2008-12-13 22:21:30
+Attachment [trac-4741-typos.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-typos.patch) by @JohnCremona created at 2008-12-13 22:21:30
 
 Sorry, forgot to fix the typos: see *-typos.patch.  Sorry for the extra hassle.
 
@@ -540,16 +540,16 @@ Sorry, forgot to fix the typos: see *-typos.patch.  Sorry for the extra hassle.
 archive/issue_comments_035849.json:
 ```json
 {
-    "body": "Attachment [trac-4741-fix3.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-fix3.patch) by cremona created at 2008-12-13 23:16:54\n\nOK, so I found 2 more trivial bugs in kodaira which only mattered in the tamagawa_exponent() function used (only) in S_integral_points and padic_elliptic_log functions.  Fixed, and tested that tamagawa_exponent() works on all curves in the database to 6000, with all bad primes for each.  (Sorry, I have not checked that this covers all Kodaira types, but I think so.  The code even failed on 1 curve of conductor 15.)\n\nThat revealed a but in pari_curve(), for example 903b3, where the default pari precision was not enough.  I now test for this (with try: ... except PariError) and double the precision on failure, continuing until success.  The crazy thing is that I remember fixing that bug before, but it must have been while working on something which never got submitted (or is bitrotting on trac perhaps;)).\n\nNext I tested again the database curves of rank at least 2 with S=[2,3,5].  No problems until 2175c3, and that just takes a long time.  So I think it is safe to proceed (famous last words, but it's my bedtime).  The *-fix3.patch contains the above-mentioned fixes and also adapts the doctests to agree with the output from the enhanced p-adic precision which I forgot earlier.",
+    "body": "Attachment [trac-4741-fix3.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-fix3.patch) by @JohnCremona created at 2008-12-13 23:16:54\n\nOK, so I found 2 more trivial bugs in kodaira which only mattered in the tamagawa_exponent() function used (only) in S_integral_points and padic_elliptic_log functions.  Fixed, and tested that tamagawa_exponent() works on all curves in the database to 6000, with all bad primes for each.  (Sorry, I have not checked that this covers all Kodaira types, but I think so.  The code even failed on 1 curve of conductor 15.)\n\nThat revealed a but in pari_curve(), for example 903b3, where the default pari precision was not enough.  I now test for this (with try: ... except PariError) and double the precision on failure, continuing until success.  The crazy thing is that I remember fixing that bug before, but it must have been while working on something which never got submitted (or is bitrotting on trac perhaps;)).\n\nNext I tested again the database curves of rank at least 2 with S=[2,3,5].  No problems until 2175c3, and that just takes a long time.  So I think it is safe to proceed (famous last words, but it's my bedtime).  The *-fix3.patch contains the above-mentioned fixes and also adapts the doctests to agree with the output from the enhanced p-adic precision which I forgot earlier.",
     "created_at": "2008-12-13T23:16:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35849",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac-4741-fix3.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-fix3.patch) by cremona created at 2008-12-13 23:16:54
+Attachment [trac-4741-fix3.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-fix3.patch) by @JohnCremona created at 2008-12-13 23:16:54
 
 OK, so I found 2 more trivial bugs in kodaira which only mattered in the tamagawa_exponent() function used (only) in S_integral_points and padic_elliptic_log functions.  Fixed, and tested that tamagawa_exponent() works on all curves in the database to 6000, with all bad primes for each.  (Sorry, I have not checked that this covers all Kodaira types, but I think so.  The code even failed on 1 curve of conductor 15.)
 
@@ -595,7 +595,7 @@ archive/issue_comments_035851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35851",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -663,7 +663,7 @@ archive/issue_comments_035853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35853",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -678,16 +678,16 @@ So now I'll try to make it work properly with 3.2.2.alpha2 (not alpha1) and whil
 archive/issue_comments_035854.json:
 ```json
 {
-    "body": "Attachment [trac-4741-rebased-fixes.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-rebased-fixes.patch) by cremona created at 2008-12-14 11:59:25\n\nI was right: last night's 3 patches were all based on the previous release.  This explains two things:  the kodaira bugs I re-fixed last night had already been fixed, as had the pari_curve precision problem.\n\nSo now we have trac-4741-rebased-fixes.patch which (1) replaces the previous 3; (2) is properly based on 3.2.2.alpha2; (3) improves on the earlier fixes by handling the p-adic precision more intelligently (it uses try/except, first trying p-adci precision 20 and doubling if that fails).\n\nI tried the patch on a new clone of 3.2.2.alpha2.  To recap, apply these three patches in this order and ignore the others:\n1. trac-4741-rebase.patch\n2. trac-4741-doctest.patch\n3. trac-4741-rebased-fixes.patch\nand you should find that all doctests in sage/schemes/elliptic_curves pass, and that for all database curves to conductor 2000 of rank>1 E.S_integral_points([2,3,5]) works fine.",
+    "body": "Attachment [trac-4741-rebased-fixes.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-rebased-fixes.patch) by @JohnCremona created at 2008-12-14 11:59:25\n\nI was right: last night's 3 patches were all based on the previous release.  This explains two things:  the kodaira bugs I re-fixed last night had already been fixed, as had the pari_curve precision problem.\n\nSo now we have trac-4741-rebased-fixes.patch which (1) replaces the previous 3; (2) is properly based on 3.2.2.alpha2; (3) improves on the earlier fixes by handling the p-adic precision more intelligently (it uses try/except, first trying p-adci precision 20 and doubling if that fails).\n\nI tried the patch on a new clone of 3.2.2.alpha2.  To recap, apply these three patches in this order and ignore the others:\n1. trac-4741-rebase.patch\n2. trac-4741-doctest.patch\n3. trac-4741-rebased-fixes.patch\nand you should find that all doctests in sage/schemes/elliptic_curves pass, and that for all database curves to conductor 2000 of rank>1 E.S_integral_points([2,3,5]) works fine.",
     "created_at": "2008-12-14T11:59:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35854",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac-4741-rebased-fixes.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-rebased-fixes.patch) by cremona created at 2008-12-14 11:59:25
+Attachment [trac-4741-rebased-fixes.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-rebased-fixes.patch) by @JohnCremona created at 2008-12-14 11:59:25
 
 I was right: last night's 3 patches were all based on the previous release.  This explains two things:  the kodaira bugs I re-fixed last night had already been fixed, as had the pari_curve precision problem.
 
@@ -746,7 +746,7 @@ archive/issue_comments_035856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35856",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -813,7 +813,7 @@ archive/issue_comments_035858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35858",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -826,16 +826,16 @@ Don't you just love thorough reviewing (seriously).  I was not trapping enough e
 archive/issue_comments_035859.json:
 ```json
 {
-    "body": "Attachment [trac-4741-padic.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-padic.patch) by cremona created at 2008-12-14 22:11:36\n\nVarious p-adic precision bandaids applied, so that William's loop now runs up to this one:\n\nsage: EllipticCurve(\"7690e1\").S_integral_points([13,2])\n\nat which point there's an error raised deep in the p-adic code.  I can't deal with that now, so someone will have to make a judgement about whether this is now \"good enough\".\n\nWorking with p-adics is an acquired skill which I'm not sure I have enough of -- perhaps we need reinforcements?  For example, you cannot just do E.change_ring(Qp(p,precision)) for E an elliptic curve over Q, since an error will be raised if the precision is too low (only of p is a prime of bad reduction I think, so one should be able to work out the necessary precision).\n\nTobias and Michael, the try/except I put in around line 5077 of ell_rational_field.py was not fully thought through, perhaps that is something you should look into?\n\n\ntrac-4741-padic.patch",
+    "body": "Attachment [trac-4741-padic.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-padic.patch) by @JohnCremona created at 2008-12-14 22:11:36\n\nVarious p-adic precision bandaids applied, so that William's loop now runs up to this one:\n\nsage: EllipticCurve(\"7690e1\").S_integral_points([13,2])\n\nat which point there's an error raised deep in the p-adic code.  I can't deal with that now, so someone will have to make a judgement about whether this is now \"good enough\".\n\nWorking with p-adics is an acquired skill which I'm not sure I have enough of -- perhaps we need reinforcements?  For example, you cannot just do E.change_ring(Qp(p,precision)) for E an elliptic curve over Q, since an error will be raised if the precision is too low (only of p is a prime of bad reduction I think, so one should be able to work out the necessary precision).\n\nTobias and Michael, the try/except I put in around line 5077 of ell_rational_field.py was not fully thought through, perhaps that is something you should look into?\n\n\ntrac-4741-padic.patch",
     "created_at": "2008-12-14T22:11:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35859",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac-4741-padic.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-padic.patch) by cremona created at 2008-12-14 22:11:36
+Attachment [trac-4741-padic.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-padic.patch) by @JohnCremona created at 2008-12-14 22:11:36
 
 Various p-adic precision bandaids applied, so that William's loop now runs up to this one:
 
@@ -904,7 +904,7 @@ archive/issue_comments_035862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35862",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -926,7 +926,7 @@ archive/issue_comments_035863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35863",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -946,7 +946,7 @@ archive/issue_comments_035864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35864",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -964,16 +964,16 @@ Sounds good to me.  I'll try to add such a NOTE today.  JEC
 archive/issue_comments_035865.json:
 ```json
 {
-    "body": "Attachment [trac-4741-note.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-note.patch) by cremona created at 2008-12-15 16:32:01\n\nReplying to [comment:31 cremona]:\n> Replying to [comment:30 was]:\n> > I am OK with merging the code as is now, as long as a \"NOTE:\" is added to the docstring for S_integral_points (etc.) that it is known to fail on some input, with a pointer to the appropriate trac ticket.  I much prefer that to the Ma* approach of \"there are no bugs here\" approach, where one lets the user discover bugs.\n> > \n> > So \"positive review\" modulo adding such a note.\n> \n> Sounds good to me.  I'll try to add such a NOTE today.  JEC  -- done",
+    "body": "Attachment [trac-4741-note.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-note.patch) by @JohnCremona created at 2008-12-15 16:32:01\n\nReplying to [comment:31 cremona]:\n> Replying to [comment:30 was]:\n> > I am OK with merging the code as is now, as long as a \"NOTE:\" is added to the docstring for S_integral_points (etc.) that it is known to fail on some input, with a pointer to the appropriate trac ticket.  I much prefer that to the Ma* approach of \"there are no bugs here\" approach, where one lets the user discover bugs.\n> > \n> > So \"positive review\" modulo adding such a note.\n> \n> Sounds good to me.  I'll try to add such a NOTE today.  JEC  -- done",
     "created_at": "2008-12-15T16:32:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35865",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac-4741-note.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-note.patch) by cremona created at 2008-12-15 16:32:01
+Attachment [trac-4741-note.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-note.patch) by @JohnCremona created at 2008-12-15 16:32:01
 
 Replying to [comment:31 cremona]:
 > Replying to [comment:30 was]:
@@ -995,7 +995,7 @@ archive/issue_comments_035866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35866",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -1039,16 +1039,16 @@ Michael
 archive/issue_comments_035868.json:
 ```json
 {
-    "body": "Attachment [trac-4741-note2.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-note2.patch) by cremona created at 2008-12-15 17:02:39\n\nReplying to [comment:34 mabshoff]:\n> John,\n> \n> please also open a new ticket for that known failure and mention that ticket in the NOTE since this ticket will then be closed and finding the info about that curve is much easier at a clean and new ticket.\n> \n> Cheers,\n> \n> Michael\n\nTypo fixed and reference to new ticket #4805 added in *-note2.patch.",
+    "body": "Attachment [trac-4741-note2.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-note2.patch) by @JohnCremona created at 2008-12-15 17:02:39\n\nReplying to [comment:34 mabshoff]:\n> John,\n> \n> please also open a new ticket for that known failure and mention that ticket in the NOTE since this ticket will then be closed and finding the info about that curve is much easier at a clean and new ticket.\n> \n> Cheers,\n> \n> Michael\n\nTypo fixed and reference to new ticket #4805 added in *-note2.patch.",
     "created_at": "2008-12-15T17:02:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35868",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac-4741-note2.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-note2.patch) by cremona created at 2008-12-15 17:02:39
+Attachment [trac-4741-note2.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-note2.patch) by @JohnCremona created at 2008-12-15 17:02:39
 
 Replying to [comment:34 mabshoff]:
 > John,
@@ -1073,7 +1073,7 @@ archive/issue_comments_035869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35869",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

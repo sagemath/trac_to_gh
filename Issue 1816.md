@@ -3,7 +3,7 @@
 archive/issues_001816.json:
 ```json
 {
-    "body": "Assignee: malb\n\nJust as symbolic variables behave (and what is the Python-way IIRC):\n\n```\nsage: f = x/var('y')\nsage: f\nx/y\nsage: str(f)\n'                                       x\\r\\n                                       -\\r\\n                                       y'\nsage: print str(f)\n                                       x\n                                       -\n                                       y\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1816\n\n",
+    "body": "Assignee: @malb\n\nJust as symbolic variables behave (and what is the Python-way IIRC):\n\n```\nsage: f = x/var('y')\nsage: f\nx/y\nsage: str(f)\n'                                       x\\r\\n                                       -\\r\\n                                       y'\nsage: print str(f)\n                                       x\n                                       -\n                                       y\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1816\n\n",
     "created_at": "2008-01-17T23:38:32Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_001816.json:
     "title": "rename MPolynomialRing.repr_long method to __str__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1816",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Just as symbolic variables behave (and what is the Python-way IIRC):
 
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1816
 archive/issue_comments_011475.json:
 ```json
 {
-    "body": "Attachment [trac_1816.patch](tarball://root/attachments/some-uuid/ticket1816/trac_1816.patch) by malb created at 2008-01-18 17:11:10",
+    "body": "Attachment [trac_1816.patch](tarball://root/attachments/some-uuid/ticket1816/trac_1816.patch) by @malb created at 2008-01-18 17:11:10",
     "created_at": "2008-01-18T17:11:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1816#issuecomment-11475",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_1816.patch](tarball://root/attachments/some-uuid/ticket1816/trac_1816.patch) by malb created at 2008-01-18 17:11:10
+Attachment [trac_1816.patch](tarball://root/attachments/some-uuid/ticket1816/trac_1816.patch) by @malb created at 2008-01-18 17:11:10
 
 
 
@@ -68,7 +68,7 @@ archive/issue_comments_011476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1816#issuecomment-11476",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_011477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1816#issuecomment-11477",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_011478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1816#issuecomment-11478",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_011479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1816#issuecomment-11479",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

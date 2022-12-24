@@ -3,7 +3,7 @@
 archive/issues_007843.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  was timdumol\n\nFollow-up to #7514.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7843\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein @TimDumol\n\nFollow-up to #7514.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7843\n\n",
     "created_at": "2010-01-05T01:54:50Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007843.json:
     "title": "os.path.listdir should be os.listdir",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7843",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  was timdumol
+CC:  @williamstein @TimDumol
 
 Follow-up to #7514.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7843
 archive/issue_comments_067936.json:
 ```json
 {
-    "body": "Attachment [trac_7843-cell_listdir.patch](tarball://root/attachments/some-uuid/ticket7843/trac_7843-cell_listdir.patch) by mpatel created at 2010-01-05 01:58:41\n\nUse `os.listdir`.  sagenb repo.",
+    "body": "Attachment [trac_7843-cell_listdir.patch](tarball://root/attachments/some-uuid/ticket7843/trac_7843-cell_listdir.patch) by @qed777 created at 2010-01-05 01:58:41\n\nUse `os.listdir`.  sagenb repo.",
     "created_at": "2010-01-05T01:58:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7843#issuecomment-67936",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7843-cell_listdir.patch](tarball://root/attachments/some-uuid/ticket7843/trac_7843-cell_listdir.patch) by mpatel created at 2010-01-05 01:58:41
+Attachment [trac_7843-cell_listdir.patch](tarball://root/attachments/some-uuid/ticket7843/trac_7843-cell_listdir.patch) by @qed777 created at 2010-01-05 01:58:41
 
 Use `os.listdir`.  sagenb repo.
 
@@ -59,7 +59,7 @@ archive/issue_comments_067937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7843#issuecomment-67937",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_067938.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7843#issuecomment-67938",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_067939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7843#issuecomment-67939",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_067940.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7843#issuecomment-67940",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_067941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7843#issuecomment-67941",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_067942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7843#issuecomment-67942",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_067943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7843#issuecomment-67943",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_067944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7843#issuecomment-67944",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

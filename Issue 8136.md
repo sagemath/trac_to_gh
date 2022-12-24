@@ -3,7 +3,7 @@
 archive/issues_008136.json:
 ```json
 {
-    "body": "Assignee: wdj\n\nCC:  spancratz\n\nBuilding the reference manual in 4.3.2.alpha0 produces some warnings for the file linear_code.py, I think coming from #6486.  The attached patch fixes them.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8136\n\n",
+    "body": "Assignee: @wdjoyner\n\nCC:  spancratz\n\nBuilding the reference manual in 4.3.2.alpha0 produces some warnings for the file linear_code.py, I think coming from #6486.  The attached patch fixes them.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8136\n\n",
     "created_at": "2010-01-31T06:48:52Z",
     "labels": [
         "coding theory",
@@ -14,10 +14,10 @@ archive/issues_008136.json:
     "title": "fix ref manual issues in linear_code.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8136",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: wdj
+Assignee: @wdjoyner
 
 CC:  spancratz
 
@@ -35,16 +35,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8136
 archive/issue_comments_071549.json:
 ```json
 {
-    "body": "Attachment [trac_8136-ref-manual.patch](tarball://root/attachments/some-uuid/ticket8136/trac_8136-ref-manual.patch) by jhpalmieri created at 2010-01-31 06:50:26",
+    "body": "Attachment [trac_8136-ref-manual.patch](tarball://root/attachments/some-uuid/ticket8136/trac_8136-ref-manual.patch) by @jhpalmieri created at 2010-01-31 06:50:26",
     "created_at": "2010-01-31T06:50:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8136",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8136#issuecomment-71549",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8136-ref-manual.patch](tarball://root/attachments/some-uuid/ticket8136/trac_8136-ref-manual.patch) by jhpalmieri created at 2010-01-31 06:50:26
+Attachment [trac_8136-ref-manual.patch](tarball://root/attachments/some-uuid/ticket8136/trac_8136-ref-manual.patch) by @jhpalmieri created at 2010-01-31 06:50:26
 
 
 
@@ -58,7 +58,7 @@ archive/issue_comments_071550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8136",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8136#issuecomment-71550",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_071551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8136",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8136#issuecomment-71551",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_071552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8136",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8136#issuecomment-71552",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_071553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8136",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8136#issuecomment-71553",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

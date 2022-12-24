@@ -14,7 +14,7 @@ archive/issues_002011.json:
     "title": "crap -- mpfi ships with two precompiled binaries",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2011",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

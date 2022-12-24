@@ -14,7 +14,7 @@ archive/issues_007257.json:
     "title": "spike_functions has numerical noise on powerpc (followup to #6891)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7257",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -37,7 +37,7 @@ archive/issue_comments_060282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7257#issuecomment-60282",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to needs_review.
 archive/issue_comments_060283.json:
 ```json
 {
-    "body": "Attachment [trac_7257.patch](tarball://root/attachments/some-uuid/ticket7257/trac_7257.patch) by was created at 2009-10-20 21:21:45",
+    "body": "Attachment [trac_7257.patch](tarball://root/attachments/some-uuid/ticket7257/trac_7257.patch) by @williamstein created at 2009-10-20 21:21:45",
     "created_at": "2009-10-20T21:21:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7257#issuecomment-60283",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7257.patch](tarball://root/attachments/some-uuid/ticket7257/trac_7257.patch) by was created at 2009-10-20 21:21:45
+Attachment [trac_7257.patch](tarball://root/attachments/some-uuid/ticket7257/trac_7257.patch) by @williamstein created at 2009-10-20 21:21:45
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_060284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7257#issuecomment-60284",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_060285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7257#issuecomment-60285",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_060286.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7257#issuecomment-60286",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

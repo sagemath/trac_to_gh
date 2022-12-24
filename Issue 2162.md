@@ -3,7 +3,7 @@
 archive/issues_002162.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2162\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2162\n\n",
     "created_at": "2008-02-14T22:21:30Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_002162.json:
     "title": "[with patch; needs review] pari stack -- ability to resize at runtime",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2162",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2162
 archive/issue_comments_014196.json:
 ```json
 {
-    "body": "Attachment [trac-2162-Pari_stack.patch](tarball://root/attachments/some-uuid/ticket2162/trac-2162-Pari_stack.patch) by was created at 2008-02-14 22:21:46",
+    "body": "Attachment [trac-2162-Pari_stack.patch](tarball://root/attachments/some-uuid/ticket2162/trac-2162-Pari_stack.patch) by @williamstein created at 2008-02-14 22:21:46",
     "created_at": "2008-02-14T22:21:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2162#issuecomment-14196",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-2162-Pari_stack.patch](tarball://root/attachments/some-uuid/ticket2162/trac-2162-Pari_stack.patch) by was created at 2008-02-14 22:21:46
+Attachment [trac-2162-Pari_stack.patch](tarball://root/attachments/some-uuid/ticket2162/trac-2162-Pari_stack.patch) by @williamstein created at 2008-02-14 22:21:46
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_014199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2162#issuecomment-14199",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 

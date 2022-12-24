@@ -14,7 +14,7 @@ archive/issues_005625.json:
     "title": "group cohomology -- bad error messages; should indicate an optional package is needed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5625",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: joyner
@@ -82,7 +82,7 @@ archive/issue_comments_043922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5625",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5625#issuecomment-43922",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -95,16 +95,16 @@ Here's a patch.  Skimming through the Sage source code, it seems that in other c
 archive/issue_comments_043923.json:
 ```json
 {
-    "body": "Attachment [trac_5625-cohomology.patch](tarball://root/attachments/some-uuid/ticket5625/trac_5625-cohomology.patch) by jhpalmieri created at 2009-07-22 03:17:22",
+    "body": "Attachment [trac_5625-cohomology.patch](tarball://root/attachments/some-uuid/ticket5625/trac_5625-cohomology.patch) by @jhpalmieri created at 2009-07-22 03:17:22",
     "created_at": "2009-07-22T03:17:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5625",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5625#issuecomment-43923",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_5625-cohomology.patch](tarball://root/attachments/some-uuid/ticket5625/trac_5625-cohomology.patch) by jhpalmieri created at 2009-07-22 03:17:22
+Attachment [trac_5625-cohomology.patch](tarball://root/attachments/some-uuid/ticket5625/trac_5625-cohomology.patch) by @jhpalmieri created at 2009-07-22 03:17:22
 
 
 
@@ -118,7 +118,7 @@ archive/issue_comments_043924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5625",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5625#issuecomment-43924",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

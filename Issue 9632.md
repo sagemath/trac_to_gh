@@ -3,7 +3,7 @@
 archive/issues_009632.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  burcin cwitty ddrake jhpalmieri kcrisman\n\nThe order in which the terms in some symbolic expressions are printed depends on the platform/system.  For example, evaluating `cos(x) + zeta(x)` yields\n\n* `zeta(x) + cos(x)` on Linux\n* `cos(x) + zeta(x)` on OS X\n\nin Sage 4.4.4 and 4.5.2.alpha{0,1}, at least.\n\nPlease see #9582 for some details and discussion.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9632\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @burcin cwitty @dandrake @jhpalmieri @kcrisman\n\nThe order in which the terms in some symbolic expressions are printed depends on the platform/system.  For example, evaluating `cos(x) + zeta(x)` yields\n\n* `zeta(x) + cos(x)` on Linux\n* `cos(x) + zeta(x)` on OS X\n\nin Sage 4.4.4 and 4.5.2.alpha{0,1}, at least.\n\nPlease see #9582 for some details and discussion.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9632\n\n",
     "created_at": "2010-07-29T06:16:00Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_009632.json:
     "title": "System-dependent term order for printed expressions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9632",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  burcin cwitty ddrake jhpalmieri kcrisman
+CC:  @burcin cwitty @dandrake @jhpalmieri @kcrisman
 
 The order in which the terms in some symbolic expressions are printed depends on the platform/system.  For example, evaluating `cos(x) + zeta(x)` yields
 
@@ -46,7 +46,7 @@ archive/issue_comments_093351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9632",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9632#issuecomment-93351",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_093352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9632",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9632#issuecomment-93352",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_093353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9632",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9632#issuecomment-93353",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_093354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9632",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9632#issuecomment-93354",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_093355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9632",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9632#issuecomment-93355",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -140,16 +140,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_093356.json:
 ```json
 {
-    "body": "Attachment [trac_9632-doctests.patch](tarball://root/attachments/some-uuid/ticket9632/trac_9632-doctests.patch) by burcin created at 2013-07-01 00:49:12\n\nThis was fixed by #9880. [attachment:trac_9632-doctests.patch] adds doctests.",
+    "body": "Attachment [trac_9632-doctests.patch](tarball://root/attachments/some-uuid/ticket9632/trac_9632-doctests.patch) by @burcin created at 2013-07-01 00:49:12\n\nThis was fixed by #9880. [attachment:trac_9632-doctests.patch] adds doctests.",
     "created_at": "2013-07-01T00:49:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9632",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9632#issuecomment-93356",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9632-doctests.patch](tarball://root/attachments/some-uuid/ticket9632/trac_9632-doctests.patch) by burcin created at 2013-07-01 00:49:12
+Attachment [trac_9632-doctests.patch](tarball://root/attachments/some-uuid/ticket9632/trac_9632-doctests.patch) by @burcin created at 2013-07-01 00:49:12
 
 This was fixed by #9880. [attachment:trac_9632-doctests.patch] adds doctests.
 
@@ -165,7 +165,7 @@ archive/issue_comments_093357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9632",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9632#issuecomment-93357",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_093358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9632",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9632#issuecomment-93358",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

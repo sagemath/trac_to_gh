@@ -14,7 +14,7 @@ archive/issues_003584.json:
     "title": "cython.py -- randomness in doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3584",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: failure
@@ -89,7 +89,7 @@ archive/issue_comments_025301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3584",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3584#issuecomment-25301",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -102,16 +102,16 @@ Changing status from new to assigned.
 archive/issue_comments_025302.json:
 ```json
 {
-    "body": "Attachment [trac-3584.patch](tarball://root/attachments/some-uuid/ticket3584/trac-3584.patch) by craigcitro created at 2008-07-07 18:31:39\n\nThe attached patch fixes the doctest, and adds another that's slightly better. I also did a bit of cleanup in the file. \n\nI added a docstring to `parse_keywords`, and also made one minor change to that function. (It used to always add a `#` right before the keyword, so I had it check to see if it was already on a line containing a hash. I could be convinced this isn't worth it.)",
+    "body": "Attachment [trac-3584.patch](tarball://root/attachments/some-uuid/ticket3584/trac-3584.patch) by @craigcitro created at 2008-07-07 18:31:39\n\nThe attached patch fixes the doctest, and adds another that's slightly better. I also did a bit of cleanup in the file. \n\nI added a docstring to `parse_keywords`, and also made one minor change to that function. (It used to always add a `#` right before the keyword, so I had it check to see if it was already on a line containing a hash. I could be convinced this isn't worth it.)",
     "created_at": "2008-07-07T18:31:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3584",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3584#issuecomment-25302",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-3584.patch](tarball://root/attachments/some-uuid/ticket3584/trac-3584.patch) by craigcitro created at 2008-07-07 18:31:39
+Attachment [trac-3584.patch](tarball://root/attachments/some-uuid/ticket3584/trac-3584.patch) by @craigcitro created at 2008-07-07 18:31:39
 
 The attached patch fixes the doctest, and adds another that's slightly better. I also did a bit of cleanup in the file. 
 
@@ -124,16 +124,16 @@ I added a docstring to `parse_keywords`, and also made one minor change to that 
 archive/issue_comments_025303.json:
 ```json
 {
-    "body": "Changing assignee from failure to craigcitro.",
+    "body": "Changing assignee from failure to @craigcitro.",
     "created_at": "2008-07-07T18:31:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3584",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3584#issuecomment-25303",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from failure to craigcitro.
+Changing assignee from failure to @craigcitro.
 
 
 
@@ -147,7 +147,7 @@ archive/issue_comments_025304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3584",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3584#issuecomment-25304",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000934.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nAn easy one to add to our 2.8.8 count ;-]\n\nIssue created by migration from https://trac.sagemath.org/ticket/934\n\n",
+    "body": "Assignee: @mwhansen\n\nAn easy one to add to our 2.8.8 count ;-]\n\nIssue created by migration from https://trac.sagemath.org/ticket/934\n\n",
     "created_at": "2007-10-19T22:24:09Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_000934.json:
     "title": "[with patch] doctest for sparse matrix .transpose() does not actually test the function.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/934",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 An easy one to add to our 2.8.8 count ;-]
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/934
 archive/issue_comments_005701.json:
 ```json
 {
-    "body": "Attachment [6972.patch](tarball://root/attachments/some-uuid/ticket934/6972.patch) by mhansen created at 2007-10-19 22:24:17",
+    "body": "Attachment [6972.patch](tarball://root/attachments/some-uuid/ticket934/6972.patch) by @mwhansen created at 2007-10-19 22:24:17",
     "created_at": "2007-10-19T22:24:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/934#issuecomment-5701",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [6972.patch](tarball://root/attachments/some-uuid/ticket934/6972.patch) by mhansen created at 2007-10-19 22:24:17
+Attachment [6972.patch](tarball://root/attachments/some-uuid/ticket934/6972.patch) by @mwhansen created at 2007-10-19 22:24:17
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_005702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/934#issuecomment-5702",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_005703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/934#issuecomment-5703",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

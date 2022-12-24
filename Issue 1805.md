@@ -14,7 +14,7 @@ archive/issues_001805.json:
     "title": "improve doctest coverage for structure/factorization.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1805",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: failure
@@ -37,7 +37,7 @@ archive/issue_comments_011407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1805#issuecomment-11407",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -92,16 +92,16 @@ and I fixed numerous conceptual bugs/mistakes in that file.
 archive/issue_comments_011408.json:
 ```json
 {
-    "body": "Changing assignee from failure to was.",
+    "body": "Changing assignee from failure to @williamstein.",
     "created_at": "2008-01-17T20:00:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1805#issuecomment-11408",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from failure to was.
+Changing assignee from failure to @williamstein.
 
 
 
@@ -115,7 +115,7 @@ archive/issue_comments_011409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1805#issuecomment-11409",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -128,16 +128,16 @@ Changing status from new to assigned.
 archive/issue_comments_011410.json:
 ```json
 {
-    "body": "Attachment [trac-1805.patch](tarball://root/attachments/some-uuid/ticket1805/trac-1805.patch) by was created at 2008-01-17 20:03:24\n\nThis is a preliminary patch.  I'm now doctesting all of sage-2.10 with this patch applied to see what else is broke.  I'll post another patch that fixes the problems later.",
+    "body": "Attachment [trac-1805.patch](tarball://root/attachments/some-uuid/ticket1805/trac-1805.patch) by @williamstein created at 2008-01-17 20:03:24\n\nThis is a preliminary patch.  I'm now doctesting all of sage-2.10 with this patch applied to see what else is broke.  I'll post another patch that fixes the problems later.",
     "created_at": "2008-01-17T20:03:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1805#issuecomment-11410",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1805.patch](tarball://root/attachments/some-uuid/ticket1805/trac-1805.patch) by was created at 2008-01-17 20:03:24
+Attachment [trac-1805.patch](tarball://root/attachments/some-uuid/ticket1805/trac-1805.patch) by @williamstein created at 2008-01-17 20:03:24
 
 This is a preliminary patch.  I'm now doctesting all of sage-2.10 with this patch applied to see what else is broke.  I'll post another patch that fixes the problems later.
 
@@ -148,16 +148,16 @@ This is a preliminary patch.  I'm now doctesting all of sage-2.10 with this patc
 archive/issue_comments_011411.json:
 ```json
 {
-    "body": "Attachment [trac-1805-part2.patch](tarball://root/attachments/some-uuid/ticket1805/trac-1805-part2.patch) by was created at 2008-01-17 21:47:11\n\nthis part 2 fixes some additional issues, typos, etc., I saw when proofreading my patch.",
+    "body": "Attachment [trac-1805-part2.patch](tarball://root/attachments/some-uuid/ticket1805/trac-1805-part2.patch) by @williamstein created at 2008-01-17 21:47:11\n\nthis part 2 fixes some additional issues, typos, etc., I saw when proofreading my patch.",
     "created_at": "2008-01-17T21:47:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1805#issuecomment-11411",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1805-part2.patch](tarball://root/attachments/some-uuid/ticket1805/trac-1805-part2.patch) by was created at 2008-01-17 21:47:11
+Attachment [trac-1805-part2.patch](tarball://root/attachments/some-uuid/ticket1805/trac-1805-part2.patch) by @williamstein created at 2008-01-17 21:47:11
 
 this part 2 fixes some additional issues, typos, etc., I saw when proofreading my patch.
 
@@ -173,7 +173,7 @@ archive/issue_comments_011412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1805#issuecomment-11412",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -186,16 +186,16 @@ Changing status from assigned to new.
 archive/issue_comments_011413.json:
 ```json
 {
-    "body": "Changing assignee from was to ncalexan.",
+    "body": "Changing assignee from @williamstein to @ncalexan.",
     "created_at": "2008-01-20T06:58:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1805#issuecomment-11413",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Changing assignee from was to ncalexan.
+Changing assignee from @williamstein to @ncalexan.
 
 
 
@@ -209,7 +209,7 @@ archive/issue_comments_011414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1805#issuecomment-11414",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_011416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1805#issuecomment-11416",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_011417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1805#issuecomment-11417",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_011418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1805#issuecomment-11418",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_011419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1805#issuecomment-11419",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -318,16 +318,16 @@ new rebased version
 archive/issue_comments_011420.json:
 ```json
 {
-    "body": "Attachment [sage-1805-part2-rebased.patch](tarball://root/attachments/some-uuid/ticket1805/sage-1805-part2-rebased.patch) by was created at 2008-03-02 02:49:13",
+    "body": "Attachment [sage-1805-part2-rebased.patch](tarball://root/attachments/some-uuid/ticket1805/sage-1805-part2-rebased.patch) by @williamstein created at 2008-03-02 02:49:13",
     "created_at": "2008-03-02T02:49:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1805#issuecomment-11420",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-1805-part2-rebased.patch](tarball://root/attachments/some-uuid/ticket1805/sage-1805-part2-rebased.patch) by was created at 2008-03-02 02:49:13
+Attachment [sage-1805-part2-rebased.patch](tarball://root/attachments/some-uuid/ticket1805/sage-1805-part2-rebased.patch) by @williamstein created at 2008-03-02 02:49:13
 
 
 
@@ -336,16 +336,16 @@ Attachment [sage-1805-part2-rebased.patch](tarball://root/attachments/some-uuid/
 archive/issue_comments_011421.json:
 ```json
 {
-    "body": "Attachment [sage-1805-rebase_part3.patch](tarball://root/attachments/some-uuid/ticket1805/sage-1805-rebase_part3.patch) by was created at 2008-03-02 02:52:59",
+    "body": "Attachment [sage-1805-rebase_part3.patch](tarball://root/attachments/some-uuid/ticket1805/sage-1805-rebase_part3.patch) by @williamstein created at 2008-03-02 02:52:59",
     "created_at": "2008-03-02T02:52:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1805#issuecomment-11421",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-1805-rebase_part3.patch](tarball://root/attachments/some-uuid/ticket1805/sage-1805-rebase_part3.patch) by was created at 2008-03-02 02:52:59
+Attachment [sage-1805-rebase_part3.patch](tarball://root/attachments/some-uuid/ticket1805/sage-1805-rebase_part3.patch) by @williamstein created at 2008-03-02 02:52:59
 
 
 
@@ -359,7 +359,7 @@ archive/issue_comments_011422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1805#issuecomment-11422",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -386,7 +386,7 @@ archive/issue_comments_011423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1805#issuecomment-11423",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -416,7 +416,7 @@ archive/issue_comments_011424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1805#issuecomment-11424",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -444,7 +444,7 @@ archive/issue_comments_011425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1805#issuecomment-11425",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -473,7 +473,7 @@ archive/issue_comments_011426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1805#issuecomment-11426",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -486,16 +486,16 @@ this should be the final of four patches; it fixes one problem found by the refe
 archive/issue_comments_011427.json:
 ```json
 {
-    "body": "Attachment [sage-1805-part4-make_ref_happy.patch](tarball://root/attachments/some-uuid/ticket1805/sage-1805-part4-make_ref_happy.patch) by was created at 2008-03-02 08:09:24\n\nI attached the one small change requested.",
+    "body": "Attachment [sage-1805-part4-make_ref_happy.patch](tarball://root/attachments/some-uuid/ticket1805/sage-1805-part4-make_ref_happy.patch) by @williamstein created at 2008-03-02 08:09:24\n\nI attached the one small change requested.",
     "created_at": "2008-03-02T08:09:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1805#issuecomment-11427",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-1805-part4-make_ref_happy.patch](tarball://root/attachments/some-uuid/ticket1805/sage-1805-part4-make_ref_happy.patch) by was created at 2008-03-02 08:09:24
+Attachment [sage-1805-part4-make_ref_happy.patch](tarball://root/attachments/some-uuid/ticket1805/sage-1805-part4-make_ref_happy.patch) by @williamstein created at 2008-03-02 08:09:24
 
 I attached the one small change requested.
 

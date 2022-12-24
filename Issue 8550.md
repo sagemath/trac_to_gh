@@ -3,7 +3,7 @@
 archive/issues_008550.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  vdelecroix\n\n\n```\nsage: H=SL(2,QQ)\nsage: H.is_finite()\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/sage/dev/<ipython console> in <module>()\n\n/sage/dev/local/lib/python2.6/site-packages/sage/groups/matrix_gps/matrix_group.pyc in is_finite(self)\n    343         if self.base_ring().is_finite():\n    344             return True\n--> 345         return self._gap_().IsFinite().bool()\n    346\n    347     def cardinality(self):\n\n/sage/dev/local/lib/python2.6/site-packages/sage/groups/matrix_gps/matrix_group.pyc in _gap_(self, G)\n    217             return SageObject._gap_(self, G)\n    218         except TypeError:\n--> 219             raise NotImplementedError, \"Matrix group over %s not implemented.\"%self.__R\n    220\n    221     def __cmp__(self, H):\n\nNotImplementedError: Matrix group over Rational Field not implemented.\n```\n\n\nGL fails similarly.  Other rings (ZZ, finite fields) seem to work OK, so perhaps this is restricted to something peculiar to the rationals?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8550\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @videlec\n\n\n```\nsage: H=SL(2,QQ)\nsage: H.is_finite()\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/sage/dev/<ipython console> in <module>()\n\n/sage/dev/local/lib/python2.6/site-packages/sage/groups/matrix_gps/matrix_group.pyc in is_finite(self)\n    343         if self.base_ring().is_finite():\n    344             return True\n--> 345         return self._gap_().IsFinite().bool()\n    346\n    347     def cardinality(self):\n\n/sage/dev/local/lib/python2.6/site-packages/sage/groups/matrix_gps/matrix_group.pyc in _gap_(self, G)\n    217             return SageObject._gap_(self, G)\n    218         except TypeError:\n--> 219             raise NotImplementedError, \"Matrix group over %s not implemented.\"%self.__R\n    220\n    221     def __cmp__(self, H):\n\nNotImplementedError: Matrix group over Rational Field not implemented.\n```\n\n\nGL fails similarly.  Other rings (ZZ, finite fields) seem to work OK, so perhaps this is restricted to something peculiar to the rationals?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8550\n\n",
     "created_at": "2010-03-17T05:17:38Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_008550.json:
     "title": "Infinite matrix groups over QQ fail for is_finite()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8550",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  vdelecroix
+CC:  @videlec
 
 
 ```
@@ -66,7 +66,7 @@ archive/issue_comments_077319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8550",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8550#issuecomment-77319",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_077320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8550",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8550#issuecomment-77320",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_077321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8550",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8550#issuecomment-77321",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_077322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8550",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8550#issuecomment-77322",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_077323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8550",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8550#issuecomment-77323",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_077324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8550",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8550#issuecomment-77324",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_077325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8550",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8550#issuecomment-77325",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_077326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8550",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8550#issuecomment-77326",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

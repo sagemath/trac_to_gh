@@ -3,7 +3,7 @@
 archive/issues_004356.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nThis used to work (e.g., it is in my modular forms book), but now it doesn't.  No clue why it is broken:\n\n```\nsage: M = ModularForms(1,36, prec=10).echelon_form()\nTraceback (most recent call last):\n...\nValueError: The given basis vectors must be linearly independent.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4356\n\n",
+    "body": "Assignee: @craigcitro\n\nThis used to work (e.g., it is in my modular forms book), but now it doesn't.  No clue why it is broken:\n\n```\nsage: M = ModularForms(1,36, prec=10).echelon_form()\nTraceback (most recent call last):\n...\nValueError: The given basis vectors must be linearly independent.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4356\n\n",
     "created_at": "2008-10-24T02:03:06Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_004356.json:
     "title": "modular forms -- echelon_form broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4356",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 This used to work (e.g., it is in my modular forms book), but now it doesn't.  No clue why it is broken:
 
@@ -45,7 +45,7 @@ archive/issue_comments_031997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4356#issuecomment-31997",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_031998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4356#issuecomment-31998",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_031999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4356#issuecomment-31999",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

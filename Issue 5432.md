@@ -3,7 +3,7 @@
 archive/issues_005432.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat\n\nBug fixes:\n- Honor the SAGE_ROOT env variable to call sage\n- Removed config file handling which is now useless\n- Fixed missing default value for guards in qselect_backward_compatibility_patches\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5432\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nBug fixes:\n- Honor the SAGE_ROOT env variable to call sage\n- Removed config file handling which is now useless\n- Fixed missing default value for guards in qselect_backward_compatibility_patches\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5432\n\n",
     "created_at": "2009-03-03T23:28:24Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_005432.json:
     "title": "sage-combinat fixes: sage calls and qselect",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5432",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
 CC:  sage-combinat
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5432
 archive/issue_comments_042028.json:
 ```json
 {
-    "body": "Attachment [sage-combinat-fixes.patch](tarball://root/attachments/some-uuid/ticket5432/sage-combinat-fixes.patch) by nthiery created at 2009-03-03 23:29:19",
+    "body": "Attachment [sage-combinat-fixes.patch](tarball://root/attachments/some-uuid/ticket5432/sage-combinat-fixes.patch) by @nthiery created at 2009-03-03 23:29:19",
     "created_at": "2009-03-03T23:29:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5432",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5432#issuecomment-42028",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [sage-combinat-fixes.patch](tarball://root/attachments/some-uuid/ticket5432/sage-combinat-fixes.patch) by nthiery created at 2009-03-03 23:29:19
+Attachment [sage-combinat-fixes.patch](tarball://root/attachments/some-uuid/ticket5432/sage-combinat-fixes.patch) by @nthiery created at 2009-03-03 23:29:19
 
 
 
@@ -125,7 +125,7 @@ archive/issue_comments_042032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5432",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5432#issuecomment-42032",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 

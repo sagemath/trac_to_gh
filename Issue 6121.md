@@ -14,7 +14,7 @@ archive/issues_006121.json:
     "title": "use metaclasses to support nested class pickling",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6121",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: cwitty
@@ -43,7 +43,7 @@ archive/issue_comments_048915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6121",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6121#issuecomment-48915",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_048916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6121",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6121#issuecomment-48916",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -82,16 +82,16 @@ Authorship credit should go to nthiery as well.
 archive/issue_comments_048917.json:
 ```json
 {
-    "body": "Attachment [6121-nested-pickle-meta.patch](tarball://root/attachments/some-uuid/ticket6121/6121-nested-pickle-meta.patch) by robertwb created at 2009-06-10 09:04:06",
+    "body": "Attachment [6121-nested-pickle-meta.patch](tarball://root/attachments/some-uuid/ticket6121/6121-nested-pickle-meta.patch) by @robertwb created at 2009-06-10 09:04:06",
     "created_at": "2009-06-10T09:04:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6121",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6121#issuecomment-48917",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [6121-nested-pickle-meta.patch](tarball://root/attachments/some-uuid/ticket6121/6121-nested-pickle-meta.patch) by robertwb created at 2009-06-10 09:04:06
+Attachment [6121-nested-pickle-meta.patch](tarball://root/attachments/some-uuid/ticket6121/6121-nested-pickle-meta.patch) by @robertwb created at 2009-06-10 09:04:06
 
 
 
@@ -105,7 +105,7 @@ archive/issue_comments_048918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6121",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6121#issuecomment-48918",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_048919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6121",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6121#issuecomment-48919",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_048920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6121",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6121#issuecomment-48920",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_048921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6121",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6121#issuecomment-48921",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

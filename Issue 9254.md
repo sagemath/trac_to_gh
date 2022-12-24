@@ -3,7 +3,7 @@
 archive/issues_009254.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nThese are some of the things I did while working on my thesis.\n\nDepends on #9253, which depends on #9247. Still needs work, since there is now the following error, which is very mysterious to me:\n\n\n```\nsage -t  \"devel/sage-main/sage/schemes/elliptic_curves/BSD.py\"\n**********************************************************************\nFile \"/Users/rlmill/sage-4.4.4.alpha0/devel/sage-main/sage/schemes/elliptic_curves/BSD.py\", line 371:\n    sage: E.prove_BSD(verbosity=2)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[21]>\", line 1, in <module>\n        E.prove_BSD(verbosity=Integer(2))###line 371:\n    sage: E.prove_BSD(verbosity=2)\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/lib/python/site-packages/sage/schemes/elliptic_curves/BSD.py\", line 538, in prove_BSD\n        I = BSD.curve.heegner_index(D)\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/lib/python/site-packages/sage/schemes/elliptic_curves/heegner.py\", line 6464, in heegner_index\n        reg = F.regulator(descent_second_limit=descent_second_limit, verbose=verbose_mwrank)\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 2095, in regulator\n        G = self.gens(proof=proof, use_database=use_database, descent_second_limit=descent_second_limit, verbose=verbose)\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 1934, in gens\n        G = C.gens()\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/lib/python/site-packages/sage/libs/mwrank/interface.py\", line 595, in gens\n        return eval(preparse(self.__two_descent_data().getbasis().replace(\":\",\",\")))\n    RuntimeError\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9254\n\n",
+    "body": "Assignee: @JohnCremona\n\nThese are some of the things I did while working on my thesis.\n\nDepends on #9253, which depends on #9247. Still needs work, since there is now the following error, which is very mysterious to me:\n\n\n```\nsage -t  \"devel/sage-main/sage/schemes/elliptic_curves/BSD.py\"\n**********************************************************************\nFile \"/Users/rlmill/sage-4.4.4.alpha0/devel/sage-main/sage/schemes/elliptic_curves/BSD.py\", line 371:\n    sage: E.prove_BSD(verbosity=2)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[21]>\", line 1, in <module>\n        E.prove_BSD(verbosity=Integer(2))###line 371:\n    sage: E.prove_BSD(verbosity=2)\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/lib/python/site-packages/sage/schemes/elliptic_curves/BSD.py\", line 538, in prove_BSD\n        I = BSD.curve.heegner_index(D)\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/lib/python/site-packages/sage/schemes/elliptic_curves/heegner.py\", line 6464, in heegner_index\n        reg = F.regulator(descent_second_limit=descent_second_limit, verbose=verbose_mwrank)\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 2095, in regulator\n        G = self.gens(proof=proof, use_database=use_database, descent_second_limit=descent_second_limit, verbose=verbose)\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 1934, in gens\n        G = C.gens()\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/lib/python/site-packages/sage/libs/mwrank/interface.py\", line 595, in gens\n        return eval(preparse(self.__two_descent_data().getbasis().replace(\":\",\",\")))\n    RuntimeError\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9254\n\n",
     "created_at": "2010-06-17T18:28:22Z",
     "labels": [
         "elliptic curves",
@@ -14,10 +14,10 @@ archive/issues_009254.json:
     "title": "A collection of little improvements to BSD.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9254",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 These are some of the things I did while working on my thesis.
 
@@ -71,7 +71,7 @@ archive/issue_comments_087091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9254#issuecomment-87091",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_087092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9254#issuecomment-87092",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_087093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9254#issuecomment-87093",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_087094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9254#issuecomment-87094",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_087095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9254#issuecomment-87095",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_087096.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9254#issuecomment-87096",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_087097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9254#issuecomment-87097",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_087098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9254#issuecomment-87098",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -250,16 +250,16 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_087099.json:
 ```json
 {
-    "body": "Attachment [trac_9254.patch](tarball://root/attachments/some-uuid/ticket9254/trac_9254.patch) by rlm created at 2010-08-09 05:50:49",
+    "body": "Attachment [trac_9254.patch](tarball://root/attachments/some-uuid/ticket9254/trac_9254.patch) by @rlmill created at 2010-08-09 05:50:49",
     "created_at": "2010-08-09T05:50:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9254#issuecomment-87099",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_9254.patch](tarball://root/attachments/some-uuid/ticket9254/trac_9254.patch) by rlm created at 2010-08-09 05:50:49
+Attachment [trac_9254.patch](tarball://root/attachments/some-uuid/ticket9254/trac_9254.patch) by @rlmill created at 2010-08-09 05:50:49
 
 
 
@@ -273,7 +273,7 @@ archive/issue_comments_087100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9254#issuecomment-87100",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_087101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9254#issuecomment-87101",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_087102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9254#issuecomment-87102",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_087103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9254#issuecomment-87103",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_087104.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9254#issuecomment-87104",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

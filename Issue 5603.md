@@ -3,7 +3,7 @@
 archive/issues_005603.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mvngu\n\nSee the end of http://groups.google.com/group/sage-support/browse_thread/thread/44971aa416574675\n\nWe could also call it .blend() to agree with MMA's terminology:\n\nhttp://reference.wolfram.com/mathematica/ref/Blend.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/5603\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  mvngu\n\nSee the end of http://groups.google.com/group/sage-support/browse_thread/thread/44971aa416574675\n\nWe could also call it .blend() to agree with MMA's terminology:\n\nhttp://reference.wolfram.com/mathematica/ref/Blend.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/5603\n\n",
     "created_at": "2009-03-24T21:29:56Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_005603.json:
     "title": "make a .mix() method for Sage color objects",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5603",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  mvngu
 
@@ -43,7 +43,7 @@ archive/issue_comments_043737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5603#issuecomment-43737",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

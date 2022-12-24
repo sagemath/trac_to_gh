@@ -3,7 +3,7 @@
 archive/issues_001049.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: graphs\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1049\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: graphs\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1049\n\n",
     "created_at": "2007-11-01T03:08:15Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001049.json:
     "title": "[with patch] graphs: transitive reduction function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1049",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: graphs
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1049
 archive/issue_comments_006386.json:
 ```json
 {
-    "body": "Attachment [transitive_reduction.patch](tarball://root/attachments/some-uuid/ticket1049/transitive_reduction.patch) by jason created at 2007-11-01 03:08:26",
+    "body": "Attachment [transitive_reduction.patch](tarball://root/attachments/some-uuid/ticket1049/transitive_reduction.patch) by @jasongrout created at 2007-11-01 03:08:26",
     "created_at": "2007-11-01T03:08:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1049#issuecomment-6386",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [transitive_reduction.patch](tarball://root/attachments/some-uuid/ticket1049/transitive_reduction.patch) by jason created at 2007-11-01 03:08:26
+Attachment [transitive_reduction.patch](tarball://root/attachments/some-uuid/ticket1049/transitive_reduction.patch) by @jasongrout created at 2007-11-01 03:08:26
 
 
 
@@ -52,16 +52,16 @@ Attachment [transitive_reduction.patch](tarball://root/attachments/some-uuid/tic
 archive/issue_comments_006387.json:
 ```json
 {
-    "body": "Attachment [docfix.patch](tarball://root/attachments/some-uuid/ticket1049/docfix.patch) by rlm created at 2007-11-01 06:57:32\n\nFixes a doctest",
+    "body": "Attachment [docfix.patch](tarball://root/attachments/some-uuid/ticket1049/docfix.patch) by @rlmill created at 2007-11-01 06:57:32\n\nFixes a doctest",
     "created_at": "2007-11-01T06:57:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1049#issuecomment-6387",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [docfix.patch](tarball://root/attachments/some-uuid/ticket1049/docfix.patch) by rlm created at 2007-11-01 06:57:32
+Attachment [docfix.patch](tarball://root/attachments/some-uuid/ticket1049/docfix.patch) by @rlmill created at 2007-11-01 06:57:32
 
 Fixes a doctest
 

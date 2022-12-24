@@ -3,7 +3,7 @@
 archive/issues_009850.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  mpatel\n\nKeywords: sage-pkg, stderr hangs\n\nAt [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/c008a74ae2b3af95), I reported the following problem.\n\n- Take a folder with many uncommitted changes in a Mercurial repository. [Example](http://www.google.com/url?sa=D&q=http://sage.math.washington.edu/home/SimonKing/Cohomology/p_group_cohomology-2.1.alpha0.tar.gz&usg=AFQjCNE362g2kL77GzI-7T5RaOBx92X0KQ).\n- Run `sage -pkg` on it.\n- It will hang forever while it is attempted to read from `stderr` of a subprocess.\n\nMitesh Patel pointed to the solution: One should use `communicate` rather than stdout/stdin/stderr!\n\nI don't know how to doctest the issue; but I have a patch that solves the problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9851\n\n",
+    "body": "Assignee: tbd\n\nCC:  @qed777\n\nKeywords: sage-pkg, stderr hangs\n\nAt [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/c008a74ae2b3af95), I reported the following problem.\n\n- Take a folder with many uncommitted changes in a Mercurial repository. [Example](http://www.google.com/url?sa=D&q=http://sage.math.washington.edu/home/SimonKing/Cohomology/p_group_cohomology-2.1.alpha0.tar.gz&usg=AFQjCNE362g2kL77GzI-7T5RaOBx92X0KQ).\n- Run `sage -pkg` on it.\n- It will hang forever while it is attempted to read from `stderr` of a subprocess.\n\nMitesh Patel pointed to the solution: One should use `communicate` rather than stdout/stdin/stderr!\n\nI don't know how to doctest the issue; but I have a patch that solves the problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9851\n\n",
     "created_at": "2010-09-03T09:51:51Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_009850.json:
     "title": "sage -pkg may hang if there are many uncommitted changes in the package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9850",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 Assignee: tbd
 
-CC:  mpatel
+CC:  @qed777
 
 Keywords: sage-pkg, stderr hangs
 
@@ -49,7 +49,7 @@ archive/issue_comments_097228.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9850#issuecomment-97228",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_097229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9850#issuecomment-97229",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -80,16 +80,16 @@ Changing status from new to needs_review.
 archive/issue_comments_097230.json:
 ```json
 {
-    "body": "Attachment [9851-sage-pkg.patch](tarball://root/attachments/some-uuid/ticket9851/9851-sage-pkg.patch) by SimonKing created at 2010-09-03 09:57:23",
+    "body": "Attachment [9851-sage-pkg.patch](tarball://root/attachments/some-uuid/ticket9851/9851-sage-pkg.patch) by @simon-king-jena created at 2010-09-03 09:57:23",
     "created_at": "2010-09-03T09:57:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9850#issuecomment-97230",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [9851-sage-pkg.patch](tarball://root/attachments/some-uuid/ticket9851/9851-sage-pkg.patch) by SimonKing created at 2010-09-03 09:57:23
+Attachment [9851-sage-pkg.patch](tarball://root/attachments/some-uuid/ticket9851/9851-sage-pkg.patch) by @simon-king-jena created at 2010-09-03 09:57:23
 
 
 
@@ -103,7 +103,7 @@ archive/issue_comments_097231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9850#issuecomment-97231",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_097232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9850#issuecomment-97232",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_097233.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9850#issuecomment-97233",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

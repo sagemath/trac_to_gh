@@ -3,7 +3,7 @@
 archive/issues_009878.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nKeywords: pynac\n\nSymbolic expressions automatically evaluate themselves to simplify the data structures, representation, etc. For example,\n\n\n```\nsage: x+x\n2*x\nsage: x*x\nx^2\n```\n\n\nThe ability to disable this evaluation is a feature requested very often.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9879\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: pynac\n\nSymbolic expressions automatically evaluate themselves to simplify the data structures, representation, etc. For example,\n\n\n```\nsage: x+x\n2*x\nsage: x*x\nx^2\n```\n\n\nThe ability to disable this evaluation is a feature requested very often.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9879\n\n",
     "created_at": "2010-09-09T08:46:26Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_009878.json:
     "title": "allow preventing automatic evaluation of symbolic expressions (hold)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9878",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 Keywords: pynac
 
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9879
 archive/issue_comments_097796.json:
 ```json
 {
-    "body": "Attachment [trac_9879-hold.patch](tarball://root/attachments/some-uuid/ticket9879/trac_9879-hold.patch) by burcin created at 2010-09-12 12:17:49\n\nWith attachment:trac_9879-hold.patch and the new pynac package at #9201, one can do:\n\n\n```\nsage: x.add(x,(x+1), hold=True)\nx + x + (x + 1)\nsage: sin(pi, hold=True)\nsin(pi)\n```\n\n\nThe pynac package includes patches for #9394, #9834, #9878, #9881, #9900 as well as this ticket. See the ticket description of #9901 for the list (and order) of patches associated to the new version.",
+    "body": "Attachment [trac_9879-hold.patch](tarball://root/attachments/some-uuid/ticket9879/trac_9879-hold.patch) by @burcin created at 2010-09-12 12:17:49\n\nWith attachment:trac_9879-hold.patch and the new pynac package at #9201, one can do:\n\n\n```\nsage: x.add(x,(x+1), hold=True)\nx + x + (x + 1)\nsage: sin(pi, hold=True)\nsin(pi)\n```\n\n\nThe pynac package includes patches for #9394, #9834, #9878, #9881, #9900 as well as this ticket. See the ticket description of #9901 for the list (and order) of patches associated to the new version.",
     "created_at": "2010-09-12T12:17:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9878",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9878#issuecomment-97796",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9879-hold.patch](tarball://root/attachments/some-uuid/ticket9879/trac_9879-hold.patch) by burcin created at 2010-09-12 12:17:49
+Attachment [trac_9879-hold.patch](tarball://root/attachments/some-uuid/ticket9879/trac_9879-hold.patch) by @burcin created at 2010-09-12 12:17:49
 
 With attachment:trac_9879-hold.patch and the new pynac package at #9201, one can do:
 
@@ -81,7 +81,7 @@ archive/issue_comments_097797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9878",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9878#issuecomment-97797",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_097798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9878",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9878#issuecomment-97798",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_097799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9878",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9878#issuecomment-97799",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_097800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9878",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9878#issuecomment-97800",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -168,16 +168,16 @@ Making a context for holding is now #10035.
 archive/issue_comments_097801.json:
 ```json
 {
-    "body": "Attachment [trac_9879-hold-review.patch](tarball://root/attachments/some-uuid/ticket9879/trac_9879-hold-review.patch) by kcrisman created at 2010-10-04 15:01:55\n\nApply after initial patch",
+    "body": "Attachment [trac_9879-hold-review.patch](tarball://root/attachments/some-uuid/ticket9879/trac_9879-hold-review.patch) by @kcrisman created at 2010-10-04 15:01:55\n\nApply after initial patch",
     "created_at": "2010-10-04T15:01:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9878",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9878#issuecomment-97801",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_9879-hold-review.patch](tarball://root/attachments/some-uuid/ticket9879/trac_9879-hold-review.patch) by kcrisman created at 2010-10-04 15:01:55
+Attachment [trac_9879-hold-review.patch](tarball://root/attachments/some-uuid/ticket9879/trac_9879-hold-review.patch) by @kcrisman created at 2010-10-04 15:01:55
 
 Apply after initial patch
 
@@ -193,7 +193,7 @@ archive/issue_comments_097802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9878",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9878#issuecomment-97802",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -332,7 +332,7 @@ archive/issue_comments_097805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9878",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9878#issuecomment-97805",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -371,7 +371,7 @@ archive/issue_comments_097806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9878",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9878#issuecomment-97806",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -402,7 +402,7 @@ archive/issue_comments_097807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9878",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9878#issuecomment-97807",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -456,7 +456,7 @@ archive/issue_comments_097809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9878",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9878#issuecomment-97809",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -476,7 +476,7 @@ archive/issue_comments_097810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9878",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9878#issuecomment-97810",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

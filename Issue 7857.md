@@ -3,7 +3,7 @@
 archive/issues_007857.json:
 ```json
 {
-    "body": "Assignee: spancratz\n\nCC:  robertwb\n\nKeywords: fraction field\n\nTo implement Henrici's algorithms (or the Henrici--Brown algorithms) for arithmetic operations in fraction fields.\n\nSee:\n    http://groups.google.com/group/sage-devel/browse_thread/thread/65064ad496db9c75\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7857\n\n",
+    "body": "Assignee: spancratz\n\nCC:  @robertwb\n\nKeywords: fraction field\n\nTo implement Henrici's algorithms (or the Henrici--Brown algorithms) for arithmetic operations in fraction fields.\n\nSee:\n    http://groups.google.com/group/sage-devel/browse_thread/thread/65064ad496db9c75\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7857\n\n",
     "created_at": "2010-01-06T16:12:12Z",
     "labels": [
         "algebra",
@@ -19,7 +19,7 @@ archive/issues_007857.json:
 ```
 Assignee: spancratz
 
-CC:  robertwb
+CC:  @robertwb
 
 Keywords: fraction field
 
@@ -137,16 +137,16 @@ Second patch
 archive/issue_comments_068086.json:
 ```json
 {
-    "body": "Attachment [trac7857_20090106.patch](tarball://root/attachments/some-uuid/ticket7857/trac7857_20090106.patch) by cremona created at 2010-01-06 18:22:17\n\nFirst comment:  Note that the \"second patch\" replaces the first one!\n\nI noticed a bare \"except:\"  which is bad style -- it should list the errors expected explicitly.\n\nQuestion:  the code for sub is (of course) almost identical to that for add.  Would it not be better to implement sub by adding the inverse?  I would have thought that the overhead would be trivial, and itmakes the code easier to maintain.\n\nThe (second) patch applies fine to 4.3 and all tests in sage/rings and sage/schemes/elliptic_curves pass.  (I tested the latter since I seemed to remember some fraction field arithmetic somewhere in there).  I also checked the docs still build ok.\n\nI'll tag this as \"needs work\" but it's very minor to fix the exception trapping and (perhaps) replace the subtraction code.",
+    "body": "Attachment [trac7857_20090106.patch](tarball://root/attachments/some-uuid/ticket7857/trac7857_20090106.patch) by @JohnCremona created at 2010-01-06 18:22:17\n\nFirst comment:  Note that the \"second patch\" replaces the first one!\n\nI noticed a bare \"except:\"  which is bad style -- it should list the errors expected explicitly.\n\nQuestion:  the code for sub is (of course) almost identical to that for add.  Would it not be better to implement sub by adding the inverse?  I would have thought that the overhead would be trivial, and itmakes the code easier to maintain.\n\nThe (second) patch applies fine to 4.3 and all tests in sage/rings and sage/schemes/elliptic_curves pass.  (I tested the latter since I seemed to remember some fraction field arithmetic somewhere in there).  I also checked the docs still build ok.\n\nI'll tag this as \"needs work\" but it's very minor to fix the exception trapping and (perhaps) replace the subtraction code.",
     "created_at": "2010-01-06T18:22:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7857#issuecomment-68086",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac7857_20090106.patch](tarball://root/attachments/some-uuid/ticket7857/trac7857_20090106.patch) by cremona created at 2010-01-06 18:22:17
+Attachment [trac7857_20090106.patch](tarball://root/attachments/some-uuid/ticket7857/trac7857_20090106.patch) by @JohnCremona created at 2010-01-06 18:22:17
 
 First comment:  Note that the "second patch" replaces the first one!
 
@@ -170,7 +170,7 @@ archive/issue_comments_068087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7857#issuecomment-68087",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_068089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7857#issuecomment-68089",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -361,7 +361,7 @@ archive/issue_comments_068095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7857#issuecomment-68095",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -472,7 +472,7 @@ archive/issue_comments_068100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7857#issuecomment-68100",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -501,7 +501,7 @@ archive/issue_comments_068101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7857#issuecomment-68101",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -519,7 +519,7 @@ archive/issue_comments_068102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7857#issuecomment-68102",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -537,7 +537,7 @@ archive/issue_comments_068103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7857#issuecomment-68103",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

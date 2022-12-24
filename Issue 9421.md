@@ -3,7 +3,7 @@
 archive/issues_009421.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  robert.marik kcrisman\n\nConsider\n\n```\nsage: var('t')\nsage: x=function('x',t)\nsage: var('c')\nsage: desolve(diff(x,t)+2*x==t^2-2*t+c,x,ivar=t).expand()\nc*e^(-2*t) + 1/2*t^2 + 1/2*c - 3/2*t + 3/4\n```\n\nHere the first occurrence of `c` is an integration constant,\nwhereas the second one is the parameter in the ODE:\n\n```\nsage: var('d')\nsage: desolve(diff(x,t)+2*x==t^2-2*t+d,x,ivar=t).expand()\nc*e^(-2*t) + 1/2*t^2 + 1/2*d - 3/2*t + 3/4\n```\n\nIn case the ODE contains `c`, desolve should choose another\nname for the integration constant.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9421\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @robert-marik @kcrisman\n\nConsider\n\n```\nsage: var('t')\nsage: x=function('x',t)\nsage: var('c')\nsage: desolve(diff(x,t)+2*x==t^2-2*t+c,x,ivar=t).expand()\nc*e^(-2*t) + 1/2*t^2 + 1/2*c - 3/2*t + 3/4\n```\n\nHere the first occurrence of `c` is an integration constant,\nwhereas the second one is the parameter in the ODE:\n\n```\nsage: var('d')\nsage: desolve(diff(x,t)+2*x==t^2-2*t+d,x,ivar=t).expand()\nc*e^(-2*t) + 1/2*t^2 + 1/2*d - 3/2*t + 3/4\n```\n\nIn case the ODE contains `c`, desolve should choose another\nname for the integration constant.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9421\n\n",
     "created_at": "2010-07-03T13:56:02Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_009421.json:
     "title": "desolve mixes user parameters and integration constants",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9421",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  robert.marik kcrisman
+CC:  @robert-marik @kcrisman
 
 Consider
 
@@ -59,7 +59,7 @@ archive/issue_comments_089854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9421#issuecomment-89854",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -72,16 +72,16 @@ This is a part of more general problem which has been reported in #6882.
 archive/issue_comments_089855.json:
 ```json
 {
-    "body": "Attachment [trac_9421.patch](tarball://root/attachments/some-uuid/ticket9421/trac_9421.patch) by zimmerma created at 2013-08-25 13:25:17",
+    "body": "Attachment [trac_9421.patch](tarball://root/attachments/some-uuid/ticket9421/trac_9421.patch) by @zimmermann6 created at 2013-08-25 13:25:17",
     "created_at": "2013-08-25T13:25:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9421#issuecomment-89855",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [trac_9421.patch](tarball://root/attachments/some-uuid/ticket9421/trac_9421.patch) by zimmerma created at 2013-08-25 13:25:17
+Attachment [trac_9421.patch](tarball://root/attachments/some-uuid/ticket9421/trac_9421.patch) by @zimmermann6 created at 2013-08-25 13:25:17
 
 
 
@@ -95,7 +95,7 @@ archive/issue_comments_089856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9421#issuecomment-89856",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_089857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9421#issuecomment-89857",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_089858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9421#issuecomment-89858",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_089859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9421#issuecomment-89859",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_089860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9421#issuecomment-89860",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_089861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9421#issuecomment-89861",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_089862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9421#issuecomment-89862",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_089863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9421#issuecomment-89863",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_089864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9421#issuecomment-89864",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000945.json:
 ```json
 {
-    "body": "Assignee: was\n\nHere's a test case.  First I define a function:\n\n```\nsage: def foo(x):\n....:     return x+3\n....: \n```\n\n\nThen I copy/paste the above session:\n\n```\nsage: sage: def foo(x):\n....:     ....:     return x+3\n------------------------------------------------------------\n<type 'exceptions.IndentationError'>: expected an indented block (<ipython console>, line 2)\n\nsage: \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/945\n\n",
+    "body": "Assignee: @williamstein\n\nHere's a test case.  First I define a function:\n\n```\nsage: def foo(x):\n....:     return x+3\n....: \n```\n\n\nThen I copy/paste the above session:\n\n```\nsage: sage: def foo(x):\n....:     ....:     return x+3\n------------------------------------------------------------\n<type 'exceptions.IndentationError'>: expected an indented block (<ipython console>, line 2)\n\nsage: \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/945\n\n",
     "created_at": "2007-10-20T17:15:06Z",
     "labels": [
         "user interface",
@@ -17,7 +17,7 @@ archive/issues_000945.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Here's a test case.  First I define a function:
 
@@ -57,7 +57,7 @@ archive/issue_comments_005774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/945#issuecomment-5774",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_005775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/945#issuecomment-5775",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_005778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/945#issuecomment-5778",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_005779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/945#issuecomment-5779",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_005780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/945#issuecomment-5780",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

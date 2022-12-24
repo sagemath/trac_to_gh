@@ -3,7 +3,7 @@
 archive/issues_009718.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  jsp jhpalmieri leif\n\nUsing the host 'fulvia'\n\n* Dell Optiplex 755\n* 2.4 GHz Quad-Core Intel Core Q6600 \n* 8 GB RAM\n* Solaris 10 x86 (update 5, 5/08)\n* gcc 4.5.1 configured to use the Sun linker and GNU assembler from binutils-2.20.1. \n* 64-bit build. \n\niconv failed to build. See the attached log file. \n\nAn identical issue was seen on disk.math using OpenSolaris, but I assumed that was because the tool set was rather old on disk.math - see #9405.\n\nI've built iconv both 32-bit and 64-bit on several machines OK.\n\n|            |      |             |            |       |        |          |         |\n|------------|------|-------------|------------|-------|--------|----------|---------|\n|**Hardware**|**OS**|**Processor**|**hostname**|**gcc**|**Bits**|**Result**|**Notes**|\n|Sun T5240|Solaris 10 update 7 05/2009|SPARC|t2.math|4.4.1|32-bit|OK||\n|Sun T5240|Solaris 10 update 7 05/2009|SPARC|t2.math|4.4.1|64-bit|OK||\n|Sun Blade 1000|Solaris 10 03/2005|SPARC|redstart (mine)|4.4.4|32-bit|OK||\n|Sun Blade 1000|Solaris 10 03/2005|SPARC|redstart (mine)|4.4.4|64-bit|OK||\n|Sun Fire X4540|OpenSolaris 11/2008|x86|disk.math|4.3.2|32-bit|??||\n|Sun Fire X4540|OpenSolaris 11/2008|x86|disk.math|4.3.2|64-bit|**Fail**|#9405, but old tools|\n|Dell Optiplex 755 |Solaris 10 update 5 05/2008|x86|fulvia`@`skynet|4.5.1|32-bit|OK||\n|Dell Optiplex 755 |Solaris 10 update 5 05/2008|x86|fulvia`@`skynet|4.5.1|64-bit|**Fail**|This ticket|\n|Sun Ultra 27|OpenSolaris 06/2009|x86|hawk (mine)|4.5.1|32-bit|OK||\n|Sun Ultra 27|OpenSolaris 06/2009|x86|hawk (mine)|4.5.1|64-bit|OK||\nWith only two failures, it's to sure of any pattern, though so far. \n\n* iconv has only failed to build on x86 processors. Always OK on SPARC.\n* iconv has only failed on 64-bit builds.\n* iconv seems to failed on older versions of Solaris/OpenSolaris and not the more recent versions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9718\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jaapspies @jhpalmieri @nexttime\n\nUsing the host 'fulvia'\n\n* Dell Optiplex 755\n* 2.4 GHz Quad-Core Intel Core Q6600 \n* 8 GB RAM\n* Solaris 10 x86 (update 5, 5/08)\n* gcc 4.5.1 configured to use the Sun linker and GNU assembler from binutils-2.20.1. \n* 64-bit build. \n\niconv failed to build. See the attached log file. \n\nAn identical issue was seen on disk.math using OpenSolaris, but I assumed that was because the tool set was rather old on disk.math - see #9405.\n\nI've built iconv both 32-bit and 64-bit on several machines OK.\n\n|            |      |             |            |       |        |          |         |\n|------------|------|-------------|------------|-------|--------|----------|---------|\n|**Hardware**|**OS**|**Processor**|**hostname**|**gcc**|**Bits**|**Result**|**Notes**|\n|Sun T5240|Solaris 10 update 7 05/2009|SPARC|t2.math|4.4.1|32-bit|OK||\n|Sun T5240|Solaris 10 update 7 05/2009|SPARC|t2.math|4.4.1|64-bit|OK||\n|Sun Blade 1000|Solaris 10 03/2005|SPARC|redstart (mine)|4.4.4|32-bit|OK||\n|Sun Blade 1000|Solaris 10 03/2005|SPARC|redstart (mine)|4.4.4|64-bit|OK||\n|Sun Fire X4540|OpenSolaris 11/2008|x86|disk.math|4.3.2|32-bit|??||\n|Sun Fire X4540|OpenSolaris 11/2008|x86|disk.math|4.3.2|64-bit|**Fail**|#9405, but old tools|\n|Dell Optiplex 755 |Solaris 10 update 5 05/2008|x86|fulvia`@`skynet|4.5.1|32-bit|OK||\n|Dell Optiplex 755 |Solaris 10 update 5 05/2008|x86|fulvia`@`skynet|4.5.1|64-bit|**Fail**|This ticket|\n|Sun Ultra 27|OpenSolaris 06/2009|x86|hawk (mine)|4.5.1|32-bit|OK||\n|Sun Ultra 27|OpenSolaris 06/2009|x86|hawk (mine)|4.5.1|64-bit|OK||\nWith only two failures, it's to sure of any pattern, though so far. \n\n* iconv has only failed to build on x86 processors. Always OK on SPARC.\n* iconv has only failed on 64-bit builds.\n* iconv seems to failed on older versions of Solaris/OpenSolaris and not the more recent versions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9718\n\n",
     "created_at": "2010-08-10T14:28:27Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_009718.json:
 ```
 Assignee: drkirkby
 
-CC:  jsp jhpalmieri leif
+CC:  @jaapspies @jhpalmieri @nexttime
 
 Using the host 'fulvia'
 
@@ -179,7 +179,7 @@ archive/issue_comments_094850.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9718#issuecomment-94850",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -303,16 +303,16 @@ iconv now building on 'fulvia' at Skynet
 archive/issue_comments_094854.json:
 ```json
 {
-    "body": "Attachment [iconv-1.13.1.p3.log.txt](tarball://root/attachments/some-uuid/ticket9718/iconv-1.13.1.p3.log.txt) by leif created at 2010-09-08 12:27:44\n\n**This ticket can be closed when #9603 gets merged**, since the relevant patch\n\n  http://trac.sagemath.org/sage_trac/attachment/ticket/9603/9603-move-from-CFLAGS-to-CC.patch\n\nis *there* (integrated into iconv-1.13.1.p3).",
+    "body": "Attachment [iconv-1.13.1.p3.log.txt](tarball://root/attachments/some-uuid/ticket9718/iconv-1.13.1.p3.log.txt) by @nexttime created at 2010-09-08 12:27:44\n\n**This ticket can be closed when #9603 gets merged**, since the relevant patch\n\n  http://trac.sagemath.org/sage_trac/attachment/ticket/9603/9603-move-from-CFLAGS-to-CC.patch\n\nis *there* (integrated into iconv-1.13.1.p3).",
     "created_at": "2010-09-08T12:27:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9718#issuecomment-94854",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [iconv-1.13.1.p3.log.txt](tarball://root/attachments/some-uuid/ticket9718/iconv-1.13.1.p3.log.txt) by leif created at 2010-09-08 12:27:44
+Attachment [iconv-1.13.1.p3.log.txt](tarball://root/attachments/some-uuid/ticket9718/iconv-1.13.1.p3.log.txt) by @nexttime created at 2010-09-08 12:27:44
 
 **This ticket can be closed when #9603 gets merged**, since the relevant patch
 
@@ -332,7 +332,7 @@ archive/issue_comments_094855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9718#issuecomment-94855",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

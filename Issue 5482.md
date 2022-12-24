@@ -3,7 +3,7 @@
 archive/issues_005482.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe following code works:\n\n```\nsage: R.<x> = PolynomialRing(QQ)\nsage: f = x^2-1\nsage: S = R.quotient_by_principal_ideal(f)\n```\n\nbut then this fails:\n\n```\nsage: S\n ---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n...[snip]\n/Users/tmp/sage-3.4.alpha0/local/lib/python2.5/site-packages/sage/structure/category_object.so in sage.structure.category_object.CategoryObject.variable_names (sage/structure/category_object.c:3530)()\n\nValueError: variable names have not yet been set using self._assign_names(...)\n```\n\nThe routine should require that the name(s) be provided.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5482\n\n",
+    "body": "Assignee: @williamstein\n\nThe following code works:\n\n```\nsage: R.<x> = PolynomialRing(QQ)\nsage: f = x^2-1\nsage: S = R.quotient_by_principal_ideal(f)\n```\n\nbut then this fails:\n\n```\nsage: S\n ---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n...[snip]\n/Users/tmp/sage-3.4.alpha0/local/lib/python2.5/site-packages/sage/structure/category_object.so in sage.structure.category_object.CategoryObject.variable_names (sage/structure/category_object.c:3530)()\n\nValueError: variable names have not yet been set using self._assign_names(...)\n```\n\nThe routine should require that the name(s) be provided.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5482\n\n",
     "created_at": "2009-03-11T06:44:39Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_005482.json:
     "user": "justin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The following code works:
 
@@ -79,7 +79,7 @@ archive/issue_comments_042533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5482#issuecomment-42533",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_042534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5482#issuecomment-42534",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -132,7 +132,7 @@ Changing status from new to assigned.
 archive/issue_comments_042536.json:
 ```json
 {
-    "body": "Changing assignee from was to justin.",
+    "body": "Changing assignee from @williamstein to justin.",
     "created_at": "2009-03-16T03:16:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5482",
     "type": "issue_comment",
@@ -141,7 +141,7 @@ archive/issue_comments_042536.json:
 }
 ```
 
-Changing assignee from was to justin.
+Changing assignee from @williamstein to justin.
 
 
 
@@ -182,7 +182,7 @@ archive/issue_comments_042538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5482#issuecomment-42538",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_042539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5482#issuecomment-42539",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_042540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5482#issuecomment-42540",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -233,16 +233,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_042541.json:
 ```json
 {
-    "body": "Attachment [trac_5482.patch](tarball://root/attachments/some-uuid/ticket5482/trac_5482.patch) by AlexGhitza created at 2009-11-15 12:36:20\n\napply this patch only",
+    "body": "Attachment [trac_5482.patch](tarball://root/attachments/some-uuid/ticket5482/trac_5482.patch) by @aghitza created at 2009-11-15 12:36:20\n\napply this patch only",
     "created_at": "2009-11-15T12:36:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5482#issuecomment-42541",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_5482.patch](tarball://root/attachments/some-uuid/ticket5482/trac_5482.patch) by AlexGhitza created at 2009-11-15 12:36:20
+Attachment [trac_5482.patch](tarball://root/attachments/some-uuid/ticket5482/trac_5482.patch) by @aghitza created at 2009-11-15 12:36:20
 
 apply this patch only
 
@@ -258,7 +258,7 @@ archive/issue_comments_042542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5482#issuecomment-42542",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_042543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5482#issuecomment-42543",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_042544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5482#issuecomment-42544",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

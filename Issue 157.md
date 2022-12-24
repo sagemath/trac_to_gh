@@ -3,7 +3,7 @@
 archive/issues_000157.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\n\n```\nHi William,\n \nSAGE is great!  Long live SAGE!  Now a bug report \n \nIntegers(2**31)(5) hangs on my Linux box.\n \nBug information: Integers(2**30)(5) works, Integers(2**31-1)(5) works, but\nthere's an ugly range after 2**31.  The offending code is in\ninteger_mod.pyx, but I can't debug it much further.  Here's a gdb\nbacktrace, which looks a little sparse:\n \nbash-2.05b$ ./sage -gdb\n--------------------------------------------------------\n--------------------------------------------------------\n \n/grad/sone/ncalexan/software/sage-1.4/local/bin/sage-gdb-pythonstartup\nGNU gdb Red Hat Linux (6.0post-0.20040223.19rh)\nCopyright 2004 Free Software Foundation, Inc.\nGDB is free software, covered by the GNU General Public License, and you are\nwelcome to change it and/or distribute copies of it under certain conditions.\nType \"show copying\" to see the conditions.\nThere is absolutely no warranty for GDB.  Type \"show warranty\" for details.\nThis GDB was configured as \"i386-redhat-linux-gnu\"...Using host\nlibthread_db library \"/lib/tls/libthread_db.so.1\".\n \n[Thread debugging using libthread_db enabled]\n[New Thread -1208072704 (LWP 7971)]\nPython 2.5 (r25:51908, Oct 16 2006, 11:48:58)\n[GCC 3.3.3 20040412 (Red Hat Linux 3.3.3-7)] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\nDetaching after fork from child process 7996.\n \nsage: Integers(2**31)(5)\n \nProgram received signal SIGFPE, Arithmetic exception.\n[Switching to Thread -1208072704 (LWP 7971)]\n0x0038ff14 in __gmp_exception ()\n   from /grad/sone/ncalexan/software/sage-1.4/local/lib/libgmp.so.3\n(gdb) bt\n#0  0x0038ff14 in __gmp_exception ()\n   from /grad/sone/ncalexan/software/sage-1.4/local/lib/libgmp.so.3\n#1  0xb7faf46c in ?? ()\n#2  0xb2ca95ac in ?? ()\n#3  0x003ba2e0 in ?? ()\n   from /grad/sone/ncalexan/software/sage-1.4/local/lib/libgmp.so.3\n#4  0x0038ff5f in __gmp_divide_by_zero ()\n   from /grad/sone/ncalexan/software/sage-1.4/local/lib/libgmp.so.3\n#5  0x00000002 in ?? ()\n#6  0xb2ca95ac in ?? ()\n#7  0x003ba2e0 in ?? ()\n   from /grad/sone/ncalexan/software/sage-1.4/local/lib/libgmp.so.3\n#8  0x0039b2bd in __gmpz_fdiv_ui ()\n   from /grad/sone/ncalexan/software/sage-1.4/local/lib/libgmp.so.3\n#9  0xb7faf46c in ?? ()\n#10 0xb2ca95ac in ?? ()\n#11 0x00000000 in ?? ()\n \nMachine information:\n \nIt hangs under my Linux box:\n \n$ uname -a\nLinux tumor 2.6.10-1.9_FC2 #1 Thu Jan 13 17:54:57 EST 2005 i686 i686 i386\nGNU/Linux\n \nBut works fine on the SAGE notebook hosted at modular and works fine on\nSAGE 1.3.7 on my Mac OS X G4 Powerbook.\n \nSage information:  Fails under two versions, both built from source:\n \nbash-2.05b$ ./sage\n--------------------------------------------------------\n--------------------------------------------------------\n \nand\n \nbash-2.05b$ ./sage\n--------------------------------------------------------\n--------------------------------------------------------\n \nThanks for the great work on SAGE, it is now my CAS of choice.\nNick Alexander\n \nPS.  A question: how does @func_persist work, meaning where does it get\ntranslated and into what code.  Is this mechanism general and used\nelsewhere?\n }}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/157\n\n",
+    "body": "Assignee: @robertwb\n\n\n```\nHi William,\n \nSAGE is great!  Long live SAGE!  Now a bug report \n \nIntegers(2**31)(5) hangs on my Linux box.\n \nBug information: Integers(2**30)(5) works, Integers(2**31-1)(5) works, but\nthere's an ugly range after 2**31.  The offending code is in\ninteger_mod.pyx, but I can't debug it much further.  Here's a gdb\nbacktrace, which looks a little sparse:\n \nbash-2.05b$ ./sage -gdb\n--------------------------------------------------------\n--------------------------------------------------------\n \n/grad/sone/ncalexan/software/sage-1.4/local/bin/sage-gdb-pythonstartup\nGNU gdb Red Hat Linux (6.0post-0.20040223.19rh)\nCopyright 2004 Free Software Foundation, Inc.\nGDB is free software, covered by the GNU General Public License, and you are\nwelcome to change it and/or distribute copies of it under certain conditions.\nType \"show copying\" to see the conditions.\nThere is absolutely no warranty for GDB.  Type \"show warranty\" for details.\nThis GDB was configured as \"i386-redhat-linux-gnu\"...Using host\nlibthread_db library \"/lib/tls/libthread_db.so.1\".\n \n[Thread debugging using libthread_db enabled]\n[New Thread -1208072704 (LWP 7971)]\nPython 2.5 (r25:51908, Oct 16 2006, 11:48:58)\n[GCC 3.3.3 20040412 (Red Hat Linux 3.3.3-7)] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\nDetaching after fork from child process 7996.\n \nsage: Integers(2**31)(5)\n \nProgram received signal SIGFPE, Arithmetic exception.\n[Switching to Thread -1208072704 (LWP 7971)]\n0x0038ff14 in __gmp_exception ()\n   from /grad/sone/ncalexan/software/sage-1.4/local/lib/libgmp.so.3\n(gdb) bt\n#0  0x0038ff14 in __gmp_exception ()\n   from /grad/sone/ncalexan/software/sage-1.4/local/lib/libgmp.so.3\n#1  0xb7faf46c in ?? ()\n#2  0xb2ca95ac in ?? ()\n#3  0x003ba2e0 in ?? ()\n   from /grad/sone/ncalexan/software/sage-1.4/local/lib/libgmp.so.3\n#4  0x0038ff5f in __gmp_divide_by_zero ()\n   from /grad/sone/ncalexan/software/sage-1.4/local/lib/libgmp.so.3\n#5  0x00000002 in ?? ()\n#6  0xb2ca95ac in ?? ()\n#7  0x003ba2e0 in ?? ()\n   from /grad/sone/ncalexan/software/sage-1.4/local/lib/libgmp.so.3\n#8  0x0039b2bd in __gmpz_fdiv_ui ()\n   from /grad/sone/ncalexan/software/sage-1.4/local/lib/libgmp.so.3\n#9  0xb7faf46c in ?? ()\n#10 0xb2ca95ac in ?? ()\n#11 0x00000000 in ?? ()\n \nMachine information:\n \nIt hangs under my Linux box:\n \n$ uname -a\nLinux tumor 2.6.10-1.9_FC2 #1 Thu Jan 13 17:54:57 EST 2005 i686 i686 i386\nGNU/Linux\n \nBut works fine on the SAGE notebook hosted at modular and works fine on\nSAGE 1.3.7 on my Mac OS X G4 Powerbook.\n \nSage information:  Fails under two versions, both built from source:\n \nbash-2.05b$ ./sage\n--------------------------------------------------------\n--------------------------------------------------------\n \nand\n \nbash-2.05b$ ./sage\n--------------------------------------------------------\n--------------------------------------------------------\n \nThanks for the great work on SAGE, it is now my CAS of choice.\nNick Alexander\n \nPS.  A question: how does @func_persist work, meaning where does it get\ntranslated and into what code.  Is this mechanism general and used\nelsewhere?\n }}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/157\n\n",
     "created_at": "2006-10-27T20:40:07Z",
     "labels": [
         "basic arithmetic",
@@ -13,10 +13,10 @@ archive/issues_000157.json:
     "title": "Integers(2**31)(5) hangs on 32-bit  (fine on 64-bit, but something else is probably broken there)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/157",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 
 ```
@@ -119,16 +119,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/157
 archive/issue_comments_000706.json:
 ```json
 {
-    "body": "Attachment [modint64-bound.diff](tarball://root/attachments/some-uuid/ticket157/modint64-bound.diff) by robertwb created at 2006-10-27 20:52:18\n\nLower bound on 64-bit integer_mod and (now working) example in doctest",
+    "body": "Attachment [modint64-bound.diff](tarball://root/attachments/some-uuid/ticket157/modint64-bound.diff) by @robertwb created at 2006-10-27 20:52:18\n\nLower bound on 64-bit integer_mod and (now working) example in doctest",
     "created_at": "2006-10-27T20:52:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/157#issuecomment-706",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [modint64-bound.diff](tarball://root/attachments/some-uuid/ticket157/modint64-bound.diff) by robertwb created at 2006-10-27 20:52:18
+Attachment [modint64-bound.diff](tarball://root/attachments/some-uuid/ticket157/modint64-bound.diff) by @robertwb created at 2006-10-27 20:52:18
 
 Lower bound on 64-bit integer_mod and (now working) example in doctest
 
@@ -144,7 +144,7 @@ archive/issue_comments_000707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/157#issuecomment-707",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_000708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/157#issuecomment-708",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001493.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nThe polybori wrapper initializes m4ri by building some tables, but this is not freed on exit. As polybori is now imported from top level, this shows up as still reachable memory on valgrind for every sage session.\n\nThe bundle attached fixes this, along with a minor modification to remove a workaround for a polybori bug which is now fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1493\n\n",
+    "body": "Assignee: @burcin\n\nThe polybori wrapper initializes m4ri by building some tables, but this is not freed on exit. As polybori is now imported from top level, this shows up as still reachable memory on valgrind for every sage session.\n\nThe bundle attached fixes this, along with a minor modification to remove a workaround for a polybori bug which is now fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1493\n\n",
     "created_at": "2007-12-13T20:39:42Z",
     "labels": [
         "memleak",
@@ -14,10 +14,10 @@ archive/issues_001493.json:
     "title": "polybori doesn't free m4ri data on exit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1493",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 The polybori wrapper initializes m4ri by building some tables, but this is not freed on exit. As polybori is now imported from top level, this shows up as still reachable memory on valgrind for every sage session.
 

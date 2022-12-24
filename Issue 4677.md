@@ -3,7 +3,7 @@
 archive/issues_004677.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis works:\n\n```\nsage: f=x^2\nsage: plot(lambda x:f(x),(x,-1,1))\n```\n\nBut this doesn't:\n\n```\nsage: f=x^2\nsage: plot(lambda x:f,(x,-1,1))\nverbose 0 (3633: plot.py, _plot) WARNING: When plotting, failed to evaluate function at 400 points.\nverbose 0 (3633: plot.py, _plot) Last error message: 'float() argument must be a string or a number'\n```\n\nThe behavior is the same for f(x)=x^2.\n\nThis is because in the second example \"evaluating\" the lambda function yields a SymbolicCallableExpression, which needs to be called again to actually yield a numerical value.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/4677\n\n",
+    "body": "Assignee: @williamstein\n\nThis works:\n\n```\nsage: f=x^2\nsage: plot(lambda x:f(x),(x,-1,1))\n```\n\nBut this doesn't:\n\n```\nsage: f=x^2\nsage: plot(lambda x:f,(x,-1,1))\nverbose 0 (3633: plot.py, _plot) WARNING: When plotting, failed to evaluate function at 400 points.\nverbose 0 (3633: plot.py, _plot) Last error message: 'float() argument must be a string or a number'\n```\n\nThe behavior is the same for f(x)=x^2.\n\nThis is because in the second example \"evaluating\" the lambda function yields a SymbolicCallableExpression, which needs to be called again to actually yield a numerical value.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/4677\n\n",
     "created_at": "2008-12-02T17:51:07Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_004677.json:
     "title": "Plotting lambda functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4677",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This works:
 
@@ -55,7 +55,7 @@ archive/issue_comments_035237.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4677#issuecomment-35237",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_035238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4677#issuecomment-35238",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_035239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4677#issuecomment-35239",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -133,16 +133,16 @@ I think this is enough of a change in design that the issue ought to be raised o
 archive/issue_comments_035240.json:
 ```json
 {
-    "body": "Changing assignee from was to kcrisman.",
+    "body": "Changing assignee from @williamstein to @kcrisman.",
     "created_at": "2009-01-24T19:38:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4677#issuecomment-35240",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Changing assignee from was to kcrisman.
+Changing assignee from @williamstein to @kcrisman.
 
 
 
@@ -156,7 +156,7 @@ archive/issue_comments_035241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4677#issuecomment-35241",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_035242.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4677#issuecomment-35242",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -190,13 +190,13 @@ Changing type from defect to enhancement.
 archive/issue_comments_035243.json:
 ```json
 {
-    "body": "Remove assignee kcrisman.",
+    "body": "Remove assignee @kcrisman.",
     "created_at": "2012-07-07T03:24:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4677#issuecomment-35243",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Remove assignee kcrisman.
+Remove assignee @kcrisman.

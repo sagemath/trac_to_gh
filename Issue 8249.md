@@ -3,7 +3,7 @@
 archive/issues_008249.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  acleone mpatel mhampton\n\nThis is a followup to #6353.   That ticket improved cookie naming a bit.  However, it appears to be not enough.  \n\n\n```\nOn Thu, Feb 11, 2010 at 7:21 PM, Marshall Hampton <> wrote:\n> Just for the record, this has happened to me quite a bit recently.\n>\n> I use a lot of different sage servers, often running different\n> versions, so I don't usually report this kind of stuff since I think I\n> am something of an extreme case.  But most of the servers I use are\n> now running 4.3.2 and I am pretty sure I have seen the cookie message\n> more than before.\n>\n\nHere's the relevant ticket I was remembering:\n\n     http://trac.sagemath.org/sage_trac/ticket/6353\n\nIt is definitely in sage-4.3.2 (since it is merged into sagenb-0.7.4).   \n\nLooking at that patch show that:\n\n  (1) it addresses a related issue,\n\n  (2) it might not solve the issue we're discussing, since it merely includes the *port* in the cookie name -- some unique id for the notebook (e.g., the URL or something else) is maybe also needed to fix the problem we're discussing.\n\nSo somebody should look at ticket 6353, see if a small modification of it would give a real fix, and make said modification.      Alex Leone: this would be a good project for you, if you're looking for something to do on the notebook. \n\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8249\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  acleone @qed777 mhampton\n\nThis is a followup to #6353.   That ticket improved cookie naming a bit.  However, it appears to be not enough.  \n\n\n```\nOn Thu, Feb 11, 2010 at 7:21 PM, Marshall Hampton <> wrote:\n> Just for the record, this has happened to me quite a bit recently.\n>\n> I use a lot of different sage servers, often running different\n> versions, so I don't usually report this kind of stuff since I think I\n> am something of an extreme case.  But most of the servers I use are\n> now running 4.3.2 and I am pretty sure I have seen the cookie message\n> more than before.\n>\n\nHere's the relevant ticket I was remembering:\n\n     http://trac.sagemath.org/sage_trac/ticket/6353\n\nIt is definitely in sage-4.3.2 (since it is merged into sagenb-0.7.4).   \n\nLooking at that patch show that:\n\n  (1) it addresses a related issue,\n\n  (2) it might not solve the issue we're discussing, since it merely includes the *port* in the cookie name -- some unique id for the notebook (e.g., the URL or something else) is maybe also needed to fix the problem we're discussing.\n\nSo somebody should look at ticket 6353, see if a small modification of it would give a real fix, and make said modification.      Alex Leone: this would be a good project for you, if you're looking for something to do on the notebook. \n\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8249\n\n",
     "created_at": "2010-02-12T12:12:00Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_008249.json:
     "title": "sagenb: notebook cookies",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8249",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  acleone mpatel mhampton
+CC:  acleone @qed777 mhampton
 
 This is a followup to #6353.   That ticket improved cookie naming a bit.  However, it appears to be not enough.  
 
@@ -89,7 +89,7 @@ archive/issue_comments_072957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8249#issuecomment-72957",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_072958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8249#issuecomment-72958",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -120,16 +120,16 @@ Expire cookies on logout.  sagenb repo.
 archive/issue_comments_072959.json:
 ```json
 {
-    "body": "Attachment [trac_8249-notebook_cookies.patch](tarball://root/attachments/some-uuid/ticket8249/trac_8249-notebook_cookies.patch) by mpatel created at 2010-02-14 04:44:12\n\nI've attached a patch that should delete both the test and notebook session cookies, when a user logs out.",
+    "body": "Attachment [trac_8249-notebook_cookies.patch](tarball://root/attachments/some-uuid/ticket8249/trac_8249-notebook_cookies.patch) by @qed777 created at 2010-02-14 04:44:12\n\nI've attached a patch that should delete both the test and notebook session cookies, when a user logs out.",
     "created_at": "2010-02-14T04:44:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8249#issuecomment-72959",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8249-notebook_cookies.patch](tarball://root/attachments/some-uuid/ticket8249/trac_8249-notebook_cookies.patch) by mpatel created at 2010-02-14 04:44:12
+Attachment [trac_8249-notebook_cookies.patch](tarball://root/attachments/some-uuid/ticket8249/trac_8249-notebook_cookies.patch) by @qed777 created at 2010-02-14 04:44:12
 
 I've attached a patch that should delete both the test and notebook session cookies, when a user logs out.
 
@@ -145,7 +145,7 @@ archive/issue_comments_072960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8249#issuecomment-72960",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_072961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8249#issuecomment-72961",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_072962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8249#issuecomment-72962",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -250,16 +250,16 @@ Selenium errors with patch.  Same errors when the patch for #6069 -missing_pub_w
 archive/issue_comments_072966.json:
 ```json
 {
-    "body": "Attachment [trac_8249-notebook_cookies-selenium_errors.log](tarball://root/attachments/some-uuid/ticket8249/trac_8249-notebook_cookies-selenium_errors.log) by mpatel created at 2010-02-14 06:55:39\n\nThanks for catching the Se test errors.  I should have checked.\n\nThe patch fixes for me the one cookie-related problem I could reproduce reliably:  Logging out in Chrom* displays a browser error page:\n\n\n```\nThis webpage has a redirect loop.\n\nThe webpage at http://localhost:8000/home/admin/ has resulted in too many redirects. Clearing your cookies for this site or allowing third-party cookies may fix the problem. If not, it is possibly a server configuration issue and not a problem with your computer.\n```\n\nBut with the patch, clicking on \"Sign Out\" just returns me to the login page.  I'm not sure if it helps with the reported problems, but making the cookies expire on logout seems logical.",
+    "body": "Attachment [trac_8249-notebook_cookies-selenium_errors.log](tarball://root/attachments/some-uuid/ticket8249/trac_8249-notebook_cookies-selenium_errors.log) by @qed777 created at 2010-02-14 06:55:39\n\nThanks for catching the Se test errors.  I should have checked.\n\nThe patch fixes for me the one cookie-related problem I could reproduce reliably:  Logging out in Chrom* displays a browser error page:\n\n\n```\nThis webpage has a redirect loop.\n\nThe webpage at http://localhost:8000/home/admin/ has resulted in too many redirects. Clearing your cookies for this site or allowing third-party cookies may fix the problem. If not, it is possibly a server configuration issue and not a problem with your computer.\n```\n\nBut with the patch, clicking on \"Sign Out\" just returns me to the login page.  I'm not sure if it helps with the reported problems, but making the cookies expire on logout seems logical.",
     "created_at": "2010-02-14T06:55:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8249#issuecomment-72966",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8249-notebook_cookies-selenium_errors.log](tarball://root/attachments/some-uuid/ticket8249/trac_8249-notebook_cookies-selenium_errors.log) by mpatel created at 2010-02-14 06:55:39
+Attachment [trac_8249-notebook_cookies-selenium_errors.log](tarball://root/attachments/some-uuid/ticket8249/trac_8249-notebook_cookies-selenium_errors.log) by @qed777 created at 2010-02-14 06:55:39
 
 Thanks for catching the Se test errors.  I should have checked.
 
@@ -316,7 +316,7 @@ archive/issue_comments_072968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8249#issuecomment-72968",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -329,16 +329,16 @@ Adjust `close_callback` to make Se tests pass.  Apply only this patch.
 archive/issue_comments_072969.json:
 ```json
 {
-    "body": "Attachment [trac_8249-notebook_cookies.2.patch](tarball://root/attachments/some-uuid/ticket8249/trac_8249-notebook_cookies.2.patch) by mpatel created at 2010-02-15 07:45:54\n\nV2 replaces `'/'` with `'/home/' + user_name` in `notebook_lib.js`'s `close_callback`.  Strangely, this seems to work.",
+    "body": "Attachment [trac_8249-notebook_cookies.2.patch](tarball://root/attachments/some-uuid/ticket8249/trac_8249-notebook_cookies.2.patch) by @qed777 created at 2010-02-15 07:45:54\n\nV2 replaces `'/'` with `'/home/' + user_name` in `notebook_lib.js`'s `close_callback`.  Strangely, this seems to work.",
     "created_at": "2010-02-15T07:45:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8249#issuecomment-72969",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8249-notebook_cookies.2.patch](tarball://root/attachments/some-uuid/ticket8249/trac_8249-notebook_cookies.2.patch) by mpatel created at 2010-02-15 07:45:54
+Attachment [trac_8249-notebook_cookies.2.patch](tarball://root/attachments/some-uuid/ticket8249/trac_8249-notebook_cookies.2.patch) by @qed777 created at 2010-02-15 07:45:54
 
 V2 replaces `'/'` with `'/home/' + user_name` in `notebook_lib.js`'s `close_callback`.  Strangely, this seems to work.
 
@@ -354,7 +354,7 @@ archive/issue_comments_072970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8249#issuecomment-72970",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -372,7 +372,7 @@ archive/issue_comments_072971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8249#issuecomment-72971",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -390,7 +390,7 @@ archive/issue_comments_072972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8249#issuecomment-72972",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -408,7 +408,7 @@ archive/issue_comments_072973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8249#issuecomment-72973",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -426,7 +426,7 @@ archive/issue_comments_072974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8249#issuecomment-72974",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

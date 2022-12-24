@@ -3,7 +3,7 @@
 archive/issues_009460.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  jhpalmieri rlm was leif\n\nBuilding Sage 4.5.alphaX with `SAGE_FAT_BINARY=\"yes\"` or `SAGE_PARALLEL_SPKG_BUILD=\"yes\"` on sage.math can cause many Maxima-related test failures.\n\nSee [testlong.log](http://sage.math.washington.edu/home/wstein/build/sage-4.5.alpha4/testlong.log) and [comment:ticket:9274:17 this comment] at #9274 for examples.\n\nSo far, it seems that reinstalling the Maxima spkg \"fixes\" the failures.\n\nSee [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/1a6359a73d39dac2/4b4aaa26c0e22660#4b4aaa26c0e22660) for some background.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9460\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri @rlmill @williamstein @nexttime\n\nBuilding Sage 4.5.alphaX with `SAGE_FAT_BINARY=\"yes\"` or `SAGE_PARALLEL_SPKG_BUILD=\"yes\"` on sage.math can cause many Maxima-related test failures.\n\nSee [testlong.log](http://sage.math.washington.edu/home/wstein/build/sage-4.5.alpha4/testlong.log) and [comment:ticket:9274:17 this comment] at #9274 for examples.\n\nSo far, it seems that reinstalling the Maxima spkg \"fixes\" the failures.\n\nSee [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/1a6359a73d39dac2/4b4aaa26c0e22660#4b4aaa26c0e22660) for some background.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9460\n\n",
     "created_at": "2010-07-09T04:39:23Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_009460.json:
     "title": "Many Maxima-related doctest failures on sage.math",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9460",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: mvngu
 
-CC:  jhpalmieri rlm was leif
+CC:  @jhpalmieri @rlmill @williamstein @nexttime
 
 Building Sage 4.5.alphaX with `SAGE_FAT_BINARY="yes"` or `SAGE_PARALLEL_SPKG_BUILD="yes"` on sage.math can cause many Maxima-related test failures.
 
@@ -45,7 +45,7 @@ archive/issue_comments_090688.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90688",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_090689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90689",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_090690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90690",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_090691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90691",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_090692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90692",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_090693.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90693",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_090694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90694",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_090695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90695",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_090696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90696",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_090697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90697",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_090698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90698",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_090699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90699",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_090700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90700",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -373,7 +373,7 @@ archive/issue_comments_090701.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90701",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -393,7 +393,7 @@ archive/issue_comments_090702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90702",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -421,7 +421,7 @@ archive/issue_comments_090703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90703",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -443,7 +443,7 @@ archive/issue_comments_090704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90704",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -735,16 +735,16 @@ Difference from the deps file in sage-4.5.alpha4.
 archive/issue_comments_090713.json:
 ```json
 {
-    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9460/deps.diff) by leif created at 2010-07-10 10:40:17\n\nReplying to [comment:23 drkirkby]:\n> Given Maxima has a library interface, should Maxima not be built before the Sage library, rather than the other way around?\n\nIn my *sequential* build, the Sage library was built **before** Maxima, while the other way around in the *parallel* build.\n\nBoth builds passed all doctests (`ptestlong`).",
+    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9460/deps.diff) by @nexttime created at 2010-07-10 10:40:17\n\nReplying to [comment:23 drkirkby]:\n> Given Maxima has a library interface, should Maxima not be built before the Sage library, rather than the other way around?\n\nIn my *sequential* build, the Sage library was built **before** Maxima, while the other way around in the *parallel* build.\n\nBoth builds passed all doctests (`ptestlong`).",
     "created_at": "2010-07-10T10:40:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90713",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9460/deps.diff) by leif created at 2010-07-10 10:40:17
+Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9460/deps.diff) by @nexttime created at 2010-07-10 10:40:17
 
 Replying to [comment:23 drkirkby]:
 > Given Maxima has a library interface, should Maxima not be built before the Sage library, rather than the other way around?
@@ -765,7 +765,7 @@ archive/issue_comments_090714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90714",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -783,7 +783,7 @@ archive/issue_comments_090715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90715",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -801,7 +801,7 @@ archive/issue_comments_090716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90716",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -852,7 +852,7 @@ archive/issue_comments_090718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90718",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -891,7 +891,7 @@ archive/issue_comments_090719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90719",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -913,7 +913,7 @@ archive/issue_comments_090720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90720",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -934,7 +934,7 @@ archive/issue_comments_090721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90721",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -954,7 +954,7 @@ archive/issue_comments_090722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90722",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -975,7 +975,7 @@ archive/issue_comments_090723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90723",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1003,7 +1003,7 @@ archive/issue_comments_090724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90724",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1021,7 +1021,7 @@ archive/issue_comments_090725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90725",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -1039,7 +1039,7 @@ archive/issue_comments_090726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90726",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -1057,7 +1057,7 @@ archive/issue_comments_090727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90727",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1112,7 +1112,7 @@ archive/issue_comments_090729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90729",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1148,7 +1148,7 @@ archive/issue_comments_090730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90730",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1176,7 +1176,7 @@ archive/issue_comments_090731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90731",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -1215,7 +1215,7 @@ archive/issue_comments_090733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90733",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1283,7 +1283,7 @@ archive/issue_comments_090735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90735",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1301,7 +1301,7 @@ archive/issue_comments_090736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90736",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1319,7 +1319,7 @@ archive/issue_comments_090737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90737",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1337,7 +1337,7 @@ archive/issue_comments_090738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90738",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1355,7 +1355,7 @@ archive/issue_comments_090739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90739",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1373,7 +1373,7 @@ archive/issue_comments_090740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90740",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

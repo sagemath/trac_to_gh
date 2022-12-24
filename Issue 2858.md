@@ -3,7 +3,7 @@
 archive/issues_002858.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe following two plots should give the same thing.\n\n\n```\nsage: parametric_plot3d((u,-u,v), (-10,10),(-10,10))\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/grout/.sage/sage_notebook/worksheets/admin/43/code/101.py\", line 6, in <module>\n    parametric_plot3d((u,-u,v), (-Integer(10),Integer(10)),(-Integer(10),Integer(10)))\n  File \"/home/grout/sage/local/lib/python2.5/site-packages/sympy/plotting/\", line 1, in <module>\n    \n  File \"/home/grout/sage/local/lib/python2.5/site-packages/sage/plot/plot3d/parametric_plot3d.py\", line 362, in parametric_plot3d\n    G = parametric_plot3d_surface(f, urange, vrange, plot_points, **kwds)\n  File \"/home/grout/sage/local/lib/python2.5/site-packages/sage/plot/plot3d/parametric_plot3d.py\", line 423, in parametric_plot3d_surface\n    g, (u,v) = adapt_to_callable(f, 2)\n  File \"/home/grout/sage/local/lib/python2.5/site-packages/sage/plot/plot3d/parametric_plot3d.py\", line 492, in adapt_to_callable\n    return fast_float(f, *vars), vars\n  File \"fast_eval.pyx\", line 1276, in sage.ext.fast_eval.fast_float\n  File \"fast_eval.pyx\", line 1288, in sage.ext.fast_eval.fast_float\n  File \"/home/grout/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 5102, in _fast_float_\n    raise ValueError, \"free variable: %s\" % self._name\nValueError: free variable: u\n\nsage: parametric_plot3d((u,(-2*u+2)/2-1,v), (-10,10),(-10,10))\n(this works)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2858\n\n",
+    "body": "Assignee: @williamstein\n\nThe following two plots should give the same thing.\n\n\n```\nsage: parametric_plot3d((u,-u,v), (-10,10),(-10,10))\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/grout/.sage/sage_notebook/worksheets/admin/43/code/101.py\", line 6, in <module>\n    parametric_plot3d((u,-u,v), (-Integer(10),Integer(10)),(-Integer(10),Integer(10)))\n  File \"/home/grout/sage/local/lib/python2.5/site-packages/sympy/plotting/\", line 1, in <module>\n    \n  File \"/home/grout/sage/local/lib/python2.5/site-packages/sage/plot/plot3d/parametric_plot3d.py\", line 362, in parametric_plot3d\n    G = parametric_plot3d_surface(f, urange, vrange, plot_points, **kwds)\n  File \"/home/grout/sage/local/lib/python2.5/site-packages/sage/plot/plot3d/parametric_plot3d.py\", line 423, in parametric_plot3d_surface\n    g, (u,v) = adapt_to_callable(f, 2)\n  File \"/home/grout/sage/local/lib/python2.5/site-packages/sage/plot/plot3d/parametric_plot3d.py\", line 492, in adapt_to_callable\n    return fast_float(f, *vars), vars\n  File \"fast_eval.pyx\", line 1276, in sage.ext.fast_eval.fast_float\n  File \"fast_eval.pyx\", line 1288, in sage.ext.fast_eval.fast_float\n  File \"/home/grout/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 5102, in _fast_float_\n    raise ValueError, \"free variable: %s\" % self._name\nValueError: free variable: u\n\nsage: parametric_plot3d((u,(-2*u+2)/2-1,v), (-10,10),(-10,10))\n(this works)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2858\n\n",
     "created_at": "2008-04-08T21:08:25Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_002858.json:
     "title": "parametric_plot3d doesn't like \"-u\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2858",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The following two plots should give the same thing.
 
@@ -106,7 +106,7 @@ archive/issue_comments_019604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2858#issuecomment-19604",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_019605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2858#issuecomment-19605",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_019606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2858#issuecomment-19606",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_019607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2858#issuecomment-19607",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_019609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2858#issuecomment-19609",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -273,16 +273,16 @@ The problem seems to be in parametric_plot3d.py in adapt_to_callable, in the lin
 archive/issue_comments_019610.json:
 ```json
 {
-    "body": "Attachment [trac_2858.patch](tarball://root/attachments/some-uuid/ticket2858/trac_2858.patch) by was created at 2009-01-24 11:41:22\n\nmike found one bug which this fixes.",
+    "body": "Attachment [trac_2858.patch](tarball://root/attachments/some-uuid/ticket2858/trac_2858.patch) by @williamstein created at 2009-01-24 11:41:22\n\nmike found one bug which this fixes.",
     "created_at": "2009-01-24T11:41:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2858#issuecomment-19610",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_2858.patch](tarball://root/attachments/some-uuid/ticket2858/trac_2858.patch) by was created at 2009-01-24 11:41:22
+Attachment [trac_2858.patch](tarball://root/attachments/some-uuid/ticket2858/trac_2858.patch) by @williamstein created at 2009-01-24 11:41:22
 
 mike found one bug which this fixes.
 
@@ -293,16 +293,16 @@ mike found one bug which this fixes.
 archive/issue_comments_019611.json:
 ```json
 {
-    "body": "Attachment [trac_2858-part2.patch](tarball://root/attachments/some-uuid/ticket2858/trac_2858-part2.patch) by mhansen created at 2009-01-24 11:45:53",
+    "body": "Attachment [trac_2858-part2.patch](tarball://root/attachments/some-uuid/ticket2858/trac_2858-part2.patch) by @mwhansen created at 2009-01-24 11:45:53",
     "created_at": "2009-01-24T11:45:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2858#issuecomment-19611",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_2858-part2.patch](tarball://root/attachments/some-uuid/ticket2858/trac_2858-part2.patch) by mhansen created at 2009-01-24 11:45:53
+Attachment [trac_2858-part2.patch](tarball://root/attachments/some-uuid/ticket2858/trac_2858-part2.patch) by @mwhansen created at 2009-01-24 11:45:53
 
 
 
@@ -316,7 +316,7 @@ archive/issue_comments_019612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2858#issuecomment-19612",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -13,7 +13,7 @@ archive/issues_000415.json:
     "title": "ZZ.random_element(0)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/415",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 Assignee: somebody
@@ -38,7 +38,7 @@ archive/issue_comments_002048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/415",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/415#issuecomment-2048",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -51,16 +51,16 @@ hg patch
 archive/issue_comments_002049.json:
 ```json
 {
-    "body": "Attachment [trac_ticket_415.patch](tarball://root/attachments/some-uuid/ticket415/trac_ticket_415.patch) by malb created at 2007-08-09 21:29:57\n\nfixed in attached patch.",
+    "body": "Attachment [trac_ticket_415.patch](tarball://root/attachments/some-uuid/ticket415/trac_ticket_415.patch) by @malb created at 2007-08-09 21:29:57\n\nfixed in attached patch.",
     "created_at": "2007-08-09T21:29:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/415",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/415#issuecomment-2049",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_ticket_415.patch](tarball://root/attachments/some-uuid/ticket415/trac_ticket_415.patch) by malb created at 2007-08-09 21:29:57
+Attachment [trac_ticket_415.patch](tarball://root/attachments/some-uuid/ticket415/trac_ticket_415.patch) by @malb created at 2007-08-09 21:29:57
 
 fixed in attached patch.
 
@@ -76,7 +76,7 @@ archive/issue_comments_002050.json:
     "issue": "https://github.com/sagemath/sagetest/issues/415",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/415#issuecomment-2050",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

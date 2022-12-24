@@ -14,7 +14,7 @@ archive/issues_008635.json:
     "title": "Typos in DisjointUnionEnumeratedSets.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8635",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 Assignee: sage-combinat
@@ -37,7 +37,7 @@ archive/issue_comments_078312.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8635#issuecomment-78312",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to needs_review.
 archive/issue_comments_078313.json:
 ```json
 {
-    "body": "Attachment [trac_8635_typo_disjoint_union_enumerated_sets-fh.patch](tarball://root/attachments/some-uuid/ticket8635/trac_8635_typo_disjoint_union_enumerated_sets-fh.patch) by hivert created at 2010-03-31 09:41:07\n\nThe patch is trivial and due to Paul. So I think I can review myself => positive review.",
+    "body": "Attachment [trac_8635_typo_disjoint_union_enumerated_sets-fh.patch](tarball://root/attachments/some-uuid/ticket8635/trac_8635_typo_disjoint_union_enumerated_sets-fh.patch) by @hivert created at 2010-03-31 09:41:07\n\nThe patch is trivial and due to Paul. So I think I can review myself => positive review.",
     "created_at": "2010-03-31T09:41:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8635#issuecomment-78313",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8635_typo_disjoint_union_enumerated_sets-fh.patch](tarball://root/attachments/some-uuid/ticket8635/trac_8635_typo_disjoint_union_enumerated_sets-fh.patch) by hivert created at 2010-03-31 09:41:07
+Attachment [trac_8635_typo_disjoint_union_enumerated_sets-fh.patch](tarball://root/attachments/some-uuid/ticket8635/trac_8635_typo_disjoint_union_enumerated_sets-fh.patch) by @hivert created at 2010-03-31 09:41:07
 
 The patch is trivial and due to Paul. So I think I can review myself => positive review.
 
@@ -75,7 +75,7 @@ archive/issue_comments_078314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8635#issuecomment-78314",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_078315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8635#issuecomment-78315",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_078316.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8635#issuecomment-78316",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003503.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nOn Standard sage-3.0.3 on sage.math:\n\n```\nsage: m = ModularSymbols(250,4,sign=1)\nsage: s = m.cuspidal_submodule().new_subspace().decomposition()\nsage: save(s,'foo.sobj',compress=False)\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\nValgrind says:\n\n```\n\n==21080== Invalid write of size 1\n==21080==    at 0x19679A33: __pyx_f_4sage_6matrix_20matrix_integer_dense_20Matrix_integer_dense__pickle_version0 (matrix_integer_dense.c:5584)\n==21080==    by 0x19674A6A: __pyx_pf_4sage_6matrix_20matrix_integer_dense_20Matrix_integer_dense__pickle (matrix_integer_dense.c:5325)\n==21080==    by 0x415832: PyObject_Call (abstract.c:1861)\n==21080==    by 0x180B6235: __pyx_pf_4sage_6matrix_7matrix0_6Matrix___reduce__ (matrix0.c:3809)\n==21080==    by 0x415832: PyObject_Call (abstract.c:1861)\n==21080==    by 0x47D750: PyEval_CallObjectWithKeywords (ceval.c:3442)\n==21080==    by 0x458C0F: object_reduce_ex (typeobject.c:2867)\n==21080==    by 0x415832: PyObject_Call (abstract.c:1861)\n==21080==    by 0x8BF3723: save (cPickle.c:2498)\n==21080==    by 0x8BF3244: save_tuple (cPickle.c:1384)\n==21080==    by 0x8BF40D4: save (cPickle.c:2407)\n==21080==    by 0x8BF4D57: batch_dict (cPickle.c:1715)\n==21080==  Address 0x3a80eac0 is 0 bytes after a block of size 4,600 alloc'd\n==21080==    at 0x4A1BDEB: malloc (vg_replace_malloc.c:207)\n==21080==    by 0x196799BB: __pyx_f_4sage_6matrix_20matrix_integer_dense_20Matrix_integer_dense__pickle_version0 (matrix_integer_dense.c:5417)\n==21080==    by 0x19674A6A: __pyx_pf_4sage_6matrix_20matrix_integer_dense_20Matrix_integer_dense__pickle (matrix_integer_dense.c:5325)\n==21080==    by 0x415832: PyObject_Call (abstract.c:1861)\n==21080==    by 0x180B6235: __pyx_pf_4sage_6matrix_7matrix0_6Matrix___reduce__ (matrix0.c:3809)\n==21080==    by 0x415832: PyObject_Call (abstract.c:1861)\n==21080==    by 0x47D750: PyEval_CallObjectWithKeywords (ceval.c:3442)\n==21080==    by 0x458C0F: object_reduce_ex (typeobject.c:2867)\n==21080==    by 0x415832: PyObject_Call (abstract.c:1861)\n==21080==    by 0x8BF3723: save (cPickle.c:2498)\n==21080==    by 0x8BF3244: save_tuple (cPickle.c:1384)\n==21080==    by 0x8BF40D4: save (cPickle.c:2407)\n```\n\nand\n\n```\n==21080== Invalid read of size 1\n==21080==    at 0x4A1E0F9: strcpy (mc_replace_strmem.c:268)\n==21080==    by 0x19679A90: __pyx_f_4sage_6matrix_20matrix_integer_dense_20Matrix_integer_dense__pickle_version0 (matrix_integer_dense.c:5500)\n==21080==    by 0x19674A6A: __pyx_pf_4sage_6matrix_20matrix_integer_dense_20Matrix_integer_dense__pickle (matrix_integer_dense.c:5325)\n==21080==    by 0x415832: PyObject_Call (abstract.c:1861)\n==21080==    by 0x180B6235: __pyx_pf_4sage_6matrix_7matrix0_6Matrix___reduce__ (matrix0.c:3809)\n==21080==    by 0x415832: PyObject_Call (abstract.c:1861)\n==21080==    by 0x47D750: PyEval_CallObjectWithKeywords (ceval.c:3442)\n==21080==    by 0x458C0F: object_reduce_ex (typeobject.c:2867)\n==21080==    by 0x415832: PyObject_Call (abstract.c:1861)\n==21080==    by 0x8BF3723: save (cPickle.c:2498)\n==21080==    by 0x8BF3244: save_tuple (cPickle.c:1384)\n==21080==    by 0x8BF40D4: save (cPickle.c:2407)\n==21080==  Address 0x3a80eac0 is 0 bytes after a block of size 4,600 alloc'd\n==21080==    at 0x4A1BDEB: malloc (vg_replace_malloc.c:207)\n==21080==    by 0x196799BB: __pyx_f_4sage_6matrix_20matrix_integer_dense_20Matrix_integer_dense__pickle_version0 (matrix_integer_dense.c:5417)\n==21080==    by 0x19674A6A: __pyx_pf_4sage_6matrix_20matrix_integer_dense_20Matrix_integer_dense__pickle (matrix_integer_dense.c:5325)\n==21080==    by 0x415832: PyObject_Call (abstract.c:1861)\n==21080==    by 0x180B6235: __pyx_pf_4sage_6matrix_7matrix0_6Matrix___reduce__ (matrix0.c:3809)\n==21080==    by 0x415832: PyObject_Call (abstract.c:1861)\n==21080==    by 0x47D750: PyEval_CallObjectWithKeywords (ceval.c:3442)\n==21080==    by 0x458C0F: object_reduce_ex (typeobject.c:2867)\n==21080==    by 0x415832: PyObject_Call (abstract.c:1861)\n==21080==    by 0x8BF3723: save (cPickle.c:2498)\n==21080==    by 0x8BF3244: save_tuple (cPickle.c:1384)\n==21080==    by 0x8BF40D4: save (cPickle.c:2407)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3503\n\n",
+    "body": "Assignee: @craigcitro\n\nOn Standard sage-3.0.3 on sage.math:\n\n```\nsage: m = ModularSymbols(250,4,sign=1)\nsage: s = m.cuspidal_submodule().new_subspace().decomposition()\nsage: save(s,'foo.sobj',compress=False)\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\nValgrind says:\n\n```\n\n==21080== Invalid write of size 1\n==21080==    at 0x19679A33: __pyx_f_4sage_6matrix_20matrix_integer_dense_20Matrix_integer_dense__pickle_version0 (matrix_integer_dense.c:5584)\n==21080==    by 0x19674A6A: __pyx_pf_4sage_6matrix_20matrix_integer_dense_20Matrix_integer_dense__pickle (matrix_integer_dense.c:5325)\n==21080==    by 0x415832: PyObject_Call (abstract.c:1861)\n==21080==    by 0x180B6235: __pyx_pf_4sage_6matrix_7matrix0_6Matrix___reduce__ (matrix0.c:3809)\n==21080==    by 0x415832: PyObject_Call (abstract.c:1861)\n==21080==    by 0x47D750: PyEval_CallObjectWithKeywords (ceval.c:3442)\n==21080==    by 0x458C0F: object_reduce_ex (typeobject.c:2867)\n==21080==    by 0x415832: PyObject_Call (abstract.c:1861)\n==21080==    by 0x8BF3723: save (cPickle.c:2498)\n==21080==    by 0x8BF3244: save_tuple (cPickle.c:1384)\n==21080==    by 0x8BF40D4: save (cPickle.c:2407)\n==21080==    by 0x8BF4D57: batch_dict (cPickle.c:1715)\n==21080==  Address 0x3a80eac0 is 0 bytes after a block of size 4,600 alloc'd\n==21080==    at 0x4A1BDEB: malloc (vg_replace_malloc.c:207)\n==21080==    by 0x196799BB: __pyx_f_4sage_6matrix_20matrix_integer_dense_20Matrix_integer_dense__pickle_version0 (matrix_integer_dense.c:5417)\n==21080==    by 0x19674A6A: __pyx_pf_4sage_6matrix_20matrix_integer_dense_20Matrix_integer_dense__pickle (matrix_integer_dense.c:5325)\n==21080==    by 0x415832: PyObject_Call (abstract.c:1861)\n==21080==    by 0x180B6235: __pyx_pf_4sage_6matrix_7matrix0_6Matrix___reduce__ (matrix0.c:3809)\n==21080==    by 0x415832: PyObject_Call (abstract.c:1861)\n==21080==    by 0x47D750: PyEval_CallObjectWithKeywords (ceval.c:3442)\n==21080==    by 0x458C0F: object_reduce_ex (typeobject.c:2867)\n==21080==    by 0x415832: PyObject_Call (abstract.c:1861)\n==21080==    by 0x8BF3723: save (cPickle.c:2498)\n==21080==    by 0x8BF3244: save_tuple (cPickle.c:1384)\n==21080==    by 0x8BF40D4: save (cPickle.c:2407)\n```\n\nand\n\n```\n==21080== Invalid read of size 1\n==21080==    at 0x4A1E0F9: strcpy (mc_replace_strmem.c:268)\n==21080==    by 0x19679A90: __pyx_f_4sage_6matrix_20matrix_integer_dense_20Matrix_integer_dense__pickle_version0 (matrix_integer_dense.c:5500)\n==21080==    by 0x19674A6A: __pyx_pf_4sage_6matrix_20matrix_integer_dense_20Matrix_integer_dense__pickle (matrix_integer_dense.c:5325)\n==21080==    by 0x415832: PyObject_Call (abstract.c:1861)\n==21080==    by 0x180B6235: __pyx_pf_4sage_6matrix_7matrix0_6Matrix___reduce__ (matrix0.c:3809)\n==21080==    by 0x415832: PyObject_Call (abstract.c:1861)\n==21080==    by 0x47D750: PyEval_CallObjectWithKeywords (ceval.c:3442)\n==21080==    by 0x458C0F: object_reduce_ex (typeobject.c:2867)\n==21080==    by 0x415832: PyObject_Call (abstract.c:1861)\n==21080==    by 0x8BF3723: save (cPickle.c:2498)\n==21080==    by 0x8BF3244: save_tuple (cPickle.c:1384)\n==21080==    by 0x8BF40D4: save (cPickle.c:2407)\n==21080==  Address 0x3a80eac0 is 0 bytes after a block of size 4,600 alloc'd\n==21080==    at 0x4A1BDEB: malloc (vg_replace_malloc.c:207)\n==21080==    by 0x196799BB: __pyx_f_4sage_6matrix_20matrix_integer_dense_20Matrix_integer_dense__pickle_version0 (matrix_integer_dense.c:5417)\n==21080==    by 0x19674A6A: __pyx_pf_4sage_6matrix_20matrix_integer_dense_20Matrix_integer_dense__pickle (matrix_integer_dense.c:5325)\n==21080==    by 0x415832: PyObject_Call (abstract.c:1861)\n==21080==    by 0x180B6235: __pyx_pf_4sage_6matrix_7matrix0_6Matrix___reduce__ (matrix0.c:3809)\n==21080==    by 0x415832: PyObject_Call (abstract.c:1861)\n==21080==    by 0x47D750: PyEval_CallObjectWithKeywords (ceval.c:3442)\n==21080==    by 0x458C0F: object_reduce_ex (typeobject.c:2867)\n==21080==    by 0x415832: PyObject_Call (abstract.c:1861)\n==21080==    by 0x8BF3723: save (cPickle.c:2498)\n==21080==    by 0x8BF3244: save_tuple (cPickle.c:1384)\n==21080==    by 0x8BF40D4: save (cPickle.c:2407)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3503\n\n",
     "created_at": "2008-06-24T20:29:54Z",
     "labels": [
         "modular forms",
@@ -17,7 +17,7 @@ archive/issues_003503.json:
     "user": "mabshoff"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 On Standard sage-3.0.3 on sage.math:
 
@@ -251,7 +251,7 @@ archive/issue_comments_024707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3503#issuecomment-24707",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -264,16 +264,16 @@ Great work tracking this down Michael!!
 archive/issue_comments_024708.json:
 ```json
 {
-    "body": "Attachment [trac-3503.patch](tarball://root/attachments/some-uuid/ticket3503/trac-3503.patch) by craigcitro created at 2008-06-24 22:24:17",
+    "body": "Attachment [trac-3503.patch](tarball://root/attachments/some-uuid/ticket3503/trac-3503.patch) by @craigcitro created at 2008-06-24 22:24:17",
     "created_at": "2008-06-24T22:24:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3503#issuecomment-24708",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-3503.patch](tarball://root/attachments/some-uuid/ticket3503/trac-3503.patch) by craigcitro created at 2008-06-24 22:24:17
+Attachment [trac-3503.patch](tarball://root/attachments/some-uuid/ticket3503/trac-3503.patch) by @craigcitro created at 2008-06-24 22:24:17
 
 
 
@@ -287,7 +287,7 @@ archive/issue_comments_024709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3503#issuecomment-24709",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_024710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3503#issuecomment-24710",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_024711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3503#issuecomment-24711",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

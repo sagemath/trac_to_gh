@@ -3,7 +3,7 @@
 archive/issues_007771.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis nearly always happens after installing an R package and then following the directions Sage gives:\n\n```\nsage: r.restart()\nError: object 'sage0' not found\n```\n\nThis seems to be unrelated to whether R has recommended packages installed or not, so I am making a new ticket for this.  Making it minor since just restarting Sage takes care of things as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7771\n\n",
+    "body": "Assignee: @williamstein\n\nThis nearly always happens after installing an R package and then following the directions Sage gives:\n\n```\nsage: r.restart()\nError: object 'sage0' not found\n```\n\nThis seems to be unrelated to whether R has recommended packages installed or not, so I am making a new ticket for this.  Making it minor since just restarting Sage takes care of things as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7771\n\n",
     "created_at": "2009-12-27T03:58:13Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_007771.json:
     "title": "fix R restart in interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7771",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This nearly always happens after installing an R package and then following the directions Sage gives:
 
@@ -103,7 +103,7 @@ archive/issue_comments_066980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66980",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_066981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66981",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_066982.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66982",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -227,16 +227,16 @@ And this on an install which definitely hadn't had this package installed before
 archive/issue_comments_066983.json:
 ```json
 {
-    "body": "Attachment [trac_7771-r-restart.patch](tarball://root/attachments/some-uuid/ticket7771/trac_7771-r-restart.patch) by kcrisman created at 2010-04-27 20:28:43\n\nBased on Sage 4.3.5",
+    "body": "Attachment [trac_7771-r-restart.patch](tarball://root/attachments/some-uuid/ticket7771/trac_7771-r-restart.patch) by @kcrisman created at 2010-04-27 20:28:43\n\nBased on Sage 4.3.5",
     "created_at": "2010-04-27T20:28:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66983",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_7771-r-restart.patch](tarball://root/attachments/some-uuid/ticket7771/trac_7771-r-restart.patch) by kcrisman created at 2010-04-27 20:28:43
+Attachment [trac_7771-r-restart.patch](tarball://root/attachments/some-uuid/ticket7771/trac_7771-r-restart.patch) by @kcrisman created at 2010-04-27 20:28:43
 
 Based on Sage 4.3.5
 
@@ -252,7 +252,7 @@ archive/issue_comments_066984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66984",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_066985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66985",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_066986.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66986",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -392,7 +392,7 @@ archive/issue_comments_066988.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66988",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -410,7 +410,7 @@ archive/issue_comments_066989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66989",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -430,7 +430,7 @@ archive/issue_comments_066990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66990",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -450,7 +450,7 @@ archive/issue_comments_066991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66991",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

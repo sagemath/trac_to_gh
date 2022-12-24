@@ -3,7 +3,7 @@
 archive/issues_000773.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nwas@ubuntu:~/sd5/ant$ export PATH=.:$PATH\nwas@ubuntu:~/sd5/ant$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.5.1, Release Date: 2007-09-26                     |\n| Type notebook() for the GUI, and license() for information.        |\nos.ensage: os.environ['PATH']\n'/home/was/s/local/polymake/bin/:/home/was/s:/home/was/s/local/bin:/home/was/s.dev:/usr/local/bin/:/home/was/bin:/home/was/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/773\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nwas@ubuntu:~/sd5/ant$ export PATH=.:$PATH\nwas@ubuntu:~/sd5/ant$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.5.1, Release Date: 2007-09-26                     |\n| Type notebook() for the GUI, and license() for information.        |\nos.ensage: os.environ['PATH']\n'/home/was/s/local/polymake/bin/:/home/was/s:/home/was/s/local/bin:/home/was/s.dev:/usr/local/bin/:/home/was/bin:/home/was/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/773\n\n",
     "created_at": "2007-10-01T19:05:57Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_000773.json:
     "title": "SAGE drops . from path",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/773",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -79,16 +79,16 @@ summary:     Make sure . is not in user's path.
 archive/issue_comments_004617.json:
 ```json
 {
-    "body": "Attachment [trac_773-sage.patch](tarball://root/attachments/some-uuid/ticket773/trac_773-sage.patch) by was created at 2009-01-23 10:13:44",
+    "body": "Attachment [trac_773-sage.patch](tarball://root/attachments/some-uuid/ticket773/trac_773-sage.patch) by @williamstein created at 2009-01-23 10:13:44",
     "created_at": "2009-01-23T10:13:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/773#issuecomment-4617",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_773-sage.patch](tarball://root/attachments/some-uuid/ticket773/trac_773-sage.patch) by was created at 2009-01-23 10:13:44
+Attachment [trac_773-sage.patch](tarball://root/attachments/some-uuid/ticket773/trac_773-sage.patch) by @williamstein created at 2009-01-23 10:13:44
 
 
 
@@ -102,7 +102,7 @@ archive/issue_comments_004618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/773#issuecomment-4618",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_004619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/773#issuecomment-4619",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

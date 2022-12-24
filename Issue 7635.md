@@ -3,7 +3,7 @@
 archive/issues_007635.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7635\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7635\n\n",
     "created_at": "2009-12-09T06:14:09Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_007635.json:
     "title": "notebook -- make it trivial for any user to restrict the notebook server to only listen on certain subdomain",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7635",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7635
 archive/issue_comments_065249.json:
 ```json
 {
-    "body": "Attachment [sagenb_7635.patch](tarball://root/attachments/some-uuid/ticket7635/sagenb_7635.patch) by was created at 2009-12-09 06:15:26",
+    "body": "Attachment [sagenb_7635.patch](tarball://root/attachments/some-uuid/ticket7635/sagenb_7635.patch) by @williamstein created at 2009-12-09 06:15:26",
     "created_at": "2009-12-09T06:15:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7635#issuecomment-65249",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sagenb_7635.patch](tarball://root/attachments/some-uuid/ticket7635/sagenb_7635.patch) by was created at 2009-12-09 06:15:26
+Attachment [sagenb_7635.patch](tarball://root/attachments/some-uuid/ticket7635/sagenb_7635.patch) by @williamstein created at 2009-12-09 06:15:26
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_065250.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7635#issuecomment-65250",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_065251.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7635#issuecomment-65251",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_065252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7635#issuecomment-65252",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_065253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7635#issuecomment-65253",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_065254.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7635#issuecomment-65254",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -155,16 +155,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_065255.json:
 ```json
 {
-    "body": "Attachment [sagenb_7635-part2.patch](tarball://root/attachments/some-uuid/ticket7635/sagenb_7635-part2.patch) by ddrake created at 2009-12-09 08:07:32\n\nThe code here is simple, and ipaddr.py will be in Python 2.7 and is (I think) in Python 3.1, so we can drop that later. The only thing I'm worried about now is something that confused me when testing this -- you have to specify `address=*` *in addition to'' `subnet=[...]`. That strikes me as confusing -- they seem to be saying the same thing.\n\nOf course, if you read carefully and understand networking, they're not -- `address` refers to a network *interface*. So perhaps we can change `address` to `interface`, but continue accepting `address` for backwards compatibility? Something like this in the docstring:\n\n```\n            - ``interface``       -- (default: 'localhost'), address of network\n              interface to listen on; give '' to listen on all interfaces. You may \n              use ``address`` here for backwards compatibility, but this is deprecated\n              and will be removed in the future.\n```\n\nalong with a warning issued when `notebook()` gets an `address=` keyword.\n\nOr, we could have `subnets` imply `address=''`.\n\nThis will be a positive review once this small issue is sorted out.",
+    "body": "Attachment [sagenb_7635-part2.patch](tarball://root/attachments/some-uuid/ticket7635/sagenb_7635-part2.patch) by @dandrake created at 2009-12-09 08:07:32\n\nThe code here is simple, and ipaddr.py will be in Python 2.7 and is (I think) in Python 3.1, so we can drop that later. The only thing I'm worried about now is something that confused me when testing this -- you have to specify `address=*` *in addition to'' `subnet=[...]`. That strikes me as confusing -- they seem to be saying the same thing.\n\nOf course, if you read carefully and understand networking, they're not -- `address` refers to a network *interface*. So perhaps we can change `address` to `interface`, but continue accepting `address` for backwards compatibility? Something like this in the docstring:\n\n```\n            - ``interface``       -- (default: 'localhost'), address of network\n              interface to listen on; give '' to listen on all interfaces. You may \n              use ``address`` here for backwards compatibility, but this is deprecated\n              and will be removed in the future.\n```\n\nalong with a warning issued when `notebook()` gets an `address=` keyword.\n\nOr, we could have `subnets` imply `address=''`.\n\nThis will be a positive review once this small issue is sorted out.",
     "created_at": "2009-12-09T08:07:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7635#issuecomment-65255",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [sagenb_7635-part2.patch](tarball://root/attachments/some-uuid/ticket7635/sagenb_7635-part2.patch) by ddrake created at 2009-12-09 08:07:32
+Attachment [sagenb_7635-part2.patch](tarball://root/attachments/some-uuid/ticket7635/sagenb_7635-part2.patch) by @dandrake created at 2009-12-09 08:07:32
 
 The code here is simple, and ipaddr.py will be in Python 2.7 and is (I think) in Python 3.1, so we can drop that later. The only thing I'm worried about now is something that confused me when testing this -- you have to specify `address=*` *in addition to'' `subnet=[...]`. That strikes me as confusing -- they seem to be saying the same thing.
 
@@ -195,7 +195,7 @@ archive/issue_comments_065256.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7635#issuecomment-65256",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_065257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7635#issuecomment-65257",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_065258.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7635#issuecomment-65258",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_065259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7635#issuecomment-65259",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_065260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7635#issuecomment-65260",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_065261.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7635#issuecomment-65261",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_065262.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7635#issuecomment-65262",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_065263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7635#issuecomment-65263",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_065264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7635#issuecomment-65264",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -374,7 +374,7 @@ archive/issue_comments_065265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7635#issuecomment-65265",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -392,7 +392,7 @@ archive/issue_comments_065266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7635#issuecomment-65266",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -436,7 +436,7 @@ archive/issue_comments_065267.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7635#issuecomment-65267",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -462,16 +462,16 @@ William
 archive/issue_comments_065268.json:
 ```json
 {
-    "body": "Attachment [trac_7635_localhost_fix.patch](tarball://root/attachments/some-uuid/ticket7635/trac_7635_localhost_fix.patch) by ddrake created at 2009-12-11 02:30:58\n\nuse 127.0.0.0/8 instead of only 127.0.0.1",
+    "body": "Attachment [trac_7635_localhost_fix.patch](tarball://root/attachments/some-uuid/ticket7635/trac_7635_localhost_fix.patch) by @dandrake created at 2009-12-11 02:30:58\n\nuse 127.0.0.0/8 instead of only 127.0.0.1",
     "created_at": "2009-12-11T02:30:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7635#issuecomment-65268",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_7635_localhost_fix.patch](tarball://root/attachments/some-uuid/ticket7635/trac_7635_localhost_fix.patch) by ddrake created at 2009-12-11 02:30:58
+Attachment [trac_7635_localhost_fix.patch](tarball://root/attachments/some-uuid/ticket7635/trac_7635_localhost_fix.patch) by @dandrake created at 2009-12-11 02:30:58
 
 use 127.0.0.0/8 instead of only 127.0.0.1
 
@@ -487,7 +487,7 @@ archive/issue_comments_065269.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7635#issuecomment-65269",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -505,7 +505,7 @@ archive/issue_comments_065270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7635#issuecomment-65270",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -541,7 +541,7 @@ archive/issue_comments_065271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7635#issuecomment-65271",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -559,7 +559,7 @@ archive/issue_comments_065272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7635#issuecomment-65272",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

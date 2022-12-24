@@ -3,7 +3,7 @@
 archive/issues_006426.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  cremona craigcitro hlaw was ncalexan mstreng\n\nThis is a repository of Magma code for arithmetic geometry and number theory.  The latest spkg is echidna-2.0.spkg, can be downloaded from:\n\nhttp://echidna.maths.usyd.edu.au/kohel/alg/\n\nThis should be tested with the Sage worksheet:\n\nhttp://echidna.maths.usyd.edu.au/kohel/doc/ECHIDNA.sws\n\nA printed pdf version is here:\n\nhttp://echidna.maths.usyd.edu.au/kohel/doc/ECHIDNA.pdf\n\nThis spkg is submitted for consideration as an optional \npackage.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6426\n\n",
+    "body": "Assignee: tbd\n\nCC:  @JohnCremona @craigcitro @unzvfu @williamstein @ncalexan @mstreng\n\nThis is a repository of Magma code for arithmetic geometry and number theory.  The latest spkg is echidna-2.0.spkg, can be downloaded from:\n\nhttp://echidna.maths.usyd.edu.au/kohel/alg/\n\nThis should be tested with the Sage worksheet:\n\nhttp://echidna.maths.usyd.edu.au/kohel/doc/ECHIDNA.sws\n\nA printed pdf version is here:\n\nhttp://echidna.maths.usyd.edu.au/kohel/doc/ECHIDNA.pdf\n\nThis spkg is submitted for consideration as an optional \npackage.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6426\n\n",
     "created_at": "2009-06-26T17:27:06Z",
     "labels": [
         "algebra",
@@ -19,7 +19,7 @@ archive/issues_006426.json:
 ```
 Assignee: tbd
 
-CC:  cremona craigcitro hlaw was ncalexan mstreng
+CC:  @JohnCremona @craigcitro @unzvfu @williamstein @ncalexan @mstreng
 
 This is a repository of Magma code for arithmetic geometry and number theory.  The latest spkg is echidna-2.0.spkg, can be downloaded from:
 
@@ -71,7 +71,7 @@ archive/issue_comments_051599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51599",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_051600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51600",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_051602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51602",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_051603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51603",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_051607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51607",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_051608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51608",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -287,16 +287,16 @@ Replaces previous, applies to 4.1.alpha2
 archive/issue_comments_051609.json:
 ```json
 {
-    "body": "Attachment [trac_6426.patch](tarball://root/attachments/some-uuid/ticket6426/trac_6426.patch) by cremona created at 2009-06-28 21:55:52\n\nThe new spkg works, and the new magma.py is ok (one minor doctest filaure in the __iter__ function which I have fixed).  See my attached match, which applies to 4.1.alpha2 and yields a correct magma.py.\n\nI ran into a lot of problems trying to evaluate the worksheet cells -- some Sage functions ins there (e.g. FunctionField(ZZ)) do not exist.  David, can you include an ordinary python file with these tests and demos in?  And if you have extra stuff implemented in Sage which the worksheet example need, why not include them (on a separate ticket) in Sage?  (There are some in magma.py but not many).\n\nI rebuilt the ref manual and it looks fine.\n\nI don't know what the magma2.py file is for -- I ignored it.",
+    "body": "Attachment [trac_6426.patch](tarball://root/attachments/some-uuid/ticket6426/trac_6426.patch) by @JohnCremona created at 2009-06-28 21:55:52\n\nThe new spkg works, and the new magma.py is ok (one minor doctest filaure in the __iter__ function which I have fixed).  See my attached match, which applies to 4.1.alpha2 and yields a correct magma.py.\n\nI ran into a lot of problems trying to evaluate the worksheet cells -- some Sage functions ins there (e.g. FunctionField(ZZ)) do not exist.  David, can you include an ordinary python file with these tests and demos in?  And if you have extra stuff implemented in Sage which the worksheet example need, why not include them (on a separate ticket) in Sage?  (There are some in magma.py but not many).\n\nI rebuilt the ref manual and it looks fine.\n\nI don't know what the magma2.py file is for -- I ignored it.",
     "created_at": "2009-06-28T21:55:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51609",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_6426.patch](tarball://root/attachments/some-uuid/ticket6426/trac_6426.patch) by cremona created at 2009-06-28 21:55:52
+Attachment [trac_6426.patch](tarball://root/attachments/some-uuid/ticket6426/trac_6426.patch) by @JohnCremona created at 2009-06-28 21:55:52
 
 The new spkg works, and the new magma.py is ok (one minor doctest filaure in the __iter__ function which I have fixed).  See my attached match, which applies to 4.1.alpha2 and yields a correct magma.py.
 
@@ -349,16 +349,16 @@ ignore it (since now the file magma.py is the latest).
 archive/issue_comments_051611.json:
 ```json
 {
-    "body": "Changing assignee from tbd to was.",
+    "body": "Changing assignee from tbd to @williamstein.",
     "created_at": "2009-07-11T11:31:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51611",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from tbd to was.
+Changing assignee from tbd to @williamstein.
 
 
 
@@ -372,7 +372,7 @@ archive/issue_comments_051612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51612",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -390,7 +390,7 @@ archive/issue_comments_051613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51613",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 

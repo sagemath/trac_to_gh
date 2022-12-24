@@ -3,7 +3,7 @@
 archive/issues_002759.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nI'm attaching the changes to the SAGE debian/ directory that were needed to make it actually do Debian builds\n\nIssue created by migration from https://trac.sagemath.org/ticket/2759\n\n",
+    "body": "Assignee: @timabbott\n\nI'm attaching the changes to the SAGE debian/ directory that were needed to make it actually do Debian builds\n\nIssue created by migration from https://trac.sagemath.org/ticket/2759\n\n",
     "created_at": "2008-04-01T19:02:19Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_002759.json:
     "title": "[with patch; needs review] SAGE debian/ directory updates",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2759",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 I'm attaching the changes to the SAGE debian/ directory that were needed to make it actually do Debian builds
 

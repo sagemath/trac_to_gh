@@ -52,7 +52,7 @@ archive/issue_comments_005858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/962#issuecomment-5858",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -65,16 +65,16 @@ Changing assignee from somebody to cwitty.
 archive/issue_comments_005859.json:
 ```json
 {
-    "body": "Changing assignee from cwitty to mhansen.",
+    "body": "Changing assignee from cwitty to @mwhansen.",
     "created_at": "2007-10-24T20:18:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/962#issuecomment-5859",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from cwitty to mhansen.
+Changing assignee from cwitty to @mwhansen.
 
 
 
@@ -88,7 +88,7 @@ archive/issue_comments_005860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/962#issuecomment-5860",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -101,16 +101,16 @@ Changing status from new to assigned.
 archive/issue_comments_005861.json:
 ```json
 {
-    "body": "Attachment [962.patch](tarball://root/attachments/some-uuid/ticket962/962.patch) by mhansen created at 2007-11-13 03:20:25\n\nInitial version",
+    "body": "Attachment [962.patch](tarball://root/attachments/some-uuid/ticket962/962.patch) by @mwhansen created at 2007-11-13 03:20:25\n\nInitial version",
     "created_at": "2007-11-13T03:20:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/962#issuecomment-5861",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [962.patch](tarball://root/attachments/some-uuid/ticket962/962.patch) by mhansen created at 2007-11-13 03:20:25
+Attachment [962.patch](tarball://root/attachments/some-uuid/ticket962/962.patch) by @mwhansen created at 2007-11-13 03:20:25
 
 Initial version
 
@@ -126,7 +126,7 @@ archive/issue_comments_005862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/962#issuecomment-5862",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_005863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/962#issuecomment-5863",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_005865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/962#issuecomment-5865",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_005866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/962#issuecomment-5866",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_005868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/962#issuecomment-5868",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_005870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/962#issuecomment-5870",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -356,16 +356,16 @@ The patches should be applied in this order:
 archive/issue_comments_005871.json:
 ```json
 {
-    "body": "Attachment [962-doctests.patch](tarball://root/attachments/some-uuid/ticket962/962-doctests.patch) by mhansen created at 2007-12-02 02:48:04",
+    "body": "Attachment [962-doctests.patch](tarball://root/attachments/some-uuid/ticket962/962-doctests.patch) by @mwhansen created at 2007-12-02 02:48:04",
     "created_at": "2007-12-02T02:48:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/962#issuecomment-5871",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [962-doctests.patch](tarball://root/attachments/some-uuid/ticket962/962-doctests.patch) by mhansen created at 2007-12-02 02:48:04
+Attachment [962-doctests.patch](tarball://root/attachments/some-uuid/ticket962/962-doctests.patch) by @mwhansen created at 2007-12-02 02:48:04
 
 
 

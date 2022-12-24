@@ -3,7 +3,7 @@
 archive/issues_000661.json:
 ```json
 {
-    "body": "Assignee: was\n\nTrac comes with its own Wiki and if something like LinBox is found in a user submitted test, it is enhanced with a link to that wiki instance. As we don't use this wiki but have our own at http://wiki.sagemath.org we should change that behavior such that the link points to our wiki instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/661\n\n",
+    "body": "Assignee: @williamstein\n\nTrac comes with its own Wiki and if something like LinBox is found in a user submitted test, it is enhanced with a link to that wiki instance. As we don't use this wiki but have our own at http://wiki.sagemath.org we should change that behavior such that the link points to our wiki instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/661\n\n",
     "created_at": "2007-09-15T13:12:21Z",
     "labels": [
         "website/wiki",
@@ -14,10 +14,10 @@ archive/issues_000661.json:
     "title": "Integrate Trac with SAGE Wiki",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/661",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Trac comes with its own Wiki and if something like LinBox is found in a user submitted test, it is enhanced with a link to that wiki instance. As we don't use this wiki but have our own at http://wiki.sagemath.org we should change that behavior such that the link points to our wiki instead.
 
@@ -61,7 +61,7 @@ archive/issue_comments_003437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/661#issuecomment-3437",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_003438.json:
     "issue": "https://github.com/sagemath/sagetest/issues/661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/661#issuecomment-3438",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003818.json:
     "title": "COPYING.txt doesn't mention jmol but it shold",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3818",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -37,7 +37,7 @@ archive/issue_comments_027155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3818#issuecomment-27155",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing priority from major to minor.
 archive/issue_comments_027156.json:
 ```json
 {
-    "body": "Attachment [COPYING.txt](tarball://root/attachments/some-uuid/ticket3818/COPYING.txt) by was created at 2008-08-13 03:59:21\n\nthis file should replace the existing COPYING.txt; this is a modification of the one in sage-3.1.alpha1",
+    "body": "Attachment [COPYING.txt](tarball://root/attachments/some-uuid/ticket3818/COPYING.txt) by @williamstein created at 2008-08-13 03:59:21\n\nthis file should replace the existing COPYING.txt; this is a modification of the one in sage-3.1.alpha1",
     "created_at": "2008-08-13T03:59:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3818#issuecomment-27156",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [COPYING.txt](tarball://root/attachments/some-uuid/ticket3818/COPYING.txt) by was created at 2008-08-13 03:59:21
+Attachment [COPYING.txt](tarball://root/attachments/some-uuid/ticket3818/COPYING.txt) by @williamstein created at 2008-08-13 03:59:21
 
 this file should replace the existing COPYING.txt; this is a modification of the one in sage-3.1.alpha1
 

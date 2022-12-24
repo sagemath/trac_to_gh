@@ -14,7 +14,7 @@ archive/issues_001788.json:
     "title": "cython annotation in notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1788",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: boothby
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1788
 archive/issue_comments_011314.json:
 ```json
 {
-    "body": "Attachment [notebook-cython.diff](tarball://root/attachments/some-uuid/ticket1788/notebook-cython.diff) by robertwb created at 2008-01-15 22:33:46",
+    "body": "Attachment [notebook-cython.diff](tarball://root/attachments/some-uuid/ticket1788/notebook-cython.diff) by @robertwb created at 2008-01-15 22:33:46",
     "created_at": "2008-01-15T22:33:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1788#issuecomment-11314",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [notebook-cython.diff](tarball://root/attachments/some-uuid/ticket1788/notebook-cython.diff) by robertwb created at 2008-01-15 22:33:46
+Attachment [notebook-cython.diff](tarball://root/attachments/some-uuid/ticket1788/notebook-cython.diff) by @robertwb created at 2008-01-15 22:33:46
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_011315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1788#issuecomment-11315",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_011316.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1788#issuecomment-11316",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

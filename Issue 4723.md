@@ -3,7 +3,7 @@
 archive/issues_004723.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  cwitty\n\nKeywords: precision qqbar algebraic roots\n\n\n```\nsage: ZZ['x'](x^2 + 27*x + 181).roots(QQbar)\n```\n\n\nCauses an infinite loop of increasing precision around sage/rings/polynomial/complex_roots.py(323)complex_roots().\n\nIssue created by migration from https://trac.sagemath.org/ticket/4723\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  cwitty\n\nKeywords: precision qqbar algebraic roots\n\n\n```\nsage: ZZ['x'](x^2 + 27*x + 181).roots(QQbar)\n```\n\n\nCauses an infinite loop of increasing precision around sage/rings/polynomial/complex_roots.py(323)complex_roots().\n\nIssue created by migration from https://trac.sagemath.org/ticket/4723\n\n",
     "created_at": "2008-12-06T01:59:15Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004723.json:
     "title": "Infinite precision increase finding roots over QQbar",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4723",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  cwitty
 
@@ -47,7 +47,7 @@ archive/issue_comments_035652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4723#issuecomment-35652",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_035655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4723#issuecomment-35655",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

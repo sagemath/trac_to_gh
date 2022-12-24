@@ -3,7 +3,7 @@
 archive/issues_007943.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  drkirkby georgsweber jhpalmieri tornaria\n\nAs of Sage 4.3, every time you make a clone or build an spkg, the whole documentation is also rebuilt. This is very annoying. See this [sage-devel](http://groups.google.com/group/sage-devel/msg/f6d2c21372a7d1d7) message for the vote to move the docbuild commands to their own targets in the script `SAGE_ROOT/makefile`. Or at least make it so that creating a clone or rebuilding an spkg doesn't also trigger a rebuild of the documentation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7943\n\n",
+    "body": "Assignee: mvngu\n\nCC:  drkirkby georgsweber @jhpalmieri @tornaria\n\nAs of Sage 4.3, every time you make a clone or build an spkg, the whole documentation is also rebuilt. This is very annoying. See this [sage-devel](http://groups.google.com/group/sage-devel/msg/f6d2c21372a7d1d7) message for the vote to move the docbuild commands to their own targets in the script `SAGE_ROOT/makefile`. Or at least make it so that creating a clone or rebuilding an spkg doesn't also trigger a rebuild of the documentation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7943\n\n",
     "created_at": "2010-01-16T09:10:54Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_007943.json:
 ```
 Assignee: mvngu
 
-CC:  drkirkby georgsweber jhpalmieri tornaria
+CC:  drkirkby georgsweber @jhpalmieri @tornaria
 
 As of Sage 4.3, every time you make a clone or build an spkg, the whole documentation is also rebuilt. This is very annoying. See this [sage-devel](http://groups.google.com/group/sage-devel/msg/f6d2c21372a7d1d7) message for the vote to move the docbuild commands to their own targets in the script `SAGE_ROOT/makefile`. Or at least make it so that creating a clone or rebuilding an spkg doesn't also trigger a rebuild of the documentation.
 
@@ -39,7 +39,7 @@ archive/issue_comments_069283.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7943#issuecomment-69283",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_069285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7943#issuecomment-69285",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_069286.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7943#issuecomment-69286",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_069287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7943#issuecomment-69287",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_069290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7943#issuecomment-69290",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_069291.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7943#issuecomment-69291",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_069292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7943#issuecomment-69292",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_069293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7943#issuecomment-69293",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -308,7 +308,7 @@ archive/issue_comments_069296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7943#issuecomment-69296",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -332,7 +332,7 @@ archive/issue_comments_069297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7943#issuecomment-69297",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -350,7 +350,7 @@ archive/issue_comments_069298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7943#issuecomment-69298",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -375,7 +375,7 @@ archive/issue_comments_069299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7943#issuecomment-69299",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -393,7 +393,7 @@ archive/issue_comments_069300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7943#issuecomment-69300",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -434,7 +434,7 @@ archive/issue_comments_069302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7943#issuecomment-69302",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -447,16 +447,16 @@ Updated `makefile`.
 archive/issue_comments_069303.json:
 ```json
 {
-    "body": "Attachment [makefile.diff](tarball://root/attachments/some-uuid/ticket7943/makefile.diff) by mpatel created at 2010-03-02 23:03:43\n\nDiff of `makefile`.",
+    "body": "Attachment [makefile.diff](tarball://root/attachments/some-uuid/ticket7943/makefile.diff) by @qed777 created at 2010-03-02 23:03:43\n\nDiff of `makefile`.",
     "created_at": "2010-03-02T23:03:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7943#issuecomment-69303",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [makefile.diff](tarball://root/attachments/some-uuid/ticket7943/makefile.diff) by mpatel created at 2010-03-02 23:03:43
+Attachment [makefile.diff](tarball://root/attachments/some-uuid/ticket7943/makefile.diff) by @qed777 created at 2010-03-02 23:03:43
 
 Diff of `makefile`.
 
@@ -472,7 +472,7 @@ archive/issue_comments_069304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7943#issuecomment-69304",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -576,7 +576,7 @@ archive/issue_comments_069307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7943#issuecomment-69307",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -594,7 +594,7 @@ archive/issue_comments_069308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7943#issuecomment-69308",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -607,16 +607,16 @@ Diff of `spkg/install`.
 archive/issue_comments_069309.json:
 ```json
 {
-    "body": "Attachment [install](tarball://root/attachments/some-uuid/ticket7943/install) by mpatel created at 2010-03-04 07:15:55\n\nRebased vs. 4.3.4.alpha0.  Updated `spkg/install`.",
+    "body": "Attachment [install](tarball://root/attachments/some-uuid/ticket7943/install) by @qed777 created at 2010-03-04 07:15:55\n\nRebased vs. 4.3.4.alpha0.  Updated `spkg/install`.",
     "created_at": "2010-03-04T07:15:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7943#issuecomment-69309",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [install](tarball://root/attachments/some-uuid/ticket7943/install) by mpatel created at 2010-03-04 07:15:55
+Attachment [install](tarball://root/attachments/some-uuid/ticket7943/install) by @qed777 created at 2010-03-04 07:15:55
 
 Rebased vs. 4.3.4.alpha0.  Updated `spkg/install`.
 
@@ -632,7 +632,7 @@ archive/issue_comments_069310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7943#issuecomment-69310",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -650,7 +650,7 @@ archive/issue_comments_069311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7943#issuecomment-69311",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -668,7 +668,7 @@ archive/issue_comments_069312.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7943#issuecomment-69312",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -686,7 +686,7 @@ archive/issue_comments_069313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7943#issuecomment-69313",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_009171.json:
     "title": "cygwin: some test failures in sagedoc.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9171",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -59,7 +59,7 @@ archive/issue_comments_085769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9171#issuecomment-85769",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_085770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9171#issuecomment-85770",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_085771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9171#issuecomment-85771",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_085772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9171#issuecomment-85772",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_085774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9171#issuecomment-85774",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_085777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9171#issuecomment-85777",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_085780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9171#issuecomment-85780",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -297,7 +297,7 @@ archive/issue_comments_085782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9171#issuecomment-85782",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

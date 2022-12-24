@@ -14,7 +14,7 @@ archive/issues_004456.json:
     "title": "sage-3.2.alpha3 -- numerical noise on osx 32-bit intel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4456",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

@@ -3,7 +3,7 @@
 archive/issues_000272.json:
 ```json
 {
-    "body": "Assignee: was\n\nIn the current version of SAGE, when I input Ctrl-D at the prompt, sage does exit, but it generates a crash report too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/272\n\n",
+    "body": "Assignee: @williamstein\n\nIn the current version of SAGE, when I input Ctrl-D at the prompt, sage does exit, but it generates a crash report too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/272\n\n",
     "created_at": "2007-02-20T23:52:28Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_000272.json:
     "title": "Ctrl-D exits uncleanly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/272",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 In the current version of SAGE, when I input Ctrl-D at the prompt, sage does exit, but it generates a crash report too.
 
@@ -37,7 +37,7 @@ archive/issue_comments_001294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/272#issuecomment-1294",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_001295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/272#issuecomment-1295",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_001296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/272#issuecomment-1296",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_001297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/272#issuecomment-1297",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

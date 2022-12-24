@@ -3,7 +3,7 @@
 archive/issues_009919.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  jason kcrisman\n\nJason Grout commented on #9822 about the relative difficulty/inconvenience of developing and applying patches for SageNB as compared to Sage. This ticket should fix it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9920\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @jasongrout @kcrisman\n\nJason Grout commented on #9822 about the relative difficulty/inconvenience of developing and applying patches for SageNB as compared to Sage. This ticket should fix it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9920\n\n",
     "created_at": "2010-09-16T15:48:08Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_009919.json:
     "title": "Ease SageNB development by providing hg commands, and extracting packages to /devel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9919",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 Assignee: jason, was
 
-CC:  jason kcrisman
+CC:  @jasongrout @kcrisman
 
 Jason Grout commented on #9822 about the relative difficulty/inconvenience of developing and applying patches for SageNB as compared to Sage. This ticket should fix it.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9920
 archive/issue_comments_098710.json:
 ```json
 {
-    "body": "Attachment [trac_9920-sagenb-package-extraction.patch](tarball://root/attachments/some-uuid/ticket9920/trac_9920-sagenb-package-extraction.patch) by timdumol created at 2010-09-16 16:57:37\n\nSageNB package. Extracts SageNB to $SAGE_ROOT/devel/ for ease of use.",
+    "body": "Attachment [trac_9920-sagenb-package-extraction.patch](tarball://root/attachments/some-uuid/ticket9920/trac_9920-sagenb-package-extraction.patch) by @TimDumol created at 2010-09-16 16:57:37\n\nSageNB package. Extracts SageNB to $SAGE_ROOT/devel/ for ease of use.",
     "created_at": "2010-09-16T16:57:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98710",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_9920-sagenb-package-extraction.patch](tarball://root/attachments/some-uuid/ticket9920/trac_9920-sagenb-package-extraction.patch) by timdumol created at 2010-09-16 16:57:37
+Attachment [trac_9920-sagenb-package-extraction.patch](tarball://root/attachments/some-uuid/ticket9920/trac_9920-sagenb-package-extraction.patch) by @TimDumol created at 2010-09-16 16:57:37
 
 SageNB package. Extracts SageNB to $SAGE_ROOT/devel/ for ease of use.
 
@@ -54,16 +54,16 @@ SageNB package. Extracts SageNB to $SAGE_ROOT/devel/ for ease of use.
 archive/issue_comments_098711.json:
 ```json
 {
-    "body": "Attachment [trac_9920-sagelib-hg.patch](tarball://root/attachments/some-uuid/ticket9920/trac_9920-sagelib-hg.patch) by timdumol created at 2010-09-16 16:58:24\n\nSage main library. Adds hg_sagenb.",
+    "body": "Attachment [trac_9920-sagelib-hg.patch](tarball://root/attachments/some-uuid/ticket9920/trac_9920-sagelib-hg.patch) by @TimDumol created at 2010-09-16 16:58:24\n\nSage main library. Adds hg_sagenb.",
     "created_at": "2010-09-16T16:58:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98711",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_9920-sagelib-hg.patch](tarball://root/attachments/some-uuid/ticket9920/trac_9920-sagelib-hg.patch) by timdumol created at 2010-09-16 16:58:24
+Attachment [trac_9920-sagelib-hg.patch](tarball://root/attachments/some-uuid/ticket9920/trac_9920-sagelib-hg.patch) by @TimDumol created at 2010-09-16 16:58:24
 
 Sage main library. Adds hg_sagenb.
 
@@ -79,7 +79,7 @@ archive/issue_comments_098712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98712",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_098713.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98713",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_098714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98714",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -130,16 +130,16 @@ Also, does this set things up so that changes are reflected in the running noteb
 archive/issue_comments_098715.json:
 ```json
 {
-    "body": "Attachment [trac_9920-sagenb-package-extraction.2.patch](tarball://root/attachments/some-uuid/ticket9920/trac_9920-sagenb-package-extraction.2.patch) by timdumol created at 2010-09-24 06:57:24\n\nPuts the \"$SAGE_ROOT/devel/sagenb\" in `develop` mode.",
+    "body": "Attachment [trac_9920-sagenb-package-extraction.2.patch](tarball://root/attachments/some-uuid/ticket9920/trac_9920-sagenb-package-extraction.2.patch) by @TimDumol created at 2010-09-24 06:57:24\n\nPuts the \"$SAGE_ROOT/devel/sagenb\" in `develop` mode.",
     "created_at": "2010-09-24T06:57:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98715",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_9920-sagenb-package-extraction.2.patch](tarball://root/attachments/some-uuid/ticket9920/trac_9920-sagenb-package-extraction.2.patch) by timdumol created at 2010-09-24 06:57:24
+Attachment [trac_9920-sagenb-package-extraction.2.patch](tarball://root/attachments/some-uuid/ticket9920/trac_9920-sagenb-package-extraction.2.patch) by @TimDumol created at 2010-09-24 06:57:24
 
 Puts the "$SAGE_ROOT/devel/sagenb" in `develop` mode.
 
@@ -155,7 +155,7 @@ archive/issue_comments_098716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98716",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_098717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98717",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_098718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98718",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_098719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98719",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_098720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98720",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_098721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98721",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_098722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98722",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -302,7 +302,7 @@ archive/issue_comments_098723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98723",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -337,7 +337,7 @@ archive/issue_comments_098724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98724",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -355,7 +355,7 @@ archive/issue_comments_098725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98725",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -373,7 +373,7 @@ archive/issue_comments_098726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98726",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -391,7 +391,7 @@ archive/issue_comments_098727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98727",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -409,7 +409,7 @@ archive/issue_comments_098728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98728",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -427,7 +427,7 @@ archive/issue_comments_098729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98729",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -445,7 +445,7 @@ archive/issue_comments_098730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98730",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -465,7 +465,7 @@ archive/issue_comments_098731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98731",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -478,16 +478,16 @@ Make `$SAGE_ROOT/devel` on install, if necessary.  Apply on top of package extra
 archive/issue_comments_098732.json:
 ```json
 {
-    "body": "Attachment [trac_9920-devel_dir_fix.patch](tarball://root/attachments/some-uuid/ticket9920/trac_9920-devel_dir_fix.patch) by mpatel created at 2010-10-07 11:38:11\n\nI've added a patch that I'm testing now.",
+    "body": "Attachment [trac_9920-devel_dir_fix.patch](tarball://root/attachments/some-uuid/ticket9920/trac_9920-devel_dir_fix.patch) by @qed777 created at 2010-10-07 11:38:11\n\nI've added a patch that I'm testing now.",
     "created_at": "2010-10-07T11:38:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98732",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_9920-devel_dir_fix.patch](tarball://root/attachments/some-uuid/ticket9920/trac_9920-devel_dir_fix.patch) by mpatel created at 2010-10-07 11:38:11
+Attachment [trac_9920-devel_dir_fix.patch](tarball://root/attachments/some-uuid/ticket9920/trac_9920-devel_dir_fix.patch) by @qed777 created at 2010-10-07 11:38:11
 
 I've added a patch that I'm testing now.
 
@@ -503,7 +503,7 @@ archive/issue_comments_098733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98733",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -524,7 +524,7 @@ archive/issue_comments_098734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98734",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -548,7 +548,7 @@ archive/issue_comments_098735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98735",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -566,7 +566,7 @@ archive/issue_comments_098736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98736",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000724.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: graph6, graph\n\nMaking a graph from a graph6 string should check to make sure the string is the right size and throw an error if the string is too long or too short.  I believe now it just silently hands back a graph that is not correct.\n\nThis is bad, especially when your string has an escaped character and you didn't realize it :).\n\nIssue created by migration from https://trac.sagemath.org/ticket/724\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: graph6, graph\n\nMaking a graph from a graph6 string should check to make sure the string is the right size and throw an error if the string is too long or too short.  I believe now it just silently hands back a graph that is not correct.\n\nThis is bad, especially when your string has an escaped character and you didn't realize it :).\n\nIssue created by migration from https://trac.sagemath.org/ticket/724\n\n",
     "created_at": "2007-09-21T00:40:12Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_000724.json:
     "title": "graph6 parsing does not throw an error when the string is the wrong size.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/724",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: graph6, graph
 
@@ -41,7 +41,7 @@ archive/issue_comments_004220.json:
     "issue": "https://github.com/sagemath/sagetest/issues/724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/724#issuecomment-4220",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -54,16 +54,16 @@ Changing status from new to assigned.
 archive/issue_comments_004221.json:
 ```json
 {
-    "body": "Changing assignee from was to rlm.",
+    "body": "Changing assignee from @williamstein to @rlmill.",
     "created_at": "2007-10-24T07:50:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/724#issuecomment-4221",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Changing assignee from was to rlm.
+Changing assignee from @williamstein to @rlmill.
 
 
 
@@ -72,16 +72,16 @@ Changing assignee from was to rlm.
 archive/issue_comments_004222.json:
 ```json
 {
-    "body": "Attachment [7087.patch](tarball://root/attachments/some-uuid/ticket724/7087.patch) by rlm created at 2007-10-24 07:50:00",
+    "body": "Attachment [7087.patch](tarball://root/attachments/some-uuid/ticket724/7087.patch) by @rlmill created at 2007-10-24 07:50:00",
     "created_at": "2007-10-24T07:50:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/724#issuecomment-4222",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [7087.patch](tarball://root/attachments/some-uuid/ticket724/7087.patch) by rlm created at 2007-10-24 07:50:00
+Attachment [7087.patch](tarball://root/attachments/some-uuid/ticket724/7087.patch) by @rlmill created at 2007-10-24 07:50:00
 
 
 
@@ -95,7 +95,7 @@ archive/issue_comments_004223.json:
     "issue": "https://github.com/sagemath/sagetest/issues/724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/724#issuecomment-4223",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007669.json:
 ```json
 {
-    "body": "Assignee: was\n\nObviously one couldn't do this completely, but there are a few bits and pieces here and there so  perhaps it could be done for fairly simple programs and things like Manipulate?  This was requested by a participant at the first Sage Education Day; the idea would be to have something which would translate old notebooks etc. into Sage, so that one could use old code without using one of the interfaces/APIs when one's license expired, I think.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7669\n\n",
+    "body": "Assignee: @williamstein\n\nObviously one couldn't do this completely, but there are a few bits and pieces here and there so  perhaps it could be done for fairly simple programs and things like Manipulate?  This was requested by a participant at the first Sage Education Day; the idea would be to have something which would translate old notebooks etc. into Sage, so that one could use old code without using one of the interfaces/APIs when one's license expired, I think.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7669\n\n",
     "created_at": "2009-12-11T20:29:49Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_007669.json:
     "title": "Translate Mathematica, Maple, Matlab code into Sage code automatically",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7669",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Obviously one couldn't do this completely, but there are a few bits and pieces here and there so  perhaps it could be done for fairly simple programs and things like Manipulate?  This was requested by a participant at the first Sage Education Day; the idea would be to have something which would translate old notebooks etc. into Sage, so that one could use old code without using one of the interfaces/APIs when one's license expired, I think.
 
@@ -37,7 +37,7 @@ archive/issue_comments_065735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7669#issuecomment-65735",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_065736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7669#issuecomment-65736",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_065737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7669#issuecomment-65737",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_065738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7669#issuecomment-65738",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_065739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7669#issuecomment-65739",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_065740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7669#issuecomment-65740",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_065741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7669#issuecomment-65741",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

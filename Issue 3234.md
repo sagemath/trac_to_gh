@@ -14,7 +14,7 @@ archive/issues_003234.json:
     "title": "[with patch; needs review] cygwin -- make numpy work with cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3234",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

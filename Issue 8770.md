@@ -14,7 +14,7 @@ archive/issues_008770.json:
     "title": "gfan fails to build on Fedora Core 12 wtih GCC-4.5.0 (lena)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8770",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: GeorgSWeber
@@ -67,16 +67,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8770
 archive/issue_comments_080257.json:
 ```json
 {
-    "body": "Changing assignee from GeorgSWeber to was.",
+    "body": "Changing assignee from GeorgSWeber to @williamstein.",
     "created_at": "2010-04-26T20:29:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8770#issuecomment-80257",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from GeorgSWeber to was.
+Changing assignee from GeorgSWeber to @williamstein.
 
 
 
@@ -90,7 +90,7 @@ archive/issue_comments_080258.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8770#issuecomment-80258",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_080259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8770#issuecomment-80259",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_080260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8770#issuecomment-80260",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_080261.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8770#issuecomment-80261",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_080262.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8770#issuecomment-80262",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_080263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8770#issuecomment-80263",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_080264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8770#issuecomment-80264",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_080265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8770#issuecomment-80265",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -297,7 +297,7 @@ archive/issue_comments_080266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8770#issuecomment-80266",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_080267.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8770#issuecomment-80267",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -335,7 +335,7 @@ archive/issue_comments_080268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8770#issuecomment-80268",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -353,7 +353,7 @@ archive/issue_comments_080269.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8770#issuecomment-80269",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -371,7 +371,7 @@ archive/issue_comments_080270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8770#issuecomment-80270",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 

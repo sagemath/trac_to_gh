@@ -83,16 +83,16 @@ Introspection works fine from the commandline.
 archive/issue_comments_001714.json:
 ```json
 {
-    "body": "Changing assignee from boothby to ncalexan.",
+    "body": "Changing assignee from boothby to @ncalexan.",
     "created_at": "2007-06-27T05:54:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/354#issuecomment-1714",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Changing assignee from boothby to ncalexan.
+Changing assignee from boothby to @ncalexan.
 
 
 
@@ -106,7 +106,7 @@ archive/issue_comments_001715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/354#issuecomment-1715",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_001718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/354#issuecomment-1718",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

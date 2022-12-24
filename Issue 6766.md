@@ -3,7 +3,7 @@
 archive/issues_006766.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  cremona\n\nThe patch provides a much faster method for computing powers of commutative factorizations.  This implements a suggestion made by John Cremona in #5188. \nThe speed-up is most marked for factorizations of ideals in number fields.\nBefore:\n\n```\nsage: f = NumberField(x^2 + 23, 'a').factor(47)\nsage: timeit('f^10')\n5 loops, best of 3: 134 ms per loop\n```\n\nAfter:\n\n```\nsage: f = NumberField(x^2 + 23, 'a').factor(47)\nsage: timeit('f^10')\n625 loops, best of 3: 571 \u00b5s per loop\n```\n\n\nIn addition, five redundant lines have been removed from the `__init__` function of the `Factorization` class.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6766\n\n",
+    "body": "Assignee: tbd\n\nCC:  @JohnCremona\n\nThe patch provides a much faster method for computing powers of commutative factorizations.  This implements a suggestion made by John Cremona in #5188. \nThe speed-up is most marked for factorizations of ideals in number fields.\nBefore:\n\n```\nsage: f = NumberField(x^2 + 23, 'a').factor(47)\nsage: timeit('f^10')\n5 loops, best of 3: 134 ms per loop\n```\n\nAfter:\n\n```\nsage: f = NumberField(x^2 + 23, 'a').factor(47)\nsage: timeit('f^10')\n625 loops, best of 3: 571 \u00b5s per loop\n```\n\n\nIn addition, five redundant lines have been removed from the `__init__` function of the `Factorization` class.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6766\n\n",
     "created_at": "2009-08-16T21:08:14Z",
     "labels": [
         "algebra",
@@ -19,7 +19,7 @@ archive/issues_006766.json:
 ```
 Assignee: tbd
 
-CC:  cremona
+CC:  @JohnCremona
 
 The patch provides a much faster method for computing powers of commutative factorizations.  This implements a suggestion made by John Cremona in #5188. 
 The speed-up is most marked for factorizations of ideals in number fields.
@@ -80,7 +80,7 @@ archive/issue_comments_055731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6766#issuecomment-55731",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_055733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6766#issuecomment-55733",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

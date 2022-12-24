@@ -3,7 +3,7 @@
 archive/issues_000469.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  malb\n\nPolyBoRi is a framework for doing computation within the boolean ring, i.e. the ring F_2[x_1,...,x_n]/<x_1<sup>2+x_1,x_n</sup>2+x_n>. From the benchmarks presented in http://www.itwm.fraunhofer.de/zentral/download/berichte/bericht122.pdf it not only features very fast arithmetic in that ring but also a very fast Gr\u00f6bner basis engine. PolyBoRi is GPL'd and should be wrapped for SAGE.\n\nIssue created by migration from https://trac.sagemath.org/ticket/469\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @malb\n\nPolyBoRi is a framework for doing computation within the boolean ring, i.e. the ring F_2[x_1,...,x_n]/<x_1<sup>2+x_1,x_n</sup>2+x_n>. From the benchmarks presented in http://www.itwm.fraunhofer.de/zentral/download/berichte/bericht122.pdf it not only features very fast arithmetic in that ring but also a very fast Gr\u00f6bner basis engine. PolyBoRi is GPL'd and should be wrapped for SAGE.\n\nIssue created by migration from https://trac.sagemath.org/ticket/469\n\n",
     "created_at": "2007-08-20T22:01:34Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_000469.json:
     "title": "Integrate the PolyBoRi framework",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/469",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  malb
+CC:  @malb
 
 PolyBoRi is a framework for doing computation within the boolean ring, i.e. the ring F_2[x_1,...,x_n]/<x_1<sup>2+x_1,x_n</sup>2+x_n>. From the benchmarks presented in http://www.itwm.fraunhofer.de/zentral/download/berichte/bericht122.pdf it not only features very fast arithmetic in that ring but also a very fast Gröbner basis engine. PolyBoRi is GPL'd and should be wrapped for SAGE.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/469
 archive/issue_comments_002332.json:
 ```json
 {
-    "body": "Changing assignee from was to malb.",
+    "body": "Changing assignee from @williamstein to @malb.",
     "created_at": "2007-08-20T22:01:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/469#issuecomment-2332",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from was to malb.
+Changing assignee from @williamstein to @malb.
 
 
 
@@ -52,16 +52,16 @@ Changing assignee from was to malb.
 archive/issue_comments_002333.json:
 ```json
 {
-    "body": "Changing assignee from malb to burcin.",
+    "body": "Changing assignee from @malb to @burcin.",
     "created_at": "2007-10-21T22:53:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/469#issuecomment-2333",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from malb to burcin.
+Changing assignee from @malb to @burcin.
 
 
 
@@ -169,7 +169,7 @@ archive/issue_comments_002337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/469#issuecomment-2337",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_002338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/469#issuecomment-2338",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_002340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/469#issuecomment-2340",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002084.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  roed\n\nThis should probably be factored out. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2084\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @roed314\n\nThis should probably be factored out. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2084\n\n",
     "created_at": "2008-02-07T10:40:41Z",
     "labels": [
         "algebraic geometry",
@@ -14,12 +14,12 @@ archive/issues_002084.json:
     "title": "default 20/40 in padics factory hard coded everywhere",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2084",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  roed
+CC:  @roed314
 
 This should probably be factored out. 
 
@@ -39,7 +39,7 @@ archive/issue_comments_013487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2084",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2084#issuecomment-13487",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_013488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2084",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2084#issuecomment-13488",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -72,16 +72,16 @@ It looks like we can close this ticket.  Robert, David, thoughts?
 archive/issue_comments_013489.json:
 ```json
 {
-    "body": "Changing assignee from was to roed.",
+    "body": "Changing assignee from @williamstein to @roed314.",
     "created_at": "2009-06-07T13:14:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2084",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2084#issuecomment-13489",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to roed.
+Changing assignee from @williamstein to @roed314.
 
 
 
@@ -95,7 +95,7 @@ archive/issue_comments_013490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2084",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2084#issuecomment-13490",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -108,16 +108,16 @@ Changing component from number theory to padics.
 archive/issue_comments_013491.json:
 ```json
 {
-    "body": "Attachment [trac_2084.patch](tarball://root/attachments/some-uuid/ticket2084/trac_2084.patch) by mhansen created at 2010-01-17 07:42:49",
+    "body": "Attachment [trac_2084.patch](tarball://root/attachments/some-uuid/ticket2084/trac_2084.patch) by @mwhansen created at 2010-01-17 07:42:49",
     "created_at": "2010-01-17T07:42:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2084",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2084#issuecomment-13491",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_2084.patch](tarball://root/attachments/some-uuid/ticket2084/trac_2084.patch) by mhansen created at 2010-01-17 07:42:49
+Attachment [trac_2084.patch](tarball://root/attachments/some-uuid/ticket2084/trac_2084.patch) by @mwhansen created at 2010-01-17 07:42:49
 
 
 
@@ -131,7 +131,7 @@ archive/issue_comments_013492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2084",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2084#issuecomment-13492",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_013493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2084",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2084#issuecomment-13493",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_013494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2084",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2084#issuecomment-13494",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_013495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2084",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2084#issuecomment-13495",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_013496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2084",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2084#issuecomment-13496",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 

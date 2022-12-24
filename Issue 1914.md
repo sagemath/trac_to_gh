@@ -3,7 +3,7 @@
 archive/issues_001914.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis works in python:\n\n```\n>>> print \"abc \\\"def\\\"\"\nabc \"def\"\n```\n\n\nbut it's broken in sage:\n\n```\nsage: print \"abc \\\"def\\\"\"\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     print \"abc \\\"def._backslash_()\"\"\n                                    ^\n<type 'exceptions.SyntaxError'>: EOL while scanning single-quoted string\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1914\n\n",
+    "body": "Assignee: @williamstein\n\nThis works in python:\n\n```\n>>> print \"abc \\\"def\\\"\"\nabc \"def\"\n```\n\n\nbut it's broken in sage:\n\n```\nsage: print \"abc \\\"def\\\"\"\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     print \"abc \\\"def._backslash_()\"\"\n                                    ^\n<type 'exceptions.SyntaxError'>: EOL while scanning single-quoted string\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1914\n\n",
     "created_at": "2008-01-24T16:55:08Z",
     "labels": [
         "user interface",
@@ -17,7 +17,7 @@ archive/issues_001914.json:
     "user": "dmharvey"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This works in python:
 
@@ -78,7 +78,7 @@ archive/issue_comments_012128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1914#issuecomment-12128",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_012129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1914#issuecomment-12129",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

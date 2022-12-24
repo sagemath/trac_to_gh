@@ -14,7 +14,7 @@ archive/issues_001730.json:
     "title": "Sage does not have 100,000 users yet.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1730",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

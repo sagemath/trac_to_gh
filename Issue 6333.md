@@ -14,7 +14,7 @@ archive/issues_006333.json:
     "title": "optional doctest failure -- scilab interface is really really broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6333",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd

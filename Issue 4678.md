@@ -14,7 +14,7 @@ archive/issues_004678.json:
     "title": "hg_sage.commit() Error on OS X 10.5.5. Conflict in libPng.dylib?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4678",
-    "user": "tjlahey"
+    "user": "@tjl"
 }
 ```
 Assignee: cwitty
@@ -78,7 +78,7 @@ archive/issue_comments_035245.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4678",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4678#issuecomment-35245",
-    "user": "tjlahey"
+    "user": "@tjl"
 }
 ```
 

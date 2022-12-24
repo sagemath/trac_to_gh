@@ -14,7 +14,7 @@ archive/issues_001556.json:
     "title": "[with patch] improve readability of unknown username error page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1556",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 Assignee: boothby
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1556
 archive/issue_comments_009919.json:
 ```json
 {
-    "body": "Attachment [unknown_username.patch](tarball://root/attachments/some-uuid/ticket1556/unknown_username.patch) by yi created at 2007-12-18 02:06:24",
+    "body": "Attachment [unknown_username.patch](tarball://root/attachments/some-uuid/ticket1556/unknown_username.patch) by @yqiang created at 2007-12-18 02:06:24",
     "created_at": "2007-12-18T02:06:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1556#issuecomment-9919",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Attachment [unknown_username.patch](tarball://root/attachments/some-uuid/ticket1556/unknown_username.patch) by yi created at 2007-12-18 02:06:24
+Attachment [unknown_username.patch](tarball://root/attachments/some-uuid/ticket1556/unknown_username.patch) by @yqiang created at 2007-12-18 02:06:24
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_009920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1556#issuecomment-9920",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_009921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1556#issuecomment-9921",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_009922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1556#issuecomment-9922",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

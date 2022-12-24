@@ -3,7 +3,7 @@
 archive/issues_001949.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  cremona\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1949\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1949\n\n",
     "created_at": "2008-01-27T19:44:58Z",
     "labels": [
         "interfaces",
@@ -14,12 +14,12 @@ archive/issues_001949.json:
     "title": "rewrite the mwrank interface to get rid of wrap.* and use C++",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1949",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  cremona
+CC:  @JohnCremona
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_012405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1949#issuecomment-12405",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to assigned.
 archive/issue_comments_012406.json:
 ```json
 {
-    "body": "Attachment [trac-1949-mwrank_rewrite_part1.patch](tarball://root/attachments/some-uuid/ticket1949/trac-1949-mwrank_rewrite_part1.patch) by was created at 2008-01-28 06:24:20\n\nthis is part 1 -- it doesn't even build yet, but all functions are there...",
+    "body": "Attachment [trac-1949-mwrank_rewrite_part1.patch](tarball://root/attachments/some-uuid/ticket1949/trac-1949-mwrank_rewrite_part1.patch) by @williamstein created at 2008-01-28 06:24:20\n\nthis is part 1 -- it doesn't even build yet, but all functions are there...",
     "created_at": "2008-01-28T06:24:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1949#issuecomment-12406",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1949-mwrank_rewrite_part1.patch](tarball://root/attachments/some-uuid/ticket1949/trac-1949-mwrank_rewrite_part1.patch) by was created at 2008-01-28 06:24:20
+Attachment [trac-1949-mwrank_rewrite_part1.patch](tarball://root/attachments/some-uuid/ticket1949/trac-1949-mwrank_rewrite_part1.patch) by @williamstein created at 2008-01-28 06:24:20
 
 this is part 1 -- it doesn't even build yet, but all functions are there...
 
@@ -77,7 +77,7 @@ archive/issue_comments_012407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1949#issuecomment-12407",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_012408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1949#issuecomment-12408",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_012409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1949#issuecomment-12409",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_012410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1949#issuecomment-12410",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_012411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1949#issuecomment-12411",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_012412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1949#issuecomment-12412",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_012413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1949#issuecomment-12413",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

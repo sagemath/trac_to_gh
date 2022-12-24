@@ -3,7 +3,7 @@
 archive/issues_007815.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  jst rlm\n\nThere are several problems in the Flint spkg-install and makefile which prevent it building 64-bit on any platform other than OS X. Apart from the usual changes of adding -m64 to CFLAGS, the makefile has previously been changed to make it work on OS X. However, it does not work on Open Solaris in 64-bit mode, as the -m64 flag is not being added where it should be. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7815\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  jst @rlmill\n\nThere are several problems in the Flint spkg-install and makefile which prevent it building 64-bit on any platform other than OS X. Apart from the usual changes of adding -m64 to CFLAGS, the makefile has previously been changed to make it work on OS X. However, it does not work on Open Solaris in 64-bit mode, as the -m64 flag is not being added where it should be. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7815\n\n",
     "created_at": "2010-01-02T06:21:14Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_007815.json:
 ```
 Assignee: drkirkby
 
-CC:  jst rlm
+CC:  jst @rlmill
 
 There are several problems in the Flint spkg-install and makefile which prevent it building 64-bit on any platform other than OS X. Apart from the usual changes of adding -m64 to CFLAGS, the makefile has previously been changed to make it work on OS X. However, it does not work on Open Solaris in 64-bit mode, as the -m64 flag is not being added where it should be. 
 
@@ -157,7 +157,7 @@ archive/issue_comments_067626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7815#issuecomment-67626",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_067627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7815#issuecomment-67627",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_067628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7815#issuecomment-67628",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

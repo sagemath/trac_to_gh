@@ -3,7 +3,7 @@
 archive/issues_005091.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  jason\n\n\n```\nsage: f(x) = sin(x)-cos(x)\nsage: g = f._fast_float_()\n\nsage: timeit(\"find_root(f, 0, pi)\")\n625 loops, best of 3: 154 \u00b5s per loop\n\nsage: timeit(\"find_root(g, 0, pi)\")\n625 loops, best of 3: 24 \u00b5s per loop\n```\n\n\nSee also http://groups.google.com/group/sage-devel/browse_thread/thread/927319a4fa61ae3b/9fc80aa9c114e041\n\nIssue created by migration from https://trac.sagemath.org/ticket/5091\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @jasongrout\n\n\n```\nsage: f(x) = sin(x)-cos(x)\nsage: g = f._fast_float_()\n\nsage: timeit(\"find_root(f, 0, pi)\")\n625 loops, best of 3: 154 \u00b5s per loop\n\nsage: timeit(\"find_root(g, 0, pi)\")\n625 loops, best of 3: 24 \u00b5s per loop\n```\n\n\nSee also http://groups.google.com/group/sage-devel/browse_thread/thread/927319a4fa61ae3b/9fc80aa9c114e041\n\nIssue created by migration from https://trac.sagemath.org/ticket/5091\n\n",
     "created_at": "2009-01-24T22:05:03Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_005091.json:
     "title": "find_root should call fast_float",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5091",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  jason
+CC:  @jasongrout
 
 
 ```
@@ -104,7 +104,7 @@ archive/issue_comments_038795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5091#issuecomment-38795",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_038796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5091#issuecomment-38796",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_038797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5091#issuecomment-38797",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_038798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5091#issuecomment-38798",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_038799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5091#issuecomment-38799",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_038800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5091#issuecomment-38800",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_038801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5091#issuecomment-38801",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

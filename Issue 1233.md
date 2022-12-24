@@ -14,7 +14,7 @@ archive/issues_001233.json:
     "title": "mwrank wrapper causes crashes and error on non-minimal curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1233",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 Assignee: jec
@@ -117,7 +117,7 @@ archive/issue_comments_007680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1233",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1233#issuecomment-7680",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_007681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1233",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1233#issuecomment-7681",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -148,16 +148,16 @@ See model-changing code at #1239
 archive/issue_comments_007682.json:
 ```json
 {
-    "body": "Attachment [jec-20071219.hg](tarball://root/attachments/some-uuid/ticket1233/jec-20071219.hg) by cremona created at 2007-12-19 11:26:25",
+    "body": "Attachment [jec-20071219.hg](tarball://root/attachments/some-uuid/ticket1233/jec-20071219.hg) by @JohnCremona created at 2007-12-19 11:26:25",
     "created_at": "2007-12-19T11:26:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1233",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1233#issuecomment-7682",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [jec-20071219.hg](tarball://root/attachments/some-uuid/ticket1233/jec-20071219.hg) by cremona created at 2007-12-19 11:26:25
+Attachment [jec-20071219.hg](tarball://root/attachments/some-uuid/ticket1233/jec-20071219.hg) by @JohnCremona created at 2007-12-19 11:26:25
 
 
 
@@ -166,16 +166,16 @@ Attachment [jec-20071219.hg](tarball://root/attachments/some-uuid/ticket1233/jec
 archive/issue_comments_007683.json:
 ```json
 {
-    "body": "Attachment [jec-20071219.2.hg](tarball://root/attachments/some-uuid/ticket1233/jec-20071219.2.hg) by cremona created at 2007-12-19 11:31:13",
+    "body": "Attachment [jec-20071219.2.hg](tarball://root/attachments/some-uuid/ticket1233/jec-20071219.2.hg) by @JohnCremona created at 2007-12-19 11:31:13",
     "created_at": "2007-12-19T11:31:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1233",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1233#issuecomment-7683",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [jec-20071219.2.hg](tarball://root/attachments/some-uuid/ticket1233/jec-20071219.2.hg) by cremona created at 2007-12-19 11:31:13
+Attachment [jec-20071219.2.hg](tarball://root/attachments/some-uuid/ticket1233/jec-20071219.2.hg) by @JohnCremona created at 2007-12-19 11:31:13
 
 
 
@@ -184,16 +184,16 @@ Attachment [jec-20071219.2.hg](tarball://root/attachments/some-uuid/ticket1233/j
 archive/issue_comments_007684.json:
 ```json
 {
-    "body": "Attachment [jec-20071219.3.hg](tarball://root/attachments/some-uuid/ticket1233/jec-20071219.3.hg) by cremona created at 2007-12-19 11:33:06",
+    "body": "Attachment [jec-20071219.3.hg](tarball://root/attachments/some-uuid/ticket1233/jec-20071219.3.hg) by @JohnCremona created at 2007-12-19 11:33:06",
     "created_at": "2007-12-19T11:33:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1233",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1233#issuecomment-7684",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [jec-20071219.3.hg](tarball://root/attachments/some-uuid/ticket1233/jec-20071219.3.hg) by cremona created at 2007-12-19 11:33:06
+Attachment [jec-20071219.3.hg](tarball://root/attachments/some-uuid/ticket1233/jec-20071219.3.hg) by @JohnCremona created at 2007-12-19 11:33:06
 
 
 
@@ -207,7 +207,7 @@ archive/issue_comments_007685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1233",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1233#issuecomment-7685",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_007686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1233",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1233#issuecomment-7686",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -344,7 +344,7 @@ archive/issue_comments_007690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1233",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1233#issuecomment-7690",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_007691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1233",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1233#issuecomment-7691",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

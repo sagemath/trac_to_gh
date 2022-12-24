@@ -3,7 +3,7 @@
 archive/issues_005124.json:
 ```json
 {
-    "body": "Assignee: was\n\n\nThis doesn't depend on xmin!?\n\n\n```\nE = EllipticCurve('37a')\nE.plot(xmin=-10, xmax=10)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5124\n\n",
+    "body": "Assignee: @williamstein\n\n\nThis doesn't depend on xmin!?\n\n\n```\nE = EllipticCurve('37a')\nE.plot(xmin=-10, xmax=10)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5124\n\n",
     "created_at": "2009-01-28T23:15:08Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_005124.json:
     "title": "xmin ignored when plotting elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5124",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 This doesn't depend on xmin!?
@@ -45,7 +45,7 @@ archive/issue_comments_039165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5124",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5124#issuecomment-39165",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_039166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5124",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5124#issuecomment-39166",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_039167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5124",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5124#issuecomment-39167",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_039168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5124",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5124#issuecomment-39168",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

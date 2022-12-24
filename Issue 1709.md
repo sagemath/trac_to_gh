@@ -3,7 +3,7 @@
 archive/issues_001709.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nFor example, you can do\n\n```\nsage: G = graphs.DodecahedralGraph()\nsage: G.plot3d_new()\n```\n\n\nThis still needs to be cleaned up, but at least now it works instead of giving confusing errors.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1709\n\n",
+    "body": "Assignee: @rlmill\n\nFor example, you can do\n\n```\nsage: G = graphs.DodecahedralGraph()\nsage: G.plot3d_new()\n```\n\n\nThis still needs to be cleaned up, but at least now it works instead of giving confusing errors.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1709\n\n",
     "created_at": "2008-01-07T09:09:18Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_001709.json:
     "title": "[with patch] Make experimental jmol graph plotting work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1709",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 For example, you can do
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1709
 archive/issue_comments_010836.json:
 ```json
 {
-    "body": "Attachment [jmol_graphs.patch](tarball://root/attachments/some-uuid/ticket1709/jmol_graphs.patch) by robertwb created at 2008-01-08 23:05:26\n\nYep, I've been using this and it works great.",
+    "body": "Attachment [jmol_graphs.patch](tarball://root/attachments/some-uuid/ticket1709/jmol_graphs.patch) by @robertwb created at 2008-01-08 23:05:26\n\nYep, I've been using this and it works great.",
     "created_at": "2008-01-08T23:05:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1709",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1709#issuecomment-10836",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [jmol_graphs.patch](tarball://root/attachments/some-uuid/ticket1709/jmol_graphs.patch) by robertwb created at 2008-01-08 23:05:26
+Attachment [jmol_graphs.patch](tarball://root/attachments/some-uuid/ticket1709/jmol_graphs.patch) by @robertwb created at 2008-01-08 23:05:26
 
 Yep, I've been using this and it works great.
 

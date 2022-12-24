@@ -14,7 +14,7 @@ archive/issues_004867.json:
     "title": "optional gcc-4.2.1.spkg doesn't build on sage.math",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4867",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -102,7 +102,7 @@ archive/issue_comments_036877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4867#issuecomment-36877",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_036878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4867#issuecomment-36878",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_036879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4867#issuecomment-36879",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_036880.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4867#issuecomment-36880",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

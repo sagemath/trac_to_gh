@@ -3,7 +3,7 @@
 archive/issues_005627.json:
 ```json
 {
-    "body": "Assignee: justin\n\nCC:  jonhanke\n\nAn \"l\" was missing.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/5627\n\n",
+    "body": "Assignee: justin\n\nCC:  @jonhanke\n\nAn \"l\" was missing.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/5627\n\n",
     "created_at": "2009-03-29T02:58:53Z",
     "labels": [
         "quadratic forms",
@@ -14,12 +14,12 @@ archive/issues_005627.json:
     "title": "Trivial typo in quadratic_nonresidue",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5627",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: justin
 
-CC:  jonhanke
+CC:  @jonhanke
 
 An "l" was missing.  
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5627
 archive/issue_comments_043931.json:
 ```json
 {
-    "body": "Attachment [quad-nonres.patch](tarball://root/attachments/some-uuid/ticket5627/quad-nonres.patch) by kcrisman created at 2009-03-29 02:59:08\n\nBased on 3.4",
+    "body": "Attachment [quad-nonres.patch](tarball://root/attachments/some-uuid/ticket5627/quad-nonres.patch) by @kcrisman created at 2009-03-29 02:59:08\n\nBased on 3.4",
     "created_at": "2009-03-29T02:59:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5627",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5627#issuecomment-43931",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [quad-nonres.patch](tarball://root/attachments/some-uuid/ticket5627/quad-nonres.patch) by kcrisman created at 2009-03-29 02:59:08
+Attachment [quad-nonres.patch](tarball://root/attachments/some-uuid/ticket5627/quad-nonres.patch) by @kcrisman created at 2009-03-29 02:59:08
 
 Based on 3.4
 
@@ -59,7 +59,7 @@ archive/issue_comments_043932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5627",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5627#issuecomment-43932",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_043934.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5627",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5627#issuecomment-43934",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_043937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5627",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5627#issuecomment-43937",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_043938.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5627",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5627#issuecomment-43938",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_043939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5627",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5627#issuecomment-43939",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -343,7 +343,7 @@ archive/issue_comments_043941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5627",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5627#issuecomment-43941",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -387,7 +387,7 @@ archive/issue_comments_043943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5627",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5627#issuecomment-43943",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -459,7 +459,7 @@ archive/issue_comments_043946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5627",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5627#issuecomment-43946",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

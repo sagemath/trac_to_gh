@@ -3,7 +3,7 @@
 archive/issues_007271.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  burcin polybori drkirkby\n\nKeywords: polybori, crypto\n\n* implement var()\n  * variables() is an iterator\n\nIssue created by migration from https://trac.sagemath.org/ticket/7271\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin polybori drkirkby\n\nKeywords: polybori, crypto\n\n* implement var()\n  * variables() is an iterator\n\nIssue created by migration from https://trac.sagemath.org/ticket/7271\n\n",
     "created_at": "2009-10-23T16:41:21Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_007271.json:
     "title": "some small polybori interface fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7271",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  burcin polybori drkirkby
+CC:  @burcin polybori drkirkby
 
 Keywords: polybori, crypto
 
@@ -42,7 +42,7 @@ archive/issue_comments_060475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7271",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7271#issuecomment-60475",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -60,7 +60,7 @@ archive/issue_comments_060476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7271",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7271#issuecomment-60476",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_060477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7271",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7271#issuecomment-60477",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_060478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7271",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7271#issuecomment-60478",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_060479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7271",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7271#issuecomment-60479",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_060480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7271",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7271#issuecomment-60480",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_060483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7271",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7271#issuecomment-60483",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_060484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7271",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7271#issuecomment-60484",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -240,16 +240,16 @@ The SPKG is available at:
 archive/issue_comments_060485.json:
 ```json
 {
-    "body": "Attachment [polybori_fixes.patch](tarball://root/attachments/some-uuid/ticket7271/polybori_fixes.patch) by malb created at 2009-10-28 16:28:09",
+    "body": "Attachment [polybori_fixes.patch](tarball://root/attachments/some-uuid/ticket7271/polybori_fixes.patch) by @malb created at 2009-10-28 16:28:09",
     "created_at": "2009-10-28T16:28:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7271",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7271#issuecomment-60485",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [polybori_fixes.patch](tarball://root/attachments/some-uuid/ticket7271/polybori_fixes.patch) by malb created at 2009-10-28 16:28:09
+Attachment [polybori_fixes.patch](tarball://root/attachments/some-uuid/ticket7271/polybori_fixes.patch) by @malb created at 2009-10-28 16:28:09
 
 
 
@@ -263,7 +263,7 @@ archive/issue_comments_060486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7271",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7271#issuecomment-60486",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_060487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7271",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7271#issuecomment-60487",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -296,16 +296,16 @@ I am attaching a new deps file to this ticket, to address
 archive/issue_comments_060488.json:
 ```json
 {
-    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket7271/deps) by malb created at 2009-11-02 10:43:07\n\nThe only thing changed in the deps file (which isn't under revision control) is that PolyBoRi now depends on M4RI",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket7271/deps) by @malb created at 2009-11-02 10:43:07\n\nThe only thing changed in the deps file (which isn't under revision control) is that PolyBoRi now depends on M4RI",
     "created_at": "2009-11-02T10:43:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7271",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7271#issuecomment-60488",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [deps](tarball://root/attachments/some-uuid/ticket7271/deps) by malb created at 2009-11-02 10:43:07
+Attachment [deps](tarball://root/attachments/some-uuid/ticket7271/deps) by @malb created at 2009-11-02 10:43:07
 
 The only thing changed in the deps file (which isn't under revision control) is that PolyBoRi now depends on M4RI
 
@@ -364,7 +364,7 @@ archive/issue_comments_060491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7271",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7271#issuecomment-60491",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -382,7 +382,7 @@ archive/issue_comments_060492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7271",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7271#issuecomment-60492",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -400,7 +400,7 @@ archive/issue_comments_060493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7271",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7271#issuecomment-60493",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -418,7 +418,7 @@ archive/issue_comments_060494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7271",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7271#issuecomment-60494",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_001467.json:
     "title": "make it possible to upload/download worksheets as plain text",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1467",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_009442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1467#issuecomment-9442",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_009443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1467#issuecomment-9443",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

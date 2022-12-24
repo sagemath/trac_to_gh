@@ -3,7 +3,7 @@
 archive/issues_006397.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  robertwb was\n\nKeywords: power series root newton method\n\nExtracting a square root of a power series is implemented in `power_series_ring_element.pyx`.  Could we have the more general \"improving a root of a polynomial\" Newton's method?\n\nMy use case is calculating Puiseaux expansions around points of algebraic curves.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6397\n\n",
+    "body": "Assignee: @malb\n\nCC:  @robertwb @williamstein\n\nKeywords: power series root newton method\n\nExtracting a square root of a power series is implemented in `power_series_ring_element.pyx`.  Could we have the more general \"improving a root of a polynomial\" Newton's method?\n\nMy use case is calculating Puiseaux expansions around points of algebraic curves.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6397\n\n",
     "created_at": "2009-06-24T18:13:21Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_006397.json:
     "title": "implement general Newton's method root finding for power series rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6397",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  robertwb was
+CC:  @robertwb @williamstein
 
 Keywords: power series root newton method
 
@@ -43,7 +43,7 @@ archive/issue_comments_051396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6397",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6397#issuecomment-51396",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

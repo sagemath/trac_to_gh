@@ -3,7 +3,7 @@
 archive/issues_007027.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  mjo\n\nUsing \n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha2\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used.\n\n\n```\nf2c-20070816.p1/src/libf2c/._z_sqrt.c\nf2c-20070816.p1/src/libf2c/z_sqrt.c\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nmake[2]: Entering directory `/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/spkg/build/f2c-20070816.p1/src/libf2c'\ngcc -c f77vers.c\ngcc -c i77vers.c\n\n```\n\n\n\nf2c is far from the only program which ignores CC.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7027\n\n",
+    "body": "Assignee: tbd\n\nCC:  @orlitzky\n\nUsing \n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha2\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used.\n\n\n```\nf2c-20070816.p1/src/libf2c/._z_sqrt.c\nf2c-20070816.p1/src/libf2c/z_sqrt.c\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nmake[2]: Entering directory `/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/spkg/build/f2c-20070816.p1/src/libf2c'\ngcc -c f77vers.c\ngcc -c i77vers.c\n\n```\n\n\n\nf2c is far from the only program which ignores CC.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7027\n\n",
     "created_at": "2009-09-27T11:40:58Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_007027.json:
 ```
 Assignee: tbd
 
-CC:  mjo
+CC:  @orlitzky
 
 Using 
 
@@ -69,7 +69,7 @@ archive/issue_comments_058186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7027#issuecomment-58186",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_058187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7027#issuecomment-58187",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_058188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7027#issuecomment-58188",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_058189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7027#issuecomment-58189",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_058190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7027#issuecomment-58190",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_058191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7027#issuecomment-58191",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_058192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7027#issuecomment-58192",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_058193.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7027#issuecomment-58193",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_058194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7027#issuecomment-58194",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -343,7 +343,7 @@ archive/issue_comments_058195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7027#issuecomment-58195",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -361,7 +361,7 @@ archive/issue_comments_058196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7027#issuecomment-58196",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -379,7 +379,7 @@ archive/issue_comments_058197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7027#issuecomment-58197",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -406,7 +406,7 @@ archive/issue_comments_058198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7027#issuecomment-58198",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -444,7 +444,7 @@ archive/issue_comments_058200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7027#issuecomment-58200",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -462,7 +462,7 @@ archive/issue_comments_058201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7027#issuecomment-58201",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -485,7 +485,7 @@ archive/issue_comments_058202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7027#issuecomment-58202",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -503,7 +503,7 @@ archive/issue_comments_058203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7027#issuecomment-58203",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -521,7 +521,7 @@ archive/issue_comments_058204.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7027#issuecomment-58204",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -595,16 +595,16 @@ Dave
 archive/issue_comments_058206.json:
 ```json
 {
-    "body": "Attachment [f2c-20070816.p3.patch](tarball://root/attachments/some-uuid/ticket7027/f2c-20070816.p3.patch) by ohanar created at 2012-02-12 22:31:18\n\nfor review purposes",
+    "body": "Attachment [f2c-20070816.p3.patch](tarball://root/attachments/some-uuid/ticket7027/f2c-20070816.p3.patch) by @ohanar created at 2012-02-12 22:31:18\n\nfor review purposes",
     "created_at": "2012-02-12T22:31:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7027#issuecomment-58206",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
-Attachment [f2c-20070816.p3.patch](tarball://root/attachments/some-uuid/ticket7027/f2c-20070816.p3.patch) by ohanar created at 2012-02-12 22:31:18
+Attachment [f2c-20070816.p3.patch](tarball://root/attachments/some-uuid/ticket7027/f2c-20070816.p3.patch) by @ohanar created at 2012-02-12 22:31:18
 
 for review purposes
 
@@ -620,7 +620,7 @@ archive/issue_comments_058207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7027#issuecomment-58207",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -638,7 +638,7 @@ archive/issue_comments_058208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7027#issuecomment-58208",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -656,7 +656,7 @@ archive/issue_comments_058209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7027#issuecomment-58209",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -676,7 +676,7 @@ archive/issue_comments_058210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7027#issuecomment-58210",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -694,7 +694,7 @@ archive/issue_comments_058211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7027#issuecomment-58211",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -714,7 +714,7 @@ archive/issue_comments_058212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7027#issuecomment-58212",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -734,7 +734,7 @@ archive/issue_comments_058213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7027#issuecomment-58213",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -761,7 +761,7 @@ archive/issue_comments_058214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7027#issuecomment-58214",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -779,7 +779,7 @@ archive/issue_comments_058215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7027#issuecomment-58215",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -797,7 +797,7 @@ archive/issue_comments_058216.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7027#issuecomment-58216",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -820,7 +820,7 @@ archive/issue_comments_058217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7027#issuecomment-58217",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -838,7 +838,7 @@ archive/issue_comments_058218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7027#issuecomment-58218",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

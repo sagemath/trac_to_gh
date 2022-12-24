@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1398
 archive/issue_comments_009006.json:
 ```json
 {
-    "body": "Attachment [1398.patch](tarball://root/attachments/some-uuid/ticket1398/1398.patch) by mhansen created at 2007-12-06 03:23:02",
+    "body": "Attachment [1398.patch](tarball://root/attachments/some-uuid/ticket1398/1398.patch) by @mwhansen created at 2007-12-06 03:23:02",
     "created_at": "2007-12-06T03:23:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1398",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1398#issuecomment-9006",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1398.patch](tarball://root/attachments/some-uuid/ticket1398/1398.patch) by mhansen created at 2007-12-06 03:23:02
+Attachment [1398.patch](tarball://root/attachments/some-uuid/ticket1398/1398.patch) by @mwhansen created at 2007-12-06 03:23:02
 
 
 
@@ -58,16 +58,16 @@ Attachment [1398.patch](tarball://root/attachments/some-uuid/ticket1398/1398.pat
 archive/issue_comments_009007.json:
 ```json
 {
-    "body": "Changing assignee from somebody to mhansen.",
+    "body": "Changing assignee from somebody to @mwhansen.",
     "created_at": "2007-12-06T03:23:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1398",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1398#issuecomment-9007",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from somebody to mhansen.
+Changing assignee from somebody to @mwhansen.
 
 
 
@@ -81,7 +81,7 @@ archive/issue_comments_009008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1398",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1398#issuecomment-9008",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_009009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1398",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1398#issuecomment-9009",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

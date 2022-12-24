@@ -3,7 +3,7 @@
 archive/issues_001305.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nOriginal from Chris Godsil's wishlist, with reply by Jason Grout and second reply by Robert Miller.\n\n\n```\n>>> (d) Bipartite graphs: We will need to deal with some incidence structures,\n>>> and these can be encoded as bipartite graphs. We want to get the point\n>>> graphs and line graphs of incidence structures. If we have a procedure to\n>>> convert a graph G to an incidence structure of vertices and edges, then\n>>> the line graph of the incidence structure is the line graph of G.\n>> Do we have a way to represent and work with incidence structures in Sage\n>> natively?\n> Graphs and codes are implemented, but I don't think designs are.\n> Ultimately, there should be an incidence structure class which they\n> inherit from etc etc etc. Definitely a wishlist ticket, and likely a\n> good coding sprint idea for Sage Days 7.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1305\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nOriginal from Chris Godsil's wishlist, with reply by Jason Grout and second reply by Robert Miller.\n\n\n```\n>>> (d) Bipartite graphs: We will need to deal with some incidence structures,\n>>> and these can be encoded as bipartite graphs. We want to get the point\n>>> graphs and line graphs of incidence structures. If we have a procedure to\n>>> convert a graph G to an incidence structure of vertices and edges, then\n>>> the line graph of the incidence structure is the line graph of G.\n>> Do we have a way to represent and work with incidence structures in Sage\n>> natively?\n> Graphs and codes are implemented, but I don't think designs are.\n> Ultimately, there should be an incidence structure class which they\n> inherit from etc etc etc. Definitely a wishlist ticket, and likely a\n> good coding sprint idea for Sage Days 7.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1305\n\n",
     "created_at": "2007-11-28T19:50:39Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001305.json:
     "title": "incidence structures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1305",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -55,7 +55,7 @@ archive/issue_comments_008211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1305#issuecomment-8211",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_008212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1305#issuecomment-8212",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_008213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1305#issuecomment-8213",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

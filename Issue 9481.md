@@ -3,7 +3,7 @@
 archive/issues_009481.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  rishi\n\nKeywords: power series, random element\n\nThe random_element method of univariate power series does not pass arguments to the underlying polynomial ring accurately, and the description of its second argument is inaccurate.\n\nc.f. this [thread](http://groups.google.com/group/sage-devel/browse_thread/thread/2e4af4234e6bb33f) from sage-devel\n\n\n\n```\nsage: SQ = PowerSeriesRing(QQ,'v')\nsage: SR = PowerSeriesRing(RR,'v')\n\nsage: SQ.random_element(5,100)  # docstring promises coefficients are uniformly distributed between -100 and 100\n-7/3 + 5/8*v + 37/60*v^2 + 33/8*v^3 + 77/89*v^4 + O(v^5)\n\nsage: SR.random_element(5)  # broken\nTraceback (most recent call last):\n...\nTypeError: unsupported operand type(s) for -: 'int' and 'NoneType'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9481\n\n",
+    "body": "Assignee: @malb\n\nCC:  @rishikesha\n\nKeywords: power series, random element\n\nThe random_element method of univariate power series does not pass arguments to the underlying polynomial ring accurately, and the description of its second argument is inaccurate.\n\nc.f. this [thread](http://groups.google.com/group/sage-devel/browse_thread/thread/2e4af4234e6bb33f) from sage-devel\n\n\n\n```\nsage: SQ = PowerSeriesRing(QQ,'v')\nsage: SR = PowerSeriesRing(RR,'v')\n\nsage: SQ.random_element(5,100)  # docstring promises coefficients are uniformly distributed between -100 and 100\n-7/3 + 5/8*v + 37/60*v^2 + 33/8*v^3 + 77/89*v^4 + O(v^5)\n\nsage: SR.random_element(5)  # broken\nTraceback (most recent call last):\n...\nTypeError: unsupported operand type(s) for -: 'int' and 'NoneType'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9481\n\n",
     "created_at": "2010-07-12T13:37:14Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_009481.json:
     "title": "random_element fails for power series over real field, has inaccurate docstring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9481",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  rishi
+CC:  @rishikesha
 
 Keywords: power series, random element
 
@@ -59,7 +59,7 @@ archive/issue_comments_091021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9481#issuecomment-91021",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_091022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9481#issuecomment-91022",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_091023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9481#issuecomment-91023",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -108,16 +108,16 @@ emulated behavior of polynomial ring random_element, as suggested on sage-devel;
 archive/issue_comments_091024.json:
 ```json
 {
-    "body": "Attachment [trac_9481_ps_random_element.patch](tarball://root/attachments/some-uuid/ticket9481/trac_9481_ps_random_element.patch) by rishi created at 2010-08-08 02:52:29",
+    "body": "Attachment [trac_9481_ps_random_element.patch](tarball://root/attachments/some-uuid/ticket9481/trac_9481_ps_random_element.patch) by @rishikesha created at 2010-08-08 02:52:29",
     "created_at": "2010-08-08T02:52:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9481#issuecomment-91024",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
-Attachment [trac_9481_ps_random_element.patch](tarball://root/attachments/some-uuid/ticket9481/trac_9481_ps_random_element.patch) by rishi created at 2010-08-08 02:52:29
+Attachment [trac_9481_ps_random_element.patch](tarball://root/attachments/some-uuid/ticket9481/trac_9481_ps_random_element.patch) by @rishikesha created at 2010-08-08 02:52:29
 
 
 
@@ -131,7 +131,7 @@ archive/issue_comments_091025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9481#issuecomment-91025",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_091026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9481#issuecomment-91026",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_091027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9481#issuecomment-91027",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -180,16 +180,16 @@ Looks good.
 archive/issue_comments_091028.json:
 ```json
 {
-    "body": "Attachment [trac_9481_ps_random_element.2.patch](tarball://root/attachments/some-uuid/ticket9481/trac_9481_ps_random_element.2.patch) by jdemeyer created at 2011-01-19 02:00:19\n\nSame patch, fixed commit message",
+    "body": "Attachment [trac_9481_ps_random_element.2.patch](tarball://root/attachments/some-uuid/ticket9481/trac_9481_ps_random_element.2.patch) by @jdemeyer created at 2011-01-19 02:00:19\n\nSame patch, fixed commit message",
     "created_at": "2011-01-19T02:00:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9481#issuecomment-91028",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [trac_9481_ps_random_element.2.patch](tarball://root/attachments/some-uuid/ticket9481/trac_9481_ps_random_element.2.patch) by jdemeyer created at 2011-01-19 02:00:19
+Attachment [trac_9481_ps_random_element.2.patch](tarball://root/attachments/some-uuid/ticket9481/trac_9481_ps_random_element.2.patch) by @jdemeyer created at 2011-01-19 02:00:19
 
 Same patch, fixed commit message
 
@@ -205,7 +205,7 @@ archive/issue_comments_091029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9481#issuecomment-91029",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_091030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9481#issuecomment-91030",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_091031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9481#issuecomment-91031",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_091032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9481#issuecomment-91032",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -272,16 +272,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_091033.json:
 ```json
 {
-    "body": "Attachment [9481_docstring.patch](tarball://root/attachments/some-uuid/ticket9481/9481_docstring.patch) by jdemeyer created at 2011-01-19 13:30:47",
+    "body": "Attachment [9481_docstring.patch](tarball://root/attachments/some-uuid/ticket9481/9481_docstring.patch) by @jdemeyer created at 2011-01-19 13:30:47",
     "created_at": "2011-01-19T13:30:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9481#issuecomment-91033",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9481_docstring.patch](tarball://root/attachments/some-uuid/ticket9481/9481_docstring.patch) by jdemeyer created at 2011-01-19 13:30:47
+Attachment [9481_docstring.patch](tarball://root/attachments/some-uuid/ticket9481/9481_docstring.patch) by @jdemeyer created at 2011-01-19 13:30:47
 
 
 
@@ -295,7 +295,7 @@ archive/issue_comments_091034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9481#issuecomment-91034",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -313,7 +313,7 @@ archive/issue_comments_091035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9481#issuecomment-91035",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -331,7 +331,7 @@ archive/issue_comments_091036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9481#issuecomment-91036",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

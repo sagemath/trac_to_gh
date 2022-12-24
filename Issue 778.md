@@ -14,7 +14,7 @@ archive/issues_000778.json:
     "title": "Finite Field __call__ doesn't accept polynomials over F_p",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/778",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 Assignee: somebody
@@ -41,7 +41,7 @@ archive/issue_comments_004640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/778#issuecomment-4640",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_004641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/778#issuecomment-4641",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_004642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/778#issuecomment-4642",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_004643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/778#issuecomment-4643",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_004644.json:
     "issue": "https://github.com/sagemath/sagetest/issues/778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/778#issuecomment-4644",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -211,16 +211,16 @@ So what roed wants is for Q(f) to evaluate as f(Q.gen()), where f is a polynomia
 archive/issue_comments_004645.json:
 ```json
 {
-    "body": "Attachment [trac778.patch](tarball://root/attachments/some-uuid/ticket778/trac778.patch) by cremona created at 2008-04-04 22:03:49",
+    "body": "Attachment [trac778.patch](tarball://root/attachments/some-uuid/ticket778/trac778.patch) by @JohnCremona created at 2008-04-04 22:03:49",
     "created_at": "2008-04-04T22:03:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/778#issuecomment-4645",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac778.patch](tarball://root/attachments/some-uuid/ticket778/trac778.patch) by cremona created at 2008-04-04 22:03:49
+Attachment [trac778.patch](tarball://root/attachments/some-uuid/ticket778/trac778.patch) by @JohnCremona created at 2008-04-04 22:03:49
 
 
 
@@ -234,7 +234,7 @@ archive/issue_comments_004646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/778#issuecomment-4646",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_004647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/778#issuecomment-4647",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

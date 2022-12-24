@@ -14,7 +14,7 @@ archive/issues_003900.json:
     "title": "make testing an official pickle jar a part of \"make check\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3900",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -39,7 +39,7 @@ archive/issue_comments_027899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3900#issuecomment-27899",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_027900.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3900#issuecomment-27900",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -70,16 +70,16 @@ Changing component from algebra to build.
 archive/issue_comments_027901.json:
 ```json
 {
-    "body": "Attachment [sage-3900.patch](tarball://root/attachments/some-uuid/ticket3900/sage-3900.patch) by was created at 2008-10-23 21:25:50",
+    "body": "Attachment [sage-3900.patch](tarball://root/attachments/some-uuid/ticket3900/sage-3900.patch) by @williamstein created at 2008-10-23 21:25:50",
     "created_at": "2008-10-23T21:25:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3900#issuecomment-27901",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3900.patch](tarball://root/attachments/some-uuid/ticket3900/sage-3900.patch) by was created at 2008-10-23 21:25:50
+Attachment [sage-3900.patch](tarball://root/attachments/some-uuid/ticket3900/sage-3900.patch) by @williamstein created at 2008-10-23 21:25:50
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_027902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3900#issuecomment-27902",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -106,16 +106,16 @@ You must place this tarball in SAGE_ROOT/data and *leave* it compressed.
 archive/issue_comments_027903.json:
 ```json
 {
-    "body": "Attachment [pickle_jar.tar.bz2](tarball://root/attachments/some-uuid/ticket3900/pickle_jar.tar.bz2) by was created at 2008-10-23 21:27:11",
+    "body": "Attachment [pickle_jar.tar.bz2](tarball://root/attachments/some-uuid/ticket3900/pickle_jar.tar.bz2) by @williamstein created at 2008-10-23 21:27:11",
     "created_at": "2008-10-23T21:27:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3900#issuecomment-27903",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [pickle_jar.tar.bz2](tarball://root/attachments/some-uuid/ticket3900/pickle_jar.tar.bz2) by was created at 2008-10-23 21:27:11
+Attachment [pickle_jar.tar.bz2](tarball://root/attachments/some-uuid/ticket3900/pickle_jar.tar.bz2) by @williamstein created at 2008-10-23 21:27:11
 
 
 
@@ -129,7 +129,7 @@ archive/issue_comments_027904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3900#issuecomment-27904",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_027905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3900#issuecomment-27905",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_027906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3900#issuecomment-27906",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 

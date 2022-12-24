@@ -3,7 +3,7 @@
 archive/issues_003837.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nThew new code uses symbolic sqrt, ceil and floor. Hence doctest timing of sha.py go from 22 to 45 seconds and the long version goes from 4 minutes to 10.5. Most of the time is spend in Maxima.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3837\n\n",
+    "body": "Assignee: @JohnCremona\n\nThew new code uses symbolic sqrt, ceil and floor. Hence doctest timing of sha.py go from 22 to 45 seconds and the long version goes from 4 minutes to 10.5. Most of the time is spend in Maxima.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3837\n\n",
     "created_at": "2008-08-13T17:14:08Z",
     "labels": [
         "doctest coverage",
@@ -17,7 +17,7 @@ archive/issues_003837.json:
     "user": "mabshoff"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 Thew new code uses symbolic sqrt, ceil and floor. Hence doctest timing of sha.py go from 22 to 45 seconds and the long version goes from 4 minutes to 10.5. Most of the time is spend in Maxima.
 
@@ -59,7 +59,7 @@ archive/issue_comments_027278.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3837#issuecomment-27278",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -131,16 +131,16 @@ Michael
 archive/issue_comments_027280.json:
 ```json
 {
-    "body": "Attachment [sage-trac3674new-extra7.patch](tarball://root/attachments/some-uuid/ticket3837/sage-trac3674new-extra7.patch) by cremona created at 2008-08-14 08:43:46",
+    "body": "Attachment [sage-trac3674new-extra7.patch](tarball://root/attachments/some-uuid/ticket3837/sage-trac3674new-extra7.patch) by @JohnCremona created at 2008-08-14 08:43:46",
     "created_at": "2008-08-14T08:43:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3837#issuecomment-27280",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [sage-trac3674new-extra7.patch](tarball://root/attachments/some-uuid/ticket3837/sage-trac3674new-extra7.patch) by cremona created at 2008-08-14 08:43:46
+Attachment [sage-trac3674new-extra7.patch](tarball://root/attachments/some-uuid/ticket3837/sage-trac3674new-extra7.patch) by @JohnCremona created at 2008-08-14 08:43:46
 
 
 
@@ -149,16 +149,16 @@ Attachment [sage-trac3674new-extra7.patch](tarball://root/attachments/some-uuid/
 archive/issue_comments_027281.json:
 ```json
 {
-    "body": "Attachment [sage-trac3837.patch](tarball://root/attachments/some-uuid/ticket3837/sage-trac3837.patch) by cremona created at 2008-08-14 08:53:44\n\nThe first patch really belongs to #3674 but I put it here:  I increased the default precision for elliptic_logarithm() from 53 to 100 bits and added a doctest showing how 53 bits is insufficient for a curve in the databse.\n\nThe second one sorts out the ceil/floor/sqrt confusion.  I hope.\n\nIn Michael and Tobias's original code they used sqrt (etc) from calculus, since they went looking for those functions and found them there first, without knowing that these were bad to use as they involved maxima, and low precision.  The math.sqrt (etc) functions were not good enough for our new code as we need to have more precision, and I rewrote it to use the syntax a.sqrt() instead of sqrt(a) as this involves no imports and guarantees that you use the right version of sqrt!  (I omitted a few which I have now converted like this, so I no longer need to import ceil or floor).  When I had done that I intended to delete their imports from calculus, but left one in by mistake, which managed to get used instead of the math ones.\n\nI hope this is sorted now.  I take 8.9s to doctest sha.py (or 180s with -long) .\n\nJohn",
+    "body": "Attachment [sage-trac3837.patch](tarball://root/attachments/some-uuid/ticket3837/sage-trac3837.patch) by @JohnCremona created at 2008-08-14 08:53:44\n\nThe first patch really belongs to #3674 but I put it here:  I increased the default precision for elliptic_logarithm() from 53 to 100 bits and added a doctest showing how 53 bits is insufficient for a curve in the databse.\n\nThe second one sorts out the ceil/floor/sqrt confusion.  I hope.\n\nIn Michael and Tobias's original code they used sqrt (etc) from calculus, since they went looking for those functions and found them there first, without knowing that these were bad to use as they involved maxima, and low precision.  The math.sqrt (etc) functions were not good enough for our new code as we need to have more precision, and I rewrote it to use the syntax a.sqrt() instead of sqrt(a) as this involves no imports and guarantees that you use the right version of sqrt!  (I omitted a few which I have now converted like this, so I no longer need to import ceil or floor).  When I had done that I intended to delete their imports from calculus, but left one in by mistake, which managed to get used instead of the math ones.\n\nI hope this is sorted now.  I take 8.9s to doctest sha.py (or 180s with -long) .\n\nJohn",
     "created_at": "2008-08-14T08:53:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3837#issuecomment-27281",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [sage-trac3837.patch](tarball://root/attachments/some-uuid/ticket3837/sage-trac3837.patch) by cremona created at 2008-08-14 08:53:44
+Attachment [sage-trac3837.patch](tarball://root/attachments/some-uuid/ticket3837/sage-trac3837.patch) by @JohnCremona created at 2008-08-14 08:53:44
 
 The first patch really belongs to #3674 but I put it here:  I increased the default precision for elliptic_logarithm() from 53 to 100 bits and added a doctest showing how 53 bits is insufficient for a curve in the databse.
 
@@ -182,7 +182,7 @@ archive/issue_comments_027282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3837#issuecomment-27282",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -244,16 +244,16 @@ Michael
 archive/issue_comments_027284.json:
 ```json
 {
-    "body": "Attachment [sage-trac3837a.patch](tarball://root/attachments/some-uuid/ticket3837/sage-trac3837a.patch) by cremona created at 2008-08-15 08:19:32",
+    "body": "Attachment [sage-trac3837a.patch](tarball://root/attachments/some-uuid/ticket3837/sage-trac3837a.patch) by @JohnCremona created at 2008-08-15 08:19:32",
     "created_at": "2008-08-15T08:19:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3837#issuecomment-27284",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [sage-trac3837a.patch](tarball://root/attachments/some-uuid/ticket3837/sage-trac3837a.patch) by cremona created at 2008-08-15 08:19:32
+Attachment [sage-trac3837a.patch](tarball://root/attachments/some-uuid/ticket3837/sage-trac3837a.patch) by @JohnCremona created at 2008-08-15 08:19:32
 
 
 
@@ -267,7 +267,7 @@ archive/issue_comments_027285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3837#issuecomment-27285",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

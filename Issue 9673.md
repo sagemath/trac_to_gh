@@ -3,7 +3,7 @@
 archive/issues_009673.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  chapoton\n\nKeywords: doctest\n\nIn the Developer's Guide there is no reference to the \"-tnew\" flag to the sage executable, which will instruct Sage to only doctest changed files. I suggest adding such a reference in \"Walking through the development process\" as well as \"Parallel Testing the Sage Library\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/9673\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @fchapoton\n\nKeywords: doctest\n\nIn the Developer's Guide there is no reference to the \"-tnew\" flag to the sage executable, which will instruct Sage to only doctest changed files. I suggest adding such a reference in \"Walking through the development process\" as well as \"Parallel Testing the Sage Library\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/9673\n\n",
     "created_at": "2010-08-03T07:56:52Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_009673.json:
     "title": "Referring to flag for doc-testing only changed files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9673",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 Assignee: mvngu
 
-CC:  chapoton
+CC:  @fchapoton
 
 Keywords: doctest
 
@@ -41,7 +41,7 @@ archive/issue_comments_093995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9673",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9673#issuecomment-93995",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_093996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9673",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9673#issuecomment-93996",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_093997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9673",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9673#issuecomment-93997",
-    "user": "jmantysalo"
+    "user": "@jm58660"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_093998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9673",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9673#issuecomment-93998",
-    "user": "jmantysalo"
+    "user": "@jm58660"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_093999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9673",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9673#issuecomment-93999",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_094000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9673",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9673#issuecomment-94000",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

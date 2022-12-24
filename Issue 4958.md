@@ -3,7 +3,7 @@
 archive/issues_004958.json:
 ```json
 {
-    "body": "Assignee: malb\n\nThis problem was solved before in #4672 for another decorator.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4958\n\n",
+    "body": "Assignee: @malb\n\nThis problem was solved before in #4672 for another decorator.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4958\n\n",
     "created_at": "2009-01-09T15:59:40Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_004958.json:
     "title": "MPolynomialIdeal.reduced_basis?? returns decorator source",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4958",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 This problem was solved before in #4672 for another decorator.
 
@@ -37,7 +37,7 @@ archive/issue_comments_037689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4958#issuecomment-37689",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_037690.json:
 ```json
 {
-    "body": "Attachment [redsb_context_source.patch](tarball://root/attachments/some-uuid/ticket4958/redsb_context_source.patch) by malb created at 2009-04-27 13:00:34",
+    "body": "Attachment [redsb_context_source.patch](tarball://root/attachments/some-uuid/ticket4958/redsb_context_source.patch) by @malb created at 2009-04-27 13:00:34",
     "created_at": "2009-04-27T13:00:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4958#issuecomment-37690",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [redsb_context_source.patch](tarball://root/attachments/some-uuid/ticket4958/redsb_context_source.patch) by malb created at 2009-04-27 13:00:34
+Attachment [redsb_context_source.patch](tarball://root/attachments/some-uuid/ticket4958/redsb_context_source.patch) by @malb created at 2009-04-27 13:00:34
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_037691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4958#issuecomment-37691",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_037692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4958#issuecomment-37692",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_037693.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4958#issuecomment-37693",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

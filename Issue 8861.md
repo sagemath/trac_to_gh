@@ -3,7 +3,7 @@
 archive/issues_008861.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  was timdumol\n\nThis was first noted by John Cremona.\nOn a computer that is not connected to the internet, the build fails:\n\n```\nProcessing sagenb-0.8-py2.6.egg\nremoving '/home/john/sage-4.4.1.rc0/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg'\n(and everything under it)\ncreating /home/john/sage-4.4.1.rc0/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg\nExtracting sagenb-0.8-py2.6.egg to\n/home/john/sage-4.4.1.rc0/local/lib/python2.6/site-packages\nsagenb 0.8 is already the active version in easy-install.pth\nInstalling jmol script to /home/john/sage-4.4.1.rc0/local/bin\nInstalling sage3d script to /home/john/sage-4.4.1.rc0/local/bin\n\nInstalled /home/john/sage-4.4.1.rc0/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg\nProcessing dependencies for sagenb==0.8\nSearching for mechanize<0.2dev\nReading http://pypi.python.org/simple/mechanize/\nDownload error: [Errno -2] Name or service not known -- Some packages\nmay not be found!\nReading http://pypi.python.org/simple/mechanize/\n...\n```\n\nOn a computer with internet connection, one finds in the install.log:\n\n```\nProcessing dependencies for zope.testbrowser==3.8.1\nSearching for mechanize<0.2dev\nReading http://pypi.python.org/simple/mechanize/\nReading http://wwwsearch.sourceforge.net/mechanize/\nBest match: mechanize 0.1.11\nDownloading http://wwwsearch.sourceforge.net/mechanize/src/mechanize-0.1.11.tar.gz\nProcessing mechanize-0.1.11.tar.gz\nRunning mechanize-0.1.11/setup.py -q bdist_egg --dist-dir /tmp/easy_install-XXPn64/mechanize-0.1.11/egg-dist-tmp-fxjRAP\nno previously-included directories found matching 'docs-in-progress'\nRemoving mechanize 0.2.0 from easy-install.pth file\nAdding mechanize 0.1.11 to easy-install.pth file\n\n...\n```\n\nSo the solution seems to be pretty easy: \n\nMake a new sagenb-0.8.p1.spkg, by throwing out \"mechanize-0.2.0.tar.gz\" under /src/, adding back the old \"mechanize-0.1.11.zip\", and finally adjusting the corresponding line 6 in the spkg-install file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8861\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @williamstein @TimDumol\n\nThis was first noted by John Cremona.\nOn a computer that is not connected to the internet, the build fails:\n\n```\nProcessing sagenb-0.8-py2.6.egg\nremoving '/home/john/sage-4.4.1.rc0/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg'\n(and everything under it)\ncreating /home/john/sage-4.4.1.rc0/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg\nExtracting sagenb-0.8-py2.6.egg to\n/home/john/sage-4.4.1.rc0/local/lib/python2.6/site-packages\nsagenb 0.8 is already the active version in easy-install.pth\nInstalling jmol script to /home/john/sage-4.4.1.rc0/local/bin\nInstalling sage3d script to /home/john/sage-4.4.1.rc0/local/bin\n\nInstalled /home/john/sage-4.4.1.rc0/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg\nProcessing dependencies for sagenb==0.8\nSearching for mechanize<0.2dev\nReading http://pypi.python.org/simple/mechanize/\nDownload error: [Errno -2] Name or service not known -- Some packages\nmay not be found!\nReading http://pypi.python.org/simple/mechanize/\n...\n```\n\nOn a computer with internet connection, one finds in the install.log:\n\n```\nProcessing dependencies for zope.testbrowser==3.8.1\nSearching for mechanize<0.2dev\nReading http://pypi.python.org/simple/mechanize/\nReading http://wwwsearch.sourceforge.net/mechanize/\nBest match: mechanize 0.1.11\nDownloading http://wwwsearch.sourceforge.net/mechanize/src/mechanize-0.1.11.tar.gz\nProcessing mechanize-0.1.11.tar.gz\nRunning mechanize-0.1.11/setup.py -q bdist_egg --dist-dir /tmp/easy_install-XXPn64/mechanize-0.1.11/egg-dist-tmp-fxjRAP\nno previously-included directories found matching 'docs-in-progress'\nRemoving mechanize 0.2.0 from easy-install.pth file\nAdding mechanize 0.1.11 to easy-install.pth file\n\n...\n```\n\nSo the solution seems to be pretty easy: \n\nMake a new sagenb-0.8.p1.spkg, by throwing out \"mechanize-0.2.0.tar.gz\" under /src/, adding back the old \"mechanize-0.1.11.zip\", and finally adjusting the corresponding line 6 in the spkg-install file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8861\n\n",
     "created_at": "2010-05-03T19:02:55Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_008861.json:
 ```
 Assignee: GeorgSWeber
 
-CC:  was timdumol
+CC:  @williamstein @TimDumol
 
 This was first noted by John Cremona.
 On a computer that is not connected to the internet, the build fails:
@@ -149,7 +149,7 @@ archive/issue_comments_081436.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8861",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8861#issuecomment-81436",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_081437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8861",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8861#issuecomment-81437",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_081440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8861",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8861#issuecomment-81440",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_081441.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8861",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8861#issuecomment-81441",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_081442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8861",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8861#issuecomment-81442",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -447,7 +447,7 @@ archive/issue_comments_081447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8861",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8861#issuecomment-81447",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

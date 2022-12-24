@@ -3,7 +3,7 @@
 archive/issues_005903.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nCC:  leif\n\nThe dist/ directories currently shipped in various Sage .spkg's have resulted in confusion for people a few times.\n\nThese directories are no longer used (the Debian packaging for these things are now maintained in my own git repositories).  So, they should be deleted before anyone else gets confused.  The list of packages needing this treatment is as follows:\n\n\n```\ncddlib-094f\neclib-20080310.p7\nextcode-3.4.1\nflint-1.2.4.p1\nflintqs-20070817.p4\ngap-4.4.10.p11\ngenus2reduction-0.3.p5\ngfan-0.3.p4\ngivaro-3.2.13rc2\niml-1.0.1.p11\njmol-11.6.16.p0\nlcalc-20080205.p2\nlibfplll-2.1.6-20071129.p5\nlibm4ri-20090128\nlinbox-1.1.6\nntl-5.4.2.p6\npalp-1.1.p1\npolybori-0.5rc.p6\nrubiks-20070912.p8\nscipy_sandbox-20071020.p3\nsingular-3-0-4-4-20080711.p4\nsymmetrica-2.0.p2\nsympow-1.018.1.p6\ntachyon-0.98beta.p8\nzn_poly-0.9.p0\n```\n\n\nSince this is a huge list, we probably want to handle this issue by just deleting the dist/ directories the next time each of these .spkg files is updated.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5903\n\n",
+    "body": "Assignee: @timabbott\n\nCC:  @nexttime\n\nThe dist/ directories currently shipped in various Sage .spkg's have resulted in confusion for people a few times.\n\nThese directories are no longer used (the Debian packaging for these things are now maintained in my own git repositories).  So, they should be deleted before anyone else gets confused.  The list of packages needing this treatment is as follows:\n\n\n```\ncddlib-094f\neclib-20080310.p7\nextcode-3.4.1\nflint-1.2.4.p1\nflintqs-20070817.p4\ngap-4.4.10.p11\ngenus2reduction-0.3.p5\ngfan-0.3.p4\ngivaro-3.2.13rc2\niml-1.0.1.p11\njmol-11.6.16.p0\nlcalc-20080205.p2\nlibfplll-2.1.6-20071129.p5\nlibm4ri-20090128\nlinbox-1.1.6\nntl-5.4.2.p6\npalp-1.1.p1\npolybori-0.5rc.p6\nrubiks-20070912.p8\nscipy_sandbox-20071020.p3\nsingular-3-0-4-4-20080711.p4\nsymmetrica-2.0.p2\nsympow-1.018.1.p6\ntachyon-0.98beta.p8\nzn_poly-0.9.p0\n```\n\n\nSince this is a huge list, we probably want to handle this issue by just deleting the dist/ directories the next time each of these .spkg files is updated.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5903\n\n",
     "created_at": "2009-04-26T06:03:37Z",
     "labels": [
         "debian-package",
@@ -14,12 +14,12 @@ archive/issues_005903.json:
     "title": "Remove dist directories from Sage distribution",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5903",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
-CC:  leif
+CC:  @nexttime
 
 The dist/ directories currently shipped in various Sage .spkg's have resulted in confusion for people a few times.
 
@@ -73,7 +73,7 @@ archive/issue_comments_046657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5903#issuecomment-46657",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_046660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5903#issuecomment-46660",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_046661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5903#issuecomment-46661",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_046663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5903#issuecomment-46663",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_046665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5903#issuecomment-46665",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_046666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5903#issuecomment-46666",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_046667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5903#issuecomment-46667",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_046668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5903#issuecomment-46668",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -340,7 +340,7 @@ archive/issue_comments_046670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5903#issuecomment-46670",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -358,7 +358,7 @@ archive/issue_comments_046671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5903#issuecomment-46671",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -376,7 +376,7 @@ archive/issue_comments_046672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5903#issuecomment-46672",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -394,7 +394,7 @@ archive/issue_comments_046673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5903#issuecomment-46673",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

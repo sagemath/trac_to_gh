@@ -3,7 +3,7 @@
 archive/issues_005584.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  burcin rpw\n\nKeywords: crypto, aes\n\n**Before**:\n\n```\nsage: sr = mq.SR(4,4,4,8,gf2=True,polybori=True,allow_zero_inversions=True)\nsage: %time F,s = sr.polynomial_system()\nCPU times: user 23.46 s, sys: 0.07 s, total: 23.52 s\nWall time: 23.61 s\n```\n\n\n**After**:\n\n```\nsage: sr = mq.SR(4,4,4,8,gf2=True,polybori=True,allow_zero_inversions=True)\nsage: %time F,s = sr.polynomial_system()\nCPU times: user 3.58 s, sys: 0.04 s, total: 3.62 s\nWall time: 3.63 s\nsage: %time F,s = sr.polynomial_system()\nCPU times: user 2.05 s, sys: 0.00 s, total: 2.05 s\nWall time: 2.05 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5584\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin rpw\n\nKeywords: crypto, aes\n\n**Before**:\n\n```\nsage: sr = mq.SR(4,4,4,8,gf2=True,polybori=True,allow_zero_inversions=True)\nsage: %time F,s = sr.polynomial_system()\nCPU times: user 23.46 s, sys: 0.07 s, total: 23.52 s\nWall time: 23.61 s\n```\n\n\n**After**:\n\n```\nsage: sr = mq.SR(4,4,4,8,gf2=True,polybori=True,allow_zero_inversions=True)\nsage: %time F,s = sr.polynomial_system()\nCPU times: user 3.58 s, sys: 0.04 s, total: 3.62 s\nWall time: 3.63 s\nsage: %time F,s = sr.polynomial_system()\nCPU times: user 2.05 s, sys: 0.00 s, total: 2.05 s\nWall time: 2.05 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5584\n\n",
     "created_at": "2009-03-22T17:53:26Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_005584.json:
     "title": "[with patch, needs review]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5584",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  burcin rpw
+CC:  @burcin rpw
 
 Keywords: crypto, aes
 
@@ -62,7 +62,7 @@ archive/issue_comments_043530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5584",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5584#issuecomment-43530",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

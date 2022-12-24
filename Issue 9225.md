@@ -3,7 +3,7 @@
 archive/issues_009225.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  wjp leif rbeezer\n\nWhen we doctest several files in parallel or in sequence, it might be helpful to print stats relating to the test suite's progress, e.g.,\n\n```sh\n$ sage -t monoids/\nsage -t  \"monoids/monoid.py\"\n 1/10    1.9 s / 1.9 s\nsage -t  \"monoids/free_monoid.py\"\n 2/10    2.0 s / 3.9 s\n[...]\n```\n\nWhat other columns would be useful?  Coverage?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9225\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @wjp @nexttime @rbeezer\n\nWhen we doctest several files in parallel or in sequence, it might be helpful to print stats relating to the test suite's progress, e.g.,\n\n```sh\n$ sage -t monoids/\nsage -t  \"monoids/monoid.py\"\n 1/10    1.9 s / 1.9 s\nsage -t  \"monoids/free_monoid.py\"\n 2/10    2.0 s / 3.9 s\n[...]\n```\n\nWhat other columns would be useful?  Coverage?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9225\n\n",
     "created_at": "2010-06-12T10:18:49Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_009225.json:
     "title": "Indicate progress and elapsed time when running multiple doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9225",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: mvngu
 
-CC:  wjp leif rbeezer
+CC:  @wjp @nexttime @rbeezer
 
 When we doctest several files in parallel or in sequence, it might be helpful to print stats relating to the test suite's progress, e.g.,
 
@@ -50,7 +50,7 @@ archive/issue_comments_086551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9225#issuecomment-86551",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_086552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9225#issuecomment-86552",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_086553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9225#issuecomment-86553",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_086554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9225#issuecomment-86554",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_086555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9225#issuecomment-86555",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_086558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9225#issuecomment-86558",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_086560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9225#issuecomment-86560",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_086561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9225#issuecomment-86561",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_086562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9225#issuecomment-86562",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_086563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9225#issuecomment-86563",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -324,7 +324,7 @@ archive/issue_comments_086564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9225#issuecomment-86564",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -342,7 +342,7 @@ archive/issue_comments_086565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9225#issuecomment-86565",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -360,7 +360,7 @@ archive/issue_comments_086566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9225#issuecomment-86566",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -378,7 +378,7 @@ archive/issue_comments_086567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9225#issuecomment-86567",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

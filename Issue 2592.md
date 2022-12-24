@@ -116,7 +116,7 @@ archive/issue_comments_017740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2592#issuecomment-17740",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -129,16 +129,16 @@ Calls to NTL's div (and div-like) functions were only wrapped in `_sig_on`/`_sig
 archive/issue_comments_017741.json:
 ```json
 {
-    "body": "Attachment [ntl_div_sig.patch](tarball://root/attachments/some-uuid/ticket2592/ntl_div_sig.patch) by wjp created at 2008-04-15 14:14:57",
+    "body": "Attachment [ntl_div_sig.patch](tarball://root/attachments/some-uuid/ticket2592/ntl_div_sig.patch) by @wjp created at 2008-04-15 14:14:57",
     "created_at": "2008-04-15T14:14:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2592#issuecomment-17741",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [ntl_div_sig.patch](tarball://root/attachments/some-uuid/ticket2592/ntl_div_sig.patch) by wjp created at 2008-04-15 14:14:57
+Attachment [ntl_div_sig.patch](tarball://root/attachments/some-uuid/ticket2592/ntl_div_sig.patch) by @wjp created at 2008-04-15 14:14:57
 
 
 
@@ -147,16 +147,16 @@ Attachment [ntl_div_sig.patch](tarball://root/attachments/some-uuid/ticket2592/n
 archive/issue_comments_017742.json:
 ```json
 {
-    "body": "Attachment [ntl_div_sig_after2903.patch](tarball://root/attachments/some-uuid/ticket2592/ntl_div_sig_after2903.patch) by wjp created at 2008-04-15 15:51:00\n\nThe patch in `ntl_div_sig_after2903.patch` adapts the doctest to the patch for #2903. (Only apply it if #2903 is also applied.)",
+    "body": "Attachment [ntl_div_sig_after2903.patch](tarball://root/attachments/some-uuid/ticket2592/ntl_div_sig_after2903.patch) by @wjp created at 2008-04-15 15:51:00\n\nThe patch in `ntl_div_sig_after2903.patch` adapts the doctest to the patch for #2903. (Only apply it if #2903 is also applied.)",
     "created_at": "2008-04-15T15:51:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2592#issuecomment-17742",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [ntl_div_sig_after2903.patch](tarball://root/attachments/some-uuid/ticket2592/ntl_div_sig_after2903.patch) by wjp created at 2008-04-15 15:51:00
+Attachment [ntl_div_sig_after2903.patch](tarball://root/attachments/some-uuid/ticket2592/ntl_div_sig_after2903.patch) by @wjp created at 2008-04-15 15:51:00
 
 The patch in `ntl_div_sig_after2903.patch` adapts the doctest to the patch for #2903. (Only apply it if #2903 is also applied.)
 

@@ -3,7 +3,7 @@
 archive/issues_001615.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n\nHi Kate,\n\n> When I build sage-2.9.1.1 from source on the architectures\n> of interest to me, I get an error when building\n>\n>      mpfi-1.3.4-cvs20071125.p2\n>\n> gcc -fPIC -o test_mpfi test_mpfi.o  ../src/.libs/libmpfi.a\n> /home/kate/sage/sage-2.9.1.1-x86_64-Linux/local/lib/libmpfr.a -lgmp\n> ../src/.libs/libmpfi.a(mpfi_io.o): In function `mpfi_inp_str':\n> mpfi_io.c:(.text+0x999): undefined reference to `__gmp_get_memory_functions'\n>\n> If I look in sage-2.9.1.1/local/lib, I notice that mpfr is built statically,\n> but gmp is not.  (Is there a good reason for this?)\n\nDefault policy is to build all libraries dynamically so that we do not\nneed to recompile loads of dependencies. What you encounter is a bug\nin mpfi.\n\n>  If I change\n> the line in gmp-4.2.1.p12/spkg-install from\n>\n>    SAGE_CONF_OPTS=\"--enable-shared --disable-static\"\n>\n> to\n>     SAGE_CONF_OPTS=\"--enable-shared\"\n>\n> then gmp builds a static version.\n>\n> If I then change mpfi-1.3.4-cvs20071125.p2/spkg-install\n> from\n>\n> ./configure --prefix=\"$SAGE_LOCAL\" --with-mpfr-dir=\"$SAGE_LOCAL\"\n> --with-gmp-incpath=\"$SAGE_LOCAL\"/include CFLAGS=\"-fPIC\"\n>\n> to\n>\n> ./configure --prefix=\"$SAGE_LOCAL\" --with-gmp-dir=\"$SAGE_LOCAL\"\n> --with-mpfr-dir=\"$SAGE_LOCAL\" CFLAGS=\"-fPIC\"\n>\n> then mpfi builds fine.\n\nWe should add the --with-gmp-dir to the mpfi configure per default and\nalso fix the the problem so that a dynamic gmp is accepted.\n\n> I suspect you are NOT seeing this problem because your compile\n> machines have a system gmp installed that is being picked up.\n>\n> Naturally, there may be a better way to fix the problem than\n> I have given.\n>\n\nCheers,\n\nMichael\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1615\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n\nHi Kate,\n\n> When I build sage-2.9.1.1 from source on the architectures\n> of interest to me, I get an error when building\n>\n>      mpfi-1.3.4-cvs20071125.p2\n>\n> gcc -fPIC -o test_mpfi test_mpfi.o  ../src/.libs/libmpfi.a\n> /home/kate/sage/sage-2.9.1.1-x86_64-Linux/local/lib/libmpfr.a -lgmp\n> ../src/.libs/libmpfi.a(mpfi_io.o): In function `mpfi_inp_str':\n> mpfi_io.c:(.text+0x999): undefined reference to `__gmp_get_memory_functions'\n>\n> If I look in sage-2.9.1.1/local/lib, I notice that mpfr is built statically,\n> but gmp is not.  (Is there a good reason for this?)\n\nDefault policy is to build all libraries dynamically so that we do not\nneed to recompile loads of dependencies. What you encounter is a bug\nin mpfi.\n\n>  If I change\n> the line in gmp-4.2.1.p12/spkg-install from\n>\n>    SAGE_CONF_OPTS=\"--enable-shared --disable-static\"\n>\n> to\n>     SAGE_CONF_OPTS=\"--enable-shared\"\n>\n> then gmp builds a static version.\n>\n> If I then change mpfi-1.3.4-cvs20071125.p2/spkg-install\n> from\n>\n> ./configure --prefix=\"$SAGE_LOCAL\" --with-mpfr-dir=\"$SAGE_LOCAL\"\n> --with-gmp-incpath=\"$SAGE_LOCAL\"/include CFLAGS=\"-fPIC\"\n>\n> to\n>\n> ./configure --prefix=\"$SAGE_LOCAL\" --with-gmp-dir=\"$SAGE_LOCAL\"\n> --with-mpfr-dir=\"$SAGE_LOCAL\" CFLAGS=\"-fPIC\"\n>\n> then mpfi builds fine.\n\nWe should add the --with-gmp-dir to the mpfi configure per default and\nalso fix the the problem so that a dynamic gmp is accepted.\n\n> I suspect you are NOT seeing this problem because your compile\n> machines have a system gmp installed that is being picked up.\n>\n> Naturally, there may be a better way to fix the problem than\n> I have given.\n>\n\nCheers,\n\nMichael\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1615\n\n",
     "created_at": "2007-12-28T20:44:11Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_001615.json:
     "title": "mpfi -- build is seriously broken on at least one system",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1615",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```

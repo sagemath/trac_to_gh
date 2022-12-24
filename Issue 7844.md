@@ -3,7 +3,7 @@
 archive/issues_007844.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  was ddrake\n\nOn publishing a new worksheet:\n\n```python\n          File \"/home/sage/notebook/sagenb-0.4.9/sagenb/notebook/twist.py\", line 1316, in render\n            addr += notebook.address\n        exceptions.AttributeError: 'Notebook' object has no attribute 'address'\n```\n\n\nI think this is a follow-up to #7639.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7844\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @williamstein @dandrake\n\nOn publishing a new worksheet:\n\n```python\n          File \"/home/sage/notebook/sagenb-0.4.9/sagenb/notebook/twist.py\", line 1316, in render\n            addr += notebook.address\n        exceptions.AttributeError: 'Notebook' object has no attribute 'address'\n```\n\n\nI think this is a follow-up to #7639.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7844\n\n",
     "created_at": "2010-01-05T02:24:47Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_007844.json:
     "title": "notebook.address AttributeError",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7844",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  was ddrake
+CC:  @williamstein @dandrake
 
 On publishing a new worksheet:
 
@@ -48,7 +48,7 @@ archive/issue_comments_067945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7844#issuecomment-67945",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -61,16 +61,16 @@ archive/issue_comments_067945.json:
 archive/issue_comments_067946.json:
 ```json
 {
-    "body": "Attachment [trac_7844-notebook_address.patch](tarball://root/attachments/some-uuid/ticket7844/trac_7844-notebook_address.patch) by mpatel created at 2010-01-05 02:29:11\n\nHave I found them all?",
+    "body": "Attachment [trac_7844-notebook_address.patch](tarball://root/attachments/some-uuid/ticket7844/trac_7844-notebook_address.patch) by @qed777 created at 2010-01-05 02:29:11\n\nHave I found them all?",
     "created_at": "2010-01-05T02:29:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7844#issuecomment-67946",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7844-notebook_address.patch](tarball://root/attachments/some-uuid/ticket7844/trac_7844-notebook_address.patch) by mpatel created at 2010-01-05 02:29:11
+Attachment [trac_7844-notebook_address.patch](tarball://root/attachments/some-uuid/ticket7844/trac_7844-notebook_address.patch) by @qed777 created at 2010-01-05 02:29:11
 
 Have I found them all?
 
@@ -86,7 +86,7 @@ archive/issue_comments_067947.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7844#issuecomment-67947",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_067948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7844#issuecomment-67948",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_067949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7844#issuecomment-67949",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_067950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7844#issuecomment-67950",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_067951.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7844#issuecomment-67951",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003600.json:
 ```json
 {
-    "body": "Assignee: yi\n\nKeywords: dsage\n\nThis patch gets rid of the old dsage worker behavior. Specifically, it does the following things:\n\n1. Workers no longer poll the server for new jobs.\n2. Workers no longer poll sage for when the job finishes.\n3. Doctests run much more reliably now, and in much less time (no need for # long time now)\n4. The worker, as well as the server use twistd now, this make things like running them under a profile\n    trivial.\n\nIt's a rather big patch so right now I'd like people to apply it and run the doc/unittests. To run the unittests, do\n\n```\nsage: !trial sage.dsage\n```\n\n\nRun doctests as normal. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3600\n\n",
+    "body": "Assignee: @yqiang\n\nKeywords: dsage\n\nThis patch gets rid of the old dsage worker behavior. Specifically, it does the following things:\n\n1. Workers no longer poll the server for new jobs.\n2. Workers no longer poll sage for when the job finishes.\n3. Doctests run much more reliably now, and in much less time (no need for # long time now)\n4. The worker, as well as the server use twistd now, this make things like running them under a profile\n    trivial.\n\nIt's a rather big patch so right now I'd like people to apply it and run the doc/unittests. To run the unittests, do\n\n```\nsage: !trial sage.dsage\n```\n\n\nRun doctests as normal. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3600\n\n",
     "created_at": "2008-07-08T01:29:03Z",
     "labels": [
         "dsage",
@@ -14,10 +14,10 @@ archive/issues_003600.json:
     "title": "[with patch, needs review] implement process pool for dsage workers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3600",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
-Assignee: yi
+Assignee: @yqiang
 
 Keywords: dsage
 
@@ -51,16 +51,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3600
 archive/issue_comments_025435.json:
 ```json
 {
-    "body": "Attachment [dsage_process_pool.patch](tarball://root/attachments/some-uuid/ticket3600/dsage_process_pool.patch) by yi created at 2008-07-08 01:29:25",
+    "body": "Attachment [dsage_process_pool.patch](tarball://root/attachments/some-uuid/ticket3600/dsage_process_pool.patch) by @yqiang created at 2008-07-08 01:29:25",
     "created_at": "2008-07-08T01:29:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3600#issuecomment-25435",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Attachment [dsage_process_pool.patch](tarball://root/attachments/some-uuid/ticket3600/dsage_process_pool.patch) by yi created at 2008-07-08 01:29:25
+Attachment [dsage_process_pool.patch](tarball://root/attachments/some-uuid/ticket3600/dsage_process_pool.patch) by @yqiang created at 2008-07-08 01:29:25
 
 
 
@@ -74,7 +74,7 @@ archive/issue_comments_025436.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3600#issuecomment-25436",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -87,16 +87,16 @@ all the patches split up and whitespace only patches are in the whitespace sub d
 archive/issue_comments_025437.json:
 ```json
 {
-    "body": "Attachment [dsage_process_pool_patches.tar.2.gz](tarball://root/attachments/some-uuid/ticket3600/dsage_process_pool_patches.tar.2.gz) by yi created at 2008-07-08 06:23:34\n\nall the patches split up and whitespace only patches are in the whitespace sub directory",
+    "body": "Attachment [dsage_process_pool_patches.tar.2.gz](tarball://root/attachments/some-uuid/ticket3600/dsage_process_pool_patches.tar.2.gz) by @yqiang created at 2008-07-08 06:23:34\n\nall the patches split up and whitespace only patches are in the whitespace sub directory",
     "created_at": "2008-07-08T06:23:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3600#issuecomment-25437",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Attachment [dsage_process_pool_patches.tar.2.gz](tarball://root/attachments/some-uuid/ticket3600/dsage_process_pool_patches.tar.2.gz) by yi created at 2008-07-08 06:23:34
+Attachment [dsage_process_pool_patches.tar.2.gz](tarball://root/attachments/some-uuid/ticket3600/dsage_process_pool_patches.tar.2.gz) by @yqiang created at 2008-07-08 06:23:34
 
 all the patches split up and whitespace only patches are in the whitespace sub directory
 
@@ -112,7 +112,7 @@ archive/issue_comments_025438.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3600#issuecomment-25438",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_025439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3600#issuecomment-25439",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_025440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3600#issuecomment-25440",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_025441.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3600#issuecomment-25441",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -372,7 +372,7 @@ archive/issue_comments_025442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3600#issuecomment-25442",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -391,7 +391,7 @@ archive/issue_comments_025443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3600#issuecomment-25443",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -410,7 +410,7 @@ archive/issue_comments_025444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3600#issuecomment-25444",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -423,16 +423,16 @@ New version which fixes the reactor left in an unclean state errors.
 archive/issue_comments_025445.json:
 ```json
 {
-    "body": "Attachment [ppool_unit_tests.patch](tarball://root/attachments/some-uuid/ticket3600/ppool_unit_tests.patch) by yi created at 2008-07-13 18:40:42\n\nbundle to be applied against 3.0.4",
+    "body": "Attachment [ppool_unit_tests.patch](tarball://root/attachments/some-uuid/ticket3600/ppool_unit_tests.patch) by @yqiang created at 2008-07-13 18:40:42\n\nbundle to be applied against 3.0.4",
     "created_at": "2008-07-13T18:40:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3600#issuecomment-25445",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Attachment [ppool_unit_tests.patch](tarball://root/attachments/some-uuid/ticket3600/ppool_unit_tests.patch) by yi created at 2008-07-13 18:40:42
+Attachment [ppool_unit_tests.patch](tarball://root/attachments/some-uuid/ticket3600/ppool_unit_tests.patch) by @yqiang created at 2008-07-13 18:40:42
 
 bundle to be applied against 3.0.4
 
@@ -443,16 +443,16 @@ bundle to be applied against 3.0.4
 archive/issue_comments_025446.json:
 ```json
 {
-    "body": "Attachment [dsage_ppool.2.hg](tarball://root/attachments/some-uuid/ticket3600/dsage_ppool.2.hg) by yi created at 2008-07-13 18:40:45\n\nbundle to be applied against 3.0.4",
+    "body": "Attachment [dsage_ppool.2.hg](tarball://root/attachments/some-uuid/ticket3600/dsage_ppool.2.hg) by @yqiang created at 2008-07-13 18:40:45\n\nbundle to be applied against 3.0.4",
     "created_at": "2008-07-13T18:40:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3600#issuecomment-25446",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Attachment [dsage_ppool.2.hg](tarball://root/attachments/some-uuid/ticket3600/dsage_ppool.2.hg) by yi created at 2008-07-13 18:40:45
+Attachment [dsage_ppool.2.hg](tarball://root/attachments/some-uuid/ticket3600/dsage_ppool.2.hg) by @yqiang created at 2008-07-13 18:40:45
 
 bundle to be applied against 3.0.4
 
@@ -468,7 +468,7 @@ archive/issue_comments_025447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3600#issuecomment-25447",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -510,7 +510,7 @@ archive/issue_comments_025449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3600#issuecomment-25449",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -531,7 +531,7 @@ archive/issue_comments_025450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3600#issuecomment-25450",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -549,7 +549,7 @@ archive/issue_comments_025451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3600#issuecomment-25451",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -567,7 +567,7 @@ archive/issue_comments_025452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3600#issuecomment-25452",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

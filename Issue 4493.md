@@ -3,7 +3,7 @@
 archive/issues_004493.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nIt would be handy in differential equations to be able to do differentiation and integration of matrices and vectors, with the exact same answer as obtained by using the apply_map method.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4493\n\n",
+    "body": "Assignee: @burcin\n\nIt would be handy in differential equations to be able to do differentiation and integration of matrices and vectors, with the exact same answer as obtained by using the apply_map method.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4493\n\n",
     "created_at": "2008-11-11T18:22:50Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_004493.json:
     "title": "derivative and integral of a matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4493",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 It would be handy in differential equations to be able to do differentiation and integration of matrices and vectors, with the exact same answer as obtained by using the apply_map method.
 
@@ -37,7 +37,7 @@ archive/issue_comments_033222.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4493",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4493#issuecomment-33222",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to assigned.
 archive/issue_comments_033223.json:
 ```json
 {
-    "body": "Changing assignee from burcin to jason.",
+    "body": "Changing assignee from @burcin to @jasongrout.",
     "created_at": "2008-12-05T06:45:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4493",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4493#issuecomment-33223",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from burcin to jason.
+Changing assignee from @burcin to @jasongrout.
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_033224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4493",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4493#issuecomment-33224",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -88,16 +88,16 @@ I guess the integral of a matrix doesn't come up that often, so I'm changing my 
 archive/issue_comments_033225.json:
 ```json
 {
-    "body": "Attachment [vector_derivative.patch](tarball://root/attachments/some-uuid/ticket4493/vector_derivative.patch) by jason created at 2008-12-05 08:15:34",
+    "body": "Attachment [vector_derivative.patch](tarball://root/attachments/some-uuid/ticket4493/vector_derivative.patch) by @jasongrout created at 2008-12-05 08:15:34",
     "created_at": "2008-12-05T08:15:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4493",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4493#issuecomment-33225",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [vector_derivative.patch](tarball://root/attachments/some-uuid/ticket4493/vector_derivative.patch) by jason created at 2008-12-05 08:15:34
+Attachment [vector_derivative.patch](tarball://root/attachments/some-uuid/ticket4493/vector_derivative.patch) by @jasongrout created at 2008-12-05 08:15:34
 
 
 
@@ -106,16 +106,16 @@ Attachment [vector_derivative.patch](tarball://root/attachments/some-uuid/ticket
 archive/issue_comments_033226.json:
 ```json
 {
-    "body": "Attachment [matrix-derivative.patch](tarball://root/attachments/some-uuid/ticket4493/matrix-derivative.patch) by jason created at 2008-12-05 08:31:54",
+    "body": "Attachment [matrix-derivative.patch](tarball://root/attachments/some-uuid/ticket4493/matrix-derivative.patch) by @jasongrout created at 2008-12-05 08:31:54",
     "created_at": "2008-12-05T08:31:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4493",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4493#issuecomment-33226",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [matrix-derivative.patch](tarball://root/attachments/some-uuid/ticket4493/matrix-derivative.patch) by jason created at 2008-12-05 08:31:54
+Attachment [matrix-derivative.patch](tarball://root/attachments/some-uuid/ticket4493/matrix-derivative.patch) by @jasongrout created at 2008-12-05 08:31:54
 
 
 

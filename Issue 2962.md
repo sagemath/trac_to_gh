@@ -3,7 +3,7 @@
 archive/issues_002962.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2962\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2962\n\n",
     "created_at": "2008-04-20T01:34:20Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_002962.json:
     "title": "modify .name() method for ExpectElements to allow renaming",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2962",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2962
 archive/issue_comments_020427.json:
 ```json
 {
-    "body": "Attachment [2962.patch](tarball://root/attachments/some-uuid/ticket2962/2962.patch) by mhansen created at 2008-04-20 01:36:00",
+    "body": "Attachment [2962.patch](tarball://root/attachments/some-uuid/ticket2962/2962.patch) by @mwhansen created at 2008-04-20 01:36:00",
     "created_at": "2008-04-20T01:36:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2962#issuecomment-20427",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2962.patch](tarball://root/attachments/some-uuid/ticket2962/2962.patch) by mhansen created at 2008-04-20 01:36:00
+Attachment [2962.patch](tarball://root/attachments/some-uuid/ticket2962/2962.patch) by @mwhansen created at 2008-04-20 01:36:00
 
 
 
@@ -50,16 +50,16 @@ Attachment [2962.patch](tarball://root/attachments/some-uuid/ticket2962/2962.pat
 archive/issue_comments_020428.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-04-20T01:36:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2962#issuecomment-20428",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_020429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2962#issuecomment-20429",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_004680.json:
     "title": "[with diff, needs new spkg] matplotlib configuration finds system-wide files on OSX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4680",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 Assignee: mabshoff
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4680
 archive/issue_comments_035256.json:
 ```json
 {
-    "body": "Attachment [setupext.py.diff](tarball://root/attachments/some-uuid/ticket4680/setupext.py.diff) by was created at 2008-12-04 23:00:08\n\nlooks good to me...",
+    "body": "Attachment [setupext.py.diff](tarball://root/attachments/some-uuid/ticket4680/setupext.py.diff) by @williamstein created at 2008-12-04 23:00:08\n\nlooks good to me...",
     "created_at": "2008-12-04T23:00:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4680",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4680#issuecomment-35256",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [setupext.py.diff](tarball://root/attachments/some-uuid/ticket4680/setupext.py.diff) by was created at 2008-12-04 23:00:08
+Attachment [setupext.py.diff](tarball://root/attachments/some-uuid/ticket4680/setupext.py.diff) by @williamstein created at 2008-12-04 23:00:08
 
 looks good to me...
 

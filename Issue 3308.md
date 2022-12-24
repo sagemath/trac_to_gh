@@ -3,7 +3,7 @@
 archive/issues_003308.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nOne of the two patches to sbuild that we're using was accepted in Debian upstream sbuild, so we no longer need a big piece of SbuildHack.pm.  The other has not yet been accepted, so we don't get to get rid of SbuildHack.pm entirely yet.\n\nI've attached a patch to sage-sbuildhack and SbuildHack.pm to work with current sbuild.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3308\n\n",
+    "body": "Assignee: @timabbott\n\nOne of the two patches to sbuild that we're using was accepted in Debian upstream sbuild, so we no longer need a big piece of SbuildHack.pm.  The other has not yet been accepted, so we don't get to get rid of SbuildHack.pm entirely yet.\n\nI've attached a patch to sage-sbuildhack and SbuildHack.pm to work with current sbuild.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3308\n\n",
     "created_at": "2008-05-26T05:16:12Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_003308.json:
     "title": "[with patch; needs review] Update sage-sbuildhack to work with new sbuild in Debian",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3308",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 One of the two patches to sbuild that we're using was accepted in Debian upstream sbuild, so we no longer need a big piece of SbuildHack.pm.  The other has not yet been accepted, so we don't get to get rid of SbuildHack.pm entirely yet.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3308
 archive/issue_comments_022881.json:
 ```json
 {
-    "body": "Attachment [sbuildhack-apt-update.patch](tarball://root/attachments/some-uuid/ticket3308/sbuildhack-apt-update.patch) by tabbott created at 2008-05-26 05:16:21",
+    "body": "Attachment [sbuildhack-apt-update.patch](tarball://root/attachments/some-uuid/ticket3308/sbuildhack-apt-update.patch) by @timabbott created at 2008-05-26 05:16:21",
     "created_at": "2008-05-26T05:16:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3308",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3308#issuecomment-22881",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [sbuildhack-apt-update.patch](tarball://root/attachments/some-uuid/ticket3308/sbuildhack-apt-update.patch) by tabbott created at 2008-05-26 05:16:21
+Attachment [sbuildhack-apt-update.patch](tarball://root/attachments/some-uuid/ticket3308/sbuildhack-apt-update.patch) by @timabbott created at 2008-05-26 05:16:21
 
 
 

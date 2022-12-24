@@ -3,7 +3,7 @@
 archive/issues_003639.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis patch needs to be applied to reenable dsage doctesting. It depends on #3600 getting merged in first. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3639\n\n",
+    "body": "Assignee: @williamstein\n\nThis patch needs to be applied to reenable dsage doctesting. It depends on #3600 getting merged in first. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3639\n\n",
     "created_at": "2008-07-11T03:10:12Z",
     "labels": [
         "dsage",
@@ -14,10 +14,10 @@ archive/issues_003639.json:
     "title": "[witch patch, needs review] reenable dsage doctesting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3639",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This patch needs to be applied to reenable dsage doctesting. It depends on #3600 getting merged in first. 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3639
 archive/issue_comments_025738.json:
 ```json
 {
-    "body": "Attachment [doctest_dsage_interface.patch](tarball://root/attachments/some-uuid/ticket3639/doctest_dsage_interface.patch) by was created at 2008-11-29 03:11:50",
+    "body": "Attachment [doctest_dsage_interface.patch](tarball://root/attachments/some-uuid/ticket3639/doctest_dsage_interface.patch) by @williamstein created at 2008-11-29 03:11:50",
     "created_at": "2008-11-29T03:11:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3639#issuecomment-25738",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [doctest_dsage_interface.patch](tarball://root/attachments/some-uuid/ticket3639/doctest_dsage_interface.patch) by was created at 2008-11-29 03:11:50
+Attachment [doctest_dsage_interface.patch](tarball://root/attachments/some-uuid/ticket3639/doctest_dsage_interface.patch) by @williamstein created at 2008-11-29 03:11:50
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_009328.json:
 ```json
 {
-    "body": "Assignee: malb\n\nOnce #6922 is merged we'll have Matrix term orderings but only for the very slow `PolyDict` based polynomials. Singular does support matrix term orderings thus it should be relatively easy to add them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9328\n\n",
+    "body": "Assignee: @malb\n\nOnce #6922 is merged we'll have Matrix term orderings but only for the very slow `PolyDict` based polynomials. Singular does support matrix term orderings thus it should be relatively easy to add them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9328\n\n",
     "created_at": "2010-06-24T12:57:41Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_009328.json:
     "title": "implement matrix term orderings for libsingular polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9328",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Once #6922 is merged we'll have Matrix term orderings but only for the very slow `PolyDict` based polynomials. Singular does support matrix term orderings thus it should be relatively easy to add them.
 
@@ -37,7 +37,7 @@ archive/issue_comments_087990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9328",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9328#issuecomment-87990",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_087991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9328",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9328#issuecomment-87991",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

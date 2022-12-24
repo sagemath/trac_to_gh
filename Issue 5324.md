@@ -14,7 +14,7 @@ archive/issues_005324.json:
     "title": "notebook -- %time block bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5324",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -53,7 +53,7 @@ archive/issue_comments_040984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5324#issuecomment-40984",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -66,16 +66,16 @@ Changing status from new to assigned.
 archive/issue_comments_040985.json:
 ```json
 {
-    "body": "Changing assignee from boothby to mhansen.",
+    "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2009-02-20T21:07:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5324#issuecomment-40985",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from boothby to mhansen.
+Changing assignee from boothby to @mwhansen.
 
 
 
@@ -89,7 +89,7 @@ archive/issue_comments_040986.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5324#issuecomment-40986",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_040988.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5324#issuecomment-40988",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -138,16 +138,16 @@ Note that the problem isn't just with %time, but with any % modes.
 archive/issue_comments_040989.json:
 ```json
 {
-    "body": "Attachment [sagenb_5324.patch](tarball://root/attachments/some-uuid/ticket5324/sagenb_5324.patch) by was created at 2009-11-09 02:13:16",
+    "body": "Attachment [sagenb_5324.patch](tarball://root/attachments/some-uuid/ticket5324/sagenb_5324.patch) by @williamstein created at 2009-11-09 02:13:16",
     "created_at": "2009-11-09T02:13:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5324#issuecomment-40989",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sagenb_5324.patch](tarball://root/attachments/some-uuid/ticket5324/sagenb_5324.patch) by was created at 2009-11-09 02:13:16
+Attachment [sagenb_5324.patch](tarball://root/attachments/some-uuid/ticket5324/sagenb_5324.patch) by @williamstein created at 2009-11-09 02:13:16
 
 
 
@@ -161,7 +161,7 @@ archive/issue_comments_040990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5324#issuecomment-40990",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_040993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5324#issuecomment-40993",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -233,16 +233,16 @@ You're right, using i=0 makes more sense, though of course won't make any differ
 archive/issue_comments_040994.json:
 ```json
 {
-    "body": "Attachment [sagenb_5324-part2.patch](tarball://root/attachments/some-uuid/ticket5324/sagenb_5324-part2.patch) by was created at 2009-11-09 17:12:17",
+    "body": "Attachment [sagenb_5324-part2.patch](tarball://root/attachments/some-uuid/ticket5324/sagenb_5324-part2.patch) by @williamstein created at 2009-11-09 17:12:17",
     "created_at": "2009-11-09T17:12:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5324#issuecomment-40994",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sagenb_5324-part2.patch](tarball://root/attachments/some-uuid/ticket5324/sagenb_5324-part2.patch) by was created at 2009-11-09 17:12:17
+Attachment [sagenb_5324-part2.patch](tarball://root/attachments/some-uuid/ticket5324/sagenb_5324-part2.patch) by @williamstein created at 2009-11-09 17:12:17
 
 
 
@@ -256,7 +256,7 @@ archive/issue_comments_040995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5324#issuecomment-40995",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

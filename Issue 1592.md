@@ -3,7 +3,7 @@
 archive/issues_001592.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1592\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1592\n\n",
     "created_at": "2007-12-24T07:38:40Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001592.json:
     "title": "jmol -- misc small changes; added minimal 3d parametric plotting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1592",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1592
 archive/issue_comments_010132.json:
 ```json
 {
-    "body": "Attachment [3d-3.hg](tarball://root/attachments/some-uuid/ticket1592/3d-3.hg) by was created at 2007-12-24 07:39:02",
+    "body": "Attachment [3d-3.hg](tarball://root/attachments/some-uuid/ticket1592/3d-3.hg) by @williamstein created at 2007-12-24 07:39:02",
     "created_at": "2007-12-24T07:39:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1592#issuecomment-10132",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [3d-3.hg](tarball://root/attachments/some-uuid/ticket1592/3d-3.hg) by was created at 2007-12-24 07:39:02
+Attachment [3d-3.hg](tarball://root/attachments/some-uuid/ticket1592/3d-3.hg) by @williamstein created at 2007-12-24 07:39:02
 
 
 

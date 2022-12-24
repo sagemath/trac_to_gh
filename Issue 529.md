@@ -14,7 +14,7 @@ archive/issues_000529.json:
     "title": "Add hex printing for FiniteFieldElements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/529",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: somebody
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/529
 archive/issue_comments_002698.json:
 ```json
 {
-    "body": "Changing assignee from somebody to malb.",
+    "body": "Changing assignee from somebody to @malb.",
     "created_at": "2007-08-31T23:32:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/529#issuecomment-2698",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from somebody to malb.
+Changing assignee from somebody to @malb.
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_002699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/529#issuecomment-2699",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_002700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/529#issuecomment-2700",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_002701.json:
     "issue": "https://github.com/sagemath/sagetest/issues/529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/529#issuecomment-2701",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

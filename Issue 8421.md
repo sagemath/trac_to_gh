@@ -3,7 +3,7 @@
 archive/issues_008421.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  rlm jason ncohen\n\nKeywords: BipartiteGraph, partitions, sets\n\nThe documentation describes the 'left' and 'right' attributes of BipartiteGrpah as sets.  And deleting vertices is much more efficient if they are.  But they are currently stored as lists.\n\n```\nsage: bg = BipartiteGraph(graphs.CycleGraph(4))\nsage: bg.left\n[0, 2]\n```\n\n\nOf course, it's easy to change from one to the other.  But we will get better performance from sets.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8421\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @rlmill @jasongrout @nathanncohen\n\nKeywords: BipartiteGraph, partitions, sets\n\nThe documentation describes the 'left' and 'right' attributes of BipartiteGrpah as sets.  And deleting vertices is much more efficient if they are.  But they are currently stored as lists.\n\n```\nsage: bg = BipartiteGraph(graphs.CycleGraph(4))\nsage: bg.left\n[0, 2]\n```\n\n\nOf course, it's easy to change from one to the other.  But we will get better performance from sets.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8421\n\n",
     "created_at": "2010-03-02T16:05:50Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_008421.json:
     "title": "Change BipartiteGraph .left and .right to sets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8421",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  rlm jason ncohen
+CC:  @rlmill @jasongrout @nathanncohen
 
 Keywords: BipartiteGraph, partitions, sets
 
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8421
 archive/issue_comments_075481.json:
 ```json
 {
-    "body": "Changing assignee from rlm to rhinton.",
+    "body": "Changing assignee from @rlmill to @rhinton.",
     "created_at": "2010-03-02T16:28:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8421#issuecomment-75481",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
-Changing assignee from rlm to rhinton.
+Changing assignee from @rlmill to @rhinton.
 
 
 
@@ -69,7 +69,7 @@ archive/issue_comments_075482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8421#issuecomment-75482",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_075483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8421#issuecomment-75483",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -100,16 +100,16 @@ Patch implements change.  It sits on my MQ stack on top of #8331 and #8329, but 
 archive/issue_comments_075484.json:
 ```json
 {
-    "body": "Attachment [trac_8421-bipartite-partition-sets.patch](tarball://root/attachments/some-uuid/ticket8421/trac_8421-bipartite-partition-sets.patch) by rhinton created at 2010-03-05 02:05:46\n\nupdated commit message",
+    "body": "Attachment [trac_8421-bipartite-partition-sets.patch](tarball://root/attachments/some-uuid/ticket8421/trac_8421-bipartite-partition-sets.patch) by @rhinton created at 2010-03-05 02:05:46\n\nupdated commit message",
     "created_at": "2010-03-05T02:05:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8421#issuecomment-75484",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
-Attachment [trac_8421-bipartite-partition-sets.patch](tarball://root/attachments/some-uuid/ticket8421/trac_8421-bipartite-partition-sets.patch) by rhinton created at 2010-03-05 02:05:46
+Attachment [trac_8421-bipartite-partition-sets.patch](tarball://root/attachments/some-uuid/ticket8421/trac_8421-bipartite-partition-sets.patch) by @rhinton created at 2010-03-05 02:05:46
 
 updated commit message
 
@@ -125,7 +125,7 @@ archive/issue_comments_075485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8421#issuecomment-75485",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_075486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8421#issuecomment-75486",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_075487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8421#issuecomment-75487",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

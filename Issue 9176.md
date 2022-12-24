@@ -3,7 +3,7 @@
 archive/issues_009176.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  kcrisman dimpase\n\n\n```\n\nsage -t  \"devel/sage/sage/schemes/elliptic_curves/heegner.py\"\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/heegner.py\", line 6380:\n    sage: E.heegner_index(-7)\nExpected:\n    1.00000?\nGot:\n    1\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/heegner.py\", line 6410:\n    sage: I = E.heegner_index(-8); I\nExpected:\n    1.50000?\nGot:\n    1\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/heegner.py\", line 6412:\n    sage: 2*I\nExpected:\n    3.0000?\nGot:\n    2\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/heegner.py\", line 6546:\n    sage: E.heegner_index_bound()\nExpected:\n    ([2], -7)\nGot:\n    ([], -7)\n**********************************************************************\n2 items had failures:\n   3 of  15 in __main__.example_229\n   1 of   4 in __main__.example_231\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_heegner.py\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9176\n\n",
+    "body": "Assignee: tbd\n\nCC:  @kcrisman @dimpase\n\n\n```\n\nsage -t  \"devel/sage/sage/schemes/elliptic_curves/heegner.py\"\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/heegner.py\", line 6380:\n    sage: E.heegner_index(-7)\nExpected:\n    1.00000?\nGot:\n    1\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/heegner.py\", line 6410:\n    sage: I = E.heegner_index(-8); I\nExpected:\n    1.50000?\nGot:\n    1\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/heegner.py\", line 6412:\n    sage: 2*I\nExpected:\n    3.0000?\nGot:\n    2\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/heegner.py\", line 6546:\n    sage: E.heegner_index_bound()\nExpected:\n    ([2], -7)\nGot:\n    ([], -7)\n**********************************************************************\n2 items had failures:\n   3 of  15 in __main__.example_229\n   1 of   4 in __main__.example_231\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_heegner.py\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9176\n\n",
     "created_at": "2010-06-07T05:33:45Z",
     "labels": [
         "porting: Cygwin",
@@ -14,12 +14,12 @@ archive/issues_009176.json:
     "title": "cygwin: various heegner_index errors involving interval arithmetic on cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9176",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
 
-CC:  kcrisman dimpase
+CC:  @kcrisman @dimpase
 
 
 ```
@@ -78,7 +78,7 @@ archive/issue_comments_085827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9176",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9176#issuecomment-85827",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_085828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9176",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9176#issuecomment-85828",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_085831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9176",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9176#issuecomment-85831",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -302,7 +302,7 @@ archive/issue_comments_085839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9176",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9176#issuecomment-85839",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -320,7 +320,7 @@ archive/issue_comments_085840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9176",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9176#issuecomment-85840",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -434,7 +434,7 @@ archive/issue_comments_085846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9176",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9176#issuecomment-85846",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -488,7 +488,7 @@ archive/issue_comments_085848.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9176",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9176#issuecomment-85848",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -560,7 +560,7 @@ archive/issue_comments_085852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9176",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9176#issuecomment-85852",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -578,7 +578,7 @@ archive/issue_comments_085853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9176",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9176#issuecomment-85853",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

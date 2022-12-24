@@ -3,7 +3,7 @@
 archive/issues_008094.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  robertwb rbeezer\n\nThe aim is to enhance `/sage/matrix/matrix*.pyx` files with a `__getattr__` mechanism to call `self.transpose()` and others more quickly. The attribute lookup mechanism provides a shortcut like `self.T` that is resolved to `self.transpose()`. \nShortcuts should be similar to other environments like `numpy`.\n\nAdditionally, `__setattr__` and `__delattr__` have to be implemented to avoid modification and deletion of these attributes.\n\nNotes: [python data model](http://docs.python.org/reference/datamodel.html#customizing-attribute-access).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8094\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb @rbeezer\n\nThe aim is to enhance `/sage/matrix/matrix*.pyx` files with a `__getattr__` mechanism to call `self.transpose()` and others more quickly. The attribute lookup mechanism provides a shortcut like `self.T` that is resolved to `self.transpose()`. \nShortcuts should be similar to other environments like `numpy`.\n\nAdditionally, `__setattr__` and `__delattr__` have to be implemented to avoid modification and deletion of these attributes.\n\nNotes: [python data model](http://docs.python.org/reference/datamodel.html#customizing-attribute-access).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8094\n\n",
     "created_at": "2010-01-27T13:00:23Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_008094.json:
     "title": "shortcuts for matrix transpose, complex conjugate, ...",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8094",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  robertwb rbeezer
+CC:  @robertwb @rbeezer
 
 The aim is to enhance `/sage/matrix/matrix*.pyx` files with a `__getattr__` mechanism to call `self.transpose()` and others more quickly. The attribute lookup mechanism provides a shortcut like `self.T` that is resolved to `self.transpose()`. 
 Shortcuts should be similar to other environments like `numpy`.
@@ -44,7 +44,7 @@ archive/issue_comments_070925.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70925",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -62,7 +62,7 @@ archive/issue_comments_070926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70926",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_070927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70927",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_070928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70928",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_070929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70929",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_070930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70930",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_070931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70931",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -171,16 +171,16 @@ doin' it the cython way
 archive/issue_comments_070932.json:
 ```json
 {
-    "body": "Attachment [8094-shortcut-matrix-transpose.patch](tarball://root/attachments/some-uuid/ticket8094/8094-shortcut-matrix-transpose.patch) by schilly created at 2010-03-22 17:41:10",
+    "body": "Attachment [8094-shortcut-matrix-transpose.patch](tarball://root/attachments/some-uuid/ticket8094/8094-shortcut-matrix-transpose.patch) by @haraldschilly created at 2010-03-22 17:41:10",
     "created_at": "2010-03-22T17:41:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70932",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
-Attachment [8094-shortcut-matrix-transpose.patch](tarball://root/attachments/some-uuid/ticket8094/8094-shortcut-matrix-transpose.patch) by schilly created at 2010-03-22 17:41:10
+Attachment [8094-shortcut-matrix-transpose.patch](tarball://root/attachments/some-uuid/ticket8094/8094-shortcut-matrix-transpose.patch) by @haraldschilly created at 2010-03-22 17:41:10
 
 
 
@@ -194,7 +194,7 @@ archive/issue_comments_070933.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70933",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_070934.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70934",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_070935.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70935",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_070936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70936",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_070937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70937",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -284,7 +284,7 @@ archive/issue_comments_070938.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70938",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -302,7 +302,7 @@ archive/issue_comments_070939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70939",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -315,16 +315,16 @@ apply on top of previous patches
 archive/issue_comments_070940.json:
 ```json
 {
-    "body": "Attachment [8094_matrix_shortcut_docs_reviewer.patch](tarball://root/attachments/some-uuid/ticket8094/8094_matrix_shortcut_docs_reviewer.patch) by jason created at 2010-12-18 20:25:25\n\nOkay, maybe my changes should be reviewed (since they fix some of the doc issues).  \n\nDoctests pass in matrix/*.py[x] with these patches applied, and Harald's code looks good, so positive review for his patch (given that my doctest patch is applied).  \n\nSomeone should verify my doctest changes are good.",
+    "body": "Attachment [8094_matrix_shortcut_docs_reviewer.patch](tarball://root/attachments/some-uuid/ticket8094/8094_matrix_shortcut_docs_reviewer.patch) by @jasongrout created at 2010-12-18 20:25:25\n\nOkay, maybe my changes should be reviewed (since they fix some of the doc issues).  \n\nDoctests pass in matrix/*.py[x] with these patches applied, and Harald's code looks good, so positive review for his patch (given that my doctest patch is applied).  \n\nSomeone should verify my doctest changes are good.",
     "created_at": "2010-12-18T20:25:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70940",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [8094_matrix_shortcut_docs_reviewer.patch](tarball://root/attachments/some-uuid/ticket8094/8094_matrix_shortcut_docs_reviewer.patch) by jason created at 2010-12-18 20:25:25
+Attachment [8094_matrix_shortcut_docs_reviewer.patch](tarball://root/attachments/some-uuid/ticket8094/8094_matrix_shortcut_docs_reviewer.patch) by @jasongrout created at 2010-12-18 20:25:25
 
 Okay, maybe my changes should be reviewed (since they fix some of the doc issues).  
 
@@ -344,7 +344,7 @@ archive/issue_comments_070941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70941",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_070942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70942",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -390,7 +390,7 @@ archive/issue_comments_070943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70943",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -459,16 +459,16 @@ I am not sure whether 1. can be addressed at all. Typing m.T? I get the document
 archive/issue_comments_070947.json:
 ```json
 {
-    "body": "Attachment [trac_8094-matrix-properties-more-documentation.patch](tarball://root/attachments/some-uuid/ticket8094/trac_8094-matrix-properties-more-documentation.patch) by rbeezer created at 2011-08-22 21:55:33",
+    "body": "Attachment [trac_8094-matrix-properties-more-documentation.patch](tarball://root/attachments/some-uuid/ticket8094/trac_8094-matrix-properties-more-documentation.patch) by @rbeezer created at 2011-08-22 21:55:33",
     "created_at": "2011-08-22T21:55:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70947",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_8094-matrix-properties-more-documentation.patch](tarball://root/attachments/some-uuid/ticket8094/trac_8094-matrix-properties-more-documentation.patch) by rbeezer created at 2011-08-22 21:55:33
+Attachment [trac_8094-matrix-properties-more-documentation.patch](tarball://root/attachments/some-uuid/ticket8094/trac_8094-matrix-properties-more-documentation.patch) by @rbeezer created at 2011-08-22 21:55:33
 
 
 
@@ -482,7 +482,7 @@ archive/issue_comments_070948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70948",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -540,7 +540,7 @@ archive/issue_comments_070951.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70951",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -567,7 +567,7 @@ archive/issue_comments_070952.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70952",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -585,7 +585,7 @@ archive/issue_comments_070953.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70953",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -606,7 +606,7 @@ archive/issue_comments_070954.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70954",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -624,7 +624,7 @@ archive/issue_comments_070955.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70955",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -642,7 +642,7 @@ archive/issue_comments_070956.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70956",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -661,16 +661,16 @@ Sorry, Harald. ;)
 archive/issue_comments_070957.json:
 ```json
 {
-    "body": "Attachment [8094-shortcut-matrix-transpose-v2.patch](tarball://root/attachments/some-uuid/ticket8094/8094-shortcut-matrix-transpose-v2.patch) by rbeezer created at 2011-09-18 04:15:56\n\nI did some maintenance on the main patch, naming it \"v2\".  Has Harald's user info and is now a proper hg patch.  I hope.  \n\nShould now be ready to go, since I did not change any code, so should not need a review.",
+    "body": "Attachment [8094-shortcut-matrix-transpose-v2.patch](tarball://root/attachments/some-uuid/ticket8094/8094-shortcut-matrix-transpose-v2.patch) by @rbeezer created at 2011-09-18 04:15:56\n\nI did some maintenance on the main patch, naming it \"v2\".  Has Harald's user info and is now a proper hg patch.  I hope.  \n\nShould now be ready to go, since I did not change any code, so should not need a review.",
     "created_at": "2011-09-18T04:15:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70957",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [8094-shortcut-matrix-transpose-v2.patch](tarball://root/attachments/some-uuid/ticket8094/8094-shortcut-matrix-transpose-v2.patch) by rbeezer created at 2011-09-18 04:15:56
+Attachment [8094-shortcut-matrix-transpose-v2.patch](tarball://root/attachments/some-uuid/ticket8094/8094-shortcut-matrix-transpose-v2.patch) by @rbeezer created at 2011-09-18 04:15:56
 
 I did some maintenance on the main patch, naming it "v2".  Has Harald's user info and is now a proper hg patch.  I hope.  
 
@@ -688,7 +688,7 @@ archive/issue_comments_070958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70958",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -706,7 +706,7 @@ archive/issue_comments_070959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70959",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -736,7 +736,7 @@ archive/issue_comments_070960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70960",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -749,16 +749,16 @@ Same patch rebased on (prerelease) Sage 4.7.2.alpha3 because of fuzz 2.
 archive/issue_comments_070961.json:
 ```json
 {
-    "body": "Attachment [trac_8094-matrix-properties-more-documentation-rebased_on_4.7.2.alpha3.patch](tarball://root/attachments/some-uuid/ticket8094/trac_8094-matrix-properties-more-documentation-rebased_on_4.7.2.alpha3.patch) by leif created at 2011-09-18 07:01:49\n\nSame patch rebased on (prerelease) Sage 4.7.2.alpha3 because of fuzz 2.",
+    "body": "Attachment [trac_8094-matrix-properties-more-documentation-rebased_on_4.7.2.alpha3.patch](tarball://root/attachments/some-uuid/ticket8094/trac_8094-matrix-properties-more-documentation-rebased_on_4.7.2.alpha3.patch) by @nexttime created at 2011-09-18 07:01:49\n\nSame patch rebased on (prerelease) Sage 4.7.2.alpha3 because of fuzz 2.",
     "created_at": "2011-09-18T07:01:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70961",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_8094-matrix-properties-more-documentation-rebased_on_4.7.2.alpha3.patch](tarball://root/attachments/some-uuid/ticket8094/trac_8094-matrix-properties-more-documentation-rebased_on_4.7.2.alpha3.patch) by leif created at 2011-09-18 07:01:49
+Attachment [trac_8094-matrix-properties-more-documentation-rebased_on_4.7.2.alpha3.patch](tarball://root/attachments/some-uuid/ticket8094/trac_8094-matrix-properties-more-documentation-rebased_on_4.7.2.alpha3.patch) by @nexttime created at 2011-09-18 07:01:49
 
 Same patch rebased on (prerelease) Sage 4.7.2.alpha3 because of fuzz 2.
 
@@ -774,7 +774,7 @@ archive/issue_comments_070962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70962",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -792,7 +792,7 @@ archive/issue_comments_070963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8094#issuecomment-70963",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 

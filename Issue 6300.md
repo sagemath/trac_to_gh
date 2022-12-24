@@ -14,7 +14,7 @@ archive/issues_006300.json:
     "title": "doctest fix related to singular upgrad; needed on 32-bit OS X intel, at least (maybe all 32-bit)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6300",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -53,16 +53,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6300
 archive/issue_comments_050261.json:
 ```json
 {
-    "body": "Attachment [trac_6300.patch](tarball://root/attachments/some-uuid/ticket6300/trac_6300.patch) by malb created at 2009-06-15 15:58:25\n\nPatch depends on hotfix at #6051.",
+    "body": "Attachment [trac_6300.patch](tarball://root/attachments/some-uuid/ticket6300/trac_6300.patch) by @malb created at 2009-06-15 15:58:25\n\nPatch depends on hotfix at #6051.",
     "created_at": "2009-06-15T15:58:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6300#issuecomment-50261",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_6300.patch](tarball://root/attachments/some-uuid/ticket6300/trac_6300.patch) by malb created at 2009-06-15 15:58:25
+Attachment [trac_6300.patch](tarball://root/attachments/some-uuid/ticket6300/trac_6300.patch) by @malb created at 2009-06-15 15:58:25
 
 Patch depends on hotfix at #6051.
 
@@ -78,7 +78,7 @@ archive/issue_comments_050262.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6300#issuecomment-50262",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_050263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6300#issuecomment-50263",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_050264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6300#issuecomment-50264",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

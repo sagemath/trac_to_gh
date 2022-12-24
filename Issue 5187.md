@@ -3,7 +3,7 @@
 archive/issues_005187.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe latest version of Magma is Magma-2.15, and there are doctests all over that now slightly fail because the output format of certain things in Magma has changed.  \n\nThe file at http://sage.math.washington.edu/home/was/patches/magma-2.15.txt lists all the doctest failures.  It was got by running this script:\n\n```\n        sage -t -only_optional=magma \"devel/sage/sage/rings/polynomial/multi_polynomial_ring_generic.pyx\"\n        sage -t -only_optional=magma \"devel/sage/sage/rings/polynomial/term_order.py\"\n        sage -t -only_optional=magma \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\"\n        sage -t -only_optional=magma \"devel/sage/sage/crypto/mq/mpolynomialsystem.py\"\n        sage -t -only_optional=magma \"devel/sage/sage/interfaces/magma.py\"\n\n```\n\non eno, which has Magma-2.15.\n\nI think all the changes are purely cosmetic, so this should be very straightforward (but tedious).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5187\n\n",
+    "body": "Assignee: @williamstein\n\nThe latest version of Magma is Magma-2.15, and there are doctests all over that now slightly fail because the output format of certain things in Magma has changed.  \n\nThe file at http://sage.math.washington.edu/home/was/patches/magma-2.15.txt lists all the doctest failures.  It was got by running this script:\n\n```\n        sage -t -only_optional=magma \"devel/sage/sage/rings/polynomial/multi_polynomial_ring_generic.pyx\"\n        sage -t -only_optional=magma \"devel/sage/sage/rings/polynomial/term_order.py\"\n        sage -t -only_optional=magma \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\"\n        sage -t -only_optional=magma \"devel/sage/sage/crypto/mq/mpolynomialsystem.py\"\n        sage -t -only_optional=magma \"devel/sage/sage/interfaces/magma.py\"\n\n```\n\non eno, which has Magma-2.15.\n\nI think all the changes are purely cosmetic, so this should be very straightforward (but tedious).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5187\n\n",
     "created_at": "2009-02-05T21:30:50Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_005187.json:
     "title": "fix optional magma doctests that changed in magma-2.15",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5187",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The latest version of Magma is Magma-2.15, and there are doctests all over that now slightly fail because the output format of certain things in Magma has changed.  
 
@@ -135,7 +135,7 @@ archive/issue_comments_039786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5187#issuecomment-39786",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_039787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5187#issuecomment-39787",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

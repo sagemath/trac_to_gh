@@ -3,7 +3,7 @@
 archive/issues_007514.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  slabbe robertwb ddrake\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7514\n\n",
+    "body": "Assignee: tbd\n\nCC:  @seblabbe @robertwb @dandrake\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7514\n\n",
     "created_at": "2009-11-22T08:12:38Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_007514.json:
     "title": "rewrite load and attach",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7514",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
 
-CC:  slabbe robertwb ddrake
+CC:  @seblabbe @robertwb @dandrake
 
 
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7514
 archive/issue_comments_063617.json:
 ```json
 {
-    "body": "Attachment [sagelib-7514.patch](tarball://root/attachments/some-uuid/ticket7514/sagelib-7514.patch) by was created at 2009-11-22 08:13:56\n\napply to the core sage library",
+    "body": "Attachment [sagelib-7514.patch](tarball://root/attachments/some-uuid/ticket7514/sagelib-7514.patch) by @williamstein created at 2009-11-22 08:13:56\n\napply to the core sage library",
     "created_at": "2009-11-22T08:13:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63617",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sagelib-7514.patch](tarball://root/attachments/some-uuid/ticket7514/sagelib-7514.patch) by was created at 2009-11-22 08:13:56
+Attachment [sagelib-7514.patch](tarball://root/attachments/some-uuid/ticket7514/sagelib-7514.patch) by @williamstein created at 2009-11-22 08:13:56
 
 apply to the core sage library
 
@@ -54,16 +54,16 @@ apply to the core sage library
 archive/issue_comments_063618.json:
 ```json
 {
-    "body": "Attachment [sagenb-7514.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514.patch) by was created at 2009-11-22 08:16:59",
+    "body": "Attachment [sagenb-7514.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514.patch) by @williamstein created at 2009-11-22 08:16:59",
     "created_at": "2009-11-22T08:16:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63618",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sagenb-7514.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514.patch) by was created at 2009-11-22 08:16:59
+Attachment [sagenb-7514.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514.patch) by @williamstein created at 2009-11-22 08:16:59
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_063619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63619",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_063620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63620",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_063621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63621",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -135,16 +135,16 @@ You probably don't understand what attach does.  All it does is execfile the fil
 archive/issue_comments_063622.json:
 ```json
 {
-    "body": "Attachment [sagelib_7514-part2.patch](tarball://root/attachments/some-uuid/ticket7514/sagelib_7514-part2.patch) by was created at 2009-12-02 03:52:21",
+    "body": "Attachment [sagelib_7514-part2.patch](tarball://root/attachments/some-uuid/ticket7514/sagelib_7514-part2.patch) by @williamstein created at 2009-12-02 03:52:21",
     "created_at": "2009-12-02T03:52:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63622",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sagelib_7514-part2.patch](tarball://root/attachments/some-uuid/ticket7514/sagelib_7514-part2.patch) by was created at 2009-12-02 03:52:21
+Attachment [sagelib_7514-part2.patch](tarball://root/attachments/some-uuid/ticket7514/sagelib_7514-part2.patch) by @williamstein created at 2009-12-02 03:52:21
 
 
 
@@ -158,7 +158,7 @@ archive/issue_comments_063623.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63623",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_063624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63624",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -197,16 +197,16 @@ Thus for some problems attach works very nicely for library code, and for others
 archive/issue_comments_063625.json:
 ```json
 {
-    "body": "Attachment [sagelib-7514_combined.patch](tarball://root/attachments/some-uuid/ticket7514/sagelib-7514_combined.patch) by mpatel created at 2009-12-09 23:20:51\n\nCombined *sage* repo patch.  Depends on 4.3.alpha1, SageNB 0.4.6 (#7625), #7483, #7482.",
+    "body": "Attachment [sagelib-7514_combined.patch](tarball://root/attachments/some-uuid/ticket7514/sagelib-7514_combined.patch) by @qed777 created at 2009-12-09 23:20:51\n\nCombined *sage* repo patch.  Depends on 4.3.alpha1, SageNB 0.4.6 (#7625), #7483, #7482.",
     "created_at": "2009-12-09T23:20:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63625",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [sagelib-7514_combined.patch](tarball://root/attachments/some-uuid/ticket7514/sagelib-7514_combined.patch) by mpatel created at 2009-12-09 23:20:51
+Attachment [sagelib-7514_combined.patch](tarball://root/attachments/some-uuid/ticket7514/sagelib-7514_combined.patch) by @qed777 created at 2009-12-09 23:20:51
 
 Combined *sage* repo patch.  Depends on 4.3.alpha1, SageNB 0.4.6 (#7625), #7483, #7482.
 
@@ -222,7 +222,7 @@ archive/issue_comments_063626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63626",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_063627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63627",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_063628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63628",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_063629.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63629",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -351,16 +351,16 @@ Disclaimer:  I'm still quite ignorant about Cython.
 archive/issue_comments_063630.json:
 ```json
 {
-    "body": "Attachment [sagenb-7514.2.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514.2.patch) by mpatel created at 2009-12-28 17:10:46\n\nFixed doctest failures.  Replaces previous.",
+    "body": "Attachment [sagenb-7514.2.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514.2.patch) by @qed777 created at 2009-12-28 17:10:46\n\nFixed doctest failures.  Replaces previous.",
     "created_at": "2009-12-28T17:10:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63630",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [sagenb-7514.2.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514.2.patch) by mpatel created at 2009-12-28 17:10:46
+Attachment [sagenb-7514.2.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514.2.patch) by @qed777 created at 2009-12-28 17:10:46
 
 Fixed doctest failures.  Replaces previous.
 
@@ -376,7 +376,7 @@ archive/issue_comments_063631.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63631",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -389,16 +389,16 @@ Fixed doctest failures.  Depends on Sage 4.3, #7483, #7482.  Replaces previous.
 archive/issue_comments_063632.json:
 ```json
 {
-    "body": "Attachment [sagelib-7514_combined.2.patch](tarball://root/attachments/some-uuid/ticket7514/sagelib-7514_combined.2.patch) by mpatel created at 2009-12-28 18:22:45\n\nThe latest patches should fix the doctests and the `attached_files` problem mentioned above.  I changed `attach t` to `attach(t)`, since the doctesting framework appears to use a Python interpreter, i.e., *not* IPython, to run the examples.  I also weakened [somewhat] the tests for `preparser.modified_attached_files`.  Is there an IPython doctesting mode?\n\nI'm not sure about the Cython file reload problem.  Should we set `use_cache=True` when loading .pyx files explicitly?\n\nOn globals:  I see that a Cython file `foo.pyx` is compiled to a module and loaded via `from foo import *`.\n\nCan someone else please help to review this ticket?",
+    "body": "Attachment [sagelib-7514_combined.2.patch](tarball://root/attachments/some-uuid/ticket7514/sagelib-7514_combined.2.patch) by @qed777 created at 2009-12-28 18:22:45\n\nThe latest patches should fix the doctests and the `attached_files` problem mentioned above.  I changed `attach t` to `attach(t)`, since the doctesting framework appears to use a Python interpreter, i.e., *not* IPython, to run the examples.  I also weakened [somewhat] the tests for `preparser.modified_attached_files`.  Is there an IPython doctesting mode?\n\nI'm not sure about the Cython file reload problem.  Should we set `use_cache=True` when loading .pyx files explicitly?\n\nOn globals:  I see that a Cython file `foo.pyx` is compiled to a module and loaded via `from foo import *`.\n\nCan someone else please help to review this ticket?",
     "created_at": "2009-12-28T18:22:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63632",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [sagelib-7514_combined.2.patch](tarball://root/attachments/some-uuid/ticket7514/sagelib-7514_combined.2.patch) by mpatel created at 2009-12-28 18:22:45
+Attachment [sagelib-7514_combined.2.patch](tarball://root/attachments/some-uuid/ticket7514/sagelib-7514_combined.2.patch) by @qed777 created at 2009-12-28 18:22:45
 
 The latest patches should fix the doctests and the `attached_files` problem mentioned above.  I changed `attach t` to `attach(t)`, since the doctesting framework appears to use a Python interpreter, i.e., *not* IPython, to run the examples.  I also weakened [somewhat] the tests for `preparser.modified_attached_files`.  Is there an IPython doctesting mode?
 
@@ -420,7 +420,7 @@ archive/issue_comments_063633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63633",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -438,7 +438,7 @@ archive/issue_comments_063634.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63634",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -451,16 +451,16 @@ Fix(?) loading of .spyx files.  Add preparser.py to reference manual.  Replaces 
 archive/issue_comments_063635.json:
 ```json
 {
-    "body": "Attachment [sagelib-7514_combined.3.patch](tarball://root/attachments/some-uuid/ticket7514/sagelib-7514_combined.3.patch) by was created at 2009-12-31 17:34:42",
+    "body": "Attachment [sagelib-7514_combined.3.patch](tarball://root/attachments/some-uuid/ticket7514/sagelib-7514_combined.3.patch) by @williamstein created at 2009-12-31 17:34:42",
     "created_at": "2009-12-31T17:34:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63635",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sagelib-7514_combined.3.patch](tarball://root/attachments/some-uuid/ticket7514/sagelib-7514_combined.3.patch) by was created at 2009-12-31 17:34:42
+Attachment [sagelib-7514_combined.3.patch](tarball://root/attachments/some-uuid/ticket7514/sagelib-7514_combined.3.patch) by @williamstein created at 2009-12-31 17:34:42
 
 
 
@@ -469,16 +469,16 @@ Attachment [sagelib-7514_combined.3.patch](tarball://root/attachments/some-uuid/
 archive/issue_comments_063636.json:
 ```json
 {
-    "body": "Attachment [sagenb-7514-rebase.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514-rebase.patch) by was created at 2009-12-31 17:51:05\n\nrebased against sagenb-0.4.8 + trac #7483.",
+    "body": "Attachment [sagenb-7514-rebase.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514-rebase.patch) by @williamstein created at 2009-12-31 17:51:05\n\nrebased against sagenb-0.4.8 + trac #7483.",
     "created_at": "2009-12-31T17:51:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63636",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sagenb-7514-rebase.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514-rebase.patch) by was created at 2009-12-31 17:51:05
+Attachment [sagenb-7514-rebase.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514-rebase.patch) by @williamstein created at 2009-12-31 17:51:05
 
 rebased against sagenb-0.4.8 + trac #7483.
 
@@ -494,7 +494,7 @@ archive/issue_comments_063637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63637",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -507,16 +507,16 @@ trac 7514 sagenb-part2: proper tracebacks; make source code introspection of fun
 archive/issue_comments_063638.json:
 ```json
 {
-    "body": "Attachment [sagenb-7514-rebase-part2.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514-rebase-part2.patch) by was created at 2009-12-31 19:35:03\n\nRight now the files that one must apply are:\n\n\n```\nTo Sage Library:\n sagelib-7514_combined.3.patch \n\nTo Notebook:\n sagenb-7514-rebase.patch  \n sagenb-7514-rebase-part2.patch\n```\n",
+    "body": "Attachment [sagenb-7514-rebase-part2.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514-rebase-part2.patch) by @williamstein created at 2009-12-31 19:35:03\n\nRight now the files that one must apply are:\n\n\n```\nTo Sage Library:\n sagelib-7514_combined.3.patch \n\nTo Notebook:\n sagenb-7514-rebase.patch  \n sagenb-7514-rebase-part2.patch\n```\n",
     "created_at": "2009-12-31T19:35:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63638",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sagenb-7514-rebase-part2.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514-rebase-part2.patch) by was created at 2009-12-31 19:35:03
+Attachment [sagenb-7514-rebase-part2.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514-rebase-part2.patch) by @williamstein created at 2009-12-31 19:35:03
 
 Right now the files that one must apply are:
 
@@ -543,7 +543,7 @@ archive/issue_comments_063639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63639",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -561,7 +561,7 @@ archive/issue_comments_063640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63640",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -598,7 +598,7 @@ archive/issue_comments_063641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63641",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -633,7 +633,7 @@ archive/issue_comments_063642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63642",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -651,7 +651,7 @@ archive/issue_comments_063643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63643",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -674,7 +674,7 @@ archive/issue_comments_063644.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63644",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -692,7 +692,7 @@ archive/issue_comments_063645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63645",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -709,16 +709,16 @@ The attached patch (sagenb-7514-rebase-part3.patch) should:
 archive/issue_comments_063646.json:
 ```json
 {
-    "body": "Attachment [sagenb-7514-rebase-part3.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514-rebase-part3.patch) by was created at 2010-01-01 05:36:49",
+    "body": "Attachment [sagenb-7514-rebase-part3.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514-rebase-part3.patch) by @williamstein created at 2010-01-01 05:36:49",
     "created_at": "2010-01-01T05:36:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63646",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sagenb-7514-rebase-part3.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514-rebase-part3.patch) by was created at 2010-01-01 05:36:49
+Attachment [sagenb-7514-rebase-part3.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514-rebase-part3.patch) by @williamstein created at 2010-01-01 05:36:49
 
 
 
@@ -727,16 +727,16 @@ Attachment [sagenb-7514-rebase-part3.patch](tarball://root/attachments/some-uuid
 archive/issue_comments_063647.json:
 ```json
 {
-    "body": "Attachment [sagenb-7514-rebase-part3.2.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514-rebase-part3.2.patch) by mpatel created at 2010-01-01 06:12:31\n\nTrivial docstring tweaks.  Replaces previous.",
+    "body": "Attachment [sagenb-7514-rebase-part3.2.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514-rebase-part3.2.patch) by @qed777 created at 2010-01-01 06:12:31\n\nTrivial docstring tweaks.  Replaces previous.",
     "created_at": "2010-01-01T06:12:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63647",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [sagenb-7514-rebase-part3.2.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514-rebase-part3.2.patch) by mpatel created at 2010-01-01 06:12:31
+Attachment [sagenb-7514-rebase-part3.2.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514-rebase-part3.2.patch) by @qed777 created at 2010-01-01 06:12:31
 
 Trivial docstring tweaks.  Replaces previous.
 
@@ -752,7 +752,7 @@ archive/issue_comments_063648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63648",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -772,7 +772,7 @@ archive/issue_comments_063649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63649",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -790,7 +790,7 @@ archive/issue_comments_063650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63650",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -813,7 +813,7 @@ archive/issue_comments_063651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63651",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -831,7 +831,7 @@ archive/issue_comments_063652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63652",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -849,7 +849,7 @@ archive/issue_comments_063653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63653",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -867,7 +867,7 @@ archive/issue_comments_063654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7514#issuecomment-63654",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

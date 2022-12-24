@@ -14,7 +14,7 @@ archive/issues_005769.json:
     "title": "power series are accidentally *mutable* (really dangerous)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5769",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -60,7 +60,7 @@ archive/issue_comments_045128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5769",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5769#issuecomment-45128",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_045129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5769",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5769#issuecomment-45129",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 

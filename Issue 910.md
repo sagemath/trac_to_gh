@@ -3,7 +3,7 @@
 archive/issues_000910.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: circulant graph generators documentation\n\nJason's patch (ticket:871) to graph_generators has been refereed and is ready for inclusion in 2.8.8.  The bundle includes changes to documentation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/910\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: circulant graph generators documentation\n\nJason's patch (ticket:871) to graph_generators has been refereed and is ready for inclusion in 2.8.8.  The bundle includes changes to documentation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/910\n\n",
     "created_at": "2007-10-16T22:56:21Z",
     "labels": [
         "combinatorics",
@@ -17,7 +17,7 @@ archive/issues_000910.json:
     "user": "ekirkman"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: circulant graph generators documentation
 
@@ -57,7 +57,7 @@ archive/issue_comments_005594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/910",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/910#issuecomment-5594",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005574.json:
 ```json
 {
-    "body": "CC:  vdelecroix\n\nReported by Alex Raichev on sage-support:\n\n\n```\nsage: var('n',ns=1)\nn\nsage: (QQbar(2)^3)^n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n<...>\n<...>/sage/rings/qqbar.pyc in __pow__(self, e)\n   2808             1\n   2809         \"\"\"\n-> 2810         e = QQ._coerce_(e)\n   2811         n = e.numerator()\n   2812         d = e.denominator()\n\n<...>/sage/structure/parent_old.so in \nsage.structure.parent_old.Parent._coerce_ (sage/structure\n/parent_old.c:4031)()\n\n<...>/site-packages/sage/structure/parent.so in \nsage.structure.parent.Parent.coerce (sage/structure/parent.c:4185)()\n\nTypeError: no canonical coercion from New Symbolic Ring to Rational\nField\n```\n\n\nSince pynac supports using arbitrary Sage objects as numeric objects in symbolic expressions, we should return a symbolic expression as a result of the above commands.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5574\n\n",
+    "body": "CC:  @videlec\n\nReported by Alex Raichev on sage-support:\n\n\n```\nsage: var('n',ns=1)\nn\nsage: (QQbar(2)^3)^n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n<...>\n<...>/sage/rings/qqbar.pyc in __pow__(self, e)\n   2808             1\n   2809         \"\"\"\n-> 2810         e = QQ._coerce_(e)\n   2811         n = e.numerator()\n   2812         d = e.denominator()\n\n<...>/sage/structure/parent_old.so in \nsage.structure.parent_old.Parent._coerce_ (sage/structure\n/parent_old.c:4031)()\n\n<...>/site-packages/sage/structure/parent.so in \nsage.structure.parent.Parent.coerce (sage/structure/parent.c:4185)()\n\nTypeError: no canonical coercion from New Symbolic Ring to Rational\nField\n```\n\n\nSince pynac supports using arbitrary Sage objects as numeric objects in symbolic expressions, we should return a symbolic expression as a result of the above commands.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5574\n\n",
     "created_at": "2009-03-20T10:09:12Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_005574.json:
     "title": "taking symbolic powers should coerce objects to symbolic expressions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5574",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-CC:  vdelecroix
+CC:  @videlec
 
 Reported by Alex Raichev on sage-support:
 
@@ -67,7 +67,7 @@ archive/issue_comments_043447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5574#issuecomment-43447",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_043448.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5574#issuecomment-43448",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_043449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5574#issuecomment-43449",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_043450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5574#issuecomment-43450",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_043451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5574#issuecomment-43451",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_043453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5574#issuecomment-43453",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_043454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5574#issuecomment-43454",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_043456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5574#issuecomment-43456",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_043458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5574#issuecomment-43458",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -316,7 +316,7 @@ archive/issue_comments_043459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5574#issuecomment-43459",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -334,7 +334,7 @@ archive/issue_comments_043460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5574#issuecomment-43460",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -371,7 +371,7 @@ archive/issue_comments_043461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5574#issuecomment-43461",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -410,7 +410,7 @@ archive/issue_comments_043462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5574#issuecomment-43462",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -428,7 +428,7 @@ archive/issue_comments_043463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5574#issuecomment-43463",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -455,7 +455,7 @@ archive/issue_comments_043464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5574#issuecomment-43464",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -485,7 +485,7 @@ archive/issue_comments_043465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5574#issuecomment-43465",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -503,7 +503,7 @@ archive/issue_comments_043466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5574#issuecomment-43466",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -521,7 +521,7 @@ archive/issue_comments_043467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5574#issuecomment-43467",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -542,7 +542,7 @@ archive/issue_comments_043468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5574#issuecomment-43468",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -567,7 +567,7 @@ archive/issue_comments_043469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5574#issuecomment-43469",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -613,7 +613,7 @@ archive/issue_comments_043471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5574#issuecomment-43471",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -631,7 +631,7 @@ archive/issue_comments_043472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5574#issuecomment-43472",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

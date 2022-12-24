@@ -14,7 +14,7 @@ archive/issues_008429.json:
     "title": "Split word.py file into 4 files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8429",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 Assignee: sage-combinat
@@ -83,7 +83,7 @@ archive/issue_comments_075567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8429#issuecomment-75567",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_075568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8429#issuecomment-75568",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -114,16 +114,16 @@ Changing status from new to needs_review.
 archive/issue_comments_075569.json:
 ```json
 {
-    "body": "Attachment [trac_8429_split_word-sl.patch](tarball://root/attachments/some-uuid/ticket8429/trac_8429_split_word-sl.patch) by slabbe created at 2010-03-06 14:32:29\n\nDepends on many tickets already merged in 4.3.4.alpha1",
+    "body": "Attachment [trac_8429_split_word-sl.patch](tarball://root/attachments/some-uuid/ticket8429/trac_8429_split_word-sl.patch) by @seblabbe created at 2010-03-06 14:32:29\n\nDepends on many tickets already merged in 4.3.4.alpha1",
     "created_at": "2010-03-06T14:32:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8429#issuecomment-75569",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8429_split_word-sl.patch](tarball://root/attachments/some-uuid/ticket8429/trac_8429_split_word-sl.patch) by slabbe created at 2010-03-06 14:32:29
+Attachment [trac_8429_split_word-sl.patch](tarball://root/attachments/some-uuid/ticket8429/trac_8429_split_word-sl.patch) by @seblabbe created at 2010-03-06 14:32:29
 
 Depends on many tickets already merged in 4.3.4.alpha1
 
@@ -219,7 +219,7 @@ archive/issue_comments_075574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8429#issuecomment-75574",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_075577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8429#issuecomment-75577",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_075578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8429#issuecomment-75578",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

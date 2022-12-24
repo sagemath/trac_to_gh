@@ -3,7 +3,7 @@
 archive/issues_005709.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5709\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5709\n\n",
     "created_at": "2009-04-08T01:04:28Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_005709.json:
     "title": "singular interface -- use a smaller file size cutoff on solaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5709",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5709
 archive/issue_comments_044602.json:
 ```json
 {
-    "body": "Attachment [trac_5709.patch](tarball://root/attachments/some-uuid/ticket5709/trac_5709.patch) by was created at 2009-04-08 01:11:22",
+    "body": "Attachment [trac_5709.patch](tarball://root/attachments/some-uuid/ticket5709/trac_5709.patch) by @williamstein created at 2009-04-08 01:11:22",
     "created_at": "2009-04-08T01:11:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5709",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5709#issuecomment-44602",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5709.patch](tarball://root/attachments/some-uuid/ticket5709/trac_5709.patch) by was created at 2009-04-08 01:11:22
+Attachment [trac_5709.patch](tarball://root/attachments/some-uuid/ticket5709/trac_5709.patch) by @williamstein created at 2009-04-08 01:11:22
 
 
 

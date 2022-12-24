@@ -14,7 +14,7 @@ archive/issues_005636.json:
     "title": "[with patch; needs review] jsmath is broken in sage-3.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5636",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5636
 archive/issue_comments_044017.json:
 ```json
 {
-    "body": "Attachment [trac_5636.patch](tarball://root/attachments/some-uuid/ticket5636/trac_5636.patch) by was created at 2009-03-29 23:23:58",
+    "body": "Attachment [trac_5636.patch](tarball://root/attachments/some-uuid/ticket5636/trac_5636.patch) by @williamstein created at 2009-03-29 23:23:58",
     "created_at": "2009-03-29T23:23:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5636",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5636#issuecomment-44017",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5636.patch](tarball://root/attachments/some-uuid/ticket5636/trac_5636.patch) by was created at 2009-03-29 23:23:58
+Attachment [trac_5636.patch](tarball://root/attachments/some-uuid/ticket5636/trac_5636.patch) by @williamstein created at 2009-03-29 23:23:58
 
 
 
@@ -68,7 +68,7 @@ archive/issue_comments_044018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5636",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5636#issuecomment-44018",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

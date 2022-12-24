@@ -3,7 +3,7 @@
 archive/issues_008098.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  polybori malb robertwb\n\nI was just grading papers in my class and one student (Andrew Ohana) pointed out in his solution that Sage's solve_mod is massively broken.  For example:\n\n```\nsage: var('x')\nsage: solve_mod([x^2==1], 9)\n[]         # WTF?\n```\n\nand:\n\n```\nsage: solve_mod([x^2==1], 8)\n[(1,), (3,), (4,), (5,), (7,)]\n```\n\n\nEtc. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8098\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  polybori @malb @robertwb\n\nI was just grading papers in my class and one student (Andrew Ohana) pointed out in his solution that Sage's solve_mod is massively broken.  For example:\n\n```\nsage: var('x')\nsage: solve_mod([x^2==1], 9)\n[]         # WTF?\n```\n\nand:\n\n```\nsage: solve_mod([x^2==1], 8)\n[(1,), (3,), (4,), (5,), (7,)]\n```\n\n\nEtc. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8098\n\n",
     "created_at": "2010-01-27T23:13:42Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_008098.json:
     "title": "solve_mod is horribly broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8098",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  polybori malb robertwb
+CC:  polybori @malb @robertwb
 
 I was just grading papers in my class and one student (Andrew Ohana) pointed out in his solution that Sage's solve_mod is massively broken.  For example:
 
@@ -98,7 +98,7 @@ archive/issue_comments_071048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8098#issuecomment-71048",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_071051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8098#issuecomment-71051",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_071053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8098#issuecomment-71053",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -221,16 +221,16 @@ Changing status from new to needs_review.
 archive/issue_comments_071054.json:
 ```json
 {
-    "body": "Attachment [trac_8098.patch](tarball://root/attachments/some-uuid/ticket8098/trac_8098.patch) by malb created at 2010-02-09 18:50:54\n\nSorry for the delay.",
+    "body": "Attachment [trac_8098.patch](tarball://root/attachments/some-uuid/ticket8098/trac_8098.patch) by @malb created at 2010-02-09 18:50:54\n\nSorry for the delay.",
     "created_at": "2010-02-09T18:50:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8098#issuecomment-71054",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_8098.patch](tarball://root/attachments/some-uuid/ticket8098/trac_8098.patch) by malb created at 2010-02-09 18:50:54
+Attachment [trac_8098.patch](tarball://root/attachments/some-uuid/ticket8098/trac_8098.patch) by @malb created at 2010-02-09 18:50:54
 
 Sorry for the delay.
 
@@ -246,7 +246,7 @@ archive/issue_comments_071055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8098#issuecomment-71055",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_071056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8098#issuecomment-71056",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_071057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8098#issuecomment-71057",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_071058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8098#issuecomment-71058",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_071059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8098#issuecomment-71059",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -357,7 +357,7 @@ archive/issue_comments_071060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8098#issuecomment-71060",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -375,7 +375,7 @@ archive/issue_comments_071061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8098#issuecomment-71061",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_071062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8098#issuecomment-71062",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -420,7 +420,7 @@ archive/issue_comments_071063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8098#issuecomment-71063",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -450,7 +450,7 @@ archive/issue_comments_071064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8098#issuecomment-71064",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

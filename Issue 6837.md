@@ -3,7 +3,7 @@
 archive/issues_006837.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nIn Koblitz's book \"Introduction to Elliptic Curves and Modular Forms\", Proposition III.3.17, it is proved that if f(q)=sum_{n=0}^infinity a_n q^n is the Fourier expansion of a modular form in M_k(Gamma_0(M),chi) and chi_1 is a primitive Dirichlet character modulo N, then f_chi(q)=sum_{n=0}^infinity \\chi_1(n) a_n q^n is a modular form in M_k(\\Gamma_0(MN<sup>2),\\chi\\chi_1</sup>2). This is a proposed method for objects of type 'sage.modular.modform.element.ModularFormElement' which will create f_\\chi given f and chi.\n\n\n```\ndef twist(f,chi):\n        r\"\"\"\n        This function returns the twist of the modular form f by the Dirichlet character chi\n\n        INPUT:\n\n        - ``f`` - a modular form\n\n        - ``chi`` - a Dirichlet character\n\n        OUTPUT:\n\n        f_\\chi, the twist of f by chi; if f(q)=sum_{n=0}^infty a_n q^n, then f_chi(q)=sum_{n=0}^infty chi(n) a_n q^n ([Koblitz]).\n\n        EXAMPLES:\n\n        Here is a basic example:\n\n        ::\n\n                sage: f=CuspForms(11,2).0\n                sage: f.q_expansion(6)\n                q - 2*q^2 - q^3 + 2*q^4 + q^5 + O(q^6)\n                sage: eps=DirichletGroup(3).0\n                sage: f.twist(eps)\n                q + 2*q^2 + 2*q^4 - q^5 + O(q^6)\n\n        ::\n\n        NOTES:\n        This function is rather slow when chi is not a quadratic character; this may be improved with a new definition of the Sturm bound.\n\n        REFERENCES:\n\n        - [Koblitz], Neal Koblitz, \"Introduction to Elliptic Curves and Modular Forms\", Springer GTM 97, 1993, Proposition III.3.17.\n\n        AUTHORS:\n\n        - L. J. P. Kilford (2009-08-28)\n\n        \"\"\"\n        DG_MNsq=DirichletGroup(f.level()*chi.modulus()^2)\n        basering=DG_MNsq.base_ring()\n        M_k_MNsq=ModularForms(DG_MNsq(self.character())*DG_MNsq(chi)^2,self.weight(),base_ring=basering)\n        bound=M_k_MNsq.sturm_bound()+1\n        PSR.<q>=PowerSeriesRing(DG_MNsq.base_ring())\n        f_twist=PSR([self[i]*chi(i) for i in xrange(0,bound+2)])+O(q^bound)\n        return M_k_MNsq(f_twist)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6837\n\n",
+    "body": "Assignee: @craigcitro\n\nIn Koblitz's book \"Introduction to Elliptic Curves and Modular Forms\", Proposition III.3.17, it is proved that if f(q)=sum_{n=0}^infinity a_n q^n is the Fourier expansion of a modular form in M_k(Gamma_0(M),chi) and chi_1 is a primitive Dirichlet character modulo N, then f_chi(q)=sum_{n=0}^infinity \\chi_1(n) a_n q^n is a modular form in M_k(\\Gamma_0(MN<sup>2),\\chi\\chi_1</sup>2). This is a proposed method for objects of type 'sage.modular.modform.element.ModularFormElement' which will create f_\\chi given f and chi.\n\n\n```\ndef twist(f,chi):\n        r\"\"\"\n        This function returns the twist of the modular form f by the Dirichlet character chi\n\n        INPUT:\n\n        - ``f`` - a modular form\n\n        - ``chi`` - a Dirichlet character\n\n        OUTPUT:\n\n        f_\\chi, the twist of f by chi; if f(q)=sum_{n=0}^infty a_n q^n, then f_chi(q)=sum_{n=0}^infty chi(n) a_n q^n ([Koblitz]).\n\n        EXAMPLES:\n\n        Here is a basic example:\n\n        ::\n\n                sage: f=CuspForms(11,2).0\n                sage: f.q_expansion(6)\n                q - 2*q^2 - q^3 + 2*q^4 + q^5 + O(q^6)\n                sage: eps=DirichletGroup(3).0\n                sage: f.twist(eps)\n                q + 2*q^2 + 2*q^4 - q^5 + O(q^6)\n\n        ::\n\n        NOTES:\n        This function is rather slow when chi is not a quadratic character; this may be improved with a new definition of the Sturm bound.\n\n        REFERENCES:\n\n        - [Koblitz], Neal Koblitz, \"Introduction to Elliptic Curves and Modular Forms\", Springer GTM 97, 1993, Proposition III.3.17.\n\n        AUTHORS:\n\n        - L. J. P. Kilford (2009-08-28)\n\n        \"\"\"\n        DG_MNsq=DirichletGroup(f.level()*chi.modulus()^2)\n        basering=DG_MNsq.base_ring()\n        M_k_MNsq=ModularForms(DG_MNsq(self.character())*DG_MNsq(chi)^2,self.weight(),base_ring=basering)\n        bound=M_k_MNsq.sturm_bound()+1\n        PSR.<q>=PowerSeriesRing(DG_MNsq.base_ring())\n        f_twist=PSR([self[i]*chi(i) for i in xrange(0,bound+2)])+O(q^bound)\n        return M_k_MNsq(f_twist)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6837\n\n",
     "created_at": "2009-08-28T15:38:45Z",
     "labels": [
         "modular forms",
@@ -17,7 +17,7 @@ archive/issues_006837.json:
     "user": "ljpk"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 In Koblitz's book "Introduction to Elliptic Curves and Modular Forms", Proposition III.3.17, it is proved that if f(q)=sum_{n=0}^infinity a_n q^n is the Fourier expansion of a modular form in M_k(Gamma_0(M),chi) and chi_1 is a primitive Dirichlet character modulo N, then f_chi(q)=sum_{n=0}^infinity \chi_1(n) a_n q^n is a modular form in M_k(\Gamma_0(MN<sup>2),\chi\chi_1</sup>2). This is a proposed method for objects of type 'sage.modular.modform.element.ModularFormElement' which will create f_\chi given f and chi.
 
@@ -88,7 +88,7 @@ archive/issue_comments_056373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6837#issuecomment-56373",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_056374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6837#issuecomment-56374",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_056375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6837#issuecomment-56375",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -137,16 +137,16 @@ Changing keywords from "" to "modular form twist character".
 archive/issue_comments_056376.json:
 ```json
 {
-    "body": "Attachment [trac_6837.patch](tarball://root/attachments/some-uuid/ticket6837/trac_6837.patch) by AlexGhitza created at 2010-01-03 11:27:50",
+    "body": "Attachment [trac_6837.patch](tarball://root/attachments/some-uuid/ticket6837/trac_6837.patch) by @aghitza created at 2010-01-03 11:27:50",
     "created_at": "2010-01-03T11:27:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6837#issuecomment-56376",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_6837.patch](tarball://root/attachments/some-uuid/ticket6837/trac_6837.patch) by AlexGhitza created at 2010-01-03 11:27:50
+Attachment [trac_6837.patch](tarball://root/attachments/some-uuid/ticket6837/trac_6837.patch) by @aghitza created at 2010-01-03 11:27:50
 
 
 
@@ -160,7 +160,7 @@ archive/issue_comments_056377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6837#issuecomment-56377",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_056378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6837#issuecomment-56378",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_056379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6837#issuecomment-56379",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_056380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6837#issuecomment-56380",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_056381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6837#issuecomment-56381",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_056384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6837#issuecomment-56384",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -333,7 +333,7 @@ archive/issue_comments_056385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6837#issuecomment-56385",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -351,7 +351,7 @@ archive/issue_comments_056386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6837#issuecomment-56386",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -387,7 +387,7 @@ archive/issue_comments_056388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6837#issuecomment-56388",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -416,7 +416,7 @@ archive/issue_comments_056389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6837#issuecomment-56389",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -436,7 +436,7 @@ archive/issue_comments_056390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6837#issuecomment-56390",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -474,7 +474,7 @@ archive/issue_comments_056392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6837#issuecomment-56392",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -492,7 +492,7 @@ archive/issue_comments_056393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6837#issuecomment-56393",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -563,7 +563,7 @@ archive/issue_comments_056395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6837#issuecomment-56395",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -581,7 +581,7 @@ archive/issue_comments_056396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6837#issuecomment-56396",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -610,7 +610,7 @@ archive/issue_comments_056397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6837#issuecomment-56397",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -630,7 +630,7 @@ archive/issue_comments_056398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6837#issuecomment-56398",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -648,7 +648,7 @@ archive/issue_comments_056399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6837#issuecomment-56399",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

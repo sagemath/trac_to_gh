@@ -3,7 +3,7 @@
 archive/issues_000219.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/219\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/219\n\n",
     "created_at": "2007-01-25T19:00:13Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_000219.json:
     "title": "more optimizations for special rings (e.g., copy, etc; use ssmod as an example to motivate this)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/219",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_000983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/219",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/219#issuecomment-983",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_000984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/219",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/219#issuecomment-984",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

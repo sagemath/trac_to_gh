@@ -3,7 +3,7 @@
 archive/issues_004520.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  craigcitro\n\n\n```\nsage: M = matrix(CyclotomicField(5), 5, 2, 5)\n\n\n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4520\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @craigcitro\n\n\n```\nsage: M = matrix(CyclotomicField(5), 5, 2, 5)\n\n\n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4520\n\n",
     "created_at": "2008-11-14T06:52:59Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_004520.json:
     "title": "segfault in cyclotomic matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4520",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  craigcitro
+CC:  @craigcitro
 
 
 ```
@@ -53,7 +53,7 @@ archive/issue_comments_033547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4520#issuecomment-33547",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_033548.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4520#issuecomment-33548",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -84,16 +84,16 @@ If you add a doctest, I'll give this a positive review.
 archive/issue_comments_033549.json:
 ```json
 {
-    "body": "Attachment [4520-cyclo-matrix-segfault.patch](tarball://root/attachments/some-uuid/ticket4520/4520-cyclo-matrix-segfault.patch) by robertwb created at 2008-11-14 07:18:34",
+    "body": "Attachment [4520-cyclo-matrix-segfault.patch](tarball://root/attachments/some-uuid/ticket4520/4520-cyclo-matrix-segfault.patch) by @robertwb created at 2008-11-14 07:18:34",
     "created_at": "2008-11-14T07:18:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4520#issuecomment-33549",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4520-cyclo-matrix-segfault.patch](tarball://root/attachments/some-uuid/ticket4520/4520-cyclo-matrix-segfault.patch) by robertwb created at 2008-11-14 07:18:34
+Attachment [4520-cyclo-matrix-segfault.patch](tarball://root/attachments/some-uuid/ticket4520/4520-cyclo-matrix-segfault.patch) by @robertwb created at 2008-11-14 07:18:34
 
 
 
@@ -107,7 +107,7 @@ archive/issue_comments_033550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4520#issuecomment-33550",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_033551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4520#issuecomment-33551",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003514.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  craigcitro ncalexan\n\nKeywords: free modules\n\nThis separates quadratic modules into free_quadratic_module.py -- these \nare free modules with a user-specified inner product.\n\nThis adds 100% documentation to free_module.py and free_quadratic_module.py.\n\nTODO: Probably we want to revise free module elements to make efficient use \nof diagonal inner_product_matrices.  I still intend to generalize the inner \nproduct matrix to support different image ring (real, complex, p-adic) for \nthe pairing, as well as integral pairings which are given by rational matrices.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3514\n\n",
+    "body": "Assignee: tbd\n\nCC:  @craigcitro @ncalexan\n\nKeywords: free modules\n\nThis separates quadratic modules into free_quadratic_module.py -- these \nare free modules with a user-specified inner product.\n\nThis adds 100% documentation to free_module.py and free_quadratic_module.py.\n\nTODO: Probably we want to revise free module elements to make efficient use \nof diagonal inner_product_matrices.  I still intend to generalize the inner \nproduct matrix to support different image ring (real, complex, p-adic) for \nthe pairing, as well as integral pairings which are given by rational matrices.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3514\n\n",
     "created_at": "2008-06-26T15:28:01Z",
     "labels": [
         "algebra",
@@ -19,7 +19,7 @@ archive/issues_003514.json:
 ```
 Assignee: tbd
 
-CC:  craigcitro ncalexan
+CC:  @craigcitro @ncalexan
 
 Keywords: free modules
 
@@ -86,7 +86,7 @@ archive/issue_comments_024755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3514#issuecomment-24755",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_024757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3514#issuecomment-24757",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_024758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3514#issuecomment-24758",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_024760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3514#issuecomment-24760",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_024761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3514#issuecomment-24761",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -289,16 +289,16 @@ Changing keywords from "free modules" to "free modules editor_mhansen".
 archive/issue_comments_024762.json:
 ```json
 {
-    "body": "Attachment [trac_3514.2.patch](tarball://root/attachments/some-uuid/ticket3514/trac_3514.2.patch) by mhansen created at 2008-07-09 00:29:23\n\nI've attached trac_3514.2.patch which applies cleanly against 3.0.4.rc0.",
+    "body": "Attachment [trac_3514.2.patch](tarball://root/attachments/some-uuid/ticket3514/trac_3514.2.patch) by @mwhansen created at 2008-07-09 00:29:23\n\nI've attached trac_3514.2.patch which applies cleanly against 3.0.4.rc0.",
     "created_at": "2008-07-09T00:29:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3514#issuecomment-24762",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3514.2.patch](tarball://root/attachments/some-uuid/ticket3514/trac_3514.2.patch) by mhansen created at 2008-07-09 00:29:23
+Attachment [trac_3514.2.patch](tarball://root/attachments/some-uuid/ticket3514/trac_3514.2.patch) by @mwhansen created at 2008-07-09 00:29:23
 
 I've attached trac_3514.2.patch which applies cleanly against 3.0.4.rc0.
 
@@ -314,7 +314,7 @@ archive/issue_comments_024763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3514#issuecomment-24763",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -340,7 +340,7 @@ archive/issue_comments_024764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3514#issuecomment-24764",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -361,16 +361,16 @@ I deviated a bit from my own review comments in a few places.
 archive/issue_comments_024765.json:
 ```json
 {
-    "body": "Attachment [trac_3514-review.patch](tarball://root/attachments/some-uuid/ticket3514/trac_3514-review.patch) by mhansen created at 2008-08-07 01:26:20",
+    "body": "Attachment [trac_3514-review.patch](tarball://root/attachments/some-uuid/ticket3514/trac_3514-review.patch) by @mwhansen created at 2008-08-07 01:26:20",
     "created_at": "2008-08-07T01:26:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3514#issuecomment-24765",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3514-review.patch](tarball://root/attachments/some-uuid/ticket3514/trac_3514-review.patch) by mhansen created at 2008-08-07 01:26:20
+Attachment [trac_3514-review.patch](tarball://root/attachments/some-uuid/ticket3514/trac_3514-review.patch) by @mwhansen created at 2008-08-07 01:26:20
 
 
 
@@ -384,7 +384,7 @@ archive/issue_comments_024766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3514#issuecomment-24766",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -408,7 +408,7 @@ archive/issue_comments_024767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3514#issuecomment-24767",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -450,7 +450,7 @@ archive/issue_comments_024769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3514#issuecomment-24769",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -504,7 +504,7 @@ archive/issue_comments_024772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3514#issuecomment-24772",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

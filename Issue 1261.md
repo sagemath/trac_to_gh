@@ -14,7 +14,7 @@ archive/issues_001261.json:
     "title": "parallel \"sage -br\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1261",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: was*
@@ -105,16 +105,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1261
 archive/issue_comments_007882.json:
 ```json
 {
-    "body": "Changing assignee from was* to gfurnish.",
+    "body": "Changing assignee from was* to @garyfurnish.",
     "created_at": "2008-03-03T02:17:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1261#issuecomment-7882",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from was* to gfurnish.
+Changing assignee from was* to @garyfurnish.
 
 
 
@@ -128,7 +128,7 @@ archive/issue_comments_007883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1261#issuecomment-7883",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_007884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1261#issuecomment-7884",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_007885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1261#issuecomment-7885",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -177,16 +177,16 @@ I built a new build system for this as scons was inadequate.  An alpha version i
 archive/issue_comments_007886.json:
 ```json
 {
-    "body": "Attachment [trac_1261_extcode.patch](tarball://root/attachments/some-uuid/ticket1261/trac_1261_extcode.patch) by gfurnish created at 2008-03-23 11:59:42\n\nPbuild extcode repo",
+    "body": "Attachment [trac_1261_extcode.patch](tarball://root/attachments/some-uuid/ticket1261/trac_1261_extcode.patch) by @garyfurnish created at 2008-03-23 11:59:42\n\nPbuild extcode repo",
     "created_at": "2008-03-23T11:59:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1261#issuecomment-7886",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_1261_extcode.patch](tarball://root/attachments/some-uuid/ticket1261/trac_1261_extcode.patch) by gfurnish created at 2008-03-23 11:59:42
+Attachment [trac_1261_extcode.patch](tarball://root/attachments/some-uuid/ticket1261/trac_1261_extcode.patch) by @garyfurnish created at 2008-03-23 11:59:42
 
 Pbuild extcode repo
 
@@ -202,7 +202,7 @@ archive/issue_comments_007887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1261#issuecomment-7887",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -215,16 +215,16 @@ PBuild for extcode requires glib to work correctly.  Obtain at #2436.
 archive/issue_comments_007888.json:
 ```json
 {
-    "body": "Attachment [trac_1261_extcode_2.patch](tarball://root/attachments/some-uuid/ticket1261/trac_1261_extcode_2.patch) by gfurnish created at 2008-03-23 17:32:15\n\nThis file is to be applied on top of the first patch.",
+    "body": "Attachment [trac_1261_extcode_2.patch](tarball://root/attachments/some-uuid/ticket1261/trac_1261_extcode_2.patch) by @garyfurnish created at 2008-03-23 17:32:15\n\nThis file is to be applied on top of the first patch.",
     "created_at": "2008-03-23T17:32:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1261#issuecomment-7888",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_1261_extcode_2.patch](tarball://root/attachments/some-uuid/ticket1261/trac_1261_extcode_2.patch) by gfurnish created at 2008-03-23 17:32:15
+Attachment [trac_1261_extcode_2.patch](tarball://root/attachments/some-uuid/ticket1261/trac_1261_extcode_2.patch) by @garyfurnish created at 2008-03-23 17:32:15
 
 This file is to be applied on top of the first patch.
 
@@ -235,16 +235,16 @@ This file is to be applied on top of the first patch.
 archive/issue_comments_007889.json:
 ```json
 {
-    "body": "Attachment [trac_1261_extcode_3.patch](tarball://root/attachments/some-uuid/ticket1261/trac_1261_extcode_3.patch) by gfurnish created at 2008-03-23 19:20:06\n\nApply on top of the 2nd patch",
+    "body": "Attachment [trac_1261_extcode_3.patch](tarball://root/attachments/some-uuid/ticket1261/trac_1261_extcode_3.patch) by @garyfurnish created at 2008-03-23 19:20:06\n\nApply on top of the 2nd patch",
     "created_at": "2008-03-23T19:20:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1261#issuecomment-7889",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_1261_extcode_3.patch](tarball://root/attachments/some-uuid/ticket1261/trac_1261_extcode_3.patch) by gfurnish created at 2008-03-23 19:20:06
+Attachment [trac_1261_extcode_3.patch](tarball://root/attachments/some-uuid/ticket1261/trac_1261_extcode_3.patch) by @garyfurnish created at 2008-03-23 19:20:06
 
 Apply on top of the 2nd patch
 
@@ -291,7 +291,7 @@ archive/issue_comments_007891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1261#issuecomment-7891",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -340,7 +340,7 @@ archive/issue_comments_007893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1261#issuecomment-7893",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -480,7 +480,7 @@ archive/issue_comments_007897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1261#issuecomment-7897",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -551,16 +551,16 @@ Michael
 archive/issue_comments_007900.json:
 ```json
 {
-    "body": "Attachment [trac_1261_extcode_8.patch](tarball://root/attachments/some-uuid/ticket1261/trac_1261_extcode_8.patch) by gfurnish created at 2008-04-08 09:10:12",
+    "body": "Attachment [trac_1261_extcode_8.patch](tarball://root/attachments/some-uuid/ticket1261/trac_1261_extcode_8.patch) by @garyfurnish created at 2008-04-08 09:10:12",
     "created_at": "2008-04-08T09:10:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1261#issuecomment-7900",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_1261_extcode_8.patch](tarball://root/attachments/some-uuid/ticket1261/trac_1261_extcode_8.patch) by gfurnish created at 2008-04-08 09:10:12
+Attachment [trac_1261_extcode_8.patch](tarball://root/attachments/some-uuid/ticket1261/trac_1261_extcode_8.patch) by @garyfurnish created at 2008-04-08 09:10:12
 
 
 
@@ -632,16 +632,16 @@ Merged trac_1261_extcode_9.patch in Sage 3.0.alpha3
 archive/issue_comments_007904.json:
 ```json
 {
-    "body": "Attachment [trac_1261_extcode_10.patch](tarball://root/attachments/some-uuid/ticket1261/trac_1261_extcode_10.patch) by gfurnish created at 2008-04-10 06:16:22",
+    "body": "Attachment [trac_1261_extcode_10.patch](tarball://root/attachments/some-uuid/ticket1261/trac_1261_extcode_10.patch) by @garyfurnish created at 2008-04-10 06:16:22",
     "created_at": "2008-04-10T06:16:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1261#issuecomment-7904",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_1261_extcode_10.patch](tarball://root/attachments/some-uuid/ticket1261/trac_1261_extcode_10.patch) by gfurnish created at 2008-04-10 06:16:22
+Attachment [trac_1261_extcode_10.patch](tarball://root/attachments/some-uuid/ticket1261/trac_1261_extcode_10.patch) by @garyfurnish created at 2008-04-10 06:16:22
 
 
 
@@ -650,16 +650,16 @@ Attachment [trac_1261_extcode_10.patch](tarball://root/attachments/some-uuid/tic
 archive/issue_comments_007905.json:
 ```json
 {
-    "body": "Attachment [trac_1261_local_2.2.patch](tarball://root/attachments/some-uuid/ticket1261/trac_1261_local_2.2.patch) by gfurnish created at 2008-04-10 07:02:08",
+    "body": "Attachment [trac_1261_local_2.2.patch](tarball://root/attachments/some-uuid/ticket1261/trac_1261_local_2.2.patch) by @garyfurnish created at 2008-04-10 07:02:08",
     "created_at": "2008-04-10T07:02:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1261#issuecomment-7905",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_1261_local_2.2.patch](tarball://root/attachments/some-uuid/ticket1261/trac_1261_local_2.2.patch) by gfurnish created at 2008-04-10 07:02:08
+Attachment [trac_1261_local_2.2.patch](tarball://root/attachments/some-uuid/ticket1261/trac_1261_local_2.2.patch) by @garyfurnish created at 2008-04-10 07:02:08
 
 
 
@@ -673,7 +673,7 @@ archive/issue_comments_007906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1261#issuecomment-7906",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -726,16 +726,16 @@ Merged trac_1261_extcode_10.patch in Sage 3.0.rc0
 archive/issue_comments_007909.json:
 ```json
 {
-    "body": "Attachment [trac_1261_extcode_11.patch](tarball://root/attachments/some-uuid/ticket1261/trac_1261_extcode_11.patch) by gfurnish created at 2008-04-27 01:19:46",
+    "body": "Attachment [trac_1261_extcode_11.patch](tarball://root/attachments/some-uuid/ticket1261/trac_1261_extcode_11.patch) by @garyfurnish created at 2008-04-27 01:19:46",
     "created_at": "2008-04-27T01:19:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1261#issuecomment-7909",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_1261_extcode_11.patch](tarball://root/attachments/some-uuid/ticket1261/trac_1261_extcode_11.patch) by gfurnish created at 2008-04-27 01:19:46
+Attachment [trac_1261_extcode_11.patch](tarball://root/attachments/some-uuid/ticket1261/trac_1261_extcode_11.patch) by @garyfurnish created at 2008-04-27 01:19:46
 
 
 
@@ -834,16 +834,16 @@ oops, I didn't mean to close this ;(
 archive/issue_comments_007915.json:
 ```json
 {
-    "body": "Attachment [trac_1261_local1.patch](tarball://root/attachments/some-uuid/ticket1261/trac_1261_local1.patch) by gfurnish created at 2008-04-27 23:33:37\n\nSAGE_PBUILD OPTION",
+    "body": "Attachment [trac_1261_local1.patch](tarball://root/attachments/some-uuid/ticket1261/trac_1261_local1.patch) by @garyfurnish created at 2008-04-27 23:33:37\n\nSAGE_PBUILD OPTION",
     "created_at": "2008-04-27T23:33:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1261#issuecomment-7915",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_1261_local1.patch](tarball://root/attachments/some-uuid/ticket1261/trac_1261_local1.patch) by gfurnish created at 2008-04-27 23:33:37
+Attachment [trac_1261_local1.patch](tarball://root/attachments/some-uuid/ticket1261/trac_1261_local1.patch) by @garyfurnish created at 2008-04-27 23:33:37
 
 SAGE_PBUILD OPTION
 

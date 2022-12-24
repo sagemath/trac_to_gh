@@ -14,7 +14,7 @@ archive/issues_006203.json:
     "title": "numerical noise on sparc solaris (trivial to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6203",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6203
 archive/issue_comments_049562.json:
 ```json
 {
-    "body": "Changing assignee from tbd to mhansen.",
+    "body": "Changing assignee from tbd to @mwhansen.",
     "created_at": "2009-06-04T06:34:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6203#issuecomment-49562",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tbd to mhansen.
+Changing assignee from tbd to @mwhansen.
 
 
 
@@ -70,7 +70,7 @@ archive/issue_comments_049563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6203#issuecomment-49563",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -83,16 +83,16 @@ Changing status from new to assigned.
 archive/issue_comments_049564.json:
 ```json
 {
-    "body": "Attachment [trac_6203.patch](tarball://root/attachments/some-uuid/ticket6203/trac_6203.patch) by was created at 2009-06-04 08:24:42",
+    "body": "Attachment [trac_6203.patch](tarball://root/attachments/some-uuid/ticket6203/trac_6203.patch) by @williamstein created at 2009-06-04 08:24:42",
     "created_at": "2009-06-04T08:24:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6203#issuecomment-49564",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6203.patch](tarball://root/attachments/some-uuid/ticket6203/trac_6203.patch) by was created at 2009-06-04 08:24:42
+Attachment [trac_6203.patch](tarball://root/attachments/some-uuid/ticket6203/trac_6203.patch) by @williamstein created at 2009-06-04 08:24:42
 
 
 
@@ -106,7 +106,7 @@ archive/issue_comments_049565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6203#issuecomment-49565",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_049566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6203#issuecomment-49566",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -37,7 +37,7 @@ archive/issue_comments_055213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6737#issuecomment-55213",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_055217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6737#issuecomment-55217",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_055218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6737#issuecomment-55218",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_055219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6737#issuecomment-55219",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_055220.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6737#issuecomment-55220",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -197,13 +197,13 @@ Resolution: fixed
 archive/issue_comments_055221.json:
 ```json
 {
-    "body": "Attachment [trac_6737.patch](tarball://root/attachments/some-uuid/ticket6737/trac_6737.patch) by rlm created at 2010-01-19 00:26:13",
+    "body": "Attachment [trac_6737.patch](tarball://root/attachments/some-uuid/ticket6737/trac_6737.patch) by @rlmill created at 2010-01-19 00:26:13",
     "created_at": "2010-01-19T00:26:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6737#issuecomment-55221",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_6737.patch](tarball://root/attachments/some-uuid/ticket6737/trac_6737.patch) by rlm created at 2010-01-19 00:26:13
+Attachment [trac_6737.patch](tarball://root/attachments/some-uuid/ticket6737/trac_6737.patch) by @rlmill created at 2010-01-19 00:26:13

@@ -14,7 +14,7 @@ archive/issues_005175.json:
     "title": "[bug] Bug computing Bessel function J0(0)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5175",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 Assignee: tbd
@@ -67,7 +67,7 @@ archive/issue_comments_039644.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5175",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5175#issuecomment-39644",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_039645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5175",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5175#issuecomment-39645",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -108,16 +108,16 @@ sage: g(0)
 archive/issue_comments_039646.json:
 ```json
 {
-    "body": "Changing assignee from tbd to was.",
+    "body": "Changing assignee from tbd to @williamstein.",
     "created_at": "2009-07-11T11:18:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5175",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5175#issuecomment-39646",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from tbd to was.
+Changing assignee from tbd to @williamstein.
 
 
 

@@ -14,7 +14,7 @@ archive/issues_009349.json:
     "title": "Change binary .spkg placeholders into actual tar files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9349",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_088741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9349",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9349#issuecomment-88741",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_088742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9349",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9349#issuecomment-88742",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_088743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9349",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9349#issuecomment-88743",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_088744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9349",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9349#issuecomment-88744",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

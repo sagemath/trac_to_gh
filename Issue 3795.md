@@ -14,7 +14,7 @@ archive/issues_003795.json:
     "title": "increase coverage of sage/server/notebook/cell.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3795",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: boothby
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3795
 archive/issue_comments_026988.json:
 ```json
 {
-    "body": "Attachment [trac_3795.patch](tarball://root/attachments/some-uuid/ticket3795/trac_3795.patch) by mhansen created at 2008-08-09 15:16:31",
+    "body": "Attachment [trac_3795.patch](tarball://root/attachments/some-uuid/ticket3795/trac_3795.patch) by @mwhansen created at 2008-08-09 15:16:31",
     "created_at": "2008-08-09T15:16:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3795#issuecomment-26988",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3795.patch](tarball://root/attachments/some-uuid/ticket3795/trac_3795.patch) by mhansen created at 2008-08-09 15:16:31
+Attachment [trac_3795.patch](tarball://root/attachments/some-uuid/ticket3795/trac_3795.patch) by @mwhansen created at 2008-08-09 15:16:31
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_026989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3795#issuecomment-26989",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -80,16 +80,16 @@ SCORE cell.py: 79% (67 of 84)
 archive/issue_comments_026990.json:
 ```json
 {
-    "body": "Attachment [3795-mhansen-doctest-cell.patch](tarball://root/attachments/some-uuid/ticket3795/3795-mhansen-doctest-cell.patch) by ncalexan created at 2008-08-10 23:15:51",
+    "body": "Attachment [3795-mhansen-doctest-cell.patch](tarball://root/attachments/some-uuid/ticket3795/3795-mhansen-doctest-cell.patch) by @ncalexan created at 2008-08-10 23:15:51",
     "created_at": "2008-08-10T23:15:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3795#issuecomment-26990",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [3795-mhansen-doctest-cell.patch](tarball://root/attachments/some-uuid/ticket3795/3795-mhansen-doctest-cell.patch) by ncalexan created at 2008-08-10 23:15:51
+Attachment [3795-mhansen-doctest-cell.patch](tarball://root/attachments/some-uuid/ticket3795/3795-mhansen-doctest-cell.patch) by @ncalexan created at 2008-08-10 23:15:51
 
 
 
@@ -103,7 +103,7 @@ archive/issue_comments_026991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3795#issuecomment-26991",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_026992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3795#issuecomment-26992",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

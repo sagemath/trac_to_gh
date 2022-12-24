@@ -14,7 +14,7 @@ archive/issues_003408.json:
     "title": "[with spkg] Cython 0.9.8 released",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3408",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: mabshoff
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3408
 archive/issue_comments_023904.json:
 ```json
 {
-    "body": "Attachment [3408-cython-0.9.8.patch](tarball://root/attachments/some-uuid/ticket3408/3408-cython-0.9.8.patch) by gfurnish created at 2008-06-13 02:53:29\n\nThis seems to break the future import in padic_generic_element.pyx",
+    "body": "Attachment [3408-cython-0.9.8.patch](tarball://root/attachments/some-uuid/ticket3408/3408-cython-0.9.8.patch) by @garyfurnish created at 2008-06-13 02:53:29\n\nThis seems to break the future import in padic_generic_element.pyx",
     "created_at": "2008-06-13T02:53:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3408",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3408#issuecomment-23904",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [3408-cython-0.9.8.patch](tarball://root/attachments/some-uuid/ticket3408/3408-cython-0.9.8.patch) by gfurnish created at 2008-06-13 02:53:29
+Attachment [3408-cython-0.9.8.patch](tarball://root/attachments/some-uuid/ticket3408/3408-cython-0.9.8.patch) by @garyfurnish created at 2008-06-13 02:53:29
 
 This seems to break the future import in padic_generic_element.pyx
 
@@ -57,7 +57,7 @@ archive/issue_comments_023905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3408",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3408#issuecomment-23905",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_023909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3408",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3408#issuecomment-23909",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_023910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3408",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3408#issuecomment-23910",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -192,16 +192,16 @@ rebased
 archive/issue_comments_023911.json:
 ```json
 {
-    "body": "Attachment [3408-cython-0.9.8.2.patch](tarball://root/attachments/some-uuid/ticket3408/3408-cython-0.9.8.2.patch) by robertwb created at 2008-06-13 17:11:51\n\nOK, I've rebased the patch. Note that interactive_constructors_c is sorted now, so this won't bite us again.",
+    "body": "Attachment [3408-cython-0.9.8.2.patch](tarball://root/attachments/some-uuid/ticket3408/3408-cython-0.9.8.2.patch) by @robertwb created at 2008-06-13 17:11:51\n\nOK, I've rebased the patch. Note that interactive_constructors_c is sorted now, so this won't bite us again.",
     "created_at": "2008-06-13T17:11:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3408",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3408#issuecomment-23911",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3408-cython-0.9.8.2.patch](tarball://root/attachments/some-uuid/ticket3408/3408-cython-0.9.8.2.patch) by robertwb created at 2008-06-13 17:11:51
+Attachment [3408-cython-0.9.8.2.patch](tarball://root/attachments/some-uuid/ticket3408/3408-cython-0.9.8.2.patch) by @robertwb created at 2008-06-13 17:11:51
 
 OK, I've rebased the patch. Note that interactive_constructors_c is sorted now, so this won't bite us again.
 

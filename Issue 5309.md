@@ -14,7 +14,7 @@ archive/issues_005309.json:
     "title": "mark some doctests in misc/package.py #optional - internet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5309",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -48,16 +48,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5309
 archive/issue_comments_040859.json:
 ```json
 {
-    "body": "Attachment [trac_5309.patch](tarball://root/attachments/some-uuid/ticket5309/trac_5309.patch) by was created at 2009-02-20 04:52:16",
+    "body": "Attachment [trac_5309.patch](tarball://root/attachments/some-uuid/ticket5309/trac_5309.patch) by @williamstein created at 2009-02-20 04:52:16",
     "created_at": "2009-02-20T04:52:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5309#issuecomment-40859",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5309.patch](tarball://root/attachments/some-uuid/ticket5309/trac_5309.patch) by was created at 2009-02-20 04:52:16
+Attachment [trac_5309.patch](tarball://root/attachments/some-uuid/ticket5309/trac_5309.patch) by @williamstein created at 2009-02-20 04:52:16
 
 
 

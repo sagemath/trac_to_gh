@@ -14,7 +14,7 @@ archive/issues_001798.json:
     "title": "3d graphics -- add to the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1798",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -37,7 +37,7 @@ archive/issue_comments_011380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1798#issuecomment-11380",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_004611.json:
     "title": "deprecate sqrt_approx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4611",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4611
 archive/issue_comments_034607.json:
 ```json
 {
-    "body": "Attachment [4611](tarball://root/attachments/some-uuid/ticket4611/4611) by roed created at 2009-01-23 02:49:47",
+    "body": "Attachment [4611](tarball://root/attachments/some-uuid/ticket4611/4611) by @roed314 created at 2009-01-23 02:49:47",
     "created_at": "2009-01-23T02:49:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4611#issuecomment-34607",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [4611](tarball://root/attachments/some-uuid/ticket4611/4611) by roed created at 2009-01-23 02:49:47
+Attachment [4611](tarball://root/attachments/some-uuid/ticket4611/4611) by @roed314 created at 2009-01-23 02:49:47
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_034608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4611#issuecomment-34608",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

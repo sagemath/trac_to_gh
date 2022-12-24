@@ -3,7 +3,7 @@
 archive/issues_000819.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\npython's inspect.findsource returns a line number that is 0-based, because the source\nfile is considered to be a list of lines. sage.misc.sageinspect._extract_embedded_position tries to return similar data, but does so 1-based. We should probably be consistent about how line numbers are handled.\n\nLine numbers *SHOULD* be 1-based, of course, but we cannot change python's library. \n\nAt the same time, python's \"inspect\" does not have a routine to just give back a line number. It always gives the source itself as well.\n\nPerhaps the solution is to include into sageinspect a routine that gives back file name and line number? The routine \"fileandline\" included in patch #768 tries to do this. Perhaps it should be included in sageinspect and thus hide the discrepancy between 0- and 1-based line numbers that currently becomes visible because functionality has to be borrowed from both \"inspect\" and \"sageinspect\"?\n\nIssue created by migration from https://trac.sagemath.org/ticket/819\n\n",
+    "body": "Assignee: @robertwb\n\npython's inspect.findsource returns a line number that is 0-based, because the source\nfile is considered to be a list of lines. sage.misc.sageinspect._extract_embedded_position tries to return similar data, but does so 1-based. We should probably be consistent about how line numbers are handled.\n\nLine numbers *SHOULD* be 1-based, of course, but we cannot change python's library. \n\nAt the same time, python's \"inspect\" does not have a routine to just give back a line number. It always gives the source itself as well.\n\nPerhaps the solution is to include into sageinspect a routine that gives back file name and line number? The routine \"fileandline\" included in patch #768 tries to do this. Perhaps it should be included in sageinspect and thus hide the discrepancy between 0- and 1-based line numbers that currently becomes visible because functionality has to be borrowed from both \"inspect\" and \"sageinspect\"?\n\nIssue created by migration from https://trac.sagemath.org/ticket/819\n\n",
     "created_at": "2007-10-04T03:06:52Z",
     "labels": [
         "user interface",
@@ -13,10 +13,10 @@ archive/issues_000819.json:
     "title": "linenumbers in python inspect are 0-based",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/819",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 python's inspect.findsource returns a line number that is 0-based, because the source
 file is considered to be a list of lines. sage.misc.sageinspect._extract_embedded_position tries to return similar data, but does so 1-based. We should probably be consistent about how line numbers are handled.
@@ -43,7 +43,7 @@ archive/issue_comments_005082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/819",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/819#issuecomment-5082",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_005083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/819",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/819#issuecomment-5083",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_005084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/819",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/819#issuecomment-5084",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_005085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/819",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/819#issuecomment-5085",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_005086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/819",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/819#issuecomment-5086",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_000782.json:
     "title": "sage -testall should support ctrl-C",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/782",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 Assignee: failure
@@ -37,7 +37,7 @@ archive/issue_comments_004680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/782#issuecomment-4680",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_004681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/782#issuecomment-4681",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

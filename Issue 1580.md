@@ -14,7 +14,7 @@ archive/issues_001580.json:
     "title": "notebook shows graphics out of order",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1580",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
@@ -67,16 +67,16 @@ Thanks for reporting it.
 archive/issue_comments_010070.json:
 ```json
 {
-    "body": "Attachment [trac-1580.patch](tarball://root/attachments/some-uuid/ticket1580/trac-1580.patch) by rlm created at 2007-12-22 21:00:42",
+    "body": "Attachment [trac-1580.patch](tarball://root/attachments/some-uuid/ticket1580/trac-1580.patch) by @rlmill created at 2007-12-22 21:00:42",
     "created_at": "2007-12-22T21:00:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1580#issuecomment-10070",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac-1580.patch](tarball://root/attachments/some-uuid/ticket1580/trac-1580.patch) by rlm created at 2007-12-22 21:00:42
+Attachment [trac-1580.patch](tarball://root/attachments/some-uuid/ticket1580/trac-1580.patch) by @rlmill created at 2007-12-22 21:00:42
 
 
 
@@ -90,7 +90,7 @@ archive/issue_comments_010071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1580#issuecomment-10071",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_010072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1580#issuecomment-10072",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

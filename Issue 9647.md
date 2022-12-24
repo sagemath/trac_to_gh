@@ -3,7 +3,7 @@
 archive/issues_009647.json:
 ```json
 {
-    "body": "Assignee: jason, jkantor\n\nCC:  kcrisman ncohen\n\nAdd an example from sage-support to the head of mip.pyx [see here](http://groups.google.com/group/sage-support/browse_thread/thread/e5ebaf0f6f657ab2).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9647\n\n",
+    "body": "Assignee: jason, jkantor\n\nCC:  @kcrisman @nathanncohen\n\nAdd an example from sage-support to the head of mip.pyx [see here](http://groups.google.com/group/sage-support/browse_thread/thread/e5ebaf0f6f657ab2).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9647\n\n",
     "created_at": "2010-07-30T17:06:42Z",
     "labels": [
         "numerical",
@@ -14,12 +14,12 @@ archive/issues_009647.json:
     "title": "instructive example for mip.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9647",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 Assignee: jason, jkantor
 
-CC:  kcrisman ncohen
+CC:  @kcrisman @nathanncohen
 
 Add an example from sage-support to the head of mip.pyx [see here](http://groups.google.com/group/sage-support/browse_thread/thread/e5ebaf0f6f657ab2).
 
@@ -39,7 +39,7 @@ archive/issue_comments_093542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9647",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9647#issuecomment-93542",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_093543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9647",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9647#issuecomment-93543",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_093544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9647",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9647#issuecomment-93544",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_093545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9647",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9647#issuecomment-93545",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_093546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9647",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9647#issuecomment-93546",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_093547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9647",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9647#issuecomment-93547",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_093548.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9647",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9647#issuecomment-93548",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_093549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9647",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9647#issuecomment-93549",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_093550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9647",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9647#issuecomment-93550",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -200,16 +200,16 @@ Nathann
 archive/issue_comments_093551.json:
 ```json
 {
-    "body": "Attachment [9647-example-MILP.patch](tarball://root/attachments/some-uuid/ticket9647/9647-example-MILP.patch) by schilly created at 2010-07-31 14:54:25\n\nok, you are probably right.",
+    "body": "Attachment [9647-example-MILP.patch](tarball://root/attachments/some-uuid/ticket9647/9647-example-MILP.patch) by @haraldschilly created at 2010-07-31 14:54:25\n\nok, you are probably right.",
     "created_at": "2010-07-31T14:54:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9647",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9647#issuecomment-93551",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
-Attachment [9647-example-MILP.patch](tarball://root/attachments/some-uuid/ticket9647/9647-example-MILP.patch) by schilly created at 2010-07-31 14:54:25
+Attachment [9647-example-MILP.patch](tarball://root/attachments/some-uuid/ticket9647/9647-example-MILP.patch) by @haraldschilly created at 2010-07-31 14:54:25
 
 ok, you are probably right.
 
@@ -225,7 +225,7 @@ archive/issue_comments_093552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9647",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9647#issuecomment-93552",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_093553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9647",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9647#issuecomment-93553",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_093554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9647",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9647#issuecomment-93554",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

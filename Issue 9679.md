@@ -3,7 +3,7 @@
 archive/issues_009679.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  mkoeppe slelievre\n\nKeywords: vmware readme\n\nThis readme file has not kept up with the times.  Only a few changes are needed: the hard drive requirements are closer to 4.5GB than 2.5GB, and the Sage notebook can now be started by clicking an icon.  Also, we should change SAGE to Sage throughout.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9679\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @mkoeppe @slel\n\nKeywords: vmware readme\n\nThis readme file has not kept up with the times.  Only a few changes are needed: the hard drive requirements are closer to 4.5GB than 2.5GB, and the Sage notebook can now be started by clicking an icon.  Also, we should change SAGE to Sage throughout.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9679\n\n",
     "created_at": "2010-08-03T22:19:14Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_009679.json:
     "title": "update README-vmware.txt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9679",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 Assignee: mvngu
 
-CC:  mkoeppe slelievre
+CC:  @mkoeppe @slel
 
 Keywords: vmware readme
 
@@ -41,7 +41,7 @@ archive/issue_comments_094101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9679#issuecomment-94101",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_094102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9679#issuecomment-94102",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_094103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9679#issuecomment-94103",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_094104.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9679#issuecomment-94104",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_094105.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9679#issuecomment-94105",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_094106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9679#issuecomment-94106",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_094107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9679#issuecomment-94107",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

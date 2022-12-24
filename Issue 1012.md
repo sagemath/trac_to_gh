@@ -14,7 +14,7 @@ archive/issues_001012.json:
     "title": "fix some doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1012",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: failure
@@ -122,7 +122,7 @@ archive/issue_comments_006198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1012",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1012#issuecomment-6198",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

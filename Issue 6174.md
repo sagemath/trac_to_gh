@@ -14,7 +14,7 @@ archive/issues_006174.json:
     "title": "Modify README.txt in the top level of the Sage install to describe the SAGE_FAT_BINARY build flag",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6174",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6174
 archive/issue_comments_049235.json:
 ```json
 {
-    "body": "Attachment [trac_6174-sage_local_bin.patch](tarball://root/attachments/some-uuid/ticket6174/trac_6174-sage_local_bin.patch) by was created at 2009-06-01 00:16:31",
+    "body": "Attachment [trac_6174-sage_local_bin.patch](tarball://root/attachments/some-uuid/ticket6174/trac_6174-sage_local_bin.patch) by @williamstein created at 2009-06-01 00:16:31",
     "created_at": "2009-06-01T00:16:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6174#issuecomment-49235",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6174-sage_local_bin.patch](tarball://root/attachments/some-uuid/ticket6174/trac_6174-sage_local_bin.patch) by was created at 2009-06-01 00:16:31
+Attachment [trac_6174-sage_local_bin.patch](tarball://root/attachments/some-uuid/ticket6174/trac_6174-sage_local_bin.patch) by @williamstein created at 2009-06-01 00:16:31
 
 
 
@@ -50,16 +50,16 @@ Attachment [trac_6174-sage_local_bin.patch](tarball://root/attachments/some-uuid
 archive/issue_comments_049236.json:
 ```json
 {
-    "body": "Attachment [README.txt](tarball://root/attachments/some-uuid/ticket6174/README.txt) by was created at 2009-06-01 00:37:01",
+    "body": "Attachment [README.txt](tarball://root/attachments/some-uuid/ticket6174/README.txt) by @williamstein created at 2009-06-01 00:37:01",
     "created_at": "2009-06-01T00:37:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6174#issuecomment-49236",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [README.txt](tarball://root/attachments/some-uuid/ticket6174/README.txt) by was created at 2009-06-01 00:37:01
+Attachment [README.txt](tarball://root/attachments/some-uuid/ticket6174/README.txt) by @williamstein created at 2009-06-01 00:37:01
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_049237.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6174#issuecomment-49237",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_049238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6174#issuecomment-49238",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

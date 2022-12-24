@@ -3,7 +3,7 @@
 archive/issues_007115.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  georgsweber kcrisman\n\n\n```\nbuilding 'sage.graphs.cliquer' extension\ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/home/wstein/screen/varro/build/sage-4.1.2.rc\n1.alpha1/local//include -I/home/wstein/screen/varro/build/sage-4.1.2.rc1.alpha1/local//include/csage -I/home/wstein/screen\n/varro/build/sage-4.1.2.rc1.alpha1/devel//sage/sage/ext -I/home/wstein/screen/varro/build/sage-4.1.2.rc1.alpha1/local/incl\nude/python2.6 -c sage/graphs/cliquer.c -o build/temp.macosx-10.3-ppc-2.6/sage/graphs/cliquer.o -w\ngcc -L/home/wstein/screen/varro/build/sage-4.1.2.rc1.alpha1/local/lib -bundle -undefined dynamic_lookup build/temp.macosx-\n10.3-ppc-2.6/sage/graphs/cliquer.o -L/home/wstein/screen/varro/build/sage-4.1.2.rc1.alpha1/local//lib -lcsage -lcliquer -l\nstdc++ -lntl -o build/lib.macosx-10.3-ppc-2.6/sage/graphs/cliquer.so\n/usr/libexec/gcc/powerpc-apple-darwin8/4.0.1/ld: can't locate file for: -lcliquer\ncollect2: ld returned 1 exit status\nerror: command 'gcc' failed with exit status 1\nsage: There was an error installing modified sage library code.\n\nERROR installing SAGE\n\nreal    32m56.224s\nuser    27m12.748s\nsys     2m58.301s\nsage: An error occurred while installing sage-4.1.2.rc1.alpha1\n\n\nvarro:~/screen/varro/build/sage-4.1.2.rc1.alpha1 wstein$ ls spkg/installed/*cliq*\nspkg/installed/cliquer-1.2.p0\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7115\n\n",
+    "body": "Assignee: tbd\n\nCC:  georgsweber @kcrisman\n\n\n```\nbuilding 'sage.graphs.cliquer' extension\ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/home/wstein/screen/varro/build/sage-4.1.2.rc\n1.alpha1/local//include -I/home/wstein/screen/varro/build/sage-4.1.2.rc1.alpha1/local//include/csage -I/home/wstein/screen\n/varro/build/sage-4.1.2.rc1.alpha1/devel//sage/sage/ext -I/home/wstein/screen/varro/build/sage-4.1.2.rc1.alpha1/local/incl\nude/python2.6 -c sage/graphs/cliquer.c -o build/temp.macosx-10.3-ppc-2.6/sage/graphs/cliquer.o -w\ngcc -L/home/wstein/screen/varro/build/sage-4.1.2.rc1.alpha1/local/lib -bundle -undefined dynamic_lookup build/temp.macosx-\n10.3-ppc-2.6/sage/graphs/cliquer.o -L/home/wstein/screen/varro/build/sage-4.1.2.rc1.alpha1/local//lib -lcsage -lcliquer -l\nstdc++ -lntl -o build/lib.macosx-10.3-ppc-2.6/sage/graphs/cliquer.so\n/usr/libexec/gcc/powerpc-apple-darwin8/4.0.1/ld: can't locate file for: -lcliquer\ncollect2: ld returned 1 exit status\nerror: command 'gcc' failed with exit status 1\nsage: There was an error installing modified sage library code.\n\nERROR installing SAGE\n\nreal    32m56.224s\nuser    27m12.748s\nsys     2m58.301s\nsage: An error occurred while installing sage-4.1.2.rc1.alpha1\n\n\nvarro:~/screen/varro/build/sage-4.1.2.rc1.alpha1 wstein$ ls spkg/installed/*cliq*\nspkg/installed/cliquer-1.2.p0\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7115\n\n",
     "created_at": "2009-10-04T17:34:39Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_007115.json:
     "title": "building cliquer Cython extension fails on OS X 10.4 PPC (with cliquer-1.2.p0.spkg)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7115",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
 
-CC:  georgsweber kcrisman
+CC:  georgsweber @kcrisman
 
 
 ```
@@ -221,7 +221,7 @@ archive/issue_comments_058967.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7115#issuecomment-58967",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_058968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7115#issuecomment-58968",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_058969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7115#issuecomment-58969",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -335,7 +335,7 @@ archive/issue_comments_058970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7115#issuecomment-58970",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -371,16 +371,16 @@ The reason this never came up before is because only Python, of all the spkgs, d
 archive/issue_comments_058971.json:
 ```json
 {
-    "body": "Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket7115/spkg-install) by kcrisman created at 2009-10-07 15:08:13\n\nAnd it goes without saying that the change to the end of the file by gsw was still necessary as well.\\",
+    "body": "Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket7115/spkg-install) by @kcrisman created at 2009-10-07 15:08:13\n\nAnd it goes without saying that the change to the end of the file by gsw was still necessary as well.\\",
     "created_at": "2009-10-07T15:08:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7115#issuecomment-58971",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket7115/spkg-install) by kcrisman created at 2009-10-07 15:08:13
+Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket7115/spkg-install) by @kcrisman created at 2009-10-07 15:08:13
 
 And it goes without saying that the change to the end of the file by gsw was still necessary as well.\
 
@@ -447,7 +447,7 @@ archive/issue_comments_058973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7115#issuecomment-58973",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -481,7 +481,7 @@ archive/issue_comments_058974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7115#issuecomment-58974",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

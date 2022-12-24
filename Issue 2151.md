@@ -3,7 +3,7 @@
 archive/issues_002151.json:
 ```json
 {
-    "body": "Assignee: malb\n\nKeywords: load quotient ring\n\nCreate a ring, an ideal and the quotient ring, and save ideal and quotient:\n\n```\nsage: Ring = PolynomialRing(QQ,'x,y,z')\nsage: R = PolynomialRing(QQ,'x,y,z')\nsage: Rel=R.ideal('x*y*z-1')\nsage: QR=R.quotient_ring(Rel)\nsage: QR('y')\nybar\nsage: save(Rel,'Relation')\nsage: save(QR,'Quotient')\nsage: quit\n```\n\n\nAfter restart, try to reconstruct R,Rel and QR:\n\n```\nsage: Rel=load('Relation.sobj')\nsage: Rel\nIdeal (x*y*z - 1) of Multivariate Polynomial Ring in x, y, z over Rational Field\nsage: R=Rel.ring()\nsage: R('y')\ny\nsage: QR=R.quotient_ring(Rel)\nsage: QR\nQuotient of Multivariate Polynomial Ring in x, y, z over Rational Field by the ideal (x*y*z - 1)\nsage: QR('y')\nsage: QR.gens()\n```\n\n\nBoth the last two commands result in a traceback, ending with\n\n```\n<type 'exceptions.TypeError'>: Singular error:\n   ? `x` is not defined\n   ? error occurred in STDIN line 21: `def sage10=[x*y*z - 1];`\n```\n\n\nAlso the other saved data do not help:\n\n```\nsage: QR = load('Quotient')\nsage: QR('y')\n```\n\nresulting in the same error.\n\nWilliam Stein suggested the following workaround, which may also help to track down the bug:\n\n```\nsage: R._singular_()\n\n//   characteristic : 0\n//   number of vars : 3\n//        block   1 : ordering dp\n//                  : names    x y z\n//        block   2 : ordering C\nsage: QR('y')\nybar\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2151\n\n",
+    "body": "Assignee: @malb\n\nKeywords: load quotient ring\n\nCreate a ring, an ideal and the quotient ring, and save ideal and quotient:\n\n```\nsage: Ring = PolynomialRing(QQ,'x,y,z')\nsage: R = PolynomialRing(QQ,'x,y,z')\nsage: Rel=R.ideal('x*y*z-1')\nsage: QR=R.quotient_ring(Rel)\nsage: QR('y')\nybar\nsage: save(Rel,'Relation')\nsage: save(QR,'Quotient')\nsage: quit\n```\n\n\nAfter restart, try to reconstruct R,Rel and QR:\n\n```\nsage: Rel=load('Relation.sobj')\nsage: Rel\nIdeal (x*y*z - 1) of Multivariate Polynomial Ring in x, y, z over Rational Field\nsage: R=Rel.ring()\nsage: R('y')\ny\nsage: QR=R.quotient_ring(Rel)\nsage: QR\nQuotient of Multivariate Polynomial Ring in x, y, z over Rational Field by the ideal (x*y*z - 1)\nsage: QR('y')\nsage: QR.gens()\n```\n\n\nBoth the last two commands result in a traceback, ending with\n\n```\n<type 'exceptions.TypeError'>: Singular error:\n   ? `x` is not defined\n   ? error occurred in STDIN line 21: `def sage10=[x*y*z - 1];`\n```\n\n\nAlso the other saved data do not help:\n\n```\nsage: QR = load('Quotient')\nsage: QR('y')\n```\n\nresulting in the same error.\n\nWilliam Stein suggested the following workaround, which may also help to track down the bug:\n\n```\nsage: R._singular_()\n\n//   characteristic : 0\n//   number of vars : 3\n//        block   1 : ordering dp\n//                  : names    x y z\n//        block   2 : ordering C\nsage: QR('y')\nybar\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2151\n\n",
     "created_at": "2008-02-13T20:54:50Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_002151.json:
     "title": "Error in quotient ring loaded from a file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2151",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Keywords: load quotient ring
 
@@ -103,7 +103,7 @@ archive/issue_comments_014114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2151#issuecomment-14114",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_014115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2151#issuecomment-14115",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_014116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2151#issuecomment-14116",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_014120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2151#issuecomment-14120",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_014121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2151#issuecomment-14121",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_014122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2151#issuecomment-14122",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -322,7 +322,7 @@ archive/issue_comments_014123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2151#issuecomment-14123",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -340,7 +340,7 @@ archive/issue_comments_014124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2151#issuecomment-14124",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 

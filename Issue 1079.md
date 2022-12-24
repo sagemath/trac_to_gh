@@ -3,7 +3,7 @@
 archive/issues_001079.json:
 ```json
 {
-    "body": "Assignee: was\n\nWhen I do D.get_worker_count(), it always tells me that I have 2 workers--even though I have 30 machines connected each with 2 workers so the answer should be 30*2 = 60.  It works OK if I have only one DSage login with, say, 12 workers.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1079\n\n",
+    "body": "Assignee: @williamstein\n\nWhen I do D.get_worker_count(), it always tells me that I have 2 workers--even though I have 30 machines connected each with 2 workers so the answer should be 30*2 = 60.  It works OK if I have only one DSage login with, say, 12 workers.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1079\n\n",
     "created_at": "2007-11-03T17:11:50Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_001079.json:
     "title": "DSage improper get_worker_count",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1079",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 When I do D.get_worker_count(), it always tells me that I have 2 workers--even though I have 30 machines connected each with 2 workers so the answer should be 30*2 = 60.  It works OK if I have only one DSage login with, say, 12 workers.
 
@@ -33,16 +33,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1079
 archive/issue_comments_006527.json:
 ```json
 {
-    "body": "Changing assignee from was to yi.",
+    "body": "Changing assignee from @williamstein to @yqiang.",
     "created_at": "2007-11-03T17:48:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1079#issuecomment-6527",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Changing assignee from was to yi.
+Changing assignee from @williamstein to @yqiang.
 
 
 
@@ -56,7 +56,7 @@ archive/issue_comments_006528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1079#issuecomment-6528",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_006529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1079#issuecomment-6529",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_006530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1079#issuecomment-6530",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_006531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1079#issuecomment-6531",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_006532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1079#issuecomment-6532",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006220.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nWe have a symbolic absolute value, we should have a symbolic argument as well. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6220\n\n",
+    "body": "Assignee: @burcin\n\nWe have a symbolic absolute value, we should have a symbolic argument as well. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6220\n\n",
     "created_at": "2009-06-05T03:58:51Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_006220.json:
     "title": "create symbolic arg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6220",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 We have a symbolic absolute value, we should have a symbolic argument as well. 
 
@@ -37,7 +37,7 @@ archive/issue_comments_049673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6220#issuecomment-49673",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_049674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6220#issuecomment-49674",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

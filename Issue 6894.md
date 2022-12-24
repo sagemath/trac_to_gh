@@ -3,7 +3,7 @@
 archive/issues_006894.json:
 ```json
 {
-    "body": "Assignee: was\n\nWhen plotting a list of functions, it would be nice that each of them gets a different color.\n\nExample: plot([lambda x: x,lambda x: -x], (-5,5)) should plot x->x and x->-x in two different colors.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6894\n\n",
+    "body": "Assignee: @williamstein\n\nWhen plotting a list of functions, it would be nice that each of them gets a different color.\n\nExample: plot([lambda x: x,lambda x: -x], (-5,5)) should plot x->x and x->-x in two different colors.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6894\n\n",
     "created_at": "2009-09-05T21:15:04Z",
     "labels": [
         "graphics",
@@ -17,7 +17,7 @@ archive/issues_006894.json:
     "user": "nbonifas"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 When plotting a list of functions, it would be nice that each of them gets a different color.
 
@@ -39,7 +39,7 @@ archive/issue_comments_056951.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6894",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6894#issuecomment-56951",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_056952.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6894",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6894#issuecomment-56952",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_056953.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6894",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6894#issuecomment-56953",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_056954.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6894",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6894#issuecomment-56954",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

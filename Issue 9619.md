@@ -3,7 +3,7 @@
 archive/issues_009619.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  ncohen\n\nThis patch adds the function b_coloring, which computes a b-coloring with the maximum number of colors. Here are some explanations from the function's help :\n\n    Given a proper coloring of a graph G and a color class C such that none of its vertices have neighbors in all the other color classes, one can eliminate color class C by assigning distinct colors to each of its elements.\n    \n    One can repeat this procedure until a coloring is obtained where every color class contains one vertex with neighbors in all the other color classes. We call such a vertex a b-vertex. So, one can define a b-coloring as a proper coloring where each color class has a b-vertex, a vertex with neighbors in all the other colors.\n    \n    The worst-case behaviour of this procedure for eliminating color classes is the b-chromatic number of G (denoted \\chi_b(G)): the maximum k such that G admits a b-coloring with k colors.\n\nLeonardo\n\nIssue created by migration from https://trac.sagemath.org/ticket/9619\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @nathanncohen\n\nThis patch adds the function b_coloring, which computes a b-coloring with the maximum number of colors. Here are some explanations from the function's help :\n\n    Given a proper coloring of a graph G and a color class C such that none of its vertices have neighbors in all the other color classes, one can eliminate color class C by assigning distinct colors to each of its elements.\n    \n    One can repeat this procedure until a coloring is obtained where every color class contains one vertex with neighbors in all the other color classes. We call such a vertex a b-vertex. So, one can define a b-coloring as a proper coloring where each color class has a b-vertex, a vertex with neighbors in all the other colors.\n    \n    The worst-case behaviour of this procedure for eliminating color classes is the b-chromatic number of G (denoted \\chi_b(G)): the maximum k such that G admits a b-coloring with k colors.\n\nLeonardo\n\nIssue created by migration from https://trac.sagemath.org/ticket/9619\n\n",
     "created_at": "2010-07-28T07:49:02Z",
     "labels": [
         "graph theory",
@@ -19,7 +19,7 @@ archive/issues_009619.json:
 ```
 Assignee: jason, ncohen, rlm
 
-CC:  ncohen
+CC:  @nathanncohen
 
 This patch adds the function b_coloring, which computes a b-coloring with the maximum number of colors. Here are some explanations from the function's help :
 
@@ -65,7 +65,7 @@ archive/issue_comments_093169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9619",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9619#issuecomment-93169",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_093170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9619",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9619#issuecomment-93170",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_093173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9619",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9619#issuecomment-93173",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_093174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9619",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9619#issuecomment-93174",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_093177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9619",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9619#issuecomment-93177",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_093178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9619",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9619#issuecomment-93178",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_093179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9619",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9619#issuecomment-93179",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -322,7 +322,7 @@ archive/issue_comments_093180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9619",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9619#issuecomment-93180",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -396,7 +396,7 @@ archive/issue_comments_093184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9619",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9619#issuecomment-93184",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

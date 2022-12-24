@@ -3,7 +3,7 @@
 archive/issues_005562.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  robertwb\n\nKeywords: coercion vector polynomial ring\n\nThis is strange: it matters how many variables are specified.  This fails and I think this is a bug:\n\n\n```\nsage: R.<u> = PolynomialRing(RDF, 1, 'u')\nsage: v1 = vector([u])\nsage: v2 = vector([CDF(2)])\nsage: v1 * v2\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/ncalexan/sage-3.4.rc0-sage.math-only-x86_64-Linux/devel/sage/sage/functions/riemann_theta.py in <module>()\n\n/home/ncalexan/sage-3.4.rc0-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.el\\\nement.Vector.__mul__ (sage/structure/element.c:10435)()\n\n/home/ncalexan/sage-3.4.rc0-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coe\\\nrce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:5847)()\n\nTypeError: unsupported operand parent(s) for '*': 'Ambient free module of rank 1 over the integral domain Multivariate Polynomial Ring i\\\nn u over Real Double Field' and 'Vector space of dimension 1 over Complex Double Field'\n```\n\n\nBut both of these succeed:\n\n\n```\nsage: R.<u, v> = RDF[]\nsage: v1 = vector([u])\nsage: v2 = vector([CDF(2)])\nsage: v1 * v2\n2.0*u\n```\n\n\n\n```\nsage: R.<u> = RDF[]\nsage: v1 = vector([u])\nsage: v2 = vector([CDF(2)])\nsage: v1 * v2\n2.0*u\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5562\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\nKeywords: coercion vector polynomial ring\n\nThis is strange: it matters how many variables are specified.  This fails and I think this is a bug:\n\n\n```\nsage: R.<u> = PolynomialRing(RDF, 1, 'u')\nsage: v1 = vector([u])\nsage: v2 = vector([CDF(2)])\nsage: v1 * v2\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/ncalexan/sage-3.4.rc0-sage.math-only-x86_64-Linux/devel/sage/sage/functions/riemann_theta.py in <module>()\n\n/home/ncalexan/sage-3.4.rc0-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.el\\\nement.Vector.__mul__ (sage/structure/element.c:10435)()\n\n/home/ncalexan/sage-3.4.rc0-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coe\\\nrce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:5847)()\n\nTypeError: unsupported operand parent(s) for '*': 'Ambient free module of rank 1 over the integral domain Multivariate Polynomial Ring i\\\nn u over Real Double Field' and 'Vector space of dimension 1 over Complex Double Field'\n```\n\n\nBut both of these succeed:\n\n\n```\nsage: R.<u, v> = RDF[]\nsage: v1 = vector([u])\nsage: v2 = vector([CDF(2)])\nsage: v1 * v2\n2.0*u\n```\n\n\n\n```\nsage: R.<u> = RDF[]\nsage: v1 = vector([u])\nsage: v2 = vector([CDF(2)])\nsage: v1 * v2\n2.0*u\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5562\n\n",
     "created_at": "2009-03-18T23:00:00Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_005562.json:
     "title": "coercion error with vectors and polynomial rings with 1 variable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5562",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  robertwb
+CC:  @robertwb
 
 Keywords: coercion vector polynomial ring
 
@@ -85,7 +85,7 @@ archive/issue_comments_043287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5562#issuecomment-43287",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_043288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5562#issuecomment-43288",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_043289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5562#issuecomment-43289",
-    "user": "cnassau"
+    "user": "@cnassau"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_043290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5562#issuecomment-43290",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_043291.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5562#issuecomment-43291",
-    "user": "cnassau"
+    "user": "@cnassau"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_043292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5562#issuecomment-43292",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -236,16 +236,16 @@ This won't be merged until it's positively reviewed and closed, it's just the ta
 archive/issue_comments_043293.json:
 ```json
 {
-    "body": "Attachment [5562.patch](tarball://root/attachments/some-uuid/ticket5562/5562.patch) by cnassau created at 2013-01-29 18:07:43",
+    "body": "Attachment [5562.patch](tarball://root/attachments/some-uuid/ticket5562/5562.patch) by @cnassau created at 2013-01-29 18:07:43",
     "created_at": "2013-01-29T18:07:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5562#issuecomment-43293",
-    "user": "cnassau"
+    "user": "@cnassau"
 }
 ```
 
-Attachment [5562.patch](tarball://root/attachments/some-uuid/ticket5562/5562.patch) by cnassau created at 2013-01-29 18:07:43
+Attachment [5562.patch](tarball://root/attachments/some-uuid/ticket5562/5562.patch) by @cnassau created at 2013-01-29 18:07:43
 
 
 
@@ -259,7 +259,7 @@ archive/issue_comments_043294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5562#issuecomment-43294",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_043295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5562#issuecomment-43295",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_043296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5562#issuecomment-43296",
-    "user": "cnassau"
+    "user": "@cnassau"
 }
 ```
 
@@ -319,7 +319,7 @@ archive/issue_comments_043297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5562#issuecomment-43297",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

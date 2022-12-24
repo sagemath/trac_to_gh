@@ -3,7 +3,7 @@
 archive/issues_007366.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nThis should work:\n\n\n```python\nsage: K.<a>=GF(4)\nsage: [x for x in K]\n[0, a, a + 1, 1]\nsage: hasattr(K, '__iter__')\nTrue\nsage: K.list()\n...\nTypeError:\n'sage.rings.finite_field_givaro.FiniteField_givaro_iterator' object is not iterable\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7366\n\n",
+    "body": "Assignee: @aghitza\n\nThis should work:\n\n\n```python\nsage: K.<a>=GF(4)\nsage: [x for x in K]\n[0, a, a + 1, 1]\nsage: hasattr(K, '__iter__')\nTrue\nsage: K.list()\n...\nTypeError:\n'sage.rings.finite_field_givaro.FiniteField_givaro_iterator' object is not iterable\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7366\n\n",
     "created_at": "2009-11-01T00:11:13Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_007366.json:
     "title": "fix GF(4,'a').list()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7366",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 This should work:
 
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7366
 archive/issue_comments_061732.json:
 ```json
 {
-    "body": "Attachment [finite_field_givaro_iter.patch](tarball://root/attachments/some-uuid/ticket7366/finite_field_givaro_iter.patch) by malb created at 2009-11-01 00:11:34",
+    "body": "Attachment [finite_field_givaro_iter.patch](tarball://root/attachments/some-uuid/ticket7366/finite_field_givaro_iter.patch) by @malb created at 2009-11-01 00:11:34",
     "created_at": "2009-11-01T00:11:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7366#issuecomment-61732",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [finite_field_givaro_iter.patch](tarball://root/attachments/some-uuid/ticket7366/finite_field_givaro_iter.patch) by malb created at 2009-11-01 00:11:34
+Attachment [finite_field_givaro_iter.patch](tarball://root/attachments/some-uuid/ticket7366/finite_field_givaro_iter.patch) by @malb created at 2009-11-01 00:11:34
 
 
 
@@ -70,7 +70,7 @@ archive/issue_comments_061733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7366#issuecomment-61733",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_061734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7366#issuecomment-61734",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_061735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7366#issuecomment-61735",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_061736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7366#issuecomment-61736",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

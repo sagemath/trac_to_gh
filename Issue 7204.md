@@ -3,7 +3,7 @@
 archive/issues_007204.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  jhpalmieri\n\n\n```\n>> If nobody finds any serious problems with it, something close to it\n>> will get released (though I'm not in a hurry).\n>\n> Here's a nonserious problem: running \"sage -docbuild developer html --\n> jsmath\" prints an error message.  At the end of the build process, I\n> get this error:\n>\n> copying static files... Exception occurred:\n>  File \"/Applications/sage_builds/sage-4.1.2.rc2-64-bit/local/lib/\n> python2.6/site-packages/Sphinx-0.5.1-py2.6.egg/sphinx/builder.py\",\n> line 668, in finish\n>    for filename in os.listdir(staticdirname):\n> OSError: [Errno 2] No such file or directory: '/Applications/\n> sage_builds/sage-4.1.2.rc2-64-bit/local/notebook/javascript/jsmath'\n> The full traceback has been saved in /var/folders/JV/\n> JVYCpshdHd4FFoThuUgD8k+++TI/-Tmp-/sphinx-err-X1Sd6B.log, if you want\n> to report the issue to the author.\n> Please also report this if it was a user error, so that a better error\n> message can be provided next time.\n> Send reports to sphinx-dev@googlegroups.com. Thanks!\n> Build finished.  The built documents can be found in /Applications/\n> sage_builds/sage-4.1.2.rc2-64-bit/devel/sage/doc/output/html/en/\n> developer\n>\n> Did the directory \"SAGE_ROOT/local/notebook\" move some place else?\n\nYes, it did move -- it's now part of the sagenb spkg, and gets installed into python's site-package using Python's standard package data protocol. \n\nIs the build OK, but there is an error?  I.e., can this be safely fixed in the next SAge release.  Or do we have to fix it ASAP?\n\n\n\n> (Replace \"developer\" by \"tutorial\" or \"reference\" or whatever and the\n> same thing happens.  Omit \"--jsmath\" and it works just fine.  Building\n> PDF documentation seems to work fine, too, although I haven't finished\n> building the reference manual yet.)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7204\n\n",
+    "body": "Assignee: tba\n\nCC:  @jhpalmieri\n\n\n```\n>> If nobody finds any serious problems with it, something close to it\n>> will get released (though I'm not in a hurry).\n>\n> Here's a nonserious problem: running \"sage -docbuild developer html --\n> jsmath\" prints an error message.  At the end of the build process, I\n> get this error:\n>\n> copying static files... Exception occurred:\n>  File \"/Applications/sage_builds/sage-4.1.2.rc2-64-bit/local/lib/\n> python2.6/site-packages/Sphinx-0.5.1-py2.6.egg/sphinx/builder.py\",\n> line 668, in finish\n>    for filename in os.listdir(staticdirname):\n> OSError: [Errno 2] No such file or directory: '/Applications/\n> sage_builds/sage-4.1.2.rc2-64-bit/local/notebook/javascript/jsmath'\n> The full traceback has been saved in /var/folders/JV/\n> JVYCpshdHd4FFoThuUgD8k+++TI/-Tmp-/sphinx-err-X1Sd6B.log, if you want\n> to report the issue to the author.\n> Please also report this if it was a user error, so that a better error\n> message can be provided next time.\n> Send reports to sphinx-dev@googlegroups.com. Thanks!\n> Build finished.  The built documents can be found in /Applications/\n> sage_builds/sage-4.1.2.rc2-64-bit/devel/sage/doc/output/html/en/\n> developer\n>\n> Did the directory \"SAGE_ROOT/local/notebook\" move some place else?\n\nYes, it did move -- it's now part of the sagenb spkg, and gets installed into python's site-package using Python's standard package data protocol. \n\nIs the build OK, but there is an error?  I.e., can this be safely fixed in the next SAge release.  Or do we have to fix it ASAP?\n\n\n\n> (Replace \"developer\" by \"tutorial\" or \"reference\" or whatever and the\n> same thing happens.  Omit \"--jsmath\" and it works just fine.  Building\n> PDF documentation seems to work fine, too, although I haven't finished\n> building the reference manual yet.)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7204\n\n",
     "created_at": "2009-10-14T02:19:49Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_007204.json:
     "title": "issue building sage docs since notebook moved",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7204",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
 
-CC:  jhpalmieri
+CC:  @jhpalmieri
 
 
 ```
@@ -78,7 +78,7 @@ archive/issue_comments_059776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7204#issuecomment-59776",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -91,16 +91,16 @@ Depends on #7196.
 archive/issue_comments_059777.json:
 ```json
 {
-    "body": "Attachment [trac_7204-sagenb_doc_jsmath.patch](tarball://root/attachments/some-uuid/ticket7204/trac_7204-sagenb_doc_jsmath.patch) by mpatel created at 2009-10-14 11:34:55",
+    "body": "Attachment [trac_7204-sagenb_doc_jsmath.patch](tarball://root/attachments/some-uuid/ticket7204/trac_7204-sagenb_doc_jsmath.patch) by @qed777 created at 2009-10-14 11:34:55",
     "created_at": "2009-10-14T11:34:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7204#issuecomment-59777",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7204-sagenb_doc_jsmath.patch](tarball://root/attachments/some-uuid/ticket7204/trac_7204-sagenb_doc_jsmath.patch) by mpatel created at 2009-10-14 11:34:55
+Attachment [trac_7204-sagenb_doc_jsmath.patch](tarball://root/attachments/some-uuid/ticket7204/trac_7204-sagenb_doc_jsmath.patch) by @qed777 created at 2009-10-14 11:34:55
 
 
 
@@ -114,7 +114,7 @@ archive/issue_comments_059778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7204#issuecomment-59778",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_059779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7204#issuecomment-59779",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -145,16 +145,16 @@ Note that a version of this was already merged into 4.1.2, though not depending 
 archive/issue_comments_059780.json:
 ```json
 {
-    "body": "Attachment [trac_7204-sagenb_doc_jsmath_v2.patch](tarball://root/attachments/some-uuid/ticket7204/trac_7204-sagenb_doc_jsmath_v2.patch) by mpatel created at 2009-10-15 20:05:23\n\nDepends on the released 4.1.2 and #7196.  Apply only this patch.",
+    "body": "Attachment [trac_7204-sagenb_doc_jsmath_v2.patch](tarball://root/attachments/some-uuid/ticket7204/trac_7204-sagenb_doc_jsmath_v2.patch) by @qed777 created at 2009-10-15 20:05:23\n\nDepends on the released 4.1.2 and #7196.  Apply only this patch.",
     "created_at": "2009-10-15T20:05:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7204#issuecomment-59780",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7204-sagenb_doc_jsmath_v2.patch](tarball://root/attachments/some-uuid/ticket7204/trac_7204-sagenb_doc_jsmath_v2.patch) by mpatel created at 2009-10-15 20:05:23
+Attachment [trac_7204-sagenb_doc_jsmath_v2.patch](tarball://root/attachments/some-uuid/ticket7204/trac_7204-sagenb_doc_jsmath_v2.patch) by @qed777 created at 2009-10-15 20:05:23
 
 Depends on the released 4.1.2 and #7196.  Apply only this patch.
 
@@ -170,7 +170,7 @@ archive/issue_comments_059781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7204#issuecomment-59781",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_059782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7204#issuecomment-59782",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_059783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7204#issuecomment-59783",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_059784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7204#issuecomment-59784",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_004286.json:
     "title": "[with patch, needs review] minor improvements to old integer code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4286",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -68,16 +68,16 @@ Thus this "external" function call to GMP is wrapped by _sig_on/_sig_off, too.
 archive/issue_comments_031373.json:
 ```json
 {
-    "body": "Attachment [4286-integer-cruft.patch](tarball://root/attachments/some-uuid/ticket4286/4286-integer-cruft.patch) by robertwb created at 2008-10-15 11:14:54\n\nThanks for looking at this. I've attached a new patch that should address your comments. The type checking has been pulled out of the main loop which addresses 1 and 2, which was actually an issue in the old code as well. (Note that isinstance will be a fast typecheck in the next release of Cython). \n\nAs for (3), there is no reason to put _sig_on/_sig_of around mpz_cmp_ui. These signal handlers are used for long-running code (where one wants to be able to intercept control-C) or code that might raise other signals/abort. mpz_cmp_ui is not such a function (in fact, it's a simple macro).",
+    "body": "Attachment [4286-integer-cruft.patch](tarball://root/attachments/some-uuid/ticket4286/4286-integer-cruft.patch) by @robertwb created at 2008-10-15 11:14:54\n\nThanks for looking at this. I've attached a new patch that should address your comments. The type checking has been pulled out of the main loop which addresses 1 and 2, which was actually an issue in the old code as well. (Note that isinstance will be a fast typecheck in the next release of Cython). \n\nAs for (3), there is no reason to put _sig_on/_sig_of around mpz_cmp_ui. These signal handlers are used for long-running code (where one wants to be able to intercept control-C) or code that might raise other signals/abort. mpz_cmp_ui is not such a function (in fact, it's a simple macro).",
     "created_at": "2008-10-15T11:14:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4286#issuecomment-31373",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4286-integer-cruft.patch](tarball://root/attachments/some-uuid/ticket4286/4286-integer-cruft.patch) by robertwb created at 2008-10-15 11:14:54
+Attachment [4286-integer-cruft.patch](tarball://root/attachments/some-uuid/ticket4286/4286-integer-cruft.patch) by @robertwb created at 2008-10-15 11:14:54
 
 Thanks for looking at this. I've attached a new patch that should address your comments. The type checking has been pulled out of the main loop which addresses 1 and 2, which was actually an issue in the old code as well. (Note that isinstance will be a fast typecheck in the next release of Cython). 
 
@@ -169,7 +169,7 @@ archive/issue_comments_031377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4286#issuecomment-31377",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001401.json:
 ```json
 {
-    "body": "Assignee: was\n\nSage currently works this way:\n\n```\nsage: a = matrix(ZZ, 2, [1..4])\nsage: a[1]\n(3, 4)\nsage: a.row(1)\n(3, 4)\nsage: a[1][0] = 5\nsage: a\n[1 2]\n[3 4]\n```\n\n\nInstead Sage should do this:\n\n\n```\nsage: a = matrix(ZZ, 2, [1..4])\nsage: a[1]\nboom!\nsage: a.row(1)\n(3, 4)\nsage: a[1][0] = 5\nboom!\n```\n\n\nWhere boom explains that one should use a.row(...) to get a row, or a[i,j] to get/set the ij entry.\n\nThis confuses the heck out of TONS of people!!!  (Not me, but others.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1401\n\n",
+    "body": "Assignee: @williamstein\n\nSage currently works this way:\n\n```\nsage: a = matrix(ZZ, 2, [1..4])\nsage: a[1]\n(3, 4)\nsage: a.row(1)\n(3, 4)\nsage: a[1][0] = 5\nsage: a\n[1 2]\n[3 4]\n```\n\n\nInstead Sage should do this:\n\n\n```\nsage: a = matrix(ZZ, 2, [1..4])\nsage: a[1]\nboom!\nsage: a.row(1)\n(3, 4)\nsage: a[1][0] = 5\nboom!\n```\n\n\nWhere boom explains that one should use a.row(...) to get a row, or a[i,j] to get/set the ij entry.\n\nThis confuses the heck out of TONS of people!!!  (Not me, but others.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1401\n\n",
     "created_at": "2007-12-04T23:57:36Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_001401.json:
     "title": "deprecate A[n] for n a matrix (easy to implement usability improvement)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1401",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Sage currently works this way:
 
@@ -68,7 +68,7 @@ archive/issue_comments_009034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1401#issuecomment-9034",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -81,16 +81,16 @@ Changing status from new to assigned.
 archive/issue_comments_009035.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-12-06T21:17:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1401#issuecomment-9035",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -99,16 +99,16 @@ Changing assignee from was to mhansen.
 archive/issue_comments_009036.json:
 ```json
 {
-    "body": "Attachment [1401.patch](tarball://root/attachments/some-uuid/ticket1401/1401.patch) by mhansen created at 2007-12-06 23:15:40",
+    "body": "Attachment [1401.patch](tarball://root/attachments/some-uuid/ticket1401/1401.patch) by @mwhansen created at 2007-12-06 23:15:40",
     "created_at": "2007-12-06T23:15:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1401#issuecomment-9036",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1401.patch](tarball://root/attachments/some-uuid/ticket1401/1401.patch) by mhansen created at 2007-12-06 23:15:40
+Attachment [1401.patch](tarball://root/attachments/some-uuid/ticket1401/1401.patch) by @mwhansen created at 2007-12-06 23:15:40
 
 
 
@@ -122,7 +122,7 @@ archive/issue_comments_009037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1401#issuecomment-9037",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_009038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1401#issuecomment-9038",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -155,16 +155,16 @@ That said, the above patch is fine -- using .row(...) all over in code is fine a
 archive/issue_comments_009039.json:
 ```json
 {
-    "body": "Attachment [trac-1401-part2.patch](tarball://root/attachments/some-uuid/ticket1401/trac-1401-part2.patch) by was created at 2007-12-15 12:57:27",
+    "body": "Attachment [trac-1401-part2.patch](tarball://root/attachments/some-uuid/ticket1401/trac-1401-part2.patch) by @williamstein created at 2007-12-15 12:57:27",
     "created_at": "2007-12-15T12:57:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1401#issuecomment-9039",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1401-part2.patch](tarball://root/attachments/some-uuid/ticket1401/trac-1401-part2.patch) by was created at 2007-12-15 12:57:27
+Attachment [trac-1401-part2.patch](tarball://root/attachments/some-uuid/ticket1401/trac-1401-part2.patch) by @williamstein created at 2007-12-15 12:57:27
 
 
 

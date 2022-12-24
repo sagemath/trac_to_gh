@@ -3,7 +3,7 @@
 archive/issues_002959.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n\nsage: G = DirichletGroup(21)\nsage: chi = G.0; chi\n[-1, 1]\nsage: chi.values()\n[0, 1, -1, 0, 1, -1, 0, 0, -1, 0, 1, -1, 0, 1, 0, 0, 1, -1, 0, 1, -1]\n```\n\n\nSo far, so good (similar code is in the tutorial: http://www.sagemath.org/doc/html/tut/node15.html). Now use a different base ring:\n\n\n```\nsage: G = DirichletGroup(21, GF(37))\nsage: chi = G.0; chi\n[36, 1]\nsage: chi.values()\n---------------------------------------------------------------------------\n<type 'exceptions.IndexError'>            Traceback (most recent call last)\n\n/mnt/drive_hda1/sagefiles/sage-3.0.alpha5/<ipython console> in <module>()\n\n/mnt/drive_hda1/sagefiles/sage-3.0.alpha5/local/lib/python2.5/site-packages/sage/modular/dirichlet.py\nin values(self)\n  1056             ########################\n  1057             # record character value on n\n-> 1058             result_list[n.ivalue] = R_values[value.ivalue]\n  1059             # iterate:\n  1060             #   increase the exponent vector by 1,\n\n<type 'exceptions.IndexError'>: list index out of range\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2959\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n\nsage: G = DirichletGroup(21)\nsage: chi = G.0; chi\n[-1, 1]\nsage: chi.values()\n[0, 1, -1, 0, 1, -1, 0, 0, -1, 0, 1, -1, 0, 1, 0, 0, 1, -1, 0, 1, -1]\n```\n\n\nSo far, so good (similar code is in the tutorial: http://www.sagemath.org/doc/html/tut/node15.html). Now use a different base ring:\n\n\n```\nsage: G = DirichletGroup(21, GF(37))\nsage: chi = G.0; chi\n[36, 1]\nsage: chi.values()\n---------------------------------------------------------------------------\n<type 'exceptions.IndexError'>            Traceback (most recent call last)\n\n/mnt/drive_hda1/sagefiles/sage-3.0.alpha5/<ipython console> in <module>()\n\n/mnt/drive_hda1/sagefiles/sage-3.0.alpha5/local/lib/python2.5/site-packages/sage/modular/dirichlet.py\nin values(self)\n  1056             ########################\n  1057             # record character value on n\n-> 1058             result_list[n.ivalue] = R_values[value.ivalue]\n  1059             # iterate:\n  1060             #   increase the exponent vector by 1,\n\n<type 'exceptions.IndexError'>: list index out of range\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2959\n\n",
     "created_at": "2008-04-19T21:32:13Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_002959.json:
     "title": "bug in DirichletGroup over a finite base ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2959",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -67,16 +67,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2959
 archive/issue_comments_020411.json:
 ```json
 {
-    "body": "Changing assignee from was to craigcitro.",
+    "body": "Changing assignee from @williamstein to @craigcitro.",
     "created_at": "2008-04-19T23:54:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2959#issuecomment-20411",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from was to craigcitro.
+Changing assignee from @williamstein to @craigcitro.
 
 
 
@@ -90,7 +90,7 @@ archive/issue_comments_020412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2959#issuecomment-20412",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_020413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2959#issuecomment-20413",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -121,16 +121,16 @@ Yep, this was a mistake on my part. The attached patch fixes it, adds a few doct
 archive/issue_comments_020414.json:
 ```json
 {
-    "body": "Attachment [trac-2959.patch](tarball://root/attachments/some-uuid/ticket2959/trac-2959.patch) by craigcitro created at 2008-04-19 23:54:42",
+    "body": "Attachment [trac-2959.patch](tarball://root/attachments/some-uuid/ticket2959/trac-2959.patch) by @craigcitro created at 2008-04-19 23:54:42",
     "created_at": "2008-04-19T23:54:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2959#issuecomment-20414",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-2959.patch](tarball://root/attachments/some-uuid/ticket2959/trac-2959.patch) by craigcitro created at 2008-04-19 23:54:42
+Attachment [trac-2959.patch](tarball://root/attachments/some-uuid/ticket2959/trac-2959.patch) by @craigcitro created at 2008-04-19 23:54:42
 
 
 
@@ -144,7 +144,7 @@ archive/issue_comments_020415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2959#issuecomment-20415",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

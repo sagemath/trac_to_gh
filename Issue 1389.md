@@ -3,7 +3,7 @@
 archive/issues_001389.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mhansen\n\n\n\n```\nWilliam Stein writes:\n\nYes to every single one of your questions.\n\nOn Dec 3, 2007 1:29 PM, Jason Grout <jason-sage@creativetrax.com> wrote:\n> >\n> > I'm citing Sage in a paper I'm writing.  After searching (using the\n> > search function at sagemath.org) and clicking around lots of places, I\n> > found the page in the tutorial:\n> >\n> > http://sagemath.org/doc/html/tut/node62.html\n> >\n> > and the more official instructions at:\n> >\n> > http://sagemath.org/pub.html\n> >\n> > A couple of questions:\n> >\n> > 1. The instructions in the two places conflict each other.  Should we\n> > change the tutorial to match http://sagemath.org/pub.html (or point to it?)\n> >\n> > 1. If I remember correctly, a while ago William encouraged people to use\n> > \"Sage\" instead of \"SAGE\", saying that we had outgrown the acronym.  If\n> > so, there are a _lot_ of occurrences of SAGE that need to replaced in\n> > the documentation and website.  Should we change the citing instructions\n> > to use \"Sage\" instead of \"SAGE\"?\n> >\n> > 3. Every time I look for the citation instructions, I spend at least\n> > 15-20 minutes searching and clicking different places.  I think the\n> > publication page is great marketing material (and a great source of\n> > example Sage code in real life).  Can we link to the publication page\n> > from the main page and indicate that the citation instructions are also\n> > there?\n> >\n> > Thanks,\n> >\n> > Jason\n> >\n> >\n>> > >\n> >\n\n\n\n-- William Stein \nAssociate Professor of Mathematics \nUniversity of Washington \nhttp://wstein.org \n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1389\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\n\n\n```\nWilliam Stein writes:\n\nYes to every single one of your questions.\n\nOn Dec 3, 2007 1:29 PM, Jason Grout <jason-sage@creativetrax.com> wrote:\n> >\n> > I'm citing Sage in a paper I'm writing.  After searching (using the\n> > search function at sagemath.org) and clicking around lots of places, I\n> > found the page in the tutorial:\n> >\n> > http://sagemath.org/doc/html/tut/node62.html\n> >\n> > and the more official instructions at:\n> >\n> > http://sagemath.org/pub.html\n> >\n> > A couple of questions:\n> >\n> > 1. The instructions in the two places conflict each other.  Should we\n> > change the tutorial to match http://sagemath.org/pub.html (or point to it?)\n> >\n> > 1. If I remember correctly, a while ago William encouraged people to use\n> > \"Sage\" instead of \"SAGE\", saying that we had outgrown the acronym.  If\n> > so, there are a _lot_ of occurrences of SAGE that need to replaced in\n> > the documentation and website.  Should we change the citing instructions\n> > to use \"Sage\" instead of \"SAGE\"?\n> >\n> > 3. Every time I look for the citation instructions, I spend at least\n> > 15-20 minutes searching and clicking different places.  I think the\n> > publication page is great marketing material (and a great source of\n> > example Sage code in real life).  Can we link to the publication page\n> > from the main page and indicate that the citation instructions are also\n> > there?\n> >\n> > Thanks,\n> >\n> > Jason\n> >\n> >\n>> > >\n> >\n\n\n\n-- William Stein \nAssociate Professor of Mathematics \nUniversity of Washington \nhttp://wstein.org \n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1389\n\n",
     "created_at": "2007-12-03T22:10:33Z",
     "labels": [
         "website/wiki",
@@ -14,12 +14,12 @@ archive/issues_001389.json:
     "title": "Citation instructions for Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1389",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  mhansen
+CC:  @mwhansen
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_008905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8905",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -464,7 +464,7 @@ archive/issue_comments_008907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8907",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -482,7 +482,7 @@ archive/issue_comments_008908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8908",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -592,7 +592,7 @@ archive/issue_comments_008913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8913",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -605,16 +605,16 @@ Fixes SAGE to Sage in version() etc.
 archive/issue_comments_008914.json:
 ```json
 {
-    "body": "Attachment [10737.patch](tarball://root/attachments/some-uuid/ticket1389/10737.patch) by kcrisman created at 2008-10-17 20:36:02\n\nMost patches here should be trivial to review, though some *may* require rebasing. \n\nThis ticket perhaps should have an ongoing existence - as patches are merged, new ones could still be added.",
+    "body": "Attachment [10737.patch](tarball://root/attachments/some-uuid/ticket1389/10737.patch) by @kcrisman created at 2008-10-17 20:36:02\n\nMost patches here should be trivial to review, though some *may* require rebasing. \n\nThis ticket perhaps should have an ongoing existence - as patches are merged, new ones could still be added.",
     "created_at": "2008-10-17T20:36:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8914",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [10737.patch](tarball://root/attachments/some-uuid/ticket1389/10737.patch) by kcrisman created at 2008-10-17 20:36:02
+Attachment [10737.patch](tarball://root/attachments/some-uuid/ticket1389/10737.patch) by @kcrisman created at 2008-10-17 20:36:02
 
 Most patches here should be trivial to review, though some *may* require rebasing. 
 
@@ -632,7 +632,7 @@ archive/issue_comments_008915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8915",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -650,7 +650,7 @@ archive/issue_comments_008916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8916",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -709,7 +709,7 @@ archive/issue_comments_008917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8917",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -727,16 +727,16 @@ I'm beginning to agree with kcrisman that we maybe should merge some of these wh
 archive/issue_comments_008918.json:
 ```json
 {
-    "body": "Attachment [1389-misc.patch](tarball://root/attachments/some-uuid/ticket1389/1389-misc.patch) by jhpalmieri created at 2008-10-20 23:48:51\n\npatch misc.py, changing SAGE to Sage",
+    "body": "Attachment [1389-misc.patch](tarball://root/attachments/some-uuid/ticket1389/1389-misc.patch) by @jhpalmieri created at 2008-10-20 23:48:51\n\npatch misc.py, changing SAGE to Sage",
     "created_at": "2008-10-20T23:48:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8918",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [1389-misc.patch](tarball://root/attachments/some-uuid/ticket1389/1389-misc.patch) by jhpalmieri created at 2008-10-20 23:48:51
+Attachment [1389-misc.patch](tarball://root/attachments/some-uuid/ticket1389/1389-misc.patch) by @jhpalmieri created at 2008-10-20 23:48:51
 
 patch misc.py, changing SAGE to Sage
 
@@ -752,7 +752,7 @@ archive/issue_comments_008919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8919",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -765,16 +765,16 @@ change SAGE to Sage in various scripts (e.g. sage-banner)
 archive/issue_comments_008920.json:
 ```json
 {
-    "body": "Attachment [1389-scripts.patch](tarball://root/attachments/some-uuid/ticket1389/1389-scripts.patch) by jhpalmieri created at 2008-10-20 23:50:51\n\nI would comment that I don't know how to easily check (e.g., doctest) the changes that I made to the scripts.  Please referee carefully.",
+    "body": "Attachment [1389-scripts.patch](tarball://root/attachments/some-uuid/ticket1389/1389-scripts.patch) by @jhpalmieri created at 2008-10-20 23:50:51\n\nI would comment that I don't know how to easily check (e.g., doctest) the changes that I made to the scripts.  Please referee carefully.",
     "created_at": "2008-10-20T23:50:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8920",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [1389-scripts.patch](tarball://root/attachments/some-uuid/ticket1389/1389-scripts.patch) by jhpalmieri created at 2008-10-20 23:50:51
+Attachment [1389-scripts.patch](tarball://root/attachments/some-uuid/ticket1389/1389-scripts.patch) by @jhpalmieri created at 2008-10-20 23:50:51
 
 I would comment that I don't know how to easily check (e.g., doctest) the changes that I made to the scripts.  Please referee carefully.
 
@@ -922,7 +922,7 @@ archive/issue_comments_008924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8924",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -949,7 +949,7 @@ archive/issue_comments_008925.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8925",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1061,7 +1061,7 @@ archive/issue_comments_008927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8927",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -1113,7 +1113,7 @@ archive/issue_comments_008929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8929",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1126,16 +1126,16 @@ change citation in tutorial to match sagemath.org (revised revised version)
 archive/issue_comments_008930.json:
 ```json
 {
-    "body": "Attachment [1389-tut.patch](tarball://root/attachments/some-uuid/ticket1389/1389-tut.patch) by jhpalmieri created at 2008-10-22 02:58:16\n\nReplying to [comment:21 mvngu]:\n> Replying to [comment:17 jhpalmieri]:\n> > There is a new version of the tut patch, taking the comments into consideration.\n> \n> The revised patch `1389-tut.patch` looks good. Here's another change to that patch:\n\n> -where you should change x.y.z. to the version of Sage that you used\n\n> +where you should change x.y.z to the version of \\SAGE that you used\n\nFixed in the newest patch.",
+    "body": "Attachment [1389-tut.patch](tarball://root/attachments/some-uuid/ticket1389/1389-tut.patch) by @jhpalmieri created at 2008-10-22 02:58:16\n\nReplying to [comment:21 mvngu]:\n> Replying to [comment:17 jhpalmieri]:\n> > There is a new version of the tut patch, taking the comments into consideration.\n> \n> The revised patch `1389-tut.patch` looks good. Here's another change to that patch:\n\n> -where you should change x.y.z. to the version of Sage that you used\n\n> +where you should change x.y.z to the version of \\SAGE that you used\n\nFixed in the newest patch.",
     "created_at": "2008-10-22T02:58:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8930",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [1389-tut.patch](tarball://root/attachments/some-uuid/ticket1389/1389-tut.patch) by jhpalmieri created at 2008-10-22 02:58:16
+Attachment [1389-tut.patch](tarball://root/attachments/some-uuid/ticket1389/1389-tut.patch) by @jhpalmieri created at 2008-10-22 02:58:16
 
 Replying to [comment:21 mvngu]:
 > Replying to [comment:17 jhpalmieri]:

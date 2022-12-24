@@ -14,7 +14,7 @@ archive/issues_006023.json:
     "title": "Bring plot/polygon.py to 100% coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6023",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6023
 archive/issue_comments_047967.json:
 ```json
 {
-    "body": "Attachment [trac_6023.patch](tarball://root/attachments/some-uuid/ticket6023/trac_6023.patch) by kcrisman created at 2009-05-12 00:28:25\n\nAlso improves plot3d function.\n\nSee [http://groups.google.com/group/sage-devel/browse_thread/thread/1adac4035031b140/c36f1f8a7c8a9b43#c36f1f8a7c8a9b43](http://groups.google.com/group/sage-devel/browse_thread/thread/1adac4035031b140/c36f1f8a7c8a9b43#c36f1f8a7c8a9b43) for why there is no loads(dumps()) doctest.",
+    "body": "Attachment [trac_6023.patch](tarball://root/attachments/some-uuid/ticket6023/trac_6023.patch) by @kcrisman created at 2009-05-12 00:28:25\n\nAlso improves plot3d function.\n\nSee [http://groups.google.com/group/sage-devel/browse_thread/thread/1adac4035031b140/c36f1f8a7c8a9b43#c36f1f8a7c8a9b43](http://groups.google.com/group/sage-devel/browse_thread/thread/1adac4035031b140/c36f1f8a7c8a9b43#c36f1f8a7c8a9b43) for why there is no loads(dumps()) doctest.",
     "created_at": "2009-05-12T00:28:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6023#issuecomment-47967",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6023.patch](tarball://root/attachments/some-uuid/ticket6023/trac_6023.patch) by kcrisman created at 2009-05-12 00:28:25
+Attachment [trac_6023.patch](tarball://root/attachments/some-uuid/ticket6023/trac_6023.patch) by @kcrisman created at 2009-05-12 00:28:25
 
 Also improves plot3d function.
 
@@ -94,16 +94,16 @@ Michael
 archive/issue_comments_047970.json:
 ```json
 {
-    "body": "Changing assignee from tba to kcrisman.",
+    "body": "Changing assignee from tba to @kcrisman.",
     "created_at": "2009-05-14T15:34:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6023#issuecomment-47970",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Changing assignee from tba to kcrisman.
+Changing assignee from tba to @kcrisman.
 
 
 
@@ -117,7 +117,7 @@ archive/issue_comments_047971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6023#issuecomment-47971",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

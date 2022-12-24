@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7223
 archive/issue_comments_059909.json:
 ```json
 {
-    "body": "Attachment [tour_assignment.rst](tarball://root/attachments/some-uuid/ticket7223/tour_assignment.rst) by pdenapo created at 2010-10-24 20:02:48",
+    "body": "Attachment [tour_assignment.rst](tarball://root/attachments/some-uuid/ticket7223/tour_assignment.rst) by @pdenapo created at 2010-10-24 20:02:48",
     "created_at": "2010-10-24T20:02:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7223#issuecomment-59909",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 
-Attachment [tour_assignment.rst](tarball://root/attachments/some-uuid/ticket7223/tour_assignment.rst) by pdenapo created at 2010-10-24 20:02:48
+Attachment [tour_assignment.rst](tarball://root/attachments/some-uuid/ticket7223/tour_assignment.rst) by @pdenapo created at 2010-10-24 20:02:48
 
 
 
@@ -50,16 +50,16 @@ Attachment [tour_assignment.rst](tarball://root/attachments/some-uuid/ticket7223
 archive/issue_comments_059910.json:
 ```json
 {
-    "body": "Changing assignee from tba to pdenapo.",
+    "body": "Changing assignee from tba to @pdenapo.",
     "created_at": "2010-10-24T20:02:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7223#issuecomment-59910",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 
-Changing assignee from tba to pdenapo.
+Changing assignee from tba to @pdenapo.
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_059911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7223#issuecomment-59911",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_059912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7223#issuecomment-59912",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_059913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7223#issuecomment-59913",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_059914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7223#issuecomment-59914",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_059915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7223#issuecomment-59915",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002470.json:
 ```json
 {
-    "body": "Assignee: yi\n\nI can't tex tut.tex unless the dsage section is commented out.  Also there is some \"to be written...\" section in there -- this is not appropriate for the tutorial, which is meant to be a very very polished documented. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2470\n\n",
+    "body": "Assignee: @yqiang\n\nI can't tex tut.tex unless the dsage section is commented out.  Also there is some \"to be written...\" section in there -- this is not appropriate for the tutorial, which is meant to be a very very polished documented. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2470\n\n",
     "created_at": "2008-03-11T07:59:09Z",
     "labels": [
         "dsage",
@@ -14,10 +14,10 @@ archive/issues_002470.json:
     "title": "dsage docs in tutorial -- can't tex them",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2470",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: yi
+Assignee: @yqiang
 
 I can't tex tut.tex unless the dsage section is commented out.  Also there is some "to be written..." section in there -- this is not appropriate for the tutorial, which is meant to be a very very polished documented. 
 
@@ -37,7 +37,7 @@ archive/issue_comments_016728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2470#issuecomment-16728",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_016729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2470#issuecomment-16729",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing status from new to assigned.
 archive/issue_comments_016730.json:
 ```json
 {
-    "body": "Attachment [tut.patch](tarball://root/attachments/some-uuid/ticket2470/tut.patch) by yi created at 2008-03-22 00:00:22",
+    "body": "Attachment [tut.patch](tarball://root/attachments/some-uuid/ticket2470/tut.patch) by @yqiang created at 2008-03-22 00:00:22",
     "created_at": "2008-03-22T00:00:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2470#issuecomment-16730",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Attachment [tut.patch](tarball://root/attachments/some-uuid/ticket2470/tut.patch) by yi created at 2008-03-22 00:00:22
+Attachment [tut.patch](tarball://root/attachments/some-uuid/ticket2470/tut.patch) by @yqiang created at 2008-03-22 00:00:22
 
 
 

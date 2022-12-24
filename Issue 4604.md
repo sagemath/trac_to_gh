@@ -3,7 +3,7 @@
 archive/issues_004604.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: graphics, 3d\n\nFrom sage-support (and this has bugged me too):\n\n\nI'm not sure if this is a bug or just something I'm misunderstanding,\nbut for 2D graphics I can write code like this.\n\n```\ng = Graphics()\ng += line( [ [-1,-1], [1,1] ] )\ng.show()\n```\n\nBut in 3D if I do either\n\n```\ng = Graphics()\ng += sphere( (1,1,1), 2 )\ng.show()\n```\n\nor\n\n```\ng = sage.plot.plot3d.base.Graphics3dGroup()\ng += sphere( (1,1,1), 2 )\ng.show()\n```\n\nI get the error: \n\n```\nValueError: min() arg is an empty sequence\n```\n\n\nIs there something I'm missing on how to create a graphics object and\nadd 3D graphics to it like the way it's done in 2D? \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4604\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: graphics, 3d\n\nFrom sage-support (and this has bugged me too):\n\n\nI'm not sure if this is a bug or just something I'm misunderstanding,\nbut for 2D graphics I can write code like this.\n\n```\ng = Graphics()\ng += line( [ [-1,-1], [1,1] ] )\ng.show()\n```\n\nBut in 3D if I do either\n\n```\ng = Graphics()\ng += sphere( (1,1,1), 2 )\ng.show()\n```\n\nor\n\n```\ng = sage.plot.plot3d.base.Graphics3dGroup()\ng += sphere( (1,1,1), 2 )\ng.show()\n```\n\nI get the error: \n\n```\nValueError: min() arg is an empty sequence\n```\n\n\nIs there something I'm missing on how to create a graphics object and\nadd 3D graphics to it like the way it's done in 2D? \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4604\n\n",
     "created_at": "2008-11-24T17:37:26Z",
     "labels": [
         "graphics",
@@ -17,7 +17,7 @@ archive/issues_004604.json:
     "user": "mhampton"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: graphics, 3d
 
@@ -133,7 +133,7 @@ archive/issue_comments_034512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4604#issuecomment-34512",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_034513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4604#issuecomment-34513",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_034514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4604#issuecomment-34514",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009215.json:
 ```json
 {
-    "body": "Assignee: slabbe\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9215\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9215\n\n",
     "created_at": "2010-06-11T11:19:18Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_009215.json:
     "title": "Bring doc coverage of plot/animate.py to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9215",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: slabbe
+Assignee: @seblabbe
 
 CC:  sage-combinat
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9215
 archive/issue_comments_086352.json:
 ```json
 {
-    "body": "Attachment [trac_9215_doc_animate-sl.patch](tarball://root/attachments/some-uuid/ticket9215/trac_9215_doc_animate-sl.patch) by slabbe created at 2010-06-11 11:53:21",
+    "body": "Attachment [trac_9215_doc_animate-sl.patch](tarball://root/attachments/some-uuid/ticket9215/trac_9215_doc_animate-sl.patch) by @seblabbe created at 2010-06-11 11:53:21",
     "created_at": "2010-06-11T11:53:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9215#issuecomment-86352",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_9215_doc_animate-sl.patch](tarball://root/attachments/some-uuid/ticket9215/trac_9215_doc_animate-sl.patch) by slabbe created at 2010-06-11 11:53:21
+Attachment [trac_9215_doc_animate-sl.patch](tarball://root/attachments/some-uuid/ticket9215/trac_9215_doc_animate-sl.patch) by @seblabbe created at 2010-06-11 11:53:21
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_086353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9215#issuecomment-86353",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_086354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9215#issuecomment-86354",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_086355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9215#issuecomment-86355",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_086356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9215#issuecomment-86356",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

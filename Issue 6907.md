@@ -3,7 +3,7 @@
 archive/issues_006907.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: implicit_plot\n\nIn sage 4.1.1, a call to implicit_plot() draws a perfectly fine graph, but also pops up a warning,\n\n```\n/usr/local/share/sage-4.1.1/local/lib/python2.6/site-packages/sage/plot/\\\nplot.py:2876: DeprecationWarning: Substitution using function-call\nsyntax and unnamed arguments is deprecated and will be removed from a\nfuture release of Sage; you can use named arguments instead, like\nEXPR(x=..., y=...)\n  k, _ = adapt_to_callable([f], 2)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6907\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: implicit_plot\n\nIn sage 4.1.1, a call to implicit_plot() draws a perfectly fine graph, but also pops up a warning,\n\n```\n/usr/local/share/sage-4.1.1/local/lib/python2.6/site-packages/sage/plot/\\\nplot.py:2876: DeprecationWarning: Substitution using function-call\nsyntax and unnamed arguments is deprecated and will be removed from a\nfuture release of Sage; you can use named arguments instead, like\nEXPR(x=..., y=...)\n  k, _ = adapt_to_callable([f], 2)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6907\n\n",
     "created_at": "2009-09-09T02:42:38Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_006907.json:
     "title": "implicit_plot reports deprecation warning",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6907",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: implicit_plot
 
@@ -49,7 +49,7 @@ archive/issue_comments_057059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6907#issuecomment-57059",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_057060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6907#issuecomment-57060",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_057061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6907#issuecomment-57061",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_057062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6907#issuecomment-57062",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_057063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6907#issuecomment-57063",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_057064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6907#issuecomment-57064",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

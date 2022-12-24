@@ -14,7 +14,7 @@ archive/issues_002378.json:
     "title": "graph animations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2378",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: mabshoff
@@ -43,7 +43,7 @@ archive/issue_comments_016041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2378#issuecomment-16041",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -58,16 +58,16 @@ http://reference.wolfram.com/mathematica/Combinatorica/ref/Highlight.html
 archive/issue_comments_016042.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to rlm.",
+    "body": "Changing assignee from mabshoff to @rlmill.",
     "created_at": "2008-03-03T18:08:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2378#issuecomment-16042",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from mabshoff to rlm.
+Changing assignee from mabshoff to @rlmill.
 
 
 
@@ -81,7 +81,7 @@ archive/issue_comments_016043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2378#issuecomment-16043",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_016044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2378#issuecomment-16044",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -112,16 +112,16 @@ To do the above, I think it would be sufficient to add an option to graph.plot t
 archive/issue_comments_016045.json:
 ```json
 {
-    "body": "Changing assignee from rlm to jason.",
+    "body": "Changing assignee from @rlmill to @jasongrout.",
     "created_at": "2008-09-10T03:01:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2378#issuecomment-16045",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Changing assignee from rlm to jason.
+Changing assignee from @rlmill to @jasongrout.
 
 
 
@@ -135,7 +135,7 @@ archive/issue_comments_016046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2378#issuecomment-16046",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_016048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2378#issuecomment-16048",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_016049.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2378#issuecomment-16049",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_016050.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2378#issuecomment-16050",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_016051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2378#issuecomment-16051",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_016052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2378#issuecomment-16052",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

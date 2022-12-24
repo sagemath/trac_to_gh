@@ -3,7 +3,7 @@
 archive/issues_006886.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nCC:  wuthrich shumow\n\nKeywords: elliptic curve isogeny\n\nIn #6384, code was introduced to check whether the kernel polynomial provided by the user was valid, by checking that it divides the appropriate division polynomial.\n\nThis can be too expensive!  I have been working with isogenies of degree 163 over QQ, for which computing the 163-division polynomial takes many hours.  So I want to introduce a check parameter to the isogeny construction, default True, so that users (or other code) can switch off this check (when they \"know\" they are right!).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6886\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @categorie shumow\n\nKeywords: elliptic curve isogeny\n\nIn #6384, code was introduced to check whether the kernel polynomial provided by the user was valid, by checking that it divides the appropriate division polynomial.\n\nThis can be too expensive!  I have been working with isogenies of degree 163 over QQ, for which computing the 163-division polynomial takes many hours.  So I want to introduce a check parameter to the isogeny construction, default True, so that users (or other code) can switch off this check (when they \"know\" they are right!).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6886\n\n",
     "created_at": "2009-09-04T08:58:56Z",
     "labels": [
         "elliptic curves",
@@ -14,12 +14,12 @@ archive/issues_006886.json:
     "title": "Elliptic curve isogeny checking can be expensive",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6886",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
-CC:  wuthrich shumow
+CC:  @categorie shumow
 
 Keywords: elliptic curve isogeny
 
@@ -39,16 +39,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6886
 archive/issue_comments_056896.json:
 ```json
 {
-    "body": "Attachment [trac_6886.patch](tarball://root/attachments/some-uuid/ticket6886/trac_6886.patch) by wuthrich created at 2009-10-08 21:55:38\n\nAn optional argument 'check' is added to isogenies for elliptic curves.",
+    "body": "Attachment [trac_6886.patch](tarball://root/attachments/some-uuid/ticket6886/trac_6886.patch) by @categorie created at 2009-10-08 21:55:38\n\nAn optional argument 'check' is added to isogenies for elliptic curves.",
     "created_at": "2009-10-08T21:55:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6886#issuecomment-56896",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_6886.patch](tarball://root/attachments/some-uuid/ticket6886/trac_6886.patch) by wuthrich created at 2009-10-08 21:55:38
+Attachment [trac_6886.patch](tarball://root/attachments/some-uuid/ticket6886/trac_6886.patch) by @categorie created at 2009-10-08 21:55:38
 
 An optional argument 'check' is added to isogenies for elliptic curves.
 
@@ -64,7 +64,7 @@ archive/issue_comments_056897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6886#issuecomment-56897",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_056898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6886#issuecomment-56898",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_056899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6886#issuecomment-56899",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -113,16 +113,16 @@ documentation for it; to be applied after the first
 archive/issue_comments_056900.json:
 ```json
 {
-    "body": "Attachment [trac_6886_doc.patch](tarball://root/attachments/some-uuid/ticket6886/trac_6886_doc.patch) by wuthrich created at 2009-10-09 09:06:23\n\nI forgot to add the documentation. The second patch (to be applied after the first) fixes that.\n\nIf check is false and a (or several) presumably-torsion points are given, the algorithm does not check if they are really torsion anymore. But it still needs the function .order(). I think we should open another ticket for this.\n\nChris.",
+    "body": "Attachment [trac_6886_doc.patch](tarball://root/attachments/some-uuid/ticket6886/trac_6886_doc.patch) by @categorie created at 2009-10-09 09:06:23\n\nI forgot to add the documentation. The second patch (to be applied after the first) fixes that.\n\nIf check is false and a (or several) presumably-torsion points are given, the algorithm does not check if they are really torsion anymore. But it still needs the function .order(). I think we should open another ticket for this.\n\nChris.",
     "created_at": "2009-10-09T09:06:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6886#issuecomment-56900",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_6886_doc.patch](tarball://root/attachments/some-uuid/ticket6886/trac_6886_doc.patch) by wuthrich created at 2009-10-09 09:06:23
+Attachment [trac_6886_doc.patch](tarball://root/attachments/some-uuid/ticket6886/trac_6886_doc.patch) by @categorie created at 2009-10-09 09:06:23
 
 I forgot to add the documentation. The second patch (to be applied after the first) fixes that.
 
@@ -137,16 +137,16 @@ Chris.
 archive/issue_comments_056901.json:
 ```json
 {
-    "body": "Remove assignee davidloeffler.",
+    "body": "Remove assignee @loefflerd.",
     "created_at": "2009-10-09T09:13:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6886#issuecomment-56901",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Remove assignee davidloeffler.
+Remove assignee @loefflerd.
 
 
 
@@ -160,7 +160,7 @@ archive/issue_comments_056902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6886#issuecomment-56902",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_056903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6886#issuecomment-56903",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_056904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6886#issuecomment-56904",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

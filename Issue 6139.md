@@ -3,7 +3,7 @@
 archive/issues_006139.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  mvngu\n\nKeywords: crypto, mq, sbox\n\nThis should work:\n\n\n```\nsage: S = mq.SBox(3, 0, 1, 3, 1, 0, 2, 2)\nsage: S(0)\n3\nsage: S([0,0,0])\n[1, 1]\n```\n\n\nreported by Sajan.S on [sage-support] (27.5.09)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6139\n\n",
+    "body": "Assignee: @malb\n\nCC:  mvngu\n\nKeywords: crypto, mq, sbox\n\nThis should work:\n\n\n```\nsage: S = mq.SBox(3, 0, 1, 3, 1, 0, 2, 2)\nsage: S(0)\n3\nsage: S([0,0,0])\n[1, 1]\n```\n\n\nreported by Sajan.S on [sage-support] (27.5.09)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6139\n\n",
     "created_at": "2009-05-27T12:20:18Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_006139.json:
     "title": "[with patch, needs review] Fix S-Box calling when m != n",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6139",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 CC:  mvngu
 
@@ -48,16 +48,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6139
 archive/issue_comments_049022.json:
 ```json
 {
-    "body": "Attachment [sbox_call_and_rest.patch](tarball://root/attachments/some-uuid/ticket6139/sbox_call_and_rest.patch) by malb created at 2009-06-02 13:55:11\n\nHi Minh, can I ask you to review this?",
+    "body": "Attachment [sbox_call_and_rest.patch](tarball://root/attachments/some-uuid/ticket6139/sbox_call_and_rest.patch) by @malb created at 2009-06-02 13:55:11\n\nHi Minh, can I ask you to review this?",
     "created_at": "2009-06-02T13:55:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6139#issuecomment-49022",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [sbox_call_and_rest.patch](tarball://root/attachments/some-uuid/ticket6139/sbox_call_and_rest.patch) by malb created at 2009-06-02 13:55:11
+Attachment [sbox_call_and_rest.patch](tarball://root/attachments/some-uuid/ticket6139/sbox_call_and_rest.patch) by @malb created at 2009-06-02 13:55:11
 
 Hi Minh, can I ask you to review this?
 
@@ -113,7 +113,7 @@ archive/issue_comments_049025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6139#issuecomment-49025",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_049026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6139#issuecomment-49026",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_049027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6139#issuecomment-49027",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

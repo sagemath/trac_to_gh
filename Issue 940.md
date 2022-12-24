@@ -3,7 +3,7 @@
 archive/issues_000940.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n    sage: t = '\"%s\"'%10^10000   # ten thousand character string.\n    sage: a = octave(t)\n```\n\nIf you now try to print a, it take forever.\n\nIssue created by migration from https://trac.sagemath.org/ticket/940\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n    sage: t = '\"%s\"'%10^10000   # ten thousand character string.\n    sage: a = octave(t)\n```\n\nIf you now try to print a, it take forever.\n\nIssue created by migration from https://trac.sagemath.org/ticket/940\n\n",
     "created_at": "2007-10-20T08:27:01Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_000940.json:
     "title": "read large output from octave (and probably matlab) takes *forever*",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/940",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/940
 archive/issue_comments_005749.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-08-31T06:10:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/940",
     "type": "issue_comment",
@@ -47,7 +47,7 @@ archive/issue_comments_005749.json:
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_005750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/940",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/940#issuecomment-5750",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_005751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/940",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/940#issuecomment-5751",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_005752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/940",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/940#issuecomment-5752",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_005753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/940",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/940#issuecomment-5753",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_005757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/940",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/940#issuecomment-5757",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -324,7 +324,7 @@ archive/issue_comments_005758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/940",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/940#issuecomment-5758",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

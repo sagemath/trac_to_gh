@@ -3,7 +3,7 @@
 archive/issues_003876.json:
 ```json
 {
-    "body": "Assignee: was\n\nFirst attempt at adding plotting to sigma (sum-of-divisors) function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3876\n\n",
+    "body": "Assignee: @williamstein\n\nFirst attempt at adding plotting to sigma (sum-of-divisors) function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3876\n\n",
     "created_at": "2008-08-15T17:54:23Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_003876.json:
     "title": "Add plotting to sigma function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3876",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 First attempt at adding plotting to sigma (sum-of-divisors) function.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3876
 archive/issue_comments_027641.json:
 ```json
 {
-    "body": "Attachment [sigma.patch](tarball://root/attachments/some-uuid/ticket3876/sigma.patch) by kcrisman created at 2008-08-15 17:56:42",
+    "body": "Attachment [sigma.patch](tarball://root/attachments/some-uuid/ticket3876/sigma.patch) by @kcrisman created at 2008-08-15 17:56:42",
     "created_at": "2008-08-15T17:56:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3876#issuecomment-27641",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [sigma.patch](tarball://root/attachments/some-uuid/ticket3876/sigma.patch) by kcrisman created at 2008-08-15 17:56:42
+Attachment [sigma.patch](tarball://root/attachments/some-uuid/ticket3876/sigma.patch) by @kcrisman created at 2008-08-15 17:56:42
 
 
 
@@ -50,16 +50,16 @@ Attachment [sigma.patch](tarball://root/attachments/some-uuid/ticket3876/sigma.p
 archive/issue_comments_027642.json:
 ```json
 {
-    "body": "Attachment [euler_phi.patch](tarball://root/attachments/some-uuid/ticket3876/euler_phi.patch) by kcrisman created at 2008-08-24 03:56:44\n\nAdds plotting to the Euler phi function",
+    "body": "Attachment [euler_phi.patch](tarball://root/attachments/some-uuid/ticket3876/euler_phi.patch) by @kcrisman created at 2008-08-24 03:56:44\n\nAdds plotting to the Euler phi function",
     "created_at": "2008-08-24T03:56:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3876#issuecomment-27642",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [euler_phi.patch](tarball://root/attachments/some-uuid/ticket3876/euler_phi.patch) by kcrisman created at 2008-08-24 03:56:44
+Attachment [euler_phi.patch](tarball://root/attachments/some-uuid/ticket3876/euler_phi.patch) by @kcrisman created at 2008-08-24 03:56:44
 
 Adds plotting to the Euler phi function
 
@@ -75,7 +75,7 @@ archive/issue_comments_027643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3876#issuecomment-27643",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -88,16 +88,16 @@ Changing status from new to assigned.
 archive/issue_comments_027644.json:
 ```json
 {
-    "body": "Changing assignee from was to kcrisman.",
+    "body": "Changing assignee from @williamstein to @kcrisman.",
     "created_at": "2008-08-24T04:00:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3876#issuecomment-27644",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Changing assignee from was to kcrisman.
+Changing assignee from @williamstein to @kcrisman.
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_027645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3876#issuecomment-27645",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_027646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3876#issuecomment-27646",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_027647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3876#issuecomment-27647",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_027651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3876#issuecomment-27651",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 

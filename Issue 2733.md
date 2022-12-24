@@ -3,7 +3,7 @@
 archive/issues_002733.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nIs this bug important enough to bother Bill Allombert (the maintainer of PARI in Debian) to upgrade PARI in Debian?\n\nsage -t  devel/sage-main/sage/matrix/tests.py               **********************************************************************\nFile \"tests.py\", line 55:\n    sage: a.mathnf(1)[1][1,] == gp('[4, 2, 1, 0, 3, 1, 1, 0, 1, 1, 2, 2, 3, 3, 0, 0, 1, 3]')\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2733\n\n",
+    "body": "Assignee: @timabbott\n\nIs this bug important enough to bother Bill Allombert (the maintainer of PARI in Debian) to upgrade PARI in Debian?\n\nsage -t  devel/sage-main/sage/matrix/tests.py               **********************************************************************\nFile \"tests.py\", line 55:\n    sage: a.mathnf(1)[1][1,] == gp('[4, 2, 1, 0, 3, 1, 1, 0, 1, 1, 2, 2, 3, 3, 0, 0, 1, 3]')\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2733\n\n",
     "created_at": "2008-03-30T05:14:16Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_002733.json:
     "title": "PARI in Debian has the mathnf bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2733",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 Is this bug important enough to bother Bill Allombert (the maintainer of PARI in Debian) to upgrade PARI in Debian?
 

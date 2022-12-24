@@ -92,7 +92,7 @@ archive/issue_comments_069900.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7999",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7999#issuecomment-69900",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -105,16 +105,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_069901.json:
 ```json
 {
-    "body": "Attachment [trac_7999-encoding.patch](tarball://root/attachments/some-uuid/ticket7999/trac_7999-encoding.patch) by mpatel created at 2010-01-19 19:42:03",
+    "body": "Attachment [trac_7999-encoding.patch](tarball://root/attachments/some-uuid/ticket7999/trac_7999-encoding.patch) by @qed777 created at 2010-01-19 19:42:03",
     "created_at": "2010-01-19T19:42:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7999",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7999#issuecomment-69901",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7999-encoding.patch](tarball://root/attachments/some-uuid/ticket7999/trac_7999-encoding.patch) by mpatel created at 2010-01-19 19:42:03
+Attachment [trac_7999-encoding.patch](tarball://root/attachments/some-uuid/ticket7999/trac_7999-encoding.patch) by @qed777 created at 2010-01-19 19:42:03
 
 
 
@@ -128,7 +128,7 @@ archive/issue_comments_069902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7999",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7999#issuecomment-69902",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

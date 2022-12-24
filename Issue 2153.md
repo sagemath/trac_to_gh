@@ -3,7 +3,7 @@
 archive/issues_002153.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nCC:  tscrim\n\nDefined parent of a group homomorphism such that the following example\nworks (and similar for permutation groups):\n\nsage: G.<x,y> = AbelianGroup(2,[2,3]); G \nMultiplicative Abelian Group isomorphic to C2 x C3\nsage: H.<a,b,c> = AbelianGroup(3,[2,3,4]); H\nMultiplicative Abelian Group isomorphic to C2 x C3 x C4\nsage: phi = AbelianGroupMorphism(G,H,[x,y],[a,b])\nsage: phi\n\nAbelianGroup morphism:\n  From: Multiplicative Abelian Group isomorphic to C2 x C3\n  To:   Multiplicative Abelian Group isomorphic to C2 x C3 x C4\nsage: phi.parent()\nSet of Morphisms from Multiplicative Abelian Group isomorphic to C2 x C3 to Multiplicative Abelian Group isomorphic to C2 x C3 x C4 in Category of groups\nsage: Hom(G,H) == phi.parent()\nTrue\n\nIssue created by migration from https://trac.sagemath.org/ticket/2153\n\n",
+    "body": "Assignee: joyner\n\nCC:  @tscrim\n\nDefined parent of a group homomorphism such that the following example\nworks (and similar for permutation groups):\n\nsage: G.<x,y> = AbelianGroup(2,[2,3]); G \nMultiplicative Abelian Group isomorphic to C2 x C3\nsage: H.<a,b,c> = AbelianGroup(3,[2,3,4]); H\nMultiplicative Abelian Group isomorphic to C2 x C3 x C4\nsage: phi = AbelianGroupMorphism(G,H,[x,y],[a,b])\nsage: phi\n\nAbelianGroup morphism:\n  From: Multiplicative Abelian Group isomorphic to C2 x C3\n  To:   Multiplicative Abelian Group isomorphic to C2 x C3 x C4\nsage: phi.parent()\nSet of Morphisms from Multiplicative Abelian Group isomorphic to C2 x C3 to Multiplicative Abelian Group isomorphic to C2 x C3 x C4 in Category of groups\nsage: Hom(G,H) == phi.parent()\nTrue\n\nIssue created by migration from https://trac.sagemath.org/ticket/2153\n\n",
     "created_at": "2008-02-13T22:42:50Z",
     "labels": [
         "group theory",
@@ -19,7 +19,7 @@ archive/issues_002153.json:
 ```
 Assignee: joyner
 
-CC:  tscrim
+CC:  @tscrim
 
 Defined parent of a group homomorphism such that the following example
 works (and similar for permutation groups):
@@ -50,16 +50,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2153
 archive/issue_comments_014129.json:
 ```json
 {
-    "body": "Attachment [group_homs.hg](tarball://root/attachments/some-uuid/ticket2153/group_homs.hg) by mhansen created at 2008-02-14 07:19:14",
+    "body": "Attachment [group_homs.hg](tarball://root/attachments/some-uuid/ticket2153/group_homs.hg) by @mwhansen created at 2008-02-14 07:19:14",
     "created_at": "2008-02-14T07:19:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2153#issuecomment-14129",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [group_homs.hg](tarball://root/attachments/some-uuid/ticket2153/group_homs.hg) by mhansen created at 2008-02-14 07:19:14
+Attachment [group_homs.hg](tarball://root/attachments/some-uuid/ticket2153/group_homs.hg) by @mwhansen created at 2008-02-14 07:19:14
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_014130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2153#issuecomment-14130",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_014131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2153#issuecomment-14131",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_014132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2153#issuecomment-14132",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -152,16 +152,16 @@ Michael
 archive/issue_comments_014134.json:
 ```json
 {
-    "body": "Attachment [9271.patch](tarball://root/attachments/some-uuid/ticket2153/9271.patch) by wdj created at 2008-04-06 00:56:35\n\ntried to create patch based on sage-3.0.alphaa0 from code D Kohel sent",
+    "body": "Attachment [9271.patch](tarball://root/attachments/some-uuid/ticket2153/9271.patch) by @wdjoyner created at 2008-04-06 00:56:35\n\ntried to create patch based on sage-3.0.alphaa0 from code D Kohel sent",
     "created_at": "2008-04-06T00:56:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2153#issuecomment-14134",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [9271.patch](tarball://root/attachments/some-uuid/ticket2153/9271.patch) by wdj created at 2008-04-06 00:56:35
+Attachment [9271.patch](tarball://root/attachments/some-uuid/ticket2153/9271.patch) by @wdjoyner created at 2008-04-06 00:56:35
 
 tried to create patch based on sage-3.0.alphaa0 from code D Kohel sent
 
@@ -177,7 +177,7 @@ archive/issue_comments_014135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2153#issuecomment-14135",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_014136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2153#issuecomment-14136",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_014137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2153#issuecomment-14137",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_014138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2153#issuecomment-14138",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_014139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2153#issuecomment-14139",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_014140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2153#issuecomment-14140",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_014141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2153#issuecomment-14141",
-    "user": "sbrandhorst"
+    "user": "@simonbrandhorst"
 }
 ```
 
@@ -328,7 +328,7 @@ archive/issue_comments_014142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2153#issuecomment-14142",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -346,7 +346,7 @@ archive/issue_comments_014143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2153#issuecomment-14143",
-    "user": "sbrandhorst"
+    "user": "@simonbrandhorst"
 }
 ```
 
@@ -364,7 +364,7 @@ archive/issue_comments_014144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2153#issuecomment-14144",
-    "user": "sbrandhorst"
+    "user": "@simonbrandhorst"
 }
 ```
 
@@ -384,7 +384,7 @@ archive/issue_comments_014145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2153#issuecomment-14145",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

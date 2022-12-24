@@ -3,7 +3,7 @@
 archive/issues_005405.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  mhansen jason\n\nThe typical usage of this decorator would be to be applied above a\n:obj:`cached_method` or :obj:`cached_function` decorator so that\nthe correct cached object is returned.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5405\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @mwhansen @jasongrout\n\nThe typical usage of this decorator would be to be applied above a\n:obj:`cached_method` or :obj:`cached_function` decorator so that\nthe correct cached object is returned.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5405\n\n",
     "created_at": "2009-02-28T23:14:31Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_005405.json:
     "title": "[with patch, needs review] create a decorator for adding default keyword arguments to a function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5405",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: cwitty
 
-CC:  mhansen jason
+CC:  @mwhansen @jasongrout
 
 The typical usage of this decorator would be to be applied above a
 :obj:`cached_method` or :obj:`cached_function` decorator so that
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5405
 archive/issue_comments_041765.json:
 ```json
 {
-    "body": "Attachment [trac_5405.patch](tarball://root/attachments/some-uuid/ticket5405/trac_5405.patch) by nthiery created at 2009-03-18 08:51:37\n\nHi Mike!\n\nI am not so sure about the name, although I can't propose much better than\ndefault_values, or set_default_values.\n\nCould it be generalized to handle both positional and non positional arguments?\n\nI'd suggest to have the doc by starting with what the thing actually does, followed by the typical usage.\nSpeaking of which: could you add an example of this typical usage? (it was not clear to me).",
+    "body": "Attachment [trac_5405.patch](tarball://root/attachments/some-uuid/ticket5405/trac_5405.patch) by @nthiery created at 2009-03-18 08:51:37\n\nHi Mike!\n\nI am not so sure about the name, although I can't propose much better than\ndefault_values, or set_default_values.\n\nCould it be generalized to handle both positional and non positional arguments?\n\nI'd suggest to have the doc by starting with what the thing actually does, followed by the typical usage.\nSpeaking of which: could you add an example of this typical usage? (it was not clear to me).",
     "created_at": "2009-03-18T08:51:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5405#issuecomment-41765",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_5405.patch](tarball://root/attachments/some-uuid/ticket5405/trac_5405.patch) by nthiery created at 2009-03-18 08:51:37
+Attachment [trac_5405.patch](tarball://root/attachments/some-uuid/ticket5405/trac_5405.patch) by @nthiery created at 2009-03-18 08:51:37
 
 Hi Mike!
 
@@ -69,7 +69,7 @@ archive/issue_comments_041766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5405#issuecomment-41766",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_041767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5405#issuecomment-41767",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_041768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5405#issuecomment-41768",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_041769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5405#issuecomment-41769",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_041770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5405#issuecomment-41770",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_041771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5405#issuecomment-41771",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_041772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5405#issuecomment-41772",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_041773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5405#issuecomment-41773",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_041774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5405#issuecomment-41774",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_041775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5405#issuecomment-41775",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -330,7 +330,7 @@ archive/issue_comments_041776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5405#issuecomment-41776",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -350,7 +350,7 @@ archive/issue_comments_041777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5405#issuecomment-41777",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -376,7 +376,7 @@ archive/issue_comments_041778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5405#issuecomment-41778",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -392,16 +392,16 @@ Fair enough -- but just to clarify, `functools.partial` *is* a decorator, just t
 archive/issue_comments_041779.json:
 ```json
 {
-    "body": "Attachment [trac_5405-decorator-partial.patch](tarball://root/attachments/some-uuid/ticket5405/trac_5405-decorator-partial.patch) by timdumol created at 2009-12-05 09:53:26\n\nAdds module `sage.misc.decorators` with content `specialize`.",
+    "body": "Attachment [trac_5405-decorator-partial.patch](tarball://root/attachments/some-uuid/ticket5405/trac_5405-decorator-partial.patch) by @TimDumol created at 2009-12-05 09:53:26\n\nAdds module `sage.misc.decorators` with content `specialize`.",
     "created_at": "2009-12-05T09:53:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5405#issuecomment-41779",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_5405-decorator-partial.patch](tarball://root/attachments/some-uuid/ticket5405/trac_5405-decorator-partial.patch) by timdumol created at 2009-12-05 09:53:26
+Attachment [trac_5405-decorator-partial.patch](tarball://root/attachments/some-uuid/ticket5405/trac_5405-decorator-partial.patch) by @TimDumol created at 2009-12-05 09:53:26
 
 Adds module `sage.misc.decorators` with content `specialize`.
 
@@ -417,7 +417,7 @@ archive/issue_comments_041780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5405#issuecomment-41780",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -437,7 +437,7 @@ archive/issue_comments_041781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5405#issuecomment-41781",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -455,7 +455,7 @@ archive/issue_comments_041782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5405#issuecomment-41782",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -473,7 +473,7 @@ archive/issue_comments_041783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5405#issuecomment-41783",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

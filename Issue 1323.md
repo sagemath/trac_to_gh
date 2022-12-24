@@ -3,7 +3,7 @@
 archive/issues_001323.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mhansen\n\nFrom Chris Godsil's wishlist:\n\n\n```\n>>> Sometimes I want to construct graphs whose vertices are subspaces of a\n>>> vector space over a finite field. It could be useful to have a\n>>> generator for\n>>> the lines of the associated projective space, or even subspaces of a given\n>>> dimension.\n>> Is there an easy way to generate all of the subspaces of a vector space\n>> already in Sage, maybe restricted to a particular dimension, from the\n>> original vector space?\n> Maybe make a ticket for this?\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1323\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\nFrom Chris Godsil's wishlist:\n\n\n```\n>>> Sometimes I want to construct graphs whose vertices are subspaces of a\n>>> vector space over a finite field. It could be useful to have a\n>>> generator for\n>>> the lines of the associated projective space, or even subspaces of a given\n>>> dimension.\n>> Is there an easy way to generate all of the subspaces of a vector space\n>> already in Sage, maybe restricted to a particular dimension, from the\n>> original vector space?\n> Maybe make a ticket for this?\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1323\n\n",
     "created_at": "2007-11-28T20:18:47Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_001323.json:
     "title": "generate all subspaces of a vector space/projective space",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1323",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  mhansen
+CC:  @mwhansen
 
 From Chris Godsil's wishlist:
 
@@ -54,7 +54,7 @@ archive/issue_comments_008476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1323#issuecomment-8476",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_008477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1323#issuecomment-8477",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_008478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1323#issuecomment-8478",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -113,16 +113,16 @@ Changing status from new to assigned.
 archive/issue_comments_008479.json:
 ```json
 {
-    "body": "Changing assignee from was to rlm.",
+    "body": "Changing assignee from @williamstein to @rlmill.",
     "created_at": "2008-10-16T13:14:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1323#issuecomment-8479",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Changing assignee from was to rlm.
+Changing assignee from @williamstein to @rlmill.
 
 
 
@@ -131,16 +131,16 @@ Changing assignee from was to rlm.
 archive/issue_comments_008480.json:
 ```json
 {
-    "body": "Attachment [trac_1323-subspaces.patch](tarball://root/attachments/some-uuid/ticket1323/trac_1323-subspaces.patch) by rlm created at 2008-10-17 13:40:21",
+    "body": "Attachment [trac_1323-subspaces.patch](tarball://root/attachments/some-uuid/ticket1323/trac_1323-subspaces.patch) by @rlmill created at 2008-10-17 13:40:21",
     "created_at": "2008-10-17T13:40:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1323#issuecomment-8480",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_1323-subspaces.patch](tarball://root/attachments/some-uuid/ticket1323/trac_1323-subspaces.patch) by rlm created at 2008-10-17 13:40:21
+Attachment [trac_1323-subspaces.patch](tarball://root/attachments/some-uuid/ticket1323/trac_1323-subspaces.patch) by @rlmill created at 2008-10-17 13:40:21
 
 
 
@@ -154,7 +154,7 @@ archive/issue_comments_008481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1323#issuecomment-8481",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

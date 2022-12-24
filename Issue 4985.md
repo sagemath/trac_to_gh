@@ -3,7 +3,7 @@
 archive/issues_004985.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jhpalmieri\n\nWe should expand the documentation for list_plot so that questions like on the latter half of this thread don't happen:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/e523b8ade175746c\n\nBasically, we should explain how to use zip like thus:\n\nlist_plot(zip(list of x-coords, list of y-coords))\n\nso that people from Matlab don't get confused by the very unhelpful error message.  Maybe the error message ought to be changed too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4985\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jhpalmieri\n\nWe should expand the documentation for list_plot so that questions like on the latter half of this thread don't happen:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/e523b8ade175746c\n\nBasically, we should explain how to use zip like thus:\n\nlist_plot(zip(list of x-coords, list of y-coords))\n\nso that people from Matlab don't get confused by the very unhelpful error message.  Maybe the error message ought to be changed too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4985\n\n",
     "created_at": "2009-01-16T02:50:47Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_004985.json:
     "title": "Expand documentation for list_plot to point out the utility of zip",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4985",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jhpalmieri
+CC:  @jhpalmieri
 
 We should expand the documentation for list_plot so that questions like on the latter half of this thread don't happen:
 
@@ -47,7 +47,7 @@ archive/issue_comments_038019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4985#issuecomment-38019",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_038020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4985#issuecomment-38020",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_038021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4985#issuecomment-38021",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -99,16 +99,16 @@ By the way, I wasn't sure what "the very unhelpful error message" is. We might c
 archive/issue_comments_038022.json:
 ```json
 {
-    "body": "Attachment [4985.patch](tarball://root/attachments/some-uuid/ticket4985/4985.patch) by jason created at 2009-03-23 21:16:08\n\nNice!  Positive review.",
+    "body": "Attachment [4985.patch](tarball://root/attachments/some-uuid/ticket4985/4985.patch) by @jasongrout created at 2009-03-23 21:16:08\n\nNice!  Positive review.",
     "created_at": "2009-03-23T21:16:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4985#issuecomment-38022",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [4985.patch](tarball://root/attachments/some-uuid/ticket4985/4985.patch) by jason created at 2009-03-23 21:16:08
+Attachment [4985.patch](tarball://root/attachments/some-uuid/ticket4985/4985.patch) by @jasongrout created at 2009-03-23 21:16:08
 
 Nice!  Positive review.
 
@@ -124,7 +124,7 @@ archive/issue_comments_038023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4985#issuecomment-38023",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_038024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4985#issuecomment-38024",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

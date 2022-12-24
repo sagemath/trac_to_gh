@@ -3,7 +3,7 @@
 archive/issues_001089.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nKeywords: graphs\n\nHere is an update to the subgraph function to handle a list of edges.  If edges are not specified, then it reverts to the original functionality (returning an induced subgraph).\n\nI also fix a doctest that should have been complaining in transitive_reduction and make the doctests in min_spanning_tree make more sense.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1089\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\nHere is an update to the subgraph function to handle a list of edges.  If edges are not specified, then it reverts to the original functionality (returning an induced subgraph).\n\nI also fix a doctest that should have been complaining in transitive_reduction and make the doctests in min_spanning_tree make more sense.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1089\n\n",
     "created_at": "2007-11-03T20:48:47Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001089.json:
     "title": "[with patch] graphs: update subgraph to handle a list of edges",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1089",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 Keywords: graphs
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1089
 archive/issue_comments_006593.json:
 ```json
 {
-    "body": "Attachment [subgraph-edges.patch](tarball://root/attachments/some-uuid/ticket1089/subgraph-edges.patch) by rlm created at 2007-11-03 23:29:50\n\nJason,\n\nPlease include a fresh patch that comes from a clean install of sage 2.8.11. The base version does not match. Also, the function subgraph(vertices) returns the induced subgraph with the given vertices and *all* edges from the original graph whose endpoints are in vertices. Perhaps the current function should be renamed induced_subgraph, and you could make a separate subgraph_from_edges() function. It also occurs to me that we don't yet have an is_subgraph fucntion...\n\nCheers,\n\nRobert M",
+    "body": "Attachment [subgraph-edges.patch](tarball://root/attachments/some-uuid/ticket1089/subgraph-edges.patch) by @rlmill created at 2007-11-03 23:29:50\n\nJason,\n\nPlease include a fresh patch that comes from a clean install of sage 2.8.11. The base version does not match. Also, the function subgraph(vertices) returns the induced subgraph with the given vertices and *all* edges from the original graph whose endpoints are in vertices. Perhaps the current function should be renamed induced_subgraph, and you could make a separate subgraph_from_edges() function. It also occurs to me that we don't yet have an is_subgraph fucntion...\n\nCheers,\n\nRobert M",
     "created_at": "2007-11-03T23:29:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1089#issuecomment-6593",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [subgraph-edges.patch](tarball://root/attachments/some-uuid/ticket1089/subgraph-edges.patch) by rlm created at 2007-11-03 23:29:50
+Attachment [subgraph-edges.patch](tarball://root/attachments/some-uuid/ticket1089/subgraph-edges.patch) by @rlmill created at 2007-11-03 23:29:50
 
 Jason,
 
@@ -67,7 +67,7 @@ archive/issue_comments_006594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1089#issuecomment-6594",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_006595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1089#issuecomment-6595",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_006596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1089#issuecomment-6596",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -142,16 +142,16 @@ Indeed, the subgraph isomorphism problem is NP-complete, but I was just talking 
 archive/issue_comments_006597.json:
 ```json
 {
-    "body": "Attachment [subgraph_edges-updated.patch](tarball://root/attachments/some-uuid/ticket1089/subgraph_edges-updated.patch) by jason created at 2007-11-13 23:44:12\n\nCorrected bugs, rebased against 2.8.12, and put in more comprehensive doctests.",
+    "body": "Attachment [subgraph_edges-updated.patch](tarball://root/attachments/some-uuid/ticket1089/subgraph_edges-updated.patch) by @jasongrout created at 2007-11-13 23:44:12\n\nCorrected bugs, rebased against 2.8.12, and put in more comprehensive doctests.",
     "created_at": "2007-11-13T23:44:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1089#issuecomment-6597",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [subgraph_edges-updated.patch](tarball://root/attachments/some-uuid/ticket1089/subgraph_edges-updated.patch) by jason created at 2007-11-13 23:44:12
+Attachment [subgraph_edges-updated.patch](tarball://root/attachments/some-uuid/ticket1089/subgraph_edges-updated.patch) by @jasongrout created at 2007-11-13 23:44:12
 
 Corrected bugs, rebased against 2.8.12, and put in more comprehensive doctests.
 
@@ -167,7 +167,7 @@ archive/issue_comments_006598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1089#issuecomment-6598",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_006599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1089#issuecomment-6599",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

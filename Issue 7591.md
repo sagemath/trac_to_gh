@@ -3,7 +3,7 @@
 archive/issues_007591.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  burcin\n\nThis is really bad\n\n\n```\nsage: B.<a,b,c> = BooleanPolynomialRing(order='lex')\nsage: P.<a,b,c> = BooleanPolynomialRing(order='degrevlex')\nsage: P(B('a')) # good\na\nsage: B(P('c')) # urgh!\na\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7591\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin\n\nThis is really bad\n\n\n```\nsage: B.<a,b,c> = BooleanPolynomialRing(order='lex')\nsage: P.<a,b,c> = BooleanPolynomialRing(order='degrevlex')\nsage: P(B('a')) # good\na\nsage: B(P('c')) # urgh!\na\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7591\n\n",
     "created_at": "2009-12-03T12:53:02Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_007591.json:
     "title": "Boolean Polynomial Ring coercion broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7591",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  burcin
+CC:  @burcin
 
 This is really bad
 
@@ -50,7 +50,7 @@ archive/issue_comments_064721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7591#issuecomment-64721",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_064722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7591#issuecomment-64722",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_064723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7591#issuecomment-64723",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -99,16 +99,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_064724.json:
 ```json
 {
-    "body": "Attachment [trac_7591.patch](tarball://root/attachments/some-uuid/ticket7591/trac_7591.patch) by burcin created at 2009-12-06 17:39:02\n\nLooks good to me.",
+    "body": "Attachment [trac_7591.patch](tarball://root/attachments/some-uuid/ticket7591/trac_7591.patch) by @burcin created at 2009-12-06 17:39:02\n\nLooks good to me.",
     "created_at": "2009-12-06T17:39:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7591#issuecomment-64724",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_7591.patch](tarball://root/attachments/some-uuid/ticket7591/trac_7591.patch) by burcin created at 2009-12-06 17:39:02
+Attachment [trac_7591.patch](tarball://root/attachments/some-uuid/ticket7591/trac_7591.patch) by @burcin created at 2009-12-06 17:39:02
 
 Looks good to me.
 
@@ -124,7 +124,7 @@ archive/issue_comments_064725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7591#issuecomment-64725",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

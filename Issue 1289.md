@@ -14,7 +14,7 @@ archive/issues_001289.json:
     "title": "serious problems with how ceil and floor are computed symbolically",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1289",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -61,7 +61,7 @@ archive/issue_comments_008093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1289",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1289#issuecomment-8093",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -74,16 +74,16 @@ Changing status from new to assigned.
 archive/issue_comments_008094.json:
 ```json
 {
-    "body": "Changing assignee from somebody to mhansen.",
+    "body": "Changing assignee from somebody to @mwhansen.",
     "created_at": "2007-12-06T21:11:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1289",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1289#issuecomment-8094",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from somebody to mhansen.
+Changing assignee from somebody to @mwhansen.
 
 
 
@@ -97,7 +97,7 @@ archive/issue_comments_008095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1289",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1289#issuecomment-8095",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -111,16 +111,16 @@ http://www.math.utexas.edu/pipermail/maxima/2007/009327.html
 archive/issue_comments_008096.json:
 ```json
 {
-    "body": "Attachment [1289.patch](tarball://root/attachments/some-uuid/ticket1289/1289.patch) by mhansen created at 2008-01-17 01:20:56",
+    "body": "Attachment [1289.patch](tarball://root/attachments/some-uuid/ticket1289/1289.patch) by @mwhansen created at 2008-01-17 01:20:56",
     "created_at": "2008-01-17T01:20:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1289",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1289#issuecomment-8096",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1289.patch](tarball://root/attachments/some-uuid/ticket1289/1289.patch) by mhansen created at 2008-01-17 01:20:56
+Attachment [1289.patch](tarball://root/attachments/some-uuid/ticket1289/1289.patch) by @mwhansen created at 2008-01-17 01:20:56
 
 
 
@@ -134,7 +134,7 @@ archive/issue_comments_008097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1289",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1289#issuecomment-8097",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -215,16 +215,16 @@ Then Carl Witty comes to the rescue:
 archive/issue_comments_008098.json:
 ```json
 {
-    "body": "Attachment [1289.2.patch](tarball://root/attachments/some-uuid/ticket1289/1289.2.patch) by mhansen created at 2008-01-17 05:44:08",
+    "body": "Attachment [1289.2.patch](tarball://root/attachments/some-uuid/ticket1289/1289.2.patch) by @mwhansen created at 2008-01-17 05:44:08",
     "created_at": "2008-01-17T05:44:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1289",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1289#issuecomment-8098",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1289.2.patch](tarball://root/attachments/some-uuid/ticket1289/1289.2.patch) by mhansen created at 2008-01-17 05:44:08
+Attachment [1289.2.patch](tarball://root/attachments/some-uuid/ticket1289/1289.2.patch) by @mwhansen created at 2008-01-17 05:44:08
 
 
 
@@ -238,7 +238,7 @@ archive/issue_comments_008099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1289",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1289#issuecomment-8099",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

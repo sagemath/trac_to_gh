@@ -14,7 +14,7 @@ archive/issues_002718.json:
     "title": "increase the default doctest timeout to 360 seconds",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2718",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: failure

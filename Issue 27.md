@@ -14,7 +14,7 @@ archive/issues_000027.json:
     "title": "Move the function dual_eigenvector in sage/hecke/module.py to",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/27",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -37,7 +37,7 @@ archive/issue_comments_000195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/27",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/27#issuecomment-195",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing component from basic arithmetic to modular forms.
 archive/issue_comments_000196.json:
 ```json
 {
-    "body": "Changing assignee from somebody to was.",
+    "body": "Changing assignee from somebody to @williamstein.",
     "created_at": "2008-01-27T05:08:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/27",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/27#issuecomment-196",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from somebody to was.
+Changing assignee from somebody to @williamstein.
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_000197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/27",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/27#issuecomment-197",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_000198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/27",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/27#issuecomment-198",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

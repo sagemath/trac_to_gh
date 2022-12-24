@@ -3,7 +3,7 @@
 archive/issues_005923.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nThe ModularForms command has some slightly counter-intuitive behaviour on some types of input:\n\n\n```\nsage: ModularForms(gp(1),12)\n---------------------------------------------------------------------------\nTypeError     \n\n[much snipped error message]\n\nTypeError: Error executing code in GP/PARI:\nCODE:\n        sage[4]=level(sage[3]);\nGP/PARI ERROR:\n  ***   expected character: ',' instead of: sage[4]=level(sage[3]);\n                                                              ^-----\n```\n\n\nI realize that this is because the first element is supposed to be a group, although a (Sage) integer is allowed.\n\nWould there be any support for having an if statement in the function to catch magma or pari elements and transform them into their Sage equivalents?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5923\n\n",
+    "body": "Assignee: @craigcitro\n\nThe ModularForms command has some slightly counter-intuitive behaviour on some types of input:\n\n\n```\nsage: ModularForms(gp(1),12)\n---------------------------------------------------------------------------\nTypeError     \n\n[much snipped error message]\n\nTypeError: Error executing code in GP/PARI:\nCODE:\n        sage[4]=level(sage[3]);\nGP/PARI ERROR:\n  ***   expected character: ',' instead of: sage[4]=level(sage[3]);\n                                                              ^-----\n```\n\n\nI realize that this is because the first element is supposed to be a group, although a (Sage) integer is allowed.\n\nWould there be any support for having an if statement in the function to catch magma or pari elements and transform them into their Sage equivalents?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5923\n\n",
     "created_at": "2009-04-28T22:41:04Z",
     "labels": [
         "modular forms",
@@ -17,7 +17,7 @@ archive/issues_005923.json:
     "user": "ljpk"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 The ModularForms command has some slightly counter-intuitive behaviour on some types of input:
 
@@ -53,16 +53,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5923
 archive/issue_comments_046826.json:
 ```json
 {
-    "body": "Changing assignee from craigcitro to davidloeffler.",
+    "body": "Changing assignee from @craigcitro to @loefflerd.",
     "created_at": "2009-05-01T08:02:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5923#issuecomment-46826",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from craigcitro to davidloeffler.
+Changing assignee from @craigcitro to @loefflerd.
 
 
 
@@ -76,7 +76,7 @@ archive/issue_comments_046827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5923#issuecomment-46827",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_046828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5923#issuecomment-46828",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_046829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5923#issuecomment-46829",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_046830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5923#issuecomment-46830",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -145,16 +145,16 @@ patch against 3.4.2.rc0
 archive/issue_comments_046831.json:
 ```json
 {
-    "body": "Attachment [trac_5923.patch](tarball://root/attachments/some-uuid/ticket5923/trac_5923.patch) by craigcitro created at 2009-05-07 08:45:22",
+    "body": "Attachment [trac_5923.patch](tarball://root/attachments/some-uuid/ticket5923/trac_5923.patch) by @craigcitro created at 2009-05-07 08:45:22",
     "created_at": "2009-05-07T08:45:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5923#issuecomment-46831",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac_5923.patch](tarball://root/attachments/some-uuid/ticket5923/trac_5923.patch) by craigcitro created at 2009-05-07 08:45:22
+Attachment [trac_5923.patch](tarball://root/attachments/some-uuid/ticket5923/trac_5923.patch) by @craigcitro created at 2009-05-07 08:45:22
 
 
 
@@ -163,16 +163,16 @@ Attachment [trac_5923.patch](tarball://root/attachments/some-uuid/ticket5923/tra
 archive/issue_comments_046832.json:
 ```json
 {
-    "body": "Attachment [trac_5923_pt2.patch](tarball://root/attachments/some-uuid/ticket5923/trac_5923_pt2.patch) by craigcitro created at 2009-05-07 09:11:32\n\nLooks good -- I added one small patch that just slightly moved things around. (Mostly just removed cases where tests would end up getting run several times, even though this code isn't anywhere near performance-critical.)",
+    "body": "Attachment [trac_5923_pt2.patch](tarball://root/attachments/some-uuid/ticket5923/trac_5923_pt2.patch) by @craigcitro created at 2009-05-07 09:11:32\n\nLooks good -- I added one small patch that just slightly moved things around. (Mostly just removed cases where tests would end up getting run several times, even though this code isn't anywhere near performance-critical.)",
     "created_at": "2009-05-07T09:11:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5923#issuecomment-46832",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac_5923_pt2.patch](tarball://root/attachments/some-uuid/ticket5923/trac_5923_pt2.patch) by craigcitro created at 2009-05-07 09:11:32
+Attachment [trac_5923_pt2.patch](tarball://root/attachments/some-uuid/ticket5923/trac_5923_pt2.patch) by @craigcitro created at 2009-05-07 09:11:32
 
 Looks good -- I added one small patch that just slightly moved things around. (Mostly just removed cases where tests would end up getting run several times, even though this code isn't anywhere near performance-critical.)
 

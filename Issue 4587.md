@@ -14,7 +14,7 @@ archive/issues_004587.json:
     "title": "[with patch, needs review] Installation of the latest version of a package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4587",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 Assignee: mabshoff
@@ -96,7 +96,7 @@ archive/issue_comments_034392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34392",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_034393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34393",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_034394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34394",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_034396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34396",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_034397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34397",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_034398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34398",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -285,16 +285,16 @@ I guess there will be no doc-test unless someone produces a `test_dummy.spkg`
 archive/issue_comments_034399.json:
 ```json
 {
-    "body": "Attachment [installpackage.patch](tarball://root/attachments/some-uuid/ticket4587/installpackage.patch) by SimonKing created at 2008-11-28 22:58:35\n\ninstall_package: If there is a unique package starting with a given string, it gets installed",
+    "body": "Attachment [installpackage.patch](tarball://root/attachments/some-uuid/ticket4587/installpackage.patch) by @simon-king-jena created at 2008-11-28 22:58:35\n\ninstall_package: If there is a unique package starting with a given string, it gets installed",
     "created_at": "2008-11-28T22:58:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34399",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [installpackage.patch](tarball://root/attachments/some-uuid/ticket4587/installpackage.patch) by SimonKing created at 2008-11-28 22:58:35
+Attachment [installpackage.patch](tarball://root/attachments/some-uuid/ticket4587/installpackage.patch) by @simon-king-jena created at 2008-11-28 22:58:35
 
 install_package: If there is a unique package starting with a given string, it gets installed
 
@@ -310,7 +310,7 @@ archive/issue_comments_034400.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34400",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -337,7 +337,7 @@ archive/issue_comments_034401.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34401",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -386,7 +386,7 @@ archive/issue_comments_034402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34402",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -412,16 +412,16 @@ I agree that the error message may be clearer. So, back at work...
 archive/issue_comments_034403.json:
 ```json
 {
-    "body": "Attachment [installpackageErrorMessage.patch](tarball://root/attachments/some-uuid/ticket4587/installpackageErrorMessage.patch) by SimonKing created at 2008-11-29 00:12:22\n\nTo be applied after the first patch: Improving the error message",
+    "body": "Attachment [installpackageErrorMessage.patch](tarball://root/attachments/some-uuid/ticket4587/installpackageErrorMessage.patch) by @simon-king-jena created at 2008-11-29 00:12:22\n\nTo be applied after the first patch: Improving the error message",
     "created_at": "2008-11-29T00:12:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34403",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [installpackageErrorMessage.patch](tarball://root/attachments/some-uuid/ticket4587/installpackageErrorMessage.patch) by SimonKing created at 2008-11-29 00:12:22
+Attachment [installpackageErrorMessage.patch](tarball://root/attachments/some-uuid/ticket4587/installpackageErrorMessage.patch) by @simon-king-jena created at 2008-11-29 00:12:22
 
 To be applied after the first patch: Improving the error message
 
@@ -437,7 +437,7 @@ archive/issue_comments_034404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34404",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -492,7 +492,7 @@ archive/issue_comments_034405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34405",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -513,7 +513,7 @@ archive/issue_comments_034406.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34406",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

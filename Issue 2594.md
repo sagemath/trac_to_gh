@@ -3,7 +3,7 @@
 archive/issues_002594.json:
 ```json
 {
-    "body": "Assignee: malb\n\nThe __floordiv__ special implementation for monomials throws away coefficients.\n\n\n```\nsage: R.<x,y,z>=ZZ[]\nsage: f=3*x^2-1\nsage: f//x\nx\n```\n\n\nA patch is attached to fix this along with some other coercion issues.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2594\n\n",
+    "body": "Assignee: @malb\n\nThe __floordiv__ special implementation for monomials throws away coefficients.\n\n\n```\nsage: R.<x,y,z>=ZZ[]\nsage: f=3*x^2-1\nsage: f//x\nx\n```\n\n\nA patch is attached to fix this along with some other coercion issues.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2594\n\n",
     "created_at": "2008-03-19T11:56:35Z",
     "labels": [
         "commutative algebra",
@@ -17,7 +17,7 @@ archive/issues_002594.json:
     "user": "jbmohler"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 The __floordiv__ special implementation for monomials throws away coefficients.
 
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2594
 archive/issue_comments_017750.json:
 ```json
 {
-    "body": "Attachment [mpoly-div-bug.patch](tarball://root/attachments/some-uuid/ticket2594/mpoly-div-bug.patch) by malb created at 2008-03-19 16:07:02\n\nPatch looks good.",
+    "body": "Attachment [mpoly-div-bug.patch](tarball://root/attachments/some-uuid/ticket2594/mpoly-div-bug.patch) by @malb created at 2008-03-19 16:07:02\n\nPatch looks good.",
     "created_at": "2008-03-19T16:07:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2594",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2594#issuecomment-17750",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [mpoly-div-bug.patch](tarball://root/attachments/some-uuid/ticket2594/mpoly-div-bug.patch) by malb created at 2008-03-19 16:07:02
+Attachment [mpoly-div-bug.patch](tarball://root/attachments/some-uuid/ticket2594/mpoly-div-bug.patch) by @malb created at 2008-03-19 16:07:02
 
 Patch looks good.
 

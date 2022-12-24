@@ -14,7 +14,7 @@ archive/issues_004223.json:
     "title": "upgrade fpLLL to newest upstream release (3.0)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4223",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: mabshoff

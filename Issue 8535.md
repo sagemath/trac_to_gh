@@ -3,7 +3,7 @@
 archive/issues_008535.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nBisection, plotting, max/min, and some doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8535\n\n",
+    "body": "Assignee: @aghitza\n\nBisection, plotting, max/min, and some doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8535\n\n",
     "created_at": "2010-03-14T09:12:29Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_008535.json:
     "title": "Various interval field improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8535",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Bisection, plotting, max/min, and some doctests.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8535
 archive/issue_comments_077138.json:
 ```json
 {
-    "body": "Attachment [8535-intervals.patch](tarball://root/attachments/some-uuid/ticket8535/8535-intervals.patch) by robertwb created at 2010-04-28 05:09:38",
+    "body": "Attachment [8535-intervals.patch](tarball://root/attachments/some-uuid/ticket8535/8535-intervals.patch) by @robertwb created at 2010-04-28 05:09:38",
     "created_at": "2010-04-28T05:09:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8535#issuecomment-77138",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [8535-intervals.patch](tarball://root/attachments/some-uuid/ticket8535/8535-intervals.patch) by robertwb created at 2010-04-28 05:09:38
+Attachment [8535-intervals.patch](tarball://root/attachments/some-uuid/ticket8535/8535-intervals.patch) by @robertwb created at 2010-04-28 05:09:38
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_077139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8535#issuecomment-77139",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_077140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8535#issuecomment-77140",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_077141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8535#issuecomment-77141",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_077142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8535#issuecomment-77142",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_077143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8535#issuecomment-77143",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_077144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8535#issuecomment-77144",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -161,16 +161,16 @@ Same as previous, but uses GMP_RNDN rather than GMP_RNDZ
 archive/issue_comments_077145.json:
 ```json
 {
-    "body": "Attachment [8535-intervals-rndn.patch](tarball://root/attachments/some-uuid/ticket8535/8535-intervals-rndn.patch) by robertwb created at 2010-05-15 21:36:06\n\nPatch attached.",
+    "body": "Attachment [8535-intervals-rndn.patch](tarball://root/attachments/some-uuid/ticket8535/8535-intervals-rndn.patch) by @robertwb created at 2010-05-15 21:36:06\n\nPatch attached.",
     "created_at": "2010-05-15T21:36:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8535#issuecomment-77145",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [8535-intervals-rndn.patch](tarball://root/attachments/some-uuid/ticket8535/8535-intervals-rndn.patch) by robertwb created at 2010-05-15 21:36:06
+Attachment [8535-intervals-rndn.patch](tarball://root/attachments/some-uuid/ticket8535/8535-intervals-rndn.patch) by @robertwb created at 2010-05-15 21:36:06
 
 Patch attached.
 
@@ -186,7 +186,7 @@ archive/issue_comments_077146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8535#issuecomment-77146",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_077147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8535#issuecomment-77147",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_077148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8535#issuecomment-77148",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_077149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8535#issuecomment-77149",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006937.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  craigcitro\n\nWe expect the following example to take about 10 seconds:\n\n\n```\nsage: @cached_function\nsage: def foo(x = 5):\n...       print \"computing foo(%s)\"%x\n...       sleep(10)\n...       return 0\nsage: w = walltime()\nsage: foo()\ncomputing foo(5)\nsage: foo(5)\ncomputing foo(5)\nsage: foo(x=5)\ncomputing foo(5)\nsage: print \"that took %s seconds!\"%walltime(w)\nthat took 29.9967029095 seconds!\n```\n\n\n... but that obviously isn't the case.  fix it!\n\nIssue created by migration from https://trac.sagemath.org/ticket/6937\n\n",
+    "body": "Assignee: boothby\n\nCC:  @craigcitro\n\nWe expect the following example to take about 10 seconds:\n\n\n```\nsage: @cached_function\nsage: def foo(x = 5):\n...       print \"computing foo(%s)\"%x\n...       sleep(10)\n...       return 0\nsage: w = walltime()\nsage: foo()\ncomputing foo(5)\nsage: foo(5)\ncomputing foo(5)\nsage: foo(x=5)\ncomputing foo(5)\nsage: print \"that took %s seconds!\"%walltime(w)\nthat took 29.9967029095 seconds!\n```\n\n\n... but that obviously isn't the case.  fix it!\n\nIssue created by migration from https://trac.sagemath.org/ticket/6937\n\n",
     "created_at": "2009-09-15T20:06:23Z",
     "labels": [
         "misc",
@@ -19,7 +19,7 @@ archive/issues_006937.json:
 ```
 Assignee: boothby
 
-CC:  craigcitro
+CC:  @craigcitro
 
 We expect the following example to take about 10 seconds:
 
@@ -60,7 +60,7 @@ archive/issue_comments_057342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6937#issuecomment-57342",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_057343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6937#issuecomment-57343",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_057345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6937#issuecomment-57345",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

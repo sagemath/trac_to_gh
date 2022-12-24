@@ -3,7 +3,7 @@
 archive/issues_002586.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  ncalexan\n\nKeywords: latex product polynomial\n\nI'm sure this is a dupe, but couldn't find a ticket.  It might need fixing at an awful lot of places... but polynomials are a start:\n\n\n```\nsage: ZZ['a']['b']([0, ZZ['a'].0])\na*b\nsage: latex(ZZ['a']['b']([0, ZZ['a'].0]))\nab\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2586\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nKeywords: latex product polynomial\n\nI'm sure this is a dupe, but couldn't find a ticket.  It might need fixing at an awful lot of places... but polynomials are a start:\n\n\n```\nsage: ZZ['a']['b']([0, ZZ['a'].0])\na*b\nsage: latex(ZZ['a']['b']([0, ZZ['a'].0]))\nab\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2586\n\n",
     "created_at": "2008-03-18T17:01:07Z",
     "labels": [
         "user interface",
@@ -14,12 +14,12 @@ archive/issues_002586.json:
     "title": "latex products need to be space separated",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2586",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  ncalexan
+CC:  @ncalexan
 
 Keywords: latex product polynomial
 
@@ -50,7 +50,7 @@ archive/issue_comments_017699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2586#issuecomment-17699",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -92,16 +92,16 @@ Michael
 archive/issue_comments_017701.json:
 ```json
 {
-    "body": "Attachment [2586_latex_polynomials.patch](tarball://root/attachments/some-uuid/ticket2586/2586_latex_polynomials.patch) by AlexGhitza created at 2008-03-19 23:31:17",
+    "body": "Attachment [2586_latex_polynomials.patch](tarball://root/attachments/some-uuid/ticket2586/2586_latex_polynomials.patch) by @aghitza created at 2008-03-19 23:31:17",
     "created_at": "2008-03-19T23:31:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2586#issuecomment-17701",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [2586_latex_polynomials.patch](tarball://root/attachments/some-uuid/ticket2586/2586_latex_polynomials.patch) by AlexGhitza created at 2008-03-19 23:31:17
+Attachment [2586_latex_polynomials.patch](tarball://root/attachments/some-uuid/ticket2586/2586_latex_polynomials.patch) by @aghitza created at 2008-03-19 23:31:17
 
 
 
@@ -110,16 +110,16 @@ Attachment [2586_latex_polynomials.patch](tarball://root/attachments/some-uuid/t
 archive/issue_comments_017702.json:
 ```json
 {
-    "body": "Attachment [2586_doc_const.patch](tarball://root/attachments/some-uuid/ticket2586/2586_doc_const.patch) by AlexGhitza created at 2008-03-19 23:32:35",
+    "body": "Attachment [2586_doc_const.patch](tarball://root/attachments/some-uuid/ticket2586/2586_doc_const.patch) by @aghitza created at 2008-03-19 23:32:35",
     "created_at": "2008-03-19T23:32:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2586#issuecomment-17702",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [2586_doc_const.patch](tarball://root/attachments/some-uuid/ticket2586/2586_doc_const.patch) by AlexGhitza created at 2008-03-19 23:32:35
+Attachment [2586_doc_const.patch](tarball://root/attachments/some-uuid/ticket2586/2586_doc_const.patch) by @aghitza created at 2008-03-19 23:32:35
 
 
 
@@ -133,7 +133,7 @@ archive/issue_comments_017703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2586#issuecomment-17703",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000265.json:
 ```json
 {
-    "body": "Assignee: was\n\nHere is the output:\n\n\nsage: maxima(\"1.7e-17\")\n 1.7E-17\n\nsage: float (_)\n 1.6999999999999999e-17\n\nsage: maxima(\"1.7e+17\")\n 1.7E + 17\n\nsage: float (_)\n---------------------------------------------------------------------------\n<type 'exceptions.ValueError'>            Traceback (most recent call last)\n\n/home/greg/<ipython console> in <module>()\n\n/usr/local/sage/local/lib/python2.5/site-packages/sage/interfaces/maxima.py in __float__(self)\n   1267 \n   1268     def __float__(self):\n-> 1269         return float(str(self.numer()))\n   1270 \n   1271     def __len__(self):\n\n<type 'exceptions.ValueError'>: invalid literal for float(): 1.7E + 17\n\nIssue created by migration from https://trac.sagemath.org/ticket/265\n\n",
+    "body": "Assignee: @williamstein\n\nHere is the output:\n\n\nsage: maxima(\"1.7e-17\")\n 1.7E-17\n\nsage: float (_)\n 1.6999999999999999e-17\n\nsage: maxima(\"1.7e+17\")\n 1.7E + 17\n\nsage: float (_)\n---------------------------------------------------------------------------\n<type 'exceptions.ValueError'>            Traceback (most recent call last)\n\n/home/greg/<ipython console> in <module>()\n\n/usr/local/sage/local/lib/python2.5/site-packages/sage/interfaces/maxima.py in __float__(self)\n   1267 \n   1268     def __float__(self):\n-> 1269         return float(str(self.numer()))\n   1270 \n   1271     def __len__(self):\n\n<type 'exceptions.ValueError'>: invalid literal for float(): 1.7E + 17\n\nIssue created by migration from https://trac.sagemath.org/ticket/265\n\n",
     "created_at": "2007-02-15T22:39:39Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_000265.json:
     "user": "gvanuxem"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Here is the output:
 
@@ -80,7 +80,7 @@ archive/issue_comments_001251.json:
     "issue": "https://github.com/sagemath/sagetest/issues/265",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/265#issuecomment-1251",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_001252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/265",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/265#issuecomment-1252",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

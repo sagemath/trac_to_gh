@@ -3,7 +3,7 @@
 archive/issues_003967.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  craigcitro\n\nI added a small feature to \"just print\" long lists of fields in totallyreal rather than storing them to memory.  Patch attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3967\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @craigcitro\n\nI added a small feature to \"just print\" long lists of fields in totallyreal rather than storing them to memory.  Patch attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3967\n\n",
     "created_at": "2008-08-27T17:21:54Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_003967.json:
     "title": "Totallyreal \"just print\" feature added",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3967",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  craigcitro
+CC:  @craigcitro
 
 I added a small feature to "just print" long lists of fields in totallyreal rather than storing them to memory.  Patch attached.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3967
 archive/issue_comments_028495.json:
 ```json
 {
-    "body": "Attachment [9865.patch](tarball://root/attachments/some-uuid/ticket3967/9865.patch) by jvoight created at 2008-08-27 17:22:02",
+    "body": "Attachment [9865.patch](tarball://root/attachments/some-uuid/ticket3967/9865.patch) by @jvoight created at 2008-08-27 17:22:02",
     "created_at": "2008-08-27T17:22:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3967#issuecomment-28495",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 
-Attachment [9865.patch](tarball://root/attachments/some-uuid/ticket3967/9865.patch) by jvoight created at 2008-08-27 17:22:02
+Attachment [9865.patch](tarball://root/attachments/some-uuid/ticket3967/9865.patch) by @jvoight created at 2008-08-27 17:22:02
 
 
 
@@ -81,7 +81,7 @@ archive/issue_comments_028497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3967#issuecomment-28497",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_028498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3967#issuecomment-28498",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 
@@ -114,16 +114,16 @@ Changing status from new to assigned.
 archive/issue_comments_028499.json:
 ```json
 {
-    "body": "Changing assignee from was to jvoight.",
+    "body": "Changing assignee from @williamstein to @jvoight.",
     "created_at": "2008-09-20T17:04:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3967#issuecomment-28499",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 
-Changing assignee from was to jvoight.
+Changing assignee from @williamstein to @jvoight.
 
 
 
@@ -137,7 +137,7 @@ archive/issue_comments_028500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3967#issuecomment-28500",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_028501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3967#issuecomment-28501",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_028502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3967#issuecomment-28502",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_028503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3967#issuecomment-28503",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_028504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3967#issuecomment-28504",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_028507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3967#issuecomment-28507",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_028508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3967#issuecomment-28508",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

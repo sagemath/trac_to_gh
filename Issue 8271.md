@@ -3,7 +3,7 @@
 archive/issues_008271.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nThe iconv package, which will be added to Sage (#8191), \ndumps core on Solaris 10 SPARC, though all tests pass on Linux, OpenSolaris and OS X.\n\nFull details will be added later -  I created this ticket to get a trac number.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8271\n\n",
+    "body": "Assignee: @aghitza\n\nThe iconv package, which will be added to Sage (#8191), \ndumps core on Solaris 10 SPARC, though all tests pass on Linux, OpenSolaris and OS X.\n\nFull details will be added later -  I created this ticket to get a trac number.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8271\n\n",
     "created_at": "2010-02-15T10:42:41Z",
     "labels": [
         "algebra",
@@ -17,7 +17,7 @@ archive/issues_008271.json:
     "user": "drkirkby"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 The iconv package, which will be added to Sage (#8191), 
 dumps core on Solaris 10 SPARC, though all tests pass on Linux, OpenSolaris and OS X.
@@ -53,7 +53,7 @@ Changing component from algebra to solaris.
 archive/issue_comments_073216.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to drkirkby.",
+    "body": "Changing assignee from @aghitza to drkirkby.",
     "created_at": "2010-02-15T23:31:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8271",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_073216.json:
 }
 ```
 
-Changing assignee from AlexGhitza to drkirkby.
+Changing assignee from @aghitza to drkirkby.
 
 
 

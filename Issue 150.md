@@ -3,7 +3,7 @@
 archive/issues_000150.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/150\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/150\n\n",
     "created_at": "2006-10-25T09:09:22Z",
     "labels": [
         "user interface",
@@ -13,10 +13,10 @@ archive/issues_000150.json:
     "title": "if foo is a pyrex function then foo?? should give the source code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/150",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -36,7 +36,7 @@ archive/issue_comments_000685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/150#issuecomment-685",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -62,7 +62,7 @@ archive/issue_comments_000686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/150#issuecomment-686",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009710.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  robert.marik kcrisman jdemeyer\n\nKeywords: differential equations, assumptions\n\nThe assume function doesn't seem to work with the differential equation solver, despite what the documentation for desolve suggests. This returns an error:\n\n```\nsage: x = var('x')\nsage: k = var('k')\nsage: y = function('y',x)\nsage: assume(k>0)\nsage: print desolve(diff(y,x,x)+k*y-exp(-k*x),[y,x])\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_25.py\", line 10, in <module>\n    exec compile(u'open(\"___code___.py\",\"w\").write(\"# -*- coding: utf-8 -*-\\\\n\" + _support_.preparse_worksheet_cell(base64.b64decode(\"eCA9IHZhcigneCcpCmsgPSB2YXIoJ2snKQp5ID0gZnVuY3Rpb24oJ3knLHgpCmFzc3VtZShrPjApCnByaW50IGRlc29sdmUoZGlmZih5LHgseCkrayp5LWV4cCgtayp4KSxbeSx4XSk=\"),globals())+\"\\\\n\"); execfile(os.path.abspath(\"___code___.py\"))\n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpyNFGr0/___code___.py\", line 7, in <module>\n    exec compile(u'print desolve(diff(y,x,x)+k*y-exp(-k*x),[y,x])\n  File \"\", line 1, in <module>\n    \n  File \"/home/kedlaya/sage-complete/local/lib/python2.6/site-packages/sage/calculus/desolvers.py\", line 340, in desolve\n    soln = maxima(cmd)\n  File \"/home/kedlaya/sage-complete/local/lib/python2.6/site-packages/sage/interfaces/expect.py\", line 1032, in __call__\n    return cls(self, x, name=name)\n  File \"/home/kedlaya/sage-complete/local/lib/python2.6/site-packages/sage/interfaces/expect.py\", line 1451, in __init__\n    raise TypeError, x\nTypeError: Computation failed since Maxima requested additional constraints (try the command 'assume(k>0)' before integral or limit evaluation, for example):\nIs  k  positive, negative, or zero?\n```\n\nFound by Praveen N. and Aashita during Sage Days 25 coding sprint.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9710\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @robert-marik @kcrisman @jdemeyer\n\nKeywords: differential equations, assumptions\n\nThe assume function doesn't seem to work with the differential equation solver, despite what the documentation for desolve suggests. This returns an error:\n\n```\nsage: x = var('x')\nsage: k = var('k')\nsage: y = function('y',x)\nsage: assume(k>0)\nsage: print desolve(diff(y,x,x)+k*y-exp(-k*x),[y,x])\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_25.py\", line 10, in <module>\n    exec compile(u'open(\"___code___.py\",\"w\").write(\"# -*- coding: utf-8 -*-\\\\n\" + _support_.preparse_worksheet_cell(base64.b64decode(\"eCA9IHZhcigneCcpCmsgPSB2YXIoJ2snKQp5ID0gZnVuY3Rpb24oJ3knLHgpCmFzc3VtZShrPjApCnByaW50IGRlc29sdmUoZGlmZih5LHgseCkrayp5LWV4cCgtayp4KSxbeSx4XSk=\"),globals())+\"\\\\n\"); execfile(os.path.abspath(\"___code___.py\"))\n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpyNFGr0/___code___.py\", line 7, in <module>\n    exec compile(u'print desolve(diff(y,x,x)+k*y-exp(-k*x),[y,x])\n  File \"\", line 1, in <module>\n    \n  File \"/home/kedlaya/sage-complete/local/lib/python2.6/site-packages/sage/calculus/desolvers.py\", line 340, in desolve\n    soln = maxima(cmd)\n  File \"/home/kedlaya/sage-complete/local/lib/python2.6/site-packages/sage/interfaces/expect.py\", line 1032, in __call__\n    return cls(self, x, name=name)\n  File \"/home/kedlaya/sage-complete/local/lib/python2.6/site-packages/sage/interfaces/expect.py\", line 1451, in __init__\n    raise TypeError, x\nTypeError: Computation failed since Maxima requested additional constraints (try the command 'assume(k>0)' before integral or limit evaluation, for example):\nIs  k  positive, negative, or zero?\n```\n\nFound by Praveen N. and Aashita during Sage Days 25 coding sprint.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9710\n\n",
     "created_at": "2010-08-09T14:27:20Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_009710.json:
     "title": "Assumptions not passed to differential equation solver",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9710",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  robert.marik kcrisman jdemeyer
+CC:  @robert-marik @kcrisman @jdemeyer
 
 Keywords: differential equations, assumptions
 
@@ -70,7 +70,7 @@ archive/issue_comments_094635.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9710#issuecomment-94635",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_094636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9710#issuecomment-94636",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_094637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9710#issuecomment-94637",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_094638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9710#issuecomment-94638",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_094639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9710#issuecomment-94639",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_094640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9710#issuecomment-94640",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_094641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9710#issuecomment-94641",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_094642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9710#issuecomment-94642",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_094643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9710#issuecomment-94643",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

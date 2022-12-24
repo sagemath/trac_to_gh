@@ -3,7 +3,7 @@
 archive/issues_004635.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  jhpalmieri\n\n\n```\nFile \"/Applications/sage-3.2.1.alpha1/devel/sage/sage/plot/plot.py\",\nline 4576:\n   sage: adaptive_refinement(sin, (0,0), (pi,0),\nadaptive_tolerance=0.01)\nExpected:\n   [(0.125*pi, 0.38268343236508978), (0.1875*pi,\n0.55557023301960218), (0.25*pi, 0.70710678118654746), (0.3125*pi,\n0.83146961230254524), (0.375*pi, 0.92387953251128674), (0.4375*pi,\n0.98078528040323043), (0.5*pi, 1.0), (0.5625*pi, 0.98078528040323043),\n(0.625*pi, 0.92387953251128674), (0.6875*pi, 0.83146961230254546),\n(0.75*pi, 0.70710678118654757), (0.8125*pi, 0.55557023301960218),\n(0.875*pi, 0.38268343236508989)]\nGot:\n   [(0.125*pi, 0.38268343236508978), (0.1875*pi,\n0.55557023301960218), (0.25*pi, 0.70710678118654746), (0.3125*pi,\n0.83146961230254512), (0.375*pi, 0.92387953251128674), (0.4375*pi,\n0.98078528040323043), (0.5*pi, 1.0), (0.5625*pi, 0.98078528040323043),\n(0.625*pi, 0.92387953251128674), (0.6875*pi, 0.83146961230254546),\n(0.75*pi, 0.70710678118654757), (0.8125*pi, 0.55557023301960218),\n(0.875*pi, 0.38268343236508984)]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4635\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @jhpalmieri\n\n\n```\nFile \"/Applications/sage-3.2.1.alpha1/devel/sage/sage/plot/plot.py\",\nline 4576:\n   sage: adaptive_refinement(sin, (0,0), (pi,0),\nadaptive_tolerance=0.01)\nExpected:\n   [(0.125*pi, 0.38268343236508978), (0.1875*pi,\n0.55557023301960218), (0.25*pi, 0.70710678118654746), (0.3125*pi,\n0.83146961230254524), (0.375*pi, 0.92387953251128674), (0.4375*pi,\n0.98078528040323043), (0.5*pi, 1.0), (0.5625*pi, 0.98078528040323043),\n(0.625*pi, 0.92387953251128674), (0.6875*pi, 0.83146961230254546),\n(0.75*pi, 0.70710678118654757), (0.8125*pi, 0.55557023301960218),\n(0.875*pi, 0.38268343236508989)]\nGot:\n   [(0.125*pi, 0.38268343236508978), (0.1875*pi,\n0.55557023301960218), (0.25*pi, 0.70710678118654746), (0.3125*pi,\n0.83146961230254512), (0.375*pi, 0.92387953251128674), (0.4375*pi,\n0.98078528040323043), (0.5*pi, 1.0), (0.5625*pi, 0.98078528040323043),\n(0.625*pi, 0.92387953251128674), (0.6875*pi, 0.83146961230254546),\n(0.75*pi, 0.70710678118654757), (0.8125*pi, 0.55557023301960218),\n(0.875*pi, 0.38268343236508984)]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4635\n\n",
     "created_at": "2008-11-27T03:44:10Z",
     "labels": [
         "doctest coverage",
@@ -19,7 +19,7 @@ archive/issues_004635.json:
 ```
 Assignee: mabshoff
 
-CC:  jhpalmieri
+CC:  @jhpalmieri
 
 
 ```
@@ -126,7 +126,7 @@ archive/issue_comments_034854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4635#issuecomment-34854",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_034857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4635#issuecomment-34857",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_034860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4635#issuecomment-34860",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -267,16 +267,16 @@ this replaces the old patch
 archive/issue_comments_034861.json:
 ```json
 {
-    "body": "Attachment [4635-new.patch](tarball://root/attachments/some-uuid/ticket4635/4635-new.patch) by jhpalmieri created at 2008-11-27 04:27:44\n\nHere's a patch.",
+    "body": "Attachment [4635-new.patch](tarball://root/attachments/some-uuid/ticket4635/4635-new.patch) by @jhpalmieri created at 2008-11-27 04:27:44\n\nHere's a patch.",
     "created_at": "2008-11-27T04:27:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4635#issuecomment-34861",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [4635-new.patch](tarball://root/attachments/some-uuid/ticket4635/4635-new.patch) by jhpalmieri created at 2008-11-27 04:27:44
+Attachment [4635-new.patch](tarball://root/attachments/some-uuid/ticket4635/4635-new.patch) by @jhpalmieri created at 2008-11-27 04:27:44
 
 Here's a patch.
 

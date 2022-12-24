@@ -14,7 +14,7 @@ archive/issues_005373.json:
     "title": "[with patch, needs review] fix problem in builder.copytree",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5373",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tba
@@ -89,16 +89,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5373
 archive/issue_comments_041386.json:
 ```json
 {
-    "body": "Attachment [trac_5373.patch](tarball://root/attachments/some-uuid/ticket5373/trac_5373.patch) by mhansen created at 2009-02-25 18:43:54",
+    "body": "Attachment [trac_5373.patch](tarball://root/attachments/some-uuid/ticket5373/trac_5373.patch) by @mwhansen created at 2009-02-25 18:43:54",
     "created_at": "2009-02-25T18:43:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5373#issuecomment-41386",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5373.patch](tarball://root/attachments/some-uuid/ticket5373/trac_5373.patch) by mhansen created at 2009-02-25 18:43:54
+Attachment [trac_5373.patch](tarball://root/attachments/some-uuid/ticket5373/trac_5373.patch) by @mwhansen created at 2009-02-25 18:43:54
 
 
 
@@ -112,7 +112,7 @@ archive/issue_comments_041387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5373#issuecomment-41387",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -125,16 +125,16 @@ The main thing was to make it so that copytree calls itself instead of shutil.co
 archive/issue_comments_041388.json:
 ```json
 {
-    "body": "Changing assignee from tba to mhansen.",
+    "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2009-02-25T18:45:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5373#issuecomment-41388",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tba to mhansen.
+Changing assignee from tba to @mwhansen.
 
 
 
@@ -148,7 +148,7 @@ archive/issue_comments_041389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5373#issuecomment-41389",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009999.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  fbissey\n\n## Hardware and Software\n* IBM [RS/6000 7025 F50](http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.pseries.doc/hardware_docs/rs6000_7025f50series.htm)\n* 4 x 332 MHz 32-bit PowerPC CPUs\n* 3 GB RAM\n* A fairly wide mixture of disks sizes (3 x 9 GB, 1 x 18 GB, 2 x 36 GB and 1 x 73 GB)\n* DDS-4 tape drive \n* AIX 5.3 (A POSIX certified operating system)\n* gcc 4.2.4 downloaded from [pware](http://pware.hvcc.edu/)\n* sage-4.6.alpha1\n\n == The problem ==\n\n```\ngsl-1.14/src/\ngsl-1.14/src/multimin/\n\"gsl-1.14.log\" 2326 lines, 99663 characters\nmv -f .deps/print.Tpo .deps/print.Plo\n/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I.. -I..    -g -O2 -MT make_rep.lo -MD -MP -MF .deps/make_rep.Tpo\n -c -o make_rep.lo make_rep.c\nlibtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I.. -g -O2 -MT make_rep.lo -MD -MP -MF .deps/make_rep.Tpo -c make_rep.c  -DPIC -o .lib\ns/make_rep.o\nmv -f .deps/make_rep.Tpo .deps/make_rep.Plo\n/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I.. -I..    -g -O2 -MT env.lo -MD -MP -MF .deps/env.Tpo -c -o env\n.lo env.c\nlibtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I.. -g -O2 -MT env.lo -MD -MP -MF .deps/env.Tpo -c env.c  -DPIC -o .libs/env.o\nmv -f .deps/env.Tpo .deps/env.Plo\n/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I.. -I..    -g -O2 -MT fp.lo -MD -MP -MF .deps/fp.Tpo -c -o fp.lo\n fp.c\nlibtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I.. -g -O2 -MT fp.lo -MD -MP -MF .deps/fp.Tpo -c fp.c  -DPIC -o .libs/fp.o\nIn file included from fp.c:22:\nfp-aix.c: In function 'gsl_ieee_set_mode':\nfp-aix.c:30: error: 'fprnd_t' undeclared (first use in this function)\nfp-aix.c:30: error: (Each undeclared identifier is reported only once\nfp-aix.c:30: error: for each function it appears in.)\nfp-aix.c:30: error: expected ';' before 'rnd'\nfp-aix.c:55: error: 'rnd' undeclared (first use in this function)\nfp-aix.c:55: error: 'FP_RND_RN' undeclared (first use in this function)\nfp-aix.c:59: error: 'FP_RND_RM' undeclared (first use in this function)\nfp-aix.c:63: error: 'FP_RND_RP' undeclared (first use in this function)\nfp-aix.c:67: error: 'FP_RND_RZ' undeclared (first use in this function)\nmake[2]: *** [fp.lo] Error 1\nmake[2]: Leaving directory `/home/users/drkirkby/sage-4.6.alpha1/spkg/build/gsl-1.14/src/ieee-utils'\nmake[1]: *** [all-recursive] Error 1\nmake[1]: Leaving directory `/home/users/drkirkby/sage-4.6.alpha1/spkg/build/gsl-1.14/src'\nmake: *** [all] Error 2\nError building GSL\n\nreal    7m59.053s\nuser    5m41.085s\nsys     0m49.623s\nsage: An error occurred while installing gsl-1.14\n```\n\n\n == Possible Solution ==\nThe same problem has been reported before against AIX 5.2\n\nhttp://osdir.com/ml/lib.gsl.bugs/2006-06/msg00006.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/10000\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @kiwifb\n\n## Hardware and Software\n* IBM [RS/6000 7025 F50](http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.pseries.doc/hardware_docs/rs6000_7025f50series.htm)\n* 4 x 332 MHz 32-bit PowerPC CPUs\n* 3 GB RAM\n* A fairly wide mixture of disks sizes (3 x 9 GB, 1 x 18 GB, 2 x 36 GB and 1 x 73 GB)\n* DDS-4 tape drive \n* AIX 5.3 (A POSIX certified operating system)\n* gcc 4.2.4 downloaded from [pware](http://pware.hvcc.edu/)\n* sage-4.6.alpha1\n\n == The problem ==\n\n```\ngsl-1.14/src/\ngsl-1.14/src/multimin/\n\"gsl-1.14.log\" 2326 lines, 99663 characters\nmv -f .deps/print.Tpo .deps/print.Plo\n/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I.. -I..    -g -O2 -MT make_rep.lo -MD -MP -MF .deps/make_rep.Tpo\n -c -o make_rep.lo make_rep.c\nlibtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I.. -g -O2 -MT make_rep.lo -MD -MP -MF .deps/make_rep.Tpo -c make_rep.c  -DPIC -o .lib\ns/make_rep.o\nmv -f .deps/make_rep.Tpo .deps/make_rep.Plo\n/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I.. -I..    -g -O2 -MT env.lo -MD -MP -MF .deps/env.Tpo -c -o env\n.lo env.c\nlibtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I.. -g -O2 -MT env.lo -MD -MP -MF .deps/env.Tpo -c env.c  -DPIC -o .libs/env.o\nmv -f .deps/env.Tpo .deps/env.Plo\n/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I.. -I..    -g -O2 -MT fp.lo -MD -MP -MF .deps/fp.Tpo -c -o fp.lo\n fp.c\nlibtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I.. -g -O2 -MT fp.lo -MD -MP -MF .deps/fp.Tpo -c fp.c  -DPIC -o .libs/fp.o\nIn file included from fp.c:22:\nfp-aix.c: In function 'gsl_ieee_set_mode':\nfp-aix.c:30: error: 'fprnd_t' undeclared (first use in this function)\nfp-aix.c:30: error: (Each undeclared identifier is reported only once\nfp-aix.c:30: error: for each function it appears in.)\nfp-aix.c:30: error: expected ';' before 'rnd'\nfp-aix.c:55: error: 'rnd' undeclared (first use in this function)\nfp-aix.c:55: error: 'FP_RND_RN' undeclared (first use in this function)\nfp-aix.c:59: error: 'FP_RND_RM' undeclared (first use in this function)\nfp-aix.c:63: error: 'FP_RND_RP' undeclared (first use in this function)\nfp-aix.c:67: error: 'FP_RND_RZ' undeclared (first use in this function)\nmake[2]: *** [fp.lo] Error 1\nmake[2]: Leaving directory `/home/users/drkirkby/sage-4.6.alpha1/spkg/build/gsl-1.14/src/ieee-utils'\nmake[1]: *** [all-recursive] Error 1\nmake[1]: Leaving directory `/home/users/drkirkby/sage-4.6.alpha1/spkg/build/gsl-1.14/src'\nmake: *** [all] Error 2\nError building GSL\n\nreal    7m59.053s\nuser    5m41.085s\nsys     0m49.623s\nsage: An error occurred while installing gsl-1.14\n```\n\n\n == Possible Solution ==\nThe same problem has been reported before against AIX 5.2\n\nhttp://osdir.com/ml/lib.gsl.bugs/2006-06/msg00006.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/10000\n\n",
     "created_at": "2010-09-24T02:40:44Z",
     "labels": [
         "porting: AIX or HP-UX",
@@ -19,7 +19,7 @@ archive/issues_009999.json:
 ```
 Assignee: drkirkby
 
-CC:  fbissey
+CC:  @kiwifb
 
 ## Hardware and Software
 * IBM [RS/6000 7025 F50](http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.pseries.doc/hardware_docs/rs6000_7025f50series.htm)
@@ -114,7 +114,7 @@ archive/issue_comments_100459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9999",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9999#issuecomment-100459",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_100460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9999",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9999#issuecomment-100460",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_100461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9999",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9999#issuecomment-100461",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_100462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9999",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9999#issuecomment-100462",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_100465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9999",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9999#issuecomment-100465",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -574,16 +574,16 @@ Unified diff patch for fp-aix.c, which upstram developers have commited, so will
 archive/issue_comments_100475.json:
 ```json
 {
-    "body": "Attachment [fp-aix.c.patch](tarball://root/attachments/some-uuid/ticket10000/fp-aix.c.patch) by fbissey created at 2011-03-17 01:33:57",
+    "body": "Attachment [fp-aix.c.patch](tarball://root/attachments/some-uuid/ticket10000/fp-aix.c.patch) by @kiwifb created at 2011-03-17 01:33:57",
     "created_at": "2011-03-17T01:33:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9999",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9999#issuecomment-100475",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [fp-aix.c.patch](tarball://root/attachments/some-uuid/ticket10000/fp-aix.c.patch) by fbissey created at 2011-03-17 01:33:57
+Attachment [fp-aix.c.patch](tarball://root/attachments/some-uuid/ticket10000/fp-aix.c.patch) by @kiwifb created at 2011-03-17 01:33:57
 
 
 
@@ -728,7 +728,7 @@ archive/issue_comments_100480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9999",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9999#issuecomment-100480",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -766,7 +766,7 @@ archive/issue_comments_100482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9999",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9999#issuecomment-100482",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

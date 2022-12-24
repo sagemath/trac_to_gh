@@ -3,7 +3,7 @@
 archive/issues_000946.json:
 ```json
 {
-    "body": "Assignee: was\n\nRemove the lines with # not tested -- trac #number\nin them from calculus.py to replicate this problem on sage.math. \nIt might be a weird hanging issue with maxima.\n\nIssue created by migration from https://trac.sagemath.org/ticket/946\n\n",
+    "body": "Assignee: @williamstein\n\nRemove the lines with # not tested -- trac #number\nin them from calculus.py to replicate this problem on sage.math. \nIt might be a weird hanging issue with maxima.\n\nIssue created by migration from https://trac.sagemath.org/ticket/946\n\n",
     "created_at": "2007-10-20T17:23:23Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_000946.json:
     "title": "hang when doctesting calculus.py on some systems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/946",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Remove the lines with # not tested -- trac #number
 in them from calculus.py to replicate this problem on sage.math. 
@@ -56,16 +56,16 @@ Michael
 archive/issue_comments_005782.json:
 ```json
 {
-    "body": "Attachment [trac946.patch](tarball://root/attachments/some-uuid/ticket946/trac946.patch) by was created at 2007-11-08 20:09:23",
+    "body": "Attachment [trac946.patch](tarball://root/attachments/some-uuid/ticket946/trac946.patch) by @williamstein created at 2007-11-08 20:09:23",
     "created_at": "2007-11-08T20:09:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/946#issuecomment-5782",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac946.patch](tarball://root/attachments/some-uuid/ticket946/trac946.patch) by was created at 2007-11-08 20:09:23
+Attachment [trac946.patch](tarball://root/attachments/some-uuid/ticket946/trac946.patch) by @williamstein created at 2007-11-08 20:09:23
 
 
 
@@ -79,7 +79,7 @@ archive/issue_comments_005783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/946#issuecomment-5783",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_005784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/946#issuecomment-5784",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

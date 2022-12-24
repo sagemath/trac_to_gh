@@ -14,7 +14,7 @@ archive/issues_004703.json:
     "title": "inst.tex addition of Sage+tcl/tk [patch attached, needs review]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4703",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 Assignee: tba
@@ -39,7 +39,7 @@ archive/issue_comments_035431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4703#issuecomment-35431",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -52,16 +52,16 @@ based on 3.2.1 [using hg_doc]
 archive/issue_comments_035432.json:
 ```json
 {
-    "body": "Attachment [trac_4703-inst-tcltk.patch](tarball://root/attachments/some-uuid/ticket4703/trac_4703-inst-tcltk.patch) by was created at 2008-12-06 23:37:04",
+    "body": "Attachment [trac_4703-inst-tcltk.patch](tarball://root/attachments/some-uuid/ticket4703/trac_4703-inst-tcltk.patch) by @williamstein created at 2008-12-06 23:37:04",
     "created_at": "2008-12-06T23:37:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4703#issuecomment-35432",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4703-inst-tcltk.patch](tarball://root/attachments/some-uuid/ticket4703/trac_4703-inst-tcltk.patch) by was created at 2008-12-06 23:37:04
+Attachment [trac_4703-inst-tcltk.patch](tarball://root/attachments/some-uuid/ticket4703/trac_4703-inst-tcltk.patch) by @williamstein created at 2008-12-06 23:37:04
 
 
 

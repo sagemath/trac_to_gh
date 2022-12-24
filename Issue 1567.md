@@ -3,7 +3,7 @@
 archive/issues_001567.json:
 ```json
 {
-    "body": "Assignee: was\n\nspkg for the `zn_poly` library:\n\nhttp://math.harvard.edu/~dmharvey/zn_poly/releases/zn_poly-0.4.1.spkg\n\nI've tested it on some platforms, but it needs to be tested on more.\n\nSee also\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/9844ce77400e7ed4\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1567\n\n",
+    "body": "Assignee: @williamstein\n\nspkg for the `zn_poly` library:\n\nhttp://math.harvard.edu/~dmharvey/zn_poly/releases/zn_poly-0.4.1.spkg\n\nI've tested it on some platforms, but it needs to be tested on more.\n\nSee also\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/9844ce77400e7ed4\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1567\n\n",
     "created_at": "2007-12-19T15:18:45Z",
     "labels": [
         "packages: standard",
@@ -17,7 +17,7 @@ archive/issues_001567.json:
     "user": "dmharvey"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 spkg for the `zn_poly` library:
 
@@ -46,7 +46,7 @@ archive/issue_comments_009976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1567",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1567#issuecomment-9976",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_009981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1567",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1567#issuecomment-9981",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

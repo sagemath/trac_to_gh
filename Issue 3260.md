@@ -3,7 +3,7 @@
 archive/issues_003260.json:
 ```json
 {
-    "body": "Assignee: failure\n\nCC:  mmezzarobba\n\nWhen adding optional spkgs to Sage, it is necessary to go through the Python interface file and put #optional on every single line of every single doctest, to indicate that those doctests should not be run.\n\nIt would be nice to be able to put #optional at, say, the top of the file, or in the docstring for the module or class, and then have that imply that every doctest within is optional.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3260\n\n",
+    "body": "Assignee: failure\n\nCC:  @mezzarobba\n\nWhen adding optional spkgs to Sage, it is necessary to go through the Python interface file and put #optional on every single line of every single doctest, to indicate that those doctests should not be run.\n\nIt would be nice to be able to put #optional at, say, the top of the file, or in the docstring for the module or class, and then have that imply that every doctest within is optional.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3260\n\n",
     "created_at": "2008-05-20T12:20:28Z",
     "labels": [
         "doctest",
@@ -19,7 +19,7 @@ archive/issues_003260.json:
 ```
 Assignee: failure
 
-CC:  mmezzarobba
+CC:  @mezzarobba
 
 When adding optional spkgs to Sage, it is necessary to go through the Python interface file and put #optional on every single line of every single doctest, to indicate that those doctests should not be run.
 
@@ -42,7 +42,7 @@ archive/issue_comments_022551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3260#issuecomment-22551",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_022553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3260#issuecomment-22553",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_022554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3260#issuecomment-22554",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_022555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3260#issuecomment-22555",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_022556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3260#issuecomment-22556",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_022557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3260#issuecomment-22557",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_022558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3260#issuecomment-22558",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_022559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3260#issuecomment-22559",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

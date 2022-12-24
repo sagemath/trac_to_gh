@@ -3,7 +3,7 @@
 archive/issues_008601.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  rbeezer\n\n\n```\nOn Mar 24, 2010, at 10:35 AM, mb wrote:\n\nHi,\n\nThe following seems like strange behavior to me.\n\nIn [1]: V=VectorSpace(GF(2),2)\nIn [2]: V([1,3])\nOut[2]: (1, 1)\nIn [3]: V([1,-3])\nOut[3]: (1, 0)\n\nI would expect the last answer to be (1,1).\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8601\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @rbeezer\n\n\n```\nOn Mar 24, 2010, at 10:35 AM, mb wrote:\n\nHi,\n\nThe following seems like strange behavior to me.\n\nIn [1]: V=VectorSpace(GF(2),2)\nIn [2]: V([1,3])\nOut[2]: (1, 1)\nIn [3]: V([1,-3])\nOut[3]: (1, 0)\n\nI would expect the last answer to be (1,1).\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8601\n\n",
     "created_at": "2010-03-24T17:47:43Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_008601.json:
     "title": "Bug in vector reduction",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8601",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  rbeezer
+CC:  @rbeezer
 
 
 ```
@@ -55,7 +55,7 @@ archive/issue_comments_077892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8601#issuecomment-77892",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_077893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8601#issuecomment-77893",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_077894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8601#issuecomment-77894",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_077895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8601#issuecomment-77895",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_077896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8601#issuecomment-77896",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -210,16 +210,16 @@ Changing status from new to needs_work.
 archive/issue_comments_077897.json:
 ```json
 {
-    "body": "Attachment [trac-8601-vector-mod2-negative.patch](tarball://root/attachments/some-uuid/ticket8601/trac-8601-vector-mod2-negative.patch) by jason created at 2010-05-01 19:33:04\n\nThis patch should be ready for review.  Doctests pass in the modules/*.pyx files.",
+    "body": "Attachment [trac-8601-vector-mod2-negative.patch](tarball://root/attachments/some-uuid/ticket8601/trac-8601-vector-mod2-negative.patch) by @jasongrout created at 2010-05-01 19:33:04\n\nThis patch should be ready for review.  Doctests pass in the modules/*.pyx files.",
     "created_at": "2010-05-01T19:33:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8601#issuecomment-77897",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-8601-vector-mod2-negative.patch](tarball://root/attachments/some-uuid/ticket8601/trac-8601-vector-mod2-negative.patch) by jason created at 2010-05-01 19:33:04
+Attachment [trac-8601-vector-mod2-negative.patch](tarball://root/attachments/some-uuid/ticket8601/trac-8601-vector-mod2-negative.patch) by @jasongrout created at 2010-05-01 19:33:04
 
 This patch should be ready for review.  Doctests pass in the modules/*.pyx files.
 
@@ -235,7 +235,7 @@ archive/issue_comments_077898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8601#issuecomment-77898",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_077900.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8601#issuecomment-77900",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_077901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8601#issuecomment-77901",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

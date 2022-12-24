@@ -3,7 +3,7 @@
 archive/issues_002319.json:
 ```json
 {
-    "body": "Assignee: yi\n\nCurrently much of the dsage docstrings are written using reST syntax which apparently Sage does not use. It should be rewritten to be more like the other Sage docstrings. An alternative is for new Sage documentation to be written in something like reST which would allow much easier API doc generation through something like epydoc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2319\n\n",
+    "body": "Assignee: @yqiang\n\nCurrently much of the dsage docstrings are written using reST syntax which apparently Sage does not use. It should be rewritten to be more like the other Sage docstrings. An alternative is for new Sage documentation to be written in something like reST which would allow much easier API doc generation through something like epydoc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2319\n\n",
     "created_at": "2008-02-26T17:45:06Z",
     "labels": [
         "dsage",
@@ -14,10 +14,10 @@ archive/issues_002319.json:
     "title": "change dsage docstrings to match rest of sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2319",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
-Assignee: yi
+Assignee: @yqiang
 
 Currently much of the dsage docstrings are written using reST syntax which apparently Sage does not use. It should be rewritten to be more like the other Sage docstrings. An alternative is for new Sage documentation to be written in something like reST which would allow much easier API doc generation through something like epydoc.
 
@@ -37,7 +37,7 @@ archive/issue_comments_015425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2319",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2319#issuecomment-15425",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_015426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2319",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2319#issuecomment-15426",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_015427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2319",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2319#issuecomment-15427",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

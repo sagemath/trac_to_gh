@@ -3,7 +3,7 @@
 archive/issues_009315.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  cremona\n\n\n```\n\nwstein@redhawk:~/db/modsym-2010$ sage modp.sage \ndata/000000/gamma0-aplist-mod2-000002-0008-10000.sobj\ndata/000000/gamma0-aplist-mod2-000003-0004-10000.sobj\ndata/000000/gamma0-aplist-mod2-000077-0002-10000.sobj\nTraceback (most recent call last):\n  File \"modp.py\", line 57, in <module>\n    go()\n  File \"modp.py\", line 52, in go\n    all(Integer(0),Integer(2))\n  File \"/usr/local/sage/local/lib/python2.6/site-packages/sage/parallel/decorate.py\", line 101, in g\n    return f(*args, **kwds)\n  File \"modp.py\", line 48, in all\n    modp(d + '/' + name, p)\n  File \"modp.py\", line 27, in modp\n    save(X, name)\n  File \"sage_object.pyx\", line 763, in sage.structure.sage_object.save (sage/structure/sage_object.c:7999)\n  File \"finite_field_base.pyx\", line 674, in sage.rings.finite_rings.finite_field_base.FiniteField.__reduce__ (sage/rings/finite_rings/finite_field_base.c:4937)\nTypeError: 'NoneType' object is unsubscriptable\nwstein@redhawk:~/db/modsym-2010$ \n```\n\n\nMore details to come!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9315\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @JohnCremona\n\n\n```\n\nwstein@redhawk:~/db/modsym-2010$ sage modp.sage \ndata/000000/gamma0-aplist-mod2-000002-0008-10000.sobj\ndata/000000/gamma0-aplist-mod2-000003-0004-10000.sobj\ndata/000000/gamma0-aplist-mod2-000077-0002-10000.sobj\nTraceback (most recent call last):\n  File \"modp.py\", line 57, in <module>\n    go()\n  File \"modp.py\", line 52, in go\n    all(Integer(0),Integer(2))\n  File \"/usr/local/sage/local/lib/python2.6/site-packages/sage/parallel/decorate.py\", line 101, in g\n    return f(*args, **kwds)\n  File \"modp.py\", line 48, in all\n    modp(d + '/' + name, p)\n  File \"modp.py\", line 27, in modp\n    save(X, name)\n  File \"sage_object.pyx\", line 763, in sage.structure.sage_object.save (sage/structure/sage_object.c:7999)\n  File \"finite_field_base.pyx\", line 674, in sage.rings.finite_rings.finite_field_base.FiniteField.__reduce__ (sage/rings/finite_rings/finite_field_base.c:4937)\nTypeError: 'NoneType' object is unsubscriptable\nwstein@redhawk:~/db/modsym-2010$ \n```\n\n\nMore details to come!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9315\n\n",
     "created_at": "2010-06-22T18:58:02Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_009315.json:
     "title": "Basic pickling bug in finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9315",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  cremona
+CC:  @JohnCremona
 
 
 ```
@@ -64,7 +64,7 @@ archive/issue_comments_087765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9315#issuecomment-87765",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -111,16 +111,16 @@ finite_field_base.pyx:        return self._factory_data[0].reduce_data(self)
 archive/issue_comments_087766.json:
 ```json
 {
-    "body": "Attachment [trac_9315.patch](tarball://root/attachments/some-uuid/ticket9315/trac_9315.patch) by was created at 2010-06-23 03:04:46",
+    "body": "Attachment [trac_9315.patch](tarball://root/attachments/some-uuid/ticket9315/trac_9315.patch) by @williamstein created at 2010-06-23 03:04:46",
     "created_at": "2010-06-23T03:04:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9315#issuecomment-87766",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_9315.patch](tarball://root/attachments/some-uuid/ticket9315/trac_9315.patch) by was created at 2010-06-23 03:04:46
+Attachment [trac_9315.patch](tarball://root/attachments/some-uuid/ticket9315/trac_9315.patch) by @williamstein created at 2010-06-23 03:04:46
 
 
 
@@ -134,7 +134,7 @@ archive/issue_comments_087767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9315#issuecomment-87767",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_087768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9315#issuecomment-87768",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_087769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9315#issuecomment-87769",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_087770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9315#issuecomment-87770",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_087771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9315#issuecomment-87771",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_087772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9315#issuecomment-87772",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -359,7 +359,7 @@ archive/issue_comments_087773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9315#issuecomment-87773",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -372,16 +372,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_087774.json:
 ```json
 {
-    "body": "Attachment [trac_9315.2.patch](tarball://root/attachments/some-uuid/ticket9315/trac_9315.2.patch) by was created at 2010-08-14 02:04:58",
+    "body": "Attachment [trac_9315.2.patch](tarball://root/attachments/some-uuid/ticket9315/trac_9315.2.patch) by @williamstein created at 2010-08-14 02:04:58",
     "created_at": "2010-08-14T02:04:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9315#issuecomment-87774",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_9315.2.patch](tarball://root/attachments/some-uuid/ticket9315/trac_9315.2.patch) by was created at 2010-08-14 02:04:58
+Attachment [trac_9315.2.patch](tarball://root/attachments/some-uuid/ticket9315/trac_9315.2.patch) by @williamstein created at 2010-08-14 02:04:58
 
 
 
@@ -395,7 +395,7 @@ archive/issue_comments_087775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9315#issuecomment-87775",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -417,7 +417,7 @@ archive/issue_comments_087776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9315#issuecomment-87776",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -435,7 +435,7 @@ archive/issue_comments_087777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9315#issuecomment-87777",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -461,7 +461,7 @@ archive/issue_comments_087778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9315#issuecomment-87778",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -496,7 +496,7 @@ archive/issue_comments_087779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9315#issuecomment-87779",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -514,7 +514,7 @@ archive/issue_comments_087780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9315#issuecomment-87780",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -536,7 +536,7 @@ archive/issue_comments_087781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9315#issuecomment-87781",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -562,7 +562,7 @@ archive/issue_comments_087782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9315#issuecomment-87782",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_006772.json:
     "title": "increase default ecl memory limits for maxima+ecl in sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6772",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -82,7 +82,7 @@ archive/issue_comments_055758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6772#issuecomment-55758",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_055759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6772#issuecomment-55759",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_055760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6772#issuecomment-55760",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_055761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6772#issuecomment-55761",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -184,16 +184,16 @@ The above appears to make the heap unlimited.
 archive/issue_comments_055762.json:
 ```json
 {
-    "body": "Attachment [trac_6772.patch](tarball://root/attachments/some-uuid/ticket6772/trac_6772.patch) by nbruin created at 2009-11-16 20:57:34\n\nReplying to [comment:3 was]:\n> The above appears to make the heap unlimited.\n\nSomeone should check how Boehm decides if it should extend the heap area or try to reclaim garbage and reuse memory. A side-effect of removing a limit could be that ECL just keeps allocating more memory until everything is used up, before garbage collecting. Other processes might not like that too much.\n\nI guess a sanity check would be to try some long computation that is supposed to use constant memory and see if ext:set-limit influences the memory footprint.",
+    "body": "Attachment [trac_6772.patch](tarball://root/attachments/some-uuid/ticket6772/trac_6772.patch) by @nbruin created at 2009-11-16 20:57:34\n\nReplying to [comment:3 was]:\n> The above appears to make the heap unlimited.\n\nSomeone should check how Boehm decides if it should extend the heap area or try to reclaim garbage and reuse memory. A side-effect of removing a limit could be that ECL just keeps allocating more memory until everything is used up, before garbage collecting. Other processes might not like that too much.\n\nI guess a sanity check would be to try some long computation that is supposed to use constant memory and see if ext:set-limit influences the memory footprint.",
     "created_at": "2009-11-16T20:57:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6772#issuecomment-55762",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
-Attachment [trac_6772.patch](tarball://root/attachments/some-uuid/ticket6772/trac_6772.patch) by nbruin created at 2009-11-16 20:57:34
+Attachment [trac_6772.patch](tarball://root/attachments/some-uuid/ticket6772/trac_6772.patch) by @nbruin created at 2009-11-16 20:57:34
 
 Replying to [comment:3 was]:
 > The above appears to make the heap unlimited.
@@ -214,7 +214,7 @@ archive/issue_comments_055763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6772#issuecomment-55763",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_055764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6772#issuecomment-55764",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -278,7 +278,7 @@ archive/issue_comments_055765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6772#issuecomment-55765",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_055766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6772#issuecomment-55766",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -330,7 +330,7 @@ archive/issue_comments_055767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6772#issuecomment-55767",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_055768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6772#issuecomment-55768",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -366,7 +366,7 @@ archive/issue_comments_055769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6772#issuecomment-55769",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

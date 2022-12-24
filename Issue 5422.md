@@ -14,7 +14,7 @@ archive/issues_005422.json:
     "title": "[with patch, needs review] Quadratic forms polynomial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5422",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 Assignee: justin
@@ -39,7 +39,7 @@ archive/issue_comments_041950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5422#issuecomment-41950",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -52,16 +52,16 @@ polynomial of a quadratic form patch
 archive/issue_comments_041951.json:
 ```json
 {
-    "body": "Attachment [11731.patch](tarball://root/attachments/some-uuid/ticket5422/11731.patch) by was created at 2009-03-16 00:24:02\n\nREFEREE REPORT:\n\n\n* change it to \n\n```\n  EXAMPLES::\n  \n      sage: stuff\n```\n\nfor the new ReST format.\n\n* Don't hardcode only x, i.e., change this:\n\n```\npolynomial(self):\n```\n\nto \n\n```\npolynomial(self, names='x'):\n```\n\n\nYes, \"names\" sounds funny, but is traditional in sage for this.\n\n* Change \"Input:\" and \"Output:\" to be all caps and on their own line, like in the rest of sage. \n\n* This is silly code `[R.gens()[i] for i in range(n)]` because `R.gens()` is almost the same thing.  If you really need a list do `list(R.gens())`.\n\n* This worries me: `(M*V).dot_product(V) `.  Should it be `(V*M).dot_product(V)`?",
+    "body": "Attachment [11731.patch](tarball://root/attachments/some-uuid/ticket5422/11731.patch) by @williamstein created at 2009-03-16 00:24:02\n\nREFEREE REPORT:\n\n\n* change it to \n\n```\n  EXAMPLES::\n  \n      sage: stuff\n```\n\nfor the new ReST format.\n\n* Don't hardcode only x, i.e., change this:\n\n```\npolynomial(self):\n```\n\nto \n\n```\npolynomial(self, names='x'):\n```\n\n\nYes, \"names\" sounds funny, but is traditional in sage for this.\n\n* Change \"Input:\" and \"Output:\" to be all caps and on their own line, like in the rest of sage. \n\n* This is silly code `[R.gens()[i] for i in range(n)]` because `R.gens()` is almost the same thing.  If you really need a list do `list(R.gens())`.\n\n* This worries me: `(M*V).dot_product(V) `.  Should it be `(V*M).dot_product(V)`?",
     "created_at": "2009-03-16T00:24:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5422#issuecomment-41951",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [11731.patch](tarball://root/attachments/some-uuid/ticket5422/11731.patch) by was created at 2009-03-16 00:24:02
+Attachment [11731.patch](tarball://root/attachments/some-uuid/ticket5422/11731.patch) by @williamstein created at 2009-03-16 00:24:02
 
 REFEREE REPORT:
 
@@ -109,7 +109,7 @@ archive/issue_comments_041952.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5422#issuecomment-41952",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_041953.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5422#issuecomment-41953",
-    "user": "spice"
+    "user": "@haikona"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_041954.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5422#issuecomment-41954",
-    "user": "spice"
+    "user": "@haikona"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_041955.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5422#issuecomment-41955",
-    "user": "spice"
+    "user": "@haikona"
 }
 ```
 
@@ -180,16 +180,16 @@ Replaces previous patch.
 archive/issue_comments_041956.json:
 ```json
 {
-    "body": "Attachment [trac_5422_quad_form_poly_reviewer.patch](tarball://root/attachments/some-uuid/ticket5422/trac_5422_quad_form_poly_reviewer.patch) by spice created at 2010-11-05 16:42:46\n\nDone the docstring updating. A review and we should be good to go.",
+    "body": "Attachment [trac_5422_quad_form_poly_reviewer.patch](tarball://root/attachments/some-uuid/ticket5422/trac_5422_quad_form_poly_reviewer.patch) by @haikona created at 2010-11-05 16:42:46\n\nDone the docstring updating. A review and we should be good to go.",
     "created_at": "2010-11-05T16:42:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5422#issuecomment-41956",
-    "user": "spice"
+    "user": "@haikona"
 }
 ```
 
-Attachment [trac_5422_quad_form_poly_reviewer.patch](tarball://root/attachments/some-uuid/ticket5422/trac_5422_quad_form_poly_reviewer.patch) by spice created at 2010-11-05 16:42:46
+Attachment [trac_5422_quad_form_poly_reviewer.patch](tarball://root/attachments/some-uuid/ticket5422/trac_5422_quad_form_poly_reviewer.patch) by @haikona created at 2010-11-05 16:42:46
 
 Done the docstring updating. A review and we should be good to go.
 
@@ -205,7 +205,7 @@ archive/issue_comments_041957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5422#issuecomment-41957",
-    "user": "spice"
+    "user": "@haikona"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_041958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5422#issuecomment-41958",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_041959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5422#issuecomment-41959",
-    "user": "spice"
+    "user": "@haikona"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_041960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5422#issuecomment-41960",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_041961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5422#issuecomment-41961",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_041962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5422#issuecomment-41962",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -313,7 +313,7 @@ archive/issue_comments_041963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5422#issuecomment-41963",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -326,16 +326,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_041964.json:
 ```json
 {
-    "body": "Attachment [trac_5422_quad_form_poly.patch](tarball://root/attachments/some-uuid/ticket5422/trac_5422_quad_form_poly.patch) by aly.deines created at 2010-11-10 17:56:58\n\nReplaces previous patch.",
+    "body": "Attachment [trac_5422_quad_form_poly.patch](tarball://root/attachments/some-uuid/ticket5422/trac_5422_quad_form_poly.patch) by @adeines created at 2010-11-10 17:56:58\n\nReplaces previous patch.",
     "created_at": "2010-11-10T17:56:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5422#issuecomment-41964",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
-Attachment [trac_5422_quad_form_poly.patch](tarball://root/attachments/some-uuid/ticket5422/trac_5422_quad_form_poly.patch) by aly.deines created at 2010-11-10 17:56:58
+Attachment [trac_5422_quad_form_poly.patch](tarball://root/attachments/some-uuid/ticket5422/trac_5422_quad_form_poly.patch) by @adeines created at 2010-11-10 17:56:58
 
 Replaces previous patch.
 
@@ -351,7 +351,7 @@ archive/issue_comments_041965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5422#issuecomment-41965",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -369,7 +369,7 @@ archive/issue_comments_041966.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5422#issuecomment-41966",
-    "user": "spice"
+    "user": "@haikona"
 }
 ```
 
@@ -387,7 +387,7 @@ archive/issue_comments_041967.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5422#issuecomment-41967",
-    "user": "spice"
+    "user": "@haikona"
 }
 ```
 
@@ -405,7 +405,7 @@ archive/issue_comments_041968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5422#issuecomment-41968",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -423,7 +423,7 @@ archive/issue_comments_041969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5422#issuecomment-41969",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

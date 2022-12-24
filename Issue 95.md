@@ -3,7 +3,7 @@
 archive/issues_000095.json:
 ```json
 {
-    "body": "Assignee: wdj\n\nKeywords: GAP\n\nThis was reported by David Loeffler on 9-28-2006:\n\nI'm running SAGE 1.3.7.3.3 on one of Imperial College's public RedHat Linux boxes.\n\nIf I load the interpreter and type:\n\nM=MatrixSpace(QQ,3)\nG=MatrixGroup([M([0,1,0,0,0,1,1,0,0]), M([0,1,0,1,0,0,0,0,1])])\nG.order()\n\nit works fine, and returns the obvious answer 6.\n\nIf I say instead\n\nG=MatrixGroup([M([0,1,0,0,0,1,1,0,0]), M([0,1,0,1,0,0,0,0,1]), M([-1,0,0,0,1,0,0,0,1])])\n\nthen whenever I call any methods on G, it dies:\n\nsage: G.order()\n---------------------------------------------------------------------------\nexceptions.TypeError                                 Traceback (most recent call last)\n\nIssue created by migration from https://trac.sagemath.org/ticket/95\n\n",
+    "body": "Assignee: @wdjoyner\n\nKeywords: GAP\n\nThis was reported by David Loeffler on 9-28-2006:\n\nI'm running SAGE 1.3.7.3.3 on one of Imperial College's public RedHat Linux boxes.\n\nIf I load the interpreter and type:\n\nM=MatrixSpace(QQ,3)\nG=MatrixGroup([M([0,1,0,0,0,1,1,0,0]), M([0,1,0,1,0,0,0,0,1])])\nG.order()\n\nit works fine, and returns the obvious answer 6.\n\nIf I say instead\n\nG=MatrixGroup([M([0,1,0,0,0,1,1,0,0]), M([0,1,0,1,0,0,0,0,1]), M([-1,0,0,0,1,0,0,0,1])])\n\nthen whenever I call any methods on G, it dies:\n\nsage: G.order()\n---------------------------------------------------------------------------\nexceptions.TypeError                                 Traceback (most recent call last)\n\nIssue created by migration from https://trac.sagemath.org/ticket/95\n\n",
     "created_at": "2006-09-28T23:57:56Z",
     "labels": [
         "combinatorics",
@@ -13,10 +13,10 @@ archive/issues_000095.json:
     "title": "_gap_init_ bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/95",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: wdj
+Assignee: @wdjoyner
 
 Keywords: GAP
 
@@ -58,7 +58,7 @@ archive/issue_comments_000454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/95",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/95#issuecomment-454",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_000455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/95",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/95#issuecomment-455",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_000456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/95",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/95#issuecomment-456",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_000457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/95",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/95#issuecomment-457",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_000458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/95",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/95#issuecomment-458",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_000459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/95",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/95#issuecomment-459",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000143.json:
 ```json
 {
-    "body": "Assignee: was\n\nMissing header file:\n\ngnuplot-4.0.0: blew chunks here:\n    if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I../term -I../term \\\n         -DBINDIR=\\\"/SandBox/Justin/sb/sage-1.4/local/bin\\\" \\\n         -DX11_DRIVER_DIR=\\\"/SandBox/Justin/sb/sage-1.4/local/libexec/gnuplot/4.0\\\" \\\n         -DCONTACT=\\\"gnuplot-bugs`@`lists.sourceforge.net\\\" \\\n         -DHELPFILE=\\\"/SandBox/Justin/sb/sage-1.4/local/share/gnuplot/4.0/gnuplot.gih\\\" \\\n         -I/SandBox/Justin/sb/sage-1.4/local/include  -g -O2 -ObjC -MT gplt_x11.o -MD -MP \\\n         -MF \".deps/gplt_x11.Tpo\" \\\n      -c -o gplt_x11.o `test -f 'gplt_x11.c' || echo './'`gplt_x11.c; \\\n    then mv \".deps/gplt_x11.Tpo\" \".deps/gplt_x11.Po\"; \\\n    else rm -f \".deps/gplt_x11.Tpo\"; exit 1; \\\n    fi\n    gplt_x11.c:519: error: 'Class' redeclared as different kind of symbol\n    <built-in>:0: error: previous declaration of 'Class' was here\n    make[3]: *** [gplt_x11.o] Error 1\n    make[2]: *** [all-recursive] Error 1\n    make[1]: *** [all-recursive] Error 1\n    make: *** [all] Error 2\n    Error building gnuplot\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/143\n\n",
+    "body": "Assignee: @williamstein\n\nMissing header file:\n\ngnuplot-4.0.0: blew chunks here:\n    if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I../term -I../term \\\n         -DBINDIR=\\\"/SandBox/Justin/sb/sage-1.4/local/bin\\\" \\\n         -DX11_DRIVER_DIR=\\\"/SandBox/Justin/sb/sage-1.4/local/libexec/gnuplot/4.0\\\" \\\n         -DCONTACT=\\\"gnuplot-bugs`@`lists.sourceforge.net\\\" \\\n         -DHELPFILE=\\\"/SandBox/Justin/sb/sage-1.4/local/share/gnuplot/4.0/gnuplot.gih\\\" \\\n         -I/SandBox/Justin/sb/sage-1.4/local/include  -g -O2 -ObjC -MT gplt_x11.o -MD -MP \\\n         -MF \".deps/gplt_x11.Tpo\" \\\n      -c -o gplt_x11.o `test -f 'gplt_x11.c' || echo './'`gplt_x11.c; \\\n    then mv \".deps/gplt_x11.Tpo\" \".deps/gplt_x11.Po\"; \\\n    else rm -f \".deps/gplt_x11.Tpo\"; exit 1; \\\n    fi\n    gplt_x11.c:519: error: 'Class' redeclared as different kind of symbol\n    <built-in>:0: error: previous declaration of 'Class' was here\n    make[3]: *** [gplt_x11.o] Error 1\n    make[2]: *** [all-recursive] Error 1\n    make[1]: *** [all-recursive] Error 1\n    make: *** [all] Error 2\n    Error building gnuplot\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/143\n\n",
     "created_at": "2006-10-21T20:41:55Z",
     "labels": [
         "packages: standard",
@@ -16,7 +16,7 @@ archive/issues_000143.json:
     "user": "justin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Missing header file:
 
@@ -99,7 +99,7 @@ archive/issue_comments_000660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/143#issuecomment-660",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_000661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/143#issuecomment-661",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

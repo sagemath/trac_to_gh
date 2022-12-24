@@ -14,7 +14,7 @@ archive/issues_005547.json:
     "title": "Restructure Ideal_generic in rings/ideal.py so that it doesn't derive from MonoidElement, since multiplying ideals doesn't work in a noncommutative ring (the  ring changes)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5547",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd

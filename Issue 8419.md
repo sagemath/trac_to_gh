@@ -3,7 +3,7 @@
 archive/issues_008419.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  jsp mvngu\n\nAs reported by Jaap Spies, one of the reviewers of #8363, the package is not building properly as a 64-bit binary on OpenSolaris. This is despite the fact that CFLAGS includes -m64. It might be the lack of LDFLAGS being exported which is causing this problem. Whatever the cause is, this needs to work for a complete port to OpenSolaris. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8419\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jaapspies mvngu\n\nAs reported by Jaap Spies, one of the reviewers of #8363, the package is not building properly as a 64-bit binary on OpenSolaris. This is despite the fact that CFLAGS includes -m64. It might be the lack of LDFLAGS being exported which is causing this problem. Whatever the cause is, this needs to work for a complete port to OpenSolaris. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8419\n\n",
     "created_at": "2010-03-02T14:04:28Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_008419.json:
 ```
 Assignee: drkirkby
 
-CC:  jsp mvngu
+CC:  @jaapspies mvngu
 
 As reported by Jaap Spies, one of the reviewers of #8363, the package is not building properly as a 64-bit binary on OpenSolaris. This is despite the fact that CFLAGS includes -m64. It might be the lack of LDFLAGS being exported which is causing this problem. Whatever the cause is, this needs to work for a complete port to OpenSolaris. 
 

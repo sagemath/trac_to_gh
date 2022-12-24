@@ -3,7 +3,7 @@
 archive/issues_006270.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nThis adds the 8 files to the reference manual (since kcrisman has put so much work into getting them to 100% coverage).  It also adds a few cross-references to plot.py and makes one or two small changes (e.g., it removes a reference to `rgbcolor` at the beginning of plot.py, since that function isn't in the global name space, and its mention suggested that it might be).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6270\n\n",
+    "body": "Assignee: @jhpalmieri\n\nThis adds the 8 files to the reference manual (since kcrisman has put so much work into getting them to 100% coverage).  It also adds a few cross-references to plot.py and makes one or two small changes (e.g., it removes a reference to `rgbcolor` at the beginning of plot.py, since that function isn't in the global name space, and its mention suggested that it might be).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6270\n\n",
     "created_at": "2009-06-12T18:20:59Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_006270.json:
     "title": "[with patch, needs review] add some files from the plot directory to the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6270",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 This adds the 8 files to the reference manual (since kcrisman has put so much work into getting them to 100% coverage).  It also adds a few cross-references to plot.py and makes one or two small changes (e.g., it removes a reference to `rgbcolor` at the beginning of plot.py, since that function isn't in the global name space, and its mention suggested that it might be).
 
@@ -76,7 +76,7 @@ archive/issue_comments_050094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6270#issuecomment-50094",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_050095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6270#issuecomment-50095",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_050098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6270#issuecomment-50098",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

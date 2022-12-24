@@ -3,7 +3,7 @@
 archive/issues_008962.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  robertwb\n\nThis patch changes the RealField latex representation to be RR_{precision}_^{0 or + or -}^ (for RNDZ, RNDU, or RNDD)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8962\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @robertwb\n\nThis patch changes the RealField latex representation to be RR_{precision}_^{0 or + or -}^ (for RNDZ, RNDU, or RNDD)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8962\n\n",
     "created_at": "2010-05-14T15:29:35Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_008962.json:
     "title": "Change realfield latex representation to include precision/rounding information",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8962",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  robertwb
+CC:  @robertwb
 
 This patch changes the RealField latex representation to be RR_{precision}_^{0 or + or -}^ (for RNDZ, RNDU, or RNDD)
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8962
 archive/issue_comments_082605.json:
 ```json
 {
-    "body": "Attachment [trac-8962-realfield-latex.patch](tarball://root/attachments/some-uuid/ticket8962/trac-8962-realfield-latex.patch) by jason created at 2010-05-14 15:52:19\n\nReady for review now.",
+    "body": "Attachment [trac-8962-realfield-latex.patch](tarball://root/attachments/some-uuid/ticket8962/trac-8962-realfield-latex.patch) by @jasongrout created at 2010-05-14 15:52:19\n\nReady for review now.",
     "created_at": "2010-05-14T15:52:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8962#issuecomment-82605",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-8962-realfield-latex.patch](tarball://root/attachments/some-uuid/ticket8962/trac-8962-realfield-latex.patch) by jason created at 2010-05-14 15:52:19
+Attachment [trac-8962-realfield-latex.patch](tarball://root/attachments/some-uuid/ticket8962/trac-8962-realfield-latex.patch) by @jasongrout created at 2010-05-14 15:52:19
 
 Ready for review now.
 
@@ -59,7 +59,7 @@ archive/issue_comments_082606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8962#issuecomment-82606",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_082607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8962#issuecomment-82607",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_082608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8962#issuecomment-82608",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_082609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8962#issuecomment-82609",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

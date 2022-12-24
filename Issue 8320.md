@@ -14,7 +14,7 @@ archive/issues_008320.json:
     "title": "Make HTML doc headers and footers more compact",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8320",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: mvngu
@@ -39,7 +39,7 @@ archive/issue_comments_073796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8320#issuecomment-73796",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -52,16 +52,16 @@ HTML short titles for selected docs.  sage repo.
 archive/issue_comments_073797.json:
 ```json
 {
-    "body": "Attachment [trac_8320-html_short_title.patch](tarball://root/attachments/some-uuid/ticket8320/trac_8320-html_short_title.patch) by mpatel created at 2010-02-21 21:57:54\n\nThe patch adds shorter HTML titles, which appear in Sphinx headers and footers, for selected docs: the developer's guide, Bordeaux lectures, numerical primer, and reference manual.  The others' titles overflow only with very large font sizes.  But feel free to make adjustments, e.g., for consistency.",
+    "body": "Attachment [trac_8320-html_short_title.patch](tarball://root/attachments/some-uuid/ticket8320/trac_8320-html_short_title.patch) by @qed777 created at 2010-02-21 21:57:54\n\nThe patch adds shorter HTML titles, which appear in Sphinx headers and footers, for selected docs: the developer's guide, Bordeaux lectures, numerical primer, and reference manual.  The others' titles overflow only with very large font sizes.  But feel free to make adjustments, e.g., for consistency.",
     "created_at": "2010-02-21T21:57:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8320#issuecomment-73797",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8320-html_short_title.patch](tarball://root/attachments/some-uuid/ticket8320/trac_8320-html_short_title.patch) by mpatel created at 2010-02-21 21:57:54
+Attachment [trac_8320-html_short_title.patch](tarball://root/attachments/some-uuid/ticket8320/trac_8320-html_short_title.patch) by @qed777 created at 2010-02-21 21:57:54
 
 The patch adds shorter HTML titles, which appear in Sphinx headers and footers, for selected docs: the developer's guide, Bordeaux lectures, numerical primer, and reference manual.  The others' titles overflow only with very large font sizes.  But feel free to make adjustments, e.g., for consistency.
 
@@ -77,7 +77,7 @@ archive/issue_comments_073798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8320#issuecomment-73798",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_073799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8320#issuecomment-73799",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_073802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8320#issuecomment-73802",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006414.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  dimpase\n\nCurrently, every now and then a user reports on sage-support, that he got an error message like\n\n```\n/Applications/sage-4.0.1-OSX10.5-PowerPC-PowerMacintosh-Darwin/sage/\nlocal/bin/sage-sage: line 198:   407 Illegal instruction     sage-\nipython \"$@\" -i\n```\n\nThis is e.g. the case if a Sage binary built on a MacPPC with a G5 processor (typically the one the OS X 10.5 bdist is created on) is used on a MacPPC with only a G4 processor.\n\nFor the *nix world on Intel/AMD processors, the sage-flags.txt file was created for just the purpose to check whether the CPU is sufficient, to let a certain Sage binary run.\n\nWe seem to need something in that direction for OS X, too (though momentarily only for the PPC processors, not the Intel ones).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6414\n\n",
+    "body": "Assignee: tbd\n\nCC:  @dimpase\n\nCurrently, every now and then a user reports on sage-support, that he got an error message like\n\n```\n/Applications/sage-4.0.1-OSX10.5-PowerPC-PowerMacintosh-Darwin/sage/\nlocal/bin/sage-sage: line 198:   407 Illegal instruction     sage-\nipython \"$@\" -i\n```\n\nThis is e.g. the case if a Sage binary built on a MacPPC with a G5 processor (typically the one the OS X 10.5 bdist is created on) is used on a MacPPC with only a G4 processor.\n\nFor the *nix world on Intel/AMD processors, the sage-flags.txt file was created for just the purpose to check whether the CPU is sufficient, to let a certain Sage binary run.\n\nWe seem to need something in that direction for OS X, too (though momentarily only for the PPC processors, not the Intel ones).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6414\n\n",
     "created_at": "2009-06-25T20:41:50Z",
     "labels": [
         "distribution",
@@ -19,7 +19,7 @@ archive/issues_006414.json:
 ```
 Assignee: tbd
 
-CC:  dimpase
+CC:  @dimpase
 
 Currently, every now and then a user reports on sage-support, that he got an error message like
 
@@ -52,7 +52,7 @@ archive/issue_comments_051496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6414#issuecomment-51496",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_051497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6414#issuecomment-51497",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_051498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6414#issuecomment-51498",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_051499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6414#issuecomment-51499",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_051500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6414#issuecomment-51500",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_051501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6414#issuecomment-51501",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_051502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6414#issuecomment-51502",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_051503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6414#issuecomment-51503",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_051504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6414#issuecomment-51504",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_051505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6414#issuecomment-51505",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_051506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6414#issuecomment-51506",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_051507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6414#issuecomment-51507",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_051508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6414#issuecomment-51508",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_051509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6414#issuecomment-51509",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_051510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6414#issuecomment-51510",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

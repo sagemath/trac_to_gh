@@ -14,7 +14,7 @@ archive/issues_000783.json:
     "title": "dilog is lame",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/783",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -70,7 +70,7 @@ archive/issue_comments_004682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/783#issuecomment-4682",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -104,16 +104,16 @@ Note that due to this problem, the plot function fails with:
 archive/issue_comments_004683.json:
 ```json
 {
-    "body": "Attachment [783-dilog_lame.patch](tarball://root/attachments/some-uuid/ticket783/783-dilog_lame.patch) by AlexGhitza created at 2008-04-19 14:41:38\n\nBut polylog is implemented to a more serious extent, in calculus.py.  I think we should just have dilog(z) be an alias for polylog(2, z).\n\nI've put up a patch making this change.",
+    "body": "Attachment [783-dilog_lame.patch](tarball://root/attachments/some-uuid/ticket783/783-dilog_lame.patch) by @aghitza created at 2008-04-19 14:41:38\n\nBut polylog is implemented to a more serious extent, in calculus.py.  I think we should just have dilog(z) be an alias for polylog(2, z).\n\nI've put up a patch making this change.",
     "created_at": "2008-04-19T14:41:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/783#issuecomment-4683",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [783-dilog_lame.patch](tarball://root/attachments/some-uuid/ticket783/783-dilog_lame.patch) by AlexGhitza created at 2008-04-19 14:41:38
+Attachment [783-dilog_lame.patch](tarball://root/attachments/some-uuid/ticket783/783-dilog_lame.patch) by @aghitza created at 2008-04-19 14:41:38
 
 But polylog is implemented to a more serious extent, in calculus.py.  I think we should just have dilog(z) be an alias for polylog(2, z).
 
@@ -131,7 +131,7 @@ archive/issue_comments_004684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/783#issuecomment-4684",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_004688.json:
     "issue": "https://github.com/sagemath/sagetest/issues/783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/783#issuecomment-4688",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_004689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/783#issuecomment-4689",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_004690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/783#issuecomment-4690",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -296,7 +296,7 @@ archive/issue_comments_004691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/783#issuecomment-4691",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -314,7 +314,7 @@ archive/issue_comments_004692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/783#issuecomment-4692",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -332,7 +332,7 @@ archive/issue_comments_004693.json:
     "issue": "https://github.com/sagemath/sagetest/issues/783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/783#issuecomment-4693",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -380,7 +380,7 @@ archive/issue_comments_004694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/783#issuecomment-4694",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -398,7 +398,7 @@ archive/issue_comments_004695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/783#issuecomment-4695",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -416,7 +416,7 @@ archive/issue_comments_004696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/783#issuecomment-4696",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -434,7 +434,7 @@ archive/issue_comments_004697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/783#issuecomment-4697",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -452,7 +452,7 @@ archive/issue_comments_004698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/783#issuecomment-4698",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -470,7 +470,7 @@ archive/issue_comments_004699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/783#issuecomment-4699",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -488,7 +488,7 @@ archive/issue_comments_004700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/783#issuecomment-4700",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -505,16 +505,16 @@ Paul
 archive/issue_comments_004701.json:
 ```json
 {
-    "body": "Attachment [trac_783.patch](tarball://root/attachments/some-uuid/ticket783/trac_783.patch) by mhansen created at 2010-09-12 17:00:00",
+    "body": "Attachment [trac_783.patch](tarball://root/attachments/some-uuid/ticket783/trac_783.patch) by @mwhansen created at 2010-09-12 17:00:00",
     "created_at": "2010-09-12T17:00:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/783#issuecomment-4701",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_783.patch](tarball://root/attachments/some-uuid/ticket783/trac_783.patch) by mhansen created at 2010-09-12 17:00:00
+Attachment [trac_783.patch](tarball://root/attachments/some-uuid/ticket783/trac_783.patch) by @mwhansen created at 2010-09-12 17:00:00
 
 
 
@@ -528,7 +528,7 @@ archive/issue_comments_004702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/783#issuecomment-4702",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -546,7 +546,7 @@ archive/issue_comments_004703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/783#issuecomment-4703",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -564,7 +564,7 @@ archive/issue_comments_004704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/783#issuecomment-4704",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -587,7 +587,7 @@ archive/issue_comments_004705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/783#issuecomment-4705",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

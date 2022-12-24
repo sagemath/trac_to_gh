@@ -3,7 +3,7 @@
 archive/issues_008333.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nMoves finite fields to the new coercion model.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8333\n\n",
+    "body": "Assignee: @aghitza\n\nMoves finite fields to the new coercion model.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8333\n\n",
     "created_at": "2010-02-23T15:07:26Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_008333.json:
     "title": "Finite fields to new coercion model",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8333",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Moves finite fields to the new coercion model.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8333
 archive/issue_comments_074208.json:
 ```json
 {
-    "body": "Attachment [8333_parent_init.patch](tarball://root/attachments/some-uuid/ticket8333/8333_parent_init.patch) by roed created at 2010-02-23 15:10:25",
+    "body": "Attachment [8333_parent_init.patch](tarball://root/attachments/some-uuid/ticket8333/8333_parent_init.patch) by @roed314 created at 2010-02-23 15:10:25",
     "created_at": "2010-02-23T15:10:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8333#issuecomment-74208",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [8333_parent_init.patch](tarball://root/attachments/some-uuid/ticket8333/8333_parent_init.patch) by roed created at 2010-02-23 15:10:25
+Attachment [8333_parent_init.patch](tarball://root/attachments/some-uuid/ticket8333/8333_parent_init.patch) by @roed314 created at 2010-02-23 15:10:25
 
 
 
@@ -50,16 +50,16 @@ Attachment [8333_parent_init.patch](tarball://root/attachments/some-uuid/ticket8
 archive/issue_comments_074209.json:
 ```json
 {
-    "body": "Attachment [8333_finite_fields_to_new_coercion.patch](tarball://root/attachments/some-uuid/ticket8333/8333_finite_fields_to_new_coercion.patch) by roed created at 2010-02-23 17:37:44\n\nThe two patches can be applied in either order.",
+    "body": "Attachment [8333_finite_fields_to_new_coercion.patch](tarball://root/attachments/some-uuid/ticket8333/8333_finite_fields_to_new_coercion.patch) by @roed314 created at 2010-02-23 17:37:44\n\nThe two patches can be applied in either order.",
     "created_at": "2010-02-23T17:37:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8333#issuecomment-74209",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [8333_finite_fields_to_new_coercion.patch](tarball://root/attachments/some-uuid/ticket8333/8333_finite_fields_to_new_coercion.patch) by roed created at 2010-02-23 17:37:44
+Attachment [8333_finite_fields_to_new_coercion.patch](tarball://root/attachments/some-uuid/ticket8333/8333_finite_fields_to_new_coercion.patch) by @roed314 created at 2010-02-23 17:37:44
 
 The two patches can be applied in either order.
 
@@ -75,7 +75,7 @@ archive/issue_comments_074210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8333#issuecomment-74210",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_074211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8333#issuecomment-74211",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_074212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8333#issuecomment-74212",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_074213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8333#issuecomment-74213",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_074214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8333#issuecomment-74214",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_074215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8333#issuecomment-74215",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_074216.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8333#issuecomment-74216",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_074217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8333#issuecomment-74217",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_074218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8333#issuecomment-74218",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_074219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8333#issuecomment-74219",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -351,7 +351,7 @@ archive/issue_comments_074220.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8333#issuecomment-74220",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -364,16 +364,16 @@ Rebased against 4.5.3
 archive/issue_comments_074221.json:
 ```json
 {
-    "body": "Attachment [8333_finite_fields_to_new_coercion.2.patch](tarball://root/attachments/some-uuid/ticket8333/8333_finite_fields_to_new_coercion.2.patch) by roed created at 2010-09-20 05:37:03\n\nOops.  Try this one.",
+    "body": "Attachment [8333_finite_fields_to_new_coercion.2.patch](tarball://root/attachments/some-uuid/ticket8333/8333_finite_fields_to_new_coercion.2.patch) by @roed314 created at 2010-09-20 05:37:03\n\nOops.  Try this one.",
     "created_at": "2010-09-20T05:37:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8333#issuecomment-74221",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [8333_finite_fields_to_new_coercion.2.patch](tarball://root/attachments/some-uuid/ticket8333/8333_finite_fields_to_new_coercion.2.patch) by roed created at 2010-09-20 05:37:03
+Attachment [8333_finite_fields_to_new_coercion.2.patch](tarball://root/attachments/some-uuid/ticket8333/8333_finite_fields_to_new_coercion.2.patch) by @roed314 created at 2010-09-20 05:37:03
 
 Oops.  Try this one.
 
@@ -389,7 +389,7 @@ archive/issue_comments_074222.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8333#issuecomment-74222",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -413,7 +413,7 @@ archive/issue_comments_074223.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8333#issuecomment-74223",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -431,7 +431,7 @@ archive/issue_comments_074224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8333#issuecomment-74224",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -449,7 +449,7 @@ archive/issue_comments_074225.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8333#issuecomment-74225",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -462,16 +462,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_074226.json:
 ```json
 {
-    "body": "Attachment [trac_8333-finite_fields_coercion_folded.patch](tarball://root/attachments/some-uuid/ticket8333/trac_8333-finite_fields_coercion_folded.patch) by davidloeffler created at 2010-09-24 14:26:31\n\nFolded patch. Apply only this patch. Applies to 4.6.alpha1 + trac_7883-ideals-folded.patch.",
+    "body": "Attachment [trac_8333-finite_fields_coercion_folded.patch](tarball://root/attachments/some-uuid/ticket8333/trac_8333-finite_fields_coercion_folded.patch) by @loefflerd created at 2010-09-24 14:26:31\n\nFolded patch. Apply only this patch. Applies to 4.6.alpha1 + trac_7883-ideals-folded.patch.",
     "created_at": "2010-09-24T14:26:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8333#issuecomment-74226",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_8333-finite_fields_coercion_folded.patch](tarball://root/attachments/some-uuid/ticket8333/trac_8333-finite_fields_coercion_folded.patch) by davidloeffler created at 2010-09-24 14:26:31
+Attachment [trac_8333-finite_fields_coercion_folded.patch](tarball://root/attachments/some-uuid/ticket8333/trac_8333-finite_fields_coercion_folded.patch) by @loefflerd created at 2010-09-24 14:26:31
 
 Folded patch. Apply only this patch. Applies to 4.6.alpha1 + trac_7883-ideals-folded.patch.
 
@@ -487,7 +487,7 @@ archive/issue_comments_074227.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8333#issuecomment-74227",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -505,7 +505,7 @@ archive/issue_comments_074228.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8333#issuecomment-74228",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -523,7 +523,7 @@ archive/issue_comments_074229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8333#issuecomment-74229",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -541,7 +541,7 @@ archive/issue_comments_074230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8333#issuecomment-74230",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

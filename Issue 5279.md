@@ -3,7 +3,7 @@
 archive/issues_005279.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mkoeppe\n\nKeywords: 3D, Data Vizualization\n\nParaview is based on VTK, comes with it's own implementation of vtk.\n\n[http://www.paraview.org/Wiki/ParaView](http://www.paraview.org/Wiki/ParaView)\n\nFrom the wiki web site:\n\n```\nParaView is an open-source, multi-platform application designed to visualize\ndata sets of size varying from small to very large. The goals of\nthe ParaView project include developing an open-source, multi-platform visualization\napplication that support distributed computational models to process\nlarge data sets.\nIt has an open, flexible, and intuitive user interface.\nFurthermore, ParaView is built on an extensible architecture based on open standards.\nParaView runs on distributed and shared memory parallel as well as single processor\nsystems and has been succesfully tested on Windows, Linux, Mac OS X, IBM Blue Gene,\nCray XT3 and various Unix workstations and clusters.\nUnder the hood, ParaView uses the Visualization Toolkit as the data processing\nand rendering engine and has a user interface written using the\nQt cross-platform application framework.\n```\n\n\nDependencies:\n\nOpenGL\n\nQt4\n\nopenmpi for multi processor usage.\n\nTry it! See:\n\n[http://sage.math.washington.edu/home/jsp/SPKGS/ParaView/paraview-3.4.0.spkg](http://sage.math.washington.edu/home/jsp/SPKGS/ParaView/paraview-3.4.0.spkg)\n\n[http://sage.math.washington.edu/home/jsp/SPKGS/ParaView/Screenshot-257.png](http://sage.math.washington.edu/home/jsp/SPKGS/ParaView/Screenshot-257.png)\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/5279\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @mkoeppe\n\nKeywords: 3D, Data Vizualization\n\nParaview is based on VTK, comes with it's own implementation of vtk.\n\n[http://www.paraview.org/Wiki/ParaView](http://www.paraview.org/Wiki/ParaView)\n\nFrom the wiki web site:\n\n```\nParaView is an open-source, multi-platform application designed to visualize\ndata sets of size varying from small to very large. The goals of\nthe ParaView project include developing an open-source, multi-platform visualization\napplication that support distributed computational models to process\nlarge data sets.\nIt has an open, flexible, and intuitive user interface.\nFurthermore, ParaView is built on an extensible architecture based on open standards.\nParaView runs on distributed and shared memory parallel as well as single processor\nsystems and has been succesfully tested on Windows, Linux, Mac OS X, IBM Blue Gene,\nCray XT3 and various Unix workstations and clusters.\nUnder the hood, ParaView uses the Visualization Toolkit as the data processing\nand rendering engine and has a user interface written using the\nQt cross-platform application framework.\n```\n\n\nDependencies:\n\nOpenGL\n\nQt4\n\nopenmpi for multi processor usage.\n\nTry it! See:\n\n[http://sage.math.washington.edu/home/jsp/SPKGS/ParaView/paraview-3.4.0.spkg](http://sage.math.washington.edu/home/jsp/SPKGS/ParaView/paraview-3.4.0.spkg)\n\n[http://sage.math.washington.edu/home/jsp/SPKGS/ParaView/Screenshot-257.png](http://sage.math.washington.edu/home/jsp/SPKGS/ParaView/Screenshot-257.png)\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/5279\n\n",
     "created_at": "2009-02-15T21:25:24Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_005279.json:
     "title": "Experimental ParaView Package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5279",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  mkoeppe
+CC:  @mkoeppe
 
 Keywords: 3D, Data Vizualization
 
@@ -78,7 +78,7 @@ archive/issue_comments_040516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5279#issuecomment-40516",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_040517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5279#issuecomment-40517",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_040518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5279#issuecomment-40518",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_040519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5279#issuecomment-40519",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_040520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5279#issuecomment-40520",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_040521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5279#issuecomment-40521",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_040522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5279#issuecomment-40522",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

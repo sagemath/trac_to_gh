@@ -14,7 +14,7 @@ archive/issues_001655.json:
     "title": "[with spkg] jmol -- upgrade to new version",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1655",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -39,7 +39,7 @@ archive/issue_comments_010530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1655#issuecomment-10530",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002772.json:
 ```json
 {
-    "body": "Assignee: malb\n\nThis version has GCC 4.3 support.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2772\n\n",
+    "body": "Assignee: @malb\n\nThis version has GCC 4.3 support.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2772\n\n",
     "created_at": "2008-04-02T15:33:08Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_002772.json:
     "title": "Update Singular to 3-0-4-2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2772",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 This version has GCC 4.3 support.
 
@@ -37,7 +37,7 @@ archive/issue_comments_019052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2772#issuecomment-19052",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -54,16 +54,16 @@ However, this is not ready for inclusion yet, because of some problem with the G
 archive/issue_comments_019053.json:
 ```json
 {
-    "body": "Attachment [singular-3-0-4-2-gcd-fix.patch](tarball://root/attachments/some-uuid/ticket2772/singular-3-0-4-2-gcd-fix.patch) by malb created at 2008-04-05 16:31:35",
+    "body": "Attachment [singular-3-0-4-2-gcd-fix.patch](tarball://root/attachments/some-uuid/ticket2772/singular-3-0-4-2-gcd-fix.patch) by @malb created at 2008-04-05 16:31:35",
     "created_at": "2008-04-05T16:31:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2772#issuecomment-19053",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [singular-3-0-4-2-gcd-fix.patch](tarball://root/attachments/some-uuid/ticket2772/singular-3-0-4-2-gcd-fix.patch) by malb created at 2008-04-05 16:31:35
+Attachment [singular-3-0-4-2-gcd-fix.patch](tarball://root/attachments/some-uuid/ticket2772/singular-3-0-4-2-gcd-fix.patch) by @malb created at 2008-04-05 16:31:35
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_019054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2772#issuecomment-19054",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002132.json:
 ```json
 {
-    "body": "Assignee: was\n\nHere are two examples of two different types of errors. If you have lots of memory, I suppose that you might need to make figsize bigger.\n\n(The following takes place on a 32-bit Core Duo with 2 gigs of ram.)\n\n\n```\nsage: P = plot(sin(x))\nsage: P.show(figsize=[200,200])\nterminate called after throwing an instance of 'std::bad_alloc'\n  what():  std::bad_alloc\n/home/bober/sage/local/bin/sage-sage: line 210: 12131 Aborted                 (core dumped) sage-ipython -c \"$SAGE_STARTUP_COMMAND;\" \"$@\"\nbober@bober:~/sage/misc$ \n```\n\n\n\n```\nbober@bober:~/sage/misc$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: graph_embeddings\nsage: P = plot(sin(x))\nsage: P.show(figsize[1000,1000])\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n---------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2132\n\n",
+    "body": "Assignee: @williamstein\n\nHere are two examples of two different types of errors. If you have lots of memory, I suppose that you might need to make figsize bigger.\n\n(The following takes place on a 32-bit Core Duo with 2 gigs of ram.)\n\n\n```\nsage: P = plot(sin(x))\nsage: P.show(figsize=[200,200])\nterminate called after throwing an instance of 'std::bad_alloc'\n  what():  std::bad_alloc\n/home/bober/sage/local/bin/sage-sage: line 210: 12131 Aborted                 (core dumped) sage-ipython -c \"$SAGE_STARTUP_COMMAND;\" \"$@\"\nbober@bober:~/sage/misc$ \n```\n\n\n\n```\nbober@bober:~/sage/misc$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: graph_embeddings\nsage: P = plot(sin(x))\nsage: P.show(figsize[1000,1000])\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n---------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2132\n\n",
     "created_at": "2008-02-09T21:46:04Z",
     "labels": [
         "graphics",
@@ -17,7 +17,7 @@ archive/issues_002132.json:
     "user": "bober"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Here are two examples of two different types of errors. If you have lots of memory, I suppose that you might need to make figsize bigger.
 

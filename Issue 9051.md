@@ -3,7 +3,7 @@
 archive/issues_009051.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  minz\n\nFollowup to #7585, which also did many, many other things. \n\nWrapping flint directly is much faster than the current implementation of Frac(GF(p)['t'])\n\nIssue created by migration from https://trac.sagemath.org/ticket/9051\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  minz\n\nFollowup to #7585, which also did many, many other things. \n\nWrapping flint directly is much faster than the current implementation of Frac(GF(p)['t'])\n\nIssue created by migration from https://trac.sagemath.org/ticket/9051\n\n",
     "created_at": "2010-05-26T00:27:53Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_009051.json:
     "title": "Fast function field arithmetic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9051",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 CC:  minz
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9051
 archive/issue_comments_083800.json:
 ```json
 {
-    "body": "Attachment [9051-FpT_1.patch](tarball://root/attachments/some-uuid/ticket9051/9051-FpT_1.patch) by robertwb created at 2010-05-27 07:29:28",
+    "body": "Attachment [9051-FpT_1.patch](tarball://root/attachments/some-uuid/ticket9051/9051-FpT_1.patch) by @robertwb created at 2010-05-27 07:29:28",
     "created_at": "2010-05-27T07:29:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9051#issuecomment-83800",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [9051-FpT_1.patch](tarball://root/attachments/some-uuid/ticket9051/9051-FpT_1.patch) by robertwb created at 2010-05-27 07:29:28
+Attachment [9051-FpT_1.patch](tarball://root/attachments/some-uuid/ticket9051/9051-FpT_1.patch) by @robertwb created at 2010-05-27 07:29:28
 
 
 
@@ -54,16 +54,16 @@ Attachment [9051-FpT_1.patch](tarball://root/attachments/some-uuid/ticket9051/90
 archive/issue_comments_083801.json:
 ```json
 {
-    "body": "Attachment [9051-FpT_3.patch](tarball://root/attachments/some-uuid/ticket9051/9051-FpT_3.patch) by robertwb created at 2010-05-27 07:29:39",
+    "body": "Attachment [9051-FpT_3.patch](tarball://root/attachments/some-uuid/ticket9051/9051-FpT_3.patch) by @robertwb created at 2010-05-27 07:29:39",
     "created_at": "2010-05-27T07:29:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9051#issuecomment-83801",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [9051-FpT_3.patch](tarball://root/attachments/some-uuid/ticket9051/9051-FpT_3.patch) by robertwb created at 2010-05-27 07:29:39
+Attachment [9051-FpT_3.patch](tarball://root/attachments/some-uuid/ticket9051/9051-FpT_3.patch) by @robertwb created at 2010-05-27 07:29:39
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_083802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9051#issuecomment-83802",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_083803.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9051#issuecomment-83803",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_083804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9051#issuecomment-83804",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -128,16 +128,16 @@ Note:   9051-FpT_2.patch  is by David Roe.
 archive/issue_comments_083805.json:
 ```json
 {
-    "body": "Attachment [9051-FpT_4.patch](tarball://root/attachments/some-uuid/ticket9051/9051-FpT_4.patch) by robertwb created at 2010-05-30 09:35:16",
+    "body": "Attachment [9051-FpT_4.patch](tarball://root/attachments/some-uuid/ticket9051/9051-FpT_4.patch) by @robertwb created at 2010-05-30 09:35:16",
     "created_at": "2010-05-30T09:35:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9051#issuecomment-83805",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [9051-FpT_4.patch](tarball://root/attachments/some-uuid/ticket9051/9051-FpT_4.patch) by robertwb created at 2010-05-30 09:35:16
+Attachment [9051-FpT_4.patch](tarball://root/attachments/some-uuid/ticket9051/9051-FpT_4.patch) by @robertwb created at 2010-05-30 09:35:16
 
 
 
@@ -151,7 +151,7 @@ archive/issue_comments_083806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9051#issuecomment-83806",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -164,16 +164,16 @@ flattened parts1-4 and rebased against sage-4.4.4
 archive/issue_comments_083807.json:
 ```json
 {
-    "body": "Attachment [trac_9051-flattened_and_rebased.patch](tarball://root/attachments/some-uuid/ticket9051/trac_9051-flattened_and_rebased.patch) by was created at 2010-07-08 12:05:56\n\nI took sage-4.4.4 and applied trac_9051-flattened_and_rebased.patch.  Doctesting just rings/ fails very seriously after applying this patch:\n\n\n```\n\nsage -t devel/sage/sage/rings/\n\nThe following tests failed:\n\n        sage -t  devel/sage-main/sage/rings/residue_field.pyx # 16 doctests failed\n        sage -t  devel/sage-main/sage/rings/number_field/order.py # 3 doctests failed\n        sage -t  devel/sage-main/sage/rings/number_field/number_field_element_quadratic.pyx # 2 doctests failed\n        sage -t  devel/sage-main/sage/rings/arith.py # 1 doctests failed\n        sage -t  devel/sage-main/sage/rings/ring.pyx # 5 doctests failed\n        sage -t  devel/sage-main/sage/rings/polynomial/multi_polynomial.pyx # 2 doctests failed\n        sage -t  devel/sage-main/sage/rings/polynomial/multi_polynomial_libsingular.pyx # 7 doctests failed\n        sage -t  devel/sage-main/sage/rings/integer_ring.pyx # 5 doctests failed\n        sage -t  devel/sage-main/sage/rings/number_field/galois_group.py # 8 doctests failed\n        sage -t  devel/sage-main/sage/rings/polynomial/polynomial_element.pyx # 7 doctests failed\n        sage -t  devel/sage-main/sage/rings/misc.py # 1 doctests failed\n        sage -t  devel/sage-main/sage/rings/number_field/number_field_base.pyx # 13 doctests failed\n        sage -t  devel/sage-main/sage/rings/qqbar.py # 4 doctests failed\n        sage -t  devel/sage-main/sage/rings/number_field/number_field_rel.py # 10 doctests failed\n        sage -t  devel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py # 15 doctests failed\n        sage -t  devel/sage-main/sage/rings/polynomial/polynomial_singular_interface.py # 1 doctests failed\n        sage -t  devel/sage-main/sage/rings/number_field/number_field_element.pyx # 13 doctests failed\n----------------------------------------------------------------------\nTimings have been updated.\nTotal time for all tests: 64.0 seconds\n```\n",
+    "body": "Attachment [trac_9051-flattened_and_rebased.patch](tarball://root/attachments/some-uuid/ticket9051/trac_9051-flattened_and_rebased.patch) by @williamstein created at 2010-07-08 12:05:56\n\nI took sage-4.4.4 and applied trac_9051-flattened_and_rebased.patch.  Doctesting just rings/ fails very seriously after applying this patch:\n\n\n```\n\nsage -t devel/sage/sage/rings/\n\nThe following tests failed:\n\n        sage -t  devel/sage-main/sage/rings/residue_field.pyx # 16 doctests failed\n        sage -t  devel/sage-main/sage/rings/number_field/order.py # 3 doctests failed\n        sage -t  devel/sage-main/sage/rings/number_field/number_field_element_quadratic.pyx # 2 doctests failed\n        sage -t  devel/sage-main/sage/rings/arith.py # 1 doctests failed\n        sage -t  devel/sage-main/sage/rings/ring.pyx # 5 doctests failed\n        sage -t  devel/sage-main/sage/rings/polynomial/multi_polynomial.pyx # 2 doctests failed\n        sage -t  devel/sage-main/sage/rings/polynomial/multi_polynomial_libsingular.pyx # 7 doctests failed\n        sage -t  devel/sage-main/sage/rings/integer_ring.pyx # 5 doctests failed\n        sage -t  devel/sage-main/sage/rings/number_field/galois_group.py # 8 doctests failed\n        sage -t  devel/sage-main/sage/rings/polynomial/polynomial_element.pyx # 7 doctests failed\n        sage -t  devel/sage-main/sage/rings/misc.py # 1 doctests failed\n        sage -t  devel/sage-main/sage/rings/number_field/number_field_base.pyx # 13 doctests failed\n        sage -t  devel/sage-main/sage/rings/qqbar.py # 4 doctests failed\n        sage -t  devel/sage-main/sage/rings/number_field/number_field_rel.py # 10 doctests failed\n        sage -t  devel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py # 15 doctests failed\n        sage -t  devel/sage-main/sage/rings/polynomial/polynomial_singular_interface.py # 1 doctests failed\n        sage -t  devel/sage-main/sage/rings/number_field/number_field_element.pyx # 13 doctests failed\n----------------------------------------------------------------------\nTimings have been updated.\nTotal time for all tests: 64.0 seconds\n```\n",
     "created_at": "2010-07-08T12:05:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9051#issuecomment-83807",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_9051-flattened_and_rebased.patch](tarball://root/attachments/some-uuid/ticket9051/trac_9051-flattened_and_rebased.patch) by was created at 2010-07-08 12:05:56
+Attachment [trac_9051-flattened_and_rebased.patch](tarball://root/attachments/some-uuid/ticket9051/trac_9051-flattened_and_rebased.patch) by @williamstein created at 2010-07-08 12:05:56
 
 I took sage-4.4.4 and applied trac_9051-flattened_and_rebased.patch.  Doctesting just rings/ fails very seriously after applying this patch:
 
@@ -219,7 +219,7 @@ archive/issue_comments_083808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9051#issuecomment-83808",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_083809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9051#issuecomment-83809",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -250,16 +250,16 @@ Fixes the broken doctests
 archive/issue_comments_083810.json:
 ```json
 {
-    "body": "Attachment [trac_9051_polycall_fixes.patch](tarball://root/attachments/some-uuid/ticket9051/trac_9051_polycall_fixes.patch) by roed created at 2010-07-09 11:59:46",
+    "body": "Attachment [trac_9051_polycall_fixes.patch](tarball://root/attachments/some-uuid/ticket9051/trac_9051_polycall_fixes.patch) by @roed314 created at 2010-07-09 11:59:46",
     "created_at": "2010-07-09T11:59:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9051#issuecomment-83810",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [trac_9051_polycall_fixes.patch](tarball://root/attachments/some-uuid/ticket9051/trac_9051_polycall_fixes.patch) by roed created at 2010-07-09 11:59:46
+Attachment [trac_9051_polycall_fixes.patch](tarball://root/attachments/some-uuid/ticket9051/trac_9051_polycall_fixes.patch) by @roed314 created at 2010-07-09 11:59:46
 
 
 
@@ -273,7 +273,7 @@ archive/issue_comments_083811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9051#issuecomment-83811",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_083812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9051#issuecomment-83812",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_083813.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9051#issuecomment-83813",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_083814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9051#issuecomment-83814",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_083815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9051#issuecomment-83815",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -365,7 +365,7 @@ archive/issue_comments_083816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9051#issuecomment-83816",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -404,16 +404,16 @@ Total time for all tests: 355.5 seconds
 archive/issue_comments_083817.json:
 ```json
 {
-    "body": "Attachment [trac_9051_fixes2.patch](tarball://root/attachments/some-uuid/ticket9051/trac_9051_fixes2.patch) by roed created at 2010-07-09 12:29:27\n\nFixes more doctests",
+    "body": "Attachment [trac_9051_fixes2.patch](tarball://root/attachments/some-uuid/ticket9051/trac_9051_fixes2.patch) by @roed314 created at 2010-07-09 12:29:27\n\nFixes more doctests",
     "created_at": "2010-07-09T12:29:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9051#issuecomment-83817",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [trac_9051_fixes2.patch](tarball://root/attachments/some-uuid/ticket9051/trac_9051_fixes2.patch) by roed created at 2010-07-09 12:29:27
+Attachment [trac_9051_fixes2.patch](tarball://root/attachments/some-uuid/ticket9051/trac_9051_fixes2.patch) by @roed314 created at 2010-07-09 12:29:27
 
 Fixes more doctests
 
@@ -429,7 +429,7 @@ archive/issue_comments_083818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9051#issuecomment-83818",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -447,7 +447,7 @@ archive/issue_comments_083819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9051#issuecomment-83819",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -465,7 +465,7 @@ archive/issue_comments_083820.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9051#issuecomment-83820",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -485,7 +485,7 @@ archive/issue_comments_083821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9051#issuecomment-83821",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -503,7 +503,7 @@ archive/issue_comments_083822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9051#issuecomment-83822",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -516,16 +516,16 @@ Wow, that's excellent that everything finally passes.  Yes, I hope to have time 
 archive/issue_comments_083823.json:
 ```json
 {
-    "body": "Attachment [trac_9051-everything_flattened.patch](tarball://root/attachments/some-uuid/ticket9051/trac_9051-everything_flattened.patch) by was created at 2010-07-15 15:46:47\n\nI did a benchmark on sage.math, comparing this code to Magma:\n\nSAGE with your patch:\n\n```\nsage: R.<T> = GF(71)[]; K.<T> = FractionField(R); a=(T^3+T-1)*(T^2-2); b=(3*T^5-T+7)*(T^2-2)\nsage: timeit('a/b+b/a')\n625 loops, best of 3: 26.3 \u00b5s per loop\nsage: time v=[a/b+b/a for i in range(10^5)]\nCPU times: user 2.94 s, sys: 0.02 s, total: 2.96 s\nWall time: 2.96 s\nsage: time v=[a*b for i in range(10^5)]\nCPU times: user 0.54 s, sys: 0.02 s, total: 0.56 s\nWall time: 0.56 s\nsage: time v=[(1/a)*(1/b) for i in range(10^5)]\nCPU times: user 1.80 s, sys: 0.00 s, total: 1.80 s\nWall time: 1.80 s\n```\n\n\nBefore the patch, the same benchmark is massively slower, so this patch is a very big improvement:\n\n```\nsage: sage: R.<T> = GF(71)[]; K.<T> = FractionField(R); a=(T^3+T-1)*(T^2-2); b=(3*T^5-T+7)*(T^2-2)\nsage: sage: timeit('a/b+b/a')\n625 loops, best of 3: 776 \u00b5s per loop\n```\n\n\n\nIn Magma:\n\n```\nsage: R.<T> = GF(71)[]; K.<T> = FractionField(R); a=(T^3+T-1)*(T^2-2); b=(3*T^5-T+7)*(T^2-2)\nsage: aa=magma(a); bb=magma(b)\nsage: magma.eval('a:=%s;b:=%s;'%(aa.name(),bb.name()))\nsage: magma.eval('time v := [a/b+b/a : i in [1..10^5]];')\n'Time: 0.800'\nsage: magma.eval('time v := [a*b : i in [1..10^5]];')\n'Time: 0.320'\nsage: magma.eval('time v := [(1/a) * (1/b) : i in [1..10^5]];')\n'Time: 0.830'\n```\n\n\nSomething surprising is that working in your rational function field is much faster than working with polynomials!\n\n```\nsage: R.<T> = GF(71)[];  a=(T^3+T-1)*(T^2-2); b=(3*T^5-T+7)*(T^2-2)\nsage: time v=[a*b for i in range(10^5)]\nCPU times: user 2.02 s, sys: 0.00 s, total: 2.02 s\nWall time: 2.02 s\n```\n",
+    "body": "Attachment [trac_9051-everything_flattened.patch](tarball://root/attachments/some-uuid/ticket9051/trac_9051-everything_flattened.patch) by @williamstein created at 2010-07-15 15:46:47\n\nI did a benchmark on sage.math, comparing this code to Magma:\n\nSAGE with your patch:\n\n```\nsage: R.<T> = GF(71)[]; K.<T> = FractionField(R); a=(T^3+T-1)*(T^2-2); b=(3*T^5-T+7)*(T^2-2)\nsage: timeit('a/b+b/a')\n625 loops, best of 3: 26.3 \u00b5s per loop\nsage: time v=[a/b+b/a for i in range(10^5)]\nCPU times: user 2.94 s, sys: 0.02 s, total: 2.96 s\nWall time: 2.96 s\nsage: time v=[a*b for i in range(10^5)]\nCPU times: user 0.54 s, sys: 0.02 s, total: 0.56 s\nWall time: 0.56 s\nsage: time v=[(1/a)*(1/b) for i in range(10^5)]\nCPU times: user 1.80 s, sys: 0.00 s, total: 1.80 s\nWall time: 1.80 s\n```\n\n\nBefore the patch, the same benchmark is massively slower, so this patch is a very big improvement:\n\n```\nsage: sage: R.<T> = GF(71)[]; K.<T> = FractionField(R); a=(T^3+T-1)*(T^2-2); b=(3*T^5-T+7)*(T^2-2)\nsage: sage: timeit('a/b+b/a')\n625 loops, best of 3: 776 \u00b5s per loop\n```\n\n\n\nIn Magma:\n\n```\nsage: R.<T> = GF(71)[]; K.<T> = FractionField(R); a=(T^3+T-1)*(T^2-2); b=(3*T^5-T+7)*(T^2-2)\nsage: aa=magma(a); bb=magma(b)\nsage: magma.eval('a:=%s;b:=%s;'%(aa.name(),bb.name()))\nsage: magma.eval('time v := [a/b+b/a : i in [1..10^5]];')\n'Time: 0.800'\nsage: magma.eval('time v := [a*b : i in [1..10^5]];')\n'Time: 0.320'\nsage: magma.eval('time v := [(1/a) * (1/b) : i in [1..10^5]];')\n'Time: 0.830'\n```\n\n\nSomething surprising is that working in your rational function field is much faster than working with polynomials!\n\n```\nsage: R.<T> = GF(71)[];  a=(T^3+T-1)*(T^2-2); b=(3*T^5-T+7)*(T^2-2)\nsage: time v=[a*b for i in range(10^5)]\nCPU times: user 2.02 s, sys: 0.00 s, total: 2.02 s\nWall time: 2.02 s\n```\n",
     "created_at": "2010-07-15T15:46:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9051#issuecomment-83823",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_9051-everything_flattened.patch](tarball://root/attachments/some-uuid/ticket9051/trac_9051-everything_flattened.patch) by was created at 2010-07-15 15:46:47
+Attachment [trac_9051-everything_flattened.patch](tarball://root/attachments/some-uuid/ticket9051/trac_9051-everything_flattened.patch) by @williamstein created at 2010-07-15 15:46:47
 
 I did a benchmark on sage.math, comparing this code to Magma:
 
@@ -594,7 +594,7 @@ archive/issue_comments_083824.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9051#issuecomment-83824",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -615,16 +615,16 @@ Wall time: 79.05 s
 archive/issue_comments_083825.json:
 ```json
 {
-    "body": "Attachment [trac_9051-referee-1.patch](tarball://root/attachments/some-uuid/ticket9051/trac_9051-referee-1.patch) by was created at 2010-07-15 17:34:56\n\napply this after the \"everything flattened\" patch directly above.",
+    "body": "Attachment [trac_9051-referee-1.patch](tarball://root/attachments/some-uuid/ticket9051/trac_9051-referee-1.patch) by @williamstein created at 2010-07-15 17:34:56\n\napply this after the \"everything flattened\" patch directly above.",
     "created_at": "2010-07-15T17:34:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9051#issuecomment-83825",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_9051-referee-1.patch](tarball://root/attachments/some-uuid/ticket9051/trac_9051-referee-1.patch) by was created at 2010-07-15 17:34:56
+Attachment [trac_9051-referee-1.patch](tarball://root/attachments/some-uuid/ticket9051/trac_9051-referee-1.patch) by @williamstein created at 2010-07-15 17:34:56
 
 apply this after the "everything flattened" patch directly above.
 
@@ -640,7 +640,7 @@ archive/issue_comments_083826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9051#issuecomment-83826",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -658,7 +658,7 @@ archive/issue_comments_083827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9051#issuecomment-83827",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -676,7 +676,7 @@ archive/issue_comments_083828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9051#issuecomment-83828",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -699,7 +699,7 @@ archive/issue_comments_083829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9051#issuecomment-83829",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -717,7 +717,7 @@ archive/issue_comments_083830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9051#issuecomment-83830",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -741,7 +741,7 @@ archive/issue_comments_083831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9051#issuecomment-83831",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

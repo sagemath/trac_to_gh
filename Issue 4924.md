@@ -14,7 +14,7 @@ archive/issues_004924.json:
     "title": "convert sage.probability.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4924",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4924
 archive/issue_comments_037365.json:
 ```json
 {
-    "body": "Attachment [trac_4924.patch](tarball://root/attachments/some-uuid/ticket4924/trac_4924.patch) by mhansen created at 2009-01-02 02:19:17",
+    "body": "Attachment [trac_4924.patch](tarball://root/attachments/some-uuid/ticket4924/trac_4924.patch) by @mwhansen created at 2009-01-02 02:19:17",
     "created_at": "2009-01-02T02:19:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4924#issuecomment-37365",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4924.patch](tarball://root/attachments/some-uuid/ticket4924/trac_4924.patch) by mhansen created at 2009-01-02 02:19:17
+Attachment [trac_4924.patch](tarball://root/attachments/some-uuid/ticket4924/trac_4924.patch) by @mwhansen created at 2009-01-02 02:19:17
 
 
 
@@ -50,16 +50,16 @@ Attachment [trac_4924.patch](tarball://root/attachments/some-uuid/ticket4924/tra
 archive/issue_comments_037366.json:
 ```json
 {
-    "body": "Attachment [sage.probability-final.patch](tarball://root/attachments/some-uuid/ticket4924/sage.probability-final.patch) by mhansen created at 2009-02-21 19:21:39",
+    "body": "Attachment [sage.probability-final.patch](tarball://root/attachments/some-uuid/ticket4924/sage.probability-final.patch) by @mwhansen created at 2009-02-21 19:21:39",
     "created_at": "2009-02-21T19:21:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4924#issuecomment-37366",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [sage.probability-final.patch](tarball://root/attachments/some-uuid/ticket4924/sage.probability-final.patch) by mhansen created at 2009-02-21 19:21:39
+Attachment [sage.probability-final.patch](tarball://root/attachments/some-uuid/ticket4924/sage.probability-final.patch) by @mwhansen created at 2009-02-21 19:21:39
 
 
 

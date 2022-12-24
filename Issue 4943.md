@@ -14,7 +14,7 @@ archive/issues_004943.json:
     "title": "make sage -tp run sage -t when only one file is specified",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4943",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 Assignee: mabshoff
@@ -39,7 +39,7 @@ archive/issue_comments_037525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4943#issuecomment-37525",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_037526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4943#issuecomment-37526",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_037527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4943#issuecomment-37527",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_037528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4943#issuecomment-37528",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_037529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4943#issuecomment-37529",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

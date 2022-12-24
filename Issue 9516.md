@@ -14,7 +14,7 @@ archive/issues_009516.json:
     "title": "numerical noise in sage-4.5.rc1 on PowerPC OS X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9516",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mvngu
@@ -53,7 +53,7 @@ archive/issue_comments_091492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9516",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9516#issuecomment-91492",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -66,16 +66,16 @@ Changing status from new to needs_review.
 archive/issue_comments_091493.json:
 ```json
 {
-    "body": "Attachment [trac_9516.patch](tarball://root/attachments/some-uuid/ticket9516/trac_9516.patch) by was created at 2010-07-16 09:44:46",
+    "body": "Attachment [trac_9516.patch](tarball://root/attachments/some-uuid/ticket9516/trac_9516.patch) by @williamstein created at 2010-07-16 09:44:46",
     "created_at": "2010-07-16T09:44:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9516",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9516#issuecomment-91493",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_9516.patch](tarball://root/attachments/some-uuid/ticket9516/trac_9516.patch) by was created at 2010-07-16 09:44:46
+Attachment [trac_9516.patch](tarball://root/attachments/some-uuid/ticket9516/trac_9516.patch) by @williamstein created at 2010-07-16 09:44:46
 
 
 
@@ -89,7 +89,7 @@ archive/issue_comments_091494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9516",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9516#issuecomment-91494",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_091495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9516",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9516#issuecomment-91495",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_091496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9516",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9516#issuecomment-91496",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_091497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9516",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9516#issuecomment-91497",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

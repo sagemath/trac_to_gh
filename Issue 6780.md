@@ -14,7 +14,7 @@ archive/issues_006780.json:
     "title": "Stability improvement for lattice_polytope",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6780",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 Assignee: mhampton
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6780
 archive/issue_comments_055836.json:
 ```json
 {
-    "body": "Attachment [trac_6780_stability_improvement_for_lattice_polytope.patch](tarball://root/attachments/some-uuid/ticket6780/trac_6780_stability_improvement_for_lattice_polytope.patch) by novoselt created at 2009-08-20 03:32:14",
+    "body": "Attachment [trac_6780_stability_improvement_for_lattice_polytope.patch](tarball://root/attachments/some-uuid/ticket6780/trac_6780_stability_improvement_for_lattice_polytope.patch) by @novoselt created at 2009-08-20 03:32:14",
     "created_at": "2009-08-20T03:32:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6780#issuecomment-55836",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_6780_stability_improvement_for_lattice_polytope.patch](tarball://root/attachments/some-uuid/ticket6780/trac_6780_stability_improvement_for_lattice_polytope.patch) by novoselt created at 2009-08-20 03:32:14
+Attachment [trac_6780_stability_improvement_for_lattice_polytope.patch](tarball://root/attachments/some-uuid/ticket6780/trac_6780_stability_improvement_for_lattice_polytope.patch) by @novoselt created at 2009-08-20 03:32:14
 
 
 
@@ -95,7 +95,7 @@ archive/issue_comments_055839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6780#issuecomment-55839",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_055840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6780#issuecomment-55840",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_055841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6780#issuecomment-55841",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

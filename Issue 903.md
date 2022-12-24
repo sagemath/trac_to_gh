@@ -3,7 +3,7 @@
 archive/issues_000903.json:
 ```json
 {
-    "body": "Assignee: was\n\nSee the below examples that illustrate that charpoly(A), where A is over a number field, currently totally\nsucks.  This has very bad implications for modular forms computations.  Even switching to use PARI for\ncharpoly would give a significant speedup (which is a lot faster than Magma, interestingly). \n\n\n\n```\nK.<a> = NumberField(x^2 + 17)\na^2\n///\n-17\n```\n\n\n\n```\nn = 40\nm = matrix(K, n, [(a+1)^randint(0,3) for _ in xrange(n^2)])\nm\n///\n40 x 40 dense matrix over Number Field in a with defining polynomial x^2 + 17\n```\n\n\n\n```\nm[0] # first row\n///\n(2*a - 16, 1, -14*a - 50, a + 1, 2*a - 16, 2*a - 16, a + 1, -14*a - 50, 1, -14*a - 50, 2*a - 16, a + 1, 1, a + 1, a + 1, a + 1, a + 1, -14*a - 50, -14*a - 50, 2*a - 16, 1, a + 1, 1, a + 1, 2*a - 16, -14*a - 50, 1, 2*a - 16, 2*a - 16, 1, a + 1, a + 1, 1, 2*a - 16, -14*a - 50, 2*a - 16, 2*a - 16, -14*a - 50, 2*a - 16, -14*a - 50)\n```\n\n\n\n```\ntime k = m*m\n///\nCPU time: 0.14 s,  Wall time: 0.27 s\n```\n\n\n\n```\ntime f=m.charpoly()\n///\nCPU time: 23.93 s,  Wall time: 26.22 s\n```\n\n\n<b>NOTE:</b> Sage <i>should</i> use PARI for charpoly's over number\nfields, but currently it doesn't.  Notice how much faster PARI is at\nthe same computation!\n\n\n```\nm._clear_cache()\ng = pari(m)\ntime h = g.charpoly()\n///\nTime: CPU 2.52 s, Wall: 2.76 s\n```\n\n\nBut a <b>multimodular algorithm</b> should blow away all of them.  Student project?\nBasically, charpoly mod p is extremely fast in Sage, and one could reduce modulo\n<i>primes of a number field</i>, do the computation mod p, then lift, and get the\ncorrect result.  I know of no implementations of this.  A student project could be\nto implement this and tune it to be the fastest program in the world for charpoly\nover number fields. \n<br>\n\n\n```\ntime m.echelonize()\n///\nCPU time: 0.35 s,  Wall time: 0.35 s\n```\n\n\n\n```\n%magma\nR<x> := PolynomialRing(RationalField());\nK<a> := NumberField(x^2 + 17);\nn := 40;\nm := MatrixAlgebra(K, n)![(1+a)^Random(0, 3) : i in [1..n^2]];\ntime k := m*m;\ntime f := CharacteristicPolynomial(m);\ntime e := EchelonForm(m);\n///\nTime: 0.000\nTime: 15.220\nTime: 0.150\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/903\n\n",
+    "body": "Assignee: @williamstein\n\nSee the below examples that illustrate that charpoly(A), where A is over a number field, currently totally\nsucks.  This has very bad implications for modular forms computations.  Even switching to use PARI for\ncharpoly would give a significant speedup (which is a lot faster than Magma, interestingly). \n\n\n\n```\nK.<a> = NumberField(x^2 + 17)\na^2\n///\n-17\n```\n\n\n\n```\nn = 40\nm = matrix(K, n, [(a+1)^randint(0,3) for _ in xrange(n^2)])\nm\n///\n40 x 40 dense matrix over Number Field in a with defining polynomial x^2 + 17\n```\n\n\n\n```\nm[0] # first row\n///\n(2*a - 16, 1, -14*a - 50, a + 1, 2*a - 16, 2*a - 16, a + 1, -14*a - 50, 1, -14*a - 50, 2*a - 16, a + 1, 1, a + 1, a + 1, a + 1, a + 1, -14*a - 50, -14*a - 50, 2*a - 16, 1, a + 1, 1, a + 1, 2*a - 16, -14*a - 50, 1, 2*a - 16, 2*a - 16, 1, a + 1, a + 1, 1, 2*a - 16, -14*a - 50, 2*a - 16, 2*a - 16, -14*a - 50, 2*a - 16, -14*a - 50)\n```\n\n\n\n```\ntime k = m*m\n///\nCPU time: 0.14 s,  Wall time: 0.27 s\n```\n\n\n\n```\ntime f=m.charpoly()\n///\nCPU time: 23.93 s,  Wall time: 26.22 s\n```\n\n\n<b>NOTE:</b> Sage <i>should</i> use PARI for charpoly's over number\nfields, but currently it doesn't.  Notice how much faster PARI is at\nthe same computation!\n\n\n```\nm._clear_cache()\ng = pari(m)\ntime h = g.charpoly()\n///\nTime: CPU 2.52 s, Wall: 2.76 s\n```\n\n\nBut a <b>multimodular algorithm</b> should blow away all of them.  Student project?\nBasically, charpoly mod p is extremely fast in Sage, and one could reduce modulo\n<i>primes of a number field</i>, do the computation mod p, then lift, and get the\ncorrect result.  I know of no implementations of this.  A student project could be\nto implement this and tune it to be the fastest program in the world for charpoly\nover number fields. \n<br>\n\n\n```\ntime m.echelonize()\n///\nCPU time: 0.35 s,  Wall time: 0.35 s\n```\n\n\n\n```\n%magma\nR<x> := PolynomialRing(RationalField());\nK<a> := NumberField(x^2 + 17);\nn := 40;\nm := MatrixAlgebra(K, n)![(1+a)^Random(0, 3) : i in [1..n^2]];\ntime k := m*m;\ntime f := CharacteristicPolynomial(m);\ntime e := EchelonForm(m);\n///\nTime: 0.000\nTime: 15.220\nTime: 0.150\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/903\n\n",
     "created_at": "2007-10-15T21:01:58Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_000903.json:
     "title": "charpoly of matrices over number fields is ridiculously slow right now (easy fixes exist)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/903",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 See the below examples that illustrate that charpoly(A), where A is over a number field, currently totally
 sucks.  This has very bad implications for modular forms computations.  Even switching to use PARI for
@@ -130,7 +130,7 @@ archive/issue_comments_005543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/903#issuecomment-5543",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_005544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/903#issuecomment-5544",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_005545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/903#issuecomment-5545",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_005546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/903#issuecomment-5546",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -230,16 +230,16 @@ See #2835 for a possible primes of degree one iterator implementation.
 archive/issue_comments_005547.json:
 ```json
 {
-    "body": "Attachment [903-charpoly_pari.patch](tarball://root/attachments/some-uuid/ticket903/903-charpoly_pari.patch) by AlexGhitza created at 2008-04-13 21:48:09",
+    "body": "Attachment [903-charpoly_pari.patch](tarball://root/attachments/some-uuid/ticket903/903-charpoly_pari.patch) by @aghitza created at 2008-04-13 21:48:09",
     "created_at": "2008-04-13T21:48:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/903#issuecomment-5547",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [903-charpoly_pari.patch](tarball://root/attachments/some-uuid/ticket903/903-charpoly_pari.patch) by AlexGhitza created at 2008-04-13 21:48:09
+Attachment [903-charpoly_pari.patch](tarball://root/attachments/some-uuid/ticket903/903-charpoly_pari.patch) by @aghitza created at 2008-04-13 21:48:09
 
 
 
@@ -253,7 +253,7 @@ archive/issue_comments_005548.json:
     "issue": "https://github.com/sagemath/sagetest/issues/903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/903#issuecomment-5548",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_005549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/903#issuecomment-5549",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -300,16 +300,16 @@ This is hard -- we need polynomials over arbitrary pari number fields, and it do
 archive/issue_comments_005550.json:
 ```json
 {
-    "body": "Attachment [903-charpoly_pari_doctests.patch](tarball://root/attachments/some-uuid/ticket903/903-charpoly_pari_doctests.patch) by AlexGhitza created at 2008-04-14 23:39:57\n\napply after 903-charpoly_pari.patch",
+    "body": "Attachment [903-charpoly_pari_doctests.patch](tarball://root/attachments/some-uuid/ticket903/903-charpoly_pari_doctests.patch) by @aghitza created at 2008-04-14 23:39:57\n\napply after 903-charpoly_pari.patch",
     "created_at": "2008-04-14T23:39:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/903#issuecomment-5550",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [903-charpoly_pari_doctests.patch](tarball://root/attachments/some-uuid/ticket903/903-charpoly_pari_doctests.patch) by AlexGhitza created at 2008-04-14 23:39:57
+Attachment [903-charpoly_pari_doctests.patch](tarball://root/attachments/some-uuid/ticket903/903-charpoly_pari_doctests.patch) by @aghitza created at 2008-04-14 23:39:57
 
 apply after 903-charpoly_pari.patch
 
@@ -325,7 +325,7 @@ archive/issue_comments_005551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/903#issuecomment-5551",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_005552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/903#issuecomment-5552",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -358,16 +358,16 @@ The patches apply and pass tests for me.  Nick, what are your thoughts?
 archive/issue_comments_005553.json:
 ```json
 {
-    "body": "Attachment [903-ncalexan-charpoly-over-number-field-1.patch](tarball://root/attachments/some-uuid/ticket903/903-ncalexan-charpoly-over-number-field-1.patch) by ncalexan created at 2008-04-15 06:17:38",
+    "body": "Attachment [903-ncalexan-charpoly-over-number-field-1.patch](tarball://root/attachments/some-uuid/ticket903/903-ncalexan-charpoly-over-number-field-1.patch) by @ncalexan created at 2008-04-15 06:17:38",
     "created_at": "2008-04-15T06:17:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/903#issuecomment-5553",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [903-ncalexan-charpoly-over-number-field-1.patch](tarball://root/attachments/some-uuid/ticket903/903-ncalexan-charpoly-over-number-field-1.patch) by ncalexan created at 2008-04-15 06:17:38
+Attachment [903-ncalexan-charpoly-over-number-field-1.patch](tarball://root/attachments/some-uuid/ticket903/903-ncalexan-charpoly-over-number-field-1.patch) by @ncalexan created at 2008-04-15 06:17:38
 
 
 
@@ -381,7 +381,7 @@ archive/issue_comments_005554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/903#issuecomment-5554",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_005555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/903#issuecomment-5555",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -417,7 +417,7 @@ archive/issue_comments_005556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/903#issuecomment-5556",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -432,16 +432,16 @@ There is one problem I run into with this: 2 doctests in number_field_element.py
 archive/issue_comments_005557.json:
 ```json
 {
-    "body": "Attachment [903-small_fix.patch](tarball://root/attachments/some-uuid/ticket903/903-small_fix.patch) by AlexGhitza created at 2008-04-15 14:53:01\n\napply after Nick's patch",
+    "body": "Attachment [903-small_fix.patch](tarball://root/attachments/some-uuid/ticket903/903-small_fix.patch) by @aghitza created at 2008-04-15 14:53:01\n\napply after Nick's patch",
     "created_at": "2008-04-15T14:53:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/903#issuecomment-5557",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [903-small_fix.patch](tarball://root/attachments/some-uuid/ticket903/903-small_fix.patch) by AlexGhitza created at 2008-04-15 14:53:01
+Attachment [903-small_fix.patch](tarball://root/attachments/some-uuid/ticket903/903-small_fix.patch) by @aghitza created at 2008-04-15 14:53:01
 
 apply after Nick's patch
 
@@ -457,7 +457,7 @@ archive/issue_comments_005558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/903#issuecomment-5558",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -498,16 +498,16 @@ Wall time: 3.98
 archive/issue_comments_005559.json:
 ```json
 {
-    "body": "Attachment [903-ncalexan-charpoly-over-number-field-2.patch](tarball://root/attachments/some-uuid/ticket903/903-ncalexan-charpoly-over-number-field-2.patch) by ncalexan created at 2008-04-15 16:03:52",
+    "body": "Attachment [903-ncalexan-charpoly-over-number-field-2.patch](tarball://root/attachments/some-uuid/ticket903/903-ncalexan-charpoly-over-number-field-2.patch) by @ncalexan created at 2008-04-15 16:03:52",
     "created_at": "2008-04-15T16:03:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/903#issuecomment-5559",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [903-ncalexan-charpoly-over-number-field-2.patch](tarball://root/attachments/some-uuid/ticket903/903-ncalexan-charpoly-over-number-field-2.patch) by ncalexan created at 2008-04-15 16:03:52
+Attachment [903-ncalexan-charpoly-over-number-field-2.patch](tarball://root/attachments/some-uuid/ticket903/903-ncalexan-charpoly-over-number-field-2.patch) by @ncalexan created at 2008-04-15 16:03:52
 
 
 
@@ -521,7 +521,7 @@ archive/issue_comments_005560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/903#issuecomment-5560",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -541,7 +541,7 @@ archive/issue_comments_005561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/903#issuecomment-5561",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -627,7 +627,7 @@ archive/issue_comments_005565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/903#issuecomment-5565",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

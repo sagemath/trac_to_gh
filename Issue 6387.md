@@ -3,7 +3,7 @@
 archive/issues_006387.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nKeywords: coercion, typo\n\nIn two places in the action handling code, \"action_hash\" is mistyped as \"action_list\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/6387\n\n",
+    "body": "Assignee: @robertwb\n\nKeywords: coercion, typo\n\nIn two places in the action handling code, \"action_hash\" is mistyped as \"action_list\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/6387\n\n",
     "created_at": "2009-06-23T02:49:51Z",
     "labels": [
         "coercion",
@@ -14,10 +14,10 @@ archive/issues_006387.json:
     "title": "Typo in parent.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6387",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 Keywords: coercion, typo
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6387
 archive/issue_comments_051142.json:
 ```json
 {
-    "body": "Attachment [trac_6387.patch](tarball://root/attachments/some-uuid/ticket6387/trac_6387.patch) by roed created at 2009-06-23 02:51:56",
+    "body": "Attachment [trac_6387.patch](tarball://root/attachments/some-uuid/ticket6387/trac_6387.patch) by @roed314 created at 2009-06-23 02:51:56",
     "created_at": "2009-06-23T02:51:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6387#issuecomment-51142",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [trac_6387.patch](tarball://root/attachments/some-uuid/ticket6387/trac_6387.patch) by roed created at 2009-06-23 02:51:56
+Attachment [trac_6387.patch](tarball://root/attachments/some-uuid/ticket6387/trac_6387.patch) by @roed314 created at 2009-06-23 02:51:56
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_051143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6387#issuecomment-51143",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_051144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6387#issuecomment-51144",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

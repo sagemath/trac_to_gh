@@ -14,7 +14,7 @@ archive/issues_009587.json:
     "title": "Conference Scheduler",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9587",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 Assignee: jason, jkantor
@@ -37,7 +37,7 @@ archive/issue_comments_092707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9587#issuecomment-92707",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -50,13 +50,13 @@ Changing status from new to needs_work.
 archive/issue_comments_092708.json:
 ```json
 {
-    "body": "Attachment [9587-conferencescheduler.patch](tarball://root/attachments/some-uuid/ticket9587/9587-conferencescheduler.patch) by schilly created at 2010-07-27 11:38:51",
+    "body": "Attachment [9587-conferencescheduler.patch](tarball://root/attachments/some-uuid/ticket9587/9587-conferencescheduler.patch) by @haraldschilly created at 2010-07-27 11:38:51",
     "created_at": "2010-07-27T11:38:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9587#issuecomment-92708",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
-Attachment [9587-conferencescheduler.patch](tarball://root/attachments/some-uuid/ticket9587/9587-conferencescheduler.patch) by schilly created at 2010-07-27 11:38:51
+Attachment [9587-conferencescheduler.patch](tarball://root/attachments/some-uuid/ticket9587/9587-conferencescheduler.patch) by @haraldschilly created at 2010-07-27 11:38:51

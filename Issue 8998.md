@@ -3,7 +3,7 @@
 archive/issues_008998.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nTicket  #5822 implemented the action of Galois on cusps.  I think the algorithm was only designed to work for Gamma_0(N).  However, the code runs for other groups, and doesn't raise an error.  Unfortunately, it gives completely wrong results in some cases, e.g., \n\n```\nsage: G = Gamma1(19)\nsage: rational_cusps = [c for c in G.cusps() if c.galois_action(2,19).is_gamma1_equiv(c,19)]\nsage: rational_cusps\n[0, 2/19, 1/9, 1/8, 1/7, 3/19, 1/6, 1/5, 4/19, 1/4, 5/19, 6/19, 1/3,\n7/19, 8/19, 9/19, 1/2, Infinity]\n```\n\n\nHowever, exactly half the cusps are rational (see, e.g., my paper http://wstein.org/papers/j1p/ or the work of Kubert-Lang).  \n\nThis came up in research that Michael Stoll and I were doing, and it was temporarily very confusing. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8998\n\n",
+    "body": "Assignee: @craigcitro\n\nTicket  #5822 implemented the action of Galois on cusps.  I think the algorithm was only designed to work for Gamma_0(N).  However, the code runs for other groups, and doesn't raise an error.  Unfortunately, it gives completely wrong results in some cases, e.g., \n\n```\nsage: G = Gamma1(19)\nsage: rational_cusps = [c for c in G.cusps() if c.galois_action(2,19).is_gamma1_equiv(c,19)]\nsage: rational_cusps\n[0, 2/19, 1/9, 1/8, 1/7, 3/19, 1/6, 1/5, 4/19, 1/4, 5/19, 6/19, 1/3,\n7/19, 8/19, 9/19, 1/2, Infinity]\n```\n\n\nHowever, exactly half the cusps are rational (see, e.g., my paper http://wstein.org/papers/j1p/ or the work of Kubert-Lang).  \n\nThis came up in research that Michael Stoll and I were doing, and it was temporarily very confusing. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8998\n\n",
     "created_at": "2010-05-20T05:29:16Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_008998.json:
     "title": "galois_action on cusps has a bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8998",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 Ticket  #5822 implemented the action of Galois on cusps.  I think the algorithm was only designed to work for Gamma_0(N).  However, the code runs for other groups, and doesn't raise an error.  Unfortunately, it gives completely wrong results in some cases, e.g., 
 
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8998
 archive/issue_comments_083210.json:
 ```json
 {
-    "body": "Attachment [trac_8998.patch](tarball://root/attachments/some-uuid/ticket8998/trac_8998.patch) by was created at 2011-03-22 00:59:48\n\nIt turns out that cusps (P^1(Q)) don't know their group of course. This function is thus somewhat badly named.  A minimal invasive change without breaking backwards compatibility is to clarify the *documentation* and do nothing else.  I think that is enough to close this ticket, though I may want to make another ticket later to add other actions, etc.   But for now, it is certainly a big improvement to at least fix a major incorrect statement in the documentation!     This patch is pretty safe, since it *only* changes documentation.",
+    "body": "Attachment [trac_8998.patch](tarball://root/attachments/some-uuid/ticket8998/trac_8998.patch) by @williamstein created at 2011-03-22 00:59:48\n\nIt turns out that cusps (P^1(Q)) don't know their group of course. This function is thus somewhat badly named.  A minimal invasive change without breaking backwards compatibility is to clarify the *documentation* and do nothing else.  I think that is enough to close this ticket, though I may want to make another ticket later to add other actions, etc.   But for now, it is certainly a big improvement to at least fix a major incorrect statement in the documentation!     This patch is pretty safe, since it *only* changes documentation.",
     "created_at": "2011-03-22T00:59:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8998#issuecomment-83210",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_8998.patch](tarball://root/attachments/some-uuid/ticket8998/trac_8998.patch) by was created at 2011-03-22 00:59:48
+Attachment [trac_8998.patch](tarball://root/attachments/some-uuid/ticket8998/trac_8998.patch) by @williamstein created at 2011-03-22 00:59:48
 
 It turns out that cusps (P^1(Q)) don't know their group of course. This function is thus somewhat badly named.  A minimal invasive change without breaking backwards compatibility is to clarify the *documentation* and do nothing else.  I think that is enough to close this ticket, though I may want to make another ticket later to add other actions, etc.   But for now, it is certainly a big improvement to at least fix a major incorrect statement in the documentation!     This patch is pretty safe, since it *only* changes documentation.
 
@@ -70,7 +70,7 @@ archive/issue_comments_083211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8998#issuecomment-83211",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_083212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8998#issuecomment-83212",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_083213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8998#issuecomment-83213",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_083214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8998#issuecomment-83214",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_083215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8998#issuecomment-83215",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_083216.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8998#issuecomment-83216",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_083217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8998#issuecomment-83217",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_083218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8998#issuecomment-83218",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006296.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n\n\nOn Wed, Jun 10, 2009 at 6:03 PM, Yann<yannlaiglechapuy@gmail.com> wrote:\n>\n> ----------------------------------------------------------------------\n> | Sage Version 4.0.1, Release Date: 2009-06-06                       |\n> | Type notebook() for the GUI, and license() for information.        |\n> ----------------------------------------------------------------------\n> sage: A=matrix(GF(3),2,[0,0,1,2])\n> sage: R.<x>=GF(3)[]\n> sage: D={ x:0 , x+1:0 , x^2+x:0 }\n> sage: for i in range(100000):\n> ....:         D[A._minpoly_linbox()]+=1\n> ....:\n> sage: D\n> {x: 38266, x + 1: 29397, x^2 + x: 32337}\n>\n\n\nYou're absolutely right!  This *sucks* -- it seems like nothing we have ever wrapped in Linbox is right at first.  Hopefully the issue is that somehow the algorithm is only supposed to be probabilistic, and we're just misusing it in sage (quite possible). \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6296\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n\n\nOn Wed, Jun 10, 2009 at 6:03 PM, Yann<yannlaiglechapuy@gmail.com> wrote:\n>\n> ----------------------------------------------------------------------\n> | Sage Version 4.0.1, Release Date: 2009-06-06                       |\n> | Type notebook() for the GUI, and license() for information.        |\n> ----------------------------------------------------------------------\n> sage: A=matrix(GF(3),2,[0,0,1,2])\n> sage: R.<x>=GF(3)[]\n> sage: D={ x:0 , x+1:0 , x^2+x:0 }\n> sage: for i in range(100000):\n> ....:         D[A._minpoly_linbox()]+=1\n> ....:\n> sage: D\n> {x: 38266, x + 1: 29397, x^2 + x: 32337}\n>\n\n\nYou're absolutely right!  This *sucks* -- it seems like nothing we have ever wrapped in Linbox is right at first.  Hopefully the issue is that somehow the algorithm is only supposed to be probabilistic, and we're just misusing it in sage (quite possible). \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6296\n\n",
     "created_at": "2009-06-15T10:51:54Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_006296.json:
     "title": "linbox minpoly over small finite fields is TOTALLY BROKEN",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6296",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -60,7 +60,7 @@ archive/issue_comments_050238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6296#issuecomment-50238",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_050239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6296#issuecomment-50239",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -157,16 +157,16 @@ Changing status from new to needs_review.
 archive/issue_comments_050240.json:
 ```json
 {
-    "body": "Attachment [trac_6296.patch](tarball://root/attachments/some-uuid/ticket6296/trac_6296.patch) by was created at 2010-01-17 13:14:14",
+    "body": "Attachment [trac_6296.patch](tarball://root/attachments/some-uuid/ticket6296/trac_6296.patch) by @williamstein created at 2010-01-17 13:14:14",
     "created_at": "2010-01-17T13:14:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6296#issuecomment-50240",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6296.patch](tarball://root/attachments/some-uuid/ticket6296/trac_6296.patch) by was created at 2010-01-17 13:14:14
+Attachment [trac_6296.patch](tarball://root/attachments/some-uuid/ticket6296/trac_6296.patch) by @williamstein created at 2010-01-17 13:14:14
 
 
 
@@ -199,16 +199,16 @@ Yann
 archive/issue_comments_050242.json:
 ```json
 {
-    "body": "Attachment [trac_6296-part2.patch](tarball://root/attachments/some-uuid/ticket6296/trac_6296-part2.patch) by was created at 2010-02-07 07:12:01\n\nthis is part 2",
+    "body": "Attachment [trac_6296-part2.patch](tarball://root/attachments/some-uuid/ticket6296/trac_6296-part2.patch) by @williamstein created at 2010-02-07 07:12:01\n\nthis is part 2",
     "created_at": "2010-02-07T07:12:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6296#issuecomment-50242",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6296-part2.patch](tarball://root/attachments/some-uuid/ticket6296/trac_6296-part2.patch) by was created at 2010-02-07 07:12:01
+Attachment [trac_6296-part2.patch](tarball://root/attachments/some-uuid/ticket6296/trac_6296-part2.patch) by @williamstein created at 2010-02-07 07:12:01
 
 this is part 2
 
@@ -264,7 +264,7 @@ archive/issue_comments_050245.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6296#issuecomment-50245",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_050246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6296#issuecomment-50246",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

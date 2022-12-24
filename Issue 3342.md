@@ -3,7 +3,7 @@
 archive/issues_003342.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  ddrake\n\nI observed the following in sage-3.0.2 on both Linux and OS X.\nNote the very bizarre output of x.is_zero??\n\n\n```\nsage: R.<x,y> = QQ[]; S.<x,y> = Frac(R)\nsage: x.is_zero??\nType:\t\tbuiltin_function_or_method\nBase Class:\t<type 'builtin_function_or_method'>\nString Form:\t<built-in method is_zero of FractionFieldElement object at 0x2afd954b16e0>\nNamespace:\tInteractive\nSource:\n    def is_zero(self):\n        \"\"\"\n        Return True if self equals self.parent()(0). The default\n        implementation is to fall back to 'not self.__nonzero__'.\n\n        NOTE: Do not re-implement this method in your subclass but\n        implement __nonzero__ instead.\n        \"\"\"\n        return not selfClass Docstring:\n    <attribute '__doc__' of 'builtin_function_or_method' objects>\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3342\n\n",
+    "body": "Assignee: tba\n\nCC:  @dandrake\n\nI observed the following in sage-3.0.2 on both Linux and OS X.\nNote the very bizarre output of x.is_zero??\n\n\n```\nsage: R.<x,y> = QQ[]; S.<x,y> = Frac(R)\nsage: x.is_zero??\nType:\t\tbuiltin_function_or_method\nBase Class:\t<type 'builtin_function_or_method'>\nString Form:\t<built-in method is_zero of FractionFieldElement object at 0x2afd954b16e0>\nNamespace:\tInteractive\nSource:\n    def is_zero(self):\n        \"\"\"\n        Return True if self equals self.parent()(0). The default\n        implementation is to fall back to 'not self.__nonzero__'.\n\n        NOTE: Do not re-implement this method in your subclass but\n        implement __nonzero__ instead.\n        \"\"\"\n        return not selfClass Docstring:\n    <attribute '__doc__' of 'builtin_function_or_method' objects>\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3342\n\n",
     "created_at": "2008-05-31T17:44:28Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_003342.json:
     "title": "bizarre source code introspection output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3342",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
 
-CC:  ddrake
+CC:  @dandrake
 
 I observed the following in sage-3.0.2 on both Linux and OS X.
 Note the very bizarre output of x.is_zero??
@@ -63,7 +63,7 @@ archive/issue_comments_023205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3342#issuecomment-23205",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_023206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3342#issuecomment-23206",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_023207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3342#issuecomment-23207",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_023208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3342#issuecomment-23208",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_023209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3342#issuecomment-23209",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_023210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3342#issuecomment-23210",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_023211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3342#issuecomment-23211",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -227,16 +227,16 @@ I added a patch that adds the extra check I mentioned to `sage_getdoc`. It seems
 archive/issue_comments_023212.json:
 ```json
 {
-    "body": "Attachment [trac_3342_builtin_introspection.patch](tarball://root/attachments/some-uuid/ticket3342/trac_3342_builtin_introspection.patch) by wjp created at 2010-07-09 20:26:21",
+    "body": "Attachment [trac_3342_builtin_introspection.patch](tarball://root/attachments/some-uuid/ticket3342/trac_3342_builtin_introspection.patch) by @wjp created at 2010-07-09 20:26:21",
     "created_at": "2010-07-09T20:26:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3342#issuecomment-23212",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [trac_3342_builtin_introspection.patch](tarball://root/attachments/some-uuid/ticket3342/trac_3342_builtin_introspection.patch) by wjp created at 2010-07-09 20:26:21
+Attachment [trac_3342_builtin_introspection.patch](tarball://root/attachments/some-uuid/ticket3342/trac_3342_builtin_introspection.patch) by @wjp created at 2010-07-09 20:26:21
 
 
 
@@ -250,7 +250,7 @@ archive/issue_comments_023213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3342#issuecomment-23213",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_023214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3342#issuecomment-23214",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_023215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3342#issuecomment-23215",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -299,16 +299,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_023216.json:
 ```json
 {
-    "body": "Attachment [sagenb_3342_builtin_introspection.patch](tarball://root/attachments/some-uuid/ticket3342/sagenb_3342_builtin_introspection.patch) by jhpalmieri created at 2010-07-10 02:53:34\n\nIt looks okay and seems to behave well.  For some reason, I only see the original problem from the command line, not the notebook, so the sagenb patch may not strictly be needed; however, I think the two sageinspect files are supposed to synchronized as much as possible.\n\nI didn't know about `types.StringTypes` before; that looks useful.",
+    "body": "Attachment [sagenb_3342_builtin_introspection.patch](tarball://root/attachments/some-uuid/ticket3342/sagenb_3342_builtin_introspection.patch) by @jhpalmieri created at 2010-07-10 02:53:34\n\nIt looks okay and seems to behave well.  For some reason, I only see the original problem from the command line, not the notebook, so the sagenb patch may not strictly be needed; however, I think the two sageinspect files are supposed to synchronized as much as possible.\n\nI didn't know about `types.StringTypes` before; that looks useful.",
     "created_at": "2010-07-10T02:53:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3342#issuecomment-23216",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [sagenb_3342_builtin_introspection.patch](tarball://root/attachments/some-uuid/ticket3342/sagenb_3342_builtin_introspection.patch) by jhpalmieri created at 2010-07-10 02:53:34
+Attachment [sagenb_3342_builtin_introspection.patch](tarball://root/attachments/some-uuid/ticket3342/sagenb_3342_builtin_introspection.patch) by @jhpalmieri created at 2010-07-10 02:53:34
 
 It looks okay and seems to behave well.  For some reason, I only see the original problem from the command line, not the notebook, so the sagenb patch may not strictly be needed; however, I think the two sageinspect files are supposed to synchronized as much as possible.
 
@@ -326,7 +326,7 @@ archive/issue_comments_023217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3342#issuecomment-23217",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -344,7 +344,7 @@ archive/issue_comments_023218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3342#issuecomment-23218",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_023219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3342#issuecomment-23219",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 

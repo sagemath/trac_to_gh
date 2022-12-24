@@ -14,7 +14,7 @@ archive/issues_002889.json:
     "title": "notebook -- huge output cells crash firefox",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2889",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2889
 archive/issue_comments_019865.json:
 ```json
 {
-    "body": "Attachment [sage-2889.patch](tarball://root/attachments/some-uuid/ticket2889/sage-2889.patch) by was created at 2008-04-12 03:25:21",
+    "body": "Attachment [sage-2889.patch](tarball://root/attachments/some-uuid/ticket2889/sage-2889.patch) by @williamstein created at 2008-04-12 03:25:21",
     "created_at": "2008-04-12T03:25:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2889#issuecomment-19865",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2889.patch](tarball://root/attachments/some-uuid/ticket2889/sage-2889.patch) by was created at 2008-04-12 03:25:21
+Attachment [sage-2889.patch](tarball://root/attachments/some-uuid/ticket2889/sage-2889.patch) by @williamstein created at 2008-04-12 03:25:21
 
 
 

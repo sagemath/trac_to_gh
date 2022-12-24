@@ -3,7 +3,7 @@
 archive/issues_006891.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  jason\n\nKeywords: spike_function\n\nThere was nearly no documentation, and no doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6891\n\n",
+    "body": "Assignee: tba\n\nCC:  @jasongrout\n\nKeywords: spike_function\n\nThere was nearly no documentation, and no doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6891\n\n",
     "created_at": "2009-09-04T20:59:54Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_006891.json:
     "title": "Bring functions.spike_functions.py to 100% coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6891",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: tba
 
-CC:  jason
+CC:  @jasongrout
 
 Keywords: spike_function
 
@@ -41,7 +41,7 @@ archive/issue_comments_056937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6891#issuecomment-56937",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -54,16 +54,16 @@ Based on 4.1.1
 archive/issue_comments_056938.json:
 ```json
 {
-    "body": "Attachment [trac_6891-spike-function.patch](tarball://root/attachments/some-uuid/ticket6891/trac_6891-spike-function.patch) by kcrisman created at 2009-09-04 21:04:00",
+    "body": "Attachment [trac_6891-spike-function.patch](tarball://root/attachments/some-uuid/ticket6891/trac_6891-spike-function.patch) by @kcrisman created at 2009-09-04 21:04:00",
     "created_at": "2009-09-04T21:04:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6891#issuecomment-56938",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6891-spike-function.patch](tarball://root/attachments/some-uuid/ticket6891/trac_6891-spike-function.patch) by kcrisman created at 2009-09-04 21:04:00
+Attachment [trac_6891-spike-function.patch](tarball://root/attachments/some-uuid/ticket6891/trac_6891-spike-function.patch) by @kcrisman created at 2009-09-04 21:04:00
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_056939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6891#issuecomment-56939",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_056940.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6891#issuecomment-56940",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

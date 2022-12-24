@@ -3,7 +3,7 @@
 archive/issues_006205.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  craigcitro fwclarke\n\nKeywords: number field morphism invert\n\nThis tiny patch does the linear algebra to invert an endomorphism of a number field.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6205\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  craigcitro fwclarke\n\nKeywords: number field morphism invert\n\nThis tiny patch does the linear algebra to invert an endomorphism of a number field.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6205\n\n",
     "created_at": "2009-06-04T03:42:36Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_006205.json:
     "title": "add __invert__ to number field morphism",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6205",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  craigcitro fwclarke
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6205
 archive/issue_comments_049575.json:
 ```json
 {
-    "body": "Attachment [trac_6205-number_field-morphism-invert.patch](tarball://root/attachments/some-uuid/ticket6205/trac_6205-number_field-morphism-invert.patch) by mhansen created at 2009-06-04 05:35:23",
+    "body": "Attachment [trac_6205-number_field-morphism-invert.patch](tarball://root/attachments/some-uuid/ticket6205/trac_6205-number_field-morphism-invert.patch) by @mwhansen created at 2009-06-04 05:35:23",
     "created_at": "2009-06-04T05:35:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6205",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6205#issuecomment-49575",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6205-number_field-morphism-invert.patch](tarball://root/attachments/some-uuid/ticket6205/trac_6205-number_field-morphism-invert.patch) by mhansen created at 2009-06-04 05:35:23
+Attachment [trac_6205-number_field-morphism-invert.patch](tarball://root/attachments/some-uuid/ticket6205/trac_6205-number_field-morphism-invert.patch) by @mwhansen created at 2009-06-04 05:35:23
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_049576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6205",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6205#issuecomment-49576",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_049577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6205",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6205#issuecomment-49577",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

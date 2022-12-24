@@ -3,7 +3,7 @@
 archive/issues_009457.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  simonking wuthrich\n\nComparison of power series uses list instead of padded_list; this means that power series equality can fail:\n\n\n```\nsage: A.<t> = PowerSeriesRing(ZZ)\nsage: g = t + t^3 + t^5 + O(t^6); g\nt + t^3 + O(t^6)\nsage: [g == g.add_bigoh(i) for i in range(7)]\n[True, True, False, False, True, False, True] # should be all true\nsage: g.add_bigoh(3).list()\n[1]\nsage: g.add_bigoh(3).padded_list()\n[1, 0, 0]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9457\n\n",
+    "body": "Assignee: @malb\n\nCC:  simonking @categorie\n\nComparison of power series uses list instead of padded_list; this means that power series equality can fail:\n\n\n```\nsage: A.<t> = PowerSeriesRing(ZZ)\nsage: g = t + t^3 + t^5 + O(t^6); g\nt + t^3 + O(t^6)\nsage: [g == g.add_bigoh(i) for i in range(7)]\n[True, True, False, False, True, False, True] # should be all true\nsage: g.add_bigoh(3).list()\n[1]\nsage: g.add_bigoh(3).padded_list()\n[1, 0, 0]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9457\n\n",
     "created_at": "2010-07-08T15:35:20Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_009457.json:
     "title": "power series comparison should use padded_list",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9457",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  simonking wuthrich
+CC:  simonking @categorie
 
 Comparison of power series uses list instead of padded_list; this means that power series equality can fail:
 
@@ -53,7 +53,7 @@ archive/issue_comments_090634.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90634",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -66,16 +66,16 @@ Changing status from new to needs_review.
 archive/issue_comments_090635.json:
 ```json
 {
-    "body": "Attachment [trac_9457_power_series_eq.patch](tarball://root/attachments/some-uuid/ticket9457/trac_9457_power_series_eq.patch) by niles created at 2010-07-08 19:20:15\n\nchange list to padded_list in _richcmp_c_impl",
+    "body": "Attachment [trac_9457_power_series_eq.patch](tarball://root/attachments/some-uuid/ticket9457/trac_9457_power_series_eq.patch) by @nilesjohnson created at 2010-07-08 19:20:15\n\nchange list to padded_list in _richcmp_c_impl",
     "created_at": "2010-07-08T19:20:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90635",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
-Attachment [trac_9457_power_series_eq.patch](tarball://root/attachments/some-uuid/ticket9457/trac_9457_power_series_eq.patch) by niles created at 2010-07-08 19:20:15
+Attachment [trac_9457_power_series_eq.patch](tarball://root/attachments/some-uuid/ticket9457/trac_9457_power_series_eq.patch) by @nilesjohnson created at 2010-07-08 19:20:15
 
 change list to padded_list in _richcmp_c_impl
 
@@ -91,7 +91,7 @@ archive/issue_comments_090636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90636",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_090637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90637",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_090638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90638",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_090639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90639",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -203,16 +203,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_090640.json:
 ```json
 {
-    "body": "Attachment [trac_9457_power_series_eq_doctests.patch](tarball://root/attachments/some-uuid/ticket9457/trac_9457_power_series_eq_doctests.patch) by SimonKing created at 2010-07-30 16:59:31\n\nHi!\n\nThe patches cleanly apply, and `sage -b` works.\n\nThe original problem is fixed:\n\n```\nsage: A.<t> = PowerSeriesRing(ZZ)\nsage: g = t + t^3 + t^5 + O(t^6); g\nt + t^3 + t^5 + O(t^6)\nsage:\nsage: [g == g.add_bigoh(i) for i in range(7)]\n[True, True, True, True, True, True, True]\n```\n\n\nThe code looks good to me. I am now running doctests.\n\nOne minor problem: Please mention the ticket number in the commit messages. So, please add something like \"#9457: \" to the commit messages of both patches",
+    "body": "Attachment [trac_9457_power_series_eq_doctests.patch](tarball://root/attachments/some-uuid/ticket9457/trac_9457_power_series_eq_doctests.patch) by @simon-king-jena created at 2010-07-30 16:59:31\n\nHi!\n\nThe patches cleanly apply, and `sage -b` works.\n\nThe original problem is fixed:\n\n```\nsage: A.<t> = PowerSeriesRing(ZZ)\nsage: g = t + t^3 + t^5 + O(t^6); g\nt + t^3 + t^5 + O(t^6)\nsage:\nsage: [g == g.add_bigoh(i) for i in range(7)]\n[True, True, True, True, True, True, True]\n```\n\n\nThe code looks good to me. I am now running doctests.\n\nOne minor problem: Please mention the ticket number in the commit messages. So, please add something like \"#9457: \" to the commit messages of both patches",
     "created_at": "2010-07-30T16:59:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90640",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [trac_9457_power_series_eq_doctests.patch](tarball://root/attachments/some-uuid/ticket9457/trac_9457_power_series_eq_doctests.patch) by SimonKing created at 2010-07-30 16:59:31
+Attachment [trac_9457_power_series_eq_doctests.patch](tarball://root/attachments/some-uuid/ticket9457/trac_9457_power_series_eq_doctests.patch) by @simon-king-jena created at 2010-07-30 16:59:31
 
 Hi!
 
@@ -246,7 +246,7 @@ archive/issue_comments_090641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90641",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_090642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90642",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -335,7 +335,7 @@ archive/issue_comments_090643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90643",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -442,7 +442,7 @@ archive/issue_comments_090644.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90644",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -473,7 +473,7 @@ archive/issue_comments_090645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90645",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -496,7 +496,7 @@ archive/issue_comments_090646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90646",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -633,7 +633,7 @@ archive/issue_comments_090647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90647",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -690,7 +690,7 @@ archive/issue_comments_090648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90648",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -703,16 +703,16 @@ A bug in p-adic vectors related to the problems here was noticed and filed at #8
 archive/issue_comments_090649.json:
 ```json
 {
-    "body": "Attachment [trac_9457_power_series_eq_rebase.patch](tarball://root/attachments/some-uuid/ticket9457/trac_9457_power_series_eq_rebase.patch) by niles created at 2012-05-03 14:52:51\n\nrebased to 5.0.rc0",
+    "body": "Attachment [trac_9457_power_series_eq_rebase.patch](tarball://root/attachments/some-uuid/ticket9457/trac_9457_power_series_eq_rebase.patch) by @nilesjohnson created at 2012-05-03 14:52:51\n\nrebased to 5.0.rc0",
     "created_at": "2012-05-03T14:52:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90649",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
-Attachment [trac_9457_power_series_eq_rebase.patch](tarball://root/attachments/some-uuid/ticket9457/trac_9457_power_series_eq_rebase.patch) by niles created at 2012-05-03 14:52:51
+Attachment [trac_9457_power_series_eq_rebase.patch](tarball://root/attachments/some-uuid/ticket9457/trac_9457_power_series_eq_rebase.patch) by @nilesjohnson created at 2012-05-03 14:52:51
 
 rebased to 5.0.rc0
 
@@ -728,7 +728,7 @@ archive/issue_comments_090650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90650",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -746,7 +746,7 @@ archive/issue_comments_090651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90651",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -766,7 +766,7 @@ archive/issue_comments_090652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90652",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -784,7 +784,7 @@ archive/issue_comments_090653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90653",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -802,7 +802,7 @@ archive/issue_comments_090654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90654",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -829,7 +829,7 @@ archive/issue_comments_090655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90655",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -847,7 +847,7 @@ archive/issue_comments_090656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90656",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -883,7 +883,7 @@ archive/issue_comments_090658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90658",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -903,7 +903,7 @@ archive/issue_comments_090659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90659",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -921,7 +921,7 @@ archive/issue_comments_090660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90660",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -939,7 +939,7 @@ archive/issue_comments_090661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90661",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -1035,7 +1035,7 @@ archive/issue_comments_090662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90662",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -1067,7 +1067,7 @@ archive/issue_comments_090663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90663",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -1123,7 +1123,7 @@ archive/issue_comments_090664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90664",
-    "user": "darij"
+    "user": "@darijgr"
 }
 ```
 
@@ -1141,7 +1141,7 @@ archive/issue_comments_090665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90665",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -1159,7 +1159,7 @@ archive/issue_comments_090666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90666",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -1188,7 +1188,7 @@ archive/issue_comments_090667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90667",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -1208,7 +1208,7 @@ archive/issue_comments_090668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90668",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -1226,7 +1226,7 @@ archive/issue_comments_090669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90669",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -1246,7 +1246,7 @@ archive/issue_comments_090670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90670",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -1266,7 +1266,7 @@ archive/issue_comments_090671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90671",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -1284,7 +1284,7 @@ archive/issue_comments_090672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90672",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -1304,7 +1304,7 @@ archive/issue_comments_090673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90673",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -1322,7 +1322,7 @@ archive/issue_comments_090674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90674",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -1340,7 +1340,7 @@ archive/issue_comments_090675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90675",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -1380,7 +1380,7 @@ archive/issue_comments_090676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90676",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009108.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  simonking cremona\n\nKeywords: time-out, doctest, symmetric ideal, symmetric_ideal\n\nTwo doctests/examples in `sage/rings/polynomial/symmetric_ideal.py` tend to time out on older/slower machines (and take a large amount of the overall test time of that module).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9108\n\n",
+    "body": "Assignee: @malb\n\nCC:  simonking @JohnCremona\n\nKeywords: time-out, doctest, symmetric ideal, symmetric_ideal\n\nTwo doctests/examples in `sage/rings/polynomial/symmetric_ideal.py` tend to time out on older/slower machines (and take a large amount of the overall test time of that module).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9108\n\n",
     "created_at": "2010-06-01T15:16:01Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_009108.json:
     "title": "Mark long doctests in rings/polynomial/symmetric_ideal",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9108",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  simonking cremona
+CC:  simonking @JohnCremona
 
 Keywords: time-out, doctest, symmetric ideal, symmetric_ideal
 
@@ -41,7 +41,7 @@ archive/issue_comments_084711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9108",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84711",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -60,7 +60,7 @@ archive/issue_comments_084712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9108",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84712",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -73,16 +73,16 @@ Marks the offending lines with `# long time`. Based on 4.4.3.alpha0.
 archive/issue_comments_084713.json:
 ```json
 {
-    "body": "Attachment [trac_9108-mark_long_doctests_in_symmetric_ideal.patch](tarball://root/attachments/some-uuid/ticket9108/trac_9108-mark_long_doctests_in_symmetric_ideal.patch) by leif created at 2010-06-01 15:23:32\n\nSimon, you're too fast... ;-)\n\nI've just uploaded a patch that reduces the module test time on a Pentium 4 (Prescott, 3.2 GHz) from 238.7 seconds to 33.1 seconds.",
+    "body": "Attachment [trac_9108-mark_long_doctests_in_symmetric_ideal.patch](tarball://root/attachments/some-uuid/ticket9108/trac_9108-mark_long_doctests_in_symmetric_ideal.patch) by @nexttime created at 2010-06-01 15:23:32\n\nSimon, you're too fast... ;-)\n\nI've just uploaded a patch that reduces the module test time on a Pentium 4 (Prescott, 3.2 GHz) from 238.7 seconds to 33.1 seconds.",
     "created_at": "2010-06-01T15:23:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9108",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84713",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_9108-mark_long_doctests_in_symmetric_ideal.patch](tarball://root/attachments/some-uuid/ticket9108/trac_9108-mark_long_doctests_in_symmetric_ideal.patch) by leif created at 2010-06-01 15:23:32
+Attachment [trac_9108-mark_long_doctests_in_symmetric_ideal.patch](tarball://root/attachments/some-uuid/ticket9108/trac_9108-mark_long_doctests_in_symmetric_ideal.patch) by @nexttime created at 2010-06-01 15:23:32
 
 Simon, you're too fast... ;-)
 
@@ -100,7 +100,7 @@ archive/issue_comments_084714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9108",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84714",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_084715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9108",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84715",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_084716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9108",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84716",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_084717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9108",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84717",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_084718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9108",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84718",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_084719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9108",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84719",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_084720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9108",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84720",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -316,7 +316,7 @@ archive/issue_comments_084721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9108",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84721",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -351,7 +351,7 @@ archive/issue_comments_084722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9108",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84722",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -379,7 +379,7 @@ archive/issue_comments_084723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9108",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84723",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -397,7 +397,7 @@ archive/issue_comments_084724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9108",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84724",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -417,7 +417,7 @@ archive/issue_comments_084725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9108",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84725",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

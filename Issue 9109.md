@@ -14,7 +14,7 @@ archive/issues_009109.json:
     "title": "Fast cython class for maps between finite sets.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9109",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 Assignee: sage-combinat
@@ -41,7 +41,7 @@ archive/issue_comments_084726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9109#issuecomment-84726",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_084727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9109#issuecomment-84727",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -72,16 +72,16 @@ I just uploaded a new version after some changes in #8702
 archive/issue_comments_084728.json:
 ```json
 {
-    "body": "Changing assignee from sage-combinat to hivert.",
+    "body": "Changing assignee from sage-combinat to @hivert.",
     "created_at": "2010-10-24T09:48:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9109#issuecomment-84728",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Changing assignee from sage-combinat to hivert.
+Changing assignee from sage-combinat to @hivert.
 
 
 
@@ -90,16 +90,16 @@ Changing assignee from sage-combinat to hivert.
 archive/issue_comments_084729.json:
 ```json
 {
-    "body": "Attachment [trac_9109-finite_set_maps-fh.2.patch](tarball://root/attachments/some-uuid/ticket9109/trac_9109-finite_set_maps-fh.2.patch) by hivert created at 2010-10-24 09:48:33",
+    "body": "Attachment [trac_9109-finite_set_maps-fh.2.patch](tarball://root/attachments/some-uuid/ticket9109/trac_9109-finite_set_maps-fh.2.patch) by @hivert created at 2010-10-24 09:48:33",
     "created_at": "2010-10-24T09:48:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9109#issuecomment-84729",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_9109-finite_set_maps-fh.2.patch](tarball://root/attachments/some-uuid/ticket9109/trac_9109-finite_set_maps-fh.2.patch) by hivert created at 2010-10-24 09:48:33
+Attachment [trac_9109-finite_set_maps-fh.2.patch](tarball://root/attachments/some-uuid/ticket9109/trac_9109-finite_set_maps-fh.2.patch) by @hivert created at 2010-10-24 09:48:33
 
 
 
@@ -113,7 +113,7 @@ archive/issue_comments_084730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9109#issuecomment-84730",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_084731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9109#issuecomment-84731",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_084732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9109#issuecomment-84732",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_084733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9109#issuecomment-84733",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_084734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9109#issuecomment-84734",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_084735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9109#issuecomment-84735",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_084736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9109#issuecomment-84736",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -263,16 +263,16 @@ job to set the positive review :-)
 archive/issue_comments_084737.json:
 ```json
 {
-    "body": "Attachment [trac_9109-finite_set_maps-fh.patch](tarball://root/attachments/some-uuid/ticket9109/trac_9109-finite_set_maps-fh.patch) by nthiery created at 2011-04-05 21:38:53",
+    "body": "Attachment [trac_9109-finite_set_maps-fh.patch](tarball://root/attachments/some-uuid/ticket9109/trac_9109-finite_set_maps-fh.patch) by @nthiery created at 2011-04-05 21:38:53",
     "created_at": "2011-04-05T21:38:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9109#issuecomment-84737",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_9109-finite_set_maps-fh.patch](tarball://root/attachments/some-uuid/ticket9109/trac_9109-finite_set_maps-fh.patch) by nthiery created at 2011-04-05 21:38:53
+Attachment [trac_9109-finite_set_maps-fh.patch](tarball://root/attachments/some-uuid/ticket9109/trac_9109-finite_set_maps-fh.patch) by @nthiery created at 2011-04-05 21:38:53
 
 
 
@@ -286,7 +286,7 @@ archive/issue_comments_084738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9109#issuecomment-84738",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_084739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9109#issuecomment-84739",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

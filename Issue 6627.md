@@ -3,7 +3,7 @@
 archive/issues_006627.json:
 ```json
 {
-    "body": "Assignee: saliola\n\nCC:  slabbe\n\nThe last 1 in the word disappeared:\n\n```\nsage: Word([1,2,1,3,1,2,1]).lyndon_factorization()\n(1213.12)\n```\n\n\nLyndon factorization of the empty word should work.\n\n```\nsage: Words('01')('').lyndon_factorization()\nTraceback (most recent call last):\n...\nStopIteration\n```\n\n\nThe standard factorization of 321 is 32.1.\n\n```\nsage: sage: Word([3,2,1]).standard_factorization()\n(321.)\n```\n \n\nThe standard factorization of the empty word should return the empty word, and not two copies of the empty word. \n\n```\nsage: Words('123')('').standard_factorization()\n(.)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6627\n\n",
+    "body": "Assignee: @saliola\n\nCC:  @seblabbe\n\nThe last 1 in the word disappeared:\n\n```\nsage: Word([1,2,1,3,1,2,1]).lyndon_factorization()\n(1213.12)\n```\n\n\nLyndon factorization of the empty word should work.\n\n```\nsage: Words('01')('').lyndon_factorization()\nTraceback (most recent call last):\n...\nStopIteration\n```\n\n\nThe standard factorization of 321 is 32.1.\n\n```\nsage: sage: Word([3,2,1]).standard_factorization()\n(321.)\n```\n \n\nThe standard factorization of the empty word should return the empty word, and not two copies of the empty word. \n\n```\nsage: Words('123')('').standard_factorization()\n(.)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6627\n\n",
     "created_at": "2009-07-26T09:54:18Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_006627.json:
     "title": "lyndon and standard factorization of words is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6627",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
-Assignee: saliola
+Assignee: @saliola
 
-CC:  slabbe
+CC:  @seblabbe
 
 The last 1 in the word disappeared:
 
@@ -66,16 +66,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6627
 archive/issue_comments_054289.json:
 ```json
 {
-    "body": "Attachment [trac_6627-lyndon_words_fix.patch](tarball://root/attachments/some-uuid/ticket6627/trac_6627-lyndon_words_fix.patch) by saliola created at 2009-07-26 12:01:30\n\nbased on sage-4.1.1.alpha0",
+    "body": "Attachment [trac_6627-lyndon_words_fix.patch](tarball://root/attachments/some-uuid/ticket6627/trac_6627-lyndon_words_fix.patch) by @saliola created at 2009-07-26 12:01:30\n\nbased on sage-4.1.1.alpha0",
     "created_at": "2009-07-26T12:01:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6627",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6627#issuecomment-54289",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_6627-lyndon_words_fix.patch](tarball://root/attachments/some-uuid/ticket6627/trac_6627-lyndon_words_fix.patch) by saliola created at 2009-07-26 12:01:30
+Attachment [trac_6627-lyndon_words_fix.patch](tarball://root/attachments/some-uuid/ticket6627/trac_6627-lyndon_words_fix.patch) by @saliola created at 2009-07-26 12:01:30
 
 based on sage-4.1.1.alpha0
 
@@ -91,7 +91,7 @@ archive/issue_comments_054290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6627",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6627#issuecomment-54290",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 

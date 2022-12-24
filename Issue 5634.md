@@ -3,7 +3,7 @@
 archive/issues_005634.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  jdemeyer\n\nThis email contains a bunch of good ideas for fixing this.\n\n\n```\nMr. Stein,\n\nI was on IRC sage-devel asking about some problems installing new packages for R.  You asked if I could fix it and unfortunately I can not completely fix it, but I did learn more about the problems preventing it from working.  I was up late waiting for the Formula 1 race to start and so I had a look at some of the problems with r.install_packages().\n\n1. local/bin/R and/or local/lib/R/bin/R\n    Not sure why there are two or which gets called ... but one (or both) seem to be called a lot during R package installation.  Anyway, they are both identical and have an echo line that seems to get piped into gcc command lines causing many problems.\n\n[from local/bin/R]\n  echo \"WARNING: ignoring environment value of R_HOME\"\n\nThis may be a total kludge in the grand scheme of things, but redirecting echo's output to stderr seems to allow many packages (e.g., nortest) to be built so that they can be used.\n\n[I changed the above echo line in both files to ...]\n  echo \"WARNING: ignoring environment value of R_HOME\" 1>&2\n\n2. local/lib/R/etc/Makeconf\n    Not sure what this fixes as there is still a problem with C++ packages, but the file above has:\n\nCPPFLAGS = -I/home/rick/sage/sage-3.2.3/local/inlcude\n\nThe unfortunate character swapping is easily fixed with:\n\n CPPFLAGS = -I/home/rick/sage/sage-3.2.3/local/include\n\n3. local/lib/gcc-lib/i686-pc-linux-gnu/4.0.3/libgcc_s.so.1\n    I'm not exactly sure what the problem here is, but I believe it has to do with building C++ libraries with a gcc version that does not match.  I use Fedora 9 and my version of gcc is 4.3.1.  When, after making the changes described above in 1 and 2, I tried to build the R package Matrix (r.install_packages('Matrix')), the resulting library could not be loaded.\n\nError in dyn.load(file, ...) :\n  unable to load shared library '/home/rick/sage/sage-3.2.3/local/lib/R/library/Matrix/libs/Matrix.so':\n  /home/rick/sage/sage-3.2.3/local/lib/gcc-lib/i686-pc-linux-gnu/4.0.3/libgcc_s.so.1: version `GCC_4.2.0' not found (required by /usr/lib/libstdc++.so.6)\nError: require(Matrix) is not TRUE\nExecution halted\nERROR: installing package indices failed\n** Removing '/home/rick/sage/sage-3.2.3/local/lib/R/library/Matrix'\n\nThere are still some mysteries to be solved but I hope the above is a start.\n\nRegards,\nRichard Graham\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5634\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @jdemeyer\n\nThis email contains a bunch of good ideas for fixing this.\n\n\n```\nMr. Stein,\n\nI was on IRC sage-devel asking about some problems installing new packages for R.  You asked if I could fix it and unfortunately I can not completely fix it, but I did learn more about the problems preventing it from working.  I was up late waiting for the Formula 1 race to start and so I had a look at some of the problems with r.install_packages().\n\n1. local/bin/R and/or local/lib/R/bin/R\n    Not sure why there are two or which gets called ... but one (or both) seem to be called a lot during R package installation.  Anyway, they are both identical and have an echo line that seems to get piped into gcc command lines causing many problems.\n\n[from local/bin/R]\n  echo \"WARNING: ignoring environment value of R_HOME\"\n\nThis may be a total kludge in the grand scheme of things, but redirecting echo's output to stderr seems to allow many packages (e.g., nortest) to be built so that they can be used.\n\n[I changed the above echo line in both files to ...]\n  echo \"WARNING: ignoring environment value of R_HOME\" 1>&2\n\n2. local/lib/R/etc/Makeconf\n    Not sure what this fixes as there is still a problem with C++ packages, but the file above has:\n\nCPPFLAGS = -I/home/rick/sage/sage-3.2.3/local/inlcude\n\nThe unfortunate character swapping is easily fixed with:\n\n CPPFLAGS = -I/home/rick/sage/sage-3.2.3/local/include\n\n3. local/lib/gcc-lib/i686-pc-linux-gnu/4.0.3/libgcc_s.so.1\n    I'm not exactly sure what the problem here is, but I believe it has to do with building C++ libraries with a gcc version that does not match.  I use Fedora 9 and my version of gcc is 4.3.1.  When, after making the changes described above in 1 and 2, I tried to build the R package Matrix (r.install_packages('Matrix')), the resulting library could not be loaded.\n\nError in dyn.load(file, ...) :\n  unable to load shared library '/home/rick/sage/sage-3.2.3/local/lib/R/library/Matrix/libs/Matrix.so':\n  /home/rick/sage/sage-3.2.3/local/lib/gcc-lib/i686-pc-linux-gnu/4.0.3/libgcc_s.so.1: version `GCC_4.2.0' not found (required by /usr/lib/libstdc++.so.6)\nError: require(Matrix) is not TRUE\nExecution halted\nERROR: installing package indices failed\n** Removing '/home/rick/sage/sage-3.2.3/local/lib/R/library/Matrix'\n\nThere are still some mysteries to be solved but I hope the above is a start.\n\nRegards,\nRichard Graham\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5634\n\n",
     "created_at": "2009-03-29T18:14:38Z",
     "labels": [
         "optional packages",
@@ -14,12 +14,12 @@ archive/issues_005634.json:
     "title": "installing optional R packages is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5634",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
 
-CC:  jdemeyer
+CC:  @jdemeyer
 
 This email contains a bunch of good ideas for fixing this.
 
@@ -83,7 +83,7 @@ archive/issue_comments_044008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5634#issuecomment-44008",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_044009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5634#issuecomment-44009",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_044010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5634#issuecomment-44010",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_044011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5634#issuecomment-44011",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_044012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5634#issuecomment-44012",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_044013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5634#issuecomment-44013",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001339.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nHello,\n\nnumber of partitions is broken on Solaris/Sparc:\n\n```\nsage -t  devel/sage-main/sage/combinat/combinat.py          **********************************************************************\nFile \"combinat.py\", line 1869:\n    sage: number_of_partitions(100000)\nExpected:\n    274935105697756965126775163209863526881734293159800547582031259843021473281149641730550507416607366215901578447742962489\n4049306307020046179276449303351011607934245719015571894350972531246610845200636955893446424871682878983218234500926285383140\n4597021307130674510624419227311238999702284408609370935531629697851569569892196108480158600569421098519\nGot:\n    274935105697756965126775163209863526881734293159800547582031259843021473281149641730550507416607366215901578447742962489\n4049306307020046179276449303351011607934245719015571894350972531246610845200636955893446424871682878983218234500926285383140\n4597021307130674510624419227311238999702284408609370935531629697851569569892196108480158600582558780007\n**********************************************************************\nFile \"combinat.py\", line 1896:\n```\n\nbut also more worringly the \"small\" case:\n\n```\n**********************************************************************\nFile \"combinat.py\", line 1924:\n    sage: len([n for n in [1..500] if number_of_partitions(n) != number_of_partitions(n,algorithm='pari')])\nExpected:\n    0\nGot:\n    245\n**********************************************************************\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1339\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nHello,\n\nnumber of partitions is broken on Solaris/Sparc:\n\n```\nsage -t  devel/sage-main/sage/combinat/combinat.py          **********************************************************************\nFile \"combinat.py\", line 1869:\n    sage: number_of_partitions(100000)\nExpected:\n    274935105697756965126775163209863526881734293159800547582031259843021473281149641730550507416607366215901578447742962489\n4049306307020046179276449303351011607934245719015571894350972531246610845200636955893446424871682878983218234500926285383140\n4597021307130674510624419227311238999702284408609370935531629697851569569892196108480158600569421098519\nGot:\n    274935105697756965126775163209863526881734293159800547582031259843021473281149641730550507416607366215901578447742962489\n4049306307020046179276449303351011607934245719015571894350972531246610845200636955893446424871682878983218234500926285383140\n4597021307130674510624419227311238999702284408609370935531629697851569569892196108480158600582558780007\n**********************************************************************\nFile \"combinat.py\", line 1896:\n```\n\nbut also more worringly the \"small\" case:\n\n```\n**********************************************************************\nFile \"combinat.py\", line 1924:\n    sage: len([n for n in [1..500] if number_of_partitions(n) != number_of_partitions(n,algorithm='pari')])\nExpected:\n    0\nGot:\n    245\n**********************************************************************\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1339\n\n",
     "created_at": "2007-11-29T10:01:34Z",
     "labels": [
         "combinatorics",
@@ -17,7 +17,7 @@ archive/issues_001339.json:
     "user": "mabshoff"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -92,7 +92,7 @@ Michael
 archive/issue_comments_008588.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to mabshoff.",
+    "body": "Changing assignee from @mwhansen to mabshoff.",
     "created_at": "2008-07-29T17:42:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1339",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_008588.json:
 }
 ```
 
-Changing assignee from mhansen to mabshoff.
+Changing assignee from @mwhansen to mabshoff.
 
 
 

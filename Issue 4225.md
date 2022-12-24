@@ -14,7 +14,7 @@ archive/issues_004225.json:
     "title": "faster sqrt for complex numbers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4225",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_030704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4225#issuecomment-30704",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -102,16 +102,16 @@ I will post a patch (with more documentation) when I have a copy of sage with #4
 archive/issue_comments_030705.json:
 ```json
 {
-    "body": "Attachment [4225-complex-sqrt.patch](tarball://root/attachments/some-uuid/ticket4225/4225-complex-sqrt.patch) by robertwb created at 2008-10-03 07:45:44",
+    "body": "Attachment [4225-complex-sqrt.patch](tarball://root/attachments/some-uuid/ticket4225/4225-complex-sqrt.patch) by @robertwb created at 2008-10-03 07:45:44",
     "created_at": "2008-10-03T07:45:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4225#issuecomment-30705",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4225-complex-sqrt.patch](tarball://root/attachments/some-uuid/ticket4225/4225-complex-sqrt.patch) by robertwb created at 2008-10-03 07:45:44
+Attachment [4225-complex-sqrt.patch](tarball://root/attachments/some-uuid/ticket4225/4225-complex-sqrt.patch) by @robertwb created at 2008-10-03 07:45:44
 
 
 
@@ -125,7 +125,7 @@ archive/issue_comments_030706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4225#issuecomment-30706",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_030708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4225#issuecomment-30708",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_030710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4225#issuecomment-30710",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_030711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4225#issuecomment-30711",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -245,16 +245,16 @@ rebased against 3.1.3.alpha2
 archive/issue_comments_030712.json:
 ```json
 {
-    "body": "Attachment [4225-complex-sqrt.2.patch](tarball://root/attachments/some-uuid/ticket4225/4225-complex-sqrt.2.patch) by AlexGhitza created at 2008-10-08 06:09:15\n\nOK, I've uploaded a version rebased against 3.1.3.alpha2.\n\nFor the record, here is some timing info:\n\nbefore the patch:\n\n\n```\nsage: C = ComplexField()\nsage: z = C(1+i)\nsage: timeit(\"z.sqrt()\")\n625 loops, best of 3: 8.57 \u00b5s per loop\nsage: C = ComplexField(10000)\nsage: z = C(1+i)\nsage: timeit(\"z.sqrt()\")\n125 loops, best of 3: 6.95 ms per loop\n```\n\n\nafter the patch:\n\n\n```\nsage: C = ComplexField()\nsage: z = C(1+i)\nsage: timeit(\"z.sqrt()\")\n625 loops, best of 3: 2.27 \u00b5s per loop\nsage: C = ComplexField(10000)\nsage: z = C(1+i)\nsage: timeit(\"z.sqrt()\")\n625 loops, best of 3: 509 \u00b5s per loop\n```\n",
+    "body": "Attachment [4225-complex-sqrt.2.patch](tarball://root/attachments/some-uuid/ticket4225/4225-complex-sqrt.2.patch) by @aghitza created at 2008-10-08 06:09:15\n\nOK, I've uploaded a version rebased against 3.1.3.alpha2.\n\nFor the record, here is some timing info:\n\nbefore the patch:\n\n\n```\nsage: C = ComplexField()\nsage: z = C(1+i)\nsage: timeit(\"z.sqrt()\")\n625 loops, best of 3: 8.57 \u00b5s per loop\nsage: C = ComplexField(10000)\nsage: z = C(1+i)\nsage: timeit(\"z.sqrt()\")\n125 loops, best of 3: 6.95 ms per loop\n```\n\n\nafter the patch:\n\n\n```\nsage: C = ComplexField()\nsage: z = C(1+i)\nsage: timeit(\"z.sqrt()\")\n625 loops, best of 3: 2.27 \u00b5s per loop\nsage: C = ComplexField(10000)\nsage: z = C(1+i)\nsage: timeit(\"z.sqrt()\")\n625 loops, best of 3: 509 \u00b5s per loop\n```\n",
     "created_at": "2008-10-08T06:09:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4225#issuecomment-30712",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [4225-complex-sqrt.2.patch](tarball://root/attachments/some-uuid/ticket4225/4225-complex-sqrt.2.patch) by AlexGhitza created at 2008-10-08 06:09:15
+Attachment [4225-complex-sqrt.2.patch](tarball://root/attachments/some-uuid/ticket4225/4225-complex-sqrt.2.patch) by @aghitza created at 2008-10-08 06:09:15
 
 OK, I've uploaded a version rebased against 3.1.3.alpha2.
 
@@ -302,7 +302,7 @@ archive/issue_comments_030713.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4225#issuecomment-30713",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

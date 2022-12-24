@@ -3,7 +3,7 @@
 archive/issues_009712.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  leif malb\n\nFrom #9472:\n\n \"Since PolyBoRi also uses GD, `$SAGE_ROOT/spkg/standard/deps` should be updated (but there seem to have been no issues with that in the past).\"\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9712\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nexttime @malb\n\nFrom #9472:\n\n \"Since PolyBoRi also uses GD, `$SAGE_ROOT/spkg/standard/deps` should be updated (but there seem to have been no issues with that in the past).\"\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9712\n\n",
     "created_at": "2010-08-09T22:35:52Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_009712.json:
     "title": "Make building PolyBoRi depend on GD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9712",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 Assignee: tbd
 
-CC:  leif malb
+CC:  @nexttime @malb
 
 From #9472:
 
@@ -37,16 +37,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9712
 archive/issue_comments_094656.json:
 ```json
 {
-    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket9712/deps) by mpatel created at 2010-08-09 23:12:38\n\nUpdated `spkg/standard/deps`.  Based on 4.5.2 + #8316.",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket9712/deps) by @qed777 created at 2010-08-09 23:12:38\n\nUpdated `spkg/standard/deps`.  Based on 4.5.2 + #8316.",
     "created_at": "2010-08-09T23:12:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9712#issuecomment-94656",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [deps](tarball://root/attachments/some-uuid/ticket9712/deps) by mpatel created at 2010-08-09 23:12:38
+Attachment [deps](tarball://root/attachments/some-uuid/ticket9712/deps) by @qed777 created at 2010-08-09 23:12:38
 
 Updated `spkg/standard/deps`.  Based on 4.5.2 + #8316.
 
@@ -57,16 +57,16 @@ Updated `spkg/standard/deps`.  Based on 4.5.2 + #8316.
 archive/issue_comments_094657.json:
 ```json
 {
-    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9712/deps.diff) by mpatel created at 2010-08-09 23:13:26\n\nDiff of `spkg/standard/deps` vs. 4.5.2 + #8316.",
+    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9712/deps.diff) by @qed777 created at 2010-08-09 23:13:26\n\nDiff of `spkg/standard/deps` vs. 4.5.2 + #8316.",
     "created_at": "2010-08-09T23:13:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9712#issuecomment-94657",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9712/deps.diff) by mpatel created at 2010-08-09 23:13:26
+Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9712/deps.diff) by @qed777 created at 2010-08-09 23:13:26
 
 Diff of `spkg/standard/deps` vs. 4.5.2 + #8316.
 
@@ -82,7 +82,7 @@ archive/issue_comments_094658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9712#issuecomment-94658",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_094659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9712#issuecomment-94659",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_094660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9712#issuecomment-94660",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_094661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9712#issuecomment-94661",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_094662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9712#issuecomment-94662",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_094663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9712#issuecomment-94663",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_094664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9712#issuecomment-94664",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_094665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9712#issuecomment-94665",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005653.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  mhansen\n\nThe attached patch shouldn't affect docstrings from the command line (well, except that it should replace 'a \\times b' with 'a x b'). In the notebook, though:\n\n```\nidentity_matrix(TAB\n```\n\nshould pop open the usual docstring, but it's not in html <pre> format: see [this picture](http://sage.math.washington.edu/home/palmieri/misc/docstring.png). It's in a variable width font, with math typeset correctly -- see the $n \\times n$ in the first line of the docstring -- and with example blocks in <pre> format.\n\nThis is marked \"needs work\" for two reasons, one of which is a mystery to me:\n\n1. (the mystery) start a fresh worksheet and type\n\n```\nidentity_matrix? [SHIFT-RETURN]\n```\n\nThis will be typeset in <pre> format. Then type\n\n```\nidentity_matrix? [TAB]\n```\n\nThis is typeset nicely. I don't know what the difference is.\n\n2. Math is not handled properly.  I have a hack in place to typeset inline math (\"`... `blah` ...`\") in the docstring, but not displayed math (directive \"`.. math::`\"). This is because I'm using docutils to convert the docstring to html, and docutils doesn't know about math. I would like to use Sphinx to do the conversion (in which case more math should be handled, and there would also be some syntax highlighting), but I don't know how to use Sphinx well enough to do that.  I've posted a question to the sphinx-dev group, and if I hear anything, I'll post it here or update the ticket.\n\nPlease test out the patch, improve it, rewrite it, whatever.\n\n(By the way, Tom Boothby deserves credit for getting jsMath to process the docstring.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5653\n\n",
+    "body": "Assignee: boothby\n\nCC:  @mwhansen\n\nThe attached patch shouldn't affect docstrings from the command line (well, except that it should replace 'a \\times b' with 'a x b'). In the notebook, though:\n\n```\nidentity_matrix(TAB\n```\n\nshould pop open the usual docstring, but it's not in html <pre> format: see [this picture](http://sage.math.washington.edu/home/palmieri/misc/docstring.png). It's in a variable width font, with math typeset correctly -- see the $n \\times n$ in the first line of the docstring -- and with example blocks in <pre> format.\n\nThis is marked \"needs work\" for two reasons, one of which is a mystery to me:\n\n1. (the mystery) start a fresh worksheet and type\n\n```\nidentity_matrix? [SHIFT-RETURN]\n```\n\nThis will be typeset in <pre> format. Then type\n\n```\nidentity_matrix? [TAB]\n```\n\nThis is typeset nicely. I don't know what the difference is.\n\n2. Math is not handled properly.  I have a hack in place to typeset inline math (\"`... `blah` ...`\") in the docstring, but not displayed math (directive \"`.. math::`\"). This is because I'm using docutils to convert the docstring to html, and docutils doesn't know about math. I would like to use Sphinx to do the conversion (in which case more math should be handled, and there would also be some syntax highlighting), but I don't know how to use Sphinx well enough to do that.  I've posted a question to the sphinx-dev group, and if I hear anything, I'll post it here or update the ticket.\n\nPlease test out the patch, improve it, rewrite it, whatever.\n\n(By the way, Tom Boothby deserves credit for getting jsMath to process the docstring.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5653\n\n",
     "created_at": "2009-03-31T21:23:24Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_005653.json:
     "title": "[with patch, needs work] display docstrings in the notebook using html and jsMath",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5653",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: boothby
 
-CC:  mhansen
+CC:  @mwhansen
 
 The attached patch shouldn't affect docstrings from the command line (well, except that it should replace 'a \times b' with 'a x b'). In the notebook, though:
 
@@ -67,7 +67,7 @@ archive/issue_comments_044143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44143",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_044144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44144",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_044145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44145",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_044146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44146",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -193,16 +193,16 @@ Changing status from new to assigned.
 archive/issue_comments_044147.json:
 ```json
 {
-    "body": "Changing assignee from boothby to jhpalmieri.",
+    "body": "Changing assignee from boothby to @jhpalmieri.",
     "created_at": "2009-04-05T15:32:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44147",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Changing assignee from boothby to jhpalmieri.
+Changing assignee from boothby to @jhpalmieri.
 
 
 
@@ -216,7 +216,7 @@ archive/issue_comments_044148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44148",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_044149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44149",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_044150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44150",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_044153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44153",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -349,16 +349,16 @@ Email exchange with Evan Fosmark
 archive/issue_comments_044154.json:
 ```json
 {
-    "body": "Attachment [bsd.txt](tarball://root/attachments/some-uuid/ticket5653/bsd.txt) by mpatel created at 2009-04-16 07:25:05\n\nAttachment to Evan Fosmark's email.",
+    "body": "Attachment [bsd.txt](tarball://root/attachments/some-uuid/ticket5653/bsd.txt) by @qed777 created at 2009-04-16 07:25:05\n\nAttachment to Evan Fosmark's email.",
     "created_at": "2009-04-16T07:25:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44154",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [bsd.txt](tarball://root/attachments/some-uuid/ticket5653/bsd.txt) by mpatel created at 2009-04-16 07:25:05
+Attachment [bsd.txt](tarball://root/attachments/some-uuid/ticket5653/bsd.txt) by @qed777 created at 2009-04-16 07:25:05
 
 Attachment to Evan Fosmark's email.
 
@@ -374,7 +374,7 @@ archive/issue_comments_044155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44155",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -421,7 +421,7 @@ archive/issue_comments_044157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44157",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -457,7 +457,7 @@ archive/issue_comments_044158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44158",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -474,16 +474,16 @@ The other questions are good ones, and I don't have answers for them, but I thin
 archive/issue_comments_044159.json:
 ```json
 {
-    "body": "Attachment [docstring.4.patch](tarball://root/attachments/some-uuid/ticket5653/docstring.4.patch) by jhpalmieri created at 2009-04-21 18:54:02\n\nApply only this patch, as it's cumulative. Rebased against 3.4.1.rc4",
+    "body": "Attachment [docstring.4.patch](tarball://root/attachments/some-uuid/ticket5653/docstring.4.patch) by @jhpalmieri created at 2009-04-21 18:54:02\n\nApply only this patch, as it's cumulative. Rebased against 3.4.1.rc4",
     "created_at": "2009-04-21T18:54:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44159",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [docstring.4.patch](tarball://root/attachments/some-uuid/ticket5653/docstring.4.patch) by jhpalmieri created at 2009-04-21 18:54:02
+Attachment [docstring.4.patch](tarball://root/attachments/some-uuid/ticket5653/docstring.4.patch) by @jhpalmieri created at 2009-04-21 18:54:02
 
 Apply only this patch, as it's cumulative. Rebased against 3.4.1.rc4
 
@@ -499,7 +499,7 @@ archive/issue_comments_044160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44160",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -528,7 +528,7 @@ archive/issue_comments_044161.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44161",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -573,7 +573,7 @@ archive/issue_comments_044163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44163",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -635,7 +635,7 @@ archive/issue_comments_044165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44165",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -659,7 +659,7 @@ archive/issue_comments_044166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44166",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -672,16 +672,16 @@ Please see the comment
 archive/issue_comments_044167.json:
 ```json
 {
-    "body": "Attachment [layout.html.pop](tarball://root/attachments/some-uuid/ticket5653/layout.html.pop) by mpatel created at 2009-04-22 09:46:26\n\nI've attached a sample `doc/introspect/templates/layout.html` with \"pop out\" and \"close\" links.  When testing it, be sure clear the doc cache, since the MD5 hash is applied only to the source.\n\nNote:  The JavaScript code may well be atrocious.",
+    "body": "Attachment [layout.html.pop](tarball://root/attachments/some-uuid/ticket5653/layout.html.pop) by @qed777 created at 2009-04-22 09:46:26\n\nI've attached a sample `doc/introspect/templates/layout.html` with \"pop out\" and \"close\" links.  When testing it, be sure clear the doc cache, since the MD5 hash is applied only to the source.\n\nNote:  The JavaScript code may well be atrocious.",
     "created_at": "2009-04-22T09:46:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44167",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [layout.html.pop](tarball://root/attachments/some-uuid/ticket5653/layout.html.pop) by mpatel created at 2009-04-22 09:46:26
+Attachment [layout.html.pop](tarball://root/attachments/some-uuid/ticket5653/layout.html.pop) by @qed777 created at 2009-04-22 09:46:26
 
 I've attached a sample `doc/introspect/templates/layout.html` with "pop out" and "close" links.  When testing it, be sure clear the doc cache, since the MD5 hash is applied only to the source.
 
@@ -699,7 +699,7 @@ archive/issue_comments_044168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44168",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -725,7 +725,7 @@ archive/issue_comments_044169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44169",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -747,7 +747,7 @@ archive/issue_comments_044170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44170",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -769,7 +769,7 @@ archive/issue_comments_044171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44171",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -798,7 +798,7 @@ archive/issue_comments_044172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44172",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -816,7 +816,7 @@ archive/issue_comments_044173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44173",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -837,7 +837,7 @@ archive/issue_comments_044174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44174",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -862,7 +862,7 @@ archive/issue_comments_044175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44175",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -885,7 +885,7 @@ archive/issue_comments_044176.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44176",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -898,16 +898,16 @@ A comment from mhansen: we shouldn't reproduce the files builder.py and conf.py.
 archive/issue_comments_044177.json:
 ```json
 {
-    "body": "Attachment [5653-cleanup.patch](tarball://root/attachments/some-uuid/ticket5653/5653-cleanup.patch) by mpatel created at 2009-05-19 10:05:47\n\nConform to docbuild setup.  This patch should be cumulative, against 3.4.2.",
+    "body": "Attachment [5653-cleanup.patch](tarball://root/attachments/some-uuid/ticket5653/5653-cleanup.patch) by @qed777 created at 2009-05-19 10:05:47\n\nConform to docbuild setup.  This patch should be cumulative, against 3.4.2.",
     "created_at": "2009-05-19T10:05:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44177",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [5653-cleanup.patch](tarball://root/attachments/some-uuid/ticket5653/5653-cleanup.patch) by mpatel created at 2009-05-19 10:05:47
+Attachment [5653-cleanup.patch](tarball://root/attachments/some-uuid/ticket5653/5653-cleanup.patch) by @qed777 created at 2009-05-19 10:05:47
 
 Conform to docbuild setup.  This patch should be cumulative, against 3.4.2.
 
@@ -918,16 +918,16 @@ Conform to docbuild setup.  This patch should be cumulative, against 3.4.2.
 archive/issue_comments_044178.json:
 ```json
 {
-    "body": "Attachment [trac_5653_pretty_docstrings.patch](tarball://root/attachments/some-uuid/ticket5653/trac_5653_pretty_docstrings.patch) by mpatel created at 2009-05-19 10:22:08\n\nReplying to [comment:29 jhpalmieri]:\n> A comment from mhansen: we shouldn't reproduce the files builder.py and conf.py.  Instead, we should use the existing builder.py (in doc/common), and we should use doc/common/conf.py, putting modifications in introspect/conf.py (as with tutorial/conf.py, etc.).  I couldn't figure out how to run Sphinx and tell it to do all of this, so mpatel, can you fix it?\n\nI think so.  Please see [attachment:trac_5653_pretty_docstrings.patch this patch], which should be inclusive.  (I just exported changesets 12155-7 to the same file, in succession.  Let me know if this is wrong.)",
+    "body": "Attachment [trac_5653_pretty_docstrings.patch](tarball://root/attachments/some-uuid/ticket5653/trac_5653_pretty_docstrings.patch) by @qed777 created at 2009-05-19 10:22:08\n\nReplying to [comment:29 jhpalmieri]:\n> A comment from mhansen: we shouldn't reproduce the files builder.py and conf.py.  Instead, we should use the existing builder.py (in doc/common), and we should use doc/common/conf.py, putting modifications in introspect/conf.py (as with tutorial/conf.py, etc.).  I couldn't figure out how to run Sphinx and tell it to do all of this, so mpatel, can you fix it?\n\nI think so.  Please see [attachment:trac_5653_pretty_docstrings.patch this patch], which should be inclusive.  (I just exported changesets 12155-7 to the same file, in succession.  Let me know if this is wrong.)",
     "created_at": "2009-05-19T10:22:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44178",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_5653_pretty_docstrings.patch](tarball://root/attachments/some-uuid/ticket5653/trac_5653_pretty_docstrings.patch) by mpatel created at 2009-05-19 10:22:08
+Attachment [trac_5653_pretty_docstrings.patch](tarball://root/attachments/some-uuid/ticket5653/trac_5653_pretty_docstrings.patch) by @qed777 created at 2009-05-19 10:22:08
 
 Replying to [comment:29 jhpalmieri]:
 > A comment from mhansen: we shouldn't reproduce the files builder.py and conf.py.  Instead, we should use the existing builder.py (in doc/common), and we should use doc/common/conf.py, putting modifications in introspect/conf.py (as with tutorial/conf.py, etc.).  I couldn't figure out how to run Sphinx and tell it to do all of this, so mpatel, can you fix it?
@@ -946,7 +946,7 @@ archive/issue_comments_044179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44179",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -973,16 +973,16 @@ This produced an all-in-one patch.
 archive/issue_comments_044180.json:
 ```json
 {
-    "body": "Attachment [docstring.5.patch](tarball://root/attachments/some-uuid/ticket5653/docstring.5.patch) by jhpalmieri created at 2009-05-19 21:31:26\n\ncumulative against 4.0.alpha0.  Apply only this patch.",
+    "body": "Attachment [docstring.5.patch](tarball://root/attachments/some-uuid/ticket5653/docstring.5.patch) by @jhpalmieri created at 2009-05-19 21:31:26\n\ncumulative against 4.0.alpha0.  Apply only this patch.",
     "created_at": "2009-05-19T21:31:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44180",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [docstring.5.patch](tarball://root/attachments/some-uuid/ticket5653/docstring.5.patch) by jhpalmieri created at 2009-05-19 21:31:26
+Attachment [docstring.5.patch](tarball://root/attachments/some-uuid/ticket5653/docstring.5.patch) by @jhpalmieri created at 2009-05-19 21:31:26
 
 cumulative against 4.0.alpha0.  Apply only this patch.
 
@@ -998,7 +998,7 @@ archive/issue_comments_044181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44181",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1020,7 +1020,7 @@ archive/issue_comments_044182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44182",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1078,7 +1078,7 @@ archive/issue_comments_044185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44185",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1098,7 +1098,7 @@ archive/issue_comments_044186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44186",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1111,16 +1111,16 @@ apply on top of docstring.5.patch -- this replaces css.patch
 archive/issue_comments_044187.json:
 ```json
 {
-    "body": "Attachment [css-new.patch](tarball://root/attachments/some-uuid/ticket5653/css-new.patch) by mpatel created at 2009-05-30 00:46:23\n\nThe [CSS overflow property](http://www.w3schools.com/Css/pr_pos_overflow.asp) can activate \"inline\" scrollbars:\n\n```\ndiv.docstring {\n  overflow: auto;\n}\n```\n",
+    "body": "Attachment [css-new.patch](tarball://root/attachments/some-uuid/ticket5653/css-new.patch) by @qed777 created at 2009-05-30 00:46:23\n\nThe [CSS overflow property](http://www.w3schools.com/Css/pr_pos_overflow.asp) can activate \"inline\" scrollbars:\n\n```\ndiv.docstring {\n  overflow: auto;\n}\n```\n",
     "created_at": "2009-05-30T00:46:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44187",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [css-new.patch](tarball://root/attachments/some-uuid/ticket5653/css-new.patch) by mpatel created at 2009-05-30 00:46:23
+Attachment [css-new.patch](tarball://root/attachments/some-uuid/ticket5653/css-new.patch) by @qed777 created at 2009-05-30 00:46:23
 
 The [CSS overflow property](http://www.w3schools.com/Css/pr_pos_overflow.asp) can activate "inline" scrollbars:
 
@@ -1143,7 +1143,7 @@ archive/issue_comments_044188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44188",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1182,7 +1182,7 @@ archive/issue_comments_044189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44189",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1195,16 +1195,16 @@ Rebase of docstring.5.patch + css-new.patch against v4.0.2 + #6307's 6307bis.pat
 archive/issue_comments_044190.json:
 ```json
 {
-    "body": "Attachment [docstring.6.patch](tarball://root/attachments/some-uuid/ticket5653/docstring.6.patch) by mpatel created at 2009-06-20 16:21:11\n\nReplying to [comment:38 jason]:\n> However, this may not be an issue with this patch. The directories above are the directories in which I built sage.  However, I moved Sage since then, so the directories above no longer exist.  Why are the directory paths not updated when I move the Sage directory (and start up Sage)?\n\nI've experienced something similar after upgrading and moving the installation to a new home.  I think this directory path issue is important but orthogonal to this ticket.",
+    "body": "Attachment [docstring.6.patch](tarball://root/attachments/some-uuid/ticket5653/docstring.6.patch) by @qed777 created at 2009-06-20 16:21:11\n\nReplying to [comment:38 jason]:\n> However, this may not be an issue with this patch. The directories above are the directories in which I built sage.  However, I moved Sage since then, so the directories above no longer exist.  Why are the directory paths not updated when I move the Sage directory (and start up Sage)?\n\nI've experienced something similar after upgrading and moving the installation to a new home.  I think this directory path issue is important but orthogonal to this ticket.",
     "created_at": "2009-06-20T16:21:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44190",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [docstring.6.patch](tarball://root/attachments/some-uuid/ticket5653/docstring.6.patch) by mpatel created at 2009-06-20 16:21:11
+Attachment [docstring.6.patch](tarball://root/attachments/some-uuid/ticket5653/docstring.6.patch) by @qed777 created at 2009-06-20 16:21:11
 
 Replying to [comment:38 jason]:
 > However, this may not be an issue with this patch. The directories above are the directories in which I built sage.  However, I moved Sage since then, so the directories above no longer exist.  Why are the directory paths not updated when I move the Sage directory (and start up Sage)?
@@ -1223,7 +1223,7 @@ archive/issue_comments_044191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44191",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1291,16 +1291,16 @@ summary:     ref manual fixes
 archive/issue_comments_044192.json:
 ```json
 {
-    "body": "Attachment [trac_5653_pretty_docstrings_v7.patch](tarball://root/attachments/some-uuid/ticket5653/trac_5653_pretty_docstrings_v7.patch) by mpatel created at 2009-07-19 05:44:50\n\nRe-base against v4.1 + #6307's \"bis\" and \"reviewer\" patches. Apply only this patch.",
+    "body": "Attachment [trac_5653_pretty_docstrings_v7.patch](tarball://root/attachments/some-uuid/ticket5653/trac_5653_pretty_docstrings_v7.patch) by @qed777 created at 2009-07-19 05:44:50\n\nRe-base against v4.1 + #6307's \"bis\" and \"reviewer\" patches. Apply only this patch.",
     "created_at": "2009-07-19T05:44:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44192",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_5653_pretty_docstrings_v7.patch](tarball://root/attachments/some-uuid/ticket5653/trac_5653_pretty_docstrings_v7.patch) by mpatel created at 2009-07-19 05:44:50
+Attachment [trac_5653_pretty_docstrings_v7.patch](tarball://root/attachments/some-uuid/ticket5653/trac_5653_pretty_docstrings_v7.patch) by @qed777 created at 2009-07-19 05:44:50
 
 Re-base against v4.1 + #6307's "bis" and "reviewer" patches. Apply only this patch.
 
@@ -1316,7 +1316,7 @@ archive/issue_comments_044193.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44193",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1334,7 +1334,7 @@ archive/issue_comments_044194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44194",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1352,7 +1352,7 @@ archive/issue_comments_044195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44195",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1381,7 +1381,7 @@ archive/issue_comments_044196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44196",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1399,7 +1399,7 @@ archive/issue_comments_044197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44197",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1421,7 +1421,7 @@ archive/issue_comments_044198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44198",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1442,7 +1442,7 @@ archive/issue_comments_044199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44199",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1467,7 +1467,7 @@ archive/issue_comments_044200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44200",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -1500,7 +1500,7 @@ archive/issue_comments_044201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44201",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1518,7 +1518,7 @@ archive/issue_comments_044202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44202",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1591,16 +1591,16 @@ For whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1.alpha0/tmp
 archive/issue_comments_044204.json:
 ```json
 {
-    "body": "Attachment [trac_5653-doc.patch](tarball://root/attachments/some-uuid/ticket5653/trac_5653-doc.patch) by jhpalmieri created at 2009-07-23 15:24:49\n\napply on top of the other patch",
+    "body": "Attachment [trac_5653-doc.patch](tarball://root/attachments/some-uuid/ticket5653/trac_5653-doc.patch) by @jhpalmieri created at 2009-07-23 15:24:49\n\napply on top of the other patch",
     "created_at": "2009-07-23T15:24:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44204",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_5653-doc.patch](tarball://root/attachments/some-uuid/ticket5653/trac_5653-doc.patch) by jhpalmieri created at 2009-07-23 15:24:49
+Attachment [trac_5653-doc.patch](tarball://root/attachments/some-uuid/ticket5653/trac_5653-doc.patch) by @jhpalmieri created at 2009-07-23 15:24:49
 
 apply on top of the other patch
 
@@ -1616,7 +1616,7 @@ archive/issue_comments_044205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44205",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1634,7 +1634,7 @@ archive/issue_comments_044206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44206",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1691,7 +1691,7 @@ archive/issue_comments_044209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44209",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1709,7 +1709,7 @@ archive/issue_comments_044210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44210",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1765,7 +1765,7 @@ archive/issue_comments_044213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44213",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1864,7 +1864,7 @@ archive/issue_comments_044218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5653#issuecomment-44218",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

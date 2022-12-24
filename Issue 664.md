@@ -14,7 +14,7 @@ archive/issues_000664.json:
     "title": "rings of integers of number fields as a data type",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/664",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: was and robertwb
@@ -37,7 +37,7 @@ archive/issue_comments_003449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/664#issuecomment-3449",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_003450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/664#issuecomment-3450",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_006313.json:
     "title": "optional doctest failure -- caused by maxima --> pynac switch ?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6313",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -62,7 +62,7 @@ archive/issue_comments_050395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6313#issuecomment-50395",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_050396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6313#issuecomment-50396",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_050399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6313#issuecomment-50399",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

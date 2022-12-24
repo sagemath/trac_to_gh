@@ -3,7 +3,7 @@
 archive/issues_002625.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  burcin\n\n`BooleanPolynomialRing`\n* more general constructor\n* cover_ring\n* defining_ideal\n* _singular_init_\n* some whitespace changes for docstrings\n\n`MPolynomial`\n* is_homogenous\n\n`BooleanMonomial`\n* degree method (same as deg method)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2625\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin\n\n`BooleanPolynomialRing`\n* more general constructor\n* cover_ring\n* defining_ideal\n* _singular_init_\n* some whitespace changes for docstrings\n\n`MPolynomial`\n* is_homogenous\n\n`BooleanMonomial`\n* degree method (same as deg method)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2625\n\n",
     "created_at": "2008-03-21T01:52:52Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_002625.json:
     "title": "[with patch, needs review] BooleanPolynomial to Singular conversion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2625",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  burcin
+CC:  @burcin
 
 `BooleanPolynomialRing`
 * more general constructor
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2625
 archive/issue_comments_018038.json:
 ```json
 {
-    "body": "Attachment [pb_singular.patch](tarball://root/attachments/some-uuid/ticket2625/pb_singular.patch) by robertwb created at 2008-03-26 06:27:18\n\nI wasn't able to apply this to 2.10.4\n\n\n```\npatching file sage/rings/polynomial/pbori.pyx\nHunk #1 FAILED at 120\nHunk #2 FAILED at 148\n2 out of 11 hunks FAILED -- saving rejects to file sage/rings/polynomial/pbori.pyx.rej\nabort: patch failed to apply\n```\n\n\nare there other dependancies? \n\nLooking at the patch, it looks pretty good. The only comment I have is that __interface shouldn't have to be declared in `pbori.pxd`--it should already be there from ring.pxd",
+    "body": "Attachment [pb_singular.patch](tarball://root/attachments/some-uuid/ticket2625/pb_singular.patch) by @robertwb created at 2008-03-26 06:27:18\n\nI wasn't able to apply this to 2.10.4\n\n\n```\npatching file sage/rings/polynomial/pbori.pyx\nHunk #1 FAILED at 120\nHunk #2 FAILED at 148\n2 out of 11 hunks FAILED -- saving rejects to file sage/rings/polynomial/pbori.pyx.rej\nabort: patch failed to apply\n```\n\n\nare there other dependancies? \n\nLooking at the patch, it looks pretty good. The only comment I have is that __interface shouldn't have to be declared in `pbori.pxd`--it should already be there from ring.pxd",
     "created_at": "2008-03-26T06:27:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2625",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2625#issuecomment-18038",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [pb_singular.patch](tarball://root/attachments/some-uuid/ticket2625/pb_singular.patch) by robertwb created at 2008-03-26 06:27:18
+Attachment [pb_singular.patch](tarball://root/attachments/some-uuid/ticket2625/pb_singular.patch) by @robertwb created at 2008-03-26 06:27:18
 
 I wasn't able to apply this to 2.10.4
 
@@ -84,7 +84,7 @@ archive/issue_comments_018039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2625",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2625#issuecomment-18039",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_018040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2625",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2625#issuecomment-18040",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_018041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2625",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2625#issuecomment-18041",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_018042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2625",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2625#issuecomment-18042",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_018043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2625",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2625#issuecomment-18043",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

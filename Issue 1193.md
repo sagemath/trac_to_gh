@@ -14,7 +14,7 @@ archive/issues_001193.json:
     "title": "Can't apply patches under VMware",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1193",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 Assignee: cwitty
@@ -95,7 +95,7 @@ archive/issue_comments_007407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1193",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1193#issuecomment-7407",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_007408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1193",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1193#issuecomment-7408",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_007409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1193",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1193#issuecomment-7409",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 

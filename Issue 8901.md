@@ -3,7 +3,7 @@
 archive/issues_008901.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  sdenton\n\nKeywords: integer, vector\n\nIntegerVectors() seems to only include vectors with positive integer entries:\n\n```\nsage: [-1,4] in IntegerVectors()\nFalse\n```\n\n\nCan the class be changed to include vectors with some/all negative integer entries as well, or create a new, larger class for all integer vectors (since I can imagine that having a class for positive integer vectors would be useful in some applications)?\n\nThanks,\nEva\n\nIssue created by migration from https://trac.sagemath.org/ticket/8901\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  @sdenton4\n\nKeywords: integer, vector\n\nIntegerVectors() seems to only include vectors with positive integer entries:\n\n```\nsage: [-1,4] in IntegerVectors()\nFalse\n```\n\n\nCan the class be changed to include vectors with some/all negative integer entries as well, or create a new, larger class for all integer vectors (since I can imagine that having a class for positive integer vectors would be useful in some applications)?\n\nThanks,\nEva\n\nIssue created by migration from https://trac.sagemath.org/ticket/8901\n\n",
     "created_at": "2010-05-06T01:14:18Z",
     "labels": [
         "combinatorics",
@@ -19,7 +19,7 @@ archive/issues_008901.json:
 ```
 Assignee: sage-combinat
 
-CC:  sdenton
+CC:  @sdenton4
 
 Keywords: integer, vector
 
@@ -106,7 +106,7 @@ archive/issue_comments_081926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8901#issuecomment-81926",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_081927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8901#issuecomment-81927",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_081928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8901#issuecomment-81928",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_081929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8901#issuecomment-81929",
-    "user": "sdenton"
+    "user": "@sdenton4"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_081930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8901#issuecomment-81930",
-    "user": "sdenton"
+    "user": "@sdenton4"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_081931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8901#issuecomment-81931",
-    "user": "sdenton"
+    "user": "@sdenton4"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_081932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8901#issuecomment-81932",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_081933.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8901#issuecomment-81933",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_081934.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8901#issuecomment-81934",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_081935.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8901#issuecomment-81935",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_081936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8901#issuecomment-81936",
-    "user": "sdenton"
+    "user": "@sdenton4"
 }
 ```
 
@@ -310,7 +310,7 @@ archive/issue_comments_081937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8901#issuecomment-81937",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -328,7 +328,7 @@ archive/issue_comments_081938.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8901#issuecomment-81938",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -365,7 +365,7 @@ archive/issue_comments_081939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8901#issuecomment-81939",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -378,16 +378,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_081940.json:
 ```json
 {
-    "body": "Attachment [trac_8901-integer_vectors_docstrings_fix-ts.patch](tarball://root/attachments/some-uuid/ticket8901/trac_8901-integer_vectors_docstrings_fix-ts.patch) by tscrim created at 2012-05-19 16:13:36\n\nCorrected.",
+    "body": "Attachment [trac_8901-integer_vectors_docstrings_fix-ts.patch](tarball://root/attachments/some-uuid/ticket8901/trac_8901-integer_vectors_docstrings_fix-ts.patch) by @tscrim created at 2012-05-19 16:13:36\n\nCorrected.",
     "created_at": "2012-05-19T16:13:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8901#issuecomment-81940",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
-Attachment [trac_8901-integer_vectors_docstrings_fix-ts.patch](tarball://root/attachments/some-uuid/ticket8901/trac_8901-integer_vectors_docstrings_fix-ts.patch) by tscrim created at 2012-05-19 16:13:36
+Attachment [trac_8901-integer_vectors_docstrings_fix-ts.patch](tarball://root/attachments/some-uuid/ticket8901/trac_8901-integer_vectors_docstrings_fix-ts.patch) by @tscrim created at 2012-05-19 16:13:36
 
 Corrected.
 
@@ -403,7 +403,7 @@ archive/issue_comments_081941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8901#issuecomment-81941",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -421,7 +421,7 @@ archive/issue_comments_081942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8901#issuecomment-81942",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006491.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jhpalmieri david.green@uni-jena.de\n\nKeywords: cohomology ring finite p-group\n\nI suggest to distribute our package for the computation of modular cohomology rings of finite p-groups as an optional package.\n\n## Authors\n\n- Simon A. King (Since recently at National University of Ireland, Galway)\n- David J. Green (Friedrich-Schiller-Universit\u00e4t Jena)\n\n## Installation\n\nThe package can be installed by \n\n```\nsage -i http://sage.math.washington.edu/home/SimonKing/Cohomology/p_group_cohomology-1.0.spkg\n```\n\n\n## Purpose\n\nGiven any group of order `p^n` (where `p` is prime), compute the cohomology ring (in terms of minimal generators and relations and also providing various ring theoretic invariants) of the group with coeffients in the finite field of order `p`. Of course, induced homomorphisms can be computed as well.\n\n## Documentation\n\nAn extensive documentation can be found at [http://sage.math.washington.edu/home/SimonKing/Cohomology/](http://sage.math.washington.edu/home/SimonKing/Cohomology/).\n\n## Features\n\nThe package includes the cohomology rings of all groups of order 64. These are actually quite challenging for other software (e.g., the Hap package for Gap, or the Magma programs of Jon F. Carlson with which these cohomology rings were first computed).\n\nOn sage.math, there are the cohomology rings for all groups of order 128, and the package can download them. **Sage is the only CAS that can currently provide such data.** Similarly, the cohomology of the groups of order 243 is available, but six of them are still not completely computed yet.\n\n## Sources\n\nThe comprises\n- a modified old version of the Aachen C-MeatAxe, \n- C-routines and Gap functions of David J. Green for the computation of minimal projective resolutions, and\n- various Cython extension modules and Singular functions written by myself, computing the structure of the cohomology ring according to algorithms of Dave Benson and David J. Green. \n- Data for the cohomology of all groups of order 64.\n\nThe C-MeatAxe is considerably modified, the rest of the sources has never been published yet. Therefore we included all of the sources into the Mercurial repository.\n\n## Dependencies\n\nIt is required that the SmallGroups library is installed.\n\nSince I too often had to work around bugs in the non-commutative part of Singular 3-0-4, it is required that Singular 3-1-0 is available when dealing with a finite p-Group and p>2.\n\n## Testing\n\nI am afraid that there is no separate test suite for the C-sources. The package includes two scripts `spkg-check` and `spkg-check-details`, that both walk through all doc tests. `spkg-check-details` is slower, but in case of errors provides more direct pointers to the failing tests than `spkg-check`. The scripts also verify the presence of doc test in any method.\n\nNote that some tests require internet connection, as data will be downloaded.\n\n## Known issues\n\n- It is not clear to me how one properly works with Licences. I did my very best. But could please some more experienced person check whether everything is alright with the licence?\n\n- A couple of months ago, I tried to build an earlier version of the package on OS X. It failed, which was very likely due to C-MeatAxe, which in fact does not seem to support OS X (even in the most recent version). But this was without distutils. Perhaps someone can test it, as I do not have access to OS X.\n\n- By the way of saving matrices in the MeatAxe format, it is very likely that the porting between big and little endian machines will be impossible. In particular, it could turn out to be impossible to use the data bases with a motorola processor.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6491\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jhpalmieri david.green@uni-jena.de\n\nKeywords: cohomology ring finite p-group\n\nI suggest to distribute our package for the computation of modular cohomology rings of finite p-groups as an optional package.\n\n## Authors\n\n- Simon A. King (Since recently at National University of Ireland, Galway)\n- David J. Green (Friedrich-Schiller-Universit\u00e4t Jena)\n\n## Installation\n\nThe package can be installed by \n\n```\nsage -i http://sage.math.washington.edu/home/SimonKing/Cohomology/p_group_cohomology-1.0.spkg\n```\n\n\n## Purpose\n\nGiven any group of order `p^n` (where `p` is prime), compute the cohomology ring (in terms of minimal generators and relations and also providing various ring theoretic invariants) of the group with coeffients in the finite field of order `p`. Of course, induced homomorphisms can be computed as well.\n\n## Documentation\n\nAn extensive documentation can be found at [http://sage.math.washington.edu/home/SimonKing/Cohomology/](http://sage.math.washington.edu/home/SimonKing/Cohomology/).\n\n## Features\n\nThe package includes the cohomology rings of all groups of order 64. These are actually quite challenging for other software (e.g., the Hap package for Gap, or the Magma programs of Jon F. Carlson with which these cohomology rings were first computed).\n\nOn sage.math, there are the cohomology rings for all groups of order 128, and the package can download them. **Sage is the only CAS that can currently provide such data.** Similarly, the cohomology of the groups of order 243 is available, but six of them are still not completely computed yet.\n\n## Sources\n\nThe comprises\n- a modified old version of the Aachen C-MeatAxe, \n- C-routines and Gap functions of David J. Green for the computation of minimal projective resolutions, and\n- various Cython extension modules and Singular functions written by myself, computing the structure of the cohomology ring according to algorithms of Dave Benson and David J. Green. \n- Data for the cohomology of all groups of order 64.\n\nThe C-MeatAxe is considerably modified, the rest of the sources has never been published yet. Therefore we included all of the sources into the Mercurial repository.\n\n## Dependencies\n\nIt is required that the SmallGroups library is installed.\n\nSince I too often had to work around bugs in the non-commutative part of Singular 3-0-4, it is required that Singular 3-1-0 is available when dealing with a finite p-Group and p>2.\n\n## Testing\n\nI am afraid that there is no separate test suite for the C-sources. The package includes two scripts `spkg-check` and `spkg-check-details`, that both walk through all doc tests. `spkg-check-details` is slower, but in case of errors provides more direct pointers to the failing tests than `spkg-check`. The scripts also verify the presence of doc test in any method.\n\nNote that some tests require internet connection, as data will be downloaded.\n\n## Known issues\n\n- It is not clear to me how one properly works with Licences. I did my very best. But could please some more experienced person check whether everything is alright with the licence?\n\n- A couple of months ago, I tried to build an earlier version of the package on OS X. It failed, which was very likely due to C-MeatAxe, which in fact does not seem to support OS X (even in the most recent version). But this was without distutils. Perhaps someone can test it, as I do not have access to OS X.\n\n- By the way of saving matrices in the MeatAxe format, it is very likely that the porting between big and little endian machines will be impossible. In particular, it could turn out to be impossible to use the data bases with a motorola processor.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6491\n\n",
     "created_at": "2009-07-09T01:38:20Z",
     "labels": [
         "packages: optional",
@@ -14,12 +14,12 @@ archive/issues_006491.json:
     "title": "[with spkg, needs review] Modular Cohomology Rings of Finite p-Groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6491",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 Assignee: tbd
 
-CC:  jhpalmieri david.green@uni-jena.de
+CC:  @jhpalmieri david.green@uni-jena.de
 
 Keywords: cohomology ring finite p-group
 
@@ -99,7 +99,7 @@ archive/issue_comments_052477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52477",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -112,16 +112,16 @@ Changing status from new to assigned.
 archive/issue_comments_052478.json:
 ```json
 {
-    "body": "Changing assignee from tbd to SimonKing.",
+    "body": "Changing assignee from tbd to @simon-king-jena.",
     "created_at": "2009-07-09T10:48:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52478",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Changing assignee from tbd to SimonKing.
+Changing assignee from tbd to @simon-king-jena.
 
 
 
@@ -135,7 +135,7 @@ archive/issue_comments_052479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52479",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_052480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52480",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_052481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52481",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -307,7 +307,7 @@ archive/issue_comments_052482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52482",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -333,7 +333,7 @@ archive/issue_comments_052483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52483",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -371,7 +371,7 @@ archive/issue_comments_052484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52484",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -449,7 +449,7 @@ archive/issue_comments_052485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52485",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -474,7 +474,7 @@ archive/issue_comments_052486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52486",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -523,7 +523,7 @@ archive/issue_comments_052487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52487",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -582,7 +582,7 @@ archive/issue_comments_052488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52488",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -710,7 +710,7 @@ archive/issue_comments_052489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52489",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -737,7 +737,7 @@ archive/issue_comments_052490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52490",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -760,7 +760,7 @@ archive/issue_comments_052491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52491",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -793,7 +793,7 @@ archive/issue_comments_052492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52492",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -839,7 +839,7 @@ archive/issue_comments_052493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52493",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -966,7 +966,7 @@ archive/issue_comments_052494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52494",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -1032,7 +1032,7 @@ archive/issue_comments_052495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52495",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1133,7 +1133,7 @@ archive/issue_comments_052496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52496",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1155,7 +1155,7 @@ archive/issue_comments_052497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52497",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -1251,7 +1251,7 @@ archive/issue_comments_052498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52498",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1319,7 +1319,7 @@ archive/issue_comments_052499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52499",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -1374,7 +1374,7 @@ archive/issue_comments_052500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52500",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1406,7 +1406,7 @@ archive/issue_comments_052501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52501",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1508,7 +1508,7 @@ archive/issue_comments_052502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52502",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -1634,7 +1634,7 @@ archive/issue_comments_052503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52503",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1667,7 +1667,7 @@ archive/issue_comments_052504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52504",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -1724,7 +1724,7 @@ archive/issue_comments_052505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52505",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1764,7 +1764,7 @@ archive/issue_comments_052506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52506",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1813,7 +1813,7 @@ archive/issue_comments_052507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52507",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -1843,7 +1843,7 @@ archive/issue_comments_052508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52508",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -1865,7 +1865,7 @@ archive/issue_comments_052509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52509",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1917,7 +1917,7 @@ archive/issue_comments_052510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52510",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1945,7 +1945,7 @@ archive/issue_comments_052511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52511",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1966,7 +1966,7 @@ archive/issue_comments_052512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52512",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -1988,7 +1988,7 @@ archive/issue_comments_052513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52513",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -2020,7 +2020,7 @@ archive/issue_comments_052514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52514",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -2079,7 +2079,7 @@ archive/issue_comments_052515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52515",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -2129,7 +2129,7 @@ archive/issue_comments_052516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52516",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -2193,7 +2193,7 @@ archive/issue_comments_052517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52517",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -2225,7 +2225,7 @@ archive/issue_comments_052518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52518",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -2259,7 +2259,7 @@ archive/issue_comments_052519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52519",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -2295,7 +2295,7 @@ archive/issue_comments_052520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52520",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -2334,7 +2334,7 @@ archive/issue_comments_052521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52521",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -2406,7 +2406,7 @@ archive/issue_comments_052522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52522",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -2424,7 +2424,7 @@ archive/issue_comments_052523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52523",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -2445,7 +2445,7 @@ archive/issue_comments_052524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52524",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -2476,7 +2476,7 @@ archive/issue_comments_052525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52525",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -2494,7 +2494,7 @@ archive/issue_comments_052526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52526",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -2533,7 +2533,7 @@ archive/issue_comments_052527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52527",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -2551,7 +2551,7 @@ archive/issue_comments_052528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52528",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -2571,7 +2571,7 @@ archive/issue_comments_052529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52529",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -2605,7 +2605,7 @@ archive/issue_comments_052530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52530",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -2623,7 +2623,7 @@ archive/issue_comments_052531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52531",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -2649,7 +2649,7 @@ archive/issue_comments_052532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52532",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -2667,7 +2667,7 @@ archive/issue_comments_052533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52533",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -2685,7 +2685,7 @@ archive/issue_comments_052534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52534",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -2703,7 +2703,7 @@ archive/issue_comments_052535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6491#issuecomment-52535",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 

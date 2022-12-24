@@ -14,7 +14,7 @@ archive/issues_001449.json:
     "title": "very serious (but trivial to fix) notebook bug: shift-enter doesn't work on macs; it's shift-return!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1449",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -57,7 +57,7 @@ archive/issue_comments_009334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1449#issuecomment-9334",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_009337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1449#issuecomment-9337",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -139,16 +139,16 @@ Works in Camino and Firefox for me, but not in Safari...
 archive/issue_comments_009338.json:
 ```json
 {
-    "body": "Attachment [referee.patch](tarball://root/attachments/some-uuid/ticket1449/referee.patch) by was created at 2008-01-05 02:11:23\n\nGreat idea!!\n\nI posted a slight polish patch.",
+    "body": "Attachment [referee.patch](tarball://root/attachments/some-uuid/ticket1449/referee.patch) by @williamstein created at 2008-01-05 02:11:23\n\nGreat idea!!\n\nI posted a slight polish patch.",
     "created_at": "2008-01-05T02:11:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1449#issuecomment-9338",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [referee.patch](tarball://root/attachments/some-uuid/ticket1449/referee.patch) by was created at 2008-01-05 02:11:23
+Attachment [referee.patch](tarball://root/attachments/some-uuid/ticket1449/referee.patch) by @williamstein created at 2008-01-05 02:11:23
 
 Great idea!!
 

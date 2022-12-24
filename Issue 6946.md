@@ -3,7 +3,7 @@
 archive/issues_006946.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  jason\n\nThe delaunay packages appears to be the same, with just some name changes.\n\nBut the mpmath while providing the same feature, has a significant large amount of patches.\n\nIn either case, if patching sage to use sympy/mpmath and mpatplotlib/delaunay, the doctests works, but there may exit some special reason to use mpmath instead of sympy/mpmath.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6946\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @jasongrout\n\nThe delaunay packages appears to be the same, with just some name changes.\n\nBut the mpmath while providing the same feature, has a significant large amount of patches.\n\nIn either case, if patching sage to use sympy/mpmath and mpatplotlib/delaunay, the doctests works, but there may exit some special reason to use mpmath instead of sympy/mpmath.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6946\n\n",
     "created_at": "2009-09-16T20:19:33Z",
     "labels": [
         "packages: standard",
@@ -19,7 +19,7 @@ archive/issues_006946.json:
 ```
 Assignee: mabshoff
 
-CC:  jason
+CC:  @jasongrout
 
 The delaunay packages appears to be the same, with just some name changes.
 
@@ -63,7 +63,7 @@ archive/issue_comments_057431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6946#issuecomment-57431",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -121,16 +121,16 @@ just for documentation - but this patch should be no longer applied, and instead
 archive/issue_comments_057434.json:
 ```json
 {
-    "body": "Attachment [sage-4.1.1-mpmath.patch](tarball://root/attachments/some-uuid/ticket6946/sage-4.1.1-mpmath.patch) by jason created at 2011-03-15 05:34:41",
+    "body": "Attachment [sage-4.1.1-mpmath.patch](tarball://root/attachments/some-uuid/ticket6946/sage-4.1.1-mpmath.patch) by @jasongrout created at 2011-03-15 05:34:41",
     "created_at": "2011-03-15T05:34:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6946#issuecomment-57434",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [sage-4.1.1-mpmath.patch](tarball://root/attachments/some-uuid/ticket6946/sage-4.1.1-mpmath.patch) by jason created at 2011-03-15 05:34:41
+Attachment [sage-4.1.1-mpmath.patch](tarball://root/attachments/some-uuid/ticket6946/sage-4.1.1-mpmath.patch) by @jasongrout created at 2011-03-15 05:34:41
 
 
 
@@ -144,7 +144,7 @@ archive/issue_comments_057435.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6946#issuecomment-57435",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_057436.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6946#issuecomment-57436",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_057437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6946#issuecomment-57437",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_057438.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6946#issuecomment-57438",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_057439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6946#issuecomment-57439",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

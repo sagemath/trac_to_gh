@@ -3,7 +3,7 @@
 archive/issues_002726.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nI've updated the SAGE Debian build system to support uploading to an apt repository as things build (so that the building of packages later in the build process can get their dependencies via apt).  Attached are the relevant patches.\n\nOne thing that's kinda annoying is that renaming SbuildHack.pm to sage-SbuildHack.pm was problematic because perl modules can't have dashes in their name.  We should figure out how to get SbuildHack.pm installed now that it's name doesn't start with sage.\n\nI'm trying to get a version of the code in SbuildHack.pm into mainline sbuild so that we don't need to bother with this, but am uncertain how long that will take.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2726\n\n",
+    "body": "Assignee: @timabbott\n\nI've updated the SAGE Debian build system to support uploading to an apt repository as things build (so that the building of packages later in the build process can get their dependencies via apt).  Attached are the relevant patches.\n\nOne thing that's kinda annoying is that renaming SbuildHack.pm to sage-SbuildHack.pm was problematic because perl modules can't have dashes in their name.  We should figure out how to get SbuildHack.pm installed now that it's name doesn't start with sage.\n\nI'm trying to get a version of the code in SbuildHack.pm into mainline sbuild so that we don't need to bother with this, but am uncertain how long that will take.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2726\n\n",
     "created_at": "2008-03-29T22:15:57Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_002726.json:
     "title": "[with patch; needs review] SAGE debian build system update",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2726",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 I've updated the SAGE Debian build system to support uploading to an apt repository as things build (so that the building of packages later in the build process can get their dependencies via apt).  Attached are the relevant patches.
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2726
 archive/issue_comments_018781.json:
 ```json
 {
-    "body": "Attachment [build-system.patch](tarball://root/attachments/some-uuid/ticket2726/build-system.patch) by tabbott created at 2008-03-29 22:16:07",
+    "body": "Attachment [build-system.patch](tarball://root/attachments/some-uuid/ticket2726/build-system.patch) by @timabbott created at 2008-03-29 22:16:07",
     "created_at": "2008-03-29T22:16:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2726#issuecomment-18781",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [build-system.patch](tarball://root/attachments/some-uuid/ticket2726/build-system.patch) by tabbott created at 2008-03-29 22:16:07
+Attachment [build-system.patch](tarball://root/attachments/some-uuid/ticket2726/build-system.patch) by @timabbott created at 2008-03-29 22:16:07
 
 
 

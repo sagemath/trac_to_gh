@@ -3,7 +3,7 @@
 archive/issues_005048.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  georgsweber\n\nKeywords: congruence subgroup coercion\n\n\n```\nsage: Gamma0(10).1 * Gamma0(5).2\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/ncalexan/.sage/temp/sage.math.washington.edu/4030/_home_ncalexan__sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n\n/scratch/nca/sage-3.3.alpha0-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.MonoidElement.__mul__ (sage/structure/element.c:7375)()\n    849 \n    850 \n--> 851 \n    852 \n    853 \n\nTypeError: unsupported operand parent(s) for '*': 'Congruence Subgroup Gamma0(10)' and 'Congruence Subgroup Gamma0(5)'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5048\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  georgsweber\n\nKeywords: congruence subgroup coercion\n\n\n```\nsage: Gamma0(10).1 * Gamma0(5).2\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/ncalexan/.sage/temp/sage.math.washington.edu/4030/_home_ncalexan__sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n\n/scratch/nca/sage-3.3.alpha0-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.MonoidElement.__mul__ (sage/structure/element.c:7375)()\n    849 \n    850 \n--> 851 \n    852 \n    853 \n\nTypeError: unsupported operand parent(s) for '*': 'Congruence Subgroup Gamma0(10)' and 'Congruence Subgroup Gamma0(5)'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5048\n\n",
     "created_at": "2009-01-21T08:00:00Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_005048.json:
     "title": "congruence subgroups are not integrated into the coercion model",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5048",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  georgsweber
 
@@ -63,7 +63,7 @@ archive/issue_comments_038444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5048#issuecomment-38444",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -76,16 +76,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_038445.json:
 ```json
 {
-    "body": "Changing assignee from was to craigcitro.",
+    "body": "Changing assignee from @williamstein to @craigcitro.",
     "created_at": "2009-07-21T08:22:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5048#issuecomment-38445",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to craigcitro.
+Changing assignee from @williamstein to @craigcitro.
 
 
 
@@ -99,7 +99,7 @@ archive/issue_comments_038446.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5048#issuecomment-38446",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -112,16 +112,16 @@ Changing component from number theory to modular forms.
 archive/issue_comments_038447.json:
 ```json
 {
-    "body": "Attachment [trac_5048-sl2z_coercion.patch](tarball://root/attachments/some-uuid/ticket5048/trac_5048-sl2z_coercion.patch) by davidloeffler created at 2010-12-09 20:51:47\n\npatch against 4.6.1.alpha3",
+    "body": "Attachment [trac_5048-sl2z_coercion.patch](tarball://root/attachments/some-uuid/ticket5048/trac_5048-sl2z_coercion.patch) by @loefflerd created at 2010-12-09 20:51:47\n\npatch against 4.6.1.alpha3",
     "created_at": "2010-12-09T20:51:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5048#issuecomment-38447",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_5048-sl2z_coercion.patch](tarball://root/attachments/some-uuid/ticket5048/trac_5048-sl2z_coercion.patch) by davidloeffler created at 2010-12-09 20:51:47
+Attachment [trac_5048-sl2z_coercion.patch](tarball://root/attachments/some-uuid/ticket5048/trac_5048-sl2z_coercion.patch) by @loefflerd created at 2010-12-09 20:51:47
 
 patch against 4.6.1.alpha3
 
@@ -137,7 +137,7 @@ archive/issue_comments_038448.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5048#issuecomment-38448",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_038449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5048#issuecomment-38449",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -168,16 +168,16 @@ Here's a patch. I thought the simplest solution was to arrange that the parent o
 archive/issue_comments_038450.json:
 ```json
 {
-    "body": "Attachment [trac_5048-sl2z_coercion-rebased_for_10452.patch](tarball://root/attachments/some-uuid/ticket5048/trac_5048-sl2z_coercion-rebased_for_10452.patch) by davidloeffler created at 2010-12-09 21:06:36\n\nVersion that will apply happily after #10452",
+    "body": "Attachment [trac_5048-sl2z_coercion-rebased_for_10452.patch](tarball://root/attachments/some-uuid/ticket5048/trac_5048-sl2z_coercion-rebased_for_10452.patch) by @loefflerd created at 2010-12-09 21:06:36\n\nVersion that will apply happily after #10452",
     "created_at": "2010-12-09T21:06:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5048#issuecomment-38450",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_5048-sl2z_coercion-rebased_for_10452.patch](tarball://root/attachments/some-uuid/ticket5048/trac_5048-sl2z_coercion-rebased_for_10452.patch) by davidloeffler created at 2010-12-09 21:06:36
+Attachment [trac_5048-sl2z_coercion-rebased_for_10452.patch](tarball://root/attachments/some-uuid/ticket5048/trac_5048-sl2z_coercion-rebased_for_10452.patch) by @loefflerd created at 2010-12-09 21:06:36
 
 Version that will apply happily after #10452
 
@@ -193,7 +193,7 @@ archive/issue_comments_038451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5048#issuecomment-38451",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_038452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5048#issuecomment-38452",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_038453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5048#issuecomment-38453",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_038454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5048#issuecomment-38454",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_038455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5048#issuecomment-38455",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -279,16 +279,16 @@ version rebased to 4.7.1.alpha4 + #11422
 archive/issue_comments_038456.json:
 ```json
 {
-    "body": "Attachment [trac_5048-rebased_for_11422.patch](tarball://root/attachments/some-uuid/ticket5048/trac_5048-rebased_for_11422.patch) by davidloeffler created at 2011-07-15 15:29:44\n\nI've uploaded a version that is rebased to apply happily over the positively-reviewed patch #11422. This is intended to form part of a series #10335 - #11422 - #11598 - this ticket - #10453 -\n #11601; but the patch itself is **independent** of #11598 and of the tickets later in the series.",
+    "body": "Attachment [trac_5048-rebased_for_11422.patch](tarball://root/attachments/some-uuid/ticket5048/trac_5048-rebased_for_11422.patch) by @loefflerd created at 2011-07-15 15:29:44\n\nI've uploaded a version that is rebased to apply happily over the positively-reviewed patch #11422. This is intended to form part of a series #10335 - #11422 - #11598 - this ticket - #10453 -\n #11601; but the patch itself is **independent** of #11598 and of the tickets later in the series.",
     "created_at": "2011-07-15T15:29:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5048#issuecomment-38456",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_5048-rebased_for_11422.patch](tarball://root/attachments/some-uuid/ticket5048/trac_5048-rebased_for_11422.patch) by davidloeffler created at 2011-07-15 15:29:44
+Attachment [trac_5048-rebased_for_11422.patch](tarball://root/attachments/some-uuid/ticket5048/trac_5048-rebased_for_11422.patch) by @loefflerd created at 2011-07-15 15:29:44
 
 I've uploaded a version that is rebased to apply happily over the positively-reviewed patch #11422. This is intended to form part of a series #10335 - #11422 - #11598 - this ticket - #10453 -
  #11601; but the patch itself is **independent** of #11598 and of the tickets later in the series.
@@ -305,7 +305,7 @@ archive/issue_comments_038457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5048#issuecomment-38457",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_038458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5048#issuecomment-38458",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -367,7 +367,7 @@ archive/issue_comments_038460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5048#issuecomment-38460",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -385,7 +385,7 @@ archive/issue_comments_038461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5048#issuecomment-38461",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -477,7 +477,7 @@ archive/issue_comments_038465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5048#issuecomment-38465",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -495,7 +495,7 @@ archive/issue_comments_038466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5048#issuecomment-38466",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -513,7 +513,7 @@ archive/issue_comments_038467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5048#issuecomment-38467",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -531,7 +531,7 @@ archive/issue_comments_038468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5048#issuecomment-38468",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -544,16 +544,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_038469.json:
 ```json
 {
-    "body": "Attachment [trac_5048-missingdoctest.patch](tarball://root/attachments/some-uuid/ticket5048/trac_5048-missingdoctest.patch) by davidloeffler created at 2011-12-17 22:35:40",
+    "body": "Attachment [trac_5048-missingdoctest.patch](tarball://root/attachments/some-uuid/ticket5048/trac_5048-missingdoctest.patch) by @loefflerd created at 2011-12-17 22:35:40",
     "created_at": "2011-12-17T22:35:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5048#issuecomment-38469",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_5048-missingdoctest.patch](tarball://root/attachments/some-uuid/ticket5048/trac_5048-missingdoctest.patch) by davidloeffler created at 2011-12-17 22:35:40
+Attachment [trac_5048-missingdoctest.patch](tarball://root/attachments/some-uuid/ticket5048/trac_5048-missingdoctest.patch) by @loefflerd created at 2011-12-17 22:35:40
 
 
 
@@ -562,16 +562,16 @@ Attachment [trac_5048-missingdoctest.patch](tarball://root/attachments/some-uuid
 archive/issue_comments_038470.json:
 ```json
 {
-    "body": "Attachment [trac_5048-missingdoctest.2.patch](tarball://root/attachments/some-uuid/ticket5048/trac_5048-missingdoctest.2.patch) by davidloeffler created at 2011-12-17 22:39:29\n\nNOT NEEDED! See comments",
+    "body": "Attachment [trac_5048-missingdoctest.2.patch](tarball://root/attachments/some-uuid/ticket5048/trac_5048-missingdoctest.2.patch) by @loefflerd created at 2011-12-17 22:39:29\n\nNOT NEEDED! See comments",
     "created_at": "2011-12-17T22:39:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5048#issuecomment-38470",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_5048-missingdoctest.2.patch](tarball://root/attachments/some-uuid/ticket5048/trac_5048-missingdoctest.2.patch) by davidloeffler created at 2011-12-17 22:39:29
+Attachment [trac_5048-missingdoctest.2.patch](tarball://root/attachments/some-uuid/ticket5048/trac_5048-missingdoctest.2.patch) by @loefflerd created at 2011-12-17 22:39:29
 
 NOT NEEDED! See comments
 
@@ -587,7 +587,7 @@ archive/issue_comments_038471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5048#issuecomment-38471",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -605,7 +605,7 @@ archive/issue_comments_038472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5048#issuecomment-38472",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -651,7 +651,7 @@ archive/issue_comments_038474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5048#issuecomment-38474",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -669,7 +669,7 @@ archive/issue_comments_038475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5048#issuecomment-38475",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -687,7 +687,7 @@ archive/issue_comments_038476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5048#issuecomment-38476",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 

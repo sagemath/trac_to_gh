@@ -14,7 +14,7 @@ archive/issues_005034.json:
     "title": "stupid output of sage -br:  \"using n cpus\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5034",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -47,7 +47,7 @@ archive/issue_comments_038333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5034#issuecomment-38333",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -60,16 +60,16 @@ this is against sage-3.3.alpha0
 archive/issue_comments_038334.json:
 ```json
 {
-    "body": "Attachment [trac_5034.patch](tarball://root/attachments/some-uuid/ticket5034/trac_5034.patch) by was created at 2009-01-20 06:39:25\n\nThe attached patch is just a textual substitution of \"threads\" for \"cpus\".",
+    "body": "Attachment [trac_5034.patch](tarball://root/attachments/some-uuid/ticket5034/trac_5034.patch) by @williamstein created at 2009-01-20 06:39:25\n\nThe attached patch is just a textual substitution of \"threads\" for \"cpus\".",
     "created_at": "2009-01-20T06:39:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5034#issuecomment-38334",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5034.patch](tarball://root/attachments/some-uuid/ticket5034/trac_5034.patch) by was created at 2009-01-20 06:39:25
+Attachment [trac_5034.patch](tarball://root/attachments/some-uuid/ticket5034/trac_5034.patch) by @williamstein created at 2009-01-20 06:39:25
 
 The attached patch is just a textual substitution of "threads" for "cpus".
 

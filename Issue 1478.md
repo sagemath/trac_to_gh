@@ -3,7 +3,7 @@
 archive/issues_001478.json:
 ```json
 {
-    "body": "Assignee: was\n\nFrom Joel Mohler:\n\n\n```\n> In any case, mpolynomial factorization, gcd, and division algorithms in singular\n> pretty much entirely stop me cold computing in a fraction field of mpolynomials.\n> My solution for the moment is to hack in calls to mathematica or magma from the\n> libsingular code in sage.  I had a version of that hackage with M2, but the\n> pexpect sage wrapper for M2 choked up on my polynomials (about 1/4 mb in string\n> form.)  This \"choked up\" might merit more precise diagnosis investigation\n> itself.\n\nThere are ways to get around that by writing large input to a file and telling\nM2 to read in that file.   This is something this interface should do automatically,\nbut doesn't yet (for M2 -- it does it for most of the interfaces).    \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1478\n\n",
+    "body": "Assignee: @williamstein\n\nFrom Joel Mohler:\n\n\n```\n> In any case, mpolynomial factorization, gcd, and division algorithms in singular\n> pretty much entirely stop me cold computing in a fraction field of mpolynomials.\n> My solution for the moment is to hack in calls to mathematica or magma from the\n> libsingular code in sage.  I had a version of that hackage with M2, but the\n> pexpect sage wrapper for M2 choked up on my polynomials (about 1/4 mb in string\n> form.)  This \"choked up\" might merit more precise diagnosis investigation\n> itself.\n\nThere are ways to get around that by writing large input to a file and telling\nM2 to read in that file.   This is something this interface should do automatically,\nbut doesn't yet (for M2 -- it does it for most of the interfaces).    \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1478\n\n",
     "created_at": "2007-12-12T16:56:19Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_001478.json:
     "title": "M2 interface -- make it so large input gets read in from a file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1478",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 From Joel Mohler:
 
@@ -49,16 +49,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1478
 archive/issue_comments_009510.json:
 ```json
 {
-    "body": "Changing assignee from was to tbd.",
+    "body": "Changing assignee from @williamstein to tbd.",
     "created_at": "2015-06-23T13:46:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1478#issuecomment-9510",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Changing assignee from was to tbd.
+Changing assignee from @williamstein to tbd.
 
 
 
@@ -72,7 +72,7 @@ archive/issue_comments_009511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1478#issuecomment-9511",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_009512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1478#issuecomment-9512",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_009513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1478#issuecomment-9513",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

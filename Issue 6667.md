@@ -3,7 +3,7 @@
 archive/issues_006667.json:
 ```json
 {
-    "body": "Assignee: roed\n\nKeywords: newton polygon\n\nThis is as simple as I can make it at the moment:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: K = Qp(2, prec=5)\nsage: P.<x> = K[]\nsage: f = P(x^4 + 2^3*x^3 + 2^13*x^2 + 2^21*x + 2^37)\nsage: f.newton_polygon()\n[(0, 37), (1, 21), (2, 13), (3, 3), (4, 0)]\n```\n\n| Sage Version 4.1.1.rc0, Release Date: 2009-07-29                   |\n| Type notebook() for the GUI, and license() for information.        |\nThis is wrong, as it's not convex (the point (2,13) should not be there).  Indeed, note that the sequence of Newton slopes is not non-increasing:\n\n\n```\nsage: f.newton_slopes()\n[16, 8, 10, 3]\n```\n\n\nThis should be [16, 9, 9, 3].\n\nIssue created by migration from https://trac.sagemath.org/ticket/6667\n\n",
+    "body": "Assignee: @roed314\n\nKeywords: newton polygon\n\nThis is as simple as I can make it at the moment:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: K = Qp(2, prec=5)\nsage: P.<x> = K[]\nsage: f = P(x^4 + 2^3*x^3 + 2^13*x^2 + 2^21*x + 2^37)\nsage: f.newton_polygon()\n[(0, 37), (1, 21), (2, 13), (3, 3), (4, 0)]\n```\n\n| Sage Version 4.1.1.rc0, Release Date: 2009-07-29                   |\n| Type notebook() for the GUI, and license() for information.        |\nThis is wrong, as it's not convex (the point (2,13) should not be there).  Indeed, note that the sequence of Newton slopes is not non-increasing:\n\n\n```\nsage: f.newton_slopes()\n[16, 8, 10, 3]\n```\n\n\nThis should be [16, 9, 9, 3].\n\nIssue created by migration from https://trac.sagemath.org/ticket/6667\n\n",
     "created_at": "2009-08-03T08:00:58Z",
     "labels": [
         "padics",
@@ -14,10 +14,10 @@ archive/issues_006667.json:
     "title": "bug in newton_polygon() for p-adic polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6667",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: roed
+Assignee: @roed314
 
 Keywords: newton polygon
 
@@ -68,7 +68,7 @@ archive/issue_comments_054732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6667#issuecomment-54732",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_054733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6667#issuecomment-54733",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_054734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6667#issuecomment-54734",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -117,16 +117,16 @@ Still there in 5.12.beta2
 archive/issue_comments_054735.json:
 ```json
 {
-    "body": "Attachment [trac_6667.patch](tarball://root/attachments/some-uuid/ticket6667/trac_6667.patch) by chapoton created at 2013-08-23 10:16:54\n\nhere is a quick patch that should fix the problem\n\nI have not been careful concerning the precision of the coefficients\n\nNeeds review !",
+    "body": "Attachment [trac_6667.patch](tarball://root/attachments/some-uuid/ticket6667/trac_6667.patch) by @fchapoton created at 2013-08-23 10:16:54\n\nhere is a quick patch that should fix the problem\n\nI have not been careful concerning the precision of the coefficients\n\nNeeds review !",
     "created_at": "2013-08-23T10:16:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6667#issuecomment-54735",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac_6667.patch](tarball://root/attachments/some-uuid/ticket6667/trac_6667.patch) by chapoton created at 2013-08-23 10:16:54
+Attachment [trac_6667.patch](tarball://root/attachments/some-uuid/ticket6667/trac_6667.patch) by @fchapoton created at 2013-08-23 10:16:54
 
 here is a quick patch that should fix the problem
 
@@ -146,7 +146,7 @@ archive/issue_comments_054736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6667#issuecomment-54736",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_054737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6667#issuecomment-54737",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_054738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6667#issuecomment-54738",
-    "user": "caruso"
+    "user": "@xcaruso"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_054739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6667#issuecomment-54739",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -217,16 +217,16 @@ your patch does not apply on a clean 5.12.beta3
 archive/issue_comments_054740.json:
 ```json
 {
-    "body": "Attachment [trac_6667_caruso.patch](tarball://root/attachments/some-uuid/ticket6667/trac_6667_caruso.patch) by caruso created at 2013-08-27 16:44:18\n\nSorry. I was working with an older version of Sage. It should be fixed now.",
+    "body": "Attachment [trac_6667_caruso.patch](tarball://root/attachments/some-uuid/ticket6667/trac_6667_caruso.patch) by @xcaruso created at 2013-08-27 16:44:18\n\nSorry. I was working with an older version of Sage. It should be fixed now.",
     "created_at": "2013-08-27T16:44:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6667#issuecomment-54740",
-    "user": "caruso"
+    "user": "@xcaruso"
 }
 ```
 
-Attachment [trac_6667_caruso.patch](tarball://root/attachments/some-uuid/ticket6667/trac_6667_caruso.patch) by caruso created at 2013-08-27 16:44:18
+Attachment [trac_6667_caruso.patch](tarball://root/attachments/some-uuid/ticket6667/trac_6667_caruso.patch) by @xcaruso created at 2013-08-27 16:44:18
 
 Sorry. I was working with an older version of Sage. It should be fixed now.
 
@@ -237,16 +237,16 @@ Sorry. I was working with an older version of Sage. It should be fixed now.
 archive/issue_comments_054741.json:
 ```json
 {
-    "body": "Attachment [trac_6667_review_patch_1.patch](tarball://root/attachments/some-uuid/ticket6667/trac_6667_review_patch_1.patch) by chapoton created at 2013-08-27 18:56:15\n\nhere is a review patch, with only minor changes to your code\n\nin my opinion, it would be good to add examples for the two other raise statements.",
+    "body": "Attachment [trac_6667_review_patch_1.patch](tarball://root/attachments/some-uuid/ticket6667/trac_6667_review_patch_1.patch) by @fchapoton created at 2013-08-27 18:56:15\n\nhere is a review patch, with only minor changes to your code\n\nin my opinion, it would be good to add examples for the two other raise statements.",
     "created_at": "2013-08-27T18:56:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6667#issuecomment-54741",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac_6667_review_patch_1.patch](tarball://root/attachments/some-uuid/ticket6667/trac_6667_review_patch_1.patch) by chapoton created at 2013-08-27 18:56:15
+Attachment [trac_6667_review_patch_1.patch](tarball://root/attachments/some-uuid/ticket6667/trac_6667_review_patch_1.patch) by @fchapoton created at 2013-08-27 18:56:15
 
 here is a review patch, with only minor changes to your code
 
@@ -264,7 +264,7 @@ archive/issue_comments_054742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6667#issuecomment-54742",
-    "user": "caruso"
+    "user": "@xcaruso"
 }
 ```
 
@@ -288,16 +288,16 @@ Apply only [attachment:trac_6667_caruso_revised.patch] (it includes your review)
 archive/issue_comments_054743.json:
 ```json
 {
-    "body": "Attachment [trac_6667_caruso_revised.patch](tarball://root/attachments/some-uuid/ticket6667/trac_6667_caruso_revised.patch) by chapoton created at 2013-08-28 09:48:14",
+    "body": "Attachment [trac_6667_caruso_revised.patch](tarball://root/attachments/some-uuid/ticket6667/trac_6667_caruso_revised.patch) by @fchapoton created at 2013-08-28 09:48:14",
     "created_at": "2013-08-28T09:48:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6667#issuecomment-54743",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac_6667_caruso_revised.patch](tarball://root/attachments/some-uuid/ticket6667/trac_6667_caruso_revised.patch) by chapoton created at 2013-08-28 09:48:14
+Attachment [trac_6667_caruso_revised.patch](tarball://root/attachments/some-uuid/ticket6667/trac_6667_caruso_revised.patch) by @fchapoton created at 2013-08-28 09:48:14
 
 
 
@@ -311,7 +311,7 @@ archive/issue_comments_054744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6667#issuecomment-54744",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_054745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6667#issuecomment-54745",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_054746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6667#issuecomment-54746",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -365,7 +365,7 @@ archive/issue_comments_054747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6667#issuecomment-54747",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -383,7 +383,7 @@ archive/issue_comments_054748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6667#issuecomment-54748",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

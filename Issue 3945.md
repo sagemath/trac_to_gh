@@ -3,7 +3,7 @@
 archive/issues_003945.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  mhansen\n\nIt's very annoying that \"sage -gdb\" doesn't work under OS X 10.5.\n\nHere's the temporary workaround I've been using when I need it:\n\n1. Comment this in sage/all.py:\n\n```\n# We have to set this here so urllib, etc. can detect it. \n#import sage.server.notebook.gnutls_socket_ssl\n#sage.server.notebook.gnutls_socket_ssl.require_SSL()\n```\n\n\n2. Type this:\n\n```\nsage -sh\ngdb python\n...\nr\n...\n>>> from sage.all import *\n```\n\n\nI'm not sure how to fix this problem.  Basically any importing of anything related to ipython or the ntoebook seems to halt gdb.  Maybe there is some option to gdb to make it ignore such signals. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3945\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @mwhansen\n\nIt's very annoying that \"sage -gdb\" doesn't work under OS X 10.5.\n\nHere's the temporary workaround I've been using when I need it:\n\n1. Comment this in sage/all.py:\n\n```\n# We have to set this here so urllib, etc. can detect it. \n#import sage.server.notebook.gnutls_socket_ssl\n#sage.server.notebook.gnutls_socket_ssl.require_SSL()\n```\n\n\n2. Type this:\n\n```\nsage -sh\ngdb python\n...\nr\n...\n>>> from sage.all import *\n```\n\n\nI'm not sure how to fix this problem.  Basically any importing of anything related to ipython or the ntoebook seems to halt gdb.  Maybe there is some option to gdb to make it ignore such signals. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3945\n\n",
     "created_at": "2008-08-24T18:47:11Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_003945.json:
     "title": "sage -gdb doesn't work under OS X 10.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3945",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
 
-CC:  mhansen
+CC:  @mwhansen
 
 It's very annoying that "sage -gdb" doesn't work under OS X 10.5.
 
@@ -186,7 +186,7 @@ archive/issue_comments_028321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3945#issuecomment-28321",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -199,16 +199,16 @@ Changing status from new to assigned.
 archive/issue_comments_028322.json:
 ```json
 {
-    "body": "Changing assignee from cwitty to mhansen.",
+    "body": "Changing assignee from cwitty to @mwhansen.",
     "created_at": "2008-10-12T19:01:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3945#issuecomment-28322",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from cwitty to mhansen.
+Changing assignee from cwitty to @mwhansen.
 
 
 
@@ -217,16 +217,16 @@ Changing assignee from cwitty to mhansen.
 archive/issue_comments_028323.json:
 ```json
 {
-    "body": "Attachment [trac_3945.patch](tarball://root/attachments/some-uuid/ticket3945/trac_3945.patch) by mhansen created at 2008-10-12 19:01:24",
+    "body": "Attachment [trac_3945.patch](tarball://root/attachments/some-uuid/ticket3945/trac_3945.patch) by @mwhansen created at 2008-10-12 19:01:24",
     "created_at": "2008-10-12T19:01:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3945#issuecomment-28323",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3945.patch](tarball://root/attachments/some-uuid/ticket3945/trac_3945.patch) by mhansen created at 2008-10-12 19:01:24
+Attachment [trac_3945.patch](tarball://root/attachments/some-uuid/ticket3945/trac_3945.patch) by @mwhansen created at 2008-10-12 19:01:24
 
 
 
@@ -235,16 +235,16 @@ Attachment [trac_3945.patch](tarball://root/attachments/some-uuid/ticket3945/tra
 archive/issue_comments_028324.json:
 ```json
 {
-    "body": "Attachment [trac_3945-2.patch](tarball://root/attachments/some-uuid/ticket3945/trac_3945-2.patch) by mhansen created at 2008-10-12 20:12:57",
+    "body": "Attachment [trac_3945-2.patch](tarball://root/attachments/some-uuid/ticket3945/trac_3945-2.patch) by @mwhansen created at 2008-10-12 20:12:57",
     "created_at": "2008-10-12T20:12:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3945#issuecomment-28324",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3945-2.patch](tarball://root/attachments/some-uuid/ticket3945/trac_3945-2.patch) by mhansen created at 2008-10-12 20:12:57
+Attachment [trac_3945-2.patch](tarball://root/attachments/some-uuid/ticket3945/trac_3945-2.patch) by @mwhansen created at 2008-10-12 20:12:57
 
 
 
@@ -311,13 +311,13 @@ Resolution: fixed
 archive/issue_comments_028328.json:
 ```json
 {
-    "body": "Attachment [trac_3945-3.patch](tarball://root/attachments/some-uuid/ticket3945/trac_3945-3.patch) by mhansen created at 2008-10-12 23:02:03",
+    "body": "Attachment [trac_3945-3.patch](tarball://root/attachments/some-uuid/ticket3945/trac_3945-3.patch) by @mwhansen created at 2008-10-12 23:02:03",
     "created_at": "2008-10-12T23:02:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3945#issuecomment-28328",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3945-3.patch](tarball://root/attachments/some-uuid/ticket3945/trac_3945-3.patch) by mhansen created at 2008-10-12 23:02:03
+Attachment [trac_3945-3.patch](tarball://root/attachments/some-uuid/ticket3945/trac_3945-3.patch) by @mwhansen created at 2008-10-12 23:02:03

@@ -3,7 +3,7 @@
 archive/issues_007589.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nCC:  vripoll stumpc5 tscrim\n\nThis should work automagically:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: a = CyclotomicField(3).random_element()\nsage: b = CyclotomicField(4).random_element()\nsage: a + b\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.2.1, Release Date: 2009-11-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n/home/ghitza/.sage/temp/artin/9098/_home_ghitza__sage_init_sage_0.py in <module>()\n\n/home/ghitza/sage-devel/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.ModuleElement.__add__ (sage/structure/element.c:6989)()\n\n/home/ghitza/sage-devel/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:7021)()\n\nTypeError: unsupported operand parent(s) for '+': 'Cyclotomic Field of order 3 and degree 2' and 'Cyclotomic Field of order 4 and degree 2'\nsage: a * b\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/ghitza/.sage/temp/artin/9098/_home_ghitza__sage_init_sage_0.py in <module>()\n\n/home/ghitza/sage-devel/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__mul__ (sage/structure/element.c:10248)()\n\n/home/ghitza/sage-devel/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:7021)()\n\nTypeError: unsupported operand parent(s) for '*': 'Cyclotomic Field of order 3 and degree 2' and 'Cyclotomic Field of order 4 and degree 2'\n```\n\n\nI think it's a coercion problem.  If someone knows better, please change the trac component accordingly.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7589\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  vripoll stumpc5 @tscrim\n\nThis should work automagically:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: a = CyclotomicField(3).random_element()\nsage: b = CyclotomicField(4).random_element()\nsage: a + b\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.2.1, Release Date: 2009-11-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n/home/ghitza/.sage/temp/artin/9098/_home_ghitza__sage_init_sage_0.py in <module>()\n\n/home/ghitza/sage-devel/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.ModuleElement.__add__ (sage/structure/element.c:6989)()\n\n/home/ghitza/sage-devel/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:7021)()\n\nTypeError: unsupported operand parent(s) for '+': 'Cyclotomic Field of order 3 and degree 2' and 'Cyclotomic Field of order 4 and degree 2'\nsage: a * b\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/ghitza/.sage/temp/artin/9098/_home_ghitza__sage_init_sage_0.py in <module>()\n\n/home/ghitza/sage-devel/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__mul__ (sage/structure/element.c:10248)()\n\n/home/ghitza/sage-devel/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:7021)()\n\nTypeError: unsupported operand parent(s) for '*': 'Cyclotomic Field of order 3 and degree 2' and 'Cyclotomic Field of order 4 and degree 2'\n```\n\n\nI think it's a coercion problem.  If someone knows better, please change the trac component accordingly.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7589\n\n",
     "created_at": "2009-12-03T09:45:31Z",
     "labels": [
         "coercion",
@@ -14,12 +14,12 @@ archive/issues_007589.json:
     "title": "bug in coercion and cyclotomic fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7589",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
-CC:  vripoll stumpc5 tscrim
+CC:  vripoll stumpc5 @tscrim
 
 This should work automagically:
 
@@ -148,7 +148,7 @@ archive/issue_comments_064698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7589",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7589#issuecomment-64698",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_064699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7589",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7589#issuecomment-64699",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_064700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7589",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7589#issuecomment-64700",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_064701.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7589",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7589#issuecomment-64701",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_064702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7589",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7589#issuecomment-64702",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_064703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7589",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7589#issuecomment-64703",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_064704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7589",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7589#issuecomment-64704",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_064705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7589",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7589#issuecomment-64705",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_064706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7589",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7589#issuecomment-64706",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

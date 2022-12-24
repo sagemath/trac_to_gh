@@ -3,7 +3,7 @@
 archive/issues_002771.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  burcin\n\nKeywords: coverage, polybori\n\n... working towards 100% :-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2771\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin\n\nKeywords: coverage, polybori\n\n... working towards 100% :-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2771\n\n",
     "created_at": "2008-04-02T13:41:42Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_002771.json:
     "title": "[with patch, needs review] PolyBoRi doctest coverage at 54%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2771",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  burcin
+CC:  @burcin
 
 Keywords: coverage, polybori
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2771
 archive/issue_comments_019046.json:
 ```json
 {
-    "body": "Attachment [pbori_54.patch](tarball://root/attachments/some-uuid/ticket2771/pbori_54.patch) by malb created at 2008-04-02 13:41:53",
+    "body": "Attachment [pbori_54.patch](tarball://root/attachments/some-uuid/ticket2771/pbori_54.patch) by @malb created at 2008-04-02 13:41:53",
     "created_at": "2008-04-02T13:41:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2771#issuecomment-19046",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [pbori_54.patch](tarball://root/attachments/some-uuid/ticket2771/pbori_54.patch) by malb created at 2008-04-02 13:41:53
+Attachment [pbori_54.patch](tarball://root/attachments/some-uuid/ticket2771/pbori_54.patch) by @malb created at 2008-04-02 13:41:53
 
 
 
@@ -89,7 +89,7 @@ archive/issue_comments_019048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2771#issuecomment-19048",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

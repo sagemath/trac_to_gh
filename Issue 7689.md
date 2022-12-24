@@ -14,7 +14,7 @@ archive/issues_007689.json:
     "title": "cd spkg/; ./install scripts --- this results in an annoying (but harmless error message); get rid of it",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7689",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: GeorgSWeber
@@ -52,7 +52,7 @@ archive/issue_comments_065977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7689",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7689#issuecomment-65977",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_065978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7689",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7689#issuecomment-65978",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_065979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7689",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7689#issuecomment-65979",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_065980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7689",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7689#issuecomment-65980",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

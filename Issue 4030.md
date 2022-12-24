@@ -14,7 +14,7 @@ archive/issues_004030.json:
     "title": "Vectors of callable things should be callable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4030",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 Assignee: tbd
@@ -64,7 +64,7 @@ archive/issue_comments_029072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4030#issuecomment-29072",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -77,16 +77,16 @@ Changing component from algebra to calculus.
 archive/issue_comments_029073.json:
 ```json
 {
-    "body": "Attachment [callable_vectors.patch](tarball://root/attachments/some-uuid/ticket4030/callable_vectors.patch) by jwmerrill created at 2008-09-01 05:23:47\n\nThe attached patch solves all the cases above except the last, which returns\n\n\n```\nsage: g(y=2,x=3)\nTraceback (most recent call last):\n...\nTypeError: __call__() got an unexpected keyword argument 'y'\n```\n\n\nNot sure what the deal is with that.\n\nThis patch should only be applied after #2547.",
+    "body": "Attachment [callable_vectors.patch](tarball://root/attachments/some-uuid/ticket4030/callable_vectors.patch) by @jicama created at 2008-09-01 05:23:47\n\nThe attached patch solves all the cases above except the last, which returns\n\n\n```\nsage: g(y=2,x=3)\nTraceback (most recent call last):\n...\nTypeError: __call__() got an unexpected keyword argument 'y'\n```\n\n\nNot sure what the deal is with that.\n\nThis patch should only be applied after #2547.",
     "created_at": "2008-09-01T05:23:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4030#issuecomment-29073",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
-Attachment [callable_vectors.patch](tarball://root/attachments/some-uuid/ticket4030/callable_vectors.patch) by jwmerrill created at 2008-09-01 05:23:47
+Attachment [callable_vectors.patch](tarball://root/attachments/some-uuid/ticket4030/callable_vectors.patch) by @jicama created at 2008-09-01 05:23:47
 
 The attached patch solves all the cases above except the last, which returns
 
@@ -110,16 +110,16 @@ This patch should only be applied after #2547.
 archive/issue_comments_029074.json:
 ```json
 {
-    "body": "Changing assignee from tbd to jwmerrill.",
+    "body": "Changing assignee from tbd to @jicama.",
     "created_at": "2008-09-01T05:23:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4030#issuecomment-29074",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
-Changing assignee from tbd to jwmerrill.
+Changing assignee from tbd to @jicama.
 
 
 
@@ -133,7 +133,7 @@ archive/issue_comments_029075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4030#issuecomment-29075",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_029076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4030#issuecomment-29076",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_029078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4030#issuecomment-29078",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_029079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4030#issuecomment-29079",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 

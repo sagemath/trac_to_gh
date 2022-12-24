@@ -14,7 +14,7 @@ archive/issues_009189.json:
     "title": "libgcrypt fails to build on Fedora 13",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9189",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: GeorgSWeber
@@ -81,7 +81,7 @@ archive/issue_comments_085987.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9189#issuecomment-85987",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_085988.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9189#issuecomment-85988",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_085989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9189#issuecomment-85989",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_085990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9189#issuecomment-85990",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_085991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9189#issuecomment-85991",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_085992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9189#issuecomment-85992",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

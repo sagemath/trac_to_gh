@@ -3,7 +3,7 @@
 archive/issues_003958.json:
 ```json
 {
-    "body": "Assignee: itolkov\n\ntry:\n\n\n```\n@interact\ndef _(a=range_slider(-1,1),b=range_slider(-1,1),c=slider(-1,1),d=slider(-1,1)):\n    pass\n```\n\nA browser error and a \"truncated output\" error result.  The resulting interact also is missing labels and the \"c\" slider.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3958\n\n",
+    "body": "Assignee: @itolkov\n\ntry:\n\n\n```\n@interact\ndef _(a=range_slider(-1,1),b=range_slider(-1,1),c=slider(-1,1),d=slider(-1,1)):\n    pass\n```\n\nA browser error and a \"truncated output\" error result.  The resulting interact also is missing labels and the \"c\" slider.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3958\n\n",
     "created_at": "2008-08-26T17:12:49Z",
     "labels": [
         "interact",
@@ -14,10 +14,10 @@ archive/issues_003958.json:
     "title": "interact gives \"unterminated string literal\" in the browser",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3958",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: itolkov
+Assignee: @itolkov
 
 try:
 
@@ -47,7 +47,7 @@ archive/issue_comments_028429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3958#issuecomment-28429",
-    "user": "itolkov"
+    "user": "@itolkov"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_028430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3958#issuecomment-28430",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_028431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3958#issuecomment-28431",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

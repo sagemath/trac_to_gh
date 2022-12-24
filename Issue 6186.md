@@ -3,7 +3,7 @@
 archive/issues_006186.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  roed\n\n\n```\nsage: version()\n'Sage Version 4.0, Release Date: 2009-05-29'\n\nsage: G =  Algebras(CC); G.category()\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call\nlast)\n\n/Users/jeromelefebvre/.sage/temp/Jerome.local/57209/\n_Users_jeromelefebvre__sage_init_sage_0.py in <module>()\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/categories/\ncategory.pyc in category(self)\n   172\n   173     def category(self):\n--> 174         return Objects()\n   175\n   176 def is_Category(x):\n\nNameError: global name 'Objects' is not defined\n\n\nAn other;\n\nsage: k = Qp(13);f.<a> = k.extension(x^2+1)\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call\nlast)\n\n/Users/jeromelefebvre/.sage/temp/Jerome.local/57209/\n_Users_jeromelefebvre__sage_init_sage_0.py in <module>()\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/rings/padics/\npadic_generic.pyc in extension(self, modulus, prec, names, print_mode,\nhalt, **kwds)\n   463                     else:\n   464                         print_mode[option] = self._printer.dict\n()[option]\n--> 465         return ExtensionFactory(base=self, premodulus=modulus,\nprec=prec, halt=halt, names=names, check = True, **print_mode)\n   466\n   467 def local_print_mode(obj, print_options, pos = None, ram_name\n# None):\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/structure/\nfactory.so in sage.structure.factory.UniqueFactory.__call__ (sage/\nstructure/factory.c:761)()\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/rings/padics/\nfactory.pyc in create_key_and_extra_args(self, base, premodulus, prec,\nprint_mode, halt, names, var_name, res_name, unram_name, ram_name,\nprint_pos, print_sep, print_alphabet, print_max_ram_terms,\nprint_max_unram_terms, print_max_terse_terms, check, unram)\n  2261             key = (polytype, base, premodulus, modulus, names,\nprec, halt, print_mode, print_pos, print_sep, tuple(print_alphabet),\nprint_max_ram_terms, print_max_unram_terms, print_max_terse_terms)\n  2262         else:\n-> 2263             upoly, epoly, prec = split(modulus, prec)\n  2264             key = (polytype, base, premodulus, upoly, epoly,\nnames, prec, halt, print_mode, print_pos, print_sep, tuple\n(print_alphabet), print_max_ram_terms, print_max_unram_terms,\nprint_max_terse_terms)\n  2265         return key, {'shift_seed': shift_seed}\n\nNameError: global name 'split' is not defined\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6186\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @roed314\n\n\n```\nsage: version()\n'Sage Version 4.0, Release Date: 2009-05-29'\n\nsage: G =  Algebras(CC); G.category()\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call\nlast)\n\n/Users/jeromelefebvre/.sage/temp/Jerome.local/57209/\n_Users_jeromelefebvre__sage_init_sage_0.py in <module>()\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/categories/\ncategory.pyc in category(self)\n   172\n   173     def category(self):\n--> 174         return Objects()\n   175\n   176 def is_Category(x):\n\nNameError: global name 'Objects' is not defined\n\n\nAn other;\n\nsage: k = Qp(13);f.<a> = k.extension(x^2+1)\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call\nlast)\n\n/Users/jeromelefebvre/.sage/temp/Jerome.local/57209/\n_Users_jeromelefebvre__sage_init_sage_0.py in <module>()\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/rings/padics/\npadic_generic.pyc in extension(self, modulus, prec, names, print_mode,\nhalt, **kwds)\n   463                     else:\n   464                         print_mode[option] = self._printer.dict\n()[option]\n--> 465         return ExtensionFactory(base=self, premodulus=modulus,\nprec=prec, halt=halt, names=names, check = True, **print_mode)\n   466\n   467 def local_print_mode(obj, print_options, pos = None, ram_name\n# None):\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/structure/\nfactory.so in sage.structure.factory.UniqueFactory.__call__ (sage/\nstructure/factory.c:761)()\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/rings/padics/\nfactory.pyc in create_key_and_extra_args(self, base, premodulus, prec,\nprint_mode, halt, names, var_name, res_name, unram_name, ram_name,\nprint_pos, print_sep, print_alphabet, print_max_ram_terms,\nprint_max_unram_terms, print_max_terse_terms, check, unram)\n  2261             key = (polytype, base, premodulus, modulus, names,\nprec, halt, print_mode, print_pos, print_sep, tuple(print_alphabet),\nprint_max_ram_terms, print_max_unram_terms, print_max_terse_terms)\n  2262         else:\n-> 2263             upoly, epoly, prec = split(modulus, prec)\n  2264             key = (polytype, base, premodulus, upoly, epoly,\nnames, prec, halt, print_mode, print_pos, print_sep, tuple\n(print_alphabet), print_max_ram_terms, print_max_unram_terms,\nprint_max_terse_terms)\n  2265         return key, {'shift_seed': shift_seed}\n\nNameError: global name 'split' is not defined\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6186\n\n",
     "created_at": "2009-06-02T15:18:50Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_006186.json:
     "title": "two probably-easy-to-fix scope bugs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6186",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
 
-CC:  roed
+CC:  @roed314
 
 
 ```
@@ -107,7 +107,7 @@ archive/issue_comments_049386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6186",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6186#issuecomment-49386",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_049387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6186",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6186#issuecomment-49387",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_049388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6186",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6186#issuecomment-49388",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_049389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6186",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6186#issuecomment-49389",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_049392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6186",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6186#issuecomment-49392",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

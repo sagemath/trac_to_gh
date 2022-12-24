@@ -3,7 +3,7 @@
 archive/issues_005460.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nSee [this thread on sage-devel](http://groups.google.com/group/sage-support/browse_frm/thread/215ae58d5a3e900f).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5460\n\n",
+    "body": "Assignee: @jhpalmieri\n\nSee [this thread on sage-devel](http://groups.google.com/group/sage-support/browse_frm/thread/215ae58d5a3e900f).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5460\n\n",
     "created_at": "2009-03-09T20:17:51Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005460.json:
     "title": "[with patch, needs review] deprecate 'invert' in matrix_rational_dense",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5460",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 See [this thread on sage-devel](http://groups.google.com/group/sage-support/browse_frm/thread/215ae58d5a3e900f).
 
@@ -38,7 +38,7 @@ archive/issue_comments_042396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5460#issuecomment-42396",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_042397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5460#issuecomment-42397",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_042398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5460#issuecomment-42398",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_042399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5460#issuecomment-42399",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_042400.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5460#issuecomment-42400",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_042401.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5460#issuecomment-42401",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -181,16 +181,16 @@ The one doctest involves a Traceback and "...", and I'm guessing that the "..." 
 archive/issue_comments_042402.json:
 ```json
 {
-    "body": "Attachment [deprecate-invert.patch](tarball://root/attachments/some-uuid/ticket5460/deprecate-invert.patch) by jhpalmieri created at 2009-03-10 18:43:45\n\nHere's a new patch; the only difference is the documentation for 'invert'.",
+    "body": "Attachment [deprecate-invert.patch](tarball://root/attachments/some-uuid/ticket5460/deprecate-invert.patch) by @jhpalmieri created at 2009-03-10 18:43:45\n\nHere's a new patch; the only difference is the documentation for 'invert'.",
     "created_at": "2009-03-10T18:43:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5460#issuecomment-42402",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [deprecate-invert.patch](tarball://root/attachments/some-uuid/ticket5460/deprecate-invert.patch) by jhpalmieri created at 2009-03-10 18:43:45
+Attachment [deprecate-invert.patch](tarball://root/attachments/some-uuid/ticket5460/deprecate-invert.patch) by @jhpalmieri created at 2009-03-10 18:43:45
 
 Here's a new patch; the only difference is the documentation for 'invert'.
 
@@ -206,7 +206,7 @@ archive/issue_comments_042403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5460#issuecomment-42403",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 

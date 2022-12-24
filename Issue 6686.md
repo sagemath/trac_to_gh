@@ -14,7 +14,7 @@ archive/issues_006686.json:
     "title": "[with patch, needs review] Missing closing </center> tag in notebook help page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6686",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: boothby
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6686
 archive/issue_comments_054980.json:
 ```json
 {
-    "body": "Attachment [trac_6686-help_center_tag.patch](tarball://root/attachments/some-uuid/ticket6686/trac_6686-help_center_tag.patch) by mpatel created at 2009-08-08 09:58:44",
+    "body": "Attachment [trac_6686-help_center_tag.patch](tarball://root/attachments/some-uuid/ticket6686/trac_6686-help_center_tag.patch) by @qed777 created at 2009-08-08 09:58:44",
     "created_at": "2009-08-08T09:58:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6686",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6686#issuecomment-54980",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6686-help_center_tag.patch](tarball://root/attachments/some-uuid/ticket6686/trac_6686-help_center_tag.patch) by mpatel created at 2009-08-08 09:58:44
+Attachment [trac_6686-help_center_tag.patch](tarball://root/attachments/some-uuid/ticket6686/trac_6686-help_center_tag.patch) by @qed777 created at 2009-08-08 09:58:44
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_054981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6686",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6686#issuecomment-54981",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -68,16 +68,16 @@ Alternative way to balance <center> tags.  Apply either this OR the other patch.
 archive/issue_comments_054982.json:
 ```json
 {
-    "body": "Attachment [trac_6686-help_center_tag_alt.patch](tarball://root/attachments/some-uuid/ticket6686/trac_6686-help_center_tag_alt.patch) by mpatel created at 2009-08-08 10:03:33",
+    "body": "Attachment [trac_6686-help_center_tag_alt.patch](tarball://root/attachments/some-uuid/ticket6686/trac_6686-help_center_tag_alt.patch) by @qed777 created at 2009-08-08 10:03:33",
     "created_at": "2009-08-08T10:03:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6686",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6686#issuecomment-54982",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6686-help_center_tag_alt.patch](tarball://root/attachments/some-uuid/ticket6686/trac_6686-help_center_tag_alt.patch) by mpatel created at 2009-08-08 10:03:33
+Attachment [trac_6686-help_center_tag_alt.patch](tarball://root/attachments/some-uuid/ticket6686/trac_6686-help_center_tag_alt.patch) by @qed777 created at 2009-08-08 10:03:33
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_054983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6686",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6686#issuecomment-54983",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

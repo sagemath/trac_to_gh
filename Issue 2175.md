@@ -3,7 +3,7 @@
 archive/issues_002175.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nI wrote a Makefile for genus2reduction Debian builds, and made Debian apply it as a quilt patch (so it's available as a patch in dist/debian/patches/ of the genus2reduction spkg).  We should probably move the Makefile into the \"upstream\" eventually.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2175\n\n",
+    "body": "Assignee: @timabbott\n\nI wrote a Makefile for genus2reduction Debian builds, and made Debian apply it as a quilt patch (so it's available as a patch in dist/debian/patches/ of the genus2reduction spkg).  We should probably move the Makefile into the \"upstream\" eventually.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2175\n\n",
     "created_at": "2008-02-16T01:41:19Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_002175.json:
     "title": "genus2reduction makefile",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2175",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 I wrote a Makefile for genus2reduction Debian builds, and made Debian apply it as a quilt patch (so it's available as a patch in dist/debian/patches/ of the genus2reduction spkg).  We should probably move the Makefile into the "upstream" eventually.
 
@@ -72,7 +72,7 @@ Michael
 archive/issue_comments_014283.json:
 ```json
 {
-    "body": "Changing assignee from tabbott to mabshoff.",
+    "body": "Changing assignee from @timabbott to mabshoff.",
     "created_at": "2008-02-20T14:10:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2175",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_014283.json:
 }
 ```
 
-Changing assignee from tabbott to mabshoff.
+Changing assignee from @timabbott to mabshoff.
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_007718.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nKeywords: coercion, segfault\n\nA segfault is caused by failure to check whether elements are None.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7718\n\n",
+    "body": "Assignee: @robertwb\n\nKeywords: coercion, segfault\n\nA segfault is caused by failure to check whether elements are None.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7718\n\n",
     "created_at": "2009-12-17T07:27:13Z",
     "labels": [
         "coercion",
@@ -14,10 +14,10 @@ archive/issues_007718.json:
     "title": "Segfault in coercion code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7718",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 Keywords: coercion, segfault
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7718
 archive/issue_comments_066286.json:
 ```json
 {
-    "body": "Attachment [7718.patch](tarball://root/attachments/some-uuid/ticket7718/7718.patch) by roed created at 2009-12-17 07:35:50",
+    "body": "Attachment [7718.patch](tarball://root/attachments/some-uuid/ticket7718/7718.patch) by @roed314 created at 2009-12-17 07:35:50",
     "created_at": "2009-12-17T07:35:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7718#issuecomment-66286",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [7718.patch](tarball://root/attachments/some-uuid/ticket7718/7718.patch) by roed created at 2009-12-17 07:35:50
+Attachment [7718.patch](tarball://root/attachments/some-uuid/ticket7718/7718.patch) by @roed314 created at 2009-12-17 07:35:50
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_066287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7718#issuecomment-66287",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_066288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7718#issuecomment-66288",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_066289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7718#issuecomment-66289",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_066290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7718#issuecomment-66290",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_004454.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  robertwb boothby\n\nsage 3.1.4 on a 32-bit core duo\n\nconsider a file 'time.sage' with the following content:\n\ndef func(time = 5):\n    time = RDF(time)\n    return time\n\nloading this file then yields following error:\n\nsage: load time.sage\n------------------------------------------------------------\n   File \"/home/georg/.sage/temp/HILBERT/4119/_home_georg_Daten_Sync_Software_Sage_Experimente_time_time_sage_0.py\", line 7\n     __time__=misc.cputime(); __wall__=misc.walltime();  = RDF(time); print     \"Time: CPU %.2f s, Wall: %.2f s\"%(misc.cputime(__time__), misc.walltime(__wall__))\n                                                         ^\nSyntaxError: invalid syntax\n\nWARNING: Failure executing file: </home/georg/.sage/temp/HILBERT/4119/_home_georg_Daten_Sync_Software_Sage_Experimente_time_time_sage_0.py>\n\n\nIf one quits the space between 'time' and '=' in the second line of 'time.sage' it works as expected.\nDefining this function directly on the sage prompt also works as expected.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4454\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @robertwb boothby\n\nsage 3.1.4 on a 32-bit core duo\n\nconsider a file 'time.sage' with the following content:\n\ndef func(time = 5):\n    time = RDF(time)\n    return time\n\nloading this file then yields following error:\n\nsage: load time.sage\n------------------------------------------------------------\n   File \"/home/georg/.sage/temp/HILBERT/4119/_home_georg_Daten_Sync_Software_Sage_Experimente_time_time_sage_0.py\", line 7\n     __time__=misc.cputime(); __wall__=misc.walltime();  = RDF(time); print     \"Time: CPU %.2f s, Wall: %.2f s\"%(misc.cputime(__time__), misc.walltime(__wall__))\n                                                         ^\nSyntaxError: invalid syntax\n\nWARNING: Failure executing file: </home/georg/.sage/temp/HILBERT/4119/_home_georg_Daten_Sync_Software_Sage_Experimente_time_time_sage_0.py>\n\n\nIf one quits the space between 'time' and '=' in the second line of 'time.sage' it works as expected.\nDefining this function directly on the sage prompt also works as expected.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4454\n\n",
     "created_at": "2008-11-06T15:25:38Z",
     "labels": [
         "misc",
@@ -19,7 +19,7 @@ archive/issues_004454.json:
 ```
 Assignee: cwitty
 
-CC:  robertwb boothby
+CC:  @robertwb boothby
 
 sage 3.1.4 on a 32-bit core duo
 
@@ -150,7 +150,7 @@ archive/issue_comments_032865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4454",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4454#issuecomment-32865",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_032866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4454",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4454#issuecomment-32866",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_032867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4454",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4454#issuecomment-32867",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

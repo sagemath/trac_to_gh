@@ -3,7 +3,7 @@
 archive/issues_000259.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nIn sage-2.0 and sage-2.1.0.1 the first Axiom command that I enter\nhangs the sage process but if I hit control-c and re-enter the\ncommand, it works as it used to work. This also affects Axiom\ncommands entered via the notebook.\n \n  sage: axiom('1+1')\n  ... waits indefinitely ...\n  ^C\n  ...\n  sage: axiom('1+1')\n \n     2\n \n  sage:\n \n---------------\n \nI will take a look at the axiom inteface code when I get time\nbut perhaps someone already knows what might have changed in\nthe way the interface works?\n \nBTW, I am using the axiom4sage-0.1 download from sage.math but\nI had a problem with the simple\n \n  sage -I axiom4sage-0.1.spkg\n \ncommand. I apparently received only a partial download and the\ninstall failed. Later, I downloaded axiom4sage-0.1.spkg directly\nto the sage root directory and repeated the command:\n \n  sage -I axiom4sage-0.1.spkg\n \nThen Axiom was built and installed as expected on my OpenSuSE 10.2\nx86 linux system.\n \nRegards,\nBill Page.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/259\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nIn sage-2.0 and sage-2.1.0.1 the first Axiom command that I enter\nhangs the sage process but if I hit control-c and re-enter the\ncommand, it works as it used to work. This also affects Axiom\ncommands entered via the notebook.\n \n  sage: axiom('1+1')\n  ... waits indefinitely ...\n  ^C\n  ...\n  sage: axiom('1+1')\n \n     2\n \n  sage:\n \n---------------\n \nI will take a look at the axiom inteface code when I get time\nbut perhaps someone already knows what might have changed in\nthe way the interface works?\n \nBTW, I am using the axiom4sage-0.1 download from sage.math but\nI had a problem with the simple\n \n  sage -I axiom4sage-0.1.spkg\n \ncommand. I apparently received only a partial download and the\ninstall failed. Later, I downloaded axiom4sage-0.1.spkg directly\nto the sage root directory and repeated the command:\n \n  sage -I axiom4sage-0.1.spkg\n \nThen Axiom was built and installed as expected on my OpenSuSE 10.2\nx86 linux system.\n \nRegards,\nBill Page.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/259\n\n",
     "created_at": "2007-02-11T23:01:58Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_000259.json:
     "title": "axiom bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/259",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -77,7 +77,7 @@ archive/issue_comments_001204.json:
     "issue": "https://github.com/sagemath/sagetest/issues/259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/259#issuecomment-1204",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

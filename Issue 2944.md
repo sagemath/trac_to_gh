@@ -3,7 +3,7 @@
 archive/issues_002944.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis patch adds an optional E2 parameter to `padic_height_via_multiply`. The idea is to make it possible to use a precomputed value of E2. Since the E2 computation is very expensive relative to the p-adic height computation, this makes it easier to do profiling work on the p-adic height portion of the computation.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2944\n\n",
+    "body": "Assignee: @williamstein\n\nThis patch adds an optional E2 parameter to `padic_height_via_multiply`. The idea is to make it possible to use a precomputed value of E2. Since the E2 computation is very expensive relative to the p-adic height computation, this makes it easier to do profiling work on the p-adic height portion of the computation.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2944\n\n",
     "created_at": "2008-04-16T22:32:27Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_002944.json:
     "user": "dmharvey"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This patch adds an optional E2 parameter to `padic_height_via_multiply`. The idea is to make it possible to use a precomputed value of E2. Since the E2 computation is very expensive relative to the p-adic height computation, this makes it easier to do profiling work on the p-adic height portion of the computation.
 
@@ -56,7 +56,7 @@ archive/issue_comments_020305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2944",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2944#issuecomment-20305",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

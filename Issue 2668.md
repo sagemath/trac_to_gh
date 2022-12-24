@@ -3,7 +3,7 @@
 archive/issues_002668.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  ncalexan\n\nKeywords: QQbar AA loads dumps save\n\n\n```\nsage: loads(dumps(QQbar.zeta(5))) == QQbar.zeta(5)\n---------------------------------------------------------------------------\n<type 'exceptions.RuntimeError'>          Traceback (most recent call last)\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/<ipython console> in <module>()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/sage_object.pyx in sage.structure.sage_object.loads()\n\n<type 'exceptions.RuntimeError'>: __new__() takes exactly 3 arguments (1 given)\ninvalid data stream\ninvalid load key, 'x'.\nUnable to load pickled data.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2668\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nKeywords: QQbar AA loads dumps save\n\n\n```\nsage: loads(dumps(QQbar.zeta(5))) == QQbar.zeta(5)\n---------------------------------------------------------------------------\n<type 'exceptions.RuntimeError'>          Traceback (most recent call last)\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/<ipython console> in <module>()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/sage_object.pyx in sage.structure.sage_object.loads()\n\n<type 'exceptions.RuntimeError'>: __new__() takes exactly 3 arguments (1 given)\ninvalid data stream\ninvalid load key, 'x'.\nUnable to load pickled data.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2668\n\n",
     "created_at": "2008-03-25T21:42:47Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_002668.json:
     "title": "loads/dumps do not work with QQbar and AA",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2668",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  ncalexan
+CC:  @ncalexan
 
 Keywords: QQbar AA loads dumps save
 
@@ -51,16 +51,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2668
 archive/issue_comments_018367.json:
 ```json
 {
-    "body": "Attachment [2668-ncalexan-QQbar-pickle-1.patch](tarball://root/attachments/some-uuid/ticket2668/2668-ncalexan-QQbar-pickle-1.patch) by ncalexan created at 2008-03-26 18:57:36",
+    "body": "Attachment [2668-ncalexan-QQbar-pickle-1.patch](tarball://root/attachments/some-uuid/ticket2668/2668-ncalexan-QQbar-pickle-1.patch) by @ncalexan created at 2008-03-26 18:57:36",
     "created_at": "2008-03-26T18:57:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2668",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2668#issuecomment-18367",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [2668-ncalexan-QQbar-pickle-1.patch](tarball://root/attachments/some-uuid/ticket2668/2668-ncalexan-QQbar-pickle-1.patch) by ncalexan created at 2008-03-26 18:57:36
+Attachment [2668-ncalexan-QQbar-pickle-1.patch](tarball://root/attachments/some-uuid/ticket2668/2668-ncalexan-QQbar-pickle-1.patch) by @ncalexan created at 2008-03-26 18:57:36
 
 
 

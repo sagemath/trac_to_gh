@@ -14,7 +14,7 @@ archive/issues_007341.json:
     "title": "major tab completion issue in notebook (?)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7341",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -46,7 +46,7 @@ archive/issue_comments_061437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7341#issuecomment-61437",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -59,16 +59,16 @@ Changing priority from major to blocker.
 archive/issue_comments_061438.json:
 ```json
 {
-    "body": "Attachment [trac_sagenb-7341.patch](tarball://root/attachments/some-uuid/ticket7341/trac_sagenb-7341.patch) by was created at 2009-10-29 06:42:32",
+    "body": "Attachment [trac_sagenb-7341.patch](tarball://root/attachments/some-uuid/ticket7341/trac_sagenb-7341.patch) by @williamstein created at 2009-10-29 06:42:32",
     "created_at": "2009-10-29T06:42:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7341#issuecomment-61438",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_sagenb-7341.patch](tarball://root/attachments/some-uuid/ticket7341/trac_sagenb-7341.patch) by was created at 2009-10-29 06:42:32
+Attachment [trac_sagenb-7341.patch](tarball://root/attachments/some-uuid/ticket7341/trac_sagenb-7341.patch) by @williamstein created at 2009-10-29 06:42:32
 
 
 
@@ -82,7 +82,7 @@ archive/issue_comments_061439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7341#issuecomment-61439",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_061440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7341#issuecomment-61440",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_061441.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7341#issuecomment-61441",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_061442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7341#issuecomment-61442",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

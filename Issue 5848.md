@@ -3,7 +3,7 @@
 archive/issues_005848.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nCC:  roed\n\nThe attached patch removes all of the TABs I could find in .py and .pyx files in the Sage library.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5848\n\n",
+    "body": "Assignee: @jhpalmieri\n\nCC:  @roed314\n\nThe attached patch removes all of the TABs I could find in .py and .pyx files in the Sage library.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5848\n\n",
     "created_at": "2009-04-21T23:51:34Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_005848.json:
     "title": "[with patch, needs review] untabify Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5848",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
-CC:  roed
+CC:  @roed314
 
 The attached patch removes all of the TABs I could find in .py and .pyx files in the Sage library.
 
@@ -35,16 +35,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5848
 archive/issue_comments_046144.json:
 ```json
 {
-    "body": "Attachment [untabify.patch](tarball://root/attachments/some-uuid/ticket5848/untabify.patch) by rbeezer created at 2009-04-22 04:45:07\n\nPatch choked twice on `modular/dirichlet.py`, which seems odd, given how fresh it is, and I can't really tell why.  I was applying it to an upgraded 3.4.1.rc4   Maybe it will patch better under mabshoff's firm guidance.\n\nBuilds just fine.  Passes `sage -testall`, except some unpickling errors in `structure/sage_object.pyx` and `algebras/quaternion_algebra_element.py` concerning `QuaternionAlgebraElements`, but the changes to these files don't appear implicated in these errors,\n\nDocumentation builds fine as well (PDF of reference manual) with no TeX errors.\n\nPositive review, subject to the business above about patching `modular/dirichlet.py`.",
+    "body": "Attachment [untabify.patch](tarball://root/attachments/some-uuid/ticket5848/untabify.patch) by @rbeezer created at 2009-04-22 04:45:07\n\nPatch choked twice on `modular/dirichlet.py`, which seems odd, given how fresh it is, and I can't really tell why.  I was applying it to an upgraded 3.4.1.rc4   Maybe it will patch better under mabshoff's firm guidance.\n\nBuilds just fine.  Passes `sage -testall`, except some unpickling errors in `structure/sage_object.pyx` and `algebras/quaternion_algebra_element.py` concerning `QuaternionAlgebraElements`, but the changes to these files don't appear implicated in these errors,\n\nDocumentation builds fine as well (PDF of reference manual) with no TeX errors.\n\nPositive review, subject to the business above about patching `modular/dirichlet.py`.",
     "created_at": "2009-04-22T04:45:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5848",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5848#issuecomment-46144",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [untabify.patch](tarball://root/attachments/some-uuid/ticket5848/untabify.patch) by rbeezer created at 2009-04-22 04:45:07
+Attachment [untabify.patch](tarball://root/attachments/some-uuid/ticket5848/untabify.patch) by @rbeezer created at 2009-04-22 04:45:07
 
 Patch choked twice on `modular/dirichlet.py`, which seems odd, given how fresh it is, and I can't really tell why.  I was applying it to an upgraded 3.4.1.rc4   Maybe it will patch better under mabshoff's firm guidance.
 
@@ -88,7 +88,7 @@ archive/issue_comments_046146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5848",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5848#issuecomment-46146",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 

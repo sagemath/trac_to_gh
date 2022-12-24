@@ -14,7 +14,7 @@ archive/issues_006325.json:
     "title": "optional doctest failure -- linear algebra constructions.rst",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6325",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -52,7 +52,7 @@ archive/issue_comments_050478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6325#issuecomment-50478",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_050479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6325#issuecomment-50479",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -91,16 +91,16 @@ Patch applies fine to 4.0.2.rc1 and passes sage -tp 1 SAGE_ROOT/devel/sage/doc/e
 archive/issue_comments_050480.json:
 ```json
 {
-    "body": "Attachment [trac_6325.patch](tarball://root/attachments/some-uuid/ticket6325/trac_6325.patch) by wdj created at 2009-06-17 12:56:57\n\napplies to 4.0.2.rc1",
+    "body": "Attachment [trac_6325.patch](tarball://root/attachments/some-uuid/ticket6325/trac_6325.patch) by @wdjoyner created at 2009-06-17 12:56:57\n\napplies to 4.0.2.rc1",
     "created_at": "2009-06-17T12:56:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6325#issuecomment-50480",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_6325.patch](tarball://root/attachments/some-uuid/ticket6325/trac_6325.patch) by wdj created at 2009-06-17 12:56:57
+Attachment [trac_6325.patch](tarball://root/attachments/some-uuid/ticket6325/trac_6325.patch) by @wdjoyner created at 2009-06-17 12:56:57
 
 applies to 4.0.2.rc1
 
@@ -116,7 +116,7 @@ archive/issue_comments_050481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6325#issuecomment-50481",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

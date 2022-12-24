@@ -3,7 +3,7 @@
 archive/issues_006014.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nKeywords: combinatorics, coding theory\n\nThis patch implements kittens, hexads and mathematical blackjack as explained in\n\n\n```\n    R. Curtis, ``The Steiner system $S(5,6,12)$, the Mathieu group $M_{12}$, \n    and the kitten,'' in {\\bf Computational group theory}, ed. M. Atkinson, \n    Academic Press, 1984.\n    J. Conway, ``Hexacode and tetracode - MINIMOG and MOG,'' in {\\bf Computational \n    group theory}, ed. M. Atkinson, Academic Press, 1984.\n    J. Conway and N. Sloane, ``Lexicographic codes: error-correcting codes from \n    game theory,'' IEEE Trans. Infor. Theory32(1986)337-348.\n    J. Kahane and A. Ryba, ``The hexad game,'' Electronic Journal of Combinatorics, 8 (2001) \n    http://www.combinatorics.org/Volume_8/Abstracts/v8i2r11.html\n```\n\n\nIt is used in a book on coding theory I'm writing with Jon-Lark Kim on coding theory, which uses Sage throughout to illustrate error-correcting codes.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6014\n\n",
+    "body": "Assignee: @rlmill\n\nKeywords: combinatorics, coding theory\n\nThis patch implements kittens, hexads and mathematical blackjack as explained in\n\n\n```\n    R. Curtis, ``The Steiner system $S(5,6,12)$, the Mathieu group $M_{12}$, \n    and the kitten,'' in {\\bf Computational group theory}, ed. M. Atkinson, \n    Academic Press, 1984.\n    J. Conway, ``Hexacode and tetracode - MINIMOG and MOG,'' in {\\bf Computational \n    group theory}, ed. M. Atkinson, Academic Press, 1984.\n    J. Conway and N. Sloane, ``Lexicographic codes: error-correcting codes from \n    game theory,'' IEEE Trans. Infor. Theory32(1986)337-348.\n    J. Kahane and A. Ryba, ``The hexad game,'' Electronic Journal of Combinatorics, 8 (2001) \n    http://www.combinatorics.org/Volume_8/Abstracts/v8i2r11.html\n```\n\n\nIt is used in a book on coding theory I'm writing with Jon-Lark Kim on coding theory, which uses Sage throughout to illustrate error-correcting codes.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6014\n\n",
     "created_at": "2009-05-10T12:56:56Z",
     "labels": [
         "coding theory",
@@ -14,10 +14,10 @@ archive/issues_006014.json:
     "title": "hexads in S(5,6,12) and mathematical blackjack",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6014",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Keywords: combinatorics, coding theory
 
@@ -56,7 +56,7 @@ archive/issue_comments_047851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6014",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6014#issuecomment-47851",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -69,16 +69,16 @@ applies to 3.4.2 and passes sage -testall
 archive/issue_comments_047852.json:
 ```json
 {
-    "body": "Attachment [trac_6014-hexads.patch](tarball://root/attachments/some-uuid/ticket6014/trac_6014-hexads.patch) by wdj created at 2009-05-12 00:33:10",
+    "body": "Attachment [trac_6014-hexads.patch](tarball://root/attachments/some-uuid/ticket6014/trac_6014-hexads.patch) by @wdjoyner created at 2009-05-12 00:33:10",
     "created_at": "2009-05-12T00:33:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6014",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6014#issuecomment-47852",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_6014-hexads.patch](tarball://root/attachments/some-uuid/ticket6014/trac_6014-hexads.patch) by wdj created at 2009-05-12 00:33:10
+Attachment [trac_6014-hexads.patch](tarball://root/attachments/some-uuid/ticket6014/trac_6014-hexads.patch) by @wdjoyner created at 2009-05-12 00:33:10
 
 
 
@@ -109,16 +109,16 @@ Also, is it really that difficult to implement minimog_modulo11?  I think the on
 archive/issue_comments_047854.json:
 ```json
 {
-    "body": "Attachment [trac_6014-hexads2.patch](tarball://root/attachments/some-uuid/ticket6014/trac_6014-hexads2.patch) by wdj created at 2009-06-03 04:41:37",
+    "body": "Attachment [trac_6014-hexads2.patch](tarball://root/attachments/some-uuid/ticket6014/trac_6014-hexads2.patch) by @wdjoyner created at 2009-06-03 04:41:37",
     "created_at": "2009-06-03T04:41:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6014",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6014#issuecomment-47854",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_6014-hexads2.patch](tarball://root/attachments/some-uuid/ticket6014/trac_6014-hexads2.patch) by wdj created at 2009-06-03 04:41:37
+Attachment [trac_6014-hexads2.patch](tarball://root/attachments/some-uuid/ticket6014/trac_6014-hexads2.patch) by @wdjoyner created at 2009-06-03 04:41:37
 
 
 
@@ -132,7 +132,7 @@ archive/issue_comments_047855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6014",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6014#issuecomment-47855",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -147,16 +147,16 @@ Both patches need to be applied.
 archive/issue_comments_047856.json:
 ```json
 {
-    "body": "Attachment [trac_6014-hexads3.patch](tarball://root/attachments/some-uuid/ticket6014/trac_6014-hexads3.patch) by wdj created at 2009-06-03 22:12:29\n\nto be applied after the other two",
+    "body": "Attachment [trac_6014-hexads3.patch](tarball://root/attachments/some-uuid/ticket6014/trac_6014-hexads3.patch) by @wdjoyner created at 2009-06-03 22:12:29\n\nto be applied after the other two",
     "created_at": "2009-06-03T22:12:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6014",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6014#issuecomment-47856",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_6014-hexads3.patch](tarball://root/attachments/some-uuid/ticket6014/trac_6014-hexads3.patch) by wdj created at 2009-06-03 22:12:29
+Attachment [trac_6014-hexads3.patch](tarball://root/attachments/some-uuid/ticket6014/trac_6014-hexads3.patch) by @wdjoyner created at 2009-06-03 22:12:29
 
 to be applied after the other two
 
@@ -167,16 +167,16 @@ to be applied after the other two
 archive/issue_comments_047857.json:
 ```json
 {
-    "body": "Attachment [trac_6014-hexads4.patch](tarball://root/attachments/some-uuid/ticket6014/trac_6014-hexads4.patch) by wdj created at 2009-06-04 02:36:29",
+    "body": "Attachment [trac_6014-hexads4.patch](tarball://root/attachments/some-uuid/ticket6014/trac_6014-hexads4.patch) by @wdjoyner created at 2009-06-04 02:36:29",
     "created_at": "2009-06-04T02:36:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6014",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6014#issuecomment-47857",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_6014-hexads4.patch](tarball://root/attachments/some-uuid/ticket6014/trac_6014-hexads4.patch) by wdj created at 2009-06-04 02:36:29
+Attachment [trac_6014-hexads4.patch](tarball://root/attachments/some-uuid/ticket6014/trac_6014-hexads4.patch) by @wdjoyner created at 2009-06-04 02:36:29
 
 
 
@@ -190,7 +190,7 @@ archive/issue_comments_047858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6014",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6014#issuecomment-47858",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_047859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6014",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6014#issuecomment-47859",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005474.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nThere was a request on [sage-support](http://groups.google.com/group/sage-support/browse_frm/thread/f12feafb8e4285ce) for the option to change how matrices are displayed, from parentheses to square brackets.  William made this suggestion:\n\n```\nHow about adding a function to matrix0.pyx that sets a global variable\nin that file to the left and right delimiters for matrices?\n\nsage.matrix.matrix0.set_latex_delimiters('[',']')\n\nwould set them.  That's minimally intrusive.  Later on somebody could\ncome up with some grand scheme for customizing latex output, but\nplease don't until there are a few more use cases. \n```\n\nThe attached patch implements \"set_matrix_latex_delimiters\". (I changed the name slightly.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5474\n\n",
+    "body": "Assignee: @jhpalmieri\n\nThere was a request on [sage-support](http://groups.google.com/group/sage-support/browse_frm/thread/f12feafb8e4285ce) for the option to change how matrices are displayed, from parentheses to square brackets.  William made this suggestion:\n\n```\nHow about adding a function to matrix0.pyx that sets a global variable\nin that file to the left and right delimiters for matrices?\n\nsage.matrix.matrix0.set_latex_delimiters('[',']')\n\nwould set them.  That's minimally intrusive.  Later on somebody could\ncome up with some grand scheme for customizing latex output, but\nplease don't until there are a few more use cases. \n```\n\nThe attached patch implements \"set_matrix_latex_delimiters\". (I changed the name slightly.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5474\n\n",
     "created_at": "2009-03-10T21:23:00Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005474.json:
     "title": "[with patch, needs review] delimiters for LaTeX representation of matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5474",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 There was a request on [sage-support](http://groups.google.com/group/sage-support/browse_frm/thread/f12feafb8e4285ce) for the option to change how matrices are displayed, from parentheses to square brackets.  William made this suggestion:
 
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5474
 archive/issue_comments_042466.json:
 ```json
 {
-    "body": "Attachment [vector-latex-delimiters.patch](tarball://root/attachments/some-uuid/ticket5474/vector-latex-delimiters.patch) by jhpalmieri created at 2009-03-10 21:46:13",
+    "body": "Attachment [vector-latex-delimiters.patch](tarball://root/attachments/some-uuid/ticket5474/vector-latex-delimiters.patch) by @jhpalmieri created at 2009-03-10 21:46:13",
     "created_at": "2009-03-10T21:46:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5474#issuecomment-42466",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [vector-latex-delimiters.patch](tarball://root/attachments/some-uuid/ticket5474/vector-latex-delimiters.patch) by jhpalmieri created at 2009-03-10 21:46:13
+Attachment [vector-latex-delimiters.patch](tarball://root/attachments/some-uuid/ticket5474/vector-latex-delimiters.patch) by @jhpalmieri created at 2009-03-10 21:46:13
 
 
 
@@ -69,7 +69,7 @@ archive/issue_comments_042467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5474#issuecomment-42467",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_042468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5474#issuecomment-42468",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_042471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5474#issuecomment-42471",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_042472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5474#issuecomment-42472",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

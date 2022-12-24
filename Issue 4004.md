@@ -3,7 +3,7 @@
 archive/issues_004004.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4004\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4004\n\n",
     "created_at": "2008-08-30T18:00:40Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_004004.json:
     "title": "[with patch, needs review] increase coverage of sage/interfaces/gap.py and sage/interfaces/gp.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4004",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4004
 archive/issue_comments_028915.json:
 ```json
 {
-    "body": "Attachment [trac_4004.patch](tarball://root/attachments/some-uuid/ticket4004/trac_4004.patch) by mhansen created at 2008-08-30 18:01:31",
+    "body": "Attachment [trac_4004.patch](tarball://root/attachments/some-uuid/ticket4004/trac_4004.patch) by @mwhansen created at 2008-08-30 18:01:31",
     "created_at": "2008-08-30T18:01:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4004#issuecomment-28915",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4004.patch](tarball://root/attachments/some-uuid/ticket4004/trac_4004.patch) by mhansen created at 2008-08-30 18:01:31
+Attachment [trac_4004.patch](tarball://root/attachments/some-uuid/ticket4004/trac_4004.patch) by @mwhansen created at 2008-08-30 18:01:31
 
 
 
@@ -157,16 +157,16 @@ Michael
 archive/issue_comments_028917.json:
 ```json
 {
-    "body": "Attachment [trac_4004-2.patch](tarball://root/attachments/some-uuid/ticket4004/trac_4004-2.patch) by mhansen created at 2008-08-31 05:25:56\n\nI renamed the clear method to unbind (which is what it is in GAP) because the garbage collector was calling the deallocation routine which called clear and caused problems in the matrix_group.py doctest.",
+    "body": "Attachment [trac_4004-2.patch](tarball://root/attachments/some-uuid/ticket4004/trac_4004-2.patch) by @mwhansen created at 2008-08-31 05:25:56\n\nI renamed the clear method to unbind (which is what it is in GAP) because the garbage collector was calling the deallocation routine which called clear and caused problems in the matrix_group.py doctest.",
     "created_at": "2008-08-31T05:25:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4004#issuecomment-28917",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4004-2.patch](tarball://root/attachments/some-uuid/ticket4004/trac_4004-2.patch) by mhansen created at 2008-08-31 05:25:56
+Attachment [trac_4004-2.patch](tarball://root/attachments/some-uuid/ticket4004/trac_4004-2.patch) by @mwhansen created at 2008-08-31 05:25:56
 
 I renamed the clear method to unbind (which is what it is in GAP) because the garbage collector was calling the deallocation routine which called clear and caused problems in the matrix_group.py doctest.
 

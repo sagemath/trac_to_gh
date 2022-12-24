@@ -3,7 +3,7 @@
 archive/issues_000425.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  robertwb\n\nWhen compiling C code in cython some times \"-Wstrict-prototypes\" is added, causing the following warning:\n\n cc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for C/ObjC but not for C++\n\nIssue created by migration from https://trac.sagemath.org/ticket/425\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\nWhen compiling C code in cython some times \"-Wstrict-prototypes\" is added, causing the following warning:\n\n cc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for C/ObjC but not for C++\n\nIssue created by migration from https://trac.sagemath.org/ticket/425\n\n",
     "created_at": "2007-08-13T01:06:43Z",
     "labels": [
         "packages: standard",
@@ -17,9 +17,9 @@ archive/issues_000425.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  robertwb
+CC:  @robertwb
 
 When compiling C code in cython some times "-Wstrict-prototypes" is added, causing the following warning:
 
@@ -41,7 +41,7 @@ archive/issue_comments_002131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/425#issuecomment-2131",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_002133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/425#issuecomment-2133",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_002134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/425#issuecomment-2134",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

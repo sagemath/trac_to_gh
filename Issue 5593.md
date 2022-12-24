@@ -3,7 +3,7 @@
 archive/issues_005593.json:
 ```json
 {
-    "body": "Assignee: nbruin\n\nCremonaDB().conductor_range() gives an inclusive upper bound, so that\nsrange(*CremonaDB().conductor_range()) may miss a conductor.\n\nFix attached\n\nIssue created by migration from https://trac.sagemath.org/ticket/5593\n\n",
+    "body": "Assignee: @nbruin\n\nCremonaDB().conductor_range() gives an inclusive upper bound, so that\nsrange(*CremonaDB().conductor_range()) may miss a conductor.\n\nFix attached\n\nIssue created by migration from https://trac.sagemath.org/ticket/5593\n\n",
     "created_at": "2009-03-23T19:02:14Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_005593.json:
     "title": "[with patch; needs review or throwing away] CremonaDB.conductor_range does not give a Python style range",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5593",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
-Assignee: nbruin
+Assignee: @nbruin
 
 CremonaDB().conductor_range() gives an inclusive upper bound, so that
 srange(*CremonaDB().conductor_range()) may miss a conductor.
@@ -40,7 +40,7 @@ archive/issue_comments_043565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5593#issuecomment-43565",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -53,16 +53,16 @@ Patch
 archive/issue_comments_043566.json:
 ```json
 {
-    "body": "Attachment [11804.patch](tarball://root/attachments/some-uuid/ticket5593/11804.patch) by robertwb created at 2009-03-23 19:30:55\n\nYes, this looks like the right thing to do.",
+    "body": "Attachment [11804.patch](tarball://root/attachments/some-uuid/ticket5593/11804.patch) by @robertwb created at 2009-03-23 19:30:55\n\nYes, this looks like the right thing to do.",
     "created_at": "2009-03-23T19:30:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5593#issuecomment-43566",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [11804.patch](tarball://root/attachments/some-uuid/ticket5593/11804.patch) by robertwb created at 2009-03-23 19:30:55
+Attachment [11804.patch](tarball://root/attachments/some-uuid/ticket5593/11804.patch) by @robertwb created at 2009-03-23 19:30:55
 
 Yes, this looks like the right thing to do.
 
@@ -78,7 +78,7 @@ archive/issue_comments_043567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5593#issuecomment-43567",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

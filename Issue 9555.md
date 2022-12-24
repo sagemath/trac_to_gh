@@ -3,7 +3,7 @@
 archive/issues_009555.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  kcrisman rws jakobkroeker\n\nCalling the series() method on a symbolic expression at a singularity (algebraic, logarithmic, essential) returns nonsense, inconsistent results, or raises an exception:\n\nExamples:\n\n\n```\nsage: sqrt(x).series(x,0)\nOrder(1)\nsage: sqrt(x).series(x,1)\nOrder(x)\nsage: sqrt(x).series(x,2)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/home/fredrik/sage/<ipython console> in <module>()\n\n/home/fredrik/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.series (sage/symbolic/expression.cpp:12811)()\n\nRuntimeError: power::eval(): division by zero\n```\n\n\n\n```\nsage: (log(x) + x).series(x,0)\nOrder(1)\nsage: (log(x) + x).series(x,1)\n(log(x)) + Order(x)\nsage: (log(x) + x).series(x,2)\n(log(x)) + 1*x\n```\n\n\n\n```\nsage: exp(1/x).series(x,0)\nOrder(1)\nsage: exp(1/x).series(x,1)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/home/fredrik/sage/<ipython console> in <module>()\n\n/home/fredrik/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.series (sage/symbolic/expression.cpp:12811)()\n\nRuntimeError: power::eval(): division by zero\nsage: exp(1/x).series(x,2)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/home/fredrik/sage/<ipython console> in <module>()\n\n/home/fredrik/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.series (sage/symbolic/expression.cpp:12811)()\n\nRuntimeError: power::eval(): division by zero\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9555\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman @rwst jakobkroeker\n\nCalling the series() method on a symbolic expression at a singularity (algebraic, logarithmic, essential) returns nonsense, inconsistent results, or raises an exception:\n\nExamples:\n\n\n```\nsage: sqrt(x).series(x,0)\nOrder(1)\nsage: sqrt(x).series(x,1)\nOrder(x)\nsage: sqrt(x).series(x,2)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/home/fredrik/sage/<ipython console> in <module>()\n\n/home/fredrik/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.series (sage/symbolic/expression.cpp:12811)()\n\nRuntimeError: power::eval(): division by zero\n```\n\n\n\n```\nsage: (log(x) + x).series(x,0)\nOrder(1)\nsage: (log(x) + x).series(x,1)\n(log(x)) + Order(x)\nsage: (log(x) + x).series(x,2)\n(log(x)) + 1*x\n```\n\n\n\n```\nsage: exp(1/x).series(x,0)\nOrder(1)\nsage: exp(1/x).series(x,1)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/home/fredrik/sage/<ipython console> in <module>()\n\n/home/fredrik/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.series (sage/symbolic/expression.cpp:12811)()\n\nRuntimeError: power::eval(): division by zero\nsage: exp(1/x).series(x,2)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/home/fredrik/sage/<ipython console> in <module>()\n\n/home/fredrik/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.series (sage/symbolic/expression.cpp:12811)()\n\nRuntimeError: power::eval(): division by zero\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9555\n\n",
     "created_at": "2010-07-20T12:12:22Z",
     "labels": [
         "symbolics",
@@ -13,12 +13,12 @@ archive/issues_009555.json:
     "title": "Series expansions at singularities don't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9555",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  kcrisman rws jakobkroeker
+CC:  @kcrisman @rwst jakobkroeker
 
 Calling the series() method on a symbolic expression at a singularity (algebraic, logarithmic, essential) returns nonsense, inconsistent results, or raises an exception:
 
@@ -94,7 +94,7 @@ archive/issue_comments_092101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9555#issuecomment-92101",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_092103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9555#issuecomment-92103",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_092105.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9555#issuecomment-92105",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -296,7 +296,7 @@ archive/issue_comments_092106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9555#issuecomment-92106",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -333,7 +333,7 @@ archive/issue_comments_092107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9555#issuecomment-92107",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -357,7 +357,7 @@ archive/issue_comments_092108.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9555#issuecomment-92108",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -387,7 +387,7 @@ archive/issue_comments_092109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9555#issuecomment-92109",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -413,7 +413,7 @@ archive/issue_comments_092110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9555#issuecomment-92110",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

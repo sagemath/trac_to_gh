@@ -14,7 +14,7 @@ archive/issues_005814.json:
     "title": "%prun doesn't work in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5814",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_045654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5814#issuecomment-45654",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_045655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5814#issuecomment-45655",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_045656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5814#issuecomment-45656",
-    "user": "tkluck"
+    "user": "@tkluck"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_045657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5814#issuecomment-45657",
-    "user": "tkluck"
+    "user": "@tkluck"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_045658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5814#issuecomment-45658",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_045659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5814#issuecomment-45659",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_045660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5814#issuecomment-45660",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -164,16 +164,16 @@ Resolution: invalid
 archive/issue_comments_045661.json:
 ```json
 {
-    "body": "Attachment [trac_5814_enable_prun_in_notebook.patch](tarball://root/attachments/some-uuid/ticket5814/trac_5814_enable_prun_in_notebook.patch) by tkluck created at 2012-09-05 12:58:16\n\nIt turns out that this does need to be tackled in the sage library itself. It is possible to add a `prun` object there, which will be automatically used without having to do any special handling in the notebook. I've closed my pull request for the notebook and am reopening this ticket.",
+    "body": "Attachment [trac_5814_enable_prun_in_notebook.patch](tarball://root/attachments/some-uuid/ticket5814/trac_5814_enable_prun_in_notebook.patch) by @tkluck created at 2012-09-05 12:58:16\n\nIt turns out that this does need to be tackled in the sage library itself. It is possible to add a `prun` object there, which will be automatically used without having to do any special handling in the notebook. I've closed my pull request for the notebook and am reopening this ticket.",
     "created_at": "2012-09-05T12:58:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5814#issuecomment-45661",
-    "user": "tkluck"
+    "user": "@tkluck"
 }
 ```
 
-Attachment [trac_5814_enable_prun_in_notebook.patch](tarball://root/attachments/some-uuid/ticket5814/trac_5814_enable_prun_in_notebook.patch) by tkluck created at 2012-09-05 12:58:16
+Attachment [trac_5814_enable_prun_in_notebook.patch](tarball://root/attachments/some-uuid/ticket5814/trac_5814_enable_prun_in_notebook.patch) by @tkluck created at 2012-09-05 12:58:16
 
 It turns out that this does need to be tackled in the sage library itself. It is possible to add a `prun` object there, which will be automatically used without having to do any special handling in the notebook. I've closed my pull request for the notebook and am reopening this ticket.
 
@@ -184,16 +184,16 @@ It turns out that this does need to be tackled in the sage library itself. It is
 archive/issue_comments_045662.json:
 ```json
 {
-    "body": "Changing assignee from boothby to tkluck.",
+    "body": "Changing assignee from boothby to @tkluck.",
     "created_at": "2012-09-05T12:58:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5814#issuecomment-45662",
-    "user": "tkluck"
+    "user": "@tkluck"
 }
 ```
 
-Changing assignee from boothby to tkluck.
+Changing assignee from boothby to @tkluck.
 
 
 
@@ -207,7 +207,7 @@ archive/issue_comments_045663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5814#issuecomment-45663",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_045664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5814#issuecomment-45664",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_045665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5814#issuecomment-45665",
-    "user": "tkluck"
+    "user": "@tkluck"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_045666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5814#issuecomment-45666",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -280,16 +280,16 @@ Travis
 archive/issue_comments_045667.json:
 ```json
 {
-    "body": "Attachment [trac_5814_add_doctests_to_prun_object.patch](tarball://root/attachments/some-uuid/ticket5814/trac_5814_add_doctests_to_prun_object.patch) by tkluck created at 2013-03-11 15:49:41",
+    "body": "Attachment [trac_5814_add_doctests_to_prun_object.patch](tarball://root/attachments/some-uuid/ticket5814/trac_5814_add_doctests_to_prun_object.patch) by @tkluck created at 2013-03-11 15:49:41",
     "created_at": "2013-03-11T15:49:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5814#issuecomment-45667",
-    "user": "tkluck"
+    "user": "@tkluck"
 }
 ```
 
-Attachment [trac_5814_add_doctests_to_prun_object.patch](tarball://root/attachments/some-uuid/ticket5814/trac_5814_add_doctests_to_prun_object.patch) by tkluck created at 2013-03-11 15:49:41
+Attachment [trac_5814_add_doctests_to_prun_object.patch](tarball://root/attachments/some-uuid/ticket5814/trac_5814_add_doctests_to_prun_object.patch) by @tkluck created at 2013-03-11 15:49:41
 
 
 
@@ -303,7 +303,7 @@ archive/issue_comments_045668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5814#issuecomment-45668",
-    "user": "tkluck"
+    "user": "@tkluck"
 }
 ```
 
@@ -316,16 +316,16 @@ Thanks for your comment, Travis. I just added the doctests. I'm not sure whether
 archive/issue_comments_045669.json:
 ```json
 {
-    "body": "Attachment [trac_5814-prun_notebook-review-ts.patch](tarball://root/attachments/some-uuid/ticket5814/trac_5814-prun_notebook-review-ts.patch) by tscrim created at 2013-04-01 18:03:29",
+    "body": "Attachment [trac_5814-prun_notebook-review-ts.patch](tarball://root/attachments/some-uuid/ticket5814/trac_5814-prun_notebook-review-ts.patch) by @tscrim created at 2013-04-01 18:03:29",
     "created_at": "2013-04-01T18:03:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5814#issuecomment-45669",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
-Attachment [trac_5814-prun_notebook-review-ts.patch](tarball://root/attachments/some-uuid/ticket5814/trac_5814-prun_notebook-review-ts.patch) by tscrim created at 2013-04-01 18:03:29
+Attachment [trac_5814-prun_notebook-review-ts.patch](tarball://root/attachments/some-uuid/ticket5814/trac_5814-prun_notebook-review-ts.patch) by @tscrim created at 2013-04-01 18:03:29
 
 
 
@@ -339,7 +339,7 @@ archive/issue_comments_045670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5814#issuecomment-45670",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -357,7 +357,7 @@ archive/issue_comments_045671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5814#issuecomment-45671",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -394,7 +394,7 @@ archive/issue_comments_045672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5814#issuecomment-45672",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -416,7 +416,7 @@ archive/issue_comments_045673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5814#issuecomment-45673",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -451,7 +451,7 @@ archive/issue_comments_045674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5814#issuecomment-45674",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -469,7 +469,7 @@ archive/issue_comments_045675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5814#issuecomment-45675",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -482,16 +482,16 @@ The first patch isn't a proper HG changeset (patches should be generated using `
 archive/issue_comments_045676.json:
 ```json
 {
-    "body": "Attachment [trac_5814-prun_notebook-combined.patch](tarball://root/attachments/some-uuid/ticket5814/trac_5814-prun_notebook-combined.patch) by tscrim created at 2013-04-04 16:25:46",
+    "body": "Attachment [trac_5814-prun_notebook-combined.patch](tarball://root/attachments/some-uuid/ticket5814/trac_5814-prun_notebook-combined.patch) by @tscrim created at 2013-04-04 16:25:46",
     "created_at": "2013-04-04T16:25:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5814#issuecomment-45676",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
-Attachment [trac_5814-prun_notebook-combined.patch](tarball://root/attachments/some-uuid/ticket5814/trac_5814-prun_notebook-combined.patch) by tscrim created at 2013-04-04 16:25:46
+Attachment [trac_5814-prun_notebook-combined.patch](tarball://root/attachments/some-uuid/ticket5814/trac_5814-prun_notebook-combined.patch) by @tscrim created at 2013-04-04 16:25:46
 
 
 
@@ -505,7 +505,7 @@ archive/issue_comments_045677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5814#issuecomment-45677",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -523,7 +523,7 @@ archive/issue_comments_045678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5814#issuecomment-45678",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -541,7 +541,7 @@ archive/issue_comments_045679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5814#issuecomment-45679",
-    "user": "tkluck"
+    "user": "@tkluck"
 }
 ```
 
@@ -561,7 +561,7 @@ archive/issue_comments_045680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5814#issuecomment-45680",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -583,7 +583,7 @@ archive/issue_comments_045681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5814#issuecomment-45681",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -627,7 +627,7 @@ archive/issue_comments_045682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5814#issuecomment-45682",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -645,7 +645,7 @@ archive/issue_comments_045683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5814#issuecomment-45683",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -669,7 +669,7 @@ archive/issue_comments_045684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5814#issuecomment-45684",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -687,7 +687,7 @@ archive/issue_comments_045685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5814#issuecomment-45685",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -705,7 +705,7 @@ archive/issue_comments_045686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5814#issuecomment-45686",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_002823.json:
     "title": "notebook -- safari 3.1 introspection completely broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2823",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -38,7 +38,7 @@ archive/issue_comments_019389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2823#issuecomment-19389",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -56,7 +56,7 @@ archive/issue_comments_019390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2823#issuecomment-19390",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_019391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2823#issuecomment-19391",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -87,16 +87,16 @@ This depends on #2818
 archive/issue_comments_019392.json:
 ```json
 {
-    "body": "Attachment [trac-2823.patch](tarball://root/attachments/some-uuid/ticket2823/trac-2823.patch) by robertwb created at 2008-04-06 08:03:05\n\nEverything seems to work for me, except I can't hit return when doing tab completion to select an item.",
+    "body": "Attachment [trac-2823.patch](tarball://root/attachments/some-uuid/ticket2823/trac-2823.patch) by @robertwb created at 2008-04-06 08:03:05\n\nEverything seems to work for me, except I can't hit return when doing tab completion to select an item.",
     "created_at": "2008-04-06T08:03:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2823#issuecomment-19392",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [trac-2823.patch](tarball://root/attachments/some-uuid/ticket2823/trac-2823.patch) by robertwb created at 2008-04-06 08:03:05
+Attachment [trac-2823.patch](tarball://root/attachments/some-uuid/ticket2823/trac-2823.patch) by @robertwb created at 2008-04-06 08:03:05
 
 Everything seems to work for me, except I can't hit return when doing tab completion to select an item.
 
@@ -112,7 +112,7 @@ archive/issue_comments_019393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2823#issuecomment-19393",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

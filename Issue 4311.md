@@ -14,7 +14,7 @@ archive/issues_004311.json:
     "title": "added documentation for tensor products of crystals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4311",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 Assignee: Mike Hansen
@@ -57,7 +57,7 @@ archive/issue_comments_031565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4311#issuecomment-31565",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_031566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4311#issuecomment-31566",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -88,16 +88,16 @@ Looks good to me.
 archive/issue_comments_031567.json:
 ```json
 {
-    "body": "Changing assignee from Mike Hansen to mhansen.",
+    "body": "Changing assignee from Mike Hansen to @mwhansen.",
     "created_at": "2008-10-18T19:54:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4311#issuecomment-31567",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from Mike Hansen to mhansen.
+Changing assignee from Mike Hansen to @mwhansen.
 
 
 

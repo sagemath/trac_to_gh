@@ -14,7 +14,7 @@ archive/issues_002682.json:
     "title": "[with patch] balanced product for generators/iterators",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2682",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2682
 archive/issue_comments_018439.json:
 ```json
 {
-    "body": "Attachment [2682-balanced-prod.patch](tarball://root/attachments/some-uuid/ticket2682/2682-balanced-prod.patch) by robertwb created at 2008-03-27 06:23:34",
+    "body": "Attachment [2682-balanced-prod.patch](tarball://root/attachments/some-uuid/ticket2682/2682-balanced-prod.patch) by @robertwb created at 2008-03-27 06:23:34",
     "created_at": "2008-03-27T06:23:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2682#issuecomment-18439",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2682-balanced-prod.patch](tarball://root/attachments/some-uuid/ticket2682/2682-balanced-prod.patch) by robertwb created at 2008-03-27 06:23:34
+Attachment [2682-balanced-prod.patch](tarball://root/attachments/some-uuid/ticket2682/2682-balanced-prod.patch) by @robertwb created at 2008-03-27 06:23:34
 
 
 
@@ -68,16 +68,16 @@ This has been around for a while, but wasn't tagged "needs review".
 archive/issue_comments_018441.json:
 ```json
 {
-    "body": "Changing assignee from somebody to mhansen.",
+    "body": "Changing assignee from somebody to @mwhansen.",
     "created_at": "2008-04-10T18:57:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2682#issuecomment-18441",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from somebody to mhansen.
+Changing assignee from somebody to @mwhansen.
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_018442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2682#issuecomment-18442",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_018443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2682#issuecomment-18443",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

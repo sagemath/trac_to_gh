@@ -3,7 +3,7 @@
 archive/issues_005771.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  rbeezer\n\nRight now on sagenb latex is not installed. So when someone evaluates a %latex cell, i.e. someone == Bill Hart, it just hangs:\n\n```\nmabshoff@sagenb:~$ latex\nThe program 'latex' is currently not installed.  You can install it by typing:\nsudo apt-get install texlive-latex-base\n-bash: latex: command not found\nmabshoff@sagenb:~$ echo $?\n127\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5771\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @rbeezer\n\nRight now on sagenb latex is not installed. So when someone evaluates a %latex cell, i.e. someone == Bill Hart, it just hangs:\n\n```\nmabshoff@sagenb:~$ latex\nThe program 'latex' is currently not installed.  You can install it by typing:\nsudo apt-get install texlive-latex-base\n-bash: latex: command not found\nmabshoff@sagenb:~$ echo $?\n127\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5771\n\n",
     "created_at": "2009-04-13T03:21:10Z",
     "labels": [
         "misc",
@@ -19,7 +19,7 @@ archive/issues_005771.json:
 ```
 Assignee: cwitty
 
-CC:  rbeezer
+CC:  @rbeezer
 
 Right now on sagenb latex is not installed. So when someone evaluates a %latex cell, i.e. someone == Bill Hart, it just hangs:
 
@@ -53,7 +53,7 @@ archive/issue_comments_045136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5771#issuecomment-45136",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -66,16 +66,16 @@ just an fyi, i just issued the command on sagenb.org to install latex, so it wil
 archive/issue_comments_045137.json:
 ```json
 {
-    "body": "Changing assignee from cwitty to jhpalmieri.",
+    "body": "Changing assignee from cwitty to @jhpalmieri.",
     "created_at": "2009-06-11T01:38:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5771#issuecomment-45137",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Changing assignee from cwitty to jhpalmieri.
+Changing assignee from cwitty to @jhpalmieri.
 
 
 
@@ -89,7 +89,7 @@ archive/issue_comments_045138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5771#issuecomment-45138",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_045139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5771#issuecomment-45139",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_045140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5771#issuecomment-45140",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_045141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5771#issuecomment-45141",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -173,16 +173,16 @@ and similarly for the `png` doctest.  Do you think that's good enough?  It now p
 archive/issue_comments_045142.json:
 ```json
 {
-    "body": "Attachment [trac_5771.patch](tarball://root/attachments/some-uuid/ticket5771/trac_5771.patch) by jhpalmieri created at 2009-06-11 19:55:40",
+    "body": "Attachment [trac_5771.patch](tarball://root/attachments/some-uuid/ticket5771/trac_5771.patch) by @jhpalmieri created at 2009-06-11 19:55:40",
     "created_at": "2009-06-11T19:55:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5771#issuecomment-45142",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_5771.patch](tarball://root/attachments/some-uuid/ticket5771/trac_5771.patch) by jhpalmieri created at 2009-06-11 19:55:40
+Attachment [trac_5771.patch](tarball://root/attachments/some-uuid/ticket5771/trac_5771.patch) by @jhpalmieri created at 2009-06-11 19:55:40
 
 
 
@@ -196,7 +196,7 @@ archive/issue_comments_045143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5771#issuecomment-45143",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_045144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5771#issuecomment-45144",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_045145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5771#issuecomment-45145",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_045146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5771#issuecomment-45146",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

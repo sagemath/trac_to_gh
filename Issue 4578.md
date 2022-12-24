@@ -3,7 +3,7 @@
 archive/issues_004578.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  georgsweber alexghitza\n\nIn short, the decomposition function on spaces of modular symbols is mysteriously way slower than it should be.  Why?\n\nConsider this:\n\n```\nsage: M = ModularSymbols(1000,2,sign=1).new_subspace().cuspidal_subspace()\nsage: time d = M.decomposition(3)\nCPU times: user 3.21 s, sys: 0.11 s, total: 3.33 s\nWall time: 3.37 s\nsage: t3 = M.hecke_matrix(3)\nsage: time d = t3.decomposition()\nCPU times: user 0.11 s, sys: 0.00 s, total: 0.11 s\nWall time: 0.11 s\nsage: time d = t3.decomposition(algorithm='multimodular', height_guess=1)\nCPU times: user 0.06 s, sys: 0.00 s, total: 0.06 s\nWall time: 0.06 s\n```\n\n\nThis huge timing discrepancy isn't due to caching:\n\n```\n^bsd:matrix was$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.2, Release Date: 2008-11-20                         |\n| Type notebook() for the GUI, and license() for information.        |\nsage: M = ModularSymbols(1000,2,sign=1).new_subspace().cuspidal_subspace()\nsage: t3 = M.hecke_matrix(3)\nsage: time d = t3.decomposition(algorithm='multimodular', height_guess=1)\nCPU times: user 0.07 s, sys: 0.01 s, total: 0.08 s\nWall time: 0.08 s\n```\n\n\nFor comparison:\n\n```\nsage: magma.eval(\"M := ModularSymbols(1000,2,1);\")\n''\nsage: magma.eval(\"S := NewSubspace(CuspidalSubspace(M)); time D := Decomposition(S, 3);\")\n'Time: 0.050'\n```\n\n\nSo Sage is nearly the same as Magma at the decomposition part of the computation, but is getting totally killed by using the wrong algorithm or doing something really dumb that it shouldn't even bother doing.  I.e., above 3.2 seconds is spent doing something probably unnecessary, and only 0.08 is spent doing what should be the dominant step. \n\nThere are of course numerous other similar examples.   For concreteness, I think to close this ticket one should just worry about making it so that the above example completes in < 0.2 seconds instead of 3.3 seconds.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4578\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  georgsweber alexghitza\n\nIn short, the decomposition function on spaces of modular symbols is mysteriously way slower than it should be.  Why?\n\nConsider this:\n\n```\nsage: M = ModularSymbols(1000,2,sign=1).new_subspace().cuspidal_subspace()\nsage: time d = M.decomposition(3)\nCPU times: user 3.21 s, sys: 0.11 s, total: 3.33 s\nWall time: 3.37 s\nsage: t3 = M.hecke_matrix(3)\nsage: time d = t3.decomposition()\nCPU times: user 0.11 s, sys: 0.00 s, total: 0.11 s\nWall time: 0.11 s\nsage: time d = t3.decomposition(algorithm='multimodular', height_guess=1)\nCPU times: user 0.06 s, sys: 0.00 s, total: 0.06 s\nWall time: 0.06 s\n```\n\n\nThis huge timing discrepancy isn't due to caching:\n\n```\n^bsd:matrix was$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.2, Release Date: 2008-11-20                         |\n| Type notebook() for the GUI, and license() for information.        |\nsage: M = ModularSymbols(1000,2,sign=1).new_subspace().cuspidal_subspace()\nsage: t3 = M.hecke_matrix(3)\nsage: time d = t3.decomposition(algorithm='multimodular', height_guess=1)\nCPU times: user 0.07 s, sys: 0.01 s, total: 0.08 s\nWall time: 0.08 s\n```\n\n\nFor comparison:\n\n```\nsage: magma.eval(\"M := ModularSymbols(1000,2,1);\")\n''\nsage: magma.eval(\"S := NewSubspace(CuspidalSubspace(M)); time D := Decomposition(S, 3);\")\n'Time: 0.050'\n```\n\n\nSo Sage is nearly the same as Magma at the decomposition part of the computation, but is getting totally killed by using the wrong algorithm or doing something really dumb that it shouldn't even bother doing.  I.e., above 3.2 seconds is spent doing something probably unnecessary, and only 0.08 is spent doing what should be the dominant step. \n\nThere are of course numerous other similar examples.   For concreteness, I think to close this ticket one should just worry about making it so that the above example completes in < 0.2 seconds instead of 3.3 seconds.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4578\n\n",
     "created_at": "2008-11-22T00:28:40Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_004578.json:
     "title": "optimize modular symbols decomposition algorithm",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4578",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 CC:  georgsweber alexghitza
 
@@ -146,7 +146,7 @@ archive/issue_comments_034325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4578#issuecomment-34325",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_034326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4578#issuecomment-34326",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_034329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4578#issuecomment-34329",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_034330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4578#issuecomment-34330",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_034331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4578#issuecomment-34331",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_034332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4578#issuecomment-34332",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_034335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4578#issuecomment-34335",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

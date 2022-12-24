@@ -3,7 +3,7 @@
 archive/issues_009780.json:
 ```json
 {
-    "body": "Assignee: jason\n\nCC:  was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9781\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9781\n\n",
     "created_at": "2010-08-22T19:55:01Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_009780.json:
     "title": "Typo in book_stein_ent.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9780",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
-Assignee: jason
+Assignee: @jasongrout
 
-CC:  was
+CC:  @williamstein
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_096009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9780#issuecomment-96009",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_096010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9780#issuecomment-96010",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_096011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9780#issuecomment-96011",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_096012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9780#issuecomment-96012",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_096013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9780#issuecomment-96013",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -124,16 +124,16 @@ Jeroen, could you update the patch commit string with the ticket number?
 archive/issue_comments_096014.json:
 ```json
 {
-    "body": "Attachment [9781.patch](tarball://root/attachments/some-uuid/ticket9781/9781.patch) by jdemeyer created at 2010-08-24 10:07:21\n\nReplying to [comment:3 mpatel]:\n> Jeroen, could you update the patch commit string with the ticket number?\nDone.",
+    "body": "Attachment [9781.patch](tarball://root/attachments/some-uuid/ticket9781/9781.patch) by @jdemeyer created at 2010-08-24 10:07:21\n\nReplying to [comment:3 mpatel]:\n> Jeroen, could you update the patch commit string with the ticket number?\nDone.",
     "created_at": "2010-08-24T10:07:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9780#issuecomment-96014",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9781.patch](tarball://root/attachments/some-uuid/ticket9781/9781.patch) by jdemeyer created at 2010-08-24 10:07:21
+Attachment [9781.patch](tarball://root/attachments/some-uuid/ticket9781/9781.patch) by @jdemeyer created at 2010-08-24 10:07:21
 
 Replying to [comment:3 mpatel]:
 > Jeroen, could you update the patch commit string with the ticket number?
@@ -151,7 +151,7 @@ archive/issue_comments_096015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9780#issuecomment-96015",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_096016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9780#issuecomment-96016",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

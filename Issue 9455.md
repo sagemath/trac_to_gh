@@ -3,7 +3,7 @@
 archive/issues_009455.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  was\n\nThis is a port of David Kohel's MAGMA code to compute dimensions of the eigenspaces for the Atkin-Lehner operators acting on spaces of cusp forms of weight 2 (see here for the original):\n\nhttp://echidna.maths.usyd.edu.au/echidna/dbs/atkin-lehner/index.html\n\nThese methods do not rely on computing explicit bases of newforms, instead using formulae about the ramification points of the Atkin-Lehner operator. \n\nThese functions use the class number method qfbclassno() from Pari/GP.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9455\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @williamstein\n\nThis is a port of David Kohel's MAGMA code to compute dimensions of the eigenspaces for the Atkin-Lehner operators acting on spaces of cusp forms of weight 2 (see here for the original):\n\nhttp://echidna.maths.usyd.edu.au/echidna/dbs/atkin-lehner/index.html\n\nThese methods do not rely on computing explicit bases of newforms, instead using formulae about the ramification points of the Atkin-Lehner operator. \n\nThese functions use the class number method qfbclassno() from Pari/GP.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9455\n\n",
     "created_at": "2010-07-08T15:10:40Z",
     "labels": [
         "modular forms",
@@ -17,9 +17,9 @@ archive/issues_009455.json:
     "user": "ljpk"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
-CC:  was
+CC:  @williamstein
 
 This is a port of David Kohel's MAGMA code to compute dimensions of the eigenspaces for the Atkin-Lehner operators acting on spaces of cusp forms of weight 2 (see here for the original):
 
@@ -60,7 +60,7 @@ Code to implement dimensions of Atkin-Lehner eigenspaces for the ModularForms cl
 archive/issue_comments_090600.json:
 ```json
 {
-    "body": "Changing assignee from craigcitro to ljpk.",
+    "body": "Changing assignee from @craigcitro to ljpk.",
     "created_at": "2010-08-11T15:18:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9455",
     "type": "issue_comment",
@@ -69,7 +69,7 @@ archive/issue_comments_090600.json:
 }
 ```
 
-Changing assignee from craigcitro to ljpk.
+Changing assignee from @craigcitro to ljpk.
 
 
 
@@ -78,7 +78,7 @@ Changing assignee from craigcitro to ljpk.
 archive/issue_comments_090601.json:
 ```json
 {
-    "body": "Changing assignee from ljpk to craigcitro.",
+    "body": "Changing assignee from ljpk to @craigcitro.",
     "created_at": "2010-08-11T15:18:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9455",
     "type": "issue_comment",
@@ -87,7 +87,7 @@ archive/issue_comments_090601.json:
 }
 ```
 
-Changing assignee from ljpk to craigcitro.
+Changing assignee from ljpk to @craigcitro.
 
 
 
@@ -96,16 +96,16 @@ Changing assignee from ljpk to craigcitro.
 archive/issue_comments_090602.json:
 ```json
 {
-    "body": "Attachment [trac_9455_atkin_lehner_dim.patch](tarball://root/attachments/some-uuid/ticket9455/trac_9455_atkin_lehner_dim.patch) by chapoton created at 2013-08-08 19:56:19",
+    "body": "Attachment [trac_9455_atkin_lehner_dim.patch](tarball://root/attachments/some-uuid/ticket9455/trac_9455_atkin_lehner_dim.patch) by @fchapoton created at 2013-08-08 19:56:19",
     "created_at": "2013-08-08T19:56:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9455#issuecomment-90602",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac_9455_atkin_lehner_dim.patch](tarball://root/attachments/some-uuid/ticket9455/trac_9455_atkin_lehner_dim.patch) by chapoton created at 2013-08-08 19:56:19
+Attachment [trac_9455_atkin_lehner_dim.patch](tarball://root/attachments/some-uuid/ticket9455/trac_9455_atkin_lehner_dim.patch) by @fchapoton created at 2013-08-08 19:56:19
 
 
 
@@ -119,7 +119,7 @@ archive/issue_comments_090603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9455#issuecomment-90603",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_090604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9455#issuecomment-90604",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_090605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9455#issuecomment-90605",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_090608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9455#issuecomment-90608",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_090609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9455#issuecomment-90609",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -321,7 +321,7 @@ archive/issue_comments_090614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9455#issuecomment-90614",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -353,7 +353,7 @@ archive/issue_comments_090615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9455#issuecomment-90615",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 

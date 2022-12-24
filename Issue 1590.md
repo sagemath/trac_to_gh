@@ -14,7 +14,7 @@ archive/issues_001590.json:
     "title": "notebook -- change it so changes are saved even in cells that aren't evaluated",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1590",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -99,7 +99,7 @@ archive/issue_comments_010124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1590#issuecomment-10124",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

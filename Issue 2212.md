@@ -3,7 +3,7 @@
 archive/issues_002212.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThis corrects some errors/transpositions in the documentation of the various degree sequence functions.  It also removes the \"seed\" variable in DegreeSequence itself, as a main NetworkX developer confirmed what the NetworkX code suggests, that this is unnecessary (they have now removed it in their implementation).\n\nIssue created by migration from https://trac.sagemath.org/ticket/2212\n\n",
+    "body": "Assignee: @rlmill\n\nThis corrects some errors/transpositions in the documentation of the various degree sequence functions.  It also removes the \"seed\" variable in DegreeSequence itself, as a main NetworkX developer confirmed what the NetworkX code suggests, that this is unnecessary (they have now removed it in their implementation).\n\nIssue created by migration from https://trac.sagemath.org/ticket/2212\n\n",
     "created_at": "2008-02-19T20:30:40Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_002212.json:
     "title": "degree sequence documentation [with bundle, needs review]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2212",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 This corrects some errors/transpositions in the documentation of the various degree sequence functions.  It also removes the "seed" variable in DegreeSequence itself, as a main NetworkX developer confirmed what the NetworkX code suggests, that this is unnecessary (they have now removed it in their implementation).
 
@@ -37,7 +37,7 @@ archive/issue_comments_014608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2212#issuecomment-14608",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -50,16 +50,16 @@ Changes degree sequence documentation and removes "seed" variable from DegreeSeq
 archive/issue_comments_014609.json:
 ```json
 {
-    "body": "Attachment [minorgraphchanges.hg](tarball://root/attachments/some-uuid/ticket2212/minorgraphchanges.hg) by kcrisman created at 2008-02-19 20:34:46\n\nUpon looking at the .diff, I see some changes which I did NOT put in there.  I saw them while using hg_sage, but figured it was some artifact, yet here they are.  \nThe only changes I made were very short ones in the documentation for the various DegreeSequence functions and removing \"seed\".  Apologies for not catching this; I assume the other changes were already incorporated in any case.",
+    "body": "Attachment [minorgraphchanges.hg](tarball://root/attachments/some-uuid/ticket2212/minorgraphchanges.hg) by @kcrisman created at 2008-02-19 20:34:46\n\nUpon looking at the .diff, I see some changes which I did NOT put in there.  I saw them while using hg_sage, but figured it was some artifact, yet here they are.  \nThe only changes I made were very short ones in the documentation for the various DegreeSequence functions and removing \"seed\".  Apologies for not catching this; I assume the other changes were already incorporated in any case.",
     "created_at": "2008-02-19T20:34:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2212#issuecomment-14609",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [minorgraphchanges.hg](tarball://root/attachments/some-uuid/ticket2212/minorgraphchanges.hg) by kcrisman created at 2008-02-19 20:34:46
+Attachment [minorgraphchanges.hg](tarball://root/attachments/some-uuid/ticket2212/minorgraphchanges.hg) by @kcrisman created at 2008-02-19 20:34:46
 
 Upon looking at the .diff, I see some changes which I did NOT put in there.  I saw them while using hg_sage, but figured it was some artifact, yet here they are.  
 The only changes I made were very short ones in the documentation for the various DegreeSequence functions and removing "seed".  Apologies for not catching this; I assume the other changes were already incorporated in any case.
@@ -98,7 +98,7 @@ archive/issue_comments_014611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2212#issuecomment-14611",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_014612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2212#issuecomment-14612",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -129,16 +129,16 @@ Newer patch based on 2.10.2
 archive/issue_comments_014613.json:
 ```json
 {
-    "body": "Attachment [8809.patch](tarball://root/attachments/some-uuid/ticket2212/8809.patch) by kcrisman created at 2008-03-07 02:03:15\n\nBased on 2.10.3.rc2",
+    "body": "Attachment [8809.patch](tarball://root/attachments/some-uuid/ticket2212/8809.patch) by @kcrisman created at 2008-03-07 02:03:15\n\nBased on 2.10.3.rc2",
     "created_at": "2008-03-07T02:03:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2212#issuecomment-14613",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [8809.patch](tarball://root/attachments/some-uuid/ticket2212/8809.patch) by kcrisman created at 2008-03-07 02:03:15
+Attachment [8809.patch](tarball://root/attachments/some-uuid/ticket2212/8809.patch) by @kcrisman created at 2008-03-07 02:03:15
 
 Based on 2.10.3.rc2
 
@@ -154,7 +154,7 @@ archive/issue_comments_014614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2212#issuecomment-14614",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_014615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2212#issuecomment-14615",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_014616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2212#issuecomment-14616",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -217,16 +217,16 @@ Responding in reverse order:
 archive/issue_comments_014617.json:
 ```json
 {
-    "body": "Attachment [8810.patch](tarball://root/attachments/some-uuid/ticket2212/8810.patch) by kcrisman created at 2008-03-08 01:04:06\n\nFixes of comments - please apply AFTER 8809 patch.  Confirming to NOT apply 8681 patch or previous bundle.",
+    "body": "Attachment [8810.patch](tarball://root/attachments/some-uuid/ticket2212/8810.patch) by @kcrisman created at 2008-03-08 01:04:06\n\nFixes of comments - please apply AFTER 8809 patch.  Confirming to NOT apply 8681 patch or previous bundle.",
     "created_at": "2008-03-08T01:04:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2212#issuecomment-14617",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [8810.patch](tarball://root/attachments/some-uuid/ticket2212/8810.patch) by kcrisman created at 2008-03-08 01:04:06
+Attachment [8810.patch](tarball://root/attachments/some-uuid/ticket2212/8810.patch) by @kcrisman created at 2008-03-08 01:04:06
 
 Fixes of comments - please apply AFTER 8809 patch.  Confirming to NOT apply 8681 patch or previous bundle.
 
@@ -242,7 +242,7 @@ archive/issue_comments_014618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2212#issuecomment-14618",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_004834.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  robertwb\n\nFrom sage-support:\n\n\n```\n\n> It looks like eigenvectors are returned as the basis vectors of the\n> > eigenspace.  Should they be returned as just plain old vectors instead?\n\nYes, definitely.  Then we don't have create a whole bunch of different\nvector spaces for no reason too.\n\n -- William\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4834\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\nFrom sage-support:\n\n\n```\n\n> It looks like eigenvectors are returned as the basis vectors of the\n> > eigenspace.  Should they be returned as just plain old vectors instead?\n\nYes, definitely.  Then we don't have create a whole bunch of different\nvector spaces for no reason too.\n\n -- William\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4834\n\n",
     "created_at": "2008-12-19T22:29:12Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_004834.json:
     "title": "Return eigenvectors as members of a \"normal\" space instead of as members of an eigenspace",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4834",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  robertwb
+CC:  @robertwb
 
 From sage-support:
 
@@ -48,16 +48,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4834
 archive/issue_comments_036634.json:
 ```json
 {
-    "body": "Changing assignee from was to jason.",
+    "body": "Changing assignee from @williamstein to @jasongrout.",
     "created_at": "2009-10-16T18:05:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4834#issuecomment-36634",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from was to jason.
+Changing assignee from @williamstein to @jasongrout.
 
 
 
@@ -66,16 +66,16 @@ Changing assignee from was to jason.
 archive/issue_comments_036635.json:
 ```json
 {
-    "body": "Attachment [trac_4834_bug_demo.sws](tarball://root/attachments/some-uuid/ticket4834/trac_4834_bug_demo.sws) by rbeezer created at 2010-12-10 02:14:37\n\nAttached worksheet does a better job of illustrating the problem.  I plan to attack this at Bug Days if it is still open.\n\nCan we naturally coerce vectors from lower-dimensional subspaces into the obvious ambient vector space (the one with same degree, same ring or a common super-ring)?  That might be one other solution.",
+    "body": "Attachment [trac_4834_bug_demo.sws](tarball://root/attachments/some-uuid/ticket4834/trac_4834_bug_demo.sws) by @rbeezer created at 2010-12-10 02:14:37\n\nAttached worksheet does a better job of illustrating the problem.  I plan to attack this at Bug Days if it is still open.\n\nCan we naturally coerce vectors from lower-dimensional subspaces into the obvious ambient vector space (the one with same degree, same ring or a common super-ring)?  That might be one other solution.",
     "created_at": "2010-12-10T02:14:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4834#issuecomment-36635",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_4834_bug_demo.sws](tarball://root/attachments/some-uuid/ticket4834/trac_4834_bug_demo.sws) by rbeezer created at 2010-12-10 02:14:37
+Attachment [trac_4834_bug_demo.sws](tarball://root/attachments/some-uuid/ticket4834/trac_4834_bug_demo.sws) by @rbeezer created at 2010-12-10 02:14:37
 
 Attached worksheet does a better job of illustrating the problem.  I plan to attack this at Bug Days if it is still open.
 
@@ -93,7 +93,7 @@ archive/issue_comments_036636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4834#issuecomment-36636",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_036637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4834#issuecomment-36637",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_036638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4834#issuecomment-36638",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_036639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4834#issuecomment-36639",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_036640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4834#issuecomment-36640",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 

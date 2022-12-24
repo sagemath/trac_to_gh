@@ -3,7 +3,7 @@
 archive/issues_005629.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: dimension scheme\n\nThe dimension() method for schemes is confusing and sometimes inconsistent or plain broken when working over bases that are not fields.  The attached patch implements methods dimension_absolute() and dimension_relative() and makes dimension() into an alias for dimension_absolute().\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5629\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: dimension scheme\n\nThe dimension() method for schemes is confusing and sometimes inconsistent or plain broken when working over bases that are not fields.  The attached patch implements methods dimension_absolute() and dimension_relative() and makes dimension() into an alias for dimension_absolute().\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5629\n\n",
     "created_at": "2009-03-29T03:58:49Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_005629.json:
     "title": "refactor dimension() of schemes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5629",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: dimension scheme
 
@@ -35,16 +35,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5629
 archive/issue_comments_043957.json:
 ```json
 {
-    "body": "Attachment [trac_5629.patch](tarball://root/attachments/some-uuid/ticket5629/trac_5629.patch) by AlexGhitza created at 2009-03-29 03:59:51",
+    "body": "Attachment [trac_5629.patch](tarball://root/attachments/some-uuid/ticket5629/trac_5629.patch) by @aghitza created at 2009-03-29 03:59:51",
     "created_at": "2009-03-29T03:59:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5629#issuecomment-43957",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_5629.patch](tarball://root/attachments/some-uuid/ticket5629/trac_5629.patch) by AlexGhitza created at 2009-03-29 03:59:51
+Attachment [trac_5629.patch](tarball://root/attachments/some-uuid/ticket5629/trac_5629.patch) by @aghitza created at 2009-03-29 03:59:51
 
 
 
@@ -58,7 +58,7 @@ archive/issue_comments_043958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5629#issuecomment-43958",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -73,16 +73,16 @@ http://groups.google.com/group/sage-devel/browse_thread/thread/cab22c1376251540
 archive/issue_comments_043959.json:
 ```json
 {
-    "body": "Changing assignee from was to AlexGhitza.",
+    "body": "Changing assignee from @williamstein to @aghitza.",
     "created_at": "2009-03-29T08:16:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5629#issuecomment-43959",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from was to AlexGhitza.
+Changing assignee from @williamstein to @aghitza.
 
 
 
@@ -96,7 +96,7 @@ archive/issue_comments_043960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5629#issuecomment-43960",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_043961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5629#issuecomment-43961",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_043962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5629#issuecomment-43962",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -156,16 +156,16 @@ rebased against 3.4.1.alpha0 and added a missing doctst
 archive/issue_comments_043963.json:
 ```json
 {
-    "body": "Attachment [trac_5629-rebase.patch](tarball://root/attachments/some-uuid/ticket5629/trac_5629-rebase.patch) by was created at 2009-03-29 17:27:04",
+    "body": "Attachment [trac_5629-rebase.patch](tarball://root/attachments/some-uuid/ticket5629/trac_5629-rebase.patch) by @williamstein created at 2009-03-29 17:27:04",
     "created_at": "2009-03-29T17:27:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5629#issuecomment-43963",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5629-rebase.patch](tarball://root/attachments/some-uuid/ticket5629/trac_5629-rebase.patch) by was created at 2009-03-29 17:27:04
+Attachment [trac_5629-rebase.patch](tarball://root/attachments/some-uuid/ticket5629/trac_5629-rebase.patch) by @williamstein created at 2009-03-29 17:27:04
 
 
 

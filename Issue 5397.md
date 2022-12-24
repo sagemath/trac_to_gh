@@ -14,7 +14,7 @@ archive/issues_005397.json:
     "title": "SmallGroups library can't be used in Sage-3.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5397",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 Assignee: mabshoff
@@ -49,7 +49,7 @@ archive/issue_comments_041679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5397",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5397#issuecomment-41679",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_041680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5397",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5397#issuecomment-41680",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_041681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5397",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5397#issuecomment-41681",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_041682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5397",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5397#issuecomment-41682",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_041683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5397",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5397#issuecomment-41683",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_041684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5397",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5397#issuecomment-41684",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_041685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5397",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5397#issuecomment-41685",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

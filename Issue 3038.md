@@ -3,7 +3,7 @@
 archive/issues_003038.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nAttached is the patch needed to get sage to build with a packaged polybori and zn_poly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3038\n\n",
+    "body": "Assignee: @timabbott\n\nAttached is the patch needed to get sage to build with a packaged polybori and zn_poly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3038\n\n",
     "created_at": "2008-04-27T02:15:40Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_003038.json:
     "title": "[with patch; needs review] SAGE setup.py fixes for using Debian packaged polybori, zn_poly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3038",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 Attached is the patch needed to get sage to build with a packaged polybori and zn_poly.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3038
 archive/issue_comments_020906.json:
 ```json
 {
-    "body": "Attachment [sage-include-dirs.patch](tarball://root/attachments/some-uuid/ticket3038/sage-include-dirs.patch) by tabbott created at 2008-04-27 02:15:45",
+    "body": "Attachment [sage-include-dirs.patch](tarball://root/attachments/some-uuid/ticket3038/sage-include-dirs.patch) by @timabbott created at 2008-04-27 02:15:45",
     "created_at": "2008-04-27T02:15:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3038#issuecomment-20906",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [sage-include-dirs.patch](tarball://root/attachments/some-uuid/ticket3038/sage-include-dirs.patch) by tabbott created at 2008-04-27 02:15:45
+Attachment [sage-include-dirs.patch](tarball://root/attachments/some-uuid/ticket3038/sage-include-dirs.patch) by @timabbott created at 2008-04-27 02:15:45
 
 
 

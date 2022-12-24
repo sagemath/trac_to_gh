@@ -14,7 +14,7 @@ archive/issues_008002.json:
     "title": "remove dead code from sage-ptest",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8002",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 Assignee: tbd
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8002
 archive/issue_comments_069927.json:
 ```json
 {
-    "body": "Attachment [scripts_8002_ptest_cleanup.patch](tarball://root/attachments/some-uuid/ticket8002/scripts_8002_ptest_cleanup.patch) by wjp created at 2010-01-19 19:26:13",
+    "body": "Attachment [scripts_8002_ptest_cleanup.patch](tarball://root/attachments/some-uuid/ticket8002/scripts_8002_ptest_cleanup.patch) by @wjp created at 2010-01-19 19:26:13",
     "created_at": "2010-01-19T19:26:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8002#issuecomment-69927",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [scripts_8002_ptest_cleanup.patch](tarball://root/attachments/some-uuid/ticket8002/scripts_8002_ptest_cleanup.patch) by wjp created at 2010-01-19 19:26:13
+Attachment [scripts_8002_ptest_cleanup.patch](tarball://root/attachments/some-uuid/ticket8002/scripts_8002_ptest_cleanup.patch) by @wjp created at 2010-01-19 19:26:13
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_069928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8002#issuecomment-69928",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_069929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8002#issuecomment-69929",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_069930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8002#issuecomment-69930",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 

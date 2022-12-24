@@ -58,16 +58,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5295
 archive/issue_comments_040731.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to nbruin.",
+    "body": "Changing assignee from mabshoff to @nbruin.",
     "created_at": "2010-01-17T00:42:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5295",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5295#issuecomment-40731",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
-Changing assignee from mabshoff to nbruin.
+Changing assignee from mabshoff to @nbruin.
 
 
 
@@ -81,7 +81,7 @@ archive/issue_comments_040732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5295",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5295#issuecomment-40732",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_040733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5295",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5295#issuecomment-40733",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_040734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5295",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5295#issuecomment-40734",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -178,16 +178,16 @@ Changing status from new to needs_review.
 archive/issue_comments_040735.json:
 ```json
 {
-    "body": "Attachment [bug5295.patch](tarball://root/attachments/some-uuid/ticket5295/bug5295.patch) by nbruin created at 2010-01-17 00:43:55",
+    "body": "Attachment [bug5295.patch](tarball://root/attachments/some-uuid/ticket5295/bug5295.patch) by @nbruin created at 2010-01-17 00:43:55",
     "created_at": "2010-01-17T00:43:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5295",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5295#issuecomment-40735",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
-Attachment [bug5295.patch](tarball://root/attachments/some-uuid/ticket5295/bug5295.patch) by nbruin created at 2010-01-17 00:43:55
+Attachment [bug5295.patch](tarball://root/attachments/some-uuid/ticket5295/bug5295.patch) by @nbruin created at 2010-01-17 00:43:55
 
 
 
@@ -341,7 +341,7 @@ archive/issue_comments_040737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5295",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5295#issuecomment-40737",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_040738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5295",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5295#issuecomment-40738",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 

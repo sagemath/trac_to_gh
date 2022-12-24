@@ -3,7 +3,7 @@
 archive/issues_000610.json:
 ```json
 {
-    "body": "Assignee: roed\n\nAll files in the rings/padics directory need doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/610\n\n",
+    "body": "Assignee: @roed314\n\nAll files in the rings/padics directory need doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/610\n\n",
     "created_at": "2007-09-07T01:09:01Z",
     "labels": [
         "basic arithmetic",
@@ -17,7 +17,7 @@ archive/issues_000610.json:
     "user": "boothby"
 }
 ```
-Assignee: roed
+Assignee: @roed314
 
 All files in the rings/padics directory need doctests.
 
@@ -155,7 +155,7 @@ archive/issue_comments_003140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/610#issuecomment-3140",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_003142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/610#issuecomment-3142",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_003143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/610#issuecomment-3143",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_003144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/610#issuecomment-3144",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 

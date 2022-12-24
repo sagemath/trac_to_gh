@@ -3,7 +3,7 @@
 archive/issues_005188.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  wjp\n\nIn particular this isn't good:\n\n```\nsage: factor(-1)\n-1\nsage: (factor(-1))^2\n-1\nsage: (factor(-1)^2).value() == -1 \nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5188\n\n",
+    "body": "Assignee: tbd\n\nCC:  @wjp\n\nIn particular this isn't good:\n\n```\nsage: factor(-1)\n-1\nsage: (factor(-1))^2\n-1\nsage: (factor(-1)^2).value() == -1 \nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5188\n\n",
     "created_at": "2009-02-05T21:39:31Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_005188.json:
     "title": "squaring some factorizations has a bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5188",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
 
-CC:  wjp
+CC:  @wjp
 
 In particular this isn't good:
 
@@ -49,7 +49,7 @@ archive/issue_comments_039788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5188#issuecomment-39788",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_039789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5188#issuecomment-39789",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_039790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5188#issuecomment-39790",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_039791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5188#issuecomment-39791",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

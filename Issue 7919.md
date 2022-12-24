@@ -3,7 +3,7 @@
 archive/issues_007919.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  nthiery\n\nThere's a doctest in `sage/misc/test_class_pickling.py` that doesn't actually test anything. I was a reviewer for this patch, which means it's my bad for letting it through. Of course, this code gets tested anyway, so it's not so serious, but we should fix it anyway. Patch attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7919\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  @nthiery\n\nThere's a doctest in `sage/misc/test_class_pickling.py` that doesn't actually test anything. I was a reviewer for this patch, which means it's my bad for letting it through. Of course, this code gets tested anyway, so it's not so serious, but we should fix it anyway. Patch attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7919\n\n",
     "created_at": "2010-01-13T09:40:22Z",
     "labels": [
         "categories",
@@ -14,12 +14,12 @@ archive/issues_007919.json:
     "title": "Doctest in sage/misc/test_class_pickling.py doesn't test anything",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7919",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
-CC:  nthiery
+CC:  @nthiery
 
 There's a doctest in `sage/misc/test_class_pickling.py` that doesn't actually test anything. I was a reviewer for this patch, which means it's my bad for letting it through. Of course, this code gets tested anyway, so it's not so serious, but we should fix it anyway. Patch attached.
 
@@ -39,7 +39,7 @@ archive/issue_comments_068902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7919#issuecomment-68902",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to needs_review.
 archive/issue_comments_068903.json:
 ```json
 {
-    "body": "Attachment [trac_7919.patch](tarball://root/attachments/some-uuid/ticket7919/trac_7919.patch) by craigcitro created at 2010-01-13 09:43:37",
+    "body": "Attachment [trac_7919.patch](tarball://root/attachments/some-uuid/ticket7919/trac_7919.patch) by @craigcitro created at 2010-01-13 09:43:37",
     "created_at": "2010-01-13T09:43:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7919#issuecomment-68903",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac_7919.patch](tarball://root/attachments/some-uuid/ticket7919/trac_7919.patch) by craigcitro created at 2010-01-13 09:43:37
+Attachment [trac_7919.patch](tarball://root/attachments/some-uuid/ticket7919/trac_7919.patch) by @craigcitro created at 2010-01-13 09:43:37
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_068904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7919#issuecomment-68904",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_068905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7919#issuecomment-68905",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_068906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7919#issuecomment-68906",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

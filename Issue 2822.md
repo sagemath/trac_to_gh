@@ -3,7 +3,7 @@
 archive/issues_002822.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  burcin polybori\n\nValgrind says:\n\n```\n==28038== Invalid read of size 4\n==28038==    at 0x152C3A90: (within /scratch/mabshoff/release-cycle/sage-3.0.alpha1/local/lib/libgroebner.so)\n==28038==    by 0x4FEEB8C: exit (in /lib/libc-2.3.6.so)\n==28038==  Address 0x5566450 is not stack'd, malloc'd or (recently) free'd\n```\n\nThis seems to be cause by either the new PolyBoRi.spkg or its interface.\n\nThe component for this bug is debatable.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2822\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin polybori\n\nValgrind says:\n\n```\n==28038== Invalid read of size 4\n==28038==    at 0x152C3A90: (within /scratch/mabshoff/release-cycle/sage-3.0.alpha1/local/lib/libgroebner.so)\n==28038==    by 0x4FEEB8C: exit (in /lib/libc-2.3.6.so)\n==28038==  Address 0x5566450 is not stack'd, malloc'd or (recently) free'd\n```\n\nThis seems to be cause by either the new PolyBoRi.spkg or its interface.\n\nThe component for this bug is debatable.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2822\n\n",
     "created_at": "2008-04-06T06:26:30Z",
     "labels": [
         "commutative algebra",
@@ -17,9 +17,9 @@ archive/issues_002822.json:
     "user": "mabshoff"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  burcin polybori
+CC:  @burcin polybori
 
 Valgrind says:
 
@@ -54,7 +54,7 @@ archive/issue_comments_019370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2822#issuecomment-19370",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -67,16 +67,16 @@ stripped valgrind session for Sage 3.0.alpha2 + PolyBoRi with SAGE_DEBUG
 archive/issue_comments_019371.json:
 ```json
 {
-    "body": "Attachment [polybori-valgrind-cleaned](tarball://root/attachments/some-uuid/ticket2822/polybori-valgrind-cleaned) by malb created at 2008-04-07 13:18:37\n\nAfter rebuilding PolyBoRi with debugging options (export SAGE_DEBUG=1) I don't get this invalid read anymore. I've attached a the valgrind log for a simple session.\n\nIt might be worth noting that almost all alleged memleaks are due to one call. It might make sense to ask Michael and Alexander about that one.",
+    "body": "Attachment [polybori-valgrind-cleaned](tarball://root/attachments/some-uuid/ticket2822/polybori-valgrind-cleaned) by @malb created at 2008-04-07 13:18:37\n\nAfter rebuilding PolyBoRi with debugging options (export SAGE_DEBUG=1) I don't get this invalid read anymore. I've attached a the valgrind log for a simple session.\n\nIt might be worth noting that almost all alleged memleaks are due to one call. It might make sense to ask Michael and Alexander about that one.",
     "created_at": "2008-04-07T13:18:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2822#issuecomment-19371",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [polybori-valgrind-cleaned](tarball://root/attachments/some-uuid/ticket2822/polybori-valgrind-cleaned) by malb created at 2008-04-07 13:18:37
+Attachment [polybori-valgrind-cleaned](tarball://root/attachments/some-uuid/ticket2822/polybori-valgrind-cleaned) by @malb created at 2008-04-07 13:18:37
 
 After rebuilding PolyBoRi with debugging options (export SAGE_DEBUG=1) I don't get this invalid read anymore. I've attached a the valgrind log for a simple session.
 
@@ -94,7 +94,7 @@ archive/issue_comments_019372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2822#issuecomment-19372",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_019373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2822#issuecomment-19373",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_019376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2822#issuecomment-19376",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -402,7 +402,7 @@ Changing status from new to assigned.
 archive/issue_comments_019383.json:
 ```json
 {
-    "body": "Changing assignee from malb to mabshoff.",
+    "body": "Changing assignee from @malb to mabshoff.",
     "created_at": "2008-04-11T20:09:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2822",
     "type": "issue_comment",
@@ -411,7 +411,7 @@ archive/issue_comments_019383.json:
 }
 ```
 
-Changing assignee from malb to mabshoff.
+Changing assignee from @malb to mabshoff.
 
 
 
@@ -425,7 +425,7 @@ archive/issue_comments_019384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2822#issuecomment-19384",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

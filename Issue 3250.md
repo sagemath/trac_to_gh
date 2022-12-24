@@ -3,7 +3,7 @@
 archive/issues_003250.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  robertwb\n\nParent does has a default hash for python classes, but not for cython classes.  This leads to very subtle bugs where converting a python class to a cython class can result in coercion failing mysteriously.  Either coercion should be more descriptive with its error messages resulting from lack of a hash function or Parent should get a default cdef hash function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3250\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @robertwb\n\nParent does has a default hash for python classes, but not for cython classes.  This leads to very subtle bugs where converting a python class to a cython class can result in coercion failing mysteriously.  Either coercion should be more descriptive with its error messages resulting from lack of a hash function or Parent should get a default cdef hash function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3250\n\n",
     "created_at": "2008-05-18T02:33:23Z",
     "labels": [
         "coding theory",
@@ -14,12 +14,12 @@ archive/issues_003250.json:
     "title": "Parent does not have a cdef class default hash",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3250",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  robertwb
+CC:  @robertwb
 
 Parent does has a default hash for python classes, but not for cython classes.  This leads to very subtle bugs where converting a python class to a cython class can result in coercion failing mysteriously.  Either coercion should be more descriptive with its error messages resulting from lack of a hash function or Parent should get a default cdef hash function.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3250
 archive/issue_comments_022487.json:
 ```json
 {
-    "body": "Changing assignee from rlm to robertwb.",
+    "body": "Changing assignee from @rlmill to @robertwb.",
     "created_at": "2008-05-18T02:33:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3250#issuecomment-22487",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from rlm to robertwb.
+Changing assignee from @rlmill to @robertwb.
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_022488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3250#issuecomment-22488",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_022489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3250#issuecomment-22489",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_022491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3250#issuecomment-22491",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_022492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3250#issuecomment-22492",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

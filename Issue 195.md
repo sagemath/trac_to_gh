@@ -3,7 +3,7 @@
 archive/issues_000195.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe syntax\n   attach \"filename.spyx\"\nfails when filename contains a hyphen.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/195\n\n",
+    "body": "Assignee: @williamstein\n\nThe syntax\n   attach \"filename.spyx\"\nfails when filename contains a hyphen.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/195\n\n",
     "created_at": "2007-01-17T20:27:37Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_000195.json:
     "title": "Can't compile spyx files with hyphens in names",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/195",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The syntax
    attach "filename.spyx"
@@ -40,7 +40,7 @@ archive/issue_comments_000889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/195",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/195#issuecomment-889",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -58,7 +58,7 @@ archive/issue_comments_000890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/195",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/195#issuecomment-890",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

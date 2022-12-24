@@ -3,7 +3,7 @@
 archive/issues_009900.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  mpatel\n\nKeywords: pynac\n\nThere is a new pynac version available with patches for #9394, #9834, #9878, #9879, #9881, #9900.\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.2.1.spkg\n\nPatches from the tickets mentioned above need to be merged to test this. I'll post detailed instructions after I upload the patches.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9901\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @qed777\n\nKeywords: pynac\n\nThere is a new pynac version available with patches for #9394, #9834, #9878, #9879, #9881, #9900.\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.2.1.spkg\n\nPatches from the tickets mentioned above need to be merged to test this. I'll post detailed instructions after I upload the patches.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9901\n\n",
     "created_at": "2010-09-12T11:00:07Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_009900.json:
     "title": "update pynac to 0.2.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9900",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  mpatel
+CC:  @qed777
 
 Keywords: pynac
 
@@ -45,7 +45,7 @@ archive/issue_comments_098425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9900#issuecomment-98425",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_098426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9900#issuecomment-98426",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_098427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9900#issuecomment-98427",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_098428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9900#issuecomment-98428",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_098430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9900#issuecomment-98430",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_098431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9900#issuecomment-98431",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_098432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9900#issuecomment-98432",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_098433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9900#issuecomment-98433",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_098434.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9900#issuecomment-98434",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_098435.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9900#issuecomment-98435",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

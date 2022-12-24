@@ -3,7 +3,7 @@
 archive/issues_009543.json:
 ```json
 {
-    "body": "Assignee: pjeremy\n\nCC:  mhansen jpflori\n\nFreeBSD does not currently have a full C99 libm and therefore also needs cephes.  The attached patch enables cephes on FreeBSD, removes a reference to a non-existent test package and enables error checking.  The latter two components are needed on Cygwin as well as FreeBSD.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9543\n\n",
+    "body": "Assignee: @peterjeremy\n\nCC:  @mwhansen jpflori\n\nFreeBSD does not currently have a full C99 libm and therefore also needs cephes.  The attached patch enables cephes on FreeBSD, removes a reference to a non-existent test package and enables error checking.  The latter two components are needed on Cygwin as well as FreeBSD.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9543\n\n",
     "created_at": "2010-07-18T19:57:13Z",
     "labels": [
         "porting: BSD",
@@ -14,12 +14,12 @@ archive/issues_009543.json:
     "title": "Enable cephes on FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9543",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
-Assignee: pjeremy
+Assignee: @peterjeremy
 
-CC:  mhansen jpflori
+CC:  @mwhansen jpflori
 
 FreeBSD does not currently have a full C99 libm and therefore also needs cephes.  The attached patch enables cephes on FreeBSD, removes a reference to a non-existent test package and enables error checking.  The latter two components are needed on Cygwin as well as FreeBSD.
 
@@ -39,7 +39,7 @@ archive/issue_comments_091955.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91955",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_091956.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91956",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_091957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91957",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_091958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91958",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_091959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91959",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_091960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91960",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_091962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91962",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -354,7 +354,7 @@ archive/issue_comments_091965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91965",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -372,7 +372,7 @@ archive/issue_comments_091966.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91966",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -409,7 +409,7 @@ archive/issue_comments_091968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91968",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -486,7 +486,7 @@ archive/issue_comments_091970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91970",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -517,7 +517,7 @@ archive/issue_comments_091971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91971",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -601,7 +601,7 @@ archive/issue_comments_091973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91973",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -619,7 +619,7 @@ archive/issue_comments_091974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91974",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -644,7 +644,7 @@ archive/issue_comments_091975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91975",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -732,7 +732,7 @@ archive/issue_comments_091979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91979",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -821,7 +821,7 @@ archive/issue_comments_091983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91983",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -920,7 +920,7 @@ archive/issue_comments_091988.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91988",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -938,7 +938,7 @@ archive/issue_comments_091989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91989",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -956,7 +956,7 @@ archive/issue_comments_091990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91990",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1039,7 +1039,7 @@ archive/issue_comments_091994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91994",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1052,13 +1052,13 @@ Resolution: fixed
 archive/issue_comments_091995.json:
 ```json
 {
-    "body": "Attachment [cephes-2.8.p1.diff](tarball://root/attachments/some-uuid/ticket9543/cephes-2.8.p1.diff) by jdemeyer created at 2013-01-12 08:52:00",
+    "body": "Attachment [cephes-2.8.p1.diff](tarball://root/attachments/some-uuid/ticket9543/cephes-2.8.p1.diff) by @jdemeyer created at 2013-01-12 08:52:00",
     "created_at": "2013-01-12T08:52:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91995",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [cephes-2.8.p1.diff](tarball://root/attachments/some-uuid/ticket9543/cephes-2.8.p1.diff) by jdemeyer created at 2013-01-12 08:52:00
+Attachment [cephes-2.8.p1.diff](tarball://root/attachments/some-uuid/ticket9543/cephes-2.8.p1.diff) by @jdemeyer created at 2013-01-12 08:52:00

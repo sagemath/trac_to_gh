@@ -14,7 +14,7 @@ archive/issues_001987.json:
     "title": "[with patch] unintuitive return values for \"forall\" and \"exists\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1987",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 Assignee: cwitty
@@ -46,7 +46,7 @@ archive/issue_comments_012866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1987#issuecomment-12866",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -59,16 +59,16 @@ As Mike Hansen points out, use python natives "all" and "any" instead. Patch sho
 archive/issue_comments_012867.json:
 ```json
 {
-    "body": "Attachment [witness.patch](tarball://root/attachments/some-uuid/ticket1987/witness.patch) by nbruin created at 2008-02-01 02:00:05\n\nPatch to fix docstrings of forall and exists to refer to Python natives.",
+    "body": "Attachment [witness.patch](tarball://root/attachments/some-uuid/ticket1987/witness.patch) by @nbruin created at 2008-02-01 02:00:05\n\nPatch to fix docstrings of forall and exists to refer to Python natives.",
     "created_at": "2008-02-01T02:00:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1987#issuecomment-12867",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
-Attachment [witness.patch](tarball://root/attachments/some-uuid/ticket1987/witness.patch) by nbruin created at 2008-02-01 02:00:05
+Attachment [witness.patch](tarball://root/attachments/some-uuid/ticket1987/witness.patch) by @nbruin created at 2008-02-01 02:00:05
 
 Patch to fix docstrings of forall and exists to refer to Python natives.
 
@@ -84,7 +84,7 @@ archive/issue_comments_012868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1987#issuecomment-12868",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_012869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1987#issuecomment-12869",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_012871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1987#issuecomment-12871",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

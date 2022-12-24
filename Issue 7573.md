@@ -3,7 +3,7 @@
 archive/issues_007573.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  ncohen\n\nThis crashes Sage:\n\n\n```\nsage: g = graphs.PetersenGraph()\nsage: p = MixedIntegerLinearProgram(maximization=True)\nsage: b = p.new_variable()\nsage: p.set_objective(sum([b[v] for v in g]))\nsage: p.set_binary(b)\nsage: p.solve(objective_only=True)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7573\n\n",
+    "body": "Assignee: jkantor\n\nCC:  @nathanncohen\n\nThis crashes Sage:\n\n\n```\nsage: g = graphs.PetersenGraph()\nsage: p = MixedIntegerLinearProgram(maximization=True)\nsage: b = p.new_variable()\nsage: p.set_objective(sum([b[v] for v in g]))\nsage: p.set_binary(b)\nsage: p.solve(objective_only=True)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7573\n\n",
     "created_at": "2009-12-01T16:00:50Z",
     "labels": [
         "numerical",
@@ -14,12 +14,12 @@ archive/issues_007573.json:
     "title": "Sage crashes if insufficient data is provided for MIP",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7573",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: jkantor
 
-CC:  ncohen
+CC:  @nathanncohen
 
 This crashes Sage:
 
@@ -50,7 +50,7 @@ archive/issue_comments_064457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7573",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7573#issuecomment-64457",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_064458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7573",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7573#issuecomment-64458",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_064459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7573",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7573#issuecomment-64459",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_064460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7573",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7573#issuecomment-64460",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_064461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7573",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7573#issuecomment-64461",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_064462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7573",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7573#issuecomment-64462",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_064463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7573",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7573#issuecomment-64463",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_064464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7573",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7573#issuecomment-64464",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_064465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7573",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7573#issuecomment-64465",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_064466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7573",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7573#issuecomment-64466",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -235,16 +235,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_064467.json:
 ```json
 {
-    "body": "Attachment [glpk_crash.patch](tarball://root/attachments/some-uuid/ticket7573/glpk_crash.patch) by malb created at 2009-12-01 17:38:51\n\ndone",
+    "body": "Attachment [glpk_crash.patch](tarball://root/attachments/some-uuid/ticket7573/glpk_crash.patch) by @malb created at 2009-12-01 17:38:51\n\ndone",
     "created_at": "2009-12-01T17:38:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7573",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7573#issuecomment-64467",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [glpk_crash.patch](tarball://root/attachments/some-uuid/ticket7573/glpk_crash.patch) by malb created at 2009-12-01 17:38:51
+Attachment [glpk_crash.patch](tarball://root/attachments/some-uuid/ticket7573/glpk_crash.patch) by @malb created at 2009-12-01 17:38:51
 
 done
 
@@ -260,7 +260,7 @@ archive/issue_comments_064468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7573",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7573#issuecomment-64468",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -278,7 +278,7 @@ archive/issue_comments_064469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7573",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7573#issuecomment-64469",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -296,7 +296,7 @@ archive/issue_comments_064470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7573",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7573#issuecomment-64470",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

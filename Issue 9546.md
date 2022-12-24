@@ -14,7 +14,7 @@ archive/issues_009546.json:
     "title": "bounded outdegree orientation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9546",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -43,7 +43,7 @@ archive/issue_comments_092017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9546#issuecomment-92017",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_092018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9546#issuecomment-92018",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_092019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9546#issuecomment-92019",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_092020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9546#issuecomment-92020",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_092021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9546#issuecomment-92021",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -153,16 +153,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_092022.json:
 ```json
 {
-    "body": "Attachment [trac_9546.patch](tarball://root/attachments/some-uuid/ticket9546/trac_9546.patch) by ncohen created at 2011-01-12 09:23:37",
+    "body": "Attachment [trac_9546.patch](tarball://root/attachments/some-uuid/ticket9546/trac_9546.patch) by @nathanncohen created at 2011-01-12 09:23:37",
     "created_at": "2011-01-12T09:23:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9546#issuecomment-92022",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_9546.patch](tarball://root/attachments/some-uuid/ticket9546/trac_9546.patch) by ncohen created at 2011-01-12 09:23:37
+Attachment [trac_9546.patch](tarball://root/attachments/some-uuid/ticket9546/trac_9546.patch) by @nathanncohen created at 2011-01-12 09:23:37
 
 
 
@@ -270,7 +270,7 @@ archive/issue_comments_092025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9546#issuecomment-92025",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -283,16 +283,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_092026.json:
 ```json
 {
-    "body": "Attachment [trac_9546-ref-edit.patch](tarball://root/attachments/some-uuid/ticket9546/trac_9546-ref-edit.patch) by rlm created at 2011-01-14 21:49:51\n\napply all three patches",
+    "body": "Attachment [trac_9546-ref-edit.patch](tarball://root/attachments/some-uuid/ticket9546/trac_9546-ref-edit.patch) by @rlmill created at 2011-01-14 21:49:51\n\napply all three patches",
     "created_at": "2011-01-14T21:49:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9546#issuecomment-92026",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_9546-ref-edit.patch](tarball://root/attachments/some-uuid/ticket9546/trac_9546-ref-edit.patch) by rlm created at 2011-01-14 21:49:51
+Attachment [trac_9546-ref-edit.patch](tarball://root/attachments/some-uuid/ticket9546/trac_9546-ref-edit.patch) by @rlmill created at 2011-01-14 21:49:51
 
 apply all three patches
 
@@ -308,7 +308,7 @@ archive/issue_comments_092027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9546#issuecomment-92027",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

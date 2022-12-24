@@ -3,7 +3,7 @@
 archive/issues_007782.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  ncohen\n\ncliquer is failing on HP-UX 11.11 on a HP C3600 workstation. The spkg-install has code which applies different flags to build the shared library on different platforms, but does not have any for HP-UX. The spkg-install exits with a message saying: \n\n**Cannot determine your platform or it is not supported... exiting**\n\nThis needs to be changed. Once the files testcc.sh and testcxx.sh at #7505 are included in Sage, doing this will be a lot easier. \n\n\n```\ncliquer-1.2.p2/src/cliquerconf.h\ncliquer-1.2.p2/src/testcase-large-w-60-64-mxml.h\ncliquer-1.2.p2/src/testcase-large.b\ncliquer-1.2.p2/src/set.h\ncliquer-1.2.p2/src/graph.h\nFinished extraction\n****************************************************\nHost system\nuname -a:\nHP-UX hpbox B.11.11 U 9000/785 2016698240 unlimited-user license\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: hppa1.1-hp-hpux11.11\nConfigured with: /tmp/gcc-4.3.3.tar.gz/gcc-4.3.3/configure --host=hppa1.1-hp-hpux11.11 --target=hppa1.1-hp-hpux11.11 --build=hppa1.1-hp-hpux11.11 --prefix=/opt/hp-gcc-4.3.3 --with-gnu-as --without-gnu-ld --enable-threads=posix --enable-languages=c,c++ --with-gmp=/proj/opensrc/be/hppa1.1-hp-hpux11.11 --with-mpfr=/proj/opensrc/be/hppa1.1-hp-hpux11.11\nThread model: posix\ngcc version 4.3.3 (GCC) \n****************************************************\nCode will be built with debugging information present. Set 'SAGE_DEBUG' to 'no' if you don't want that.\nNo Fortran compiler has been defined. This is not normally a problem.\nUsing CC=gcc\nUsing CXX=g++\nUsing FC=\nUsing F77=\nUsing SAGE_FORTRAN=\nUsing SAGE_FORTRAN_LIB=\nThe following environment variables will be exported\nUsing CFLAGS= -O2  -g  -Wall -fomit-frame-pointer -funroll-loops -c -fPIC \nUsing CXXFLAGS= -O2  -g  -Wall \nUsing FCFLAGS= -O2  -g  -Wall \nUsing F77FLAGS= -O2  -g  -Wall \nUsing CPPFLAGS= -I/home/drkirkby/sage-4.3/local/include \nUsing LDFLAGS= -L/home/drkirkby/sage-4.3/local/lib \nUsing ABI=\nconfigure scripts and/or makefiles might override these later\n \nCannot determine your platform or it is not supported... exiting\n\nreal\t0m0.076s\nuser\t0m0.050s\nsys\t0m0.020s\nsage: An error occurred while installing cliquer-1.2.p2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7782\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @nathanncohen\n\ncliquer is failing on HP-UX 11.11 on a HP C3600 workstation. The spkg-install has code which applies different flags to build the shared library on different platforms, but does not have any for HP-UX. The spkg-install exits with a message saying: \n\n**Cannot determine your platform or it is not supported... exiting**\n\nThis needs to be changed. Once the files testcc.sh and testcxx.sh at #7505 are included in Sage, doing this will be a lot easier. \n\n\n```\ncliquer-1.2.p2/src/cliquerconf.h\ncliquer-1.2.p2/src/testcase-large-w-60-64-mxml.h\ncliquer-1.2.p2/src/testcase-large.b\ncliquer-1.2.p2/src/set.h\ncliquer-1.2.p2/src/graph.h\nFinished extraction\n****************************************************\nHost system\nuname -a:\nHP-UX hpbox B.11.11 U 9000/785 2016698240 unlimited-user license\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: hppa1.1-hp-hpux11.11\nConfigured with: /tmp/gcc-4.3.3.tar.gz/gcc-4.3.3/configure --host=hppa1.1-hp-hpux11.11 --target=hppa1.1-hp-hpux11.11 --build=hppa1.1-hp-hpux11.11 --prefix=/opt/hp-gcc-4.3.3 --with-gnu-as --without-gnu-ld --enable-threads=posix --enable-languages=c,c++ --with-gmp=/proj/opensrc/be/hppa1.1-hp-hpux11.11 --with-mpfr=/proj/opensrc/be/hppa1.1-hp-hpux11.11\nThread model: posix\ngcc version 4.3.3 (GCC) \n****************************************************\nCode will be built with debugging information present. Set 'SAGE_DEBUG' to 'no' if you don't want that.\nNo Fortran compiler has been defined. This is not normally a problem.\nUsing CC=gcc\nUsing CXX=g++\nUsing FC=\nUsing F77=\nUsing SAGE_FORTRAN=\nUsing SAGE_FORTRAN_LIB=\nThe following environment variables will be exported\nUsing CFLAGS= -O2  -g  -Wall -fomit-frame-pointer -funroll-loops -c -fPIC \nUsing CXXFLAGS= -O2  -g  -Wall \nUsing FCFLAGS= -O2  -g  -Wall \nUsing F77FLAGS= -O2  -g  -Wall \nUsing CPPFLAGS= -I/home/drkirkby/sage-4.3/local/include \nUsing LDFLAGS= -L/home/drkirkby/sage-4.3/local/lib \nUsing ABI=\nconfigure scripts and/or makefiles might override these later\n \nCannot determine your platform or it is not supported... exiting\n\nreal\t0m0.076s\nuser\t0m0.050s\nsys\t0m0.020s\nsage: An error occurred while installing cliquer-1.2.p2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7782\n\n",
     "created_at": "2009-12-29T06:22:11Z",
     "labels": [
         "porting",
@@ -19,7 +19,7 @@ archive/issues_007782.json:
 ```
 Assignee: drkirkby
 
-CC:  ncohen
+CC:  @nathanncohen
 
 cliquer is failing on HP-UX 11.11 on a HP C3600 workstation. The spkg-install has code which applies different flags to build the shared library on different platforms, but does not have any for HP-UX. The spkg-install exits with a message saying: 
 
@@ -92,7 +92,7 @@ archive/issue_comments_067105.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7782#issuecomment-67105",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_067109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7782#issuecomment-67109",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_067110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7782#issuecomment-67110",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_067111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7782#issuecomment-67111",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -284,7 +284,7 @@ archive/issue_comments_067112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7782#issuecomment-67112",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

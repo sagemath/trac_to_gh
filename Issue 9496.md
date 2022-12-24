@@ -46,7 +46,7 @@ archive/issue_comments_091173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9496#issuecomment-91173",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_091174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9496#issuecomment-91174",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_091177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9496#issuecomment-91177",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_091180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9496#issuecomment-91180",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -197,16 +197,16 @@ apply after other patch
 archive/issue_comments_091181.json:
 ```json
 {
-    "body": "Attachment [trac_9496_referee.patch](tarball://root/attachments/some-uuid/ticket9496/trac_9496_referee.patch) by malb created at 2010-07-15 18:41:29\n\nI've just uploaded a referee patch which should be applied on top of your patch. It fixes a few formating issues I probably could do quicker than you.\u00a0\n\nNote that this means that I cannot give this ticket a positive review anymore, I cannot referee my own patch. However, since I sign off on your patch iff my patch is applied afterwards, you can review my patch, i.e. accept my changes. Of course, if you have anything to criticise go for it!",
+    "body": "Attachment [trac_9496_referee.patch](tarball://root/attachments/some-uuid/ticket9496/trac_9496_referee.patch) by @malb created at 2010-07-15 18:41:29\n\nI've just uploaded a referee patch which should be applied on top of your patch. It fixes a few formating issues I probably could do quicker than you.\u00a0\n\nNote that this means that I cannot give this ticket a positive review anymore, I cannot referee my own patch. However, since I sign off on your patch iff my patch is applied afterwards, you can review my patch, i.e. accept my changes. Of course, if you have anything to criticise go for it!",
     "created_at": "2010-07-15T18:41:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9496#issuecomment-91181",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_9496_referee.patch](tarball://root/attachments/some-uuid/ticket9496/trac_9496_referee.patch) by malb created at 2010-07-15 18:41:29
+Attachment [trac_9496_referee.patch](tarball://root/attachments/some-uuid/ticket9496/trac_9496_referee.patch) by @malb created at 2010-07-15 18:41:29
 
 I've just uploaded a referee patch which should be applied on top of your patch. It fixes a few formating issues I probably could do quicker than you. 
 
@@ -224,7 +224,7 @@ archive/issue_comments_091182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9496#issuecomment-91182",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_091185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9496#issuecomment-91185",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_091186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9496#issuecomment-91186",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -316,7 +316,7 @@ archive/issue_comments_091187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9496#issuecomment-91187",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -354,7 +354,7 @@ archive/issue_comments_091189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9496#issuecomment-91189",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

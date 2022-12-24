@@ -14,7 +14,7 @@ archive/issues_000922.json:
     "title": "bug in prime_powers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/922",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -49,7 +49,7 @@ archive/issue_comments_005652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/922#issuecomment-5652",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -62,16 +62,16 @@ Changing status from new to assigned.
 archive/issue_comments_005653.json:
 ```json
 {
-    "body": "Changing assignee from somebody to robertwb.",
+    "body": "Changing assignee from somebody to @robertwb.",
     "created_at": "2007-10-20T19:21:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/922#issuecomment-5653",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from somebody to robertwb.
+Changing assignee from somebody to @robertwb.
 
 
 
@@ -80,16 +80,16 @@ Changing assignee from somebody to robertwb.
 archive/issue_comments_005654.json:
 ```json
 {
-    "body": "Attachment [922.patch](tarball://root/attachments/some-uuid/ticket922/922.patch) by robertwb created at 2007-10-20 19:40:28",
+    "body": "Attachment [922.patch](tarball://root/attachments/some-uuid/ticket922/922.patch) by @robertwb created at 2007-10-20 19:40:28",
     "created_at": "2007-10-20T19:40:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/922#issuecomment-5654",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [922.patch](tarball://root/attachments/some-uuid/ticket922/922.patch) by robertwb created at 2007-10-20 19:40:28
+Attachment [922.patch](tarball://root/attachments/some-uuid/ticket922/922.patch) by @robertwb created at 2007-10-20 19:40:28
 
 
 
@@ -103,7 +103,7 @@ archive/issue_comments_005655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/922#issuecomment-5655",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009585.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  chapoton\n\nWe've have several requests and discussions ([on the mailing lists](http://groups.google.com/groups/search?q=equation+editor+group%3Asage-devel&btnG=Search&sitesearch=), etc.) for an interactive equation editor for Sage.\n\nSome possibilities:\n\n* [D. Cervone's experimental editor](http://www.math.union.edu/~dpvc/talks/2006-12-08.IMA/editor.html) (but see [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/28c918d66a421573/3ed595b482b889b4#3ed595b482b889b4))\n\nIssue created by migration from https://trac.sagemath.org/ticket/9585\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @fchapoton\n\nWe've have several requests and discussions ([on the mailing lists](http://groups.google.com/groups/search?q=equation+editor+group%3Asage-devel&btnG=Search&sitesearch=), etc.) for an interactive equation editor for Sage.\n\nSome possibilities:\n\n* [D. Cervone's experimental editor](http://www.math.union.edu/~dpvc/talks/2006-12-08.IMA/editor.html) (but see [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/28c918d66a421573/3ed595b482b889b4#3ed595b482b889b4))\n\nIssue created by migration from https://trac.sagemath.org/ticket/9585\n\n",
     "created_at": "2010-07-23T08:47:07Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_009585.json:
     "title": "Interactive equation editor for the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9585",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: jason, was
 
-CC:  chapoton
+CC:  @fchapoton
 
 We've have several requests and discussions ([on the mailing lists](http://groups.google.com/groups/search?q=equation+editor+group%3Asage-devel&btnG=Search&sitesearch=), etc.) for an interactive equation editor for Sage.
 
@@ -61,7 +61,7 @@ archive/issue_comments_092689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9585#issuecomment-92689",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_092690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9585#issuecomment-92690",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_092691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9585#issuecomment-92691",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_092692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9585#issuecomment-92692",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_092693.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9585#issuecomment-92693",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

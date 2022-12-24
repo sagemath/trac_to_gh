@@ -3,7 +3,7 @@
 archive/issues_006660.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThe following code creates a Graph and computes its chromatic number :\n\nsage: h=Graph(\":I`ASWCaG`WaJC{afP\")\n\nsage: h.chromatic_number()\n\n4\n\nsage: h.coloring()\n\n[[6, 8], [9], [0, 4, 7, 3], [1, 2, 5]]\n\nMeanwhile, you can check that the coloring [[3, 9, 1], [9, 4, 0, 3], [3, 8, 5]] is valid with this code that checks that each class is actually an independent set.\n:\n\nfor c in [[3, 9, 1], [9, 4, 0, 3], [3, 8, 5]]:\n\n      print h.subgraph(c).connected_components_number()==len(c)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6660\n\n",
+    "body": "Assignee: @rlmill\n\nThe following code creates a Graph and computes its chromatic number :\n\nsage: h=Graph(\":I`ASWCaG`WaJC{afP\")\n\nsage: h.chromatic_number()\n\n4\n\nsage: h.coloring()\n\n[[6, 8], [9], [0, 4, 7, 3], [1, 2, 5]]\n\nMeanwhile, you can check that the coloring [[3, 9, 1], [9, 4, 0, 3], [3, 8, 5]] is valid with this code that checks that each class is actually an independent set.\n:\n\nfor c in [[3, 9, 1], [9, 4, 0, 3], [3, 8, 5]]:\n\n      print h.subgraph(c).connected_components_number()==len(c)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6660\n\n",
     "created_at": "2009-07-30T12:40:05Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_006660.json:
     "title": "Error in chromatic_number() and coloring() in the Graph class",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6660",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 The following code creates a Graph and computes its chromatic number :
 
@@ -54,7 +54,7 @@ archive/issue_comments_054670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6660#issuecomment-54670",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_054671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6660#issuecomment-54671",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

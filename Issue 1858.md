@@ -3,7 +3,7 @@
 archive/issues_001858.json:
 ```json
 {
-    "body": "Assignee: was\n\nRight now:\n\n```\n$ sage -coverage plot.py\n----------------------------------------------------------------------\nplot.py\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE plot.py: 13% (25 of 185)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1858\n\n",
+    "body": "Assignee: @williamstein\n\nRight now:\n\n```\n$ sage -coverage plot.py\n----------------------------------------------------------------------\nplot.py\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE plot.py: 13% (25 of 185)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1858\n\n",
     "created_at": "2008-01-20T00:33:52Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001858.json:
     "title": "plot.py coverage is crap -- get it to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1858",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Right now:
 
@@ -47,7 +47,7 @@ archive/issue_comments_011753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1858#issuecomment-11753",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_011754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1858#issuecomment-11754",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -88,16 +88,16 @@ It's a start at least.
 archive/issue_comments_011755.json:
 ```json
 {
-    "body": "Attachment [trac-1858.patch](tarball://root/attachments/some-uuid/ticket1858/trac-1858.patch) by was created at 2008-01-20 04:49:54",
+    "body": "Attachment [trac-1858.patch](tarball://root/attachments/some-uuid/ticket1858/trac-1858.patch) by @williamstein created at 2008-01-20 04:49:54",
     "created_at": "2008-01-20T04:49:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1858#issuecomment-11755",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1858.patch](tarball://root/attachments/some-uuid/ticket1858/trac-1858.patch) by was created at 2008-01-20 04:49:54
+Attachment [trac-1858.patch](tarball://root/attachments/some-uuid/ticket1858/trac-1858.patch) by @williamstein created at 2008-01-20 04:49:54
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_011756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1858#issuecomment-11756",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_011757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1858#issuecomment-11757",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

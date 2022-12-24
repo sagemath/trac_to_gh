@@ -14,7 +14,7 @@ archive/issues_009360.json:
     "title": "Sage 4.4.4 numerical noise in mwrank.pyx on 32-bit cicero",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9360",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jason, jkantor
@@ -66,7 +66,7 @@ archive/issue_comments_088891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9360#issuecomment-88891",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -79,16 +79,16 @@ Changing status from new to needs_review.
 archive/issue_comments_088892.json:
 ```json
 {
-    "body": "Attachment [trac_9360.patch](tarball://root/attachments/some-uuid/ticket9360/trac_9360.patch) by was created at 2010-06-28 17:50:45",
+    "body": "Attachment [trac_9360.patch](tarball://root/attachments/some-uuid/ticket9360/trac_9360.patch) by @williamstein created at 2010-06-28 17:50:45",
     "created_at": "2010-06-28T17:50:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9360#issuecomment-88892",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_9360.patch](tarball://root/attachments/some-uuid/ticket9360/trac_9360.patch) by was created at 2010-06-28 17:50:45
+Attachment [trac_9360.patch](tarball://root/attachments/some-uuid/ticket9360/trac_9360.patch) by @williamstein created at 2010-06-28 17:50:45
 
 
 
@@ -102,7 +102,7 @@ archive/issue_comments_088893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9360#issuecomment-88893",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_088894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9360#issuecomment-88894",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_088895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9360#issuecomment-88895",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_009120.json:
     "title": "plot3d transformations don't respect variable names",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9120",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jason, was
@@ -39,7 +39,7 @@ archive/issue_comments_084816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9120",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9120#issuecomment-84816",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to needs_review.
 archive/issue_comments_084817.json:
 ```json
 {
-    "body": "Attachment [trac-9120-transformation-signature.patch](tarball://root/attachments/some-uuid/ticket9120/trac-9120-transformation-signature.patch) by jason created at 2010-06-03 03:01:23",
+    "body": "Attachment [trac-9120-transformation-signature.patch](tarball://root/attachments/some-uuid/ticket9120/trac-9120-transformation-signature.patch) by @jasongrout created at 2010-06-03 03:01:23",
     "created_at": "2010-06-03T03:01:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9120",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9120#issuecomment-84817",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-9120-transformation-signature.patch](tarball://root/attachments/some-uuid/ticket9120/trac-9120-transformation-signature.patch) by jason created at 2010-06-03 03:01:23
+Attachment [trac-9120-transformation-signature.patch](tarball://root/attachments/some-uuid/ticket9120/trac-9120-transformation-signature.patch) by @jasongrout created at 2010-06-03 03:01:23
 
 
 
@@ -97,7 +97,7 @@ archive/issue_comments_084819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9120",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9120#issuecomment-84819",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_084822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9120",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9120#issuecomment-84822",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_084823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9120",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9120#issuecomment-84823",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_084824.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9120",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9120#issuecomment-84824",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -217,16 +217,16 @@ apply on top of previous patches
 archive/issue_comments_084825.json:
 ```json
 {
-    "body": "Attachment [trac-9120-refactoring.patch](tarball://root/attachments/some-uuid/ticket9120/trac-9120-refactoring.patch) by jason created at 2010-06-03 15:33:08\n\nReplying to [comment:5 wcauchois]:\n> Well, this all looks good and it seems to do what you're describing.\n> \n> Do you think it would be good to factor the block of code from line 236 to line 259 into its own function (say, _find_arguments_for_callable) for readability's sake?\n\nOn second thought, that's a really good suggestion and relatively easy to do right now.  I've attached a second patch, to be applied on top of the first one.",
+    "body": "Attachment [trac-9120-refactoring.patch](tarball://root/attachments/some-uuid/ticket9120/trac-9120-refactoring.patch) by @jasongrout created at 2010-06-03 15:33:08\n\nReplying to [comment:5 wcauchois]:\n> Well, this all looks good and it seems to do what you're describing.\n> \n> Do you think it would be good to factor the block of code from line 236 to line 259 into its own function (say, _find_arguments_for_callable) for readability's sake?\n\nOn second thought, that's a really good suggestion and relatively easy to do right now.  I've attached a second patch, to be applied on top of the first one.",
     "created_at": "2010-06-03T15:33:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9120",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9120#issuecomment-84825",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-9120-refactoring.patch](tarball://root/attachments/some-uuid/ticket9120/trac-9120-refactoring.patch) by jason created at 2010-06-03 15:33:08
+Attachment [trac-9120-refactoring.patch](tarball://root/attachments/some-uuid/ticket9120/trac-9120-refactoring.patch) by @jasongrout created at 2010-06-03 15:33:08
 
 Replying to [comment:5 wcauchois]:
 > Well, this all looks good and it seems to do what you're describing.
@@ -307,7 +307,7 @@ archive/issue_comments_084829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9120",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9120#issuecomment-84829",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

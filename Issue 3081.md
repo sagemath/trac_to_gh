@@ -3,7 +3,7 @@
 archive/issues_003081.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  ncalexan\n\nThis (nearly trivial patch) adds support for exact and numerical evaluation of \"twisted\" Kloosterman sums. This generalizes Gauss sums, Salie sums and normal Kloosterman sums. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3081\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @ncalexan\n\nThis (nearly trivial patch) adds support for exact and numerical evaluation of \"twisted\" Kloosterman sums. This generalizes Gauss sums, Salie sums and normal Kloosterman sums. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3081\n\n",
     "created_at": "2008-05-02T15:05:31Z",
     "labels": [
         "Cygwin",
@@ -19,7 +19,7 @@ archive/issues_003081.json:
 ```
 Assignee: mabshoff
 
-CC:  ncalexan
+CC:  @ncalexan
 
 This (nearly trivial patch) adds support for exact and numerical evaluation of "twisted" Kloosterman sums. This generalizes Gauss sums, Salie sums and normal Kloosterman sums. 
 
@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3081
 archive/issue_comments_021244.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to was.",
+    "body": "Changing assignee from mabshoff to @williamstein.",
     "created_at": "2008-05-02T15:10:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3081",
     "type": "issue_comment",
@@ -44,7 +44,7 @@ archive/issue_comments_021244.json:
 }
 ```
 
-Changing assignee from mabshoff to was.
+Changing assignee from mabshoff to @williamstein.
 
 
 
@@ -118,7 +118,7 @@ archive/issue_comments_021248.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3081#issuecomment-21248",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_021249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3081#issuecomment-21249",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_021253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3081#issuecomment-21253",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_021256.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3081#issuecomment-21256",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -404,7 +404,7 @@ archive/issue_comments_021258.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3081#issuecomment-21258",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -427,7 +427,7 @@ archive/issue_comments_021259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3081#issuecomment-21259",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -490,7 +490,7 @@ archive/issue_comments_021262.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3081#issuecomment-21262",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

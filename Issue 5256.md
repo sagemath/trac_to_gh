@@ -3,7 +3,7 @@
 archive/issues_005256.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  sage-combinat\n\nKeywords: matrices, invert, determinant\n\nThere where a lot of inconsistency and bugs in the handling of trivial matrices.\nThe following patch aims to solve these and to check systematicly the coherence. Here is a selection of weirdness:\n* plain wrong answers\n\n```\nsage: m = matrix(SR, 1,1, [1])\nsage: m.inverse()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\nsage: m = matrix(RDF, 0,2)\nsage: m.inverse()\n[]\n```\n\n* Inconsistencies in the answers depending on the base ring\n\n```\nsage: m = matrix(RDF, 1,1)\nsage: m.inverse()\n---------------------------------------------------------------------------\nLinAlgError                               Traceback (most recent call last)\n```\n\n   whereas\n\n```\nsage: m = matrix(QQ, 1,1)\nsage: m.inverse()\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n```\n\n\nAside rewriting some error messages, changing some exception and working around several bug in particular in maxima's handling of matrix over SR, the main contribution of this patch lies in the function `test_trivial_matrices_inverse` in `sage/matrix/matrix_space.py` and its associated doctests. Trough a bunch of assertions this function indirectly checks the behavior of matrix spaces. Any new implementation of a kind of matrices should be checked be this function. \n\nPatch Author: Florent Hivert\n\nIssue created by migration from https://trac.sagemath.org/ticket/5256\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  sage-combinat\n\nKeywords: matrices, invert, determinant\n\nThere where a lot of inconsistency and bugs in the handling of trivial matrices.\nThe following patch aims to solve these and to check systematicly the coherence. Here is a selection of weirdness:\n* plain wrong answers\n\n```\nsage: m = matrix(SR, 1,1, [1])\nsage: m.inverse()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\nsage: m = matrix(RDF, 0,2)\nsage: m.inverse()\n[]\n```\n\n* Inconsistencies in the answers depending on the base ring\n\n```\nsage: m = matrix(RDF, 1,1)\nsage: m.inverse()\n---------------------------------------------------------------------------\nLinAlgError                               Traceback (most recent call last)\n```\n\n   whereas\n\n```\nsage: m = matrix(QQ, 1,1)\nsage: m.inverse()\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n```\n\n\nAside rewriting some error messages, changing some exception and working around several bug in particular in maxima's handling of matrix over SR, the main contribution of this patch lies in the function `test_trivial_matrices_inverse` in `sage/matrix/matrix_space.py` and its associated doctests. Trough a bunch of assertions this function indirectly checks the behavior of matrix spaces. Any new implementation of a kind of matrices should be checked be this function. \n\nPatch Author: Florent Hivert\n\nIssue created by migration from https://trac.sagemath.org/ticket/5256\n\n",
     "created_at": "2009-02-13T18:47:24Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005256.json:
     "title": "[with patch, needs review] coherent handling of trivial matrices (depend on #5244, #5242).",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5256",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  sage-combinat
 
@@ -72,16 +72,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5256
 archive/issue_comments_040332.json:
 ```json
 {
-    "body": "Changing assignee from was to hivert.",
+    "body": "Changing assignee from @williamstein to @hivert.",
     "created_at": "2009-02-13T18:50:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5256",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5256#issuecomment-40332",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Changing assignee from was to hivert.
+Changing assignee from @williamstein to @hivert.
 
 
 
@@ -95,7 +95,7 @@ archive/issue_comments_040333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5256",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5256#issuecomment-40333",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_040334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5256",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5256#issuecomment-40334",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_040335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5256",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5256#issuecomment-40335",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_040336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5256",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5256#issuecomment-40336",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -178,16 +178,16 @@ New version with a corrected typo (thanks Jason)
 archive/issue_comments_040337.json:
 ```json
 {
-    "body": "Attachment [empty_matrix_inverse-fh.patch](tarball://root/attachments/some-uuid/ticket5256/empty_matrix_inverse-fh.patch) by malb created at 2009-02-14 16:34:10\n\n**Review**\npatch looks good except\n* typo: \"seld\" -> \"self\" (2402)\n* docstring INPUT block of `test_trivial_matrices_inverse` does not conform to Sage's conventions\n* \"TODO: must be adapted to Nicolas check framework (see trac FIXME).\" The FIXME should probably be addressed\n\ni.e. all issues are trivial.\n\nI didn't run doctests yet, will do now.",
+    "body": "Attachment [empty_matrix_inverse-fh.patch](tarball://root/attachments/some-uuid/ticket5256/empty_matrix_inverse-fh.patch) by @malb created at 2009-02-14 16:34:10\n\n**Review**\npatch looks good except\n* typo: \"seld\" -> \"self\" (2402)\n* docstring INPUT block of `test_trivial_matrices_inverse` does not conform to Sage's conventions\n* \"TODO: must be adapted to Nicolas check framework (see trac FIXME).\" The FIXME should probably be addressed\n\ni.e. all issues are trivial.\n\nI didn't run doctests yet, will do now.",
     "created_at": "2009-02-14T16:34:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5256",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5256#issuecomment-40337",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [empty_matrix_inverse-fh.patch](tarball://root/attachments/some-uuid/ticket5256/empty_matrix_inverse-fh.patch) by malb created at 2009-02-14 16:34:10
+Attachment [empty_matrix_inverse-fh.patch](tarball://root/attachments/some-uuid/ticket5256/empty_matrix_inverse-fh.patch) by @malb created at 2009-02-14 16:34:10
 
 **Review**
 patch looks good except
@@ -238,7 +238,7 @@ archive/issue_comments_040339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5256",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5256#issuecomment-40339",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_040340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5256",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5256#issuecomment-40340",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -272,16 +272,16 @@ Reupped after malb request on irc.
 archive/issue_comments_040341.json:
 ```json
 {
-    "body": "Attachment [trivial_matrices_inverse-5256-submitted.patch](tarball://root/attachments/some-uuid/ticket5256/trivial_matrices_inverse-5256-submitted.patch) by mhansen created at 2009-02-14 23:37:21\n\nPositive review on trivial_matrices_inverse-5256-submitted.patch.",
+    "body": "Attachment [trivial_matrices_inverse-5256-submitted.patch](tarball://root/attachments/some-uuid/ticket5256/trivial_matrices_inverse-5256-submitted.patch) by @mwhansen created at 2009-02-14 23:37:21\n\nPositive review on trivial_matrices_inverse-5256-submitted.patch.",
     "created_at": "2009-02-14T23:37:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5256",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5256#issuecomment-40341",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trivial_matrices_inverse-5256-submitted.patch](tarball://root/attachments/some-uuid/ticket5256/trivial_matrices_inverse-5256-submitted.patch) by mhansen created at 2009-02-14 23:37:21
+Attachment [trivial_matrices_inverse-5256-submitted.patch](tarball://root/attachments/some-uuid/ticket5256/trivial_matrices_inverse-5256-submitted.patch) by @mwhansen created at 2009-02-14 23:37:21
 
 Positive review on trivial_matrices_inverse-5256-submitted.patch.
 
@@ -297,7 +297,7 @@ archive/issue_comments_040342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5256",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5256#issuecomment-40342",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

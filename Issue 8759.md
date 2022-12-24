@@ -3,7 +3,7 @@
 archive/issues_008759.json:
 ```json
 {
-    "body": "Assignee: acleone\n\nCC:  acleone was timdumol\n\nSass is the templating engine Sage uses for it's CSS.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8759\n\n",
+    "body": "Assignee: acleone\n\nCC:  acleone @williamstein @TimDumol\n\nSass is the templating engine Sage uses for it's CSS.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8759\n\n",
     "created_at": "2010-04-24T23:19:58Z",
     "labels": [
         "notebook",
@@ -19,7 +19,7 @@ archive/issues_008759.json:
 ```
 Assignee: acleone
 
-CC:  acleone was timdumol
+CC:  acleone @williamstein @TimDumol
 
 Sass is the templating engine Sage uses for it's CSS.
 
@@ -113,7 +113,7 @@ archive/issue_comments_080147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8759#issuecomment-80147",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_080148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8759#issuecomment-80148",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_080149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8759#issuecomment-80149",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_080150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8759#issuecomment-80150",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_080151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8759#issuecomment-80151",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

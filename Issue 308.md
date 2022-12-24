@@ -3,7 +3,7 @@
 archive/issues_000308.json:
 ```json
 {
-    "body": "Assignee: was\n\n`log_html` crashes because of an undefined variable:\n\n\n```\nsage: log_html ()\n[..]\n   245         T = self._title()\n   246         inlog = os.path.split(self._input_log_name())[1]\n--> 247         return '<html>%s<title>%s</title>\\n<body><h1\nalign=center>%s</h1>\\n<h2 align=center><a\nhref=\"%s\">%s</a></h2><pre>'%(REFRESH,T,T, inlog, inlog)   \n<type 'exceptions.NameError'>: global name 'REFRESH' is not defined\n```\n\n\nI'm not sure what the variable `REFRESH` is referring to, but removing\nit takes care of the problem. A patch is available here:\nhttp://sage.math.washington.edu/home/dfdeshom/custom/patches/log.py.hg\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/308\n\n",
+    "body": "Assignee: @williamstein\n\n`log_html` crashes because of an undefined variable:\n\n\n```\nsage: log_html ()\n[..]\n   245         T = self._title()\n   246         inlog = os.path.split(self._input_log_name())[1]\n--> 247         return '<html>%s<title>%s</title>\\n<body><h1\nalign=center>%s</h1>\\n<h2 align=center><a\nhref=\"%s\">%s</a></h2><pre>'%(REFRESH,T,T, inlog, inlog)   \n<type 'exceptions.NameError'>: global name 'REFRESH' is not defined\n```\n\n\nI'm not sure what the variable `REFRESH` is referring to, but removing\nit takes care of the problem. A patch is available here:\nhttp://sage.math.washington.edu/home/dfdeshom/custom/patches/log.py.hg\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/308\n\n",
     "created_at": "2007-03-04T06:39:51Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_000308.json:
     "title": "log_html() crashes because of an undefined variable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/308",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 `log_html` crashes because of an undefined variable:
 
@@ -90,7 +90,7 @@ archive/issue_comments_001464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/308",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/308#issuecomment-1464",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

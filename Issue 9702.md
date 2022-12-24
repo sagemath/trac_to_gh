@@ -3,7 +3,7 @@
 archive/issues_009702.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  boothby ncohen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9702\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  boothby @nathanncohen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9702\n\n",
     "created_at": "2010-08-07T03:20:23Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_009702.json:
     "title": "Matching polynomials for graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9702",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: jason, ncohen, rlm
 
-CC:  boothby ncohen
+CC:  boothby @nathanncohen
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_094342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94342",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_094343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94343",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_094344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94344",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -88,16 +88,16 @@ Replaces trac_9702-{1, 2, 3 and 4}.patch
 archive/issue_comments_094345.json:
 ```json
 {
-    "body": "Attachment [trac_9702-flat.patch](tarball://root/attachments/some-uuid/ticket9702/trac_9702-flat.patch) by rlm created at 2010-10-30 11:49:43",
+    "body": "Attachment [trac_9702-flat.patch](tarball://root/attachments/some-uuid/ticket9702/trac_9702-flat.patch) by @rlmill created at 2010-10-30 11:49:43",
     "created_at": "2010-10-30T11:49:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94345",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_9702-flat.patch](tarball://root/attachments/some-uuid/ticket9702/trac_9702-flat.patch) by rlm created at 2010-10-30 11:49:43
+Attachment [trac_9702-flat.patch](tarball://root/attachments/some-uuid/ticket9702/trac_9702-flat.patch) by @rlmill created at 2010-10-30 11:49:43
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_094346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94346",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_094347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94347",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_094348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94348",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -172,16 +172,16 @@ Nathann
 archive/issue_comments_094349.json:
 ```json
 {
-    "body": "Attachment [trac_9702-smallfixes.patch](tarball://root/attachments/some-uuid/ticket9702/trac_9702-smallfixes.patch) by rlm created at 2010-11-26 16:42:19",
+    "body": "Attachment [trac_9702-smallfixes.patch](tarball://root/attachments/some-uuid/ticket9702/trac_9702-smallfixes.patch) by @rlmill created at 2010-11-26 16:42:19",
     "created_at": "2010-11-26T16:42:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94349",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_9702-smallfixes.patch](tarball://root/attachments/some-uuid/ticket9702/trac_9702-smallfixes.patch) by rlm created at 2010-11-26 16:42:19
+Attachment [trac_9702-smallfixes.patch](tarball://root/attachments/some-uuid/ticket9702/trac_9702-smallfixes.patch) by @rlmill created at 2010-11-26 16:42:19
 
 
 
@@ -195,7 +195,7 @@ archive/issue_comments_094350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94350",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_094351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94351",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_094352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94352",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_094353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94353",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -278,7 +278,7 @@ archive/issue_comments_094354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94354",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -296,7 +296,7 @@ archive/issue_comments_094355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94355",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -322,7 +322,7 @@ archive/issue_comments_094356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94356",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -337,16 +337,16 @@ Nathann
 archive/issue_comments_094357.json:
 ```json
 {
-    "body": "Attachment [trac_9702-smallfixes.2.patch](tarball://root/attachments/some-uuid/ticket9702/trac_9702-smallfixes.2.patch) by ncohen created at 2010-12-06 17:17:00\n\nPatch updated !\n\nNathann",
+    "body": "Attachment [trac_9702-smallfixes.2.patch](tarball://root/attachments/some-uuid/ticket9702/trac_9702-smallfixes.2.patch) by @nathanncohen created at 2010-12-06 17:17:00\n\nPatch updated !\n\nNathann",
     "created_at": "2010-12-06T17:17:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94357",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_9702-smallfixes.2.patch](tarball://root/attachments/some-uuid/ticket9702/trac_9702-smallfixes.2.patch) by ncohen created at 2010-12-06 17:17:00
+Attachment [trac_9702-smallfixes.2.patch](tarball://root/attachments/some-uuid/ticket9702/trac_9702-smallfixes.2.patch) by @nathanncohen created at 2010-12-06 17:17:00
 
 Patch updated !
 
@@ -364,7 +364,7 @@ archive/issue_comments_094358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94358",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -382,7 +382,7 @@ archive/issue_comments_094359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94359",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -400,7 +400,7 @@ archive/issue_comments_094360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94360",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -418,7 +418,7 @@ archive/issue_comments_094361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94361",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003264.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  polybori malb\n\nMake sure to revert #3104 in case we do end up using less memory.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3264\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  polybori @malb\n\nMake sure to revert #3104 in case we do end up using less memory.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3264\n\n",
     "created_at": "2008-05-21T13:19:54Z",
     "labels": [
         "packages: standard",
@@ -19,7 +19,7 @@ archive/issues_003264.json:
 ```
 Assignee: mabshoff
 
-CC:  polybori malb
+CC:  polybori @malb
 
 Make sure to revert #3104 in case we do end up using less memory.
 
@@ -43,7 +43,7 @@ archive/issue_comments_022585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22585",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_022586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22586",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -78,16 +78,16 @@ http://sage.math.washington.edu/home/tabbott/polybori-0.5rc.spkg
 archive/issue_comments_022587.json:
 ```json
 {
-    "body": "Attachment [pbori-0.5-sage.patch](tarball://root/attachments/some-uuid/ticket3264/pbori-0.5-sage.patch) by tabbott created at 2008-07-11 01:40:44",
+    "body": "Attachment [pbori-0.5-sage.patch](tarball://root/attachments/some-uuid/ticket3264/pbori-0.5-sage.patch) by @timabbott created at 2008-07-11 01:40:44",
     "created_at": "2008-07-11T01:40:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22587",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [pbori-0.5-sage.patch](tarball://root/attachments/some-uuid/ticket3264/pbori-0.5-sage.patch) by tabbott created at 2008-07-11 01:40:44
+Attachment [pbori-0.5-sage.patch](tarball://root/attachments/some-uuid/ticket3264/pbori-0.5-sage.patch) by @timabbott created at 2008-07-11 01:40:44
 
 
 
@@ -188,7 +188,7 @@ archive/issue_comments_022590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22590",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_022593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22593",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_022594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22594",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -374,7 +374,7 @@ archive/issue_comments_022597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22597",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -418,7 +418,7 @@ archive/issue_comments_022599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22599",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -441,7 +441,7 @@ archive/issue_comments_022600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22600",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -503,7 +503,7 @@ archive/issue_comments_022601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22601",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -611,7 +611,7 @@ archive/issue_comments_022604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22604",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -624,16 +624,16 @@ updated patch
 archive/issue_comments_022605.json:
 ```json
 {
-    "body": "Attachment [pbori-0.5-sage.2.patch](tarball://root/attachments/some-uuid/ticket3264/pbori-0.5-sage.2.patch) by malb created at 2008-09-01 13:54:29\n\nHi there,\n\nI've uploaded an updated SPKG (not based on the rc Alexander pointed us to) here:\n\n  http://sage.math.washington.edu/home/malb/spkgs/polybori-0.5rc.p1.spkg\n\nand updated the attached patch. `sage -t sage/rings/` passes for me. I'v reverted #3104 too btw. and fixed the SPKG.txt.",
+    "body": "Attachment [pbori-0.5-sage.2.patch](tarball://root/attachments/some-uuid/ticket3264/pbori-0.5-sage.2.patch) by @malb created at 2008-09-01 13:54:29\n\nHi there,\n\nI've uploaded an updated SPKG (not based on the rc Alexander pointed us to) here:\n\n  http://sage.math.washington.edu/home/malb/spkgs/polybori-0.5rc.p1.spkg\n\nand updated the attached patch. `sage -t sage/rings/` passes for me. I'v reverted #3104 too btw. and fixed the SPKG.txt.",
     "created_at": "2008-09-01T13:54:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22605",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [pbori-0.5-sage.2.patch](tarball://root/attachments/some-uuid/ticket3264/pbori-0.5-sage.2.patch) by malb created at 2008-09-01 13:54:29
+Attachment [pbori-0.5-sage.2.patch](tarball://root/attachments/some-uuid/ticket3264/pbori-0.5-sage.2.patch) by @malb created at 2008-09-01 13:54:29
 
 Hi there,
 

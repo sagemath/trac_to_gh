@@ -14,7 +14,7 @@ archive/issues_003222.json:
     "title": "sqlite -- add cygwin support to sqlite",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3222",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -43,7 +43,7 @@ archive/issue_comments_022303.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3222#issuecomment-22303",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

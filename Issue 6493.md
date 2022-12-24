@@ -14,7 +14,7 @@ archive/issues_006493.json:
     "title": "new scipy-0.7.p2 spkg is broken on 64-bit OS X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6493",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -93,7 +93,7 @@ archive/issue_comments_052546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6493",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6493#issuecomment-52546",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

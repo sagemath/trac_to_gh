@@ -3,7 +3,7 @@
 archive/issues_000762.json:
 ```json
 {
-    "body": "Assignee: was\n\nThere is a bug in computing the values along a line of the L-series:\n\n\n```\nsage: E = EllipticCurve('389a')\nsage: L = E.Lseries_dokchitser()\nsage: E.Lseries_values_along_line(0.5, 3, 5)\nTraceback (most recent call last):\n...\nValueError: too many values to unpack\n```\n\n\nThis is just a light wrapper around Rubinstein's lcalc, so should be very easy to fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/762\n\n",
+    "body": "Assignee: @williamstein\n\nThere is a bug in computing the values along a line of the L-series:\n\n\n```\nsage: E = EllipticCurve('389a')\nsage: L = E.Lseries_dokchitser()\nsage: E.Lseries_values_along_line(0.5, 3, 5)\nTraceback (most recent call last):\n...\nValueError: too many values to unpack\n```\n\n\nThis is just a light wrapper around Rubinstein's lcalc, so should be very easy to fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/762\n\n",
     "created_at": "2007-09-30T04:34:43Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_000762.json:
     "title": "Elliptic curve L-series bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/762",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 There is a bug in computing the values along a line of the L-series:
 
@@ -89,7 +89,7 @@ archive/issue_comments_004515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/762#issuecomment-4515",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -102,16 +102,16 @@ this fixes the bug.
 archive/issue_comments_004516.json:
 ```json
 {
-    "body": "Attachment [trac762.patch](tarball://root/attachments/some-uuid/ticket762/trac762.patch) by was created at 2007-10-28 23:58:57",
+    "body": "Attachment [trac762.patch](tarball://root/attachments/some-uuid/ticket762/trac762.patch) by @williamstein created at 2007-10-28 23:58:57",
     "created_at": "2007-10-28T23:58:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/762#issuecomment-4516",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac762.patch](tarball://root/attachments/some-uuid/ticket762/trac762.patch) by was created at 2007-10-28 23:58:57
+Attachment [trac762.patch](tarball://root/attachments/some-uuid/ticket762/trac762.patch) by @williamstein created at 2007-10-28 23:58:57
 
 
 

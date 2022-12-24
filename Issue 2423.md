@@ -14,7 +14,7 @@ archive/issues_002423.json:
     "title": "notebook() opens up to the entire world by default",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2423",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
@@ -57,16 +57,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2423
 archive/issue_comments_016395.json:
 ```json
 {
-    "body": "Attachment [notebook-interface.patch](tarball://root/attachments/some-uuid/ticket2423/notebook-interface.patch) by jason created at 2008-03-07 22:41:54",
+    "body": "Attachment [notebook-interface.patch](tarball://root/attachments/some-uuid/ticket2423/notebook-interface.patch) by @jasongrout created at 2008-03-07 22:41:54",
     "created_at": "2008-03-07T22:41:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2423",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2423#issuecomment-16395",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [notebook-interface.patch](tarball://root/attachments/some-uuid/ticket2423/notebook-interface.patch) by jason created at 2008-03-07 22:41:54
+Attachment [notebook-interface.patch](tarball://root/attachments/some-uuid/ticket2423/notebook-interface.patch) by @jasongrout created at 2008-03-07 22:41:54
 
 
 
@@ -80,7 +80,7 @@ archive/issue_comments_016396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2423",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2423#issuecomment-16396",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_016397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2423",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2423#issuecomment-16397",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

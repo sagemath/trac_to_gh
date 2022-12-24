@@ -3,7 +3,7 @@
 archive/issues_007512.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  wcauchois robertwb mjo\n\nThis is a somewhat subtle issue if the function is a pure python function (you'd need to analyze the argument names), but maybe a convention is that if variable names are specified, they must match up to argument names in the function, and then they are slotted into the function using a dictionary, so that no matter where in the variable range list the range for x appears, it always is sent to the function as f(x=value).\n\nSee http://sagenb.org/home/jason3/302/\n\nI think that each of these should return the same plot:\n\n\n```\nsage: var('x,y')\nsage: def f(x,y):\n...      return x*sin(y)\n...\nsage: plot3d(f, (x,0,3),(y,-6,6),viewer='tachyon')\nsage: plot3d(f, (y,-6,6),(x,0,3),viewer='tachyon')\nsage: g(x,y)= x*sin(y)\nsage: plot3d(g, (x,0,3),(y,-6,6),viewer='tachyon')\nsage: plot3d(g, (y,-6,6),(x,0,3),viewer='tachyon')\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7512\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  wcauchois @robertwb @orlitzky\n\nThis is a somewhat subtle issue if the function is a pure python function (you'd need to analyze the argument names), but maybe a convention is that if variable names are specified, they must match up to argument names in the function, and then they are slotted into the function using a dictionary, so that no matter where in the variable range list the range for x appears, it always is sent to the function as f(x=value).\n\nSee http://sagenb.org/home/jason3/302/\n\nI think that each of these should return the same plot:\n\n\n```\nsage: var('x,y')\nsage: def f(x,y):\n...      return x*sin(y)\n...\nsage: plot3d(f, (x,0,3),(y,-6,6),viewer='tachyon')\nsage: plot3d(f, (y,-6,6),(x,0,3),viewer='tachyon')\nsage: g(x,y)= x*sin(y)\nsage: plot3d(g, (x,0,3),(y,-6,6),viewer='tachyon')\nsage: plot3d(g, (y,-6,6),(x,0,3),viewer='tachyon')\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7512\n\n",
     "created_at": "2009-11-22T03:49:46Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_007512.json:
     "title": "plot3d variable ranges should respect the named variable, if there is one",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7512",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  wcauchois robertwb mjo
+CC:  wcauchois @robertwb @orlitzky
 
 This is a somewhat subtle issue if the function is a pure python function (you'd need to analyze the argument names), but maybe a convention is that if variable names are specified, they must match up to argument names in the function, and then they are slotted into the function using a dictionary, so that no matter where in the variable range list the range for x appears, it always is sent to the function as f(x=value).
 
@@ -57,7 +57,7 @@ archive/issue_comments_063582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7512#issuecomment-63582",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_063583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7512#issuecomment-63583",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -88,16 +88,16 @@ Changing status from new to needs_review.
 archive/issue_comments_063584.json:
 ```json
 {
-    "body": "Attachment [trac-7512-fast_callable-callable_expressions.patch](tarball://root/attachments/some-uuid/ticket7512/trac-7512-fast_callable-callable_expressions.patch) by jason created at 2010-01-20 13:21:43",
+    "body": "Attachment [trac-7512-fast_callable-callable_expressions.patch](tarball://root/attachments/some-uuid/ticket7512/trac-7512-fast_callable-callable_expressions.patch) by @jasongrout created at 2010-01-20 13:21:43",
     "created_at": "2010-01-20T13:21:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7512#issuecomment-63584",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-7512-fast_callable-callable_expressions.patch](tarball://root/attachments/some-uuid/ticket7512/trac-7512-fast_callable-callable_expressions.patch) by jason created at 2010-01-20 13:21:43
+Attachment [trac-7512-fast_callable-callable_expressions.patch](tarball://root/attachments/some-uuid/ticket7512/trac-7512-fast_callable-callable_expressions.patch) by @jasongrout created at 2010-01-20 13:21:43
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_063585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7512#issuecomment-63585",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_063587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7512#issuecomment-63587",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_063589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7512#issuecomment-63589",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_063590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7512#issuecomment-63590",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_063591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7512#issuecomment-63591",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -331,7 +331,7 @@ archive/issue_comments_063592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7512#issuecomment-63592",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -354,7 +354,7 @@ archive/issue_comments_063593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7512#issuecomment-63593",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -377,7 +377,7 @@ archive/issue_comments_063594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7512#issuecomment-63594",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -395,7 +395,7 @@ archive/issue_comments_063595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7512#issuecomment-63595",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -413,7 +413,7 @@ archive/issue_comments_063596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7512#issuecomment-63596",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -431,7 +431,7 @@ archive/issue_comments_063597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7512#issuecomment-63597",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -449,7 +449,7 @@ archive/issue_comments_063598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7512#issuecomment-63598",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

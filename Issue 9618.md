@@ -14,7 +14,7 @@ archive/issues_009618.json:
     "title": "Slight improvement to vertex_coloring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9618",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9618
 archive/issue_comments_093164.json:
 ```json
 {
-    "body": "Attachment [trac_9618.patch](tarball://root/attachments/some-uuid/ticket9618/trac_9618.patch) by ncohen created at 2010-07-28 04:08:12",
+    "body": "Attachment [trac_9618.patch](tarball://root/attachments/some-uuid/ticket9618/trac_9618.patch) by @nathanncohen created at 2010-07-28 04:08:12",
     "created_at": "2010-07-28T04:08:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9618",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9618#issuecomment-93164",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_9618.patch](tarball://root/attachments/some-uuid/ticket9618/trac_9618.patch) by ncohen created at 2010-07-28 04:08:12
+Attachment [trac_9618.patch](tarball://root/attachments/some-uuid/ticket9618/trac_9618.patch) by @nathanncohen created at 2010-07-28 04:08:12
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_093165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9618",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9618#issuecomment-93165",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_093166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9618",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9618#issuecomment-93166",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_093167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9618",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9618#issuecomment-93167",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_004940.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: K.<a> = NumberField(x^2-2)\nsage: z = K.zeta_function()\nsage: z(0)\nTraceback (most recent call last):\n...\nArithmeticError:   ###   user error: L*(s) has a pole at s=0\nsage: z(0.0000001)\n-4.40686861437826e-8\n```\n\n\nNotice that there is in fact a zero at s=0, not a pole as the ArithmeticError claims.\n\nIn fact, it's a theorem that there is a zero at s=0 of order the unit rank of the number field.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4940\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: K.<a> = NumberField(x^2-2)\nsage: z = K.zeta_function()\nsage: z(0)\nTraceback (most recent call last):\n...\nArithmeticError:   ###   user error: L*(s) has a pole at s=0\nsage: z(0.0000001)\n-4.40686861437826e-8\n```\n\n\nNotice that there is in fact a zero at s=0, not a pole as the ArithmeticError claims.\n\nIn fact, it's a theorem that there is a zero at s=0 of order the unit rank of the number field.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4940\n\n",
     "created_at": "2009-01-05T08:01:29Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004940.json:
     "title": "dokchitser L-series at least for number fields claims a pole at zero, though the zeta function has a zero there",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4940",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -52,7 +52,7 @@ archive/issue_comments_037494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4940",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4940#issuecomment-37494",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_037495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4940",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4940#issuecomment-37495",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_004272.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  robertwb\n\nAs the title says :)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4272\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @robertwb\n\nAs the title says :)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4272\n\n",
     "created_at": "2008-10-13T10:08:47Z",
     "labels": [
         "doctest",
@@ -19,7 +19,7 @@ archive/issues_004272.json:
 ```
 Assignee: mabshoff
 
-CC:  robertwb
+CC:  @robertwb
 
 As the title says :)
 
@@ -61,7 +61,7 @@ archive/issue_comments_031187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4272#issuecomment-31187",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_031188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4272#issuecomment-31188",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_031192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4272#issuecomment-31192",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

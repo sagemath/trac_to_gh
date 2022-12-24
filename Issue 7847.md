@@ -3,7 +3,7 @@
 archive/issues_007847.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  was timdumol jhpalmieri jason\n\nThis is also a problem in IE8 on Windows XP.\n\nThis is a follow-up to #5100.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7847\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein @TimDumol @jhpalmieri @jasongrout\n\nThis is also a problem in IE8 on Windows XP.\n\nThis is a follow-up to #5100.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7847\n\n",
     "created_at": "2010-01-05T03:41:39Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007847.json:
     "title": "Emptying the trash in Firefox 3.5.6 displays a \"Forbidden  No referer found. Forbidden.\" page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7847",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  was timdumol jhpalmieri jason
+CC:  @williamstein @TimDumol @jhpalmieri @jasongrout
 
 This is also a problem in IE8 on Windows XP.
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7847
 archive/issue_comments_067970.json:
 ```json
 {
-    "body": "Attachment [trac_7847-empty_trash_ie_ff.patch](tarball://root/attachments/some-uuid/ticket7847/trac_7847-empty_trash_ie_ff.patch) by mpatel created at 2010-01-05 03:57:59\n\n\"No referer\" workaround.  sagenb repo.",
+    "body": "Attachment [trac_7847-empty_trash_ie_ff.patch](tarball://root/attachments/some-uuid/ticket7847/trac_7847-empty_trash_ie_ff.patch) by @qed777 created at 2010-01-05 03:57:59\n\n\"No referer\" workaround.  sagenb repo.",
     "created_at": "2010-01-05T03:57:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7847#issuecomment-67970",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7847-empty_trash_ie_ff.patch](tarball://root/attachments/some-uuid/ticket7847/trac_7847-empty_trash_ie_ff.patch) by mpatel created at 2010-01-05 03:57:59
+Attachment [trac_7847-empty_trash_ie_ff.patch](tarball://root/attachments/some-uuid/ticket7847/trac_7847-empty_trash_ie_ff.patch) by @qed777 created at 2010-01-05 03:57:59
 
 "No referer" workaround.  sagenb repo.
 
@@ -61,7 +61,7 @@ archive/issue_comments_067971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7847#issuecomment-67971",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_067972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7847#issuecomment-67972",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_067973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7847#issuecomment-67973",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -110,16 +110,16 @@ Makes Worksheet_emptytrash accept only POST requests, and adds the requisite for
 archive/issue_comments_067974.json:
 ```json
 {
-    "body": "Attachment [trac_7847-empty-trash-no-referer.patch](tarball://root/attachments/some-uuid/ticket7847/trac_7847-empty-trash-no-referer.patch) by timdumol created at 2010-01-17 19:13:27\n\nGood job fixing the problem, but unfortunately your patch means anyone can cause you to empty your trash.\n\nThe reason for the HTTP-Referer check was actually security. Without it, anyone could have sent you a link to http://localhost:8000/emptytrash (or http://sagenb.org/emptytrash) and empty one's trash. This was clearly the wrong approach though.\n\nThis new patch accepts only POST requests, which should be much more secure.",
+    "body": "Attachment [trac_7847-empty-trash-no-referer.patch](tarball://root/attachments/some-uuid/ticket7847/trac_7847-empty-trash-no-referer.patch) by @TimDumol created at 2010-01-17 19:13:27\n\nGood job fixing the problem, but unfortunately your patch means anyone can cause you to empty your trash.\n\nThe reason for the HTTP-Referer check was actually security. Without it, anyone could have sent you a link to http://localhost:8000/emptytrash (or http://sagenb.org/emptytrash) and empty one's trash. This was clearly the wrong approach though.\n\nThis new patch accepts only POST requests, which should be much more secure.",
     "created_at": "2010-01-17T19:13:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7847#issuecomment-67974",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7847-empty-trash-no-referer.patch](tarball://root/attachments/some-uuid/ticket7847/trac_7847-empty-trash-no-referer.patch) by timdumol created at 2010-01-17 19:13:27
+Attachment [trac_7847-empty-trash-no-referer.patch](tarball://root/attachments/some-uuid/ticket7847/trac_7847-empty-trash-no-referer.patch) by @TimDumol created at 2010-01-17 19:13:27
 
 Good job fixing the problem, but unfortunately your patch means anyone can cause you to empty your trash.
 
@@ -139,7 +139,7 @@ archive/issue_comments_067975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7847#issuecomment-67975",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_067976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7847#issuecomment-67976",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_067977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7847#issuecomment-67977",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

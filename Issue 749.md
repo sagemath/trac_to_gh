@@ -3,7 +3,7 @@
 archive/issues_000749.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: graphs\n\nThe enum() code is duplicated in relabel() for the quick option.  It sure would be nice to factor that out so that the enum() code was all in one place.\n\nIssue created by migration from https://trac.sagemath.org/ticket/749\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nThe enum() code is duplicated in relabel() for the quick option.  It sure would be nice to factor that out so that the enum() code was all in one place.\n\nIssue created by migration from https://trac.sagemath.org/ticket/749\n\n",
     "created_at": "2007-09-24T22:02:34Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_000749.json:
     "title": "graphs: enum() functionality duplicated in relabel()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/749",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: graphs
 
@@ -39,7 +39,7 @@ archive/issue_comments_004425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/749#issuecomment-4425",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_004426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/749#issuecomment-4426",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_004427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/749#issuecomment-4427",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_004428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/749#issuecomment-4428",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_004429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/749#issuecomment-4429",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -138,16 +138,16 @@ Changing status from new to assigned.
 archive/issue_comments_004430.json:
 ```json
 {
-    "body": "Changing assignee from was to rlm.",
+    "body": "Changing assignee from @williamstein to @rlmill.",
     "created_at": "2007-10-26T23:59:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/749#issuecomment-4430",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Changing assignee from was to rlm.
+Changing assignee from @williamstein to @rlmill.
 
 
 
@@ -156,16 +156,16 @@ Changing assignee from was to rlm.
 archive/issue_comments_004431.json:
 ```json
 {
-    "body": "Attachment [trac749_1.patch](tarball://root/attachments/some-uuid/ticket749/trac749_1.patch) by rlm created at 2007-10-27 00:02:02\n\nThis one first, removed quick option from relabel().",
+    "body": "Attachment [trac749_1.patch](tarball://root/attachments/some-uuid/ticket749/trac749_1.patch) by @rlmill created at 2007-10-27 00:02:02\n\nThis one first, removed quick option from relabel().",
     "created_at": "2007-10-27T00:02:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/749#issuecomment-4431",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac749_1.patch](tarball://root/attachments/some-uuid/ticket749/trac749_1.patch) by rlm created at 2007-10-27 00:02:02
+Attachment [trac749_1.patch](tarball://root/attachments/some-uuid/ticket749/trac749_1.patch) by @rlmill created at 2007-10-27 00:02:02
 
 This one first, removed quick option from relabel().
 
@@ -181,7 +181,7 @@ archive/issue_comments_004432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/749#issuecomment-4432",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -194,16 +194,16 @@ This is the main overhaul.
 archive/issue_comments_004433.json:
 ```json
 {
-    "body": "Attachment [trac749_2.patch](tarball://root/attachments/some-uuid/ticket749/trac749_2.patch) by rlm created at 2007-10-27 00:14:07",
+    "body": "Attachment [trac749_2.patch](tarball://root/attachments/some-uuid/ticket749/trac749_2.patch) by @rlmill created at 2007-10-27 00:14:07",
     "created_at": "2007-10-27T00:14:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/749#issuecomment-4433",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac749_2.patch](tarball://root/attachments/some-uuid/ticket749/trac749_2.patch) by rlm created at 2007-10-27 00:14:07
+Attachment [trac749_2.patch](tarball://root/attachments/some-uuid/ticket749/trac749_2.patch) by @rlmill created at 2007-10-27 00:14:07
 
 
 

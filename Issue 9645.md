@@ -3,7 +3,7 @@
 archive/issues_009645.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  jakobkroeker jpflori\n\nKeywords: Groebner basis integer\n\nA bug report on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/46124695d2f7469a) made me play around with the following example:\n\n\n```\nsage: R.<x,y>=PolynomialRing(ZZ,2)\nsage: I = R*(4*x^2*y^2+2*x*y^3+3*x*y,2*x^2+x*y,2*y^2)\nsage: I.groebner_basis(algorithm='libsingular:std')\n[x^2*y, x*y^2, 2*x^2 + x*y, 3*x*y, 2*y^2]\nsage: (I.groebner_basis(algorithm='libsingular:std')*R).interreduced_basis()\n[x^2*y, x*y^2, 2*x^2 + x*y, 3*x*y, 2*y^2]\nsage: I.groebner_basis(algorithm='libsingular:slimgb')\n[2*x^2 + x*y, 3*x*y, 2*y^2]\nsage: (I.groebner_basis(algorithm='libsingular:slimgb')*R).interreduced_basis()\n[2*x^2 + x*y, 3*x*y, 2*y^2]\nsage: (I.groebner_basis(algorithm='toy:buchberger')*R).interreduced_basis()\n[2*x^2 + x*y, 3*x*y, 2*y^2]\nsage: I.groebner_basis(algorithm='toy:buchberger2')\n[4*x^2*y^2 + 2*x*y^3 + 3*x*y, 2*x^2 + x*y, 2*y^2]\nsage: (I.groebner_basis(algorithm='toy:buchberger2')*R).interreduced_basis()\n[2*x^2 + x*y, 3*x*y, 2*y^2]\nsage: I.groebner_basis(algorithm='magma')\n[x^2*y, x*y^2, 2*x^2 + x*y, 3*x*y, 2*y^2]\n```\n\n\n**__First bug__**\n\nThe documentation suggests that `toy:buchberger2` is supposed to return a reduced Groebner basis, but it doesn't. So, to the very least, the documentation is a little unclear.\n\n**__Second bug__**\n\nThe five algorithms return two *different* reduced Groebner bases. So, at least one of them must be wrong.\n\n`libsingular:std` and `magma` agree on this result:\n\n```\nsage: G1 = I.groebner_basis(algorithm='libsingular:std'); G1\n[x^2*y, x*y^2, 2*x^2 + x*y, 3*x*y, 2*y^2]\n```\n\nwhile `libsingular:slimgb`, `toy:buchberger` and `toy:buchberger2` agree on this result:\n\n```\nsage: G2 = I.groebner_basis(algorithm='libsingular:slimgb'); G2\n[2*x^2 + x*y, 3*x*y, 2*y^2]\n```\n\n\nThe following suggests that at least answer `G2` is wrong:\n\n```\nsage: [g.reduce(G2) for g in G1]\n[x^2*y, x*y^2, 0, 0, 0]\nsage: [g.reduce(G1) for g in G2]\n[0, 0, 0]\n```\n\n\nLet us check that indeed the element `x*y^2` belongs to the original ideal:\n\n```\nsage: y*I.0 -2*y^3*I.1 -x*I.2\nx*y^2\n```\n\n\nConclusion: **Under the assumption that there is no bug in reduce and the basic arithmetic, it is proven that slimgb and toy:buchberger(2) give a wrong answer.**\n\n**__Third bug__**\n\nOf course, if `G1` is a Groebner basis then all of its elements must belong to the ideal. Singular provides a command to express the Groebner basis elements as combinations of the given ideal generators: `liftstd`.\n\nBut `liftstd` apparently gives a wrong answer:\n\n```\nsage: r = singular(R)\nsage: i = singular(I)\nsage: singular.eval('matrix m')\n'matrix m;'\nsage: print singular.eval('liftstd(%s,m)'%i.name())\n_[1]=2*y^2\n_[2]=-3*x*y\n_[3]=2*x^2+x*y\n_[4]=x*y^2\n_[5]=x^2*y\nsage: singular('m')\n0,-1,   0,y,     -3*x-y,\n0,2*y^2,1,-2*y^3,2*y^3+5*y,\n1,0,    0,-x,    -x-2*y\n```\n\n\nSo, up to order and sign, the answer given by `liftstd` coincides with `G1`. Now, the matrix `m` should transform the list of ideal generators into the Groebner basis. But it does not for the element `x^2*y`:\n\n```\nsage: print singular.eval('matrix(%s)*m'%i.name())\n_[1,1]=2*y^2\n_[1,2]=-3*x*y\n_[1,3]=2*x^2+x*y\n_[1,4]=x*y^2\n_[1,5]=-12*x^3*y^2-6*x^2*y^3+x^2*y-4*y^3\n```\n\n\nSo, there is a bug in `liftstd` as well. At least, it is possible to verify that `x^2*y` (and therefore all of `G1`) belongs to the ideal:\n\n```\nsage: 2*y*I.1 - x*I.0 + (2*x^3 + x^2*y - x)*I.2\nx^2*y\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9645\n\n",
+    "body": "Assignee: @malb\n\nCC:  jakobkroeker jpflori\n\nKeywords: Groebner basis integer\n\nA bug report on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/46124695d2f7469a) made me play around with the following example:\n\n\n```\nsage: R.<x,y>=PolynomialRing(ZZ,2)\nsage: I = R*(4*x^2*y^2+2*x*y^3+3*x*y,2*x^2+x*y,2*y^2)\nsage: I.groebner_basis(algorithm='libsingular:std')\n[x^2*y, x*y^2, 2*x^2 + x*y, 3*x*y, 2*y^2]\nsage: (I.groebner_basis(algorithm='libsingular:std')*R).interreduced_basis()\n[x^2*y, x*y^2, 2*x^2 + x*y, 3*x*y, 2*y^2]\nsage: I.groebner_basis(algorithm='libsingular:slimgb')\n[2*x^2 + x*y, 3*x*y, 2*y^2]\nsage: (I.groebner_basis(algorithm='libsingular:slimgb')*R).interreduced_basis()\n[2*x^2 + x*y, 3*x*y, 2*y^2]\nsage: (I.groebner_basis(algorithm='toy:buchberger')*R).interreduced_basis()\n[2*x^2 + x*y, 3*x*y, 2*y^2]\nsage: I.groebner_basis(algorithm='toy:buchberger2')\n[4*x^2*y^2 + 2*x*y^3 + 3*x*y, 2*x^2 + x*y, 2*y^2]\nsage: (I.groebner_basis(algorithm='toy:buchberger2')*R).interreduced_basis()\n[2*x^2 + x*y, 3*x*y, 2*y^2]\nsage: I.groebner_basis(algorithm='magma')\n[x^2*y, x*y^2, 2*x^2 + x*y, 3*x*y, 2*y^2]\n```\n\n\n**__First bug__**\n\nThe documentation suggests that `toy:buchberger2` is supposed to return a reduced Groebner basis, but it doesn't. So, to the very least, the documentation is a little unclear.\n\n**__Second bug__**\n\nThe five algorithms return two *different* reduced Groebner bases. So, at least one of them must be wrong.\n\n`libsingular:std` and `magma` agree on this result:\n\n```\nsage: G1 = I.groebner_basis(algorithm='libsingular:std'); G1\n[x^2*y, x*y^2, 2*x^2 + x*y, 3*x*y, 2*y^2]\n```\n\nwhile `libsingular:slimgb`, `toy:buchberger` and `toy:buchberger2` agree on this result:\n\n```\nsage: G2 = I.groebner_basis(algorithm='libsingular:slimgb'); G2\n[2*x^2 + x*y, 3*x*y, 2*y^2]\n```\n\n\nThe following suggests that at least answer `G2` is wrong:\n\n```\nsage: [g.reduce(G2) for g in G1]\n[x^2*y, x*y^2, 0, 0, 0]\nsage: [g.reduce(G1) for g in G2]\n[0, 0, 0]\n```\n\n\nLet us check that indeed the element `x*y^2` belongs to the original ideal:\n\n```\nsage: y*I.0 -2*y^3*I.1 -x*I.2\nx*y^2\n```\n\n\nConclusion: **Under the assumption that there is no bug in reduce and the basic arithmetic, it is proven that slimgb and toy:buchberger(2) give a wrong answer.**\n\n**__Third bug__**\n\nOf course, if `G1` is a Groebner basis then all of its elements must belong to the ideal. Singular provides a command to express the Groebner basis elements as combinations of the given ideal generators: `liftstd`.\n\nBut `liftstd` apparently gives a wrong answer:\n\n```\nsage: r = singular(R)\nsage: i = singular(I)\nsage: singular.eval('matrix m')\n'matrix m;'\nsage: print singular.eval('liftstd(%s,m)'%i.name())\n_[1]=2*y^2\n_[2]=-3*x*y\n_[3]=2*x^2+x*y\n_[4]=x*y^2\n_[5]=x^2*y\nsage: singular('m')\n0,-1,   0,y,     -3*x-y,\n0,2*y^2,1,-2*y^3,2*y^3+5*y,\n1,0,    0,-x,    -x-2*y\n```\n\n\nSo, up to order and sign, the answer given by `liftstd` coincides with `G1`. Now, the matrix `m` should transform the list of ideal generators into the Groebner basis. But it does not for the element `x^2*y`:\n\n```\nsage: print singular.eval('matrix(%s)*m'%i.name())\n_[1,1]=2*y^2\n_[1,2]=-3*x*y\n_[1,3]=2*x^2+x*y\n_[1,4]=x*y^2\n_[1,5]=-12*x^3*y^2-6*x^2*y^3+x^2*y-4*y^3\n```\n\n\nSo, there is a bug in `liftstd` as well. At least, it is possible to verify that `x^2*y` (and therefore all of `G1`) belongs to the ideal:\n\n```\nsage: 2*y*I.1 - x*I.0 + (2*x^3 + x^2*y - x)*I.2\nx^2*y\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9645\n\n",
     "created_at": "2010-07-30T13:56:53Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_009645.json:
     "title": "Bugs in the computation of Groebner bases over the integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9645",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 CC:  jakobkroeker jpflori
 
@@ -151,7 +151,7 @@ archive/issue_comments_093519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9645",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9645#issuecomment-93519",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_093520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9645",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9645#issuecomment-93520",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -191,7 +191,7 @@ But since the bug in `slimgb` persists, I reported [upstream](http://www.singula
 archive/issue_comments_093521.json:
 ```json
 {
-    "body": "Changing assignee from malb to duleorlovic.",
+    "body": "Changing assignee from @malb to duleorlovic.",
     "created_at": "2010-08-03T12:18:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9645",
     "type": "issue_comment",
@@ -200,7 +200,7 @@ archive/issue_comments_093521.json:
 }
 ```
 
-Changing assignee from malb to duleorlovic.
+Changing assignee from @malb to duleorlovic.
 
 
 
@@ -240,7 +240,7 @@ archive/issue_comments_093523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9645",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9645#issuecomment-93523",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_093524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9645",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9645#issuecomment-93524",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -331,7 +331,7 @@ archive/issue_comments_093526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9645",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9645#issuecomment-93526",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -349,7 +349,7 @@ archive/issue_comments_093527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9645",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9645#issuecomment-93527",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

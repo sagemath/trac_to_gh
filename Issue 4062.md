@@ -3,7 +3,7 @@
 archive/issues_004062.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nThis was reported to `sage-support`:\n\n\n```\nHi,\n\nWhen computing Eisenstein series with a given character, Sage may\nreturn some forms with a wrong character.  The following lines show an\nexample of this:\n\nsage: G = DirichletGroup(7)\nsage: E = EisensteinForms(G[4]).eisenstein_series()\nsage: E[0].character() == G[4]\nFalse\n\nThe problem appears to be caused by the condition\n\n if chi*psi == eps:\n\nin the function __find_eisen_chars in modular/modform/eis_series.py.\nAccording to Miyake, _Modular Forms_, Lemma 7.1.1 (cited in a comment\nin this function), it should be\n\n if chi == eps*psi:\n\nAnother bug is that Sage uses an incorrect formula to compute q-\nexpansions of Eisenstein series.  Here the origin of the problem seems\nto be formula (5.3.1) in Stein, _Modular Forms: A Computational\nApproach_, where the psi(n) should be replaced by its complex\nconjugate (cf. Miyake, _Modular Forms_, Theorem 4.7.1 and the first\nthree lines of page 271).  The method __compute_general_case of the\nclass EisensteinSeries in modular/modform/element.py reproduces this\nformula in the form\n\n v.append(sum([psi(n)*chi(m/n)*n**(k-1) for n in rings.divisors(m)]))\n\nHere psi should be ~psi.\n\nThanks,\n\nPeter Bruin\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4062\n\n",
+    "body": "Assignee: @craigcitro\n\nThis was reported to `sage-support`:\n\n\n```\nHi,\n\nWhen computing Eisenstein series with a given character, Sage may\nreturn some forms with a wrong character.  The following lines show an\nexample of this:\n\nsage: G = DirichletGroup(7)\nsage: E = EisensteinForms(G[4]).eisenstein_series()\nsage: E[0].character() == G[4]\nFalse\n\nThe problem appears to be caused by the condition\n\n if chi*psi == eps:\n\nin the function __find_eisen_chars in modular/modform/eis_series.py.\nAccording to Miyake, _Modular Forms_, Lemma 7.1.1 (cited in a comment\nin this function), it should be\n\n if chi == eps*psi:\n\nAnother bug is that Sage uses an incorrect formula to compute q-\nexpansions of Eisenstein series.  Here the origin of the problem seems\nto be formula (5.3.1) in Stein, _Modular Forms: A Computational\nApproach_, where the psi(n) should be replaced by its complex\nconjugate (cf. Miyake, _Modular Forms_, Theorem 4.7.1 and the first\nthree lines of page 271).  The method __compute_general_case of the\nclass EisensteinSeries in modular/modform/element.py reproduces this\nformula in the form\n\n v.append(sum([psi(n)*chi(m/n)*n**(k-1) for n in rings.divisors(m)]))\n\nHere psi should be ~psi.\n\nThanks,\n\nPeter Bruin\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4062\n\n",
     "created_at": "2008-09-04T15:58:27Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_004062.json:
     "title": "Problems with Eisenstein series code?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4062",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 This was reported to `sage-support`:
 
@@ -74,16 +74,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4062
 archive/issue_comments_029299.json:
 ```json
 {
-    "body": "Attachment [trac-4062.patch](tarball://root/attachments/some-uuid/ticket4062/trac-4062.patch) by craigcitro created at 2008-10-30 09:13:37\n\nThis is a fix for the above problem. In fact, the fix was suggested by Peter Bruin, who originally reported the fix. Here's what he had to say:\n\n\n```\nThe other possibility is to define E_{k,chi,psi} as the unique modular\nform whose L-series equals L(s,chi) L(s-k+1,psi); this is the form\nwhich Miyake considers in Theorem 4.7.1 (cf. E. Hecke, Math. Ann. 114\n(1937), 316--351 [= Mathematische Werke, 672--707]).  Then the\nformulas for the q-expansion as they are now in William Stein's book\nand in Sage remain correct (i.e. without replacing psi by its\nconjugate), and the change that should be made in this case (in the\nbook and in Sage) is to change the relation between chi, psi and the\ncharacter epsilon of E_{k,chi,psi} from\n\n chi = epsilon * psi\n\nto\n\n chi * psi = epsilon.\n\nThis would mean that the comment (not the code!) in __find_eisen_chars\nin eis_series.py should be changed (refer to Miyake's Theorem 4.7.1),\nand that in the method called `character' of the class\nEisensteinSeries in element.py, the line\n\n self.__character = self.__chi * (~self.__psi)\n\nshould be replaced by\n\n self.__character = self.__chi * self.__psi\n```\n\n\nThe attached patch fixes this, and adds a few doctests to catch it in the future. Credit for the patch should also go to Peter.",
+    "body": "Attachment [trac-4062.patch](tarball://root/attachments/some-uuid/ticket4062/trac-4062.patch) by @craigcitro created at 2008-10-30 09:13:37\n\nThis is a fix for the above problem. In fact, the fix was suggested by Peter Bruin, who originally reported the fix. Here's what he had to say:\n\n\n```\nThe other possibility is to define E_{k,chi,psi} as the unique modular\nform whose L-series equals L(s,chi) L(s-k+1,psi); this is the form\nwhich Miyake considers in Theorem 4.7.1 (cf. E. Hecke, Math. Ann. 114\n(1937), 316--351 [= Mathematische Werke, 672--707]).  Then the\nformulas for the q-expansion as they are now in William Stein's book\nand in Sage remain correct (i.e. without replacing psi by its\nconjugate), and the change that should be made in this case (in the\nbook and in Sage) is to change the relation between chi, psi and the\ncharacter epsilon of E_{k,chi,psi} from\n\n chi = epsilon * psi\n\nto\n\n chi * psi = epsilon.\n\nThis would mean that the comment (not the code!) in __find_eisen_chars\nin eis_series.py should be changed (refer to Miyake's Theorem 4.7.1),\nand that in the method called `character' of the class\nEisensteinSeries in element.py, the line\n\n self.__character = self.__chi * (~self.__psi)\n\nshould be replaced by\n\n self.__character = self.__chi * self.__psi\n```\n\n\nThe attached patch fixes this, and adds a few doctests to catch it in the future. Credit for the patch should also go to Peter.",
     "created_at": "2008-10-30T09:13:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4062#issuecomment-29299",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4062.patch](tarball://root/attachments/some-uuid/ticket4062/trac-4062.patch) by craigcitro created at 2008-10-30 09:13:37
+Attachment [trac-4062.patch](tarball://root/attachments/some-uuid/ticket4062/trac-4062.patch) by @craigcitro created at 2008-10-30 09:13:37
 
 This is a fix for the above problem. In fact, the fix was suggested by Peter Bruin, who originally reported the fix. Here's what he had to say:
 
@@ -132,7 +132,7 @@ archive/issue_comments_029300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4062#issuecomment-29300",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_029301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4062#issuecomment-29301",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_029302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4062#issuecomment-29302",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 

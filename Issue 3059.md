@@ -14,7 +14,7 @@ archive/issues_003059.json:
     "title": "notebook -- rewrite notebook(...) function to *not* use SSL by default",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3059",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3059
 archive/issue_comments_021119.json:
 ```json
 {
-    "body": "Attachment [extcode-3059.patch](tarball://root/attachments/some-uuid/ticket3059/extcode-3059.patch) by was created at 2008-04-30 00:36:39",
+    "body": "Attachment [extcode-3059.patch](tarball://root/attachments/some-uuid/ticket3059/extcode-3059.patch) by @williamstein created at 2008-04-30 00:36:39",
     "created_at": "2008-04-30T00:36:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3059",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3059#issuecomment-21119",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [extcode-3059.patch](tarball://root/attachments/some-uuid/ticket3059/extcode-3059.patch) by was created at 2008-04-30 00:36:39
+Attachment [extcode-3059.patch](tarball://root/attachments/some-uuid/ticket3059/extcode-3059.patch) by @williamstein created at 2008-04-30 00:36:39
 
 
 
@@ -50,16 +50,16 @@ Attachment [extcode-3059.patch](tarball://root/attachments/some-uuid/ticket3059/
 archive/issue_comments_021120.json:
 ```json
 {
-    "body": "Attachment [sage-3059.patch](tarball://root/attachments/some-uuid/ticket3059/sage-3059.patch) by was created at 2008-04-30 00:37:43\n\nThe two patches turn ssl off by default, make logins required by default no matter what, print a big warning in a worrisome case, use a token to automate the first login, and fill in the admin username if it is the only possible username.",
+    "body": "Attachment [sage-3059.patch](tarball://root/attachments/some-uuid/ticket3059/sage-3059.patch) by @williamstein created at 2008-04-30 00:37:43\n\nThe two patches turn ssl off by default, make logins required by default no matter what, print a big warning in a worrisome case, use a token to automate the first login, and fill in the admin username if it is the only possible username.",
     "created_at": "2008-04-30T00:37:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3059",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3059#issuecomment-21120",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3059.patch](tarball://root/attachments/some-uuid/ticket3059/sage-3059.patch) by was created at 2008-04-30 00:37:43
+Attachment [sage-3059.patch](tarball://root/attachments/some-uuid/ticket3059/sage-3059.patch) by @williamstein created at 2008-04-30 00:37:43
 
 The two patches turn ssl off by default, make logins required by default no matter what, print a big warning in a worrisome case, use a token to automate the first login, and fill in the admin username if it is the only possible username.
 
@@ -75,7 +75,7 @@ archive/issue_comments_021121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3059",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3059#issuecomment-21121",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_021124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3059",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3059#issuecomment-21124",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_021125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3059",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3059#issuecomment-21125",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

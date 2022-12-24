@@ -14,7 +14,7 @@ archive/issues_005058.json:
     "title": "sage -f and sage -i is broken for local files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5058",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: mabshoff
@@ -60,16 +60,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5058
 archive/issue_comments_038529.json:
 ```json
 {
-    "body": "Attachment [trac-5058.patch](tarball://root/attachments/some-uuid/ticket5058/trac-5058.patch) by rlm created at 2009-01-22 19:40:18",
+    "body": "Attachment [trac-5058.patch](tarball://root/attachments/some-uuid/ticket5058/trac-5058.patch) by @rlmill created at 2009-01-22 19:40:18",
     "created_at": "2009-01-22T19:40:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5058",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5058#issuecomment-38529",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac-5058.patch](tarball://root/attachments/some-uuid/ticket5058/trac-5058.patch) by rlm created at 2009-01-22 19:40:18
+Attachment [trac-5058.patch](tarball://root/attachments/some-uuid/ticket5058/trac-5058.patch) by @rlmill created at 2009-01-22 19:40:18
 
 
 

@@ -14,7 +14,7 @@ archive/issues_007146.json:
     "title": "MAKE and sqlite on Solaris: bomb!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7146",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -43,7 +43,7 @@ archive/issue_comments_059221.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7146#issuecomment-59221",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_059222.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7146#issuecomment-59222",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_059223.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7146#issuecomment-59223",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_059224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7146#issuecomment-59224",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

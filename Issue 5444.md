@@ -3,7 +3,7 @@
 archive/issues_005444.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\n\n```\n   sage: [(1.0)..(2.0)]\n   [1.00000000000000, 2.00000000000000]\n   sage: [1.0..2.0]\n    line 4\n    (ellipsis_range(_sage_const_1p0 ,Ellipsis,_sage_const_2 RealNumber('.0')))\n                                                                     ^\nSyntaxError: invalid syntax\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5444\n\n",
+    "body": "Assignee: @robertwb\n\n\n```\n   sage: [(1.0)..(2.0)]\n   [1.00000000000000, 2.00000000000000]\n   sage: [1.0..2.0]\n    line 4\n    (ellipsis_range(_sage_const_1p0 ,Ellipsis,_sage_const_2 RealNumber('.0')))\n                                                                     ^\nSyntaxError: invalid syntax\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5444\n\n",
     "created_at": "2009-03-05T19:58:26Z",
     "labels": [
         "user interface",
@@ -17,7 +17,7 @@ archive/issues_005444.json:
     "user": "boothby"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 
 ```
@@ -47,7 +47,7 @@ archive/issue_comments_042093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5444#issuecomment-42093",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_042094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5444#issuecomment-42094",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -170,16 +170,16 @@ Michael
 archive/issue_comments_042099.json:
 ```json
 {
-    "body": "Attachment [trac_5444.patch](tarball://root/attachments/some-uuid/ticket5444/trac_5444.patch) by mhansen created at 2009-06-05 01:28:54",
+    "body": "Attachment [trac_5444.patch](tarball://root/attachments/some-uuid/ticket5444/trac_5444.patch) by @mwhansen created at 2009-06-05 01:28:54",
     "created_at": "2009-06-05T01:28:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5444#issuecomment-42099",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5444.patch](tarball://root/attachments/some-uuid/ticket5444/trac_5444.patch) by mhansen created at 2009-06-05 01:28:54
+Attachment [trac_5444.patch](tarball://root/attachments/some-uuid/ticket5444/trac_5444.patch) by @mwhansen created at 2009-06-05 01:28:54
 
 
 
@@ -193,7 +193,7 @@ archive/issue_comments_042100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5444#issuecomment-42100",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_042101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5444#issuecomment-42101",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

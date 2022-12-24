@@ -3,7 +3,7 @@
 archive/issues_008579.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat roed\n\nThis patch adds the categories Magmas() and AdditiveMagmas()\n(sets with a plain binary operation * or +).\n\nIt factors out some of the code previously in Semigroups / CommutativeAdditiveSemigroups.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8579\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @roed314\n\nThis patch adds the categories Magmas() and AdditiveMagmas()\n(sets with a plain binary operation * or +).\n\nIt factors out some of the code previously in Semigroups / CommutativeAdditiveSemigroups.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8579\n\n",
     "created_at": "2010-03-22T16:33:34Z",
     "labels": [
         "categories",
@@ -14,12 +14,12 @@ archive/issues_008579.json:
     "title": "Add the categories of magmas and additive magmas",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8579",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
-CC:  sage-combinat roed
+CC:  sage-combinat @roed314
 
 This patch adds the categories Magmas() and AdditiveMagmas()
 (sets with a plain binary operation * or +).
@@ -42,7 +42,7 @@ archive/issue_comments_077698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8579#issuecomment-77698",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -60,7 +60,7 @@ archive/issue_comments_077699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8579#issuecomment-77699",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_077700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8579#issuecomment-77700",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_077701.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8579#issuecomment-77701",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -115,16 +115,16 @@ Thanks, Nicolas, I'll test tonight with #7880.
 archive/issue_comments_077702.json:
 ```json
 {
-    "body": "Attachment [trac_8579-category-magmas-nt.patch](tarball://root/attachments/some-uuid/ticket8579/trac_8579-category-magmas-nt.patch) by nthiery created at 2010-03-24 08:52:43\n\nThis updated patch fixes the copyright headers",
+    "body": "Attachment [trac_8579-category-magmas-nt.patch](tarball://root/attachments/some-uuid/ticket8579/trac_8579-category-magmas-nt.patch) by @nthiery created at 2010-03-24 08:52:43\n\nThis updated patch fixes the copyright headers",
     "created_at": "2010-03-24T08:52:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8579#issuecomment-77702",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_8579-category-magmas-nt.patch](tarball://root/attachments/some-uuid/ticket8579/trac_8579-category-magmas-nt.patch) by nthiery created at 2010-03-24 08:52:43
+Attachment [trac_8579-category-magmas-nt.patch](tarball://root/attachments/some-uuid/ticket8579/trac_8579-category-magmas-nt.patch) by @nthiery created at 2010-03-24 08:52:43
 
 This updated patch fixes the copyright headers
 
@@ -140,7 +140,7 @@ archive/issue_comments_077703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8579#issuecomment-77703",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_077704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8579#issuecomment-77704",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_077705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8579#issuecomment-77705",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_077706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8579#issuecomment-77706",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_077707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8579#issuecomment-77707",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_077708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8579#issuecomment-77708",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_077709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8579#issuecomment-77709",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_077710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8579#issuecomment-77710",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -322,7 +322,7 @@ archive/issue_comments_077711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8579#issuecomment-77711",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

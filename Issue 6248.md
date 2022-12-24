@@ -14,7 +14,7 @@ archive/issues_006248.json:
     "title": "remove executable bits from sage-README-osx.txt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6248",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_049904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6248#issuecomment-49904",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_049905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6248#issuecomment-49905",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

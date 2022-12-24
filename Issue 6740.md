@@ -3,7 +3,7 @@
 archive/issues_006740.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  fredrik.johansson\n\nThe latest version of mpmath is now 0.13. Upgrade Sage to use that latest version.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6740\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @fredrik-johansson\n\nThe latest version of mpmath is now 0.13. Upgrade Sage to use that latest version.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6740\n\n",
     "created_at": "2009-08-13T19:24:19Z",
     "labels": [
         "packages: standard",
@@ -19,7 +19,7 @@ archive/issues_006740.json:
 ```
 Assignee: mabshoff
 
-CC:  fredrik.johansson
+CC:  @fredrik-johansson
 
 The latest version of mpmath is now 0.13. Upgrade Sage to use that latest version.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6740
 archive/issue_comments_055225.json:
 ```json
 {
-    "body": "Attachment [mpmath-0.13.spkg](tarball://root/attachments/some-uuid/ticket6740/mpmath-0.13.spkg) by fredrik.johansson created at 2009-08-14 00:35:36",
+    "body": "Attachment [mpmath-0.13.spkg](tarball://root/attachments/some-uuid/ticket6740/mpmath-0.13.spkg) by @fredrik-johansson created at 2009-08-14 00:35:36",
     "created_at": "2009-08-14T00:35:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6740#issuecomment-55225",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
-Attachment [mpmath-0.13.spkg](tarball://root/attachments/some-uuid/ticket6740/mpmath-0.13.spkg) by fredrik.johansson created at 2009-08-14 00:35:36
+Attachment [mpmath-0.13.spkg](tarball://root/attachments/some-uuid/ticket6740/mpmath-0.13.spkg) by @fredrik-johansson created at 2009-08-14 00:35:36
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_055226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6740#issuecomment-55226",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_055227.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6740#issuecomment-55227",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

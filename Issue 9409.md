@@ -3,7 +3,7 @@
 archive/issues_009409.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nKeywords: Elliptic Curves .count_points()\n\nThere is some bug in the method .count_points() which belongs to elliptic curves defined over finite fields. This might be specific to EC defined over number fields - I only get this error when I take an EC over a number field, reduce at a good prime and then count points. In fact, I get the correct answer the first time, but if I define a second EC over a possibly different number field and count points at a good reduction, then the method .count_points() fails. I suspect this has to do with the cacheing...\n\nIf you want to reproduce the behavior, try the following code:\n\n\n### this just runs through the method outlined above:\n\ndef test(curve, bound):\n    for i in primes(bound):\n        print \"Checking primes over %d:        \"%i\n        factors = curve.base_field().ideal(i).factor()\n        for j in range(len(factors)):\n            if  curve.has_good_reduction(factors[j][0]):\n                if factors[j][0].divides(curve.discriminant()):\n                    print \"Curve has good reduction, but this isn't not a minimal model\",\n                    print \"at %s with %d points in the reduced curve\"%(factors[j][0], curve.local_minimal_model(factors[j][0]).reduction(factors[j][0]).count_points() )\n                else:                 \n                    print \"Curve has good reduction and is a minimal model\"\n                    print \"at %s with %d points in the reduced curve\"%(factors[j][0],  curve.reduction(factors[j][0]).count_points() )\n            else:\n                print \"Curve has bad reduction over %s\"%factors[j][0]\n    return\n\n\n### sample 1\nK.<t> = NumberField(x^2 + 1); E = EllipticCurve(K, [0, 1, 0, -2*t - 2, 2*t]); E\n### sample 2\nL.<u> = NumberField(x^2 - 2); F = EllipticCurve(L, [0,2,0, 2*u +4, 2*u + 3]); F\n\ntest(E, 100)\n\n## now the error will happen\ntest(F, 100)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9409\n\n",
+    "body": "Assignee: @JohnCremona\n\nKeywords: Elliptic Curves .count_points()\n\nThere is some bug in the method .count_points() which belongs to elliptic curves defined over finite fields. This might be specific to EC defined over number fields - I only get this error when I take an EC over a number field, reduce at a good prime and then count points. In fact, I get the correct answer the first time, but if I define a second EC over a possibly different number field and count points at a good reduction, then the method .count_points() fails. I suspect this has to do with the cacheing...\n\nIf you want to reproduce the behavior, try the following code:\n\n\n### this just runs through the method outlined above:\n\ndef test(curve, bound):\n    for i in primes(bound):\n        print \"Checking primes over %d:        \"%i\n        factors = curve.base_field().ideal(i).factor()\n        for j in range(len(factors)):\n            if  curve.has_good_reduction(factors[j][0]):\n                if factors[j][0].divides(curve.discriminant()):\n                    print \"Curve has good reduction, but this isn't not a minimal model\",\n                    print \"at %s with %d points in the reduced curve\"%(factors[j][0], curve.local_minimal_model(factors[j][0]).reduction(factors[j][0]).count_points() )\n                else:                 \n                    print \"Curve has good reduction and is a minimal model\"\n                    print \"at %s with %d points in the reduced curve\"%(factors[j][0],  curve.reduction(factors[j][0]).count_points() )\n            else:\n                print \"Curve has bad reduction over %s\"%factors[j][0]\n    return\n\n\n### sample 1\nK.<t> = NumberField(x^2 + 1); E = EllipticCurve(K, [0, 1, 0, -2*t - 2, 2*t]); E\n### sample 2\nL.<u> = NumberField(x^2 - 2); F = EllipticCurve(L, [0,2,0, 2*u +4, 2*u + 3]); F\n\ntest(E, 100)\n\n## now the error will happen\ntest(F, 100)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9409\n\n",
     "created_at": "2010-07-02T16:23:51Z",
     "labels": [
         "elliptic curves",
@@ -17,7 +17,7 @@ archive/issues_009409.json:
     "user": "adam"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 Keywords: Elliptic Curves .count_points()
 
@@ -71,7 +71,7 @@ archive/issue_comments_089670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9409",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9409#issuecomment-89670",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_089672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9409",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9409#issuecomment-89672",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -122,16 +122,16 @@ This should be tested after #9315 is in as that may well fix it.
 archive/issue_comments_089673.json:
 ```json
 {
-    "body": "Attachment [9409.sage](tarball://root/attachments/some-uuid/ticket9409/9409.sage) by cremona created at 2010-08-14 17:15:13\n\nTest script",
+    "body": "Attachment [9409.sage](tarball://root/attachments/some-uuid/ticket9409/9409.sage) by @JohnCremona created at 2010-08-14 17:15:13\n\nTest script",
     "created_at": "2010-08-14T17:15:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9409",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9409#issuecomment-89673",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [9409.sage](tarball://root/attachments/some-uuid/ticket9409/9409.sage) by cremona created at 2010-08-14 17:15:13
+Attachment [9409.sage](tarball://root/attachments/some-uuid/ticket9409/9409.sage) by @JohnCremona created at 2010-08-14 17:15:13
 
 Test script
 
@@ -147,7 +147,7 @@ archive/issue_comments_089674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9409",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9409#issuecomment-89674",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_089675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9409",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9409#issuecomment-89675",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_089676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9409",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9409#issuecomment-89676",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_089677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9409",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9409#issuecomment-89677",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_089678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9409",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9409#issuecomment-89678",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_089679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9409",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9409#issuecomment-89679",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_089680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9409",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9409#issuecomment-89680",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

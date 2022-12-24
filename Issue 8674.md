@@ -3,7 +3,7 @@
 archive/issues_008674.json:
 ```json
 {
-    "body": "Assignee: slabbe\n\nCC:  abmasse\n\nThis is fine :\n\n\n```\nsage: m = WordMorphism('a->adab,b->ab,c->cbcd,d->cd')\nsage: m.is_endomorphism()\nTrue\n```\n\n\nBut we would like the following to be an endomorphism as well:\n\n\n```\nsage: P = WordPaths('abcd')\nsage: m = WordMorphism('a->adab,b->ab,c->cbcd,d->cd', codomain=P)\nsage: m.is_endomorphism()\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8674\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  abmasse\n\nThis is fine :\n\n\n```\nsage: m = WordMorphism('a->adab,b->ab,c->cbcd,d->cd')\nsage: m.is_endomorphism()\nTrue\n```\n\n\nBut we would like the following to be an endomorphism as well:\n\n\n```\nsage: P = WordPaths('abcd')\nsage: m = WordMorphism('a->adab,b->ab,c->cbcd,d->cd', codomain=P)\nsage: m.is_endomorphism()\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8674\n\n",
     "created_at": "2010-04-11T14:17:52Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_008674.json:
     "title": "Comparison of combinatorial class of words with word paths is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8674",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: slabbe
+Assignee: @seblabbe
 
 CC:  abmasse
 
@@ -58,7 +58,7 @@ archive/issue_comments_078933.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8674",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8674#issuecomment-78933",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_078934.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8674",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8674#issuecomment-78934",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -89,16 +89,16 @@ Changing status from new to needs_review.
 archive/issue_comments_078935.json:
 ```json
 {
-    "body": "Attachment [trac_8674_word_combinaorial_cmp-sl.patch](tarball://root/attachments/some-uuid/ticket8674/trac_8674_word_combinaorial_cmp-sl.patch) by slabbe created at 2010-04-11 14:41:40",
+    "body": "Attachment [trac_8674_word_combinaorial_cmp-sl.patch](tarball://root/attachments/some-uuid/ticket8674/trac_8674_word_combinaorial_cmp-sl.patch) by @seblabbe created at 2010-04-11 14:41:40",
     "created_at": "2010-04-11T14:41:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8674",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8674#issuecomment-78935",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8674_word_combinaorial_cmp-sl.patch](tarball://root/attachments/some-uuid/ticket8674/trac_8674_word_combinaorial_cmp-sl.patch) by slabbe created at 2010-04-11 14:41:40
+Attachment [trac_8674_word_combinaorial_cmp-sl.patch](tarball://root/attachments/some-uuid/ticket8674/trac_8674_word_combinaorial_cmp-sl.patch) by @seblabbe created at 2010-04-11 14:41:40
 
 
 
@@ -169,16 +169,16 @@ If it is a problem, maybe it's not necessary to fix the `__eq__` operator now bu
 archive/issue_comments_078938.json:
 ```json
 {
-    "body": "Attachment [trac_8674_fixes_after_review-sl.patch](tarball://root/attachments/some-uuid/ticket8674/trac_8674_fixes_after_review-sl.patch) by slabbe created at 2010-04-19 10:23:44\n\nApplies over the precedent patch",
+    "body": "Attachment [trac_8674_fixes_after_review-sl.patch](tarball://root/attachments/some-uuid/ticket8674/trac_8674_fixes_after_review-sl.patch) by @seblabbe created at 2010-04-19 10:23:44\n\nApplies over the precedent patch",
     "created_at": "2010-04-19T10:23:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8674",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8674#issuecomment-78938",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8674_fixes_after_review-sl.patch](tarball://root/attachments/some-uuid/ticket8674/trac_8674_fixes_after_review-sl.patch) by slabbe created at 2010-04-19 10:23:44
+Attachment [trac_8674_fixes_after_review-sl.patch](tarball://root/attachments/some-uuid/ticket8674/trac_8674_fixes_after_review-sl.patch) by @seblabbe created at 2010-04-19 10:23:44
 
 Applies over the precedent patch
 
@@ -194,7 +194,7 @@ archive/issue_comments_078939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8674",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8674#issuecomment-78939",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_078940.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8674",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8674#issuecomment-78940",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -407,7 +407,7 @@ archive/issue_comments_078943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8674",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8674#issuecomment-78943",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -425,7 +425,7 @@ archive/issue_comments_078944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8674",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8674#issuecomment-78944",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -485,7 +485,7 @@ archive/issue_comments_078947.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8674",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8674#issuecomment-78947",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_008279.json:
     "title": "cygwin: cliquer names the library incorrectly for cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8279",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -58,7 +58,7 @@ archive/issue_comments_073312.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8279#issuecomment-73312",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_073313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8279#issuecomment-73313",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_073314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8279#issuecomment-73314",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_073318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8279#issuecomment-73318",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

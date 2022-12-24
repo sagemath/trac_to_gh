@@ -3,7 +3,7 @@
 archive/issues_009506.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nLike this:\n\n\n\n\n```\nsage: P.<e,d,c,b,a> = PolynomialRing(QQ,5,order='lex')\nsage: I = sage.rings.ideal.Cyclic(P)\n\nsage: triangL = sage.libs.singular.ff.triang__lib.triangL\nsage: _ = triangL(I)\nTraceback (most recent call last):\n...\nRuntimeError: Error in Singular function call 'triangL':\n The input is no groebner basis.\n leaving triang.lib::triangL\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9506\n\n",
+    "body": "Assignee: @aghitza\n\nLike this:\n\n\n\n\n```\nsage: P.<e,d,c,b,a> = PolynomialRing(QQ,5,order='lex')\nsage: I = sage.rings.ideal.Cyclic(P)\n\nsage: triangL = sage.libs.singular.ff.triang__lib.triangL\nsage: _ = triangL(I)\nTraceback (most recent call last):\n...\nRuntimeError: Error in Singular function call 'triangL':\n The input is no groebner basis.\n leaving triang.lib::triangL\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9506\n\n",
     "created_at": "2010-07-15T12:49:08Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_009506.json:
     "title": "include libSingular error messages in exceptions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9506",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Like this:
 
@@ -54,7 +54,7 @@ archive/issue_comments_091330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9506#issuecomment-91330",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_091331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9506#issuecomment-91331",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_091332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9506#issuecomment-91332",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -103,16 +103,16 @@ Argh, that's  #9499 and not#4499.
 archive/issue_comments_091333.json:
 ```json
 {
-    "body": "Attachment [trac_9506_error_msg.patch](tarball://root/attachments/some-uuid/ticket9506/trac_9506_error_msg.patch) by malb created at 2010-07-15 17:20:42\n\nThis patch depends on\u00a0#8059.",
+    "body": "Attachment [trac_9506_error_msg.patch](tarball://root/attachments/some-uuid/ticket9506/trac_9506_error_msg.patch) by @malb created at 2010-07-15 17:20:42\n\nThis patch depends on\u00a0#8059.",
     "created_at": "2010-07-15T17:20:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9506#issuecomment-91333",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_9506_error_msg.patch](tarball://root/attachments/some-uuid/ticket9506/trac_9506_error_msg.patch) by malb created at 2010-07-15 17:20:42
+Attachment [trac_9506_error_msg.patch](tarball://root/attachments/some-uuid/ticket9506/trac_9506_error_msg.patch) by @malb created at 2010-07-15 17:20:42
 
 This patch depends on #8059.
 
@@ -128,7 +128,7 @@ archive/issue_comments_091334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9506#issuecomment-91334",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_091335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9506#issuecomment-91335",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_091336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9506#issuecomment-91336",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_091337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9506#issuecomment-91337",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

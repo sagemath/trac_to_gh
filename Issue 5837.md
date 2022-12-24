@@ -3,7 +3,7 @@
 archive/issues_005837.json:
 ```json
 {
-    "body": "Assignee: LBerlioz\n\nCC:  tornaria\n\nKeywords: QuadraticForm diagonal\n\nThe following returns a non-diagonal QuadraticForm:\n\n\n```\nsage: Q=QuadraticForm(2*A) \nsage: Q.rational_diagonal_form()\nQuadratic form in 3 variables over Rational Field with coefficients:\n[ -3 -32 5184 ]\n[ * -81 26240 ]\n[ * * -2125111 ] \n```\n\n\nThis method works only when the matrix has a diagonal of only ones.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5837\n\n",
+    "body": "Assignee: LBerlioz\n\nCC:  @tornaria\n\nKeywords: QuadraticForm diagonal\n\nThe following returns a non-diagonal QuadraticForm:\n\n\n```\nsage: Q=QuadraticForm(2*A) \nsage: Q.rational_diagonal_form()\nQuadratic form in 3 variables over Rational Field with coefficients:\n[ -3 -32 5184 ]\n[ * -81 26240 ]\n[ * * -2125111 ] \n```\n\n\nThis method works only when the matrix has a diagonal of only ones.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5837\n\n",
     "created_at": "2009-04-20T20:12:46Z",
     "labels": [
         "quadratic forms",
@@ -19,7 +19,7 @@ archive/issues_005837.json:
 ```
 Assignee: LBerlioz
 
-CC:  tornaria
+CC:  @tornaria
 
 Keywords: QuadraticForm diagonal
 
@@ -136,7 +136,7 @@ archive/issue_comments_045870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5837#issuecomment-45870",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_045871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5837#issuecomment-45871",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 

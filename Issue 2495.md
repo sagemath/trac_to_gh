@@ -3,7 +3,7 @@
 archive/issues_002495.json:
 ```json
 {
-    "body": "Assignee: was\n\nUpdated to the latest release of Mayavi2.\n\nNow uses vtk-5.0.4 with GL2EPS enabled, so picures can be saved as eps, ps and pdf files!\n\nSee:\nhttp://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.1/\n\nhttp://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.1/mayavi_2.1.1-20080307.spkg\n\nwith dependencies:\n\nhttp://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.1/vtk-5.0.4.spkg \n\nnew version of setuptools (will be in sage-2.10.4 standard): http://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.1/setuptools-0.6c8.spkg\n\nhttp://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.1/wxPython-2.8.7.1.spkg (already in experimental)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2495\n\n",
+    "body": "Assignee: @williamstein\n\nUpdated to the latest release of Mayavi2.\n\nNow uses vtk-5.0.4 with GL2EPS enabled, so picures can be saved as eps, ps and pdf files!\n\nSee:\nhttp://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.1/\n\nhttp://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.1/mayavi_2.1.1-20080307.spkg\n\nwith dependencies:\n\nhttp://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.1/vtk-5.0.4.spkg \n\nnew version of setuptools (will be in sage-2.10.4 standard): http://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.1/setuptools-0.6c8.spkg\n\nhttp://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.1/wxPython-2.8.7.1.spkg (already in experimental)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2495\n\n",
     "created_at": "2008-03-12T15:14:59Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_002495.json:
     "title": "Updated experimental Mayavi2 spkg (mayavi_2.1.1) linux only",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2495",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Updated to the latest release of Mayavi2.
 
@@ -72,7 +72,7 @@ archive/issue_comments_016906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2495#issuecomment-16906",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_016907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2495#issuecomment-16907",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_016908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2495#issuecomment-16908",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_016909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2495#issuecomment-16909",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -277,7 +277,7 @@ Michael
 archive/issue_comments_016913.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2008-03-22T05:14:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2495",
     "type": "issue_comment",
@@ -286,7 +286,7 @@ archive/issue_comments_016913.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 
@@ -336,7 +336,7 @@ archive/issue_comments_016916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2495#issuecomment-16916",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -378,7 +378,7 @@ archive/issue_comments_016917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2495#issuecomment-16917",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -421,7 +421,7 @@ archive/issue_comments_016918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2495#issuecomment-16918",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -439,7 +439,7 @@ archive/issue_comments_016919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2495#issuecomment-16919",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -457,7 +457,7 @@ archive/issue_comments_016920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2495#issuecomment-16920",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 

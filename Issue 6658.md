@@ -14,7 +14,7 @@ archive/issues_006658.json:
     "title": "digits() claims it defaults to base 2, but it defaults to base 10",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6658",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: somebody
@@ -44,7 +44,7 @@ archive/issue_comments_054657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6658#issuecomment-54657",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -57,16 +57,16 @@ Changing status from new to assigned.
 archive/issue_comments_054658.json:
 ```json
 {
-    "body": "Changing assignee from somebody to ddrake.",
+    "body": "Changing assignee from somebody to @dandrake.",
     "created_at": "2009-07-30T03:34:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6658#issuecomment-54658",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Changing assignee from somebody to ddrake.
+Changing assignee from somebody to @dandrake.
 
 
 
@@ -75,16 +75,16 @@ Changing assignee from somebody to ddrake.
 archive/issue_comments_054659.json:
 ```json
 {
-    "body": "Attachment [trac_6658_integer_digits.patch](tarball://root/attachments/some-uuid/ticket6658/trac_6658_integer_digits.patch) by ddrake created at 2009-07-30 03:34:12\n\nI also edited a bit of the docstring.",
+    "body": "Attachment [trac_6658_integer_digits.patch](tarball://root/attachments/some-uuid/ticket6658/trac_6658_integer_digits.patch) by @dandrake created at 2009-07-30 03:34:12\n\nI also edited a bit of the docstring.",
     "created_at": "2009-07-30T03:34:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6658#issuecomment-54659",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_6658_integer_digits.patch](tarball://root/attachments/some-uuid/ticket6658/trac_6658_integer_digits.patch) by ddrake created at 2009-07-30 03:34:12
+Attachment [trac_6658_integer_digits.patch](tarball://root/attachments/some-uuid/ticket6658/trac_6658_integer_digits.patch) by @dandrake created at 2009-07-30 03:34:12
 
 I also edited a bit of the docstring.
 
@@ -100,7 +100,7 @@ archive/issue_comments_054660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6658#issuecomment-54660",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_054661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6658#issuecomment-54661",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

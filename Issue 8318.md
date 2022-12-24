@@ -14,7 +14,7 @@ archive/issues_008318.json:
     "title": "overlap_partion of a word should return an instance disjoint set data structure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8318",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 Assignee: sage-combinat
@@ -96,7 +96,7 @@ archive/issue_comments_073779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8318#issuecomment-73779",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_073783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8318#issuecomment-73783",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -204,16 +204,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_073784.json:
 ```json
 {
-    "body": "Attachment [trac_8318_overlap_partition-sl.patch](tarball://root/attachments/some-uuid/ticket8318/trac_8318_overlap_partition-sl.patch) by slabbe created at 2010-02-28 18:13:55\n\nI fixed the documentation. Needs review!",
+    "body": "Attachment [trac_8318_overlap_partition-sl.patch](tarball://root/attachments/some-uuid/ticket8318/trac_8318_overlap_partition-sl.patch) by @seblabbe created at 2010-02-28 18:13:55\n\nI fixed the documentation. Needs review!",
     "created_at": "2010-02-28T18:13:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8318#issuecomment-73784",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8318_overlap_partition-sl.patch](tarball://root/attachments/some-uuid/ticket8318/trac_8318_overlap_partition-sl.patch) by slabbe created at 2010-02-28 18:13:55
+Attachment [trac_8318_overlap_partition-sl.patch](tarball://root/attachments/some-uuid/ticket8318/trac_8318_overlap_partition-sl.patch) by @seblabbe created at 2010-02-28 18:13:55
 
 I fixed the documentation. Needs review!
 

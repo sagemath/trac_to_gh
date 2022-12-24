@@ -14,7 +14,7 @@ archive/issues_005283.json:
     "title": "problem with posets: iterating the subposet construction",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5283",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: somebody
@@ -73,16 +73,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5283
 archive/issue_comments_040603.json:
 ```json
 {
-    "body": "Attachment [trac_5283.patch](tarball://root/attachments/some-uuid/ticket5283/trac_5283.patch) by saliola created at 2009-04-30 09:56:11\n\nThe poset elements are just wrapping elements, so I modified the subposet constructor to unwrap before constructing the subposet (it was wrapping a wrapped element).\n\nNote that you can still create a poset of poset elements, this is just for the subposet constructor.",
+    "body": "Attachment [trac_5283.patch](tarball://root/attachments/some-uuid/ticket5283/trac_5283.patch) by @saliola created at 2009-04-30 09:56:11\n\nThe poset elements are just wrapping elements, so I modified the subposet constructor to unwrap before constructing the subposet (it was wrapping a wrapped element).\n\nNote that you can still create a poset of poset elements, this is just for the subposet constructor.",
     "created_at": "2009-04-30T09:56:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5283#issuecomment-40603",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_5283.patch](tarball://root/attachments/some-uuid/ticket5283/trac_5283.patch) by saliola created at 2009-04-30 09:56:11
+Attachment [trac_5283.patch](tarball://root/attachments/some-uuid/ticket5283/trac_5283.patch) by @saliola created at 2009-04-30 09:56:11
 
 The poset elements are just wrapping elements, so I modified the subposet constructor to unwrap before constructing the subposet (it was wrapping a wrapped element).
 
@@ -100,7 +100,7 @@ archive/issue_comments_040604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5283#issuecomment-40604",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

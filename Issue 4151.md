@@ -3,7 +3,7 @@
 archive/issues_004151.json:
 ```json
 {
-    "body": "Assignee: was\n\nSee \n\nhttp://en.wikipedia.org/wiki/Dickman-de_Bruijn_function\n\nIssue created by migration from https://trac.sagemath.org/ticket/4151\n\n",
+    "body": "Assignee: @williamstein\n\nSee \n\nhttp://en.wikipedia.org/wiki/Dickman-de_Bruijn_function\n\nIssue created by migration from https://trac.sagemath.org/ticket/4151\n\n",
     "created_at": "2008-09-19T09:45:59Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004151.json:
     "title": "[with patch, needs review] implementation of Dickman's function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4151",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 See 
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4151
 archive/issue_comments_030140.json:
 ```json
 {
-    "body": "Attachment [4151-dickmanrho.patch](tarball://root/attachments/some-uuid/ticket4151/4151-dickmanrho.patch) by davidloeffler created at 2008-09-21 09:53:42\n\nI tried installing this (under Sage 3.1.1) and now I get an error whenever I start up Sage:\n\n\n```\n/home/david/sage-3.1.1/local/lib/python2.5/site-packages/sage/functions/transcendental.py in <module>()\n    378\n    379\n--> 380 from sage.rings.polynomial.polynomial_real_mpfr_dense import PolynomialRealDense\n    381\n    382 class DickmanRhoComputer:\n\nImportError: /home/david/sage-3.1.1/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_real_mpfr_dense.so: undefined symbol: mpfr_set_z\n```\n\nI tried doing \"sage -ba\" and that didn't help. Does it only work if installed against one of the 3.1.2 alpha builds?\n\nDavid",
+    "body": "Attachment [4151-dickmanrho.patch](tarball://root/attachments/some-uuid/ticket4151/4151-dickmanrho.patch) by @loefflerd created at 2008-09-21 09:53:42\n\nI tried installing this (under Sage 3.1.1) and now I get an error whenever I start up Sage:\n\n\n```\n/home/david/sage-3.1.1/local/lib/python2.5/site-packages/sage/functions/transcendental.py in <module>()\n    378\n    379\n--> 380 from sage.rings.polynomial.polynomial_real_mpfr_dense import PolynomialRealDense\n    381\n    382 class DickmanRhoComputer:\n\nImportError: /home/david/sage-3.1.1/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_real_mpfr_dense.so: undefined symbol: mpfr_set_z\n```\n\nI tried doing \"sage -ba\" and that didn't help. Does it only work if installed against one of the 3.1.2 alpha builds?\n\nDavid",
     "created_at": "2008-09-21T09:53:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4151#issuecomment-30140",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [4151-dickmanrho.patch](tarball://root/attachments/some-uuid/ticket4151/4151-dickmanrho.patch) by davidloeffler created at 2008-09-21 09:53:42
+Attachment [4151-dickmanrho.patch](tarball://root/attachments/some-uuid/ticket4151/4151-dickmanrho.patch) by @loefflerd created at 2008-09-21 09:53:42
 
 I tried installing this (under Sage 3.1.1) and now I get an error whenever I start up Sage:
 
@@ -105,16 +105,16 @@ Michael
 archive/issue_comments_030142.json:
 ```json
 {
-    "body": "Attachment [4151-2.patch](tarball://root/attachments/some-uuid/ticket4151/4151-2.patch) by davidloeffler created at 2008-09-21 15:07:46",
+    "body": "Attachment [4151-2.patch](tarball://root/attachments/some-uuid/ticket4151/4151-2.patch) by @loefflerd created at 2008-09-21 15:07:46",
     "created_at": "2008-09-21T15:07:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4151#issuecomment-30142",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [4151-2.patch](tarball://root/attachments/some-uuid/ticket4151/4151-2.patch) by davidloeffler created at 2008-09-21 15:07:46
+Attachment [4151-2.patch](tarball://root/attachments/some-uuid/ticket4151/4151-2.patch) by @loefflerd created at 2008-09-21 15:07:46
 
 
 
@@ -128,7 +128,7 @@ archive/issue_comments_030143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4151#issuecomment-30143",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -198,16 +198,16 @@ Michael
 archive/issue_comments_030145.json:
 ```json
 {
-    "body": "Attachment [4151-dickmanrho3.patch](tarball://root/attachments/some-uuid/ticket4151/4151-dickmanrho3.patch) by robertwb created at 2008-09-22 22:16:08\n\nThanks for your comments and improvements, I've attached a follow up patch. Nice catch about the value at 0. \n\nI agree with you that I could be saving some recalculation, but I don't think it's a common enough use case to justify the additional complexity. In fact, I throw away a lot as I go along--for example I don't want to cache 1000-bit 1000-term polynomials just in case one wants dickman_rho(10) to extremely high precision after computing dickman_rho(100).\n\nI've opened #4168 to use native mpfr polynomials elsewhere, figuring it'd involve changes very irrelevant to this ticket.",
+    "body": "Attachment [4151-dickmanrho3.patch](tarball://root/attachments/some-uuid/ticket4151/4151-dickmanrho3.patch) by @robertwb created at 2008-09-22 22:16:08\n\nThanks for your comments and improvements, I've attached a follow up patch. Nice catch about the value at 0. \n\nI agree with you that I could be saving some recalculation, but I don't think it's a common enough use case to justify the additional complexity. In fact, I throw away a lot as I go along--for example I don't want to cache 1000-bit 1000-term polynomials just in case one wants dickman_rho(10) to extremely high precision after computing dickman_rho(100).\n\nI've opened #4168 to use native mpfr polynomials elsewhere, figuring it'd involve changes very irrelevant to this ticket.",
     "created_at": "2008-09-22T22:16:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4151#issuecomment-30145",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4151-dickmanrho3.patch](tarball://root/attachments/some-uuid/ticket4151/4151-dickmanrho3.patch) by robertwb created at 2008-09-22 22:16:08
+Attachment [4151-dickmanrho3.patch](tarball://root/attachments/some-uuid/ticket4151/4151-dickmanrho3.patch) by @robertwb created at 2008-09-22 22:16:08
 
 Thanks for your comments and improvements, I've attached a follow up patch. Nice catch about the value at 0. 
 
@@ -227,7 +227,7 @@ archive/issue_comments_030146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4151#issuecomment-30146",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 

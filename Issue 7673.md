@@ -3,7 +3,7 @@
 archive/issues_007673.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  ncohen\n\nAs a follow up of #7640.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7673\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @nathanncohen\n\nAs a follow up of #7640.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7673\n\n",
     "created_at": "2009-12-12T19:51:21Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_007673.json:
     "title": "implement Dijkstra's algorithm for C graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7673",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  ncohen
+CC:  @nathanncohen
 
 As a follow up of #7640.
 
@@ -39,7 +39,7 @@ archive/issue_comments_065759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7673",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7673#issuecomment-65759",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_065760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7673",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7673#issuecomment-65760",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_065761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7673",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7673#issuecomment-65761",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_065762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7673",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7673#issuecomment-65762",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_065763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7673",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7673#issuecomment-65763",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_065764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7673",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7673#issuecomment-65764",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_065765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7673",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7673#issuecomment-65765",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -165,16 +165,16 @@ rebased on 4.3.rc0 + #7640
 archive/issue_comments_065766.json:
 ```json
 {
-    "body": "Attachment [trac_7673.patch](tarball://root/attachments/some-uuid/ticket7673/trac_7673.patch) by rlm created at 2009-12-14 02:54:06\n\nReplying to [comment:4 rlm]:\n> This is going to conflict with the patch at #7640. Can you rebase this patch on 4.3.rc0 + #7640?\n\nOK, I've posted a new patch.",
+    "body": "Attachment [trac_7673.patch](tarball://root/attachments/some-uuid/ticket7673/trac_7673.patch) by @rlmill created at 2009-12-14 02:54:06\n\nReplying to [comment:4 rlm]:\n> This is going to conflict with the patch at #7640. Can you rebase this patch on 4.3.rc0 + #7640?\n\nOK, I've posted a new patch.",
     "created_at": "2009-12-14T02:54:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7673",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7673#issuecomment-65766",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_7673.patch](tarball://root/attachments/some-uuid/ticket7673/trac_7673.patch) by rlm created at 2009-12-14 02:54:06
+Attachment [trac_7673.patch](tarball://root/attachments/some-uuid/ticket7673/trac_7673.patch) by @rlmill created at 2009-12-14 02:54:06
 
 Replying to [comment:4 rlm]:
 > This is going to conflict with the patch at #7640. Can you rebase this patch on 4.3.rc0 + #7640?
@@ -193,7 +193,7 @@ archive/issue_comments_065767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7673",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7673#issuecomment-65767",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_065768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7673",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7673#issuecomment-65768",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_065771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7673",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7673#issuecomment-65771",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -328,7 +328,7 @@ archive/issue_comments_065773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7673",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7673#issuecomment-65773",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -376,7 +376,7 @@ archive/issue_comments_065774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7673",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7673#issuecomment-65774",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -394,7 +394,7 @@ archive/issue_comments_065775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7673",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7673#issuecomment-65775",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -407,16 +407,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_065776.json:
 ```json
 {
-    "body": "Attachment [trac_7673.2.patch](tarball://root/attachments/some-uuid/ticket7673/trac_7673.2.patch) by ncohen created at 2009-12-14 12:33:00\n\nI do not think so, this bug just came from the fact that this version of dijkstra is bidirectional, and I wrongly assumed that as in the simple version of it, the first path found was the correct path. Obviously ( see your example ) it is not, and I expect this version of the algorithm to be correct :-)\n\nNathann",
+    "body": "Attachment [trac_7673.2.patch](tarball://root/attachments/some-uuid/ticket7673/trac_7673.2.patch) by @nathanncohen created at 2009-12-14 12:33:00\n\nI do not think so, this bug just came from the fact that this version of dijkstra is bidirectional, and I wrongly assumed that as in the simple version of it, the first path found was the correct path. Obviously ( see your example ) it is not, and I expect this version of the algorithm to be correct :-)\n\nNathann",
     "created_at": "2009-12-14T12:33:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7673",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7673#issuecomment-65776",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_7673.2.patch](tarball://root/attachments/some-uuid/ticket7673/trac_7673.2.patch) by ncohen created at 2009-12-14 12:33:00
+Attachment [trac_7673.2.patch](tarball://root/attachments/some-uuid/ticket7673/trac_7673.2.patch) by @nathanncohen created at 2009-12-14 12:33:00
 
 I do not think so, this bug just came from the fact that this version of dijkstra is bidirectional, and I wrongly assumed that as in the simple version of it, the first path found was the correct path. Obviously ( see your example ) it is not, and I expect this version of the algorithm to be correct :-)
 
@@ -434,7 +434,7 @@ archive/issue_comments_065777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7673",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7673#issuecomment-65777",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -452,7 +452,7 @@ archive/issue_comments_065778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7673",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7673#issuecomment-65778",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -472,7 +472,7 @@ archive/issue_comments_065779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7673",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7673#issuecomment-65779",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

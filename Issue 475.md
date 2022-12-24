@@ -3,7 +3,7 @@
 archive/issues_000475.json:
 ```json
 {
-    "body": "Assignee: was\n\nPackages should check for a flag (i.e. SAGE_DEBUG) on build. If this is set, options suitable for debugging should be used. i.e. CFLAGS=\"-g\", no optimizations,  --without-pymalloc in Python (for valgrind)\n\nIssue created by migration from https://trac.sagemath.org/ticket/475\n\n",
+    "body": "Assignee: @williamstein\n\nPackages should check for a flag (i.e. SAGE_DEBUG) on build. If this is set, options suitable for debugging should be used. i.e. CFLAGS=\"-g\", no optimizations,  --without-pymalloc in Python (for valgrind)\n\nIssue created by migration from https://trac.sagemath.org/ticket/475\n\n",
     "created_at": "2007-08-21T14:10:23Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_000475.json:
     "title": "check for SAGE_DEBUG flag on build to include symbols",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/475",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Packages should check for a flag (i.e. SAGE_DEBUG) on build. If this is set, options suitable for debugging should be used. i.e. CFLAGS="-g", no optimizations,  --without-pymalloc in Python (for valgrind)
 
@@ -55,7 +55,7 @@ archive/issue_comments_002374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/475#issuecomment-2374",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007997.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  timdumol acleone mpatel was boothby jason chapoton\n\nSee http://docs.python.org/library/ast.html#ast.NodeTransformer\n\nReplace any Expr node in the ast tree with a function call to\n\n```\ndef __print_if_not_none(expr):\n    if expr is not None:\n        print expr\n```\n\nAn Expr node is anything like\n\n```\n123\ndo_foo()\nfor i in range(10):\n    i\n```\n\nWhich will be replaced by\n\n```\n__print_if_not_none(123)\n__print_if_not_none(do_foo())\nfor i in range(10):\n    __print_if_not_none(i)\n```\n\nWhich will output\n\n```\n123\n0\n1\n...\n9\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7997\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @TimDumol acleone @qed777 @williamstein boothby @jasongrout @fchapoton\n\nSee http://docs.python.org/library/ast.html#ast.NodeTransformer\n\nReplace any Expr node in the ast tree with a function call to\n\n```\ndef __print_if_not_none(expr):\n    if expr is not None:\n        print expr\n```\n\nAn Expr node is anything like\n\n```\n123\ndo_foo()\nfor i in range(10):\n    i\n```\n\nWhich will be replaced by\n\n```\n__print_if_not_none(123)\n__print_if_not_none(do_foo())\nfor i in range(10):\n    __print_if_not_none(i)\n```\n\nWhich will output\n\n```\n123\n0\n1\n...\n9\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7997\n\n",
     "created_at": "2010-01-19T15:09:00Z",
     "labels": [
         "notebook",
@@ -17,9 +17,9 @@ archive/issues_007997.json:
     "user": "acleone"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  timdumol acleone mpatel was boothby jason chapoton
+CC:  @TimDumol acleone @qed777 @williamstein boothby @jasongrout @fchapoton
 
 See http://docs.python.org/library/ast.html#ast.NodeTransformer
 
@@ -76,7 +76,7 @@ archive/issue_comments_069864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69864",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -89,16 +89,16 @@ Incomplete implementation
 archive/issue_comments_069865.json:
 ```json
 {
-    "body": "Attachment [trac_7997-ast-display-hook-incomplete.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook-incomplete.patch) by timdumol created at 2010-01-20 23:59:18\n\nHey, are you working on the pexpect stuff yet? If not, I'll start work on it as soon as you reply.",
+    "body": "Attachment [trac_7997-ast-display-hook-incomplete.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook-incomplete.patch) by @TimDumol created at 2010-01-20 23:59:18\n\nHey, are you working on the pexpect stuff yet? If not, I'll start work on it as soon as you reply.",
     "created_at": "2010-01-20T23:59:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69865",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7997-ast-display-hook-incomplete.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook-incomplete.patch) by timdumol created at 2010-01-20 23:59:18
+Attachment [trac_7997-ast-display-hook-incomplete.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook-incomplete.patch) by @TimDumol created at 2010-01-20 23:59:18
 
 Hey, are you working on the pexpect stuff yet? If not, I'll start work on it as soon as you reply.
 
@@ -140,7 +140,7 @@ archive/issue_comments_069867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69867",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_069868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69868",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_069869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69869",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_069871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69871",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_069872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69872",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -275,16 +275,16 @@ Unfortunately not - I overestimated the amount of time I had.
 archive/issue_comments_069874.json:
 ```json
 {
-    "body": "Attachment [trac_7997-ast-display-hook-incomplete.1.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook-incomplete.1.patch) by timdumol created at 2010-04-02 11:40:11\n\nCompletely working (hopefully) implementation of a local WorksheetProcess. Need to implement a remote version too, before this patch is ready.",
+    "body": "Attachment [trac_7997-ast-display-hook-incomplete.1.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook-incomplete.1.patch) by @TimDumol created at 2010-04-02 11:40:11\n\nCompletely working (hopefully) implementation of a local WorksheetProcess. Need to implement a remote version too, before this patch is ready.",
     "created_at": "2010-04-02T11:40:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69874",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7997-ast-display-hook-incomplete.1.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook-incomplete.1.patch) by timdumol created at 2010-04-02 11:40:11
+Attachment [trac_7997-ast-display-hook-incomplete.1.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook-incomplete.1.patch) by @TimDumol created at 2010-04-02 11:40:11
 
 Completely working (hopefully) implementation of a local WorksheetProcess. Need to implement a remote version too, before this patch is ready.
 
@@ -300,7 +300,7 @@ archive/issue_comments_069875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69875",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -421,7 +421,7 @@ archive/issue_comments_069877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69877",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -434,16 +434,16 @@ Completely working implementation of a remote WorksheetProcess. Deprecates pexep
 archive/issue_comments_069878.json:
 ```json
 {
-    "body": "Attachment [trac_7997-ast-display-hook.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook.patch) by timdumol created at 2010-04-03 15:44:17\n\nTom Boothby, I'm adding you to the CC since this also fixes the problem with the tracebacks you mentioned to me last January.\n\nThis version of the patch is hopefully the final version of the patch. It does the following:\n\n* Uses ast to replace the displayhook_hack in `sagenb.misc.format`, this was achieved through the efforts of me and Alex Leone (thank you!).\n\n  * The new version, now named `parse_display_expr`, can now print either the last expression, as before:\n\n\n```\n1\n2\n3\n----\n3\n```\n\n\n  or all root level expressions:\n\n\n```\n1\n2\nfor x in range(3):\n    x\n3\n-----\n1\n2\n3\n```\n\n\n  or all expressions:\n\n\n```\n1\n2\nfor x in range(2):\n    x\n3\n-----\n1\n2\n0\n1\n3\n```\n\n\n     This new functionality is customizable via the Notebook Settings page.\n\n* Adds new WorksheetProcess implementations based on `multiprocessing`, and deprecates the pexpect based ones, since this also changes the WorksheetProcess API. The blocking reference implementation has been updated to the new API.\n\n  * The local implementation (`WorksheetProcess_PipesImpl`) is on average 251.3 ms faster than the pexpect based one.\n\n  * The remote implementation ('WorksheetProcess_RemoteSSHPipesImpl`) is on average 212 ms faster than the remote pexpect based one. For now, it has the same vulnerabilities as the old one, with one additional: the connection between the main server and the computing server is unencrypted, and thus may be snooped on. It is trivial to fix this, however I am not sure whether the speed (and extra computing load) tradeoffs are worth it.\n\n* It now formats tracebacks as:\n\n\n```\nTraceback (most recent call last):\n  Line 7, in <module>\n    bar()\n  Line 5, in bar\n    foo()\n  Line 2, in foo\n    raise Exception(\"Hello\")\nException: Hello\n```\n\n\ninstead of:\n\n\n```\nTraceback (most recent call last):    def baz():\n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpfzcGzr/___code___.py\", line 13, in <module>\n    baz()\n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpfzcGzr/___code___.py\", line 10, in baz\n    bar()\n  File \"/tmp/tmpfzcGzr/___code___.py\", line 7, in bar\n    foo()\n  File \"/tmp/tmpfzcGzr/___code___.py\", line 4, in foo\n    raise Exception(\"Hello\")\nException: Hello\n```\n\n\nwhich have their line numbers offset by +2, also.",
+    "body": "Attachment [trac_7997-ast-display-hook.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook.patch) by @TimDumol created at 2010-04-03 15:44:17\n\nTom Boothby, I'm adding you to the CC since this also fixes the problem with the tracebacks you mentioned to me last January.\n\nThis version of the patch is hopefully the final version of the patch. It does the following:\n\n* Uses ast to replace the displayhook_hack in `sagenb.misc.format`, this was achieved through the efforts of me and Alex Leone (thank you!).\n\n  * The new version, now named `parse_display_expr`, can now print either the last expression, as before:\n\n\n```\n1\n2\n3\n----\n3\n```\n\n\n  or all root level expressions:\n\n\n```\n1\n2\nfor x in range(3):\n    x\n3\n-----\n1\n2\n3\n```\n\n\n  or all expressions:\n\n\n```\n1\n2\nfor x in range(2):\n    x\n3\n-----\n1\n2\n0\n1\n3\n```\n\n\n     This new functionality is customizable via the Notebook Settings page.\n\n* Adds new WorksheetProcess implementations based on `multiprocessing`, and deprecates the pexpect based ones, since this also changes the WorksheetProcess API. The blocking reference implementation has been updated to the new API.\n\n  * The local implementation (`WorksheetProcess_PipesImpl`) is on average 251.3 ms faster than the pexpect based one.\n\n  * The remote implementation ('WorksheetProcess_RemoteSSHPipesImpl`) is on average 212 ms faster than the remote pexpect based one. For now, it has the same vulnerabilities as the old one, with one additional: the connection between the main server and the computing server is unencrypted, and thus may be snooped on. It is trivial to fix this, however I am not sure whether the speed (and extra computing load) tradeoffs are worth it.\n\n* It now formats tracebacks as:\n\n\n```\nTraceback (most recent call last):\n  Line 7, in <module>\n    bar()\n  Line 5, in bar\n    foo()\n  Line 2, in foo\n    raise Exception(\"Hello\")\nException: Hello\n```\n\n\ninstead of:\n\n\n```\nTraceback (most recent call last):    def baz():\n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpfzcGzr/___code___.py\", line 13, in <module>\n    baz()\n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpfzcGzr/___code___.py\", line 10, in baz\n    bar()\n  File \"/tmp/tmpfzcGzr/___code___.py\", line 7, in bar\n    foo()\n  File \"/tmp/tmpfzcGzr/___code___.py\", line 4, in foo\n    raise Exception(\"Hello\")\nException: Hello\n```\n\n\nwhich have their line numbers offset by +2, also.",
     "created_at": "2010-04-03T15:44:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69878",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7997-ast-display-hook.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook.patch) by timdumol created at 2010-04-03 15:44:17
+Attachment [trac_7997-ast-display-hook.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook.patch) by @TimDumol created at 2010-04-03 15:44:17
 
 Tom Boothby, I'm adding you to the CC since this also fixes the problem with the tracebacks you mentioned to me last January.
 
@@ -555,7 +555,7 @@ archive/issue_comments_069879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69879",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -573,7 +573,7 @@ archive/issue_comments_069880.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69880",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -586,16 +586,16 @@ Fixed bug with empty input to parse_display_expr.
 archive/issue_comments_069881.json:
 ```json
 {
-    "body": "Attachment [trac_7997-ast-display-hook.2.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook.2.patch) by timdumol created at 2010-04-14 18:20:46",
+    "body": "Attachment [trac_7997-ast-display-hook.2.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook.2.patch) by @TimDumol created at 2010-04-14 18:20:46",
     "created_at": "2010-04-14T18:20:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69881",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7997-ast-display-hook.2.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook.2.patch) by timdumol created at 2010-04-14 18:20:46
+Attachment [trac_7997-ast-display-hook.2.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook.2.patch) by @TimDumol created at 2010-04-14 18:20:46
 
 
 
@@ -604,16 +604,16 @@ Attachment [trac_7997-ast-display-hook.2.patch](tarball://root/attachments/some-
 archive/issue_comments_069882.json:
 ```json
 {
-    "body": "Attachment [trac_7908-pub_interact_c11-rebase.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7908-pub_interact_c11-rebase.patch) by timdumol created at 2010-04-18 07:42:41\n\nFixes a doctest.",
+    "body": "Attachment [trac_7908-pub_interact_c11-rebase.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7908-pub_interact_c11-rebase.patch) by @TimDumol created at 2010-04-18 07:42:41\n\nFixes a doctest.",
     "created_at": "2010-04-18T07:42:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69882",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7908-pub_interact_c11-rebase.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7908-pub_interact_c11-rebase.patch) by timdumol created at 2010-04-18 07:42:41
+Attachment [trac_7908-pub_interact_c11-rebase.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7908-pub_interact_c11-rebase.patch) by @TimDumol created at 2010-04-18 07:42:41
 
 Fixes a doctest.
 
@@ -629,7 +629,7 @@ archive/issue_comments_069883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69883",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -642,16 +642,16 @@ Fixes a doctest.
 archive/issue_comments_069884.json:
 ```json
 {
-    "body": "Attachment [trac_7997-ast-display-hook.3.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook.3.patch) by timdumol created at 2010-04-18 07:43:45\n\nThis patch fixes a doctest. Please ignore attachment:trac_7908-pub_interact_c11-rebase.patch.",
+    "body": "Attachment [trac_7997-ast-display-hook.3.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook.3.patch) by @TimDumol created at 2010-04-18 07:43:45\n\nThis patch fixes a doctest. Please ignore attachment:trac_7908-pub_interact_c11-rebase.patch.",
     "created_at": "2010-04-18T07:43:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69884",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7997-ast-display-hook.3.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook.3.patch) by timdumol created at 2010-04-18 07:43:45
+Attachment [trac_7997-ast-display-hook.3.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook.3.patch) by @TimDumol created at 2010-04-18 07:43:45
 
 This patch fixes a doctest. Please ignore attachment:trac_7908-pub_interact_c11-rebase.patch.
 
@@ -667,7 +667,7 @@ archive/issue_comments_069885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69885",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -680,16 +680,16 @@ Fixes a bug with %time.
 archive/issue_comments_069886.json:
 ```json
 {
-    "body": "Attachment [trac_7997-ast-display-hook.4.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook.4.patch) by timdumol created at 2010-05-04 04:27:19\n\nHow's the refactoring going?",
+    "body": "Attachment [trac_7997-ast-display-hook.4.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook.4.patch) by @TimDumol created at 2010-05-04 04:27:19\n\nHow's the refactoring going?",
     "created_at": "2010-05-04T04:27:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69886",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7997-ast-display-hook.4.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook.4.patch) by timdumol created at 2010-05-04 04:27:19
+Attachment [trac_7997-ast-display-hook.4.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook.4.patch) by @TimDumol created at 2010-05-04 04:27:19
 
 How's the refactoring going?
 
@@ -722,16 +722,16 @@ William mentioned that we should keep the pexpect interface working.
 archive/issue_comments_069888.json:
 ```json
 {
-    "body": "Attachment [trac_7997-ast-display-hook.5.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook.5.patch) by timdumol created at 2010-05-23 13:05:02\n\nMakes the pexpect implementation conform to the new API, and adds backend configuration.",
+    "body": "Attachment [trac_7997-ast-display-hook.5.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook.5.patch) by @TimDumol created at 2010-05-23 13:05:02\n\nMakes the pexpect implementation conform to the new API, and adds backend configuration.",
     "created_at": "2010-05-23T13:05:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69888",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7997-ast-display-hook.5.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook.5.patch) by timdumol created at 2010-05-23 13:05:02
+Attachment [trac_7997-ast-display-hook.5.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook.5.patch) by @TimDumol created at 2010-05-23 13:05:02
 
 Makes the pexpect implementation conform to the new API, and adds backend configuration.
 
@@ -747,7 +747,7 @@ archive/issue_comments_069889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69889",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -765,7 +765,7 @@ archive/issue_comments_069890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69890",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -785,7 +785,7 @@ archive/issue_comments_069891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69891",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -841,7 +841,7 @@ archive/issue_comments_069892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69892",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -859,7 +859,7 @@ archive/issue_comments_069893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69893",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -877,7 +877,7 @@ archive/issue_comments_069894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69894",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -895,7 +895,7 @@ archive/issue_comments_069895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69895",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -913,7 +913,7 @@ archive/issue_comments_069896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69896",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

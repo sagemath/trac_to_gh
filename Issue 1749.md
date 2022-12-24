@@ -61,16 +61,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1749
 archive/issue_comments_011045.json:
 ```json
 {
-    "body": "Attachment [Sage-2.10.alpha1-fix-numercial-noise-in-polynomial_element.pyx.patch](tarball://root/attachments/some-uuid/ticket1749/Sage-2.10.alpha1-fix-numercial-noise-in-polynomial_element.pyx.patch) by jsp created at 2008-01-10 17:20:00\n\nWorks for me on FC7 and FC8 32 bits.\n\nJaap",
+    "body": "Attachment [Sage-2.10.alpha1-fix-numercial-noise-in-polynomial_element.pyx.patch](tarball://root/attachments/some-uuid/ticket1749/Sage-2.10.alpha1-fix-numercial-noise-in-polynomial_element.pyx.patch) by @jaapspies created at 2008-01-10 17:20:00\n\nWorks for me on FC7 and FC8 32 bits.\n\nJaap",
     "created_at": "2008-01-10T17:20:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1749#issuecomment-11045",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [Sage-2.10.alpha1-fix-numercial-noise-in-polynomial_element.pyx.patch](tarball://root/attachments/some-uuid/ticket1749/Sage-2.10.alpha1-fix-numercial-noise-in-polynomial_element.pyx.patch) by jsp created at 2008-01-10 17:20:00
+Attachment [Sage-2.10.alpha1-fix-numercial-noise-in-polynomial_element.pyx.patch](tarball://root/attachments/some-uuid/ticket1749/Sage-2.10.alpha1-fix-numercial-noise-in-polynomial_element.pyx.patch) by @jaapspies created at 2008-01-10 17:20:00
 
 Works for me on FC7 and FC8 32 bits.
 

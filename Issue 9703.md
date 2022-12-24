@@ -3,7 +3,7 @@
 archive/issues_009703.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  jhpalmieri jsp leif pjeremy fbissey was cremona mhansen\n\nJohn Palmieri has built most of Sage on the host fulvia, but there are a number of tests related to sympow that are failing. The summary at the end shows:\n\n\n\n```\nThe following tests failed:\n<snip>\n\tsage -t  -long devel/sage/sage/lfunctions/sympow.py # 13 doctests failed\n<snip>\nTotal time for all tests: 7305.2 seconds\n```\n\n\nLooking at the source code, it is not valid C, so it's quite possible the code gets mis-compiled. In fact, IMHO, gcc should reject the code - just as the Sun compiler does. \n\nI'll try to work out what was intended and see if the code can be re-written in a way that compiles with the Sun compiler, in which case gcc should have more chance of generating correct code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9703\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @jhpalmieri @jaapspies @nexttime @peterjeremy @kiwifb @williamstein @JohnCremona @mwhansen\n\nJohn Palmieri has built most of Sage on the host fulvia, but there are a number of tests related to sympow that are failing. The summary at the end shows:\n\n\n\n```\nThe following tests failed:\n<snip>\n\tsage -t  -long devel/sage/sage/lfunctions/sympow.py # 13 doctests failed\n<snip>\nTotal time for all tests: 7305.2 seconds\n```\n\n\nLooking at the source code, it is not valid C, so it's quite possible the code gets mis-compiled. In fact, IMHO, gcc should reject the code - just as the Sun compiler does. \n\nI'll try to work out what was intended and see if the code can be re-written in a way that compiles with the Sun compiler, in which case gcc should have more chance of generating correct code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9703\n\n",
     "created_at": "2010-08-07T16:17:42Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_009703.json:
 ```
 Assignee: GeorgSWeber
 
-CC:  jhpalmieri jsp leif pjeremy fbissey was cremona mhansen
+CC:  @jhpalmieri @jaapspies @nexttime @peterjeremy @kiwifb @williamstein @JohnCremona @mwhansen
 
 John Palmieri has built most of Sage on the host fulvia, but there are a number of tests related to sympow that are failing. The summary at the end shows:
 
@@ -72,7 +72,7 @@ archive/issue_comments_094363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9703#issuecomment-94363",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_094364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9703#issuecomment-94364",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_094365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9703#issuecomment-94365",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_094366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9703#issuecomment-94366",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_094368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9703#issuecomment-94368",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -492,16 +492,16 @@ Changes the FPU to double-precession IEEE-754 from Intel's expended precisiion.
 archive/issue_comments_094373.json:
 ```json
 {
-    "body": "Attachment [9703-SYMPOW-fix-for-Solaris.patch](tarball://root/attachments/some-uuid/ticket9703/9703-SYMPOW-fix-for-Solaris.patch) by mpatel created at 2010-08-23 13:23:47\n\nIf #9722 is ready to merge soon and this ticket is also positively reviewed, I'll consider including this in a 4.5.3.alpha2.",
+    "body": "Attachment [9703-SYMPOW-fix-for-Solaris.patch](tarball://root/attachments/some-uuid/ticket9703/9703-SYMPOW-fix-for-Solaris.patch) by @qed777 created at 2010-08-23 13:23:47\n\nIf #9722 is ready to merge soon and this ticket is also positively reviewed, I'll consider including this in a 4.5.3.alpha2.",
     "created_at": "2010-08-23T13:23:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9703#issuecomment-94373",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [9703-SYMPOW-fix-for-Solaris.patch](tarball://root/attachments/some-uuid/ticket9703/9703-SYMPOW-fix-for-Solaris.patch) by mpatel created at 2010-08-23 13:23:47
+Attachment [9703-SYMPOW-fix-for-Solaris.patch](tarball://root/attachments/some-uuid/ticket9703/9703-SYMPOW-fix-for-Solaris.patch) by @qed777 created at 2010-08-23 13:23:47
 
 If #9722 is ready to merge soon and this ticket is also positively reviewed, I'll consider including this in a 4.5.3.alpha2.
 
@@ -517,7 +517,7 @@ archive/issue_comments_094374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9703#issuecomment-94374",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -558,16 +558,16 @@ I just need someone to change it to positive. I think I've provided quite a bit 
 archive/issue_comments_094376.json:
 ```json
 {
-    "body": "Attachment [testfpu.c](tarball://root/attachments/some-uuid/ticket9703/testfpu.c) by jdemeyer created at 2010-08-23 13:53:57\n\nTest whether FPU is 53-bit or more",
+    "body": "Attachment [testfpu.c](tarball://root/attachments/some-uuid/ticket9703/testfpu.c) by @jdemeyer created at 2010-08-23 13:53:57\n\nTest whether FPU is 53-bit or more",
     "created_at": "2010-08-23T13:53:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9703#issuecomment-94376",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [testfpu.c](tarball://root/attachments/some-uuid/ticket9703/testfpu.c) by jdemeyer created at 2010-08-23 13:53:57
+Attachment [testfpu.c](tarball://root/attachments/some-uuid/ticket9703/testfpu.c) by @jdemeyer created at 2010-08-23 13:53:57
 
 Test whether FPU is 53-bit or more
 
@@ -583,7 +583,7 @@ archive/issue_comments_094377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9703#issuecomment-94377",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -627,7 +627,7 @@ archive/issue_comments_094378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9703#issuecomment-94378",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -645,7 +645,7 @@ archive/issue_comments_094379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9703#issuecomment-94379",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -744,7 +744,7 @@ archive/issue_comments_094383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9703#issuecomment-94383",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -777,7 +777,7 @@ archive/issue_comments_094384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9703#issuecomment-94384",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -829,7 +829,7 @@ archive/issue_comments_094386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9703#issuecomment-94386",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -855,7 +855,7 @@ archive/issue_comments_094387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9703#issuecomment-94387",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -873,7 +873,7 @@ archive/issue_comments_094388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9703#issuecomment-94388",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1026,7 +1026,7 @@ archive/issue_comments_094394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9703#issuecomment-94394",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1053,7 +1053,7 @@ archive/issue_comments_094395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9703#issuecomment-94395",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

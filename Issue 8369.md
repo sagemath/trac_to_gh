@@ -3,7 +3,7 @@
 archive/issues_008369.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe sentence: \"Or enter the url of a worksheet file on the web:\" at \"Upload or Create Data File to attach to worksheet \"image histogram\"\" in the notebook is wrong.  It should be: \"Or enter the url of a file on the web:\".  This is the page you get by clicking Data --> Upload from a worksheet.  \n\nThis is a really easy bug to fix. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8369\n\n",
+    "body": "Assignee: @williamstein\n\nThe sentence: \"Or enter the url of a worksheet file on the web:\" at \"Upload or Create Data File to attach to worksheet \"image histogram\"\" in the notebook is wrong.  It should be: \"Or enter the url of a file on the web:\".  This is the page you get by clicking Data --> Upload from a worksheet.  \n\nThis is a really easy bug to fix. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8369\n\n",
     "created_at": "2010-02-25T20:15:48Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_008369.json:
     "title": "sagenb: notebook mistake in",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8369",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The sentence: "Or enter the url of a worksheet file on the web:" at "Upload or Create Data File to attach to worksheet "image histogram"" in the notebook is wrong.  It should be: "Or enter the url of a file on the web:".  This is the page you get by clicking Data --> Upload from a worksheet.  
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8369
 archive/issue_comments_074810.json:
 ```json
 {
-    "body": "Attachment [trac_8369-upload_page_oops.patch](tarball://root/attachments/some-uuid/ticket8369/trac_8369-upload_page_oops.patch) by mpatel created at 2010-03-05 08:35:05\n\nFix mistake.  sagenb repo.",
+    "body": "Attachment [trac_8369-upload_page_oops.patch](tarball://root/attachments/some-uuid/ticket8369/trac_8369-upload_page_oops.patch) by @qed777 created at 2010-03-05 08:35:05\n\nFix mistake.  sagenb repo.",
     "created_at": "2010-03-05T08:35:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8369",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8369#issuecomment-74810",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8369-upload_page_oops.patch](tarball://root/attachments/some-uuid/ticket8369/trac_8369-upload_page_oops.patch) by mpatel created at 2010-03-05 08:35:05
+Attachment [trac_8369-upload_page_oops.patch](tarball://root/attachments/some-uuid/ticket8369/trac_8369-upload_page_oops.patch) by @qed777 created at 2010-03-05 08:35:05
 
 Fix mistake.  sagenb repo.
 
@@ -59,7 +59,7 @@ archive/issue_comments_074811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8369",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8369#issuecomment-74811",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_074812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8369",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8369#issuecomment-74812",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_074813.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8369",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8369#issuecomment-74813",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_074814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8369",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8369#issuecomment-74814",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

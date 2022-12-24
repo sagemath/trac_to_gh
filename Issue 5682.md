@@ -14,7 +14,7 @@ archive/issues_005682.json:
     "title": "Quotient for univariate Laurent polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5682",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 Assignee: tbd
@@ -60,7 +60,7 @@ archive/issue_comments_044436.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5682#issuecomment-44436",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_044437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5682#issuecomment-44437",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_044438.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5682#issuecomment-44438",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_044439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5682#issuecomment-44439",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_044440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5682#issuecomment-44440",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

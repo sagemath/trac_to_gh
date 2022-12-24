@@ -3,7 +3,7 @@
 archive/issues_004637.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  ncalexan\n\nConsider this session:\n\n```\nbsd:padics was$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: Qp(7, print_mode=\"digits\")(1/3)\n...44444444444444444445\nsage: padic_printing.sep('][')\nsage: Qp(7, print_mode=\"digits\")(1/3)\n...44444444444444444445\nsage: Qp(11, print_mode=\"digits\")(1/3)\n...73737373737373737374\nsage: Qp(17, print_mode=\"digits\")(1/3)\n...B5B5B5B5B5B5B5B5B5B6\nsage: Qp(97, print_mode=\"digits\")(1/3)\n...64][64][64][64][64][64][64][64][64][64][64][64][64][64][64][64][64][64][64][65\nsage: Qp(7, print_mode=\"digits\")(1/3)\n...44444444444444444445\nsage: Qp(389, print_mode=\"digits\")(1/3)\n...259][129][259][129][259][129][259][129][259][129][259][129][259][129][259][129][259][129][259][130\nsage: padic_printing.sep('|')\nsage: Qp(389, print_mode=\"digits\")(1/3)\n...259][129][259][129][259][129][259][129][259][129][259][129][259][129][259][129][259][129][259][130\nsage: Qp(997, print_mode=\"digits\")(1/3)\n...664|664|664|664|664|664|664|664|664|664|664|664|664|664|664|664|664|664|664|665\nsage: Qp(7, print_mode=\"digits\")(1/3)\n...44444444444444444445\nsage: Qp(3, print_mode=\"digits\")(1/3)\n....1\nsage: Qp(5, print_mode=\"digits\")(1/3)\n...31313131313131313132\n```\n\n| Sage Version 3.2.1.alpha2, Release Date: 2008-11-26                |\n| Type notebook() for the GUI, and license() for information.        |\nBasically the print separator for p-adic fields depends on what the global padic_printing.sep(...) thing happens to have been set at when that field was first created.  There seems to be absolutely no way to change it later.  The dependence is also totally baffling?  Why the hell does it change for 97 but not 17, 11, 7?  WTF!?!\n\nSolution -- make the frickin' separator a property of the field that must be passed in.  Notice now that isn't even possible.  totally get rid of this stupid padic_printing object. \n\n\n```\nsage: Qp(5, print_mode=\"digits\", sep='|')\nTypeError: Qp() got an unexpected keyword argument 'sep'\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4637\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nConsider this session:\n\n```\nbsd:padics was$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: Qp(7, print_mode=\"digits\")(1/3)\n...44444444444444444445\nsage: padic_printing.sep('][')\nsage: Qp(7, print_mode=\"digits\")(1/3)\n...44444444444444444445\nsage: Qp(11, print_mode=\"digits\")(1/3)\n...73737373737373737374\nsage: Qp(17, print_mode=\"digits\")(1/3)\n...B5B5B5B5B5B5B5B5B5B6\nsage: Qp(97, print_mode=\"digits\")(1/3)\n...64][64][64][64][64][64][64][64][64][64][64][64][64][64][64][64][64][64][64][65\nsage: Qp(7, print_mode=\"digits\")(1/3)\n...44444444444444444445\nsage: Qp(389, print_mode=\"digits\")(1/3)\n...259][129][259][129][259][129][259][129][259][129][259][129][259][129][259][129][259][129][259][130\nsage: padic_printing.sep('|')\nsage: Qp(389, print_mode=\"digits\")(1/3)\n...259][129][259][129][259][129][259][129][259][129][259][129][259][129][259][129][259][129][259][130\nsage: Qp(997, print_mode=\"digits\")(1/3)\n...664|664|664|664|664|664|664|664|664|664|664|664|664|664|664|664|664|664|664|665\nsage: Qp(7, print_mode=\"digits\")(1/3)\n...44444444444444444445\nsage: Qp(3, print_mode=\"digits\")(1/3)\n....1\nsage: Qp(5, print_mode=\"digits\")(1/3)\n...31313131313131313132\n```\n\n| Sage Version 3.2.1.alpha2, Release Date: 2008-11-26                |\n| Type notebook() for the GUI, and license() for information.        |\nBasically the print separator for p-adic fields depends on what the global padic_printing.sep(...) thing happens to have been set at when that field was first created.  There seems to be absolutely no way to change it later.  The dependence is also totally baffling?  Why the hell does it change for 97 but not 17, 11, 7?  WTF!?!\n\nSolution -- make the frickin' separator a property of the field that must be passed in.  Notice now that isn't even possible.  totally get rid of this stupid padic_printing object. \n\n\n```\nsage: Qp(5, print_mode=\"digits\", sep='|')\nTypeError: Qp() got an unexpected keyword argument 'sep'\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4637\n\n",
     "created_at": "2008-11-27T06:58:30Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_004637.json:
     "title": "bug/stupid design of padic_printing.sep print mode stuff",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4637",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  ncalexan
+CC:  @ncalexan
 
 Consider this session:
 
@@ -86,7 +86,7 @@ archive/issue_comments_034877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4637#issuecomment-34877",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -99,16 +99,16 @@ Requires the #5499 patch.
 archive/issue_comments_034878.json:
 ```json
 {
-    "body": "Attachment [trac_4637.patch](tarball://root/attachments/some-uuid/ticket4637/trac_4637.patch) by roed created at 2009-03-18 06:17:07\n\nI know there are still problems.  But all doctests currently pass, I don't know of remaining bugs, and I wanted to keep this manageable (rather than continuing the tradition of patch-bombs).  I'm going to keep working on adding more documentation.",
+    "body": "Attachment [trac_4637.patch](tarball://root/attachments/some-uuid/ticket4637/trac_4637.patch) by @roed314 created at 2009-03-18 06:17:07\n\nI know there are still problems.  But all doctests currently pass, I don't know of remaining bugs, and I wanted to keep this manageable (rather than continuing the tradition of patch-bombs).  I'm going to keep working on adding more documentation.",
     "created_at": "2009-03-18T06:17:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4637#issuecomment-34878",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [trac_4637.patch](tarball://root/attachments/some-uuid/ticket4637/trac_4637.patch) by roed created at 2009-03-18 06:17:07
+Attachment [trac_4637.patch](tarball://root/attachments/some-uuid/ticket4637/trac_4637.patch) by @roed314 created at 2009-03-18 06:17:07
 
 I know there are still problems.  But all doctests currently pass, I don't know of remaining bugs, and I wanted to keep this manageable (rather than continuing the tradition of patch-bombs).  I'm going to keep working on adding more documentation.
 
@@ -124,7 +124,7 @@ archive/issue_comments_034879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4637#issuecomment-34879",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_034880.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4637#issuecomment-34880",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_034881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4637#issuecomment-34881",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_034882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4637#issuecomment-34882",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_034883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4637#issuecomment-34883",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

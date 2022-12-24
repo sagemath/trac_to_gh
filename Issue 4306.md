@@ -3,7 +3,7 @@
 archive/issues_004306.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  davidloeffler\n\n\n```\nsage: X = SupersingularModule(389)\nsage: X\nModule of supersingular points on X_0(1)/F_389 over Integer Ring\nsage: X.basis()\nTraceback (most recent call last):\n...\nAttributeError: 'SupersingularModule' object has no attribute 'free_module'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4306\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @loefflerd\n\n\n```\nsage: X = SupersingularModule(389)\nsage: X\nModule of supersingular points on X_0(1)/F_389 over Integer Ring\nsage: X.basis()\nTraceback (most recent call last):\n...\nAttributeError: 'SupersingularModule' object has no attribute 'free_module'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4306\n\n",
     "created_at": "2008-10-16T09:17:19Z",
     "labels": [
         "modular forms",
@@ -14,12 +14,12 @@ archive/issues_004306.json:
     "title": "bug in supersingular module",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4306",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
-CC:  davidloeffler
+CC:  @loefflerd
 
 
 ```
@@ -49,7 +49,7 @@ archive/issue_comments_031512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4306#issuecomment-31512",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_031513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4306#issuecomment-31513",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -80,16 +80,16 @@ The attached patch doesn't implement elements of supersingular modules -- that i
 archive/issue_comments_031514.json:
 ```json
 {
-    "body": "Attachment [trac_4306.patch](tarball://root/attachments/some-uuid/ticket4306/trac_4306.patch) by was created at 2010-01-19 13:09:23",
+    "body": "Attachment [trac_4306.patch](tarball://root/attachments/some-uuid/ticket4306/trac_4306.patch) by @williamstein created at 2010-01-19 13:09:23",
     "created_at": "2010-01-19T13:09:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4306#issuecomment-31514",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4306.patch](tarball://root/attachments/some-uuid/ticket4306/trac_4306.patch) by was created at 2010-01-19 13:09:23
+Attachment [trac_4306.patch](tarball://root/attachments/some-uuid/ticket4306/trac_4306.patch) by @williamstein created at 2010-01-19 13:09:23
 
 
 
@@ -103,7 +103,7 @@ archive/issue_comments_031515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4306#issuecomment-31515",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_031516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4306#issuecomment-31516",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_031517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4306#issuecomment-31517",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -253,16 +253,16 @@ I am adding a reviewer patch that doctests this.
 archive/issue_comments_031518.json:
 ```json
 {
-    "body": "Attachment [trac_4306-doctest.patch](tarball://root/attachments/some-uuid/ticket4306/trac_4306-doctest.patch) by AlexGhitza created at 2013-07-22 17:26:58",
+    "body": "Attachment [trac_4306-doctest.patch](tarball://root/attachments/some-uuid/ticket4306/trac_4306-doctest.patch) by @aghitza created at 2013-07-22 17:26:58",
     "created_at": "2013-07-22T17:26:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4306#issuecomment-31518",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_4306-doctest.patch](tarball://root/attachments/some-uuid/ticket4306/trac_4306-doctest.patch) by AlexGhitza created at 2013-07-22 17:26:58
+Attachment [trac_4306-doctest.patch](tarball://root/attachments/some-uuid/ticket4306/trac_4306-doctest.patch) by @aghitza created at 2013-07-22 17:26:58
 
 
 
@@ -276,7 +276,7 @@ archive/issue_comments_031519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4306#issuecomment-31519",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_031520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4306#issuecomment-31520",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -312,7 +312,7 @@ archive/issue_comments_031521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4306#issuecomment-31521",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -325,16 +325,16 @@ Alex's patch with a better commit message
 archive/issue_comments_031522.json:
 ```json
 {
-    "body": "Attachment [trac_4306-doctest.2.patch](tarball://root/attachments/some-uuid/ticket4306/trac_4306-doctest.2.patch) by davidloeffler created at 2013-07-25 11:08:38\n\nI edited Alex's patch to add a better commit message. Other than that I think this is fine.",
+    "body": "Attachment [trac_4306-doctest.2.patch](tarball://root/attachments/some-uuid/ticket4306/trac_4306-doctest.2.patch) by @loefflerd created at 2013-07-25 11:08:38\n\nI edited Alex's patch to add a better commit message. Other than that I think this is fine.",
     "created_at": "2013-07-25T11:08:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4306#issuecomment-31522",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_4306-doctest.2.patch](tarball://root/attachments/some-uuid/ticket4306/trac_4306-doctest.2.patch) by davidloeffler created at 2013-07-25 11:08:38
+Attachment [trac_4306-doctest.2.patch](tarball://root/attachments/some-uuid/ticket4306/trac_4306-doctest.2.patch) by @loefflerd created at 2013-07-25 11:08:38
 
 I edited Alex's patch to add a better commit message. Other than that I think this is fine.
 
@@ -350,7 +350,7 @@ archive/issue_comments_031523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4306#issuecomment-31523",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -368,7 +368,7 @@ archive/issue_comments_031524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4306#issuecomment-31524",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

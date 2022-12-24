@@ -14,7 +14,7 @@ archive/issues_000282.json:
     "title": "Add matrix() class to FiniteFields and FiniteField extensions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/282",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 Assignee: somebody
@@ -39,7 +39,7 @@ archive/issue_comments_001340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/282",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/282#issuecomment-1340",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -58,7 +58,7 @@ archive/issue_comments_001341.json:
     "issue": "https://github.com/sagemath/sagetest/issues/282",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/282#issuecomment-1341",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -71,16 +71,16 @@ Changing status from new to assigned.
 archive/issue_comments_001342.json:
 ```json
 {
-    "body": "Changing assignee from somebody to malb.",
+    "body": "Changing assignee from somebody to @malb.",
     "created_at": "2007-09-18T12:43:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/282",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/282#issuecomment-1342",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from somebody to malb.
+Changing assignee from somebody to @malb.
 
 
 
@@ -94,7 +94,7 @@ archive/issue_comments_001343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/282",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/282#issuecomment-1343",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -107,16 +107,16 @@ This ticket means that the method matrix() which is described as: "The matrix of
 archive/issue_comments_001344.json:
 ```json
 {
-    "body": "Attachment [K_matrix.patch](tarball://root/attachments/some-uuid/ticket282/K_matrix.patch) by malb created at 2007-10-20 22:46:32",
+    "body": "Attachment [K_matrix.patch](tarball://root/attachments/some-uuid/ticket282/K_matrix.patch) by @malb created at 2007-10-20 22:46:32",
     "created_at": "2007-10-20T22:46:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/282",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/282#issuecomment-1344",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [K_matrix.patch](tarball://root/attachments/some-uuid/ticket282/K_matrix.patch) by malb created at 2007-10-20 22:46:32
+Attachment [K_matrix.patch](tarball://root/attachments/some-uuid/ticket282/K_matrix.patch) by @malb created at 2007-10-20 22:46:32
 
 
 
@@ -130,7 +130,7 @@ archive/issue_comments_001345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/282",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/282#issuecomment-1345",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_001346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/282",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/282#issuecomment-1346",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_001347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/282",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/282#issuecomment-1347",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_001348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/282",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/282#issuecomment-1348",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_001349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/282",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/282#issuecomment-1349",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

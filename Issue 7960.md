@@ -3,7 +3,7 @@
 archive/issues_007960.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  vdelecroix\n\nOne should be able to do \n\n\n```\nsage: K.<a> = NumberField(x^3-x+1, embedding=-1.32)\nsage: QQBar(a)\n-1.324717957244746?\n```\n\n\nFollowup to #4621\n\nIssue created by migration from https://trac.sagemath.org/ticket/7960\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @videlec\n\nOne should be able to do \n\n\n```\nsage: K.<a> = NumberField(x^3-x+1, embedding=-1.32)\nsage: QQBar(a)\n-1.324717957244746?\n```\n\n\nFollowup to #4621\n\nIssue created by migration from https://trac.sagemath.org/ticket/7960\n\n",
     "created_at": "2010-01-17T00:26:12Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_007960.json:
     "title": "QQbar should accept number field elements with embeddings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7960",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  vdelecroix
+CC:  @videlec
 
 One should be able to do 
 
@@ -49,7 +49,7 @@ archive/issue_comments_069461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7960#issuecomment-69461",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_069462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7960#issuecomment-69462",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_069463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7960#issuecomment-69463",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_069464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7960#issuecomment-69464",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_069465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7960#issuecomment-69465",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_069466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7960#issuecomment-69466",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_069467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7960#issuecomment-69467",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_069468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7960#issuecomment-69468",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_069469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7960#issuecomment-69469",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 

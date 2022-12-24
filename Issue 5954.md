@@ -3,7 +3,7 @@
 archive/issues_005954.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  tornaria mabshoff wstein cremona\n\nKeywords: QuadraticForm\n\nThis patch documents and brings doctest coverage to 100% for all routines in:\n\n```\nquadratic_forms/quadratic_form__genus.py\nquadratic_forms/genera/genus.py\n```\n\n\nIt also rewrote a few signature routines and the rational_diagonal_form() routine which was causing the bug reported in Ticket #5837:\n\n```\nsage: Q2=QuadraticForm(ZZ,3,[ -3,2,0 , 3,-2 , 5 ])\nsage: Q2.rational_diagonal_form()\n\nQuadratic form in 3 variables over Rational Field with coefficients: \n[ -3 0 0 ]\n[ * 10/3 0 ]\n[ * * 47/10 ]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5954\n\n",
+    "body": "Assignee: tbd\n\nCC:  @tornaria mabshoff wstein @JohnCremona\n\nKeywords: QuadraticForm\n\nThis patch documents and brings doctest coverage to 100% for all routines in:\n\n```\nquadratic_forms/quadratic_form__genus.py\nquadratic_forms/genera/genus.py\n```\n\n\nIt also rewrote a few signature routines and the rational_diagonal_form() routine which was causing the bug reported in Ticket #5837:\n\n```\nsage: Q2=QuadraticForm(ZZ,3,[ -3,2,0 , 3,-2 , 5 ])\nsage: Q2.rational_diagonal_form()\n\nQuadratic form in 3 variables over Rational Field with coefficients: \n[ -3 0 0 ]\n[ * 10/3 0 ]\n[ * * 47/10 ]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5954\n\n",
     "created_at": "2009-05-01T05:59:31Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_005954.json:
     "title": "Added documentation/doctests for all quadratic form genus symbol routines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5954",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
 Assignee: tbd
 
-CC:  tornaria mabshoff wstein cremona
+CC:  @tornaria mabshoff wstein @JohnCremona
 
 Keywords: QuadraticForm
 
@@ -55,16 +55,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5954
 archive/issue_comments_047095.json:
 ```json
 {
-    "body": "Attachment [patch-1__QF_genus_symbols__3.4.1.patch](tarball://root/attachments/some-uuid/ticket5954/patch-1__QF_genus_symbols__3.4.1.patch) by jonhanke created at 2009-05-01 05:59:55",
+    "body": "Attachment [patch-1__QF_genus_symbols__3.4.1.patch](tarball://root/attachments/some-uuid/ticket5954/patch-1__QF_genus_symbols__3.4.1.patch) by @jonhanke created at 2009-05-01 05:59:55",
     "created_at": "2009-05-01T05:59:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5954#issuecomment-47095",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
 
-Attachment [patch-1__QF_genus_symbols__3.4.1.patch](tarball://root/attachments/some-uuid/ticket5954/patch-1__QF_genus_symbols__3.4.1.patch) by jonhanke created at 2009-05-01 05:59:55
+Attachment [patch-1__QF_genus_symbols__3.4.1.patch](tarball://root/attachments/some-uuid/ticket5954/patch-1__QF_genus_symbols__3.4.1.patch) by @jonhanke created at 2009-05-01 05:59:55
 
 
 
@@ -78,7 +78,7 @@ archive/issue_comments_047096.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5954#issuecomment-47096",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_047098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5954#issuecomment-47098",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_047100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5954#issuecomment-47100",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_047103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5954#issuecomment-47103",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 

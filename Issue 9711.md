@@ -3,7 +3,7 @@
 archive/issues_009711.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  ppurka jason kini\n\nI hope this traceback from the serverlog on prep.sagenb.org will help me to debug and fix this:\n\n```\n\n2010-08-09 14:11:02-0700 [-] Exception rendering:\n2010-08-09 14:11:02-0700 [-] Unhandled Error\n        Traceback (most recent call last):          File \"/usr/local/sage-prep/local/lib/python/threading.py\", line 497, in __bootstrap\n            self.__bootstrap_inner()\n          File \"/usr/local/sage-prep/local/lib/python/threading.py\", line 525, in __bootstrap_inner            self.run()\n          File \"/usr/local/sage-prep/local/lib/python/threading.py\", line 477, in run\n            self.__target(*self.__args, **self.__kwargs)\n        --- <exception caught here> ---\n          File \"/usr/local/sage-prep/local/lib/python2.6/site-packages/twisted/python/threadpool.py\", line 210, in _worker\n            result = context.call(ctx, function, *args, **kwargs)\n          File \"/usr/local/sage-prep/local/lib/python2.6/site-packages/twisted/python/context.py\", line 59, in callWithContext\n            return self.currentContext().callWithContext(ctx, func, *args, **kw)\n          File \"/usr/local/sage-prep/local/lib/python2.6/site-packages/twisted/python/context.py\", line 37, in callWithContext\n            return func(*args,**kw)\n          File \"/usr/local/sage-prep/sagenb-0.8.p2/src/sagenb/sagenb/notebook/twist.py\", line 1448, in f\n            notebook.export_worksheet(worksheet.filename(), sws_filename)\n          File \"/usr/local/sage-prep/sagenb-0.8.p2/src/sagenb/sagenb/notebook/notebook.py\", line 983, in export_work\nsheet\n            S.export_worksheet(username, id_number, output_filename, title=title)\n          File \"/usr/local/sage-prep/sagenb-0.8.p2/src/sagenb/sagenb/storage/filesystem_storage.py\", line 362, in ex\nport_worksheet\n            open(worksheet_txt,'w').write(old_heading + open(worksheet_html).read())\n        exceptions.UnicodeDecodeError: 'ascii' codec can't decode byte 0xc2 in position 180: ordinal not in range(12\n8)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9711\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @ppurka @jasongrout @kini\n\nI hope this traceback from the serverlog on prep.sagenb.org will help me to debug and fix this:\n\n```\n\n2010-08-09 14:11:02-0700 [-] Exception rendering:\n2010-08-09 14:11:02-0700 [-] Unhandled Error\n        Traceback (most recent call last):          File \"/usr/local/sage-prep/local/lib/python/threading.py\", line 497, in __bootstrap\n            self.__bootstrap_inner()\n          File \"/usr/local/sage-prep/local/lib/python/threading.py\", line 525, in __bootstrap_inner            self.run()\n          File \"/usr/local/sage-prep/local/lib/python/threading.py\", line 477, in run\n            self.__target(*self.__args, **self.__kwargs)\n        --- <exception caught here> ---\n          File \"/usr/local/sage-prep/local/lib/python2.6/site-packages/twisted/python/threadpool.py\", line 210, in _worker\n            result = context.call(ctx, function, *args, **kwargs)\n          File \"/usr/local/sage-prep/local/lib/python2.6/site-packages/twisted/python/context.py\", line 59, in callWithContext\n            return self.currentContext().callWithContext(ctx, func, *args, **kw)\n          File \"/usr/local/sage-prep/local/lib/python2.6/site-packages/twisted/python/context.py\", line 37, in callWithContext\n            return func(*args,**kw)\n          File \"/usr/local/sage-prep/sagenb-0.8.p2/src/sagenb/sagenb/notebook/twist.py\", line 1448, in f\n            notebook.export_worksheet(worksheet.filename(), sws_filename)\n          File \"/usr/local/sage-prep/sagenb-0.8.p2/src/sagenb/sagenb/notebook/notebook.py\", line 983, in export_work\nsheet\n            S.export_worksheet(username, id_number, output_filename, title=title)\n          File \"/usr/local/sage-prep/sagenb-0.8.p2/src/sagenb/sagenb/storage/filesystem_storage.py\", line 362, in ex\nport_worksheet\n            open(worksheet_txt,'w').write(old_heading + open(worksheet_html).read())\n        exceptions.UnicodeDecodeError: 'ascii' codec can't decode byte 0xc2 in position 180: ordinal not in range(12\n8)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9711\n\n",
     "created_at": "2010-08-09T21:20:23Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_009711.json:
     "title": "sagenb notebook -- error when downloading worksheets in some cases involving non-ASCII characters",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9711",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jason, was
 
-CC:  ppurka jason kini
+CC:  @ppurka @jasongrout @kini
 
 I hope this traceback from the serverlog on prep.sagenb.org will help me to debug and fix this:
 
@@ -63,16 +63,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9711
 archive/issue_comments_094644.json:
 ```json
 {
-    "body": "Attachment [trac_9711-unicode-worksheets.patch](tarball://root/attachments/some-uuid/ticket9711/trac_9711-unicode-worksheets.patch) by timdumol created at 2010-08-19 12:57:35\n\nWraps the arguments of the write call in an encoded_str() call.",
+    "body": "Attachment [trac_9711-unicode-worksheets.patch](tarball://root/attachments/some-uuid/ticket9711/trac_9711-unicode-worksheets.patch) by @TimDumol created at 2010-08-19 12:57:35\n\nWraps the arguments of the write call in an encoded_str() call.",
     "created_at": "2010-08-19T12:57:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9711#issuecomment-94644",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_9711-unicode-worksheets.patch](tarball://root/attachments/some-uuid/ticket9711/trac_9711-unicode-worksheets.patch) by timdumol created at 2010-08-19 12:57:35
+Attachment [trac_9711-unicode-worksheets.patch](tarball://root/attachments/some-uuid/ticket9711/trac_9711-unicode-worksheets.patch) by @TimDumol created at 2010-08-19 12:57:35
 
 Wraps the arguments of the write call in an encoded_str() call.
 
@@ -88,7 +88,7 @@ archive/issue_comments_094645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9711#issuecomment-94645",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_094646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9711#issuecomment-94646",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_094647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9711#issuecomment-94647",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_094648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9711#issuecomment-94648",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_094649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9711#issuecomment-94649",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_094650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9711#issuecomment-94650",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_094651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9711#issuecomment-94651",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_094652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9711#issuecomment-94652",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -230,16 +230,16 @@ This is now
 archive/issue_comments_094653.json:
 ```json
 {
-    "body": "Attachment [testdoc3.sws](tarball://root/attachments/some-uuid/ticket9711/testdoc3.sws) by chapoton created at 2017-07-25 07:30:52",
+    "body": "Attachment [testdoc3.sws](tarball://root/attachments/some-uuid/ticket9711/testdoc3.sws) by @fchapoton created at 2017-07-25 07:30:52",
     "created_at": "2017-07-25T07:30:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9711#issuecomment-94653",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [testdoc3.sws](tarball://root/attachments/some-uuid/ticket9711/testdoc3.sws) by chapoton created at 2017-07-25 07:30:52
+Attachment [testdoc3.sws](tarball://root/attachments/some-uuid/ticket9711/testdoc3.sws) by @fchapoton created at 2017-07-25 07:30:52
 
 
 
@@ -253,7 +253,7 @@ archive/issue_comments_094654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9711#issuecomment-94654",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_094655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9711#issuecomment-94655",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

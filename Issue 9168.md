@@ -14,7 +14,7 @@ archive/issues_009168.json:
     "title": "cygwin: ratpoints does not work correctly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9168",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -79,7 +79,7 @@ archive/issue_comments_085725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9168",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9168#issuecomment-85725",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_085726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9168",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9168#issuecomment-85726",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_085727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9168",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9168#issuecomment-85727",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_085728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9168",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9168#issuecomment-85728",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_085732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9168",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9168#issuecomment-85732",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

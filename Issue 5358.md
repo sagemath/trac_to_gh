@@ -14,7 +14,7 @@ archive/issues_005358.json:
     "title": "major bug in missing import of escape in twist.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5358",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5358
 archive/issue_comments_041282.json:
 ```json
 {
-    "body": "Attachment [trac_5358.patch](tarball://root/attachments/some-uuid/ticket5358/trac_5358.patch) by was created at 2009-02-24 14:45:31",
+    "body": "Attachment [trac_5358.patch](tarball://root/attachments/some-uuid/ticket5358/trac_5358.patch) by @williamstein created at 2009-02-24 14:45:31",
     "created_at": "2009-02-24T14:45:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5358#issuecomment-41282",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5358.patch](tarball://root/attachments/some-uuid/ticket5358/trac_5358.patch) by was created at 2009-02-24 14:45:31
+Attachment [trac_5358.patch](tarball://root/attachments/some-uuid/ticket5358/trac_5358.patch) by @williamstein created at 2009-02-24 14:45:31
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_041283.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5358#issuecomment-41283",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_041284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5358#issuecomment-41284",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_041285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5358#issuecomment-41285",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

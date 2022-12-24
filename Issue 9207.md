@@ -3,7 +3,7 @@
 archive/issues_009207.json:
 ```json
 {
-    "body": "Assignee: malb\n\nrandom_element does not work for BooleanPolynomialRing of degree 1 or 2; for example,\n\n\n```\nsage: n = 2\nsage: S = BooleanPolynomialRing(n,'y','lex')\nsage: S.random_element()\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9207\n\n",
+    "body": "Assignee: @malb\n\nrandom_element does not work for BooleanPolynomialRing of degree 1 or 2; for example,\n\n\n```\nsage: n = 2\nsage: S = BooleanPolynomialRing(n,'y','lex')\nsage: S.random_element()\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9207\n\n",
     "created_at": "2010-06-10T20:03:45Z",
     "labels": [
         "commutative algebra",
@@ -17,7 +17,7 @@ archive/issues_009207.json:
     "user": "mariah"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 random_element does not work for BooleanPolynomialRing of degree 1 or 2; for example,
 
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9207
 archive/issue_comments_086172.json:
 ```json
 {
-    "body": "Attachment [trac_9207.patch](tarball://root/attachments/some-uuid/ticket9207/trac_9207.patch) by malb created at 2010-07-12 15:53:34",
+    "body": "Attachment [trac_9207.patch](tarball://root/attachments/some-uuid/ticket9207/trac_9207.patch) by @malb created at 2010-07-12 15:53:34",
     "created_at": "2010-07-12T15:53:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9207",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9207#issuecomment-86172",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_9207.patch](tarball://root/attachments/some-uuid/ticket9207/trac_9207.patch) by malb created at 2010-07-12 15:53:34
+Attachment [trac_9207.patch](tarball://root/attachments/some-uuid/ticket9207/trac_9207.patch) by @malb created at 2010-07-12 15:53:34
 
 
 
@@ -65,7 +65,7 @@ archive/issue_comments_086173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9207",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9207#issuecomment-86173",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_086176.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9207",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9207#issuecomment-86176",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

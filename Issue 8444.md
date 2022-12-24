@@ -14,7 +14,7 @@ archive/issues_008444.json:
     "title": "Memleak in conversion for univariate polynomial rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8444",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 Assignee: tbd
@@ -131,7 +131,7 @@ archive/issue_comments_075915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8444#issuecomment-75915",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -150,16 +150,16 @@ pari.`__call__`."
 archive/issue_comments_075916.json:
 ```json
 {
-    "body": "Attachment [trac_8444.fix_pari_memleak.patch](tarball://root/attachments/some-uuid/ticket8444/trac_8444.fix_pari_memleak.patch) by tornaria created at 2010-03-11 04:33:34\n\nfix memory leak due to dup call to _sig_on",
+    "body": "Attachment [trac_8444.fix_pari_memleak.patch](tarball://root/attachments/some-uuid/ticket8444/trac_8444.fix_pari_memleak.patch) by @tornaria created at 2010-03-11 04:33:34\n\nfix memory leak due to dup call to _sig_on",
     "created_at": "2010-03-11T04:33:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8444#issuecomment-75916",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
-Attachment [trac_8444.fix_pari_memleak.patch](tarball://root/attachments/some-uuid/ticket8444/trac_8444.fix_pari_memleak.patch) by tornaria created at 2010-03-11 04:33:34
+Attachment [trac_8444.fix_pari_memleak.patch](tarball://root/attachments/some-uuid/ticket8444/trac_8444.fix_pari_memleak.patch) by @tornaria created at 2010-03-11 04:33:34
 
 fix memory leak due to dup call to _sig_on
 
@@ -175,7 +175,7 @@ archive/issue_comments_075917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8444#issuecomment-75917",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_075918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8444#issuecomment-75918",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_075919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8444#issuecomment-75919",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_075920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8444#issuecomment-75920",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_075921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8444#issuecomment-75921",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_075922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8444#issuecomment-75922",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -324,7 +324,7 @@ archive/issue_comments_075923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8444#issuecomment-75923",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

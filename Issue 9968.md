@@ -14,7 +14,7 @@ archive/issues_009968.json:
     "title": "Update extension code for mpmath-0.16",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9968",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 Assignee: tbd
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9969
 archive/issue_comments_099880.json:
 ```json
 {
-    "body": "Attachment [14600.patch](tarball://root/attachments/some-uuid/ticket9969/14600.patch) by fredrik.johansson created at 2010-09-22 13:16:39\n\nupdated mpmath Cython extension code",
+    "body": "Attachment [14600.patch](tarball://root/attachments/some-uuid/ticket9969/14600.patch) by @fredrik-johansson created at 2010-09-22 13:16:39\n\nupdated mpmath Cython extension code",
     "created_at": "2010-09-22T13:16:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99880",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
-Attachment [14600.patch](tarball://root/attachments/some-uuid/ticket9969/14600.patch) by fredrik.johansson created at 2010-09-22 13:16:39
+Attachment [14600.patch](tarball://root/attachments/some-uuid/ticket9969/14600.patch) by @fredrik-johansson created at 2010-09-22 13:16:39
 
 updated mpmath Cython extension code
 
@@ -68,7 +68,7 @@ archive/issue_comments_099881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99881",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_099882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99882",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_099883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99883",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_099884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99884",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_099885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99885",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -171,16 +171,16 @@ cdef cy_exp_basecase(mpz_t y, mpz_t x, int prec):
 archive/issue_comments_099886.json:
 ```json
 {
-    "body": "Attachment [docstring-fixes.patch](tarball://root/attachments/some-uuid/ticket9969/docstring-fixes.patch) by fredrik.johansson created at 2010-11-19 14:57:54",
+    "body": "Attachment [docstring-fixes.patch](tarball://root/attachments/some-uuid/ticket9969/docstring-fixes.patch) by @fredrik-johansson created at 2010-11-19 14:57:54",
     "created_at": "2010-11-19T14:57:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99886",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
-Attachment [docstring-fixes.patch](tarball://root/attachments/some-uuid/ticket9969/docstring-fixes.patch) by fredrik.johansson created at 2010-11-19 14:57:54
+Attachment [docstring-fixes.patch](tarball://root/attachments/some-uuid/ticket9969/docstring-fixes.patch) by @fredrik-johansson created at 2010-11-19 14:57:54
 
 
 
@@ -194,7 +194,7 @@ archive/issue_comments_099887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99887",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_099888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99888",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_099889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99889",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_099890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99890",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_099891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99891",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_099892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99892",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_099893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99893",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_099894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99894",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -344,7 +344,7 @@ archive/issue_comments_099895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99895",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -364,7 +364,7 @@ archive/issue_comments_099896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99896",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -382,7 +382,7 @@ archive/issue_comments_099897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99897",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -405,7 +405,7 @@ archive/issue_comments_099898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99898",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -418,16 +418,16 @@ Fixed patch that should apply in sage-4.6.1
 archive/issue_comments_099899.json:
 ```json
 {
-    "body": "Attachment [mpmath_update_fixed_4.6.1.patch](tarball://root/attachments/some-uuid/ticket9969/mpmath_update_fixed_4.6.1.patch) by fredrik.johansson created at 2011-02-18 08:35:16\n\nPatch that fixes some mpmath test failures due to use of the truediv operator",
+    "body": "Attachment [mpmath_update_fixed_4.6.1.patch](tarball://root/attachments/some-uuid/ticket9969/mpmath_update_fixed_4.6.1.patch) by @fredrik-johansson created at 2011-02-18 08:35:16\n\nPatch that fixes some mpmath test failures due to use of the truediv operator",
     "created_at": "2011-02-18T08:35:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99899",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
-Attachment [mpmath_update_fixed_4.6.1.patch](tarball://root/attachments/some-uuid/ticket9969/mpmath_update_fixed_4.6.1.patch) by fredrik.johansson created at 2011-02-18 08:35:16
+Attachment [mpmath_update_fixed_4.6.1.patch](tarball://root/attachments/some-uuid/ticket9969/mpmath_update_fixed_4.6.1.patch) by @fredrik-johansson created at 2011-02-18 08:35:16
 
 Patch that fixes some mpmath test failures due to use of the truediv operator
 
@@ -438,16 +438,16 @@ Patch that fixes some mpmath test failures due to use of the truediv operator
 archive/issue_comments_099900.json:
 ```json
 {
-    "body": "Attachment [truediv_fix.patch](tarball://root/attachments/some-uuid/ticket9969/truediv_fix.patch) by fredrik.johansson created at 2011-02-18 08:36:42",
+    "body": "Attachment [truediv_fix.patch](tarball://root/attachments/some-uuid/ticket9969/truediv_fix.patch) by @fredrik-johansson created at 2011-02-18 08:36:42",
     "created_at": "2011-02-18T08:36:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99900",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
-Attachment [truediv_fix.patch](tarball://root/attachments/some-uuid/ticket9969/truediv_fix.patch) by fredrik.johansson created at 2011-02-18 08:36:42
+Attachment [truediv_fix.patch](tarball://root/attachments/some-uuid/ticket9969/truediv_fix.patch) by @fredrik-johansson created at 2011-02-18 08:36:42
 
 
 
@@ -461,7 +461,7 @@ archive/issue_comments_099901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99901",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -479,7 +479,7 @@ archive/issue_comments_099902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99902",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -497,7 +497,7 @@ archive/issue_comments_099903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99903",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -518,7 +518,7 @@ archive/issue_comments_099904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99904",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -553,7 +553,7 @@ archive/issue_comments_099905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99905",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -573,7 +573,7 @@ archive/issue_comments_099906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99906",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -591,7 +591,7 @@ archive/issue_comments_099907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99907",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -611,7 +611,7 @@ archive/issue_comments_099908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99908",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -727,7 +727,7 @@ archive/issue_comments_099909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99909",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -745,7 +745,7 @@ archive/issue_comments_099910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99910",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -767,7 +767,7 @@ archive/issue_comments_099911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99911",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -799,16 +799,16 @@ I will post a patch making this the default. Voice any opposition then.
 archive/issue_comments_099912.json:
 ```json
 {
-    "body": "Attachment [mpmath-deps.patch](tarball://root/attachments/some-uuid/ticket9969/mpmath-deps.patch) by fbissey created at 2011-02-21 21:19:24\n\npatch to deps to make mpmath depend on matplotlib",
+    "body": "Attachment [mpmath-deps.patch](tarball://root/attachments/some-uuid/ticket9969/mpmath-deps.patch) by @kiwifb created at 2011-02-21 21:19:24\n\npatch to deps to make mpmath depend on matplotlib",
     "created_at": "2011-02-21T21:19:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99912",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [mpmath-deps.patch](tarball://root/attachments/some-uuid/ticket9969/mpmath-deps.patch) by fbissey created at 2011-02-21 21:19:24
+Attachment [mpmath-deps.patch](tarball://root/attachments/some-uuid/ticket9969/mpmath-deps.patch) by @kiwifb created at 2011-02-21 21:19:24
 
 patch to deps to make mpmath depend on matplotlib
 
@@ -824,7 +824,7 @@ archive/issue_comments_099913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99913",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -842,7 +842,7 @@ archive/issue_comments_099914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99914",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -860,7 +860,7 @@ archive/issue_comments_099915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99915",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -878,7 +878,7 @@ archive/issue_comments_099916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99916",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -896,7 +896,7 @@ archive/issue_comments_099917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99917",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -914,7 +914,7 @@ archive/issue_comments_099918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99918",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -932,7 +932,7 @@ archive/issue_comments_099919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99919",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -950,7 +950,7 @@ archive/issue_comments_099920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99920",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -968,7 +968,7 @@ archive/issue_comments_099921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99921",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -986,7 +986,7 @@ archive/issue_comments_099922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99922",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1004,7 +1004,7 @@ archive/issue_comments_099923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99923",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1022,7 +1022,7 @@ archive/issue_comments_099924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99924",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1040,7 +1040,7 @@ archive/issue_comments_099925.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99925",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1058,7 +1058,7 @@ archive/issue_comments_099926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99926",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -1076,7 +1076,7 @@ archive/issue_comments_099927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99927",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1097,7 +1097,7 @@ archive/issue_comments_099928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99928",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1115,7 +1115,7 @@ archive/issue_comments_099929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9968#issuecomment-99929",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

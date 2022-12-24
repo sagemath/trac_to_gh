@@ -140,7 +140,7 @@ archive/issue_comments_038137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5000",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5000#issuecomment-38137",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

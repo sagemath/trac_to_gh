@@ -3,7 +3,7 @@
 archive/issues_008710.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  jhpalmieri alexghitza\n\nDoctests introduced in #4756 return the negative of certain eigenvectors on certain hardware.\n\nSee initital discussion at \n\nhttp://groups.google.com/group/sage-release/browse_thread/thread/9136569bd1c67f6\n\nIssue created by migration from https://trac.sagemath.org/ticket/8710\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @jhpalmieri alexghitza\n\nDoctests introduced in #4756 return the negative of certain eigenvectors on certain hardware.\n\nSee initital discussion at \n\nhttp://groups.google.com/group/sage-release/browse_thread/thread/9136569bd1c67f6\n\nIssue created by migration from https://trac.sagemath.org/ticket/8710\n\n",
     "created_at": "2010-04-18T03:30:23Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_008710.json:
     "title": "eigenmatrix_right returns inconsistent results for eigenvectors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8710",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 Assignee: jason, was
 
-CC:  jhpalmieri alexghitza
+CC:  @jhpalmieri alexghitza
 
 Doctests introduced in #4756 return the negative of certain eigenvectors on certain hardware.
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8710
 archive/issue_comments_079476.json:
 ```json
 {
-    "body": "Attachment [trac_8710-eigenvector-doctest.patch](tarball://root/attachments/some-uuid/ticket8710/trac_8710-eigenvector-doctest.patch) by rbeezer created at 2010-04-19 04:48:19",
+    "body": "Attachment [trac_8710-eigenvector-doctest.patch](tarball://root/attachments/some-uuid/ticket8710/trac_8710-eigenvector-doctest.patch) by @rbeezer created at 2010-04-19 04:48:19",
     "created_at": "2010-04-19T04:48:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8710#issuecomment-79476",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_8710-eigenvector-doctest.patch](tarball://root/attachments/some-uuid/ticket8710/trac_8710-eigenvector-doctest.patch) by rbeezer created at 2010-04-19 04:48:19
+Attachment [trac_8710-eigenvector-doctest.patch](tarball://root/attachments/some-uuid/ticket8710/trac_8710-eigenvector-doctest.patch) by @rbeezer created at 2010-04-19 04:48:19
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_079477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8710#issuecomment-79477",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_079478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8710#issuecomment-79478",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_079479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8710#issuecomment-79479",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_079480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8710#issuecomment-79480",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_079481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8710#issuecomment-79481",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_079482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8710#issuecomment-79482",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_079483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8710#issuecomment-79483",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_079484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8710#issuecomment-79484",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

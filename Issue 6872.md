@@ -3,7 +3,7 @@
 archive/issues_006872.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  malb\n\nThis is a follow-up to #6596 to fix a typo introduced in a docstring.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6872\n\n",
+    "body": "Assignee: tba\n\nCC:  @malb\n\nThis is a follow-up to #6596 to fix a typo introduced in a docstring.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6872\n\n",
     "created_at": "2009-09-03T05:28:35Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_006872.json:
 ```
 Assignee: tba
 
-CC:  malb
+CC:  @malb
 
 This is a follow-up to #6596 to fix a typo introduced in a docstring.
 
@@ -75,7 +75,7 @@ archive/issue_comments_056742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6872#issuecomment-56742",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_056746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6872#issuecomment-56746",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

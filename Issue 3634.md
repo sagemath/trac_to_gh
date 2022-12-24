@@ -14,7 +14,7 @@ archive/issues_003634.json:
     "title": "minpoly still slow for elements of finte fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3634",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tbd
@@ -35,16 +35,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3634
 archive/issue_comments_025704.json:
 ```json
 {
-    "body": "Attachment [3634-gf2e-minpoly.patch](tarball://root/attachments/some-uuid/ticket3634/3634-gf2e-minpoly.patch) by robertwb created at 2008-07-10 18:07:41\n\n\n```\nsage: sage: k.<a> = GF(2^500)\n\nsage: sage: time g = k.random_element()\nCPU times: user 0.07 s, sys: 0.00 s, total: 0.07 s\nWall time: 0.07 s\n\nsage: time f = g.minpoly()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.00 s\n\nsage: f(g)\n 0\nsage: timeit(\"g.minpoly()\")\n125 loops, best of 3: 4.03 ms per loop\n```\n",
+    "body": "Attachment [3634-gf2e-minpoly.patch](tarball://root/attachments/some-uuid/ticket3634/3634-gf2e-minpoly.patch) by @robertwb created at 2008-07-10 18:07:41\n\n\n```\nsage: sage: k.<a> = GF(2^500)\n\nsage: sage: time g = k.random_element()\nCPU times: user 0.07 s, sys: 0.00 s, total: 0.07 s\nWall time: 0.07 s\n\nsage: time f = g.minpoly()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.00 s\n\nsage: f(g)\n 0\nsage: timeit(\"g.minpoly()\")\n125 loops, best of 3: 4.03 ms per loop\n```\n",
     "created_at": "2008-07-10T18:07:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3634#issuecomment-25704",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3634-gf2e-minpoly.patch](tarball://root/attachments/some-uuid/ticket3634/3634-gf2e-minpoly.patch) by robertwb created at 2008-07-10 18:07:41
+Attachment [3634-gf2e-minpoly.patch](tarball://root/attachments/some-uuid/ticket3634/3634-gf2e-minpoly.patch) by @robertwb created at 2008-07-10 18:07:41
 
 
 ```
@@ -72,16 +72,16 @@ sage: timeit("g.minpoly()")
 archive/issue_comments_025705.json:
 ```json
 {
-    "body": "Attachment [sage-3634-referee.patch](tarball://root/attachments/some-uuid/ticket3634/sage-3634-referee.patch) by was created at 2008-07-10 23:21:26\n\nadd fast charpoly",
+    "body": "Attachment [sage-3634-referee.patch](tarball://root/attachments/some-uuid/ticket3634/sage-3634-referee.patch) by @williamstein created at 2008-07-10 23:21:26\n\nadd fast charpoly",
     "created_at": "2008-07-10T23:21:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3634#issuecomment-25705",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3634-referee.patch](tarball://root/attachments/some-uuid/ticket3634/sage-3634-referee.patch) by was created at 2008-07-10 23:21:26
+Attachment [sage-3634-referee.patch](tarball://root/attachments/some-uuid/ticket3634/sage-3634-referee.patch) by @williamstein created at 2008-07-10 23:21:26
 
 add fast charpoly
 
@@ -97,7 +97,7 @@ archive/issue_comments_025706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3634#issuecomment-25706",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_025707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3634#issuecomment-25707",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_025709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3634#issuecomment-25709",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005878.json:
 ```json
 {
-    "body": "Assignee: saliola\n\nCC:  sage-combinat\n\nKeywords: sage-combinat\n\nIt would be great to be able to construct the matrices for the irreducible representations of the symmetric group.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5878\n\n",
+    "body": "Assignee: @saliola\n\nCC:  sage-combinat\n\nKeywords: sage-combinat\n\nIt would be great to be able to construct the matrices for the irreducible representations of the symmetric group.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5878\n\n",
     "created_at": "2009-04-23T16:57:53Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_005878.json:
     "title": "Add support for constructing irreducible matrix representations of the symmetric group",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5878",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
-Assignee: saliola
+Assignee: @saliola
 
 CC:  sage-combinat
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5878
 archive/issue_comments_046437.json:
 ```json
 {
-    "body": "Attachment [trac_5878.patch](tarball://root/attachments/some-uuid/ticket5878/trac_5878.patch) by saliola created at 2009-04-23 17:05:46\n\nThe patch adds functionality to construct Young's seminormal and orthogonal representations as well as the Specht representation. This is done via Yang-Baxter graphs, so the patch implements that as well.",
+    "body": "Attachment [trac_5878.patch](tarball://root/attachments/some-uuid/ticket5878/trac_5878.patch) by @saliola created at 2009-04-23 17:05:46\n\nThe patch adds functionality to construct Young's seminormal and orthogonal representations as well as the Specht representation. This is done via Yang-Baxter graphs, so the patch implements that as well.",
     "created_at": "2009-04-23T17:05:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5878",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5878#issuecomment-46437",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_5878.patch](tarball://root/attachments/some-uuid/ticket5878/trac_5878.patch) by saliola created at 2009-04-23 17:05:46
+Attachment [trac_5878.patch](tarball://root/attachments/some-uuid/ticket5878/trac_5878.patch) by @saliola created at 2009-04-23 17:05:46
 
 The patch adds functionality to construct Young's seminormal and orthogonal representations as well as the Specht representation. This is done via Yang-Baxter graphs, so the patch implements that as well.
 
@@ -61,7 +61,7 @@ archive/issue_comments_046438.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5878",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5878#issuecomment-46438",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_046440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5878",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5878#issuecomment-46440",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_046441.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5878",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5878#issuecomment-46441",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -169,16 +169,16 @@ Changing status from new to assigned.
 archive/issue_comments_046442.json:
 ```json
 {
-    "body": "Changing assignee from saliola to mhansen.",
+    "body": "Changing assignee from @saliola to @mwhansen.",
     "created_at": "2009-06-04T18:48:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5878",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5878#issuecomment-46442",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from saliola to mhansen.
+Changing assignee from @saliola to @mwhansen.
 
 
 
@@ -187,16 +187,16 @@ Changing assignee from saliola to mhansen.
 archive/issue_comments_046443.json:
 ```json
 {
-    "body": "Attachment [trac_5878-review.patch](tarball://root/attachments/some-uuid/ticket5878/trac_5878-review.patch) by mhansen created at 2009-06-04 18:48:09\n\nThings look good to me after I've applied my reviewer patch which takes care of the issues with the upgrade to 4.0.\n\nFranco, can you just check over these?",
+    "body": "Attachment [trac_5878-review.patch](tarball://root/attachments/some-uuid/ticket5878/trac_5878-review.patch) by @mwhansen created at 2009-06-04 18:48:09\n\nThings look good to me after I've applied my reviewer patch which takes care of the issues with the upgrade to 4.0.\n\nFranco, can you just check over these?",
     "created_at": "2009-06-04T18:48:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5878",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5878#issuecomment-46443",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5878-review.patch](tarball://root/attachments/some-uuid/ticket5878/trac_5878-review.patch) by mhansen created at 2009-06-04 18:48:09
+Attachment [trac_5878-review.patch](tarball://root/attachments/some-uuid/ticket5878/trac_5878-review.patch) by @mwhansen created at 2009-06-04 18:48:09
 
 Things look good to me after I've applied my reviewer patch which takes care of the issues with the upgrade to 4.0.
 
@@ -214,7 +214,7 @@ archive/issue_comments_046444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5878",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5878#issuecomment-46444",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_046446.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5878",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5878#issuecomment-46446",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_046448.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5878",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5878#issuecomment-46448",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

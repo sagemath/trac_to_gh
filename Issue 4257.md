@@ -3,7 +3,7 @@
 archive/issues_004257.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  singular\n\nThis now works:\n\n\n```\nsage: A = random_matrix(ZZ,3,3); A\n[ -8   2   0]\n[  0   1  -1]\n[  2   1 -95]\nsage: As = singular(A); As\n-8     2     0\n 0     1    -1\n 2     1   -95\nsage: As._sage_()\n[ -8   2   0]\n[  0   1  -1]\n[  2   1 -95]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4257\n\n",
+    "body": "Assignee: @malb\n\nCC:  singular\n\nThis now works:\n\n\n```\nsage: A = random_matrix(ZZ,3,3); A\n[ -8   2   0]\n[  0   1  -1]\n[  2   1 -95]\nsage: As = singular(A); As\n-8     2     0\n 0     1    -1\n 2     1   -95\nsage: As._sage_()\n[ -8   2   0]\n[  0   1  -1]\n[  2   1 -95]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4257\n\n",
     "created_at": "2008-10-09T21:54:29Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_004257.json:
     "title": "[with patch, needs review] support for Singular's  'intmat' and 'intvec'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4257",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 CC:  singular
 
@@ -51,16 +51,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4257
 archive/issue_comments_030983.json:
 ```json
 {
-    "body": "Attachment [singular_intmat.patch](tarball://root/attachments/some-uuid/ticket4257/singular_intmat.patch) by malb created at 2008-10-10 08:46:24",
+    "body": "Attachment [singular_intmat.patch](tarball://root/attachments/some-uuid/ticket4257/singular_intmat.patch) by @malb created at 2008-10-10 08:46:24",
     "created_at": "2008-10-10T08:46:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4257#issuecomment-30983",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [singular_intmat.patch](tarball://root/attachments/some-uuid/ticket4257/singular_intmat.patch) by malb created at 2008-10-10 08:46:24
+Attachment [singular_intmat.patch](tarball://root/attachments/some-uuid/ticket4257/singular_intmat.patch) by @malb created at 2008-10-10 08:46:24
 
 
 
@@ -74,7 +74,7 @@ archive/issue_comments_030984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4257#issuecomment-30984",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

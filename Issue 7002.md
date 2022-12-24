@@ -3,7 +3,7 @@
 archive/issues_007002.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  mvngu kcrisman\n\n#auto was the old way, %auto was the new way.  Plus, we should say % directives need to happen above the input. \n\nTo see the problem, click the \"Help\" in the upper right corner.  The second row is:\n\nAny cells with \"#auto\" in the input is automatically evaluated when the worksheet is first opened.\n\nThis should be changed to:\n\nAny cells with \"%auto\" above the input is automatically evaluated when the worksheet is first opened.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7002\n\n",
+    "body": "Assignee: tba\n\nCC:  mvngu @kcrisman\n\n#auto was the old way, %auto was the new way.  Plus, we should say % directives need to happen above the input. \n\nTo see the problem, click the \"Help\" in the upper right corner.  The second row is:\n\nAny cells with \"#auto\" in the input is automatically evaluated when the worksheet is first opened.\n\nThis should be changed to:\n\nAny cells with \"%auto\" above the input is automatically evaluated when the worksheet is first opened.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7002\n\n",
     "created_at": "2009-09-23T13:29:00Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_007002.json:
     "title": "Notebook documentation says to use \"#auto\", but should be \"%auto\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7002",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: tba
 
-CC:  mvngu kcrisman
+CC:  mvngu @kcrisman
 
 #auto was the old way, %auto was the new way.  Plus, we should say % directives need to happen above the input. 
 
@@ -47,7 +47,7 @@ archive/issue_comments_057886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7002#issuecomment-57886",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_057887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7002#issuecomment-57887",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -82,16 +82,16 @@ What I am suggesting is just that the documentation be changed to reflect the ne
 archive/issue_comments_057888.json:
 ```json
 {
-    "body": "Attachment [trac-7002-autoevaluate.patch](tarball://root/attachments/some-uuid/ticket7002/trac-7002-autoevaluate.patch) by jason created at 2009-09-23 16:32:25",
+    "body": "Attachment [trac-7002-autoevaluate.patch](tarball://root/attachments/some-uuid/ticket7002/trac-7002-autoevaluate.patch) by @jasongrout created at 2009-09-23 16:32:25",
     "created_at": "2009-09-23T16:32:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7002#issuecomment-57888",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-7002-autoevaluate.patch](tarball://root/attachments/some-uuid/ticket7002/trac-7002-autoevaluate.patch) by jason created at 2009-09-23 16:32:25
+Attachment [trac-7002-autoevaluate.patch](tarball://root/attachments/some-uuid/ticket7002/trac-7002-autoevaluate.patch) by @jasongrout created at 2009-09-23 16:32:25
 
 
 
@@ -105,7 +105,7 @@ archive/issue_comments_057889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7002#issuecomment-57889",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_057890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7002#issuecomment-57890",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_057891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7002#issuecomment-57891",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -163,16 +163,16 @@ Based on 4.1.2.alpha2
 archive/issue_comments_057892.json:
 ```json
 {
-    "body": "Attachment [trac-7002-autoevaluate-rebase.patch](tarball://root/attachments/some-uuid/ticket7002/trac-7002-autoevaluate-rebase.patch) by kcrisman created at 2009-09-23 17:49:23\n\nPositive review, since I just tested that %auto still works (as well as #auto); apply rebase patch only.",
+    "body": "Attachment [trac-7002-autoevaluate-rebase.patch](tarball://root/attachments/some-uuid/ticket7002/trac-7002-autoevaluate-rebase.patch) by @kcrisman created at 2009-09-23 17:49:23\n\nPositive review, since I just tested that %auto still works (as well as #auto); apply rebase patch only.",
     "created_at": "2009-09-23T17:49:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7002#issuecomment-57892",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac-7002-autoevaluate-rebase.patch](tarball://root/attachments/some-uuid/ticket7002/trac-7002-autoevaluate-rebase.patch) by kcrisman created at 2009-09-23 17:49:23
+Attachment [trac-7002-autoevaluate-rebase.patch](tarball://root/attachments/some-uuid/ticket7002/trac-7002-autoevaluate-rebase.patch) by @kcrisman created at 2009-09-23 17:49:23
 
 Positive review, since I just tested that %auto still works (as well as #auto); apply rebase patch only.
 
@@ -242,7 +242,7 @@ archive/issue_comments_057896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7002#issuecomment-57896",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -255,16 +255,16 @@ I just checked the help in 4.6.2 and it appears that these changes do *not* appe
 archive/issue_comments_057897.json:
 ```json
 {
-    "body": "Attachment [7002_rebase_4.7.patch](tarball://root/attachments/some-uuid/ticket7002/7002_rebase_4.7.patch) by jdemeyer created at 2011-05-31 08:50:16",
+    "body": "Attachment [7002_rebase_4.7.patch](tarball://root/attachments/some-uuid/ticket7002/7002_rebase_4.7.patch) by @jdemeyer created at 2011-05-31 08:50:16",
     "created_at": "2011-05-31T08:50:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7002#issuecomment-57897",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [7002_rebase_4.7.patch](tarball://root/attachments/some-uuid/ticket7002/7002_rebase_4.7.patch) by jdemeyer created at 2011-05-31 08:50:16
+Attachment [7002_rebase_4.7.patch](tarball://root/attachments/some-uuid/ticket7002/7002_rebase_4.7.patch) by @jdemeyer created at 2011-05-31 08:50:16
 
 
 
@@ -278,7 +278,7 @@ archive/issue_comments_057898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7002#issuecomment-57898",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_057899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7002#issuecomment-57899",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

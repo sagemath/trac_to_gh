@@ -14,7 +14,7 @@ archive/issues_008753.json:
     "title": "get pynac to build with gcc-4.5.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8753",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: GeorgSWeber
@@ -55,7 +55,7 @@ archive/issue_comments_080075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8753#issuecomment-80075",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_080076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8753#issuecomment-80076",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_080077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8753#issuecomment-80077",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_080078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8753#issuecomment-80078",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_080079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8753#issuecomment-80079",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_080080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8753#issuecomment-80080",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

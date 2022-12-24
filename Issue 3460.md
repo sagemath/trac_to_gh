@@ -14,7 +14,7 @@ archive/issues_003460.json:
     "title": "[with patch, needs review] add power_basis() to number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3460",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 Assignee: tbd
@@ -154,16 +154,16 @@ Michael
 archive/issue_comments_024407.json:
 ```json
 {
-    "body": "Attachment [3460-ncalexan-nf-power-basis-2.patch](tarball://root/attachments/some-uuid/ticket3460/3460-ncalexan-nf-power-basis-2.patch) by ncalexan created at 2008-08-10 06:41:12\n\nThis addresses the comments about the docstring and adds the desired function to QQ.\n\nIt also addresses a bug in residue_field that I just noticed... sorry for the crosspost.",
+    "body": "Attachment [3460-ncalexan-nf-power-basis-2.patch](tarball://root/attachments/some-uuid/ticket3460/3460-ncalexan-nf-power-basis-2.patch) by @ncalexan created at 2008-08-10 06:41:12\n\nThis addresses the comments about the docstring and adds the desired function to QQ.\n\nIt also addresses a bug in residue_field that I just noticed... sorry for the crosspost.",
     "created_at": "2008-08-10T06:41:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3460#issuecomment-24407",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [3460-ncalexan-nf-power-basis-2.patch](tarball://root/attachments/some-uuid/ticket3460/3460-ncalexan-nf-power-basis-2.patch) by ncalexan created at 2008-08-10 06:41:12
+Attachment [3460-ncalexan-nf-power-basis-2.patch](tarball://root/attachments/some-uuid/ticket3460/3460-ncalexan-nf-power-basis-2.patch) by @ncalexan created at 2008-08-10 06:41:12
 
 This addresses the comments about the docstring and adds the desired function to QQ.
 
@@ -176,16 +176,16 @@ It also addresses a bug in residue_field that I just noticed... sorry for the cr
 archive/issue_comments_024408.json:
 ```json
 {
-    "body": "Attachment [3460-ncalexan-nf-power-basis-3.patch](tarball://root/attachments/some-uuid/ticket3460/3460-ncalexan-nf-power-basis-3.patch) by ncalexan created at 2008-08-10 18:22:12\n\nFinal patch fixes a one word type in the doctest :)\n\nHopefully it's good now.  All patches are \"from scratch\", i.e. apply only the last patch.",
+    "body": "Attachment [3460-ncalexan-nf-power-basis-3.patch](tarball://root/attachments/some-uuid/ticket3460/3460-ncalexan-nf-power-basis-3.patch) by @ncalexan created at 2008-08-10 18:22:12\n\nFinal patch fixes a one word type in the doctest :)\n\nHopefully it's good now.  All patches are \"from scratch\", i.e. apply only the last patch.",
     "created_at": "2008-08-10T18:22:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3460#issuecomment-24408",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [3460-ncalexan-nf-power-basis-3.patch](tarball://root/attachments/some-uuid/ticket3460/3460-ncalexan-nf-power-basis-3.patch) by ncalexan created at 2008-08-10 18:22:12
+Attachment [3460-ncalexan-nf-power-basis-3.patch](tarball://root/attachments/some-uuid/ticket3460/3460-ncalexan-nf-power-basis-3.patch) by @ncalexan created at 2008-08-10 18:22:12
 
 Final patch fixes a one word type in the doctest :)
 
@@ -203,7 +203,7 @@ archive/issue_comments_024409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3460#issuecomment-24409",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

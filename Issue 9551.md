@@ -3,7 +3,7 @@
 archive/issues_009551.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  alexanderdreyer leif\n\nAs reported here:\n\nhttp://groups.google.co.uk/group/sage-devel/browse_thread/thread/60d384d785d9f034/9cdf5d6fbecf23d0?lnk=gst&q=write+kirkby#9cdf5d6fbecf23d0\n\nSage tried to write /usr/lib/python2.4/site-packages/ on t2.math.washinton.edu'. (Solaris ships with Python 2.4.4 in 2.4.4). \n\nThis was on the 4.5.alpha0 build, though I'm not aware of any one else raising this issue, so it's quite possible nothing has been done to fix the bug in the latest build (4.5 as I write). \n\nSince I'm not stupid enough to build Sage as root, this was not a problem, and just resulted in a failed build. But I'm well aware many people do build Sage as root, in which case this could be very serious. (I guess one could argue they got what they deserved). \n\nAnother ticket I created (#9209) shows that Sage can fail to build if a user has a local installation of python, but if one makes that installation unreadable, so Sage will build. \n\nAnother, possibly relevant ticket is #9536\n\nI personally do not have the python skills to sort this out, but I do believe it is potentially a serious problem, as a user can mess up their system by writing to system directories. \n\n```\ncopying rpy/rinterface/tests/test_SexpVector.py ->\nbuild/lib.solaris-2.10-sun4v-2.4/rpy2/rinterface/tests\ncopying rpy/rinterface/tests/test_SexpEnvironment.py ->\nbuild/lib.solaris-2.10-sun4v-2.4/rpy2/rinterface/tests\ncopying rpy/rinterface/tests/__init__.py ->\nbuild/lib.solaris-2.10-sun4v-2.4/rpy2/rinterface/tests\ncopying rpy/rinterface/tests/test_SexpClosure.py ->\nbuild/lib.solaris-2.10-sun4v-2.4/rpy2/rinterface/tests\ncopying rpy/rinterface/tests/test_EmbeddedR.py ->\nbuild/lib.solaris-2.10-sun4v-2.4/rpy2/rinterface/tests\ncopying rpy/rinterface/tests/test_SexpVectorNumeric.py ->\nbuild/lib.solaris-2.10-sun4v-2.4/rpy2/rinterface/tests\nrunning build_ext\nbuilding 'rpy2.rinterface.rinterface' extension\ncreating build/temp.solaris-2.10-sun4v-2.4\ncreating build/temp.solaris-2.10-sun4v-2.4/rpy\ncreating build/temp.solaris-2.10-sun4v-2.4/rpy/rinterface\n/usr/lib/python2.4/pycc -DNDEBUG\n-I/rootpool2/local/kirkby/sage-4.5.alpha0/local/include\n-L/rootpool2/local/kirkby/sage-4.5.alpha0/local/lib/ -O2 -g -m64\n-I/rootpool2/local/kirkby/sage-4.5.alpha0/local/include -DR_INTERFACE_PTRS=1\n-DCSTACK_DEFNS=1 -DRIF_HAS_RSIGHAND=1\n-I/rootpool2/local/kirkby/sage-4.5.alpha0/local/lib/R/include -Irpy/rinterface\n-I/usr/include/python2.4 -c rpy/rinterface/array.c -o\nbuild/temp.solaris-2.10-sun4v-2.4/rpy/rinterface/array.o\n/usr/lib/python2.4/pycc -DNDEBUG\n-I/rootpool2/local/kirkby/sage-4.5.alpha0/local/include\n-L/rootpool2/local/kirkby/sage-4.5.alpha0/local/lib/ -O2 -g -m64\n-I/rootpool2/local/kirkby/sage-4.5.alpha0/local/include -DR_INTERFACE_PTRS=1\n-DCSTACK_DEFNS=1 -DRIF_HAS_RSIGHAND=1\n-I/rootpool2/local/kirkby/sage-4.5.alpha0/local/lib/R/include -Irpy/rinterface\n-I/usr/include/python2.4 -c rpy/rinterface/r_utils.c -o\nbuild/temp.solaris-2.10-sun4v-2.4/rpy/rinterface/r_utils.o\n/usr/lib/python2.4/pycc -DNDEBUG\n-I/rootpool2/local/kirkby/sage-4.5.alpha0/local/include\n-L/rootpool2/local/kirkby/sage-4.5.alpha0/local/lib/ -O2 -g -m64\n-I/rootpool2/local/kirkby/sage-4.5.alpha0/local/include -DR_INTERFACE_PTRS=1\n-DCSTACK_DEFNS=1 -DRIF_HAS_RSIGHAND=1\n-I/rootpool2/local/kirkby/sage-4.5.alpha0/local/lib/R/include -Irpy/rinterface\n-I/usr/include/python2.4 -c rpy/rinterface/rinterface.c -o\nbuild/temp.solaris-2.10-sun4v-2.4/rpy/rinterface/rinterface.o\n/usr/lib/python2.4/pycc -G -L/rootpool2/local/kirkby/sage-4.5.alpha0/local/lib/\n-m64 -I/rootpool2/local/kirkby/sage-4.5.alpha0/local/include\n-L/rootpool2/local/kirkby/sage-4.5.alpha0/local/lib/ -O2 -g -m64\n-I/rootpool2/local/kirkby/sage-4.5.alpha0/local/include\nbuild/temp.solaris-2.10-sun4v-2.4/rpy/rinterface/array.o\nbuild/temp.solaris-2.10-sun4v-2.4/rpy/rinterface/r_utils.o\nbuild/temp.solaris-2.10-sun4v-2.4/rpy/rinterface/rinterface.o\n-L/rootpool2/local/kirkby/sage-4.5.alpha0/local/lib/R/lib\n-L/rootpool2/local/kirkby/sage-4.5.alpha0/local/lib/R/modules\n-R/rootpool2/local/kirkby/sage-4.5.alpha0/local/lib/R/lib\n-R/rootpool2/local/kirkby/sage-4.5.alpha0/local/lib/R/modules -lR -o\nbuild/lib.solaris-2.10-sun4v-2.4/rpy2/rinterface/rinterface.so\n-L/rootpool2/local/kirkby/sage-4.5.alpha0/local/lib/R//lib -lR -llapack -lblas\nrunning install_lib\ncreating /usr/lib/python2.4/site-packages/rpy2\nerror: could not create '/usr/lib/python2.4/site-packages/rpy2': Permission denied\nError building RPY -- Python interface to R. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9551\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  alexanderdreyer @nexttime\n\nAs reported here:\n\nhttp://groups.google.co.uk/group/sage-devel/browse_thread/thread/60d384d785d9f034/9cdf5d6fbecf23d0?lnk=gst&q=write+kirkby#9cdf5d6fbecf23d0\n\nSage tried to write /usr/lib/python2.4/site-packages/ on t2.math.washinton.edu'. (Solaris ships with Python 2.4.4 in 2.4.4). \n\nThis was on the 4.5.alpha0 build, though I'm not aware of any one else raising this issue, so it's quite possible nothing has been done to fix the bug in the latest build (4.5 as I write). \n\nSince I'm not stupid enough to build Sage as root, this was not a problem, and just resulted in a failed build. But I'm well aware many people do build Sage as root, in which case this could be very serious. (I guess one could argue they got what they deserved). \n\nAnother ticket I created (#9209) shows that Sage can fail to build if a user has a local installation of python, but if one makes that installation unreadable, so Sage will build. \n\nAnother, possibly relevant ticket is #9536\n\nI personally do not have the python skills to sort this out, but I do believe it is potentially a serious problem, as a user can mess up their system by writing to system directories. \n\n```\ncopying rpy/rinterface/tests/test_SexpVector.py ->\nbuild/lib.solaris-2.10-sun4v-2.4/rpy2/rinterface/tests\ncopying rpy/rinterface/tests/test_SexpEnvironment.py ->\nbuild/lib.solaris-2.10-sun4v-2.4/rpy2/rinterface/tests\ncopying rpy/rinterface/tests/__init__.py ->\nbuild/lib.solaris-2.10-sun4v-2.4/rpy2/rinterface/tests\ncopying rpy/rinterface/tests/test_SexpClosure.py ->\nbuild/lib.solaris-2.10-sun4v-2.4/rpy2/rinterface/tests\ncopying rpy/rinterface/tests/test_EmbeddedR.py ->\nbuild/lib.solaris-2.10-sun4v-2.4/rpy2/rinterface/tests\ncopying rpy/rinterface/tests/test_SexpVectorNumeric.py ->\nbuild/lib.solaris-2.10-sun4v-2.4/rpy2/rinterface/tests\nrunning build_ext\nbuilding 'rpy2.rinterface.rinterface' extension\ncreating build/temp.solaris-2.10-sun4v-2.4\ncreating build/temp.solaris-2.10-sun4v-2.4/rpy\ncreating build/temp.solaris-2.10-sun4v-2.4/rpy/rinterface\n/usr/lib/python2.4/pycc -DNDEBUG\n-I/rootpool2/local/kirkby/sage-4.5.alpha0/local/include\n-L/rootpool2/local/kirkby/sage-4.5.alpha0/local/lib/ -O2 -g -m64\n-I/rootpool2/local/kirkby/sage-4.5.alpha0/local/include -DR_INTERFACE_PTRS=1\n-DCSTACK_DEFNS=1 -DRIF_HAS_RSIGHAND=1\n-I/rootpool2/local/kirkby/sage-4.5.alpha0/local/lib/R/include -Irpy/rinterface\n-I/usr/include/python2.4 -c rpy/rinterface/array.c -o\nbuild/temp.solaris-2.10-sun4v-2.4/rpy/rinterface/array.o\n/usr/lib/python2.4/pycc -DNDEBUG\n-I/rootpool2/local/kirkby/sage-4.5.alpha0/local/include\n-L/rootpool2/local/kirkby/sage-4.5.alpha0/local/lib/ -O2 -g -m64\n-I/rootpool2/local/kirkby/sage-4.5.alpha0/local/include -DR_INTERFACE_PTRS=1\n-DCSTACK_DEFNS=1 -DRIF_HAS_RSIGHAND=1\n-I/rootpool2/local/kirkby/sage-4.5.alpha0/local/lib/R/include -Irpy/rinterface\n-I/usr/include/python2.4 -c rpy/rinterface/r_utils.c -o\nbuild/temp.solaris-2.10-sun4v-2.4/rpy/rinterface/r_utils.o\n/usr/lib/python2.4/pycc -DNDEBUG\n-I/rootpool2/local/kirkby/sage-4.5.alpha0/local/include\n-L/rootpool2/local/kirkby/sage-4.5.alpha0/local/lib/ -O2 -g -m64\n-I/rootpool2/local/kirkby/sage-4.5.alpha0/local/include -DR_INTERFACE_PTRS=1\n-DCSTACK_DEFNS=1 -DRIF_HAS_RSIGHAND=1\n-I/rootpool2/local/kirkby/sage-4.5.alpha0/local/lib/R/include -Irpy/rinterface\n-I/usr/include/python2.4 -c rpy/rinterface/rinterface.c -o\nbuild/temp.solaris-2.10-sun4v-2.4/rpy/rinterface/rinterface.o\n/usr/lib/python2.4/pycc -G -L/rootpool2/local/kirkby/sage-4.5.alpha0/local/lib/\n-m64 -I/rootpool2/local/kirkby/sage-4.5.alpha0/local/include\n-L/rootpool2/local/kirkby/sage-4.5.alpha0/local/lib/ -O2 -g -m64\n-I/rootpool2/local/kirkby/sage-4.5.alpha0/local/include\nbuild/temp.solaris-2.10-sun4v-2.4/rpy/rinterface/array.o\nbuild/temp.solaris-2.10-sun4v-2.4/rpy/rinterface/r_utils.o\nbuild/temp.solaris-2.10-sun4v-2.4/rpy/rinterface/rinterface.o\n-L/rootpool2/local/kirkby/sage-4.5.alpha0/local/lib/R/lib\n-L/rootpool2/local/kirkby/sage-4.5.alpha0/local/lib/R/modules\n-R/rootpool2/local/kirkby/sage-4.5.alpha0/local/lib/R/lib\n-R/rootpool2/local/kirkby/sage-4.5.alpha0/local/lib/R/modules -lR -o\nbuild/lib.solaris-2.10-sun4v-2.4/rpy2/rinterface/rinterface.so\n-L/rootpool2/local/kirkby/sage-4.5.alpha0/local/lib/R//lib -lR -llapack -lblas\nrunning install_lib\ncreating /usr/lib/python2.4/site-packages/rpy2\nerror: could not create '/usr/lib/python2.4/site-packages/rpy2': Permission denied\nError building RPY -- Python interface to R. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9551\n\n",
     "created_at": "2010-07-19T16:06:29Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_009551.json:
 ```
 Assignee: GeorgSWeber
 
-CC:  alexanderdreyer leif
+CC:  alexanderdreyer @nexttime
 
 As reported here:
 
@@ -115,7 +115,7 @@ archive/issue_comments_092062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9551#issuecomment-92062",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_092064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9551#issuecomment-92064",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_092065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9551#issuecomment-92065",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_092066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9551#issuecomment-92066",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_092067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9551#issuecomment-92067",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000652.json:
 ```json
 {
-    "body": "Assignee: was\n\nIf files a.sage and a.py exist in a directory, then \n\nsage: load a.sage\n\ndestroys the file a.py and replaces it with an automatically generated file.  Either users should be warned of this \"feature\" or something else should be done.\n\nIssue created by migration from https://trac.sagemath.org/ticket/652\n\n",
+    "body": "Assignee: @williamstein\n\nIf files a.sage and a.py exist in a directory, then \n\nsage: load a.sage\n\ndestroys the file a.py and replaces it with an automatically generated file.  Either users should be warned of this \"feature\" or something else should be done.\n\nIssue created by migration from https://trac.sagemath.org/ticket/652\n\n",
     "created_at": "2007-09-14T04:24:51Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_000652.json:
     "title": ".sage files destroy existing .py files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/652",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 If files a.sage and a.py exist in a directory, then 
 
@@ -59,7 +59,7 @@ archive/issue_comments_003391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/652#issuecomment-3391",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_003392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/652#issuecomment-3392",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -92,16 +92,16 @@ Patch preparses .sage files to temporary .py files in a temp directory.
 archive/issue_comments_003393.json:
 ```json
 {
-    "body": "Attachment [ncalexan-652.patch](tarball://root/attachments/some-uuid/ticket652/ncalexan-652.patch) by ncalexan created at 2008-01-23 02:23:51\n\nDO NOT APPLY, THIS HAS TROUBLE WITH DIRECTORIES",
+    "body": "Attachment [ncalexan-652.patch](tarball://root/attachments/some-uuid/ticket652/ncalexan-652.patch) by @ncalexan created at 2008-01-23 02:23:51\n\nDO NOT APPLY, THIS HAS TROUBLE WITH DIRECTORIES",
     "created_at": "2008-01-23T02:23:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/652#issuecomment-3393",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [ncalexan-652.patch](tarball://root/attachments/some-uuid/ticket652/ncalexan-652.patch) by ncalexan created at 2008-01-23 02:23:51
+Attachment [ncalexan-652.patch](tarball://root/attachments/some-uuid/ticket652/ncalexan-652.patch) by @ncalexan created at 2008-01-23 02:23:51
 
 DO NOT APPLY, THIS HAS TROUBLE WITH DIRECTORIES
 
@@ -112,16 +112,16 @@ DO NOT APPLY, THIS HAS TROUBLE WITH DIRECTORIES
 archive/issue_comments_003394.json:
 ```json
 {
-    "body": "Attachment [ncalexan-652-updated.patch](tarball://root/attachments/some-uuid/ticket652/ncalexan-652-updated.patch) by ncalexan created at 2008-01-23 02:53:16",
+    "body": "Attachment [ncalexan-652-updated.patch](tarball://root/attachments/some-uuid/ticket652/ncalexan-652-updated.patch) by @ncalexan created at 2008-01-23 02:53:16",
     "created_at": "2008-01-23T02:53:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/652#issuecomment-3394",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [ncalexan-652-updated.patch](tarball://root/attachments/some-uuid/ticket652/ncalexan-652-updated.patch) by ncalexan created at 2008-01-23 02:53:16
+Attachment [ncalexan-652-updated.patch](tarball://root/attachments/some-uuid/ticket652/ncalexan-652-updated.patch) by @ncalexan created at 2008-01-23 02:53:16
 
 
 
@@ -135,7 +135,7 @@ archive/issue_comments_003395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/652#issuecomment-3395",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

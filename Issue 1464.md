@@ -3,7 +3,7 @@
 archive/issues_001464.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThe following bundle is based on 2.9 alpha5, so should merge easily\n\nhttp://sage.math.washington.edu/home/rlmill/sage-2.9.alpha5/binary_codes.hg\n\nNote that the coverage in the new file, binary_codes.pyx, is 100%.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1464\n\n",
+    "body": "Assignee: @rlmill\n\nThe following bundle is based on 2.9 alpha5, so should merge easily\n\nhttp://sage.math.washington.edu/home/rlmill/sage-2.9.alpha5/binary_codes.hg\n\nNote that the coverage in the new file, binary_codes.pyx, is 100%.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1464\n\n",
     "created_at": "2007-12-11T23:25:32Z",
     "labels": [
         "coding theory",
@@ -14,10 +14,10 @@ archive/issues_001464.json:
     "title": "[with patch] binary code canonical labels & automorphism group generators",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1464",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 The following bundle is based on 2.9 alpha5, so should merge easily
 
@@ -41,7 +41,7 @@ archive/issue_comments_009422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1464",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1464#issuecomment-9422",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_009423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1464",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1464#issuecomment-9423",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_009424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1464",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1464#issuecomment-9424",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_009425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1464",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1464#issuecomment-9425",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_009426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1464",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1464#issuecomment-9426",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

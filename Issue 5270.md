@@ -3,7 +3,7 @@
 archive/issues_005270.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nThe patch implements plot() methods for affine and projective algebraic curves.  In the affine case it simply calls the plot() method of the defining ideal of the curve.  In the projective case it calls the plot() method of an affine patch of the curve.\n\nThis is mostly a usability enhancement.  I ran into a few bugs while working on this, so the patch should be applied only after #5267 and #5269 get merged.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5270\n\n",
+    "body": "Assignee: @aghitza\n\nThe patch implements plot() methods for affine and projective algebraic curves.  In the affine case it simply calls the plot() method of the defining ideal of the curve.  In the projective case it calls the plot() method of an affine patch of the curve.\n\nThis is mostly a usability enhancement.  I ran into a few bugs while working on this, so the patch should be applied only after #5267 and #5269 get merged.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5270\n\n",
     "created_at": "2009-02-14T13:49:49Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_005270.json:
     "title": "[with patch, needs review] implement plotting of affine and projective algebraic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5270",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 The patch implements plot() methods for affine and projective algebraic curves.  In the affine case it simply calls the plot() method of the defining ideal of the curve.  In the projective case it calls the plot() method of an affine patch of the curve.
 
@@ -40,7 +40,7 @@ archive/issue_comments_040454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5270#issuecomment-40454",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -58,7 +58,7 @@ archive/issue_comments_040455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5270#issuecomment-40455",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_040456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5270#issuecomment-40456",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_040457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5270#issuecomment-40457",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_040458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5270#issuecomment-40458",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_040459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5270#issuecomment-40459",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_040460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5270#issuecomment-40460",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -317,16 +317,16 @@ abort: patch failed to apply
 archive/issue_comments_040461.json:
 ```json
 {
-    "body": "Attachment [trac_5270.patch](tarball://root/attachments/some-uuid/ticket5270/trac_5270.patch) by AlexGhitza created at 2009-03-16 02:52:26",
+    "body": "Attachment [trac_5270.patch](tarball://root/attachments/some-uuid/ticket5270/trac_5270.patch) by @aghitza created at 2009-03-16 02:52:26",
     "created_at": "2009-03-16T02:52:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5270#issuecomment-40461",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_5270.patch](tarball://root/attachments/some-uuid/ticket5270/trac_5270.patch) by AlexGhitza created at 2009-03-16 02:52:26
+Attachment [trac_5270.patch](tarball://root/attachments/some-uuid/ticket5270/trac_5270.patch) by @aghitza created at 2009-03-16 02:52:26
 
 
 
@@ -340,7 +340,7 @@ archive/issue_comments_040462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5270#issuecomment-40462",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -358,7 +358,7 @@ archive/issue_comments_040463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5270#issuecomment-40463",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

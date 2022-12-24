@@ -3,7 +3,7 @@
 archive/issues_005423.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5423\n\n",
+    "body": "Assignee: @robertwb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5423\n\n",
     "created_at": "2009-03-03T09:23:07Z",
     "labels": [
         "coercion",
@@ -14,10 +14,10 @@ archive/issues_005423.json:
     "title": "Move calculus to new coercion model",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5423",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5423
 archive/issue_comments_041970.json:
 ```json
 {
-    "body": "Attachment [5423-coerce-calc.patch](tarball://root/attachments/some-uuid/ticket5423/5423-coerce-calc.patch) by robertwb created at 2009-03-03 22:10:43",
+    "body": "Attachment [5423-coerce-calc.patch](tarball://root/attachments/some-uuid/ticket5423/5423-coerce-calc.patch) by @robertwb created at 2009-03-03 22:10:43",
     "created_at": "2009-03-03T22:10:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5423",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5423#issuecomment-41970",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5423-coerce-calc.patch](tarball://root/attachments/some-uuid/ticket5423/5423-coerce-calc.patch) by robertwb created at 2009-03-03 22:10:43
+Attachment [5423-coerce-calc.patch](tarball://root/attachments/some-uuid/ticket5423/5423-coerce-calc.patch) by @robertwb created at 2009-03-03 22:10:43
 
 
 
@@ -50,16 +50,16 @@ Attachment [5423-coerce-calc.patch](tarball://root/attachments/some-uuid/ticket5
 archive/issue_comments_041971.json:
 ```json
 {
-    "body": "Attachment [trac_5423.patch](tarball://root/attachments/some-uuid/ticket5423/trac_5423.patch) by mhansen created at 2009-03-07 22:01:31",
+    "body": "Attachment [trac_5423.patch](tarball://root/attachments/some-uuid/ticket5423/trac_5423.patch) by @mwhansen created at 2009-03-07 22:01:31",
     "created_at": "2009-03-07T22:01:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5423",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5423#issuecomment-41971",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5423.patch](tarball://root/attachments/some-uuid/ticket5423/trac_5423.patch) by mhansen created at 2009-03-07 22:01:31
+Attachment [trac_5423.patch](tarball://root/attachments/some-uuid/ticket5423/trac_5423.patch) by @mwhansen created at 2009-03-07 22:01:31
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_041972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5423",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5423#issuecomment-41972",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_041973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5423",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5423#issuecomment-41973",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_041974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5423",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5423#issuecomment-41974",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_041975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5423",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5423#issuecomment-41975",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

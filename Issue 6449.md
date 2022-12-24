@@ -3,7 +3,7 @@
 archive/issues_006449.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nCC:  jhpalmieri mhansen\n\nThis is the results of the Abelian groups project at SD16. This is not really finished, but I am going to be pretty busy for the next few weeks so I am posting it here anyway in the hope that somebody else will chip in and finish it off.\n\nThis relies on all of the patches at #5882.\n\nThe new functionality:\n\n- A new class for additive abelian groups. This is very similar to the finitely presented modules class, but with a slightly different print representation. This is mostly finished (although the string representation of morphisms needs a little work).\n\n- A class for \"additive abelian groups embedded in an arbitrary parent\". Think rational points on an elliptic curve, for instance, which should be able to derive from this class and transparently inherit code for things like morphisms and subgroups. This is a lot less complete.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6449\n\n",
+    "body": "Assignee: joyner\n\nCC:  @jhpalmieri @mwhansen\n\nThis is the results of the Abelian groups project at SD16. This is not really finished, but I am going to be pretty busy for the next few weeks so I am posting it here anyway in the hope that somebody else will chip in and finish it off.\n\nThis relies on all of the patches at #5882.\n\nThe new functionality:\n\n- A new class for additive abelian groups. This is very similar to the finitely presented modules class, but with a slightly different print representation. This is mostly finished (although the string representation of morphisms needs a little work).\n\n- A class for \"additive abelian groups embedded in an arbitrary parent\". Think rational points on an elliptic curve, for instance, which should be able to derive from this class and transparently inherit code for things like morphisms and subgroups. This is a lot less complete.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6449\n\n",
     "created_at": "2009-06-30T12:10:53Z",
     "labels": [
         "group theory",
@@ -14,12 +14,12 @@ archive/issues_006449.json:
     "title": "Additive abelian groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6449",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 Assignee: joyner
 
-CC:  jhpalmieri mhansen
+CC:  @jhpalmieri @mwhansen
 
 This is the results of the Abelian groups project at SD16. This is not really finished, but I am going to be pretty busy for the next few weeks so I am posting it here anyway in the hope that somebody else will chip in and finish it off.
 
@@ -47,7 +47,7 @@ archive/issue_comments_051834.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51834",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_051836.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51836",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_051837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51837",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_051838.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51838",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_051839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51839",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_051840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51840",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_051841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51841",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_051842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51842",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_051843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51843",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_051844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51844",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_051845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51845",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_051846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51846",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_051847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51847",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -340,7 +340,7 @@ archive/issue_comments_051848.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51848",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -368,7 +368,7 @@ archive/issue_comments_051849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51849",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -386,7 +386,7 @@ archive/issue_comments_051850.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51850",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -404,7 +404,7 @@ archive/issue_comments_051851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51851",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -422,7 +422,7 @@ archive/issue_comments_051852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51852",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -440,7 +440,7 @@ archive/issue_comments_051853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51853",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -472,7 +472,7 @@ archive/issue_comments_051854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51854",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -490,7 +490,7 @@ archive/issue_comments_051855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51855",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -510,7 +510,7 @@ archive/issue_comments_051856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51856",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -720,7 +720,7 @@ archive/issue_comments_051857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51857",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -740,7 +740,7 @@ archive/issue_comments_051858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51858",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -758,7 +758,7 @@ archive/issue_comments_051859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51859",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -777,16 +777,16 @@ It turns out that the patch thus obtained actually doesn't conflict with any of 
 archive/issue_comments_051860.json:
 ```json
 {
-    "body": "Attachment [trac_6449_everything.patch](tarball://root/attachments/some-uuid/ticket6449/trac_6449_everything.patch) by davidloeffler created at 2010-07-01 15:21:01\n\nQfolded patch. Applies to 4.5.alpha1 with the patches from #9287.",
+    "body": "Attachment [trac_6449_everything.patch](tarball://root/attachments/some-uuid/ticket6449/trac_6449_everything.patch) by @loefflerd created at 2010-07-01 15:21:01\n\nQfolded patch. Applies to 4.5.alpha1 with the patches from #9287.",
     "created_at": "2010-07-01T15:21:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51860",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_6449_everything.patch](tarball://root/attachments/some-uuid/ticket6449/trac_6449_everything.patch) by davidloeffler created at 2010-07-01 15:21:01
+Attachment [trac_6449_everything.patch](tarball://root/attachments/some-uuid/ticket6449/trac_6449_everything.patch) by @loefflerd created at 2010-07-01 15:21:01
 
 Qfolded patch. Applies to 4.5.alpha1 with the patches from #9287.
 
@@ -802,7 +802,7 @@ archive/issue_comments_051861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51861",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -822,7 +822,7 @@ archive/issue_comments_051862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51862",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -870,7 +870,7 @@ archive/issue_comments_051863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51863",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -899,7 +899,7 @@ archive/issue_comments_051864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51864",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -912,16 +912,16 @@ The folded patch should deal with the first two. I also saw the other two you me
 archive/issue_comments_051865.json:
 ```json
 {
-    "body": "Attachment [trac_6449_ones_that_got_away.patch](tarball://root/attachments/some-uuid/ticket6449/trac_6449_ones_that_got_away.patch) by davidloeffler created at 2010-07-01 17:36:16\n\nApply on top of #9287 and trac_6449_everything.patch",
+    "body": "Attachment [trac_6449_ones_that_got_away.patch](tarball://root/attachments/some-uuid/ticket6449/trac_6449_ones_that_got_away.patch) by @loefflerd created at 2010-07-01 17:36:16\n\nApply on top of #9287 and trac_6449_everything.patch",
     "created_at": "2010-07-01T17:36:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51865",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_6449_ones_that_got_away.patch](tarball://root/attachments/some-uuid/ticket6449/trac_6449_ones_that_got_away.patch) by davidloeffler created at 2010-07-01 17:36:16
+Attachment [trac_6449_ones_that_got_away.patch](tarball://root/attachments/some-uuid/ticket6449/trac_6449_ones_that_got_away.patch) by @loefflerd created at 2010-07-01 17:36:16
 
 Apply on top of #9287 and trac_6449_everything.patch
 
@@ -937,7 +937,7 @@ archive/issue_comments_051866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51866",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -955,7 +955,7 @@ archive/issue_comments_051867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51867",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -994,7 +994,7 @@ archive/issue_comments_051868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51868",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1012,7 +1012,7 @@ archive/issue_comments_051869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51869",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1025,16 +1025,16 @@ apply instead of previous one
 archive/issue_comments_051870.json:
 ```json
 {
-    "body": "Attachment [trac_6449_ones_that_got_away.1.patch](tarball://root/attachments/some-uuid/ticket6449/trac_6449_ones_that_got_away.1.patch) by cremona created at 2010-07-02 12:01:34\n\nOK, I will try that -- in which case we might ignore trac_6449_ones_that_got_away.1.patch which I just uploaded.",
+    "body": "Attachment [trac_6449_ones_that_got_away.1.patch](tarball://root/attachments/some-uuid/ticket6449/trac_6449_ones_that_got_away.1.patch) by @JohnCremona created at 2010-07-02 12:01:34\n\nOK, I will try that -- in which case we might ignore trac_6449_ones_that_got_away.1.patch which I just uploaded.",
     "created_at": "2010-07-02T12:01:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51870",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_6449_ones_that_got_away.1.patch](tarball://root/attachments/some-uuid/ticket6449/trac_6449_ones_that_got_away.1.patch) by cremona created at 2010-07-02 12:01:34
+Attachment [trac_6449_ones_that_got_away.1.patch](tarball://root/attachments/some-uuid/ticket6449/trac_6449_ones_that_got_away.1.patch) by @JohnCremona created at 2010-07-02 12:01:34
 
 OK, I will try that -- in which case we might ignore trac_6449_ones_that_got_away.1.patch which I just uploaded.
 
@@ -1050,7 +1050,7 @@ archive/issue_comments_051871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51871",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1071,7 +1071,7 @@ archive/issue_comments_051872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51872",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1140,7 +1140,7 @@ archive/issue_comments_051873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51873",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1173,7 +1173,7 @@ archive/issue_comments_051874.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51874",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1193,7 +1193,7 @@ archive/issue_comments_051875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51875",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1213,7 +1213,7 @@ archive/issue_comments_051876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51876",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1231,7 +1231,7 @@ archive/issue_comments_051877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51877",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1249,7 +1249,7 @@ archive/issue_comments_051878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51878",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -1267,7 +1267,7 @@ archive/issue_comments_051879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51879",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1283,16 +1283,16 @@ Good point.  David, any chance you could oblige?
 archive/issue_comments_051880.json:
 ```json
 {
-    "body": "Attachment [trac_6449_more_doctests.patch](tarball://root/attachments/some-uuid/ticket6449/trac_6449_more_doctests.patch) by davidloeffler created at 2010-07-11 15:15:37\n\nHere's a patch with the missing doctests. The current situation is that one needs to apply:\n\n- the #9287 patches\n- trac_6449_everything.patch\n- trac_6449_ones_that_got_away.patch\n- trac_6449_more_doctests.patch\n\nIf someone with trac admin rights could delete all the other patches that would be helpful.\n\nDavid",
+    "body": "Attachment [trac_6449_more_doctests.patch](tarball://root/attachments/some-uuid/ticket6449/trac_6449_more_doctests.patch) by @loefflerd created at 2010-07-11 15:15:37\n\nHere's a patch with the missing doctests. The current situation is that one needs to apply:\n\n- the #9287 patches\n- trac_6449_everything.patch\n- trac_6449_ones_that_got_away.patch\n- trac_6449_more_doctests.patch\n\nIf someone with trac admin rights could delete all the other patches that would be helpful.\n\nDavid",
     "created_at": "2010-07-11T15:15:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51880",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_6449_more_doctests.patch](tarball://root/attachments/some-uuid/ticket6449/trac_6449_more_doctests.patch) by davidloeffler created at 2010-07-11 15:15:37
+Attachment [trac_6449_more_doctests.patch](tarball://root/attachments/some-uuid/ticket6449/trac_6449_more_doctests.patch) by @loefflerd created at 2010-07-11 15:15:37
 
 Here's a patch with the missing doctests. The current situation is that one needs to apply:
 
@@ -1317,7 +1317,7 @@ archive/issue_comments_051881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51881",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1345,7 +1345,7 @@ archive/issue_comments_051882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51882",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1363,7 +1363,7 @@ archive/issue_comments_051883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51883",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009854.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  vbraun\n\nKeywords: tachyon, raytracing\n\nCurrently the Tachyon object defined in plot3d/tachyon.py does not support projections other than the default.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/9855\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @vbraun\n\nKeywords: tachyon, raytracing\n\nCurrently the Tachyon object defined in plot3d/tachyon.py does not support projections other than the default.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/9855\n\n",
     "created_at": "2010-09-04T03:13:06Z",
     "labels": [
         "graphics",
@@ -19,7 +19,7 @@ archive/issues_009854.json:
 ```
 Assignee: jason, was
 
-CC:  vbraun
+CC:  @vbraun
 
 Keywords: tachyon, raytracing
 
@@ -124,7 +124,7 @@ archive/issue_comments_097264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9854#issuecomment-97264",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_097265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9854#issuecomment-97265",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_097266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9854#issuecomment-97266",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_097272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9854#issuecomment-97272",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_097273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9854#issuecomment-97273",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -349,7 +349,7 @@ archive/issue_comments_097274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9854#issuecomment-97274",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -371,7 +371,7 @@ archive/issue_comments_097275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9854#issuecomment-97275",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -384,16 +384,16 @@ result of texture mapping
 archive/issue_comments_097276.json:
 ```json
 {
-    "body": "Attachment [texture_mapping.png](tarball://root/attachments/some-uuid/ticket9855/texture_mapping.png) by chapoton created at 2014-12-28 14:23:14\n\nHere is one example image\n\n<img src=\"texture_mapping.png\" width=400px>",
+    "body": "Attachment [texture_mapping.png](tarball://root/attachments/some-uuid/ticket9855/texture_mapping.png) by @fchapoton created at 2014-12-28 14:23:14\n\nHere is one example image\n\n<img src=\"texture_mapping.png\" width=400px>",
     "created_at": "2014-12-28T14:23:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9854#issuecomment-97276",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [texture_mapping.png](tarball://root/attachments/some-uuid/ticket9855/texture_mapping.png) by chapoton created at 2014-12-28 14:23:14
+Attachment [texture_mapping.png](tarball://root/attachments/some-uuid/ticket9855/texture_mapping.png) by @fchapoton created at 2014-12-28 14:23:14
 
 Here is one example image
 
@@ -429,7 +429,7 @@ archive/issue_comments_097278.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9854#issuecomment-97278",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -447,7 +447,7 @@ archive/issue_comments_097279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9854#issuecomment-97279",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -465,7 +465,7 @@ archive/issue_comments_097280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9854#issuecomment-97280",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -483,7 +483,7 @@ archive/issue_comments_097281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9854#issuecomment-97281",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -501,7 +501,7 @@ archive/issue_comments_097282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9854#issuecomment-97282",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

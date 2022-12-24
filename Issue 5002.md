@@ -3,7 +3,7 @@
 archive/issues_005002.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\n\n```\nsage: C = CrystalOfTableaux(['B',2],shape=[3]) \nsage: C(rows=[[1,1,0]])\n```\n\n\nraises an exception though this is a legitimate B2 tableaux. This was\nanalyzed by Anne Schilling and others in this thread:\n\nhttp://groups.google.com/group/sage-combinat-devel/browse_thread/thread/cb02f961c41947e2?hl=en\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5002\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n```\nsage: C = CrystalOfTableaux(['B',2],shape=[3]) \nsage: C(rows=[[1,1,0]])\n```\n\n\nraises an exception though this is a legitimate B2 tableaux. This was\nanalyzed by Anne Schilling and others in this thread:\n\nhttp://groups.google.com/group/sage-combinat-devel/browse_thread/thread/cb02f961c41947e2?hl=en\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5002\n\n",
     "created_at": "2009-01-17T17:03:36Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_005002.json:
     "title": "CrystalOfTableaux call method breaks on legitimate data",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5002",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5002
 archive/issue_comments_038145.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to aschilling.",
+    "body": "Changing assignee from @mwhansen to @anneschilling.",
     "created_at": "2009-04-02T22:02:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5002#issuecomment-38145",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
-Changing assignee from mhansen to aschilling.
+Changing assignee from @mwhansen to @anneschilling.
 
 
 
@@ -68,7 +68,7 @@ archive/issue_comments_038146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5002#issuecomment-38146",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -81,16 +81,16 @@ Changing status from new to assigned.
 archive/issue_comments_038147.json:
 ```json
 {
-    "body": "Attachment [ticket-5002.patch](tarball://root/attachments/some-uuid/ticket5002/ticket-5002.patch) by aschilling created at 2009-04-05 03:28:01",
+    "body": "Attachment [ticket-5002.patch](tarball://root/attachments/some-uuid/ticket5002/ticket-5002.patch) by @anneschilling created at 2009-04-05 03:28:01",
     "created_at": "2009-04-05T03:28:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5002#issuecomment-38147",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
-Attachment [ticket-5002.patch](tarball://root/attachments/some-uuid/ticket5002/ticket-5002.patch) by aschilling created at 2009-04-05 03:28:01
+Attachment [ticket-5002.patch](tarball://root/attachments/some-uuid/ticket5002/ticket-5002.patch) by @anneschilling created at 2009-04-05 03:28:01
 
 
 
@@ -104,7 +104,7 @@ archive/issue_comments_038148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5002#issuecomment-38148",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_038149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5002#issuecomment-38149",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_038150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5002#issuecomment-38150",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_038151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5002#issuecomment-38151",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_038153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5002#issuecomment-38153",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_038154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5002#issuecomment-38154",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_038155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5002#issuecomment-38155",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -343,7 +343,7 @@ archive/issue_comments_038157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5002#issuecomment-38157",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -356,16 +356,16 @@ removed reference to lazy attribute
 archive/issue_comments_038158.json:
 ```json
 {
-    "body": "Attachment [crystal-5002-track.patch](tarball://root/attachments/some-uuid/ticket5002/crystal-5002-track.patch) by aschilling created at 2009-04-09 07:04:39\n\nI removed the reference to lazy attribute. I hope it is now ok to be integrated.\nIn the process I also had to touch fast_crystals.py and spins.py.",
+    "body": "Attachment [crystal-5002-track.patch](tarball://root/attachments/some-uuid/ticket5002/crystal-5002-track.patch) by @anneschilling created at 2009-04-09 07:04:39\n\nI removed the reference to lazy attribute. I hope it is now ok to be integrated.\nIn the process I also had to touch fast_crystals.py and spins.py.",
     "created_at": "2009-04-09T07:04:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5002#issuecomment-38158",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
-Attachment [crystal-5002-track.patch](tarball://root/attachments/some-uuid/ticket5002/crystal-5002-track.patch) by aschilling created at 2009-04-09 07:04:39
+Attachment [crystal-5002-track.patch](tarball://root/attachments/some-uuid/ticket5002/crystal-5002-track.patch) by @anneschilling created at 2009-04-09 07:04:39
 
 I removed the reference to lazy attribute. I hope it is now ok to be integrated.
 In the process I also had to touch fast_crystals.py and spins.py.

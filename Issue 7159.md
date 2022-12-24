@@ -3,7 +3,7 @@
 archive/issues_007159.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThis patch adds to the Graph class the function merge_vertices.\n\nIt is a very common operation in Graph Theory. In a Graph G, one merges two vertices u and v by deleting them and adding a new vertex, which is linked to any other vertex w such that there was an edge uw or vw in G. This can be done with any number of vertices at a time.\n\nBesides, writing this class I noticed there was an error in function edge_boundary :\n\nthe function Graph.edge_boundary([u,v]) returns a list of edges, BUT :\n* the edges returned do not always contain u or v as their first element. it can be the second one in undirected graphs\n* The edges between u and v are returned, which is not the expected behaviour of this function\n\nThis patch fixes this too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7159\n\n",
+    "body": "Assignee: @rlmill\n\nThis patch adds to the Graph class the function merge_vertices.\n\nIt is a very common operation in Graph Theory. In a Graph G, one merges two vertices u and v by deleting them and adding a new vertex, which is linked to any other vertex w such that there was an edge uw or vw in G. This can be done with any number of vertices at a time.\n\nBesides, writing this class I noticed there was an error in function edge_boundary :\n\nthe function Graph.edge_boundary([u,v]) returns a list of edges, BUT :\n* the edges returned do not always contain u or v as their first element. it can be the second one in undirected graphs\n* The edges between u and v are returned, which is not the expected behaviour of this function\n\nThis patch fixes this too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7159\n\n",
     "created_at": "2009-10-08T17:17:02Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007159.json:
     "title": "[with patch, needs review] Graph.merge_vertices, and a bug in edge_boundary",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7159",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 This patch adds to the Graph class the function merge_vertices.
 
@@ -47,7 +47,7 @@ archive/issue_comments_059320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59320",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_059321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59321",
-    "user": "AJonsson"
+    "user": "@haaninjo"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_059322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59322",
-    "user": "AJonsson"
+    "user": "@haaninjo"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_059323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59323",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_059324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59324",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -145,16 +145,16 @@ Nathann
 archive/issue_comments_059325.json:
 ```json
 {
-    "body": "Attachment [trac_7159.patch](tarball://root/attachments/some-uuid/ticket7159/trac_7159.patch) by ncohen created at 2009-10-25 23:20:32\n\nBy the way, I can not find your email on the internet... It's good to see new people in Sage's graph theory section !! What are you studying ?",
+    "body": "Attachment [trac_7159.patch](tarball://root/attachments/some-uuid/ticket7159/trac_7159.patch) by @nathanncohen created at 2009-10-25 23:20:32\n\nBy the way, I can not find your email on the internet... It's good to see new people in Sage's graph theory section !! What are you studying ?",
     "created_at": "2009-10-25T23:20:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59325",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_7159.patch](tarball://root/attachments/some-uuid/ticket7159/trac_7159.patch) by ncohen created at 2009-10-25 23:20:32
+Attachment [trac_7159.patch](tarball://root/attachments/some-uuid/ticket7159/trac_7159.patch) by @nathanncohen created at 2009-10-25 23:20:32
 
 By the way, I can not find your email on the internet... It's good to see new people in Sage's graph theory section !! What are you studying ?
 
@@ -170,7 +170,7 @@ archive/issue_comments_059326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59326",
-    "user": "AJonsson"
+    "user": "@haaninjo"
 }
 ```
 
@@ -199,16 +199,16 @@ I'm a student in mathematics and a bit of computer science. I use Sage for diver
 archive/issue_comments_059327.json:
 ```json
 {
-    "body": "Attachment [trac_7159-appendix.patch](tarball://root/attachments/some-uuid/ticket7159/trac_7159-appendix.patch) by AJonsson created at 2009-10-26 18:04:26\n\nRemove no-op tests",
+    "body": "Attachment [trac_7159-appendix.patch](tarball://root/attachments/some-uuid/ticket7159/trac_7159-appendix.patch) by @haaninjo created at 2009-10-26 18:04:26\n\nRemove no-op tests",
     "created_at": "2009-10-26T18:04:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59327",
-    "user": "AJonsson"
+    "user": "@haaninjo"
 }
 ```
 
-Attachment [trac_7159-appendix.patch](tarball://root/attachments/some-uuid/ticket7159/trac_7159-appendix.patch) by AJonsson created at 2009-10-26 18:04:26
+Attachment [trac_7159-appendix.patch](tarball://root/attachments/some-uuid/ticket7159/trac_7159-appendix.patch) by @haaninjo created at 2009-10-26 18:04:26
 
 Remove no-op tests
 
@@ -224,7 +224,7 @@ archive/issue_comments_059328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59328",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_059329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59329",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_059330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59330",
-    "user": "AJonsson"
+    "user": "@haaninjo"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_059331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59331",
-    "user": "AJonsson"
+    "user": "@haaninjo"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_059332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59332",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -322,16 +322,16 @@ Adds one test
 archive/issue_comments_059333.json:
 ```json
 {
-    "body": "Attachment [trac_7159-appendix-appendix.patch](tarball://root/attachments/some-uuid/ticket7159/trac_7159-appendix-appendix.patch) by ncohen created at 2009-10-31 10:30:55\n\nPerhaps the last one ? :-)",
+    "body": "Attachment [trac_7159-appendix-appendix.patch](tarball://root/attachments/some-uuid/ticket7159/trac_7159-appendix-appendix.patch) by @nathanncohen created at 2009-10-31 10:30:55\n\nPerhaps the last one ? :-)",
     "created_at": "2009-10-31T10:30:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59333",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_7159-appendix-appendix.patch](tarball://root/attachments/some-uuid/ticket7159/trac_7159-appendix-appendix.patch) by ncohen created at 2009-10-31 10:30:55
+Attachment [trac_7159-appendix-appendix.patch](tarball://root/attachments/some-uuid/ticket7159/trac_7159-appendix-appendix.patch) by @nathanncohen created at 2009-10-31 10:30:55
 
 Perhaps the last one ? :-)
 
@@ -347,7 +347,7 @@ archive/issue_comments_059334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59334",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -365,7 +365,7 @@ archive/issue_comments_059335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59335",
-    "user": "AJonsson"
+    "user": "@haaninjo"
 }
 ```
 
@@ -383,7 +383,7 @@ archive/issue_comments_059336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59336",
-    "user": "AJonsson"
+    "user": "@haaninjo"
 }
 ```
 
@@ -406,7 +406,7 @@ archive/issue_comments_059337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59337",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

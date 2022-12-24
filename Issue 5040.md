@@ -14,7 +14,7 @@ archive/issues_005040.json:
     "title": "Bug in NTL's ./configure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5040",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

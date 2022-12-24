@@ -3,7 +3,7 @@
 archive/issues_007004.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat ncohen rlm\n\nKeywords: graph layout, graphviz, acyclic\n\nExperimental patch on:  http://combinat.sagemath.org/hgwebdir.cgi/patches/file/tip/graphviz-nt.patch\n\nFrom the patch description:\n\n- Refactors the graph layout code, with:\n\n  - A new main graph.layout() method, to be called by plot, latex, ...\n  - Many layout methods, like graph._layout_circular()\n  - Extends the graphviz_string method (latex labels)\n  - Define a new layout method ._layout_acyclic() implemented by\n    calling dot2tex and graphviz\n  - Implement an alternative implementation of latex for graphs\n    by delegating all the work to dot2tex (GraphLatex.dot2tex_picture)\n  - Slightly simplifies the handling of default values for graph.latex_options\n\n- Makes some fixes to the poset code:\n  - __repr__ -> _repr_\n  - _latex_ by calling latex on the internal element\n\nTODO:\n\n- Add an optional default_layout method that subclasses could\n  override (like for the Petersen graph, ...). This would be better\n  for them than to systematically construct the layout at\n  construction time.\n\n- Refactor the remaining layout functions (planar, ...) as above\n\n- Double check all the logic to make sure it is backward compatible\n\n- A lot of code is doing things very similar to dot2tex. Maybe things\n  could be merged.\n\n- Finish to doctest everything\n\n- Implement the different options for both latex constructions\n\n- Add appropriate # optional comments\n\n- Make dot2tex.spkg into an optional sage package\n\nIssue created by migration from https://trac.sagemath.org/ticket/7004\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @nathanncohen @rlmill\n\nKeywords: graph layout, graphviz, acyclic\n\nExperimental patch on:  http://combinat.sagemath.org/hgwebdir.cgi/patches/file/tip/graphviz-nt.patch\n\nFrom the patch description:\n\n- Refactors the graph layout code, with:\n\n  - A new main graph.layout() method, to be called by plot, latex, ...\n  - Many layout methods, like graph._layout_circular()\n  - Extends the graphviz_string method (latex labels)\n  - Define a new layout method ._layout_acyclic() implemented by\n    calling dot2tex and graphviz\n  - Implement an alternative implementation of latex for graphs\n    by delegating all the work to dot2tex (GraphLatex.dot2tex_picture)\n  - Slightly simplifies the handling of default values for graph.latex_options\n\n- Makes some fixes to the poset code:\n  - __repr__ -> _repr_\n  - _latex_ by calling latex on the internal element\n\nTODO:\n\n- Add an optional default_layout method that subclasses could\n  override (like for the Petersen graph, ...). This would be better\n  for them than to systematically construct the layout at\n  construction time.\n\n- Refactor the remaining layout functions (planar, ...) as above\n\n- Double check all the logic to make sure it is backward compatible\n\n- A lot of code is doing things very similar to dot2tex. Maybe things\n  could be merged.\n\n- Finish to doctest everything\n\n- Implement the different options for both latex constructions\n\n- Add appropriate # optional comments\n\n- Make dot2tex.spkg into an optional sage package\n\nIssue created by migration from https://trac.sagemath.org/ticket/7004\n\n",
     "created_at": "2009-09-24T22:02:49Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_007004.json:
     "title": "[with patch] Refactor the graph layout code, and add interface with graphviz for acyclic layout",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7004",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
-CC:  sage-combinat ncohen rlm
+CC:  sage-combinat @nathanncohen @rlmill
 
 Keywords: graph layout, graphviz, acyclic
 
@@ -80,7 +80,7 @@ archive/issue_comments_057908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7004#issuecomment-57908",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_057909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7004#issuecomment-57909",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_057910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7004#issuecomment-57910",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_057911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7004#issuecomment-57911",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_057912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7004#issuecomment-57912",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_057913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7004#issuecomment-57913",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_057914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7004#issuecomment-57914",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_057915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7004#issuecomment-57915",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -353,7 +353,7 @@ archive/issue_comments_057916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7004#issuecomment-57916",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -379,7 +379,7 @@ archive/issue_comments_057917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7004#issuecomment-57917",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -397,7 +397,7 @@ archive/issue_comments_057918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7004#issuecomment-57918",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -415,7 +415,7 @@ archive/issue_comments_057919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7004#issuecomment-57919",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -442,7 +442,7 @@ archive/issue_comments_057920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7004#issuecomment-57920",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -460,7 +460,7 @@ archive/issue_comments_057921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7004#issuecomment-57921",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -532,7 +532,7 @@ archive/issue_comments_057922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7004#issuecomment-57922",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -643,7 +643,7 @@ archive/issue_comments_057923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7004#issuecomment-57923",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -656,16 +656,16 @@ Calling view on a graph with dot2tex format can be a bit slow. But see #8707 for
 archive/issue_comments_057924.json:
 ```json
 {
-    "body": "Attachment [trac_7004-graphviz.patch](tarball://root/attachments/some-uuid/ticket7004/trac_7004-graphviz.patch) by vdelecroix created at 2010-04-27 21:56:20\n\nApply only this patch that fold all others",
+    "body": "Attachment [trac_7004-graphviz.patch](tarball://root/attachments/some-uuid/ticket7004/trac_7004-graphviz.patch) by @videlec created at 2010-04-27 21:56:20\n\nApply only this patch that fold all others",
     "created_at": "2010-04-27T21:56:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7004#issuecomment-57924",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
-Attachment [trac_7004-graphviz.patch](tarball://root/attachments/some-uuid/ticket7004/trac_7004-graphviz.patch) by vdelecroix created at 2010-04-27 21:56:20
+Attachment [trac_7004-graphviz.patch](tarball://root/attachments/some-uuid/ticket7004/trac_7004-graphviz.patch) by @videlec created at 2010-04-27 21:56:20
 
 Apply only this patch that fold all others
 
@@ -681,7 +681,7 @@ archive/issue_comments_057925.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7004#issuecomment-57925",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -699,7 +699,7 @@ archive/issue_comments_057926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7004#issuecomment-57926",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -717,7 +717,7 @@ archive/issue_comments_057927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7004#issuecomment-57927",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -730,16 +730,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_057928.json:
 ```json
 {
-    "body": "Attachment [trac_7004-graphviz-nt.patch](tarball://root/attachments/some-uuid/ticket7004/trac_7004-graphviz-nt.patch) by nthiery created at 2010-04-28 10:05:16\n\nApply only this one",
+    "body": "Attachment [trac_7004-graphviz-nt.patch](tarball://root/attachments/some-uuid/ticket7004/trac_7004-graphviz-nt.patch) by @nthiery created at 2010-04-28 10:05:16\n\nApply only this one",
     "created_at": "2010-04-28T10:05:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7004#issuecomment-57928",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_7004-graphviz-nt.patch](tarball://root/attachments/some-uuid/ticket7004/trac_7004-graphviz-nt.patch) by nthiery created at 2010-04-28 10:05:16
+Attachment [trac_7004-graphviz-nt.patch](tarball://root/attachments/some-uuid/ticket7004/trac_7004-graphviz-nt.patch) by @nthiery created at 2010-04-28 10:05:16
 
 Apply only this one
 
@@ -755,7 +755,7 @@ archive/issue_comments_057929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7004#issuecomment-57929",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -779,7 +779,7 @@ archive/issue_comments_057930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7004#issuecomment-57930",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -797,7 +797,7 @@ archive/issue_comments_057931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7004#issuecomment-57931",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

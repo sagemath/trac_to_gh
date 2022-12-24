@@ -14,7 +14,7 @@ archive/issues_000306.json:
     "title": "switch running branches without building",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/306",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: somebody
@@ -41,7 +41,7 @@ archive/issue_comments_001456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/306#issuecomment-1456",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -144,16 +144,16 @@ summary:     Added tag 2.1.4 for changeset f2073346a87c
 archive/issue_comments_001457.json:
 ```json
 {
-    "body": "Changing assignee from somebody to was.",
+    "body": "Changing assignee from somebody to @williamstein.",
     "created_at": "2007-03-07T18:49:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/306#issuecomment-1457",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Changing assignee from somebody to was.
+Changing assignee from somebody to @williamstein.
 
 
 
@@ -185,7 +185,7 @@ archive/issue_comments_001459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/306#issuecomment-1459",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_001460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/306#issuecomment-1460",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

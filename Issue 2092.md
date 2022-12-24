@@ -3,7 +3,7 @@
 archive/issues_002092.json:
 ```json
 {
-    "body": "Assignee: was\n\njpeg is a common format that most people keep their pictures in -- let's support it!\n\nIssue created by migration from https://trac.sagemath.org/ticket/2092\n\n",
+    "body": "Assignee: @williamstein\n\njpeg is a common format that most people keep their pictures in -- let's support it!\n\nIssue created by migration from https://trac.sagemath.org/ticket/2092\n\n",
     "created_at": "2008-02-08T00:49:58Z",
     "labels": [
         "graphics",
@@ -16,7 +16,7 @@ archive/issues_002092.json:
     "user": "boothby"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 jpeg is a common format that most people keep their pictures in -- let's support it!
 
@@ -36,7 +36,7 @@ archive/issue_comments_013527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2092#issuecomment-13527",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -54,7 +54,7 @@ archive/issue_comments_013528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2092#issuecomment-13528",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

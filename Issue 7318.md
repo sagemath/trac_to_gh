@@ -3,7 +3,7 @@
 archive/issues_007318.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  timdumol was\n\nIn Sage, `sagenb.misc.sphinxify.sphinxify` does\n\n```python\n    shutil.rmtree(confdir, ignore_errors=True)\n```\n\nafter running Sphinx, but this should happen only if `confdir` is a temporary directory.  Otherwise,\n\n```sh\nprompt$> cd $SAGE_ROOT/devel/sage/\nprompt$> hg stat\n! doc/en/introspect/__init__.py\n! doc/en/introspect/conf.py\n! doc/en/introspect/static/empty\n! doc/en/introspect/templates/layout.html\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7318\n\n",
+    "body": "Assignee: boothby\n\nCC:  @TimDumol @williamstein\n\nIn Sage, `sagenb.misc.sphinxify.sphinxify` does\n\n```python\n    shutil.rmtree(confdir, ignore_errors=True)\n```\n\nafter running Sphinx, but this should happen only if `confdir` is a temporary directory.  Otherwise,\n\n```sh\nprompt$> cd $SAGE_ROOT/devel/sage/\nprompt$> hg stat\n! doc/en/introspect/__init__.py\n! doc/en/introspect/conf.py\n! doc/en/introspect/static/empty\n! doc/en/introspect/templates/layout.html\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7318\n\n",
     "created_at": "2009-10-27T03:17:20Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007318.json:
     "title": "SageNB: Sphinxify erases doc/en/introspect",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7318",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: boothby
 
-CC:  timdumol was
+CC:  @TimDumol @williamstein
 
 In Sage, `sagenb.misc.sphinxify.sphinxify` does
 
@@ -51,16 +51,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7318
 archive/issue_comments_061143.json:
 ```json
 {
-    "body": "Attachment [trac_7318-sphinxify_confdir.patch](tarball://root/attachments/some-uuid/ticket7318/trac_7318-sphinxify_confdir.patch) by mpatel created at 2009-10-27 03:22:14\n\nPreserve doc/en/introspect in sphinxify.  Apply to sagenb repository.",
+    "body": "Attachment [trac_7318-sphinxify_confdir.patch](tarball://root/attachments/some-uuid/ticket7318/trac_7318-sphinxify_confdir.patch) by @qed777 created at 2009-10-27 03:22:14\n\nPreserve doc/en/introspect in sphinxify.  Apply to sagenb repository.",
     "created_at": "2009-10-27T03:22:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7318#issuecomment-61143",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7318-sphinxify_confdir.patch](tarball://root/attachments/some-uuid/ticket7318/trac_7318-sphinxify_confdir.patch) by mpatel created at 2009-10-27 03:22:14
+Attachment [trac_7318-sphinxify_confdir.patch](tarball://root/attachments/some-uuid/ticket7318/trac_7318-sphinxify_confdir.patch) by @qed777 created at 2009-10-27 03:22:14
 
 Preserve doc/en/introspect in sphinxify.  Apply to sagenb repository.
 
@@ -76,7 +76,7 @@ archive/issue_comments_061144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7318#issuecomment-61144",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_061145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7318#issuecomment-61145",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_061146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7318#issuecomment-61146",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_061147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7318#issuecomment-61147",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_061148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7318#issuecomment-61148",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_009114.json:
     "title": "Improve documentation of infinite polynomial rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9114",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 Assignee: Simon King
@@ -45,7 +45,7 @@ archive/issue_comments_084795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9114#issuecomment-84795",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_084796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9114#issuecomment-84796",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -76,16 +76,16 @@ Changing status from new to needs_review.
 archive/issue_comments_084797.json:
 ```json
 {
-    "body": "Attachment [9114_doc_infinite_polynomial.patch](tarball://root/attachments/some-uuid/ticket9114/9114_doc_infinite_polynomial.patch) by SimonKing created at 2010-06-02 11:04:27",
+    "body": "Attachment [9114_doc_infinite_polynomial.patch](tarball://root/attachments/some-uuid/ticket9114/9114_doc_infinite_polynomial.patch) by @simon-king-jena created at 2010-06-02 11:04:27",
     "created_at": "2010-06-02T11:04:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9114#issuecomment-84797",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [9114_doc_infinite_polynomial.patch](tarball://root/attachments/some-uuid/ticket9114/9114_doc_infinite_polynomial.patch) by SimonKing created at 2010-06-02 11:04:27
+Attachment [9114_doc_infinite_polynomial.patch](tarball://root/attachments/some-uuid/ticket9114/9114_doc_infinite_polynomial.patch) by @simon-king-jena created at 2010-06-02 11:04:27
 
 
 
@@ -94,16 +94,16 @@ Attachment [9114_doc_infinite_polynomial.patch](tarball://root/attachments/some-
 archive/issue_comments_084798.json:
 ```json
 {
-    "body": "Attachment [trac_9114-reviewer.patch](tarball://root/attachments/some-uuid/ticket9114/trac_9114-reviewer.patch) by davidloeffler created at 2010-06-14 12:14:38\n\napply over previous patch",
+    "body": "Attachment [trac_9114-reviewer.patch](tarball://root/attachments/some-uuid/ticket9114/trac_9114-reviewer.patch) by @loefflerd created at 2010-06-14 12:14:38\n\napply over previous patch",
     "created_at": "2010-06-14T12:14:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9114#issuecomment-84798",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_9114-reviewer.patch](tarball://root/attachments/some-uuid/ticket9114/trac_9114-reviewer.patch) by davidloeffler created at 2010-06-14 12:14:38
+Attachment [trac_9114-reviewer.patch](tarball://root/attachments/some-uuid/ticket9114/trac_9114-reviewer.patch) by @loefflerd created at 2010-06-14 12:14:38
 
 apply over previous patch
 
@@ -119,7 +119,7 @@ archive/issue_comments_084799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9114#issuecomment-84799",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_084800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9114#issuecomment-84800",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_084801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9114#issuecomment-84801",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_084802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9114#issuecomment-84802",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

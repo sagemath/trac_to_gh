@@ -3,7 +3,7 @@
 archive/issues_007619.json:
 ```json
 {
-    "body": "Assignee: slabbe\n\nCC:  saliola\n\nCurrently pickling doesn't work for finite word defined by iterator and callable :\n\n\n```\nsage: w = Word(iter('abcdefghijkl'))\nsage: loads(dumps(w))\nTraceback (most recent call last):\n...\nPicklingError: Can't pickle <type 'generator'>: attribute lookup __builtin__.generator failed\n```\n\n\nThis is not too hard to support. One just have to expand the iterator to a list  (or a tuple?) and save the list instead:\n\n\n```\nsage: w = Word(iter('abcdefghijkl'))\nsage: loads(dumps(w))\nword: abcdefghijkl\nsage: type(_)\n<class 'sage.combinat.words.word.FiniteWord_list'>\n```\n\n\nThis is more general solution to the problem solved in #7519.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7619\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  @saliola\n\nCurrently pickling doesn't work for finite word defined by iterator and callable :\n\n\n```\nsage: w = Word(iter('abcdefghijkl'))\nsage: loads(dumps(w))\nTraceback (most recent call last):\n...\nPicklingError: Can't pickle <type 'generator'>: attribute lookup __builtin__.generator failed\n```\n\n\nThis is not too hard to support. One just have to expand the iterator to a list  (or a tuple?) and save the list instead:\n\n\n```\nsage: w = Word(iter('abcdefghijkl'))\nsage: loads(dumps(w))\nword: abcdefghijkl\nsage: type(_)\n<class 'sage.combinat.words.word.FiniteWord_list'>\n```\n\n\nThis is more general solution to the problem solved in #7519.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7619\n\n",
     "created_at": "2009-12-08T12:45:18Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_007619.json:
     "title": "Pickling support for finite word defined by callable and iterable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7619",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: slabbe
+Assignee: @seblabbe
 
-CC:  saliola
+CC:  @saliola
 
 Currently pickling doesn't work for finite word defined by iterator and callable :
 
@@ -64,7 +64,7 @@ archive/issue_comments_065110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7619",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7619#issuecomment-65110",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_065111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7619",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7619#issuecomment-65111",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_065112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7619",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7619#issuecomment-65112",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_065113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7619",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7619#issuecomment-65113",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -169,16 +169,16 @@ Forget about this patch!
 archive/issue_comments_065114.json:
 ```json
 {
-    "body": "Attachment [trac_7619_pickle_for_FiniteWord_iter_callable-sl.patch](tarball://root/attachments/some-uuid/ticket7619/trac_7619_pickle_for_FiniteWord_iter_callable-sl.patch) by slabbe created at 2010-02-25 10:59:01\n\nDepends on #7520.",
+    "body": "Attachment [trac_7619_pickle_for_FiniteWord_iter_callable-sl.patch](tarball://root/attachments/some-uuid/ticket7619/trac_7619_pickle_for_FiniteWord_iter_callable-sl.patch) by @seblabbe created at 2010-02-25 10:59:01\n\nDepends on #7520.",
     "created_at": "2010-02-25T10:59:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7619",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7619#issuecomment-65114",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_7619_pickle_for_FiniteWord_iter_callable-sl.patch](tarball://root/attachments/some-uuid/ticket7619/trac_7619_pickle_for_FiniteWord_iter_callable-sl.patch) by slabbe created at 2010-02-25 10:59:01
+Attachment [trac_7619_pickle_for_FiniteWord_iter_callable-sl.patch](tarball://root/attachments/some-uuid/ticket7619/trac_7619_pickle_for_FiniteWord_iter_callable-sl.patch) by @seblabbe created at 2010-02-25 10:59:01
 
 Depends on #7520.
 
@@ -194,7 +194,7 @@ archive/issue_comments_065115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7619",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7619#issuecomment-65115",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_065116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7619",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7619#issuecomment-65116",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_065117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7619",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7619#issuecomment-65117",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 

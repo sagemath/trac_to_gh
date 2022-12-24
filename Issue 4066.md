@@ -3,7 +3,7 @@
 archive/issues_004066.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  robertwb\n\nThere are two small fixes needed for the Sage library.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4066\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @robertwb\n\nThere are two small fixes needed for the Sage library.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4066\n\n",
     "created_at": "2008-09-05T06:42:16Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_004066.json:
 ```
 Assignee: mabshoff
 
-CC:  robertwb
+CC:  @robertwb
 
 There are two small fixes needed for the Sage library.
 
@@ -114,7 +114,7 @@ archive/issue_comments_029348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4066",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4066#issuecomment-29348",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

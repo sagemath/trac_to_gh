@@ -3,7 +3,7 @@
 archive/issues_006334.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  cswiercz\n\n\n```\nsage -t -long --optional devel/sage/sage/finance/stock.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/finance/stock.py\", line 180:\n    sage: finance.Stock('vmw').google()[:5]   # optional -- internet\nExpected:\n    [\n     28-Nov-07 80.57 88.49 80.57 87.69    7496000,\n     29-Nov-07 90.91 93.20 89.50 90.85    5497600,\n     30-Nov-07 95.39 95.60 89.85 91.37    4750200,\n      3-Dec-07 89.87 96.00 88.70 94.97    4401100,\n      4-Dec-07 92.26 97.10 92.05 95.08    2896600\n    ]\nGot:\n    [\n     16-Jun-08 66.00 67.50 65.60 67.47    1742000,\n     17-Jun-08 67.84 67.84 66.03 67.00    1196900,\n     18-Jun-08 66.50 66.56 64.76 66.19    1186400,\n     19-Jun-08 65.92 66.50 64.69 65.72     549200,\n     20-Jun-08 65.72 65.72 63.12 63.86    1242300\n    ]\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_9\n***Test Failed*** 1 failures.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6334\n\n",
+    "body": "Assignee: tbd\n\nCC:  @cswiercz\n\n\n```\nsage -t -long --optional devel/sage/sage/finance/stock.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/finance/stock.py\", line 180:\n    sage: finance.Stock('vmw').google()[:5]   # optional -- internet\nExpected:\n    [\n     28-Nov-07 80.57 88.49 80.57 87.69    7496000,\n     29-Nov-07 90.91 93.20 89.50 90.85    5497600,\n     30-Nov-07 95.39 95.60 89.85 91.37    4750200,\n      3-Dec-07 89.87 96.00 88.70 94.97    4401100,\n      4-Dec-07 92.26 97.10 92.05 95.08    2896600\n    ]\nGot:\n    [\n     16-Jun-08 66.00 67.50 65.60 67.47    1742000,\n     17-Jun-08 67.84 67.84 66.03 67.00    1196900,\n     18-Jun-08 66.50 66.56 64.76 66.19    1186400,\n     19-Jun-08 65.92 66.50 64.69 65.72     549200,\n     20-Jun-08 65.72 65.72 63.12 63.86    1242300\n    ]\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_9\n***Test Failed*** 1 failures.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6334\n\n",
     "created_at": "2009-06-16T15:16:52Z",
     "labels": [
         "packages: optional",
@@ -14,12 +14,12 @@ archive/issues_006334.json:
     "title": "optional doctest failure -- broken finance doctest failures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6334",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
 
-CC:  cswiercz
+CC:  @cswiercz
 
 
 ```
@@ -61,16 +61,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6334
 archive/issue_comments_050555.json:
 ```json
 {
-    "body": "Changing assignee from tbd to cswiercz.",
+    "body": "Changing assignee from tbd to @cswiercz.",
     "created_at": "2009-06-16T15:44:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6334#issuecomment-50555",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Changing assignee from tbd to cswiercz.
+Changing assignee from tbd to @cswiercz.
 
 
 
@@ -79,16 +79,16 @@ Changing assignee from tbd to cswiercz.
 archive/issue_comments_050556.json:
 ```json
 {
-    "body": "Attachment [sage-6334.patch](tarball://root/attachments/some-uuid/ticket6334/sage-6334.patch) by cswiercz created at 2009-06-16 22:18:20\n\nI also updated stock.py's documentation for Sphinx formatting.",
+    "body": "Attachment [sage-6334.patch](tarball://root/attachments/some-uuid/ticket6334/sage-6334.patch) by @cswiercz created at 2009-06-16 22:18:20\n\nI also updated stock.py's documentation for Sphinx formatting.",
     "created_at": "2009-06-16T22:18:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6334#issuecomment-50556",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Attachment [sage-6334.patch](tarball://root/attachments/some-uuid/ticket6334/sage-6334.patch) by cswiercz created at 2009-06-16 22:18:20
+Attachment [sage-6334.patch](tarball://root/attachments/some-uuid/ticket6334/sage-6334.patch) by @cswiercz created at 2009-06-16 22:18:20
 
 I also updated stock.py's documentation for Sphinx formatting.
 
@@ -104,7 +104,7 @@ archive/issue_comments_050557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6334#issuecomment-50557",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_050558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6334#issuecomment-50558",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_050559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6334#issuecomment-50559",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -157,16 +157,16 @@ sage -t -optional   output on  stock.py
 archive/issue_comments_050560.json:
 ```json
 {
-    "body": "Attachment [stock-tests.txt](tarball://root/attachments/some-uuid/ticket6334/stock-tests.txt) by rbeezer created at 2009-07-17 04:02:12",
+    "body": "Attachment [stock-tests.txt](tarball://root/attachments/some-uuid/ticket6334/stock-tests.txt) by @rbeezer created at 2009-07-17 04:02:12",
     "created_at": "2009-07-17T04:02:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6334#issuecomment-50560",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [stock-tests.txt](tarball://root/attachments/some-uuid/ticket6334/stock-tests.txt) by rbeezer created at 2009-07-17 04:02:12
+Attachment [stock-tests.txt](tarball://root/attachments/some-uuid/ticket6334/stock-tests.txt) by @rbeezer created at 2009-07-17 04:02:12
 
 
 
@@ -180,7 +180,7 @@ archive/issue_comments_050561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6334#issuecomment-50561",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -193,16 +193,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_050562.json:
 ```json
 {
-    "body": "Attachment [trac_6334_reviewer_edits.patch](tarball://root/attachments/some-uuid/ticket6334/trac_6334_reviewer_edits.patch) by burcin created at 2013-01-11 11:05:51\n\nIt looks like Minh fixed the documentation in `sage/finance` with [attachment:trac_9218-reviewer.patch:ticket:9218].\n\nThere is also #13884 to fix the optional doctests, where Karl-Dieter posted a patch.\n\nShall we close this ticket as duplicate?",
+    "body": "Attachment [trac_6334_reviewer_edits.patch](tarball://root/attachments/some-uuid/ticket6334/trac_6334_reviewer_edits.patch) by @burcin created at 2013-01-11 11:05:51\n\nIt looks like Minh fixed the documentation in `sage/finance` with [attachment:trac_9218-reviewer.patch:ticket:9218].\n\nThere is also #13884 to fix the optional doctests, where Karl-Dieter posted a patch.\n\nShall we close this ticket as duplicate?",
     "created_at": "2013-01-11T11:05:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6334#issuecomment-50562",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6334_reviewer_edits.patch](tarball://root/attachments/some-uuid/ticket6334/trac_6334_reviewer_edits.patch) by burcin created at 2013-01-11 11:05:51
+Attachment [trac_6334_reviewer_edits.patch](tarball://root/attachments/some-uuid/ticket6334/trac_6334_reviewer_edits.patch) by @burcin created at 2013-01-11 11:05:51
 
 It looks like Minh fixed the documentation in `sage/finance` with [attachment:trac_9218-reviewer.patch:ticket:9218].
 
@@ -222,7 +222,7 @@ archive/issue_comments_050563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6334#issuecomment-50563",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_050564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6334#issuecomment-50564",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_050565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6334#issuecomment-50565",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

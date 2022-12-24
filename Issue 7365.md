@@ -3,7 +3,7 @@
 archive/issues_007365.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nImplement a function corresponding to Petersen's theorem on 2-factors.\n\nThis theorem says that any 2r-regular graphs can be decomposed in 2-factors. If the graph is not regular and is of maximum degree Delta, then it can be decomposed as an union of Delta/2 disjoints (<=2)-factors.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7365\n\n",
+    "body": "Assignee: @rlmill\n\nImplement a function corresponding to Petersen's theorem on 2-factors.\n\nThis theorem says that any 2r-regular graphs can be decomposed in 2-factors. If the graph is not regular and is of maximum degree Delta, then it can be decomposed as an union of Delta/2 disjoints (<=2)-factors.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7365\n\n",
     "created_at": "2009-10-31T20:53:35Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007365.json:
     "title": "Petersen's 2-factor theorem",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7365",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Implement a function corresponding to Petersen's theorem on 2-factors.
 
@@ -39,7 +39,7 @@ archive/issue_comments_061722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7365#issuecomment-61722",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_061723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7365#issuecomment-61723",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_061724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7365#issuecomment-61724",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_061725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7365#issuecomment-61725",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_061726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7365#issuecomment-61726",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -134,16 +134,16 @@ Nathann
 archive/issue_comments_061727.json:
 ```json
 {
-    "body": "Attachment [trac_7365.patch](tarball://root/attachments/some-uuid/ticket7365/trac_7365.patch) by ncohen created at 2009-12-18 08:54:06\n\nI tried to find another example, but could not find any interesting/funny one (the theorem and its proof by themselves are enough to make me laugh :-) ). If you can think of a good one, just tell me and I'll add it :-)\n\nNathann",
+    "body": "Attachment [trac_7365.patch](tarball://root/attachments/some-uuid/ticket7365/trac_7365.patch) by @nathanncohen created at 2009-12-18 08:54:06\n\nI tried to find another example, but could not find any interesting/funny one (the theorem and its proof by themselves are enough to make me laugh :-) ). If you can think of a good one, just tell me and I'll add it :-)\n\nNathann",
     "created_at": "2009-12-18T08:54:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7365#issuecomment-61727",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_7365.patch](tarball://root/attachments/some-uuid/ticket7365/trac_7365.patch) by ncohen created at 2009-12-18 08:54:06
+Attachment [trac_7365.patch](tarball://root/attachments/some-uuid/ticket7365/trac_7365.patch) by @nathanncohen created at 2009-12-18 08:54:06
 
 I tried to find another example, but could not find any interesting/funny one (the theorem and its proof by themselves are enough to make me laugh :-) ). If you can think of a good one, just tell me and I'll add it :-)
 
@@ -156,16 +156,16 @@ Nathann
 archive/issue_comments_061728.json:
 ```json
 {
-    "body": "Attachment [tmp_4.png](tarball://root/attachments/some-uuid/ticket7365/tmp_4.png) by rlm created at 2009-12-18 19:21:29",
+    "body": "Attachment [tmp_4.png](tarball://root/attachments/some-uuid/ticket7365/tmp_4.png) by @rlmill created at 2009-12-18 19:21:29",
     "created_at": "2009-12-18T19:21:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7365#issuecomment-61728",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [tmp_4.png](tarball://root/attachments/some-uuid/ticket7365/tmp_4.png) by rlm created at 2009-12-18 19:21:29
+Attachment [tmp_4.png](tarball://root/attachments/some-uuid/ticket7365/tmp_4.png) by @rlmill created at 2009-12-18 19:21:29
 
 
 
@@ -179,7 +179,7 @@ archive/issue_comments_061729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7365#issuecomment-61729",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -192,16 +192,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_061730.json:
 ```json
 {
-    "body": "Attachment [trac_7365-doctest.patch](tarball://root/attachments/some-uuid/ticket7365/trac_7365-doctest.patch) by rlm created at 2009-12-18 19:22:58",
+    "body": "Attachment [trac_7365-doctest.patch](tarball://root/attachments/some-uuid/ticket7365/trac_7365-doctest.patch) by @rlmill created at 2009-12-18 19:22:58",
     "created_at": "2009-12-18T19:22:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7365#issuecomment-61730",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_7365-doctest.patch](tarball://root/attachments/some-uuid/ticket7365/trac_7365-doctest.patch) by rlm created at 2009-12-18 19:22:58
+Attachment [trac_7365-doctest.patch](tarball://root/attachments/some-uuid/ticket7365/trac_7365-doctest.patch) by @rlmill created at 2009-12-18 19:22:58
 
 
 
@@ -215,7 +215,7 @@ archive/issue_comments_061731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7365#issuecomment-61731",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

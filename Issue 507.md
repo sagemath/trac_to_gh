@@ -3,7 +3,7 @@
 archive/issues_000507.json:
 ```json
 {
-    "body": "Assignee: was\n\n1. Create a script test.sage with this 1 line\n\n```\nsolve([x==1], x)\n```\n\n\n2. Run it like so:\n\n```\n  $ sage test.sage\n  Exception exceptions.AttributeError: \"'NoneType' object has no attribute 'ExceptionPexpect'\" in  ignored\n```\n\n\n3. If you put instead\n\n```\nprint solve([x==1], x)\n```\n\nthen everything works fine.\n\nClearly there is a bug there, probably with quitting the pexpect interface to maxima. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/507\n\n",
+    "body": "Assignee: @williamstein\n\n1. Create a script test.sage with this 1 line\n\n```\nsolve([x==1], x)\n```\n\n\n2. Run it like so:\n\n```\n  $ sage test.sage\n  Exception exceptions.AttributeError: \"'NoneType' object has no attribute 'ExceptionPexpect'\" in  ignored\n```\n\n\n3. If you put instead\n\n```\nprint solve([x==1], x)\n```\n\nthen everything works fine.\n\nClearly there is a bug there, probably with quitting the pexpect interface to maxima. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/507\n\n",
     "created_at": "2007-08-29T08:16:40Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_000507.json:
     "title": "Bad error message when running a script",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/507",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 1. Create a script test.sage with this 1 line
 
@@ -56,16 +56,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/507
 archive/issue_comments_002540.json:
 ```json
 {
-    "body": "Attachment [6116.patch](tarball://root/attachments/some-uuid/ticket507/6116.patch) by malb created at 2007-09-04 10:18:18\n\nI've attached a work-around for this bug (6116.patch). It is probably best to understand the behaviour first, but the attached patch works around it for now.",
+    "body": "Attachment [6116.patch](tarball://root/attachments/some-uuid/ticket507/6116.patch) by @malb created at 2007-09-04 10:18:18\n\nI've attached a work-around for this bug (6116.patch). It is probably best to understand the behaviour first, but the attached patch works around it for now.",
     "created_at": "2007-09-04T10:18:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/507#issuecomment-2540",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [6116.patch](tarball://root/attachments/some-uuid/ticket507/6116.patch) by malb created at 2007-09-04 10:18:18
+Attachment [6116.patch](tarball://root/attachments/some-uuid/ticket507/6116.patch) by @malb created at 2007-09-04 10:18:18
 
 I've attached a work-around for this bug (6116.patch). It is probably best to understand the behaviour first, but the attached patch works around it for now.
 
@@ -113,7 +113,7 @@ archive/issue_comments_002542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/507#issuecomment-2542",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

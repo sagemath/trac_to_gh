@@ -14,7 +14,7 @@ archive/issues_008809.json:
     "title": "change local/bin/sage_fortran script to respect the SAGE_FORTRAN variable, if it is set",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8809",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: GeorgSWeber
@@ -56,7 +56,7 @@ archive/issue_comments_080852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8809#issuecomment-80852",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_080853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8809#issuecomment-80853",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_080854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8809#issuecomment-80854",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_080855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8809#issuecomment-80855",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

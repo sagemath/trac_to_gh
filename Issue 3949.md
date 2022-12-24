@@ -75,7 +75,7 @@ archive/issue_comments_028347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3949#issuecomment-28347",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -88,16 +88,16 @@ See #3923
 archive/issue_comments_028348.json:
 ```json
 {
-    "body": "Attachment [trac_3949.patch](tarball://root/attachments/some-uuid/ticket3949/trac_3949.patch) by mhansen created at 2008-10-23 23:30:02",
+    "body": "Attachment [trac_3949.patch](tarball://root/attachments/some-uuid/ticket3949/trac_3949.patch) by @mwhansen created at 2008-10-23 23:30:02",
     "created_at": "2008-10-23T23:30:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3949#issuecomment-28348",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3949.patch](tarball://root/attachments/some-uuid/ticket3949/trac_3949.patch) by mhansen created at 2008-10-23 23:30:02
+Attachment [trac_3949.patch](tarball://root/attachments/some-uuid/ticket3949/trac_3949.patch) by @mwhansen created at 2008-10-23 23:30:02
 
 
 
@@ -106,16 +106,16 @@ Attachment [trac_3949.patch](tarball://root/attachments/some-uuid/ticket3949/tra
 archive/issue_comments_028349.json:
 ```json
 {
-    "body": "Changing assignee from boothby to mhansen.",
+    "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2008-10-23T23:31:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3949#issuecomment-28349",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from boothby to mhansen.
+Changing assignee from boothby to @mwhansen.
 
 
 
@@ -129,7 +129,7 @@ archive/issue_comments_028350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3949#issuecomment-28350",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -142,16 +142,16 @@ Changing status from new to assigned.
 archive/issue_comments_028351.json:
 ```json
 {
-    "body": "Attachment [extcode_3949.patch](tarball://root/attachments/some-uuid/ticket3949/extcode_3949.patch) by mhansen created at 2008-10-23 23:31:47\n\nI've rebased this against 3.2.alpha0 and moved the templates into sage/server/notebook/templates/\n\nApply only the last two patches: trac_3949.patch and extcode_3949.patch",
+    "body": "Attachment [extcode_3949.patch](tarball://root/attachments/some-uuid/ticket3949/extcode_3949.patch) by @mwhansen created at 2008-10-23 23:31:47\n\nI've rebased this against 3.2.alpha0 and moved the templates into sage/server/notebook/templates/\n\nApply only the last two patches: trac_3949.patch and extcode_3949.patch",
     "created_at": "2008-10-23T23:31:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3949#issuecomment-28351",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [extcode_3949.patch](tarball://root/attachments/some-uuid/ticket3949/extcode_3949.patch) by mhansen created at 2008-10-23 23:31:47
+Attachment [extcode_3949.patch](tarball://root/attachments/some-uuid/ticket3949/extcode_3949.patch) by @mwhansen created at 2008-10-23 23:31:47
 
 I've rebased this against 3.2.alpha0 and moved the templates into sage/server/notebook/templates/
 

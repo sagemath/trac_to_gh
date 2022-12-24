@@ -14,7 +14,7 @@ archive/issues_009563.json:
     "title": "Remove the English-language tutorial's Makefile",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9563",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: mvngu
@@ -39,7 +39,7 @@ archive/issue_comments_092322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9563",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9563#issuecomment-92322",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -52,16 +52,16 @@ Yep, we should be able to delete it.
 archive/issue_comments_092323.json:
 ```json
 {
-    "body": "Attachment [trac_9563.patch](tarball://root/attachments/some-uuid/ticket9563/trac_9563.patch) by mhansen created at 2012-03-29 07:22:23",
+    "body": "Attachment [trac_9563.patch](tarball://root/attachments/some-uuid/ticket9563/trac_9563.patch) by @mwhansen created at 2012-03-29 07:22:23",
     "created_at": "2012-03-29T07:22:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9563",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9563#issuecomment-92323",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_9563.patch](tarball://root/attachments/some-uuid/ticket9563/trac_9563.patch) by mhansen created at 2012-03-29 07:22:23
+Attachment [trac_9563.patch](tarball://root/attachments/some-uuid/ticket9563/trac_9563.patch) by @mwhansen created at 2012-03-29 07:22:23
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_092324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9563",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9563#issuecomment-92324",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_092325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9563",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9563#issuecomment-92325",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_092326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9563",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9563#issuecomment-92326",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_092327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9563",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9563#issuecomment-92327",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

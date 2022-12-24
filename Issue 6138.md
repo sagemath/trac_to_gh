@@ -3,7 +3,7 @@
 archive/issues_006138.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat\n\nKeywords: symmetric group, free module\n\nSee: http://combinat.sagemath.org/patches/file/tip/categories-symmetric_group_algebra-6138-nt.patch\n\nDepends on #6136\n\nIssue created by migration from https://trac.sagemath.org/ticket/6138\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: symmetric group, free module\n\nSee: http://combinat.sagemath.org/patches/file/tip/categories-symmetric_group_algebra-6138-nt.patch\n\nDepends on #6136\n\nIssue created by migration from https://trac.sagemath.org/ticket/6138\n\n",
     "created_at": "2009-05-27T05:38:44Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_006138.json:
     "title": "SymmetricGroupAlgebra: updates w.r.t. categories and free modules",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6138",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
 CC:  sage-combinat
 
@@ -43,7 +43,7 @@ archive/issue_comments_049014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6138#issuecomment-49014",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -56,16 +56,16 @@ Changing status from new to needs_review.
 archive/issue_comments_049015.json:
 ```json
 {
-    "body": "Attachment [categories-symmetric_group_algebra-6138-nt.patch](tarball://root/attachments/some-uuid/ticket6138/categories-symmetric_group_algebra-6138-nt.patch) by hivert created at 2009-10-16 11:10:33",
+    "body": "Attachment [categories-symmetric_group_algebra-6138-nt.patch](tarball://root/attachments/some-uuid/ticket6138/categories-symmetric_group_algebra-6138-nt.patch) by @hivert created at 2009-10-16 11:10:33",
     "created_at": "2009-10-16T11:10:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6138#issuecomment-49015",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [categories-symmetric_group_algebra-6138-nt.patch](tarball://root/attachments/some-uuid/ticket6138/categories-symmetric_group_algebra-6138-nt.patch) by hivert created at 2009-10-16 11:10:33
+Attachment [categories-symmetric_group_algebra-6138-nt.patch](tarball://root/attachments/some-uuid/ticket6138/categories-symmetric_group_algebra-6138-nt.patch) by @hivert created at 2009-10-16 11:10:33
 
 
 
@@ -79,7 +79,7 @@ archive/issue_comments_049016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6138#issuecomment-49016",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_049017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6138#issuecomment-49017",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_049018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6138#issuecomment-49018",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_049019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6138#issuecomment-49019",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_049020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6138#issuecomment-49020",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -167,13 +167,13 @@ Resolution: fixed
 archive/issue_comments_049021.json:
 ```json
 {
-    "body": "Attachment [trac_6138-categories-symmetric_group_algebra-6138-nt.patch](tarball://root/attachments/some-uuid/ticket6138/trac_6138-categories-symmetric_group_algebra-6138-nt.patch) by mhansen created at 2009-11-19 17:00:03",
+    "body": "Attachment [trac_6138-categories-symmetric_group_algebra-6138-nt.patch](tarball://root/attachments/some-uuid/ticket6138/trac_6138-categories-symmetric_group_algebra-6138-nt.patch) by @mwhansen created at 2009-11-19 17:00:03",
     "created_at": "2009-11-19T17:00:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6138#issuecomment-49021",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6138-categories-symmetric_group_algebra-6138-nt.patch](tarball://root/attachments/some-uuid/ticket6138/trac_6138-categories-symmetric_group_algebra-6138-nt.patch) by mhansen created at 2009-11-19 17:00:03
+Attachment [trac_6138-categories-symmetric_group_algebra-6138-nt.patch](tarball://root/attachments/some-uuid/ticket6138/trac_6138-categories-symmetric_group_algebra-6138-nt.patch) by @mwhansen created at 2009-11-19 17:00:03

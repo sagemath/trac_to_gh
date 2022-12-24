@@ -3,7 +3,7 @@
 archive/issues_001340.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nTry this from the notebook:\n\n\n```\n%cython\n\ndef foo(e,f):\n  return e*f\n```\n\n\nand you'll get:\n\n\n```\nTraceback (most recent call last):    \n  File \"/home/malb/SAGE/local/lib/python2.5/site-packages/sage/server/support.py\", line 303, in cython_import_all\n    create_local_c_file=create_local_c_file)\n  File \"/home/malb/SAGE/local/lib/python2.5/site-packages/sage/server/support.py\", line 284, in cython_import\n    create_local_c_file=create_local_c_file)\n  File \"/home/malb/SAGE/local/lib/python2.5/site-packages/sage/misc/cython.py\", line 220, in cython\n    raise RuntimeError, \"Error converting %s to C:\\n%s\\n%s\"%(filename, log, err)\nRuntimeError: Error converting /home/malb/Texte/Talks/20071129 - SAGE - Paris/sage_notebook/worksheets/admin/2/code/sage47.spyx to C:\n\nCython (http://cython.org) is a compiler for code written in the\nCython language.  Cython is based on Pyrex by Greg Ewing.\n\nUsage: cython [options] sourcefile.pyx ...\n\nOptions:\n  -v, --version                  Display version number of cython compiler\n  -l, --create-listing           Write error messages to a listing file\n  -I, --include-dir <directory>  Search for include files in named directory\n                                 (multiply include directories are allowed).\n  -o, --output-file <filename>   Specify name of generated C file\n  -p, --embed-positions          If specified, the positions in Cython files of each\n                                 function definition is embedded in its docstring.\n  -z, --pre-import <module>      If specified, assume undeclared names in this \n                                 module. Emulates the behavior of putting \n                                 \"from <module> import *\" at the top of the file. \n  --incref-local-binop           Force local an extra incref on local variables before\n                                 performing any binary operations.\n  -D, --no-docstrings            Remove docstrings.\n  -a, --annotate                 Produce an colorized version of the source.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1340\n\n",
+    "body": "Assignee: @robertwb\n\nTry this from the notebook:\n\n\n```\n%cython\n\ndef foo(e,f):\n  return e*f\n```\n\n\nand you'll get:\n\n\n```\nTraceback (most recent call last):    \n  File \"/home/malb/SAGE/local/lib/python2.5/site-packages/sage/server/support.py\", line 303, in cython_import_all\n    create_local_c_file=create_local_c_file)\n  File \"/home/malb/SAGE/local/lib/python2.5/site-packages/sage/server/support.py\", line 284, in cython_import\n    create_local_c_file=create_local_c_file)\n  File \"/home/malb/SAGE/local/lib/python2.5/site-packages/sage/misc/cython.py\", line 220, in cython\n    raise RuntimeError, \"Error converting %s to C:\\n%s\\n%s\"%(filename, log, err)\nRuntimeError: Error converting /home/malb/Texte/Talks/20071129 - SAGE - Paris/sage_notebook/worksheets/admin/2/code/sage47.spyx to C:\n\nCython (http://cython.org) is a compiler for code written in the\nCython language.  Cython is based on Pyrex by Greg Ewing.\n\nUsage: cython [options] sourcefile.pyx ...\n\nOptions:\n  -v, --version                  Display version number of cython compiler\n  -l, --create-listing           Write error messages to a listing file\n  -I, --include-dir <directory>  Search for include files in named directory\n                                 (multiply include directories are allowed).\n  -o, --output-file <filename>   Specify name of generated C file\n  -p, --embed-positions          If specified, the positions in Cython files of each\n                                 function definition is embedded in its docstring.\n  -z, --pre-import <module>      If specified, assume undeclared names in this \n                                 module. Emulates the behavior of putting \n                                 \"from <module> import *\" at the top of the file. \n  --incref-local-binop           Force local an extra incref on local variables before\n                                 performing any binary operations.\n  -D, --no-docstrings            Remove docstrings.\n  -a, --annotate                 Produce an colorized version of the source.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1340\n\n",
     "created_at": "2007-11-29T13:27:45Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_001340.json:
     "title": "%cython seriously broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1340",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 Try this from the notebook:
 
@@ -82,7 +82,7 @@ archive/issue_comments_008593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1340#issuecomment-8593",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_008594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1340#issuecomment-8594",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_008595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1340#issuecomment-8595",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_008596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1340#issuecomment-8596",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_008597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1340#issuecomment-8597",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_008598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1340#issuecomment-8598",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -197,16 +197,16 @@ Resolution changed from invalid to
 archive/issue_comments_008599.json:
 ```json
 {
-    "body": "Attachment [1340-cython-spaces.patch](tarball://root/attachments/some-uuid/ticket1340/1340-cython-spaces.patch) by robertwb created at 2007-12-02 09:52:26",
+    "body": "Attachment [1340-cython-spaces.patch](tarball://root/attachments/some-uuid/ticket1340/1340-cython-spaces.patch) by @robertwb created at 2007-12-02 09:52:26",
     "created_at": "2007-12-02T09:52:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1340#issuecomment-8599",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [1340-cython-spaces.patch](tarball://root/attachments/some-uuid/ticket1340/1340-cython-spaces.patch) by robertwb created at 2007-12-02 09:52:26
+Attachment [1340-cython-spaces.patch](tarball://root/attachments/some-uuid/ticket1340/1340-cython-spaces.patch) by @robertwb created at 2007-12-02 09:52:26
 
 
 

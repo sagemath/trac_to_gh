@@ -3,7 +3,7 @@
 archive/issues_003257.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nFor most arguments to GCC_Compiler, gccc will completely ignore them and use the enviromental defaults instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3257\n\n",
+    "body": "Assignee: @garyfurnish\n\nFor most arguments to GCC_Compiler, gccc will completely ignore them and use the enviromental defaults instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3257\n\n",
     "created_at": "2008-05-19T18:53:19Z",
     "labels": [
         "pbuild",
@@ -14,10 +14,10 @@ archive/issues_003257.json:
     "title": "Pbuild ignores gcc specific default settings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3257",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 For most arguments to GCC_Compiler, gccc will completely ignore them and use the enviromental defaults instead.
 
@@ -37,7 +37,7 @@ archive/issue_comments_022539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3257#issuecomment-22539",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to assigned.
 archive/issue_comments_022540.json:
 ```json
 {
-    "body": "Attachment [trac_3257.patch](tarball://root/attachments/some-uuid/ticket3257/trac_3257.patch) by gfurnish created at 2008-05-19 18:57:41",
+    "body": "Attachment [trac_3257.patch](tarball://root/attachments/some-uuid/ticket3257/trac_3257.patch) by @garyfurnish created at 2008-05-19 18:57:41",
     "created_at": "2008-05-19T18:57:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3257#issuecomment-22540",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_3257.patch](tarball://root/attachments/some-uuid/ticket3257/trac_3257.patch) by gfurnish created at 2008-05-19 18:57:41
+Attachment [trac_3257.patch](tarball://root/attachments/some-uuid/ticket3257/trac_3257.patch) by @garyfurnish created at 2008-05-19 18:57:41
 
 
 

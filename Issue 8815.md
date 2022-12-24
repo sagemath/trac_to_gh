@@ -3,7 +3,7 @@
 archive/issues_008815.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nThis code was clearly never actually tried out.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8815\n\n",
+    "body": "Assignee: @JohnCremona\n\nThis code was clearly never actually tried out.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8815\n\n",
     "created_at": "2010-04-29T04:24:30Z",
     "labels": [
         "elliptic curves",
@@ -14,10 +14,10 @@ archive/issues_008815.json:
     "title": "Misc elliptic curve typo fixes (easy review)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8815",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 This code was clearly never actually tried out.
 
@@ -37,7 +37,7 @@ archive/issue_comments_080905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8815#issuecomment-80905",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to needs_review.
 archive/issue_comments_080906.json:
 ```json
 {
-    "body": "Attachment [8815-ec-fixes.patch](tarball://root/attachments/some-uuid/ticket8815/8815-ec-fixes.patch) by robertwb created at 2010-04-29 04:30:31\n\nNote, `AttributeError` was the wrong thing to raise here, and got caught in odd places. The other logic was overly complicated, just let the TypeError get raised.",
+    "body": "Attachment [8815-ec-fixes.patch](tarball://root/attachments/some-uuid/ticket8815/8815-ec-fixes.patch) by @robertwb created at 2010-04-29 04:30:31\n\nNote, `AttributeError` was the wrong thing to raise here, and got caught in odd places. The other logic was overly complicated, just let the TypeError get raised.",
     "created_at": "2010-04-29T04:30:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8815#issuecomment-80906",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [8815-ec-fixes.patch](tarball://root/attachments/some-uuid/ticket8815/8815-ec-fixes.patch) by robertwb created at 2010-04-29 04:30:31
+Attachment [8815-ec-fixes.patch](tarball://root/attachments/some-uuid/ticket8815/8815-ec-fixes.patch) by @robertwb created at 2010-04-29 04:30:31
 
 Note, `AttributeError` was the wrong thing to raise here, and got caught in odd places. The other logic was overly complicated, just let the TypeError get raised.
 
@@ -75,7 +75,7 @@ archive/issue_comments_080907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8815#issuecomment-80907",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_080908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8815#issuecomment-80908",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_080909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8815#issuecomment-80909",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -143,16 +143,16 @@ I'll fix the patch, including more doctests.
 archive/issue_comments_080910.json:
 ```json
 {
-    "body": "Attachment [8815-ec-fixes.2.patch](tarball://root/attachments/some-uuid/ticket8815/8815-ec-fixes.2.patch) by cremona created at 2010-04-29 09:38:31\n\nNo offence taken!  I'll review this again when ready.  #8820 wil take more work, so probably not today...",
+    "body": "Attachment [8815-ec-fixes.2.patch](tarball://root/attachments/some-uuid/ticket8815/8815-ec-fixes.2.patch) by @JohnCremona created at 2010-04-29 09:38:31\n\nNo offence taken!  I'll review this again when ready.  #8820 wil take more work, so probably not today...",
     "created_at": "2010-04-29T09:38:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8815#issuecomment-80910",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [8815-ec-fixes.2.patch](tarball://root/attachments/some-uuid/ticket8815/8815-ec-fixes.2.patch) by cremona created at 2010-04-29 09:38:31
+Attachment [8815-ec-fixes.2.patch](tarball://root/attachments/some-uuid/ticket8815/8815-ec-fixes.2.patch) by @JohnCremona created at 2010-04-29 09:38:31
 
 No offence taken!  I'll review this again when ready.  #8820 wil take more work, so probably not today...
 
@@ -168,7 +168,7 @@ archive/issue_comments_080911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8815#issuecomment-80911",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_080912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8815#issuecomment-80912",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_080913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8815#issuecomment-80913",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_080914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8815#issuecomment-80914",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_080915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8815#issuecomment-80915",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

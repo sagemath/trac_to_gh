@@ -3,7 +3,7 @@
 archive/issues_003065.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis happens for frobenius(0) and frobenius(2) only. \n\n```\nsage: m = matrix([])\nsage: m.frobenius(0)\n<type 'exceptions.OverflowError'>: range() result has too many items\n\nsage: m.frobenius(2)\n<type 'exceptions.RuntimeError'>:\n\nsage: m.frobenius(2,'x')\n<type 'exceptions.RuntimeError'>:\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3065\n\n",
+    "body": "Assignee: @williamstein\n\nThis happens for frobenius(0) and frobenius(2) only. \n\n```\nsage: m = matrix([])\nsage: m.frobenius(0)\n<type 'exceptions.OverflowError'>: range() result has too many items\n\nsage: m.frobenius(2)\n<type 'exceptions.RuntimeError'>:\n\nsage: m.frobenius(2,'x')\n<type 'exceptions.RuntimeError'>:\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3065\n\n",
     "created_at": "2008-04-30T15:16:35Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_003065.json:
     "title": "empty matrices: frobenius() throws  RuntimeError",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3065",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This happens for frobenius(0) and frobenius(2) only. 
 
@@ -51,7 +51,7 @@ archive/issue_comments_021155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3065",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3065#issuecomment-21155",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_021156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3065",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3065#issuecomment-21156",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_021157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3065",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3065#issuecomment-21157",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_021159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3065",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3065#issuecomment-21159",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -187,16 +187,16 @@ archive/issue_comments_021159.json:
 archive/issue_comments_021160.json:
 ```json
 {
-    "body": "Attachment [3065.patch](tarball://root/attachments/some-uuid/ticket3065/3065.patch) by dfdeshom created at 2008-05-02 17:41:42",
+    "body": "Attachment [3065.patch](tarball://root/attachments/some-uuid/ticket3065/3065.patch) by @dfdeshom created at 2008-05-02 17:41:42",
     "created_at": "2008-05-02T17:41:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3065",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3065#issuecomment-21160",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Attachment [3065.patch](tarball://root/attachments/some-uuid/ticket3065/3065.patch) by dfdeshom created at 2008-05-02 17:41:42
+Attachment [3065.patch](tarball://root/attachments/some-uuid/ticket3065/3065.patch) by @dfdeshom created at 2008-05-02 17:41:42
 
 
 

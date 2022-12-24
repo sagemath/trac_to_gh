@@ -14,7 +14,7 @@ archive/issues_006327.json:
     "title": "optional doctest failure -- failure using pari C library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6327",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -65,7 +65,7 @@ archive/issue_comments_050503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6327",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6327#issuecomment-50503",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_050504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6327",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6327#issuecomment-50504",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_050505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6327",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6327#issuecomment-50505",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_050506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6327",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6327#issuecomment-50506",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_050507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6327",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6327#issuecomment-50507",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_050508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6327",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6327#issuecomment-50508",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_050509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6327",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6327#issuecomment-50509",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -186,16 +186,16 @@ Changing keywords from "pari cm curve ellpow" to "pari ellpow complex multiplica
 archive/issue_comments_050510.json:
 ```json
 {
-    "body": "Attachment [6327_ellpow_cm.patch](tarball://root/attachments/some-uuid/ticket6327/6327_ellpow_cm.patch) by jdemeyer created at 2010-09-19 11:51:27",
+    "body": "Attachment [6327_ellpow_cm.patch](tarball://root/attachments/some-uuid/ticket6327/6327_ellpow_cm.patch) by @jdemeyer created at 2010-09-19 11:51:27",
     "created_at": "2010-09-19T11:51:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6327",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6327#issuecomment-50510",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [6327_ellpow_cm.patch](tarball://root/attachments/some-uuid/ticket6327/6327_ellpow_cm.patch) by jdemeyer created at 2010-09-19 11:51:27
+Attachment [6327_ellpow_cm.patch](tarball://root/attachments/some-uuid/ticket6327/6327_ellpow_cm.patch) by @jdemeyer created at 2010-09-19 11:51:27
 
 
 
@@ -209,7 +209,7 @@ archive/issue_comments_050511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6327",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6327#issuecomment-50511",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_050512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6327",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6327#issuecomment-50512",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_050513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6327",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6327#issuecomment-50513",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_050514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6327",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6327#issuecomment-50514",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -284,7 +284,7 @@ archive/issue_comments_050515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6327",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6327#issuecomment-50515",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

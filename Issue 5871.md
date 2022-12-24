@@ -14,7 +14,7 @@ archive/issues_005871.json:
     "title": "[with patch; needs review] solaris x86 3.4.1 -- code_bounds.py fails some plot doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5871",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

@@ -3,7 +3,7 @@
 archive/issues_008373.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  pbruin\n\nConsider the following code:\n\n```\nsage: R.<x> = PolynomialRing(GF(2))\nsage: K.<a> = GF(16, modulus=x^4+x^3+x^2+x+1)\nsage: a^5\n1\n```\n\n\nThis is all fine mathematically, as long as the user is clear what a is and isn't (it isn't a generator for the multiplicative group of the finite field). So the options as I see them (in increasing difficulty for implementation):\n\n1)GF already checks modulus for irreducibility, just add check for modulus.is_primitive().\n\n2)Rewrite the help for the GF function to indicate that the function does not return a generator necessarily (like in this specific case).\n\n3)Find an actual generator (that might not be the polynomial x) and return that.\n\n\nOpinions?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8373\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @pjbruin\n\nConsider the following code:\n\n```\nsage: R.<x> = PolynomialRing(GF(2))\nsage: K.<a> = GF(16, modulus=x^4+x^3+x^2+x+1)\nsage: a^5\n1\n```\n\n\nThis is all fine mathematically, as long as the user is clear what a is and isn't (it isn't a generator for the multiplicative group of the finite field). So the options as I see them (in increasing difficulty for implementation):\n\n1)GF already checks modulus for irreducibility, just add check for modulus.is_primitive().\n\n2)Rewrite the help for the GF function to indicate that the function does not return a generator necessarily (like in this specific case).\n\n3)Find an actual generator (that might not be the polynomial x) and return that.\n\n\nOpinions?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8373\n\n",
     "created_at": "2010-02-26T06:47:28Z",
     "labels": [
         "basic arithmetic",
@@ -17,9 +17,9 @@ archive/issues_008373.json:
     "user": "rkirov"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  pbruin
+CC:  @pjbruin
 
 Consider the following code:
 
@@ -147,7 +147,7 @@ archive/issue_comments_074858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8373#issuecomment-74858",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_074859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8373#issuecomment-74859",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -180,16 +180,16 @@ I would propose adding the option `modulus="primitive"` to solve this ticket.
 archive/issue_comments_074860.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to cpernet.",
+    "body": "Changing assignee from @aghitza to @ClementPernet.",
     "created_at": "2014-06-26T14:56:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8373#issuecomment-74860",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Changing assignee from AlexGhitza to cpernet.
+Changing assignee from @aghitza to @ClementPernet.
 
 
 
@@ -203,7 +203,7 @@ archive/issue_comments_074861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8373#issuecomment-74861",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_074863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8373#issuecomment-74863",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_074864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8373#issuecomment-74864",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_074865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8373#issuecomment-74865",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -307,7 +307,7 @@ archive/issue_comments_074866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8373#issuecomment-74866",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -333,7 +333,7 @@ archive/issue_comments_074867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8373#issuecomment-74867",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -361,7 +361,7 @@ archive/issue_comments_074868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8373#issuecomment-74868",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -379,7 +379,7 @@ archive/issue_comments_074869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8373#issuecomment-74869",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -397,7 +397,7 @@ archive/issue_comments_074870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8373#issuecomment-74870",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -418,7 +418,7 @@ archive/issue_comments_074871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8373#issuecomment-74871",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -436,7 +436,7 @@ archive/issue_comments_074872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8373#issuecomment-74872",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -454,7 +454,7 @@ archive/issue_comments_074873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8373#issuecomment-74873",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -486,7 +486,7 @@ archive/issue_comments_074874.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8373#issuecomment-74874",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -522,7 +522,7 @@ archive/issue_comments_074876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8373#issuecomment-74876",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -540,7 +540,7 @@ archive/issue_comments_074877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8373#issuecomment-74877",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

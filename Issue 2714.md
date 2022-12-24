@@ -3,7 +3,7 @@
 archive/issues_002714.json:
 ```json
 {
-    "body": "Assignee: was\n\nIt looks like template.py was created based on gp.py, but kept some vestiges of code that was only useful for gp.  Then, in an excellent display of cargo-cult programming, this useless code was copied to many other interfaces.\n\nThe attached patch cleans up this useless code.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2714\n\n",
+    "body": "Assignee: @williamstein\n\nIt looks like template.py was created based on gp.py, but kept some vestiges of code that was only useful for gp.  Then, in an excellent display of cargo-cult programming, this useless code was copied to many other interfaces.\n\nThe attached patch cleans up this useless code.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2714\n\n",
     "created_at": "2008-03-29T02:20:37Z",
     "labels": [
         "interfaces",
@@ -17,7 +17,7 @@ archive/issues_002714.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 It looks like template.py was created based on gp.py, but kept some vestiges of code that was only useful for gp.  Then, in an excellent display of cargo-cult programming, this useless code was copied to many other interfaces.
 
@@ -58,7 +58,7 @@ archive/issue_comments_018708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2714#issuecomment-18708",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

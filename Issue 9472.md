@@ -3,7 +3,7 @@
 archive/issues_009472.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  kcrisman\n\n`SPKG.txt` excerpt from the *modified* spkg:\n\n```\n### polybori-0.6.4.p2 (Leif Leonhardy, July 10th, 2010)\n * Removed Michael Abshoff from maintainer list (see #7738)\n * Deleted Boost source tree again since it was split off into a separate\n   spkg (see below, 0.5.rc.p7), modified spkg-install accordingly\n * Deleted M4RI source tree, because it is a standard Sage package\n * Little clean-up and minor fixes in patches/custom.py\n   - Note that CFLAGS etc. are still *overwritten* rather than modified!\n * Updated \"Dependencies\" section above\n```\n\n\nSlightly more readable:\n* Removed *Michael Abshoff* from maintainer list (see #7738)\n* Deleted Boost source tree again since it was split off into a separate\n  spkg (see below, 0.5.rc.p7), modified `spkg-install` accordingly\n* Deleted M4RI source tree, because it is a standard Sage package\n* Little clean-up and minor fixes in `patches/custom.py`\n  - Note that `CFLAGS` etc. are still **overwritten** rather than modified!\n* Updated *\"Dependencies\"* section above\n\n\nDuring upgrade to 0.6.x, the Boost source unintentionally got in again. The new spkg is about 1.7MB, i.e. 300KB smaller.\n\nTo test *the patch*, the directories have to be removed manually (the attached patch doesn't delete them from 0.6.4.p1), but **the new spkg will be uploaded to sage.math soon**.\n\nSince PolyBoRi also uses GD, `$SAGE_ROOT/spkg/standard/deps` should be updated (but there seem to have been no issues with that in the past).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9472\n\n",
+    "body": "Assignee: tbd\n\nCC:  @kcrisman\n\n`SPKG.txt` excerpt from the *modified* spkg:\n\n```\n### polybori-0.6.4.p2 (Leif Leonhardy, July 10th, 2010)\n * Removed Michael Abshoff from maintainer list (see #7738)\n * Deleted Boost source tree again since it was split off into a separate\n   spkg (see below, 0.5.rc.p7), modified spkg-install accordingly\n * Deleted M4RI source tree, because it is a standard Sage package\n * Little clean-up and minor fixes in patches/custom.py\n   - Note that CFLAGS etc. are still *overwritten* rather than modified!\n * Updated \"Dependencies\" section above\n```\n\n\nSlightly more readable:\n* Removed *Michael Abshoff* from maintainer list (see #7738)\n* Deleted Boost source tree again since it was split off into a separate\n  spkg (see below, 0.5.rc.p7), modified `spkg-install` accordingly\n* Deleted M4RI source tree, because it is a standard Sage package\n* Little clean-up and minor fixes in `patches/custom.py`\n  - Note that `CFLAGS` etc. are still **overwritten** rather than modified!\n* Updated *\"Dependencies\"* section above\n\n\nDuring upgrade to 0.6.x, the Boost source unintentionally got in again. The new spkg is about 1.7MB, i.e. 300KB smaller.\n\nTo test *the patch*, the directories have to be removed manually (the attached patch doesn't delete them from 0.6.4.p1), but **the new spkg will be uploaded to sage.math soon**.\n\nSince PolyBoRi also uses GD, `$SAGE_ROOT/spkg/standard/deps` should be updated (but there seem to have been no issues with that in the past).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9472\n\n",
     "created_at": "2010-07-11T00:05:23Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_009472.json:
     "title": "Remove (duplicate) BOOST and M4RI source trees from PolyBoRi spkg, some clean-up",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9472",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 Assignee: tbd
 
-CC:  kcrisman
+CC:  @kcrisman
 
 `SPKG.txt` excerpt from the *modified* spkg:
 
@@ -62,16 +62,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9472
 archive/issue_comments_090852.json:
 ```json
 {
-    "body": "Attachment [polybori-0.6.4.p1-p2.patch](tarball://root/attachments/some-uuid/ticket9472/polybori-0.6.4.p1-p2.patch) by leif created at 2010-07-11 00:12:21\n\nApply to polybori-0.6.4.p1. Source trees have to be removed manually.",
+    "body": "Attachment [polybori-0.6.4.p1-p2.patch](tarball://root/attachments/some-uuid/ticket9472/polybori-0.6.4.p1-p2.patch) by @nexttime created at 2010-07-11 00:12:21\n\nApply to polybori-0.6.4.p1. Source trees have to be removed manually.",
     "created_at": "2010-07-11T00:12:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9472#issuecomment-90852",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [polybori-0.6.4.p1-p2.patch](tarball://root/attachments/some-uuid/ticket9472/polybori-0.6.4.p1-p2.patch) by leif created at 2010-07-11 00:12:21
+Attachment [polybori-0.6.4.p1-p2.patch](tarball://root/attachments/some-uuid/ticket9472/polybori-0.6.4.p1-p2.patch) by @nexttime created at 2010-07-11 00:12:21
 
 Apply to polybori-0.6.4.p1. Source trees have to be removed manually.
 
@@ -87,7 +87,7 @@ archive/issue_comments_090853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9472#issuecomment-90853",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_090854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9472#issuecomment-90854",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_090855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9472#issuecomment-90855",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_090856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9472#issuecomment-90856",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_090857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9472#issuecomment-90857",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_090858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9472#issuecomment-90858",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_090859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9472#issuecomment-90859",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_090860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9472#issuecomment-90860",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_090861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9472#issuecomment-90861",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_090862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9472#issuecomment-90862",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_090863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9472#issuecomment-90863",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000163.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: pari, hyperu\n\nThis is funny:\n\n\n```\nP = plot(hypergeometric_U(1.0,1.0,x),0.1,0.9)\n```\n\nfails (hangs, actually) but \n\n```\nsage: f = lambda x: gp.eval(\"hyperu(1,1,%s)\"%x)\nsage: P = plot(f,0,1)\nsage: show(P)\n```\n\n\nhypergeometric_U is in functions/special.py. The error\nmay have something to do with the pari class.\n\nworks fine.\n\nIssue created by migration from https://trac.sagemath.org/ticket/163\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: pari, hyperu\n\nThis is funny:\n\n\n```\nP = plot(hypergeometric_U(1.0,1.0,x),0.1,0.9)\n```\n\nfails (hangs, actually) but \n\n```\nsage: f = lambda x: gp.eval(\"hyperu(1,1,%s)\"%x)\nsage: P = plot(f,0,1)\nsage: show(P)\n```\n\n\nhypergeometric_U is in functions/special.py. The error\nmay have something to do with the pari class.\n\nworks fine.\n\nIssue created by migration from https://trac.sagemath.org/ticket/163\n\n",
     "created_at": "2006-10-29T22:51:31Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_000163.json:
     "title": "plot hypergeometric_U fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/163",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: pari, hyperu
 
@@ -142,7 +142,7 @@ archive/issue_comments_000729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/163#issuecomment-729",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_000730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/163#issuecomment-730",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

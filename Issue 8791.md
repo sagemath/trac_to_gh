@@ -3,7 +3,7 @@
 archive/issues_008791.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  fredrik.johansson schilly\n\nAs the subject says. As of Sage 4.4, the doctest coverage of `sage/libs/mpmath/ext_main.pyx` is:\n\n```\n[mvngu@sage mpmath]$ sage -coverage ext_main.pyx \n----------------------------------------------------------------------\next_main.pyx\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE ext_main.pyx: 0% (0 of 102)\n\nMissing documentation:\n\t * __cinit__(ctx):\n\t * default(ctx):\n\t * _get_prec(ctx):\n\t * _set_prec(ctx, prec):\n\t * _set_dps(ctx, n):\n\t * _get_dps(ctx):\n\t * _get_prec_rounding(ctx):\n\t * mpf make_mpf(ctx, tuple v):\n\t * mpc make_mpc(ctx, tuple v):\n\t * _convert_param(ctx, x):\n\t * _wrap_libmp_function(ctx, mpf_f, mpc_f=None, mpi_f=None, doc=\"<no doc>\"):\n\t * _wrap_specfun(cls, name, f, wrap):\n\t * __init__(self, mpf_f, mpc_f=None, mpi_f=None, doc=\"<no doc>\"):\n\t * __call__(self, x, **kwargs):\n\t * __init__(self, name, f):\n\t * __call__(self, *args, **kwargs):\n\t * __richcmp__(self, other, int op):\n\t * __add__(self, other):\n\t * __sub__(self, other):\n\t * __mul__(self, other):\n\t * __div__(self, other):\n\t * __mod__(self, other):\n\t * __pow__(self, other, mod):\n\t * ae(s, t, rel_eps=None, abs_eps=None):\n\t * __hash__(self):\n\t * __repr__(self):\n\t * __str__(self):\n\t * real(self):\n\t * imag(self):\n\t * conjugate(self):\n\t * man(self):\n\t * exp(self):\n\t * bc(self):\n\t * __int__(self):\n\t * __long__(self):\n\t * __float__(self):\n\t * __complex__(self):\n\t * to_fixed(self, prec):\n\t * __getstate__(self):\n\t * __setstate__(self, val):\n\t * __init__(self, x=0, **kwargs):\n\t * __reduce__(self):\n\t * _get_mpf(self):\n\t * _set_mpf(self, v):\n\t * __nonzero__(self):\n\t * __hash__(self):\n\t * real(self):\n\t * imag(self):\n\t * conjugate(self):\n\t * man(self):\n\t * exp(self):\n\t * bc(self):\n\t * to_fixed(self, long prec):\n\t * __int__(self):\n\t * __float__(self):\n\t * __getstate__(self):\n\t * __setstate__(self, val):\n\t * __cinit__(self):\n\t * __neg__(s):\n\t * __pos__(s):\n\t * __abs__(s):\n\t * sqrt(s):\n\t * __richcmp__(self, other, int op):\n\t * __init__(self, func, name, docname=''):\n\t * __call__(self, prec=None, dps=None, rounding=None):\n\t * _mpf_(self):\n\t * __repr__(self):\n\t * __nonzero__(self):\n\t * __neg__(self):\n\t * __pos__(self):\n\t * __abs__(self):\n\t * sqrt(self):\n\t * to_fixed(self, prec):\n\t * __getstate__(self):\n\t * __setstate__(self, val):\n\t * __hash__(self):\n\t * __richcmp__(self, other, int op):\n\t * __init__(self, real=0, imag=0):\n\t * __cinit__(self):\n\t * __reduce__(self):\n\t * __setstate__(self, val):\n\t * __repr__(self):\n\t * __str__(s):\n\t * __nonzero__(self):\n\t * __complex__(self):\n\t * _get_mpc(self):\n\t * _set_mpc(self, tuple v):\n\t * real(self):\n\t * imag(self):\n\t * __hash__(self):\n\t * __neg__(s):\n\t * conjugate(s):\n\t * __pos__(s):\n\t * __abs__(s):\n\t * __richcmp__(self, other, int op):\n\n\nMissing doctests:\n\t * convert(ctx, x, strings=True):\n\t * isnan(ctx, x):\n\t * isinf(ctx, x):\n\t * isint(ctx, x):\n\t * fsum(ctx, terms, bint absolute=False, bint squared=False):\n\t * fdot(ctx, A, B=None):\n\t * mag(ctx, x):\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8791\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @fredrik-johansson @haraldschilly\n\nAs the subject says. As of Sage 4.4, the doctest coverage of `sage/libs/mpmath/ext_main.pyx` is:\n\n```\n[mvngu@sage mpmath]$ sage -coverage ext_main.pyx \n----------------------------------------------------------------------\next_main.pyx\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE ext_main.pyx: 0% (0 of 102)\n\nMissing documentation:\n\t * __cinit__(ctx):\n\t * default(ctx):\n\t * _get_prec(ctx):\n\t * _set_prec(ctx, prec):\n\t * _set_dps(ctx, n):\n\t * _get_dps(ctx):\n\t * _get_prec_rounding(ctx):\n\t * mpf make_mpf(ctx, tuple v):\n\t * mpc make_mpc(ctx, tuple v):\n\t * _convert_param(ctx, x):\n\t * _wrap_libmp_function(ctx, mpf_f, mpc_f=None, mpi_f=None, doc=\"<no doc>\"):\n\t * _wrap_specfun(cls, name, f, wrap):\n\t * __init__(self, mpf_f, mpc_f=None, mpi_f=None, doc=\"<no doc>\"):\n\t * __call__(self, x, **kwargs):\n\t * __init__(self, name, f):\n\t * __call__(self, *args, **kwargs):\n\t * __richcmp__(self, other, int op):\n\t * __add__(self, other):\n\t * __sub__(self, other):\n\t * __mul__(self, other):\n\t * __div__(self, other):\n\t * __mod__(self, other):\n\t * __pow__(self, other, mod):\n\t * ae(s, t, rel_eps=None, abs_eps=None):\n\t * __hash__(self):\n\t * __repr__(self):\n\t * __str__(self):\n\t * real(self):\n\t * imag(self):\n\t * conjugate(self):\n\t * man(self):\n\t * exp(self):\n\t * bc(self):\n\t * __int__(self):\n\t * __long__(self):\n\t * __float__(self):\n\t * __complex__(self):\n\t * to_fixed(self, prec):\n\t * __getstate__(self):\n\t * __setstate__(self, val):\n\t * __init__(self, x=0, **kwargs):\n\t * __reduce__(self):\n\t * _get_mpf(self):\n\t * _set_mpf(self, v):\n\t * __nonzero__(self):\n\t * __hash__(self):\n\t * real(self):\n\t * imag(self):\n\t * conjugate(self):\n\t * man(self):\n\t * exp(self):\n\t * bc(self):\n\t * to_fixed(self, long prec):\n\t * __int__(self):\n\t * __float__(self):\n\t * __getstate__(self):\n\t * __setstate__(self, val):\n\t * __cinit__(self):\n\t * __neg__(s):\n\t * __pos__(s):\n\t * __abs__(s):\n\t * sqrt(s):\n\t * __richcmp__(self, other, int op):\n\t * __init__(self, func, name, docname=''):\n\t * __call__(self, prec=None, dps=None, rounding=None):\n\t * _mpf_(self):\n\t * __repr__(self):\n\t * __nonzero__(self):\n\t * __neg__(self):\n\t * __pos__(self):\n\t * __abs__(self):\n\t * sqrt(self):\n\t * to_fixed(self, prec):\n\t * __getstate__(self):\n\t * __setstate__(self, val):\n\t * __hash__(self):\n\t * __richcmp__(self, other, int op):\n\t * __init__(self, real=0, imag=0):\n\t * __cinit__(self):\n\t * __reduce__(self):\n\t * __setstate__(self, val):\n\t * __repr__(self):\n\t * __str__(s):\n\t * __nonzero__(self):\n\t * __complex__(self):\n\t * _get_mpc(self):\n\t * _set_mpc(self, tuple v):\n\t * real(self):\n\t * imag(self):\n\t * __hash__(self):\n\t * __neg__(s):\n\t * conjugate(s):\n\t * __pos__(s):\n\t * __abs__(s):\n\t * __richcmp__(self, other, int op):\n\n\nMissing doctests:\n\t * convert(ctx, x, strings=True):\n\t * isnan(ctx, x):\n\t * isinf(ctx, x):\n\t * isint(ctx, x):\n\t * fsum(ctx, terms, bint absolute=False, bint squared=False):\n\t * fdot(ctx, A, B=None):\n\t * mag(ctx, x):\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8791\n\n",
     "created_at": "2010-04-28T04:44:20Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_008791.json:
 ```
 Assignee: mvngu
 
-CC:  fredrik.johansson schilly
+CC:  @fredrik-johansson @haraldschilly
 
 As the subject says. As of Sage 4.4, the doctest coverage of `sage/libs/mpmath/ext_main.pyx` is:
 
@@ -155,7 +155,7 @@ archive/issue_comments_080493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8791#issuecomment-80493",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_080494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8791#issuecomment-80494",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_080495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8791#issuecomment-80495",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_080496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8791#issuecomment-80496",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_080497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8791#issuecomment-80497",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_080498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8791#issuecomment-80498",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_080499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8791#issuecomment-80499",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -326,7 +326,7 @@ archive/issue_comments_080500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8791#issuecomment-80500",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_080501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8791#issuecomment-80501",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -366,7 +366,7 @@ archive/issue_comments_080502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8791#issuecomment-80502",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -379,16 +379,16 @@ Changing status from new to needs_review.
 archive/issue_comments_080503.json:
 ```json
 {
-    "body": "Attachment [mpmath_doctests.patch](tarball://root/attachments/some-uuid/ticket8791/mpmath_doctests.patch) by was created at 2011-11-14 20:10:02",
+    "body": "Attachment [mpmath_doctests.patch](tarball://root/attachments/some-uuid/ticket8791/mpmath_doctests.patch) by @williamstein created at 2011-11-14 20:10:02",
     "created_at": "2011-11-14T20:10:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8791#issuecomment-80503",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [mpmath_doctests.patch](tarball://root/attachments/some-uuid/ticket8791/mpmath_doctests.patch) by was created at 2011-11-14 20:10:02
+Attachment [mpmath_doctests.patch](tarball://root/attachments/some-uuid/ticket8791/mpmath_doctests.patch) by @williamstein created at 2011-11-14 20:10:02
 
 
 
@@ -402,7 +402,7 @@ archive/issue_comments_080504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8791#issuecomment-80504",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -422,7 +422,7 @@ archive/issue_comments_080505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8791#issuecomment-80505",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -440,7 +440,7 @@ archive/issue_comments_080506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8791#issuecomment-80506",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -458,7 +458,7 @@ archive/issue_comments_080507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8791#issuecomment-80507",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -489,7 +489,7 @@ archive/issue_comments_080508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8791#issuecomment-80508",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -507,7 +507,7 @@ archive/issue_comments_080509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8791#issuecomment-80509",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -525,7 +525,7 @@ archive/issue_comments_080510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8791#issuecomment-80510",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -538,16 +538,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_080511.json:
 ```json
 {
-    "body": "Attachment [trac_8791-fix.patch](tarball://root/attachments/some-uuid/ticket8791/trac_8791-fix.patch) by davidloeffler created at 2012-03-25 15:00:30\n\nApply mpmath_doctests.patch, trac_8791-fix.patch\n\nThis is a one-line fix -- anyone willing to quickly sign off on it?",
+    "body": "Attachment [trac_8791-fix.patch](tarball://root/attachments/some-uuid/ticket8791/trac_8791-fix.patch) by @loefflerd created at 2012-03-25 15:00:30\n\nApply mpmath_doctests.patch, trac_8791-fix.patch\n\nThis is a one-line fix -- anyone willing to quickly sign off on it?",
     "created_at": "2012-03-25T15:00:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8791#issuecomment-80511",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_8791-fix.patch](tarball://root/attachments/some-uuid/ticket8791/trac_8791-fix.patch) by davidloeffler created at 2012-03-25 15:00:30
+Attachment [trac_8791-fix.patch](tarball://root/attachments/some-uuid/ticket8791/trac_8791-fix.patch) by @loefflerd created at 2012-03-25 15:00:30
 
 Apply mpmath_doctests.patch, trac_8791-fix.patch
 
@@ -565,7 +565,7 @@ archive/issue_comments_080512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8791#issuecomment-80512",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -583,7 +583,7 @@ archive/issue_comments_080513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8791#issuecomment-80513",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -601,7 +601,7 @@ archive/issue_comments_080514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8791#issuecomment-80514",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

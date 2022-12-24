@@ -3,7 +3,7 @@
 archive/issues_001135.json:
 ```json
 {
-    "body": "Assignee: ncalexan\n\nKeywords: preparse generators QuadraticField\n\n\n```\nsage: K.<a> = QuadraticField(-55, 'a')\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/ncalexan/emacs/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: QuadraticField() got multiple values for keyword argument 'names'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1135\n\n",
+    "body": "Assignee: @ncalexan\n\nKeywords: preparse generators QuadraticField\n\n\n```\nsage: K.<a> = QuadraticField(-55, 'a')\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/ncalexan/emacs/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: QuadraticField() got multiple values for keyword argument 'names'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1135\n\n",
     "created_at": "2007-11-09T21:03:33Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_001135.json:
     "title": "Error in preparsing generators, QuadraticField",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1135",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: ncalexan
+Assignee: @ncalexan
 
 Keywords: preparse generators QuadraticField
 
@@ -49,7 +49,7 @@ archive/issue_comments_006885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1135#issuecomment-6885",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_006886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1135#issuecomment-6886",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -80,16 +80,16 @@ Changing component from interfaces to number fields.
 archive/issue_comments_006887.json:
 ```json
 {
-    "body": "Attachment [trac-1135.patch](tarball://root/attachments/some-uuid/ticket1135/trac-1135.patch) by lftabera created at 2010-09-17 14:54:52",
+    "body": "Attachment [trac-1135.patch](tarball://root/attachments/some-uuid/ticket1135/trac-1135.patch) by @lftabera created at 2010-09-17 14:54:52",
     "created_at": "2010-09-17T14:54:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1135#issuecomment-6887",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
-Attachment [trac-1135.patch](tarball://root/attachments/some-uuid/ticket1135/trac-1135.patch) by lftabera created at 2010-09-17 14:54:52
+Attachment [trac-1135.patch](tarball://root/attachments/some-uuid/ticket1135/trac-1135.patch) by @lftabera created at 2010-09-17 14:54:52
 
 
 
@@ -103,7 +103,7 @@ archive/issue_comments_006888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1135#issuecomment-6888",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_006889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1135#issuecomment-6889",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_006890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1135#issuecomment-6890",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_006891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1135#issuecomment-6891",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_006892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1135#issuecomment-6892",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

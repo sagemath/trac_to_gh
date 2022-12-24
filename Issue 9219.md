@@ -3,7 +3,7 @@
 archive/issues_009219.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  kcrisman\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9219\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @kcrisman\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9219\n\n",
     "created_at": "2010-06-11T18:39:11Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_009219.json:
     "title": "add a statistics chapter to the sage reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9219",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mvngu
 
-CC:  kcrisman
+CC:  @kcrisman
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_086384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9219",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9219#issuecomment-86384",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_086385.json:
 ```json
 {
-    "body": "Attachment [trac_9219_stats_doc.patch](tarball://root/attachments/some-uuid/ticket9219/trac_9219_stats_doc.patch) by was created at 2010-06-11 18:53:11",
+    "body": "Attachment [trac_9219_stats_doc.patch](tarball://root/attachments/some-uuid/ticket9219/trac_9219_stats_doc.patch) by @williamstein created at 2010-06-11 18:53:11",
     "created_at": "2010-06-11T18:53:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9219",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9219#issuecomment-86385",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_9219_stats_doc.patch](tarball://root/attachments/some-uuid/ticket9219/trac_9219_stats_doc.patch) by was created at 2010-06-11 18:53:11
+Attachment [trac_9219_stats_doc.patch](tarball://root/attachments/some-uuid/ticket9219/trac_9219_stats_doc.patch) by @williamstein created at 2010-06-11 18:53:11
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_086386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9219",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9219#issuecomment-86386",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -88,16 +88,16 @@ Changing status from new to needs_review.
 archive/issue_comments_086387.json:
 ```json
 {
-    "body": "Attachment [trac_9219-reviewer.patch](tarball://root/attachments/some-uuid/ticket9219/trac_9219-reviewer.patch) by kcrisman created at 2010-06-18 17:59:41\n\nApply after initial patch and #9218's initial patch",
+    "body": "Attachment [trac_9219-reviewer.patch](tarball://root/attachments/some-uuid/ticket9219/trac_9219-reviewer.patch) by @kcrisman created at 2010-06-18 17:59:41\n\nApply after initial patch and #9218's initial patch",
     "created_at": "2010-06-18T17:59:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9219",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9219#issuecomment-86387",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_9219-reviewer.patch](tarball://root/attachments/some-uuid/ticket9219/trac_9219-reviewer.patch) by kcrisman created at 2010-06-18 17:59:41
+Attachment [trac_9219-reviewer.patch](tarball://root/attachments/some-uuid/ticket9219/trac_9219-reviewer.patch) by @kcrisman created at 2010-06-18 17:59:41
 
 Apply after initial patch and #9218's initial patch
 
@@ -113,7 +113,7 @@ archive/issue_comments_086388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9219",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9219#issuecomment-86388",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_086389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9219",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9219#issuecomment-86389",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_086390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9219",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9219#issuecomment-86390",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_086391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9219",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9219#issuecomment-86391",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

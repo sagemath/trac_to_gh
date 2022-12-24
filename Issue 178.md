@@ -14,7 +14,7 @@ archive/issues_000178.json:
     "title": "Sage()._get() does not return the correct result in some instances",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/178",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 Assignee: boothby
@@ -51,7 +51,7 @@ archive/issue_comments_000820.json:
     "issue": "https://github.com/sagemath/sagetest/issues/178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/178#issuecomment-820",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_000821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/178#issuecomment-821",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

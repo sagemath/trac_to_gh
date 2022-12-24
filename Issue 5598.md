@@ -3,7 +3,7 @@
 archive/issues_005598.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nCC:  nthiery\n\nOne can now do \n\na = A()\nmor = [morphism from X to A]\na.register_coercion(mor)\n\nThis works as long as coercion has not yet been used (otherwise information cached (both here and elsewhere) becomes invalid).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5598\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  @nthiery\n\nOne can now do \n\na = A()\nmor = [morphism from X to A]\na.register_coercion(mor)\n\nThis works as long as coercion has not yet been used (otherwise information cached (both here and elsewhere) becomes invalid).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5598\n\n",
     "created_at": "2009-03-24T05:12:18Z",
     "labels": [
         "coercion",
@@ -14,12 +14,12 @@ archive/issues_005598.json:
     "title": "allow post-creation (pre-use) declaration of coercions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5598",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
-CC:  nthiery
+CC:  @nthiery
 
 One can now do 
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5598
 archive/issue_comments_043625.json:
 ```json
 {
-    "body": "Attachment [5598-coerce-declare.patch](tarball://root/attachments/some-uuid/ticket5598/5598-coerce-declare.patch) by robertwb created at 2009-03-24 05:20:25\n\nDepends on #5597.",
+    "body": "Attachment [5598-coerce-declare.patch](tarball://root/attachments/some-uuid/ticket5598/5598-coerce-declare.patch) by @robertwb created at 2009-03-24 05:20:25\n\nDepends on #5597.",
     "created_at": "2009-03-24T05:20:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5598#issuecomment-43625",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5598-coerce-declare.patch](tarball://root/attachments/some-uuid/ticket5598/5598-coerce-declare.patch) by robertwb created at 2009-03-24 05:20:25
+Attachment [5598-coerce-declare.patch](tarball://root/attachments/some-uuid/ticket5598/5598-coerce-declare.patch) by @robertwb created at 2009-03-24 05:20:25
 
 Depends on #5597.
 
@@ -65,7 +65,7 @@ archive/issue_comments_043626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5598#issuecomment-43626",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_043627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5598#issuecomment-43627",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_043628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5598#issuecomment-43628",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -127,16 +127,16 @@ Hence I'm physically incapable of giving this a positive review.  Sorry.
 archive/issue_comments_043629.json:
 ```json
 {
-    "body": "Attachment [test-coercion.py](tarball://root/attachments/some-uuid/ticket5598/test-coercion.py) by nthiery created at 2009-04-14 00:35:13\n\nI have been using this patch (or actually a plain python version of it; see the sage-combinat patch queue) relatively intensively, and it does its job well. However it's hard to extract any interesting unitary test from those uses, since they all rely on the rest of the category stuff.\n\nI have just attached a stupid test instead ... It just plays with register_coercion, but should be easy to adapt to the others.\n\nBtw: robert: would it be possible to have register_coercion just raise a warning if coercions have readily been used? There are cases where it can be handy to abuse the system a bit from the interpreter.",
+    "body": "Attachment [test-coercion.py](tarball://root/attachments/some-uuid/ticket5598/test-coercion.py) by @nthiery created at 2009-04-14 00:35:13\n\nI have been using this patch (or actually a plain python version of it; see the sage-combinat patch queue) relatively intensively, and it does its job well. However it's hard to extract any interesting unitary test from those uses, since they all rely on the rest of the category stuff.\n\nI have just attached a stupid test instead ... It just plays with register_coercion, but should be easy to adapt to the others.\n\nBtw: robert: would it be possible to have register_coercion just raise a warning if coercions have readily been used? There are cases where it can be handy to abuse the system a bit from the interpreter.",
     "created_at": "2009-04-14T00:35:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5598#issuecomment-43629",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [test-coercion.py](tarball://root/attachments/some-uuid/ticket5598/test-coercion.py) by nthiery created at 2009-04-14 00:35:13
+Attachment [test-coercion.py](tarball://root/attachments/some-uuid/ticket5598/test-coercion.py) by @nthiery created at 2009-04-14 00:35:13
 
 I have been using this patch (or actually a plain python version of it; see the sage-combinat patch queue) relatively intensively, and it does its job well. However it's hard to extract any interesting unitary test from those uses, since they all rely on the rest of the category stuff.
 
@@ -156,7 +156,7 @@ archive/issue_comments_043630.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5598#issuecomment-43630",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_043631.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5598#issuecomment-43631",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_043632.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5598#issuecomment-43632",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_043633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5598#issuecomment-43633",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_043634.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5598#issuecomment-43634",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -277,16 +277,16 @@ Yes, I just haven't had time to work on any coercion-related stuff for a while. 
 archive/issue_comments_043635.json:
 ```json
 {
-    "body": "Attachment [5598-ncalexan-fixes-and-tests.patch](tarball://root/attachments/some-uuid/ticket5598/5598-ncalexan-fixes-and-tests.patch) by ncalexan created at 2009-05-08 23:04:25",
+    "body": "Attachment [5598-ncalexan-fixes-and-tests.patch](tarball://root/attachments/some-uuid/ticket5598/5598-ncalexan-fixes-and-tests.patch) by @ncalexan created at 2009-05-08 23:04:25",
     "created_at": "2009-05-08T23:04:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5598#issuecomment-43635",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [5598-ncalexan-fixes-and-tests.patch](tarball://root/attachments/some-uuid/ticket5598/5598-ncalexan-fixes-and-tests.patch) by ncalexan created at 2009-05-08 23:04:25
+Attachment [5598-ncalexan-fixes-and-tests.patch](tarball://root/attachments/some-uuid/ticket5598/5598-ncalexan-fixes-and-tests.patch) by @ncalexan created at 2009-05-08 23:04:25
 
 
 
@@ -300,7 +300,7 @@ archive/issue_comments_043636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5598#issuecomment-43636",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_043637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5598#issuecomment-43637",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -331,16 +331,16 @@ archive/issue_comments_043637.json:
 archive/issue_comments_043638.json:
 ```json
 {
-    "body": "Attachment [5598-ncalexan-fixes-and-tests.2.patch](tarball://root/attachments/some-uuid/ticket5598/5598-ncalexan-fixes-and-tests.2.patch) by ncalexan created at 2009-05-17 21:14:08",
+    "body": "Attachment [5598-ncalexan-fixes-and-tests.2.patch](tarball://root/attachments/some-uuid/ticket5598/5598-ncalexan-fixes-and-tests.2.patch) by @ncalexan created at 2009-05-17 21:14:08",
     "created_at": "2009-05-17T21:14:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5598#issuecomment-43638",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [5598-ncalexan-fixes-and-tests.2.patch](tarball://root/attachments/some-uuid/ticket5598/5598-ncalexan-fixes-and-tests.2.patch) by ncalexan created at 2009-05-17 21:14:08
+Attachment [5598-ncalexan-fixes-and-tests.2.patch](tarball://root/attachments/some-uuid/ticket5598/5598-ncalexan-fixes-and-tests.2.patch) by @ncalexan created at 2009-05-17 21:14:08
 
 
 
@@ -349,16 +349,16 @@ Attachment [5598-ncalexan-fixes-and-tests.2.patch](tarball://root/attachments/so
 archive/issue_comments_043639.json:
 ```json
 {
-    "body": "Attachment [5598-ncalexan-fixes-and-tests.3.patch](tarball://root/attachments/some-uuid/ticket5598/5598-ncalexan-fixes-and-tests.3.patch) by ncalexan created at 2009-05-17 21:21:52\n\nAh, the mystery of the malformed patches.  hg export -o *DOESN'T* overwrite an existing file, it appends!  I think this is totally wrong, but I can work around it.  This has been biting me for weeks, I now realize.  Anyway, only tests.3.patch should be applied.",
+    "body": "Attachment [5598-ncalexan-fixes-and-tests.3.patch](tarball://root/attachments/some-uuid/ticket5598/5598-ncalexan-fixes-and-tests.3.patch) by @ncalexan created at 2009-05-17 21:21:52\n\nAh, the mystery of the malformed patches.  hg export -o *DOESN'T* overwrite an existing file, it appends!  I think this is totally wrong, but I can work around it.  This has been biting me for weeks, I now realize.  Anyway, only tests.3.patch should be applied.",
     "created_at": "2009-05-17T21:21:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5598#issuecomment-43639",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [5598-ncalexan-fixes-and-tests.3.patch](tarball://root/attachments/some-uuid/ticket5598/5598-ncalexan-fixes-and-tests.3.patch) by ncalexan created at 2009-05-17 21:21:52
+Attachment [5598-ncalexan-fixes-and-tests.3.patch](tarball://root/attachments/some-uuid/ticket5598/5598-ncalexan-fixes-and-tests.3.patch) by @ncalexan created at 2009-05-17 21:21:52
 
 Ah, the mystery of the malformed patches.  hg export -o *DOESN'T* overwrite an existing file, it appends!  I think this is totally wrong, but I can work around it.  This has been biting me for weeks, I now realize.  Anyway, only tests.3.patch should be applied.
 
@@ -369,16 +369,16 @@ Ah, the mystery of the malformed patches.  hg export -o *DOESN'T* overwrite an e
 archive/issue_comments_043640.json:
 ```json
 {
-    "body": "Attachment [5598-test-coercion.patch](tarball://root/attachments/some-uuid/ticket5598/5598-test-coercion.patch) by robertwb created at 2009-05-23 06:47:24\n\nI made a patch out of test-coercion. Apply, in order\n\n* 5598-coerce-declare.patch\n* 5598-ncalexan-fixes-and-tests.3.patch\n* 5598-test-coercion.patch (1.9 KB)\n\nI give the tests/documentation a positive review, if someone is willing to give a +1 on the original patch we can get this ticket in.",
+    "body": "Attachment [5598-test-coercion.patch](tarball://root/attachments/some-uuid/ticket5598/5598-test-coercion.patch) by @robertwb created at 2009-05-23 06:47:24\n\nI made a patch out of test-coercion. Apply, in order\n\n* 5598-coerce-declare.patch\n* 5598-ncalexan-fixes-and-tests.3.patch\n* 5598-test-coercion.patch (1.9 KB)\n\nI give the tests/documentation a positive review, if someone is willing to give a +1 on the original patch we can get this ticket in.",
     "created_at": "2009-05-23T06:47:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5598#issuecomment-43640",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5598-test-coercion.patch](tarball://root/attachments/some-uuid/ticket5598/5598-test-coercion.patch) by robertwb created at 2009-05-23 06:47:24
+Attachment [5598-test-coercion.patch](tarball://root/attachments/some-uuid/ticket5598/5598-test-coercion.patch) by @robertwb created at 2009-05-23 06:47:24
 
 I made a patch out of test-coercion. Apply, in order
 
@@ -400,7 +400,7 @@ archive/issue_comments_043641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5598#issuecomment-43641",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -418,7 +418,7 @@ archive/issue_comments_043642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5598#issuecomment-43642",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -436,7 +436,7 @@ archive/issue_comments_043643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5598#issuecomment-43643",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -749,16 +749,16 @@ Got:
 archive/issue_comments_043644.json:
 ```json
 {
-    "body": "Attachment [trac_5598.patch](tarball://root/attachments/some-uuid/ticket5598/trac_5598.patch) by mhansen created at 2009-10-19 13:20:46\n\nI've attached trac_5598.patch which folds the above three together and is rebased for 4.2.  I believe this should pass all tests.",
+    "body": "Attachment [trac_5598.patch](tarball://root/attachments/some-uuid/ticket5598/trac_5598.patch) by @mwhansen created at 2009-10-19 13:20:46\n\nI've attached trac_5598.patch which folds the above three together and is rebased for 4.2.  I believe this should pass all tests.",
     "created_at": "2009-10-19T13:20:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5598#issuecomment-43644",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5598.patch](tarball://root/attachments/some-uuid/ticket5598/trac_5598.patch) by mhansen created at 2009-10-19 13:20:46
+Attachment [trac_5598.patch](tarball://root/attachments/some-uuid/ticket5598/trac_5598.patch) by @mwhansen created at 2009-10-19 13:20:46
 
 I've attached trac_5598.patch which folds the above three together and is rebased for 4.2.  I believe this should pass all tests.
 
@@ -774,7 +774,7 @@ archive/issue_comments_043645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5598#issuecomment-43645",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -792,7 +792,7 @@ archive/issue_comments_043646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5598#issuecomment-43646",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -810,7 +810,7 @@ archive/issue_comments_043647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5598#issuecomment-43647",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -830,7 +830,7 @@ archive/issue_comments_043648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5598#issuecomment-43648",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

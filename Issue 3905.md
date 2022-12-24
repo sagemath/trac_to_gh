@@ -3,7 +3,7 @@
 archive/issues_003905.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  robertwb mhansen\n\nKeywords: programming guide\n\nI've edited the programming guide; this has involved a fair amount of reorganization, some rewriting, some deleting, and some new stuff.  I hope I haven't removed anyone's favorite part.\n\nThe coercion section is unchanged, because of comments by craigcitro in #3738: I hope he produces a new coercion section for this document.\n\nThe section after coercion, on mutability, is unchanged, although it needs to be expanded.  I don't really understand the issues involved, so I don't think I'm the right person to do this.\n\nThe new version also has nothing on benchmarking or profiling.  Feel free to write something and produce a patch.\n\nMeanwhile, in addition to the patch, you can look at a PDF version of the guide here:\n[http://www.math.washington.edu/~palmieri/Sage/prog.pdf](http://www.math.washington.edu/~palmieri/Sage/prog.pdf)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3905\n\n",
+    "body": "Assignee: tba\n\nCC:  @robertwb @mwhansen\n\nKeywords: programming guide\n\nI've edited the programming guide; this has involved a fair amount of reorganization, some rewriting, some deleting, and some new stuff.  I hope I haven't removed anyone's favorite part.\n\nThe coercion section is unchanged, because of comments by craigcitro in #3738: I hope he produces a new coercion section for this document.\n\nThe section after coercion, on mutability, is unchanged, although it needs to be expanded.  I don't really understand the issues involved, so I don't think I'm the right person to do this.\n\nThe new version also has nothing on benchmarking or profiling.  Feel free to write something and produce a patch.\n\nMeanwhile, in addition to the patch, you can look at a PDF version of the guide here:\n[http://www.math.washington.edu/~palmieri/Sage/prog.pdf](http://www.math.washington.edu/~palmieri/Sage/prog.pdf)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3905\n\n",
     "created_at": "2008-08-20T00:35:45Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_003905.json:
     "title": "[with patch, needs review] revision of programming guide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3905",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: tba
 
-CC:  robertwb mhansen
+CC:  @robertwb @mwhansen
 
 Keywords: programming guide
 
@@ -50,7 +50,7 @@ archive/issue_comments_027928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27928",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -63,16 +63,16 @@ archive/issue_comments_027928.json:
 archive/issue_comments_027929.json:
 ```json
 {
-    "body": "Attachment [prog.patch](tarball://root/attachments/some-uuid/ticket3905/prog.patch) by jhpalmieri created at 2008-08-20 02:40:00",
+    "body": "Attachment [prog.patch](tarball://root/attachments/some-uuid/ticket3905/prog.patch) by @jhpalmieri created at 2008-08-20 02:40:00",
     "created_at": "2008-08-20T02:40:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27929",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [prog.patch](tarball://root/attachments/some-uuid/ticket3905/prog.patch) by jhpalmieri created at 2008-08-20 02:40:00
+Attachment [prog.patch](tarball://root/attachments/some-uuid/ticket3905/prog.patch) by @jhpalmieri created at 2008-08-20 02:40:00
 
 
 
@@ -86,7 +86,7 @@ archive/issue_comments_027930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27930",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -364,7 +364,7 @@ archive/issue_comments_027931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27931",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -382,7 +382,7 @@ archive/issue_comments_027932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27932",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -402,7 +402,7 @@ archive/issue_comments_027933.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27933",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -415,16 +415,16 @@ my comments from trac as a patch
 archive/issue_comments_027934.json:
 ```json
 {
-    "body": "Attachment [prog.2.patch](tarball://root/attachments/some-uuid/ticket3905/prog.2.patch) by malb created at 2008-08-23 22:52:02\n\nHi there, I made my comments into a patch which ought to be applied after John's patch. This is not perfect or release quality and it still needs some heavy editing. Maybe someone can get through the new prog.tex and make sure it is not worse than what we currently ship and then we can apply both patches? Then, mhansen can convert the Developer's guide to Sphinx and we can go on editing it afterwards?",
+    "body": "Attachment [prog.2.patch](tarball://root/attachments/some-uuid/ticket3905/prog.2.patch) by @malb created at 2008-08-23 22:52:02\n\nHi there, I made my comments into a patch which ought to be applied after John's patch. This is not perfect or release quality and it still needs some heavy editing. Maybe someone can get through the new prog.tex and make sure it is not worse than what we currently ship and then we can apply both patches? Then, mhansen can convert the Developer's guide to Sphinx and we can go on editing it afterwards?",
     "created_at": "2008-08-23T22:52:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27934",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [prog.2.patch](tarball://root/attachments/some-uuid/ticket3905/prog.2.patch) by malb created at 2008-08-23 22:52:02
+Attachment [prog.2.patch](tarball://root/attachments/some-uuid/ticket3905/prog.2.patch) by @malb created at 2008-08-23 22:52:02
 
 Hi there, I made my comments into a patch which ought to be applied after John's patch. This is not perfect or release quality and it still needs some heavy editing. Maybe someone can get through the new prog.tex and make sure it is not worse than what we currently ship and then we can apply both patches? Then, mhansen can convert the Developer's guide to Sphinx and we can go on editing it afterwards?
 
@@ -440,7 +440,7 @@ archive/issue_comments_027935.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27935",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -476,7 +476,7 @@ archive/issue_comments_027936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27936",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -497,7 +497,7 @@ archive/issue_comments_027937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27937",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -539,7 +539,7 @@ archive/issue_comments_027939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27939",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -637,7 +637,7 @@ archive/issue_comments_027942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27942",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

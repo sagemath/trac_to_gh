@@ -55,7 +55,7 @@ archive/issue_comments_028210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3937#issuecomment-28210",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -68,16 +68,16 @@ See #3923
 archive/issue_comments_028211.json:
 ```json
 {
-    "body": "Attachment [trac_3937.patch](tarball://root/attachments/some-uuid/ticket3937/trac_3937.patch) by mhansen created at 2008-10-23 23:11:46",
+    "body": "Attachment [trac_3937.patch](tarball://root/attachments/some-uuid/ticket3937/trac_3937.patch) by @mwhansen created at 2008-10-23 23:11:46",
     "created_at": "2008-10-23T23:11:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3937#issuecomment-28211",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3937.patch](tarball://root/attachments/some-uuid/ticket3937/trac_3937.patch) by mhansen created at 2008-10-23 23:11:46
+Attachment [trac_3937.patch](tarball://root/attachments/some-uuid/ticket3937/trac_3937.patch) by @mwhansen created at 2008-10-23 23:11:46
 
 
 
@@ -86,16 +86,16 @@ Attachment [trac_3937.patch](tarball://root/attachments/some-uuid/ticket3937/tra
 archive/issue_comments_028212.json:
 ```json
 {
-    "body": "Attachment [extcode_3937.patch](tarball://root/attachments/some-uuid/ticket3937/extcode_3937.patch) by mhansen created at 2008-10-23 23:12:55",
+    "body": "Attachment [extcode_3937.patch](tarball://root/attachments/some-uuid/ticket3937/extcode_3937.patch) by @mwhansen created at 2008-10-23 23:12:55",
     "created_at": "2008-10-23T23:12:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3937#issuecomment-28212",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [extcode_3937.patch](tarball://root/attachments/some-uuid/ticket3937/extcode_3937.patch) by mhansen created at 2008-10-23 23:12:55
+Attachment [extcode_3937.patch](tarball://root/attachments/some-uuid/ticket3937/extcode_3937.patch) by @mwhansen created at 2008-10-23 23:12:55
 
 
 
@@ -109,7 +109,7 @@ archive/issue_comments_028213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3937#issuecomment-28213",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -124,16 +124,16 @@ Apply only the last two patches: trac_3937.patch and extcode_3937.patch
 archive/issue_comments_028214.json:
 ```json
 {
-    "body": "Changing assignee from boothby to mhansen.",
+    "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2008-10-23T23:16:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3937#issuecomment-28214",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from boothby to mhansen.
+Changing assignee from boothby to @mwhansen.
 
 
 
@@ -147,7 +147,7 @@ archive/issue_comments_028215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3937#issuecomment-28215",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

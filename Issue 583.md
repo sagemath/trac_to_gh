@@ -14,7 +14,7 @@ archive/issues_000583.json:
     "title": "major bug in polynomial creation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/583",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -85,7 +85,7 @@ archive/issue_comments_003012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/583#issuecomment-3012",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -98,16 +98,16 @@ fix the bug
 archive/issue_comments_003013.json:
 ```json
 {
-    "body": "Attachment [trac583.patch](tarball://root/attachments/some-uuid/ticket583/trac583.patch) by was created at 2007-09-04 02:17:53",
+    "body": "Attachment [trac583.patch](tarball://root/attachments/some-uuid/ticket583/trac583.patch) by @williamstein created at 2007-09-04 02:17:53",
     "created_at": "2007-09-04T02:17:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/583#issuecomment-3013",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac583.patch](tarball://root/attachments/some-uuid/ticket583/trac583.patch) by was created at 2007-09-04 02:17:53
+Attachment [trac583.patch](tarball://root/attachments/some-uuid/ticket583/trac583.patch) by @williamstein created at 2007-09-04 02:17:53
 
 
 
@@ -121,7 +121,7 @@ archive/issue_comments_003014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/583#issuecomment-3014",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

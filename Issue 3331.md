@@ -3,7 +3,7 @@
 archive/issues_003331.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nCC:  robertwb\n\nKeywords: pbuild\n\nThe --incref-local-binop option in cython seems to be unneeded, and costs performance and readability.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3331\n\n",
+    "body": "Assignee: @garyfurnish\n\nCC:  @robertwb\n\nKeywords: pbuild\n\nThe --incref-local-binop option in cython seems to be unneeded, and costs performance and readability.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3331\n\n",
     "created_at": "2008-05-29T19:18:27Z",
     "labels": [
         "pbuild",
@@ -14,12 +14,12 @@ archive/issues_003331.json:
     "title": "[with patch, needs review] Disable --incref-local-binop in pbuild",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3331",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
-CC:  robertwb
+CC:  @robertwb
 
 Keywords: pbuild
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3331
 archive/issue_comments_023099.json:
 ```json
 {
-    "body": "Attachment [trac_3331_extcode.patch](tarball://root/attachments/some-uuid/ticket3331/trac_3331_extcode.patch) by gfurnish created at 2008-05-29 19:18:46",
+    "body": "Attachment [trac_3331_extcode.patch](tarball://root/attachments/some-uuid/ticket3331/trac_3331_extcode.patch) by @garyfurnish created at 2008-05-29 19:18:46",
     "created_at": "2008-05-29T19:18:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3331",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3331#issuecomment-23099",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_3331_extcode.patch](tarball://root/attachments/some-uuid/ticket3331/trac_3331_extcode.patch) by gfurnish created at 2008-05-29 19:18:46
+Attachment [trac_3331_extcode.patch](tarball://root/attachments/some-uuid/ticket3331/trac_3331_extcode.patch) by @garyfurnish created at 2008-05-29 19:18:46
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_023100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3331",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3331#issuecomment-23100",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_023104.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3331",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3331#issuecomment-23104",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

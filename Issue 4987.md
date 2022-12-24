@@ -14,7 +14,7 @@ archive/issues_004987.json:
     "title": "[with spkg, not ready for review] Upgrade to Cython 0.11",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4987",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: mabshoff
@@ -39,7 +39,7 @@ archive/issue_comments_038035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4987#issuecomment-38035",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_038036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4987#issuecomment-38036",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_038037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4987#issuecomment-38037",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_038038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4987#issuecomment-38038",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_038039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4987#issuecomment-38039",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_038040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4987#issuecomment-38040",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -297,7 +297,7 @@ archive/issue_comments_038041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4987#issuecomment-38041",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_038042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4987#issuecomment-38042",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -947,7 +947,7 @@ archive/issue_comments_038043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4987#issuecomment-38043",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -974,7 +974,7 @@ archive/issue_comments_038044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4987#issuecomment-38044",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1012,7 +1012,7 @@ archive/issue_comments_038045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4987#issuecomment-38045",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1071,16 +1071,16 @@ error: command 'gcc' failed with exit status 1
 archive/issue_comments_038047.json:
 ```json
 {
-    "body": "Attachment [4987-cython-0.11.patch](tarball://root/attachments/some-uuid/ticket4987/4987-cython-0.11.patch) by robertwb created at 2009-02-26 05:48:54",
+    "body": "Attachment [4987-cython-0.11.patch](tarball://root/attachments/some-uuid/ticket4987/4987-cython-0.11.patch) by @robertwb created at 2009-02-26 05:48:54",
     "created_at": "2009-02-26T05:48:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4987#issuecomment-38047",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4987-cython-0.11.patch](tarball://root/attachments/some-uuid/ticket4987/4987-cython-0.11.patch) by robertwb created at 2009-02-26 05:48:54
+Attachment [4987-cython-0.11.patch](tarball://root/attachments/some-uuid/ticket4987/4987-cython-0.11.patch) by @robertwb created at 2009-02-26 05:48:54
 
 
 
@@ -1094,7 +1094,7 @@ archive/issue_comments_038048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4987#issuecomment-38048",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1141,7 +1141,7 @@ archive/issue_comments_038050.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4987#issuecomment-38050",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1159,7 +1159,7 @@ archive/issue_comments_038051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4987#issuecomment-38051",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1179,7 +1179,7 @@ archive/issue_comments_038052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4987#issuecomment-38052",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1210,7 +1210,7 @@ archive/issue_comments_038053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4987#issuecomment-38053",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1225,16 +1225,16 @@ Note that the current patch enables the refnanny, which should be changed before
 archive/issue_comments_038054.json:
 ```json
 {
-    "body": "Attachment [4987-cython-0.11-final.patch](tarball://root/attachments/some-uuid/ticket4987/4987-cython-0.11-final.patch) by robertwb created at 2009-03-14 08:00:08\n\nApply this one. (Exactly the same as above, but doesn't enable the refnanny.)",
+    "body": "Attachment [4987-cython-0.11-final.patch](tarball://root/attachments/some-uuid/ticket4987/4987-cython-0.11-final.patch) by @robertwb created at 2009-03-14 08:00:08\n\nApply this one. (Exactly the same as above, but doesn't enable the refnanny.)",
     "created_at": "2009-03-14T08:00:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4987#issuecomment-38054",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4987-cython-0.11-final.patch](tarball://root/attachments/some-uuid/ticket4987/4987-cython-0.11-final.patch) by robertwb created at 2009-03-14 08:00:08
+Attachment [4987-cython-0.11-final.patch](tarball://root/attachments/some-uuid/ticket4987/4987-cython-0.11-final.patch) by @robertwb created at 2009-03-14 08:00:08
 
 Apply this one. (Exactly the same as above, but doesn't enable the refnanny.)
 
@@ -1250,7 +1250,7 @@ archive/issue_comments_038055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4987#issuecomment-38055",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1298,7 +1298,7 @@ archive/issue_comments_038057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4987#issuecomment-38057",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1380,7 +1380,7 @@ archive/issue_comments_038061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4987#issuecomment-38061",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1398,7 +1398,7 @@ archive/issue_comments_038062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4987#issuecomment-38062",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1416,7 +1416,7 @@ archive/issue_comments_038063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4987#issuecomment-38063",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1518,7 +1518,7 @@ archive/issue_comments_038067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4987#issuecomment-38067",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1538,7 +1538,7 @@ archive/issue_comments_038068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4987#issuecomment-38068",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

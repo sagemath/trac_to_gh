@@ -3,7 +3,7 @@
 archive/issues_004981.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  malb\n\nThe way element classes are chosen in `sage/rings/polynomial/polynomial_ring.py` goes very much against object oriented design, and is basically ugly. :)\n\nAttached patch tries to clean up this file, moves the decision of element classes to the immediate parents, adds some tests, and unifies the `__call__` methods. This also makes it much easier to add support for specialized polynomial classes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4981\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @malb\n\nThe way element classes are chosen in `sage/rings/polynomial/polynomial_ring.py` goes very much against object oriented design, and is basically ugly. :)\n\nAttached patch tries to clean up this file, moves the decision of element classes to the immediate parents, adds some tests, and unifies the `__call__` methods. This also makes it much easier to add support for specialized polynomial classes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4981\n\n",
     "created_at": "2009-01-15T13:17:33Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_004981.json:
     "title": "[with patch, needs review] clean up polynomial_ring.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4981",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  malb
+CC:  @malb
 
 The way element classes are chosen in `sage/rings/polynomial/polynomial_ring.py` goes very much against object oriented design, and is basically ugly. :)
 
@@ -41,7 +41,7 @@ archive/issue_comments_037968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4981#issuecomment-37968",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_037970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4981#issuecomment-37970",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_037971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4981#issuecomment-37971",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_037974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4981#issuecomment-37974",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

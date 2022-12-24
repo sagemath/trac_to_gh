@@ -3,7 +3,7 @@
 archive/issues_003204.json:
 ```json
 {
-    "body": "Assignee: malb\n\nKeywords: linear algebra, gf(2), m4ri\n\nA new version of M4RI is available at:\n\n   http://sage.math.washington.edu/home/malb/m4ri/\n\nThe matching SPKG is at:\n\n  http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20080514.p0.spkg\n\nThis SPKG needs a patch which is attached to this ticket.\n\nThe new version has quite a new features:\n* Strassen-Winograd matrix multiplication (though not used by default yet),\n* Native support for Solaris and Windows,\n* SSE2 support,\n* Much improved documentation,\n* Nicer calling conventions.\n\nThe SSE2 support could cause trouble but I've successfully built the library on 32 and 64-bit Linux, OSX (Intel and PPC), OpenSolaris 2008.05 and Windows XP.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3204\n\n",
+    "body": "Assignee: @malb\n\nKeywords: linear algebra, gf(2), m4ri\n\nA new version of M4RI is available at:\n\n   http://sage.math.washington.edu/home/malb/m4ri/\n\nThe matching SPKG is at:\n\n  http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20080514.p0.spkg\n\nThis SPKG needs a patch which is attached to this ticket.\n\nThe new version has quite a new features:\n* Strassen-Winograd matrix multiplication (though not used by default yet),\n* Native support for Solaris and Windows,\n* SSE2 support,\n* Much improved documentation,\n* Nicer calling conventions.\n\nThe SSE2 support could cause trouble but I've successfully built the library on 32 and 64-bit Linux, OSX (Intel and PPC), OpenSolaris 2008.05 and Windows XP.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3204\n\n",
     "created_at": "2008-05-14T20:35:58Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_003204.json:
     "title": "[with spkg, needs review] update M4RI to version 20080514",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3204",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Keywords: linear algebra, gf(2), m4ri
 
@@ -56,7 +56,7 @@ archive/issue_comments_022137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3204#issuecomment-22137",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_022138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3204#issuecomment-22138",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_022139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3204#issuecomment-22139",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_022140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3204#issuecomment-22140",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_022141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3204#issuecomment-22141",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_022142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3204#issuecomment-22142",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_022143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3204#issuecomment-22143",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -326,16 +326,16 @@ this patch has been applied the current m4ri.spkg and should also be applied to 
 archive/issue_comments_022145.json:
 ```json
 {
-    "body": "Attachment [trac_3197_libm4ri-20071224.p2-spkg-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3204/trac_3197_libm4ri-20071224.p2-spkg-install-64bit-osx.patch) by malb created at 2008-05-21 21:28:47",
+    "body": "Attachment [trac_3197_libm4ri-20071224.p2-spkg-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3204/trac_3197_libm4ri-20071224.p2-spkg-install-64bit-osx.patch) by @malb created at 2008-05-21 21:28:47",
     "created_at": "2008-05-21T21:28:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3204#issuecomment-22145",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_3197_libm4ri-20071224.p2-spkg-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3204/trac_3197_libm4ri-20071224.p2-spkg-install-64bit-osx.patch) by malb created at 2008-05-21 21:28:47
+Attachment [trac_3197_libm4ri-20071224.p2-spkg-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3204/trac_3197_libm4ri-20071224.p2-spkg-install-64bit-osx.patch) by @malb created at 2008-05-21 21:28:47
 
 
 
@@ -349,7 +349,7 @@ archive/issue_comments_022146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3204#issuecomment-22146",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -367,7 +367,7 @@ archive/issue_comments_022147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3204#issuecomment-22147",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -385,7 +385,7 @@ archive/issue_comments_022148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3204#issuecomment-22148",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -398,16 +398,16 @@ silly little script to check the results against Magma for a small range of matr
 archive/issue_comments_022149.json:
 ```json
 {
-    "body": "Attachment [m4ri_test.py](tarball://root/attachments/some-uuid/ticket3204/m4ri_test.py) by malb created at 2008-05-28 12:33:58\n\nThe SPKG + patch passes the test in `m4ri_test.py` in addition to the Sage doctests and the M4RI tests.",
+    "body": "Attachment [m4ri_test.py](tarball://root/attachments/some-uuid/ticket3204/m4ri_test.py) by @malb created at 2008-05-28 12:33:58\n\nThe SPKG + patch passes the test in `m4ri_test.py` in addition to the Sage doctests and the M4RI tests.",
     "created_at": "2008-05-28T12:33:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3204#issuecomment-22149",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [m4ri_test.py](tarball://root/attachments/some-uuid/ticket3204/m4ri_test.py) by malb created at 2008-05-28 12:33:58
+Attachment [m4ri_test.py](tarball://root/attachments/some-uuid/ticket3204/m4ri_test.py) by @malb created at 2008-05-28 12:33:58
 
 The SPKG + patch passes the test in `m4ri_test.py` in addition to the Sage doctests and the M4RI tests.
 
@@ -418,16 +418,16 @@ The SPKG + patch passes the test in `m4ri_test.py` in addition to the Sage docte
 archive/issue_comments_022150.json:
 ```json
 {
-    "body": "Attachment [new_m4ri_corner_cases.patch](tarball://root/attachments/some-uuid/ticket3204/new_m4ri_corner_cases.patch) by malb created at 2008-05-28 16:33:43",
+    "body": "Attachment [new_m4ri_corner_cases.patch](tarball://root/attachments/some-uuid/ticket3204/new_m4ri_corner_cases.patch) by @malb created at 2008-05-28 16:33:43",
     "created_at": "2008-05-28T16:33:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3204#issuecomment-22150",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [new_m4ri_corner_cases.patch](tarball://root/attachments/some-uuid/ticket3204/new_m4ri_corner_cases.patch) by malb created at 2008-05-28 16:33:43
+Attachment [new_m4ri_corner_cases.patch](tarball://root/attachments/some-uuid/ticket3204/new_m4ri_corner_cases.patch) by @malb created at 2008-05-28 16:33:43
 
 
 
@@ -441,7 +441,7 @@ archive/issue_comments_022151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3204#issuecomment-22151",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

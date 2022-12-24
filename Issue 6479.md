@@ -3,7 +3,7 @@
 archive/issues_006479.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  hamptonio@gmail.com\n\n\n```\nsage: y(x) = function('y',x)\nsage: desolve( y(x).diff(x,2) == 0, y(x))\nk2*x + k1\nsage: desolve( y(x).diff(x,2) == 0, y(x), [0,0,1])\nx + y(0)\nsage: desolve( y(x).diff(x,2) == 0, y(x), [0,1,1])\nx + y(0)\n```\n\n\nIt seems desolve instead of using the given initial\nvalue of y at x=0,  it literally passes \"y(0)\" to maxima.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6479\n\n",
+    "body": "Assignee: @burcin\n\nCC:  hamptonio@gmail.com\n\n\n```\nsage: y(x) = function('y',x)\nsage: desolve( y(x).diff(x,2) == 0, y(x))\nk2*x + k1\nsage: desolve( y(x).diff(x,2) == 0, y(x), [0,0,1])\nx + y(0)\nsage: desolve( y(x).diff(x,2) == 0, y(x), [0,1,1])\nx + y(0)\n```\n\n\nIt seems desolve instead of using the given initial\nvalue of y at x=0,  it literally passes \"y(0)\" to maxima.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6479\n\n",
     "created_at": "2009-07-08T11:08:56Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_006479.json:
     "title": "desolve for 2nd order ODE with initial condition gives wrong answer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6479",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 CC:  hamptonio@gmail.com
 
@@ -53,7 +53,7 @@ archive/issue_comments_052367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52367",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -92,16 +92,16 @@ An additional problem is that the syntax for desolve and desolve_laplace are dif
 archive/issue_comments_052368.json:
 ```json
 {
-    "body": "Attachment [trac_6479_marik.patch](tarball://root/attachments/some-uuid/ticket6479/trac_6479_marik.patch) by robert.marik created at 2009-10-06 16:43:27",
+    "body": "Attachment [trac_6479_marik.patch](tarball://root/attachments/some-uuid/ticket6479/trac_6479_marik.patch) by @robert-marik created at 2009-10-06 16:43:27",
     "created_at": "2009-10-06T16:43:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52368",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Attachment [trac_6479_marik.patch](tarball://root/attachments/some-uuid/ticket6479/trac_6479_marik.patch) by robert.marik created at 2009-10-06 16:43:27
+Attachment [trac_6479_marik.patch](tarball://root/attachments/some-uuid/ticket6479/trac_6479_marik.patch) by @robert-marik created at 2009-10-06 16:43:27
 
 
 
@@ -115,7 +115,7 @@ archive/issue_comments_052369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52369",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_052370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52370",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_052371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52371",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_052372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52372",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -185,16 +185,16 @@ Apply only this patch
 archive/issue_comments_052373.json:
 ```json
 {
-    "body": "Attachment [trac_6479_marik_revised.patch](tarball://root/attachments/some-uuid/ticket6479/trac_6479_marik_revised.patch) by robert.marik created at 2009-10-07 13:24:57",
+    "body": "Attachment [trac_6479_marik_revised.patch](tarball://root/attachments/some-uuid/ticket6479/trac_6479_marik_revised.patch) by @robert-marik created at 2009-10-07 13:24:57",
     "created_at": "2009-10-07T13:24:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52373",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Attachment [trac_6479_marik_revised.patch](tarball://root/attachments/some-uuid/ticket6479/trac_6479_marik_revised.patch) by robert.marik created at 2009-10-07 13:24:57
+Attachment [trac_6479_marik_revised.patch](tarball://root/attachments/some-uuid/ticket6479/trac_6479_marik_revised.patch) by @robert-marik created at 2009-10-07 13:24:57
 
 
 
@@ -208,7 +208,7 @@ archive/issue_comments_052374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52374",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -221,16 +221,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_052375.json:
 ```json
 {
-    "body": "Attachment [trac_6479_marik_revised_2.patch](tarball://root/attachments/some-uuid/ticket6479/trac_6479_marik_revised_2.patch) by robert.marik created at 2009-10-13 13:48:30\n\nApply on the top of the patch trac_6479_marik_revised.patch  and on the top pf the patch for Ticket #385 http://trac.sagemath.org/sage_trac/ticket/385",
+    "body": "Attachment [trac_6479_marik_revised_2.patch](tarball://root/attachments/some-uuid/ticket6479/trac_6479_marik_revised_2.patch) by @robert-marik created at 2009-10-13 13:48:30\n\nApply on the top of the patch trac_6479_marik_revised.patch  and on the top pf the patch for Ticket #385 http://trac.sagemath.org/sage_trac/ticket/385",
     "created_at": "2009-10-13T13:48:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52375",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Attachment [trac_6479_marik_revised_2.patch](tarball://root/attachments/some-uuid/ticket6479/trac_6479_marik_revised_2.patch) by robert.marik created at 2009-10-13 13:48:30
+Attachment [trac_6479_marik_revised_2.patch](tarball://root/attachments/some-uuid/ticket6479/trac_6479_marik_revised_2.patch) by @robert-marik created at 2009-10-13 13:48:30
 
 Apply on the top of the patch trac_6479_marik_revised.patch  and on the top pf the patch for Ticket #385 http://trac.sagemath.org/sage_trac/ticket/385
 
@@ -246,7 +246,7 @@ archive/issue_comments_052376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52376",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_052377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52377",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_052378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52378",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_052379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52379",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -378,7 +378,7 @@ archive/issue_comments_052380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52380",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -419,7 +419,7 @@ archive/issue_comments_052381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52381",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -432,16 +432,16 @@ this replaces previous patches and installs on the top of patch for trac #385
 archive/issue_comments_052382.json:
 ```json
 {
-    "body": "Attachment [trac_6479_marik_revision3.patch](tarball://root/attachments/some-uuid/ticket6479/trac_6479_marik_revision3.patch) by robert.marik created at 2009-10-27 20:23:47",
+    "body": "Attachment [trac_6479_marik_revision3.patch](tarball://root/attachments/some-uuid/ticket6479/trac_6479_marik_revision3.patch) by @robert-marik created at 2009-10-27 20:23:47",
     "created_at": "2009-10-27T20:23:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52382",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Attachment [trac_6479_marik_revision3.patch](tarball://root/attachments/some-uuid/ticket6479/trac_6479_marik_revision3.patch) by robert.marik created at 2009-10-27 20:23:47
+Attachment [trac_6479_marik_revision3.patch](tarball://root/attachments/some-uuid/ticket6479/trac_6479_marik_revision3.patch) by @robert-marik created at 2009-10-27 20:23:47
 
 
 
@@ -455,7 +455,7 @@ archive/issue_comments_052383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52383",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -473,7 +473,7 @@ archive/issue_comments_052384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52384",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -491,7 +491,7 @@ archive/issue_comments_052385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52385",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -511,7 +511,7 @@ archive/issue_comments_052386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52386",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -529,7 +529,7 @@ archive/issue_comments_052387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52387",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 

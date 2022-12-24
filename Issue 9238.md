@@ -3,7 +3,7 @@
 archive/issues_009238.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  timdumol kcrisman rkirov\n\nI believe this drop-in set of javascript files now works.  Need testers!\n\nAttached are replacement javascript files for jmol_lib.js and notebook_lib.js, which are located in sagenb/data/sage/js.  Changes to notebook_lib.js are just some added calls to functions in jmol_lib.js to let the javascript know when applets are closed.  The library jmol_lib.js is a complete rewrite.\n\nAdds the following features to the notebook:\n\n1) No more than 8 Jmols will be active at once.  This prevents running out of memory.  The user is provided with a link to wake up sleeping Jmols that they wish to manipulate.  Sleeping Jmols are replaced with a static image.\n\n2) A spin on/off check box is now provided.\n\n3) The user may choose among a number of display sizes.\n\n4) In the function tab, the user may change function color and mesh color.\n\n5) The \"State\" tab displays the Jmol script to get the Jmol display.  Eventually this will probably be hidden.  If we can get the notebook to store this user views would also transfer across sessions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9238\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @TimDumol @kcrisman rkirov\n\nI believe this drop-in set of javascript files now works.  Need testers!\n\nAttached are replacement javascript files for jmol_lib.js and notebook_lib.js, which are located in sagenb/data/sage/js.  Changes to notebook_lib.js are just some added calls to functions in jmol_lib.js to let the javascript know when applets are closed.  The library jmol_lib.js is a complete rewrite.\n\nAdds the following features to the notebook:\n\n1) No more than 8 Jmols will be active at once.  This prevents running out of memory.  The user is provided with a link to wake up sleeping Jmols that they wish to manipulate.  Sleeping Jmols are replaced with a static image.\n\n2) A spin on/off check box is now provided.\n\n3) The user may choose among a number of display sizes.\n\n4) In the function tab, the user may change function color and mesh color.\n\n5) The \"State\" tab displays the Jmol script to get the Jmol display.  Eventually this will probably be hidden.  If we can get the notebook to store this user views would also transfer across sessions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9238\n\n",
     "created_at": "2010-06-14T16:06:19Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_009238.json:
     "title": "J. Gutow's update to Jmol in the notebook...",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9238",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 Assignee: jason, was
 
-CC:  timdumol kcrisman rkirov
+CC:  @TimDumol @kcrisman rkirov
 
 I believe this drop-in set of javascript files now works.  Need testers!
 
@@ -48,16 +48,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9238
 archive/issue_comments_086715.json:
 ```json
 {
-    "body": "Attachment [Jmol javascript updates.zip](tarball://root/attachments/some-uuid/ticket9238/Jmol javascript updates.zip) by gutow created at 2010-06-14 16:08:52\n\njmol notebook javascript updates",
+    "body": "Attachment [Jmol javascript updates.zip](tarball://root/attachments/some-uuid/ticket9238/Jmol javascript updates.zip) by @gutow created at 2010-06-14 16:08:52\n\njmol notebook javascript updates",
     "created_at": "2010-06-14T16:08:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86715",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
-Attachment [Jmol javascript updates.zip](tarball://root/attachments/some-uuid/ticket9238/Jmol javascript updates.zip) by gutow created at 2010-06-14 16:08:52
+Attachment [Jmol javascript updates.zip](tarball://root/attachments/some-uuid/ticket9238/Jmol javascript updates.zip) by @gutow created at 2010-06-14 16:08:52
 
 jmol notebook javascript updates
 
@@ -73,7 +73,7 @@ archive/issue_comments_086716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86716",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_086717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86717",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_086718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86718",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_086719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86719",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_086720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86720",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_086721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86721",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_086722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86722",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_086723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86723",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_086724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86724",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -316,7 +316,7 @@ archive/issue_comments_086725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86725",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -342,7 +342,7 @@ archive/issue_comments_086726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86726",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -364,7 +364,7 @@ archive/issue_comments_086727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86727",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -385,7 +385,7 @@ archive/issue_comments_086728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86728",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -407,7 +407,7 @@ archive/issue_comments_086729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86729",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -427,7 +427,7 @@ archive/issue_comments_086730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86730",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -459,7 +459,7 @@ archive/issue_comments_086731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86731",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -477,7 +477,7 @@ archive/issue_comments_086732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86732",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -499,7 +499,7 @@ archive/issue_comments_086733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86733",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -561,7 +561,7 @@ archive/issue_comments_086734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86734",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -640,7 +640,7 @@ archive/issue_comments_086735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86735",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -664,7 +664,7 @@ archive/issue_comments_086736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86736",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -698,7 +698,7 @@ archive/issue_comments_086737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86737",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -730,7 +730,7 @@ archive/issue_comments_086738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86738",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -760,7 +760,7 @@ archive/issue_comments_086739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86739",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -782,7 +782,7 @@ archive/issue_comments_086740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86740",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -814,7 +814,7 @@ archive/issue_comments_086741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86741",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -836,7 +836,7 @@ archive/issue_comments_086742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86742",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -862,7 +862,7 @@ archive/issue_comments_086743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86743",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -883,7 +883,7 @@ archive/issue_comments_086744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86744",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -901,7 +901,7 @@ archive/issue_comments_086745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86745",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -919,7 +919,7 @@ archive/issue_comments_086746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86746",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -939,7 +939,7 @@ archive/issue_comments_086747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86747",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -957,7 +957,7 @@ archive/issue_comments_086748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86748",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -975,7 +975,7 @@ archive/issue_comments_086749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86749",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -993,7 +993,7 @@ archive/issue_comments_086750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86750",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1011,7 +1011,7 @@ archive/issue_comments_086751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86751",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1024,16 +1024,16 @@ CCing kcrisman, as it seems he'd be interested (or at least willing) to look at 
 archive/issue_comments_086752.json:
 ```json
 {
-    "body": "Changing assignee from jason, was to gutow.",
+    "body": "Changing assignee from jason, was to @gutow.",
     "created_at": "2011-01-22T22:57:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86752",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
-Changing assignee from jason, was to gutow.
+Changing assignee from jason, was to @gutow.
 
 
 
@@ -1047,7 +1047,7 @@ archive/issue_comments_086753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86753",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1087,7 +1087,7 @@ archive/issue_comments_086754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86754",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -1132,7 +1132,7 @@ archive/issue_comments_086755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86755",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1154,7 +1154,7 @@ archive/issue_comments_086756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86756",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -1183,7 +1183,7 @@ archive/issue_comments_086757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86757",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1203,7 +1203,7 @@ archive/issue_comments_086758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86758",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -1227,7 +1227,7 @@ archive/issue_comments_086759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86759",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1259,7 +1259,7 @@ archive/issue_comments_086760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86760",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1285,7 +1285,7 @@ archive/issue_comments_086761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86761",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1298,16 +1298,16 @@ For review purposes only!  Diffs with previous files, apparently.
 archive/issue_comments_086762.json:
 ```json
 {
-    "body": "Attachment [trac_9238-jmol-for-review-only.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238-jmol-for-review-only.patch) by kcrisman created at 2011-02-22 17:52:38\n\n>aware of.  Also, for some reason the way that I dropped the new files in did something weird, so that `sagenb/data/sage/js/jmol_lib.js` ends up only having +, not -, in its diff.\n\nNot true, ignore this statement.",
+    "body": "Attachment [trac_9238-jmol-for-review-only.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238-jmol-for-review-only.patch) by @kcrisman created at 2011-02-22 17:52:38\n\n>aware of.  Also, for some reason the way that I dropped the new files in did something weird, so that `sagenb/data/sage/js/jmol_lib.js` ends up only having +, not -, in its diff.\n\nNot true, ignore this statement.",
     "created_at": "2011-02-22T17:52:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86762",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_9238-jmol-for-review-only.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238-jmol-for-review-only.patch) by kcrisman created at 2011-02-22 17:52:38
+Attachment [trac_9238-jmol-for-review-only.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238-jmol-for-review-only.patch) by @kcrisman created at 2011-02-22 17:52:38
 
 >aware of.  Also, for some reason the way that I dropped the new files in did something weird, so that `sagenb/data/sage/js/jmol_lib.js` ends up only having +, not -, in its diff.
 
@@ -1325,7 +1325,7 @@ archive/issue_comments_086763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86763",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -1348,7 +1348,7 @@ archive/issue_comments_086764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86764",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1372,7 +1372,7 @@ archive/issue_comments_086765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86765",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1414,7 +1414,7 @@ archive/issue_comments_086766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86766",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1432,7 +1432,7 @@ archive/issue_comments_086767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86767",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1459,7 +1459,7 @@ archive/issue_comments_086768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86768",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1487,7 +1487,7 @@ archive/issue_comments_086769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86769",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1507,16 +1507,16 @@ produces an image like the attached "index.jpg" image (see attached files above)
 archive/issue_comments_086770.json:
 ```json
 {
-    "body": "Attachment [index.jpg](tarball://root/attachments/some-uuid/ticket9238/index.jpg) by jason created at 2011-02-26 08:36:25\n\nThose little white sparkles (artifacts in the mesh) seem to only happen at the intersection of mesh lines, if that helps diagnose what is going on.",
+    "body": "Attachment [index.jpg](tarball://root/attachments/some-uuid/ticket9238/index.jpg) by @jasongrout created at 2011-02-26 08:36:25\n\nThose little white sparkles (artifacts in the mesh) seem to only happen at the intersection of mesh lines, if that helps diagnose what is going on.",
     "created_at": "2011-02-26T08:36:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86770",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [index.jpg](tarball://root/attachments/some-uuid/ticket9238/index.jpg) by jason created at 2011-02-26 08:36:25
+Attachment [index.jpg](tarball://root/attachments/some-uuid/ticket9238/index.jpg) by @jasongrout created at 2011-02-26 08:36:25
 
 Those little white sparkles (artifacts in the mesh) seem to only happen at the intersection of mesh lines, if that helps diagnose what is going on.
 
@@ -1532,7 +1532,7 @@ archive/issue_comments_086771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86771",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -1569,7 +1569,7 @@ archive/issue_comments_086772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86772",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -1589,7 +1589,7 @@ archive/issue_comments_086773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86773",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1611,7 +1611,7 @@ archive/issue_comments_086774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86774",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1634,7 +1634,7 @@ archive/issue_comments_086775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86775",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1652,7 +1652,7 @@ archive/issue_comments_086776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86776",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1676,7 +1676,7 @@ archive/issue_comments_086777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86777",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -1706,7 +1706,7 @@ archive/issue_comments_086778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86778",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1719,16 +1719,16 @@ apply after installing jmol spkg.  Apply to sagenb repository
 archive/issue_comments_086779.json:
 ```json
 {
-    "body": "Attachment [hide-advanced-jmol-controls.patch](tarball://root/attachments/some-uuid/ticket9238/hide-advanced-jmol-controls.patch) by jason created at 2011-03-01 04:35:01\n\nI attached a patch which adds an \"Advanced Controls\" button under the 3d applet which toggles the controls to the right.",
+    "body": "Attachment [hide-advanced-jmol-controls.patch](tarball://root/attachments/some-uuid/ticket9238/hide-advanced-jmol-controls.patch) by @jasongrout created at 2011-03-01 04:35:01\n\nI attached a patch which adds an \"Advanced Controls\" button under the 3d applet which toggles the controls to the right.",
     "created_at": "2011-03-01T04:35:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86779",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [hide-advanced-jmol-controls.patch](tarball://root/attachments/some-uuid/ticket9238/hide-advanced-jmol-controls.patch) by jason created at 2011-03-01 04:35:01
+Attachment [hide-advanced-jmol-controls.patch](tarball://root/attachments/some-uuid/ticket9238/hide-advanced-jmol-controls.patch) by @jasongrout created at 2011-03-01 04:35:01
 
 I attached a patch which adds an "Advanced Controls" button under the 3d applet which toggles the controls to the right.
 
@@ -1744,7 +1744,7 @@ archive/issue_comments_086780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86780",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1776,7 +1776,7 @@ archive/issue_comments_086781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86781",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -1816,7 +1816,7 @@ archive/issue_comments_086782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86782",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1860,7 +1860,7 @@ archive/issue_comments_086783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86783",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1878,7 +1878,7 @@ archive/issue_comments_086784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86784",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1913,7 +1913,7 @@ archive/issue_comments_086785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86785",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1932,7 +1932,7 @@ archive/issue_comments_086786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86786",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -1953,7 +1953,7 @@ archive/issue_comments_086787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86787",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1971,7 +1971,7 @@ archive/issue_comments_086788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86788",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -1991,7 +1991,7 @@ archive/issue_comments_086789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86789",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2037,7 +2037,7 @@ archive/issue_comments_086790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86790",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -2098,7 +2098,7 @@ archive/issue_comments_086791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86791",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2148,7 +2148,7 @@ archive/issue_comments_086792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86792",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -2176,7 +2176,7 @@ archive/issue_comments_086793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86793",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -2194,7 +2194,7 @@ archive/issue_comments_086794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86794",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -2212,7 +2212,7 @@ archive/issue_comments_086795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86795",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2242,7 +2242,7 @@ archive/issue_comments_086796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86796",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2274,7 +2274,7 @@ archive/issue_comments_086797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86797",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2292,7 +2292,7 @@ archive/issue_comments_086798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86798",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2338,7 +2338,7 @@ archive/issue_comments_086799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86799",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -2361,7 +2361,7 @@ archive/issue_comments_086800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86800",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -2380,7 +2380,7 @@ archive/issue_comments_086801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86801",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -2398,7 +2398,7 @@ archive/issue_comments_086802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86802",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -2416,7 +2416,7 @@ archive/issue_comments_086803.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86803",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2440,7 +2440,7 @@ archive/issue_comments_086804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86804",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2453,16 +2453,16 @@ I tried something like this, and it had the same response, except of course with
 archive/issue_comments_086805.json:
 ```json
 {
-    "body": "Attachment [spt-attempt.diff](tarball://root/attachments/some-uuid/ticket9238/spt-attempt.diff) by kcrisman created at 2011-03-15 15:15:53\n\nFor reference only - do not apply.",
+    "body": "Attachment [spt-attempt.diff](tarball://root/attachments/some-uuid/ticket9238/spt-attempt.diff) by @kcrisman created at 2011-03-15 15:15:53\n\nFor reference only - do not apply.",
     "created_at": "2011-03-15T15:15:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86805",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [spt-attempt.diff](tarball://root/attachments/some-uuid/ticket9238/spt-attempt.diff) by kcrisman created at 2011-03-15 15:15:53
+Attachment [spt-attempt.diff](tarball://root/attachments/some-uuid/ticket9238/spt-attempt.diff) by @kcrisman created at 2011-03-15 15:15:53
 
 For reference only - do not apply.
 
@@ -2478,7 +2478,7 @@ archive/issue_comments_086806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86806",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -2501,7 +2501,7 @@ archive/issue_comments_086807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86807",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -2529,7 +2529,7 @@ archive/issue_comments_086808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86808",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2547,7 +2547,7 @@ archive/issue_comments_086809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86809",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -2567,7 +2567,7 @@ archive/issue_comments_086810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86810",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -2580,16 +2580,16 @@ plot3d/base.pyx fixes to launch Jmol from cmd line
 archive/issue_comments_086811.json:
 ```json
 {
-    "body": "Attachment [trac_9232_plot3d_base_pyx.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9232_plot3d_base_pyx.patch) by kcrisman created at 2011-03-21 15:30:00\n\n> Probably still won't work because of some problems with Jmol and the launch shell script.  I need help because I've got it working, but don't know how to make a patch that includes binary files (the necessary updated .jar files).  I've got a good patch for the updates to plot3d/base.pyx, but it doesn't fix everything without updates to the Jmol and its support files.  I'll upload the base.pyx patch below, but actually intended to add it to ticket 9232, which is about Jmol from the command line.  Do I need to build an .spkg for the Jmol stuff?\n\nHmm, those files are not being tracked by HG.  Otherwise any changes would be recorded, even binary ones.   But I think that we try not to track them because they are all binaries and we can't directly access them - hence the new spkg.\n\nIf the `isosurface fullylit; pmesh o* fullylit; set antialiasdisplay on;` stuff is just to fix the lighting in general, we could get that in a lot more quickly by simply opening another ticket, since it doesn't require a new SageNB package.  I *have* noticed that the top of surfaces was not well lit, as opposed to the bottom... but only in the notebook, not the command line, weirdly.  That part of this patch fixes that.  Any ideas as to what was going on with that?\n\nBut anything that is about changing those jmol files would have to be another package, though, I guess, because we don't track those files.  Why doesn't changing the extension just work 'out of the box'?",
+    "body": "Attachment [trac_9232_plot3d_base_pyx.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9232_plot3d_base_pyx.patch) by @kcrisman created at 2011-03-21 15:30:00\n\n> Probably still won't work because of some problems with Jmol and the launch shell script.  I need help because I've got it working, but don't know how to make a patch that includes binary files (the necessary updated .jar files).  I've got a good patch for the updates to plot3d/base.pyx, but it doesn't fix everything without updates to the Jmol and its support files.  I'll upload the base.pyx patch below, but actually intended to add it to ticket 9232, which is about Jmol from the command line.  Do I need to build an .spkg for the Jmol stuff?\n\nHmm, those files are not being tracked by HG.  Otherwise any changes would be recorded, even binary ones.   But I think that we try not to track them because they are all binaries and we can't directly access them - hence the new spkg.\n\nIf the `isosurface fullylit; pmesh o* fullylit; set antialiasdisplay on;` stuff is just to fix the lighting in general, we could get that in a lot more quickly by simply opening another ticket, since it doesn't require a new SageNB package.  I *have* noticed that the top of surfaces was not well lit, as opposed to the bottom... but only in the notebook, not the command line, weirdly.  That part of this patch fixes that.  Any ideas as to what was going on with that?\n\nBut anything that is about changing those jmol files would have to be another package, though, I guess, because we don't track those files.  Why doesn't changing the extension just work 'out of the box'?",
     "created_at": "2011-03-21T15:30:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86811",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_9232_plot3d_base_pyx.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9232_plot3d_base_pyx.patch) by kcrisman created at 2011-03-21 15:30:00
+Attachment [trac_9232_plot3d_base_pyx.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9232_plot3d_base_pyx.patch) by @kcrisman created at 2011-03-21 15:30:00
 
 > Probably still won't work because of some problems with Jmol and the launch shell script.  I need help because I've got it working, but don't know how to make a patch that includes binary files (the necessary updated .jar files).  I've got a good patch for the updates to plot3d/base.pyx, but it doesn't fix everything without updates to the Jmol and its support files.  I'll upload the base.pyx patch below, but actually intended to add it to ticket 9232, which is about Jmol from the command line.  Do I need to build an .spkg for the Jmol stuff?
 
@@ -2611,7 +2611,7 @@ archive/issue_comments_086812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86812",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -2641,7 +2641,7 @@ archive/issue_comments_086813.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86813",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2661,7 +2661,7 @@ archive/issue_comments_086814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86814",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -2683,7 +2683,7 @@ archive/issue_comments_086815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86815",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2701,7 +2701,7 @@ archive/issue_comments_086816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86816",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -2714,16 +2714,16 @@ Patch of notebook_lib.js and jmol_lib.js for interactive enhancements to Jmol in
 archive/issue_comments_086817.json:
 ```json
 {
-    "body": "Attachment [trac_9238_interactive_js.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238_interactive_js.patch) by gutow created at 2011-03-22 22:41:32\n\nReady for testing, but requires two steps.  Starting with a clean Sage 4.6.2:\n\n1. patch for Jmol at the command line. See [#9232](http://trac.sagemath.org/sage_trac/ticket/9232).\n2. Apply the patch trac_9238_interactive_js.patch above.\n\nI have addressed the following issues (let me know if I've missed anything):\n\n* Addition of the ability to hide the \"advanced controls\".\n* Fix so that the advanced controls are hidden when the applet is asleep (no accidental calls to nonexistent applets).\n* Fix to issue of not properly loading all applets when a worksheet with a lot of applets is reopened (please check this one carefully).\n* Fixes to vocabulary and labels to make things clearer. \n* Hidden the div with the State in it.  (Still there b/c I hope to be able to recreate the way the user left it on close, rather than starting fresh each time.)\n\nHappy testing and thank you to those who do test!",
+    "body": "Attachment [trac_9238_interactive_js.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238_interactive_js.patch) by @gutow created at 2011-03-22 22:41:32\n\nReady for testing, but requires two steps.  Starting with a clean Sage 4.6.2:\n\n1. patch for Jmol at the command line. See [#9232](http://trac.sagemath.org/sage_trac/ticket/9232).\n2. Apply the patch trac_9238_interactive_js.patch above.\n\nI have addressed the following issues (let me know if I've missed anything):\n\n* Addition of the ability to hide the \"advanced controls\".\n* Fix so that the advanced controls are hidden when the applet is asleep (no accidental calls to nonexistent applets).\n* Fix to issue of not properly loading all applets when a worksheet with a lot of applets is reopened (please check this one carefully).\n* Fixes to vocabulary and labels to make things clearer. \n* Hidden the div with the State in it.  (Still there b/c I hope to be able to recreate the way the user left it on close, rather than starting fresh each time.)\n\nHappy testing and thank you to those who do test!",
     "created_at": "2011-03-22T22:41:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86817",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
-Attachment [trac_9238_interactive_js.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238_interactive_js.patch) by gutow created at 2011-03-22 22:41:32
+Attachment [trac_9238_interactive_js.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238_interactive_js.patch) by @gutow created at 2011-03-22 22:41:32
 
 Ready for testing, but requires two steps.  Starting with a clean Sage 4.6.2:
 
@@ -2752,7 +2752,7 @@ archive/issue_comments_086818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86818",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -2770,7 +2770,7 @@ archive/issue_comments_086819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86819",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2792,7 +2792,7 @@ archive/issue_comments_086820.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86820",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -2820,7 +2820,7 @@ archive/issue_comments_086821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86821",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2838,7 +2838,7 @@ archive/issue_comments_086822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86822",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2866,7 +2866,7 @@ archive/issue_comments_086823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86823",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2879,16 +2879,16 @@ For reference only - do not apply, at least not until it's fixed!
 archive/issue_comments_086824.json:
 ```json
 {
-    "body": "Attachment [trac_9238-sagemenu-test.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238-sagemenu-test.patch) by kcrisman created at 2011-03-23 20:20:37\n\nThis [attachment:trac_9238-sagemenu-test.patch] is the offending change.  See line 361 and following where the weirdness begins.  But like I said, I don't think we actually need to add this to the repo; this is the vanilla version of this file already in Sage.",
+    "body": "Attachment [trac_9238-sagemenu-test.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238-sagemenu-test.patch) by @kcrisman created at 2011-03-23 20:20:37\n\nThis [attachment:trac_9238-sagemenu-test.patch] is the offending change.  See line 361 and following where the weirdness begins.  But like I said, I don't think we actually need to add this to the repo; this is the vanilla version of this file already in Sage.",
     "created_at": "2011-03-23T20:20:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86824",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_9238-sagemenu-test.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238-sagemenu-test.patch) by kcrisman created at 2011-03-23 20:20:37
+Attachment [trac_9238-sagemenu-test.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238-sagemenu-test.patch) by @kcrisman created at 2011-03-23 20:20:37
 
 This [attachment:trac_9238-sagemenu-test.patch] is the offending change.  See line 361 and following where the weirdness begins.  But like I said, I don't think we actually need to add this to the repo; this is the vanilla version of this file already in Sage.
 
@@ -2904,7 +2904,7 @@ archive/issue_comments_086825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86825",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2922,7 +2922,7 @@ archive/issue_comments_086826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86826",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2935,16 +2935,16 @@ And I've now checked, and there is NO difference between the files.  So maybe Jo
 archive/issue_comments_086827.json:
 ```json
 {
-    "body": "Attachment [trac_9238-add-help.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238-add-help.patch) by kcrisman created at 2011-03-23 20:52:27\n\nApply this as well",
+    "body": "Attachment [trac_9238-add-help.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238-add-help.patch) by @kcrisman created at 2011-03-23 20:52:27\n\nApply this as well",
     "created_at": "2011-03-23T20:52:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86827",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_9238-add-help.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238-add-help.patch) by kcrisman created at 2011-03-23 20:52:27
+Attachment [trac_9238-add-help.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238-add-help.patch) by @kcrisman created at 2011-03-23 20:52:27
 
 Apply this as well
 
@@ -2960,7 +2960,7 @@ archive/issue_comments_086828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86828",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2978,7 +2978,7 @@ archive/issue_comments_086829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86829",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -3000,7 +3000,7 @@ archive/issue_comments_086830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86830",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -3023,7 +3023,7 @@ archive/issue_comments_086831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86831",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -3041,7 +3041,7 @@ archive/issue_comments_086832.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86832",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -3059,7 +3059,7 @@ archive/issue_comments_086833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86833",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -3096,7 +3096,7 @@ archive/issue_comments_086834.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86834",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -3114,7 +3114,7 @@ archive/issue_comments_086835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86835",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -3138,7 +3138,7 @@ archive/issue_comments_086836.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86836",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -3168,7 +3168,7 @@ archive/issue_comments_086837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86837",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -3191,7 +3191,7 @@ archive/issue_comments_086838.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86838",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -3224,7 +3224,7 @@ archive/issue_comments_086839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86839",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -3258,7 +3258,7 @@ archive/issue_comments_086840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86840",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -3287,7 +3287,7 @@ archive/issue_comments_086841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86841",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -3315,7 +3315,7 @@ archive/issue_comments_086842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86842",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -3353,7 +3353,7 @@ archive/issue_comments_086843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86843",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -3380,7 +3380,7 @@ archive/issue_comments_086844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86844",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -3402,7 +3402,7 @@ archive/issue_comments_086845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86845",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -3424,7 +3424,7 @@ archive/issue_comments_086846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86846",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -3447,7 +3447,7 @@ archive/issue_comments_086847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86847",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -3462,16 +3462,16 @@ I've sort of reproduced the Safari problem.  I've traced it to a js call in the
 archive/issue_comments_086848.json:
 ```json
 {
-    "body": "Attachment [trac_9238_jmol_lib_async.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238_jmol_lib_async.patch) by gutow created at 2011-03-28 00:55:15\n\nfix to async load of many jmols and workaround for Safari bug (memory leak?)",
+    "body": "Attachment [trac_9238_jmol_lib_async.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238_jmol_lib_async.patch) by @gutow created at 2011-03-28 00:55:15\n\nfix to async load of many jmols and workaround for Safari bug (memory leak?)",
     "created_at": "2011-03-28T00:55:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86848",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
-Attachment [trac_9238_jmol_lib_async.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238_jmol_lib_async.patch) by gutow created at 2011-03-28 00:55:15
+Attachment [trac_9238_jmol_lib_async.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238_jmol_lib_async.patch) by @gutow created at 2011-03-28 00:55:15
 
 fix to async load of many jmols and workaround for Safari bug (memory leak?)
 
@@ -3487,7 +3487,7 @@ archive/issue_comments_086849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86849",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -3505,7 +3505,7 @@ archive/issue_comments_086850.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86850",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -3525,7 +3525,7 @@ archive/issue_comments_086851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86851",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -3548,7 +3548,7 @@ archive/issue_comments_086852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86852",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -3566,7 +3566,7 @@ archive/issue_comments_086853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86853",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -3588,7 +3588,7 @@ archive/issue_comments_086854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86854",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -3606,7 +3606,7 @@ archive/issue_comments_086855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86855",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -3628,7 +3628,7 @@ archive/issue_comments_086856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86856",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -3648,7 +3648,7 @@ archive/issue_comments_086857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86857",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -3661,16 +3661,16 @@ reduce Jmol memory usage try to make advanced toggle work in IE
 archive/issue_comments_086858.json:
 ```json
 {
-    "body": "Attachment [trac_9238_memory_IE.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238_memory_IE.patch) by gutow created at 2011-03-29 07:03:57",
+    "body": "Attachment [trac_9238_memory_IE.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238_memory_IE.patch) by @gutow created at 2011-03-29 07:03:57",
     "created_at": "2011-03-29T07:03:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86858",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
-Attachment [trac_9238_memory_IE.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238_memory_IE.patch) by gutow created at 2011-03-29 07:03:57
+Attachment [trac_9238_memory_IE.patch](tarball://root/attachments/some-uuid/ticket9238/trac_9238_memory_IE.patch) by @gutow created at 2011-03-29 07:03:57
 
 
 
@@ -3684,7 +3684,7 @@ archive/issue_comments_086859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86859",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -3702,7 +3702,7 @@ archive/issue_comments_086860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86860",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -3722,7 +3722,7 @@ archive/issue_comments_086861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86861",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -3745,7 +3745,7 @@ archive/issue_comments_086862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86862",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -3766,7 +3766,7 @@ archive/issue_comments_086863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86863",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -3779,16 +3779,16 @@ Nice warnings for IE
 archive/issue_comments_086864.json:
 ```json
 {
-    "body": "Attachment [Trac_9238_script_extension.patch](tarball://root/attachments/some-uuid/ticket9238/Trac_9238_script_extension.patch) by gutow created at 2011-04-02 19:26:41\n\nFix to script file extension to work with new Jmol from command line",
+    "body": "Attachment [Trac_9238_script_extension.patch](tarball://root/attachments/some-uuid/ticket9238/Trac_9238_script_extension.patch) by @gutow created at 2011-04-02 19:26:41\n\nFix to script file extension to work with new Jmol from command line",
     "created_at": "2011-04-02T19:26:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86864",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
-Attachment [Trac_9238_script_extension.patch](tarball://root/attachments/some-uuid/ticket9238/Trac_9238_script_extension.patch) by gutow created at 2011-04-02 19:26:41
+Attachment [Trac_9238_script_extension.patch](tarball://root/attachments/some-uuid/ticket9238/Trac_9238_script_extension.patch) by @gutow created at 2011-04-02 19:26:41
 
 Fix to script file extension to work with new Jmol from command line
 
@@ -3804,7 +3804,7 @@ archive/issue_comments_086865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86865",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -3822,7 +3822,7 @@ archive/issue_comments_086866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86866",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -3842,7 +3842,7 @@ archive/issue_comments_086867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86867",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -3860,7 +3860,7 @@ archive/issue_comments_086868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86868",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -3878,7 +3878,7 @@ archive/issue_comments_086869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86869",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -3896,7 +3896,7 @@ archive/issue_comments_086870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86870",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -3930,7 +3930,7 @@ archive/issue_comments_086871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86871",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -3950,7 +3950,7 @@ archive/issue_comments_086872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86872",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -3974,7 +3974,7 @@ archive/issue_comments_086873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86873",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -3992,7 +3992,7 @@ archive/issue_comments_086874.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86874",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -4016,7 +4016,7 @@ archive/issue_comments_086875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86875",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -4036,7 +4036,7 @@ archive/issue_comments_086876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86876",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -4054,7 +4054,7 @@ archive/issue_comments_086877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86877",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -4072,7 +4072,7 @@ archive/issue_comments_086878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86878",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -4090,7 +4090,7 @@ archive/issue_comments_086879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86879",
-    "user": "strogdon"
+    "user": "@strogdon"
 }
 ```
 
@@ -4138,7 +4138,7 @@ archive/issue_comments_086880.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86880",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -4168,7 +4168,7 @@ archive/issue_comments_086881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86881",
-    "user": "strogdon"
+    "user": "@strogdon"
 }
 ```
 
@@ -4225,7 +4225,7 @@ archive/issue_comments_086882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86882",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -4249,7 +4249,7 @@ archive/issue_comments_086883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86883",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -4279,7 +4279,7 @@ archive/issue_comments_086884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86884",
-    "user": "strogdon"
+    "user": "@strogdon"
 }
 ```
 
@@ -4308,7 +4308,7 @@ archive/issue_comments_086885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86885",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -4328,7 +4328,7 @@ archive/issue_comments_086886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86886",
-    "user": "gutow"
+    "user": "@gutow"
 }
 ```
 
@@ -4346,7 +4346,7 @@ archive/issue_comments_086887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86887",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -4364,7 +4364,7 @@ archive/issue_comments_086888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86888",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -4382,7 +4382,7 @@ archive/issue_comments_086889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9238#issuecomment-86889",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003677.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nCC:  mhansen\n\nAt the end of testing when reporting the results, sage -t does not take into account the current directory.  It produces output like this:\n\n\n```\n\tsage -t  devel/sage-combinat/sage/combinat/root_system/ambient_space.py\n\tsage -t  devel/sage-combinat/sage/combinat/root_system/root_lattice_realization.py\n\tsage -t  devel/sage-combinat/sage/combinat/root_system/root_space.py\n\tsage -t  devel/sage-combinat/sage/combinat/root_system/root_system.py\n\tsage -t  devel/sage-combinat/sage/combinat/root_system/weight_space.py\n```\n\n\nwhen it should be giving output like \n\n\n```\n\tsage -t  ambient_space.py\n\tsage -t  root_lattice_realization.py\n\tsage -t  root_space.py\n\tsage -t  root_system.py\n\tsage -t  weight_space.py\n```\n\n\nif I am in $SAGE_ROOT/devel/sage-combinat/sage/combinat/root_system .\n\nIssue created by migration from https://trac.sagemath.org/ticket/3677\n\n",
+    "body": "Assignee: @garyfurnish\n\nCC:  @mwhansen\n\nAt the end of testing when reporting the results, sage -t does not take into account the current directory.  It produces output like this:\n\n\n```\n\tsage -t  devel/sage-combinat/sage/combinat/root_system/ambient_space.py\n\tsage -t  devel/sage-combinat/sage/combinat/root_system/root_lattice_realization.py\n\tsage -t  devel/sage-combinat/sage/combinat/root_system/root_space.py\n\tsage -t  devel/sage-combinat/sage/combinat/root_system/root_system.py\n\tsage -t  devel/sage-combinat/sage/combinat/root_system/weight_space.py\n```\n\n\nwhen it should be giving output like \n\n\n```\n\tsage -t  ambient_space.py\n\tsage -t  root_lattice_realization.py\n\tsage -t  root_space.py\n\tsage -t  root_system.py\n\tsage -t  weight_space.py\n```\n\n\nif I am in $SAGE_ROOT/devel/sage-combinat/sage/combinat/root_system .\n\nIssue created by migration from https://trac.sagemath.org/ticket/3677\n\n",
     "created_at": "2008-07-19T01:48:02Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_003677.json:
     "title": "sage -t / sage -tp does not take into account the current directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3677",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
-CC:  mhansen
+CC:  @mwhansen
 
 At the end of testing when reporting the results, sage -t does not take into account the current directory.  It produces output like this:
 
@@ -63,7 +63,7 @@ archive/issue_comments_026038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3677#issuecomment-26038",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -76,16 +76,16 @@ Changing status from new to assigned.
 archive/issue_comments_026039.json:
 ```json
 {
-    "body": "Attachment [trac_3677_bin.patch](tarball://root/attachments/some-uuid/ticket3677/trac_3677_bin.patch) by gfurnish created at 2008-12-11 15:17:28\n\nThis fixes this issue for sage -tp but not for sage -t.",
+    "body": "Attachment [trac_3677_bin.patch](tarball://root/attachments/some-uuid/ticket3677/trac_3677_bin.patch) by @garyfurnish created at 2008-12-11 15:17:28\n\nThis fixes this issue for sage -tp but not for sage -t.",
     "created_at": "2008-12-11T15:17:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3677#issuecomment-26039",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_3677_bin.patch](tarball://root/attachments/some-uuid/ticket3677/trac_3677_bin.patch) by gfurnish created at 2008-12-11 15:17:28
+Attachment [trac_3677_bin.patch](tarball://root/attachments/some-uuid/ticket3677/trac_3677_bin.patch) by @garyfurnish created at 2008-12-11 15:17:28
 
 This fixes this issue for sage -tp but not for sage -t.
 
@@ -101,7 +101,7 @@ archive/issue_comments_026040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3677#issuecomment-26040",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_026041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3677#issuecomment-26041",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

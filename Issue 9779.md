@@ -3,7 +3,7 @@
 archive/issues_009779.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  jhpalmieri jsp mpatel\n\nAs noted at #9356, a change which was made to ensure `SAGE_ATLAS_LIB` worked on Solaris, is not a complete solution. On Solaris, no shared library `liblapack.so` is created, as for reasons unknown, this causes problems. Hence the static library liblapack.a needs to be available to programs using ATLAS on Solaris. This means an extra symbolic link needs to be created. I think adding \n\n\n```\nos.system(' ln -sf ' + ATLAS_LIB + '/lib/liblapack.a '  + SAGE_LOCAL_LIB+'/liblapack.a')\n```\n\n\nwill work, though this remains to be tested. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9780\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @jhpalmieri @jaapspies @qed777\n\nAs noted at #9356, a change which was made to ensure `SAGE_ATLAS_LIB` worked on Solaris, is not a complete solution. On Solaris, no shared library `liblapack.so` is created, as for reasons unknown, this causes problems. Hence the static library liblapack.a needs to be available to programs using ATLAS on Solaris. This means an extra symbolic link needs to be created. I think adding \n\n\n```\nos.system(' ln -sf ' + ATLAS_LIB + '/lib/liblapack.a '  + SAGE_LOCAL_LIB+'/liblapack.a')\n```\n\n\nwill work, though this remains to be tested. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9780\n\n",
     "created_at": "2010-08-22T07:37:42Z",
     "labels": [
         "algebra",
@@ -17,9 +17,9 @@ archive/issues_009779.json:
     "user": "drkirkby"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  jhpalmieri jsp mpatel
+CC:  @jhpalmieri @jaapspies @qed777
 
 As noted at #9356, a change which was made to ensure `SAGE_ATLAS_LIB` worked on Solaris, is not a complete solution. On Solaris, no shared library `liblapack.so` is created, as for reasons unknown, this causes problems. Hence the static library liblapack.a needs to be available to programs using ATLAS on Solaris. This means an extra symbolic link needs to be created. I think adding 
 
@@ -62,7 +62,7 @@ Changing component from algebra to solaris.
 archive/issue_comments_095980.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to drkirkby.",
+    "body": "Changing assignee from @aghitza to drkirkby.",
     "created_at": "2010-08-22T11:51:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9779",
     "type": "issue_comment",
@@ -71,7 +71,7 @@ archive/issue_comments_095980.json:
 }
 ```
 
-Changing assignee from AlexGhitza to drkirkby.
+Changing assignee from @aghitza to drkirkby.
 
 
 
@@ -85,7 +85,7 @@ archive/issue_comments_095981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9779#issuecomment-95981",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_095985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9779#issuecomment-95985",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -429,16 +429,16 @@ Check for static libraries only so SAGE_ATLAS_LIB is more relieable
 archive/issue_comments_095994.json:
 ```json
 {
-    "body": "Attachment [9780-SAGE_ATLAS_LIB.patch](tarball://root/attachments/some-uuid/ticket9780/9780-SAGE_ATLAS_LIB.patch) by jhpalmieri created at 2010-09-08 20:37:00\n\nOverall the changes look sensible.\n\nA few comments about `system_atlas.py`.  In line 15:\n\n```\nhas_atlas = os.path.exists(ATLAS_LIB+'/lib//libatlas.a') \n```\n\nshould the double slash be a single one?  In the comments on lines 44-51 of the same file, there are a few typos (\"relieably\" and \"Buidling\"), but this is not very important.  In lines 64-72, there is an old error: as you can see from the code, `SAGE_ATLAS_LIB` should be a directory which contains subdirectories \"lib\" and \"include/atlas\".  In particular, it should not be set to the \"parent directory of liblapack.a, libcblas.a, libatlas.a and libf77blas.a\".  (I probably should have fixed this in #9356.)  In the [installation guide](http://sagemath.org/doc/installation/source.html#environment-variables), we documented this as saying \"the parent directory of your ATLAS installation: it should have a subdirectory lib containing the files libatlas.so, liblapack.so, libcblas.so, and libf77blas.so, and it should have a subdirectory include/atlas/ containing header files.\" As far as I know, that is accurate, and we might use similar language here.  Oh, and I guess we should change the text in the installation guide from *.so to *.a...  I can add a patch for that if you want.\n\nFinally, for testing this, I'm not sure I have access to a system with a genuine ATLAS installation.  I can use an ATLAS build from another version of Sage, but should we test this with other ATLAS installations as well?  I'll try it out on t2 and one or two skynet machines.",
+    "body": "Attachment [9780-SAGE_ATLAS_LIB.patch](tarball://root/attachments/some-uuid/ticket9780/9780-SAGE_ATLAS_LIB.patch) by @jhpalmieri created at 2010-09-08 20:37:00\n\nOverall the changes look sensible.\n\nA few comments about `system_atlas.py`.  In line 15:\n\n```\nhas_atlas = os.path.exists(ATLAS_LIB+'/lib//libatlas.a') \n```\n\nshould the double slash be a single one?  In the comments on lines 44-51 of the same file, there are a few typos (\"relieably\" and \"Buidling\"), but this is not very important.  In lines 64-72, there is an old error: as you can see from the code, `SAGE_ATLAS_LIB` should be a directory which contains subdirectories \"lib\" and \"include/atlas\".  In particular, it should not be set to the \"parent directory of liblapack.a, libcblas.a, libatlas.a and libf77blas.a\".  (I probably should have fixed this in #9356.)  In the [installation guide](http://sagemath.org/doc/installation/source.html#environment-variables), we documented this as saying \"the parent directory of your ATLAS installation: it should have a subdirectory lib containing the files libatlas.so, liblapack.so, libcblas.so, and libf77blas.so, and it should have a subdirectory include/atlas/ containing header files.\" As far as I know, that is accurate, and we might use similar language here.  Oh, and I guess we should change the text in the installation guide from *.so to *.a...  I can add a patch for that if you want.\n\nFinally, for testing this, I'm not sure I have access to a system with a genuine ATLAS installation.  I can use an ATLAS build from another version of Sage, but should we test this with other ATLAS installations as well?  I'll try it out on t2 and one or two skynet machines.",
     "created_at": "2010-09-08T20:37:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9779#issuecomment-95994",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [9780-SAGE_ATLAS_LIB.patch](tarball://root/attachments/some-uuid/ticket9780/9780-SAGE_ATLAS_LIB.patch) by jhpalmieri created at 2010-09-08 20:37:00
+Attachment [9780-SAGE_ATLAS_LIB.patch](tarball://root/attachments/some-uuid/ticket9780/9780-SAGE_ATLAS_LIB.patch) by @jhpalmieri created at 2010-09-08 20:37:00
 
 Overall the changes look sensible.
 
@@ -540,7 +540,7 @@ archive/issue_comments_095996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9779#issuecomment-95996",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -564,7 +564,7 @@ archive/issue_comments_095997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9779#issuecomment-95997",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -582,7 +582,7 @@ archive/issue_comments_095998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9779#issuecomment-95998",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -693,7 +693,7 @@ archive/issue_comments_096001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9779#issuecomment-96001",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -796,7 +796,7 @@ archive/issue_comments_096003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9779#issuecomment-96003",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -885,7 +885,7 @@ archive/issue_comments_096007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9779#issuecomment-96007",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -903,7 +903,7 @@ archive/issue_comments_096008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9779#issuecomment-96008",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

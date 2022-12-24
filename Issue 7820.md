@@ -3,7 +3,7 @@
 archive/issues_007820.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  mhampton was\n\nSee\nhttp://www.math.tu-berlin.de/~jensen/software/gfan/gfan.html\n\nRelease 0.4plus has improved performance and a lot of new functionality.\n\nCcing Marshall and William since they are the package maintainers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7820\n\n",
+    "body": "Assignee: tbd\n\nCC:  mhampton @williamstein\n\nSee\nhttp://www.math.tu-berlin.de/~jensen/software/gfan/gfan.html\n\nRelease 0.4plus has improved performance and a lot of new functionality.\n\nCcing Marshall and William since they are the package maintainers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7820\n\n",
     "created_at": "2010-01-02T23:04:14Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_007820.json:
     "title": "upgrade gfan to latest release (0.4plus)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7820",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 Assignee: tbd
 
-CC:  mhampton was
+CC:  mhampton @williamstein
 
 See
 http://www.math.tu-berlin.de/~jensen/software/gfan/gfan.html
@@ -44,7 +44,7 @@ archive/issue_comments_067678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67678",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_067679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67679",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_067684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67684",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -404,7 +404,7 @@ archive/issue_comments_067690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67690",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -465,7 +465,7 @@ archive/issue_comments_067692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67692",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -511,7 +511,7 @@ archive/issue_comments_067694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67694",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -524,16 +524,16 @@ apply after the gfan-0.4plus spkg
 archive/issue_comments_067695.json:
 ```json
 {
-    "body": "Attachment [trac_7820.patch](tarball://root/attachments/some-uuid/ticket7820/trac_7820.patch) by AlexGhitza created at 2010-01-06 14:01:44\n\nOK, I have replaced the spkg with one that has the small fixes to David's version.  See the ticket description for the URL.  This spkg also patches `src/polynomial.cpp` to fix a bug that appeared in gfan-0.4plus and was caught by one of our doctests (YAY for doctests!)\n\nI have also replaced the patch to the Sage library with one that deals with all the issues raised by the upgrade.  All of this is now ready for review.",
+    "body": "Attachment [trac_7820.patch](tarball://root/attachments/some-uuid/ticket7820/trac_7820.patch) by @aghitza created at 2010-01-06 14:01:44\n\nOK, I have replaced the spkg with one that has the small fixes to David's version.  See the ticket description for the URL.  This spkg also patches `src/polynomial.cpp` to fix a bug that appeared in gfan-0.4plus and was caught by one of our doctests (YAY for doctests!)\n\nI have also replaced the patch to the Sage library with one that deals with all the issues raised by the upgrade.  All of this is now ready for review.",
     "created_at": "2010-01-06T14:01:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67695",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_7820.patch](tarball://root/attachments/some-uuid/ticket7820/trac_7820.patch) by AlexGhitza created at 2010-01-06 14:01:44
+Attachment [trac_7820.patch](tarball://root/attachments/some-uuid/ticket7820/trac_7820.patch) by @aghitza created at 2010-01-06 14:01:44
 
 OK, I have replaced the spkg with one that has the small fixes to David's version.  See the ticket description for the URL.  This spkg also patches `src/polynomial.cpp` to fix a bug that appeared in gfan-0.4plus and was caught by one of our doctests (YAY for doctests!)
 
@@ -551,7 +551,7 @@ archive/issue_comments_067696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67696",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

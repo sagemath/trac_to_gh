@@ -3,7 +3,7 @@
 archive/issues_006396.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  ncalexan\n\nThis is kind of irritating:\n\n\n```\nsage: N.<a,b> = NumberField([x^2 + 1, x^2 - 5])\nsage: N.primes_of_degree_one_list(10)\n[Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1)]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6396\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nThis is kind of irritating:\n\n\n```\nsage: N.<a,b> = NumberField([x^2 + 1, x^2 - 5])\nsage: N.primes_of_degree_one_list(10)\n[Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1)]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6396\n\n",
     "created_at": "2009-06-24T17:07:16Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_006396.json:
     "title": "primes_of_degree_one is broken for relative extensions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6396",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  ncalexan
+CC:  @ncalexan
 
 This is kind of irritating:
 
@@ -56,7 +56,7 @@ archive/issue_comments_051384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6396#issuecomment-51384",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_051385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6396#issuecomment-51385",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_051387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6396#issuecomment-51387",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -159,16 +159,16 @@ David
 archive/issue_comments_051388.json:
 ```json
 {
-    "body": "Attachment [trac_6396-deg1primes.patch](tarball://root/attachments/some-uuid/ticket6396/trac_6396-deg1primes.patch) by davidloeffler created at 2009-06-26 18:05:00",
+    "body": "Attachment [trac_6396-deg1primes.patch](tarball://root/attachments/some-uuid/ticket6396/trac_6396-deg1primes.patch) by @loefflerd created at 2009-06-26 18:05:00",
     "created_at": "2009-06-26T18:05:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6396#issuecomment-51388",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_6396-deg1primes.patch](tarball://root/attachments/some-uuid/ticket6396/trac_6396-deg1primes.patch) by davidloeffler created at 2009-06-26 18:05:00
+Attachment [trac_6396-deg1primes.patch](tarball://root/attachments/some-uuid/ticket6396/trac_6396-deg1primes.patch) by @loefflerd created at 2009-06-26 18:05:00
 
 
 
@@ -182,7 +182,7 @@ archive/issue_comments_051389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6396#issuecomment-51389",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_051390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6396#issuecomment-51390",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_051391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6396#issuecomment-51391",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 

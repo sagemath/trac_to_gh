@@ -14,7 +14,7 @@ archive/issues_005044.json:
     "title": "on some systems mwrank dumps core and crashes on exit when run under pexpect",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5044",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5044
 archive/issue_comments_038419.json:
 ```json
 {
-    "body": "Attachment [trac_5044.patch](tarball://root/attachments/some-uuid/ticket5044/trac_5044.patch) by was created at 2009-01-24 07:53:25",
+    "body": "Attachment [trac_5044.patch](tarball://root/attachments/some-uuid/ticket5044/trac_5044.patch) by @williamstein created at 2009-01-24 07:53:25",
     "created_at": "2009-01-24T07:53:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5044",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5044#issuecomment-38419",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5044.patch](tarball://root/attachments/some-uuid/ticket5044/trac_5044.patch) by was created at 2009-01-24 07:53:25
+Attachment [trac_5044.patch](tarball://root/attachments/some-uuid/ticket5044/trac_5044.patch) by @williamstein created at 2009-01-24 07:53:25
 
 
 

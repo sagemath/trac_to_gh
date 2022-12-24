@@ -3,7 +3,7 @@
 archive/issues_007710.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nThe documentation of rational_reconstruction says that an error\n*ZeroDivisionError* is raised when no solution exists with the given\nbounds, but the code returns an error *ValueError*.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7710\n\n",
+    "body": "Assignee: @aghitza\n\nThe documentation of rational_reconstruction says that an error\n*ZeroDivisionError* is raised when no solution exists with the given\nbounds, but the code returns an error *ValueError*.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7710\n\n",
     "created_at": "2009-12-16T11:59:05Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_007710.json:
     "title": "documentation of rational_reconstruction incoherent with code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7710",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 The documentation of rational_reconstruction says that an error
 *ZeroDivisionError* is raised when no solution exists with the given
@@ -39,7 +39,7 @@ archive/issue_comments_066182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7710#issuecomment-66182",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_066183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7710#issuecomment-66183",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_066184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7710#issuecomment-66184",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_066185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7710#issuecomment-66185",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_066186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7710#issuecomment-66186",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007244.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nCC:  wdj\n\nKeywords: dicyclic\n\nThe dicyclic groups are nonabelian groups of order 4n, n> 2.\n\nWith these added, it will be possible to easily construct every subgroup of order 8 and 12 as a permutation group, and then every subgroup of size 15 or less will be easy to construct.\n\nDiscussion originated at:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/df6697653527006c\n\nIssue created by migration from https://trac.sagemath.org/ticket/7244\n\n",
+    "body": "Assignee: joyner\n\nCC:  @wdjoyner\n\nKeywords: dicyclic\n\nThe dicyclic groups are nonabelian groups of order 4n, n> 2.\n\nWith these added, it will be possible to easily construct every subgroup of order 8 and 12 as a permutation group, and then every subgroup of size 15 or less will be easy to construct.\n\nDiscussion originated at:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/df6697653527006c\n\nIssue created by migration from https://trac.sagemath.org/ticket/7244\n\n",
     "created_at": "2009-10-19T04:48:24Z",
     "labels": [
         "group theory",
@@ -14,12 +14,12 @@ archive/issues_007244.json:
     "title": "Implement dicyclic groups as permutation groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7244",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 Assignee: joyner
 
-CC:  wdj
+CC:  @wdjoyner
 
 Keywords: dicyclic
 
@@ -47,7 +47,7 @@ archive/issue_comments_060145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7244#issuecomment-60145",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_060146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7244#issuecomment-60146",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_060147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7244#issuecomment-60147",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_060148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7244#issuecomment-60148",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -116,16 +116,16 @@ There's a typo in line 495, and these groups are sufficiently unusual that some 
 archive/issue_comments_060149.json:
 ```json
 {
-    "body": "Attachment [trac_7244_dicyclic_groups.patch](tarball://root/attachments/some-uuid/ticket7244/trac_7244_dicyclic_groups.patch) by rbeezer created at 2009-10-22 02:34:57",
+    "body": "Attachment [trac_7244_dicyclic_groups.patch](tarball://root/attachments/some-uuid/ticket7244/trac_7244_dicyclic_groups.patch) by @rbeezer created at 2009-10-22 02:34:57",
     "created_at": "2009-10-22T02:34:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7244#issuecomment-60149",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_7244_dicyclic_groups.patch](tarball://root/attachments/some-uuid/ticket7244/trac_7244_dicyclic_groups.patch) by rbeezer created at 2009-10-22 02:34:57
+Attachment [trac_7244_dicyclic_groups.patch](tarball://root/attachments/some-uuid/ticket7244/trac_7244_dicyclic_groups.patch) by @rbeezer created at 2009-10-22 02:34:57
 
 
 
@@ -139,7 +139,7 @@ archive/issue_comments_060150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7244#issuecomment-60150",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_060151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7244#issuecomment-60151",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_060152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7244#issuecomment-60152",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_060153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7244#issuecomment-60153",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_060154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7244#issuecomment-60154",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_060155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7244#issuecomment-60155",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

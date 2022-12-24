@@ -14,7 +14,7 @@ archive/issues_008097.json:
     "title": "termcap fails to build in Open Solaris x64 as 64 bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8097",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: drkirkby
@@ -48,16 +48,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8097
 archive/issue_comments_071034.json:
 ```json
 {
-    "body": "Attachment [termcap-1.3.1.p1.patch](tarball://root/attachments/some-uuid/ticket8097/termcap-1.3.1.p1.patch) by jsp created at 2010-01-27 20:59:38",
+    "body": "Attachment [termcap-1.3.1.p1.patch](tarball://root/attachments/some-uuid/ticket8097/termcap-1.3.1.p1.patch) by @jaapspies created at 2010-01-27 20:59:38",
     "created_at": "2010-01-27T20:59:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8097#issuecomment-71034",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [termcap-1.3.1.p1.patch](tarball://root/attachments/some-uuid/ticket8097/termcap-1.3.1.p1.patch) by jsp created at 2010-01-27 20:59:38
+Attachment [termcap-1.3.1.p1.patch](tarball://root/attachments/some-uuid/ticket8097/termcap-1.3.1.p1.patch) by @jaapspies created at 2010-01-27 20:59:38
 
 
 
@@ -71,7 +71,7 @@ archive/issue_comments_071035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8097#issuecomment-71035",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_071036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8097#issuecomment-71036",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_071039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8097#issuecomment-71039",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -209,16 +209,16 @@ Sorry, I did not mean to offend by putting the same comment more than once.
 archive/issue_comments_071041.json:
 ```json
 {
-    "body": "Attachment [termcap-1.3.1.p1+.patch](tarball://root/attachments/some-uuid/ticket8097/termcap-1.3.1.p1+.patch) by jsp created at 2010-01-28 13:49:30\n\nChanged SPKG.txt to reflect the comments from David.\n\nNo change of patch level applied.\n\n[http://boxen.math.washington.edu/home/jsp/ports/termcap-1.3.1.p1.spkg](http://boxen.math.washington.edu/home/jsp/ports/termcap-1.3.1.p1.spkg)\n\ntermcap only builds a static library local/lib/libtermcap.a containing\n\n64 bit *.o files (I double checked that).\n\nJaap",
+    "body": "Attachment [termcap-1.3.1.p1+.patch](tarball://root/attachments/some-uuid/ticket8097/termcap-1.3.1.p1+.patch) by @jaapspies created at 2010-01-28 13:49:30\n\nChanged SPKG.txt to reflect the comments from David.\n\nNo change of patch level applied.\n\n[http://boxen.math.washington.edu/home/jsp/ports/termcap-1.3.1.p1.spkg](http://boxen.math.washington.edu/home/jsp/ports/termcap-1.3.1.p1.spkg)\n\ntermcap only builds a static library local/lib/libtermcap.a containing\n\n64 bit *.o files (I double checked that).\n\nJaap",
     "created_at": "2010-01-28T13:49:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8097#issuecomment-71041",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [termcap-1.3.1.p1+.patch](tarball://root/attachments/some-uuid/ticket8097/termcap-1.3.1.p1+.patch) by jsp created at 2010-01-28 13:49:30
+Attachment [termcap-1.3.1.p1+.patch](tarball://root/attachments/some-uuid/ticket8097/termcap-1.3.1.p1+.patch) by @jaapspies created at 2010-01-28 13:49:30
 
 Changed SPKG.txt to reflect the comments from David.
 
@@ -244,7 +244,7 @@ archive/issue_comments_071042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8097#issuecomment-71042",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_071045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8097#issuecomment-71045",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -334,7 +334,7 @@ archive/issue_comments_071046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8097#issuecomment-71046",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

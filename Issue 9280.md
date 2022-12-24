@@ -3,7 +3,7 @@
 archive/issues_009280.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nThe summary says it all.  Also see the patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9280\n\n",
+    "body": "Assignee: @nthiery\n\nThe summary says it all.  Also see the patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9280\n\n",
     "created_at": "2010-06-20T03:39:29Z",
     "labels": [
         "categories",
@@ -14,10 +14,10 @@ archive/issues_009280.json:
     "title": "implement an example of a graded algebra with basis",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9280",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
 The summary says it all.  Also see the patch.
 
@@ -37,7 +37,7 @@ archive/issue_comments_087399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9280#issuecomment-87399",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to needs_review.
 archive/issue_comments_087400.json:
 ```json
 {
-    "body": "Attachment [trac_9280-graded-algebras-example.patch](tarball://root/attachments/some-uuid/ticket9280/trac_9280-graded-algebras-example.patch) by nthiery created at 2010-07-21 05:10:48\n\nHi John,\n\nFor the record: we went through your patches with Franco and Jason, and discussed quite a bit around it. We will post here shortly an updated patch with some little suggestions.",
+    "body": "Attachment [trac_9280-graded-algebras-example.patch](tarball://root/attachments/some-uuid/ticket9280/trac_9280-graded-algebras-example.patch) by @nthiery created at 2010-07-21 05:10:48\n\nHi John,\n\nFor the record: we went through your patches with Franco and Jason, and discussed quite a bit around it. We will post here shortly an updated patch with some little suggestions.",
     "created_at": "2010-07-21T05:10:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9280#issuecomment-87400",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_9280-graded-algebras-example.patch](tarball://root/attachments/some-uuid/ticket9280/trac_9280-graded-algebras-example.patch) by nthiery created at 2010-07-21 05:10:48
+Attachment [trac_9280-graded-algebras-example.patch](tarball://root/attachments/some-uuid/ticket9280/trac_9280-graded-algebras-example.patch) by @nthiery created at 2010-07-21 05:10:48
 
 Hi John,
 
@@ -77,7 +77,7 @@ archive/issue_comments_087401.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9280#issuecomment-87401",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_087402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9280#issuecomment-87402",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -144,16 +144,16 @@ By the way, all tests pass with this patch and with the one from #10193.  So per
 archive/issue_comments_087403.json:
 ```json
 {
-    "body": "Attachment [trac_9280-ref.patch](tarball://root/attachments/some-uuid/ticket9280/trac_9280-ref.patch) by jhpalmieri created at 2010-11-08 23:28:27\n\napply on top of sage-combinat patch",
+    "body": "Attachment [trac_9280-ref.patch](tarball://root/attachments/some-uuid/ticket9280/trac_9280-ref.patch) by @jhpalmieri created at 2010-11-08 23:28:27\n\napply on top of sage-combinat patch",
     "created_at": "2010-11-08T23:28:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9280#issuecomment-87403",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_9280-ref.patch](tarball://root/attachments/some-uuid/ticket9280/trac_9280-ref.patch) by jhpalmieri created at 2010-11-08 23:28:27
+Attachment [trac_9280-ref.patch](tarball://root/attachments/some-uuid/ticket9280/trac_9280-ref.patch) by @jhpalmieri created at 2010-11-08 23:28:27
 
 apply on top of sage-combinat patch
 
@@ -169,7 +169,7 @@ archive/issue_comments_087404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9280#issuecomment-87404",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_087405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9280#issuecomment-87405",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_087406.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9280#issuecomment-87406",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_087407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9280#issuecomment-87407",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -239,16 +239,16 @@ Franco, Nicolas, what can we do with this ticket ? Should we use the patch from 
 archive/issue_comments_087408.json:
 ```json
 {
-    "body": "Attachment [trac_9280-graded-algebras-example-fs.patch](tarball://root/attachments/some-uuid/ticket9280/trac_9280-graded-algebras-example-fs.patch) by chapoton created at 2013-08-30 16:01:47",
+    "body": "Attachment [trac_9280-graded-algebras-example-fs.patch](tarball://root/attachments/some-uuid/ticket9280/trac_9280-graded-algebras-example-fs.patch) by @fchapoton created at 2013-08-30 16:01:47",
     "created_at": "2013-08-30T16:01:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9280#issuecomment-87408",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac_9280-graded-algebras-example-fs.patch](tarball://root/attachments/some-uuid/ticket9280/trac_9280-graded-algebras-example-fs.patch) by chapoton created at 2013-08-30 16:01:47
+Attachment [trac_9280-graded-algebras-example-fs.patch](tarball://root/attachments/some-uuid/ticket9280/trac_9280-graded-algebras-example-fs.patch) by @fchapoton created at 2013-08-30 16:01:47
 
 
 
@@ -262,7 +262,7 @@ archive/issue_comments_087409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9280#issuecomment-87409",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_087410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9280#issuecomment-87410",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_087411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9280#issuecomment-87411",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -315,16 +315,16 @@ I upload here the "algebra only patch" that will be the new starting point.
 archive/issue_comments_087412.json:
 ```json
 {
-    "body": "Attachment [trac_9280_nomodule.patch](tarball://root/attachments/some-uuid/ticket9280/trac_9280_nomodule.patch) by chapoton created at 2013-08-30 18:38:13",
+    "body": "Attachment [trac_9280_nomodule.patch](tarball://root/attachments/some-uuid/ticket9280/trac_9280_nomodule.patch) by @fchapoton created at 2013-08-30 18:38:13",
     "created_at": "2013-08-30T18:38:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9280#issuecomment-87412",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac_9280_nomodule.patch](tarball://root/attachments/some-uuid/ticket9280/trac_9280_nomodule.patch) by chapoton created at 2013-08-30 18:38:13
+Attachment [trac_9280_nomodule.patch](tarball://root/attachments/some-uuid/ticket9280/trac_9280_nomodule.patch) by @fchapoton created at 2013-08-30 18:38:13
 
 
 
@@ -338,7 +338,7 @@ archive/issue_comments_087413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9280#issuecomment-87413",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -356,7 +356,7 @@ archive/issue_comments_087414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9280#issuecomment-87414",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -374,7 +374,7 @@ archive/issue_comments_087415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9280#issuecomment-87415",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -392,7 +392,7 @@ archive/issue_comments_087416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9280#issuecomment-87416",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -410,7 +410,7 @@ archive/issue_comments_087417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9280#issuecomment-87417",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -464,7 +464,7 @@ archive/issue_comments_087420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9280#issuecomment-87420",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -482,7 +482,7 @@ archive/issue_comments_087421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9280#issuecomment-87421",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -500,7 +500,7 @@ archive/issue_comments_087422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9280#issuecomment-87422",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -520,7 +520,7 @@ archive/issue_comments_087423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9280#issuecomment-87423",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 

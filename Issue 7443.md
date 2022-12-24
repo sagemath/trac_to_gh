@@ -3,7 +3,7 @@
 archive/issues_007443.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat\n\nKeywords: categories, reference manual\n\nThis is a follow up on #5891, which also includes appropriate links for the later categories defined in #4326, ...\n\nIssue created by migration from https://trac.sagemath.org/ticket/7443\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: categories, reference manual\n\nThis is a follow up on #5891, which also includes appropriate links for the later categories defined in #4326, ...\n\nIssue created by migration from https://trac.sagemath.org/ticket/7443\n\n",
     "created_at": "2009-11-12T10:25:06Z",
     "labels": [
         "categories",
@@ -14,10 +14,10 @@ archive/issues_007443.json:
     "title": "List all categories in the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7443",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
 CC:  sage-combinat
 
@@ -41,7 +41,7 @@ archive/issue_comments_062664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7443",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7443#issuecomment-62664",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -54,16 +54,16 @@ Changing status from new to needs_review.
 archive/issue_comments_062665.json:
 ```json
 {
-    "body": "Attachment [trac_7443-category-index-fh.patch](tarball://root/attachments/some-uuid/ticket7443/trac_7443-category-index-fh.patch) by nthiery created at 2009-11-12 10:26:48",
+    "body": "Attachment [trac_7443-category-index-fh.patch](tarball://root/attachments/some-uuid/ticket7443/trac_7443-category-index-fh.patch) by @nthiery created at 2009-11-12 10:26:48",
     "created_at": "2009-11-12T10:26:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7443",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7443#issuecomment-62665",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_7443-category-index-fh.patch](tarball://root/attachments/some-uuid/ticket7443/trac_7443-category-index-fh.patch) by nthiery created at 2009-11-12 10:26:48
+Attachment [trac_7443-category-index-fh.patch](tarball://root/attachments/some-uuid/ticket7443/trac_7443-category-index-fh.patch) by @nthiery created at 2009-11-12 10:26:48
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_062666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7443",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7443#issuecomment-62666",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_062667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7443",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7443#issuecomment-62667",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -114,16 +114,16 @@ Florent
 archive/issue_comments_062668.json:
 ```json
 {
-    "body": "Changing assignee from nthiery to hivert.",
+    "body": "Changing assignee from @nthiery to @hivert.",
     "created_at": "2009-11-12T20:39:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7443",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7443#issuecomment-62668",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Changing assignee from nthiery to hivert.
+Changing assignee from @nthiery to @hivert.
 
 
 
@@ -137,7 +137,7 @@ archive/issue_comments_062669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7443",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7443#issuecomment-62669",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_062670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7443",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7443#issuecomment-62670",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

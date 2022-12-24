@@ -3,7 +3,7 @@
 archive/issues_009401.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  cremona mjo wstein robertwb\n\nKeywords: prime number\n\nThe Pari `isprime` function is able to return a primality\ncertificate:\n\n```\ngp: isprime(2^31-1,1)\n\n[2 3 1]\n\n[3 5 1]\n\n[7 3 1]\n\n[11 3 1]\n\n[31 2 1]\n\n[151 3 1]\n\n[331 3 1]\n```\n\nHowever when calling this function from Sage, the certificate is\nlost:\n\n```\nsage: pari(2^31-1).isprime(1)\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9401\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @JohnCremona @orlitzky wstein @robertwb\n\nKeywords: prime number\n\nThe Pari `isprime` function is able to return a primality\ncertificate:\n\n```\ngp: isprime(2^31-1,1)\n\n[2 3 1]\n\n[3 5 1]\n\n[7 3 1]\n\n[11 3 1]\n\n[31 2 1]\n\n[151 3 1]\n\n[331 3 1]\n```\n\nHowever when calling this function from Sage, the certificate is\nlost:\n\n```\nsage: pari(2^31-1).isprime(1)\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9401\n\n",
     "created_at": "2010-07-01T08:12:38Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_009401.json:
     "title": "pari(n).isprime(1) does not give the primality certificate to the user",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9401",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  cremona mjo wstein robertwb
+CC:  @JohnCremona @orlitzky wstein @robertwb
 
 Keywords: prime number
 
@@ -69,7 +69,7 @@ archive/issue_comments_089570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9401#issuecomment-89570",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_089571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9401#issuecomment-89571",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_089572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9401#issuecomment-89572",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_089573.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9401#issuecomment-89573",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_089574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9401#issuecomment-89574",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -178,16 +178,16 @@ for the ill-formed documentation of `get_flag`, see #15096.
 archive/issue_comments_089575.json:
 ```json
 {
-    "body": "Attachment [trac_9401.patch](tarball://root/attachments/some-uuid/ticket9401/trac_9401.patch) by zimmerma created at 2013-08-25 12:45:08\n\nthe attached patch does several things:\n\n1) it fixes two typos in `gen.pyx`\n\n2) it corrects the behaviour of `pari(n).isprime(1)` which incorrectly was returning `False` for prime n\n\n3) for prime n, now `pari(n).isprime(1)` returns a tuple `(True, cert)` where `cert` is the primality certificate (currently as Pari object, I didn't figure out how to convert it to a Python object)\n\nComments are welcome.\n\nPaul",
+    "body": "Attachment [trac_9401.patch](tarball://root/attachments/some-uuid/ticket9401/trac_9401.patch) by @zimmermann6 created at 2013-08-25 12:45:08\n\nthe attached patch does several things:\n\n1) it fixes two typos in `gen.pyx`\n\n2) it corrects the behaviour of `pari(n).isprime(1)` which incorrectly was returning `False` for prime n\n\n3) for prime n, now `pari(n).isprime(1)` returns a tuple `(True, cert)` where `cert` is the primality certificate (currently as Pari object, I didn't figure out how to convert it to a Python object)\n\nComments are welcome.\n\nPaul",
     "created_at": "2013-08-25T12:45:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9401#issuecomment-89575",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [trac_9401.patch](tarball://root/attachments/some-uuid/ticket9401/trac_9401.patch) by zimmerma created at 2013-08-25 12:45:08
+Attachment [trac_9401.patch](tarball://root/attachments/some-uuid/ticket9401/trac_9401.patch) by @zimmermann6 created at 2013-08-25 12:45:08
 
 the attached patch does several things:
 
@@ -213,7 +213,7 @@ archive/issue_comments_089576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9401#issuecomment-89576",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_089577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9401#issuecomment-89577",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_089578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9401#issuecomment-89578",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_089579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9401#issuecomment-89579",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_089580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9401#issuecomment-89580",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -320,7 +320,7 @@ archive/issue_comments_089581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9401#issuecomment-89581",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -338,7 +338,7 @@ archive/issue_comments_089582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9401#issuecomment-89582",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -356,7 +356,7 @@ archive/issue_comments_089583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9401#issuecomment-89583",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -374,7 +374,7 @@ archive/issue_comments_089584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9401#issuecomment-89584",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

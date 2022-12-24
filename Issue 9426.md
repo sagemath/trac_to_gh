@@ -3,7 +3,7 @@
 archive/issues_009426.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  jdemeyer\n\n`devel/sage/doc/common/builder.py`:\n\nIn `builder_helper.f()`:\n\n```\n...\n        logger.warning(build_command)\n        subprocess.call(build_command, shell=True)\n\n        logger.warning(\"Build finished.  The built documents can be found in %s\", output_dir)\n...\n```\n\n\nIn `class DocBuilder`:\n\n```\n    def pdf(self):\n        \"\"\"\n        Builds the PDF files for this document.  This is done by first\n        (re)-building the LaTeX output, going into that LaTeX\n        directory, and running 'make all-pdf' there.\n\n        EXAMPLES::\n\n            sage: import os, sys; sys.path.append(os.environ['SAGE_DOC']+'/common/'); import builder\n            sage: b = builder.DocBuilder('tutorial')\n            sage: b.pdf() #not tested\n        \"\"\"\n        self.latex()\n        os.chdir(self._output_dir('latex'))\n        subprocess.call('make all-pdf', shell=True)\n\n        pdf_dir = self._output_dir('pdf')\n        for pdf_file in glob.glob('*.pdf'):\n            shutil.move(pdf_file, os.path.join(pdf_dir, pdf_file))\n\n        logger.warning(\"Build finished.  The built documents can be found in %s\", pdf_dir)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9426\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @jdemeyer\n\n`devel/sage/doc/common/builder.py`:\n\nIn `builder_helper.f()`:\n\n```\n...\n        logger.warning(build_command)\n        subprocess.call(build_command, shell=True)\n\n        logger.warning(\"Build finished.  The built documents can be found in %s\", output_dir)\n...\n```\n\n\nIn `class DocBuilder`:\n\n```\n    def pdf(self):\n        \"\"\"\n        Builds the PDF files for this document.  This is done by first\n        (re)-building the LaTeX output, going into that LaTeX\n        directory, and running 'make all-pdf' there.\n\n        EXAMPLES::\n\n            sage: import os, sys; sys.path.append(os.environ['SAGE_DOC']+'/common/'); import builder\n            sage: b = builder.DocBuilder('tutorial')\n            sage: b.pdf() #not tested\n        \"\"\"\n        self.latex()\n        os.chdir(self._output_dir('latex'))\n        subprocess.call('make all-pdf', shell=True)\n\n        pdf_dir = self._output_dir('pdf')\n        for pdf_file in glob.glob('*.pdf'):\n            shutil.move(pdf_file, os.path.join(pdf_dir, pdf_file))\n\n        logger.warning(\"Build finished.  The built documents can be found in %s\", pdf_dir)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9426\n\n",
     "created_at": "2010-07-04T22:05:00Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_009426.json:
     "title": "Docbuilder ignores return code from subprocess.call()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9426",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 Assignee: mvngu
 
-CC:  jdemeyer
+CC:  @jdemeyer
 
 `devel/sage/doc/common/builder.py`:
 
@@ -79,7 +79,7 @@ archive/issue_comments_089920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9426#issuecomment-89920",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_089921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9426#issuecomment-89921",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_089922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9426#issuecomment-89922",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_089923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9426#issuecomment-89923",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_089924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9426#issuecomment-89924",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_089925.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9426#issuecomment-89925",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_089926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9426#issuecomment-89926",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_089927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9426#issuecomment-89927",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_089928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9426#issuecomment-89928",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_089929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9426#issuecomment-89929",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

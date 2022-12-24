@@ -3,7 +3,7 @@
 archive/issues_000921.json:
 ```json
 {
-    "body": "Assignee: was\n\nWhen asking for a divergent integral, a big exception backtrace is printed.  This seems like it would be intimidating for students when a simple statement like at the end, \"Integral is divergent\" suffices.\n\n\n```\nsage:   integrate(1/x^3,x,0,1)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/<ipython console> in <module>()\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/calculus/functional.py in integral(f, *args, **kwds)\n    173     \"\"\"\n    174     try:\n--> 175         return f.integral(*args, **kwds)\n    176     except AttributeError:\n    177         pass\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py in integral(self, v, a, b)\n   1663             return self.parent()(self._maxima_().integrate(v))\n   1664         else:\n-> 1665             return self.parent()(self._maxima_().integrate(v, a, b))\n   1666\n   1667     integrate = integral\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/interfaces/maxima.py in integral(self, var, min, max)\n   1389             if max is None:\n   1390                 raise ValueError, \"neither or both of min/max must be specified.\"\n-> 1391             return I(var, min, max)\n   1392\n   1393     integrate = integral\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py in __call__(self, *args)\n    885\n    886     def __call__(self, *args):\n--> 887         return self._obj.parent().function_call(self._name, [self._obj] + list(args))\n    888\n    889     def help(self):\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py in function_call(self, function, args)\n    832             if not isinstance(args[i], ExpectElement):\n    833                 args[i] = self.new(args[i])\n--> 834         return self.new(\"%s(%s)\"%(function, \",\".join([s.name() for s in args])))\n    835\n    836     def call(self, function_name, *args):\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py in new(self, code)\n    734\n    735     def new(self, code):\n--> 736         return self(code)\n    737\n    738     ###################################################################\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/interfaces/maxima.py in __call__(self, x)\n    374     def __call__(self, x):\n    375         import sage.rings.all\n--> 376         return Expect.__call__(self, x)\n    377\n    378     def __init__(self, script_subdirectory=None, logfile=None, server=None):\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py in __call__(self, x)\n    679             return x\n    680         if isinstance(x, basestring):\n--> 681             return cls(self, x)\n    682         try:\n    683             return self._coerce_from_special_method(x)\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py in __init__(self, parent, value, is_name)\n    920             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n    921                 self._session_number = -1\n--> 922                 raise TypeError, x\n    923         self._session_number = parent._session_number\n    924\n\n<type 'exceptions.TypeError'>: Error executing code in Maxima\nCODE:\n        sage22 : integrate(sage19,sage1,sage20,sage21)$\nMaxima ERROR:\n\nIntegral is divergent\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/921\n\n",
+    "body": "Assignee: @williamstein\n\nWhen asking for a divergent integral, a big exception backtrace is printed.  This seems like it would be intimidating for students when a simple statement like at the end, \"Integral is divergent\" suffices.\n\n\n```\nsage:   integrate(1/x^3,x,0,1)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/<ipython console> in <module>()\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/calculus/functional.py in integral(f, *args, **kwds)\n    173     \"\"\"\n    174     try:\n--> 175         return f.integral(*args, **kwds)\n    176     except AttributeError:\n    177         pass\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py in integral(self, v, a, b)\n   1663             return self.parent()(self._maxima_().integrate(v))\n   1664         else:\n-> 1665             return self.parent()(self._maxima_().integrate(v, a, b))\n   1666\n   1667     integrate = integral\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/interfaces/maxima.py in integral(self, var, min, max)\n   1389             if max is None:\n   1390                 raise ValueError, \"neither or both of min/max must be specified.\"\n-> 1391             return I(var, min, max)\n   1392\n   1393     integrate = integral\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py in __call__(self, *args)\n    885\n    886     def __call__(self, *args):\n--> 887         return self._obj.parent().function_call(self._name, [self._obj] + list(args))\n    888\n    889     def help(self):\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py in function_call(self, function, args)\n    832             if not isinstance(args[i], ExpectElement):\n    833                 args[i] = self.new(args[i])\n--> 834         return self.new(\"%s(%s)\"%(function, \",\".join([s.name() for s in args])))\n    835\n    836     def call(self, function_name, *args):\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py in new(self, code)\n    734\n    735     def new(self, code):\n--> 736         return self(code)\n    737\n    738     ###################################################################\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/interfaces/maxima.py in __call__(self, x)\n    374     def __call__(self, x):\n    375         import sage.rings.all\n--> 376         return Expect.__call__(self, x)\n    377\n    378     def __init__(self, script_subdirectory=None, logfile=None, server=None):\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py in __call__(self, x)\n    679             return x\n    680         if isinstance(x, basestring):\n--> 681             return cls(self, x)\n    682         try:\n    683             return self._coerce_from_special_method(x)\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py in __init__(self, parent, value, is_name)\n    920             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n    921                 self._session_number = -1\n--> 922                 raise TypeError, x\n    923         self._session_number = parent._session_number\n    924\n\n<type 'exceptions.TypeError'>: Error executing code in Maxima\nCODE:\n        sage22 : integrate(sage19,sage1,sage20,sage21)$\nMaxima ERROR:\n\nIntegral is divergent\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/921\n\n",
     "created_at": "2007-10-18T17:20:39Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_000921.json:
     "title": "Exception error for divergent integral looks bad",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/921",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 When asking for a divergent integral, a big exception backtrace is printed.  This seems like it would be intimidating for students when a simple statement like at the end, "Integral is divergent" suffices.
 
@@ -112,16 +112,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/921
 archive/issue_comments_005646.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-10-24T00:36:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/921#issuecomment-5646",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -135,7 +135,7 @@ archive/issue_comments_005647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/921#issuecomment-5647",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -169,16 +169,16 @@ sage: integrate(1/x^3,x,0,1)
 archive/issue_comments_005648.json:
 ```json
 {
-    "body": "Attachment [921.patch](tarball://root/attachments/some-uuid/ticket921/921.patch) by mhansen created at 2007-10-24 00:38:52",
+    "body": "Attachment [921.patch](tarball://root/attachments/some-uuid/ticket921/921.patch) by @mwhansen created at 2007-10-24 00:38:52",
     "created_at": "2007-10-24T00:38:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/921#issuecomment-5648",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [921.patch](tarball://root/attachments/some-uuid/ticket921/921.patch) by mhansen created at 2007-10-24 00:38:52
+Attachment [921.patch](tarball://root/attachments/some-uuid/ticket921/921.patch) by @mwhansen created at 2007-10-24 00:38:52
 
 
 
@@ -192,7 +192,7 @@ archive/issue_comments_005649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/921#issuecomment-5649",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_005650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/921#issuecomment-5650",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_005651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/921#issuecomment-5651",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

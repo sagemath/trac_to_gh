@@ -14,7 +14,7 @@ archive/issues_002935.json:
     "title": "notebook: internal server error sage-3.0.alpha5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2935",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: boothby
@@ -99,7 +99,7 @@ archive/issue_comments_020216.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2935",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2935#issuecomment-20216",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_020217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2935",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2935#issuecomment-20217",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_020218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2935",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2935#issuecomment-20218",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_020219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2935",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2935#issuecomment-20219",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_020220.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2935",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2935#issuecomment-20220",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_020221.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2935",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2935#issuecomment-20221",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_020222.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2935",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2935#issuecomment-20222",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -355,7 +355,7 @@ archive/issue_comments_020224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2935",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2935#issuecomment-20224",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -384,7 +384,7 @@ archive/issue_comments_020225.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2935",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2935#issuecomment-20225",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -402,7 +402,7 @@ archive/issue_comments_020226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2935",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2935#issuecomment-20226",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -446,7 +446,7 @@ archive/issue_comments_020227.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2935",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2935#issuecomment-20227",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -474,7 +474,7 @@ archive/issue_comments_020228.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2935",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2935#issuecomment-20228",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -492,7 +492,7 @@ archive/issue_comments_020229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2935",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2935#issuecomment-20229",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009411.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nCC:  jeremywest cremona\n\nKeywords: LLL, rank\n\nThis is based on magma code from Cremona.  It takes a set of points on an elliptic curve and uses LLL to return a ZZ-independent set with the same ZZ-span.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9411\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  jeremywest @JohnCremona\n\nKeywords: LLL, rank\n\nThis is based on magma code from Cremona.  It takes a set of points on an elliptic curve and uses LLL to return a ZZ-independent set with the same ZZ-span.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9411\n\n",
     "created_at": "2010-07-02T20:18:16Z",
     "labels": [
         "elliptic curves",
@@ -14,12 +14,12 @@ archive/issues_009411.json:
     "title": "Given points on an elliptic curve, this finds a LLL reduced ZZ-independent set",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9411",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
-CC:  jeremywest cremona
+CC:  jeremywest @JohnCremona
 
 Keywords: LLL, rank
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9411
 archive/issue_comments_089693.json:
 ```json
 {
-    "body": "Attachment [trac_9411-LLL_points.patch](tarball://root/attachments/some-uuid/ticket9411/trac_9411-LLL_points.patch) by aly.deines created at 2010-07-02 21:12:43",
+    "body": "Attachment [trac_9411-LLL_points.patch](tarball://root/attachments/some-uuid/ticket9411/trac_9411-LLL_points.patch) by @adeines created at 2010-07-02 21:12:43",
     "created_at": "2010-07-02T21:12:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9411#issuecomment-89693",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
-Attachment [trac_9411-LLL_points.patch](tarball://root/attachments/some-uuid/ticket9411/trac_9411-LLL_points.patch) by aly.deines created at 2010-07-02 21:12:43
+Attachment [trac_9411-LLL_points.patch](tarball://root/attachments/some-uuid/ticket9411/trac_9411-LLL_points.patch) by @adeines created at 2010-07-02 21:12:43
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_089694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9411#issuecomment-89694",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_089695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9411#issuecomment-89695",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_089696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9411#issuecomment-89696",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -143,16 +143,16 @@ One note, this code isn't very robust.  For example, in many cases the height pa
 archive/issue_comments_089697.json:
 ```json
 {
-    "body": "Attachment [trac_9411_lll_reduce_number_field.patch](tarball://root/attachments/some-uuid/ticket9411/trac_9411_lll_reduce_number_field.patch) by aly.deines created at 2011-01-12 06:10:00\n\nThis replaces the previous patch.  It applies to sage-4.6.1.rc1",
+    "body": "Attachment [trac_9411_lll_reduce_number_field.patch](tarball://root/attachments/some-uuid/ticket9411/trac_9411_lll_reduce_number_field.patch) by @adeines created at 2011-01-12 06:10:00\n\nThis replaces the previous patch.  It applies to sage-4.6.1.rc1",
     "created_at": "2011-01-12T06:10:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9411#issuecomment-89697",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
-Attachment [trac_9411_lll_reduce_number_field.patch](tarball://root/attachments/some-uuid/ticket9411/trac_9411_lll_reduce_number_field.patch) by aly.deines created at 2011-01-12 06:10:00
+Attachment [trac_9411_lll_reduce_number_field.patch](tarball://root/attachments/some-uuid/ticket9411/trac_9411_lll_reduce_number_field.patch) by @adeines created at 2011-01-12 06:10:00
 
 This replaces the previous patch.  It applies to sage-4.6.1.rc1
 
@@ -168,7 +168,7 @@ archive/issue_comments_089698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9411#issuecomment-89698",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_089699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9411#issuecomment-89699",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_089700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9411#issuecomment-89700",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_089701.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9411#issuecomment-89701",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_089702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9411#issuecomment-89702",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_089703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9411#issuecomment-89703",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_089704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9411#issuecomment-89704",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_089705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9411#issuecomment-89705",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_089706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9411#issuecomment-89706",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -371,7 +371,7 @@ archive/issue_comments_089707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9411#issuecomment-89707",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -389,7 +389,7 @@ archive/issue_comments_089708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9411#issuecomment-89708",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -407,7 +407,7 @@ archive/issue_comments_089709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9411#issuecomment-89709",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -425,7 +425,7 @@ archive/issue_comments_089710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9411#issuecomment-89710",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -438,16 +438,16 @@ I did the rebasing but am now also adding the tests suggested by Paul Zimmermann
 archive/issue_comments_089711.json:
 ```json
 {
-    "body": "Attachment [trac_9411_lll_reduce_number_field.2.patch](tarball://root/attachments/some-uuid/ticket9411/trac_9411_lll_reduce_number_field.2.patch) by cremona created at 2013-08-21 14:59:55\n\nrebased on 5.12.beta1 and added 2 new doctests",
+    "body": "Attachment [trac_9411_lll_reduce_number_field.2.patch](tarball://root/attachments/some-uuid/ticket9411/trac_9411_lll_reduce_number_field.2.patch) by @JohnCremona created at 2013-08-21 14:59:55\n\nrebased on 5.12.beta1 and added 2 new doctests",
     "created_at": "2013-08-21T14:59:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9411#issuecomment-89711",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_9411_lll_reduce_number_field.2.patch](tarball://root/attachments/some-uuid/ticket9411/trac_9411_lll_reduce_number_field.2.patch) by cremona created at 2013-08-21 14:59:55
+Attachment [trac_9411_lll_reduce_number_field.2.patch](tarball://root/attachments/some-uuid/ticket9411/trac_9411_lll_reduce_number_field.2.patch) by @JohnCremona created at 2013-08-21 14:59:55
 
 rebased on 5.12.beta1 and added 2 new doctests
 
@@ -463,7 +463,7 @@ archive/issue_comments_089712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9411#issuecomment-89712",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -481,7 +481,7 @@ archive/issue_comments_089713.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9411#issuecomment-89713",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -501,7 +501,7 @@ archive/issue_comments_089714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9411#issuecomment-89714",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -519,7 +519,7 @@ archive/issue_comments_089715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9411#issuecomment-89715",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -540,16 +540,16 @@ apply trac_9411_lll_reduce_number_field.2.patch, trac_9411_review.patch
 archive/issue_comments_089716.json:
 ```json
 {
-    "body": "Attachment [trac_9411_review.patch](tarball://root/attachments/some-uuid/ticket9411/trac_9411_review.patch) by chapoton created at 2013-11-25 19:07:06\n\nrebased. Once again, if my minor changes are ok, you can set this to positive review",
+    "body": "Attachment [trac_9411_review.patch](tarball://root/attachments/some-uuid/ticket9411/trac_9411_review.patch) by @fchapoton created at 2013-11-25 19:07:06\n\nrebased. Once again, if my minor changes are ok, you can set this to positive review",
     "created_at": "2013-11-25T19:07:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9411#issuecomment-89716",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac_9411_review.patch](tarball://root/attachments/some-uuid/ticket9411/trac_9411_review.patch) by chapoton created at 2013-11-25 19:07:06
+Attachment [trac_9411_review.patch](tarball://root/attachments/some-uuid/ticket9411/trac_9411_review.patch) by @fchapoton created at 2013-11-25 19:07:06
 
 rebased. Once again, if my minor changes are ok, you can set this to positive review
 
@@ -565,7 +565,7 @@ archive/issue_comments_089717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9411#issuecomment-89717",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -583,7 +583,7 @@ archive/issue_comments_089718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9411#issuecomment-89718",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -601,7 +601,7 @@ archive/issue_comments_089719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9411#issuecomment-89719",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

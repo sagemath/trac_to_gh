@@ -3,7 +3,7 @@
 archive/issues_006813.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nsee http://groups.google.com/group/sage-devel/browse_thread/thread/25e57b8421c0ae9c/5ed13d13bc41b370#5ed13d13bc41b370\n\nThis patch adds a function WorldMap to graph_generators.py, which lets the user load the graph in which vertices are countries and links denote a shared boundary between two of them. The data I used to build this comes from The Cia Factbook ( mentionned in the docstring )\n\nTo use it, you need to apply the patch, but also to move the file graph_world.sobj to SAGE_ROOT/data/graphs/\n\nThank you for your help ! :-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6813\n\n",
+    "body": "Assignee: @rlmill\n\nsee http://groups.google.com/group/sage-devel/browse_thread/thread/25e57b8421c0ae9c/5ed13d13bc41b370#5ed13d13bc41b370\n\nThis patch adds a function WorldMap to graph_generators.py, which lets the user load the graph in which vertices are countries and links denote a shared boundary between two of them. The data I used to build this comes from The Cia Factbook ( mentionned in the docstring )\n\nTo use it, you need to apply the patch, but also to move the file graph_world.sobj to SAGE_ROOT/data/graphs/\n\nThank you for your help ! :-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6813\n\n",
     "created_at": "2009-08-23T08:43:18Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_006813.json:
     "title": "[with patch, needs review] The whole world in a graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6813",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 see http://groups.google.com/group/sage-devel/browse_thread/thread/25e57b8421c0ae9c/5ed13d13bc41b370#5ed13d13bc41b370
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6813
 archive/issue_comments_056184.json:
 ```json
 {
-    "body": "Attachment [graph_world.sobj](tarball://root/attachments/some-uuid/ticket6813/graph_world.sobj) by ncohen created at 2009-08-23 08:44:25",
+    "body": "Attachment [graph_world.sobj](tarball://root/attachments/some-uuid/ticket6813/graph_world.sobj) by @nathanncohen created at 2009-08-23 08:44:25",
     "created_at": "2009-08-23T08:44:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6813#issuecomment-56184",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [graph_world.sobj](tarball://root/attachments/some-uuid/ticket6813/graph_world.sobj) by ncohen created at 2009-08-23 08:44:25
+Attachment [graph_world.sobj](tarball://root/attachments/some-uuid/ticket6813/graph_world.sobj) by @nathanncohen created at 2009-08-23 08:44:25
 
 
 
@@ -56,16 +56,16 @@ Attachment [graph_world.sobj](tarball://root/attachments/some-uuid/ticket6813/gr
 archive/issue_comments_056185.json:
 ```json
 {
-    "body": "Attachment [worldmap.patch](tarball://root/attachments/some-uuid/ticket6813/worldmap.patch) by jason created at 2009-09-22 16:13:35\n\nI get errors.  At the bottom, I copy the md5 digest to check my download:\n\n\n```\nsage: g=graphs.WorldMap() \n---------------------------------------------------------------------------\nUnpicklingError                           Traceback (most recent call last)\n\n/home/jason/.sage/temp/littleone/13542/_home_jason__sage_init_sage_0.py in <module>()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/graphs/graph_generators.pyc in WorldMap(self)\n   2985         from sage.structure.sage_object import load\n   2986         from sage.misc.misc import SAGE_DATA\n-> 2987         return load(SAGE_DATA+\"graphs/graph_world.sobj\")\n   2988 \n   2989 ################################################################################\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.load (sage/structure/sage_object.c:7173)()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.loads (sage/structure/sage_object.c:8769)()\n\nUnpicklingError: invalid load key, '<'.\nsage: load sage.misc.misc.SAGE_DATA + 'graphs/graph_world.sobj'\n---------------------------------------------------------------------------\nUnpicklingError                           Traceback (most recent call last)\n\n/home/jason/.sage/temp/littleone/13542/_home_jason__sage_init_sage_0.py in <module>()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.load (sage/structure/sage_object.c:7173)()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.loads (sage/structure/sage_object.c:8769)()\n\nUnpicklingError: invalid load key, '<'.\nsage: os.listdir(sage.misc.misc.SAGE_DATA + 'graphs/')\n['graph_world.sobj', 'graphs.db']\nsage: import md5 \nsage: md5.md5(sage.misc.misc.SAGE_DATA + 'graphs/graph_world.sobj').hexdigest()\n'0ae838b9de40596827c6e674b733f489'\n```\n",
+    "body": "Attachment [worldmap.patch](tarball://root/attachments/some-uuid/ticket6813/worldmap.patch) by @jasongrout created at 2009-09-22 16:13:35\n\nI get errors.  At the bottom, I copy the md5 digest to check my download:\n\n\n```\nsage: g=graphs.WorldMap() \n---------------------------------------------------------------------------\nUnpicklingError                           Traceback (most recent call last)\n\n/home/jason/.sage/temp/littleone/13542/_home_jason__sage_init_sage_0.py in <module>()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/graphs/graph_generators.pyc in WorldMap(self)\n   2985         from sage.structure.sage_object import load\n   2986         from sage.misc.misc import SAGE_DATA\n-> 2987         return load(SAGE_DATA+\"graphs/graph_world.sobj\")\n   2988 \n   2989 ################################################################################\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.load (sage/structure/sage_object.c:7173)()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.loads (sage/structure/sage_object.c:8769)()\n\nUnpicklingError: invalid load key, '<'.\nsage: load sage.misc.misc.SAGE_DATA + 'graphs/graph_world.sobj'\n---------------------------------------------------------------------------\nUnpicklingError                           Traceback (most recent call last)\n\n/home/jason/.sage/temp/littleone/13542/_home_jason__sage_init_sage_0.py in <module>()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.load (sage/structure/sage_object.c:7173)()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.loads (sage/structure/sage_object.c:8769)()\n\nUnpicklingError: invalid load key, '<'.\nsage: os.listdir(sage.misc.misc.SAGE_DATA + 'graphs/')\n['graph_world.sobj', 'graphs.db']\nsage: import md5 \nsage: md5.md5(sage.misc.misc.SAGE_DATA + 'graphs/graph_world.sobj').hexdigest()\n'0ae838b9de40596827c6e674b733f489'\n```\n",
     "created_at": "2009-09-22T16:13:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6813#issuecomment-56185",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [worldmap.patch](tarball://root/attachments/some-uuid/ticket6813/worldmap.patch) by jason created at 2009-09-22 16:13:35
+Attachment [worldmap.patch](tarball://root/attachments/some-uuid/ticket6813/worldmap.patch) by @jasongrout created at 2009-09-22 16:13:35
 
 I get errors.  At the bottom, I copy the md5 digest to check my download:
 
@@ -120,7 +120,7 @@ archive/issue_comments_056186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6813#issuecomment-56186",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_056187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6813#issuecomment-56187",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_056188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6813#issuecomment-56188",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_056189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6813#issuecomment-56189",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -232,16 +232,16 @@ applies to sage-4.1.2.rc0
 archive/issue_comments_056190.json:
 ```json
 {
-    "body": "Attachment [6813-worldmap.patch](tarball://root/attachments/some-uuid/ticket6813/6813-worldmap.patch) by awebb created at 2009-10-10 12:00:04",
+    "body": "Attachment [6813-worldmap.patch](tarball://root/attachments/some-uuid/ticket6813/6813-worldmap.patch) by @maxthemouse created at 2009-10-10 12:00:04",
     "created_at": "2009-10-10T12:00:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6813#issuecomment-56190",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
-Attachment [6813-worldmap.patch](tarball://root/attachments/some-uuid/ticket6813/6813-worldmap.patch) by awebb created at 2009-10-10 12:00:04
+Attachment [6813-worldmap.patch](tarball://root/attachments/some-uuid/ticket6813/6813-worldmap.patch) by @maxthemouse created at 2009-10-10 12:00:04
 
 
 
@@ -255,7 +255,7 @@ archive/issue_comments_056191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6813#issuecomment-56191",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_056192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6813#issuecomment-56192",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_056193.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6813#issuecomment-56193",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_056194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6813#issuecomment-56194",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

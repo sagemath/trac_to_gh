@@ -3,7 +3,7 @@
 archive/issues_001552.json:
 ```json
 {
-    "body": "Assignee: was\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/69b117b9d959f569?hl=en\n\nIssue created by migration from https://trac.sagemath.org/ticket/1552\n\n",
+    "body": "Assignee: @williamstein\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/69b117b9d959f569?hl=en\n\nIssue created by migration from https://trac.sagemath.org/ticket/1552\n\n",
     "created_at": "2007-12-17T14:57:32Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_001552.json:
     "title": "Fix gnuplot building on OS 10.5.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1552",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 http://groups.google.com/group/sage-devel/browse_thread/thread/69b117b9d959f569?hl=en
 
@@ -83,7 +83,7 @@ archive/issue_comments_009896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1552#issuecomment-9896",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_009897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1552#issuecomment-9897",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

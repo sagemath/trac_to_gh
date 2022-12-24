@@ -14,7 +14,7 @@ archive/issues_004546.json:
     "title": "[with patch, needs review] redundant print in sage-doctest",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4546",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 Assignee: cwitty
@@ -37,7 +37,7 @@ archive/issue_comments_034054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4546#issuecomment-34054",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001312.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nKeywords: graphs\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1312\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1312\n\n",
     "created_at": "2007-11-28T20:01:49Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001312.json:
     "title": "[graphs] find hamiltonian cycles and paths",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1312",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 Keywords: graphs
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1312
 archive/issue_comments_008257.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to rlm.",
+    "body": "Changing assignee from @mwhansen to @rlmill.",
     "created_at": "2007-12-17T15:15:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1312#issuecomment-8257",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Changing assignee from mhansen to rlm.
+Changing assignee from @mwhansen to @rlmill.
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_008258.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1312#issuecomment-8258",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_008259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1312#issuecomment-8259",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_008260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1312#issuecomment-8260",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_008265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1312#issuecomment-8265",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_008266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1312#issuecomment-8266",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_008267.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1312#issuecomment-8267",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_008268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1312#issuecomment-8268",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_008269.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1312#issuecomment-8269",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 

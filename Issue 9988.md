@@ -3,7 +3,7 @@
 archive/issues_009988.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  jpflori\n\nAttached patch adds an `op` attribute to symbolic expressions which gives easy access to its operands. We now have:\n\n\n```\nsage: x,y,z = var('x,y,z')\nsage: e = x + x*y + z^y + 3*y*z; e\nx*y + 3*y*z + z^y + x\nsage: e.op[1]\n3*y*z\nsage: e.op[1,1]\nz\nsage: e.op[-1]\nx\nsage: e.op[1:]\n[3*y*z, z^y, x]\n```\n\n\nUsing `__getitem__()` directly was not an option since it breaks conversion to numpy.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9989\n\n",
+    "body": "Assignee: @burcin\n\nCC:  jpflori\n\nAttached patch adds an `op` attribute to symbolic expressions which gives easy access to its operands. We now have:\n\n\n```\nsage: x,y,z = var('x,y,z')\nsage: e = x + x*y + z^y + 3*y*z; e\nx*y + 3*y*z + z^y + x\nsage: e.op[1]\n3*y*z\nsage: e.op[1,1]\nz\nsage: e.op[-1]\nx\nsage: e.op[1:]\n[3*y*z, z^y, x]\n```\n\n\nUsing `__getitem__()` directly was not an option since it breaks conversion to numpy.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9989\n\n",
     "created_at": "2010-09-23T22:07:51Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_009988.json:
     "title": "easier access to operands of a symbolic expression",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9988",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 CC:  jpflori
 
@@ -57,7 +57,7 @@ archive/issue_comments_100352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9988#issuecomment-100352",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -70,16 +70,16 @@ Changing status from new to needs_review.
 archive/issue_comments_100353.json:
 ```json
 {
-    "body": "Attachment [trac_9989-operands.patch](tarball://root/attachments/some-uuid/ticket9989/trac_9989-operands.patch) by burcin created at 2010-09-23 22:09:59",
+    "body": "Attachment [trac_9989-operands.patch](tarball://root/attachments/some-uuid/ticket9989/trac_9989-operands.patch) by @burcin created at 2010-09-23 22:09:59",
     "created_at": "2010-09-23T22:09:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9988#issuecomment-100353",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9989-operands.patch](tarball://root/attachments/some-uuid/ticket9989/trac_9989-operands.patch) by burcin created at 2010-09-23 22:09:59
+Attachment [trac_9989-operands.patch](tarball://root/attachments/some-uuid/ticket9989/trac_9989-operands.patch) by @burcin created at 2010-09-23 22:09:59
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_100354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9988#issuecomment-100354",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_100355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9988#issuecomment-100355",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_100356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9988#issuecomment-100356",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_100357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9988#issuecomment-100357",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_100358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9988#issuecomment-100358",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_100359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9988#issuecomment-100359",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_100360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9988#issuecomment-100360",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_100361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9988#issuecomment-100361",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -279,16 +279,16 @@ I think that the part in expression.pyx still has this syntax, and I agree that 
 archive/issue_comments_100362.json:
 ```json
 {
-    "body": "Attachment [trac_9989-operands.take2.patch](tarball://root/attachments/some-uuid/ticket9989/trac_9989-operands.take2.patch) by burcin created at 2011-03-23 12:05:07",
+    "body": "Attachment [trac_9989-operands.take2.patch](tarball://root/attachments/some-uuid/ticket9989/trac_9989-operands.take2.patch) by @burcin created at 2011-03-23 12:05:07",
     "created_at": "2011-03-23T12:05:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9988#issuecomment-100362",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9989-operands.take2.patch](tarball://root/attachments/some-uuid/ticket9989/trac_9989-operands.take2.patch) by burcin created at 2011-03-23 12:05:07
+Attachment [trac_9989-operands.take2.patch](tarball://root/attachments/some-uuid/ticket9989/trac_9989-operands.take2.patch) by @burcin created at 2011-03-23 12:05:07
 
 
 
@@ -302,7 +302,7 @@ archive/issue_comments_100363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9988#issuecomment-100363",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -320,7 +320,7 @@ archive/issue_comments_100364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9988#issuecomment-100364",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_100365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9988#issuecomment-100365",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -367,7 +367,7 @@ archive/issue_comments_100366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9988#issuecomment-100366",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -391,7 +391,7 @@ archive/issue_comments_100367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9988#issuecomment-100367",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -463,7 +463,7 @@ archive/issue_comments_100368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9988#issuecomment-100368",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -481,7 +481,7 @@ archive/issue_comments_100369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9988#issuecomment-100369",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -555,7 +555,7 @@ archive/issue_comments_100370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9988#issuecomment-100370",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -573,7 +573,7 @@ archive/issue_comments_100371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9988#issuecomment-100371",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -586,16 +586,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_100372.json:
 ```json
 {
-    "body": "Attachment [trac_9989-operands.take3.patch](tarball://root/attachments/some-uuid/ticket9989/trac_9989-operands.take3.patch) by kcrisman created at 2011-06-08 20:28:19\n\n\n```\nHunk #2 succeeded at 2476 with fuzz 1 (offset -32 lines).\n```\n\n\nI certainly don't have time to reread this whole patch again, so *assuming* that the only changes are the ones mentioned, then tests pass, changes are good, explanation of second point is sufficient, good to go.",
+    "body": "Attachment [trac_9989-operands.take3.patch](tarball://root/attachments/some-uuid/ticket9989/trac_9989-operands.take3.patch) by @kcrisman created at 2011-06-08 20:28:19\n\n\n```\nHunk #2 succeeded at 2476 with fuzz 1 (offset -32 lines).\n```\n\n\nI certainly don't have time to reread this whole patch again, so *assuming* that the only changes are the ones mentioned, then tests pass, changes are good, explanation of second point is sufficient, good to go.",
     "created_at": "2011-06-08T20:28:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9988#issuecomment-100372",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_9989-operands.take3.patch](tarball://root/attachments/some-uuid/ticket9989/trac_9989-operands.take3.patch) by kcrisman created at 2011-06-08 20:28:19
+Attachment [trac_9989-operands.take3.patch](tarball://root/attachments/some-uuid/ticket9989/trac_9989-operands.take3.patch) by @kcrisman created at 2011-06-08 20:28:19
 
 
 ```
@@ -617,7 +617,7 @@ archive/issue_comments_100373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9988#issuecomment-100373",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -651,7 +651,7 @@ archive/issue_comments_100374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9988#issuecomment-100374",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -673,7 +673,7 @@ archive/issue_comments_100375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9988#issuecomment-100375",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -686,16 +686,16 @@ Actually you could have used the ginac_depends variable. But your suggestion is 
 archive/issue_comments_100376.json:
 ```json
 {
-    "body": "Attachment [trac_9989-operands.take4.patch](tarball://root/attachments/some-uuid/ticket9989/trac_9989-operands.take4.patch) by burcin created at 2011-06-14 00:15:44\n\nApply trac_9989-operands.take4.patch",
+    "body": "Attachment [trac_9989-operands.take4.patch](tarball://root/attachments/some-uuid/ticket9989/trac_9989-operands.take4.patch) by @burcin created at 2011-06-14 00:15:44\n\nApply trac_9989-operands.take4.patch",
     "created_at": "2011-06-14T00:15:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9988#issuecomment-100376",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9989-operands.take4.patch](tarball://root/attachments/some-uuid/ticket9989/trac_9989-operands.take4.patch) by burcin created at 2011-06-14 00:15:44
+Attachment [trac_9989-operands.take4.patch](tarball://root/attachments/some-uuid/ticket9989/trac_9989-operands.take4.patch) by @burcin created at 2011-06-14 00:15:44
 
 Apply trac_9989-operands.take4.patch
 
@@ -711,7 +711,7 @@ archive/issue_comments_100377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9988#issuecomment-100377",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -729,7 +729,7 @@ archive/issue_comments_100378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9988#issuecomment-100378",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -747,7 +747,7 @@ archive/issue_comments_100379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9988#issuecomment-100379",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -765,7 +765,7 @@ archive/issue_comments_100380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9988#issuecomment-100380",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -783,7 +783,7 @@ archive/issue_comments_100381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9988#issuecomment-100381",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -801,7 +801,7 @@ archive/issue_comments_100382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9988#issuecomment-100382",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -819,7 +819,7 @@ archive/issue_comments_100383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9988#issuecomment-100383",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -837,7 +837,7 @@ archive/issue_comments_100384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9988#issuecomment-100384",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

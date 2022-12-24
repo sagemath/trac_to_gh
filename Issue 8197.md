@@ -3,7 +3,7 @@
 archive/issues_008197.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nMany functions have a check=True (or check=False) parameter where the caller can avoid come costly checking of the input if they know exactly what they are doing.  That is a Good Thing, but unfortunately it is not always documented well.\n\nFor example,\n\n```\nage: P2 = ProjectiveSpace(GF(2),2)\nsage: P = P2.point((0,0,1))\nsage: Q = P2.point([0,0,1])\nsage: P\n(0 : 0 : 1)\nsage: Q\n(0 : 0 : 1)\nsage: P==Q\nTrue\nsage: P._coords\n[0, 0, 1]\nsage: Q._coords\n[0, 0, 1]\n```\n\n\nNow the same but with \"check=False\":\n\n\n```\nsage: P = P2.point((0,0,1),check=False)\nsage: Q = P2.point([0,0,1],check=False)\nsage: P\n(0 : 0 : 1)\nsage: Q\n(0 : 0 : 1)\nsage: P==Q\nFalse\nsage: P._coords\n(0, 0, 1)\nsage: Q._coords\n[0, 0, 1]\n```\n\nThe point is that on creation of the point, valid tuple input is\nconverted to a list, unless check=False in which case tuples are left as tuples.  This can result in wrong results.\n\nIn this example, the point-creation function should document the check= parameter by stating that the coordinates should be given as a list, not a tuple, with entries in the right parent, of the roght length, and (for curves or other schemes where there are polynomial equations to be satisfied) satisfying the defining equations.\n\nThere are surely many places in the source code where these remarks apply, but I have tagged this ticket \"algebraic geometry\" since that's where I ran into it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8197\n\n",
+    "body": "Assignee: @aghitza\n\nMany functions have a check=True (or check=False) parameter where the caller can avoid come costly checking of the input if they know exactly what they are doing.  That is a Good Thing, but unfortunately it is not always documented well.\n\nFor example,\n\n```\nage: P2 = ProjectiveSpace(GF(2),2)\nsage: P = P2.point((0,0,1))\nsage: Q = P2.point([0,0,1])\nsage: P\n(0 : 0 : 1)\nsage: Q\n(0 : 0 : 1)\nsage: P==Q\nTrue\nsage: P._coords\n[0, 0, 1]\nsage: Q._coords\n[0, 0, 1]\n```\n\n\nNow the same but with \"check=False\":\n\n\n```\nsage: P = P2.point((0,0,1),check=False)\nsage: Q = P2.point([0,0,1],check=False)\nsage: P\n(0 : 0 : 1)\nsage: Q\n(0 : 0 : 1)\nsage: P==Q\nFalse\nsage: P._coords\n(0, 0, 1)\nsage: Q._coords\n[0, 0, 1]\n```\n\nThe point is that on creation of the point, valid tuple input is\nconverted to a list, unless check=False in which case tuples are left as tuples.  This can result in wrong results.\n\nIn this example, the point-creation function should document the check= parameter by stating that the coordinates should be given as a list, not a tuple, with entries in the right parent, of the roght length, and (for curves or other schemes where there are polynomial equations to be satisfied) satisfying the defining equations.\n\nThere are surely many places in the source code where these remarks apply, but I have tagged this ticket \"algebraic geometry\" since that's where I ran into it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8197\n\n",
     "created_at": "2010-02-05T20:20:21Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_008197.json:
     "title": "Documenting check=True/False parameters",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8197",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Many functions have a check=True (or check=False) parameter where the caller can avoid come costly checking of the input if they know exactly what they are doing.  That is a Good Thing, but unfortunately it is not always documented well.
 
@@ -81,7 +81,7 @@ archive/issue_comments_072291.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8197",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8197#issuecomment-72291",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_072293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8197",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8197#issuecomment-72293",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

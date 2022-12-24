@@ -14,7 +14,7 @@ archive/issues_002008.json:
     "title": "crap -- cython contains a stupid OSX file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2008",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

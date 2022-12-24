@@ -3,7 +3,7 @@
 archive/issues_005227.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  schilly gmoroz\n\nKeywords: devmap\n\nAs the subject says. This is a joint project with Michael Abshoff and Harald Schilly. The devmap in question is the site\n\n\n\nhttp://www.sagemath.org/development-map.html\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5227\n\n",
+    "body": "Assignee: tba\n\nCC:  @haraldschilly gmoroz\n\nKeywords: devmap\n\nAs the subject says. This is a joint project with Michael Abshoff and Harald Schilly. The devmap in question is the site\n\n\n\nhttp://www.sagemath.org/development-map.html\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5227\n\n",
     "created_at": "2009-02-10T07:56:34Z",
     "labels": [
         "website/wiki",
@@ -19,7 +19,7 @@ archive/issues_005227.json:
 ```
 Assignee: tba
 
-CC:  schilly gmoroz
+CC:  @haraldschilly gmoroz
 
 Keywords: devmap
 
@@ -182,7 +182,7 @@ archive/issue_comments_040055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-40055",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_040057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-40057",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_040058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-40058",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_040059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-40059",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -355,7 +355,7 @@ archive/issue_comments_040063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-40063",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -458,7 +458,7 @@ archive/issue_comments_040068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-40068",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -518,7 +518,7 @@ archive/issue_comments_040071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-40071",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 

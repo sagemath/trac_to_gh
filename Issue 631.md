@@ -3,7 +3,7 @@
 archive/issues_000631.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n\n...which is more or less what I had done before:  it's at\n\nhttp://www.warwick.ac.uk/staff/J.E.Cremona/mwrank/\n\n(and you may also like to note that from now on my home page is at\n\nhttp://www.warwick.ac.uk/staff/J.E.Cremona\n)\n\nFor the future I guess I need to do \"hg push\" to somwhere.\n\nPS the changed files are gpslave.h/cc, parifact.h/cc, marith.cc\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/631\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n\n...which is more or less what I had done before:  it's at\n\nhttp://www.warwick.ac.uk/staff/J.E.Cremona/mwrank/\n\n(and you may also like to note that from now on my home page is at\n\nhttp://www.warwick.ac.uk/staff/J.E.Cremona\n)\n\nFor the future I guess I need to do \"hg push\" to somwhere.\n\nPS the changed files are gpslave.h/cc, parifact.h/cc, marith.cc\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/631\n\n",
     "created_at": "2007-09-09T19:39:23Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_000631.json:
     "title": "update mwrank package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/631",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -53,7 +53,7 @@ archive/issue_comments_003249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/631#issuecomment-3249",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_003250.json:
     "issue": "https://github.com/sagemath/sagetest/issues/631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/631#issuecomment-3250",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_003251.json:
     "issue": "https://github.com/sagemath/sagetest/issues/631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/631#issuecomment-3251",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_003252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/631#issuecomment-3252",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

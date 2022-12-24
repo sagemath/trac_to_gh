@@ -14,7 +14,7 @@ archive/issues_007206.json:
     "title": "doctest failure in groups/perm_gps/permgroup.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7206",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: joyner
@@ -142,7 +142,7 @@ archive/issue_comments_059794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7206#issuecomment-59794",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_059795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7206#issuecomment-59795",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_059796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7206#issuecomment-59796",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_059797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7206#issuecomment-59797",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_059798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7206#issuecomment-59798",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

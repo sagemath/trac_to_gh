@@ -54,16 +54,16 @@ Attachment [trac_2862-doc-repo.patch](tarball://root/attachments/some-uuid/ticke
 archive/issue_comments_019636.json:
 ```json
 {
-    "body": "Attachment [trac_2862-sage-repo.patch](tarball://root/attachments/some-uuid/ticket2862/trac_2862-sage-repo.patch) by mhansen created at 2008-04-09 08:27:49\n\nLooks good to me.",
+    "body": "Attachment [trac_2862-sage-repo.patch](tarball://root/attachments/some-uuid/ticket2862/trac_2862-sage-repo.patch) by @mwhansen created at 2008-04-09 08:27:49\n\nLooks good to me.",
     "created_at": "2008-04-09T08:27:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2862#issuecomment-19636",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_2862-sage-repo.patch](tarball://root/attachments/some-uuid/ticket2862/trac_2862-sage-repo.patch) by mhansen created at 2008-04-09 08:27:49
+Attachment [trac_2862-sage-repo.patch](tarball://root/attachments/some-uuid/ticket2862/trac_2862-sage-repo.patch) by @mwhansen created at 2008-04-09 08:27:49
 
 Looks good to me.
 

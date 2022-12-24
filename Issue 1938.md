@@ -14,7 +14,7 @@ archive/issues_001938.json:
     "title": "Fast (double) function evaluation for plotting, etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1938",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -39,7 +39,7 @@ archive/issue_comments_012288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1938#issuecomment-12288",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to assigned.
 archive/issue_comments_012289.json:
 ```json
 {
-    "body": "Changing assignee from somebody to robertwb.",
+    "body": "Changing assignee from somebody to @robertwb.",
     "created_at": "2008-01-26T12:11:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1938#issuecomment-12289",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from somebody to robertwb.
+Changing assignee from somebody to @robertwb.
 
 
 
@@ -70,16 +70,16 @@ Changing assignee from somebody to robertwb.
 archive/issue_comments_012290.json:
 ```json
 {
-    "body": "Attachment [1938-fast-float-eval.hg](tarball://root/attachments/some-uuid/ticket1938/1938-fast-float-eval.hg) by robertwb created at 2008-01-26 12:15:07\n\nThe attached bundle builds on and includes #1828 and #1862.",
+    "body": "Attachment [1938-fast-float-eval.hg](tarball://root/attachments/some-uuid/ticket1938/1938-fast-float-eval.hg) by @robertwb created at 2008-01-26 12:15:07\n\nThe attached bundle builds on and includes #1828 and #1862.",
     "created_at": "2008-01-26T12:15:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1938#issuecomment-12290",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [1938-fast-float-eval.hg](tarball://root/attachments/some-uuid/ticket1938/1938-fast-float-eval.hg) by robertwb created at 2008-01-26 12:15:07
+Attachment [1938-fast-float-eval.hg](tarball://root/attachments/some-uuid/ticket1938/1938-fast-float-eval.hg) by @robertwb created at 2008-01-26 12:15:07
 
 The attached bundle builds on and includes #1828 and #1862.
 
@@ -123,7 +123,7 @@ archive/issue_comments_012292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1938#issuecomment-12292",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_012294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1938#issuecomment-12294",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -204,16 +204,16 @@ Wall time: 0.04
 archive/issue_comments_012295.json:
 ```json
 {
-    "body": "Attachment [fast-float-merged.hg](tarball://root/attachments/some-uuid/ticket1938/fast-float-merged.hg) by robertwb created at 2008-01-27 10:57:20",
+    "body": "Attachment [fast-float-merged.hg](tarball://root/attachments/some-uuid/ticket1938/fast-float-merged.hg) by @robertwb created at 2008-01-27 10:57:20",
     "created_at": "2008-01-27T10:57:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1938#issuecomment-12295",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [fast-float-merged.hg](tarball://root/attachments/some-uuid/ticket1938/fast-float-merged.hg) by robertwb created at 2008-01-27 10:57:20
+Attachment [fast-float-merged.hg](tarball://root/attachments/some-uuid/ticket1938/fast-float-merged.hg) by @robertwb created at 2008-01-27 10:57:20
 
 
 
@@ -227,7 +227,7 @@ archive/issue_comments_012296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1938#issuecomment-12296",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_012297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1938#issuecomment-12297",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -316,7 +316,7 @@ archive/issue_comments_012298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1938#issuecomment-12298",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -331,16 +331,16 @@ The most recently attached bundle contains everything.
 archive/issue_comments_012299.json:
 ```json
 {
-    "body": "Attachment [1938-fast-float-fixes.hg](tarball://root/attachments/some-uuid/ticket1938/1938-fast-float-fixes.hg) by was created at 2008-01-29 13:06:30\n\nThere are still doctest failures in fast_eval.pyx.  Otherwise this patch is good.\nI've posted a .patch that fixes most of those failures, plus a bunch of roughness in the paragraphs at the top.  But there are three failing doctests left.  Please fix and then this patch will be ready to go.\n\n -- William",
+    "body": "Attachment [1938-fast-float-fixes.hg](tarball://root/attachments/some-uuid/ticket1938/1938-fast-float-fixes.hg) by @williamstein created at 2008-01-29 13:06:30\n\nThere are still doctest failures in fast_eval.pyx.  Otherwise this patch is good.\nI've posted a .patch that fixes most of those failures, plus a bunch of roughness in the paragraphs at the top.  But there are three failing doctests left.  Please fix and then this patch will be ready to go.\n\n -- William",
     "created_at": "2008-01-29T13:06:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1938#issuecomment-12299",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [1938-fast-float-fixes.hg](tarball://root/attachments/some-uuid/ticket1938/1938-fast-float-fixes.hg) by was created at 2008-01-29 13:06:30
+Attachment [1938-fast-float-fixes.hg](tarball://root/attachments/some-uuid/ticket1938/1938-fast-float-fixes.hg) by @williamstein created at 2008-01-29 13:06:30
 
 There are still doctest failures in fast_eval.pyx.  Otherwise this patch is good.
 I've posted a .patch that fixes most of those failures, plus a bunch of roughness in the paragraphs at the top.  But there are three failing doctests left.  Please fix and then this patch will be ready to go.
@@ -359,7 +359,7 @@ archive/issue_comments_012300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1938#issuecomment-12300",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -396,7 +396,7 @@ archive/issue_comments_012301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1938#issuecomment-12301",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -409,16 +409,16 @@ do apply this
 archive/issue_comments_012302.json:
 ```json
 {
-    "body": "Attachment [trac-1938-fix_some_docstrings.patch](tarball://root/attachments/some-uuid/ticket1938/trac-1938-fix_some_docstrings.patch) by was created at 2008-01-30 03:05:00\n\nYou're right -- I didn't \"sage -br\" after the merge.  I redid the last patch, with a few fixes to typos and the writing in the paragraph, but without changing any doctests.",
+    "body": "Attachment [trac-1938-fix_some_docstrings.patch](tarball://root/attachments/some-uuid/ticket1938/trac-1938-fix_some_docstrings.patch) by @williamstein created at 2008-01-30 03:05:00\n\nYou're right -- I didn't \"sage -br\" after the merge.  I redid the last patch, with a few fixes to typos and the writing in the paragraph, but without changing any doctests.",
     "created_at": "2008-01-30T03:05:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1938#issuecomment-12302",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1938-fix_some_docstrings.patch](tarball://root/attachments/some-uuid/ticket1938/trac-1938-fix_some_docstrings.patch) by was created at 2008-01-30 03:05:00
+Attachment [trac-1938-fix_some_docstrings.patch](tarball://root/attachments/some-uuid/ticket1938/trac-1938-fix_some_docstrings.patch) by @williamstein created at 2008-01-30 03:05:00
 
 You're right -- I didn't "sage -br" after the merge.  I redid the last patch, with a few fixes to typos and the writing in the paragraph, but without changing any doctests.
 
@@ -434,7 +434,7 @@ archive/issue_comments_012303.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1938#issuecomment-12303",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -452,7 +452,7 @@ archive/issue_comments_012304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1938#issuecomment-12304",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

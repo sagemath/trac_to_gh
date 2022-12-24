@@ -3,7 +3,7 @@
 archive/issues_002328.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\n[This link has my original complaints](http://groups.google.com/group/sage-devel/browse_thread/thread/91fb37af7f6bd0a2). On IRC, the consensus was that the uncapitalized versions of these functions should not be used, and may be deprecated in the future. The documentation for such functions should be updated to reflect this, and the documentation for other functions should be improved as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2328\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n[This link has my original complaints](http://groups.google.com/group/sage-devel/browse_thread/thread/91fb37af7f6bd0a2). On IRC, the consensus was that the uncapitalized versions of these functions should not be used, and may be deprecated in the future. The documentation for such functions should be updated to reflect this, and the documentation for other functions should be improved as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2328\n\n",
     "created_at": "2008-02-27T06:32:59Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_002328.json:
     "title": "many docstrings in combinat functions are unhelpful, outdated, or wrong",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2328",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -39,7 +39,7 @@ archive/issue_comments_015492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2328",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2328#issuecomment-15492",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -52,16 +52,16 @@ The attached patch fixes a few of the docstring problems mentioned by Dan Drake.
 archive/issue_comments_015493.json:
 ```json
 {
-    "body": "Attachment [8710.patch](tarball://root/attachments/some-uuid/ticket2328/8710.patch) by ddrake created at 2008-02-27 23:44:49\n\nReplying to [comment:1 wdj]:\n> Perhaps the lower case functions should be removed from combinat/all.py? \n\nThey should first be marked deprecated, and later removed. The exact process for doing this is not yet determined; there was some discussion on sage-devel in January. Until more has been decided on that front, I think we should just say in the docstrings \"this function will be deprecated in the future, and eventually removed; use Foo.whatever() instead\".",
+    "body": "Attachment [8710.patch](tarball://root/attachments/some-uuid/ticket2328/8710.patch) by @dandrake created at 2008-02-27 23:44:49\n\nReplying to [comment:1 wdj]:\n> Perhaps the lower case functions should be removed from combinat/all.py? \n\nThey should first be marked deprecated, and later removed. The exact process for doing this is not yet determined; there was some discussion on sage-devel in January. Until more has been decided on that front, I think we should just say in the docstrings \"this function will be deprecated in the future, and eventually removed; use Foo.whatever() instead\".",
     "created_at": "2008-02-27T23:44:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2328",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2328#issuecomment-15493",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [8710.patch](tarball://root/attachments/some-uuid/ticket2328/8710.patch) by ddrake created at 2008-02-27 23:44:49
+Attachment [8710.patch](tarball://root/attachments/some-uuid/ticket2328/8710.patch) by @dandrake created at 2008-02-27 23:44:49
 
 Replying to [comment:1 wdj]:
 > Perhaps the lower case functions should be removed from combinat/all.py? 
@@ -75,16 +75,16 @@ They should first be marked deprecated, and later removed. The exact process for
 archive/issue_comments_015494.json:
 ```json
 {
-    "body": "Attachment [combinat-doc.patch](tarball://root/attachments/some-uuid/ticket2328/combinat-doc.patch) by ddrake created at 2008-03-10 08:53:19",
+    "body": "Attachment [combinat-doc.patch](tarball://root/attachments/some-uuid/ticket2328/combinat-doc.patch) by @dandrake created at 2008-03-10 08:53:19",
     "created_at": "2008-03-10T08:53:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2328",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2328#issuecomment-15494",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [combinat-doc.patch](tarball://root/attachments/some-uuid/ticket2328/combinat-doc.patch) by ddrake created at 2008-03-10 08:53:19
+Attachment [combinat-doc.patch](tarball://root/attachments/some-uuid/ticket2328/combinat-doc.patch) by @dandrake created at 2008-03-10 08:53:19
 
 
 
@@ -98,7 +98,7 @@ archive/issue_comments_015495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2328",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2328#issuecomment-15495",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -113,16 +113,16 @@ It's against 2.10.2 with mhansen's [2432 patch](http://sagetrac.org/sage_trac/ti
 archive/issue_comments_015496.json:
 ```json
 {
-    "body": "Attachment [combinat-doc.2.patch](tarball://root/attachments/some-uuid/ticket2328/combinat-doc.2.patch) by mhansen created at 2008-03-10 09:04:14\n\nI've uploaded combinat-doc.2.patch which replaces the first combinat-doc.patch",
+    "body": "Attachment [combinat-doc.2.patch](tarball://root/attachments/some-uuid/ticket2328/combinat-doc.2.patch) by @mwhansen created at 2008-03-10 09:04:14\n\nI've uploaded combinat-doc.2.patch which replaces the first combinat-doc.patch",
     "created_at": "2008-03-10T09:04:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2328",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2328#issuecomment-15496",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [combinat-doc.2.patch](tarball://root/attachments/some-uuid/ticket2328/combinat-doc.2.patch) by mhansen created at 2008-03-10 09:04:14
+Attachment [combinat-doc.2.patch](tarball://root/attachments/some-uuid/ticket2328/combinat-doc.2.patch) by @mwhansen created at 2008-03-10 09:04:14
 
 I've uploaded combinat-doc.2.patch which replaces the first combinat-doc.patch
 
@@ -138,7 +138,7 @@ archive/issue_comments_015497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2328",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2328#issuecomment-15497",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_015498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2328",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2328#issuecomment-15498",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_015499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2328",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2328#issuecomment-15499",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -191,16 +191,16 @@ Since my patch addressing the referee's concerns for #2432 touches a lot of thin
 archive/issue_comments_015500.json:
 ```json
 {
-    "body": "Attachment [2328.patch](tarball://root/attachments/some-uuid/ticket2328/2328.patch) by mhansen created at 2008-03-14 19:20:33\n\nApply only 2328.patch after #2432 is applied.",
+    "body": "Attachment [2328.patch](tarball://root/attachments/some-uuid/ticket2328/2328.patch) by @mwhansen created at 2008-03-14 19:20:33\n\nApply only 2328.patch after #2432 is applied.",
     "created_at": "2008-03-14T19:20:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2328",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2328#issuecomment-15500",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2328.patch](tarball://root/attachments/some-uuid/ticket2328/2328.patch) by mhansen created at 2008-03-14 19:20:33
+Attachment [2328.patch](tarball://root/attachments/some-uuid/ticket2328/2328.patch) by @mwhansen created at 2008-03-14 19:20:33
 
 Apply only 2328.patch after #2432 is applied.
 

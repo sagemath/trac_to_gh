@@ -14,7 +14,7 @@ archive/issues_005257.json:
     "title": "Clicking on \"Log\" in the notebook (bringing you to the /history page) gives errors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5257",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
@@ -102,7 +102,7 @@ archive/issue_comments_040346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5257#issuecomment-40346",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_040347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5257#issuecomment-40347",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -135,16 +135,16 @@ I tested this patch out pretty thoroughly and everything seems to be behaving co
 archive/issue_comments_040348.json:
 ```json
 {
-    "body": "Changing assignee from boothby to mhansen.",
+    "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2009-02-15T04:11:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5257#issuecomment-40348",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from boothby to mhansen.
+Changing assignee from boothby to @mwhansen.
 
 
 
@@ -190,16 +190,16 @@ Michael
 archive/issue_comments_040350.json:
 ```json
 {
-    "body": "Attachment [trac_5257.patch](tarball://root/attachments/some-uuid/ticket5257/trac_5257.patch) by mhansen created at 2009-02-19 11:42:32\n\nI've posted a rebased patch against 3.3.rc1.",
+    "body": "Attachment [trac_5257.patch](tarball://root/attachments/some-uuid/ticket5257/trac_5257.patch) by @mwhansen created at 2009-02-19 11:42:32\n\nI've posted a rebased patch against 3.3.rc1.",
     "created_at": "2009-02-19T11:42:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5257#issuecomment-40350",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5257.patch](tarball://root/attachments/some-uuid/ticket5257/trac_5257.patch) by mhansen created at 2009-02-19 11:42:32
+Attachment [trac_5257.patch](tarball://root/attachments/some-uuid/ticket5257/trac_5257.patch) by @mwhansen created at 2009-02-19 11:42:32
 
 I've posted a rebased patch against 3.3.rc1.
 

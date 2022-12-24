@@ -14,7 +14,7 @@ archive/issues_002016.json:
     "title": "crap -- there is a precompiled object file in the SAGE_ROOT/examples directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2016",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

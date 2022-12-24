@@ -3,7 +3,7 @@
 archive/issues_008277.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nKeywords: sparse matrix conversion\n\nA call to `matrix` does not change the sparsity:\n\n```\n    sage: mat = matrix(ZZ, [[1,1],[1,1]], sparse=False)\n    sage: type(mat)\n    <type 'sage.matrix.matrix_integer_dense.Matrix_integer_dense'>\n    sage: mat2 = matrix(ZZ, mat, sparse=True)\n    sage: type(mat2)\n    <type 'sage.matrix.matrix_integer_dense.Matrix_integer_dense'>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8277\n\n",
+    "body": "Assignee: @hivert\n\nKeywords: sparse matrix conversion\n\nA call to `matrix` does not change the sparsity:\n\n```\n    sage: mat = matrix(ZZ, [[1,1],[1,1]], sparse=False)\n    sage: type(mat)\n    <type 'sage.matrix.matrix_integer_dense.Matrix_integer_dense'>\n    sage: mat2 = matrix(ZZ, mat, sparse=True)\n    sage: type(mat2)\n    <type 'sage.matrix.matrix_integer_dense.Matrix_integer_dense'>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8277\n\n",
     "created_at": "2010-02-15T22:01:08Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_008277.json:
     "title": "Using matrix() to convert between sparse and dense.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8277",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
 Keywords: sparse matrix conversion
 
@@ -49,7 +49,7 @@ archive/issue_comments_073297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8277#issuecomment-73297",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_073298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8277#issuecomment-73298",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_073299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8277#issuecomment-73299",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

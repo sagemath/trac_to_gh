@@ -3,7 +3,7 @@
 archive/issues_008975.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nThe class sage.combinat.root_system.type_reducible.CartanType\nis missing an is_crystalographic and is_simply_laced\n\n\n```\n sage: R = CartanType(\"D4xA5\")\n sage: R.is_crystalographic()\n sage: R.is_simply_laced()\n```\n\n\nThese both give False which is incorrect.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8975\n\n",
+    "body": "Assignee: @aghitza\n\nThe class sage.combinat.root_system.type_reducible.CartanType\nis missing an is_crystalographic and is_simply_laced\n\n\n```\n sage: R = CartanType(\"D4xA5\")\n sage: R.is_crystalographic()\n sage: R.is_simply_laced()\n```\n\n\nThese both give False which is incorrect.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8975\n\n",
     "created_at": "2010-05-15T21:25:22Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_008975.json:
     "title": "Methods missing for reducible root systems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8975",
-    "user": "Bruce"
+    "user": "@BruceWestbury"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 The class sage.combinat.root_system.type_reducible.CartanType
 is missing an is_crystalographic and is_simply_laced
@@ -48,7 +48,7 @@ archive/issue_comments_082806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8975#issuecomment-82806",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_082807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8975#issuecomment-82807",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_082808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8975#issuecomment-82808",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_082809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8975#issuecomment-82809",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_082810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8975#issuecomment-82810",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_082811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8975#issuecomment-82811",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

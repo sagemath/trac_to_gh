@@ -14,7 +14,7 @@ archive/issues_000291.json:
     "title": "strange printing of -1 in multivariate polynomial rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/291",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 Assignee: somebody
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/291
 archive/issue_comments_001370.json:
 ```json
 {
-    "body": "Changing assignee from somebody to ncalexan.",
+    "body": "Changing assignee from somebody to @ncalexan.",
     "created_at": "2007-02-25T09:37:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/291",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/291#issuecomment-1370",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Changing assignee from somebody to ncalexan.
+Changing assignee from somebody to @ncalexan.
 
 
 
@@ -65,7 +65,7 @@ archive/issue_comments_001371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/291",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/291#issuecomment-1371",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_001372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/291",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/291#issuecomment-1372",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_001373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/291",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/291#issuecomment-1373",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_001377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/291",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/291#issuecomment-1377",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

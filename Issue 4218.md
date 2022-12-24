@@ -103,16 +103,16 @@ Michael
 archive/issue_comments_030655.json:
 ```json
 {
-    "body": "Changing assignee from tbd to AlexGhitza.",
+    "body": "Changing assignee from tbd to @aghitza.",
     "created_at": "2008-10-04T10:21:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4218#issuecomment-30655",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from tbd to AlexGhitza.
+Changing assignee from tbd to @aghitza.
 
 
 
@@ -126,7 +126,7 @@ archive/issue_comments_030656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4218#issuecomment-30656",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_030657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4218#issuecomment-30657",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -157,16 +157,16 @@ The attached patch resolves the issues reported above, by implementing methods r
 archive/issue_comments_030658.json:
 ```json
 {
-    "body": "Attachment [trac_4218.patch](tarball://root/attachments/some-uuid/ticket4218/trac_4218.patch) by cremona created at 2008-12-21 18:08:33\n\nPositive review.  Patch applies cleanly to 3.2.2 and doctests in sage/rings/polynomial pass.\n\nI did notice while testing that this does not work:\n\n```\nsage: R.<x>=ZZ[]\nsage: S=ZZ.extension(x^3-2,'a')\nsage: S.order()\n---------------------------------------------------------------------------\nNotImplementedError    \n```\n\nand also that `S.random_element()` gives a random integer (I think).  Another ticket perhaps?",
+    "body": "Attachment [trac_4218.patch](tarball://root/attachments/some-uuid/ticket4218/trac_4218.patch) by @JohnCremona created at 2008-12-21 18:08:33\n\nPositive review.  Patch applies cleanly to 3.2.2 and doctests in sage/rings/polynomial pass.\n\nI did notice while testing that this does not work:\n\n```\nsage: R.<x>=ZZ[]\nsage: S=ZZ.extension(x^3-2,'a')\nsage: S.order()\n---------------------------------------------------------------------------\nNotImplementedError    \n```\n\nand also that `S.random_element()` gives a random integer (I think).  Another ticket perhaps?",
     "created_at": "2008-12-21T18:08:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4218#issuecomment-30658",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_4218.patch](tarball://root/attachments/some-uuid/ticket4218/trac_4218.patch) by cremona created at 2008-12-21 18:08:33
+Attachment [trac_4218.patch](tarball://root/attachments/some-uuid/ticket4218/trac_4218.patch) by @JohnCremona created at 2008-12-21 18:08:33
 
 Positive review.  Patch applies cleanly to 3.2.2 and doctests in sage/rings/polynomial pass.
 

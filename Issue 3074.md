@@ -14,7 +14,7 @@ archive/issues_003074.json:
     "title": "[with spkg] Cyton 0.9.6.14 released",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3074",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: mabshoff
@@ -165,7 +165,7 @@ archive/issue_comments_021217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3074#issuecomment-21217",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

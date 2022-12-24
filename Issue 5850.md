@@ -14,7 +14,7 @@ archive/issues_005850.json:
     "title": "add Creative Commons license to French tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5850",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: tba
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5850
 archive/issue_comments_046159.json:
 ```json
 {
-    "body": "Attachment [sagetutfr.patch](tarball://root/attachments/some-uuid/ticket5850/sagetutfr.patch) by mmezzarobba created at 2009-04-27 21:04:26",
+    "body": "Attachment [sagetutfr.patch](tarball://root/attachments/some-uuid/ticket5850/sagetutfr.patch) by @mezzarobba created at 2009-04-27 21:04:26",
     "created_at": "2009-04-27T21:04:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5850#issuecomment-46159",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
-Attachment [sagetutfr.patch](tarball://root/attachments/some-uuid/ticket5850/sagetutfr.patch) by mmezzarobba created at 2009-04-27 21:04:26
+Attachment [sagetutfr.patch](tarball://root/attachments/some-uuid/ticket5850/sagetutfr.patch) by @mezzarobba created at 2009-04-27 21:04:26
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_046160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5850#issuecomment-46160",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_046161.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5850#issuecomment-46161",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_046162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5850#issuecomment-46162",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -121,16 +121,16 @@ I'm also assigning this ticket to mmezzarobba, since he did upload a patch.
 archive/issue_comments_046163.json:
 ```json
 {
-    "body": "Changing assignee from tba to mmezzarobba.",
+    "body": "Changing assignee from tba to @mezzarobba.",
     "created_at": "2009-04-28T00:32:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5850#issuecomment-46163",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Changing assignee from tba to mmezzarobba.
+Changing assignee from tba to @mezzarobba.
 
 
 
@@ -144,7 +144,7 @@ archive/issue_comments_046164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5850#issuecomment-46164",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -157,16 +157,16 @@ patch rebased against 3.4.2.alpha0; \QQ fixes; doctest fixes
 archive/issue_comments_046165.json:
 ```json
 {
-    "body": "Attachment [sagetutfr-updated.patch](tarball://root/attachments/some-uuid/ticket5850/sagetutfr-updated.patch) by ddrake created at 2009-04-30 07:42:13\n\nOops, I just found that the tutorial doesn't pass doctests...mostly because the doctest framework doesn't speak French, so if you have \"`# n\u00e9cessite le paquet facultatif database_gap`\", it doesn't understand that you mean \"`optional - database_gap`\". :)\n\nYou just need the magic (English) words, so you can still include explanation in French. Things like this work fine:\n\n```\nsome code # sortie plus ou moins al\u00e9atoire (random)\n\nmore code # n\u00e9cessite le paquet facultatif database_gap (optional)\n```\n\n\nI added the necessary English words to the doctests, and also added \"...\" to a Maxima doctest (at the end of tour_algebra.rst) that had random low order bits.",
+    "body": "Attachment [sagetutfr-updated.patch](tarball://root/attachments/some-uuid/ticket5850/sagetutfr-updated.patch) by @dandrake created at 2009-04-30 07:42:13\n\nOops, I just found that the tutorial doesn't pass doctests...mostly because the doctest framework doesn't speak French, so if you have \"`# n\u00e9cessite le paquet facultatif database_gap`\", it doesn't understand that you mean \"`optional - database_gap`\". :)\n\nYou just need the magic (English) words, so you can still include explanation in French. Things like this work fine:\n\n```\nsome code # sortie plus ou moins al\u00e9atoire (random)\n\nmore code # n\u00e9cessite le paquet facultatif database_gap (optional)\n```\n\n\nI added the necessary English words to the doctests, and also added \"...\" to a Maxima doctest (at the end of tour_algebra.rst) that had random low order bits.",
     "created_at": "2009-04-30T07:42:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5850#issuecomment-46165",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [sagetutfr-updated.patch](tarball://root/attachments/some-uuid/ticket5850/sagetutfr-updated.patch) by ddrake created at 2009-04-30 07:42:13
+Attachment [sagetutfr-updated.patch](tarball://root/attachments/some-uuid/ticket5850/sagetutfr-updated.patch) by @dandrake created at 2009-04-30 07:42:13
 
 Oops, I just found that the tutorial doesn't pass doctests...mostly because the doctest framework doesn't speak French, so if you have "`# nécessite le paquet facultatif database_gap`", it doesn't understand that you mean "`optional - database_gap`". :)
 
@@ -234,7 +234,7 @@ archive/issue_comments_046168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5850#issuecomment-46168",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_046169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5850#issuecomment-46169",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 

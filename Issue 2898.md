@@ -14,7 +14,7 @@ archive/issues_002898.json:
     "title": "Coerce float and RDF to Integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2898",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: somebody
@@ -85,7 +85,7 @@ archive/issue_comments_019942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2898#issuecomment-19942",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -98,16 +98,16 @@ Changing component from basic arithmetic to coercion.
 archive/issue_comments_019943.json:
 ```json
 {
-    "body": "Changing assignee from somebody to robertwb.",
+    "body": "Changing assignee from somebody to @robertwb.",
     "created_at": "2008-04-12T16:09:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2898#issuecomment-19943",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from somebody to robertwb.
+Changing assignee from somebody to @robertwb.
 
 
 
@@ -121,7 +121,7 @@ archive/issue_comments_019944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2898#issuecomment-19944",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_019946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2898#issuecomment-19946",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_019947.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2898#issuecomment-19947",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_019948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2898#issuecomment-19948",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -216,16 +216,16 @@ This is supposed to fix #2899, so it would be good to check if the other issue i
 archive/issue_comments_019949.json:
 ```json
 {
-    "body": "Attachment [2898-jgrout-coerce-to-integer-1.patch](tarball://root/attachments/some-uuid/ticket2898/2898-jgrout-coerce-to-integer-1.patch) by ncalexan created at 2008-08-14 00:33:50",
+    "body": "Attachment [2898-jgrout-coerce-to-integer-1.patch](tarball://root/attachments/some-uuid/ticket2898/2898-jgrout-coerce-to-integer-1.patch) by @ncalexan created at 2008-08-14 00:33:50",
     "created_at": "2008-08-14T00:33:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2898#issuecomment-19949",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [2898-jgrout-coerce-to-integer-1.patch](tarball://root/attachments/some-uuid/ticket2898/2898-jgrout-coerce-to-integer-1.patch) by ncalexan created at 2008-08-14 00:33:50
+Attachment [2898-jgrout-coerce-to-integer-1.patch](tarball://root/attachments/some-uuid/ticket2898/2898-jgrout-coerce-to-integer-1.patch) by @ncalexan created at 2008-08-14 00:33:50
 
 
 
@@ -239,7 +239,7 @@ archive/issue_comments_019950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2898#issuecomment-19950",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_019952.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2898#issuecomment-19952",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_019953.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2898#issuecomment-19953",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -349,7 +349,7 @@ archive/issue_comments_019955.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2898#issuecomment-19955",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -367,7 +367,7 @@ archive/issue_comments_019956.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2898#issuecomment-19956",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -445,7 +445,7 @@ archive/issue_comments_019960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2898#issuecomment-19960",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -475,7 +475,7 @@ archive/issue_comments_019961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2898#issuecomment-19961",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -493,7 +493,7 @@ archive/issue_comments_019962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2898#issuecomment-19962",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -600,7 +600,7 @@ archive/issue_comments_019965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2898#issuecomment-19965",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

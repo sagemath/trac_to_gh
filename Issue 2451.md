@@ -3,7 +3,7 @@
 archive/issues_002451.json:
 ```json
 {
-    "body": "Assignee: was\n\nThere are two problems:\n\n1. neither use _fast_float\n\n2. Even worse, they don't coerce their endpoints to floats.  This is a killer.\n\nTo illustrate:\n\n```\nvar('x,y')\nsage: time contour_plot(x^2+y^2, (-pi,pi),(-pi,pi))\ntakes forever\nsage: time contour_plot(x^2+y^2, (-float(pi),float(pi)),(-float(pi),float(pi)))\ntakes forever\nsage: f = (x^2+y^2)._fast_float_('x','y')\nsage: time contour_plot(f, (-float(pi),float(pi)),(-float(pi),float(pi)))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2451\n\n",
+    "body": "Assignee: @williamstein\n\nThere are two problems:\n\n1. neither use _fast_float\n\n2. Even worse, they don't coerce their endpoints to floats.  This is a killer.\n\nTo illustrate:\n\n```\nvar('x,y')\nsage: time contour_plot(x^2+y^2, (-pi,pi),(-pi,pi))\ntakes forever\nsage: time contour_plot(x^2+y^2, (-float(pi),float(pi)),(-float(pi),float(pi)))\ntakes forever\nsage: f = (x^2+y^2)._fast_float_('x','y')\nsage: time contour_plot(f, (-float(pi),float(pi)),(-float(pi),float(pi)))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2451\n\n",
     "created_at": "2008-03-10T01:06:45Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_002451.json:
     "title": "plotting -- contour_plot and plot_vector_field are REALLY SLOW but it's easy to get a million times speedup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2451",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 There are two problems:
 
@@ -55,7 +55,7 @@ archive/issue_comments_016566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2451#issuecomment-16566",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_016567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2451#issuecomment-16567",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -86,16 +86,16 @@ part 1.  there may be a part 2...
 archive/issue_comments_016568.json:
 ```json
 {
-    "body": "Attachment [sage-2451.patch](tarball://root/attachments/some-uuid/ticket2451/sage-2451.patch) by was created at 2008-03-10 06:23:09",
+    "body": "Attachment [sage-2451.patch](tarball://root/attachments/some-uuid/ticket2451/sage-2451.patch) by @williamstein created at 2008-03-10 06:23:09",
     "created_at": "2008-03-10T06:23:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2451#issuecomment-16568",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2451.patch](tarball://root/attachments/some-uuid/ticket2451/sage-2451.patch) by was created at 2008-03-10 06:23:09
+Attachment [sage-2451.patch](tarball://root/attachments/some-uuid/ticket2451/sage-2451.patch) by @williamstein created at 2008-03-10 06:23:09
 
 
 
@@ -109,7 +109,7 @@ archive/issue_comments_016569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2451#issuecomment-16569",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

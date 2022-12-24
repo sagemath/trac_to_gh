@@ -3,7 +3,7 @@
 archive/issues_000261.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jason\n\nKyle Schalm suggests:\n\n```\n \n \nhere is a matrix constructor i would like to see:\n \nMatrix(M, N, f):\n   for i in range(1,M+1):\n     for j in range(1,N+1):\n       self[i][j] = f(i,j)   # or whatever the syntax is\n \n \ni might use it like this:\n \nA = Matrix(3, 3, lambda i,j: i+j)\n \ni'd do it myself, but i don't have a development environment set up,\nand don't wanna do that right now.\n \ncheers,\nkyle\n \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/261\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nKyle Schalm suggests:\n\n```\n \n \nhere is a matrix constructor i would like to see:\n \nMatrix(M, N, f):\n   for i in range(1,M+1):\n     for j in range(1,N+1):\n       self[i][j] = f(i,j)   # or whatever the syntax is\n \n \ni might use it like this:\n \nA = Matrix(3, 3, lambda i,j: i+j)\n \ni'd do it myself, but i don't have a development environment set up,\nand don't wanna do that right now.\n \ncheers,\nkyle\n \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/261\n\n",
     "created_at": "2007-02-14T06:49:52Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_000261.json:
     "title": "a new matrix constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/261",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jason
+CC:  @jasongrout
 
 Kyle Schalm suggests:
 
@@ -58,7 +58,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/261
 archive/issue_comments_001232.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-08-31T06:07:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/261",
     "type": "issue_comment",
@@ -67,7 +67,7 @@ archive/issue_comments_001232.json:
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -76,16 +76,16 @@ Changing assignee from was to mhansen.
 archive/issue_comments_001233.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to jason.",
+    "body": "Changing assignee from @mwhansen to @jasongrout.",
     "created_at": "2008-11-14T06:45:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/261#issuecomment-1233",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from mhansen to jason.
+Changing assignee from @mwhansen to @jasongrout.
 
 
 
@@ -99,7 +99,7 @@ archive/issue_comments_001234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/261#issuecomment-1234",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -112,16 +112,16 @@ Changing status from new to assigned.
 archive/issue_comments_001235.json:
 ```json
 {
-    "body": "Remove assignee jason.",
+    "body": "Remove assignee @jasongrout.",
     "created_at": "2009-11-19T22:40:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/261#issuecomment-1235",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Remove assignee jason.
+Remove assignee @jasongrout.
 
 
 
@@ -135,7 +135,7 @@ archive/issue_comments_001236.json:
     "issue": "https://github.com/sagemath/sagetest/issues/261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/261#issuecomment-1236",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_001240.json:
     "issue": "https://github.com/sagemath/sagetest/issues/261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/261#issuecomment-1240",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_001241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/261#issuecomment-1241",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_001242.json:
     "issue": "https://github.com/sagemath/sagetest/issues/261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/261#issuecomment-1242",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -264,15 +264,15 @@ Resolution: fixed
 archive/issue_comments_001243.json:
 ```json
 {
-    "body": "Attachment [trac_261-trivial.patch](tarball://root/attachments/some-uuid/ticket261/trac_261-trivial.patch) by jhpalmieri created at 2010-04-15 05:18:48\n\nMerged both patches in 4.4.alpha0.",
+    "body": "Attachment [trac_261-trivial.patch](tarball://root/attachments/some-uuid/ticket261/trac_261-trivial.patch) by @jhpalmieri created at 2010-04-15 05:18:48\n\nMerged both patches in 4.4.alpha0.",
     "created_at": "2010-04-15T05:18:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/261#issuecomment-1243",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_261-trivial.patch](tarball://root/attachments/some-uuid/ticket261/trac_261-trivial.patch) by jhpalmieri created at 2010-04-15 05:18:48
+Attachment [trac_261-trivial.patch](tarball://root/attachments/some-uuid/ticket261/trac_261-trivial.patch) by @jhpalmieri created at 2010-04-15 05:18:48
 
 Merged both patches in 4.4.alpha0.

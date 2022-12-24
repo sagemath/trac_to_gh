@@ -14,7 +14,7 @@ archive/issues_000966.json:
     "title": "[with patch] ntl.GF2X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/966",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: somebody
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/966
 archive/issue_comments_005896.json:
 ```json
 {
-    "body": "Attachment [6991.patch](tarball://root/attachments/some-uuid/ticket966/6991.patch) by malb created at 2007-10-21 21:19:19",
+    "body": "Attachment [6991.patch](tarball://root/attachments/some-uuid/ticket966/6991.patch) by @malb created at 2007-10-21 21:19:19",
     "created_at": "2007-10-21T21:19:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/966#issuecomment-5896",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [6991.patch](tarball://root/attachments/some-uuid/ticket966/6991.patch) by malb created at 2007-10-21 21:19:19
+Attachment [6991.patch](tarball://root/attachments/some-uuid/ticket966/6991.patch) by @malb created at 2007-10-21 21:19:19
 
 
 
@@ -52,16 +52,16 @@ Attachment [6991.patch](tarball://root/attachments/some-uuid/ticket966/6991.patc
 archive/issue_comments_005897.json:
 ```json
 {
-    "body": "Attachment [7113.patch](tarball://root/attachments/some-uuid/ticket966/7113.patch) by malb created at 2007-10-21 21:19:42",
+    "body": "Attachment [7113.patch](tarball://root/attachments/some-uuid/ticket966/7113.patch) by @malb created at 2007-10-21 21:19:42",
     "created_at": "2007-10-21T21:19:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/966#issuecomment-5897",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [7113.patch](tarball://root/attachments/some-uuid/ticket966/7113.patch) by malb created at 2007-10-21 21:19:42
+Attachment [7113.patch](tarball://root/attachments/some-uuid/ticket966/7113.patch) by @malb created at 2007-10-21 21:19:42
 
 
 
@@ -70,16 +70,16 @@ Attachment [7113.patch](tarball://root/attachments/some-uuid/ticket966/7113.patc
 archive/issue_comments_005898.json:
 ```json
 {
-    "body": "Attachment [7114.patch](tarball://root/attachments/some-uuid/ticket966/7114.patch) by malb created at 2007-10-21 21:19:54",
+    "body": "Attachment [7114.patch](tarball://root/attachments/some-uuid/ticket966/7114.patch) by @malb created at 2007-10-21 21:19:54",
     "created_at": "2007-10-21T21:19:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/966#issuecomment-5898",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [7114.patch](tarball://root/attachments/some-uuid/ticket966/7114.patch) by malb created at 2007-10-21 21:19:54
+Attachment [7114.patch](tarball://root/attachments/some-uuid/ticket966/7114.patch) by @malb created at 2007-10-21 21:19:54
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_005899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/966#issuecomment-5899",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -106,16 +106,16 @@ Changing status from new to assigned.
 archive/issue_comments_005900.json:
 ```json
 {
-    "body": "Changing assignee from somebody to malb.",
+    "body": "Changing assignee from somebody to @malb.",
     "created_at": "2007-10-21T22:45:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/966#issuecomment-5900",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from somebody to malb.
+Changing assignee from somebody to @malb.
 
 
 
@@ -129,7 +129,7 @@ archive/issue_comments_005901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/966#issuecomment-5901",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_005902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/966#issuecomment-5902",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

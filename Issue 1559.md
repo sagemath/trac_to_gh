@@ -3,7 +3,7 @@
 archive/issues_001559.json:
 ```json
 {
-    "body": "Assignee: was\n\nWhen loading a .spyx file with 'load' from the sage: prompt, Sage builds an .so file in ~/.sage/temp/HOST/PID/spyx/FILE/. Before doing this, it tries to unlink all files in that directory. (Search for 'unlink' in sage/misc/cython.py)\n\nWhen performing the same 'load' again (e.g., while writing/debugging the .spyx file), the previous .so file is deleted, but since it is still held open by python, this causes an .nfs0000... file to appear in the build directory, since my $HOME is mounted over NFS. (This is how the NFS client of Linux works, I assume.)\n\nThe third time I do this 'load', it'll try to unlink the .nfs0000... file and fail, since you can't delete such files. This causes the load to fail with \"[Errno 16] Device or resource busy\".\n\n\nI'm not sure what the cleanest way of fixing this would be. Two possible solutions that I can think of are explicitly checking for files starting with '.nfs', or ignoring 'device or resource busy' errors while unlinking.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1559\n\n",
+    "body": "Assignee: @williamstein\n\nWhen loading a .spyx file with 'load' from the sage: prompt, Sage builds an .so file in ~/.sage/temp/HOST/PID/spyx/FILE/. Before doing this, it tries to unlink all files in that directory. (Search for 'unlink' in sage/misc/cython.py)\n\nWhen performing the same 'load' again (e.g., while writing/debugging the .spyx file), the previous .so file is deleted, but since it is still held open by python, this causes an .nfs0000... file to appear in the build directory, since my $HOME is mounted over NFS. (This is how the NFS client of Linux works, I assume.)\n\nThe third time I do this 'load', it'll try to unlink the .nfs0000... file and fail, since you can't delete such files. This causes the load to fail with \"[Errno 16] Device or resource busy\".\n\n\nI'm not sure what the cleanest way of fixing this would be. Two possible solutions that I can think of are explicitly checking for files starting with '.nfs', or ignoring 'device or resource busy' errors while unlinking.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1559\n\n",
     "created_at": "2007-12-18T16:43:02Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_001559.json:
     "title": "repeated loading of cython file with home on NFS",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1559",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 When loading a .spyx file with 'load' from the sage: prompt, Sage builds an .so file in ~/.sage/temp/HOST/PID/spyx/FILE/. Before doing this, it tries to unlink all files in that directory. (Search for 'unlink' in sage/misc/cython.py)
 
@@ -46,7 +46,7 @@ archive/issue_comments_009934.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1559#issuecomment-9934",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_009935.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1559#issuecomment-9935",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_009936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1559#issuecomment-9936",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007361.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nKeywords: graph regular\n\nThe attached patch implements a method that checks whether a graph is regular.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7361\n\n",
+    "body": "Assignee: @rlmill\n\nKeywords: graph regular\n\nThe attached patch implements a method that checks whether a graph is regular.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7361\n\n",
     "created_at": "2009-10-31T14:11:02Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007361.json:
     "title": "implement is_regular() for a graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7361",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Keywords: graph regular
 
@@ -40,7 +40,7 @@ archive/issue_comments_061681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7361",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7361#issuecomment-61681",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -58,7 +58,7 @@ archive/issue_comments_061682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7361",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7361#issuecomment-61682",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_061683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7361",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7361#issuecomment-61683",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -128,16 +128,16 @@ Nathann
 archive/issue_comments_061684.json:
 ```json
 {
-    "body": "Attachment [trac_7361.patch](tarball://root/attachments/some-uuid/ticket7361/trac_7361.patch) by AlexGhitza created at 2009-11-01 02:43:37\n\nThanks for looking at this.  I have replaced the patch with a new one incorporating your comments.",
+    "body": "Attachment [trac_7361.patch](tarball://root/attachments/some-uuid/ticket7361/trac_7361.patch) by @aghitza created at 2009-11-01 02:43:37\n\nThanks for looking at this.  I have replaced the patch with a new one incorporating your comments.",
     "created_at": "2009-11-01T02:43:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7361",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7361#issuecomment-61684",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_7361.patch](tarball://root/attachments/some-uuid/ticket7361/trac_7361.patch) by AlexGhitza created at 2009-11-01 02:43:37
+Attachment [trac_7361.patch](tarball://root/attachments/some-uuid/ticket7361/trac_7361.patch) by @aghitza created at 2009-11-01 02:43:37
 
 Thanks for looking at this.  I have replaced the patch with a new one incorporating your comments.
 
@@ -153,7 +153,7 @@ archive/issue_comments_061685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7361",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7361#issuecomment-61685",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_061686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7361",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7361#issuecomment-61686",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_061687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7361",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7361#issuecomment-61687",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_061688.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7361",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7361#issuecomment-61688",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

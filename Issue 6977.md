@@ -3,7 +3,7 @@
 archive/issues_006977.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mhansen@gmail.com sage-combinat\n\nKeywords: MuPAD len\n\nThe title says it all; after the patch, one can do:\n\n            sage: len(mupad([1,2,3]))\n            3\n            sage: map(ZZ, list(mupad([1,2,3])))\n            [1, 2, 3]\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6977\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  mhansen@gmail.com sage-combinat\n\nKeywords: MuPAD len\n\nThe title says it all; after the patch, one can do:\n\n            sage: len(mupad([1,2,3]))\n            3\n            sage: map(ZZ, list(mupad([1,2,3])))\n            [1, 2, 3]\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6977\n\n",
     "created_at": "2009-09-21T13:43:23Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_006977.json:
     "title": "Implement __len__ to add support for MuPAD objects as Python containers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6977",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  mhansen@gmail.com sage-combinat
 
@@ -48,7 +48,7 @@ archive/issue_comments_057699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6977",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6977#issuecomment-57699",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -61,16 +61,16 @@ Changing status from new to assigned.
 archive/issue_comments_057700.json:
 ```json
 {
-    "body": "Changing assignee from was to nthiery.",
+    "body": "Changing assignee from @williamstein to @nthiery.",
     "created_at": "2009-09-21T19:35:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6977",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6977#issuecomment-57700",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Changing assignee from was to nthiery.
+Changing assignee from @williamstein to @nthiery.
 
 
 
@@ -84,7 +84,7 @@ archive/issue_comments_057701.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6977",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6977#issuecomment-57701",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -320,16 +320,16 @@ For whitespace errors, see the file /home/mvngu/.sage//tmp/.doctest_mupad.py
 archive/issue_comments_057703.json:
 ```json
 {
-    "body": "Attachment [trac_6977_mupad_len.patch](tarball://root/attachments/some-uuid/ticket6977/trac_6977_mupad_len.patch) by nthiery created at 2009-09-30 10:19:15",
+    "body": "Attachment [trac_6977_mupad_len.patch](tarball://root/attachments/some-uuid/ticket6977/trac_6977_mupad_len.patch) by @nthiery created at 2009-09-30 10:19:15",
     "created_at": "2009-09-30T10:19:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6977",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6977#issuecomment-57703",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_6977_mupad_len.patch](tarball://root/attachments/some-uuid/ticket6977/trac_6977_mupad_len.patch) by nthiery created at 2009-09-30 10:19:15
+Attachment [trac_6977_mupad_len.patch](tarball://root/attachments/some-uuid/ticket6977/trac_6977_mupad_len.patch) by @nthiery created at 2009-09-30 10:19:15
 
 
 
@@ -343,7 +343,7 @@ archive/issue_comments_057704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6977",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6977#issuecomment-57704",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -366,7 +366,7 @@ archive/issue_comments_057705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6977",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6977#issuecomment-57705",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -384,7 +384,7 @@ archive/issue_comments_057706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6977",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6977#issuecomment-57706",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001829.json:
 ```json
 {
-    "body": "Assignee: was\n\nSee attached patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1829\n\n",
+    "body": "Assignee: @williamstein\n\nSee attached patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1829\n\n",
     "created_at": "2008-01-18T13:38:27Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_001829.json:
     "title": "[with patch] small improvements for term ordering module",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1829",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 See attached patch.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1829
 archive/issue_comments_011582.json:
 ```json
 {
-    "body": "Attachment [term-ordering-doc.patch](tarball://root/attachments/some-uuid/ticket1829/term-ordering-doc.patch) by malb created at 2008-01-18 13:38:50",
+    "body": "Attachment [term-ordering-doc.patch](tarball://root/attachments/some-uuid/ticket1829/term-ordering-doc.patch) by @malb created at 2008-01-18 13:38:50",
     "created_at": "2008-01-18T13:38:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1829",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1829#issuecomment-11582",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [term-ordering-doc.patch](tarball://root/attachments/some-uuid/ticket1829/term-ordering-doc.patch) by malb created at 2008-01-18 13:38:50
+Attachment [term-ordering-doc.patch](tarball://root/attachments/some-uuid/ticket1829/term-ordering-doc.patch) by @malb created at 2008-01-18 13:38:50
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_011583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1829",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1829#issuecomment-11583",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

@@ -87,16 +87,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1091
 archive/issue_comments_006605.json:
 ```json
 {
-    "body": "Attachment [givaro_randiter_leak.patch](tarball://root/attachments/some-uuid/ticket1091/givaro_randiter_leak.patch) by wjp created at 2008-01-09 23:44:54",
+    "body": "Attachment [givaro_randiter_leak.patch](tarball://root/attachments/some-uuid/ticket1091/givaro_randiter_leak.patch) by @wjp created at 2008-01-09 23:44:54",
     "created_at": "2008-01-09T23:44:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1091#issuecomment-6605",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [givaro_randiter_leak.patch](tarball://root/attachments/some-uuid/ticket1091/givaro_randiter_leak.patch) by wjp created at 2008-01-09 23:44:54
+Attachment [givaro_randiter_leak.patch](tarball://root/attachments/some-uuid/ticket1091/givaro_randiter_leak.patch) by @wjp created at 2008-01-09 23:44:54
 
 
 
@@ -110,7 +110,7 @@ archive/issue_comments_006606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1091#issuecomment-6606",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_006608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1091#issuecomment-6608",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 

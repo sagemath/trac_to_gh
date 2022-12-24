@@ -14,7 +14,7 @@ archive/issues_005926.json:
     "title": "[with patch; needs review] solaris top sometimes fails due to race condition",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5926",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5926
 archive/issue_comments_046853.json:
 ```json
 {
-    "body": "Attachment [trac_5926.patch](tarball://root/attachments/some-uuid/ticket5926/trac_5926.patch) by was created at 2009-04-29 01:28:54",
+    "body": "Attachment [trac_5926.patch](tarball://root/attachments/some-uuid/ticket5926/trac_5926.patch) by @williamstein created at 2009-04-29 01:28:54",
     "created_at": "2009-04-29T01:28:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5926#issuecomment-46853",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5926.patch](tarball://root/attachments/some-uuid/ticket5926/trac_5926.patch) by was created at 2009-04-29 01:28:54
+Attachment [trac_5926.patch](tarball://root/attachments/some-uuid/ticket5926/trac_5926.patch) by @williamstein created at 2009-04-29 01:28:54
 
 
 

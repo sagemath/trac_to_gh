@@ -3,7 +3,7 @@
 archive/issues_005319.json:
 ```json
 {
-    "body": "Assignee: schilly\n\nThis is in \"3.1 Steps to Install from Source\"\n\n```\nrootard: http://www.sagemath.org/doc/inst/node6.html <-- says to download source from http://www.sagemath.org/dist/src/ but I get a 404.\n[02:52am] mabs: oops\n[02:52am] mabs: That moved around, I will open a ticket.\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5319\n\n",
+    "body": "Assignee: @haraldschilly\n\nThis is in \"3.1 Steps to Install from Source\"\n\n```\nrootard: http://www.sagemath.org/doc/inst/node6.html <-- says to download source from http://www.sagemath.org/dist/src/ but I get a 404.\n[02:52am] mabs: oops\n[02:52am] mabs: That moved around, I will open a ticket.\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5319\n\n",
     "created_at": "2009-02-20T10:53:28Z",
     "labels": [
         "documentation",
@@ -17,7 +17,7 @@ archive/issues_005319.json:
     "user": "mabshoff"
 }
 ```
-Assignee: schilly
+Assignee: @haraldschilly
 
 This is in "3.1 Steps to Install from Source"
 
@@ -48,7 +48,7 @@ archive/issue_comments_040959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5319",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5319#issuecomment-40959",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -63,16 +63,16 @@ the mirror. otherwise it's just the main website.
 archive/issue_comments_040960.json:
 ```json
 {
-    "body": "Changing assignee from schilly to mhansen.",
+    "body": "Changing assignee from @haraldschilly to @mwhansen.",
     "created_at": "2009-02-20T10:58:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5319",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5319#issuecomment-40960",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from schilly to mhansen.
+Changing assignee from @haraldschilly to @mwhansen.
 
 
 
@@ -86,7 +86,7 @@ archive/issue_comments_040961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5319",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5319#issuecomment-40961",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_040962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5319",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5319#issuecomment-40962",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_040963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5319",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5319#issuecomment-40963",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_040964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5319",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5319#issuecomment-40964",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_040965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5319",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5319#issuecomment-40965",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

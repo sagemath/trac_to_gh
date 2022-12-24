@@ -3,7 +3,7 @@
 archive/issues_000191.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mvngu\n\nIt would be very nice if SAGE had a large table/database of prime numbers.\n\nFor example, on the number theory list:\n\n\n```\nLook in the file\n \nhttp://homes.cerias.purdue.edu/~ssw/bell/r1\n \nfor the factorizations of p^p - 1 for most p < 180.\n \n(If you change \"r1\" to \"r2\", you get the factors of p^p + 1.)\n \nFor the meaning of the \"L\" and \"M\" notation, see the papers at\n \nhttp://homes.cerias.purdue.edu/~ssw/bell/index.html\n```\n\nSo a person really wanted to factor some numbers p^p -1, but couldn't\nwith PARI.  If SAGE had tables of the factorizations of those numbers,\nit could have done it via a lookup, and the verbose message could have\ngiven the above reference.  Something similar would be good for a huge\nrange of classes of prime numbers.   This would be an excellent student\nproject.\n\nIssue created by migration from https://trac.sagemath.org/ticket/191\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  mvngu\n\nIt would be very nice if SAGE had a large table/database of prime numbers.\n\nFor example, on the number theory list:\n\n\n```\nLook in the file\n \nhttp://homes.cerias.purdue.edu/~ssw/bell/r1\n \nfor the factorizations of p^p - 1 for most p < 180.\n \n(If you change \"r1\" to \"r2\", you get the factors of p^p + 1.)\n \nFor the meaning of the \"L\" and \"M\" notation, see the papers at\n \nhttp://homes.cerias.purdue.edu/~ssw/bell/index.html\n```\n\nSo a person really wanted to factor some numbers p^p -1, but couldn't\nwith PARI.  If SAGE had tables of the factorizations of those numbers,\nit could have done it via a lookup, and the verbose message could have\ngiven the above reference.  Something similar would be good for a huge\nrange of classes of prime numbers.   This would be an excellent student\nproject.\n\nIssue created by migration from https://trac.sagemath.org/ticket/191\n\n",
     "created_at": "2007-01-13T20:51:51Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_000191.json:
     "title": "prime table / database",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/191",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  mvngu
 
@@ -63,7 +63,7 @@ archive/issue_comments_000866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/191#issuecomment-866",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_000868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/191#issuecomment-868",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -112,16 +112,16 @@ Changing component from number theory to factorization.
 archive/issue_comments_000869.json:
 ```json
 {
-    "body": "Changing assignee from was to tbd.",
+    "body": "Changing assignee from @williamstein to tbd.",
     "created_at": "2009-07-20T19:54:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/191#issuecomment-869",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to tbd.
+Changing assignee from @williamstein to tbd.
 
 
 
@@ -135,7 +135,7 @@ archive/issue_comments_000870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/191#issuecomment-870",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_000871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/191#issuecomment-871",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_000872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/191#issuecomment-872",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_000873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/191#issuecomment-873",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_000874.json:
     "issue": "https://github.com/sagemath/sagetest/issues/191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/191#issuecomment-874",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_000875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/191#issuecomment-875",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_000876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/191#issuecomment-876",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_000877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/191#issuecomment-877",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_000878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/191#issuecomment-878",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_000879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/191#issuecomment-879",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

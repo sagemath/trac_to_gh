@@ -14,7 +14,7 @@ archive/issues_008060.json:
     "title": "New f2c-20070816.p2.spkg now works with Open Solaris 64 bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8060",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: drkirkby
@@ -43,7 +43,7 @@ archive/issue_comments_070653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8060",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8060#issuecomment-70653",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -56,16 +56,16 @@ Changing status from new to needs_review.
 archive/issue_comments_070654.json:
 ```json
 {
-    "body": "Attachment [f2c-20070816.p2.patch](tarball://root/attachments/some-uuid/ticket8060/f2c-20070816.p2.patch) by jsp created at 2010-01-26 17:33:30",
+    "body": "Attachment [f2c-20070816.p2.patch](tarball://root/attachments/some-uuid/ticket8060/f2c-20070816.p2.patch) by @jaapspies created at 2010-01-26 17:33:30",
     "created_at": "2010-01-26T17:33:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8060",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8060#issuecomment-70654",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [f2c-20070816.p2.patch](tarball://root/attachments/some-uuid/ticket8060/f2c-20070816.p2.patch) by jsp created at 2010-01-26 17:33:30
+Attachment [f2c-20070816.p2.patch](tarball://root/attachments/some-uuid/ticket8060/f2c-20070816.p2.patch) by @jaapspies created at 2010-01-26 17:33:30
 
 
 
@@ -115,7 +115,7 @@ archive/issue_comments_070657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8060",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8060#issuecomment-70657",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

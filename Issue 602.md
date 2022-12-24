@@ -15,7 +15,7 @@ archive/issues_000602.json:
     "title": "sage: (1/2)^(2^100)\nserious powering bug / overflow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/602",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -45,7 +45,7 @@ archive/issue_comments_003105.json:
     "issue": "https://github.com/sagemath/sagetest/issues/602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/602#issuecomment-3105",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_003107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/602#issuecomment-3107",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

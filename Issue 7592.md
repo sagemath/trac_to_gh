@@ -3,7 +3,7 @@
 archive/issues_007592.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nAs the title says, this patch implements the flow function for Graphs ( weighted or not, directed or not )\n\nIssue created by migration from https://trac.sagemath.org/ticket/7592\n\n",
+    "body": "Assignee: @rlmill\n\nAs the title says, this patch implements the flow function for Graphs ( weighted or not, directed or not )\n\nIssue created by migration from https://trac.sagemath.org/ticket/7592\n\n",
     "created_at": "2009-12-03T14:34:56Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007592.json:
     "title": "Flow method using LP",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7592",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 As the title says, this patch implements the flow function for Graphs ( weighted or not, directed or not )
 
@@ -37,7 +37,7 @@ archive/issue_comments_064726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7592#issuecomment-64726",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_064727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7592#issuecomment-64727",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_064728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7592#issuecomment-64728",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_064729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7592#issuecomment-64729",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_064730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7592#issuecomment-64730",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_064731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7592#issuecomment-64731",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_064732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7592#issuecomment-64732",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -209,16 +209,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_064733.json:
 ```json
 {
-    "body": "Attachment [trac_7592.patch](tarball://root/attachments/some-uuid/ticket7592/trac_7592.patch) by ncohen created at 2009-12-16 00:44:53\n\nI corrected the documentation as I finally thought returning a graph would be much more useful :-)\n\nI also added a more interesting example of what one can do with flows :-)\n\nNathann",
+    "body": "Attachment [trac_7592.patch](tarball://root/attachments/some-uuid/ticket7592/trac_7592.patch) by @nathanncohen created at 2009-12-16 00:44:53\n\nI corrected the documentation as I finally thought returning a graph would be much more useful :-)\n\nI also added a more interesting example of what one can do with flows :-)\n\nNathann",
     "created_at": "2009-12-16T00:44:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7592#issuecomment-64733",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_7592.patch](tarball://root/attachments/some-uuid/ticket7592/trac_7592.patch) by ncohen created at 2009-12-16 00:44:53
+Attachment [trac_7592.patch](tarball://root/attachments/some-uuid/ticket7592/trac_7592.patch) by @nathanncohen created at 2009-12-16 00:44:53
 
 I corrected the documentation as I finally thought returning a graph would be much more useful :-)
 
@@ -238,7 +238,7 @@ archive/issue_comments_064734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7592#issuecomment-64734",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_064735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7592#issuecomment-64735",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_064736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7592#issuecomment-64736",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

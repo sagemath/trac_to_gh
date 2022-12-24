@@ -3,7 +3,7 @@
 archive/issues_007945.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\n\n```\nsage: K.<a> = NumberField(x^2 + 23)\nsage: G = K.class_group(); G\nClass group of order 3 with structure C3 of Number Field in a with defining polynomial x^2 + 23\nsage: G.an_element() in G\nFalse\n```\n\n\nCatched with #7921.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7945\n\n",
+    "body": "Assignee: @loefflerd\n\n\n```\nsage: K.<a> = NumberField(x^2 + 23)\nsage: G = K.class_group(); G\nClass group of order 3 with structure C3 of Number Field in a with defining polynomial x^2 + 23\nsage: G.an_element() in G\nFalse\n```\n\n\nCatched with #7921.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7945\n\n",
     "created_at": "2010-01-16T12:28:51Z",
     "labels": [
         "number fields",
@@ -14,10 +14,10 @@ archive/issues_007945.json:
     "title": "Class groups of number fields: an_element() not in self",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7945",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
 
 ```
@@ -47,7 +47,7 @@ archive/issue_comments_069319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7945#issuecomment-69319",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_069320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7945#issuecomment-69320",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_069321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7945#issuecomment-69321",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_069322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7945#issuecomment-69322",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_069323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7945#issuecomment-69323",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_069324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7945#issuecomment-69324",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

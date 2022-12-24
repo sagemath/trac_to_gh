@@ -3,7 +3,7 @@
 archive/issues_008143.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  jason\n\nAs a Crypto PhD, I enjoy using the many functionalities in SAGE that interface the NTL library, however an important function was left out, namely the Gram-Schmidt Orthogonalization.\n\nThere is an implementation in SAGE which is in pure python and very slow (but exact). I propose to add an option to use NTL for matrices of dimensions > 200.\n\nRichard\n\nIssue created by migration from https://trac.sagemath.org/ticket/8143\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @jasongrout\n\nAs a Crypto PhD, I enjoy using the many functionalities in SAGE that interface the NTL library, however an important function was left out, namely the Gram-Schmidt Orthogonalization.\n\nThere is an implementation in SAGE which is in pure python and very slow (but exact). I propose to add an option to use NTL for matrices of dimensions > 200.\n\nRichard\n\nIssue created by migration from https://trac.sagemath.org/ticket/8143\n\n",
     "created_at": "2010-02-01T17:09:40Z",
     "labels": [
         "algebra",
@@ -17,9 +17,9 @@ archive/issues_008143.json:
     "user": "rlindner"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  jason
+CC:  @jasongrout
 
 As a Crypto PhD, I enjoy using the many functionalities in SAGE that interface the NTL library, however an important function was left out, namely the Gram-Schmidt Orthogonalization.
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8143
 archive/issue_comments_071593.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to jason, was.",
+    "body": "Changing assignee from @aghitza to jason, was.",
     "created_at": "2010-09-02T10:48:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8143#issuecomment-71593",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from AlexGhitza to jason, was.
+Changing assignee from @aghitza to jason, was.
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_071594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8143#issuecomment-71594",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_071595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8143#issuecomment-71595",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005098.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  cremona\n\nFirst attempt to provide an algorithm using less memory than the \"baby step giant step\" algorithm for generic discrete logarithm.\n\nThis algorithm uses only (small) constant memory. It is about 3 times slower than bsgs on the examples I tested.\n\nI also added an unused optional argument to bsgs to simplify the call in discrete_log.\n\nProposed patch attached, with doctests.\n\n(the attached patch needs #5088 to be applied first)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5098\n\n",
+    "body": "Assignee: tbd\n\nCC:  @JohnCremona\n\nFirst attempt to provide an algorithm using less memory than the \"baby step giant step\" algorithm for generic discrete logarithm.\n\nThis algorithm uses only (small) constant memory. It is about 3 times slower than bsgs on the examples I tested.\n\nI also added an unused optional argument to bsgs to simplify the call in discrete_log.\n\nProposed patch attached, with doctests.\n\n(the attached patch needs #5088 to be applied first)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5098\n\n",
     "created_at": "2009-01-25T15:17:41Z",
     "labels": [
         "algebra",
@@ -19,7 +19,7 @@ archive/issues_005098.json:
 ```
 Assignee: tbd
 
-CC:  cremona
+CC:  @JohnCremona
 
 First attempt to provide an algorithm using less memory than the "baby step giant step" algorithm for generic discrete logarithm.
 
@@ -47,7 +47,7 @@ archive/issue_comments_038885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5098#issuecomment-38885",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_038887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5098#issuecomment-38887",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_038889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5098#issuecomment-38889",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_038893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5098#issuecomment-38893",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -286,16 +286,16 @@ I hope everything is ok this time :)
 archive/issue_comments_038895.json:
 ```json
 {
-    "body": "Attachment [trac-5098-alpha2based.patch](tarball://root/attachments/some-uuid/ticket5098/trac-5098-alpha2based.patch) by cremona created at 2009-02-01 15:15:54\n\nThanks -- I am quite happy now, and give this a positive review!  Now I will go and look at the lambda patch too.",
+    "body": "Attachment [trac-5098-alpha2based.patch](tarball://root/attachments/some-uuid/ticket5098/trac-5098-alpha2based.patch) by @JohnCremona created at 2009-02-01 15:15:54\n\nThanks -- I am quite happy now, and give this a positive review!  Now I will go and look at the lambda patch too.",
     "created_at": "2009-02-01T15:15:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5098#issuecomment-38895",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac-5098-alpha2based.patch](tarball://root/attachments/some-uuid/ticket5098/trac-5098-alpha2based.patch) by cremona created at 2009-02-01 15:15:54
+Attachment [trac-5098-alpha2based.patch](tarball://root/attachments/some-uuid/ticket5098/trac-5098-alpha2based.patch) by @JohnCremona created at 2009-02-01 15:15:54
 
 Thanks -- I am quite happy now, and give this a positive review!  Now I will go and look at the lambda patch too.
 
@@ -412,7 +412,7 @@ archive/issue_comments_038899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5098#issuecomment-38899",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -490,7 +490,7 @@ archive/issue_comments_038903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5098#issuecomment-38903",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -559,7 +559,7 @@ archive/issue_comments_038906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5098#issuecomment-38906",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -600,7 +600,7 @@ archive/issue_comments_038907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5098#issuecomment-38907",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -642,7 +642,7 @@ archive/issue_comments_038908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5098#issuecomment-38908",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -742,7 +742,7 @@ archive/issue_comments_038912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5098#issuecomment-38912",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -853,16 +853,16 @@ This gets a positive review from me with the small changes in the review patch. 
 archive/issue_comments_038918.json:
 ```json
 {
-    "body": "Attachment [trac-5098-pollard_review.patch](tarball://root/attachments/some-uuid/ticket5098/trac-5098-pollard_review.patch) by mhansen created at 2009-12-20 07:23:32",
+    "body": "Attachment [trac-5098-pollard_review.patch](tarball://root/attachments/some-uuid/ticket5098/trac-5098-pollard_review.patch) by @mwhansen created at 2009-12-20 07:23:32",
     "created_at": "2009-12-20T07:23:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5098#issuecomment-38918",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac-5098-pollard_review.patch](tarball://root/attachments/some-uuid/ticket5098/trac-5098-pollard_review.patch) by mhansen created at 2009-12-20 07:23:32
+Attachment [trac-5098-pollard_review.patch](tarball://root/attachments/some-uuid/ticket5098/trac-5098-pollard_review.patch) by @mwhansen created at 2009-12-20 07:23:32
 
 
 
@@ -876,7 +876,7 @@ archive/issue_comments_038919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5098#issuecomment-38919",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

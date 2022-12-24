@@ -3,7 +3,7 @@
 archive/issues_009137.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  jason mhansen was\n\nKeywords: konqueror, infinite, windows\n\nThis is to make sage users aware of a bug that apparently exists in KDE and not in SAGE.\n\n**Behavior:**  On certain system setups, when starting SAGE notebook, konqueror goes haywire and starts opening up an infinite number of windows in the taskbar (none of the windows will show themselves).  Konqueror will continue to open new windows until Xorg is killed.\n\n**References:** [https://bugs.kde.org/show_bug.cgi?id=234620](https://bugs.kde.org/show_bug.cgi?id=234620) (includes screenshots of the problem)\n\n**Workaround:** 1) use ` notebook(open_viewer=False) ` and manually open browser to notebook port  2) Use a browser other than konqueror (you can change the defualt browser in KDE system settings).\n\n**Conclusion:** As stated above, this appears to be a bug in KDE as it affects other software as well.  If you see this bug, please contact the KDE developers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9137\n\n",
+    "body": "Assignee: somebody\n\nCC:  @jasongrout @mwhansen @williamstein\n\nKeywords: konqueror, infinite, windows\n\nThis is to make sage users aware of a bug that apparently exists in KDE and not in SAGE.\n\n**Behavior:**  On certain system setups, when starting SAGE notebook, konqueror goes haywire and starts opening up an infinite number of windows in the taskbar (none of the windows will show themselves).  Konqueror will continue to open new windows until Xorg is killed.\n\n**References:** [https://bugs.kde.org/show_bug.cgi?id=234620](https://bugs.kde.org/show_bug.cgi?id=234620) (includes screenshots of the problem)\n\n**Workaround:** 1) use ` notebook(open_viewer=False) ` and manually open browser to notebook port  2) Use a browser other than konqueror (you can change the defualt browser in KDE system settings).\n\n**Conclusion:** As stated above, this appears to be a bug in KDE as it affects other software as well.  If you see this bug, please contact the KDE developers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9137\n\n",
     "created_at": "2010-06-03T23:45:26Z",
     "labels": [
         "notebook",
@@ -19,7 +19,7 @@ archive/issues_009137.json:
 ```
 Assignee: somebody
 
-CC:  jason mhansen was
+CC:  @jasongrout @mwhansen @williamstein
 
 Keywords: konqueror, infinite, windows
 
@@ -105,7 +105,7 @@ archive/issue_comments_085167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9137",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9137#issuecomment-85167",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_085168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9137",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9137#issuecomment-85168",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002535.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  alexghitza cremona\n\nThere's some error with `plus_submodule` and `cuspidal_submodule` not being \"commutative.\" Here's an example:\n\n\n```\nsage: M = ModularSymbols(11,2)\nsage: Mpc = M.plus_submodule().cuspidal_submodule()\nsage: Mcp = M.cuspidal_submodule().plus_submodule()\n\nsage: Mcp.q_expansion_basis(10) \n[\nq - 2*q^2 - q^3 + 2*q^4 + q^5 + 2*q^6 - 2*q^7 - 2*q^9 + O(q^10)\n]\n\nsage: Mpc.q_expansion_basis(10)\n---------------------------------------------------------------------------\n<type 'exceptions.RuntimeError'>          Traceback (most recent call last)\n\n/Users/craigcitro/<ipython console> in <module>()\n\n/sage/local/lib/python2.5/site-packages/sage/modular/modsym/space.py in q_expansion_basis(self, prec, algorithm)\n    458             algorithm = 'hecke'\n    459         if algorithm == 'hecke':\n--> 460             return Sequence(self._q_expansion_basis_hecke_dual(prec), cr=True)\n    461         elif algorithm == 'eigen':\n    462             return Sequence(self._q_expansion_basis_eigen(prec), cr=True)\n\n\n/sage/local/lib/python2.5/site-packages/sage/modular/modsym/space.py in _q_expansion_basis_hecke_dual(self, prec)\n    913         t = misc.verbose('computing basis to precision %s'%prec)\n    914         while V.dimension() < d and i >= 0:\n--> 915             v = [self.dual_hecke_matrix(n).column(i) for n in range(1,prec)]\n    916             t = misc.verbose('iteration: %s'%j,t)\n    917             X = M(v).transpose()\n\n/sage/local/lib/python2.5/site-packages/sage/modular/hecke/module.py in dual_hecke_matrix(self, n)\n    725             self._dual_hecke_matrices = {}\n    726         if not self._dual_hecke_matrices.has_key(n):\n--> 727             T = self._compute_dual_hecke_matrix(n)\n    728             self._dual_hecke_matrices[n] = T\n    729         return self._dual_hecke_matrices[n]\n\n/sage/local/lib/python2.5/site-packages/sage/modular/hecke/submodule.py in _compute_dual_hecke_matrix(self, n)\n    108         A = self.ambient_hecke_module().dual_hecke_matrix(n)\n    109         check =  arith.gcd(self.level(), n) != 1\n--> 110         return A.restrict(self.dual_free_module(), check=check)\n    111 \n    112     def _compute_hecke_matrix(self, n):\n\n/sage/local/lib/python2.5/site-packages/sage/modular/hecke/submodule.py in dual_free_module(self, bound, anemic)\n    295                 # failed\n    296                 raise RuntimeError, \"Computation of embedded dual vector space failed \" + \\\n--> 297                       \"(cut down to rank %s, but should have cut down to rank %s).\"%(V.rank(), self.rank())\n    298 \n    299 \n\n<type 'exceptions.RuntimeError'>: Computation of embedded dual vector space failed (cut down to rank 2, but should have cut down to rank 1).\n```\n\n\nI'll look at this soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2535\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  alexghitza @JohnCremona\n\nThere's some error with `plus_submodule` and `cuspidal_submodule` not being \"commutative.\" Here's an example:\n\n\n```\nsage: M = ModularSymbols(11,2)\nsage: Mpc = M.plus_submodule().cuspidal_submodule()\nsage: Mcp = M.cuspidal_submodule().plus_submodule()\n\nsage: Mcp.q_expansion_basis(10) \n[\nq - 2*q^2 - q^3 + 2*q^4 + q^5 + 2*q^6 - 2*q^7 - 2*q^9 + O(q^10)\n]\n\nsage: Mpc.q_expansion_basis(10)\n---------------------------------------------------------------------------\n<type 'exceptions.RuntimeError'>          Traceback (most recent call last)\n\n/Users/craigcitro/<ipython console> in <module>()\n\n/sage/local/lib/python2.5/site-packages/sage/modular/modsym/space.py in q_expansion_basis(self, prec, algorithm)\n    458             algorithm = 'hecke'\n    459         if algorithm == 'hecke':\n--> 460             return Sequence(self._q_expansion_basis_hecke_dual(prec), cr=True)\n    461         elif algorithm == 'eigen':\n    462             return Sequence(self._q_expansion_basis_eigen(prec), cr=True)\n\n\n/sage/local/lib/python2.5/site-packages/sage/modular/modsym/space.py in _q_expansion_basis_hecke_dual(self, prec)\n    913         t = misc.verbose('computing basis to precision %s'%prec)\n    914         while V.dimension() < d and i >= 0:\n--> 915             v = [self.dual_hecke_matrix(n).column(i) for n in range(1,prec)]\n    916             t = misc.verbose('iteration: %s'%j,t)\n    917             X = M(v).transpose()\n\n/sage/local/lib/python2.5/site-packages/sage/modular/hecke/module.py in dual_hecke_matrix(self, n)\n    725             self._dual_hecke_matrices = {}\n    726         if not self._dual_hecke_matrices.has_key(n):\n--> 727             T = self._compute_dual_hecke_matrix(n)\n    728             self._dual_hecke_matrices[n] = T\n    729         return self._dual_hecke_matrices[n]\n\n/sage/local/lib/python2.5/site-packages/sage/modular/hecke/submodule.py in _compute_dual_hecke_matrix(self, n)\n    108         A = self.ambient_hecke_module().dual_hecke_matrix(n)\n    109         check =  arith.gcd(self.level(), n) != 1\n--> 110         return A.restrict(self.dual_free_module(), check=check)\n    111 \n    112     def _compute_hecke_matrix(self, n):\n\n/sage/local/lib/python2.5/site-packages/sage/modular/hecke/submodule.py in dual_free_module(self, bound, anemic)\n    295                 # failed\n    296                 raise RuntimeError, \"Computation of embedded dual vector space failed \" + \\\n--> 297                       \"(cut down to rank %s, but should have cut down to rank %s).\"%(V.rank(), self.rank())\n    298 \n    299 \n\n<type 'exceptions.RuntimeError'>: Computation of embedded dual vector space failed (cut down to rank 2, but should have cut down to rank 1).\n```\n\n\nI'll look at this soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2535\n\n",
     "created_at": "2008-03-15T23:40:33Z",
     "labels": [
         "modular forms",
@@ -14,12 +14,12 @@ archive/issues_002535.json:
     "title": "Problem with cuspidal_subspace and new_subspace for modular symbols",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2535",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
-CC:  alexghitza cremona
+CC:  alexghitza @JohnCremona
 
 There's some error with `plus_submodule` and `cuspidal_submodule` not being "commutative." Here's an example:
 
@@ -98,7 +98,7 @@ archive/issue_comments_017284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2535#issuecomment-17284",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_017285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2535#issuecomment-17285",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_017286.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2535#issuecomment-17286",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_017287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2535#issuecomment-17287",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_017290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2535#issuecomment-17290",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -254,16 +254,16 @@ The attached patch addresses William's counterexample, and should be applied aft
 archive/issue_comments_017291.json:
 ```json
 {
-    "body": "Attachment [trac-2535-final.patch](tarball://root/attachments/some-uuid/ticket2535/trac-2535-final.patch) by craigcitro created at 2009-01-22 20:33:23\n\nFinal version of patch attached, with one or two small improvements over previous.",
+    "body": "Attachment [trac-2535-final.patch](tarball://root/attachments/some-uuid/ticket2535/trac-2535-final.patch) by @craigcitro created at 2009-01-22 20:33:23\n\nFinal version of patch attached, with one or two small improvements over previous.",
     "created_at": "2009-01-22T20:33:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2535#issuecomment-17291",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-2535-final.patch](tarball://root/attachments/some-uuid/ticket2535/trac-2535-final.patch) by craigcitro created at 2009-01-22 20:33:23
+Attachment [trac-2535-final.patch](tarball://root/attachments/some-uuid/ticket2535/trac-2535-final.patch) by @craigcitro created at 2009-01-22 20:33:23
 
 Final version of patch attached, with one or two small improvements over previous.
 

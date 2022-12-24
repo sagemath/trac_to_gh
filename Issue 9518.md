@@ -3,7 +3,7 @@
 archive/issues_009518.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  cremona was robertwb\n\nJohn Cremona remarked on #9281 that Pari had a self test that could be run from `make test-all`, so an spkg-check file should be added to do this. I will take care of it. Hopefully John can review it. \n\n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9518\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @JohnCremona @williamstein @robertwb\n\nJohn Cremona remarked on #9281 that Pari had a self test that could be run from `make test-all`, so an spkg-check file should be added to do this. I will take care of it. Hopefully John can review it. \n\n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9518\n\n",
     "created_at": "2010-07-16T17:10:13Z",
     "labels": [
         "spkg-check",
@@ -19,7 +19,7 @@ archive/issues_009518.json:
 ```
 Assignee: drkirkby
 
-CC:  cremona was robertwb
+CC:  @JohnCremona @williamstein @robertwb
 
 John Cremona remarked on #9281 that Pari had a self test that could be run from `make test-all`, so an spkg-check file should be added to do this. I will take care of it. Hopefully John can review it. 
 
@@ -42,7 +42,7 @@ archive/issue_comments_091500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9518",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9518#issuecomment-91500",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -60,7 +60,7 @@ archive/issue_comments_091501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9518",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9518#issuecomment-91501",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_091505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9518",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9518#issuecomment-91505",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_091506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9518",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9518#issuecomment-91506",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_091507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9518",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9518#issuecomment-91507",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_091508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9518",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9518#issuecomment-91508",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_091509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9518",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9518#issuecomment-91509",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

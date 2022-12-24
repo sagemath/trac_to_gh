@@ -14,7 +14,7 @@ archive/issues_008178.json:
     "title": "zn_poly fails to build in Open Solaris x64 as 64 bit even if SAGE64=yes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8178",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: drkirkby
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8178
 archive/issue_comments_072062.json:
 ```json
 {
-    "body": "Attachment [zn_poly-0.9.p2.patch](tarball://root/attachments/some-uuid/ticket8178/zn_poly-0.9.p2.patch) by jsp created at 2010-02-03 19:36:24",
+    "body": "Attachment [zn_poly-0.9.p2.patch](tarball://root/attachments/some-uuid/ticket8178/zn_poly-0.9.p2.patch) by @jaapspies created at 2010-02-03 19:36:24",
     "created_at": "2010-02-03T19:36:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8178#issuecomment-72062",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [zn_poly-0.9.p2.patch](tarball://root/attachments/some-uuid/ticket8178/zn_poly-0.9.p2.patch) by jsp created at 2010-02-03 19:36:24
+Attachment [zn_poly-0.9.p2.patch](tarball://root/attachments/some-uuid/ticket8178/zn_poly-0.9.p2.patch) by @jaapspies created at 2010-02-03 19:36:24
 
 
 
@@ -64,7 +64,7 @@ archive/issue_comments_072063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8178#issuecomment-72063",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -93,16 +93,16 @@ Jaap
 archive/issue_comments_072064.json:
 ```json
 {
-    "body": "Changing assignee from drkirkby to jsp.",
+    "body": "Changing assignee from drkirkby to @jaapspies.",
     "created_at": "2010-02-03T19:44:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8178#issuecomment-72064",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Changing assignee from drkirkby to jsp.
+Changing assignee from drkirkby to @jaapspies.
 
 
 
@@ -116,7 +116,7 @@ archive/issue_comments_072065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8178#issuecomment-72065",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -165,16 +165,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_072068.json:
 ```json
 {
-    "body": "Attachment [libpng-1.2.35.p0+.patch](tarball://root/attachments/some-uuid/ticket8178/libpng-1.2.35.p0+.patch) by jsp created at 2010-02-04 18:55:16\n\nReplying to [comment:3 drkirkby]:\n> To avoid the risk of messing something up for everyone, I would make the chances in patches/makemakefile.py to specific to Solaris on 64-bit. \n\n\nI think it is pritty harmless to add $LDFLAGS here. If you don't agree I leave this one to you. I've enough of -m64 :)\n\nJaap",
+    "body": "Attachment [libpng-1.2.35.p0+.patch](tarball://root/attachments/some-uuid/ticket8178/libpng-1.2.35.p0+.patch) by @jaapspies created at 2010-02-04 18:55:16\n\nReplying to [comment:3 drkirkby]:\n> To avoid the risk of messing something up for everyone, I would make the chances in patches/makemakefile.py to specific to Solaris on 64-bit. \n\n\nI think it is pritty harmless to add $LDFLAGS here. If you don't agree I leave this one to you. I've enough of -m64 :)\n\nJaap",
     "created_at": "2010-02-04T18:55:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8178#issuecomment-72068",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [libpng-1.2.35.p0+.patch](tarball://root/attachments/some-uuid/ticket8178/libpng-1.2.35.p0+.patch) by jsp created at 2010-02-04 18:55:16
+Attachment [libpng-1.2.35.p0+.patch](tarball://root/attachments/some-uuid/ticket8178/libpng-1.2.35.p0+.patch) by @jaapspies created at 2010-02-04 18:55:16
 
 Replying to [comment:3 drkirkby]:
 > To avoid the risk of messing something up for everyone, I would make the chances in patches/makemakefile.py to specific to Solaris on 64-bit. 
@@ -196,7 +196,7 @@ archive/issue_comments_072069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8178#issuecomment-72069",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -211,16 +211,16 @@ Jaap
 archive/issue_comments_072070.json:
 ```json
 {
-    "body": "Changing assignee from jsp to drkirkby.",
+    "body": "Changing assignee from @jaapspies to drkirkby.",
     "created_at": "2010-02-04T19:00:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8178#issuecomment-72070",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Changing assignee from jsp to drkirkby.
+Changing assignee from @jaapspies to drkirkby.
 
 
 
@@ -234,7 +234,7 @@ archive/issue_comments_072071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8178#issuecomment-72071",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_072073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8178#issuecomment-72073",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_072074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8178#issuecomment-72074",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -380,16 +380,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_072077.json:
 ```json
 {
-    "body": "Attachment [zn_poly-0.9.p3.patch](tarball://root/attachments/some-uuid/ticket8178/zn_poly-0.9.p3.patch) by jsp created at 2010-02-21 17:52:25\n\nThe new spkg can be found here:\n\n[http://boxen.math.washington.edu/home/jsp/ports/zn_poly-0.9.p3.spkg](http://boxen.math.washington.edu/home/jsp/ports/zn_poly-0.9.p3.spkg)\n\nSee also the new attachment.\n\nJaap",
+    "body": "Attachment [zn_poly-0.9.p3.patch](tarball://root/attachments/some-uuid/ticket8178/zn_poly-0.9.p3.patch) by @jaapspies created at 2010-02-21 17:52:25\n\nThe new spkg can be found here:\n\n[http://boxen.math.washington.edu/home/jsp/ports/zn_poly-0.9.p3.spkg](http://boxen.math.washington.edu/home/jsp/ports/zn_poly-0.9.p3.spkg)\n\nSee also the new attachment.\n\nJaap",
     "created_at": "2010-02-21T17:52:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8178#issuecomment-72077",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [zn_poly-0.9.p3.patch](tarball://root/attachments/some-uuid/ticket8178/zn_poly-0.9.p3.patch) by jsp created at 2010-02-21 17:52:25
+Attachment [zn_poly-0.9.p3.patch](tarball://root/attachments/some-uuid/ticket8178/zn_poly-0.9.p3.patch) by @jaapspies created at 2010-02-21 17:52:25
 
 The new spkg can be found here:
 
@@ -411,7 +411,7 @@ archive/issue_comments_072078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8178#issuecomment-72078",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 

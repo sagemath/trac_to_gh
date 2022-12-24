@@ -3,7 +3,7 @@
 archive/issues_005039.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nThe Elements of `SetPartitions` of a set A are actually Sets of Sets. But there are specific functionalities I would like for those \"Sets of Sets\". For example : merge the classes of a an b and ask what is the representant of a, where a, b are in A.\n\nRight now, Arnaud Bergeron and I coded and named it as `DisjointSet` and it is available in the sage-combinat tree. The implementation is inspired from :\n\nhttp://en.wikipedia.org/wiki/Disjoint_set_data_structure\n\nSee also this thread :\nhttp://groups.google.com/group/sage-combinat-devel/browse_thread/thread/4b6d5bb2983d81c2/f52adb855eb3b09f?lnk=gst&q=disjoint+set#f52adb855eb3b09f\n\nIssue created by migration from https://trac.sagemath.org/ticket/5039\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThe Elements of `SetPartitions` of a set A are actually Sets of Sets. But there are specific functionalities I would like for those \"Sets of Sets\". For example : merge the classes of a an b and ask what is the representant of a, where a, b are in A.\n\nRight now, Arnaud Bergeron and I coded and named it as `DisjointSet` and it is available in the sage-combinat tree. The implementation is inspired from :\n\nhttp://en.wikipedia.org/wiki/Disjoint_set_data_structure\n\nSee also this thread :\nhttp://groups.google.com/group/sage-combinat-devel/browse_thread/thread/4b6d5bb2983d81c2/f52adb855eb3b09f?lnk=gst&q=disjoint+set#f52adb855eb3b09f\n\nIssue created by migration from https://trac.sagemath.org/ticket/5039\n\n",
     "created_at": "2009-01-20T20:17:01Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_005039.json:
     "title": "Create a class for SetPartition (with no s)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5039",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5039
 archive/issue_comments_038373.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to slabbe.",
+    "body": "Changing assignee from @mwhansen to @seblabbe.",
     "created_at": "2009-01-20T20:17:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5039#issuecomment-38373",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Changing assignee from mhansen to slabbe.
+Changing assignee from @mwhansen to @seblabbe.
 
 
 
@@ -64,7 +64,7 @@ archive/issue_comments_038374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5039#issuecomment-38374",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_038375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5039#issuecomment-38375",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_038376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5039#issuecomment-38376",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_038377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5039#issuecomment-38377",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -140,16 +140,16 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_038378.json:
 ```json
 {
-    "body": "Attachment [trac_5039-disjoint_set-ts.patch](tarball://root/attachments/some-uuid/ticket5039/trac_5039-disjoint_set-ts.patch) by tscrim created at 2013-03-27 23:30:01",
+    "body": "Attachment [trac_5039-disjoint_set-ts.patch](tarball://root/attachments/some-uuid/ticket5039/trac_5039-disjoint_set-ts.patch) by @tscrim created at 2013-03-27 23:30:01",
     "created_at": "2013-03-27T23:30:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5039#issuecomment-38378",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
-Attachment [trac_5039-disjoint_set-ts.patch](tarball://root/attachments/some-uuid/ticket5039/trac_5039-disjoint_set-ts.patch) by tscrim created at 2013-03-27 23:30:01
+Attachment [trac_5039-disjoint_set-ts.patch](tarball://root/attachments/some-uuid/ticket5039/trac_5039-disjoint_set-ts.patch) by @tscrim created at 2013-03-27 23:30:01
 
 
 
@@ -163,7 +163,7 @@ archive/issue_comments_038379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5039#issuecomment-38379",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_038380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5039#issuecomment-38380",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_038381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5039#issuecomment-38381",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_038382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5039#issuecomment-38382",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_038383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5039#issuecomment-38383",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_038384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5039#issuecomment-38384",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_038385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5039#issuecomment-38385",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_038386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5039#issuecomment-38386",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -343,7 +343,7 @@ archive/issue_comments_038387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5039#issuecomment-38387",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -365,7 +365,7 @@ archive/issue_comments_038388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5039#issuecomment-38388",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007460.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nwstein@iras:~/screen/iras/build/sage-4.2.1.rc0> ./sage -t -long \"devel/sage/doc/en/numerical_sage/cvxopt.rst\"\nsage -t -long \"devel/sage/doc/en/numerical_sage/cvxopt.rst\"\n**********************************************************************\nFile \"/home/wstein/screen/iras/build/sage-4.2.1.rc0/devel/sage/doc/en/numerical_sage/cvxopt.rst\", line 137:\n    sage: print sol['x']\nExpected:\n       1.0000e+00\n       1.0000e+00\nGot:   \n       1.0000e-00\n       1.0000e+00\n    <BLANKLINE>\n**********************************************************************\n1 items had failures:\n   1 of  11 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_cvxopt.py\n         [3.8 s]\nexit code: 1024\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7460\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nwstein@iras:~/screen/iras/build/sage-4.2.1.rc0> ./sage -t -long \"devel/sage/doc/en/numerical_sage/cvxopt.rst\"\nsage -t -long \"devel/sage/doc/en/numerical_sage/cvxopt.rst\"\n**********************************************************************\nFile \"/home/wstein/screen/iras/build/sage-4.2.1.rc0/devel/sage/doc/en/numerical_sage/cvxopt.rst\", line 137:\n    sage: print sol['x']\nExpected:\n       1.0000e+00\n       1.0000e+00\nGot:   \n       1.0000e-00\n       1.0000e+00\n    <BLANKLINE>\n**********************************************************************\n1 items had failures:\n   1 of  11 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_cvxopt.py\n         [3.8 s]\nexit code: 1024\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7460\n\n",
     "created_at": "2009-11-14T18:08:08Z",
     "labels": [
         "doctest coverage",
@@ -14,10 +14,10 @@ archive/issues_007460.json:
     "title": "numerical noise on itanium (iras)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7460",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -60,7 +60,7 @@ archive/issue_comments_062835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7460#issuecomment-62835",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -84,16 +84,16 @@ Total time for all tests: 3.7 seconds
 archive/issue_comments_062836.json:
 ```json
 {
-    "body": "Attachment [trac_7460.patch](tarball://root/attachments/some-uuid/ticket7460/trac_7460.patch) by was created at 2009-11-14 18:13:24",
+    "body": "Attachment [trac_7460.patch](tarball://root/attachments/some-uuid/ticket7460/trac_7460.patch) by @williamstein created at 2009-11-14 18:13:24",
     "created_at": "2009-11-14T18:13:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7460#issuecomment-62836",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7460.patch](tarball://root/attachments/some-uuid/ticket7460/trac_7460.patch) by was created at 2009-11-14 18:13:24
+Attachment [trac_7460.patch](tarball://root/attachments/some-uuid/ticket7460/trac_7460.patch) by @williamstein created at 2009-11-14 18:13:24
 
 
 
@@ -107,7 +107,7 @@ archive/issue_comments_062837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7460#issuecomment-62837",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_062838.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7460#issuecomment-62838",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_062839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7460#issuecomment-62839",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_062840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7460#issuecomment-62840",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

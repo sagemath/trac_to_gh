@@ -3,7 +3,7 @@
 archive/issues_005879.json:
 ```json
 {
-    "body": "Assignee: aschilling\n\nCC:  sage-combinat-commits\n\nKeywords: combinat, crystals\n\nThis patch adds crystal of letters for type E corresponding to\nthe highest weight crystal B(\\Lambda_1) and its dual B(\\Lambda_6) (in the sage labeling convention of the Dynkin nodes).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5879\n\n",
+    "body": "Assignee: @anneschilling\n\nCC:  sage-combinat-commits\n\nKeywords: combinat, crystals\n\nThis patch adds crystal of letters for type E corresponding to\nthe highest weight crystal B(\\Lambda_1) and its dual B(\\Lambda_6) (in the sage labeling convention of the Dynkin nodes).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5879\n\n",
     "created_at": "2009-04-23T19:27:33Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_005879.json:
     "title": "[with patch, needs review] Added crystal of letters for type E",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5879",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
-Assignee: aschilling
+Assignee: @anneschilling
 
 CC:  sage-combinat-commits
 
@@ -42,7 +42,7 @@ archive/issue_comments_046449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46449",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_046450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46450",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_046451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46451",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_046452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46452",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_046454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46454",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_046457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46457",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -307,16 +307,16 @@ unique representation patch and he will try to find a solution to the problem in
 archive/issue_comments_046458.json:
 ```json
 {
-    "body": "Attachment [trac_5879-crystal-E-as.patch](tarball://root/attachments/some-uuid/ticket5879/trac_5879-crystal-E-as.patch) by aschilling created at 2009-05-08 00:57:04",
+    "body": "Attachment [trac_5879-crystal-E-as.patch](tarball://root/attachments/some-uuid/ticket5879/trac_5879-crystal-E-as.patch) by @anneschilling created at 2009-05-08 00:57:04",
     "created_at": "2009-05-08T00:57:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46458",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
-Attachment [trac_5879-crystal-E-as.patch](tarball://root/attachments/some-uuid/ticket5879/trac_5879-crystal-E-as.patch) by aschilling created at 2009-05-08 00:57:04
+Attachment [trac_5879-crystal-E-as.patch](tarball://root/attachments/some-uuid/ticket5879/trac_5879-crystal-E-as.patch) by @anneschilling created at 2009-05-08 00:57:04
 
 
 
@@ -330,7 +330,7 @@ archive/issue_comments_046459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46459",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -349,7 +349,7 @@ archive/issue_comments_046460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46460",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -367,7 +367,7 @@ archive/issue_comments_046461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46461",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

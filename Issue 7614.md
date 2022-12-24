@@ -3,7 +3,7 @@
 archive/issues_007614.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n\n\nOn Sun, Dec 6, 2009 at 4:51 PM, Michel <vdbergh@gmail.com> wrote:\n> Thanks for the reply. But no. The problem is not due to the fact that\n> the function has a singularity. Indeed.\n>\n> plot(20*log(abs((1+I*x)^4),10),(x,0,3))\n>\n> fails with the same error which is incomprehensible to me.\n>\n> On the other hand turning the expression into a lambda function made\n> it possible to plot it. Thanks for this practical advice.\n>\n> I wish someone could explain this rationally to me.\n>\n> 20*log(abs((1+I*x)^4),10)\n>\n> seems to be a perfectly fine symbolic expression so IMHO it should be\n> possible to plot it.\n\nThis is a bug.  There absolutely no reason that plotting should give the error\n   \"float() argument must be a string or a number\".\nWe could give an error about not being able to evaluate the function at certain\npoints.  However, the above error is not OK.    The error in fact is not in plotting\nbut in making a fast_float compiled version of the expression:\n\nsage: s = 20*log(abs((1+I*x)^4),10)\nsage: fast_float(s,x)\nTraceback (most recent call last):\n...\nTypeError: float() argument must be a string or a number\n\nIn fact, SAge *should* be using fast_callable, not fast_float.  This works just fine if you force it manually:\n\ns = 20*log(abs((1+I*x)^4),10)\nplot(fast_callable(s,vars=[x]), (x,0,3))\n[[nice picture as output]]\n\nMany, many thanks for your bug report.  It is bug reports from users like you that really helps Sage to be a first-rate mathematical software system. \n\n  }}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/7614\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n\n\nOn Sun, Dec 6, 2009 at 4:51 PM, Michel <vdbergh@gmail.com> wrote:\n> Thanks for the reply. But no. The problem is not due to the fact that\n> the function has a singularity. Indeed.\n>\n> plot(20*log(abs((1+I*x)^4),10),(x,0,3))\n>\n> fails with the same error which is incomprehensible to me.\n>\n> On the other hand turning the expression into a lambda function made\n> it possible to plot it. Thanks for this practical advice.\n>\n> I wish someone could explain this rationally to me.\n>\n> 20*log(abs((1+I*x)^4),10)\n>\n> seems to be a perfectly fine symbolic expression so IMHO it should be\n> possible to plot it.\n\nThis is a bug.  There absolutely no reason that plotting should give the error\n   \"float() argument must be a string or a number\".\nWe could give an error about not being able to evaluate the function at certain\npoints.  However, the above error is not OK.    The error in fact is not in plotting\nbut in making a fast_float compiled version of the expression:\n\nsage: s = 20*log(abs((1+I*x)^4),10)\nsage: fast_float(s,x)\nTraceback (most recent call last):\n...\nTypeError: float() argument must be a string or a number\n\nIn fact, SAge *should* be using fast_callable, not fast_float.  This works just fine if you force it manually:\n\ns = 20*log(abs((1+I*x)^4),10)\nplot(fast_callable(s,vars=[x]), (x,0,3))\n[[nice picture as output]]\n\nMany, many thanks for your bug report.  It is bug reports from users like you that really helps Sage to be a first-rate mathematical software system. \n\n  }}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/7614\n\n",
     "created_at": "2009-12-06T22:30:12Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_007614.json:
     "title": "change plot to use fast_callable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7614",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -140,7 +140,7 @@ archive/issue_comments_065018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7614#issuecomment-65018",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_065019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7614#issuecomment-65019",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -186,16 +186,16 @@ except:
 archive/issue_comments_065020.json:
 ```json
 {
-    "body": "Attachment [trac_7614.patch](tarball://root/attachments/some-uuid/ticket7614/trac_7614.patch) by was created at 2009-12-09 16:13:20",
+    "body": "Attachment [trac_7614.patch](tarball://root/attachments/some-uuid/ticket7614/trac_7614.patch) by @williamstein created at 2009-12-09 16:13:20",
     "created_at": "2009-12-09T16:13:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7614#issuecomment-65020",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7614.patch](tarball://root/attachments/some-uuid/ticket7614/trac_7614.patch) by was created at 2009-12-09 16:13:20
+Attachment [trac_7614.patch](tarball://root/attachments/some-uuid/ticket7614/trac_7614.patch) by @williamstein created at 2009-12-09 16:13:20
 
 
 
@@ -209,7 +209,7 @@ archive/issue_comments_065021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7614#issuecomment-65021",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_065022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7614#issuecomment-65022",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_065023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7614#issuecomment-65023",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_065024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7614#issuecomment-65024",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

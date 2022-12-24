@@ -3,7 +3,7 @@
 archive/issues_007054.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  was\n\nKeywords: sagenb notebook\n\n> 16:42 < williamstein> On \"upload a file\" at the bottom it should say \"Upload or Create File\" not just \"Upload\".\n\n> 16:42 < williamstein> trivial template change\n\nIssue created by migration from https://trac.sagemath.org/ticket/7054\n\n",
+    "body": "Assignee: tbd\n\nCC:  @williamstein\n\nKeywords: sagenb notebook\n\n> 16:42 < williamstein> On \"upload a file\" at the bottom it should say \"Upload or Create File\" not just \"Upload\".\n\n> 16:42 < williamstein> trivial template change\n\nIssue created by migration from https://trac.sagemath.org/ticket/7054\n\n",
     "created_at": "2009-09-28T17:56:32Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_007054.json:
     "title": "SageNB -- Minor aesthetic change in Upload or Create File",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7054",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 Assignee: tbd
 
-CC:  was
+CC:  @williamstein
 
 Keywords: sagenb notebook
 
@@ -43,7 +43,7 @@ archive/issue_comments_058392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7054#issuecomment-58392",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -56,16 +56,16 @@ Changed "Upload File" to "Upload or Create File"
 archive/issue_comments_058393.json:
 ```json
 {
-    "body": "Attachment [trac_7054-sagenb-upload-create-file.patch](tarball://root/attachments/some-uuid/ticket7054/trac_7054-sagenb-upload-create-file.patch) by mpatel created at 2009-09-28 18:43:36",
+    "body": "Attachment [trac_7054-sagenb-upload-create-file.patch](tarball://root/attachments/some-uuid/ticket7054/trac_7054-sagenb-upload-create-file.patch) by @qed777 created at 2009-09-28 18:43:36",
     "created_at": "2009-09-28T18:43:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7054#issuecomment-58393",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7054-sagenb-upload-create-file.patch](tarball://root/attachments/some-uuid/ticket7054/trac_7054-sagenb-upload-create-file.patch) by mpatel created at 2009-09-28 18:43:36
+Attachment [trac_7054-sagenb-upload-create-file.patch](tarball://root/attachments/some-uuid/ticket7054/trac_7054-sagenb-upload-create-file.patch) by @qed777 created at 2009-09-28 18:43:36
 
 
 
@@ -79,7 +79,7 @@ archive/issue_comments_058394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7054#issuecomment-58394",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_058395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7054#issuecomment-58395",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_058396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7054#issuecomment-58396",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_058397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7054#issuecomment-58397",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

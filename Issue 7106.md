@@ -98,7 +98,7 @@ archive/issue_comments_058830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7106#issuecomment-58830",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_058831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7106#issuecomment-58831",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_058832.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7106#issuecomment-58832",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_058833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7106#issuecomment-58833",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -165,16 +165,16 @@ Changing component from documentation to notebook.
 archive/issue_comments_058834.json:
 ```json
 {
-    "body": "Attachment [trac_7106-paren_match_doc.patch](tarball://root/attachments/some-uuid/ticket7106/trac_7106-paren_match_doc.patch) by mpatel created at 2009-11-01 12:12:26\n\nRebased for sagenb 0.4.  Apply only this patch to the sagenb repository.",
+    "body": "Attachment [trac_7106-paren_match_doc.patch](tarball://root/attachments/some-uuid/ticket7106/trac_7106-paren_match_doc.patch) by @qed777 created at 2009-11-01 12:12:26\n\nRebased for sagenb 0.4.  Apply only this patch to the sagenb repository.",
     "created_at": "2009-11-01T12:12:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7106#issuecomment-58834",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7106-paren_match_doc.patch](tarball://root/attachments/some-uuid/ticket7106/trac_7106-paren_match_doc.patch) by mpatel created at 2009-11-01 12:12:26
+Attachment [trac_7106-paren_match_doc.patch](tarball://root/attachments/some-uuid/ticket7106/trac_7106-paren_match_doc.patch) by @qed777 created at 2009-11-01 12:12:26
 
 Rebased for sagenb 0.4.  Apply only this patch to the sagenb repository.
 
@@ -190,7 +190,7 @@ archive/issue_comments_058835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7106#issuecomment-58835",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -203,16 +203,16 @@ The [attachment:trac_7106-paren_match_doc.patch new patch] applies to sagenb 0.4
 archive/issue_comments_058836.json:
 ```json
 {
-    "body": "Attachment [trac_7106-paren_match_doc_v2.patch](tarball://root/attachments/some-uuid/ticket7106/trac_7106-paren_match_doc_v2.patch) by mpatel created at 2009-11-01 13:29:47\n\nFix Sphinx warning, better spacing. Apply only this patch to the sagenb repository.",
+    "body": "Attachment [trac_7106-paren_match_doc_v2.patch](tarball://root/attachments/some-uuid/ticket7106/trac_7106-paren_match_doc_v2.patch) by @qed777 created at 2009-11-01 13:29:47\n\nFix Sphinx warning, better spacing. Apply only this patch to the sagenb repository.",
     "created_at": "2009-11-01T13:29:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7106#issuecomment-58836",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7106-paren_match_doc_v2.patch](tarball://root/attachments/some-uuid/ticket7106/trac_7106-paren_match_doc_v2.patch) by mpatel created at 2009-11-01 13:29:47
+Attachment [trac_7106-paren_match_doc_v2.patch](tarball://root/attachments/some-uuid/ticket7106/trac_7106-paren_match_doc_v2.patch) by @qed777 created at 2009-11-01 13:29:47
 
 Fix Sphinx warning, better spacing. Apply only this patch to the sagenb repository.
 
@@ -228,7 +228,7 @@ archive/issue_comments_058837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7106#issuecomment-58837",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_058838.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7106#issuecomment-58838",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_058839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7106#issuecomment-58839",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_058840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7106#issuecomment-58840",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_058841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7106#issuecomment-58841",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_058842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7106#issuecomment-58842",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -359,7 +359,7 @@ archive/issue_comments_058843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7106#issuecomment-58843",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

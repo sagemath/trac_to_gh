@@ -14,7 +14,7 @@ archive/issues_003895.json:
     "title": "sage-notebook-insecure ImportError",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3895",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: boothby
@@ -73,7 +73,7 @@ archive/issue_comments_027843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3895",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3895#issuecomment-27843",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -86,16 +86,16 @@ Changing status from new to assigned.
 archive/issue_comments_027844.json:
 ```json
 {
-    "body": "Changing assignee from boothby to malb.",
+    "body": "Changing assignee from boothby to @malb.",
     "created_at": "2009-01-25T19:01:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3895",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3895#issuecomment-27844",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from boothby to malb.
+Changing assignee from boothby to @malb.
 
 
 
@@ -109,7 +109,7 @@ archive/issue_comments_027845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3895",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3895#issuecomment-27845",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_027846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3895",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3895#issuecomment-27846",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

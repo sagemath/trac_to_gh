@@ -14,7 +14,7 @@ archive/issues_002917.json:
     "title": "internal server error in notebook sage-3.0.alpha4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2917",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: boothby
@@ -149,16 +149,16 @@ Changing priority from major to blocker.
 archive/issue_comments_020092.json:
 ```json
 {
-    "body": "Attachment [sage-2917.patch](tarball://root/attachments/some-uuid/ticket2917/sage-2917.patch) by was created at 2008-04-15 00:56:28",
+    "body": "Attachment [sage-2917.patch](tarball://root/attachments/some-uuid/ticket2917/sage-2917.patch) by @williamstein created at 2008-04-15 00:56:28",
     "created_at": "2008-04-15T00:56:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2917",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2917#issuecomment-20092",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2917.patch](tarball://root/attachments/some-uuid/ticket2917/sage-2917.patch) by was created at 2008-04-15 00:56:28
+Attachment [sage-2917.patch](tarball://root/attachments/some-uuid/ticket2917/sage-2917.patch) by @williamstein created at 2008-04-15 00:56:28
 
 
 
@@ -172,7 +172,7 @@ archive/issue_comments_020093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2917",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2917#issuecomment-20093",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

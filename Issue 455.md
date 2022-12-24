@@ -3,7 +3,7 @@
 archive/issues_000455.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jason mvngu\n\nReported by JMD:\n\nsystem : AMD64 X2 4200\n             Slamd64  (Slackware 11.0 for x86-64)\n             gcc 3.4.6\n\nHere it seems that /usr/local/lib/libfftw3.a on my system is used,\nmaybe instead of something inside sage-2.8/\n\nlog :   gcc: build/src.linux-x86_64-2.5/Lib/fftpack/_fftpackmodule.c\nsage_fortran -shared -shared build/temp.linux-x86_64-2.5/build/\nsrc.linux-x86_64-2.5/Lib/fftpack/_fftpackmodule.o build/temp.linux-\nx86_64-2.5/Lib/fftpack/src/zfft.o build/temp.linux-x86_64-2.5/Lib/\nfftpack/src/drfft.o build/temp.linux-x86_64-2.5/Lib/fftpack/src/\nzrfft.o build/temp.linux-x86_64-2.5/Lib/fftpack/src/zfftnd.o build/\ntemp.linux-x86_64-2.5/build/src.linux-x86_64-2.5/fortranobject.o -L/\nusr/local/lib -Lbuild/temp.linux-x86_64-2.5 -ldfftpack -lfftw3 -o\nbuild/lib.linux-x86_64-2.5/scipy/fftpack/_fftpack.so\nld: /usr/local/lib/libfftw3.a(mapflags.o): relocation R_X86_64_32\nagainst `a local symbol' can not be used when making a shared object;\nrecompile with -fPIC\n/usr/local/lib/libfftw3.a: ne peut lire les symboles: Mauvaise valeur\nld: /usr/local/lib/libfftw3.a(mapflags.o): relocation R_X86_64_32\nagainst `a local symbol' can not be used when making a shared object;\nrecompile with -fPIC\n/usr/local/lib/libfftw3.a: ne peut lire les symboles: Mauvaise valeur\nerror: Command \"sage_fortran -shared -shared build/temp.linux-\nx86_64-2.5/build/src.linux-x86_64-2.5/Lib/fftpack/_fftpackmodule.o\nbuild/temp.linux-x86_64-2.5/Lib/fftpack/src/zfft.o build/temp.linux-\nx86_64-2.5/Lib/fftpack/src/drfft.o build/temp.linux-x86_64-2.5/Lib/\nfftpack/src/zrfft.o build/temp.linux-x86_64-2.5/Lib/fftpack/src/\nzfftnd.o build/temp.linux-x86_64-2.5/build/src.linux-x86_64-2.5/\nfortranobject.o -L/usr/local/lib -Lbuild/temp.linux-x86_64-2.5 -\nldfftpack -lfftw3 -o build/lib.linux-x86_64-2.5/scipy/fftpack/\n_fftpack.so\" failed with exit status 1\nError building scipy. \n\nThe problem goes away when /usr/local/lib/libfftw3.a is moved.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/455\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout mvngu\n\nReported by JMD:\n\nsystem : AMD64 X2 4200\n             Slamd64  (Slackware 11.0 for x86-64)\n             gcc 3.4.6\n\nHere it seems that /usr/local/lib/libfftw3.a on my system is used,\nmaybe instead of something inside sage-2.8/\n\nlog :   gcc: build/src.linux-x86_64-2.5/Lib/fftpack/_fftpackmodule.c\nsage_fortran -shared -shared build/temp.linux-x86_64-2.5/build/\nsrc.linux-x86_64-2.5/Lib/fftpack/_fftpackmodule.o build/temp.linux-\nx86_64-2.5/Lib/fftpack/src/zfft.o build/temp.linux-x86_64-2.5/Lib/\nfftpack/src/drfft.o build/temp.linux-x86_64-2.5/Lib/fftpack/src/\nzrfft.o build/temp.linux-x86_64-2.5/Lib/fftpack/src/zfftnd.o build/\ntemp.linux-x86_64-2.5/build/src.linux-x86_64-2.5/fortranobject.o -L/\nusr/local/lib -Lbuild/temp.linux-x86_64-2.5 -ldfftpack -lfftw3 -o\nbuild/lib.linux-x86_64-2.5/scipy/fftpack/_fftpack.so\nld: /usr/local/lib/libfftw3.a(mapflags.o): relocation R_X86_64_32\nagainst `a local symbol' can not be used when making a shared object;\nrecompile with -fPIC\n/usr/local/lib/libfftw3.a: ne peut lire les symboles: Mauvaise valeur\nld: /usr/local/lib/libfftw3.a(mapflags.o): relocation R_X86_64_32\nagainst `a local symbol' can not be used when making a shared object;\nrecompile with -fPIC\n/usr/local/lib/libfftw3.a: ne peut lire les symboles: Mauvaise valeur\nerror: Command \"sage_fortran -shared -shared build/temp.linux-\nx86_64-2.5/build/src.linux-x86_64-2.5/Lib/fftpack/_fftpackmodule.o\nbuild/temp.linux-x86_64-2.5/Lib/fftpack/src/zfft.o build/temp.linux-\nx86_64-2.5/Lib/fftpack/src/drfft.o build/temp.linux-x86_64-2.5/Lib/\nfftpack/src/zrfft.o build/temp.linux-x86_64-2.5/Lib/fftpack/src/\nzfftnd.o build/temp.linux-x86_64-2.5/build/src.linux-x86_64-2.5/\nfortranobject.o -L/usr/local/lib -Lbuild/temp.linux-x86_64-2.5 -\nldfftpack -lfftw3 -o build/lib.linux-x86_64-2.5/scipy/fftpack/\n_fftpack.so\" failed with exit status 1\nError building scipy. \n\nThe problem goes away when /usr/local/lib/libfftw3.a is moved.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/455\n\n",
     "created_at": "2007-08-19T08:56:19Z",
     "labels": [
         "packages: standard",
@@ -17,9 +17,9 @@ archive/issues_000455.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jason mvngu
+CC:  @jasongrout mvngu
 
 Reported by JMD:
 
@@ -102,7 +102,7 @@ archive/issue_comments_002275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/455#issuecomment-2275",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_002277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/455#issuecomment-2277",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_002278.json:
     "issue": "https://github.com/sagemath/sagetest/issues/455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/455#issuecomment-2278",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_002279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/455#issuecomment-2279",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_002280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/455#issuecomment-2280",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_002281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/455#issuecomment-2281",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_002282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/455#issuecomment-2282",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

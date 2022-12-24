@@ -3,7 +3,7 @@
 archive/issues_004473.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4473\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4473\n\n",
     "created_at": "2008-11-09T03:13:41Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_004473.json:
     "title": "[with patch; needs review] loading file.sage that has a line \"load foo.py\" is broken due to a missing import",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4473",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  mhansen
+CC:  @mwhansen
 
 
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4473
 archive/issue_comments_033039.json:
 ```json
 {
-    "body": "Attachment [sage-4473.patch](tarball://root/attachments/some-uuid/ticket4473/sage-4473.patch) by was created at 2008-11-09 03:17:47",
+    "body": "Attachment [sage-4473.patch](tarball://root/attachments/some-uuid/ticket4473/sage-4473.patch) by @williamstein created at 2008-11-09 03:17:47",
     "created_at": "2008-11-09T03:17:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4473#issuecomment-33039",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-4473.patch](tarball://root/attachments/some-uuid/ticket4473/sage-4473.patch) by was created at 2008-11-09 03:17:47
+Attachment [sage-4473.patch](tarball://root/attachments/some-uuid/ticket4473/sage-4473.patch) by @williamstein created at 2008-11-09 03:17:47
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_033040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4473#issuecomment-33040",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

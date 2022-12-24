@@ -3,7 +3,7 @@
 archive/issues_001048.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: graphs\n\nBoost has a nice concept of \"filters\" of a graph.  They provide views into subsets of the vertices and/or edges of the graph, based on predicate functions.  That would be nice to have.\n\nSee [http://www.boost.org/libs/graph/doc/filtered_graph.html](http://www.boost.org/libs/graph/doc/filtered_graph.html)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1048\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nBoost has a nice concept of \"filters\" of a graph.  They provide views into subsets of the vertices and/or edges of the graph, based on predicate functions.  That would be nice to have.\n\nSee [http://www.boost.org/libs/graph/doc/filtered_graph.html](http://www.boost.org/libs/graph/doc/filtered_graph.html)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1048\n\n",
     "created_at": "2007-11-01T00:11:33Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001048.json:
     "title": "graphs: Create filtered views of graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1048",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: graphs
 
@@ -43,7 +43,7 @@ archive/issue_comments_006383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1048#issuecomment-6383",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_006384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1048#issuecomment-6384",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_006385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1048#issuecomment-6385",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_006209.json:
     "title": "fix flint",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6209",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -58,7 +58,7 @@ archive/issue_comments_049606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6209#issuecomment-49606",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_049607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6209#issuecomment-49607",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -89,16 +89,16 @@ I've made these changes and put them in http://sage.math.washington.edu/home/mha
 archive/issue_comments_049608.json:
 ```json
 {
-    "body": "Changing assignee from tbd to mhansen.",
+    "body": "Changing assignee from tbd to @mwhansen.",
     "created_at": "2009-06-04T17:53:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6209#issuecomment-49608",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tbd to mhansen.
+Changing assignee from tbd to @mwhansen.
 
 
 
@@ -130,7 +130,7 @@ archive/issue_comments_049610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6209#issuecomment-49610",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_049612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6209#issuecomment-49612",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_049613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6209#issuecomment-49613",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

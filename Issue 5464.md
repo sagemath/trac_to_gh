@@ -14,7 +14,7 @@ archive/issues_005464.json:
     "title": "installing Sage should build the documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5464",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: mabshoff
@@ -78,7 +78,7 @@ archive/issue_comments_042423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5464",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5464#issuecomment-42423",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

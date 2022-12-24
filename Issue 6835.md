@@ -14,7 +14,7 @@ archive/issues_006835.json:
     "title": "Inconsistent types for degree of finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6835",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 Assignee: tbd
@@ -62,7 +62,7 @@ archive/issue_comments_056359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6835#issuecomment-56359",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -75,16 +75,16 @@ Applies to 4.1.1
 archive/issue_comments_056360.json:
 ```json
 {
-    "body": "Attachment [trac_6835-finite-field-degree.patch](tarball://root/attachments/some-uuid/ticket6835/trac_6835-finite-field-degree.patch) by cremona created at 2009-08-28 11:24:59\n\nThe patch is very simple, just two lines changed (one for each type).  I tested all files in sage/rings.  After:\n\n```\nsage: k = GF(2,'b'); type(k); type(k.degree())\n<class 'sage.rings.finite_field_prime_modn.FiniteField_prime_modn'>\n<type 'sage.rings.integer.Integer'>\nsage: k = GF(2^10,'b'); type(k); type(k.degree())\n<type 'sage.rings.finite_field_givaro.FiniteField_givaro'>\n<type 'sage.rings.integer.Integer'>\nsage: k = GF(2^40,'b'); type(k); type(k.degree())\n<type 'sage.rings.finite_field_ntl_gf2e.FiniteField_ntl_gf2e'>\n<type 'sage.rings.integer.Integer'>\nsage: k = GF(3^40,'b'); type(k); type(k.degree())\n<class 'sage.rings.finite_field_ext_pari.FiniteField_ext_pari'>\n<type 'sage.rings.integer.Integer'>\n```\n",
+    "body": "Attachment [trac_6835-finite-field-degree.patch](tarball://root/attachments/some-uuid/ticket6835/trac_6835-finite-field-degree.patch) by @JohnCremona created at 2009-08-28 11:24:59\n\nThe patch is very simple, just two lines changed (one for each type).  I tested all files in sage/rings.  After:\n\n```\nsage: k = GF(2,'b'); type(k); type(k.degree())\n<class 'sage.rings.finite_field_prime_modn.FiniteField_prime_modn'>\n<type 'sage.rings.integer.Integer'>\nsage: k = GF(2^10,'b'); type(k); type(k.degree())\n<type 'sage.rings.finite_field_givaro.FiniteField_givaro'>\n<type 'sage.rings.integer.Integer'>\nsage: k = GF(2^40,'b'); type(k); type(k.degree())\n<type 'sage.rings.finite_field_ntl_gf2e.FiniteField_ntl_gf2e'>\n<type 'sage.rings.integer.Integer'>\nsage: k = GF(3^40,'b'); type(k); type(k.degree())\n<class 'sage.rings.finite_field_ext_pari.FiniteField_ext_pari'>\n<type 'sage.rings.integer.Integer'>\n```\n",
     "created_at": "2009-08-28T11:24:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6835#issuecomment-56360",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_6835-finite-field-degree.patch](tarball://root/attachments/some-uuid/ticket6835/trac_6835-finite-field-degree.patch) by cremona created at 2009-08-28 11:24:59
+Attachment [trac_6835-finite-field-degree.patch](tarball://root/attachments/some-uuid/ticket6835/trac_6835-finite-field-degree.patch) by @JohnCremona created at 2009-08-28 11:24:59
 
 The patch is very simple, just two lines changed (one for each type).  I tested all files in sage/rings.  After:
 

@@ -3,7 +3,7 @@
 archive/issues_001042.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe reset command is supposed to reset all variables etc., back to their defaults.  This is currently slightly broken, since the symbolic x doesn't get reset:\n\n```\nsage: reset()\nsage: x\nTraceback (most recent call last):\n...\nNameError: name 'x' is not defined\nsage: factor(90823048)\n2^3 * 11352881\n```\n\n\nI seem to recall implementing the symbolic being imported slightly differently, which is surely responsible for this bug. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1042\n\n",
+    "body": "Assignee: @williamstein\n\nThe reset command is supposed to reset all variables etc., back to their defaults.  This is currently slightly broken, since the symbolic x doesn't get reset:\n\n```\nsage: reset()\nsage: x\nTraceback (most recent call last):\n...\nNameError: name 'x' is not defined\nsage: factor(90823048)\n2^3 * 11352881\n```\n\n\nI seem to recall implementing the symbolic being imported slightly differently, which is surely responsible for this bug. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1042\n\n",
     "created_at": "2007-10-31T20:52:56Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_001042.json:
     "title": "reset() doesn't do what's claimed -- in particular the symbolic x is gone after doing reset() but shouldn't be",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1042",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The reset command is supposed to reset all variables etc., back to their defaults.  This is currently slightly broken, since the symbolic x doesn't get reset:
 
@@ -52,7 +52,7 @@ archive/issue_comments_006348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1042#issuecomment-6348",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -100,16 +100,16 @@ G never the key 'sage_mode' so none of the custom imports in all_cmdline and all
 archive/issue_comments_006349.json:
 ```json
 {
-    "body": "Attachment [trac1042.patch](tarball://root/attachments/some-uuid/ticket1042/trac1042.patch) by was created at 2007-11-03 21:02:18\n\nfixed by Mike Hansen and I.",
+    "body": "Attachment [trac1042.patch](tarball://root/attachments/some-uuid/ticket1042/trac1042.patch) by @williamstein created at 2007-11-03 21:02:18\n\nfixed by Mike Hansen and I.",
     "created_at": "2007-11-03T21:02:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1042#issuecomment-6349",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac1042.patch](tarball://root/attachments/some-uuid/ticket1042/trac1042.patch) by was created at 2007-11-03 21:02:18
+Attachment [trac1042.patch](tarball://root/attachments/some-uuid/ticket1042/trac1042.patch) by @williamstein created at 2007-11-03 21:02:18
 
 fixed by Mike Hansen and I.
 
@@ -125,7 +125,7 @@ archive/issue_comments_006350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1042#issuecomment-6350",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006935.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jason\n\nThere are a few issues that are left over from #5448, which at the very least should be documented.  None of them are major.\n\nContour plot - if fill=False and contours are grayscale, the axes could be misinterpreted\n\nContour plot - show(axes=False) and show(axes=True) seem to be identical on the last example\n\nPlotting - how well documented is the new axis behavior, where it does NOT intersect? This should be clear, e.g. the Riemann zeta example in plot.py looks funny, until you realize it's from 1 to 27. It still seems weird to me when it's that close, but I suppose it's okay as long as it is very very clear in documentation.\n\nAxis labels - should point out difference between ['x','y'] and ['$x$','$y$']. Some people might not like the LaTeXed? version\n\nWhen scientific notation comes into play is not always clear, and should be in the documentation - compare plot(x**2, 490,500) and plot(x**2,-490,500), which have the same \"height\" but only one gets e, presumably since it covers a larger range\n\nIssue created by migration from https://trac.sagemath.org/ticket/6935\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nThere are a few issues that are left over from #5448, which at the very least should be documented.  None of them are major.\n\nContour plot - if fill=False and contours are grayscale, the axes could be misinterpreted\n\nContour plot - show(axes=False) and show(axes=True) seem to be identical on the last example\n\nPlotting - how well documented is the new axis behavior, where it does NOT intersect? This should be clear, e.g. the Riemann zeta example in plot.py looks funny, until you realize it's from 1 to 27. It still seems weird to me when it's that close, but I suppose it's okay as long as it is very very clear in documentation.\n\nAxis labels - should point out difference between ['x','y'] and ['$x$','$y$']. Some people might not like the LaTeXed? version\n\nWhen scientific notation comes into play is not always clear, and should be in the documentation - compare plot(x**2, 490,500) and plot(x**2,-490,500), which have the same \"height\" but only one gets e, presumably since it covers a larger range\n\nIssue created by migration from https://trac.sagemath.org/ticket/6935\n\n",
     "created_at": "2009-09-15T17:39:04Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_006935.json:
     "title": "Improve documentation for plots with new axis code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6935",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jason
+CC:  @jasongrout
 
 There are a few issues that are left over from #5448, which at the very least should be documented.  None of them are major.
 
@@ -49,7 +49,7 @@ archive/issue_comments_057317.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6935",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6935#issuecomment-57317",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -64,16 +64,16 @@ Otherwise documentation has been updated for all these things as appropriate.
 archive/issue_comments_057318.json:
 ```json
 {
-    "body": "Attachment [trac_6935-mpl-upgrade-documentation.patch](tarball://root/attachments/some-uuid/ticket6935/trac_6935-mpl-upgrade-documentation.patch) by kcrisman created at 2009-10-05 18:05:18\n\nBased on 4.1.2.alpha4",
+    "body": "Attachment [trac_6935-mpl-upgrade-documentation.patch](tarball://root/attachments/some-uuid/ticket6935/trac_6935-mpl-upgrade-documentation.patch) by @kcrisman created at 2009-10-05 18:05:18\n\nBased on 4.1.2.alpha4",
     "created_at": "2009-10-05T18:05:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6935",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6935#issuecomment-57318",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6935-mpl-upgrade-documentation.patch](tarball://root/attachments/some-uuid/ticket6935/trac_6935-mpl-upgrade-documentation.patch) by kcrisman created at 2009-10-05 18:05:18
+Attachment [trac_6935-mpl-upgrade-documentation.patch](tarball://root/attachments/some-uuid/ticket6935/trac_6935-mpl-upgrade-documentation.patch) by @kcrisman created at 2009-10-05 18:05:18
 
 Based on 4.1.2.alpha4
 
@@ -89,7 +89,7 @@ archive/issue_comments_057319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6935",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6935#issuecomment-57319",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_057320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6935",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6935#issuecomment-57320",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_057321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6935",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6935#issuecomment-57321",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_057322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6935",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6935#issuecomment-57322",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

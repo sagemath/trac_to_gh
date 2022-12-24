@@ -3,7 +3,7 @@
 archive/issues_009240.json:
 ```json
 {
-    "body": "Assignee: tomc\n\nCC:  kcrisman\n\nKeywords: gamma function, full_simplify, factorial\n\nApplying full_simplify() to the gamma function sometimes causes an error.  This example works:\n\n\n```\nsage: gamma(4/3).full_simplify()\n1/3*gamma(1/3)\n```\n\n\nbut this example does not:\n\n\n```\nsage: gamma(1/3).full_simplify()\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1254, 0))\n\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/Users/tomc/sage-4.4.1/<ipython console> in <module>()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.simplify_full (sage/symbolic/expression.cpp:21549)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.simplify_factorial (sage/symbolic/expression.cpp:22240)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6332)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.NamedConvertMap._call_ (sage/structure/coerce_maps.c:4053)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/interfaces/maxima.pyc in _symbolic_(self, R)\n   1810             sqrt(2)\n   1811         \"\"\"\n-> 1812         return R(self._sage_())\n   1813 \n   1814     def __complex__(self):\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/interfaces/maxima.pyc in _sage_(self)\n   1791         import sage.calculus.calculus as calculus\n   1792         return calculus.symbolic_expression_from_maxima_string(self.name(),\n-> 1793                 maxima=self.parent())\n   1794 \n   1795     def _symbolic_(self, R):\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/calculus/calculus.pyc in symbolic_expression_from_maxima_string(x, equals_sub, maxima)\n   1524         # evaluation of maxima code are assumed pre-simplified\n   1525         is_simplified = True\n-> 1526         return symbolic_expression_from_string(s, syms, accept_sequence=True)\n   1527     except SyntaxError:\n   1528         raise TypeError, \"unable to make sense of Maxima expression '%s' in Sage\"%s\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/calculus/calculus.pyc in symbolic_expression_from_string(s, syms, accept_sequence)\n   1692             global _augmented_syms\n   1693             _augmented_syms = syms\n-> 1694             return parse_func(s)\n   1695         finally:\n   1696             _augmented_syms = {}\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.parse_sequence (sage/misc/parser.c:3855)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.parse_sequence (sage/misc/parser.c:3747)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.p_sequence (sage/misc/parser.c:4376)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.p_tuple (sage/misc/parser.c:5032)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.p_eqn (sage/misc/parser.c:5145)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.p_expr (sage/misc/parser.c:5465)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.p_term (sage/misc/parser.c:5690)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.p_factor (sage/misc/parser.c:6053)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.p_power (sage/misc/parser.c:6264)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/symbolic/function.so in sage.symbolic.function.GinacFunction.__call__ (sage/symbolic/function.cpp:6321)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.factorial (sage/symbolic/expression.cpp:20595)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/symbolic/pynac.so in sage.symbolic.pynac.py_factorial (sage/symbolic/pynac.cpp:9156)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/rings/arith.pyc in factorial(n, algorithm)\n    403     \"\"\"\n    404     if n < 0:\n--> 405         raise ValueError, \"factorial -- must be nonnegative\"\n    406     if algorithm == 'gmp':\n    407         return ZZ(n).factorial()\n\nValueError: factorial -- must be nonnegative\n```\n\n\nI am running Sage 4.4.1 on Mac OS X version 10.6 (Snow Leopard), built from source. But the second example also fails on Sage 4.3.5 on 64-bit Linux, built from source. Looking at the source code suggests that the second example will fail on all platforms.\n\nThe problem occurs because full_simplify() here runs the following commands in Maxima:\n\n\n```\n(%i1) minfactorial(factcomb(makefact(gamma(1/3))));\n                                       2\n(%o1)                               (- -)!\n                                       3\n```\n\n\nand then the Maxima interface converts this to Sage as factorial(-2/3).  This causes an error.  For Sage, factorial(x) is only defined if x is a non-negative integer, whereas for Maxima factorial(x) is equivalent to gamma(1+x) and so makes sense whenever x is not in {-1, -2, -3, ...}\n\nIssue created by migration from https://trac.sagemath.org/ticket/9240\n\n",
+    "body": "Assignee: tomc\n\nCC:  @kcrisman\n\nKeywords: gamma function, full_simplify, factorial\n\nApplying full_simplify() to the gamma function sometimes causes an error.  This example works:\n\n\n```\nsage: gamma(4/3).full_simplify()\n1/3*gamma(1/3)\n```\n\n\nbut this example does not:\n\n\n```\nsage: gamma(1/3).full_simplify()\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1254, 0))\n\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/Users/tomc/sage-4.4.1/<ipython console> in <module>()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.simplify_full (sage/symbolic/expression.cpp:21549)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.simplify_factorial (sage/symbolic/expression.cpp:22240)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6332)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.NamedConvertMap._call_ (sage/structure/coerce_maps.c:4053)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/interfaces/maxima.pyc in _symbolic_(self, R)\n   1810             sqrt(2)\n   1811         \"\"\"\n-> 1812         return R(self._sage_())\n   1813 \n   1814     def __complex__(self):\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/interfaces/maxima.pyc in _sage_(self)\n   1791         import sage.calculus.calculus as calculus\n   1792         return calculus.symbolic_expression_from_maxima_string(self.name(),\n-> 1793                 maxima=self.parent())\n   1794 \n   1795     def _symbolic_(self, R):\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/calculus/calculus.pyc in symbolic_expression_from_maxima_string(x, equals_sub, maxima)\n   1524         # evaluation of maxima code are assumed pre-simplified\n   1525         is_simplified = True\n-> 1526         return symbolic_expression_from_string(s, syms, accept_sequence=True)\n   1527     except SyntaxError:\n   1528         raise TypeError, \"unable to make sense of Maxima expression '%s' in Sage\"%s\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/calculus/calculus.pyc in symbolic_expression_from_string(s, syms, accept_sequence)\n   1692             global _augmented_syms\n   1693             _augmented_syms = syms\n-> 1694             return parse_func(s)\n   1695         finally:\n   1696             _augmented_syms = {}\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.parse_sequence (sage/misc/parser.c:3855)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.parse_sequence (sage/misc/parser.c:3747)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.p_sequence (sage/misc/parser.c:4376)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.p_tuple (sage/misc/parser.c:5032)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.p_eqn (sage/misc/parser.c:5145)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.p_expr (sage/misc/parser.c:5465)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.p_term (sage/misc/parser.c:5690)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.p_factor (sage/misc/parser.c:6053)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.p_power (sage/misc/parser.c:6264)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/symbolic/function.so in sage.symbolic.function.GinacFunction.__call__ (sage/symbolic/function.cpp:6321)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.factorial (sage/symbolic/expression.cpp:20595)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/symbolic/pynac.so in sage.symbolic.pynac.py_factorial (sage/symbolic/pynac.cpp:9156)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/rings/arith.pyc in factorial(n, algorithm)\n    403     \"\"\"\n    404     if n < 0:\n--> 405         raise ValueError, \"factorial -- must be nonnegative\"\n    406     if algorithm == 'gmp':\n    407         return ZZ(n).factorial()\n\nValueError: factorial -- must be nonnegative\n```\n\n\nI am running Sage 4.4.1 on Mac OS X version 10.6 (Snow Leopard), built from source. But the second example also fails on Sage 4.3.5 on 64-bit Linux, built from source. Looking at the source code suggests that the second example will fail on all platforms.\n\nThe problem occurs because full_simplify() here runs the following commands in Maxima:\n\n\n```\n(%i1) minfactorial(factcomb(makefact(gamma(1/3))));\n                                       2\n(%o1)                               (- -)!\n                                       3\n```\n\n\nand then the Maxima interface converts this to Sage as factorial(-2/3).  This causes an error.  For Sage, factorial(x) is only defined if x is a non-negative integer, whereas for Maxima factorial(x) is equivalent to gamma(1+x) and so makes sense whenever x is not in {-1, -2, -3, ...}\n\nIssue created by migration from https://trac.sagemath.org/ticket/9240\n\n",
     "created_at": "2010-06-15T03:24:18Z",
     "labels": [
         "symbolics",
@@ -19,7 +19,7 @@ archive/issues_009240.json:
 ```
 Assignee: tomc
 
-CC:  kcrisman
+CC:  @kcrisman
 
 Keywords: gamma function, full_simplify, factorial
 
@@ -168,7 +168,7 @@ archive/issue_comments_086896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9240#issuecomment-86896",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_086898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9240#issuecomment-86898",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_086899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9240#issuecomment-86899",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_086900.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9240#issuecomment-86900",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_086901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9240#issuecomment-86901",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -322,7 +322,7 @@ archive/issue_comments_086902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9240#issuecomment-86902",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -342,7 +342,7 @@ archive/issue_comments_086903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9240#issuecomment-86903",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -360,7 +360,7 @@ archive/issue_comments_086904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9240#issuecomment-86904",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -373,16 +373,16 @@ apply after trac_9240_full_simplify_gamma.patch
 archive/issue_comments_086905.json:
 ```json
 {
-    "body": "Attachment [trac_9240-factorial_evaluation.patch](tarball://root/attachments/some-uuid/ticket9240/trac_9240-factorial_evaluation.patch) by burcin created at 2011-05-24 19:20:03\n\nattachment:trac_9240-factorial_evaluation.patch adds further doctests and fixes for the evaluation of factorials. It should be applied after attachment:trac_9240_full_simplify_gamma.patch.\n\nMy changes depend on a small patch to pynac, where I somehow used && instead of bitwise and. This patch can be obtained from: \n\nhttps://bitbucket.org/burcin/pynac-patches/src/c3c5b3b8b1eb/bitwise.patch\n\nThis ticket now depends on a new pynac release, which should be coming soon.",
+    "body": "Attachment [trac_9240-factorial_evaluation.patch](tarball://root/attachments/some-uuid/ticket9240/trac_9240-factorial_evaluation.patch) by @burcin created at 2011-05-24 19:20:03\n\nattachment:trac_9240-factorial_evaluation.patch adds further doctests and fixes for the evaluation of factorials. It should be applied after attachment:trac_9240_full_simplify_gamma.patch.\n\nMy changes depend on a small patch to pynac, where I somehow used && instead of bitwise and. This patch can be obtained from: \n\nhttps://bitbucket.org/burcin/pynac-patches/src/c3c5b3b8b1eb/bitwise.patch\n\nThis ticket now depends on a new pynac release, which should be coming soon.",
     "created_at": "2011-05-24T19:20:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9240#issuecomment-86905",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9240-factorial_evaluation.patch](tarball://root/attachments/some-uuid/ticket9240/trac_9240-factorial_evaluation.patch) by burcin created at 2011-05-24 19:20:03
+Attachment [trac_9240-factorial_evaluation.patch](tarball://root/attachments/some-uuid/ticket9240/trac_9240-factorial_evaluation.patch) by @burcin created at 2011-05-24 19:20:03
 
 attachment:trac_9240-factorial_evaluation.patch adds further doctests and fixes for the evaluation of factorials. It should be applied after attachment:trac_9240_full_simplify_gamma.patch.
 
@@ -404,7 +404,7 @@ archive/issue_comments_086906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9240#issuecomment-86906",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -422,7 +422,7 @@ archive/issue_comments_086907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9240#issuecomment-86907",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -442,7 +442,7 @@ archive/issue_comments_086908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9240#issuecomment-86908",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -516,7 +516,7 @@ archive/issue_comments_086909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9240#issuecomment-86909",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -569,7 +569,7 @@ archive/issue_comments_086910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9240#issuecomment-86910",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -644,7 +644,7 @@ archive/issue_comments_086911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9240#issuecomment-86911",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -662,7 +662,7 @@ archive/issue_comments_086912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9240#issuecomment-86912",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -707,7 +707,7 @@ archive/issue_comments_086913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9240#issuecomment-86913",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

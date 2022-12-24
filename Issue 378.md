@@ -3,7 +3,7 @@
 archive/issues_000378.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  rossk\n\n\n```\nUtpal Sarkar <doetoe@gmail.com> \t\nto sage-support\n\t\nshow details\n\t 9:17 am (7 minutes ago) \n\nI thought it could work something like this:\nAs a command line option it could be like an include path or a library\npath to gcc, i.e. every option \"-I path\" (or any other name of the\nswitch, this is the one for includes in gcc) is added to the existing\ndefault list of paths. This could be useful e.g. when calling sage\nfrom a launcher, in which case you could put these options in the\nlauncher so that it will always be called with these paths when ran\nfrom the launcher.\nAs an environment variable it could work just like LD_LIBRARY_PATH,\nPYTHONPATH or MAGMA_PATH: a list of paths separated by colons (or some\nother separator) whose constituents are also added to the existing\nlist of paths. For reasons of implementation, maybe it is easier to\njust use PYTHONPATH for sage files as well.\nIf this list would be directly accessible from sage, as in python\nwhere it is stored in sys.path (which is read/write), and moreover\nthere were the possibility to specify a startup script which would be\nexecuted just before entering the session (like in magma when called\nwith -s, or in bash and many other linux programs where it is a\nstandard file .bashrc), then you could also append your paths to the\nstandard list in the startup script.\nWhen calling \"load\" or \"attach\" from sage with a non-absolute path, it\nwould cycle through this list, concatenating the paths with the string\npassed to load or attach, until it finds the file.\nIf you consider this useful, and you could implement any of these in\nsage, that would be great!\n\nThanks,\n\nUtpal\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/378\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  rossk\n\n\n```\nUtpal Sarkar <doetoe@gmail.com> \t\nto sage-support\n\t\nshow details\n\t 9:17 am (7 minutes ago) \n\nI thought it could work something like this:\nAs a command line option it could be like an include path or a library\npath to gcc, i.e. every option \"-I path\" (or any other name of the\nswitch, this is the one for includes in gcc) is added to the existing\ndefault list of paths. This could be useful e.g. when calling sage\nfrom a launcher, in which case you could put these options in the\nlauncher so that it will always be called with these paths when ran\nfrom the launcher.\nAs an environment variable it could work just like LD_LIBRARY_PATH,\nPYTHONPATH or MAGMA_PATH: a list of paths separated by colons (or some\nother separator) whose constituents are also added to the existing\nlist of paths. For reasons of implementation, maybe it is easier to\njust use PYTHONPATH for sage files as well.\nIf this list would be directly accessible from sage, as in python\nwhere it is stored in sys.path (which is read/write), and moreover\nthere were the possibility to specify a startup script which would be\nexecuted just before entering the session (like in magma when called\nwith -s, or in bash and many other linux programs where it is a\nstandard file .bashrc), then you could also append your paths to the\nstandard list in the startup script.\nWhen calling \"load\" or \"attach\" from sage with a non-absolute path, it\nwould cycle through this list, concatenating the paths with the string\npassed to load or attach, until it finds the file.\nIf you consider this useful, and you could implement any of these in\nsage, that would be great!\n\nThanks,\n\nUtpal\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/378\n\n",
     "created_at": "2007-05-25T16:28:34Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_000378.json:
     "title": "user-specified sage load path",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/378",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  rossk
 
@@ -79,7 +79,7 @@ archive/issue_comments_001799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/378#issuecomment-1799",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_001800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/378#issuecomment-1800",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_001801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/378#issuecomment-1801",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_001802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/378#issuecomment-1802",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_001803.json:
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/378#issuecomment-1803",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -164,16 +164,16 @@ Changing status from new to needs_review.
 archive/issue_comments_001804.json:
 ```json
 {
-    "body": "Attachment [trac_378-load_attach_path.patch](tarball://root/attachments/some-uuid/ticket378/trac_378-load_attach_path.patch) by mpatel created at 2010-02-16 00:22:23\n\nFeel free to improve the patch!",
+    "body": "Attachment [trac_378-load_attach_path.patch](tarball://root/attachments/some-uuid/ticket378/trac_378-load_attach_path.patch) by @qed777 created at 2010-02-16 00:22:23\n\nFeel free to improve the patch!",
     "created_at": "2010-02-16T00:22:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/378#issuecomment-1804",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_378-load_attach_path.patch](tarball://root/attachments/some-uuid/ticket378/trac_378-load_attach_path.patch) by mpatel created at 2010-02-16 00:22:23
+Attachment [trac_378-load_attach_path.patch](tarball://root/attachments/some-uuid/ticket378/trac_378-load_attach_path.patch) by @qed777 created at 2010-02-16 00:22:23
 
 Feel free to improve the patch!
 
@@ -189,7 +189,7 @@ archive/issue_comments_001805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/378#issuecomment-1805",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_001806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/378#issuecomment-1806",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_001807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/378#issuecomment-1807",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_001808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/378#issuecomment-1808",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -256,16 +256,16 @@ Should we add an option (`recurse=False`?) that makes `load` and `attach` search
 archive/issue_comments_001809.json:
 ```json
 {
-    "body": "Attachment [trac_378-load_attach_path.2.patch](tarball://root/attachments/some-uuid/ticket378/trac_378-load_attach_path.2.patch) by mpatel created at 2010-02-20 23:49:33\n\nMore examples.  Handle absolute paths.  Replaces previous.",
+    "body": "Attachment [trac_378-load_attach_path.2.patch](tarball://root/attachments/some-uuid/ticket378/trac_378-load_attach_path.2.patch) by @qed777 created at 2010-02-20 23:49:33\n\nMore examples.  Handle absolute paths.  Replaces previous.",
     "created_at": "2010-02-20T23:49:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/378#issuecomment-1809",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_378-load_attach_path.2.patch](tarball://root/attachments/some-uuid/ticket378/trac_378-load_attach_path.2.patch) by mpatel created at 2010-02-20 23:49:33
+Attachment [trac_378-load_attach_path.2.patch](tarball://root/attachments/some-uuid/ticket378/trac_378-load_attach_path.2.patch) by @qed777 created at 2010-02-20 23:49:33
 
 More examples.  Handle absolute paths.  Replaces previous.
 
@@ -281,7 +281,7 @@ archive/issue_comments_001810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/378#issuecomment-1810",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_001811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/378#issuecomment-1811",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_001812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/378#issuecomment-1812",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -335,7 +335,7 @@ archive/issue_comments_001813.json:
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/378#issuecomment-1813",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -353,7 +353,7 @@ archive/issue_comments_001814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/378#issuecomment-1814",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -374,7 +374,7 @@ archive/issue_comments_001815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/378#issuecomment-1815",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -410,7 +410,7 @@ archive/issue_comments_001817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/378#issuecomment-1817",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -439,7 +439,7 @@ archive/issue_comments_001818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/378#issuecomment-1818",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -664,7 +664,7 @@ archive/issue_comments_001827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/378#issuecomment-1827",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -722,7 +722,7 @@ archive/issue_comments_001828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/378#issuecomment-1828",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -989,7 +989,7 @@ archive/issue_comments_001839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/378#issuecomment-1839",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

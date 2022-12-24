@@ -3,7 +3,7 @@
 archive/issues_000358.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe function `padic_height_pairing_matrix()` is a bit lazy. It should do less work along the diagonal. e.g. for rank 2, if the generators are P and Q, it computes h(P), h(Q), h(P+Q), h(P+P), h(Q+Q). Clearly the last two are silly.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/358\n\n",
+    "body": "Assignee: @williamstein\n\nThe function `padic_height_pairing_matrix()` is a bit lazy. It should do less work along the diagonal. e.g. for rank 2, if the generators are P and Q, it computes h(P), h(Q), h(P+Q), h(P+P), h(Q+Q). Clearly the last two are silly.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/358\n\n",
     "created_at": "2007-04-25T22:39:16Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_000358.json:
     "user": "dmharvey"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The function `padic_height_pairing_matrix()` is a bit lazy. It should do less work along the diagonal. e.g. for rank 2, if the generators are P and Q, it computes h(P), h(Q), h(P+Q), h(P+P), h(Q+Q). Clearly the last two are silly.
 
@@ -33,16 +33,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/358
 archive/issue_comments_001726.json:
 ```json
 {
-    "body": "Attachment [trac_358.patch](tarball://root/attachments/some-uuid/ticket358/trac_358.patch) by cremona created at 2008-04-06 14:56:05\n\nDone.  Patch based on 3.0.alpha1",
+    "body": "Attachment [trac_358.patch](tarball://root/attachments/some-uuid/ticket358/trac_358.patch) by @JohnCremona created at 2008-04-06 14:56:05\n\nDone.  Patch based on 3.0.alpha1",
     "created_at": "2008-04-06T14:56:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/358#issuecomment-1726",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_358.patch](tarball://root/attachments/some-uuid/ticket358/trac_358.patch) by cremona created at 2008-04-06 14:56:05
+Attachment [trac_358.patch](tarball://root/attachments/some-uuid/ticket358/trac_358.patch) by @JohnCremona created at 2008-04-06 14:56:05
 
 Done.  Patch based on 3.0.alpha1
 
@@ -76,7 +76,7 @@ archive/issue_comments_001728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/358#issuecomment-1728",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

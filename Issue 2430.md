@@ -14,7 +14,7 @@ archive/issues_002430.json:
     "title": "is_EuclideanDomain() gives wrong answers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2430",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 Assignee: mabshoff
@@ -68,7 +68,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2430
 archive/issue_comments_016440.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to was.",
+    "body": "Changing assignee from mabshoff to @williamstein.",
     "created_at": "2008-03-09T00:09:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2430",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_016440.json:
 }
 ```
 
-Changing assignee from mabshoff to was.
+Changing assignee from mabshoff to @williamstein.
 
 
 
@@ -104,16 +104,16 @@ Changing component from Cygwin to linear algebra.
 archive/issue_comments_016442.json:
 ```json
 {
-    "body": "Changing assignee from was to malb.",
+    "body": "Changing assignee from @williamstein to @malb.",
     "created_at": "2008-03-16T02:29:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2430#issuecomment-16442",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from was to malb.
+Changing assignee from @williamstein to @malb.
 
 
 
@@ -127,7 +127,7 @@ archive/issue_comments_016443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2430#issuecomment-16443",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -140,16 +140,16 @@ Changing component from linear algebra to commutative algebra.
 archive/issue_comments_016444.json:
 ```json
 {
-    "body": "Remove assignee malb.",
+    "body": "Remove assignee @malb.",
     "created_at": "2008-06-03T14:20:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2430#issuecomment-16444",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Remove assignee malb.
+Remove assignee @malb.
 
 
 
@@ -163,7 +163,7 @@ archive/issue_comments_016445.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2430#issuecomment-16445",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

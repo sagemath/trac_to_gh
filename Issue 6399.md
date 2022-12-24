@@ -251,7 +251,7 @@ archive/issue_comments_051406.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6399",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6399#issuecomment-51406",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

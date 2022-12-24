@@ -3,7 +3,7 @@
 archive/issues_006442.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  mjo\n\nKeywords: det, determinant, IndexError\n\nOn some occasions, the call A.det() for a matrix A results in an error, namely:\n\n    IndexError: list index out of range\n\nThe error occurs during the dictionary lookup.  It seems that rather than finding no item (and hence creating a new one and then computing determinant), an empty item D is found and indexing into D results in the error.\n\nIf run into this strange problem twice during the SAGE Days 16.  I've attached an example file to this email, which contains a saved matrix.  The code\n\n    sage: A = load(\"DetBugMatrix.sobj\")\n    sage: A.det()\n\nshould trigger the problem.  If I recall correctly, I obtained the matrix from the following code\n\n    sage: R = Zp(p=5,prec=3,type=\"capped-abs\",print_mode=\"series\")\n    sage: A = random_matrix(R, 10, 10)\n\nStrangely enough (although perhaps not that strange after checking that the error happens during the lookup), the call A.copy().det() returns the determinant without any problems.\n\nI have no clue as to how one could systematically reproduce the bug.\n\nIn case it may help, I downloaded SAGE 4.0.2 and built it locally.  The machine used is a Lenovo T500 laptop with two intel centrino, running Ubuntu.  If there's any further information that would help, please let me know.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6442\n\n",
+    "body": "Assignee: somebody\n\nCC:  @orlitzky\n\nKeywords: det, determinant, IndexError\n\nOn some occasions, the call A.det() for a matrix A results in an error, namely:\n\n    IndexError: list index out of range\n\nThe error occurs during the dictionary lookup.  It seems that rather than finding no item (and hence creating a new one and then computing determinant), an empty item D is found and indexing into D results in the error.\n\nIf run into this strange problem twice during the SAGE Days 16.  I've attached an example file to this email, which contains a saved matrix.  The code\n\n    sage: A = load(\"DetBugMatrix.sobj\")\n    sage: A.det()\n\nshould trigger the problem.  If I recall correctly, I obtained the matrix from the following code\n\n    sage: R = Zp(p=5,prec=3,type=\"capped-abs\",print_mode=\"series\")\n    sage: A = random_matrix(R, 10, 10)\n\nStrangely enough (although perhaps not that strange after checking that the error happens during the lookup), the call A.copy().det() returns the determinant without any problems.\n\nI have no clue as to how one could systematically reproduce the bug.\n\nIn case it may help, I downloaded SAGE 4.0.2 and built it locally.  The machine used is a Lenovo T500 laptop with two intel centrino, running Ubuntu.  If there's any further information that would help, please let me know.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6442\n\n",
     "created_at": "2009-06-28T18:23:15Z",
     "labels": [
         "algebra",
@@ -19,7 +19,7 @@ archive/issues_006442.json:
 ```
 Assignee: somebody
 
-CC:  mjo
+CC:  @orlitzky
 
 Keywords: det, determinant, IndexError
 
@@ -74,16 +74,16 @@ Matrix to trigger the IndexError
 archive/issue_comments_051755.json:
 ```json
 {
-    "body": "Attachment [DetBugMatrix.sobj](tarball://root/attachments/some-uuid/ticket6442/DetBugMatrix.sobj) by davidloeffler created at 2009-07-05 08:09:47",
+    "body": "Attachment [DetBugMatrix.sobj](tarball://root/attachments/some-uuid/ticket6442/DetBugMatrix.sobj) by @loefflerd created at 2009-07-05 08:09:47",
     "created_at": "2009-07-05T08:09:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6442#issuecomment-51755",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [DetBugMatrix.sobj](tarball://root/attachments/some-uuid/ticket6442/DetBugMatrix.sobj) by davidloeffler created at 2009-07-05 08:09:47
+Attachment [DetBugMatrix.sobj](tarball://root/attachments/some-uuid/ticket6442/DetBugMatrix.sobj) by @loefflerd created at 2009-07-05 08:09:47
 
 
 
@@ -97,7 +97,7 @@ archive/issue_comments_051756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6442#issuecomment-51756",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_051757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6442#issuecomment-51757",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_051758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6442#issuecomment-51758",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_051759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6442#issuecomment-51759",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_051760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6442#issuecomment-51760",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_051761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6442#issuecomment-51761",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_051762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6442#issuecomment-51762",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_051763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6442#issuecomment-51763",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_051764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6442#issuecomment-51764",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -343,7 +343,7 @@ archive/issue_comments_051765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6442#issuecomment-51765",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -365,7 +365,7 @@ archive/issue_comments_051766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6442#issuecomment-51766",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -383,7 +383,7 @@ archive/issue_comments_051767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6442#issuecomment-51767",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -408,7 +408,7 @@ archive/issue_comments_051768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6442#issuecomment-51768",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -428,7 +428,7 @@ archive/issue_comments_051769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6442#issuecomment-51769",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -441,16 +441,16 @@ Updated patch with simpler test case and a better comment.
 archive/issue_comments_051770.json:
 ```json
 {
-    "body": "Attachment [sage-trac_6442.patch](tarball://root/attachments/some-uuid/ticket6442/sage-trac_6442.patch) by mjo created at 2012-01-10 15:28:01\n\nI just updated the patch with your test case.\n\nI moved the \"Cache the result\" comment to where it belongs, but also added a comment above the code that creates the dictionary, explaining why it occurs near the end of the function.",
+    "body": "Attachment [sage-trac_6442.patch](tarball://root/attachments/some-uuid/ticket6442/sage-trac_6442.patch) by @orlitzky created at 2012-01-10 15:28:01\n\nI just updated the patch with your test case.\n\nI moved the \"Cache the result\" comment to where it belongs, but also added a comment above the code that creates the dictionary, explaining why it occurs near the end of the function.",
     "created_at": "2012-01-10T15:28:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6442#issuecomment-51770",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
-Attachment [sage-trac_6442.patch](tarball://root/attachments/some-uuid/ticket6442/sage-trac_6442.patch) by mjo created at 2012-01-10 15:28:01
+Attachment [sage-trac_6442.patch](tarball://root/attachments/some-uuid/ticket6442/sage-trac_6442.patch) by @orlitzky created at 2012-01-10 15:28:01
 
 I just updated the patch with your test case.
 
@@ -468,7 +468,7 @@ archive/issue_comments_051771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6442#issuecomment-51771",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -486,7 +486,7 @@ archive/issue_comments_051772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6442#issuecomment-51772",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -506,7 +506,7 @@ archive/issue_comments_051773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6442#issuecomment-51773",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -526,7 +526,7 @@ archive/issue_comments_051774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6442#issuecomment-51774",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

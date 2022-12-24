@@ -3,7 +3,7 @@
 archive/issues_001119.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis should work:\n\n```\nsage: k.<a> = GF(2^5)\nsage: E = EllipticCurve(k,[k.random_element() for _ in range(5)])\nsage: E\nElliptic Curve defined by y^2 + (a^3+1)*x*y + (a^4+a^3+a)*y = x^3 +\n(a^4+a^3+a^2+a)*x^2 + (a^4+a^2+a+1)*x + a^2 over Finite Field in a of\nsize 2^5\nsage: E.random_element()\nException (click to the left for traceback):\n...\nZeroDivisionError: division by zero in finite field.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1119\n\n",
+    "body": "Assignee: @williamstein\n\nThis should work:\n\n```\nsage: k.<a> = GF(2^5)\nsage: E = EllipticCurve(k,[k.random_element() for _ in range(5)])\nsage: E\nElliptic Curve defined by y^2 + (a^3+1)*x*y + (a^4+a^3+a)*y = x^3 +\n(a^4+a^3+a^2+a)*x^2 + (a^4+a^2+a+1)*x + a^2 over Finite Field in a of\nsize 2^5\nsage: E.random_element()\nException (click to the left for traceback):\n...\nZeroDivisionError: division by zero in finite field.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1119\n\n",
     "created_at": "2007-11-07T15:46:20Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_001119.json:
     "title": "EllipticCurve.random_element for char=2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1119",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This should work:
 
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1119
 archive/issue_comments_006760.json:
 ```json
 {
-    "body": "Changing assignee from was to malb.",
+    "body": "Changing assignee from @williamstein to @malb.",
     "created_at": "2007-11-08T16:59:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1119#issuecomment-6760",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from was to malb.
+Changing assignee from @williamstein to @malb.
 
 
 
@@ -69,7 +69,7 @@ archive/issue_comments_006761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1119#issuecomment-6761",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_006762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1119#issuecomment-6762",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -118,16 +118,16 @@ Attachment [ell_gf2_random.patch](tarball://root/attachments/some-uuid/ticket111
 archive/issue_comments_006764.json:
 ```json
 {
-    "body": "Attachment [ell_gf2_random2.patch](tarball://root/attachments/some-uuid/ticket1119/ell_gf2_random2.patch) by robertwb created at 2007-11-29 22:03:37\n\nGiven E defined by f(x,y) = 0, the patch assumed that there were always exactly zero or two values of y for every x, which is not true. I've attached a patch fixing this issue. \n\nAlso, in the characteristic > 2 case, it never considered the 'negative' square-root. I changed this too. \n\nOtherwise, the patch looks good.",
+    "body": "Attachment [ell_gf2_random2.patch](tarball://root/attachments/some-uuid/ticket1119/ell_gf2_random2.patch) by @robertwb created at 2007-11-29 22:03:37\n\nGiven E defined by f(x,y) = 0, the patch assumed that there were always exactly zero or two values of y for every x, which is not true. I've attached a patch fixing this issue. \n\nAlso, in the characteristic > 2 case, it never considered the 'negative' square-root. I changed this too. \n\nOtherwise, the patch looks good.",
     "created_at": "2007-11-29T22:03:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1119#issuecomment-6764",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [ell_gf2_random2.patch](tarball://root/attachments/some-uuid/ticket1119/ell_gf2_random2.patch) by robertwb created at 2007-11-29 22:03:37
+Attachment [ell_gf2_random2.patch](tarball://root/attachments/some-uuid/ticket1119/ell_gf2_random2.patch) by @robertwb created at 2007-11-29 22:03:37
 
 Given E defined by f(x,y) = 0, the patch assumed that there were always exactly zero or two values of y for every x, which is not true. I've attached a patch fixing this issue. 
 
@@ -147,7 +147,7 @@ archive/issue_comments_006765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1119#issuecomment-6765",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

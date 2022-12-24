@@ -3,7 +3,7 @@
 archive/issues_006800.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  sage-combinat mantepse\n\nNew code that implements lazy power and Laurant series.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6800\n\n",
+    "body": "Assignee: @burcin\n\nCC:  sage-combinat @mantepse\n\nNew code that implements lazy power and Laurant series.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6800\n\n",
     "created_at": "2009-08-22T07:32:14Z",
     "labels": [
         "calculus",
@@ -17,9 +17,9 @@ archive/issues_006800.json:
     "user": "Henryk.Trappmann"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  sage-combinat mantepse
+CC:  sage-combinat @mantepse
 
 New code that implements lazy power and Laurant series.
 
@@ -59,7 +59,7 @@ archive/issue_comments_055994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6800#issuecomment-55994",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_055995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6800#issuecomment-55995",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_055996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6800#issuecomment-55996",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_055997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6800#issuecomment-55997",
-    "user": "mantepse"
+    "user": "@mantepse"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_055998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6800#issuecomment-55998",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_055999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6800#issuecomment-55999",
-    "user": "mantepse"
+    "user": "@mantepse"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_056000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6800#issuecomment-56000",
-    "user": "mantepse"
+    "user": "@mantepse"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_056001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6800#issuecomment-56001",
-    "user": "mantepse"
+    "user": "@mantepse"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_056002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6800#issuecomment-56002",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_002444.json:
     "title": "[with patch, needs review] add UTF-8 support to sage -t",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2444",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2444
 archive/issue_comments_016527.json:
 ```json
 {
-    "body": "Attachment [utf8-sage-test.patch](tarball://root/attachments/some-uuid/ticket2444/utf8-sage-test.patch) by rlm created at 2008-03-12 05:18:39",
+    "body": "Attachment [utf8-sage-test.patch](tarball://root/attachments/some-uuid/ticket2444/utf8-sage-test.patch) by @rlmill created at 2008-03-12 05:18:39",
     "created_at": "2008-03-12T05:18:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2444#issuecomment-16527",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [utf8-sage-test.patch](tarball://root/attachments/some-uuid/ticket2444/utf8-sage-test.patch) by rlm created at 2008-03-12 05:18:39
+Attachment [utf8-sage-test.patch](tarball://root/attachments/some-uuid/ticket2444/utf8-sage-test.patch) by @rlmill created at 2008-03-12 05:18:39
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_016528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2444#issuecomment-16528",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

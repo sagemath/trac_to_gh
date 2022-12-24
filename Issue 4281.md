@@ -3,7 +3,7 @@
 archive/issues_004281.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis is for the file ell_tate_curve.py. I was unable to doctest the _height function, which is used\nas a closure. Also, the missing loads(dumps(..)) test fails:\n\n```\nsage: e = EllipticCurve('130a1')\nsage: eq = e.tate_curve(5)\nsage: eq == loads(dumps(eq))\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4281\n\n",
+    "body": "Assignee: @williamstein\n\nThis is for the file ell_tate_curve.py. I was unable to doctest the _height function, which is used\nas a closure. Also, the missing loads(dumps(..)) test fails:\n\n```\nsage: e = EllipticCurve('130a1')\nsage: eq = e.tate_curve(5)\nsage: eq == loads(dumps(eq))\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4281\n\n",
     "created_at": "2008-10-14T13:47:05Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_004281.json:
     "title": "[with patch, needs review] elliptic curve doctest coverage (part 4)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4281",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This is for the file ell_tate_curve.py. I was unable to doctest the _height function, which is used
 as a closure. Also, the missing loads(dumps(..)) test fails:
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4281
 archive/issue_comments_031314.json:
 ```json
 {
-    "body": "Attachment [trac_4281.patch](tarball://root/attachments/some-uuid/ticket4281/trac_4281.patch) by zimmerma created at 2008-10-14 13:49:50",
+    "body": "Attachment [trac_4281.patch](tarball://root/attachments/some-uuid/ticket4281/trac_4281.patch) by @zimmermann6 created at 2008-10-14 13:49:50",
     "created_at": "2008-10-14T13:49:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4281",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4281#issuecomment-31314",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [trac_4281.patch](tarball://root/attachments/some-uuid/ticket4281/trac_4281.patch) by zimmerma created at 2008-10-14 13:49:50
+Attachment [trac_4281.patch](tarball://root/attachments/some-uuid/ticket4281/trac_4281.patch) by @zimmermann6 created at 2008-10-14 13:49:50
 
 
 
@@ -59,16 +59,16 @@ Attachment [trac_4281.patch](tarball://root/attachments/some-uuid/ticket4281/tra
 archive/issue_comments_031315.json:
 ```json
 {
-    "body": "Attachment [trac_4281.patch2](tarball://root/attachments/some-uuid/ticket4281/trac_4281.patch2) by zimmerma created at 2008-10-14 14:00:49",
+    "body": "Attachment [trac_4281.patch2](tarball://root/attachments/some-uuid/ticket4281/trac_4281.patch2) by @zimmermann6 created at 2008-10-14 14:00:49",
     "created_at": "2008-10-14T14:00:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4281",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4281#issuecomment-31315",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [trac_4281.patch2](tarball://root/attachments/some-uuid/ticket4281/trac_4281.patch2) by zimmerma created at 2008-10-14 14:00:49
+Attachment [trac_4281.patch2](tarball://root/attachments/some-uuid/ticket4281/trac_4281.patch2) by @zimmermann6 created at 2008-10-14 14:00:49
 
 
 
@@ -82,7 +82,7 @@ archive/issue_comments_031316.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4281",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4281#issuecomment-31316",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_031317.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4281",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4281#issuecomment-31317",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_031318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4281",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4281#issuecomment-31318",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_031319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4281",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4281#issuecomment-31319",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -163,16 +163,16 @@ False
 archive/issue_comments_031320.json:
 ```json
 {
-    "body": "Attachment [4281-tate-pickle.patch](tarball://root/attachments/some-uuid/ticket4281/4281-tate-pickle.patch) by robertwb created at 2008-10-18 17:02:45\n\nYep, sorry, I posted the wrong patch. I've replaced it now.",
+    "body": "Attachment [4281-tate-pickle.patch](tarball://root/attachments/some-uuid/ticket4281/4281-tate-pickle.patch) by @robertwb created at 2008-10-18 17:02:45\n\nYep, sorry, I posted the wrong patch. I've replaced it now.",
     "created_at": "2008-10-18T17:02:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4281",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4281#issuecomment-31320",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4281-tate-pickle.patch](tarball://root/attachments/some-uuid/ticket4281/4281-tate-pickle.patch) by robertwb created at 2008-10-18 17:02:45
+Attachment [4281-tate-pickle.patch](tarball://root/attachments/some-uuid/ticket4281/4281-tate-pickle.patch) by @robertwb created at 2008-10-18 17:02:45
 
 Yep, sorry, I posted the wrong patch. I've replaced it now.
 
@@ -188,7 +188,7 @@ archive/issue_comments_031321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4281",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4281#issuecomment-31321",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_031322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4281",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4281#issuecomment-31322",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_031323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4281",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4281#issuecomment-31323",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_031324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4281",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4281#issuecomment-31324",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

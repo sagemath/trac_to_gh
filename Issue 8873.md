@@ -3,7 +3,7 @@
 archive/issues_008873.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat nthiery\n\nConsider the following code:\n\n```\nsage: G = Zmod(5)\nsage: A = CombinatorialFreeModule(QQ, G)\nsage: B = CombinatorialFreeMoudle(ZZ, G)\nsage: A(G(1))\nB[1]\nsage: B(G(1))\nTypeError\n```\n\n\nThis should probably work the same for both.  My guess is that this will involve moving some VectorSpace code up to ModuleWithBasis, but I haven't investigated yet.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8873\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @nthiery\n\nConsider the following code:\n\n```\nsage: G = Zmod(5)\nsage: A = CombinatorialFreeModule(QQ, G)\nsage: B = CombinatorialFreeMoudle(ZZ, G)\nsage: A(G(1))\nB[1]\nsage: B(G(1))\nTypeError\n```\n\n\nThis should probably work the same for both.  My guess is that this will involve moving some VectorSpace code up to ModuleWithBasis, but I haven't investigated yet.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8873\n\n",
     "created_at": "2010-05-04T19:16:11Z",
     "labels": [
         "categories",
@@ -14,12 +14,12 @@ archive/issues_008873.json:
     "title": "Inconsistency with CombinatorialFreeModule: Vector Space vs. Module",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8873",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
-CC:  sage-combinat nthiery
+CC:  sage-combinat @nthiery
 
 Consider the following code:
 
@@ -52,7 +52,7 @@ archive/issue_comments_081553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8873#issuecomment-81553",
-    "user": "cnassau"
+    "user": "@cnassau"
 }
 ```
 
@@ -89,16 +89,16 @@ I'll set this ticket to "wontfix" to see if someone complains.
 archive/issue_comments_081554.json:
 ```json
 {
-    "body": "Changing assignee from nthiery to robertwb.",
+    "body": "Changing assignee from @nthiery to @robertwb.",
     "created_at": "2014-11-06T01:45:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8873#issuecomment-81554",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
-Changing assignee from nthiery to robertwb.
+Changing assignee from @nthiery to @robertwb.
 
 
 
@@ -112,7 +112,7 @@ archive/issue_comments_081555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8873#issuecomment-81555",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_081556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8873#issuecomment-81556",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_008868.json:
     "title": "Make R graphics work regardless of X and other things",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8868",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: jason, was
@@ -39,7 +39,7 @@ archive/issue_comments_081512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8868#issuecomment-81512",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_081513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8868#issuecomment-81513",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_081514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8868#issuecomment-81514",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_081515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8868#issuecomment-81515",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_081517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8868#issuecomment-81517",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_081518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8868#issuecomment-81518",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_081519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8868#issuecomment-81519",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_081520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8868#issuecomment-81520",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -278,7 +278,7 @@ archive/issue_comments_081521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8868#issuecomment-81521",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_081522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8868#issuecomment-81522",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_081523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8868#issuecomment-81523",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_081524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8868#issuecomment-81524",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

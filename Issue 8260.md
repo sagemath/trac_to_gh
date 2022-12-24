@@ -3,7 +3,7 @@
 archive/issues_008260.json:
 ```json
 {
-    "body": "Assignee: roed\n\nCC:  roed robertwb\n\nThis is ok:\n\n\n```\nsage: K = Qp(5)\nsage: x = K(0)\nsage: x.valuation()\n+Infinity\n```\n\n\nThis is bad:\n\n\n```\nsage: K.<a> = Qq(25)\nsage: x = K(0)\nsage: x.valuation()\n1073741823\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8260\n\n",
+    "body": "Assignee: @roed314\n\nCC:  @roed314 @robertwb\n\nThis is ok:\n\n\n```\nsage: K = Qp(5)\nsage: x = K(0)\nsage: x.valuation()\n+Infinity\n```\n\n\nThis is bad:\n\n\n```\nsage: K.<a> = Qq(25)\nsage: x = K(0)\nsage: x.valuation()\n1073741823\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8260\n\n",
     "created_at": "2010-02-14T02:25:43Z",
     "labels": [
         "padics",
@@ -17,9 +17,9 @@ archive/issues_008260.json:
     "user": "dmharvey"
 }
 ```
-Assignee: roed
+Assignee: @roed314
 
-CC:  roed robertwb
+CC:  @roed314 @robertwb
 
 This is ok:
 
@@ -60,7 +60,7 @@ archive/issue_comments_073105.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8260#issuecomment-73105",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -73,16 +73,16 @@ Changing status from new to needs_review.
 archive/issue_comments_073106.json:
 ```json
 {
-    "body": "Attachment [8260-Qq-valuation.patch](tarball://root/attachments/some-uuid/ticket8260/8260-Qq-valuation.patch) by robertwb created at 2010-02-21 03:40:44\n\nThere were inconsistent definitions of maxordp.",
+    "body": "Attachment [8260-Qq-valuation.patch](tarball://root/attachments/some-uuid/ticket8260/8260-Qq-valuation.patch) by @robertwb created at 2010-02-21 03:40:44\n\nThere were inconsistent definitions of maxordp.",
     "created_at": "2010-02-21T03:40:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8260#issuecomment-73106",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [8260-Qq-valuation.patch](tarball://root/attachments/some-uuid/ticket8260/8260-Qq-valuation.patch) by robertwb created at 2010-02-21 03:40:44
+Attachment [8260-Qq-valuation.patch](tarball://root/attachments/some-uuid/ticket8260/8260-Qq-valuation.patch) by @robertwb created at 2010-02-21 03:40:44
 
 There were inconsistent definitions of maxordp.
 
@@ -98,7 +98,7 @@ archive/issue_comments_073107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8260#issuecomment-73107",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_073108.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8260#issuecomment-73108",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 

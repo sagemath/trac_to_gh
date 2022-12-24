@@ -3,7 +3,7 @@
 archive/issues_002678.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n\nThere are some canonical coercions that one *should* have in the context\nof modular forms that aren't there, probably partly because this whole \"canonical\ncoercions\" business was after I wrote the modular forms code.  Here's\nan example bug (=lack of a coercion that should be there):\n\nsage: b=CuspForms(22).basis()\nsage: sum(b, b[0].parent()(0))\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/was/<ipython console> in <module>()\n\n/Users/was/element.pyx in sage.structure.element.ModuleElement.__add__()\n\n/Users/was/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c()\n\n<type 'exceptions.TypeError'>: unsupported operand parent(s) for '+': 'Modular Forms space of dimension 5 for Congruence Subgroup Gamma0(22) of weight 2 over Rational Field' and 'Cuspidal subspace of dimension 2 of Modular Forms space of dimension 5 for Congruence Subgroup Gamma0(22) of weight 2 over Rational Field'\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2678\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n\nThere are some canonical coercions that one *should* have in the context\nof modular forms that aren't there, probably partly because this whole \"canonical\ncoercions\" business was after I wrote the modular forms code.  Here's\nan example bug (=lack of a coercion that should be there):\n\nsage: b=CuspForms(22).basis()\nsage: sum(b, b[0].parent()(0))\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/was/<ipython console> in <module>()\n\n/Users/was/element.pyx in sage.structure.element.ModuleElement.__add__()\n\n/Users/was/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c()\n\n<type 'exceptions.TypeError'>: unsupported operand parent(s) for '+': 'Modular Forms space of dimension 5 for Congruence Subgroup Gamma0(22) of weight 2 over Rational Field' and 'Cuspidal subspace of dimension 2 of Modular Forms space of dimension 5 for Congruence Subgroup Gamma0(22) of weight 2 over Rational Field'\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2678\n\n",
     "created_at": "2008-03-26T18:05:58Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_002678.json:
     "title": "modform -- a missing canonical coercion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2678",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -59,7 +59,7 @@ archive/issue_comments_018422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2678",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2678#issuecomment-18422",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_018423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2678",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2678#issuecomment-18423",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001954.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\n\n```\n\nHi,\n\nIt seems the __abs__ method for vectors is missing the part that is\nsupposed to square the components before they are added.\n\n[e.g. abs(vector([1..5])) should really be\nsqrt(1+4+9+16+25)=sqrt(55) ]\n\nThe code of the current version is included below.\n\n   def __abs__(self):\n       \"\"\"\n       Return the square root of the sum of the squares of the\nentries of this vector.\n\n       EXAMPLES:\n           sage: v = vector([1..5]); abs(v)\n           sqrt(15)\n           sage: v = vector(RDF, [1..5]); abs(v)\n           3.87298334621\n       \"\"\"\n       return sum(self.list()).sqrt()\n\nThe last line should be something like\n\n       return sum([x*x for x in self.list()]).sqrt()\n\n(not sure if that is the most efficient way).\n\n--Peter\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1954\n\n",
+    "body": "Assignee: @mwhansen\n\n\n```\n\nHi,\n\nIt seems the __abs__ method for vectors is missing the part that is\nsupposed to square the components before they are added.\n\n[e.g. abs(vector([1..5])) should really be\nsqrt(1+4+9+16+25)=sqrt(55) ]\n\nThe code of the current version is included below.\n\n   def __abs__(self):\n       \"\"\"\n       Return the square root of the sum of the squares of the\nentries of this vector.\n\n       EXAMPLES:\n           sage: v = vector([1..5]); abs(v)\n           sqrt(15)\n           sage: v = vector(RDF, [1..5]); abs(v)\n           3.87298334621\n       \"\"\"\n       return sum(self.list()).sqrt()\n\nThe last line should be something like\n\n       return sum([x*x for x in self.list()]).sqrt()\n\n(not sure if that is the most efficient way).\n\n--Peter\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1954\n\n",
     "created_at": "2008-01-28T00:03:21Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_001954.json:
     "title": "sage/modules/free_module_element.pyx computing abs(vector(...))",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1954",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 
 ```
@@ -71,7 +71,7 @@ archive/issue_comments_012442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1954#issuecomment-12442",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -84,16 +84,16 @@ Changing status from new to assigned.
 archive/issue_comments_012443.json:
 ```json
 {
-    "body": "Attachment [1954.patch](tarball://root/attachments/some-uuid/ticket1954/1954.patch) by mhansen created at 2008-01-28 00:06:03",
+    "body": "Attachment [1954.patch](tarball://root/attachments/some-uuid/ticket1954/1954.patch) by @mwhansen created at 2008-01-28 00:06:03",
     "created_at": "2008-01-28T00:06:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1954#issuecomment-12443",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1954.patch](tarball://root/attachments/some-uuid/ticket1954/1954.patch) by mhansen created at 2008-01-28 00:06:03
+Attachment [1954.patch](tarball://root/attachments/some-uuid/ticket1954/1954.patch) by @mwhansen created at 2008-01-28 00:06:03
 
 
 
@@ -107,7 +107,7 @@ archive/issue_comments_012444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1954#issuecomment-12444",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

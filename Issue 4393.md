@@ -148,7 +148,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4393
 archive/issue_comments_032335.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to was.",
+    "body": "Changing assignee from mabshoff to @williamstein.",
     "created_at": "2008-10-30T16:52:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4393",
     "type": "issue_comment",
@@ -157,7 +157,7 @@ archive/issue_comments_032335.json:
 }
 ```
 
-Changing assignee from mabshoff to was.
+Changing assignee from mabshoff to @williamstein.
 
 
 
@@ -166,16 +166,16 @@ Changing assignee from mabshoff to was.
 archive/issue_comments_032336.json:
 ```json
 {
-    "body": "Attachment [sage-4393.patch](tarball://root/attachments/some-uuid/ticket4393/sage-4393.patch) by was created at 2008-10-30 19:51:50",
+    "body": "Attachment [sage-4393.patch](tarball://root/attachments/some-uuid/ticket4393/sage-4393.patch) by @williamstein created at 2008-10-30 19:51:50",
     "created_at": "2008-10-30T19:51:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4393",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4393#issuecomment-32336",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-4393.patch](tarball://root/attachments/some-uuid/ticket4393/sage-4393.patch) by was created at 2008-10-30 19:51:50
+Attachment [sage-4393.patch](tarball://root/attachments/some-uuid/ticket4393/sage-4393.patch) by @williamstein created at 2008-10-30 19:51:50
 
 
 

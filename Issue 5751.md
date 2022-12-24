@@ -14,7 +14,7 @@ archive/issues_005751.json:
     "title": "cartan_type now a method rather than attribute in weyl_characters.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5751",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 Assignee: tbd
@@ -44,7 +44,7 @@ archive/issue_comments_044948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5751#issuecomment-44948",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -57,7 +57,7 @@ patch revised to apply after the 5721 patches
 archive/issue_comments_044949.json:
 ```json
 {
-    "body": "Changing assignee from tbd to mhansen.",
+    "body": "Changing assignee from tbd to @mwhansen.",
     "created_at": "2009-04-15T19:25:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5751",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_044949.json:
 }
 ```
 
-Changing assignee from tbd to mhansen.
+Changing assignee from tbd to @mwhansen.
 
 
 
@@ -98,7 +98,7 @@ archive/issue_comments_044951.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5751#issuecomment-44951",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_044952.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5751#issuecomment-44952",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_044954.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5751#issuecomment-44954",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -197,16 +197,16 @@ Michael
 archive/issue_comments_044956.json:
 ```json
 {
-    "body": "Attachment [trac_5751-rebased-3.4.1.rc4.patch](tarball://root/attachments/some-uuid/ticket5751/trac_5751-rebased-3.4.1.rc4.patch) by bump created at 2009-04-20 14:01:06",
+    "body": "Attachment [trac_5751-rebased-3.4.1.rc4.patch](tarball://root/attachments/some-uuid/ticket5751/trac_5751-rebased-3.4.1.rc4.patch) by @dwbump created at 2009-04-20 14:01:06",
     "created_at": "2009-04-20T14:01:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5751#issuecomment-44956",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [trac_5751-rebased-3.4.1.rc4.patch](tarball://root/attachments/some-uuid/ticket5751/trac_5751-rebased-3.4.1.rc4.patch) by bump created at 2009-04-20 14:01:06
+Attachment [trac_5751-rebased-3.4.1.rc4.patch](tarball://root/attachments/some-uuid/ticket5751/trac_5751-rebased-3.4.1.rc4.patch) by @dwbump created at 2009-04-20 14:01:06
 
 
 
@@ -220,7 +220,7 @@ archive/issue_comments_044957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5751#issuecomment-44957",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -233,16 +233,16 @@ Changing status from new to assigned.
 archive/issue_comments_044958.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to bump.",
+    "body": "Changing assignee from @mwhansen to @dwbump.",
     "created_at": "2009-04-20T14:04:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5751#issuecomment-44958",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Changing assignee from mhansen to bump.
+Changing assignee from @mwhansen to @dwbump.
 
 
 
@@ -256,7 +256,7 @@ archive/issue_comments_044959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5751#issuecomment-44959",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_005726.json:
     "title": "RDF quotes -- docstring bug (possibly cython issue)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5726",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -44,7 +44,7 @@ archive/issue_comments_044744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5726#issuecomment-44744",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -72,16 +72,16 @@ On the command line, cython code *never* gets a function "Definition".
 archive/issue_comments_044745.json:
 ```json
 {
-    "body": "Attachment [trac_5726-sageinspect.patch](tarball://root/attachments/some-uuid/ticket5726/trac_5726-sageinspect.patch) by jhpalmieri created at 2009-08-24 16:42:40",
+    "body": "Attachment [trac_5726-sageinspect.patch](tarball://root/attachments/some-uuid/ticket5726/trac_5726-sageinspect.patch) by @jhpalmieri created at 2009-08-24 16:42:40",
     "created_at": "2009-08-24T16:42:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5726#issuecomment-44745",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_5726-sageinspect.patch](tarball://root/attachments/some-uuid/ticket5726/trac_5726-sageinspect.patch) by jhpalmieri created at 2009-08-24 16:42:40
+Attachment [trac_5726-sageinspect.patch](tarball://root/attachments/some-uuid/ticket5726/trac_5726-sageinspect.patch) by @jhpalmieri created at 2009-08-24 16:42:40
 
 
 
@@ -95,7 +95,7 @@ archive/issue_comments_044746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5726#issuecomment-44746",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_044747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5726#issuecomment-44747",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_044748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5726#issuecomment-44748",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

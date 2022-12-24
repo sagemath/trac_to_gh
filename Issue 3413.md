@@ -3,7 +3,7 @@
 archive/issues_003413.json:
 ```json
 {
-    "body": "Assignee: was\n\nTwo of the doctests for time_series.pyx have endianess issues on osxppc.  I fixed them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3413\n\n",
+    "body": "Assignee: @williamstein\n\nTwo of the doctests for time_series.pyx have endianess issues on osxppc.  I fixed them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3413\n\n",
     "created_at": "2008-06-13T14:21:32Z",
     "labels": [
         "finance",
@@ -14,10 +14,10 @@ archive/issues_003413.json:
     "title": "[with patch; needs review] sage-3.0.3.alpha2 -- endianess issue with time_series doctest",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3413",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Two of the doctests for time_series.pyx have endianess issues on osxppc.  I fixed them.
 
@@ -61,7 +61,7 @@ archive/issue_comments_023937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3413#issuecomment-23937",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_023938.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3413#issuecomment-23938",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -92,16 +92,16 @@ adds ",2"; and works.
 archive/issue_comments_023939.json:
 ```json
 {
-    "body": "Attachment [9840.patch](tarball://root/attachments/some-uuid/ticket3413/9840.patch) by craigcitro created at 2008-06-15 22:41:21\n\nLooks good. It's ready to go.",
+    "body": "Attachment [9840.patch](tarball://root/attachments/some-uuid/ticket3413/9840.patch) by @craigcitro created at 2008-06-15 22:41:21\n\nLooks good. It's ready to go.",
     "created_at": "2008-06-15T22:41:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3413#issuecomment-23939",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [9840.patch](tarball://root/attachments/some-uuid/ticket3413/9840.patch) by craigcitro created at 2008-06-15 22:41:21
+Attachment [9840.patch](tarball://root/attachments/some-uuid/ticket3413/9840.patch) by @craigcitro created at 2008-06-15 22:41:21
 
 Looks good. It's ready to go.
 

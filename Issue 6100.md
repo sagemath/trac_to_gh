@@ -3,7 +3,7 @@
 archive/issues_006100.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nCC:  jhpalmieri bantieau\n\nAdd functionality so that we can compute a basis for (co)homology in dimension n of a chain complex C_* in terms of a given basis for C_n.\n\nThis will use the patch #5882 of William Stein.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6100\n\n",
+    "body": "Assignee: @jhpalmieri\n\nCC:  @jhpalmieri @antieau\n\nAdd functionality so that we can compute a basis for (co)homology in dimension n of a chain complex C_* in terms of a given basis for C_n.\n\nThis will use the patch #5882 of William Stein.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6100\n\n",
     "created_at": "2009-05-21T03:41:24Z",
     "labels": [
         "algebraic topology",
@@ -14,12 +14,12 @@ archive/issues_006100.json:
     "title": "give a basis for homology and cohomology of chain complexes in terms of given generators",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6100",
-    "user": "bantieau"
+    "user": "@antieau"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
-CC:  jhpalmieri bantieau
+CC:  @jhpalmieri @antieau
 
 Add functionality so that we can compute a basis for (co)homology in dimension n of a chain complex C_* in terms of a given basis for C_n.
 
@@ -119,7 +119,7 @@ archive/issue_comments_048669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6100#issuecomment-48669",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_048670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6100#issuecomment-48670",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_048672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6100#issuecomment-48672",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -259,16 +259,16 @@ Since you're just dealing with generators for chain complexes, I don't know if i
 archive/issue_comments_048673.json:
 ```json
 {
-    "body": "Attachment [trac_6100-basis_homology-ts.patch](tarball://root/attachments/some-uuid/ticket6100/trac_6100-basis_homology-ts.patch) by tscrim created at 2013-04-03 21:04:06",
+    "body": "Attachment [trac_6100-basis_homology-ts.patch](tarball://root/attachments/some-uuid/ticket6100/trac_6100-basis_homology-ts.patch) by @tscrim created at 2013-04-03 21:04:06",
     "created_at": "2013-04-03T21:04:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6100#issuecomment-48673",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
-Attachment [trac_6100-basis_homology-ts.patch](tarball://root/attachments/some-uuid/ticket6100/trac_6100-basis_homology-ts.patch) by tscrim created at 2013-04-03 21:04:06
+Attachment [trac_6100-basis_homology-ts.patch](tarball://root/attachments/some-uuid/ticket6100/trac_6100-basis_homology-ts.patch) by @tscrim created at 2013-04-03 21:04:06
 
 
 
@@ -282,7 +282,7 @@ archive/issue_comments_048674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6100#issuecomment-48674",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_048675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6100#issuecomment-48675",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -322,7 +322,7 @@ archive/issue_comments_048676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6100#issuecomment-48676",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -340,7 +340,7 @@ archive/issue_comments_048677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6100#issuecomment-48677",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -358,7 +358,7 @@ archive/issue_comments_048678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6100#issuecomment-48678",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -376,7 +376,7 @@ archive/issue_comments_048679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6100#issuecomment-48679",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -396,7 +396,7 @@ archive/issue_comments_048680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6100#issuecomment-48680",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

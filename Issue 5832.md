@@ -3,7 +3,7 @@
 archive/issues_005832.json:
 ```json
 {
-    "body": "Assignee: bump\n\nCC:  sage-combinat\n\nThe methods simple_roots(), fundamental_weights() and simple_coroots() for the ambient space of a root system are supposed to return a family. This was never correctly implemented for the reducible types, and the patch corrects this.\n\nThere are also some changes in weyl_characters.py, where it was assumed that the root system was irreducible in a few places. The patch corrects this.\n\nThe patch is probably correct but I haven't confirmed that it applies cleanly to sage-3.4.1.rc3 or that it passes `sage --testall` so wait to review.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5832\n\n",
+    "body": "Assignee: @dwbump\n\nCC:  sage-combinat\n\nThe methods simple_roots(), fundamental_weights() and simple_coroots() for the ambient space of a root system are supposed to return a family. This was never correctly implemented for the reducible types, and the patch corrects this.\n\nThere are also some changes in weyl_characters.py, where it was assumed that the root system was irreducible in a few places. The patch corrects this.\n\nThe patch is probably correct but I haven't confirmed that it applies cleanly to sage-3.4.1.rc3 or that it passes `sage --testall` so wait to review.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5832\n\n",
     "created_at": "2009-04-20T05:12:05Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_005832.json:
     "title": "[with patch, not ready for review] reducible root system fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5832",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
-Assignee: bump
+Assignee: @dwbump
 
 CC:  sage-combinat
 
@@ -43,7 +43,7 @@ archive/issue_comments_045842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5832",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5832#issuecomment-45842",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 

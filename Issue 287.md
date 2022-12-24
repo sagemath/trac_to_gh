@@ -13,7 +13,7 @@ archive/issues_000287.json:
     "title": "optimize integer creation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/287",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: Martin A, Robert B, and David H
@@ -36,7 +36,7 @@ archive/issue_comments_001359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/287#issuecomment-1359",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002184.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nOne more thing I missed in #2134.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2184\n\n",
+    "body": "Assignee: @rlmill\n\nOne more thing I missed in #2134.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2184\n\n",
     "created_at": "2008-02-16T23:15:38Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_002184.json:
     "title": "[with patch, needs easy review] readjust xmin...ymax for plotting digraphs with arrows",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2184",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 One more thing I missed in #2134.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2184
 archive/issue_comments_014346.json:
 ```json
 {
-    "body": "Attachment [readjust-arrows.patch](tarball://root/attachments/some-uuid/ticket2184/readjust-arrows.patch) by rlm created at 2008-02-16 23:34:37\n\nThis patch depends on the changes in #2085, and the patch in #2134.",
+    "body": "Attachment [readjust-arrows.patch](tarball://root/attachments/some-uuid/ticket2184/readjust-arrows.patch) by @rlmill created at 2008-02-16 23:34:37\n\nThis patch depends on the changes in #2085, and the patch in #2134.",
     "created_at": "2008-02-16T23:34:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2184#issuecomment-14346",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [readjust-arrows.patch](tarball://root/attachments/some-uuid/ticket2184/readjust-arrows.patch) by rlm created at 2008-02-16 23:34:37
+Attachment [readjust-arrows.patch](tarball://root/attachments/some-uuid/ticket2184/readjust-arrows.patch) by @rlmill created at 2008-02-16 23:34:37
 
 This patch depends on the changes in #2085, and the patch in #2134.
 

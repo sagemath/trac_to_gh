@@ -3,7 +3,7 @@
 archive/issues_005081.json:
 ```json
 {
-    "body": "Assignee: was\n\nWe should make numpy understand Sage float and complex types, at least the RDF and CDF types.  See the following thread on the numpy list.\n\nhttp://thread.gmane.org/gmane.comp.python.numeric.general/25251/focus=25273\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5081\n\n",
+    "body": "Assignee: @williamstein\n\nWe should make numpy understand Sage float and complex types, at least the RDF and CDF types.  See the following thread on the numpy list.\n\nhttp://thread.gmane.org/gmane.comp.python.numeric.general/25251/focus=25273\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5081\n\n",
     "created_at": "2009-01-24T01:26:02Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005081.json:
     "title": "Make numpy play nice with Sage types",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5081",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 We should make numpy understand Sage float and complex types, at least the RDF and CDF types.  See the following thread on the numpy list.
 
@@ -40,7 +40,7 @@ archive/issue_comments_038719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5081#issuecomment-38719",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_038721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5081#issuecomment-38721",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -112,16 +112,16 @@ Solves the integer and real types. Complex types are still an issue which will n
 archive/issue_comments_038722.json:
 ```json
 {
-    "body": "Attachment [5081-numpy-types.patch](tarball://root/attachments/some-uuid/ticket5081/5081-numpy-types.patch) by jason created at 2009-07-09 09:24:24\n\nBrilliant!  I'm upgrading now so I can test this!",
+    "body": "Attachment [5081-numpy-types.patch](tarball://root/attachments/some-uuid/ticket5081/5081-numpy-types.patch) by @jasongrout created at 2009-07-09 09:24:24\n\nBrilliant!  I'm upgrading now so I can test this!",
     "created_at": "2009-07-09T09:24:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5081#issuecomment-38722",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [5081-numpy-types.patch](tarball://root/attachments/some-uuid/ticket5081/5081-numpy-types.patch) by jason created at 2009-07-09 09:24:24
+Attachment [5081-numpy-types.patch](tarball://root/attachments/some-uuid/ticket5081/5081-numpy-types.patch) by @jasongrout created at 2009-07-09 09:24:24
 
 Brilliant!  I'm upgrading now so I can test this!
 
@@ -137,7 +137,7 @@ archive/issue_comments_038723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5081#issuecomment-38723",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_038724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5081#issuecomment-38724",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_038725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5081#issuecomment-38725",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_038726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5081#issuecomment-38726",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_038727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5081#issuecomment-38727",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_038728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5081#issuecomment-38728",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -487,7 +487,7 @@ archive/issue_comments_038731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5081#issuecomment-38731",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -505,7 +505,7 @@ archive/issue_comments_038732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5081#issuecomment-38732",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -523,7 +523,7 @@ archive/issue_comments_038733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5081#issuecomment-38733",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

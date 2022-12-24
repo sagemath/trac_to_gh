@@ -3,7 +3,7 @@
 archive/issues_006768.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nKeywords: hecke, basis\n\nAdded new code for the basis of a Hecke algebra as a free module over the integers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6768\n\n",
+    "body": "Assignee: @craigcitro\n\nKeywords: hecke, basis\n\nAdded new code for the basis of a Hecke algebra as a free module over the integers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6768\n\n",
     "created_at": "2009-08-17T01:13:11Z",
     "labels": [
         "modular forms",
@@ -17,7 +17,7 @@ archive/issues_006768.json:
     "user": "wakep"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 Keywords: hecke, basis
 

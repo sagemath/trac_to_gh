@@ -3,7 +3,7 @@
 archive/issues_005508.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe attached patch implements many improvements for relative number fields.  \nIn particular a whole load of previously unimplemented functions for ideals in a relative number field now work, and others work better.\n\nFollowing discussion at\n[sage-nt thread](http://groups.google.co.uk/group/sage-nt/browse_thread/thread/16106258cd436515?hl=en-GB),\nfor several functions the distinction between the relative and absolute \nversion has been made explicit, in order to  avoid ambiguity.  \nThus, for example, for a relative number \nfield both relative_degree and absolute_degree are defined but degree is \nunimplemented, while for an absolute number field relative_degree, \nabsolute_degree and degree are *all* defined (with the same meaning).  \nThis has entailed a few minor changes to enable \nfunctions to work with either absolute or relative number fields.\n\nIt has been suggested that `NumberField` should only be allowed to generate \nan absolute number field.  I have not implemented this, but I have made `NumberFieldTower` publicly available and used it in several \ndoctests.  If a change was made to `NumberField`, `NumberFieldTower` could \nretain the old functionality of `NumberField`.\n\nA number of other minor changes have been made, and these seem to fix\n#5276, #5214 and #2551\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5508\n\n",
+    "body": "Assignee: @williamstein\n\nThe attached patch implements many improvements for relative number fields.  \nIn particular a whole load of previously unimplemented functions for ideals in a relative number field now work, and others work better.\n\nFollowing discussion at\n[sage-nt thread](http://groups.google.co.uk/group/sage-nt/browse_thread/thread/16106258cd436515?hl=en-GB),\nfor several functions the distinction between the relative and absolute \nversion has been made explicit, in order to  avoid ambiguity.  \nThus, for example, for a relative number \nfield both relative_degree and absolute_degree are defined but degree is \nunimplemented, while for an absolute number field relative_degree, \nabsolute_degree and degree are *all* defined (with the same meaning).  \nThis has entailed a few minor changes to enable \nfunctions to work with either absolute or relative number fields.\n\nIt has been suggested that `NumberField` should only be allowed to generate \nan absolute number field.  I have not implemented this, but I have made `NumberFieldTower` publicly available and used it in several \ndoctests.  If a change was made to `NumberField`, `NumberFieldTower` could \nretain the old functionality of `NumberField`.\n\nA number of other minor changes have been made, and these seem to fix\n#5276, #5214 and #2551\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5508\n\n",
     "created_at": "2009-03-13T11:55:25Z",
     "labels": [
         "number theory",
@@ -17,7 +17,7 @@ archive/issues_005508.json:
     "user": "fwclarke"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The attached patch implements many improvements for relative number fields.  
 In particular a whole load of previously unimplemented functions for ideals in a relative number field now work, and others work better.
@@ -54,16 +54,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5508
 archive/issue_comments_042767.json:
 ```json
 {
-    "body": "Attachment [sage-5508.patch](tarball://root/attachments/some-uuid/ticket5508/sage-5508.patch) by cremona created at 2009-03-16 17:25:42\n\nReview:  I read through the patch and was impressed by the thoroughness and attention to detail!  I don't know all the formulas for relative different (etc) off the top of my head, but what is tere looks reasonable.\n\nThe patch applies cleanly to 3.4.\n\nDoctesting sage/rings/number_field, the only problem was this:\n\n```\nsage -t  \"local/sage-3.4/devel/sage-5508/sage/rings/number_field//order.py\"\n**********************************************************************\nFile \"/home/masgaj/local/sage-3.4/devel/sage-5508/sage/rings/number_field/order.py\", line 1196:\n    sage: OK(a)\nExpected nothing\nGot:\n    a\n**********************************************************************\nFile \"/home/masgaj/local/sage-3.4/devel/sage-5508/sage/rings/number_field/order.py\", line 1197:\n    sage: a\nExpected nothing\nGot:\n    a\n```\n\nwhich is just a matter of deleting a rogue \"sage: \" prompt in front of one line of output.\n\nFix that and this will ready to go.  (I hope it merges ok with my units code at #5513!)",
+    "body": "Attachment [sage-5508.patch](tarball://root/attachments/some-uuid/ticket5508/sage-5508.patch) by @JohnCremona created at 2009-03-16 17:25:42\n\nReview:  I read through the patch and was impressed by the thoroughness and attention to detail!  I don't know all the formulas for relative different (etc) off the top of my head, but what is tere looks reasonable.\n\nThe patch applies cleanly to 3.4.\n\nDoctesting sage/rings/number_field, the only problem was this:\n\n```\nsage -t  \"local/sage-3.4/devel/sage-5508/sage/rings/number_field//order.py\"\n**********************************************************************\nFile \"/home/masgaj/local/sage-3.4/devel/sage-5508/sage/rings/number_field/order.py\", line 1196:\n    sage: OK(a)\nExpected nothing\nGot:\n    a\n**********************************************************************\nFile \"/home/masgaj/local/sage-3.4/devel/sage-5508/sage/rings/number_field/order.py\", line 1197:\n    sage: a\nExpected nothing\nGot:\n    a\n```\n\nwhich is just a matter of deleting a rogue \"sage: \" prompt in front of one line of output.\n\nFix that and this will ready to go.  (I hope it merges ok with my units code at #5513!)",
     "created_at": "2009-03-16T17:25:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5508",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5508#issuecomment-42767",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [sage-5508.patch](tarball://root/attachments/some-uuid/ticket5508/sage-5508.patch) by cremona created at 2009-03-16 17:25:42
+Attachment [sage-5508.patch](tarball://root/attachments/some-uuid/ticket5508/sage-5508.patch) by @JohnCremona created at 2009-03-16 17:25:42
 
 Review:  I read through the patch and was impressed by the thoroughness and attention to detail!  I don't know all the formulas for relative different (etc) off the top of my head, but what is tere looks reasonable.
 
@@ -103,7 +103,7 @@ archive/issue_comments_042768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5508",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5508#issuecomment-42768",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -116,16 +116,16 @@ This also seems to fix #4193.
 archive/issue_comments_042769.json:
 ```json
 {
-    "body": "Attachment [sage-5508.2.patch](tarball://root/attachments/some-uuid/ticket5508/sage-5508.2.patch) by cremona created at 2009-03-17 10:34:13\n\nreplaces previous",
+    "body": "Attachment [sage-5508.2.patch](tarball://root/attachments/some-uuid/ticket5508/sage-5508.2.patch) by @JohnCremona created at 2009-03-17 10:34:13\n\nreplaces previous",
     "created_at": "2009-03-17T10:34:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5508",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5508#issuecomment-42769",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [sage-5508.2.patch](tarball://root/attachments/some-uuid/ticket5508/sage-5508.2.patch) by cremona created at 2009-03-17 10:34:13
+Attachment [sage-5508.2.patch](tarball://root/attachments/some-uuid/ticket5508/sage-5508.2.patch) by @JohnCremona created at 2009-03-17 10:34:13
 
 replaces previous
 
@@ -141,7 +141,7 @@ archive/issue_comments_042770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5508",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5508#issuecomment-42770",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_042772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5508",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5508#issuecomment-42772",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 

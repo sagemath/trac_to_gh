@@ -3,7 +3,7 @@
 archive/issues_005930.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  burcin\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5930\n\n",
+    "body": "Assignee: tbd\n\nCC:  @burcin\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5930\n\n",
     "created_at": "2009-04-29T01:52:44Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_005930.json:
     "title": "switch from maxima to pynac for core symbolic manipulation system",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5930",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
 
-CC:  burcin
+CC:  @burcin
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_046883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5930#issuecomment-46883",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_046884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5930#issuecomment-46884",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_046885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5930#issuecomment-46885",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_046886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5930#issuecomment-46886",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_046887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5930#issuecomment-46887",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -229,16 +229,16 @@ Changing status from new to assigned.
 archive/issue_comments_046888.json:
 ```json
 {
-    "body": "Changing assignee from tbd to mhansen.",
+    "body": "Changing assignee from tbd to @mwhansen.",
     "created_at": "2009-05-19T04:11:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5930#issuecomment-46888",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tbd to mhansen.
+Changing assignee from tbd to @mwhansen.
 
 
 
@@ -252,7 +252,7 @@ archive/issue_comments_046889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5930#issuecomment-46889",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -350,16 +350,16 @@ Michael
 archive/issue_comments_046892.json:
 ```json
 {
-    "body": "Attachment [symbolics_final2.patch](tarball://root/attachments/some-uuid/ticket5930/symbolics_final2.patch) by mhansen created at 2009-05-19 23:02:16",
+    "body": "Attachment [symbolics_final2.patch](tarball://root/attachments/some-uuid/ticket5930/symbolics_final2.patch) by @mwhansen created at 2009-05-19 23:02:16",
     "created_at": "2009-05-19T23:02:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5930#issuecomment-46892",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [symbolics_final2.patch](tarball://root/attachments/some-uuid/ticket5930/symbolics_final2.patch) by mhansen created at 2009-05-19 23:02:16
+Attachment [symbolics_final2.patch](tarball://root/attachments/some-uuid/ticket5930/symbolics_final2.patch) by @mwhansen created at 2009-05-19 23:02:16
 
 
 
@@ -685,7 +685,7 @@ archive/issue_comments_046904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5930#issuecomment-46904",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -703,7 +703,7 @@ archive/issue_comments_046905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5930#issuecomment-46905",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -730,7 +730,7 @@ archive/issue_comments_046906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5930#issuecomment-46906",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

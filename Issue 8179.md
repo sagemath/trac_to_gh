@@ -3,7 +3,7 @@
 archive/issues_008179.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  vbraun mhampton\n\nThe package cddlib-094f.p?.spkg places two new binaries under the directory $SAGE_LOCAL/bin, in particular:\n\n```\n[mvngu@mod bin]$ pwd\n/scratch/mvngu/release/sage-4.3.2.alpha1/local/bin\n[mvngu@mod bin]$ hg st\n? cdd_both_reps\n? cdd_both_reps_gmp\n```\n\nThese are required by the rewritten polyhedra package at #7109. A patch to $SAGE_LOCAL/bin/.hgignore is attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8179\n\n",
+    "body": "Assignee: tbd\n\nCC:  @vbraun mhampton\n\nThe package cddlib-094f.p?.spkg places two new binaries under the directory $SAGE_LOCAL/bin, in particular:\n\n```\n[mvngu@mod bin]$ pwd\n/scratch/mvngu/release/sage-4.3.2.alpha1/local/bin\n[mvngu@mod bin]$ hg st\n? cdd_both_reps\n? cdd_both_reps_gmp\n```\n\nThese are required by the rewritten polyhedra package at #7109. A patch to $SAGE_LOCAL/bin/.hgignore is attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8179\n\n",
     "created_at": "2010-02-03T19:41:59Z",
     "labels": [
         "misc",
@@ -19,7 +19,7 @@ archive/issues_008179.json:
 ```
 Assignee: tbd
 
-CC:  vbraun mhampton
+CC:  @vbraun mhampton
 
 The package cddlib-094f.p?.spkg places two new binaries under the directory $SAGE_LOCAL/bin, in particular:
 

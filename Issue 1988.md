@@ -3,7 +3,7 @@
 archive/issues_001988.json:
 ```json
 {
-    "body": "Assignee: was\n\nOn fermat, an OS X 10.4 G5 ppc\n\n\n```\n         [21.2 s]\nsage -t  devel/sage-main/sage/plot/plot3d/parametric_surface.pyx**********************************************************************\nFile \"parametric_surface.pyx\", line 96:\n    sage: show(S)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/build/sage-2.10.1.rc3/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[8]>\", line 1, in <module>\n        show(S)###line 96:\n    sage: show(S)\n      File \"/Users/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/misc/functional.py\", line 916, in show  \n        return x.show(*args, **kwds)\n      File \"base.pyx\", line 510, in sage.plot.plot3d.base.Graphics3d.show\n        T = self._prepare_for_tachyon(frame, axes, frame_aspect_ratio, aspect_ratio, zoom)\n      File \"base.pyx\", line 315, in sage.plot.plot3d.base.Graphics3d._prepare_for_tachyon\n        a_min, a_max = self._box_for_aspect_ratio(aspect_ratio, box_min, box_max)\n      File \"base.pyx\", line 326, in sage.plot.plot3d.base.Graphics3d._box_for_aspect_ratio\n        a_min, a_max = self._safe_bounding_box()\n      File \"base.pyx\", line 108, in sage.plot.plot3d.base.Graphics3d._safe_bounding_box\n        a_min, a_max = self.bounding_box()\n      File \"parametric_surface.pyx\", line 162, in sage.plot.plot3d.parametric_surface.ParametricSurface.bounding_box\n        self.triangulate()\n      File \"parametric_surface.pyx\", line 201, in sage.plot.plot3d.parametric_surface.ParametricSurface.triangulate\n        raise\n      File \"parametric_surface.pyx\", line 196, in sage.plot.plot3d.parametric_surface.triangulate\n        self.eval_grid(urange, vrange)\n      File \"parametric_surface.pyx\", line 391, in sage.plot.plot3d.parametric_surface.ParametricSurface.eval_grid\n        res.x, res.y, res.z = self.f(u, v)\n      File \"<doctest __main__.example_1[5]>\", line 4, in f\n        x = cos(a)*(cos(u)*sinh(v)-cos(Integer(3)*u)*sinh(Integer(3)*v)/Integer(3))+             sin(a)*(sin(u)*cosh(v)-sin(Integer(3)*u)*cosh(Integer(3)*v)/Integer(3))\n    OverflowError: math range error\n**********************************************************************\n1 items had failures:\n   1 of   9 in __main__.example_1\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_parametric_surface.pyx\n         [9.1 s]\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1988\n\n",
+    "body": "Assignee: @williamstein\n\nOn fermat, an OS X 10.4 G5 ppc\n\n\n```\n         [21.2 s]\nsage -t  devel/sage-main/sage/plot/plot3d/parametric_surface.pyx**********************************************************************\nFile \"parametric_surface.pyx\", line 96:\n    sage: show(S)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/build/sage-2.10.1.rc3/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[8]>\", line 1, in <module>\n        show(S)###line 96:\n    sage: show(S)\n      File \"/Users/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/misc/functional.py\", line 916, in show  \n        return x.show(*args, **kwds)\n      File \"base.pyx\", line 510, in sage.plot.plot3d.base.Graphics3d.show\n        T = self._prepare_for_tachyon(frame, axes, frame_aspect_ratio, aspect_ratio, zoom)\n      File \"base.pyx\", line 315, in sage.plot.plot3d.base.Graphics3d._prepare_for_tachyon\n        a_min, a_max = self._box_for_aspect_ratio(aspect_ratio, box_min, box_max)\n      File \"base.pyx\", line 326, in sage.plot.plot3d.base.Graphics3d._box_for_aspect_ratio\n        a_min, a_max = self._safe_bounding_box()\n      File \"base.pyx\", line 108, in sage.plot.plot3d.base.Graphics3d._safe_bounding_box\n        a_min, a_max = self.bounding_box()\n      File \"parametric_surface.pyx\", line 162, in sage.plot.plot3d.parametric_surface.ParametricSurface.bounding_box\n        self.triangulate()\n      File \"parametric_surface.pyx\", line 201, in sage.plot.plot3d.parametric_surface.ParametricSurface.triangulate\n        raise\n      File \"parametric_surface.pyx\", line 196, in sage.plot.plot3d.parametric_surface.triangulate\n        self.eval_grid(urange, vrange)\n      File \"parametric_surface.pyx\", line 391, in sage.plot.plot3d.parametric_surface.ParametricSurface.eval_grid\n        res.x, res.y, res.z = self.f(u, v)\n      File \"<doctest __main__.example_1[5]>\", line 4, in f\n        x = cos(a)*(cos(u)*sinh(v)-cos(Integer(3)*u)*sinh(Integer(3)*v)/Integer(3))+             sin(a)*(sin(u)*cosh(v)-sin(Integer(3)*u)*cosh(Integer(3)*v)/Integer(3))\n    OverflowError: math range error\n**********************************************************************\n1 items had failures:\n   1 of   9 in __main__.example_1\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_parametric_surface.pyx\n         [9.1 s]\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1988\n\n",
     "created_at": "2008-01-31T03:38:38Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_001988.json:
     "title": "doctest fallout -- osx ppc 10.4 overflow error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1988",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 On fermat, an OS X 10.4 G5 ppc
 
@@ -81,7 +81,7 @@ archive/issue_comments_012875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1988#issuecomment-12875",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -94,16 +94,16 @@ Changing status from new to assigned.
 archive/issue_comments_012876.json:
 ```json
 {
-    "body": "Changing assignee from was to craigcitro.",
+    "body": "Changing assignee from @williamstein to @craigcitro.",
     "created_at": "2008-01-31T06:13:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1988#issuecomment-12876",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from was to craigcitro.
+Changing assignee from @williamstein to @craigcitro.
 
 
 
@@ -117,7 +117,7 @@ archive/issue_comments_012877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1988#issuecomment-12877",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

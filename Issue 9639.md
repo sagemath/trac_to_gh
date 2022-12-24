@@ -13,7 +13,7 @@ archive/issues_009639.json:
     "title": "Endpoint markers for interact sliders",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9639",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: itolkov, jason

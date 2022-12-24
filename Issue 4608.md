@@ -3,7 +3,7 @@
 archive/issues_004608.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nThis works:\n\n```\nsage: R = RootSystem(['A',2])\nsage: R.ambient_lattice()\nAmbient lattice of the Root system of type ['A', 2]\nsage: R.ambient_lattice().roots()\n[(1, -1, 0), (1, 0, -1), (0, 1, -1), (-1, 1, 0), (-1, 0, 1), (0, -1, 1)]\nsage: \n```\n\nBut this method does not work for any of the other associated lattices.\n\n```\nsage: R = RootSystem(['A',2])\nsage: R.coroot_lattice().roots()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n...\nAttributeError: 'RootSpace' object has no attribute 'positive_roots'\nsage: R.coweight_lattice().roots()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n...\nAttributeError: 'WeightSpace' object has no attribute 'positive_roots'\nsage: R.root_lattice().roots()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n...\nAttributeError: 'RootSpace' object has no attribute 'positive_roots'\nsage: R.weight_lattice().roots()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n...\nAttributeError: 'WeightSpace' object has no attribute 'positive_roots'\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4608\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThis works:\n\n```\nsage: R = RootSystem(['A',2])\nsage: R.ambient_lattice()\nAmbient lattice of the Root system of type ['A', 2]\nsage: R.ambient_lattice().roots()\n[(1, -1, 0), (1, 0, -1), (0, 1, -1), (-1, 1, 0), (-1, 0, 1), (0, -1, 1)]\nsage: \n```\n\nBut this method does not work for any of the other associated lattices.\n\n```\nsage: R = RootSystem(['A',2])\nsage: R.coroot_lattice().roots()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n...\nAttributeError: 'RootSpace' object has no attribute 'positive_roots'\nsage: R.coweight_lattice().roots()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n...\nAttributeError: 'WeightSpace' object has no attribute 'positive_roots'\nsage: R.root_lattice().roots()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n...\nAttributeError: 'RootSpace' object has no attribute 'positive_roots'\nsage: R.weight_lattice().roots()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n...\nAttributeError: 'WeightSpace' object has no attribute 'positive_roots'\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4608\n\n",
     "created_at": "2008-11-25T00:33:55Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_004608.json:
     "title": "roots method broken for root system lattices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4608",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -77,7 +77,7 @@ archive/issue_comments_034589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4608#issuecomment-34589",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -109,16 +109,16 @@ Florent
 archive/issue_comments_034590.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to hivert.",
+    "body": "Changing assignee from @mwhansen to @hivert.",
     "created_at": "2010-04-16T10:31:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4608#issuecomment-34590",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Changing assignee from mhansen to hivert.
+Changing assignee from @mwhansen to @hivert.
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_000616.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nsage -coverage is currently easy to trick: just add a doctest that doesn't actually test your function. This can also happen by accident: if you copy-paste a function, and then don't look at the docstring, you end up with a function that has fake doctests. (This occurs in various places in the sage source code.) \n\nThis patch makes sage -coverage a little smarter: it looks every time to make sure that the function name occurs in the doctests, and if not, adds the function to a list of \"possibly wrong\" functions that it spits out at the end. If the function begins and ends with __, we don't bother looking for the name in the docstring. Also, if the string 'indirect doctest' occurs anywhere, we don't look. \n\nThis patch also sneaks in a change so that scons is replaced by scons -Q, making it quieter whenever it's called. Time for the first line-item veto in a sage patch? :)\n\nIssue created by migration from https://trac.sagemath.org/ticket/616\n\n",
+    "body": "Assignee: @craigcitro\n\nsage -coverage is currently easy to trick: just add a doctest that doesn't actually test your function. This can also happen by accident: if you copy-paste a function, and then don't look at the docstring, you end up with a function that has fake doctests. (This occurs in various places in the sage source code.) \n\nThis patch makes sage -coverage a little smarter: it looks every time to make sure that the function name occurs in the doctests, and if not, adds the function to a list of \"possibly wrong\" functions that it spits out at the end. If the function begins and ends with __, we don't bother looking for the name in the docstring. Also, if the string 'indirect doctest' occurs anywhere, we don't look. \n\nThis patch also sneaks in a change so that scons is replaced by scons -Q, making it quieter whenever it's called. Time for the first line-item veto in a sage patch? :)\n\nIssue created by migration from https://trac.sagemath.org/ticket/616\n\n",
     "created_at": "2007-09-07T06:23:11Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_000616.json:
     "title": "sage -coverage improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/616",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 sage -coverage is currently easy to trick: just add a doctest that doesn't actually test your function. This can also happen by accident: if you copy-paste a function, and then don't look at the docstring, you end up with a function that has fake doctests. (This occurs in various places in the sage source code.) 
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/616
 archive/issue_comments_003158.json:
 ```json
 {
-    "body": "Attachment [trac_616.hg](tarball://root/attachments/some-uuid/ticket616/trac_616.hg) by craigcitro created at 2007-09-07 06:23:41",
+    "body": "Attachment [trac_616.hg](tarball://root/attachments/some-uuid/ticket616/trac_616.hg) by @craigcitro created at 2007-09-07 06:23:41",
     "created_at": "2007-09-07T06:23:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/616#issuecomment-3158",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac_616.hg](tarball://root/attachments/some-uuid/ticket616/trac_616.hg) by craigcitro created at 2007-09-07 06:23:41
+Attachment [trac_616.hg](tarball://root/attachments/some-uuid/ticket616/trac_616.hg) by @craigcitro created at 2007-09-07 06:23:41
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_003159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/616#issuecomment-3159",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -72,16 +72,16 @@ Yeah, I just got bit by trac formatting. In the above, it says that if the funct
 archive/issue_comments_003160.json:
 ```json
 {
-    "body": "Attachment [trac_616_pt2.hg](tarball://root/attachments/some-uuid/ticket616/trac_616_pt2.hg) by craigcitro created at 2007-09-07 08:12:47\n\ntrac_616_pt2.hg makes sage -coverage just a bit smarter.",
+    "body": "Attachment [trac_616_pt2.hg](tarball://root/attachments/some-uuid/ticket616/trac_616_pt2.hg) by @craigcitro created at 2007-09-07 08:12:47\n\ntrac_616_pt2.hg makes sage -coverage just a bit smarter.",
     "created_at": "2007-09-07T08:12:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/616#issuecomment-3160",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac_616_pt2.hg](tarball://root/attachments/some-uuid/ticket616/trac_616_pt2.hg) by craigcitro created at 2007-09-07 08:12:47
+Attachment [trac_616_pt2.hg](tarball://root/attachments/some-uuid/ticket616/trac_616_pt2.hg) by @craigcitro created at 2007-09-07 08:12:47
 
 trac_616_pt2.hg makes sage -coverage just a bit smarter.
 
@@ -119,7 +119,7 @@ archive/issue_comments_003162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/616#issuecomment-3162",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_003163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/616#issuecomment-3163",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -150,16 +150,16 @@ Actually, I'm adding one more patch, that's a combination of the previous two. I
 archive/issue_comments_003164.json:
 ```json
 {
-    "body": "Attachment [sage-coverage.hg](tarball://root/attachments/some-uuid/ticket616/sage-coverage.hg) by craigcitro created at 2007-10-12 21:46:36\n\nI should have mentioned that in addition, the previous two patches made some modifications to the scons/c_lib stuff that no longer applies, so definitely use sage-coverage.hg. This is a patch against $SAGE_ROOT/local/bin.",
+    "body": "Attachment [sage-coverage.hg](tarball://root/attachments/some-uuid/ticket616/sage-coverage.hg) by @craigcitro created at 2007-10-12 21:46:36\n\nI should have mentioned that in addition, the previous two patches made some modifications to the scons/c_lib stuff that no longer applies, so definitely use sage-coverage.hg. This is a patch against $SAGE_ROOT/local/bin.",
     "created_at": "2007-10-12T21:46:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/616#issuecomment-3164",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [sage-coverage.hg](tarball://root/attachments/some-uuid/ticket616/sage-coverage.hg) by craigcitro created at 2007-10-12 21:46:36
+Attachment [sage-coverage.hg](tarball://root/attachments/some-uuid/ticket616/sage-coverage.hg) by @craigcitro created at 2007-10-12 21:46:36
 
 I should have mentioned that in addition, the previous two patches made some modifications to the scons/c_lib stuff that no longer applies, so definitely use sage-coverage.hg. This is a patch against $SAGE_ROOT/local/bin.
 
@@ -175,7 +175,7 @@ archive/issue_comments_003165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/616#issuecomment-3165",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

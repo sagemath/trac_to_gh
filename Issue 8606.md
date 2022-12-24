@@ -3,7 +3,7 @@
 archive/issues_008606.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  jason alexghitza was\n\nKeywords: float, RR\n\nConsider the following (sage 4.3.3, since 4.3.4 does not compile\non my machine):\n\n```\nsage: 2.0^53\n9.00719925474099e15\n```\n\nThis is what we expect: the float `2.0` propagates to the whole\nexpression.\n\nHowever:\n\n```\nsage: 2^53.0\n9007199254740992\n```\n\nNote the result is an integer, not a float! Thus the information\nabout the inexact value has been lost. Same thing with\n`2^float(53)` and `2^RR(53)`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8606\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @jasongrout alexghitza @williamstein\n\nKeywords: float, RR\n\nConsider the following (sage 4.3.3, since 4.3.4 does not compile\non my machine):\n\n```\nsage: 2.0^53\n9.00719925474099e15\n```\n\nThis is what we expect: the float `2.0` propagates to the whole\nexpression.\n\nHowever:\n\n```\nsage: 2^53.0\n9007199254740992\n```\n\nNote the result is an integer, not a float! Thus the information\nabout the inexact value has been lost. Same thing with\n`2^float(53)` and `2^RR(53)`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8606\n\n",
     "created_at": "2010-03-25T15:11:24Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_008606.json:
     "title": "floats in exponent do not propagate",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8606",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  jason alexghitza was
+CC:  @jasongrout alexghitza @williamstein
 
 Keywords: float, RR
 
@@ -61,7 +61,7 @@ archive/issue_comments_077962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77962",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_077963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77963",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_077964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77964",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -159,16 +159,16 @@ It seems like we should fix pow, rather than change Integer(53.0).  In pow, it s
 archive/issue_comments_077965.json:
 ```json
 {
-    "body": "Attachment [trac_8606.patch](tarball://root/attachments/some-uuid/ticket8606/trac_8606.patch) by zimmerma created at 2010-03-29 13:12:29\n\nJason,\n> It seems like just deleting the Integer(n) try clause might be the right thing to do.\n\nthanks, that did the trick! I am attaching a patch to review.",
+    "body": "Attachment [trac_8606.patch](tarball://root/attachments/some-uuid/ticket8606/trac_8606.patch) by @zimmermann6 created at 2010-03-29 13:12:29\n\nJason,\n> It seems like just deleting the Integer(n) try clause might be the right thing to do.\n\nthanks, that did the trick! I am attaching a patch to review.",
     "created_at": "2010-03-29T13:12:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77965",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [trac_8606.patch](tarball://root/attachments/some-uuid/ticket8606/trac_8606.patch) by zimmerma created at 2010-03-29 13:12:29
+Attachment [trac_8606.patch](tarball://root/attachments/some-uuid/ticket8606/trac_8606.patch) by @zimmermann6 created at 2010-03-29 13:12:29
 
 Jason,
 > It seems like just deleting the Integer(n) try clause might be the right thing to do.
@@ -182,16 +182,16 @@ thanks, that did the trick! I am attaching a patch to review.
 archive/issue_comments_077966.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to zimmerma.",
+    "body": "Changing assignee from @aghitza to @zimmermann6.",
     "created_at": "2010-03-29T13:12:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77966",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Changing assignee from AlexGhitza to zimmerma.
+Changing assignee from @aghitza to @zimmermann6.
 
 
 
@@ -205,7 +205,7 @@ archive/issue_comments_077967.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77967",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_077968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77968",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_077969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77969",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_077970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77970",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_077971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77971",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -308,7 +308,7 @@ archive/issue_comments_077972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77972",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -321,16 +321,16 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_077973.json:
 ```json
 {
-    "body": "Attachment [trac_8606_2.patch](tarball://root/attachments/some-uuid/ticket8606/trac_8606_2.patch) by zimmerma created at 2010-05-24 18:47:17\n\nthank you Burcin for your review. I have attached a new patch following your proposal.\nHowever we still get the same (unhelpful) error message for `5^('a')`.\nAll doctests still pass.",
+    "body": "Attachment [trac_8606_2.patch](tarball://root/attachments/some-uuid/ticket8606/trac_8606_2.patch) by @zimmermann6 created at 2010-05-24 18:47:17\n\nthank you Burcin for your review. I have attached a new patch following your proposal.\nHowever we still get the same (unhelpful) error message for `5^('a')`.\nAll doctests still pass.",
     "created_at": "2010-05-24T18:47:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77973",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [trac_8606_2.patch](tarball://root/attachments/some-uuid/ticket8606/trac_8606_2.patch) by zimmerma created at 2010-05-24 18:47:17
+Attachment [trac_8606_2.patch](tarball://root/attachments/some-uuid/ticket8606/trac_8606_2.patch) by @zimmermann6 created at 2010-05-24 18:47:17
 
 thank you Burcin for your review. I have attached a new patch following your proposal.
 However we still get the same (unhelpful) error message for `5^('a')`.
@@ -348,7 +348,7 @@ archive/issue_comments_077974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77974",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -366,7 +366,7 @@ archive/issue_comments_077975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77975",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -393,7 +393,7 @@ archive/issue_comments_077976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77976",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

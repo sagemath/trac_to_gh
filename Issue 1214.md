@@ -3,7 +3,7 @@
 archive/issues_001214.json:
 ```json
 {
-    "body": "Assignee: malb\n\n\n```\nsage: x^2 in I\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/opt/maple11/lib/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/ideal.py in __contains__(self, x)\n    315         if self.gen().is_zero():\n    316             return x.is_zero()\n--> 317         return self.gen().divides(x)\n    318     \n    319     def __cmp__(self, other):\n\n<type 'exceptions.AttributeError'>: 'Polynomial_rational_dense' object has no attribute 'divides'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1214\n\n",
+    "body": "Assignee: @malb\n\n\n```\nsage: x^2 in I\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/opt/maple11/lib/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/ideal.py in __contains__(self, x)\n    315         if self.gen().is_zero():\n    316             return x.is_zero()\n--> 317         return self.gen().divides(x)\n    318     \n    319     def __cmp__(self, other):\n\n<type 'exceptions.AttributeError'>: 'Polynomial_rational_dense' object has no attribute 'divides'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1214\n\n",
     "created_at": "2007-11-20T05:33:53Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_001214.json:
     "title": "error in polynomial ideal membership testing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1214",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 
 ```
@@ -54,7 +54,7 @@ archive/issue_comments_007537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1214#issuecomment-7537",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -102,16 +102,16 @@ sage: x^2 in I
 archive/issue_comments_007538.json:
 ```json
 {
-    "body": "Attachment [1214.patch](tarball://root/attachments/some-uuid/ticket1214/1214.patch) by mhansen created at 2007-11-20 05:51:05",
+    "body": "Attachment [1214.patch](tarball://root/attachments/some-uuid/ticket1214/1214.patch) by @mwhansen created at 2007-11-20 05:51:05",
     "created_at": "2007-11-20T05:51:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1214#issuecomment-7538",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1214.patch](tarball://root/attachments/some-uuid/ticket1214/1214.patch) by mhansen created at 2007-11-20 05:51:05
+Attachment [1214.patch](tarball://root/attachments/some-uuid/ticket1214/1214.patch) by @mwhansen created at 2007-11-20 05:51:05
 
 
 
@@ -120,16 +120,16 @@ Attachment [1214.patch](tarball://root/attachments/some-uuid/ticket1214/1214.pat
 archive/issue_comments_007539.json:
 ```json
 {
-    "body": "Changing assignee from malb to mhansen.",
+    "body": "Changing assignee from @malb to @mwhansen.",
     "created_at": "2007-11-20T05:51:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1214#issuecomment-7539",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from malb to mhansen.
+Changing assignee from @malb to @mwhansen.
 
 
 
@@ -143,7 +143,7 @@ archive/issue_comments_007540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1214#issuecomment-7540",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_007541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1214#issuecomment-7541",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

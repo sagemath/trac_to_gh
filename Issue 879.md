@@ -3,7 +3,7 @@
 archive/issues_000879.json:
 ```json
 {
-    "body": "Assignee: failure\n\nCC:  gfurnish mjo\n\n\"sage -testall\" has at least three parts (DSage unit tests, documentation doctests, library doctests).  If some documentation doctests fail, you have to know to look in the middle of the -testall output to notice; the end of the output may well say that all tests passed (meaning all library doctests).\n\nIssue created by migration from https://trac.sagemath.org/ticket/879\n\n",
+    "body": "Assignee: failure\n\nCC:  @garyfurnish @orlitzky\n\n\"sage -testall\" has at least three parts (DSage unit tests, documentation doctests, library doctests).  If some documentation doctests fail, you have to know to look in the middle of the -testall output to notice; the end of the output may well say that all tests passed (meaning all library doctests).\n\nIssue created by migration from https://trac.sagemath.org/ticket/879\n\n",
     "created_at": "2007-10-13T19:05:33Z",
     "labels": [
         "doctest coverage",
@@ -19,7 +19,7 @@ archive/issues_000879.json:
 ```
 Assignee: failure
 
-CC:  gfurnish mjo
+CC:  @garyfurnish @orlitzky
 
 "sage -testall" has at least three parts (DSage unit tests, documentation doctests, library doctests).  If some documentation doctests fail, you have to know to look in the middle of the -testall output to notice; the end of the output may well say that all tests passed (meaning all library doctests).
 
@@ -39,7 +39,7 @@ archive/issue_comments_005440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/879#issuecomment-5440",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_005443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/879#issuecomment-5443",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_005444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/879#issuecomment-5444",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_005445.json:
     "issue": "https://github.com/sagemath/sagetest/issues/879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/879#issuecomment-5445",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_005446.json:
     "issue": "https://github.com/sagemath/sagetest/issues/879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/879#issuecomment-5446",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_005447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/879#issuecomment-5447",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_005448.json:
     "issue": "https://github.com/sagemath/sagetest/issues/879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/879#issuecomment-5448",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

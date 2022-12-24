@@ -49,7 +49,7 @@ archive/issue_comments_024600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3493",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3493#issuecomment-24600",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_024601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3493",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3493#issuecomment-24601",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -80,16 +80,16 @@ The first issue doesn't seem to be a problem with the new documentation.  I'm at
 archive/issue_comments_024602.json:
 ```json
 {
-    "body": "Attachment [3493.patch](tarball://root/attachments/some-uuid/ticket3493/3493.patch) by jhpalmieri created at 2009-02-26 17:21:00",
+    "body": "Attachment [3493.patch](tarball://root/attachments/some-uuid/ticket3493/3493.patch) by @jhpalmieri created at 2009-02-26 17:21:00",
     "created_at": "2009-02-26T17:21:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3493",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3493#issuecomment-24602",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [3493.patch](tarball://root/attachments/some-uuid/ticket3493/3493.patch) by jhpalmieri created at 2009-02-26 17:21:00
+Attachment [3493.patch](tarball://root/attachments/some-uuid/ticket3493/3493.patch) by @jhpalmieri created at 2009-02-26 17:21:00
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_009499.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: libsingular\n\n\n```\nsage: from sage.libs.singular.function import singular_function\nsage: from sage.libs.singular.function import lib as singular_libary\nsage: singular_lib('triang.lib'\nsage: triangL = singular_function(\"triangL\"\nsage: P.<e,d,c,b,a> = PolynomialRing(QQ,5,order='lex'\nsage: I = sage.rings.ideal.Cyclic(P\nsage: triangL(I\nTraceback (most recent call last)\n..\nRuntimeError: There has been an error in a Singular function.\n\nsage: G = I.groebner_basis(\nsage: triangL(G,attributes={G:{\"isSB\":1}}\n[[e + d + c + b + a, ...]\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9499\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: libsingular\n\n\n```\nsage: from sage.libs.singular.function import singular_function\nsage: from sage.libs.singular.function import lib as singular_libary\nsage: singular_lib('triang.lib'\nsage: triangL = singular_function(\"triangL\"\nsage: P.<e,d,c,b,a> = PolynomialRing(QQ,5,order='lex'\nsage: I = sage.rings.ideal.Cyclic(P\nsage: triangL(I\nTraceback (most recent call last)\n..\nRuntimeError: There has been an error in a Singular function.\n\nsage: G = I.groebner_basis(\nsage: triangL(G,attributes={G:{\"isSB\":1}}\n[[e + d + c + b + a, ...]\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9499\n\n",
     "created_at": "2010-07-14T16:53:17Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_009499.json:
     "title": "recovery gracefully from libsingular errors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9499",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: libsingular
 
@@ -58,7 +58,7 @@ archive/issue_comments_091219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9499#issuecomment-91219",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_091220.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9499#issuecomment-91220",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_091221.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9499#issuecomment-91221",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_091222.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9499#issuecomment-91222",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_091223.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9499#issuecomment-91223",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -293,16 +293,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_091224.json:
 ```json
 {
-    "body": "Attachment [trac_9499.patch](tarball://root/attachments/some-uuid/ticket9499/trac_9499.patch) by malb created at 2010-07-14 22:10:36\n\nnext attempt",
+    "body": "Attachment [trac_9499.patch](tarball://root/attachments/some-uuid/ticket9499/trac_9499.patch) by @malb created at 2010-07-14 22:10:36\n\nnext attempt",
     "created_at": "2010-07-14T22:10:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9499#issuecomment-91224",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_9499.patch](tarball://root/attachments/some-uuid/ticket9499/trac_9499.patch) by malb created at 2010-07-14 22:10:36
+Attachment [trac_9499.patch](tarball://root/attachments/some-uuid/ticket9499/trac_9499.patch) by @malb created at 2010-07-14 22:10:36
 
 next attempt
 
@@ -318,7 +318,7 @@ archive/issue_comments_091225.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9499#issuecomment-91225",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_091226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9499#issuecomment-91226",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

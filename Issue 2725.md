@@ -3,7 +3,7 @@
 archive/issues_002725.json:
 ```json
 {
-    "body": "Assignee: malb\n\nThe attached patch adds a number of features and refactorings:\n\n1. A new degrees method which returns the degrees of all the variables in one swoop (and has other useful purposes)\n\n2. More doc-tests\n\n3. ETuple helper function to eliminate fragile duplicate code\n\n4. Fix some latex/repr bugs with -1 (continuation of #291)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2725\n\n",
+    "body": "Assignee: @malb\n\nThe attached patch adds a number of features and refactorings:\n\n1. A new degrees method which returns the degrees of all the variables in one swoop (and has other useful purposes)\n\n2. More doc-tests\n\n3. ETuple helper function to eliminate fragile duplicate code\n\n4. Fix some latex/repr bugs with -1 (continuation of #291)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2725\n\n",
     "created_at": "2008-03-29T19:54:16Z",
     "labels": [
         "commutative algebra",
@@ -17,7 +17,7 @@ archive/issues_002725.json:
     "user": "jbmohler"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 The attached patch adds a number of features and refactorings:
 
@@ -59,16 +59,16 @@ Attachment [etuple2.patch](tarball://root/attachments/some-uuid/ticket2725/etupl
 archive/issue_comments_018776.json:
 ```json
 {
-    "body": "Attachment [2725.patch](tarball://root/attachments/some-uuid/ticket2725/2725.patch) by mhansen created at 2008-03-29 20:08:16",
+    "body": "Attachment [2725.patch](tarball://root/attachments/some-uuid/ticket2725/2725.patch) by @mwhansen created at 2008-03-29 20:08:16",
     "created_at": "2008-03-29T20:08:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2725",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2725#issuecomment-18776",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2725.patch](tarball://root/attachments/some-uuid/ticket2725/2725.patch) by mhansen created at 2008-03-29 20:08:16
+Attachment [2725.patch](tarball://root/attachments/some-uuid/ticket2725/2725.patch) by @mwhansen created at 2008-03-29 20:08:16
 
 
 
@@ -82,7 +82,7 @@ archive/issue_comments_018777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2725",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2725#issuecomment-18777",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

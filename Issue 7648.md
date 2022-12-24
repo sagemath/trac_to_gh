@@ -3,7 +3,7 @@
 archive/issues_007648.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nOn 11/27/2009 05:47 AM, Minh Nguyen wrote:\n> On Fri, Nov 27, 2009 at 9:10 PM, Yotam Avital <> wrote:\n>> for i in range (1,5):\n>>     print '%6s %6s %6s'%(i, i^2, i^3)\n\nI think *part* of the problem could be line 294 of sagenb.interfaces.expect:\n\n       s = s.strip().rstrip(self._prompt)\n\n\nReplacing this with\n\n       s = s.rstrip(self._prompt)\n\nappears to restore the expected spacing.  But quitting and reopening the\nworksheet puts\n\n1      1      1\n    2      4      8\n    3      9     27\n    4     16     64\n\nin the output cell.  I think the problem here is line 910 (or so) of\nsagenb.notebook.cell:\n\n           out = '///\\n' + out.strip()\n\n\nReplacing this with\n\n           out = '///\\n' + out.strip('\\n')\n\nseems to solve this problem.  It also makes the text representation of\nthe worksheet more compact.\n\nNote: I haven't tested these changes extensively.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7648\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nOn 11/27/2009 05:47 AM, Minh Nguyen wrote:\n> On Fri, Nov 27, 2009 at 9:10 PM, Yotam Avital <> wrote:\n>> for i in range (1,5):\n>>     print '%6s %6s %6s'%(i, i^2, i^3)\n\nI think *part* of the problem could be line 294 of sagenb.interfaces.expect:\n\n       s = s.strip().rstrip(self._prompt)\n\n\nReplacing this with\n\n       s = s.rstrip(self._prompt)\n\nappears to restore the expected spacing.  But quitting and reopening the\nworksheet puts\n\n1      1      1\n    2      4      8\n    3      9     27\n    4     16     64\n\nin the output cell.  I think the problem here is line 910 (or so) of\nsagenb.notebook.cell:\n\n           out = '///\\n' + out.strip()\n\n\nReplacing this with\n\n           out = '///\\n' + out.strip('\\n')\n\nseems to solve this problem.  It also makes the text representation of\nthe worksheet more compact.\n\nNote: I haven't tested these changes extensively.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7648\n\n",
     "created_at": "2009-12-10T01:19:32Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_007648.json:
     "title": "notebook: issue with indentation of first line being wrong",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7648",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -71,16 +71,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7648
 archive/issue_comments_065381.json:
 ```json
 {
-    "body": "Attachment [trac_7648-missing_indent.patch](tarball://root/attachments/some-uuid/ticket7648/trac_7648-missing_indent.patch) by mpatel created at 2009-12-10 02:22:30\n\nMake the changes in the ticket description.  sagenb repo.",
+    "body": "Attachment [trac_7648-missing_indent.patch](tarball://root/attachments/some-uuid/ticket7648/trac_7648-missing_indent.patch) by @qed777 created at 2009-12-10 02:22:30\n\nMake the changes in the ticket description.  sagenb repo.",
     "created_at": "2009-12-10T02:22:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7648#issuecomment-65381",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7648-missing_indent.patch](tarball://root/attachments/some-uuid/ticket7648/trac_7648-missing_indent.patch) by mpatel created at 2009-12-10 02:22:30
+Attachment [trac_7648-missing_indent.patch](tarball://root/attachments/some-uuid/ticket7648/trac_7648-missing_indent.patch) by @qed777 created at 2009-12-10 02:22:30
 
 Make the changes in the ticket description.  sagenb repo.
 
@@ -96,7 +96,7 @@ archive/issue_comments_065382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7648#issuecomment-65382",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_065383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7648#issuecomment-65383",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_065384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7648#issuecomment-65384",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_065385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7648#issuecomment-65385",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_065386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7648#issuecomment-65386",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_065387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7648#issuecomment-65387",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

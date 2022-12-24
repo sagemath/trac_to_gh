@@ -14,7 +14,7 @@ archive/issues_000093.json:
     "title": "Create a native MS Windows program that starts colinux running SAGE, adjust memory, launches web browser etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/93",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: Gary Zablackis
@@ -62,7 +62,7 @@ archive/issue_comments_000450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/93",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/93#issuecomment-450",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_000451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/93",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/93#issuecomment-451",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

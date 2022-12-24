@@ -3,7 +3,7 @@
 archive/issues_003400.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nCC:  alexghitza\n\nFor example:\n\n\n```\nsage: M = Matrix(GF(2), [[1,1,1,1]])\nsage: G = GL(4,2)\nsage: N = G.0\nsage: M\n[1 1 1 1]\nsage: N\n\n[1 1 0 0]\n[0 1 0 0]\n[0 0 1 0]\n[0 0 0 1]\nsage: M*N\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/rlmill/sage-3.0.2/<ipython console> in <module>()\n\n/Users/rlmill/sage-3.0.2/element.pyx in sage.structure.element.Matrix.__mul__ (sage/structure/element.c:11352)()\n\n/Users/rlmill/sage-3.0.2/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c (sage/structure/coerce.c:5301)()\n\nTypeError: unsupported operand parent(s) for '*': 'Full MatrixSpace of 1 by 4 dense matrices over Finite Field of size 2' and 'General Linear Group of degree 4 over Finite Field of size 2'\nsage: M*N.matrix()\n[1 0 1 1]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3400\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  alexghitza\n\nFor example:\n\n\n```\nsage: M = Matrix(GF(2), [[1,1,1,1]])\nsage: G = GL(4,2)\nsage: N = G.0\nsage: M\n[1 1 1 1]\nsage: N\n\n[1 1 0 0]\n[0 1 0 0]\n[0 0 1 0]\n[0 0 0 1]\nsage: M*N\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/rlmill/sage-3.0.2/<ipython console> in <module>()\n\n/Users/rlmill/sage-3.0.2/element.pyx in sage.structure.element.Matrix.__mul__ (sage/structure/element.c:11352)()\n\n/Users/rlmill/sage-3.0.2/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c (sage/structure/coerce.c:5301)()\n\nTypeError: unsupported operand parent(s) for '*': 'Full MatrixSpace of 1 by 4 dense matrices over Finite Field of size 2' and 'General Linear Group of degree 4 over Finite Field of size 2'\nsage: M*N.matrix()\n[1 0 1 1]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3400\n\n",
     "created_at": "2008-06-11T16:23:08Z",
     "labels": [
         "coercion",
@@ -14,10 +14,10 @@ archive/issues_003400.json:
     "title": "Elements of GL(n,R) should coerce properly to matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3400",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 CC:  alexghitza
 
@@ -68,7 +68,7 @@ archive/issue_comments_023810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3400#issuecomment-23810",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -81,16 +81,16 @@ Changing status from new to assigned.
 archive/issue_comments_023811.json:
 ```json
 {
-    "body": "Changing assignee from robertwb to mhansen.",
+    "body": "Changing assignee from @robertwb to @mwhansen.",
     "created_at": "2008-09-19T06:55:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3400#issuecomment-23811",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from robertwb to mhansen.
+Changing assignee from @robertwb to @mwhansen.
 
 
 
@@ -104,7 +104,7 @@ archive/issue_comments_023812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3400#issuecomment-23812",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -117,16 +117,16 @@ Changing status from new to needs_review.
 archive/issue_comments_023813.json:
 ```json
 {
-    "body": "Attachment [3400-matrix-group-action.patch](tarball://root/attachments/some-uuid/ticket3400/3400-matrix-group-action.patch) by robertwb created at 2010-01-17 11:09:21",
+    "body": "Attachment [3400-matrix-group-action.patch](tarball://root/attachments/some-uuid/ticket3400/3400-matrix-group-action.patch) by @robertwb created at 2010-01-17 11:09:21",
     "created_at": "2010-01-17T11:09:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3400#issuecomment-23813",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3400-matrix-group-action.patch](tarball://root/attachments/some-uuid/ticket3400/3400-matrix-group-action.patch) by robertwb created at 2010-01-17 11:09:21
+Attachment [3400-matrix-group-action.patch](tarball://root/attachments/some-uuid/ticket3400/3400-matrix-group-action.patch) by @robertwb created at 2010-01-17 11:09:21
 
 
 
@@ -140,7 +140,7 @@ archive/issue_comments_023814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3400#issuecomment-23814",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_023815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3400#issuecomment-23815",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_023816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3400#issuecomment-23816",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

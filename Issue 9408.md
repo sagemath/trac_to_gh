@@ -3,7 +3,7 @@
 archive/issues_009408.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nKeywords: relativize\n\nDoes not work due to (maybe) denominators\n\n\n```\nsage: K.<a> = NumberField(x^4-4*x^3+12*x^2-16*x+8)\nsage: L.<u,v> = K.relativize(3*a**3 - 9*a**2 + 24*a -16)\nsage:#This seems OK\nsage: L2.<u2,v2> = K.relativize((3/4)*a**3 - (9/4)*a**2 + 6*a -4)\n```\n\nPariError:  (8)\n\nSimpler example\n\n\n```\nsage: L.<a,b> = QQ[i].relativize(1) #Ok\nsage: L.<a,b> = QQ[i].relativize(1/2) #PariError\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9408\n\n",
+    "body": "Assignee: @loefflerd\n\nKeywords: relativize\n\nDoes not work due to (maybe) denominators\n\n\n```\nsage: K.<a> = NumberField(x^4-4*x^3+12*x^2-16*x+8)\nsage: L.<u,v> = K.relativize(3*a**3 - 9*a**2 + 24*a -16)\nsage:#This seems OK\nsage: L2.<u2,v2> = K.relativize((3/4)*a**3 - (9/4)*a**2 + 6*a -4)\n```\n\nPariError:  (8)\n\nSimpler example\n\n\n```\nsage: L.<a,b> = QQ[i].relativize(1) #Ok\nsage: L.<a,b> = QQ[i].relativize(1/2) #PariError\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9408\n\n",
     "created_at": "2010-07-02T16:04:23Z",
     "labels": [
         "number fields",
@@ -14,10 +14,10 @@ archive/issues_009408.json:
     "title": "relativize in number fields is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9408",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
 Keywords: relativize
 
@@ -58,7 +58,7 @@ archive/issue_comments_089665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9408",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9408#issuecomment-89665",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_089666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9408",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9408#issuecomment-89666",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_089667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9408",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9408#issuecomment-89667",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_089668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9408",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9408#issuecomment-89668",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_089669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9408",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9408#issuecomment-89669",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

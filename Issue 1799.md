@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1799
 archive/issue_comments_011381.json:
 ```json
 {
-    "body": "Attachment [1799.patch](tarball://root/attachments/some-uuid/ticket1799/1799.patch) by mhansen created at 2008-01-17 05:45:42\n\nLooks good to me.",
+    "body": "Attachment [1799.patch](tarball://root/attachments/some-uuid/ticket1799/1799.patch) by @mwhansen created at 2008-01-17 05:45:42\n\nLooks good to me.",
     "created_at": "2008-01-17T05:45:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1799#issuecomment-11381",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1799.patch](tarball://root/attachments/some-uuid/ticket1799/1799.patch) by mhansen created at 2008-01-17 05:45:42
+Attachment [1799.patch](tarball://root/attachments/some-uuid/ticket1799/1799.patch) by @mwhansen created at 2008-01-17 05:45:42
 
 Looks good to me.
 

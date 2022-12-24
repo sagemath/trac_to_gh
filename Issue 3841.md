@@ -3,7 +3,7 @@
 archive/issues_003841.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nThis patch makes symbolic polynomials use libsingular via the ring interface by default.\nIt also contains a large number of doctest changes because polynomials in Sage have a better ordering.\n\n\n```\n%cython\nfrom sage.calculus.calculus import var\nfrom sage.rings.integer cimport Integer\nfrom random import random\ndef blah(rng):\n    global five\n    x,y = var('x,y')\n    foo = x\n    cdef i\n    for i from 0<=i<rng:\n        foo+= x**int(random()*1000)+y**int(random()*10000)+x+1\n    return foo\n\nThe python code used to test maxima was:\nsage: def blah(rng):\n   foo = x\n   for i in xrange(0, rng):\n       foo+=x^int(random()*10000)+y^int(random()*10000)+x+1; foo = simplify(foo)             \n   return foo\n\nI'm well aware that I'm comparing cython timings to python timings.. but the cython overhead isn't the dominating factor here.\nThe simplify exists to force it to go to maxima to evaluate the expression between additions (as singular does).  Otherwise this is not a very fair/real world comparison if Maxima gets to build the entire addition and send it to Maxima as one batch (and only do the addition once as opposed to rng times).  \n\n%timeit blah(10)\n\n125 loops, best of 3: 1.98 ms per loop\n\nMaxima: \nCPU times: user 0.14 s, sys: 0.05 s, total: 0.18 s\nWall time: 1.97 s\n\n%timeit blah(100)\n \t\n25 loops, best of 3: 20.8 ms per loop\n\nMaxima:\nCPU times: user 3.30 s, sys: 1.16 s, total: 4.47 s\nWall time: 28.89 s\n\n\n%timeit blah(1000)\n\t\n5 loops, best of 3: 214 ms per loop\n\nMaxima: Raises exception\n\n%timeit blah(10000)\n\n5 loops, best of 3: 2.09 s per loop\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3841\n\n",
+    "body": "Assignee: @garyfurnish\n\nThis patch makes symbolic polynomials use libsingular via the ring interface by default.\nIt also contains a large number of doctest changes because polynomials in Sage have a better ordering.\n\n\n```\n%cython\nfrom sage.calculus.calculus import var\nfrom sage.rings.integer cimport Integer\nfrom random import random\ndef blah(rng):\n    global five\n    x,y = var('x,y')\n    foo = x\n    cdef i\n    for i from 0<=i<rng:\n        foo+= x**int(random()*1000)+y**int(random()*10000)+x+1\n    return foo\n\nThe python code used to test maxima was:\nsage: def blah(rng):\n   foo = x\n   for i in xrange(0, rng):\n       foo+=x^int(random()*10000)+y^int(random()*10000)+x+1; foo = simplify(foo)             \n   return foo\n\nI'm well aware that I'm comparing cython timings to python timings.. but the cython overhead isn't the dominating factor here.\nThe simplify exists to force it to go to maxima to evaluate the expression between additions (as singular does).  Otherwise this is not a very fair/real world comparison if Maxima gets to build the entire addition and send it to Maxima as one batch (and only do the addition once as opposed to rng times).  \n\n%timeit blah(10)\n\n125 loops, best of 3: 1.98 ms per loop\n\nMaxima: \nCPU times: user 0.14 s, sys: 0.05 s, total: 0.18 s\nWall time: 1.97 s\n\n%timeit blah(100)\n \t\n25 loops, best of 3: 20.8 ms per loop\n\nMaxima:\nCPU times: user 3.30 s, sys: 1.16 s, total: 4.47 s\nWall time: 28.89 s\n\n\n%timeit blah(1000)\n\t\n5 loops, best of 3: 214 ms per loop\n\nMaxima: Raises exception\n\n%timeit blah(10000)\n\n5 loops, best of 3: 2.09 s per loop\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3841\n\n",
     "created_at": "2008-08-13T18:31:46Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_003841.json:
     "title": "[with patch, not ready for review] Use singular for calculus by default.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3841",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 This patch makes symbolic polynomials use libsingular via the ring interface by default.
 It also contains a large number of doctest changes because polynomials in Sage have a better ordering.
@@ -89,16 +89,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3841
 archive/issue_comments_027310.json:
 ```json
 {
-    "body": "Attachment [trac_3841_2.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_2.patch) by gfurnish created at 2008-08-14 04:45:45",
+    "body": "Attachment [trac_3841_2.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_2.patch) by @garyfurnish created at 2008-08-14 04:45:45",
     "created_at": "2008-08-14T04:45:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27310",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_3841_2.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_2.patch) by gfurnish created at 2008-08-14 04:45:45
+Attachment [trac_3841_2.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_2.patch) by @garyfurnish created at 2008-08-14 04:45:45
 
 
 
@@ -107,16 +107,16 @@ Attachment [trac_3841_2.patch](tarball://root/attachments/some-uuid/ticket3841/t
 archive/issue_comments_027311.json:
 ```json
 {
-    "body": "Attachment [trac_3841_3.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_3.patch) by gfurnish created at 2008-08-14 04:45:51",
+    "body": "Attachment [trac_3841_3.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_3.patch) by @garyfurnish created at 2008-08-14 04:45:51",
     "created_at": "2008-08-14T04:45:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27311",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_3841_3.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_3.patch) by gfurnish created at 2008-08-14 04:45:51
+Attachment [trac_3841_3.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_3.patch) by @garyfurnish created at 2008-08-14 04:45:51
 
 
 
@@ -125,16 +125,16 @@ Attachment [trac_3841_3.patch](tarball://root/attachments/some-uuid/ticket3841/t
 archive/issue_comments_027312.json:
 ```json
 {
-    "body": "Attachment [trac_3841_4.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_4.patch) by gfurnish created at 2008-08-14 04:51:27",
+    "body": "Attachment [trac_3841_4.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_4.patch) by @garyfurnish created at 2008-08-14 04:51:27",
     "created_at": "2008-08-14T04:51:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27312",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_3841_4.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_4.patch) by gfurnish created at 2008-08-14 04:51:27
+Attachment [trac_3841_4.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_4.patch) by @garyfurnish created at 2008-08-14 04:51:27
 
 
 
@@ -143,16 +143,16 @@ Attachment [trac_3841_4.patch](tarball://root/attachments/some-uuid/ticket3841/t
 archive/issue_comments_027313.json:
 ```json
 {
-    "body": "Attachment [llt_fix.patch](tarball://root/attachments/some-uuid/ticket3841/llt_fix.patch) by mhansen created at 2008-08-14 05:34:10",
+    "body": "Attachment [llt_fix.patch](tarball://root/attachments/some-uuid/ticket3841/llt_fix.patch) by @mwhansen created at 2008-08-14 05:34:10",
     "created_at": "2008-08-14T05:34:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27313",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [llt_fix.patch](tarball://root/attachments/some-uuid/ticket3841/llt_fix.patch) by mhansen created at 2008-08-14 05:34:10
+Attachment [llt_fix.patch](tarball://root/attachments/some-uuid/ticket3841/llt_fix.patch) by @mwhansen created at 2008-08-14 05:34:10
 
 
 
@@ -161,16 +161,16 @@ Attachment [llt_fix.patch](tarball://root/attachments/some-uuid/ticket3841/llt_f
 archive/issue_comments_027314.json:
 ```json
 {
-    "body": "Attachment [trac_3841_5.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_5.patch) by gfurnish created at 2008-08-14 19:01:22",
+    "body": "Attachment [trac_3841_5.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_5.patch) by @garyfurnish created at 2008-08-14 19:01:22",
     "created_at": "2008-08-14T19:01:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27314",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_3841_5.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_5.patch) by gfurnish created at 2008-08-14 19:01:22
+Attachment [trac_3841_5.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_5.patch) by @garyfurnish created at 2008-08-14 19:01:22
 
 
 
@@ -179,16 +179,16 @@ Attachment [trac_3841_5.patch](tarball://root/attachments/some-uuid/ticket3841/t
 archive/issue_comments_027315.json:
 ```json
 {
-    "body": "Attachment [trac_3841_flat.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_flat.patch) by gfurnish created at 2008-08-14 22:10:25\n\nReplaces the other patches.",
+    "body": "Attachment [trac_3841_flat.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_flat.patch) by @garyfurnish created at 2008-08-14 22:10:25\n\nReplaces the other patches.",
     "created_at": "2008-08-14T22:10:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27315",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_3841_flat.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_flat.patch) by gfurnish created at 2008-08-14 22:10:25
+Attachment [trac_3841_flat.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_flat.patch) by @garyfurnish created at 2008-08-14 22:10:25
 
 Replaces the other patches.
 
@@ -204,7 +204,7 @@ archive/issue_comments_027316.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27316",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -217,16 +217,16 @@ Pre-review comments.
 archive/issue_comments_027317.json:
 ```json
 {
-    "body": "Attachment [symbolic_comments.txt](tarball://root/attachments/some-uuid/ticket3841/symbolic_comments.txt) by rlm created at 2008-08-14 23:20:32\n\nI didn't make it through the whole patch, but these are my initial impressions. I'll have much more time to give this my full attention tomorrow.",
+    "body": "Attachment [symbolic_comments.txt](tarball://root/attachments/some-uuid/ticket3841/symbolic_comments.txt) by @rlmill created at 2008-08-14 23:20:32\n\nI didn't make it through the whole patch, but these are my initial impressions. I'll have much more time to give this my full attention tomorrow.",
     "created_at": "2008-08-14T23:20:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27317",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [symbolic_comments.txt](tarball://root/attachments/some-uuid/ticket3841/symbolic_comments.txt) by rlm created at 2008-08-14 23:20:32
+Attachment [symbolic_comments.txt](tarball://root/attachments/some-uuid/ticket3841/symbolic_comments.txt) by @rlmill created at 2008-08-14 23:20:32
 
 I didn't make it through the whole patch, but these are my initial impressions. I'll have much more time to give this my full attention tomorrow.
 
@@ -242,7 +242,7 @@ archive/issue_comments_027318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27318",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_027319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27319",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_027320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27320",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_027321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27321",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -368,7 +368,7 @@ archive/issue_comments_027322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27322",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_027323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27323",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -406,7 +406,7 @@ archive/issue_comments_027324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27324",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

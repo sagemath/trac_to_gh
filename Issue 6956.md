@@ -3,7 +3,7 @@
 archive/issues_006956.json:
 ```json
 {
-    "body": "CC:  jason kcrisman\n\nFrom sage-support:\n\n\n```\nOn Fri, 18 Sep 2009 13:15:46 -0500\nJason Grout <jason-sage@creativetrax.com> wrote:\n\n> On alpha.sagenb.org, I get the following:\n> \n> sage: t=var('t')\n> sage: diff(cot(t),t)\n> D[0](cot)(t)\n> sage: diff(cos(t)/sin(t),t)\n> -cos(t)^2/sin(t)^2 - 1\n> \n> \n> Does Sage not know that cot(t) is cos(t)/sin(t)? \n```\n\nUnfortunately it doesn't. \n\nGiNaC doesn't define the function `cot`. Sage defines it in the file\n`sage/functions/trig.py` starting at line 184. I suppose it was written quickly by Mike during the symbolics switch.\n\nDefining a custom derivative function (named `_derivative_`) in that\nclass should fix this.\n\nHere is the thread:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/752de34c876720cc\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6956\n\n",
+    "body": "CC:  @jasongrout @kcrisman\n\nFrom sage-support:\n\n\n```\nOn Fri, 18 Sep 2009 13:15:46 -0500\nJason Grout <jason-sage@creativetrax.com> wrote:\n\n> On alpha.sagenb.org, I get the following:\n> \n> sage: t=var('t')\n> sage: diff(cot(t),t)\n> D[0](cot)(t)\n> sage: diff(cos(t)/sin(t),t)\n> -cos(t)^2/sin(t)^2 - 1\n> \n> \n> Does Sage not know that cot(t) is cos(t)/sin(t)? \n```\n\nUnfortunately it doesn't. \n\nGiNaC doesn't define the function `cot`. Sage defines it in the file\n`sage/functions/trig.py` starting at line 184. I suppose it was written quickly by Mike during the symbolics switch.\n\nDefining a custom derivative function (named `_derivative_`) in that\nclass should fix this.\n\nHere is the thread:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/752de34c876720cc\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6956\n\n",
     "created_at": "2009-09-18T18:32:18Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_006956.json:
     "title": "cannot differentiate cotangent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6956",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-CC:  jason kcrisman
+CC:  @jasongrout @kcrisman
 
 From sage-support:
 
@@ -62,16 +62,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6956
 archive/issue_comments_057540.json:
 ```json
 {
-    "body": "Attachment [trac_6956-derivatives.patch](tarball://root/attachments/some-uuid/ticket6956/trac_6956-derivatives.patch) by timdumol created at 2009-09-19 00:24:46\n\nAdded _derivative() functions to all functions in `trig.py` and `hyperbolic.py`",
+    "body": "Attachment [trac_6956-derivatives.patch](tarball://root/attachments/some-uuid/ticket6956/trac_6956-derivatives.patch) by @TimDumol created at 2009-09-19 00:24:46\n\nAdded _derivative() functions to all functions in `trig.py` and `hyperbolic.py`",
     "created_at": "2009-09-19T00:24:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6956#issuecomment-57540",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_6956-derivatives.patch](tarball://root/attachments/some-uuid/ticket6956/trac_6956-derivatives.patch) by timdumol created at 2009-09-19 00:24:46
+Attachment [trac_6956-derivatives.patch](tarball://root/attachments/some-uuid/ticket6956/trac_6956-derivatives.patch) by @TimDumol created at 2009-09-19 00:24:46
 
 Added _derivative() functions to all functions in `trig.py` and `hyperbolic.py`
 
@@ -87,7 +87,7 @@ archive/issue_comments_057541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6956#issuecomment-57541",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_057542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6956#issuecomment-57542",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_057543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6956#issuecomment-57543",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -152,16 +152,16 @@ Added `_derivative_()` functions to all functions in trig.py and hyperbolic.py. 
 archive/issue_comments_057544.json:
 ```json
 {
-    "body": "Attachment [trac_6956-derivatives.2.patch](tarball://root/attachments/some-uuid/ticket6956/trac_6956-derivatives.2.patch) by timdumol created at 2009-09-20 00:31:20\n\nFunctions that inherit from `PrimitiveFunction` are automatically given `nargs = 1` on L800 of `symbolic/function.pyx`. So the silent dropping of arguments is more of a usability problem on the Symbolic side.\n\nI've made the changes for the derivatives of `asech(x)` and `acsch(x)`. I've also generalized the derivatives for `asec(x)` and `acsc(x)`.\n\nAnyone who wants to review the derivatives can check: http://mathworld.wolfram.com/Derivative.html, http://mathworld.wolfram.com/InverseHyperbolicFunctions.html and http://mathworld.wolfram.com/InverseTrigonometricFunctions.html",
+    "body": "Attachment [trac_6956-derivatives.2.patch](tarball://root/attachments/some-uuid/ticket6956/trac_6956-derivatives.2.patch) by @TimDumol created at 2009-09-20 00:31:20\n\nFunctions that inherit from `PrimitiveFunction` are automatically given `nargs = 1` on L800 of `symbolic/function.pyx`. So the silent dropping of arguments is more of a usability problem on the Symbolic side.\n\nI've made the changes for the derivatives of `asech(x)` and `acsch(x)`. I've also generalized the derivatives for `asec(x)` and `acsc(x)`.\n\nAnyone who wants to review the derivatives can check: http://mathworld.wolfram.com/Derivative.html, http://mathworld.wolfram.com/InverseHyperbolicFunctions.html and http://mathworld.wolfram.com/InverseTrigonometricFunctions.html",
     "created_at": "2009-09-20T00:31:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6956#issuecomment-57544",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_6956-derivatives.2.patch](tarball://root/attachments/some-uuid/ticket6956/trac_6956-derivatives.2.patch) by timdumol created at 2009-09-20 00:31:20
+Attachment [trac_6956-derivatives.2.patch](tarball://root/attachments/some-uuid/ticket6956/trac_6956-derivatives.2.patch) by @TimDumol created at 2009-09-20 00:31:20
 
 Functions that inherit from `PrimitiveFunction` are automatically given `nargs = 1` on L800 of `symbolic/function.pyx`. So the silent dropping of arguments is more of a usability problem on the Symbolic side.
 
@@ -181,7 +181,7 @@ archive/issue_comments_057545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6956#issuecomment-57545",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_057546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6956#issuecomment-57546",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

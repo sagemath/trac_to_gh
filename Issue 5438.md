@@ -3,7 +3,7 @@
 archive/issues_005438.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  whuss\n\nKeywords: plot fill\n\nThe following example from documentation seems to work:\n\n\n```\ndef b(n): return lambda x: bessel_J(n, x) + 0.5*(n-1)\nplot([b(c) for c in [1..5]], 0, 40, fill = dict([(i, i+1) for i in [0..3]]))\n```\n\nbut the behavior is the same as\n\n```\ndef b(n): return lambda x: bessel_J(n, x) + 0.5*(n-1)\nplot([b(c) for c in [1..5]], 0, 40, fill = dict([(i, 5) for i in [0..3]]))\n```\n\nor anything else that evaluates to True as the second element of the dict.  The proper behavior is \n\n```\ndef b(n): return lambda x: bessel_J(n, x) + 0.5*(n-1)\nplot([b(c) for c in [1..5]], 0, 40, fill = dict([(i, [i+1]) for i in [0..3]]))\n```\n\nwhich is incidentally quite beautiful.\n\nThere are a few other such misleading/wrong example, and the documentation for how to use a dictionary which is a little confusing for people not familiar with Python yet\n\nHowever, this is really related to a bug, namely that for some reason the option of plotting between a function and a line isn't parsing properly.  These should hopefully be easy to fix and are closely related enough that one ticket seemed appropriate.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5438\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  whuss\n\nKeywords: plot fill\n\nThe following example from documentation seems to work:\n\n\n```\ndef b(n): return lambda x: bessel_J(n, x) + 0.5*(n-1)\nplot([b(c) for c in [1..5]], 0, 40, fill = dict([(i, i+1) for i in [0..3]]))\n```\n\nbut the behavior is the same as\n\n```\ndef b(n): return lambda x: bessel_J(n, x) + 0.5*(n-1)\nplot([b(c) for c in [1..5]], 0, 40, fill = dict([(i, 5) for i in [0..3]]))\n```\n\nor anything else that evaluates to True as the second element of the dict.  The proper behavior is \n\n```\ndef b(n): return lambda x: bessel_J(n, x) + 0.5*(n-1)\nplot([b(c) for c in [1..5]], 0, 40, fill = dict([(i, [i+1]) for i in [0..3]]))\n```\n\nwhich is incidentally quite beautiful.\n\nThere are a few other such misleading/wrong example, and the documentation for how to use a dictionary which is a little confusing for people not familiar with Python yet\n\nHowever, this is really related to a bug, namely that for some reason the option of plotting between a function and a line isn't parsing properly.  These should hopefully be easy to fix and are closely related enough that one ticket seemed appropriate.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5438\n\n",
     "created_at": "2009-03-04T17:31:01Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_005438.json:
     "title": "Incorrect documentation and/or functionality in plot filling",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5438",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  whuss
 
@@ -62,16 +62,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5438
 archive/issue_comments_042059.json:
 ```json
 {
-    "body": "Changing assignee from was to kcrisman.",
+    "body": "Changing assignee from @williamstein to @kcrisman.",
     "created_at": "2009-03-04T17:47:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5438#issuecomment-42059",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Changing assignee from was to kcrisman.
+Changing assignee from @williamstein to @kcrisman.
 
 
 
@@ -85,7 +85,7 @@ archive/issue_comments_042060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5438#issuecomment-42060",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_042061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5438#issuecomment-42061",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_042062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5438#issuecomment-42062",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_042065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5438#issuecomment-42065",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_042069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5438#issuecomment-42069",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -437,7 +437,7 @@ archive/issue_comments_042070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5438#issuecomment-42070",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -450,16 +450,16 @@ Based on 3.4
 archive/issue_comments_042071.json:
 ```json
 {
-    "body": "Attachment [trac_5438.patch](tarball://root/attachments/some-uuid/ticket5438/trac_5438.patch) by kcrisman created at 2009-03-29 02:57:51\n\nThis has added doctest, clarified yet more stuff, changed f to f(x) in anticipation of the Pynac switch (since the doctests would happen outside of plotting), and also fixed one weird but inconsequential bug in the slope field plot (sqrt was imported twice, but only the second one counted - which was good, because symbolic is what you want there).  Hope this satisfies all concerns.",
+    "body": "Attachment [trac_5438.patch](tarball://root/attachments/some-uuid/ticket5438/trac_5438.patch) by @kcrisman created at 2009-03-29 02:57:51\n\nThis has added doctest, clarified yet more stuff, changed f to f(x) in anticipation of the Pynac switch (since the doctests would happen outside of plotting), and also fixed one weird but inconsequential bug in the slope field plot (sqrt was imported twice, but only the second one counted - which was good, because symbolic is what you want there).  Hope this satisfies all concerns.",
     "created_at": "2009-03-29T02:57:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5438#issuecomment-42071",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_5438.patch](tarball://root/attachments/some-uuid/ticket5438/trac_5438.patch) by kcrisman created at 2009-03-29 02:57:51
+Attachment [trac_5438.patch](tarball://root/attachments/some-uuid/ticket5438/trac_5438.patch) by @kcrisman created at 2009-03-29 02:57:51
 
 This has added doctest, clarified yet more stuff, changed f to f(x) in anticipation of the Pynac switch (since the doctests would happen outside of plotting), and also fixed one weird but inconsequential bug in the slope field plot (sqrt was imported twice, but only the second one counted - which was good, because symbolic is what you want there).  Hope this satisfies all concerns.
 
@@ -536,7 +536,7 @@ archive/issue_comments_042074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5438#issuecomment-42074",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -554,7 +554,7 @@ archive/issue_comments_042075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5438#issuecomment-42075",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008693.json:
 ```json
 {
-    "body": "Assignee: justin\n\nCC:  lorenz\n\nKeywords: quadratic forms, basis, automorphisms\n\nQuadraticForm::basis_of_short_vectors does not actually ensure the list of vectors it returns is a basis, it only assures that it spans a full rank sub-lattice.\n\nIn particular in the following example (E8):\n\n\n\n```\nQ = QuadraticForm( matrix( [[2,0,0,0,0,0,0,1],\n                            [0,2,1,1,1,1,1,1],\n                            [0,1,2,1,1,1,1,1],\n                            [0,1,1,2,1,1,1,1],\n                            [0,1,1,1,2,1,1,1],\n                            [0,1,1,1,1,2,1,1],\n                            [0,1,1,1,1,1,2,0],\n                            [1,1,1,1,1,1,0,2]] ))\nB = Q.basis_of_short_vectors()\nmatrix(B).det()\n```\n\n\n\nThe result is -2, which indicates we did not get a basis.\nNote that the above means that sage likely returns incorrect results about the automorphism groups of a number of interesting lattices.\nI am attaching some sample code which (once properly merged {and tested}) could be used to correct the issue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8693\n\n",
+    "body": "Assignee: justin\n\nCC:  @yyyyx4\n\nKeywords: quadratic forms, basis, automorphisms\n\nQuadraticForm::basis_of_short_vectors does not actually ensure the list of vectors it returns is a basis, it only assures that it spans a full rank sub-lattice.\n\nIn particular in the following example (E8):\n\n\n\n```\nQ = QuadraticForm( matrix( [[2,0,0,0,0,0,0,1],\n                            [0,2,1,1,1,1,1,1],\n                            [0,1,2,1,1,1,1,1],\n                            [0,1,1,2,1,1,1,1],\n                            [0,1,1,1,2,1,1,1],\n                            [0,1,1,1,1,2,1,1],\n                            [0,1,1,1,1,1,2,0],\n                            [1,1,1,1,1,1,0,2]] ))\nB = Q.basis_of_short_vectors()\nmatrix(B).det()\n```\n\n\n\nThe result is -2, which indicates we did not get a basis.\nNote that the above means that sage likely returns incorrect results about the automorphism groups of a number of interesting lattices.\nI am attaching some sample code which (once properly merged {and tested}) could be used to correct the issue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8693\n\n",
     "created_at": "2010-04-15T18:51:18Z",
     "labels": [
         "quadratic forms",
@@ -19,7 +19,7 @@ archive/issues_008693.json:
 ```
 Assignee: justin
 
-CC:  lorenz
+CC:  @yyyyx4
 
 Keywords: quadratic forms, basis, automorphisms
 
@@ -84,7 +84,7 @@ archive/issue_comments_079194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8693#issuecomment-79194",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_079196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8693#issuecomment-79196",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 

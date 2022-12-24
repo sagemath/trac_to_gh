@@ -14,7 +14,7 @@ archive/issues_009194.json:
     "title": "Expose and extend the thematic tutorial on symmetric functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9194",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 Assignee: sage-combinat
@@ -52,7 +52,7 @@ archive/issue_comments_086021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9194#issuecomment-86021",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_086022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9194#issuecomment-86022",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_086023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9194#issuecomment-86023",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_086024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9194#issuecomment-86024",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_086025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9194#issuecomment-86025",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

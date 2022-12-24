@@ -14,7 +14,7 @@ archive/issues_008706.json:
     "title": "sage-4.4.alpha0: numerical noise in chmm.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8706",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: amhou
@@ -37,7 +37,7 @@ archive/issue_comments_079412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8706#issuecomment-79412",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to needs_review.
 archive/issue_comments_079413.json:
 ```json
 {
-    "body": "Attachment [trac_8706.patch](tarball://root/attachments/some-uuid/ticket8706/trac_8706.patch) by was created at 2010-04-17 19:24:52",
+    "body": "Attachment [trac_8706.patch](tarball://root/attachments/some-uuid/ticket8706/trac_8706.patch) by @williamstein created at 2010-04-17 19:24:52",
     "created_at": "2010-04-17T19:24:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8706#issuecomment-79413",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_8706.patch](tarball://root/attachments/some-uuid/ticket8706/trac_8706.patch) by was created at 2010-04-17 19:24:52
+Attachment [trac_8706.patch](tarball://root/attachments/some-uuid/ticket8706/trac_8706.patch) by @williamstein created at 2010-04-17 19:24:52
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_079414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8706#issuecomment-79414",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_079415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8706#issuecomment-79415",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_079416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8706#issuecomment-79416",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_079417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8706#issuecomment-79417",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

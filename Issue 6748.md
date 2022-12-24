@@ -14,7 +14,7 @@ archive/issues_006748.json:
     "title": "[with patch, needs review] Adds Graph.Cliquer to the reference",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6748",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: tba
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6748
 archive/issue_comments_055516.json:
 ```json
 {
-    "body": "Attachment [trac-6748-typo.patch](tarball://root/attachments/some-uuid/ticket6748/trac-6748-typo.patch) by jason created at 2009-09-22 16:02:26\n\napply on top of previous patch",
+    "body": "Attachment [trac-6748-typo.patch](tarball://root/attachments/some-uuid/ticket6748/trac-6748-typo.patch) by @jasongrout created at 2009-09-22 16:02:26\n\napply on top of previous patch",
     "created_at": "2009-09-22T16:02:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6748#issuecomment-55516",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-6748-typo.patch](tarball://root/attachments/some-uuid/ticket6748/trac-6748-typo.patch) by jason created at 2009-09-22 16:02:26
+Attachment [trac-6748-typo.patch](tarball://root/attachments/some-uuid/ticket6748/trac-6748-typo.patch) by @jasongrout created at 2009-09-22 16:02:26
 
 apply on top of previous patch
 
@@ -59,7 +59,7 @@ archive/issue_comments_055517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6748#issuecomment-55517",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

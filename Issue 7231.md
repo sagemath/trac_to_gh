@@ -3,7 +3,7 @@
 archive/issues_007231.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  rbeezer rws\n\nKeywords: Vigenere cipher, cryptanalysis\n\nAs the subject says. This depends on #7124.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7231\n\n",
+    "body": "Assignee: somebody\n\nCC:  @rbeezer @rwst\n\nKeywords: Vigenere cipher, cryptanalysis\n\nAs the subject says. This depends on #7124.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7231\n\n",
     "created_at": "2009-10-16T00:52:35Z",
     "labels": [
         "cryptography",
@@ -19,7 +19,7 @@ archive/issues_007231.json:
 ```
 Assignee: somebody
 
-CC:  rbeezer rws
+CC:  @rbeezer @rwst
 
 Keywords: Vigenere cipher, cryptanalysis
 

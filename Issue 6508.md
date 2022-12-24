@@ -14,7 +14,7 @@ archive/issues_006508.json:
     "title": "make installing extcode depend on mercurial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6508",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

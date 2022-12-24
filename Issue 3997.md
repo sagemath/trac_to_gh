@@ -3,7 +3,7 @@
 archive/issues_003997.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3997\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3997\n\n",
     "created_at": "2008-08-29T21:58:20Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_003997.json:
     "title": "[with patch, needs review] doctesst and fix the Lisp interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3997",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3997
 archive/issue_comments_028716.json:
 ```json
 {
-    "body": "Attachment [trac_3997.patch](tarball://root/attachments/some-uuid/ticket3997/trac_3997.patch) by mhansen created at 2008-08-29 21:58:27",
+    "body": "Attachment [trac_3997.patch](tarball://root/attachments/some-uuid/ticket3997/trac_3997.patch) by @mwhansen created at 2008-08-29 21:58:27",
     "created_at": "2008-08-29T21:58:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3997#issuecomment-28716",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3997.patch](tarball://root/attachments/some-uuid/ticket3997/trac_3997.patch) by mhansen created at 2008-08-29 21:58:27
+Attachment [trac_3997.patch](tarball://root/attachments/some-uuid/ticket3997/trac_3997.patch) by @mwhansen created at 2008-08-29 21:58:27
 
 
 

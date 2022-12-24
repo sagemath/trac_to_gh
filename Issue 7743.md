@@ -3,7 +3,7 @@
 archive/issues_007743.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nKeywords: integration\n\nThis patch fixes two issues with the piecewise class, brought up in this sage-support thread:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/18d830ece7826898/86c401e4d6b8f3dd\n\nThe first issue is that when a piece of the function belongs to the Integer ring, integration doesn't work. This is fixed by coercing each piece to the symbolic expression ring.\n\nThe second issue is that there are cases where maxima needs to be given assumptions about the domain of x for the piece being integrated. This is fixed with the assume and forget functions.\n\nAdditional unit tests have been added (or existing tests modified) for each issue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7743\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: integration\n\nThis patch fixes two issues with the piecewise class, brought up in this sage-support thread:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/18d830ece7826898/86c401e4d6b8f3dd\n\nThe first issue is that when a piece of the function belongs to the Integer ring, integration doesn't work. This is fixed by coercing each piece to the symbolic expression ring.\n\nThe second issue is that there are cases where maxima needs to be given assumptions about the domain of x for the piece being integrated. This is fixed with the assume and forget functions.\n\nAdditional unit tests have been added (or existing tests modified) for each issue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7743\n\n",
     "created_at": "2009-12-19T22:52:08Z",
     "labels": [
         "algebra",
@@ -17,7 +17,7 @@ archive/issues_007743.json:
     "user": "pbutler"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Keywords: integration
 
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7743
 archive/issue_comments_066606.json:
 ```json
 {
-    "body": "Attachment [12159.patch](tarball://root/attachments/some-uuid/ticket7743/12159.patch) by AlexGhitza created at 2009-12-19 23:36:02",
+    "body": "Attachment [12159.patch](tarball://root/attachments/some-uuid/ticket7743/12159.patch) by @aghitza created at 2009-12-19 23:36:02",
     "created_at": "2009-12-19T23:36:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7743",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7743#issuecomment-66606",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [12159.patch](tarball://root/attachments/some-uuid/ticket7743/12159.patch) by AlexGhitza created at 2009-12-19 23:36:02
+Attachment [12159.patch](tarball://root/attachments/some-uuid/ticket7743/12159.patch) by @aghitza created at 2009-12-19 23:36:02
 
 
 
@@ -65,7 +65,7 @@ archive/issue_comments_066607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7743",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7743#issuecomment-66607",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -78,16 +78,16 @@ Changing component from algebra to calculus.
 archive/issue_comments_066608.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to burcin.",
+    "body": "Changing assignee from @aghitza to @burcin.",
     "created_at": "2009-12-19T23:36:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7743",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7743#issuecomment-66608",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from AlexGhitza to burcin.
+Changing assignee from @aghitza to @burcin.
 
 
 
@@ -101,7 +101,7 @@ archive/issue_comments_066609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7743",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7743#issuecomment-66609",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_066610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7743",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7743#issuecomment-66610",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_066613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7743",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7743#issuecomment-66613",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_066614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7743",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7743#issuecomment-66614",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_066617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7743",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7743#issuecomment-66617",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_066618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7743",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7743#issuecomment-66618",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_066619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7743",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7743#issuecomment-66619",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -314,7 +314,7 @@ archive/issue_comments_066620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7743",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7743#issuecomment-66620",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -332,7 +332,7 @@ archive/issue_comments_066621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7743",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7743#issuecomment-66621",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -350,7 +350,7 @@ archive/issue_comments_066622.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7743",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7743#issuecomment-66622",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

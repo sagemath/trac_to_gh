@@ -3,7 +3,7 @@
 archive/issues_009476.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  was wuthrich\n\nKeywords: eclib modular symbols\n\nI have made several enhancements to eclib:\n\n1. Support for minus space modular symbols\n2. Some sparse linear algebra improvements\n\nThe new version is called eclib-20100711 since it is more than just a patch-level change.  New spkgs will be linked here shortly.\n\nThe interface in sage/libs/cremona has been updated accordingly in the patch (to appear shortly);  this depends on #9441\n\nIssue created by migration from https://trac.sagemath.org/ticket/9476\n\n",
+    "body": "Assignee: tbd\n\nCC:  @williamstein @categorie\n\nKeywords: eclib modular symbols\n\nI have made several enhancements to eclib:\n\n1. Support for minus space modular symbols\n2. Some sparse linear algebra improvements\n\nThe new version is called eclib-20100711 since it is more than just a patch-level change.  New spkgs will be linked here shortly.\n\nThe interface in sage/libs/cremona has been updated accordingly in the patch (to appear shortly);  this depends on #9441\n\nIssue created by migration from https://trac.sagemath.org/ticket/9476\n\n",
     "created_at": "2010-07-11T20:36:54Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_009476.json:
     "title": "Upgrade eclib to version 20100711",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9476",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 Assignee: tbd
 
-CC:  was wuthrich
+CC:  @williamstein @categorie
 
 Keywords: eclib modular symbols
 
@@ -48,7 +48,7 @@ archive/issue_comments_090959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9476#issuecomment-90959",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -61,16 +61,16 @@ The new spkg is here: http://www.warwick.ac.uk/staff/J.E.Cremona/eclib-20100711.
 archive/issue_comments_090960.json:
 ```json
 {
-    "body": "Attachment [trac_9476-eclib.patch](tarball://root/attachments/some-uuid/ticket9476/trac_9476-eclib.patch) by cremona created at 2010-07-11 21:25:10\n\nApplies after eclib-20100711.patch and trac_9441-atkin-lehner.patch",
+    "body": "Attachment [trac_9476-eclib.patch](tarball://root/attachments/some-uuid/ticket9476/trac_9476-eclib.patch) by @JohnCremona created at 2010-07-11 21:25:10\n\nApplies after eclib-20100711.patch and trac_9441-atkin-lehner.patch",
     "created_at": "2010-07-11T21:25:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9476#issuecomment-90960",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_9476-eclib.patch](tarball://root/attachments/some-uuid/ticket9476/trac_9476-eclib.patch) by cremona created at 2010-07-11 21:25:10
+Attachment [trac_9476-eclib.patch](tarball://root/attachments/some-uuid/ticket9476/trac_9476-eclib.patch) by @JohnCremona created at 2010-07-11 21:25:10
 
 Applies after eclib-20100711.patch and trac_9441-atkin-lehner.patch
 
@@ -86,7 +86,7 @@ archive/issue_comments_090961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9476#issuecomment-90961",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_090962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9476#issuecomment-90962",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_090963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9476#issuecomment-90963",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_090964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9476#issuecomment-90964",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_090965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9476#issuecomment-90965",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_090966.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9476#issuecomment-90966",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_090967.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9476#issuecomment-90967",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_090968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9476#issuecomment-90968",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_090969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9476#issuecomment-90969",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_090970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9476#issuecomment-90970",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_090971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9476#issuecomment-90971",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -313,7 +313,7 @@ archive/issue_comments_090972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9476#issuecomment-90972",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -326,16 +326,16 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_090973.json:
 ```json
 {
-    "body": "Attachment [trac_9476-remove-not-implemented-error.patch](tarball://root/attachments/some-uuid/ticket9476/trac_9476-remove-not-implemented-error.patch) by rlm created at 2010-07-17 14:31:49",
+    "body": "Attachment [trac_9476-remove-not-implemented-error.patch](tarball://root/attachments/some-uuid/ticket9476/trac_9476-remove-not-implemented-error.patch) by @rlmill created at 2010-07-17 14:31:49",
     "created_at": "2010-07-17T14:31:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9476#issuecomment-90973",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_9476-remove-not-implemented-error.patch](tarball://root/attachments/some-uuid/ticket9476/trac_9476-remove-not-implemented-error.patch) by rlm created at 2010-07-17 14:31:49
+Attachment [trac_9476-remove-not-implemented-error.patch](tarball://root/attachments/some-uuid/ticket9476/trac_9476-remove-not-implemented-error.patch) by @rlmill created at 2010-07-17 14:31:49
 
 
 
@@ -349,7 +349,7 @@ archive/issue_comments_090974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9476#issuecomment-90974",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -367,7 +367,7 @@ archive/issue_comments_090975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9476#issuecomment-90975",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -385,7 +385,7 @@ archive/issue_comments_090976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9476#issuecomment-90976",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -417,7 +417,7 @@ archive/issue_comments_090977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9476#issuecomment-90977",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -435,7 +435,7 @@ archive/issue_comments_090978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9476#issuecomment-90978",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -453,7 +453,7 @@ archive/issue_comments_090979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9476#issuecomment-90979",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -471,7 +471,7 @@ archive/issue_comments_090980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9476#issuecomment-90980",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -489,7 +489,7 @@ archive/issue_comments_090981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9476#issuecomment-90981",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -507,7 +507,7 @@ archive/issue_comments_090982.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9476#issuecomment-90982",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

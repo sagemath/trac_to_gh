@@ -14,7 +14,7 @@ archive/issues_003555.json:
     "title": "[with patch; needs review] notebook -- fix bug where it saved the notebook every tie it checked for idle worksheets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3555",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby

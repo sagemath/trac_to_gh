@@ -3,7 +3,7 @@
 archive/issues_002245.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe doctest coverage for devel/sage/sage/modular/abvar is as follows:\n\n```\nteragon:abvar was$ sage -coverage .\nabvar.py: 62% (20 of 32)\nabvar_ambient_jacobian.py: 28% (2 of 7)\nabvar_modsym_factor.py: 60% (3 of 5)\nabvar_newform.py: 0% (0 of 1)\nconstructor.py: 100% (3 of 3)\ncuspidal_subgroup.py: 16% (1 of 6)\nfinite_subgroup.py: 12% (4 of 33)\nhecke_operator.py: 66% (4 of 6)\nhomology.py: 57% (16 of 28)\nhomspace.py: 0% (0 of 2)\nlseries.py: 0% (0 of 6)\nmorphism.py: 0% (0 of 2)\ntorsion_point.py: 0% (0 of 2)\ntorsion_subgroup.py: 37% (3 of 8)\n\nOverall weighted coverage score:  39.4%\nTotal number of functions:  141\n```\n\n\nThe goal of this ticket is to change that to 100%.\n\nThis is in preparation for substantial work to move\nthe modular abelian varieties package forward in preparation\nfor lots of enhancements to it that are coming up. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2245\n\n",
+    "body": "Assignee: @williamstein\n\nThe doctest coverage for devel/sage/sage/modular/abvar is as follows:\n\n```\nteragon:abvar was$ sage -coverage .\nabvar.py: 62% (20 of 32)\nabvar_ambient_jacobian.py: 28% (2 of 7)\nabvar_modsym_factor.py: 60% (3 of 5)\nabvar_newform.py: 0% (0 of 1)\nconstructor.py: 100% (3 of 3)\ncuspidal_subgroup.py: 16% (1 of 6)\nfinite_subgroup.py: 12% (4 of 33)\nhecke_operator.py: 66% (4 of 6)\nhomology.py: 57% (16 of 28)\nhomspace.py: 0% (0 of 2)\nlseries.py: 0% (0 of 6)\nmorphism.py: 0% (0 of 2)\ntorsion_point.py: 0% (0 of 2)\ntorsion_subgroup.py: 37% (3 of 8)\n\nOverall weighted coverage score:  39.4%\nTotal number of functions:  141\n```\n\n\nThe goal of this ticket is to change that to 100%.\n\nThis is in preparation for substantial work to move\nthe modular abelian varieties package forward in preparation\nfor lots of enhancements to it that are coming up. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2245\n\n",
     "created_at": "2008-02-21T07:31:34Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_002245.json:
     "title": "abvar -- increase the doctest coverage to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2245",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The doctest coverage for devel/sage/sage/modular/abvar is as follows:
 
@@ -65,7 +65,7 @@ archive/issue_comments_014882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2245#issuecomment-14882",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -99,16 +99,16 @@ Total number of functions:  156
 archive/issue_comments_014883.json:
 ```json
 {
-    "body": "Attachment [sage-2245.patch](tarball://root/attachments/some-uuid/ticket2245/sage-2245.patch) by was created at 2008-02-26 23:11:05\n\nthis is the whole thing flattened and rebased against sage-2.10.3.alpha0",
+    "body": "Attachment [sage-2245.patch](tarball://root/attachments/some-uuid/ticket2245/sage-2245.patch) by @williamstein created at 2008-02-26 23:11:05\n\nthis is the whole thing flattened and rebased against sage-2.10.3.alpha0",
     "created_at": "2008-02-26T23:11:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2245#issuecomment-14883",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2245.patch](tarball://root/attachments/some-uuid/ticket2245/sage-2245.patch) by was created at 2008-02-26 23:11:05
+Attachment [sage-2245.patch](tarball://root/attachments/some-uuid/ticket2245/sage-2245.patch) by @williamstein created at 2008-02-26 23:11:05
 
 this is the whole thing flattened and rebased against sage-2.10.3.alpha0
 
@@ -124,7 +124,7 @@ archive/issue_comments_014884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2245#issuecomment-14884",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -139,16 +139,16 @@ There's one thing that still bothers me, though: given a modular abelian variety
 archive/issue_comments_014885.json:
 ```json
 {
-    "body": "Attachment [trac-2245-touch-ups.patch](tarball://root/attachments/some-uuid/ticket2245/trac-2245-touch-ups.patch) by craigcitro created at 2008-03-03 06:15:25\n\nminor typo corrections; apply after william's patch above",
+    "body": "Attachment [trac-2245-touch-ups.patch](tarball://root/attachments/some-uuid/ticket2245/trac-2245-touch-ups.patch) by @craigcitro created at 2008-03-03 06:15:25\n\nminor typo corrections; apply after william's patch above",
     "created_at": "2008-03-03T06:15:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2245#issuecomment-14885",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-2245-touch-ups.patch](tarball://root/attachments/some-uuid/ticket2245/trac-2245-touch-ups.patch) by craigcitro created at 2008-03-03 06:15:25
+Attachment [trac-2245-touch-ups.patch](tarball://root/attachments/some-uuid/ticket2245/trac-2245-touch-ups.patch) by @craigcitro created at 2008-03-03 06:15:25
 
 minor typo corrections; apply after william's patch above
 
@@ -164,7 +164,7 @@ archive/issue_comments_014886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2245#issuecomment-14886",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -177,16 +177,16 @@ Good job fixing up my patch.  I just looked over your touch ups.  Very nice.
 archive/issue_comments_014887.json:
 ```json
 {
-    "body": "Attachment [trac-2245-lseries.patch](tarball://root/attachments/some-uuid/ticket2245/trac-2245-lseries.patch) by craigcitro created at 2008-03-03 07:27:20\n\napply this third",
+    "body": "Attachment [trac-2245-lseries.patch](tarball://root/attachments/some-uuid/ticket2245/trac-2245-lseries.patch) by @craigcitro created at 2008-03-03 07:27:20\n\napply this third",
     "created_at": "2008-03-03T07:27:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2245#issuecomment-14887",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-2245-lseries.patch](tarball://root/attachments/some-uuid/ticket2245/trac-2245-lseries.patch) by craigcitro created at 2008-03-03 07:27:20
+Attachment [trac-2245-lseries.patch](tarball://root/attachments/some-uuid/ticket2245/trac-2245-lseries.patch) by @craigcitro created at 2008-03-03 07:27:20
 
 apply this third
 
@@ -202,7 +202,7 @@ archive/issue_comments_014888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2245#issuecomment-14888",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

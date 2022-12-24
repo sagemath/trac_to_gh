@@ -14,7 +14,7 @@ archive/issues_005622.json:
     "title": "complex double fast callable interpreter",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5622",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -39,7 +39,7 @@ archive/issue_comments_043901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5622#issuecomment-43901",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_043904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5622#issuecomment-43904",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_043907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5622#issuecomment-43907",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

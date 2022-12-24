@@ -3,7 +3,7 @@
 archive/issues_004463.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  was\n\nKeywords: abvar, homspace, long\n\nThe doctests in modular/abvar/homspace.py timeout on my PPC mac, so something in there takes long enough that it should get the \"# long time\" comment.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4463\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @williamstein\n\nKeywords: abvar, homspace, long\n\nThe doctests in modular/abvar/homspace.py timeout on my PPC mac, so something in there takes long enough that it should get the \"# long time\" comment.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4463\n\n",
     "created_at": "2008-11-07T17:08:32Z",
     "labels": [
         "doctest",
@@ -19,7 +19,7 @@ archive/issues_004463.json:
 ```
 Assignee: mabshoff
 
-CC:  was
+CC:  @williamstein
 
 Keywords: abvar, homspace, long
 
@@ -58,16 +58,16 @@ Michael
 archive/issue_comments_032954.json:
 ```json
 {
-    "body": "Attachment [trac-4463.patch](tarball://root/attachments/some-uuid/ticket4463/trac-4463.patch) by craigcitro created at 2008-11-23 11:12:04",
+    "body": "Attachment [trac-4463.patch](tarball://root/attachments/some-uuid/ticket4463/trac-4463.patch) by @craigcitro created at 2008-11-23 11:12:04",
     "created_at": "2008-11-23T11:12:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4463#issuecomment-32954",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4463.patch](tarball://root/attachments/some-uuid/ticket4463/trac-4463.patch) by craigcitro created at 2008-11-23 11:12:04
+Attachment [trac-4463.patch](tarball://root/attachments/some-uuid/ticket4463/trac-4463.patch) by @craigcitro created at 2008-11-23 11:12:04
 
 
 
@@ -81,7 +81,7 @@ archive/issue_comments_032955.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4463#issuecomment-32955",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -94,16 +94,16 @@ Changing priority from minor to major.
 archive/issue_comments_032956.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to craigcitro.",
+    "body": "Changing assignee from mabshoff to @craigcitro.",
     "created_at": "2008-11-23T11:14:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4463#issuecomment-32956",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from mabshoff to craigcitro.
+Changing assignee from mabshoff to @craigcitro.
 
 
 
@@ -117,7 +117,7 @@ archive/issue_comments_032957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4463#issuecomment-32957",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_032958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4463#issuecomment-32958",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_032959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4463#issuecomment-32959",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_032960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4463#issuecomment-32960",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_032962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4463#issuecomment-32962",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -297,16 +297,16 @@ Michael
 archive/issue_comments_032965.json:
 ```json
 {
-    "body": "Attachment [trac-4463-pt2.patch](tarball://root/attachments/some-uuid/ticket4463/trac-4463-pt2.patch) by craigcitro created at 2008-11-24 04:31:16\n\nAdded a new patch that fixes the doctest failure. It was just a question of calling the free module constructor appropriately; this version is even ever so slightly faster than before.",
+    "body": "Attachment [trac-4463-pt2.patch](tarball://root/attachments/some-uuid/ticket4463/trac-4463-pt2.patch) by @craigcitro created at 2008-11-24 04:31:16\n\nAdded a new patch that fixes the doctest failure. It was just a question of calling the free module constructor appropriately; this version is even ever so slightly faster than before.",
     "created_at": "2008-11-24T04:31:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4463#issuecomment-32965",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4463-pt2.patch](tarball://root/attachments/some-uuid/ticket4463/trac-4463-pt2.patch) by craigcitro created at 2008-11-24 04:31:16
+Attachment [trac-4463-pt2.patch](tarball://root/attachments/some-uuid/ticket4463/trac-4463-pt2.patch) by @craigcitro created at 2008-11-24 04:31:16
 
 Added a new patch that fixes the doctest failure. It was just a question of calling the free module constructor appropriately; this version is even ever so slightly faster than before.
 

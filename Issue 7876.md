@@ -3,7 +3,7 @@
 archive/issues_007876.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nIt appears that the internal representation is correct since further calculations give correct answers, but the answer is displayed incorrectly.\n\n\n```\nsage: f=(1/2-1/2*I )*sqrt(2)\nsage: f\n-(1/2*I + 1/2)*sqrt(2)\nsage: f+1/2*sqrt(2)\n-(1/2*I + 1)*sqrt(2)\nsage: f-1/2*sqrt(2)\n-1/2*I*sqrt(2)\nsage: latex(f)\n-\\left(\\frac{1}{2} I + \\frac{1}{2}\\right) \\, \\sqrt{2}\nsage: \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7876\n\n",
+    "body": "Assignee: @burcin\n\nIt appears that the internal representation is correct since further calculations give correct answers, but the answer is displayed incorrectly.\n\n\n```\nsage: f=(1/2-1/2*I )*sqrt(2)\nsage: f\n-(1/2*I + 1/2)*sqrt(2)\nsage: f+1/2*sqrt(2)\n-(1/2*I + 1)*sqrt(2)\nsage: f-1/2*sqrt(2)\n-1/2*I*sqrt(2)\nsage: latex(f)\n-\\left(\\frac{1}{2} I + \\frac{1}{2}\\right) \\, \\sqrt{2}\nsage: \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7876\n\n",
     "created_at": "2010-01-09T13:57:28Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_007876.json:
     "title": "symbolic expression displayed wrong",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7876",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 It appears that the internal representation is correct since further calculations give correct answers, but the answer is displayed incorrectly.
 
@@ -52,7 +52,7 @@ archive/issue_comments_068421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7876#issuecomment-68421",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_068422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7876#issuecomment-68422",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_068423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7876#issuecomment-68423",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_068424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7876#issuecomment-68424",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -123,16 +123,16 @@ add doctests
 archive/issue_comments_068425.json:
 ```json
 {
-    "body": "Attachment [trac_7876-pynac_print.patch](tarball://root/attachments/some-uuid/ticket7876/trac_7876-pynac_print.patch) by burcin created at 2010-01-17 11:14:43\n\nadd one more doctest fix - apply only this patch",
+    "body": "Attachment [trac_7876-pynac_print.patch](tarball://root/attachments/some-uuid/ticket7876/trac_7876-pynac_print.patch) by @burcin created at 2010-01-17 11:14:43\n\nadd one more doctest fix - apply only this patch",
     "created_at": "2010-01-17T11:14:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7876#issuecomment-68425",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_7876-pynac_print.patch](tarball://root/attachments/some-uuid/ticket7876/trac_7876-pynac_print.patch) by burcin created at 2010-01-17 11:14:43
+Attachment [trac_7876-pynac_print.patch](tarball://root/attachments/some-uuid/ticket7876/trac_7876-pynac_print.patch) by @burcin created at 2010-01-17 11:14:43
 
 add one more doctest fix - apply only this patch
 
@@ -143,16 +143,16 @@ add one more doctest fix - apply only this patch
 archive/issue_comments_068426.json:
 ```json
 {
-    "body": "Attachment [trac_7876-pynac_print.take2.patch](tarball://root/attachments/some-uuid/ticket7876/trac_7876-pynac_print.take2.patch) by burcin created at 2010-01-19 14:09:15\n\nNew pynac package available here:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.11.spkg\n\nThe package contains fixes for #7822, #6961, #7876, #7363, #6465 and #6559. Apart from this ticket, #7363 contains printing changes. Doctests should be run with the patch from that ticket applied as well.",
+    "body": "Attachment [trac_7876-pynac_print.take2.patch](tarball://root/attachments/some-uuid/ticket7876/trac_7876-pynac_print.take2.patch) by @burcin created at 2010-01-19 14:09:15\n\nNew pynac package available here:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.11.spkg\n\nThe package contains fixes for #7822, #6961, #7876, #7363, #6465 and #6559. Apart from this ticket, #7363 contains printing changes. Doctests should be run with the patch from that ticket applied as well.",
     "created_at": "2010-01-19T14:09:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7876#issuecomment-68426",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_7876-pynac_print.take2.patch](tarball://root/attachments/some-uuid/ticket7876/trac_7876-pynac_print.take2.patch) by burcin created at 2010-01-19 14:09:15
+Attachment [trac_7876-pynac_print.take2.patch](tarball://root/attachments/some-uuid/ticket7876/trac_7876-pynac_print.take2.patch) by @burcin created at 2010-01-19 14:09:15
 
 New pynac package available here:
 
@@ -172,7 +172,7 @@ archive/issue_comments_068427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7876#issuecomment-68427",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_068428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7876#issuecomment-68428",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_068429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7876#issuecomment-68429",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_068430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7876#issuecomment-68430",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_008974.json:
     "title": "Added eigenvalues, eigenvector, eigenspaces and minpoly to vector space endomorphisms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8974",
-    "user": "mmarco"
+    "user": "@miguelmarco"
 }
 ```
 Assignee: jason, was
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8974
 archive/issue_comments_082785.json:
 ```json
 {
-    "body": "Attachment [trac_8974_eigen_added.patch](tarball://root/attachments/some-uuid/ticket8974/trac_8974_eigen_added.patch) by was created at 2010-05-15 21:05:34",
+    "body": "Attachment [trac_8974_eigen_added.patch](tarball://root/attachments/some-uuid/ticket8974/trac_8974_eigen_added.patch) by @williamstein created at 2010-05-15 21:05:34",
     "created_at": "2010-05-15T21:05:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8974#issuecomment-82785",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_8974_eigen_added.patch](tarball://root/attachments/some-uuid/ticket8974/trac_8974_eigen_added.patch) by was created at 2010-05-15 21:05:34
+Attachment [trac_8974_eigen_added.patch](tarball://root/attachments/some-uuid/ticket8974/trac_8974_eigen_added.patch) by @williamstein created at 2010-05-15 21:05:34
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_082786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8974#issuecomment-82786",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_082787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8974#issuecomment-82787",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_082788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8974#issuecomment-82788",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_082789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8974#issuecomment-82789",
-    "user": "mmarco"
+    "user": "@miguelmarco"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_082790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8974#issuecomment-82790",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_082791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8974#issuecomment-82791",
-    "user": "mmarco"
+    "user": "@miguelmarco"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_082792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8974#issuecomment-82792",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_082793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8974#issuecomment-82793",
-    "user": "mmarco"
+    "user": "@miguelmarco"
 }
 ```
 
@@ -210,16 +210,16 @@ I think i will wait until the duscusion about these procedures in matrix objects
 archive/issue_comments_082794.json:
 ```json
 {
-    "body": "Attachment [trac_8974_eigen_added_2.patch](tarball://root/attachments/some-uuid/ticket8974/trac_8974_eigen_added_2.patch) by mmarco created at 2010-06-20 00:39:19\n\nA Second patch with a new implementation (must be aplied after the previous one)",
+    "body": "Attachment [trac_8974_eigen_added_2.patch](tarball://root/attachments/some-uuid/ticket8974/trac_8974_eigen_added_2.patch) by @miguelmarco created at 2010-06-20 00:39:19\n\nA Second patch with a new implementation (must be aplied after the previous one)",
     "created_at": "2010-06-20T00:39:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8974#issuecomment-82794",
-    "user": "mmarco"
+    "user": "@miguelmarco"
 }
 ```
 
-Attachment [trac_8974_eigen_added_2.patch](tarball://root/attachments/some-uuid/ticket8974/trac_8974_eigen_added_2.patch) by mmarco created at 2010-06-20 00:39:19
+Attachment [trac_8974_eigen_added_2.patch](tarball://root/attachments/some-uuid/ticket8974/trac_8974_eigen_added_2.patch) by @miguelmarco created at 2010-06-20 00:39:19
 
 A Second patch with a new implementation (must be aplied after the previous one)
 
@@ -235,7 +235,7 @@ archive/issue_comments_082795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8974#issuecomment-82795",
-    "user": "mmarco"
+    "user": "@miguelmarco"
 }
 ```
 
@@ -252,16 +252,16 @@ With that change, i have redone my implementation of these functions for homomor
 archive/issue_comments_082796.json:
 ```json
 {
-    "body": "Attachment [track_8974_added_eigenfunctions_module.patch](tarball://root/attachments/some-uuid/ticket8974/track_8974_added_eigenfunctions_module.patch) by mmarco created at 2010-06-20 14:03:41\n\neigenvalues eigenvectors and minpoly functions for vectorspace endomorphims",
+    "body": "Attachment [track_8974_added_eigenfunctions_module.patch](tarball://root/attachments/some-uuid/ticket8974/track_8974_added_eigenfunctions_module.patch) by @miguelmarco created at 2010-06-20 14:03:41\n\neigenvalues eigenvectors and minpoly functions for vectorspace endomorphims",
     "created_at": "2010-06-20T14:03:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8974#issuecomment-82796",
-    "user": "mmarco"
+    "user": "@miguelmarco"
 }
 ```
 
-Attachment [track_8974_added_eigenfunctions_module.patch](tarball://root/attachments/some-uuid/ticket8974/track_8974_added_eigenfunctions_module.patch) by mmarco created at 2010-06-20 14:03:41
+Attachment [track_8974_added_eigenfunctions_module.patch](tarball://root/attachments/some-uuid/ticket8974/track_8974_added_eigenfunctions_module.patch) by @miguelmarco created at 2010-06-20 14:03:41
 
 eigenvalues eigenvectors and minpoly functions for vectorspace endomorphims
 
@@ -272,16 +272,16 @@ eigenvalues eigenvectors and minpoly functions for vectorspace endomorphims
 archive/issue_comments_082797.json:
 ```json
 {
-    "body": "Attachment [track_8974_solved_nonimplemented_extfalse.patch](tarball://root/attachments/some-uuid/ticket8974/track_8974_solved_nonimplemented_extfalse.patch) by mmarco created at 2010-06-20 14:04:20\n\nadded the extend=False option for matrix eigenvalues and eigenvectors_left",
+    "body": "Attachment [track_8974_solved_nonimplemented_extfalse.patch](tarball://root/attachments/some-uuid/ticket8974/track_8974_solved_nonimplemented_extfalse.patch) by @miguelmarco created at 2010-06-20 14:04:20\n\nadded the extend=False option for matrix eigenvalues and eigenvectors_left",
     "created_at": "2010-06-20T14:04:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8974#issuecomment-82797",
-    "user": "mmarco"
+    "user": "@miguelmarco"
 }
 ```
 
-Attachment [track_8974_solved_nonimplemented_extfalse.patch](tarball://root/attachments/some-uuid/ticket8974/track_8974_solved_nonimplemented_extfalse.patch) by mmarco created at 2010-06-20 14:04:20
+Attachment [track_8974_solved_nonimplemented_extfalse.patch](tarball://root/attachments/some-uuid/ticket8974/track_8974_solved_nonimplemented_extfalse.patch) by @miguelmarco created at 2010-06-20 14:04:20
 
 added the extend=False option for matrix eigenvalues and eigenvectors_left
 
@@ -297,7 +297,7 @@ archive/issue_comments_082798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8974#issuecomment-82798",
-    "user": "mmarco"
+    "user": "@miguelmarco"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_082799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8974#issuecomment-82799",
-    "user": "mmarco"
+    "user": "@miguelmarco"
 }
 ```
 
@@ -333,7 +333,7 @@ archive/issue_comments_082800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8974#issuecomment-82800",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -351,7 +351,7 @@ archive/issue_comments_082801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8974#issuecomment-82801",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -369,7 +369,7 @@ archive/issue_comments_082802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8974#issuecomment-82802",
-    "user": "mmarco"
+    "user": "@miguelmarco"
 }
 ```
 
@@ -382,16 +382,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_082803.json:
 ```json
 {
-    "body": "Attachment [trac_8974_reviewer.patch](tarball://root/attachments/some-uuid/ticket8974/trac_8974_reviewer.patch) by mmarco created at 2010-06-28 18:26:50",
+    "body": "Attachment [trac_8974_reviewer.patch](tarball://root/attachments/some-uuid/ticket8974/trac_8974_reviewer.patch) by @miguelmarco created at 2010-06-28 18:26:50",
     "created_at": "2010-06-28T18:26:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8974#issuecomment-82803",
-    "user": "mmarco"
+    "user": "@miguelmarco"
 }
 ```
 
-Attachment [trac_8974_reviewer.patch](tarball://root/attachments/some-uuid/ticket8974/trac_8974_reviewer.patch) by mmarco created at 2010-06-28 18:26:50
+Attachment [trac_8974_reviewer.patch](tarball://root/attachments/some-uuid/ticket8974/trac_8974_reviewer.patch) by @miguelmarco created at 2010-06-28 18:26:50
 
 
 
@@ -405,7 +405,7 @@ archive/issue_comments_082804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8974#issuecomment-82804",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -423,7 +423,7 @@ archive/issue_comments_082805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8974#issuecomment-82805",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

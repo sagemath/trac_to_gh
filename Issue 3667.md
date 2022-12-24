@@ -14,7 +14,7 @@ archive/issues_003667.json:
     "title": "[with patch; needs (easy) review] notebook -- if user history can't be loaded from disk make it blank (much better than making entire notebook not work at all)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3667",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby

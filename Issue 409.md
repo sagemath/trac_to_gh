@@ -13,7 +13,7 @@ archive/issues_000409.json:
     "title": "3 small notebook bugs/issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/409",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -40,7 +40,7 @@ archive/issue_comments_002016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/409",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/409#issuecomment-2016",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -58,7 +58,7 @@ archive/issue_comments_002017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/409",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/409#issuecomment-2017",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

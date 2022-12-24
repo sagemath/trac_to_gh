@@ -14,7 +14,7 @@ archive/issues_005729.json:
     "title": "Cleanup of crystal code: cartan_type now a method rather than attribute",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5729",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 Assignee: aschillin
@@ -35,16 +35,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5729
 archive/issue_comments_044761.json:
 ```json
 {
-    "body": "Attachment [crystal-cleanup-track.patch](tarball://root/attachments/some-uuid/ticket5729/crystal-cleanup-track.patch) by aschilling created at 2009-04-10 01:19:31\n\nchanged according to Nicolas' suggestions",
+    "body": "Attachment [crystal-cleanup-track.patch](tarball://root/attachments/some-uuid/ticket5729/crystal-cleanup-track.patch) by @anneschilling created at 2009-04-10 01:19:31\n\nchanged according to Nicolas' suggestions",
     "created_at": "2009-04-10T01:19:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5729",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5729#issuecomment-44761",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
-Attachment [crystal-cleanup-track.patch](tarball://root/attachments/some-uuid/ticket5729/crystal-cleanup-track.patch) by aschilling created at 2009-04-10 01:19:31
+Attachment [crystal-cleanup-track.patch](tarball://root/attachments/some-uuid/ticket5729/crystal-cleanup-track.patch) by @anneschilling created at 2009-04-10 01:19:31
 
 changed according to Nicolas' suggestions
 
@@ -55,16 +55,16 @@ changed according to Nicolas' suggestions
 archive/issue_comments_044762.json:
 ```json
 {
-    "body": "Attachment [crystal-5729-track.patch](tarball://root/attachments/some-uuid/ticket5729/crystal-5729-track.patch) by aschilling created at 2009-04-10 02:09:14",
+    "body": "Attachment [crystal-5729-track.patch](tarball://root/attachments/some-uuid/ticket5729/crystal-5729-track.patch) by @anneschilling created at 2009-04-10 02:09:14",
     "created_at": "2009-04-10T02:09:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5729",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5729#issuecomment-44762",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
-Attachment [crystal-5729-track.patch](tarball://root/attachments/some-uuid/ticket5729/crystal-5729-track.patch) by aschilling created at 2009-04-10 02:09:14
+Attachment [crystal-5729-track.patch](tarball://root/attachments/some-uuid/ticket5729/crystal-5729-track.patch) by @anneschilling created at 2009-04-10 02:09:14
 
 
 
@@ -73,16 +73,16 @@ Attachment [crystal-5729-track.patch](tarball://root/attachments/some-uuid/ticke
 archive/issue_comments_044763.json:
 ```json
 {
-    "body": "Attachment [crystal-5729-track.2.patch](tarball://root/attachments/some-uuid/ticket5729/crystal-5729-track.2.patch) by nthiery created at 2009-04-10 05:49:20\n\nFinal version of the patch uploaded:\n- fixes 2/3 remaining calls to parent() \n- Micro doc improvements",
+    "body": "Attachment [crystal-5729-track.2.patch](tarball://root/attachments/some-uuid/ticket5729/crystal-5729-track.2.patch) by @nthiery created at 2009-04-10 05:49:20\n\nFinal version of the patch uploaded:\n- fixes 2/3 remaining calls to parent() \n- Micro doc improvements",
     "created_at": "2009-04-10T05:49:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5729",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5729#issuecomment-44763",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [crystal-5729-track.2.patch](tarball://root/attachments/some-uuid/ticket5729/crystal-5729-track.2.patch) by nthiery created at 2009-04-10 05:49:20
+Attachment [crystal-5729-track.2.patch](tarball://root/attachments/some-uuid/ticket5729/crystal-5729-track.2.patch) by @nthiery created at 2009-04-10 05:49:20
 
 Final version of the patch uploaded:
 - fixes 2/3 remaining calls to parent() 
@@ -100,7 +100,7 @@ archive/issue_comments_044764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5729",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5729#issuecomment-44764",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 

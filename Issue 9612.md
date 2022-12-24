@@ -14,7 +14,7 @@ archive/issues_009612.json:
     "title": "revise functional_programming.rst",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9612",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: mvngu

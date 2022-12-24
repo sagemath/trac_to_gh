@@ -14,7 +14,7 @@ archive/issues_009614.json:
     "title": "\"-sdist\" should complain or fail when run in a \"-bdist\" copy of Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9614",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: tbd
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9614
 archive/issue_comments_093100.json:
 ```json
 {
-    "body": "Attachment [trac_9614.patch](tarball://root/attachments/some-uuid/ticket9614/trac_9614.patch) by ddrake created at 2010-07-28 02:09:51\n\napply to scripts repo",
+    "body": "Attachment [trac_9614.patch](tarball://root/attachments/some-uuid/ticket9614/trac_9614.patch) by @dandrake created at 2010-07-28 02:09:51\n\napply to scripts repo",
     "created_at": "2010-07-28T02:09:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9614#issuecomment-93100",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_9614.patch](tarball://root/attachments/some-uuid/ticket9614/trac_9614.patch) by ddrake created at 2010-07-28 02:09:51
+Attachment [trac_9614.patch](tarball://root/attachments/some-uuid/ticket9614/trac_9614.patch) by @dandrake created at 2010-07-28 02:09:51
 
 apply to scripts repo
 
@@ -59,7 +59,7 @@ archive/issue_comments_093101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9614#issuecomment-93101",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_093102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9614#issuecomment-93102",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_093103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9614#issuecomment-93103",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_093104.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9614#issuecomment-93104",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_093105.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9614#issuecomment-93105",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_093106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9614#issuecomment-93106",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

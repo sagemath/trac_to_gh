@@ -3,7 +3,7 @@
 archive/issues_007033.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  dimpase\n\nKeywords: solaris gmp\n\nUsing\n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha2\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used http://sagetrac.org/sage_trac/ticket/7021\n\nCC was set to the Sun C compiler, and CXX to the Sun C++ compiler, \n\n\n```\nchecking whether we are using the GNU C++ compiler... (cached) no\nchecking whether /opt/xxxsunstudio12.1/bin/CC accepts -g... (cached) yes\nchecking dependency style of /opt/xxxsunstudio12.1/bin/CC... (cached) none\nchecking for gcc... (cached) /opt/xxxsunstudio12.1/bin/cc\nchecking whether we are using the GNU C compiler... (cached) no\nchecking whether /opt/xxxsunstudio12.1/bin/cc accepts -g... (cached) yes\nchecking for /opt/xxxsunstudio12.1/bin/cc option to accept ISO C89... (cached) none needed\nchecking dependency style of /opt/xxxsunstudio12.1/bin/cc... (cached) none\nchecking whether make sets $(MAKE)... (cached) yes\nchecking for __gmpz_init in -lgmp... no\nconfigure: error: GNU MP not found, see http://gmplib.org\nError configuring libfplll\n\nreal    0m45.568s\nuser    0m10.239s\nsys     0m25.294s\n```\n\n\nmpir is insalled ok - all the gmp headers and libraries have been built. I suspect some programs not to accept mpir as being the same as gmp when the compiler is not gcc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7033\n\n",
+    "body": "Assignee: tbd\n\nCC:  @dimpase\n\nKeywords: solaris gmp\n\nUsing\n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha2\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used http://sagetrac.org/sage_trac/ticket/7021\n\nCC was set to the Sun C compiler, and CXX to the Sun C++ compiler, \n\n\n```\nchecking whether we are using the GNU C++ compiler... (cached) no\nchecking whether /opt/xxxsunstudio12.1/bin/CC accepts -g... (cached) yes\nchecking dependency style of /opt/xxxsunstudio12.1/bin/CC... (cached) none\nchecking for gcc... (cached) /opt/xxxsunstudio12.1/bin/cc\nchecking whether we are using the GNU C compiler... (cached) no\nchecking whether /opt/xxxsunstudio12.1/bin/cc accepts -g... (cached) yes\nchecking for /opt/xxxsunstudio12.1/bin/cc option to accept ISO C89... (cached) none needed\nchecking dependency style of /opt/xxxsunstudio12.1/bin/cc... (cached) none\nchecking whether make sets $(MAKE)... (cached) yes\nchecking for __gmpz_init in -lgmp... no\nconfigure: error: GNU MP not found, see http://gmplib.org\nError configuring libfplll\n\nreal    0m45.568s\nuser    0m10.239s\nsys     0m25.294s\n```\n\n\nmpir is insalled ok - all the gmp headers and libraries have been built. I suspect some programs not to accept mpir as being the same as gmp when the compiler is not gcc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7033\n\n",
     "created_at": "2009-09-27T14:51:48Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_007033.json:
 ```
 Assignee: tbd
 
-CC:  dimpase
+CC:  @dimpase
 
 Keywords: solaris gmp
 
@@ -71,7 +71,7 @@ archive/issue_comments_058241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7033",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7033#issuecomment-58241",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_058242.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7033",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7033#issuecomment-58242",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_058243.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7033",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7033#issuecomment-58243",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_058244.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7033",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7033#issuecomment-58244",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 

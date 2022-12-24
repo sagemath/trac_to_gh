@@ -3,7 +3,7 @@
 archive/issues_009946.json:
 ```json
 {
-    "body": "Assignee: burcin\n\n\n```\nsage: a.imag()\nsin(1/2*arctan2(0, -88* + 1))*sqrt(abs(4*(sqrt(3) - 5)*(sqrt(3) + 5) + 1))\n```\n\nSee the output of the second argument of `arctan2`.\nSee also #9913.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9947\n\n",
+    "body": "Assignee: @burcin\n\n\n```\nsage: a.imag()\nsin(1/2*arctan2(0, -88* + 1))*sqrt(abs(4*(sqrt(3) - 5)*(sqrt(3) + 5) + 1))\n```\n\nSee the output of the second argument of `arctan2`.\nSee also #9913.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9947\n\n",
     "created_at": "2010-09-19T08:26:08Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_009946.json:
     "title": "output bug in GiNaC",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9946",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 
 ```
@@ -44,7 +44,7 @@ archive/issue_comments_099177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9946#issuecomment-99177",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -62,7 +62,7 @@ archive/issue_comments_099178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9946#issuecomment-99178",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_099179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9946#issuecomment-99179",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_099180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9946#issuecomment-99180",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -111,16 +111,16 @@ Changing component from calculus to symbolics.
 archive/issue_comments_099181.json:
 ```json
 {
-    "body": "Attachment [trac_9947-add_eval.patch](tarball://root/attachments/some-uuid/ticket9947/trac_9947-add_eval.patch) by burcin created at 2010-09-24 11:10:54\n\nThis was fixed in GiNaC by Richard Kreckel. Here is the relevant patch:\n\nhttp://www.ginac.de/ginac.git?p=ginac.git;a=commitdiff;h=e08cda1854bdb82f6706ec269233577690ae00e4\n\nI applied the patch to pynac, so this will be fixed in the next release.",
+    "body": "Attachment [trac_9947-add_eval.patch](tarball://root/attachments/some-uuid/ticket9947/trac_9947-add_eval.patch) by @burcin created at 2010-09-24 11:10:54\n\nThis was fixed in GiNaC by Richard Kreckel. Here is the relevant patch:\n\nhttp://www.ginac.de/ginac.git?p=ginac.git;a=commitdiff;h=e08cda1854bdb82f6706ec269233577690ae00e4\n\nI applied the patch to pynac, so this will be fixed in the next release.",
     "created_at": "2010-09-24T11:10:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9946#issuecomment-99181",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9947-add_eval.patch](tarball://root/attachments/some-uuid/ticket9947/trac_9947-add_eval.patch) by burcin created at 2010-09-24 11:10:54
+Attachment [trac_9947-add_eval.patch](tarball://root/attachments/some-uuid/ticket9947/trac_9947-add_eval.patch) by @burcin created at 2010-09-24 11:10:54
 
 This was fixed in GiNaC by Richard Kreckel. Here is the relevant patch:
 
@@ -140,7 +140,7 @@ archive/issue_comments_099182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9946#issuecomment-99182",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_099183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9946#issuecomment-99183",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_099184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9946#issuecomment-99184",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_099185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9946#issuecomment-99185",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_099186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9946#issuecomment-99186",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

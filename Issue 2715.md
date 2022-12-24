@@ -14,7 +14,7 @@ archive/issues_002715.json:
     "title": "sage -coverage currently counts functions that are defined in doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2715",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: cwitty
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2715
 archive/issue_comments_018711.json:
 ```json
 {
-    "body": "Attachment [2715.patch](tarball://root/attachments/some-uuid/ticket2715/2715.patch) by mhansen created at 2008-03-29 02:42:50",
+    "body": "Attachment [2715.patch](tarball://root/attachments/some-uuid/ticket2715/2715.patch) by @mwhansen created at 2008-03-29 02:42:50",
     "created_at": "2008-03-29T02:42:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2715",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2715#issuecomment-18711",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2715.patch](tarball://root/attachments/some-uuid/ticket2715/2715.patch) by mhansen created at 2008-03-29 02:42:50
+Attachment [2715.patch](tarball://root/attachments/some-uuid/ticket2715/2715.patch) by @mwhansen created at 2008-03-29 02:42:50
 
 
 

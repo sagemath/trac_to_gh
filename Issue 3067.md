@@ -3,7 +3,7 @@
 archive/issues_003067.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis happens for all matrices:\n\n\n```\nsage: m = matrix([])\nsage: m.numeric_array()\n<type 'exceptions.ImportError'>: No module named Numeric\nsage: q= random_matrix(ZZ,2)\nsage: q.numeric_array()\n<type 'exceptions.ImportError'>: No module named Numeric\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3067\n\n",
+    "body": "Assignee: @williamstein\n\nThis happens for all matrices:\n\n\n```\nsage: m = matrix([])\nsage: m.numeric_array()\n<type 'exceptions.ImportError'>: No module named Numeric\nsage: q= random_matrix(ZZ,2)\nsage: q.numeric_array()\n<type 'exceptions.ImportError'>: No module named Numeric\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3067\n\n",
     "created_at": "2008-04-30T15:23:45Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_003067.json:
     "title": "matrices:  numeric_array() is missing an import",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3067",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This happens for all matrices:
 
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3067
 archive/issue_comments_021168.json:
 ```json
 {
-    "body": "Attachment [3067.patch](tarball://root/attachments/some-uuid/ticket3067/3067.patch) by dfdeshom created at 2008-04-30 18:54:00\n\nI deleted this function since it looks like sage doesn't use Numeric anymore. Or I could do a conditional import. Thoughts?",
+    "body": "Attachment [3067.patch](tarball://root/attachments/some-uuid/ticket3067/3067.patch) by @dfdeshom created at 2008-04-30 18:54:00\n\nI deleted this function since it looks like sage doesn't use Numeric anymore. Or I could do a conditional import. Thoughts?",
     "created_at": "2008-04-30T18:54:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3067",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3067#issuecomment-21168",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Attachment [3067.patch](tarball://root/attachments/some-uuid/ticket3067/3067.patch) by dfdeshom created at 2008-04-30 18:54:00
+Attachment [3067.patch](tarball://root/attachments/some-uuid/ticket3067/3067.patch) by @dfdeshom created at 2008-04-30 18:54:00
 
 I deleted this function since it looks like sage doesn't use Numeric anymore. Or I could do a conditional import. Thoughts?
 

@@ -3,7 +3,7 @@
 archive/issues_003029.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nDebian doesn't allow you to upload packages that use DEB_AUTO_UPDATE_DEBIAN_CONTROL because it causes confusion with Non-Maintainer Uploads.  Since I'd like to get the packages so that they can be uploaded to Debian, we should remove it from our rules files.  Since it's fine for our purposes, I've modified sage-debsource to set DEB_AUTO_UPDATE_DEBIAN_CONTROL so that it always gets used when we are building packages.  I think it's probably easier for Michael to just make the changes than to merge N patches, so the following code will do the relevant update when the relevant spkgs are unpacked.\n\nperl -i -0pe 's/^DEB_AUTO_UPDATE_DEBIAN_CONTROL = 1\\n//m' */dist/debian/*/rules */dist/debian/rules\n\n(if the patches are easier to deal with, let me know and I'll generate them)\nThe complete list of spkgs that require this treatment is as follows:\n\ncddlib\neclib\nextcode\nflint\nflintqs\ngap\ngenus2reduction\ngfan\ngivaro\niml\njmol\nlcalc\nlibfplll\nlibm4ri\nlinbox\nntl\npalp\npolybori\nrubiks\nscipy_sandbox\nsingular\nsymmetrica\nsympow\ntachyon\nzn_poly\n\nIssue created by migration from https://trac.sagemath.org/ticket/3029\n\n",
+    "body": "Assignee: @timabbott\n\nDebian doesn't allow you to upload packages that use DEB_AUTO_UPDATE_DEBIAN_CONTROL because it causes confusion with Non-Maintainer Uploads.  Since I'd like to get the packages so that they can be uploaded to Debian, we should remove it from our rules files.  Since it's fine for our purposes, I've modified sage-debsource to set DEB_AUTO_UPDATE_DEBIAN_CONTROL so that it always gets used when we are building packages.  I think it's probably easier for Michael to just make the changes than to merge N patches, so the following code will do the relevant update when the relevant spkgs are unpacked.\n\nperl -i -0pe 's/^DEB_AUTO_UPDATE_DEBIAN_CONTROL = 1\\n//m' */dist/debian/*/rules */dist/debian/rules\n\n(if the patches are easier to deal with, let me know and I'll generate them)\nThe complete list of spkgs that require this treatment is as follows:\n\ncddlib\neclib\nextcode\nflint\nflintqs\ngap\ngenus2reduction\ngfan\ngivaro\niml\njmol\nlcalc\nlibfplll\nlibm4ri\nlinbox\nntl\npalp\npolybori\nrubiks\nscipy_sandbox\nsingular\nsymmetrica\nsympow\ntachyon\nzn_poly\n\nIssue created by migration from https://trac.sagemath.org/ticket/3029\n\n",
     "created_at": "2008-04-26T04:13:21Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_003029.json:
     "title": "[with patch; needs review] Move DEB_AUTO_UPDATE_DEBIAN_CONTROL out of Debian packages",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3029",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 Debian doesn't allow you to upload packages that use DEB_AUTO_UPDATE_DEBIAN_CONTROL because it causes confusion with Non-Maintainer Uploads.  Since I'd like to get the packages so that they can be uploaded to Debian, we should remove it from our rules files.  Since it's fine for our purposes, I've modified sage-debsource to set DEB_AUTO_UPDATE_DEBIAN_CONTROL so that it always gets used when we are building packages.  I think it's probably easier for Michael to just make the changes than to merge N patches, so the following code will do the relevant update when the relevant spkgs are unpacked.
 
@@ -63,16 +63,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3029
 archive/issue_comments_020829.json:
 ```json
 {
-    "body": "Attachment [auto-update-debian-control.patch](tarball://root/attachments/some-uuid/ticket3029/auto-update-debian-control.patch) by tabbott created at 2008-04-26 04:13:28",
+    "body": "Attachment [auto-update-debian-control.patch](tarball://root/attachments/some-uuid/ticket3029/auto-update-debian-control.patch) by @timabbott created at 2008-04-26 04:13:28",
     "created_at": "2008-04-26T04:13:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3029#issuecomment-20829",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [auto-update-debian-control.patch](tarball://root/attachments/some-uuid/ticket3029/auto-update-debian-control.patch) by tabbott created at 2008-04-26 04:13:28
+Attachment [auto-update-debian-control.patch](tarball://root/attachments/some-uuid/ticket3029/auto-update-debian-control.patch) by @timabbott created at 2008-04-26 04:13:28
 
 
 
@@ -110,7 +110,7 @@ archive/issue_comments_020831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3029#issuecomment-20831",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -123,16 +123,16 @@ No, the perl script is what generates the patches that need to be done (there's 
 archive/issue_comments_020832.json:
 ```json
 {
-    "body": "Attachment [auto-cddlib.patch](tarball://root/attachments/some-uuid/ticket3029/auto-cddlib.patch) by tabbott created at 2008-04-26 05:01:41",
+    "body": "Attachment [auto-cddlib.patch](tarball://root/attachments/some-uuid/ticket3029/auto-cddlib.patch) by @timabbott created at 2008-04-26 05:01:41",
     "created_at": "2008-04-26T05:01:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3029#issuecomment-20832",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [auto-cddlib.patch](tarball://root/attachments/some-uuid/ticket3029/auto-cddlib.patch) by tabbott created at 2008-04-26 05:01:41
+Attachment [auto-cddlib.patch](tarball://root/attachments/some-uuid/ticket3029/auto-cddlib.patch) by @timabbott created at 2008-04-26 05:01:41
 
 
 
@@ -141,16 +141,16 @@ Attachment [auto-cddlib.patch](tarball://root/attachments/some-uuid/ticket3029/a
 archive/issue_comments_020833.json:
 ```json
 {
-    "body": "Attachment [auto-extcode.patch](tarball://root/attachments/some-uuid/ticket3029/auto-extcode.patch) by tabbott created at 2008-04-26 05:01:50",
+    "body": "Attachment [auto-extcode.patch](tarball://root/attachments/some-uuid/ticket3029/auto-extcode.patch) by @timabbott created at 2008-04-26 05:01:50",
     "created_at": "2008-04-26T05:01:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3029#issuecomment-20833",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [auto-extcode.patch](tarball://root/attachments/some-uuid/ticket3029/auto-extcode.patch) by tabbott created at 2008-04-26 05:01:50
+Attachment [auto-extcode.patch](tarball://root/attachments/some-uuid/ticket3029/auto-extcode.patch) by @timabbott created at 2008-04-26 05:01:50
 
 
 
@@ -159,16 +159,16 @@ Attachment [auto-extcode.patch](tarball://root/attachments/some-uuid/ticket3029/
 archive/issue_comments_020834.json:
 ```json
 {
-    "body": "Attachment [auto-flint.patch](tarball://root/attachments/some-uuid/ticket3029/auto-flint.patch) by tabbott created at 2008-04-26 05:01:57",
+    "body": "Attachment [auto-flint.patch](tarball://root/attachments/some-uuid/ticket3029/auto-flint.patch) by @timabbott created at 2008-04-26 05:01:57",
     "created_at": "2008-04-26T05:01:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3029#issuecomment-20834",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [auto-flint.patch](tarball://root/attachments/some-uuid/ticket3029/auto-flint.patch) by tabbott created at 2008-04-26 05:01:57
+Attachment [auto-flint.patch](tarball://root/attachments/some-uuid/ticket3029/auto-flint.patch) by @timabbott created at 2008-04-26 05:01:57
 
 
 
@@ -177,16 +177,16 @@ Attachment [auto-flint.patch](tarball://root/attachments/some-uuid/ticket3029/au
 archive/issue_comments_020835.json:
 ```json
 {
-    "body": "Attachment [auto-flintqs.patch](tarball://root/attachments/some-uuid/ticket3029/auto-flintqs.patch) by tabbott created at 2008-04-26 05:02:04",
+    "body": "Attachment [auto-flintqs.patch](tarball://root/attachments/some-uuid/ticket3029/auto-flintqs.patch) by @timabbott created at 2008-04-26 05:02:04",
     "created_at": "2008-04-26T05:02:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3029#issuecomment-20835",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [auto-flintqs.patch](tarball://root/attachments/some-uuid/ticket3029/auto-flintqs.patch) by tabbott created at 2008-04-26 05:02:04
+Attachment [auto-flintqs.patch](tarball://root/attachments/some-uuid/ticket3029/auto-flintqs.patch) by @timabbott created at 2008-04-26 05:02:04
 
 
 
@@ -195,16 +195,16 @@ Attachment [auto-flintqs.patch](tarball://root/attachments/some-uuid/ticket3029/
 archive/issue_comments_020836.json:
 ```json
 {
-    "body": "Attachment [auto-gfan.patch](tarball://root/attachments/some-uuid/ticket3029/auto-gfan.patch) by tabbott created at 2008-04-26 05:02:11",
+    "body": "Attachment [auto-gfan.patch](tarball://root/attachments/some-uuid/ticket3029/auto-gfan.patch) by @timabbott created at 2008-04-26 05:02:11",
     "created_at": "2008-04-26T05:02:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3029#issuecomment-20836",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [auto-gfan.patch](tarball://root/attachments/some-uuid/ticket3029/auto-gfan.patch) by tabbott created at 2008-04-26 05:02:11
+Attachment [auto-gfan.patch](tarball://root/attachments/some-uuid/ticket3029/auto-gfan.patch) by @timabbott created at 2008-04-26 05:02:11
 
 
 
@@ -213,16 +213,16 @@ Attachment [auto-gfan.patch](tarball://root/attachments/some-uuid/ticket3029/aut
 archive/issue_comments_020837.json:
 ```json
 {
-    "body": "Attachment [auto-iml.patch](tarball://root/attachments/some-uuid/ticket3029/auto-iml.patch) by tabbott created at 2008-04-26 05:02:31",
+    "body": "Attachment [auto-iml.patch](tarball://root/attachments/some-uuid/ticket3029/auto-iml.patch) by @timabbott created at 2008-04-26 05:02:31",
     "created_at": "2008-04-26T05:02:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3029#issuecomment-20837",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [auto-iml.patch](tarball://root/attachments/some-uuid/ticket3029/auto-iml.patch) by tabbott created at 2008-04-26 05:02:31
+Attachment [auto-iml.patch](tarball://root/attachments/some-uuid/ticket3029/auto-iml.patch) by @timabbott created at 2008-04-26 05:02:31
 
 
 
@@ -231,16 +231,16 @@ Attachment [auto-iml.patch](tarball://root/attachments/some-uuid/ticket3029/auto
 archive/issue_comments_020838.json:
 ```json
 {
-    "body": "Attachment [auto-jmol.patch](tarball://root/attachments/some-uuid/ticket3029/auto-jmol.patch) by tabbott created at 2008-04-26 05:02:40",
+    "body": "Attachment [auto-jmol.patch](tarball://root/attachments/some-uuid/ticket3029/auto-jmol.patch) by @timabbott created at 2008-04-26 05:02:40",
     "created_at": "2008-04-26T05:02:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3029#issuecomment-20838",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [auto-jmol.patch](tarball://root/attachments/some-uuid/ticket3029/auto-jmol.patch) by tabbott created at 2008-04-26 05:02:40
+Attachment [auto-jmol.patch](tarball://root/attachments/some-uuid/ticket3029/auto-jmol.patch) by @timabbott created at 2008-04-26 05:02:40
 
 
 
@@ -249,16 +249,16 @@ Attachment [auto-jmol.patch](tarball://root/attachments/some-uuid/ticket3029/aut
 archive/issue_comments_020839.json:
 ```json
 {
-    "body": "Attachment [auto-libfplll.patch](tarball://root/attachments/some-uuid/ticket3029/auto-libfplll.patch) by tabbott created at 2008-04-26 05:02:49",
+    "body": "Attachment [auto-libfplll.patch](tarball://root/attachments/some-uuid/ticket3029/auto-libfplll.patch) by @timabbott created at 2008-04-26 05:02:49",
     "created_at": "2008-04-26T05:02:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3029#issuecomment-20839",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [auto-libfplll.patch](tarball://root/attachments/some-uuid/ticket3029/auto-libfplll.patch) by tabbott created at 2008-04-26 05:02:49
+Attachment [auto-libfplll.patch](tarball://root/attachments/some-uuid/ticket3029/auto-libfplll.patch) by @timabbott created at 2008-04-26 05:02:49
 
 
 
@@ -267,16 +267,16 @@ Attachment [auto-libfplll.patch](tarball://root/attachments/some-uuid/ticket3029
 archive/issue_comments_020840.json:
 ```json
 {
-    "body": "Attachment [auto-libm4ri.patch](tarball://root/attachments/some-uuid/ticket3029/auto-libm4ri.patch) by tabbott created at 2008-04-26 05:02:59",
+    "body": "Attachment [auto-libm4ri.patch](tarball://root/attachments/some-uuid/ticket3029/auto-libm4ri.patch) by @timabbott created at 2008-04-26 05:02:59",
     "created_at": "2008-04-26T05:02:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3029#issuecomment-20840",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [auto-libm4ri.patch](tarball://root/attachments/some-uuid/ticket3029/auto-libm4ri.patch) by tabbott created at 2008-04-26 05:02:59
+Attachment [auto-libm4ri.patch](tarball://root/attachments/some-uuid/ticket3029/auto-libm4ri.patch) by @timabbott created at 2008-04-26 05:02:59
 
 
 
@@ -285,16 +285,16 @@ Attachment [auto-libm4ri.patch](tarball://root/attachments/some-uuid/ticket3029/
 archive/issue_comments_020841.json:
 ```json
 {
-    "body": "Attachment [auto-palp.patch](tarball://root/attachments/some-uuid/ticket3029/auto-palp.patch) by tabbott created at 2008-04-26 05:03:20",
+    "body": "Attachment [auto-palp.patch](tarball://root/attachments/some-uuid/ticket3029/auto-palp.patch) by @timabbott created at 2008-04-26 05:03:20",
     "created_at": "2008-04-26T05:03:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3029#issuecomment-20841",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [auto-palp.patch](tarball://root/attachments/some-uuid/ticket3029/auto-palp.patch) by tabbott created at 2008-04-26 05:03:20
+Attachment [auto-palp.patch](tarball://root/attachments/some-uuid/ticket3029/auto-palp.patch) by @timabbott created at 2008-04-26 05:03:20
 
 
 
@@ -303,16 +303,16 @@ Attachment [auto-palp.patch](tarball://root/attachments/some-uuid/ticket3029/aut
 archive/issue_comments_020842.json:
 ```json
 {
-    "body": "Attachment [auto-rubiks.patch](tarball://root/attachments/some-uuid/ticket3029/auto-rubiks.patch) by tabbott created at 2008-04-26 05:03:28",
+    "body": "Attachment [auto-rubiks.patch](tarball://root/attachments/some-uuid/ticket3029/auto-rubiks.patch) by @timabbott created at 2008-04-26 05:03:28",
     "created_at": "2008-04-26T05:03:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3029#issuecomment-20842",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [auto-rubiks.patch](tarball://root/attachments/some-uuid/ticket3029/auto-rubiks.patch) by tabbott created at 2008-04-26 05:03:28
+Attachment [auto-rubiks.patch](tarball://root/attachments/some-uuid/ticket3029/auto-rubiks.patch) by @timabbott created at 2008-04-26 05:03:28
 
 
 
@@ -321,16 +321,16 @@ Attachment [auto-rubiks.patch](tarball://root/attachments/some-uuid/ticket3029/a
 archive/issue_comments_020843.json:
 ```json
 {
-    "body": "Attachment [auto-singular.patch](tarball://root/attachments/some-uuid/ticket3029/auto-singular.patch) by tabbott created at 2008-04-26 05:03:42",
+    "body": "Attachment [auto-singular.patch](tarball://root/attachments/some-uuid/ticket3029/auto-singular.patch) by @timabbott created at 2008-04-26 05:03:42",
     "created_at": "2008-04-26T05:03:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3029#issuecomment-20843",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [auto-singular.patch](tarball://root/attachments/some-uuid/ticket3029/auto-singular.patch) by tabbott created at 2008-04-26 05:03:42
+Attachment [auto-singular.patch](tarball://root/attachments/some-uuid/ticket3029/auto-singular.patch) by @timabbott created at 2008-04-26 05:03:42
 
 
 
@@ -339,16 +339,16 @@ Attachment [auto-singular.patch](tarball://root/attachments/some-uuid/ticket3029
 archive/issue_comments_020844.json:
 ```json
 {
-    "body": "Attachment [auto-symmetr.patch](tarball://root/attachments/some-uuid/ticket3029/auto-symmetr.patch) by tabbott created at 2008-04-26 05:04:06",
+    "body": "Attachment [auto-symmetr.patch](tarball://root/attachments/some-uuid/ticket3029/auto-symmetr.patch) by @timabbott created at 2008-04-26 05:04:06",
     "created_at": "2008-04-26T05:04:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3029#issuecomment-20844",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [auto-symmetr.patch](tarball://root/attachments/some-uuid/ticket3029/auto-symmetr.patch) by tabbott created at 2008-04-26 05:04:06
+Attachment [auto-symmetr.patch](tarball://root/attachments/some-uuid/ticket3029/auto-symmetr.patch) by @timabbott created at 2008-04-26 05:04:06
 
 
 
@@ -357,16 +357,16 @@ Attachment [auto-symmetr.patch](tarball://root/attachments/some-uuid/ticket3029/
 archive/issue_comments_020845.json:
 ```json
 {
-    "body": "Attachment [auto-tachyon.patch](tarball://root/attachments/some-uuid/ticket3029/auto-tachyon.patch) by tabbott created at 2008-04-26 05:04:14",
+    "body": "Attachment [auto-tachyon.patch](tarball://root/attachments/some-uuid/ticket3029/auto-tachyon.patch) by @timabbott created at 2008-04-26 05:04:14",
     "created_at": "2008-04-26T05:04:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3029#issuecomment-20845",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [auto-tachyon.patch](tarball://root/attachments/some-uuid/ticket3029/auto-tachyon.patch) by tabbott created at 2008-04-26 05:04:14
+Attachment [auto-tachyon.patch](tarball://root/attachments/some-uuid/ticket3029/auto-tachyon.patch) by @timabbott created at 2008-04-26 05:04:14
 
 
 
@@ -375,16 +375,16 @@ Attachment [auto-tachyon.patch](tarball://root/attachments/some-uuid/ticket3029/
 archive/issue_comments_020846.json:
 ```json
 {
-    "body": "Attachment [auto-scipy_sandbox.patch](tarball://root/attachments/some-uuid/ticket3029/auto-scipy_sandbox.patch) by tabbott created at 2008-04-26 05:05:38",
+    "body": "Attachment [auto-scipy_sandbox.patch](tarball://root/attachments/some-uuid/ticket3029/auto-scipy_sandbox.patch) by @timabbott created at 2008-04-26 05:05:38",
     "created_at": "2008-04-26T05:05:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3029#issuecomment-20846",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [auto-scipy_sandbox.patch](tarball://root/attachments/some-uuid/ticket3029/auto-scipy_sandbox.patch) by tabbott created at 2008-04-26 05:05:38
+Attachment [auto-scipy_sandbox.patch](tarball://root/attachments/some-uuid/ticket3029/auto-scipy_sandbox.patch) by @timabbott created at 2008-04-26 05:05:38
 
 
 
@@ -393,16 +393,16 @@ Attachment [auto-scipy_sandbox.patch](tarball://root/attachments/some-uuid/ticke
 archive/issue_comments_020847.json:
 ```json
 {
-    "body": "Attachment [auto-ntl.patch](tarball://root/attachments/some-uuid/ticket3029/auto-ntl.patch) by tabbott created at 2008-04-26 05:11:11",
+    "body": "Attachment [auto-ntl.patch](tarball://root/attachments/some-uuid/ticket3029/auto-ntl.patch) by @timabbott created at 2008-04-26 05:11:11",
     "created_at": "2008-04-26T05:11:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3029#issuecomment-20847",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [auto-ntl.patch](tarball://root/attachments/some-uuid/ticket3029/auto-ntl.patch) by tabbott created at 2008-04-26 05:11:11
+Attachment [auto-ntl.patch](tarball://root/attachments/some-uuid/ticket3029/auto-ntl.patch) by @timabbott created at 2008-04-26 05:11:11
 
 
 
@@ -411,16 +411,16 @@ Attachment [auto-ntl.patch](tarball://root/attachments/some-uuid/ticket3029/auto
 archive/issue_comments_020848.json:
 ```json
 {
-    "body": "Attachment [auto-polybori.patch](tarball://root/attachments/some-uuid/ticket3029/auto-polybori.patch) by tabbott created at 2008-04-26 05:12:08",
+    "body": "Attachment [auto-polybori.patch](tarball://root/attachments/some-uuid/ticket3029/auto-polybori.patch) by @timabbott created at 2008-04-26 05:12:08",
     "created_at": "2008-04-26T05:12:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3029#issuecomment-20848",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [auto-polybori.patch](tarball://root/attachments/some-uuid/ticket3029/auto-polybori.patch) by tabbott created at 2008-04-26 05:12:08
+Attachment [auto-polybori.patch](tarball://root/attachments/some-uuid/ticket3029/auto-polybori.patch) by @timabbott created at 2008-04-26 05:12:08
 
 
 
@@ -429,16 +429,16 @@ Attachment [auto-polybori.patch](tarball://root/attachments/some-uuid/ticket3029
 archive/issue_comments_020849.json:
 ```json
 {
-    "body": "Attachment [auto-gap.patch](tarball://root/attachments/some-uuid/ticket3029/auto-gap.patch) by tabbott created at 2008-04-26 05:12:39",
+    "body": "Attachment [auto-gap.patch](tarball://root/attachments/some-uuid/ticket3029/auto-gap.patch) by @timabbott created at 2008-04-26 05:12:39",
     "created_at": "2008-04-26T05:12:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3029#issuecomment-20849",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [auto-gap.patch](tarball://root/attachments/some-uuid/ticket3029/auto-gap.patch) by tabbott created at 2008-04-26 05:12:39
+Attachment [auto-gap.patch](tarball://root/attachments/some-uuid/ticket3029/auto-gap.patch) by @timabbott created at 2008-04-26 05:12:39
 
 
 

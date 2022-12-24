@@ -3,7 +3,7 @@
 archive/issues_006273.json:
 ```json
 {
-    "body": "Assignee: was\n\nAt the moment, random_element for number field orders returns a random integer coerced into the order, which isn't very useful. A much better solution would be to use the random_element method of the underlying free ZZ-module. \n\nMore generally, one could ask for the same functionality for fractional ideals (and the above would be the special case for the ideal (1).)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6273\n\n",
+    "body": "Assignee: @williamstein\n\nAt the moment, random_element for number field orders returns a random integer coerced into the order, which isn't very useful. A much better solution would be to use the random_element method of the underlying free ZZ-module. \n\nMore generally, one could ask for the same functionality for fractional ideals (and the above would be the special case for the ideal (1).)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6273\n\n",
     "created_at": "2009-06-13T10:36:05Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_006273.json:
     "title": "Improve random_element for number field orders and ideals (easy)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6273",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 At the moment, random_element for number field orders returns a random integer coerced into the order, which isn't very useful. A much better solution would be to use the random_element method of the underlying free ZZ-module. 
 
@@ -39,7 +39,7 @@ archive/issue_comments_050104.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6273",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6273#issuecomment-50104",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_050105.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6273",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6273#issuecomment-50105",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_050106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6273",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6273#issuecomment-50106",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_050107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6273",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6273#issuecomment-50107",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -133,16 +133,16 @@ OK, I'll do that.  John
 archive/issue_comments_050108.json:
 ```json
 {
-    "body": "Attachment [trac_6273.patch](tarball://root/attachments/some-uuid/ticket6273/trac_6273.patch) by cremona created at 2009-06-14 15:44:55\n\nThe revised patch does what was asked for in the review!",
+    "body": "Attachment [trac_6273.patch](tarball://root/attachments/some-uuid/ticket6273/trac_6273.patch) by @JohnCremona created at 2009-06-14 15:44:55\n\nThe revised patch does what was asked for in the review!",
     "created_at": "2009-06-14T15:44:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6273",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6273#issuecomment-50108",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_6273.patch](tarball://root/attachments/some-uuid/ticket6273/trac_6273.patch) by cremona created at 2009-06-14 15:44:55
+Attachment [trac_6273.patch](tarball://root/attachments/some-uuid/ticket6273/trac_6273.patch) by @JohnCremona created at 2009-06-14 15:44:55
 
 The revised patch does what was asked for in the review!
 
@@ -158,7 +158,7 @@ archive/issue_comments_050109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6273",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6273#issuecomment-50109",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_050110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6273",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6273#issuecomment-50110",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -189,16 +189,16 @@ Sorry about that.  I'll review your fix as soon as I can.  John
 archive/issue_comments_050111.json:
 ```json
 {
-    "body": "Attachment [trac_6273-replacement.patch](tarball://root/attachments/some-uuid/ticket6273/trac_6273-replacement.patch) by cremona created at 2009-06-15 21:53:37\n\nThe new patch sorts out the parent problem ok, with suitable new doctests.  I note that you now delegate the random function for orders to that of ideals -- this means that the new code is *not* used for non-maximal order, unfortunately.  But then the same was true for my version.\n\nSo I would have given this a positive review, while noting that at some point non-maximal orders will need to be dealt with too.\n\nUnfortunately:\n\n```\nsage -t  \"devel/sage-6273/sage/rings/number_field/number_field_ideal.py\"\n**********************************************************************\nFile \"/home/john/sage-4.0.2.rc0/devel/sage-6273/sage/rings/number_field/number_field_ideal.py\", line 1045:\n    sage: I.basis()\nExpected:\n    [3, -a + 1, (-3/2*b - 1497/2)*a, (-1/2*b - 499/2)*a - b - 499]\nGot:\n    [3, a + 2, (3/2*b + 1497/2)*a, (b + 499)*a - b - 499]\n```\n\nso it's still \"needs work\"",
+    "body": "Attachment [trac_6273-replacement.patch](tarball://root/attachments/some-uuid/ticket6273/trac_6273-replacement.patch) by @JohnCremona created at 2009-06-15 21:53:37\n\nThe new patch sorts out the parent problem ok, with suitable new doctests.  I note that you now delegate the random function for orders to that of ideals -- this means that the new code is *not* used for non-maximal order, unfortunately.  But then the same was true for my version.\n\nSo I would have given this a positive review, while noting that at some point non-maximal orders will need to be dealt with too.\n\nUnfortunately:\n\n```\nsage -t  \"devel/sage-6273/sage/rings/number_field/number_field_ideal.py\"\n**********************************************************************\nFile \"/home/john/sage-4.0.2.rc0/devel/sage-6273/sage/rings/number_field/number_field_ideal.py\", line 1045:\n    sage: I.basis()\nExpected:\n    [3, -a + 1, (-3/2*b - 1497/2)*a, (-1/2*b - 499/2)*a - b - 499]\nGot:\n    [3, a + 2, (3/2*b + 1497/2)*a, (b + 499)*a - b - 499]\n```\n\nso it's still \"needs work\"",
     "created_at": "2009-06-15T21:53:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6273",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6273#issuecomment-50111",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_6273-replacement.patch](tarball://root/attachments/some-uuid/ticket6273/trac_6273-replacement.patch) by cremona created at 2009-06-15 21:53:37
+Attachment [trac_6273-replacement.patch](tarball://root/attachments/some-uuid/ticket6273/trac_6273-replacement.patch) by @JohnCremona created at 2009-06-15 21:53:37
 
 The new patch sorts out the parent problem ok, with suitable new doctests.  I note that you now delegate the random function for orders to that of ideals -- this means that the new code is *not* used for non-maximal order, unfortunately.  But then the same was true for my version.
 
@@ -231,7 +231,7 @@ archive/issue_comments_050112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6273",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6273#issuecomment-50112",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -262,16 +262,16 @@ Let's just comment out both basis lines (since basis works, and it's essentially
 archive/issue_comments_050113.json:
 ```json
 {
-    "body": "Attachment [trac_6273_new.patch](tarball://root/attachments/some-uuid/ticket6273/trac_6273_new.patch) by cremona created at 2009-06-16 09:51:07\n\nReplaces both previous",
+    "body": "Attachment [trac_6273_new.patch](tarball://root/attachments/some-uuid/ticket6273/trac_6273_new.patch) by @JohnCremona created at 2009-06-16 09:51:07\n\nReplaces both previous",
     "created_at": "2009-06-16T09:51:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6273",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6273#issuecomment-50113",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_6273_new.patch](tarball://root/attachments/some-uuid/ticket6273/trac_6273_new.patch) by cremona created at 2009-06-16 09:51:07
+Attachment [trac_6273_new.patch](tarball://root/attachments/some-uuid/ticket6273/trac_6273_new.patch) by @JohnCremona created at 2009-06-16 09:51:07
 
 Replaces both previous
 
@@ -287,7 +287,7 @@ archive/issue_comments_050114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6273",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6273#issuecomment-50114",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -307,7 +307,7 @@ archive/issue_comments_050115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6273",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6273#issuecomment-50115",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_050116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6273",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6273#issuecomment-50116",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

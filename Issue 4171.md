@@ -14,7 +14,7 @@ archive/issues_004171.json:
     "title": "SR + long broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4171",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -58,7 +58,7 @@ archive/issue_comments_030273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4171#issuecomment-30273",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

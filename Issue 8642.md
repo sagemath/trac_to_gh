@@ -3,7 +3,7 @@
 archive/issues_008642.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  was\n\nKeywords: notebook, cygwin\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8642\n\n",
+    "body": "Assignee: tbd\n\nCC:  @williamstein\n\nKeywords: notebook, cygwin\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8642\n\n",
     "created_at": "2010-04-02T05:40:42Z",
     "labels": [
         "porting: Cygwin",
@@ -14,12 +14,12 @@ archive/issues_008642.json:
     "title": "port detection for the notebook does not work in Cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8642",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
 
-CC:  was
+CC:  @williamstein
 
 Keywords: notebook, cygwin
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8642
 archive/issue_comments_078390.json:
 ```json
 {
-    "body": "Attachment [sagenb_8642.patch](tarball://root/attachments/some-uuid/ticket8642/sagenb_8642.patch) by mhansen created at 2010-04-02 05:43:17",
+    "body": "Attachment [sagenb_8642.patch](tarball://root/attachments/some-uuid/ticket8642/sagenb_8642.patch) by @mwhansen created at 2010-04-02 05:43:17",
     "created_at": "2010-04-02T05:43:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8642#issuecomment-78390",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [sagenb_8642.patch](tarball://root/attachments/some-uuid/ticket8642/sagenb_8642.patch) by mhansen created at 2010-04-02 05:43:17
+Attachment [sagenb_8642.patch](tarball://root/attachments/some-uuid/ticket8642/sagenb_8642.patch) by @mwhansen created at 2010-04-02 05:43:17
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_078391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8642#issuecomment-78391",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_078394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8642#issuecomment-78394",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_078395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8642#issuecomment-78395",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

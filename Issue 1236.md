@@ -3,7 +3,7 @@
 archive/issues_001236.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  cremona mariah aly.deines jdemeyer\n\n\n```\n\nHi, I needed some calculation period benchmark for pairings. I could\nnot find anything build in, but the following implementation solved my\nproblem:\n\nhttp://maths.straylight.co.uk/archives/104\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1236\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona mariah @adeines @jdemeyer\n\n\n```\n\nHi, I needed some calculation period benchmark for pairings. I could\nnot find anything build in, but the following implementation solved my\nproblem:\n\nhttp://maths.straylight.co.uk/archives/104\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1236\n\n",
     "created_at": "2007-11-21T16:22:42Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_001236.json:
     "title": "tate pairings on elliptic curves -- add to sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1236",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  cremona mariah aly.deines jdemeyer
+CC:  @JohnCremona mariah @adeines @jdemeyer
 
 
 ```
@@ -48,7 +48,7 @@ archive/issue_comments_007718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1236#issuecomment-7718",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_007719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1236#issuecomment-7719",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_007720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1236#issuecomment-7720",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_007721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1236#issuecomment-7721",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -194,16 +194,16 @@ Assigned to new "elliptic curves" component.
 archive/issue_comments_007722.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-07-20T19:46:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1236#issuecomment-7722",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 
@@ -217,7 +217,7 @@ archive/issue_comments_007723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1236#issuecomment-7723",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -230,16 +230,16 @@ Changing component from number theory to elliptic curves.
 archive/issue_comments_007724.json:
 ```json
 {
-    "body": "Remove assignee davidloeffler.",
+    "body": "Remove assignee @loefflerd.",
     "created_at": "2009-10-09T09:10:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1236#issuecomment-7724",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Remove assignee davidloeffler.
+Remove assignee @loefflerd.
 
 
 
@@ -253,7 +253,7 @@ archive/issue_comments_007725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1236#issuecomment-7725",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_007726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1236#issuecomment-7726",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -331,7 +331,7 @@ archive/issue_comments_007729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1236#issuecomment-7729",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -349,7 +349,7 @@ archive/issue_comments_007730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1236#issuecomment-7730",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

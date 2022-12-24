@@ -3,7 +3,7 @@
 archive/issues_002471.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2471\n\n",
+    "body": "Assignee: @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2471\n\n",
     "created_at": "2008-03-11T08:10:25Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_002471.json:
     "title": "[with patch; needs review] doctest failures in graph.py and factorization.py (caused by architecture dependence)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2471",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2471
 archive/issue_comments_016734.json:
 ```json
 {
-    "body": "Attachment [sage-2471.patch](tarball://root/attachments/some-uuid/ticket2471/sage-2471.patch) by was created at 2008-03-11 08:11:21",
+    "body": "Attachment [sage-2471.patch](tarball://root/attachments/some-uuid/ticket2471/sage-2471.patch) by @williamstein created at 2008-03-11 08:11:21",
     "created_at": "2008-03-11T08:11:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2471",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2471#issuecomment-16734",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2471.patch](tarball://root/attachments/some-uuid/ticket2471/sage-2471.patch) by was created at 2008-03-11 08:11:21
+Attachment [sage-2471.patch](tarball://root/attachments/some-uuid/ticket2471/sage-2471.patch) by @williamstein created at 2008-03-11 08:11:21
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_016735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2471",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2471#issuecomment-16735",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_016736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2471",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2471#issuecomment-16736",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

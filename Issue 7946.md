@@ -3,7 +3,7 @@
 archive/issues_007946.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  vbraun\n\n\n```\nsage: C = Spec(ZZ)\nsage: C.category()\nCategory of sets\nsage: isinstance(C, C.category().element_class)\nFalse\n```\n\n\nCaught with #7921; please write patch on top of it to avoid conflicts.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7946\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @vbraun\n\n\n```\nsage: C = Spec(ZZ)\nsage: C.category()\nCategory of sets\nsage: isinstance(C, C.category().element_class)\nFalse\n```\n\n\nCaught with #7921; please write patch on top of it to avoid conflicts.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7946\n\n",
     "created_at": "2010-01-16T12:37:52Z",
     "labels": [
         "algebraic geometry",
@@ -14,12 +14,12 @@ archive/issues_007946.json:
     "title": "Spec(...) does not specify its category",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7946",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  vbraun
+CC:  @vbraun
 
 
 ```
@@ -49,7 +49,7 @@ archive/issue_comments_069325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7946#issuecomment-69325",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_069326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7946#issuecomment-69326",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_069327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7946#issuecomment-69327",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_069328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7946#issuecomment-69328",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_069329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7946#issuecomment-69329",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_069330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7946#issuecomment-69330",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_069331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7946#issuecomment-69331",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_069332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7946#issuecomment-69332",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_069333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7946#issuecomment-69333",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_069334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7946#issuecomment-69334",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

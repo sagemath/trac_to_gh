@@ -14,7 +14,7 @@ archive/issues_006132.json:
     "title": "cmp for number field elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6132",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -39,7 +39,7 @@ archive/issue_comments_048974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6132",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6132#issuecomment-48974",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -52,16 +52,16 @@ Minor, but I just fixed two of these elsewhere: it's spelled "consistent"
 archive/issue_comments_048975.json:
 ```json
 {
-    "body": "Attachment [6132-nf-elt-cmp.patch](tarball://root/attachments/some-uuid/ticket6132/6132-nf-elt-cmp.patch) by robertwb created at 2009-05-26 19:16:36",
+    "body": "Attachment [6132-nf-elt-cmp.patch](tarball://root/attachments/some-uuid/ticket6132/6132-nf-elt-cmp.patch) by @robertwb created at 2009-05-26 19:16:36",
     "created_at": "2009-05-26T19:16:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6132",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6132#issuecomment-48975",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [6132-nf-elt-cmp.patch](tarball://root/attachments/some-uuid/ticket6132/6132-nf-elt-cmp.patch) by robertwb created at 2009-05-26 19:16:36
+Attachment [6132-nf-elt-cmp.patch](tarball://root/attachments/some-uuid/ticket6132/6132-nf-elt-cmp.patch) by @robertwb created at 2009-05-26 19:16:36
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_048976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6132",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6132#issuecomment-48976",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_048977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6132",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6132#issuecomment-48977",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -129,16 +129,16 @@ Changing this will probably lead to even more doctest failures, but brings us cl
 archive/issue_comments_048978.json:
 ```json
 {
-    "body": "Changing assignee from somebody to nbruin.",
+    "body": "Changing assignee from somebody to @nbruin.",
     "created_at": "2010-01-28T18:08:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6132",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6132#issuecomment-48978",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
-Changing assignee from somebody to nbruin.
+Changing assignee from somebody to @nbruin.
 
 
 
@@ -147,16 +147,16 @@ Changing assignee from somebody to nbruin.
 archive/issue_comments_048979.json:
 ```json
 {
-    "body": "Remove assignee nbruin.",
+    "body": "Remove assignee @nbruin.",
     "created_at": "2010-01-28T19:03:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6132",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6132#issuecomment-48979",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
-Remove assignee nbruin.
+Remove assignee @nbruin.
 
 
 
@@ -170,7 +170,7 @@ archive/issue_comments_048980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6132",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6132#issuecomment-48980",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_048981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6132",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6132#issuecomment-48981",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_048982.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6132",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6132#issuecomment-48982",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_048983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6132",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6132#issuecomment-48983",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_048984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6132",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6132#issuecomment-48984",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_048985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6132",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6132#issuecomment-48985",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_048986.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6132",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6132#issuecomment-48986",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

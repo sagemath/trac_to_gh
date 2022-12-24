@@ -3,7 +3,7 @@
 archive/issues_009317.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nCC:  cremona rkirov\n\nKeywords: S_part\n\nThis contains the functions prime_to_S_part, is_S_unit, is_S_integral for number field ideals.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9317\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @JohnCremona rkirov\n\nKeywords: S_part\n\nThis contains the functions prime_to_S_part, is_S_unit, is_S_integral for number field ideals.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9317\n\n",
     "created_at": "2010-06-23T05:46:39Z",
     "labels": [
         "number fields",
@@ -14,12 +14,12 @@ archive/issues_009317.json:
     "title": "prime_to_S_part, is_S_unit, is_S_integral",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9317",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
-CC:  cremona rkirov
+CC:  @JohnCremona rkirov
 
 Keywords: S_part
 
@@ -41,7 +41,7 @@ archive/issue_comments_087800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9317#issuecomment-87800",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -54,16 +54,16 @@ Changing status from new to needs_review.
 archive/issue_comments_087801.json:
 ```json
 {
-    "body": "Attachment [S_part.patch](tarball://root/attachments/some-uuid/ticket9317/S_part.patch) by robertwb created at 2010-06-23 05:56:08",
+    "body": "Attachment [S_part.patch](tarball://root/attachments/some-uuid/ticket9317/S_part.patch) by @robertwb created at 2010-06-23 05:56:08",
     "created_at": "2010-06-23T05:56:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9317#issuecomment-87801",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [S_part.patch](tarball://root/attachments/some-uuid/ticket9317/S_part.patch) by robertwb created at 2010-06-23 05:56:08
+Attachment [S_part.patch](tarball://root/attachments/some-uuid/ticket9317/S_part.patch) by @robertwb created at 2010-06-23 05:56:08
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_087802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9317#issuecomment-87802",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -90,16 +90,16 @@ Shouldn't these be like ` is_s_unit `  instead of the capital s?
 archive/issue_comments_087803.json:
 ```json
 {
-    "body": "Attachment [trac_9317-review.patch](tarball://root/attachments/some-uuid/ticket9317/trac_9317-review.patch) by cremona created at 2010-06-23 07:05:44\n\nApply after previous patch",
+    "body": "Attachment [trac_9317-review.patch](tarball://root/attachments/some-uuid/ticket9317/trac_9317-review.patch) by @JohnCremona created at 2010-06-23 07:05:44\n\nApply after previous patch",
     "created_at": "2010-06-23T07:05:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9317#issuecomment-87803",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_9317-review.patch](tarball://root/attachments/some-uuid/ticket9317/trac_9317-review.patch) by cremona created at 2010-06-23 07:05:44
+Attachment [trac_9317-review.patch](tarball://root/attachments/some-uuid/ticket9317/trac_9317-review.patch) by @JohnCremona created at 2010-06-23 07:05:44
 
 Apply after previous patch
 
@@ -115,7 +115,7 @@ archive/issue_comments_087804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9317#issuecomment-87804",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_087805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9317#issuecomment-87805",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -155,16 +155,16 @@ On the other hand, we don't capitalize things like Eulerian in `is_eulerian`.  W
 archive/issue_comments_087806.json:
 ```json
 {
-    "body": "Attachment [trac_9317_doctest_change.patch](tarball://root/attachments/some-uuid/ticket9317/trac_9317_doctest_change.patch) by aly.deines created at 2010-06-23 16:12:35",
+    "body": "Attachment [trac_9317_doctest_change.patch](tarball://root/attachments/some-uuid/ticket9317/trac_9317_doctest_change.patch) by @adeines created at 2010-06-23 16:12:35",
     "created_at": "2010-06-23T16:12:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9317#issuecomment-87806",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
-Attachment [trac_9317_doctest_change.patch](tarball://root/attachments/some-uuid/ticket9317/trac_9317_doctest_change.patch) by aly.deines created at 2010-06-23 16:12:35
+Attachment [trac_9317_doctest_change.patch](tarball://root/attachments/some-uuid/ticket9317/trac_9317_doctest_change.patch) by @adeines created at 2010-06-23 16:12:35
 
 
 
@@ -178,7 +178,7 @@ archive/issue_comments_087807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9317#issuecomment-87807",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_087808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9317#issuecomment-87808",
-    "user": "annahaensch"
+    "user": "@annahaensch"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_087809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9317#issuecomment-87809",
-    "user": "annahaensch"
+    "user": "@annahaensch"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_087810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9317#issuecomment-87810",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_002238.json:
     "title": "[with trivial patch, needs review] doctest failure in sage 2.10.2.alpha1: const.tex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2238",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 Assignee: tba
@@ -39,16 +39,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2238
 archive/issue_comments_014816.json:
 ```json
 {
-    "body": "Attachment [const_fails.patch](tarball://root/attachments/some-uuid/ticket2238/const_fails.patch) by AlexGhitza created at 2008-02-20 23:01:01",
+    "body": "Attachment [const_fails.patch](tarball://root/attachments/some-uuid/ticket2238/const_fails.patch) by @aghitza created at 2008-02-20 23:01:01",
     "created_at": "2008-02-20T23:01:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2238#issuecomment-14816",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [const_fails.patch](tarball://root/attachments/some-uuid/ticket2238/const_fails.patch) by AlexGhitza created at 2008-02-20 23:01:01
+Attachment [const_fails.patch](tarball://root/attachments/some-uuid/ticket2238/const_fails.patch) by @aghitza created at 2008-02-20 23:01:01
 
 
 
@@ -62,7 +62,7 @@ archive/issue_comments_014817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2238#issuecomment-14817",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_014818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2238#issuecomment-14818",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -107,16 +107,16 @@ this and doc-2238.patch should replace the above patch (apply this to sage repo;
 archive/issue_comments_014819.json:
 ```json
 {
-    "body": "Attachment [sage-2238.patch](tarball://root/attachments/some-uuid/ticket2238/sage-2238.patch) by was created at 2008-02-21 00:21:36",
+    "body": "Attachment [sage-2238.patch](tarball://root/attachments/some-uuid/ticket2238/sage-2238.patch) by @williamstein created at 2008-02-21 00:21:36",
     "created_at": "2008-02-21T00:21:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2238#issuecomment-14819",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2238.patch](tarball://root/attachments/some-uuid/ticket2238/sage-2238.patch) by was created at 2008-02-21 00:21:36
+Attachment [sage-2238.patch](tarball://root/attachments/some-uuid/ticket2238/sage-2238.patch) by @williamstein created at 2008-02-21 00:21:36
 
 
 
@@ -125,16 +125,16 @@ Attachment [sage-2238.patch](tarball://root/attachments/some-uuid/ticket2238/sag
 archive/issue_comments_014820.json:
 ```json
 {
-    "body": "Attachment [doc-2238.patch](tarball://root/attachments/some-uuid/ticket2238/doc-2238.patch) by was created at 2008-02-21 00:21:56",
+    "body": "Attachment [doc-2238.patch](tarball://root/attachments/some-uuid/ticket2238/doc-2238.patch) by @williamstein created at 2008-02-21 00:21:56",
     "created_at": "2008-02-21T00:21:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2238#issuecomment-14820",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [doc-2238.patch](tarball://root/attachments/some-uuid/ticket2238/doc-2238.patch) by was created at 2008-02-21 00:21:56
+Attachment [doc-2238.patch](tarball://root/attachments/some-uuid/ticket2238/doc-2238.patch) by @williamstein created at 2008-02-21 00:21:56
 
 
 
@@ -148,7 +148,7 @@ archive/issue_comments_014821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2238#issuecomment-14821",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -161,16 +161,16 @@ Changing priority from major to blocker.
 archive/issue_comments_014822.json:
 ```json
 {
-    "body": "Attachment [sage-2238-new.patch](tarball://root/attachments/some-uuid/ticket2238/sage-2238-new.patch) by AlexGhitza created at 2008-02-21 02:54:37\n\nreplace sage-2238.patch",
+    "body": "Attachment [sage-2238-new.patch](tarball://root/attachments/some-uuid/ticket2238/sage-2238-new.patch) by @aghitza created at 2008-02-21 02:54:37\n\nreplace sage-2238.patch",
     "created_at": "2008-02-21T02:54:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2238#issuecomment-14822",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [sage-2238-new.patch](tarball://root/attachments/some-uuid/ticket2238/sage-2238-new.patch) by AlexGhitza created at 2008-02-21 02:54:37
+Attachment [sage-2238-new.patch](tarball://root/attachments/some-uuid/ticket2238/sage-2238-new.patch) by @aghitza created at 2008-02-21 02:54:37
 
 replace sage-2238.patch
 
@@ -186,7 +186,7 @@ archive/issue_comments_014823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2238#issuecomment-14823",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_014826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2238#issuecomment-14826",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

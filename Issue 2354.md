@@ -3,7 +3,7 @@
 archive/issues_002354.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n        _n.flags = _n.flags|(NPY_OWNDATA) # this sets the ownership bug\n```\n\n\nbut should be\n\n```\n        _n.flags = _n.flags|(NPY_OWNDATA) # this sets the ownership bit\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2354\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n        _n.flags = _n.flags|(NPY_OWNDATA) # this sets the ownership bug\n```\n\n\nbut should be\n\n```\n        _n.flags = _n.flags|(NPY_OWNDATA) # this sets the ownership bit\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2354\n\n",
     "created_at": "2008-02-29T17:41:14Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_002354.json:
     "title": "bug in matrix_real_double_dense  (trivial to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2354",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2354
 archive/issue_comments_015828.json:
 ```json
 {
-    "body": "Attachment [2354.patch](tarball://root/attachments/some-uuid/ticket2354/2354.patch) by dfdeshom created at 2008-03-03 17:57:00",
+    "body": "Attachment [2354.patch](tarball://root/attachments/some-uuid/ticket2354/2354.patch) by @dfdeshom created at 2008-03-03 17:57:00",
     "created_at": "2008-03-03T17:57:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2354#issuecomment-15828",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Attachment [2354.patch](tarball://root/attachments/some-uuid/ticket2354/2354.patch) by dfdeshom created at 2008-03-03 17:57:00
+Attachment [2354.patch](tarball://root/attachments/some-uuid/ticket2354/2354.patch) by @dfdeshom created at 2008-03-03 17:57:00
 
 
 
@@ -68,7 +68,7 @@ archive/issue_comments_015829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2354#issuecomment-15829",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -81,16 +81,16 @@ Changing priority from major to trivial.
 archive/issue_comments_015830.json:
 ```json
 {
-    "body": "Changing assignee from was to dfdeshom.",
+    "body": "Changing assignee from @williamstein to @dfdeshom.",
     "created_at": "2008-03-03T17:57:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2354#issuecomment-15830",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Changing assignee from was to dfdeshom.
+Changing assignee from @williamstein to @dfdeshom.
 
 
 
@@ -104,7 +104,7 @@ archive/issue_comments_015831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2354#issuecomment-15831",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_015832.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2354#issuecomment-15832",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

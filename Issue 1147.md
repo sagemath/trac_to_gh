@@ -14,7 +14,7 @@ archive/issues_001147.json:
     "title": "change location of valgrind output files to something less obnoxious",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1147",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -72,7 +72,7 @@ archive/issue_comments_007001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1147",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1147#issuecomment-7001",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -85,16 +85,16 @@ At least these should be put in `$HOME/.sage/valgrind-memcheck`, `$HOME/.sage/va
 archive/issue_comments_007002.json:
 ```json
 {
-    "body": "Attachment [trac-1147.patch](tarball://root/attachments/some-uuid/ticket1147/trac-1147.patch) by was created at 2007-12-02 19:53:19\n\nApply this to the scripts repo!",
+    "body": "Attachment [trac-1147.patch](tarball://root/attachments/some-uuid/ticket1147/trac-1147.patch) by @williamstein created at 2007-12-02 19:53:19\n\nApply this to the scripts repo!",
     "created_at": "2007-12-02T19:53:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1147",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1147#issuecomment-7002",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1147.patch](tarball://root/attachments/some-uuid/ticket1147/trac-1147.patch) by was created at 2007-12-02 19:53:19
+Attachment [trac-1147.patch](tarball://root/attachments/some-uuid/ticket1147/trac-1147.patch) by @williamstein created at 2007-12-02 19:53:19
 
 Apply this to the scripts repo!
 

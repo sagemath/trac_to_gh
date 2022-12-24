@@ -3,7 +3,7 @@
 archive/issues_009198.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  jason chapoton\n\nNon-existent username does not yield error message when sharing worksheet in notebook.  If you attempt to share a worksheet in the notebook with a username that does not exist, it would be useful to have an error message.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9198\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @jasongrout @fchapoton\n\nNon-existent username does not yield error message when sharing worksheet in notebook.  If you attempt to share a worksheet in the notebook with a username that does not exist, it would be useful to have an error message.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9198\n\n",
     "created_at": "2010-06-09T18:42:22Z",
     "labels": [
         "notebook",
@@ -19,7 +19,7 @@ archive/issues_009198.json:
 ```
 Assignee: jason, was
 
-CC:  jason chapoton
+CC:  @jasongrout @fchapoton
 
 Non-existent username does not yield error message when sharing worksheet in notebook.  If you attempt to share a worksheet in the notebook with a username that does not exist, it would be useful to have an error message.
 
@@ -39,7 +39,7 @@ archive/issue_comments_086038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9198#issuecomment-86038",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_086039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9198#issuecomment-86039",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_086040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9198#issuecomment-86040",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

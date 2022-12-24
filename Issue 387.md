@@ -14,7 +14,7 @@ archive/issues_000387.json:
     "title": "Inconsistencies with IntegerMod subtypes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/387",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 Assignee: somebody
@@ -132,7 +132,7 @@ archive/issue_comments_001901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/387#issuecomment-1901",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_001902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/387#issuecomment-1902",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

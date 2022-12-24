@@ -14,7 +14,7 @@ archive/issues_006842.json:
     "title": "[with patch, needs review] ordinal_str giving wrong answers for 111, 112, 113",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6842",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 Assignee: somebody
@@ -81,7 +81,7 @@ archive/issue_comments_056443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6842#issuecomment-56443",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -94,16 +94,16 @@ Fixing ordinal_str for numbers of the form n*100+11, n*100+12, n*100+13
 archive/issue_comments_056444.json:
 ```json
 {
-    "body": "Attachment [ordinal_str.patch](tarball://root/attachments/some-uuid/ticket6842/ordinal_str.patch) by awebb created at 2009-08-29 12:18:58\n\nLooks good to me. It passes unit tests and the documentation builds correctly. \n\nAdam",
+    "body": "Attachment [ordinal_str.patch](tarball://root/attachments/some-uuid/ticket6842/ordinal_str.patch) by @maxthemouse created at 2009-08-29 12:18:58\n\nLooks good to me. It passes unit tests and the documentation builds correctly. \n\nAdam",
     "created_at": "2009-08-29T12:18:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6842#issuecomment-56444",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
-Attachment [ordinal_str.patch](tarball://root/attachments/some-uuid/ticket6842/ordinal_str.patch) by awebb created at 2009-08-29 12:18:58
+Attachment [ordinal_str.patch](tarball://root/attachments/some-uuid/ticket6842/ordinal_str.patch) by @maxthemouse created at 2009-08-29 12:18:58
 
 Looks good to me. It passes unit tests and the documentation builds correctly. 
 
@@ -139,7 +139,7 @@ archive/issue_comments_056446.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6842#issuecomment-56446",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

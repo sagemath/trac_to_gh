@@ -3,7 +3,7 @@
 archive/issues_000260.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  kcrisman\n\n\n```\n\nIt may be helpful for users who want to use SAGE graphics on their web\npages to be able to set the background as transparent.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/260\n\n",
+    "body": "Assignee: boothby\n\nCC:  @kcrisman\n\n\n```\n\nIt may be helpful for users who want to use SAGE graphics on their web\npages to be able to set the background as transparent.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/260\n\n",
     "created_at": "2007-02-12T04:20:44Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_000260.json:
     "title": "transparent graphics output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/260",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
 
-CC:  kcrisman
+CC:  @kcrisman
 
 
 ```
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/260
 archive/issue_comments_001208.json:
 ```json
 {
-    "body": "Attachment [trac_260-transparent_graphics.patch](tarball://root/attachments/some-uuid/ticket260/trac_260-transparent_graphics.patch) by mpatel created at 2009-08-10 15:25:48\n\nThe attached patch adds a keyword argument `transparency` to `plot.show()`.  The default value is `None`, which makes the image background opaque.  A number between 0 (transparent) and 1 (opaque) determines the degree of transparency.\n\nPlease test and make changes.  I'm new to the plotting code, so it's likely that I've missed and/or broken something.",
+    "body": "Attachment [trac_260-transparent_graphics.patch](tarball://root/attachments/some-uuid/ticket260/trac_260-transparent_graphics.patch) by @qed777 created at 2009-08-10 15:25:48\n\nThe attached patch adds a keyword argument `transparency` to `plot.show()`.  The default value is `None`, which makes the image background opaque.  A number between 0 (transparent) and 1 (opaque) determines the degree of transparency.\n\nPlease test and make changes.  I'm new to the plotting code, so it's likely that I've missed and/or broken something.",
     "created_at": "2009-08-10T15:25:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/260#issuecomment-1208",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_260-transparent_graphics.patch](tarball://root/attachments/some-uuid/ticket260/trac_260-transparent_graphics.patch) by mpatel created at 2009-08-10 15:25:48
+Attachment [trac_260-transparent_graphics.patch](tarball://root/attachments/some-uuid/ticket260/trac_260-transparent_graphics.patch) by @qed777 created at 2009-08-10 15:25:48
 
 The attached patch adds a keyword argument `transparency` to `plot.show()`.  The default value is `None`, which makes the image background opaque.  A number between 0 (transparent) and 1 (opaque) determines the degree of transparency.
 
@@ -67,7 +67,7 @@ archive/issue_comments_001209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/260#issuecomment-1209",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -80,16 +80,16 @@ Added examples.
 archive/issue_comments_001210.json:
 ```json
 {
-    "body": "Attachment [trac_260-transparent_graphics_v2.patch](tarball://root/attachments/some-uuid/ticket260/trac_260-transparent_graphics_v2.patch) by mpatel created at 2009-08-17 09:13:52\n\nPerhaps `opacity` is a more appropriate keyword (`alpha` gave errors).",
+    "body": "Attachment [trac_260-transparent_graphics_v2.patch](tarball://root/attachments/some-uuid/ticket260/trac_260-transparent_graphics_v2.patch) by @qed777 created at 2009-08-17 09:13:52\n\nPerhaps `opacity` is a more appropriate keyword (`alpha` gave errors).",
     "created_at": "2009-08-17T09:13:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/260#issuecomment-1210",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_260-transparent_graphics_v2.patch](tarball://root/attachments/some-uuid/ticket260/trac_260-transparent_graphics_v2.patch) by mpatel created at 2009-08-17 09:13:52
+Attachment [trac_260-transparent_graphics_v2.patch](tarball://root/attachments/some-uuid/ticket260/trac_260-transparent_graphics_v2.patch) by @qed777 created at 2009-08-17 09:13:52
 
 Perhaps `opacity` is a more appropriate keyword (`alpha` gave errors).
 
@@ -105,7 +105,7 @@ archive/issue_comments_001211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/260#issuecomment-1211",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -118,16 +118,16 @@ Changing component from notebook to graphics.
 archive/issue_comments_001212.json:
 ```json
 {
-    "body": "Changing assignee from boothby to was.",
+    "body": "Changing assignee from boothby to @williamstein.",
     "created_at": "2009-08-17T09:13:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/260#issuecomment-1212",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Changing assignee from boothby to was.
+Changing assignee from boothby to @williamstein.
 
 
 
@@ -141,7 +141,7 @@ archive/issue_comments_001213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/260#issuecomment-1213",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_001214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/260#issuecomment-1214",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_001215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/260#issuecomment-1215",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_001216.json:
     "issue": "https://github.com/sagemath/sagetest/issues/260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/260#issuecomment-1216",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_001217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/260#issuecomment-1217",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_001218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/260#issuecomment-1218",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_001219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/260#issuecomment-1219",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -314,16 +314,16 @@ Add opacity and background_color plot options.  Apply only this patch.
 archive/issue_comments_001220.json:
 ```json
 {
-    "body": "Attachment [trac_260-plot_bg_alpha.patch](tarball://root/attachments/some-uuid/ticket260/trac_260-plot_bg_alpha.patch) by mpatel created at 2009-10-23 00:35:44\n\nThe [attachment:trac_260-plot_bg_alpha.patch new patch] adds `background_color` and `opacity` keyword options to `plot()`.  Examples:\n\n```python\nsage: plot(x^cos(x^(sin(x))), (0, 30),  fill='axis', fillcolor='yellow', opacity=0.5)\n```\n\n\n```python\nsage: C = 1.0\nsage: a, b = var('a, b')\nsage: lem = contour_plot(2 * C^2 * (b^2 - a^2) - (a^2 + b^2)^2, (a, -2, 2), (b, -2, 2), plot_points=100, transparent=True, contours=25, cmap='Spectral')\nsage: lem.show(aspect_ratio=1.0, background_color='khaki')\n```\n\n\nCan a Sage plotting or matplotlib expert point out how to make the background uniform when *both* `background_color` and `opacity` are given?  Try this:\n\n```python\nsage: plot(x^cos(x^(sin(x))), (0, 30),  fill='axis', fillcolor='yellow', background_color='red', opacity=0.5)\n```\n\nNote how the plot's thick \"border\" has a different apparent transparency level.  Is this an [alpha compositing](http://en.wikipedia.org/wiki/Alpha_compositing) or blending problem?",
+    "body": "Attachment [trac_260-plot_bg_alpha.patch](tarball://root/attachments/some-uuid/ticket260/trac_260-plot_bg_alpha.patch) by @qed777 created at 2009-10-23 00:35:44\n\nThe [attachment:trac_260-plot_bg_alpha.patch new patch] adds `background_color` and `opacity` keyword options to `plot()`.  Examples:\n\n```python\nsage: plot(x^cos(x^(sin(x))), (0, 30),  fill='axis', fillcolor='yellow', opacity=0.5)\n```\n\n\n```python\nsage: C = 1.0\nsage: a, b = var('a, b')\nsage: lem = contour_plot(2 * C^2 * (b^2 - a^2) - (a^2 + b^2)^2, (a, -2, 2), (b, -2, 2), plot_points=100, transparent=True, contours=25, cmap='Spectral')\nsage: lem.show(aspect_ratio=1.0, background_color='khaki')\n```\n\n\nCan a Sage plotting or matplotlib expert point out how to make the background uniform when *both* `background_color` and `opacity` are given?  Try this:\n\n```python\nsage: plot(x^cos(x^(sin(x))), (0, 30),  fill='axis', fillcolor='yellow', background_color='red', opacity=0.5)\n```\n\nNote how the plot's thick \"border\" has a different apparent transparency level.  Is this an [alpha compositing](http://en.wikipedia.org/wiki/Alpha_compositing) or blending problem?",
     "created_at": "2009-10-23T00:35:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/260#issuecomment-1220",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_260-plot_bg_alpha.patch](tarball://root/attachments/some-uuid/ticket260/trac_260-plot_bg_alpha.patch) by mpatel created at 2009-10-23 00:35:44
+Attachment [trac_260-plot_bg_alpha.patch](tarball://root/attachments/some-uuid/ticket260/trac_260-plot_bg_alpha.patch) by @qed777 created at 2009-10-23 00:35:44
 
 The [attachment:trac_260-plot_bg_alpha.patch new patch] adds `background_color` and `opacity` keyword options to `plot()`.  Examples:
 
@@ -360,7 +360,7 @@ archive/issue_comments_001221.json:
     "issue": "https://github.com/sagemath/sagetest/issues/260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/260#issuecomment-1221",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -378,7 +378,7 @@ archive/issue_comments_001222.json:
     "issue": "https://github.com/sagemath/sagetest/issues/260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/260#issuecomment-1222",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -398,7 +398,7 @@ archive/issue_comments_001223.json:
     "issue": "https://github.com/sagemath/sagetest/issues/260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/260#issuecomment-1223",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -416,7 +416,7 @@ archive/issue_comments_001224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/260#issuecomment-1224",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -437,7 +437,7 @@ archive/issue_comments_001225.json:
     "issue": "https://github.com/sagemath/sagetest/issues/260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/260#issuecomment-1225",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -455,7 +455,7 @@ archive/issue_comments_001226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/260#issuecomment-1226",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -473,7 +473,7 @@ archive/issue_comments_001227.json:
     "issue": "https://github.com/sagemath/sagetest/issues/260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/260#issuecomment-1227",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -532,7 +532,7 @@ archive/issue_comments_001230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/260#issuecomment-1230",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -550,7 +550,7 @@ archive/issue_comments_001231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/260#issuecomment-1231",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

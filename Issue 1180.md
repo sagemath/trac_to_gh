@@ -14,7 +14,7 @@ archive/issues_001180.json:
     "title": "[with patch] documentation typo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1180",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1180
 archive/issue_comments_007284.json:
 ```json
 {
-    "body": "Attachment [7335.patch](tarball://root/attachments/some-uuid/ticket1180/7335.patch) by zimmerma created at 2007-11-15 20:17:57",
+    "body": "Attachment [7335.patch](tarball://root/attachments/some-uuid/ticket1180/7335.patch) by @zimmermann6 created at 2007-11-15 20:17:57",
     "created_at": "2007-11-15T20:17:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1180#issuecomment-7284",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [7335.patch](tarball://root/attachments/some-uuid/ticket1180/7335.patch) by zimmerma created at 2007-11-15 20:17:57
+Attachment [7335.patch](tarball://root/attachments/some-uuid/ticket1180/7335.patch) by @zimmermann6 created at 2007-11-15 20:17:57
 
 
 
@@ -50,16 +50,16 @@ Attachment [7335.patch](tarball://root/attachments/some-uuid/ticket1180/7335.pat
 archive/issue_comments_007285.json:
 ```json
 {
-    "body": "Attachment [7335.2.patch](tarball://root/attachments/some-uuid/ticket1180/7335.2.patch) by zimmerma created at 2007-11-15 20:23:17\n\n2nd typo (7335.2 should be ignored)",
+    "body": "Attachment [7335.2.patch](tarball://root/attachments/some-uuid/ticket1180/7335.2.patch) by @zimmermann6 created at 2007-11-15 20:23:17\n\n2nd typo (7335.2 should be ignored)",
     "created_at": "2007-11-15T20:23:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1180#issuecomment-7285",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [7335.2.patch](tarball://root/attachments/some-uuid/ticket1180/7335.2.patch) by zimmerma created at 2007-11-15 20:23:17
+Attachment [7335.2.patch](tarball://root/attachments/some-uuid/ticket1180/7335.2.patch) by @zimmermann6 created at 2007-11-15 20:23:17
 
 2nd typo (7335.2 should be ignored)
 

@@ -14,7 +14,7 @@ archive/issues_001842.json:
     "title": "clean up sage repositories",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1842",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -130,7 +130,7 @@ archive/issue_comments_011664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1842#issuecomment-11664",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_011665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1842#issuecomment-11665",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_011666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1842#issuecomment-11666",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

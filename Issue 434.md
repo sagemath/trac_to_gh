@@ -3,7 +3,7 @@
 archive/issues_000434.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nTesting this using sage I found that the command\nmwrank_set_precision() does not work:\n\nsage: mwrank_set_precision(30)\n---------------------------------------------------------------------------\n<type 'exceptions.ImportError'>           Traceback (most recent call last)\n\n/home/jec/gp/<ipython console> in <module>()\n\n/home/jec/sage-2.7/local/lib/python2.5/site-packages/sage/libs/mwrank/interface.py\nin set_precision(n)\n    27         n -- long\n    28     \"\"\"\n---> 29     from sage.libs.mwrank.mwrank import _set_precision #\nimport here to save time\n    30     _set_precision(n)\n    31\n\n<type 'exceptions.ImportError'>: cannot import name _set_precision\n\n-- can you fix that?  [Also, while preparing this email:  version() returns\nsage: version()\n 'SAGE Version 2.7.3, Release Date: 2007-08-02'\n\nalthough this is 2.8 (accor\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/434\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nTesting this using sage I found that the command\nmwrank_set_precision() does not work:\n\nsage: mwrank_set_precision(30)\n---------------------------------------------------------------------------\n<type 'exceptions.ImportError'>           Traceback (most recent call last)\n\n/home/jec/gp/<ipython console> in <module>()\n\n/home/jec/sage-2.7/local/lib/python2.5/site-packages/sage/libs/mwrank/interface.py\nin set_precision(n)\n    27         n -- long\n    28     \"\"\"\n---> 29     from sage.libs.mwrank.mwrank import _set_precision #\nimport here to save time\n    30     _set_precision(n)\n    31\n\n<type 'exceptions.ImportError'>: cannot import name _set_precision\n\n-- can you fix that?  [Also, while preparing this email:  version() returns\nsage: version()\n 'SAGE Version 2.7.3, Release Date: 2007-08-02'\n\nalthough this is 2.8 (accor\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/434\n\n",
     "created_at": "2007-08-17T14:31:18Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_000434.json:
     "title": "bug in mwrank interface -- something doesn't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/434",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -65,7 +65,7 @@ archive/issue_comments_002178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/434",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/434#issuecomment-2178",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_002179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/434",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/434#issuecomment-2179",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

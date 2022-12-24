@@ -3,7 +3,7 @@
 archive/issues_002420.json:
 ```json
 {
-    "body": "Assignee: SimonKing\n\nCC:  wdj mhansen davidloeffler\n\nKeywords: gap interface, polynomial rings, number fields\n\nUp to now, the gap interface did not work on polynomial rings over number fields. This patch extends the interface accordingly, so that now the following works.\nUnivariate:\n\n```\nsage: F=CyclotomicField(8)\nsage: R=PolynomialRing(F,'x')\nsage: gap(R)\nPolynomialRing( <algebraic extension over the Rationals of degree 4>, [\"x\"] )\nsage: p=R('zeta8^2*x+zeta8')\nsage: gap(p)^3\n((-1*zeta8^2))*x^3+((-3*zeta8))*x^2+(!-3)*x+(zeta8^3)\nsage: p^3\n(-zeta8^2)*x^3 + (-3*zeta8)*x^2 + (-3)*x + zeta8^3\n```\n\n\nMultivariate:\n\n```\nsage: R=PolynomialRing(F,'x,y')\nsage: gap(R)\nPolynomialRing( <algebraic extension over the Rationals of degree\n4>, [\"x\", \"y\"] )\nsage: p=R('zeta8*x+zeta8^2*y')^2\nsage: gap(p)\n(zeta8^2)*x^2+(2*zeta8^3)*x*y-y^2\nsage: p\nzeta8^2*x^2 + 2*zeta8^3*x*y + (-1)*y^2\n```\n\n\nThe patches also provide doc tests.\n\nHowever, there is one problem: On my machine, the doc tests of sage.rings.polynomial.polynomial_element.pyx trigger the bug reported in #2419.\nThat bug seems to occur only on few machines (up to now, only one other person can reproduce #2419). \n\nSo, there should be discussion how to deal with that issue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2420\n\n",
+    "body": "Assignee: @simon-king-jena\n\nCC:  @wdjoyner @mwhansen @loefflerd\n\nKeywords: gap interface, polynomial rings, number fields\n\nUp to now, the gap interface did not work on polynomial rings over number fields. This patch extends the interface accordingly, so that now the following works.\nUnivariate:\n\n```\nsage: F=CyclotomicField(8)\nsage: R=PolynomialRing(F,'x')\nsage: gap(R)\nPolynomialRing( <algebraic extension over the Rationals of degree 4>, [\"x\"] )\nsage: p=R('zeta8^2*x+zeta8')\nsage: gap(p)^3\n((-1*zeta8^2))*x^3+((-3*zeta8))*x^2+(!-3)*x+(zeta8^3)\nsage: p^3\n(-zeta8^2)*x^3 + (-3*zeta8)*x^2 + (-3)*x + zeta8^3\n```\n\n\nMultivariate:\n\n```\nsage: R=PolynomialRing(F,'x,y')\nsage: gap(R)\nPolynomialRing( <algebraic extension over the Rationals of degree\n4>, [\"x\", \"y\"] )\nsage: p=R('zeta8*x+zeta8^2*y')^2\nsage: gap(p)\n(zeta8^2)*x^2+(2*zeta8^3)*x*y-y^2\nsage: p\nzeta8^2*x^2 + 2*zeta8^3*x*y + (-1)*y^2\n```\n\n\nThe patches also provide doc tests.\n\nHowever, there is one problem: On my machine, the doc tests of sage.rings.polynomial.polynomial_element.pyx trigger the bug reported in #2419.\nThat bug seems to occur only on few machines (up to now, only one other person can reproduce #2419). \n\nSo, there should be discussion how to deal with that issue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2420\n\n",
     "created_at": "2008-03-07T09:05:58Z",
     "labels": [
         "interfaces",
@@ -14,12 +14,12 @@ archive/issues_002420.json:
     "title": "[with patch, needs review] Extending the gap interface to uni- and multivariate polynomial rings over number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2420",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
-Assignee: SimonKing
+Assignee: @simon-king-jena
 
-CC:  wdj mhansen davidloeffler
+CC:  @wdjoyner @mwhansen @loefflerd
 
 Keywords: gap interface, polynomial rings, number fields
 
@@ -77,7 +77,7 @@ archive/issue_comments_016359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2420#issuecomment-16359",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -106,16 +106,16 @@ sage: p=zeta8^2*x+zeta8
 archive/issue_comments_016360.json:
 ```json
 {
-    "body": "Attachment [mpoly_over_numberfield.patch](tarball://root/attachments/some-uuid/ticket2420/mpoly_over_numberfield.patch) by SimonKing created at 2008-03-08 00:35:50\n\nnew patch, adding more doctests, should apply to sage 2.10.3.rc2",
+    "body": "Attachment [mpoly_over_numberfield.patch](tarball://root/attachments/some-uuid/ticket2420/mpoly_over_numberfield.patch) by @simon-king-jena created at 2008-03-08 00:35:50\n\nnew patch, adding more doctests, should apply to sage 2.10.3.rc2",
     "created_at": "2008-03-08T00:35:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2420#issuecomment-16360",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [mpoly_over_numberfield.patch](tarball://root/attachments/some-uuid/ticket2420/mpoly_over_numberfield.patch) by SimonKing created at 2008-03-08 00:35:50
+Attachment [mpoly_over_numberfield.patch](tarball://root/attachments/some-uuid/ticket2420/mpoly_over_numberfield.patch) by @simon-king-jena created at 2008-03-08 00:35:50
 
 new patch, adding more doctests, should apply to sage 2.10.3.rc2
 
@@ -131,7 +131,7 @@ archive/issue_comments_016361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2420#issuecomment-16361",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_016362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2420#issuecomment-16362",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_016363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2420#issuecomment-16363",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_016364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2420#issuecomment-16364",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -333,7 +333,7 @@ archive/issue_comments_016365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2420#issuecomment-16365",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -380,7 +380,7 @@ archive/issue_comments_016366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2420#issuecomment-16366",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -487,16 +487,16 @@ So, it is almost done, but I'd like to fix the last problem too.
 archive/issue_comments_016367.json:
 ```json
 {
-    "body": "Attachment [trac_2420_GAP_interface_polynomials.patch](tarball://root/attachments/some-uuid/ticket2420/trac_2420_GAP_interface_polynomials.patch) by SimonKing created at 2010-07-08 09:58:17\n\nDisregard first patch; apply after the patches from #9205, #9438, #9423, #8909 and #5618",
+    "body": "Attachment [trac_2420_GAP_interface_polynomials.patch](tarball://root/attachments/some-uuid/ticket2420/trac_2420_GAP_interface_polynomials.patch) by @simon-king-jena created at 2010-07-08 09:58:17\n\nDisregard first patch; apply after the patches from #9205, #9438, #9423, #8909 and #5618",
     "created_at": "2010-07-08T09:58:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2420#issuecomment-16367",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [trac_2420_GAP_interface_polynomials.patch](tarball://root/attachments/some-uuid/ticket2420/trac_2420_GAP_interface_polynomials.patch) by SimonKing created at 2010-07-08 09:58:17
+Attachment [trac_2420_GAP_interface_polynomials.patch](tarball://root/attachments/some-uuid/ticket2420/trac_2420_GAP_interface_polynomials.patch) by @simon-king-jena created at 2010-07-08 09:58:17
 
 Disregard first patch; apply after the patches from #9205, #9438, #9423, #8909 and #5618
 
@@ -512,7 +512,7 @@ archive/issue_comments_016368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2420#issuecomment-16368",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -530,7 +530,7 @@ archive/issue_comments_016369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2420#issuecomment-16369",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -645,7 +645,7 @@ archive/issue_comments_016370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2420#issuecomment-16370",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -663,7 +663,7 @@ archive/issue_comments_016371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2420#issuecomment-16371",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -696,7 +696,7 @@ archive/issue_comments_016372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2420#issuecomment-16372",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -718,7 +718,7 @@ archive/issue_comments_016373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2420#issuecomment-16373",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -731,16 +731,16 @@ Replaces the previous patches
 archive/issue_comments_016374.json:
 ```json
 {
-    "body": "Attachment [trac2420_gap_interface_polynomials.patch](tarball://root/attachments/some-uuid/ticket2420/trac2420_gap_interface_polynomials.patch) by SimonKing created at 2011-07-22 13:07:54\n\nI have rebased the patch, so that it should work on top of sage-4.7.rc2. I haven't run tests, though.\n\nFor the patchbot:\n\nApply trac2420_gap_interface_polynomials.patch",
+    "body": "Attachment [trac2420_gap_interface_polynomials.patch](tarball://root/attachments/some-uuid/ticket2420/trac2420_gap_interface_polynomials.patch) by @simon-king-jena created at 2011-07-22 13:07:54\n\nI have rebased the patch, so that it should work on top of sage-4.7.rc2. I haven't run tests, though.\n\nFor the patchbot:\n\nApply trac2420_gap_interface_polynomials.patch",
     "created_at": "2011-07-22T13:07:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2420#issuecomment-16374",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [trac2420_gap_interface_polynomials.patch](tarball://root/attachments/some-uuid/ticket2420/trac2420_gap_interface_polynomials.patch) by SimonKing created at 2011-07-22 13:07:54
+Attachment [trac2420_gap_interface_polynomials.patch](tarball://root/attachments/some-uuid/ticket2420/trac2420_gap_interface_polynomials.patch) by @simon-king-jena created at 2011-07-22 13:07:54
 
 I have rebased the patch, so that it should work on top of sage-4.7.rc2. I haven't run tests, though.
 
@@ -760,7 +760,7 @@ archive/issue_comments_016375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2420#issuecomment-16375",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -778,7 +778,7 @@ archive/issue_comments_016376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2420#issuecomment-16376",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -798,7 +798,7 @@ archive/issue_comments_016377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2420#issuecomment-16377",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -816,7 +816,7 @@ archive/issue_comments_016378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2420#issuecomment-16378",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -878,7 +878,7 @@ archive/issue_comments_016379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2420#issuecomment-16379",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -896,7 +896,7 @@ archive/issue_comments_016380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2420#issuecomment-16380",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -917,7 +917,7 @@ archive/issue_comments_016381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2420#issuecomment-16381",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 

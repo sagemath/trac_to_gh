@@ -3,7 +3,7 @@
 archive/issues_008348.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  was\n\nHow can one approximate the root of an equation in arbitrary\nprecision? For example I want the root of log(x+2) = x to\n50 digits of precision:\n\n```\nsage: (log(x+2)-x).find_root(1,2)\n1.1461932206205643\nsage: (log(x+2)-x).find_root(1,2,prec=150)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/users/caramel/zimmerma/try/<ipython console> in <module>()\n\n/usr/local/sage-core2/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.find_root (sage/symbolic/expression.cpp:24383)()\n\nTypeError: find_root() got an unexpected keyword argument 'prec'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8348\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @williamstein\n\nHow can one approximate the root of an equation in arbitrary\nprecision? For example I want the root of log(x+2) = x to\n50 digits of precision:\n\n```\nsage: (log(x+2)-x).find_root(1,2)\n1.1461932206205643\nsage: (log(x+2)-x).find_root(1,2,prec=150)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/users/caramel/zimmerma/try/<ipython console> in <module>()\n\n/usr/local/sage-core2/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.find_root (sage/symbolic/expression.cpp:24383)()\n\nTypeError: find_root() got an unexpected keyword argument 'prec'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8348\n\n",
     "created_at": "2010-02-24T16:23:17Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_008348.json:
     "title": "find_root only works in fixed (double) precision",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8348",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  was
+CC:  @williamstein
 
 How can one approximate the root of an equation in arbitrary
 precision? For example I want the root of log(x+2) = x to
@@ -56,7 +56,7 @@ archive/issue_comments_074543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8348#issuecomment-74543",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_074544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8348#issuecomment-74544",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_074545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8348#issuecomment-74545",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_074546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8348#issuecomment-74546",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_074547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8348#issuecomment-74547",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_074548.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8348#issuecomment-74548",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_074549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8348#issuecomment-74549",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -186,16 +186,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_074550.json:
 ```json
 {
-    "body": "Attachment [trac_8348.patch](tarball://root/attachments/some-uuid/ticket8348/trac_8348.patch) by zimmerma created at 2013-08-24 07:58:12\n\nthe attached patch (produced against Sage 5.9) adds documentation to `find_root`.\nNote: I found out that `find_root` is duplicated in `numerical/optimize.py` and in `symbolic/expression.pyx`, which is unfortunate.\n\nPaul",
+    "body": "Attachment [trac_8348.patch](tarball://root/attachments/some-uuid/ticket8348/trac_8348.patch) by @zimmermann6 created at 2013-08-24 07:58:12\n\nthe attached patch (produced against Sage 5.9) adds documentation to `find_root`.\nNote: I found out that `find_root` is duplicated in `numerical/optimize.py` and in `symbolic/expression.pyx`, which is unfortunate.\n\nPaul",
     "created_at": "2013-08-24T07:58:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8348#issuecomment-74550",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [trac_8348.patch](tarball://root/attachments/some-uuid/ticket8348/trac_8348.patch) by zimmerma created at 2013-08-24 07:58:12
+Attachment [trac_8348.patch](tarball://root/attachments/some-uuid/ticket8348/trac_8348.patch) by @zimmermann6 created at 2013-08-24 07:58:12
 
 the attached patch (produced against Sage 5.9) adds documentation to `find_root`.
 Note: I found out that `find_root` is duplicated in `numerical/optimize.py` and in `symbolic/expression.pyx`, which is unfortunate.
@@ -214,7 +214,7 @@ archive/issue_comments_074551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8348#issuecomment-74551",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_074552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8348#issuecomment-74552",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_074553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8348#issuecomment-74553",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

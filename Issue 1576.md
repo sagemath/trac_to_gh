@@ -3,7 +3,7 @@
 archive/issues_001576.json:
 ```json
 {
-    "body": "Assignee: was\n\nHere are some examples that should probably work (from somebody named amscopub-travel)\n\nAs per an irc conversation last week, here is a list of math\nexpressions using implicit multiplication. Sorry for the delay:\n\n```\na b c(a^2 + b^2 + c^2)\na b + c^2 == y\n(z/(2sin(y z/55))+y+x)^(z/(2sin(y z/55))+y+x)\n2(x/2)^2+4(2x)^2\n0==-16x^2+48x\n(x+2)(x-1)\nx^2-4x+4\n2(x+3)(x-4)\n2x^2-2x-25<=0\n-16x^2+132x\n2(x+3)(x-4)\nx^2-5x+4\n3(x-5)(x-5)\n(x-1)(x-2)x\n(a-b)(a-b)(a-b)\n\nTake any usual python expression and drop the multiplication operator\n(or really make it *optional*). So for example, 2*x would be 2x.\nHowever, when ambiguity would result in variable names, use * or a\nspace. For example, a*b*c would be a b c (to distinguish from the\nvariable \"abc\").\n```\n\n\nA first version of this could simply be a function\n\n```\n  implicit_mul\n```\n\nthat takes a string as input, and outputs \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1576\n\n",
+    "body": "Assignee: @williamstein\n\nHere are some examples that should probably work (from somebody named amscopub-travel)\n\nAs per an irc conversation last week, here is a list of math\nexpressions using implicit multiplication. Sorry for the delay:\n\n```\na b c(a^2 + b^2 + c^2)\na b + c^2 == y\n(z/(2sin(y z/55))+y+x)^(z/(2sin(y z/55))+y+x)\n2(x/2)^2+4(2x)^2\n0==-16x^2+48x\n(x+2)(x-1)\nx^2-4x+4\n2(x+3)(x-4)\n2x^2-2x-25<=0\n-16x^2+132x\n2(x+3)(x-4)\nx^2-5x+4\n3(x-5)(x-5)\n(x-1)(x-2)x\n(a-b)(a-b)(a-b)\n\nTake any usual python expression and drop the multiplication operator\n(or really make it *optional*). So for example, 2*x would be 2x.\nHowever, when ambiguity would result in variable names, use * or a\nspace. For example, a*b*c would be a b c (to distinguish from the\nvariable \"abc\").\n```\n\n\nA first version of this could simply be a function\n\n```\n  implicit_mul\n```\n\nthat takes a string as input, and outputs \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1576\n\n",
     "created_at": "2007-12-21T00:18:46Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_001576.json:
     "title": "implicit multiplication -- sage needs to have *some* way to do this (even if not by default)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1576",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Here are some examples that should probably work (from somebody named amscopub-travel)
 
@@ -75,7 +75,7 @@ archive/issue_comments_010027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1576#issuecomment-10027",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -88,16 +88,16 @@ Changing status from new to assigned.
 archive/issue_comments_010028.json:
 ```json
 {
-    "body": "Changing assignee from was to robertwb.",
+    "body": "Changing assignee from @williamstein to @robertwb.",
     "created_at": "2008-01-04T08:47:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1576#issuecomment-10028",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from was to robertwb.
+Changing assignee from @williamstein to @robertwb.
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_010029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1576#issuecomment-10029",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -178,16 +178,16 @@ This is not yet on by default.
 archive/issue_comments_010030.json:
 ```json
 {
-    "body": "Attachment [1576-implicit_mul.diff](tarball://root/attachments/some-uuid/ticket1576/1576-implicit_mul.diff) by robertwb created at 2008-01-04 12:57:48",
+    "body": "Attachment [1576-implicit_mul.diff](tarball://root/attachments/some-uuid/ticket1576/1576-implicit_mul.diff) by @robertwb created at 2008-01-04 12:57:48",
     "created_at": "2008-01-04T12:57:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1576#issuecomment-10030",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [1576-implicit_mul.diff](tarball://root/attachments/some-uuid/ticket1576/1576-implicit_mul.diff) by robertwb created at 2008-01-04 12:57:48
+Attachment [1576-implicit_mul.diff](tarball://root/attachments/some-uuid/ticket1576/1576-implicit_mul.diff) by @robertwb created at 2008-01-04 12:57:48
 
 
 
@@ -201,7 +201,7 @@ archive/issue_comments_010031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1576#issuecomment-10031",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_010032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1576#issuecomment-10032",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

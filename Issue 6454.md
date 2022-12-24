@@ -3,7 +3,7 @@
 archive/issues_006454.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  malb\n\nIn particular, use walsh transform for linear_approximation_matrix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6454\n\n",
+    "body": "Assignee: somebody\n\nCC:  @malb\n\nIn particular, use walsh transform for linear_approximation_matrix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6454\n\n",
     "created_at": "2009-07-01T09:29:14Z",
     "labels": [
         "cryptography",
@@ -19,7 +19,7 @@ archive/issues_006454.json:
 ```
 Assignee: somebody
 
-CC:  malb
+CC:  @malb
 
 In particular, use walsh transform for linear_approximation_matrix.
 
@@ -57,7 +57,7 @@ archive/issue_comments_051965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6454",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6454#issuecomment-51965",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_051967.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6454",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6454#issuecomment-51967",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

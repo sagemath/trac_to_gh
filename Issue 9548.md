@@ -3,7 +3,7 @@
 archive/issues_009548.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nThis should do something reasonable:\n\n\n```\nsage: Infinity * I\n---------------------------------------------------------------------------\nArithmeticError                           Traceback (most recent call last)\n\n/home/fredrik/sage/<ipython console> in <module>()\n\n/home/fredrik/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__mul__ (sage/structure/element.c:11428)()\n\n/home/fredrik/sage/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6123)()\n\n/home/fredrik/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__mul__ (sage/structure/element.c:11356)()\n\n/home/fredrik/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression._mul_ (sage/symbolic/expression.cpp:11042)()\n\nArithmeticError: x*Infinity with non real x encountered.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9548\n\n",
+    "body": "Assignee: @aghitza\n\nThis should do something reasonable:\n\n\n```\nsage: Infinity * I\n---------------------------------------------------------------------------\nArithmeticError                           Traceback (most recent call last)\n\n/home/fredrik/sage/<ipython console> in <module>()\n\n/home/fredrik/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__mul__ (sage/structure/element.c:11428)()\n\n/home/fredrik/sage/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6123)()\n\n/home/fredrik/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__mul__ (sage/structure/element.c:11356)()\n\n/home/fredrik/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression._mul_ (sage/symbolic/expression.cpp:11042)()\n\nArithmeticError: x*Infinity with non real x encountered.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9548\n\n",
     "created_at": "2010-07-19T08:27:56Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_009548.json:
     "title": "Sage does not support infinities with complex direction",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9548",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 This should do something reasonable:
 
@@ -57,7 +57,7 @@ archive/issue_comments_092042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9548",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9548#issuecomment-92042",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_092043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9548",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9548#issuecomment-92043",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_092044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9548",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9548#issuecomment-92044",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 

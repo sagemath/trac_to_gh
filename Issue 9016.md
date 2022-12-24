@@ -3,7 +3,7 @@
 archive/issues_009016.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  robertwb\n\nAttached patch makes morphisms hashable in a reasonably fast way by defining the following:\n\n\n```\n    def __hash__(self):\n        return hash((self._domain, self._codomain))\n```\n\n\nIt also defines specialized methods for `sage.rings.morphism.RingHomomorphism_im_gens` and `sage.rings.morphism.RingHomomorphism_from_quotient`.\n\nWhile testing the code for `im_gens`, I fixed a confusing error message in `sage.structure.sequence.Sequence.__hash__()` as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9016\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @robertwb\n\nAttached patch makes morphisms hashable in a reasonably fast way by defining the following:\n\n\n```\n    def __hash__(self):\n        return hash((self._domain, self._codomain))\n```\n\n\nIt also defines specialized methods for `sage.rings.morphism.RingHomomorphism_im_gens` and `sage.rings.morphism.RingHomomorphism_from_quotient`.\n\nWhile testing the code for `im_gens`, I fixed a confusing error message in `sage.structure.sequence.Sequence.__hash__()` as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9016\n\n",
     "created_at": "2010-05-22T15:36:30Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_009016.json:
     "title": "make morphisms hashable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9016",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  robertwb
+CC:  @robertwb
 
 Attached patch makes morphisms hashable in a reasonably fast way by defining the following:
 
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9016
 archive/issue_comments_083395.json:
 ```json
 {
-    "body": "Attachment [trac_9016-morphishm_hash.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphishm_hash.patch) by burcin created at 2010-05-22 15:38:15",
+    "body": "Attachment [trac_9016-morphishm_hash.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphishm_hash.patch) by @burcin created at 2010-05-22 15:38:15",
     "created_at": "2010-05-22T15:38:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83395",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9016-morphishm_hash.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphishm_hash.patch) by burcin created at 2010-05-22 15:38:15
+Attachment [trac_9016-morphishm_hash.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphishm_hash.patch) by @burcin created at 2010-05-22 15:38:15
 
 
 
@@ -68,7 +68,7 @@ archive/issue_comments_083396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83396",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_083397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83397",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_083398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83398",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_083399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83399",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_083400.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83400",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_083401.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83401",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_083402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83402",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_083403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83403",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_083404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83404",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -283,16 +283,16 @@ apply only this patch
 archive/issue_comments_083405.json:
 ```json
 {
-    "body": "Attachment [trac_9016-morphishm_hash.take2.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphishm_hash.take2.patch) by burcin created at 2010-09-13 10:22:41\n\nReplying to [comment:5 davidloeffler]:\n> This patch causes a doctest failure on vanilla Sage 4.5.alpha1: \n\nI uploaded a new patch which fixes this.\n\nattachment:trac_9016-morphishm_hash.take2.patch also adds `__hash__()` methods to all the classes defined in `sage/{categories/map.pyx,rings/morphism.pyx}` which also define `__cmp__()` or `__richcmp__()` methods, in line with Robert's remarks in comment:2.\n\nRobert, can you take a look at this again?",
+    "body": "Attachment [trac_9016-morphishm_hash.take2.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphishm_hash.take2.patch) by @burcin created at 2010-09-13 10:22:41\n\nReplying to [comment:5 davidloeffler]:\n> This patch causes a doctest failure on vanilla Sage 4.5.alpha1: \n\nI uploaded a new patch which fixes this.\n\nattachment:trac_9016-morphishm_hash.take2.patch also adds `__hash__()` methods to all the classes defined in `sage/{categories/map.pyx,rings/morphism.pyx}` which also define `__cmp__()` or `__richcmp__()` methods, in line with Robert's remarks in comment:2.\n\nRobert, can you take a look at this again?",
     "created_at": "2010-09-13T10:22:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83405",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9016-morphishm_hash.take2.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphishm_hash.take2.patch) by burcin created at 2010-09-13 10:22:41
+Attachment [trac_9016-morphishm_hash.take2.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphishm_hash.take2.patch) by @burcin created at 2010-09-13 10:22:41
 
 Replying to [comment:5 davidloeffler]:
 > This patch causes a doctest failure on vanilla Sage 4.5.alpha1: 
@@ -315,7 +315,7 @@ archive/issue_comments_083406.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83406",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -333,7 +333,7 @@ archive/issue_comments_083407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83407",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -346,16 +346,16 @@ rebased to 4.7.alpha1
 archive/issue_comments_083408.json:
 ```json
 {
-    "body": "Attachment [trac_9016-morphishm_hash.take3.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphishm_hash.take3.patch) by burcin created at 2011-03-22 19:38:52\n\nApparently someone else fixed the problem in `sage/structure/sequence.py`. I rebased the patch to 4.7.alpha1.\n\nApply trac_9016-morphishm_hash.take3.patch",
+    "body": "Attachment [trac_9016-morphishm_hash.take3.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphishm_hash.take3.patch) by @burcin created at 2011-03-22 19:38:52\n\nApparently someone else fixed the problem in `sage/structure/sequence.py`. I rebased the patch to 4.7.alpha1.\n\nApply trac_9016-morphishm_hash.take3.patch",
     "created_at": "2011-03-22T19:38:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83408",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9016-morphishm_hash.take3.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphishm_hash.take3.patch) by burcin created at 2011-03-22 19:38:52
+Attachment [trac_9016-morphishm_hash.take3.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphishm_hash.take3.patch) by @burcin created at 2011-03-22 19:38:52
 
 Apparently someone else fixed the problem in `sage/structure/sequence.py`. I rebased the patch to 4.7.alpha1.
 
@@ -373,7 +373,7 @@ archive/issue_comments_083409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83409",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -391,7 +391,7 @@ archive/issue_comments_083410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83410",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -412,7 +412,7 @@ archive/issue_comments_083411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83411",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -430,7 +430,7 @@ archive/issue_comments_083412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83412",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -448,7 +448,7 @@ archive/issue_comments_083413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83413",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -472,7 +472,7 @@ archive/issue_comments_083414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83414",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -507,7 +507,7 @@ archive/issue_comments_083415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83415",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -525,7 +525,7 @@ archive/issue_comments_083416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83416",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -555,16 +555,16 @@ Also, I don't believe you need `# indirect doctest` for the `hash()`, but this i
 archive/issue_comments_083417.json:
 ```json
 {
-    "body": "Attachment [trac_9016-morphishm_hash.take4.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphishm_hash.take4.patch) by burcin created at 2012-11-19 03:34:50",
+    "body": "Attachment [trac_9016-morphishm_hash.take4.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphishm_hash.take4.patch) by @burcin created at 2012-11-19 03:34:50",
     "created_at": "2012-11-19T03:34:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83417",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9016-morphishm_hash.take4.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphishm_hash.take4.patch) by burcin created at 2012-11-19 03:34:50
+Attachment [trac_9016-morphishm_hash.take4.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphishm_hash.take4.patch) by @burcin created at 2012-11-19 03:34:50
 
 
 
@@ -578,7 +578,7 @@ archive/issue_comments_083418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83418",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -598,7 +598,7 @@ archive/issue_comments_083419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83419",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -616,7 +616,7 @@ archive/issue_comments_083420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83420",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -643,16 +643,16 @@ After this, that should be it. Thank you.
 archive/issue_comments_083421.json:
 ```json
 {
-    "body": "Attachment [trac_9016-morphishm_hash.take5.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphishm_hash.take5.patch) by burcin created at 2012-11-19 11:14:12\n\napply only this patch",
+    "body": "Attachment [trac_9016-morphishm_hash.take5.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphishm_hash.take5.patch) by @burcin created at 2012-11-19 11:14:12\n\napply only this patch",
     "created_at": "2012-11-19T11:14:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83421",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9016-morphishm_hash.take5.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphishm_hash.take5.patch) by burcin created at 2012-11-19 11:14:12
+Attachment [trac_9016-morphishm_hash.take5.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphishm_hash.take5.patch) by @burcin created at 2012-11-19 11:14:12
 
 apply only this patch
 
@@ -668,7 +668,7 @@ archive/issue_comments_083422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83422",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -693,7 +693,7 @@ archive/issue_comments_083423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83423",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -711,7 +711,7 @@ archive/issue_comments_083424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83424",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -724,16 +724,16 @@ apply only this patch
 archive/issue_comments_083425.json:
 ```json
 {
-    "body": "Attachment [trac_9016-morphism_hash.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphism_hash.patch) by burcin created at 2012-11-19 19:06:04\n\nI had some other patches applied. One of them might have changed the hash value. Corrected patch attached. Just to make sure there is no random error, I ran the tests in these two files 100 times. :)\n\nApply trac_9016-morphism_hash.patch",
+    "body": "Attachment [trac_9016-morphism_hash.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphism_hash.patch) by @burcin created at 2012-11-19 19:06:04\n\nI had some other patches applied. One of them might have changed the hash value. Corrected patch attached. Just to make sure there is no random error, I ran the tests in these two files 100 times. :)\n\nApply trac_9016-morphism_hash.patch",
     "created_at": "2012-11-19T19:06:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83425",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9016-morphism_hash.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphism_hash.patch) by burcin created at 2012-11-19 19:06:04
+Attachment [trac_9016-morphism_hash.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphism_hash.patch) by @burcin created at 2012-11-19 19:06:04
 
 I had some other patches applied. One of them might have changed the hash value. Corrected patch attached. Just to make sure there is no random error, I ran the tests in these two files 100 times. :)
 
@@ -751,7 +751,7 @@ archive/issue_comments_083426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83426",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -787,7 +787,7 @@ archive/issue_comments_083427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83427",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -809,7 +809,7 @@ archive/issue_comments_083428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83428",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -831,7 +831,7 @@ archive/issue_comments_083429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83429",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -855,16 +855,16 @@ Travis
 archive/issue_comments_083430.json:
 ```json
 {
-    "body": "Attachment [trac_9016-morphism_hash.take7.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphism_hash.take7.patch) by burcin created at 2012-11-20 16:37:48\n\napply only this patch",
+    "body": "Attachment [trac_9016-morphism_hash.take7.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphism_hash.take7.patch) by @burcin created at 2012-11-20 16:37:48\n\napply only this patch",
     "created_at": "2012-11-20T16:37:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83430",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9016-morphism_hash.take7.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphism_hash.take7.patch) by burcin created at 2012-11-20 16:37:48
+Attachment [trac_9016-morphism_hash.take7.patch](tarball://root/attachments/some-uuid/ticket9016/trac_9016-morphism_hash.take7.patch) by @burcin created at 2012-11-20 16:37:48
 
 apply only this patch
 
@@ -880,7 +880,7 @@ archive/issue_comments_083431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83431",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -900,7 +900,7 @@ archive/issue_comments_083432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83432",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -918,7 +918,7 @@ archive/issue_comments_083433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83433",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -936,7 +936,7 @@ archive/issue_comments_083434.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83434",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -954,7 +954,7 @@ archive/issue_comments_083435.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83435",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

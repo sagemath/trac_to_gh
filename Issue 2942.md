@@ -3,7 +3,7 @@
 archive/issues_002942.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  mpatel\n\nAfter a vote, almost everybody (including me) agrees with the following:\n\nsage -n:\n   run the notebook -- equivalent to \"sage -notebook\"\n\nsage -bn:\n   build sage, then run the notebook -- equivalent to \"sage -b; sage -n\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/2942\n\n",
+    "body": "Assignee: boothby\n\nCC:  @qed777\n\nAfter a vote, almost everybody (including me) agrees with the following:\n\nsage -n:\n   run the notebook -- equivalent to \"sage -notebook\"\n\nsage -bn:\n   build sage, then run the notebook -- equivalent to \"sage -b; sage -n\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/2942\n\n",
     "created_at": "2008-04-16T11:34:55Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_002942.json:
     "title": "notebook -- new command line options: sage -n and sage -nb",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2942",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
 
-CC:  mpatel
+CC:  @qed777
 
 After a vote, almost everybody (including me) agrees with the following:
 
@@ -81,7 +81,7 @@ archive/issue_comments_020267.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2942#issuecomment-20267",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_020268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2942#issuecomment-20268",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -112,16 +112,16 @@ Added commands -n and -bn
 archive/issue_comments_020269.json:
 ```json
 {
-    "body": "Attachment [trac_2942-n-and-nb-commandline-opts.patch](tarball://root/attachments/some-uuid/ticket2942/trac_2942-n-and-nb-commandline-opts.patch) by timdumol created at 2009-11-30 06:00:19\n\nThis patch should do the job.",
+    "body": "Attachment [trac_2942-n-and-nb-commandline-opts.patch](tarball://root/attachments/some-uuid/ticket2942/trac_2942-n-and-nb-commandline-opts.patch) by @TimDumol created at 2009-11-30 06:00:19\n\nThis patch should do the job.",
     "created_at": "2009-11-30T06:00:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2942#issuecomment-20269",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_2942-n-and-nb-commandline-opts.patch](tarball://root/attachments/some-uuid/ticket2942/trac_2942-n-and-nb-commandline-opts.patch) by timdumol created at 2009-11-30 06:00:19
+Attachment [trac_2942-n-and-nb-commandline-opts.patch](tarball://root/attachments/some-uuid/ticket2942/trac_2942-n-and-nb-commandline-opts.patch) by @TimDumol created at 2009-11-30 06:00:19
 
 This patch should do the job.
 
@@ -137,7 +137,7 @@ archive/issue_comments_020270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2942#issuecomment-20270",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_020271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2942#issuecomment-20271",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_020272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2942#issuecomment-20272",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_020273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2942#issuecomment-20273",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_020274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2942#issuecomment-20274",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_020275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2942#issuecomment-20275",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

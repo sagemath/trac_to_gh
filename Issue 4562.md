@@ -3,7 +3,7 @@
 archive/issues_004562.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis patch cleans up a bunch of unneeded imports.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4562\n\n",
+    "body": "Assignee: @williamstein\n\nThis patch cleans up a bunch of unneeded imports.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4562\n\n",
     "created_at": "2008-11-20T06:23:21Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_004562.json:
     "title": "clean up a bunch of imports in matrix CDF/RDF code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4562",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This patch cleans up a bunch of unneeded imports.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4562
 archive/issue_comments_034172.json:
 ```json
 {
-    "body": "Attachment [matrix-CDF-RDF-cleanup-imports.patch](tarball://root/attachments/some-uuid/ticket4562/matrix-CDF-RDF-cleanup-imports.patch) by jason created at 2008-11-20 06:23:36",
+    "body": "Attachment [matrix-CDF-RDF-cleanup-imports.patch](tarball://root/attachments/some-uuid/ticket4562/matrix-CDF-RDF-cleanup-imports.patch) by @jasongrout created at 2008-11-20 06:23:36",
     "created_at": "2008-11-20T06:23:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4562#issuecomment-34172",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [matrix-CDF-RDF-cleanup-imports.patch](tarball://root/attachments/some-uuid/ticket4562/matrix-CDF-RDF-cleanup-imports.patch) by jason created at 2008-11-20 06:23:36
+Attachment [matrix-CDF-RDF-cleanup-imports.patch](tarball://root/attachments/some-uuid/ticket4562/matrix-CDF-RDF-cleanup-imports.patch) by @jasongrout created at 2008-11-20 06:23:36
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_034173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4562#issuecomment-34173",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

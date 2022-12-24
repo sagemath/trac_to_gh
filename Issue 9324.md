@@ -3,7 +3,7 @@
 archive/issues_009324.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nCC:  robertwb rlm\n\n\n```\nsage: K.<a> = NumberField(x^2-x+6)\nsage: K.disc()\n-23\nsage: E = EllipticCurve([0,0,0,-53160*a-43995,-5067640*a+19402006])\nsage: E.conductor()\n[boom!]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9324\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @robertwb @rlmill\n\n\n```\nsage: K.<a> = NumberField(x^2-x+6)\nsage: K.disc()\n-23\nsage: E = EllipticCurve([0,0,0,-53160*a-43995,-5067640*a+19402006])\nsage: E.conductor()\n[boom!]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9324\n\n",
     "created_at": "2010-06-24T05:39:36Z",
     "labels": [
         "elliptic curves",
@@ -14,12 +14,12 @@ archive/issues_009324.json:
     "title": "bug in Tate's algorithm over number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9324",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
-CC:  robertwb rlm
+CC:  @robertwb @rlmill
 
 
 ```
@@ -49,7 +49,7 @@ archive/issue_comments_087933.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9324#issuecomment-87933",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -62,16 +62,16 @@ Applies to 4.4.4.alpha1
 archive/issue_comments_087934.json:
 ```json
 {
-    "body": "Attachment [trac_9324-tate.patch](tarball://root/attachments/some-uuid/ticket9324/trac_9324-tate.patch) by cremona created at 2010-06-24 06:27:44",
+    "body": "Attachment [trac_9324-tate.patch](tarball://root/attachments/some-uuid/ticket9324/trac_9324-tate.patch) by @JohnCremona created at 2010-06-24 06:27:44",
     "created_at": "2010-06-24T06:27:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9324#issuecomment-87934",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_9324-tate.patch](tarball://root/attachments/some-uuid/ticket9324/trac_9324-tate.patch) by cremona created at 2010-06-24 06:27:44
+Attachment [trac_9324-tate.patch](tarball://root/attachments/some-uuid/ticket9324/trac_9324-tate.patch) by @JohnCremona created at 2010-06-24 06:27:44
 
 
 
@@ -85,7 +85,7 @@ archive/issue_comments_087935.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9324#issuecomment-87935",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_087936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9324#issuecomment-87936",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_087937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9324#issuecomment-87937",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_087938.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9324#issuecomment-87938",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

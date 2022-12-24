@@ -3,7 +3,7 @@
 archive/issues_009842.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  davidloeffler\n\nThis is in the top-level docstring of the file:\n\n\n```\nsage: L = Qp(17).extension(x^2 - 17, names='a'); L.rename('L')\nsage: \nExiting Sage (CPU time 0m0.94s, Wall time 0m25.72s).\nExiting spawned Maxima process.\n```\n\n\nPatch on its way.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9843\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @loefflerd\n\nThis is in the top-level docstring of the file:\n\n\n```\nsage: L = Qp(17).extension(x^2 - 17, names='a'); L.rename('L')\nsage: \nExiting Sage (CPU time 0m0.94s, Wall time 0m25.72s).\nExiting spawned Maxima process.\n```\n\n\nPatch on its way.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9843\n\n",
     "created_at": "2010-08-31T22:09:56Z",
     "labels": [
         "modular forms",
@@ -14,12 +14,12 @@ archive/issues_009842.json:
     "title": "modular/overconvergent/weightspace.py uses Maxima because of symbolic variables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9842",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
-CC:  davidloeffler
+CC:  @loefflerd
 
 This is in the top-level docstring of the file:
 
@@ -50,7 +50,7 @@ archive/issue_comments_097137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9842#issuecomment-97137",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_097138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9842#issuecomment-97138",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_097139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9842#issuecomment-97139",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -99,16 +99,16 @@ Changing priority from major to minor.
 archive/issue_comments_097140.json:
 ```json
 {
-    "body": "Attachment [trac_9843.patch](tarball://root/attachments/some-uuid/ticket9843/trac_9843.patch) by AlexGhitza created at 2010-09-01 02:43:28",
+    "body": "Attachment [trac_9843.patch](tarball://root/attachments/some-uuid/ticket9843/trac_9843.patch) by @aghitza created at 2010-09-01 02:43:28",
     "created_at": "2010-09-01T02:43:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9842#issuecomment-97140",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_9843.patch](tarball://root/attachments/some-uuid/ticket9843/trac_9843.patch) by AlexGhitza created at 2010-09-01 02:43:28
+Attachment [trac_9843.patch](tarball://root/attachments/some-uuid/ticket9843/trac_9843.patch) by @aghitza created at 2010-09-01 02:43:28
 
 
 
@@ -122,7 +122,7 @@ archive/issue_comments_097141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9842#issuecomment-97141",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_097142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9842#issuecomment-97142",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_097143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9842#issuecomment-97143",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_097144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9842#issuecomment-97144",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003663.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat bump@match.stanford.edu\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3663\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat bump@match.stanford.edu\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3663\n\n",
     "created_at": "2008-07-16T00:41:55Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_003663.json:
     "title": "add support for affine crystals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3663",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat bump@match.stanford.edu
 
@@ -39,7 +39,7 @@ archive/issue_comments_025887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3663#issuecomment-25887",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing keywords from "" to "affine crystals".
 archive/issue_comments_025888.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to aschilling.",
+    "body": "Changing assignee from @mwhansen to @anneschilling.",
     "created_at": "2009-05-27T21:32:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3663#issuecomment-25888",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
-Changing assignee from mhansen to aschilling.
+Changing assignee from @mwhansen to @anneschilling.
 
 
 
@@ -70,16 +70,16 @@ Changing assignee from mhansen to aschilling.
 archive/issue_comments_025889.json:
 ```json
 {
-    "body": "Attachment [affine-crystal-3663-as.2.patch](tarball://root/attachments/some-uuid/ticket3663/affine-crystal-3663-as.2.patch) by aschilling created at 2009-05-27 21:32:37",
+    "body": "Attachment [affine-crystal-3663-as.2.patch](tarball://root/attachments/some-uuid/ticket3663/affine-crystal-3663-as.2.patch) by @anneschilling created at 2009-05-27 21:32:37",
     "created_at": "2009-05-27T21:32:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3663#issuecomment-25889",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
-Attachment [affine-crystal-3663-as.2.patch](tarball://root/attachments/some-uuid/ticket3663/affine-crystal-3663-as.2.patch) by aschilling created at 2009-05-27 21:32:37
+Attachment [affine-crystal-3663-as.2.patch](tarball://root/attachments/some-uuid/ticket3663/affine-crystal-3663-as.2.patch) by @anneschilling created at 2009-05-27 21:32:37
 
 
 
@@ -88,16 +88,16 @@ Attachment [affine-crystal-3663-as.2.patch](tarball://root/attachments/some-uuid
 archive/issue_comments_025890.json:
 ```json
 {
-    "body": "Attachment [affine-crystal-3663-as.3.patch](tarball://root/attachments/some-uuid/ticket3663/affine-crystal-3663-as.3.patch) by aschilling created at 2009-06-05 19:04:42",
+    "body": "Attachment [affine-crystal-3663-as.3.patch](tarball://root/attachments/some-uuid/ticket3663/affine-crystal-3663-as.3.patch) by @anneschilling created at 2009-06-05 19:04:42",
     "created_at": "2009-06-05T19:04:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3663#issuecomment-25890",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
-Attachment [affine-crystal-3663-as.3.patch](tarball://root/attachments/some-uuid/ticket3663/affine-crystal-3663-as.3.patch) by aschilling created at 2009-06-05 19:04:42
+Attachment [affine-crystal-3663-as.3.patch](tarball://root/attachments/some-uuid/ticket3663/affine-crystal-3663-as.3.patch) by @anneschilling created at 2009-06-05 19:04:42
 
 
 
@@ -106,16 +106,16 @@ Attachment [affine-crystal-3663-as.3.patch](tarball://root/attachments/some-uuid
 archive/issue_comments_025891.json:
 ```json
 {
-    "body": "Attachment [affine-crystal-3663-as.4.patch](tarball://root/attachments/some-uuid/ticket3663/affine-crystal-3663-as.4.patch) by aschilling created at 2009-06-08 06:48:58",
+    "body": "Attachment [affine-crystal-3663-as.4.patch](tarball://root/attachments/some-uuid/ticket3663/affine-crystal-3663-as.4.patch) by @anneschilling created at 2009-06-08 06:48:58",
     "created_at": "2009-06-08T06:48:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3663#issuecomment-25891",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
-Attachment [affine-crystal-3663-as.4.patch](tarball://root/attachments/some-uuid/ticket3663/affine-crystal-3663-as.4.patch) by aschilling created at 2009-06-08 06:48:58
+Attachment [affine-crystal-3663-as.4.patch](tarball://root/attachments/some-uuid/ticket3663/affine-crystal-3663-as.4.patch) by @anneschilling created at 2009-06-08 06:48:58
 
 
 
@@ -124,16 +124,16 @@ Attachment [affine-crystal-3663-as.4.patch](tarball://root/attachments/some-uuid
 archive/issue_comments_025892.json:
 ```json
 {
-    "body": "Attachment [affine-crystal-3663-as.5.patch](tarball://root/attachments/some-uuid/ticket3663/affine-crystal-3663-as.5.patch) by aschilling created at 2009-06-10 18:24:11\n\nimproved documentation links added",
+    "body": "Attachment [affine-crystal-3663-as.5.patch](tarball://root/attachments/some-uuid/ticket3663/affine-crystal-3663-as.5.patch) by @anneschilling created at 2009-06-10 18:24:11\n\nimproved documentation links added",
     "created_at": "2009-06-10T18:24:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3663#issuecomment-25892",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
-Attachment [affine-crystal-3663-as.5.patch](tarball://root/attachments/some-uuid/ticket3663/affine-crystal-3663-as.5.patch) by aschilling created at 2009-06-10 18:24:11
+Attachment [affine-crystal-3663-as.5.patch](tarball://root/attachments/some-uuid/ticket3663/affine-crystal-3663-as.5.patch) by @anneschilling created at 2009-06-10 18:24:11
 
 improved documentation links added
 
@@ -144,16 +144,16 @@ improved documentation links added
 archive/issue_comments_025893.json:
 ```json
 {
-    "body": "Attachment [affine-crystal-3663-as.6.patch](tarball://root/attachments/some-uuid/ticket3663/affine-crystal-3663-as.6.patch) by aschilling created at 2009-07-14 22:48:00\n\ncorrected problems with documentation in crystal_morphism",
+    "body": "Attachment [affine-crystal-3663-as.6.patch](tarball://root/attachments/some-uuid/ticket3663/affine-crystal-3663-as.6.patch) by @anneschilling created at 2009-07-14 22:48:00\n\ncorrected problems with documentation in crystal_morphism",
     "created_at": "2009-07-14T22:48:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3663#issuecomment-25893",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
-Attachment [affine-crystal-3663-as.6.patch](tarball://root/attachments/some-uuid/ticket3663/affine-crystal-3663-as.6.patch) by aschilling created at 2009-07-14 22:48:00
+Attachment [affine-crystal-3663-as.6.patch](tarball://root/attachments/some-uuid/ticket3663/affine-crystal-3663-as.6.patch) by @anneschilling created at 2009-07-14 22:48:00
 
 corrected problems with documentation in crystal_morphism
 
@@ -169,7 +169,7 @@ archive/issue_comments_025894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3663#issuecomment-25894",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_025895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3663#issuecomment-25895",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_025896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3663#issuecomment-25896",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_025897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3663#issuecomment-25897",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007150.json:
 ```json
 {
-    "body": "CC:  was\n\nI am getting this in 4.1.1 and find it really frustrating (especially since it took me several hours to catch):\n\n\n\n```\nsage: QQ[\"x\", \"y\"].inject_variables()\nDefining x, y\nsage: e1 = x^2*y^3 - x^2*y - x*y\nsage: e2 = e1.parent().fraction_field()(e1)\nsage: print e2\nx^2*y^3 - x^2*y - x*y\nsage: print e2.subs(y=SR(\"s\"))\nx^2*s^3 - (x^2 - x)*s\n```\n\nThe last line is wrong!\n\nIssue created by migration from https://trac.sagemath.org/ticket/7150\n\n",
+    "body": "CC:  @williamstein\n\nI am getting this in 4.1.1 and find it really frustrating (especially since it took me several hours to catch):\n\n\n\n```\nsage: QQ[\"x\", \"y\"].inject_variables()\nDefining x, y\nsage: e1 = x^2*y^3 - x^2*y - x*y\nsage: e2 = e1.parent().fraction_field()(e1)\nsage: print e2\nx^2*y^3 - x^2*y - x*y\nsage: print e2.subs(y=SR(\"s\"))\nx^2*s^3 - (x^2 - x)*s\n```\n\nThe last line is wrong!\n\nIssue created by migration from https://trac.sagemath.org/ticket/7150\n\n",
     "created_at": "2009-10-08T04:40:11Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_007150.json:
     "title": "Wrong substitution implementation for fraction fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7150",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
-CC:  was
+CC:  @williamstein
 
 I am getting this in 4.1.1 and find it really frustrating (especially since it took me several hours to catch):
 
@@ -101,7 +101,7 @@ archive/issue_comments_059243.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7150#issuecomment-59243",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_059244.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7150#issuecomment-59244",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_059245.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7150#issuecomment-59245",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

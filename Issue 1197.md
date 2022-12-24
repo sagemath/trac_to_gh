@@ -3,7 +3,7 @@
 archive/issues_001197.json:
 ```json
 {
-    "body": "Assignee: was\n\nA first solid version of this is now done, due to work of Ralf PW, John Cremona, and myself. \n\nA patch bundle that applies cleanly and the corresponding spkg are both\navailable here:\n\n    http://sage.math.washington.edu/home/was/cremona/\n\nIssue created by migration from https://trac.sagemath.org/ticket/1197\n\n",
+    "body": "Assignee: @williamstein\n\nA first solid version of this is now done, due to work of Ralf PW, John Cremona, and myself. \n\nA patch bundle that applies cleanly and the corresponding spkg are both\navailable here:\n\n    http://sage.math.washington.edu/home/was/cremona/\n\nIssue created by migration from https://trac.sagemath.org/ticket/1197\n\n",
     "created_at": "2007-11-18T06:28:08Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_001197.json:
     "title": "[with patch] add cremona's modular symbols program g0n to sage and add wrapper supprot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1197",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 A first solid version of this is now done, due to work of Ralf PW, John Cremona, and myself. 
 

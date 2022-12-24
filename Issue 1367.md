@@ -3,7 +3,7 @@
 archive/issues_001367.json:
 ```json
 {
-    "body": "Assignee: was\n\nI noticed this bug when thinking about implementing factorization of integers\nin a general relative number field (via the absolute field corresponding\nto it).  If this bug were fixed, then general factorization would be\ntrivial to implement, as suggested by the example below. \n\n\n```\nsage: K.<a,b> = NumberField([x^2 + 1, x^2 + 2])\nsage: A = K.absolute_field('z')\nsage: I = A.factor_integer(3)[0][0]\nsage: from_A, to_A = A.structure()\nsage: G = [from_A(z) for z in I.gens()]; G\n[3, (-2*b - 1)*a + b - 1]\nsage: K.fractional_ideal(G)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/was/s/devel/sage-main/sage/rings/number_field/<ipython console> in <module>()\n\n/Users/was/s/local/lib/python2.5/site-packages/IPython/Prompts.py in __call__(self, arg)\n    521 \n    522             # and now call a possibly user-defined print mechanism\n--> 523             manipulated_val = self.display(arg)\n    524             \n    525             # user display hooks can change the variable to be stored in\n\n/Users/was/s/local/lib/python2.5/site-packages/IPython/Prompts.py in _display(self, arg)\n    545         \"\"\"\n    546 \n--> 547         return self.shell.hooks.result_display(arg)\n    548 \n    549     # Assign the default display method:\n\n/Users/was/s/local/lib/python2.5/site-packages/IPython/hooks.py in __call__(self, *args, **kw)\n    132             #print \"prio\",prio,\"cmd\",cmd #dbg\n    133             try:\n--> 134                 ret = cmd(*args, **kw)\n    135                 return ret\n    136             except ipapi.TryNext, exc:\n\n/Users/was/s/local/lib/python2.5/site-packages/IPython/hooks.py in result_display(self, arg)\n    160     \n    161     if self.rc.pprint:\n--> 162         out = pformat(arg)\n    163         if '\\n' in out:\n    164             # So that multi-line strings line up with the left column of\n\n/Users/was/s/local/lib/python2.5/pprint.py in pformat(self, object)\n    109     def pformat(self, object):\n    110         sio = _StringIO()\n--> 111         self._format(object, sio, 0, 0, {}, 0)\n    112         return sio.getvalue()\n    113 \n\n/Users/was/s/local/lib/python2.5/pprint.py in _format(self, object, stream, indent, allowance, context, level)\n    127             self._readable = False\n    128             return\n--> 129         rep = self._repr(object, context, level - 1)\n    130         typ = _type(object)\n    131         sepLines = _len(rep) > (self._width - 1 - indent - allowance)\n\n/Users/was/s/local/lib/python2.5/pprint.py in _repr(self, object, context, level)\n    193     def _repr(self, object, context, level):\n    194         repr, readable, recursive = self.format(object, context.copy(),\n--> 195                                                 self._depth, level)\n    196         if not readable:\n    197             self._readable = False\n\n/Users/was/s/local/lib/python2.5/pprint.py in format(self, object, context, maxlevels, level)\n    205         and whether the object represents a recursive construct.\n    206         \"\"\"\n--> 207         return _safe_repr(object, context, maxlevels, level)\n    208 \n    209 \n\n/Users/was/s/local/lib/python2.5/pprint.py in _safe_repr(object, context, maxlevels, level)\n    290         return format % _commajoin(components), readable, recursive\n    291 \n--> 292     rep = repr(object)\n    293     return rep, (rep and not rep.startswith('<')), False\n    294 \n\n/Users/was/s/local/lib/python2.5/site-packages/sage/rings/number_field/number_field_ideal.py in __repr__(self)\n    215 \n    216     def __repr__(self):\n--> 217         return \"Fractional ideal %s\"%self._repr_short()\n    218 \n    219     def _repr_short(self):\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/rings/number_field/number_field_ideal.py in _repr_short(self)\n    232         # makes things insanely slow in general.\n    233         # When I fix this, I *have* to also change the _latex_ method.\n--> 234         return '(%s)'%(', '.join([str(x) for x in self.gens_reduced()]))\n    235 \n    236     def __div__(self, other):\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/rings/number_field/number_field_ideal_rel.py in gens_reduced(self)\n     84             S = L['x']\n     85             gens = L.pari_rnf().rnfidealtwoelt(self.pari_rhnf())\n---> 86             gens = [ L(R(x.lift().lift())) for x in gens ]\n     87             ## Make sure that gens[1] is in L, not K\n     88             Lcoeff = [ L(x) for x in list(gens[1].polynomial()) ]\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py in __call__(self, x)\n   3321             return self.base_field()(x)\n   3322         \n-> 3323         return self._element_class(self, x)\n   3324 \n   3325     def _coerce_impl(self, x):\n\n/Users/was/s/devel/sage-main/sage/rings/number_field/number_field_element.pyx in sage.rings.number_field.number_field_element.NumberFieldElement.__init__()\n    231         num = f * den\n    232         for i from 0 <= i <= num.degree():\n--> 233             (<Integer>ZZ(num[i]))._to_ZZ(&coeff)\n    234             ZZX_SetCoeff( self.__numerator, i, coeff )\n    235 \n\n/Users/was/s/devel/sage-main/sage/rings/number_field/integer_ring.pyx in sage.rings.integer_ring.IntegerRing_class.__call__()\n\n<type 'exceptions.TypeError'>: Unable to coerce -b - 2 to an integer\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1367\n\n",
+    "body": "Assignee: @williamstein\n\nI noticed this bug when thinking about implementing factorization of integers\nin a general relative number field (via the absolute field corresponding\nto it).  If this bug were fixed, then general factorization would be\ntrivial to implement, as suggested by the example below. \n\n\n```\nsage: K.<a,b> = NumberField([x^2 + 1, x^2 + 2])\nsage: A = K.absolute_field('z')\nsage: I = A.factor_integer(3)[0][0]\nsage: from_A, to_A = A.structure()\nsage: G = [from_A(z) for z in I.gens()]; G\n[3, (-2*b - 1)*a + b - 1]\nsage: K.fractional_ideal(G)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/was/s/devel/sage-main/sage/rings/number_field/<ipython console> in <module>()\n\n/Users/was/s/local/lib/python2.5/site-packages/IPython/Prompts.py in __call__(self, arg)\n    521 \n    522             # and now call a possibly user-defined print mechanism\n--> 523             manipulated_val = self.display(arg)\n    524             \n    525             # user display hooks can change the variable to be stored in\n\n/Users/was/s/local/lib/python2.5/site-packages/IPython/Prompts.py in _display(self, arg)\n    545         \"\"\"\n    546 \n--> 547         return self.shell.hooks.result_display(arg)\n    548 \n    549     # Assign the default display method:\n\n/Users/was/s/local/lib/python2.5/site-packages/IPython/hooks.py in __call__(self, *args, **kw)\n    132             #print \"prio\",prio,\"cmd\",cmd #dbg\n    133             try:\n--> 134                 ret = cmd(*args, **kw)\n    135                 return ret\n    136             except ipapi.TryNext, exc:\n\n/Users/was/s/local/lib/python2.5/site-packages/IPython/hooks.py in result_display(self, arg)\n    160     \n    161     if self.rc.pprint:\n--> 162         out = pformat(arg)\n    163         if '\\n' in out:\n    164             # So that multi-line strings line up with the left column of\n\n/Users/was/s/local/lib/python2.5/pprint.py in pformat(self, object)\n    109     def pformat(self, object):\n    110         sio = _StringIO()\n--> 111         self._format(object, sio, 0, 0, {}, 0)\n    112         return sio.getvalue()\n    113 \n\n/Users/was/s/local/lib/python2.5/pprint.py in _format(self, object, stream, indent, allowance, context, level)\n    127             self._readable = False\n    128             return\n--> 129         rep = self._repr(object, context, level - 1)\n    130         typ = _type(object)\n    131         sepLines = _len(rep) > (self._width - 1 - indent - allowance)\n\n/Users/was/s/local/lib/python2.5/pprint.py in _repr(self, object, context, level)\n    193     def _repr(self, object, context, level):\n    194         repr, readable, recursive = self.format(object, context.copy(),\n--> 195                                                 self._depth, level)\n    196         if not readable:\n    197             self._readable = False\n\n/Users/was/s/local/lib/python2.5/pprint.py in format(self, object, context, maxlevels, level)\n    205         and whether the object represents a recursive construct.\n    206         \"\"\"\n--> 207         return _safe_repr(object, context, maxlevels, level)\n    208 \n    209 \n\n/Users/was/s/local/lib/python2.5/pprint.py in _safe_repr(object, context, maxlevels, level)\n    290         return format % _commajoin(components), readable, recursive\n    291 \n--> 292     rep = repr(object)\n    293     return rep, (rep and not rep.startswith('<')), False\n    294 \n\n/Users/was/s/local/lib/python2.5/site-packages/sage/rings/number_field/number_field_ideal.py in __repr__(self)\n    215 \n    216     def __repr__(self):\n--> 217         return \"Fractional ideal %s\"%self._repr_short()\n    218 \n    219     def _repr_short(self):\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/rings/number_field/number_field_ideal.py in _repr_short(self)\n    232         # makes things insanely slow in general.\n    233         # When I fix this, I *have* to also change the _latex_ method.\n--> 234         return '(%s)'%(', '.join([str(x) for x in self.gens_reduced()]))\n    235 \n    236     def __div__(self, other):\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/rings/number_field/number_field_ideal_rel.py in gens_reduced(self)\n     84             S = L['x']\n     85             gens = L.pari_rnf().rnfidealtwoelt(self.pari_rhnf())\n---> 86             gens = [ L(R(x.lift().lift())) for x in gens ]\n     87             ## Make sure that gens[1] is in L, not K\n     88             Lcoeff = [ L(x) for x in list(gens[1].polynomial()) ]\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py in __call__(self, x)\n   3321             return self.base_field()(x)\n   3322         \n-> 3323         return self._element_class(self, x)\n   3324 \n   3325     def _coerce_impl(self, x):\n\n/Users/was/s/devel/sage-main/sage/rings/number_field/number_field_element.pyx in sage.rings.number_field.number_field_element.NumberFieldElement.__init__()\n    231         num = f * den\n    232         for i from 0 <= i <= num.degree():\n--> 233             (<Integer>ZZ(num[i]))._to_ZZ(&coeff)\n    234             ZZX_SetCoeff( self.__numerator, i, coeff )\n    235 \n\n/Users/was/s/devel/sage-main/sage/rings/number_field/integer_ring.pyx in sage.rings.integer_ring.IntegerRing_class.__call__()\n\n<type 'exceptions.TypeError'>: Unable to coerce -b - 2 to an integer\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1367\n\n",
     "created_at": "2007-12-02T07:52:55Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_001367.json:
     "title": "weird bug creating fractional ideal in relative number field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1367",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I noticed this bug when thinking about implementing factorization of integers
 in a general relative number field (via the absolute field corresponding
@@ -159,7 +159,7 @@ archive/issue_comments_008768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8768",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_008769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8769",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -385,7 +385,7 @@ archive/issue_comments_008776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8776",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -463,7 +463,7 @@ archive/issue_comments_008779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8779",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -482,16 +482,16 @@ Don't forget to close #4869 and #4727 after this is merged.
 archive/issue_comments_008780.json:
 ```json
 {
-    "body": "Attachment [trac_1367.patch](tarball://root/attachments/some-uuid/ticket1367/trac_1367.patch) by ncalexan created at 2009-01-24 09:58:04",
+    "body": "Attachment [trac_1367.patch](tarball://root/attachments/some-uuid/ticket1367/trac_1367.patch) by @ncalexan created at 2009-01-24 09:58:04",
     "created_at": "2009-01-24T09:58:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8780",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [trac_1367.patch](tarball://root/attachments/some-uuid/ticket1367/trac_1367.patch) by ncalexan created at 2009-01-24 09:58:04
+Attachment [trac_1367.patch](tarball://root/attachments/some-uuid/ticket1367/trac_1367.patch) by @ncalexan created at 2009-01-24 09:58:04
 
 
 
@@ -505,7 +505,7 @@ archive/issue_comments_008781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8781",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -525,7 +525,7 @@ archive/issue_comments_008782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8782",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -567,7 +567,7 @@ archive/issue_comments_008783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8783",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -631,7 +631,7 @@ archive/issue_comments_008785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8785",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -686,7 +686,7 @@ archive/issue_comments_008787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8787",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

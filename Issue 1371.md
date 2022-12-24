@@ -3,7 +3,7 @@
 archive/issues_001371.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: push, mercurial, branches\n\nI noticed that the push() method was missing in sage-2.8.14, so here is a\npatch.  I also added current_branch() and list_branches() for the\nconvenience of those who may want to manage multiple branches\nsimultaneously.\n\nI was also interested in being able to have a separate default outgoing\nrepository for convenient backups, but there is an organizational issue here\n-- SAGE has hardcoded its default branch (on the server) as sage-main, so if\none wanted to manage multiple branches from the same repository (as might\nhappen if there were several branches being simultaneously pulled/pushed to\non the same server) they will break the default scheme.  So I forced the\nhardcoded default server to use only the \"main\" branch (and updated the\nhardcoded server to be sagemath.org instead of sage.math.washington.edu).\n\nFor example, suppose one wants to have a server with two branches: sage-main\nand sage-other on the non-default server math.awesome.edu.  Then the way\nthings are coded now, sage-main would update from sage-main, and\nsage-other would update from sage-other.  If we were connecting to the\ndefault sagemath.org, then both branches would update from sage-main.\n(WARNING TO MAINTAINER: This means that if the default server is changed,\none must also explicitly change the DEFAULT_SERVER variable in\nBRANCH_PATH/sage/misc/hg.py)\n\nIf a non-default outgoing server is set, then commands like hg_sage.bundle() will use it for determining the relevant changesets, so a bundle to commit to sagemath.org would meet to specify the incoming server explicity.  For example, this bundle was created with:\n\n    hg_sage.bundle(\"push_bundle--Dec_2_2007\", url=hg_sage.pull_url())\n\nFinally, I didn't really understand where the default_server was set, so I\nadded support to set them from shell variables SAGE_INCOMING_SERVER and\nSAGE_OUTGOING_SERVER (with no trailing '/', in mercurial path format to the\n'...../devel' directory).  However I was careful to preserve the default\nbehavior when no settings are present.  Any comments are appreciated! \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1371\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: push, mercurial, branches\n\nI noticed that the push() method was missing in sage-2.8.14, so here is a\npatch.  I also added current_branch() and list_branches() for the\nconvenience of those who may want to manage multiple branches\nsimultaneously.\n\nI was also interested in being able to have a separate default outgoing\nrepository for convenient backups, but there is an organizational issue here\n-- SAGE has hardcoded its default branch (on the server) as sage-main, so if\none wanted to manage multiple branches from the same repository (as might\nhappen if there were several branches being simultaneously pulled/pushed to\non the same server) they will break the default scheme.  So I forced the\nhardcoded default server to use only the \"main\" branch (and updated the\nhardcoded server to be sagemath.org instead of sage.math.washington.edu).\n\nFor example, suppose one wants to have a server with two branches: sage-main\nand sage-other on the non-default server math.awesome.edu.  Then the way\nthings are coded now, sage-main would update from sage-main, and\nsage-other would update from sage-other.  If we were connecting to the\ndefault sagemath.org, then both branches would update from sage-main.\n(WARNING TO MAINTAINER: This means that if the default server is changed,\none must also explicitly change the DEFAULT_SERVER variable in\nBRANCH_PATH/sage/misc/hg.py)\n\nIf a non-default outgoing server is set, then commands like hg_sage.bundle() will use it for determining the relevant changesets, so a bundle to commit to sagemath.org would meet to specify the incoming server explicity.  For example, this bundle was created with:\n\n    hg_sage.bundle(\"push_bundle--Dec_2_2007\", url=hg_sage.pull_url())\n\nFinally, I didn't really understand where the default_server was set, so I\nadded support to set them from shell variables SAGE_INCOMING_SERVER and\nSAGE_OUTGOING_SERVER (with no trailing '/', in mercurial path format to the\n'...../devel' directory).  However I was careful to preserve the default\nbehavior when no settings are present.  Any comments are appreciated! \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1371\n\n",
     "created_at": "2007-12-02T14:40:45Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_001371.json:
     "title": "hg_sage.pull/push() to non-default server with multiple branches",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1371",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: push, mercurial, branches
 
@@ -67,16 +67,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1371
 archive/issue_comments_008799.json:
 ```json
 {
-    "body": "Attachment [push_bundle--Dec_2_2007.hg](tarball://root/attachments/some-uuid/ticket1371/push_bundle--Dec_2_2007.hg) by jonhanke created at 2007-12-02 14:41:35\n\nChangesets",
+    "body": "Attachment [push_bundle--Dec_2_2007.hg](tarball://root/attachments/some-uuid/ticket1371/push_bundle--Dec_2_2007.hg) by @jonhanke created at 2007-12-02 14:41:35\n\nChangesets",
     "created_at": "2007-12-02T14:41:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1371#issuecomment-8799",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
 
-Attachment [push_bundle--Dec_2_2007.hg](tarball://root/attachments/some-uuid/ticket1371/push_bundle--Dec_2_2007.hg) by jonhanke created at 2007-12-02 14:41:35
+Attachment [push_bundle--Dec_2_2007.hg](tarball://root/attachments/some-uuid/ticket1371/push_bundle--Dec_2_2007.hg) by @jonhanke created at 2007-12-02 14:41:35
 
 Changesets
 
@@ -92,7 +92,7 @@ archive/issue_comments_008800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1371#issuecomment-8800",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_008801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1371#issuecomment-8801",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_008802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1371#issuecomment-8802",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

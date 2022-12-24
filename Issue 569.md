@@ -14,7 +14,7 @@ archive/issues_000569.json:
     "title": "fix many broken --long doctests in functions/piecewise.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/569",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: wdjoyner
@@ -155,7 +155,7 @@ archive/issue_comments_002949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/569#issuecomment-2949",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -168,16 +168,16 @@ hg patch to fix this report
 archive/issue_comments_002950.json:
 ```json
 {
-    "body": "Attachment [piecewise-trac569fix-20070905.hg](tarball://root/attachments/some-uuid/ticket569/piecewise-trac569fix-20070905.hg) by wdj created at 2007-09-06 00:36:36\n\nI had some comments here but adding the attachment deleted by remarks!\nHopefully the diff file will explain the idea. The fix was very easy.",
+    "body": "Attachment [piecewise-trac569fix-20070905.hg](tarball://root/attachments/some-uuid/ticket569/piecewise-trac569fix-20070905.hg) by @wdjoyner created at 2007-09-06 00:36:36\n\nI had some comments here but adding the attachment deleted by remarks!\nHopefully the diff file will explain the idea. The fix was very easy.",
     "created_at": "2007-09-06T00:36:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/569#issuecomment-2950",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [piecewise-trac569fix-20070905.hg](tarball://root/attachments/some-uuid/ticket569/piecewise-trac569fix-20070905.hg) by wdj created at 2007-09-06 00:36:36
+Attachment [piecewise-trac569fix-20070905.hg](tarball://root/attachments/some-uuid/ticket569/piecewise-trac569fix-20070905.hg) by @wdjoyner created at 2007-09-06 00:36:36
 
 I had some comments here but adding the attachment deleted by remarks!
 Hopefully the diff file will explain the idea. The fix was very easy.
@@ -194,7 +194,7 @@ archive/issue_comments_002951.json:
     "issue": "https://github.com/sagemath/sagetest/issues/569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/569#issuecomment-2951",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_002952.json:
     "issue": "https://github.com/sagemath/sagetest/issues/569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/569#issuecomment-2952",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

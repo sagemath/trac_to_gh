@@ -3,7 +3,7 @@
 archive/issues_005641.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: matrix(QQ,0).plot()\nTraceback (most recent call last):\n...\nIndexError: index out of bounds\n\nsage: matrix(QQ,0,5).plot()\nTraceback (most recent call last):\n...\nIndexError: index out of bounds\n\nsage: matrix(QQ,5,0).plot()\nTraceback (most recent call last):\n...\nValueError: zero-size array to ufunc.reduce without identity\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5641\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: matrix(QQ,0).plot()\nTraceback (most recent call last):\n...\nIndexError: index out of bounds\n\nsage: matrix(QQ,0,5).plot()\nTraceback (most recent call last):\n...\nIndexError: index out of bounds\n\nsage: matrix(QQ,5,0).plot()\nTraceback (most recent call last):\n...\nValueError: zero-size array to ufunc.reduce without identity\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5641\n\n",
     "created_at": "2009-03-30T03:18:23Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_005641.json:
     "title": "plotting of matrices with 0 rows or columns is broken in multiple ways",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5641",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -54,7 +54,7 @@ archive/issue_comments_044064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5641#issuecomment-44064",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_008811.json:
     "title": "Translation for elements of a root lattice",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8811",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 Assignee: sage-combinat
@@ -39,7 +39,7 @@ archive/issue_comments_080888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8811",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8811#issuecomment-80888",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_080889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8811",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8811#issuecomment-80889",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_080890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8811",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8811#issuecomment-80890",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -88,16 +88,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_080891.json:
 ```json
 {
-    "body": "Attachment [trac_8811_reduced_word_of_translations-nt.patch](tarball://root/attachments/some-uuid/ticket8811/trac_8811_reduced_word_of_translations-nt.patch) by nthiery created at 2010-06-02 20:04:38",
+    "body": "Attachment [trac_8811_reduced_word_of_translations-nt.patch](tarball://root/attachments/some-uuid/ticket8811/trac_8811_reduced_word_of_translations-nt.patch) by @nthiery created at 2010-06-02 20:04:38",
     "created_at": "2010-06-02T20:04:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8811",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8811#issuecomment-80891",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_8811_reduced_word_of_translations-nt.patch](tarball://root/attachments/some-uuid/ticket8811/trac_8811_reduced_word_of_translations-nt.patch) by nthiery created at 2010-06-02 20:04:38
+Attachment [trac_8811_reduced_word_of_translations-nt.patch](tarball://root/attachments/some-uuid/ticket8811/trac_8811_reduced_word_of_translations-nt.patch) by @nthiery created at 2010-06-02 20:04:38
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_080892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8811",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8811#issuecomment-80892",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_080893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8811",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8811#issuecomment-80893",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_080894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8811",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8811#issuecomment-80894",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

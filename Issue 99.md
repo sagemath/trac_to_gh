@@ -3,7 +3,7 @@
 archive/issues_000099.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: Preparsing, sage integers\n\nIf I have, for example,\n\n```\n    print \"F(%s,0)=%s\"%(a,b)\n```\n\nthe result appears as\n\n```\n    F(27,Integer(0))=359\n```\n\nwhich seems kind of sucky (to use the technical term).  The only workaround is something like\n\n```\n    zero = 0\n    print \"F(%s,%s)=%s\"%(a,zero,b)\n```\n\nwhich is similarly sucky...\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/99\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: Preparsing, sage integers\n\nIf I have, for example,\n\n```\n    print \"F(%s,0)=%s\"%(a,b)\n```\n\nthe result appears as\n\n```\n    F(27,Integer(0))=359\n```\n\nwhich seems kind of sucky (to use the technical term).  The only workaround is something like\n\n```\n    zero = 0\n    print \"F(%s,%s)=%s\"%(a,zero,b)\n```\n\nwhich is similarly sucky...\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/99\n\n",
     "created_at": "2006-09-30T02:57:51Z",
     "labels": [
         "user interface",
@@ -16,7 +16,7 @@ archive/issues_000099.json:
     "user": "justin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: Preparsing, sage integers
 
@@ -58,7 +58,7 @@ archive/issue_comments_000467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/99",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/99#issuecomment-467",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_000468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/99",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/99#issuecomment-468",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_000470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/99",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/99#issuecomment-470",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_000471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/99",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/99#issuecomment-471",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_000472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/99",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/99#issuecomment-472",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -312,7 +312,7 @@ archive/issue_comments_000473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/99",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/99#issuecomment-473",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

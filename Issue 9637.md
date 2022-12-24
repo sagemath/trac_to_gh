@@ -3,7 +3,7 @@
 archive/issues_009637.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  mpatel\n\nIt is not critical, but since its the only package not so show such a dependency, it would be nice to add it. The dependency is implied however. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9637\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @qed777\n\nIt is not critical, but since its the only package not so show such a dependency, it would be nice to add it. The dependency is implied however. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9637\n\n",
     "created_at": "2010-07-29T10:57:00Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_009637.json:
 ```
 Assignee: GeorgSWeber
 
-CC:  mpatel
+CC:  @qed777
 
 It is not critical, but since its the only package not so show such a dependency, it would be nice to add it. The dependency is implied however. 
 
@@ -77,7 +77,7 @@ archive/issue_comments_093418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9637#issuecomment-93418",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_093419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9637#issuecomment-93419",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_093420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9637#issuecomment-93420",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_093421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9637#issuecomment-93421",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_093422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9637#issuecomment-93422",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

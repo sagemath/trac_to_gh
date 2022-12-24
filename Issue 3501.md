@@ -3,7 +3,7 @@
 archive/issues_003501.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nThis is broken:\n\n\n```\nsage: Matrix(CyclotomicField(13),3).charpoly()\n```\n\n\nThe attached patch fixes it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3501\n\n",
+    "body": "Assignee: @craigcitro\n\nThis is broken:\n\n\n```\nsage: Matrix(CyclotomicField(13),3).charpoly()\n```\n\n\nThe attached patch fixes it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3501\n\n",
     "created_at": "2008-06-24T07:51:07Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_003501.json:
     "title": "[with patch, needs review] charpoly of zero matrix over a cyclotomic field fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3501",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 This is broken:
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3501
 archive/issue_comments_024693.json:
 ```json
 {
-    "body": "Attachment [trac-3501.patch](tarball://root/attachments/some-uuid/ticket3501/trac-3501.patch) by craigcitro created at 2008-06-24 07:51:58",
+    "body": "Attachment [trac-3501.patch](tarball://root/attachments/some-uuid/ticket3501/trac-3501.patch) by @craigcitro created at 2008-06-24 07:51:58",
     "created_at": "2008-06-24T07:51:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3501",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3501#issuecomment-24693",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-3501.patch](tarball://root/attachments/some-uuid/ticket3501/trac-3501.patch) by craigcitro created at 2008-06-24 07:51:58
+Attachment [trac-3501.patch](tarball://root/attachments/some-uuid/ticket3501/trac-3501.patch) by @craigcitro created at 2008-06-24 07:51:58
 
 
 
@@ -63,7 +63,7 @@ archive/issue_comments_024694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3501",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3501#issuecomment-24694",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 

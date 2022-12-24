@@ -14,7 +14,7 @@ archive/issues_002890.json:
     "title": "[with patch; needs review] html.py --fix up documentation a little and a small bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2890",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2890
 archive/issue_comments_019869.json:
 ```json
 {
-    "body": "Attachment [sage-2890.patch](tarball://root/attachments/some-uuid/ticket2890/sage-2890.patch) by mhansen created at 2008-04-12 07:20:36\n\nLooks good to me.",
+    "body": "Attachment [sage-2890.patch](tarball://root/attachments/some-uuid/ticket2890/sage-2890.patch) by @mwhansen created at 2008-04-12 07:20:36\n\nLooks good to me.",
     "created_at": "2008-04-12T07:20:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2890#issuecomment-19869",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [sage-2890.patch](tarball://root/attachments/some-uuid/ticket2890/sage-2890.patch) by mhansen created at 2008-04-12 07:20:36
+Attachment [sage-2890.patch](tarball://root/attachments/some-uuid/ticket2890/sage-2890.patch) by @mwhansen created at 2008-04-12 07:20:36
 
 Looks good to me.
 

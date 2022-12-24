@@ -3,7 +3,7 @@
 archive/issues_009087.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nCC:  kohel alexghitza\n\nKeywords: super singular ordinary elliptic curves\n\nI have implemented methods is_ordinary() and is_supersingular() for elliptic curves over finite fields, together with functions supersingular_j_polynomial(p) returning a polynomial over GF(p) whose roots are the supersingular j-invariants in characteristic p, a dict storing the precomputed output of this for p<300, and a function is_j_supersingular(j) testing whether a finite field element j is a supersingular j-invariant.\n\nA patch will be ready shortly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9087\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  kohel alexghitza\n\nKeywords: super singular ordinary elliptic curves\n\nI have implemented methods is_ordinary() and is_supersingular() for elliptic curves over finite fields, together with functions supersingular_j_polynomial(p) returning a polynomial over GF(p) whose roots are the supersingular j-invariants in characteristic p, a dict storing the precomputed output of this for p<300, and a function is_j_supersingular(j) testing whether a finite field element j is a supersingular j-invariant.\n\nA patch will be ready shortly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9087\n\n",
     "created_at": "2010-05-29T19:30:54Z",
     "labels": [
         "elliptic curves",
@@ -14,10 +14,10 @@ archive/issues_009087.json:
     "title": "implement supersingular/ordinary testing for elliptic curves over finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9087",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 CC:  kohel alexghitza
 
@@ -43,7 +43,7 @@ archive/issue_comments_084386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9087#issuecomment-84386",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_084387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9087#issuecomment-84387",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -74,16 +74,16 @@ Changing status from new to needs_review.
 archive/issue_comments_084388.json:
 ```json
 {
-    "body": "Attachment [trac_9087-supersingular.patch](tarball://root/attachments/some-uuid/ticket9087/trac_9087-supersingular.patch) by cremona created at 2010-05-30 11:29:44\n\nNote that this implementation is independent of the related patch #9052 which implements Hasse invariants.  It is also independent of related functions in modular/ssmod.  I am CC'ing David Kohel sine he wrote similar functions for Magma (I believe;  of course the code here has been written completely independently of that!)",
+    "body": "Attachment [trac_9087-supersingular.patch](tarball://root/attachments/some-uuid/ticket9087/trac_9087-supersingular.patch) by @JohnCremona created at 2010-05-30 11:29:44\n\nNote that this implementation is independent of the related patch #9052 which implements Hasse invariants.  It is also independent of related functions in modular/ssmod.  I am CC'ing David Kohel sine he wrote similar functions for Magma (I believe;  of course the code here has been written completely independently of that!)",
     "created_at": "2010-05-30T11:29:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9087#issuecomment-84388",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_9087-supersingular.patch](tarball://root/attachments/some-uuid/ticket9087/trac_9087-supersingular.patch) by cremona created at 2010-05-30 11:29:44
+Attachment [trac_9087-supersingular.patch](tarball://root/attachments/some-uuid/ticket9087/trac_9087-supersingular.patch) by @JohnCremona created at 2010-05-30 11:29:44
 
 Note that this implementation is independent of the related patch #9052 which implements Hasse invariants.  It is also independent of related functions in modular/ssmod.  I am CC'ing David Kohel sine he wrote similar functions for Magma (I believe;  of course the code here has been written completely independently of that!)
 
@@ -99,7 +99,7 @@ archive/issue_comments_084389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9087#issuecomment-84389",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_084390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9087#issuecomment-84390",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_084391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9087#issuecomment-84391",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_084392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9087#issuecomment-84392",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -169,16 +169,16 @@ Thanks John.
 archive/issue_comments_084393.json:
 ```json
 {
-    "body": "Attachment [trac_9087-supersingular-untabified.patch](tarball://root/attachments/some-uuid/ticket9087/trac_9087-supersingular-untabified.patch) by davidloeffler created at 2010-06-30 17:29:41\n\nVersion without tabs - apply only this patch",
+    "body": "Attachment [trac_9087-supersingular-untabified.patch](tarball://root/attachments/some-uuid/ticket9087/trac_9087-supersingular-untabified.patch) by @loefflerd created at 2010-06-30 17:29:41\n\nVersion without tabs - apply only this patch",
     "created_at": "2010-06-30T17:29:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9087#issuecomment-84393",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_9087-supersingular-untabified.patch](tarball://root/attachments/some-uuid/ticket9087/trac_9087-supersingular-untabified.patch) by davidloeffler created at 2010-06-30 17:29:41
+Attachment [trac_9087-supersingular-untabified.patch](tarball://root/attachments/some-uuid/ticket9087/trac_9087-supersingular-untabified.patch) by @loefflerd created at 2010-06-30 17:29:41
 
 Version without tabs - apply only this patch
 
@@ -194,7 +194,7 @@ archive/issue_comments_084394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9087#issuecomment-84394",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_084395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9087#issuecomment-84395",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_084396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9087#issuecomment-84396",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

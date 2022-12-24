@@ -3,7 +3,7 @@
 archive/issues_009966.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  burcin mpatel jdemeyer leif\n\nThis will be very useful for an automated testing framework (and testbed notebook). \n\nIssue created by migration from https://trac.sagemath.org/ticket/9967\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @burcin @qed777 @jdemeyer @nexttime\n\nThis will be very useful for an automated testing framework (and testbed notebook). \n\nIssue created by migration from https://trac.sagemath.org/ticket/9967\n\n",
     "created_at": "2010-09-22T05:18:11Z",
     "labels": [
         "doctest",
@@ -14,12 +14,12 @@ archive/issues_009966.json:
     "title": "Allow concurrent running/testing of multiple sage branches",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9966",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: mvngu
 
-CC:  burcin mpatel jdemeyer leif
+CC:  @burcin @qed777 @jdemeyer @nexttime
 
 This will be very useful for an automated testing framework (and testbed notebook). 
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9967
 archive/issue_comments_099820.json:
 ```json
 {
-    "body": "Attachment [9967-concurrent-sagelib.patch](tarball://root/attachments/some-uuid/ticket9967/9967-concurrent-sagelib.patch) by robertwb created at 2010-09-22 05:21:10",
+    "body": "Attachment [9967-concurrent-sagelib.patch](tarball://root/attachments/some-uuid/ticket9967/9967-concurrent-sagelib.patch) by @robertwb created at 2010-09-22 05:21:10",
     "created_at": "2010-09-22T05:21:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99820",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [9967-concurrent-sagelib.patch](tarball://root/attachments/some-uuid/ticket9967/9967-concurrent-sagelib.patch) by robertwb created at 2010-09-22 05:21:10
+Attachment [9967-concurrent-sagelib.patch](tarball://root/attachments/some-uuid/ticket9967/9967-concurrent-sagelib.patch) by @robertwb created at 2010-09-22 05:21:10
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_099821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99821",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -70,16 +70,16 @@ Changing status from new to needs_review.
 archive/issue_comments_099822.json:
 ```json
 {
-    "body": "Attachment [9967-concurrent-sagescripts.patch](tarball://root/attachments/some-uuid/ticket9967/9967-concurrent-sagescripts.patch) by ddrake created at 2010-10-21 06:33:18\n\nI'm looking at this because of the discussion on sage-devel (https://groups.google.com/group/sage-devel/browse_thread/thread/9dfadbdaf74a2eec)...and I don't understand this at all. How does it work? In what sense would you have concurrent branches? How does this help with automated testing? I'd like to help review this, but it's not at all clear what is going on here.",
+    "body": "Attachment [9967-concurrent-sagescripts.patch](tarball://root/attachments/some-uuid/ticket9967/9967-concurrent-sagescripts.patch) by @dandrake created at 2010-10-21 06:33:18\n\nI'm looking at this because of the discussion on sage-devel (https://groups.google.com/group/sage-devel/browse_thread/thread/9dfadbdaf74a2eec)...and I don't understand this at all. How does it work? In what sense would you have concurrent branches? How does this help with automated testing? I'd like to help review this, but it's not at all clear what is going on here.",
     "created_at": "2010-10-21T06:33:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99822",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [9967-concurrent-sagescripts.patch](tarball://root/attachments/some-uuid/ticket9967/9967-concurrent-sagescripts.patch) by ddrake created at 2010-10-21 06:33:18
+Attachment [9967-concurrent-sagescripts.patch](tarball://root/attachments/some-uuid/ticket9967/9967-concurrent-sagescripts.patch) by @dandrake created at 2010-10-21 06:33:18
 
 I'm looking at this because of the discussion on sage-devel (https://groups.google.com/group/sage-devel/browse_thread/thread/9dfadbdaf74a2eec)...and I don't understand this at all. How does it work? In what sense would you have concurrent branches? How does this help with automated testing? I'd like to help review this, but it's not at all clear what is going on here.
 
@@ -95,7 +95,7 @@ archive/issue_comments_099823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99823",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_099824.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99824",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -133,16 +133,16 @@ Also, I see that right now, we use os.popen to call "ls -l" and parse the result
 archive/issue_comments_099825.json:
 ```json
 {
-    "body": "Changing assignee from mvngu to ddrake.",
+    "body": "Changing assignee from mvngu to @dandrake.",
     "created_at": "2010-10-21T08:47:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99825",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Changing assignee from mvngu to ddrake.
+Changing assignee from mvngu to @dandrake.
 
 
 
@@ -156,7 +156,7 @@ archive/issue_comments_099826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99826",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_099827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99827",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_099828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99828",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_099829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99829",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -298,16 +298,16 @@ Thanks for taking a look. I didn't do much testing with the -main branch, I'll l
 archive/issue_comments_099830.json:
 ```json
 {
-    "body": "Attachment [9967-concurrent-sagelib.2.patch](tarball://root/attachments/some-uuid/ticket9967/9967-concurrent-sagelib.2.patch) by robertwb created at 2010-10-22 04:56:36",
+    "body": "Attachment [9967-concurrent-sagelib.2.patch](tarball://root/attachments/some-uuid/ticket9967/9967-concurrent-sagelib.2.patch) by @robertwb created at 2010-10-22 04:56:36",
     "created_at": "2010-10-22T04:56:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99830",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [9967-concurrent-sagelib.2.patch](tarball://root/attachments/some-uuid/ticket9967/9967-concurrent-sagelib.2.patch) by robertwb created at 2010-10-22 04:56:36
+Attachment [9967-concurrent-sagelib.2.patch](tarball://root/attachments/some-uuid/ticket9967/9967-concurrent-sagelib.2.patch) by @robertwb created at 2010-10-22 04:56:36
 
 
 
@@ -321,7 +321,7 @@ archive/issue_comments_099831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99831",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_099832.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99832",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -357,7 +357,7 @@ archive/issue_comments_099833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99833",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -378,7 +378,7 @@ archive/issue_comments_099834.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99834",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -396,7 +396,7 @@ archive/issue_comments_099835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99835",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -419,7 +419,7 @@ archive/issue_comments_099836.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99836",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -437,7 +437,7 @@ archive/issue_comments_099837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99837",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -495,7 +495,7 @@ archive/issue_comments_099838.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99838",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -513,7 +513,7 @@ archive/issue_comments_099839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99839",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -526,16 +526,16 @@ Those doctests just need to be changed to '.../devel/sage-.../doc/output/html/en
 archive/issue_comments_099840.json:
 ```json
 {
-    "body": "Attachment [9967-doc-doctests.patch](tarball://root/attachments/some-uuid/ticket9967/9967-doc-doctests.patch) by robertwb created at 2010-10-24 03:25:00",
+    "body": "Attachment [9967-doc-doctests.patch](tarball://root/attachments/some-uuid/ticket9967/9967-doc-doctests.patch) by @robertwb created at 2010-10-24 03:25:00",
     "created_at": "2010-10-24T03:25:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99840",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [9967-doc-doctests.patch](tarball://root/attachments/some-uuid/ticket9967/9967-doc-doctests.patch) by robertwb created at 2010-10-24 03:25:00
+Attachment [9967-doc-doctests.patch](tarball://root/attachments/some-uuid/ticket9967/9967-doc-doctests.patch) by @robertwb created at 2010-10-24 03:25:00
 
 
 
@@ -549,7 +549,7 @@ archive/issue_comments_099841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99841",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -567,7 +567,7 @@ archive/issue_comments_099842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99842",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -653,7 +653,7 @@ archive/issue_comments_099843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99843",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -671,7 +671,7 @@ archive/issue_comments_099844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99844",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -698,7 +698,7 @@ archive/issue_comments_099845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99845",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -716,7 +716,7 @@ archive/issue_comments_099846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99846",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -751,7 +751,7 @@ archive/issue_comments_099847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99847",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -764,16 +764,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_099848.json:
 ```json
 {
-    "body": "Attachment [9967-sage-maketest.patch](tarball://root/attachments/some-uuid/ticket9967/9967-sage-maketest.patch) by robertwb created at 2010-10-26 03:52:42",
+    "body": "Attachment [9967-sage-maketest.patch](tarball://root/attachments/some-uuid/ticket9967/9967-sage-maketest.patch) by @robertwb created at 2010-10-26 03:52:42",
     "created_at": "2010-10-26T03:52:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99848",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [9967-sage-maketest.patch](tarball://root/attachments/some-uuid/ticket9967/9967-sage-maketest.patch) by robertwb created at 2010-10-26 03:52:42
+Attachment [9967-sage-maketest.patch](tarball://root/attachments/some-uuid/ticket9967/9967-sage-maketest.patch) by @robertwb created at 2010-10-26 03:52:42
 
 
 
@@ -787,7 +787,7 @@ archive/issue_comments_099849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99849",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -805,7 +805,7 @@ archive/issue_comments_099850.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99850",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -865,7 +865,7 @@ archive/issue_comments_099851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99851",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -930,7 +930,7 @@ archive/issue_comments_099852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99852",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -950,7 +950,7 @@ archive/issue_comments_099853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99853",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -975,7 +975,7 @@ archive/issue_comments_099854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99854",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -997,7 +997,7 @@ archive/issue_comments_099855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99855",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -1017,7 +1017,7 @@ archive/issue_comments_099856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99856",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -1032,16 +1032,16 @@ I'll try to get a patch that incorporates my changes and upload that soon.
 archive/issue_comments_099857.json:
 ```json
 {
-    "body": "Attachment [9967-fix-sage-doctest.patch](tarball://root/attachments/some-uuid/ticket9967/9967-fix-sage-doctest.patch) by ddrake created at 2010-11-02 08:18:35\n\napply to scripts repo",
+    "body": "Attachment [9967-fix-sage-doctest.patch](tarball://root/attachments/some-uuid/ticket9967/9967-fix-sage-doctest.patch) by @dandrake created at 2010-11-02 08:18:35\n\napply to scripts repo",
     "created_at": "2010-11-02T08:18:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99857",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [9967-fix-sage-doctest.patch](tarball://root/attachments/some-uuid/ticket9967/9967-fix-sage-doctest.patch) by ddrake created at 2010-11-02 08:18:35
+Attachment [9967-fix-sage-doctest.patch](tarball://root/attachments/some-uuid/ticket9967/9967-fix-sage-doctest.patch) by @dandrake created at 2010-11-02 08:18:35
 
 apply to scripts repo
 
@@ -1057,7 +1057,7 @@ archive/issue_comments_099858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99858",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -1075,7 +1075,7 @@ archive/issue_comments_099859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99859",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -1101,16 +1101,16 @@ and the rest go into the main library repo.
 archive/issue_comments_099860.json:
 ```json
 {
-    "body": "Attachment [9967_sagelib_combined.patch](tarball://root/attachments/some-uuid/ticket9967/9967_sagelib_combined.patch) by jdemeyer created at 2010-11-02 15:19:31\n\nCombined sagelib patch",
+    "body": "Attachment [9967_sagelib_combined.patch](tarball://root/attachments/some-uuid/ticket9967/9967_sagelib_combined.patch) by @jdemeyer created at 2010-11-02 15:19:31\n\nCombined sagelib patch",
     "created_at": "2010-11-02T15:19:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99860",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9967_sagelib_combined.patch](tarball://root/attachments/some-uuid/ticket9967/9967_sagelib_combined.patch) by jdemeyer created at 2010-11-02 15:19:31
+Attachment [9967_sagelib_combined.patch](tarball://root/attachments/some-uuid/ticket9967/9967_sagelib_combined.patch) by @jdemeyer created at 2010-11-02 15:19:31
 
 Combined sagelib patch
 
@@ -1121,16 +1121,16 @@ Combined sagelib patch
 archive/issue_comments_099861.json:
 ```json
 {
-    "body": "Attachment [9967_scripts_combined.patch](tarball://root/attachments/some-uuid/ticket9967/9967_scripts_combined.patch) by jdemeyer created at 2010-11-02 15:19:47\n\nCombined scripts patch",
+    "body": "Attachment [9967_scripts_combined.patch](tarball://root/attachments/some-uuid/ticket9967/9967_scripts_combined.patch) by @jdemeyer created at 2010-11-02 15:19:47\n\nCombined scripts patch",
     "created_at": "2010-11-02T15:19:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99861",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9967_scripts_combined.patch](tarball://root/attachments/some-uuid/ticket9967/9967_scripts_combined.patch) by jdemeyer created at 2010-11-02 15:19:47
+Attachment [9967_scripts_combined.patch](tarball://root/attachments/some-uuid/ticket9967/9967_scripts_combined.patch) by @jdemeyer created at 2010-11-02 15:19:47
 
 Combined scripts patch
 
@@ -1146,7 +1146,7 @@ archive/issue_comments_099862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99862",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -1164,7 +1164,7 @@ archive/issue_comments_099863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99863",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -1182,7 +1182,7 @@ archive/issue_comments_099864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99864",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -1195,16 +1195,16 @@ apply to Sage library
 archive/issue_comments_099865.json:
 ```json
 {
-    "body": "Attachment [9967-no-site-packages-symlink.patch](tarball://root/attachments/some-uuid/ticket9967/9967-no-site-packages-symlink.patch) by ddrake created at 2010-11-04 03:05:00\n\nThe patch I just uploaded still has some debugging statements but represents some progress.\n\nThere is still something in the doctesting framework that is using the symlink to the default branch and not using SAGE_BRANCH: if I doctest in the -main branch while -foo is the default, and delete the -foo branch, I get:\n\n\n```\nsage -t  devel/sage-main/sage/combinat/generator.py\nTraceback (most recent call last):\n  File \"/home/drake/.sage//tmp/generator.py\", line 2, in <module>\n    from sage.all_cmdline import *;\n  File \"/home/drake/s/sage-4.6.alpha3/devel/sage-main/build/sage/all_cmdline.py\", line 14, in <module>\n    from sage.all import *\n  File \"/home/drake/s/sage-4.6.alpha3/devel/sage-main/build/sage/all.py\", line 56, in <module>\n    from sage.rings.memory import pmem_malloc\nImportError: libcsage.so: cannot open shared object file: No such file or directory\n\n         [0.3 s]\n```\n\n\nThe ImportError occurs because whatever Python process is running that last line hasn't inherited our custom PYTHONPATH. (I think.)",
+    "body": "Attachment [9967-no-site-packages-symlink.patch](tarball://root/attachments/some-uuid/ticket9967/9967-no-site-packages-symlink.patch) by @dandrake created at 2010-11-04 03:05:00\n\nThe patch I just uploaded still has some debugging statements but represents some progress.\n\nThere is still something in the doctesting framework that is using the symlink to the default branch and not using SAGE_BRANCH: if I doctest in the -main branch while -foo is the default, and delete the -foo branch, I get:\n\n\n```\nsage -t  devel/sage-main/sage/combinat/generator.py\nTraceback (most recent call last):\n  File \"/home/drake/.sage//tmp/generator.py\", line 2, in <module>\n    from sage.all_cmdline import *;\n  File \"/home/drake/s/sage-4.6.alpha3/devel/sage-main/build/sage/all_cmdline.py\", line 14, in <module>\n    from sage.all import *\n  File \"/home/drake/s/sage-4.6.alpha3/devel/sage-main/build/sage/all.py\", line 56, in <module>\n    from sage.rings.memory import pmem_malloc\nImportError: libcsage.so: cannot open shared object file: No such file or directory\n\n         [0.3 s]\n```\n\n\nThe ImportError occurs because whatever Python process is running that last line hasn't inherited our custom PYTHONPATH. (I think.)",
     "created_at": "2010-11-04T03:05:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99865",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [9967-no-site-packages-symlink.patch](tarball://root/attachments/some-uuid/ticket9967/9967-no-site-packages-symlink.patch) by ddrake created at 2010-11-04 03:05:00
+Attachment [9967-no-site-packages-symlink.patch](tarball://root/attachments/some-uuid/ticket9967/9967-no-site-packages-symlink.patch) by @dandrake created at 2010-11-04 03:05:00
 
 The patch I just uploaded still has some debugging statements but represents some progress.
 
@@ -1240,7 +1240,7 @@ archive/issue_comments_099866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99866",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -1263,7 +1263,7 @@ archive/issue_comments_099867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99867",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1281,7 +1281,7 @@ archive/issue_comments_099868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99868",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1299,7 +1299,7 @@ archive/issue_comments_099869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99869",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1317,7 +1317,7 @@ archive/issue_comments_099870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99870",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -1335,7 +1335,7 @@ archive/issue_comments_099871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99871",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1353,7 +1353,7 @@ archive/issue_comments_099872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99872",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1371,7 +1371,7 @@ archive/issue_comments_099873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9966#issuecomment-99873",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

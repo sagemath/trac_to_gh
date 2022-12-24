@@ -3,7 +3,7 @@
 archive/issues_004714.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  jhpalmieri timdumol was\n\nFrom http://groups.google.com/group/sage-support/t/178d0bd277044918\n\n\n```\nYes, that looks correct.  I'm not sure why people are getting the \nerror -7 under these conditions.  It means that something has gone \nwrong when trying to load the fallback method, and that usually means \nit can't read the image font definition files.  There are a couple of \nother possibilities as well:  perhaps the noImageFonts plugin was not \nable to be read (permission issue?) or the unicode fallback file could \nnot be read.  Given your use of noImageFonts, I suspect it may be the \nlatter.  If the users who are getting error -7 are using Firefox3, \nthat may well be it.  There were changes to the same-origin security \npolicy in Firefox3 that prevent jsMath from loading local files from \ndirectories other than the one in which the HTML file is found.  I \nworked around this in jsMath v3.6 (released Sept. 2008), so those \nusers should update to the latest version of jsMath to avoid that \nproblem. \n> I'm pretty sure we don't use the easy/load.js (and I'm not sure why). \n\nProbably because it didn't exist when jsMath support was added to \nsage.  The easy/load.js file was a relatively late addition to jsMath, \nbut certainly makes things easier for people.  You might consider \nwhether you want to use that instead. \n\nDavide\n\nIssue created by migration from https://trac.sagemath.org/ticket/4714\n\n",
+    "body": "Assignee: boothby\n\nCC:  @jhpalmieri @TimDumol @williamstein\n\nFrom http://groups.google.com/group/sage-support/t/178d0bd277044918\n\n\n```\nYes, that looks correct.  I'm not sure why people are getting the \nerror -7 under these conditions.  It means that something has gone \nwrong when trying to load the fallback method, and that usually means \nit can't read the image font definition files.  There are a couple of \nother possibilities as well:  perhaps the noImageFonts plugin was not \nable to be read (permission issue?) or the unicode fallback file could \nnot be read.  Given your use of noImageFonts, I suspect it may be the \nlatter.  If the users who are getting error -7 are using Firefox3, \nthat may well be it.  There were changes to the same-origin security \npolicy in Firefox3 that prevent jsMath from loading local files from \ndirectories other than the one in which the HTML file is found.  I \nworked around this in jsMath v3.6 (released Sept. 2008), so those \nusers should update to the latest version of jsMath to avoid that \nproblem. \n> I'm pretty sure we don't use the easy/load.js (and I'm not sure why). \n\nProbably because it didn't exist when jsMath support was added to \nsage.  The easy/load.js file was a relatively late addition to jsMath, \nbut certainly makes things easier for people.  You might consider \nwhether you want to use that instead. \n\nDavide\n\nIssue created by migration from https://trac.sagemath.org/ticket/4714\n\n",
     "created_at": "2008-12-05T10:10:42Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_004714.json:
     "title": "use easy/load.js when loading jsmath",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4714",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
 
-CC:  jhpalmieri timdumol was
+CC:  @jhpalmieri @TimDumol @williamstein
 
 From http://groups.google.com/group/sage-support/t/178d0bd277044918
 
@@ -64,7 +64,7 @@ archive/issue_comments_035536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35536",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_035537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35537",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_035538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35538",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_035539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35539",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_035540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35540",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_035541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35541",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_035542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35542",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_035543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35543",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_035544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35544",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -246,16 +246,16 @@ Minimal approach for docs.  Depends on #6614.
 archive/issue_comments_035545.json:
 ```json
 {
-    "body": "Attachment [trac_4714-minimal_doc.patch](tarball://root/attachments/some-uuid/ticket4714/trac_4714-minimal_doc.patch) by mpatel created at 2009-08-04 04:41:59\n\nThis [attachment:trac_4714-minimal_doc.patch p(r)oof of concept], which depends on a [attachment:ticket:6614:trac_6614-jsmath_repo_v2.patch patch] at #6614,\n\n* Adds `doc/common/static/jsmath_sage.js`.\n* Sets `jsmath_path=jsmath_sage.js` in `doc/common/conf.py`.\n\nThe new static file is jsMath's \"stock\" `easy/load.js` plus all Sage-related customizations I could find, including extensions, macros, and a few other bits from `notebook.py`.  I've also made changes below `DO NOT MAKE CHANGES BELOW THIS` (gasp!) to help the loader find jsMath from its new [relative] location.\n\nI think this means we don't need to patch the spkg.  Later, we may be able to use Sphinx 0.6.2's static templates to insert an updated macro list at build time (cf. #6586).\n\nPerhaps we can do something similar for the notebook, e.g., in `sage/server/notebook/templates`.",
+    "body": "Attachment [trac_4714-minimal_doc.patch](tarball://root/attachments/some-uuid/ticket4714/trac_4714-minimal_doc.patch) by @qed777 created at 2009-08-04 04:41:59\n\nThis [attachment:trac_4714-minimal_doc.patch p(r)oof of concept], which depends on a [attachment:ticket:6614:trac_6614-jsmath_repo_v2.patch patch] at #6614,\n\n* Adds `doc/common/static/jsmath_sage.js`.\n* Sets `jsmath_path=jsmath_sage.js` in `doc/common/conf.py`.\n\nThe new static file is jsMath's \"stock\" `easy/load.js` plus all Sage-related customizations I could find, including extensions, macros, and a few other bits from `notebook.py`.  I've also made changes below `DO NOT MAKE CHANGES BELOW THIS` (gasp!) to help the loader find jsMath from its new [relative] location.\n\nI think this means we don't need to patch the spkg.  Later, we may be able to use Sphinx 0.6.2's static templates to insert an updated macro list at build time (cf. #6586).\n\nPerhaps we can do something similar for the notebook, e.g., in `sage/server/notebook/templates`.",
     "created_at": "2009-08-04T04:41:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35545",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_4714-minimal_doc.patch](tarball://root/attachments/some-uuid/ticket4714/trac_4714-minimal_doc.patch) by mpatel created at 2009-08-04 04:41:59
+Attachment [trac_4714-minimal_doc.patch](tarball://root/attachments/some-uuid/ticket4714/trac_4714-minimal_doc.patch) by @qed777 created at 2009-08-04 04:41:59
 
 This [attachment:trac_4714-minimal_doc.patch p(r)oof of concept], which depends on a [attachment:ticket:6614:trac_6614-jsmath_repo_v2.patch patch] at #6614,
 
@@ -280,7 +280,7 @@ archive/issue_comments_035546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35546",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_035547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35547",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -316,7 +316,7 @@ archive/issue_comments_035548.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35548",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -334,7 +334,7 @@ archive/issue_comments_035549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35549",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -352,7 +352,7 @@ archive/issue_comments_035550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35550",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_035551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35551",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_035552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35552",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -401,16 +401,16 @@ Changing status from new to needs_review.
 archive/issue_comments_035553.json:
 ```json
 {
-    "body": "Attachment [trac_4714-sagenb_jsmath_init.patch](tarball://root/attachments/some-uuid/ticket4714/trac_4714-sagenb_jsmath_init.patch) by mpatel created at 2009-10-23 07:10:01\n\nThe patch [attachment:trac_4714-sagenb_jsmath_init.patch] consolidates jsMath setup in `/javascript/jsmath.js`.  It depends on #6673.\n\nThe patch still hard-codes the `sage.misc.latex_macros`'s macros.  Still to do: Generate the macros from server/user settings and `latex_macros`'s helper functions.",
+    "body": "Attachment [trac_4714-sagenb_jsmath_init.patch](tarball://root/attachments/some-uuid/ticket4714/trac_4714-sagenb_jsmath_init.patch) by @qed777 created at 2009-10-23 07:10:01\n\nThe patch [attachment:trac_4714-sagenb_jsmath_init.patch] consolidates jsMath setup in `/javascript/jsmath.js`.  It depends on #6673.\n\nThe patch still hard-codes the `sage.misc.latex_macros`'s macros.  Still to do: Generate the macros from server/user settings and `latex_macros`'s helper functions.",
     "created_at": "2009-10-23T07:10:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35553",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_4714-sagenb_jsmath_init.patch](tarball://root/attachments/some-uuid/ticket4714/trac_4714-sagenb_jsmath_init.patch) by mpatel created at 2009-10-23 07:10:01
+Attachment [trac_4714-sagenb_jsmath_init.patch](tarball://root/attachments/some-uuid/ticket4714/trac_4714-sagenb_jsmath_init.patch) by @qed777 created at 2009-10-23 07:10:01
 
 The patch [attachment:trac_4714-sagenb_jsmath_init.patch] consolidates jsMath setup in `/javascript/jsmath.js`.  It depends on #6673.
 
@@ -428,7 +428,7 @@ archive/issue_comments_035554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35554",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -441,16 +441,16 @@ Hard-code jsMath macros.  Apply to sagenb repository.
 archive/issue_comments_035555.json:
 ```json
 {
-    "body": "Attachment [trac_4714-sagenb_hard_code_macros.patch](tarball://root/attachments/some-uuid/ticket4714/trac_4714-sagenb_hard_code_macros.patch) by mpatel created at 2009-10-24 18:51:10\n\nI've reattached [attachment:trac_4714-sagenb_hard_code_macros.patch], since my first try didn't work (server problems?).",
+    "body": "Attachment [trac_4714-sagenb_hard_code_macros.patch](tarball://root/attachments/some-uuid/ticket4714/trac_4714-sagenb_hard_code_macros.patch) by @qed777 created at 2009-10-24 18:51:10\n\nI've reattached [attachment:trac_4714-sagenb_hard_code_macros.patch], since my first try didn't work (server problems?).",
     "created_at": "2009-10-24T18:51:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35555",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_4714-sagenb_hard_code_macros.patch](tarball://root/attachments/some-uuid/ticket4714/trac_4714-sagenb_hard_code_macros.patch) by mpatel created at 2009-10-24 18:51:10
+Attachment [trac_4714-sagenb_hard_code_macros.patch](tarball://root/attachments/some-uuid/ticket4714/trac_4714-sagenb_hard_code_macros.patch) by @qed777 created at 2009-10-24 18:51:10
 
 I've reattached [attachment:trac_4714-sagenb_hard_code_macros.patch], since my first try didn't work (server problems?).
 
@@ -466,7 +466,7 @@ archive/issue_comments_035556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35556",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -492,7 +492,7 @@ archive/issue_comments_035557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35557",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -510,7 +510,7 @@ archive/issue_comments_035558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35558",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -528,7 +528,7 @@ archive/issue_comments_035559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35559",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -546,7 +546,7 @@ archive/issue_comments_035560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35560",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -564,7 +564,7 @@ archive/issue_comments_035561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35561",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -577,16 +577,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_035562.json:
 ```json
 {
-    "body": "Attachment [trac_4714-sagenb_jsmath_init_v2.patch](tarball://root/attachments/some-uuid/ticket4714/trac_4714-sagenb_jsmath_init_v2.patch) by mpatel created at 2009-11-26 06:33:37\n\nRebased against this sequence:\n\n```\ntrac_7390-sagenb_test_report_A.patch\ntrac_7390-sagenb_test_report_B_v2.patch\ntrac_7390-sagenb_test_report_referee.patch\ntrac_7402-pkg_resources.patch\ntrac_7428-publish_last_edited_v2.patch\ntrac_7444-search_after_publish.patch\ntrac_7376-search_by_username_v2.patch\ntrac_1321-sagenb_graphed.patch\nsagenb_7483.patch\nsagenb_7482.patch\nsagenb-7495.patch\nsagenb_3849.patch\ntrac_4714-sagenb_jsmath_init_v2.patch\n```\n",
+    "body": "Attachment [trac_4714-sagenb_jsmath_init_v2.patch](tarball://root/attachments/some-uuid/ticket4714/trac_4714-sagenb_jsmath_init_v2.patch) by @qed777 created at 2009-11-26 06:33:37\n\nRebased against this sequence:\n\n```\ntrac_7390-sagenb_test_report_A.patch\ntrac_7390-sagenb_test_report_B_v2.patch\ntrac_7390-sagenb_test_report_referee.patch\ntrac_7402-pkg_resources.patch\ntrac_7428-publish_last_edited_v2.patch\ntrac_7444-search_after_publish.patch\ntrac_7376-search_by_username_v2.patch\ntrac_1321-sagenb_graphed.patch\nsagenb_7483.patch\nsagenb_7482.patch\nsagenb-7495.patch\nsagenb_3849.patch\ntrac_4714-sagenb_jsmath_init_v2.patch\n```\n",
     "created_at": "2009-11-26T06:33:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35562",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_4714-sagenb_jsmath_init_v2.patch](tarball://root/attachments/some-uuid/ticket4714/trac_4714-sagenb_jsmath_init_v2.patch) by mpatel created at 2009-11-26 06:33:37
+Attachment [trac_4714-sagenb_jsmath_init_v2.patch](tarball://root/attachments/some-uuid/ticket4714/trac_4714-sagenb_jsmath_init_v2.patch) by @qed777 created at 2009-11-26 06:33:37
 
 Rebased against this sequence:
 
@@ -619,7 +619,7 @@ archive/issue_comments_035563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35563",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -632,16 +632,16 @@ Changing priority from major to minor.
 archive/issue_comments_035564.json:
 ```json
 {
-    "body": "Attachment [trac_4714-sagenb_jsmath_init_v3.patch](tarball://root/attachments/some-uuid/ticket4714/trac_4714-sagenb_jsmath_init_v3.patch) by mpatel created at 2009-12-02 23:35:14\n\nForce jsMath to load always.  This patch only.  sagenb repo.",
+    "body": "Attachment [trac_4714-sagenb_jsmath_init_v3.patch](tarball://root/attachments/some-uuid/ticket4714/trac_4714-sagenb_jsmath_init_v3.patch) by @qed777 created at 2009-12-02 23:35:14\n\nForce jsMath to load always.  This patch only.  sagenb repo.",
     "created_at": "2009-12-02T23:35:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35564",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_4714-sagenb_jsmath_init_v3.patch](tarball://root/attachments/some-uuid/ticket4714/trac_4714-sagenb_jsmath_init_v3.patch) by mpatel created at 2009-12-02 23:35:14
+Attachment [trac_4714-sagenb_jsmath_init_v3.patch](tarball://root/attachments/some-uuid/ticket4714/trac_4714-sagenb_jsmath_init_v3.patch) by @qed777 created at 2009-12-02 23:35:14
 
 Force jsMath to load always.  This patch only.  sagenb repo.
 
@@ -657,7 +657,7 @@ archive/issue_comments_035565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35565",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -677,7 +677,7 @@ archive/issue_comments_035566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35566",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -695,7 +695,7 @@ archive/issue_comments_035567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35567",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -713,7 +713,7 @@ archive/issue_comments_035568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35568",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -731,7 +731,7 @@ archive/issue_comments_035569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35569",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

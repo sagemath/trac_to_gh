@@ -3,7 +3,7 @@
 archive/issues_009894.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  dimpase\n\nDavid Kirkby [comment:ticket:9449:7 reported this previously] at #9449:\n\n```python\nsage -t  -long devel/sage/sage/parallel/decorate.py\n**********************************************************************\nFile \"/tmp/kirkby/sage-4.5.alpha4/devel/sage-testing/sage/parallel/decorate.py\", line 152:\n    sage: v = list(f([1,2,4])); v.sort(); v\nException raised:\n    Traceback (most recent call last):\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[9]>\", line 1, in <module>\n        v = list(f([Integer(1),Integer(2),Integer(4)])); v.sort(); v###line 152:\n    sage: v = list(f([1,2,4])); v.sort(); v\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/lib/python/site-packages/sage/parallel/multiprocessing_sage.py\", line 64, in parallel_iter\n        p = Pool(processes)\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/multiprocessing/__init__.py\", line 227, in Pool\n        return Pool(processes, initializer, initargs)\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/multiprocessing/pool.py\", line 104, in __init__\n        w.start()\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/multiprocessing/process.py\", line 104, in start\n        self._popen = Popen(self)\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/multiprocessing/forking.py\", line 94, in __init__\n        self.pid = os.fork()\n    OSError: [Errno 12] Not enough space\n```\n\nAccording to [this page](https://defect.opensolaris.org/bz/show_bug.cgi?id=2297), insufficient free memory is the problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9895\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @dimpase\n\nDavid Kirkby [comment:ticket:9449:7 reported this previously] at #9449:\n\n```python\nsage -t  -long devel/sage/sage/parallel/decorate.py\n**********************************************************************\nFile \"/tmp/kirkby/sage-4.5.alpha4/devel/sage-testing/sage/parallel/decorate.py\", line 152:\n    sage: v = list(f([1,2,4])); v.sort(); v\nException raised:\n    Traceback (most recent call last):\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[9]>\", line 1, in <module>\n        v = list(f([Integer(1),Integer(2),Integer(4)])); v.sort(); v###line 152:\n    sage: v = list(f([1,2,4])); v.sort(); v\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/lib/python/site-packages/sage/parallel/multiprocessing_sage.py\", line 64, in parallel_iter\n        p = Pool(processes)\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/multiprocessing/__init__.py\", line 227, in Pool\n        return Pool(processes, initializer, initargs)\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/multiprocessing/pool.py\", line 104, in __init__\n        w.start()\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/multiprocessing/process.py\", line 104, in start\n        self._popen = Popen(self)\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/multiprocessing/forking.py\", line 94, in __init__\n        self.pid = os.fork()\n    OSError: [Errno 12] Not enough space\n```\n\nAccording to [this page](https://defect.opensolaris.org/bz/show_bug.cgi?id=2297), insufficient free memory is the problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9895\n\n",
     "created_at": "2010-09-11T00:38:52Z",
     "labels": [
         "porting: Solaris",
@@ -14,12 +14,12 @@ archive/issues_009894.json:
     "title": "Doctest error raised by os.fork in sage/parallel/decorate.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9894",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: drkirkby
 
-CC:  dimpase
+CC:  @dimpase
 
 David Kirkby [comment:ticket:9449:7 reported this previously] at #9449:
 
@@ -70,7 +70,7 @@ archive/issue_comments_098173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9894",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9894#issuecomment-98173",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_098174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9894",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9894#issuecomment-98174",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_098175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9894",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9894#issuecomment-98175",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_098177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9894",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9894#issuecomment-98177",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_004280.json:
     "title": "Syntax error for a comment line, then help query in a notebook cell",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4280",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4280
 archive/issue_comments_031307.json:
 ```json
 {
-    "body": "Attachment [trac_4820.patch](tarball://root/attachments/some-uuid/ticket4280/trac_4820.patch) by mhansen created at 2009-01-24 04:48:38",
+    "body": "Attachment [trac_4820.patch](tarball://root/attachments/some-uuid/ticket4280/trac_4820.patch) by @mwhansen created at 2009-01-24 04:48:38",
     "created_at": "2009-01-24T04:48:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4280#issuecomment-31307",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4820.patch](tarball://root/attachments/some-uuid/ticket4280/trac_4820.patch) by mhansen created at 2009-01-24 04:48:38
+Attachment [trac_4820.patch](tarball://root/attachments/some-uuid/ticket4280/trac_4820.patch) by @mwhansen created at 2009-01-24 04:48:38
 
 
 
@@ -59,16 +59,16 @@ Attachment [trac_4820.patch](tarball://root/attachments/some-uuid/ticket4280/tra
 archive/issue_comments_031308.json:
 ```json
 {
-    "body": "Changing assignee from boothby to mhansen.",
+    "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2009-01-24T04:48:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4280#issuecomment-31308",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from boothby to mhansen.
+Changing assignee from boothby to @mwhansen.
 
 
 
@@ -82,7 +82,7 @@ archive/issue_comments_031309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4280#issuecomment-31309",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_031310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4280#issuecomment-31310",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_031311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4280#issuecomment-31311",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

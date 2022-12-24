@@ -3,7 +3,7 @@
 archive/issues_002578.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mhansen\n\n\nI wanted to verify that Sage could symbolically compute the derivative\nof Bn(x), the nth Bernoulli polynomial in (x): Dx[Bn(x)]=n*Bn-1(x).\nThe following code causes Sage to lockup:\n\n```\nBn = bernoulli_polynomial(x,n)\n```\n\n\nThe command \"bernpoly(x,n)\" in Maxima does not lock up but Maxima\nwill not compute symbolically.\n\n\n```\nsage: B3 = bernoulli_polynomial(x,3)\nsage: B4 = bernoulli_polynomial(x,4)\nsage: DxB4 = diff(B4,x)\nsage: print expand(DxB4-4*B3)\n                                      0\nsage: Bn = bernoulli_polynomial(x,n)\nTraceback (most recent call last):\n...\nKeyboardInterrupt\n>>>\n>>>\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2578\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\n\nI wanted to verify that Sage could symbolically compute the derivative\nof Bn(x), the nth Bernoulli polynomial in (x): Dx[Bn(x)]=n*Bn-1(x).\nThe following code causes Sage to lockup:\n\n```\nBn = bernoulli_polynomial(x,n)\n```\n\n\nThe command \"bernpoly(x,n)\" in Maxima does not lock up but Maxima\nwill not compute symbolically.\n\n\n```\nsage: B3 = bernoulli_polynomial(x,3)\nsage: B4 = bernoulli_polynomial(x,4)\nsage: DxB4 = diff(B4,x)\nsage: print expand(DxB4-4*B3)\n                                      0\nsage: Bn = bernoulli_polynomial(x,n)\nTraceback (most recent call last):\n...\nKeyboardInterrupt\n>>>\n>>>\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2578\n\n",
     "created_at": "2008-03-17T23:29:04Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_002578.json:
     "title": "bug in bernoulli_polynomial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2578",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  mhansen
+CC:  @mwhansen
 
 
 I wanted to verify that Sage could symbolically compute the derivative
@@ -67,7 +67,7 @@ archive/issue_comments_017631.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2578#issuecomment-17631",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -153,16 +153,16 @@ Michael
 archive/issue_comments_017634.json:
 ```json
 {
-    "body": "Changing assignee from was to craigcitro.",
+    "body": "Changing assignee from @williamstein to @craigcitro.",
     "created_at": "2009-01-23T09:01:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2578#issuecomment-17634",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from was to craigcitro.
+Changing assignee from @williamstein to @craigcitro.
 
 
 
@@ -176,7 +176,7 @@ archive/issue_comments_017635.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2578#issuecomment-17635",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_017636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2578#issuecomment-17636",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -209,16 +209,16 @@ Unfortunately, the originial request doesn't quite make sense -- `bernoulli_poly
 archive/issue_comments_017637.json:
 ```json
 {
-    "body": "Attachment [trac-2578.patch](tarball://root/attachments/some-uuid/ticket2578/trac-2578.patch) by was created at 2009-01-23 10:34:38\n\npositive review;\n\nit could be optimized by using horner's rule",
+    "body": "Attachment [trac-2578.patch](tarball://root/attachments/some-uuid/ticket2578/trac-2578.patch) by @williamstein created at 2009-01-23 10:34:38\n\npositive review;\n\nit could be optimized by using horner's rule",
     "created_at": "2009-01-23T10:34:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2578#issuecomment-17637",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-2578.patch](tarball://root/attachments/some-uuid/ticket2578/trac-2578.patch) by was created at 2009-01-23 10:34:38
+Attachment [trac-2578.patch](tarball://root/attachments/some-uuid/ticket2578/trac-2578.patch) by @williamstein created at 2009-01-23 10:34:38
 
 positive review;
 

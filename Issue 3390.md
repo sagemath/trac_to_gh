@@ -37,7 +37,7 @@ archive/issue_comments_023732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3390#issuecomment-23732",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -54,16 +54,16 @@ There are lots of doctest errors stemming I believe from matplotlib referencing 
 archive/issue_comments_023733.json:
 ```json
 {
-    "body": "Attachment [numpy-1.1.patch](tarball://root/attachments/some-uuid/ticket3390/numpy-1.1.patch) by jason created at 2008-08-21 22:36:18",
+    "body": "Attachment [numpy-1.1.patch](tarball://root/attachments/some-uuid/ticket3390/numpy-1.1.patch) by @jasongrout created at 2008-08-21 22:36:18",
     "created_at": "2008-08-21T22:36:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3390#issuecomment-23733",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [numpy-1.1.patch](tarball://root/attachments/some-uuid/ticket3390/numpy-1.1.patch) by jason created at 2008-08-21 22:36:18
+Attachment [numpy-1.1.patch](tarball://root/attachments/some-uuid/ticket3390/numpy-1.1.patch) by @jasongrout created at 2008-08-21 22:36:18
 
 
 

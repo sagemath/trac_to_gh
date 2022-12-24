@@ -3,7 +3,7 @@
 archive/issues_006261.json:
 ```json
 {
-    "body": "Assignee: was\n\nFor the algorithm used, see\nFrank Celler and Charles R. Leedham-Green, \"Calculating the Order of an Invertible Matrix\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/6261\n\n",
+    "body": "Assignee: @williamstein\n\nFor the algorithm used, see\nFrank Celler and Charles R. Leedham-Green, \"Calculating the Order of an Invertible Matrix\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/6261\n\n",
     "created_at": "2009-06-11T16:54:34Z",
     "labels": [
         "linear algebra",
@@ -17,7 +17,7 @@ archive/issues_006261.json:
     "user": "ylchapuy"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 For the algorithm used, see
 Frank Celler and Charles R. Leedham-Green, "Calculating the Order of an Invertible Matrix".
@@ -56,7 +56,7 @@ archive/issue_comments_049994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6261#issuecomment-49994",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_049996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6261#issuecomment-49996",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_049997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6261#issuecomment-49997",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 

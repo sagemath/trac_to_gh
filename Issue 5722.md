@@ -14,7 +14,7 @@ archive/issues_005722.json:
     "title": "fast callable pow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5722",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -109,7 +109,7 @@ archive/issue_comments_044712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5722#issuecomment-44712",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -155,16 +155,16 @@ Michael
 archive/issue_comments_044714.json:
 ```json
 {
-    "body": "Attachment [5722-fast-callable-pow.patch](tarball://root/attachments/some-uuid/ticket5722/5722-fast-callable-pow.patch) by robertwb created at 2009-04-09 07:52:56",
+    "body": "Attachment [5722-fast-callable-pow.patch](tarball://root/attachments/some-uuid/ticket5722/5722-fast-callable-pow.patch) by @robertwb created at 2009-04-09 07:52:56",
     "created_at": "2009-04-09T07:52:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5722#issuecomment-44714",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5722-fast-callable-pow.patch](tarball://root/attachments/some-uuid/ticket5722/5722-fast-callable-pow.patch) by robertwb created at 2009-04-09 07:52:56
+Attachment [5722-fast-callable-pow.patch](tarball://root/attachments/some-uuid/ticket5722/5722-fast-callable-pow.patch) by @robertwb created at 2009-04-09 07:52:56
 
 
 
@@ -178,7 +178,7 @@ archive/issue_comments_044715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5722#issuecomment-44715",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

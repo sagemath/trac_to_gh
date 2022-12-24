@@ -3,7 +3,7 @@
 archive/issues_001207.json:
 ```json
 {
-    "body": "Assignee: malb\n\nSee attached patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1207\n\n",
+    "body": "Assignee: @malb\n\nSee attached patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1207\n\n",
     "created_at": "2007-11-19T11:58:21Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_001207.json:
     "title": "[with patch] allow ctrl-c in Gr\u00f6bner basis computation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1207",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 See attached patch.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1207
 archive/issue_comments_007473.json:
 ```json
 {
-    "body": "Attachment [ctrl-c-libsingular.patch](tarball://root/attachments/some-uuid/ticket1207/ctrl-c-libsingular.patch) by malb created at 2007-11-19 11:58:34",
+    "body": "Attachment [ctrl-c-libsingular.patch](tarball://root/attachments/some-uuid/ticket1207/ctrl-c-libsingular.patch) by @malb created at 2007-11-19 11:58:34",
     "created_at": "2007-11-19T11:58:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1207",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1207#issuecomment-7473",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [ctrl-c-libsingular.patch](tarball://root/attachments/some-uuid/ticket1207/ctrl-c-libsingular.patch) by malb created at 2007-11-19 11:58:34
+Attachment [ctrl-c-libsingular.patch](tarball://root/attachments/some-uuid/ticket1207/ctrl-c-libsingular.patch) by @malb created at 2007-11-19 11:58:34
 
 
 

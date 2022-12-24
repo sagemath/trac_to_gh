@@ -14,7 +14,7 @@ archive/issues_009248.json:
     "title": "docstring for factorial doesn't say that it accepts non-integer, non-symbolic input",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9248",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: mvngu
@@ -68,16 +68,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9248
 archive/issue_comments_087030.json:
 ```json
 {
-    "body": "Changing assignee from mvngu to ddrake.",
+    "body": "Changing assignee from mvngu to @dandrake.",
     "created_at": "2010-06-16T05:13:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9248#issuecomment-87030",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Changing assignee from mvngu to ddrake.
+Changing assignee from mvngu to @dandrake.
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_087031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9248#issuecomment-87031",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_087032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9248#issuecomment-87032",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_087033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9248#issuecomment-87033",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_087034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9248#issuecomment-87034",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_087035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9248#issuecomment-87035",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_087036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9248#issuecomment-87036",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_087037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9248#issuecomment-87037",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_087038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9248#issuecomment-87038",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_087039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9248#issuecomment-87039",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_087040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9248#issuecomment-87040",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_087041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9248#issuecomment-87041",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_087042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9248#issuecomment-87042",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

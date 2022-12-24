@@ -3,7 +3,7 @@
 archive/issues_009330.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nCC:  jhpalmieri\n\nWhen you look at [this](http://www.sagemath.org/doc/reference/sage/schemes/elliptic_curves/sha_tate.html), there are a number of things wrong or confusing in the documentation.\n\nMost importantly, several instances of Sha should have ticks, probably.  But are they referring to the mathematical object \n\n```\n`Sha`\n```\n\nor the computer structure of the class\n\n```\n``Sha``\n```\n\n?  If I knew what was intended (given that the distinction is quite small), I would do this patch myself.  But it looks like sometimes the group is intended, other times the class object.\n\nIn line 198, \n\n```\n You can increase the `descent_second_limit` (in the above example\n```\n\nshould have double ticks.\n\nWe also get the following warning:\n\n```\nsage-4.4.4/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/sha_tate.py:docstring of sage.schemes.elliptic_curves.sha_tate.Sha.bound_kato:12: (WARNING/2) Definition list ends without a blank line; unexpected unindent.\n```\n\nthis probably refers to \n\n```\n       THEOREM (Kato): Suppose `L(E,1) \\neq 0` and `p \\neq 2, 3` is a prime such that\n            - `E` does not have additive reduction at `p`,\n            - the mod-`p` representation is surjective.\n       Then `{ord}_p(\\#Sha(E))` divides `{ord}_p(L(E,1)\\cdot\\#E(\\QQ)_{tor}^2/(\\Omega_E \\cdot \\prod c_q))`.\n```\n\nbut I'm not sure.\n\nIn line 756 we have \n\n```\nWe get no information the curve has rank 2.::\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9330\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @jhpalmieri\n\nWhen you look at [this](http://www.sagemath.org/doc/reference/sage/schemes/elliptic_curves/sha_tate.html), there are a number of things wrong or confusing in the documentation.\n\nMost importantly, several instances of Sha should have ticks, probably.  But are they referring to the mathematical object \n\n```\n`Sha`\n```\n\nor the computer structure of the class\n\n```\n``Sha``\n```\n\n?  If I knew what was intended (given that the distinction is quite small), I would do this patch myself.  But it looks like sometimes the group is intended, other times the class object.\n\nIn line 198, \n\n```\n You can increase the `descent_second_limit` (in the above example\n```\n\nshould have double ticks.\n\nWe also get the following warning:\n\n```\nsage-4.4.4/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/sha_tate.py:docstring of sage.schemes.elliptic_curves.sha_tate.Sha.bound_kato:12: (WARNING/2) Definition list ends without a blank line; unexpected unindent.\n```\n\nthis probably refers to \n\n```\n       THEOREM (Kato): Suppose `L(E,1) \\neq 0` and `p \\neq 2, 3` is a prime such that\n            - `E` does not have additive reduction at `p`,\n            - the mod-`p` representation is surjective.\n       Then `{ord}_p(\\#Sha(E))` divides `{ord}_p(L(E,1)\\cdot\\#E(\\QQ)_{tor}^2/(\\Omega_E \\cdot \\prod c_q))`.\n```\n\nbut I'm not sure.\n\nIn line 756 we have \n\n```\nWe get no information the curve has rank 2.::\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9330\n\n",
     "created_at": "2010-06-24T15:55:55Z",
     "labels": [
         "elliptic curves",
@@ -14,12 +14,12 @@ archive/issues_009330.json:
     "title": "Documentation for sha_tate.py not quite looking right",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9330",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
-CC:  jhpalmieri
+CC:  @jhpalmieri
 
 When you look at [this](http://www.sagemath.org/doc/reference/sage/schemes/elliptic_curves/sha_tate.html), there are a number of things wrong or confusing in the documentation.
 
@@ -85,7 +85,7 @@ archive/issue_comments_088004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9330#issuecomment-88004",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_088005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9330#issuecomment-88005",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_088006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9330#issuecomment-88006",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -136,16 +136,16 @@ See #9442 for the warning when building the reference manual.
 archive/issue_comments_088007.json:
 ```json
 {
-    "body": "Attachment [trac_9330.patch](tarball://root/attachments/some-uuid/ticket9330/trac_9330.patch) by wuthrich created at 2010-07-28 15:36:22\n\nexported against 4.5.2.alpha1",
+    "body": "Attachment [trac_9330.patch](tarball://root/attachments/some-uuid/ticket9330/trac_9330.patch) by @categorie created at 2010-07-28 15:36:22\n\nexported against 4.5.2.alpha1",
     "created_at": "2010-07-28T15:36:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9330#issuecomment-88007",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_9330.patch](tarball://root/attachments/some-uuid/ticket9330/trac_9330.patch) by wuthrich created at 2010-07-28 15:36:22
+Attachment [trac_9330.patch](tarball://root/attachments/some-uuid/ticket9330/trac_9330.patch) by @categorie created at 2010-07-28 15:36:22
 
 exported against 4.5.2.alpha1
 
@@ -161,7 +161,7 @@ archive/issue_comments_088008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9330#issuecomment-88008",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_088009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9330#issuecomment-88009",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_088010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9330#issuecomment-88010",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_088011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9330#issuecomment-88011",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_088012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9330#issuecomment-88012",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_088013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9330#issuecomment-88013",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_088014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9330#issuecomment-88014",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_088015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9330#issuecomment-88015",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -328,7 +328,7 @@ archive/issue_comments_088016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9330#issuecomment-88016",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -341,16 +341,16 @@ exported against 4.5.2.alpha1, to be apply after trac_9330.patch
 archive/issue_comments_088017.json:
 ```json
 {
-    "body": "Attachment [trac_9330_2.patch](tarball://root/attachments/some-uuid/ticket9330/trac_9330_2.patch) by wuthrich created at 2010-07-29 10:06:37\n\nYop, sorry, I did not see that the 'when' was still missing. Here is an additional patch.\n\nLuckily the filename is not visible to the user, so I don't have to bother changing it. ... and it gives some voice to the other order.\n\nThere is no problem with the rebase, because the patches here are exported against 4.5.2.alpha1 and #9442 was merged in 4.5.alpha4 if I am not mistaken. At least the addition lines are clearly in the file before I edited it.",
+    "body": "Attachment [trac_9330_2.patch](tarball://root/attachments/some-uuid/ticket9330/trac_9330_2.patch) by @categorie created at 2010-07-29 10:06:37\n\nYop, sorry, I did not see that the 'when' was still missing. Here is an additional patch.\n\nLuckily the filename is not visible to the user, so I don't have to bother changing it. ... and it gives some voice to the other order.\n\nThere is no problem with the rebase, because the patches here are exported against 4.5.2.alpha1 and #9442 was merged in 4.5.alpha4 if I am not mistaken. At least the addition lines are clearly in the file before I edited it.",
     "created_at": "2010-07-29T10:06:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9330#issuecomment-88017",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_9330_2.patch](tarball://root/attachments/some-uuid/ticket9330/trac_9330_2.patch) by wuthrich created at 2010-07-29 10:06:37
+Attachment [trac_9330_2.patch](tarball://root/attachments/some-uuid/ticket9330/trac_9330_2.patch) by @categorie created at 2010-07-29 10:06:37
 
 Yop, sorry, I did not see that the 'when' was still missing. Here is an additional patch.
 
@@ -370,7 +370,7 @@ archive/issue_comments_088018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9330#issuecomment-88018",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_088019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9330#issuecomment-88019",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -406,7 +406,7 @@ archive/issue_comments_088020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9330#issuecomment-88020",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -424,7 +424,7 @@ archive/issue_comments_088021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9330#issuecomment-88021",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -442,7 +442,7 @@ archive/issue_comments_088022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9330#issuecomment-88022",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -462,7 +462,7 @@ archive/issue_comments_088023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9330#issuecomment-88023",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 

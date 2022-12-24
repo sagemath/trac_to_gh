@@ -3,7 +3,7 @@
 archive/issues_007770.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nKeywords: tower of hanoi graph\n\nThe Tower of Hanoi puzzle can be described by a graph whose vertices are possible states of the disks on the pegs, with edges represdenting legitimate moves of a single disk.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7770\n\n",
+    "body": "Assignee: @rlmill\n\nKeywords: tower of hanoi graph\n\nThe Tower of Hanoi puzzle can be described by a graph whose vertices are possible states of the disks on the pegs, with edges represdenting legitimate moves of a single disk.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7770\n\n",
     "created_at": "2009-12-27T00:02:14Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007770.json:
     "title": "Implement Tower of Hanoi graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7770",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Keywords: tower of hanoi graph
 
@@ -39,7 +39,7 @@ archive/issue_comments_066968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7770#issuecomment-66968",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_066969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7770#issuecomment-66969",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -86,16 +86,16 @@ I could probably provide timing on sage.math for a release tour (along with a ni
 archive/issue_comments_066970.json:
 ```json
 {
-    "body": "Attachment [trac_7770_hanoi_tower_graph.patch](tarball://root/attachments/some-uuid/ticket7770/trac_7770_hanoi_tower_graph.patch) by rbeezer created at 2009-12-27 00:14:58",
+    "body": "Attachment [trac_7770_hanoi_tower_graph.patch](tarball://root/attachments/some-uuid/ticket7770/trac_7770_hanoi_tower_graph.patch) by @rbeezer created at 2009-12-27 00:14:58",
     "created_at": "2009-12-27T00:14:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7770#issuecomment-66970",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_7770_hanoi_tower_graph.patch](tarball://root/attachments/some-uuid/ticket7770/trac_7770_hanoi_tower_graph.patch) by rbeezer created at 2009-12-27 00:14:58
+Attachment [trac_7770_hanoi_tower_graph.patch](tarball://root/attachments/some-uuid/ticket7770/trac_7770_hanoi_tower_graph.patch) by @rbeezer created at 2009-12-27 00:14:58
 
 
 
@@ -109,7 +109,7 @@ archive/issue_comments_066971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7770#issuecomment-66971",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_066972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7770#issuecomment-66972",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_066973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7770#issuecomment-66973",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_066974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7770#issuecomment-66974",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_066975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7770#issuecomment-66975",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_066976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7770#issuecomment-66976",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_066977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7770#issuecomment-66977",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_066978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7770",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7770#issuecomment-66978",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

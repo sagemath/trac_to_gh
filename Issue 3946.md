@@ -3,7 +3,7 @@
 archive/issues_003946.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  cremona\n\nCremona writes:\n>However, there are some things I really do not like about this implementation:\n\n>   1. self.reduce() computes (if necessary) caches and returns the reduced form equivalent to        \n>self. I would expect it to change self into the reduced form, and have a different function   \n>self.reduced_form() to do what this function does. \n\n>  2. The function is_reduced() actually reduces self and tests if the result is the same as \n>self. This is potentially very expensive! To test is_reduced() you should just test that the \n>usual inequalities are satisfied. \n\nI have attached a patch which I believe fixes these issues. I have also altered the reduction methods to throw more enlightening exceptions when given negative definite forms and indefinite forms.\n\nIt would be nice to implement the the handling of indefinite and negative definite forms at some point in the future, however I don't think Pari can deal with negative definite forms currently.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3946\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\nCremona writes:\n>However, there are some things I really do not like about this implementation:\n\n>   1. self.reduce() computes (if necessary) caches and returns the reduced form equivalent to        \n>self. I would expect it to change self into the reduced form, and have a different function   \n>self.reduced_form() to do what this function does. \n\n>  2. The function is_reduced() actually reduces self and tests if the result is the same as \n>self. This is potentially very expensive! To test is_reduced() you should just test that the \n>usual inequalities are satisfied. \n\nI have attached a patch which I believe fixes these issues. I have also altered the reduction methods to throw more enlightening exceptions when given negative definite forms and indefinite forms.\n\nIt would be nice to implement the the handling of indefinite and negative definite forms at some point in the future, however I don't think Pari can deal with negative definite forms currently.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3946\n\n",
     "created_at": "2008-08-25T02:35:02Z",
     "labels": [
         "number theory",
@@ -17,9 +17,9 @@ archive/issues_003946.json:
     "user": "choldsworth"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  cremona
+CC:  @JohnCremona
 
 Cremona writes:
 >However, there are some things I really do not like about this implementation:
@@ -70,7 +70,7 @@ archive/issue_comments_028330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3946#issuecomment-28330",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

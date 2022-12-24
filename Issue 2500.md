@@ -14,7 +14,7 @@ archive/issues_002500.json:
     "title": "Deprecate \"sage -upgrade\"; replace by \"sage -expert_upgrade\"; likewise for sage: upgrade()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2500",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -37,7 +37,7 @@ archive/issue_comments_016946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2500#issuecomment-16946",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

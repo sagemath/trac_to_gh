@@ -37,7 +37,7 @@ archive/issue_comments_021005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3050",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3050#issuecomment-21005",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_021010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3050",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3050#issuecomment-21010",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_021013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3050",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3050#issuecomment-21013",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_021014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3050",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3050#issuecomment-21014",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_021015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3050",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3050#issuecomment-21015",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -284,7 +284,7 @@ archive/issue_comments_021018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3050",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3050#issuecomment-21018",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -302,7 +302,7 @@ archive/issue_comments_021019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3050",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3050#issuecomment-21019",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -320,7 +320,7 @@ archive/issue_comments_021020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3050",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3050#issuecomment-21020",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

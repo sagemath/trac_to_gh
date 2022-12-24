@@ -3,7 +3,7 @@
 archive/issues_008467.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  ncohen jason\n\nKeywords: linear programming\n\nMove the document \"Linear Programming in Sage\", found [here](http://www.sagemath.org/doc/constructions/linear_programming.html) and [here](http://www-sop.inria.fr/members/Nathann.Cohen/tut/LP/), to the classification \"Sage HOWTOs\". The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8467\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @nathanncohen @jasongrout\n\nKeywords: linear programming\n\nMove the document \"Linear Programming in Sage\", found [here](http://www.sagemath.org/doc/constructions/linear_programming.html) and [here](http://www-sop.inria.fr/members/Nathann.Cohen/tut/LP/), to the classification \"Sage HOWTOs\". The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8467\n\n",
     "created_at": "2010-03-07T02:18:58Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_008467.json:
 ```
 Assignee: mvngu
 
-CC:  ncohen jason
+CC:  @nathanncohen @jasongrout
 
 Keywords: linear programming
 
@@ -41,7 +41,7 @@ archive/issue_comments_076241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8467#issuecomment-76241",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_076242.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8467#issuecomment-76242",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_076243.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8467#issuecomment-76243",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_076244.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8467#issuecomment-76244",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_076245.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8467#issuecomment-76245",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_076246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8467#issuecomment-76246",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -152,16 +152,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_076247.json:
 ```json
 {
-    "body": "Attachment [linear_programming2.rst](tarball://root/attachments/some-uuid/ticket8467/linear_programming2.rst) by jason created at 2010-05-14 21:04:13",
+    "body": "Attachment [linear_programming2.rst](tarball://root/attachments/some-uuid/ticket8467/linear_programming2.rst) by @jasongrout created at 2010-05-14 21:04:13",
     "created_at": "2010-05-14T21:04:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8467#issuecomment-76247",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [linear_programming2.rst](tarball://root/attachments/some-uuid/ticket8467/linear_programming2.rst) by jason created at 2010-05-14 21:04:13
+Attachment [linear_programming2.rst](tarball://root/attachments/some-uuid/ticket8467/linear_programming2.rst) by @jasongrout created at 2010-05-14 21:04:13
 
 
 
@@ -196,16 +196,16 @@ I adjoint a rst file with corrections. The example on "Maximum average degree" i
 archive/issue_comments_076249.json:
 ```json
 {
-    "body": "Attachment [linear_programming2_some_changes.rst](tarball://root/attachments/some-uuid/ticket8467/linear_programming2_some_changes.rst) by ncohen created at 2010-07-21 02:29:03\n\nThank you very much for reading it until then !!! Actually, I will need to change some parts of it now that GLPK is a standard SPKG. I will also update the end of it, to give more natural examples :-)\n\nI am setting it to \"needs work\" until this is done !!\n\nNathann",
+    "body": "Attachment [linear_programming2_some_changes.rst](tarball://root/attachments/some-uuid/ticket8467/linear_programming2_some_changes.rst) by @nathanncohen created at 2010-07-21 02:29:03\n\nThank you very much for reading it until then !!! Actually, I will need to change some parts of it now that GLPK is a standard SPKG. I will also update the end of it, to give more natural examples :-)\n\nI am setting it to \"needs work\" until this is done !!\n\nNathann",
     "created_at": "2010-07-21T02:29:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8467#issuecomment-76249",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [linear_programming2_some_changes.rst](tarball://root/attachments/some-uuid/ticket8467/linear_programming2_some_changes.rst) by ncohen created at 2010-07-21 02:29:03
+Attachment [linear_programming2_some_changes.rst](tarball://root/attachments/some-uuid/ticket8467/linear_programming2_some_changes.rst) by @nathanncohen created at 2010-07-21 02:29:03
 
 Thank you very much for reading it until then !!! Actually, I will need to change some parts of it now that GLPK is a standard SPKG. I will also update the end of it, to give more natural examples :-)
 
@@ -225,7 +225,7 @@ archive/issue_comments_076250.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8467#issuecomment-76250",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_076251.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8467#issuecomment-76251",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_076252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8467#issuecomment-76252",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_076253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8467#issuecomment-76253",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

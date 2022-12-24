@@ -3,7 +3,7 @@
 archive/issues_008900.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nCC:  sage-combinat\n\nKeywords: overloading\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8900\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  sage-combinat\n\nKeywords: overloading\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8900\n\n",
     "created_at": "2010-05-05T23:41:28Z",
     "labels": [
         "coercion",
@@ -13,10 +13,10 @@ archive/issues_008900.json:
     "title": "Implement multiparameter overloaded functions, with explicit registration",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8900",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 CC:  sage-combinat
 
@@ -40,7 +40,7 @@ archive/issue_comments_081922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8900#issuecomment-81922",
-    "user": "kdilks"
+    "user": "@kevindilks"
 }
 ```
 

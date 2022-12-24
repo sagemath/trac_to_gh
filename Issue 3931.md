@@ -3,7 +3,7 @@
 archive/issues_003931.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nSee http://wiki.wstein.org/2008/480a/theprojects\n\nIssue created by migration from https://trac.sagemath.org/ticket/3931\n\n",
+    "body": "Assignee: @rlmill\n\nSee http://wiki.wstein.org/2008/480a/theprojects\n\nIssue created by migration from https://trac.sagemath.org/ticket/3931\n\n",
     "created_at": "2008-08-22T18:16:18Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_003931.json:
     "title": "Should we merge the dependency relation graph code by Scot Terry",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3931",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 See http://wiki.wstein.org/2008/480a/theprojects
 
@@ -61,7 +61,7 @@ archive/issue_comments_028147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3931#issuecomment-28147",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_028148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3931#issuecomment-28148",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

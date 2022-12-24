@@ -3,7 +3,7 @@
 archive/issues_003861.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kcrisman slelievre\n\nKeywords: line3d, Line, smoothing, corner_cutoff\n\nline3d for instance calls Line in \n\n/usr/local/sage/3.0.6/devel/sage/sage/plot/plot3d/shapes2.py\n\nWhich automatically applies some smoothing using corner_cutoff, which is buggy and poorly documented as in Ticket 3859:\nhttp://trac.sagemath.org/sage_trac/ticket/3859\n\n(See above Ticket for an example of how this can be bad.)\n\nIt is important that I plot lines directly, and automatic smoothing should either not be automatic, or should be documented,\neven for functions that do not reference the smoothing directly like in Line3d.  Perhaps a 'smooth' keyword is more informative than the undocumented corner_cutoff.\n\nThe smoothing is done in the Line class object, and not in pmol, so it can (and should!) be selectively applied.\n\nFixing the referenced ticket is a workaround (set corner_cutoff = 1), but is very clunky, and currently does not even work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3861\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman @slel\n\nKeywords: line3d, Line, smoothing, corner_cutoff\n\nline3d for instance calls Line in \n\n/usr/local/sage/3.0.6/devel/sage/sage/plot/plot3d/shapes2.py\n\nWhich automatically applies some smoothing using corner_cutoff, which is buggy and poorly documented as in Ticket 3859:\nhttp://trac.sagemath.org/sage_trac/ticket/3859\n\n(See above Ticket for an example of how this can be bad.)\n\nIt is important that I plot lines directly, and automatic smoothing should either not be automatic, or should be documented,\neven for functions that do not reference the smoothing directly like in Line3d.  Perhaps a 'smooth' keyword is more informative than the undocumented corner_cutoff.\n\nThe smoothing is done in the Line class object, and not in pmol, so it can (and should!) be selectively applied.\n\nFixing the referenced ticket is a workaround (set corner_cutoff = 1), but is very clunky, and currently does not even work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3861\n\n",
     "created_at": "2008-08-14T22:19:12Z",
     "labels": [
         "graphics",
@@ -17,9 +17,9 @@ archive/issues_003861.json:
     "user": "mclean"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kcrisman slelievre
+CC:  @kcrisman @slel
 
 Keywords: line3d, Line, smoothing, corner_cutoff
 
@@ -55,7 +55,7 @@ archive/issue_comments_027513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3861",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3861#issuecomment-27513",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_027514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3861",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3861#issuecomment-27514",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_027515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3861",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3861#issuecomment-27515",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_027516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3861",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3861#issuecomment-27516",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 

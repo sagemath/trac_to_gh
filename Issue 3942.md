@@ -3,7 +3,7 @@
 archive/issues_003942.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  cwitty\n\nWhen using pyprocessing, if you use an interface to some external function, such as GAP, sometimes the separate subprocesses will collide, since they all share the same temporary file.\n\nA temporary fix (due to cwitty) was to add\n\n`sage.interfaces.expect.tmp_expect_interface_local = '/tmp/interface' + str(os.getpid())`\n\nto the beginning of the function succeeding the ``@`parallel` decorator. This way, the temp files are separate. This should probably be part of the `parallel` function itself.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3942\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  cwitty\n\nWhen using pyprocessing, if you use an interface to some external function, such as GAP, sometimes the separate subprocesses will collide, since they all share the same temporary file.\n\nA temporary fix (due to cwitty) was to add\n\n`sage.interfaces.expect.tmp_expect_interface_local = '/tmp/interface' + str(os.getpid())`\n\nto the beginning of the function succeeding the ``@`parallel` decorator. This way, the temp files are separate. This should probably be part of the `parallel` function itself.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3942\n\n",
     "created_at": "2008-08-24T05:16:36Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_003942.json:
     "title": "Sage interfaces vs. pyprocessing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3942",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  cwitty
 
@@ -45,7 +45,7 @@ archive/issue_comments_028265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3942#issuecomment-28265",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_028266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3942#issuecomment-28266",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -160,16 +160,16 @@ rank4:sage-main rlmill$
 archive/issue_comments_028267.json:
 ```json
 {
-    "body": "Attachment [trac_3942_pid-interfaces.patch](tarball://root/attachments/some-uuid/ticket3942/trac_3942_pid-interfaces.patch) by rlm created at 2008-08-24 14:40:24",
+    "body": "Attachment [trac_3942_pid-interfaces.patch](tarball://root/attachments/some-uuid/ticket3942/trac_3942_pid-interfaces.patch) by @rlmill created at 2008-08-24 14:40:24",
     "created_at": "2008-08-24T14:40:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3942#issuecomment-28267",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_3942_pid-interfaces.patch](tarball://root/attachments/some-uuid/ticket3942/trac_3942_pid-interfaces.patch) by rlm created at 2008-08-24 14:40:24
+Attachment [trac_3942_pid-interfaces.patch](tarball://root/attachments/some-uuid/ticket3942/trac_3942_pid-interfaces.patch) by @rlmill created at 2008-08-24 14:40:24
 
 
 
@@ -183,7 +183,7 @@ archive/issue_comments_028268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3942#issuecomment-28268",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_028269.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3942#issuecomment-28269",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000112.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe whole gap_reset_workspace() idea is bad.  It just doesn't make any sense at all!\nHere's what should happen.   \n\n1. When a new gap component is installed a file in <SAGE_ROOT> is touched.\n\n2. When SAGE starts, if the user's local gap_workspace is older than the file in 1,\nthen it is recreated.\n\nThat's it!\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/112\n\n",
+    "body": "Assignee: @williamstein\n\nThe whole gap_reset_workspace() idea is bad.  It just doesn't make any sense at all!\nHere's what should happen.   \n\n1. When a new gap component is installed a file in <SAGE_ROOT> is touched.\n\n2. When SAGE starts, if the user's local gap_workspace is older than the file in 1,\nthen it is recreated.\n\nThat's it!\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/112\n\n",
     "created_at": "2006-10-05T10:12:46Z",
     "labels": [
         "interfaces",
@@ -13,10 +13,10 @@ archive/issues_000112.json:
     "title": "get rid of \"gap_reset_workspace\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/112",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The whole gap_reset_workspace() idea is bad.  It just doesn't make any sense at all!
 Here's what should happen.   
@@ -45,7 +45,7 @@ archive/issue_comments_000536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/112#issuecomment-536",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_000537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/112#issuecomment-537",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

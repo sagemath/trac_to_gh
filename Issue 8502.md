@@ -3,7 +3,7 @@
 archive/issues_008502.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  wuthrich malb\n\nKeywords: polynomial evaluation\n\nThe following behaviour does not agree with the documentation for the {{{__call__}} function on multivariable polynomials, which states that (as one would expect and hope) the result should lie in the constant field:\n\n```\nsage: K.<t> = NumberField(x^2+47)\nsage: R.<X,Y,Z> = K[]\nsage: f = X+Y+Z\nsage: a = f(t,t,t)\nsage: a.parent()\nMultivariate Polynomial Ring in X, Y, Z over Number Field in t with defining polynomial x^2 + 47\n```\n\nIt is also inconsistent:\n\n```\nsage: R.<X,Y,Z> = QQ[]\nsage: f = X+Y+Z\nsage: a = f(2,3,4)\nsage: a.parent()\nRational Field\n```\n\nThis causes strange bugs -- see #8498 for an example.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8502\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @categorie @malb\n\nKeywords: polynomial evaluation\n\nThe following behaviour does not agree with the documentation for the {{{__call__}} function on multivariable polynomials, which states that (as one would expect and hope) the result should lie in the constant field:\n\n```\nsage: K.<t> = NumberField(x^2+47)\nsage: R.<X,Y,Z> = K[]\nsage: f = X+Y+Z\nsage: a = f(t,t,t)\nsage: a.parent()\nMultivariate Polynomial Ring in X, Y, Z over Number Field in t with defining polynomial x^2 + 47\n```\n\nIt is also inconsistent:\n\n```\nsage: R.<X,Y,Z> = QQ[]\nsage: f = X+Y+Z\nsage: a = f(2,3,4)\nsage: a.parent()\nRational Field\n```\n\nThis causes strange bugs -- see #8498 for an example.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8502\n\n",
     "created_at": "2010-03-11T22:08:11Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_008502.json:
     "title": "evaluating multivariate polynomials yields non-constant",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8502",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  wuthrich malb
+CC:  @categorie @malb
 
 Keywords: polynomial evaluation
 
@@ -62,7 +62,7 @@ archive/issue_comments_076768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8502#issuecomment-76768",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_076769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8502#issuecomment-76769",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_076770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8502#issuecomment-76770",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -115,16 +115,16 @@ Changing status from new to needs_review.
 archive/issue_comments_076771.json:
 ```json
 {
-    "body": "Attachment [trac_8502-mpoly.patch](tarball://root/attachments/some-uuid/ticket8502/trac_8502-mpoly.patch) by cremona created at 2010-04-02 11:44:20",
+    "body": "Attachment [trac_8502-mpoly.patch](tarball://root/attachments/some-uuid/ticket8502/trac_8502-mpoly.patch) by @JohnCremona created at 2010-04-02 11:44:20",
     "created_at": "2010-04-02T11:44:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8502#issuecomment-76771",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_8502-mpoly.patch](tarball://root/attachments/some-uuid/ticket8502/trac_8502-mpoly.patch) by cremona created at 2010-04-02 11:44:20
+Attachment [trac_8502-mpoly.patch](tarball://root/attachments/some-uuid/ticket8502/trac_8502-mpoly.patch) by @JohnCremona created at 2010-04-02 11:44:20
 
 
 
@@ -138,7 +138,7 @@ archive/issue_comments_076772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8502#issuecomment-76772",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_076773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8502#issuecomment-76773",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_076774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8502#issuecomment-76774",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_076775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8502#issuecomment-76775",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

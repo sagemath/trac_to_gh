@@ -14,7 +14,7 @@ archive/issues_003491.json:
     "title": "slightly polish/improve how the cython pyx caching thing works",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3491",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

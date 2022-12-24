@@ -14,7 +14,7 @@ archive/issues_005337.json:
     "title": "update French to tutorial to reflect the fact that \"I in CC\" works in tour_rings.rst",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5337",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tba
@@ -58,7 +58,7 @@ archive/issue_comments_041112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5337#issuecomment-41112",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_041113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5337#issuecomment-41113",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_041114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5337#issuecomment-41114",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_041115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5337#issuecomment-41115",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_041116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5337#issuecomment-41116",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_041117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5337#issuecomment-41117",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_041118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5337#issuecomment-41118",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 

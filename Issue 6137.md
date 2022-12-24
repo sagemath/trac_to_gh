@@ -3,7 +3,7 @@
 archive/issues_006137.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat jbandlow\n\nKeywords: symmetric functions, categories\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6137\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @jbandlow\n\nKeywords: symmetric functions, categories\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6137\n\n",
     "created_at": "2009-05-27T05:24:38Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_006137.json:
     "title": "Symmetric functions: refactoring, step I",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6137",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
-CC:  sage-combinat jbandlow
+CC:  sage-combinat @jbandlow
 
 Keywords: symmetric functions, categories
 
@@ -41,7 +41,7 @@ archive/issue_comments_049010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6137",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6137#issuecomment-49010",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_049011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6137",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6137#issuecomment-49011",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_049012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6137",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6137#issuecomment-49012",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_049013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6137",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6137#issuecomment-49013",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008174.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  kcrisman jason robert.marik\n\nAttached patch provides a `.maxima_methods()` function in symbolic expressions to give access to various methods of simplification, etc. available in Maxima. The return values of functions called through this interface are Sage expressions. Tab completion and docstrings work as expected.\n\nThis was proposed on sage-devel:\n\nhttp://groups.google.com/group/sage-devel/t/3899a578da747009\n\nIssue created by migration from https://trac.sagemath.org/ticket/8174\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman @jasongrout @robert-marik\n\nAttached patch provides a `.maxima_methods()` function in symbolic expressions to give access to various methods of simplification, etc. available in Maxima. The return values of functions called through this interface are Sage expressions. Tab completion and docstrings work as expected.\n\nThis was proposed on sage-devel:\n\nhttp://groups.google.com/group/sage-devel/t/3899a578da747009\n\nIssue created by migration from https://trac.sagemath.org/ticket/8174\n\n",
     "created_at": "2010-02-03T14:56:36Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_008174.json:
     "title": "maxima_methods wrapper for symbolic expressions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8174",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  kcrisman jason robert.marik
+CC:  @kcrisman @jasongrout @robert-marik
 
 Attached patch provides a `.maxima_methods()` function in symbolic expressions to give access to various methods of simplification, etc. available in Maxima. The return values of functions called through this interface are Sage expressions. Tab completion and docstrings work as expected.
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8174
 archive/issue_comments_072018.json:
 ```json
 {
-    "body": "Attachment [trac_8174-maxima_methods.patch](tarball://root/attachments/some-uuid/ticket8174/trac_8174-maxima_methods.patch) by burcin created at 2010-02-03 14:58:05",
+    "body": "Attachment [trac_8174-maxima_methods.patch](tarball://root/attachments/some-uuid/ticket8174/trac_8174-maxima_methods.patch) by @burcin created at 2010-02-03 14:58:05",
     "created_at": "2010-02-03T14:58:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8174#issuecomment-72018",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_8174-maxima_methods.patch](tarball://root/attachments/some-uuid/ticket8174/trac_8174-maxima_methods.patch) by burcin created at 2010-02-03 14:58:05
+Attachment [trac_8174-maxima_methods.patch](tarball://root/attachments/some-uuid/ticket8174/trac_8174-maxima_methods.patch) by @burcin created at 2010-02-03 14:58:05
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_072019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8174#issuecomment-72019",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_072020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8174#issuecomment-72020",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_072021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8174#issuecomment-72021",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_072022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8174#issuecomment-72022",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_072023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8174#issuecomment-72023",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -157,16 +157,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_072024.json:
 ```json
 {
-    "body": "Attachment [trac_8174-maxima_methods.take2.patch](tarball://root/attachments/some-uuid/ticket8174/trac_8174-maxima_methods.take2.patch) by burcin created at 2010-02-20 12:29:18\n\napply only this patch",
+    "body": "Attachment [trac_8174-maxima_methods.take2.patch](tarball://root/attachments/some-uuid/ticket8174/trac_8174-maxima_methods.take2.patch) by @burcin created at 2010-02-20 12:29:18\n\napply only this patch",
     "created_at": "2010-02-20T12:29:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8174#issuecomment-72024",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_8174-maxima_methods.take2.patch](tarball://root/attachments/some-uuid/ticket8174/trac_8174-maxima_methods.take2.patch) by burcin created at 2010-02-20 12:29:18
+Attachment [trac_8174-maxima_methods.take2.patch](tarball://root/attachments/some-uuid/ticket8174/trac_8174-maxima_methods.take2.patch) by @burcin created at 2010-02-20 12:29:18
 
 apply only this patch
 
@@ -182,7 +182,7 @@ archive/issue_comments_072025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8174#issuecomment-72025",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_072026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8174#issuecomment-72026",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 

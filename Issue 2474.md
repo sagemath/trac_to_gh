@@ -3,7 +3,7 @@
 archive/issues_002474.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  ncalexan\n\nKeywords: RIF CIF RealIntervalField ComplexIntervalField round\n\n\n```\nsage: round(RIF(10))\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/ncalexan/sage-2.10.3.rc3/<ipython console> in <module>()\n\n/Users/ncalexan/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/misc/functional.py in round(x, ndigits)\n    864     else:\n    865         try: return x.round()\n--> 866         except AttributeError: return RealDoubleElement(__builtin__.round(x, 0))\n    867 \n    868 def quotient(x, y, *args, **kwds):\n\n<type 'exceptions.TypeError'>: a float is required\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2474\n\n",
+    "body": "Assignee: somebody\n\nCC:  @ncalexan\n\nKeywords: RIF CIF RealIntervalField ComplexIntervalField round\n\n\n```\nsage: round(RIF(10))\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/ncalexan/sage-2.10.3.rc3/<ipython console> in <module>()\n\n/Users/ncalexan/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/misc/functional.py in round(x, ndigits)\n    864     else:\n    865         try: return x.round()\n--> 866         except AttributeError: return RealDoubleElement(__builtin__.round(x, 0))\n    867 \n    868 def quotient(x, y, *args, **kwds):\n\n<type 'exceptions.TypeError'>: a float is required\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2474\n\n",
     "created_at": "2008-03-11T22:09:18Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_002474.json:
     "title": "RealIntervalField should have a round method (maybe ComplexIntervalField should too)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2474",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 Assignee: somebody
 
-CC:  ncalexan
+CC:  @ncalexan
 
 Keywords: RIF CIF RealIntervalField ComplexIntervalField round
 
@@ -78,7 +78,7 @@ archive/issue_comments_016754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2474#issuecomment-16754",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_016755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2474#issuecomment-16755",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_016756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2474#issuecomment-16756",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_016757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2474#issuecomment-16757",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_016758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2474#issuecomment-16758",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_016759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2474#issuecomment-16759",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_016760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2474#issuecomment-16760",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_016761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2474#issuecomment-16761",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

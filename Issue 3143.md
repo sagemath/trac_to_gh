@@ -14,7 +14,7 @@ archive/issues_003143.json:
     "title": "[with patch, needs review] remove references to /home/was",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3143",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: cwitty

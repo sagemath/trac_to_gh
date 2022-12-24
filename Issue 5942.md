@@ -3,7 +3,7 @@
 archive/issues_005942.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  cwitty mhansen\n\nThis seems bad to me...\n\n```\nsage: p=RealIntervalField(4)(pi)\nsage: p.str(style='brackets')\n'[3.00 .. 3.25]'\nsage: p\n4.?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5942\n\n",
+    "body": "Assignee: somebody\n\nCC:  cwitty @mwhansen\n\nThis seems bad to me...\n\n```\nsage: p=RealIntervalField(4)(pi)\nsage: p.str(style='brackets')\n'[3.00 .. 3.25]'\nsage: p\n4.?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5942\n\n",
     "created_at": "2009-04-29T22:05:36Z",
     "labels": [
         "basic arithmetic",
@@ -19,7 +19,7 @@ archive/issues_005942.json:
 ```
 Assignee: somebody
 
-CC:  cwitty mhansen
+CC:  cwitty @mwhansen
 
 This seems bad to me...
 
@@ -66,7 +66,7 @@ archive/issue_comments_046968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5942#issuecomment-46968",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_046969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5942#issuecomment-46969",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

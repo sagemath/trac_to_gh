@@ -3,7 +3,7 @@
 archive/issues_001212.json:
 ```json
 {
-    "body": "Assignee: was\n\nscipy and cvxopt still fail to build on 10.5 with the binary g95 compiled for 10.4. So on 10.5 make gfortran mandatory and otherwise error out early.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1212\n\n",
+    "body": "Assignee: @williamstein\n\nscipy and cvxopt still fail to build on 10.5 with the binary g95 compiled for 10.4. So on 10.5 make gfortran mandatory and otherwise error out early.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1212\n\n",
     "created_at": "2007-11-20T00:36:10Z",
     "labels": [
         "packages: standard",
@@ -17,7 +17,7 @@ archive/issues_001212.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 scipy and cvxopt still fail to build on 10.5 with the binary g95 compiled for 10.4. So on 10.5 make gfortran mandatory and otherwise error out early.
 

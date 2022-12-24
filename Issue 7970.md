@@ -3,7 +3,7 @@
 archive/issues_007970.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  mhansen\n\nAs mentioned on #7760, it would be nice if the `hg_sage`, etc. returned the exit code from the `__call__` method. We'd have to switch `os.popen3` to `subprocess.Popen` to do this, which isn't so bad, and is worth it in the long run (since `os.popen3` is deprecated). \n\nIssue created by migration from https://trac.sagemath.org/ticket/7970\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @mwhansen\n\nAs mentioned on #7760, it would be nice if the `hg_sage`, etc. returned the exit code from the `__call__` method. We'd have to switch `os.popen3` to `subprocess.Popen` to do this, which isn't so bad, and is worth it in the long run (since `os.popen3` is deprecated). \n\nIssue created by migration from https://trac.sagemath.org/ticket/7970\n\n",
     "created_at": "2010-01-17T23:48:44Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_007970.json:
     "title": "Make `hg` interfaces use `subprocess.Popen` and return exit code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7970",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 Assignee: GeorgSWeber
 
-CC:  mhansen
+CC:  @mwhansen
 
 As mentioned on #7760, it would be nice if the `hg_sage`, etc. returned the exit code from the `__call__` method. We'd have to switch `os.popen3` to `subprocess.Popen` to do this, which isn't so bad, and is worth it in the long run (since `os.popen3` is deprecated). 
 
@@ -39,7 +39,7 @@ archive/issue_comments_069528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7970#issuecomment-69528",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_069529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7970#issuecomment-69529",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_069530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7970#issuecomment-69530",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

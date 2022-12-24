@@ -3,7 +3,7 @@
 archive/issues_008347.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nCC:  sage-combinat\n\nKeywords: test, positivity, real\n\ntest if an element of a number field is positive or negative. \n\nEspecially for real element of a CyclotomicField, we need this test for theory representation of complex reflection groups.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8347\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  sage-combinat\n\nKeywords: test, positivity, real\n\ntest if an element of a number field is positive or negative. \n\nEspecially for real element of a CyclotomicField, we need this test for theory representation of complex reflection groups.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8347\n\n",
     "created_at": "2010-02-24T15:40:31Z",
     "labels": [
         "number fields",
@@ -17,7 +17,7 @@ archive/issues_008347.json:
     "user": "nborie"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
 CC:  sage-combinat
 
@@ -139,7 +139,7 @@ archive/issue_comments_074524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8347#issuecomment-74524",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_074525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8347#issuecomment-74525",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_074528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8347#issuecomment-74528",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_074529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8347#issuecomment-74529",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -297,7 +297,7 @@ archive/issue_comments_074532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8347#issuecomment-74532",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -320,7 +320,7 @@ archive/issue_comments_074533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8347#issuecomment-74533",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -338,7 +338,7 @@ archive/issue_comments_074534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8347#issuecomment-74534",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -420,7 +420,7 @@ archive/issue_comments_074538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8347#issuecomment-74538",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -438,7 +438,7 @@ archive/issue_comments_074539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8347#issuecomment-74539",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 

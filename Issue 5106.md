@@ -3,7 +3,7 @@
 archive/issues_005106.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  boothby mhansen\n\nThe Sage `.<a>` notation doesn't properly deal with `time foo`.\n\n\n```\nsage: time K.<a> = GF(9)\n------------------------------------------------------------\n   File \"<timed exec>\", line 1\n     K = GF(Integer(Integer(9)),names=(u'a',)); (a,) = time K._first_ngens(Integer(1))\n                                                            ^\nSyntaxError: invalid syntax\n```\n\n\nNote that the Ipython magic %time works fine:\n\n```\nsage: %time K.<a> = GF(9)\nCPU times: user 0.11 s, sys: 0.09 s, total: 0.19 s\nWall time: 2.17 s\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5106\n\n",
+    "body": "Assignee: cwitty\n\nCC:  boothby @mwhansen\n\nThe Sage `.<a>` notation doesn't properly deal with `time foo`.\n\n\n```\nsage: time K.<a> = GF(9)\n------------------------------------------------------------\n   File \"<timed exec>\", line 1\n     K = GF(Integer(Integer(9)),names=(u'a',)); (a,) = time K._first_ngens(Integer(1))\n                                                            ^\nSyntaxError: invalid syntax\n```\n\n\nNote that the Ipython magic %time works fine:\n\n```\nsage: %time K.<a> = GF(9)\nCPU times: user 0.11 s, sys: 0.09 s, total: 0.19 s\nWall time: 2.17 s\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5106\n\n",
     "created_at": "2009-01-26T19:10:38Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_005106.json:
     "title": "preparse bug with time and generator assignment naming",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5106",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
 
-CC:  boothby mhansen
+CC:  boothby @mwhansen
 
 The Sage `.<a>` notation doesn't properly deal with `time foo`.
 
@@ -61,7 +61,7 @@ archive/issue_comments_038997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5106#issuecomment-38997",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_039002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5106#issuecomment-39002",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_039003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5106#issuecomment-39003",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -204,16 +204,16 @@ It's based on 3.2.3, with #5079, and perhaps another patch or two. I haven't upg
 archive/issue_comments_039004.json:
 ```json
 {
-    "body": "Changing assignee from cwitty to was.",
+    "body": "Changing assignee from cwitty to @williamstein.",
     "created_at": "2009-02-15T09:01:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5106#issuecomment-39004",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from cwitty to was.
+Changing assignee from cwitty to @williamstein.
 
 
 
@@ -227,7 +227,7 @@ archive/issue_comments_039005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5106#issuecomment-39005",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_039006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5106#issuecomment-39006",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -258,16 +258,16 @@ The rebase issue was #4405, which was independently resolved by this patch.
 archive/issue_comments_039007.json:
 ```json
 {
-    "body": "Attachment [5106-preparse-gens.patch](tarball://root/attachments/some-uuid/ticket5106/5106-preparse-gens.patch) by robertwb created at 2009-02-15 09:19:31",
+    "body": "Attachment [5106-preparse-gens.patch](tarball://root/attachments/some-uuid/ticket5106/5106-preparse-gens.patch) by @robertwb created at 2009-02-15 09:19:31",
     "created_at": "2009-02-15T09:19:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5106#issuecomment-39007",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5106-preparse-gens.patch](tarball://root/attachments/some-uuid/ticket5106/5106-preparse-gens.patch) by robertwb created at 2009-02-15 09:19:31
+Attachment [5106-preparse-gens.patch](tarball://root/attachments/some-uuid/ticket5106/5106-preparse-gens.patch) by @robertwb created at 2009-02-15 09:19:31
 
 
 
@@ -311,16 +311,16 @@ Michael
 archive/issue_comments_039009.json:
 ```json
 {
-    "body": "Attachment [5106-preparse-gens-rebase.patch](tarball://root/attachments/some-uuid/ticket5106/5106-preparse-gens-rebase.patch) by robertwb created at 2009-02-17 06:37:28",
+    "body": "Attachment [5106-preparse-gens-rebase.patch](tarball://root/attachments/some-uuid/ticket5106/5106-preparse-gens-rebase.patch) by @robertwb created at 2009-02-17 06:37:28",
     "created_at": "2009-02-17T06:37:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5106#issuecomment-39009",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5106-preparse-gens-rebase.patch](tarball://root/attachments/some-uuid/ticket5106/5106-preparse-gens-rebase.patch) by robertwb created at 2009-02-17 06:37:28
+Attachment [5106-preparse-gens-rebase.patch](tarball://root/attachments/some-uuid/ticket5106/5106-preparse-gens-rebase.patch) by @robertwb created at 2009-02-17 06:37:28
 
 
 
@@ -334,7 +334,7 @@ archive/issue_comments_039010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5106#issuecomment-39010",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -384,7 +384,7 @@ archive/issue_comments_039012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5106#issuecomment-39012",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -397,16 +397,16 @@ Hmm... I'll look at this in a moment.
 archive/issue_comments_039013.json:
 ```json
 {
-    "body": "Attachment [5106-fix.patch](tarball://root/attachments/some-uuid/ticket5106/5106-fix.patch) by robertwb created at 2009-02-17 12:16:23\n\nOK, I've resolved the issue above.",
+    "body": "Attachment [5106-fix.patch](tarball://root/attachments/some-uuid/ticket5106/5106-fix.patch) by @robertwb created at 2009-02-17 12:16:23\n\nOK, I've resolved the issue above.",
     "created_at": "2009-02-17T12:16:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5106#issuecomment-39013",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5106-fix.patch](tarball://root/attachments/some-uuid/ticket5106/5106-fix.patch) by robertwb created at 2009-02-17 12:16:23
+Attachment [5106-fix.patch](tarball://root/attachments/some-uuid/ticket5106/5106-fix.patch) by @robertwb created at 2009-02-17 12:16:23
 
 OK, I've resolved the issue above.
 

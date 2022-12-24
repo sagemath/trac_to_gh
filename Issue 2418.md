@@ -3,7 +3,7 @@
 archive/issues_002418.json:
 ```json
 {
-    "body": "Assignee: was\n\nI think the problem may be in how Sage calls polroots; in particular, I'm suspicious of the coercion from CC to pari.\n\n```\nsage: x = polygen(QQ)\nsage: p = (x^50/2^100 + x^10 + x + 1).change_ring(ComplexField(106))\nsage: len(p.roots())\n50\nsage: (p/2^100).roots()\n---------------------------------------------------------------------------\n<class 'sage.libs.pari.gen.PariError'>    Traceback (most recent call last)\n\n/home/cwitty/my-sage/<ipython console> in <module>()\n\n/home/cwitty/my-sage/polynomial_element.pyx in sage.rings.polynomial.polynomial_element.Polynomial.roots()\n\n/home/cwitty/my-sage/gen.pyx in sage.libs.pari.gen._pari_trap()\n\n<class 'sage.libs.pari.gen.PariError'>: division by zero (46)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2418\n\n",
+    "body": "Assignee: @williamstein\n\nI think the problem may be in how Sage calls polroots; in particular, I'm suspicious of the coercion from CC to pari.\n\n```\nsage: x = polygen(QQ)\nsage: p = (x^50/2^100 + x^10 + x + 1).change_ring(ComplexField(106))\nsage: len(p.roots())\n50\nsage: (p/2^100).roots()\n---------------------------------------------------------------------------\n<class 'sage.libs.pari.gen.PariError'>    Traceback (most recent call last)\n\n/home/cwitty/my-sage/<ipython console> in <module>()\n\n/home/cwitty/my-sage/polynomial_element.pyx in sage.rings.polynomial.polynomial_element.Polynomial.roots()\n\n/home/cwitty/my-sage/gen.pyx in sage.libs.pari.gen._pari_trap()\n\n<class 'sage.libs.pari.gen.PariError'>: division by zero (46)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2418\n\n",
     "created_at": "2008-03-07T05:01:20Z",
     "labels": [
         "interfaces",
@@ -17,7 +17,7 @@ archive/issues_002418.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I think the problem may be in how Sage calls polroots; in particular, I'm suspicious of the coercion from CC to pari.
 
@@ -56,7 +56,7 @@ archive/issue_comments_016304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2418#issuecomment-16304",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_016306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2418#issuecomment-16306",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_016307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2418#issuecomment-16307",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -138,16 +138,16 @@ Changing status from new to needs_review.
 archive/issue_comments_016308.json:
 ```json
 {
-    "body": "Attachment [trac_2418.patch](tarball://root/attachments/some-uuid/ticket2418/trac_2418.patch) by AlexGhitza created at 2010-01-03 06:48:10",
+    "body": "Attachment [trac_2418.patch](tarball://root/attachments/some-uuid/ticket2418/trac_2418.patch) by @aghitza created at 2010-01-03 06:48:10",
     "created_at": "2010-01-03T06:48:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2418#issuecomment-16308",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_2418.patch](tarball://root/attachments/some-uuid/ticket2418/trac_2418.patch) by AlexGhitza created at 2010-01-03 06:48:10
+Attachment [trac_2418.patch](tarball://root/attachments/some-uuid/ticket2418/trac_2418.patch) by @aghitza created at 2010-01-03 06:48:10
 
 
 
@@ -161,7 +161,7 @@ archive/issue_comments_016309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2418#issuecomment-16309",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_016310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2418#issuecomment-16310",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_016311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2418#issuecomment-16311",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_016312.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2418#issuecomment-16312",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_016313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2418#issuecomment-16313",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_016314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2418#issuecomment-16314",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_016315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2418#issuecomment-16315",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -295,16 +295,16 @@ rebased on 4.3.1.alpha1 and #6237, apply instead of the previous patch
 archive/issue_comments_016316.json:
 ```json
 {
-    "body": "Attachment [trac_2418-rebased.patch](tarball://root/attachments/some-uuid/ticket2418/trac_2418-rebased.patch) by cremona created at 2010-01-13 11:47:31\n\nI checked that this applies fine on top of 4.3.1.alpha1 + #6237, and tests pass, so positive review.",
+    "body": "Attachment [trac_2418-rebased.patch](tarball://root/attachments/some-uuid/ticket2418/trac_2418-rebased.patch) by @JohnCremona created at 2010-01-13 11:47:31\n\nI checked that this applies fine on top of 4.3.1.alpha1 + #6237, and tests pass, so positive review.",
     "created_at": "2010-01-13T11:47:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2418#issuecomment-16316",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_2418-rebased.patch](tarball://root/attachments/some-uuid/ticket2418/trac_2418-rebased.patch) by cremona created at 2010-01-13 11:47:31
+Attachment [trac_2418-rebased.patch](tarball://root/attachments/some-uuid/ticket2418/trac_2418-rebased.patch) by @JohnCremona created at 2010-01-13 11:47:31
 
 I checked that this applies fine on top of 4.3.1.alpha1 + #6237, and tests pass, so positive review.
 
@@ -320,7 +320,7 @@ archive/issue_comments_016317.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2418#issuecomment-16317",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -338,7 +338,7 @@ archive/issue_comments_016318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2418#issuecomment-16318",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

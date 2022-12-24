@@ -67,16 +67,16 @@ Anyone any ideas??
 archive/issue_comments_069516.json:
 ```json
 {
-    "body": "Attachment [trac_7968.patch](tarball://root/attachments/some-uuid/ticket7968/trac_7968.patch) by was created at 2010-01-17 22:41:18",
+    "body": "Attachment [trac_7968.patch](tarball://root/attachments/some-uuid/ticket7968/trac_7968.patch) by @williamstein created at 2010-01-17 22:41:18",
     "created_at": "2010-01-17T22:41:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7968#issuecomment-69516",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7968.patch](tarball://root/attachments/some-uuid/ticket7968/trac_7968.patch) by was created at 2010-01-17 22:41:18
+Attachment [trac_7968.patch](tarball://root/attachments/some-uuid/ticket7968/trac_7968.patch) by @williamstein created at 2010-01-17 22:41:18
 
 
 
@@ -90,7 +90,7 @@ archive/issue_comments_069517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7968#issuecomment-69517",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_069518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7968#issuecomment-69518",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_069519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7968#issuecomment-69519",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_069520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7968#issuecomment-69520",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_069521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7968#issuecomment-69521",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

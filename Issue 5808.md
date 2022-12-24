@@ -3,7 +3,7 @@
 archive/issues_005808.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nAlong with #5541, this patch fixes most of the warnings when building the reference manual in 3.4.1.rc3.  I still get these:\n\n```\nchecking consistency... WARNING: /Applications/sage_builds/sage-3.4.1.rc3/devel/sage-test/doc/en/reference/sage/combinat/family.rst:: document isn't included in any toctree\ndone\npreparing documents... WARNING: html_favicon is not an .ico file\n```\n\nbut that's it.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5808\n\n",
+    "body": "Assignee: @jhpalmieri\n\nAlong with #5541, this patch fixes most of the warnings when building the reference manual in 3.4.1.rc3.  I still get these:\n\n```\nchecking consistency... WARNING: /Applications/sage_builds/sage-3.4.1.rc3/devel/sage-test/doc/en/reference/sage/combinat/family.rst:: document isn't included in any toctree\ndone\npreparing documents... WARNING: html_favicon is not an .ico file\n```\n\nbut that's it.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5808\n\n",
     "created_at": "2009-04-17T06:04:42Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_005808.json:
     "title": "[with patch, needs review] fix most warnings when building the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5808",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 Along with #5541, this patch fixes most of the warnings when building the reference manual in 3.4.1.rc3.  I still get these:
 
@@ -47,7 +47,7 @@ archive/issue_comments_045611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5808",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5808#issuecomment-45611",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_045612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5808",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5808#issuecomment-45612",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -82,16 +82,16 @@ Apply after the first patch
 archive/issue_comments_045613.json:
 ```json
 {
-    "body": "Attachment [trac_5808-review.patch](tarball://root/attachments/some-uuid/ticket5808/trac_5808-review.patch) by cremona created at 2009-04-17 14:47:31\n\nApplies fine to 3.4.1.rc3.  When I did \"sage -docbuild all html\" I got lots of warnings in the tutrial (ok, not dealt with here) and a couple in algebras/quatalg/quaternion_algebra.py.\n\nSo I added some edits to that file, as in the second patch attached.\n\nMy positive review applies to the first patch.  If John likes the second one, that's good.",
+    "body": "Attachment [trac_5808-review.patch](tarball://root/attachments/some-uuid/ticket5808/trac_5808-review.patch) by @JohnCremona created at 2009-04-17 14:47:31\n\nApplies fine to 3.4.1.rc3.  When I did \"sage -docbuild all html\" I got lots of warnings in the tutrial (ok, not dealt with here) and a couple in algebras/quatalg/quaternion_algebra.py.\n\nSo I added some edits to that file, as in the second patch attached.\n\nMy positive review applies to the first patch.  If John likes the second one, that's good.",
     "created_at": "2009-04-17T14:47:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5808",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5808#issuecomment-45613",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_5808-review.patch](tarball://root/attachments/some-uuid/ticket5808/trac_5808-review.patch) by cremona created at 2009-04-17 14:47:31
+Attachment [trac_5808-review.patch](tarball://root/attachments/some-uuid/ticket5808/trac_5808-review.patch) by @JohnCremona created at 2009-04-17 14:47:31
 
 Applies fine to 3.4.1.rc3.  When I did "sage -docbuild all html" I got lots of warnings in the tutrial (ok, not dealt with here) and a couple in algebras/quatalg/quaternion_algebra.py.
 
@@ -111,7 +111,7 @@ archive/issue_comments_045614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5808",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5808#issuecomment-45614",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_045615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5808",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5808#issuecomment-45615",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_045616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5808",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5808#issuecomment-45616",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_045617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5808",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5808#issuecomment-45617",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -191,16 +191,16 @@ No problem -- done!
 archive/issue_comments_045618.json:
 ```json
 {
-    "body": "Attachment [ref-warnings.patch](tarball://root/attachments/some-uuid/ticket5808/ref-warnings.patch) by jhpalmieri created at 2009-04-17 22:52:12\n\napply only this patch",
+    "body": "Attachment [ref-warnings.patch](tarball://root/attachments/some-uuid/ticket5808/ref-warnings.patch) by @jhpalmieri created at 2009-04-17 22:52:12\n\napply only this patch",
     "created_at": "2009-04-17T22:52:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5808",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5808#issuecomment-45618",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [ref-warnings.patch](tarball://root/attachments/some-uuid/ticket5808/ref-warnings.patch) by jhpalmieri created at 2009-04-17 22:52:12
+Attachment [ref-warnings.patch](tarball://root/attachments/some-uuid/ticket5808/ref-warnings.patch) by @jhpalmieri created at 2009-04-17 22:52:12
 
 apply only this patch
 
@@ -216,7 +216,7 @@ archive/issue_comments_045619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5808",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5808#issuecomment-45619",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_045620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5808",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5808#issuecomment-45620",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

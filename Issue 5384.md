@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5384
 archive/issue_comments_041468.json:
 ```json
 {
-    "body": "Set assignee to burcin.",
+    "body": "Set assignee to @burcin.",
     "created_at": "2009-02-26T05:19:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5384",
     "type": "issue_comment",
@@ -47,7 +47,7 @@ archive/issue_comments_041468.json:
 }
 ```
 
-Set assignee to burcin.
+Set assignee to @burcin.
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_041469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5384#issuecomment-41469",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -74,16 +74,16 @@ doctests for the fix
 archive/issue_comments_041470.json:
 ```json
 {
-    "body": "Attachment [trac_5384-pynac_compare_add.patch](tarball://root/attachments/some-uuid/ticket5384/trac_5384-pynac_compare_add.patch) by burcin created at 2009-02-26 13:25:27\n\nThere is a new pynac package which includes the fix for this here:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.3.spkg\n\nTo make the review easier, here is the patch for pynac\n\n\n```\ndiff --git a/ginac/expairseq.cpp b/ginac/expairseq.cpp\n--- a/ginac/expairseq.cpp\n+++ b/ginac/expairseq.cpp\n@@ -510,13 +510,6 @@\n \tif (seq.size() != o.seq.size())\n \t\treturn (seq.size()<o.seq.size()) ? -1 : 1;\n \n-\t// compare overall_coeff\n-\t/*\n-\tcmpval = overall_coeff.compare(o.overall_coeff);\n-\tif (cmpval!=0)\n-\t\treturn cmpval;\n-\t\t*/\n-\t\n #if EXPAIRSEQ_USE_HASHTAB\n \tGINAC_ASSERT(hashtabsize==o.hashtabsize);\n \tif (hashtabsize==0) {\n@@ -534,6 +527,11 @@\n \t\tGINAC_ASSERT(cit1==last1);\n \t\tGINAC_ASSERT(cit2==last2);\n \t\n+\t\t// compare overall_coeff\n+\t\tcmpval = overall_coeff.compare(o.overall_coeff);\n+\t\tif (cmpval!=0)\n+\t\t\treturn cmpval;\n+\t\n \t\treturn 0;\n #if EXPAIRSEQ_USE_HASHTAB\n \t}\n```\n\n\nattachment:trac_5384-pynac_compare_add.patch adds the example in the description as a doctest.",
+    "body": "Attachment [trac_5384-pynac_compare_add.patch](tarball://root/attachments/some-uuid/ticket5384/trac_5384-pynac_compare_add.patch) by @burcin created at 2009-02-26 13:25:27\n\nThere is a new pynac package which includes the fix for this here:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.3.spkg\n\nTo make the review easier, here is the patch for pynac\n\n\n```\ndiff --git a/ginac/expairseq.cpp b/ginac/expairseq.cpp\n--- a/ginac/expairseq.cpp\n+++ b/ginac/expairseq.cpp\n@@ -510,13 +510,6 @@\n \tif (seq.size() != o.seq.size())\n \t\treturn (seq.size()<o.seq.size()) ? -1 : 1;\n \n-\t// compare overall_coeff\n-\t/*\n-\tcmpval = overall_coeff.compare(o.overall_coeff);\n-\tif (cmpval!=0)\n-\t\treturn cmpval;\n-\t\t*/\n-\t\n #if EXPAIRSEQ_USE_HASHTAB\n \tGINAC_ASSERT(hashtabsize==o.hashtabsize);\n \tif (hashtabsize==0) {\n@@ -534,6 +527,11 @@\n \t\tGINAC_ASSERT(cit1==last1);\n \t\tGINAC_ASSERT(cit2==last2);\n \t\n+\t\t// compare overall_coeff\n+\t\tcmpval = overall_coeff.compare(o.overall_coeff);\n+\t\tif (cmpval!=0)\n+\t\t\treturn cmpval;\n+\t\n \t\treturn 0;\n #if EXPAIRSEQ_USE_HASHTAB\n \t}\n```\n\n\nattachment:trac_5384-pynac_compare_add.patch adds the example in the description as a doctest.",
     "created_at": "2009-02-26T13:25:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5384#issuecomment-41470",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_5384-pynac_compare_add.patch](tarball://root/attachments/some-uuid/ticket5384/trac_5384-pynac_compare_add.patch) by burcin created at 2009-02-26 13:25:27
+Attachment [trac_5384-pynac_compare_add.patch](tarball://root/attachments/some-uuid/ticket5384/trac_5384-pynac_compare_add.patch) by @burcin created at 2009-02-26 13:25:27
 
 There is a new pynac package which includes the fix for this here:
 
@@ -139,7 +139,7 @@ archive/issue_comments_041471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5384#issuecomment-41471",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000750.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  sage-combinat\n\nIt would be nice to get permutation elements as dictionaries as well as lists.  If g is a permutation group element, then something like\n\n\n```\n  sage: g.dict()\n{1:2, 2:1}\n```\n\n\nIt would also be nice if we could have permutation elements act on lists to switch the order according to the permutation.\n\n\n```\n  sage: g.action(range(3))\n[0,2,1]\n```\n\n\nAre these things possible already?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/750\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  sage-combinat\n\nIt would be nice to get permutation elements as dictionaries as well as lists.  If g is a permutation group element, then something like\n\n\n```\n  sage: g.dict()\n{1:2, 2:1}\n```\n\n\nIt would also be nice if we could have permutation elements act on lists to switch the order according to the permutation.\n\n\n```\n  sage: g.action(range(3))\n[0,2,1]\n```\n\n\nAre these things possible already?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/750\n\n",
     "created_at": "2007-09-24T23:13:58Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_000750.json:
     "title": "permutation group element (dict method, acting on lists)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/750",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  sage-combinat
 
@@ -106,7 +106,7 @@ Robert Miller convinced me that there are good reasons to want a dict, so I impl
 archive/issue_comments_004437.json:
 ```json
 {
-    "body": "Changing assignee from was to boothby.",
+    "body": "Changing assignee from @williamstein to boothby.",
     "created_at": "2007-10-31T18:02:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/750",
     "type": "issue_comment",
@@ -115,7 +115,7 @@ archive/issue_comments_004437.json:
 }
 ```
 
-Changing assignee from was to boothby.
+Changing assignee from @williamstein to boothby.
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_000821.json:
 ```json
 {
-    "body": "Assignee: was\n\nChange K.ideal to K.fractional_ideal for number fields. \n\n\n```\nOn 10/3/07, Soroosh Yazdani <syazdani@math.berkeley.edu> wrote:\n> \n> I think what you're saying makes sense. Maybe introduce a method\n> fractionalideal, specific to number fields?\n\nIt should be \n\n    K.fractional_ideal(...)\n\nI agree.  I've opened a trac ticket (and accepted it):\n   \n\n> \n> Soroosh\n> On Wed, Oct 03, 2007 at 10:44:49AM -0400, David Harvey wrote:\n> > I find this very confusing:\n> >\n> > sage: F.<a> = QuadraticField(-5)\n> > sage: F.ideal(6)\n> > Fractional ideal (6) of Number Field in a with defining polynomial\n> > x^2 + 5\n> >\n> > sage: QQ.ideal(6)\n> > Principal ideal (1) of Rational Field\n> >\n> > This means that if I write code that can work over an arbitrary\n> > number field, I have to write special cases for Q. I think it's a bad\n> > idea to use the name \"ideal\" for the method that gives an ideal of\n> > the ring of integers. I think we should give this a different name.\n> >\n> > Any thoughts?\n> >\n> > david\n> >\n> >\n> >\n> \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/821\n\n",
+    "body": "Assignee: @williamstein\n\nChange K.ideal to K.fractional_ideal for number fields. \n\n\n```\nOn 10/3/07, Soroosh Yazdani <syazdani@math.berkeley.edu> wrote:\n> \n> I think what you're saying makes sense. Maybe introduce a method\n> fractionalideal, specific to number fields?\n\nIt should be \n\n    K.fractional_ideal(...)\n\nI agree.  I've opened a trac ticket (and accepted it):\n   \n\n> \n> Soroosh\n> On Wed, Oct 03, 2007 at 10:44:49AM -0400, David Harvey wrote:\n> > I find this very confusing:\n> >\n> > sage: F.<a> = QuadraticField(-5)\n> > sage: F.ideal(6)\n> > Fractional ideal (6) of Number Field in a with defining polynomial\n> > x^2 + 5\n> >\n> > sage: QQ.ideal(6)\n> > Principal ideal (1) of Rational Field\n> >\n> > This means that if I write code that can work over an arbitrary\n> > number field, I have to write special cases for Q. I think it's a bad\n> > idea to use the name \"ideal\" for the method that gives an ideal of\n> > the ring of integers. I think we should give this a different name.\n> >\n> > Any thoughts?\n> >\n> > david\n> >\n> >\n> >\n> \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/821\n\n",
     "created_at": "2007-10-04T04:59:48Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_000821.json:
     "title": "K.fractional_ideal(...)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/821",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Change K.ideal to K.fractional_ideal for number fields. 
 
@@ -80,7 +80,7 @@ archive/issue_comments_005090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/821#issuecomment-5090",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_005091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/821#issuecomment-5091",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_005092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/821#issuecomment-5092",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_005093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/821#issuecomment-5093",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_005094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/821#issuecomment-5094",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_007417.json:
     "title": "disturbing notebook resource limit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7417",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -54,7 +54,7 @@ archive/issue_comments_062406.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7417",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7417#issuecomment-62406",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_062407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7417",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7417#issuecomment-62407",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_062408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7417",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7417#issuecomment-62408",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_062409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7417",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7417#issuecomment-62409",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -338,16 +338,16 @@ Changing priority from major to blocker.
 archive/issue_comments_062410.json:
 ```json
 {
-    "body": "Attachment [trac_7417.patch](tarball://root/attachments/some-uuid/ticket7417/trac_7417.patch) by was created at 2009-11-11 23:24:15",
+    "body": "Attachment [trac_7417.patch](tarball://root/attachments/some-uuid/ticket7417/trac_7417.patch) by @williamstein created at 2009-11-11 23:24:15",
     "created_at": "2009-11-11T23:24:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7417",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7417#issuecomment-62410",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7417.patch](tarball://root/attachments/some-uuid/ticket7417/trac_7417.patch) by was created at 2009-11-11 23:24:15
+Attachment [trac_7417.patch](tarball://root/attachments/some-uuid/ticket7417/trac_7417.patch) by @williamstein created at 2009-11-11 23:24:15
 
 
 
@@ -361,7 +361,7 @@ archive/issue_comments_062411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7417",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7417#issuecomment-62411",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -379,7 +379,7 @@ archive/issue_comments_062412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7417",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7417#issuecomment-62412",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -397,7 +397,7 @@ archive/issue_comments_062413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7417",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7417#issuecomment-62413",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -415,7 +415,7 @@ archive/issue_comments_062414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7417",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7417#issuecomment-62414",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

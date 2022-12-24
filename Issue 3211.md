@@ -3,7 +3,7 @@
 archive/issues_003211.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  was kcrisman rbeezer\n\nThe rref() function would copy the matrix to a matrix over the field of fractions of its base ring, then return echelon_form() of the new matrix.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3211\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein @kcrisman @rbeezer\n\nThe rref() function would copy the matrix to a matrix over the field of fractions of its base ring, then return echelon_form() of the new matrix.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3211\n\n",
     "created_at": "2008-05-15T13:43:48Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_003211.json:
     "title": "rref function for matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3211",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  was kcrisman rbeezer
+CC:  @williamstein @kcrisman @rbeezer
 
 The rref() function would copy the matrix to a matrix over the field of fractions of its base ring, then return echelon_form() of the new matrix.
 
@@ -41,7 +41,7 @@ archive/issue_comments_022200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22200",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_022201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22201",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_022202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22202",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_022203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22203",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_022204.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22204",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_022205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22205",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -238,16 +238,16 @@ Changing status from new to assigned.
 archive/issue_comments_022206.json:
 ```json
 {
-    "body": "Changing assignee from was to jason.",
+    "body": "Changing assignee from @williamstein to @jasongrout.",
     "created_at": "2008-12-06T07:26:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22206",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from was to jason.
+Changing assignee from @williamstein to @jasongrout.
 
 
 
@@ -261,7 +261,7 @@ archive/issue_comments_022207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22207",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_022208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22208",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -297,7 +297,7 @@ archive/issue_comments_022209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22209",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -310,16 +310,16 @@ Also, I've been working (yet again) on a patch...
 archive/issue_comments_022210.json:
 ```json
 {
-    "body": "Attachment [echelon-hermite.patch](tarball://root/attachments/some-uuid/ticket3211/echelon-hermite.patch) by jason created at 2009-10-01 08:07:22\n\nunfinished",
+    "body": "Attachment [echelon-hermite.patch](tarball://root/attachments/some-uuid/ticket3211/echelon-hermite.patch) by @jasongrout created at 2009-10-01 08:07:22\n\nunfinished",
     "created_at": "2009-10-01T08:07:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22210",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [echelon-hermite.patch](tarball://root/attachments/some-uuid/ticket3211/echelon-hermite.patch) by jason created at 2009-10-01 08:07:22
+Attachment [echelon-hermite.patch](tarball://root/attachments/some-uuid/ticket3211/echelon-hermite.patch) by @jasongrout created at 2009-10-01 08:07:22
 
 unfinished
 
@@ -335,7 +335,7 @@ archive/issue_comments_022211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22211",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -348,16 +348,16 @@ I'm attaching the work-in-progress so that it's archived somewhere other than my
 archive/issue_comments_022212.json:
 ```json
 {
-    "body": "Attachment [echelon-hermite-new.patch](tarball://root/attachments/some-uuid/ticket3211/echelon-hermite-new.patch) by jason created at 2009-12-03 14:07:34\n\napply instead of previous patch.",
+    "body": "Attachment [echelon-hermite-new.patch](tarball://root/attachments/some-uuid/ticket3211/echelon-hermite-new.patch) by @jasongrout created at 2009-12-03 14:07:34\n\napply instead of previous patch.",
     "created_at": "2009-12-03T14:07:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22212",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [echelon-hermite-new.patch](tarball://root/attachments/some-uuid/ticket3211/echelon-hermite-new.patch) by jason created at 2009-12-03 14:07:34
+Attachment [echelon-hermite-new.patch](tarball://root/attachments/some-uuid/ticket3211/echelon-hermite-new.patch) by @jasongrout created at 2009-12-03 14:07:34
 
 apply instead of previous patch.
 
@@ -373,7 +373,7 @@ archive/issue_comments_022213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22213",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -386,16 +386,16 @@ apply on top of previous patch
 archive/issue_comments_022214.json:
 ```json
 {
-    "body": "Attachment [echelon-hermite-new2.patch](tarball://root/attachments/some-uuid/ticket3211/echelon-hermite-new2.patch) by jason created at 2009-12-03 14:08:06",
+    "body": "Attachment [echelon-hermite-new2.patch](tarball://root/attachments/some-uuid/ticket3211/echelon-hermite-new2.patch) by @jasongrout created at 2009-12-03 14:08:06",
     "created_at": "2009-12-03T14:08:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22214",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [echelon-hermite-new2.patch](tarball://root/attachments/some-uuid/ticket3211/echelon-hermite-new2.patch) by jason created at 2009-12-03 14:08:06
+Attachment [echelon-hermite-new2.patch](tarball://root/attachments/some-uuid/ticket3211/echelon-hermite-new2.patch) by @jasongrout created at 2009-12-03 14:08:06
 
 
 
@@ -409,7 +409,7 @@ archive/issue_comments_022215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22215",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -427,7 +427,7 @@ archive/issue_comments_022216.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22216",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -440,16 +440,16 @@ apply instead of previous patches
 archive/issue_comments_022217.json:
 ```json
 {
-    "body": "Attachment [trac-3211-hermite-form-4.3.1.rc1.patch](tarball://root/attachments/some-uuid/ticket3211/trac-3211-hermite-form-4.3.1.rc1.patch) by jason created at 2010-01-19 18:55:33\n\nOkay, I've posted a single rebased patch which applies on top of 4.3.1.rc1.",
+    "body": "Attachment [trac-3211-hermite-form-4.3.1.rc1.patch](tarball://root/attachments/some-uuid/ticket3211/trac-3211-hermite-form-4.3.1.rc1.patch) by @jasongrout created at 2010-01-19 18:55:33\n\nOkay, I've posted a single rebased patch which applies on top of 4.3.1.rc1.",
     "created_at": "2010-01-19T18:55:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22217",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-3211-hermite-form-4.3.1.rc1.patch](tarball://root/attachments/some-uuid/ticket3211/trac-3211-hermite-form-4.3.1.rc1.patch) by jason created at 2010-01-19 18:55:33
+Attachment [trac-3211-hermite-form-4.3.1.rc1.patch](tarball://root/attachments/some-uuid/ticket3211/trac-3211-hermite-form-4.3.1.rc1.patch) by @jasongrout created at 2010-01-19 18:55:33
 
 Okay, I've posted a single rebased patch which applies on top of 4.3.1.rc1.
 
@@ -465,7 +465,7 @@ archive/issue_comments_022218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22218",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

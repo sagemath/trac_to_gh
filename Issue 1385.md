@@ -3,7 +3,7 @@
 archive/issues_001385.json:
 ```json
 {
-    "body": "Assignee: was\n\nCurrently the base NumberFieldElement class requires NTL. However, the quadratic number field elements, and (in the future) FLINT-based number field classes won't use NTL at all, but things need to be split out to make this clean. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1385\n\n",
+    "body": "Assignee: @williamstein\n\nCurrently the base NumberFieldElement class requires NTL. However, the quadratic number field elements, and (in the future) FLINT-based number field classes won't use NTL at all, but things need to be split out to make this clean. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1385\n\n",
     "created_at": "2007-12-03T20:32:39Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_001385.json:
     "title": "Re-organize number field element inheritance hierarchy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1385",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Currently the base NumberFieldElement class requires NTL. However, the quadratic number field elements, and (in the future) FLINT-based number field classes won't use NTL at all, but things need to be split out to make this clean. 
 
@@ -37,7 +37,7 @@ archive/issue_comments_008886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1385#issuecomment-8886",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_008887.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-07-20T19:54:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1385#issuecomment-8887",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_008888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1385#issuecomment-8888",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_008889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1385#issuecomment-8889",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_008890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1385#issuecomment-8890",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_008891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1385#issuecomment-8891",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_008892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1385#issuecomment-8892",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_008893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1385#issuecomment-8893",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

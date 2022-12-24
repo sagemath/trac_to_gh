@@ -3,7 +3,7 @@
 archive/issues_008033.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  rkirov\n\n\n```\nHi,\n\nThe new graph editor in sage by Rado is AWESOME.  One can try it\neasily at http://sagenb.org by typing:\n\n g = graphs.CompleteGraph(10)\n graph_editor(g)\n\nThe actual source code is at\n\n  local/lib/python/site-packages/sagenb-0.6-py2.6.egg/sagenb/data/graph_editor/\n\nIt would be *GREAT* if there were a README.txt file in that directory\nthat explained what all the js files actually are, something about how\nthe graph editor works, where the code that does spring layout\ndynamically is located, etc.   I looked at the code for five minutes\nand couldn't deduce answers to any of those questions.\n\nSo, could somebody familiar with the graph editor write something and\npost a patch.  Or just respond to this email with what would go in a\nREADME.txt?   I have two undergrads who might want to work on that\ncode, but it would help a lot of there were some docs.\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8033\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  rkirov\n\n\n```\nHi,\n\nThe new graph editor in sage by Rado is AWESOME.  One can try it\neasily at http://sagenb.org by typing:\n\n g = graphs.CompleteGraph(10)\n graph_editor(g)\n\nThe actual source code is at\n\n  local/lib/python/site-packages/sagenb-0.6-py2.6.egg/sagenb/data/graph_editor/\n\nIt would be *GREAT* if there were a README.txt file in that directory\nthat explained what all the js files actually are, something about how\nthe graph editor works, where the code that does spring layout\ndynamically is located, etc.   I looked at the code for five minutes\nand couldn't deduce answers to any of those questions.\n\nSo, could somebody familiar with the graph editor write something and\npost a patch.  Or just respond to this email with what would go in a\nREADME.txt?   I have two undergrads who might want to work on that\ncode, but it would help a lot of there were some docs.\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8033\n\n",
     "created_at": "2010-01-21T22:54:04Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_008033.json:
     "title": "add a README.txt for the graph_editor, to encourage development",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8033",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  rkirov
 
@@ -65,7 +65,7 @@ archive/issue_comments_070167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8033",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8033#issuecomment-70167",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_070171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8033",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8033#issuecomment-70171",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -195,16 +195,16 @@ Various changes.  Replaces previous.  sagenb repo.
 archive/issue_comments_070172.json:
 ```json
 {
-    "body": "Attachment [trac_8033-graph_editor_readme.patch](tarball://root/attachments/some-uuid/ticket8033/trac_8033-graph_editor_readme.patch) by mpatel created at 2010-01-24 21:55:26\n\nI've attached an update with some changes.  Feel free to make further changes!",
+    "body": "Attachment [trac_8033-graph_editor_readme.patch](tarball://root/attachments/some-uuid/ticket8033/trac_8033-graph_editor_readme.patch) by @qed777 created at 2010-01-24 21:55:26\n\nI've attached an update with some changes.  Feel free to make further changes!",
     "created_at": "2010-01-24T21:55:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8033",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8033#issuecomment-70172",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8033-graph_editor_readme.patch](tarball://root/attachments/some-uuid/ticket8033/trac_8033-graph_editor_readme.patch) by mpatel created at 2010-01-24 21:55:26
+Attachment [trac_8033-graph_editor_readme.patch](tarball://root/attachments/some-uuid/ticket8033/trac_8033-graph_editor_readme.patch) by @qed777 created at 2010-01-24 21:55:26
 
 I've attached an update with some changes.  Feel free to make further changes!
 
@@ -220,7 +220,7 @@ archive/issue_comments_070173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8033",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8033#issuecomment-70173",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_070174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8033",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8033#issuecomment-70174",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_070177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8033",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8033#issuecomment-70177",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

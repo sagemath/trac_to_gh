@@ -14,7 +14,7 @@ archive/issues_001751.json:
     "title": "Notebook revision information leakage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1751",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 Assignee: boothby
@@ -44,7 +44,7 @@ archive/issue_comments_011050.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1751#issuecomment-11050",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -62,7 +62,7 @@ archive/issue_comments_011051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1751#issuecomment-11051",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

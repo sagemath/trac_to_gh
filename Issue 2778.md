@@ -3,7 +3,7 @@
 archive/issues_002778.json:
 ```json
 {
-    "body": "Assignee: was\n\nCreate a class that lets us combine SymbolicEquations using logical operators (and, or, not, xor, etc.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2778\n\n",
+    "body": "Assignee: @williamstein\n\nCreate a class that lets us combine SymbolicEquations using logical operators (and, or, not, xor, etc.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2778\n\n",
     "created_at": "2008-04-02T18:48:30Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_002778.json:
     "title": "SymbolicFormula class",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2778",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Create a class that lets us combine SymbolicEquations using logical operators (and, or, not, xor, etc.)
 
@@ -37,7 +37,7 @@ archive/issue_comments_019084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2778#issuecomment-19084",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_019085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2778#issuecomment-19085",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

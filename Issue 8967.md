@@ -3,7 +3,7 @@
 archive/issues_008967.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  mstreng\n\n\n```\nsage: P.<t> = GF(5)[]\nsage: GF(5).extension(t^2 - 2, name='a')\nUnivariate Quotient Polynomial Ring in a over Finite Field of size 5 with modulus a^2 + 3\nsage: F.<a> = GF(5).extension(t^2 - 2)\nTraceback (most recent call last)\n...\nValueError: variable names must be alphanumeric, but one is '('a' which is not.\n```\n\nand\n\n\n```\nsage: GF(5).extension(x^2 - 2, name='a')\nTraceback (most recent call last)\n...\nAttributeError: 'sage.symbolic.expression.Expression' object has no attribute 'list'\n```\n\nThe patch solves both these problems, and provides a more useful error  message for mistakes like `GF(5).extension(\"not_a_poly\", name='a'),` by  splicing in code from the number field version.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8967\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @mstreng\n\n\n```\nsage: P.<t> = GF(5)[]\nsage: GF(5).extension(t^2 - 2, name='a')\nUnivariate Quotient Polynomial Ring in a over Finite Field of size 5 with modulus a^2 + 3\nsage: F.<a> = GF(5).extension(t^2 - 2)\nTraceback (most recent call last)\n...\nValueError: variable names must be alphanumeric, but one is '('a' which is not.\n```\n\nand\n\n\n```\nsage: GF(5).extension(x^2 - 2, name='a')\nTraceback (most recent call last)\n...\nAttributeError: 'sage.symbolic.expression.Expression' object has no attribute 'list'\n```\n\nThe patch solves both these problems, and provides a more useful error  message for mistakes like `GF(5).extension(\"not_a_poly\", name='a'),` by  splicing in code from the number field version.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8967\n\n",
     "created_at": "2010-05-14T18:28:12Z",
     "labels": [
         "algebra",
@@ -17,9 +17,9 @@ archive/issues_008967.json:
     "user": "fwclarke"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  mstreng
+CC:  @mstreng
 
 
 ```
@@ -132,7 +132,7 @@ archive/issue_comments_082648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8967#issuecomment-82648",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_082649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8967#issuecomment-82649",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_082650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8967#issuecomment-82650",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_082651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8967#issuecomment-82651",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_082652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8967#issuecomment-82652",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

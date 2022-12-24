@@ -14,7 +14,7 @@ archive/issues_002815.json:
     "title": "docstring errors in coding/pbori",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2815",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 Assignee: tba
@@ -37,7 +37,7 @@ archive/issue_comments_019325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2815#issuecomment-19325",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -68,16 +68,16 @@ Attachment [9217.patch](tarball://root/attachments/some-uuid/ticket2815/9217.pat
 archive/issue_comments_019327.json:
 ```json
 {
-    "body": "Attachment [511.patch](tarball://root/attachments/some-uuid/ticket2815/511.patch) by wdj created at 2008-04-05 21:35:37\n\ndoc patch based on sage-3.0.alpha0 which adds sections to ref.tex",
+    "body": "Attachment [511.patch](tarball://root/attachments/some-uuid/ticket2815/511.patch) by @wdjoyner created at 2008-04-05 21:35:37\n\ndoc patch based on sage-3.0.alpha0 which adds sections to ref.tex",
     "created_at": "2008-04-05T21:35:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2815#issuecomment-19327",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [511.patch](tarball://root/attachments/some-uuid/ticket2815/511.patch) by wdj created at 2008-04-05 21:35:37
+Attachment [511.patch](tarball://root/attachments/some-uuid/ticket2815/511.patch) by @wdjoyner created at 2008-04-05 21:35:37
 
 doc patch based on sage-3.0.alpha0 which adds sections to ref.tex
 
@@ -93,7 +93,7 @@ archive/issue_comments_019328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2815#issuecomment-19328",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

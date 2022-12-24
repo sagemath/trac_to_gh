@@ -3,7 +3,7 @@
 archive/issues_009972.json:
 ```json
 {
-    "body": "Assignee: jason\n\nCC:  mpatel\n\nIn #9343, all files in the directory `data/extcode/pari/SEA` were removed, but the directory structure is still there.\n\nThere is no patch for this, the release manager should remove the directory manually.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9973\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @qed777\n\nIn #9343, all files in the directory `data/extcode/pari/SEA` were removed, but the directory structure is still there.\n\nThere is no patch for this, the release manager should remove the directory manually.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9973\n\n",
     "created_at": "2010-09-23T08:37:20Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_009972.json:
     "title": "Remove empty directory data/extcode/pari/SEA",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9972",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
-Assignee: jason
+Assignee: @jasongrout
 
-CC:  mpatel
+CC:  @qed777
 
 In #9343, all files in the directory `data/extcode/pari/SEA` were removed, but the directory structure is still there.
 
@@ -41,7 +41,7 @@ archive/issue_comments_100064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9972#issuecomment-100064",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_100067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9972#issuecomment-100067",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_100068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9972#issuecomment-100068",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

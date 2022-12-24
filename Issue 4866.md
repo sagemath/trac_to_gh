@@ -14,7 +14,7 @@ archive/issues_004866.json:
     "title": "hermes optional spkg totally broken in multiple ways",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4866",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -273,7 +273,7 @@ archive/issue_comments_036870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4866#issuecomment-36870",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_036871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4866#issuecomment-36871",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_036872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4866#issuecomment-36872",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_036873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4866#issuecomment-36873",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_036874.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4866#issuecomment-36874",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

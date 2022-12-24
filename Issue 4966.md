@@ -3,7 +3,7 @@
 archive/issues_004966.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  mhansen\n\nThe eMPIRe.spkg is nearly a drop in for the old gmp-4.2.1.spkg. There are a couple doctests to fix (see upcoming patches) and the ecmgmp.spkg also needs a bump since it requires a recompile. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4966\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @mwhansen\n\nThe eMPIRe.spkg is nearly a drop in for the old gmp-4.2.1.spkg. There are a couple doctests to fix (see upcoming patches) and the ecmgmp.spkg also needs a bump since it requires a recompile. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4966\n\n",
     "created_at": "2009-01-12T06:19:49Z",
     "labels": [
         "packages: standard",
@@ -19,7 +19,7 @@ archive/issues_004966.json:
 ```
 Assignee: mabshoff
 
-CC:  mhansen
+CC:  @mwhansen
 
 The eMPIRe.spkg is nearly a drop in for the old gmp-4.2.1.spkg. There are a couple doctests to fix (see upcoming patches) and the ecmgmp.spkg also needs a bump since it requires a recompile. 
 
@@ -142,7 +142,7 @@ archive/issue_comments_037794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4966#issuecomment-37794",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

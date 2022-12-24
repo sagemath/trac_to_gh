@@ -3,7 +3,7 @@
 archive/issues_001994.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  malb robertwb\n\nThere are some issues with cython spyx files:\n\n1. There is *still* nothing in the documentation anywhere in sage about cinclude, clib, etc.  Here's a hint:\n\n```\nBasically you put\n# clang c\n# clib  cblas\n# cfile myfile.c\n# cinclude super.h standard.h\n```\n\nQuestions -- where can one put these?   Must the # be there?  \nHowever this is documented, at a bare minimum typing \n\n```\nsage: cython?\nsage: load?\nsage: attach?\n```\n\nshould give enough information to find docs that clearly explain this cinclude, etc. directives. \n\n2. Create a file a.pxi and a file b.pyx.  Put one of the # directives in the .pxi file and include the pxi file in the pyx file.  The directive is ignored.  This caused a ton of confusion today.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1994\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @malb @robertwb\n\nThere are some issues with cython spyx files:\n\n1. There is *still* nothing in the documentation anywhere in sage about cinclude, clib, etc.  Here's a hint:\n\n```\nBasically you put\n# clang c\n# clib  cblas\n# cfile myfile.c\n# cinclude super.h standard.h\n```\n\nQuestions -- where can one put these?   Must the # be there?  \nHowever this is documented, at a bare minimum typing \n\n```\nsage: cython?\nsage: load?\nsage: attach?\n```\n\nshould give enough information to find docs that clearly explain this cinclude, etc. directives. \n\n2. Create a file a.pxi and a file b.pyx.  Put one of the # directives in the .pxi file and include the pxi file in the pyx file.  The directive is ignored.  This caused a ton of confusion today.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1994\n\n",
     "created_at": "2008-01-31T04:34:13Z",
     "labels": [
         "user interface",
@@ -14,12 +14,12 @@ archive/issues_001994.json:
     "title": "cython spyx files -- cinclude, clib, issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1994",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  malb robertwb
+CC:  @malb @robertwb
 
 There are some issues with cython spyx files:
 
@@ -62,7 +62,7 @@ archive/issue_comments_012902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1994#issuecomment-12902",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_012904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1994#issuecomment-12904",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_012905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1994#issuecomment-12905",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_012906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1994#issuecomment-12906",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_012907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1994#issuecomment-12907",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_012908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1994#issuecomment-12908",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_012909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1994#issuecomment-12909",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_012910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1994",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1994#issuecomment-12910",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

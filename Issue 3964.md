@@ -3,7 +3,7 @@
 archive/issues_003964.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: projective space morphism\n\nAlex Ghitsa reported:\n\n```\nI am fairly certain the following two things are bugs, but I want to\ndouble-check that I'm not doing something stupid before submitting a ticket:\n\nsage: R.<x,y> = QQ[]\nsage: P1 = ProjectiveSpace(R)\nsage: H = P1.Hom(P1)\nsage: f = H([x-y, x*y])\nsage: f\n\nScheme endomorphism of Projective Space of dimension 1 over Rational Field\n Defn: Defined on coordinates by sending (x : y) to\n       (x - y : x*y)\n\n\nThis is nonsense: there is no morphism from P1 to P1 given by those\nequations, since the two polynomials x-y and x*y are not homogeneous of\nthe same degree.  I think Sage should throw a ValueError here.\n\nThe second example:\n\nsage: R.<x,y> = QQ[]\nsage: P1 = ProjectiveSpace(R)\nsage: H = P1.Hom(P1)\nsage: f = H([x^2, x*y])\nsage: f\n\nScheme endomorphism of Projective Space of dimension 1 over Rational Field\n Defn: Defined on coordinates by sending (x : y) to\n       (x^2 : x*y)\n\n\nThis is also bad: the two polynomials are now homogeneous of degree 2,\nbut they are not relatively prime (and so this is not a morphism from P1\nto P1, but rather a rational map since it is not defined at (0 : y)).  I\nthink Sage should also throw a ValueError here.\n\n(Or maybe I'm doing things wrong, in which case I'd love to find out how\nto make this work.)\n```\n\n\nto which John Cremona added:\n\n```\nYou are definitely right.  The problem lies (as far as I can see) in\nsage.schemes.generic in the __init__ funtion of class\nSchemeMorphism_on_points_projective_space.  (I only found this out by\ntring to construct a morphism from P^1 to P^1 using 3 polynomials,\nwhich did raise an error in this very function.)\n\nIt appears that the only check this function does is that the number\nof polys is correct.  It does not check that they are actually polys,\nor have the right number of variables, let alone that they are coprime\nand homogeneous of the same degree:\n\nsage: S.<u,v,w> = QQ[]\nsage: f = H([u,v])\nsage: f = H([u*v*w,u+v+w])\nsage: f = H([exp(u),exp(v)])\nsage: f\n\nScheme endomorphism of Projective Space of dimension 1 over Rational Field\n Defn: Defined on coordinates by sending (x : y) to\n       (e^u : e^v)\n\nwith H as in your example.\n\nThis definitely deserves a ticket, which I will create. now.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3964\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: projective space morphism\n\nAlex Ghitsa reported:\n\n```\nI am fairly certain the following two things are bugs, but I want to\ndouble-check that I'm not doing something stupid before submitting a ticket:\n\nsage: R.<x,y> = QQ[]\nsage: P1 = ProjectiveSpace(R)\nsage: H = P1.Hom(P1)\nsage: f = H([x-y, x*y])\nsage: f\n\nScheme endomorphism of Projective Space of dimension 1 over Rational Field\n Defn: Defined on coordinates by sending (x : y) to\n       (x - y : x*y)\n\n\nThis is nonsense: there is no morphism from P1 to P1 given by those\nequations, since the two polynomials x-y and x*y are not homogeneous of\nthe same degree.  I think Sage should throw a ValueError here.\n\nThe second example:\n\nsage: R.<x,y> = QQ[]\nsage: P1 = ProjectiveSpace(R)\nsage: H = P1.Hom(P1)\nsage: f = H([x^2, x*y])\nsage: f\n\nScheme endomorphism of Projective Space of dimension 1 over Rational Field\n Defn: Defined on coordinates by sending (x : y) to\n       (x^2 : x*y)\n\n\nThis is also bad: the two polynomials are now homogeneous of degree 2,\nbut they are not relatively prime (and so this is not a morphism from P1\nto P1, but rather a rational map since it is not defined at (0 : y)).  I\nthink Sage should also throw a ValueError here.\n\n(Or maybe I'm doing things wrong, in which case I'd love to find out how\nto make this work.)\n```\n\n\nto which John Cremona added:\n\n```\nYou are definitely right.  The problem lies (as far as I can see) in\nsage.schemes.generic in the __init__ funtion of class\nSchemeMorphism_on_points_projective_space.  (I only found this out by\ntring to construct a morphism from P^1 to P^1 using 3 polynomials,\nwhich did raise an error in this very function.)\n\nIt appears that the only check this function does is that the number\nof polys is correct.  It does not check that they are actually polys,\nor have the right number of variables, let alone that they are coprime\nand homogeneous of the same degree:\n\nsage: S.<u,v,w> = QQ[]\nsage: f = H([u,v])\nsage: f = H([u*v*w,u+v+w])\nsage: f = H([exp(u),exp(v)])\nsage: f\n\nScheme endomorphism of Projective Space of dimension 1 over Rational Field\n Defn: Defined on coordinates by sending (x : y) to\n       (e^u : e^v)\n\nwith H as in your example.\n\nThis definitely deserves a ticket, which I will create. now.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3964\n\n",
     "created_at": "2008-08-27T09:06:09Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_003964.json:
     "title": "projective space homs do not check arguments sufficiently",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3964",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: projective space morphism
 
@@ -111,7 +111,7 @@ archive/issue_comments_028474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3964#issuecomment-28474",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -124,16 +124,16 @@ I finally got around to fixing this.  The attached patch fixes the issues report
 archive/issue_comments_028475.json:
 ```json
 {
-    "body": "Attachment [trac_3964.patch](tarball://root/attachments/some-uuid/ticket3964/trac_3964.patch) by AlexGhitza created at 2008-12-21 10:27:59",
+    "body": "Attachment [trac_3964.patch](tarball://root/attachments/some-uuid/ticket3964/trac_3964.patch) by @aghitza created at 2008-12-21 10:27:59",
     "created_at": "2008-12-21T10:27:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3964#issuecomment-28475",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_3964.patch](tarball://root/attachments/some-uuid/ticket3964/trac_3964.patch) by AlexGhitza created at 2008-12-21 10:27:59
+Attachment [trac_3964.patch](tarball://root/attachments/some-uuid/ticket3964/trac_3964.patch) by @aghitza created at 2008-12-21 10:27:59
 
 
 
@@ -147,7 +147,7 @@ archive/issue_comments_028476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3964#issuecomment-28476",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_028477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3964#issuecomment-28477",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -178,16 +178,16 @@ Good point.  I will implement this and submit a new patch.  I also just realized
 archive/issue_comments_028478.json:
 ```json
 {
-    "body": "Changing assignee from was to AlexGhitza.",
+    "body": "Changing assignee from @williamstein to @aghitza.",
     "created_at": "2009-03-29T08:18:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3964#issuecomment-28478",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from was to AlexGhitza.
+Changing assignee from @williamstein to @aghitza.
 
 
 
@@ -201,7 +201,7 @@ archive/issue_comments_028479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3964#issuecomment-28479",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_028480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3964#issuecomment-28480",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -232,16 +232,16 @@ apply this (not the previous one).
 archive/issue_comments_028481.json:
 ```json
 {
-    "body": "Attachment [trac_3964-rebased_and_extended.patch](tarball://root/attachments/some-uuid/ticket3964/trac_3964-rebased_and_extended.patch) by was created at 2010-01-17 08:59:26",
+    "body": "Attachment [trac_3964-rebased_and_extended.patch](tarball://root/attachments/some-uuid/ticket3964/trac_3964-rebased_and_extended.patch) by @williamstein created at 2010-01-17 08:59:26",
     "created_at": "2010-01-17T08:59:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3964#issuecomment-28481",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_3964-rebased_and_extended.patch](tarball://root/attachments/some-uuid/ticket3964/trac_3964-rebased_and_extended.patch) by was created at 2010-01-17 08:59:26
+Attachment [trac_3964-rebased_and_extended.patch](tarball://root/attachments/some-uuid/ticket3964/trac_3964-rebased_and_extended.patch) by @williamstein created at 2010-01-17 08:59:26
 
 
 
@@ -255,7 +255,7 @@ archive/issue_comments_028482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3964#issuecomment-28482",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_028483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3964#issuecomment-28483",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_028484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3964#issuecomment-28484",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_028485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3964#issuecomment-28485",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_028486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3964#issuecomment-28486",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -363,7 +363,7 @@ archive/issue_comments_028487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3964#issuecomment-28487",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

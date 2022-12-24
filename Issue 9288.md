@@ -3,7 +3,7 @@
 archive/issues_009288.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  sage-combinat\n\n\n```\n    sage: ComplexReflectionGroup(1,1,5)\n    WeylGroup of type A4\n\n    sage: W = ComplexReflectionGroup(33); W\n    returns the 33 rd exceptional group\n\n    sage: W.diagram()\n```\n\n\nNote: the current implementation of Coxeter groups is in principle\ndesigned to open the door for such generalizations; see in particular\nthe WeylGroup code for Coxeter groups implemented in terms of matrix\ngroups.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9288\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\n\n```\n    sage: ComplexReflectionGroup(1,1,5)\n    WeylGroup of type A4\n\n    sage: W = ComplexReflectionGroup(33); W\n    returns the 33 rd exceptional group\n\n    sage: W.diagram()\n```\n\n\nNote: the current implementation of Coxeter groups is in principle\ndesigned to open the door for such generalizations; see in particular\nthe WeylGroup code for Coxeter groups implemented in terms of matrix\ngroups.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9288\n\n",
     "created_at": "2010-06-21T07:26:13Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_009288.json:
     "title": "Implement complex reflection groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9288",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 CC:  sage-combinat
 
@@ -55,7 +55,7 @@ archive/issue_comments_087480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9288#issuecomment-87480",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_087481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9288#issuecomment-87481",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_087482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9288#issuecomment-87482",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_087484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9288#issuecomment-87484",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

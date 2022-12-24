@@ -14,7 +14,7 @@ archive/issues_002979.json:
     "title": "clisp -- try to build using -O2; if that fails try again but using -O0.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2979",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -37,7 +37,7 @@ archive/issue_comments_020517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2979#issuecomment-20517",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -56,7 +56,7 @@ archive/issue_comments_020518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2979#issuecomment-20518",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_020519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2979#issuecomment-20519",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_020520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2979#issuecomment-20520",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

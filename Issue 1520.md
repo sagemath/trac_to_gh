@@ -14,7 +14,7 @@ archive/issues_001520.json:
     "title": "prebuilt 2.9-alpha7 osx ppc binary has hardcoded paths",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1520",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 Assignee: mabshoff

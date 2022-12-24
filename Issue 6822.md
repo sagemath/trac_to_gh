@@ -3,7 +3,7 @@
 archive/issues_006822.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jhpalmieri\n\nFollowup to #4504. Maybe we should ship .txt rather than .spkg placeholders, and update the build system to understand them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6822\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jhpalmieri\n\nFollowup to #4504. Maybe we should ship .txt rather than .spkg placeholders, and update the build system to understand them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6822\n\n",
     "created_at": "2009-08-25T04:46:21Z",
     "labels": [
         "distribution",
@@ -13,12 +13,12 @@ archive/issues_006822.json:
     "title": "\"empty\" .spkg files in binary builds confusing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6822",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tbd
 
-CC:  jhpalmieri
+CC:  @jhpalmieri
 
 Followup to #4504. Maybe we should ship .txt rather than .spkg placeholders, and update the build system to understand them.
 
@@ -51,16 +51,16 @@ See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/th
 archive/issue_comments_056262.json:
 ```json
 {
-    "body": "Attachment [trac_6822-root.patch](tarball://root/attachments/some-uuid/ticket6822/trac_6822-root.patch) by jhpalmieri created at 2012-10-05 23:58:36",
+    "body": "Attachment [trac_6822-root.patch](tarball://root/attachments/some-uuid/ticket6822/trac_6822-root.patch) by @jhpalmieri created at 2012-10-05 23:58:36",
     "created_at": "2012-10-05T23:58:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6822#issuecomment-56262",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_6822-root.patch](tarball://root/attachments/some-uuid/ticket6822/trac_6822-root.patch) by jhpalmieri created at 2012-10-05 23:58:36
+Attachment [trac_6822-root.patch](tarball://root/attachments/some-uuid/ticket6822/trac_6822-root.patch) by @jhpalmieri created at 2012-10-05 23:58:36
 
 
 
@@ -69,16 +69,16 @@ Attachment [trac_6822-root.patch](tarball://root/attachments/some-uuid/ticket682
 archive/issue_comments_056263.json:
 ```json
 {
-    "body": "Attachment [trac_6822-scripts.patch](tarball://root/attachments/some-uuid/ticket6822/trac_6822-scripts.patch) by jhpalmieri created at 2012-10-05 23:58:44",
+    "body": "Attachment [trac_6822-scripts.patch](tarball://root/attachments/some-uuid/ticket6822/trac_6822-scripts.patch) by @jhpalmieri created at 2012-10-05 23:58:44",
     "created_at": "2012-10-05T23:58:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6822#issuecomment-56263",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_6822-scripts.patch](tarball://root/attachments/some-uuid/ticket6822/trac_6822-scripts.patch) by jhpalmieri created at 2012-10-05 23:58:44
+Attachment [trac_6822-scripts.patch](tarball://root/attachments/some-uuid/ticket6822/trac_6822-scripts.patch) by @jhpalmieri created at 2012-10-05 23:58:44
 
 
 
@@ -92,7 +92,7 @@ archive/issue_comments_056264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6822#issuecomment-56264",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_056265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6822#issuecomment-56265",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_056266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6822#issuecomment-56266",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_056267.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6822#issuecomment-56267",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_056268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6822#issuecomment-56268",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_056269.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6822#issuecomment-56269",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

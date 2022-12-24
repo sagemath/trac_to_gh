@@ -3,7 +3,7 @@
 archive/issues_002928.json:
 ```json
 {
-    "body": "Assignee: roed\n\n\n```\nK.<b> = Qp(13).extension(x^2+x-1)\nfatal error:\n   internal error: can't grow this _ntl_gbigint\nexit...\n/Users/robert/sage/current/local/bin/sage-sage: line 357: 18024 Abort\ntrap              python \"$@\"\n```\n\n\nApplying the patches from #2843 didn't fix this. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2928\n\n",
+    "body": "Assignee: @roed314\n\n\n```\nK.<b> = Qp(13).extension(x^2+x-1)\nfatal error:\n   internal error: can't grow this _ntl_gbigint\nexit...\n/Users/robert/sage/current/local/bin/sage-sage: line 357: 18024 Abort\ntrap              python \"$@\"\n```\n\n\nApplying the patches from #2843 didn't fix this. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2928\n\n",
     "created_at": "2008-04-15T05:49:17Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_002928.json:
     "title": "another p-adic extension segfault",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2928",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: roed
+Assignee: @roed314
 
 
 ```
@@ -84,7 +84,7 @@ archive/issue_comments_020155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2928#issuecomment-20155",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_020156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2928#issuecomment-20156",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_020157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2928#issuecomment-20157",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_020158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2928#issuecomment-20158",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_020159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2928#issuecomment-20159",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_020160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2928#issuecomment-20160",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_020161.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2928#issuecomment-20161",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -215,16 +215,16 @@ To expand on this a little bit, I think that the right way to fix it is making `
 archive/issue_comments_020162.json:
 ```json
 {
-    "body": "Attachment [padics_tmp_coeff_size.patch](tarball://root/attachments/some-uuid/ticket2928/padics_tmp_coeff_size.patch) by wjp created at 2008-04-20 13:19:25",
+    "body": "Attachment [padics_tmp_coeff_size.patch](tarball://root/attachments/some-uuid/ticket2928/padics_tmp_coeff_size.patch) by @wjp created at 2008-04-20 13:19:25",
     "created_at": "2008-04-20T13:19:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2928#issuecomment-20162",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [padics_tmp_coeff_size.patch](tarball://root/attachments/some-uuid/ticket2928/padics_tmp_coeff_size.patch) by wjp created at 2008-04-20 13:19:25
+Attachment [padics_tmp_coeff_size.patch](tarball://root/attachments/some-uuid/ticket2928/padics_tmp_coeff_size.patch) by @wjp created at 2008-04-20 13:19:25
 
 
 
@@ -233,16 +233,16 @@ Attachment [padics_tmp_coeff_size.patch](tarball://root/attachments/some-uuid/ti
 archive/issue_comments_020163.json:
 ```json
 {
-    "body": "Attachment [padics_tmp_coeff_size.2.patch](tarball://root/attachments/some-uuid/ticket2928/padics_tmp_coeff_size.2.patch) by wjp created at 2008-04-20 13:39:07",
+    "body": "Attachment [padics_tmp_coeff_size.2.patch](tarball://root/attachments/some-uuid/ticket2928/padics_tmp_coeff_size.2.patch) by @wjp created at 2008-04-20 13:39:07",
     "created_at": "2008-04-20T13:39:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2928#issuecomment-20163",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [padics_tmp_coeff_size.2.patch](tarball://root/attachments/some-uuid/ticket2928/padics_tmp_coeff_size.2.patch) by wjp created at 2008-04-20 13:39:07
+Attachment [padics_tmp_coeff_size.2.patch](tarball://root/attachments/some-uuid/ticket2928/padics_tmp_coeff_size.2.patch) by @wjp created at 2008-04-20 13:39:07
 
 
 
@@ -256,7 +256,7 @@ archive/issue_comments_020164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2928#issuecomment-20164",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -278,7 +278,7 @@ archive/issue_comments_020165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2928#issuecomment-20165",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 

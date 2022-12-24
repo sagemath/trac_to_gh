@@ -3,7 +3,7 @@
 archive/issues_008384.json:
 ```json
 {
-    "body": "Assignee: schilly\n\nCC:  jdemeyer\n\nThe web page http://wiki.sagemath.org/SageDays is not coherent with\nhttp://wiki.sagemath.org/MyStartingPage#sagedays: the former only\nmentions SD24 in the upcoming events, and mentions the out-dated\n`Sage Days ?? -- Cambridge, MA (dates TBA, but sometime in fall 2009)`\nwhereas the later mentions up to SD26, and points to yet another\npage http://wiki.sagemath.org/Workshops!\n\nIssue created by migration from https://trac.sagemath.org/ticket/8384\n\n",
+    "body": "Assignee: @haraldschilly\n\nCC:  @jdemeyer\n\nThe web page http://wiki.sagemath.org/SageDays is not coherent with\nhttp://wiki.sagemath.org/MyStartingPage#sagedays: the former only\nmentions SD24 in the upcoming events, and mentions the out-dated\n`Sage Days ?? -- Cambridge, MA (dates TBA, but sometime in fall 2009)`\nwhereas the later mentions up to SD26, and points to yet another\npage http://wiki.sagemath.org/Workshops!\n\nIssue created by migration from https://trac.sagemath.org/ticket/8384\n\n",
     "created_at": "2010-02-26T23:33:11Z",
     "labels": [
         "website/wiki",
@@ -14,12 +14,12 @@ archive/issues_008384.json:
     "title": "incoherent web pages",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8384",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: schilly
+Assignee: @haraldschilly
 
-CC:  jdemeyer
+CC:  @jdemeyer
 
 The web page http://wiki.sagemath.org/SageDays is not coherent with
 http://wiki.sagemath.org/MyStartingPage#sagedays: the former only
@@ -44,7 +44,7 @@ archive/issue_comments_074997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8384#issuecomment-74997",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -62,7 +62,7 @@ archive/issue_comments_074998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8384#issuecomment-74998",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_074999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8384#issuecomment-74999",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_075000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8384#issuecomment-75000",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_075001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8384#issuecomment-75001",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_075002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8384#issuecomment-75002",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -37,16 +37,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/166
 archive/issue_comments_000745.json:
 ```json
 {
-    "body": "Attachment [1788.patch](tarball://root/attachments/some-uuid/ticket166/1788.patch) by was created at 2006-11-06 07:44:05\n\npatch that fixes the bug",
+    "body": "Attachment [1788.patch](tarball://root/attachments/some-uuid/ticket166/1788.patch) by @williamstein created at 2006-11-06 07:44:05\n\npatch that fixes the bug",
     "created_at": "2006-11-06T07:44:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/166",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/166#issuecomment-745",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [1788.patch](tarball://root/attachments/some-uuid/ticket166/1788.patch) by was created at 2006-11-06 07:44:05
+Attachment [1788.patch](tarball://root/attachments/some-uuid/ticket166/1788.patch) by @williamstein created at 2006-11-06 07:44:05
 
 patch that fixes the bug
 
@@ -62,7 +62,7 @@ archive/issue_comments_000746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/166",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/166#issuecomment-746",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_000747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/166",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/166#issuecomment-747",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

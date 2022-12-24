@@ -3,7 +3,7 @@
 archive/issues_007644.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  fwclarke\n\nMake the following work over any base ring:\n\n```\nsage: R.<x> = QQ[[]]\nsage: f = 1/(1-x) - 1; f\nx + x^2 + x^3 + x^4 + x^5 + x^6 + x^7 + x^8 + x^9 + x^10 + x^11 + x^12\n+ x^13 + x^14 + x^15 + x^16 + x^17 + x^18 + x^19 + O(x^20)\nsage: g = f.reversion(); g\nx - x^2 + x^3 - x^4 + x^5 - x^6 + x^7 - x^8 + x^9 - x^10 + x^11 - x^12\n+ x^13 - x^14 + x^15 - x^16 + x^17 - x^18 + x^19 + O(x^20)\nsage: f(g)\nx + O(x^20)\n```\n\n\nMatt Bainbridge says about power series reversion, which uses pari in some cases, and maybe isn't there in others:\n\n```\nIts easy enough to code this in sage.  This seems to work over any\nfield:\n\n\ndef ps_inverse(f):\n   if f.prec() is infinity:\n       raise ValueError, \"series must have finite precision for\nreversion\"\n   if f.valuation() != 1:\n       raise ValueError, \"series must have valuation one for\nreversion\"\n   t = parent(f).gen()\n   a = 1/f.coefficients()[0]\n   g = a*t\n   for i in range(2, f.prec()):\n       g -=  ps_coefficient((f + O(t^(i+1)))(g),i)*a*t^i\n   g += O(t^f.prec())\n   return g\n\ndef ps_coefficient(f,i):\n   if i >= f.prec():\n       raise ValueError, \"that coefficient is undefined\"\n   else:\n       return f.padded_list(f.prec())[i]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7644\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  fwclarke\n\nMake the following work over any base ring:\n\n```\nsage: R.<x> = QQ[[]]\nsage: f = 1/(1-x) - 1; f\nx + x^2 + x^3 + x^4 + x^5 + x^6 + x^7 + x^8 + x^9 + x^10 + x^11 + x^12\n+ x^13 + x^14 + x^15 + x^16 + x^17 + x^18 + x^19 + O(x^20)\nsage: g = f.reversion(); g\nx - x^2 + x^3 - x^4 + x^5 - x^6 + x^7 - x^8 + x^9 - x^10 + x^11 - x^12\n+ x^13 - x^14 + x^15 - x^16 + x^17 - x^18 + x^19 + O(x^20)\nsage: f(g)\nx + O(x^20)\n```\n\n\nMatt Bainbridge says about power series reversion, which uses pari in some cases, and maybe isn't there in others:\n\n```\nIts easy enough to code this in sage.  This seems to work over any\nfield:\n\n\ndef ps_inverse(f):\n   if f.prec() is infinity:\n       raise ValueError, \"series must have finite precision for\nreversion\"\n   if f.valuation() != 1:\n       raise ValueError, \"series must have valuation one for\nreversion\"\n   t = parent(f).gen()\n   a = 1/f.coefficients()[0]\n   g = a*t\n   for i in range(2, f.prec()):\n       g -=  ps_coefficient((f + O(t^(i+1)))(g),i)*a*t^i\n   g += O(t^f.prec())\n   return g\n\ndef ps_coefficient(f,i):\n   if i >= f.prec():\n       raise ValueError, \"that coefficient is undefined\"\n   else:\n       return f.padded_list(f.prec())[i]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7644\n\n",
     "created_at": "2009-12-09T20:20:14Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_007644.json:
     "title": "generic power series reversion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7644",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 CC:  fwclarke
 
@@ -129,7 +129,7 @@ archive/issue_comments_065334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7644#issuecomment-65334",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_065335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7644#issuecomment-65335",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_065337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7644#issuecomment-65337",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_065338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7644#issuecomment-65338",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_065339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7644#issuecomment-65339",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_065340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7644#issuecomment-65340",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_065341.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7644#issuecomment-65341",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -360,7 +360,7 @@ archive/issue_comments_065343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7644#issuecomment-65343",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -373,16 +373,16 @@ apply only this patch; tries to use pari first, then falls back to Lagrange inve
 archive/issue_comments_065344.json:
 ```json
 {
-    "body": "Attachment [trac_7644_reversion_lagrange_3.patch](tarball://root/attachments/some-uuid/ticket7644/trac_7644_reversion_lagrange_3.patch) by niles created at 2010-12-01 02:44:53\n\nReplying to [comment:10 fwclarke]:\n> I've been looking at this.  \n\nThanks!\n\n> One concern is that for power series with rational coefficients the existing method using pari is a great deal faster, so that at least in this case the pari method should be retained.  \n\nYes, especially if there is work in progress to support converting more rings to pari.  I wrote a revised patch which first attempts to convert to pari and do reversion there, and then tries the Lagrange inversion if conversion to pari fails.  I think that implementation means that this patch can be independent of #4376 -- it will simply perform better when that patch is included.\n\n\n> I also think it is sensible to be able to revert infinite precision series, either by specifying the desired precision or by using the parent's default precision.  \n\nYes, upon further consideration I agree.  I've made this and two other improvements:\n\n1. Given a power series with infinite precision and degree `deg`, it's reversion is computed with precision `deg + 1`.\n2. Given a power series whose leading coefficient is not a unit, the code tries to pass to the fraction field of the base ring and compute the reversion there.\n3. Given a power series over a base ring of positive characteristic, the code tries to lift to a characteristic zero base (using `.lift()`), compute the reversion, and then push back down to the positive characteristic base.  This works over finite fields and `Zmod(n)`, but fails over a base ring like `Zmod(n)[x]`.\n\nEach of these is demonstrated with an example.",
+    "body": "Attachment [trac_7644_reversion_lagrange_3.patch](tarball://root/attachments/some-uuid/ticket7644/trac_7644_reversion_lagrange_3.patch) by @nilesjohnson created at 2010-12-01 02:44:53\n\nReplying to [comment:10 fwclarke]:\n> I've been looking at this.  \n\nThanks!\n\n> One concern is that for power series with rational coefficients the existing method using pari is a great deal faster, so that at least in this case the pari method should be retained.  \n\nYes, especially if there is work in progress to support converting more rings to pari.  I wrote a revised patch which first attempts to convert to pari and do reversion there, and then tries the Lagrange inversion if conversion to pari fails.  I think that implementation means that this patch can be independent of #4376 -- it will simply perform better when that patch is included.\n\n\n> I also think it is sensible to be able to revert infinite precision series, either by specifying the desired precision or by using the parent's default precision.  \n\nYes, upon further consideration I agree.  I've made this and two other improvements:\n\n1. Given a power series with infinite precision and degree `deg`, it's reversion is computed with precision `deg + 1`.\n2. Given a power series whose leading coefficient is not a unit, the code tries to pass to the fraction field of the base ring and compute the reversion there.\n3. Given a power series over a base ring of positive characteristic, the code tries to lift to a characteristic zero base (using `.lift()`), compute the reversion, and then push back down to the positive characteristic base.  This works over finite fields and `Zmod(n)`, but fails over a base ring like `Zmod(n)[x]`.\n\nEach of these is demonstrated with an example.",
     "created_at": "2010-12-01T02:44:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7644#issuecomment-65344",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
-Attachment [trac_7644_reversion_lagrange_3.patch](tarball://root/attachments/some-uuid/ticket7644/trac_7644_reversion_lagrange_3.patch) by niles created at 2010-12-01 02:44:53
+Attachment [trac_7644_reversion_lagrange_3.patch](tarball://root/attachments/some-uuid/ticket7644/trac_7644_reversion_lagrange_3.patch) by @nilesjohnson created at 2010-12-01 02:44:53
 
 Replying to [comment:10 fwclarke]:
 > I've been looking at this.  
@@ -440,7 +440,7 @@ archive/issue_comments_065346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7644#issuecomment-65346",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -546,7 +546,7 @@ archive/issue_comments_065348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7644#issuecomment-65348",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -559,16 +559,16 @@ apply only this patch; choice for default precision improved
 archive/issue_comments_065349.json:
 ```json
 {
-    "body": "Attachment [trac_7644_reversion_lagrange_4.patch](tarball://root/attachments/some-uuid/ticket7644/trac_7644_reversion_lagrange_4.patch) by niles created at 2010-12-02 17:06:12\n\nReplying to [comment:14 fwclarke]:\n> Replying to [comment:11 niles]:\n> \n\n> A good point (but it would be nice if #4376 could be reviewed; it's very short).\n\nagreed -- I'll add it to my list\n\n> I don't see the logic for this.  I would suggest ...\n\nthat's a better idea; it's implemented in the new patch",
+    "body": "Attachment [trac_7644_reversion_lagrange_4.patch](tarball://root/attachments/some-uuid/ticket7644/trac_7644_reversion_lagrange_4.patch) by @nilesjohnson created at 2010-12-02 17:06:12\n\nReplying to [comment:14 fwclarke]:\n> Replying to [comment:11 niles]:\n> \n\n> A good point (but it would be nice if #4376 could be reviewed; it's very short).\n\nagreed -- I'll add it to my list\n\n> I don't see the logic for this.  I would suggest ...\n\nthat's a better idea; it's implemented in the new patch",
     "created_at": "2010-12-02T17:06:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7644#issuecomment-65349",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
-Attachment [trac_7644_reversion_lagrange_4.patch](tarball://root/attachments/some-uuid/ticket7644/trac_7644_reversion_lagrange_4.patch) by niles created at 2010-12-02 17:06:12
+Attachment [trac_7644_reversion_lagrange_4.patch](tarball://root/attachments/some-uuid/ticket7644/trac_7644_reversion_lagrange_4.patch) by @nilesjohnson created at 2010-12-02 17:06:12
 
 Replying to [comment:14 fwclarke]:
 > Replying to [comment:11 niles]:
@@ -648,7 +648,7 @@ archive/issue_comments_065351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7644#issuecomment-65351",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -721,7 +721,7 @@ archive/issue_comments_065354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7644#issuecomment-65354",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -739,7 +739,7 @@ archive/issue_comments_065355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7644#issuecomment-65355",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -793,7 +793,7 @@ archive/issue_comments_065358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7644#issuecomment-65358",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -811,7 +811,7 @@ archive/issue_comments_065359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7644#issuecomment-65359",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -829,7 +829,7 @@ archive/issue_comments_065360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7644#issuecomment-65360",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -842,16 +842,16 @@ apply only this patch
 archive/issue_comments_065361.json:
 ```json
 {
-    "body": "Attachment [trac_7644_reversion_lagrange_5.patch](tarball://root/attachments/some-uuid/ticket7644/trac_7644_reversion_lagrange_5.patch) by niles created at 2011-01-13 12:02:45\n\ndone.",
+    "body": "Attachment [trac_7644_reversion_lagrange_5.patch](tarball://root/attachments/some-uuid/ticket7644/trac_7644_reversion_lagrange_5.patch) by @nilesjohnson created at 2011-01-13 12:02:45\n\ndone.",
     "created_at": "2011-01-13T12:02:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7644#issuecomment-65361",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
-Attachment [trac_7644_reversion_lagrange_5.patch](tarball://root/attachments/some-uuid/ticket7644/trac_7644_reversion_lagrange_5.patch) by niles created at 2011-01-13 12:02:45
+Attachment [trac_7644_reversion_lagrange_5.patch](tarball://root/attachments/some-uuid/ticket7644/trac_7644_reversion_lagrange_5.patch) by @nilesjohnson created at 2011-01-13 12:02:45
 
 done.
 
@@ -867,7 +867,7 @@ archive/issue_comments_065362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7644#issuecomment-65362",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -921,7 +921,7 @@ archive/issue_comments_065365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7644#issuecomment-65365",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -939,7 +939,7 @@ archive/issue_comments_065366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7644#issuecomment-65366",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -957,7 +957,7 @@ archive/issue_comments_065367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7644#issuecomment-65367",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -970,16 +970,16 @@ My apologies -- I'll upload a fixed version soon.
 archive/issue_comments_065368.json:
 ```json
 {
-    "body": "Attachment [trac_7644_reversion_lagrange_6.patch](tarball://root/attachments/some-uuid/ticket7644/trac_7644_reversion_lagrange_6.patch) by niles created at 2011-01-19 13:24:56\n\napply only this patch",
+    "body": "Attachment [trac_7644_reversion_lagrange_6.patch](tarball://root/attachments/some-uuid/ticket7644/trac_7644_reversion_lagrange_6.patch) by @nilesjohnson created at 2011-01-19 13:24:56\n\napply only this patch",
     "created_at": "2011-01-19T13:24:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7644#issuecomment-65368",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
-Attachment [trac_7644_reversion_lagrange_6.patch](tarball://root/attachments/some-uuid/ticket7644/trac_7644_reversion_lagrange_6.patch) by niles created at 2011-01-19 13:24:56
+Attachment [trac_7644_reversion_lagrange_6.patch](tarball://root/attachments/some-uuid/ticket7644/trac_7644_reversion_lagrange_6.patch) by @nilesjohnson created at 2011-01-19 13:24:56
 
 apply only this patch
 
@@ -995,7 +995,7 @@ archive/issue_comments_065369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7644#issuecomment-65369",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -1013,7 +1013,7 @@ archive/issue_comments_065370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7644#issuecomment-65370",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -1031,7 +1031,7 @@ archive/issue_comments_065371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7644#issuecomment-65371",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1051,7 +1051,7 @@ archive/issue_comments_065372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7644#issuecomment-65372",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1069,7 +1069,7 @@ archive/issue_comments_065373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7644#issuecomment-65373",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

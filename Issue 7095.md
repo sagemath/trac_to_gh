@@ -14,7 +14,7 @@ archive/issues_007095.json:
     "title": "os x 10.6 port -- numerous mysterious errors caused by weird \"abort trap\" issue",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7095",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -62,7 +62,7 @@ archive/issue_comments_058622.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58622",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_058624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58624",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_058625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58625",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_058627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58627",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_058628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58628",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_058629.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58629",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_058631.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58631",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -385,7 +385,7 @@ archive/issue_comments_058633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58633",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -437,7 +437,7 @@ archive/issue_comments_058635.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58635",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -531,7 +531,7 @@ archive/issue_comments_058637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58637",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -549,7 +549,7 @@ archive/issue_comments_058638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58638",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -574,7 +574,7 @@ archive/issue_comments_058639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58639",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -592,7 +592,7 @@ archive/issue_comments_058640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58640",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -610,7 +610,7 @@ archive/issue_comments_058641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58641",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -727,7 +727,7 @@ archive/issue_comments_058642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58642",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -899,7 +899,7 @@ archive/issue_comments_058644.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58644",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -923,7 +923,7 @@ archive/issue_comments_058645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58645",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -1001,7 +1001,7 @@ archive/issue_comments_058646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58646",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1019,7 +1019,7 @@ archive/issue_comments_058647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58647",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -1041,7 +1041,7 @@ archive/issue_comments_058648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58648",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1068,7 +1068,7 @@ archive/issue_comments_058649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58649",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1132,7 +1132,7 @@ archive/issue_comments_058651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58651",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1150,7 +1150,7 @@ archive/issue_comments_058652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58652",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1170,7 +1170,7 @@ archive/issue_comments_058653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58653",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1269,7 +1269,7 @@ archive/issue_comments_058656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58656",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -1298,7 +1298,7 @@ archive/issue_comments_058657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58657",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -1316,7 +1316,7 @@ archive/issue_comments_058658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58658",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -1329,16 +1329,16 @@ Changing status from new to needs_review.
 archive/issue_comments_058659.json:
 ```json
 {
-    "body": "Attachment [trac_7095.patch](tarball://root/attachments/some-uuid/ticket7095/trac_7095.patch) by craigcitro created at 2010-01-14 20:12:15",
+    "body": "Attachment [trac_7095.patch](tarball://root/attachments/some-uuid/ticket7095/trac_7095.patch) by @craigcitro created at 2010-01-14 20:12:15",
     "created_at": "2010-01-14T20:12:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58659",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac_7095.patch](tarball://root/attachments/some-uuid/ticket7095/trac_7095.patch) by craigcitro created at 2010-01-14 20:12:15
+Attachment [trac_7095.patch](tarball://root/attachments/some-uuid/ticket7095/trac_7095.patch) by @craigcitro created at 2010-01-14 20:12:15
 
 
 
@@ -1352,7 +1352,7 @@ archive/issue_comments_058660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58660",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1369,16 +1369,16 @@ So far, though, everything looks good: I did "sage -f ..." for the two spkg's he
 archive/issue_comments_058661.json:
 ```json
 {
-    "body": "Attachment [trac_7095-ref.patch](tarball://root/attachments/some-uuid/ticket7095/trac_7095-ref.patch) by jhpalmieri created at 2010-01-14 22:49:37\n\napply on top of trac_7095.patch",
+    "body": "Attachment [trac_7095-ref.patch](tarball://root/attachments/some-uuid/ticket7095/trac_7095-ref.patch) by @jhpalmieri created at 2010-01-14 22:49:37\n\napply on top of trac_7095.patch",
     "created_at": "2010-01-14T22:49:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58661",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_7095-ref.patch](tarball://root/attachments/some-uuid/ticket7095/trac_7095-ref.patch) by jhpalmieri created at 2010-01-14 22:49:37
+Attachment [trac_7095-ref.patch](tarball://root/attachments/some-uuid/ticket7095/trac_7095-ref.patch) by @jhpalmieri created at 2010-01-14 22:49:37
 
 apply on top of trac_7095.patch
 
@@ -1389,16 +1389,16 @@ apply on top of trac_7095.patch
 archive/issue_comments_058662.json:
 ```json
 {
-    "body": "Attachment [python-2.6.4.p3.patch](tarball://root/attachments/some-uuid/ticket7095/python-2.6.4.p3.patch) by jhpalmieri created at 2010-01-14 22:49:54\n\nfor reference only; do not apply",
+    "body": "Attachment [python-2.6.4.p3.patch](tarball://root/attachments/some-uuid/ticket7095/python-2.6.4.p3.patch) by @jhpalmieri created at 2010-01-14 22:49:54\n\nfor reference only; do not apply",
     "created_at": "2010-01-14T22:49:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58662",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [python-2.6.4.p3.patch](tarball://root/attachments/some-uuid/ticket7095/python-2.6.4.p3.patch) by jhpalmieri created at 2010-01-14 22:49:54
+Attachment [python-2.6.4.p3.patch](tarball://root/attachments/some-uuid/ticket7095/python-2.6.4.p3.patch) by @jhpalmieri created at 2010-01-14 22:49:54
 
 for reference only; do not apply
 
@@ -1487,7 +1487,7 @@ archive/issue_comments_058666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58666",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1525,7 +1525,7 @@ archive/issue_comments_058667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58667",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1561,7 +1561,7 @@ archive/issue_comments_058669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58669",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1587,7 +1587,7 @@ archive/issue_comments_058670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58670",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -1612,7 +1612,7 @@ archive/issue_comments_058671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58671",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -1630,7 +1630,7 @@ archive/issue_comments_058672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58672",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -1652,7 +1652,7 @@ archive/issue_comments_058673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58673",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -1670,7 +1670,7 @@ archive/issue_comments_058674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58674",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1688,7 +1688,7 @@ archive/issue_comments_058675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58675",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1706,7 +1706,7 @@ archive/issue_comments_058676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58676",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -1724,7 +1724,7 @@ archive/issue_comments_058677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58677",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -1814,7 +1814,7 @@ archive/issue_comments_058680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58680",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1893,7 +1893,7 @@ archive/issue_comments_058683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58683",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -1938,7 +1938,7 @@ archive/issue_comments_058685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58685",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -1974,7 +1974,7 @@ archive/issue_comments_058687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58687",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -1987,16 +1987,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_058688.json:
 ```json
 {
-    "body": "Attachment [sage-scripts_trac_7095.patch](tarball://root/attachments/some-uuid/ticket7095/sage-scripts_trac_7095.patch) by craigcitro created at 2010-01-17 18:11:39\n\nApparently I just forgot to make these changes last night. Anyway, I've attached a patch for the `$SAGE_ROOT/local/bin` repo that puts the changes in `sage-env`, and I've posted a new python spkg (which simply removes those lines) here:\n\n  http://sage.math.washington.edu/home/craigcitro/sage/SPKGs/python-2.6.4.p4.spkg\n\nThis should do it ... famous last words. :) The only problem would be if `sage-env` isn't sourced before we build the python spkg, but I don't think that's the case. (Reality will correct me if I'm wrong.)",
+    "body": "Attachment [sage-scripts_trac_7095.patch](tarball://root/attachments/some-uuid/ticket7095/sage-scripts_trac_7095.patch) by @craigcitro created at 2010-01-17 18:11:39\n\nApparently I just forgot to make these changes last night. Anyway, I've attached a patch for the `$SAGE_ROOT/local/bin` repo that puts the changes in `sage-env`, and I've posted a new python spkg (which simply removes those lines) here:\n\n  http://sage.math.washington.edu/home/craigcitro/sage/SPKGs/python-2.6.4.p4.spkg\n\nThis should do it ... famous last words. :) The only problem would be if `sage-env` isn't sourced before we build the python spkg, but I don't think that's the case. (Reality will correct me if I'm wrong.)",
     "created_at": "2010-01-17T18:11:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58688",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [sage-scripts_trac_7095.patch](tarball://root/attachments/some-uuid/ticket7095/sage-scripts_trac_7095.patch) by craigcitro created at 2010-01-17 18:11:39
+Attachment [sage-scripts_trac_7095.patch](tarball://root/attachments/some-uuid/ticket7095/sage-scripts_trac_7095.patch) by @craigcitro created at 2010-01-17 18:11:39
 
 Apparently I just forgot to make these changes last night. Anyway, I've attached a patch for the `$SAGE_ROOT/local/bin` repo that puts the changes in `sage-env`, and I've posted a new python spkg (which simply removes those lines) here:
 
@@ -2016,7 +2016,7 @@ archive/issue_comments_058689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58689",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -2036,7 +2036,7 @@ archive/issue_comments_058690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58690",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -2049,16 +2049,16 @@ No sweat -- I actually didn't know there was a second copy. (Does sdist and/or b
 archive/issue_comments_058691.json:
 ```json
 {
-    "body": "Attachment [sage-env](tarball://root/attachments/some-uuid/ticket7095/sage-env) by craigcitro created at 2010-01-17 18:37:47\n\nCopy of sage-env that results from the attached sage-scripts patch",
+    "body": "Attachment [sage-env](tarball://root/attachments/some-uuid/ticket7095/sage-env) by @craigcitro created at 2010-01-17 18:37:47\n\nCopy of sage-env that results from the attached sage-scripts patch",
     "created_at": "2010-01-17T18:37:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58691",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [sage-env](tarball://root/attachments/some-uuid/ticket7095/sage-env) by craigcitro created at 2010-01-17 18:37:47
+Attachment [sage-env](tarball://root/attachments/some-uuid/ticket7095/sage-env) by @craigcitro created at 2010-01-17 18:37:47
 
 Copy of sage-env that results from the attached sage-scripts patch
 
@@ -2130,7 +2130,7 @@ archive/issue_comments_058695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58695",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -2157,7 +2157,7 @@ archive/issue_comments_058696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7095#issuecomment-58696",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

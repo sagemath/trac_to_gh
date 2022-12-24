@@ -14,7 +14,7 @@ archive/issues_008851.json:
     "title": "the graphviz doctests use '\\n' for newlines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8851",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_081357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8851",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8851#issuecomment-81357",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_081358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8851",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8851#issuecomment-81358",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_006009.json:
     "title": "Bring plot/text.py to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6009",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: mabshoff
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6009
 archive/issue_comments_047815.json:
 ```json
 {
-    "body": "Attachment [trac_6009.patch](tarball://root/attachments/some-uuid/ticket6009/trac_6009.patch) by kcrisman created at 2009-05-08 19:16:56",
+    "body": "Attachment [trac_6009.patch](tarball://root/attachments/some-uuid/ticket6009/trac_6009.patch) by @kcrisman created at 2009-05-08 19:16:56",
     "created_at": "2009-05-08T19:16:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6009",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6009#issuecomment-47815",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6009.patch](tarball://root/attachments/some-uuid/ticket6009/trac_6009.patch) by kcrisman created at 2009-05-08 19:16:56
+Attachment [trac_6009.patch](tarball://root/attachments/some-uuid/ticket6009/trac_6009.patch) by @kcrisman created at 2009-05-08 19:16:56
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_047816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6009",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6009#issuecomment-47816",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_047817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6009",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6009#issuecomment-47817",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -86,16 +86,16 @@ Changing status from new to assigned.
 archive/issue_comments_047818.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to kcrisman.",
+    "body": "Changing assignee from mabshoff to @kcrisman.",
     "created_at": "2009-05-08T19:25:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6009",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6009#issuecomment-47818",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Changing assignee from mabshoff to kcrisman.
+Changing assignee from mabshoff to @kcrisman.
 
 
 
@@ -109,7 +109,7 @@ archive/issue_comments_047819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6009",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6009#issuecomment-47819",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_047822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6009",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6009#issuecomment-47822",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

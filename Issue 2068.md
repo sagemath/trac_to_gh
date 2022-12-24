@@ -14,7 +14,7 @@ archive/issues_002068.json:
     "title": "zlib -- not picking up the right zlib when building libpng",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2068",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

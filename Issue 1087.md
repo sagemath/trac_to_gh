@@ -3,7 +3,7 @@
 archive/issues_001087.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1087\n\n",
+    "body": "Assignee: @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1087\n\n",
     "created_at": "2007-11-03T20:33:29Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_001087.json:
     "title": "add combinatorics documentation to the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1087",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_006571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1087#issuecomment-6571",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to assigned.
 archive/issue_comments_006572.json:
 ```json
 {
-    "body": "Attachment [1087-sage.patch](tarball://root/attachments/some-uuid/ticket1087/1087-sage.patch) by mhansen created at 2007-11-03 22:12:23",
+    "body": "Attachment [1087-sage.patch](tarball://root/attachments/some-uuid/ticket1087/1087-sage.patch) by @mwhansen created at 2007-11-03 22:12:23",
     "created_at": "2007-11-03T22:12:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1087#issuecomment-6572",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1087-sage.patch](tarball://root/attachments/some-uuid/ticket1087/1087-sage.patch) by mhansen created at 2007-11-03 22:12:23
+Attachment [1087-sage.patch](tarball://root/attachments/some-uuid/ticket1087/1087-sage.patch) by @mwhansen created at 2007-11-03 22:12:23
 
 
 
@@ -68,16 +68,16 @@ Attachment [1087-sage.patch](tarball://root/attachments/some-uuid/ticket1087/108
 archive/issue_comments_006573.json:
 ```json
 {
-    "body": "Attachment [1087-doc.patch.gz](tarball://root/attachments/some-uuid/ticket1087/1087-doc.patch.gz) by mhansen created at 2007-11-03 22:12:53",
+    "body": "Attachment [1087-doc.patch.gz](tarball://root/attachments/some-uuid/ticket1087/1087-doc.patch.gz) by @mwhansen created at 2007-11-03 22:12:53",
     "created_at": "2007-11-03T22:12:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1087#issuecomment-6573",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1087-doc.patch.gz](tarball://root/attachments/some-uuid/ticket1087/1087-doc.patch.gz) by mhansen created at 2007-11-03 22:12:53
+Attachment [1087-doc.patch.gz](tarball://root/attachments/some-uuid/ticket1087/1087-doc.patch.gz) by @mwhansen created at 2007-11-03 22:12:53
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_006574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1087#issuecomment-6574",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_006575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1087#issuecomment-6575",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_006576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1087#issuecomment-6576",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_006577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1087#issuecomment-6577",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_006578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1087#issuecomment-6578",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -322,7 +322,7 @@ archive/issue_comments_006579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1087#issuecomment-6579",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -335,16 +335,16 @@ new combinat.tex
 archive/issue_comments_006580.json:
 ```json
 {
-    "body": "Attachment [combinat.tex](tarball://root/attachments/some-uuid/ticket1087/combinat.tex) by mhansen created at 2007-11-04 00:10:51",
+    "body": "Attachment [combinat.tex](tarball://root/attachments/some-uuid/ticket1087/combinat.tex) by @mwhansen created at 2007-11-04 00:10:51",
     "created_at": "2007-11-04T00:10:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1087#issuecomment-6580",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [combinat.tex](tarball://root/attachments/some-uuid/ticket1087/combinat.tex) by mhansen created at 2007-11-04 00:10:51
+Attachment [combinat.tex](tarball://root/attachments/some-uuid/ticket1087/combinat.tex) by @mwhansen created at 2007-11-04 00:10:51
 
 
 
@@ -353,16 +353,16 @@ Attachment [combinat.tex](tarball://root/attachments/some-uuid/ticket1087/combin
 archive/issue_comments_006581.json:
 ```json
 {
-    "body": "Attachment [1087-combinat.patch](tarball://root/attachments/some-uuid/ticket1087/1087-combinat.patch) by mhansen created at 2007-11-06 06:20:29\n\nI think 108-sage.patch has been applied already.\n\nAll that's left is for the above files to be touched and 1087-combinat.patch to be applied.",
+    "body": "Attachment [1087-combinat.patch](tarball://root/attachments/some-uuid/ticket1087/1087-combinat.patch) by @mwhansen created at 2007-11-06 06:20:29\n\nI think 108-sage.patch has been applied already.\n\nAll that's left is for the above files to be touched and 1087-combinat.patch to be applied.",
     "created_at": "2007-11-06T06:20:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1087#issuecomment-6581",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1087-combinat.patch](tarball://root/attachments/some-uuid/ticket1087/1087-combinat.patch) by mhansen created at 2007-11-06 06:20:29
+Attachment [1087-combinat.patch](tarball://root/attachments/some-uuid/ticket1087/1087-combinat.patch) by @mwhansen created at 2007-11-06 06:20:29
 
 I think 108-sage.patch has been applied already.
 

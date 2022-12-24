@@ -14,7 +14,7 @@ archive/issues_002679.json:
     "title": "sage docs -- get rid of aux, etc., files when packaging up for distribution",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2679",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -45,7 +45,7 @@ archive/issue_comments_018424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2679#issuecomment-18424",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_018425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2679#issuecomment-18425",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

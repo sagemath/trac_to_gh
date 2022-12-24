@@ -14,7 +14,7 @@ archive/issues_000692.json:
     "title": "add form capabilities to sage notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/692",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -84,7 +84,7 @@ archive/issue_comments_003599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/692",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/692#issuecomment-3599",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_003600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/692",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/692#issuecomment-3600",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

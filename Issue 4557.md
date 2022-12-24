@@ -3,7 +3,7 @@
 archive/issues_004557.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nThis is pretty embarrassing.  Apparently a copy-paste error.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4557\n\n",
+    "body": "Assignee: @burcin\n\nThis is pretty embarrassing.  Apparently a copy-paste error.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4557\n\n",
     "created_at": "2008-11-19T22:22:36Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_004557.json:
     "title": "cos._fast_float_ returns math.sin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4557",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 This is pretty embarrassing.  Apparently a copy-paste error.
 
@@ -37,7 +37,7 @@ archive/issue_comments_034146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4557#issuecomment-34146",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -72,16 +72,16 @@ Michael
 archive/issue_comments_034148.json:
 ```json
 {
-    "body": "Attachment [trac-4557-cos-fast_float.patch](tarball://root/attachments/some-uuid/ticket4557/trac-4557-cos-fast_float.patch) by jason created at 2008-11-19 22:33:39\n\nadded doctests.",
+    "body": "Attachment [trac-4557-cos-fast_float.patch](tarball://root/attachments/some-uuid/ticket4557/trac-4557-cos-fast_float.patch) by @jasongrout created at 2008-11-19 22:33:39\n\nadded doctests.",
     "created_at": "2008-11-19T22:33:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4557#issuecomment-34148",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-4557-cos-fast_float.patch](tarball://root/attachments/some-uuid/ticket4557/trac-4557-cos-fast_float.patch) by jason created at 2008-11-19 22:33:39
+Attachment [trac-4557-cos-fast_float.patch](tarball://root/attachments/some-uuid/ticket4557/trac-4557-cos-fast_float.patch) by @jasongrout created at 2008-11-19 22:33:39
 
 added doctests.
 
@@ -119,7 +119,7 @@ archive/issue_comments_034150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4557#issuecomment-34150",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

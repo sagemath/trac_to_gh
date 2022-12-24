@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7217
 archive/issue_comments_059872.json:
 ```json
 {
-    "body": "Attachment [integer_factorization.rst](tarball://root/attachments/some-uuid/ticket7217/integer_factorization.rst) by chapoton created at 2014-07-18 12:50:35",
+    "body": "Attachment [integer_factorization.rst](tarball://root/attachments/some-uuid/ticket7217/integer_factorization.rst) by @fchapoton created at 2014-07-18 12:50:35",
     "created_at": "2014-07-18T12:50:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7217#issuecomment-59872",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [integer_factorization.rst](tarball://root/attachments/some-uuid/ticket7217/integer_factorization.rst) by chapoton created at 2014-07-18 12:50:35
+Attachment [integer_factorization.rst](tarball://root/attachments/some-uuid/ticket7217/integer_factorization.rst) by @fchapoton created at 2014-07-18 12:50:35
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_059873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7217#issuecomment-59873",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_059874.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7217#issuecomment-59874",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_059875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7217#issuecomment-59875",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_059876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7217#issuecomment-59876",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_059877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7217#issuecomment-59877",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

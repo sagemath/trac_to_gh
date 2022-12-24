@@ -14,7 +14,7 @@ archive/issues_001640.json:
     "title": "missing documentation Elliptic Curve - heegner_discriminants",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1640",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 Assignee: tba
@@ -65,16 +65,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1640
 archive/issue_comments_010425.json:
 ```json
 {
-    "body": "Attachment [1640.patch](tarball://root/attachments/some-uuid/ticket1640/1640.patch) by AlexGhitza created at 2008-01-08 11:28:10",
+    "body": "Attachment [1640.patch](tarball://root/attachments/some-uuid/ticket1640/1640.patch) by @aghitza created at 2008-01-08 11:28:10",
     "created_at": "2008-01-08T11:28:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1640#issuecomment-10425",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [1640.patch](tarball://root/attachments/some-uuid/ticket1640/1640.patch) by AlexGhitza created at 2008-01-08 11:28:10
+Attachment [1640.patch](tarball://root/attachments/some-uuid/ticket1640/1640.patch) by @aghitza created at 2008-01-08 11:28:10
 
 
 
@@ -88,7 +88,7 @@ archive/issue_comments_010426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1640#issuecomment-10426",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -101,16 +101,16 @@ Changing component from documentation to algebraic geometry.
 archive/issue_comments_010427.json:
 ```json
 {
-    "body": "Changing assignee from tba to was.",
+    "body": "Changing assignee from tba to @williamstein.",
     "created_at": "2008-01-08T11:28:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1640#issuecomment-10427",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from tba to was.
+Changing assignee from tba to @williamstein.
 
 
 
@@ -124,7 +124,7 @@ archive/issue_comments_010428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1640#issuecomment-10428",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005862.json:
 ```json
 {
-    "body": "Assignee: malb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5862\n\n",
+    "body": "Assignee: @malb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5862\n\n",
     "created_at": "2009-04-23T04:55:58Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_005862.json:
     "title": "os x libsingular -- sage/libsingular segfaults on first creation of a ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5862",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5862
 archive/issue_comments_046305.json:
 ```json
 {
-    "body": "Attachment [trac_5862.patch](tarball://root/attachments/some-uuid/ticket5862/trac_5862.patch) by was created at 2009-04-23 04:56:46",
+    "body": "Attachment [trac_5862.patch](tarball://root/attachments/some-uuid/ticket5862/trac_5862.patch) by @williamstein created at 2009-04-23 04:56:46",
     "created_at": "2009-04-23T04:56:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5862#issuecomment-46305",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5862.patch](tarball://root/attachments/some-uuid/ticket5862/trac_5862.patch) by was created at 2009-04-23 04:56:46
+Attachment [trac_5862.patch](tarball://root/attachments/some-uuid/ticket5862/trac_5862.patch) by @williamstein created at 2009-04-23 04:56:46
 
 
 
@@ -121,7 +121,7 @@ archive/issue_comments_046308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5862#issuecomment-46308",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_046311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5862#issuecomment-46311",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_046312.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5862#issuecomment-46312",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_046313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5862#issuecomment-46313",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -271,16 +271,16 @@ x^20 + y
 archive/issue_comments_046314.json:
 ```json
 {
-    "body": "Attachment [libsingular_osx64.patch](tarball://root/attachments/some-uuid/ticket5862/libsingular_osx64.patch) by malb created at 2009-05-11 19:02:33\n\nremoves linking in static libraries",
+    "body": "Attachment [libsingular_osx64.patch](tarball://root/attachments/some-uuid/ticket5862/libsingular_osx64.patch) by @malb created at 2009-05-11 19:02:33\n\nremoves linking in static libraries",
     "created_at": "2009-05-11T19:02:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5862#issuecomment-46314",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [libsingular_osx64.patch](tarball://root/attachments/some-uuid/ticket5862/libsingular_osx64.patch) by malb created at 2009-05-11 19:02:33
+Attachment [libsingular_osx64.patch](tarball://root/attachments/some-uuid/ticket5862/libsingular_osx64.patch) by @malb created at 2009-05-11 19:02:33
 
 removes linking in static libraries
 
@@ -296,7 +296,7 @@ archive/issue_comments_046315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5862#issuecomment-46315",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_046317.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5862#issuecomment-46317",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

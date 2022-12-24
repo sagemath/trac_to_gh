@@ -3,7 +3,7 @@
 archive/issues_008250.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat\n\nKeywords: ClassCall, descriptor, __classget__\n\nFrom the documentation:\n\n(using this patch) we show how to implement a nested class Foo.Bar\nwith a binding behavior, as if it was a method of Foo: namely for\n``foo`` an instance of ``Foo``, calling ``foo.Bar()`` is equivalent to\n``Foo.Bar(foo)``::\n\n\n```\n            sage: import functools\n            sage: from sage.misc.classcall_metaclass import ClasscallMetaclass\n            sage: class Foo:\n            ...       class Bar(object):\n            ...           __metaclass__ = ClasscallMetaclass\n            ...           @staticmethod\n            ...           def __classget__(cls, instance, owner):\n            ...               print \"calling __classget__\"\n            ...               if instance is None:\n            ...                   return cls\n            ...               return functools.partial(cls, instance)\n            ...           def __init__(self, instance):\n            ...               self.instance = instance\n            sage: foo = Foo()\n            sage: bar = foo.Bar()\n            calling __classget__\n            sage: bar.instance == foo\n            True\n```\n\n\nThis will be used by the upcoming improvements to the functorial constructions in categories\n\nIssue created by migration from https://trac.sagemath.org/ticket/8250\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: ClassCall, descriptor, __classget__\n\nFrom the documentation:\n\n(using this patch) we show how to implement a nested class Foo.Bar\nwith a binding behavior, as if it was a method of Foo: namely for\n``foo`` an instance of ``Foo``, calling ``foo.Bar()`` is equivalent to\n``Foo.Bar(foo)``::\n\n\n```\n            sage: import functools\n            sage: from sage.misc.classcall_metaclass import ClasscallMetaclass\n            sage: class Foo:\n            ...       class Bar(object):\n            ...           __metaclass__ = ClasscallMetaclass\n            ...           @staticmethod\n            ...           def __classget__(cls, instance, owner):\n            ...               print \"calling __classget__\"\n            ...               if instance is None:\n            ...                   return cls\n            ...               return functools.partial(cls, instance)\n            ...           def __init__(self, instance):\n            ...               self.instance = instance\n            sage: foo = Foo()\n            sage: bar = foo.Bar()\n            calling __classget__\n            sage: bar.instance == foo\n            True\n```\n\n\nThis will be used by the upcoming improvements to the functorial constructions in categories\n\nIssue created by migration from https://trac.sagemath.org/ticket/8250\n\n",
     "created_at": "2010-02-12T15:12:34Z",
     "labels": [
         "categories",
@@ -14,10 +14,10 @@ archive/issues_008250.json:
     "title": "Extend ClasscallMetaclass to allow for binding behavior",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8250",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
 CC:  sage-combinat
 
@@ -71,7 +71,7 @@ archive/issue_comments_072975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8250#issuecomment-72975",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_072976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8250#issuecomment-72976",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_072977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8250#issuecomment-72977",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_072978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8250#issuecomment-72978",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_072979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8250#issuecomment-72979",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_072980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8250#issuecomment-72980",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -222,16 +222,16 @@ please see `trac_8250-classcall-classget-review-fh.patch` in combinat's queue. I
 archive/issue_comments_072981.json:
 ```json
 {
-    "body": "Attachment [trac_8250-classcall-classget.patch](tarball://root/attachments/some-uuid/ticket8250/trac_8250-classcall-classget.patch) by nthiery created at 2010-02-13 12:34:31\n\nDocumentation improvements after phone discussion with Florent",
+    "body": "Attachment [trac_8250-classcall-classget.patch](tarball://root/attachments/some-uuid/ticket8250/trac_8250-classcall-classget.patch) by @nthiery created at 2010-02-13 12:34:31\n\nDocumentation improvements after phone discussion with Florent",
     "created_at": "2010-02-13T12:34:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8250#issuecomment-72981",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_8250-classcall-classget.patch](tarball://root/attachments/some-uuid/ticket8250/trac_8250-classcall-classget.patch) by nthiery created at 2010-02-13 12:34:31
+Attachment [trac_8250-classcall-classget.patch](tarball://root/attachments/some-uuid/ticket8250/trac_8250-classcall-classget.patch) by @nthiery created at 2010-02-13 12:34:31
 
 Documentation improvements after phone discussion with Florent
 
@@ -247,7 +247,7 @@ archive/issue_comments_072982.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8250#issuecomment-72982",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_072983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8250#issuecomment-72983",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -284,16 +284,16 @@ I uploaded a review patch. Please review :-)
 archive/issue_comments_072984.json:
 ```json
 {
-    "body": "Attachment [trac_8250-classcall-classget-review-2.patch](tarball://root/attachments/some-uuid/ticket8250/trac_8250-classcall-classget-review-2.patch) by hivert created at 2010-02-13 15:39:18\n\nAs we spoke on the phone I added a comment and corrected a typo.\nReady for review. I'm ok with your patch and if you are ok with mine you can put positive review.",
+    "body": "Attachment [trac_8250-classcall-classget-review-2.patch](tarball://root/attachments/some-uuid/ticket8250/trac_8250-classcall-classget-review-2.patch) by @hivert created at 2010-02-13 15:39:18\n\nAs we spoke on the phone I added a comment and corrected a typo.\nReady for review. I'm ok with your patch and if you are ok with mine you can put positive review.",
     "created_at": "2010-02-13T15:39:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8250#issuecomment-72984",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8250-classcall-classget-review-2.patch](tarball://root/attachments/some-uuid/ticket8250/trac_8250-classcall-classget-review-2.patch) by hivert created at 2010-02-13 15:39:18
+Attachment [trac_8250-classcall-classget-review-2.patch](tarball://root/attachments/some-uuid/ticket8250/trac_8250-classcall-classget-review-2.patch) by @hivert created at 2010-02-13 15:39:18
 
 As we spoke on the phone I added a comment and corrected a typo.
 Ready for review. I'm ok with your patch and if you are ok with mine you can put positive review.
@@ -310,7 +310,7 @@ archive/issue_comments_072985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8250#issuecomment-72985",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

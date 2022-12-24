@@ -3,7 +3,7 @@
 archive/issues_005918.json:
 ```json
 {
-    "body": "Assignee: saliola\n\nCC:  sage-combinat\n\nI'll post a patch in a few minutes that brings the doctest coverage for posets to 100% (well, except for 2 or 3 nested functions). It also fixes a few bugs that I noticed while adding the doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5918\n\n",
+    "body": "Assignee: @saliola\n\nCC:  sage-combinat\n\nI'll post a patch in a few minutes that brings the doctest coverage for posets to 100% (well, except for 2 or 3 nested functions). It also fixes a few bugs that I noticed while adding the doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5918\n\n",
     "created_at": "2009-04-28T14:29:56Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_005918.json:
     "title": "bring doctest coverage for posets to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5918",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
-Assignee: saliola
+Assignee: @saliola
 
 CC:  sage-combinat
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5918
 archive/issue_comments_046767.json:
 ```json
 {
-    "body": "Attachment [trac_5918.patch](tarball://root/attachments/some-uuid/ticket5918/trac_5918.patch) by saliola created at 2009-04-28 14:40:24",
+    "body": "Attachment [trac_5918.patch](tarball://root/attachments/some-uuid/ticket5918/trac_5918.patch) by @saliola created at 2009-04-28 14:40:24",
     "created_at": "2009-04-28T14:40:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5918#issuecomment-46767",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_5918.patch](tarball://root/attachments/some-uuid/ticket5918/trac_5918.patch) by saliola created at 2009-04-28 14:40:24
+Attachment [trac_5918.patch](tarball://root/attachments/some-uuid/ticket5918/trac_5918.patch) by @saliola created at 2009-04-28 14:40:24
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_046768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5918#issuecomment-46768",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_046769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5918#issuecomment-46769",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_046770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5918#issuecomment-46770",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -123,16 +123,16 @@ rebased to 3.4.2.alpha0 (apply only this patch)
 archive/issue_comments_046771.json:
 ```json
 {
-    "body": "Attachment [trac_5918-rebased.patch](tarball://root/attachments/some-uuid/ticket5918/trac_5918-rebased.patch) by saliola created at 2009-04-28 20:13:34",
+    "body": "Attachment [trac_5918-rebased.patch](tarball://root/attachments/some-uuid/ticket5918/trac_5918-rebased.patch) by @saliola created at 2009-04-28 20:13:34",
     "created_at": "2009-04-28T20:13:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5918#issuecomment-46771",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_5918-rebased.patch](tarball://root/attachments/some-uuid/ticket5918/trac_5918-rebased.patch) by saliola created at 2009-04-28 20:13:34
+Attachment [trac_5918-rebased.patch](tarball://root/attachments/some-uuid/ticket5918/trac_5918-rebased.patch) by @saliola created at 2009-04-28 20:13:34
 
 
 
@@ -146,7 +146,7 @@ archive/issue_comments_046772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5918#issuecomment-46772",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -169,16 +169,16 @@ Finally, this does raise coverage to (basically) 100% and passes all doctests. I
 archive/issue_comments_046773.json:
 ```json
 {
-    "body": "Attachment [trac_5918-typos-docfixes.patch](tarball://root/attachments/some-uuid/ticket5918/trac_5918-typos-docfixes.patch) by ddrake created at 2009-04-29 09:14:09\n\napply on top of trac_5918-rebased.patch",
+    "body": "Attachment [trac_5918-typos-docfixes.patch](tarball://root/attachments/some-uuid/ticket5918/trac_5918-typos-docfixes.patch) by @dandrake created at 2009-04-29 09:14:09\n\napply on top of trac_5918-rebased.patch",
     "created_at": "2009-04-29T09:14:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5918#issuecomment-46773",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_5918-typos-docfixes.patch](tarball://root/attachments/some-uuid/ticket5918/trac_5918-typos-docfixes.patch) by ddrake created at 2009-04-29 09:14:09
+Attachment [trac_5918-typos-docfixes.patch](tarball://root/attachments/some-uuid/ticket5918/trac_5918-typos-docfixes.patch) by @dandrake created at 2009-04-29 09:14:09
 
 apply on top of trac_5918-rebased.patch
 
@@ -194,7 +194,7 @@ archive/issue_comments_046774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5918#issuecomment-46774",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_046775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5918#issuecomment-46775",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_046776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5918#issuecomment-46776",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_046777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5918#issuecomment-46777",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_046778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5918#issuecomment-46778",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -389,7 +389,7 @@ archive/issue_comments_046782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5918#issuecomment-46782",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 

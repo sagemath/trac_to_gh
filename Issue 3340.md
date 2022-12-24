@@ -14,7 +14,7 @@ archive/issues_003340.json:
     "title": "update givaro to 3.2.10 release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3340",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 Assignee: mabshoff

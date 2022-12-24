@@ -3,7 +3,7 @@
 archive/issues_000670.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage -t  functions/piecewise.py                             **********************************************************************\nFile \"piecewise.py\", line 514:\n    sage: f(2.5)\nExpected:\n    12.18249396070347\nGot:\n    12.18249396070348\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_13\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_piecewise.py\n         [10.0 s]\nsage -t  functions/special.py                               **********************************************************************\nFile \"special.py\", line 689:\n    sage: float(inverse_jacobi(\"sn\",0.47,1/2))\nExpected:\n    0.4990982313222197\nGot:\n    0.49909823132221959\n**********************************************************************\nFile \"special.py\", line 691:\n    sage: float(inverse_jacobi(\"sn\",0.4707504,0.5))\nExpected:\n    0.49999991146655459\nGot:\n    0.49999991146655481\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/670\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage -t  functions/piecewise.py                             **********************************************************************\nFile \"piecewise.py\", line 514:\n    sage: f(2.5)\nExpected:\n    12.18249396070347\nGot:\n    12.18249396070348\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_13\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_piecewise.py\n         [10.0 s]\nsage -t  functions/special.py                               **********************************************************************\nFile \"special.py\", line 689:\n    sage: float(inverse_jacobi(\"sn\",0.47,1/2))\nExpected:\n    0.4990982313222197\nGot:\n    0.49909823132221959\n**********************************************************************\nFile \"special.py\", line 691:\n    sage: float(inverse_jacobi(\"sn\",0.4707504,0.5))\nExpected:\n    0.49999991146655459\nGot:\n    0.49999991146655481\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/670\n\n",
     "created_at": "2007-09-17T00:30:48Z",
     "labels": [
         "packages",
@@ -17,7 +17,7 @@ archive/issues_000670.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -81,7 +81,7 @@ Changing component from packages to doctest.
 archive/issue_comments_003472.json:
 ```json
 {
-    "body": "Changing assignee from was to failure.",
+    "body": "Changing assignee from @williamstein to failure.",
     "created_at": "2007-09-17T01:23:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/670",
     "type": "issue_comment",
@@ -90,7 +90,7 @@ archive/issue_comments_003472.json:
 }
 ```
 
-Changing assignee from was to failure.
+Changing assignee from @williamstein to failure.
 
 
 
@@ -122,7 +122,7 @@ archive/issue_comments_003474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/670#issuecomment-3474",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_003475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/670#issuecomment-3475",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

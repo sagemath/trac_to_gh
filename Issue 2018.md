@@ -14,7 +14,7 @@ archive/issues_002018.json:
     "title": "crap -- scipy sandbox has a bunch of .svn directories.  Delete them",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2018",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

@@ -3,7 +3,7 @@
 archive/issues_008287.json:
 ```json
 {
-    "body": "Assignee: slabbe\n\nCC:  vdelecroix\n\nThe `_check` function of the Combinatorial class of all words (checking that the 40 first letters of the word are in the parent) is called for each word created by the user ....and by any other function. It would be good to add a check parameter (True or False) whether to do the checking. For example, for internal function, it could be turned off. Here is a example of what can be gained from this modification when generating all words of a given length :\n\nBEFORE:\n\n```\nsage: W = Words([0,1])\nsage: time l = list(W.iterate_by_length(15))\nCPU times: user 2.60 s, sys: 0.09 s, total: 2.69 s\nWall time: 2.71 s\n```\n\n\nAFTER:\n\n\n```\nsage: W = Words([0,1])\nsage: time l = list(W.iterate_by_length(15))\nCPU times: user 1.99 s, sys: 0.06 s, total: 2.05 s\nWall time: 2.08 s\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8287\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  @videlec\n\nThe `_check` function of the Combinatorial class of all words (checking that the 40 first letters of the word are in the parent) is called for each word created by the user ....and by any other function. It would be good to add a check parameter (True or False) whether to do the checking. For example, for internal function, it could be turned off. Here is a example of what can be gained from this modification when generating all words of a given length :\n\nBEFORE:\n\n```\nsage: W = Words([0,1])\nsage: time l = list(W.iterate_by_length(15))\nCPU times: user 2.60 s, sys: 0.09 s, total: 2.69 s\nWall time: 2.71 s\n```\n\n\nAFTER:\n\n\n```\nsage: W = Words([0,1])\nsage: time l = list(W.iterate_by_length(15))\nCPU times: user 1.99 s, sys: 0.06 s, total: 2.05 s\nWall time: 2.08 s\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8287\n\n",
     "created_at": "2010-02-16T22:12:09Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_008287.json:
     "title": "The _check used for creation of words makes it slower",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8287",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: slabbe
+Assignee: @seblabbe
 
-CC:  vdelecroix
+CC:  @videlec
 
 The `_check` function of the Combinatorial class of all words (checking that the 40 first letters of the word are in the parent) is called for each word created by the user ....and by any other function. It would be good to add a check parameter (True or False) whether to do the checking. For example, for internal function, it could be turned off. Here is a example of what can be gained from this modification when generating all words of a given length :
 
@@ -62,7 +62,7 @@ archive/issue_comments_073378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8287#issuecomment-73378",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -75,16 +75,16 @@ Changing status from new to needs_work.
 archive/issue_comments_073379.json:
 ```json
 {
-    "body": "Attachment [trac_8287_check-sl.patch](tarball://root/attachments/some-uuid/ticket8287/trac_8287_check-sl.patch) by slabbe created at 2010-02-17 00:03:44",
+    "body": "Attachment [trac_8287_check-sl.patch](tarball://root/attachments/some-uuid/ticket8287/trac_8287_check-sl.patch) by @seblabbe created at 2010-02-17 00:03:44",
     "created_at": "2010-02-17T00:03:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8287#issuecomment-73379",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8287_check-sl.patch](tarball://root/attachments/some-uuid/ticket8287/trac_8287_check-sl.patch) by slabbe created at 2010-02-17 00:03:44
+Attachment [trac_8287_check-sl.patch](tarball://root/attachments/some-uuid/ticket8287/trac_8287_check-sl.patch) by @seblabbe created at 2010-02-17 00:03:44
 
 
 
@@ -98,7 +98,7 @@ archive/issue_comments_073380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8287#issuecomment-73380",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_073381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8287#issuecomment-73381",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_073382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8287#issuecomment-73382",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_073383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8287#issuecomment-73383",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009391.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nKeywords: kolyvagin classes\n\nIf P is a 'kolyvagin_point' created from an elliptic curve, the doc string says\n\n```\nDefinition:\tP.kolyvagin_cohomology_class(self, n=None)\nDocstring:\n       INPUT:\n    \n          * n -- positive integer that divides the gcd of a_p and p+1 for\n            all p dividing the conductor.  If n is None, choose the\n            largest valid n.\n```\n\nIn fact, if \"n\" is None, a ValueError is thrown.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9391\n\n",
+    "body": "Assignee: @JohnCremona\n\nKeywords: kolyvagin classes\n\nIf P is a 'kolyvagin_point' created from an elliptic curve, the doc string says\n\n```\nDefinition:\tP.kolyvagin_cohomology_class(self, n=None)\nDocstring:\n       INPUT:\n    \n          * n -- positive integer that divides the gcd of a_p and p+1 for\n            all p dividing the conductor.  If n is None, choose the\n            largest valid n.\n```\n\nIn fact, if \"n\" is None, a ValueError is thrown.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9391\n\n",
     "created_at": "2010-06-30T05:27:57Z",
     "labels": [
         "elliptic curves",
@@ -16,7 +16,7 @@ archive/issues_009391.json:
     "user": "justin"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 Keywords: kolyvagin classes
 
@@ -50,7 +50,7 @@ archive/issue_comments_089414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9391",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9391#issuecomment-89414",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

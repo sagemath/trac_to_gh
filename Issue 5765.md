@@ -3,7 +3,7 @@
 archive/issues_005765.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nKeywords: doctest algebraic scheme\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5765\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: doctest algebraic scheme\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5765\n\n",
     "created_at": "2009-04-11T22:32:56Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_005765.json:
     "title": "improve doctest coverage for schemes/generic/algebraic_scheme.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5765",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Keywords: doctest algebraic scheme
 
@@ -39,7 +39,7 @@ archive/issue_comments_045061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5765#issuecomment-45061",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_045063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5765#issuecomment-45063",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -92,16 +92,16 @@ Good question.  I have done almost all I wanted to do with it, but unfortunately
 archive/issue_comments_045064.json:
 ```json
 {
-    "body": "Attachment [trac_5765.patch](tarball://root/attachments/some-uuid/ticket5765/trac_5765.patch) by AlexGhitza created at 2009-04-17 09:00:47\n\nThe attached patch brings up the doctest coverage from 24% to 87% (29 of 33).\n\nThere is also some fairly straightforward refactoring of code, e.g. moving `_validate` to the ambient spaces where it belongs logically.  I also realised that `self.complement(other)` is counterintuitive and changed it to match normal speech patterns: it should be \"the complement of self in other\", which is other-self, not self-other.  An added bonus is that now one can write `X.complement()` to get the complement of X in its ambient space, which is highly intuitive.  Normally such a change in behaviour would be tricky but since the functions were just broken until 3.4.1.rc3, this shouldn't lead to any confusion (since nobody has used them yet).\n\nNote that the patch relies on changes that only went in at 3.4.1.rc3, so it should only be applied on top of 3.4.1.rc3.",
+    "body": "Attachment [trac_5765.patch](tarball://root/attachments/some-uuid/ticket5765/trac_5765.patch) by @aghitza created at 2009-04-17 09:00:47\n\nThe attached patch brings up the doctest coverage from 24% to 87% (29 of 33).\n\nThere is also some fairly straightforward refactoring of code, e.g. moving `_validate` to the ambient spaces where it belongs logically.  I also realised that `self.complement(other)` is counterintuitive and changed it to match normal speech patterns: it should be \"the complement of self in other\", which is other-self, not self-other.  An added bonus is that now one can write `X.complement()` to get the complement of X in its ambient space, which is highly intuitive.  Normally such a change in behaviour would be tricky but since the functions were just broken until 3.4.1.rc3, this shouldn't lead to any confusion (since nobody has used them yet).\n\nNote that the patch relies on changes that only went in at 3.4.1.rc3, so it should only be applied on top of 3.4.1.rc3.",
     "created_at": "2009-04-17T09:00:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5765#issuecomment-45064",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_5765.patch](tarball://root/attachments/some-uuid/ticket5765/trac_5765.patch) by AlexGhitza created at 2009-04-17 09:00:47
+Attachment [trac_5765.patch](tarball://root/attachments/some-uuid/ticket5765/trac_5765.patch) by @aghitza created at 2009-04-17 09:00:47
 
 The attached patch brings up the doctest coverage from 24% to 87% (29 of 33).
 
@@ -121,7 +121,7 @@ archive/issue_comments_045065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5765#issuecomment-45065",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_045067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5765#issuecomment-45067",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -197,16 +197,16 @@ Those failures are in files where I changed the docstrings recently, so I'll tak
 archive/issue_comments_045068.json:
 ```json
 {
-    "body": "Attachment [trac_5765-1.patch](tarball://root/attachments/some-uuid/ticket5765/trac_5765-1.patch) by cremona created at 2009-04-23 09:38:20\n\nReplaces earlier patch",
+    "body": "Attachment [trac_5765-1.patch](tarball://root/attachments/some-uuid/ticket5765/trac_5765-1.patch) by @JohnCremona created at 2009-04-23 09:38:20\n\nReplaces earlier patch",
     "created_at": "2009-04-23T09:38:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5765#issuecomment-45068",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_5765-1.patch](tarball://root/attachments/some-uuid/ticket5765/trac_5765-1.patch) by cremona created at 2009-04-23 09:38:20
+Attachment [trac_5765-1.patch](tarball://root/attachments/some-uuid/ticket5765/trac_5765-1.patch) by @JohnCremona created at 2009-04-23 09:38:20
 
 Replaces earlier patch
 
@@ -222,7 +222,7 @@ archive/issue_comments_045069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5765#issuecomment-45069",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_045070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5765#issuecomment-45070",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -263,16 +263,16 @@ There was one left, in `schemes/plane_curves/constructor.py`.  The fix is trivia
 archive/issue_comments_045071.json:
 ```json
 {
-    "body": "Attachment [trac_5765-2.patch](tarball://root/attachments/some-uuid/ticket5765/trac_5765-2.patch) by AlexGhitza created at 2009-04-23 13:10:52\n\napply after trac_5765-1.patch",
+    "body": "Attachment [trac_5765-2.patch](tarball://root/attachments/some-uuid/ticket5765/trac_5765-2.patch) by @aghitza created at 2009-04-23 13:10:52\n\napply after trac_5765-1.patch",
     "created_at": "2009-04-23T13:10:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5765#issuecomment-45071",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_5765-2.patch](tarball://root/attachments/some-uuid/ticket5765/trac_5765-2.patch) by AlexGhitza created at 2009-04-23 13:10:52
+Attachment [trac_5765-2.patch](tarball://root/attachments/some-uuid/ticket5765/trac_5765-2.patch) by @aghitza created at 2009-04-23 13:10:52
 
 apply after trac_5765-1.patch
 
@@ -288,7 +288,7 @@ archive/issue_comments_045072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5765#issuecomment-45072",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_045075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5765#issuecomment-45075",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_045076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5765#issuecomment-45076",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -410,7 +410,7 @@ archive/issue_comments_045077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5765#issuecomment-45077",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -434,7 +434,7 @@ archive/issue_comments_045078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5765#issuecomment-45078",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -467,7 +467,7 @@ archive/issue_comments_045079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5765#issuecomment-45079",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -488,16 +488,16 @@ E = EllipticCurve(R, [-1,0])
 archive/issue_comments_045080.json:
 ```json
 {
-    "body": "Attachment [trac_5765-rebased.patch](tarball://root/attachments/some-uuid/ticket5765/trac_5765-rebased.patch) by AlexGhitza created at 2009-04-24 23:09:45",
+    "body": "Attachment [trac_5765-rebased.patch](tarball://root/attachments/some-uuid/ticket5765/trac_5765-rebased.patch) by @aghitza created at 2009-04-24 23:09:45",
     "created_at": "2009-04-24T23:09:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5765#issuecomment-45080",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_5765-rebased.patch](tarball://root/attachments/some-uuid/ticket5765/trac_5765-rebased.patch) by AlexGhitza created at 2009-04-24 23:09:45
+Attachment [trac_5765-rebased.patch](tarball://root/attachments/some-uuid/ticket5765/trac_5765-rebased.patch) by @aghitza created at 2009-04-24 23:09:45
 
 
 
@@ -511,7 +511,7 @@ archive/issue_comments_045081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5765#issuecomment-45081",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -531,7 +531,7 @@ archive/issue_comments_045082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5765#issuecomment-45082",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -549,7 +549,7 @@ archive/issue_comments_045083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5765#issuecomment-45083",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -604,7 +604,7 @@ archive/issue_comments_045084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5765#issuecomment-45084",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

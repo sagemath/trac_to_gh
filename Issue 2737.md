@@ -14,7 +14,7 @@ archive/issues_002737.json:
     "title": "add balanced_sum to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2737",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: somebody
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2737
 archive/issue_comments_018818.json:
 ```json
 {
-    "body": "Attachment [2737.patch](tarball://root/attachments/some-uuid/ticket2737/2737.patch) by mhansen created at 2008-03-31 11:50:03",
+    "body": "Attachment [2737.patch](tarball://root/attachments/some-uuid/ticket2737/2737.patch) by @mwhansen created at 2008-03-31 11:50:03",
     "created_at": "2008-03-31T11:50:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2737#issuecomment-18818",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2737.patch](tarball://root/attachments/some-uuid/ticket2737/2737.patch) by mhansen created at 2008-03-31 11:50:03
+Attachment [2737.patch](tarball://root/attachments/some-uuid/ticket2737/2737.patch) by @mwhansen created at 2008-03-31 11:50:03
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_018819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2737#issuecomment-18819",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_018820.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2737#issuecomment-18820",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_018821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2737#issuecomment-18821",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_018822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2737#issuecomment-18822",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_018823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2737#issuecomment-18823",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_018824.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2737#issuecomment-18824",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_018825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2737#issuecomment-18825",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_018826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2737#issuecomment-18826",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -253,16 +253,16 @@ apply instead of previous patch
 archive/issue_comments_018827.json:
 ```json
 {
-    "body": "Attachment [trac-2737-balancedsum-rebased-bug-fixed.patch](tarball://root/attachments/some-uuid/ticket2737/trac-2737-balancedsum-rebased-bug-fixed.patch) by robertwb created at 2009-07-25 22:56:59\n\nPositive review to the second patch. I don't see an easy way to get rid of code duplication, so I think this is worth it.",
+    "body": "Attachment [trac-2737-balancedsum-rebased-bug-fixed.patch](tarball://root/attachments/some-uuid/ticket2737/trac-2737-balancedsum-rebased-bug-fixed.patch) by @robertwb created at 2009-07-25 22:56:59\n\nPositive review to the second patch. I don't see an easy way to get rid of code duplication, so I think this is worth it.",
     "created_at": "2009-07-25T22:56:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2737#issuecomment-18827",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [trac-2737-balancedsum-rebased-bug-fixed.patch](tarball://root/attachments/some-uuid/ticket2737/trac-2737-balancedsum-rebased-bug-fixed.patch) by robertwb created at 2009-07-25 22:56:59
+Attachment [trac-2737-balancedsum-rebased-bug-fixed.patch](tarball://root/attachments/some-uuid/ticket2737/trac-2737-balancedsum-rebased-bug-fixed.patch) by @robertwb created at 2009-07-25 22:56:59
 
 Positive review to the second patch. I don't see an easy way to get rid of code duplication, so I think this is worth it.
 
@@ -362,7 +362,7 @@ archive/issue_comments_018831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2737#issuecomment-18831",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

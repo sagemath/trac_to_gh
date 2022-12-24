@@ -14,7 +14,7 @@ archive/issues_007312.json:
     "title": "Add a function .st (meaning \"such that\" )which is an alias to .add_constraint",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7312",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jkantor
@@ -37,7 +37,7 @@ archive/issue_comments_061099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7312#issuecomment-61099",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_061100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7312#issuecomment-61100",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_061101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7312#issuecomment-61101",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_061102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7312#issuecomment-61102",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_061103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7312#issuecomment-61103",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_061104.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7312#issuecomment-61104",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_061105.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7312#issuecomment-61105",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

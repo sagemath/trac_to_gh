@@ -3,7 +3,7 @@
 archive/issues_006122.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nIt bothers me that when you ask for a docstring with a 'nodetex' directive, that directive is printed as part of the docstring.  This patch strips it out.\n\nBefore (note the line after \"Docstring:\"):\n\n```\nsage: view?\nBase Class:       <type 'function'>\nString Form:   <function view at 0x102a230>\nNamespace:        Interactive\nFile:             /Applications/sage/local/lib/python2.5/site-packages/sage/misc/latex.py\nDefinition:       view(objects, title='SAGE', debug=False, sep='', tiny=False, **kwds)\nDocstring:\n    nodetex\n        Compute a latex representation of each object in objects, compile,\n        and display typeset. If used from the command line, this requires\n        that latex be installed.\n```\n\n\nAfter:\n\n```\nsage: view?\nBase Class:       <type 'function'>\nString Form:   <function view at 0x102b770>\nNamespace:        Interactive\nFile:             /Applications/sage/local/lib/python2.5/site-packages/sage/misc/latex.py\nDefinition:       view(objects, title='SAGE', debug=False, sep='', tiny=False, pdflatex=None, **kwds)\nDocstring:\n    \n        Compute a latex representation of each object in objects, compile,\n        and display typeset. If used from the command line, this requires\n        that latex be installed.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6122\n\n",
+    "body": "Assignee: @jhpalmieri\n\nIt bothers me that when you ask for a docstring with a 'nodetex' directive, that directive is printed as part of the docstring.  This patch strips it out.\n\nBefore (note the line after \"Docstring:\"):\n\n```\nsage: view?\nBase Class:       <type 'function'>\nString Form:   <function view at 0x102a230>\nNamespace:        Interactive\nFile:             /Applications/sage/local/lib/python2.5/site-packages/sage/misc/latex.py\nDefinition:       view(objects, title='SAGE', debug=False, sep='', tiny=False, **kwds)\nDocstring:\n    nodetex\n        Compute a latex representation of each object in objects, compile,\n        and display typeset. If used from the command line, this requires\n        that latex be installed.\n```\n\n\nAfter:\n\n```\nsage: view?\nBase Class:       <type 'function'>\nString Form:   <function view at 0x102b770>\nNamespace:        Interactive\nFile:             /Applications/sage/local/lib/python2.5/site-packages/sage/misc/latex.py\nDefinition:       view(objects, title='SAGE', debug=False, sep='', tiny=False, pdflatex=None, **kwds)\nDocstring:\n    \n        Compute a latex representation of each object in objects, compile,\n        and display typeset. If used from the command line, this requires\n        that latex be installed.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6122\n\n",
     "created_at": "2009-05-23T20:00:22Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_006122.json:
     "title": "[with patch, needs review] strip 'nodetex' from docstrings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6122",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 It bothers me that when you ask for a docstring with a 'nodetex' directive, that directive is printed as part of the docstring.  This patch strips it out.
 
@@ -66,16 +66,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6122
 archive/issue_comments_048922.json:
 ```json
 {
-    "body": "Attachment [no-nodetex.patch](tarball://root/attachments/some-uuid/ticket6122/no-nodetex.patch) by rbeezer created at 2009-05-31 00:49:15\n\nApplies cleanly to 4.0, works as advertised at command-line and in the notebook.\n\nPasses  sage -t -rand sage/misc/sagedoc.py\n\nIt would be nice if these directives were cleaned out prior to building the PDF and HTML versions of the documentation.  This patch seems to only apply to the \"interactive\" documentation.   I'm still seeing nodetex directives in the PDF anyway, and in a sense they are worse, as they lead off a line and then the real beginning follows with no line break (as it used to look in the ASCII versions).  \n\nPositive review.",
+    "body": "Attachment [no-nodetex.patch](tarball://root/attachments/some-uuid/ticket6122/no-nodetex.patch) by @rbeezer created at 2009-05-31 00:49:15\n\nApplies cleanly to 4.0, works as advertised at command-line and in the notebook.\n\nPasses  sage -t -rand sage/misc/sagedoc.py\n\nIt would be nice if these directives were cleaned out prior to building the PDF and HTML versions of the documentation.  This patch seems to only apply to the \"interactive\" documentation.   I'm still seeing nodetex directives in the PDF anyway, and in a sense they are worse, as they lead off a line and then the real beginning follows with no line break (as it used to look in the ASCII versions).  \n\nPositive review.",
     "created_at": "2009-05-31T00:49:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6122",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6122#issuecomment-48922",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [no-nodetex.patch](tarball://root/attachments/some-uuid/ticket6122/no-nodetex.patch) by rbeezer created at 2009-05-31 00:49:15
+Attachment [no-nodetex.patch](tarball://root/attachments/some-uuid/ticket6122/no-nodetex.patch) by @rbeezer created at 2009-05-31 00:49:15
 
 Applies cleanly to 4.0, works as advertised at command-line and in the notebook.
 
@@ -97,7 +97,7 @@ archive/issue_comments_048923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6122",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6122#issuecomment-48923",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_048924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6122",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6122#issuecomment-48924",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_048925.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6122",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6122#issuecomment-48925",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

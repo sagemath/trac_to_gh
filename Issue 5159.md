@@ -3,7 +3,7 @@
 archive/issues_005159.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nKeywords: galois groups, number theory\n\nIt would be nice to unify Sage's two ways of handling Galois groups: as abstract transitive groups, and as sets of explicit automorphisms with no group structure. This can be done by using Pari's galoisinit, galoispoltoperm and galoisapply functions.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5159\n\n",
+    "body": "Assignee: @loefflerd\n\nKeywords: galois groups, number theory\n\nIt would be nice to unify Sage's two ways of handling Galois groups: as abstract transitive groups, and as sets of explicit automorphisms with no group structure. This can be done by using Pari's galoisinit, galoispoltoperm and galoisapply functions.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5159\n\n",
     "created_at": "2009-02-02T17:51:14Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_005159.json:
     "title": "Add functionality to Galois groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5159",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
 Keywords: galois groups, number theory
 
@@ -41,7 +41,7 @@ archive/issue_comments_039518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39518",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_039519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39519",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_039521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39521",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_039522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39522",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -138,16 +138,16 @@ patch against 3.4 with patch for #5508 applied
 archive/issue_comments_039523.json:
 ```json
 {
-    "body": "Attachment [galois.patch](tarball://root/attachments/some-uuid/ticket5159/galois.patch) by davidloeffler created at 2009-03-17 18:53:45\n\nI've rebased it to a patch based on (3.4 + the patch for #5508).\n\nThis version actually adds quite a bit that wasn't in the previous version: based on the debate on sage-nt, I've made it return the Galois group of the splitting field when the given field isn't Galois, and also added a method fixed_field for subgroups of Galois groups based on Pari's \"galoisfixedfield\".\n\nIn an ideal world, when given a non-Galois field, it would return the Galois group of the Galois closure of the given field, but represented as permutations of the roots of the defining polynomial of the original field. I couldn't work out an easy way of doing this which wouldn't be horribly slow in general, so elements are represented as permutations of the Galois conjugates of some single element generating the Galois closure.\n\nI've also ReSTified class_group.py and number_field_ideal.py (the latter because I was editing it anyway, and the former because it was easy to do); and deprecated galois_group and is_galois for relative fields in favour of explicitly relative and absolute variants.",
+    "body": "Attachment [galois.patch](tarball://root/attachments/some-uuid/ticket5159/galois.patch) by @loefflerd created at 2009-03-17 18:53:45\n\nI've rebased it to a patch based on (3.4 + the patch for #5508).\n\nThis version actually adds quite a bit that wasn't in the previous version: based on the debate on sage-nt, I've made it return the Galois group of the splitting field when the given field isn't Galois, and also added a method fixed_field for subgroups of Galois groups based on Pari's \"galoisfixedfield\".\n\nIn an ideal world, when given a non-Galois field, it would return the Galois group of the Galois closure of the given field, but represented as permutations of the roots of the defining polynomial of the original field. I couldn't work out an easy way of doing this which wouldn't be horribly slow in general, so elements are represented as permutations of the Galois conjugates of some single element generating the Galois closure.\n\nI've also ReSTified class_group.py and number_field_ideal.py (the latter because I was editing it anyway, and the former because it was easy to do); and deprecated galois_group and is_galois for relative fields in favour of explicitly relative and absolute variants.",
     "created_at": "2009-03-17T18:53:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39523",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [galois.patch](tarball://root/attachments/some-uuid/ticket5159/galois.patch) by davidloeffler created at 2009-03-17 18:53:45
+Attachment [galois.patch](tarball://root/attachments/some-uuid/ticket5159/galois.patch) by @loefflerd created at 2009-03-17 18:53:45
 
 I've rebased it to a patch based on (3.4 + the patch for #5508).
 
@@ -169,7 +169,7 @@ archive/issue_comments_039524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39524",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_039525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39525",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_039526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39526",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -247,16 +247,16 @@ john@ubuntu%diff /home/john/sage-5508.2.patch /home/john/sage-5508.patch
 archive/issue_comments_039527.json:
 ```json
 {
-    "body": "Attachment [galois_new.patch](tarball://root/attachments/some-uuid/ticket5159/galois_new.patch) by davidloeffler created at 2009-03-18 09:00:51\n\nreplaces previous patch -- apply after sage-5508.2.patch",
+    "body": "Attachment [galois_new.patch](tarball://root/attachments/some-uuid/ticket5159/galois_new.patch) by @loefflerd created at 2009-03-18 09:00:51\n\nreplaces previous patch -- apply after sage-5508.2.patch",
     "created_at": "2009-03-18T09:00:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39527",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [galois_new.patch](tarball://root/attachments/some-uuid/ticket5159/galois_new.patch) by davidloeffler created at 2009-03-18 09:00:51
+Attachment [galois_new.patch](tarball://root/attachments/some-uuid/ticket5159/galois_new.patch) by @loefflerd created at 2009-03-18 09:00:51
 
 replaces previous patch -- apply after sage-5508.2.patch
 
@@ -272,7 +272,7 @@ archive/issue_comments_039528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39528",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -285,16 +285,16 @@ Here's a new patch. On my machine I've checked that it applies happily on a clea
 archive/issue_comments_039529.json:
 ```json
 {
-    "body": "Attachment [trac_5159_extra.patch](tarball://root/attachments/some-uuid/ticket5159/trac_5159_extra.patch) by cremona created at 2009-03-18 10:01:20",
+    "body": "Attachment [trac_5159_extra.patch](tarball://root/attachments/some-uuid/ticket5159/trac_5159_extra.patch) by @JohnCremona created at 2009-03-18 10:01:20",
     "created_at": "2009-03-18T10:01:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39529",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_5159_extra.patch](tarball://root/attachments/some-uuid/ticket5159/trac_5159_extra.patch) by cremona created at 2009-03-18 10:01:20
+Attachment [trac_5159_extra.patch](tarball://root/attachments/some-uuid/ticket5159/trac_5159_extra.patch) by @JohnCremona created at 2009-03-18 10:01:20
 
 
 
@@ -308,7 +308,7 @@ archive/issue_comments_039530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39530",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -396,16 +396,16 @@ Michael
 archive/issue_comments_039532.json:
 ```json
 {
-    "body": "Attachment [5159-unpickle-fix.patch](tarball://root/attachments/some-uuid/ticket5159/5159-unpickle-fix.patch) by davidloeffler created at 2009-03-25 11:16:14\n\napply over 5508-3.patch and previous TWO patches.",
+    "body": "Attachment [5159-unpickle-fix.patch](tarball://root/attachments/some-uuid/ticket5159/5159-unpickle-fix.patch) by @loefflerd created at 2009-03-25 11:16:14\n\napply over 5508-3.patch and previous TWO patches.",
     "created_at": "2009-03-25T11:16:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39532",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [5159-unpickle-fix.patch](tarball://root/attachments/some-uuid/ticket5159/5159-unpickle-fix.patch) by davidloeffler created at 2009-03-25 11:16:14
+Attachment [5159-unpickle-fix.patch](tarball://root/attachments/some-uuid/ticket5159/5159-unpickle-fix.patch) by @loefflerd created at 2009-03-25 11:16:14
 
 apply over 5508-3.patch and previous TWO patches.
 
@@ -421,7 +421,7 @@ archive/issue_comments_039533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39533",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -443,7 +443,7 @@ archive/issue_comments_039534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39534",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -491,7 +491,7 @@ archive/issue_comments_039536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39536",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -511,7 +511,7 @@ archive/issue_comments_039537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39537",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -529,7 +529,7 @@ archive/issue_comments_039538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39538",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -624,7 +624,7 @@ archive/issue_comments_039539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39539",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -644,7 +644,7 @@ archive/issue_comments_039540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39540",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -723,7 +723,7 @@ archive/issue_comments_039543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39543",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -747,7 +747,7 @@ archive/issue_comments_039544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39544",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -760,16 +760,16 @@ apply over previous four patches (!)
 archive/issue_comments_039545.json:
 ```json
 {
-    "body": "Attachment [5159-sort-fix.patch](tarball://root/attachments/some-uuid/ticket5159/5159-sort-fix.patch) by cremona created at 2009-03-31 08:47:00\n\nI'll test all these in a minute....",
+    "body": "Attachment [5159-sort-fix.patch](tarball://root/attachments/some-uuid/ticket5159/5159-sort-fix.patch) by @JohnCremona created at 2009-03-31 08:47:00\n\nI'll test all these in a minute....",
     "created_at": "2009-03-31T08:47:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39545",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [5159-sort-fix.patch](tarball://root/attachments/some-uuid/ticket5159/5159-sort-fix.patch) by cremona created at 2009-03-31 08:47:00
+Attachment [5159-sort-fix.patch](tarball://root/attachments/some-uuid/ticket5159/5159-sort-fix.patch) by @JohnCremona created at 2009-03-31 08:47:00
 
 I'll test all these in a minute....
 
@@ -785,7 +785,7 @@ archive/issue_comments_039546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39546",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -805,7 +805,7 @@ archive/issue_comments_039547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39547",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

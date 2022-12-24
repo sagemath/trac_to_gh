@@ -14,7 +14,7 @@ archive/issues_001716.json:
     "title": "[with patch] add function log1p in mpfr interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1716",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: somebody
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1716
 archive/issue_comments_010880.json:
 ```json
 {
-    "body": "Attachment [7881.patch](tarball://root/attachments/some-uuid/ticket1716/7881.patch) by mhansen created at 2008-01-15 00:43:33\n\nWorks for me.  I think it would be good to add the other functions as well.",
+    "body": "Attachment [7881.patch](tarball://root/attachments/some-uuid/ticket1716/7881.patch) by @mwhansen created at 2008-01-15 00:43:33\n\nWorks for me.  I think it would be good to add the other functions as well.",
     "created_at": "2008-01-15T00:43:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1716#issuecomment-10880",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [7881.patch](tarball://root/attachments/some-uuid/ticket1716/7881.patch) by mhansen created at 2008-01-15 00:43:33
+Attachment [7881.patch](tarball://root/attachments/some-uuid/ticket1716/7881.patch) by @mwhansen created at 2008-01-15 00:43:33
 
 Works for me.  I think it would be good to add the other functions as well.
 

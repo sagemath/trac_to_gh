@@ -14,7 +14,7 @@ archive/issues_004056.json:
     "title": "tab completion does not work in Google Chrome",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4056",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: boothby
@@ -39,7 +39,7 @@ archive/issue_comments_029230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4056#issuecomment-29230",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_029231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4056#issuecomment-29231",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_029232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4056#issuecomment-29232",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

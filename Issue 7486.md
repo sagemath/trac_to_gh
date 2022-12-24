@@ -3,7 +3,7 @@
 archive/issues_007486.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  olazo\n\nSee #7482, which is about doing this in the notebook.  For the command line, see the remarks below by the author of IPython.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7486\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  olazo\n\nSee #7482, which is about doing this in the notebook.  For the command line, see the remarks below by the author of IPython.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7486\n\n",
     "created_at": "2009-11-18T09:30:43Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_007486.json:
     "title": "implement automatic definition of undefined variables in the Sage command line (ipython)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7486",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  olazo
 
@@ -39,7 +39,7 @@ archive/issue_comments_063230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7486#issuecomment-63230",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_063232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7486#issuecomment-63232",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

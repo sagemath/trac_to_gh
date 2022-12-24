@@ -3,7 +3,7 @@
 archive/issues_005230.json:
 ```json
 {
-    "body": "Assignee: was\n\nBasically make it easy to create plots like this but in 1 line:\n\n```\nu, v = var('u,v')\nG = parametric_plot3d((cos(u), sin(u) + cos(v), sin(v)), (u, 0, pi), (v, 0, pi), opacity=0.9)    \nC = parametric_plot3d((cos(0), sin(0) + cos(v), sin(v)), (v, 0, pi), color='black', thickness=2)    \nD = parametric_plot3d((cos(pi), sin(pi) + cos(v), sin(v)), (v, 0, pi), color='black', thickness=2)\nE = parametric_plot3d((cos(u), sin(u) + cos(0), sin(0)), (u, 0, pi), color='black', thickness=2)    \nF = parametric_plot3d((cos(u), sin(u) + cos(pi), sin(pi)), (u, 0, pi), color='black', thickness=2)\nK = G + C + D + E + F\n```\n\n\nInput would probably be like this (dictionary):\n\n```\nu, v = var('u,v')\nparametric_plot3d((cos(u), sin(u) + cos(v), sin(v)), (u, 0, pi), (v, 0, pi),\n      boundary_style={'color':'black', 'thickness':2})    \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5230\n\n",
+    "body": "Assignee: @williamstein\n\nBasically make it easy to create plots like this but in 1 line:\n\n```\nu, v = var('u,v')\nG = parametric_plot3d((cos(u), sin(u) + cos(v), sin(v)), (u, 0, pi), (v, 0, pi), opacity=0.9)    \nC = parametric_plot3d((cos(0), sin(0) + cos(v), sin(v)), (v, 0, pi), color='black', thickness=2)    \nD = parametric_plot3d((cos(pi), sin(pi) + cos(v), sin(v)), (v, 0, pi), color='black', thickness=2)\nE = parametric_plot3d((cos(u), sin(u) + cos(0), sin(0)), (u, 0, pi), color='black', thickness=2)    \nF = parametric_plot3d((cos(u), sin(u) + cos(pi), sin(pi)), (u, 0, pi), color='black', thickness=2)\nK = G + C + D + E + F\n```\n\n\nInput would probably be like this (dictionary):\n\n```\nu, v = var('u,v')\nparametric_plot3d((cos(u), sin(u) + cos(v), sin(v)), (u, 0, pi), (v, 0, pi),\n      boundary_style={'color':'black', 'thickness':2})    \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5230\n\n",
     "created_at": "2009-02-10T22:12:41Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_005230.json:
     "title": "implement boundary_style parameter for parametric 3d plots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5230",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Basically make it easy to create plots like this but in 1 line:
 
@@ -70,7 +70,7 @@ Changing status from new to assigned.
 archive/issue_comments_040085.json:
 ```json
 {
-    "body": "Changing assignee from was to wcauchois.",
+    "body": "Changing assignee from @williamstein to wcauchois.",
     "created_at": "2009-02-12T00:45:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5230",
     "type": "issue_comment",
@@ -79,7 +79,7 @@ archive/issue_comments_040085.json:
 }
 ```
 
-Changing assignee from was to wcauchois.
+Changing assignee from @williamstein to wcauchois.
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_040087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5230",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5230#issuecomment-40087",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

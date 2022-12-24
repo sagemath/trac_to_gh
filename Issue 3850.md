@@ -119,16 +119,16 @@ for example).  Zero-length strings are always identical.
 archive/issue_comments_027388.json:
 ```json
 {
-    "body": "Attachment [sage-3850.patch](tarball://root/attachments/some-uuid/ticket3850/sage-3850.patch) by was created at 2008-08-15 08:51:04\n\nRobert Bradshaw's #3788 caused this (and another failure).    The attached ticket fixes it.",
+    "body": "Attachment [sage-3850.patch](tarball://root/attachments/some-uuid/ticket3850/sage-3850.patch) by @williamstein created at 2008-08-15 08:51:04\n\nRobert Bradshaw's #3788 caused this (and another failure).    The attached ticket fixes it.",
     "created_at": "2008-08-15T08:51:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3850#issuecomment-27388",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3850.patch](tarball://root/attachments/some-uuid/ticket3850/sage-3850.patch) by was created at 2008-08-15 08:51:04
+Attachment [sage-3850.patch](tarball://root/attachments/some-uuid/ticket3850/sage-3850.patch) by @williamstein created at 2008-08-15 08:51:04
 
 Robert Bradshaw's #3788 caused this (and another failure).    The attached ticket fixes it.
 

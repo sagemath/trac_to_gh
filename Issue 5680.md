@@ -3,7 +3,7 @@
 archive/issues_005680.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  burcin wbhart\n\nNow that FLINT 1.2.4 is in Sage we should hook up various new methods:\n\n* factor\n* square free factoring\n* derivative\n* powermod\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5680\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin wbhart\n\nNow that FLINT 1.2.4 is in Sage we should hook up various new methods:\n\n* factor\n* square free factoring\n* derivative\n* powermod\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5680\n\n",
     "created_at": "2009-04-04T05:19:10Z",
     "labels": [
         "misc",
@@ -17,9 +17,9 @@ archive/issues_005680.json:
     "user": "mabshoff"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  burcin wbhart
+CC:  @burcin wbhart
 
 Now that FLINT 1.2.4 is in Sage we should hook up various new methods:
 
@@ -70,7 +70,7 @@ archive/issue_comments_044421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5680",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5680#issuecomment-44421",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_044422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5680",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5680#issuecomment-44422",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_044423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5680",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5680#issuecomment-44423",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -128,16 +128,16 @@ Changing status from new to needs_review.
 archive/issue_comments_044424.json:
 ```json
 {
-    "body": "Attachment [trac_5680-flint_zmod_poly_enhancements.patch](tarball://root/attachments/some-uuid/ticket5680/trac_5680-flint_zmod_poly_enhancements.patch) by burcin created at 2009-10-20 14:44:26",
+    "body": "Attachment [trac_5680-flint_zmod_poly_enhancements.patch](tarball://root/attachments/some-uuid/ticket5680/trac_5680-flint_zmod_poly_enhancements.patch) by @burcin created at 2009-10-20 14:44:26",
     "created_at": "2009-10-20T14:44:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5680",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5680#issuecomment-44424",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_5680-flint_zmod_poly_enhancements.patch](tarball://root/attachments/some-uuid/ticket5680/trac_5680-flint_zmod_poly_enhancements.patch) by burcin created at 2009-10-20 14:44:26
+Attachment [trac_5680-flint_zmod_poly_enhancements.patch](tarball://root/attachments/some-uuid/ticket5680/trac_5680-flint_zmod_poly_enhancements.patch) by @burcin created at 2009-10-20 14:44:26
 
 
 
@@ -151,7 +151,7 @@ archive/issue_comments_044425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5680",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5680#issuecomment-44425",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_044426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5680",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5680#issuecomment-44426",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -194,16 +194,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_044427.json:
 ```json
 {
-    "body": "Attachment [trac_5680-flint_zmod_poly_enhancements.take2.patch](tarball://root/attachments/some-uuid/ticket5680/trac_5680-flint_zmod_poly_enhancements.take2.patch) by burcin created at 2009-10-21 17:13:17\n\nOops, I hadn't run doctests on `schemes`, and it was a genuine bug with scalar multiplication.\n\nNew patch attachment:trac_5680-flint_zmod_poly_enhancements.take2.patch should fix all problems.",
+    "body": "Attachment [trac_5680-flint_zmod_poly_enhancements.take2.patch](tarball://root/attachments/some-uuid/ticket5680/trac_5680-flint_zmod_poly_enhancements.take2.patch) by @burcin created at 2009-10-21 17:13:17\n\nOops, I hadn't run doctests on `schemes`, and it was a genuine bug with scalar multiplication.\n\nNew patch attachment:trac_5680-flint_zmod_poly_enhancements.take2.patch should fix all problems.",
     "created_at": "2009-10-21T17:13:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5680",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5680#issuecomment-44427",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_5680-flint_zmod_poly_enhancements.take2.patch](tarball://root/attachments/some-uuid/ticket5680/trac_5680-flint_zmod_poly_enhancements.take2.patch) by burcin created at 2009-10-21 17:13:17
+Attachment [trac_5680-flint_zmod_poly_enhancements.take2.patch](tarball://root/attachments/some-uuid/ticket5680/trac_5680-flint_zmod_poly_enhancements.take2.patch) by @burcin created at 2009-10-21 17:13:17
 
 Oops, I hadn't run doctests on `schemes`, and it was a genuine bug with scalar multiplication.
 
@@ -221,7 +221,7 @@ archive/issue_comments_044428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5680",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5680#issuecomment-44428",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_044429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5680",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5680#issuecomment-44429",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_044430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5680",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5680#issuecomment-44430",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_044431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5680",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5680#issuecomment-44431",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

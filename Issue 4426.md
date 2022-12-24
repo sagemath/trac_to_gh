@@ -3,7 +3,7 @@
 archive/issues_004426.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  malb\n\nWe currently hard code RTLD_GLOBAL as 256 when we dlopen libSingular. This is not true on AIX and Cygwin for example, so we should pull the value in from the system's dlfcn.h.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4426\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @malb\n\nWe currently hard code RTLD_GLOBAL as 256 when we dlopen libSingular. This is not true on AIX and Cygwin for example, so we should pull the value in from the system's dlfcn.h.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4426\n\n",
     "created_at": "2008-11-02T19:20:12Z",
     "labels": [
         "porting",
@@ -19,7 +19,7 @@ archive/issues_004426.json:
 ```
 Assignee: mabshoff
 
-CC:  malb
+CC:  @malb
 
 We currently hard code RTLD_GLOBAL as 256 when we dlopen libSingular. This is not true on AIX and Cygwin for example, so we should pull the value in from the system's dlfcn.h.
 

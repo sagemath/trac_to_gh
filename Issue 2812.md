@@ -3,7 +3,7 @@
 archive/issues_002812.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2812\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2812\n\n",
     "created_at": "2008-04-05T18:56:51Z",
     "labels": [
         "notebook",
@@ -17,7 +17,7 @@ archive/issues_002812.json:
     "user": "TimothyClemans"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -108,16 +108,16 @@ made sure dictonaries were sorted and changed 'mat' to 'password' and 'mark' to 
 archive/issue_comments_019304.json:
 ```json
 {
-    "body": "Attachment [2812.patch](tarball://root/attachments/some-uuid/ticket2812/2812.patch) by mhansen created at 2008-04-05 21:31:38\n\nLooks good to me.  I've combined all the need patches into 2812.patch so that is the only one that needs to be applied.",
+    "body": "Attachment [2812.patch](tarball://root/attachments/some-uuid/ticket2812/2812.patch) by @mwhansen created at 2008-04-05 21:31:38\n\nLooks good to me.  I've combined all the need patches into 2812.patch so that is the only one that needs to be applied.",
     "created_at": "2008-04-05T21:31:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2812#issuecomment-19304",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2812.patch](tarball://root/attachments/some-uuid/ticket2812/2812.patch) by mhansen created at 2008-04-05 21:31:38
+Attachment [2812.patch](tarball://root/attachments/some-uuid/ticket2812/2812.patch) by @mwhansen created at 2008-04-05 21:31:38
 
 Looks good to me.  I've combined all the need patches into 2812.patch so that is the only one that needs to be applied.
 

@@ -3,7 +3,7 @@
 archive/issues_000379.json:
 ```json
 {
-    "body": "Assignee: was\n\nTimothy Clemans found the following bug:\n\n```\nsage: 3 == x\nFalse\nsage: x == 3\nx == 3\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/379\n\n",
+    "body": "Assignee: @williamstein\n\nTimothy Clemans found the following bug:\n\n```\nsage: 3 == x\nFalse\nsage: x == 3\nx == 3\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/379\n\n",
     "created_at": "2007-05-26T02:27:53Z",
     "labels": [
         "calculus",
@@ -13,10 +13,10 @@ archive/issues_000379.json:
     "title": "bug in formal equality",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/379",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Timothy Clemans found the following bug:
 
@@ -44,7 +44,7 @@ archive/issue_comments_001840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/379#issuecomment-1840",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -62,7 +62,7 @@ archive/issue_comments_001841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/379#issuecomment-1841",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

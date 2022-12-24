@@ -3,7 +3,7 @@
 archive/issues_003549.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jdemeyer\n\nThis is a very very useful unique feature that magma has.  We need to change pari so it can do it to and add an interface so sage can use that function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3549\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jdemeyer\n\nThis is a very very useful unique feature that magma has.  We need to change pari so it can do it to and add an interface so sage can use that function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3549\n\n",
     "created_at": "2008-07-04T04:22:14Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_003549.json:
     "title": "change pari (and sage) so that one can add to the list of precomputed primes that are used for trial division",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3549",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jdemeyer
+CC:  @jdemeyer
 
 This is a very very useful unique feature that magma has.  We need to change pari so it can do it to and add an interface so sage can use that function.
 
@@ -57,7 +57,7 @@ archive/issue_comments_025103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3549#issuecomment-25103",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_025104.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3549#issuecomment-25104",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 

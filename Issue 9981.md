@@ -3,7 +3,7 @@
 archive/issues_009981.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  jason vdelecroix\n\nSee #4838 and #8082 for the first addition of this.  Unfortunately, it only supports things like `CC`:\n\n\n```\nsage: point([CC(1.00000000000000 + 0.500000000000000*I)]) # works\nsage: point([1.00000000000000 + 0.500000000000000*I]) # nope\n```\n\n\nA little experimentation suggests that Python complexes also aren't supported.  Fixing this should also allow plotting `line`s in the complex plane pretty easily.\n\nI'm labeling this a defect rather than enhancement because it would be confusing not to have both.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9982\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @jasongrout @videlec\n\nSee #4838 and #8082 for the first addition of this.  Unfortunately, it only supports things like `CC`:\n\n\n```\nsage: point([CC(1.00000000000000 + 0.500000000000000*I)]) # works\nsage: point([1.00000000000000 + 0.500000000000000*I]) # nope\n```\n\n\nA little experimentation suggests that Python complexes also aren't supported.  Fixing this should also allow plotting `line`s in the complex plane pretty easily.\n\nI'm labeling this a defect rather than enhancement because it would be confusing not to have both.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9982\n\n",
     "created_at": "2010-09-23T18:21:33Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_009981.json:
     "title": "Allow plotting more complex points",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9981",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: jason, was
 
-CC:  jason vdelecroix
+CC:  @jasongrout @videlec
 
 See #4838 and #8082 for the first addition of this.  Unfortunately, it only supports things like `CC`:
 
@@ -50,7 +50,7 @@ archive/issue_comments_100311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9981#issuecomment-100311",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_100312.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9981#issuecomment-100312",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 

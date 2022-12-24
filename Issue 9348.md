@@ -14,7 +14,7 @@ archive/issues_009348.json:
     "title": "Building pari with -O1 rather than -O3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9348",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tbd
@@ -39,7 +39,7 @@ archive/issue_comments_088736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9348#issuecomment-88736",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_088737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9348#issuecomment-88737",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_088738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9348#issuecomment-88738",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_088739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9348#issuecomment-88739",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_088740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9348#issuecomment-88740",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007534.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  timdumol was\n\nTo avoid confusion, we should add a message to the top of each **old** Sage notebook .py file stating that one should work on [SageNB](http://nb.sagemath.org/) instead.\n\nThis should be a patch to the core Sage library.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7534\n\n",
+    "body": "Assignee: boothby\n\nCC:  @TimDumol @williamstein\n\nTo avoid confusion, we should add a message to the top of each **old** Sage notebook .py file stating that one should work on [SageNB](http://nb.sagemath.org/) instead.\n\nThis should be a patch to the core Sage library.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7534\n\n",
     "created_at": "2009-11-26T07:20:52Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007534.json:
     "title": "Add a deprecation message at the top of most sage.server.* files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7534",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: boothby
 
-CC:  timdumol was
+CC:  @TimDumol @williamstein
 
 To avoid confusion, we should add a message to the top of each **old** Sage notebook .py file stating that one should work on [SageNB](http://nb.sagemath.org/) instead.
 
@@ -42,7 +42,7 @@ archive/issue_comments_063890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7534#issuecomment-63890",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_063891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7534#issuecomment-63891",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_063892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7534#issuecomment-63892",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_063893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7534#issuecomment-63893",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -127,16 +127,16 @@ Changing status from new to needs_review.
 archive/issue_comments_063894.json:
 ```json
 {
-    "body": "Attachment [trac_7534-deprecation-message](tarball://root/attachments/some-uuid/ticket7534/trac_7534-deprecation-message) by timdumol created at 2009-11-30 06:26:20\n\nThis should do the job.",
+    "body": "Attachment [trac_7534-deprecation-message](tarball://root/attachments/some-uuid/ticket7534/trac_7534-deprecation-message) by @TimDumol created at 2009-11-30 06:26:20\n\nThis should do the job.",
     "created_at": "2009-11-30T06:26:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7534#issuecomment-63894",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7534-deprecation-message](tarball://root/attachments/some-uuid/ticket7534/trac_7534-deprecation-message) by timdumol created at 2009-11-30 06:26:20
+Attachment [trac_7534-deprecation-message](tarball://root/attachments/some-uuid/ticket7534/trac_7534-deprecation-message) by @TimDumol created at 2009-11-30 06:26:20
 
 This should do the job.
 
@@ -152,7 +152,7 @@ archive/issue_comments_063895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7534#issuecomment-63895",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_063896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7534#issuecomment-63896",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_063897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7534#issuecomment-63897",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_063898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7534#issuecomment-63898",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_063899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7534#issuecomment-63899",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -245,16 +245,16 @@ Adds `nodoctest.py` files.  Replacement patch.
 archive/issue_comments_063900.json:
 ```json
 {
-    "body": "Attachment [trac_7534-deprecation-message_v2.patch](tarball://root/attachments/some-uuid/ticket7534/trac_7534-deprecation-message_v2.patch) by mpatel created at 2009-12-10 12:17:29\n\nV2 suppresses doctesting for the \"deprecated\" files.",
+    "body": "Attachment [trac_7534-deprecation-message_v2.patch](tarball://root/attachments/some-uuid/ticket7534/trac_7534-deprecation-message_v2.patch) by @qed777 created at 2009-12-10 12:17:29\n\nV2 suppresses doctesting for the \"deprecated\" files.",
     "created_at": "2009-12-10T12:17:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7534#issuecomment-63900",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7534-deprecation-message_v2.patch](tarball://root/attachments/some-uuid/ticket7534/trac_7534-deprecation-message_v2.patch) by mpatel created at 2009-12-10 12:17:29
+Attachment [trac_7534-deprecation-message_v2.patch](tarball://root/attachments/some-uuid/ticket7534/trac_7534-deprecation-message_v2.patch) by @qed777 created at 2009-12-10 12:17:29
 
 V2 suppresses doctesting for the "deprecated" files.
 
@@ -270,7 +270,7 @@ archive/issue_comments_063901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7534#issuecomment-63901",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_063902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7534#issuecomment-63902",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_063903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7534#issuecomment-63903",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -324,7 +324,7 @@ archive/issue_comments_063904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7534#issuecomment-63904",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

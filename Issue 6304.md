@@ -105,7 +105,7 @@ archive/issue_comments_050305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6304",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6304#issuecomment-50305",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_050306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6304",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6304#issuecomment-50306",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -144,16 +144,16 @@ Changing component from algebra to combinatorics.
 archive/issue_comments_050307.json:
 ```json
 {
-    "body": "Changing assignee from tbd to mhansen.",
+    "body": "Changing assignee from tbd to @mwhansen.",
     "created_at": "2009-06-19T13:23:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6304",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6304#issuecomment-50307",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from tbd to mhansen.
+Changing assignee from tbd to @mwhansen.
 
 
 
@@ -189,7 +189,7 @@ archive/issue_comments_050309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6304",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6304#issuecomment-50309",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_050312.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6304",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6304#issuecomment-50312",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -552,7 +552,7 @@ archive/issue_comments_050322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6304",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6304#issuecomment-50322",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -570,7 +570,7 @@ archive/issue_comments_050323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6304",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6304#issuecomment-50323",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

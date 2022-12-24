@@ -3,7 +3,7 @@
 archive/issues_006761.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jason\n\nThis is inconsistent with solve_right and contrary to the documentation. \n\n\n```\nsage: A = random_matrix(ZZ, 5)\nsage: b = vector(ZZ, range(5))\nsage: A.solve_left(b)\n[    47/630  -233/1170       2/65     34/819 -5269/8190]\nsage: A.solve_left(b).parent()\nFull MatrixSpace of 1 by 5 dense matrices over Rational Field\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6761\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nThis is inconsistent with solve_right and contrary to the documentation. \n\n\n```\nsage: A = random_matrix(ZZ, 5)\nsage: b = vector(ZZ, range(5))\nsage: A.solve_left(b)\n[    47/630  -233/1170       2/65     34/819 -5269/8190]\nsage: A.solve_left(b).parent()\nFull MatrixSpace of 1 by 5 dense matrices over Rational Field\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6761\n\n",
     "created_at": "2009-08-16T09:13:10Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_006761.json:
     "title": "solve_left on a vector returns a matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6761",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jason
+CC:  @jasongrout
 
 This is inconsistent with solve_right and contrary to the documentation. 
 
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6761
 archive/issue_comments_055667.json:
 ```json
 {
-    "body": "Attachment [trac_6761.patch](tarball://root/attachments/some-uuid/ticket6761/trac_6761.patch) by klee created at 2009-11-06 08:13:07",
+    "body": "Attachment [trac_6761.patch](tarball://root/attachments/some-uuid/ticket6761/trac_6761.patch) by @kwankyu created at 2009-11-06 08:13:07",
     "created_at": "2009-11-06T08:13:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6761#issuecomment-55667",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
-Attachment [trac_6761.patch](tarball://root/attachments/some-uuid/ticket6761/trac_6761.patch) by klee created at 2009-11-06 08:13:07
+Attachment [trac_6761.patch](tarball://root/attachments/some-uuid/ticket6761/trac_6761.patch) by @kwankyu created at 2009-11-06 08:13:07
 
 
 
@@ -68,7 +68,7 @@ archive/issue_comments_055668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6761#issuecomment-55668",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_055669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6761#issuecomment-55669",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_055670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6761#issuecomment-55670",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_055671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6761#issuecomment-55671",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

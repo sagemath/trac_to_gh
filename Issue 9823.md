@@ -3,7 +3,7 @@
 archive/issues_009823.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  robert.marik\n\nKeywords: calculus, maxima, symbolics\n\ndesolve_system apparently ignores initial conditions.  Notice the identical results in the two calls in the following example.\n\n\n```\nsage: t = var('t')\nsage: epsilon = var('epsilon')\nsage: x1 = function('x1', t)\nsage: x2 = function('x2', t)\nsage: de1 = diff(x1,t) == epsilon\nsage: de2 = diff(x2,t) == -2\nsage: desolve_system([de1, de2], [x1, x2], ivar=t)\n[x1(t) == epsilon*t + x1(0), x2(t) == -2*t + x2(0)]\nsage: desolve_system([de1, de2], [x1, x2], ics=[1,1], ivar=t)\n[x1(t) == epsilon*t + x1(0), x2(t) == -2*t + x2(0)] \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9824\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @robert-marik\n\nKeywords: calculus, maxima, symbolics\n\ndesolve_system apparently ignores initial conditions.  Notice the identical results in the two calls in the following example.\n\n\n```\nsage: t = var('t')\nsage: epsilon = var('epsilon')\nsage: x1 = function('x1', t)\nsage: x2 = function('x2', t)\nsage: de1 = diff(x1,t) == epsilon\nsage: de2 = diff(x2,t) == -2\nsage: desolve_system([de1, de2], [x1, x2], ivar=t)\n[x1(t) == epsilon*t + x1(0), x2(t) == -2*t + x2(0)]\nsage: desolve_system([de1, de2], [x1, x2], ics=[1,1], ivar=t)\n[x1(t) == epsilon*t + x1(0), x2(t) == -2*t + x2(0)] \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9824\n\n",
     "created_at": "2010-08-27T16:42:45Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_009823.json:
     "title": "desolve_system ignores initial conditions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9823",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  robert.marik
+CC:  @robert-marik
 
 Keywords: calculus, maxima, symbolics
 
@@ -56,7 +56,7 @@ archive/issue_comments_096885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9823#issuecomment-96885",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_096886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9823#issuecomment-96886",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_096887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9823#issuecomment-96887",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_096888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9823#issuecomment-96888",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_096889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9823#issuecomment-96889",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_096890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9823#issuecomment-96890",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_096893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9823#issuecomment-96893",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_096894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9823#issuecomment-96894",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_096895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9823#issuecomment-96895",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

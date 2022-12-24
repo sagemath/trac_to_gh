@@ -3,7 +3,7 @@
 archive/issues_009326.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  novoselt\n\nThis patch adds a cohomology ring to toric varieties. This is then used for characteristic classes.\n\nI'm using the usual description of the rational cohomology ring via the Stanley-Reisner ideal of the fan. This does not work for singular varities with worse than orbifold singularities. I don't have any good candidate for the \"space where the Chern classes live\" in that case. \n\nApplies on top of \n* #9245: trac_9245_named_toric_varieties.py\n* #8988: trac_8988_Kahlercone_lattice.patch\n* #9296: trac_9296_lattice_computations_for_cones.patch\nand their prerequisites...\n\nIssue created by migration from https://trac.sagemath.org/ticket/9326\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @novoselt\n\nThis patch adds a cohomology ring to toric varieties. This is then used for characteristic classes.\n\nI'm using the usual description of the rational cohomology ring via the Stanley-Reisner ideal of the fan. This does not work for singular varities with worse than orbifold singularities. I don't have any good candidate for the \"space where the Chern classes live\" in that case. \n\nApplies on top of \n* #9245: trac_9245_named_toric_varieties.py\n* #8988: trac_8988_Kahlercone_lattice.patch\n* #9296: trac_9296_lattice_computations_for_cones.patch\nand their prerequisites...\n\nIssue created by migration from https://trac.sagemath.org/ticket/9326\n\n",
     "created_at": "2010-06-24T10:46:02Z",
     "labels": [
         "algebraic geometry",
@@ -14,12 +14,12 @@ archive/issues_009326.json:
     "title": "Add cohomology of toric varieties",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9326",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  novoselt
+CC:  @novoselt
 
 This patch adds a cohomology ring to toric varieties. This is then used for characteristic classes.
 
@@ -47,7 +47,7 @@ archive/issue_comments_087945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87945",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_087946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87946",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_087947.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87947",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_087948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87948",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_087949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87949",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_087950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87950",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_087951.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87951",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_087952.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87952",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_087953.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87953",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_087954.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87954",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -278,7 +278,7 @@ archive/issue_comments_087955.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87955",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -296,7 +296,7 @@ archive/issue_comments_087956.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87956",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -309,16 +309,16 @@ Test patch, breaks coercion for many rings for some reason.
 archive/issue_comments_087957.json:
 ```json
 {
-    "body": "Attachment [first_attempt.patch](tarball://root/attachments/some-uuid/ticket9326/first_attempt.patch) by novoselt created at 2010-07-06 15:56:34\n\nThis patch is actually related to #9429, so I am moving there.",
+    "body": "Attachment [first_attempt.patch](tarball://root/attachments/some-uuid/ticket9326/first_attempt.patch) by @novoselt created at 2010-07-06 15:56:34\n\nThis patch is actually related to #9429, so I am moving there.",
     "created_at": "2010-07-06T15:56:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87957",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [first_attempt.patch](tarball://root/attachments/some-uuid/ticket9326/first_attempt.patch) by novoselt created at 2010-07-06 15:56:34
+Attachment [first_attempt.patch](tarball://root/attachments/some-uuid/ticket9326/first_attempt.patch) by @novoselt created at 2010-07-06 15:56:34
 
 This patch is actually related to #9429, so I am moving there.
 
@@ -334,7 +334,7 @@ archive/issue_comments_087958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87958",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -354,7 +354,7 @@ archive/issue_comments_087959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87959",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -372,7 +372,7 @@ archive/issue_comments_087960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87960",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -417,7 +417,7 @@ archive/issue_comments_087961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87961",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -435,7 +435,7 @@ archive/issue_comments_087962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87962",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -453,7 +453,7 @@ archive/issue_comments_087963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87963",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -483,7 +483,7 @@ archive/issue_comments_087964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87964",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -505,7 +505,7 @@ archive/issue_comments_087965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87965",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -539,7 +539,7 @@ archive/issue_comments_087966.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87966",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -557,7 +557,7 @@ archive/issue_comments_087967.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87967",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -570,16 +570,16 @@ Move cohomology_class() method from ToricVariety_field to Cone_of_toric_variety.
 archive/issue_comments_087968.json:
 ```json
 {
-    "body": "Attachment [trac_9326_QuotientRing_fix_derived_classes.2.patch](tarball://root/attachments/some-uuid/ticket9326/trac_9326_QuotientRing_fix_derived_classes.2.patch) by novoselt created at 2010-07-27 06:36:20\n\nRebase against 4.5.alpha0",
+    "body": "Attachment [trac_9326_QuotientRing_fix_derived_classes.2.patch](tarball://root/attachments/some-uuid/ticket9326/trac_9326_QuotientRing_fix_derived_classes.2.patch) by @novoselt created at 2010-07-27 06:36:20\n\nRebase against 4.5.alpha0",
     "created_at": "2010-07-27T06:36:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87968",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_9326_QuotientRing_fix_derived_classes.2.patch](tarball://root/attachments/some-uuid/ticket9326/trac_9326_QuotientRing_fix_derived_classes.2.patch) by novoselt created at 2010-07-27 06:36:20
+Attachment [trac_9326_QuotientRing_fix_derived_classes.2.patch](tarball://root/attachments/some-uuid/ticket9326/trac_9326_QuotientRing_fix_derived_classes.2.patch) by @novoselt created at 2010-07-27 06:36:20
 
 Rebase against 4.5.alpha0
 
@@ -595,7 +595,7 @@ archive/issue_comments_087969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87969",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -613,7 +613,7 @@ archive/issue_comments_087970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87970",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -626,16 +626,16 @@ fix coverage warnings
 archive/issue_comments_087971.json:
 ```json
 {
-    "body": "Attachment [trac_9326_toric_variety_cohomology.patch](tarball://root/attachments/some-uuid/ticket9326/trac_9326_toric_variety_cohomology.patch) by novoselt created at 2010-07-27 17:19:49\n\nAwesome! I have a few little changes and typo fixes which I will post later today and if you agree with them it goes to positive review!",
+    "body": "Attachment [trac_9326_toric_variety_cohomology.patch](tarball://root/attachments/some-uuid/ticket9326/trac_9326_toric_variety_cohomology.patch) by @novoselt created at 2010-07-27 17:19:49\n\nAwesome! I have a few little changes and typo fixes which I will post later today and if you agree with them it goes to positive review!",
     "created_at": "2010-07-27T17:19:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87971",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_9326_toric_variety_cohomology.patch](tarball://root/attachments/some-uuid/ticket9326/trac_9326_toric_variety_cohomology.patch) by novoselt created at 2010-07-27 17:19:49
+Attachment [trac_9326_toric_variety_cohomology.patch](tarball://root/attachments/some-uuid/ticket9326/trac_9326_toric_variety_cohomology.patch) by @novoselt created at 2010-07-27 17:19:49
 
 Awesome! I have a few little changes and typo fixes which I will post later today and if you agree with them it goes to positive review!
 
@@ -646,16 +646,16 @@ Awesome! I have a few little changes and typo fixes which I will post later toda
 archive/issue_comments_087972.json:
 ```json
 {
-    "body": "Attachment [trac_9326_toric_cohomology_reviewer.patch](tarball://root/attachments/some-uuid/ticket9326/trac_9326_toric_cohomology_reviewer.patch) by novoselt created at 2010-07-28 04:54:46\n\nOK, here is the patch, let me know if you approve it. I have\n* changed `_latex_` to give LaTeX representation of the lift-polynomial, I think it is better than using text representation;\n* made `cohomology_basis` return tuple of tuples so that it does not get changed accidentally, I also rewrote its computation using list comprehension instead of functional style since I got a little confused. Of course, this is just me, so I am ready to change it back if you want. I actually though that calling `map` and filter should be faster, but\n {{{\nsage: L = [1..1000]\nsage: timeit(\"[e for e in L]\", number=10000)\n10000 loops, best of 3: 114 \u00b5s per loop\nsage: timeit(\"map(lambda x: x, L)\", number=10000)\n10000 loops, best of 3: 263 \u00b5s per loop\nsage: timeit(\"[e for e in L if e > 50]\", number=10000)\n10000 loops, best of 3: 637 \u00b5s per loop\nsage: timeit(\"filter(lambda x: x > 50, L)\", number=10000)\n10000 loops, best of 3: 775 \u00b5s per loop\n}}}\n so it seems that actually list comprehension is a little more efficient. My variant also does the degree splitting in a single pass through the full basis;\n* made changes in a couple of places to check for existence of cached value before checking for errors (my sneaky plan is to allow myself to circumvent you characteristic zero defense system by setting `_cohomology_ring` directly if I wish so, but for sane users everything will work exactly as you have written it originally ;-));\n* some little changes to the documentation, see the patch.\n\nI'll now run complete tests including this patch, to make sure there are no surprises in unrelated places, but if you are happy with modifications I am ready to switch it to positive review.",
+    "body": "Attachment [trac_9326_toric_cohomology_reviewer.patch](tarball://root/attachments/some-uuid/ticket9326/trac_9326_toric_cohomology_reviewer.patch) by @novoselt created at 2010-07-28 04:54:46\n\nOK, here is the patch, let me know if you approve it. I have\n* changed `_latex_` to give LaTeX representation of the lift-polynomial, I think it is better than using text representation;\n* made `cohomology_basis` return tuple of tuples so that it does not get changed accidentally, I also rewrote its computation using list comprehension instead of functional style since I got a little confused. Of course, this is just me, so I am ready to change it back if you want. I actually though that calling `map` and filter should be faster, but\n {{{\nsage: L = [1..1000]\nsage: timeit(\"[e for e in L]\", number=10000)\n10000 loops, best of 3: 114 \u00b5s per loop\nsage: timeit(\"map(lambda x: x, L)\", number=10000)\n10000 loops, best of 3: 263 \u00b5s per loop\nsage: timeit(\"[e for e in L if e > 50]\", number=10000)\n10000 loops, best of 3: 637 \u00b5s per loop\nsage: timeit(\"filter(lambda x: x > 50, L)\", number=10000)\n10000 loops, best of 3: 775 \u00b5s per loop\n}}}\n so it seems that actually list comprehension is a little more efficient. My variant also does the degree splitting in a single pass through the full basis;\n* made changes in a couple of places to check for existence of cached value before checking for errors (my sneaky plan is to allow myself to circumvent you characteristic zero defense system by setting `_cohomology_ring` directly if I wish so, but for sane users everything will work exactly as you have written it originally ;-));\n* some little changes to the documentation, see the patch.\n\nI'll now run complete tests including this patch, to make sure there are no surprises in unrelated places, but if you are happy with modifications I am ready to switch it to positive review.",
     "created_at": "2010-07-28T04:54:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87972",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_9326_toric_cohomology_reviewer.patch](tarball://root/attachments/some-uuid/ticket9326/trac_9326_toric_cohomology_reviewer.patch) by novoselt created at 2010-07-28 04:54:46
+Attachment [trac_9326_toric_cohomology_reviewer.patch](tarball://root/attachments/some-uuid/ticket9326/trac_9326_toric_cohomology_reviewer.patch) by @novoselt created at 2010-07-28 04:54:46
 
 OK, here is the patch, let me know if you approve it. I have
 * changed `_latex_` to give LaTeX representation of the lift-polynomial, I think it is better than using text representation;
@@ -689,7 +689,7 @@ archive/issue_comments_087973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87973",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -707,7 +707,7 @@ archive/issue_comments_087974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87974",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -725,7 +725,7 @@ archive/issue_comments_087975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87975",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -743,7 +743,7 @@ archive/issue_comments_087976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87976",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -760,16 +760,16 @@ Thank you ;-) For the release manager: please merge patches in the following ord
 archive/issue_comments_087977.json:
 ```json
 {
-    "body": "Attachment [trac_9326_QuotientRing_fix_derived_classes.patch](tarball://root/attachments/some-uuid/ticket9326/trac_9326_QuotientRing_fix_derived_classes.patch) by vbraun created at 2010-08-08 16:05:02\n\nRefreshed patch for sage-4.5.2",
+    "body": "Attachment [trac_9326_QuotientRing_fix_derived_classes.patch](tarball://root/attachments/some-uuid/ticket9326/trac_9326_QuotientRing_fix_derived_classes.patch) by @vbraun created at 2010-08-08 16:05:02\n\nRefreshed patch for sage-4.5.2",
     "created_at": "2010-08-08T16:05:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87977",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [trac_9326_QuotientRing_fix_derived_classes.patch](tarball://root/attachments/some-uuid/ticket9326/trac_9326_QuotientRing_fix_derived_classes.patch) by vbraun created at 2010-08-08 16:05:02
+Attachment [trac_9326_QuotientRing_fix_derived_classes.patch](tarball://root/attachments/some-uuid/ticket9326/trac_9326_QuotientRing_fix_derived_classes.patch) by @vbraun created at 2010-08-08 16:05:02
 
 Refreshed patch for sage-4.5.2
 
@@ -785,7 +785,7 @@ archive/issue_comments_087978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87978",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -808,7 +808,7 @@ archive/issue_comments_087979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9326#issuecomment-87979",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

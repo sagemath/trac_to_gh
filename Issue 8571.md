@@ -3,7 +3,7 @@
 archive/issues_008571.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  nthiery\n\nKeywords: abstract methods\n\nCurrently, the documentation of abstract methods has two annoying problems:\n- it doesn't appear when asked with \"?\" \n- nothing says that they are abstract method in the doc.\nThis should be fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8571\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @nthiery\n\nKeywords: abstract methods\n\nCurrently, the documentation of abstract methods has two annoying problems:\n- it doesn't appear when asked with \"?\" \n- nothing says that they are abstract method in the doc.\nThis should be fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8571\n\n",
     "created_at": "2010-03-21T18:47:03Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_008571.json:
     "title": "Fix the documentation of abstract methods.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8571",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 Assignee: mvngu
 
-CC:  nthiery
+CC:  @nthiery
 
 Keywords: abstract methods
 
@@ -44,7 +44,7 @@ archive/issue_comments_077631.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8571#issuecomment-77631",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

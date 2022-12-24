@@ -3,7 +3,7 @@
 archive/issues_007245.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  craigcitro\n\nKeywords: merge apply ticket\n\nThe ` sage -merge ` script doesn't detect tickets as being marked positively reviewed if they don't have \"positive review\" in the title.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7245\n\n",
+    "body": "Assignee: tbd\n\nCC:  @craigcitro\n\nKeywords: merge apply ticket\n\nThe ` sage -merge ` script doesn't detect tickets as being marked positively reviewed if they don't have \"positive review\" in the title.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7245\n\n",
     "created_at": "2009-10-19T05:28:56Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_007245.json:
     "title": "sage -merge misses positively reviewed tickets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7245",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
 
-CC:  craigcitro
+CC:  @craigcitro
 
 Keywords: merge apply ticket
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7245
 archive/issue_comments_060156.json:
 ```json
 {
-    "body": "Attachment [trac_7245.patch](tarball://root/attachments/some-uuid/ticket7245/trac_7245.patch) by mhansen created at 2009-10-19 05:30:09\n\nApply to the scripts repository",
+    "body": "Attachment [trac_7245.patch](tarball://root/attachments/some-uuid/ticket7245/trac_7245.patch) by @mwhansen created at 2009-10-19 05:30:09\n\nApply to the scripts repository",
     "created_at": "2009-10-19T05:30:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7245#issuecomment-60156",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_7245.patch](tarball://root/attachments/some-uuid/ticket7245/trac_7245.patch) by mhansen created at 2009-10-19 05:30:09
+Attachment [trac_7245.patch](tarball://root/attachments/some-uuid/ticket7245/trac_7245.patch) by @mwhansen created at 2009-10-19 05:30:09
 
 Apply to the scripts repository
 
@@ -61,7 +61,7 @@ archive/issue_comments_060157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7245#issuecomment-60157",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_060158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7245#issuecomment-60158",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_060159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7245#issuecomment-60159",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_060160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7245#issuecomment-60160",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

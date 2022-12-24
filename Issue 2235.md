@@ -14,7 +14,7 @@ archive/issues_002235.json:
     "title": "doctest issue -- combining # long and # 32-bit / # 64-bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2235",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 Assignee: failure
@@ -39,7 +39,7 @@ archive/issue_comments_014800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2235#issuecomment-14800",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_014801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2235#issuecomment-14801",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -70,16 +70,16 @@ Just need to add a doctest that this works now.
 archive/issue_comments_014802.json:
 ```json
 {
-    "body": "Attachment [2235_long_time.patch](tarball://root/attachments/some-uuid/ticket2235/2235_long_time.patch) by jdemeyer created at 2013-03-13 10:37:56",
+    "body": "Attachment [2235_long_time.patch](tarball://root/attachments/some-uuid/ticket2235/2235_long_time.patch) by @jdemeyer created at 2013-03-13 10:37:56",
     "created_at": "2013-03-13T10:37:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2235#issuecomment-14802",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [2235_long_time.patch](tarball://root/attachments/some-uuid/ticket2235/2235_long_time.patch) by jdemeyer created at 2013-03-13 10:37:56
+Attachment [2235_long_time.patch](tarball://root/attachments/some-uuid/ticket2235/2235_long_time.patch) by @jdemeyer created at 2013-03-13 10:37:56
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_014803.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2235#issuecomment-14803",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_014804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2235#issuecomment-14804",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_014805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2235#issuecomment-14805",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_014806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2235#issuecomment-14806",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_014807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2235#issuecomment-14807",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 

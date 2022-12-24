@@ -3,7 +3,7 @@
 archive/issues_008588.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  sage-combinat\n\nKeywords: Special linear group, TestSuite\n\n\n```\nsage: G = SL(2,2)\nsage: TestSuite(G).run()\nFailure in _test_enumerated_set_iter_list:\nTraceback (most recent call last):\n...\nAssertionError: [1 1]\n[0 1] != [1 0]\n[0 1]\n------------------------------------------------------------\nThe following tests failed: _test_enumerated_set_iter_list\n\nsage: list(G)[2]\n[1 1]\n[0 1]\nsage: G.list()[2]\n[1 0]\n[0 1]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8588\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nKeywords: Special linear group, TestSuite\n\n\n```\nsage: G = SL(2,2)\nsage: TestSuite(G).run()\nFailure in _test_enumerated_set_iter_list:\nTraceback (most recent call last):\n...\nAssertionError: [1 1]\n[0 1] != [1 0]\n[0 1]\n------------------------------------------------------------\nThe following tests failed: _test_enumerated_set_iter_list\n\nsage: list(G)[2]\n[1 1]\n[0 1]\nsage: G.list()[2]\n[1 0]\n[0 1]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8588\n\n",
     "created_at": "2010-03-23T16:29:31Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_008588.json:
     "title": "list(SL(2,2)) is inconsistent with SL(2,2).list()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8588",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 CC:  sage-combinat
 
@@ -56,16 +56,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8588
 archive/issue_comments_077775.json:
 ```json
 {
-    "body": "Attachment [trac-8588](tarball://root/attachments/some-uuid/ticket8588/trac-8588) by itaibn created at 2012-05-30 00:39:37",
+    "body": "Attachment [trac-8588](tarball://root/attachments/some-uuid/ticket8588/trac-8588) by @itaibn created at 2012-05-30 00:39:37",
     "created_at": "2012-05-30T00:39:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8588#issuecomment-77775",
-    "user": "itaibn"
+    "user": "@itaibn"
 }
 ```
 
-Attachment [trac-8588](tarball://root/attachments/some-uuid/ticket8588/trac-8588) by itaibn created at 2012-05-30 00:39:37
+Attachment [trac-8588](tarball://root/attachments/some-uuid/ticket8588/trac-8588) by @itaibn created at 2012-05-30 00:39:37
 
 
 
@@ -79,7 +79,7 @@ archive/issue_comments_077776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8588#issuecomment-77776",
-    "user": "itaibn"
+    "user": "@itaibn"
 }
 ```
 
@@ -92,16 +92,16 @@ Just attached a fix.
 archive/issue_comments_077777.json:
 ```json
 {
-    "body": "Attachment [trac-8588-2](tarball://root/attachments/some-uuid/ticket8588/trac-8588-2) by itaibn created at 2012-06-04 22:14:41\n\nFixed a typo and improved the formatting.",
+    "body": "Attachment [trac-8588-2](tarball://root/attachments/some-uuid/ticket8588/trac-8588-2) by @itaibn created at 2012-06-04 22:14:41\n\nFixed a typo and improved the formatting.",
     "created_at": "2012-06-04T22:14:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8588#issuecomment-77777",
-    "user": "itaibn"
+    "user": "@itaibn"
 }
 ```
 
-Attachment [trac-8588-2](tarball://root/attachments/some-uuid/ticket8588/trac-8588-2) by itaibn created at 2012-06-04 22:14:41
+Attachment [trac-8588-2](tarball://root/attachments/some-uuid/ticket8588/trac-8588-2) by @itaibn created at 2012-06-04 22:14:41
 
 Fixed a typo and improved the formatting.
 
@@ -117,7 +117,7 @@ archive/issue_comments_077778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8588#issuecomment-77778",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_077779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8588#issuecomment-77779",
-    "user": "itaibn"
+    "user": "@itaibn"
 }
 ```
 
@@ -154,16 +154,16 @@ The reason I this fix is that I assumed that whoever made that test knew what th
 archive/issue_comments_077780.json:
 ```json
 {
-    "body": "Attachment [trac-8588-3](tarball://root/attachments/some-uuid/ticket8588/trac-8588-3) by aapitzsch created at 2014-08-18 21:50:01\n\nI got\n\n```\nsage: G = SL(2,2)\nsage: TestSuite(G).run()\nsage: list(G)[2]\n[0 1]\n[1 1]\nsage: G.list()[2]\n[0 1]\n[1 1]\n\n```\n",
+    "body": "Attachment [trac-8588-3](tarball://root/attachments/some-uuid/ticket8588/trac-8588-3) by @a-andre created at 2014-08-18 21:50:01\n\nI got\n\n```\nsage: G = SL(2,2)\nsage: TestSuite(G).run()\nsage: list(G)[2]\n[0 1]\n[1 1]\nsage: G.list()[2]\n[0 1]\n[1 1]\n\n```\n",
     "created_at": "2014-08-18T21:50:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8588#issuecomment-77780",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
-Attachment [trac-8588-3](tarball://root/attachments/some-uuid/ticket8588/trac-8588-3) by aapitzsch created at 2014-08-18 21:50:01
+Attachment [trac-8588-3](tarball://root/attachments/some-uuid/ticket8588/trac-8588-3) by @a-andre created at 2014-08-18 21:50:01
 
 I got
 
@@ -192,7 +192,7 @@ archive/issue_comments_077781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8588#issuecomment-77781",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_077782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8588#issuecomment-77782",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

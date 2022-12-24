@@ -3,7 +3,7 @@
 archive/issues_002079.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  robertwb\n\n\n```\nsage: R.<x> = QQ[]\nsage: a = 2*x^2+2; a\n2*x^2 + 2\nsage: a /= 2\nsage: a\n2*x^2 + 2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2079\n\n",
+    "body": "Assignee: somebody\n\nCC:  @robertwb\n\n\n```\nsage: R.<x> = QQ[]\nsage: a = 2*x^2+2; a\n2*x^2 + 2\nsage: a /= 2\nsage: a\n2*x^2 + 2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2079\n\n",
     "created_at": "2008-02-07T05:24:30Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_002079.json:
     "title": "/= does not work for univariate polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2079",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: somebody
 
-CC:  robertwb
+CC:  @robertwb
 
 
 ```
@@ -48,7 +48,7 @@ archive/issue_comments_013451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2079#issuecomment-13451",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_013452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2079#issuecomment-13452",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_013453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2079#issuecomment-13453",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_013454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2079#issuecomment-13454",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_013455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2079#issuecomment-13455",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_013456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2079#issuecomment-13456",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_013457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2079#issuecomment-13457",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_013458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2079#issuecomment-13458",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -274,16 +274,16 @@ fixes the problem, but needs an additional patch from Robert.
 archive/issue_comments_013459.json:
 ```json
 {
-    "body": "Attachment [sage-2079.patch](tarball://root/attachments/some-uuid/ticket2079/sage-2079.patch) by robertwb created at 2008-02-19 04:09:48\n\nI figured out what the issue is. I will post a fix tonight (after making sure it breaks nothing else, and adding more doctests/consistency checks.)",
+    "body": "Attachment [sage-2079.patch](tarball://root/attachments/some-uuid/ticket2079/sage-2079.patch) by @robertwb created at 2008-02-19 04:09:48\n\nI figured out what the issue is. I will post a fix tonight (after making sure it breaks nothing else, and adding more doctests/consistency checks.)",
     "created_at": "2008-02-19T04:09:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2079#issuecomment-13459",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [sage-2079.patch](tarball://root/attachments/some-uuid/ticket2079/sage-2079.patch) by robertwb created at 2008-02-19 04:09:48
+Attachment [sage-2079.patch](tarball://root/attachments/some-uuid/ticket2079/sage-2079.patch) by @robertwb created at 2008-02-19 04:09:48
 
 I figured out what the issue is. I will post a fix tonight (after making sure it breaks nothing else, and adding more doctests/consistency checks.)
 
@@ -299,7 +299,7 @@ archive/issue_comments_013460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2079#issuecomment-13460",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -338,16 +338,16 @@ f = (x^2+1) * Mod(1,5)
 archive/issue_comments_013461.json:
 ```json
 {
-    "body": "Attachment [2079-coerce.patch](tarball://root/attachments/some-uuid/ticket2079/2079-coerce.patch) by robertwb created at 2008-02-19 10:26:36",
+    "body": "Attachment [2079-coerce.patch](tarball://root/attachments/some-uuid/ticket2079/2079-coerce.patch) by @robertwb created at 2008-02-19 10:26:36",
     "created_at": "2008-02-19T10:26:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2079#issuecomment-13461",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2079-coerce.patch](tarball://root/attachments/some-uuid/ticket2079/2079-coerce.patch) by robertwb created at 2008-02-19 10:26:36
+Attachment [2079-coerce.patch](tarball://root/attachments/some-uuid/ticket2079/2079-coerce.patch) by @robertwb created at 2008-02-19 10:26:36
 
 
 
@@ -356,16 +356,16 @@ Attachment [2079-coerce.patch](tarball://root/attachments/some-uuid/ticket2079/2
 archive/issue_comments_013462.json:
 ```json
 {
-    "body": "Attachment [2079-coerce3.patch](tarball://root/attachments/some-uuid/ticket2079/2079-coerce3.patch) by robertwb created at 2008-02-19 10:28:14",
+    "body": "Attachment [2079-coerce3.patch](tarball://root/attachments/some-uuid/ticket2079/2079-coerce3.patch) by @robertwb created at 2008-02-19 10:28:14",
     "created_at": "2008-02-19T10:28:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2079#issuecomment-13462",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2079-coerce3.patch](tarball://root/attachments/some-uuid/ticket2079/2079-coerce3.patch) by robertwb created at 2008-02-19 10:28:14
+Attachment [2079-coerce3.patch](tarball://root/attachments/some-uuid/ticket2079/2079-coerce3.patch) by @robertwb created at 2008-02-19 10:28:14
 
 
 
@@ -379,7 +379,7 @@ archive/issue_comments_013463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2079#issuecomment-13463",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_013464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2079#issuecomment-13464",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -421,7 +421,7 @@ archive/issue_comments_013465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2079#issuecomment-13465",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

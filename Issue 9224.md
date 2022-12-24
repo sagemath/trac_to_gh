@@ -3,7 +3,7 @@
 archive/issues_009224.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  cwitty ddrake drkirkby jhpalmieri leif wjp\n\nWe currently have separate single and multi-threaded Sage doctest scripts.  In particular, `sage -t ...` invokes `SAGE_ROOT/local/bin/sage-test` and `sage -tp ...` invokes `sage-ptest`.  These files share many lines of almost functionally identical identical code.  Unifying these scripts should make it easier to maintain and extend the Sage doctest system.\n\nRelated: #2379, #7993, #7995, #8641.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9224\n\n",
+    "body": "Assignee: mvngu\n\nCC:  cwitty @dandrake drkirkby @jhpalmieri @nexttime @wjp\n\nWe currently have separate single and multi-threaded Sage doctest scripts.  In particular, `sage -t ...` invokes `SAGE_ROOT/local/bin/sage-test` and `sage -tp ...` invokes `sage-ptest`.  These files share many lines of almost functionally identical identical code.  Unifying these scripts should make it easier to maintain and extend the Sage doctest system.\n\nRelated: #2379, #7993, #7995, #8641.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9224\n\n",
     "created_at": "2010-06-12T09:55:23Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_009224.json:
     "title": "Unify sage-test and sage-ptest",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9224",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: mvngu
 
-CC:  cwitty ddrake drkirkby jhpalmieri leif wjp
+CC:  cwitty @dandrake drkirkby @jhpalmieri @nexttime @wjp
 
 We currently have separate single and multi-threaded Sage doctest scripts.  In particular, `sage -t ...` invokes `SAGE_ROOT/local/bin/sage-test` and `sage -tp ...` invokes `sage-ptest`.  These files share many lines of almost functionally identical identical code.  Unifying these scripts should make it easier to maintain and extend the Sage doctest system.
 
@@ -41,7 +41,7 @@ archive/issue_comments_086531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9224",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9224#issuecomment-86531",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_086532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9224",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9224#issuecomment-86532",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_086533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9224",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9224#issuecomment-86533",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_086534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9224",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9224#issuecomment-86534",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_086535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9224",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9224#issuecomment-86535",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -156,16 +156,16 @@ I've opened #9225 for possible new [optional] doctesting features.  Feel free to
 archive/issue_comments_086536.json:
 ```json
 {
-    "body": "Attachment [doctest.py](tarball://root/attachments/some-uuid/ticket9224/doctest.py) by mpatel created at 2010-07-15 01:49:12\n\n`Doctester` class pseudo-interface.  Not a patch.",
+    "body": "Attachment [doctest.py](tarball://root/attachments/some-uuid/ticket9224/doctest.py) by @qed777 created at 2010-07-15 01:49:12\n\n`Doctester` class pseudo-interface.  Not a patch.",
     "created_at": "2010-07-15T01:49:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9224",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9224#issuecomment-86536",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [doctest.py](tarball://root/attachments/some-uuid/ticket9224/doctest.py) by mpatel created at 2010-07-15 01:49:12
+Attachment [doctest.py](tarball://root/attachments/some-uuid/ticket9224/doctest.py) by @qed777 created at 2010-07-15 01:49:12
 
 `Doctester` class pseudo-interface.  Not a patch.
 
@@ -181,7 +181,7 @@ archive/issue_comments_086537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9224",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9224#issuecomment-86537",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_086538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9224",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9224#issuecomment-86538",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_086539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9224",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9224#issuecomment-86539",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_086541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9224",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9224#issuecomment-86541",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -308,7 +308,7 @@ archive/issue_comments_086543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9224",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9224#issuecomment-86543",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -419,7 +419,7 @@ archive/issue_comments_086544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9224",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9224#issuecomment-86544",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -443,7 +443,7 @@ archive/issue_comments_086545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9224",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9224#issuecomment-86545",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -461,7 +461,7 @@ archive/issue_comments_086546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9224",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9224#issuecomment-86546",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -493,7 +493,7 @@ archive/issue_comments_086547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9224",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9224#issuecomment-86547",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -517,7 +517,7 @@ archive/issue_comments_086548.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9224",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9224#issuecomment-86548",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -535,7 +535,7 @@ archive/issue_comments_086549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9224",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9224#issuecomment-86549",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -553,7 +553,7 @@ archive/issue_comments_086550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9224",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9224#issuecomment-86550",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

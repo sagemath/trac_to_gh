@@ -3,7 +3,7 @@
 archive/issues_001187.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nThe following should work and be instant:\n\n\n```\nsage: G = SymmetricGroup(5)\nsage: G.conjugacy_classes_subgroups()\n\nRuntimeError:\nGap produced error output\nVariable: 'Sym' must have a value\n\n\n   executing $sage85:=Sym( [ 1 .. 5 ] );;\n```\n\n\n\nI really wanted this to find out which representative subgroups\nare transitive, but can't do that either since `G.is_transitive()`\nisn't wrapped -- since Gap has IsTransitive, this would be trivial to wrap.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1187\n\n",
+    "body": "Assignee: @mwhansen\n\nThe following should work and be instant:\n\n\n```\nsage: G = SymmetricGroup(5)\nsage: G.conjugacy_classes_subgroups()\n\nRuntimeError:\nGap produced error output\nVariable: 'Sym' must have a value\n\n\n   executing $sage85:=Sym( [ 1 .. 5 ] );;\n```\n\n\n\nI really wanted this to find out which representative subgroups\nare transitive, but can't do that either since `G.is_transitive()`\nisn't wrapped -- since Gap has IsTransitive, this would be trivial to wrap.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1187\n\n",
     "created_at": "2007-11-16T20:45:35Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001187.json:
     "title": "bug in G.conjugacy_classes_subgroups()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1187",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 The following should work and be instant:
 
@@ -56,7 +56,7 @@ archive/issue_comments_007328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1187#issuecomment-7328",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -69,16 +69,16 @@ Changing component from combinatorics to group_theory.
 archive/issue_comments_007329.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to joyner.",
+    "body": "Changing assignee from @mwhansen to joyner.",
     "created_at": "2008-04-24T22:25:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1187#issuecomment-7329",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from mhansen to joyner.
+Changing assignee from @mwhansen to joyner.
 
 
 
@@ -87,16 +87,16 @@ Changing assignee from mhansen to joyner.
 archive/issue_comments_007330.json:
 ```json
 {
-    "body": "Attachment [1187-permgroups.patch](tarball://root/attachments/some-uuid/ticket1187/1187-permgroups.patch) by AlexGhitza created at 2008-04-24 22:25:44\n\nThe attached patch fixes what I believe is a bug in conjugacy_classes_subgroups(), and adds the method is_transitive().  Note that the optional GAP database is *not* required.\n\nTimings before the patch:\n\n\n```\nsage: G = SymmetricGroup(6)\nsage: time cl = G.conjugacy_classes_subgroups()\nCPU times: user 151.62 s, sys: 16.75 s, total: 168.37 s\nWall time: 175.53\n```\n\n\nand after:\n\n\n```\nsage: G = SymmetricGroup(6)\nsage: time cl = G.conjugacy_classes_subgroups()\nCPU times: user 0.54 s, sys: 0.09 s, total: 0.63 s\nWall time: 1.35\n```\n",
+    "body": "Attachment [1187-permgroups.patch](tarball://root/attachments/some-uuid/ticket1187/1187-permgroups.patch) by @aghitza created at 2008-04-24 22:25:44\n\nThe attached patch fixes what I believe is a bug in conjugacy_classes_subgroups(), and adds the method is_transitive().  Note that the optional GAP database is *not* required.\n\nTimings before the patch:\n\n\n```\nsage: G = SymmetricGroup(6)\nsage: time cl = G.conjugacy_classes_subgroups()\nCPU times: user 151.62 s, sys: 16.75 s, total: 168.37 s\nWall time: 175.53\n```\n\n\nand after:\n\n\n```\nsage: G = SymmetricGroup(6)\nsage: time cl = G.conjugacy_classes_subgroups()\nCPU times: user 0.54 s, sys: 0.09 s, total: 0.63 s\nWall time: 1.35\n```\n",
     "created_at": "2008-04-24T22:25:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1187#issuecomment-7330",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [1187-permgroups.patch](tarball://root/attachments/some-uuid/ticket1187/1187-permgroups.patch) by AlexGhitza created at 2008-04-24 22:25:44
+Attachment [1187-permgroups.patch](tarball://root/attachments/some-uuid/ticket1187/1187-permgroups.patch) by @aghitza created at 2008-04-24 22:25:44
 
 The attached patch fixes what I believe is a bug in conjugacy_classes_subgroups(), and adds the method is_transitive().  Note that the optional GAP database is *not* required.
 
@@ -134,7 +134,7 @@ archive/issue_comments_007331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1187#issuecomment-7331",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_007332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1187#issuecomment-7332",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_007333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1187#issuecomment-7333",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_007334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1187#issuecomment-7334",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

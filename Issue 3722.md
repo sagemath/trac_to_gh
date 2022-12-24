@@ -14,7 +14,7 @@ archive/issues_003722.json:
     "title": "notebook -- public notebook server worksheets say \"(running)\" forever, but presumably they are timed out",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3722",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_026406.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3722#issuecomment-26406",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_026407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3722#issuecomment-26407",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

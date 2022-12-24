@@ -57,7 +57,7 @@ archive/issue_comments_062991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7474#issuecomment-62991",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_062992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7474#issuecomment-62992",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_062993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7474#issuecomment-62993",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_062994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7474#issuecomment-62994",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_062995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7474#issuecomment-62995",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -142,13 +142,13 @@ Resolution: fixed
 archive/issue_comments_062996.json:
 ```json
 {
-    "body": "Attachment [trac_7474-review.patch](tarball://root/attachments/some-uuid/ticket7474/trac_7474-review.patch) by mhansen created at 2009-11-17 07:41:26",
+    "body": "Attachment [trac_7474-review.patch](tarball://root/attachments/some-uuid/ticket7474/trac_7474-review.patch) by @mwhansen created at 2009-11-17 07:41:26",
     "created_at": "2009-11-17T07:41:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7474#issuecomment-62996",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_7474-review.patch](tarball://root/attachments/some-uuid/ticket7474/trac_7474-review.patch) by mhansen created at 2009-11-17 07:41:26
+Attachment [trac_7474-review.patch](tarball://root/attachments/some-uuid/ticket7474/trac_7474-review.patch) by @mwhansen created at 2009-11-17 07:41:26

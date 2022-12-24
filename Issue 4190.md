@@ -3,7 +3,7 @@
 archive/issues_004190.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  robertwb\n\nI think this just about says it all:\n\n```\nsage: OK = NumberField(x^2 - x + 2, 'w').ring_of_integers()\nsage: w = OK.ring_generators()[0]\nsage: 1/w in OK\nTrue\n```\n\nI tested this for cubic fields as well, and the same problem comes up. I can't work out why this happens -- it must be something weird in the coercion framework, as there isn't a specific method for division or inversion of elements of orders: it falls back to NumberFieldElement.__invert__ and then somehow coerces the result back to an OrderElement without doing any checks along the way.\n\nI discovered this when trying to find out whether one element of OK was divisible by another -- \"x.divides(y)\" raises an error, and \"y/x in OK\" always returns True, which isn't very helpful; the best I could find was \"y in x*OK\" which seems to give the right results.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4190\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\nI think this just about says it all:\n\n```\nsage: OK = NumberField(x^2 - x + 2, 'w').ring_of_integers()\nsage: w = OK.ring_generators()[0]\nsage: 1/w in OK\nTrue\n```\n\nI tested this for cubic fields as well, and the same problem comes up. I can't work out why this happens -- it must be something weird in the coercion framework, as there isn't a specific method for division or inversion of elements of orders: it falls back to NumberFieldElement.__invert__ and then somehow coerces the result back to an OrderElement without doing any checks along the way.\n\nI discovered this when trying to find out whether one element of OK was divisible by another -- \"x.divides(y)\" raises an error, and \"y/x in OK\" always returns True, which isn't very helpful; the best I could find was \"y in x*OK\" which seems to give the right results.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4190\n\n",
     "created_at": "2008-09-24T11:21:35Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_004190.json:
     "title": "division of number field order elements doesn't check for membership",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4190",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  robertwb
+CC:  @robertwb
 
 I think this just about says it all:
 
@@ -76,7 +76,7 @@ archive/issue_comments_030399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4190",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30399",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_030400.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4190",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30400",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -107,16 +107,16 @@ I'll have a go at writing that then.
 archive/issue_comments_030401.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2008-09-24T19:42:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4190",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30401",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 
@@ -130,7 +130,7 @@ archive/issue_comments_030402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4190",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30402",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_030403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4190",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30403",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_030404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4190",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30404",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_030405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4190",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30405",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_030407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4190",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30407",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -260,16 +260,16 @@ New patch
 archive/issue_comments_030408.json:
 ```json
 {
-    "body": "Attachment [4190.patch](tarball://root/attachments/some-uuid/ticket4190/4190.patch) by davidloeffler created at 2008-10-31 22:29:45\n\nI've uploaded a new patch, taking into account the changes to the coercion model, which works under 3.1.4 and 3.2.alpha1.",
+    "body": "Attachment [4190.patch](tarball://root/attachments/some-uuid/ticket4190/4190.patch) by @loefflerd created at 2008-10-31 22:29:45\n\nI've uploaded a new patch, taking into account the changes to the coercion model, which works under 3.1.4 and 3.2.alpha1.",
     "created_at": "2008-10-31T22:29:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4190",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30408",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [4190.patch](tarball://root/attachments/some-uuid/ticket4190/4190.patch) by davidloeffler created at 2008-10-31 22:29:45
+Attachment [4190.patch](tarball://root/attachments/some-uuid/ticket4190/4190.patch) by @loefflerd created at 2008-10-31 22:29:45
 
 I've uploaded a new patch, taking into account the changes to the coercion model, which works under 3.1.4 and 3.2.alpha1.
 
@@ -285,7 +285,7 @@ archive/issue_comments_030409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4190",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30409",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_030410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4190",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30410",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_030411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4190",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30411",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_030412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4190",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30412",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -383,16 +383,16 @@ apply after previous patch
 archive/issue_comments_030413.json:
 ```json
 {
-    "body": "Attachment [4190-part2.patch](tarball://root/attachments/some-uuid/ticket4190/4190-part2.patch) by davidloeffler created at 2008-11-14 06:00:19\n\nI could only find the duplicate line in one of the doctests, but I've killed it there. I also realised that while my patch fixed the div methods it didn't fix the separate invert methods, so I've added a similar fix to those.",
+    "body": "Attachment [4190-part2.patch](tarball://root/attachments/some-uuid/ticket4190/4190-part2.patch) by @loefflerd created at 2008-11-14 06:00:19\n\nI could only find the duplicate line in one of the doctests, but I've killed it there. I also realised that while my patch fixed the div methods it didn't fix the separate invert methods, so I've added a similar fix to those.",
     "created_at": "2008-11-14T06:00:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4190",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30413",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [4190-part2.patch](tarball://root/attachments/some-uuid/ticket4190/4190-part2.patch) by davidloeffler created at 2008-11-14 06:00:19
+Attachment [4190-part2.patch](tarball://root/attachments/some-uuid/ticket4190/4190-part2.patch) by @loefflerd created at 2008-11-14 06:00:19
 
 I could only find the duplicate line in one of the doctests, but I've killed it there. I also realised that while my patch fixed the div methods it didn't fix the separate invert methods, so I've added a similar fix to those.
 
@@ -408,7 +408,7 @@ archive/issue_comments_030414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4190",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30414",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

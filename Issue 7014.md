@@ -13,7 +13,7 @@ archive/issues_007014.json:
     "title": "Add a chat service to the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7014",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: boothby
@@ -41,7 +41,7 @@ archive/issue_comments_058055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7014",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7014#issuecomment-58055",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_058056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7014",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7014#issuecomment-58056",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 

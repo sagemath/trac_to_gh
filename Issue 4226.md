@@ -3,7 +3,7 @@
 archive/issues_004226.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nThis is needed for number field embedding. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4226\n\n",
+    "body": "Assignee: @robertwb\n\nThis is needed for number field embedding. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4226\n\n",
     "created_at": "2008-09-30T21:10:57Z",
     "labels": [
         "coercion",
@@ -14,10 +14,10 @@ archive/issues_004226.json:
     "title": "[with patch, needs reivew] Real Lazy Field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4226",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 This is needed for number field embedding. 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4226
 archive/issue_comments_030716.json:
 ```json
 {
-    "body": "Attachment [4226-real-lazy.patch](tarball://root/attachments/some-uuid/ticket4226/4226-real-lazy.patch) by mhansen created at 2008-10-01 06:48:32",
+    "body": "Attachment [4226-real-lazy.patch](tarball://root/attachments/some-uuid/ticket4226/4226-real-lazy.patch) by @mwhansen created at 2008-10-01 06:48:32",
     "created_at": "2008-10-01T06:48:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4226",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4226#issuecomment-30716",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [4226-real-lazy.patch](tarball://root/attachments/some-uuid/ticket4226/4226-real-lazy.patch) by mhansen created at 2008-10-01 06:48:32
+Attachment [4226-real-lazy.patch](tarball://root/attachments/some-uuid/ticket4226/4226-real-lazy.patch) by @mwhansen created at 2008-10-01 06:48:32
 
 
 
@@ -50,16 +50,16 @@ Attachment [4226-real-lazy.patch](tarball://root/attachments/some-uuid/ticket422
 archive/issue_comments_030717.json:
 ```json
 {
-    "body": "Attachment [trac_4226-2.patch](tarball://root/attachments/some-uuid/ticket4226/trac_4226-2.patch) by mhansen created at 2008-10-01 06:49:26\n\nLooks good to me.  Note that the second patch should be applied as well since we got rid of the *_impl methods.",
+    "body": "Attachment [trac_4226-2.patch](tarball://root/attachments/some-uuid/ticket4226/trac_4226-2.patch) by @mwhansen created at 2008-10-01 06:49:26\n\nLooks good to me.  Note that the second patch should be applied as well since we got rid of the *_impl methods.",
     "created_at": "2008-10-01T06:49:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4226",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4226#issuecomment-30717",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4226-2.patch](tarball://root/attachments/some-uuid/ticket4226/trac_4226-2.patch) by mhansen created at 2008-10-01 06:49:26
+Attachment [trac_4226-2.patch](tarball://root/attachments/some-uuid/ticket4226/trac_4226-2.patch) by @mwhansen created at 2008-10-01 06:49:26
 
 Looks good to me.  Note that the second patch should be applied as well since we got rid of the *_impl methods.
 
@@ -177,7 +177,7 @@ archive/issue_comments_030723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4226",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4226#issuecomment-30723",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

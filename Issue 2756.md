@@ -3,7 +3,7 @@
 archive/issues_002756.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nI've attached a patch to add Debian build support to the GAP spkg (it only builds the Guava GAP package).\n\nIssue created by migration from https://trac.sagemath.org/ticket/2756\n\n",
+    "body": "Assignee: @timabbott\n\nI've attached a patch to add Debian build support to the GAP spkg (it only builds the Guava GAP package).\n\nIssue created by migration from https://trac.sagemath.org/ticket/2756\n\n",
     "created_at": "2008-04-01T18:41:37Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_002756.json:
     "title": "[with patch; needs review] Debianize GAP spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2756",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 I've attached a patch to add Debian build support to the GAP spkg (it only builds the Guava GAP package).
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2756
 archive/issue_comments_018952.json:
 ```json
 {
-    "body": "Attachment [guava.patch](tarball://root/attachments/some-uuid/ticket2756/guava.patch) by tabbott created at 2008-04-01 18:41:49",
+    "body": "Attachment [guava.patch](tarball://root/attachments/some-uuid/ticket2756/guava.patch) by @timabbott created at 2008-04-01 18:41:49",
     "created_at": "2008-04-01T18:41:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2756#issuecomment-18952",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [guava.patch](tarball://root/attachments/some-uuid/ticket2756/guava.patch) by tabbott created at 2008-04-01 18:41:49
+Attachment [guava.patch](tarball://root/attachments/some-uuid/ticket2756/guava.patch) by @timabbott created at 2008-04-01 18:41:49
 
 
 
@@ -50,16 +50,16 @@ Attachment [guava.patch](tarball://root/attachments/some-uuid/ticket2756/guava.p
 archive/issue_comments_018953.json:
 ```json
 {
-    "body": "Attachment [gap-spkg-debian.patch](tarball://root/attachments/some-uuid/ticket2756/gap-spkg-debian.patch) by tabbott created at 2008-04-01 18:42:48",
+    "body": "Attachment [gap-spkg-debian.patch](tarball://root/attachments/some-uuid/ticket2756/gap-spkg-debian.patch) by @timabbott created at 2008-04-01 18:42:48",
     "created_at": "2008-04-01T18:42:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2756#issuecomment-18953",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [gap-spkg-debian.patch](tarball://root/attachments/some-uuid/ticket2756/gap-spkg-debian.patch) by tabbott created at 2008-04-01 18:42:48
+Attachment [gap-spkg-debian.patch](tarball://root/attachments/some-uuid/ticket2756/gap-spkg-debian.patch) by @timabbott created at 2008-04-01 18:42:48
 
 
 

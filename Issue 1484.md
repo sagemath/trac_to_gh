@@ -3,7 +3,7 @@
 archive/issues_001484.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n> > > In Mathematica, there's a $Path variable which has a list of directories\n> > > to search when asked to load a file. Is there a corresponding thing in\n> > > Sage?\n> >\n> > Sounds certainly like a good idea.\n> \n> Thanks for considering it.\n\nI have been meaning to implement this but haven't got around to it.\nIt has come up several times.   I think this would be very easy\nto implement, actually -- literally 1 hour or so, plus adding\ndocumentation and examples in the *right* places. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1484\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n> > > In Mathematica, there's a $Path variable which has a list of directories\n> > > to search when asked to load a file. Is there a corresponding thing in\n> > > Sage?\n> >\n> > Sounds certainly like a good idea.\n> \n> Thanks for considering it.\n\nI have been meaning to implement this but haven't got around to it.\nIt has come up several times.   I think this would be very easy\nto implement, actually -- literally 1 hour or so, plus adding\ndocumentation and examples in the *right* places. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1484\n\n",
     "created_at": "2007-12-13T07:59:53Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_001484.json:
     "title": "path -- load path for attach and load",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1484",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -52,7 +52,7 @@ archive/issue_comments_009558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1484#issuecomment-9558",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_009559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1484#issuecomment-9559",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_009560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1484#issuecomment-9560",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_009561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1484#issuecomment-9561",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

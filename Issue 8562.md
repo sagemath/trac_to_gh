@@ -3,7 +3,7 @@
 archive/issues_008562.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  sage-combinat\n\nKeywords: categories, integer mod rings\n\nAfter this patch, IntegerModRing's inherit properly from categories:\n\n```\n    sage: Z3 = IntegerModRing(3)\n    sage: Z3.category()\n    Category of fields\n    sage: TestSuite(Z3).run(verbose = True)\n    running ._test_additive_associativity() . . . pass\n    running ._test_an_element() . . . pass\n    running ._test_associativity() . . . pass\n    running ._test_category() . . . pass\n    running ._test_elements() . . . \n      Running the test suite of self.an_element()\n      running ._test_category() . . . pass\n      running ._test_not_implemented_methods() . . . pass\n      running ._test_pickling() . . . pass\n      pass\n    running ._test_not_implemented_methods() . . . pass\n    running ._test_one() . . . pass\n    running ._test_pickling() . . . pass\n    running ._test_prod() . . . pass\n    running ._test_some_elements() . . . pass\n    running ._test_zero() . . . pass\n```\n\n\nThis is required to use the cool features from #7555.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8562\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nKeywords: categories, integer mod rings\n\nAfter this patch, IntegerModRing's inherit properly from categories:\n\n```\n    sage: Z3 = IntegerModRing(3)\n    sage: Z3.category()\n    Category of fields\n    sage: TestSuite(Z3).run(verbose = True)\n    running ._test_additive_associativity() . . . pass\n    running ._test_an_element() . . . pass\n    running ._test_associativity() . . . pass\n    running ._test_category() . . . pass\n    running ._test_elements() . . . \n      Running the test suite of self.an_element()\n      running ._test_category() . . . pass\n      running ._test_not_implemented_methods() . . . pass\n      running ._test_pickling() . . . pass\n      pass\n    running ._test_not_implemented_methods() . . . pass\n    running ._test_one() . . . pass\n    running ._test_pickling() . . . pass\n    running ._test_prod() . . . pass\n    running ._test_some_elements() . . . pass\n    running ._test_zero() . . . pass\n```\n\n\nThis is required to use the cool features from #7555.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8562\n\n",
     "created_at": "2010-03-19T21:48:27Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_008562.json:
     "title": "Categories for IntegerMod rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8562",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 CC:  sage-combinat
 
@@ -67,7 +67,7 @@ archive/issue_comments_077514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77514",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_077515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77515",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_077516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77516",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_077517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77517",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_077518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77518",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_077519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77519",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_077520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77520",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_077521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77521",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_077522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77522",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_077523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77523",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_077524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77524",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -280,16 +280,16 @@ Well, actually I did. But I should be done now, unless I notice a test failure.
 archive/issue_comments_077525.json:
 ```json
 {
-    "body": "Attachment [trac_8562-category-integer_mod_ring-nt.patch](tarball://root/attachments/some-uuid/ticket8562/trac_8562-category-integer_mod_ring-nt.patch) by nthiery created at 2010-03-22 22:24:12",
+    "body": "Attachment [trac_8562-category-integer_mod_ring-nt.patch](tarball://root/attachments/some-uuid/ticket8562/trac_8562-category-integer_mod_ring-nt.patch) by @nthiery created at 2010-03-22 22:24:12",
     "created_at": "2010-03-22T22:24:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77525",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_8562-category-integer_mod_ring-nt.patch](tarball://root/attachments/some-uuid/ticket8562/trac_8562-category-integer_mod_ring-nt.patch) by nthiery created at 2010-03-22 22:24:12
+Attachment [trac_8562-category-integer_mod_ring-nt.patch](tarball://root/attachments/some-uuid/ticket8562/trac_8562-category-integer_mod_ring-nt.patch) by @nthiery created at 2010-03-22 22:24:12
 
 
 
@@ -303,7 +303,7 @@ archive/issue_comments_077526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77526",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -321,7 +321,7 @@ archive/issue_comments_077527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77527",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -350,7 +350,7 @@ archive/issue_comments_077528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77528",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -380,7 +380,7 @@ archive/issue_comments_077529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77529",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -393,16 +393,16 @@ rebased version. apply only this patch.
 archive/issue_comments_077530.json:
 ```json
 {
-    "body": "Attachment [trac_8562-rebased.patch](tarball://root/attachments/some-uuid/ticket8562/trac_8562-rebased.patch) by jhpalmieri created at 2010-06-21 20:37:58",
+    "body": "Attachment [trac_8562-rebased.patch](tarball://root/attachments/some-uuid/ticket8562/trac_8562-rebased.patch) by @jhpalmieri created at 2010-06-21 20:37:58",
     "created_at": "2010-06-21T20:37:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77530",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8562-rebased.patch](tarball://root/attachments/some-uuid/ticket8562/trac_8562-rebased.patch) by jhpalmieri created at 2010-06-21 20:37:58
+Attachment [trac_8562-rebased.patch](tarball://root/attachments/some-uuid/ticket8562/trac_8562-rebased.patch) by @jhpalmieri created at 2010-06-21 20:37:58
 
 
 
@@ -416,7 +416,7 @@ archive/issue_comments_077531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77531",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -434,7 +434,7 @@ archive/issue_comments_077532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77532",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

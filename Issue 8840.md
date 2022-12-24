@@ -3,7 +3,7 @@
 archive/issues_008840.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  chapoton\n\nsage contain Multiple cross site reference vulnerability\nbecause authority does not checked before preforming an action\n\n**CSRF attacks explain:**\nIf create a file on my domain called \"blah.jpg\". It's really a php file, renamed.\nThe PHP file redirects you back to the referring host (or any host I want to really), to a special URL.\nThat URL takes an action based on the submitted data.\nI then use an img  tag <img> to link to my \"image\" on your site.\n\nWhen you view the page, your browser makes a request to that image, and that request is then redirected to the page on your site. Your browser won't display the image (or will display a broken image) but that's not important. What's important is that you just executed an action without knowing it.\n\nSome examples of  CSRF attacks in sage :\n\n1) upload a worksheet\n2) create worksheet\n3) change email \n4) .............\n...........\n.............\n...........\n\n\n**example:**\n1- login in at\nhttp://alpha.sagenb.org/\n\n2- open this published worksheet\nhttp://alpha.sagenb.org/home/pub/16/\n\n3-go to your home you will see that I uploaded a worksheet to your account .\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8840\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @fchapoton\n\nsage contain Multiple cross site reference vulnerability\nbecause authority does not checked before preforming an action\n\n**CSRF attacks explain:**\nIf create a file on my domain called \"blah.jpg\". It's really a php file, renamed.\nThe PHP file redirects you back to the referring host (or any host I want to really), to a special URL.\nThat URL takes an action based on the submitted data.\nI then use an img  tag <img> to link to my \"image\" on your site.\n\nWhen you view the page, your browser makes a request to that image, and that request is then redirected to the page on your site. Your browser won't display the image (or will display a broken image) but that's not important. What's important is that you just executed an action without knowing it.\n\nSome examples of  CSRF attacks in sage :\n\n1) upload a worksheet\n2) create worksheet\n3) change email \n4) .............\n...........\n.............\n...........\n\n\n**example:**\n1- login in at\nhttp://alpha.sagenb.org/\n\n2- open this published worksheet\nhttp://alpha.sagenb.org/home/pub/16/\n\n3-go to your home you will see that I uploaded a worksheet to your account .\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8840\n\n",
     "created_at": "2010-05-02T00:17:50Z",
     "labels": [
         "notebook",
@@ -19,7 +19,7 @@ archive/issues_008840.json:
 ```
 Assignee: jason, was
 
-CC:  chapoton
+CC:  @fchapoton
 
 sage contain Multiple cross site reference vulnerability
 because authority does not checked before preforming an action
@@ -89,7 +89,7 @@ archive/issue_comments_081279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8840#issuecomment-81279",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_081280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8840#issuecomment-81280",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_081281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8840#issuecomment-81281",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_081282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8840#issuecomment-81282",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

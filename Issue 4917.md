@@ -14,7 +14,7 @@ archive/issues_004917.json:
     "title": "convert sage.libs.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4917",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4917
 archive/issue_comments_037314.json:
 ```json
 {
-    "body": "Attachment [trac_4917.patch](tarball://root/attachments/some-uuid/ticket4917/trac_4917.patch) by mhansen created at 2009-01-02 02:31:57",
+    "body": "Attachment [trac_4917.patch](tarball://root/attachments/some-uuid/ticket4917/trac_4917.patch) by @mwhansen created at 2009-01-02 02:31:57",
     "created_at": "2009-01-02T02:31:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4917",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4917#issuecomment-37314",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4917.patch](tarball://root/attachments/some-uuid/ticket4917/trac_4917.patch) by mhansen created at 2009-01-02 02:31:57
+Attachment [trac_4917.patch](tarball://root/attachments/some-uuid/ticket4917/trac_4917.patch) by @mwhansen created at 2009-01-02 02:31:57
 
 
 

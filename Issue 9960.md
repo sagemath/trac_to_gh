@@ -3,7 +3,7 @@
 archive/issues_009960.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nSage should be able to solve ODE\n\n```\nx*diff(y,x)-x*sqrt(y^2+x^2)-y == 0\n```\n\nunder assumptions \n\n```\nx>0,y>0\n```\n\n\nNow \n\n```\ny=function('y',x)\nassume(y>0)\n```\n\npasses\n\n```\nassume(y(x)>0)\n```\n\nto Maxima. As a consequence, Maxima asks on sign of y. This should be fixed,\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9961\n\n",
+    "body": "Assignee: @burcin\n\nSage should be able to solve ODE\n\n```\nx*diff(y,x)-x*sqrt(y^2+x^2)-y == 0\n```\n\nunder assumptions \n\n```\nx>0,y>0\n```\n\n\nNow \n\n```\ny=function('y',x)\nassume(y>0)\n```\n\npasses\n\n```\nassume(y(x)>0)\n```\n\nto Maxima. As a consequence, Maxima asks on sign of y. This should be fixed,\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9961\n\n",
     "created_at": "2010-09-21T19:29:55Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_009960.json:
     "title": "Allow assumptions on the dependent variable in desolve",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9960",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 Sage should be able to solve ODE
 
@@ -64,7 +64,7 @@ archive/issue_comments_099745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99745",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -77,16 +77,16 @@ The patch fixes the problem, but we use strings in new optional argument of deso
 archive/issue_comments_099746.json:
 ```json
 {
-    "body": "Attachment [trac_9961.patch](tarball://root/attachments/some-uuid/ticket9961/trac_9961.patch) by robert.marik created at 2010-09-21 19:48:19",
+    "body": "Attachment [trac_9961.patch](tarball://root/attachments/some-uuid/ticket9961/trac_9961.patch) by @robert-marik created at 2010-09-21 19:48:19",
     "created_at": "2010-09-21T19:48:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99746",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Attachment [trac_9961.patch](tarball://root/attachments/some-uuid/ticket9961/trac_9961.patch) by robert.marik created at 2010-09-21 19:48:19
+Attachment [trac_9961.patch](tarball://root/attachments/some-uuid/ticket9961/trac_9961.patch) by @robert-marik created at 2010-09-21 19:48:19
 
 
 
@@ -100,7 +100,7 @@ archive/issue_comments_099747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99747",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_099748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99748",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_099749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99749",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_099750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99750",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -169,16 +169,16 @@ I appreciate the sentiment and idea, but adding a keyword exposes us to backward
 archive/issue_comments_099751.json:
 ```json
 {
-    "body": "Attachment [trac_9961-assume_function.patch](tarball://root/attachments/some-uuid/ticket9961/trac_9961-assume_function.patch) by burcin created at 2010-09-21 21:03:06\n\napply only this patch",
+    "body": "Attachment [trac_9961-assume_function.patch](tarball://root/attachments/some-uuid/ticket9961/trac_9961-assume_function.patch) by @burcin created at 2010-09-21 21:03:06\n\napply only this patch",
     "created_at": "2010-09-21T21:03:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99751",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9961-assume_function.patch](tarball://root/attachments/some-uuid/ticket9961/trac_9961-assume_function.patch) by burcin created at 2010-09-21 21:03:06
+Attachment [trac_9961-assume_function.patch](tarball://root/attachments/some-uuid/ticket9961/trac_9961-assume_function.patch) by @burcin created at 2010-09-21 21:03:06
 
 apply only this patch
 
@@ -194,7 +194,7 @@ archive/issue_comments_099752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99752",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -209,16 +209,16 @@ On the other hand, attachment:trac_9961-assume_function.patch might provide an a
 archive/issue_comments_099753.json:
 ```json
 {
-    "body": "Attachment [trac_9961-assume_function.take2.patch](tarball://root/attachments/some-uuid/ticket9961/trac_9961-assume_function.take2.patch) by burcin created at 2010-09-22 16:04:48\n\napply only this patch",
+    "body": "Attachment [trac_9961-assume_function.take2.patch](tarball://root/attachments/some-uuid/ticket9961/trac_9961-assume_function.take2.patch) by @burcin created at 2010-09-22 16:04:48\n\napply only this patch",
     "created_at": "2010-09-22T16:04:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99753",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9961-assume_function.take2.patch](tarball://root/attachments/some-uuid/ticket9961/trac_9961-assume_function.take2.patch) by burcin created at 2010-09-22 16:04:48
+Attachment [trac_9961-assume_function.take2.patch](tarball://root/attachments/some-uuid/ticket9961/trac_9961-assume_function.take2.patch) by @burcin created at 2010-09-22 16:04:48
 
 apply only this patch
 
@@ -234,7 +234,7 @@ archive/issue_comments_099754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99754",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -314,7 +314,7 @@ archive/issue_comments_099755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99755",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_099756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99756",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -354,7 +354,7 @@ archive/issue_comments_099757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99757",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -367,16 +367,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_099758.json:
 ```json
 {
-    "body": "Attachment [trac_9961-assume_function.take3.patch](tarball://root/attachments/some-uuid/ticket9961/trac_9961-assume_function.take3.patch) by robert.marik created at 2010-09-23 17:40:19\n\nBurcin's patch with doctest. Apply only this patch.",
+    "body": "Attachment [trac_9961-assume_function.take3.patch](tarball://root/attachments/some-uuid/ticket9961/trac_9961-assume_function.take3.patch) by @robert-marik created at 2010-09-23 17:40:19\n\nBurcin's patch with doctest. Apply only this patch.",
     "created_at": "2010-09-23T17:40:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99758",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Attachment [trac_9961-assume_function.take3.patch](tarball://root/attachments/some-uuid/ticket9961/trac_9961-assume_function.take3.patch) by robert.marik created at 2010-09-23 17:40:19
+Attachment [trac_9961-assume_function.take3.patch](tarball://root/attachments/some-uuid/ticket9961/trac_9961-assume_function.take3.patch) by @robert-marik created at 2010-09-23 17:40:19
 
 Burcin's patch with doctest. Apply only this patch.
 
@@ -392,7 +392,7 @@ archive/issue_comments_099759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99759",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -410,7 +410,7 @@ archive/issue_comments_099760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99760",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -431,7 +431,7 @@ archive/issue_comments_099761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99761",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -453,7 +453,7 @@ archive/issue_comments_099762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99762",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -471,7 +471,7 @@ archive/issue_comments_099763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99763",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

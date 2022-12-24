@@ -3,7 +3,7 @@
 archive/issues_009062.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  vbraun\n\nToric lattices are ZZ<sup>n</sup>'s with distinction of their roles (in the simplest case - standard dual lattices M and N).\n\nOnce this patch is finished, it will be the first part of the toric varieties framework #8986-#8989, but so far I made it actually on top of those modules. Creation of cones and fans seems to work as expected. More work is needed on matrix multiplication. Working on it!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9062\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @vbraun\n\nToric lattices are ZZ<sup>n</sup>'s with distinction of their roles (in the simplest case - standard dual lattices M and N).\n\nOnce this patch is finished, it will be the first part of the toric varieties framework #8986-#8989, but so far I made it actually on top of those modules. Creation of cones and fans seems to work as expected. More work is needed on matrix multiplication. Working on it!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9062\n\n",
     "created_at": "2010-05-27T04:45:06Z",
     "labels": [
         "geometry",
@@ -14,12 +14,12 @@ archive/issues_009062.json:
     "title": "Add support for toric lattices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9062",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 Assignee: mhampton
 
-CC:  vbraun
+CC:  @vbraun
 
 Toric lattices are ZZ<sup>n</sup>'s with distinction of their roles (in the simplest case - standard dual lattices M and N).
 
@@ -41,7 +41,7 @@ archive/issue_comments_084070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9062#issuecomment-84070",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_084071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9062#issuecomment-84071",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -72,16 +72,16 @@ Looks good, I'll be happy to review the final version!
 archive/issue_comments_084072.json:
 ```json
 {
-    "body": "Attachment [trac_9062_add_support_toric_lattices.patch](tarball://root/attachments/some-uuid/ticket9062/trac_9062_add_support_toric_lattices.patch) by novoselt created at 2010-05-27 23:28:10\n\nFixed version.",
+    "body": "Attachment [trac_9062_add_support_toric_lattices.patch](tarball://root/attachments/some-uuid/ticket9062/trac_9062_add_support_toric_lattices.patch) by @novoselt created at 2010-05-27 23:28:10\n\nFixed version.",
     "created_at": "2010-05-27T23:28:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9062#issuecomment-84072",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_9062_add_support_toric_lattices.patch](tarball://root/attachments/some-uuid/ticket9062/trac_9062_add_support_toric_lattices.patch) by novoselt created at 2010-05-27 23:28:10
+Attachment [trac_9062_add_support_toric_lattices.patch](tarball://root/attachments/some-uuid/ticket9062/trac_9062_add_support_toric_lattices.patch) by @novoselt created at 2010-05-27 23:28:10
 
 Fixed version.
 
@@ -92,16 +92,16 @@ Fixed version.
 archive/issue_comments_084073.json:
 ```json
 {
-    "body": "Attachment [trac_9062_add_support_for_toric_lattices.patch](tarball://root/attachments/some-uuid/ticket9062/trac_9062_add_support_for_toric_lattices.patch) by novoselt created at 2010-05-28 00:52:16\n\nApply this patch only.",
+    "body": "Attachment [trac_9062_add_support_for_toric_lattices.patch](tarball://root/attachments/some-uuid/ticket9062/trac_9062_add_support_for_toric_lattices.patch) by @novoselt created at 2010-05-28 00:52:16\n\nApply this patch only.",
     "created_at": "2010-05-28T00:52:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9062#issuecomment-84073",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_9062_add_support_for_toric_lattices.patch](tarball://root/attachments/some-uuid/ticket9062/trac_9062_add_support_for_toric_lattices.patch) by novoselt created at 2010-05-28 00:52:16
+Attachment [trac_9062_add_support_for_toric_lattices.patch](tarball://root/attachments/some-uuid/ticket9062/trac_9062_add_support_for_toric_lattices.patch) by @novoselt created at 2010-05-28 00:52:16
 
 Apply this patch only.
 
@@ -117,7 +117,7 @@ archive/issue_comments_084074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9062#issuecomment-84074",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_084075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9062#issuecomment-84075",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_084076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9062#issuecomment-84076",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_084077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9062#issuecomment-84077",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_084078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9062#issuecomment-84078",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_084079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9062#issuecomment-84079",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_084080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9062#issuecomment-84080",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_084081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9062#issuecomment-84081",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_084082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9062#issuecomment-84082",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -300,16 +300,16 @@ Apply this patch over trac_9062_add_support_for_toric_lattices.patch
 archive/issue_comments_084083.json:
 ```json
 {
-    "body": "Attachment [trac_9062-cmp_fix.patch](tarball://root/attachments/some-uuid/ticket9062/trac_9062-cmp_fix.patch) by davidloeffler created at 2010-07-01 10:09:46\n\nHere's a tiny patch which makes the fix I suggested.",
+    "body": "Attachment [trac_9062-cmp_fix.patch](tarball://root/attachments/some-uuid/ticket9062/trac_9062-cmp_fix.patch) by @loefflerd created at 2010-07-01 10:09:46\n\nHere's a tiny patch which makes the fix I suggested.",
     "created_at": "2010-07-01T10:09:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9062#issuecomment-84083",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_9062-cmp_fix.patch](tarball://root/attachments/some-uuid/ticket9062/trac_9062-cmp_fix.patch) by davidloeffler created at 2010-07-01 10:09:46
+Attachment [trac_9062-cmp_fix.patch](tarball://root/attachments/some-uuid/ticket9062/trac_9062-cmp_fix.patch) by @loefflerd created at 2010-07-01 10:09:46
 
 Here's a tiny patch which makes the fix I suggested.
 
@@ -325,7 +325,7 @@ archive/issue_comments_084084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9062#issuecomment-84084",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -343,7 +343,7 @@ archive/issue_comments_084085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9062#issuecomment-84085",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -361,7 +361,7 @@ archive/issue_comments_084086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9062#issuecomment-84086",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -374,16 +374,16 @@ Updated patch
 archive/issue_comments_084087.json:
 ```json
 {
-    "body": "Attachment [trac_9062-cmp_fix.2.patch](tarball://root/attachments/some-uuid/ticket9062/trac_9062-cmp_fix.2.patch) by davidloeffler created at 2010-07-01 10:30:55\n\nLooks good to me. Apply `trac_9062_add_support_for_toric_lattices.patch` and `trac_9062-cmp_fix.2.patch`.",
+    "body": "Attachment [trac_9062-cmp_fix.2.patch](tarball://root/attachments/some-uuid/ticket9062/trac_9062-cmp_fix.2.patch) by @loefflerd created at 2010-07-01 10:30:55\n\nLooks good to me. Apply `trac_9062_add_support_for_toric_lattices.patch` and `trac_9062-cmp_fix.2.patch`.",
     "created_at": "2010-07-01T10:30:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9062#issuecomment-84087",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_9062-cmp_fix.2.patch](tarball://root/attachments/some-uuid/ticket9062/trac_9062-cmp_fix.2.patch) by davidloeffler created at 2010-07-01 10:30:55
+Attachment [trac_9062-cmp_fix.2.patch](tarball://root/attachments/some-uuid/ticket9062/trac_9062-cmp_fix.2.patch) by @loefflerd created at 2010-07-01 10:30:55
 
 Looks good to me. Apply `trac_9062_add_support_for_toric_lattices.patch` and `trac_9062-cmp_fix.2.patch`.
 
@@ -399,7 +399,7 @@ archive/issue_comments_084088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9062#issuecomment-84088",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -417,7 +417,7 @@ archive/issue_comments_084089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9062#issuecomment-84089",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -435,7 +435,7 @@ archive/issue_comments_084090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9062#issuecomment-84090",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

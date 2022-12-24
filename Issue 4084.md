@@ -3,7 +3,7 @@
 archive/issues_004084.json:
 ```json
 {
-    "body": "Assignee: jwmerrill\n\nPlot works with symbolic functions, but not compositions or arithmetic involving them.\n\n\n```\nsage: plot(cos,-1,1) #works\n\nsage: plot(1/cos,-1,1)\nTraceback (most recent call last):\n...\nTypeError: float() argument must be a string or a number\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4084\n\n",
+    "body": "Assignee: @jicama\n\nPlot works with symbolic functions, but not compositions or arithmetic involving them.\n\n\n```\nsage: plot(cos,-1,1) #works\n\nsage: plot(1/cos,-1,1)\nTraceback (most recent call last):\n...\nTypeError: float() argument must be a string or a number\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4084\n\n",
     "created_at": "2008-09-09T03:44:08Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_004084.json:
     "title": "plot(1/cos,-1,1) fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4084",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
-Assignee: jwmerrill
+Assignee: @jicama
 
 Plot works with symbolic functions, but not compositions or arithmetic involving them.
 
@@ -84,16 +84,16 @@ Michael
 archive/issue_comments_029467.json:
 ```json
 {
-    "body": "Attachment [4804_doctest_only.patch](tarball://root/attachments/some-uuid/ticket4084/4804_doctest_only.patch) by jwmerrill created at 2008-09-09 04:05:46\n\n4804_doctest_only.patch adds only doctests.  If accepted, only that patch should be applied.  This should not be accepted until the new doctests actually pass.\n\nThanks for the quick catch mhansen.  \"Unrelated\" might be a little strong, though I was bold in modifying implementation to make this work.  In any case, sounds like problem solved.\n\nCheers,\n\nJM",
+    "body": "Attachment [4804_doctest_only.patch](tarball://root/attachments/some-uuid/ticket4084/4804_doctest_only.patch) by @jicama created at 2008-09-09 04:05:46\n\n4804_doctest_only.patch adds only doctests.  If accepted, only that patch should be applied.  This should not be accepted until the new doctests actually pass.\n\nThanks for the quick catch mhansen.  \"Unrelated\" might be a little strong, though I was bold in modifying implementation to make this work.  In any case, sounds like problem solved.\n\nCheers,\n\nJM",
     "created_at": "2008-09-09T04:05:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4084",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4084#issuecomment-29467",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
-Attachment [4804_doctest_only.patch](tarball://root/attachments/some-uuid/ticket4084/4804_doctest_only.patch) by jwmerrill created at 2008-09-09 04:05:46
+Attachment [4804_doctest_only.patch](tarball://root/attachments/some-uuid/ticket4084/4804_doctest_only.patch) by @jicama created at 2008-09-09 04:05:46
 
 4804_doctest_only.patch adds only doctests.  If accepted, only that patch should be applied.  This should not be accepted until the new doctests actually pass.
 
@@ -148,7 +148,7 @@ archive/issue_comments_029469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4084",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4084#issuecomment-29469",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 

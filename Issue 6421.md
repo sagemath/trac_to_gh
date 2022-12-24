@@ -14,7 +14,7 @@ archive/issues_006421.json:
     "title": "make a symbolic arctan2 function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6421",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 From sage-devel:
@@ -83,16 +83,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6421
 archive/issue_comments_051553.json:
 ```json
 {
-    "body": "Attachment [trac_6421-arctan2.patch](tarball://root/attachments/some-uuid/ticket6421/trac_6421-arctan2.patch) by kcrisman created at 2009-06-26 17:16:45",
+    "body": "Attachment [trac_6421-arctan2.patch](tarball://root/attachments/some-uuid/ticket6421/trac_6421-arctan2.patch) by @kcrisman created at 2009-06-26 17:16:45",
     "created_at": "2009-06-26T17:16:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6421#issuecomment-51553",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6421-arctan2.patch](tarball://root/attachments/some-uuid/ticket6421/trac_6421-arctan2.patch) by kcrisman created at 2009-06-26 17:16:45
+Attachment [trac_6421-arctan2.patch](tarball://root/attachments/some-uuid/ticket6421/trac_6421-arctan2.patch) by @kcrisman created at 2009-06-26 17:16:45
 
 
 
@@ -106,7 +106,7 @@ archive/issue_comments_051554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6421#issuecomment-51554",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -119,16 +119,16 @@ Changing status from new to assigned.
 archive/issue_comments_051555.json:
 ```json
 {
-    "body": "Set assignee to kcrisman.",
+    "body": "Set assignee to @kcrisman.",
     "created_at": "2009-06-26T17:38:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6421#issuecomment-51555",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Set assignee to kcrisman.
+Set assignee to @kcrisman.
 
 
 
@@ -142,7 +142,7 @@ archive/issue_comments_051556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6421#issuecomment-51556",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -166,16 +166,16 @@ Of course, this doesn't fix the question about plotting, but now the failure on 
 archive/issue_comments_051557.json:
 ```json
 {
-    "body": "Attachment [trac_6421-arctan2_doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket6421/trac_6421-arctan2_doctest_fixes.patch) by burcin created at 2009-06-27 16:03:26\n\nminor doctest fixes in `sage.symbolic.random_tests`",
+    "body": "Attachment [trac_6421-arctan2_doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket6421/trac_6421-arctan2_doctest_fixes.patch) by @burcin created at 2009-06-27 16:03:26\n\nminor doctest fixes in `sage.symbolic.random_tests`",
     "created_at": "2009-06-27T16:03:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6421#issuecomment-51557",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6421-arctan2_doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket6421/trac_6421-arctan2_doctest_fixes.patch) by burcin created at 2009-06-27 16:03:26
+Attachment [trac_6421-arctan2_doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket6421/trac_6421-arctan2_doctest_fixes.patch) by @burcin created at 2009-06-27 16:03:26
 
 minor doctest fixes in `sage.symbolic.random_tests`
 
@@ -191,7 +191,7 @@ archive/issue_comments_051558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6421#issuecomment-51558",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_051559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6421#issuecomment-51559",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

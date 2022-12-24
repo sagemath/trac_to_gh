@@ -14,7 +14,7 @@ archive/issues_005145.json:
     "title": "increase default plot_points value for contour_plot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5145",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -74,7 +74,7 @@ archive/issue_comments_039357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5145#issuecomment-39357",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -94,16 +94,16 @@ I second the idea of increaisng the default plot-points, at least to
 archive/issue_comments_039358.json:
 ```json
 {
-    "body": "Changing assignee from tbd to was.",
+    "body": "Changing assignee from tbd to @williamstein.",
     "created_at": "2009-07-05T08:08:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5145#issuecomment-39358",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from tbd to was.
+Changing assignee from tbd to @williamstein.
 
 
 
@@ -117,7 +117,7 @@ archive/issue_comments_039359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5145#issuecomment-39359",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_039360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5145#issuecomment-39360",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_039361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5145#issuecomment-39361",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_039362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5145#issuecomment-39362",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_039363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5145#issuecomment-39363",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -204,16 +204,16 @@ Based on 4.1.1 and #5448
 archive/issue_comments_039364.json:
 ```json
 {
-    "body": "Attachment [trac_5145-plot-points-default.patch](tarball://root/attachments/some-uuid/ticket5145/trac_5145-plot-points-default.patch) by kcrisman created at 2009-09-10 15:46:05\n\nTry this.",
+    "body": "Attachment [trac_5145-plot-points-default.patch](tarball://root/attachments/some-uuid/ticket5145/trac_5145-plot-points-default.patch) by @kcrisman created at 2009-09-10 15:46:05\n\nTry this.",
     "created_at": "2009-09-10T15:46:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5145#issuecomment-39364",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_5145-plot-points-default.patch](tarball://root/attachments/some-uuid/ticket5145/trac_5145-plot-points-default.patch) by kcrisman created at 2009-09-10 15:46:05
+Attachment [trac_5145-plot-points-default.patch](tarball://root/attachments/some-uuid/ticket5145/trac_5145-plot-points-default.patch) by @kcrisman created at 2009-09-10 15:46:05
 
 Try this.
 
@@ -229,7 +229,7 @@ archive/issue_comments_039365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5145#issuecomment-39365",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

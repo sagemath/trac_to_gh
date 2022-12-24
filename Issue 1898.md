@@ -79,16 +79,16 @@ Attachment [Sage-2.10.1.alpha2-fix-numerical-doctests-failure-trac_1898.patch](t
 archive/issue_comments_012013.json:
 ```json
 {
-    "body": "Attachment [trac-1898-part2-fix_for_lower_order_doctest_bits.patch](tarball://root/attachments/some-uuid/ticket1898/trac-1898-part2-fix_for_lower_order_doctest_bits.patch) by was created at 2008-01-24 19:48:53\n\napply the other patch then this one.",
+    "body": "Attachment [trac-1898-part2-fix_for_lower_order_doctest_bits.patch](tarball://root/attachments/some-uuid/ticket1898/trac-1898-part2-fix_for_lower_order_doctest_bits.patch) by @williamstein created at 2008-01-24 19:48:53\n\napply the other patch then this one.",
     "created_at": "2008-01-24T19:48:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1898#issuecomment-12013",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1898-part2-fix_for_lower_order_doctest_bits.patch](tarball://root/attachments/some-uuid/ticket1898/trac-1898-part2-fix_for_lower_order_doctest_bits.patch) by was created at 2008-01-24 19:48:53
+Attachment [trac-1898-part2-fix_for_lower_order_doctest_bits.patch](tarball://root/attachments/some-uuid/ticket1898/trac-1898-part2-fix_for_lower_order_doctest_bits.patch) by @williamstein created at 2008-01-24 19:48:53
 
 apply the other patch then this one.
 

@@ -3,7 +3,7 @@
 archive/issues_001350.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nThis is due to the fact that we now wrap sage.functions.constant.Constants with SymbolicConstant.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1350\n\n",
+    "body": "Assignee: @mwhansen\n\nThis is due to the fact that we now wrap sage.functions.constant.Constants with SymbolicConstant.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1350\n\n",
     "created_at": "2007-12-01T16:38:23Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_001350.json:
     "title": "sage-2.8.15.alpha0 doctest error in plot.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1350",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 This is due to the fact that we now wrap sage.functions.constant.Constants with SymbolicConstant.
 
@@ -37,7 +37,7 @@ archive/issue_comments_008655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1350",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1350#issuecomment-8655",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to assigned.
 archive/issue_comments_008656.json:
 ```json
 {
-    "body": "Attachment [1350.patch](tarball://root/attachments/some-uuid/ticket1350/1350.patch) by mhansen created at 2007-12-01 16:39:52",
+    "body": "Attachment [1350.patch](tarball://root/attachments/some-uuid/ticket1350/1350.patch) by @mwhansen created at 2007-12-01 16:39:52",
     "created_at": "2007-12-01T16:39:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1350",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1350#issuecomment-8656",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1350.patch](tarball://root/attachments/some-uuid/ticket1350/1350.patch) by mhansen created at 2007-12-01 16:39:52
+Attachment [1350.patch](tarball://root/attachments/some-uuid/ticket1350/1350.patch) by @mwhansen created at 2007-12-01 16:39:52
 
 
 

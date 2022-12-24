@@ -3,7 +3,7 @@
 archive/issues_009228.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nKeywords: mwrank\n\n\n```\n\ndevel/sage-main/sage/interfaces/mwrank.py\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE devel/sage-main/sage/interfaces/mwrank.py: 20% (2 of 10)\n\nMissing documentation:\n* __getattr__(self, attrname):\n* __reduce__(self):\n* __call__(self, cmd):\n* console(self):\n* _reduce_load_mwrank():\n* mwrank_console():\n\n\nMissing doctests:\n* Mwrank(options=\"\", server=None, server_tmpdir=None):\n* __init__(self, options=\"\", server=None,server_tmpdir=None):\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9228\n\n",
+    "body": "Assignee: @JohnCremona\n\nKeywords: mwrank\n\n\n```\n\ndevel/sage-main/sage/interfaces/mwrank.py\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE devel/sage-main/sage/interfaces/mwrank.py: 20% (2 of 10)\n\nMissing documentation:\n* __getattr__(self, attrname):\n* __reduce__(self):\n* __call__(self, cmd):\n* console(self):\n* _reduce_load_mwrank():\n* mwrank_console():\n\n\nMissing doctests:\n* Mwrank(options=\"\", server=None, server_tmpdir=None):\n* __init__(self, options=\"\", server=None,server_tmpdir=None):\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9228\n\n",
     "created_at": "2010-06-12T13:42:01Z",
     "labels": [
         "doctest coverage",
@@ -14,10 +14,10 @@ archive/issues_009228.json:
     "title": "Bring doctests for interfaces/mwrank.py up to 100% (from 20% (2 of 10)  )",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9228",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 Keywords: mwrank
 
@@ -59,7 +59,7 @@ archive/issue_comments_086594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9228",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9228#issuecomment-86594",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_086595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9228",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9228#issuecomment-86595",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_086596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9228",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9228#issuecomment-86596",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_086597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9228",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9228#issuecomment-86597",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_086598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9228",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9228#issuecomment-86598",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_086599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9228",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9228#issuecomment-86599",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_086600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9228",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9228#issuecomment-86600",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_086601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9228",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9228#issuecomment-86601",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_086602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9228",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9228#issuecomment-86602",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_086603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9228",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9228#issuecomment-86603",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_086604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9228",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9228#issuecomment-86604",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -280,16 +280,16 @@ Applies to 4.6.2.alpha0
 archive/issue_comments_086605.json:
 ```json
 {
-    "body": "Attachment [trac_9228-mwrank-doctest.patch](tarball://root/attachments/some-uuid/ticket9228/trac_9228-mwrank-doctest.patch) by cremona created at 2011-01-20 11:22:00\n\nThe new version of the patch does what I suggested, i.e. replaces all tabs in mwrank output by three spaces;  the doctest which failed before has been adjusted accordingly.\n\nI could not find any other doctest which would be affected by this, and tested all sage/interfaces and sage/schemes/elliptic_curves.",
+    "body": "Attachment [trac_9228-mwrank-doctest.patch](tarball://root/attachments/some-uuid/ticket9228/trac_9228-mwrank-doctest.patch) by @JohnCremona created at 2011-01-20 11:22:00\n\nThe new version of the patch does what I suggested, i.e. replaces all tabs in mwrank output by three spaces;  the doctest which failed before has been adjusted accordingly.\n\nI could not find any other doctest which would be affected by this, and tested all sage/interfaces and sage/schemes/elliptic_curves.",
     "created_at": "2011-01-20T11:22:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9228",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9228#issuecomment-86605",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_9228-mwrank-doctest.patch](tarball://root/attachments/some-uuid/ticket9228/trac_9228-mwrank-doctest.patch) by cremona created at 2011-01-20 11:22:00
+Attachment [trac_9228-mwrank-doctest.patch](tarball://root/attachments/some-uuid/ticket9228/trac_9228-mwrank-doctest.patch) by @JohnCremona created at 2011-01-20 11:22:00
 
 The new version of the patch does what I suggested, i.e. replaces all tabs in mwrank output by three spaces;  the doctest which failed before has been adjusted accordingly.
 
@@ -307,7 +307,7 @@ archive/issue_comments_086606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9228",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9228#issuecomment-86606",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_086607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9228",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9228#issuecomment-86607",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -343,7 +343,7 @@ archive/issue_comments_086608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9228",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9228#issuecomment-86608",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -364,7 +364,7 @@ archive/issue_comments_086609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9228",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9228#issuecomment-86609",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -382,7 +382,7 @@ archive/issue_comments_086610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9228",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9228#issuecomment-86610",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -409,7 +409,7 @@ archive/issue_comments_086611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9228",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9228#issuecomment-86611",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -433,7 +433,7 @@ archive/issue_comments_086612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9228",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9228#issuecomment-86612",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -451,7 +451,7 @@ archive/issue_comments_086613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9228",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9228#issuecomment-86613",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -469,7 +469,7 @@ archive/issue_comments_086614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9228",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9228#issuecomment-86614",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

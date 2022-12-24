@@ -14,7 +14,7 @@ archive/issues_005234.json:
     "title": "doctest failure in devel/sage/sage/rings/real_lazy.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5234",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 Assignee: mabshoff
@@ -56,7 +56,7 @@ archive/issue_comments_040108.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5234#issuecomment-40108",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_040109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5234#issuecomment-40109",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_040110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5234#issuecomment-40110",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 

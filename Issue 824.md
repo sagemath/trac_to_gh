@@ -14,7 +14,7 @@ archive/issues_000824.json:
     "title": "update linbox package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/824",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -55,7 +55,7 @@ archive/issue_comments_005111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/824",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/824#issuecomment-5111",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

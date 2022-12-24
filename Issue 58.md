@@ -14,7 +14,7 @@ archive/issues_000058.json:
     "title": "wanted -- subsets of a set",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/58",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -55,7 +55,7 @@ archive/issue_comments_000304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/58",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/58#issuecomment-304",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_000305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/58",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/58#issuecomment-305",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

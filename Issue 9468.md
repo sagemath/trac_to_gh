@@ -3,7 +3,7 @@
 archive/issues_009468.json:
 ```json
 {
-    "body": "Assignee: jason\n\nCC:  sage-combinat\n\nFrom the doc:\n\n```\n        Let ``cls`` be a class in :class:`ClasscallMetaclass`, and consider\n        a call of the form:\n\n            ``x in cls``\n\n        If ``cls`` defines a method ``__classcontains__``, then this\n        results in a call to::\n\n         - ``cls.__classcontains__(cls, x)``\n\n        EXAMPLES:\n\n        We construct a class which implements membership testing, and\n        which contains ``1`` and no other x::\n\n            sage: from sage.misc.classcall_metaclass import ClasscallMetaclass\n            sage: class Foo(object):\n            ...       __metaclass__ = ClasscallMetaclass\n            ...       @staticmethod\n            ...       def __classcontains__(cls, x):\n            ...           return x == 1\n            sage: 1 in Foo\n            True\n            sage: 2 in Foo\n            False\n```\n\n\nThis patch also fixes some typos and such in the documentation of ClassCallMetaclass\n\nIssue created by migration from https://trac.sagemath.org/ticket/9468\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  sage-combinat\n\nFrom the doc:\n\n```\n        Let ``cls`` be a class in :class:`ClasscallMetaclass`, and consider\n        a call of the form:\n\n            ``x in cls``\n\n        If ``cls`` defines a method ``__classcontains__``, then this\n        results in a call to::\n\n         - ``cls.__classcontains__(cls, x)``\n\n        EXAMPLES:\n\n        We construct a class which implements membership testing, and\n        which contains ``1`` and no other x::\n\n            sage: from sage.misc.classcall_metaclass import ClasscallMetaclass\n            sage: class Foo(object):\n            ...       __metaclass__ = ClasscallMetaclass\n            ...       @staticmethod\n            ...       def __classcontains__(cls, x):\n            ...           return x == 1\n            sage: 1 in Foo\n            True\n            sage: 2 in Foo\n            False\n```\n\n\nThis patch also fixes some typos and such in the documentation of ClassCallMetaclass\n\nIssue created by migration from https://trac.sagemath.org/ticket/9468\n\n",
     "created_at": "2010-07-10T02:38:16Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_009468.json:
     "title": "Extend ClasscallMetaclass to allow for membership testing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9468",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: jason
+Assignee: @jasongrout
 
 CC:  sage-combinat
 
@@ -70,7 +70,7 @@ archive/issue_comments_090816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9468#issuecomment-90816",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_090817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9468#issuecomment-90817",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_090818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9468#issuecomment-90818",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_090819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9468#issuecomment-90819",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_090820.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9468#issuecomment-90820",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -157,16 +157,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_090821.json:
 ```json
 {
-    "body": "Attachment [trac_9468-classcallmetaclass-classcontains-nt.patch](tarball://root/attachments/some-uuid/ticket9468/trac_9468-classcallmetaclass-classcontains-nt.patch) by nthiery created at 2011-04-23 01:47:27\n\nChecked, folded, posted. Thanks!",
+    "body": "Attachment [trac_9468-classcallmetaclass-classcontains-nt.patch](tarball://root/attachments/some-uuid/ticket9468/trac_9468-classcallmetaclass-classcontains-nt.patch) by @nthiery created at 2011-04-23 01:47:27\n\nChecked, folded, posted. Thanks!",
     "created_at": "2011-04-23T01:47:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9468#issuecomment-90821",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_9468-classcallmetaclass-classcontains-nt.patch](tarball://root/attachments/some-uuid/ticket9468/trac_9468-classcallmetaclass-classcontains-nt.patch) by nthiery created at 2011-04-23 01:47:27
+Attachment [trac_9468-classcallmetaclass-classcontains-nt.patch](tarball://root/attachments/some-uuid/ticket9468/trac_9468-classcallmetaclass-classcontains-nt.patch) by @nthiery created at 2011-04-23 01:47:27
 
 Checked, folded, posted. Thanks!
 
@@ -182,7 +182,7 @@ archive/issue_comments_090822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9468#issuecomment-90822",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

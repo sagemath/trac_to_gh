@@ -3,7 +3,7 @@
 archive/issues_002950.json:
 ```json
 {
-    "body": "Assignee: was\n\nIf point3d is called with 3 points and the first point is a vector, there is a strange error. The first three calls below work, the forth should work, but it does not (tested on sage.math, version 2.11):\n\n\n```\nsage: from sage.plot.plot3d.all import line3d, point3d\nsage: pl = point3d([(1, 0, 0), (0, 1, 0), (-1, -1, 0)])\nsage: pl = point3d([(1, 0, 0), vector(ZZ,(0, 1, 0)), (-1, -1, 0)])\nsage: pl = point3d([vector(ZZ,(1, 0, 0)), (-1, -1, 0)])\nsage: pl = point3d([vector(ZZ,(1, 0, 0)), vector(ZZ,(0, 1, 0)), (-1, -1, 0)])\nTraceback (most recent call last):\n...\nTypeError: float() argument must be a string or a number\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2950\n\n",
+    "body": "Assignee: @williamstein\n\nIf point3d is called with 3 points and the first point is a vector, there is a strange error. The first three calls below work, the forth should work, but it does not (tested on sage.math, version 2.11):\n\n\n```\nsage: from sage.plot.plot3d.all import line3d, point3d\nsage: pl = point3d([(1, 0, 0), (0, 1, 0), (-1, -1, 0)])\nsage: pl = point3d([(1, 0, 0), vector(ZZ,(0, 1, 0)), (-1, -1, 0)])\nsage: pl = point3d([vector(ZZ,(1, 0, 0)), (-1, -1, 0)])\nsage: pl = point3d([vector(ZZ,(1, 0, 0)), vector(ZZ,(0, 1, 0)), (-1, -1, 0)])\nTraceback (most recent call last):\n...\nTypeError: float() argument must be a string or a number\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2950\n\n",
     "created_at": "2008-04-18T05:46:16Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_002950.json:
     "title": "point3d misinterpret arguments",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2950",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 If point3d is called with 3 points and the first point is a vector, there is a strange error. The first three calls below work, the forth should work, but it does not (tested on sage.math, version 2.11):
 
@@ -64,7 +64,7 @@ fix to sage/plot/plot3d/shapes2.py
 archive/issue_comments_020341.json:
 ```json
 {
-    "body": "Changing assignee from was to shumow.",
+    "body": "Changing assignee from @williamstein to shumow.",
     "created_at": "2009-01-23T07:28:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2950",
     "type": "issue_comment",
@@ -73,7 +73,7 @@ archive/issue_comments_020341.json:
 }
 ```
 
-Changing assignee from was to shumow.
+Changing assignee from @williamstein to shumow.
 
 
 
@@ -100,16 +100,16 @@ Attachment [trac_2950-point3d-arg.patch](tarball://root/attachments/some-uuid/ti
 archive/issue_comments_020343.json:
 ```json
 {
-    "body": "Attachment [trac_2950-2.patch](tarball://root/attachments/some-uuid/ticket2950/trac_2950-2.patch) by mhansen created at 2009-01-24 02:51:25\n\nI added a doctest to make sure that this works.",
+    "body": "Attachment [trac_2950-2.patch](tarball://root/attachments/some-uuid/ticket2950/trac_2950-2.patch) by @mwhansen created at 2009-01-24 02:51:25\n\nI added a doctest to make sure that this works.",
     "created_at": "2009-01-24T02:51:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2950#issuecomment-20343",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_2950-2.patch](tarball://root/attachments/some-uuid/ticket2950/trac_2950-2.patch) by mhansen created at 2009-01-24 02:51:25
+Attachment [trac_2950-2.patch](tarball://root/attachments/some-uuid/ticket2950/trac_2950-2.patch) by @mwhansen created at 2009-01-24 02:51:25
 
 I added a doctest to make sure that this works.
 

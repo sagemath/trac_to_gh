@@ -3,7 +3,7 @@
 archive/issues_004643.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  robertwb\n\nAs it stands, if you remove a Cython extension from `module_list.py`, and remove all associated files in the sage library, everything builds fine. However, the `.so` files are still there. In particular, if you try to load a pickled object from a class that was defined in that `.pyx` file, it still loads just fine -- in fact, it loads the `.so` and uses that code. \n\nUnfortunately, I don't see an easy fix for this offhand. The problem is that we don't manage the `.so` files ourselves -- we leave that to distutils. If someone has a good idea for how to fix this, I'm happy to help implement it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4643\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @robertwb\n\nAs it stands, if you remove a Cython extension from `module_list.py`, and remove all associated files in the sage library, everything builds fine. However, the `.so` files are still there. In particular, if you try to load a pickled object from a class that was defined in that `.pyx` file, it still loads just fine -- in fact, it loads the `.so` and uses that code. \n\nUnfortunately, I don't see an easy fix for this offhand. The problem is that we don't manage the `.so` files ourselves -- we leave that to distutils. If someone has a good idea for how to fix this, I'm happy to help implement it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4643\n\n",
     "created_at": "2008-11-28T08:29:39Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_004643.json:
     "title": "build system uses leftover .so files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4643",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 Assignee: mabshoff
 
-CC:  robertwb
+CC:  @robertwb
 
 As it stands, if you remove a Cython extension from `module_list.py`, and remove all associated files in the sage library, everything builds fine. However, the `.so` files are still there. In particular, if you try to load a pickled object from a class that was defined in that `.pyx` file, it still loads just fine -- in fact, it loads the `.so` and uses that code. 
 
@@ -41,7 +41,7 @@ archive/issue_comments_034952.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4643",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4643#issuecomment-34952",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_034953.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4643",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4643#issuecomment-34953",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_034954.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4643",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4643#issuecomment-34954",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_034955.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4643",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4643#issuecomment-34955",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

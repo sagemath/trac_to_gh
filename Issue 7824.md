@@ -3,7 +3,7 @@
 archive/issues_007824.json:
 ```json
 {
-    "body": "Assignee: pjeremy\n\nCC:  nathann.cohen@gmail.com\n\ncliquer aborts with the error\n\n```\nCannot determine your platform or it is not supported... exiting\n```\n\nunless the platform is explicitly listed as supported.  This patch adds FreeBSD support - which is the same as Linux.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7824\n\n",
+    "body": "Assignee: @peterjeremy\n\nCC:  nathann.cohen@gmail.com\n\ncliquer aborts with the error\n\n```\nCannot determine your platform or it is not supported... exiting\n```\n\nunless the platform is explicitly listed as supported.  This patch adds FreeBSD support - which is the same as Linux.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7824\n\n",
     "created_at": "2010-01-03T02:10:25Z",
     "labels": [
         "porting: BSD",
@@ -14,10 +14,10 @@ archive/issues_007824.json:
     "title": "cliquer-1.2.p2 - add FreeBSD support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7824",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
-Assignee: pjeremy
+Assignee: @peterjeremy
 
 CC:  nathann.cohen@gmail.com
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7824
 archive/issue_comments_067726.json:
 ```json
 {
-    "body": "Attachment [7824.cliquer.patch](tarball://root/attachments/some-uuid/ticket7824/7824.cliquer.patch) by pjeremy created at 2010-01-03 02:17:31",
+    "body": "Attachment [7824.cliquer.patch](tarball://root/attachments/some-uuid/ticket7824/7824.cliquer.patch) by @peterjeremy created at 2010-01-03 02:17:31",
     "created_at": "2010-01-03T02:17:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7824",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7824#issuecomment-67726",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
-Attachment [7824.cliquer.patch](tarball://root/attachments/some-uuid/ticket7824/7824.cliquer.patch) by pjeremy created at 2010-01-03 02:17:31
+Attachment [7824.cliquer.patch](tarball://root/attachments/some-uuid/ticket7824/7824.cliquer.patch) by @peterjeremy created at 2010-01-03 02:17:31
 
 
 
@@ -63,7 +63,7 @@ archive/issue_comments_067727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7824",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7824#issuecomment-67727",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 

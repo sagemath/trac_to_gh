@@ -14,7 +14,7 @@ archive/issues_008798.json:
     "title": "Duplicate version of feedback_arc_set and feedback_vertex_set",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8798",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8798
 archive/issue_comments_080583.json:
 ```json
 {
-    "body": "Attachment [trac_8798.patch](tarball://root/attachments/some-uuid/ticket8798/trac_8798.patch) by ncohen created at 2010-04-28 08:12:59",
+    "body": "Attachment [trac_8798.patch](tarball://root/attachments/some-uuid/ticket8798/trac_8798.patch) by @nathanncohen created at 2010-04-28 08:12:59",
     "created_at": "2010-04-28T08:12:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8798#issuecomment-80583",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_8798.patch](tarball://root/attachments/some-uuid/ticket8798/trac_8798.patch) by ncohen created at 2010-04-28 08:12:59
+Attachment [trac_8798.patch](tarball://root/attachments/some-uuid/ticket8798/trac_8798.patch) by @nathanncohen created at 2010-04-28 08:12:59
 
 
 
@@ -68,7 +68,7 @@ archive/issue_comments_080584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8798#issuecomment-80584",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_080585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8798#issuecomment-80585",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_080587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8798#issuecomment-80587",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_080588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8798#issuecomment-80588",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

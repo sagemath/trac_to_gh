@@ -14,7 +14,7 @@ archive/issues_005608.json:
     "title": "Mertens' constant is named wrongly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5608",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 Assignee: cwitty
@@ -37,7 +37,7 @@ archive/issue_comments_043767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5608#issuecomment-43767",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_043768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5608#issuecomment-43768",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_043769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5608#issuecomment-43769",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_043770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5608#issuecomment-43770",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_043771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5608#issuecomment-43771",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_043772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5608#issuecomment-43772",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_043773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5608#issuecomment-43773",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_043774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5608#issuecomment-43774",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_043775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5608#issuecomment-43775",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_043776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5608#issuecomment-43776",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_043777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5608#issuecomment-43777",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_043778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5608#issuecomment-43778",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -260,16 +260,16 @@ Hmmm...I think you're right; it's best to simply remove it. I don't think changi
 archive/issue_comments_043779.json:
 ```json
 {
-    "body": "Attachment [trac5608.patch](tarball://root/attachments/some-uuid/ticket5608/trac5608.patch) by chapoton created at 2013-08-28 16:50:56\n\nok, back to the original version of the patch",
+    "body": "Attachment [trac5608.patch](tarball://root/attachments/some-uuid/ticket5608/trac5608.patch) by @fchapoton created at 2013-08-28 16:50:56\n\nok, back to the original version of the patch",
     "created_at": "2013-08-28T16:50:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5608#issuecomment-43779",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac5608.patch](tarball://root/attachments/some-uuid/ticket5608/trac5608.patch) by chapoton created at 2013-08-28 16:50:56
+Attachment [trac5608.patch](tarball://root/attachments/some-uuid/ticket5608/trac5608.patch) by @fchapoton created at 2013-08-28 16:50:56
 
 ok, back to the original version of the patch
 
@@ -285,7 +285,7 @@ archive/issue_comments_043780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5608#issuecomment-43780",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -303,7 +303,7 @@ archive/issue_comments_043781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5608#issuecomment-43781",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -321,7 +321,7 @@ archive/issue_comments_043782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5608#issuecomment-43782",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

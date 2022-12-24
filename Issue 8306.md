@@ -3,7 +3,7 @@
 archive/issues_008306.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  mhansen mvngu\n\nAlong with a primed [ccache](http://ccache.samba.org/), compiling multiple spkgs in parallel may significantly speed up Sage builds on multicore machines.\n\nSee [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/4c915ae814dd6514) for some information.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8306\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @mwhansen mvngu\n\nAlong with a primed [ccache](http://ccache.samba.org/), compiling multiple spkgs in parallel may significantly speed up Sage builds on multicore machines.\n\nSee [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/4c915ae814dd6514) for some information.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8306\n\n",
     "created_at": "2010-02-19T11:31:16Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_008306.json:
     "title": "Parallel inter/intra-spkg builds",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8306",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: GeorgSWeber
 
-CC:  mhansen mvngu
+CC:  @mwhansen mvngu
 
 Along with a primed [ccache](http://ccache.samba.org/), compiling multiple spkgs in parallel may significantly speed up Sage builds on multicore machines.
 
@@ -41,7 +41,7 @@ archive/issue_comments_073598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73598",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_073599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73599",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_073600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73600",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_073601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73601",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_073602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73602",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_073603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73603",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_073604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73604",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -168,16 +168,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_073605.json:
 ```json
 {
-    "body": "Attachment [eclib_makefiles.patch](tarball://root/attachments/some-uuid/ticket8306/eclib_makefiles.patch) by mpatel created at 2010-02-27 05:26:18\n\nTweak eclib `Makefile`s so it builds with `+`.  eclib src repo.",
+    "body": "Attachment [eclib_makefiles.patch](tarball://root/attachments/some-uuid/ticket8306/eclib_makefiles.patch) by @qed777 created at 2010-02-27 05:26:18\n\nTweak eclib `Makefile`s so it builds with `+`.  eclib src repo.",
     "created_at": "2010-02-27T05:26:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73605",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [eclib_makefiles.patch](tarball://root/attachments/some-uuid/ticket8306/eclib_makefiles.patch) by mpatel created at 2010-02-27 05:26:18
+Attachment [eclib_makefiles.patch](tarball://root/attachments/some-uuid/ticket8306/eclib_makefiles.patch) by @qed777 created at 2010-02-27 05:26:18
 
 Tweak eclib `Makefile`s so it builds with `+`.  eclib src repo.
 
@@ -193,7 +193,7 @@ archive/issue_comments_073606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73606",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_073607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73607",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_073608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73608",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_073609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73609",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -330,7 +330,7 @@ archive/issue_comments_073612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73612",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -350,7 +350,7 @@ archive/issue_comments_073613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73613",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -372,7 +372,7 @@ archive/issue_comments_073614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73614",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -392,7 +392,7 @@ archive/issue_comments_073615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73615",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -413,16 +413,16 @@ My motivation for making the new feature optional, for now, is so we can get fee
 archive/issue_comments_073616.json:
 ```json
 {
-    "body": "Attachment [trac_8306_scripts-spkg_log_files.patch](tarball://root/attachments/some-uuid/ticket8306/trac_8306_scripts-spkg_log_files.patch) by mpatel created at 2010-03-01 05:11:59\n\nMake `sage -i foo.spkg` also append to `spkg/logs/foo.spkg`.  **scripts** repo.",
+    "body": "Attachment [trac_8306_scripts-spkg_log_files.patch](tarball://root/attachments/some-uuid/ticket8306/trac_8306_scripts-spkg_log_files.patch) by @qed777 created at 2010-03-01 05:11:59\n\nMake `sage -i foo.spkg` also append to `spkg/logs/foo.spkg`.  **scripts** repo.",
     "created_at": "2010-03-01T05:11:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73616",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8306_scripts-spkg_log_files.patch](tarball://root/attachments/some-uuid/ticket8306/trac_8306_scripts-spkg_log_files.patch) by mpatel created at 2010-03-01 05:11:59
+Attachment [trac_8306_scripts-spkg_log_files.patch](tarball://root/attachments/some-uuid/ticket8306/trac_8306_scripts-spkg_log_files.patch) by @qed777 created at 2010-03-01 05:11:59
 
 Make `sage -i foo.spkg` also append to `spkg/logs/foo.spkg`.  **scripts** repo.
 
@@ -438,7 +438,7 @@ archive/issue_comments_073617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73617",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -488,7 +488,7 @@ archive/issue_comments_073618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73618",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -531,7 +531,7 @@ archive/issue_comments_073620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73620",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -594,7 +594,7 @@ archive/issue_comments_073621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73621",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -630,7 +630,7 @@ archive/issue_comments_073623.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73623",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -648,7 +648,7 @@ archive/issue_comments_073624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73624",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -666,7 +666,7 @@ archive/issue_comments_073625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73625",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -684,7 +684,7 @@ archive/issue_comments_073626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73626",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -713,7 +713,7 @@ archive/issue_comments_073627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73627",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -780,7 +780,7 @@ archive/issue_comments_073629.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73629",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -812,7 +812,7 @@ archive/issue_comments_073630.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73630",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -878,7 +878,7 @@ archive/issue_comments_073631.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73631",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -938,7 +938,7 @@ archive/issue_comments_073633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73633",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -956,7 +956,7 @@ archive/issue_comments_073634.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73634",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -993,7 +993,7 @@ archive/issue_comments_073635.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73635",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1051,7 +1051,7 @@ archive/issue_comments_073637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73637",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1089,7 +1089,7 @@ archive/issue_comments_073639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73639",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1107,7 +1107,7 @@ archive/issue_comments_073640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73640",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1168,7 +1168,7 @@ archive/issue_comments_073642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73642",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1188,7 +1188,7 @@ archive/issue_comments_073643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73643",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1205,16 +1205,16 @@ Two comments:
 archive/issue_comments_073644.json:
 ```json
 {
-    "body": "Attachment [makefile](tarball://root/attachments/some-uuid/ticket8306/makefile) by jhpalmieri created at 2010-04-06 05:50:54\n\nnew version of SAGE_ROOT/makefile",
+    "body": "Attachment [makefile](tarball://root/attachments/some-uuid/ticket8306/makefile) by @jhpalmieri created at 2010-04-06 05:50:54\n\nnew version of SAGE_ROOT/makefile",
     "created_at": "2010-04-06T05:50:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73644",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [makefile](tarball://root/attachments/some-uuid/ticket8306/makefile) by jhpalmieri created at 2010-04-06 05:50:54
+Attachment [makefile](tarball://root/attachments/some-uuid/ticket8306/makefile) by @jhpalmieri created at 2010-04-06 05:50:54
 
 new version of SAGE_ROOT/makefile
 
@@ -1230,7 +1230,7 @@ archive/issue_comments_073645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73645",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1243,16 +1243,16 @@ diff of SAGE_ROOT/makefile
 archive/issue_comments_073646.json:
 ```json
 {
-    "body": "Attachment [makefile.diff](tarball://root/attachments/some-uuid/ticket8306/makefile.diff) by jhpalmieri created at 2010-04-06 21:20:36\n\nscripts repo: add pipestatus to source distribution",
+    "body": "Attachment [makefile.diff](tarball://root/attachments/some-uuid/ticket8306/makefile.diff) by @jhpalmieri created at 2010-04-06 21:20:36\n\nscripts repo: add pipestatus to source distribution",
     "created_at": "2010-04-06T21:20:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73646",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [makefile.diff](tarball://root/attachments/some-uuid/ticket8306/makefile.diff) by jhpalmieri created at 2010-04-06 21:20:36
+Attachment [makefile.diff](tarball://root/attachments/some-uuid/ticket8306/makefile.diff) by @jhpalmieri created at 2010-04-06 21:20:36
 
 scripts repo: add pipestatus to source distribution
 
@@ -1268,7 +1268,7 @@ archive/issue_comments_073647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73647",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1281,16 +1281,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_073648.json:
 ```json
 {
-    "body": "Attachment [trac_8306_scripts-pipestatus.patch](tarball://root/attachments/some-uuid/ticket8306/trac_8306_scripts-pipestatus.patch) by jhpalmieri created at 2010-04-06 22:18:57\n\nRunning \"sage -sdist\" with these changes doesn't work because pipestatus doesn't get copied over.  The patch \"trac_8306_scripts-pipestatus.patch\" fixes this.\n\nI was able to successfully build this on sage.math, but I had problems on my mac (with two cores, using \"make -j2\").  I think it's with singular; I get lots of lines like\n\n```\nsage/libs/singular/singular.cpp:162:21: error: factory.h: No such file or directory\n```\n\nIt seems to be building singular at the same time as the main Sage spkg; does that sound okay?",
+    "body": "Attachment [trac_8306_scripts-pipestatus.patch](tarball://root/attachments/some-uuid/ticket8306/trac_8306_scripts-pipestatus.patch) by @jhpalmieri created at 2010-04-06 22:18:57\n\nRunning \"sage -sdist\" with these changes doesn't work because pipestatus doesn't get copied over.  The patch \"trac_8306_scripts-pipestatus.patch\" fixes this.\n\nI was able to successfully build this on sage.math, but I had problems on my mac (with two cores, using \"make -j2\").  I think it's with singular; I get lots of lines like\n\n```\nsage/libs/singular/singular.cpp:162:21: error: factory.h: No such file or directory\n```\n\nIt seems to be building singular at the same time as the main Sage spkg; does that sound okay?",
     "created_at": "2010-04-06T22:18:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73648",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8306_scripts-pipestatus.patch](tarball://root/attachments/some-uuid/ticket8306/trac_8306_scripts-pipestatus.patch) by jhpalmieri created at 2010-04-06 22:18:57
+Attachment [trac_8306_scripts-pipestatus.patch](tarball://root/attachments/some-uuid/ticket8306/trac_8306_scripts-pipestatus.patch) by @jhpalmieri created at 2010-04-06 22:18:57
 
 Running "sage -sdist" with these changes doesn't work because pipestatus doesn't get copied over.  The patch "trac_8306_scripts-pipestatus.patch" fixes this.
 
@@ -1314,7 +1314,7 @@ archive/issue_comments_073649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73649",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1344,7 +1344,7 @@ archive/issue_comments_073650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73650",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1374,7 +1374,7 @@ archive/issue_comments_073651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73651",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1401,7 +1401,7 @@ archive/issue_comments_073652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73652",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1427,7 +1427,7 @@ archive/issue_comments_073653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73653",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1463,7 +1463,7 @@ archive/issue_comments_073654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73654",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1486,7 +1486,7 @@ archive/issue_comments_073655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73655",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1533,7 +1533,7 @@ archive/issue_comments_073657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73657",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1556,16 +1556,16 @@ By the way, I still can't get singular and ecl to compile on my iMac if SAGE_PAR
 archive/issue_comments_073658.json:
 ```json
 {
-    "body": "Attachment [pipestatus-new](tarball://root/attachments/some-uuid/ticket8306/pipestatus-new) by jhpalmieri created at 2010-04-11 15:22:28\n\nversion of pipestatus using pipefail",
+    "body": "Attachment [pipestatus-new](tarball://root/attachments/some-uuid/ticket8306/pipestatus-new) by @jhpalmieri created at 2010-04-11 15:22:28\n\nversion of pipestatus using pipefail",
     "created_at": "2010-04-11T15:22:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73658",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [pipestatus-new](tarball://root/attachments/some-uuid/ticket8306/pipestatus-new) by jhpalmieri created at 2010-04-11 15:22:28
+Attachment [pipestatus-new](tarball://root/attachments/some-uuid/ticket8306/pipestatus-new) by @jhpalmieri created at 2010-04-11 15:22:28
 
 version of pipestatus using pipefail
 
@@ -1581,7 +1581,7 @@ archive/issue_comments_073659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73659",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1610,7 +1610,7 @@ archive/issue_comments_073660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73660",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1623,16 +1623,16 @@ Allow redirection of stderr and other file descriptors.  Add comp.os.unix FAQ re
 archive/issue_comments_073661.json:
 ```json
 {
-    "body": "Attachment [pipestatus](tarball://root/attachments/some-uuid/ticket8306/pipestatus) by mpatel created at 2010-06-08 09:04:43\n\nReplying to [comment:59 mpatel]:\n> > By the way, I still can't get singular and ecl to compile on my iMac if SAGE_PARALLEL_SPKG_BUILD is set to \"yes\". Any help with that issue would be appreciated.\n> \n> I'll try to investigate soon.\n\nI've attached updated versions of `deps`, `install`, and `pipestatus` to accompany the `makefile` and the two `trac_8306_scripts-*` patches.  With these and the forthcoming spkgs at #9185, #9186, and #9187, I can build 4.4.4.alpha0 with SAGE_PARALLEL_SPKG_BUILD=\"yes\"`.",
+    "body": "Attachment [pipestatus](tarball://root/attachments/some-uuid/ticket8306/pipestatus) by @qed777 created at 2010-06-08 09:04:43\n\nReplying to [comment:59 mpatel]:\n> > By the way, I still can't get singular and ecl to compile on my iMac if SAGE_PARALLEL_SPKG_BUILD is set to \"yes\". Any help with that issue would be appreciated.\n> \n> I'll try to investigate soon.\n\nI've attached updated versions of `deps`, `install`, and `pipestatus` to accompany the `makefile` and the two `trac_8306_scripts-*` patches.  With these and the forthcoming spkgs at #9185, #9186, and #9187, I can build 4.4.4.alpha0 with SAGE_PARALLEL_SPKG_BUILD=\"yes\"`.",
     "created_at": "2010-06-08T09:04:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73661",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [pipestatus](tarball://root/attachments/some-uuid/ticket8306/pipestatus) by mpatel created at 2010-06-08 09:04:43
+Attachment [pipestatus](tarball://root/attachments/some-uuid/ticket8306/pipestatus) by @qed777 created at 2010-06-08 09:04:43
 
 Replying to [comment:59 mpatel]:
 > > By the way, I still can't get singular and ecl to compile on my iMac if SAGE_PARALLEL_SPKG_BUILD is set to "yes". Any help with that issue would be appreciated.
@@ -1653,7 +1653,7 @@ archive/issue_comments_073662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73662",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1674,7 +1674,7 @@ archive/issue_comments_073663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73663",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1687,16 +1687,16 @@ Rebased for 4.4.4.alpha0.  Replaces previous version.
 archive/issue_comments_073664.json:
 ```json
 {
-    "body": "Attachment [trac_8306_scripts-spkg_log_files.2.patch](tarball://root/attachments/some-uuid/ticket8306/trac_8306_scripts-spkg_log_files.2.patch) by mpatel created at 2010-06-09 09:40:38",
+    "body": "Attachment [trac_8306_scripts-spkg_log_files.2.patch](tarball://root/attachments/some-uuid/ticket8306/trac_8306_scripts-spkg_log_files.2.patch) by @qed777 created at 2010-06-09 09:40:38",
     "created_at": "2010-06-09T09:40:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73664",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8306_scripts-spkg_log_files.2.patch](tarball://root/attachments/some-uuid/ticket8306/trac_8306_scripts-spkg_log_files.2.patch) by mpatel created at 2010-06-09 09:40:38
+Attachment [trac_8306_scripts-spkg_log_files.2.patch](tarball://root/attachments/some-uuid/ticket8306/trac_8306_scripts-spkg_log_files.2.patch) by @qed777 created at 2010-06-09 09:40:38
 
 
 
@@ -1710,7 +1710,7 @@ archive/issue_comments_073665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73665",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1728,7 +1728,7 @@ archive/issue_comments_073666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73666",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1758,7 +1758,7 @@ archive/issue_comments_073667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73667",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1778,7 +1778,7 @@ archive/issue_comments_073668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73668",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1796,7 +1796,7 @@ archive/issue_comments_073669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73669",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1814,7 +1814,7 @@ archive/issue_comments_073670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73670",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1836,7 +1836,7 @@ archive/issue_comments_073671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73671",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1854,7 +1854,7 @@ archive/issue_comments_073672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73672",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1905,7 +1905,7 @@ archive/issue_comments_073673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73673",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1923,7 +1923,7 @@ archive/issue_comments_073674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73674",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1943,7 +1943,7 @@ archive/issue_comments_073675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73675",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1958,16 +1958,16 @@ I've opened #9201 for this problem.
 archive/issue_comments_073676.json:
 ```json
 {
-    "body": "Attachment [install](tarball://root/attachments/some-uuid/ticket8306/install) by mpatel created at 2010-06-24 07:51:37\n\n`spkg/install`.  Rebased for 4.4.4.",
+    "body": "Attachment [install](tarball://root/attachments/some-uuid/ticket8306/install) by @qed777 created at 2010-06-24 07:51:37\n\n`spkg/install`.  Rebased for 4.4.4.",
     "created_at": "2010-06-24T07:51:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73676",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [install](tarball://root/attachments/some-uuid/ticket8306/install) by mpatel created at 2010-06-24 07:51:37
+Attachment [install](tarball://root/attachments/some-uuid/ticket8306/install) by @qed777 created at 2010-06-24 07:51:37
 
 `spkg/install`.  Rebased for 4.4.4.
 
@@ -1978,16 +1978,16 @@ Attachment [install](tarball://root/attachments/some-uuid/ticket8306/install) by
 archive/issue_comments_073677.json:
 ```json
 {
-    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket8306/deps) by mpatel created at 2010-06-24 07:52:32\n\n`spkg/standard/deps`.  Rebased for 4.4.4.",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket8306/deps) by @qed777 created at 2010-06-24 07:52:32\n\n`spkg/standard/deps`.  Rebased for 4.4.4.",
     "created_at": "2010-06-24T07:52:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73677",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [deps](tarball://root/attachments/some-uuid/ticket8306/deps) by mpatel created at 2010-06-24 07:52:32
+Attachment [deps](tarball://root/attachments/some-uuid/ticket8306/deps) by @qed777 created at 2010-06-24 07:52:32
 
 `spkg/standard/deps`.  Rebased for 4.4.4.
 
@@ -2003,7 +2003,7 @@ archive/issue_comments_073678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73678",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -2021,7 +2021,7 @@ archive/issue_comments_073679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73679",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -2039,7 +2039,7 @@ archive/issue_comments_073680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73680",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -2078,7 +2078,7 @@ archive/issue_comments_073681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73681",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -2115,7 +2115,7 @@ archive/issue_comments_073682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73682",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -2133,7 +2133,7 @@ archive/issue_comments_073683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73683",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -2146,16 +2146,16 @@ spkg/standard/deps. Rebased for 4.4.4.
 archive/issue_comments_073684.json:
 ```json
 {
-    "body": "Attachment [deps-new](tarball://root/attachments/some-uuid/ticket8306/deps-new) by jhpalmieri created at 2010-06-25 00:12:08\n\ndiff between \"deps\" in 4.4.4 and \"deps-new\"",
+    "body": "Attachment [deps-new](tarball://root/attachments/some-uuid/ticket8306/deps-new) by @jhpalmieri created at 2010-06-25 00:12:08\n\ndiff between \"deps\" in 4.4.4 and \"deps-new\"",
     "created_at": "2010-06-25T00:12:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73684",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [deps-new](tarball://root/attachments/some-uuid/ticket8306/deps-new) by jhpalmieri created at 2010-06-25 00:12:08
+Attachment [deps-new](tarball://root/attachments/some-uuid/ticket8306/deps-new) by @jhpalmieri created at 2010-06-25 00:12:08
 
 diff between "deps" in 4.4.4 and "deps-new"
 
@@ -2166,16 +2166,16 @@ diff between "deps" in 4.4.4 and "deps-new"
 archive/issue_comments_073685.json:
 ```json
 {
-    "body": "Attachment [deps-deps-new.diff](tarball://root/attachments/some-uuid/ticket8306/deps-deps-new.diff) by jhpalmieri created at 2010-06-25 00:12:19\n\ndiff between mpatel's \"deps\" and \"deps-new\"",
+    "body": "Attachment [deps-deps-new.diff](tarball://root/attachments/some-uuid/ticket8306/deps-deps-new.diff) by @jhpalmieri created at 2010-06-25 00:12:19\n\ndiff between mpatel's \"deps\" and \"deps-new\"",
     "created_at": "2010-06-25T00:12:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73685",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [deps-deps-new.diff](tarball://root/attachments/some-uuid/ticket8306/deps-deps-new.diff) by jhpalmieri created at 2010-06-25 00:12:19
+Attachment [deps-deps-new.diff](tarball://root/attachments/some-uuid/ticket8306/deps-deps-new.diff) by @jhpalmieri created at 2010-06-25 00:12:19
 
 diff between mpatel's "deps" and "deps-new"
 
@@ -2191,7 +2191,7 @@ archive/issue_comments_073686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73686",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -2209,7 +2209,7 @@ archive/issue_comments_073687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73687",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -2222,16 +2222,16 @@ Resolution: fixed
 archive/issue_comments_073688.json:
 ```json
 {
-    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket8306/deps.diff) by mpatel created at 2010-06-26 07:47:50\n\nDiff of `spkg/standard/deps` vs 4.4.4.",
+    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket8306/deps.diff) by @qed777 created at 2010-06-26 07:47:50\n\nDiff of `spkg/standard/deps` vs 4.4.4.",
     "created_at": "2010-06-26T07:47:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73688",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket8306/deps.diff) by mpatel created at 2010-06-26 07:47:50
+Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket8306/deps.diff) by @qed777 created at 2010-06-26 07:47:50
 
 Diff of `spkg/standard/deps` vs 4.4.4.
 
@@ -2247,7 +2247,7 @@ archive/issue_comments_073689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73689",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -2260,16 +2260,16 @@ Diff of `spkg/install` vs 4.4.4.
 archive/issue_comments_073690.json:
 ```json
 {
-    "body": "Attachment [install.diff](tarball://root/attachments/some-uuid/ticket8306/install.diff) by mpatel created at 2010-06-26 08:04:42\n\nReplying to [comment:75 jhpalmieri]:\n> I think twistedweb2 used to be a package but is no longer.  I can't find the relevant ticket, but I'm going to remove references to it from deps.  (See also a comment at #9274.)\n\nI mentioned twistedweb2 in an [older version of the description](http://trac.sagemath.org/sage_trac/ticket/8306?action=diff&version=70&old_version=3).\n\nMaybe we should add the missing targets (Sphinx, etc.) at #9274?  It does seem better to be explicit about the dependencies.",
+    "body": "Attachment [install.diff](tarball://root/attachments/some-uuid/ticket8306/install.diff) by @qed777 created at 2010-06-26 08:04:42\n\nReplying to [comment:75 jhpalmieri]:\n> I think twistedweb2 used to be a package but is no longer.  I can't find the relevant ticket, but I'm going to remove references to it from deps.  (See also a comment at #9274.)\n\nI mentioned twistedweb2 in an [older version of the description](http://trac.sagemath.org/sage_trac/ticket/8306?action=diff&version=70&old_version=3).\n\nMaybe we should add the missing targets (Sphinx, etc.) at #9274?  It does seem better to be explicit about the dependencies.",
     "created_at": "2010-06-26T08:04:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8306#issuecomment-73690",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [install.diff](tarball://root/attachments/some-uuid/ticket8306/install.diff) by mpatel created at 2010-06-26 08:04:42
+Attachment [install.diff](tarball://root/attachments/some-uuid/ticket8306/install.diff) by @qed777 created at 2010-06-26 08:04:42
 
 Replying to [comment:75 jhpalmieri]:
 > I think twistedweb2 used to be a package but is no longer.  I can't find the relevant ticket, but I'm going to remove references to it from deps.  (See also a comment at #9274.)

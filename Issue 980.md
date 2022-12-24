@@ -3,7 +3,7 @@
 archive/issues_000980.json:
 ```json
 {
-    "body": "Assignee: dfdeshom\n\nCC:  dfdeshom@gmail.com\n\nThere are 2 quirks about random multivariate polynomials outlined below:\n\n1) Degrees are severely restricted:\n> The maximum degree in every variable\n> is (maximum total degree of resulting polynomial) / (number of\n> varialbes of the polynomial). \n\n2) Too many zero elements. Polynomials generated are too sparse.\n> The second point is about the number of coefficients that are set to\n> 0. This might a point to argue about, but if I create a random\n> polynomial with a  (maximum number of terms to generate) then I expect\n> that the 0 occur\n\nIssue created by migration from https://trac.sagemath.org/ticket/980\n\n",
+    "body": "Assignee: @dfdeshom\n\nCC:  dfdeshom@gmail.com\n\nThere are 2 quirks about random multivariate polynomials outlined below:\n\n1) Degrees are severely restricted:\n> The maximum degree in every variable\n> is (maximum total degree of resulting polynomial) / (number of\n> varialbes of the polynomial). \n\n2) Too many zero elements. Polynomials generated are too sparse.\n> The second point is about the number of coefficients that are set to\n> 0. This might a point to argue about, but if I create a random\n> polynomial with a  (maximum number of terms to generate) then I expect\n> that the 0 occur\n\nIssue created by migration from https://trac.sagemath.org/ticket/980\n\n",
     "created_at": "2007-10-24T04:42:07Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_000980.json:
     "title": "random_element() for multivariate polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/980",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
-Assignee: dfdeshom
+Assignee: @dfdeshom
 
 CC:  dfdeshom@gmail.com
 
@@ -50,7 +50,7 @@ archive/issue_comments_005975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5975",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_005976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5976",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_005977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5977",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_005978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5978",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -125,16 +125,16 @@ Changing component from algebraic geometry to basic arithmetic.
 archive/issue_comments_005979.json:
 ```json
 {
-    "body": "Attachment [rand-poly.txt](tarball://root/attachments/some-uuid/ticket980/rand-poly.txt) by dfdeshom created at 2007-10-25 03:30:56",
+    "body": "Attachment [rand-poly.txt](tarball://root/attachments/some-uuid/ticket980/rand-poly.txt) by @dfdeshom created at 2007-10-25 03:30:56",
     "created_at": "2007-10-25T03:30:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5979",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Attachment [rand-poly.txt](tarball://root/attachments/some-uuid/ticket980/rand-poly.txt) by dfdeshom created at 2007-10-25 03:30:56
+Attachment [rand-poly.txt](tarball://root/attachments/some-uuid/ticket980/rand-poly.txt) by @dfdeshom created at 2007-10-25 03:30:56
 
 
 
@@ -148,7 +148,7 @@ archive/issue_comments_005980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5980",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_005981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5981",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -185,16 +185,16 @@ NOTE: `random_element.py` is not a patch but a `py` file to load/attach into SAG
 archive/issue_comments_005982.json:
 ```json
 {
-    "body": "Attachment [random_monomial.py](tarball://root/attachments/some-uuid/ticket980/random_monomial.py) by malb created at 2007-11-07 13:27:05",
+    "body": "Attachment [random_monomial.py](tarball://root/attachments/some-uuid/ticket980/random_monomial.py) by @malb created at 2007-11-07 13:27:05",
     "created_at": "2007-11-07T13:27:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5982",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [random_monomial.py](tarball://root/attachments/some-uuid/ticket980/random_monomial.py) by malb created at 2007-11-07 13:27:05
+Attachment [random_monomial.py](tarball://root/attachments/some-uuid/ticket980/random_monomial.py) by @malb created at 2007-11-07 13:27:05
 
 
 
@@ -208,7 +208,7 @@ archive/issue_comments_005983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5983",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_005984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5984",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_005985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5985",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -298,16 +298,16 @@ Unfortunately, random-malb.txt no longer applies against sage-2.8.14.
 archive/issue_comments_005988.json:
 ```json
 {
-    "body": "Attachment [random-malb.hg](tarball://root/attachments/some-uuid/ticket980/random-malb.hg) by dfdeshom created at 2007-11-28 16:29:55",
+    "body": "Attachment [random-malb.hg](tarball://root/attachments/some-uuid/ticket980/random-malb.hg) by @dfdeshom created at 2007-11-28 16:29:55",
     "created_at": "2007-11-28T16:29:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5988",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Attachment [random-malb.hg](tarball://root/attachments/some-uuid/ticket980/random-malb.hg) by dfdeshom created at 2007-11-28 16:29:55
+Attachment [random-malb.hg](tarball://root/attachments/some-uuid/ticket980/random-malb.hg) by @dfdeshom created at 2007-11-28 16:29:55
 
 
 
@@ -321,7 +321,7 @@ archive/issue_comments_005989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5989",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_005990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5990",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -357,7 +357,7 @@ archive/issue_comments_005991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5991",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -375,7 +375,7 @@ archive/issue_comments_005992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5992",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -393,7 +393,7 @@ archive/issue_comments_005993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5993",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -411,7 +411,7 @@ archive/issue_comments_005994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5994",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -429,7 +429,7 @@ archive/issue_comments_005995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5995",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -447,7 +447,7 @@ archive/issue_comments_005996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5996",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -465,7 +465,7 @@ archive/issue_comments_005997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5997",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -501,7 +501,7 @@ archive/issue_comments_005998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5998",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -552,7 +552,7 @@ archive/issue_comments_005999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5999",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -603,7 +603,7 @@ archive/issue_comments_006000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-6000",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -621,7 +621,7 @@ archive/issue_comments_006001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-6001",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -634,16 +634,16 @@ Changing priority from minor to major.
 archive/issue_comments_006002.json:
 ```json
 {
-    "body": "Attachment [random_element.hg](tarball://root/attachments/some-uuid/ticket980/random_element.hg) by malb created at 2008-01-06 16:25:16",
+    "body": "Attachment [random_element.hg](tarball://root/attachments/some-uuid/ticket980/random_element.hg) by @malb created at 2008-01-06 16:25:16",
     "created_at": "2008-01-06T16:25:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-6002",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [random_element.hg](tarball://root/attachments/some-uuid/ticket980/random_element.hg) by malb created at 2008-01-06 16:25:16
+Attachment [random_element.hg](tarball://root/attachments/some-uuid/ticket980/random_element.hg) by @malb created at 2008-01-06 16:25:16
 
 
 

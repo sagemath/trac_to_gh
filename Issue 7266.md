@@ -3,7 +3,7 @@
 archive/issues_007266.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  robertwb cremona\n\nThe Silverman height bound isn't necessarily as tight at the CPS bound, but it works uniformly over all field extensions, which makes it very useful for some applications, e.g., computing mordell-weil groups over number fields.   So let's add it to Sage!\n\nIssue created by migration from https://trac.sagemath.org/ticket/7266\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  robertwb cremona\n\nThe Silverman height bound isn't necessarily as tight at the CPS bound, but it works uniformly over all field extensions, which makes it very useful for some applications, e.g., computing mordell-weil groups over number fields.   So let's add it to Sage!\n\nIssue created by migration from https://trac.sagemath.org/ticket/7266\n\n",
     "created_at": "2009-10-23T03:16:15Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_007266.json:
     "title": "implement computation of Silverman height bounds",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7266",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  robertwb cremona
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7266
 archive/issue_comments_060368.json:
 ```json
 {
-    "body": "Attachment [trac_7266.patch](tarball://root/attachments/some-uuid/ticket7266/trac_7266.patch) by was created at 2009-10-23 06:38:55",
+    "body": "Attachment [trac_7266.patch](tarball://root/attachments/some-uuid/ticket7266/trac_7266.patch) by @williamstein created at 2009-10-23 06:38:55",
     "created_at": "2009-10-23T06:38:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7266#issuecomment-60368",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7266.patch](tarball://root/attachments/some-uuid/ticket7266/trac_7266.patch) by was created at 2009-10-23 06:38:55
+Attachment [trac_7266.patch](tarball://root/attachments/some-uuid/ticket7266/trac_7266.patch) by @williamstein created at 2009-10-23 06:38:55
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_060369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7266#issuecomment-60369",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_060370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7266#issuecomment-60370",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_060371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7266#issuecomment-60371",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_060372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7266#issuecomment-60372",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_060373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7266#issuecomment-60373",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_060374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7266#issuecomment-60374",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_060375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7266#issuecomment-60375",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

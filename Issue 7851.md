@@ -3,7 +3,7 @@
 archive/issues_007851.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  jsp\n\nThe spkg-install of libz zlib-1.2.3.p5 has this:\n\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n   CFLAGS=\" -m64 $CFLAGS -fPIC -g -I\\\"$SAGE_LOCAL/include\\\"\"\n   cp ../patches/configure-OSX-64 configure\nelse\n   CFLAGS=\"$CFLAGS -fPIC -g -I\\\"$SAGE_LOCAL/include\\\"\"\nfi\nexport CFLAGS\n```\n\n\nso is almost doomed to a 64-bit build unless one sets CFLAGS externally. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7851\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jaapspies\n\nThe spkg-install of libz zlib-1.2.3.p5 has this:\n\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n   CFLAGS=\" -m64 $CFLAGS -fPIC -g -I\\\"$SAGE_LOCAL/include\\\"\"\n   cp ../patches/configure-OSX-64 configure\nelse\n   CFLAGS=\"$CFLAGS -fPIC -g -I\\\"$SAGE_LOCAL/include\\\"\"\nfi\nexport CFLAGS\n```\n\n\nso is almost doomed to a 64-bit build unless one sets CFLAGS externally. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7851\n\n",
     "created_at": "2010-01-05T19:04:56Z",
     "labels": [
         "porting",
@@ -19,7 +19,7 @@ archive/issues_007851.json:
 ```
 Assignee: drkirkby
 
-CC:  jsp
+CC:  @jaapspies
 
 The spkg-install of libz zlib-1.2.3.p5 has this:
 
@@ -218,7 +218,7 @@ archive/issue_comments_068010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7851",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7851#issuecomment-68010",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_068011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7851",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7851#issuecomment-68011",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_068012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7851",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7851#issuecomment-68012",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_068013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7851",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7851#issuecomment-68013",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_068014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7851",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7851#issuecomment-68014",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

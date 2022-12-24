@@ -3,7 +3,7 @@
 archive/issues_000846.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  craigcitro\n\nThis should probably go into several different files. At least the gmp stuff could be moved to a different file (perhaps the current gmp.pxi should be renamed?) \n\nIssue created by migration from https://trac.sagemath.org/ticket/846\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @craigcitro\n\nThis should probably go into several different files. At least the gmp stuff could be moved to a different file (perhaps the current gmp.pxi should be renamed?) \n\nIssue created by migration from https://trac.sagemath.org/ticket/846\n\n",
     "created_at": "2007-10-10T10:53:06Z",
     "labels": [
         "interfaces",
@@ -14,12 +14,12 @@ archive/issues_000846.json:
     "title": "Split cdefs.pxi",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/846",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  craigcitro
+CC:  @craigcitro
 
 This should probably go into several different files. At least the gmp stuff could be moved to a different file (perhaps the current gmp.pxi should be renamed?) 
 
@@ -39,7 +39,7 @@ archive/issue_comments_005229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/846",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/846#issuecomment-5229",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_005230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/846",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/846#issuecomment-5230",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -70,16 +70,16 @@ Don't forget to put mpz_set_longlong in stdsage.
 archive/issue_comments_005231.json:
 ```json
 {
-    "body": "Attachment [846-move-gmp.patch](tarball://root/attachments/some-uuid/ticket846/846-move-gmp.patch) by robertwb created at 2008-11-22 00:40:59\n\nAlso, this now has the complete list of gmp functions found in the manual.",
+    "body": "Attachment [846-move-gmp.patch](tarball://root/attachments/some-uuid/ticket846/846-move-gmp.patch) by @robertwb created at 2008-11-22 00:40:59\n\nAlso, this now has the complete list of gmp functions found in the manual.",
     "created_at": "2008-11-22T00:40:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/846",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/846#issuecomment-5231",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [846-move-gmp.patch](tarball://root/attachments/some-uuid/ticket846/846-move-gmp.patch) by robertwb created at 2008-11-22 00:40:59
+Attachment [846-move-gmp.patch](tarball://root/attachments/some-uuid/ticket846/846-move-gmp.patch) by @robertwb created at 2008-11-22 00:40:59
 
 Also, this now has the complete list of gmp functions found in the manual.
 
@@ -95,7 +95,7 @@ archive/issue_comments_005232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/846",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/846#issuecomment-5232",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_005233.json:
     "issue": "https://github.com/sagemath/sagetest/issues/846",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/846#issuecomment-5233",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

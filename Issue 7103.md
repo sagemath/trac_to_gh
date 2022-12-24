@@ -14,7 +14,7 @@ archive/issues_007103.json:
     "title": "fix \"mysterious error\" in parallel doctesting first time: see ticket #7079",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7103",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_058785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58785",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -50,16 +50,16 @@ Here's an attempt.  If init.sage isn't present, then run the script "sage-starts
 archive/issue_comments_058786.json:
 ```json
 {
-    "body": "Attachment [trac_7103-scripts.patch](tarball://root/attachments/some-uuid/ticket7103/trac_7103-scripts.patch) by jhpalmieri created at 2009-10-04 00:34:35\n\napply to scripts repository",
+    "body": "Attachment [trac_7103-scripts.patch](tarball://root/attachments/some-uuid/ticket7103/trac_7103-scripts.patch) by @jhpalmieri created at 2009-10-04 00:34:35\n\napply to scripts repository",
     "created_at": "2009-10-04T00:34:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58786",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_7103-scripts.patch](tarball://root/attachments/some-uuid/ticket7103/trac_7103-scripts.patch) by jhpalmieri created at 2009-10-04 00:34:35
+Attachment [trac_7103-scripts.patch](tarball://root/attachments/some-uuid/ticket7103/trac_7103-scripts.patch) by @jhpalmieri created at 2009-10-04 00:34:35
 
 apply to scripts repository
 
@@ -75,7 +75,7 @@ archive/issue_comments_058787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58787",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_058788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58788",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_058789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58789",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_058791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58791",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -172,16 +172,16 @@ As far as I could tell, the presence (or lack) of init.sage was unrelated to the
 archive/issue_comments_058792.json:
 ```json
 {
-    "body": "Attachment [trac_7103-scripts-v2.patch](tarball://root/attachments/some-uuid/ticket7103/trac_7103-scripts-v2.patch) by jhpalmieri created at 2009-11-12 22:15:42\n\napply to scripts repository",
+    "body": "Attachment [trac_7103-scripts-v2.patch](tarball://root/attachments/some-uuid/ticket7103/trac_7103-scripts-v2.patch) by @jhpalmieri created at 2009-11-12 22:15:42\n\napply to scripts repository",
     "created_at": "2009-11-12T22:15:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58792",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_7103-scripts-v2.patch](tarball://root/attachments/some-uuid/ticket7103/trac_7103-scripts-v2.patch) by jhpalmieri created at 2009-11-12 22:15:42
+Attachment [trac_7103-scripts-v2.patch](tarball://root/attachments/some-uuid/ticket7103/trac_7103-scripts-v2.patch) by @jhpalmieri created at 2009-11-12 22:15:42
 
 apply to scripts repository
 
@@ -197,7 +197,7 @@ archive/issue_comments_058793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58793",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_058794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58794",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_058795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58795",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_058796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58796",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_058797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58797",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001426.json:
 ```json
 {
-    "body": "Assignee: was\n\nI don't know if this is possible, but I wish the possibility to view all tickets \nreported by a user logged in trac (either only active tickets, or active tickets first).\nThis would enable me to see progress made on those tickets.\n\nCurrently it is possible to view ***my tickets***, i.e., tickets ***assigned to me***,\nwhich is quite different :-)\n\nPS: I'm not sure the component \"website/wiki\" is the right one. Maybe one needs a new component\n\"trac\"?\n\nIssue created by migration from https://trac.sagemath.org/ticket/1426\n\n",
+    "body": "Assignee: @williamstein\n\nI don't know if this is possible, but I wish the possibility to view all tickets \nreported by a user logged in trac (either only active tickets, or active tickets first).\nThis would enable me to see progress made on those tickets.\n\nCurrently it is possible to view ***my tickets***, i.e., tickets ***assigned to me***,\nwhich is quite different :-)\n\nPS: I'm not sure the component \"website/wiki\" is the right one. Maybe one needs a new component\n\"trac\"?\n\nIssue created by migration from https://trac.sagemath.org/ticket/1426\n\n",
     "created_at": "2007-12-08T10:44:15Z",
     "labels": [
         "website/wiki",
@@ -14,10 +14,10 @@ archive/issues_001426.json:
     "title": "new trac view: tickets ***reported by*** given user",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1426",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I don't know if this is possible, but I wish the possibility to view all tickets 
 reported by a user logged in trac (either only active tickets, or active tickets first).
@@ -69,7 +69,7 @@ archive/issue_comments_009196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1426#issuecomment-9196",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_009197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1426#issuecomment-9197",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_009198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1426#issuecomment-9198",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_009200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1426#issuecomment-9200",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

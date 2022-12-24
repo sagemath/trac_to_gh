@@ -3,7 +3,7 @@
 archive/issues_006177.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  polybori burcin rlm boothby\n\nKeywords: M4RI, PolyBoRi\n\n\n```\n2009/04/06 The first release candidate of PolyBoRi 0.6 is available for download. It comes with a PEP8-conforming python interface and new algorithms: FGLM and (experimental) parallel processing of Gr\u00f6bner basis variants. In addition, the documentation was improved considerably: the tutorial is more extensive, and the TeX4ht-Support has been improved. Finally, built-in support for plotting the underlying decision diagrams has been added.\n```\n\n\nThis version also allows bigger systems to be solved using the M4RI library (due to an updated M4RI) and makes use of M4RI in shared library mode.\n\nThis ticket depends on #5510\n\nIssue created by migration from https://trac.sagemath.org/ticket/6177\n\n",
+    "body": "Assignee: @malb\n\nCC:  polybori @burcin @rlmill boothby\n\nKeywords: M4RI, PolyBoRi\n\n\n```\n2009/04/06 The first release candidate of PolyBoRi 0.6 is available for download. It comes with a PEP8-conforming python interface and new algorithms: FGLM and (experimental) parallel processing of Gr\u00f6bner basis variants. In addition, the documentation was improved considerably: the tutorial is more extensive, and the TeX4ht-Support has been improved. Finally, built-in support for plotting the underlying decision diagrams has been added.\n```\n\n\nThis version also allows bigger systems to be solved using the M4RI library (due to an updated M4RI) and makes use of M4RI in shared library mode.\n\nThis ticket depends on #5510\n\nIssue created by migration from https://trac.sagemath.org/ticket/6177\n\n",
     "created_at": "2009-06-01T09:35:19Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_006177.json:
     "title": "[with patch, needs work] Update PolyBoRi to newest upstream release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6177",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  polybori burcin rlm boothby
+CC:  polybori @burcin @rlmill boothby
 
 Keywords: M4RI, PolyBoRi
 
@@ -49,7 +49,7 @@ archive/issue_comments_049245.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49245",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_049246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49246",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_049247.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49247",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_049248.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49248",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_049249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49249",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_049250.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49250",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_049251.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49251",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -352,16 +352,16 @@ plot.py patch for jinja, to be contained in a 0.6.2 release (hopefully soon)
 archive/issue_comments_049254.json:
 ```json
 {
-    "body": "Attachment [jinja.patch](tarball://root/attachments/some-uuid/ticket6177/jinja.patch) by malb created at 2009-06-23 10:06:49\n\nCCing Robert Miller since he is the resident graph expert and is sitting like two seats next to me. Robert, the last two comments are about printing the decision diagrams used by PolyBoRi to represent polynomials, cf. http://polybori.sourceforge.net/zdd.html",
+    "body": "Attachment [jinja.patch](tarball://root/attachments/some-uuid/ticket6177/jinja.patch) by @malb created at 2009-06-23 10:06:49\n\nCCing Robert Miller since he is the resident graph expert and is sitting like two seats next to me. Robert, the last two comments are about printing the decision diagrams used by PolyBoRi to represent polynomials, cf. http://polybori.sourceforge.net/zdd.html",
     "created_at": "2009-06-23T10:06:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49254",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [jinja.patch](tarball://root/attachments/some-uuid/ticket6177/jinja.patch) by malb created at 2009-06-23 10:06:49
+Attachment [jinja.patch](tarball://root/attachments/some-uuid/ticket6177/jinja.patch) by @malb created at 2009-06-23 10:06:49
 
 CCing Robert Miller since he is the resident graph expert and is sitting like two seats next to me. Robert, the last two comments are about printing the decision diagrams used by PolyBoRi to represent polynomials, cf. http://polybori.sourceforge.net/zdd.html
 
@@ -377,7 +377,7 @@ archive/issue_comments_049255.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49255",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -390,16 +390,16 @@ Burcin, I just uploaded my current PolyBoRi SPKG to /home/malb/spkgs so all you 
 archive/issue_comments_049256.json:
 ```json
 {
-    "body": "Attachment [polybori_0_6_1.patch](tarball://root/attachments/some-uuid/ticket6177/polybori_0_6_1.patch) by malb created at 2009-06-23 10:12:05\n\nmost recent version of the patch",
+    "body": "Attachment [polybori_0_6_1.patch](tarball://root/attachments/some-uuid/ticket6177/polybori_0_6_1.patch) by @malb created at 2009-06-23 10:12:05\n\nmost recent version of the patch",
     "created_at": "2009-06-23T10:12:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49256",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [polybori_0_6_1.patch](tarball://root/attachments/some-uuid/ticket6177/polybori_0_6_1.patch) by malb created at 2009-06-23 10:12:05
+Attachment [polybori_0_6_1.patch](tarball://root/attachments/some-uuid/ticket6177/polybori_0_6_1.patch) by @malb created at 2009-06-23 10:12:05
 
 most recent version of the patch
 
@@ -415,7 +415,7 @@ archive/issue_comments_049257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49257",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -455,7 +455,7 @@ archive/issue_comments_049259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49259",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -477,7 +477,7 @@ archive/issue_comments_049260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49260",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -523,7 +523,7 @@ archive/issue_comments_049262.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49262",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -536,16 +536,16 @@ fixes the issue
 archive/issue_comments_049263.json:
 ```json
 {
-    "body": "Attachment [polybori-0-6-3.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.patch) by malb created at 2009-08-05 13:35:58\n\nThe attached patch fixes the wrong GB issue.",
+    "body": "Attachment [polybori-0-6-3.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.patch) by @malb created at 2009-08-05 13:35:58\n\nThe attached patch fixes the wrong GB issue.",
     "created_at": "2009-08-05T13:35:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49263",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [polybori-0-6-3.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.patch) by malb created at 2009-08-05 13:35:58
+Attachment [polybori-0-6-3.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.patch) by @malb created at 2009-08-05 13:35:58
 
 The attached patch fixes the wrong GB issue.
 
@@ -561,7 +561,7 @@ archive/issue_comments_049264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49264",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -583,7 +583,7 @@ archive/issue_comments_049265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49265",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -607,7 +607,7 @@ archive/issue_comments_049266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49266",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -660,7 +660,7 @@ archive/issue_comments_049268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49268",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -698,7 +698,7 @@ archive/issue_comments_049270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49270",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -721,16 +721,16 @@ under Michael's name.
 archive/issue_comments_049271.json:
 ```json
 {
-    "body": "Attachment [polybori-0-6-3.2.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.2.patch) by malb created at 2009-08-07 08:32:06\n\nThe latest patch links in gd",
+    "body": "Attachment [polybori-0-6-3.2.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.2.patch) by @malb created at 2009-08-07 08:32:06\n\nThe latest patch links in gd",
     "created_at": "2009-08-07T08:32:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49271",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [polybori-0-6-3.2.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.2.patch) by malb created at 2009-08-07 08:32:06
+Attachment [polybori-0-6-3.2.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.2.patch) by @malb created at 2009-08-07 08:32:06
 
 The latest patch links in gd
 
@@ -776,16 +776,16 @@ But I think, that I have a good solution.
 archive/issue_comments_049273.json:
 ```json
 {
-    "body": "Attachment [polybori-0-6-3.3.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.3.patch) by malb created at 2009-08-10 17:16:03\n\nadds the requested functions",
+    "body": "Attachment [polybori-0-6-3.3.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.3.patch) by @malb created at 2009-08-10 17:16:03\n\nadds the requested functions",
     "created_at": "2009-08-10T17:16:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49273",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [polybori-0-6-3.3.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.3.patch) by malb created at 2009-08-10 17:16:03
+Attachment [polybori-0-6-3.3.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.3.patch) by @malb created at 2009-08-10 17:16:03
 
 adds the requested functions
 
@@ -801,7 +801,7 @@ archive/issue_comments_049274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49274",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -823,7 +823,7 @@ archive/issue_comments_049275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49275",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -836,16 +836,16 @@ the latest patch swallowed the 'gd' in modules_list.py, this one adds it back
 archive/issue_comments_049276.json:
 ```json
 {
-    "body": "Attachment [polybori-0-6-3.5.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.5.patch) by malb created at 2009-08-11 15:40:49\n\nspeeds up comparison with zero and fixes a doctest failure",
+    "body": "Attachment [polybori-0-6-3.5.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.5.patch) by @malb created at 2009-08-11 15:40:49\n\nspeeds up comparison with zero and fixes a doctest failure",
     "created_at": "2009-08-11T15:40:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49276",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [polybori-0-6-3.5.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.5.patch) by malb created at 2009-08-11 15:40:49
+Attachment [polybori-0-6-3.5.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.5.patch) by @malb created at 2009-08-11 15:40:49
 
 speeds up comparison with zero and fixes a doctest failure
 
@@ -861,7 +861,7 @@ archive/issue_comments_049277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49277",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1140,16 +1140,16 @@ example for segfault
 archive/issue_comments_049284.json:
 ```json
 {
-    "body": "Attachment [cook.py](tarball://root/attachments/some-uuid/ticket6177/cook.py) by malb created at 2009-08-18 11:15:27\n\nadds n_variables and fixes segfault",
+    "body": "Attachment [cook.py](tarball://root/attachments/some-uuid/ticket6177/cook.py) by @malb created at 2009-08-18 11:15:27\n\nadds n_variables and fixes segfault",
     "created_at": "2009-08-18T11:15:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49284",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [cook.py](tarball://root/attachments/some-uuid/ticket6177/cook.py) by malb created at 2009-08-18 11:15:27
+Attachment [cook.py](tarball://root/attachments/some-uuid/ticket6177/cook.py) by @malb created at 2009-08-18 11:15:27
 
 adds n_variables and fixes segfault
 
@@ -1160,16 +1160,16 @@ adds n_variables and fixes segfault
 archive/issue_comments_049285.json:
 ```json
 {
-    "body": "Attachment [polybori-0-6-3.6.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.6.patch) by malb created at 2009-08-18 11:17:11\n\nThe newest version of the patch fixes the segfault and adds `n_variables`. Note that both Michael and myself are using this patch for more than two weeks now in our research (see above for issues discovered and fixed this way), so it should be (almost) good to go. It mainly needs a review from the Sage side.",
+    "body": "Attachment [polybori-0-6-3.6.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.6.patch) by @malb created at 2009-08-18 11:17:11\n\nThe newest version of the patch fixes the segfault and adds `n_variables`. Note that both Michael and myself are using this patch for more than two weeks now in our research (see above for issues discovered and fixed this way), so it should be (almost) good to go. It mainly needs a review from the Sage side.",
     "created_at": "2009-08-18T11:17:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49285",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [polybori-0-6-3.6.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.6.patch) by malb created at 2009-08-18 11:17:11
+Attachment [polybori-0-6-3.6.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.6.patch) by @malb created at 2009-08-18 11:17:11
 
 The newest version of the patch fixes the segfault and adds `n_variables`. Note that both Michael and myself are using this patch for more than two weeks now in our research (see above for issues discovered and fixed this way), so it should be (almost) good to go. It mainly needs a review from the Sage side.
 
@@ -1273,7 +1273,7 @@ archive/issue_comments_049288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49288",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1286,16 +1286,16 @@ changes len(m) to be constant 1 if m is a monomial
 archive/issue_comments_049289.json:
 ```json
 {
-    "body": "Attachment [polybori-0-6-3.7.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.7.patch) by malb created at 2009-08-18 13:16:54\n\nThe attached patch fixes the issue (`len(m) == 1` if `m` is a monomial). I don't see how it breaks anf2cnf but I'll check now (this is orthogonal to accepting this patch anyway)",
+    "body": "Attachment [polybori-0-6-3.7.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.7.patch) by @malb created at 2009-08-18 13:16:54\n\nThe attached patch fixes the issue (`len(m) == 1` if `m` is a monomial). I don't see how it breaks anf2cnf but I'll check now (this is orthogonal to accepting this patch anyway)",
     "created_at": "2009-08-18T13:16:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49289",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [polybori-0-6-3.7.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.7.patch) by malb created at 2009-08-18 13:16:54
+Attachment [polybori-0-6-3.7.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.7.patch) by @malb created at 2009-08-18 13:16:54
 
 The attached patch fixes the issue (`len(m) == 1` if `m` is a monomial). I don't see how it breaks anf2cnf but I'll check now (this is orthogonal to accepting this patch anyway)
 
@@ -1311,7 +1311,7 @@ archive/issue_comments_049290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49290",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1369,16 +1369,16 @@ This is implemented in PyPolyBoRi.py
 archive/issue_comments_049292.json:
 ```json
 {
-    "body": "Attachment [polybori-0.6.3.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0.6.3.patch) by malb created at 2009-08-20 13:45:47\n\nrebased and bugfix",
+    "body": "Attachment [polybori-0.6.3.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0.6.3.patch) by @malb created at 2009-08-20 13:45:47\n\nrebased and bugfix",
     "created_at": "2009-08-20T13:45:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49292",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [polybori-0.6.3.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0.6.3.patch) by malb created at 2009-08-20 13:45:47
+Attachment [polybori-0.6.3.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0.6.3.patch) by @malb created at 2009-08-20 13:45:47
 
 rebased and bugfix
 
@@ -1394,7 +1394,7 @@ archive/issue_comments_049293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49293",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1451,7 +1451,7 @@ archive/issue_comments_049295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49295",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1519,7 +1519,7 @@ archive/issue_comments_049298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49298",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1560,7 +1560,7 @@ archive/issue_comments_049300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49300",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1573,16 +1573,16 @@ faster Variable(i)
 archive/issue_comments_049301.json:
 ```json
 {
-    "body": "Attachment [polybori-0.6.3.2.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0.6.3.2.patch) by malb created at 2009-08-20 14:43:51\n\nThe attached patch fixes the bottleneck by avoiding the dummy constructor. Note, that we still need to take care of that Solaris issue Dave reported where scons would pick up the Sun compiler instead of gcc.",
+    "body": "Attachment [polybori-0.6.3.2.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0.6.3.2.patch) by @malb created at 2009-08-20 14:43:51\n\nThe attached patch fixes the bottleneck by avoiding the dummy constructor. Note, that we still need to take care of that Solaris issue Dave reported where scons would pick up the Sun compiler instead of gcc.",
     "created_at": "2009-08-20T14:43:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49301",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [polybori-0.6.3.2.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0.6.3.2.patch) by malb created at 2009-08-20 14:43:51
+Attachment [polybori-0.6.3.2.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0.6.3.2.patch) by @malb created at 2009-08-20 14:43:51
 
 The attached patch fixes the bottleneck by avoiding the dummy constructor. Note, that we still need to take care of that Solaris issue Dave reported where scons would pick up the Sun compiler instead of gcc.
 
@@ -1639,7 +1639,7 @@ archive/issue_comments_049304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49304",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1659,7 +1659,7 @@ archive/issue_comments_049305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49305",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -1822,7 +1822,7 @@ archive/issue_comments_049310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49310",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1839,16 +1839,16 @@ I will postpone the fPIC issue for now and will concentrate on the pickling issu
 archive/issue_comments_049311.json:
 ```json
 {
-    "body": "Attachment [polybori-0.6.3.3.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0.6.3.3.patch) by malb created at 2009-08-27 10:35:12\n\nfixes the pickling issue",
+    "body": "Attachment [polybori-0.6.3.3.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0.6.3.3.patch) by @malb created at 2009-08-27 10:35:12\n\nfixes the pickling issue",
     "created_at": "2009-08-27T10:35:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49311",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [polybori-0.6.3.3.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0.6.3.3.patch) by malb created at 2009-08-27 10:35:12
+Attachment [polybori-0.6.3.3.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0.6.3.3.patch) by @malb created at 2009-08-27 10:35:12
 
 fixes the pickling issue
 
@@ -1864,7 +1864,7 @@ archive/issue_comments_049312.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49312",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1877,16 +1877,16 @@ The attached patch fixes the pickling issue and now all doctests pass on sage.ma
 archive/issue_comments_049313.json:
 ```json
 {
-    "body": "Attachment [trac_6177_reviewer_patch](tarball://root/attachments/some-uuid/ticket6177/trac_6177_reviewer_patch) by burcin created at 2009-09-10 09:38:04\n\nminor fixes",
+    "body": "Attachment [trac_6177_reviewer_patch](tarball://root/attachments/some-uuid/ticket6177/trac_6177_reviewer_patch) by @burcin created at 2009-09-10 09:38:04\n\nminor fixes",
     "created_at": "2009-09-10T09:38:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49313",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6177_reviewer_patch](tarball://root/attachments/some-uuid/ticket6177/trac_6177_reviewer_patch) by burcin created at 2009-09-10 09:38:04
+Attachment [trac_6177_reviewer_patch](tarball://root/attachments/some-uuid/ticket6177/trac_6177_reviewer_patch) by @burcin created at 2009-09-10 09:38:04
 
 minor fixes
 
@@ -1902,7 +1902,7 @@ archive/issue_comments_049314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49314",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -1929,7 +1929,7 @@ archive/issue_comments_049315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49315",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

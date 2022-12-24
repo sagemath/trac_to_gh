@@ -3,7 +3,7 @@
 archive/issues_000256.json:
 ```json
 {
-    "body": "Assignee: was\n\ntitle says it all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/256\n\n",
+    "body": "Assignee: @williamstein\n\ntitle says it all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/256\n\n",
     "created_at": "2007-02-10T06:32:05Z",
     "labels": [
         "algebraic geometry",
@@ -16,7 +16,7 @@ archive/issues_000256.json:
     "user": "boothby"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 title says it all.
 
@@ -49,7 +49,7 @@ Changing status from new to assigned.
 archive/issue_comments_001150.json:
 ```json
 {
-    "body": "Changing assignee from was to boothby.",
+    "body": "Changing assignee from @williamstein to boothby.",
     "created_at": "2007-02-10T06:32:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/256",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_001150.json:
 }
 ```
 
-Changing assignee from was to boothby.
+Changing assignee from @williamstein to boothby.
 
 
 

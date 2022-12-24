@@ -14,7 +14,7 @@ archive/issues_003847.json:
     "title": "can't make vector of ints",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3847",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 Assignee: tbd
@@ -37,16 +37,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3847
 archive/issue_comments_027365.json:
 ```json
 {
-    "body": "Attachment [3847-vector.patch](tarball://root/attachments/some-uuid/ticket3847/3847-vector.patch) by AlexGhitza created at 2008-09-08 10:47:40\n\nThis issue has also come up in other guises on sage-devel or sage-support (can't seem to be able to find the threads right now, though).\n\nIt all boils down to Sequence(), which takes a list of things and returns a sequence of things that lie in the same \"universe\", if canonical coercions are possible.  So if you give it a list containing an RDF, an Integer, and a Rational, it will give you back a sequence of three RDF's.  The problem is with the builtin Python types (int, long, float, complex), for which we of course have no coercions.  So given a bunch of ints, Sequence tries to see where in the Sage hierarchy they fit, finds nothing, and sends them back without a common \"universe\".  This makes vector() throw an exception, because a vector should be over a ring.\n\nThe patch fixes this by giving Sequence() an optional parameter use_sage_types, defaulting to False.  If the parameter is True, Sequence() catches the builtin Python types and makes them into the appropriate Sage objects, then carries on.  I am making vector() always pass use_sage_types=True to Sequence().  This fixes the unpleasant behavior reported in this ticket, and gives vector() a bit more flexibility -- see the new doctests for more examples.\n\nSequence() is a fairly fundamental class and I didn't want to change its default behavior for fear of speed degradation in places other than vector().",
+    "body": "Attachment [3847-vector.patch](tarball://root/attachments/some-uuid/ticket3847/3847-vector.patch) by @aghitza created at 2008-09-08 10:47:40\n\nThis issue has also come up in other guises on sage-devel or sage-support (can't seem to be able to find the threads right now, though).\n\nIt all boils down to Sequence(), which takes a list of things and returns a sequence of things that lie in the same \"universe\", if canonical coercions are possible.  So if you give it a list containing an RDF, an Integer, and a Rational, it will give you back a sequence of three RDF's.  The problem is with the builtin Python types (int, long, float, complex), for which we of course have no coercions.  So given a bunch of ints, Sequence tries to see where in the Sage hierarchy they fit, finds nothing, and sends them back without a common \"universe\".  This makes vector() throw an exception, because a vector should be over a ring.\n\nThe patch fixes this by giving Sequence() an optional parameter use_sage_types, defaulting to False.  If the parameter is True, Sequence() catches the builtin Python types and makes them into the appropriate Sage objects, then carries on.  I am making vector() always pass use_sage_types=True to Sequence().  This fixes the unpleasant behavior reported in this ticket, and gives vector() a bit more flexibility -- see the new doctests for more examples.\n\nSequence() is a fairly fundamental class and I didn't want to change its default behavior for fear of speed degradation in places other than vector().",
     "created_at": "2008-09-08T10:47:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3847#issuecomment-27365",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [3847-vector.patch](tarball://root/attachments/some-uuid/ticket3847/3847-vector.patch) by AlexGhitza created at 2008-09-08 10:47:40
+Attachment [3847-vector.patch](tarball://root/attachments/some-uuid/ticket3847/3847-vector.patch) by @aghitza created at 2008-09-08 10:47:40
 
 This issue has also come up in other guises on sage-devel or sage-support (can't seem to be able to find the threads right now, though).
 
@@ -68,7 +68,7 @@ archive/issue_comments_027366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3847#issuecomment-27366",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

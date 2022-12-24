@@ -3,7 +3,7 @@
 archive/issues_005075.json:
 ```json
 {
-    "body": "Assignee: roed\n\nCC:  dmharvey niles wuthrich\n\nKeywords: polynomials, power series, inexact rings\n\nThe generic polynomial class truncates leading zeroes, and this can cause problems when working over an inexact ring in which is_zero can return True even for an inexact zero (e.g., see #2943). Here is a simple example:\n\n```\nsage: C.<t> = PowerSeriesRing(Integers())\nsage: D.<s> = PolynomialRing(C)\nsage: y = O(t)\nsage: y\nO(t^1)\nsage: z = y*s\nsage: z\n0\nsage: z.list()\n[]\n```\n\nThis was recognized earlier for p-adics and fixed (I'm not sure which ticket this was):\n\n```\nsage: C = pAdicField(11)\nsage: D.<s> = PolynomialRing(C)\nsage: y = O(11)\nsage: y\nO(11)\nsage: z = y*s\nsage: z\n(O(11))*s\n```\n\nThe other main class of inexact rings are interval fields, but I believe for those is_zero returns False for an inexact zero, so this doesn't come up.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5075\n\n",
+    "body": "Assignee: @roed314\n\nCC:  dmharvey @nilesjohnson @categorie\n\nKeywords: polynomials, power series, inexact rings\n\nThe generic polynomial class truncates leading zeroes, and this can cause problems when working over an inexact ring in which is_zero can return True even for an inexact zero (e.g., see #2943). Here is a simple example:\n\n```\nsage: C.<t> = PowerSeriesRing(Integers())\nsage: D.<s> = PolynomialRing(C)\nsage: y = O(t)\nsage: y\nO(t^1)\nsage: z = y*s\nsage: z\n0\nsage: z.list()\n[]\n```\n\nThis was recognized earlier for p-adics and fixed (I'm not sure which ticket this was):\n\n```\nsage: C = pAdicField(11)\nsage: D.<s> = PolynomialRing(C)\nsage: y = O(11)\nsage: y\nO(11)\nsage: z = y*s\nsage: z\n(O(11))*s\n```\n\nThe other main class of inexact rings are interval fields, but I believe for those is_zero returns False for an inexact zero, so this doesn't come up.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5075\n\n",
     "created_at": "2009-01-23T19:04:16Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_005075.json:
     "title": "Polynomials over inexact rings should not truncate inexact leading zeroes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5075",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
-Assignee: roed
+Assignee: @roed314
 
-CC:  dmharvey niles wuthrich
+CC:  dmharvey @nilesjohnson @categorie
 
 Keywords: polynomials, power series, inexact rings
 
@@ -69,7 +69,7 @@ archive/issue_comments_038649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5075#issuecomment-38649",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -82,16 +82,16 @@ A closely related issue is #3979.
 archive/issue_comments_038650.json:
 ```json
 {
-    "body": "Attachment [trac_5075.patch](tarball://root/attachments/some-uuid/ticket5075/trac_5075.patch) by roed created at 2009-04-26 19:42:28\n\nIn progress.  I think it fixes the problem, but I'm working on a larger project for p-adic polynomials that this is part of.",
+    "body": "Attachment [trac_5075.patch](tarball://root/attachments/some-uuid/ticket5075/trac_5075.patch) by @roed314 created at 2009-04-26 19:42:28\n\nIn progress.  I think it fixes the problem, but I'm working on a larger project for p-adic polynomials that this is part of.",
     "created_at": "2009-04-26T19:42:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5075#issuecomment-38650",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [trac_5075.patch](tarball://root/attachments/some-uuid/ticket5075/trac_5075.patch) by roed created at 2009-04-26 19:42:28
+Attachment [trac_5075.patch](tarball://root/attachments/some-uuid/ticket5075/trac_5075.patch) by @roed314 created at 2009-04-26 19:42:28
 
 In progress.  I think it fixes the problem, but I'm working on a larger project for p-adic polynomials that this is part of.
 
@@ -102,16 +102,16 @@ In progress.  I think it fixes the problem, but I'm working on a larger project 
 archive/issue_comments_038651.json:
 ```json
 {
-    "body": "Attachment [trac_5075.2.patch](tarball://root/attachments/some-uuid/ticket5075/trac_5075.2.patch) by roed created at 2009-06-11 21:04:01\n\nrebased against 4.0",
+    "body": "Attachment [trac_5075.2.patch](tarball://root/attachments/some-uuid/ticket5075/trac_5075.2.patch) by @roed314 created at 2009-06-11 21:04:01\n\nrebased against 4.0",
     "created_at": "2009-06-11T21:04:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5075#issuecomment-38651",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [trac_5075.2.patch](tarball://root/attachments/some-uuid/ticket5075/trac_5075.2.patch) by roed created at 2009-06-11 21:04:01
+Attachment [trac_5075.2.patch](tarball://root/attachments/some-uuid/ticket5075/trac_5075.2.patch) by @roed314 created at 2009-06-11 21:04:01
 
 rebased against 4.0
 
@@ -127,7 +127,7 @@ archive/issue_comments_038652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5075#issuecomment-38652",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_038653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5075#issuecomment-38653",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_038654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5075#issuecomment-38654",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_038655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5075#issuecomment-38655",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 

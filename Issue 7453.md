@@ -3,7 +3,7 @@
 archive/issues_007453.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  wdj\n\nKeywords: sandpile\n\nDavid Perkinson created a sage module for doing sandpile computations.  See http://people.reed.edu/~davidp/sand/sage/html/sage_sandpiles.html#projective\nfor his documentation of it.\nThis ticket makes an experimental spkg for the module.  It installs glpk and 4ti2 which are required for the full functionality.\nFirst attempt is up at:\nhttp://sage.math.washington.edu/home/mhampton/sandpile-1.51.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7453\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @wdjoyner\n\nKeywords: sandpile\n\nDavid Perkinson created a sage module for doing sandpile computations.  See http://people.reed.edu/~davidp/sand/sage/html/sage_sandpiles.html#projective\nfor his documentation of it.\nThis ticket makes an experimental spkg for the module.  It installs glpk and 4ti2 which are required for the full functionality.\nFirst attempt is up at:\nhttp://sage.math.washington.edu/home/mhampton/sandpile-1.51.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7453\n\n",
     "created_at": "2009-11-13T18:13:08Z",
     "labels": [
         "algebraic geometry",
@@ -17,9 +17,9 @@ archive/issues_007453.json:
     "user": "mhampton"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  wdj
+CC:  @wdjoyner
 
 Keywords: sandpile
 
@@ -169,7 +169,7 @@ archive/issue_comments_062775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62775",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_062782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62782",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -386,7 +386,7 @@ archive/issue_comments_062785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62785",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -406,7 +406,7 @@ archive/issue_comments_062786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62786",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

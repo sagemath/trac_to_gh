@@ -3,7 +3,7 @@
 archive/issues_008305.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nCC:  jpflori\n\nKeywords: Monsky-Washnitzer, elliptic curves, hyperelliptic curves\n\nThe code in schemes/elliptic_curves/monsky_washnitzer.py largely dates from a time (early 2007) before Sage documentation and doctesting standards had been codified. As a result, its coverage is terrible (26 of 107).\n\nIt may also be worth a mild refactor: since it now applies more generally to hyperelliptic curves, it probably should be under schemes/hyperelliptic_curves.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8305\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  jpflori\n\nKeywords: Monsky-Washnitzer, elliptic curves, hyperelliptic curves\n\nThe code in schemes/elliptic_curves/monsky_washnitzer.py largely dates from a time (early 2007) before Sage documentation and doctesting standards had been codified. As a result, its coverage is terrible (26 of 107).\n\nIt may also be worth a mild refactor: since it now applies more generally to hyperelliptic curves, it probably should be under schemes/hyperelliptic_curves.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8305\n\n",
     "created_at": "2010-02-19T03:34:22Z",
     "labels": [
         "elliptic curves",
@@ -14,10 +14,10 @@ archive/issues_008305.json:
     "title": "Improve documentation of Monsky-Washnitzer code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8305",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 CC:  jpflori
 
@@ -43,7 +43,7 @@ archive/issue_comments_073584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8305#issuecomment-73584",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_073585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8305#issuecomment-73585",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -74,16 +74,16 @@ OK, so this ticket should stay on ice until someone (e.g., me) has a chance to r
 archive/issue_comments_073586.json:
 ```json
 {
-    "body": "Changing assignee from cremona to kedlaya.",
+    "body": "Changing assignee from @JohnCremona to @kedlaya.",
     "created_at": "2010-02-20T14:57:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8305#issuecomment-73586",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
-Changing assignee from cremona to kedlaya.
+Changing assignee from @JohnCremona to @kedlaya.
 
 
 
@@ -92,16 +92,16 @@ Changing assignee from cremona to kedlaya.
 archive/issue_comments_073587.json:
 ```json
 {
-    "body": "Attachment [trac_8305_monsky_doc.patch](tarball://root/attachments/some-uuid/ticket8305/trac_8305_monsky_doc.patch) by chapoton created at 2013-07-09 09:35:24\n\nfirst patch, with coverage reaching 67%",
+    "body": "Attachment [trac_8305_monsky_doc.patch](tarball://root/attachments/some-uuid/ticket8305/trac_8305_monsky_doc.patch) by @fchapoton created at 2013-07-09 09:35:24\n\nfirst patch, with coverage reaching 67%",
     "created_at": "2013-07-09T09:35:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8305#issuecomment-73587",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac_8305_monsky_doc.patch](tarball://root/attachments/some-uuid/ticket8305/trac_8305_monsky_doc.patch) by chapoton created at 2013-07-09 09:35:24
+Attachment [trac_8305_monsky_doc.patch](tarball://root/attachments/some-uuid/ticket8305/trac_8305_monsky_doc.patch) by @fchapoton created at 2013-07-09 09:35:24
 
 first patch, with coverage reaching 67%
 
@@ -117,7 +117,7 @@ archive/issue_comments_073588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8305#issuecomment-73588",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_073589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8305#issuecomment-73589",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -148,16 +148,16 @@ after some more work, coverage is now 83%
 archive/issue_comments_073590.json:
 ```json
 {
-    "body": "Attachment [trac_8305_monsky_doc_step2.patch](tarball://root/attachments/some-uuid/ticket8305/trac_8305_monsky_doc_step2.patch) by chapoton created at 2013-10-14 19:33:14",
+    "body": "Attachment [trac_8305_monsky_doc_step2.patch](tarball://root/attachments/some-uuid/ticket8305/trac_8305_monsky_doc_step2.patch) by @fchapoton created at 2013-10-14 19:33:14",
     "created_at": "2013-10-14T19:33:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8305#issuecomment-73590",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac_8305_monsky_doc_step2.patch](tarball://root/attachments/some-uuid/ticket8305/trac_8305_monsky_doc_step2.patch) by chapoton created at 2013-10-14 19:33:14
+Attachment [trac_8305_monsky_doc_step2.patch](tarball://root/attachments/some-uuid/ticket8305/trac_8305_monsky_doc_step2.patch) by @fchapoton created at 2013-10-14 19:33:14
 
 
 
@@ -171,7 +171,7 @@ archive/issue_comments_073591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8305#issuecomment-73591",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_073592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8305#issuecomment-73592",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_073593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8305#issuecomment-73593",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_073594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8305#issuecomment-73594",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_073595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8305#issuecomment-73595",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_073596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8305#issuecomment-73596",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_073597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8305#issuecomment-73597",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

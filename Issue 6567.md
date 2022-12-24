@@ -3,7 +3,7 @@
 archive/issues_006567.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kcrisman\n\nKeywords: primitive roots\n\nCurrently, the function `primitive_root()` finds a primitive root modulo n. Ticket #6467 proposes to find all primitive roots modulo a fixed n. We should also implement a function to determine whether or not some integer is a primitive root modulo n. A good way is to do this without first having to generate all primitive roots mod n.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6567\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nKeywords: primitive roots\n\nCurrently, the function `primitive_root()` finds a primitive root modulo n. Ticket #6467 proposes to find all primitive roots modulo a fixed n. We should also implement a function to determine whether or not some integer is a primitive root modulo n. A good way is to do this without first having to generate all primitive roots mod n.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6567\n\n",
     "created_at": "2009-07-20T12:11:43Z",
     "labels": [
         "number theory",
@@ -17,9 +17,9 @@ archive/issues_006567.json:
     "user": "mvngu"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kcrisman
+CC:  @kcrisman
 
 Keywords: primitive roots
 
@@ -41,7 +41,7 @@ archive/issue_comments_053565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6567",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6567#issuecomment-53565",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_053566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6567",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6567#issuecomment-53566",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_053567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6567",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6567#issuecomment-53567",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_053568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6567",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6567#issuecomment-53568",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_053569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6567",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6567#issuecomment-53569",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_053570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6567",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6567#issuecomment-53570",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_053571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6567",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6567#issuecomment-53571",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -200,16 +200,16 @@ Everything else looks nice.  I feel like I want to check the logic for numbers d
 archive/issue_comments_053572.json:
 ```json
 {
-    "body": "Attachment [6567.patch](tarball://root/attachments/some-uuid/ticket6567/6567.patch) by roed created at 2013-02-27 11:36:46",
+    "body": "Attachment [6567.patch](tarball://root/attachments/some-uuid/ticket6567/6567.patch) by @roed314 created at 2013-02-27 11:36:46",
     "created_at": "2013-02-27T11:36:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6567",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6567#issuecomment-53572",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [6567.patch](tarball://root/attachments/some-uuid/ticket6567/6567.patch) by roed created at 2013-02-27 11:36:46
+Attachment [6567.patch](tarball://root/attachments/some-uuid/ticket6567/6567.patch) by @roed314 created at 2013-02-27 11:36:46
 
 
 
@@ -223,7 +223,7 @@ archive/issue_comments_053573.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6567",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6567#issuecomment-53573",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -236,16 +236,16 @@ I'm not quite sure what you meant by the "# now self..." but I made some change 
 archive/issue_comments_053574.json:
 ```json
 {
-    "body": "Attachment [6567_2.patch](tarball://root/attachments/some-uuid/ticket6567/6567_2.patch) by spice created at 2013-02-28 23:36:01\n\nFixes single line in self.is_primitive_root() to make compatible with new 12116.patch",
+    "body": "Attachment [6567_2.patch](tarball://root/attachments/some-uuid/ticket6567/6567_2.patch) by @haikona created at 2013-02-28 23:36:01\n\nFixes single line in self.is_primitive_root() to make compatible with new 12116.patch",
     "created_at": "2013-02-28T23:36:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6567",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6567#issuecomment-53574",
-    "user": "spice"
+    "user": "@haikona"
 }
 ```
 
-Attachment [6567_2.patch](tarball://root/attachments/some-uuid/ticket6567/6567_2.patch) by spice created at 2013-02-28 23:36:01
+Attachment [6567_2.patch](tarball://root/attachments/some-uuid/ticket6567/6567_2.patch) by @haikona created at 2013-02-28 23:36:01
 
 Fixes single line in self.is_primitive_root() to make compatible with new 12116.patch
 
@@ -261,7 +261,7 @@ archive/issue_comments_053575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6567",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6567#issuecomment-53575",
-    "user": "spice"
+    "user": "@haikona"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_053576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6567",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6567#issuecomment-53576",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_053577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6567",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6567#issuecomment-53577",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_053578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6567",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6567#issuecomment-53578",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_053579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6567",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6567#issuecomment-53579",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

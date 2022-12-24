@@ -14,7 +14,7 @@ archive/issues_008725.json:
     "title": "New SageNB release 0.8",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8725",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 Assignee: jason, was
@@ -41,7 +41,7 @@ archive/issue_comments_079699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8725",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8725#issuecomment-79699",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_079700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8725",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8725#issuecomment-79700",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_079701.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8725",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8725#issuecomment-79701",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_079702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8725",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8725#issuecomment-79702",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

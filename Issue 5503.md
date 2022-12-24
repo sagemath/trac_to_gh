@@ -14,7 +14,7 @@ archive/issues_005503.json:
     "title": "\"cmp\" method failing on objects in the pickle jar",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5503",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 Assignee: cwitty
@@ -64,7 +64,7 @@ archive/issue_comments_042750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5503#issuecomment-42750",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_042751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5503#issuecomment-42751",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

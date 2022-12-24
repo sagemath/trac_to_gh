@@ -3,7 +3,7 @@
 archive/issues_005211.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  mhansen\n\nRight now, the html generated for a worksheet does not include a header specifying the encoding, which confuses browsers: http://groups.google.com/group/sage-support/t/3d4b400f5afe66fb\n\nAs suggested by the OP of that thread, we should add\n\n```\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n```\n\nto the worksheet html.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5211\n\n",
+    "body": "Assignee: boothby\n\nCC:  @mwhansen\n\nRight now, the html generated for a worksheet does not include a header specifying the encoding, which confuses browsers: http://groups.google.com/group/sage-support/t/3d4b400f5afe66fb\n\nAs suggested by the OP of that thread, we should add\n\n```\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n```\n\nto the worksheet html.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5211\n\n",
     "created_at": "2009-02-09T04:04:50Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_005211.json:
     "title": "add charset header to worksheet html header",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5211",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: boothby
 
-CC:  mhansen
+CC:  @mwhansen
 
 Right now, the html generated for a worksheet does not include a header specifying the encoding, which confuses browsers: http://groups.google.com/group/sage-support/t/3d4b400f5afe66fb
 
@@ -47,7 +47,7 @@ archive/issue_comments_039922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5211#issuecomment-39922",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_039926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5211#issuecomment-39926",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_039928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5211#issuecomment-39928",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -197,16 +197,16 @@ Ah, #4547 is exactly what I was looking for.
 archive/issue_comments_039929.json:
 ```json
 {
-    "body": "Attachment [trac_5211.patch](tarball://root/attachments/some-uuid/ticket5211/trac_5211.patch) by ddrake created at 2009-03-02 06:51:19",
+    "body": "Attachment [trac_5211.patch](tarball://root/attachments/some-uuid/ticket5211/trac_5211.patch) by @dandrake created at 2009-03-02 06:51:19",
     "created_at": "2009-03-02T06:51:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5211#issuecomment-39929",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_5211.patch](tarball://root/attachments/some-uuid/ticket5211/trac_5211.patch) by ddrake created at 2009-03-02 06:51:19
+Attachment [trac_5211.patch](tarball://root/attachments/some-uuid/ticket5211/trac_5211.patch) by @dandrake created at 2009-03-02 06:51:19
 
 
 
@@ -220,7 +220,7 @@ archive/issue_comments_039930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5211#issuecomment-39930",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_039931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5211#issuecomment-39931",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

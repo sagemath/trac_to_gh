@@ -3,7 +3,7 @@
 archive/issues_004193.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  fwclarke\n\nIs there supposed to be a canonical coercion map between a relative number field and its associated absolute field?\n\nAt the moment (in 3.1.2) there apparently isn't, and trying to force one raises a TypeError:\n\n```\nsage: K1.<a> = NumberField(x^3 - 2)\nsage: R.<y> = PolynomialRing(K1).gen()\nsage: K2.<b> = K1.extension(y^2 - a)\nsage: K2abs = K2.absolute_field('w')\nsage: K2abs(b)\nTypeError: Cannot coerce element into this number field\n```\n\n\nI suppose it's sort of fair enough as there exist multiple K1-linear embeddings from K2 into K2abs, but shouldn't the definition of K2abs give a distinguished element of this set, sending the generator b of K2 to the generator w of K2abs?\n\nThis causes problems elsewhere, as the code for relative orders in number fields relies on having such a coercion to do basic element-creation and membership-testing routines, and these are all broken as a result:\n\n```\nsage: R = K2.order(b)\nsage: b in R\nFalse\nsage: bb = R.gens()[1] # b by any other name\nsage: bb == b\nTrue\nsage: bb.parent() is R\nTrue\nsage: bb in R\nFalse\nsage: R(bb) # trying to coerce something into its own parent!\nTypeError: Cannot coerce element into this number field\n```\n\n\nI uncovered this last problem first while trying to fix #4190, or more precisely while trying to write a doctest for a fix that I'd already written. (I have a fix which works for absolute orders and should work for relative orders too, but there's no way it can work given the above general brokenness.)\n\nDavid\n\nIssue created by migration from https://trac.sagemath.org/ticket/4193\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  fwclarke\n\nIs there supposed to be a canonical coercion map between a relative number field and its associated absolute field?\n\nAt the moment (in 3.1.2) there apparently isn't, and trying to force one raises a TypeError:\n\n```\nsage: K1.<a> = NumberField(x^3 - 2)\nsage: R.<y> = PolynomialRing(K1).gen()\nsage: K2.<b> = K1.extension(y^2 - a)\nsage: K2abs = K2.absolute_field('w')\nsage: K2abs(b)\nTypeError: Cannot coerce element into this number field\n```\n\n\nI suppose it's sort of fair enough as there exist multiple K1-linear embeddings from K2 into K2abs, but shouldn't the definition of K2abs give a distinguished element of this set, sending the generator b of K2 to the generator w of K2abs?\n\nThis causes problems elsewhere, as the code for relative orders in number fields relies on having such a coercion to do basic element-creation and membership-testing routines, and these are all broken as a result:\n\n```\nsage: R = K2.order(b)\nsage: b in R\nFalse\nsage: bb = R.gens()[1] # b by any other name\nsage: bb == b\nTrue\nsage: bb.parent() is R\nTrue\nsage: bb in R\nFalse\nsage: R(bb) # trying to coerce something into its own parent!\nTypeError: Cannot coerce element into this number field\n```\n\n\nI uncovered this last problem first while trying to fix #4190, or more precisely while trying to write a doctest for a fix that I'd already written. (I have a fix which works for absolute orders and should work for relative orders too, but there's no way it can work given the above general brokenness.)\n\nDavid\n\nIssue created by migration from https://trac.sagemath.org/ticket/4193\n\n",
     "created_at": "2008-09-25T10:15:29Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004193.json:
     "title": "Coercion between relative and absolute number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4193",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  fwclarke
 
@@ -75,7 +75,7 @@ archive/issue_comments_030430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4193",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4193#issuecomment-30430",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_030432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4193",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4193#issuecomment-30432",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_030433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4193",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4193#issuecomment-30433",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 

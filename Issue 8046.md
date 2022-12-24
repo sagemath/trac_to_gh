@@ -14,7 +14,7 @@ archive/issues_008046.json:
     "title": "Add matrix/matrix_double_dense.py to documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8046",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 Assignee: mvngu
@@ -48,7 +48,7 @@ archive/issue_comments_070325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8046#issuecomment-70325",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -61,16 +61,16 @@ Changing status from new to needs_work.
 archive/issue_comments_070326.json:
 ```json
 {
-    "body": "Attachment [trac_8046_matrix_double_doc_add.patch](tarball://root/attachments/some-uuid/ticket8046/trac_8046_matrix_double_doc_add.patch) by jason created at 2011-02-24 05:47:58\n\nI get some errors on 4.6.1 when building the docs:\n\n\n```\ndocstring of sage.matrix.matrix_double_dense.Matrix_double_dense.condition:11: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\ndocstring of sage.matrix.matrix_double_dense:7: (ERROR/3) Unexpected indentation.\ndocstring of sage.matrix.matrix_double_dense.Matrix_double_dense.numpy:11: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\ndocstring of sage.matrix.matrix_double_dense:13: (ERROR/3) Unexpected indentation.\ndocstring of sage.matrix.matrix_double_dense:13: (ERROR/3) Unexpected indentation.\n<autodoc>:0: (ERROR/3) Unexpected indentation.\n```\n",
+    "body": "Attachment [trac_8046_matrix_double_doc_add.patch](tarball://root/attachments/some-uuid/ticket8046/trac_8046_matrix_double_doc_add.patch) by @jasongrout created at 2011-02-24 05:47:58\n\nI get some errors on 4.6.1 when building the docs:\n\n\n```\ndocstring of sage.matrix.matrix_double_dense.Matrix_double_dense.condition:11: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\ndocstring of sage.matrix.matrix_double_dense:7: (ERROR/3) Unexpected indentation.\ndocstring of sage.matrix.matrix_double_dense.Matrix_double_dense.numpy:11: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\ndocstring of sage.matrix.matrix_double_dense:13: (ERROR/3) Unexpected indentation.\ndocstring of sage.matrix.matrix_double_dense:13: (ERROR/3) Unexpected indentation.\n<autodoc>:0: (ERROR/3) Unexpected indentation.\n```\n",
     "created_at": "2011-02-24T05:47:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8046#issuecomment-70326",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_8046_matrix_double_doc_add.patch](tarball://root/attachments/some-uuid/ticket8046/trac_8046_matrix_double_doc_add.patch) by jason created at 2011-02-24 05:47:58
+Attachment [trac_8046_matrix_double_doc_add.patch](tarball://root/attachments/some-uuid/ticket8046/trac_8046_matrix_double_doc_add.patch) by @jasongrout created at 2011-02-24 05:47:58
 
 I get some errors on 4.6.1 when building the docs:
 
@@ -97,7 +97,7 @@ archive/issue_comments_070327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8046#issuecomment-70327",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_070328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8046#issuecomment-70328",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -162,16 +162,16 @@ So really there is just one warning that could still be fixed.
 archive/issue_comments_070330.json:
 ```json
 {
-    "body": "Attachment [trac_8046_matrix_double_dense.patch](tarball://root/attachments/some-uuid/ticket8046/trac_8046_matrix_double_dense.patch) by jhpalmieri created at 2012-01-12 06:42:50\n\nI'm attaching a 'referee' patch to fix up some docstrings.  The first change in that patch fixes the warning message about the unexpected unindent; the others just tidy some things up.",
+    "body": "Attachment [trac_8046_matrix_double_dense.patch](tarball://root/attachments/some-uuid/ticket8046/trac_8046_matrix_double_dense.patch) by @jhpalmieri created at 2012-01-12 06:42:50\n\nI'm attaching a 'referee' patch to fix up some docstrings.  The first change in that patch fixes the warning message about the unexpected unindent; the others just tidy some things up.",
     "created_at": "2012-01-12T06:42:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8046#issuecomment-70330",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8046_matrix_double_dense.patch](tarball://root/attachments/some-uuid/ticket8046/trac_8046_matrix_double_dense.patch) by jhpalmieri created at 2012-01-12 06:42:50
+Attachment [trac_8046_matrix_double_dense.patch](tarball://root/attachments/some-uuid/ticket8046/trac_8046_matrix_double_dense.patch) by @jhpalmieri created at 2012-01-12 06:42:50
 
 I'm attaching a 'referee' patch to fix up some docstrings.  The first change in that patch fixes the warning message about the unexpected unindent; the others just tidy some things up.
 
@@ -182,16 +182,16 @@ I'm attaching a 'referee' patch to fix up some docstrings.  The first change in 
 archive/issue_comments_070331.json:
 ```json
 {
-    "body": "Attachment [trac_8046-ref.patch](tarball://root/attachments/some-uuid/ticket8046/trac_8046-ref.patch) by jhpalmieri created at 2012-01-12 06:43:02",
+    "body": "Attachment [trac_8046-ref.patch](tarball://root/attachments/some-uuid/ticket8046/trac_8046-ref.patch) by @jhpalmieri created at 2012-01-12 06:43:02",
     "created_at": "2012-01-12T06:43:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8046#issuecomment-70331",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8046-ref.patch](tarball://root/attachments/some-uuid/ticket8046/trac_8046-ref.patch) by jhpalmieri created at 2012-01-12 06:43:02
+Attachment [trac_8046-ref.patch](tarball://root/attachments/some-uuid/ticket8046/trac_8046-ref.patch) by @jhpalmieri created at 2012-01-12 06:43:02
 
 
 
@@ -205,7 +205,7 @@ archive/issue_comments_070332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8046#issuecomment-70332",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_070333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8046#issuecomment-70333",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_070334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8046#issuecomment-70334",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_070335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8046#issuecomment-70335",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_070336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8046#issuecomment-70336",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -296,7 +296,7 @@ archive/issue_comments_070337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8046#issuecomment-70337",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

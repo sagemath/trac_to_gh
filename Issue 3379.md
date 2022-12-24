@@ -14,7 +14,7 @@ archive/issues_003379.json:
     "title": "error in plotting 3d polytopes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3379",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: mhampton
@@ -60,7 +60,7 @@ archive/issue_comments_023655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3379#issuecomment-23655",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -137,7 +137,7 @@ I did the simplest possible workaround, as suggested by Mike.  Other graphics co
 archive/issue_comments_023659.json:
 ```json
 {
-    "body": "Changing assignee from mhampton to mhansen.",
+    "body": "Changing assignee from mhampton to @mwhansen.",
     "created_at": "2008-06-08T14:54:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3379",
     "type": "issue_comment",
@@ -146,7 +146,7 @@ archive/issue_comments_023659.json:
 }
 ```
 
-Changing assignee from mhampton to mhansen.
+Changing assignee from mhampton to @mwhansen.
 
 
 
@@ -178,7 +178,7 @@ archive/issue_comments_023661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3379#issuecomment-23661",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -191,16 +191,16 @@ Changing keywords from "" to "editor_mhansen".
 archive/issue_comments_023662.json:
 ```json
 {
-    "body": "Attachment [3379.patch](tarball://root/attachments/some-uuid/ticket3379/3379.patch) by mhansen created at 2008-06-19 20:18:58",
+    "body": "Attachment [3379.patch](tarball://root/attachments/some-uuid/ticket3379/3379.patch) by @mwhansen created at 2008-06-19 20:18:58",
     "created_at": "2008-06-19T20:18:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3379#issuecomment-23662",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [3379.patch](tarball://root/attachments/some-uuid/ticket3379/3379.patch) by mhansen created at 2008-06-19 20:18:58
+Attachment [3379.patch](tarball://root/attachments/some-uuid/ticket3379/3379.patch) by @mwhansen created at 2008-06-19 20:18:58
 
 
 
@@ -214,7 +214,7 @@ archive/issue_comments_023663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3379#issuecomment-23663",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

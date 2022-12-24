@@ -14,7 +14,7 @@ archive/issues_007272.json:
     "title": "Upgrade to Cython 0.12",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7272",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: mabshoff
@@ -41,7 +41,7 @@ archive/issue_comments_060495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7272#issuecomment-60495",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_060496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7272#issuecomment-60496",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_060497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7272#issuecomment-60497",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_060498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7272#issuecomment-60498",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -149,16 +149,16 @@ Sage builds and passes all tests (vanilla 4.2 + attached patch)
 archive/issue_comments_060499.json:
 ```json
 {
-    "body": "Attachment [7272-cython-0.12.patch](tarball://root/attachments/some-uuid/ticket7272/7272-cython-0.12.patch) by robertwb created at 2009-10-30 06:17:29",
+    "body": "Attachment [7272-cython-0.12.patch](tarball://root/attachments/some-uuid/ticket7272/7272-cython-0.12.patch) by @robertwb created at 2009-10-30 06:17:29",
     "created_at": "2009-10-30T06:17:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7272#issuecomment-60499",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [7272-cython-0.12.patch](tarball://root/attachments/some-uuid/ticket7272/7272-cython-0.12.patch) by robertwb created at 2009-10-30 06:17:29
+Attachment [7272-cython-0.12.patch](tarball://root/attachments/some-uuid/ticket7272/7272-cython-0.12.patch) by @robertwb created at 2009-10-30 06:17:29
 
 
 
@@ -172,7 +172,7 @@ archive/issue_comments_060500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7272#issuecomment-60500",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_060501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7272#issuecomment-60501",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_060502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7272#issuecomment-60502",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_060503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7272#issuecomment-60503",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_060504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7272#issuecomment-60504",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_060505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7272#issuecomment-60505",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_060506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7272#issuecomment-60506",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -312,7 +312,7 @@ archive/issue_comments_060507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7272#issuecomment-60507",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -330,7 +330,7 @@ archive/issue_comments_060508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7272#issuecomment-60508",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_060509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7272#issuecomment-60509",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -366,7 +366,7 @@ archive/issue_comments_060510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7272#issuecomment-60510",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -384,7 +384,7 @@ archive/issue_comments_060511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7272#issuecomment-60511",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

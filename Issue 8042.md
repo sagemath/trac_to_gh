@@ -3,7 +3,7 @@
 archive/issues_008042.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  cremona\n\nKeywords: eclib modular symbols\n\n\n```\nE = EllipticCurve('858k2')\nfrom sage.libs.cremona.newforms import ECModularSymbol\nECModularSymbol(E)\n```\n\n\nproduces \n\n\n```\nFile \"newforms.pyx\", line 60, in sage.libs.cremona.newforms.ECModularSymbol.__init__ (sage/libs/cremona/newforms.cpp:1804)\nOverflowError: value too large to convert to int\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8042\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @JohnCremona\n\nKeywords: eclib modular symbols\n\n\n```\nE = EllipticCurve('858k2')\nfrom sage.libs.cremona.newforms import ECModularSymbol\nECModularSymbol(E)\n```\n\n\nproduces \n\n\n```\nFile \"newforms.pyx\", line 60, in sage.libs.cremona.newforms.ECModularSymbol.__init__ (sage/libs/cremona/newforms.cpp:1804)\nOverflowError: value too large to convert to int\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8042\n\n",
     "created_at": "2010-01-23T00:14:37Z",
     "labels": [
         "modular forms",
@@ -14,12 +14,12 @@ archive/issues_008042.json:
     "title": "problem with modular symbols in eclib",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8042",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
-CC:  cremona
+CC:  @JohnCremona
 
 Keywords: eclib modular symbols
 
@@ -56,7 +56,7 @@ archive/issue_comments_070279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8042#issuecomment-70279",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_070280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8042#issuecomment-70280",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_070281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8042#issuecomment-70281",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -128,16 +128,16 @@ Okay, I'm attaching a patch that amounts to making the fix that I described abov
 archive/issue_comments_070282.json:
 ```json
 {
-    "body": "Attachment [trac-8042.patch](tarball://root/attachments/some-uuid/ticket8042/trac-8042.patch) by craigcitro created at 2010-01-24 07:43:10",
+    "body": "Attachment [trac-8042.patch](tarball://root/attachments/some-uuid/ticket8042/trac-8042.patch) by @craigcitro created at 2010-01-24 07:43:10",
     "created_at": "2010-01-24T07:43:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8042#issuecomment-70282",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-8042.patch](tarball://root/attachments/some-uuid/ticket8042/trac-8042.patch) by craigcitro created at 2010-01-24 07:43:10
+Attachment [trac-8042.patch](tarball://root/attachments/some-uuid/ticket8042/trac-8042.patch) by @craigcitro created at 2010-01-24 07:43:10
 
 
 
@@ -151,7 +151,7 @@ archive/issue_comments_070283.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8042#issuecomment-70283",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_070284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8042#issuecomment-70284",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_070285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8042#issuecomment-70285",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_070286.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8042#issuecomment-70286",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_070288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8042#issuecomment-70288",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_070289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8042#issuecomment-70289",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

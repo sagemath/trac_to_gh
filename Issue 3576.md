@@ -14,7 +14,7 @@ archive/issues_003576.json:
     "title": "stupid bug in RDF",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3576",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -66,7 +66,7 @@ archive/issue_comments_025255.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3576#issuecomment-25255",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -85,16 +85,16 @@ sage: RDF(-1).nth_root(5)^(5)
 archive/issue_comments_025256.json:
 ```json
 {
-    "body": "Attachment [sage-3576.patch](tarball://root/attachments/some-uuid/ticket3576/sage-3576.patch) by was created at 2008-07-06 23:13:07",
+    "body": "Attachment [sage-3576.patch](tarball://root/attachments/some-uuid/ticket3576/sage-3576.patch) by @williamstein created at 2008-07-06 23:13:07",
     "created_at": "2008-07-06T23:13:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3576#issuecomment-25256",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3576.patch](tarball://root/attachments/some-uuid/ticket3576/sage-3576.patch) by was created at 2008-07-06 23:13:07
+Attachment [sage-3576.patch](tarball://root/attachments/some-uuid/ticket3576/sage-3576.patch) by @williamstein created at 2008-07-06 23:13:07
 
 
 
@@ -108,7 +108,7 @@ archive/issue_comments_025257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3576#issuecomment-25257",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

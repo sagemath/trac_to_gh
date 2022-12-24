@@ -14,7 +14,7 @@ archive/issues_008021.json:
     "title": "ref manual for 4.3.1: error when building (Undefined control sequence \\cross)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8021",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: mvngu
@@ -37,7 +37,7 @@ archive/issue_comments_070086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8021#issuecomment-70086",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to needs_review.
 archive/issue_comments_070087.json:
 ```json
 {
-    "body": "Attachment [trac_8021-times.patch](tarball://root/attachments/some-uuid/ticket8021/trac_8021-times.patch) by jhpalmieri created at 2010-01-21 06:30:23",
+    "body": "Attachment [trac_8021-times.patch](tarball://root/attachments/some-uuid/ticket8021/trac_8021-times.patch) by @jhpalmieri created at 2010-01-21 06:30:23",
     "created_at": "2010-01-21T06:30:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8021#issuecomment-70087",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8021-times.patch](tarball://root/attachments/some-uuid/ticket8021/trac_8021-times.patch) by jhpalmieri created at 2010-01-21 06:30:23
+Attachment [trac_8021-times.patch](tarball://root/attachments/some-uuid/ticket8021/trac_8021-times.patch) by @jhpalmieri created at 2010-01-21 06:30:23
 
 
 

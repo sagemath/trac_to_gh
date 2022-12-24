@@ -3,7 +3,7 @@
 archive/issues_006542.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kcrisman wstein boothby mvngu\n\nKeywords: graphics, tachyon, raytracer\n\nAs part of tracking this down, I am planning on adding doctests to more of the tachyon related files, which currently have low coverage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6542\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman wstein boothby mvngu\n\nKeywords: graphics, tachyon, raytracer\n\nAs part of tracking this down, I am planning on adding doctests to more of the tachyon related files, which currently have low coverage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6542\n\n",
     "created_at": "2009-07-16T11:49:09Z",
     "labels": [
         "graphics",
@@ -17,9 +17,9 @@ archive/issues_006542.json:
     "user": "mhampton"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kcrisman wstein boothby mvngu
+CC:  @kcrisman wstein boothby mvngu
 
 Keywords: graphics, tachyon, raytracer
 
@@ -135,7 +135,7 @@ archive/issue_comments_053333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6542",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6542#issuecomment-53333",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_053335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6542",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6542#issuecomment-53335",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_053338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6542",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6542#issuecomment-53338",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -253,7 +253,7 @@ The function itself (obviously, since just replaces from before) works fine for 
 archive/issue_comments_053339.json:
 ```json
 {
-    "body": "Changing assignee from was to mhampton.",
+    "body": "Changing assignee from @williamstein to mhampton.",
     "created_at": "2009-07-23T03:21:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6542",
     "type": "issue_comment",
@@ -262,7 +262,7 @@ archive/issue_comments_053339.json:
 }
 ```
 
-Changing assignee from was to mhampton.
+Changing assignee from @williamstein to mhampton.
 
 
 
@@ -276,7 +276,7 @@ archive/issue_comments_053340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6542",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6542#issuecomment-53340",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

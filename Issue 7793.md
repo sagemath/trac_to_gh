@@ -3,7 +3,7 @@
 archive/issues_007793.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jason\n\nFrom the report a bug link:\n\nIt seems that the zorder does not work with disk(). I found a report saying that this was resolved for point() and polygon(), (and I know it works) but nothing about disk(). I found this using the following test:\n\n```\nd1 = disk((0,0), 1, (0, 2*pi), color = 'red', zorder=0) \nd2 = disk((0,0), 0.75, (0, 2*pi), color = 'brown', zorder=1)\nd3 = disk((0,0), 0.5, (0, 2*pi), color = 'green', zorder= 2)\nd4 = disk((0,0), 0.25, (0, 2*pi), color = 'yellow', zorder=3)\nfinal = d4 + d3 + d2 + d1\nfinal.show(aspect_ratio = 1)\n```\n\n\nIncidentally (not in the report), this shows that axes apparently have default zorder of 2.  So do arrows, but polygons have a default of 1.  This is confusing.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7793\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nFrom the report a bug link:\n\nIt seems that the zorder does not work with disk(). I found a report saying that this was resolved for point() and polygon(), (and I know it works) but nothing about disk(). I found this using the following test:\n\n```\nd1 = disk((0,0), 1, (0, 2*pi), color = 'red', zorder=0) \nd2 = disk((0,0), 0.75, (0, 2*pi), color = 'brown', zorder=1)\nd3 = disk((0,0), 0.5, (0, 2*pi), color = 'green', zorder= 2)\nd4 = disk((0,0), 0.25, (0, 2*pi), color = 'yellow', zorder=3)\nfinal = d4 + d3 + d2 + d1\nfinal.show(aspect_ratio = 1)\n```\n\n\nIncidentally (not in the report), this shows that axes apparently have default zorder of 2.  So do arrows, but polygons have a default of 1.  This is confusing.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7793\n\n",
     "created_at": "2009-12-30T03:40:26Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_007793.json:
     "title": "zorder not implemented in disk",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7793",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jason
+CC:  @jasongrout
 
 From the report a bug link:
 
@@ -53,7 +53,7 @@ archive/issue_comments_067259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7793#issuecomment-67259",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_067260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7793#issuecomment-67260",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -84,16 +84,16 @@ Changing status from new to needs_review.
 archive/issue_comments_067261.json:
 ```json
 {
-    "body": "Attachment [trac_7793-zorder-disk.patch](tarball://root/attachments/some-uuid/ticket7793/trac_7793-zorder-disk.patch) by kcrisman created at 2009-12-30 03:44:03\n\nWould be open to suggestions as to how to handle the issues raised in [this](http://groups.google.com/group/sage-devel/browse_thread/thread/ec30de67075e116f) thread, but for now this is up for review.",
+    "body": "Attachment [trac_7793-zorder-disk.patch](tarball://root/attachments/some-uuid/ticket7793/trac_7793-zorder-disk.patch) by @kcrisman created at 2009-12-30 03:44:03\n\nWould be open to suggestions as to how to handle the issues raised in [this](http://groups.google.com/group/sage-devel/browse_thread/thread/ec30de67075e116f) thread, but for now this is up for review.",
     "created_at": "2009-12-30T03:44:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7793#issuecomment-67261",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_7793-zorder-disk.patch](tarball://root/attachments/some-uuid/ticket7793/trac_7793-zorder-disk.patch) by kcrisman created at 2009-12-30 03:44:03
+Attachment [trac_7793-zorder-disk.patch](tarball://root/attachments/some-uuid/ticket7793/trac_7793-zorder-disk.patch) by @kcrisman created at 2009-12-30 03:44:03
 
 Would be open to suggestions as to how to handle the issues raised in [this](http://groups.google.com/group/sage-devel/browse_thread/thread/ec30de67075e116f) thread, but for now this is up for review.
 
@@ -160,7 +160,7 @@ archive/issue_comments_067264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7793#issuecomment-67264",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_067265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7793#issuecomment-67265",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

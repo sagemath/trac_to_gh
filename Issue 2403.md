@@ -14,7 +14,7 @@ archive/issues_002403.json:
     "title": "Cannot copy Sequence",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2403",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 Assignee: cwitty
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2403
 archive/issue_comments_016227.json:
 ```json
 {
-    "body": "Attachment [2403.patch](tarball://root/attachments/some-uuid/ticket2403/2403.patch) by dfdeshom created at 2008-03-06 15:47:46",
+    "body": "Attachment [2403.patch](tarball://root/attachments/some-uuid/ticket2403/2403.patch) by @dfdeshom created at 2008-03-06 15:47:46",
     "created_at": "2008-03-06T15:47:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2403#issuecomment-16227",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Attachment [2403.patch](tarball://root/attachments/some-uuid/ticket2403/2403.patch) by dfdeshom created at 2008-03-06 15:47:46
+Attachment [2403.patch](tarball://root/attachments/some-uuid/ticket2403/2403.patch) by @dfdeshom created at 2008-03-06 15:47:46
 
 
 

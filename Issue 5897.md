@@ -14,7 +14,7 @@ archive/issues_005897.json:
     "title": "add some javascript to make jsmath happier (very easy ticket to close, probably)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5897",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -56,7 +56,7 @@ archive/issue_comments_046628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5897#issuecomment-46628",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_046629.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5897#issuecomment-46629",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_006492.json:
     "title": "ratpoints -- new spkg is totally completely broken on OS X 64-bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6492",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -236,7 +236,7 @@ archive/issue_comments_052536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6492#issuecomment-52536",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_052537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6492#issuecomment-52537",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_052538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6492#issuecomment-52538",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -312,7 +312,7 @@ archive/issue_comments_052539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6492#issuecomment-52539",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -330,7 +330,7 @@ archive/issue_comments_052540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6492#issuecomment-52540",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_052541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6492#issuecomment-52541",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -366,7 +366,7 @@ archive/issue_comments_052542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6492#issuecomment-52542",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -384,7 +384,7 @@ archive/issue_comments_052543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6492#issuecomment-52543",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -402,7 +402,7 @@ archive/issue_comments_052544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6492#issuecomment-52544",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -420,7 +420,7 @@ archive/issue_comments_052545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6492#issuecomment-52545",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

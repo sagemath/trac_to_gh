@@ -3,7 +3,7 @@
 archive/issues_006629.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat vivianepons tscrim opechenik\n\nKeywords: multivariate polynomials, schubert polynomials, non symmetric polynomials\n\nSee: http://wiki.sagemath.org/combinat/MultivariatePolynomials\n\nIssue created by migration from https://trac.sagemath.org/ticket/6629\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat vivianepons @tscrim @opechenik\n\nKeywords: multivariate polynomials, schubert polynomials, non symmetric polynomials\n\nSee: http://wiki.sagemath.org/combinat/MultivariatePolynomials\n\nIssue created by migration from https://trac.sagemath.org/ticket/6629\n\n",
     "created_at": "2009-07-26T19:55:34Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_006629.json:
     "title": "Implement the abstract ring of multivariate polynomials, with several bases (Schur schubert, ...)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6629",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
-CC:  sage-combinat vivianepons tscrim opechenik
+CC:  sage-combinat vivianepons @tscrim @opechenik
 
 Keywords: multivariate polynomials, schubert polynomials, non symmetric polynomials
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6629
 archive/issue_comments_054310.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to VivianePons.",
+    "body": "Changing assignee from @mwhansen to @VivianePons.",
     "created_at": "2013-02-13T16:09:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6629#issuecomment-54310",
-    "user": "VivianePons"
+    "user": "@VivianePons"
 }
 ```
 
-Changing assignee from mhansen to VivianePons.
+Changing assignee from @mwhansen to @VivianePons.
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_054311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6629#issuecomment-54311",
-    "user": "VivianePons"
+    "user": "@VivianePons"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_054312.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6629#issuecomment-54312",
-    "user": "jferreira"
+    "user": "@jeffpferreira"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_054313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6629#issuecomment-54313",
-    "user": "VivianePons"
+    "user": "@VivianePons"
 }
 ```
 
@@ -110,16 +110,16 @@ In the meantime, the patch is working already and some people use it.
 archive/issue_comments_054314.json:
 ```json
 {
-    "body": "Attachment [trac_6629-multivariate-polynomials-on-several-bases-vp.patch](tarball://root/attachments/some-uuid/ticket6629/trac_6629-multivariate-polynomials-on-several-bases-vp.patch) by VivianePons created at 2013-05-30 07:48:53\n\nJust attached the last version of the patch to apply on Sage 5.9",
+    "body": "Attachment [trac_6629-multivariate-polynomials-on-several-bases-vp.patch](tarball://root/attachments/some-uuid/ticket6629/trac_6629-multivariate-polynomials-on-several-bases-vp.patch) by @VivianePons created at 2013-05-30 07:48:53\n\nJust attached the last version of the patch to apply on Sage 5.9",
     "created_at": "2013-05-30T07:48:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6629#issuecomment-54314",
-    "user": "VivianePons"
+    "user": "@VivianePons"
 }
 ```
 
-Attachment [trac_6629-multivariate-polynomials-on-several-bases-vp.patch](tarball://root/attachments/some-uuid/ticket6629/trac_6629-multivariate-polynomials-on-several-bases-vp.patch) by VivianePons created at 2013-05-30 07:48:53
+Attachment [trac_6629-multivariate-polynomials-on-several-bases-vp.patch](tarball://root/attachments/some-uuid/ticket6629/trac_6629-multivariate-polynomials-on-several-bases-vp.patch) by @VivianePons created at 2013-05-30 07:48:53
 
 Just attached the last version of the patch to apply on Sage 5.9
 
@@ -135,7 +135,7 @@ archive/issue_comments_054315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6629#issuecomment-54315",
-    "user": "VivianePons"
+    "user": "@VivianePons"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_054316.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6629#issuecomment-54316",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_054321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6629#issuecomment-54321",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_054322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6629#issuecomment-54322",
-    "user": "VivianePons"
+    "user": "@VivianePons"
 }
 ```
 
@@ -303,7 +303,7 @@ archive/issue_comments_054323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6629#issuecomment-54323",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -393,7 +393,7 @@ archive/issue_comments_054328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6629#issuecomment-54328",
-    "user": "opechenik"
+    "user": "@opechenik"
 }
 ```
 
@@ -411,7 +411,7 @@ archive/issue_comments_054329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6629#issuecomment-54329",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 

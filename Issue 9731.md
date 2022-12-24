@@ -14,7 +14,7 @@ archive/issues_009731.json:
     "title": "Export/Import of GML/Graphml/Yaml files through NetworkX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9731",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -43,7 +43,7 @@ archive/issue_comments_095110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9731#issuecomment-95110",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -56,16 +56,16 @@ Changing status from new to needs_review.
 archive/issue_comments_095111.json:
 ```json
 {
-    "body": "Attachment [trac_9731.patch](tarball://root/attachments/some-uuid/ticket9731/trac_9731.patch) by ncohen created at 2010-08-12 03:50:55",
+    "body": "Attachment [trac_9731.patch](tarball://root/attachments/some-uuid/ticket9731/trac_9731.patch) by @nathanncohen created at 2010-08-12 03:50:55",
     "created_at": "2010-08-12T03:50:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9731#issuecomment-95111",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_9731.patch](tarball://root/attachments/some-uuid/ticket9731/trac_9731.patch) by ncohen created at 2010-08-12 03:50:55
+Attachment [trac_9731.patch](tarball://root/attachments/some-uuid/ticket9731/trac_9731.patch) by @nathanncohen created at 2010-08-12 03:50:55
 
 
 
@@ -79,7 +79,7 @@ archive/issue_comments_095112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9731#issuecomment-95112",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_095113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9731#issuecomment-95113",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_095114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9731#issuecomment-95114",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_095115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9731#issuecomment-95115",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

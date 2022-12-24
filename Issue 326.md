@@ -3,7 +3,7 @@
 archive/issues_000326.json:
 ```json
 {
-    "body": "Assignee: was\n\nWhen I change a pyrex file (specifically rings/integer.pyx), sage -b doesn't seem to notice. I have to manually delete the corresponding .c file to get a rebuild happening. This is mac OS 10.4.9, powerpc G5, sage 2.3.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/326\n\n",
+    "body": "Assignee: @williamstein\n\nWhen I change a pyrex file (specifically rings/integer.pyx), sage -b doesn't seem to notice. I have to manually delete the corresponding .c file to get a rebuild happening. This is mac OS 10.4.9, powerpc G5, sage 2.3.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/326\n\n",
     "created_at": "2007-03-21T04:25:32Z",
     "labels": [
         "packages: standard",
@@ -16,7 +16,7 @@ archive/issues_000326.json:
     "user": "dmharvey"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 When I change a pyrex file (specifically rings/integer.pyx), sage -b doesn't seem to notice. I have to manually delete the corresponding .c file to get a rebuild happening. This is mac OS 10.4.9, powerpc G5, sage 2.3.
 
@@ -37,7 +37,7 @@ archive/issue_comments_001541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/326#issuecomment-1541",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_001542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/326#issuecomment-1542",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_001543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/326#issuecomment-1543",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_001544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/326#issuecomment-1544",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_001545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/326#issuecomment-1545",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_001546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/326#issuecomment-1546",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

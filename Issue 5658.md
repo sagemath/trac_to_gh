@@ -3,7 +3,7 @@
 archive/issues_005658.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  rhinton\n\nKeywords: generic group order\n\nRyan Hinton pointed out that for groups of prime order n every non-identity element has order n.  The current implementation of order_from_multiple() computes `g^n` twice when g is not the identity and n is prime.\n\nThe attached patch avoids this: for each prime p dividing the given multiple M of the order, we avoid the last multiplication/powering by p, so there is a saving whenever the p-exponent of the order is maximal.\n\nIn an example where the order is `2^1279-1` (a Mersenne prime) the times was reduced from 100ms to 70ms.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5658\n\n",
+    "body": "Assignee: tbd\n\nCC:  @rhinton\n\nKeywords: generic group order\n\nRyan Hinton pointed out that for groups of prime order n every non-identity element has order n.  The current implementation of order_from_multiple() computes `g^n` twice when g is not the identity and n is prime.\n\nThe attached patch avoids this: for each prime p dividing the given multiple M of the order, we avoid the last multiplication/powering by p, so there is a saving whenever the p-exponent of the order is maximal.\n\nIn an example where the order is `2^1279-1` (a Mersenne prime) the times was reduced from 100ms to 70ms.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5658\n\n",
     "created_at": "2009-04-01T15:04:57Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_005658.json:
     "title": "Efficiency improvement in generic order_from_multiple()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5658",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 Assignee: tbd
 
-CC:  rhinton
+CC:  @rhinton
 
 Keywords: generic group order
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5658
 archive/issue_comments_044237.json:
 ```json
 {
-    "body": "Attachment [generic_order.patch](tarball://root/attachments/some-uuid/ticket5658/generic_order.patch) by cremona created at 2009-04-01 15:05:19\n\nbased on 3.4.1.alpha0",
+    "body": "Attachment [generic_order.patch](tarball://root/attachments/some-uuid/ticket5658/generic_order.patch) by @JohnCremona created at 2009-04-01 15:05:19\n\nbased on 3.4.1.alpha0",
     "created_at": "2009-04-01T15:05:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5658#issuecomment-44237",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [generic_order.patch](tarball://root/attachments/some-uuid/ticket5658/generic_order.patch) by cremona created at 2009-04-01 15:05:19
+Attachment [generic_order.patch](tarball://root/attachments/some-uuid/ticket5658/generic_order.patch) by @JohnCremona created at 2009-04-01 15:05:19
 
 based on 3.4.1.alpha0
 
@@ -65,7 +65,7 @@ archive/issue_comments_044238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5658#issuecomment-44238",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_044239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5658#issuecomment-44239",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_044240.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5658#issuecomment-44240",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 

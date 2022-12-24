@@ -3,7 +3,7 @@
 archive/issues_009428.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  ddrake aquino.luizclaudio@gmail.com robert.marik\n\nThis patch internationalizes the Sage Notebook and adds a localization to Brazilian Portuguese.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9428\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @dandrake aquino.luizclaudio@gmail.com @robert-marik\n\nThis patch internationalizes the Sage Notebook and adds a localization to Brazilian Portuguese.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9428\n\n",
     "created_at": "2010-07-05T09:37:24Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_009428.json:
     "title": "Internationalize the Sage Notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9428",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 Assignee: jason, was
 
-CC:  ddrake aquino.luizclaudio@gmail.com robert.marik
+CC:  @dandrake aquino.luizclaudio@gmail.com @robert-marik
 
 This patch internationalizes the Sage Notebook and adds a localization to Brazilian Portuguese.
 
@@ -39,7 +39,7 @@ archive/issue_comments_089952.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89952",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_089953.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89953",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_089954.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89954",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -88,16 +88,16 @@ Changing status from new to needs_review.
 archive/issue_comments_089955.json:
 ```json
 {
-    "body": "Attachment [trac_9428-sagenb-i18n.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.patch) by timdumol created at 2010-07-05 09:46:00",
+    "body": "Attachment [trac_9428-sagenb-i18n.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.patch) by @TimDumol created at 2010-07-05 09:46:00",
     "created_at": "2010-07-05T09:46:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89955",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_9428-sagenb-i18n.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.patch) by timdumol created at 2010-07-05 09:46:00
+Attachment [trac_9428-sagenb-i18n.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.patch) by @TimDumol created at 2010-07-05 09:46:00
 
 
 
@@ -106,16 +106,16 @@ Attachment [trac_9428-sagenb-i18n.patch](tarball://root/attachments/some-uuid/ti
 archive/issue_comments_089956.json:
 ```json
 {
-    "body": "Attachment [trac_9428-sagenb-0.8.1-rebase.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-0.8.1-rebase.patch) by timdumol created at 2010-07-05 12:43:42\n\nRebase on SageNB 0.8.1. Replaces previous patch.",
+    "body": "Attachment [trac_9428-sagenb-0.8.1-rebase.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-0.8.1-rebase.patch) by @TimDumol created at 2010-07-05 12:43:42\n\nRebase on SageNB 0.8.1. Replaces previous patch.",
     "created_at": "2010-07-05T12:43:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89956",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_9428-sagenb-0.8.1-rebase.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-0.8.1-rebase.patch) by timdumol created at 2010-07-05 12:43:42
+Attachment [trac_9428-sagenb-0.8.1-rebase.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-0.8.1-rebase.patch) by @TimDumol created at 2010-07-05 12:43:42
 
 Rebase on SageNB 0.8.1. Replaces previous patch.
 
@@ -131,7 +131,7 @@ archive/issue_comments_089957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89957",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_089958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89958",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -162,16 +162,16 @@ Defers language loading until requested.
 archive/issue_comments_089959.json:
 ```json
 {
-    "body": "Attachment [trac_9428-sagenb-0.8.1-rebase.2.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-0.8.1-rebase.2.patch) by timdumol created at 2010-07-05 15:24:13\n\nA package with this patch (tentatively SageNB 0.9) based on SageNB 0.8.1 is avaialable at http://sage.math.washington.edu/home/timdumol/sagenb-0.9.spkg",
+    "body": "Attachment [trac_9428-sagenb-0.8.1-rebase.2.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-0.8.1-rebase.2.patch) by @TimDumol created at 2010-07-05 15:24:13\n\nA package with this patch (tentatively SageNB 0.9) based on SageNB 0.8.1 is avaialable at http://sage.math.washington.edu/home/timdumol/sagenb-0.9.spkg",
     "created_at": "2010-07-05T15:24:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89959",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_9428-sagenb-0.8.1-rebase.2.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-0.8.1-rebase.2.patch) by timdumol created at 2010-07-05 15:24:13
+Attachment [trac_9428-sagenb-0.8.1-rebase.2.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-0.8.1-rebase.2.patch) by @TimDumol created at 2010-07-05 15:24:13
 
 A package with this patch (tentatively SageNB 0.9) based on SageNB 0.8.1 is avaialable at http://sage.math.washington.edu/home/timdumol/sagenb-0.9.spkg
 
@@ -187,7 +187,7 @@ archive/issue_comments_089960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89960",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_089961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89961",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -222,16 +222,16 @@ Replaces all others. Adds a few more strings to translation, and implements dumm
 archive/issue_comments_089962.json:
 ```json
 {
-    "body": "Attachment [trac_9428-sagenb-i18n.3.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.3.patch) by timdumol created at 2010-08-19 11:24:42\n\nAdded a couple more strings to translation. Replaces all others.",
+    "body": "Attachment [trac_9428-sagenb-i18n.3.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.3.patch) by @TimDumol created at 2010-08-19 11:24:42\n\nAdded a couple more strings to translation. Replaces all others.",
     "created_at": "2010-08-19T11:24:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89962",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_9428-sagenb-i18n.3.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.3.patch) by timdumol created at 2010-08-19 11:24:42
+Attachment [trac_9428-sagenb-i18n.3.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.3.patch) by @TimDumol created at 2010-08-19 11:24:42
 
 Added a couple more strings to translation. Replaces all others.
 
@@ -247,7 +247,7 @@ archive/issue_comments_089963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89963",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_089964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89964",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -286,16 +286,16 @@ btw: How to review this trac? I have seen [devel comments](http://nb.sagemath.or
 archive/issue_comments_089965.json:
 ```json
 {
-    "body": "Attachment [trac_9428-sagenb-i18n.4.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.4.patch) by timdumol created at 2010-08-26 09:23:30\n\nReplaces previous patches. Added the requested \"XX <time> ago\" fix. Updated the sagenb.po file with the latest strings to be translated. Added sagenb/locale to the package data list.",
+    "body": "Attachment [trac_9428-sagenb-i18n.4.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.4.patch) by @TimDumol created at 2010-08-26 09:23:30\n\nReplaces previous patches. Added the requested \"XX <time> ago\" fix. Updated the sagenb.po file with the latest strings to be translated. Added sagenb/locale to the package data list.",
     "created_at": "2010-08-26T09:23:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89965",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_9428-sagenb-i18n.4.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.4.patch) by timdumol created at 2010-08-26 09:23:30
+Attachment [trac_9428-sagenb-i18n.4.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.4.patch) by @TimDumol created at 2010-08-26 09:23:30
 
 Replaces previous patches. Added the requested "XX <time> ago" fix. Updated the sagenb.po file with the latest strings to be translated. Added sagenb/locale to the package data list.
 
@@ -311,7 +311,7 @@ archive/issue_comments_089966.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89966",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -335,7 +335,7 @@ archive/issue_comments_089967.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89967",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -373,7 +373,7 @@ archive/issue_comments_089968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89968",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -404,7 +404,7 @@ archive/issue_comments_089969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89969",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -422,7 +422,7 @@ archive/issue_comments_089970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89970",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -442,7 +442,7 @@ archive/issue_comments_089971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89971",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -455,16 +455,16 @@ The last part shouldn't be too difficult to fix. I've added your localization.
 archive/issue_comments_089972.json:
 ```json
 {
-    "body": "Attachment [trac_9428-sagenb-i18n.5.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.5.patch) by timdumol created at 2010-09-10 03:55:55\n\nReplaces all previous. Really fixed the undo problem.",
+    "body": "Attachment [trac_9428-sagenb-i18n.5.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.5.patch) by @TimDumol created at 2010-09-10 03:55:55\n\nReplaces all previous. Really fixed the undo problem.",
     "created_at": "2010-09-10T03:55:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89972",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_9428-sagenb-i18n.5.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.5.patch) by timdumol created at 2010-09-10 03:55:55
+Attachment [trac_9428-sagenb-i18n.5.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.5.patch) by @TimDumol created at 2010-09-10 03:55:55
 
 Replaces all previous. Really fixed the undo problem.
 
@@ -480,7 +480,7 @@ archive/issue_comments_089973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89973",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -498,7 +498,7 @@ archive/issue_comments_089974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89974",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -516,7 +516,7 @@ archive/issue_comments_089975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89975",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -529,16 +529,16 @@ Replaces all others. Fixed a bug in the fix.
 archive/issue_comments_089976.json:
 ```json
 {
-    "body": "Attachment [trac_9428-sagenb-i18n.6.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.6.patch) by timdumol created at 2010-09-11 05:27:10\n\nNew package version here: http://sage.math.washington.edu/home/timdumol/sagenb-0.8.2-dev-i18n.spkg fixing the bug in Undo.",
+    "body": "Attachment [trac_9428-sagenb-i18n.6.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.6.patch) by @TimDumol created at 2010-09-11 05:27:10\n\nNew package version here: http://sage.math.washington.edu/home/timdumol/sagenb-0.8.2-dev-i18n.spkg fixing the bug in Undo.",
     "created_at": "2010-09-11T05:27:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89976",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_9428-sagenb-i18n.6.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.6.patch) by timdumol created at 2010-09-11 05:27:10
+Attachment [trac_9428-sagenb-i18n.6.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.6.patch) by @TimDumol created at 2010-09-11 05:27:10
 
 New package version here: http://sage.math.washington.edu/home/timdumol/sagenb-0.8.2-dev-i18n.spkg fixing the bug in Undo.
 
@@ -554,7 +554,7 @@ archive/issue_comments_089977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89977",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -572,7 +572,7 @@ archive/issue_comments_089978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89978",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -590,7 +590,7 @@ archive/issue_comments_089979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89979",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -603,16 +603,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_089980.json:
 ```json
 {
-    "body": "Attachment [trac_9428-sagenb-i18n.7.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.7.patch) by robert.marik created at 2010-09-11 18:38:54\n\nLooks fine for me, instals fine, works fine, no problems found when using it for a longer time and for many various things.\n\nAll doctests (sage -t -sagenb) passed. \n\nVery very important patch, thank you.\n\nI am not able to check the Brazilian Portugese, but despite this fact I give a positive review! \n\nMany thanks for this work.",
+    "body": "Attachment [trac_9428-sagenb-i18n.7.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.7.patch) by @robert-marik created at 2010-09-11 18:38:54\n\nLooks fine for me, instals fine, works fine, no problems found when using it for a longer time and for many various things.\n\nAll doctests (sage -t -sagenb) passed. \n\nVery very important patch, thank you.\n\nI am not able to check the Brazilian Portugese, but despite this fact I give a positive review! \n\nMany thanks for this work.",
     "created_at": "2010-09-11T18:38:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89980",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Attachment [trac_9428-sagenb-i18n.7.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.7.patch) by robert.marik created at 2010-09-11 18:38:54
+Attachment [trac_9428-sagenb-i18n.7.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.7.patch) by @robert-marik created at 2010-09-11 18:38:54
 
 Looks fine for me, instals fine, works fine, no problems found when using it for a longer time and for many various things.
 
@@ -699,16 +699,16 @@ http://sites.google.com/site/lcmaquino/sage/sagenb_pt_BR.tar.gz?attredirects=0&d
 archive/issue_comments_089983.json:
 ```json
 {
-    "body": "Attachment [trac_9428-sagenb-i18n.8.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.8.patch) by timdumol created at 2010-09-15 16:19:29\n\nFixes the issues pointed out by LuizAquino. Updates pt_BR.",
+    "body": "Attachment [trac_9428-sagenb-i18n.8.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.8.patch) by @TimDumol created at 2010-09-15 16:19:29\n\nFixes the issues pointed out by LuizAquino. Updates pt_BR.",
     "created_at": "2010-09-15T16:19:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89983",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_9428-sagenb-i18n.8.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.8.patch) by timdumol created at 2010-09-15 16:19:29
+Attachment [trac_9428-sagenb-i18n.8.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.8.patch) by @TimDumol created at 2010-09-15 16:19:29
 
 Fixes the issues pointed out by LuizAquino. Updates pt_BR.
 
@@ -724,7 +724,7 @@ archive/issue_comments_089984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89984",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -744,7 +744,7 @@ archive/issue_comments_089985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89985",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -816,16 +816,16 @@ And you're assuming that a "skilled person" is someone that knows English, but i
 archive/issue_comments_089988.json:
 ```json
 {
-    "body": "Attachment [trac_9428-sagenb-i18n.9.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.9.patch) by timdumol created at 2010-09-16 11:10:41\n\nFixes more issues pointed out by LuizAquino.",
+    "body": "Attachment [trac_9428-sagenb-i18n.9.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.9.patch) by @TimDumol created at 2010-09-16 11:10:41\n\nFixes more issues pointed out by LuizAquino.",
     "created_at": "2010-09-16T11:10:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89988",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_9428-sagenb-i18n.9.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.9.patch) by timdumol created at 2010-09-16 11:10:41
+Attachment [trac_9428-sagenb-i18n.9.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.9.patch) by @TimDumol created at 2010-09-16 11:10:41
 
 Fixes more issues pointed out by LuizAquino.
 
@@ -841,7 +841,7 @@ archive/issue_comments_089989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89989",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -905,7 +905,7 @@ archive/issue_comments_089991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89991",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -1052,7 +1052,7 @@ archive/issue_comments_089994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89994",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -1070,7 +1070,7 @@ archive/issue_comments_089995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89995",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -1083,16 +1083,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_089996.json:
 ```json
 {
-    "body": "Attachment [trac_9428-sagenb-i18n.10.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.10.patch) by timdumol created at 2010-10-02 00:36:48\n\nSorry, I forgot to post here that I had updated the spkg. Here's a new spkg (http://sage.math.washington.edu/home/timdumol/sagenb-0.8.2-dev-i18n.spkg) and patch implementing your changes.\n\nSince you approve of my changes, and your changes count as a reviewer patch, shall we mark this positive review?",
+    "body": "Attachment [trac_9428-sagenb-i18n.10.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.10.patch) by @TimDumol created at 2010-10-02 00:36:48\n\nSorry, I forgot to post here that I had updated the spkg. Here's a new spkg (http://sage.math.washington.edu/home/timdumol/sagenb-0.8.2-dev-i18n.spkg) and patch implementing your changes.\n\nSince you approve of my changes, and your changes count as a reviewer patch, shall we mark this positive review?",
     "created_at": "2010-10-02T00:36:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-89996",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_9428-sagenb-i18n.10.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.10.patch) by timdumol created at 2010-10-02 00:36:48
+Attachment [trac_9428-sagenb-i18n.10.patch](tarball://root/attachments/some-uuid/ticket9428/trac_9428-sagenb-i18n.10.patch) by @TimDumol created at 2010-10-02 00:36:48
 
 Sorry, I forgot to post here that I had updated the spkg. Here's a new spkg (http://sage.math.washington.edu/home/timdumol/sagenb-0.8.2-dev-i18n.spkg) and patch implementing your changes.
 
@@ -1186,7 +1186,7 @@ archive/issue_comments_090000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-90000",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -1230,7 +1230,7 @@ archive/issue_comments_090002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-90002",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -1248,7 +1248,7 @@ archive/issue_comments_090003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-90003",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -1266,7 +1266,7 @@ archive/issue_comments_090004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9428#issuecomment-90004",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

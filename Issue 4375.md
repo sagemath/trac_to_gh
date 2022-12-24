@@ -14,7 +14,7 @@ archive/issues_004375.json:
     "title": "[with patch, needs review] building reference manual in 3.2.alpha1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4375",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: somebody

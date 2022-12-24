@@ -14,7 +14,7 @@ archive/issues_005866.json:
     "title": "Fix freetype build on systems where make is not GNU make.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5866",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 Assignee: mabshoff
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5866
 archive/issue_comments_046337.json:
 ```json
 {
-    "body": "Attachment [freetype-2.3.5.p0.patch](tarball://root/attachments/some-uuid/ticket5866/freetype-2.3.5.p0.patch) by pjeremy created at 2009-04-23 06:53:28",
+    "body": "Attachment [freetype-2.3.5.p0.patch](tarball://root/attachments/some-uuid/ticket5866/freetype-2.3.5.p0.patch) by @peterjeremy created at 2009-04-23 06:53:28",
     "created_at": "2009-04-23T06:53:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5866#issuecomment-46337",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
-Attachment [freetype-2.3.5.p0.patch](tarball://root/attachments/some-uuid/ticket5866/freetype-2.3.5.p0.patch) by pjeremy created at 2009-04-23 06:53:28
+Attachment [freetype-2.3.5.p0.patch](tarball://root/attachments/some-uuid/ticket5866/freetype-2.3.5.p0.patch) by @peterjeremy created at 2009-04-23 06:53:28
 
 
 
@@ -81,7 +81,7 @@ archive/issue_comments_046339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5866#issuecomment-46339",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_046340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5866#issuecomment-46340",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -114,16 +114,16 @@ Changing status from new to assigned.
 archive/issue_comments_046341.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to mhansen.",
+    "body": "Changing assignee from mabshoff to @mwhansen.",
     "created_at": "2009-06-20T02:17:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5866#issuecomment-46341",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from mabshoff to mhansen.
+Changing assignee from mabshoff to @mwhansen.
 
 
 
@@ -137,7 +137,7 @@ archive/issue_comments_046342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5866#issuecomment-46342",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

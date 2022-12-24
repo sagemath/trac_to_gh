@@ -3,7 +3,7 @@
 archive/issues_008528.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nhere it is\n\n```\nsage: x.n()\nTraceback (most recent call last)\n...\nTypeError: cannot evaluate symbolic expresssion numerically\n                                         ^^^\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8528\n\n",
+    "body": "Assignee: @burcin\n\nhere it is\n\n```\nsage: x.n()\nTraceback (most recent call last)\n...\nTypeError: cannot evaluate symbolic expresssion numerically\n                                         ^^^\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8528\n\n",
     "created_at": "2010-03-13T21:53:53Z",
     "labels": [
         "symbolics",
@@ -17,7 +17,7 @@ archive/issues_008528.json:
     "user": "ylchapuy"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 here it is
 
@@ -84,7 +84,7 @@ archive/issue_comments_077067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8528#issuecomment-77067",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_077068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8528#issuecomment-77068",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_077069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8528#issuecomment-77069",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

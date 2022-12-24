@@ -3,7 +3,7 @@
 archive/issues_002642.json:
 ```json
 {
-    "body": "Assignee: malb\n\nThe doctest for .small_roots() randomly fails in 2.11.alpha0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2642\n\n",
+    "body": "Assignee: @malb\n\nThe doctest for .small_roots() randomly fails in 2.11.alpha0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2642\n\n",
     "created_at": "2008-03-22T01:44:36Z",
     "labels": [
         "commutative algebra",
@@ -17,7 +17,7 @@ archive/issues_002642.json:
     "user": "cwitty"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 The doctest for .small_roots() randomly fails in 2.11.alpha0.
 
@@ -75,7 +75,7 @@ archive/issue_comments_018155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2642#issuecomment-18155",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_018156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2642#issuecomment-18156",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -119,16 +119,16 @@ sage: p,q = N.prime_divisors()
 archive/issue_comments_018157.json:
 ```json
 {
-    "body": "Attachment [small_roots_fix.patch](tarball://root/attachments/some-uuid/ticket2642/small_roots_fix.patch) by malb created at 2008-03-24 00:49:57",
+    "body": "Attachment [small_roots_fix.patch](tarball://root/attachments/some-uuid/ticket2642/small_roots_fix.patch) by @malb created at 2008-03-24 00:49:57",
     "created_at": "2008-03-24T00:49:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2642#issuecomment-18157",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [small_roots_fix.patch](tarball://root/attachments/some-uuid/ticket2642/small_roots_fix.patch) by malb created at 2008-03-24 00:49:57
+Attachment [small_roots_fix.patch](tarball://root/attachments/some-uuid/ticket2642/small_roots_fix.patch) by @malb created at 2008-03-24 00:49:57
 
 
 
@@ -142,7 +142,7 @@ archive/issue_comments_018158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2642#issuecomment-18158",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_018159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2642#issuecomment-18159",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_018160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2642#issuecomment-18160",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_018161.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2642#issuecomment-18161",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

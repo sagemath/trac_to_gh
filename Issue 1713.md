@@ -3,7 +3,7 @@
 archive/issues_001713.json:
 ```json
 {
-    "body": "Assignee: malb\n\nThis didn't work, now it does:\n\n\n```\nsage: sr = mq.SR(allow_zero_inversions=True)\nsage: F,s = sr.polynomial_system()\nsage: F == sage0(F)._sage_()\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1713\n\n",
+    "body": "Assignee: @malb\n\nThis didn't work, now it does:\n\n\n```\nsage: sr = mq.SR(allow_zero_inversions=True)\nsage: F,s = sr.polynomial_system()\nsage: F == sage0(F)._sage_()\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1713\n\n",
     "created_at": "2008-01-07T14:01:39Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_001713.json:
     "title": "[with patch] fix SageElement._sage_",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1713",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 This didn't work, now it does:
 
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1713
 archive/issue_comments_010860.json:
 ```json
 {
-    "body": "Attachment [SageElement_sage_.patch](tarball://root/attachments/some-uuid/ticket1713/SageElement_sage_.patch) by malb created at 2008-01-17 12:46:58",
+    "body": "Attachment [SageElement_sage_.patch](tarball://root/attachments/some-uuid/ticket1713/SageElement_sage_.patch) by @malb created at 2008-01-17 12:46:58",
     "created_at": "2008-01-17T12:46:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1713",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1713#issuecomment-10860",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [SageElement_sage_.patch](tarball://root/attachments/some-uuid/ticket1713/SageElement_sage_.patch) by malb created at 2008-01-17 12:46:58
+Attachment [SageElement_sage_.patch](tarball://root/attachments/some-uuid/ticket1713/SageElement_sage_.patch) by @malb created at 2008-01-17 12:46:58
 
 
 
@@ -64,7 +64,7 @@ archive/issue_comments_010861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1713",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1713#issuecomment-10861",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

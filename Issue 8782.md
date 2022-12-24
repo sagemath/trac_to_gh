@@ -14,7 +14,7 @@ archive/issues_008782.json:
     "title": "pari does not work under Cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8782",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
@@ -39,7 +39,7 @@ archive/issue_comments_080389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8782#issuecomment-80389",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_080390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8782#issuecomment-80390",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_080391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8782#issuecomment-80391",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_080392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8782#issuecomment-80392",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_080393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8782#issuecomment-80393",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_080394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8782#issuecomment-80394",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

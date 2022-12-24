@@ -3,7 +3,7 @@
 archive/issues_001646.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe code \n\n\n\n```\nG = SL(2,ZZ)                 \nM = matrix([[1,0],[0,1]])    \nM in G            \n```\n\n\n\nruns possibly forever inside GAP. same for\n\n```\nM = matrix(ZZ,[[1,0],[0,1]])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1646\n\n",
+    "body": "Assignee: @williamstein\n\nThe code \n\n\n\n```\nG = SL(2,ZZ)                 \nM = matrix([[1,0],[0,1]])    \nM in G            \n```\n\n\n\nruns possibly forever inside GAP. same for\n\n```\nM = matrix(ZZ,[[1,0],[0,1]])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1646\n\n",
     "created_at": "2007-12-31T17:18:19Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_001646.json:
     "title": "'matrix in group' test doesn't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1646",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The code 
 
@@ -72,7 +72,7 @@ archive/issue_comments_010468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1646#issuecomment-10468",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -85,16 +85,16 @@ This is due to GAP.  Unless we get GAP to fix this, then the best solution would
 archive/issue_comments_010469.json:
 ```json
 {
-    "body": "Changing assignee from was to joyner.",
+    "body": "Changing assignee from @williamstein to joyner.",
     "created_at": "2008-01-24T20:20:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1646#issuecomment-10469",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Changing assignee from was to joyner.
+Changing assignee from @williamstein to joyner.
 
 
 
@@ -108,7 +108,7 @@ archive/issue_comments_010470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1646#issuecomment-10470",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_010471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1646#issuecomment-10471",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_010472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1646#issuecomment-10472",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_010473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1646#issuecomment-10473",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

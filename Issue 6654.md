@@ -3,7 +3,7 @@
 archive/issues_006654.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nKeywords: group algebra, center\n\nI added features in the category of group algebras (especially linked to the center).\n\nMoreover, the symmetric group algebra now is a parent of this category.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6654\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: group algebra, center\n\nI added features in the category of group algebras (especially linked to the center).\n\nMoreover, the symmetric group algebra now is a parent of this category.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6654\n\n",
     "created_at": "2009-07-29T13:16:54Z",
     "labels": [
         "combinatorics",
@@ -17,7 +17,7 @@ archive/issues_006654.json:
     "user": "vferay"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 Keywords: group algebra, center
 
@@ -41,7 +41,7 @@ archive/issue_comments_054613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6654#issuecomment-54613",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_054616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6654#issuecomment-54616",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_054617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6654#issuecomment-54617",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_054618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6654#issuecomment-54618",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_054619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6654#issuecomment-54619",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_054620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6654#issuecomment-54620",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -215,16 +215,16 @@ clean up of doc
 archive/issue_comments_054621.json:
 ```json
 {
-    "body": "Attachment [group_algebras_feature_central_vf.v2.patch](tarball://root/attachments/some-uuid/ticket6654/group_algebras_feature_central_vf.v2.patch) by chapoton created at 2012-09-08 12:00:24\n\napply only group_algebras_feature_central_vf.v2.patch",
+    "body": "Attachment [group_algebras_feature_central_vf.v2.patch](tarball://root/attachments/some-uuid/ticket6654/group_algebras_feature_central_vf.v2.patch) by @fchapoton created at 2012-09-08 12:00:24\n\napply only group_algebras_feature_central_vf.v2.patch",
     "created_at": "2012-09-08T12:00:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6654#issuecomment-54621",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [group_algebras_feature_central_vf.v2.patch](tarball://root/attachments/some-uuid/ticket6654/group_algebras_feature_central_vf.v2.patch) by chapoton created at 2012-09-08 12:00:24
+Attachment [group_algebras_feature_central_vf.v2.patch](tarball://root/attachments/some-uuid/ticket6654/group_algebras_feature_central_vf.v2.patch) by @fchapoton created at 2012-09-08 12:00:24
 
 apply only group_algebras_feature_central_vf.v2.patch
 
@@ -240,7 +240,7 @@ archive/issue_comments_054622.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6654#issuecomment-54622",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_054623.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6654#issuecomment-54623",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_054624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6654#issuecomment-54624",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

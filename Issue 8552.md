@@ -3,7 +3,7 @@
 archive/issues_008552.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jhpalmieri\n\nThis is a followup to #8486, which uses `os.system('which xelatex')` to see if XeLaTeX is available. With #8474 now merged, we should use `have_program` to do that, and also replace other uses of `os.system` with appropriate `subprocess` replacements, since we are [supposed to use subprocess, and not os.system](http://docs.python.org/library/os.html#os.system)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8552\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jhpalmieri\n\nThis is a followup to #8486, which uses `os.system('which xelatex')` to see if XeLaTeX is available. With #8474 now merged, we should use `have_program` to do that, and also replace other uses of `os.system` with appropriate `subprocess` replacements, since we are [supposed to use subprocess, and not os.system](http://docs.python.org/library/os.html#os.system)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8552\n\n",
     "created_at": "2010-03-17T08:35:51Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_008552.json:
     "title": "replace os.system calls in latex.py with appropriate replacements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8552",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: tbd
 
-CC:  jhpalmieri
+CC:  @jhpalmieri
 
 This is a followup to #8486, which uses `os.system('which xelatex')` to see if XeLaTeX is available. With #8474 now merged, we should use `have_program` to do that, and also replace other uses of `os.system` with appropriate `subprocess` replacements, since we are [supposed to use subprocess, and not os.system](http://docs.python.org/library/os.html#os.system)
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8552
 archive/issue_comments_077342.json:
 ```json
 {
-    "body": "Attachment [trac_8552_whitespace.patch](tarball://root/attachments/some-uuid/ticket8552/trac_8552_whitespace.patch) by ddrake created at 2010-03-23 13:54:54\n\nclean up unnecessary whitespace in latex.py",
+    "body": "Attachment [trac_8552_whitespace.patch](tarball://root/attachments/some-uuid/ticket8552/trac_8552_whitespace.patch) by @dandrake created at 2010-03-23 13:54:54\n\nclean up unnecessary whitespace in latex.py",
     "created_at": "2010-03-23T13:54:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8552#issuecomment-77342",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_8552_whitespace.patch](tarball://root/attachments/some-uuid/ticket8552/trac_8552_whitespace.patch) by ddrake created at 2010-03-23 13:54:54
+Attachment [trac_8552_whitespace.patch](tarball://root/attachments/some-uuid/ticket8552/trac_8552_whitespace.patch) by @dandrake created at 2010-03-23 13:54:54
 
 clean up unnecessary whitespace in latex.py
 
@@ -59,7 +59,7 @@ archive/issue_comments_077343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8552#issuecomment-77343",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_077344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8552#issuecomment-77344",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -90,16 +90,16 @@ Changing status from new to needs_review.
 archive/issue_comments_077345.json:
 ```json
 {
-    "body": "Attachment [trac_8552.patch](tarball://root/attachments/some-uuid/ticket8552/trac_8552.patch) by ddrake created at 2010-03-23 14:12:20\n\nThese patches depend on the \"v2\" patch at #8486.\n         \nPlease look this patch over. I think I've tested all the execution paths and have everything working, but I only tested it on one system, so it needs some review and testing.\n\nA design decision that needs to be addressed: it's easiest to just do `subprocess.call()`, which waits for the command to finish; there are a few places where the `os.system` call ended with `&` to put the command in the background. I can reproduce that behavior with the subprocess module, but it's not as convenient, since I have to spawn the process and poll and so on. I can't detect much of a pattern or necessity to those places that possibly put the command in the background; is it okay if we just eliminate that option?\n\nAnother issue: the viewer commands from `misc.viewer` on Linux all return strings with a space in them: `'sage-native-execute xdg-open'`, which does not play nicely with subprocess; when you put that string into its call list, it tries to execute a single command with a space in it, named \"sage-native-execute xdg-open\" and this does not work well. It's easy enough to snag the \"xdg-open\" part, but if we eventually are using subprocess everywhere, we should switch the viewer commands to returning lists of strings.",
+    "body": "Attachment [trac_8552.patch](tarball://root/attachments/some-uuid/ticket8552/trac_8552.patch) by @dandrake created at 2010-03-23 14:12:20\n\nThese patches depend on the \"v2\" patch at #8486.\n         \nPlease look this patch over. I think I've tested all the execution paths and have everything working, but I only tested it on one system, so it needs some review and testing.\n\nA design decision that needs to be addressed: it's easiest to just do `subprocess.call()`, which waits for the command to finish; there are a few places where the `os.system` call ended with `&` to put the command in the background. I can reproduce that behavior with the subprocess module, but it's not as convenient, since I have to spawn the process and poll and so on. I can't detect much of a pattern or necessity to those places that possibly put the command in the background; is it okay if we just eliminate that option?\n\nAnother issue: the viewer commands from `misc.viewer` on Linux all return strings with a space in them: `'sage-native-execute xdg-open'`, which does not play nicely with subprocess; when you put that string into its call list, it tries to execute a single command with a space in it, named \"sage-native-execute xdg-open\" and this does not work well. It's easy enough to snag the \"xdg-open\" part, but if we eventually are using subprocess everywhere, we should switch the viewer commands to returning lists of strings.",
     "created_at": "2010-03-23T14:12:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8552#issuecomment-77345",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_8552.patch](tarball://root/attachments/some-uuid/ticket8552/trac_8552.patch) by ddrake created at 2010-03-23 14:12:20
+Attachment [trac_8552.patch](tarball://root/attachments/some-uuid/ticket8552/trac_8552.patch) by @dandrake created at 2010-03-23 14:12:20
 
 These patches depend on the "v2" patch at #8486.
          
@@ -121,7 +121,7 @@ archive/issue_comments_077346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8552#issuecomment-77346",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_077347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8552#issuecomment-77347",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_077348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8552#issuecomment-77348",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_077349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8552#issuecomment-77349",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -222,16 +222,16 @@ I'm attaching two new patches here.  One is a referee patch, present for review 
 archive/issue_comments_077350.json:
 ```json
 {
-    "body": "Attachment [trac_8552-ref.patch](tarball://root/attachments/some-uuid/ticket8552/trac_8552-ref.patch) by jhpalmieri created at 2011-03-25 19:37:45\n\nfor review only, do not apply (diff between Dan's two patches and the all-in-one patch)",
+    "body": "Attachment [trac_8552-ref.patch](tarball://root/attachments/some-uuid/ticket8552/trac_8552-ref.patch) by @jhpalmieri created at 2011-03-25 19:37:45\n\nfor review only, do not apply (diff between Dan's two patches and the all-in-one patch)",
     "created_at": "2011-03-25T19:37:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8552#issuecomment-77350",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8552-ref.patch](tarball://root/attachments/some-uuid/ticket8552/trac_8552-ref.patch) by jhpalmieri created at 2011-03-25 19:37:45
+Attachment [trac_8552-ref.patch](tarball://root/attachments/some-uuid/ticket8552/trac_8552-ref.patch) by @jhpalmieri created at 2011-03-25 19:37:45
 
 for review only, do not apply (diff between Dan's two patches and the all-in-one patch)
 
@@ -247,7 +247,7 @@ archive/issue_comments_077351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8552#issuecomment-77351",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -260,16 +260,16 @@ apply only this patch
 archive/issue_comments_077352.json:
 ```json
 {
-    "body": "Attachment [trac_8552-all-in-one.patch](tarball://root/attachments/some-uuid/ticket8552/trac_8552-all-in-one.patch) by ddrake created at 2011-03-26 07:55:07\n\nThanks for finishing this, John. Sorry I left it unfinished. Your changes look good.",
+    "body": "Attachment [trac_8552-all-in-one.patch](tarball://root/attachments/some-uuid/ticket8552/trac_8552-all-in-one.patch) by @dandrake created at 2011-03-26 07:55:07\n\nThanks for finishing this, John. Sorry I left it unfinished. Your changes look good.",
     "created_at": "2011-03-26T07:55:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8552#issuecomment-77352",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_8552-all-in-one.patch](tarball://root/attachments/some-uuid/ticket8552/trac_8552-all-in-one.patch) by ddrake created at 2011-03-26 07:55:07
+Attachment [trac_8552-all-in-one.patch](tarball://root/attachments/some-uuid/ticket8552/trac_8552-all-in-one.patch) by @dandrake created at 2011-03-26 07:55:07
 
 Thanks for finishing this, John. Sorry I left it unfinished. Your changes look good.
 
@@ -285,7 +285,7 @@ archive/issue_comments_077353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8552#issuecomment-77353",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -303,7 +303,7 @@ archive/issue_comments_077354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8552#issuecomment-77354",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

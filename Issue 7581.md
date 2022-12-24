@@ -3,7 +3,7 @@
 archive/issues_007581.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  simonking\n\nMike Hansen wrote on [sage-devel]:\n\nThe following messages are probably relevant for the fast conversion\nbetween singular polynomial rings:\n\nOn Sat, Oct 18, 2008 at 2:55 AM, Michael Brickenstein\n<brickenstein`@`mfo.de> wrote:\n> In Singular the same thing is essentially done from the > interpreter\n> level by the more general command fetch.\n> I had a look, what it does internally and came to the conclusion,\n> that it just calls\n> poly prCopyR(poly p, ring src_r, ring dest_r)\n> in your simple case (same coefficient domains).\n> So first, you should setup a new ring and\n> then map the polynomial via\n> prCopyR\n>\n> Michael\n\nOn Mon, Oct 20, 2008 at 8:43 PM,  <hannes`@`mathematik.uni-kl.de> wrote:\n> if the monomial ordering is really the same,\n> you may also use\n> poly prCopyR_NoSort(poly p, ring src_r, ring dest_r)\n> which avoids the sorting the polynomial after mapping each monomial.\n> There are also corresponding routines for ideals\n> (ideal idrCopyR(ideal id, ring src_r, ring dest_r),\n> ideal idrCopyR_NoSort(ideal id, ring src_r, ring dest_r)\n> )\n>\n\nIssue created by migration from https://trac.sagemath.org/ticket/7581\n\n",
+    "body": "Assignee: @malb\n\nCC:  simonking\n\nMike Hansen wrote on [sage-devel]:\n\nThe following messages are probably relevant for the fast conversion\nbetween singular polynomial rings:\n\nOn Sat, Oct 18, 2008 at 2:55 AM, Michael Brickenstein\n<brickenstein`@`mfo.de> wrote:\n> In Singular the same thing is essentially done from the > interpreter\n> level by the more general command fetch.\n> I had a look, what it does internally and came to the conclusion,\n> that it just calls\n> poly prCopyR(poly p, ring src_r, ring dest_r)\n> in your simple case (same coefficient domains).\n> So first, you should setup a new ring and\n> then map the polynomial via\n> prCopyR\n>\n> Michael\n\nOn Mon, Oct 20, 2008 at 8:43 PM,  <hannes`@`mathematik.uni-kl.de> wrote:\n> if the monomial ordering is really the same,\n> you may also use\n> poly prCopyR_NoSort(poly p, ring src_r, ring dest_r)\n> which avoids the sorting the polynomial after mapping each monomial.\n> There are also corresponding routines for ideals\n> (ideal idrCopyR(ideal id, ring src_r, ring dest_r),\n> ideal idrCopyR_NoSort(ideal id, ring src_r, ring dest_r)\n> )\n>\n\nIssue created by migration from https://trac.sagemath.org/ticket/7581\n\n",
     "created_at": "2009-12-02T11:47:01Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_007581.json:
     "title": "use prCopyR to coerce multivariate polynomials in the simple case",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7581",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 CC:  simonking
 
@@ -62,16 +62,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7581
 archive/issue_comments_064613.json:
 ```json
 {
-    "body": "Attachment [singular_prcopyr.patch](tarball://root/attachments/some-uuid/ticket7581/singular_prcopyr.patch) by malb created at 2009-12-02 11:54:28",
+    "body": "Attachment [singular_prcopyr.patch](tarball://root/attachments/some-uuid/ticket7581/singular_prcopyr.patch) by @malb created at 2009-12-02 11:54:28",
     "created_at": "2009-12-02T11:54:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64613",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [singular_prcopyr.patch](tarball://root/attachments/some-uuid/ticket7581/singular_prcopyr.patch) by malb created at 2009-12-02 11:54:28
+Attachment [singular_prcopyr.patch](tarball://root/attachments/some-uuid/ticket7581/singular_prcopyr.patch) by @malb created at 2009-12-02 11:54:28
 
 
 
@@ -85,7 +85,7 @@ archive/issue_comments_064614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64614",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_064615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64615",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_064616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64616",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_064617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64617",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_064618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64618",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_064619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64619",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_064620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64620",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -319,7 +319,7 @@ archive/issue_comments_064621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64621",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -337,7 +337,7 @@ archive/issue_comments_064622.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64622",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -355,7 +355,7 @@ archive/issue_comments_064623.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64623",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -434,7 +434,7 @@ archive/issue_comments_064624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64624",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -452,7 +452,7 @@ archive/issue_comments_064625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64625",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -475,16 +475,16 @@ Simon
 archive/issue_comments_064626.json:
 ```json
 {
-    "body": "Attachment [singular_prcopyr_no7577.patch](tarball://root/attachments/some-uuid/ticket7581/singular_prcopyr_no7577.patch) by malb created at 2009-12-03 14:40:47\n\nnext attempt",
+    "body": "Attachment [singular_prcopyr_no7577.patch](tarball://root/attachments/some-uuid/ticket7581/singular_prcopyr_no7577.patch) by @malb created at 2009-12-03 14:40:47\n\nnext attempt",
     "created_at": "2009-12-03T14:40:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64626",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [singular_prcopyr_no7577.patch](tarball://root/attachments/some-uuid/ticket7581/singular_prcopyr_no7577.patch) by malb created at 2009-12-03 14:40:47
+Attachment [singular_prcopyr_no7577.patch](tarball://root/attachments/some-uuid/ticket7581/singular_prcopyr_no7577.patch) by @malb created at 2009-12-03 14:40:47
 
 next attempt
 
@@ -500,7 +500,7 @@ archive/issue_comments_064627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64627",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -518,7 +518,7 @@ archive/issue_comments_064628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64628",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -541,7 +541,7 @@ archive/issue_comments_064629.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64629",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -559,7 +559,7 @@ archive/issue_comments_064630.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64630",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -605,7 +605,7 @@ archive/issue_comments_064631.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64631",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -623,7 +623,7 @@ archive/issue_comments_064632.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64632",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -645,7 +645,7 @@ archive/issue_comments_064633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64633",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -710,7 +710,7 @@ archive/issue_comments_064634.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64634",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

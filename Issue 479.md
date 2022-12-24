@@ -3,7 +3,7 @@
 archive/issues_000479.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  cpernet drkirkby\n\nKeywords: LinBox\n\nHello,\n\nThe current LinBox package in Sage 2.8.2 has the following assignments in spkg-install\n\n\n```\nCFLAGS=\"$CFLAGS -fPIC -I\\\"$SAGE_LOCAL/include\\\" -I\\\"$SAGE_LOCAL/include/linbox\\\"-L\\\"$SAGE_LOCAL/lib\\\"\"\nCXXFLAGS=\"$CXXFLAGS -fPIC -I\\\"$SAGE_LOCAL/include\\\" -I\\\"$SAGE_LOCAL/include/linbox\\\"  -L\\\"$SAGE_LOCAL/lib\\\"\"\nCPPFLAGS=\"$CPPFLAGS  -I\\\"$SAGE_LOCAL/include/linbox\\\" -I\\\"$SAGE_LOCAL\\\"/include\"\n```\n\nbut uses the configure with the following options:\n\n```\n./configure --prefix=\"$SAGE_LOCAL\" --with-givaro=\"$SAGE_LOCAL\" --with-gmp=\"$SAGE_LOCAL\" --with-ntl=\"$SAGE_LOCAL\" $OPS --with-blas=\"$LINBOX_BLAS\"\n```\n\nThis is due to a bug in LinBox where for exmaple GMP_CFLAGS is not propagated down into the Makefiles (via Makefile.am). I have fixed this for the GMP and I assume that it is the same fix for NTL and Givaro. The GMP fix already made it into LinBox-20070814.spkg and I did verify on my systems that the right gmp selected during configure is also linked against. Once I have made the fixes for NTL and Givaro I will push those fixes toward LinBox upstream.\n\nCheers,\n\nMichael\n\nI \n\nIssue created by migration from https://trac.sagemath.org/ticket/479\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @ClementPernet drkirkby\n\nKeywords: LinBox\n\nHello,\n\nThe current LinBox package in Sage 2.8.2 has the following assignments in spkg-install\n\n\n```\nCFLAGS=\"$CFLAGS -fPIC -I\\\"$SAGE_LOCAL/include\\\" -I\\\"$SAGE_LOCAL/include/linbox\\\"-L\\\"$SAGE_LOCAL/lib\\\"\"\nCXXFLAGS=\"$CXXFLAGS -fPIC -I\\\"$SAGE_LOCAL/include\\\" -I\\\"$SAGE_LOCAL/include/linbox\\\"  -L\\\"$SAGE_LOCAL/lib\\\"\"\nCPPFLAGS=\"$CPPFLAGS  -I\\\"$SAGE_LOCAL/include/linbox\\\" -I\\\"$SAGE_LOCAL\\\"/include\"\n```\n\nbut uses the configure with the following options:\n\n```\n./configure --prefix=\"$SAGE_LOCAL\" --with-givaro=\"$SAGE_LOCAL\" --with-gmp=\"$SAGE_LOCAL\" --with-ntl=\"$SAGE_LOCAL\" $OPS --with-blas=\"$LINBOX_BLAS\"\n```\n\nThis is due to a bug in LinBox where for exmaple GMP_CFLAGS is not propagated down into the Makefiles (via Makefile.am). I have fixed this for the GMP and I assume that it is the same fix for NTL and Givaro. The GMP fix already made it into LinBox-20070814.spkg and I did verify on my systems that the right gmp selected during configure is also linked against. Once I have made the fixes for NTL and Givaro I will push those fixes toward LinBox upstream.\n\nCheers,\n\nMichael\n\nI \n\nIssue created by migration from https://trac.sagemath.org/ticket/479\n\n",
     "created_at": "2007-08-22T19:36:34Z",
     "labels": [
         "packages: standard",
@@ -19,7 +19,7 @@ archive/issues_000479.json:
 ```
 Assignee: mabshoff
 
-CC:  cpernet drkirkby
+CC:  @ClementPernet drkirkby
 
 Keywords: LinBox
 
@@ -82,7 +82,7 @@ archive/issue_comments_002385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/479#issuecomment-2385",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_002387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/479#issuecomment-2387",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_002389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/479#issuecomment-2389",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_002390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/479#issuecomment-2390",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_002391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/479#issuecomment-2391",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_002392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/479",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/479#issuecomment-2392",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

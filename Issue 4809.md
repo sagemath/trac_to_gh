@@ -14,7 +14,7 @@ archive/issues_004809.json:
     "title": "the installation guide and constructions guide should be CC licensed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4809",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: tba
@@ -53,7 +53,7 @@ archive/issue_comments_036456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4809#issuecomment-36456",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_036457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4809#issuecomment-36457",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -90,16 +90,16 @@ The solution is easy though - use \url{...} instead. It is used in other places 
 archive/issue_comments_036458.json:
 ```json
 {
-    "body": "Attachment [trac_4809_constructions.patch](tarball://root/attachments/some-uuid/ticket4809/trac_4809_constructions.patch) by ddrake created at 2009-04-14 01:28:40",
+    "body": "Attachment [trac_4809_constructions.patch](tarball://root/attachments/some-uuid/ticket4809/trac_4809_constructions.patch) by @dandrake created at 2009-04-14 01:28:40",
     "created_at": "2009-04-14T01:28:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4809#issuecomment-36458",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_4809_constructions.patch](tarball://root/attachments/some-uuid/ticket4809/trac_4809_constructions.patch) by ddrake created at 2009-04-14 01:28:40
+Attachment [trac_4809_constructions.patch](tarball://root/attachments/some-uuid/ticket4809/trac_4809_constructions.patch) by @dandrake created at 2009-04-14 01:28:40
 
 
 
@@ -108,16 +108,16 @@ Attachment [trac_4809_constructions.patch](tarball://root/attachments/some-uuid/
 archive/issue_comments_036459.json:
 ```json
 {
-    "body": "Attachment [trac_4809_installation.patch](tarball://root/attachments/some-uuid/ticket4809/trac_4809_installation.patch) by ddrake created at 2009-04-14 01:31:19",
+    "body": "Attachment [trac_4809_installation.patch](tarball://root/attachments/some-uuid/ticket4809/trac_4809_installation.patch) by @dandrake created at 2009-04-14 01:31:19",
     "created_at": "2009-04-14T01:31:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4809#issuecomment-36459",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_4809_installation.patch](tarball://root/attachments/some-uuid/ticket4809/trac_4809_installation.patch) by ddrake created at 2009-04-14 01:31:19
+Attachment [trac_4809_installation.patch](tarball://root/attachments/some-uuid/ticket4809/trac_4809_installation.patch) by @dandrake created at 2009-04-14 01:31:19
 
 
 
@@ -131,7 +131,7 @@ archive/issue_comments_036460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4809#issuecomment-36460",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_036461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4809#issuecomment-36461",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -162,16 +162,16 @@ trac_4809_constructions.patch and trac_4809_installation.patch are ready to go: 
 archive/issue_comments_036462.json:
 ```json
 {
-    "body": "Attachment [trac_4809_other.patch](tarball://root/attachments/some-uuid/ticket4809/trac_4809_other.patch) by jhpalmieri created at 2009-04-21 17:56:29",
+    "body": "Attachment [trac_4809_other.patch](tarball://root/attachments/some-uuid/ticket4809/trac_4809_other.patch) by @jhpalmieri created at 2009-04-21 17:56:29",
     "created_at": "2009-04-21T17:56:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4809#issuecomment-36462",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_4809_other.patch](tarball://root/attachments/some-uuid/ticket4809/trac_4809_other.patch) by jhpalmieri created at 2009-04-21 17:56:29
+Attachment [trac_4809_other.patch](tarball://root/attachments/some-uuid/ticket4809/trac_4809_other.patch) by @jhpalmieri created at 2009-04-21 17:56:29
 
 
 
@@ -180,16 +180,16 @@ Attachment [trac_4809_other.patch](tarball://root/attachments/some-uuid/ticket48
 archive/issue_comments_036463.json:
 ```json
 {
-    "body": "Changing assignee from tba to ddrake.",
+    "body": "Changing assignee from tba to @dandrake.",
     "created_at": "2009-04-22T04:02:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4809#issuecomment-36463",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Changing assignee from tba to ddrake.
+Changing assignee from tba to @dandrake.
 
 
 
@@ -203,7 +203,7 @@ archive/issue_comments_036464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4809#issuecomment-36464",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_036465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4809#issuecomment-36465",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

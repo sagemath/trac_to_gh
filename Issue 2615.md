@@ -3,7 +3,7 @@
 archive/issues_002615.json:
 ```json
 {
-    "body": "Assignee: was\n\nSage has now an implementation of the Jordan canonical form (see #874)\n\nHowever for most applications (like computing the exponential of a matrix,\nsee #2273) we would need to be able to compute not only the Jordan form, but\nthe Jordan basis as well (or what is equivalent the coordinate-change matrix P\nsuch that P^(-1) A P = J, where A is the matrix, and J is its Jordan normal form)\n\n(As far as I know, Maple can do that)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2615\n\n",
+    "body": "Assignee: @williamstein\n\nSage has now an implementation of the Jordan canonical form (see #874)\n\nHowever for most applications (like computing the exponential of a matrix,\nsee #2273) we would need to be able to compute not only the Jordan form, but\nthe Jordan basis as well (or what is equivalent the coordinate-change matrix P\nsuch that P^(-1) A P = J, where A is the matrix, and J is its Jordan normal form)\n\n(As far as I know, Maple can do that)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2615\n\n",
     "created_at": "2008-03-20T14:51:21Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_002615.json:
     "title": "wish: compute the jordan basis together with the jordan canonical form",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2615",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Sage has now an implementation of the Jordan canonical form (see #874)
 
@@ -44,7 +44,7 @@ archive/issue_comments_017949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2615#issuecomment-17949",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -57,16 +57,16 @@ Changing status from new to assigned.
 archive/issue_comments_017950.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-04-15T04:10:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2615#issuecomment-17950",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -75,16 +75,16 @@ Changing assignee from was to mhansen.
 archive/issue_comments_017951.json:
 ```json
 {
-    "body": "Attachment [2615.patch](tarball://root/attachments/some-uuid/ticket2615/2615.patch) by mhansen created at 2008-04-15 22:21:54",
+    "body": "Attachment [2615.patch](tarball://root/attachments/some-uuid/ticket2615/2615.patch) by @mwhansen created at 2008-04-15 22:21:54",
     "created_at": "2008-04-15T22:21:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2615#issuecomment-17951",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2615.patch](tarball://root/attachments/some-uuid/ticket2615/2615.patch) by mhansen created at 2008-04-15 22:21:54
+Attachment [2615.patch](tarball://root/attachments/some-uuid/ticket2615/2615.patch) by @mwhansen created at 2008-04-15 22:21:54
 
 
 
@@ -98,7 +98,7 @@ archive/issue_comments_017952.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2615#issuecomment-17952",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

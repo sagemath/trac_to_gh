@@ -3,7 +3,7 @@
 archive/issues_000863.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/863\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/863\n\n",
     "created_at": "2007-10-12T19:04:35Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_000863.json:
     "title": "trac -- make it not crash, or when it does, make it autorestart!!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/863",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_005329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/863#issuecomment-5329",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_005330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/863#issuecomment-5330",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

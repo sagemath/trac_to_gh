@@ -3,7 +3,7 @@
 archive/issues_009395.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  was cremona ylchapuy\n\nThe attached patch includes a new doctest for a book (in french) some\npeople are writing about Sage (see the README file for the list of\nauthors).\n\nThis book will be available under a CC-by-sa license.\n\nThis patch contains only the doctests for one chapter (about number\ntheory). Some more doctests will follow, one per chapter, but we\nalready submit that one to see if some things need to be fixed.\n\nThis doctest was tested successfully with Sage 4.4.2 under Fedora 12.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9395\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @williamstein @JohnCremona ylchapuy\n\nThe attached patch includes a new doctest for a book (in french) some\npeople are writing about Sage (see the README file for the list of\nauthors).\n\nThis book will be available under a CC-by-sa license.\n\nThis patch contains only the doctests for one chapter (about number\ntheory). Some more doctests will follow, one per chapter, but we\nalready submit that one to see if some things need to be fixed.\n\nThis doctest was tested successfully with Sage 4.4.2 under Fedora 12.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9395\n\n",
     "created_at": "2010-06-30T13:14:12Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_009395.json:
     "title": "new doctest for french book about Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9395",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: mvngu
 
-CC:  was cremona ylchapuy
+CC:  @williamstein @JohnCremona ylchapuy
 
 The attached patch includes a new doctest for a book (in french) some
 people are writing about Sage (see the README file for the list of
@@ -49,7 +49,7 @@ archive/issue_comments_089440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9395#issuecomment-89440",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_089441.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9395#issuecomment-89441",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_089444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9395#issuecomment-89444",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_089445.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9395#issuecomment-89445",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -158,16 +158,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_089446.json:
 ```json
 {
-    "body": "Attachment [intro.pdf](tarball://root/attachments/some-uuid/ticket9395/intro.pdf) by zimmerma created at 2010-07-01 08:48:54\n\ntable of contents of the book",
+    "body": "Attachment [intro.pdf](tarball://root/attachments/some-uuid/ticket9395/intro.pdf) by @zimmermann6 created at 2010-07-01 08:48:54\n\ntable of contents of the book",
     "created_at": "2010-07-01T08:48:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9395#issuecomment-89446",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [intro.pdf](tarball://root/attachments/some-uuid/ticket9395/intro.pdf) by zimmerma created at 2010-07-01 08:48:54
+Attachment [intro.pdf](tarball://root/attachments/some-uuid/ticket9395/intro.pdf) by @zimmermann6 created at 2010-07-01 08:48:54
 
 table of contents of the book
 
@@ -183,7 +183,7 @@ archive/issue_comments_089447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9395#issuecomment-89447",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -196,16 +196,16 @@ current version of chapter on number theory
 archive/issue_comments_089448.json:
 ```json
 {
-    "body": "Attachment [numbertheory.pdf](tarball://root/attachments/some-uuid/ticket9395/numbertheory.pdf) by zimmerma created at 2010-07-09 11:00:47\n\nThe version 1.0 of the book has now appeared, and is available from\nhttp://www.loria.fr/~zimmerma/sagebook.html. Any feedback is most welcome!",
+    "body": "Attachment [numbertheory.pdf](tarball://root/attachments/some-uuid/ticket9395/numbertheory.pdf) by @zimmermann6 created at 2010-07-09 11:00:47\n\nThe version 1.0 of the book has now appeared, and is available from\nhttp://www.loria.fr/~zimmerma/sagebook.html. Any feedback is most welcome!",
     "created_at": "2010-07-09T11:00:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9395#issuecomment-89448",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [numbertheory.pdf](tarball://root/attachments/some-uuid/ticket9395/numbertheory.pdf) by zimmerma created at 2010-07-09 11:00:47
+Attachment [numbertheory.pdf](tarball://root/attachments/some-uuid/ticket9395/numbertheory.pdf) by @zimmermann6 created at 2010-07-09 11:00:47
 
 The version 1.0 of the book has now appeared, and is available from
 http://www.loria.fr/~zimmerma/sagebook.html. Any feedback is most welcome!
@@ -222,7 +222,7 @@ archive/issue_comments_089449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9395#issuecomment-89449",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_089450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9395#issuecomment-89450",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_089451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9395#issuecomment-89451",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -355,7 +355,7 @@ archive/issue_comments_089454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9395#issuecomment-89454",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -373,7 +373,7 @@ archive/issue_comments_089455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9395#issuecomment-89455",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -390,16 +390,16 @@ Paul
 archive/issue_comments_089456.json:
 ```json
 {
-    "body": "Attachment [trac_9395.patch](tarball://root/attachments/some-uuid/ticket9395/trac_9395.patch) by zimmerma created at 2010-09-01 16:09:55",
+    "body": "Attachment [trac_9395.patch](tarball://root/attachments/some-uuid/ticket9395/trac_9395.patch) by @zimmermann6 created at 2010-09-01 16:09:55",
     "created_at": "2010-09-01T16:09:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9395#issuecomment-89456",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [trac_9395.patch](tarball://root/attachments/some-uuid/ticket9395/trac_9395.patch) by zimmerma created at 2010-09-01 16:09:55
+Attachment [trac_9395.patch](tarball://root/attachments/some-uuid/ticket9395/trac_9395.patch) by @zimmermann6 created at 2010-09-01 16:09:55
 
 
 
@@ -455,7 +455,7 @@ archive/issue_comments_089459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9395#issuecomment-89459",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -473,7 +473,7 @@ archive/issue_comments_089460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9395#issuecomment-89460",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -494,7 +494,7 @@ archive/issue_comments_089461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9395#issuecomment-89461",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -512,7 +512,7 @@ archive/issue_comments_089462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9395#issuecomment-89462",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -530,7 +530,7 @@ archive/issue_comments_089463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9395#issuecomment-89463",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -553,7 +553,7 @@ archive/issue_comments_089464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9395#issuecomment-89464",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -579,7 +579,7 @@ archive/issue_comments_089465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9395#issuecomment-89465",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -592,16 +592,16 @@ apply only this patch
 archive/issue_comments_089466.json:
 ```json
 {
-    "body": "Attachment [trac_9395_combined.patch](tarball://root/attachments/some-uuid/ticket9395/trac_9395_combined.patch) by zimmerma created at 2010-09-07 08:14:04\n\n> Could you update the just first line of the combined patch? \n\ndone.\nPaul",
+    "body": "Attachment [trac_9395_combined.patch](tarball://root/attachments/some-uuid/ticket9395/trac_9395_combined.patch) by @zimmermann6 created at 2010-09-07 08:14:04\n\n> Could you update the just first line of the combined patch? \n\ndone.\nPaul",
     "created_at": "2010-09-07T08:14:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9395#issuecomment-89466",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [trac_9395_combined.patch](tarball://root/attachments/some-uuid/ticket9395/trac_9395_combined.patch) by zimmerma created at 2010-09-07 08:14:04
+Attachment [trac_9395_combined.patch](tarball://root/attachments/some-uuid/ticket9395/trac_9395_combined.patch) by @zimmermann6 created at 2010-09-07 08:14:04
 
 > Could you update the just first line of the combined patch? 
 
@@ -620,7 +620,7 @@ archive/issue_comments_089467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9395#issuecomment-89467",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -638,7 +638,7 @@ archive/issue_comments_089468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9395#issuecomment-89468",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -651,16 +651,16 @@ Resolution: fixed
 archive/issue_comments_089469.json:
 ```json
 {
-    "body": "Attachment [trac_9395-manifest_and_setup.patch](tarball://root/attachments/some-uuid/ticket9395/trac_9395-manifest_and_setup.patch) by mpatel created at 2010-09-17 02:58:09\n\nUpdate `MANIFEST.in` and `setup.py` with new file and directory",
+    "body": "Attachment [trac_9395-manifest_and_setup.patch](tarball://root/attachments/some-uuid/ticket9395/trac_9395-manifest_and_setup.patch) by @qed777 created at 2010-09-17 02:58:09\n\nUpdate `MANIFEST.in` and `setup.py` with new file and directory",
     "created_at": "2010-09-17T02:58:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9395#issuecomment-89469",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_9395-manifest_and_setup.patch](tarball://root/attachments/some-uuid/ticket9395/trac_9395-manifest_and_setup.patch) by mpatel created at 2010-09-17 02:58:09
+Attachment [trac_9395-manifest_and_setup.patch](tarball://root/attachments/some-uuid/ticket9395/trac_9395-manifest_and_setup.patch) by @qed777 created at 2010-09-17 02:58:09
 
 Update `MANIFEST.in` and `setup.py` with new file and directory
 
@@ -676,7 +676,7 @@ archive/issue_comments_089470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9395#issuecomment-89470",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -694,7 +694,7 @@ archive/issue_comments_089471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9395#issuecomment-89471",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

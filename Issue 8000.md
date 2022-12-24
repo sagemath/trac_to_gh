@@ -3,7 +3,7 @@
 archive/issues_008000.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  timdumol mvngu\n\nAdding the pragma now to all Python files in SageNB should prevent the increasingly common docbuild errors \n\n```\nreading sources... [ 99%] sagenb/notebook/worksheet\nSphinx error:\n'utf8' codec can't decode bytes in position 420-422: invalid data\n```\n\nraised when we build the reference manual.\n\nThis is partly a followup to #7249, I think.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8000\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @TimDumol mvngu\n\nAdding the pragma now to all Python files in SageNB should prevent the increasingly common docbuild errors \n\n```\nreading sources... [ 99%] sagenb/notebook/worksheet\nSphinx error:\n'utf8' codec can't decode bytes in position 420-422: invalid data\n```\n\nraised when we build the reference manual.\n\nThis is partly a followup to #7249, I think.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8000\n\n",
     "created_at": "2010-01-19T16:26:52Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_008000.json:
     "title": "Add # -*- coding: utf-8 -*- to the top of all SageNB .py files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8000",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  timdumol mvngu
+CC:  @TimDumol mvngu
 
 Adding the pragma now to all Python files in SageNB should prevent the increasingly common docbuild errors 
 
@@ -49,7 +49,7 @@ archive/issue_comments_069903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8000",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8000#issuecomment-69903",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_069904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8000",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8000#issuecomment-69904",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_069906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8000",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8000#issuecomment-69906",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_069907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8000",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8000#issuecomment-69907",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_069908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8000",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8000#issuecomment-69908",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_069909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8000",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8000#issuecomment-69909",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -176,16 +176,16 @@ This adds the coding directive
 archive/issue_comments_069910.json:
 ```json
 {
-    "body": "Attachment [trac_8000-utf-8-coding-directive.patch](tarball://root/attachments/some-uuid/ticket8000/trac_8000-utf-8-coding-directive.patch) by timdumol created at 2010-01-19 21:05:33\n\nThis patch should do the trick.",
+    "body": "Attachment [trac_8000-utf-8-coding-directive.patch](tarball://root/attachments/some-uuid/ticket8000/trac_8000-utf-8-coding-directive.patch) by @TimDumol created at 2010-01-19 21:05:33\n\nThis patch should do the trick.",
     "created_at": "2010-01-19T21:05:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8000",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8000#issuecomment-69910",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_8000-utf-8-coding-directive.patch](tarball://root/attachments/some-uuid/ticket8000/trac_8000-utf-8-coding-directive.patch) by timdumol created at 2010-01-19 21:05:33
+Attachment [trac_8000-utf-8-coding-directive.patch](tarball://root/attachments/some-uuid/ticket8000/trac_8000-utf-8-coding-directive.patch) by @TimDumol created at 2010-01-19 21:05:33
 
 This patch should do the trick.
 
@@ -201,7 +201,7 @@ archive/issue_comments_069911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8000",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8000#issuecomment-69911",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_069912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8000",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8000#issuecomment-69912",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_069913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8000",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8000#issuecomment-69913",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_069914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8000",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8000#issuecomment-69914",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -270,16 +270,16 @@ Fix failed doctest.  Replaces previous.  sagenb repo.
 archive/issue_comments_069915.json:
 ```json
 {
-    "body": "Attachment [trac_8000-utf-8-coding-directive.3.patch](tarball://root/attachments/some-uuid/ticket8000/trac_8000-utf-8-coding-directive.3.patch) by mpatel created at 2010-01-25 00:44:54\n\nRebased for SageNB 0.6 + queue in comment.  Replaces previous.",
+    "body": "Attachment [trac_8000-utf-8-coding-directive.3.patch](tarball://root/attachments/some-uuid/ticket8000/trac_8000-utf-8-coding-directive.3.patch) by @qed777 created at 2010-01-25 00:44:54\n\nRebased for SageNB 0.6 + queue in comment.  Replaces previous.",
     "created_at": "2010-01-25T00:44:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8000",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8000#issuecomment-69915",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8000-utf-8-coding-directive.3.patch](tarball://root/attachments/some-uuid/ticket8000/trac_8000-utf-8-coding-directive.3.patch) by mpatel created at 2010-01-25 00:44:54
+Attachment [trac_8000-utf-8-coding-directive.3.patch](tarball://root/attachments/some-uuid/ticket8000/trac_8000-utf-8-coding-directive.3.patch) by @qed777 created at 2010-01-25 00:44:54
 
 Rebased for SageNB 0.6 + queue in comment.  Replaces previous.
 
@@ -295,7 +295,7 @@ archive/issue_comments_069916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8000",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8000#issuecomment-69916",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_069917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8000",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8000#issuecomment-69917",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

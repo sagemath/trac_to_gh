@@ -3,7 +3,7 @@
 archive/issues_005804.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  pjeremy\n\n\n```\nsage -t  \"devel/sage/sage/combinat/partition.py\"            \n**********************************************************************\nFile \"/home/mabshoff/build-3.4.1.rc1/sage-3.4.1.rc1-mark-gcc-4.3.3/devel/sage/sage/combinat/partition.py\", line 3440:\n    sage: number_of_partitions(100000)\nExpected:\n    27493510569775696512677516320986352688173429315980054758203125984\n30214732811496417305505074166073662159015784477429624894049306307\n02004617927644930335101160793424571901557189435097253124661084520\n06369558934464248716828789832182345009262853831404597021307130674\n51062441922731123899970228440860937093553162969785156956989219610\n8480158600569421098519\nGot:\n    27493510569775696512677516320986352688173429315980054758203125984\n30214732811496417305505074166073662159015784477429624894049306307\n02004617927644930335101160793424571901557189435097253124661084520\n06369558934464248716828789832182345009262853831404597021307130674\n51062441922731123899970228440860937093553162969785156956989219610\n8480158600569425643053\n**********************************************************************\nFile \"/home/mabshoff/build-3.4.1.rc1/sage-3.4.1.rc1-mark-gcc-4.3.3/devel/sage/sage/combinat/partition.py\", line 3469:\n    sage: number_of_partitions( n - (n % 385) + 369) % 385 == 0\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/mabshoff/build-3.4.1.rc1/sage-3.4.1.rc1-mark-gcc-4.3.3/devel/sage/sage/combinat/partition.py\", line 3475:\n    sage: number_of_partitions( n - (n % 385) + 369) % 385 == 0\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/mabshoff/build-3.4.1.rc1/sage-3.4.1.rc1-mark-gcc-4.3.3/devel/sage/sage/combinat/partition.py\", line 3478:\n    sage: number_of_partitions( n - (n % 385) + 369) % 385 == 0\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/mabshoff/build-3.4.1.rc1/sage-3.4.1.rc1-mark-gcc-4.3.3/devel/sage/sage/combinat/partition.py\", line 3481:\n    sage: number_of_partitions( n - (n % 385) + 369) % 385 == 0\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/mabshoff/build-3.4.1.rc1/sage-3.4.1.rc1-mark-gcc-4.3.3/devel/sage/sage/combinat/partition.py\", line 3484:\n    sage: number_of_partitions( n - (n % 385) + 369) % 385 == 0\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/mabshoff/build-3.4.1.rc1/sage-3.4.1.rc1-mark-gcc-4.3.3/devel/sage/sage/combinat/partition.py\", line 3487:\n    sage: number_of_partitions( n - (n % 385) + 369) % 385 == 0\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/mabshoff/build-3.4.1.rc1/sage-3.4.1.rc1-mark-gcc-4.3.3/devel/sage/sage/combinat/partition.py\", line 3490:\n    sage: number_of_partitions( n - (n % 385) + 369) % 385 == 0\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/mabshoff/build-3.4.1.rc1/sage-3.4.1.rc1-mark-gcc-4.3.3/devel/sage/sage/combinat/partition.py\", line 3493:\n    sage: number_of_partitions( n - (n % 385) + 369) % 385 == 0\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/mabshoff/build-3.4.1.rc1/sage-3.4.1.rc1-mark-gcc-4.3.3/devel/sage/sage/combinat/partition.py\", line 3501:\n    sage: len([n for n in [1..500] if number_of_partitions(n) != number_of_partitions(n,algorithm='pari')])\nExpected:\n    0\nGot:\n    203\n**********************************************************************\n1 items had failures:\n  10 of  40 in __main__.example_119\n***Test Failed*** 10 failures.\nFor whitespace errors, see the file /home/mabshoff/build-3.4.1.rc1/sage-3.4.1.rc1-mark-gcc-4.3.3/tmp/.doctest_partition.py\n         [68.3 s]\nexit code: 1024\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5804\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @peterjeremy\n\n\n```\nsage -t  \"devel/sage/sage/combinat/partition.py\"            \n**********************************************************************\nFile \"/home/mabshoff/build-3.4.1.rc1/sage-3.4.1.rc1-mark-gcc-4.3.3/devel/sage/sage/combinat/partition.py\", line 3440:\n    sage: number_of_partitions(100000)\nExpected:\n    27493510569775696512677516320986352688173429315980054758203125984\n30214732811496417305505074166073662159015784477429624894049306307\n02004617927644930335101160793424571901557189435097253124661084520\n06369558934464248716828789832182345009262853831404597021307130674\n51062441922731123899970228440860937093553162969785156956989219610\n8480158600569421098519\nGot:\n    27493510569775696512677516320986352688173429315980054758203125984\n30214732811496417305505074166073662159015784477429624894049306307\n02004617927644930335101160793424571901557189435097253124661084520\n06369558934464248716828789832182345009262853831404597021307130674\n51062441922731123899970228440860937093553162969785156956989219610\n8480158600569425643053\n**********************************************************************\nFile \"/home/mabshoff/build-3.4.1.rc1/sage-3.4.1.rc1-mark-gcc-4.3.3/devel/sage/sage/combinat/partition.py\", line 3469:\n    sage: number_of_partitions( n - (n % 385) + 369) % 385 == 0\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/mabshoff/build-3.4.1.rc1/sage-3.4.1.rc1-mark-gcc-4.3.3/devel/sage/sage/combinat/partition.py\", line 3475:\n    sage: number_of_partitions( n - (n % 385) + 369) % 385 == 0\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/mabshoff/build-3.4.1.rc1/sage-3.4.1.rc1-mark-gcc-4.3.3/devel/sage/sage/combinat/partition.py\", line 3478:\n    sage: number_of_partitions( n - (n % 385) + 369) % 385 == 0\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/mabshoff/build-3.4.1.rc1/sage-3.4.1.rc1-mark-gcc-4.3.3/devel/sage/sage/combinat/partition.py\", line 3481:\n    sage: number_of_partitions( n - (n % 385) + 369) % 385 == 0\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/mabshoff/build-3.4.1.rc1/sage-3.4.1.rc1-mark-gcc-4.3.3/devel/sage/sage/combinat/partition.py\", line 3484:\n    sage: number_of_partitions( n - (n % 385) + 369) % 385 == 0\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/mabshoff/build-3.4.1.rc1/sage-3.4.1.rc1-mark-gcc-4.3.3/devel/sage/sage/combinat/partition.py\", line 3487:\n    sage: number_of_partitions( n - (n % 385) + 369) % 385 == 0\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/mabshoff/build-3.4.1.rc1/sage-3.4.1.rc1-mark-gcc-4.3.3/devel/sage/sage/combinat/partition.py\", line 3490:\n    sage: number_of_partitions( n - (n % 385) + 369) % 385 == 0\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/mabshoff/build-3.4.1.rc1/sage-3.4.1.rc1-mark-gcc-4.3.3/devel/sage/sage/combinat/partition.py\", line 3493:\n    sage: number_of_partitions( n - (n % 385) + 369) % 385 == 0\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/mabshoff/build-3.4.1.rc1/sage-3.4.1.rc1-mark-gcc-4.3.3/devel/sage/sage/combinat/partition.py\", line 3501:\n    sage: len([n for n in [1..500] if number_of_partitions(n) != number_of_partitions(n,algorithm='pari')])\nExpected:\n    0\nGot:\n    203\n**********************************************************************\n1 items had failures:\n  10 of  40 in __main__.example_119\n***Test Failed*** 10 failures.\nFor whitespace errors, see the file /home/mabshoff/build-3.4.1.rc1/sage-3.4.1.rc1-mark-gcc-4.3.3/tmp/.doctest_partition.py\n         [68.3 s]\nexit code: 1024\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5804\n\n",
     "created_at": "2009-04-16T09:49:26Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_005804.json:
 ```
 Assignee: mabshoff
 
-CC:  pjeremy
+CC:  @peterjeremy
 
 
 ```
@@ -198,16 +198,16 @@ Michael
 archive/issue_comments_045555.json:
 ```json
 {
-    "body": "Attachment [trac_5804.patch](tarball://root/attachments/some-uuid/ticket5804/trac_5804.patch) by was created at 2009-04-29 01:19:46",
+    "body": "Attachment [trac_5804.patch](tarball://root/attachments/some-uuid/ticket5804/trac_5804.patch) by @williamstein created at 2009-04-29 01:19:46",
     "created_at": "2009-04-29T01:19:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5804#issuecomment-45555",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5804.patch](tarball://root/attachments/some-uuid/ticket5804/trac_5804.patch) by was created at 2009-04-29 01:19:46
+Attachment [trac_5804.patch](tarball://root/attachments/some-uuid/ticket5804/trac_5804.patch) by @williamstein created at 2009-04-29 01:19:46
 
 
 
@@ -221,7 +221,7 @@ archive/issue_comments_045556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5804#issuecomment-45556",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_045557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5804#issuecomment-45557",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_045558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5804#issuecomment-45558",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

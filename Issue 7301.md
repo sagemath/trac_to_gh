@@ -3,7 +3,7 @@
 archive/issues_007301.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nThe Gale-Ryser theorem is about filling a matrix with 0 and 1 when you know the number of 0 and 1 in each column and in each row. \n\nIt would not be too much work to write in Sage a function filling a matrix with 0 and 1 when the data is correct, and returning an error otherwise...\n\nMore informations there : http://mathworld.wolfram.com/Gale-RyserTheorem.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/7301\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThe Gale-Ryser theorem is about filling a matrix with 0 and 1 when you know the number of 0 and 1 in each column and in each row. \n\nIt would not be too much work to write in Sage a function filling a matrix with 0 and 1 when the data is correct, and returning an error otherwise...\n\nMore informations there : http://mathworld.wolfram.com/Gale-RyserTheorem.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/7301\n\n",
     "created_at": "2009-10-25T19:44:48Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_007301.json:
     "title": "Gale Ryser theorem",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7301",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -43,7 +43,7 @@ archive/issue_comments_060847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60847",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_060848.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60848",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_060849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60849",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_060850.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60850",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_060851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60851",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_060852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60852",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_060853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60853",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_060854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60854",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_060855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60855",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_060856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60856",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_060857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60857",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_060858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60858",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_060859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60859",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -402,7 +402,7 @@ archive/issue_comments_060860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60860",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -433,7 +433,7 @@ archive/issue_comments_060861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60861",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -457,7 +457,7 @@ archive/issue_comments_060862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60862",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -477,7 +477,7 @@ archive/issue_comments_060863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60863",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -500,7 +500,7 @@ archive/issue_comments_060864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60864",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -527,7 +527,7 @@ archive/issue_comments_060865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60865",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -572,7 +572,7 @@ archive/issue_comments_060866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60866",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -590,7 +590,7 @@ archive/issue_comments_060867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60867",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -608,7 +608,7 @@ archive/issue_comments_060868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60868",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -630,7 +630,7 @@ archive/issue_comments_060869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60869",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -654,7 +654,7 @@ archive/issue_comments_060870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60870",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -683,7 +683,7 @@ archive/issue_comments_060871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60871",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -724,7 +724,7 @@ archive/issue_comments_060872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60872",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -748,7 +748,7 @@ archive/issue_comments_060873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60873",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -761,16 +761,16 @@ apply this patch only to 4.3.
 archive/issue_comments_060874.json:
 ```json
 {
-    "body": "Attachment [trac_7301.2.patch](tarball://root/attachments/some-uuid/ticket7301/trac_7301.2.patch) by wdj created at 2009-12-28 18:57:30\n\nThis passes sage -testall on an ubuntu machine. \n\nNathann: Can you please look at this? Please check your LP code, which I modified slightly. Feel free to add a referee's patch (eg, adding an AUTHORS field, which I just noticed I forgot).\n\nIt turned out that partition was the wrong place to put it. My colleague who refereed it did not like that the integer vectors were not allowed to have trailing 0's and so that ruled out allowing gale_ryser_theorem to be a method for the Partition class.",
+    "body": "Attachment [trac_7301.2.patch](tarball://root/attachments/some-uuid/ticket7301/trac_7301.2.patch) by @wdjoyner created at 2009-12-28 18:57:30\n\nThis passes sage -testall on an ubuntu machine. \n\nNathann: Can you please look at this? Please check your LP code, which I modified slightly. Feel free to add a referee's patch (eg, adding an AUTHORS field, which I just noticed I forgot).\n\nIt turned out that partition was the wrong place to put it. My colleague who refereed it did not like that the integer vectors were not allowed to have trailing 0's and so that ruled out allowing gale_ryser_theorem to be a method for the Partition class.",
     "created_at": "2009-12-28T18:57:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60874",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_7301.2.patch](tarball://root/attachments/some-uuid/ticket7301/trac_7301.2.patch) by wdj created at 2009-12-28 18:57:30
+Attachment [trac_7301.2.patch](tarball://root/attachments/some-uuid/ticket7301/trac_7301.2.patch) by @wdjoyner created at 2009-12-28 18:57:30
 
 This passes sage -testall on an ubuntu machine. 
 
@@ -790,7 +790,7 @@ archive/issue_comments_060875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60875",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -808,7 +808,7 @@ archive/issue_comments_060876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60876",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -899,16 +899,16 @@ Done. Thanks.
 archive/issue_comments_060877.json:
 ```json
 {
-    "body": "Attachment [trac_7301-referee.patch](tarball://root/attachments/some-uuid/ticket7301/trac_7301-referee.patch) by wdj created at 2010-01-06 20:18:15\n\nseems to apply to 4.3* and test okay. Apply only this patch.",
+    "body": "Attachment [trac_7301-referee.patch](tarball://root/attachments/some-uuid/ticket7301/trac_7301-referee.patch) by @wdjoyner created at 2010-01-06 20:18:15\n\nseems to apply to 4.3* and test okay. Apply only this patch.",
     "created_at": "2010-01-06T20:18:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60877",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_7301-referee.patch](tarball://root/attachments/some-uuid/ticket7301/trac_7301-referee.patch) by wdj created at 2010-01-06 20:18:15
+Attachment [trac_7301-referee.patch](tarball://root/attachments/some-uuid/ticket7301/trac_7301-referee.patch) by @wdjoyner created at 2010-01-06 20:18:15
 
 seems to apply to 4.3* and test okay. Apply only this patch.
 
@@ -924,7 +924,7 @@ archive/issue_comments_060878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60878",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -945,7 +945,7 @@ archive/issue_comments_060879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60879",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -979,7 +979,7 @@ archive/issue_comments_060880.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60880",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -997,7 +997,7 @@ archive/issue_comments_060881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60881",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -1040,7 +1040,7 @@ archive/issue_comments_060882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60882",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -1053,16 +1053,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_060883.json:
 ```json
 {
-    "body": "Attachment [trac_7301.patch](tarball://root/attachments/some-uuid/ticket7301/trac_7301.patch) by ncohen created at 2010-01-11 11:28:16",
+    "body": "Attachment [trac_7301.patch](tarball://root/attachments/some-uuid/ticket7301/trac_7301.patch) by @nathanncohen created at 2010-01-11 11:28:16",
     "created_at": "2010-01-11T11:28:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60883",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_7301.patch](tarball://root/attachments/some-uuid/ticket7301/trac_7301.patch) by ncohen created at 2010-01-11 11:28:16
+Attachment [trac_7301.patch](tarball://root/attachments/some-uuid/ticket7301/trac_7301.patch) by @nathanncohen created at 2010-01-11 11:28:16
 
 
 
@@ -1076,7 +1076,7 @@ archive/issue_comments_060884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60884",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -1094,7 +1094,7 @@ archive/issue_comments_060885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60885",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -1114,7 +1114,7 @@ archive/issue_comments_060886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60886",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -1132,7 +1132,7 @@ archive/issue_comments_060887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60887",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -1154,7 +1154,7 @@ archive/issue_comments_060888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60888",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -1172,7 +1172,7 @@ archive/issue_comments_060889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60889",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -1190,7 +1190,7 @@ archive/issue_comments_060890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60890",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

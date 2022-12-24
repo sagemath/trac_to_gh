@@ -14,7 +14,7 @@ archive/issues_003233.json:
     "title": "[with patch; needs review] cygwin -- make linbox work with cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3233",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

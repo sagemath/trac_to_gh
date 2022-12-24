@@ -3,7 +3,7 @@
 archive/issues_004558.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nThe spkg is here:\n\nhttp://sage.math.washington.edu/home/ondrej/spkg/sympy-0.6.3.spkg\n\nand also apply the attached patch, that fixes one failing test in test_sympy.py.\n\nThe Sage tests are still running, I'll report if all pass.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4558\n\n",
+    "body": "Assignee: @burcin\n\nThe spkg is here:\n\nhttp://sage.math.washington.edu/home/ondrej/spkg/sympy-0.6.3.spkg\n\nand also apply the attached patch, that fixes one failing test in test_sympy.py.\n\nThe Sage tests are still running, I'll report if all pass.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4558\n\n",
     "created_at": "2008-11-20T00:21:33Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_004558.json:
     "title": "please update to sympy-0.6.3.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4558",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 The spkg is here:
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4558
 archive/issue_comments_034153.json:
 ```json
 {
-    "body": "Attachment [sympy-0.6.3.patch](tarball://root/attachments/some-uuid/ticket4558/sympy-0.6.3.patch) by certik created at 2008-11-20 01:06:31\n\nOk, all tests pass:\n\nhttp://sage.math.washington.edu/home/ondrej/sympy-0.6.3-sage-tests.log",
+    "body": "Attachment [sympy-0.6.3.patch](tarball://root/attachments/some-uuid/ticket4558/sympy-0.6.3.patch) by @certik created at 2008-11-20 01:06:31\n\nOk, all tests pass:\n\nhttp://sage.math.washington.edu/home/ondrej/sympy-0.6.3-sage-tests.log",
     "created_at": "2008-11-20T01:06:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4558#issuecomment-34153",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
-Attachment [sympy-0.6.3.patch](tarball://root/attachments/some-uuid/ticket4558/sympy-0.6.3.patch) by certik created at 2008-11-20 01:06:31
+Attachment [sympy-0.6.3.patch](tarball://root/attachments/some-uuid/ticket4558/sympy-0.6.3.patch) by @certik created at 2008-11-20 01:06:31
 
 Ok, all tests pass:
 

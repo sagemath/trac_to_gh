@@ -3,7 +3,7 @@
 archive/issues_001461.json:
 ```json
 {
-    "body": "Assignee: was\n\nImplement general expression substitution, as per Ondjej C.'s request.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1461\n\n",
+    "body": "Assignee: @williamstein\n\nImplement general expression substitution, as per Ondjej C.'s request.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1461\n\n",
     "created_at": "2007-12-11T20:11:19Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_001461.json:
     "title": "[with patch] implement general subs_expr for calculus expressions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1461",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Implement general expression substitution, as per Ondjej C.'s request.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1461
 archive/issue_comments_009411.json:
 ```json
 {
-    "body": "Attachment [trac-1461.patch](tarball://root/attachments/some-uuid/ticket1461/trac-1461.patch) by was created at 2007-12-11 20:11:54",
+    "body": "Attachment [trac-1461.patch](tarball://root/attachments/some-uuid/ticket1461/trac-1461.patch) by @williamstein created at 2007-12-11 20:11:54",
     "created_at": "2007-12-11T20:11:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1461",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1461#issuecomment-9411",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1461.patch](tarball://root/attachments/some-uuid/ticket1461/trac-1461.patch) by was created at 2007-12-11 20:11:54
+Attachment [trac-1461.patch](tarball://root/attachments/some-uuid/ticket1461/trac-1461.patch) by @williamstein created at 2007-12-11 20:11:54
 
 
 
@@ -50,16 +50,16 @@ Attachment [trac-1461.patch](tarball://root/attachments/some-uuid/ticket1461/tra
 archive/issue_comments_009412.json:
 ```json
 {
-    "body": "Attachment [trac-1461-part2.patch](tarball://root/attachments/some-uuid/ticket1461/trac-1461-part2.patch) by was created at 2007-12-11 20:59:48\n\nI updated the patch with fixes to some docstrings.",
+    "body": "Attachment [trac-1461-part2.patch](tarball://root/attachments/some-uuid/ticket1461/trac-1461-part2.patch) by @williamstein created at 2007-12-11 20:59:48\n\nI updated the patch with fixes to some docstrings.",
     "created_at": "2007-12-11T20:59:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1461",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1461#issuecomment-9412",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1461-part2.patch](tarball://root/attachments/some-uuid/ticket1461/trac-1461-part2.patch) by was created at 2007-12-11 20:59:48
+Attachment [trac-1461-part2.patch](tarball://root/attachments/some-uuid/ticket1461/trac-1461-part2.patch) by @williamstein created at 2007-12-11 20:59:48
 
 I updated the patch with fixes to some docstrings.
 

@@ -3,7 +3,7 @@
 archive/issues_000430.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nKeywords: RDF factor\n\npolynomial_element.Polynomial.factor doesn't\nknow what to do with the RDF ring.\n\nhttp://www.gnu.org/software/gsl/manual/html_node/Polynomials.html\n\nsage: import numpy\n\nsage:  numpy.roots?\n\nThe values in the rank-1 array p are coefficients of a polynomial. If the length of p is n+1 then the polynomial is\n\np[0] * x**n + p[1] * x**(n-1) + ... + p[n-1]*x + p[n]\n\nsage: a=numpy.array([1,0,1],dtype=float)\nsage: numpy.roots(a) \n\nIssue created by migration from https://trac.sagemath.org/ticket/430\n\n",
+    "body": "Assignee: @rlmill\n\nKeywords: RDF factor\n\npolynomial_element.Polynomial.factor doesn't\nknow what to do with the RDF ring.\n\nhttp://www.gnu.org/software/gsl/manual/html_node/Polynomials.html\n\nsage: import numpy\n\nsage:  numpy.roots?\n\nThe values in the rank-1 array p are coefficients of a polynomial. If the length of p is n+1 then the polynomial is\n\np[0] * x**n + p[1] * x**(n-1) + ... + p[n-1]*x + p[n]\n\nsage: a=numpy.array([1,0,1],dtype=float)\nsage: numpy.roots(a) \n\nIssue created by migration from https://trac.sagemath.org/ticket/430\n\n",
     "created_at": "2007-08-16T03:10:55Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_000430.json:
     "title": "RDF poly's don't factor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/430",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Keywords: RDF factor
 
@@ -53,7 +53,7 @@ archive/issue_comments_002155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/430#issuecomment-2155",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_002156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/430#issuecomment-2156",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_002157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/430#issuecomment-2157",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

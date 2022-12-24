@@ -14,7 +14,7 @@ archive/issues_006498.json:
     "title": "Compilation of ratpoints in sage-4.1.rc1 fails on 64-bit Gentoo Linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6498",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 Assignee: tbd
@@ -97,7 +97,7 @@ archive/issue_comments_052859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6498#issuecomment-52859",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_052860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6498#issuecomment-52860",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_052861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6498#issuecomment-52861",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_052862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6498#issuecomment-52862",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_052863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6498#issuecomment-52863",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006117.json:
 ```json
 {
-    "body": "Assignee: ekirkman\n\nCC:  rlm\n\nBug pointed out by Fidel Barrera-Cruz.  Entering\n\n\n```\ng = graphs.PetersenGraph()\ng.show(talk=True)\n```\n\n\nresults in \n\n```\nTypeError: show() got an unexpected keyword argument 'talk'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6117\n\n",
+    "body": "Assignee: ekirkman\n\nCC:  @rlmill\n\nBug pointed out by Fidel Barrera-Cruz.  Entering\n\n\n```\ng = graphs.PetersenGraph()\ng.show(talk=True)\n```\n\n\nresults in \n\n```\nTypeError: show() got an unexpected keyword argument 'talk'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6117\n\n",
     "created_at": "2009-05-21T22:13:58Z",
     "labels": [
         "graph theory",
@@ -19,7 +19,7 @@ archive/issues_006117.json:
 ```
 Assignee: ekirkman
 
-CC:  rlm
+CC:  @rlmill
 
 Bug pointed out by Fidel Barrera-Cruz.  Entering
 

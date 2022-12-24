@@ -14,7 +14,7 @@ archive/issues_005761.json:
     "title": "Bring doctests of sage/misc/latex.py to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5761",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 Assignee: mabshoff
@@ -37,7 +37,7 @@ archive/issue_comments_045026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5761#issuecomment-45026",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -50,16 +50,16 @@ I'm partway through this, but still need to do much more, and will be away from 
 archive/issue_comments_045027.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to rbeezer.",
+    "body": "Changing assignee from mabshoff to @rbeezer.",
     "created_at": "2009-04-12T01:00:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5761#issuecomment-45027",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Changing assignee from mabshoff to rbeezer.
+Changing assignee from mabshoff to @rbeezer.
 
 
 
@@ -95,7 +95,7 @@ archive/issue_comments_045029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5761#issuecomment-45029",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_045030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5761#issuecomment-45030",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_045031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5761#issuecomment-45031",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_045032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5761#issuecomment-45032",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_045033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5761#issuecomment-45033",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_045034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5761#issuecomment-45034",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_045035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5761#issuecomment-45035",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_045036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5761#issuecomment-45036",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_045037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5761#issuecomment-45037",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_045038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5761#issuecomment-45038",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -324,7 +324,7 @@ archive/issue_comments_045039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5761#issuecomment-45039",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -337,16 +337,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_045040.json:
 ```json
 {
-    "body": "Attachment [trac_5761-latex_docstrings-ts.patch](tarball://root/attachments/some-uuid/ticket5761/trac_5761-latex_docstrings-ts.patch) by tscrim created at 2013-02-06 18:30:53\n\nFixed trailing whitespace and matched ticket number",
+    "body": "Attachment [trac_5761-latex_docstrings-ts.patch](tarball://root/attachments/some-uuid/ticket5761/trac_5761-latex_docstrings-ts.patch) by @tscrim created at 2013-02-06 18:30:53\n\nFixed trailing whitespace and matched ticket number",
     "created_at": "2013-02-06T18:30:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5761#issuecomment-45040",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
-Attachment [trac_5761-latex_docstrings-ts.patch](tarball://root/attachments/some-uuid/ticket5761/trac_5761-latex_docstrings-ts.patch) by tscrim created at 2013-02-06 18:30:53
+Attachment [trac_5761-latex_docstrings-ts.patch](tarball://root/attachments/some-uuid/ticket5761/trac_5761-latex_docstrings-ts.patch) by @tscrim created at 2013-02-06 18:30:53
 
 Fixed trailing whitespace and matched ticket number
 
@@ -362,7 +362,7 @@ archive/issue_comments_045041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5761#issuecomment-45041",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -384,7 +384,7 @@ archive/issue_comments_045042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5761#issuecomment-45042",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

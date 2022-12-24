@@ -14,7 +14,7 @@ archive/issues_004196.json:
     "title": "write a new coercion section for the developer's/programmer's guide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4196",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: somebody
@@ -41,7 +41,7 @@ archive/issue_comments_030454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4196#issuecomment-30454",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_030455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4196#issuecomment-30455",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -72,16 +72,16 @@ See also Robert Bradshaw's coercion docs on the [Sage wiki](http://wiki.sagemath
 archive/issue_comments_030456.json:
 ```json
 {
-    "body": "Changing assignee from somebody to jhpalmieri.",
+    "body": "Changing assignee from somebody to @jhpalmieri.",
     "created_at": "2009-06-17T22:03:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4196#issuecomment-30456",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Changing assignee from somebody to jhpalmieri.
+Changing assignee from somebody to @jhpalmieri.
 
 
 
@@ -95,7 +95,7 @@ archive/issue_comments_030457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4196#issuecomment-30457",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -108,16 +108,16 @@ Changing status from new to assigned.
 archive/issue_comments_030458.json:
 ```json
 {
-    "body": "Attachment [trac_4196.patch](tarball://root/attachments/some-uuid/ticket4196/trac_4196.patch) by jhpalmieri created at 2009-06-17 22:03:27\n\nHere's a patch.  This basically just refers to the coercion section in the reference manual, added in #5454.",
+    "body": "Attachment [trac_4196.patch](tarball://root/attachments/some-uuid/ticket4196/trac_4196.patch) by @jhpalmieri created at 2009-06-17 22:03:27\n\nHere's a patch.  This basically just refers to the coercion section in the reference manual, added in #5454.",
     "created_at": "2009-06-17T22:03:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4196#issuecomment-30458",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_4196.patch](tarball://root/attachments/some-uuid/ticket4196/trac_4196.patch) by jhpalmieri created at 2009-06-17 22:03:27
+Attachment [trac_4196.patch](tarball://root/attachments/some-uuid/ticket4196/trac_4196.patch) by @jhpalmieri created at 2009-06-17 22:03:27
 
 Here's a patch.  This basically just refers to the coercion section in the reference manual, added in #5454.
 
@@ -187,7 +187,7 @@ archive/issue_comments_030461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4196#issuecomment-30461",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_030462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4196#issuecomment-30462",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

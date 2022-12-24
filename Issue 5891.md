@@ -3,7 +3,7 @@
 archive/issues_005891.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat roed saliola\n\nKeywords: categories parents\n\nThis (series of) patch(es) extends the Sage category framework as a\ndesign pattern for organizing generic code.\n\nUnder development on combinat.sagemath.org/patches:\n\n- categories-nt.patch:    the category framework itself\n                        + updates to combinatorial free modules (will be split before submission)\n\nRelated patches (will need to be applied to recover all previous functionalities):\n- family_enumset-fh.patch\n- enumset_unions-fh.patch\n- categories-sf-nt.patch \tSymmetric functions\n- ncsf-nt.patch\t\tNon commutative Symmetric Functions\n- root_systems-4326-nt.patch\n\nSmall technical patches they depend on:\n- unique_representation-5120-submitted.patch\n- lazy_attributes-fixes-5783-final.patch\n- element_wrapper-nt.patch\n- 5598-coerce-declare.patch\n- cached_in_parent_method-5449.new\n- explain-pickle-v1.patch\n- cPickle-copy_reg_classes-nt.patch\n- cPickle-nested-classes-nt.patch\n- dynamic_class-nt.patch\n- compositions-cleanup-5600-nt.patch\n- transitive_ideal-nt.patch\n\n\nCurrent status:\n\n* Documentation:\n  sage.categories?         Category quickref card\n  sage.categories.primer?  Element/Parent/Category primer (in writing)\n  Category?                Technical background on categories\n  Semigroups().example()?? A template of semigroup\n  See also the discussion on sage-devel in November 2009:\n  http://groups.google.com/group/sage-devel/msg/d4065154e2e8cbd9\n\n* Real life applications:\n  see related patches, automatic monoids, ...\n\n* Categories:\n  - All the mathematical categories of Axiom and MuPAD\n  - EnumeratedSets         (with example)\n  - Semigroups             (with example, basic methods, subquotients)\n  - FiniteSemigroups       (with example, cayley graphs, basic representation theory, ...)\n  - ModulesWithBasis       (with example, morphisms)\n  - HopfAlgebras & friends (with example)\n  - Cleanup:\n    - Have unique representation by default (no need to inherit from Category_uniq)\n    - Have construction / reduce by default\n\n* Functorial constructions:\n  - direct sum\n  - tensor product\n  - cartesian product (todo)\n  - dual (in progress)\n  - subquotient, subset, quotient (in progress)\n  - isomorphism type (todo)\n\n* Homomorphisms\n  - Integrates with current sage morphisms\n  - Adds morphisms for some categories\n  - Some general infrastructure\n\n* Generic test framework\n  - Functional, final design clear, needs cleanup (2/3 hours)\n\n* Combinatorial free modules\n  * Have unique representation\n\n* Reorganization of the Sage library to start using the category framework:\n  * Fixed some import loops\n  * Added temporary list() methods to:\n    - FreeModule_generic\n    - MatrixSpace_generic\n    - Set_object_enumerated\n    - ParentWithAdditiveAbelianGens\n    - ParentWithMultiplicativeAbelianGens\n    They should eventually be inherited from the EnumeratedSets() category\n  * ...\n\n* Todo:\n  * Naming cleanup:\n    * Parent -> ParentMethods (or _ParentMethods? or ?)\n    * Element -> ElementMethods + move them as a nested class of ParentMethods\n    * super_categories should be a method\n    * zero, one should be methods\n    * standardize the names: mult / product / multiplication / multiply?\n    * check -> test\n    * self.tester(**keywords)\n    * intrusive cat.tensor_category / ...\n    * cat.example() -> /an_example/an_object/... ?\n    * class.an_instance() ?\n    * all_weakly_super_categories -> ?\n  * Category graph picture\n\n  * Fixes:\n    * Pickling: essentially works; polish the remaining\n    * Integration in the Sage library: some tests are broken. Help welcome!\n    * Pickling from old sage: technically feasible. Need help!\n    * Inheritance from category for Cython classes: technically feasible. Need help!\n\n  * Hom is *not* a functorial construction, the design and user\n    interface needs to be discussed\n\n  * Support for multivariate morphims, i.e. morphisms A x B -> C where\n    the specializations A x b -> C are morphisms for a given category\n    and a x B -> C are morphisms for a possibly different category\n\n* Discussion:\n  * Defining new inline operators, at least within the sage interpreter\n\nIssue created by migration from https://trac.sagemath.org/ticket/5891\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @roed314 @saliola\n\nKeywords: categories parents\n\nThis (series of) patch(es) extends the Sage category framework as a\ndesign pattern for organizing generic code.\n\nUnder development on combinat.sagemath.org/patches:\n\n- categories-nt.patch:    the category framework itself\n                        + updates to combinatorial free modules (will be split before submission)\n\nRelated patches (will need to be applied to recover all previous functionalities):\n- family_enumset-fh.patch\n- enumset_unions-fh.patch\n- categories-sf-nt.patch \tSymmetric functions\n- ncsf-nt.patch\t\tNon commutative Symmetric Functions\n- root_systems-4326-nt.patch\n\nSmall technical patches they depend on:\n- unique_representation-5120-submitted.patch\n- lazy_attributes-fixes-5783-final.patch\n- element_wrapper-nt.patch\n- 5598-coerce-declare.patch\n- cached_in_parent_method-5449.new\n- explain-pickle-v1.patch\n- cPickle-copy_reg_classes-nt.patch\n- cPickle-nested-classes-nt.patch\n- dynamic_class-nt.patch\n- compositions-cleanup-5600-nt.patch\n- transitive_ideal-nt.patch\n\n\nCurrent status:\n\n* Documentation:\n  sage.categories?         Category quickref card\n  sage.categories.primer?  Element/Parent/Category primer (in writing)\n  Category?                Technical background on categories\n  Semigroups().example()?? A template of semigroup\n  See also the discussion on sage-devel in November 2009:\n  http://groups.google.com/group/sage-devel/msg/d4065154e2e8cbd9\n\n* Real life applications:\n  see related patches, automatic monoids, ...\n\n* Categories:\n  - All the mathematical categories of Axiom and MuPAD\n  - EnumeratedSets         (with example)\n  - Semigroups             (with example, basic methods, subquotients)\n  - FiniteSemigroups       (with example, cayley graphs, basic representation theory, ...)\n  - ModulesWithBasis       (with example, morphisms)\n  - HopfAlgebras & friends (with example)\n  - Cleanup:\n    - Have unique representation by default (no need to inherit from Category_uniq)\n    - Have construction / reduce by default\n\n* Functorial constructions:\n  - direct sum\n  - tensor product\n  - cartesian product (todo)\n  - dual (in progress)\n  - subquotient, subset, quotient (in progress)\n  - isomorphism type (todo)\n\n* Homomorphisms\n  - Integrates with current sage morphisms\n  - Adds morphisms for some categories\n  - Some general infrastructure\n\n* Generic test framework\n  - Functional, final design clear, needs cleanup (2/3 hours)\n\n* Combinatorial free modules\n  * Have unique representation\n\n* Reorganization of the Sage library to start using the category framework:\n  * Fixed some import loops\n  * Added temporary list() methods to:\n    - FreeModule_generic\n    - MatrixSpace_generic\n    - Set_object_enumerated\n    - ParentWithAdditiveAbelianGens\n    - ParentWithMultiplicativeAbelianGens\n    They should eventually be inherited from the EnumeratedSets() category\n  * ...\n\n* Todo:\n  * Naming cleanup:\n    * Parent -> ParentMethods (or _ParentMethods? or ?)\n    * Element -> ElementMethods + move them as a nested class of ParentMethods\n    * super_categories should be a method\n    * zero, one should be methods\n    * standardize the names: mult / product / multiplication / multiply?\n    * check -> test\n    * self.tester(**keywords)\n    * intrusive cat.tensor_category / ...\n    * cat.example() -> /an_example/an_object/... ?\n    * class.an_instance() ?\n    * all_weakly_super_categories -> ?\n  * Category graph picture\n\n  * Fixes:\n    * Pickling: essentially works; polish the remaining\n    * Integration in the Sage library: some tests are broken. Help welcome!\n    * Pickling from old sage: technically feasible. Need help!\n    * Inheritance from category for Cython classes: technically feasible. Need help!\n\n  * Hom is *not* a functorial construction, the design and user\n    interface needs to be discussed\n\n  * Support for multivariate morphims, i.e. morphisms A x B -> C where\n    the specializations A x b -> C are morphisms for a given category\n    and a x B -> C are morphisms for a possibly different category\n\n* Discussion:\n  * Defining new inline operators, at least within the sage interpreter\n\nIssue created by migration from https://trac.sagemath.org/ticket/5891\n\n",
     "created_at": "2009-04-25T06:38:51Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_005891.json:
     "title": "Categories for the working mathematics programmer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5891",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
-CC:  sage-combinat roed saliola
+CC:  sage-combinat @roed314 @saliola
 
 Keywords: categories parents
 
@@ -153,7 +153,7 @@ archive/issue_comments_046580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5891#issuecomment-46580",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_046581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5891#issuecomment-46581",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_046582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5891#issuecomment-46582",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -206,16 +206,16 @@ Changing status from new to assigned.
 archive/issue_comments_046583.json:
 ```json
 {
-    "body": "Attachment [categories-framework-nt.patch](tarball://root/attachments/some-uuid/ticket5891/categories-framework-nt.patch) by nthiery created at 2009-05-21 18:54:47",
+    "body": "Attachment [categories-framework-nt.patch](tarball://root/attachments/some-uuid/ticket5891/categories-framework-nt.patch) by @nthiery created at 2009-05-21 18:54:47",
     "created_at": "2009-05-21T18:54:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5891#issuecomment-46583",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [categories-framework-nt.patch](tarball://root/attachments/some-uuid/ticket5891/categories-framework-nt.patch) by nthiery created at 2009-05-21 18:54:47
+Attachment [categories-framework-nt.patch](tarball://root/attachments/some-uuid/ticket5891/categories-framework-nt.patch) by @nthiery created at 2009-05-21 18:54:47
 
 
 
@@ -224,16 +224,16 @@ Attachment [categories-framework-nt.patch](tarball://root/attachments/some-uuid/
 archive/issue_comments_046584.json:
 ```json
 {
-    "body": "Attachment [categories-fixsagelib-nt.patch](tarball://root/attachments/some-uuid/ticket5891/categories-fixsagelib-nt.patch) by nthiery created at 2009-05-21 18:56:51",
+    "body": "Attachment [categories-fixsagelib-nt.patch](tarball://root/attachments/some-uuid/ticket5891/categories-fixsagelib-nt.patch) by @nthiery created at 2009-05-21 18:56:51",
     "created_at": "2009-05-21T18:56:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5891#issuecomment-46584",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [categories-fixsagelib-nt.patch](tarball://root/attachments/some-uuid/ticket5891/categories-fixsagelib-nt.patch) by nthiery created at 2009-05-21 18:56:51
+Attachment [categories-fixsagelib-nt.patch](tarball://root/attachments/some-uuid/ticket5891/categories-fixsagelib-nt.patch) by @nthiery created at 2009-05-21 18:56:51
 
 
 
@@ -242,16 +242,16 @@ Attachment [categories-fixsagelib-nt.patch](tarball://root/attachments/some-uuid
 archive/issue_comments_046585.json:
 ```json
 {
-    "body": "Attachment [categories-enumeratedsets-nt.patch](tarball://root/attachments/some-uuid/ticket5891/categories-enumeratedsets-nt.patch) by nthiery created at 2009-05-21 18:57:12",
+    "body": "Attachment [categories-enumeratedsets-nt.patch](tarball://root/attachments/some-uuid/ticket5891/categories-enumeratedsets-nt.patch) by @nthiery created at 2009-05-21 18:57:12",
     "created_at": "2009-05-21T18:57:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5891#issuecomment-46585",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [categories-enumeratedsets-nt.patch](tarball://root/attachments/some-uuid/ticket5891/categories-enumeratedsets-nt.patch) by nthiery created at 2009-05-21 18:57:12
+Attachment [categories-enumeratedsets-nt.patch](tarball://root/attachments/some-uuid/ticket5891/categories-enumeratedsets-nt.patch) by @nthiery created at 2009-05-21 18:57:12
 
 
 
@@ -260,16 +260,16 @@ Attachment [categories-enumeratedsets-nt.patch](tarball://root/attachments/some-
 archive/issue_comments_046586.json:
 ```json
 {
-    "body": "Attachment [categories-combinat-nt.patch](tarball://root/attachments/some-uuid/ticket5891/categories-combinat-nt.patch) by nthiery created at 2009-05-21 18:57:27",
+    "body": "Attachment [categories-combinat-nt.patch](tarball://root/attachments/some-uuid/ticket5891/categories-combinat-nt.patch) by @nthiery created at 2009-05-21 18:57:27",
     "created_at": "2009-05-21T18:57:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5891#issuecomment-46586",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [categories-combinat-nt.patch](tarball://root/attachments/some-uuid/ticket5891/categories-combinat-nt.patch) by nthiery created at 2009-05-21 18:57:27
+Attachment [categories-combinat-nt.patch](tarball://root/attachments/some-uuid/ticket5891/categories-combinat-nt.patch) by @nthiery created at 2009-05-21 18:57:27
 
 
 
@@ -278,16 +278,16 @@ Attachment [categories-combinat-nt.patch](tarball://root/attachments/some-uuid/t
 archive/issue_comments_046587.json:
 ```json
 {
-    "body": "Attachment [categories-numberfield_homset-nt.patch](tarball://root/attachments/some-uuid/ticket5891/categories-numberfield_homset-nt.patch) by nthiery created at 2009-05-21 18:57:48",
+    "body": "Attachment [categories-numberfield_homset-nt.patch](tarball://root/attachments/some-uuid/ticket5891/categories-numberfield_homset-nt.patch) by @nthiery created at 2009-05-21 18:57:48",
     "created_at": "2009-05-21T18:57:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5891#issuecomment-46587",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [categories-numberfield_homset-nt.patch](tarball://root/attachments/some-uuid/ticket5891/categories-numberfield_homset-nt.patch) by nthiery created at 2009-05-21 18:57:48
+Attachment [categories-numberfield_homset-nt.patch](tarball://root/attachments/some-uuid/ticket5891/categories-numberfield_homset-nt.patch) by @nthiery created at 2009-05-21 18:57:48
 
 
 
@@ -301,7 +301,7 @@ archive/issue_comments_046588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5891#issuecomment-46588",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -319,7 +319,7 @@ archive/issue_comments_046589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5891#issuecomment-46589",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -337,7 +337,7 @@ archive/issue_comments_046590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5891#issuecomment-46590",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -355,7 +355,7 @@ archive/issue_comments_046591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5891#issuecomment-46591",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -420,7 +420,7 @@ archive/issue_comments_046592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5891#issuecomment-46592",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -465,7 +465,7 @@ archive/issue_comments_046593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5891#issuecomment-46593",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -483,7 +483,7 @@ archive/issue_comments_046594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5891#issuecomment-46594",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -501,7 +501,7 @@ archive/issue_comments_046595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5891#issuecomment-46595",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -519,7 +519,7 @@ archive/issue_comments_046596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5891#issuecomment-46596",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -537,7 +537,7 @@ archive/issue_comments_046597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5891#issuecomment-46597",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -560,7 +560,7 @@ archive/issue_comments_046598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5891#issuecomment-46598",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -578,7 +578,7 @@ archive/issue_comments_046599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5891#issuecomment-46599",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -596,7 +596,7 @@ archive/issue_comments_046600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5891#issuecomment-46600",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -614,7 +614,7 @@ archive/issue_comments_046601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5891#issuecomment-46601",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

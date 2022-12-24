@@ -14,7 +14,7 @@ archive/issues_009181.json:
     "title": "Update dev-guide : __hash__ return a long",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9181",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 Assignee: mvngu
@@ -60,16 +60,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9181
 archive/issue_comments_085892.json:
 ```json
 {
-    "body": "Changing assignee from mvngu to hivert.",
+    "body": "Changing assignee from mvngu to @hivert.",
     "created_at": "2010-06-07T23:01:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9181",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9181#issuecomment-85892",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Changing assignee from mvngu to hivert.
+Changing assignee from mvngu to @hivert.
 
 
 
@@ -78,16 +78,16 @@ Changing assignee from mvngu to hivert.
 archive/issue_comments_085893.json:
 ```json
 {
-    "body": "Attachment [trac_9181-hash_devel_doc_fix-fh.patch](tarball://root/attachments/some-uuid/ticket9181/trac_9181-hash_devel_doc_fix-fh.patch) by hivert created at 2011-01-18 15:18:08",
+    "body": "Attachment [trac_9181-hash_devel_doc_fix-fh.patch](tarball://root/attachments/some-uuid/ticket9181/trac_9181-hash_devel_doc_fix-fh.patch) by @hivert created at 2011-01-18 15:18:08",
     "created_at": "2011-01-18T15:18:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9181",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9181#issuecomment-85893",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_9181-hash_devel_doc_fix-fh.patch](tarball://root/attachments/some-uuid/ticket9181/trac_9181-hash_devel_doc_fix-fh.patch) by hivert created at 2011-01-18 15:18:08
+Attachment [trac_9181-hash_devel_doc_fix-fh.patch](tarball://root/attachments/some-uuid/ticket9181/trac_9181-hash_devel_doc_fix-fh.patch) by @hivert created at 2011-01-18 15:18:08
 
 
 
@@ -101,7 +101,7 @@ archive/issue_comments_085894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9181",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9181#issuecomment-85894",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_085895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9181",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9181#issuecomment-85895",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_085896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9181",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9181#issuecomment-85896",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_085897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9181",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9181#issuecomment-85897",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_085898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9181",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9181#issuecomment-85898",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_085899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9181",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9181#issuecomment-85899",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

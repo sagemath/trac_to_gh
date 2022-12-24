@@ -3,7 +3,7 @@
 archive/issues_008731.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  kcrisman robert.marik mhansen\n\nThis update fixes #8729.  It also includes the fixes noted in #8645 (so this spkg supersedes the maxima spkg at #8645).\n\nThe spkg is up at http://sage.math.washington.edu/home/jason/maxima-5.21.0.spkg\n\nA patch needs to be applied to fix some doctests.  In particular, apparently maxima has gotten better at integration.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8731\n\n",
+    "body": "Assignee: tbd\n\nCC:  @kcrisman @robert-marik @mwhansen\n\nThis update fixes #8729.  It also includes the fixes noted in #8645 (so this spkg supersedes the maxima spkg at #8645).\n\nThe spkg is up at http://sage.math.washington.edu/home/jason/maxima-5.21.0.spkg\n\nA patch needs to be applied to fix some doctests.  In particular, apparently maxima has gotten better at integration.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8731\n\n",
     "created_at": "2010-04-20T19:32:25Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_008731.json:
     "title": "update maxima to 5.21.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8731",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: tbd
 
-CC:  kcrisman robert.marik mhansen
+CC:  @kcrisman @robert-marik @mwhansen
 
 This update fixes #8729.  It also includes the fixes noted in #8645 (so this spkg supersedes the maxima spkg at #8645).
 
@@ -43,7 +43,7 @@ archive/issue_comments_079765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79765",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_079766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79766",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_079767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79767",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_079768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79768",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_079769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79769",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_079770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79770",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_079771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79771",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_079772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79772",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_079773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79773",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_079774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79774",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_079775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79775",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_079776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79776",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -335,7 +335,7 @@ archive/issue_comments_079777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79777",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -357,7 +357,7 @@ archive/issue_comments_079778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79778",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -403,7 +403,7 @@ archive/issue_comments_079779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79779",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -421,7 +421,7 @@ archive/issue_comments_079780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79780",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -439,7 +439,7 @@ archive/issue_comments_079781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79781",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -457,7 +457,7 @@ archive/issue_comments_079782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79782",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -477,7 +477,7 @@ archive/issue_comments_079783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79783",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -495,7 +495,7 @@ archive/issue_comments_079784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79784",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -515,7 +515,7 @@ archive/issue_comments_079785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79785",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -533,7 +533,7 @@ archive/issue_comments_079786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79786",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -546,16 +546,16 @@ This upgrade fixes #8729
 archive/issue_comments_079787.json:
 ```json
 {
-    "body": "Attachment [trac-8731-maxima-upgrade.patch](tarball://root/attachments/some-uuid/ticket8731/trac-8731-maxima-upgrade.patch) by jason created at 2010-05-13 06:07:32\n\nThe doctests that still fail after the patch is applied (under ptestlong) are listed below:\n\n\n\nI couldn't find a way to double-check that the new answer is correct in the following output mismatch\n\n\n```\n\nsage -t -long \"4.4.1/devel/sage/sage/symbolic/integration/integral.py\"\n**********************************************************************\nFile \"/home/grout/sage-4.4.1/devel/sage/sage/symbolic/integration/integral.py\", line 464:\n    sage: integrate(sin(x)*cos(10*x)*log(x), x)\nExpected:\n    1/18*log(x)*cos(9*x) - 1/22*log(x)*cos(11*x) - 1/18*integrate(cos(9*x)/x, x) + 1/22*integrate(cos(11*x)/x, x)\nGot:\n    1/198*(11*cos(9*x) - 9*cos(11*x))*log(x) + 1/44*Ei(-11*I*x) - 1/36*Ei(-9*I*x) - 1/36*Ei(9*I*x) + 1/44*Ei(11*I*x)\n**********************************************************************\n```\n\n\n\nThe next doctest is testing that #780 is fixed.  Here, it appears that #780 is *not* fixed again.  However, the actual maxima bug that was fixed for #780 is still fixed.  The problem seems to be that we use keepfloat: true, and when we have keepfloat: true, the erroneous question pops up.\n\n\n```\nFile \"/home/grout/sage-4.4.1/devel/sage/sage/symbolic/integration/integral.py\", line 486:\n    sage: res = integral(f,x,0.0001414, 1.); res\nException raised:\n    Traceback (most recent call last):\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_10[56]>\", line 1, in <module>\n        res = integral(f,x,RealNumber('0.0001414'), RealNumber('1.')); res###line 486:\n    sage: res = integral(f,x,0.0001414, 1.); res\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/misc/functional.py\", line 720, in integral\n        return x.integral(*args, **kwds)\n      File \"expression.pyx\", line 7330, in sage.symbolic.expression.Expression.integral (sage/symbolic/expression.cpp:29048)\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/symbolic/integration/integral.py\", line 589, in integrate\n        return definite_integral(expression, v, a, b)\n      File \"function.pyx\", line 425, in sage.symbolic.function.Function.__call__ (sage/symbolic/function.cpp:4359)\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/symbolic/integration/integral.py\", line 174, in _eval_\n        return integrator(*args)\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/symbolic/integration/external.py\", line 21, in maxima_integrator\n        result = expression._maxima_().integrate(v, a, b)\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/interfaces/maxima.py\", line 2112, in integral\n        return I(var, min, max)\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1408, in __call__\n        return self._obj.parent().function_call(self._name, [self._obj] + list(args), kwds)\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1316, in function_call\n        return self.new(s)\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1097, in new\n        return self(code)\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1032, in __call__\n        return cls(self, x, name=name)\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1451, in __init__\n        raise TypeError, x\n    TypeError: Computation failed since Maxima requested additional constraints (try the command 'assume((y-1)*(y+1)>0)' before integral or limit evaluation, for example):\n    Is  (y-1)*(y+1)  positive, negative, or zero?\n```\n\n\nHere is a maxima session (5.21.1) showing the problem.  When keepfloat is false, an integral comes right back\n\n\n```\n% sage -maxima\n;;; Loading #P\"/home/grout/sage/local/lib/ecl/sb-bsd-sockets.fas\"\n;;; Loading #P\"/home/grout/sage/local/lib/ecl/sockets.fas\"\n;;; Loading #P\"/home/grout/sage/local/lib/ecl/defsystem.fas\"\n;;; Loading #P\"/home/grout/sage/local/lib/ecl/cmp.fas\"\n;;; Loading #P\"/home/grout/sage/local/lib/ecl/sysfun.lsp\"\nMaxima 5.21.1 http://maxima.sourceforge.net\nusing Lisp ECL 10.4.1\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) assume(y^2>1);\n                                     2\n(%o1)                              [y  > 1]\n(%i2) keepfloat: true;              \n(%o2)                                true\n(%i3) integrate(log(x^2+y^2),x,0,1);\n                               2               1\n                        2 log(y  + 1) + 4 atan(-) y - 4\n                                               y\n(%o3)                   -------------------------------\n                                       2\n(%i4) integrate(log(x^2+y^2),x,0.0001414,1);\nIs  (y - 1) (y + 1)  positive, negative, or zero?\n```\n\n\n\nThere is some output mismatch in transform.pyx.  This occurs in an explanatory section of the docs, and just consists of simplifying a horrendous matrix.  The matrix just simplifies differently now (we get explicit imaginary values now, for some reason).  Does anyone want to check that the simplifications are actually correct now?\n\n\n```\nsage -t -long \"4.4.1/devel/sage/sage/plot/plot3d/transform.pyx\"\n**********************************************************************\nFile \"/home/grout/sage-4.4.1/devel/sage/sage/plot/plot3d/transform.pyx\", line 217:\n    sage: m\nExpected:\n    [                                             -(cos(theta) - 1)*x^2 + cos(theta)                 -(cos(theta) - 1)*sqrt(-x^2 - z^2 + 1)*x - sqrt(z^2)*sin(theta)         -((cos(theta) - 1)*x*z^2 - sqrt(-x^2 - z^2 + 1)*sqrt(z^2)*sin(theta))/z]\n    [                -(cos(theta) - 1)*sqrt(-x^2 - z^2 + 1)*x + sqrt(z^2)*sin(theta)                                 (cos(theta) - 1)*x^2 + (cos(theta) - 1)*z^2 + 1 -((cos(theta) - 1)*sqrt(-x^2 - z^2 + 1)*sqrt(z^2)*z + x*z*sin(theta))/sqrt(z^2)]\n    [        -((cos(theta) - 1)*x*z^2 + sqrt(-x^2 - z^2 + 1)*sqrt(z^2)*sin(theta))/z -((cos(theta) - 1)*sqrt(-x^2 - z^2 + 1)*sqrt(z^2)*z - x*z*sin(theta))/sqrt(z^2)                                              -(cos(theta) - 1)*z^2 + cos(theta)]\nGot:\n    [                                                                                                          -(cos(theta) - 1)*x^2 + cos(theta)                 -((cos(theta) - 1)*sqrt(-x^2 + 1)*sqrt(-x^2 - z^2 + 1)*x*sqrt(z^(-2)) - I*sqrt(x^2 - 1)*sin(theta))*sqrt(z^2)/sqrt(-x^2 + 1)         -((cos(theta) - 1)*sqrt(-x^2 + 1)*x*z^2*sqrt(z^(-2)) + I*sqrt(x^2 - 1)*sqrt(-x^2 - z^2 + 1)*sin(theta))*sqrt(z^2)/(sqrt(-x^2 + 1)*z)]\n    [                -((cos(theta) - 1)*sqrt(-x^2 + 1)*sqrt(-x^2 - z^2 + 1)*x*sqrt(z^(-2)) + I*sqrt(x^2 - 1)*sin(theta))*sqrt(z^2)/sqrt(-x^2 + 1)                                                                                              (cos(theta) - 1)*x^2 + (cos(theta) - 1)*z^2 + 1  (sqrt(-x^2 + 1)*sqrt(x^2 - 1)*x*z*sqrt(z^(-2))*sin(theta) - sqrt(-x^2 - z^2 + 1)*((I*cos(theta) - I)*x^2 - I*cos(theta) + I)*z)/(I*x^2 - I)]\n    [        -((cos(theta) - 1)*sqrt(-x^2 + 1)*x*z^2*sqrt(z^(-2)) - I*sqrt(x^2 - 1)*sqrt(-x^2 - z^2 + 1)*sin(theta))*sqrt(z^2)/(sqrt(-x^2 + 1)*z) -(sqrt(-x^2 + 1)*sqrt(x^2 - 1)*x*z*sqrt(z^(-2))*sin(theta) + sqrt(-x^2 - z^2 + 1)*((I*cos(theta) - I)*x^2 - I*cos(theta) + I)*z)/(I*x^2 - I)                                                                                                           -(cos(theta) - 1)*z^2 + cos(theta)]\n**********************************************************************\n```\n\n\n\n\nThere are a few errors in the interfaces/maxima.py file.  These seem to all stem from more output, rather than actual errors.\n\n\n```\nsage -t -long \"4.4.1/devel/sage/sage/interfaces/maxima.py\"  \n**********************************************************************\nFile \"/home/grout/sage-4.4.1/devel/sage/sage/interfaces/maxima.py\", line 871:\n    sage: maxima._command_runner('describe', 'gcd')\nExpected:\n    -- Function: gcd (<p_1>, <p_2>, <x_1>, ...)\n    ...\nGot:\n    ;;; Loading #P\"/home/grout/sage/local/lib/ecl/cmp.fas\"\n    ;;; Loading #P\"/home/grout/sage/local/lib/ecl/sysfun.lsp\"\n    <BLANKLINE>\n     -- Function: gcd (<p_1>, <p_2>, <x_1>, ...)\n         Returns the greatest common divisor of <p_1> and <p_2>.  The flag\n         `gcd' determines which algorithm is employed.  Setting `gcd' to\n         `ez', `subres', `red', or `spmod' selects the `ezgcd',\n         subresultant `prs', reduced, or modular algorithm, respectively.\n         If `gcd' `false' then `gcd (<p_1>, <p_2>, <x>)' always returns 1\n         for all <x>.  Many functions (e.g.  `ratsimp', `factor', etc.)\n         cause gcd's to be taken implicitly.  For homogeneous polynomials\n         it is recommended that `gcd' equal to `subres' be used.  To take\n         the gcd when an algebraic is present, e.g., `gcd (<x>^2 -\n         2*sqrt(2)*<x> + 2, <x> - sqrt(2))', `algebraic' must be `true' and\n         `gcd' must not be `ez'.\n    <BLANKLINE>\n         The `gcd' flag, default: `spmod', if `false' will also prevent the\n         greatest common divisor from being taken when expressions are\n         converted to canonical rational expression (CRE) form.  This will\n         sometimes speed the calculation if gcds are not required.\n    <BLANKLINE>\n    <BLANKLINE>\n      There are also some inexact matches for `gcd'.\n      Try `?? gcd' to see them.\n    <BLANKLINE>\n                                         true\n    <BLANKLINE>\n**********************************************************************\nFile \"/home/grout/sage-4.4.1/devel/sage/sage/interfaces/maxima.py\", line 896:\n    sage: maxima.help('gcd')\nExpected:\n    -- Function: gcd (<p_1>, <p_2>, <x_1>, ...)\n    ...\nGot:\n    ;;; Loading #P\"/home/grout/sage/local/lib/ecl/cmp.fas\"\n    ;;; Loading #P\"/home/grout/sage/local/lib/ecl/sysfun.lsp\"\n    <BLANKLINE>\n     -- Function: gcd (<p_1>, <p_2>, <x_1>, ...)\n         Returns the greatest common divisor of <p_1> and <p_2>.  The flag\n         `gcd' determines which algorithm is employed.  Setting `gcd' to\n         `ez', `subres', `red', or `spmod' selects the `ezgcd',\n         subresultant `prs', reduced, or modular algorithm, respectively.\n         If `gcd' `false' then `gcd (<p_1>, <p_2>, <x>)' always returns 1\n         for all <x>.  Many functions (e.g.  `ratsimp', `factor', etc.)\n         cause gcd's to be taken implicitly.  For homogeneous polynomials\n         it is recommended that `gcd' equal to `subres' be used.  To take\n         the gcd when an algebraic is present, e.g., `gcd (<x>^2 -\n         2*sqrt(2)*<x> + 2, <x> - sqrt(2))', `algebraic' must be `true' and\n         `gcd' must not be `ez'.\n    <BLANKLINE>\n         The `gcd' flag, default: `spmod', if `false' will also prevent the\n         greatest common divisor from being taken when expressions are\n         converted to canonical rational expression (CRE) form.  This will\n         sometimes speed the calculation if gcds are not required.\n    <BLANKLINE>\n    <BLANKLINE>\n      There are also some inexact matches for `gcd'.\n      Try `?? gcd' to see them.\n    <BLANKLINE>\n                                         true\n    <BLANKLINE>\n**********************************************************************\nFile \"/home/grout/sage-4.4.1/devel/sage/sage/interfaces/maxima.py\", line 906:\n    sage: maxima.example('arrays')\nExpected:\n    a[n]:=n*a[n-1]\n                                    a  := n a\n                                     n       n - 1\n    a[0]:1\n    a[5]\n                                          120\n    a[n]:=n\n    a[6]\n                                           6\n    a[4]\n                                          24\n                                         done\nGot:\n    ;;; Loading #P\"/home/grout/sage/local/lib/ecl/cmp.fas\"\n    ;;; Loading #P\"/home/grout/sage/local/lib/ecl/sysfun.lsp\"\n    a[n]:=n*a[n-1]\n                                    a  := n a\n                                     n       n - 1\n    a[0]:1\n    a[5]\n                                          120\n    a[n]:=n\n    a[6]\n                                           6\n    a[4]\n                                          24\n                                         done\n    <BLANKLINE>\n**********************************************************************\nFile \"/home/grout/sage-4.4.1/devel/sage/sage/interfaces/maxima.py\", line 2384:\n    sage: m.gcd._sage_doc_()\nExpected:\n    -- Function: gcd (<p_1>, <p_2>, <x_1>, ...)\n    ...\nGot:\n    ;;; Loading #P\"/home/grout/sage/local/lib/ecl/cmp.fas\"\n    ;;; Loading #P\"/home/grout/sage/local/lib/ecl/sysfun.lsp\"\n    <BLANKLINE>\n     -- Function: gcd (<p_1>, <p_2>, <x_1>, ...)\n         Returns the greatest common divisor of <p_1> and <p_2>.  The flag\n         `gcd' determines which algorithm is employed.  Setting `gcd' to\n         `ez', `subres', `red', or `spmod' selects the `ezgcd',\n         subresultant `prs', reduced, or modular algorithm, respectively.\n         If `gcd' `false' then `gcd (<p_1>, <p_2>, <x>)' always returns 1\n         for all <x>.  Many functions (e.g.  `ratsimp', `factor', etc.)\n         cause gcd's to be taken implicitly.  For homogeneous polynomials\n         it is recommended that `gcd' equal to `subres' be used.  To take\n         the gcd when an algebraic is present, e.g., `gcd (<x>^2 -\n         2*sqrt(2)*<x> + 2, <x> - sqrt(2))', `algebraic' must be `true' and\n         `gcd' must not be `ez'.\n    <BLANKLINE>\n         The `gcd' flag, default: `spmod', if `false' will also prevent the\n         greatest common divisor from being taken when expressions are\n         converted to canonical rational expression (CRE) form.  This will\n         sometimes speed the calculation if gcds are not required.\n    <BLANKLINE>\n    <BLANKLINE>\n      There are also some inexact matches for `gcd'.\n      Try `?? gcd' to see them.\n    <BLANKLINE>\n                                         true\n    <BLANKLINE>\n**********************************************************************\nFile \"/home/grout/sage-4.4.1/devel/sage/sage/interfaces/maxima.py\", line 2395:\n    sage: maxima.gcd._sage_doc_()\nExpected:\n    -- Function: gcd (<p_1>, <p_2>, <x_1>, ...)\n    ...\nGot:\n    ;;; Loading #P\"/home/grout/sage/local/lib/ecl/cmp.fas\"\n    ;;; Loading #P\"/home/grout/sage/local/lib/ecl/sysfun.lsp\"\n    <BLANKLINE>\n     -- Function: gcd (<p_1>, <p_2>, <x_1>, ...)\n         Returns the greatest common divisor of <p_1> and <p_2>.  The flag\n         `gcd' determines which algorithm is employed.  Setting `gcd' to\n         `ez', `subres', `red', or `spmod' selects the `ezgcd',\n         subresultant `prs', reduced, or modular algorithm, respectively.\n         If `gcd' `false' then `gcd (<p_1>, <p_2>, <x>)' always returns 1\n         for all <x>.  Many functions (e.g.  `ratsimp', `factor', etc.)\n         cause gcd's to be taken implicitly.  For homogeneous polynomials\n         it is recommended that `gcd' equal to `subres' be used.  To take\n         the gcd when an algebraic is present, e.g., `gcd (<x>^2 -\n         2*sqrt(2)*<x> + 2, <x> - sqrt(2))', `algebraic' must be `true' and\n         `gcd' must not be `ez'.\n    <BLANKLINE>\n         The `gcd' flag, default: `spmod', if `false' will also prevent the\n         greatest common divisor from being taken when expressions are\n         converted to canonical rational expression (CRE) form.  This will\n         sometimes speed the calculation if gcds are not required.\n    <BLANKLINE>\n    <BLANKLINE>\n      There are also some inexact matches for `gcd'.\n      Try `?? gcd' to see them.\n    <BLANKLINE>\n                                         true\n    <BLANKLINE>\n```\n\n\nFinally, I'm not sure what is happening in this error:\n\n\n```\n**********************************************************************\nFile \"/home/grout/sage-4.4.1/devel/sage/sage/interfaces/maxima.py\", line 729:\n    sage: maxima.eval('sage0: x == x;')\nExpected:\n    Traceback (most recent call last):\n    ...\n    TypeError: error evaluating \"sage0: x == x;\":...\nGot:\n    'x'\n**********************************************************************\n```\n",
+    "body": "Attachment [trac-8731-maxima-upgrade.patch](tarball://root/attachments/some-uuid/ticket8731/trac-8731-maxima-upgrade.patch) by @jasongrout created at 2010-05-13 06:07:32\n\nThe doctests that still fail after the patch is applied (under ptestlong) are listed below:\n\n\n\nI couldn't find a way to double-check that the new answer is correct in the following output mismatch\n\n\n```\n\nsage -t -long \"4.4.1/devel/sage/sage/symbolic/integration/integral.py\"\n**********************************************************************\nFile \"/home/grout/sage-4.4.1/devel/sage/sage/symbolic/integration/integral.py\", line 464:\n    sage: integrate(sin(x)*cos(10*x)*log(x), x)\nExpected:\n    1/18*log(x)*cos(9*x) - 1/22*log(x)*cos(11*x) - 1/18*integrate(cos(9*x)/x, x) + 1/22*integrate(cos(11*x)/x, x)\nGot:\n    1/198*(11*cos(9*x) - 9*cos(11*x))*log(x) + 1/44*Ei(-11*I*x) - 1/36*Ei(-9*I*x) - 1/36*Ei(9*I*x) + 1/44*Ei(11*I*x)\n**********************************************************************\n```\n\n\n\nThe next doctest is testing that #780 is fixed.  Here, it appears that #780 is *not* fixed again.  However, the actual maxima bug that was fixed for #780 is still fixed.  The problem seems to be that we use keepfloat: true, and when we have keepfloat: true, the erroneous question pops up.\n\n\n```\nFile \"/home/grout/sage-4.4.1/devel/sage/sage/symbolic/integration/integral.py\", line 486:\n    sage: res = integral(f,x,0.0001414, 1.); res\nException raised:\n    Traceback (most recent call last):\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_10[56]>\", line 1, in <module>\n        res = integral(f,x,RealNumber('0.0001414'), RealNumber('1.')); res###line 486:\n    sage: res = integral(f,x,0.0001414, 1.); res\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/misc/functional.py\", line 720, in integral\n        return x.integral(*args, **kwds)\n      File \"expression.pyx\", line 7330, in sage.symbolic.expression.Expression.integral (sage/symbolic/expression.cpp:29048)\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/symbolic/integration/integral.py\", line 589, in integrate\n        return definite_integral(expression, v, a, b)\n      File \"function.pyx\", line 425, in sage.symbolic.function.Function.__call__ (sage/symbolic/function.cpp:4359)\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/symbolic/integration/integral.py\", line 174, in _eval_\n        return integrator(*args)\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/symbolic/integration/external.py\", line 21, in maxima_integrator\n        result = expression._maxima_().integrate(v, a, b)\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/interfaces/maxima.py\", line 2112, in integral\n        return I(var, min, max)\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1408, in __call__\n        return self._obj.parent().function_call(self._name, [self._obj] + list(args), kwds)\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1316, in function_call\n        return self.new(s)\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1097, in new\n        return self(code)\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1032, in __call__\n        return cls(self, x, name=name)\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1451, in __init__\n        raise TypeError, x\n    TypeError: Computation failed since Maxima requested additional constraints (try the command 'assume((y-1)*(y+1)>0)' before integral or limit evaluation, for example):\n    Is  (y-1)*(y+1)  positive, negative, or zero?\n```\n\n\nHere is a maxima session (5.21.1) showing the problem.  When keepfloat is false, an integral comes right back\n\n\n```\n% sage -maxima\n;;; Loading #P\"/home/grout/sage/local/lib/ecl/sb-bsd-sockets.fas\"\n;;; Loading #P\"/home/grout/sage/local/lib/ecl/sockets.fas\"\n;;; Loading #P\"/home/grout/sage/local/lib/ecl/defsystem.fas\"\n;;; Loading #P\"/home/grout/sage/local/lib/ecl/cmp.fas\"\n;;; Loading #P\"/home/grout/sage/local/lib/ecl/sysfun.lsp\"\nMaxima 5.21.1 http://maxima.sourceforge.net\nusing Lisp ECL 10.4.1\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) assume(y^2>1);\n                                     2\n(%o1)                              [y  > 1]\n(%i2) keepfloat: true;              \n(%o2)                                true\n(%i3) integrate(log(x^2+y^2),x,0,1);\n                               2               1\n                        2 log(y  + 1) + 4 atan(-) y - 4\n                                               y\n(%o3)                   -------------------------------\n                                       2\n(%i4) integrate(log(x^2+y^2),x,0.0001414,1);\nIs  (y - 1) (y + 1)  positive, negative, or zero?\n```\n\n\n\nThere is some output mismatch in transform.pyx.  This occurs in an explanatory section of the docs, and just consists of simplifying a horrendous matrix.  The matrix just simplifies differently now (we get explicit imaginary values now, for some reason).  Does anyone want to check that the simplifications are actually correct now?\n\n\n```\nsage -t -long \"4.4.1/devel/sage/sage/plot/plot3d/transform.pyx\"\n**********************************************************************\nFile \"/home/grout/sage-4.4.1/devel/sage/sage/plot/plot3d/transform.pyx\", line 217:\n    sage: m\nExpected:\n    [                                             -(cos(theta) - 1)*x^2 + cos(theta)                 -(cos(theta) - 1)*sqrt(-x^2 - z^2 + 1)*x - sqrt(z^2)*sin(theta)         -((cos(theta) - 1)*x*z^2 - sqrt(-x^2 - z^2 + 1)*sqrt(z^2)*sin(theta))/z]\n    [                -(cos(theta) - 1)*sqrt(-x^2 - z^2 + 1)*x + sqrt(z^2)*sin(theta)                                 (cos(theta) - 1)*x^2 + (cos(theta) - 1)*z^2 + 1 -((cos(theta) - 1)*sqrt(-x^2 - z^2 + 1)*sqrt(z^2)*z + x*z*sin(theta))/sqrt(z^2)]\n    [        -((cos(theta) - 1)*x*z^2 + sqrt(-x^2 - z^2 + 1)*sqrt(z^2)*sin(theta))/z -((cos(theta) - 1)*sqrt(-x^2 - z^2 + 1)*sqrt(z^2)*z - x*z*sin(theta))/sqrt(z^2)                                              -(cos(theta) - 1)*z^2 + cos(theta)]\nGot:\n    [                                                                                                          -(cos(theta) - 1)*x^2 + cos(theta)                 -((cos(theta) - 1)*sqrt(-x^2 + 1)*sqrt(-x^2 - z^2 + 1)*x*sqrt(z^(-2)) - I*sqrt(x^2 - 1)*sin(theta))*sqrt(z^2)/sqrt(-x^2 + 1)         -((cos(theta) - 1)*sqrt(-x^2 + 1)*x*z^2*sqrt(z^(-2)) + I*sqrt(x^2 - 1)*sqrt(-x^2 - z^2 + 1)*sin(theta))*sqrt(z^2)/(sqrt(-x^2 + 1)*z)]\n    [                -((cos(theta) - 1)*sqrt(-x^2 + 1)*sqrt(-x^2 - z^2 + 1)*x*sqrt(z^(-2)) + I*sqrt(x^2 - 1)*sin(theta))*sqrt(z^2)/sqrt(-x^2 + 1)                                                                                              (cos(theta) - 1)*x^2 + (cos(theta) - 1)*z^2 + 1  (sqrt(-x^2 + 1)*sqrt(x^2 - 1)*x*z*sqrt(z^(-2))*sin(theta) - sqrt(-x^2 - z^2 + 1)*((I*cos(theta) - I)*x^2 - I*cos(theta) + I)*z)/(I*x^2 - I)]\n    [        -((cos(theta) - 1)*sqrt(-x^2 + 1)*x*z^2*sqrt(z^(-2)) - I*sqrt(x^2 - 1)*sqrt(-x^2 - z^2 + 1)*sin(theta))*sqrt(z^2)/(sqrt(-x^2 + 1)*z) -(sqrt(-x^2 + 1)*sqrt(x^2 - 1)*x*z*sqrt(z^(-2))*sin(theta) + sqrt(-x^2 - z^2 + 1)*((I*cos(theta) - I)*x^2 - I*cos(theta) + I)*z)/(I*x^2 - I)                                                                                                           -(cos(theta) - 1)*z^2 + cos(theta)]\n**********************************************************************\n```\n\n\n\n\nThere are a few errors in the interfaces/maxima.py file.  These seem to all stem from more output, rather than actual errors.\n\n\n```\nsage -t -long \"4.4.1/devel/sage/sage/interfaces/maxima.py\"  \n**********************************************************************\nFile \"/home/grout/sage-4.4.1/devel/sage/sage/interfaces/maxima.py\", line 871:\n    sage: maxima._command_runner('describe', 'gcd')\nExpected:\n    -- Function: gcd (<p_1>, <p_2>, <x_1>, ...)\n    ...\nGot:\n    ;;; Loading #P\"/home/grout/sage/local/lib/ecl/cmp.fas\"\n    ;;; Loading #P\"/home/grout/sage/local/lib/ecl/sysfun.lsp\"\n    <BLANKLINE>\n     -- Function: gcd (<p_1>, <p_2>, <x_1>, ...)\n         Returns the greatest common divisor of <p_1> and <p_2>.  The flag\n         `gcd' determines which algorithm is employed.  Setting `gcd' to\n         `ez', `subres', `red', or `spmod' selects the `ezgcd',\n         subresultant `prs', reduced, or modular algorithm, respectively.\n         If `gcd' `false' then `gcd (<p_1>, <p_2>, <x>)' always returns 1\n         for all <x>.  Many functions (e.g.  `ratsimp', `factor', etc.)\n         cause gcd's to be taken implicitly.  For homogeneous polynomials\n         it is recommended that `gcd' equal to `subres' be used.  To take\n         the gcd when an algebraic is present, e.g., `gcd (<x>^2 -\n         2*sqrt(2)*<x> + 2, <x> - sqrt(2))', `algebraic' must be `true' and\n         `gcd' must not be `ez'.\n    <BLANKLINE>\n         The `gcd' flag, default: `spmod', if `false' will also prevent the\n         greatest common divisor from being taken when expressions are\n         converted to canonical rational expression (CRE) form.  This will\n         sometimes speed the calculation if gcds are not required.\n    <BLANKLINE>\n    <BLANKLINE>\n      There are also some inexact matches for `gcd'.\n      Try `?? gcd' to see them.\n    <BLANKLINE>\n                                         true\n    <BLANKLINE>\n**********************************************************************\nFile \"/home/grout/sage-4.4.1/devel/sage/sage/interfaces/maxima.py\", line 896:\n    sage: maxima.help('gcd')\nExpected:\n    -- Function: gcd (<p_1>, <p_2>, <x_1>, ...)\n    ...\nGot:\n    ;;; Loading #P\"/home/grout/sage/local/lib/ecl/cmp.fas\"\n    ;;; Loading #P\"/home/grout/sage/local/lib/ecl/sysfun.lsp\"\n    <BLANKLINE>\n     -- Function: gcd (<p_1>, <p_2>, <x_1>, ...)\n         Returns the greatest common divisor of <p_1> and <p_2>.  The flag\n         `gcd' determines which algorithm is employed.  Setting `gcd' to\n         `ez', `subres', `red', or `spmod' selects the `ezgcd',\n         subresultant `prs', reduced, or modular algorithm, respectively.\n         If `gcd' `false' then `gcd (<p_1>, <p_2>, <x>)' always returns 1\n         for all <x>.  Many functions (e.g.  `ratsimp', `factor', etc.)\n         cause gcd's to be taken implicitly.  For homogeneous polynomials\n         it is recommended that `gcd' equal to `subres' be used.  To take\n         the gcd when an algebraic is present, e.g., `gcd (<x>^2 -\n         2*sqrt(2)*<x> + 2, <x> - sqrt(2))', `algebraic' must be `true' and\n         `gcd' must not be `ez'.\n    <BLANKLINE>\n         The `gcd' flag, default: `spmod', if `false' will also prevent the\n         greatest common divisor from being taken when expressions are\n         converted to canonical rational expression (CRE) form.  This will\n         sometimes speed the calculation if gcds are not required.\n    <BLANKLINE>\n    <BLANKLINE>\n      There are also some inexact matches for `gcd'.\n      Try `?? gcd' to see them.\n    <BLANKLINE>\n                                         true\n    <BLANKLINE>\n**********************************************************************\nFile \"/home/grout/sage-4.4.1/devel/sage/sage/interfaces/maxima.py\", line 906:\n    sage: maxima.example('arrays')\nExpected:\n    a[n]:=n*a[n-1]\n                                    a  := n a\n                                     n       n - 1\n    a[0]:1\n    a[5]\n                                          120\n    a[n]:=n\n    a[6]\n                                           6\n    a[4]\n                                          24\n                                         done\nGot:\n    ;;; Loading #P\"/home/grout/sage/local/lib/ecl/cmp.fas\"\n    ;;; Loading #P\"/home/grout/sage/local/lib/ecl/sysfun.lsp\"\n    a[n]:=n*a[n-1]\n                                    a  := n a\n                                     n       n - 1\n    a[0]:1\n    a[5]\n                                          120\n    a[n]:=n\n    a[6]\n                                           6\n    a[4]\n                                          24\n                                         done\n    <BLANKLINE>\n**********************************************************************\nFile \"/home/grout/sage-4.4.1/devel/sage/sage/interfaces/maxima.py\", line 2384:\n    sage: m.gcd._sage_doc_()\nExpected:\n    -- Function: gcd (<p_1>, <p_2>, <x_1>, ...)\n    ...\nGot:\n    ;;; Loading #P\"/home/grout/sage/local/lib/ecl/cmp.fas\"\n    ;;; Loading #P\"/home/grout/sage/local/lib/ecl/sysfun.lsp\"\n    <BLANKLINE>\n     -- Function: gcd (<p_1>, <p_2>, <x_1>, ...)\n         Returns the greatest common divisor of <p_1> and <p_2>.  The flag\n         `gcd' determines which algorithm is employed.  Setting `gcd' to\n         `ez', `subres', `red', or `spmod' selects the `ezgcd',\n         subresultant `prs', reduced, or modular algorithm, respectively.\n         If `gcd' `false' then `gcd (<p_1>, <p_2>, <x>)' always returns 1\n         for all <x>.  Many functions (e.g.  `ratsimp', `factor', etc.)\n         cause gcd's to be taken implicitly.  For homogeneous polynomials\n         it is recommended that `gcd' equal to `subres' be used.  To take\n         the gcd when an algebraic is present, e.g., `gcd (<x>^2 -\n         2*sqrt(2)*<x> + 2, <x> - sqrt(2))', `algebraic' must be `true' and\n         `gcd' must not be `ez'.\n    <BLANKLINE>\n         The `gcd' flag, default: `spmod', if `false' will also prevent the\n         greatest common divisor from being taken when expressions are\n         converted to canonical rational expression (CRE) form.  This will\n         sometimes speed the calculation if gcds are not required.\n    <BLANKLINE>\n    <BLANKLINE>\n      There are also some inexact matches for `gcd'.\n      Try `?? gcd' to see them.\n    <BLANKLINE>\n                                         true\n    <BLANKLINE>\n**********************************************************************\nFile \"/home/grout/sage-4.4.1/devel/sage/sage/interfaces/maxima.py\", line 2395:\n    sage: maxima.gcd._sage_doc_()\nExpected:\n    -- Function: gcd (<p_1>, <p_2>, <x_1>, ...)\n    ...\nGot:\n    ;;; Loading #P\"/home/grout/sage/local/lib/ecl/cmp.fas\"\n    ;;; Loading #P\"/home/grout/sage/local/lib/ecl/sysfun.lsp\"\n    <BLANKLINE>\n     -- Function: gcd (<p_1>, <p_2>, <x_1>, ...)\n         Returns the greatest common divisor of <p_1> and <p_2>.  The flag\n         `gcd' determines which algorithm is employed.  Setting `gcd' to\n         `ez', `subres', `red', or `spmod' selects the `ezgcd',\n         subresultant `prs', reduced, or modular algorithm, respectively.\n         If `gcd' `false' then `gcd (<p_1>, <p_2>, <x>)' always returns 1\n         for all <x>.  Many functions (e.g.  `ratsimp', `factor', etc.)\n         cause gcd's to be taken implicitly.  For homogeneous polynomials\n         it is recommended that `gcd' equal to `subres' be used.  To take\n         the gcd when an algebraic is present, e.g., `gcd (<x>^2 -\n         2*sqrt(2)*<x> + 2, <x> - sqrt(2))', `algebraic' must be `true' and\n         `gcd' must not be `ez'.\n    <BLANKLINE>\n         The `gcd' flag, default: `spmod', if `false' will also prevent the\n         greatest common divisor from being taken when expressions are\n         converted to canonical rational expression (CRE) form.  This will\n         sometimes speed the calculation if gcds are not required.\n    <BLANKLINE>\n    <BLANKLINE>\n      There are also some inexact matches for `gcd'.\n      Try `?? gcd' to see them.\n    <BLANKLINE>\n                                         true\n    <BLANKLINE>\n```\n\n\nFinally, I'm not sure what is happening in this error:\n\n\n```\n**********************************************************************\nFile \"/home/grout/sage-4.4.1/devel/sage/sage/interfaces/maxima.py\", line 729:\n    sage: maxima.eval('sage0: x == x;')\nExpected:\n    Traceback (most recent call last):\n    ...\n    TypeError: error evaluating \"sage0: x == x;\":...\nGot:\n    'x'\n**********************************************************************\n```\n",
     "created_at": "2010-05-13T06:07:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79787",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-8731-maxima-upgrade.patch](tarball://root/attachments/some-uuid/ticket8731/trac-8731-maxima-upgrade.patch) by jason created at 2010-05-13 06:07:32
+Attachment [trac-8731-maxima-upgrade.patch](tarball://root/attachments/some-uuid/ticket8731/trac-8731-maxima-upgrade.patch) by @jasongrout created at 2010-05-13 06:07:32
 
 The doctests that still fail after the patch is applied (under ptestlong) are listed below:
 
@@ -882,7 +882,7 @@ archive/issue_comments_079788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79788",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -900,7 +900,7 @@ archive/issue_comments_079789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79789",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -920,7 +920,7 @@ archive/issue_comments_079790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79790",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -943,7 +943,7 @@ archive/issue_comments_079791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79791",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -961,7 +961,7 @@ archive/issue_comments_079792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79792",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1011,7 +1011,7 @@ archive/issue_comments_079793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79793",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1029,7 +1029,7 @@ archive/issue_comments_079794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79794",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1047,7 +1047,7 @@ archive/issue_comments_079795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79795",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1156,7 +1156,7 @@ archive/issue_comments_079796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79796",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1176,7 +1176,7 @@ archive/issue_comments_079797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79797",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1206,7 +1206,7 @@ archive/issue_comments_079798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79798",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1233,7 +1233,7 @@ archive/issue_comments_079799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79799",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1251,7 +1251,7 @@ archive/issue_comments_079800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79800",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1269,7 +1269,7 @@ archive/issue_comments_079801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79801",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -1289,7 +1289,7 @@ archive/issue_comments_079802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79802",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -1356,7 +1356,7 @@ archive/issue_comments_079803.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79803",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1374,7 +1374,7 @@ archive/issue_comments_079804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79804",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1401,7 +1401,7 @@ archive/issue_comments_079805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79805",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1450,7 +1450,7 @@ archive/issue_comments_079806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79806",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1468,7 +1468,7 @@ archive/issue_comments_079807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79807",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1486,7 +1486,7 @@ archive/issue_comments_079808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79808",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1577,7 +1577,7 @@ archive/issue_comments_079810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8731#issuecomment-79810",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

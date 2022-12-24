@@ -14,7 +14,7 @@ archive/issues_003773.json:
     "title": "hidden markov models -- part 2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3773",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jkantor
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3773
 archive/issue_comments_026833.json:
 ```json
 {
-    "body": "Attachment [sage-3773-part2.patch](tarball://root/attachments/some-uuid/ticket3773/sage-3773-part2.patch) by was created at 2008-08-07 14:42:40",
+    "body": "Attachment [sage-3773-part2.patch](tarball://root/attachments/some-uuid/ticket3773/sage-3773-part2.patch) by @williamstein created at 2008-08-07 14:42:40",
     "created_at": "2008-08-07T14:42:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3773#issuecomment-26833",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3773-part2.patch](tarball://root/attachments/some-uuid/ticket3773/sage-3773-part2.patch) by was created at 2008-08-07 14:42:40
+Attachment [sage-3773-part2.patch](tarball://root/attachments/some-uuid/ticket3773/sage-3773-part2.patch) by @williamstein created at 2008-08-07 14:42:40
 
 
 
@@ -50,16 +50,16 @@ Attachment [sage-3773-part2.patch](tarball://root/attachments/some-uuid/ticket37
 archive/issue_comments_026834.json:
 ```json
 {
-    "body": "Attachment [sage-3773-part3.patch](tarball://root/attachments/some-uuid/ticket3773/sage-3773-part3.patch) by was created at 2008-08-07 14:42:47",
+    "body": "Attachment [sage-3773-part3.patch](tarball://root/attachments/some-uuid/ticket3773/sage-3773-part3.patch) by @williamstein created at 2008-08-07 14:42:47",
     "created_at": "2008-08-07T14:42:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3773#issuecomment-26834",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3773-part3.patch](tarball://root/attachments/some-uuid/ticket3773/sage-3773-part3.patch) by was created at 2008-08-07 14:42:47
+Attachment [sage-3773-part3.patch](tarball://root/attachments/some-uuid/ticket3773/sage-3773-part3.patch) by @williamstein created at 2008-08-07 14:42:47
 
 
 
@@ -113,7 +113,7 @@ archive/issue_comments_026837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3773#issuecomment-26837",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -126,16 +126,16 @@ this addresses all josh's comments on #3773 and also #3726
 archive/issue_comments_026838.json:
 ```json
 {
-    "body": "Attachment [sage-3773-part5.patch](tarball://root/attachments/some-uuid/ticket3773/sage-3773-part5.patch) by was created at 2008-08-12 12:32:42\n\naddresses another referee remark",
+    "body": "Attachment [sage-3773-part5.patch](tarball://root/attachments/some-uuid/ticket3773/sage-3773-part5.patch) by @williamstein created at 2008-08-12 12:32:42\n\naddresses another referee remark",
     "created_at": "2008-08-12T12:32:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3773#issuecomment-26838",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3773-part5.patch](tarball://root/attachments/some-uuid/ticket3773/sage-3773-part5.patch) by was created at 2008-08-12 12:32:42
+Attachment [sage-3773-part5.patch](tarball://root/attachments/some-uuid/ticket3773/sage-3773-part5.patch) by @williamstein created at 2008-08-12 12:32:42
 
 addresses another referee remark
 

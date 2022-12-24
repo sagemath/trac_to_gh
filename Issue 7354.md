@@ -3,7 +3,7 @@
 archive/issues_007354.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  timdumol\n\n\n```\nWhen I click on an \"Undo\" version of a worksheet (click \"Undo\", then click on a revision), jsmath is not invoked, so I see a bunch of latex code instead of typeset math.  It would be nice if jsmath was invoked when looking at a revision of a worksheet.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7354\n\n",
+    "body": "Assignee: boothby\n\nCC:  @TimDumol\n\n\n```\nWhen I click on an \"Undo\" version of a worksheet (click \"Undo\", then click on a revision), jsmath is not invoked, so I see a bunch of latex code instead of typeset math.  It would be nice if jsmath was invoked when looking at a revision of a worksheet.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7354\n\n",
     "created_at": "2009-10-30T03:09:29Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007354.json:
     "title": "use jsmath to render revisions of worksheets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7354",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
 
-CC:  timdumol
+CC:  @TimDumol
 
 
 ```
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7354
 archive/issue_comments_061596.json:
 ```json
 {
-    "body": "Attachment [trac_7354-jsmath_undo_revision.patch](tarball://root/attachments/some-uuid/ticket7354/trac_7354-jsmath_undo_revision.patch) by mpatel created at 2009-10-31 09:36:18\n\nInvoke jsMath for worksheet \"undo\" revisions.",
+    "body": "Attachment [trac_7354-jsmath_undo_revision.patch](tarball://root/attachments/some-uuid/ticket7354/trac_7354-jsmath_undo_revision.patch) by @qed777 created at 2009-10-31 09:36:18\n\nInvoke jsMath for worksheet \"undo\" revisions.",
     "created_at": "2009-10-31T09:36:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7354#issuecomment-61596",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7354-jsmath_undo_revision.patch](tarball://root/attachments/some-uuid/ticket7354/trac_7354-jsmath_undo_revision.patch) by mpatel created at 2009-10-31 09:36:18
+Attachment [trac_7354-jsmath_undo_revision.patch](tarball://root/attachments/some-uuid/ticket7354/trac_7354-jsmath_undo_revision.patch) by @qed777 created at 2009-10-31 09:36:18
 
 Invoke jsMath for worksheet "undo" revisions.
 
@@ -63,7 +63,7 @@ archive/issue_comments_061597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7354#issuecomment-61597",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_061598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7354#issuecomment-61598",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_061599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7354#issuecomment-61599",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_061600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7354#issuecomment-61600",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_061601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7354#issuecomment-61601",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_061602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7354#issuecomment-61602",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

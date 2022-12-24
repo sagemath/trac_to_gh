@@ -3,7 +3,7 @@
 archive/issues_009307.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  rlm\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9307\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @rlmill\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9307\n\n",
     "created_at": "2010-06-22T13:18:21Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_009307.json:
     "title": "delete GHMM standard spkg from Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9307",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: GeorgSWeber
 
-CC:  rlm
+CC:  @rlmill
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_087652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9307",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9307#issuecomment-87652",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_087653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9307",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9307#issuecomment-87653",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_087654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9307",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9307#issuecomment-87654",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_004069.json:
 ```json
 {
-    "body": "Assignee: schilly\n\nSome additional lines in the html-header enable proper handling of the sage notebook as a \"desktop application\". There, all elements from the browser UI are removed and it looks like an application with a shortcut on the desktop or start menu. This is probably more widespread used once HTML 5 ideas are used in other browsers as well.\n\nI'll attach nice icons and a text to this ticket.\n\n[read more here `@`google chrome webmasters/section 15.](http://www.google.com/chrome/intl/en/webmasters-faq.html#tools) and the link to the gears desktop api\n\nIssue created by migration from https://trac.sagemath.org/ticket/4069\n\n",
+    "body": "Assignee: @haraldschilly\n\nSome additional lines in the html-header enable proper handling of the sage notebook as a \"desktop application\". There, all elements from the browser UI are removed and it looks like an application with a shortcut on the desktop or start menu. This is probably more widespread used once HTML 5 ideas are used in other browsers as well.\n\nI'll attach nice icons and a text to this ticket.\n\n[read more here `@`google chrome webmasters/section 15.](http://www.google.com/chrome/intl/en/webmasters-faq.html#tools) and the link to the gears desktop api\n\nIssue created by migration from https://trac.sagemath.org/ticket/4069\n\n",
     "created_at": "2008-09-06T14:47:46Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_004069.json:
     "title": "support \"application shortcut\" in chrome and gears",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4069",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
-Assignee: schilly
+Assignee: @haraldschilly
 
 Some additional lines in the html-header enable proper handling of the sage notebook as a "desktop application". There, all elements from the browser UI are removed and it looks like an application with a shortcut on the desktop or start menu. This is probably more widespread used once HTML 5 ideas are used in other browsers as well.
 

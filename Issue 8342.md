@@ -159,7 +159,7 @@ archive/issue_comments_074463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8342#issuecomment-74463",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_074464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8342#issuecomment-74464",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_074466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8342#issuecomment-74466",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_074467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8342#issuecomment-74467",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_074468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8342#issuecomment-74468",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_074469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8342#issuecomment-74469",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -324,7 +324,7 @@ archive/issue_comments_074470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8342#issuecomment-74470",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

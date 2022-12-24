@@ -3,7 +3,7 @@
 archive/issues_005700.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nSince #5555 is not part of Sage, strings like \\ZZ, \\GF{q}, or \\QQ in docstrings lead to errors when processing the PDF version of the reference manual (and lead to strings like \\ZZ, etc., appearing as is in the html version).  This patch changes \\ZZ to \\mathbf{Z}, etc.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5700\n\n",
+    "body": "Assignee: @jhpalmieri\n\nSince #5555 is not part of Sage, strings like \\ZZ, \\GF{q}, or \\QQ in docstrings lead to errors when processing the PDF version of the reference manual (and lead to strings like \\ZZ, etc., appearing as is in the html version).  This patch changes \\ZZ to \\mathbf{Z}, etc.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5700\n\n",
     "created_at": "2009-04-06T20:41:19Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_005700.json:
     "title": "[with patch, needs review] 3.4.1.rc1: reference manual fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5700",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 Since #5555 is not part of Sage, strings like \ZZ, \GF{q}, or \QQ in docstrings lead to errors when processing the PDF version of the reference manual (and lead to strings like \ZZ, etc., appearing as is in the html version).  This patch changes \ZZ to \mathbf{Z}, etc.
 
@@ -33,16 +33,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5700
 archive/issue_comments_044551.json:
 ```json
 {
-    "body": "Attachment [5700.patch](tarball://root/attachments/some-uuid/ticket5700/5700.patch) by jhpalmieri created at 2009-04-06 20:42:02",
+    "body": "Attachment [5700.patch](tarball://root/attachments/some-uuid/ticket5700/5700.patch) by @jhpalmieri created at 2009-04-06 20:42:02",
     "created_at": "2009-04-06T20:42:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5700",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5700#issuecomment-44551",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [5700.patch](tarball://root/attachments/some-uuid/ticket5700/5700.patch) by jhpalmieri created at 2009-04-06 20:42:02
+Attachment [5700.patch](tarball://root/attachments/some-uuid/ticket5700/5700.patch) by @jhpalmieri created at 2009-04-06 20:42:02
 
 
 
@@ -78,7 +78,7 @@ archive/issue_comments_044553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5700",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5700#issuecomment-44553",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_044554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5700",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5700#issuecomment-44554",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_044555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5700",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5700#issuecomment-44555",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_044556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5700",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5700#issuecomment-44556",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

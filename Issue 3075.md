@@ -14,7 +14,7 @@ archive/issues_003075.json:
     "title": "notebook -- add a \"test\" option",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3075",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -39,7 +39,7 @@ archive/issue_comments_021218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3075#issuecomment-21218",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_021219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3075#issuecomment-21219",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_021220.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3075#issuecomment-21220",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -103,16 +103,16 @@ Changing status from new to assigned.
 archive/issue_comments_021221.json:
 ```json
 {
-    "body": "Changing assignee from boothby to mhansen.",
+    "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2008-09-08T01:29:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3075#issuecomment-21221",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from boothby to mhansen.
+Changing assignee from boothby to @mwhansen.
 
 
 
@@ -126,7 +126,7 @@ archive/issue_comments_021222.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3075#issuecomment-21222",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_021224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3075#issuecomment-21224",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_021226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3075#issuecomment-21226",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

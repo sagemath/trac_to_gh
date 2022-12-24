@@ -122,16 +122,16 @@ The attached does *NOT* depend on #4078.  In fact, it conflicts hugely.  If it i
 archive/issue_comments_029538.json:
 ```json
 {
-    "body": "Attachment [trac_4094.patch](tarball://root/attachments/some-uuid/ticket4094/trac_4094.patch) by mhansen created at 2008-09-10 00:24:51",
+    "body": "Attachment [trac_4094.patch](tarball://root/attachments/some-uuid/ticket4094/trac_4094.patch) by @mwhansen created at 2008-09-10 00:24:51",
     "created_at": "2008-09-10T00:24:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4094#issuecomment-29538",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4094.patch](tarball://root/attachments/some-uuid/ticket4094/trac_4094.patch) by mhansen created at 2008-09-10 00:24:51
+Attachment [trac_4094.patch](tarball://root/attachments/some-uuid/ticket4094/trac_4094.patch) by @mwhansen created at 2008-09-10 00:24:51
 
 
 
@@ -145,7 +145,7 @@ archive/issue_comments_029539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4094#issuecomment-29539",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

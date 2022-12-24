@@ -14,7 +14,7 @@ archive/issues_006016.json:
     "title": "factoring rational functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6016",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
 Assignee: tbd
@@ -58,16 +58,16 @@ Michael
 archive/issue_comments_047866.json:
 ```json
 {
-    "body": "Attachment [12063.patch](tarball://root/attachments/some-uuid/ticket6016/12063.patch) by syazdani created at 2009-05-11 04:30:17\n\nIs this the right format?",
+    "body": "Attachment [12063.patch](tarball://root/attachments/some-uuid/ticket6016/12063.patch) by @syazdani77 created at 2009-05-11 04:30:17\n\nIs this the right format?",
     "created_at": "2009-05-11T04:30:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6016#issuecomment-47866",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
 
-Attachment [12063.patch](tarball://root/attachments/some-uuid/ticket6016/12063.patch) by syazdani created at 2009-05-11 04:30:17
+Attachment [12063.patch](tarball://root/attachments/some-uuid/ticket6016/12063.patch) by @syazdani77 created at 2009-05-11 04:30:17
 
 Is this the right format?
 
@@ -169,7 +169,7 @@ archive/issue_comments_047871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6016#issuecomment-47871",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_047872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6016#issuecomment-47872",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_047873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6016#issuecomment-47873",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

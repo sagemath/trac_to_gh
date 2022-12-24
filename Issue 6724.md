@@ -50,16 +50,16 @@ based on Sage 4.1.1.rc2
 archive/issue_comments_055157.json:
 ```json
 {
-    "body": "Attachment [trac_6724-spell-check-modules.patch](tarball://root/attachments/some-uuid/ticket6724/trac_6724-spell-check-modules.patch) by wuthrich created at 2009-08-12 10:19:10\n\nI don't think I should give a positive review here. The docbuild gives me :\n\n```\nWarning: could not import sage.modules.fg_pid.fgp_morphism\ncannot import name FGP_Morphism\n```\n",
+    "body": "Attachment [trac_6724-spell-check-modules.patch](tarball://root/attachments/some-uuid/ticket6724/trac_6724-spell-check-modules.patch) by @categorie created at 2009-08-12 10:19:10\n\nI don't think I should give a positive review here. The docbuild gives me :\n\n```\nWarning: could not import sage.modules.fg_pid.fgp_morphism\ncannot import name FGP_Morphism\n```\n",
     "created_at": "2009-08-12T10:19:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6724#issuecomment-55157",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_6724-spell-check-modules.patch](tarball://root/attachments/some-uuid/ticket6724/trac_6724-spell-check-modules.patch) by wuthrich created at 2009-08-12 10:19:10
+Attachment [trac_6724-spell-check-modules.patch](tarball://root/attachments/some-uuid/ticket6724/trac_6724-spell-check-modules.patch) by @categorie created at 2009-08-12 10:19:10
 
 I don't think I should give a positive review here. The docbuild gives me :
 
@@ -110,7 +110,7 @@ archive/issue_comments_055159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6724#issuecomment-55159",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -320,7 +320,7 @@ archive/issue_comments_055162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6724#issuecomment-55162",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -340,7 +340,7 @@ archive/issue_comments_055163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6724#issuecomment-55163",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

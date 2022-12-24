@@ -3,7 +3,7 @@
 archive/issues_007123.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  rbeezer\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7123\n\n",
+    "body": "Assignee: somebody\n\nCC:  @rbeezer\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7123\n\n",
     "created_at": "2009-10-05T15:56:07Z",
     "labels": [
         "cryptography",
@@ -19,7 +19,7 @@ archive/issues_007123.json:
 ```
 Assignee: somebody
 
-CC:  rbeezer
+CC:  @rbeezer
 
 As the subject says.
 
@@ -39,7 +39,7 @@ archive/issue_comments_059039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59039",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_059045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59045",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_059046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59046",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -465,7 +465,7 @@ archive/issue_comments_059049.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59049",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -676,7 +676,7 @@ archive/issue_comments_059057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59057",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -694,7 +694,7 @@ archive/issue_comments_059058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59058",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -858,7 +858,7 @@ archive/issue_comments_059064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59064",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -876,7 +876,7 @@ archive/issue_comments_059065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59065",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -902,7 +902,7 @@ archive/issue_comments_059066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59066",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -920,7 +920,7 @@ archive/issue_comments_059067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59067",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -933,16 +933,16 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_059068.json:
 ```json
 {
-    "body": "Attachment [trac_7123-iter.patch](tarball://root/attachments/some-uuid/ticket7123/trac_7123-iter.patch) by mhansen created at 2009-10-19 07:17:35\n\nThis doesn't work after the changes in #7198.",
+    "body": "Attachment [trac_7123-iter.patch](tarball://root/attachments/some-uuid/ticket7123/trac_7123-iter.patch) by @mwhansen created at 2009-10-19 07:17:35\n\nThis doesn't work after the changes in #7198.",
     "created_at": "2009-10-19T07:17:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59068",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_7123-iter.patch](tarball://root/attachments/some-uuid/ticket7123/trac_7123-iter.patch) by mhansen created at 2009-10-19 07:17:35
+Attachment [trac_7123-iter.patch](tarball://root/attachments/some-uuid/ticket7123/trac_7123-iter.patch) by @mwhansen created at 2009-10-19 07:17:35
 
 This doesn't work after the changes in #7198.
 
@@ -958,7 +958,7 @@ archive/issue_comments_059069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59069",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -976,7 +976,7 @@ archive/issue_comments_059070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59070",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -1050,7 +1050,7 @@ archive/issue_comments_059073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59073",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -1068,7 +1068,7 @@ archive/issue_comments_059074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59074",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

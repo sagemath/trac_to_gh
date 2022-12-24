@@ -3,7 +3,7 @@
 archive/issues_006048.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nThis patch changes a non-ASCII hyphen to an ASCII hyphen.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6048\n\n",
+    "body": "Assignee: @jhpalmieri\n\nThis patch changes a non-ASCII hyphen to an ASCII hyphen.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6048\n\n",
     "created_at": "2009-05-16T16:18:50Z",
     "labels": [
         "cryptography",
@@ -14,10 +14,10 @@ archive/issues_006048.json:
     "title": "[with patch, needs review] fix non-ASCII character in mpolynomialsystem",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6048",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 This patch changes a non-ASCII hyphen to an ASCII hyphen.
 
@@ -33,16 +33,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6048
 archive/issue_comments_048184.json:
 ```json
 {
-    "body": "Attachment [non-ascii.patch](tarball://root/attachments/some-uuid/ticket6048/non-ascii.patch) by malb created at 2009-05-16 17:23:50\n\nWoops, sorry.",
+    "body": "Attachment [non-ascii.patch](tarball://root/attachments/some-uuid/ticket6048/non-ascii.patch) by @malb created at 2009-05-16 17:23:50\n\nWoops, sorry.",
     "created_at": "2009-05-16T17:23:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6048#issuecomment-48184",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [non-ascii.patch](tarball://root/attachments/some-uuid/ticket6048/non-ascii.patch) by malb created at 2009-05-16 17:23:50
+Attachment [non-ascii.patch](tarball://root/attachments/some-uuid/ticket6048/non-ascii.patch) by @malb created at 2009-05-16 17:23:50
 
 Woops, sorry.
 

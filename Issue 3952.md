@@ -3,7 +3,7 @@
 archive/issues_003952.json:
 ```json
 {
-    "body": "Assignee: was\n\nCurrently we have an error when calling these functions with constants.  Using fast_float will take care of this and presumably make the functions *way* faster to boot.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3952\n\n",
+    "body": "Assignee: @williamstein\n\nCurrently we have an error when calling these functions with constants.  Using fast_float will take care of this and presumably make the functions *way* faster to boot.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3952\n\n",
     "created_at": "2008-08-25T21:58:09Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_003952.json:
     "title": "make plot() and parametric_plot() use fast_float on their functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3952",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Currently we have an error when calling these functions with constants.  Using fast_float will take care of this and presumably make the functions *way* faster to boot.
 
@@ -37,7 +37,7 @@ archive/issue_comments_028369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3952#issuecomment-28369",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_028370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3952#issuecomment-28370",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_028371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3952#issuecomment-28371",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -167,16 +167,16 @@ Michael
 archive/issue_comments_028375.json:
 ```json
 {
-    "body": "Attachment [trac_3952.patch](tarball://root/attachments/some-uuid/ticket3952/trac_3952.patch) by mhansen created at 2008-08-26 21:26:57\n\nI've attached a new patch which fixes the issue.",
+    "body": "Attachment [trac_3952.patch](tarball://root/attachments/some-uuid/ticket3952/trac_3952.patch) by @mwhansen created at 2008-08-26 21:26:57\n\nI've attached a new patch which fixes the issue.",
     "created_at": "2008-08-26T21:26:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3952#issuecomment-28375",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3952.patch](tarball://root/attachments/some-uuid/ticket3952/trac_3952.patch) by mhansen created at 2008-08-26 21:26:57
+Attachment [trac_3952.patch](tarball://root/attachments/some-uuid/ticket3952/trac_3952.patch) by @mwhansen created at 2008-08-26 21:26:57
 
 I've attached a new patch which fixes the issue.
 

@@ -3,7 +3,7 @@
 archive/issues_001109.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe gp interface automatically runs allocatemem() to double the Pari stack size if it gets a response back from gp that includes \"the PARI stack overflows\", and then re-executes the failing command.  However, if gp cannot grow the stack further, allocatemem() will simply print a warning message and do nothing; then the interface gets stuck in a loop.  (This gives a stack overflow, rather than an infinite loop, because the re-execution is handled by a recursive call.)\n\nI'm attaching a patch that shows one way to fix this; it notices when allocatemem() fails and simply returns the original stack-overflow error message.  (I'm not sure if this is the best approach; would it be better to raise an exception here?  Somebody familiar with the gp interface should comment.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1109\n\n",
+    "body": "Assignee: @williamstein\n\nThe gp interface automatically runs allocatemem() to double the Pari stack size if it gets a response back from gp that includes \"the PARI stack overflows\", and then re-executes the failing command.  However, if gp cannot grow the stack further, allocatemem() will simply print a warning message and do nothing; then the interface gets stuck in a loop.  (This gives a stack overflow, rather than an infinite loop, because the re-execution is handled by a recursive call.)\n\nI'm attaching a patch that shows one way to fix this; it notices when allocatemem() fails and simply returns the original stack-overflow error message.  (I'm not sure if this is the best approach; would it be better to raise an exception here?  Somebody familiar with the gp interface should comment.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1109\n\n",
     "created_at": "2007-11-06T02:43:37Z",
     "labels": [
         "interfaces",
@@ -17,7 +17,7 @@ archive/issues_001109.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The gp interface automatically runs allocatemem() to double the Pari stack size if it gets a response back from gp that includes "the PARI stack overflows", and then re-executes the failing command.  However, if gp cannot grow the stack further, allocatemem() will simply print a warning message and do nothing; then the interface gets stuck in a loop.  (This gives a stack overflow, rather than an infinite loop, because the re-execution is handled by a recursive call.)
 

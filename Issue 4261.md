@@ -14,7 +14,7 @@ archive/issues_004261.json:
     "title": "sympow Configure fails to handle aliases",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4261",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 Assignee: mabshoff
@@ -41,7 +41,7 @@ archive/issue_comments_031072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4261#issuecomment-31072",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -54,16 +54,16 @@ Forgot to mention: this was reported by David Kohel in Nancy during SD10.
 archive/issue_comments_031073.json:
 ```json
 {
-    "body": "Attachment [trac4261_sympow_Configure.patch](tarball://root/attachments/some-uuid/ticket4261/trac4261_sympow_Configure.patch) by wjp created at 2008-10-12 11:51:16",
+    "body": "Attachment [trac4261_sympow_Configure.patch](tarball://root/attachments/some-uuid/ticket4261/trac4261_sympow_Configure.patch) by @wjp created at 2008-10-12 11:51:16",
     "created_at": "2008-10-12T11:51:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4261#issuecomment-31073",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [trac4261_sympow_Configure.patch](tarball://root/attachments/some-uuid/ticket4261/trac4261_sympow_Configure.patch) by wjp created at 2008-10-12 11:51:16
+Attachment [trac4261_sympow_Configure.patch](tarball://root/attachments/some-uuid/ticket4261/trac4261_sympow_Configure.patch) by @wjp created at 2008-10-12 11:51:16
 
 
 
@@ -121,7 +121,7 @@ archive/issue_comments_031076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4261#issuecomment-31076",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_031078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4261#issuecomment-31078",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

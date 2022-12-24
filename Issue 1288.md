@@ -14,7 +14,7 @@ archive/issues_001288.json:
     "title": "misformating of some of the reference manual in live version; also out of date",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1288",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -75,7 +75,7 @@ archive/issue_comments_008087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1288#issuecomment-8087",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -88,16 +88,16 @@ Changing status from new to assigned.
 archive/issue_comments_008088.json:
 ```json
 {
-    "body": "Changing assignee from tba to mhansen.",
+    "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2007-12-06T21:15:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1288#issuecomment-8088",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tba to mhansen.
+Changing assignee from tba to @mwhansen.
 
 
 
@@ -106,16 +106,16 @@ Changing assignee from tba to mhansen.
 archive/issue_comments_008089.json:
 ```json
 {
-    "body": "Attachment [1288-doc.patch](tarball://root/attachments/some-uuid/ticket1288/1288-doc.patch) by mhansen created at 2007-12-08 05:25:22",
+    "body": "Attachment [1288-doc.patch](tarball://root/attachments/some-uuid/ticket1288/1288-doc.patch) by @mwhansen created at 2007-12-08 05:25:22",
     "created_at": "2007-12-08T05:25:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1288#issuecomment-8089",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1288-doc.patch](tarball://root/attachments/some-uuid/ticket1288/1288-doc.patch) by mhansen created at 2007-12-08 05:25:22
+Attachment [1288-doc.patch](tarball://root/attachments/some-uuid/ticket1288/1288-doc.patch) by @mwhansen created at 2007-12-08 05:25:22
 
 
 

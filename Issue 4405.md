@@ -3,7 +3,7 @@
 archive/issues_004405.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  kcrisman\n\nKeywords: docstring, triple ''', triple \"\"\"\n\nAt this [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/1dc6a340db91e7ac) thread, kcrisman reported the following problem with single quotation marks in docstring:\n\n```\nI came across some very strange behavior recently regarding docstrings\nin functions.  In the notebook in 3.2.alpha0 and 3.0.6, putting an\napostrophe in the docstring causes various bugs.  It doesn't have to\nbe in any particular spot, as far as I can tell; in fact, it took a\nlong time to pinpoint this as the source of the problem!\n\nMore precisely, it seems to cause the preparser to turn off or\nsomething, because it disallows the following (in the function\ndefinition):\nf(x)=x^3\nbecause of the f(x), and\nf=x^3\nbecause of the ^ used instead of ** (the error message for the first\nis very mysterious at times, but the second one is always clear when\nyou try to use the function).\n\nI can post a link to a worksheet if it's really necessary, but\nhopefully this will be enough for someone to help.  I checked Sage and\nPython docs about documentation strings, but couldn't find anything\nabout it being bad to have apostrophes; in fact, some Sage docstrings\nhave them (e.g. for declaring variables).  I didn't try this in the\ncommand line, so it is possible it's only a notebook issue.\n```\n\nSome basic experimentation reveals that it's likely to be caused by the use of single quotation marks in docstring from within the console and notebook. However, the reported error as described by kcrisman seems to go away when double quotation marks are used instead of single quotation marks:\n\n```\nOK, here's my experimentation from within the console sage-3.1.4, x86\nmachine, Debian 5.0 Lenny (testing):\n\nYep, I received a similar error as you described:\n\nsage: def foo():\n....:     '''\n....:     What's up with this? x^3\n....:     '''\n....:     f(x) = x^3\n------------------------------------------------------------\n  File \"<ipython console>\", line 5\nSyntaxError: can't assign to function call (<ipython console>, line 5)\n\nJohn's suggestion about replacing the ''' with r''' results in the same error:\n\nsage: def foo():\n....:     r'''\n....:     What's up with this? x^3\n....:     '''\n....:     f(x) = x^3\n------------------------------------------------------------\n  File \"<ipython console>\", line 5\nSyntaxError: can't assign to function call (<ipython console>, line 5)\n\nAs Simon has said, the error seems to go away when I used triple \"\n(double quotation mark, not single quotation mark), which I normally\ndo anyway whenever I write docstring. But using triple ''' with or\nwithout the leading r, and with or without the question mark, resulted\nin a siimilar error:\n\nsage: def foo():\n....:     '''\n....:     What's up with this? x^3\n....:     '''\n....:     f(x) = x^3\n------------------------------------------------------------\n  File \"<ipython console>\", line 5\nSyntaxError: can't assign to function call (<ipython console>, line 5)\n\nsage: def foo():\n....:     r'''\n....:     What's up here x^3\n....:     '''\n....:     f(x) = x^3\n------------------------------------------------------------\n  File \"<ipython console>\", line 5\nSyntaxError: can't assign to function call (<ipython console>, line 5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4405\n\n",
+    "body": "Assignee: tba\n\nCC:  @kcrisman\n\nKeywords: docstring, triple ''', triple \"\"\"\n\nAt this [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/1dc6a340db91e7ac) thread, kcrisman reported the following problem with single quotation marks in docstring:\n\n```\nI came across some very strange behavior recently regarding docstrings\nin functions.  In the notebook in 3.2.alpha0 and 3.0.6, putting an\napostrophe in the docstring causes various bugs.  It doesn't have to\nbe in any particular spot, as far as I can tell; in fact, it took a\nlong time to pinpoint this as the source of the problem!\n\nMore precisely, it seems to cause the preparser to turn off or\nsomething, because it disallows the following (in the function\ndefinition):\nf(x)=x^3\nbecause of the f(x), and\nf=x^3\nbecause of the ^ used instead of ** (the error message for the first\nis very mysterious at times, but the second one is always clear when\nyou try to use the function).\n\nI can post a link to a worksheet if it's really necessary, but\nhopefully this will be enough for someone to help.  I checked Sage and\nPython docs about documentation strings, but couldn't find anything\nabout it being bad to have apostrophes; in fact, some Sage docstrings\nhave them (e.g. for declaring variables).  I didn't try this in the\ncommand line, so it is possible it's only a notebook issue.\n```\n\nSome basic experimentation reveals that it's likely to be caused by the use of single quotation marks in docstring from within the console and notebook. However, the reported error as described by kcrisman seems to go away when double quotation marks are used instead of single quotation marks:\n\n```\nOK, here's my experimentation from within the console sage-3.1.4, x86\nmachine, Debian 5.0 Lenny (testing):\n\nYep, I received a similar error as you described:\n\nsage: def foo():\n....:     '''\n....:     What's up with this? x^3\n....:     '''\n....:     f(x) = x^3\n------------------------------------------------------------\n  File \"<ipython console>\", line 5\nSyntaxError: can't assign to function call (<ipython console>, line 5)\n\nJohn's suggestion about replacing the ''' with r''' results in the same error:\n\nsage: def foo():\n....:     r'''\n....:     What's up with this? x^3\n....:     '''\n....:     f(x) = x^3\n------------------------------------------------------------\n  File \"<ipython console>\", line 5\nSyntaxError: can't assign to function call (<ipython console>, line 5)\n\nAs Simon has said, the error seems to go away when I used triple \"\n(double quotation mark, not single quotation mark), which I normally\ndo anyway whenever I write docstring. But using triple ''' with or\nwithout the leading r, and with or without the question mark, resulted\nin a siimilar error:\n\nsage: def foo():\n....:     '''\n....:     What's up with this? x^3\n....:     '''\n....:     f(x) = x^3\n------------------------------------------------------------\n  File \"<ipython console>\", line 5\nSyntaxError: can't assign to function call (<ipython console>, line 5)\n\nsage: def foo():\n....:     r'''\n....:     What's up here x^3\n....:     '''\n....:     f(x) = x^3\n------------------------------------------------------------\n  File \"<ipython console>\", line 5\nSyntaxError: can't assign to function call (<ipython console>, line 5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4405\n\n",
     "created_at": "2008-10-30T19:39:30Z",
     "labels": [
         "user interface",
@@ -19,7 +19,7 @@ archive/issues_004405.json:
 ```
 Assignee: tba
 
-CC:  kcrisman
+CC:  @kcrisman
 
 Keywords: docstring, triple ''', triple """
 
@@ -160,7 +160,7 @@ archive/issue_comments_032390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4405#issuecomment-32390",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -173,16 +173,16 @@ Changing status from new to assigned.
 archive/issue_comments_032391.json:
 ```json
 {
-    "body": "Attachment [trac_4405.patch](tarball://root/attachments/some-uuid/ticket4405/trac_4405.patch) by mhansen created at 2009-01-23 13:13:13",
+    "body": "Attachment [trac_4405.patch](tarball://root/attachments/some-uuid/ticket4405/trac_4405.patch) by @mwhansen created at 2009-01-23 13:13:13",
     "created_at": "2009-01-23T13:13:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4405#issuecomment-32391",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4405.patch](tarball://root/attachments/some-uuid/ticket4405/trac_4405.patch) by mhansen created at 2009-01-23 13:13:13
+Attachment [trac_4405.patch](tarball://root/attachments/some-uuid/ticket4405/trac_4405.patch) by @mwhansen created at 2009-01-23 13:13:13
 
 
 
@@ -191,16 +191,16 @@ Attachment [trac_4405.patch](tarball://root/attachments/some-uuid/ticket4405/tra
 archive/issue_comments_032392.json:
 ```json
 {
-    "body": "Changing assignee from tba to mhansen.",
+    "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2009-01-23T13:13:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4405#issuecomment-32392",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tba to mhansen.
+Changing assignee from tba to @mwhansen.
 
 
 
@@ -214,7 +214,7 @@ archive/issue_comments_032393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4405#issuecomment-32393",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_032394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4405#issuecomment-32394",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

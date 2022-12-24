@@ -3,7 +3,7 @@
 archive/issues_005250.json:
 ```json
 {
-    "body": "Assignee: was\n\nNotice that (ZZ/162ZZ)^* *is* cyclic:\n\n```\nsage: R = Integers(162)\nsage: R(5).multiplicative_order()\n54\nsage: euler_phi(162)\n54\n```\n\n\nHowever, Sage gets this totally wrong:\n\n```\nsage: R.multiplicative_generator()\nTraceback (most recent call last):\n...\nValueError: multiplicative group of this ring is not cyclic\n```\n\n\nThis bug came up for me today while doing some research.  I'm glad I didn't believe Sage :-). \n\nIssue created by migration from https://trac.sagemath.org/ticket/5250\n\n",
+    "body": "Assignee: @williamstein\n\nNotice that (ZZ/162ZZ)^* *is* cyclic:\n\n```\nsage: R = Integers(162)\nsage: R(5).multiplicative_order()\n54\nsage: euler_phi(162)\n54\n```\n\n\nHowever, Sage gets this totally wrong:\n\n```\nsage: R.multiplicative_generator()\nTraceback (most recent call last):\n...\nValueError: multiplicative group of this ring is not cyclic\n```\n\n\nThis bug came up for me today while doing some research.  I'm glad I didn't believe Sage :-). \n\nIssue created by migration from https://trac.sagemath.org/ticket/5250\n\n",
     "created_at": "2009-02-12T23:41:54Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_005250.json:
     "title": "But in multiplicative_generator function for Z/NZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5250",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Notice that (ZZ/162ZZ)^* *is* cyclic:
 
@@ -58,7 +58,7 @@ archive/issue_comments_040268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5250#issuecomment-40268",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -71,16 +71,16 @@ Changing status from new to assigned.
 archive/issue_comments_040269.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-05-06T14:34:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5250#issuecomment-40269",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 
@@ -94,7 +94,7 @@ archive/issue_comments_040270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5250#issuecomment-40270",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_040271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5250#issuecomment-40271",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -127,16 +127,16 @@ Oops, just realised that this breaks one or two doctests (because various functi
 archive/issue_comments_040272.json:
 ```json
 {
-    "body": "Attachment [trac_5250.patch](tarball://root/attachments/some-uuid/ticket5250/trac_5250.patch) by davidloeffler created at 2009-05-07 15:48:46\n\npatch against 3.4.2.final",
+    "body": "Attachment [trac_5250.patch](tarball://root/attachments/some-uuid/ticket5250/trac_5250.patch) by @loefflerd created at 2009-05-07 15:48:46\n\npatch against 3.4.2.final",
     "created_at": "2009-05-07T15:48:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5250#issuecomment-40272",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_5250.patch](tarball://root/attachments/some-uuid/ticket5250/trac_5250.patch) by davidloeffler created at 2009-05-07 15:48:46
+Attachment [trac_5250.patch](tarball://root/attachments/some-uuid/ticket5250/trac_5250.patch) by @loefflerd created at 2009-05-07 15:48:46
 
 patch against 3.4.2.final
 
@@ -152,7 +152,7 @@ archive/issue_comments_040273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5250#issuecomment-40273",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_040274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5250#issuecomment-40274",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_040275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5250#issuecomment-40275",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_040276.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5250#issuecomment-40276",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -223,16 +223,16 @@ Michael: don't merge this one quite yet -- it breaks one of the new doctests I a
 archive/issue_comments_040277.json:
 ```json
 {
-    "body": "Attachment [trac_5250_doctest_fix.patch](tarball://root/attachments/some-uuid/ticket5250/trac_5250_doctest_fix.patch) by davidloeffler created at 2009-05-10 21:40:02\n\nfix doctest from #4357 which this breaks",
+    "body": "Attachment [trac_5250_doctest_fix.patch](tarball://root/attachments/some-uuid/ticket5250/trac_5250_doctest_fix.patch) by @loefflerd created at 2009-05-10 21:40:02\n\nfix doctest from #4357 which this breaks",
     "created_at": "2009-05-10T21:40:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5250#issuecomment-40277",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_5250_doctest_fix.patch](tarball://root/attachments/some-uuid/ticket5250/trac_5250_doctest_fix.patch) by davidloeffler created at 2009-05-10 21:40:02
+Attachment [trac_5250_doctest_fix.patch](tarball://root/attachments/some-uuid/ticket5250/trac_5250_doctest_fix.patch) by @loefflerd created at 2009-05-10 21:40:02
 
 fix doctest from #4357 which this breaks
 
@@ -248,7 +248,7 @@ archive/issue_comments_040278.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5250#issuecomment-40278",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -307,7 +307,7 @@ archive/issue_comments_040280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5250#issuecomment-40280",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -320,16 +320,16 @@ Ah, I didn't do the long doctests. It is harmless. Patch coming in a couple of s
 archive/issue_comments_040281.json:
 ```json
 {
-    "body": "Attachment [trac_5250_doctest_fix_2.patch](tarball://root/attachments/some-uuid/ticket5250/trac_5250_doctest_fix_2.patch) by davidloeffler created at 2009-05-11 09:23:05\n\nfix borken -long doctest in modsym/ambient.py",
+    "body": "Attachment [trac_5250_doctest_fix_2.patch](tarball://root/attachments/some-uuid/ticket5250/trac_5250_doctest_fix_2.patch) by @loefflerd created at 2009-05-11 09:23:05\n\nfix borken -long doctest in modsym/ambient.py",
     "created_at": "2009-05-11T09:23:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5250#issuecomment-40281",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_5250_doctest_fix_2.patch](tarball://root/attachments/some-uuid/ticket5250/trac_5250_doctest_fix_2.patch) by davidloeffler created at 2009-05-11 09:23:05
+Attachment [trac_5250_doctest_fix_2.patch](tarball://root/attachments/some-uuid/ticket5250/trac_5250_doctest_fix_2.patch) by @loefflerd created at 2009-05-11 09:23:05
 
 fix borken -long doctest in modsym/ambient.py
 
@@ -345,7 +345,7 @@ archive/issue_comments_040282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5250#issuecomment-40282",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -363,7 +363,7 @@ archive/issue_comments_040283.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5250#issuecomment-40283",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -381,7 +381,7 @@ archive/issue_comments_040284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5250#issuecomment-40284",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

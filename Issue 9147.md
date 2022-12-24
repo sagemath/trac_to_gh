@@ -40,7 +40,7 @@ archive/issue_comments_085412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9147",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9147#issuecomment-85412",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -53,15 +53,15 @@ Resolution: invalid
 archive/issue_comments_085413.json:
 ```json
 {
-    "body": "Attachment [sage-4.4.2-enable-as-needed.patch](tarball://root/attachments/some-uuid/ticket9147/sage-4.4.2-enable-as-needed.patch) by mhansen created at 2010-06-05 17:37:27\n\nThis is already handled by #8844.",
+    "body": "Attachment [sage-4.4.2-enable-as-needed.patch](tarball://root/attachments/some-uuid/ticket9147/sage-4.4.2-enable-as-needed.patch) by @mwhansen created at 2010-06-05 17:37:27\n\nThis is already handled by #8844.",
     "created_at": "2010-06-05T17:37:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9147",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9147#issuecomment-85413",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [sage-4.4.2-enable-as-needed.patch](tarball://root/attachments/some-uuid/ticket9147/sage-4.4.2-enable-as-needed.patch) by mhansen created at 2010-06-05 17:37:27
+Attachment [sage-4.4.2-enable-as-needed.patch](tarball://root/attachments/some-uuid/ticket9147/sage-4.4.2-enable-as-needed.patch) by @mwhansen created at 2010-06-05 17:37:27
 
 This is already handled by #8844.

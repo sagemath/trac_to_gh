@@ -14,7 +14,7 @@ archive/issues_002934.json:
     "title": "doctesting files outside of sage repo is completely broken!!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2934",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: failure
@@ -113,7 +113,7 @@ archive/issue_comments_020208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2934#issuecomment-20208",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_020209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2934#issuecomment-20209",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_020210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2934#issuecomment-20210",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -162,16 +162,16 @@ apply this to the hg_scripts repo.
 archive/issue_comments_020211.json:
 ```json
 {
-    "body": "Attachment [scripts-2934.patch](tarball://root/attachments/some-uuid/ticket2934/scripts-2934.patch) by was created at 2008-04-20 17:19:22\n\nThe attached patch scripts-2934.patch enables doctesting in hidden directories.  This used to be disabled since we kept lots of temp data in ./doctest -- but now we don't do to some nice changes\nmade by Timothy Abbot.",
+    "body": "Attachment [scripts-2934.patch](tarball://root/attachments/some-uuid/ticket2934/scripts-2934.patch) by @williamstein created at 2008-04-20 17:19:22\n\nThe attached patch scripts-2934.patch enables doctesting in hidden directories.  This used to be disabled since we kept lots of temp data in ./doctest -- but now we don't do to some nice changes\nmade by Timothy Abbot.",
     "created_at": "2008-04-20T17:19:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2934#issuecomment-20211",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [scripts-2934.patch](tarball://root/attachments/some-uuid/ticket2934/scripts-2934.patch) by was created at 2008-04-20 17:19:22
+Attachment [scripts-2934.patch](tarball://root/attachments/some-uuid/ticket2934/scripts-2934.patch) by @williamstein created at 2008-04-20 17:19:22
 
 The attached patch scripts-2934.patch enables doctesting in hidden directories.  This used to be disabled since we kept lots of temp data in ./doctest -- but now we don't do to some nice changes
 made by Timothy Abbot.
@@ -188,7 +188,7 @@ archive/issue_comments_020212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2934#issuecomment-20212",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

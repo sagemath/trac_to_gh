@@ -3,7 +3,7 @@
 archive/issues_002930.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nCC:  robertwb\n\nAdd a CDF pool, optimize CD creation.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/2930\n\n",
+    "body": "Assignee: @garyfurnish\n\nCC:  @robertwb\n\nAdd a CDF pool, optimize CD creation.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/2930\n\n",
     "created_at": "2008-04-15T06:13:29Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_002930.json:
     "title": "CDF is slow, fix it.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2930",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
-CC:  robertwb
+CC:  @robertwb
 
 Add a CDF pool, optimize CD creation.  
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2930
 archive/issue_comments_020172.json:
 ```json
 {
-    "body": "Attachment [trac_2930.patch](tarball://root/attachments/some-uuid/ticket2930/trac_2930.patch) by gfurnish created at 2008-04-15 06:14:24",
+    "body": "Attachment [trac_2930.patch](tarball://root/attachments/some-uuid/ticket2930/trac_2930.patch) by @garyfurnish created at 2008-04-15 06:14:24",
     "created_at": "2008-04-15T06:14:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2930#issuecomment-20172",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_2930.patch](tarball://root/attachments/some-uuid/ticket2930/trac_2930.patch) by gfurnish created at 2008-04-15 06:14:24
+Attachment [trac_2930.patch](tarball://root/attachments/some-uuid/ticket2930/trac_2930.patch) by @garyfurnish created at 2008-04-15 06:14:24
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_020173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2930#issuecomment-20173",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_020175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2930#issuecomment-20175",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_020177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2930#issuecomment-20177",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_020180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2930#issuecomment-20180",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

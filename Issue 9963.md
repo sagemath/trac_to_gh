@@ -3,7 +3,7 @@
 archive/issues_009963.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  mhansen simonking\n\nMany Sage objects have `_pari_` and/or `_pari_init_` member functions. However, it is not at all documented how these are supposed to work. Reading the source code gives some hints, but leaves some things unexplained, for example:\n* what exactly is the interaction between `_pari_` and `_pari_init_`. Which of these two functions (or both) should be implemented?\n* Why is `_pari_init_` also used for the GP interpreter `Gp`?\n* Why must `_pari_init_` return a string? Is it only because it is also used for the GP interpreter or is there a deeper reason?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9964\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @mwhansen simonking\n\nMany Sage objects have `_pari_` and/or `_pari_init_` member functions. However, it is not at all documented how these are supposed to work. Reading the source code gives some hints, but leaves some things unexplained, for example:\n* what exactly is the interaction between `_pari_` and `_pari_init_`. Which of these two functions (or both) should be implemented?\n* Why is `_pari_init_` also used for the GP interpreter `Gp`?\n* Why must `_pari_init_` return a string? Is it only because it is also used for the GP interpreter or is there a deeper reason?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9964\n\n",
     "created_at": "2010-09-21T21:12:48Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_009963.json:
     "title": "Document _pari_ and _pari_init_",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9963",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 Assignee: mvngu
 
-CC:  mhansen simonking
+CC:  @mwhansen simonking
 
 Many Sage objects have `_pari_` and/or `_pari_init_` member functions. However, it is not at all documented how these are supposed to work. Reading the source code gives some hints, but leaves some things unexplained, for example:
 * what exactly is the interaction between `_pari_` and `_pari_init_`. Which of these two functions (or both) should be implemented?
@@ -42,7 +42,7 @@ archive/issue_comments_099803.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9963#issuecomment-99803",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -60,7 +60,7 @@ archive/issue_comments_099804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9963#issuecomment-99804",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_099805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9963#issuecomment-99805",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_099806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9963#issuecomment-99806",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_099807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9963#issuecomment-99807",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_099808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9963#issuecomment-99808",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_099809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9963#issuecomment-99809",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

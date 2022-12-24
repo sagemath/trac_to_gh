@@ -3,7 +3,7 @@
 archive/issues_008029.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  mjo mhansen\n\nKeywords: polynomial ring, power series\n\nSage 4.3 in a PowerPC Mac:\n\n```\nsage: A.<x> = RR['x']\nsage: B.<t> = PowerSeriesRing(A) # B = R[x][[t]]\nsage: 1. + O(t)\n1.00000000000000 + O(t)\nsage: 1. + O(t^2)\n1.00000000000000 + O(t^2)\nsage: 1. + O(t^3)\n1.00000000000000 + O(t^3)\nsage: 1. + O(t^4)\n\nProgram received signal EXC_BAD_ACCESS, Could not access memory.\nReason: KERN_INVALID_ADDRESS at address: 0xffffffe4\n__pyx_f_4sage_5rings_10polynomial_26polynomial_real_mpfr_dense_19PolynomialRealDense__add_ (__pyx_v_left=0x14096f8, __pyx_v__right=0x10fc6260, __pyx_skip_dispatch=0) at sage/rings/polynomial/polynomial_real_mpfr_dense.c:5360\n5360    sage/rings/polynomial/polynomial_real_mpfr_dense.c: No such file or directory.\n        in sage/rings/polynomial/polynomial_real_mpfr_dense.c\n```\n\n\nNOTE: Bug was not present in Sage v2.9.1, but was already present in v3.4 (running on 64-bit Opteron). It is *not* triggered over QQ as basefield.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8029\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @orlitzky @mwhansen\n\nKeywords: polynomial ring, power series\n\nSage 4.3 in a PowerPC Mac:\n\n```\nsage: A.<x> = RR['x']\nsage: B.<t> = PowerSeriesRing(A) # B = R[x][[t]]\nsage: 1. + O(t)\n1.00000000000000 + O(t)\nsage: 1. + O(t^2)\n1.00000000000000 + O(t^2)\nsage: 1. + O(t^3)\n1.00000000000000 + O(t^3)\nsage: 1. + O(t^4)\n\nProgram received signal EXC_BAD_ACCESS, Could not access memory.\nReason: KERN_INVALID_ADDRESS at address: 0xffffffe4\n__pyx_f_4sage_5rings_10polynomial_26polynomial_real_mpfr_dense_19PolynomialRealDense__add_ (__pyx_v_left=0x14096f8, __pyx_v__right=0x10fc6260, __pyx_skip_dispatch=0) at sage/rings/polynomial/polynomial_real_mpfr_dense.c:5360\n5360    sage/rings/polynomial/polynomial_real_mpfr_dense.c: No such file or directory.\n        in sage/rings/polynomial/polynomial_real_mpfr_dense.c\n```\n\n\nNOTE: Bug was not present in Sage v2.9.1, but was already present in v3.4 (running on 64-bit Opteron). It is *not* triggered over QQ as basefield.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8029\n\n",
     "created_at": "2010-01-21T18:47:19Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_008029.json:
     "title": "Defect: Power series over a polynomial ring with real coefficients",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8029",
-    "user": "eduenez"
+    "user": "@eduenez"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  mjo mhansen
+CC:  @orlitzky @mwhansen
 
 Keywords: polynomial ring, power series
 
@@ -57,16 +57,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8029
 archive/issue_comments_070129.json:
 ```json
 {
-    "body": "Attachment [sage-trac_8029.patch](tarball://root/attachments/some-uuid/ticket8029/sage-trac_8029.patch) by mjo created at 2011-12-16 06:15:48\n\nAdd a doctest from the description",
+    "body": "Attachment [sage-trac_8029.patch](tarball://root/attachments/some-uuid/ticket8029/sage-trac_8029.patch) by @orlitzky created at 2011-12-16 06:15:48\n\nAdd a doctest from the description",
     "created_at": "2011-12-16T06:15:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8029#issuecomment-70129",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
-Attachment [sage-trac_8029.patch](tarball://root/attachments/some-uuid/ticket8029/sage-trac_8029.patch) by mjo created at 2011-12-16 06:15:48
+Attachment [sage-trac_8029.patch](tarball://root/attachments/some-uuid/ticket8029/sage-trac_8029.patch) by @orlitzky created at 2011-12-16 06:15:48
 
 Add a doctest from the description
 
@@ -82,7 +82,7 @@ archive/issue_comments_070130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8029#issuecomment-70130",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_070131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8029#issuecomment-70131",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_070132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8029#issuecomment-70132",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_070134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8029#issuecomment-70134",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_070135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8029#issuecomment-70135",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_070136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8029#issuecomment-70136",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_070137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8029#issuecomment-70137",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_070138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8029#issuecomment-70138",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

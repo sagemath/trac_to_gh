@@ -14,7 +14,7 @@ archive/issues_000035.json:
     "title": "sage notebook load and DOS files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/35",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -39,7 +39,7 @@ archive/issue_comments_000230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/35",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/35#issuecomment-230",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_000231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/35",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/35#issuecomment-231",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009660.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nIn order to obtain the string representation of an NumberFieldFractionalIdeal, the class group of the number field is computed to determine whether or not the ideal is principal.  This can take a very long time.  For example, the following is essentially immediate:\n\n```\nsage: K.<zeta> = CyclotomicField(23)\nsage: F = K.ideal(2).factor()\n```\n\nBut now, doing\n\n```\nsage: F\n```\n\ntakes a very long time.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9660\n\n",
+    "body": "Assignee: @loefflerd\n\nIn order to obtain the string representation of an NumberFieldFractionalIdeal, the class group of the number field is computed to determine whether or not the ideal is principal.  This can take a very long time.  For example, the following is essentially immediate:\n\n```\nsage: K.<zeta> = CyclotomicField(23)\nsage: F = K.ideal(2).factor()\n```\n\nBut now, doing\n\n```\nsage: F\n```\n\ntakes a very long time.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9660\n\n",
     "created_at": "2010-08-01T15:52:53Z",
     "labels": [
         "number fields",
@@ -14,10 +14,10 @@ archive/issues_009660.json:
     "title": "Obtaining the string representation of a number field ideal takes too long",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9660",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
 In order to obtain the string representation of an NumberFieldFractionalIdeal, the class group of the number field is computed to determine whether or not the ideal is principal.  This can take a very long time.  For example, the following is essentially immediate:
 

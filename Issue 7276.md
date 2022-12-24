@@ -3,7 +3,7 @@
 archive/issues_007276.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nCC:  georgsweber was\n\nKeywords: PPC, powerpc, lattice\n\nFrom #7112: I don't think this ended up getting officially logged on trac elsewhere.\n\n\n```\nsage -t -long devel/sage/sage/rings/number_field/totallyreal_rel.py\n```\n\nwill still fail however, there is a deeper problem lurking in that one point of a certain lattice sitting in a certain rectangle is missed in the computations on a PPC platform --- but that would be another ticket. Let the doctest fail for the time being, the enhancements by the patch(es) for this ticket here are needed anyway, I guess.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7276\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  georgsweber @williamstein\n\nKeywords: PPC, powerpc, lattice\n\nFrom #7112: I don't think this ended up getting officially logged on trac elsewhere.\n\n\n```\nsage -t -long devel/sage/sage/rings/number_field/totallyreal_rel.py\n```\n\nwill still fail however, there is a deeper problem lurking in that one point of a certain lattice sitting in a certain rectangle is missed in the computations on a PPC platform --- but that would be another ticket. Let the doctest fail for the time being, the enhancements by the patch(es) for this ticket here are needed anyway, I guess.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7276\n\n",
     "created_at": "2009-10-23T23:40:35Z",
     "labels": [
         "number fields",
@@ -14,12 +14,12 @@ archive/issues_007276.json:
     "title": "Fix PPC issues in totallyreal_rel.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7276",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
-CC:  georgsweber was
+CC:  georgsweber @williamstein
 
 Keywords: PPC, powerpc, lattice
 
@@ -50,7 +50,7 @@ archive/issue_comments_060547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7276#issuecomment-60547",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_060549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7276#issuecomment-60549",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_060550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7276#issuecomment-60550",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_060551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7276#issuecomment-60551",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_060552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7276#issuecomment-60552",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_060553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7276#issuecomment-60553",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_060554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7276#issuecomment-60554",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -314,16 +314,16 @@ Changing status from new to needs_review.
 archive/issue_comments_060555.json:
 ```json
 {
-    "body": "Attachment [trac_7276.patch](tarball://root/attachments/some-uuid/ticket7276/trac_7276.patch) by was created at 2009-11-10 06:27:25\n\nI have attached a patch that does what Georg suggested above.  I also added more doctests (i.e., a cubic example) to explain what the mysterius \"C\" is.   With this patch, doctests pass on ppc, itanium, and x86_64 now. \n\nI've also emailed John Voight asking him to get the docs of this file up to snuff.",
+    "body": "Attachment [trac_7276.patch](tarball://root/attachments/some-uuid/ticket7276/trac_7276.patch) by @williamstein created at 2009-11-10 06:27:25\n\nI have attached a patch that does what Georg suggested above.  I also added more doctests (i.e., a cubic example) to explain what the mysterius \"C\" is.   With this patch, doctests pass on ppc, itanium, and x86_64 now. \n\nI've also emailed John Voight asking him to get the docs of this file up to snuff.",
     "created_at": "2009-11-10T06:27:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7276#issuecomment-60555",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7276.patch](tarball://root/attachments/some-uuid/ticket7276/trac_7276.patch) by was created at 2009-11-10 06:27:25
+Attachment [trac_7276.patch](tarball://root/attachments/some-uuid/ticket7276/trac_7276.patch) by @williamstein created at 2009-11-10 06:27:25
 
 I have attached a patch that does what Georg suggested above.  I also added more doctests (i.e., a cubic example) to explain what the mysterius "C" is.   With this patch, doctests pass on ppc, itanium, and x86_64 now. 
 
@@ -341,7 +341,7 @@ archive/issue_comments_060556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7276#issuecomment-60556",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -359,7 +359,7 @@ archive/issue_comments_060557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7276#issuecomment-60557",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_060558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7276#issuecomment-60558",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -459,7 +459,7 @@ archive/issue_comments_060561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7276#issuecomment-60561",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -472,16 +472,16 @@ ignore georg's patch above.  apply trac_7276.patch and this.
 archive/issue_comments_060562.json:
 ```json
 {
-    "body": "Attachment [trac_7276-part2.patch](tarball://root/attachments/some-uuid/ticket7276/trac_7276-part2.patch) by was created at 2009-11-11 16:43:28",
+    "body": "Attachment [trac_7276-part2.patch](tarball://root/attachments/some-uuid/ticket7276/trac_7276-part2.patch) by @williamstein created at 2009-11-11 16:43:28",
     "created_at": "2009-11-11T16:43:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7276#issuecomment-60562",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7276-part2.patch](tarball://root/attachments/some-uuid/ticket7276/trac_7276-part2.patch) by was created at 2009-11-11 16:43:28
+Attachment [trac_7276-part2.patch](tarball://root/attachments/some-uuid/ticket7276/trac_7276-part2.patch) by @williamstein created at 2009-11-11 16:43:28
 
 
 
@@ -495,7 +495,7 @@ archive/issue_comments_060563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7276#issuecomment-60563",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -513,7 +513,7 @@ archive/issue_comments_060564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7276#issuecomment-60564",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -583,7 +583,7 @@ archive/issue_comments_060567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7276#issuecomment-60567",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -601,7 +601,7 @@ archive/issue_comments_060568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7276#issuecomment-60568",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

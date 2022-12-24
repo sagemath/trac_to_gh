@@ -3,7 +3,7 @@
 archive/issues_005811.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  bump sage-combinat\n\nThis is also observable with FC9/64 bit with gcc 4.3.3 on SkyNet\n\n```\nsage -t -long \"devel/sage/sage/combinat/root_system/type_reducible.py\"\n**********************************************************************\nFile \"/space/wstein/farm/sage-3.4.1.rc3/devel/sage/sage/combinat/root_system/type_reducible.py\", line 53:\n    sage: [[x.__cmp__(y) for x in ct] for y in ct]\nExpected:\n    [[0, 1, -1], [-1, 0, -1], [1, 1, 0]]\nGot:\n    [[0, 1, 1], [-1, 0, 1], [1, 1, 0]]\n**********************************************************************\nFile \"/space/wstein/farm/sage-3.4.1.rc3/devel/sage/sage/combinat/root_system/type_reducible.py\", line 55:\n    sage: sorted(ct)\nExpected:\n    [['A', 4], A1xB2, B2xA1]\nGot:\n    [A1xB2, B2xA1, ['A', 4]]\n**********************************************************************\n```\n\n\nMaybe '__cmp__' is broken?\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5811\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @dwbump sage-combinat\n\nThis is also observable with FC9/64 bit with gcc 4.3.3 on SkyNet\n\n```\nsage -t -long \"devel/sage/sage/combinat/root_system/type_reducible.py\"\n**********************************************************************\nFile \"/space/wstein/farm/sage-3.4.1.rc3/devel/sage/sage/combinat/root_system/type_reducible.py\", line 53:\n    sage: [[x.__cmp__(y) for x in ct] for y in ct]\nExpected:\n    [[0, 1, -1], [-1, 0, -1], [1, 1, 0]]\nGot:\n    [[0, 1, 1], [-1, 0, 1], [1, 1, 0]]\n**********************************************************************\nFile \"/space/wstein/farm/sage-3.4.1.rc3/devel/sage/sage/combinat/root_system/type_reducible.py\", line 55:\n    sage: sorted(ct)\nExpected:\n    [['A', 4], A1xB2, B2xA1]\nGot:\n    [A1xB2, B2xA1, ['A', 4]]\n**********************************************************************\n```\n\n\nMaybe '__cmp__' is broken?\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5811\n\n",
     "created_at": "2009-04-17T11:29:02Z",
     "labels": [
         "doctest coverage",
@@ -19,7 +19,7 @@ archive/issues_005811.json:
 ```
 Assignee: mabshoff
 
-CC:  bump sage-combinat
+CC:  @dwbump sage-combinat
 
 This is also observable with FC9/64 bit with gcc 4.3.3 on SkyNet
 
@@ -60,16 +60,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5811
 archive/issue_comments_045637.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to mhansen.",
+    "body": "Changing assignee from mabshoff to @mwhansen.",
     "created_at": "2009-04-18T06:22:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5811",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5811#issuecomment-45637",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from mabshoff to mhansen.
+Changing assignee from mabshoff to @mwhansen.
 
 
 
@@ -78,16 +78,16 @@ Changing assignee from mabshoff to mhansen.
 archive/issue_comments_045638.json:
 ```json
 {
-    "body": "Attachment [trac_5811.patch](tarball://root/attachments/some-uuid/ticket5811/trac_5811.patch) by mhansen created at 2009-04-18 06:22:10\n\n\n```\n<mhansen> mabs: Yep\n<mabs> Have you seen #5811 ?  [17:12]\n<mabs> It can be reproduced on the farm, i.e. the FC10 test box.\n<mabs> wstein can create you an account. \n<mhansen> Actually, it don't think we need that.  [17:14]\n<mhansen> It most likely comes from this line in cartan_type.py\n<mhansen>         if other.__class__ != self.__class__:\n<mhansen>             return cmp(self.__class__, other.__class__)\n<mhansen> \n<mabs> So you think it is a bug?  [17:15]\n<mhansen> Well, I think there are no guarantees on the results of class\n          comparisons.\n<mhansen> I would be fine with just changing that doctest since the order of\n          the types doesn't really matter.  [17:17]\n<mhansen> What matters most is deciding if they are equal or not.\n```\n",
+    "body": "Attachment [trac_5811.patch](tarball://root/attachments/some-uuid/ticket5811/trac_5811.patch) by @mwhansen created at 2009-04-18 06:22:10\n\n\n```\n<mhansen> mabs: Yep\n<mabs> Have you seen #5811 ?  [17:12]\n<mabs> It can be reproduced on the farm, i.e. the FC10 test box.\n<mabs> wstein can create you an account. \n<mhansen> Actually, it don't think we need that.  [17:14]\n<mhansen> It most likely comes from this line in cartan_type.py\n<mhansen>         if other.__class__ != self.__class__:\n<mhansen>             return cmp(self.__class__, other.__class__)\n<mhansen> \n<mabs> So you think it is a bug?  [17:15]\n<mhansen> Well, I think there are no guarantees on the results of class\n          comparisons.\n<mhansen> I would be fine with just changing that doctest since the order of\n          the types doesn't really matter.  [17:17]\n<mhansen> What matters most is deciding if they are equal or not.\n```\n",
     "created_at": "2009-04-18T06:22:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5811",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5811#issuecomment-45638",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5811.patch](tarball://root/attachments/some-uuid/ticket5811/trac_5811.patch) by mhansen created at 2009-04-18 06:22:10
+Attachment [trac_5811.patch](tarball://root/attachments/some-uuid/ticket5811/trac_5811.patch) by @mwhansen created at 2009-04-18 06:22:10
 
 
 ```
@@ -121,7 +121,7 @@ archive/issue_comments_045639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5811",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5811#issuecomment-45639",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

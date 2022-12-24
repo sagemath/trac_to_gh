@@ -3,7 +3,7 @@
 archive/issues_008338.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  kcrisman\n\nKeywords: fourier,transform\n\nSage has got laplace and inverse_laplace. It should be fairly easy to add fourier and inverse_fourier. An adecuate definition for each should be agreed upon though...\n\nIssue created by migration from https://trac.sagemath.org/ticket/8338\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman\n\nKeywords: fourier,transform\n\nSage has got laplace and inverse_laplace. It should be fairly easy to add fourier and inverse_fourier. An adecuate definition for each should be agreed upon though...\n\nIssue created by migration from https://trac.sagemath.org/ticket/8338\n\n",
     "created_at": "2010-02-23T19:36:16Z",
     "labels": [
         "calculus",
@@ -17,9 +17,9 @@ archive/issues_008338.json:
     "user": "olazo"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  kcrisman
+CC:  @kcrisman
 
 Keywords: fourier,transform
 
@@ -41,7 +41,7 @@ archive/issue_comments_074443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8338#issuecomment-74443",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -56,7 +56,7 @@ For the FT, I vote to use the normalization so that FT is an isometry from L<sup
 archive/issue_comments_074444.json:
 ```json
 {
-    "body": "Changing assignee from burcin to olazo.",
+    "body": "Changing assignee from @burcin to olazo.",
     "created_at": "2010-02-24T01:27:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8338",
     "type": "issue_comment",
@@ -65,7 +65,7 @@ archive/issue_comments_074444.json:
 }
 ```
 
-Changing assignee from burcin to olazo.
+Changing assignee from @burcin to olazo.
 
 
 
@@ -126,7 +126,7 @@ archive/issue_comments_074447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8338#issuecomment-74447",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_074448.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8338#issuecomment-74448",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

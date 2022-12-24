@@ -3,7 +3,7 @@
 archive/issues_000373.json:
 ```json
 {
-    "body": "Assignee: moretti\n\nKeywords: constants, pi\n\n\n\n\n```\ng = pi == 2*x\ng.solve()\n///\nTraceback (most recent call last):    g.solve()\n File \"element.pyx\", line 413, in element.Element.__richcmp__\n File \"element.pyx\", line 376, in element.Element._richcmp\n File \"/sage/local/lib/python2.5/site-packages/sage/functions/functions.py\",\nline 269, in __cmp__\n   c = cmp(R(self), R(right))\n File \"real_mpfr.pyx\", line 222, in real_mpfr.RealField.__call__\n File \"/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py\",\nline 2461, in _mpfr_\n   return self.simplify()._mpfr_(field)\n File \"/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py\",\nline 2462, in _mpfr_\n   rops = [op._mpfr_(field) for op in self._operands]\n File \"/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py\",\nline 652, in _mpfr_\n   raise TypeError\nTypeError\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/373\n\n",
+    "body": "Assignee: @bobmoretti\n\nKeywords: constants, pi\n\n\n\n\n```\ng = pi == 2*x\ng.solve()\n///\nTraceback (most recent call last):    g.solve()\n File \"element.pyx\", line 413, in element.Element.__richcmp__\n File \"element.pyx\", line 376, in element.Element._richcmp\n File \"/sage/local/lib/python2.5/site-packages/sage/functions/functions.py\",\nline 269, in __cmp__\n   c = cmp(R(self), R(right))\n File \"real_mpfr.pyx\", line 222, in real_mpfr.RealField.__call__\n File \"/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py\",\nline 2461, in _mpfr_\n   return self.simplify()._mpfr_(field)\n File \"/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py\",\nline 2462, in _mpfr_\n   rops = [op._mpfr_(field) for op in self._operands]\n File \"/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py\",\nline 652, in _mpfr_\n   raise TypeError\nTypeError\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/373\n\n",
     "created_at": "2007-05-22T00:12:04Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_000373.json:
     "title": "pi coercion issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/373",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
-Assignee: moretti
+Assignee: @bobmoretti
 
 Keywords: constants, pi
 
@@ -64,7 +64,7 @@ archive/issue_comments_001781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/373#issuecomment-1781",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_001782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/373#issuecomment-1782",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_001783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/373#issuecomment-1783",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

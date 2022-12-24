@@ -3,7 +3,7 @@
 archive/issues_006841.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  rbeezer\n\nImplement the shift cryptosystem for educational purposes. This adds to the classical cryptosystems already implemented.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6841\n\n",
+    "body": "Assignee: somebody\n\nCC:  @rbeezer\n\nImplement the shift cryptosystem for educational purposes. This adds to the classical cryptosystems already implemented.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6841\n\n",
     "created_at": "2009-08-29T08:55:28Z",
     "labels": [
         "cryptography",
@@ -19,7 +19,7 @@ archive/issues_006841.json:
 ```
 Assignee: somebody
 
-CC:  rbeezer
+CC:  @rbeezer
 
 Implement the shift cryptosystem for educational purposes. This adds to the classical cryptosystems already implemented.
 
@@ -135,7 +135,7 @@ archive/issue_comments_056439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6841#issuecomment-56439",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 

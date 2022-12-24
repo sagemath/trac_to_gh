@@ -174,16 +174,16 @@ However, for some reason, it doesn't catch yes14.h nor yes17b. So this is not ye
 archive/issue_comments_038542.json:
 ```json
 {
-    "body": "Attachment [5060-deps.patch](tarball://root/attachments/some-uuid/ticket5060/5060-deps.patch) by robertwb created at 2009-01-23 13:16:08\n\nThe original bug was due to the fact that \"^ *\" was only required for the first grouping. \n\nGiven that more than one module could be cimported in a single statement, it took an extra loop in the parsing code as well.",
+    "body": "Attachment [5060-deps.patch](tarball://root/attachments/some-uuid/ticket5060/5060-deps.patch) by @robertwb created at 2009-01-23 13:16:08\n\nThe original bug was due to the fact that \"^ *\" was only required for the first grouping. \n\nGiven that more than one module could be cimported in a single statement, it took an extra loop in the parsing code as well.",
     "created_at": "2009-01-23T13:16:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5060",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5060#issuecomment-38542",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5060-deps.patch](tarball://root/attachments/some-uuid/ticket5060/5060-deps.patch) by robertwb created at 2009-01-23 13:16:08
+Attachment [5060-deps.patch](tarball://root/attachments/some-uuid/ticket5060/5060-deps.patch) by @robertwb created at 2009-01-23 13:16:08
 
 The original bug was due to the fact that "^ *" was only required for the first grouping. 
 
@@ -201,7 +201,7 @@ archive/issue_comments_038543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5060",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5060#issuecomment-38543",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_038549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5060",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5060#issuecomment-38549",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_038550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5060",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5060#issuecomment-38550",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -363,7 +363,7 @@ archive/issue_comments_038551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5060",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5060#issuecomment-38551",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -381,7 +381,7 @@ archive/issue_comments_038552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5060",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5060#issuecomment-38552",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

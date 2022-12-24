@@ -14,7 +14,7 @@ archive/issues_000437.json:
     "title": "sage-2.8.1 -- notebook(secure=True) seems broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/437",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_002189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/437#issuecomment-2189",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

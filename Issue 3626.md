@@ -3,7 +3,7 @@
 archive/issues_003626.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  rlm\n\n\n```\nsage: G = Graph(\"George\")\nsage: G.set_boundary(set([1,2,3]))\nsage: G.get_boundary()\n[]\n```\n\n\n... which makes sense, given the code...\n\n\n```\n    def set_boundary(self, boundary):\n        ...\n        if isinstance(boundary,list):\n            self._boundary = boundary\n\n    def set_embedding(self, embedding):\n        ...\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3626\n\n",
+    "body": "Assignee: boothby\n\nCC:  @rlmill\n\n\n```\nsage: G = Graph(\"George\")\nsage: G.set_boundary(set([1,2,3]))\nsage: G.get_boundary()\n[]\n```\n\n\n... which makes sense, given the code...\n\n\n```\n    def set_boundary(self, boundary):\n        ...\n        if isinstance(boundary,list):\n            self._boundary = boundary\n\n    def set_embedding(self, embedding):\n        ...\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3626\n\n",
     "created_at": "2008-07-09T18:49:36Z",
     "labels": [
         "graph theory",
@@ -19,7 +19,7 @@ archive/issues_003626.json:
 ```
 Assignee: boothby
 
-CC:  rlm
+CC:  @rlmill
 
 
 ```
@@ -79,7 +79,7 @@ archive/issue_comments_025662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3626#issuecomment-25662",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

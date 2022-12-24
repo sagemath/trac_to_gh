@@ -3,7 +3,7 @@
 archive/issues_009177.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  dimpase drkirkby\n\nCddlib's ./configure script should support --with=gmp=<path>. This ticket is a followup to #8730, where a stopgap measure was implemented instead. This ticket will provide rewritten autotools sources (configure.ac and Makefile.am's) to achieve this. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9177\n\n",
+    "body": "Assignee: tbd\n\nCC:  @dimpase drkirkby\n\nCddlib's ./configure script should support --with=gmp=<path>. This ticket is a followup to #8730, where a stopgap measure was implemented instead. This ticket will provide rewritten autotools sources (configure.ac and Makefile.am's) to achieve this. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9177\n\n",
     "created_at": "2010-06-07T11:34:42Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_009177.json:
     "title": "cddlib has hard-coded gmp path",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9177",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 Assignee: tbd
 
-CC:  dimpase drkirkby
+CC:  @dimpase drkirkby
 
 Cddlib's ./configure script should support --with=gmp=<path>. This ticket is a followup to #8730, where a stopgap measure was implemented instead. This ticket will provide rewritten autotools sources (configure.ac and Makefile.am's) to achieve this. 
 
@@ -39,7 +39,7 @@ archive/issue_comments_085854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9177#issuecomment-85854",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_085855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9177#issuecomment-85855",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_085858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9177#issuecomment-85858",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_085859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9177#issuecomment-85859",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_085860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9177#issuecomment-85860",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_085861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9177#issuecomment-85861",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_085862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9177#issuecomment-85862",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -332,7 +332,7 @@ archive/issue_comments_085864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9177#issuecomment-85864",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -350,7 +350,7 @@ archive/issue_comments_085865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9177#issuecomment-85865",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -368,7 +368,7 @@ archive/issue_comments_085866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9177#issuecomment-85866",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_085867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9177#issuecomment-85867",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -521,7 +521,7 @@ archive/issue_comments_085870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9177#issuecomment-85870",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009014.json:
 ```json
 {
-    "body": "Assignee: jason\n\nCC:  nthiery\n\nKeywords: repr product\n\nAs for linear combinaison, implement a method in misc 'repr_prod' to represent products. \n\n\n```\ndef repr_prodcomb(symbols, coeffs, is_latex=False):\n    r\"\"\"\n    Compute a string representation of a product combination of some\n    formal symbols\n    \"\"\"\n    bla bla bla\n\nsage: repr_prodcomb(['a','b','c'], [1,-2,-3])\n'a * b^-2 * c^-3'\nsage: repr_prodcomb([],[])\n'1'\n```\n\n\nThere is already a such function in sage/rings/polynomial/polynomial_element_generic.py\n\nWith categories will come FreeGroups(Gens), FreeMonoid(Gens), Free... Such futurs features motivate the need of this function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9014\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @nthiery\n\nKeywords: repr product\n\nAs for linear combinaison, implement a method in misc 'repr_prod' to represent products. \n\n\n```\ndef repr_prodcomb(symbols, coeffs, is_latex=False):\n    r\"\"\"\n    Compute a string representation of a product combination of some\n    formal symbols\n    \"\"\"\n    bla bla bla\n\nsage: repr_prodcomb(['a','b','c'], [1,-2,-3])\n'a * b^-2 * c^-3'\nsage: repr_prodcomb([],[])\n'1'\n```\n\n\nThere is already a such function in sage/rings/polynomial/polynomial_element_generic.py\n\nWith categories will come FreeGroups(Gens), FreeMonoid(Gens), Free... Such futurs features motivate the need of this function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9014\n\n",
     "created_at": "2010-05-22T09:29:33Z",
     "labels": [
         "misc",
@@ -17,9 +17,9 @@ archive/issues_009014.json:
     "user": "nborie"
 }
 ```
-Assignee: jason
+Assignee: @jasongrout
 
-CC:  nthiery
+CC:  @nthiery
 
 Keywords: repr product
 

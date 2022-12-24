@@ -14,7 +14,7 @@ archive/issues_002223.json:
     "title": "sage-2.10.2.alpha1 -- bessel_J -- precision errors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2223",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -71,7 +71,7 @@ archive/issue_comments_014728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2223#issuecomment-14728",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_014729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2223#issuecomment-14729",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -107,16 +107,16 @@ whichever seems more reasonable.
 archive/issue_comments_014730.json:
 ```json
 {
-    "body": "Attachment [8632.patch](tarball://root/attachments/some-uuid/ticket2223/8632.patch) by wdj created at 2008-02-20 23:58:29",
+    "body": "Attachment [8632.patch](tarball://root/attachments/some-uuid/ticket2223/8632.patch) by @wdjoyner created at 2008-02-20 23:58:29",
     "created_at": "2008-02-20T23:58:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2223#issuecomment-14730",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [8632.patch](tarball://root/attachments/some-uuid/ticket2223/8632.patch) by wdj created at 2008-02-20 23:58:29
+Attachment [8632.patch](tarball://root/attachments/some-uuid/ticket2223/8632.patch) by @wdjoyner created at 2008-02-20 23:58:29
 
 
 
@@ -130,7 +130,7 @@ archive/issue_comments_014731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2223#issuecomment-14731",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_014733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2223#issuecomment-14733",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

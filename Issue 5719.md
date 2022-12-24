@@ -3,7 +3,7 @@
 archive/issues_005719.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nCC:  sage-combinat\n\nKeywords: Warning message\n\nCurrenctly when calling count on a combinatorial class the deprecation message is:\n   \n   The usage of iterator for combinatorial classes is deprecated. Please use the class itself\n\nWhereas it should be\n\n   The usage of count for combinatorial classes is deprecated. Please use cardinality\n\nCorrected my patch. Apologies for this mistake. Thanks to Daniel Bump for reporting it. \n\nFlorent\n\nIssue created by migration from https://trac.sagemath.org/ticket/5719\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: Warning message\n\nCurrenctly when calling count on a combinatorial class the deprecation message is:\n   \n   The usage of iterator for combinatorial classes is deprecated. Please use the class itself\n\nWhereas it should be\n\n   The usage of count for combinatorial classes is deprecated. Please use cardinality\n\nCorrected my patch. Apologies for this mistake. Thanks to Daniel Bump for reporting it. \n\nFlorent\n\nIssue created by migration from https://trac.sagemath.org/ticket/5719\n\n",
     "created_at": "2009-04-08T21:20:05Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_005719.json:
     "title": "[with patch, needs review] Corrected a bad deprecation message.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5719",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
 CC:  sage-combinat
 
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5719
 archive/issue_comments_044688.json:
 ```json
 {
-    "body": "Attachment [warning-fix-submitted.patch](tarball://root/attachments/some-uuid/ticket5719/warning-fix-submitted.patch) by hivert created at 2009-04-08 21:21:04",
+    "body": "Attachment [warning-fix-submitted.patch](tarball://root/attachments/some-uuid/ticket5719/warning-fix-submitted.patch) by @hivert created at 2009-04-08 21:21:04",
     "created_at": "2009-04-08T21:21:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5719#issuecomment-44688",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [warning-fix-submitted.patch](tarball://root/attachments/some-uuid/ticket5719/warning-fix-submitted.patch) by hivert created at 2009-04-08 21:21:04
+Attachment [warning-fix-submitted.patch](tarball://root/attachments/some-uuid/ticket5719/warning-fix-submitted.patch) by @hivert created at 2009-04-08 21:21:04
 
 
 

@@ -14,7 +14,7 @@ archive/issues_007007.json:
     "title": "generator of RR['t'] has a float attached",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7007",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: tbd
@@ -50,7 +50,7 @@ archive/issue_comments_057944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7007",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7007#issuecomment-57944",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_057945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7007",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7007#issuecomment-57945",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_057946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7007",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7007#issuecomment-57946",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -118,16 +118,16 @@ Incidentally, note that #5755 probably will be fixed by this ticket, one way or 
 archive/issue_comments_057947.json:
 ```json
 {
-    "body": "Attachment [trac_7007.patch](tarball://root/attachments/some-uuid/ticket7007/trac_7007.patch) by mhansen created at 2009-09-29 19:41:45",
+    "body": "Attachment [trac_7007.patch](tarball://root/attachments/some-uuid/ticket7007/trac_7007.patch) by @mwhansen created at 2009-09-29 19:41:45",
     "created_at": "2009-09-29T19:41:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7007",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7007#issuecomment-57947",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_7007.patch](tarball://root/attachments/some-uuid/ticket7007/trac_7007.patch) by mhansen created at 2009-09-29 19:41:45
+Attachment [trac_7007.patch](tarball://root/attachments/some-uuid/ticket7007/trac_7007.patch) by @mwhansen created at 2009-09-29 19:41:45
 
 
 
@@ -141,7 +141,7 @@ archive/issue_comments_057948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7007",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7007#issuecomment-57948",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_057949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7007",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7007#issuecomment-57949",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005520.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  bober\n\nI started using Magma in 1998 because only Magma had an implementation of Pizer's algorithm from [Pizer, 1980] for computing with Brandt modules.  The point of this ticket is to get an implementation of this algorithm in to Sage. \n\nSee http://swc-wiki.sagemath.org/2009/other/pizer for more about this ticket including a link to a scan of Pizer's paper.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5520\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  bober\n\nI started using Magma in 1998 because only Magma had an implementation of Pizer's algorithm from [Pizer, 1980] for computing with Brandt modules.  The point of this ticket is to get an implementation of this algorithm in to Sage. \n\nSee http://swc-wiki.sagemath.org/2009/other/pizer for more about this ticket including a link to a scan of Pizer's paper.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5520\n\n",
     "created_at": "2009-03-14T22:17:05Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_005520.json:
     "title": "implement Pizer's algorithm for computing Brandt Modules and Brandt Matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5520",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 CC:  bober
 
@@ -41,7 +41,7 @@ archive/issue_comments_042914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42914",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -54,16 +54,16 @@ Apply the patch from #5521 for all doctests to pass after applying any patches o
 archive/issue_comments_042915.json:
 ```json
 {
-    "body": "Attachment [trac_5520.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520.patch) by was created at 2009-03-26 19:39:53",
+    "body": "Attachment [trac_5520.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520.patch) by @williamstein created at 2009-03-26 19:39:53",
     "created_at": "2009-03-26T19:39:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42915",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5520.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520.patch) by was created at 2009-03-26 19:39:53
+Attachment [trac_5520.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520.patch) by @williamstein created at 2009-03-26 19:39:53
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_042916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42916",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_042918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42918",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_042919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42919",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_042920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42920",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -296,7 +296,7 @@ archive/issue_comments_042921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42921",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -367,7 +367,7 @@ archive/issue_comments_042922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42922",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -461,7 +461,7 @@ archive/issue_comments_042923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42923",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -505,7 +505,7 @@ archive/issue_comments_042924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42924",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -636,7 +636,7 @@ archive/issue_comments_042925.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42925",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -690,7 +690,7 @@ archive/issue_comments_042926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42926",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -722,7 +722,7 @@ archive/issue_comments_042927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42927",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -735,16 +735,16 @@ It looks like people are already in the process of reviewing this ticket, but le
 archive/issue_comments_042928.json:
 ```json
 {
-    "body": "Attachment [trac_5520-referee_optimize_bugfix-REDO.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-referee_optimize_bugfix-REDO.patch) by was created at 2009-03-27 22:38:10\n\ntrac 5520 -- part 2 -- referee patch and incorporate ideas from gonzalo t., and fixes to pari interface matrix optimization",
+    "body": "Attachment [trac_5520-referee_optimize_bugfix-REDO.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-referee_optimize_bugfix-REDO.patch) by @williamstein created at 2009-03-27 22:38:10\n\ntrac 5520 -- part 2 -- referee patch and incorporate ideas from gonzalo t., and fixes to pari interface matrix optimization",
     "created_at": "2009-03-27T22:38:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42928",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5520-referee_optimize_bugfix-REDO.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-referee_optimize_bugfix-REDO.patch) by was created at 2009-03-27 22:38:10
+Attachment [trac_5520-referee_optimize_bugfix-REDO.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-referee_optimize_bugfix-REDO.patch) by @williamstein created at 2009-03-27 22:38:10
 
 trac 5520 -- part 2 -- referee patch and incorporate ideas from gonzalo t., and fixes to pari interface matrix optimization
 
@@ -760,7 +760,7 @@ archive/issue_comments_042929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42929",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -773,16 +773,16 @@ from Gonzalo T.
 archive/issue_comments_042930.json:
 ```json
 {
-    "body": "Attachment [trac_5520-ref-2.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-ref-2.patch) by was created at 2009-03-28 22:28:43",
+    "body": "Attachment [trac_5520-ref-2.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-ref-2.patch) by @williamstein created at 2009-03-28 22:28:43",
     "created_at": "2009-03-28T22:28:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42930",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5520-ref-2.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-ref-2.patch) by was created at 2009-03-28 22:28:43
+Attachment [trac_5520-ref-2.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-ref-2.patch) by @williamstein created at 2009-03-28 22:28:43
 
 
 
@@ -791,16 +791,16 @@ Attachment [trac_5520-ref-2.patch](tarball://root/attachments/some-uuid/ticket55
 archive/issue_comments_042931.json:
 ```json
 {
-    "body": "Attachment [trac_5520-rebase3.4.1.alpha0.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-rebase3.4.1.alpha0.patch) by was created at 2009-03-28 22:30:46\n\nThis replaces the above three patches and is rebased against 3.4.1.alpha0.",
+    "body": "Attachment [trac_5520-rebase3.4.1.alpha0.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-rebase3.4.1.alpha0.patch) by @williamstein created at 2009-03-28 22:30:46\n\nThis replaces the above three patches and is rebased against 3.4.1.alpha0.",
     "created_at": "2009-03-28T22:30:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42931",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5520-rebase3.4.1.alpha0.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-rebase3.4.1.alpha0.patch) by was created at 2009-03-28 22:30:46
+Attachment [trac_5520-rebase3.4.1.alpha0.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-rebase3.4.1.alpha0.patch) by @williamstein created at 2009-03-28 22:30:46
 
 This replaces the above three patches and is rebased against 3.4.1.alpha0.
 
@@ -811,16 +811,16 @@ This replaces the above three patches and is rebased against 3.4.1.alpha0.
 archive/issue_comments_042932.json:
 ```json
 {
-    "body": "Attachment [trac_5520-rebase3.4.1.alpha0-part2.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-rebase3.4.1.alpha0-part2.patch) by was created at 2009-03-28 22:54:12\n\ntiny additional patch fixing some randomness in a doctest in matrix2.pyx; I think this fix is fine since the test is only supposed to test the *speed*",
+    "body": "Attachment [trac_5520-rebase3.4.1.alpha0-part2.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-rebase3.4.1.alpha0-part2.patch) by @williamstein created at 2009-03-28 22:54:12\n\ntiny additional patch fixing some randomness in a doctest in matrix2.pyx; I think this fix is fine since the test is only supposed to test the *speed*",
     "created_at": "2009-03-28T22:54:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42932",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5520-rebase3.4.1.alpha0-part2.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-rebase3.4.1.alpha0-part2.patch) by was created at 2009-03-28 22:54:12
+Attachment [trac_5520-rebase3.4.1.alpha0-part2.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-rebase3.4.1.alpha0-part2.patch) by @williamstein created at 2009-03-28 22:54:12
 
 tiny additional patch fixing some randomness in a doctest in matrix2.pyx; I think this fix is fine since the test is only supposed to test the *speed*
 
@@ -836,7 +836,7 @@ archive/issue_comments_042933.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42933",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -894,16 +894,16 @@ sage: timeit('a._pari_()')
 archive/issue_comments_042934.json:
 ```json
 {
-    "body": "Attachment [trac_5520-rebase-ref1.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-rebase-ref1.patch) by tornaria created at 2009-03-29 02:39:42\n\nSmall patch on top of the rebase to 3.4.1.alpha0; it suggests how to address the first two of my remarks in the last comment",
+    "body": "Attachment [trac_5520-rebase-ref1.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-rebase-ref1.patch) by @tornaria created at 2009-03-29 02:39:42\n\nSmall patch on top of the rebase to 3.4.1.alpha0; it suggests how to address the first two of my remarks in the last comment",
     "created_at": "2009-03-29T02:39:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42934",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
-Attachment [trac_5520-rebase-ref1.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-rebase-ref1.patch) by tornaria created at 2009-03-29 02:39:42
+Attachment [trac_5520-rebase-ref1.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-rebase-ref1.patch) by @tornaria created at 2009-03-29 02:39:42
 
 Small patch on top of the rebase to 3.4.1.alpha0; it suggests how to address the first two of my remarks in the last comment
 
@@ -919,7 +919,7 @@ archive/issue_comments_042935.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42935",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -941,7 +941,7 @@ archive/issue_comments_042936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42936",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -968,16 +968,16 @@ I'm posting a patch "trac_5520-rebase3.4.1.alpha0-part3.patch" that does *not* m
 archive/issue_comments_042937.json:
 ```json
 {
-    "body": "Attachment [trac_5520-rebase3.4.1.alpha0-part3.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-rebase3.4.1.alpha0-part3.patch) by was created at 2009-03-29 03:25:41\n\napply this *instead* of the previous patch!",
+    "body": "Attachment [trac_5520-rebase3.4.1.alpha0-part3.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-rebase3.4.1.alpha0-part3.patch) by @williamstein created at 2009-03-29 03:25:41\n\napply this *instead* of the previous patch!",
     "created_at": "2009-03-29T03:25:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42937",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5520-rebase3.4.1.alpha0-part3.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-rebase3.4.1.alpha0-part3.patch) by was created at 2009-03-29 03:25:41
+Attachment [trac_5520-rebase3.4.1.alpha0-part3.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-rebase3.4.1.alpha0-part3.patch) by @williamstein created at 2009-03-29 03:25:41
 
 apply this *instead* of the previous patch!
 
@@ -993,7 +993,7 @@ archive/issue_comments_042938.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42938",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -1022,7 +1022,7 @@ archive/issue_comments_042939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42939",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -1059,7 +1059,7 @@ archive/issue_comments_042940.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42940",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

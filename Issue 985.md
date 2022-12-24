@@ -3,7 +3,7 @@
 archive/issues_000985.json:
 ```json
 {
-    "body": "Assignee: was\n\nequations.py:\n\n```\nFile \"equations.py\", line 12:\n    sage: print solve(qe, x)\nExpected:\n    [\n                                          2\n                                  - sqrt(b  - 4 a c) - b\n                              x == ----------------------\n                                           2 a,\n                                         2\n                                   sqrt(b  - 4 a c) - b\n                               x == --------------------\n                                           2 a\n    ]\nGot:\n    [x == (-sqrt(b^2 - 4*a*c) - b)/(2*a), x == (sqrt(b^2 - 4*a*c) - b)/(2*a)]\n```\n\n\nell_generic.py:\n\n```\nFile \"ell_generic.py\", line 249:\n    sage: print F.solve(y)\nExpected:\n    [\n                          3      2\n                - sqrt(4 x  - 4 x  - 40 x - 79) - 1\n            y == -----------------------------------\n                                 2,\n                         3      2\n                 sqrt(4 x  - 4 x  - 40 x - 79) - 1\n             y == ---------------------------------\n                                 2\n    ]\nGot:\n    [y == (-sqrt(4*x^3 - 4*x^2 - 40*x - 79) - 1)/2, y == (sqrt(4*x^3 - 4*x^2 - 40*x - 79) - 1)/2]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/985\n\n",
+    "body": "Assignee: @williamstein\n\nequations.py:\n\n```\nFile \"equations.py\", line 12:\n    sage: print solve(qe, x)\nExpected:\n    [\n                                          2\n                                  - sqrt(b  - 4 a c) - b\n                              x == ----------------------\n                                           2 a,\n                                         2\n                                   sqrt(b  - 4 a c) - b\n                               x == --------------------\n                                           2 a\n    ]\nGot:\n    [x == (-sqrt(b^2 - 4*a*c) - b)/(2*a), x == (sqrt(b^2 - 4*a*c) - b)/(2*a)]\n```\n\n\nell_generic.py:\n\n```\nFile \"ell_generic.py\", line 249:\n    sage: print F.solve(y)\nExpected:\n    [\n                          3      2\n                - sqrt(4 x  - 4 x  - 40 x - 79) - 1\n            y == -----------------------------------\n                                 2,\n                         3      2\n                 sqrt(4 x  - 4 x  - 40 x - 79) - 1\n             y == ---------------------------------\n                                 2\n    ]\nGot:\n    [y == (-sqrt(4*x^3 - 4*x^2 - 40*x - 79) - 1)/2, y == (sqrt(4*x^3 - 4*x^2 - 40*x - 79) - 1)/2]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/985\n\n",
     "created_at": "2007-10-25T00:55:12Z",
     "labels": [
         "interfaces",
@@ -17,7 +17,7 @@ archive/issues_000985.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 equations.py:
 
@@ -73,16 +73,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/985
 archive/issue_comments_006022.json:
 ```json
 {
-    "body": "Attachment [985.patch](tarball://root/attachments/some-uuid/ticket985/985.patch) by mhansen created at 2007-10-25 02:07:58",
+    "body": "Attachment [985.patch](tarball://root/attachments/some-uuid/ticket985/985.patch) by @mwhansen created at 2007-10-25 02:07:58",
     "created_at": "2007-10-25T02:07:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/985#issuecomment-6022",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [985.patch](tarball://root/attachments/some-uuid/ticket985/985.patch) by mhansen created at 2007-10-25 02:07:58
+Attachment [985.patch](tarball://root/attachments/some-uuid/ticket985/985.patch) by @mwhansen created at 2007-10-25 02:07:58
 
 
 
@@ -91,16 +91,16 @@ Attachment [985.patch](tarball://root/attachments/some-uuid/ticket985/985.patch)
 archive/issue_comments_006023.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-10-25T02:08:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/985#issuecomment-6023",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -114,7 +114,7 @@ archive/issue_comments_006024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/985#issuecomment-6024",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -127,16 +127,16 @@ Changing status from new to assigned.
 archive/issue_comments_006025.json:
 ```json
 {
-    "body": "Attachment [985.2.patch](tarball://root/attachments/some-uuid/ticket985/985.2.patch) by mhansen created at 2007-10-25 02:08:44\n\nUse the second patch.",
+    "body": "Attachment [985.2.patch](tarball://root/attachments/some-uuid/ticket985/985.2.patch) by @mwhansen created at 2007-10-25 02:08:44\n\nUse the second patch.",
     "created_at": "2007-10-25T02:08:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/985#issuecomment-6025",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [985.2.patch](tarball://root/attachments/some-uuid/ticket985/985.2.patch) by mhansen created at 2007-10-25 02:08:44
+Attachment [985.2.patch](tarball://root/attachments/some-uuid/ticket985/985.2.patch) by @mwhansen created at 2007-10-25 02:08:44
 
 Use the second patch.
 
@@ -152,7 +152,7 @@ archive/issue_comments_006026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/985#issuecomment-6026",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

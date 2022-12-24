@@ -3,7 +3,7 @@
 archive/issues_002624.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nOops: \n\n```\n./sage -tp -long devel/sage/sage/plot/plot.py\nGlobal iterations: 1\nFile iterations: 1\nTeX files: 0\nUsage: sage -t <files or directories>.\nFor more information, type 'sage -help'.\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2624\n\n",
+    "body": "Assignee: @garyfurnish\n\nOops: \n\n```\n./sage -tp -long devel/sage/sage/plot/plot.py\nGlobal iterations: 1\nFile iterations: 1\nTeX files: 0\nUsage: sage -t <files or directories>.\nFor more information, type 'sage -help'.\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2624\n\n",
     "created_at": "2008-03-21T00:46:53Z",
     "labels": [
         "doctest coverage",
@@ -17,7 +17,7 @@ archive/issues_002624.json:
     "user": "mabshoff"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 Oops: 
 
@@ -49,7 +49,7 @@ archive/issue_comments_018015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2624#issuecomment-18015",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_018016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2624#issuecomment-18016",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_018017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2624#issuecomment-18017",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_018018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2624#issuecomment-18018",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_018019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2624#issuecomment-18019",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -134,16 +134,16 @@ Resolution changed from invalid to
 archive/issue_comments_018020.json:
 ```json
 {
-    "body": "Changing assignee from gfurnish to mabshoff.",
+    "body": "Changing assignee from @garyfurnish to mabshoff.",
     "created_at": "2008-03-21T00:49:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2624#issuecomment-18020",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from gfurnish to mabshoff.
+Changing assignee from @garyfurnish to mabshoff.
 
 
 
@@ -157,7 +157,7 @@ archive/issue_comments_018021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2624#issuecomment-18021",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_018022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2624#issuecomment-18022",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_018023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2624#issuecomment-18023",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -206,16 +206,16 @@ Here's a patch.  If the first argument after "tp" can't be converted to an integ
 archive/issue_comments_018024.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to jhpalmieri.",
+    "body": "Changing assignee from mabshoff to @jhpalmieri.",
     "created_at": "2009-09-21T22:42:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2624#issuecomment-18024",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Changing assignee from mabshoff to jhpalmieri.
+Changing assignee from mabshoff to @jhpalmieri.
 
 
 
@@ -229,7 +229,7 @@ archive/issue_comments_018025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2624#issuecomment-18025",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_018026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2624#issuecomment-18026",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_018027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2624#issuecomment-18027",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -310,7 +310,7 @@ archive/issue_comments_018028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2624#issuecomment-18028",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -343,7 +343,7 @@ archive/issue_comments_018029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2624#issuecomment-18029",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -363,7 +363,7 @@ archive/issue_comments_018030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2624#issuecomment-18030",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -384,7 +384,7 @@ archive/issue_comments_018031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2624#issuecomment-18031",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -397,16 +397,16 @@ apply to scripts repository
 archive/issue_comments_018032.json:
 ```json
 {
-    "body": "Attachment [trac_2624-ptest-scripts.patch](tarball://root/attachments/some-uuid/ticket2624/trac_2624-ptest-scripts.patch) by jhpalmieri created at 2009-09-23 05:02:07",
+    "body": "Attachment [trac_2624-ptest-scripts.patch](tarball://root/attachments/some-uuid/ticket2624/trac_2624-ptest-scripts.patch) by @jhpalmieri created at 2009-09-23 05:02:07",
     "created_at": "2009-09-23T05:02:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2624#issuecomment-18032",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_2624-ptest-scripts.patch](tarball://root/attachments/some-uuid/ticket2624/trac_2624-ptest-scripts.patch) by jhpalmieri created at 2009-09-23 05:02:07
+Attachment [trac_2624-ptest-scripts.patch](tarball://root/attachments/some-uuid/ticket2624/trac_2624-ptest-scripts.patch) by @jhpalmieri created at 2009-09-23 05:02:07
 
 
 
@@ -456,7 +456,7 @@ archive/issue_comments_018034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2624#issuecomment-18034",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

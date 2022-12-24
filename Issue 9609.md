@@ -3,7 +3,7 @@
 archive/issues_009609.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  ddrake\n\n[Dan Drake wrote on sage-release](https://groups.google.com/group/sage-release/browse_thread/thread/b6fd67d4d4543129/9e68e7105e23ab29#9e68e7105e23ab29):\n\n```\nIn SAGE_ROOT/spkg/standard, with 4.5.alpha0, I see:\n\n$ ls | grep -v spkg\ntotal 303320\n-rw-r--r-- 1 drake drake       43 Jun 28 09:36 README.txt\n-rw-r--r-- 1 drake drake    18614 Jul 25 20:52 deps\n-rw-r--r-- 1 drake drake      163 Jun 28 09:36 libdist_filelist\n-rwxr-xr-x 1 drake drake     1571 Jun 28 09:36 newest_version*\n-rw-r--r-- 1 drake drake      977 Jun 28 09:36 notes.txt\n-rw-r--r-- 1 drake drake      383 Jun 28 09:36 numeric-24.2.txt\n\nThe files libdist_filelist, notes.txt, and numeric-24.2.txt seem like leftover notes that. Can I delete them? \n```\n\n\nThe files `libdist_filelist`, `notes.txt`, and `numeric-24.2.txt` [have been removed from Sage 4.5.2.alpha1](https://groups.google.com/group/sage-release/browse_thread/thread/9455213e89f94692):\n\n```\nThe second unreviewed change is the deletion of several extra files in spkg/standard, as I mentioned in https://groups.google.com/group/sage-release/t/b6fd67d4d4543129. In the unlikely case that those files were important or necessary, we can just copy them from the alpha0 tarball. \n```\n\n\nThis ticket is for reviewing the change.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9609\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @dandrake\n\n[Dan Drake wrote on sage-release](https://groups.google.com/group/sage-release/browse_thread/thread/b6fd67d4d4543129/9e68e7105e23ab29#9e68e7105e23ab29):\n\n```\nIn SAGE_ROOT/spkg/standard, with 4.5.alpha0, I see:\n\n$ ls | grep -v spkg\ntotal 303320\n-rw-r--r-- 1 drake drake       43 Jun 28 09:36 README.txt\n-rw-r--r-- 1 drake drake    18614 Jul 25 20:52 deps\n-rw-r--r-- 1 drake drake      163 Jun 28 09:36 libdist_filelist\n-rwxr-xr-x 1 drake drake     1571 Jun 28 09:36 newest_version*\n-rw-r--r-- 1 drake drake      977 Jun 28 09:36 notes.txt\n-rw-r--r-- 1 drake drake      383 Jun 28 09:36 numeric-24.2.txt\n\nThe files libdist_filelist, notes.txt, and numeric-24.2.txt seem like leftover notes that. Can I delete them? \n```\n\n\nThe files `libdist_filelist`, `notes.txt`, and `numeric-24.2.txt` [have been removed from Sage 4.5.2.alpha1](https://groups.google.com/group/sage-release/browse_thread/thread/9455213e89f94692):\n\n```\nThe second unreviewed change is the deletion of several extra files in spkg/standard, as I mentioned in https://groups.google.com/group/sage-release/t/b6fd67d4d4543129. In the unlikely case that those files were important or necessary, we can just copy them from the alpha0 tarball. \n```\n\n\nThis ticket is for reviewing the change.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9609\n\n",
     "created_at": "2010-07-27T07:28:42Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_009609.json:
     "title": "Remove unnecessary files from spkg/standard",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9609",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: GeorgSWeber
 
-CC:  ddrake
+CC:  @dandrake
 
 [Dan Drake wrote on sage-release](https://groups.google.com/group/sage-release/browse_thread/thread/b6fd67d4d4543129/9e68e7105e23ab29#9e68e7105e23ab29):
 
@@ -64,7 +64,7 @@ archive/issue_comments_093081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9609#issuecomment-93081",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_093082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9609#issuecomment-93082",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_093083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9609#issuecomment-93083",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_093084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9609#issuecomment-93084",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_093085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9609#issuecomment-93085",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_093086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9609#issuecomment-93086",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_093087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9609#issuecomment-93087",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_093088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9609#issuecomment-93088",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_093089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9609#issuecomment-93089",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -13,7 +13,7 @@ archive/issues_000285.json:
     "title": "p-adics : get the first version of David Roe's new p-adics into SAGE as the standard p-adic class",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/285",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -36,7 +36,7 @@ archive/issue_comments_001355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/285",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/285#issuecomment-1355",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -54,7 +54,7 @@ archive/issue_comments_001356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/285",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/285#issuecomment-1356",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 

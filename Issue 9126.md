@@ -3,7 +3,7 @@
 archive/issues_009126.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nRight now, the following works:\n\n```\nsage: a=(x+y)\nsage: a.arguments()\n(x, y)\n```\n\nHowever, we deprecated the following a long time ago:\n\n```\nsage: a(1,2)\n/Users/grout/sage/local/lib/python2.6/site-packages/IPython/iplib.py:2073:\nDeprecationWarning: Substitution using function-call syntax and unnamed\narguments is deprecated and will be removed from a future release of\nSage; you can use named arguments instead, like EXPR(x=..., y=...)\n   exec code_obj in self.user_global_ns, self.user_ns\n3\n```\n\nI propose that a.arguments() should return a deprecation warning:\n\n```\nsage: a.arguments()\n/Users/grout/sage/local/lib/python2.6/site-packages/IPython/iplib.py:2073:\nDeprecationWarning: (Since Sage version 4.4.2) symbolic expressions do\nnot have default callable arguments.  Please use the variables() method\n   exec code_obj in self.user_global_ns, self.user_ns\n(x, y)\n```\n\nThis will impact other things as well, since apparently things have been\nusing .arguments() when they should have been using .variables().  I can\npost a patch for this.  Here, I'm just calling for comment, especially\nfrom those that think this will mess everything up in some way.\n\nNote that callable functions will still have sensible return values:\n\n```\nsage: f(x,y)=x+y\nsage: f.arguments()\n(x, y) \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9126\n\n",
+    "body": "Assignee: @burcin\n\nRight now, the following works:\n\n```\nsage: a=(x+y)\nsage: a.arguments()\n(x, y)\n```\n\nHowever, we deprecated the following a long time ago:\n\n```\nsage: a(1,2)\n/Users/grout/sage/local/lib/python2.6/site-packages/IPython/iplib.py:2073:\nDeprecationWarning: Substitution using function-call syntax and unnamed\narguments is deprecated and will be removed from a future release of\nSage; you can use named arguments instead, like EXPR(x=..., y=...)\n   exec code_obj in self.user_global_ns, self.user_ns\n3\n```\n\nI propose that a.arguments() should return a deprecation warning:\n\n```\nsage: a.arguments()\n/Users/grout/sage/local/lib/python2.6/site-packages/IPython/iplib.py:2073:\nDeprecationWarning: (Since Sage version 4.4.2) symbolic expressions do\nnot have default callable arguments.  Please use the variables() method\n   exec code_obj in self.user_global_ns, self.user_ns\n(x, y)\n```\n\nThis will impact other things as well, since apparently things have been\nusing .arguments() when they should have been using .variables().  I can\npost a patch for this.  Here, I'm just calling for comment, especially\nfrom those that think this will mess everything up in some way.\n\nNote that callable functions will still have sensible return values:\n\n```\nsage: f(x,y)=x+y\nsage: f.arguments()\n(x, y) \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9126\n\n",
     "created_at": "2010-06-03T05:11:07Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_009126.json:
     "title": "Symbolic arguments() method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9126",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 Right now, the following works:
 
@@ -75,16 +75,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9126
 archive/issue_comments_084905.json:
 ```json
 {
-    "body": "Attachment [trac-9126-arguments.patch](tarball://root/attachments/some-uuid/ticket9126/trac-9126-arguments.patch) by jason created at 2010-06-03 05:12:31",
+    "body": "Attachment [trac-9126-arguments.patch](tarball://root/attachments/some-uuid/ticket9126/trac-9126-arguments.patch) by @jasongrout created at 2010-06-03 05:12:31",
     "created_at": "2010-06-03T05:12:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9126",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9126#issuecomment-84905",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-9126-arguments.patch](tarball://root/attachments/some-uuid/ticket9126/trac-9126-arguments.patch) by jason created at 2010-06-03 05:12:31
+Attachment [trac-9126-arguments.patch](tarball://root/attachments/some-uuid/ticket9126/trac-9126-arguments.patch) by @jasongrout created at 2010-06-03 05:12:31
 
 
 
@@ -98,7 +98,7 @@ archive/issue_comments_084906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9126",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9126#issuecomment-84906",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_084907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9126",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9126#issuecomment-84907",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_084908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9126",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9126#issuecomment-84908",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_084909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9126",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9126#issuecomment-84909",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_084910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9126",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9126#issuecomment-84910",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_084911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9126",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9126#issuecomment-84911",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

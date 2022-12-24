@@ -3,7 +3,7 @@
 archive/issues_008821.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  robertwb\n\nKeywords: tutorial coercion\n\nSo far, the word \"coercion\" has only been used twice in the tutorial - without explanation or reference. I believe coercion is far too important to not cover it in the tutorial, and moreover some pitfalls may be confusing for mathematicians, while programmers might confuse it with implicit type conversion.\n\nMy patch adds such section.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8821\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @robertwb\n\nKeywords: tutorial coercion\n\nSo far, the word \"coercion\" has only been used twice in the tutorial - without explanation or reference. I believe coercion is far too important to not cover it in the tutorial, and moreover some pitfalls may be confusing for mathematicians, while programmers might confuse it with implicit type conversion.\n\nMy patch adds such section.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8821\n\n",
     "created_at": "2010-04-29T09:58:47Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_008821.json:
     "title": "Adding a section on coercion to the tutorial (guided tour)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8821",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 Assignee: mvngu
 
-CC:  robertwb
+CC:  @robertwb
 
 Keywords: tutorial coercion
 
@@ -43,7 +43,7 @@ archive/issue_comments_080998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8821#issuecomment-80998",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_080999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8821#issuecomment-80999",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_081000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8821#issuecomment-81000",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_081001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8821#issuecomment-81001",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_081002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8821#issuecomment-81002",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_081003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8821#issuecomment-81003",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_081004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8821#issuecomment-81004",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -248,16 +248,16 @@ To be applied after the first patch
 archive/issue_comments_081005.json:
 ```json
 {
-    "body": "Attachment [trac_8821-tutorial-coercion_p1.patch](tarball://root/attachments/some-uuid/ticket8821/trac_8821-tutorial-coercion_p1.patch) by SimonKing created at 2010-04-29 12:44:55\n\nI added another patch (on top of the first patch), taking into account some of your remarks. In particular, I try to clarify that \"class <-> category\" is nothing more than a weak analogy.",
+    "body": "Attachment [trac_8821-tutorial-coercion_p1.patch](tarball://root/attachments/some-uuid/ticket8821/trac_8821-tutorial-coercion_p1.patch) by @simon-king-jena created at 2010-04-29 12:44:55\n\nI added another patch (on top of the first patch), taking into account some of your remarks. In particular, I try to clarify that \"class <-> category\" is nothing more than a weak analogy.",
     "created_at": "2010-04-29T12:44:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8821#issuecomment-81005",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [trac_8821-tutorial-coercion_p1.patch](tarball://root/attachments/some-uuid/ticket8821/trac_8821-tutorial-coercion_p1.patch) by SimonKing created at 2010-04-29 12:44:55
+Attachment [trac_8821-tutorial-coercion_p1.patch](tarball://root/attachments/some-uuid/ticket8821/trac_8821-tutorial-coercion_p1.patch) by @simon-king-jena created at 2010-04-29 12:44:55
 
 I added another patch (on top of the first patch), taking into account some of your remarks. In particular, I try to clarify that "class <-> category" is nothing more than a weak analogy.
 
@@ -273,7 +273,7 @@ archive/issue_comments_081006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8821#issuecomment-81006",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -302,7 +302,7 @@ archive/issue_comments_081007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8821#issuecomment-81007",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -331,7 +331,7 @@ archive/issue_comments_081008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8821#issuecomment-81008",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -351,7 +351,7 @@ archive/issue_comments_081009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8821#issuecomment-81009",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -369,7 +369,7 @@ archive/issue_comments_081010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8821#issuecomment-81010",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -389,7 +389,7 @@ archive/issue_comments_081011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8821#issuecomment-81011",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -422,7 +422,7 @@ archive/issue_comments_081012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8821#issuecomment-81012",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -451,7 +451,7 @@ archive/issue_comments_081013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8821#issuecomment-81013",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -469,7 +469,7 @@ archive/issue_comments_081014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8821#issuecomment-81014",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -499,7 +499,7 @@ archive/issue_comments_081015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8821#issuecomment-81015",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -535,7 +535,7 @@ archive/issue_comments_081016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8821#issuecomment-81016",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -557,7 +557,7 @@ archive/issue_comments_081017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8821#issuecomment-81017",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -574,16 +574,16 @@ In addition, I think that there should also be a thematic tutorial (i.e., not ju
 archive/issue_comments_081018.json:
 ```json
 {
-    "body": "Attachment [trac_8821-tutorial-coercion.patch](tarball://root/attachments/some-uuid/ticket8821/trac_8821-tutorial-coercion.patch) by SimonKing created at 2011-06-16 07:53:35\n\nONLY APPLY THIS PATCH: Insert a section on coercion into the guided tour.",
+    "body": "Attachment [trac_8821-tutorial-coercion.patch](tarball://root/attachments/some-uuid/ticket8821/trac_8821-tutorial-coercion.patch) by @simon-king-jena created at 2011-06-16 07:53:35\n\nONLY APPLY THIS PATCH: Insert a section on coercion into the guided tour.",
     "created_at": "2011-06-16T07:53:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8821#issuecomment-81018",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [trac_8821-tutorial-coercion.patch](tarball://root/attachments/some-uuid/ticket8821/trac_8821-tutorial-coercion.patch) by SimonKing created at 2011-06-16 07:53:35
+Attachment [trac_8821-tutorial-coercion.patch](tarball://root/attachments/some-uuid/ticket8821/trac_8821-tutorial-coercion.patch) by @simon-king-jena created at 2011-06-16 07:53:35
 
 ONLY APPLY THIS PATCH: Insert a section on coercion into the guided tour.
 
@@ -599,7 +599,7 @@ archive/issue_comments_081019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8821#issuecomment-81019",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -623,7 +623,7 @@ archive/issue_comments_081020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8821#issuecomment-81020",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -641,7 +641,7 @@ archive/issue_comments_081021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8821#issuecomment-81021",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -654,16 +654,16 @@ Here's a referee's patch.  Positive review.
 archive/issue_comments_081022.json:
 ```json
 {
-    "body": "Attachment [trac_8821-ref.patch](tarball://root/attachments/some-uuid/ticket8821/trac_8821-ref.patch) by jhpalmieri created at 2011-07-22 23:56:43",
+    "body": "Attachment [trac_8821-ref.patch](tarball://root/attachments/some-uuid/ticket8821/trac_8821-ref.patch) by @jhpalmieri created at 2011-07-22 23:56:43",
     "created_at": "2011-07-22T23:56:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8821#issuecomment-81022",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8821-ref.patch](tarball://root/attachments/some-uuid/ticket8821/trac_8821-ref.patch) by jhpalmieri created at 2011-07-22 23:56:43
+Attachment [trac_8821-ref.patch](tarball://root/attachments/some-uuid/ticket8821/trac_8821-ref.patch) by @jhpalmieri created at 2011-07-22 23:56:43
 
 
 
@@ -677,7 +677,7 @@ archive/issue_comments_081023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8821#issuecomment-81023",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

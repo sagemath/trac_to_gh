@@ -3,7 +3,7 @@
 archive/issues_005357.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  mhansen\n\nA bunch of typos found in Sage 3.3 library files, in particular files under the following directories:\n\n\n* sage/algebras\n* sage/calculus\n* sage/coding\n* sage/combinat\n* sage/crypto\n* sage/databases\n\nThe typos are fairly trivial to review.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5357\n\n",
+    "body": "Assignee: tba\n\nCC:  @mwhansen\n\nA bunch of typos found in Sage 3.3 library files, in particular files under the following directories:\n\n\n* sage/algebras\n* sage/calculus\n* sage/coding\n* sage/combinat\n* sage/crypto\n* sage/databases\n\nThe typos are fairly trivial to review.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5357\n\n",
     "created_at": "2009-02-24T08:08:58Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_005357.json:
 ```
 Assignee: tba
 
-CC:  mhansen
+CC:  @mwhansen
 
 A bunch of typos found in Sage 3.3 library files, in particular files under the following directories:
 
@@ -255,7 +255,7 @@ archive/issue_comments_041277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5357#issuecomment-41277",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -268,16 +268,16 @@ Actually, I can take care of it as I had already made a number of the SAGE -> Sa
 archive/issue_comments_041278.json:
 ```json
 {
-    "body": "Attachment [trac_5357.patch](tarball://root/attachments/some-uuid/ticket5357/trac_5357.patch) by mhansen created at 2009-02-28 16:51:38\n\nLooks good to me.  I made a rebased trac_5357.patch.",
+    "body": "Attachment [trac_5357.patch](tarball://root/attachments/some-uuid/ticket5357/trac_5357.patch) by @mwhansen created at 2009-02-28 16:51:38\n\nLooks good to me.  I made a rebased trac_5357.patch.",
     "created_at": "2009-02-28T16:51:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5357#issuecomment-41278",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5357.patch](tarball://root/attachments/some-uuid/ticket5357/trac_5357.patch) by mhansen created at 2009-02-28 16:51:38
+Attachment [trac_5357.patch](tarball://root/attachments/some-uuid/ticket5357/trac_5357.patch) by @mwhansen created at 2009-02-28 16:51:38
 
 Looks good to me.  I made a rebased trac_5357.patch.
 
@@ -293,7 +293,7 @@ archive/issue_comments_041279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5357#issuecomment-41279",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

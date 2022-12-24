@@ -3,7 +3,7 @@
 archive/issues_000297.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  sage-combinat jpflori\n\nIt seems much has changed since polymake v 2.2, so this might be difficult.\nAlso, they have interactive scripts, which one has to deal with.  Yuck.\n\nI did try just building from scratch and it seemed to work without any funny\nbusiness with GMP, etc. \n\nIf you work on this, email wstein`@`gmail.com\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/297\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  sage-combinat jpflori\n\nIt seems much has changed since polymake v 2.2, so this might be difficult.\nAlso, they have interactive scripts, which one has to deal with.  Yuck.\n\nI did try just building from scratch and it seemed to work without any funny\nbusiness with GMP, etc. \n\nIf you work on this, email wstein`@`gmail.com\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/297\n\n",
     "created_at": "2007-02-26T22:13:14Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_000297.json:
     "title": "polymake -- create a build package for the optional SAGE package polymake-2.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/297",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  sage-combinat jpflori
 
@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/297
 archive/issue_comments_001404.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2007-08-23T07:23:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/297",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_001404.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 
@@ -127,7 +127,7 @@ archive/issue_comments_001407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/297#issuecomment-1407",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_001408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/297#issuecomment-1408",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_001409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/297#issuecomment-1409",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_001410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/297#issuecomment-1410",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_001411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/297#issuecomment-1411",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_001412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/297#issuecomment-1412",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

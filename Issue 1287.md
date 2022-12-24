@@ -3,7 +3,7 @@
 archive/issues_001287.json:
 ```json
 {
-    "body": "Assignee: was\n\nWrappers for Dokchitser L-series for various types of modular forms, e.g.,:\n\n\n```\n        sage: L = delta_Lseries()\n        sage: L(1)\n        0.0374412812685155\n\n        sage: f = CuspForms(2,8).0\n        sage: L = f.cuspform_Lseries()\n        sage: L(1)\n        0.0884317737041015\n        sage: L(0.5)\n        0.0296568512531983\n\n        sage: f = ModularForms(1,4).0\n        sage: L = f.modform_Lseries()\n        sage: L(1)\n        -0.0304484570583933\n\n        sage: L = eisenstein_series_Lseries(20)\n        sage: L(2)\n        -5.02355351645987 \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1287\n\n",
+    "body": "Assignee: @williamstein\n\nWrappers for Dokchitser L-series for various types of modular forms, e.g.,:\n\n\n```\n        sage: L = delta_Lseries()\n        sage: L(1)\n        0.0374412812685155\n\n        sage: f = CuspForms(2,8).0\n        sage: L = f.cuspform_Lseries()\n        sage: L(1)\n        0.0884317737041015\n        sage: L(0.5)\n        0.0296568512531983\n\n        sage: f = ModularForms(1,4).0\n        sage: L = f.modform_Lseries()\n        sage: L(1)\n        -0.0304484570583933\n\n        sage: L = eisenstein_series_Lseries(20)\n        sage: L(2)\n        -5.02355351645987 \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1287\n\n",
     "created_at": "2007-11-27T04:17:26Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_001287.json:
     "title": "[with patch] wrappers for Dokchitser L-series",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1287",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Wrappers for Dokchitser L-series for various types of modular forms, e.g.,:
 
@@ -56,16 +56,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1287
 archive/issue_comments_008082.json:
 ```json
 {
-    "body": "Attachment [patch.hg](tarball://root/attachments/some-uuid/ticket1287/patch.hg) by jen created at 2007-11-27 04:18:20",
+    "body": "Attachment [patch.hg](tarball://root/attachments/some-uuid/ticket1287/patch.hg) by @jbalakrishnan created at 2007-11-27 04:18:20",
     "created_at": "2007-11-27T04:18:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1287#issuecomment-8082",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
 
-Attachment [patch.hg](tarball://root/attachments/some-uuid/ticket1287/patch.hg) by jen created at 2007-11-27 04:18:20
+Attachment [patch.hg](tarball://root/attachments/some-uuid/ticket1287/patch.hg) by @jbalakrishnan created at 2007-11-27 04:18:20
 
 
 
@@ -79,7 +79,7 @@ archive/issue_comments_008083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1287#issuecomment-8083",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_008084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1287#issuecomment-8084",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

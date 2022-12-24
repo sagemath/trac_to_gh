@@ -3,7 +3,7 @@
 archive/issues_004147.json:
 ```json
 {
-    "body": "Assignee: cpernet\n\nUpgrade the linbox spkg to upstream latest version, that will be released as v1.1.6.\nThis is a defect since the current 1.1.6rc1 version does not compile under cygwin (linker and gcc-3.4 related issues).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4147\n\n",
+    "body": "Assignee: @ClementPernet\n\nUpgrade the linbox spkg to upstream latest version, that will be released as v1.1.6.\nThis is a defect since the current 1.1.6rc1 version does not compile under cygwin (linker and gcc-3.4 related issues).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4147\n\n",
     "created_at": "2008-09-19T00:37:38Z",
     "labels": [
         "linbox",
@@ -14,10 +14,10 @@ archive/issues_004147.json:
     "title": "Upgrade to linbox-1.1.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4147",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
-Assignee: cpernet
+Assignee: @ClementPernet
 
 Upgrade the linbox spkg to upstream latest version, that will be released as v1.1.6.
 This is a defect since the current 1.1.6rc1 version does not compile under cygwin (linker and gcc-3.4 related issues).
@@ -38,7 +38,7 @@ archive/issue_comments_030098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4147",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4147#issuecomment-30098",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 
@@ -58,7 +58,7 @@ archive/issue_comments_030099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4147",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4147#issuecomment-30099",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 

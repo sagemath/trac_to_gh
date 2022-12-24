@@ -14,7 +14,7 @@ archive/issues_008351.json:
     "title": "ratpoints-2.1.3.p0 fails to build in Open Solaris x64 as 64 bit even if SAGE64=yes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8351",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: drkirkby
@@ -43,7 +43,7 @@ archive/issue_comments_074575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8351#issuecomment-74575",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -56,16 +56,16 @@ Changing status from new to needs_review.
 archive/issue_comments_074576.json:
 ```json
 {
-    "body": "Attachment [ratpoints-2.1.3.p1.patch](tarball://root/attachments/some-uuid/ticket8351/ratpoints-2.1.3.p1.patch) by jsp created at 2010-02-24 20:09:30\n\nA new spkg can be found here:\n\n[http://boxen.math.washington.edu/home/jsp/ports/ratpoints-2.1.3.p1.spkg](http://boxen.math.washington.edu/home/jsp/ports/ratpoints-2.1.3.p1.spkg)\n\n\n\n```\nfind_points.o:\tELF 64-bit LSB relocatable AMD64 Version 1\ninit.o:\t\tELF 64-bit LSB relocatable AMD64 Version 1\nsift.o:\t\tELF 64-bit LSB relocatable AMD64 Version 1\nsturm.o:\tELF 64-bit LSB relocatable AMD64 Version 1\n\n```\n\n\nJaap",
+    "body": "Attachment [ratpoints-2.1.3.p1.patch](tarball://root/attachments/some-uuid/ticket8351/ratpoints-2.1.3.p1.patch) by @jaapspies created at 2010-02-24 20:09:30\n\nA new spkg can be found here:\n\n[http://boxen.math.washington.edu/home/jsp/ports/ratpoints-2.1.3.p1.spkg](http://boxen.math.washington.edu/home/jsp/ports/ratpoints-2.1.3.p1.spkg)\n\n\n\n```\nfind_points.o:\tELF 64-bit LSB relocatable AMD64 Version 1\ninit.o:\t\tELF 64-bit LSB relocatable AMD64 Version 1\nsift.o:\t\tELF 64-bit LSB relocatable AMD64 Version 1\nsturm.o:\tELF 64-bit LSB relocatable AMD64 Version 1\n\n```\n\n\nJaap",
     "created_at": "2010-02-24T20:09:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8351#issuecomment-74576",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [ratpoints-2.1.3.p1.patch](tarball://root/attachments/some-uuid/ticket8351/ratpoints-2.1.3.p1.patch) by jsp created at 2010-02-24 20:09:30
+Attachment [ratpoints-2.1.3.p1.patch](tarball://root/attachments/some-uuid/ticket8351/ratpoints-2.1.3.p1.patch) by @jaapspies created at 2010-02-24 20:09:30
 
 A new spkg can be found here:
 
@@ -146,7 +146,7 @@ archive/issue_comments_074579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8351#issuecomment-74579",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -185,16 +185,16 @@ Jaap
 archive/issue_comments_074580.json:
 ```json
 {
-    "body": "Attachment [ratpoints-2.1.3.p1+.patch](tarball://root/attachments/some-uuid/ticket8351/ratpoints-2.1.3.p1+.patch) by jsp created at 2010-02-24 21:32:40",
+    "body": "Attachment [ratpoints-2.1.3.p1+.patch](tarball://root/attachments/some-uuid/ticket8351/ratpoints-2.1.3.p1+.patch) by @jaapspies created at 2010-02-24 21:32:40",
     "created_at": "2010-02-24T21:32:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8351#issuecomment-74580",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [ratpoints-2.1.3.p1+.patch](tarball://root/attachments/some-uuid/ticket8351/ratpoints-2.1.3.p1+.patch) by jsp created at 2010-02-24 21:32:40
+Attachment [ratpoints-2.1.3.p1+.patch](tarball://root/attachments/some-uuid/ticket8351/ratpoints-2.1.3.p1+.patch) by @jaapspies created at 2010-02-24 21:32:40
 
 
 
@@ -208,7 +208,7 @@ archive/issue_comments_074581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8351#issuecomment-74581",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_074582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8351#issuecomment-74582",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -296,7 +296,7 @@ archive/issue_comments_074585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8351#issuecomment-74585",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -381,7 +381,7 @@ archive/issue_comments_074587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8351#issuecomment-74587",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -491,7 +491,7 @@ archive/issue_comments_074591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8351#issuecomment-74591",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

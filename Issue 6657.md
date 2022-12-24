@@ -3,7 +3,7 @@
 archive/issues_006657.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nI found the following to be rather unexpected:\n\nEllipticCurve(GF(144169),j=1728)\nElliptic Curve defined by y^2 = x^3 - x over Rational Field\n\n - Victor Miller\n\n[I understand that 1728 is considered an Integer, yet the first\nargument seems to be ignored]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6657\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nI found the following to be rather unexpected:\n\nEllipticCurve(GF(144169),j=1728)\nElliptic Curve defined by y^2 = x^3 - x over Rational Field\n\n - Victor Miller\n\n[I understand that 1728 is considered an Integer, yet the first\nargument seems to be ignored]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6657\n\n",
     "created_at": "2009-07-29T23:06:58Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_006657.json:
     "title": "EllipticCurve(..., j=...) shouldn't ignore field argument if given.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6657",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -49,7 +49,7 @@ archive/issue_comments_054646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6657#issuecomment-54646",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_054647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6657#issuecomment-54647",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_054648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6657#issuecomment-54648",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -100,16 +100,16 @@ Changing component from number theory to elliptic curves.
 archive/issue_comments_054649.json:
 ```json
 {
-    "body": "Changing assignee from was to cremona.",
+    "body": "Changing assignee from @williamstein to @JohnCremona.",
     "created_at": "2010-01-12T14:49:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6657#issuecomment-54649",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Changing assignee from was to cremona.
+Changing assignee from @williamstein to @JohnCremona.
 
 
 
@@ -123,7 +123,7 @@ archive/issue_comments_054650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6657#issuecomment-54650",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_054651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6657#issuecomment-54651",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -169,16 +169,16 @@ Applies to 4.3.1.alpha1
 archive/issue_comments_054652.json:
 ```json
 {
-    "body": "Attachment [trac_6657-elliptic_curveconstructor.patch](tarball://root/attachments/some-uuid/ticket6657/trac_6657-elliptic_curveconstructor.patch) by cremona created at 2010-01-12 20:53:15\n\nThe attached patch sorts this out, with appropriate tests.",
+    "body": "Attachment [trac_6657-elliptic_curveconstructor.patch](tarball://root/attachments/some-uuid/ticket6657/trac_6657-elliptic_curveconstructor.patch) by @JohnCremona created at 2010-01-12 20:53:15\n\nThe attached patch sorts this out, with appropriate tests.",
     "created_at": "2010-01-12T20:53:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6657#issuecomment-54652",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_6657-elliptic_curveconstructor.patch](tarball://root/attachments/some-uuid/ticket6657/trac_6657-elliptic_curveconstructor.patch) by cremona created at 2010-01-12 20:53:15
+Attachment [trac_6657-elliptic_curveconstructor.patch](tarball://root/attachments/some-uuid/ticket6657/trac_6657-elliptic_curveconstructor.patch) by @JohnCremona created at 2010-01-12 20:53:15
 
 The attached patch sorts this out, with appropriate tests.
 
@@ -194,7 +194,7 @@ archive/issue_comments_054653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6657#issuecomment-54653",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_054654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6657#issuecomment-54654",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_054655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6657#issuecomment-54655",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_054656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6657#issuecomment-54656",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

@@ -37,7 +37,7 @@ archive/issue_comments_028938.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4010",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4010#issuecomment-28938",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to assigned.
 archive/issue_comments_028939.json:
 ```json
 {
-    "body": "Changing assignee from boothby to mhansen.",
+    "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2009-01-20T10:50:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4010",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4010#issuecomment-28939",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from boothby to mhansen.
+Changing assignee from boothby to @mwhansen.
 
 
 
@@ -68,16 +68,16 @@ Changing assignee from boothby to mhansen.
 archive/issue_comments_028940.json:
 ```json
 {
-    "body": "Attachment [trac_4010.patch](tarball://root/attachments/some-uuid/ticket4010/trac_4010.patch) by mhansen created at 2009-01-20 10:50:52\n\nSome code for this is already there except we need to handle the case where prompt returns an empty string (which is the case in Firefox).",
+    "body": "Attachment [trac_4010.patch](tarball://root/attachments/some-uuid/ticket4010/trac_4010.patch) by @mwhansen created at 2009-01-20 10:50:52\n\nSome code for this is already there except we need to handle the case where prompt returns an empty string (which is the case in Firefox).",
     "created_at": "2009-01-20T10:50:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4010",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4010#issuecomment-28940",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4010.patch](tarball://root/attachments/some-uuid/ticket4010/trac_4010.patch) by mhansen created at 2009-01-20 10:50:52
+Attachment [trac_4010.patch](tarball://root/attachments/some-uuid/ticket4010/trac_4010.patch) by @mwhansen created at 2009-01-20 10:50:52
 
 Some code for this is already there except we need to handle the case where prompt returns an empty string (which is the case in Firefox).
 
@@ -93,7 +93,7 @@ archive/issue_comments_028941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4010",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4010#issuecomment-28941",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

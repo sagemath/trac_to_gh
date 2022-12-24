@@ -3,7 +3,7 @@
 archive/issues_006254.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  fredrik jason\n\nKeywords: mpmath\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6254\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  fredrik @jasongrout\n\nKeywords: mpmath\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6254\n\n",
     "created_at": "2009-06-09T22:28:27Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_006254.json:
     "title": "include mpmath 0.12",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6254",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: mabshoff
 
-CC:  fredrik jason
+CC:  fredrik @jasongrout
 
 Keywords: mpmath
 
@@ -41,7 +41,7 @@ archive/issue_comments_049955.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6254#issuecomment-49955",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 

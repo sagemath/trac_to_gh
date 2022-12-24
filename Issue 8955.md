@@ -14,7 +14,7 @@ archive/issues_008955.json:
     "title": "random_matrix(GF(2),2,1) always returns all 1 matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8955",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: jason, was
@@ -89,7 +89,7 @@ archive/issue_comments_082533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8955#issuecomment-82533",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_082534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8955#issuecomment-82534",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_082537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8955#issuecomment-82537",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_082538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8955#issuecomment-82538",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_082541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8955#issuecomment-82541",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_082542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8955#issuecomment-82542",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_082543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8955#issuecomment-82543",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_082544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8955#issuecomment-82544",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_082545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8955#issuecomment-82545",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_082546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8955#issuecomment-82546",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_082549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8955#issuecomment-82549",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -417,7 +417,7 @@ archive/issue_comments_082550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8955#issuecomment-82550",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -435,7 +435,7 @@ archive/issue_comments_082551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8955#issuecomment-82551",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -448,16 +448,16 @@ Could someone rebase the patch(es) here against 4.6.alpha1 when it's released (s
 archive/issue_comments_082552.json:
 ```json
 {
-    "body": "Attachment [random_matrix.patch](tarball://root/attachments/some-uuid/ticket8955/random_matrix.patch) by malb created at 2010-09-20 15:52:26",
+    "body": "Attachment [random_matrix.patch](tarball://root/attachments/some-uuid/ticket8955/random_matrix.patch) by @malb created at 2010-09-20 15:52:26",
     "created_at": "2010-09-20T15:52:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8955#issuecomment-82552",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [random_matrix.patch](tarball://root/attachments/some-uuid/ticket8955/random_matrix.patch) by malb created at 2010-09-20 15:52:26
+Attachment [random_matrix.patch](tarball://root/attachments/some-uuid/ticket8955/random_matrix.patch) by @malb created at 2010-09-20 15:52:26
 
 
 
@@ -471,7 +471,7 @@ archive/issue_comments_082553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8955#issuecomment-82553",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -489,7 +489,7 @@ archive/issue_comments_082554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8955#issuecomment-82554",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -507,7 +507,7 @@ archive/issue_comments_082555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8955#issuecomment-82555",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -564,7 +564,7 @@ archive/issue_comments_082558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8955",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8955#issuecomment-82558",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

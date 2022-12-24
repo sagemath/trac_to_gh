@@ -3,7 +3,7 @@
 archive/issues_001047.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: graphs\n\nBoost has a \"visitor\" concept.  Basically, you pass a graph traversal method an object.  As the graph traversal function goes through the graph, it invokes functions from your object.  So it's easy to do a depth-first something, for example.  It applies to stuff beyond depth-first and breadth-first too, for example, creating a spanning tree, etc.\n\nSee [http://www.boost.org/libs/graph/doc/visitor_concepts.html](http://www.boost.org/libs/graph/doc/visitor_concepts.html)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1047\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nBoost has a \"visitor\" concept.  Basically, you pass a graph traversal method an object.  As the graph traversal function goes through the graph, it invokes functions from your object.  So it's easy to do a depth-first something, for example.  It applies to stuff beyond depth-first and breadth-first too, for example, creating a spanning tree, etc.\n\nSee [http://www.boost.org/libs/graph/doc/visitor_concepts.html](http://www.boost.org/libs/graph/doc/visitor_concepts.html)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1047\n\n",
     "created_at": "2007-11-01T00:03:55Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001047.json:
     "title": "graphs: Create the \"visitor\" concept in Boost",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1047",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: graphs
 
@@ -41,7 +41,7 @@ archive/issue_comments_006381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1047",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1047#issuecomment-6381",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_006382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1047",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1047#issuecomment-6382",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

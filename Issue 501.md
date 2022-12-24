@@ -14,7 +14,7 @@ archive/issues_000501.json:
     "title": "more memory leaks in basic arithmetic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/501",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -97,7 +97,7 @@ archive/issue_comments_002500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/501",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/501#issuecomment-2500",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

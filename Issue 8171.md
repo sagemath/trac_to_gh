@@ -3,7 +3,7 @@
 archive/issues_008171.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  malb schilly\n\nThis new spkg for Cbc includes several new lines in spkg-install to activate CPLEX support in the Coin Library.\n\nIt is to be found at : ~ncohen/cbc-2.3.p2.spkg\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8171\n\n",
+    "body": "Assignee: tbd\n\nCC:  @malb @haraldschilly\n\nThis new spkg for Cbc includes several new lines in spkg-install to activate CPLEX support in the Coin Library.\n\nIt is to be found at : ~ncohen/cbc-2.3.p2.spkg\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8171\n\n",
     "created_at": "2010-02-03T13:04:07Z",
     "labels": [
         "packages: optional",
@@ -14,12 +14,12 @@ archive/issues_008171.json:
     "title": "New Cbc spkg with Cplex support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8171",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: tbd
 
-CC:  malb schilly
+CC:  @malb @haraldschilly
 
 This new spkg for Cbc includes several new lines in spkg-install to activate CPLEX support in the Coin Library.
 
@@ -43,7 +43,7 @@ archive/issue_comments_071936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8171#issuecomment-71936",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_071937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8171#issuecomment-71937",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_071940.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8171#issuecomment-71940",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_071943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8171#issuecomment-71943",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_071944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8171#issuecomment-71944",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_071945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8171#issuecomment-71945",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_071946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8171#issuecomment-71946",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_071947.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8171#issuecomment-71947",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_071948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8171#issuecomment-71948",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

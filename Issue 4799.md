@@ -14,7 +14,7 @@ archive/issues_004799.json:
     "title": "[with patch, positive review] Add mappded CombinatorialClasses",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4799",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4799
 archive/issue_comments_036386.json:
 ```json
 {
-    "body": "Attachment [trac_4799.patch](tarball://root/attachments/some-uuid/ticket4799/trac_4799.patch) by mhansen created at 2008-12-15 05:58:14",
+    "body": "Attachment [trac_4799.patch](tarball://root/attachments/some-uuid/ticket4799/trac_4799.patch) by @mwhansen created at 2008-12-15 05:58:14",
     "created_at": "2008-12-15T05:58:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4799#issuecomment-36386",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4799.patch](tarball://root/attachments/some-uuid/ticket4799/trac_4799.patch) by mhansen created at 2008-12-15 05:58:14
+Attachment [trac_4799.patch](tarball://root/attachments/some-uuid/ticket4799/trac_4799.patch) by @mwhansen created at 2008-12-15 05:58:14
 
 
 
@@ -52,16 +52,16 @@ Attachment [trac_4799.patch](tarball://root/attachments/some-uuid/ticket4799/tra
 archive/issue_comments_036387.json:
 ```json
 {
-    "body": "Attachment [trac_4799-2.patch](tarball://root/attachments/some-uuid/ticket4799/trac_4799-2.patch) by mhansen created at 2008-12-15 05:58:26",
+    "body": "Attachment [trac_4799-2.patch](tarball://root/attachments/some-uuid/ticket4799/trac_4799-2.patch) by @mwhansen created at 2008-12-15 05:58:26",
     "created_at": "2008-12-15T05:58:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4799#issuecomment-36387",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4799-2.patch](tarball://root/attachments/some-uuid/ticket4799/trac_4799-2.patch) by mhansen created at 2008-12-15 05:58:26
+Attachment [trac_4799-2.patch](tarball://root/attachments/some-uuid/ticket4799/trac_4799-2.patch) by @mwhansen created at 2008-12-15 05:58:26
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_036388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4799#issuecomment-36388",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_036389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4799#issuecomment-36389",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009203.json:
 ```json
 {
-    "body": "Assignee: vdelecroix\n\nCC:  kcrisman jason\n\nKeywords: plot, geometry, ellipse\n\nAdding a primitive for plot ellipses that wraps the existing patch of matplotlib.\n\nThis is approximately the same stuff as the patch #9076 for plotting arcs (of circle and ellipse).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9203\n\n",
+    "body": "Assignee: @videlec\n\nCC:  @kcrisman @jasongrout\n\nKeywords: plot, geometry, ellipse\n\nAdding a primitive for plot ellipses that wraps the existing patch of matplotlib.\n\nThis is approximately the same stuff as the patch #9076 for plotting arcs (of circle and ellipse).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9203\n\n",
     "created_at": "2010-06-10T13:43:14Z",
     "labels": [
         "geometry",
@@ -14,12 +14,12 @@ archive/issues_009203.json:
     "title": "plot ellipses",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9203",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
-Assignee: vdelecroix
+Assignee: @videlec
 
-CC:  kcrisman jason
+CC:  @kcrisman @jasongrout
 
 Keywords: plot, geometry, ellipse
 
@@ -43,7 +43,7 @@ archive/issue_comments_086127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9203#issuecomment-86127",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_086128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9203#issuecomment-86128",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_086129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9203#issuecomment-86129",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_086130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9203#issuecomment-86130",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_086131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9203#issuecomment-86131",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_086132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9203#issuecomment-86132",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_086133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9203#issuecomment-86133",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_086134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9203#issuecomment-86134",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_086135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9203#issuecomment-86135",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_086136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9203#issuecomment-86136",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_086137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9203#issuecomment-86137",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -270,16 +270,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_086138.json:
 ```json
 {
-    "body": "Attachment [trac_9203-ellipse.patch](tarball://root/attachments/some-uuid/ticket9203/trac_9203-ellipse.patch) by vdelecroix created at 2010-06-26 14:07:24",
+    "body": "Attachment [trac_9203-ellipse.patch](tarball://root/attachments/some-uuid/ticket9203/trac_9203-ellipse.patch) by @videlec created at 2010-06-26 14:07:24",
     "created_at": "2010-06-26T14:07:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9203#issuecomment-86138",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
-Attachment [trac_9203-ellipse.patch](tarball://root/attachments/some-uuid/ticket9203/trac_9203-ellipse.patch) by vdelecroix created at 2010-06-26 14:07:24
+Attachment [trac_9203-ellipse.patch](tarball://root/attachments/some-uuid/ticket9203/trac_9203-ellipse.patch) by @videlec created at 2010-06-26 14:07:24
 
 
 
@@ -293,7 +293,7 @@ archive/issue_comments_086139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9203#issuecomment-86139",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -306,16 +306,16 @@ worksheet that tests the bounding box of arcs and ellipses
 archive/issue_comments_086140.json:
 ```json
 {
-    "body": "Attachment [arcs and ellipses.sws](tarball://root/attachments/some-uuid/ticket9203/arcs and ellipses.sws) by vdelecroix created at 2010-06-26 14:09:45\n\nReplying to [comment:8 kcrisman]:\n> See #9076 for comments on bounding box and worksheet, though for this ticket I think it's ok.  Obviously the `fmod` function can be used here too, as well as already using math.pi since it's imported (I think this should work) and initializing the radii etc. as just the input numbers, waiting to float them until `_render...` and so forth.  Very nice work otherwise.\n> \n> This patch also depends on #9076, for others who might test it.",
+    "body": "Attachment [arcs and ellipses.sws](tarball://root/attachments/some-uuid/ticket9203/arcs and ellipses.sws) by @videlec created at 2010-06-26 14:09:45\n\nReplying to [comment:8 kcrisman]:\n> See #9076 for comments on bounding box and worksheet, though for this ticket I think it's ok.  Obviously the `fmod` function can be used here too, as well as already using math.pi since it's imported (I think this should work) and initializing the radii etc. as just the input numbers, waiting to float them until `_render...` and so forth.  Very nice work otherwise.\n> \n> This patch also depends on #9076, for others who might test it.",
     "created_at": "2010-06-26T14:09:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9203#issuecomment-86140",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
-Attachment [arcs and ellipses.sws](tarball://root/attachments/some-uuid/ticket9203/arcs and ellipses.sws) by vdelecroix created at 2010-06-26 14:09:45
+Attachment [arcs and ellipses.sws](tarball://root/attachments/some-uuid/ticket9203/arcs and ellipses.sws) by @videlec created at 2010-06-26 14:09:45
 
 Replying to [comment:8 kcrisman]:
 > See #9076 for comments on bounding box and worksheet, though for this ticket I think it's ok.  Obviously the `fmod` function can be used here too, as well as already using math.pi since it's imported (I think this should work) and initializing the radii etc. as just the input numbers, waiting to float them until `_render...` and so forth.  Very nice work otherwise.
@@ -334,7 +334,7 @@ archive/issue_comments_086141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9203#issuecomment-86141",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -352,7 +352,7 @@ archive/issue_comments_086142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9203#issuecomment-86142",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -372,7 +372,7 @@ archive/issue_comments_086143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9203#issuecomment-86143",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -385,16 +385,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_086144.json:
 ```json
 {
-    "body": "Attachment [trac_9203-ellipse-reviewer.patch](tarball://root/attachments/some-uuid/ticket9203/trac_9203-ellipse-reviewer.patch) by kcrisman created at 2010-08-10 15:06:54\n\nApply after initial patch",
+    "body": "Attachment [trac_9203-ellipse-reviewer.patch](tarball://root/attachments/some-uuid/ticket9203/trac_9203-ellipse-reviewer.patch) by @kcrisman created at 2010-08-10 15:06:54\n\nApply after initial patch",
     "created_at": "2010-08-10T15:06:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9203#issuecomment-86144",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_9203-ellipse-reviewer.patch](tarball://root/attachments/some-uuid/ticket9203/trac_9203-ellipse-reviewer.patch) by kcrisman created at 2010-08-10 15:06:54
+Attachment [trac_9203-ellipse-reviewer.patch](tarball://root/attachments/some-uuid/ticket9203/trac_9203-ellipse-reviewer.patch) by @kcrisman created at 2010-08-10 15:06:54
 
 Apply after initial patch
 
@@ -410,7 +410,7 @@ archive/issue_comments_086145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9203#issuecomment-86145",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -428,7 +428,7 @@ archive/issue_comments_086146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9203#issuecomment-86146",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -446,7 +446,7 @@ archive/issue_comments_086147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9203#issuecomment-86147",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -464,7 +464,7 @@ archive/issue_comments_086148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9203#issuecomment-86148",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -484,7 +484,7 @@ archive/issue_comments_086149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9203#issuecomment-86149",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -502,7 +502,7 @@ archive/issue_comments_086150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9203#issuecomment-86150",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -520,7 +520,7 @@ archive/issue_comments_086151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9203#issuecomment-86151",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -533,16 +533,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_086152.json:
 ```json
 {
-    "body": "Attachment [trac_9203-ellipse.2.patch](tarball://root/attachments/some-uuid/ticket9203/trac_9203-ellipse.2.patch) by mpatel created at 2010-08-16 21:17:40",
+    "body": "Attachment [trac_9203-ellipse.2.patch](tarball://root/attachments/some-uuid/ticket9203/trac_9203-ellipse.2.patch) by @qed777 created at 2010-08-16 21:17:40",
     "created_at": "2010-08-16T21:17:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9203#issuecomment-86152",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_9203-ellipse.2.patch](tarball://root/attachments/some-uuid/ticket9203/trac_9203-ellipse.2.patch) by mpatel created at 2010-08-16 21:17:40
+Attachment [trac_9203-ellipse.2.patch](tarball://root/attachments/some-uuid/ticket9203/trac_9203-ellipse.2.patch) by @qed777 created at 2010-08-16 21:17:40
 
 
 
@@ -556,7 +556,7 @@ archive/issue_comments_086153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9203#issuecomment-86153",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -581,7 +581,7 @@ archive/issue_comments_086154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9203#issuecomment-86154",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

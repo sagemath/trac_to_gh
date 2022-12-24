@@ -3,7 +3,7 @@
 archive/issues_007314.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nHello !!\n\nThis patch defines :\n* The average distance between vertices : Graph.average_distance\n* The Szeged Index of a graph : Graph.szeged_index\n* The Wiener Index of a graph : Graph.wiener_index\n\nEverything this patch adds (except the average distance) is documented in :\nhttp://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TY9-3VVCHY8-9&_user=10&_rdoc=1&_fmt=&_orig=search&_sort=d&_docanchor=&view=c&_acct=C000050221&_version=1&_urlVersion=0&_userid=10&md5=6d22be39b064af51023439c3bb59c459\n\nThis reference is mentioned in the docstrings.\n\nNathann\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7314\n\n",
+    "body": "Assignee: @rlmill\n\nHello !!\n\nThis patch defines :\n* The average distance between vertices : Graph.average_distance\n* The Szeged Index of a graph : Graph.szeged_index\n* The Wiener Index of a graph : Graph.wiener_index\n\nEverything this patch adds (except the average distance) is documented in :\nhttp://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TY9-3VVCHY8-9&_user=10&_rdoc=1&_fmt=&_orig=search&_sort=d&_docanchor=&view=c&_acct=C000050221&_version=1&_urlVersion=0&_userid=10&md5=6d22be39b064af51023439c3bb59c459\n\nThis reference is mentioned in the docstrings.\n\nNathann\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7314\n\n",
     "created_at": "2009-10-26T16:09:59Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007314.json:
     "title": "Average distance, Wiener Index, Szeged index",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7314",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Hello !!
 
@@ -50,7 +50,7 @@ archive/issue_comments_061119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7314",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7314#issuecomment-61119",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_061120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7314",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7314#issuecomment-61120",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_061121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7314",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7314#issuecomment-61121",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_061122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7314",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7314#issuecomment-61122",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -148,16 +148,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_061123.json:
 ```json
 {
-    "body": "Attachment [trac_7314.patch](tarball://root/attachments/some-uuid/ticket7314/trac_7314.patch) by rlm created at 2009-12-15 17:17:02",
+    "body": "Attachment [trac_7314.patch](tarball://root/attachments/some-uuid/ticket7314/trac_7314.patch) by @rlmill created at 2009-12-15 17:17:02",
     "created_at": "2009-12-15T17:17:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7314",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7314#issuecomment-61123",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_7314.patch](tarball://root/attachments/some-uuid/ticket7314/trac_7314.patch) by rlm created at 2009-12-15 17:17:02
+Attachment [trac_7314.patch](tarball://root/attachments/some-uuid/ticket7314/trac_7314.patch) by @rlmill created at 2009-12-15 17:17:02
 
 
 
@@ -171,7 +171,7 @@ archive/issue_comments_061124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7314",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7314#issuecomment-61124",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

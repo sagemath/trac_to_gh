@@ -13,7 +13,7 @@ archive/issues_000036.json:
     "title": "Bug in display2d for maxima interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/36",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -45,7 +45,7 @@ archive/issue_comments_000232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/36",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/36#issuecomment-232",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_000233.json:
     "issue": "https://github.com/sagemath/sagetest/issues/36",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/36#issuecomment-233",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

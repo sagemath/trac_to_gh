@@ -3,7 +3,7 @@
 archive/issues_009757.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mpatel robertwb cremona\n\nRelevant paper:\n\n    http://www.emis.ams.org/journals/EM/expmath/volumes/11/11.4/pp487_502.pdf\n\nWhen this is done and of comparable speed to the current modular degree code in Sage, then Sympow can be moved from standard to optional (or worse) as a Sage spkg.  Implementation options:\n\n* Build on top of the Dokchiter l-series code in Sage (via PARI)\n\n* Build something on Robert Bradshaw's soon-to-be-in-Sage re-implementation of Dokchitser:   #9193\n\nIssue created by migration from https://trac.sagemath.org/ticket/9758\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @qed777 @robertwb @JohnCremona\n\nRelevant paper:\n\n    http://www.emis.ams.org/journals/EM/expmath/volumes/11/11.4/pp487_502.pdf\n\nWhen this is done and of comparable speed to the current modular degree code in Sage, then Sympow can be moved from standard to optional (or worse) as a Sage spkg.  Implementation options:\n\n* Build on top of the Dokchiter l-series code in Sage (via PARI)\n\n* Build something on Robert Bradshaw's soon-to-be-in-Sage re-implementation of Dokchitser:   #9193\n\nIssue created by migration from https://trac.sagemath.org/ticket/9758\n\n",
     "created_at": "2010-08-17T22:29:48Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_009757.json:
     "title": "implement Watkins-Delaunay's algorithm for computing modular degrees in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9757",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  mpatel robertwb cremona
+CC:  @qed777 @robertwb @JohnCremona
 
 Relevant paper:
 
@@ -47,7 +47,7 @@ archive/issue_comments_095577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9757",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9757#issuecomment-95577",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_095579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9757",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9757#issuecomment-95579",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

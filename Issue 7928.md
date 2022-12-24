@@ -3,7 +3,7 @@
 archive/issues_007928.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7928\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7928\n\n",
     "created_at": "2010-01-14T08:51:42Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_007928.json:
     "title": "Trivial follow up on #7776",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7928",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_069028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7928#issuecomment-69028",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to needs_review.
 archive/issue_comments_069029.json:
 ```json
 {
-    "body": "Attachment [trac_7928-inject_variable-followup-nt.patch](tarball://root/attachments/some-uuid/ticket7928/trac_7928-inject_variable-followup-nt.patch) by nthiery created at 2010-01-14 09:09:28",
+    "body": "Attachment [trac_7928-inject_variable-followup-nt.patch](tarball://root/attachments/some-uuid/ticket7928/trac_7928-inject_variable-followup-nt.patch) by @nthiery created at 2010-01-14 09:09:28",
     "created_at": "2010-01-14T09:09:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7928#issuecomment-69029",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_7928-inject_variable-followup-nt.patch](tarball://root/attachments/some-uuid/ticket7928/trac_7928-inject_variable-followup-nt.patch) by nthiery created at 2010-01-14 09:09:28
+Attachment [trac_7928-inject_variable-followup-nt.patch](tarball://root/attachments/some-uuid/ticket7928/trac_7928-inject_variable-followup-nt.patch) by @nthiery created at 2010-01-14 09:09:28
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_069030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7928#issuecomment-69030",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_069031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7928#issuecomment-69031",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

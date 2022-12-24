@@ -3,7 +3,7 @@
 archive/issues_001394.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1394\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1394\n\n",
     "created_at": "2007-12-04T06:07:00Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_001394.json:
     "title": "make plot documentation readable in graph.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1394",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1394
 archive/issue_comments_008961.json:
 ```json
 {
-    "body": "Attachment [plotdoc.patch](tarball://root/attachments/some-uuid/ticket1394/plotdoc.patch) by rlm created at 2007-12-04 06:07:37",
+    "body": "Attachment [plotdoc.patch](tarball://root/attachments/some-uuid/ticket1394/plotdoc.patch) by @rlmill created at 2007-12-04 06:07:37",
     "created_at": "2007-12-04T06:07:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1394",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1394#issuecomment-8961",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [plotdoc.patch](tarball://root/attachments/some-uuid/ticket1394/plotdoc.patch) by rlm created at 2007-12-04 06:07:37
+Attachment [plotdoc.patch](tarball://root/attachments/some-uuid/ticket1394/plotdoc.patch) by @rlmill created at 2007-12-04 06:07:37
 
 
 
@@ -50,16 +50,16 @@ Attachment [plotdoc.patch](tarball://root/attachments/some-uuid/ticket1394/plotd
 archive/issue_comments_008962.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-12-04T06:07:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1394",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1394#issuecomment-8962",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_008963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1394",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1394#issuecomment-8963",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_008964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1394",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1394#issuecomment-8964",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

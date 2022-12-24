@@ -3,7 +3,7 @@
 archive/issues_006820.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  mpatel\n\nThe attached patch introduces the command `browse_sage_doc`.  It lets you do the following from either the command-line or the notebook:\n\n```\nbrowse_sage_doc.tutorial()   # open the tutorial in a browser window\nbrowse_sage_doc.reference()\nbrowse_sage_doc.developer()\nbrowse_sage_doc.constructions()\n```\n\nand also\n\n```\nbrowse_sage_doc(identity_matrix)\n```\n\nopens up the docstring for `identity_matrix` in a browser window.  It doesn't look very pretty, but it's legible.  You can also do\n\n```\nbrowse_sage_doc(identity_matrix, output='rst)\n```\n\nto output (as a string) the reST version of the docstring, and\n\n```\nbrowse_sage_doc(identity_matrix, view=False)\n```\n\nto output (as a string) the html version of the docstring\n\nIssue created by migration from https://trac.sagemath.org/ticket/6820\n\n",
+    "body": "Assignee: tba\n\nCC:  @qed777\n\nThe attached patch introduces the command `browse_sage_doc`.  It lets you do the following from either the command-line or the notebook:\n\n```\nbrowse_sage_doc.tutorial()   # open the tutorial in a browser window\nbrowse_sage_doc.reference()\nbrowse_sage_doc.developer()\nbrowse_sage_doc.constructions()\n```\n\nand also\n\n```\nbrowse_sage_doc(identity_matrix)\n```\n\nopens up the docstring for `identity_matrix` in a browser window.  It doesn't look very pretty, but it's legible.  You can also do\n\n```\nbrowse_sage_doc(identity_matrix, output='rst)\n```\n\nto output (as a string) the reST version of the docstring, and\n\n```\nbrowse_sage_doc(identity_matrix, view=False)\n```\n\nto output (as a string) the html version of the docstring\n\nIssue created by migration from https://trac.sagemath.org/ticket/6820\n\n",
     "created_at": "2009-08-24T20:05:18Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_006820.json:
     "title": "[with patch, needs review] browse sage docs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6820",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: tba
 
-CC:  mpatel
+CC:  @qed777
 
 The attached patch introduces the command `browse_sage_doc`.  It lets you do the following from either the command-line or the notebook:
 
@@ -66,7 +66,7 @@ archive/issue_comments_056233.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6820#issuecomment-56233",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_056234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6820#issuecomment-56234",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_056235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6820#issuecomment-56235",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_056236.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6820#issuecomment-56236",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_056237.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6820#issuecomment-56237",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_056238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6820#issuecomment-56238",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_056239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6820#issuecomment-56239",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_056240.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6820#issuecomment-56240",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -308,7 +308,7 @@ archive/issue_comments_056241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6820#issuecomment-56241",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -321,16 +321,16 @@ depends on #6586
 archive/issue_comments_056242.json:
 ```json
 {
-    "body": "Attachment [trac_6820-browsedocs.patch](tarball://root/attachments/some-uuid/ticket6820/trac_6820-browsedocs.patch) by jhpalmieri created at 2009-09-06 19:36:54\n\n(I re-attached the same patch so I could add the comment about it depending on #6586.)",
+    "body": "Attachment [trac_6820-browsedocs.patch](tarball://root/attachments/some-uuid/ticket6820/trac_6820-browsedocs.patch) by @jhpalmieri created at 2009-09-06 19:36:54\n\n(I re-attached the same patch so I could add the comment about it depending on #6586.)",
     "created_at": "2009-09-06T19:36:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6820#issuecomment-56242",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_6820-browsedocs.patch](tarball://root/attachments/some-uuid/ticket6820/trac_6820-browsedocs.patch) by jhpalmieri created at 2009-09-06 19:36:54
+Attachment [trac_6820-browsedocs.patch](tarball://root/attachments/some-uuid/ticket6820/trac_6820-browsedocs.patch) by @jhpalmieri created at 2009-09-06 19:36:54
 
 (I re-attached the same patch so I could add the comment about it depending on #6586.)
 
@@ -346,7 +346,7 @@ archive/issue_comments_056243.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6820#issuecomment-56243",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -368,7 +368,7 @@ archive/issue_comments_056244.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6820#issuecomment-56244",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -386,7 +386,7 @@ archive/issue_comments_056245.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6820#issuecomment-56245",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -419,7 +419,7 @@ archive/issue_comments_056246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6820#issuecomment-56246",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -432,16 +432,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_056247.json:
 ```json
 {
-    "body": "Attachment [trac_6820-browsedocs-v2.patch](tarball://root/attachments/some-uuid/ticket6820/trac_6820-browsedocs-v2.patch) by jhpalmieri created at 2009-10-27 01:24:41\n\napply only this patch",
+    "body": "Attachment [trac_6820-browsedocs-v2.patch](tarball://root/attachments/some-uuid/ticket6820/trac_6820-browsedocs-v2.patch) by @jhpalmieri created at 2009-10-27 01:24:41\n\napply only this patch",
     "created_at": "2009-10-27T01:24:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6820#issuecomment-56247",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_6820-browsedocs-v2.patch](tarball://root/attachments/some-uuid/ticket6820/trac_6820-browsedocs-v2.patch) by jhpalmieri created at 2009-10-27 01:24:41
+Attachment [trac_6820-browsedocs-v2.patch](tarball://root/attachments/some-uuid/ticket6820/trac_6820-browsedocs-v2.patch) by @jhpalmieri created at 2009-10-27 01:24:41
 
 apply only this patch
 
@@ -452,16 +452,16 @@ apply only this patch
 archive/issue_comments_056248.json:
 ```json
 {
-    "body": "Attachment [trac_6820-browsedocs-v3.patch](tarball://root/attachments/some-uuid/ticket6820/trac_6820-browsedocs-v3.patch) by mpatel created at 2009-10-27 09:38:42\n\nUse Sphinx stylesheets and jsMath for docstrings.  Apply only this patch.",
+    "body": "Attachment [trac_6820-browsedocs-v3.patch](tarball://root/attachments/some-uuid/ticket6820/trac_6820-browsedocs-v3.patch) by @qed777 created at 2009-10-27 09:38:42\n\nUse Sphinx stylesheets and jsMath for docstrings.  Apply only this patch.",
     "created_at": "2009-10-27T09:38:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6820#issuecomment-56248",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6820-browsedocs-v3.patch](tarball://root/attachments/some-uuid/ticket6820/trac_6820-browsedocs-v3.patch) by mpatel created at 2009-10-27 09:38:42
+Attachment [trac_6820-browsedocs-v3.patch](tarball://root/attachments/some-uuid/ticket6820/trac_6820-browsedocs-v3.patch) by @qed777 created at 2009-10-27 09:38:42
 
 Use Sphinx stylesheets and jsMath for docstrings.  Apply only this patch.
 
@@ -477,7 +477,7 @@ archive/issue_comments_056249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6820#issuecomment-56249",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -504,7 +504,7 @@ archive/issue_comments_056250.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6820#issuecomment-56250",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -517,16 +517,16 @@ Okay, this patch doesn't accidentally strip the backslashes anymore.  This depen
 archive/issue_comments_056251.json:
 ```json
 {
-    "body": "Attachment [trac_6820-browsedocs-v4.patch](tarball://root/attachments/some-uuid/ticket6820/trac_6820-browsedocs-v4.patch) by jhpalmieri created at 2009-10-27 22:46:59\n\ndepends on #6673.  apply only this patch.",
+    "body": "Attachment [trac_6820-browsedocs-v4.patch](tarball://root/attachments/some-uuid/ticket6820/trac_6820-browsedocs-v4.patch) by @jhpalmieri created at 2009-10-27 22:46:59\n\ndepends on #6673.  apply only this patch.",
     "created_at": "2009-10-27T22:46:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6820#issuecomment-56251",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_6820-browsedocs-v4.patch](tarball://root/attachments/some-uuid/ticket6820/trac_6820-browsedocs-v4.patch) by jhpalmieri created at 2009-10-27 22:46:59
+Attachment [trac_6820-browsedocs-v4.patch](tarball://root/attachments/some-uuid/ticket6820/trac_6820-browsedocs-v4.patch) by @jhpalmieri created at 2009-10-27 22:46:59
 
 depends on #6673.  apply only this patch.
 
@@ -542,7 +542,7 @@ archive/issue_comments_056252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6820#issuecomment-56252",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -560,7 +560,7 @@ archive/issue_comments_056253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6820#issuecomment-56253",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -584,7 +584,7 @@ archive/issue_comments_056254.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6820#issuecomment-56254",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -602,7 +602,7 @@ archive/issue_comments_056255.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6820#issuecomment-56255",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -632,7 +632,7 @@ archive/issue_comments_056256.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6820#issuecomment-56256",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -650,7 +650,7 @@ archive/issue_comments_056257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6820#issuecomment-56257",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

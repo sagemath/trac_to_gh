@@ -3,7 +3,7 @@
 archive/issues_007432.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nWhile browsing the doc I found some missing \"` `\" in `modular/hecke/module.py`. I fixed them.\n\nNote: there should be a systematic re-reading for those. But I don't have the time for this.\n\nCheers,\n\nFlorent\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7432\n\n",
+    "body": "Assignee: @hivert\n\nWhile browsing the doc I found some missing \"` `\" in `modular/hecke/module.py`. I fixed them.\n\nNote: there should be a systematic re-reading for those. But I don't have the time for this.\n\nCheers,\n\nFlorent\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7432\n\n",
     "created_at": "2009-11-11T21:40:57Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_007432.json:
     "title": "Missing ` ` in hecke/module.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7432",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
 While browsing the doc I found some missing "` `" in `modular/hecke/module.py`. I fixed them.
 
@@ -39,16 +39,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7432
 archive/issue_comments_062530.json:
 ```json
 {
-    "body": "Attachment [hecke_module_doc_improve-fh.patch](tarball://root/attachments/some-uuid/ticket7432/hecke_module_doc_improve-fh.patch) by hivert created at 2009-11-11 21:41:22",
+    "body": "Attachment [hecke_module_doc_improve-fh.patch](tarball://root/attachments/some-uuid/ticket7432/hecke_module_doc_improve-fh.patch) by @hivert created at 2009-11-11 21:41:22",
     "created_at": "2009-11-11T21:41:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7432",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7432#issuecomment-62530",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [hecke_module_doc_improve-fh.patch](tarball://root/attachments/some-uuid/ticket7432/hecke_module_doc_improve-fh.patch) by hivert created at 2009-11-11 21:41:22
+Attachment [hecke_module_doc_improve-fh.patch](tarball://root/attachments/some-uuid/ticket7432/hecke_module_doc_improve-fh.patch) by @hivert created at 2009-11-11 21:41:22
 
 
 
@@ -62,7 +62,7 @@ archive/issue_comments_062531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7432",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7432#issuecomment-62531",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_062532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7432",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7432#issuecomment-62532",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_062533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7432",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7432#issuecomment-62533",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_062534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7432",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7432#issuecomment-62534",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

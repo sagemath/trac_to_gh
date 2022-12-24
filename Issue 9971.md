@@ -3,7 +3,7 @@
 archive/issues_009971.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  vbraun\n\nThis patch adds classes for toric lattices homspaces and homomorphisms and allows checking fan compatibility and automatic subdivision to achieve this compatibility.\n\nSee #9604 for prerequisites.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9972\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @vbraun\n\nThis patch adds classes for toric lattices homspaces and homomorphisms and allows checking fan compatibility and automatic subdivision to achieve this compatibility.\n\nSee #9604 for prerequisites.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9972\n\n",
     "created_at": "2010-09-23T02:05:09Z",
     "labels": [
         "geometry",
@@ -14,12 +14,12 @@ archive/issues_009971.json:
     "title": "Add toric lattice morphisms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9971",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 Assignee: mhampton
 
-CC:  vbraun
+CC:  @vbraun
 
 This patch adds classes for toric lattices homspaces and homomorphisms and allows checking fan compatibility and automatic subdivision to achieve this compatibility.
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9972
 archive/issue_comments_099981.json:
 ```json
 {
-    "body": "Attachment [trac_9972_add_toric_lattice_morphisms.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_add_toric_lattice_morphisms.patch) by novoselt created at 2010-09-23 02:19:05\n\nThe patch is in principle ready, but while we are at it - do we want to make custom `_repr_` for such morphisms? If yes, how should they be different from the standard?\n\nAlso, the speed is far from spectacular, but it is not easy to make it better until simple polyhedra work faster - currently most time is spend on constructing them for intersection purposes and I tried hard not to intersect more cones than necessary.",
+    "body": "Attachment [trac_9972_add_toric_lattice_morphisms.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_add_toric_lattice_morphisms.patch) by @novoselt created at 2010-09-23 02:19:05\n\nThe patch is in principle ready, but while we are at it - do we want to make custom `_repr_` for such morphisms? If yes, how should they be different from the standard?\n\nAlso, the speed is far from spectacular, but it is not easy to make it better until simple polyhedra work faster - currently most time is spend on constructing them for intersection purposes and I tried hard not to intersect more cones than necessary.",
     "created_at": "2010-09-23T02:19:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-99981",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_9972_add_toric_lattice_morphisms.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_add_toric_lattice_morphisms.patch) by novoselt created at 2010-09-23 02:19:05
+Attachment [trac_9972_add_toric_lattice_morphisms.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_add_toric_lattice_morphisms.patch) by @novoselt created at 2010-09-23 02:19:05
 
 The patch is in principle ready, but while we are at it - do we want to make custom `_repr_` for such morphisms? If yes, how should they be different from the standard?
 
@@ -63,7 +63,7 @@ archive/issue_comments_099982.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-99982",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_099983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-99983",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_099984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-99984",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_099985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-99985",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_099986.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-99986",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_099987.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-99987",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_099988.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-99988",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_099989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-99989",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_099990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-99990",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_099991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-99991",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_099992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-99992",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -382,7 +382,7 @@ archive/issue_comments_099993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-99993",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -400,7 +400,7 @@ archive/issue_comments_099994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-99994",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -418,7 +418,7 @@ archive/issue_comments_099995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-99995",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -440,7 +440,7 @@ archive/issue_comments_099996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-99996",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -458,7 +458,7 @@ archive/issue_comments_099997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-99997",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -478,7 +478,7 @@ archive/issue_comments_099998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-99998",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -507,7 +507,7 @@ archive/issue_comments_099999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-99999",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -541,7 +541,7 @@ archive/issue_comments_100000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100000",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -559,7 +559,7 @@ archive/issue_comments_100001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100001",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -574,16 +574,16 @@ But its a potential pitfall to watch out for. We could always insist on the user
 archive/issue_comments_100002.json:
 ```json
 {
-    "body": "Attachment [trac_9972_improve_element_constructors.2.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_improve_element_constructors.2.patch) by vbraun created at 2010-10-08 18:57:58\n\nUpdated patch",
+    "body": "Attachment [trac_9972_improve_element_constructors.2.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_improve_element_constructors.2.patch) by @vbraun created at 2010-10-08 18:57:58\n\nUpdated patch",
     "created_at": "2010-10-08T18:57:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100002",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [trac_9972_improve_element_constructors.2.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_improve_element_constructors.2.patch) by vbraun created at 2010-10-08 18:57:58
+Attachment [trac_9972_improve_element_constructors.2.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_improve_element_constructors.2.patch) by @vbraun created at 2010-10-08 18:57:58
 
 Updated patch
 
@@ -599,7 +599,7 @@ archive/issue_comments_100003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100003",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -623,7 +623,7 @@ archive/issue_comments_100004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100004",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -650,7 +650,7 @@ archive/issue_comments_100005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100005",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -703,7 +703,7 @@ archive/issue_comments_100006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100006",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -726,7 +726,7 @@ archive/issue_comments_100007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100007",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -750,7 +750,7 @@ archive/issue_comments_100008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100008",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -807,7 +807,7 @@ archive/issue_comments_100009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100009",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -835,7 +835,7 @@ archive/issue_comments_100010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100010",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -855,7 +855,7 @@ archive/issue_comments_100011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100011",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -877,7 +877,7 @@ archive/issue_comments_100012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100012",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -910,7 +910,7 @@ archive/issue_comments_100013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100013",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -928,7 +928,7 @@ archive/issue_comments_100014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100014",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -964,7 +964,7 @@ archive/issue_comments_100015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100015",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -982,7 +982,7 @@ archive/issue_comments_100016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100016",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1010,7 +1010,7 @@ archive/issue_comments_100017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100017",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1032,7 +1032,7 @@ archive/issue_comments_100018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100018",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1069,7 +1069,7 @@ archive/issue_comments_100019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100019",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1091,7 +1091,7 @@ archive/issue_comments_100020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100020",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1129,7 +1129,7 @@ archive/issue_comments_100021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100021",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1147,7 +1147,7 @@ archive/issue_comments_100022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100022",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1165,7 +1165,7 @@ archive/issue_comments_100023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100023",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1193,16 +1193,16 @@ Now that we agree on this ;-) can you go ahead and remove the `Enhanced*` versio
 archive/issue_comments_100024.json:
 ```json
 {
-    "body": "Attachment [trac_9972_add_cone_embedding.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_add_cone_embedding.patch) by novoselt created at 2010-10-14 23:44:15",
+    "body": "Attachment [trac_9972_add_cone_embedding.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_add_cone_embedding.patch) by @novoselt created at 2010-10-14 23:44:15",
     "created_at": "2010-10-14T23:44:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100024",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_9972_add_cone_embedding.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_add_cone_embedding.patch) by novoselt created at 2010-10-14 23:44:15
+Attachment [trac_9972_add_cone_embedding.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_add_cone_embedding.patch) by @novoselt created at 2010-10-14 23:44:15
 
 
 
@@ -1211,16 +1211,16 @@ Attachment [trac_9972_add_cone_embedding.patch](tarball://root/attachments/some-
 archive/issue_comments_100025.json:
 ```json
 {
-    "body": "Attachment [trac_9972_improve_element_constructors.3.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_improve_element_constructors.3.patch) by novoselt created at 2010-10-15 00:15:07\n\nOops, sorry - I should have written that it was supposed to be the first. I unfolded the patches back so that it is clear who is writing/reviewing what and we don't need to seek the third person for the final review. I have updated my patch to fix the mistake that you caught. In your part I have removed `is_equivalent` from `Cone_of_fan` since this optimization is now performed by general cones. I have also removed extra parenthesis from `cone = fan().embed(x)`.\n\nI also have one more issue with your patch which got lost above, regarding new containment check: cones are equal if they have the same rays in the same order and equivalent if they define the same set of points. If the same cone happened to sit in different fans (or cones, for that matter) and so has several different objects representing it, it does not change anything. We can check if cones belong to the same ambient structure for code optimization, but the output should be the same. Also, to me it feels perfectly natural to ask e.g. whether a cone of some fan belongs to a subdivision of this fan. So I think that `cone in fan` should return `True` if `cone` is equivalent to any of the cones of `fan`. What is the ambient structure of `cone` and what is its ray order does not matter. If you really disagree with this, then I think that `cone in fan` should return `True` ONLY if `cone.ambient() is fan` is `True`. But I definitely prefer the first variant. Then one can write\n\n```\nsage: if cone in fan:\nsage:     cone = fan.embed(cone)\nsage:     Do something, say with cone.adjacent()\nsage: else:\nsage:     Deal with it somehow.\n```\n",
+    "body": "Attachment [trac_9972_improve_element_constructors.3.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_improve_element_constructors.3.patch) by @novoselt created at 2010-10-15 00:15:07\n\nOops, sorry - I should have written that it was supposed to be the first. I unfolded the patches back so that it is clear who is writing/reviewing what and we don't need to seek the third person for the final review. I have updated my patch to fix the mistake that you caught. In your part I have removed `is_equivalent` from `Cone_of_fan` since this optimization is now performed by general cones. I have also removed extra parenthesis from `cone = fan().embed(x)`.\n\nI also have one more issue with your patch which got lost above, regarding new containment check: cones are equal if they have the same rays in the same order and equivalent if they define the same set of points. If the same cone happened to sit in different fans (or cones, for that matter) and so has several different objects representing it, it does not change anything. We can check if cones belong to the same ambient structure for code optimization, but the output should be the same. Also, to me it feels perfectly natural to ask e.g. whether a cone of some fan belongs to a subdivision of this fan. So I think that `cone in fan` should return `True` if `cone` is equivalent to any of the cones of `fan`. What is the ambient structure of `cone` and what is its ray order does not matter. If you really disagree with this, then I think that `cone in fan` should return `True` ONLY if `cone.ambient() is fan` is `True`. But I definitely prefer the first variant. Then one can write\n\n```\nsage: if cone in fan:\nsage:     cone = fan.embed(cone)\nsage:     Do something, say with cone.adjacent()\nsage: else:\nsage:     Deal with it somehow.\n```\n",
     "created_at": "2010-10-15T00:15:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100025",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_9972_improve_element_constructors.3.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_improve_element_constructors.3.patch) by novoselt created at 2010-10-15 00:15:07
+Attachment [trac_9972_improve_element_constructors.3.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_improve_element_constructors.3.patch) by @novoselt created at 2010-10-15 00:15:07
 
 Oops, sorry - I should have written that it was supposed to be the first. I unfolded the patches back so that it is clear who is writing/reviewing what and we don't need to seek the third person for the final review. I have updated my patch to fix the mistake that you caught. In your part I have removed `is_equivalent` from `Cone_of_fan` since this optimization is now performed by general cones. I have also removed extra parenthesis from `cone = fan().embed(x)`.
 
@@ -1242,16 +1242,16 @@ sage:     Deal with it somehow.
 archive/issue_comments_100026.json:
 ```json
 {
-    "body": "Attachment [trac_9972_remove_enhanced_cones_and_fans.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_remove_enhanced_cones_and_fans.patch) by novoselt created at 2010-10-15 00:58:09",
+    "body": "Attachment [trac_9972_remove_enhanced_cones_and_fans.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_remove_enhanced_cones_and_fans.patch) by @novoselt created at 2010-10-15 00:58:09",
     "created_at": "2010-10-15T00:58:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100026",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_9972_remove_enhanced_cones_and_fans.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_remove_enhanced_cones_and_fans.patch) by novoselt created at 2010-10-15 00:58:09
+Attachment [trac_9972_remove_enhanced_cones_and_fans.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_remove_enhanced_cones_and_fans.patch) by @novoselt created at 2010-10-15 00:58:09
 
 
 
@@ -1265,7 +1265,7 @@ archive/issue_comments_100027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100027",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1283,7 +1283,7 @@ archive/issue_comments_100028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100028",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1301,7 +1301,7 @@ archive/issue_comments_100029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100029",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1314,16 +1314,16 @@ Oops I had forgotten to refresh the patch. Correct version follows.
 archive/issue_comments_100030.json:
 ```json
 {
-    "body": "Attachment [trac_9972_improve_element_constructors.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_improve_element_constructors.patch) by vbraun created at 2010-10-15 13:17:30\n\nUpdated patch",
+    "body": "Attachment [trac_9972_improve_element_constructors.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_improve_element_constructors.patch) by @vbraun created at 2010-10-15 13:17:30\n\nUpdated patch",
     "created_at": "2010-10-15T13:17:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100030",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [trac_9972_improve_element_constructors.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_improve_element_constructors.patch) by vbraun created at 2010-10-15 13:17:30
+Attachment [trac_9972_improve_element_constructors.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_improve_element_constructors.patch) by @vbraun created at 2010-10-15 13:17:30
 
 Updated patch
 
@@ -1339,7 +1339,7 @@ archive/issue_comments_100031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100031",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1361,7 +1361,7 @@ archive/issue_comments_100032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100032",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1387,7 +1387,7 @@ archive/issue_comments_100033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100033",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1405,7 +1405,7 @@ archive/issue_comments_100034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100034",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1418,16 +1418,16 @@ OK, `preimage_cones` can now be computed, everything is doctested, the last issu
 archive/issue_comments_100035.json:
 ```json
 {
-    "body": "Attachment [trac_9972_fix_fan_warning.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_fix_fan_warning.patch) by novoselt created at 2010-10-23 18:02:22",
+    "body": "Attachment [trac_9972_fix_fan_warning.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_fix_fan_warning.patch) by @novoselt created at 2010-10-23 18:02:22",
     "created_at": "2010-10-23T18:02:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100035",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_9972_fix_fan_warning.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_fix_fan_warning.patch) by novoselt created at 2010-10-23 18:02:22
+Attachment [trac_9972_fix_fan_warning.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_fix_fan_warning.patch) by @novoselt created at 2010-10-23 18:02:22
 
 
 
@@ -1441,7 +1441,7 @@ archive/issue_comments_100036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100036",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1459,7 +1459,7 @@ archive/issue_comments_100037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100037",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1479,7 +1479,7 @@ archive/issue_comments_100038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100038",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1511,7 +1511,7 @@ archive/issue_comments_100039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100039",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1529,7 +1529,7 @@ archive/issue_comments_100040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100040",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1549,7 +1549,7 @@ archive/issue_comments_100041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100041",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1567,7 +1567,7 @@ archive/issue_comments_100042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100042",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1585,7 +1585,7 @@ archive/issue_comments_100043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100043",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1631,7 +1631,7 @@ archive/issue_comments_100044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100044",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1649,7 +1649,7 @@ archive/issue_comments_100045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100045",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1669,7 +1669,7 @@ archive/issue_comments_100046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100046",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1697,7 +1697,7 @@ archive/issue_comments_100047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100047",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1715,7 +1715,7 @@ archive/issue_comments_100048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100048",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1740,7 +1740,7 @@ archive/issue_comments_100049.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100049",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1773,7 +1773,7 @@ archive/issue_comments_100050.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100050",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1793,7 +1793,7 @@ archive/issue_comments_100051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100051",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1813,7 +1813,7 @@ archive/issue_comments_100052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100052",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1831,7 +1831,7 @@ archive/issue_comments_100053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100053",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1863,7 +1863,7 @@ archive/issue_comments_100054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100054",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1881,7 +1881,7 @@ archive/issue_comments_100055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100055",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1899,7 +1899,7 @@ archive/issue_comments_100056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100056",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1917,7 +1917,7 @@ archive/issue_comments_100057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100057",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1946,7 +1946,7 @@ archive/issue_comments_100058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100058",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1959,16 +1959,16 @@ preimage_cones implemented
 archive/issue_comments_100059.json:
 ```json
 {
-    "body": "Attachment [trac_9972_add_fan_morphisms.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_add_fan_morphisms.patch) by novoselt created at 2010-11-10 22:56:37\n\nGrrr... That was due to my optimization attempt without proper thinking. The new version uses the same cycle as the very first one (which was finding everything and even more), but requires equality of image cones. Should work now, the blow up example in the documentation is extended to include the preimage cones of the quadrant...",
+    "body": "Attachment [trac_9972_add_fan_morphisms.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_add_fan_morphisms.patch) by @novoselt created at 2010-11-10 22:56:37\n\nGrrr... That was due to my optimization attempt without proper thinking. The new version uses the same cycle as the very first one (which was finding everything and even more), but requires equality of image cones. Should work now, the blow up example in the documentation is extended to include the preimage cones of the quadrant...",
     "created_at": "2010-11-10T22:56:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100059",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_9972_add_fan_morphisms.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_add_fan_morphisms.patch) by novoselt created at 2010-11-10 22:56:37
+Attachment [trac_9972_add_fan_morphisms.patch](tarball://root/attachments/some-uuid/ticket9972/trac_9972_add_fan_morphisms.patch) by @novoselt created at 2010-11-10 22:56:37
 
 Grrr... That was due to my optimization attempt without proper thinking. The new version uses the same cycle as the very first one (which was finding everything and even more), but requires equality of image cones. Should work now, the blow up example in the documentation is extended to include the preimage cones of the quadrant...
 
@@ -1984,7 +1984,7 @@ archive/issue_comments_100060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100060",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -2002,7 +2002,7 @@ archive/issue_comments_100061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100061",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -2020,7 +2020,7 @@ archive/issue_comments_100062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100062",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -2040,7 +2040,7 @@ archive/issue_comments_100063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9971#issuecomment-100063",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

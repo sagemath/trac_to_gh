@@ -59,7 +59,7 @@ archive/issue_comments_026622.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3749#issuecomment-26622",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_026624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3749#issuecomment-26624",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_026625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3749#issuecomment-26625",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -153,16 +153,16 @@ Don't worry about what David Roe is doing -- this ticket has been idle for nearl
 archive/issue_comments_026626.json:
 ```json
 {
-    "body": "Attachment [trac_3749-is_cyclic.patch](tarball://root/attachments/some-uuid/ticket3749/trac_3749-is_cyclic.patch) by wdj created at 2008-12-11 13:35:28\n\nbased on 3.2.2.alpha1",
+    "body": "Attachment [trac_3749-is_cyclic.patch](tarball://root/attachments/some-uuid/ticket3749/trac_3749-is_cyclic.patch) by @wdjoyner created at 2008-12-11 13:35:28\n\nbased on 3.2.2.alpha1",
     "created_at": "2008-12-11T13:35:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3749#issuecomment-26626",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_3749-is_cyclic.patch](tarball://root/attachments/some-uuid/ticket3749/trac_3749-is_cyclic.patch) by wdj created at 2008-12-11 13:35:28
+Attachment [trac_3749-is_cyclic.patch](tarball://root/attachments/some-uuid/ticket3749/trac_3749-is_cyclic.patch) by @wdjoyner created at 2008-12-11 13:35:28
 
 based on 3.2.2.alpha1
 
@@ -178,7 +178,7 @@ archive/issue_comments_026627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3749#issuecomment-26627",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_026628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3749#issuecomment-26628",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_026629.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3749#issuecomment-26629",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -326,16 +326,16 @@ Just factor the numbers a_i that define the abelian group.  Then the biggest d_i
 archive/issue_comments_026630.json:
 ```json
 {
-    "body": "Attachment [trac_3749-is_cyclic2.patch](tarball://root/attachments/some-uuid/ticket3749/trac_3749-is_cyclic2.patch) by wdj created at 2008-12-12 02:07:25\n\nApply other patch first. Based on 3.2.2.alpha1",
+    "body": "Attachment [trac_3749-is_cyclic2.patch](tarball://root/attachments/some-uuid/ticket3749/trac_3749-is_cyclic2.patch) by @wdjoyner created at 2008-12-12 02:07:25\n\nApply other patch first. Based on 3.2.2.alpha1",
     "created_at": "2008-12-12T02:07:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3749#issuecomment-26630",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_3749-is_cyclic2.patch](tarball://root/attachments/some-uuid/ticket3749/trac_3749-is_cyclic2.patch) by wdj created at 2008-12-12 02:07:25
+Attachment [trac_3749-is_cyclic2.patch](tarball://root/attachments/some-uuid/ticket3749/trac_3749-is_cyclic2.patch) by @wdjoyner created at 2008-12-12 02:07:25
 
 Apply other patch first. Based on 3.2.2.alpha1
 
@@ -351,7 +351,7 @@ archive/issue_comments_026631.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3749#issuecomment-26631",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -377,7 +377,7 @@ archive/issue_comments_026632.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3749#issuecomment-26632",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -406,7 +406,7 @@ archive/issue_comments_026633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3749#issuecomment-26633",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -460,7 +460,7 @@ archive/issue_comments_026634.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3749#issuecomment-26634",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -473,16 +473,16 @@ The others should be applied first. Based on 3.2.2.alpha1
 archive/issue_comments_026635.json:
 ```json
 {
-    "body": "Attachment [trac_3749-is_cyclic3.patch](tarball://root/attachments/some-uuid/ticket3749/trac_3749-is_cyclic3.patch) by wdj created at 2008-12-12 23:53:34\n\nI think this last patch fixes things the way you suggested. Also, both abelian_groups.py and dual_abelian_groups.py pass sage -t now.",
+    "body": "Attachment [trac_3749-is_cyclic3.patch](tarball://root/attachments/some-uuid/ticket3749/trac_3749-is_cyclic3.patch) by @wdjoyner created at 2008-12-12 23:53:34\n\nI think this last patch fixes things the way you suggested. Also, both abelian_groups.py and dual_abelian_groups.py pass sage -t now.",
     "created_at": "2008-12-12T23:53:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3749#issuecomment-26635",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_3749-is_cyclic3.patch](tarball://root/attachments/some-uuid/ticket3749/trac_3749-is_cyclic3.patch) by wdj created at 2008-12-12 23:53:34
+Attachment [trac_3749-is_cyclic3.patch](tarball://root/attachments/some-uuid/ticket3749/trac_3749-is_cyclic3.patch) by @wdjoyner created at 2008-12-12 23:53:34
 
 I think this last patch fixes things the way you suggested. Also, both abelian_groups.py and dual_abelian_groups.py pass sage -t now.
 
@@ -498,7 +498,7 @@ archive/issue_comments_026636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3749#issuecomment-26636",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

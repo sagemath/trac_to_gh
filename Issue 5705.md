@@ -3,7 +3,7 @@
 archive/issues_005705.json:
 ```json
 {
-    "body": "Assignee: malb\n\nso far `homogenize()` would always create a new parent if the variable was not in the current parent. It should make sure that it reuses a previously created parent if available.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5705\n\n",
+    "body": "Assignee: @malb\n\nso far `homogenize()` would always create a new parent if the variable was not in the current parent. It should make sure that it reuses a previously created parent if available.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5705\n\n",
     "created_at": "2009-04-07T11:33:45Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_005705.json:
     "title": "[with patch, needs review] homogenize() does not respect the rule that parents are unique",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5705",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 so far `homogenize()` would always create a new parent if the variable was not in the current parent. It should make sure that it reuses a previously created parent if available.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5705
 archive/issue_comments_044582.json:
 ```json
 {
-    "body": "Attachment [mpoly_homogenize_parent.patch](tarball://root/attachments/some-uuid/ticket5705/mpoly_homogenize_parent.patch) by SimonKing created at 2009-04-07 15:38:59\n\nIndeed, without the patch, we have\n\n```\nsage: R=PolynomialRing(QQ,'x',5)\nsage: p=R.random_element()\nsage: q1=p.homogenize()\nsage: q2=p.homogenize()\nsage: q1.parent() is q2.parent()\nFalse\n```\n\n\nWith the patch, that cleanly applies, we have\n\n```\nsage: R=PolynomialRing(QQ,'x',5)\nsage: p=R.random_element()\nsage: q1=p.homogenize()\nsage: q2=p.homogenize()\nsage: q1.parent() is q2.parent()\nTrue\n```\n\n\nSo, I give it a positive review.",
+    "body": "Attachment [mpoly_homogenize_parent.patch](tarball://root/attachments/some-uuid/ticket5705/mpoly_homogenize_parent.patch) by @simon-king-jena created at 2009-04-07 15:38:59\n\nIndeed, without the patch, we have\n\n```\nsage: R=PolynomialRing(QQ,'x',5)\nsage: p=R.random_element()\nsage: q1=p.homogenize()\nsage: q2=p.homogenize()\nsage: q1.parent() is q2.parent()\nFalse\n```\n\n\nWith the patch, that cleanly applies, we have\n\n```\nsage: R=PolynomialRing(QQ,'x',5)\nsage: p=R.random_element()\nsage: q1=p.homogenize()\nsage: q2=p.homogenize()\nsage: q1.parent() is q2.parent()\nTrue\n```\n\n\nSo, I give it a positive review.",
     "created_at": "2009-04-07T15:38:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5705#issuecomment-44582",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [mpoly_homogenize_parent.patch](tarball://root/attachments/some-uuid/ticket5705/mpoly_homogenize_parent.patch) by SimonKing created at 2009-04-07 15:38:59
+Attachment [mpoly_homogenize_parent.patch](tarball://root/attachments/some-uuid/ticket5705/mpoly_homogenize_parent.patch) by @simon-king-jena created at 2009-04-07 15:38:59
 
 Indeed, without the patch, we have
 
@@ -103,7 +103,7 @@ archive/issue_comments_044584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5705#issuecomment-44584",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_044585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5705#issuecomment-44585",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_044588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5705#issuecomment-44588",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

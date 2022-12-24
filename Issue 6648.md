@@ -3,7 +3,7 @@
 archive/issues_006648.json:
 ```json
 {
-    "body": "Assignee: evanandel\n\nCC:  robertwb\n\nKeywords: complex\n\nThis patch add's Riemann mapping functionality to sage: http://en.wikipedia.org/wiki/Riemann_mapping_theorem\n\nIt can compute numerical maps and has multiple utilities for plotting/visualizing the maps.\n\nIt also includes 2 functions to parametrically interpolate lists of complex points. This makes it far easier for the user to define the boundary of the figure that they wish to Riemann map.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6648\n\n",
+    "body": "Assignee: evanandel\n\nCC:  @robertwb\n\nKeywords: complex\n\nThis patch add's Riemann mapping functionality to sage: http://en.wikipedia.org/wiki/Riemann_mapping_theorem\n\nIt can compute numerical maps and has multiple utilities for plotting/visualizing the maps.\n\nIt also includes 2 functions to parametrically interpolate lists of complex points. This makes it far easier for the user to define the boundary of the figure that they wish to Riemann map.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6648\n\n",
     "created_at": "2009-07-28T17:10:46Z",
     "labels": [
         "calculus",
@@ -19,7 +19,7 @@ archive/issues_006648.json:
 ```
 Assignee: evanandel
 
-CC:  robertwb
+CC:  @robertwb
 
 Keywords: complex
 
@@ -88,7 +88,7 @@ archive/issue_comments_054536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6648#issuecomment-54536",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_054539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6648#issuecomment-54539",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_054542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6648#issuecomment-54542",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -430,7 +430,7 @@ archive/issue_comments_054544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6648#issuecomment-54544",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -468,16 +468,16 @@ Alright, new patch up. It truncates the required precision a bit.
 archive/issue_comments_054546.json:
 ```json
 {
-    "body": "Attachment [12659.4.patch](tarball://root/attachments/some-uuid/ticket6648/12659.4.patch) by wdj created at 2009-07-31 18:59:01\n\nThis passes sage -testall (except for the known failures for 4.1.1.a1 on an amd64 ubuntu 9.04 machine).\n\nPositive review from me. Should it undergo more testing?",
+    "body": "Attachment [12659.4.patch](tarball://root/attachments/some-uuid/ticket6648/12659.4.patch) by @wdjoyner created at 2009-07-31 18:59:01\n\nThis passes sage -testall (except for the known failures for 4.1.1.a1 on an amd64 ubuntu 9.04 machine).\n\nPositive review from me. Should it undergo more testing?",
     "created_at": "2009-07-31T18:59:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6648#issuecomment-54546",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [12659.4.patch](tarball://root/attachments/some-uuid/ticket6648/12659.4.patch) by wdj created at 2009-07-31 18:59:01
+Attachment [12659.4.patch](tarball://root/attachments/some-uuid/ticket6648/12659.4.patch) by @wdjoyner created at 2009-07-31 18:59:01
 
 This passes sage -testall (except for the known failures for 4.1.1.a1 on an amd64 ubuntu 9.04 machine).
 
@@ -515,7 +515,7 @@ archive/issue_comments_054548.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6648#issuecomment-54548",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -535,7 +535,7 @@ archive/issue_comments_054549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6648#issuecomment-54549",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -616,7 +616,7 @@ archive/issue_comments_054551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6648#issuecomment-54551",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -658,7 +658,7 @@ archive/issue_comments_054553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6648#issuecomment-54553",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -702,16 +702,16 @@ This patch is independent from the prefious ones, that is you need to install bo
 archive/issue_comments_054555.json:
 ```json
 {
-    "body": "Attachment [12660.patch](tarball://root/attachments/some-uuid/ticket6648/12660.patch) by wdj created at 2009-08-28 00:41:01\n\nPasses as before, so I give this a positive review again. However, I don't know how to check the reference docs, or what should be checked. Or is that part of the refereeing processing?",
+    "body": "Attachment [12660.patch](tarball://root/attachments/some-uuid/ticket6648/12660.patch) by @wdjoyner created at 2009-08-28 00:41:01\n\nPasses as before, so I give this a positive review again. However, I don't know how to check the reference docs, or what should be checked. Or is that part of the refereeing processing?",
     "created_at": "2009-08-28T00:41:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6648#issuecomment-54555",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [12660.patch](tarball://root/attachments/some-uuid/ticket6648/12660.patch) by wdj created at 2009-08-28 00:41:01
+Attachment [12660.patch](tarball://root/attachments/some-uuid/ticket6648/12660.patch) by @wdjoyner created at 2009-08-28 00:41:01
 
 Passes as before, so I give this a positive review again. However, I don't know how to check the reference docs, or what should be checked. Or is that part of the refereeing processing?
 
@@ -727,7 +727,7 @@ archive/issue_comments_054556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6648#issuecomment-54556",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -874,7 +874,7 @@ archive/issue_comments_054558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6648#issuecomment-54558",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -985,7 +985,7 @@ archive/issue_comments_054562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6648#issuecomment-54562",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -1169,7 +1169,7 @@ archive/issue_comments_054569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6648#issuecomment-54569",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -1187,7 +1187,7 @@ archive/issue_comments_054570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6648#issuecomment-54570",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -1263,7 +1263,7 @@ archive/issue_comments_054574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6648#issuecomment-54574",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -1281,7 +1281,7 @@ archive/issue_comments_054575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6648#issuecomment-54575",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -1301,7 +1301,7 @@ archive/issue_comments_054576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6648#issuecomment-54576",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -1319,7 +1319,7 @@ archive/issue_comments_054577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6648#issuecomment-54577",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -1337,7 +1337,7 @@ archive/issue_comments_054578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6648#issuecomment-54578",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1394,7 +1394,7 @@ archive/issue_comments_054580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6648#issuecomment-54580",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005263.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  kcrisman was mpatel\n\nWhen I publish a worksheet on sagenb.org, it says I can find the sheet at: http://:8000/home/pub/243\n\nOf course, this is silly nonsense.\n\nIt might have to do with starting the notebook with address='', maybe?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5263\n\n",
+    "body": "Assignee: boothby\n\nCC:  @kcrisman @williamstein @qed777\n\nWhen I publish a worksheet on sagenb.org, it says I can find the sheet at: http://:8000/home/pub/243\n\nOf course, this is silly nonsense.\n\nIt might have to do with starting the notebook with address='', maybe?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5263\n\n",
     "created_at": "2009-02-14T02:16:51Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_005263.json:
     "title": "publishing a worksheet displays the URL without the hostname",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5263",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
 
-CC:  kcrisman was mpatel
+CC:  @kcrisman @williamstein @qed777
 
 When I publish a worksheet on sagenb.org, it says I can find the sheet at: http://:8000/home/pub/243
 
@@ -61,7 +61,7 @@ archive/issue_comments_040404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40404",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_040405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40405",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_040407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40407",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_040408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40408",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_040409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40409",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_040410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40410",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_040411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40411",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -232,16 +232,16 @@ Uses the HTTP-HOST header to attempt to get the host name.
 archive/issue_comments_040412.json:
 ```json
 {
-    "body": "Attachment [trac_5263-publish-url.patch](tarball://root/attachments/some-uuid/ticket5263/trac_5263-publish-url.patch) by mpatel created at 2010-01-20 03:20:16\n\nNice!",
+    "body": "Attachment [trac_5263-publish-url.patch](tarball://root/attachments/some-uuid/ticket5263/trac_5263-publish-url.patch) by @qed777 created at 2010-01-20 03:20:16\n\nNice!",
     "created_at": "2010-01-20T03:20:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40412",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_5263-publish-url.patch](tarball://root/attachments/some-uuid/ticket5263/trac_5263-publish-url.patch) by mpatel created at 2010-01-20 03:20:16
+Attachment [trac_5263-publish-url.patch](tarball://root/attachments/some-uuid/ticket5263/trac_5263-publish-url.patch) by @qed777 created at 2010-01-20 03:20:16
 
 Nice!
 
@@ -257,7 +257,7 @@ archive/issue_comments_040413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40413",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_040414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40414",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

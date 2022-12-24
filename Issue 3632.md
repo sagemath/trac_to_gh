@@ -3,7 +3,7 @@
 archive/issues_003632.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: E = EllipticCurve([37,0])\nsage: E.padic_regulator(5)\n```\n\n\ngives a Assertion Error.\n\nThe included patch corrects this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3632\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: E = EllipticCurve([37,0])\nsage: E.padic_regulator(5)\n```\n\n\ngives a Assertion Error.\n\nThe included patch corrects this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3632\n\n",
     "created_at": "2008-07-10T13:11:05Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_003632.json:
     "title": "[with patch, needs review] small bug in p-adic heights",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3632",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3632
 archive/issue_comments_025691.json:
 ```json
 {
-    "body": "Attachment [trac.3632.patch](tarball://root/attachments/some-uuid/ticket3632/trac.3632.patch) by wuthrich created at 2008-07-10 13:11:54",
+    "body": "Attachment [trac.3632.patch](tarball://root/attachments/some-uuid/ticket3632/trac.3632.patch) by @categorie created at 2008-07-10 13:11:54",
     "created_at": "2008-07-10T13:11:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3632",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3632#issuecomment-25691",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac.3632.patch](tarball://root/attachments/some-uuid/ticket3632/trac.3632.patch) by wuthrich created at 2008-07-10 13:11:54
+Attachment [trac.3632.patch](tarball://root/attachments/some-uuid/ticket3632/trac.3632.patch) by @categorie created at 2008-07-10 13:11:54
 
 
 
@@ -77,16 +77,16 @@ I hate to do this.... it's obviously a perfectly good patch.... but the document
 archive/issue_comments_025693.json:
 ```json
 {
-    "body": "Attachment [trac.3632.extra1.patch](tarball://root/attachments/some-uuid/ticket3632/trac.3632.extra1.patch) by wuthrich created at 2008-07-11 10:23:22\n\nOk. I added an additional patch (applied after the first) with some docstring. I hope that it is enough.",
+    "body": "Attachment [trac.3632.extra1.patch](tarball://root/attachments/some-uuid/ticket3632/trac.3632.extra1.patch) by @categorie created at 2008-07-11 10:23:22\n\nOk. I added an additional patch (applied after the first) with some docstring. I hope that it is enough.",
     "created_at": "2008-07-11T10:23:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3632",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3632#issuecomment-25693",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac.3632.extra1.patch](tarball://root/attachments/some-uuid/ticket3632/trac.3632.extra1.patch) by wuthrich created at 2008-07-11 10:23:22
+Attachment [trac.3632.extra1.patch](tarball://root/attachments/some-uuid/ticket3632/trac.3632.extra1.patch) by @categorie created at 2008-07-11 10:23:22
 
 Ok. I added an additional patch (applied after the first) with some docstring. I hope that it is enough.
 
@@ -124,7 +124,7 @@ archive/issue_comments_025695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3632",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3632#issuecomment-25695",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 

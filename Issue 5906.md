@@ -3,7 +3,7 @@
 archive/issues_005906.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThis came up in https://groups.google.com/group/sage-devel/t/d9b64b5ddc24bb6b\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: g = graphs.CompleteGraph(2)\nsage: g.show()\nlibpng error: Image width or height is zero in IHDR\n<SNIP>\n```\n\n| Sage Version 3.4.1, Release Date: 2009-04-21                       |\n| Type notebook() for the GUI, and license() for information.        |\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5906\n\n",
+    "body": "Assignee: @rlmill\n\nThis came up in https://groups.google.com/group/sage-devel/t/d9b64b5ddc24bb6b\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: g = graphs.CompleteGraph(2)\nsage: g.show()\nlibpng error: Image width or height is zero in IHDR\n<SNIP>\n```\n\n| Sage Version 3.4.1, Release Date: 2009-04-21                       |\n| Type notebook() for the GUI, and license() for information.        |\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5906\n\n",
     "created_at": "2009-04-26T21:47:04Z",
     "labels": [
         "graph theory",
@@ -17,7 +17,7 @@ archive/issues_005906.json:
     "user": "mabshoff"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 This came up in https://groups.google.com/group/sage-devel/t/d9b64b5ddc24bb6b
 
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5906
 archive/issue_comments_046685.json:
 ```json
 {
-    "body": "Attachment [trac_5906.patch](tarball://root/attachments/some-uuid/ticket5906/trac_5906.patch) by rlm created at 2009-04-27 16:10:10",
+    "body": "Attachment [trac_5906.patch](tarball://root/attachments/some-uuid/ticket5906/trac_5906.patch) by @rlmill created at 2009-04-27 16:10:10",
     "created_at": "2009-04-27T16:10:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5906#issuecomment-46685",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_5906.patch](tarball://root/attachments/some-uuid/ticket5906/trac_5906.patch) by rlm created at 2009-04-27 16:10:10
+Attachment [trac_5906.patch](tarball://root/attachments/some-uuid/ticket5906/trac_5906.patch) by @rlmill created at 2009-04-27 16:10:10
 
 
 

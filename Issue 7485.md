@@ -3,7 +3,7 @@
 archive/issues_007485.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7485\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7485\n\n",
     "created_at": "2009-11-18T07:14:59Z",
     "labels": [
         "build",
@@ -14,10 +14,10 @@ archive/issues_007485.json:
     "title": "make fortran a prerequisite on all platforms except OS X.  Remove g95 binaries from Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7485",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_063219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7485#issuecomment-63219",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_063220.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7485#issuecomment-63220",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_063222.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7485#issuecomment-63222",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_063225.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7485#issuecomment-63225",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_063226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7485#issuecomment-63226",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

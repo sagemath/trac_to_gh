@@ -3,7 +3,7 @@
 archive/issues_000196.json:
 ```json
 {
-    "body": "Assignee: was\n\nSomewhat bizarrely, the SAGE _sig_on/_sig_off signal handling code\nappears to be completely not doing anything at all.  Weird!  This is a\nmajor bug that must be fixed before SAGE-2.0. \n\nIssue created by migration from https://trac.sagemath.org/ticket/196\n\n",
+    "body": "Assignee: @williamstein\n\nSomewhat bizarrely, the SAGE _sig_on/_sig_off signal handling code\nappears to be completely not doing anything at all.  Weird!  This is a\nmajor bug that must be fixed before SAGE-2.0. \n\nIssue created by migration from https://trac.sagemath.org/ticket/196\n\n",
     "created_at": "2007-01-19T09:54:09Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_000196.json:
     "title": "sage signal handler -- ctrl-c interrupt, etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/196",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Somewhat bizarrely, the SAGE _sig_on/_sig_off signal handling code
 appears to be completely not doing anything at all.  Weird!  This is a
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/196
 archive/issue_comments_000891.json:
 ```json
 {
-    "body": "Changing assignee from was to malb.",
+    "body": "Changing assignee from @williamstein to @malb.",
     "created_at": "2007-01-20T00:16:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/196#issuecomment-891",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from was to malb.
+Changing assignee from @williamstein to @malb.
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_000892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/196#issuecomment-892",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_000893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/196#issuecomment-893",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_000894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/196#issuecomment-894",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002082.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  boothby\n\nplot loops\n\nIssue created by migration from https://trac.sagemath.org/ticket/2082\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  boothby\n\nplot loops\n\nIssue created by migration from https://trac.sagemath.org/ticket/2082\n\n",
     "created_at": "2008-02-07T08:23:02Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_002082.json:
     "title": "plot loops",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2082",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 CC:  boothby
 
@@ -57,7 +57,7 @@ archive/issue_comments_013480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2082",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2082#issuecomment-13480",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

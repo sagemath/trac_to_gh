@@ -3,7 +3,7 @@
 archive/issues_009123.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  quantumking\n\nSchur algebras are algebras with basis used in the description of the representation theory of GL_n.  I'd like to implement them.  \n\nA nice reference is Chapter 2 of Green's book \"Polynomial representations of GL_n\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/9123\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  quantumking\n\nSchur algebras are algebras with basis used in the description of the representation theory of GL_n.  I'd like to implement them.  \n\nA nice reference is Chapter 2 of Green's book \"Polynomial representations of GL_n\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/9123\n\n",
     "created_at": "2010-06-03T04:08:56Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_009123.json:
     "title": "implement Schur algebras using AlgebrasWithBasis",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9123",
-    "user": "hthomas"
+    "user": "@hughrthomas"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 CC:  quantumking
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9123
 archive/issue_comments_084850.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to hthomas.",
+    "body": "Changing assignee from @aghitza to @hughrthomas.",
     "created_at": "2010-06-03T04:09:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9123#issuecomment-84850",
-    "user": "hthomas"
+    "user": "@hughrthomas"
 }
 ```
 
-Changing assignee from AlexGhitza to hthomas.
+Changing assignee from @aghitza to @hughrthomas.
 
 
 
@@ -54,16 +54,16 @@ Changing assignee from AlexGhitza to hthomas.
 archive/issue_comments_084851.json:
 ```json
 {
-    "body": "Changing assignee from hthomas to AlexGhitza.",
+    "body": "Changing assignee from @hughrthomas to @aghitza.",
     "created_at": "2011-05-05T14:43:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9123#issuecomment-84851",
-    "user": "hthomas"
+    "user": "@hughrthomas"
 }
 ```
 
-Changing assignee from hthomas to AlexGhitza.
+Changing assignee from @hughrthomas to @aghitza.
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_084852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9123#issuecomment-84852",
-    "user": "hthomas"
+    "user": "@hughrthomas"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_084853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9123#issuecomment-84853",
-    "user": "hthomas"
+    "user": "@hughrthomas"
 }
 ```
 
@@ -108,16 +108,16 @@ A patch which does more or less what I want is on the sage-combinat queue, but i
 archive/issue_comments_084854.json:
 ```json
 {
-    "body": "Attachment [trac_9123-schur-algebra-and-gln-characters-ht.patch](tarball://root/attachments/some-uuid/ticket9123/trac_9123-schur-algebra-and-gln-characters-ht.patch) by hthomas created at 2013-03-25 12:19:49",
+    "body": "Attachment [trac_9123-schur-algebra-and-gln-characters-ht.patch](tarball://root/attachments/some-uuid/ticket9123/trac_9123-schur-algebra-and-gln-characters-ht.patch) by @hughrthomas created at 2013-03-25 12:19:49",
     "created_at": "2013-03-25T12:19:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9123#issuecomment-84854",
-    "user": "hthomas"
+    "user": "@hughrthomas"
 }
 ```
 
-Attachment [trac_9123-schur-algebra-and-gln-characters-ht.patch](tarball://root/attachments/some-uuid/ticket9123/trac_9123-schur-algebra-and-gln-characters-ht.patch) by hthomas created at 2013-03-25 12:19:49
+Attachment [trac_9123-schur-algebra-and-gln-characters-ht.patch](tarball://root/attachments/some-uuid/ticket9123/trac_9123-schur-algebra-and-gln-characters-ht.patch) by @hughrthomas created at 2013-03-25 12:19:49
 
 
 
@@ -131,7 +131,7 @@ archive/issue_comments_084855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9123#issuecomment-84855",
-    "user": "hthomas"
+    "user": "@hughrthomas"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_084856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9123#issuecomment-84856",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_084857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9123#issuecomment-84857",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_084858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9123#issuecomment-84858",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_084861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9123#issuecomment-84861",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_084863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9123#issuecomment-84863",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -312,7 +312,7 @@ archive/issue_comments_084864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9123#issuecomment-84864",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_084866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9123#issuecomment-84866",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -366,7 +366,7 @@ archive/issue_comments_084867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9123#issuecomment-84867",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -384,7 +384,7 @@ archive/issue_comments_084868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9123#issuecomment-84868",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -402,7 +402,7 @@ archive/issue_comments_084869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9123#issuecomment-84869",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -420,7 +420,7 @@ archive/issue_comments_084870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9123#issuecomment-84870",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -438,7 +438,7 @@ archive/issue_comments_084871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9123#issuecomment-84871",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -456,7 +456,7 @@ archive/issue_comments_084872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9123#issuecomment-84872",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

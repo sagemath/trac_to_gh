@@ -14,7 +14,7 @@ archive/issues_002138.json:
     "title": "bugs in word_problem for AbelianGroupElement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2138",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 Assignee: joyner
@@ -58,7 +58,7 @@ archive/issue_comments_014020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2138#issuecomment-14020",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_014021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2138#issuecomment-14021",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_008738.json:
     "title": "@interact matrix input control ignores label",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8738",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jason, was
@@ -47,7 +47,7 @@ archive/issue_comments_079923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8738#issuecomment-79923",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_079924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8738#issuecomment-79924",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_079925.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8738#issuecomment-79925",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_079926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8738#issuecomment-79926",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_079927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8738#issuecomment-79927",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_079928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8738#issuecomment-79928",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_079929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8738#issuecomment-79929",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_079930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8738#issuecomment-79930",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

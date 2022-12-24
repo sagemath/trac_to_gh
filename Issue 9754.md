@@ -3,7 +3,7 @@
 archive/issues_009754.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  rbeezer wdj mhansen\n\nThis depends on #9720, so first apply the v3 patch from there.  Two routines are added.  One generates matrices (using methods from the v3 patch) whose right and left null spaces, row space, and column space have desirable properties.  The other creates random unimodular matrices. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9754\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @rbeezer @wdjoyner @mwhansen\n\nThis depends on #9720, so first apply the v3 patch from there.  Two routines are added.  One generates matrices (using methods from the v3 patch) whose right and left null spaces, row space, and column space have desirable properties.  The other creates random unimodular matrices. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9754\n\n",
     "created_at": "2010-08-17T00:02:37Z",
     "labels": [
         "linear algebra",
@@ -19,7 +19,7 @@ archive/issues_009754.json:
 ```
 Assignee: jason, was
 
-CC:  rbeezer wdj mhansen
+CC:  @rbeezer @wdjoyner @mwhansen
 
 This depends on #9720, so first apply the v3 patch from there.  Two routines are added.  One generates matrices (using methods from the v3 patch) whose right and left null spaces, row space, and column space have desirable properties.  The other creates random unimodular matrices. 
 
@@ -113,7 +113,7 @@ archive/issue_comments_095520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9754#issuecomment-95520",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_095523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9754#issuecomment-95523",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_095526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9754#issuecomment-95526",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_095527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9754#issuecomment-95527",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -337,16 +337,16 @@ I made the suggested changes in the v5 patch (making rank the input, changing th
 archive/issue_comments_095530.json:
 ```json
 {
-    "body": "Attachment [trac_9754_allow_zero_rank.patch](tarball://root/attachments/some-uuid/ticket9754/trac_9754_allow_zero_rank.patch) by rbeezer created at 2010-08-31 05:17:31\n\n1.  With v5 patch:\n\n\n```\nsage: A=random_matrix(QQ, 5,9,algorithm='subspaces',rank=5)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n<snip>\n\n/sage/dev/local/lib/python2.6/site-packages/sage/matrix/constructor.pyc in random_matrix(ring, nrows, ncols, algorithm, *args, **kwds)\n   1160         return A\n   1161     elif algorithm == 'echelon_form':\n-> 1162         return random_rref_matrix(parent, *args, **kwds)\n   1163     elif algorithm == 'echelonizable':\n   1164         return random_echelonizable_matrix(parent, *args, **kwds)\n\n/sage/dev/local/lib/python2.6/site-packages/sage/matrix/constructor.pyc in random_rref_matrix(parent, num_pivots)\n   1689         raise TypeError(\"the number of pivots must be an integer.\")\n   1690     if num_pivots<=0:\n-> 1691         raise ValueError(\"the number of pivots must be greater than zero.\")\n   1692     ring = parent.base_ring()\n   1693     if not ring.is_exact():\n\nValueError: the number of pivots must be greater than zero.\n```\n\n\nWith `rank=rows` the L matrix is empty (ie no rows), which is an interesting case (and often the source of student questions).  It seems to fail since your routines will not build a matrix in echelon form with no pivots.  Nor will it build an echelonizable matrix with zero rank.\n\nHowever, both are possible - a matrix with no pivots must be totally zeros.  A matrix of rank zero is totally zeros.  Since you have coded this carefully, I think everything works - if you just let it happen.\n\nPatch shows how to do this.  Apply it to experiment, and read the patch, then pop it off and make the necessary changes yourself if you believe it is OK.  I've only tested this a little bit, so don't presume it has my seal-of-approval.  Adjust error messages and tests.\n\n2.  In 'subspaces\" routine near the end.  Do you need to augment B to form N, and then strip out parts of M?  Seems you just produce the identity in the right \"half\" and then throw it away.  Will the following work?\n\n\n```\nJ=K.stack(L)\nreturn J.inverse()*B\n```\n\n\nWhat you have is clearer, but a comment or two in the source could replace the extra statements.",
+    "body": "Attachment [trac_9754_allow_zero_rank.patch](tarball://root/attachments/some-uuid/ticket9754/trac_9754_allow_zero_rank.patch) by @rbeezer created at 2010-08-31 05:17:31\n\n1.  With v5 patch:\n\n\n```\nsage: A=random_matrix(QQ, 5,9,algorithm='subspaces',rank=5)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n<snip>\n\n/sage/dev/local/lib/python2.6/site-packages/sage/matrix/constructor.pyc in random_matrix(ring, nrows, ncols, algorithm, *args, **kwds)\n   1160         return A\n   1161     elif algorithm == 'echelon_form':\n-> 1162         return random_rref_matrix(parent, *args, **kwds)\n   1163     elif algorithm == 'echelonizable':\n   1164         return random_echelonizable_matrix(parent, *args, **kwds)\n\n/sage/dev/local/lib/python2.6/site-packages/sage/matrix/constructor.pyc in random_rref_matrix(parent, num_pivots)\n   1689         raise TypeError(\"the number of pivots must be an integer.\")\n   1690     if num_pivots<=0:\n-> 1691         raise ValueError(\"the number of pivots must be greater than zero.\")\n   1692     ring = parent.base_ring()\n   1693     if not ring.is_exact():\n\nValueError: the number of pivots must be greater than zero.\n```\n\n\nWith `rank=rows` the L matrix is empty (ie no rows), which is an interesting case (and often the source of student questions).  It seems to fail since your routines will not build a matrix in echelon form with no pivots.  Nor will it build an echelonizable matrix with zero rank.\n\nHowever, both are possible - a matrix with no pivots must be totally zeros.  A matrix of rank zero is totally zeros.  Since you have coded this carefully, I think everything works - if you just let it happen.\n\nPatch shows how to do this.  Apply it to experiment, and read the patch, then pop it off and make the necessary changes yourself if you believe it is OK.  I've only tested this a little bit, so don't presume it has my seal-of-approval.  Adjust error messages and tests.\n\n2.  In 'subspaces\" routine near the end.  Do you need to augment B to form N, and then strip out parts of M?  Seems you just produce the identity in the right \"half\" and then throw it away.  Will the following work?\n\n\n```\nJ=K.stack(L)\nreturn J.inverse()*B\n```\n\n\nWhat you have is clearer, but a comment or two in the source could replace the extra statements.",
     "created_at": "2010-08-31T05:17:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9754#issuecomment-95530",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9754_allow_zero_rank.patch](tarball://root/attachments/some-uuid/ticket9754/trac_9754_allow_zero_rank.patch) by rbeezer created at 2010-08-31 05:17:31
+Attachment [trac_9754_allow_zero_rank.patch](tarball://root/attachments/some-uuid/ticket9754/trac_9754_allow_zero_rank.patch) by @rbeezer created at 2010-08-31 05:17:31
 
 1.  With v5 patch:
 
@@ -442,7 +442,7 @@ archive/issue_comments_095533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9754#issuecomment-95533",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -455,16 +455,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_095534.json:
 ```json
 {
-    "body": "Attachment [trac_9754-random-subspaces-unimodular-matrix-v7.patch](tarball://root/attachments/some-uuid/ticket9754/trac_9754-random-subspaces-unimodular-matrix-v7.patch) by rbeezer created at 2010-09-02 02:15:10\n\nThe v6 patch looks real good - corrects rows/columns bug, fixes up the rank-nullity-confusion, and streamlines the end of the code for the \"subspaces\" routine (with comments replacing code for explanation).  Works well, passes all tests and docs look good.\n\nI noticed one test in the \"echelonizable\" routine that talks about \"just building a zero matrix\" if you need it (I'd added that verbiage earlier).  Its gone in v7, that's the only change.  v7 patch still has Billy's name in it and is the full patch otherwise.\n\nI think this is done, at least I am checking-off on the changes leading to the v6 patch.\n\nBilly - you could/should sign off on the little change to make v7.\n\nDavid - you can weigh-in further if you like, or not.  If so, we can leave this open for a few days.  If not, we'll wrap this all up.  Thanks so much for all your help and encouragement reviewing Billy's summer project.",
+    "body": "Attachment [trac_9754-random-subspaces-unimodular-matrix-v7.patch](tarball://root/attachments/some-uuid/ticket9754/trac_9754-random-subspaces-unimodular-matrix-v7.patch) by @rbeezer created at 2010-09-02 02:15:10\n\nThe v6 patch looks real good - corrects rows/columns bug, fixes up the rank-nullity-confusion, and streamlines the end of the code for the \"subspaces\" routine (with comments replacing code for explanation).  Works well, passes all tests and docs look good.\n\nI noticed one test in the \"echelonizable\" routine that talks about \"just building a zero matrix\" if you need it (I'd added that verbiage earlier).  Its gone in v7, that's the only change.  v7 patch still has Billy's name in it and is the full patch otherwise.\n\nI think this is done, at least I am checking-off on the changes leading to the v6 patch.\n\nBilly - you could/should sign off on the little change to make v7.\n\nDavid - you can weigh-in further if you like, or not.  If so, we can leave this open for a few days.  If not, we'll wrap this all up.  Thanks so much for all your help and encouragement reviewing Billy's summer project.",
     "created_at": "2010-09-02T02:15:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9754#issuecomment-95534",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9754-random-subspaces-unimodular-matrix-v7.patch](tarball://root/attachments/some-uuid/ticket9754/trac_9754-random-subspaces-unimodular-matrix-v7.patch) by rbeezer created at 2010-09-02 02:15:10
+Attachment [trac_9754-random-subspaces-unimodular-matrix-v7.patch](tarball://root/attachments/some-uuid/ticket9754/trac_9754-random-subspaces-unimodular-matrix-v7.patch) by @rbeezer created at 2010-09-02 02:15:10
 
 The v6 patch looks real good - corrects rows/columns bug, fixes up the rank-nullity-confusion, and streamlines the end of the code for the "subspaces" routine (with comments replacing code for explanation).  Works well, passes all tests and docs look good.
 
@@ -506,7 +506,7 @@ archive/issue_comments_095536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9754#issuecomment-95536",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -524,7 +524,7 @@ archive/issue_comments_095537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9754#issuecomment-95537",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -554,7 +554,7 @@ archive/issue_comments_095538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9754#issuecomment-95538",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -572,7 +572,7 @@ archive/issue_comments_095539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9754#issuecomment-95539",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -607,7 +607,7 @@ archive/issue_comments_095540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9754#issuecomment-95540",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -628,7 +628,7 @@ archive/issue_comments_095541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9754#issuecomment-95541",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -646,7 +646,7 @@ archive/issue_comments_095542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9754#issuecomment-95542",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -708,7 +708,7 @@ archive/issue_comments_095545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9754#issuecomment-95545",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -726,7 +726,7 @@ archive/issue_comments_095546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9754#issuecomment-95546",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

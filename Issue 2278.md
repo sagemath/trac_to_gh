@@ -14,7 +14,7 @@ archive/issues_002278.json:
     "title": "notebook -- when uploading a new worksheet be sure to set the permissions on any directories that are created to be readable by all",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2278",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -76,7 +76,7 @@ archive/issue_comments_015112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2278#issuecomment-15112",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_015113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2278#issuecomment-15113",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

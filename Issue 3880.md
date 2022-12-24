@@ -3,7 +3,7 @@
 archive/issues_003880.json:
 ```json
 {
-    "body": "Assignee: was\n\nAccording to the arrow documentation,\n\n```\nAn arrow from (xmin, ymin) to (xmax, ymax).\n```\n\n\nHowever, the current behavior is an arrow from (xmin, ymin) to (xmin + xmax, ymin + ymax).\n\nFor example:\n\n```\nsage: arrow((1, 1), (-1,-1))\n```\n\nwill draw an arrow from (1,1) to (0,0).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3880\n\n",
+    "body": "Assignee: @williamstein\n\nAccording to the arrow documentation,\n\n```\nAn arrow from (xmin, ymin) to (xmax, ymax).\n```\n\n\nHowever, the current behavior is an arrow from (xmin, ymin) to (xmin + xmax, ymin + ymax).\n\nFor example:\n\n```\nsage: arrow((1, 1), (-1,-1))\n```\n\nwill draw an arrow from (1,1) to (0,0).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3880\n\n",
     "created_at": "2008-08-16T19:22:55Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_003880.json:
     "title": "Bad behavior of arrows",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3880",
-    "user": "itolkov"
+    "user": "@itolkov"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 According to the arrow documentation,
 
@@ -52,7 +52,7 @@ archive/issue_comments_027680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3880#issuecomment-27680",
-    "user": "itolkov"
+    "user": "@itolkov"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_027681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3880#issuecomment-27681",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_027682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3880#issuecomment-27682",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -105,16 +105,16 @@ Jason is right, this is orthogonal to #3877. Shame on Alex for using such a stup
 archive/issue_comments_027683.json:
 ```json
 {
-    "body": "Attachment [trac_3880-arrows.patch](tarball://root/attachments/some-uuid/ticket3880/trac_3880-arrows.patch) by rlm created at 2008-08-19 01:28:41",
+    "body": "Attachment [trac_3880-arrows.patch](tarball://root/attachments/some-uuid/ticket3880/trac_3880-arrows.patch) by @rlmill created at 2008-08-19 01:28:41",
     "created_at": "2008-08-19T01:28:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3880#issuecomment-27683",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_3880-arrows.patch](tarball://root/attachments/some-uuid/ticket3880/trac_3880-arrows.patch) by rlm created at 2008-08-19 01:28:41
+Attachment [trac_3880-arrows.patch](tarball://root/attachments/some-uuid/ticket3880/trac_3880-arrows.patch) by @rlmill created at 2008-08-19 01:28:41
 
 
 

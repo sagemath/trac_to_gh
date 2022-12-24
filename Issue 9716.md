@@ -14,7 +14,7 @@ archive/issues_009716.json:
     "title": "tachyon 3d plotting of graphs is still screwy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9716",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -63,7 +63,7 @@ archive/issue_comments_094795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9716#issuecomment-94795",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -76,16 +76,16 @@ first example
 archive/issue_comments_094796.json:
 ```json
 {
-    "body": "Attachment [plot2.png](tarball://root/attachments/some-uuid/ticket9716/plot2.png) by jason created at 2010-09-03 20:43:33\n\nsecond example",
+    "body": "Attachment [plot2.png](tarball://root/attachments/some-uuid/ticket9716/plot2.png) by @jasongrout created at 2010-09-03 20:43:33\n\nsecond example",
     "created_at": "2010-09-03T20:43:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9716#issuecomment-94796",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [plot2.png](tarball://root/attachments/some-uuid/ticket9716/plot2.png) by jason created at 2010-09-03 20:43:33
+Attachment [plot2.png](tarball://root/attachments/some-uuid/ticket9716/plot2.png) by @jasongrout created at 2010-09-03 20:43:33
 
 second example
 
@@ -101,7 +101,7 @@ archive/issue_comments_094797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9716#issuecomment-94797",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_094798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9716#issuecomment-94798",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_094799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9716#issuecomment-94799",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_094800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9716#issuecomment-94800",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_094801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9716#issuecomment-94801",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_094802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9716#issuecomment-94802",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_094803.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9716#issuecomment-94803",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_094804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9716#issuecomment-94804",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 

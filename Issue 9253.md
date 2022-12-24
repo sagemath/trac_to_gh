@@ -3,7 +3,7 @@
 archive/issues_009253.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nThese are some of the things I did while working on my thesis.\n\nDepends on #9247 -- since this ticket still needs work, I'm marking the current ticket as needs work too, although it should be ready to go.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9253\n\n",
+    "body": "Assignee: @JohnCremona\n\nThese are some of the things I did while working on my thesis.\n\nDepends on #9247 -- since this ticket still needs work, I'm marking the current ticket as needs work too, although it should be ready to go.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9253\n\n",
     "created_at": "2010-06-17T18:23:51Z",
     "labels": [
         "elliptic curves",
@@ -14,10 +14,10 @@ archive/issues_009253.json:
     "title": "A collection of little improvements to heegner.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9253",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 These are some of the things I did while working on my thesis.
 
@@ -39,7 +39,7 @@ archive/issue_comments_087084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9253#issuecomment-87084",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to needs_work.
 archive/issue_comments_087085.json:
 ```json
 {
-    "body": "Attachment [trac_9253.patch](tarball://root/attachments/some-uuid/ticket9253/trac_9253.patch) by rlm created at 2010-06-17 19:05:56",
+    "body": "Attachment [trac_9253.patch](tarball://root/attachments/some-uuid/ticket9253/trac_9253.patch) by @rlmill created at 2010-06-17 19:05:56",
     "created_at": "2010-06-17T19:05:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9253#issuecomment-87085",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_9253.patch](tarball://root/attachments/some-uuid/ticket9253/trac_9253.patch) by rlm created at 2010-06-17 19:05:56
+Attachment [trac_9253.patch](tarball://root/attachments/some-uuid/ticket9253/trac_9253.patch) by @rlmill created at 2010-06-17 19:05:56
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_087086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9253#issuecomment-87086",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_087087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9253#issuecomment-87087",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_087088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9253#issuecomment-87088",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_087089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9253#issuecomment-87089",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_087090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9253#issuecomment-87090",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

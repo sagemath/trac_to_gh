@@ -3,7 +3,7 @@
 archive/issues_005951.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nThe file latex.py causes some warnings to pop up when building the reference manual (because of my patch at #5791).  This fixes them.  It also adds the file latex_macros.py to the reference manual.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5951\n\n",
+    "body": "Assignee: @jhpalmieri\n\nThe file latex.py causes some warnings to pop up when building the reference manual (because of my patch at #5791).  This fixes them.  It also adds the file latex_macros.py to the reference manual.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5951\n\n",
     "created_at": "2009-05-01T03:19:38Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_005951.json:
     "title": "[with patch, needs review] fix a few minor issues with the reference manual in 3.4.2.rc0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5951",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 The file latex.py causes some warnings to pop up when building the reference manual (because of my patch at #5791).  This fixes them.  It also adds the file latex_macros.py to the reference manual.
 

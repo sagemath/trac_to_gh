@@ -3,7 +3,7 @@
 archive/issues_001443.json:
 ```json
 {
-    "body": "Assignee: was\n\nIt seems not possible to create a functional variable in SAGE. This gives strange things:\n\n```\nsage: var('f');\nsage: f(x)\nx\n```\n\nIdeally one should be able to do the following, to compute the formal derivative of f(g(x)):\n\n```\nsage: var('f,g');\nsage: diff(f(g(x)), x)\n```\n\n(Currently this gives 1 due to the above strange simplification f(x) -> x.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1443\n\n",
+    "body": "Assignee: @williamstein\n\nIt seems not possible to create a functional variable in SAGE. This gives strange things:\n\n```\nsage: var('f');\nsage: f(x)\nx\n```\n\nIdeally one should be able to do the following, to compute the formal derivative of f(g(x)):\n\n```\nsage: var('f,g');\nsage: diff(f(g(x)), x)\n```\n\n(Currently this gives 1 due to the above strange simplification f(x) -> x.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1443\n\n",
     "created_at": "2007-12-09T21:49:26Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_001443.json:
     "title": "cannot define function variables?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1443",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 It seems not possible to create a functional variable in SAGE. This gives strange things:
 
@@ -52,7 +52,7 @@ archive/issue_comments_009311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1443",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1443#issuecomment-9311",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -76,16 +76,16 @@ diff(f(g(x)), x, 1)
 archive/issue_comments_009312.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-12-10T07:45:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1443",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1443#issuecomment-9312",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -99,7 +99,7 @@ archive/issue_comments_009313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1443",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1443#issuecomment-9313",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_009314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1443",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1443#issuecomment-9314",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_009315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1443",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1443#issuecomment-9315",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

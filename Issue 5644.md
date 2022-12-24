@@ -14,7 +14,7 @@ archive/issues_005644.json:
     "title": "make it so escape make the introspection window in the notebook disappear",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5644",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_044077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5644#issuecomment-44077",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -50,16 +50,16 @@ See comment.
 archive/issue_comments_044078.json:
 ```json
 {
-    "body": "Attachment [trac_5644_esc_kills_introspect.patch](tarball://root/attachments/some-uuid/ticket5644/trac_5644_esc_kills_introspect.patch) by mpatel created at 2009-04-18 09:17:56\n\nThe attached patch seems to work in Firefox 3 without breaking other functions.  I'm not sure about the purpose of\n\n```\n            if(browser_op) { focus_delay(id,true); }\n```\n\nAlthough I haven't copied this to the new conditional clause, the patch works in Opera 9, too.\n\nBy the way, I think the `halt_introspection();` statement just before the new code is unnecessary, since `handle_replacement_controls()` calls it before returning `true`.  But the patch leaves this alone.",
+    "body": "Attachment [trac_5644_esc_kills_introspect.patch](tarball://root/attachments/some-uuid/ticket5644/trac_5644_esc_kills_introspect.patch) by @qed777 created at 2009-04-18 09:17:56\n\nThe attached patch seems to work in Firefox 3 without breaking other functions.  I'm not sure about the purpose of\n\n```\n            if(browser_op) { focus_delay(id,true); }\n```\n\nAlthough I haven't copied this to the new conditional clause, the patch works in Opera 9, too.\n\nBy the way, I think the `halt_introspection();` statement just before the new code is unnecessary, since `handle_replacement_controls()` calls it before returning `true`.  But the patch leaves this alone.",
     "created_at": "2009-04-18T09:17:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5644#issuecomment-44078",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_5644_esc_kills_introspect.patch](tarball://root/attachments/some-uuid/ticket5644/trac_5644_esc_kills_introspect.patch) by mpatel created at 2009-04-18 09:17:56
+Attachment [trac_5644_esc_kills_introspect.patch](tarball://root/attachments/some-uuid/ticket5644/trac_5644_esc_kills_introspect.patch) by @qed777 created at 2009-04-18 09:17:56
 
 The attached patch seems to work in Firefox 3 without breaking other functions.  I'm not sure about the purpose of
 
@@ -83,7 +83,7 @@ archive/issue_comments_044079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5644#issuecomment-44079",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_044080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5644#issuecomment-44080",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_044081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5644#issuecomment-44081",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_044082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5644#issuecomment-44082",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_044083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5644#issuecomment-44083",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_044084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5644#issuecomment-44084",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_044085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5644#issuecomment-44085",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

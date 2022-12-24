@@ -14,7 +14,7 @@ archive/issues_002885.json:
     "title": "make a knoboo optional package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2885",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -37,7 +37,7 @@ archive/issue_comments_019844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2885#issuecomment-19844",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

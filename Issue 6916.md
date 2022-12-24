@@ -3,7 +3,7 @@
 archive/issues_006916.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  ncohen\n\nAs the subject says. This is a follow-up to ticket #6749.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6916\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nathanncohen\n\nAs the subject says. This is a follow-up to ticket #6749.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6916\n\n",
     "created_at": "2009-09-10T11:59:26Z",
     "labels": [
         "algebra",
@@ -19,7 +19,7 @@ archive/issues_006916.json:
 ```
 Assignee: tbd
 
-CC:  ncohen
+CC:  @nathanncohen
 
 As the subject says. This is a follow-up to ticket #6749.
 
@@ -75,7 +75,7 @@ archive/issue_comments_057110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6916#issuecomment-57110",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

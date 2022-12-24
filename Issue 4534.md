@@ -3,7 +3,7 @@
 archive/issues_004534.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nI introduced an error in `odd_part` while working on #4443; the attached patch is the obvious fix, along with a doctest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4534\n\n",
+    "body": "Assignee: @craigcitro\n\nI introduced an error in `odd_part` while working on #4443; the attached patch is the obvious fix, along with a doctest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4534\n\n",
     "created_at": "2008-11-16T13:00:42Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_004534.json:
     "title": "Stupid error in odd_part",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4534",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 I introduced an error in `odd_part` while working on #4443; the attached patch is the obvious fix, along with a doctest.
 
@@ -37,7 +37,7 @@ archive/issue_comments_033781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4534#issuecomment-33781",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to assigned.
 archive/issue_comments_033782.json:
 ```json
 {
-    "body": "Attachment [trac-4534.patch](tarball://root/attachments/some-uuid/ticket4534/trac-4534.patch) by craigcitro created at 2008-11-16 13:01:26",
+    "body": "Attachment [trac-4534.patch](tarball://root/attachments/some-uuid/ticket4534/trac-4534.patch) by @craigcitro created at 2008-11-16 13:01:26",
     "created_at": "2008-11-16T13:01:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4534#issuecomment-33782",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4534.patch](tarball://root/attachments/some-uuid/ticket4534/trac-4534.patch) by craigcitro created at 2008-11-16 13:01:26
+Attachment [trac-4534.patch](tarball://root/attachments/some-uuid/ticket4534/trac-4534.patch) by @craigcitro created at 2008-11-16 13:01:26
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_033783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4534#issuecomment-33783",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_033784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4534#issuecomment-33784",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_033785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4534#issuecomment-33785",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -124,16 +124,16 @@ Patch coming right up.
 archive/issue_comments_033786.json:
 ```json
 {
-    "body": "Attachment [trac-4534-v2.patch](tarball://root/attachments/some-uuid/ticket4534/trac-4534-v2.patch) by craigcitro created at 2008-11-17 20:43:52\n\nNew patch, which should be much better. Unfortunately, it touches `integer.pxd`, so it takes a while to rebuild.",
+    "body": "Attachment [trac-4534-v2.patch](tarball://root/attachments/some-uuid/ticket4534/trac-4534-v2.patch) by @craigcitro created at 2008-11-17 20:43:52\n\nNew patch, which should be much better. Unfortunately, it touches `integer.pxd`, so it takes a while to rebuild.",
     "created_at": "2008-11-17T20:43:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4534#issuecomment-33786",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4534-v2.patch](tarball://root/attachments/some-uuid/ticket4534/trac-4534-v2.patch) by craigcitro created at 2008-11-17 20:43:52
+Attachment [trac-4534-v2.patch](tarball://root/attachments/some-uuid/ticket4534/trac-4534-v2.patch) by @craigcitro created at 2008-11-17 20:43:52
 
 New patch, which should be much better. Unfortunately, it touches `integer.pxd`, so it takes a while to rebuild.
 
@@ -149,7 +149,7 @@ archive/issue_comments_033787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4534#issuecomment-33787",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 

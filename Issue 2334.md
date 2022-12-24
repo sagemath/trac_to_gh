@@ -14,7 +14,7 @@ archive/issues_002334.json:
     "title": "$SAGE_LOCAL/include/eclib has wrong permissions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2334",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: mabshoff
@@ -128,7 +128,7 @@ archive/issue_comments_015614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2334#issuecomment-15614",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

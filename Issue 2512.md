@@ -3,7 +3,7 @@
 archive/issues_002512.json:
 ```json
 {
-    "body": "Assignee: was\n\nimplement [condition number (wikipedia)](http://en.wikipedia.org/wiki/Condition_number) for matrices. \n\nsomething like:\n\n```\ndef condition(m,p=2):\n    return norm(m.inverse(),p) * norm(m,p)\n```\n\n\ndepends on #1763\n\nIssue created by migration from https://trac.sagemath.org/ticket/2512\n\n",
+    "body": "Assignee: @williamstein\n\nimplement [condition number (wikipedia)](http://en.wikipedia.org/wiki/Condition_number) for matrices. \n\nsomething like:\n\n```\ndef condition(m,p=2):\n    return norm(m.inverse(),p) * norm(m,p)\n```\n\n\ndepends on #1763\n\nIssue created by migration from https://trac.sagemath.org/ticket/2512\n\n",
     "created_at": "2008-03-13T22:33:26Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_002512.json:
     "title": "implement condition number for matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2512",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 implement [condition number (wikipedia)](http://en.wikipedia.org/wiki/Condition_number) for matrices. 
 
@@ -47,7 +47,7 @@ archive/issue_comments_017032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2512#issuecomment-17032",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_017033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2512#issuecomment-17033",
-    "user": "spice"
+    "user": "@haikona"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_017034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2512#issuecomment-17034",
-    "user": "spice"
+    "user": "@haikona"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_017035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2512#issuecomment-17035",
-    "user": "spice"
+    "user": "@haikona"
 }
 ```
 
@@ -118,16 +118,16 @@ Changing status from new to needs_review.
 archive/issue_comments_017036.json:
 ```json
 {
-    "body": "Attachment [trac_2512_matrix_condition_number.patch](tarball://root/attachments/some-uuid/ticket2512/trac_2512_matrix_condition_number.patch) by spice created at 2011-03-22 23:44:51\n\nThe patch implements a very simple .condition_number() method, based on a matrix's .norm() method. As such it only works for p = 1,2,Infinity or the Frobenius norm.\n\nSuggestions/comments welcome. Written on sage 4.6.2.",
+    "body": "Attachment [trac_2512_matrix_condition_number.patch](tarball://root/attachments/some-uuid/ticket2512/trac_2512_matrix_condition_number.patch) by @haikona created at 2011-03-22 23:44:51\n\nThe patch implements a very simple .condition_number() method, based on a matrix's .norm() method. As such it only works for p = 1,2,Infinity or the Frobenius norm.\n\nSuggestions/comments welcome. Written on sage 4.6.2.",
     "created_at": "2011-03-22T23:44:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2512#issuecomment-17036",
-    "user": "spice"
+    "user": "@haikona"
 }
 ```
 
-Attachment [trac_2512_matrix_condition_number.patch](tarball://root/attachments/some-uuid/ticket2512/trac_2512_matrix_condition_number.patch) by spice created at 2011-03-22 23:44:51
+Attachment [trac_2512_matrix_condition_number.patch](tarball://root/attachments/some-uuid/ticket2512/trac_2512_matrix_condition_number.patch) by @haikona created at 2011-03-22 23:44:51
 
 The patch implements a very simple .condition_number() method, based on a matrix's .norm() method. As such it only works for p = 1,2,Infinity or the Frobenius norm.
 
@@ -145,7 +145,7 @@ archive/issue_comments_017037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2512#issuecomment-17037",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_017038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2512#issuecomment-17038",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_017039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2512#issuecomment-17039",
-    "user": "spice"
+    "user": "@haikona"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_017040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2512#issuecomment-17040",
-    "user": "spice"
+    "user": "@haikona"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_017041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2512#issuecomment-17041",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 

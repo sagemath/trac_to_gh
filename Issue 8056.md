@@ -3,7 +3,7 @@
 archive/issues_008056.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  schilly kcrisman\n\nFrom the sage-devel list:\n\nhttp://groups.google.com/group/sage-devel/t/575627f654d21dd9\n\n\n```\nsage: t = 1/pi/x\nsage: from sage.ext.fast_callable import ExpressionTreeBuilder\nsage: etb = ExpressionTreeBuilder(vars=[x])\nsage: t._fast_callable_(etb)\n<boom>\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8056\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @haraldschilly @kcrisman\n\nFrom the sage-devel list:\n\nhttp://groups.google.com/group/sage-devel/t/575627f654d21dd9\n\n\n```\nsage: t = 1/pi/x\nsage: from sage.ext.fast_callable import ExpressionTreeBuilder\nsage: etb = ExpressionTreeBuilder(vars=[x])\nsage: t._fast_callable_(etb)\n<boom>\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8056\n\n",
     "created_at": "2010-01-25T17:17:02Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_008056.json:
     "title": "symbolic expressions involving rational functions with numerator 1 cannot be converted to fast callable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8056",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  schilly kcrisman
+CC:  @haraldschilly @kcrisman
 
 From the sage-devel list:
 
@@ -48,16 +48,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8056
 archive/issue_comments_070486.json:
 ```json
 {
-    "body": "Attachment [trac_8056-fast_callable.patch](tarball://root/attachments/some-uuid/ticket8056/trac_8056-fast_callable.patch) by burcin created at 2010-01-25 19:09:41",
+    "body": "Attachment [trac_8056-fast_callable.patch](tarball://root/attachments/some-uuid/ticket8056/trac_8056-fast_callable.patch) by @burcin created at 2010-01-25 19:09:41",
     "created_at": "2010-01-25T19:09:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8056#issuecomment-70486",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_8056-fast_callable.patch](tarball://root/attachments/some-uuid/ticket8056/trac_8056-fast_callable.patch) by burcin created at 2010-01-25 19:09:41
+Attachment [trac_8056-fast_callable.patch](tarball://root/attachments/some-uuid/ticket8056/trac_8056-fast_callable.patch) by @burcin created at 2010-01-25 19:09:41
 
 
 
@@ -71,7 +71,7 @@ archive/issue_comments_070487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8056#issuecomment-70487",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_070488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8056#issuecomment-70488",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -207,16 +207,16 @@ AttributeError: 'sage.rings.integer.Integer' object has no attribute
 archive/issue_comments_070489.json:
 ```json
 {
-    "body": "Attachment [trac_8056-fast_callable.take2.patch](tarball://root/attachments/some-uuid/ticket8056/trac_8056-fast_callable.take2.patch) by burcin created at 2010-01-31 21:47:44\n\nsecond try",
+    "body": "Attachment [trac_8056-fast_callable.take2.patch](tarball://root/attachments/some-uuid/ticket8056/trac_8056-fast_callable.take2.patch) by @burcin created at 2010-01-31 21:47:44\n\nsecond try",
     "created_at": "2010-01-31T21:47:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8056#issuecomment-70489",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_8056-fast_callable.take2.patch](tarball://root/attachments/some-uuid/ticket8056/trac_8056-fast_callable.take2.patch) by burcin created at 2010-01-31 21:47:44
+Attachment [trac_8056-fast_callable.take2.patch](tarball://root/attachments/some-uuid/ticket8056/trac_8056-fast_callable.take2.patch) by @burcin created at 2010-01-31 21:47:44
 
 second try
 
@@ -232,7 +232,7 @@ archive/issue_comments_070490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8056#issuecomment-70490",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_070491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8056#issuecomment-70491",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_070492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8056#issuecomment-70492",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_070493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8056#issuecomment-70493",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

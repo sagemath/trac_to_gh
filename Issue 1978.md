@@ -14,7 +14,7 @@ archive/issues_001978.json:
     "title": "update python-gnutls",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1978",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 Assignee: mabshoff
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1978
 archive/issue_comments_012821.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to yi.",
+    "body": "Changing assignee from mabshoff to @yqiang.",
     "created_at": "2008-01-30T04:41:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1978#issuecomment-12821",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Changing assignee from mabshoff to yi.
+Changing assignee from mabshoff to @yqiang.
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_012822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1978#issuecomment-12822",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 

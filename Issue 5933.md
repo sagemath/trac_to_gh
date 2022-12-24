@@ -14,7 +14,7 @@ archive/issues_005933.json:
     "title": "Bring primes.py to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5933",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: tba
@@ -37,7 +37,7 @@ archive/issue_comments_046917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5933",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5933#issuecomment-46917",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -50,16 +50,16 @@ Based on 3.4.2.alpha0
 archive/issue_comments_046918.json:
 ```json
 {
-    "body": "Attachment [primes.patch](tarball://root/attachments/some-uuid/ticket5933/primes.patch) by cremona created at 2009-04-29 15:34:56\n\nPositive review, based on eyeballing the patch and applying it successfully. \n\n[It is such a nuisance that doing \"sage -docbuild\" in a new clone takes such a long time -- why can't cloning make a copy of the documentation (which could then be updated as necessary)?]",
+    "body": "Attachment [primes.patch](tarball://root/attachments/some-uuid/ticket5933/primes.patch) by @JohnCremona created at 2009-04-29 15:34:56\n\nPositive review, based on eyeballing the patch and applying it successfully. \n\n[It is such a nuisance that doing \"sage -docbuild\" in a new clone takes such a long time -- why can't cloning make a copy of the documentation (which could then be updated as necessary)?]",
     "created_at": "2009-04-29T15:34:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5933",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5933#issuecomment-46918",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [primes.patch](tarball://root/attachments/some-uuid/ticket5933/primes.patch) by cremona created at 2009-04-29 15:34:56
+Attachment [primes.patch](tarball://root/attachments/some-uuid/ticket5933/primes.patch) by @JohnCremona created at 2009-04-29 15:34:56
 
 Positive review, based on eyeballing the patch and applying it successfully. 
 

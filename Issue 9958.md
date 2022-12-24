@@ -3,7 +3,7 @@
 archive/issues_009958.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  mpatel jdemeyer leif\n\nI still am getting the known behavior below when exiting Sage.\n\n```\nExiting Sage (CPU time 0m0.74s, Wall time 11m11.95s). \nExiting spawned GP/PARI interpreter process. \n```\n\nIt's not exactly a bug, but it's also annoying and potentially \nconfusing to a non-Pari user.  We should stop it.\n\nThis is with 4.6.alpha1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9959\n\n",
+    "body": "Assignee: tbd\n\nCC:  @qed777 @jdemeyer @nexttime\n\nI still am getting the known behavior below when exiting Sage.\n\n```\nExiting Sage (CPU time 0m0.74s, Wall time 11m11.95s). \nExiting spawned GP/PARI interpreter process. \n```\n\nIt's not exactly a bug, but it's also annoying and potentially \nconfusing to a non-Pari user.  We should stop it.\n\nThis is with 4.6.alpha1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9959\n\n",
     "created_at": "2010-09-21T13:36:14Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_009958.json:
     "title": "Get Pari to stop starting automatically",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9958",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: tbd
 
-CC:  mpatel jdemeyer leif
+CC:  @qed777 @jdemeyer @nexttime
 
 I still am getting the known behavior below when exiting Sage.
 
@@ -49,7 +49,7 @@ archive/issue_comments_099625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99625",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_099626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99626",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_099627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99627",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_099628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99628",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_099629.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99629",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -159,16 +159,16 @@ Try it...
 archive/issue_comments_099630.json:
 ```json
 {
-    "body": "Attachment [9959_rename_pari_gp.patch](tarball://root/attachments/some-uuid/ticket9959/9959_rename_pari_gp.patch) by jdemeyer created at 2010-09-21 21:27:25\n\nRenames \"GP/PARI\" to \"PARI/GP\"",
+    "body": "Attachment [9959_rename_pari_gp.patch](tarball://root/attachments/some-uuid/ticket9959/9959_rename_pari_gp.patch) by @jdemeyer created at 2010-09-21 21:27:25\n\nRenames \"GP/PARI\" to \"PARI/GP\"",
     "created_at": "2010-09-21T21:27:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99630",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9959_rename_pari_gp.patch](tarball://root/attachments/some-uuid/ticket9959/9959_rename_pari_gp.patch) by jdemeyer created at 2010-09-21 21:27:25
+Attachment [9959_rename_pari_gp.patch](tarball://root/attachments/some-uuid/ticket9959/9959_rename_pari_gp.patch) by @jdemeyer created at 2010-09-21 21:27:25
 
 Renames "GP/PARI" to "PARI/GP"
 
@@ -184,7 +184,7 @@ archive/issue_comments_099631.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99631",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_099632.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99632",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_099633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99633",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_099634.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99634",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_099635.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99635",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_099636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99636",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -303,7 +303,7 @@ archive/issue_comments_099637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99637",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_099638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99638",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_099639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99639",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_099640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99640",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -391,7 +391,7 @@ archive/issue_comments_099641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99641",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -404,16 +404,16 @@ Don't set the 'breakloop' default in Sage
 archive/issue_comments_099642.json:
 ```json
 {
-    "body": "Attachment [9959_gp_error_doctest.patch](tarball://root/attachments/some-uuid/ticket9959/9959_gp_error_doctest.patch) by jdemeyer created at 2010-09-23 07:47:39\n\nAdd doctest for error recovery",
+    "body": "Attachment [9959_gp_error_doctest.patch](tarball://root/attachments/some-uuid/ticket9959/9959_gp_error_doctest.patch) by @jdemeyer created at 2010-09-23 07:47:39\n\nAdd doctest for error recovery",
     "created_at": "2010-09-23T07:47:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99642",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9959_gp_error_doctest.patch](tarball://root/attachments/some-uuid/ticket9959/9959_gp_error_doctest.patch) by jdemeyer created at 2010-09-23 07:47:39
+Attachment [9959_gp_error_doctest.patch](tarball://root/attachments/some-uuid/ticket9959/9959_gp_error_doctest.patch) by @jdemeyer created at 2010-09-23 07:47:39
 
 Add doctest for error recovery
 
@@ -429,7 +429,7 @@ archive/issue_comments_099643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99643",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -450,7 +450,7 @@ archive/issue_comments_099644.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99644",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -463,16 +463,16 @@ It's a pity that we had to patch the gp source code -- clearly that was an optio
 archive/issue_comments_099645.json:
 ```json
 {
-    "body": "Attachment [pari.p8.patch](tarball://root/attachments/some-uuid/ticket9959/pari.p8.patch) by jdemeyer created at 2010-09-23 08:31:20\n\nPatch for the PARI spkg .p7 to .p8 (for review)",
+    "body": "Attachment [pari.p8.patch](tarball://root/attachments/some-uuid/ticket9959/pari.p8.patch) by @jdemeyer created at 2010-09-23 08:31:20\n\nPatch for the PARI spkg .p7 to .p8 (for review)",
     "created_at": "2010-09-23T08:31:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99645",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [pari.p8.patch](tarball://root/attachments/some-uuid/ticket9959/pari.p8.patch) by jdemeyer created at 2010-09-23 08:31:20
+Attachment [pari.p8.patch](tarball://root/attachments/some-uuid/ticket9959/pari.p8.patch) by @jdemeyer created at 2010-09-23 08:31:20
 
 Patch for the PARI spkg .p7 to .p8 (for review)
 
@@ -488,7 +488,7 @@ archive/issue_comments_099646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99646",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -509,7 +509,7 @@ archive/issue_comments_099647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99647",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -533,7 +533,7 @@ archive/issue_comments_099648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99648",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -560,7 +560,7 @@ archive/issue_comments_099649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99649",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -581,7 +581,7 @@ archive/issue_comments_099650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99650",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -613,7 +613,7 @@ archive/issue_comments_099651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99651",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -631,7 +631,7 @@ archive/issue_comments_099652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99652",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -654,7 +654,7 @@ archive/issue_comments_099653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99653",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -677,7 +677,7 @@ archive/issue_comments_099654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99654",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -701,7 +701,7 @@ archive/issue_comments_099655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99655",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -719,7 +719,7 @@ archive/issue_comments_099656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99656",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -732,16 +732,16 @@ Use $SAGE_ROOT/local/etc/gprc.expect as .gprc file
 archive/issue_comments_099657.json:
 ```json
 {
-    "body": "Attachment [9959_gprc.patch](tarball://root/attachments/some-uuid/ticket9959/9959_gprc.patch) by jdemeyer created at 2010-09-24 14:40:01\n\nNew spkg: [http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p9.spkg](http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p9.spkg).  This is based on **p7** (not p8) and adds the `gprc.expect` file.  So installing the new spkg and applying all 4 patches should do it.",
+    "body": "Attachment [9959_gprc.patch](tarball://root/attachments/some-uuid/ticket9959/9959_gprc.patch) by @jdemeyer created at 2010-09-24 14:40:01\n\nNew spkg: [http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p9.spkg](http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p9.spkg).  This is based on **p7** (not p8) and adds the `gprc.expect` file.  So installing the new spkg and applying all 4 patches should do it.",
     "created_at": "2010-09-24T14:40:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99657",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9959_gprc.patch](tarball://root/attachments/some-uuid/ticket9959/9959_gprc.patch) by jdemeyer created at 2010-09-24 14:40:01
+Attachment [9959_gprc.patch](tarball://root/attachments/some-uuid/ticket9959/9959_gprc.patch) by @jdemeyer created at 2010-09-24 14:40:01
 
 New spkg: [http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p9.spkg](http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p9.spkg).  This is based on **p7** (not p8) and adds the `gprc.expect` file.  So installing the new spkg and applying all 4 patches should do it.
 
@@ -757,7 +757,7 @@ archive/issue_comments_099658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99658",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -775,7 +775,7 @@ archive/issue_comments_099659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99659",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -793,7 +793,7 @@ archive/issue_comments_099660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99660",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -811,7 +811,7 @@ archive/issue_comments_099661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99661",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -829,7 +829,7 @@ archive/issue_comments_099662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99662",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -847,7 +847,7 @@ archive/issue_comments_099663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99663",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -868,7 +868,7 @@ archive/issue_comments_099664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99664",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -881,16 +881,16 @@ archive/issue_comments_099664.json:
 archive/issue_comments_099665.json:
 ```json
 {
-    "body": "Attachment [pari.p9.patch](tarball://root/attachments/some-uuid/ticket9959/pari.p9.patch) by jdemeyer created at 2010-09-24 17:07:30\n\nPatch for the PARI spkg .p7 to .p9 (for review)",
+    "body": "Attachment [pari.p9.patch](tarball://root/attachments/some-uuid/ticket9959/pari.p9.patch) by @jdemeyer created at 2010-09-24 17:07:30\n\nPatch for the PARI spkg .p7 to .p9 (for review)",
     "created_at": "2010-09-24T17:07:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99665",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [pari.p9.patch](tarball://root/attachments/some-uuid/ticket9959/pari.p9.patch) by jdemeyer created at 2010-09-24 17:07:30
+Attachment [pari.p9.patch](tarball://root/attachments/some-uuid/ticket9959/pari.p9.patch) by @jdemeyer created at 2010-09-24 17:07:30
 
 Patch for the PARI spkg .p7 to .p9 (for review)
 
@@ -906,7 +906,7 @@ archive/issue_comments_099666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99666",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -924,7 +924,7 @@ archive/issue_comments_099667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99667",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -937,16 +937,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_099668.json:
 ```json
 {
-    "body": "Attachment [9959_combined.patch](tarball://root/attachments/some-uuid/ticket9959/9959_combined.patch) by jdemeyer created at 2010-09-26 17:35:35\n\nAll 4 sagelib patches combined",
+    "body": "Attachment [9959_combined.patch](tarball://root/attachments/some-uuid/ticket9959/9959_combined.patch) by @jdemeyer created at 2010-09-26 17:35:35\n\nAll 4 sagelib patches combined",
     "created_at": "2010-09-26T17:35:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99668",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9959_combined.patch](tarball://root/attachments/some-uuid/ticket9959/9959_combined.patch) by jdemeyer created at 2010-09-26 17:35:35
+Attachment [9959_combined.patch](tarball://root/attachments/some-uuid/ticket9959/9959_combined.patch) by @jdemeyer created at 2010-09-26 17:35:35
 
 All 4 sagelib patches combined
 
@@ -962,7 +962,7 @@ archive/issue_comments_099669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99669",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -980,7 +980,7 @@ archive/issue_comments_099670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99670",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1002,7 +1002,7 @@ archive/issue_comments_099671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99671",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1037,7 +1037,7 @@ archive/issue_comments_099672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99672",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1055,7 +1055,7 @@ archive/issue_comments_099673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99673",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1073,7 +1073,7 @@ archive/issue_comments_099674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99674",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1093,7 +1093,7 @@ archive/issue_comments_099675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99675",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

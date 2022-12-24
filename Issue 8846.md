@@ -14,7 +14,7 @@ archive/issues_008846.json:
     "title": "fix partitions in Cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8846",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8846
 archive/issue_comments_081327.json:
 ```json
 {
-    "body": "Attachment [trac_8846-fix_partitions.patch](tarball://root/attachments/some-uuid/ticket8846/trac_8846-fix_partitions.patch) by mhansen created at 2010-05-03 13:23:07",
+    "body": "Attachment [trac_8846-fix_partitions.patch](tarball://root/attachments/some-uuid/ticket8846/trac_8846-fix_partitions.patch) by @mwhansen created at 2010-05-03 13:23:07",
     "created_at": "2010-05-03T13:23:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8846",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8846#issuecomment-81327",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_8846-fix_partitions.patch](tarball://root/attachments/some-uuid/ticket8846/trac_8846-fix_partitions.patch) by mhansen created at 2010-05-03 13:23:07
+Attachment [trac_8846-fix_partitions.patch](tarball://root/attachments/some-uuid/ticket8846/trac_8846-fix_partitions.patch) by @mwhansen created at 2010-05-03 13:23:07
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_081328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8846",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8846#issuecomment-81328",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_081329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8846",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8846#issuecomment-81329",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

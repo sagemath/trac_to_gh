@@ -14,7 +14,7 @@ archive/issues_008365.json:
     "title": "Reorganize slightly the outline of the documentation of Polynomial Rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8365",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 Assignee: mvngu
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8365
 archive/issue_comments_074769.json:
 ```json
 {
-    "body": "Attachment [trac_8365_PolynomialRings_doc.patch](tarball://root/attachments/some-uuid/ticket8365/trac_8365_PolynomialRings_doc.patch) by mmezzarobba created at 2010-02-25 16:30:16",
+    "body": "Attachment [trac_8365_PolynomialRings_doc.patch](tarball://root/attachments/some-uuid/ticket8365/trac_8365_PolynomialRings_doc.patch) by @mezzarobba created at 2010-02-25 16:30:16",
     "created_at": "2010-02-25T16:30:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8365#issuecomment-74769",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
-Attachment [trac_8365_PolynomialRings_doc.patch](tarball://root/attachments/some-uuid/ticket8365/trac_8365_PolynomialRings_doc.patch) by mmezzarobba created at 2010-02-25 16:30:16
+Attachment [trac_8365_PolynomialRings_doc.patch](tarball://root/attachments/some-uuid/ticket8365/trac_8365_PolynomialRings_doc.patch) by @mezzarobba created at 2010-02-25 16:30:16
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_074770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8365#issuecomment-74770",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_074773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8365#issuecomment-74773",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_074774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8365#issuecomment-74774",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 

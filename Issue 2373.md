@@ -14,7 +14,7 @@ archive/issues_002373.json:
     "title": "relicense the javascript part of the sage notebook bsd",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2373",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby

@@ -14,7 +14,7 @@ archive/issues_000406.json:
     "title": "notebook -- improve support for other system modes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/406",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -69,7 +69,7 @@ archive/issue_comments_001994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/406#issuecomment-1994",
-    "user": "jdc"
+    "user": "@jdchristensen"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_001995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/406#issuecomment-1995",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -134,16 +134,16 @@ William
 archive/issue_comments_001996.json:
 ```json
 {
-    "body": "Attachment [sage-406.patch](tarball://root/attachments/some-uuid/ticket406/sage-406.patch) by was created at 2008-05-10 22:13:07",
+    "body": "Attachment [sage-406.patch](tarball://root/attachments/some-uuid/ticket406/sage-406.patch) by @williamstein created at 2008-05-10 22:13:07",
     "created_at": "2008-05-10T22:13:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/406#issuecomment-1996",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-406.patch](tarball://root/attachments/some-uuid/ticket406/sage-406.patch) by was created at 2008-05-10 22:13:07
+Attachment [sage-406.patch](tarball://root/attachments/some-uuid/ticket406/sage-406.patch) by @williamstein created at 2008-05-10 22:13:07
 
 
 
@@ -157,7 +157,7 @@ archive/issue_comments_001997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/406#issuecomment-1997",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_001998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/406#issuecomment-1998",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_001999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/406#issuecomment-1999",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_002000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/406#issuecomment-2000",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 

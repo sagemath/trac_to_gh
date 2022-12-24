@@ -3,7 +3,7 @@
 archive/issues_002662.json:
 ```json
 {
-    "body": "Assignee: was\n\nCreate a simplify_full function that (somewhat intelligently?) applies a battery simplifications to try to get a function to be simpler.  \n\nIt would be nice to support some of the options that FullSimplify in Mma has (see http://reference.wolfram.com/mathematica/ref/FullSimplify.html?q=fullsimplify&lang=en ):\n\n* user can pass in a \"complexity function\" which determines how simple an expression is\n* user can pass in a time limit for the simplification\n* user can pass in a list of things that won't be simplified\n* etc.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2662\n\n",
+    "body": "Assignee: @williamstein\n\nCreate a simplify_full function that (somewhat intelligently?) applies a battery simplifications to try to get a function to be simpler.  \n\nIt would be nice to support some of the options that FullSimplify in Mma has (see http://reference.wolfram.com/mathematica/ref/FullSimplify.html?q=fullsimplify&lang=en ):\n\n* user can pass in a \"complexity function\" which determines how simple an expression is\n* user can pass in a time limit for the simplification\n* user can pass in a list of things that won't be simplified\n* etc.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2662\n\n",
     "created_at": "2008-03-24T21:18:35Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_002662.json:
     "title": "simplify_full function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2662",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Create a simplify_full function that (somewhat intelligently?) applies a battery simplifications to try to get a function to be simpler.  
 
@@ -45,7 +45,7 @@ archive/issue_comments_018323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2662",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2662#issuecomment-18323",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_018324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2662",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2662#issuecomment-18324",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -76,16 +76,16 @@ Changing status from new to assigned.
 archive/issue_comments_018325.json:
 ```json
 {
-    "body": "Changing assignee from was to gfurnish.",
+    "body": "Changing assignee from @williamstein to @garyfurnish.",
     "created_at": "2008-03-25T00:39:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2662",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2662#issuecomment-18325",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from was to gfurnish.
+Changing assignee from @williamstein to @garyfurnish.
 
 
 
@@ -99,7 +99,7 @@ archive/issue_comments_018326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2662",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2662#issuecomment-18326",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_018327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2662",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2662#issuecomment-18327",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_018328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2662",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2662#issuecomment-18328",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

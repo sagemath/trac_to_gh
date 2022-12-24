@@ -3,7 +3,7 @@
 archive/issues_008546.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  kcrisman\n\nMany functions in the Sage library are deprecated, and we seem to have a standard framework in place for informing users that functions are deprecated, but there is no documentation of this in the developers' guide.\n\nIt seems like the proper way to deprecate a function is like this: if we start with\n\n```\ndef f(x):\n  body of function\n  return something\n```\n\nthen one should change it like so to deprecate it:\n\n```\ndef f(x)\n  from sage.misc.misc import deprecation\n  deprecation(\"f() is deprecated and will be removed in a future version of Sage. Use g() instead.\")\n  body of function\n  return something \n```\n\nOne should also change doctests appropriately; if one had\n\n```\nsage: f(1)\n'foo'\n```\n\nthen it should get changed to\n\n```\nsage: f(1)\ndoctest:...: DeprecationWarning: f() is deprecated and will be removed in a future version of Sage. Use g() instead.\n'foo'\n```\n\nAlso, the documentation should be changed to reflect this! It's a good idea to describe what users should do instead of using the deprecated function, so that it is easy for them to change their code.\n\nIdeally we would also have a policy about how long deprecated functions stay in Sage before being removed, but AFAIK no strong consensus on a time period or specific policy exists. If there is one, it should be put into the developer's guide!\n\nIn any case, it is probably a good idea to specify the date or Sage version in which a function was deprecated (even if it's just \"March 2010\") to give users an idea of how \"stale\" a function is and how close to removal it is. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8546\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @kcrisman\n\nMany functions in the Sage library are deprecated, and we seem to have a standard framework in place for informing users that functions are deprecated, but there is no documentation of this in the developers' guide.\n\nIt seems like the proper way to deprecate a function is like this: if we start with\n\n```\ndef f(x):\n  body of function\n  return something\n```\n\nthen one should change it like so to deprecate it:\n\n```\ndef f(x)\n  from sage.misc.misc import deprecation\n  deprecation(\"f() is deprecated and will be removed in a future version of Sage. Use g() instead.\")\n  body of function\n  return something \n```\n\nOne should also change doctests appropriately; if one had\n\n```\nsage: f(1)\n'foo'\n```\n\nthen it should get changed to\n\n```\nsage: f(1)\ndoctest:...: DeprecationWarning: f() is deprecated and will be removed in a future version of Sage. Use g() instead.\n'foo'\n```\n\nAlso, the documentation should be changed to reflect this! It's a good idea to describe what users should do instead of using the deprecated function, so that it is easy for them to change their code.\n\nIdeally we would also have a policy about how long deprecated functions stay in Sage before being removed, but AFAIK no strong consensus on a time period or specific policy exists. If there is one, it should be put into the developer's guide!\n\nIn any case, it is probably a good idea to specify the date or Sage version in which a function was deprecated (even if it's just \"March 2010\") to give users an idea of how \"stale\" a function is and how close to removal it is. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8546\n\n",
     "created_at": "2010-03-16T03:37:21Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_008546.json:
     "title": "add section on deprecating functions to developer's guide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8546",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: mvngu
 
-CC:  kcrisman
+CC:  @kcrisman
 
 Many functions in the Sage library are deprecated, and we seem to have a standard framework in place for informing users that functions are deprecated, but there is no documentation of this in the developers' guide.
 
@@ -78,7 +78,7 @@ archive/issue_comments_077266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8546#issuecomment-77266",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_077267.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8546#issuecomment-77267",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_077268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8546#issuecomment-77268",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_077269.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8546#issuecomment-77269",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_077270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8546#issuecomment-77270",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_077271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8546#issuecomment-77271",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

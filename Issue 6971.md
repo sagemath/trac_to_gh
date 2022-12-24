@@ -14,7 +14,7 @@ archive/issues_006971.json:
     "title": "port ECL spkg to os x 10.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6971",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -49,7 +49,7 @@ archive/issue_comments_057662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6971#issuecomment-57662",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

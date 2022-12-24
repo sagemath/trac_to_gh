@@ -14,7 +14,7 @@ archive/issues_005186.json:
     "title": "mpir build-time CPU detection fails in kvm/qemu amd64 virtual machine",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5186",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 Assignee: mabshoff
@@ -108,7 +108,7 @@ archive/issue_comments_039781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5186",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5186#issuecomment-39781",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_039782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5186",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5186#issuecomment-39782",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 

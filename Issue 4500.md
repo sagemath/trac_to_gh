@@ -14,7 +14,7 @@ archive/issues_004500.json:
     "title": "cython files missing from build directory after install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4500",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 Assignee: mabshoff
@@ -302,7 +302,7 @@ This ticket (both patches are needed) is for review now (again).
 archive/issue_comments_033323.json:
 ```json
 {
-    "body": "Changing assignee from GeorgSWeber to craigcitro.",
+    "body": "Changing assignee from GeorgSWeber to @craigcitro.",
     "created_at": "2008-11-13T13:35:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4500",
     "type": "issue_comment",
@@ -311,7 +311,7 @@ archive/issue_comments_033323.json:
 }
 ```
 
-Changing assignee from GeorgSWeber to craigcitro.
+Changing assignee from GeorgSWeber to @craigcitro.
 
 
 
@@ -365,7 +365,7 @@ archive/issue_comments_033326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4500#issuecomment-33326",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -383,7 +383,7 @@ archive/issue_comments_033327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4500#issuecomment-33327",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -545,7 +545,7 @@ archive/issue_comments_033332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4500#issuecomment-33332",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

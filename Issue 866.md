@@ -3,7 +3,7 @@
 archive/issues_000866.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nKeywords: ntl\n\nThis is the big NTL patch that several people were working on during SD5. There's a ton of code in here, due to Joel Mohler, Craig Citro, Robert Bradshaw, David Harvey, and probably several more people I've forgotten. \n\nIssue created by migration from https://trac.sagemath.org/ticket/866\n\n",
+    "body": "Assignee: @craigcitro\n\nKeywords: ntl\n\nThis is the big NTL patch that several people were working on during SD5. There's a ton of code in here, due to Joel Mohler, Craig Citro, Robert Bradshaw, David Harvey, and probably several more people I've forgotten. \n\nIssue created by migration from https://trac.sagemath.org/ticket/866\n\n",
     "created_at": "2007-10-12T21:11:38Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_000866.json:
     "title": "[with patch] big NTL patch",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/866",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 Keywords: ntl
 
@@ -39,7 +39,7 @@ archive/issue_comments_005350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/866#issuecomment-5350",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to assigned.
 archive/issue_comments_005351.json:
 ```json
 {
-    "body": "Attachment [full-ntl-bundle.hg](tarball://root/attachments/some-uuid/ticket866/full-ntl-bundle.hg) by craigcitro created at 2007-10-12 21:11:57",
+    "body": "Attachment [full-ntl-bundle.hg](tarball://root/attachments/some-uuid/ticket866/full-ntl-bundle.hg) by @craigcitro created at 2007-10-12 21:11:57",
     "created_at": "2007-10-12T21:11:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/866#issuecomment-5351",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [full-ntl-bundle.hg](tarball://root/attachments/some-uuid/ticket866/full-ntl-bundle.hg) by craigcitro created at 2007-10-12 21:11:57
+Attachment [full-ntl-bundle.hg](tarball://root/attachments/some-uuid/ticket866/full-ntl-bundle.hg) by @craigcitro created at 2007-10-12 21:11:57
 
 
 
@@ -171,7 +171,7 @@ archive/issue_comments_005355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/866#issuecomment-5355",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

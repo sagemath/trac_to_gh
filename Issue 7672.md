@@ -3,7 +3,7 @@
 archive/issues_007672.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThe function topological_sort uses Networkx for the moment. As c_graphs are to become the standard implementation of graphs in Sage, this function should be rewritten in Cython.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7672\n\n",
+    "body": "Assignee: @rlmill\n\nThe function topological_sort uses Networkx for the moment. As c_graphs are to become the standard implementation of graphs in Sage, this function should be rewritten in Cython.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7672\n\n",
     "created_at": "2009-12-12T18:14:14Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007672.json:
     "title": "topological_sort in c_graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7672",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 The function topological_sort uses Networkx for the moment. As c_graphs are to become the standard implementation of graphs in Sage, this function should be rewritten in Cython.
 
@@ -37,7 +37,7 @@ archive/issue_comments_065756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7672#issuecomment-65756",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_065757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7672#issuecomment-65757",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_065758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7672#issuecomment-65758",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

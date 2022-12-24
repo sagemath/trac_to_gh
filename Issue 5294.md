@@ -14,7 +14,7 @@ archive/issues_005294.json:
     "title": "Pickle Jar documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5294",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 Assignee: tba
@@ -43,7 +43,7 @@ archive/issue_comments_040694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40694",
-    "user": "andrew.mathas"
+    "user": "@AndrewAtLarge"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_040695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40695",
-    "user": "andrew.mathas"
+    "user": "@AndrewAtLarge"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_040696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40696",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_040697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40697",
-    "user": "andrew.mathas"
+    "user": "@AndrewAtLarge"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_040698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40698",
-    "user": "andrew.mathas"
+    "user": "@AndrewAtLarge"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_040699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40699",
-    "user": "andrew.mathas"
+    "user": "@AndrewAtLarge"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_040700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40700",
-    "user": "andrew.mathas"
+    "user": "@AndrewAtLarge"
 }
 ```
 
@@ -204,16 +204,16 @@ Changing status from new to needs_review.
 archive/issue_comments_040701.json:
 ```json
 {
-    "body": "Changing assignee from tba to andrew.mathas.",
+    "body": "Changing assignee from tba to @AndrewAtLarge.",
     "created_at": "2012-11-01T23:26:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40701",
-    "user": "andrew.mathas"
+    "user": "@AndrewAtLarge"
 }
 ```
 
-Changing assignee from tba to andrew.mathas.
+Changing assignee from tba to @AndrewAtLarge.
 
 
 
@@ -227,7 +227,7 @@ archive/issue_comments_040702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40702",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_040703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40703",
-    "user": "andrew.mathas"
+    "user": "@AndrewAtLarge"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_040704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40704",
-    "user": "andrew.mathas"
+    "user": "@AndrewAtLarge"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_040705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40705",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -316,7 +316,7 @@ archive/issue_comments_040706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40706",
-    "user": "andrew.mathas"
+    "user": "@AndrewAtLarge"
 }
 ```
 
@@ -334,7 +334,7 @@ archive/issue_comments_040707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40707",
-    "user": "andrew.mathas"
+    "user": "@AndrewAtLarge"
 }
 ```
 
@@ -352,7 +352,7 @@ archive/issue_comments_040708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40708",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -391,7 +391,7 @@ archive/issue_comments_040709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40709",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -409,7 +409,7 @@ archive/issue_comments_040710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40710",
-    "user": "andrew.mathas"
+    "user": "@AndrewAtLarge"
 }
 ```
 
@@ -429,7 +429,7 @@ archive/issue_comments_040711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40711",
-    "user": "andrew.mathas"
+    "user": "@AndrewAtLarge"
 }
 ```
 
@@ -447,7 +447,7 @@ archive/issue_comments_040712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40712",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -465,7 +465,7 @@ archive/issue_comments_040713.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40713",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -505,7 +505,7 @@ archive/issue_comments_040714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40714",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -625,7 +625,7 @@ archive/issue_comments_040715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40715",
-    "user": "andrew.mathas"
+    "user": "@AndrewAtLarge"
 }
 ```
 
@@ -668,7 +668,7 @@ archive/issue_comments_040716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40716",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -692,7 +692,7 @@ archive/issue_comments_040717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40717",
-    "user": "andrew.mathas"
+    "user": "@AndrewAtLarge"
 }
 ```
 
@@ -716,7 +716,7 @@ archive/issue_comments_040718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40718",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -734,7 +734,7 @@ archive/issue_comments_040719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40719",
-    "user": "andrew.mathas"
+    "user": "@AndrewAtLarge"
 }
 ```
 
@@ -752,7 +752,7 @@ archive/issue_comments_040720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40720",
-    "user": "andrew.mathas"
+    "user": "@AndrewAtLarge"
 }
 ```
 
@@ -770,7 +770,7 @@ archive/issue_comments_040721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40721",
-    "user": "andrew.mathas"
+    "user": "@AndrewAtLarge"
 }
 ```
 
@@ -792,7 +792,7 @@ archive/issue_comments_040722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40722",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -832,7 +832,7 @@ archive/issue_comments_040723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40723",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -850,7 +850,7 @@ archive/issue_comments_040724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40724",
-    "user": "andrew.mathas"
+    "user": "@AndrewAtLarge"
 }
 ```
 
@@ -863,16 +863,16 @@ UPdated patch fixing conventions.srt problem
 archive/issue_comments_040725.json:
 ```json
 {
-    "body": "Attachment [trac_5294--improving_pickle_jar_documentation-am.patch](tarball://root/attachments/some-uuid/ticket5294/trac_5294--improving_pickle_jar_documentation-am.patch) by andrew.mathas created at 2013-01-13 08:55:46\n\nSorry in all of the excitement I forgot to update the patch on the ticket.",
+    "body": "Attachment [trac_5294--improving_pickle_jar_documentation-am.patch](tarball://root/attachments/some-uuid/ticket5294/trac_5294--improving_pickle_jar_documentation-am.patch) by @AndrewAtLarge created at 2013-01-13 08:55:46\n\nSorry in all of the excitement I forgot to update the patch on the ticket.",
     "created_at": "2013-01-13T08:55:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40725",
-    "user": "andrew.mathas"
+    "user": "@AndrewAtLarge"
 }
 ```
 
-Attachment [trac_5294--improving_pickle_jar_documentation-am.patch](tarball://root/attachments/some-uuid/ticket5294/trac_5294--improving_pickle_jar_documentation-am.patch) by andrew.mathas created at 2013-01-13 08:55:46
+Attachment [trac_5294--improving_pickle_jar_documentation-am.patch](tarball://root/attachments/some-uuid/ticket5294/trac_5294--improving_pickle_jar_documentation-am.patch) by @AndrewAtLarge created at 2013-01-13 08:55:46
 
 Sorry in all of the excitement I forgot to update the patch on the ticket.
 
@@ -888,7 +888,7 @@ archive/issue_comments_040726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40726",
-    "user": "andrew.mathas"
+    "user": "@AndrewAtLarge"
 }
 ```
 
@@ -906,7 +906,7 @@ archive/issue_comments_040727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40727",
-    "user": "andrew.mathas"
+    "user": "@AndrewAtLarge"
 }
 ```
 
@@ -924,7 +924,7 @@ archive/issue_comments_040728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40728",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -942,7 +942,7 @@ archive/issue_comments_040729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40729",
-    "user": "andrew.mathas"
+    "user": "@AndrewAtLarge"
 }
 ```
 
@@ -963,7 +963,7 @@ archive/issue_comments_040730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5294#issuecomment-40730",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

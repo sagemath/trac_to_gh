@@ -50,16 +50,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5026
 archive/issue_comments_038288.json:
 ```json
 {
-    "body": "Attachment [trac-5026.patch](tarball://root/attachments/some-uuid/ticket5026/trac-5026.patch) by craigcitro created at 2009-01-23 13:19:56\n\nAttached patch fixes the doctest.",
+    "body": "Attachment [trac-5026.patch](tarball://root/attachments/some-uuid/ticket5026/trac-5026.patch) by @craigcitro created at 2009-01-23 13:19:56\n\nAttached patch fixes the doctest.",
     "created_at": "2009-01-23T13:19:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5026",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5026#issuecomment-38288",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-5026.patch](tarball://root/attachments/some-uuid/ticket5026/trac-5026.patch) by craigcitro created at 2009-01-23 13:19:56
+Attachment [trac-5026.patch](tarball://root/attachments/some-uuid/ticket5026/trac-5026.patch) by @craigcitro created at 2009-01-23 13:19:56
 
 Attached patch fixes the doctest.
 
@@ -70,16 +70,16 @@ Attached patch fixes the doctest.
 archive/issue_comments_038289.json:
 ```json
 {
-    "body": "Changing assignee from jkantor to craigcitro.",
+    "body": "Changing assignee from jkantor to @craigcitro.",
     "created_at": "2009-01-23T13:19:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5026",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5026#issuecomment-38289",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from jkantor to craigcitro.
+Changing assignee from jkantor to @craigcitro.
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_038290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5026",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5026#issuecomment-38290",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

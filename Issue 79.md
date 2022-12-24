@@ -14,7 +14,7 @@ archive/issues_000079.json:
     "title": "Create a framework for numerical computation in SAGE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/79",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -76,7 +76,7 @@ archive/issue_comments_000396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/79",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/79#issuecomment-396",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_000397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/79",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/79#issuecomment-397",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

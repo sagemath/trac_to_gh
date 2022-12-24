@@ -3,7 +3,7 @@
 archive/issues_005737.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  wstein mhansen ncalexan\n\nAttached patches fix some bugs in the pynac interface and add .find() and .is_polynomial() functions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5737\n\n",
+    "body": "Assignee: @burcin\n\nCC:  wstein @mwhansen @ncalexan\n\nAttached patches fix some bugs in the pynac interface and add .find() and .is_polynomial() functions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5737\n\n",
     "created_at": "2009-04-10T21:09:13Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_005737.json:
     "title": "pynac interface improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5737",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  wstein mhansen ncalexan
+CC:  wstein @mwhansen @ncalexan
 
 Attached patches fix some bugs in the pynac interface and add .find() and .is_polynomial() functions.
 
@@ -39,7 +39,7 @@ archive/issue_comments_044849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5737#issuecomment-44849",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -52,16 +52,16 @@ add .find() method
 archive/issue_comments_044850.json:
 ```json
 {
-    "body": "Attachment [trac_5737-02-real_imag.patch](tarball://root/attachments/some-uuid/ticket5737/trac_5737-02-real_imag.patch) by burcin created at 2009-04-10 21:10:24\n\nfix py_real() and py_imag()",
+    "body": "Attachment [trac_5737-02-real_imag.patch](tarball://root/attachments/some-uuid/ticket5737/trac_5737-02-real_imag.patch) by @burcin created at 2009-04-10 21:10:24\n\nfix py_real() and py_imag()",
     "created_at": "2009-04-10T21:10:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5737#issuecomment-44850",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_5737-02-real_imag.patch](tarball://root/attachments/some-uuid/ticket5737/trac_5737-02-real_imag.patch) by burcin created at 2009-04-10 21:10:24
+Attachment [trac_5737-02-real_imag.patch](tarball://root/attachments/some-uuid/ticket5737/trac_5737-02-real_imag.patch) by @burcin created at 2009-04-10 21:10:24
 
 fix py_real() and py_imag()
 
@@ -77,7 +77,7 @@ archive/issue_comments_044851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5737#issuecomment-44851",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_044852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5737#issuecomment-44852",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -108,16 +108,16 @@ Changing status from new to assigned.
 archive/issue_comments_044853.json:
 ```json
 {
-    "body": "Attachment [trac_5737-03-is_polynomial.patch](tarball://root/attachments/some-uuid/ticket5737/trac_5737-03-is_polynomial.patch) by burcin created at 2009-04-10 21:11:55",
+    "body": "Attachment [trac_5737-03-is_polynomial.patch](tarball://root/attachments/some-uuid/ticket5737/trac_5737-03-is_polynomial.patch) by @burcin created at 2009-04-10 21:11:55",
     "created_at": "2009-04-10T21:11:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5737#issuecomment-44853",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_5737-03-is_polynomial.patch](tarball://root/attachments/some-uuid/ticket5737/trac_5737-03-is_polynomial.patch) by burcin created at 2009-04-10 21:11:55
+Attachment [trac_5737-03-is_polynomial.patch](tarball://root/attachments/some-uuid/ticket5737/trac_5737-03-is_polynomial.patch) by @burcin created at 2009-04-10 21:11:55
 
 
 
@@ -131,7 +131,7 @@ archive/issue_comments_044854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5737#issuecomment-44854",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_000230.json:
     "title": "Notebook \"load\" or \"attach\" does not work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/230",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 Assignee: boothby
@@ -65,7 +65,7 @@ archive/issue_comments_001021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/230",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/230#issuecomment-1021",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_001022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/230",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/230#issuecomment-1022",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_001024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/230",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/230#issuecomment-1024",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005898.json:
 ```json
 {
-    "body": "Assignee: was\n\nThere are a few minor bugs in plot_field.py which should be fixed, e.g. importing math.sqrt when in fact the symbolic square root is imported shortly thereafter (and correctly).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5898\n\n",
+    "body": "Assignee: @williamstein\n\nThere are a few minor bugs in plot_field.py which should be fixed, e.g. importing math.sqrt when in fact the symbolic square root is imported shortly thereafter (and correctly).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5898\n\n",
     "created_at": "2009-04-26T02:22:12Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_005898.json:
     "title": "Plot Field doc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5898",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 There are a few minor bugs in plot_field.py which should be fixed, e.g. importing math.sqrt when in fact the symbolic square root is imported shortly thereafter (and correctly).
 
@@ -37,7 +37,7 @@ archive/issue_comments_046630.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5898#issuecomment-46630",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -50,16 +50,16 @@ Based on 3.4.2.alpha0
 archive/issue_comments_046631.json:
 ```json
 {
-    "body": "Attachment [plot_field-patch.patch](tarball://root/attachments/some-uuid/ticket5898/plot_field-patch.patch) by kcrisman created at 2009-04-26 02:30:30\n\nThis patch brings coverage of plot_field.py to 100% and fixes a few minor bugs.  \n\nIf I did not ReSTify correctly, reviewer please give extremely explicit directions for how to correct this.  Also I hope that the init method test will not cause numerical noise problems but please give explicit instructions on how to correct for that.  I find both of those issues confusing to do properly.",
+    "body": "Attachment [plot_field-patch.patch](tarball://root/attachments/some-uuid/ticket5898/plot_field-patch.patch) by @kcrisman created at 2009-04-26 02:30:30\n\nThis patch brings coverage of plot_field.py to 100% and fixes a few minor bugs.  \n\nIf I did not ReSTify correctly, reviewer please give extremely explicit directions for how to correct this.  Also I hope that the init method test will not cause numerical noise problems but please give explicit instructions on how to correct for that.  I find both of those issues confusing to do properly.",
     "created_at": "2009-04-26T02:30:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5898#issuecomment-46631",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [plot_field-patch.patch](tarball://root/attachments/some-uuid/ticket5898/plot_field-patch.patch) by kcrisman created at 2009-04-26 02:30:30
+Attachment [plot_field-patch.patch](tarball://root/attachments/some-uuid/ticket5898/plot_field-patch.patch) by @kcrisman created at 2009-04-26 02:30:30
 
 This patch brings coverage of plot_field.py to 100% and fixes a few minor bugs.  
 
@@ -139,7 +139,7 @@ archive/issue_comments_046634.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5898#issuecomment-46634",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

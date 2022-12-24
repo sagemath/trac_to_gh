@@ -3,7 +3,7 @@
 archive/issues_002683.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2683\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2683\n\n",
     "created_at": "2008-03-27T09:54:26Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_002683.json:
     "title": "[with patch, needs review]  Add initial support of k-Schur functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2683",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2683
 archive/issue_comments_018446.json:
 ```json
 {
-    "body": "Attachment [trac_2683-kschur.patch](tarball://root/attachments/some-uuid/ticket2683/trac_2683-kschur.patch) by mhansen created at 2008-03-27 10:04:44\n\nThe patch also includes some miscellaneous cleanup in permutation.py and partition.py",
+    "body": "Attachment [trac_2683-kschur.patch](tarball://root/attachments/some-uuid/ticket2683/trac_2683-kschur.patch) by @mwhansen created at 2008-03-27 10:04:44\n\nThe patch also includes some miscellaneous cleanup in permutation.py and partition.py",
     "created_at": "2008-03-27T10:04:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2683#issuecomment-18446",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_2683-kschur.patch](tarball://root/attachments/some-uuid/ticket2683/trac_2683-kschur.patch) by mhansen created at 2008-03-27 10:04:44
+Attachment [trac_2683-kschur.patch](tarball://root/attachments/some-uuid/ticket2683/trac_2683-kschur.patch) by @mwhansen created at 2008-03-27 10:04:44
 
 The patch also includes some miscellaneous cleanup in permutation.py and partition.py
 
@@ -59,7 +59,7 @@ archive/issue_comments_018447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2683#issuecomment-18447",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_018448.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2683#issuecomment-18448",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_018449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2683#issuecomment-18449",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

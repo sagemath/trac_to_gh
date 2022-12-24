@@ -3,7 +3,7 @@
 archive/issues_000728.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis is SAGE 2.8.5:\n\n\n```\nsage: A = random_matrix(ZZ,3,3)\nsage: A.lll?\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n ... File \"/usr/local/sage-2.8.1/local/lib/python2.5/site-packages/sage/misc/sageinspect.py\", line 252, in sage_getargspec\n    args, varargs, varkw = inspect.getargs(func_obj.func_code)\nUnboundLocalError: local variable 'func_obj' referenced before assignment\nsage: e = 1\nsage: e.additive_order?\n\n  File \"<stdin>\", line 1, in <module>\n ... File \"/usr/local/sage-2.8.1/local/lib/python2.5/site-packages/sage/misc/sageinspect.py\", line 252, in sage_getargspec\n    args, varargs, varkw = inspect.getargs(func_obj.func_code)\nUnboundLocalError: local variable 'func_obj' referenced before assignment\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/728\n\n",
+    "body": "Assignee: @williamstein\n\nThis is SAGE 2.8.5:\n\n\n```\nsage: A = random_matrix(ZZ,3,3)\nsage: A.lll?\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n ... File \"/usr/local/sage-2.8.1/local/lib/python2.5/site-packages/sage/misc/sageinspect.py\", line 252, in sage_getargspec\n    args, varargs, varkw = inspect.getargs(func_obj.func_code)\nUnboundLocalError: local variable 'func_obj' referenced before assignment\nsage: e = 1\nsage: e.additive_order?\n\n  File \"<stdin>\", line 1, in <module>\n ... File \"/usr/local/sage-2.8.1/local/lib/python2.5/site-packages/sage/misc/sageinspect.py\", line 252, in sage_getargspec\n    args, varargs, varkw = inspect.getargs(func_obj.func_code)\nUnboundLocalError: local variable 'func_obj' referenced before assignment\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/728\n\n",
     "created_at": "2007-09-21T13:38:10Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_000728.json:
     "title": "sage_inspect broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/728",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This is SAGE 2.8.5:
 
@@ -56,7 +56,7 @@ archive/issue_comments_004275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/728",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/728#issuecomment-4275",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_004276.json:
     "issue": "https://github.com/sagemath/sagetest/issues/728",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/728#issuecomment-4276",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_004277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/728",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/728#issuecomment-4277",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

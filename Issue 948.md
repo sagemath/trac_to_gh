@@ -3,7 +3,7 @@
 archive/issues_000948.json:
 ```json
 {
-    "body": "Assignee: malb\n\n\n```\n[11:50am] wstein2: hi: regarding #872.\n[11:50am] wstein2: the new spkg definitely fixes the bug reported there with factoring.\n[11:51am] wstein2: But I tried factoring in a 2-variable ring and it quickly runs out of steam.  E.g., this fails:\n[11:51am] wstein2: > ring r=(0,a),(x,y),dp;\n[11:51am] wstein2: > minpoly = a^2+1;\n[11:51am] wstein2: > factorize(x^12 + y^12);\n```\n\nSome magma timings:\n\n```\nbsd0:~ was$ magma\nMagma V2.13-10    Sat Oct 20 2007 11:53:54 on bsd0     [Seed = 3168908577]\nType ? for help.  Type <Ctrl>-D to quit.\nK<i> := NumberField(x^2 + 1^H>                            \n> \n> R<x> := PolynomialRing(RationalField());\n> K<i> := NumberField(x^2 + 1);\n> S<y,z> := PolynomialRing(K, 2);\n> time Factorization(y^4 - z^4);\n[\n    <y - z, 1>,\n    <y + z, 1>,\n    <y - i*z, 1>,\n    <y + i*z, 1>\n]\nTime: 0.030\n> time Factorization(y^12 - z^12);\n[\n    <y - z, 1>,\n    <y + z, 1>,\n    <y - i*z, 1>,\n    <y + i*z, 1>,\n    <y^2 - y*z + z^2, 1>,\n    <y^2 + y*z + z^2, 1>,\n    <y^2 - i*y*z - z^2, 1>,\n    <y^2 + i*y*z - z^2, 1>\n]\nTime: 0.030\n> time Factorization(y^20 - z^20);\n[\n    <y - z, 1>,\n    <y + z, 1>,\n    <y - i*z, 1>,\n    <y + i*z, 1>,\n    <y^4 - y^3*z + y^2*z^2 - y*z^3 + z^4, 1>,\n    <y^4 + y^3*z + y^2*z^2 + y*z^3 + z^4, 1>,\n    <y^4 - i*y^3*z - y^2*z^2 + i*y*z^3 + z^4, 1>,\n    <y^4 + i*y^3*z - y^2*z^2 - i*y*z^3 + z^4, 1>\n]\nTime: 0.050\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/948\n\n",
+    "body": "Assignee: @malb\n\n\n```\n[11:50am] wstein2: hi: regarding #872.\n[11:50am] wstein2: the new spkg definitely fixes the bug reported there with factoring.\n[11:51am] wstein2: But I tried factoring in a 2-variable ring and it quickly runs out of steam.  E.g., this fails:\n[11:51am] wstein2: > ring r=(0,a),(x,y),dp;\n[11:51am] wstein2: > minpoly = a^2+1;\n[11:51am] wstein2: > factorize(x^12 + y^12);\n```\n\nSome magma timings:\n\n```\nbsd0:~ was$ magma\nMagma V2.13-10    Sat Oct 20 2007 11:53:54 on bsd0     [Seed = 3168908577]\nType ? for help.  Type <Ctrl>-D to quit.\nK<i> := NumberField(x^2 + 1^H>                            \n> \n> R<x> := PolynomialRing(RationalField());\n> K<i> := NumberField(x^2 + 1);\n> S<y,z> := PolynomialRing(K, 2);\n> time Factorization(y^4 - z^4);\n[\n    <y - z, 1>,\n    <y + z, 1>,\n    <y - i*z, 1>,\n    <y + i*z, 1>\n]\nTime: 0.030\n> time Factorization(y^12 - z^12);\n[\n    <y - z, 1>,\n    <y + z, 1>,\n    <y - i*z, 1>,\n    <y + i*z, 1>,\n    <y^2 - y*z + z^2, 1>,\n    <y^2 + y*z + z^2, 1>,\n    <y^2 - i*y*z - z^2, 1>,\n    <y^2 + i*y*z - z^2, 1>\n]\nTime: 0.030\n> time Factorization(y^20 - z^20);\n[\n    <y - z, 1>,\n    <y + z, 1>,\n    <y - i*z, 1>,\n    <y + i*z, 1>,\n    <y^4 - y^3*z + y^2*z^2 - y*z^3 + z^4, 1>,\n    <y^4 + y^3*z + y^2*z^2 + y*z^3 + z^4, 1>,\n    <y^4 - i*y^3*z - y^2*z^2 + i*y*z^3 + z^4, 1>,\n    <y^4 + i*y^3*z - y^2*z^2 - i*y*z^3 + z^4, 1>\n]\nTime: 0.050\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/948\n\n",
     "created_at": "2007-10-20T19:01:17Z",
     "labels": [
         "commutative algebra",
@@ -17,7 +17,7 @@ archive/issues_000948.json:
     "user": "mabshoff"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 
 ```
@@ -91,7 +91,7 @@ archive/issue_comments_005787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/948",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/948#issuecomment-5787",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -106,16 +106,16 @@ I am retagging this as 2.8.10 which means applying the patch attached to this ti
 archive/issue_comments_005788.json:
 ```json
 {
-    "body": "Attachment [singular-nf.patch](tarball://root/attachments/some-uuid/ticket948/singular-nf.patch) by malb created at 2007-10-25 15:33:12",
+    "body": "Attachment [singular-nf.patch](tarball://root/attachments/some-uuid/ticket948/singular-nf.patch) by @malb created at 2007-10-25 15:33:12",
     "created_at": "2007-10-25T15:33:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/948",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/948#issuecomment-5788",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [singular-nf.patch](tarball://root/attachments/some-uuid/ticket948/singular-nf.patch) by malb created at 2007-10-25 15:33:12
+Attachment [singular-nf.patch](tarball://root/attachments/some-uuid/ticket948/singular-nf.patch) by @malb created at 2007-10-25 15:33:12
 
 
 
@@ -129,7 +129,7 @@ archive/issue_comments_005789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/948",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/948#issuecomment-5789",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_005790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/948",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/948#issuecomment-5790",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

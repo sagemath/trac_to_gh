@@ -14,7 +14,7 @@ archive/issues_004905.json:
     "title": "convert sage.coding.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4905",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4905
 archive/issue_comments_037211.json:
 ```json
 {
-    "body": "Attachment [trac_4905.patch](tarball://root/attachments/some-uuid/ticket4905/trac_4905.patch) by mhansen created at 2009-01-02 02:57:18",
+    "body": "Attachment [trac_4905.patch](tarball://root/attachments/some-uuid/ticket4905/trac_4905.patch) by @mwhansen created at 2009-01-02 02:57:18",
     "created_at": "2009-01-02T02:57:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4905#issuecomment-37211",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4905.patch](tarball://root/attachments/some-uuid/ticket4905/trac_4905.patch) by mhansen created at 2009-01-02 02:57:18
+Attachment [trac_4905.patch](tarball://root/attachments/some-uuid/ticket4905/trac_4905.patch) by @mwhansen created at 2009-01-02 02:57:18
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_037212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4905#issuecomment-37212",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_037213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4905#issuecomment-37213",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_037214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4905#issuecomment-37214",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_037215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4905#issuecomment-37215",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_037216.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4905#issuecomment-37216",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -231,16 +231,16 @@ What else needs to be done to review this?
 archive/issue_comments_037217.json:
 ```json
 {
-    "body": "Attachment [trac_4905-2.patch](tarball://root/attachments/some-uuid/ticket4905/trac_4905-2.patch) by mhansen created at 2009-01-02 20:16:18\n\nI've updated the second patch to take care of these.",
+    "body": "Attachment [trac_4905-2.patch](tarball://root/attachments/some-uuid/ticket4905/trac_4905-2.patch) by @mwhansen created at 2009-01-02 20:16:18\n\nI've updated the second patch to take care of these.",
     "created_at": "2009-01-02T20:16:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4905#issuecomment-37217",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4905-2.patch](tarball://root/attachments/some-uuid/ticket4905/trac_4905-2.patch) by mhansen created at 2009-01-02 20:16:18
+Attachment [trac_4905-2.patch](tarball://root/attachments/some-uuid/ticket4905/trac_4905-2.patch) by @mwhansen created at 2009-01-02 20:16:18
 
 I've updated the second patch to take care of these.
 
@@ -256,7 +256,7 @@ archive/issue_comments_037218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4905#issuecomment-37218",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -284,7 +284,7 @@ archive/issue_comments_037219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4905#issuecomment-37219",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -321,16 +321,16 @@ It seems like AUTHOR: doesn't get changed to AUTHOR::.  Also, I'm worried about 
 archive/issue_comments_037220.json:
 ```json
 {
-    "body": "Attachment [trac_4905-2.2.patch](tarball://root/attachments/some-uuid/ticket4905/trac_4905-2.2.patch) by wdj created at 2009-01-09 00:41:11\n\nThese patches look good to me. \n\nI've forgotten now what exactly is involved in giving this a positive review beyond just looking them over, but this looks like it should go in to me.",
+    "body": "Attachment [trac_4905-2.2.patch](tarball://root/attachments/some-uuid/ticket4905/trac_4905-2.2.patch) by @wdjoyner created at 2009-01-09 00:41:11\n\nThese patches look good to me. \n\nI've forgotten now what exactly is involved in giving this a positive review beyond just looking them over, but this looks like it should go in to me.",
     "created_at": "2009-01-09T00:41:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4905#issuecomment-37220",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_4905-2.2.patch](tarball://root/attachments/some-uuid/ticket4905/trac_4905-2.2.patch) by wdj created at 2009-01-09 00:41:11
+Attachment [trac_4905-2.2.patch](tarball://root/attachments/some-uuid/ticket4905/trac_4905-2.2.patch) by @wdjoyner created at 2009-01-09 00:41:11
 
 These patches look good to me. 
 
@@ -343,16 +343,16 @@ I've forgotten now what exactly is involved in giving this a positive review bey
 archive/issue_comments_037221.json:
 ```json
 {
-    "body": "Attachment [sage.coding-final.patch](tarball://root/attachments/some-uuid/ticket4905/sage.coding-final.patch) by mhansen created at 2009-02-21 19:15:51",
+    "body": "Attachment [sage.coding-final.patch](tarball://root/attachments/some-uuid/ticket4905/sage.coding-final.patch) by @mwhansen created at 2009-02-21 19:15:51",
     "created_at": "2009-02-21T19:15:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4905#issuecomment-37221",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [sage.coding-final.patch](tarball://root/attachments/some-uuid/ticket4905/sage.coding-final.patch) by mhansen created at 2009-02-21 19:15:51
+Attachment [sage.coding-final.patch](tarball://root/attachments/some-uuid/ticket4905/sage.coding-final.patch) by @mwhansen created at 2009-02-21 19:15:51
 
 
 

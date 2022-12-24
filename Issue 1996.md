@@ -3,7 +3,7 @@
 archive/issues_001996.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nThere's an incorrect doctest in sage/interfaces/libecm.pyx. The attached patch fixes it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1996\n\n",
+    "body": "Assignee: @craigcitro\n\nThere's an incorrect doctest in sage/interfaces/libecm.pyx. The attached patch fixes it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1996\n\n",
     "created_at": "2008-01-31T04:44:52Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_001996.json:
     "title": "[with patch, needs review] doctest failure on 2.10.1.rc3: libecm.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1996",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 There's an incorrect doctest in sage/interfaces/libecm.pyx. The attached patch fixes it.
 

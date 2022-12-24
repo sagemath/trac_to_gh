@@ -3,7 +3,7 @@
 archive/issues_004478.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nHow can this file be serious?\n\n```\nwstein@one:~/devel/sage$ more spkg-debian-maybe\n#!/bin/sh -x\nBUILD_ROOT=../../../\nmv dist/debian $BUILD_ROOT\ncd $BUILD_ROOT/..\necho \"Starting Debian build\"\ndasource ./sage-2.10.1\nsbuildhack \"$DEBIAN_RELEASE\" *.dsc\necho \"Debian Build complete\"\n```\n\n\nSee for example the \"sage-2.10.1\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/4478\n\n",
+    "body": "Assignee: @timabbott\n\nHow can this file be serious?\n\n```\nwstein@one:~/devel/sage$ more spkg-debian-maybe\n#!/bin/sh -x\nBUILD_ROOT=../../../\nmv dist/debian $BUILD_ROOT\ncd $BUILD_ROOT/..\necho \"Starting Debian build\"\ndasource ./sage-2.10.1\nsbuildhack \"$DEBIAN_RELEASE\" *.dsc\necho \"Debian Build complete\"\n```\n\n\nSee for example the \"sage-2.10.1\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/4478\n\n",
     "created_at": "2008-11-09T08:13:11Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_004478.json:
     "title": "delete spkg-debian-maybe",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4478",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 How can this file be serious?
 
@@ -52,7 +52,7 @@ archive/issue_comments_033077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4478#issuecomment-33077",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -65,7 +65,7 @@ The system for building all the dependencies Sage needed as Debian packages that
 archive/issue_comments_033078.json:
 ```json
 {
-    "body": "Changing assignee from tabbott to mabshoff.",
+    "body": "Changing assignee from @timabbott to mabshoff.",
     "created_at": "2008-11-10T04:14:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4478",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_033078.json:
 }
 ```
 
-Changing assignee from tabbott to mabshoff.
+Changing assignee from @timabbott to mabshoff.
 
 
 
@@ -136,16 +136,16 @@ Michael
 archive/issue_comments_033081.json:
 ```json
 {
-    "body": "Attachment [trac-4478-bin.patch](tarball://root/attachments/some-uuid/ticket4478/trac-4478-bin.patch) by craigcitro created at 2009-05-27 04:33:42\n\npatch for local/bin repository",
+    "body": "Attachment [trac-4478-bin.patch](tarball://root/attachments/some-uuid/ticket4478/trac-4478-bin.patch) by @craigcitro created at 2009-05-27 04:33:42\n\npatch for local/bin repository",
     "created_at": "2009-05-27T04:33:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4478#issuecomment-33081",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4478-bin.patch](tarball://root/attachments/some-uuid/ticket4478/trac-4478-bin.patch) by craigcitro created at 2009-05-27 04:33:42
+Attachment [trac-4478-bin.patch](tarball://root/attachments/some-uuid/ticket4478/trac-4478-bin.patch) by @craigcitro created at 2009-05-27 04:33:42
 
 patch for local/bin repository
 
@@ -161,7 +161,7 @@ archive/issue_comments_033082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4478#issuecomment-33082",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_033083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4478#issuecomment-33083",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -196,16 +196,16 @@ Changing status from assigned to new.
 archive/issue_comments_033084.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to craigcitro.",
+    "body": "Changing assignee from mabshoff to @craigcitro.",
     "created_at": "2009-05-27T04:36:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4478#issuecomment-33084",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from mabshoff to craigcitro.
+Changing assignee from mabshoff to @craigcitro.
 
 
 
@@ -214,16 +214,16 @@ Changing assignee from mabshoff to craigcitro.
 archive/issue_comments_033085.json:
 ```json
 {
-    "body": "Attachment [trac-4478.patch](tarball://root/attachments/some-uuid/ticket4478/trac-4478.patch) by mhansen created at 2009-05-28 20:06:57",
+    "body": "Attachment [trac-4478.patch](tarball://root/attachments/some-uuid/ticket4478/trac-4478.patch) by @mwhansen created at 2009-05-28 20:06:57",
     "created_at": "2009-05-28T20:06:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4478#issuecomment-33085",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac-4478.patch](tarball://root/attachments/some-uuid/ticket4478/trac-4478.patch) by mhansen created at 2009-05-28 20:06:57
+Attachment [trac-4478.patch](tarball://root/attachments/some-uuid/ticket4478/trac-4478.patch) by @mwhansen created at 2009-05-28 20:06:57
 
 
 
@@ -237,7 +237,7 @@ archive/issue_comments_033086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4478#issuecomment-33086",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_033087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4478#issuecomment-33087",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

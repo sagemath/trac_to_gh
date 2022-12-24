@@ -3,7 +3,7 @@
 archive/issues_008103.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  timdumol was\n\nIt's possible to modify published worksheets, by appending worksheet commands to their URLs.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8103\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @TimDumol @williamstein\n\nIt's possible to modify published worksheets, by appending worksheet commands to their URLs.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8103\n\n",
     "created_at": "2010-01-28T03:54:24Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_008103.json:
     "title": "Published worksheets aren't inert",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8103",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  timdumol was
+CC:  @TimDumol @williamstein
 
 It's possible to modify published worksheets, by appending worksheet commands to their URLs.
 
@@ -39,7 +39,7 @@ archive/issue_comments_071095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8103#issuecomment-71095",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_071096.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8103#issuecomment-71096",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -70,16 +70,16 @@ Changing status from new to needs_review.
 archive/issue_comments_071097.json:
 ```json
 {
-    "body": "Attachment [trac_8103-pub_worksheet_cmd.patch](tarball://root/attachments/some-uuid/ticket8103/trac_8103-pub_worksheet_cmd.patch) by mpatel created at 2010-01-28 04:04:57\n\nI've attached a patch for testing and review.",
+    "body": "Attachment [trac_8103-pub_worksheet_cmd.patch](tarball://root/attachments/some-uuid/ticket8103/trac_8103-pub_worksheet_cmd.patch) by @qed777 created at 2010-01-28 04:04:57\n\nI've attached a patch for testing and review.",
     "created_at": "2010-01-28T04:04:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8103#issuecomment-71097",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8103-pub_worksheet_cmd.patch](tarball://root/attachments/some-uuid/ticket8103/trac_8103-pub_worksheet_cmd.patch) by mpatel created at 2010-01-28 04:04:57
+Attachment [trac_8103-pub_worksheet_cmd.patch](tarball://root/attachments/some-uuid/ticket8103/trac_8103-pub_worksheet_cmd.patch) by @qed777 created at 2010-01-28 04:04:57
 
 I've attached a patch for testing and review.
 
@@ -95,7 +95,7 @@ archive/issue_comments_071098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8103#issuecomment-71098",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_071099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8103#issuecomment-71099",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -126,16 +126,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_071100.json:
 ```json
 {
-    "body": "Attachment [trac_8103-pub_worksheet_cmd.2.patch](tarball://root/attachments/some-uuid/ticket8103/trac_8103-pub_worksheet_cmd.2.patch) by mpatel created at 2010-01-28 07:09:56\n\nLess draconian restrictions.  Replaces previous.",
+    "body": "Attachment [trac_8103-pub_worksheet_cmd.2.patch](tarball://root/attachments/some-uuid/ticket8103/trac_8103-pub_worksheet_cmd.2.patch) by @qed777 created at 2010-01-28 07:09:56\n\nLess draconian restrictions.  Replaces previous.",
     "created_at": "2010-01-28T07:09:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8103#issuecomment-71100",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8103-pub_worksheet_cmd.2.patch](tarball://root/attachments/some-uuid/ticket8103/trac_8103-pub_worksheet_cmd.2.patch) by mpatel created at 2010-01-28 07:09:56
+Attachment [trac_8103-pub_worksheet_cmd.2.patch](tarball://root/attachments/some-uuid/ticket8103/trac_8103-pub_worksheet_cmd.2.patch) by @qed777 created at 2010-01-28 07:09:56
 
 Less draconian restrictions.  Replaces previous.
 
@@ -151,7 +151,7 @@ archive/issue_comments_071101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8103#issuecomment-71101",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_071102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8103#issuecomment-71102",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -182,16 +182,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_071103.json:
 ```json
 {
-    "body": "Attachment [trac_8103-pub_worksheet_cmd.3.patch](tarball://root/attachments/some-uuid/ticket8103/trac_8103-pub_worksheet_cmd.3.patch) by mpatel created at 2010-01-28 07:20:47\n\nCloser to the truth.  Replaces previous.",
+    "body": "Attachment [trac_8103-pub_worksheet_cmd.3.patch](tarball://root/attachments/some-uuid/ticket8103/trac_8103-pub_worksheet_cmd.3.patch) by @qed777 created at 2010-01-28 07:20:47\n\nCloser to the truth.  Replaces previous.",
     "created_at": "2010-01-28T07:20:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8103#issuecomment-71103",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8103-pub_worksheet_cmd.3.patch](tarball://root/attachments/some-uuid/ticket8103/trac_8103-pub_worksheet_cmd.3.patch) by mpatel created at 2010-01-28 07:20:47
+Attachment [trac_8103-pub_worksheet_cmd.3.patch](tarball://root/attachments/some-uuid/ticket8103/trac_8103-pub_worksheet_cmd.3.patch) by @qed777 created at 2010-01-28 07:20:47
 
 Closer to the truth.  Replaces previous.
 
@@ -207,7 +207,7 @@ archive/issue_comments_071104.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8103#issuecomment-71104",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_071105.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8103#issuecomment-71105",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_071106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8103#issuecomment-71106",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_071107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8103#issuecomment-71107",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_071108.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8103#issuecomment-71108",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_071109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8103#issuecomment-71109",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_071110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8103#issuecomment-71110",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -335,7 +335,7 @@ archive/issue_comments_071111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8103#issuecomment-71111",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -353,7 +353,7 @@ archive/issue_comments_071112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8103#issuecomment-71112",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

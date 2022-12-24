@@ -14,7 +14,7 @@ archive/issues_004425.json:
     "title": "sqrt(4) returns a SymbolicComposition instead of the number 2!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4425",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4425
 archive/issue_comments_032529.json:
 ```json
 {
-    "body": "Changing assignee from somebody to kcrisman.",
+    "body": "Changing assignee from somebody to @kcrisman.",
     "created_at": "2008-11-04T03:41:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4425#issuecomment-32529",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Changing assignee from somebody to kcrisman.
+Changing assignee from somebody to @kcrisman.
 
 
 
@@ -70,7 +70,7 @@ archive/issue_comments_032530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4425#issuecomment-32530",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_032531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4425#issuecomment-32531",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -103,16 +103,16 @@ Based on 3.2.alpha0
 archive/issue_comments_032532.json:
 ```json
 {
-    "body": "Attachment [sqrt-nonsymbolic.patch](tarball://root/attachments/some-uuid/ticket4425/sqrt-nonsymbolic.patch) by mhansen created at 2008-11-05 07:31:34\n\nI think that the .sqrt() method in Integer and Rational should call sqrt._do_sqrt instead of creating the SymbolicComposition themselves.  For example, see\n\n\n```\nsage: sqrt._do_sqrt(4)\n2\nsage: type(_)\n<class 'sage.calculus.calculus.SymbolicComposition'>\nsage: sqrt._do_sqrt(5)\nsqrt(5)\nsage: sqrt._do_sqrt(5, all=True)\n[sqrt(5), -sqrt(5)]\n```\n",
+    "body": "Attachment [sqrt-nonsymbolic.patch](tarball://root/attachments/some-uuid/ticket4425/sqrt-nonsymbolic.patch) by @mwhansen created at 2008-11-05 07:31:34\n\nI think that the .sqrt() method in Integer and Rational should call sqrt._do_sqrt instead of creating the SymbolicComposition themselves.  For example, see\n\n\n```\nsage: sqrt._do_sqrt(4)\n2\nsage: type(_)\n<class 'sage.calculus.calculus.SymbolicComposition'>\nsage: sqrt._do_sqrt(5)\nsqrt(5)\nsage: sqrt._do_sqrt(5, all=True)\n[sqrt(5), -sqrt(5)]\n```\n",
     "created_at": "2008-11-05T07:31:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4425#issuecomment-32532",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [sqrt-nonsymbolic.patch](tarball://root/attachments/some-uuid/ticket4425/sqrt-nonsymbolic.patch) by mhansen created at 2008-11-05 07:31:34
+Attachment [sqrt-nonsymbolic.patch](tarball://root/attachments/some-uuid/ticket4425/sqrt-nonsymbolic.patch) by @mwhansen created at 2008-11-05 07:31:34
 
 I think that the .sqrt() method in Integer and Rational should call sqrt._do_sqrt instead of creating the SymbolicComposition themselves.  For example, see
 
@@ -136,16 +136,16 @@ sage: sqrt._do_sqrt(5, all=True)
 archive/issue_comments_032533.json:
 ```json
 {
-    "body": "Attachment [trac_4425.patch](tarball://root/attachments/some-uuid/ticket4425/trac_4425.patch) by mhansen created at 2008-11-06 12:59:31\n\nI've attached a patch which makes the change I suggested.  What are your thoughts?",
+    "body": "Attachment [trac_4425.patch](tarball://root/attachments/some-uuid/ticket4425/trac_4425.patch) by @mwhansen created at 2008-11-06 12:59:31\n\nI've attached a patch which makes the change I suggested.  What are your thoughts?",
     "created_at": "2008-11-06T12:59:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4425#issuecomment-32533",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4425.patch](tarball://root/attachments/some-uuid/ticket4425/trac_4425.patch) by mhansen created at 2008-11-06 12:59:31
+Attachment [trac_4425.patch](tarball://root/attachments/some-uuid/ticket4425/trac_4425.patch) by @mwhansen created at 2008-11-06 12:59:31
 
 I've attached a patch which makes the change I suggested.  What are your thoughts?
 
@@ -156,16 +156,16 @@ I've attached a patch which makes the change I suggested.  What are your thought
 archive/issue_comments_032534.json:
 ```json
 {
-    "body": "Attachment [sqrt-nonsymbolic-1.patch](tarball://root/attachments/some-uuid/ticket4425/sqrt-nonsymbolic-1.patch) by kcrisman created at 2008-11-06 14:17:14",
+    "body": "Attachment [sqrt-nonsymbolic-1.patch](tarball://root/attachments/some-uuid/ticket4425/sqrt-nonsymbolic-1.patch) by @kcrisman created at 2008-11-06 14:17:14",
     "created_at": "2008-11-06T14:17:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4425#issuecomment-32534",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [sqrt-nonsymbolic-1.patch](tarball://root/attachments/some-uuid/ticket4425/sqrt-nonsymbolic-1.patch) by kcrisman created at 2008-11-06 14:17:14
+Attachment [sqrt-nonsymbolic-1.patch](tarball://root/attachments/some-uuid/ticket4425/sqrt-nonsymbolic-1.patch) by @kcrisman created at 2008-11-06 14:17:14
 
 
 
@@ -179,7 +179,7 @@ archive/issue_comments_032535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4425#issuecomment-32535",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_032536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4425#issuecomment-32536",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -216,16 +216,16 @@ The original patch sqrt-nonsymbolic-1.patch and that patch plus the attached fol
 archive/issue_comments_032537.json:
 ```json
 {
-    "body": "Attachment [sqrt-nonsymbolic-2.patch](tarball://root/attachments/some-uuid/ticket4425/sqrt-nonsymbolic-2.patch) by was created at 2008-11-06 19:50:07\n\nmabshoff -- apply this and sqrt-nonsymbolic-1.patch; don't apply anything else",
+    "body": "Attachment [sqrt-nonsymbolic-2.patch](tarball://root/attachments/some-uuid/ticket4425/sqrt-nonsymbolic-2.patch) by @williamstein created at 2008-11-06 19:50:07\n\nmabshoff -- apply this and sqrt-nonsymbolic-1.patch; don't apply anything else",
     "created_at": "2008-11-06T19:50:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4425#issuecomment-32537",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sqrt-nonsymbolic-2.patch](tarball://root/attachments/some-uuid/ticket4425/sqrt-nonsymbolic-2.patch) by was created at 2008-11-06 19:50:07
+Attachment [sqrt-nonsymbolic-2.patch](tarball://root/attachments/some-uuid/ticket4425/sqrt-nonsymbolic-2.patch) by @williamstein created at 2008-11-06 19:50:07
 
 mabshoff -- apply this and sqrt-nonsymbolic-1.patch; don't apply anything else
 
@@ -241,7 +241,7 @@ archive/issue_comments_032538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4425#issuecomment-32538",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

@@ -85,7 +85,7 @@ archive/issue_comments_021994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3175",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3175#issuecomment-21994",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

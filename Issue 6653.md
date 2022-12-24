@@ -3,7 +3,7 @@
 archive/issues_006653.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  schilly\n\nThe top-level `index.html` for Sage documentation now includes links to the corresponding PDF files (cf. #4460).  However, it can be useful to suppress these links.  Building on #6187, this ticket adds an option `--no-pdf-links` to `sage -docbuild`.\n\nSee #4460 for some history and an earlier version.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6653\n\n",
+    "body": "Assignee: tba\n\nCC:  @haraldschilly\n\nThe top-level `index.html` for Sage documentation now includes links to the corresponding PDF files (cf. #4460).  However, it can be useful to suppress these links.  Building on #6187, this ticket adds an option `--no-pdf-links` to `sage -docbuild`.\n\nSee #4460 for some history and an earlier version.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6653\n\n",
     "created_at": "2009-07-29T08:39:16Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_006653.json:
     "title": "Add --no-pdf-links option for doc/html/index.html builder.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6653",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: tba
 
-CC:  schilly
+CC:  @haraldschilly
 
 The top-level `index.html` for Sage documentation now includes links to the corresponding PDF files (cf. #4460).  However, it can be useful to suppress these links.  Building on #6187, this ticket adds an option `--no-pdf-links` to `sage -docbuild`.
 
@@ -41,7 +41,7 @@ archive/issue_comments_054608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6653#issuecomment-54608",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -54,16 +54,16 @@ Depends on #6187.
 archive/issue_comments_054609.json:
 ```json
 {
-    "body": "Attachment [trac_6653-no_pdf_links.patch](tarball://root/attachments/some-uuid/ticket6653/trac_6653-no_pdf_links.patch) by mpatel created at 2009-08-11 03:15:28",
+    "body": "Attachment [trac_6653-no_pdf_links.patch](tarball://root/attachments/some-uuid/ticket6653/trac_6653-no_pdf_links.patch) by @qed777 created at 2009-08-11 03:15:28",
     "created_at": "2009-08-11T03:15:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6653#issuecomment-54609",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6653-no_pdf_links.patch](tarball://root/attachments/some-uuid/ticket6653/trac_6653-no_pdf_links.patch) by mpatel created at 2009-08-11 03:15:28
+Attachment [trac_6653-no_pdf_links.patch](tarball://root/attachments/some-uuid/ticket6653/trac_6653-no_pdf_links.patch) by @qed777 created at 2009-08-11 03:15:28
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_054610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6653#issuecomment-54610",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_054611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6653#issuecomment-54611",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_054612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6653#issuecomment-54612",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_004102.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  jason kcrisman benjaminfjones dsm burcin eviatarbach\n\nThe motivation for this is\n\n\n```\nsage: plot(bessel_J(1, x), (x, 1, 10))\nTraceback (most recent call last):\n...\nTypeError: Unable to convert x (='1-1/8*x^2+1/192*x^4-1/9216*x^6+1/737280*x^8-1/88473600*x^10+1/14863564800*x^12-1/3329438515200*x^14+1/958878292377600*x^16+O(x^17)') to real number.\n```\n\n\nThe problem is that special functions, or at least `bessel_J`, can't currently be partially evaluated--that is, called with a `SymbolicExpression` as an argument.  The model of good behavior is `polylog`, for which the above method produces a perfectly nice plot\n\n\n```\nsage: polylog(1,x),(x,.1,.9) #makes a fine plot\n```\n\n\nSee discussion at http://groups.google.com/group/sage-support/browse_thread/thread/1b985b080ba2369e/7dee9eed953857f5#7dee9eed953857f5\n\nIssue created by migration from https://trac.sagemath.org/ticket/4102\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @jasongrout @kcrisman @benjaminfjones dsm @burcin @eviatarbach\n\nThe motivation for this is\n\n\n```\nsage: plot(bessel_J(1, x), (x, 1, 10))\nTraceback (most recent call last):\n...\nTypeError: Unable to convert x (='1-1/8*x^2+1/192*x^4-1/9216*x^6+1/737280*x^8-1/88473600*x^10+1/14863564800*x^12-1/3329438515200*x^14+1/958878292377600*x^16+O(x^17)') to real number.\n```\n\n\nThe problem is that special functions, or at least `bessel_J`, can't currently be partially evaluated--that is, called with a `SymbolicExpression` as an argument.  The model of good behavior is `polylog`, for which the above method produces a perfectly nice plot\n\n\n```\nsage: polylog(1,x),(x,.1,.9) #makes a fine plot\n```\n\n\nSee discussion at http://groups.google.com/group/sage-support/browse_thread/thread/1b985b080ba2369e/7dee9eed953857f5#7dee9eed953857f5\n\nIssue created by migration from https://trac.sagemath.org/ticket/4102\n\n",
     "created_at": "2008-09-12T01:06:09Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_004102.json:
     "title": "Make special functions behave like PrimitiveFunction",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4102",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  jason kcrisman benjaminfjones dsm burcin eviatarbach
+CC:  @jasongrout @kcrisman @benjaminfjones dsm @burcin @eviatarbach
 
 The motivation for this is
 
@@ -58,7 +58,7 @@ archive/issue_comments_029598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29598",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_029599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29599",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_029600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29600",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_029601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29601",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_029602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29602",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_029603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29603",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_029604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29604",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_029605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29605",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_029606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29606",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_029607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29607",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_029608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29608",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -314,16 +314,16 @@ work in progress making Bessel functions symbolic
 archive/issue_comments_029609.json:
 ```json
 {
-    "body": "Attachment [trac_symbolic_bessel.metaclass.2.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel.metaclass.2.patch) by kcrisman created at 2012-11-20 01:01:12\n\nNice!  A few comments of the type you solicited:\n* Why `typ` and not `type`?  Some Python reserved thing, maybe?  But it looks like a typ-o to the (quickly reading) end user.\n* I'd like to be able to plot `f(x) = Bessel(0)` but maybe that doesn't make sense?  I guess a variable is necessary... anyway, just throwing it out there.\n* `f = maxima(Bessel(typ='K')(x,y))` turns out great, but does it convert back?  Like `f.derivative('y')` is `-(bessel_k(x+1,y)+bessel_k(x-1,y))/2`, but does it then (when put in the `_sage_` method) go back to \"our\" uppercase Bessel functions?\n* Maybe Python 3 string formatting?  Though I am not sure how to mix that with LaTeX braces.\n* At least some of the error messages should be in doctests, maybe the ones with the wrong type and a non-implemented system.\n* `class_attrs['_conversions'] = {} ` --- what do we do with this in Maxima, then?  Maybe it's better to raise an error; Maxima tends to otherwise just take things as new variables, which could be dangerous.\n* How many of the currently-deleted doctests do you think would be worth preserving in the long run?  Any deprecation needed here?\nAnyway, clearly a lot of planning and looks very promising!",
+    "body": "Attachment [trac_symbolic_bessel.metaclass.2.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel.metaclass.2.patch) by @kcrisman created at 2012-11-20 01:01:12\n\nNice!  A few comments of the type you solicited:\n* Why `typ` and not `type`?  Some Python reserved thing, maybe?  But it looks like a typ-o to the (quickly reading) end user.\n* I'd like to be able to plot `f(x) = Bessel(0)` but maybe that doesn't make sense?  I guess a variable is necessary... anyway, just throwing it out there.\n* `f = maxima(Bessel(typ='K')(x,y))` turns out great, but does it convert back?  Like `f.derivative('y')` is `-(bessel_k(x+1,y)+bessel_k(x-1,y))/2`, but does it then (when put in the `_sage_` method) go back to \"our\" uppercase Bessel functions?\n* Maybe Python 3 string formatting?  Though I am not sure how to mix that with LaTeX braces.\n* At least some of the error messages should be in doctests, maybe the ones with the wrong type and a non-implemented system.\n* `class_attrs['_conversions'] = {} ` --- what do we do with this in Maxima, then?  Maybe it's better to raise an error; Maxima tends to otherwise just take things as new variables, which could be dangerous.\n* How many of the currently-deleted doctests do you think would be worth preserving in the long run?  Any deprecation needed here?\nAnyway, clearly a lot of planning and looks very promising!",
     "created_at": "2012-11-20T01:01:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29609",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_symbolic_bessel.metaclass.2.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel.metaclass.2.patch) by kcrisman created at 2012-11-20 01:01:12
+Attachment [trac_symbolic_bessel.metaclass.2.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel.metaclass.2.patch) by @kcrisman created at 2012-11-20 01:01:12
 
 Nice!  A few comments of the type you solicited:
 * Why `typ` and not `type`?  Some Python reserved thing, maybe?  But it looks like a typ-o to the (quickly reading) end user.
@@ -347,7 +347,7 @@ archive/issue_comments_029610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29610",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -375,7 +375,7 @@ archive/issue_comments_029611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29611",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -426,7 +426,7 @@ archive/issue_comments_029612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29612",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -474,7 +474,7 @@ archive/issue_comments_029613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29613",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -496,7 +496,7 @@ archive/issue_comments_029614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29614",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -533,16 +533,16 @@ sage: m.sage()
 archive/issue_comments_029615.json:
 ```json
 {
-    "body": "Attachment [trac_symbolic_bessel_v2.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v2.patch) by benjaminfjones created at 2012-12-28 01:48:57\n\nmore work in progress",
+    "body": "Attachment [trac_symbolic_bessel_v2.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v2.patch) by @benjaminfjones created at 2012-12-28 01:48:57\n\nmore work in progress",
     "created_at": "2012-12-28T01:48:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29615",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
-Attachment [trac_symbolic_bessel_v2.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v2.patch) by benjaminfjones created at 2012-12-28 01:48:57
+Attachment [trac_symbolic_bessel_v2.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v2.patch) by @benjaminfjones created at 2012-12-28 01:48:57
 
 more work in progress
 
@@ -558,7 +558,7 @@ archive/issue_comments_029616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29616",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -576,7 +576,7 @@ archive/issue_comments_029617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29617",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -594,7 +594,7 @@ archive/issue_comments_029618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29618",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -617,7 +617,7 @@ archive/issue_comments_029619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29619",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -630,16 +630,16 @@ more work in progress, v3
 archive/issue_comments_029620.json:
 ```json
 {
-    "body": "Attachment [trac_symbolic_bessel_v3.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v3.patch) by kcrisman created at 2013-02-08 17:36:59\n\nDumb comments since I don't have time for proper review - and more importantly, there are no obvious horrible things (though I haven't gone in depth with branches yet).   If all this really works and there are no typos, I think this will be a VERY nice addition.\n* `unqiue` typo\n* `Verfify` typo\n* `increasin` typo\n* I don't know why, but the math following \"It follows from Bessel's...\" doesn't look right in the doc (the `:math:` directive is not parsed)\n* Is \\operatorname{bessel\\_I}(\\alpha, x) standard or should we just just the I sub whatever?\n* ``test_relation()`` needs to be in double back ticks or have a link to the appropriate place in the ref manual\n* Trac tickets should use `:trac:` syntax\n* Does `f(x) = Bessel(0): plot(f, (x, 1, 10))` work, or must one use `Bessel(0)(x)`?  The example after that makes it look like maybe not...\n* Bessel Y and Bessel K need a little filling out - and one of the `:math:` directives doesn't show up at all, the other isn't parsed right for some reason again\n* I'd personally get rid of the whitespace changes in sage/functions/special.py - unlikely to have an effect, but not really necessary.\n* How should we deal with the removal of the `\"maxima\"` and `\"pari\"` arguments?  I'm not sure if it's really feasible to have a deprecation period for that, but we should discuss it.\n* I suppose we don't need to keep *all* old tests, but some of them are rather different and might be worth putting in a TESTS section somewhere, just so that we don't have some unexpected regression only they catch.\n* The switch to alpha from nu - I would rather not deprecate this either, but in principle someone could have used it as a keyword argument in the past...",
+    "body": "Attachment [trac_symbolic_bessel_v3.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v3.patch) by @kcrisman created at 2013-02-08 17:36:59\n\nDumb comments since I don't have time for proper review - and more importantly, there are no obvious horrible things (though I haven't gone in depth with branches yet).   If all this really works and there are no typos, I think this will be a VERY nice addition.\n* `unqiue` typo\n* `Verfify` typo\n* `increasin` typo\n* I don't know why, but the math following \"It follows from Bessel's...\" doesn't look right in the doc (the `:math:` directive is not parsed)\n* Is \\operatorname{bessel\\_I}(\\alpha, x) standard or should we just just the I sub whatever?\n* ``test_relation()`` needs to be in double back ticks or have a link to the appropriate place in the ref manual\n* Trac tickets should use `:trac:` syntax\n* Does `f(x) = Bessel(0): plot(f, (x, 1, 10))` work, or must one use `Bessel(0)(x)`?  The example after that makes it look like maybe not...\n* Bessel Y and Bessel K need a little filling out - and one of the `:math:` directives doesn't show up at all, the other isn't parsed right for some reason again\n* I'd personally get rid of the whitespace changes in sage/functions/special.py - unlikely to have an effect, but not really necessary.\n* How should we deal with the removal of the `\"maxima\"` and `\"pari\"` arguments?  I'm not sure if it's really feasible to have a deprecation period for that, but we should discuss it.\n* I suppose we don't need to keep *all* old tests, but some of them are rather different and might be worth putting in a TESTS section somewhere, just so that we don't have some unexpected regression only they catch.\n* The switch to alpha from nu - I would rather not deprecate this either, but in principle someone could have used it as a keyword argument in the past...",
     "created_at": "2013-02-08T17:36:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29620",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_symbolic_bessel_v3.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v3.patch) by kcrisman created at 2013-02-08 17:36:59
+Attachment [trac_symbolic_bessel_v3.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v3.patch) by @kcrisman created at 2013-02-08 17:36:59
 
 Dumb comments since I don't have time for proper review - and more importantly, there are no obvious horrible things (though I haven't gone in depth with branches yet).   If all this really works and there are no typos, I think this will be a VERY nice addition.
 * `unqiue` typo
@@ -668,7 +668,7 @@ archive/issue_comments_029621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29621",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -686,7 +686,7 @@ archive/issue_comments_029622.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29622",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -782,7 +782,7 @@ archive/issue_comments_029623.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29623",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -805,7 +805,7 @@ archive/issue_comments_029624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29624",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -823,7 +823,7 @@ archive/issue_comments_029625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29625",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -890,16 +890,16 @@ It doesn't make a difference to me, I used alpha because that's what's on the wi
 archive/issue_comments_029626.json:
 ```json
 {
-    "body": "Attachment [trac_symbolic_bessel_doctests.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_doctests.patch) by benjaminfjones created at 2013-03-12 20:47:19\n\nfix doctests and tutorial references involving Bessel function API",
+    "body": "Attachment [trac_symbolic_bessel_doctests.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_doctests.patch) by @benjaminfjones created at 2013-03-12 20:47:19\n\nfix doctests and tutorial references involving Bessel function API",
     "created_at": "2013-03-12T20:47:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29626",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
-Attachment [trac_symbolic_bessel_doctests.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_doctests.patch) by benjaminfjones created at 2013-03-12 20:47:19
+Attachment [trac_symbolic_bessel_doctests.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_doctests.patch) by @benjaminfjones created at 2013-03-12 20:47:19
 
 fix doctests and tutorial references involving Bessel function API
 
@@ -915,7 +915,7 @@ archive/issue_comments_029627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29627",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -933,7 +933,7 @@ archive/issue_comments_029628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29628",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -955,7 +955,7 @@ archive/issue_comments_029629.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29629",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -979,7 +979,7 @@ archive/issue_comments_029630.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29630",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1005,7 +1005,7 @@ archive/issue_comments_029631.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29631",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1037,7 +1037,7 @@ archive/issue_comments_029632.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29632",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1057,7 +1057,7 @@ archive/issue_comments_029633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29633",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1075,7 +1075,7 @@ archive/issue_comments_029634.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29634",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1095,7 +1095,7 @@ archive/issue_comments_029635.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29635",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1113,7 +1113,7 @@ archive/issue_comments_029636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29636",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1137,7 +1137,7 @@ archive/issue_comments_029637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29637",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1157,7 +1157,7 @@ archive/issue_comments_029638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29638",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1177,7 +1177,7 @@ archive/issue_comments_029639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29639",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1190,16 +1190,16 @@ add deprecation of old API
 archive/issue_comments_029640.json:
 ```json
 {
-    "body": "Attachment [trac_symbolic_bessel_v5.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v5.patch) by benjaminfjones created at 2013-03-28 00:08:11\n\nlatest symbolic Bessel functions patch, ready for review",
+    "body": "Attachment [trac_symbolic_bessel_v5.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v5.patch) by @benjaminfjones created at 2013-03-28 00:08:11\n\nlatest symbolic Bessel functions patch, ready for review",
     "created_at": "2013-03-28T00:08:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29640",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
-Attachment [trac_symbolic_bessel_v5.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v5.patch) by benjaminfjones created at 2013-03-28 00:08:11
+Attachment [trac_symbolic_bessel_v5.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v5.patch) by @benjaminfjones created at 2013-03-28 00:08:11
 
 latest symbolic Bessel functions patch, ready for review
 
@@ -1215,7 +1215,7 @@ archive/issue_comments_029641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29641",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1233,7 +1233,7 @@ archive/issue_comments_029642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29642",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1251,7 +1251,7 @@ archive/issue_comments_029643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29643",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1269,7 +1269,7 @@ archive/issue_comments_029644.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29644",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1323,7 +1323,7 @@ archive/issue_comments_029645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29645",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1389,7 +1389,7 @@ archive/issue_comments_029646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29646",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1409,7 +1409,7 @@ archive/issue_comments_029647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29647",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1427,7 +1427,7 @@ archive/issue_comments_029648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29648",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1455,7 +1455,7 @@ archive/issue_comments_029649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29649",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1510,7 +1510,7 @@ archive/issue_comments_029650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29650",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1530,7 +1530,7 @@ archive/issue_comments_029651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29651",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1548,7 +1548,7 @@ archive/issue_comments_029652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29652",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1561,16 +1561,16 @@ Copy of trac_symbolic_bessel_v5, minus one doctest block
 archive/issue_comments_029653.json:
 ```json
 {
-    "body": "Attachment [trac_symbolic_bessel_v6.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v6.patch) by benjaminfjones created at 2013-05-20 23:23:06\n\nCopy of trac_symbolic_bessel_v5, minus one doctest block",
+    "body": "Attachment [trac_symbolic_bessel_v6.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v6.patch) by @benjaminfjones created at 2013-05-20 23:23:06\n\nCopy of trac_symbolic_bessel_v5, minus one doctest block",
     "created_at": "2013-05-20T23:23:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29653",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
-Attachment [trac_symbolic_bessel_v6.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v6.patch) by benjaminfjones created at 2013-05-20 23:23:06
+Attachment [trac_symbolic_bessel_v6.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v6.patch) by @benjaminfjones created at 2013-05-20 23:23:06
 
 Copy of trac_symbolic_bessel_v5, minus one doctest block
 
@@ -1586,7 +1586,7 @@ archive/issue_comments_029654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29654",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1614,7 +1614,7 @@ archive/issue_comments_029655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29655",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1632,7 +1632,7 @@ archive/issue_comments_029656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29656",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -1660,7 +1660,7 @@ archive/issue_comments_029657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29657",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1684,7 +1684,7 @@ archive/issue_comments_029658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29658",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1713,7 +1713,7 @@ archive/issue_comments_029659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29659",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1737,7 +1737,7 @@ archive/issue_comments_029660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29660",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1763,7 +1763,7 @@ archive/issue_comments_029661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29661",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1781,7 +1781,7 @@ archive/issue_comments_029662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29662",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1799,7 +1799,7 @@ archive/issue_comments_029663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29663",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1817,7 +1817,7 @@ archive/issue_comments_029664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29664",
-    "user": "eviatarbach"
+    "user": "@eviatarbach"
 }
 ```
 
@@ -1835,7 +1835,7 @@ archive/issue_comments_029665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29665",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1853,7 +1853,7 @@ archive/issue_comments_029666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29666",
-    "user": "eviatarbach"
+    "user": "@eviatarbach"
 }
 ```
 
@@ -1871,7 +1871,7 @@ archive/issue_comments_029667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29667",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1884,16 +1884,16 @@ adds bessel.py, lazy imports in all.py
 archive/issue_comments_029668.json:
 ```json
 {
-    "body": "Attachment [trac_symbolic_bessel_v7.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v7.patch) by benjaminfjones created at 2013-06-15 05:26:15\n\nfixes/updates doctests external to sage/functions/bessel.py",
+    "body": "Attachment [trac_symbolic_bessel_v7.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v7.patch) by @benjaminfjones created at 2013-06-15 05:26:15\n\nfixes/updates doctests external to sage/functions/bessel.py",
     "created_at": "2013-06-15T05:26:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29668",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
-Attachment [trac_symbolic_bessel_v7.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v7.patch) by benjaminfjones created at 2013-06-15 05:26:15
+Attachment [trac_symbolic_bessel_v7.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v7.patch) by @benjaminfjones created at 2013-06-15 05:26:15
 
 fixes/updates doctests external to sage/functions/bessel.py
 
@@ -1909,7 +1909,7 @@ archive/issue_comments_029669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29669",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1922,16 +1922,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_029670.json:
 ```json
 {
-    "body": "Attachment [trac_symbolic_bessel_v7-doctests.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v7-doctests.patch) by benjaminfjones created at 2013-06-15 05:33:06\n\nOK, uploaded two new patches which:\n1. address the problem raised in comment:41, solution is to replace construction of a new `MaximaFunction` object (which alters the symbol table) to construcing and evaluating the function directly inside Maxima using `maxima.function()`.\n2. change Bessel imports in `sage/functions/all.py` to lazy imports\n\nDoctests in all the touched files pass, I'll wait for the patchbot to see about the rest.\n\nHope y'all at Sage Days have a chance to review the patches.\n\n---- \n\nPatchbot, apply trac_symbolic_bessel_v7.patch trac_symbolic_bessel_v7-doctests.patch",
+    "body": "Attachment [trac_symbolic_bessel_v7-doctests.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v7-doctests.patch) by @benjaminfjones created at 2013-06-15 05:33:06\n\nOK, uploaded two new patches which:\n1. address the problem raised in comment:41, solution is to replace construction of a new `MaximaFunction` object (which alters the symbol table) to construcing and evaluating the function directly inside Maxima using `maxima.function()`.\n2. change Bessel imports in `sage/functions/all.py` to lazy imports\n\nDoctests in all the touched files pass, I'll wait for the patchbot to see about the rest.\n\nHope y'all at Sage Days have a chance to review the patches.\n\n---- \n\nPatchbot, apply trac_symbolic_bessel_v7.patch trac_symbolic_bessel_v7-doctests.patch",
     "created_at": "2013-06-15T05:33:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29670",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
-Attachment [trac_symbolic_bessel_v7-doctests.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v7-doctests.patch) by benjaminfjones created at 2013-06-15 05:33:06
+Attachment [trac_symbolic_bessel_v7-doctests.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v7-doctests.patch) by @benjaminfjones created at 2013-06-15 05:33:06
 
 OK, uploaded two new patches which:
 1. address the problem raised in comment:41, solution is to replace construction of a new `MaximaFunction` object (which alters the symbol table) to construcing and evaluating the function directly inside Maxima using `maxima.function()`.
@@ -1957,7 +1957,7 @@ archive/issue_comments_029671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29671",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1975,7 +1975,7 @@ archive/issue_comments_029672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29672",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1993,7 +1993,7 @@ archive/issue_comments_029673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29673",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -2017,7 +2017,7 @@ archive/issue_comments_029674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29674",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -2030,16 +2030,16 @@ I think my preference would be to put 'lazy import symbolic functions' off to an
 archive/issue_comments_029675.json:
 ```json
 {
-    "body": "Attachment [trac_symbolic_bessel_v7.2.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v7.2.patch) by benjaminfjones created at 2013-06-16 01:21:59",
+    "body": "Attachment [trac_symbolic_bessel_v7.2.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v7.2.patch) by @benjaminfjones created at 2013-06-16 01:21:59",
     "created_at": "2013-06-16T01:21:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29675",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
-Attachment [trac_symbolic_bessel_v7.2.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v7.2.patch) by benjaminfjones created at 2013-06-16 01:21:59
+Attachment [trac_symbolic_bessel_v7.2.patch](tarball://root/attachments/some-uuid/ticket4102/trac_symbolic_bessel_v7.2.patch) by @benjaminfjones created at 2013-06-16 01:21:59
 
 
 
@@ -2053,7 +2053,7 @@ archive/issue_comments_029676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29676",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -2071,7 +2071,7 @@ archive/issue_comments_029677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29677",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -2095,7 +2095,7 @@ archive/issue_comments_029678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29678",
-    "user": "eviatarbach"
+    "user": "@eviatarbach"
 }
 ```
 
@@ -2115,7 +2115,7 @@ archive/issue_comments_029679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29679",
-    "user": "eviatarbach"
+    "user": "@eviatarbach"
 }
 ```
 
@@ -2136,16 +2136,16 @@ Looks good otherwise!
 archive/issue_comments_029680.json:
 ```json
 {
-    "body": "Attachment [bessel_2.patch](tarball://root/attachments/some-uuid/ticket4102/bessel_2.patch) by eviatarbach created at 2013-06-17 21:36:06",
+    "body": "Attachment [bessel_2.patch](tarball://root/attachments/some-uuid/ticket4102/bessel_2.patch) by @eviatarbach created at 2013-06-17 21:36:06",
     "created_at": "2013-06-17T21:36:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29680",
-    "user": "eviatarbach"
+    "user": "@eviatarbach"
 }
 ```
 
-Attachment [bessel_2.patch](tarball://root/attachments/some-uuid/ticket4102/bessel_2.patch) by eviatarbach created at 2013-06-17 21:36:06
+Attachment [bessel_2.patch](tarball://root/attachments/some-uuid/ticket4102/bessel_2.patch) by @eviatarbach created at 2013-06-17 21:36:06
 
 
 
@@ -2159,7 +2159,7 @@ archive/issue_comments_029681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29681",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -2181,7 +2181,7 @@ archive/issue_comments_029682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29682",
-    "user": "eviatarbach"
+    "user": "@eviatarbach"
 }
 ```
 
@@ -2198,16 +2198,16 @@ Patchbot apply trac_symbolic_bessel_v7.2.patch trac_symbolic_bessel_v7-doctests.
 archive/issue_comments_029683.json:
 ```json
 {
-    "body": "Attachment [bessel_2.2.patch](tarball://root/attachments/some-uuid/ticket4102/bessel_2.2.patch) by eviatarbach created at 2013-06-17 22:34:01",
+    "body": "Attachment [bessel_2.2.patch](tarball://root/attachments/some-uuid/ticket4102/bessel_2.2.patch) by @eviatarbach created at 2013-06-17 22:34:01",
     "created_at": "2013-06-17T22:34:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29683",
-    "user": "eviatarbach"
+    "user": "@eviatarbach"
 }
 ```
 
-Attachment [bessel_2.2.patch](tarball://root/attachments/some-uuid/ticket4102/bessel_2.2.patch) by eviatarbach created at 2013-06-17 22:34:01
+Attachment [bessel_2.2.patch](tarball://root/attachments/some-uuid/ticket4102/bessel_2.2.patch) by @eviatarbach created at 2013-06-17 22:34:01
 
 
 
@@ -2221,7 +2221,7 @@ archive/issue_comments_029684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29684",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -2239,7 +2239,7 @@ archive/issue_comments_029685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29685",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -2257,7 +2257,7 @@ archive/issue_comments_029686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29686",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2277,7 +2277,7 @@ archive/issue_comments_029687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29687",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2295,7 +2295,7 @@ archive/issue_comments_029688.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29688",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2313,7 +2313,7 @@ archive/issue_comments_029689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29689",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2331,7 +2331,7 @@ archive/issue_comments_029690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29690",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2380,7 +2380,7 @@ archive/issue_comments_029691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29691",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2398,7 +2398,7 @@ archive/issue_comments_029692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29692",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2411,16 +2411,16 @@ Perhaps this is due to #9880.
 archive/issue_comments_029693.json:
 ```json
 {
-    "body": "Attachment [trac_4102-bessel_doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket4102/trac_4102-bessel_doctest_fixes.patch) by burcin created at 2013-06-19 14:43:46",
+    "body": "Attachment [trac_4102-bessel_doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket4102/trac_4102-bessel_doctest_fixes.patch) by @burcin created at 2013-06-19 14:43:46",
     "created_at": "2013-06-19T14:43:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29693",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_4102-bessel_doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket4102/trac_4102-bessel_doctest_fixes.patch) by burcin created at 2013-06-19 14:43:46
+Attachment [trac_4102-bessel_doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket4102/trac_4102-bessel_doctest_fixes.patch) by @burcin created at 2013-06-19 14:43:46
 
 
 
@@ -2434,7 +2434,7 @@ archive/issue_comments_029694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29694",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -2452,7 +2452,7 @@ archive/issue_comments_029695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29695",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -2470,7 +2470,7 @@ archive/issue_comments_029696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29696",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2488,7 +2488,7 @@ archive/issue_comments_029697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29697",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2506,7 +2506,7 @@ archive/issue_comments_029698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29698",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2524,7 +2524,7 @@ archive/issue_comments_029699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29699",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2551,16 +2551,16 @@ Got:
 archive/issue_comments_029700.json:
 ```json
 {
-    "body": "Attachment [trac_4102-bessel_doctest_fixes2.patch](tarball://root/attachments/some-uuid/ticket4102/trac_4102-bessel_doctest_fixes2.patch) by eviatarbach created at 2013-06-20 20:17:30\n\nNew patch, adding a tolerance for the integral which is higher than the maximum error given by GSL.",
+    "body": "Attachment [trac_4102-bessel_doctest_fixes2.patch](tarball://root/attachments/some-uuid/ticket4102/trac_4102-bessel_doctest_fixes2.patch) by @eviatarbach created at 2013-06-20 20:17:30\n\nNew patch, adding a tolerance for the integral which is higher than the maximum error given by GSL.",
     "created_at": "2013-06-20T20:17:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29700",
-    "user": "eviatarbach"
+    "user": "@eviatarbach"
 }
 ```
 
-Attachment [trac_4102-bessel_doctest_fixes2.patch](tarball://root/attachments/some-uuid/ticket4102/trac_4102-bessel_doctest_fixes2.patch) by eviatarbach created at 2013-06-20 20:17:30
+Attachment [trac_4102-bessel_doctest_fixes2.patch](tarball://root/attachments/some-uuid/ticket4102/trac_4102-bessel_doctest_fixes2.patch) by @eviatarbach created at 2013-06-20 20:17:30
 
 New patch, adding a tolerance for the integral which is higher than the maximum error given by GSL.
 
@@ -2576,7 +2576,7 @@ archive/issue_comments_029701.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29701",
-    "user": "eviatarbach"
+    "user": "@eviatarbach"
 }
 ```
 
@@ -2594,7 +2594,7 @@ archive/issue_comments_029702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29702",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -2612,7 +2612,7 @@ archive/issue_comments_029703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29703",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -2630,7 +2630,7 @@ archive/issue_comments_029704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29704",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2648,7 +2648,7 @@ archive/issue_comments_029705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29705",
-    "user": "eviatarbach"
+    "user": "@eviatarbach"
 }
 ```
 
@@ -2672,16 +2672,16 @@ sage: bessel_J(nu, z).diff(z)
 archive/issue_comments_029706.json:
 ```json
 {
-    "body": "Attachment [trac4102_diff.patch](tarball://root/attachments/some-uuid/ticket4102/trac4102_diff.patch) by eviatarbach created at 2013-08-07 06:38:34",
+    "body": "Attachment [trac4102_diff.patch](tarball://root/attachments/some-uuid/ticket4102/trac4102_diff.patch) by @eviatarbach created at 2013-08-07 06:38:34",
     "created_at": "2013-08-07T06:38:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29706",
-    "user": "eviatarbach"
+    "user": "@eviatarbach"
 }
 ```
 
-Attachment [trac4102_diff.patch](tarball://root/attachments/some-uuid/ticket4102/trac4102_diff.patch) by eviatarbach created at 2013-08-07 06:38:34
+Attachment [trac4102_diff.patch](tarball://root/attachments/some-uuid/ticket4102/trac4102_diff.patch) by @eviatarbach created at 2013-08-07 06:38:34
 
 
 
@@ -2695,7 +2695,7 @@ archive/issue_comments_029707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29707",
-    "user": "eviatarbach"
+    "user": "@eviatarbach"
 }
 ```
 
@@ -2713,7 +2713,7 @@ archive/issue_comments_029708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29708",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2733,7 +2733,7 @@ archive/issue_comments_029709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29709",
-    "user": "eviatarbach"
+    "user": "@eviatarbach"
 }
 ```
 
@@ -2751,7 +2751,7 @@ archive/issue_comments_029710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29710",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2771,7 +2771,7 @@ archive/issue_comments_029711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29711",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2789,7 +2789,7 @@ archive/issue_comments_029712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4102#issuecomment-29712",
-    "user": "eviatarbach"
+    "user": "@eviatarbach"
 }
 ```
 

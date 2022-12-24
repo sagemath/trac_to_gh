@@ -88,16 +88,16 @@ This is so ancient, feel free to completely rewrite the description.
 archive/issue_comments_006116.json:
 ```json
 {
-    "body": "Attachment [trac1004_cobweb.patch](tarball://root/attachments/some-uuid/ticket1004/trac1004_cobweb.patch) by chapoton created at 2013-08-21 17:09:22\n\nrefreshed as a patch",
+    "body": "Attachment [trac1004_cobweb.patch](tarball://root/attachments/some-uuid/ticket1004/trac1004_cobweb.patch) by @fchapoton created at 2013-08-21 17:09:22\n\nrefreshed as a patch",
     "created_at": "2013-08-21T17:09:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1004#issuecomment-6116",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac1004_cobweb.patch](tarball://root/attachments/some-uuid/ticket1004/trac1004_cobweb.patch) by chapoton created at 2013-08-21 17:09:22
+Attachment [trac1004_cobweb.patch](tarball://root/attachments/some-uuid/ticket1004/trac1004_cobweb.patch) by @fchapoton created at 2013-08-21 17:09:22
 
 refreshed as a patch
 
@@ -113,7 +113,7 @@ archive/issue_comments_006117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1004#issuecomment-6117",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_006118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1004#issuecomment-6118",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

@@ -13,7 +13,7 @@ archive/issues_000344.json:
     "title": "pari compare fails for some finite field elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/344",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: somebody
@@ -72,7 +72,7 @@ archive/issue_comments_001677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/344#issuecomment-1677",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_001678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/344#issuecomment-1678",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_001679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/344#issuecomment-1679",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

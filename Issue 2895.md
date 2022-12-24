@@ -14,7 +14,7 @@ archive/issues_002895.json:
     "title": "[with patch, needs review] add support for Laurent polynomials in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2895",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: somebody
@@ -80,7 +80,7 @@ archive/issue_comments_019914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2895",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2895#issuecomment-19914",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_019915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2895",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2895#issuecomment-19915",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_019916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2895",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2895#issuecomment-19916",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_019917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2895",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2895#issuecomment-19917",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -193,16 +193,16 @@ But the parent quotient ring has no method _print_element.
 archive/issue_comments_019918.json:
 ```json
 {
-    "body": "Attachment [2895-2.patch](tarball://root/attachments/some-uuid/ticket2895/2895-2.patch) by mhansen created at 2008-04-18 05:38:22",
+    "body": "Attachment [2895-2.patch](tarball://root/attachments/some-uuid/ticket2895/2895-2.patch) by @mwhansen created at 2008-04-18 05:38:22",
     "created_at": "2008-04-18T05:38:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2895",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2895#issuecomment-19918",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2895-2.patch](tarball://root/attachments/some-uuid/ticket2895/2895-2.patch) by mhansen created at 2008-04-18 05:38:22
+Attachment [2895-2.patch](tarball://root/attachments/some-uuid/ticket2895/2895-2.patch) by @mwhansen created at 2008-04-18 05:38:22
 
 
 
@@ -216,7 +216,7 @@ archive/issue_comments_019919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2895",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2895#issuecomment-19919",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_019921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2895",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2895#issuecomment-19921",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -281,16 +281,16 @@ I recommend acceptance.
 archive/issue_comments_019922.json:
 ```json
 {
-    "body": "Attachment [2895-subs.patch](tarball://root/attachments/some-uuid/ticket2895/2895-subs.patch) by mhansen created at 2008-04-18 18:55:05",
+    "body": "Attachment [2895-subs.patch](tarball://root/attachments/some-uuid/ticket2895/2895-subs.patch) by @mwhansen created at 2008-04-18 18:55:05",
     "created_at": "2008-04-18T18:55:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2895",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2895#issuecomment-19922",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2895-subs.patch](tarball://root/attachments/some-uuid/ticket2895/2895-subs.patch) by mhansen created at 2008-04-18 18:55:05
+Attachment [2895-subs.patch](tarball://root/attachments/some-uuid/ticket2895/2895-subs.patch) by @mwhansen created at 2008-04-18 18:55:05
 
 
 
@@ -304,7 +304,7 @@ archive/issue_comments_019923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2895",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2895#issuecomment-19923",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -322,7 +322,7 @@ archive/issue_comments_019924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2895",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2895#issuecomment-19924",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -335,16 +335,16 @@ I've added a patch which makes .substitute() work and .subs() work with dictiona
 archive/issue_comments_019925.json:
 ```json
 {
-    "body": "Changing assignee from somebody to mhansen.",
+    "body": "Changing assignee from somebody to @mwhansen.",
     "created_at": "2008-04-18T18:56:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2895",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2895#issuecomment-19925",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from somebody to mhansen.
+Changing assignee from somebody to @mwhansen.
 
 
 
@@ -358,7 +358,7 @@ archive/issue_comments_019926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2895",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2895#issuecomment-19926",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -386,7 +386,7 @@ archive/issue_comments_019927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2895",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2895#issuecomment-19927",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

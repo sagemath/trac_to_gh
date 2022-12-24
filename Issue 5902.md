@@ -14,7 +14,7 @@ archive/issues_005902.json:
     "title": "[with patch, needs review] Try SAGE_ROOT as base of argument to \"sage -t\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5902",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 Assignee: mabshoff
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5902
 archive/issue_comments_046651.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to mhansen.",
+    "body": "Changing assignee from mabshoff to @mwhansen.",
     "created_at": "2009-06-20T01:57:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5902#issuecomment-46651",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from mabshoff to mhansen.
+Changing assignee from mabshoff to @mwhansen.
 
 
 
@@ -63,7 +63,7 @@ archive/issue_comments_046652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5902#issuecomment-46652",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -76,16 +76,16 @@ Changing status from new to assigned.
 archive/issue_comments_046653.json:
 ```json
 {
-    "body": "Attachment [sage_scripts-sage-test-path.patch](tarball://root/attachments/some-uuid/ticket5902/sage_scripts-sage-test-path.patch) by mhansen created at 2009-06-20 01:57:34\n\nLooks good to me!",
+    "body": "Attachment [sage_scripts-sage-test-path.patch](tarball://root/attachments/some-uuid/ticket5902/sage_scripts-sage-test-path.patch) by @mwhansen created at 2009-06-20 01:57:34\n\nLooks good to me!",
     "created_at": "2009-06-20T01:57:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5902#issuecomment-46653",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [sage_scripts-sage-test-path.patch](tarball://root/attachments/some-uuid/ticket5902/sage_scripts-sage-test-path.patch) by mhansen created at 2009-06-20 01:57:34
+Attachment [sage_scripts-sage-test-path.patch](tarball://root/attachments/some-uuid/ticket5902/sage_scripts-sage-test-path.patch) by @mwhansen created at 2009-06-20 01:57:34
 
 Looks good to me!
 
@@ -101,7 +101,7 @@ archive/issue_comments_046654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5902#issuecomment-46654",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_046655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5902#issuecomment-46655",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 

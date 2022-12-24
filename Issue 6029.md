@@ -14,7 +14,7 @@ archive/issues_006029.json:
     "title": "[with patch, needs review] bug in floor() for python types",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6029",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -73,7 +73,7 @@ archive/issue_comments_048006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6029#issuecomment-48006",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_048007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6029#issuecomment-48007",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

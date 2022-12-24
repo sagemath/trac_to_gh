@@ -3,7 +3,7 @@
 archive/issues_004698.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  robertwb was\n\nAll subclasses of `sage.structure.element.Element` end up using `sage.structure.element.make_element` for unpickling. This design is very hard to maintain, especially when trying to keep backward compatibility with older pickles. \n\nPython's pickling protocol via `__getstate__()` and `__setstate__()` moves the implementation of pickling/unpickling to the subclasses. [1] Attached patch changes sage.structure.element.Element to use this protocol.\n\n[1] http://www.python.org/doc/2.5/lib/pickle-inst.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/4698\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @robertwb @williamstein\n\nAll subclasses of `sage.structure.element.Element` end up using `sage.structure.element.make_element` for unpickling. This design is very hard to maintain, especially when trying to keep backward compatibility with older pickles. \n\nPython's pickling protocol via `__getstate__()` and `__setstate__()` moves the implementation of pickling/unpickling to the subclasses. [1] Attached patch changes sage.structure.element.Element to use this protocol.\n\n[1] http://www.python.org/doc/2.5/lib/pickle-inst.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/4698\n\n",
     "created_at": "2008-12-04T23:04:26Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_004698.json:
     "title": "[with patch, needs review] a single make_element function for pickling is hard to maintain",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4698",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  robertwb was
+CC:  @robertwb @williamstein
 
 All subclasses of `sage.structure.element.Element` end up using `sage.structure.element.make_element` for unpickling. This design is very hard to maintain, especially when trying to keep backward compatibility with older pickles. 
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4698
 archive/issue_comments_035391.json:
 ```json
 {
-    "body": "Attachment [trac_4698-pickle.patch](tarball://root/attachments/some-uuid/ticket4698/trac_4698-pickle.patch) by was created at 2008-12-06 22:28:38\n\nI fully doctested this on sage.math and it worked perfectly. \n\nI read the code and it looks good, and like a nice solution.  Bravo.",
+    "body": "Attachment [trac_4698-pickle.patch](tarball://root/attachments/some-uuid/ticket4698/trac_4698-pickle.patch) by @williamstein created at 2008-12-06 22:28:38\n\nI fully doctested this on sage.math and it worked perfectly. \n\nI read the code and it looks good, and like a nice solution.  Bravo.",
     "created_at": "2008-12-06T22:28:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4698#issuecomment-35391",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4698-pickle.patch](tarball://root/attachments/some-uuid/ticket4698/trac_4698-pickle.patch) by was created at 2008-12-06 22:28:38
+Attachment [trac_4698-pickle.patch](tarball://root/attachments/some-uuid/ticket4698/trac_4698-pickle.patch) by @williamstein created at 2008-12-06 22:28:38
 
 I fully doctested this on sage.math and it worked perfectly. 
 

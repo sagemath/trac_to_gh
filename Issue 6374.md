@@ -3,7 +3,7 @@
 archive/issues_006374.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  ncalexan georgsweber\n\nSo on #6234, there was a second patch to fix a race condition that Nick saw during the 4.0.2 release cycle. Someone else just ran into this, and I noticed that the second patch from that ticket somehow didn't make it into Sage. (Oops.)\n\nI'm attaching the patch here, with the same filename -- see #6234 (at the bottom) for an example of the bad behavior and an explanation for the fix. It's already been reviewed at least once, but a second review wouldn't hurt. ;)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6374\n\n",
+    "body": "Assignee: tbd\n\nCC:  @ncalexan georgsweber\n\nSo on #6234, there was a second patch to fix a race condition that Nick saw during the 4.0.2 release cycle. Someone else just ran into this, and I noticed that the second patch from that ticket somehow didn't make it into Sage. (Oops.)\n\nI'm attaching the patch here, with the same filename -- see #6234 (at the bottom) for an example of the bad behavior and an explanation for the fix. It's already been reviewed at least once, but a second review wouldn't hurt. ;)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6374\n\n",
     "created_at": "2009-06-20T20:41:41Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_006374.json:
     "title": "[with patch, needs review] Fix race condition in sage build process",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6374",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 Assignee: tbd
 
-CC:  ncalexan georgsweber
+CC:  @ncalexan georgsweber
 
 So on #6234, there was a second patch to fix a race condition that Nick saw during the 4.0.2 release cycle. Someone else just ran into this, and I noticed that the second patch from that ticket somehow didn't make it into Sage. (Oops.)
 

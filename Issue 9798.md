@@ -3,7 +3,7 @@
 archive/issues_009798.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  leif jdemeyer drkirkby fbissey\n\nThis line in SAGE_ROOT/make\n\n```\ncd spkg && ./install all 2>&1 | tee -a ../install.log\n```\n\nwill *always* return an exit status of 0, even if the build fails miserably.  This leads to much confusion down the line, as explained in this sage-devel post:\n    \n   \nThe fix is probably to do what is described here:\n\n \n      http://www.unix.com/shell-programming-scripting/92163-command-does-not-return-exit-status-due-tee.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/9799\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @nexttime @jdemeyer drkirkby @kiwifb\n\nThis line in SAGE_ROOT/make\n\n```\ncd spkg && ./install all 2>&1 | tee -a ../install.log\n```\n\nwill *always* return an exit status of 0, even if the build fails miserably.  This leads to much confusion down the line, as explained in this sage-devel post:\n    \n   \nThe fix is probably to do what is described here:\n\n \n      http://www.unix.com/shell-programming-scripting/92163-command-does-not-return-exit-status-due-tee.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/9799\n\n",
     "created_at": "2010-08-25T01:01:15Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_009798.json:
     "title": "Running \"make\" in SAGE_ROOT returns the wrong exit code, leading to all kinds of confusion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9798",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: GeorgSWeber
 
-CC:  leif jdemeyer drkirkby fbissey
+CC:  @nexttime @jdemeyer drkirkby @kiwifb
 
 This line in SAGE_ROOT/make
 
@@ -51,7 +51,7 @@ archive/issue_comments_096253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96253",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_096254.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96254",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_096255.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96255",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_096256.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96256",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -132,16 +132,16 @@ Changing status from new to needs_review.
 archive/issue_comments_096257.json:
 ```json
 {
-    "body": "Attachment [makefile.diff](tarball://root/attachments/some-uuid/ticket9799/makefile.diff) by jhpalmieri created at 2010-09-13 05:45:38",
+    "body": "Attachment [makefile.diff](tarball://root/attachments/some-uuid/ticket9799/makefile.diff) by @jhpalmieri created at 2010-09-13 05:45:38",
     "created_at": "2010-09-13T05:45:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96257",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [makefile.diff](tarball://root/attachments/some-uuid/ticket9799/makefile.diff) by jhpalmieri created at 2010-09-13 05:45:38
+Attachment [makefile.diff](tarball://root/attachments/some-uuid/ticket9799/makefile.diff) by @jhpalmieri created at 2010-09-13 05:45:38
 
 
 
@@ -155,7 +155,7 @@ archive/issue_comments_096258.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96258",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -192,16 +192,16 @@ Some changes we should also make:
 archive/issue_comments_096259.json:
 ```json
 {
-    "body": "Attachment [makefile.9799-ll-v2](tarball://root/attachments/some-uuid/ticket9799/makefile.9799-ll-v2) by leif created at 2010-09-13 15:05:32\n\nRevised version of John's Makefile, with many of the other changes I mentioned.",
+    "body": "Attachment [makefile.9799-ll-v2](tarball://root/attachments/some-uuid/ticket9799/makefile.9799-ll-v2) by @nexttime created at 2010-09-13 15:05:32\n\nRevised version of John's Makefile, with many of the other changes I mentioned.",
     "created_at": "2010-09-13T15:05:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96259",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [makefile.9799-ll-v2](tarball://root/attachments/some-uuid/ticket9799/makefile.9799-ll-v2) by leif created at 2010-09-13 15:05:32
+Attachment [makefile.9799-ll-v2](tarball://root/attachments/some-uuid/ticket9799/makefile.9799-ll-v2) by @nexttime created at 2010-09-13 15:05:32
 
 Revised version of John's Makefile, with many of the other changes I mentioned.
 
@@ -217,7 +217,7 @@ archive/issue_comments_096260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96260",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -230,16 +230,16 @@ Diff between John's and my Makefile.
 archive/issue_comments_096261.json:
 ```json
 {
-    "body": "Attachment [makefile.jhp-ll-v2.diff](tarball://root/attachments/some-uuid/ticket9799/makefile.jhp-ll-v2.diff) by leif created at 2010-09-13 15:43:50\n\nI've attached a modified version of John's Makefile, and a corresponding diff.\n\nNot yet *very much* tested, but *should* work... ;-)\n\nCeterum censeo makefile esse renominandum[?] (i.e. **M**akefile)",
+    "body": "Attachment [makefile.jhp-ll-v2.diff](tarball://root/attachments/some-uuid/ticket9799/makefile.jhp-ll-v2.diff) by @nexttime created at 2010-09-13 15:43:50\n\nI've attached a modified version of John's Makefile, and a corresponding diff.\n\nNot yet *very much* tested, but *should* work... ;-)\n\nCeterum censeo makefile esse renominandum[?] (i.e. **M**akefile)",
     "created_at": "2010-09-13T15:43:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96261",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [makefile.jhp-ll-v2.diff](tarball://root/attachments/some-uuid/ticket9799/makefile.jhp-ll-v2.diff) by leif created at 2010-09-13 15:43:50
+Attachment [makefile.jhp-ll-v2.diff](tarball://root/attachments/some-uuid/ticket9799/makefile.jhp-ll-v2.diff) by @nexttime created at 2010-09-13 15:43:50
 
 I've attached a modified version of John's Makefile, and a corresponding diff.
 
@@ -259,7 +259,7 @@ archive/issue_comments_096262.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96262",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_096263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96263",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_096264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96264",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -351,7 +351,7 @@ archive/issue_comments_096265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96265",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -373,7 +373,7 @@ archive/issue_comments_096266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96266",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -391,7 +391,7 @@ archive/issue_comments_096267.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96267",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -414,7 +414,7 @@ archive/issue_comments_096268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96268",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -427,16 +427,16 @@ version 3 of the makefile (or Makefile)
 archive/issue_comments_096269.json:
 ```json
 {
-    "body": "Attachment [makefile.v3.diff](tarball://root/attachments/some-uuid/ticket9799/makefile.v3.diff) by jhpalmieri created at 2010-09-13 19:41:37\n\nDiff between v2 and v3",
+    "body": "Attachment [makefile.v3.diff](tarball://root/attachments/some-uuid/ticket9799/makefile.v3.diff) by @jhpalmieri created at 2010-09-13 19:41:37\n\nDiff between v2 and v3",
     "created_at": "2010-09-13T19:41:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96269",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [makefile.v3.diff](tarball://root/attachments/some-uuid/ticket9799/makefile.v3.diff) by jhpalmieri created at 2010-09-13 19:41:37
+Attachment [makefile.v3.diff](tarball://root/attachments/some-uuid/ticket9799/makefile.v3.diff) by @jhpalmieri created at 2010-09-13 19:41:37
 
 Diff between v2 and v3
 
@@ -452,7 +452,7 @@ archive/issue_comments_096270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96270",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -481,7 +481,7 @@ archive/issue_comments_096271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96271",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -508,7 +508,7 @@ archive/issue_comments_096272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96272",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -526,7 +526,7 @@ archive/issue_comments_096273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96273",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -553,7 +553,7 @@ archive/issue_comments_096274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96274",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -571,7 +571,7 @@ archive/issue_comments_096275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96275",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -589,7 +589,7 @@ archive/issue_comments_096276.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96276",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -602,16 +602,16 @@ Changing keywords from "" to "makefile".
 archive/issue_comments_096277.json:
 ```json
 {
-    "body": "Attachment [9799_makefile.patch](tarball://root/attachments/some-uuid/ticket9799/9799_makefile.patch) by jdemeyer created at 2010-10-19 21:11:02\n\nI have read the patch and it looks okay to me, but perhaps somebody who is more familiar with the Sage build process should have a second look.  I am currently doing a full build from scratch with the new `Makefile` (with capital).  I have a few comments (which you're free to ignore...).\n\nWhy not leave\n\n```\nall: build doc \n```\n\nas it is?  I agree that \"build\" is superfluous, but I think it adds clarity.  It is also more robust in case other parts of the makefile are changed.\n\nthe same for\n\n```\ndoc-html: build # (already) indirectly depends on $(PIPE)\n```\n\n\nAbout the comments: I think it more common to put them outside the make rules, so instead of\n\n```\nbuild:  $(PIPE)\n    @# Note that (currently) \"tee\" will be run in the directory cd'ed to \n    @# in pipestatus' first argument, i.e. \"spkg/\":  \n    $(PIPE) \"cd spkg && ./install all 2>&1\" \"tee -a ../install.log\" \n```\n\nwhy not write\n\n```\n# Note that (currently) \"tee\" will be run in the directory cd'ed to\n# in pipestatus' first argument, i.e. \"spkg/\":\nbuild:  $(PIPE)\n    $(PIPE) \"cd spkg && ./install all 2>&1\" \"tee -a ../install.log\" \n```\n",
+    "body": "Attachment [9799_makefile.patch](tarball://root/attachments/some-uuid/ticket9799/9799_makefile.patch) by @jdemeyer created at 2010-10-19 21:11:02\n\nI have read the patch and it looks okay to me, but perhaps somebody who is more familiar with the Sage build process should have a second look.  I am currently doing a full build from scratch with the new `Makefile` (with capital).  I have a few comments (which you're free to ignore...).\n\nWhy not leave\n\n```\nall: build doc \n```\n\nas it is?  I agree that \"build\" is superfluous, but I think it adds clarity.  It is also more robust in case other parts of the makefile are changed.\n\nthe same for\n\n```\ndoc-html: build # (already) indirectly depends on $(PIPE)\n```\n\n\nAbout the comments: I think it more common to put them outside the make rules, so instead of\n\n```\nbuild:  $(PIPE)\n    @# Note that (currently) \"tee\" will be run in the directory cd'ed to \n    @# in pipestatus' first argument, i.e. \"spkg/\":  \n    $(PIPE) \"cd spkg && ./install all 2>&1\" \"tee -a ../install.log\" \n```\n\nwhy not write\n\n```\n# Note that (currently) \"tee\" will be run in the directory cd'ed to\n# in pipestatus' first argument, i.e. \"spkg/\":\nbuild:  $(PIPE)\n    $(PIPE) \"cd spkg && ./install all 2>&1\" \"tee -a ../install.log\" \n```\n",
     "created_at": "2010-10-19T21:11:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96277",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9799_makefile.patch](tarball://root/attachments/some-uuid/ticket9799/9799_makefile.patch) by jdemeyer created at 2010-10-19 21:11:02
+Attachment [9799_makefile.patch](tarball://root/attachments/some-uuid/ticket9799/9799_makefile.patch) by @jdemeyer created at 2010-10-19 21:11:02
 
 I have read the patch and it looks okay to me, but perhaps somebody who is more familiar with the Sage build process should have a second look.  I am currently doing a full build from scratch with the new `Makefile` (with capital).  I have a few comments (which you're free to ignore...).
 
@@ -661,7 +661,7 @@ archive/issue_comments_096278.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96278",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -722,7 +722,7 @@ archive/issue_comments_096279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96279",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -740,7 +740,7 @@ archive/issue_comments_096280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96280",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -758,7 +758,7 @@ archive/issue_comments_096281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96281",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -782,7 +782,7 @@ archive/issue_comments_096282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96282",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -803,7 +803,7 @@ archive/issue_comments_096283.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96283",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -830,7 +830,7 @@ archive/issue_comments_096284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96284",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -890,7 +890,7 @@ archive/issue_comments_096286.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96286",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -915,7 +915,7 @@ archive/issue_comments_096287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96287",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -933,7 +933,7 @@ archive/issue_comments_096288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96288",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -951,7 +951,7 @@ archive/issue_comments_096289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9798#issuecomment-96289",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 

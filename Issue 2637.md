@@ -3,7 +3,7 @@
 archive/issues_002637.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: encoding utf-8\n\nThis ticket is related to my question on sage-support:\nhttp://groups.google.com/group/sage-support/browse_thread/thread/dab6a0880fa8b942\nand Martin Albrecht's patch.\n\nWith Martin's patch, sage scripts default to utf-8 encoding, which is a good default as ascii is a subset of utf-8, it is compatible with existing sage-scripts.\n\nBut I think that a user should be able to select a coding, if utf-8 is not suitable for him. For example a user with an editor not supporting unicode or a user needing utf-16. So sage should support python encoding hints.  \n \nPlease see the attached patch to sage/misc/interpreter.py, which tries to find out if the first line contains an encoding hint. If true, use the line from the file, else print the utf-8 encoding hint.\n\nWith best regards,\nLars Fischer\n\nIssue created by migration from https://trac.sagemath.org/ticket/2637\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: encoding utf-8\n\nThis ticket is related to my question on sage-support:\nhttp://groups.google.com/group/sage-support/browse_thread/thread/dab6a0880fa8b942\nand Martin Albrecht's patch.\n\nWith Martin's patch, sage scripts default to utf-8 encoding, which is a good default as ascii is a subset of utf-8, it is compatible with existing sage-scripts.\n\nBut I think that a user should be able to select a coding, if utf-8 is not suitable for him. For example a user with an editor not supporting unicode or a user needing utf-16. So sage should support python encoding hints.  \n \nPlease see the attached patch to sage/misc/interpreter.py, which tries to find out if the first line contains an encoding hint. If true, use the line from the file, else print the utf-8 encoding hint.\n\nWith best regards,\nLars Fischer\n\nIssue created by migration from https://trac.sagemath.org/ticket/2637\n\n",
     "created_at": "2008-03-21T21:43:30Z",
     "labels": [
         "user interface",
@@ -17,7 +17,7 @@ archive/issues_002637.json:
     "user": "lars.fischer"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: encoding utf-8
 
@@ -259,7 +259,7 @@ archive/issue_comments_018123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2637#issuecomment-18123",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_018124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2637#issuecomment-18124",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_018125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2637#issuecomment-18125",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -375,7 +375,7 @@ archive/issue_comments_018127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2637#issuecomment-18127",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -440,16 +440,16 @@ Michael
 archive/issue_comments_018129.json:
 ```json
 {
-    "body": "Attachment [trac2637_fixes.patch](tarball://root/attachments/some-uuid/ticket2637/trac2637_fixes.patch) by malb created at 2008-06-24 13:41:06\n\naddresses mabshoff's review, sort of",
+    "body": "Attachment [trac2637_fixes.patch](tarball://root/attachments/some-uuid/ticket2637/trac2637_fixes.patch) by @malb created at 2008-06-24 13:41:06\n\naddresses mabshoff's review, sort of",
     "created_at": "2008-06-24T13:41:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2637#issuecomment-18129",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac2637_fixes.patch](tarball://root/attachments/some-uuid/ticket2637/trac2637_fixes.patch) by malb created at 2008-06-24 13:41:06
+Attachment [trac2637_fixes.patch](tarball://root/attachments/some-uuid/ticket2637/trac2637_fixes.patch) by @malb created at 2008-06-24 13:41:06
 
 addresses mabshoff's review, sort of
 
@@ -465,7 +465,7 @@ archive/issue_comments_018130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2637#issuecomment-18130",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

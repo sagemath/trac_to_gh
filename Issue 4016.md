@@ -14,7 +14,7 @@ archive/issues_004016.json:
     "title": "[with patch, needs review] improve doctests to schemes/generic/scheme.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4016",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 Assignee: mabshoff
@@ -39,7 +39,7 @@ archive/issue_comments_028968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4016#issuecomment-28968",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -85,16 +85,16 @@ Got:
 archive/issue_comments_028970.json:
 ```json
 {
-    "body": "Attachment [4016-doctest_scheme.patch](tarball://root/attachments/some-uuid/ticket4016/4016-doctest_scheme.patch) by AlexGhitza created at 2008-08-31 12:08:04",
+    "body": "Attachment [4016-doctest_scheme.patch](tarball://root/attachments/some-uuid/ticket4016/4016-doctest_scheme.patch) by @aghitza created at 2008-08-31 12:08:04",
     "created_at": "2008-08-31T12:08:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4016#issuecomment-28970",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [4016-doctest_scheme.patch](tarball://root/attachments/some-uuid/ticket4016/4016-doctest_scheme.patch) by AlexGhitza created at 2008-08-31 12:08:04
+Attachment [4016-doctest_scheme.patch](tarball://root/attachments/some-uuid/ticket4016/4016-doctest_scheme.patch) by @aghitza created at 2008-08-31 12:08:04
 
 
 
@@ -108,7 +108,7 @@ archive/issue_comments_028971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4016#issuecomment-28971",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

@@ -40,7 +40,7 @@ archive/issue_comments_007140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1164",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1164#issuecomment-7140",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -53,16 +53,16 @@ Changing status from new to assigned.
 archive/issue_comments_007141.json:
 ```json
 {
-    "body": "Changing assignee from tba to mhansen.",
+    "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2007-12-06T21:17:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1164",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1164#issuecomment-7141",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tba to mhansen.
+Changing assignee from tba to @mwhansen.
 
 
 
@@ -76,7 +76,7 @@ archive/issue_comments_007142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1164",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1164#issuecomment-7142",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

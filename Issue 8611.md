@@ -3,7 +3,7 @@
 archive/issues_008611.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  novoselt was\n\nThere are a number of inefficiencies in the critical path (i.e., the code path when values have already been cached) that are addressed in this patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8611\n\n",
+    "body": "Assignee: tbd\n\nCC:  @novoselt @williamstein\n\nThere are a number of inefficiencies in the critical path (i.e., the code path when values have already been cached) that are addressed in this patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8611\n\n",
     "created_at": "2010-03-26T03:48:06Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_008611.json:
     "title": "speed up cached_function and cached_method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8611",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: tbd
 
-CC:  novoselt was
+CC:  @novoselt @williamstein
 
 There are a number of inefficiencies in the critical path (i.e., the code path when values have already been cached) that are addressed in this patch.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8611
 archive/issue_comments_078006.json:
 ```json
 {
-    "body": "Attachment [trac-8611-speed-up-cached-decorators.patch](tarball://root/attachments/some-uuid/ticket8611/trac-8611-speed-up-cached-decorators.patch) by jason created at 2010-03-26 03:54:03\n\nBEFORE PATCH:\n\n\n```\nsage: def g(i=15):\n...       return sum(range(2**i))\n...\nsage: @cached_function\nsage: def cached_g(i=15):\n...       return sum(range(2**i))\n...\nsage: class A:\n...       @cached_method\n...       def decorator_cache(self, i=15):\n...           return sum(range(2**i))\n...       def fast_cache(self, i=15):\n...           try:\n...               return self._fast_cache\n...           except AttributeError:\n...               self._fast_cache=sum(range(2**i))\n...               return self._fast_cache\nsage: timeit('g()')\n125 loops, best of 3: 2.02 ms per loop\nsage: timeit('cached_g()')\n625 loops, best of 3: 37.9 \u00b5s per loop\nsage: timeit('cached_g()')\n625 loops, best of 3: 41.8 \u00b5s per loop\nsage: c=A()\nsage: timeit('c.decorator_cache()')\n625 loops, best of 3: 64.8 \u00b5s per loop\nsage: timeit('c.fast_cache()')\n625 loops, best of 3: 1.06 \u00b5s per loop\n```\n\n\n\nAFTER PATCH\n\n\n```\n\nsage: def g(i=15):\n...       return sum(range(2**i))\n...\nsage: @cached_function\nsage: def cached_g(i=15):\n...       return sum(range(2**i))\n...\nsage: class A:\n...       @cached_method\n...       def decorator_cache(self, i=15):\n...           return sum(range(2**i))\n...       def fast_cache(self, i=15):\n...           try:\n...               return self._fast_cache\n...           except AttributeError:\n...               self._fast_cache=sum(range(2**i))\n...               return self._fast_cache\nsage: timeit('g()')\n125 loops, best of 3: 2.94 ms per loop\nsage: timeit('cached_g()')\n625 loops, best of 3: 1.64 \u00b5s per loop\nsage: c=A()\nsage: timeit('c.decorator_cache()')\n625 loops, best of 3: 22 \u00b5s per loop\nsage: timeit('c.fast_cache()')\n625 loops, best of 3: 678 ns per loop\n```\n",
+    "body": "Attachment [trac-8611-speed-up-cached-decorators.patch](tarball://root/attachments/some-uuid/ticket8611/trac-8611-speed-up-cached-decorators.patch) by @jasongrout created at 2010-03-26 03:54:03\n\nBEFORE PATCH:\n\n\n```\nsage: def g(i=15):\n...       return sum(range(2**i))\n...\nsage: @cached_function\nsage: def cached_g(i=15):\n...       return sum(range(2**i))\n...\nsage: class A:\n...       @cached_method\n...       def decorator_cache(self, i=15):\n...           return sum(range(2**i))\n...       def fast_cache(self, i=15):\n...           try:\n...               return self._fast_cache\n...           except AttributeError:\n...               self._fast_cache=sum(range(2**i))\n...               return self._fast_cache\nsage: timeit('g()')\n125 loops, best of 3: 2.02 ms per loop\nsage: timeit('cached_g()')\n625 loops, best of 3: 37.9 \u00b5s per loop\nsage: timeit('cached_g()')\n625 loops, best of 3: 41.8 \u00b5s per loop\nsage: c=A()\nsage: timeit('c.decorator_cache()')\n625 loops, best of 3: 64.8 \u00b5s per loop\nsage: timeit('c.fast_cache()')\n625 loops, best of 3: 1.06 \u00b5s per loop\n```\n\n\n\nAFTER PATCH\n\n\n```\n\nsage: def g(i=15):\n...       return sum(range(2**i))\n...\nsage: @cached_function\nsage: def cached_g(i=15):\n...       return sum(range(2**i))\n...\nsage: class A:\n...       @cached_method\n...       def decorator_cache(self, i=15):\n...           return sum(range(2**i))\n...       def fast_cache(self, i=15):\n...           try:\n...               return self._fast_cache\n...           except AttributeError:\n...               self._fast_cache=sum(range(2**i))\n...               return self._fast_cache\nsage: timeit('g()')\n125 loops, best of 3: 2.94 ms per loop\nsage: timeit('cached_g()')\n625 loops, best of 3: 1.64 \u00b5s per loop\nsage: c=A()\nsage: timeit('c.decorator_cache()')\n625 loops, best of 3: 22 \u00b5s per loop\nsage: timeit('c.fast_cache()')\n625 loops, best of 3: 678 ns per loop\n```\n",
     "created_at": "2010-03-26T03:54:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8611#issuecomment-78006",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-8611-speed-up-cached-decorators.patch](tarball://root/attachments/some-uuid/ticket8611/trac-8611-speed-up-cached-decorators.patch) by jason created at 2010-03-26 03:54:03
+Attachment [trac-8611-speed-up-cached-decorators.patch](tarball://root/attachments/some-uuid/ticket8611/trac-8611-speed-up-cached-decorators.patch) by @jasongrout created at 2010-03-26 03:54:03
 
 BEFORE PATCH:
 
@@ -127,7 +127,7 @@ archive/issue_comments_078007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8611#issuecomment-78007",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_078008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8611#issuecomment-78008",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_078009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8611#issuecomment-78009",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_078010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8611#issuecomment-78010",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_078011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8611#issuecomment-78011",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_078012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8611#issuecomment-78012",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_078013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8611#issuecomment-78013",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -593,7 +593,7 @@ archive/issue_comments_078014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8611#issuecomment-78014",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -611,7 +611,7 @@ archive/issue_comments_078015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8611#issuecomment-78015",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -631,7 +631,7 @@ archive/issue_comments_078016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8611#issuecomment-78016",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -680,7 +680,7 @@ archive/issue_comments_078017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8611#issuecomment-78017",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -769,7 +769,7 @@ archive/issue_comments_078018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8611#issuecomment-78018",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -787,7 +787,7 @@ archive/issue_comments_078019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8611#issuecomment-78019",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -800,16 +800,16 @@ Improved performance for cached methods; add documentation to reference manual; 
 archive/issue_comments_078020.json:
 ```json
 {
-    "body": "Attachment [trac8611_cached_method_overhaul.patch](tarball://root/attachments/some-uuid/ticket8611/trac8611_cached_method_overhaul.patch) by SimonKing created at 2011-01-12 17:20:28\n\nI slightly changed the patch. But the small change has in fact a big impact:\n\nThe method `sage.categories.category.Category.is_subcategory` is used to test whether something is an object of a given category. Due to the omnipresence of categories in Sage, this test occurs very often. So, it should be optimised!\n\nI suggest that `is_subcategory` should be cached. I.e., the new patch version differs from the old one only in the line \"`@`cached_method\" in front of that method.\n\nI believe that the additional memory consumption is affordable: When starting Sage, there are precisely 55 categories, so, in the worst case, caching `is_subcategory` adds 55 cache dictionaries with 55 entries.\n\nThe impact on the overall performance is obvious:\nOn my machine, `sage -tp 4 sage` takes 1721.2 seconds without my patch, but 1643.8 seconds with my patch.\n\nHence, the average improvement is about 4.5%.",
+    "body": "Attachment [trac8611_cached_method_overhaul.patch](tarball://root/attachments/some-uuid/ticket8611/trac8611_cached_method_overhaul.patch) by @simon-king-jena created at 2011-01-12 17:20:28\n\nI slightly changed the patch. But the small change has in fact a big impact:\n\nThe method `sage.categories.category.Category.is_subcategory` is used to test whether something is an object of a given category. Due to the omnipresence of categories in Sage, this test occurs very often. So, it should be optimised!\n\nI suggest that `is_subcategory` should be cached. I.e., the new patch version differs from the old one only in the line \"`@`cached_method\" in front of that method.\n\nI believe that the additional memory consumption is affordable: When starting Sage, there are precisely 55 categories, so, in the worst case, caching `is_subcategory` adds 55 cache dictionaries with 55 entries.\n\nThe impact on the overall performance is obvious:\nOn my machine, `sage -tp 4 sage` takes 1721.2 seconds without my patch, but 1643.8 seconds with my patch.\n\nHence, the average improvement is about 4.5%.",
     "created_at": "2011-01-12T17:20:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8611#issuecomment-78020",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [trac8611_cached_method_overhaul.patch](tarball://root/attachments/some-uuid/ticket8611/trac8611_cached_method_overhaul.patch) by SimonKing created at 2011-01-12 17:20:28
+Attachment [trac8611_cached_method_overhaul.patch](tarball://root/attachments/some-uuid/ticket8611/trac8611_cached_method_overhaul.patch) by @simon-king-jena created at 2011-01-12 17:20:28
 
 I slightly changed the patch. But the small change has in fact a big impact:
 
@@ -836,7 +836,7 @@ archive/issue_comments_078021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8611#issuecomment-78021",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -856,7 +856,7 @@ archive/issue_comments_078022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8611#issuecomment-78022",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -887,7 +887,7 @@ archive/issue_comments_078023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8611#issuecomment-78023",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -915,7 +915,7 @@ archive/issue_comments_078024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8611#issuecomment-78024",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -935,7 +935,7 @@ archive/issue_comments_078025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8611#issuecomment-78025",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -953,7 +953,7 @@ archive/issue_comments_078026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8611#issuecomment-78026",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -971,7 +971,7 @@ archive/issue_comments_078027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8611#issuecomment-78027",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -989,7 +989,7 @@ archive/issue_comments_078028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8611#issuecomment-78028",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1002,16 +1002,16 @@ Apply only this patch
 archive/issue_comments_078029.json:
 ```json
 {
-    "body": "Attachment [trac8611_cached_method_overhaul-fixed.patch](tarball://root/attachments/some-uuid/ticket8611/trac8611_cached_method_overhaul-fixed.patch) by davidloeffler created at 2011-01-23 15:17:01\n\nDone.",
+    "body": "Attachment [trac8611_cached_method_overhaul-fixed.patch](tarball://root/attachments/some-uuid/ticket8611/trac8611_cached_method_overhaul-fixed.patch) by @loefflerd created at 2011-01-23 15:17:01\n\nDone.",
     "created_at": "2011-01-23T15:17:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8611#issuecomment-78029",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac8611_cached_method_overhaul-fixed.patch](tarball://root/attachments/some-uuid/ticket8611/trac8611_cached_method_overhaul-fixed.patch) by davidloeffler created at 2011-01-23 15:17:01
+Attachment [trac8611_cached_method_overhaul-fixed.patch](tarball://root/attachments/some-uuid/ticket8611/trac8611_cached_method_overhaul-fixed.patch) by @loefflerd created at 2011-01-23 15:17:01
 
 Done.
 
@@ -1027,7 +1027,7 @@ archive/issue_comments_078030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8611#issuecomment-78030",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1045,7 +1045,7 @@ archive/issue_comments_078031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8611#issuecomment-78031",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1066,7 +1066,7 @@ archive/issue_comments_078032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8611#issuecomment-78032",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1084,7 +1084,7 @@ archive/issue_comments_078033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8611#issuecomment-78033",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

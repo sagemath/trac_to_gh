@@ -14,7 +14,7 @@ archive/issues_002832.json:
     "title": "[with patch; needs review] mistake in tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2832",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2832
 archive/issue_comments_019438.json:
 ```json
 {
-    "body": "Attachment [doc-2832.patch](tarball://root/attachments/some-uuid/ticket2832/doc-2832.patch) by mhansen created at 2008-04-06 22:11:39\n\nLooks good to me.",
+    "body": "Attachment [doc-2832.patch](tarball://root/attachments/some-uuid/ticket2832/doc-2832.patch) by @mwhansen created at 2008-04-06 22:11:39\n\nLooks good to me.",
     "created_at": "2008-04-06T22:11:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2832",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2832#issuecomment-19438",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [doc-2832.patch](tarball://root/attachments/some-uuid/ticket2832/doc-2832.patch) by mhansen created at 2008-04-06 22:11:39
+Attachment [doc-2832.patch](tarball://root/attachments/some-uuid/ticket2832/doc-2832.patch) by @mwhansen created at 2008-04-06 22:11:39
 
 Looks good to me.
 

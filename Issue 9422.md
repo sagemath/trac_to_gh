@@ -3,7 +3,7 @@
 archive/issues_009422.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  rlm mvngu\n\nAs it is implemented at the moment, the method is_forest creates a new graph for each connected component of the graph, then calls the is_tree method for each of them, which checks again that the connected components are....connected !\n\nWe can do it a bit faster :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9422\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @rlmill mvngu\n\nAs it is implemented at the moment, the method is_forest creates a new graph for each connected component of the graph, then calls the is_tree method for each of them, which checks again that the connected components are....connected !\n\nWe can do it a bit faster :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9422\n\n",
     "created_at": "2010-07-04T11:45:46Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_009422.json:
     "title": "Slightly improving is_forest",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9422",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, ncohen, rlm
 
-CC:  rlm mvngu
+CC:  @rlmill mvngu
 
 As it is implemented at the moment, the method is_forest creates a new graph for each connected component of the graph, then calls the is_tree method for each of them, which checks again that the connected components are....connected !
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9422
 archive/issue_comments_089865.json:
 ```json
 {
-    "body": "Attachment [trac_9422.patch](tarball://root/attachments/some-uuid/ticket9422/trac_9422.patch) by ncohen created at 2010-07-04 11:46:46",
+    "body": "Attachment [trac_9422.patch](tarball://root/attachments/some-uuid/ticket9422/trac_9422.patch) by @nathanncohen created at 2010-07-04 11:46:46",
     "created_at": "2010-07-04T11:46:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9422#issuecomment-89865",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_9422.patch](tarball://root/attachments/some-uuid/ticket9422/trac_9422.patch) by ncohen created at 2010-07-04 11:46:46
+Attachment [trac_9422.patch](tarball://root/attachments/some-uuid/ticket9422/trac_9422.patch) by @nathanncohen created at 2010-07-04 11:46:46
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_089866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9422#issuecomment-89866",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_089867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9422#issuecomment-89867",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_089868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9422#issuecomment-89868",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_089869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9422#issuecomment-89869",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_089872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9422#issuecomment-89872",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_089873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9422#issuecomment-89873",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

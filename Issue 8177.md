@@ -3,7 +3,7 @@
 archive/issues_008177.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  nthiery mvngu hivert\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/7754a347b837fad6) and also [reported here](http://groups.google.com/group/sage-devel/browse_thread/thread/7c920d26ddad3345):\n\n```\n> built fine on mac 10.6.2 but one failure for sage -testall :\n\n> The following tests failed:\n\n>        sage -t  \"devel/sage/sage/structure/element_wrapper.py\" # Segfault\n\nI get the same result on bsd.math (Mac OS X 10.6.2). Doing a verbose\nlong doctest, I get:\n\nTrying:\n    Integer(1) < l11###line 213:_sage_    >>> 1 < l11\nExpecting:\n    False\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------ \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8177\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nthiery mvngu @hivert\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/7754a347b837fad6) and also [reported here](http://groups.google.com/group/sage-devel/browse_thread/thread/7c920d26ddad3345):\n\n```\n> built fine on mac 10.6.2 but one failure for sage -testall :\n\n> The following tests failed:\n\n>        sage -t  \"devel/sage/sage/structure/element_wrapper.py\" # Segfault\n\nI get the same result on bsd.math (Mac OS X 10.6.2). Doing a verbose\nlong doctest, I get:\n\nTrying:\n    Integer(1) < l11###line 213:_sage_    >>> 1 < l11\nExpecting:\n    False\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------ \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8177\n\n",
     "created_at": "2010-02-03T18:45:01Z",
     "labels": [
         "doctest",
@@ -19,7 +19,7 @@ archive/issues_008177.json:
 ```
 Assignee: tbd
 
-CC:  nthiery mvngu hivert
+CC:  @nthiery mvngu @hivert
 
 From [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/7754a347b837fad6) and also [reported here](http://groups.google.com/group/sage-devel/browse_thread/thread/7c920d26ddad3345):
 
@@ -65,7 +65,7 @@ archive/issue_comments_072042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8177#issuecomment-72042",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_072043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8177#issuecomment-72043",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_072044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8177#issuecomment-72044",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_072045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8177#issuecomment-72045",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -183,16 +183,16 @@ I'm waiting for Nicolas to weigh in on what he thinks should happen with the `El
 archive/issue_comments_072046.json:
 ```json
 {
-    "body": "Attachment [trac_8177-element_wrapper_segfault-fh.patch](tarball://root/attachments/some-uuid/ticket8177/trac_8177-element_wrapper_segfault-fh.patch) by hivert created at 2010-02-06 09:20:37",
+    "body": "Attachment [trac_8177-element_wrapper_segfault-fh.patch](tarball://root/attachments/some-uuid/ticket8177/trac_8177-element_wrapper_segfault-fh.patch) by @hivert created at 2010-02-06 09:20:37",
     "created_at": "2010-02-06T09:20:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8177#issuecomment-72046",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8177-element_wrapper_segfault-fh.patch](tarball://root/attachments/some-uuid/ticket8177/trac_8177-element_wrapper_segfault-fh.patch) by hivert created at 2010-02-06 09:20:37
+Attachment [trac_8177-element_wrapper_segfault-fh.patch](tarball://root/attachments/some-uuid/ticket8177/trac_8177-element_wrapper_segfault-fh.patch) by @hivert created at 2010-02-06 09:20:37
 
 
 
@@ -206,7 +206,7 @@ archive/issue_comments_072047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8177#issuecomment-72047",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_072048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8177#issuecomment-72048",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_072049.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8177#issuecomment-72049",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_072050.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8177#issuecomment-72050",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -312,7 +312,7 @@ archive/issue_comments_072051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8177#issuecomment-72051",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -330,7 +330,7 @@ archive/issue_comments_072052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8177#issuecomment-72052",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -349,7 +349,7 @@ archive/issue_comments_072053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8177#issuecomment-72053",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -394,7 +394,7 @@ archive/issue_comments_072054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8177#issuecomment-72054",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -415,7 +415,7 @@ archive/issue_comments_072055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8177#issuecomment-72055",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -441,7 +441,7 @@ archive/issue_comments_072056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8177#issuecomment-72056",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -464,7 +464,7 @@ archive/issue_comments_072057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8177#issuecomment-72057",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -501,7 +501,7 @@ archive/issue_comments_072058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8177#issuecomment-72058",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -519,7 +519,7 @@ archive/issue_comments_072059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8177#issuecomment-72059",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -537,7 +537,7 @@ archive/issue_comments_072060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8177#issuecomment-72060",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -566,7 +566,7 @@ archive/issue_comments_072061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8177#issuecomment-72061",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

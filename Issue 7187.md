@@ -14,7 +14,7 @@ archive/issues_007187.json:
     "title": "update optional package Gnuplot.py to 1.8",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7187",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 Assignee: tbd
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7187
 archive/issue_comments_059536.json:
 ```json
 {
-    "body": "Changing assignee from tbd to awebb.",
+    "body": "Changing assignee from tbd to @maxthemouse.",
     "created_at": "2009-10-11T09:43:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7187#issuecomment-59536",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
-Changing assignee from tbd to awebb.
+Changing assignee from tbd to @maxthemouse.
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_059537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7187#issuecomment-59537",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_059538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7187#issuecomment-59538",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_059539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7187#issuecomment-59539",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_059540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7187#issuecomment-59540",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

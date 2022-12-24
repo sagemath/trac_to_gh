@@ -3,7 +3,7 @@
 archive/issues_001870.json:
 ```json
 {
-    "body": "Assignee: was\n\nTry this with a fresh sage-2.10.  I've only tested this on my osx laptop so far. \nThis does not fail on Linux (sage.math.washington.edu at least). \n\n\n```\nsage: wiki()\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:9000 *\n*                                                *\n**************************************************\n2008/01/20 15:08 -0700 [-] Log opened.\n2008/01/20 15:08 -0700 [-] twistd 2.5.0 (/Users/was/s/local/bin/python 2.5.1) starting up\n2008/01/20 15:08 -0700 [-] reactor class: <class 'twisted.internet.selectreactor.SelectReactor'>\n2008/01/20 15:08 -0700 [-] Loading twistedconf.py...\n2008/01/20 15:08 -0700 [-] Loaded.\n2008/01/20 15:08 -0700 [-] MoinMoin.server.twistedmoin.MoinSite starting on 9000\n2008/01/20 15:08 -0700 [-] Starting factory <MoinMoin.server.twistedmoin.MoinSite instance at 0x7aecb0>\n2008/01/20 15:08 -0700 [-] Traceback (most recent call last):\n2008/01/20 15:08 -0700 [-]   File \"/Users/was/s/local/bin/twistd\", line 21, in <module>\n2008/01/20 15:08 -0700 [-]     run()\n2008/01/20 15:08 -0700 [-]   File \"/Users/was/s/local/lib/python2.5/site-packages/twisted/scripts/twistd.py\", line 27, in run\n2008/01/20 15:08 -0700 [-]     app.run(runApp, ServerOptions)\n2008/01/20 15:08 -0700 [-]   File \"/Users/was/s/local/lib/python2.5/site-packages/twisted/application/app.py\", line 379, in run\n2008/01/20 15:08 -0700 [-]     runApp(config)\n2008/01/20 15:08 -0700 [-]   File \"/Users/was/s/local/lib/python2.5/site-packages/twisted/scripts/twistd.py\", line 23, in runApp\n2008/01/20 15:08 -0700 [-]     _SomeApplicationRunner(config).run()\n2008/01/20 15:08 -0700 [-]   File \"/Users/was/s/local/lib/python2.5/site-packages/twisted/application/app.py\", line 158, in run\n2008/01/20 15:08 -0700 [-]     self.postApplication()\n2008/01/20 15:08 -0700 [-]   File \"/Users/was/s/local/lib/python2.5/site-packages/twisted/scripts/_twistd_unix.py\", line 213, in postApplication\n2008/01/20 15:08 -0700 [-]     startApplication(self.config, self.application)\n2008/01/20 15:08 -0700 [-]   File \"/Users/was/s/local/lib/python2.5/site-packages/twisted/scripts/_twistd_unix.py\", line 182, in startApplication\n2008/01/20 15:08 -0700 [-]     shedPrivileges(config['euid'], uid, gid)\n2008/01/20 15:08 -0700 [-]   File \"/Users/was/s/local/lib/python2.5/site-packages/twisted/scripts/_twistd_unix.py\", line 148, in shedPrivileges\n2008/01/20 15:08 -0700 [-]     switchUID(uid, gid, euid)\n2008/01/20 15:08 -0700 [-]   File \"/Users/was/s/local/lib/python2.5/site-packages/twisted/python/util.py\", line 651, in switchUID\n2008/01/20 15:08 -0700 [-]     initgroups(uid, gid)\n2008/01/20 15:08 -0700 [-]   File \"/Users/was/s/local/lib/python2.5/site-packages/twisted/python/util.py\", line 621, in initgroups\n2008/01/20 15:08 -0700 [-]     _setgroups_until_success(l)\n2008/01/20 15:08 -0700 [-]   File \"/Users/was/s/local/lib/python2.5/site-packages/twisted/python/util.py\", line 575, in _setgroups_until_success\n2008/01/20 15:08 -0700 [-]     setgroups(l)\n2008/01/20 15:08 -0700 [-] OSError: [Errno 1] Operation not permitted\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1870\n\n",
+    "body": "Assignee: @williamstein\n\nTry this with a fresh sage-2.10.  I've only tested this on my osx laptop so far. \nThis does not fail on Linux (sage.math.washington.edu at least). \n\n\n```\nsage: wiki()\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:9000 *\n*                                                *\n**************************************************\n2008/01/20 15:08 -0700 [-] Log opened.\n2008/01/20 15:08 -0700 [-] twistd 2.5.0 (/Users/was/s/local/bin/python 2.5.1) starting up\n2008/01/20 15:08 -0700 [-] reactor class: <class 'twisted.internet.selectreactor.SelectReactor'>\n2008/01/20 15:08 -0700 [-] Loading twistedconf.py...\n2008/01/20 15:08 -0700 [-] Loaded.\n2008/01/20 15:08 -0700 [-] MoinMoin.server.twistedmoin.MoinSite starting on 9000\n2008/01/20 15:08 -0700 [-] Starting factory <MoinMoin.server.twistedmoin.MoinSite instance at 0x7aecb0>\n2008/01/20 15:08 -0700 [-] Traceback (most recent call last):\n2008/01/20 15:08 -0700 [-]   File \"/Users/was/s/local/bin/twistd\", line 21, in <module>\n2008/01/20 15:08 -0700 [-]     run()\n2008/01/20 15:08 -0700 [-]   File \"/Users/was/s/local/lib/python2.5/site-packages/twisted/scripts/twistd.py\", line 27, in run\n2008/01/20 15:08 -0700 [-]     app.run(runApp, ServerOptions)\n2008/01/20 15:08 -0700 [-]   File \"/Users/was/s/local/lib/python2.5/site-packages/twisted/application/app.py\", line 379, in run\n2008/01/20 15:08 -0700 [-]     runApp(config)\n2008/01/20 15:08 -0700 [-]   File \"/Users/was/s/local/lib/python2.5/site-packages/twisted/scripts/twistd.py\", line 23, in runApp\n2008/01/20 15:08 -0700 [-]     _SomeApplicationRunner(config).run()\n2008/01/20 15:08 -0700 [-]   File \"/Users/was/s/local/lib/python2.5/site-packages/twisted/application/app.py\", line 158, in run\n2008/01/20 15:08 -0700 [-]     self.postApplication()\n2008/01/20 15:08 -0700 [-]   File \"/Users/was/s/local/lib/python2.5/site-packages/twisted/scripts/_twistd_unix.py\", line 213, in postApplication\n2008/01/20 15:08 -0700 [-]     startApplication(self.config, self.application)\n2008/01/20 15:08 -0700 [-]   File \"/Users/was/s/local/lib/python2.5/site-packages/twisted/scripts/_twistd_unix.py\", line 182, in startApplication\n2008/01/20 15:08 -0700 [-]     shedPrivileges(config['euid'], uid, gid)\n2008/01/20 15:08 -0700 [-]   File \"/Users/was/s/local/lib/python2.5/site-packages/twisted/scripts/_twistd_unix.py\", line 148, in shedPrivileges\n2008/01/20 15:08 -0700 [-]     switchUID(uid, gid, euid)\n2008/01/20 15:08 -0700 [-]   File \"/Users/was/s/local/lib/python2.5/site-packages/twisted/python/util.py\", line 651, in switchUID\n2008/01/20 15:08 -0700 [-]     initgroups(uid, gid)\n2008/01/20 15:08 -0700 [-]   File \"/Users/was/s/local/lib/python2.5/site-packages/twisted/python/util.py\", line 621, in initgroups\n2008/01/20 15:08 -0700 [-]     _setgroups_until_success(l)\n2008/01/20 15:08 -0700 [-]   File \"/Users/was/s/local/lib/python2.5/site-packages/twisted/python/util.py\", line 575, in _setgroups_until_success\n2008/01/20 15:08 -0700 [-]     setgroups(l)\n2008/01/20 15:08 -0700 [-] OSError: [Errno 1] Operation not permitted\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1870\n\n",
     "created_at": "2008-01-20T22:12:58Z",
     "labels": [
         "website/wiki",
@@ -14,10 +14,10 @@ archive/issues_001870.json:
     "title": "somehow we completely broke the moinmoin wiki stuff included in Sage on OS X.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1870",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Try this with a fresh sage-2.10.  I've only tested this on my osx laptop so far. 
 This does not fail on Linux (sage.math.washington.edu at least). 
@@ -81,7 +81,7 @@ archive/issue_comments_011840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1870#issuecomment-11840",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_011841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1870#issuecomment-11841",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -330,7 +330,7 @@ archive/issue_comments_011842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1870#issuecomment-11842",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_011843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1870#issuecomment-11843",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -366,7 +366,7 @@ archive/issue_comments_011844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1870#issuecomment-11844",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -387,7 +387,7 @@ archive/issue_comments_011845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1870#issuecomment-11845",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -426,7 +426,7 @@ archive/issue_comments_011846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1870#issuecomment-11846",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -444,7 +444,7 @@ archive/issue_comments_011847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1870#issuecomment-11847",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -462,7 +462,7 @@ archive/issue_comments_011848.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1870#issuecomment-11848",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

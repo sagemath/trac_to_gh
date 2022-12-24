@@ -3,7 +3,7 @@
 archive/issues_002372.json:
 ```json
 {
-    "body": "Assignee: dfdeshom\n\nWe make `matrix_from_rows_and_columns` a little faster by using well-known pyrex tricks.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2372\n\n",
+    "body": "Assignee: @dfdeshom\n\nWe make `matrix_from_rows_and_columns` a little faster by using well-known pyrex tricks.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2372\n\n",
     "created_at": "2008-03-03T05:32:28Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_002372.json:
     "title": "[with patch, needs review] speedup to matrix_from_rows_and_columns",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2372",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
-Assignee: dfdeshom
+Assignee: @dfdeshom
 
 We make `matrix_from_rows_and_columns` a little faster by using well-known pyrex tricks.
 
@@ -37,7 +37,7 @@ archive/issue_comments_016004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2372#issuecomment-16004",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_016005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2372#issuecomment-16005",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_016006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2372#issuecomment-16006",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -86,16 +86,16 @@ This patch looks cleaner(?)
 archive/issue_comments_016007.json:
 ```json
 {
-    "body": "Attachment [trac_2490.patch](tarball://root/attachments/some-uuid/ticket2372/trac_2490.patch) by jsp created at 2008-03-12 13:52:57\n\nSorry for the duplicate! I missed that. But I could not resist to send my patch!\n\nWhat do you think?\n\nCheers,\n\nJaap",
+    "body": "Attachment [trac_2490.patch](tarball://root/attachments/some-uuid/ticket2372/trac_2490.patch) by @jaapspies created at 2008-03-12 13:52:57\n\nSorry for the duplicate! I missed that. But I could not resist to send my patch!\n\nWhat do you think?\n\nCheers,\n\nJaap",
     "created_at": "2008-03-12T13:52:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2372#issuecomment-16007",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [trac_2490.patch](tarball://root/attachments/some-uuid/ticket2372/trac_2490.patch) by jsp created at 2008-03-12 13:52:57
+Attachment [trac_2490.patch](tarball://root/attachments/some-uuid/ticket2372/trac_2490.patch) by @jaapspies created at 2008-03-12 13:52:57
 
 Sorry for the duplicate! I missed that. But I could not resist to send my patch!
 
@@ -117,7 +117,7 @@ archive/issue_comments_016008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2372#issuecomment-16008",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_016009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2372#issuecomment-16009",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -210,16 +210,16 @@ All test in deve/sage/sage/matrix passed.
 archive/issue_comments_016010.json:
 ```json
 {
-    "body": "Attachment [2372.patch](tarball://root/attachments/some-uuid/ticket2372/2372.patch) by dfdeshom created at 2008-03-14 14:36:27",
+    "body": "Attachment [2372.patch](tarball://root/attachments/some-uuid/ticket2372/2372.patch) by @dfdeshom created at 2008-03-14 14:36:27",
     "created_at": "2008-03-14T14:36:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2372#issuecomment-16010",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Attachment [2372.patch](tarball://root/attachments/some-uuid/ticket2372/2372.patch) by dfdeshom created at 2008-03-14 14:36:27
+Attachment [2372.patch](tarball://root/attachments/some-uuid/ticket2372/2372.patch) by @dfdeshom created at 2008-03-14 14:36:27
 
 
 
@@ -233,7 +233,7 @@ archive/issue_comments_016011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2372#issuecomment-16011",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_016012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2372#issuecomment-16012",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 

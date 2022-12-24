@@ -3,7 +3,7 @@
 archive/issues_003891.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  cremona\n\nJohn Cremona requests a sqrt for polynomial rings:\n\n\n```\nI have needed the following.  g(x) is a univariate polynomial which I\nknow to be a square, and i want its square root.  g.factor() does too\nmuch, as does g.squarefree_decomposition().  I can get the sqrt via\ng.gcd(g.derivative()), which works in my case since I know that the\nsqrt is itself square-free.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3891\n\n",
+    "body": "Assignee: somebody\n\nCC:  @JohnCremona\n\nJohn Cremona requests a sqrt for polynomial rings:\n\n\n```\nI have needed the following.  g(x) is a univariate polynomial which I\nknow to be a square, and i want its square root.  g.factor() does too\nmuch, as does g.squarefree_decomposition().  I can get the sqrt via\ng.gcd(g.derivative()), which works in my case since I know that the\nsqrt is itself square-free.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3891\n\n",
     "created_at": "2008-08-18T14:00:37Z",
     "labels": [
         "basic arithmetic",
@@ -19,7 +19,7 @@ archive/issues_003891.json:
 ```
 Assignee: somebody
 
-CC:  cremona
+CC:  @JohnCremona
 
 John Cremona requests a sqrt for polynomial rings:
 
@@ -50,7 +50,7 @@ archive/issue_comments_027805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3891#issuecomment-27805",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_027806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3891#issuecomment-27806",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_027807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3891#issuecomment-27807",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_027808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3891#issuecomment-27808",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -119,16 +119,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_027809.json:
 ```json
 {
-    "body": "Attachment [polynomial_is_square.patch](tarball://root/attachments/some-uuid/ticket3891/polynomial_is_square.patch) by jhpalmieri created at 2008-11-19 21:57:40",
+    "body": "Attachment [polynomial_is_square.patch](tarball://root/attachments/some-uuid/ticket3891/polynomial_is_square.patch) by @jhpalmieri created at 2008-11-19 21:57:40",
     "created_at": "2008-11-19T21:57:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3891#issuecomment-27809",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [polynomial_is_square.patch](tarball://root/attachments/some-uuid/ticket3891/polynomial_is_square.patch) by jhpalmieri created at 2008-11-19 21:57:40
+Attachment [polynomial_is_square.patch](tarball://root/attachments/some-uuid/ticket3891/polynomial_is_square.patch) by @jhpalmieri created at 2008-11-19 21:57:40
 
 
 
@@ -164,7 +164,7 @@ archive/issue_comments_027811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3891#issuecomment-27811",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

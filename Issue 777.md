@@ -3,7 +3,7 @@
 archive/issues_000777.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  mhansen\n\nKeywords: sign\n\nShould the following function exist globally?\n\n```\ndef sign(x):\n    if x > 0:\n        return 1\n    if x < 0:\n        return -1\n    return 0\n```\n\nI'm not sure if this is identical to\n\n```\ndef sign(x):\n    return x.__cmp__(0)\n```\n\nI'm also ambivalent as to whether this function is called \"sign\", \"signum\", or \"sgn\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/777\n\n",
+    "body": "Assignee: somebody\n\nCC:  @mwhansen\n\nKeywords: sign\n\nShould the following function exist globally?\n\n```\ndef sign(x):\n    if x > 0:\n        return 1\n    if x < 0:\n        return -1\n    return 0\n```\n\nI'm not sure if this is identical to\n\n```\ndef sign(x):\n    return x.__cmp__(0)\n```\n\nI'm also ambivalent as to whether this function is called \"sign\", \"signum\", or \"sgn\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/777\n\n",
     "created_at": "2007-10-02T00:40:40Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_000777.json:
     "title": "sign function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/777",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 Assignee: somebody
 
-CC:  mhansen
+CC:  @mwhansen
 
 Keywords: sign
 
@@ -59,7 +59,7 @@ archive/issue_comments_004637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/777#issuecomment-4637",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_004638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/777#issuecomment-4638",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_004639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/777#issuecomment-4639",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

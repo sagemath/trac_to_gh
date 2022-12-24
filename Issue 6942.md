@@ -3,7 +3,7 @@
 archive/issues_006942.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jason\n\nKeywords: jordan_form, transformation\n\nThe following code returns an incorrect result:\n\n```\nmm=Matrix(GF(2),[[1,0,1,0,0,0,1],[1,0,0,1,1,1,0],[1,1,0,1,1,1,1],[1,1,1,0,1,1,1],[1,1,1,0,0,1,0],[1,1,1,0,1,0,0],[1,1,1,1,1,1,0]])\n_,S = mm.jordan_form(transformation=True)\nS.rank()\n```\n\nS should be invertible, so the rank should be 7, but the rank of the above is 5.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6942\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jasongrout\n\nKeywords: jordan_form, transformation\n\nThe following code returns an incorrect result:\n\n```\nmm=Matrix(GF(2),[[1,0,1,0,0,0,1],[1,0,0,1,1,1,0],[1,1,0,1,1,1,1],[1,1,1,0,1,1,1],[1,1,1,0,0,1,0],[1,1,1,0,1,0,0],[1,1,1,1,1,1,0]])\n_,S = mm.jordan_form(transformation=True)\nS.rank()\n```\n\nS should be invertible, so the rank should be 7, but the rank of the above is 5.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6942\n\n",
     "created_at": "2009-09-16T01:35:43Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_006942.json:
     "title": "jordan_form with transformation=true returns non-invertible transformation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6942",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
 Assignee: tbd
 
-CC:  jason
+CC:  @jasongrout
 
 Keywords: jordan_form, transformation
 
@@ -49,7 +49,7 @@ archive/issue_comments_057392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6942#issuecomment-57392",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_057393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6942#issuecomment-57393",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_057394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6942#issuecomment-57394",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_057399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6942#issuecomment-57399",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -303,16 +303,16 @@ matrix(QQ, [
 archive/issue_comments_057400.json:
 ```json
 {
-    "body": "Attachment [trac_6942-reviewer.patch](tarball://root/attachments/some-uuid/ticket6942/trac_6942-reviewer.patch) by rbeezer created at 2010-01-31 07:04:22\n\nOne-character reviewer doctest fix",
+    "body": "Attachment [trac_6942-reviewer.patch](tarball://root/attachments/some-uuid/ticket6942/trac_6942-reviewer.patch) by @rbeezer created at 2010-01-31 07:04:22\n\nOne-character reviewer doctest fix",
     "created_at": "2010-01-31T07:04:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6942#issuecomment-57400",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_6942-reviewer.patch](tarball://root/attachments/some-uuid/ticket6942/trac_6942-reviewer.patch) by rbeezer created at 2010-01-31 07:04:22
+Attachment [trac_6942-reviewer.patch](tarball://root/attachments/some-uuid/ticket6942/trac_6942-reviewer.patch) by @rbeezer created at 2010-01-31 07:04:22
 
 One-character reviewer doctest fix
 
@@ -328,7 +328,7 @@ archive/issue_comments_057401.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6942#issuecomment-57401",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_057402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6942#issuecomment-57402",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -380,7 +380,7 @@ archive/issue_comments_057403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6942#issuecomment-57403",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -398,7 +398,7 @@ archive/issue_comments_057404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6942#issuecomment-57404",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -482,7 +482,7 @@ archive/issue_comments_057408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6942#issuecomment-57408",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -506,7 +506,7 @@ archive/issue_comments_057409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6942#issuecomment-57409",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

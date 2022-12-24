@@ -3,7 +3,7 @@
 archive/issues_004203.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  anakha\n\n\n```\n[17:06] <mhansen> Yeah -- suboption should take a prefix, defaults, and then return something like an arrow_options dict.\n[17:07] <mhansen> @suboption('arrow', color='red', line='+')\n[17:07] <jason-> okay, yeah, even better.\n[17:07] <mhansen> And that would pick up things like arrow_color='blue'.\n[17:07] <jason-> then I don't have to type the dictionary explicitly\n[17:09] <mhansen> I think doing something like that might be a good idea.  It'd at least be a nice consistent way to handle all of these options.\n```\n\n\nThe idea is that we'd like to get a bunch of options to pass on to, say, an arrow_drawing routine.  It'd be really nice if we could rename the suboptions too, so the original arrow_color argument could be returned as the rgbcolor element of the arrow_options dict.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4203\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  anakha\n\n\n```\n[17:06] <mhansen> Yeah -- suboption should take a prefix, defaults, and then return something like an arrow_options dict.\n[17:07] <mhansen> @suboption('arrow', color='red', line='+')\n[17:07] <jason-> okay, yeah, even better.\n[17:07] <mhansen> And that would pick up things like arrow_color='blue'.\n[17:07] <jason-> then I don't have to type the dictionary explicitly\n[17:09] <mhansen> I think doing something like that might be a good idea.  It'd at least be a nice consistent way to handle all of these options.\n```\n\n\nThe idea is that we'd like to get a bunch of options to pass on to, say, an arrow_drawing routine.  It'd be really nice if we could rename the suboptions too, so the original arrow_color argument could be returned as the rgbcolor element of the arrow_options dict.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4203\n\n",
     "created_at": "2008-09-26T22:45:34Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_004203.json:
     "title": "Make a suboption decorator to complement #4201",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4203",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  anakha
 
@@ -51,7 +51,7 @@ archive/issue_comments_030502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4203#issuecomment-30502",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_030503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4203#issuecomment-30503",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_030504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4203#issuecomment-30504",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_030505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4203#issuecomment-30505",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -173,16 +173,16 @@ sage: 'baba_baca'.lstrip('ab_')
 archive/issue_comments_030507.json:
 ```json
 {
-    "body": "Attachment [trac_4203.patch](tarball://root/attachments/some-uuid/ticket4203/trac_4203.patch) by mhansen created at 2008-10-23 20:21:05\n\nI put up a new patch which addresses that issue.",
+    "body": "Attachment [trac_4203.patch](tarball://root/attachments/some-uuid/ticket4203/trac_4203.patch) by @mwhansen created at 2008-10-23 20:21:05\n\nI put up a new patch which addresses that issue.",
     "created_at": "2008-10-23T20:21:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4203#issuecomment-30507",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4203.patch](tarball://root/attachments/some-uuid/ticket4203/trac_4203.patch) by mhansen created at 2008-10-23 20:21:05
+Attachment [trac_4203.patch](tarball://root/attachments/some-uuid/ticket4203/trac_4203.patch) by @mwhansen created at 2008-10-23 20:21:05
 
 I put up a new patch which addresses that issue.
 
@@ -216,7 +216,7 @@ archive/issue_comments_030509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4203#issuecomment-30509",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

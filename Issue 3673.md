@@ -3,7 +3,7 @@
 archive/issues_003673.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe present definition of the `NumberFieldElement` class unreasonably \nprivileges the polynomial variable 'x'.  As a result the following fails:\n\n```\nsage: y = polygen(QQ, 'y'); K.<a> = NumberField(y^2 - 2)\nsage: S = K.subfields()\nsage: S[0][1]\n```\n\nThe patch amends the definition of `__init__` for the \n`NumberFieldElement` class to deal with this.\n\nAn extra doctest for the `subfields` method has been included.  Two other \ndoctests have been adjusted to match the revised code.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3673\n\n",
+    "body": "Assignee: @williamstein\n\nThe present definition of the `NumberFieldElement` class unreasonably \nprivileges the polynomial variable 'x'.  As a result the following fails:\n\n```\nsage: y = polygen(QQ, 'y'); K.<a> = NumberField(y^2 - 2)\nsage: S = K.subfields()\nsage: S[0][1]\n```\n\nThe patch amends the definition of `__init__` for the \n`NumberFieldElement` class to deal with this.\n\nAn extra doctest for the `subfields` method has been included.  Two other \ndoctests have been adjusted to match the revised code.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3673\n\n",
     "created_at": "2008-07-18T11:48:36Z",
     "labels": [
         "number theory",
@@ -17,7 +17,7 @@ archive/issues_003673.json:
     "user": "fwclarke"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The present definition of the `NumberFieldElement` class unreasonably 
 privileges the polynomial variable 'x'.  As a result the following fails:
@@ -70,7 +70,7 @@ archive/issue_comments_025965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3673",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3673#issuecomment-25965",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

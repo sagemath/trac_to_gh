@@ -3,7 +3,7 @@
 archive/issues_003599.json:
 ```json
 {
-    "body": "Assignee: itolkov\n\nSlider update:\n\n* Sliders are now version 3, which is similar to current version 1, but longer\n\n* Label to the right of slider containing the current slider value (string representation), which is updated dynamically\n\n* User can hide label with \"display_value=False\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/3599\n\n",
+    "body": "Assignee: @itolkov\n\nSlider update:\n\n* Sliders are now version 3, which is similar to current version 1, but longer\n\n* Label to the right of slider containing the current slider value (string representation), which is updated dynamically\n\n* User can hide label with \"display_value=False\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/3599\n\n",
     "created_at": "2008-07-08T00:28:26Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_003599.json:
     "title": "Longer slider and labels on sliders",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3599",
-    "user": "itolkov"
+    "user": "@itolkov"
 }
 ```
-Assignee: itolkov
+Assignee: @itolkov
 
 Slider update:
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3599
 archive/issue_comments_025424.json:
 ```json
 {
-    "body": "Attachment [trac3599_extcode_1.patch](tarball://root/attachments/some-uuid/ticket3599/trac3599_extcode_1.patch) by itolkov created at 2008-07-08 00:30:01",
+    "body": "Attachment [trac3599_extcode_1.patch](tarball://root/attachments/some-uuid/ticket3599/trac3599_extcode_1.patch) by @itolkov created at 2008-07-08 00:30:01",
     "created_at": "2008-07-08T00:30:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3599#issuecomment-25424",
-    "user": "itolkov"
+    "user": "@itolkov"
 }
 ```
 
-Attachment [trac3599_extcode_1.patch](tarball://root/attachments/some-uuid/ticket3599/trac3599_extcode_1.patch) by itolkov created at 2008-07-08 00:30:01
+Attachment [trac3599_extcode_1.patch](tarball://root/attachments/some-uuid/ticket3599/trac3599_extcode_1.patch) by @itolkov created at 2008-07-08 00:30:01
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_025425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3599#issuecomment-25425",
-    "user": "itolkov"
+    "user": "@itolkov"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_025426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3599#issuecomment-25426",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_025427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3599#issuecomment-25427",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_025428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3599#issuecomment-25428",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -134,16 +134,16 @@ the image of the slider
 archive/issue_comments_025429.json:
 ```json
 {
-    "body": "Attachment [trac3599_extcode_2.patch](tarball://root/attachments/some-uuid/ticket3599/trac3599_extcode_2.patch) by was created at 2008-07-29 18:38:37\n\nI replaced the png by a proper patch.",
+    "body": "Attachment [trac3599_extcode_2.patch](tarball://root/attachments/some-uuid/ticket3599/trac3599_extcode_2.patch) by @williamstein created at 2008-07-29 18:38:37\n\nI replaced the png by a proper patch.",
     "created_at": "2008-07-29T18:38:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3599#issuecomment-25429",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac3599_extcode_2.patch](tarball://root/attachments/some-uuid/ticket3599/trac3599_extcode_2.patch) by was created at 2008-07-29 18:38:37
+Attachment [trac3599_extcode_2.patch](tarball://root/attachments/some-uuid/ticket3599/trac3599_extcode_2.patch) by @williamstein created at 2008-07-29 18:38:37
 
 I replaced the png by a proper patch.
 
@@ -159,7 +159,7 @@ archive/issue_comments_025430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3599#issuecomment-25430",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -194,16 +194,16 @@ Michael
 archive/issue_comments_025432.json:
 ```json
 {
-    "body": "Attachment [slider-bg-3.png](tarball://root/attachments/some-uuid/ticket3599/slider-bg-3.png) by itolkov created at 2008-07-31 17:55:17\n\nHere's the png again.",
+    "body": "Attachment [slider-bg-3.png](tarball://root/attachments/some-uuid/ticket3599/slider-bg-3.png) by @itolkov created at 2008-07-31 17:55:17\n\nHere's the png again.",
     "created_at": "2008-07-31T17:55:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3599#issuecomment-25432",
-    "user": "itolkov"
+    "user": "@itolkov"
 }
 ```
 
-Attachment [slider-bg-3.png](tarball://root/attachments/some-uuid/ticket3599/slider-bg-3.png) by itolkov created at 2008-07-31 17:55:17
+Attachment [slider-bg-3.png](tarball://root/attachments/some-uuid/ticket3599/slider-bg-3.png) by @itolkov created at 2008-07-31 17:55:17
 
 Here's the png again.
 

@@ -3,7 +3,7 @@
 archive/issues_002440.json:
 ```json
 {
-    "body": "Assignee: cswiercz\n\nKeywords: docstring, doctest\n\nProvide missing docstrings and doctests for rings/quotient_ring.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2440\n\n",
+    "body": "Assignee: @cswiercz\n\nKeywords: docstring, doctest\n\nProvide missing docstrings and doctests for rings/quotient_ring.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2440\n\n",
     "created_at": "2008-03-09T18:38:38Z",
     "labels": [
         "doctest coverage",
@@ -14,10 +14,10 @@ archive/issues_002440.json:
     "title": "Doctests for rings/quotient_ring.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2440",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
-Assignee: cswiercz
+Assignee: @cswiercz
 
 Keywords: docstring, doctest
 
@@ -39,7 +39,7 @@ archive/issue_comments_016506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2440",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2440#issuecomment-16506",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_016507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2440",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2440#issuecomment-16507",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_016508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2440",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2440#issuecomment-16508",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_016509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2440",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2440#issuecomment-16509",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -106,16 +106,16 @@ Docstrings and doctests for non-underscore functions in rings/quotient_ring.py. 
 archive/issue_comments_016510.json:
 ```json
 {
-    "body": "Attachment [rings.quotient_ring.patch](tarball://root/attachments/some-uuid/ticket2440/rings.quotient_ring.patch) by cswiercz created at 2008-03-09 19:38:43",
+    "body": "Attachment [rings.quotient_ring.patch](tarball://root/attachments/some-uuid/ticket2440/rings.quotient_ring.patch) by @cswiercz created at 2008-03-09 19:38:43",
     "created_at": "2008-03-09T19:38:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2440",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2440#issuecomment-16510",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Attachment [rings.quotient_ring.patch](tarball://root/attachments/some-uuid/ticket2440/rings.quotient_ring.patch) by cswiercz created at 2008-03-09 19:38:43
+Attachment [rings.quotient_ring.patch](tarball://root/attachments/some-uuid/ticket2440/rings.quotient_ring.patch) by @cswiercz created at 2008-03-09 19:38:43
 
 
 
@@ -129,7 +129,7 @@ archive/issue_comments_016511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2440",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2440#issuecomment-16511",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_016512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2440",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2440#issuecomment-16512",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

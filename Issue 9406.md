@@ -3,7 +3,7 @@
 archive/issues_009406.json:
 ```json
 {
-    "body": "Assignee: olazo\n\nCC:  ncohen\n\nKeywords: polynomial,fit\n\nAt this point, the only way (to my knowledge) to use the least-squares algorithm within sage is trough numpy.polyfit, which is limited to 1-dimensional polynomials. It takes a list of 2-tuples which are interpreted as points of the form (x,P). And returns an array of coefficients of the polynomial with the specified degree.\n\nI've written a sage script that works for arbitrary dimensions, taking a list of N-tuples, and returns a polynomial (as a sage-expression) with the specified degree for each dimension.\n\nI'll post this as soon as I gain access to off-line sage (at this point I am stuck without it).\n\nThis would bring us closer to Mathematica's mighty Fit:\n\n[http://reference.wolfram.com/mathematica/ref/Fit.html](http://reference.wolfram.com/mathematica/ref/Fit.html)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9406\n\n",
+    "body": "Assignee: olazo\n\nCC:  @nathanncohen\n\nKeywords: polynomial,fit\n\nAt this point, the only way (to my knowledge) to use the least-squares algorithm within sage is trough numpy.polyfit, which is limited to 1-dimensional polynomials. It takes a list of 2-tuples which are interpreted as points of the form (x,P). And returns an array of coefficients of the polynomial with the specified degree.\n\nI've written a sage script that works for arbitrary dimensions, taking a list of N-tuples, and returns a polynomial (as a sage-expression) with the specified degree for each dimension.\n\nI'll post this as soon as I gain access to off-line sage (at this point I am stuck without it).\n\nThis would bring us closer to Mathematica's mighty Fit:\n\n[http://reference.wolfram.com/mathematica/ref/Fit.html](http://reference.wolfram.com/mathematica/ref/Fit.html)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9406\n\n",
     "created_at": "2010-07-02T03:06:24Z",
     "labels": [
         "numerical",
@@ -19,7 +19,7 @@ archive/issues_009406.json:
 ```
 Assignee: olazo
 
-CC:  ncohen
+CC:  @nathanncohen
 
 Keywords: polynomial,fit
 
@@ -67,7 +67,7 @@ archive/issue_comments_089631.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9406#issuecomment-89631",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

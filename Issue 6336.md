@@ -14,7 +14,7 @@ archive/issues_006336.json:
     "title": "optional doctest failure -- constructions calculus tests hang forever",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6336",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6336
 archive/issue_comments_050570.json:
 ```json
 {
-    "body": "Attachment [trac_6336.patch](tarball://root/attachments/some-uuid/ticket6336/trac_6336.patch) by jhpalmieri created at 2009-06-16 18:47:10",
+    "body": "Attachment [trac_6336.patch](tarball://root/attachments/some-uuid/ticket6336/trac_6336.patch) by @jhpalmieri created at 2009-06-16 18:47:10",
     "created_at": "2009-06-16T18:47:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6336",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6336#issuecomment-50570",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_6336.patch](tarball://root/attachments/some-uuid/ticket6336/trac_6336.patch) by jhpalmieri created at 2009-06-16 18:47:10
+Attachment [trac_6336.patch](tarball://root/attachments/some-uuid/ticket6336/trac_6336.patch) by @jhpalmieri created at 2009-06-16 18:47:10
 
 
 
@@ -70,7 +70,7 @@ archive/issue_comments_050571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6336",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6336#issuecomment-50571",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_050572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6336",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6336#issuecomment-50572",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_050573.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6336",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6336#issuecomment-50573",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

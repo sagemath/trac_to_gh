@@ -3,7 +3,7 @@
 archive/issues_000203.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nArgh!  Curves over extension fields don't work?\n \nsage: E\nElliptic Curve defined by y^2  = x^3 + x over Finite Field in a of size 5^2\n \nsage: P\n(a : 2*a + 4 : 1)\n \nsage: P+P+P+P+P\n(2*a + 3 : 2*a : 1)\n \nsage: 5*P\n(0 : 1 : 0)\n\n \nsage: 5*P\n(0 : 1 : 0)\n \nsage: P*5\n(2*a + 3 : 2*a : 1)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/203\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nArgh!  Curves over extension fields don't work?\n \nsage: E\nElliptic Curve defined by y^2  = x^3 + x over Finite Field in a of size 5^2\n \nsage: P\n(a : 2*a + 4 : 1)\n \nsage: P+P+P+P+P\n(2*a + 3 : 2*a : 1)\n \nsage: 5*P\n(0 : 1 : 0)\n\n \nsage: 5*P\n(0 : 1 : 0)\n \nsage: P*5\n(2*a + 3 : 2*a : 1)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/203\n\n",
     "created_at": "2007-01-21T03:44:16Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_000203.json:
     "title": "more elliptic curve n*P problems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/203",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -60,7 +60,7 @@ archive/issue_comments_000915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/203#issuecomment-915",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_000916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/203#issuecomment-916",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_000917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/203#issuecomment-917",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_005152.json:
     "title": "order of abelian group element is a rational number, but should be an integer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5152",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -86,7 +86,7 @@ archive/issue_comments_039419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5152",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5152#issuecomment-39419",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -99,16 +99,16 @@ to be applied to 3.3.alpha3
 archive/issue_comments_039420.json:
 ```json
 {
-    "body": "Attachment [trac-5152-abelian-gp-order.patch](tarball://root/attachments/some-uuid/ticket5152/trac-5152-abelian-gp-order.patch) by wdj created at 2009-02-01 23:11:49\n\nPlease *ignore* trac-5152-abelian-gp-order.2.patch (2.8 kB). I don't know how that got there; hg_sage.export was not working the way I expected.",
+    "body": "Attachment [trac-5152-abelian-gp-order.patch](tarball://root/attachments/some-uuid/ticket5152/trac-5152-abelian-gp-order.patch) by @wdjoyner created at 2009-02-01 23:11:49\n\nPlease *ignore* trac-5152-abelian-gp-order.2.patch (2.8 kB). I don't know how that got there; hg_sage.export was not working the way I expected.",
     "created_at": "2009-02-01T23:11:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5152",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5152#issuecomment-39420",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac-5152-abelian-gp-order.patch](tarball://root/attachments/some-uuid/ticket5152/trac-5152-abelian-gp-order.patch) by wdj created at 2009-02-01 23:11:49
+Attachment [trac-5152-abelian-gp-order.patch](tarball://root/attachments/some-uuid/ticket5152/trac-5152-abelian-gp-order.patch) by @wdjoyner created at 2009-02-01 23:11:49
 
 Please *ignore* trac-5152-abelian-gp-order.2.patch (2.8 kB). I don't know how that got there; hg_sage.export was not working the way I expected.
 
@@ -124,7 +124,7 @@ archive/issue_comments_039421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5152",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5152#issuecomment-39421",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

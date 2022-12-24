@@ -3,7 +3,7 @@
 archive/issues_008096.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  robertwb malb\n\nMultiplication of small square matrices is ridiculously slow:\n\n```\nsage: for d in range(1, 100):\n...    print d\n...    A = random_matrix(GF(3), d)\n...    B = random_matrix(GF(3), d)\n...    timeit(\"C = A*B\")\n    \n\n1\n625 loops, best of 3: 93.8 \u00b5s per loop\n2\n625 loops, best of 3: 93.9 \u00b5s per loop\n3\n625 loops, best of 3: 94.2 \u00b5s per loop\n4\n625 loops, best of 3: 94.1 \u00b5s per loop\n5\n625 loops, best of 3: 94.7 \u00b5s per loop\n6\n625 loops, best of 3: 94.9 \u00b5s per loop\n7\n625 loops, best of 3: 95.2 \u00b5s per loop\n8\n625 loops, best of 3: 95.8 \u00b5s per loop\n9\n625 loops, best of 3: 96.8 \u00b5s per loop\n10\n625 loops, best of 3: 97.6 \u00b5s per loop\n11\n625 loops, best of 3: 98.1 \u00b5s per loop\n12\n625 loops, best of 3: 101 \u00b5s per loop\n13\n625 loops, best of 3: 101 \u00b5s per loop\n14\n625 loops, best of 3: 104 \u00b5s per loop\n15\n625 loops, best of 3: 104 \u00b5s per loop\n16\n625 loops, best of 3: 108 \u00b5s per loop\n17\n625 loops, best of 3: 108 \u00b5s per loop\n18\n625 loops, best of 3: 113 \u00b5s per loop\n19\n625 loops, best of 3: 112 \u00b5s per loop\n20\n625 loops, best of 3: 118 \u00b5s per loop\n21\n625 loops, best of 3: 117 \u00b5s per loop\n22\n625 loops, best of 3: 125 \u00b5s per loop\n23\n625 loops, best of 3: 123 \u00b5s per loop\n24\n625 loops, best of 3: 133 \u00b5s per loop\n25\n625 loops, best of 3: 129 \u00b5s per loop\n26\n625 loops, best of 3: 143 \u00b5s per loop\n27\n625 loops, best of 3: 137 \u00b5s per loop\n28\n625 loops, best of 3: 155 \u00b5s per loop\n29\n625 loops, best of 3: 147 \u00b5s per loop\n30\n625 loops, best of 3: 166 \u00b5s per loop\n31\n625 loops, best of 3: 157 \u00b5s per loop\n32\n625 loops, best of 3: 179 \u00b5s per loop\n33\n625 loops, best of 3: 168 \u00b5s per loop\n34\n625 loops, best of 3: 196 \u00b5s per loop\n35\n625 loops, best of 3: 182 \u00b5s per loop\n36\n625 loops, best of 3: 214 \u00b5s per loop\n37\n625 loops, best of 3: 198 \u00b5s per loop\n38\n625 loops, best of 3: 234 \u00b5s per loop\n39\n625 loops, best of 3: 213 \u00b5s per loop\n40\n625 loops, best of 3: 255 \u00b5s per loop\n41\n625 loops, best of 3: 231 \u00b5s per loop\n42\n625 loops, best of 3: 279 \u00b5s per loop\n43\n625 loops, best of 3: 251 \u00b5s per loop\n44\n625 loops, best of 3: 307 \u00b5s per loop\n45\n625 loops, best of 3: 271 \u00b5s per loop\n46\n625 loops, best of 3: 335 \u00b5s per loop\n47\n625 loops, best of 3: 298 \u00b5s per loop\n48\n625 loops, best of 3: 363 \u00b5s per loop\n49\n625 loops, best of 3: 319 \u00b5s per loop\n50\n625 loops, best of 3: 401 \u00b5s per loop\n51\n625 loops, best of 3: 346 \u00b5s per loop\n```\n\n\nHere's a profile of the 1x1 case:\n\n\n```\n625 loops, best of 3: 91.7 \u00b5s per loop\n         810004 function calls in 5.980 CPU seconds\n\n   Ordered by: standard name\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n    40000    0.100    0.000    0.100    0.000 :0(IntegerMod)\n    30000    0.080    0.000    0.080    0.000 :0(append)\n    10000    0.030    0.000    0.030    0.000 :0(base_ring)\n    10000    0.150    0.000    0.900    0.000 :0(category)\n    40000    0.250    0.000    0.290    0.000 :0(has_key)\n    10000    0.070    0.000    0.070    0.000 :0(hasattr)\n    10000    0.030    0.000    0.030    0.000 :0(is_Matrix)\n    80000    0.250    0.000    0.250    0.000 :0(isinstance)\n    30000    0.070    0.000    0.070    0.000 :0(keys)\n    30000    0.040    0.000    0.040    0.000 :0(len)\n    30001    0.080    0.000    0.080    0.000 :0(range)\n    10000    0.030    0.000    0.030    0.000 :0(setdefault)\n        1    0.000    0.000    0.000    0.000 :0(setprofile)\n    30000    0.140    0.000    0.140    0.000 :0(sorted)\n        1    0.380    0.380    5.980    5.980 <string>:1(<module>)\n    30000    0.250    0.000    1.750    0.000 cachefunc.py:155(get_key)\n    10000    0.060    0.000    0.850    0.000 cachefunc.py:220(__call__)\n    10000    0.060    0.000    0.090    0.000 cachefunc.py:254(get_cache)\n    10000    0.050    0.000    0.050    0.000 cachefunc.py:275(__get__)\n    20000    0.270    0.000    1.550    0.000 cachefunc.py:76(__call__)\n    20000    0.060    0.000    0.060    0.000 cachefunc.py:95(get_cache)\n    10000    0.070    0.000    2.520    0.000 category.py:459(__contains__)\n    10000    0.360    0.000    1.550    0.000 category.py:651(is_subcategory)\n    20000    0.120    0.000    1.670    0.000 classcall_metaclass.py:64(__call__)\n    20000    0.040    0.000    0.040    0.000 finite_field_prime_modn.py:121(characteristic)\n    20000    0.110    0.000    0.110    0.000 finite_field_prime_modn.py:187(order)\n    30000    1.010    0.000    1.500    0.000 function_mangling.py:205(fix_to_pos)\n    30000    0.080    0.000    0.080    0.000 function_mangling.py:261(<genexpr>)\n    40000    0.290    0.000    0.390    0.000 integer_mod_ring.py:733(__call__)\n    10000    0.050    0.000    0.070    0.000 matrix_group_element.py:68(is_MatrixGroupElement)\n    10000    0.450    0.000    0.710    0.000 matrix_space.py:1035(matrix)\n    10000    0.140    0.000    4.000    0.000 matrix_space.py:1089(matrix_space)\n    10000    0.200    0.000    3.830    0.000 matrix_space.py:110(MatrixSpace)\n    10000    0.000    0.000    0.000    0.000 matrix_space.py:1112(ncols)\n    10000    0.030    0.000    0.030    0.000 matrix_space.py:1124(nrows)\n    10000    0.310    0.000    1.270    0.000 matrix_space.py:271(__call__)\n    10000    0.000    0.000    0.000    0.000 misc.py:514(get_verbose)\n        1    0.000    0.000    5.980    5.980 profile:0(for i in range(10000): C = A*B)\n        0    0.000             0.000          profile:0(profiler)\n    90000    0.270    0.000    0.270    0.000 unique_representation.py:454(__eq__)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8096\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb @malb\n\nMultiplication of small square matrices is ridiculously slow:\n\n```\nsage: for d in range(1, 100):\n...    print d\n...    A = random_matrix(GF(3), d)\n...    B = random_matrix(GF(3), d)\n...    timeit(\"C = A*B\")\n    \n\n1\n625 loops, best of 3: 93.8 \u00b5s per loop\n2\n625 loops, best of 3: 93.9 \u00b5s per loop\n3\n625 loops, best of 3: 94.2 \u00b5s per loop\n4\n625 loops, best of 3: 94.1 \u00b5s per loop\n5\n625 loops, best of 3: 94.7 \u00b5s per loop\n6\n625 loops, best of 3: 94.9 \u00b5s per loop\n7\n625 loops, best of 3: 95.2 \u00b5s per loop\n8\n625 loops, best of 3: 95.8 \u00b5s per loop\n9\n625 loops, best of 3: 96.8 \u00b5s per loop\n10\n625 loops, best of 3: 97.6 \u00b5s per loop\n11\n625 loops, best of 3: 98.1 \u00b5s per loop\n12\n625 loops, best of 3: 101 \u00b5s per loop\n13\n625 loops, best of 3: 101 \u00b5s per loop\n14\n625 loops, best of 3: 104 \u00b5s per loop\n15\n625 loops, best of 3: 104 \u00b5s per loop\n16\n625 loops, best of 3: 108 \u00b5s per loop\n17\n625 loops, best of 3: 108 \u00b5s per loop\n18\n625 loops, best of 3: 113 \u00b5s per loop\n19\n625 loops, best of 3: 112 \u00b5s per loop\n20\n625 loops, best of 3: 118 \u00b5s per loop\n21\n625 loops, best of 3: 117 \u00b5s per loop\n22\n625 loops, best of 3: 125 \u00b5s per loop\n23\n625 loops, best of 3: 123 \u00b5s per loop\n24\n625 loops, best of 3: 133 \u00b5s per loop\n25\n625 loops, best of 3: 129 \u00b5s per loop\n26\n625 loops, best of 3: 143 \u00b5s per loop\n27\n625 loops, best of 3: 137 \u00b5s per loop\n28\n625 loops, best of 3: 155 \u00b5s per loop\n29\n625 loops, best of 3: 147 \u00b5s per loop\n30\n625 loops, best of 3: 166 \u00b5s per loop\n31\n625 loops, best of 3: 157 \u00b5s per loop\n32\n625 loops, best of 3: 179 \u00b5s per loop\n33\n625 loops, best of 3: 168 \u00b5s per loop\n34\n625 loops, best of 3: 196 \u00b5s per loop\n35\n625 loops, best of 3: 182 \u00b5s per loop\n36\n625 loops, best of 3: 214 \u00b5s per loop\n37\n625 loops, best of 3: 198 \u00b5s per loop\n38\n625 loops, best of 3: 234 \u00b5s per loop\n39\n625 loops, best of 3: 213 \u00b5s per loop\n40\n625 loops, best of 3: 255 \u00b5s per loop\n41\n625 loops, best of 3: 231 \u00b5s per loop\n42\n625 loops, best of 3: 279 \u00b5s per loop\n43\n625 loops, best of 3: 251 \u00b5s per loop\n44\n625 loops, best of 3: 307 \u00b5s per loop\n45\n625 loops, best of 3: 271 \u00b5s per loop\n46\n625 loops, best of 3: 335 \u00b5s per loop\n47\n625 loops, best of 3: 298 \u00b5s per loop\n48\n625 loops, best of 3: 363 \u00b5s per loop\n49\n625 loops, best of 3: 319 \u00b5s per loop\n50\n625 loops, best of 3: 401 \u00b5s per loop\n51\n625 loops, best of 3: 346 \u00b5s per loop\n```\n\n\nHere's a profile of the 1x1 case:\n\n\n```\n625 loops, best of 3: 91.7 \u00b5s per loop\n         810004 function calls in 5.980 CPU seconds\n\n   Ordered by: standard name\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n    40000    0.100    0.000    0.100    0.000 :0(IntegerMod)\n    30000    0.080    0.000    0.080    0.000 :0(append)\n    10000    0.030    0.000    0.030    0.000 :0(base_ring)\n    10000    0.150    0.000    0.900    0.000 :0(category)\n    40000    0.250    0.000    0.290    0.000 :0(has_key)\n    10000    0.070    0.000    0.070    0.000 :0(hasattr)\n    10000    0.030    0.000    0.030    0.000 :0(is_Matrix)\n    80000    0.250    0.000    0.250    0.000 :0(isinstance)\n    30000    0.070    0.000    0.070    0.000 :0(keys)\n    30000    0.040    0.000    0.040    0.000 :0(len)\n    30001    0.080    0.000    0.080    0.000 :0(range)\n    10000    0.030    0.000    0.030    0.000 :0(setdefault)\n        1    0.000    0.000    0.000    0.000 :0(setprofile)\n    30000    0.140    0.000    0.140    0.000 :0(sorted)\n        1    0.380    0.380    5.980    5.980 <string>:1(<module>)\n    30000    0.250    0.000    1.750    0.000 cachefunc.py:155(get_key)\n    10000    0.060    0.000    0.850    0.000 cachefunc.py:220(__call__)\n    10000    0.060    0.000    0.090    0.000 cachefunc.py:254(get_cache)\n    10000    0.050    0.000    0.050    0.000 cachefunc.py:275(__get__)\n    20000    0.270    0.000    1.550    0.000 cachefunc.py:76(__call__)\n    20000    0.060    0.000    0.060    0.000 cachefunc.py:95(get_cache)\n    10000    0.070    0.000    2.520    0.000 category.py:459(__contains__)\n    10000    0.360    0.000    1.550    0.000 category.py:651(is_subcategory)\n    20000    0.120    0.000    1.670    0.000 classcall_metaclass.py:64(__call__)\n    20000    0.040    0.000    0.040    0.000 finite_field_prime_modn.py:121(characteristic)\n    20000    0.110    0.000    0.110    0.000 finite_field_prime_modn.py:187(order)\n    30000    1.010    0.000    1.500    0.000 function_mangling.py:205(fix_to_pos)\n    30000    0.080    0.000    0.080    0.000 function_mangling.py:261(<genexpr>)\n    40000    0.290    0.000    0.390    0.000 integer_mod_ring.py:733(__call__)\n    10000    0.050    0.000    0.070    0.000 matrix_group_element.py:68(is_MatrixGroupElement)\n    10000    0.450    0.000    0.710    0.000 matrix_space.py:1035(matrix)\n    10000    0.140    0.000    4.000    0.000 matrix_space.py:1089(matrix_space)\n    10000    0.200    0.000    3.830    0.000 matrix_space.py:110(MatrixSpace)\n    10000    0.000    0.000    0.000    0.000 matrix_space.py:1112(ncols)\n    10000    0.030    0.000    0.030    0.000 matrix_space.py:1124(nrows)\n    10000    0.310    0.000    1.270    0.000 matrix_space.py:271(__call__)\n    10000    0.000    0.000    0.000    0.000 misc.py:514(get_verbose)\n        1    0.000    0.000    5.980    5.980 profile:0(for i in range(10000): C = A*B)\n        0    0.000             0.000          profile:0(profiler)\n    90000    0.270    0.000    0.270    0.000 unique_representation.py:454(__eq__)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8096\n\n",
     "created_at": "2010-01-27T20:32:00Z",
     "labels": [
         "linear algebra",
@@ -17,9 +17,9 @@ archive/issues_008096.json:
     "user": "boothby"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  robertwb malb
+CC:  @robertwb @malb
 
 Multiplication of small square matrices is ridiculously slow:
 
@@ -200,7 +200,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8096
 archive/issue_comments_070973.json:
 ```json
 {
-    "body": "Changing assignee from was to boothby.",
+    "body": "Changing assignee from @williamstein to boothby.",
     "created_at": "2010-01-27T22:11:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
@@ -209,7 +209,7 @@ archive/issue_comments_070973.json:
 }
 ```
 
-Changing assignee from was to boothby.
+Changing assignee from @williamstein to boothby.
 
 
 
@@ -323,7 +323,7 @@ archive/issue_comments_070977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-70977",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -365,7 +365,7 @@ archive/issue_comments_070979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-70979",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -416,7 +416,7 @@ archive/issue_comments_070980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-70980",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -438,7 +438,7 @@ archive/issue_comments_070981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-70981",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -476,16 +476,16 @@ I complained, and things did improve: hash and copy is alright. But with the abo
 archive/issue_comments_070982.json:
 ```json
 {
-    "body": "Attachment [8096-zero-matrix.patch](tarball://root/attachments/some-uuid/ticket8096/8096-zero-matrix.patch) by robertwb created at 2010-01-31 13:05:19\n\napply on top of previous",
+    "body": "Attachment [8096-zero-matrix.patch](tarball://root/attachments/some-uuid/ticket8096/8096-zero-matrix.patch) by @robertwb created at 2010-01-31 13:05:19\n\napply on top of previous",
     "created_at": "2010-01-31T13:05:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-70982",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [8096-zero-matrix.patch](tarball://root/attachments/some-uuid/ticket8096/8096-zero-matrix.patch) by robertwb created at 2010-01-31 13:05:19
+Attachment [8096-zero-matrix.patch](tarball://root/attachments/some-uuid/ticket8096/8096-zero-matrix.patch) by @robertwb created at 2010-01-31 13:05:19
 
 apply on top of previous
 
@@ -501,7 +501,7 @@ archive/issue_comments_070983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-70983",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -532,7 +532,7 @@ archive/issue_comments_070984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-70984",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -600,7 +600,7 @@ archive/issue_comments_070985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-70985",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -635,7 +635,7 @@ archive/issue_comments_070986.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-70986",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -657,7 +657,7 @@ archive/issue_comments_070987.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-70987",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -693,7 +693,7 @@ archive/issue_comments_070989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-70989",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -713,7 +713,7 @@ archive/issue_comments_070990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-70990",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -731,7 +731,7 @@ archive/issue_comments_070991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-70991",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -772,7 +772,7 @@ archive/issue_comments_070992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-70992",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -794,7 +794,7 @@ archive/issue_comments_070993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-70993",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -812,7 +812,7 @@ archive/issue_comments_070994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-70994",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -886,7 +886,7 @@ archive/issue_comments_070995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-70995",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -904,7 +904,7 @@ archive/issue_comments_070996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-70996",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -922,7 +922,7 @@ archive/issue_comments_070997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-70997",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -943,7 +943,7 @@ archive/issue_comments_070998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-70998",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -961,7 +961,7 @@ archive/issue_comments_070999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-70999",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -988,7 +988,7 @@ archive/issue_comments_071000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71000",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1010,7 +1010,7 @@ archive/issue_comments_071001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71001",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1028,7 +1028,7 @@ archive/issue_comments_071002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71002",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -1046,7 +1046,7 @@ archive/issue_comments_071003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71003",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1123,7 +1123,7 @@ archive/issue_comments_071004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71004",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1171,7 +1171,7 @@ archive/issue_comments_071005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71005",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1219,7 +1219,7 @@ archive/issue_comments_071006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71006",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1241,7 +1241,7 @@ archive/issue_comments_071007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71007",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1276,7 +1276,7 @@ archive/issue_comments_071008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71008",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1296,7 +1296,7 @@ archive/issue_comments_071009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71009",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1318,7 +1318,7 @@ archive/issue_comments_071010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71010",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1347,7 +1347,7 @@ archive/issue_comments_071011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71011",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1385,7 +1385,7 @@ archive/issue_comments_071012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71012",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1403,7 +1403,7 @@ archive/issue_comments_071013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71013",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1421,7 +1421,7 @@ archive/issue_comments_071014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71014",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1439,7 +1439,7 @@ archive/issue_comments_071015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71015",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1457,7 +1457,7 @@ archive/issue_comments_071016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71016",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1475,7 +1475,7 @@ archive/issue_comments_071017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71017",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1493,7 +1493,7 @@ archive/issue_comments_071018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71018",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1514,7 +1514,7 @@ archive/issue_comments_071019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71019",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1532,7 +1532,7 @@ archive/issue_comments_071020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71020",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1578,7 +1578,7 @@ archive/issue_comments_071021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71021",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1760,7 +1760,7 @@ archive/issue_comments_071022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71022",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1782,7 +1782,7 @@ archive/issue_comments_071023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71023",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1800,7 +1800,7 @@ archive/issue_comments_071024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71024",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1818,7 +1818,7 @@ archive/issue_comments_071025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71025",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1839,7 +1839,7 @@ archive/issue_comments_071026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71026",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1861,7 +1861,7 @@ archive/issue_comments_071027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71027",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1879,7 +1879,7 @@ archive/issue_comments_071028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71028",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1892,16 +1892,16 @@ Replaces the previous patches, rebased rel sage-5.0.beta7
 archive/issue_comments_071029.json:
 ```json
 {
-    "body": "Attachment [trac8096_speedup_matrix_parent.patch](tarball://root/attachments/some-uuid/ticket8096/trac8096_speedup_matrix_parent.patch) by SimonKing created at 2012-03-11 14:30:17\n\nArrgh! There was another trailing whitespace in the patch!\n\nIt should now be fixed.\n\nBy the way: Am I entitled to review the patch, even though rebasing the two original patches has not been totally mechanic? I still think that Tom and Robert are the authors, so that I could be reviewer. Agreed?",
+    "body": "Attachment [trac8096_speedup_matrix_parent.patch](tarball://root/attachments/some-uuid/ticket8096/trac8096_speedup_matrix_parent.patch) by @simon-king-jena created at 2012-03-11 14:30:17\n\nArrgh! There was another trailing whitespace in the patch!\n\nIt should now be fixed.\n\nBy the way: Am I entitled to review the patch, even though rebasing the two original patches has not been totally mechanic? I still think that Tom and Robert are the authors, so that I could be reviewer. Agreed?",
     "created_at": "2012-03-11T14:30:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71029",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [trac8096_speedup_matrix_parent.patch](tarball://root/attachments/some-uuid/ticket8096/trac8096_speedup_matrix_parent.patch) by SimonKing created at 2012-03-11 14:30:17
+Attachment [trac8096_speedup_matrix_parent.patch](tarball://root/attachments/some-uuid/ticket8096/trac8096_speedup_matrix_parent.patch) by @simon-king-jena created at 2012-03-11 14:30:17
 
 Arrgh! There was another trailing whitespace in the patch!
 
@@ -1921,7 +1921,7 @@ archive/issue_comments_071030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71030",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1941,7 +1941,7 @@ archive/issue_comments_071031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71031",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1959,7 +1959,7 @@ archive/issue_comments_071032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71032",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1977,7 +1977,7 @@ archive/issue_comments_071033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8096#issuecomment-71033",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

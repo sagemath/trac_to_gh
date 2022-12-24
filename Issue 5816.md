@@ -14,7 +14,7 @@ archive/issues_005816.json:
     "title": "[with patch; needs review] doctesting -- make it possible run doctests in order from file, in random order, and in random seeded order",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5816",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5816
 archive/issue_comments_045696.json:
 ```json
 {
-    "body": "Attachment [trac_scripts-5816.patch](tarball://root/attachments/some-uuid/ticket5816/trac_scripts-5816.patch) by was created at 2009-04-18 23:12:40",
+    "body": "Attachment [trac_scripts-5816.patch](tarball://root/attachments/some-uuid/ticket5816/trac_scripts-5816.patch) by @williamstein created at 2009-04-18 23:12:40",
     "created_at": "2009-04-18T23:12:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5816#issuecomment-45696",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_scripts-5816.patch](tarball://root/attachments/some-uuid/ticket5816/trac_scripts-5816.patch) by was created at 2009-04-18 23:12:40
+Attachment [trac_scripts-5816.patch](tarball://root/attachments/some-uuid/ticket5816/trac_scripts-5816.patch) by @williamstein created at 2009-04-18 23:12:40
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_045697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5816#issuecomment-45697",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -560,7 +560,7 @@ archive/issue_comments_045698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5816#issuecomment-45698",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -1038,7 +1038,7 @@ archive/issue_comments_045699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5816#issuecomment-45699",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -1125,7 +1125,7 @@ archive/issue_comments_045703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5816#issuecomment-45703",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -1150,7 +1150,7 @@ archive/issue_comments_045704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5816#issuecomment-45704",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -1173,16 +1173,16 @@ I like randorder better too.  I'll make a patch to change it to that.
 archive/issue_comments_045705.json:
 ```json
 {
-    "body": "Attachment [trac_scripts-5816-part2.patch](tarball://root/attachments/some-uuid/ticket5816/trac_scripts-5816-part2.patch) by was created at 2009-04-19 00:17:01\n\nthis fixes a bug (before it always ran in random order), changes to -randorder, and makes it so not giving the option uses the \"traditional\" order.",
+    "body": "Attachment [trac_scripts-5816-part2.patch](tarball://root/attachments/some-uuid/ticket5816/trac_scripts-5816-part2.patch) by @williamstein created at 2009-04-19 00:17:01\n\nthis fixes a bug (before it always ran in random order), changes to -randorder, and makes it so not giving the option uses the \"traditional\" order.",
     "created_at": "2009-04-19T00:17:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5816#issuecomment-45705",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_scripts-5816-part2.patch](tarball://root/attachments/some-uuid/ticket5816/trac_scripts-5816-part2.patch) by was created at 2009-04-19 00:17:01
+Attachment [trac_scripts-5816-part2.patch](tarball://root/attachments/some-uuid/ticket5816/trac_scripts-5816-part2.patch) by @williamstein created at 2009-04-19 00:17:01
 
 this fixes a bug (before it always ran in random order), changes to -randorder, and makes it so not giving the option uses the "traditional" order.
 
@@ -1198,7 +1198,7 @@ archive/issue_comments_045706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5816#issuecomment-45706",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -1228,7 +1228,7 @@ archive/issue_comments_045707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5816#issuecomment-45707",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 

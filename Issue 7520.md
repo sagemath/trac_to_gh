@@ -3,7 +3,7 @@
 archive/issues_007520.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  saliola\n\nThe `_check` function of the Combinatorial class of all words (checking that the 40 first letters of the word are in the parent) is called for each word created by the user ....and by any other function. It would be good to add a check parameter (True or False) whether to do the checking. For example, for internal function, it could be turned off. Here is a example of what can be gained from this modification when generating all words of a given length :\n\nBEFORE:\n\n```\nsage: W = Words([0,1])\nsage: time l = list(W.iterate_by_length(15))\nCPU times: user 2.60 s, sys: 0.09 s, total: 2.69 s\nWall time: 2.71 s\n```\n\n\nAFTER:\n\n\n```\nsage: W = Words([0,1])\nsage: time l = list(W.iterate_by_length(15))\nCPU times: user 1.99 s, sys: 0.06 s, total: 2.05 s\nWall time: 2.08 s\n```\n\n\n\nCreation of a word from a word when the parent changes doesn't work well :\n\n\n```\nsage: w = Word('abab')\nsage: P = WordPaths('abcd')\nsage: P(w)\nword: abab\nsage: type(w)\n<class 'sage.combinat.words.word.FiniteWord_str'>\nsage: type(P(w))\n<class 'sage.combinat.words.word.FiniteWord_str'>\n```\n\n\nCreation of a word represented by list from a word represented as str doesn't work well and could work easily:\n\n\n```\nsage: w = Word('aababababab')\nsage: Word(w, datatype='list')\nword: aababababab\nsage: type(_)\n<class 'sage.combinat.words.word.FiniteWord_str'>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7520\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @saliola\n\nThe `_check` function of the Combinatorial class of all words (checking that the 40 first letters of the word are in the parent) is called for each word created by the user ....and by any other function. It would be good to add a check parameter (True or False) whether to do the checking. For example, for internal function, it could be turned off. Here is a example of what can be gained from this modification when generating all words of a given length :\n\nBEFORE:\n\n```\nsage: W = Words([0,1])\nsage: time l = list(W.iterate_by_length(15))\nCPU times: user 2.60 s, sys: 0.09 s, total: 2.69 s\nWall time: 2.71 s\n```\n\n\nAFTER:\n\n\n```\nsage: W = Words([0,1])\nsage: time l = list(W.iterate_by_length(15))\nCPU times: user 1.99 s, sys: 0.06 s, total: 2.05 s\nWall time: 2.08 s\n```\n\n\n\nCreation of a word from a word when the parent changes doesn't work well :\n\n\n```\nsage: w = Word('abab')\nsage: P = WordPaths('abcd')\nsage: P(w)\nword: abab\nsage: type(w)\n<class 'sage.combinat.words.word.FiniteWord_str'>\nsage: type(P(w))\n<class 'sage.combinat.words.word.FiniteWord_str'>\n```\n\n\nCreation of a word represented by list from a word represented as str doesn't work well and could work easily:\n\n\n```\nsage: w = Word('aababababab')\nsage: Word(w, datatype='list')\nword: aababababab\nsage: type(_)\n<class 'sage.combinat.words.word.FiniteWord_str'>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7520\n\n",
     "created_at": "2009-11-23T15:54:48Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_007520.json:
     "title": "Improving word construction and datatype handling",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7520",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
-CC:  saliola
+CC:  @saliola
 
 The `_check` function of the Combinatorial class of all words (checking that the 40 first letters of the word are in the parent) is called for each word created by the user ....and by any other function. It would be good to add a check parameter (True or False) whether to do the checking. For example, for internal function, it could be turned off. Here is a example of what can be gained from this modification when generating all words of a given length :
 
@@ -88,7 +88,7 @@ archive/issue_comments_063702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7520#issuecomment-63702",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_063703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7520#issuecomment-63703",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_063704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7520#issuecomment-63704",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_063705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7520#issuecomment-63705",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_063706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7520#issuecomment-63706",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_063707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7520#issuecomment-63707",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -208,16 +208,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_063708.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to slabbe.",
+    "body": "Changing assignee from @mwhansen to @seblabbe.",
     "created_at": "2009-12-08T12:23:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7520#issuecomment-63708",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Changing assignee from mhansen to slabbe.
+Changing assignee from @mwhansen to @seblabbe.
 
 
 
@@ -231,7 +231,7 @@ archive/issue_comments_063709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7520#issuecomment-63709",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_063710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7520#issuecomment-63710",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_063711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7520#issuecomment-63711",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -282,16 +282,16 @@ Forget about this patch.
 archive/issue_comments_063712.json:
 ```json
 {
-    "body": "Attachment [trac_7520_my_own_review-sl.patch](tarball://root/attachments/some-uuid/ticket7520/trac_7520_my_own_review-sl.patch) by slabbe created at 2010-01-14 14:05:05",
+    "body": "Attachment [trac_7520_my_own_review-sl.patch](tarball://root/attachments/some-uuid/ticket7520/trac_7520_my_own_review-sl.patch) by @seblabbe created at 2010-01-14 14:05:05",
     "created_at": "2010-01-14T14:05:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7520#issuecomment-63712",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_7520_my_own_review-sl.patch](tarball://root/attachments/some-uuid/ticket7520/trac_7520_my_own_review-sl.patch) by slabbe created at 2010-01-14 14:05:05
+Attachment [trac_7520_my_own_review-sl.patch](tarball://root/attachments/some-uuid/ticket7520/trac_7520_my_own_review-sl.patch) by @seblabbe created at 2010-01-14 14:05:05
 
 
 
@@ -305,7 +305,7 @@ archive/issue_comments_063713.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7520#issuecomment-63713",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -343,7 +343,7 @@ archive/issue_comments_063714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7520#issuecomment-63714",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -356,16 +356,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_063715.json:
 ```json
 {
-    "body": "Attachment [trac_7520_words_construction_improvements-sl.patch](tarball://root/attachments/some-uuid/ticket7520/trac_7520_words_construction_improvements-sl.patch) by slabbe created at 2010-02-16 22:07:01\n\nApply only this one.",
+    "body": "Attachment [trac_7520_words_construction_improvements-sl.patch](tarball://root/attachments/some-uuid/ticket7520/trac_7520_words_construction_improvements-sl.patch) by @seblabbe created at 2010-02-16 22:07:01\n\nApply only this one.",
     "created_at": "2010-02-16T22:07:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7520#issuecomment-63715",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_7520_words_construction_improvements-sl.patch](tarball://root/attachments/some-uuid/ticket7520/trac_7520_words_construction_improvements-sl.patch) by slabbe created at 2010-02-16 22:07:01
+Attachment [trac_7520_words_construction_improvements-sl.patch](tarball://root/attachments/some-uuid/ticket7520/trac_7520_words_construction_improvements-sl.patch) by @seblabbe created at 2010-02-16 22:07:01
 
 Apply only this one.
 
@@ -381,7 +381,7 @@ archive/issue_comments_063716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7520#issuecomment-63716",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_063717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7520#issuecomment-63717",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -419,7 +419,7 @@ archive/issue_comments_063718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7520",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7520#issuecomment-63718",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 

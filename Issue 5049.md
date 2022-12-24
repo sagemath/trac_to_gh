@@ -3,7 +3,7 @@
 archive/issues_005049.json:
 ```json
 {
-    "body": "Assignee: was\n\nIf you do\n\n```\nshow(mathematica('2/3'))\n```\n\n\nin the notebook, you get no output.  Since latex(mathematica(...)) works great, this is stupid. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5049\n\n",
+    "body": "Assignee: @williamstein\n\nIf you do\n\n```\nshow(mathematica('2/3'))\n```\n\n\nin the notebook, you get no output.  Since latex(mathematica(...)) works great, this is stupid. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5049\n\n",
     "created_at": "2009-01-21T12:07:18Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_005049.json:
     "title": "show(mathematica('2/3')) doesn't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5049",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 If you do
 
@@ -44,7 +44,7 @@ archive/issue_comments_038477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5049#issuecomment-38477",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_038478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5049#issuecomment-38478",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_038479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5049#issuecomment-38479",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

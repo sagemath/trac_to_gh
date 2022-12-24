@@ -129,16 +129,16 @@ Wow.  I'll report this upstream.  Your proposed solution looks good to me.
 archive/issue_comments_042731.json:
 ```json
 {
-    "body": "Attachment [5501-RIF-pickle.patch](tarball://root/attachments/some-uuid/ticket5501/5501-RIF-pickle.patch) by robertwb created at 2010-01-17 10:21:42",
+    "body": "Attachment [5501-RIF-pickle.patch](tarball://root/attachments/some-uuid/ticket5501/5501-RIF-pickle.patch) by @robertwb created at 2010-01-17 10:21:42",
     "created_at": "2010-01-17T10:21:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5501",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5501#issuecomment-42731",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5501-RIF-pickle.patch](tarball://root/attachments/some-uuid/ticket5501/5501-RIF-pickle.patch) by robertwb created at 2010-01-17 10:21:42
+Attachment [5501-RIF-pickle.patch](tarball://root/attachments/some-uuid/ticket5501/5501-RIF-pickle.patch) by @robertwb created at 2010-01-17 10:21:42
 
 
 
@@ -152,7 +152,7 @@ archive/issue_comments_042732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5501",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5501#issuecomment-42732",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_042733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5501",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5501#issuecomment-42733",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_042734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5501",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5501#issuecomment-42734",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_042735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5501",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5501#issuecomment-42735",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

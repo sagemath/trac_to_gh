@@ -3,7 +3,7 @@
 archive/issues_007389.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nThe default `Scheme._point_morphism_class()` has a different signature than the versions in the subclasses of Scheme, causing a `TypeError` when it is called instead of the intended `NotImplementedError`.\n\nSmall nonsensical example to trigger it in sage 4.2:\n\n\n```\nsage: S = Spec(ZZ)\nsage: f = S.identity_morphism()\nsage: from sage.schemes.generic.glue import GluedScheme\nsage: T = GluedScheme(f,f)\nsage: S.hom([1],T)\nTypeError: _point_morphism_class() takes exactly 1 non-keyword argument (3 given)\n```\n\n\nThe attached patch should fix it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7389\n\n",
+    "body": "Assignee: @aghitza\n\nThe default `Scheme._point_morphism_class()` has a different signature than the versions in the subclasses of Scheme, causing a `TypeError` when it is called instead of the intended `NotImplementedError`.\n\nSmall nonsensical example to trigger it in sage 4.2:\n\n\n```\nsage: S = Spec(ZZ)\nsage: f = S.identity_morphism()\nsage: from sage.schemes.generic.glue import GluedScheme\nsage: T = GluedScheme(f,f)\nsage: S.hom([1],T)\nTypeError: _point_morphism_class() takes exactly 1 non-keyword argument (3 given)\n```\n\n\nThe attached patch should fix it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7389\n\n",
     "created_at": "2009-11-04T19:45:30Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_007389.json:
     "title": "Fallback _point_morphism_class() has wrong signature",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7389",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 The default `Scheme._point_morphism_class()` has a different signature than the versions in the subclasses of Scheme, causing a `TypeError` when it is called instead of the intended `NotImplementedError`.
 
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7389
 archive/issue_comments_062138.json:
 ```json
 {
-    "body": "Attachment [trac_7389-morphism_TypeError.patch](tarball://root/attachments/some-uuid/ticket7389/trac_7389-morphism_TypeError.patch) by wjp created at 2009-11-04 19:47:37",
+    "body": "Attachment [trac_7389-morphism_TypeError.patch](tarball://root/attachments/some-uuid/ticket7389/trac_7389-morphism_TypeError.patch) by @wjp created at 2009-11-04 19:47:37",
     "created_at": "2009-11-04T19:47:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7389#issuecomment-62138",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [trac_7389-morphism_TypeError.patch](tarball://root/attachments/some-uuid/ticket7389/trac_7389-morphism_TypeError.patch) by wjp created at 2009-11-04 19:47:37
+Attachment [trac_7389-morphism_TypeError.patch](tarball://root/attachments/some-uuid/ticket7389/trac_7389-morphism_TypeError.patch) by @wjp created at 2009-11-04 19:47:37
 
 
 
@@ -70,7 +70,7 @@ archive/issue_comments_062139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7389#issuecomment-62139",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_062140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7389#issuecomment-62140",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_062141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7389#issuecomment-62141",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_062142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7389#issuecomment-62142",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_062143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7389#issuecomment-62143",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -155,16 +155,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_062144.json:
 ```json
 {
-    "body": "Attachment [trac_7389-doctest.patch](tarball://root/attachments/some-uuid/ticket7389/trac_7389-doctest.patch) by AlexGhitza created at 2010-01-01 23:36:42\n\nOK, I've put up a patch with the doctest given in the description of this ticket.\n\nI'm happy with Willem's patch, now if someone can look at mine we're set.",
+    "body": "Attachment [trac_7389-doctest.patch](tarball://root/attachments/some-uuid/ticket7389/trac_7389-doctest.patch) by @aghitza created at 2010-01-01 23:36:42\n\nOK, I've put up a patch with the doctest given in the description of this ticket.\n\nI'm happy with Willem's patch, now if someone can look at mine we're set.",
     "created_at": "2010-01-01T23:36:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7389#issuecomment-62144",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_7389-doctest.patch](tarball://root/attachments/some-uuid/ticket7389/trac_7389-doctest.patch) by AlexGhitza created at 2010-01-01 23:36:42
+Attachment [trac_7389-doctest.patch](tarball://root/attachments/some-uuid/ticket7389/trac_7389-doctest.patch) by @aghitza created at 2010-01-01 23:36:42
 
 OK, I've put up a patch with the doctest given in the description of this ticket.
 
@@ -182,7 +182,7 @@ archive/issue_comments_062145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7389#issuecomment-62145",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_062146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7389#issuecomment-62146",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_062147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7389#issuecomment-62147",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008009.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  wcauchois kcrisman\n\nHere's a patch which fixes this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8009\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  wcauchois @kcrisman\n\nHere's a patch which fixes this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8009\n\n",
     "created_at": "2010-01-20T05:53:32Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_008009.json:
     "title": "plot_vector_field does not take a color option",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8009",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  wcauchois kcrisman
+CC:  wcauchois @kcrisman
 
 Here's a patch which fixes this.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8009
 archive/issue_comments_070003.json:
 ```json
 {
-    "body": "Attachment [trac-8009-plot-field-color.patch](tarball://root/attachments/some-uuid/ticket8009/trac-8009-plot-field-color.patch) by jason created at 2010-01-20 05:59:10",
+    "body": "Attachment [trac-8009-plot-field-color.patch](tarball://root/attachments/some-uuid/ticket8009/trac-8009-plot-field-color.patch) by @jasongrout created at 2010-01-20 05:59:10",
     "created_at": "2010-01-20T05:59:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8009",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8009#issuecomment-70003",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-8009-plot-field-color.patch](tarball://root/attachments/some-uuid/ticket8009/trac-8009-plot-field-color.patch) by jason created at 2010-01-20 05:59:10
+Attachment [trac-8009-plot-field-color.patch](tarball://root/attachments/some-uuid/ticket8009/trac-8009-plot-field-color.patch) by @jasongrout created at 2010-01-20 05:59:10
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_070004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8009",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8009#issuecomment-70004",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_070005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8009",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8009#issuecomment-70005",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_070006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8009",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8009#issuecomment-70006",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

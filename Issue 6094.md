@@ -3,7 +3,7 @@
 archive/issues_006094.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  wdj\n\nIn a discussion with David, we realized that he's been using \"method\" for \"algorithm\" in several places. This fix will follow up on #5701, and will probably depend on the patches there.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6094\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @wdjoyner\n\nIn a discussion with David, we realized that he's been using \"method\" for \"algorithm\" in several places. This fix will follow up on #5701, and will probably depend on the patches there.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6094\n\n",
     "created_at": "2009-05-20T18:28:10Z",
     "labels": [
         "coding theory",
@@ -14,12 +14,12 @@ archive/issues_006094.json:
     "title": "Change all occurrences of \"method\" to \"algorithm\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6094",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  wdj
+CC:  @wdjoyner
 
 In a discussion with David, we realized that he's been using "method" for "algorithm" in several places. This fix will follow up on #5701, and will probably depend on the patches there.
 
@@ -39,7 +39,7 @@ archive/issue_comments_048555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48555",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_048556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48556",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_048557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48557",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_048558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48558",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_048559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48559",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_048560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48560",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -167,16 +167,16 @@ based on 4.0.rc0 and all patches in #5701
 archive/issue_comments_048561.json:
 ```json
 {
-    "body": "Attachment [trac_6094-method-vs-algorithm.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-method-vs-algorithm.patch) by wdj created at 2009-05-27 10:16:12\n\nThe current patch passes sage -testall with guava removed and all patched on #5701 applied.",
+    "body": "Attachment [trac_6094-method-vs-algorithm.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-method-vs-algorithm.patch) by @wdjoyner created at 2009-05-27 10:16:12\n\nThe current patch passes sage -testall with guava removed and all patched on #5701 applied.",
     "created_at": "2009-05-27T10:16:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48561",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_6094-method-vs-algorithm.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-method-vs-algorithm.patch) by wdj created at 2009-05-27 10:16:12
+Attachment [trac_6094-method-vs-algorithm.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-method-vs-algorithm.patch) by @wdjoyner created at 2009-05-27 10:16:12
 
 The current patch passes sage -testall with guava removed and all patched on #5701 applied.
 
@@ -192,7 +192,7 @@ archive/issue_comments_048562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48562",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_048563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48563",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -244,16 +244,16 @@ I don't know how to rebase. Can someone point me to a reference? I might be able
 archive/issue_comments_048564.json:
 ```json
 {
-    "body": "Attachment [trac_6094-rebased_against_4.3.1.rc0.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-rebased_against_4.3.1.rc0.patch) by was created at 2010-01-17 11:59:50\n\nI rebased this against 4.3.1.rc0.",
+    "body": "Attachment [trac_6094-rebased_against_4.3.1.rc0.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-rebased_against_4.3.1.rc0.patch) by @williamstein created at 2010-01-17 11:59:50\n\nI rebased this against 4.3.1.rc0.",
     "created_at": "2010-01-17T11:59:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48564",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6094-rebased_against_4.3.1.rc0.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-rebased_against_4.3.1.rc0.patch) by was created at 2010-01-17 11:59:50
+Attachment [trac_6094-rebased_against_4.3.1.rc0.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-rebased_against_4.3.1.rc0.patch) by @williamstein created at 2010-01-17 11:59:50
 
 I rebased this against 4.3.1.rc0.
 
@@ -269,7 +269,7 @@ archive/issue_comments_048565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48565",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_048566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48566",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_048567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48567",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_048568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48568",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -350,7 +350,7 @@ archive/issue_comments_048569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48569",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -368,7 +368,7 @@ archive/issue_comments_048570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48570",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -386,7 +386,7 @@ archive/issue_comments_048571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48571",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -412,7 +412,7 @@ archive/issue_comments_048572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48572",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -428,16 +428,16 @@ Yep.  See the already-merged #8607.
 archive/issue_comments_048573.json:
 ```json
 {
-    "body": "Attachment [trac_6094-4.5.1.with_deprecation](tarball://root/attachments/some-uuid/ticket6094/trac_6094-4.5.1.with_deprecation) by jsrn created at 2010-09-15 13:19:49\n\nRebased for 4.5.1. Change to more files and at more places as well as documentation. Added deprecation warnings.",
+    "body": "Attachment [trac_6094-4.5.1.with_deprecation](tarball://root/attachments/some-uuid/ticket6094/trac_6094-4.5.1.with_deprecation) by @johanrosenkilde created at 2010-09-15 13:19:49\n\nRebased for 4.5.1. Change to more files and at more places as well as documentation. Added deprecation warnings.",
     "created_at": "2010-09-15T13:19:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48573",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
-Attachment [trac_6094-4.5.1.with_deprecation](tarball://root/attachments/some-uuid/ticket6094/trac_6094-4.5.1.with_deprecation) by jsrn created at 2010-09-15 13:19:49
+Attachment [trac_6094-4.5.1.with_deprecation](tarball://root/attachments/some-uuid/ticket6094/trac_6094-4.5.1.with_deprecation) by @johanrosenkilde created at 2010-09-15 13:19:49
 
 Rebased for 4.5.1. Change to more files and at more places as well as documentation. Added deprecation warnings.
 
@@ -453,7 +453,7 @@ archive/issue_comments_048574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48574",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -480,7 +480,7 @@ archive/issue_comments_048575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48575",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -493,16 +493,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_048576.json:
 ```json
 {
-    "body": "Attachment [trac_6094-4.5.3.with_deprecation.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-4.5.3.with_deprecation.patch) by rbeezer created at 2010-09-16 03:45:59\n\nRebased, renamed, commit message edited",
+    "body": "Attachment [trac_6094-4.5.3.with_deprecation.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-4.5.3.with_deprecation.patch) by @rbeezer created at 2010-09-16 03:45:59\n\nRebased, renamed, commit message edited",
     "created_at": "2010-09-16T03:45:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48576",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_6094-4.5.3.with_deprecation.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-4.5.3.with_deprecation.patch) by rbeezer created at 2010-09-16 03:45:59
+Attachment [trac_6094-4.5.3.with_deprecation.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-4.5.3.with_deprecation.patch) by @rbeezer created at 2010-09-16 03:45:59
 
 Rebased, renamed, commit message edited
 
@@ -518,7 +518,7 @@ archive/issue_comments_048577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48577",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -540,7 +540,7 @@ archive/issue_comments_048578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48578",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -617,7 +617,7 @@ archive/issue_comments_048579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48579",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -635,7 +635,7 @@ archive/issue_comments_048580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48580",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -658,7 +658,7 @@ archive/issue_comments_048581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48581",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -687,7 +687,7 @@ archive/issue_comments_048582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48582",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -719,7 +719,7 @@ archive/issue_comments_048583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48583",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -740,7 +740,7 @@ archive/issue_comments_048584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48584",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -755,16 +755,16 @@ On the upside, I am pretty sure that the problem with #9907 is easily solved -- 
 archive/issue_comments_048585.json:
 ```json
 {
-    "body": "Attachment [trac_6094-4.5.3.with_deprecation.2.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-4.5.3.with_deprecation.2.patch) by jsrn created at 2010-09-23 14:03:24\n\nRebased for 4.5.3. Change to more files and at more places as well as documentation. Added deprecation warnings.  Fixed frobenius doctest",
+    "body": "Attachment [trac_6094-4.5.3.with_deprecation.2.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-4.5.3.with_deprecation.2.patch) by @johanrosenkilde created at 2010-09-23 14:03:24\n\nRebased for 4.5.3. Change to more files and at more places as well as documentation. Added deprecation warnings.  Fixed frobenius doctest",
     "created_at": "2010-09-23T14:03:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48585",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
-Attachment [trac_6094-4.5.3.with_deprecation.2.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-4.5.3.with_deprecation.2.patch) by jsrn created at 2010-09-23 14:03:24
+Attachment [trac_6094-4.5.3.with_deprecation.2.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-4.5.3.with_deprecation.2.patch) by @johanrosenkilde created at 2010-09-23 14:03:24
 
 Rebased for 4.5.3. Change to more files and at more places as well as documentation. Added deprecation warnings.  Fixed frobenius doctest
 
@@ -780,7 +780,7 @@ archive/issue_comments_048586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48586",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -798,7 +798,7 @@ archive/issue_comments_048587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48587",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -820,7 +820,7 @@ archive/issue_comments_048588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48588",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -838,7 +838,7 @@ archive/issue_comments_048589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48589",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -858,7 +858,7 @@ archive/issue_comments_048590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48590",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -876,7 +876,7 @@ archive/issue_comments_048591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48591",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -894,7 +894,7 @@ archive/issue_comments_048592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48592",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -980,7 +980,7 @@ archive/issue_comments_048593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48593",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -993,16 +993,16 @@ Rebased for 4.6.1.alpha0. Still requires patches for #9919 and #9907 (in that or
 archive/issue_comments_048594.json:
 ```json
 {
-    "body": "Attachment [trac_6094-4.6.1.alpha0.with_deprecation.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-4.6.1.alpha0.with_deprecation.patch) by jsrn created at 2010-11-16 10:00:02",
+    "body": "Attachment [trac_6094-4.6.1.alpha0.with_deprecation.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-4.6.1.alpha0.with_deprecation.patch) by @johanrosenkilde created at 2010-11-16 10:00:02",
     "created_at": "2010-11-16T10:00:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48594",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
-Attachment [trac_6094-4.6.1.alpha0.with_deprecation.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-4.6.1.alpha0.with_deprecation.patch) by jsrn created at 2010-11-16 10:00:02
+Attachment [trac_6094-4.6.1.alpha0.with_deprecation.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-4.6.1.alpha0.with_deprecation.patch) by @johanrosenkilde created at 2010-11-16 10:00:02
 
 
 
@@ -1016,7 +1016,7 @@ archive/issue_comments_048595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48595",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -1034,7 +1034,7 @@ archive/issue_comments_048596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48596",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -1052,7 +1052,7 @@ archive/issue_comments_048597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48597",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -1070,7 +1070,7 @@ archive/issue_comments_048598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48598",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

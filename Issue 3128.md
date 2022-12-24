@@ -66,16 +66,16 @@ To be more precise, the problem is that the docstring of PolynomialRing says the
 archive/issue_comments_021672.json:
 ```json
 {
-    "body": "Attachment [PolynomialRingDoc.patch](tarball://root/attachments/some-uuid/ticket3128/PolynomialRingDoc.patch) by SimonKing created at 2009-01-22 06:16:49\n\nFixing wrong docstring statement and adding more doctests",
+    "body": "Attachment [PolynomialRingDoc.patch](tarball://root/attachments/some-uuid/ticket3128/PolynomialRingDoc.patch) by @simon-king-jena created at 2009-01-22 06:16:49\n\nFixing wrong docstring statement and adding more doctests",
     "created_at": "2009-01-22T06:16:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3128#issuecomment-21672",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [PolynomialRingDoc.patch](tarball://root/attachments/some-uuid/ticket3128/PolynomialRingDoc.patch) by SimonKing created at 2009-01-22 06:16:49
+Attachment [PolynomialRingDoc.patch](tarball://root/attachments/some-uuid/ticket3128/PolynomialRingDoc.patch) by @simon-king-jena created at 2009-01-22 06:16:49
 
 Fixing wrong docstring statement and adding more doctests
 
@@ -91,7 +91,7 @@ archive/issue_comments_021673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3128#issuecomment-21673",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_021674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3128#issuecomment-21674",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_021675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3128#issuecomment-21675",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -153,16 +153,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_021676.json:
 ```json
 {
-    "body": "Attachment [trac_3128.patch](tarball://root/attachments/some-uuid/ticket3128/trac_3128.patch) by mhansen created at 2009-10-19 19:12:02\n\nI rebased the patch and changed the docstring as per malb's suggestion.",
+    "body": "Attachment [trac_3128.patch](tarball://root/attachments/some-uuid/ticket3128/trac_3128.patch) by @mwhansen created at 2009-10-19 19:12:02\n\nI rebased the patch and changed the docstring as per malb's suggestion.",
     "created_at": "2009-10-19T19:12:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3128#issuecomment-21676",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3128.patch](tarball://root/attachments/some-uuid/ticket3128/trac_3128.patch) by mhansen created at 2009-10-19 19:12:02
+Attachment [trac_3128.patch](tarball://root/attachments/some-uuid/ticket3128/trac_3128.patch) by @mwhansen created at 2009-10-19 19:12:02
 
 I rebased the patch and changed the docstring as per malb's suggestion.
 
@@ -178,7 +178,7 @@ archive/issue_comments_021677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3128#issuecomment-21677",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_021678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3128#issuecomment-21678",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_021679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3128#issuecomment-21679",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

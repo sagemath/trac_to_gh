@@ -3,7 +3,7 @@
 archive/issues_000480.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  was vbraun\n\nFedora Core 7 has SELinux turned on per default. Sage should support running when SELinux is activated. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/480\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @williamstein @vbraun\n\nFedora Core 7 has SELinux turned on per default. Sage should support running when SELinux is activated. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/480\n\n",
     "created_at": "2007-08-22T21:37:55Z",
     "labels": [
         "distribution",
@@ -19,7 +19,7 @@ archive/issues_000480.json:
 ```
 Assignee: mabshoff
 
-CC:  was vbraun
+CC:  @williamstein @vbraun
 
 Fedora Core 7 has SELinux turned on per default. Sage should support running when SELinux is activated. 
 
@@ -92,7 +92,7 @@ archive/issue_comments_002395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/480#issuecomment-2395",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_002396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/480#issuecomment-2396",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_002397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/480#issuecomment-2397",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_002398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/480#issuecomment-2398",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_002399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/480#issuecomment-2399",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_002400.json:
     "issue": "https://github.com/sagemath/sagetest/issues/480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/480#issuecomment-2400",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_002401.json:
     "issue": "https://github.com/sagemath/sagetest/issues/480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/480#issuecomment-2401",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_002402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/480#issuecomment-2402",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000965.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jen\n\nThe code is attached to this ticket and is GPL'd now. \n\nActually, the code is here:\n   http://sage.math.washington.edu/tmp/smalljac.tar.bz2\n\nIssue created by migration from https://trac.sagemath.org/ticket/965\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jbalakrishnan\n\nThe code is attached to this ticket and is GPL'd now. \n\nActually, the code is here:\n   http://sage.math.washington.edu/tmp/smalljac.tar.bz2\n\nIssue created by migration from https://trac.sagemath.org/ticket/965\n\n",
     "created_at": "2007-10-21T20:34:08Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_000965.json:
     "title": "incorporate drew sutherland's smalljac into Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/965",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jen
+CC:  @jbalakrishnan
 
 The code is attached to this ticket and is GPL'd now. 
 
@@ -42,7 +42,7 @@ archive/issue_comments_005881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/965#issuecomment-5881",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_005882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/965#issuecomment-5882",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -244,16 +244,16 @@ a preliminary package
 archive/issue_comments_005884.json:
 ```json
 {
-    "body": "Attachment [smalljac.spkg](tarball://root/attachments/some-uuid/ticket965/smalljac.spkg) by ncalexan created at 2009-07-09 03:16:57",
+    "body": "Attachment [smalljac.spkg](tarball://root/attachments/some-uuid/ticket965/smalljac.spkg) by @ncalexan created at 2009-07-09 03:16:57",
     "created_at": "2009-07-09T03:16:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/965#issuecomment-5884",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [smalljac.spkg](tarball://root/attachments/some-uuid/ticket965/smalljac.spkg) by ncalexan created at 2009-07-09 03:16:57
+Attachment [smalljac.spkg](tarball://root/attachments/some-uuid/ticket965/smalljac.spkg) by @ncalexan created at 2009-07-09 03:16:57
 
 
 
@@ -262,16 +262,16 @@ Attachment [smalljac.spkg](tarball://root/attachments/some-uuid/ticket965/smallj
 archive/issue_comments_005885.json:
 ```json
 {
-    "body": "Attachment [smalljac.patch](tarball://root/attachments/some-uuid/ticket965/smalljac.patch) by ncalexan created at 2009-07-09 03:20:38\n\nHere's a patch and a new (very preliminary!) spkg.  It builds for me on sage.math but won't work most other places, since Drew's code assumes a 64-bit `unsigned long`.",
+    "body": "Attachment [smalljac.patch](tarball://root/attachments/some-uuid/ticket965/smalljac.patch) by @ncalexan created at 2009-07-09 03:20:38\n\nHere's a patch and a new (very preliminary!) spkg.  It builds for me on sage.math but won't work most other places, since Drew's code assumes a 64-bit `unsigned long`.",
     "created_at": "2009-07-09T03:20:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/965#issuecomment-5885",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [smalljac.patch](tarball://root/attachments/some-uuid/ticket965/smalljac.patch) by ncalexan created at 2009-07-09 03:20:38
+Attachment [smalljac.patch](tarball://root/attachments/some-uuid/ticket965/smalljac.patch) by @ncalexan created at 2009-07-09 03:20:38
 
 Here's a patch and a new (very preliminary!) spkg.  It builds for me on sage.math but won't work most other places, since Drew's code assumes a 64-bit `unsigned long`.
 
@@ -287,7 +287,7 @@ archive/issue_comments_005886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/965#issuecomment-5886",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -300,16 +300,16 @@ Changing keywords from "" to "drew sutherland smalljac point counting hyperellip
 archive/issue_comments_005887.json:
 ```json
 {
-    "body": "Attachment [smalljac_v3.spkg](tarball://root/attachments/some-uuid/ticket965/smalljac_v3.spkg) by jdemeyer created at 2013-08-13 15:34:36",
+    "body": "Attachment [smalljac_v3.spkg](tarball://root/attachments/some-uuid/ticket965/smalljac_v3.spkg) by @jdemeyer created at 2013-08-13 15:34:36",
     "created_at": "2013-08-13T15:34:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/965#issuecomment-5887",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [smalljac_v3.spkg](tarball://root/attachments/some-uuid/ticket965/smalljac_v3.spkg) by jdemeyer created at 2013-08-13 15:34:36
+Attachment [smalljac_v3.spkg](tarball://root/attachments/some-uuid/ticket965/smalljac_v3.spkg) by @jdemeyer created at 2013-08-13 15:34:36
 
 
 
@@ -323,7 +323,7 @@ archive/issue_comments_005888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/965#issuecomment-5888",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_005889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/965#issuecomment-5889",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -363,7 +363,7 @@ archive/issue_comments_005890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/965#issuecomment-5890",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -381,7 +381,7 @@ archive/issue_comments_005891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/965#issuecomment-5891",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -411,7 +411,7 @@ archive/issue_comments_005892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/965#issuecomment-5892",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -435,7 +435,7 @@ archive/issue_comments_005893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/965#issuecomment-5893",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -464,7 +464,7 @@ archive/issue_comments_005894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/965#issuecomment-5894",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -498,7 +498,7 @@ archive/issue_comments_005895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/965#issuecomment-5895",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 

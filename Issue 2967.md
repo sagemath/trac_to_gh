@@ -3,7 +3,7 @@
 archive/issues_002967.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nI've attached a patch that fixes the Debian packaging of lcalc to work with SAGE 3.0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2967\n\n",
+    "body": "Assignee: @timabbott\n\nI've attached a patch that fixes the Debian packaging of lcalc to work with SAGE 3.0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2967\n\n",
     "created_at": "2008-04-20T04:06:51Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_002967.json:
     "title": "Debian package lcalc spkg fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2967",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 I've attached a patch that fixes the Debian packaging of lcalc to work with SAGE 3.0.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2967
 archive/issue_comments_020454.json:
 ```json
 {
-    "body": "Attachment [lcalc-debian-cleanup.patch](tarball://root/attachments/some-uuid/ticket2967/lcalc-debian-cleanup.patch) by tabbott created at 2008-04-20 04:06:58",
+    "body": "Attachment [lcalc-debian-cleanup.patch](tarball://root/attachments/some-uuid/ticket2967/lcalc-debian-cleanup.patch) by @timabbott created at 2008-04-20 04:06:58",
     "created_at": "2008-04-20T04:06:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2967#issuecomment-20454",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [lcalc-debian-cleanup.patch](tarball://root/attachments/some-uuid/ticket2967/lcalc-debian-cleanup.patch) by tabbott created at 2008-04-20 04:06:58
+Attachment [lcalc-debian-cleanup.patch](tarball://root/attachments/some-uuid/ticket2967/lcalc-debian-cleanup.patch) by @timabbott created at 2008-04-20 04:06:58
 
 
 

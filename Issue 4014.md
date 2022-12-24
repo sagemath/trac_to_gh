@@ -3,7 +3,7 @@
 archive/issues_004014.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis is probably some of the earliest code in Sage and is not being used anywhere.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4014\n\n",
+    "body": "Assignee: @williamstein\n\nThis is probably some of the earliest code in Sage and is not being used anywhere.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4014\n\n",
     "created_at": "2008-08-31T04:03:02Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_004014.json:
     "title": "remove sage/plot/graph.py from Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4014",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This is probably some of the earliest code in Sage and is not being used anywhere.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4014
 archive/issue_comments_028959.json:
 ```json
 {
-    "body": "Attachment [trac_4014.patch](tarball://root/attachments/some-uuid/ticket4014/trac_4014.patch) by mhansen created at 2008-08-31 04:06:56",
+    "body": "Attachment [trac_4014.patch](tarball://root/attachments/some-uuid/ticket4014/trac_4014.patch) by @mwhansen created at 2008-08-31 04:06:56",
     "created_at": "2008-08-31T04:06:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4014",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4014#issuecomment-28959",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4014.patch](tarball://root/attachments/some-uuid/ticket4014/trac_4014.patch) by mhansen created at 2008-08-31 04:06:56
+Attachment [trac_4014.patch](tarball://root/attachments/some-uuid/ticket4014/trac_4014.patch) by @mwhansen created at 2008-08-31 04:06:56
 
 
 

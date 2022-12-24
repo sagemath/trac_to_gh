@@ -3,7 +3,7 @@
 archive/issues_000805.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: F.<a> = QuadraticField(-5)\nsage: I = F.ideal(3)\nsage: I.is_trivial()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/david/sage-2.8.5/<ipython console> in <module>()\n\n/Users/david/sage-2.8.5/local/lib/python2.5/site-packages/sage/rings/ideal.py in is_trivial(self)\n    229             return True\n    230         elif self.is_principal():\n--> 231             return self.gen().is_unit()\n    232         raise NotImplementedError\n    233 \n\n<type 'exceptions.AttributeError'>: 'NumberFieldIdeal' object has no attribute 'gen'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/805\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: F.<a> = QuadraticField(-5)\nsage: I = F.ideal(3)\nsage: I.is_trivial()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/david/sage-2.8.5/<ipython console> in <module>()\n\n/Users/david/sage-2.8.5/local/lib/python2.5/site-packages/sage/rings/ideal.py in is_trivial(self)\n    229             return True\n    230         elif self.is_principal():\n--> 231             return self.gen().is_unit()\n    232         raise NotImplementedError\n    233 \n\n<type 'exceptions.AttributeError'>: 'NumberFieldIdeal' object has no attribute 'gen'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/805\n\n",
     "created_at": "2007-10-03T14:12:24Z",
     "labels": [
         "number theory",
@@ -17,7 +17,7 @@ archive/issues_000805.json:
     "user": "dmharvey"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -57,7 +57,7 @@ archive/issue_comments_004863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/805#issuecomment-4863",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -70,16 +70,16 @@ Changing status from new to assigned.
 archive/issue_comments_004864.json:
 ```json
 {
-    "body": "Changing assignee from was to robertwb.",
+    "body": "Changing assignee from @williamstein to @robertwb.",
     "created_at": "2007-11-04T02:35:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/805#issuecomment-4864",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from was to robertwb.
+Changing assignee from @williamstein to @robertwb.
 
 
 
@@ -88,16 +88,16 @@ Changing assignee from was to robertwb.
 archive/issue_comments_004865.json:
 ```json
 {
-    "body": "Attachment [805-trivial_nf_ideal.diff](tarball://root/attachments/some-uuid/ticket805/805-trivial_nf_ideal.diff) by robertwb created at 2007-11-04 02:37:43",
+    "body": "Attachment [805-trivial_nf_ideal.diff](tarball://root/attachments/some-uuid/ticket805/805-trivial_nf_ideal.diff) by @robertwb created at 2007-11-04 02:37:43",
     "created_at": "2007-11-04T02:37:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/805#issuecomment-4865",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [805-trivial_nf_ideal.diff](tarball://root/attachments/some-uuid/ticket805/805-trivial_nf_ideal.diff) by robertwb created at 2007-11-04 02:37:43
+Attachment [805-trivial_nf_ideal.diff](tarball://root/attachments/some-uuid/ticket805/805-trivial_nf_ideal.diff) by @robertwb created at 2007-11-04 02:37:43
 
 
 
@@ -106,16 +106,16 @@ Attachment [805-trivial_nf_ideal.diff](tarball://root/attachments/some-uuid/tick
 archive/issue_comments_004866.json:
 ```json
 {
-    "body": "Attachment [805-ncalexan-general-2.diff](tarball://root/attachments/some-uuid/ticket805/805-ncalexan-general-2.diff) by ncalexan created at 2007-11-04 03:07:59\n\nBoth patches above should be applied: Robert's handles the special case of number fields; mine fixes a bug in multipolynomial ideals and makes generic ideals more robust.",
+    "body": "Attachment [805-ncalexan-general-2.diff](tarball://root/attachments/some-uuid/ticket805/805-ncalexan-general-2.diff) by @ncalexan created at 2007-11-04 03:07:59\n\nBoth patches above should be applied: Robert's handles the special case of number fields; mine fixes a bug in multipolynomial ideals and makes generic ideals more robust.",
     "created_at": "2007-11-04T03:07:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/805#issuecomment-4866",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [805-ncalexan-general-2.diff](tarball://root/attachments/some-uuid/ticket805/805-ncalexan-general-2.diff) by ncalexan created at 2007-11-04 03:07:59
+Attachment [805-ncalexan-general-2.diff](tarball://root/attachments/some-uuid/ticket805/805-ncalexan-general-2.diff) by @ncalexan created at 2007-11-04 03:07:59
 
 Both patches above should be applied: Robert's handles the special case of number fields; mine fixes a bug in multipolynomial ideals and makes generic ideals more robust.
 
@@ -131,7 +131,7 @@ archive/issue_comments_004867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/805#issuecomment-4867",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

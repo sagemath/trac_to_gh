@@ -14,7 +14,7 @@ archive/issues_004054.json:
     "title": "[with patch, needs review] shorten doctesting in graph_generators.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4054",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: tbd
@@ -50,16 +50,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4054
 archive/issue_comments_029221.json:
 ```json
 {
-    "body": "Changing assignee from tbd to rlm.",
+    "body": "Changing assignee from tbd to @rlmill.",
     "created_at": "2008-09-03T23:25:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4054#issuecomment-29221",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Changing assignee from tbd to rlm.
+Changing assignee from tbd to @rlmill.
 
 
 
@@ -92,16 +92,16 @@ Michael
 archive/issue_comments_029223.json:
 ```json
 {
-    "body": "Attachment [trac_4054-long_docs.patch](tarball://root/attachments/some-uuid/ticket4054/trac_4054-long_docs.patch) by rlm created at 2008-09-04 22:54:41",
+    "body": "Attachment [trac_4054-long_docs.patch](tarball://root/attachments/some-uuid/ticket4054/trac_4054-long_docs.patch) by @rlmill created at 2008-09-04 22:54:41",
     "created_at": "2008-09-04T22:54:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4054#issuecomment-29223",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_4054-long_docs.patch](tarball://root/attachments/some-uuid/ticket4054/trac_4054-long_docs.patch) by rlm created at 2008-09-04 22:54:41
+Attachment [trac_4054-long_docs.patch](tarball://root/attachments/some-uuid/ticket4054/trac_4054-long_docs.patch) by @rlmill created at 2008-09-04 22:54:41
 
 
 

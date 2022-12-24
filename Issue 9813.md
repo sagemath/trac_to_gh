@@ -3,7 +3,7 @@
 archive/issues_009813.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nKeywords: padic, p-adic\n\nI've implemented coercion morphisms from ZZ and QQ to Zp and Qp.  This drops item creation time from about 20 microseconds to about 1 microsecond on my machine.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9814\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: padic, p-adic\n\nI've implemented coercion morphisms from ZZ and QQ to Zp and Qp.  This drops item creation time from about 20 microseconds to about 1 microsecond on my machine.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9814\n\n",
     "created_at": "2010-08-27T05:29:00Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_009813.json:
     "title": "Improve creation time for p-adic elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9813",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Keywords: padic, p-adic
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9814
 archive/issue_comments_096773.json:
 ```json
 {
-    "body": "Attachment [trac-9814.patch](tarball://root/attachments/some-uuid/ticket9814/trac-9814.patch) by roed created at 2010-08-27 05:32:31\n\nSee the thread http://groups.google.com/group/sage-devel/browse_thread/thread/612ea8f2f9d06e37?pli=1",
+    "body": "Attachment [trac-9814.patch](tarball://root/attachments/some-uuid/ticket9814/trac-9814.patch) by @roed314 created at 2010-08-27 05:32:31\n\nSee the thread http://groups.google.com/group/sage-devel/browse_thread/thread/612ea8f2f9d06e37?pli=1",
     "created_at": "2010-08-27T05:32:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9813#issuecomment-96773",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [trac-9814.patch](tarball://root/attachments/some-uuid/ticket9814/trac-9814.patch) by roed created at 2010-08-27 05:32:31
+Attachment [trac-9814.patch](tarball://root/attachments/some-uuid/ticket9814/trac-9814.patch) by @roed314 created at 2010-08-27 05:32:31
 
 See the thread http://groups.google.com/group/sage-devel/browse_thread/thread/612ea8f2f9d06e37?pli=1
 
@@ -59,7 +59,7 @@ archive/issue_comments_096774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9813#issuecomment-96774",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_096777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9813#issuecomment-96777",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_096778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9813#issuecomment-96778",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_096779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9813#issuecomment-96779",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_096780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9813#issuecomment-96780",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -203,16 +203,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_096781.json:
 ```json
 {
-    "body": "Attachment [trac_9814-2.patch](tarball://root/attachments/some-uuid/ticket9814/trac_9814-2.patch) by roed created at 2010-09-18 21:29:25\n\nWell, that was more work than I expected, but it also fixes some problems with non-uniqueness of p-adic parents.",
+    "body": "Attachment [trac_9814-2.patch](tarball://root/attachments/some-uuid/ticket9814/trac_9814-2.patch) by @roed314 created at 2010-09-18 21:29:25\n\nWell, that was more work than I expected, but it also fixes some problems with non-uniqueness of p-adic parents.",
     "created_at": "2010-09-18T21:29:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9813#issuecomment-96781",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [trac_9814-2.patch](tarball://root/attachments/some-uuid/ticket9814/trac_9814-2.patch) by roed created at 2010-09-18 21:29:25
+Attachment [trac_9814-2.patch](tarball://root/attachments/some-uuid/ticket9814/trac_9814-2.patch) by @roed314 created at 2010-09-18 21:29:25
 
 Well, that was more work than I expected, but it also fixes some problems with non-uniqueness of p-adic parents.
 
@@ -264,7 +264,7 @@ archive/issue_comments_096784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9813#issuecomment-96784",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_096785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9813#issuecomment-96785",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_096786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9813#issuecomment-96786",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -313,16 +313,16 @@ Could someone prepend the ticket number to the commit string's first line and re
 archive/issue_comments_096787.json:
 ```json
 {
-    "body": "Attachment [trac_9814-3.patch](tarball://root/attachments/some-uuid/ticket9814/trac_9814-3.patch) by davidloeffler created at 2010-09-28 08:21:21\n\nCommit message fixed. Apply only this patch.",
+    "body": "Attachment [trac_9814-3.patch](tarball://root/attachments/some-uuid/ticket9814/trac_9814-3.patch) by @loefflerd created at 2010-09-28 08:21:21\n\nCommit message fixed. Apply only this patch.",
     "created_at": "2010-09-28T08:21:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9813#issuecomment-96787",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_9814-3.patch](tarball://root/attachments/some-uuid/ticket9814/trac_9814-3.patch) by davidloeffler created at 2010-09-28 08:21:21
+Attachment [trac_9814-3.patch](tarball://root/attachments/some-uuid/ticket9814/trac_9814-3.patch) by @loefflerd created at 2010-09-28 08:21:21
 
 Commit message fixed. Apply only this patch.
 
@@ -338,7 +338,7 @@ archive/issue_comments_096788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9813#issuecomment-96788",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -356,7 +356,7 @@ archive/issue_comments_096789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9813#issuecomment-96789",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -374,7 +374,7 @@ archive/issue_comments_096790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9813#issuecomment-96790",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

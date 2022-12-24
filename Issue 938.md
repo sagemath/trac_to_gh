@@ -3,7 +3,7 @@
 archive/issues_000938.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe graph_database.py file has lots of problems now that I've removed the sage.:'s.  This needs to be fixed, and I don't know enough about the code to fix it. \n\nIssue created by migration from https://trac.sagemath.org/ticket/938\n\n",
+    "body": "Assignee: @williamstein\n\nThe graph_database.py file has lots of problems now that I've removed the sage.:'s.  This needs to be fixed, and I don't know enough about the code to fix it. \n\nIssue created by migration from https://trac.sagemath.org/ticket/938\n\n",
     "created_at": "2007-10-20T06:44:05Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_000938.json:
     "title": "graph_database.py has some mysterious problems.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/938",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The graph_database.py file has lots of problems now that I've removed the sage.:'s.  This needs to be fixed, and I don't know enough about the code to fix it. 
 
@@ -37,7 +37,7 @@ archive/issue_comments_005733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/938#issuecomment-5733",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_005734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/938#issuecomment-5734",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_005735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/938#issuecomment-5735",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_005736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/938#issuecomment-5736",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_005737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/938#issuecomment-5737",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -159,16 +159,16 @@ The problem is in the else block, where query is something. The problem is, this
 archive/issue_comments_005738.json:
 ```json
 {
-    "body": "Attachment [7087.patch](tarball://root/attachments/some-uuid/ticket938/7087.patch) by rlm created at 2007-10-24 01:58:42",
+    "body": "Attachment [7087.patch](tarball://root/attachments/some-uuid/ticket938/7087.patch) by @rlmill created at 2007-10-24 01:58:42",
     "created_at": "2007-10-24T01:58:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/938#issuecomment-5738",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [7087.patch](tarball://root/attachments/some-uuid/ticket938/7087.patch) by rlm created at 2007-10-24 01:58:42
+Attachment [7087.patch](tarball://root/attachments/some-uuid/ticket938/7087.patch) by @rlmill created at 2007-10-24 01:58:42
 
 
 
@@ -182,7 +182,7 @@ archive/issue_comments_005739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/938#issuecomment-5739",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

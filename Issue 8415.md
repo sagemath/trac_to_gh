@@ -3,7 +3,7 @@
 archive/issues_008415.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  cremona\n\n\n```\nE = EllipticCurve('37a')\nK.<a> = QuadraticField(-7)\nEK = E.change_ring(K)\nL = EK.period_lattice(K.complex_embeddings()[0])\n[hang, can't control-c]\n```\n\n\nGDB Backtrace: \n\n\n```\n#0  0x00007f87d128506a in Flx_to_ZX ()\n   from /usr/local/sage/local/lib/libpari-gmp.so.2\n#1  0x00007f87d13a378f in FpX_split_Berlekamp ()\n   from /usr/local/sage/local/lib/libpari-gmp.so.2\n#2  0x00007f87d146fbda in nfsqff ()\n   from /usr/local/sage/local/lib/libpari-gmp.so.2\n#3  0x00007f87d1470383 in nffactor ()\n   from /usr/local/sage/local/lib/libpari-gmp.so.2\n#4  0x00007f87cc206364 in __pyx_pf_4sage_4libs_4pari_3gen_3gen_nffactor (\n    __pyx_v_self=0x4a0bc58, __pyx_v_x=<value optimized out>)\n    at sage/libs/pari/gen.c:27077\n#5  0x00000000004978b1 in PyEval_EvalFrameEx (f=0x485aea0, \n    throwflag=<value optimized out>) at Python/ceval.c:3694\n#6  0x0000000000498e61 in PyEval_EvalCodeEx (co=0x20635d0, \n    globals=<value optimized out>, locals=<value optimized out>, args=0x20, \n    argcount=2, kws=0x48b1c38, kwcount=0, defs=0x0, defcount=0, closure=0x0)\n    at Python/ceval.c:2968\n#7  0x0000000000496c7e in PyEval_EvalFrameEx (f=0x48b1a60, \n    throwflag=<value optimized out>) at Python/ceval.c:3802\n#8  0x0000000000497540 in PyEval_EvalFrameEx (f=0x48b1890, \n    throwflag=<value optimized out>) at Python/ceval.c:3792\n#9  0x0000000000497540 in PyEval_EvalFrameEx (f=0x48b1660, \n    throwflag=<value optimized out>) at Python/ceval.c:3792\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8415\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\n\n```\nE = EllipticCurve('37a')\nK.<a> = QuadraticField(-7)\nEK = E.change_ring(K)\nL = EK.period_lattice(K.complex_embeddings()[0])\n[hang, can't control-c]\n```\n\n\nGDB Backtrace: \n\n\n```\n#0  0x00007f87d128506a in Flx_to_ZX ()\n   from /usr/local/sage/local/lib/libpari-gmp.so.2\n#1  0x00007f87d13a378f in FpX_split_Berlekamp ()\n   from /usr/local/sage/local/lib/libpari-gmp.so.2\n#2  0x00007f87d146fbda in nfsqff ()\n   from /usr/local/sage/local/lib/libpari-gmp.so.2\n#3  0x00007f87d1470383 in nffactor ()\n   from /usr/local/sage/local/lib/libpari-gmp.so.2\n#4  0x00007f87cc206364 in __pyx_pf_4sage_4libs_4pari_3gen_3gen_nffactor (\n    __pyx_v_self=0x4a0bc58, __pyx_v_x=<value optimized out>)\n    at sage/libs/pari/gen.c:27077\n#5  0x00000000004978b1 in PyEval_EvalFrameEx (f=0x485aea0, \n    throwflag=<value optimized out>) at Python/ceval.c:3694\n#6  0x0000000000498e61 in PyEval_EvalCodeEx (co=0x20635d0, \n    globals=<value optimized out>, locals=<value optimized out>, args=0x20, \n    argcount=2, kws=0x48b1c38, kwcount=0, defs=0x0, defcount=0, closure=0x0)\n    at Python/ceval.c:2968\n#7  0x0000000000496c7e in PyEval_EvalFrameEx (f=0x48b1a60, \n    throwflag=<value optimized out>) at Python/ceval.c:3802\n#8  0x0000000000497540 in PyEval_EvalFrameEx (f=0x48b1890, \n    throwflag=<value optimized out>) at Python/ceval.c:3792\n#9  0x0000000000497540 in PyEval_EvalFrameEx (f=0x48b1660, \n    throwflag=<value optimized out>) at Python/ceval.c:3792\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8415\n\n",
     "created_at": "2010-03-02T08:59:06Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_008415.json:
     "title": "bug in complex period lattice",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8415",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  cremona
+CC:  @JohnCremona
 
 
 ```
@@ -77,7 +77,7 @@ archive/issue_comments_075409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8415",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8415#issuecomment-75409",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_075410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8415",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8415#issuecomment-75410",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_075411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8415",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8415#issuecomment-75411",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_075412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8415",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8415#issuecomment-75412",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_075413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8415",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8415#issuecomment-75413",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_075414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8415",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8415#issuecomment-75414",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_075415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8415",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8415#issuecomment-75415",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_075416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8415",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8415#issuecomment-75416",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_075417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8415",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8415#issuecomment-75417",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

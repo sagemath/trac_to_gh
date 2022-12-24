@@ -3,7 +3,7 @@
 archive/issues_008222.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  was chapoton\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8222\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @williamstein @fchapoton\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8222\n\n",
     "created_at": "2010-02-09T20:04:59Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_008222.json:
     "title": "sagenb -- misc improvements to the notebook graph editor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8222",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  was chapoton
+CC:  @williamstein @fchapoton
 
 
 
@@ -295,7 +295,7 @@ archive/issue_comments_072577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8222#issuecomment-72577",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -395,7 +395,7 @@ archive/issue_comments_072581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8222#issuecomment-72581",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -419,7 +419,7 @@ archive/issue_comments_072582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8222#issuecomment-72582",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -522,7 +522,7 @@ archive/issue_comments_072586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8222#issuecomment-72586",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -642,7 +642,7 @@ archive/issue_comments_072591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8222#issuecomment-72591",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -655,16 +655,16 @@ Dialog string change
 archive/issue_comments_072592.json:
 ```json
 {
-    "body": "Attachment [trac_8222-reviewer.patch](tarball://root/attachments/some-uuid/ticket8222/trac_8222-reviewer.patch) by rbeezer created at 2010-04-15 05:28:54\n\nAll-in-one patch for notebook code",
+    "body": "Attachment [trac_8222-reviewer.patch](tarball://root/attachments/some-uuid/ticket8222/trac_8222-reviewer.patch) by @rbeezer created at 2010-04-15 05:28:54\n\nAll-in-one patch for notebook code",
     "created_at": "2010-04-15T05:28:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8222#issuecomment-72592",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_8222-reviewer.patch](tarball://root/attachments/some-uuid/ticket8222/trac_8222-reviewer.patch) by rbeezer created at 2010-04-15 05:28:54
+Attachment [trac_8222-reviewer.patch](tarball://root/attachments/some-uuid/ticket8222/trac_8222-reviewer.patch) by @rbeezer created at 2010-04-15 05:28:54
 
 All-in-one patch for notebook code
 
@@ -675,16 +675,16 @@ All-in-one patch for notebook code
 archive/issue_comments_072593.json:
 ```json
 {
-    "body": "Attachment [trac_8222-sagenb-graph-editor.patch](tarball://root/attachments/some-uuid/ticket8222/trac_8222-sagenb-graph-editor.patch) by rbeezer created at 2010-04-15 05:29:31\n\nAll-in-one patch for sage library",
+    "body": "Attachment [trac_8222-sagenb-graph-editor.patch](tarball://root/attachments/some-uuid/ticket8222/trac_8222-sagenb-graph-editor.patch) by @rbeezer created at 2010-04-15 05:29:31\n\nAll-in-one patch for sage library",
     "created_at": "2010-04-15T05:29:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8222#issuecomment-72593",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_8222-sagenb-graph-editor.patch](tarball://root/attachments/some-uuid/ticket8222/trac_8222-sagenb-graph-editor.patch) by rbeezer created at 2010-04-15 05:29:31
+Attachment [trac_8222-sagenb-graph-editor.patch](tarball://root/attachments/some-uuid/ticket8222/trac_8222-sagenb-graph-editor.patch) by @rbeezer created at 2010-04-15 05:29:31
 
 All-in-one patch for sage library
 
@@ -695,16 +695,16 @@ All-in-one patch for sage library
 archive/issue_comments_072594.json:
 ```json
 {
-    "body": "Attachment [trac_8222-sage-graph-editor.patch](tarball://root/attachments/some-uuid/ticket8222/trac_8222-sage-graph-editor.patch) by rbeezer created at 2010-04-15 05:33:24\n\nGreat improvements!  The \"live\" layout works great, and I really like the way dragging a vertex against the edge makes it appear to bounce off the wall.  Turning off auto-maximize was a good idea, I think.\n\nTested with 4.3.4 and sagenb-0.7.5.1.  sagenb was updated with all patches available to date.\n\nPasses all tests in sage/graphs, HTML docs build without warnings.\n\nI have added a reviewer patch.  There was a misspelling on the dialog warning about the circular layout change and while I was there I made a little change to the tail end of the string.  the patch file is just to make it easy to see the change.\n\nThere are also two new comprehensive patches, wrapping everything up (including reviewer patch).  Apply `trac_8222-sagenb-graph-editor.patch` to the notebook code and apply `trac_8222-sage-graph-editor.patch` to the sage library repo.\n\nRado - This is all ready for a positive review, subject to approval of the reviewer patch.  Have a look at that, and if everything looks OK with the combined patches, please mark this as positive review and add yourself as an author.  Great work! - Rob",
+    "body": "Attachment [trac_8222-sage-graph-editor.patch](tarball://root/attachments/some-uuid/ticket8222/trac_8222-sage-graph-editor.patch) by @rbeezer created at 2010-04-15 05:33:24\n\nGreat improvements!  The \"live\" layout works great, and I really like the way dragging a vertex against the edge makes it appear to bounce off the wall.  Turning off auto-maximize was a good idea, I think.\n\nTested with 4.3.4 and sagenb-0.7.5.1.  sagenb was updated with all patches available to date.\n\nPasses all tests in sage/graphs, HTML docs build without warnings.\n\nI have added a reviewer patch.  There was a misspelling on the dialog warning about the circular layout change and while I was there I made a little change to the tail end of the string.  the patch file is just to make it easy to see the change.\n\nThere are also two new comprehensive patches, wrapping everything up (including reviewer patch).  Apply `trac_8222-sagenb-graph-editor.patch` to the notebook code and apply `trac_8222-sage-graph-editor.patch` to the sage library repo.\n\nRado - This is all ready for a positive review, subject to approval of the reviewer patch.  Have a look at that, and if everything looks OK with the combined patches, please mark this as positive review and add yourself as an author.  Great work! - Rob",
     "created_at": "2010-04-15T05:33:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8222#issuecomment-72594",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_8222-sage-graph-editor.patch](tarball://root/attachments/some-uuid/ticket8222/trac_8222-sage-graph-editor.patch) by rbeezer created at 2010-04-15 05:33:24
+Attachment [trac_8222-sage-graph-editor.patch](tarball://root/attachments/some-uuid/ticket8222/trac_8222-sage-graph-editor.patch) by @rbeezer created at 2010-04-15 05:33:24
 
 Great improvements!  The "live" layout works great, and I really like the way dragging a vertex against the edge makes it appear to bounce off the wall.  Turning off auto-maximize was a good idea, I think.
 
@@ -768,7 +768,7 @@ archive/issue_comments_072597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8222#issuecomment-72597",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -794,7 +794,7 @@ archive/issue_comments_072598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8222#issuecomment-72598",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -812,7 +812,7 @@ archive/issue_comments_072599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8222#issuecomment-72599",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -853,7 +853,7 @@ archive/issue_comments_072601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8222#issuecomment-72601",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -892,7 +892,7 @@ archive/issue_comments_072603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8222#issuecomment-72603",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -910,7 +910,7 @@ archive/issue_comments_072604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8222#issuecomment-72604",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -928,7 +928,7 @@ archive/issue_comments_072605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8222#issuecomment-72605",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -946,7 +946,7 @@ archive/issue_comments_072606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8222#issuecomment-72606",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -964,7 +964,7 @@ archive/issue_comments_072607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8222#issuecomment-72607",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -982,7 +982,7 @@ archive/issue_comments_072608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8222#issuecomment-72608",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1000,7 +1000,7 @@ archive/issue_comments_072609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8222#issuecomment-72609",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -1018,7 +1018,7 @@ archive/issue_comments_072610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8222#issuecomment-72610",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -1036,7 +1036,7 @@ archive/issue_comments_072611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8222#issuecomment-72611",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -1054,7 +1054,7 @@ archive/issue_comments_072612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8222#issuecomment-72612",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

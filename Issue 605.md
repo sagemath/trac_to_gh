@@ -14,7 +14,7 @@ archive/issues_000605.json:
     "title": "GMP build -- get the gmp spkg in shape again (in particular, make sure patches are properly applied)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/605",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: was, dmharvey
@@ -55,7 +55,7 @@ archive/issue_comments_003113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/605#issuecomment-3113",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

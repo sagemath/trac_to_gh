@@ -3,7 +3,7 @@
 archive/issues_004666.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  jhpalmieri vbraun\n\nWhen we are producing binaries for sagemath.org the naming scheme is often inconsistent and some times even outright misleading. \n\nOn Linux -bdist should produce consistent names for binaries, so use lsb_release when available. I.e. on an x86 Fedora Core 9 system a\n\n```\n ./sage -bdist 3.2.1\n```\n\nwould yield\n\n```\n sage-3.2.1-Fedora-9-x86.tar.gz\n```\n\nThis info can be extracted on Linux via lsb_release\n\n```\n[mabshoff@eno ~]$ lsb_release -i -s\nFedora\n[mabshoff@eno ~]$ lsb_release -r -s\n9\n```\n\nOn OSX use uname to specify OSX release, CPU architecture and 32 vs. 64 bit builds.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4666\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @jhpalmieri @vbraun\n\nWhen we are producing binaries for sagemath.org the naming scheme is often inconsistent and some times even outright misleading. \n\nOn Linux -bdist should produce consistent names for binaries, so use lsb_release when available. I.e. on an x86 Fedora Core 9 system a\n\n```\n ./sage -bdist 3.2.1\n```\n\nwould yield\n\n```\n sage-3.2.1-Fedora-9-x86.tar.gz\n```\n\nThis info can be extracted on Linux via lsb_release\n\n```\n[mabshoff@eno ~]$ lsb_release -i -s\nFedora\n[mabshoff@eno ~]$ lsb_release -r -s\n9\n```\n\nOn OSX use uname to specify OSX release, CPU architecture and 32 vs. 64 bit builds.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4666\n\n",
     "created_at": "2008-12-01T00:01:12Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_004666.json:
 ```
 Assignee: mabshoff
 
-CC:  jhpalmieri vbraun
+CC:  @jhpalmieri @vbraun
 
 When we are producing binaries for sagemath.org the naming scheme is often inconsistent and some times even outright misleading. 
 
@@ -168,7 +168,7 @@ archive/issue_comments_035125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4666#issuecomment-35125",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_035126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4666#issuecomment-35126",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_035127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4666#issuecomment-35127",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -217,16 +217,16 @@ Changing priority from critical to major.
 archive/issue_comments_035128.json:
 ```json
 {
-    "body": "Attachment [botdist.py](tarball://root/attachments/some-uuid/ticket4666/botdist.py) by jdemeyer created at 2012-05-16 20:03:36",
+    "body": "Attachment [botdist.py](tarball://root/attachments/some-uuid/ticket4666/botdist.py) by @jdemeyer created at 2012-05-16 20:03:36",
     "created_at": "2012-05-16T20:03:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4666#issuecomment-35128",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [botdist.py](tarball://root/attachments/some-uuid/ticket4666/botdist.py) by jdemeyer created at 2012-05-16 20:03:36
+Attachment [botdist.py](tarball://root/attachments/some-uuid/ticket4666/botdist.py) by @jdemeyer created at 2012-05-16 20:03:36
 
 
 
@@ -240,7 +240,7 @@ archive/issue_comments_035129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4666#issuecomment-35129",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_035130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4666#issuecomment-35130",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_035131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4666#issuecomment-35131",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -297,7 +297,7 @@ archive/issue_comments_035132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4666#issuecomment-35132",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -321,7 +321,7 @@ archive/issue_comments_035133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4666#issuecomment-35133",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_035134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4666#issuecomment-35134",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -357,7 +357,7 @@ archive/issue_comments_035135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4666#issuecomment-35135",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003980.json:
     "title": "Find_root bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3980",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: jkantor
@@ -64,16 +64,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3980
 archive/issue_comments_028623.json:
 ```json
 {
-    "body": "Changing assignee from jkantor to burcin.",
+    "body": "Changing assignee from jkantor to @burcin.",
     "created_at": "2008-08-31T15:10:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3980#issuecomment-28623",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
-Changing assignee from jkantor to burcin.
+Changing assignee from jkantor to @burcin.
 
 
 
@@ -87,7 +87,7 @@ archive/issue_comments_028624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3980#issuecomment-28624",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_028626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3980#issuecomment-28626",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_028627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3980#issuecomment-28627",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -212,16 +212,16 @@ Here's a patch that avoids asking the function what it's variables are.
 archive/issue_comments_028628.json:
 ```json
 {
-    "body": "Changing assignee from burcin to jwmerrill.",
+    "body": "Changing assignee from @burcin to @jicama.",
     "created_at": "2008-09-09T02:01:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3980#issuecomment-28628",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
-Changing assignee from burcin to jwmerrill.
+Changing assignee from @burcin to @jicama.
 
 
 
@@ -255,16 +255,16 @@ sage: find_root(1/t-x,0,2)
 archive/issue_comments_028630.json:
 ```json
 {
-    "body": "Attachment [3980.patch](tarball://root/attachments/some-uuid/ticket3980/3980.patch) by jwmerrill created at 2008-09-29 23:26:41",
+    "body": "Attachment [3980.patch](tarball://root/attachments/some-uuid/ticket3980/3980.patch) by @jicama created at 2008-09-29 23:26:41",
     "created_at": "2008-09-29T23:26:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3980#issuecomment-28630",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
-Attachment [3980.patch](tarball://root/attachments/some-uuid/ticket3980/3980.patch) by jwmerrill created at 2008-09-29 23:26:41
+Attachment [3980.patch](tarball://root/attachments/some-uuid/ticket3980/3980.patch) by @jicama created at 2008-09-29 23:26:41
 
 
 
@@ -278,7 +278,7 @@ archive/issue_comments_028631.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3980#issuecomment-28631",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 

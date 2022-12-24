@@ -3,7 +3,7 @@
 archive/issues_009719.json:
 ```json
 {
-    "body": "Assignee: itolkov, jason\n\nCC:  vdelecroix\n\nSee worksheet designed for testing #9203 and #9076 at #9023.  This should be added to our interact library, if the author is okay with this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9719\n\n",
+    "body": "Assignee: itolkov, jason\n\nCC:  @videlec\n\nSee worksheet designed for testing #9203 and #9076 at #9023.  This should be added to our interact library, if the author is okay with this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9719\n\n",
     "created_at": "2010-08-10T15:08:50Z",
     "labels": [
         "interact",
@@ -14,12 +14,12 @@ archive/issues_009719.json:
     "title": "Add ellipse and arc bounding box examples to interact library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9719",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: itolkov, jason
 
-CC:  vdelecroix
+CC:  @videlec
 
 See worksheet designed for testing #9203 and #9076 at #9023.  This should be added to our interact library, if the author is okay with this.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9719
 archive/issue_comments_094856.json:
 ```json
 {
-    "body": "Attachment [arcs and ellipses.sws](tarball://root/attachments/some-uuid/ticket9719/arcs and ellipses.sws) by kcrisman created at 2010-08-10 15:09:13\n\nFrom #9203, by Vincent Delecroix",
+    "body": "Attachment [arcs and ellipses.sws](tarball://root/attachments/some-uuid/ticket9719/arcs and ellipses.sws) by @kcrisman created at 2010-08-10 15:09:13\n\nFrom #9203, by Vincent Delecroix",
     "created_at": "2010-08-10T15:09:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9719#issuecomment-94856",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [arcs and ellipses.sws](tarball://root/attachments/some-uuid/ticket9719/arcs and ellipses.sws) by kcrisman created at 2010-08-10 15:09:13
+Attachment [arcs and ellipses.sws](tarball://root/attachments/some-uuid/ticket9719/arcs and ellipses.sws) by @kcrisman created at 2010-08-10 15:09:13
 
 From #9203, by Vincent Delecroix
 
@@ -59,7 +59,7 @@ archive/issue_comments_094857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9719#issuecomment-94857",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_094858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9719#issuecomment-94858",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 

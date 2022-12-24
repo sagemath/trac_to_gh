@@ -3,7 +3,7 @@
 archive/issues_005041.json:
 ```json
 {
-    "body": "Assignee: was\n\nIf one installs sage sytem wide, and a user tries to run any magma commands, and the .sig files aren't written in data/extcode/magma, then BOOM!  This is a total show stopper for any \"normal users\" to use the sage magma interface for anything serious.  This must be FIXED!\n\nTo fix this, when the magma interface is first run, make sure to copy the .m files over to $DOT_SAGE/magma first and load from there.   One will have to do the copy the first time the magma interface is started in any magma session.   alternatively, one could try: except: the magma.load command, and if it fails, then try to copy and load from /tmp/, say or DOT_SAGE/temp/.  Maybe the second idea is cleaner. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5041\n\n",
+    "body": "Assignee: @williamstein\n\nIf one installs sage sytem wide, and a user tries to run any magma commands, and the .sig files aren't written in data/extcode/magma, then BOOM!  This is a total show stopper for any \"normal users\" to use the sage magma interface for anything serious.  This must be FIXED!\n\nTo fix this, when the magma interface is first run, make sure to copy the .m files over to $DOT_SAGE/magma first and load from there.   One will have to do the copy the first time the magma interface is started in any magma session.   alternatively, one could try: except: the magma.load command, and if it fails, then try to copy and load from /tmp/, say or DOT_SAGE/temp/.  Maybe the second idea is cleaner. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5041\n\n",
     "created_at": "2009-01-20T23:34:43Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_005041.json:
     "title": "make it so the magma .sig files in extcode don't get written there by magma",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5041",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 If one installs sage sytem wide, and a user tries to run any magma commands, and the .sig files aren't written in data/extcode/magma, then BOOM!  This is a total show stopper for any "normal users" to use the sage magma interface for anything serious.  This must be FIXED!
 
@@ -39,7 +39,7 @@ archive/issue_comments_038394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5041#issuecomment-38394",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -77,16 +77,16 @@ $ ./sage -t -only_optional=magma devel/sage/sage/
 archive/issue_comments_038395.json:
 ```json
 {
-    "body": "Attachment [trac_5041-extcode_repo.patch](tarball://root/attachments/some-uuid/ticket5041/trac_5041-extcode_repo.patch) by was created at 2009-01-22 12:01:43",
+    "body": "Attachment [trac_5041-extcode_repo.patch](tarball://root/attachments/some-uuid/ticket5041/trac_5041-extcode_repo.patch) by @williamstein created at 2009-01-22 12:01:43",
     "created_at": "2009-01-22T12:01:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5041#issuecomment-38395",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5041-extcode_repo.patch](tarball://root/attachments/some-uuid/ticket5041/trac_5041-extcode_repo.patch) by was created at 2009-01-22 12:01:43
+Attachment [trac_5041-extcode_repo.patch](tarball://root/attachments/some-uuid/ticket5041/trac_5041-extcode_repo.patch) by @williamstein created at 2009-01-22 12:01:43
 
 
 
@@ -100,7 +100,7 @@ archive/issue_comments_038396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5041#issuecomment-38396",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

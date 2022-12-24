@@ -14,7 +14,7 @@ archive/issues_007574.json:
     "title": "clean up of MIP interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7574",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: jkantor
@@ -40,7 +40,7 @@ archive/issue_comments_064471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7574#issuecomment-64471",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -58,7 +58,7 @@ archive/issue_comments_064472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7574#issuecomment-64472",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_064473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7574#issuecomment-64473",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_064474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7574#issuecomment-64474",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_064475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7574#issuecomment-64475",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_064476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7574#issuecomment-64476",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_064477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7574#issuecomment-64477",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

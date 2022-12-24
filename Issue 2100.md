@@ -3,7 +3,7 @@
 archive/issues_002100.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kcrisman mhampton mpatel\n\nIf we are plotting a circle or sphere with circle.show(), we ought to see a circle and not have to manually specify the aspect ratio.  The aspect ratio should have sensible defaults that depend on the thing that is being plotted.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2100\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman mhampton @qed777\n\nIf we are plotting a circle or sphere with circle.show(), we ought to see a circle and not have to manually specify the aspect ratio.  The aspect ratio should have sensible defaults that depend on the thing that is being plotted.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2100\n\n",
     "created_at": "2008-02-08T04:49:50Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_002100.json:
     "title": "sensible defaults for aspect ratio",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2100",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kcrisman mhampton mpatel
+CC:  @kcrisman mhampton @qed777
 
 If we are plotting a circle or sphere with circle.show(), we ought to see a circle and not have to manually specify the aspect ratio.  The aspect ratio should have sensible defaults that depend on the thing that is being plotted.
 
@@ -39,7 +39,7 @@ archive/issue_comments_013593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13593",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_013595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13595",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_013596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13596",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_013597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13597",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_013598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13598",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_013599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13599",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_013600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13600",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_013601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13601",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_013602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13602",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_013603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13603",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_013604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13604",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_013605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13605",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -328,7 +328,7 @@ archive/issue_comments_013606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13606",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -346,7 +346,7 @@ archive/issue_comments_013607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13607",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -364,7 +364,7 @@ archive/issue_comments_013608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13608",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -385,16 +385,16 @@ So, in short, things are good to go for finishing this patch and getting it into
 archive/issue_comments_013609.json:
 ```json
 {
-    "body": "Attachment [2100-aspect_ratio.2.patch](tarball://root/attachments/some-uuid/ticket2100/2100-aspect_ratio.2.patch) by jason created at 2010-10-07 07:08:23\n\napply instead of previous patch",
+    "body": "Attachment [2100-aspect_ratio.2.patch](tarball://root/attachments/some-uuid/ticket2100/2100-aspect_ratio.2.patch) by @jasongrout created at 2010-10-07 07:08:23\n\napply instead of previous patch",
     "created_at": "2010-10-07T07:08:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13609",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [2100-aspect_ratio.2.patch](tarball://root/attachments/some-uuid/ticket2100/2100-aspect_ratio.2.patch) by jason created at 2010-10-07 07:08:23
+Attachment [2100-aspect_ratio.2.patch](tarball://root/attachments/some-uuid/ticket2100/2100-aspect_ratio.2.patch) by @jasongrout created at 2010-10-07 07:08:23
 
 apply instead of previous patch
 
@@ -410,7 +410,7 @@ archive/issue_comments_013610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13610",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -428,7 +428,7 @@ archive/issue_comments_013611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13611",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -446,7 +446,7 @@ archive/issue_comments_013612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13612",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -464,7 +464,7 @@ archive/issue_comments_013613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13613",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -484,7 +484,7 @@ archive/issue_comments_013614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13614",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -504,7 +504,7 @@ archive/issue_comments_013615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13615",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -522,7 +522,7 @@ archive/issue_comments_013616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13616",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -540,7 +540,7 @@ archive/issue_comments_013617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13617",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -558,7 +558,7 @@ archive/issue_comments_013618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13618",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -580,7 +580,7 @@ archive/issue_comments_013619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13619",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -598,7 +598,7 @@ archive/issue_comments_013620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13620",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -616,7 +616,7 @@ archive/issue_comments_013621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13621",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -645,7 +645,7 @@ archive/issue_comments_013622.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13622",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -676,7 +676,7 @@ archive/issue_comments_013623.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13623",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -699,16 +699,16 @@ I doubt this will be hard to resolve.  Anyway, just status updates...
 archive/issue_comments_013624.json:
 ```json
 {
-    "body": "Attachment [trac_2100-aspect-ratio-rebase.patch](tarball://root/attachments/some-uuid/ticket2100/trac_2100-aspect-ratio-rebase.patch) by kcrisman created at 2011-01-17 20:06:30\n\nRebase to 4.6.1/4.6.2.alpha0",
+    "body": "Attachment [trac_2100-aspect-ratio-rebase.patch](tarball://root/attachments/some-uuid/ticket2100/trac_2100-aspect-ratio-rebase.patch) by @kcrisman created at 2011-01-17 20:06:30\n\nRebase to 4.6.1/4.6.2.alpha0",
     "created_at": "2011-01-17T20:06:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13624",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_2100-aspect-ratio-rebase.patch](tarball://root/attachments/some-uuid/ticket2100/trac_2100-aspect-ratio-rebase.patch) by kcrisman created at 2011-01-17 20:06:30
+Attachment [trac_2100-aspect-ratio-rebase.patch](tarball://root/attachments/some-uuid/ticket2100/trac_2100-aspect-ratio-rebase.patch) by @kcrisman created at 2011-01-17 20:06:30
 
 Rebase to 4.6.1/4.6.2.alpha0
 
@@ -724,7 +724,7 @@ archive/issue_comments_013625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13625",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -777,7 +777,7 @@ archive/issue_comments_013626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13626",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -795,7 +795,7 @@ archive/issue_comments_013627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13627",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -815,7 +815,7 @@ archive/issue_comments_013628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13628",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -835,7 +835,7 @@ archive/issue_comments_013629.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13629",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -867,7 +867,7 @@ archive/issue_comments_013630.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13630",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -885,7 +885,7 @@ archive/issue_comments_013631.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13631",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -913,7 +913,7 @@ archive/issue_comments_013632.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13632",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -931,7 +931,7 @@ archive/issue_comments_013633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13633",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1041,7 +1041,7 @@ archive/issue_comments_013634.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13634",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1059,7 +1059,7 @@ archive/issue_comments_013635.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13635",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1082,7 +1082,7 @@ archive/issue_comments_013636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13636",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1122,7 +1122,7 @@ archive/issue_comments_013637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13637",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1170,7 +1170,7 @@ archive/issue_comments_013638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13638",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1190,7 +1190,7 @@ archive/issue_comments_013639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13639",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1213,7 +1213,7 @@ archive/issue_comments_013640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13640",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1233,7 +1233,7 @@ archive/issue_comments_013641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13641",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1254,7 +1254,7 @@ archive/issue_comments_013642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13642",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1275,7 +1275,7 @@ archive/issue_comments_013643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13643",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1293,7 +1293,7 @@ archive/issue_comments_013644.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13644",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1306,16 +1306,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_013645.json:
 ```json
 {
-    "body": "Attachment [trac_2100-3d-vector.patch](tarball://root/attachments/some-uuid/ticket2100/trac_2100-3d-vector.patch) by kcrisman created at 2011-01-19 20:38:49\n\nreviewer patch",
+    "body": "Attachment [trac_2100-3d-vector.patch](tarball://root/attachments/some-uuid/ticket2100/trac_2100-3d-vector.patch) by @kcrisman created at 2011-01-19 20:38:49\n\nreviewer patch",
     "created_at": "2011-01-19T20:38:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13645",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_2100-3d-vector.patch](tarball://root/attachments/some-uuid/ticket2100/trac_2100-3d-vector.patch) by kcrisman created at 2011-01-19 20:38:49
+Attachment [trac_2100-3d-vector.patch](tarball://root/attachments/some-uuid/ticket2100/trac_2100-3d-vector.patch) by @kcrisman created at 2011-01-19 20:38:49
 
 reviewer patch
 
@@ -1331,7 +1331,7 @@ archive/issue_comments_013646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13646",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1351,7 +1351,7 @@ archive/issue_comments_013647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13647",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1373,7 +1373,7 @@ archive/issue_comments_013648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13648",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1391,7 +1391,7 @@ archive/issue_comments_013649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13649",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1409,7 +1409,7 @@ archive/issue_comments_013650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13650",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1427,7 +1427,7 @@ archive/issue_comments_013651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13651",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1445,7 +1445,7 @@ archive/issue_comments_013652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13652",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1463,7 +1463,7 @@ archive/issue_comments_013653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13653",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1481,7 +1481,7 @@ archive/issue_comments_013654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13654",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1497,16 +1497,16 @@ Yes, I reverted things to the matplotlib defaults.  Before, we made the ratio of
 archive/issue_comments_013655.json:
 ```json
 {
-    "body": "Changing assignee from was to jason.",
+    "body": "Changing assignee from @williamstein to @jasongrout.",
     "created_at": "2011-02-15T03:09:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13655",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from was to jason.
+Changing assignee from @williamstein to @jasongrout.
 
 
 
@@ -1520,7 +1520,7 @@ archive/issue_comments_013656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13656",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1538,7 +1538,7 @@ archive/issue_comments_013657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13657",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1556,7 +1556,7 @@ archive/issue_comments_013658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13658",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1576,7 +1576,7 @@ archive/issue_comments_013659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13659",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1594,7 +1594,7 @@ archive/issue_comments_013660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13660",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1612,7 +1612,7 @@ archive/issue_comments_013661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13661",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1630,7 +1630,7 @@ archive/issue_comments_013662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13662",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1675,7 +1675,7 @@ archive/issue_comments_013663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13663",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1688,16 +1688,16 @@ What this plot looks like before #2100
 archive/issue_comments_013664.json:
 ```json
 {
-    "body": "Attachment [After.png](tarball://root/attachments/some-uuid/ticket2100/After.png) by kcrisman created at 2011-02-19 04:21:54\n\nWhat this plot looks like after #2100",
+    "body": "Attachment [After.png](tarball://root/attachments/some-uuid/ticket2100/After.png) by @kcrisman created at 2011-02-19 04:21:54\n\nWhat this plot looks like after #2100",
     "created_at": "2011-02-19T04:21:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13664",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [After.png](tarball://root/attachments/some-uuid/ticket2100/After.png) by kcrisman created at 2011-02-19 04:21:54
+Attachment [After.png](tarball://root/attachments/some-uuid/ticket2100/After.png) by @kcrisman created at 2011-02-19 04:21:54
 
 What this plot looks like after #2100
 
@@ -1713,7 +1713,7 @@ archive/issue_comments_013665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13665",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1731,7 +1731,7 @@ archive/issue_comments_013666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13666",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1751,7 +1751,7 @@ archive/issue_comments_013667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13667",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1771,7 +1771,7 @@ archive/issue_comments_013668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13668",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1791,7 +1791,7 @@ archive/issue_comments_013669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13669",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1809,7 +1809,7 @@ archive/issue_comments_013670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13670",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1827,7 +1827,7 @@ archive/issue_comments_013671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13671",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1845,7 +1845,7 @@ archive/issue_comments_013672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13672",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1919,7 +1919,7 @@ archive/issue_comments_013676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13676",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1940,7 +1940,7 @@ archive/issue_comments_013677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13677",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1958,7 +1958,7 @@ archive/issue_comments_013678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13678",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1976,7 +1976,7 @@ archive/issue_comments_013679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13679",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1994,7 +1994,7 @@ archive/issue_comments_013680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13680",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2012,16 +2012,16 @@ But no point crying over spilt milk.  Sigh... patches coming up.
 archive/issue_comments_013681.json:
 ```json
 {
-    "body": "Attachment [trac_2100-auto-automatic-and-vector.patch](tarball://root/attachments/some-uuid/ticket2100/trac_2100-auto-automatic-and-vector.patch) by kcrisman created at 2011-06-20 14:45:44\n\nApply after rebase patch",
+    "body": "Attachment [trac_2100-auto-automatic-and-vector.patch](tarball://root/attachments/some-uuid/ticket2100/trac_2100-auto-automatic-and-vector.patch) by @kcrisman created at 2011-06-20 14:45:44\n\nApply after rebase patch",
     "created_at": "2011-06-20T14:45:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13681",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_2100-auto-automatic-and-vector.patch](tarball://root/attachments/some-uuid/ticket2100/trac_2100-auto-automatic-and-vector.patch) by kcrisman created at 2011-06-20 14:45:44
+Attachment [trac_2100-auto-automatic-and-vector.patch](tarball://root/attachments/some-uuid/ticket2100/trac_2100-auto-automatic-and-vector.patch) by @kcrisman created at 2011-06-20 14:45:44
 
 Apply after rebase patch
 
@@ -2037,7 +2037,7 @@ archive/issue_comments_013682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13682",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2055,7 +2055,7 @@ archive/issue_comments_013683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13683",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2073,7 +2073,7 @@ archive/issue_comments_013684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13684",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2094,7 +2094,7 @@ archive/issue_comments_013685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13685",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2116,7 +2116,7 @@ archive/issue_comments_013686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13686",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2141,7 +2141,7 @@ archive/issue_comments_013687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13687",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2161,7 +2161,7 @@ archive/issue_comments_013688.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13688",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2185,7 +2185,7 @@ archive/issue_comments_013689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2100#issuecomment-13689",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

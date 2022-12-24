@@ -14,7 +14,7 @@ archive/issues_008823.json:
     "title": "Fix Cayley table doctest failure in group theory tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8823",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 Assignee: mvngu
@@ -77,16 +77,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8823
 archive/issue_comments_081027.json:
 ```json
 {
-    "body": "Attachment [trac_8823_cayley_table_doctest.patch](tarball://root/attachments/some-uuid/ticket8823/trac_8823_cayley_table_doctest.patch) by rbeezer created at 2010-05-01 05:36:01",
+    "body": "Attachment [trac_8823_cayley_table_doctest.patch](tarball://root/attachments/some-uuid/ticket8823/trac_8823_cayley_table_doctest.patch) by @rbeezer created at 2010-05-01 05:36:01",
     "created_at": "2010-05-01T05:36:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8823#issuecomment-81027",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_8823_cayley_table_doctest.patch](tarball://root/attachments/some-uuid/ticket8823/trac_8823_cayley_table_doctest.patch) by rbeezer created at 2010-05-01 05:36:01
+Attachment [trac_8823_cayley_table_doctest.patch](tarball://root/attachments/some-uuid/ticket8823/trac_8823_cayley_table_doctest.patch) by @rbeezer created at 2010-05-01 05:36:01
 
 
 
@@ -100,7 +100,7 @@ archive/issue_comments_081028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8823#issuecomment-81028",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_081029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8823#issuecomment-81029",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

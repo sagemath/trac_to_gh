@@ -14,7 +14,7 @@ archive/issues_008859.json:
     "title": "bidirectional_dijkstra does not handle vertex labels properly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8859",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8859
 archive/issue_comments_081408.json:
 ```json
 {
-    "body": "Attachment [trac_8859.patch](tarball://root/attachments/some-uuid/ticket8859/trac_8859.patch) by rlm created at 2010-05-03 17:54:22",
+    "body": "Attachment [trac_8859.patch](tarball://root/attachments/some-uuid/ticket8859/trac_8859.patch) by @rlmill created at 2010-05-03 17:54:22",
     "created_at": "2010-05-03T17:54:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8859#issuecomment-81408",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_8859.patch](tarball://root/attachments/some-uuid/ticket8859/trac_8859.patch) by rlm created at 2010-05-03 17:54:22
+Attachment [trac_8859.patch](tarball://root/attachments/some-uuid/ticket8859/trac_8859.patch) by @rlmill created at 2010-05-03 17:54:22
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_081409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8859#issuecomment-81409",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_081410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8859#issuecomment-81410",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_081411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8859#issuecomment-81411",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

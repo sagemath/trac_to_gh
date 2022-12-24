@@ -3,7 +3,7 @@
 archive/issues_000526.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  dmharvey@math.harvard.edu\n\na.k.a. `make -j`\n\nSee discussion at\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/a88d59dc35404507\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/526\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  dmharvey@math.harvard.edu\n\na.k.a. `make -j`\n\nSee discussion at\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/a88d59dc35404507\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/526\n\n",
     "created_at": "2007-08-30T04:30:52Z",
     "labels": [
         "packages: standard",
@@ -17,7 +17,7 @@ archive/issues_000526.json:
     "user": "dmharvey"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  dmharvey@math.harvard.edu
 
@@ -88,16 +88,16 @@ Michaek
 archive/issue_comments_002674.json:
 ```json
 {
-    "body": "Changing assignee from was to gfurnish.",
+    "body": "Changing assignee from @williamstein to @garyfurnish.",
     "created_at": "2008-03-09T05:15:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/526",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/526#issuecomment-2674",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from was to gfurnish.
+Changing assignee from @williamstein to @garyfurnish.
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_002675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/526",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/526#issuecomment-2675",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -124,7 +124,7 @@ Changing status from new to assigned.
 archive/issue_comments_002676.json:
 ```json
 {
-    "body": "Changing assignee from gfurnish to mabshoff.",
+    "body": "Changing assignee from @garyfurnish to mabshoff.",
     "created_at": "2008-09-26T09:18:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/526",
     "type": "issue_comment",
@@ -133,7 +133,7 @@ archive/issue_comments_002676.json:
 }
 ```
 
-Changing assignee from gfurnish to mabshoff.
+Changing assignee from @garyfurnish to mabshoff.
 
 
 

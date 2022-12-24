@@ -13,7 +13,7 @@ archive/issues_000241.json:
     "title": "mod bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/241",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -57,7 +57,7 @@ archive/issue_comments_001074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/241",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/241#issuecomment-1074",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_001075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/241",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/241#issuecomment-1075",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 

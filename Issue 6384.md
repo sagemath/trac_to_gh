@@ -3,7 +3,7 @@
 archive/issues_006384.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  shumow@gmail.com kohel cremona\n\nFirst the docstring for E.isogeny? has a typo\n\n```\n(defaul:None)\n```\n\nNote the missing t.\n\nNext, I tried taking the elliptic curve 11a and one 5-torsion point P on it and trying to make the isogeny `E --> E/<P>`.  It seems that the result is a **total disaster in every imaginable way**.\n\n\n```\nsage: E = EllipticCurve('11a'); P = E.torsion_subgroup().gens()[0]; P\n(5 : 5 : 1)\nsage: phi = E.isogeny([P]); phi\nIsogeny of degree 1 from Elliptic Curve defined by y^2 + y = x^3 - x^2 - 10*x - 20 over Rational Field to Elliptic Curve defined by y^2 + y = x^3 - x^2 - 560*x - 4277 over Rational Field\nsage: phi.codomain().conductor()\n530575705\nsage: phi.codomain().conductor().factor()\n5 * 11 * 1531 * 6301\n```\n\n\nNote that: \n\n* the two curves are not isogenous, since their conductors are different\n\n* the degree of the isogeny is reported to be 1, but it should be 5.\n\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/6384\n\n",
+    "body": "Assignee: tbd\n\nCC:  shumow@gmail.com kohel @JohnCremona\n\nFirst the docstring for E.isogeny? has a typo\n\n```\n(defaul:None)\n```\n\nNote the missing t.\n\nNext, I tried taking the elliptic curve 11a and one 5-torsion point P on it and trying to make the isogeny `E --> E/<P>`.  It seems that the result is a **total disaster in every imaginable way**.\n\n\n```\nsage: E = EllipticCurve('11a'); P = E.torsion_subgroup().gens()[0]; P\n(5 : 5 : 1)\nsage: phi = E.isogeny([P]); phi\nIsogeny of degree 1 from Elliptic Curve defined by y^2 + y = x^3 - x^2 - 10*x - 20 over Rational Field to Elliptic Curve defined by y^2 + y = x^3 - x^2 - 560*x - 4277 over Rational Field\nsage: phi.codomain().conductor()\n530575705\nsage: phi.codomain().conductor().factor()\n5 * 11 * 1531 * 6301\n```\n\n\nNote that: \n\n* the two curves are not isogenous, since their conductors are different\n\n* the degree of the isogeny is reported to be 1, but it should be 5.\n\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/6384\n\n",
     "created_at": "2009-06-21T23:44:06Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_006384.json:
     "title": "elliptic curve -- isogeny function seems completely totally broken in first example I try",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6384",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
 
-CC:  shumow@gmail.com kohel cremona
+CC:  shumow@gmail.com kohel @JohnCremona
 
 First the docstring for E.isogeny? has a typo
 
@@ -143,7 +143,7 @@ archive/issue_comments_051098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6384#issuecomment-51098",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_051099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6384#issuecomment-51099",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_051100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6384#issuecomment-51100",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_051101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6384#issuecomment-51101",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_051102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6384#issuecomment-51102",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_051103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6384#issuecomment-51103",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_051104.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6384#issuecomment-51104",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_051106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6384#issuecomment-51106",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -373,7 +373,7 @@ archive/issue_comments_051107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6384#issuecomment-51107",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -391,7 +391,7 @@ archive/issue_comments_051108.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6384#issuecomment-51108",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -410,16 +410,16 @@ Since nothing seems to happen with this patch and I continue to insist that it s
 archive/issue_comments_051109.json:
 ```json
 {
-    "body": "Attachment [trac_6384.patch](tarball://root/attachments/some-uuid/ticket6384/trac_6384.patch) by wuthrich created at 2009-08-20 12:10:52\n\nexported against 4.1.1 + patch #6672",
+    "body": "Attachment [trac_6384.patch](tarball://root/attachments/some-uuid/ticket6384/trac_6384.patch) by @categorie created at 2009-08-20 12:10:52\n\nexported against 4.1.1 + patch #6672",
     "created_at": "2009-08-20T12:10:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6384#issuecomment-51109",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_6384.patch](tarball://root/attachments/some-uuid/ticket6384/trac_6384.patch) by wuthrich created at 2009-08-20 12:10:52
+Attachment [trac_6384.patch](tarball://root/attachments/some-uuid/ticket6384/trac_6384.patch) by @categorie created at 2009-08-20 12:10:52
 
 exported against 4.1.1 + patch #6672
 
@@ -435,7 +435,7 @@ archive/issue_comments_051110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6384#issuecomment-51110",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -477,7 +477,7 @@ archive/issue_comments_051112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6384#issuecomment-51112",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -501,7 +501,7 @@ archive/issue_comments_051113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6384#issuecomment-51113",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -619,7 +619,7 @@ archive/issue_comments_051119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6384#issuecomment-51119",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

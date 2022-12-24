@@ -14,7 +14,7 @@ archive/issues_005160.json:
     "title": "Change name of misc/sagex_ds.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5160",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: tba
@@ -56,16 +56,16 @@ Michael
 archive/issue_comments_039551.json:
 ```json
 {
-    "body": "Attachment [5160_rename_sagex_ds.patch](tarball://root/attachments/some-uuid/ticket5160/5160_rename_sagex_ds.patch) by jdemeyer created at 2012-09-25 20:44:30",
+    "body": "Attachment [5160_rename_sagex_ds.patch](tarball://root/attachments/some-uuid/ticket5160/5160_rename_sagex_ds.patch) by @jdemeyer created at 2012-09-25 20:44:30",
     "created_at": "2012-09-25T20:44:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5160#issuecomment-39551",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [5160_rename_sagex_ds.patch](tarball://root/attachments/some-uuid/ticket5160/5160_rename_sagex_ds.patch) by jdemeyer created at 2012-09-25 20:44:30
+Attachment [5160_rename_sagex_ds.patch](tarball://root/attachments/some-uuid/ticket5160/5160_rename_sagex_ds.patch) by @jdemeyer created at 2012-09-25 20:44:30
 
 
 
@@ -79,7 +79,7 @@ archive/issue_comments_039552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5160#issuecomment-39552",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_039553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5160#issuecomment-39553",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_039554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5160#issuecomment-39554",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_039555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5160#issuecomment-39555",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_039556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5160#issuecomment-39556",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_039557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5160#issuecomment-39557",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_039558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5160#issuecomment-39558",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_039559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5160#issuecomment-39559",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

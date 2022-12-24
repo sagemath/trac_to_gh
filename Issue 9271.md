@@ -3,7 +3,7 @@
 archive/issues_009271.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nThe doctests marked \"optional: needs CHomP\" are not formatted properly: see #9270 and \n[http://groups.google.com/group/sage-devel/browse_thread/thread/71d958feced948af](http://groups.google.com/group/sage-devel/browse_thread/thread/71d958feced948af).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9271\n\n",
+    "body": "Assignee: @jhpalmieri\n\nThe doctests marked \"optional: needs CHomP\" are not formatted properly: see #9270 and \n[http://groups.google.com/group/sage-devel/browse_thread/thread/71d958feced948af](http://groups.google.com/group/sage-devel/browse_thread/thread/71d958feced948af).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9271\n\n",
     "created_at": "2010-06-19T02:47:43Z",
     "labels": [
         "algebraic topology",
@@ -14,10 +14,10 @@ archive/issues_009271.json:
     "title": "fix the \"optional: needs CHomP\" tags in sage/homology, etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9271",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 The doctests marked "optional: needs CHomP" are not formatted properly: see #9270 and 
 [http://groups.google.com/group/sage-devel/browse_thread/thread/71d958feced948af](http://groups.google.com/group/sage-devel/browse_thread/thread/71d958feced948af).
@@ -33,16 +33,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9271
 archive/issue_comments_087321.json:
 ```json
 {
-    "body": "Attachment [trac_9271-optional-chomp.patch](tarball://root/attachments/some-uuid/ticket9271/trac_9271-optional-chomp.patch) by jhpalmieri created at 2010-06-19 02:48:11",
+    "body": "Attachment [trac_9271-optional-chomp.patch](tarball://root/attachments/some-uuid/ticket9271/trac_9271-optional-chomp.patch) by @jhpalmieri created at 2010-06-19 02:48:11",
     "created_at": "2010-06-19T02:48:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9271",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9271#issuecomment-87321",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_9271-optional-chomp.patch](tarball://root/attachments/some-uuid/ticket9271/trac_9271-optional-chomp.patch) by jhpalmieri created at 2010-06-19 02:48:11
+Attachment [trac_9271-optional-chomp.patch](tarball://root/attachments/some-uuid/ticket9271/trac_9271-optional-chomp.patch) by @jhpalmieri created at 2010-06-19 02:48:11
 
 
 
@@ -56,7 +56,7 @@ archive/issue_comments_087322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9271",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9271#issuecomment-87322",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_087323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9271",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9271#issuecomment-87323",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_087324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9271",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9271#issuecomment-87324",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_087325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9271",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9271#issuecomment-87325",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000765.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe following isn't implemented in a useful way anyway, but the fact that crtl-C does not work properly is a bad sign:\n\n```\nP.<x>=QQ[]\nf=x^6+x^2+1\nC=HyperellipticCurve(f)\nJ=C.jacobian()\nK=J.kummer_surface()\nK.rational_points(bound=100)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/765\n\n",
+    "body": "Assignee: @williamstein\n\nThe following isn't implemented in a useful way anyway, but the fact that crtl-C does not work properly is a bad sign:\n\n```\nP.<x>=QQ[]\nf=x^6+x^2+1\nC=HyperellipticCurve(f)\nJ=C.jacobian()\nK=J.kummer_surface()\nK.rational_points(bound=100)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/765\n\n",
     "created_at": "2007-09-30T20:25:27Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_000765.json:
     "title": "Ctrl-C unresponsive in rational_points",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/765",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The following isn't implemented in a useful way anyway, but the fact that crtl-C does not work properly is a bad sign:
 
@@ -47,7 +47,7 @@ archive/issue_comments_004527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/765#issuecomment-4527",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_004528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/765#issuecomment-4528",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_004529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/765#issuecomment-4529",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_004530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/765#issuecomment-4530",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

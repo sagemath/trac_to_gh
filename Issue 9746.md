@@ -3,7 +3,7 @@
 archive/issues_009746.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  kcrisman\n\nI went through the \"live\" documentation for plots and found a number of places that computations should be split into separate cells, plots weren't displayed, etc.  This patch fixes these areas.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9746\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @kcrisman\n\nI went through the \"live\" documentation for plots and found a number of places that computations should be split into separate cells, plots weren't displayed, etc.  This patch fixes these areas.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9746\n\n",
     "created_at": "2010-08-14T14:15:00Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_009746.json:
     "title": "documentation for plotting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9746",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jason, was
 
-CC:  kcrisman
+CC:  @kcrisman
 
 I went through the "live" documentation for plots and found a number of places that computations should be split into separate cells, plots weren't displayed, etc.  This patch fixes these areas.
 
@@ -39,7 +39,7 @@ archive/issue_comments_095440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95440",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_095441.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95441",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_095442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95442",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_095443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95443",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -106,16 +106,16 @@ There is a typo of 'primitve' in `plot/plot.py`.  Does this still apply to 4.6.a
 archive/issue_comments_095444.json:
 ```json
 {
-    "body": "Attachment [trac-9746-plot-doc-improvements.patch](tarball://root/attachments/some-uuid/ticket9746/trac-9746-plot-doc-improvements.patch) by jason created at 2010-09-28 16:01:41\n\nReplying to [comment:4 kcrisman]:\n> There is a typo of 'primitve' in `plot/plot.py`.  Does this still apply to 4.6.alpha1?  \n\nYes.  I also refreshed the patch to correct the typo.  This depends on #9740.  Do you have time to review that and this patch?",
+    "body": "Attachment [trac-9746-plot-doc-improvements.patch](tarball://root/attachments/some-uuid/ticket9746/trac-9746-plot-doc-improvements.patch) by @jasongrout created at 2010-09-28 16:01:41\n\nReplying to [comment:4 kcrisman]:\n> There is a typo of 'primitve' in `plot/plot.py`.  Does this still apply to 4.6.alpha1?  \n\nYes.  I also refreshed the patch to correct the typo.  This depends on #9740.  Do you have time to review that and this patch?",
     "created_at": "2010-09-28T16:01:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95444",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-9746-plot-doc-improvements.patch](tarball://root/attachments/some-uuid/ticket9746/trac-9746-plot-doc-improvements.patch) by jason created at 2010-09-28 16:01:41
+Attachment [trac-9746-plot-doc-improvements.patch](tarball://root/attachments/some-uuid/ticket9746/trac-9746-plot-doc-improvements.patch) by @jasongrout created at 2010-09-28 16:01:41
 
 Replying to [comment:4 kcrisman]:
 > There is a typo of 'primitve' in `plot/plot.py`.  Does this still apply to 4.6.alpha1?  
@@ -134,7 +134,7 @@ archive/issue_comments_095445.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95445",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_095446.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95446",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_095447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95447",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_095448.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95448",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_095449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95449",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_095450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95450",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_095451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95451",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -284,7 +284,7 @@ archive/issue_comments_095452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95452",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -297,16 +297,16 @@ apply on top of previous patches
 archive/issue_comments_095453.json:
 ```json
 {
-    "body": "Attachment [9746-review.patch](tarball://root/attachments/some-uuid/ticket9746/9746-review.patch) by jason created at 2010-09-28 19:08:27\n\nptestlong in 4.6.alpha1 (Ubuntu 10.04 64-bit) passes with the following tickets applied in order: #9221 (and new spkg), #9740, #9746, #4342.",
+    "body": "Attachment [9746-review.patch](tarball://root/attachments/some-uuid/ticket9746/9746-review.patch) by @jasongrout created at 2010-09-28 19:08:27\n\nptestlong in 4.6.alpha1 (Ubuntu 10.04 64-bit) passes with the following tickets applied in order: #9221 (and new spkg), #9740, #9746, #4342.",
     "created_at": "2010-09-28T19:08:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95453",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [9746-review.patch](tarball://root/attachments/some-uuid/ticket9746/9746-review.patch) by jason created at 2010-09-28 19:08:27
+Attachment [9746-review.patch](tarball://root/attachments/some-uuid/ticket9746/9746-review.patch) by @jasongrout created at 2010-09-28 19:08:27
 
 ptestlong in 4.6.alpha1 (Ubuntu 10.04 64-bit) passes with the following tickets applied in order: #9221 (and new spkg), #9740, #9746, #4342.
 
@@ -322,7 +322,7 @@ archive/issue_comments_095454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95454",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -340,7 +340,7 @@ archive/issue_comments_095455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95455",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -378,7 +378,7 @@ archive/issue_comments_095456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95456",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -396,7 +396,7 @@ archive/issue_comments_095457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95457",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -414,7 +414,7 @@ archive/issue_comments_095458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95458",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -434,7 +434,7 @@ archive/issue_comments_095459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95459",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -452,7 +452,7 @@ archive/issue_comments_095460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95460",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -476,7 +476,7 @@ archive/issue_comments_095461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95461",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -502,7 +502,7 @@ archive/issue_comments_095462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95462",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -526,7 +526,7 @@ archive/issue_comments_095463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95463",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

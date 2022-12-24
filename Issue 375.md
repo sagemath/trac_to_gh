@@ -3,7 +3,7 @@
 archive/issues_000375.json:
 ```json
 {
-    "body": "Assignee: was\n\nWhen installing the biopython-1.43 spkg in SAGE 2.5.3 the installer hangs at:\n\ncopying mx/COPYRIGHT -> /usr/local/sage/local/lib/python2.5/site-packages/mx\ncopying mx/LICENSE -> /usr/local/sage/local/lib/python2.5/site-packages/mx\nrunning install_egg_info\nWriting /usr/local/sage/local/lib/python2.5/site-packages/egenix_mx_base-2.0.6-py2.5.egg-info\nrunning install\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/375\n\n",
+    "body": "Assignee: @williamstein\n\nWhen installing the biopython-1.43 spkg in SAGE 2.5.3 the installer hangs at:\n\ncopying mx/COPYRIGHT -> /usr/local/sage/local/lib/python2.5/site-packages/mx\ncopying mx/LICENSE -> /usr/local/sage/local/lib/python2.5/site-packages/mx\nrunning install_egg_info\nWriting /usr/local/sage/local/lib/python2.5/site-packages/egenix_mx_base-2.0.6-py2.5.egg-info\nrunning install\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/375\n\n",
     "created_at": "2007-05-23T16:00:46Z",
     "labels": [
         "packages: standard",
@@ -17,7 +17,7 @@ archive/issues_000375.json:
     "user": "Jondice"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 When installing the biopython-1.43 spkg in SAGE 2.5.3 the installer hangs at:
 
@@ -98,7 +98,7 @@ archive/issue_comments_001790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/375",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/375#issuecomment-1790",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

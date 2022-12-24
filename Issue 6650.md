@@ -14,7 +14,7 @@ archive/issues_006650.json:
     "title": "semicolon does not hide output in notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6650",
-    "user": "hemmecke"
+    "user": "@hemmecke"
 }
 ```
 Assignee: boothby
@@ -39,7 +39,7 @@ archive/issue_comments_054590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6650#issuecomment-54590",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_054593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6650#issuecomment-54593",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_054594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6650#issuecomment-54594",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

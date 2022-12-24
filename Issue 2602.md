@@ -3,7 +3,7 @@
 archive/issues_002602.json:
 ```json
 {
-    "body": "Assignee: was\n\nSee the patch for updated examples.  No new functionality is introduced; the examples are just updated.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2602\n\n",
+    "body": "Assignee: @williamstein\n\nSee the patch for updated examples.  No new functionality is introduced; the examples are just updated.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2602\n\n",
     "created_at": "2008-03-19T19:19:00Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_002602.json:
     "title": "plot_vector_field docs are unnecessarily complicated (and use the slow lambda functions!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2602",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 See the patch for updated examples.  No new functionality is introduced; the examples are just updated.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2602
 archive/issue_comments_017804.json:
 ```json
 {
-    "body": "Attachment [plot_vector_field-docs.patch](tarball://root/attachments/some-uuid/ticket2602/plot_vector_field-docs.patch) by mhansen created at 2008-03-19 19:28:38\n\nLooks good to me.",
+    "body": "Attachment [plot_vector_field-docs.patch](tarball://root/attachments/some-uuid/ticket2602/plot_vector_field-docs.patch) by @mwhansen created at 2008-03-19 19:28:38\n\nLooks good to me.",
     "created_at": "2008-03-19T19:28:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2602#issuecomment-17804",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [plot_vector_field-docs.patch](tarball://root/attachments/some-uuid/ticket2602/plot_vector_field-docs.patch) by mhansen created at 2008-03-19 19:28:38
+Attachment [plot_vector_field-docs.patch](tarball://root/attachments/some-uuid/ticket2602/plot_vector_field-docs.patch) by @mwhansen created at 2008-03-19 19:28:38
 
 Looks good to me.
 

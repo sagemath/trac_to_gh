@@ -3,7 +3,7 @@
 archive/issues_002167.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nYou sage: M = Matrix([[1,0],[x,4]])\nsage: M\n\n[1 0]\n[x 4]\nsage: type(M)\n<type 'sage.matrix.matrix_symbolic_dense.Matrix_symbolic_dense'>\nsage: M.echelon_form()\n\n[1 0]\n[0 1]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2167\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nYou sage: M = Matrix([[1,0],[x,4]])\nsage: M\n\n[1 0]\n[x 4]\nsage: type(M)\n<type 'sage.matrix.matrix_symbolic_dense.Matrix_symbolic_dense'>\nsage: M.echelon_form()\n\n[1 0]\n[0 1]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2167\n\n",
     "created_at": "2008-02-15T00:28:45Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_002167.json:
     "title": "Echelon form of symbolic matrices does not work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2167",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -51,7 +51,7 @@ archive/issue_comments_014224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2167",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2167#issuecomment-14224",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_014225.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2167",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2167#issuecomment-14225",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 

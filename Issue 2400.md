@@ -3,7 +3,7 @@
 archive/issues_002400.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nI tried doing some integrals today and the output doesn't make much  \nsense to me:\n\nsage: f = e^(-x2)\nsage: f.integrate(x, 0, 0.1)\n2066*sqrt(pi)/36741\nsage: f.integrate(x, 0, 1/10)\nsqrt(pi)*erf(1/10)/2\n\nHmmmm. Does this mean erf(1/10) is a rational number? That's a little  \nsurprising to me. In fact:\n\nsage: RR(f.integrate(x, 0, 0.1))\n0.0996676643523801\nsage: RR(f.integrate(x, 0, 1/10))\n0.0996676642903363\n\nWhat's going on here?\n\ndavid\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2400\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nI tried doing some integrals today and the output doesn't make much  \nsense to me:\n\nsage: f = e^(-x2)\nsage: f.integrate(x, 0, 0.1)\n2066*sqrt(pi)/36741\nsage: f.integrate(x, 0, 1/10)\nsqrt(pi)*erf(1/10)/2\n\nHmmmm. Does this mean erf(1/10) is a rational number? That's a little  \nsurprising to me. In fact:\n\nsage: RR(f.integrate(x, 0, 0.1))\n0.0996676643523801\nsage: RR(f.integrate(x, 0, 1/10))\n0.0996676642903363\n\nWhat's going on here?\n\ndavid\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2400\n\n",
     "created_at": "2008-03-06T00:44:39Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_002400.json:
     "title": "maxima automatically simplifies floats to rationals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2400",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -61,7 +61,7 @@ archive/issue_comments_016200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16200",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -92,16 +92,16 @@ Jason, please improve the comment "# no ascii art output" to indicate what the n
 archive/issue_comments_016202.json:
 ```json
 {
-    "body": "Attachment [keepfloat.patch](tarball://root/attachments/some-uuid/ticket2400/keepfloat.patch) by jason created at 2008-03-06 01:38:50\n\nI replaced the patch with an updated one addressing dmharvey's concerns.  The patch is ready to be reviewed again.",
+    "body": "Attachment [keepfloat.patch](tarball://root/attachments/some-uuid/ticket2400/keepfloat.patch) by @jasongrout created at 2008-03-06 01:38:50\n\nI replaced the patch with an updated one addressing dmharvey's concerns.  The patch is ready to be reviewed again.",
     "created_at": "2008-03-06T01:38:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16202",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [keepfloat.patch](tarball://root/attachments/some-uuid/ticket2400/keepfloat.patch) by jason created at 2008-03-06 01:38:50
+Attachment [keepfloat.patch](tarball://root/attachments/some-uuid/ticket2400/keepfloat.patch) by @jasongrout created at 2008-03-06 01:38:50
 
 I replaced the patch with an updated one addressing dmharvey's concerns.  The patch is ready to be reviewed again.
 
@@ -139,7 +139,7 @@ archive/issue_comments_016204.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16204",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_016205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16205",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_016206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16206",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -333,7 +333,7 @@ archive/issue_comments_016207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16207",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -351,7 +351,7 @@ archive/issue_comments_016208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16208",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -384,7 +384,7 @@ archive/issue_comments_016209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16209",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -399,16 +399,16 @@ I've attached a patch which works around the problems in the matrixexp function 
 archive/issue_comments_016210.json:
 ```json
 {
-    "body": "Attachment [matrixexp-keepfloat.patch](tarball://root/attachments/some-uuid/ticket2400/matrixexp-keepfloat.patch) by jason created at 2008-03-10 19:35:09\n\napply on top of  keepfloat.patch",
+    "body": "Attachment [matrixexp-keepfloat.patch](tarball://root/attachments/some-uuid/ticket2400/matrixexp-keepfloat.patch) by @jasongrout created at 2008-03-10 19:35:09\n\napply on top of  keepfloat.patch",
     "created_at": "2008-03-10T19:35:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16210",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [matrixexp-keepfloat.patch](tarball://root/attachments/some-uuid/ticket2400/matrixexp-keepfloat.patch) by jason created at 2008-03-10 19:35:09
+Attachment [matrixexp-keepfloat.patch](tarball://root/attachments/some-uuid/ticket2400/matrixexp-keepfloat.patch) by @jasongrout created at 2008-03-10 19:35:09
 
 apply on top of  keepfloat.patch
 
@@ -424,7 +424,7 @@ archive/issue_comments_016211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16211",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -478,7 +478,7 @@ archive/issue_comments_016214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16214",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

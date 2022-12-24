@@ -3,7 +3,7 @@
 archive/issues_000252.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  katestange bouillaguet\n\nMake number fields work when polynomial not integral or not monic.\n\n\n```\nsage: R.<x> = QQ[]\nsage: L.<b> = NumberField(x^2-1/2)\nsage: L.discriminant()\nTraceback (most recent call last):\n...\ngen.PariError:  (8)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/252\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @katestange bouillaguet\n\nMake number fields work when polynomial not integral or not monic.\n\n\n```\nsage: R.<x> = QQ[]\nsage: L.<b> = NumberField(x^2-1/2)\nsage: L.discriminant()\nTraceback (most recent call last):\n...\ngen.PariError:  (8)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/252\n\n",
     "created_at": "2007-02-08T17:49:51Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_000252.json:
     "title": "Make number fields work when polynomial not integral or not monic.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/252",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  katestange bouillaguet
+CC:  @katestange bouillaguet
 
 Make number fields work when polynomial not integral or not monic.
 
@@ -68,7 +68,7 @@ archive/issue_comments_001106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/252",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1106",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_001108.json:
     "issue": "https://github.com/sagemath/sagetest/issues/252",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1108",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -132,16 +132,16 @@ Changing component from number theory to number fields.
 archive/issue_comments_001109.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-07-20T19:56:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/252",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1109",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 
@@ -155,7 +155,7 @@ archive/issue_comments_001110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/252",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1110",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_001111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/252",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1111",
-    "user": "katestange"
+    "user": "@katestange"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_001112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/252",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1112",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_001113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/252",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1113",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_001114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/252",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1114",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_001117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/252",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1117",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -324,7 +324,7 @@ archive/issue_comments_001118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/252",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1118",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -360,7 +360,7 @@ archive/issue_comments_001120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/252",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1120",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -396,7 +396,7 @@ archive/issue_comments_001122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/252",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1122",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -450,7 +450,7 @@ archive/issue_comments_001125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/252",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1125",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -557,7 +557,7 @@ archive/issue_comments_001129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/252",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1129",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -590,7 +590,7 @@ archive/issue_comments_001130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/252",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1130",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -635,7 +635,7 @@ archive/issue_comments_001132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/252",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1132",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -725,7 +725,7 @@ archive/issue_comments_001137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/252",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1137",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -745,7 +745,7 @@ archive/issue_comments_001138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/252",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1138",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -799,7 +799,7 @@ archive/issue_comments_001141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/252",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1141",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

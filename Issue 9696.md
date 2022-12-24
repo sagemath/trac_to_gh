@@ -3,7 +3,7 @@
 archive/issues_009696.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nCC:  davidloeffler cremona\n\nPatch adds `is_cyclic()` and `_latex_()` methods to the `AdditiveAbelianGroup`s.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9696\n\n",
+    "body": "Assignee: joyner\n\nCC:  @loefflerd @JohnCremona\n\nPatch adds `is_cyclic()` and `_latex_()` methods to the `AdditiveAbelianGroup`s.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9696\n\n",
     "created_at": "2010-08-06T06:22:59Z",
     "labels": [
         "group theory",
@@ -14,12 +14,12 @@ archive/issues_009696.json:
     "title": "Add methods to AdditiveAbelianGroup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9696",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 Assignee: joyner
 
-CC:  davidloeffler cremona
+CC:  @loefflerd @JohnCremona
 
 Patch adds `is_cyclic()` and `_latex_()` methods to the `AdditiveAbelianGroup`s.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9696
 archive/issue_comments_094233.json:
 ```json
 {
-    "body": "Attachment [trac_9696-cyclic-latex-additiveabeliangroup.patch](tarball://root/attachments/some-uuid/ticket9696/trac_9696-cyclic-latex-additiveabeliangroup.patch) by rbeezer created at 2010-08-06 06:26:38",
+    "body": "Attachment [trac_9696-cyclic-latex-additiveabeliangroup.patch](tarball://root/attachments/some-uuid/ticket9696/trac_9696-cyclic-latex-additiveabeliangroup.patch) by @rbeezer created at 2010-08-06 06:26:38",
     "created_at": "2010-08-06T06:26:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9696",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9696#issuecomment-94233",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9696-cyclic-latex-additiveabeliangroup.patch](tarball://root/attachments/some-uuid/ticket9696/trac_9696-cyclic-latex-additiveabeliangroup.patch) by rbeezer created at 2010-08-06 06:26:38
+Attachment [trac_9696-cyclic-latex-additiveabeliangroup.patch](tarball://root/attachments/some-uuid/ticket9696/trac_9696-cyclic-latex-additiveabeliangroup.patch) by @rbeezer created at 2010-08-06 06:26:38
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_094234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9696",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9696#issuecomment-94234",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_094235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9696",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9696#issuecomment-94235",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_094236.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9696",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9696#issuecomment-94236",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_094237.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9696",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9696#issuecomment-94237",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_094238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9696",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9696#issuecomment-94238",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -156,16 +156,16 @@ Yes, I like the '0' suggestion, I'll make that change and post an updated patch 
 archive/issue_comments_094239.json:
 ```json
 {
-    "body": "Attachment [trac_9696-cyclic-latex-additiveabeliangroup-v2.patch](tarball://root/attachments/some-uuid/ticket9696/trac_9696-cyclic-latex-additiveabeliangroup-v2.patch) by rbeezer created at 2010-08-22 19:55:15\n\nStand-alone patch, apply just this one",
+    "body": "Attachment [trac_9696-cyclic-latex-additiveabeliangroup-v2.patch](tarball://root/attachments/some-uuid/ticket9696/trac_9696-cyclic-latex-additiveabeliangroup-v2.patch) by @rbeezer created at 2010-08-22 19:55:15\n\nStand-alone patch, apply just this one",
     "created_at": "2010-08-22T19:55:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9696",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9696#issuecomment-94239",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9696-cyclic-latex-additiveabeliangroup-v2.patch](tarball://root/attachments/some-uuid/ticket9696/trac_9696-cyclic-latex-additiveabeliangroup-v2.patch) by rbeezer created at 2010-08-22 19:55:15
+Attachment [trac_9696-cyclic-latex-additiveabeliangroup-v2.patch](tarball://root/attachments/some-uuid/ticket9696/trac_9696-cyclic-latex-additiveabeliangroup-v2.patch) by @rbeezer created at 2010-08-22 19:55:15
 
 Stand-alone patch, apply just this one
 
@@ -181,7 +181,7 @@ archive/issue_comments_094240.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9696",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9696#issuecomment-94240",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_094241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9696",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9696#issuecomment-94241",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_094242.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9696",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9696#issuecomment-94242",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_094243.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9696",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9696#issuecomment-94243",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_094244.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9696",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9696#issuecomment-94244",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_094245.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9696",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9696#issuecomment-94245",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -324,7 +324,7 @@ archive/issue_comments_094246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9696",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9696#issuecomment-94246",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

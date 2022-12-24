@@ -3,7 +3,7 @@
 archive/issues_007567.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  nthiery\n\nAs of sage-4.3.alpha0, there's a small typo in the help text you get by running sage -advanced: the line that starts with \"-fixdoctest\" should be \"-fixdoctests\", as the latter is the correct name for the command. This typo was introduced in #6354. The attached patch fixes this (apply to the repository in local/bin).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7567\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nthiery\n\nAs of sage-4.3.alpha0, there's a small typo in the help text you get by running sage -advanced: the line that starts with \"-fixdoctest\" should be \"-fixdoctests\", as the latter is the correct name for the command. This typo was introduced in #6354. The attached patch fixes this (apply to the repository in local/bin).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7567\n\n",
     "created_at": "2009-12-01T05:56:33Z",
     "labels": [
         "doctest coverage",
@@ -19,7 +19,7 @@ archive/issues_007567.json:
 ```
 Assignee: tbd
 
-CC:  nthiery
+CC:  @nthiery
 
 As of sage-4.3.alpha0, there's a small typo in the help text you get by running sage -advanced: the line that starts with "-fixdoctest" should be "-fixdoctests", as the latter is the correct name for the command. This typo was introduced in #6354. The attached patch fixes this (apply to the repository in local/bin).
 
@@ -113,7 +113,7 @@ archive/issue_comments_064386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7567",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7567#issuecomment-64386",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_064387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7567",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7567#issuecomment-64387",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

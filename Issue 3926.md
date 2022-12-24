@@ -14,7 +14,7 @@ archive/issues_003926.json:
     "title": "[with spkg, needs review] fix Macaulay2 building",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3926",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: mabshoff

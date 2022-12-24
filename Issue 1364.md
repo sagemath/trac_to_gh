@@ -3,7 +3,7 @@
 archive/issues_001364.json:
 ```json
 {
-    "body": "Assignee: roed\n\n\n```\nsage -t  devel/sage-main/sage/modules/quotient_module.py \n**********************************************************************\nFile \"quotient_module.py\", line 130:\n    sage: hash(Q)\nExpected:\n    -1880683406\nGot:\n    2870563926094318706\n**********************************************************************\nFile \"quotient_module.py\", line 134:\n    sage: hash((V, W))\nExpected:\n    -1880683406\nGot:\n    2870563926094318706\n**********************************************************************\nFile \"quotient_module.py\", line 159:\n    sage: cmp(Q1, 5)\nExpected:\n    1\nGot:\n    -1\n**********************************************************************\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1364\n\n",
+    "body": "Assignee: @roed314\n\n\n```\nsage -t  devel/sage-main/sage/modules/quotient_module.py \n**********************************************************************\nFile \"quotient_module.py\", line 130:\n    sage: hash(Q)\nExpected:\n    -1880683406\nGot:\n    2870563926094318706\n**********************************************************************\nFile \"quotient_module.py\", line 134:\n    sage: hash((V, W))\nExpected:\n    -1880683406\nGot:\n    2870563926094318706\n**********************************************************************\nFile \"quotient_module.py\", line 159:\n    sage: cmp(Q1, 5)\nExpected:\n    1\nGot:\n    -1\n**********************************************************************\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1364\n\n",
     "created_at": "2007-12-02T05:27:03Z",
     "labels": [
         "doctest coverage",
@@ -17,7 +17,7 @@ archive/issues_001364.json:
     "user": "mabshoff"
 }
 ```
-Assignee: roed
+Assignee: @roed314
 
 
 ```
@@ -57,16 +57,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1364
 archive/issue_comments_008733.json:
 ```json
 {
-    "body": "Attachment [trac1364.patch](tarball://root/attachments/some-uuid/ticket1364/trac1364.patch) by was created at 2007-12-02 05:35:25",
+    "body": "Attachment [trac1364.patch](tarball://root/attachments/some-uuid/ticket1364/trac1364.patch) by @williamstein created at 2007-12-02 05:35:25",
     "created_at": "2007-12-02T05:35:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1364#issuecomment-8733",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac1364.patch](tarball://root/attachments/some-uuid/ticket1364/trac1364.patch) by was created at 2007-12-02 05:35:25
+Attachment [trac1364.patch](tarball://root/attachments/some-uuid/ticket1364/trac1364.patch) by @williamstein created at 2007-12-02 05:35:25
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_008474.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  drkirby mhansen\n\nIn various places in the Sage library, we test for the existence of programs using code like this:\n\n```\nimport os\nif os.system('which program') == 0:\n    # program exists\nelse:\n    # it doesn't\n```\n\nOn Solaris, executing \"which program\" seems to return 0 regardless of whether the program actually exists, and so any code like this is broken.  For example, try this on t2.math:\n\n```\nsage: from sage.misc.latex import have_latex\nsage: have_latex()\nTrue\nsage: import os\nsage: os.system('which latex')                                                                    \nno latex in /usr/local/sage-4.3.0.1-Solaris-10-SPARC-sun4u-or-sun4v/local/lib /usr/local/sage-4.3.0.1-Solaris-10-SPARC-sun4u-or-sun4v /usr/local/sage-4.3.0.1-Solaris-10-SPARC-sun4u-or-sun4v/local/bin /usr/local/gcc-4.4.1-sun-linker/bin /usr/local/bin2 /usr/bin /usr/ccs/bin /usr/local/bin /usr/sfw/bin /bin /usr/sbin\n0\n```\n\n\nSo we should have a function which replaces this, and we should use it in the Sage library.  On IRC, mhansen says\n\n```\n<mhansen> I think you can use \"type\" on Solaris\n```\n\nThe \"type\" command actually works for me on several different platforms, and so it's what the patch uses.\n\nThis needs testing on lots more different platforms to make sure it's portable.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8474\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  drkirby @mwhansen\n\nIn various places in the Sage library, we test for the existence of programs using code like this:\n\n```\nimport os\nif os.system('which program') == 0:\n    # program exists\nelse:\n    # it doesn't\n```\n\nOn Solaris, executing \"which program\" seems to return 0 regardless of whether the program actually exists, and so any code like this is broken.  For example, try this on t2.math:\n\n```\nsage: from sage.misc.latex import have_latex\nsage: have_latex()\nTrue\nsage: import os\nsage: os.system('which latex')                                                                    \nno latex in /usr/local/sage-4.3.0.1-Solaris-10-SPARC-sun4u-or-sun4v/local/lib /usr/local/sage-4.3.0.1-Solaris-10-SPARC-sun4u-or-sun4v /usr/local/sage-4.3.0.1-Solaris-10-SPARC-sun4u-or-sun4v/local/bin /usr/local/gcc-4.4.1-sun-linker/bin /usr/local/bin2 /usr/bin /usr/ccs/bin /usr/local/bin /usr/sfw/bin /bin /usr/sbin\n0\n```\n\n\nSo we should have a function which replaces this, and we should use it in the Sage library.  On IRC, mhansen says\n\n```\n<mhansen> I think you can use \"type\" on Solaris\n```\n\nThe \"type\" command actually works for me on several different platforms, and so it's what the patch uses.\n\nThis needs testing on lots more different platforms to make sure it's portable.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8474\n\n",
     "created_at": "2010-03-07T05:15:31Z",
     "labels": [
         "porting",
@@ -14,12 +14,12 @@ archive/issues_008474.json:
     "title": "Detect whether a program is in the path",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8474",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: drkirkby
 
-CC:  drkirby mhansen
+CC:  drkirby @mwhansen
 
 In various places in the Sage library, we test for the existence of programs using code like this:
 
@@ -71,7 +71,7 @@ archive/issue_comments_076365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8474#issuecomment-76365",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_076366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8474#issuecomment-76366",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -342,7 +342,7 @@ archive/issue_comments_076370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8474#issuecomment-76370",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -360,7 +360,7 @@ archive/issue_comments_076371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8474#issuecomment-76371",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -398,7 +398,7 @@ archive/issue_comments_076372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8474#issuecomment-76372",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -426,7 +426,7 @@ archive/issue_comments_076373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8474#issuecomment-76373",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -453,7 +453,7 @@ archive/issue_comments_076374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8474#issuecomment-76374",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -568,16 +568,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_076377.json:
 ```json
 {
-    "body": "Attachment [trac_8474-have-program.patch](tarball://root/attachments/some-uuid/ticket8474/trac_8474-have-program.patch) by mhansen created at 2010-03-08 20:56:14",
+    "body": "Attachment [trac_8474-have-program.patch](tarball://root/attachments/some-uuid/ticket8474/trac_8474-have-program.patch) by @mwhansen created at 2010-03-08 20:56:14",
     "created_at": "2010-03-08T20:56:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8474#issuecomment-76377",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_8474-have-program.patch](tarball://root/attachments/some-uuid/ticket8474/trac_8474-have-program.patch) by mhansen created at 2010-03-08 20:56:14
+Attachment [trac_8474-have-program.patch](tarball://root/attachments/some-uuid/ticket8474/trac_8474-have-program.patch) by @mwhansen created at 2010-03-08 20:56:14
 
 
 
@@ -591,7 +591,7 @@ archive/issue_comments_076378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8474#issuecomment-76378",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

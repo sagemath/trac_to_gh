@@ -173,7 +173,7 @@ archive/issue_comments_011930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1884#issuecomment-11930",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_011932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1884#issuecomment-11932",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -232,16 +232,16 @@ Changing status from new to assigned.
 archive/issue_comments_011933.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to robertwb.",
+    "body": "Changing assignee from mabshoff to @robertwb.",
     "created_at": "2008-01-29T19:44:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1884#issuecomment-11933",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from mabshoff to robertwb.
+Changing assignee from mabshoff to @robertwb.
 
 
 
@@ -255,7 +255,7 @@ archive/issue_comments_011934.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1884#issuecomment-11934",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -279,16 +279,16 @@ It's making a new parent for the constant in the loop, and adding it to the coer
 archive/issue_comments_011935.json:
 ```json
 {
-    "body": "Attachment [1884-real-memleak.diff](tarball://root/attachments/some-uuid/ticket1884/1884-real-memleak.diff) by robertwb created at 2008-01-29 20:52:32",
+    "body": "Attachment [1884-real-memleak.diff](tarball://root/attachments/some-uuid/ticket1884/1884-real-memleak.diff) by @robertwb created at 2008-01-29 20:52:32",
     "created_at": "2008-01-29T20:52:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1884#issuecomment-11935",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [1884-real-memleak.diff](tarball://root/attachments/some-uuid/ticket1884/1884-real-memleak.diff) by robertwb created at 2008-01-29 20:52:32
+Attachment [1884-real-memleak.diff](tarball://root/attachments/some-uuid/ticket1884/1884-real-memleak.diff) by @robertwb created at 2008-01-29 20:52:32
 
 
 
@@ -297,16 +297,16 @@ Attachment [1884-real-memleak.diff](tarball://root/attachments/some-uuid/ticket1
 archive/issue_comments_011936.json:
 ```json
 {
-    "body": "Attachment [1884-real-memleak2.diff](tarball://root/attachments/some-uuid/ticket1884/1884-real-memleak2.diff) by robertwb created at 2008-01-29 20:53:04",
+    "body": "Attachment [1884-real-memleak2.diff](tarball://root/attachments/some-uuid/ticket1884/1884-real-memleak2.diff) by @robertwb created at 2008-01-29 20:53:04",
     "created_at": "2008-01-29T20:53:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1884#issuecomment-11936",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [1884-real-memleak2.diff](tarball://root/attachments/some-uuid/ticket1884/1884-real-memleak2.diff) by robertwb created at 2008-01-29 20:53:04
+Attachment [1884-real-memleak2.diff](tarball://root/attachments/some-uuid/ticket1884/1884-real-memleak2.diff) by @robertwb created at 2008-01-29 20:53:04
 
 
 
@@ -320,7 +320,7 @@ archive/issue_comments_011937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1884#issuecomment-11937",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -367,7 +367,7 @@ archive/issue_comments_011939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1884#issuecomment-11939",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -410,7 +410,7 @@ archive/issue_comments_011941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1884#issuecomment-11941",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

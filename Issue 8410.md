@@ -98,7 +98,7 @@ archive/issue_comments_075348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8410",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8410#issuecomment-75348",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -120,16 +120,16 @@ Killing any remaining workers...
 archive/issue_comments_075349.json:
 ```json
 {
-    "body": "Attachment [trac_8410.patch](tarball://root/attachments/some-uuid/ticket8410/trac_8410.patch) by was created at 2010-06-24 05:43:53",
+    "body": "Attachment [trac_8410.patch](tarball://root/attachments/some-uuid/ticket8410/trac_8410.patch) by @williamstein created at 2010-06-24 05:43:53",
     "created_at": "2010-06-24T05:43:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8410",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8410#issuecomment-75349",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_8410.patch](tarball://root/attachments/some-uuid/ticket8410/trac_8410.patch) by was created at 2010-06-24 05:43:53
+Attachment [trac_8410.patch](tarball://root/attachments/some-uuid/ticket8410/trac_8410.patch) by @williamstein created at 2010-06-24 05:43:53
 
 
 
@@ -143,7 +143,7 @@ archive/issue_comments_075350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8410",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8410#issuecomment-75350",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_075353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8410",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8410#issuecomment-75353",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

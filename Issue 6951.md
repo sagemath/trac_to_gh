@@ -3,7 +3,7 @@
 archive/issues_006951.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  malb drkirkby\n\nAs the subject says. I have attached an install log of Sage 4.1.2.alpha1, building on t2.math with GCC 4.4.1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6951\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @malb drkirkby\n\nAs the subject says. I have attached an install log of Sage 4.1.2.alpha1, building on t2.math with GCC 4.4.1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6951\n\n",
     "created_at": "2009-09-17T21:39:42Z",
     "labels": [
         "packages: standard",
@@ -19,7 +19,7 @@ archive/issues_006951.json:
 ```
 Assignee: mabshoff
 
-CC:  malb drkirkby
+CC:  @malb drkirkby
 
 As the subject says. I have attached an install log of Sage 4.1.2.alpha1, building on t2.math with GCC 4.4.1.
 
@@ -59,7 +59,7 @@ archive/issue_comments_057485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6951",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6951#issuecomment-57485",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

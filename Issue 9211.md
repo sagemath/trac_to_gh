@@ -3,7 +3,7 @@
 archive/issues_009211.json:
 ```json
 {
-    "body": "Assignee: jason, mvngu, ncohen, rlm\n\nCC:  rbeezer kcrisman kini\n\nThough #7299 helped, graph vertices are still cut off.\n\nWith the updated matplotlib spkg at #9210, we can turn off clipping of the matplotlib scatterplot, or with a more recent (SVN right now) version of matplotlib, we could probably add some bbox_extra_artists to the savefig which takes those artists into account when calculating the bounding box (when bbox_inches='tight').\n\nEither way, a real fix should be possible soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9211\n\n",
+    "body": "Assignee: jason, mvngu, ncohen, rlm\n\nCC:  @rbeezer @kcrisman @kini\n\nThough #7299 helped, graph vertices are still cut off.\n\nWith the updated matplotlib spkg at #9210, we can turn off clipping of the matplotlib scatterplot, or with a more recent (SVN right now) version of matplotlib, we could probably add some bbox_extra_artists to the savefig which takes those artists into account when calculating the bounding box (when bbox_inches='tight').\n\nEither way, a real fix should be possible soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9211\n\n",
     "created_at": "2010-06-11T06:48:32Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_009211.json:
     "title": "graph vertices cut off",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9211",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jason, mvngu, ncohen, rlm
 
-CC:  rbeezer kcrisman kini
+CC:  @rbeezer @kcrisman @kini
 
 Though #7299 helped, graph vertices are still cut off.
 
@@ -43,7 +43,7 @@ archive/issue_comments_086276.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86276",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -72,16 +72,16 @@ show(K, vertex_size=800)
 archive/issue_comments_086277.json:
 ```json
 {
-    "body": "Attachment [trac-9211-graph-vertices-cut.patch](tarball://root/attachments/some-uuid/ticket9211/trac-9211-graph-vertices-cut.patch) by jason created at 2010-06-12 21:22:33",
+    "body": "Attachment [trac-9211-graph-vertices-cut.patch](tarball://root/attachments/some-uuid/ticket9211/trac-9211-graph-vertices-cut.patch) by @jasongrout created at 2010-06-12 21:22:33",
     "created_at": "2010-06-12T21:22:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86277",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-9211-graph-vertices-cut.patch](tarball://root/attachments/some-uuid/ticket9211/trac-9211-graph-vertices-cut.patch) by jason created at 2010-06-12 21:22:33
+Attachment [trac-9211-graph-vertices-cut.patch](tarball://root/attachments/some-uuid/ticket9211/trac-9211-graph-vertices-cut.patch) by @jasongrout created at 2010-06-12 21:22:33
 
 
 
@@ -95,7 +95,7 @@ archive/issue_comments_086278.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86278",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_086279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86279",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_086280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86280",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_086281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86281",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_086282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86282",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_086283.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86283",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_086284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86284",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_086285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86285",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -236,16 +236,16 @@ archive/issue_comments_086285.json:
 archive/issue_comments_086286.json:
 ```json
 {
-    "body": "Attachment [trac-9211-add_padding_to_graphs.patch](tarball://root/attachments/some-uuid/ticket9211/trac-9211-add_padding_to_graphs.patch) by ppurka created at 2011-10-11 09:45:33\n\n( Add additional padding to graphs ) Apply to devel/sage",
+    "body": "Attachment [trac-9211-add_padding_to_graphs.patch](tarball://root/attachments/some-uuid/ticket9211/trac-9211-add_padding_to_graphs.patch) by @ppurka created at 2011-10-11 09:45:33\n\n( Add additional padding to graphs ) Apply to devel/sage",
     "created_at": "2011-10-11T09:45:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86286",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
-Attachment [trac-9211-add_padding_to_graphs.patch](tarball://root/attachments/some-uuid/ticket9211/trac-9211-add_padding_to_graphs.patch) by ppurka created at 2011-10-11 09:45:33
+Attachment [trac-9211-add_padding_to_graphs.patch](tarball://root/attachments/some-uuid/ticket9211/trac-9211-add_padding_to_graphs.patch) by @ppurka created at 2011-10-11 09:45:33
 
 ( Add additional padding to graphs ) Apply to devel/sage
 
@@ -261,7 +261,7 @@ archive/issue_comments_086287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86287",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -274,16 +274,16 @@ Output with only the earlier patch (modified for 4.7.2)
 archive/issue_comments_086288.json:
 ```json
 {
-    "body": "Attachment [with-earlier-patch-modified-for-4.7.2.png](tarball://root/attachments/some-uuid/ticket9211/with-earlier-patch-modified-for-4.7.2.png) by ppurka created at 2011-10-11 09:46:37\n\nOutput with patch for additional padding",
+    "body": "Attachment [with-earlier-patch-modified-for-4.7.2.png](tarball://root/attachments/some-uuid/ticket9211/with-earlier-patch-modified-for-4.7.2.png) by @ppurka created at 2011-10-11 09:46:37\n\nOutput with patch for additional padding",
     "created_at": "2011-10-11T09:46:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86288",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
-Attachment [with-earlier-patch-modified-for-4.7.2.png](tarball://root/attachments/some-uuid/ticket9211/with-earlier-patch-modified-for-4.7.2.png) by ppurka created at 2011-10-11 09:46:37
+Attachment [with-earlier-patch-modified-for-4.7.2.png](tarball://root/attachments/some-uuid/ticket9211/with-earlier-patch-modified-for-4.7.2.png) by @ppurka created at 2011-10-11 09:46:37
 
 Output with patch for additional padding
 
@@ -299,7 +299,7 @@ archive/issue_comments_086289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86289",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -312,16 +312,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_086290.json:
 ```json
 {
-    "body": "Attachment [with-additional-padding.png](tarball://root/attachments/some-uuid/ticket9211/with-additional-padding.png) by ppurka created at 2011-10-11 09:57:32\n\nAdded two patches. The [attachment:trac-9211-fix_cut_vertices_in_graphs.patch first one] is essentially the patch by jason redone to work with 4.7.2_alpha3.\n\nThe [attachment:trac-9211-add_padding_to_graphs.patch second patch] adds extra padding to all graphs. The two pngs attached are the output of\n\n\n```\nM = matrix(RDF, [[1/3, 1/3, 1/3], [0, 1/4, 3/4], [1/2, 1/4, 1/4]])\nG=DiGraph(M, format='weighted_adjacency_matrix')\nG.show(vertex_size=800, edge_labels=True)\n```\n\n\nThe file [attachment:with-additional-padding.png] is the result of both the patches being applied.\n\nGraphs currently look really bad without either of the two patches. The second patch is not a panacea for all cut off graph plots since it doesn't fix all cases. But my hope is that it fixes most commonly used cases.",
+    "body": "Attachment [with-additional-padding.png](tarball://root/attachments/some-uuid/ticket9211/with-additional-padding.png) by @ppurka created at 2011-10-11 09:57:32\n\nAdded two patches. The [attachment:trac-9211-fix_cut_vertices_in_graphs.patch first one] is essentially the patch by jason redone to work with 4.7.2_alpha3.\n\nThe [attachment:trac-9211-add_padding_to_graphs.patch second patch] adds extra padding to all graphs. The two pngs attached are the output of\n\n\n```\nM = matrix(RDF, [[1/3, 1/3, 1/3], [0, 1/4, 3/4], [1/2, 1/4, 1/4]])\nG=DiGraph(M, format='weighted_adjacency_matrix')\nG.show(vertex_size=800, edge_labels=True)\n```\n\n\nThe file [attachment:with-additional-padding.png] is the result of both the patches being applied.\n\nGraphs currently look really bad without either of the two patches. The second patch is not a panacea for all cut off graph plots since it doesn't fix all cases. But my hope is that it fixes most commonly used cases.",
     "created_at": "2011-10-11T09:57:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86290",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
-Attachment [with-additional-padding.png](tarball://root/attachments/some-uuid/ticket9211/with-additional-padding.png) by ppurka created at 2011-10-11 09:57:32
+Attachment [with-additional-padding.png](tarball://root/attachments/some-uuid/ticket9211/with-additional-padding.png) by @ppurka created at 2011-10-11 09:57:32
 
 Added two patches. The [attachment:trac-9211-fix_cut_vertices_in_graphs.patch first one] is essentially the patch by jason redone to work with 4.7.2_alpha3.
 
@@ -351,7 +351,7 @@ archive/issue_comments_086291.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86291",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -369,7 +369,7 @@ archive/issue_comments_086292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86292",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -391,7 +391,7 @@ archive/issue_comments_086293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86293",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -404,16 +404,16 @@ Ah, right, because the first patch only fixes undirected graphs.  You are plotti
 archive/issue_comments_086294.json:
 ```json
 {
-    "body": "Attachment [trac_9211_digraph_clipping.patch](tarball://root/attachments/some-uuid/ticket9211/trac_9211_digraph_clipping.patch) by jason created at 2011-10-11 14:16:20\n\napply after trac-9211-fix_cut_vertices_in_graphs.patch",
+    "body": "Attachment [trac_9211_digraph_clipping.patch](tarball://root/attachments/some-uuid/ticket9211/trac_9211_digraph_clipping.patch) by @jasongrout created at 2011-10-11 14:16:20\n\napply after trac-9211-fix_cut_vertices_in_graphs.patch",
     "created_at": "2011-10-11T14:16:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86294",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_9211_digraph_clipping.patch](tarball://root/attachments/some-uuid/ticket9211/trac_9211_digraph_clipping.patch) by jason created at 2011-10-11 14:16:20
+Attachment [trac_9211_digraph_clipping.patch](tarball://root/attachments/some-uuid/ticket9211/trac_9211_digraph_clipping.patch) by @jasongrout created at 2011-10-11 14:16:20
 
 apply after trac-9211-fix_cut_vertices_in_graphs.patch
 
@@ -429,7 +429,7 @@ archive/issue_comments_086295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86295",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -447,7 +447,7 @@ archive/issue_comments_086296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86296",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -469,7 +469,7 @@ archive/issue_comments_086297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86297",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -487,7 +487,7 @@ archive/issue_comments_086298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86298",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -509,7 +509,7 @@ archive/issue_comments_086299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86299",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -527,7 +527,7 @@ archive/issue_comments_086300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86300",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -553,7 +553,7 @@ archive/issue_comments_086301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86301",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -571,7 +571,7 @@ archive/issue_comments_086302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86302",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -589,7 +589,7 @@ archive/issue_comments_086303.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86303",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -609,7 +609,7 @@ archive/issue_comments_086304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86304",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -622,16 +622,16 @@ I wonder if you are aware of `sage -fixdoctests`, which does basically exactly w
 archive/issue_comments_086305.json:
 ```json
 {
-    "body": "Attachment [trac_9211-fix_doctests.patch](tarball://root/attachments/some-uuid/ticket9211/trac_9211-fix_doctests.patch) by ppurka created at 2011-10-12 09:09:57\n\nFix doctests for 3d plots (re-uploaded)",
+    "body": "Attachment [trac_9211-fix_doctests.patch](tarball://root/attachments/some-uuid/ticket9211/trac_9211-fix_doctests.patch) by @ppurka created at 2011-10-12 09:09:57\n\nFix doctests for 3d plots (re-uploaded)",
     "created_at": "2011-10-12T09:09:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86305",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
-Attachment [trac_9211-fix_doctests.patch](tarball://root/attachments/some-uuid/ticket9211/trac_9211-fix_doctests.patch) by ppurka created at 2011-10-12 09:09:57
+Attachment [trac_9211-fix_doctests.patch](tarball://root/attachments/some-uuid/ticket9211/trac_9211-fix_doctests.patch) by @ppurka created at 2011-10-12 09:09:57
 
 Fix doctests for 3d plots (re-uploaded)
 
@@ -647,7 +647,7 @@ archive/issue_comments_086306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86306",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -669,7 +669,7 @@ archive/issue_comments_086307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86307",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -713,7 +713,7 @@ archive/issue_comments_086308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86308",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -731,7 +731,7 @@ archive/issue_comments_086309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86309",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -749,7 +749,7 @@ archive/issue_comments_086310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86310",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -769,7 +769,7 @@ archive/issue_comments_086311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86311",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -787,7 +787,7 @@ archive/issue_comments_086312.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86312",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -805,7 +805,7 @@ archive/issue_comments_086313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86313",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -823,7 +823,7 @@ archive/issue_comments_086314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9211#issuecomment-86314",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

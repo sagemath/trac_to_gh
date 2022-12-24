@@ -3,7 +3,7 @@
 archive/issues_003897.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  alexghitza\n\n\n```\nE = EllipticCurve([1,1])\nE.local_information(3)\n```\n\n\nyields\n\n\n```\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/local/pmzcw/prog/sage-3.1.1/<ipython console> in <module>()\n\n/hades/staff/pmzcw/prog/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_number_field.py in local_information(self, P, proof)\n    375         if isinstance(P, RingElement):\n    376             P = self.base_ring().ideal(P)\n--> 377         return self.integral_model()[0]._tate(P, proof)\n    378\n    379     def local_minimal_model(self, P, proof = None):\n\n/hades/staff/pmzcw/prog/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_number_field.py in _tate(self, P, proof)\n    517         OK = K.maximal_order()\n    518         t = verbose(\"Running Tate's algorithm with P = %s\"%P, level=1)\n--> 519         F = OK.residue_field(P)\n    520         p = F.characteristic()\n    521         if P.is_principal():\n\nAttributeError: 'sage.rings.integer_ring.IntegerRing_class' object has no attribute 'residue_field'\n```\n\n\nThe problem is that ZZ has no object residue_field, while number rings have. Either one should add this function or write local_information separately for curves over QQ.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3897\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  alexghitza\n\n\n```\nE = EllipticCurve([1,1])\nE.local_information(3)\n```\n\n\nyields\n\n\n```\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/local/pmzcw/prog/sage-3.1.1/<ipython console> in <module>()\n\n/hades/staff/pmzcw/prog/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_number_field.py in local_information(self, P, proof)\n    375         if isinstance(P, RingElement):\n    376             P = self.base_ring().ideal(P)\n--> 377         return self.integral_model()[0]._tate(P, proof)\n    378\n    379     def local_minimal_model(self, P, proof = None):\n\n/hades/staff/pmzcw/prog/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_number_field.py in _tate(self, P, proof)\n    517         OK = K.maximal_order()\n    518         t = verbose(\"Running Tate's algorithm with P = %s\"%P, level=1)\n--> 519         F = OK.residue_field(P)\n    520         p = F.characteristic()\n    521         if P.is_principal():\n\nAttributeError: 'sage.rings.integer_ring.IntegerRing_class' object has no attribute 'residue_field'\n```\n\n\nThe problem is that ZZ has no object residue_field, while number rings have. Either one should add this function or write local_information separately for curves over QQ.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3897\n\n",
     "created_at": "2008-08-19T15:19:07Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_003897.json:
     "title": "bug in local_information due to the lack of residue_field for ZZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3897",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  alexghitza
 
@@ -73,7 +73,7 @@ archive/issue_comments_027860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3897#issuecomment-27860",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -86,16 +86,16 @@ I am fixing this now....
 archive/issue_comments_027861.json:
 ```json
 {
-    "body": "Attachment [3897-residue-fields-ZZ.patch](tarball://root/attachments/some-uuid/ticket3897/3897-residue-fields-ZZ.patch) by cremona created at 2008-09-10 16:39:37\n\nOK, so the patch 3897-residue-fields-ZZ.patch implements residue fields for ZZ.  ALong the way there were quite a few smallish fixes needed in related things, and while I was immersed in number_field.py etc I added a whole lot of docstrings and doctests there.\n\nThis applies to 3.1.2.rc1 AFTER the patches for #1951 which are related (they also relate to residue fields).\n\nAfter this has been accepted (after revision if necessary, of course!)  then we can start to work on the original problem: I know that local_information() still does not work for curves defined over Q.  \n\nChris:  I have started going through all the functions for elliptic curve over Q vs. curves over number fields, to make everything as consistent as possible.  These residue field extensions will help.",
+    "body": "Attachment [3897-residue-fields-ZZ.patch](tarball://root/attachments/some-uuid/ticket3897/3897-residue-fields-ZZ.patch) by @JohnCremona created at 2008-09-10 16:39:37\n\nOK, so the patch 3897-residue-fields-ZZ.patch implements residue fields for ZZ.  ALong the way there were quite a few smallish fixes needed in related things, and while I was immersed in number_field.py etc I added a whole lot of docstrings and doctests there.\n\nThis applies to 3.1.2.rc1 AFTER the patches for #1951 which are related (they also relate to residue fields).\n\nAfter this has been accepted (after revision if necessary, of course!)  then we can start to work on the original problem: I know that local_information() still does not work for curves defined over Q.  \n\nChris:  I have started going through all the functions for elliptic curve over Q vs. curves over number fields, to make everything as consistent as possible.  These residue field extensions will help.",
     "created_at": "2008-09-10T16:39:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3897#issuecomment-27861",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [3897-residue-fields-ZZ.patch](tarball://root/attachments/some-uuid/ticket3897/3897-residue-fields-ZZ.patch) by cremona created at 2008-09-10 16:39:37
+Attachment [3897-residue-fields-ZZ.patch](tarball://root/attachments/some-uuid/ticket3897/3897-residue-fields-ZZ.patch) by @JohnCremona created at 2008-09-10 16:39:37
 
 OK, so the patch 3897-residue-fields-ZZ.patch implements residue fields for ZZ.  ALong the way there were quite a few smallish fixes needed in related things, and while I was immersed in number_field.py etc I added a whole lot of docstrings and doctests there.
 
@@ -117,7 +117,7 @@ archive/issue_comments_027862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3897#issuecomment-27862",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -130,16 +130,16 @@ apply after 3897-residue-fields-ZZ.patch
 archive/issue_comments_027863.json:
 ```json
 {
-    "body": "Attachment [3897-minor.patch](tarball://root/attachments/some-uuid/ticket3897/3897-minor.patch) by AlexGhitza created at 2008-09-21 00:23:18\n\nLooks good.  There were a few typos which are fixed in 3897-minor.patch.",
+    "body": "Attachment [3897-minor.patch](tarball://root/attachments/some-uuid/ticket3897/3897-minor.patch) by @aghitza created at 2008-09-21 00:23:18\n\nLooks good.  There were a few typos which are fixed in 3897-minor.patch.",
     "created_at": "2008-09-21T00:23:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3897#issuecomment-27863",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [3897-minor.patch](tarball://root/attachments/some-uuid/ticket3897/3897-minor.patch) by AlexGhitza created at 2008-09-21 00:23:18
+Attachment [3897-minor.patch](tarball://root/attachments/some-uuid/ticket3897/3897-minor.patch) by @aghitza created at 2008-09-21 00:23:18
 
 Looks good.  There were a few typos which are fixed in 3897-minor.patch.
 
@@ -155,7 +155,7 @@ archive/issue_comments_027864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3897#issuecomment-27864",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_027865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3897#issuecomment-27865",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_027866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3897#issuecomment-27866",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_027867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3897#issuecomment-27867",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -234,16 +234,16 @@ This is good stuff.  Unfortunately, your patch does not contain your new file el
 archive/issue_comments_027868.json:
 ```json
 {
-    "body": "Attachment [3897-local_data.patch](tarball://root/attachments/some-uuid/ticket3897/3897-local_data.patch) by cremona created at 2008-09-23 08:02:58\n\nOK, I've done that.  I'm still getting used to the \"hg q\" way of doing things, which doesn't have a commit stage -- so while I think the patch is correctly identified as due to me, there is not (I think) the usual one-line description.\n\nEnjoy.",
+    "body": "Attachment [3897-local_data.patch](tarball://root/attachments/some-uuid/ticket3897/3897-local_data.patch) by @JohnCremona created at 2008-09-23 08:02:58\n\nOK, I've done that.  I'm still getting used to the \"hg q\" way of doing things, which doesn't have a commit stage -- so while I think the patch is correctly identified as due to me, there is not (I think) the usual one-line description.\n\nEnjoy.",
     "created_at": "2008-09-23T08:02:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3897#issuecomment-27868",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [3897-local_data.patch](tarball://root/attachments/some-uuid/ticket3897/3897-local_data.patch) by cremona created at 2008-09-23 08:02:58
+Attachment [3897-local_data.patch](tarball://root/attachments/some-uuid/ticket3897/3897-local_data.patch) by @JohnCremona created at 2008-09-23 08:02:58
 
 OK, I've done that.  I'm still getting used to the "hg q" way of doing things, which doesn't have a commit stage -- so while I think the patch is correctly identified as due to me, there is not (I think) the usual one-line description.
 
@@ -261,7 +261,7 @@ archive/issue_comments_027869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3897#issuecomment-27869",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -303,16 +303,16 @@ Michael
 archive/issue_comments_027871.json:
 ```json
 {
-    "body": "Attachment [3897-deprecation.2.patch](tarball://root/attachments/some-uuid/ticket3897/3897-deprecation.2.patch) by cremona created at 2008-09-23 09:58:52\n\nReplying to [comment:12 mabshoff]:\n> Alex,\n> \n> the deprecated routine should still call the new function, i.e. a warning is issues, but the code still works.\n> \n> Cheers,\n> \n> Michael\n\nI added a line to do that.  Trac would not let me replace Alex's, but it is a replacement.",
+    "body": "Attachment [3897-deprecation.2.patch](tarball://root/attachments/some-uuid/ticket3897/3897-deprecation.2.patch) by @JohnCremona created at 2008-09-23 09:58:52\n\nReplying to [comment:12 mabshoff]:\n> Alex,\n> \n> the deprecated routine should still call the new function, i.e. a warning is issues, but the code still works.\n> \n> Cheers,\n> \n> Michael\n\nI added a line to do that.  Trac would not let me replace Alex's, but it is a replacement.",
     "created_at": "2008-09-23T09:58:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3897#issuecomment-27871",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [3897-deprecation.2.patch](tarball://root/attachments/some-uuid/ticket3897/3897-deprecation.2.patch) by cremona created at 2008-09-23 09:58:52
+Attachment [3897-deprecation.2.patch](tarball://root/attachments/some-uuid/ticket3897/3897-deprecation.2.patch) by @JohnCremona created at 2008-09-23 09:58:52
 
 Replying to [comment:12 mabshoff]:
 > Alex,
@@ -373,7 +373,7 @@ archive/issue_comments_027874.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3897#issuecomment-27874",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -401,7 +401,7 @@ archive/issue_comments_027875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3897#issuecomment-27875",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -419,7 +419,7 @@ archive/issue_comments_027876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3897#issuecomment-27876",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

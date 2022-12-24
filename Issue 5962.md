@@ -3,7 +3,7 @@
 archive/issues_005962.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  wdj\n\nKeywords: gap comparison\n\nOn sage.math with sage-3.4.1, one has\n\n```\nsage: gap('DihedralGroup(8)')==gap('DihedralGroup(8)')\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n...\nRuntimeError: Gap produced error output\nError, no 1st choice method found for `LT' on 2 arguments\n\n   executing $sage1 < $sage2;\n```\n\n\nThe problem seems to be that Gap is unable to compare:\n\n```\nsage: gap('DihedralGroup(8)=DihedralGroup(8)')\nfalse\n```\n\n\nPerhaps it would make sense to try and implement a `__cmp__` method that is more sophisticated than what is done in Gap? \n\nAt least it should be made sure that the `__cmp__` method of the Gap interface does not raise an error.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5962\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @wdjoyner\n\nKeywords: gap comparison\n\nOn sage.math with sage-3.4.1, one has\n\n```\nsage: gap('DihedralGroup(8)')==gap('DihedralGroup(8)')\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n...\nRuntimeError: Gap produced error output\nError, no 1st choice method found for `LT' on 2 arguments\n\n   executing $sage1 < $sage2;\n```\n\n\nThe problem seems to be that Gap is unable to compare:\n\n```\nsage: gap('DihedralGroup(8)=DihedralGroup(8)')\nfalse\n```\n\n\nPerhaps it would make sense to try and implement a `__cmp__` method that is more sophisticated than what is done in Gap? \n\nAt least it should be made sure that the `__cmp__` method of the Gap interface does not raise an error.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5962\n\n",
     "created_at": "2009-05-02T17:31:46Z",
     "labels": [
         "interfaces",
@@ -14,12 +14,12 @@ archive/issues_005962.json:
     "title": "Comparison in the Gap interface raises an error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5962",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  wdj
+CC:  @wdjoyner
 
 Keywords: gap comparison
 
@@ -66,7 +66,7 @@ archive/issue_comments_047214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5962#issuecomment-47214",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_047215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5962#issuecomment-47215",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_047216.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5962#issuecomment-47216",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_047217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5962#issuecomment-47217",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_047218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5962#issuecomment-47218",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_047219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5962#issuecomment-47219",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_047220.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5962#issuecomment-47220",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_047221.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5962#issuecomment-47221",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -227,16 +227,16 @@ Please change the commit message (using hg qrefresh -e) such that the ticket num
 archive/issue_comments_047222.json:
 ```json
 {
-    "body": "Attachment [trac_5962_GAP__cmp__.patch](tarball://root/attachments/some-uuid/ticket5962/trac_5962_GAP__cmp__.patch) by SimonKing created at 2011-03-27 14:00:58\n\nAvoid an error being raised when comparing GAP elements. Add doctest.",
+    "body": "Attachment [trac_5962_GAP__cmp__.patch](tarball://root/attachments/some-uuid/ticket5962/trac_5962_GAP__cmp__.patch) by @simon-king-jena created at 2011-03-27 14:00:58\n\nAvoid an error being raised when comparing GAP elements. Add doctest.",
     "created_at": "2011-03-27T14:00:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5962#issuecomment-47222",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [trac_5962_GAP__cmp__.patch](tarball://root/attachments/some-uuid/ticket5962/trac_5962_GAP__cmp__.patch) by SimonKing created at 2011-03-27 14:00:58
+Attachment [trac_5962_GAP__cmp__.patch](tarball://root/attachments/some-uuid/ticket5962/trac_5962_GAP__cmp__.patch) by @simon-king-jena created at 2011-03-27 14:00:58
 
 Avoid an error being raised when comparing GAP elements. Add doctest.
 
@@ -252,7 +252,7 @@ archive/issue_comments_047223.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5962#issuecomment-47223",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_047224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5962#issuecomment-47224",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_047225.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5962#issuecomment-47225",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -312,7 +312,7 @@ archive/issue_comments_047226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5962#issuecomment-47226",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

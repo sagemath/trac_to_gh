@@ -14,7 +14,7 @@ archive/issues_003659.json:
     "title": "[with spkg and patches, needs review] Upgrade IPython to 0.8.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3659",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: mabshoff
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3659
 archive/issue_comments_025865.json:
 ```json
 {
-    "body": "Attachment [scripts_3659.patch](tarball://root/attachments/some-uuid/ticket3659/scripts_3659.patch) by mhansen created at 2008-07-15 21:21:06\n\nThe spkg can be found at http://sage.math.washington.edu/home/mhansen/ipython-0.8.4.p0.spkg",
+    "body": "Attachment [scripts_3659.patch](tarball://root/attachments/some-uuid/ticket3659/scripts_3659.patch) by @mwhansen created at 2008-07-15 21:21:06\n\nThe spkg can be found at http://sage.math.washington.edu/home/mhansen/ipython-0.8.4.p0.spkg",
     "created_at": "2008-07-15T21:21:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3659#issuecomment-25865",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [scripts_3659.patch](tarball://root/attachments/some-uuid/ticket3659/scripts_3659.patch) by mhansen created at 2008-07-15 21:21:06
+Attachment [scripts_3659.patch](tarball://root/attachments/some-uuid/ticket3659/scripts_3659.patch) by @mwhansen created at 2008-07-15 21:21:06
 
 The spkg can be found at http://sage.math.washington.edu/home/mhansen/ipython-0.8.4.p0.spkg
 

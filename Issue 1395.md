@@ -14,7 +14,7 @@ archive/issues_001395.json:
     "title": "notebook(directory=\"foo/\") misbehaves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1395",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: boothby
@@ -61,16 +61,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1395
 archive/issue_comments_008967.json:
 ```json
 {
-    "body": "Changing assignee from boothby to mhansen.",
+    "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2007-12-06T00:38:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1395#issuecomment-8967",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from boothby to mhansen.
+Changing assignee from boothby to @mwhansen.
 
 
 
@@ -84,7 +84,7 @@ archive/issue_comments_008968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1395#issuecomment-8968",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -97,16 +97,16 @@ Changing status from new to assigned.
 archive/issue_comments_008969.json:
 ```json
 {
-    "body": "Attachment [1395.patch](tarball://root/attachments/some-uuid/ticket1395/1395.patch) by mhansen created at 2007-12-06 00:38:51",
+    "body": "Attachment [1395.patch](tarball://root/attachments/some-uuid/ticket1395/1395.patch) by @mwhansen created at 2007-12-06 00:38:51",
     "created_at": "2007-12-06T00:38:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1395#issuecomment-8969",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1395.patch](tarball://root/attachments/some-uuid/ticket1395/1395.patch) by mhansen created at 2007-12-06 00:38:51
+Attachment [1395.patch](tarball://root/attachments/some-uuid/ticket1395/1395.patch) by @mwhansen created at 2007-12-06 00:38:51
 
 
 

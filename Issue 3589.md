@@ -14,7 +14,7 @@ archive/issues_003589.json:
     "title": "numerical noise -- number_field.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3589",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: failure
@@ -128,16 +128,16 @@ Changing status from new to assigned.
 archive/issue_comments_025366.json:
 ```json
 {
-    "body": "Attachment [sage-3589.patch](tarball://root/attachments/some-uuid/ticket3589/sage-3589.patch) by was created at 2008-07-07 21:54:23",
+    "body": "Attachment [sage-3589.patch](tarball://root/attachments/some-uuid/ticket3589/sage-3589.patch) by @williamstein created at 2008-07-07 21:54:23",
     "created_at": "2008-07-07T21:54:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3589",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3589#issuecomment-25366",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3589.patch](tarball://root/attachments/some-uuid/ticket3589/sage-3589.patch) by was created at 2008-07-07 21:54:23
+Attachment [sage-3589.patch](tarball://root/attachments/some-uuid/ticket3589/sage-3589.patch) by @williamstein created at 2008-07-07 21:54:23
 
 
 
@@ -151,7 +151,7 @@ archive/issue_comments_025367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3589",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3589#issuecomment-25367",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_025369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3589",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3589#issuecomment-25369",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

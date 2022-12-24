@@ -14,7 +14,7 @@ archive/issues_006006.json:
     "title": "Bring plot/point.py to 100% coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6006",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6006
 archive/issue_comments_047781.json:
 ```json
 {
-    "body": "Changing assignee from tba to kcrisman.",
+    "body": "Changing assignee from tba to @kcrisman.",
     "created_at": "2009-05-08T05:13:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6006",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6006#issuecomment-47781",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Changing assignee from tba to kcrisman.
+Changing assignee from tba to @kcrisman.
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_047782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6006",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6006#issuecomment-47782",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing status from new to assigned.
 archive/issue_comments_047783.json:
 ```json
 {
-    "body": "Attachment [trac_6006.patch](tarball://root/attachments/some-uuid/ticket6006/trac_6006.patch) by kcrisman created at 2009-05-08 05:13:20\n\nThis patch also actually implements the height option for the plot3d method of the Point class that the old doctest was actually using through a 3D graphics object.",
+    "body": "Attachment [trac_6006.patch](tarball://root/attachments/some-uuid/ticket6006/trac_6006.patch) by @kcrisman created at 2009-05-08 05:13:20\n\nThis patch also actually implements the height option for the plot3d method of the Point class that the old doctest was actually using through a 3D graphics object.",
     "created_at": "2009-05-08T05:13:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6006",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6006#issuecomment-47783",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6006.patch](tarball://root/attachments/some-uuid/ticket6006/trac_6006.patch) by kcrisman created at 2009-05-08 05:13:20
+Attachment [trac_6006.patch](tarball://root/attachments/some-uuid/ticket6006/trac_6006.patch) by @kcrisman created at 2009-05-08 05:13:20
 
 This patch also actually implements the height option for the plot3d method of the Point class that the old doctest was actually using through a 3D graphics object.
 
@@ -93,7 +93,7 @@ archive/issue_comments_047784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6006",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6006#issuecomment-47784",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_047785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6006",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6006#issuecomment-47785",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_047787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6006",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6006#issuecomment-47787",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -192,16 +192,16 @@ Michael
 archive/issue_comments_047789.json:
 ```json
 {
-    "body": "Attachment [trac_6006-fix.patch](tarball://root/attachments/some-uuid/ticket6006/trac_6006-fix.patch) by kcrisman created at 2009-05-14 16:14:45",
+    "body": "Attachment [trac_6006-fix.patch](tarball://root/attachments/some-uuid/ticket6006/trac_6006-fix.patch) by @kcrisman created at 2009-05-14 16:14:45",
     "created_at": "2009-05-14T16:14:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6006",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6006#issuecomment-47789",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6006-fix.patch](tarball://root/attachments/some-uuid/ticket6006/trac_6006-fix.patch) by kcrisman created at 2009-05-14 16:14:45
+Attachment [trac_6006-fix.patch](tarball://root/attachments/some-uuid/ticket6006/trac_6006-fix.patch) by @kcrisman created at 2009-05-14 16:14:45
 
 
 

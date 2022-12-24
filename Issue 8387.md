@@ -3,7 +3,7 @@
 archive/issues_008387.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  was mvngu\n\nUsing Sage 4.3.3\n\nhelp(notebook) shows \n\n\n```\n |      - ``interface`` -- string (default: ``'localhost'``), address\n |        of network interface to listen on; give ``''`` to listen on\n |        all interfaces.  You may use ``address`` here for backwards\n |        compatibility, but this is deprecated and will be removed in\n |        the future.\n\n```\n\n\nThen the second and fourth examples use 'address'. \n\n\n```\n |         notebook(address='', secure=True)\n\n |         notebook(address='', server_pool=['sage1@localhost'],\n |         ulimit='-v 500000', accounts=True)\n\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8387\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein mvngu\n\nUsing Sage 4.3.3\n\nhelp(notebook) shows \n\n\n```\n |      - ``interface`` -- string (default: ``'localhost'``), address\n |        of network interface to listen on; give ``''`` to listen on\n |        all interfaces.  You may use ``address`` here for backwards\n |        compatibility, but this is deprecated and will be removed in\n |        the future.\n\n```\n\n\nThen the second and fourth examples use 'address'. \n\n\n```\n |         notebook(address='', secure=True)\n\n |         notebook(address='', server_pool=['sage1@localhost'],\n |         ulimit='-v 500000', accounts=True)\n\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8387\n\n",
     "created_at": "2010-02-27T15:59:48Z",
     "labels": [
         "notebook",
@@ -17,9 +17,9 @@ archive/issues_008387.json:
     "user": "drkirkby"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  was mvngu
+CC:  @williamstein mvngu
 
 Using Sage 4.3.3
 
@@ -61,16 +61,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8387
 archive/issue_comments_075066.json:
 ```json
 {
-    "body": "Attachment [trac_8387-nb_object_docstring.patch](tarball://root/attachments/some-uuid/ticket8387/trac_8387-nb_object_docstring.patch) by mpatel created at 2010-02-27 23:17:33\n\n\"address\" --> \"interface\".  sagenb repo.",
+    "body": "Attachment [trac_8387-nb_object_docstring.patch](tarball://root/attachments/some-uuid/ticket8387/trac_8387-nb_object_docstring.patch) by @qed777 created at 2010-02-27 23:17:33\n\n\"address\" --> \"interface\".  sagenb repo.",
     "created_at": "2010-02-27T23:17:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8387#issuecomment-75066",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8387-nb_object_docstring.patch](tarball://root/attachments/some-uuid/ticket8387/trac_8387-nb_object_docstring.patch) by mpatel created at 2010-02-27 23:17:33
+Attachment [trac_8387-nb_object_docstring.patch](tarball://root/attachments/some-uuid/ticket8387/trac_8387-nb_object_docstring.patch) by @qed777 created at 2010-02-27 23:17:33
 
 "address" --> "interface".  sagenb repo.
 
@@ -86,7 +86,7 @@ archive/issue_comments_075067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8387#issuecomment-75067",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_075068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8387#issuecomment-75068",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -156,16 +156,16 @@ There is no such chapter/section in the Installation Guide. Could you remove any
 archive/issue_comments_075071.json:
 ```json
 {
-    "body": "Attachment [trac_8387-nb_object_docstring.2.patch](tarball://root/attachments/some-uuid/ticket8387/trac_8387-nb_object_docstring.2.patch) by mpatel created at 2010-02-28 00:04:29\n\nDon't refer to non-existent chapter.  Nicer wiki links.  Replaces previous.",
+    "body": "Attachment [trac_8387-nb_object_docstring.2.patch](tarball://root/attachments/some-uuid/ticket8387/trac_8387-nb_object_docstring.2.patch) by @qed777 created at 2010-02-28 00:04:29\n\nDon't refer to non-existent chapter.  Nicer wiki links.  Replaces previous.",
     "created_at": "2010-02-28T00:04:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8387#issuecomment-75071",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8387-nb_object_docstring.2.patch](tarball://root/attachments/some-uuid/ticket8387/trac_8387-nb_object_docstring.2.patch) by mpatel created at 2010-02-28 00:04:29
+Attachment [trac_8387-nb_object_docstring.2.patch](tarball://root/attachments/some-uuid/ticket8387/trac_8387-nb_object_docstring.2.patch) by @qed777 created at 2010-02-28 00:04:29
 
 Don't refer to non-existent chapter.  Nicer wiki links.  Replaces previous.
 
@@ -181,7 +181,7 @@ archive/issue_comments_075072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8387#issuecomment-75072",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_075073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8387#issuecomment-75073",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -255,7 +255,7 @@ Dave
 archive/issue_comments_075075.json:
 ```json
 {
-    "body": "Changing assignee from was to drkirkby.",
+    "body": "Changing assignee from @williamstein to drkirkby.",
     "created_at": "2010-02-28T00:18:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8387",
     "type": "issue_comment",
@@ -264,7 +264,7 @@ archive/issue_comments_075075.json:
 }
 ```
 
-Changing assignee from was to drkirkby.
+Changing assignee from @williamstein to drkirkby.
 
 
 
@@ -321,7 +321,7 @@ archive/issue_comments_075077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8387#issuecomment-75077",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -379,7 +379,7 @@ archive/issue_comments_075079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8387#issuecomment-75079",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -435,7 +435,7 @@ archive/issue_comments_075082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8387#issuecomment-75082",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -453,7 +453,7 @@ archive/issue_comments_075083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8387#issuecomment-75083",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

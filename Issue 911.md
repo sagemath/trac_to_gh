@@ -49,7 +49,7 @@ archive/issue_comments_005595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/911#issuecomment-5595",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -97,16 +97,16 @@ diff -r 36489d2c9a2e sage/graphs/graph.py
 archive/issue_comments_005596.json:
 ```json
 {
-    "body": "Changing assignee from somebody to was.",
+    "body": "Changing assignee from somebody to @williamstein.",
     "created_at": "2007-10-17T15:26:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/911#issuecomment-5596",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from somebody to was.
+Changing assignee from somebody to @williamstein.
 
 
 
@@ -120,7 +120,7 @@ archive/issue_comments_005597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/911#issuecomment-5597",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_005598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/911#issuecomment-5598",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_005602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/911#issuecomment-5602",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

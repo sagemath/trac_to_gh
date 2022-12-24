@@ -13,7 +13,7 @@ archive/issues_008958.json:
     "title": "Extend/clarify/normalize the conventions for Python/Cython docstrings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8958",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 Assignee: mvngu
@@ -73,7 +73,7 @@ archive/issue_comments_082572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8958#issuecomment-82572",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_082573.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8958#issuecomment-82573",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_082574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8958#issuecomment-82574",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_082575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8958#issuecomment-82575",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 

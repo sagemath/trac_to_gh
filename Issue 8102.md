@@ -3,7 +3,7 @@
 archive/issues_008102.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  timdumol\n\nSimplifying `sagenb.misc.sphinxify` and importing `sphinx.application.Sphinx` on demand should make docstrings render faster and reduce Sage startup time.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8102\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @TimDumol\n\nSimplifying `sagenb.misc.sphinxify` and importing `sphinx.application.Sphinx` on demand should make docstrings render faster and reduce Sage startup time.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8102\n\n",
     "created_at": "2010-01-28T02:23:43Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_008102.json:
     "title": "Simplify Sphinxify",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8102",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  timdumol
+CC:  @TimDumol
 
 Simplifying `sagenb.misc.sphinxify` and importing `sphinx.application.Sphinx` on demand should make docstrings render faster and reduce Sage startup time.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8102
 archive/issue_comments_071086.json:
 ```json
 {
-    "body": "Attachment [trac_8102-simplify_sphinxify.patch](tarball://root/attachments/some-uuid/ticket8102/trac_8102-simplify_sphinxify.patch) by mpatel created at 2010-01-28 02:33:56\n\nSimplify `sphinxify.py`.  Some pep8 tweaks.  sagenb repo.",
+    "body": "Attachment [trac_8102-simplify_sphinxify.patch](tarball://root/attachments/some-uuid/ticket8102/trac_8102-simplify_sphinxify.patch) by @qed777 created at 2010-01-28 02:33:56\n\nSimplify `sphinxify.py`.  Some pep8 tweaks.  sagenb repo.",
     "created_at": "2010-01-28T02:33:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8102#issuecomment-71086",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8102-simplify_sphinxify.patch](tarball://root/attachments/some-uuid/ticket8102/trac_8102-simplify_sphinxify.patch) by mpatel created at 2010-01-28 02:33:56
+Attachment [trac_8102-simplify_sphinxify.patch](tarball://root/attachments/some-uuid/ticket8102/trac_8102-simplify_sphinxify.patch) by @qed777 created at 2010-01-28 02:33:56
 
 Simplify `sphinxify.py`.  Some pep8 tweaks.  sagenb repo.
 
@@ -59,7 +59,7 @@ archive/issue_comments_071087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8102#issuecomment-71087",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_071088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8102#issuecomment-71088",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_071089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8102#issuecomment-71089",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_071090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8102#issuecomment-71090",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -148,16 +148,16 @@ Otherwise it looks good.
 archive/issue_comments_071091.json:
 ```json
 {
-    "body": "Attachment [trac_8102-simplify_sphinxify.2.patch](tarball://root/attachments/some-uuid/ticket8102/trac_8102-simplify_sphinxify.2.patch) by mpatel created at 2010-02-03 05:56:04\n\nReplace `SAGE_DOC = None` with `SAGE_DOC = ''`.  Replaces previous.",
+    "body": "Attachment [trac_8102-simplify_sphinxify.2.patch](tarball://root/attachments/some-uuid/ticket8102/trac_8102-simplify_sphinxify.2.patch) by @qed777 created at 2010-02-03 05:56:04\n\nReplace `SAGE_DOC = None` with `SAGE_DOC = ''`.  Replaces previous.",
     "created_at": "2010-02-03T05:56:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8102#issuecomment-71091",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8102-simplify_sphinxify.2.patch](tarball://root/attachments/some-uuid/ticket8102/trac_8102-simplify_sphinxify.2.patch) by mpatel created at 2010-02-03 05:56:04
+Attachment [trac_8102-simplify_sphinxify.2.patch](tarball://root/attachments/some-uuid/ticket8102/trac_8102-simplify_sphinxify.2.patch) by @qed777 created at 2010-02-03 05:56:04
 
 Replace `SAGE_DOC = None` with `SAGE_DOC = ''`.  Replaces previous.
 
@@ -173,7 +173,7 @@ archive/issue_comments_071092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8102#issuecomment-71092",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_071093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8102#issuecomment-71093",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_071094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8102#issuecomment-71094",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

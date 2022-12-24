@@ -14,7 +14,7 @@ archive/issues_004830.json:
     "title": "[with patch, needs review] remove duplicate code lines in real_mpfr.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4830",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_036613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4830#issuecomment-36613",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_036615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4830#issuecomment-36615",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_036616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4830#issuecomment-36616",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 

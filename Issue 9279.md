@@ -3,7 +3,7 @@
 archive/issues_009279.json:
 ```json
 {
-    "body": "Assignee: jason\n\nThe code from `databases/tables.py` was long ago split into `databases/odlyzko.py` and `databases/cremona.py`, and these have been documented and improved.  For some reason the old file is still around, undocumented and untested.\n\nIt's time to get rid of it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9279\n\n",
+    "body": "Assignee: @jasongrout\n\nThe code from `databases/tables.py` was long ago split into `databases/odlyzko.py` and `databases/cremona.py`, and these have been documented and improved.  For some reason the old file is still around, undocumented and untested.\n\nIt's time to get rid of it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9279\n\n",
     "created_at": "2010-06-19T23:12:55Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_009279.json:
     "title": "remove databases/tables.py since superseded by newer code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9279",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: jason
+Assignee: @jasongrout
 
 The code from `databases/tables.py` was long ago split into `databases/odlyzko.py` and `databases/cremona.py`, and these have been documented and improved.  For some reason the old file is still around, undocumented and untested.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9279
 archive/issue_comments_087394.json:
 ```json
 {
-    "body": "Attachment [trac_9279.patch](tarball://root/attachments/some-uuid/ticket9279/trac_9279.patch) by AlexGhitza created at 2010-06-19 23:14:55",
+    "body": "Attachment [trac_9279.patch](tarball://root/attachments/some-uuid/ticket9279/trac_9279.patch) by @aghitza created at 2010-06-19 23:14:55",
     "created_at": "2010-06-19T23:14:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9279#issuecomment-87394",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_9279.patch](tarball://root/attachments/some-uuid/ticket9279/trac_9279.patch) by AlexGhitza created at 2010-06-19 23:14:55
+Attachment [trac_9279.patch](tarball://root/attachments/some-uuid/ticket9279/trac_9279.patch) by @aghitza created at 2010-06-19 23:14:55
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_087395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9279#issuecomment-87395",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_087396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9279#issuecomment-87396",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_087397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9279#issuecomment-87397",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_087398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9279#issuecomment-87398",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

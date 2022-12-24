@@ -14,7 +14,7 @@ archive/issues_000720.json:
     "title": "Auto-authenticate on first login",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/720",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: boothby

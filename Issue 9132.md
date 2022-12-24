@@ -3,7 +3,7 @@
 archive/issues_009132.json:
 ```json
 {
-    "body": "Assignee: jason\n\n\n```\nOn Thu, Jun 3, 2010 at 8:44 AM, John Palmieri\n wrote:\n> Should .hgignore include a line like\n>\n> \\.rej$\n\nDefinitely not.  \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9132\n\n",
+    "body": "Assignee: @jasongrout\n\n\n```\nOn Thu, Jun 3, 2010 at 8:44 AM, John Palmieri\n wrote:\n> Should .hgignore include a line like\n>\n> \\.rej$\n\nDefinitely not.  \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9132\n\n",
     "created_at": "2010-06-03T15:58:09Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_009132.json:
     "title": ".rej should not be in .hgignore",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9132",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: jason
+Assignee: @jasongrout
 
 
 ```
@@ -47,7 +47,7 @@ archive/issue_comments_085120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9132",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9132#issuecomment-85120",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_085121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9132",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9132#issuecomment-85121",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_085122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9132",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9132#issuecomment-85122",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_085123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9132",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9132#issuecomment-85123",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_085124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9132",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9132#issuecomment-85124",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

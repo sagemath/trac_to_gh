@@ -3,7 +3,7 @@
 archive/issues_009544.json:
 ```json
 {
-    "body": "Assignee: pjeremy\n\nTonelliShanks.h references int32_t but does not directly include <stdint.h> (where it is defined).  On FreeBSD using gcc45 (but not the base gcc), this causes compilation to fail.\n\nThe attached patch makes TonelliShanks.h idempotent on FreeBSD (it probably should be on all architectures but making the patch FreeBSD-specific simplifies testing).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9544\n\n",
+    "body": "Assignee: @peterjeremy\n\nTonelliShanks.h references int32_t but does not directly include <stdint.h> (where it is defined).  On FreeBSD using gcc45 (but not the base gcc), this causes compilation to fail.\n\nThe attached patch makes TonelliShanks.h idempotent on FreeBSD (it probably should be on all architectures but making the patch FreeBSD-specific simplifies testing).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9544\n\n",
     "created_at": "2010-07-18T20:01:27Z",
     "labels": [
         "porting: BSD",
@@ -14,10 +14,10 @@ archive/issues_009544.json:
     "title": "Fix flintqs on FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9544",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
-Assignee: pjeremy
+Assignee: @peterjeremy
 
 TonelliShanks.h references int32_t but does not directly include <stdint.h> (where it is defined).  On FreeBSD using gcc45 (but not the base gcc), this causes compilation to fail.
 
@@ -39,7 +39,7 @@ archive/issue_comments_091996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9544#issuecomment-91996",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_091998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9544#issuecomment-91998",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_091999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9544#issuecomment-91999",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_092000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9544#issuecomment-92000",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_092001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9544#issuecomment-92001",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -158,16 +158,16 @@ Rebased to #12855.
 archive/issue_comments_092002.json:
 ```json
 {
-    "body": "Attachment [flintqs-20070817.p8.diff](tarball://root/attachments/some-uuid/ticket9544/flintqs-20070817.p8.diff) by jdemeyer created at 2012-06-21 10:26:49\n\nDiff for the flintqs spkg. For reference / review only.",
+    "body": "Attachment [flintqs-20070817.p8.diff](tarball://root/attachments/some-uuid/ticket9544/flintqs-20070817.p8.diff) by @jdemeyer created at 2012-06-21 10:26:49\n\nDiff for the flintqs spkg. For reference / review only.",
     "created_at": "2012-06-21T10:26:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9544#issuecomment-92002",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [flintqs-20070817.p8.diff](tarball://root/attachments/some-uuid/ticket9544/flintqs-20070817.p8.diff) by jdemeyer created at 2012-06-21 10:26:49
+Attachment [flintqs-20070817.p8.diff](tarball://root/attachments/some-uuid/ticket9544/flintqs-20070817.p8.diff) by @jdemeyer created at 2012-06-21 10:26:49
 
 Diff for the flintqs spkg. For reference / review only.
 
@@ -183,7 +183,7 @@ archive/issue_comments_092003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9544#issuecomment-92003",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_092004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9544#issuecomment-92004",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_092005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9544#issuecomment-92005",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_092006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9544#issuecomment-92006",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_092007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9544#issuecomment-92007",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_092008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9544#issuecomment-92008",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -316,7 +316,7 @@ archive/issue_comments_092009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9544#issuecomment-92009",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -334,7 +334,7 @@ archive/issue_comments_092010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9544#issuecomment-92010",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -358,7 +358,7 @@ archive/issue_comments_092011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9544#issuecomment-92011",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -378,7 +378,7 @@ archive/issue_comments_092012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9544#issuecomment-92012",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

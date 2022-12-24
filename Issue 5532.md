@@ -3,7 +3,7 @@
 archive/issues_005532.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  mhansen mkoeppe slelievre\n\n1. log in at [http://sagenb.org](http://sagenb.org)\n   1. goto [http://www.sagenb.org/doc/live/tutorial/search.html](http://www.sagenb.org/doc/live/tutorial/search.html)\n\nno search box, just a js-artefact at the bottom.\n\n[reported by gustav delius in the notebook bugtracker](http://spreadsheets.google.com/ver?key=pCwvGVwSMxTzT6E2xNdo5fA&t=1237223353260000&pt=1237223333260000&diffWidget=true&s=AJVazbWgyWS5_1pWMq6L9iylQ_7orMIUow)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5532\n\n",
+    "body": "Assignee: tba\n\nCC:  @mwhansen @mkoeppe @slel\n\n1. log in at [http://sagenb.org](http://sagenb.org)\n   1. goto [http://www.sagenb.org/doc/live/tutorial/search.html](http://www.sagenb.org/doc/live/tutorial/search.html)\n\nno search box, just a js-artefact at the bottom.\n\n[reported by gustav delius in the notebook bugtracker](http://spreadsheets.google.com/ver?key=pCwvGVwSMxTzT6E2xNdo5fA&t=1237223353260000&pt=1237223333260000&diffWidget=true&s=AJVazbWgyWS5_1pWMq6L9iylQ_7orMIUow)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5532\n\n",
     "created_at": "2009-03-16T17:48:46Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_005532.json:
     "title": "doc search in sagenb.org broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5532",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 Assignee: tba
 
-CC:  mhansen mkoeppe slelievre
+CC:  @mwhansen @mkoeppe @slel
 
 1. log in at [http://sagenb.org](http://sagenb.org)
    1. goto [http://www.sagenb.org/doc/live/tutorial/search.html](http://www.sagenb.org/doc/live/tutorial/search.html)
@@ -39,16 +39,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5532
 archive/issue_comments_043013.json:
 ```json
 {
-    "body": "Attachment [Screen shot 2012-06-01 at 2.18.19 PM.png](tarball://root/attachments/some-uuid/ticket5532/Screen shot 2012-06-01 at 2.18.19 PM.png) by kcrisman created at 2012-06-01 18:19:42",
+    "body": "Attachment [Screen shot 2012-06-01 at 2.18.19 PM.png](tarball://root/attachments/some-uuid/ticket5532/Screen shot 2012-06-01 at 2.18.19 PM.png) by @kcrisman created at 2012-06-01 18:19:42",
     "created_at": "2012-06-01T18:19:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5532#issuecomment-43013",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [Screen shot 2012-06-01 at 2.18.19 PM.png](tarball://root/attachments/some-uuid/ticket5532/Screen shot 2012-06-01 at 2.18.19 PM.png) by kcrisman created at 2012-06-01 18:19:42
+Attachment [Screen shot 2012-06-01 at 2.18.19 PM.png](tarball://root/attachments/some-uuid/ticket5532/Screen shot 2012-06-01 at 2.18.19 PM.png) by @kcrisman created at 2012-06-01 18:19:42
 
 
 
@@ -62,7 +62,7 @@ archive/issue_comments_043014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5532#issuecomment-43014",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_043015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5532#issuecomment-43015",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_043016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5532#issuecomment-43016",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_043017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5532#issuecomment-43017",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_043018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5532#issuecomment-43018",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_043019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5532#issuecomment-43019",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_043020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5532#issuecomment-43020",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

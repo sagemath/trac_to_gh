@@ -3,7 +3,7 @@
 archive/issues_005447.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jason\n\nApparently these new releases are much faster (like an order of magnitude for some operations).\n\nhttp://docs.jquery.com/Release:jQuery_1.3\n\nIssue created by migration from https://trac.sagemath.org/ticket/5447\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jasongrout\n\nApparently these new releases are much faster (like an order of magnitude for some operations).\n\nhttp://docs.jquery.com/Release:jQuery_1.3\n\nIssue created by migration from https://trac.sagemath.org/ticket/5447\n\n",
     "created_at": "2009-03-06T03:19:53Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_005447.json:
     "title": "upgrade to jquery 1.3 and jqueryui 1.7",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5447",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: tbd
 
-CC:  jason
+CC:  @jasongrout
 
 Apparently these new releases are much faster (like an order of magnitude for some operations).
 
@@ -41,7 +41,7 @@ archive/issue_comments_042108.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5447#issuecomment-42108",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_042109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5447#issuecomment-42109",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_042110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5447#issuecomment-42110",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_042111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5447#issuecomment-42111",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -108,16 +108,16 @@ Changing status from new to assigned.
 archive/issue_comments_042112.json:
 ```json
 {
-    "body": "Changing assignee from boothby to jason.",
+    "body": "Changing assignee from boothby to @jasongrout.",
     "created_at": "2009-03-12T22:49:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5447#issuecomment-42112",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from boothby to jason.
+Changing assignee from boothby to @jasongrout.
 
 
 
@@ -126,16 +126,16 @@ Changing assignee from boothby to jason.
 archive/issue_comments_042113.json:
 ```json
 {
-    "body": "Attachment [trac_5447-jquery_upgrade.patch](tarball://root/attachments/some-uuid/ticket5447/trac_5447-jquery_upgrade.patch) by mpatel created at 2009-08-03 03:28:23\n\nFor p0 spkgs.",
+    "body": "Attachment [trac_5447-jquery_upgrade.patch](tarball://root/attachments/some-uuid/ticket5447/trac_5447-jquery_upgrade.patch) by @qed777 created at 2009-08-03 03:28:23\n\nFor p0 spkgs.",
     "created_at": "2009-08-03T03:28:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5447#issuecomment-42113",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_5447-jquery_upgrade.patch](tarball://root/attachments/some-uuid/ticket5447/trac_5447-jquery_upgrade.patch) by mpatel created at 2009-08-03 03:28:23
+Attachment [trac_5447-jquery_upgrade.patch](tarball://root/attachments/some-uuid/ticket5447/trac_5447-jquery_upgrade.patch) by @qed777 created at 2009-08-03 03:28:23
 
 For p0 spkgs.
 
@@ -151,7 +151,7 @@ archive/issue_comments_042114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5447#issuecomment-42114",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_042115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5447#issuecomment-42115",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_042116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5447#issuecomment-42116",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -213,16 +213,16 @@ If necessary, rebase the patch against #6568.
 archive/issue_comments_042117.json:
 ```json
 {
-    "body": "Attachment [trac_5447-jquery_upgrade_v2.patch](tarball://root/attachments/some-uuid/ticket5447/trac_5447-jquery_upgrade_v2.patch) by mpatel created at 2009-09-01 08:05:14\n\nFor p1 spkgs. Depends on #6568, #6840.",
+    "body": "Attachment [trac_5447-jquery_upgrade_v2.patch](tarball://root/attachments/some-uuid/ticket5447/trac_5447-jquery_upgrade_v2.patch) by @qed777 created at 2009-09-01 08:05:14\n\nFor p1 spkgs. Depends on #6568, #6840.",
     "created_at": "2009-09-01T08:05:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5447#issuecomment-42117",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_5447-jquery_upgrade_v2.patch](tarball://root/attachments/some-uuid/ticket5447/trac_5447-jquery_upgrade_v2.patch) by mpatel created at 2009-09-01 08:05:14
+Attachment [trac_5447-jquery_upgrade_v2.patch](tarball://root/attachments/some-uuid/ticket5447/trac_5447-jquery_upgrade_v2.patch) by @qed777 created at 2009-09-01 08:05:14
 
 For p1 spkgs. Depends on #6568, #6840.
 
@@ -238,7 +238,7 @@ archive/issue_comments_042118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5447#issuecomment-42118",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_042119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5447#issuecomment-42119",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -282,16 +282,16 @@ Updated spkgs with fixed "set -e" problem (cf. [comment:ticket:6586:37 this comm
 archive/issue_comments_042120.json:
 ```json
 {
-    "body": "Attachment [trac_5447-jquery_upgrade_v2-rebased.patch](tarball://root/attachments/some-uuid/ticket5447/trac_5447-jquery_upgrade_v2-rebased.patch) by jason created at 2009-09-15 18:56:38\n\napply instead of previous patches",
+    "body": "Attachment [trac_5447-jquery_upgrade_v2-rebased.patch](tarball://root/attachments/some-uuid/ticket5447/trac_5447-jquery_upgrade_v2-rebased.patch) by @jasongrout created at 2009-09-15 18:56:38\n\napply instead of previous patches",
     "created_at": "2009-09-15T18:56:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5447#issuecomment-42120",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_5447-jquery_upgrade_v2-rebased.patch](tarball://root/attachments/some-uuid/ticket5447/trac_5447-jquery_upgrade_v2-rebased.patch) by jason created at 2009-09-15 18:56:38
+Attachment [trac_5447-jquery_upgrade_v2-rebased.patch](tarball://root/attachments/some-uuid/ticket5447/trac_5447-jquery_upgrade_v2-rebased.patch) by @jasongrout created at 2009-09-15 18:56:38
 
 apply instead of previous patches
 
@@ -307,7 +307,7 @@ archive/issue_comments_042121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5447#issuecomment-42121",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -335,7 +335,7 @@ archive/issue_comments_042122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5447#issuecomment-42122",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -353,7 +353,7 @@ archive/issue_comments_042123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5447#issuecomment-42123",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -371,7 +371,7 @@ archive/issue_comments_042124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5447#issuecomment-42124",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -384,16 +384,16 @@ Apply only this patch.
 archive/issue_comments_042125.json:
 ```json
 {
-    "body": "Attachment [trac_5447-jquery_upgrade_v3.patch](tarball://root/attachments/some-uuid/ticket5447/trac_5447-jquery_upgrade_v3.patch) by mpatel created at 2009-09-18 03:49:24\n\nThanks very much for pointing out those places.  [attachment:trac_5447-jquery_upgrade_v3.patch Patch v3] should cover them.  I've also [inquired](http://groups.google.com/group/sage-devel/browse_thread/thread/372c917e59b713f4) on sage-devel about the sliders.",
+    "body": "Attachment [trac_5447-jquery_upgrade_v3.patch](tarball://root/attachments/some-uuid/ticket5447/trac_5447-jquery_upgrade_v3.patch) by @qed777 created at 2009-09-18 03:49:24\n\nThanks very much for pointing out those places.  [attachment:trac_5447-jquery_upgrade_v3.patch Patch v3] should cover them.  I've also [inquired](http://groups.google.com/group/sage-devel/browse_thread/thread/372c917e59b713f4) on sage-devel about the sliders.",
     "created_at": "2009-09-18T03:49:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5447#issuecomment-42125",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_5447-jquery_upgrade_v3.patch](tarball://root/attachments/some-uuid/ticket5447/trac_5447-jquery_upgrade_v3.patch) by mpatel created at 2009-09-18 03:49:24
+Attachment [trac_5447-jquery_upgrade_v3.patch](tarball://root/attachments/some-uuid/ticket5447/trac_5447-jquery_upgrade_v3.patch) by @qed777 created at 2009-09-18 03:49:24
 
 Thanks very much for pointing out those places.  [attachment:trac_5447-jquery_upgrade_v3.patch Patch v3] should cover them.  I've also [inquired](http://groups.google.com/group/sage-devel/browse_thread/thread/372c917e59b713f4) on sage-devel about the sliders.
 
@@ -409,7 +409,7 @@ archive/issue_comments_042126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5447#issuecomment-42126",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -429,7 +429,7 @@ archive/issue_comments_042127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5447#issuecomment-42127",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -453,7 +453,7 @@ archive/issue_comments_042128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5447#issuecomment-42128",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -471,7 +471,7 @@ archive/issue_comments_042129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5447#issuecomment-42129",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -489,7 +489,7 @@ archive/issue_comments_042130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5447#issuecomment-42130",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -510,7 +510,7 @@ archive/issue_comments_042131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5447#issuecomment-42131",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -528,7 +528,7 @@ archive/issue_comments_042132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5447#issuecomment-42132",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

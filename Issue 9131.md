@@ -14,7 +14,7 @@ archive/issues_009131.json:
     "title": "sage-4.4.3.alpha2: OS X 10.4 PPC -- readline fails to build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9131",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: GeorgSWeber
@@ -69,7 +69,7 @@ archive/issue_comments_085116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9131",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9131#issuecomment-85116",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_085117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9131",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9131#issuecomment-85117",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_085118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9131",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9131#issuecomment-85118",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_085119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9131",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9131#issuecomment-85119",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_009621.json:
     "title": "Fix GAP interface problem in sylow_subgroup method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9621",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 Assignee: joyner
@@ -49,16 +49,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9621
 archive/issue_comments_093192.json:
 ```json
 {
-    "body": "Attachment [trac-9621_permgroup_sylow_subgroup.patch](tarball://root/attachments/some-uuid/ticket9621/trac-9621_permgroup_sylow_subgroup.patch) by SimonKing created at 2010-07-28 08:24:11\n\nFixes GAP interface bug of sylow_subgroup method (with doctest)",
+    "body": "Attachment [trac-9621_permgroup_sylow_subgroup.patch](tarball://root/attachments/some-uuid/ticket9621/trac-9621_permgroup_sylow_subgroup.patch) by @simon-king-jena created at 2010-07-28 08:24:11\n\nFixes GAP interface bug of sylow_subgroup method (with doctest)",
     "created_at": "2010-07-28T08:24:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9621#issuecomment-93192",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [trac-9621_permgroup_sylow_subgroup.patch](tarball://root/attachments/some-uuid/ticket9621/trac-9621_permgroup_sylow_subgroup.patch) by SimonKing created at 2010-07-28 08:24:11
+Attachment [trac-9621_permgroup_sylow_subgroup.patch](tarball://root/attachments/some-uuid/ticket9621/trac-9621_permgroup_sylow_subgroup.patch) by @simon-king-jena created at 2010-07-28 08:24:11
 
 Fixes GAP interface bug of sylow_subgroup method (with doctest)
 
@@ -74,7 +74,7 @@ archive/issue_comments_093193.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9621#issuecomment-93193",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_093194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9621#issuecomment-93194",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_093195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9621#issuecomment-93195",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -125,16 +125,16 @@ Simplification of the above patch
 archive/issue_comments_093196.json:
 ```json
 {
-    "body": "Attachment [trac_9621_simplification.patch](tarball://root/attachments/some-uuid/ticket9621/trac_9621_simplification.patch) by SimonKing created at 2010-07-30 13:10:22\n\nReplaces the other two patches",
+    "body": "Attachment [trac_9621_simplification.patch](tarball://root/attachments/some-uuid/ticket9621/trac_9621_simplification.patch) by @simon-king-jena created at 2010-07-30 13:10:22\n\nReplaces the other two patches",
     "created_at": "2010-07-30T13:10:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9621#issuecomment-93196",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [trac_9621_simplification.patch](tarball://root/attachments/some-uuid/ticket9621/trac_9621_simplification.patch) by SimonKing created at 2010-07-30 13:10:22
+Attachment [trac_9621_simplification.patch](tarball://root/attachments/some-uuid/ticket9621/trac_9621_simplification.patch) by @simon-king-jena created at 2010-07-30 13:10:22
 
 Replaces the other two patches
 
@@ -145,16 +145,16 @@ Replaces the other two patches
 archive/issue_comments_093197.json:
 ```json
 {
-    "body": "Attachment [trac-9621_permgroup_sylow_subgroup_with_simplification.patch](tarball://root/attachments/some-uuid/ticket9621/trac-9621_permgroup_sylow_subgroup_with_simplification.patch) by SimonKing created at 2010-07-30 13:11:55\n\nHi Johan!\n\nReplying to [comment:2 jsrn]:\n> It seems that some parsing functionality has already been built into the gap interface, so all the last lines of sylow_subgroups can be greatly simplified. \n\nYou have a misprint in your patch. You wrote self_element_class(), but it should be self._element_class().\n\nHowever, your suggestion makes indeed sense. So, I created a patch that corrects that misprint and combines both of our patches into one.\n\nNow the big question is: I think we are both Authors now (and I inserted your name in the corresponding field of this ticket). So, who will review??\n\nCheers,\nSimon",
+    "body": "Attachment [trac-9621_permgroup_sylow_subgroup_with_simplification.patch](tarball://root/attachments/some-uuid/ticket9621/trac-9621_permgroup_sylow_subgroup_with_simplification.patch) by @simon-king-jena created at 2010-07-30 13:11:55\n\nHi Johan!\n\nReplying to [comment:2 jsrn]:\n> It seems that some parsing functionality has already been built into the gap interface, so all the last lines of sylow_subgroups can be greatly simplified. \n\nYou have a misprint in your patch. You wrote self_element_class(), but it should be self._element_class().\n\nHowever, your suggestion makes indeed sense. So, I created a patch that corrects that misprint and combines both of our patches into one.\n\nNow the big question is: I think we are both Authors now (and I inserted your name in the corresponding field of this ticket). So, who will review??\n\nCheers,\nSimon",
     "created_at": "2010-07-30T13:11:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9621#issuecomment-93197",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [trac-9621_permgroup_sylow_subgroup_with_simplification.patch](tarball://root/attachments/some-uuid/ticket9621/trac-9621_permgroup_sylow_subgroup_with_simplification.patch) by SimonKing created at 2010-07-30 13:11:55
+Attachment [trac-9621_permgroup_sylow_subgroup_with_simplification.patch](tarball://root/attachments/some-uuid/ticket9621/trac-9621_permgroup_sylow_subgroup_with_simplification.patch) by @simon-king-jena created at 2010-07-30 13:11:55
 
 Hi Johan!
 
@@ -182,7 +182,7 @@ archive/issue_comments_093198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9621#issuecomment-93198",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_093199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9621#issuecomment-93199",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -284,7 +284,7 @@ archive/issue_comments_093202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9621#issuecomment-93202",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -302,7 +302,7 @@ archive/issue_comments_093203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9621#issuecomment-93203",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_093204.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9621#issuecomment-93204",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_093205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9621#issuecomment-93205",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

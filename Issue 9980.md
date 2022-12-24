@@ -3,7 +3,7 @@
 archive/issues_009980.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  niles\n\nKeywords: power series\n\nMultivariate power series rings are implemented in #1956 as a subclass of (univariate) power series rings.  The two should be merged, following the implementation of polynomial rings.  As a first step, some behavior of `PowerSeriesRing` must be deprecated; a ticket for this is at #9980.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9981\n\n",
+    "body": "Assignee: @malb\n\nCC:  @nilesjohnson\n\nKeywords: power series\n\nMultivariate power series rings are implemented in #1956 as a subclass of (univariate) power series rings.  The two should be merged, following the implementation of polynomial rings.  As a first step, some behavior of `PowerSeriesRing` must be deprecated; a ticket for this is at #9980.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9981\n\n",
     "created_at": "2010-09-23T17:49:58Z",
     "labels": [
         "commutative algebra",
@@ -13,12 +13,12 @@ archive/issues_009980.json:
     "title": "Unify univariate and multivariate power series rings, as has been done for polynomial rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9980",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  niles
+CC:  @nilesjohnson
 
 Keywords: power series
 

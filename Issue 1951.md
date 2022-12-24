@@ -3,7 +3,7 @@
 archive/issues_001951.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis should work:\n\n```\nsage: K.<i> = NumberField(x^2 + 1)\nsage: P = [g[0] for g in K.factor_integer(5)]; P\n[Fractional ideal (-i - 2), Fractional ideal (2*i + 1)]\nsage: a = 1/(1+2*i)\nsage: K = [g.residue_field() for g in P]; K\n[Residue field of Fractional ideal (-i - 2), Residue field of Fractional ideal (2*i + 1)]\nsage: F = K[0]\nsage: a.valuation(P[0])\n0\nsage: F(i/7)\n4\nsage: F(a)\nTraceback (most recent call last):\n...\nZeroDivisionError: Inverse does not exist.\n```\n\n\nThe problem is that a in terms of a basis for the maximal order still has\nsome 5's in the denominator, even though a is P[0]-integral.  To fix this\nin general, one could:\n  \n1. Find an element b of the ring of integers that is 1 modulo P[0] and is 0 modulo all the other P[i] (using the not-implemented-right now CRT),\n\n2. Multiply a through by some power of b.\n\n3. Reduce.  \n\n4. Divide back through by the reduction of b.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1951\n\n",
+    "body": "Assignee: @williamstein\n\nThis should work:\n\n```\nsage: K.<i> = NumberField(x^2 + 1)\nsage: P = [g[0] for g in K.factor_integer(5)]; P\n[Fractional ideal (-i - 2), Fractional ideal (2*i + 1)]\nsage: a = 1/(1+2*i)\nsage: K = [g.residue_field() for g in P]; K\n[Residue field of Fractional ideal (-i - 2), Residue field of Fractional ideal (2*i + 1)]\nsage: F = K[0]\nsage: a.valuation(P[0])\n0\nsage: F(i/7)\n4\nsage: F(a)\nTraceback (most recent call last):\n...\nZeroDivisionError: Inverse does not exist.\n```\n\n\nThe problem is that a in terms of a basis for the maximal order still has\nsome 5's in the denominator, even though a is P[0]-integral.  To fix this\nin general, one could:\n  \n1. Find an element b of the ring of integers that is 1 modulo P[0] and is 0 modulo all the other P[i] (using the not-implemented-right now CRT),\n\n2. Multiply a through by some power of b.\n\n3. Reduce.  \n\n4. Divide back through by the reduction of b.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1951\n\n",
     "created_at": "2008-01-27T20:40:44Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_001951.json:
     "title": "reducation map modulo a number field prime ideal still not 100% done",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1951",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This should work:
 
@@ -65,16 +65,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1951
 archive/issue_comments_012416.json:
 ```json
 {
-    "body": "Attachment [1951-residues.patch](tarball://root/attachments/some-uuid/ticket1951/1951-residues.patch) by cremona created at 2008-09-10 09:32:38",
+    "body": "Attachment [1951-residues.patch](tarball://root/attachments/some-uuid/ticket1951/1951-residues.patch) by @JohnCremona created at 2008-09-10 09:32:38",
     "created_at": "2008-09-10T09:32:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1951",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1951#issuecomment-12416",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [1951-residues.patch](tarball://root/attachments/some-uuid/ticket1951/1951-residues.patch) by cremona created at 2008-09-10 09:32:38
+Attachment [1951-residues.patch](tarball://root/attachments/some-uuid/ticket1951/1951-residues.patch) by @JohnCremona created at 2008-09-10 09:32:38
 
 
 
@@ -88,7 +88,7 @@ archive/issue_comments_012417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1951",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1951#issuecomment-12417",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_012418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1951",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1951#issuecomment-12418",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -125,16 +125,16 @@ Changing keywords from "" to "number field residue field reduction".
 archive/issue_comments_012419.json:
 ```json
 {
-    "body": "Attachment [1951-residues-1.patch](tarball://root/attachments/some-uuid/ticket1951/1951-residues-1.patch) by cremona created at 2008-09-10 10:36:32",
+    "body": "Attachment [1951-residues-1.patch](tarball://root/attachments/some-uuid/ticket1951/1951-residues-1.patch) by @JohnCremona created at 2008-09-10 10:36:32",
     "created_at": "2008-09-10T10:36:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1951",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1951#issuecomment-12419",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [1951-residues-1.patch](tarball://root/attachments/some-uuid/ticket1951/1951-residues-1.patch) by cremona created at 2008-09-10 10:36:32
+Attachment [1951-residues-1.patch](tarball://root/attachments/some-uuid/ticket1951/1951-residues-1.patch) by @JohnCremona created at 2008-09-10 10:36:32
 
 
 
@@ -148,7 +148,7 @@ archive/issue_comments_012420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1951",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1951#issuecomment-12420",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_012421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1951",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1951#issuecomment-12421",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

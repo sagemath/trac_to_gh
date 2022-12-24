@@ -3,7 +3,7 @@
 archive/issues_009403.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  ebeyerstedt fwclarke davidloeffler\n\nKeywords: number field, embedding, homomorphism, preimage\n\nI am adding a preimage method in the NumberFieldHomomorphism_im_gens class. There may be a better or more general place to put this, but we need it for the descend_to method in EllipticCurve so I am putting it there for now.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9403\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  ebeyerstedt fwclarke @loefflerd\n\nKeywords: number field, embedding, homomorphism, preimage\n\nI am adding a preimage method in the NumberFieldHomomorphism_im_gens class. There may be a better or more general place to put this, but we need it for the descend_to method in EllipticCurve so I am putting it there for now.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9403\n\n",
     "created_at": "2010-07-01T23:18:22Z",
     "labels": [
         "algebra",
@@ -17,9 +17,9 @@ archive/issues_009403.json:
     "user": "jeremywest"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  ebeyerstedt fwclarke davidloeffler
+CC:  ebeyerstedt fwclarke @loefflerd
 
 Keywords: number field, embedding, homomorphism, preimage
 
@@ -174,7 +174,7 @@ archive/issue_comments_089609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9403#issuecomment-89609",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_089611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9403#issuecomment-89611",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_089612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9403#issuecomment-89612",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_089613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9403#issuecomment-89613",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -284,7 +284,7 @@ archive/issue_comments_089615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9403#issuecomment-89615",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -302,7 +302,7 @@ archive/issue_comments_089616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9403#issuecomment-89616",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -320,7 +320,7 @@ archive/issue_comments_089617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9403#issuecomment-89617",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -338,7 +338,7 @@ archive/issue_comments_089618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9403#issuecomment-89618",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -356,7 +356,7 @@ archive/issue_comments_089619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9403#issuecomment-89619",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

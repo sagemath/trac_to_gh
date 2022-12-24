@@ -14,7 +14,7 @@ archive/issues_000683.json:
     "title": "bug in \"latex?\" in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/683",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -56,16 +56,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/683
 archive/issue_comments_003543.json:
 ```json
 {
-    "body": "Attachment [683-989-ncalexan-1.patch](tarball://root/attachments/some-uuid/ticket683/683-989-ncalexan-1.patch) by ncalexan created at 2007-11-04 07:32:49",
+    "body": "Attachment [683-989-ncalexan-1.patch](tarball://root/attachments/some-uuid/ticket683/683-989-ncalexan-1.patch) by @ncalexan created at 2007-11-04 07:32:49",
     "created_at": "2007-11-04T07:32:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/683#issuecomment-3543",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [683-989-ncalexan-1.patch](tarball://root/attachments/some-uuid/ticket683/683-989-ncalexan-1.patch) by ncalexan created at 2007-11-04 07:32:49
+Attachment [683-989-ncalexan-1.patch](tarball://root/attachments/some-uuid/ticket683/683-989-ncalexan-1.patch) by @ncalexan created at 2007-11-04 07:32:49
 
 
 
@@ -79,7 +79,7 @@ archive/issue_comments_003544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/683#issuecomment-3544",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

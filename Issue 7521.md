@@ -3,7 +3,7 @@
 archive/issues_007521.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jason mhansen\n\n\n```\nsage: r.install_package('Hmisc')       #optional \n```\n\nmakes no sense, because the command is install_packages().\n\nIssue created by migration from https://trac.sagemath.org/ticket/7521\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jasongrout @mwhansen\n\n\n```\nsage: r.install_package('Hmisc')       #optional \n```\n\nmakes no sense, because the command is install_packages().\n\nIssue created by migration from https://trac.sagemath.org/ticket/7521\n\n",
     "created_at": "2009-11-24T01:00:30Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_007521.json:
     "title": "typo in optional doctest for R interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7521",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: tbd
 
-CC:  jason mhansen
+CC:  @jasongrout @mwhansen
 
 
 ```
@@ -39,16 +39,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7521
 archive/issue_comments_063721.json:
 ```json
 {
-    "body": "Attachment [trac_7521-R-typo.patch](tarball://root/attachments/some-uuid/ticket7521/trac_7521-R-typo.patch) by kcrisman created at 2009-12-14 15:48:01\n\nBased on 4.2.1",
+    "body": "Attachment [trac_7521-R-typo.patch](tarball://root/attachments/some-uuid/ticket7521/trac_7521-R-typo.patch) by @kcrisman created at 2009-12-14 15:48:01\n\nBased on 4.2.1",
     "created_at": "2009-12-14T15:48:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7521#issuecomment-63721",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_7521-R-typo.patch](tarball://root/attachments/some-uuid/ticket7521/trac_7521-R-typo.patch) by kcrisman created at 2009-12-14 15:48:01
+Attachment [trac_7521-R-typo.patch](tarball://root/attachments/some-uuid/ticket7521/trac_7521-R-typo.patch) by @kcrisman created at 2009-12-14 15:48:01
 
 Based on 4.2.1
 
@@ -64,7 +64,7 @@ archive/issue_comments_063722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7521#issuecomment-63722",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_063723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7521#issuecomment-63723",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_063724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7521#issuecomment-63724",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_063725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7521#issuecomment-63725",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -133,16 +133,16 @@ You're right.  I'm not sure how to fix that; what the original looks like is in 
 archive/issue_comments_063726.json:
 ```json
 {
-    "body": "Attachment [pic.tiff](tarball://root/attachments/some-uuid/ticket7521/pic.tiff) by kcrisman created at 2009-12-14 16:28:51",
+    "body": "Attachment [pic.tiff](tarball://root/attachments/some-uuid/ticket7521/pic.tiff) by @kcrisman created at 2009-12-14 16:28:51",
     "created_at": "2009-12-14T16:28:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7521#issuecomment-63726",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [pic.tiff](tarball://root/attachments/some-uuid/ticket7521/pic.tiff) by kcrisman created at 2009-12-14 16:28:51
+Attachment [pic.tiff](tarball://root/attachments/some-uuid/ticket7521/pic.tiff) by @kcrisman created at 2009-12-14 16:28:51
 
 
 
@@ -156,7 +156,7 @@ archive/issue_comments_063727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7521#issuecomment-63727",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_063728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7521#issuecomment-63728",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -187,16 +187,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_063729.json:
 ```json
 {
-    "body": "Attachment [trac_7521-R-typo-take2.patch](tarball://root/attachments/some-uuid/ticket7521/trac_7521-R-typo-take2.patch) by kcrisman created at 2010-01-25 19:37:00\n\nBased on 4.3.1, sort of depends on spkg in #6532",
+    "body": "Attachment [trac_7521-R-typo-take2.patch](tarball://root/attachments/some-uuid/ticket7521/trac_7521-R-typo-take2.patch) by @kcrisman created at 2010-01-25 19:37:00\n\nBased on 4.3.1, sort of depends on spkg in #6532",
     "created_at": "2010-01-25T19:37:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7521#issuecomment-63729",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_7521-R-typo-take2.patch](tarball://root/attachments/some-uuid/ticket7521/trac_7521-R-typo-take2.patch) by kcrisman created at 2010-01-25 19:37:00
+Attachment [trac_7521-R-typo-take2.patch](tarball://root/attachments/some-uuid/ticket7521/trac_7521-R-typo-take2.patch) by @kcrisman created at 2010-01-25 19:37:00
 
 Based on 4.3.1, sort of depends on spkg in #6532
 
@@ -212,7 +212,7 @@ archive/issue_comments_063730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7521#issuecomment-63730",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

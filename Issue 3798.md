@@ -14,7 +14,7 @@ archive/issues_003798.json:
     "title": "[with patch, needs review] some docstrings for sage.graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3798",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: tba

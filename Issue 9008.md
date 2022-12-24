@@ -3,7 +3,7 @@
 archive/issues_009008.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  jsp\n\nThe zlib package building 32-bit on OpenSolaris (see #7128), and has various hacks to make it build 64-bit on OS X. The spkg-install has various hacks, which I think are better implemented other ways. \n\n1) \n\n```\n-I\\\"$SAGE_LOCAL/include\\\"\"\n```\n\n\nseems better replaced by the command line option available on the configure script. \n\n\n```\n--includedir=\"$SAGE_LOCAL/include\" \n```\n\n\n2) Adding \n\n```\n-m64\n```\n \nis not currently the correct way to make a 64-bit build - the option \n\n\n```\n--64\n```\n\n\nis for that purpose. The developer (Mark Alder) was surprised hacks were needed for OS X, as that is his main development platform. \n\n3) The spkg-install adds \n\n\n```\n-fPIC\n```\n\n\nwhich apparently is(was) needed on Debian on Itanium. It would seem more sensible to add that option just on that platform if it is a  problem specific to that platform. \n\nThis package is much cleaner, but may not work on all platforms. It would be better to make the code cleaner, and fix what (if any) issues do actually still exist. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9008\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @jaapspies\n\nThe zlib package building 32-bit on OpenSolaris (see #7128), and has various hacks to make it build 64-bit on OS X. The spkg-install has various hacks, which I think are better implemented other ways. \n\n1) \n\n```\n-I\\\"$SAGE_LOCAL/include\\\"\"\n```\n\n\nseems better replaced by the command line option available on the configure script. \n\n\n```\n--includedir=\"$SAGE_LOCAL/include\" \n```\n\n\n2) Adding \n\n```\n-m64\n```\n \nis not currently the correct way to make a 64-bit build - the option \n\n\n```\n--64\n```\n\n\nis for that purpose. The developer (Mark Alder) was surprised hacks were needed for OS X, as that is his main development platform. \n\n3) The spkg-install adds \n\n\n```\n-fPIC\n```\n\n\nwhich apparently is(was) needed on Debian on Itanium. It would seem more sensible to add that option just on that platform if it is a  problem specific to that platform. \n\nThis package is much cleaner, but may not work on all platforms. It would be better to make the code cleaner, and fix what (if any) issues do actually still exist. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9008\n\n",
     "created_at": "2010-05-21T14:40:02Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_009008.json:
 ```
 Assignee: GeorgSWeber
 
-CC:  jsp
+CC:  @jaapspies
 
 The zlib package building 32-bit on OpenSolaris (see #7128), and has various hacks to make it build 64-bit on OS X. The spkg-install has various hacks, which I think are better implemented other ways. 
 
@@ -178,7 +178,7 @@ archive/issue_comments_083320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9008",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83320",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -238,16 +238,16 @@ Dave
 archive/issue_comments_083322.json:
 ```json
 {
-    "body": "Attachment [zlib-cygwin-Makefile](tarball://root/attachments/some-uuid/ticket9008/zlib-cygwin-Makefile) by mhansen created at 2010-06-02 21:01:16",
+    "body": "Attachment [zlib-cygwin-Makefile](tarball://root/attachments/some-uuid/ticket9008/zlib-cygwin-Makefile) by @mwhansen created at 2010-06-02 21:01:16",
     "created_at": "2010-06-02T21:01:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9008",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83322",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [zlib-cygwin-Makefile](tarball://root/attachments/some-uuid/ticket9008/zlib-cygwin-Makefile) by mhansen created at 2010-06-02 21:01:16
+Attachment [zlib-cygwin-Makefile](tarball://root/attachments/some-uuid/ticket9008/zlib-cygwin-Makefile) by @mwhansen created at 2010-06-02 21:01:16
 
 
 
@@ -261,7 +261,7 @@ archive/issue_comments_083323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9008",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83323",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -442,7 +442,7 @@ archive/issue_comments_083329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9008",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83329",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -477,7 +477,7 @@ archive/issue_comments_083330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9008",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83330",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -529,7 +529,7 @@ archive/issue_comments_083331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9008",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83331",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -585,7 +585,7 @@ archive/issue_comments_083334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9008",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83334",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

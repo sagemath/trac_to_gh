@@ -14,7 +14,7 @@ archive/issues_000204.json:
     "title": "bug in real number comparison or coercion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/204",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -56,7 +56,7 @@ archive/issue_comments_000918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/204#issuecomment-918",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_000919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/204#issuecomment-919",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_000920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/204#issuecomment-920",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

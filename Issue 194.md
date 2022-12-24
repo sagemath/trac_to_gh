@@ -14,7 +14,7 @@ archive/issues_000194.json:
     "title": "another ZZ[x] crash",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/194",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -48,7 +48,7 @@ archive/issue_comments_000887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/194#issuecomment-887",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_000888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/194#issuecomment-888",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

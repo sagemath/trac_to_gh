@@ -3,7 +3,7 @@
 archive/issues_009677.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  kini\n\nRight now there is either equals, or less than. If `a != b`, then we get `a < b` but not `b > a`:\n\n```\nsage: a = Set([1])\nsage: b = Set([])\nsage: a == b\nFalse\nsage: a < b\nTrue\nsage: b > a\nFalse\n```\n\n\nThis came up in\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/1c058efd05d3b91f\n\nIssue created by migration from https://trac.sagemath.org/ticket/9677\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @kini\n\nRight now there is either equals, or less than. If `a != b`, then we get `a < b` but not `b > a`:\n\n```\nsage: a = Set([1])\nsage: b = Set([])\nsage: a == b\nFalse\nsage: a < b\nTrue\nsage: b > a\nFalse\n```\n\n\nThis came up in\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/1c058efd05d3b91f\n\nIssue created by migration from https://trac.sagemath.org/ticket/9677\n\n",
     "created_at": "2010-08-03T20:41:08Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_009677.json:
     "title": "Sage Sets don't implement genuine comparison",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9677",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  kini
+CC:  @kini
 
 Right now there is either equals, or less than. If `a != b`, then we get `a < b` but not `b > a`:
 
@@ -55,7 +55,7 @@ archive/issue_comments_094067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9677#issuecomment-94067",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_094068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9677#issuecomment-94068",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_094069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9677#issuecomment-94069",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_094070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9677#issuecomment-94070",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_094071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9677#issuecomment-94071",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_094072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9677#issuecomment-94072",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_094073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9677#issuecomment-94073",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_094074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9677#issuecomment-94074",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_094075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9677#issuecomment-94075",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_094076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9677#issuecomment-94076",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -261,16 +261,16 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_094077.json:
 ```json
 {
-    "body": "Attachment [trac_9677.patch](tarball://root/attachments/some-uuid/ticket9677/trac_9677.patch) by mhansen created at 2011-12-18 16:09:49\n\nI rebased the patch and ran the tests which do pass.  I think we can give this positive review.",
+    "body": "Attachment [trac_9677.patch](tarball://root/attachments/some-uuid/ticket9677/trac_9677.patch) by @mwhansen created at 2011-12-18 16:09:49\n\nI rebased the patch and ran the tests which do pass.  I think we can give this positive review.",
     "created_at": "2011-12-18T16:09:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9677#issuecomment-94077",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_9677.patch](tarball://root/attachments/some-uuid/ticket9677/trac_9677.patch) by mhansen created at 2011-12-18 16:09:49
+Attachment [trac_9677.patch](tarball://root/attachments/some-uuid/ticket9677/trac_9677.patch) by @mwhansen created at 2011-12-18 16:09:49
 
 I rebased the patch and ran the tests which do pass.  I think we can give this positive review.
 
@@ -337,7 +337,7 @@ archive/issue_comments_094080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9677#issuecomment-94080",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

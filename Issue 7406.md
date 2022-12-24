@@ -3,7 +3,7 @@
 archive/issues_007406.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nKeywords: latex, power, jsmath\n\nThe LaTeX representation of (x<sup>pi)</sup>e is not valid TeX string and is not rendered by jsmath\n\n```\nsage: latex((x^pi)^e)\n{(x)}^{\\pi}^{e}\n```\n\n\nBurcin [suggested](http://groups.google.cz/group/sage-devel/browse_thread/thread/c49c684f1c89d0c4) how to fix this and get output like \n\n```\n{{(x)}^{\\pi}}^{e}\n```\n\n\n\n```\nThe code for printing\nsymbolic expressions is in pynac (C++). The fix can be as simple as\nprinting an extra set of braces around power objects.\n\nIf anybody wants to try fixing this, the relevant function is\npower::do_print_latex() in power.cpp. To get to the file (using the\ninstructions I wrote in another message just now), go to your SAGE_ROOT\nand do:\n\n./sage -f -s spkg/standard/pynac-0.1.9.p0.spkg\n\ncd spkg/build/pynac-0.1.9/src/ginac\n\nEdit power.cpp. To compile and make your changes effective, go to your\nSAGE_ROOT again, and do\n\n./sage -sh\ncd spkg/build/pynac-0.1.9/src\nmake install \n```\n\n\nHowever a better fix would be to get \n\n```\n{x}^{a}\n```\n\nif the base is an atom (or not power) and\n\n```\n\\left({x^a}\\right}^{b}\n```\n\nif the base is a power. This allows to distinguish easily between\n\n```\nx^(a^b) \n```\n\nand \n\n```\n(x^a)^b\n```\n\n\nA workaround is to remove powers of powers by simplification. For example radcan function from Maxima perfoms such simplifications\n\n```\nsage: latex(maxima((x^pi)^e).radcan().sage())\nx^{\\pi e}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7406\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: latex, power, jsmath\n\nThe LaTeX representation of (x<sup>pi)</sup>e is not valid TeX string and is not rendered by jsmath\n\n```\nsage: latex((x^pi)^e)\n{(x)}^{\\pi}^{e}\n```\n\n\nBurcin [suggested](http://groups.google.cz/group/sage-devel/browse_thread/thread/c49c684f1c89d0c4) how to fix this and get output like \n\n```\n{{(x)}^{\\pi}}^{e}\n```\n\n\n\n```\nThe code for printing\nsymbolic expressions is in pynac (C++). The fix can be as simple as\nprinting an extra set of braces around power objects.\n\nIf anybody wants to try fixing this, the relevant function is\npower::do_print_latex() in power.cpp. To get to the file (using the\ninstructions I wrote in another message just now), go to your SAGE_ROOT\nand do:\n\n./sage -f -s spkg/standard/pynac-0.1.9.p0.spkg\n\ncd spkg/build/pynac-0.1.9/src/ginac\n\nEdit power.cpp. To compile and make your changes effective, go to your\nSAGE_ROOT again, and do\n\n./sage -sh\ncd spkg/build/pynac-0.1.9/src\nmake install \n```\n\n\nHowever a better fix would be to get \n\n```\n{x}^{a}\n```\n\nif the base is an atom (or not power) and\n\n```\n\\left({x^a}\\right}^{b}\n```\n\nif the base is a power. This allows to distinguish easily between\n\n```\nx^(a^b) \n```\n\nand \n\n```\n(x^a)^b\n```\n\n\nA workaround is to remove powers of powers by simplification. For example radcan function from Maxima perfoms such simplifications\n\n```\nsage: latex(maxima((x^pi)^e).radcan().sage())\nx^{\\pi e}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7406\n\n",
     "created_at": "2009-11-06T20:37:51Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_007406.json:
     "title": "bug in conversion powers in to LaTeX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7406",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 Keywords: latex, power, jsmath
 
@@ -109,7 +109,7 @@ archive/issue_comments_062319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7406#issuecomment-62319",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_062320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7406#issuecomment-62320",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_062321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7406#issuecomment-62321",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -172,16 +172,16 @@ add doctests
 archive/issue_comments_062322.json:
 ```json
 {
-    "body": "Attachment [trac_7406-power_latex.patch](tarball://root/attachments/some-uuid/ticket7406/trac_7406-power_latex.patch) by burcin created at 2009-11-22 18:11:40\n\nThe new pynac package here\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.10.spkg\n\ncontains fixes for both the problem in the description and the one in comment:3.\n\nattachment:trac_7406-power_latex.patch contains doctests for the fix.\n\nNote that the new pynac version also contains fixes for #7508 and #7264. Tests should be run with the patches from those tickets also applied in this order:\n\n* #7508\n* #7264 \n* #7406 (this ticket)\n\nThis ticket now depends on #7490, #7508 and #7264.",
+    "body": "Attachment [trac_7406-power_latex.patch](tarball://root/attachments/some-uuid/ticket7406/trac_7406-power_latex.patch) by @burcin created at 2009-11-22 18:11:40\n\nThe new pynac package here\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.10.spkg\n\ncontains fixes for both the problem in the description and the one in comment:3.\n\nattachment:trac_7406-power_latex.patch contains doctests for the fix.\n\nNote that the new pynac version also contains fixes for #7508 and #7264. Tests should be run with the patches from those tickets also applied in this order:\n\n* #7508\n* #7264 \n* #7406 (this ticket)\n\nThis ticket now depends on #7490, #7508 and #7264.",
     "created_at": "2009-11-22T18:11:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7406#issuecomment-62322",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_7406-power_latex.patch](tarball://root/attachments/some-uuid/ticket7406/trac_7406-power_latex.patch) by burcin created at 2009-11-22 18:11:40
+Attachment [trac_7406-power_latex.patch](tarball://root/attachments/some-uuid/ticket7406/trac_7406-power_latex.patch) by @burcin created at 2009-11-22 18:11:40
 
 The new pynac package here
 
@@ -211,7 +211,7 @@ archive/issue_comments_062323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7406#issuecomment-62323",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_062324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7406#issuecomment-62324",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_062325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7406#issuecomment-62325",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_062326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7406#issuecomment-62326",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

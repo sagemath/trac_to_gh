@@ -3,7 +3,7 @@
 archive/issues_009859.json:
 ```json
 {
-    "body": "Assignee: leif\n\nSome fixes to PARI 2.3.5.p2 from #9722 had to be ported to the current [NewPARI](http://wiki.sagemath.org/wiki/NewPARI) spkg. The new PARI 2.4.3.p5 spkg here contains some further changes (including some on Sage's side, mostly clean-up), while other issues have meanwhile been fixed upstream.\n\n----\n\n### pari-2.4.3.svn-12577.p5 (Leif Leonhardy, September 5th, 2010)\n* Added patches to:\n  - config/get_config_options:\n    * Make invalid arguments to \"--graphic\" a \"Configure\" error\n      (rather than potentially running into *compilation* errors\n      later).\n  - config/get_fltk: (see also/ported from #9722)\n    * Add libstdc++ to the libraries (to support Fedora 13 et al.).\n    * Also check the presence of the FLTK include directory to\n      prevent compilation errors on broken installations.\n  - config/get_X11: (see also/ported from #9722)\n    * Also search */lib64/* directories when doing a 64-bit build.\n    * Give more specific messages.\n* Slightly extended existing patch to src/kernel/gmp/mp.c:\n  - Allow disabling PARI's use of \"GMP internals\" by preprocessor\n    directive (i.e. by adding \"-DPARI_DONT_USE_GMP_INTERNALS\" to\n    CFLAGS). Brief explanation added.\n* spkg-install:\n  - Don't override user-specified CFLAGS (w.r.t. optimization, unless\n    SAGE_DEBUG=yes).\n  - Handle PARI_EXTRA_OPTS properly, and print informative messages\n    (regarding graphics support for plotting).\n  - Recognize SAGE_TUNE_PARI in addition to SAGE_TUNE_pari, and\n    add \"--tune\" to PARI_EXTRA_OPTS if self-tuning was requested.\n  - Clear/unset lots of (environment) variables used by PARI that might\n    unintentionally get their values from user settings.\n  - Quote *all* occurrences of SAGE_LOCAL (and some other expressions).\n  - Use $UNAME instead of `uname` everywhere, use \"elif ...\".\n  - *Always* use $MAKE (changed for \"install-data\").\n  - Begin all error messages with \"Error\".\n  - Removed useless tests of $? at end.\n  - Some clean-up (typos, formatting); some comments, some messages added.\n* spkg-check:\n  - Use $MAKE instead of \"make\".\n  - Don't override user-specified CFLAGS (w.r.t. optimization, unless\n    SAGE_DEBUG=yes).\n  - Begin error message with \"Error\".\n  - Some clean-up.\n* Slight corrections to SPKG.txt.\n* Updated patches/README.txt, some cosmetic changes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9860\n\n",
+    "body": "Assignee: @nexttime\n\nSome fixes to PARI 2.3.5.p2 from #9722 had to be ported to the current [NewPARI](http://wiki.sagemath.org/wiki/NewPARI) spkg. The new PARI 2.4.3.p5 spkg here contains some further changes (including some on Sage's side, mostly clean-up), while other issues have meanwhile been fixed upstream.\n\n----\n\n### pari-2.4.3.svn-12577.p5 (Leif Leonhardy, September 5th, 2010)\n* Added patches to:\n  - config/get_config_options:\n    * Make invalid arguments to \"--graphic\" a \"Configure\" error\n      (rather than potentially running into *compilation* errors\n      later).\n  - config/get_fltk: (see also/ported from #9722)\n    * Add libstdc++ to the libraries (to support Fedora 13 et al.).\n    * Also check the presence of the FLTK include directory to\n      prevent compilation errors on broken installations.\n  - config/get_X11: (see also/ported from #9722)\n    * Also search */lib64/* directories when doing a 64-bit build.\n    * Give more specific messages.\n* Slightly extended existing patch to src/kernel/gmp/mp.c:\n  - Allow disabling PARI's use of \"GMP internals\" by preprocessor\n    directive (i.e. by adding \"-DPARI_DONT_USE_GMP_INTERNALS\" to\n    CFLAGS). Brief explanation added.\n* spkg-install:\n  - Don't override user-specified CFLAGS (w.r.t. optimization, unless\n    SAGE_DEBUG=yes).\n  - Handle PARI_EXTRA_OPTS properly, and print informative messages\n    (regarding graphics support for plotting).\n  - Recognize SAGE_TUNE_PARI in addition to SAGE_TUNE_pari, and\n    add \"--tune\" to PARI_EXTRA_OPTS if self-tuning was requested.\n  - Clear/unset lots of (environment) variables used by PARI that might\n    unintentionally get their values from user settings.\n  - Quote *all* occurrences of SAGE_LOCAL (and some other expressions).\n  - Use $UNAME instead of `uname` everywhere, use \"elif ...\".\n  - *Always* use $MAKE (changed for \"install-data\").\n  - Begin all error messages with \"Error\".\n  - Removed useless tests of $? at end.\n  - Some clean-up (typos, formatting); some comments, some messages added.\n* spkg-check:\n  - Use $MAKE instead of \"make\".\n  - Don't override user-specified CFLAGS (w.r.t. optimization, unless\n    SAGE_DEBUG=yes).\n  - Begin error message with \"Error\".\n  - Some clean-up.\n* Slight corrections to SPKG.txt.\n* Updated patches/README.txt, some cosmetic changes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9860\n\n",
     "created_at": "2010-09-06T11:47:15Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_009859.json:
     "title": "Port changes in PARI 2.3.5.p4 (#9722) to current 2.4.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9859",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
-Assignee: leif
+Assignee: @nexttime
 
 Some fixes to PARI 2.3.5.p2 from #9722 had to be ported to the current [NewPARI](http://wiki.sagemath.org/wiki/NewPARI) spkg. The new PARI 2.4.3.p5 spkg here contains some further changes (including some on Sage's side, mostly clean-up), while other issues have meanwhile been fixed upstream.
 
@@ -80,7 +80,7 @@ archive/issue_comments_097338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9859#issuecomment-97338",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -93,16 +93,16 @@ Apply to pari-2.4.3.svn-12577.p4.spkg. Note that added/changed files in `patches
 archive/issue_comments_097339.json:
 ```json
 {
-    "body": "Attachment [trac_9860-pari-2.4.3.svn-12577.p4-p5.spkg.patch](tarball://root/attachments/some-uuid/ticket9860/trac_9860-pari-2.4.3.svn-12577.p4-p5.spkg.patch) by leif created at 2010-09-06 12:12:47\n\nDiff of files in `patches/files`. Apply with `patch -p1` inside spkg directory.",
+    "body": "Attachment [trac_9860-pari-2.4.3.svn-12577.p4-p5.spkg.patch](tarball://root/attachments/some-uuid/ticket9860/trac_9860-pari-2.4.3.svn-12577.p4-p5.spkg.patch) by @nexttime created at 2010-09-06 12:12:47\n\nDiff of files in `patches/files`. Apply with `patch -p1` inside spkg directory.",
     "created_at": "2010-09-06T12:12:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9859#issuecomment-97339",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_9860-pari-2.4.3.svn-12577.p4-p5.spkg.patch](tarball://root/attachments/some-uuid/ticket9860/trac_9860-pari-2.4.3.svn-12577.p4-p5.spkg.patch) by leif created at 2010-09-06 12:12:47
+Attachment [trac_9860-pari-2.4.3.svn-12577.p4-p5.spkg.patch](tarball://root/attachments/some-uuid/ticket9860/trac_9860-pari-2.4.3.svn-12577.p4-p5.spkg.patch) by @nexttime created at 2010-09-06 12:12:47
 
 Diff of files in `patches/files`. Apply with `patch -p1` inside spkg directory.
 
@@ -118,7 +118,7 @@ archive/issue_comments_097340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9859#issuecomment-97340",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -131,16 +131,16 @@ Changing status from new to needs_review.
 archive/issue_comments_097341.json:
 ```json
 {
-    "body": "Attachment [trac_9860-patched_files_not_under_revision_control.p4-p5.spkg.diff](tarball://root/attachments/some-uuid/ticket9860/trac_9860-patched_files_not_under_revision_control.p4-p5.spkg.diff) by leif created at 2010-09-06 12:38:46",
+    "body": "Attachment [trac_9860-patched_files_not_under_revision_control.p4-p5.spkg.diff](tarball://root/attachments/some-uuid/ticket9860/trac_9860-patched_files_not_under_revision_control.p4-p5.spkg.diff) by @nexttime created at 2010-09-06 12:38:46",
     "created_at": "2010-09-06T12:38:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9859#issuecomment-97341",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_9860-patched_files_not_under_revision_control.p4-p5.spkg.diff](tarball://root/attachments/some-uuid/ticket9860/trac_9860-patched_files_not_under_revision_control.p4-p5.spkg.diff) by leif created at 2010-09-06 12:38:46
+Attachment [trac_9860-patched_files_not_under_revision_control.p4-p5.spkg.diff](tarball://root/attachments/some-uuid/ticket9860/trac_9860-patched_files_not_under_revision_control.p4-p5.spkg.diff) by @nexttime created at 2010-09-06 12:38:46
 
 
 
@@ -154,7 +154,7 @@ archive/issue_comments_097342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9859#issuecomment-97342",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_097344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9859#issuecomment-97344",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_097345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9859#issuecomment-97345",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_097347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9859#issuecomment-97347",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -341,16 +341,16 @@ I will now make a new 4.6-prealpha4 based on 4.5.3-rc0 with the new spkgs (I wil
 archive/issue_comments_097348.json:
 ```json
 {
-    "body": "Attachment [pari.p5.patch](tarball://root/attachments/some-uuid/ticket9860/pari.p5.patch) by jdemeyer created at 2010-09-06 19:32:01\n\nAdditional spkg patches by me",
+    "body": "Attachment [pari.p5.patch](tarball://root/attachments/some-uuid/ticket9860/pari.p5.patch) by @jdemeyer created at 2010-09-06 19:32:01\n\nAdditional spkg patches by me",
     "created_at": "2010-09-06T19:32:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9859#issuecomment-97348",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [pari.p5.patch](tarball://root/attachments/some-uuid/ticket9860/pari.p5.patch) by jdemeyer created at 2010-09-06 19:32:01
+Attachment [pari.p5.patch](tarball://root/attachments/some-uuid/ticket9860/pari.p5.patch) by @jdemeyer created at 2010-09-06 19:32:01
 
 Additional spkg patches by me
 
@@ -366,7 +366,7 @@ archive/issue_comments_097349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9859#issuecomment-97349",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -389,7 +389,7 @@ archive/issue_comments_097350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9859#issuecomment-97350",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -407,7 +407,7 @@ archive/issue_comments_097351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9859#issuecomment-97351",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -425,7 +425,7 @@ archive/issue_comments_097352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9859#issuecomment-97352",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -445,7 +445,7 @@ archive/issue_comments_097353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9859#issuecomment-97353",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -466,7 +466,7 @@ archive/issue_comments_097354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9859#issuecomment-97354",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -484,7 +484,7 @@ archive/issue_comments_097355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9859#issuecomment-97355",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008842.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  chapoton\n\n\n```\nIf I write a function in a cell of a notebook like:\n\n@interact\ndef foo(a = input_box(default=0, type=Integer)):\n    # do something here\n    pass\n\nAnd the user enters something that cannot be coerced to Integer, then\nI get a verbose (and rather unhelpful) exception, which, as far as I\ncan see, can't be caught inside of foo.  So, I would suggest that if a\ntype is specified in input_box, and the coercion fails that a nicer\nlooking message be given (perhaps next to the box that a specifies).\n\nVictor\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8842\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @fchapoton\n\n\n```\nIf I write a function in a cell of a notebook like:\n\n@interact\ndef foo(a = input_box(default=0, type=Integer)):\n    # do something here\n    pass\n\nAnd the user enters something that cannot be coerced to Integer, then\nI get a verbose (and rather unhelpful) exception, which, as far as I\ncan see, can't be caught inside of foo.  So, I would suggest that if a\ntype is specified in input_box, and the coercion fails that a nicer\nlooking message be given (perhaps next to the box that a specifies).\n\nVictor\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8842\n\n",
     "created_at": "2010-05-02T20:20:35Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_008842.json:
     "title": "sage notebook interacts: format exceptions nicely",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8842",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jason, was
 
-CC:  chapoton
+CC:  @fchapoton
 
 
 ```
@@ -56,7 +56,7 @@ archive/issue_comments_081289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8842#issuecomment-81289",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_081290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8842#issuecomment-81290",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_081291.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8842#issuecomment-81291",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

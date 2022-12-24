@@ -3,7 +3,7 @@
 archive/issues_008547.json:
 ```json
 {
-    "body": "Assignee: amhou\n\nCC:  jason mhampton\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8547\n\n",
+    "body": "Assignee: amhou\n\nCC:  @jasongrout mhampton\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8547\n\n",
     "created_at": "2010-03-16T08:08:50Z",
     "labels": [
         "statistics",
@@ -14,12 +14,12 @@ archive/issues_008547.json:
     "title": "implement hidden markov models in Cython from scratch (so can remove the GHMM standard package from Sage)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8547",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: amhou
 
-CC:  jason mhampton
+CC:  @jasongrout mhampton
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_077272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8547#issuecomment-77272",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -52,16 +52,16 @@ apply this. Then look at devel/sage/sage/stats/intlist.pyx, devel/sage/sage/stat
 archive/issue_comments_077273.json:
 ```json
 {
-    "body": "Attachment [trac_8547.patch](tarball://root/attachments/some-uuid/ticket8547/trac_8547.patch) by was created at 2010-03-20 12:49:50",
+    "body": "Attachment [trac_8547.patch](tarball://root/attachments/some-uuid/ticket8547/trac_8547.patch) by @williamstein created at 2010-03-20 12:49:50",
     "created_at": "2010-03-20T12:49:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8547#issuecomment-77273",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_8547.patch](tarball://root/attachments/some-uuid/ticket8547/trac_8547.patch) by was created at 2010-03-20 12:49:50
+Attachment [trac_8547.patch](tarball://root/attachments/some-uuid/ticket8547/trac_8547.patch) by @williamstein created at 2010-03-20 12:49:50
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_077274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8547#issuecomment-77274",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_077275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8547#issuecomment-77275",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_077279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8547#issuecomment-77279",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_077282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8547#issuecomment-77282",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_077283.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8547#issuecomment-77283",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -367,7 +367,7 @@ archive/issue_comments_077285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8547#issuecomment-77285",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -415,7 +415,7 @@ archive/issue_comments_077286.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8547#issuecomment-77286",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -428,16 +428,16 @@ part 2; apply this and the previous patch
 archive/issue_comments_077287.json:
 ```json
 {
-    "body": "Attachment [trac_8547-take2-part2.patch](tarball://root/attachments/some-uuid/ticket8547/trac_8547-take2-part2.patch) by jason created at 2010-04-08 22:29:13\n\nReplying to [comment:13 was]:\n\n\n\n> * Jason said above that IntList.sum doesn't have a doctest for the overflow case... but it does, so I don't know what he meant. \n\n\nI meant that the doctest looks like this:\n\n\n```\nNote that there can be overflow, since the entries are C ints:: \n    sage: a = stats.IntList([2^30,2^30]); a \n    [1073741824, 1073741824] \n\n```\n\n\nThat's it.  There's no test there; you're just creating a list, not summing anything.\n\n\n>  \n> * I read the source code for `sage.misc.misc_c.normalize_index` and cannot bring myself to use that in this situation.  That  function actually returns a Python *list* of Python ints for every single index into the list that is being sliced!  That would easily lead to factor of 50-100 slowdowns on realistic operations:\n\n> This stats code I'm writing is really meant to be industrial strength -- the sort of code maybe somebody would use in \"realtime\" processing of large datastreams.    I don't want slow functions anywhere in there. \n\n\nI agree.",
+    "body": "Attachment [trac_8547-take2-part2.patch](tarball://root/attachments/some-uuid/ticket8547/trac_8547-take2-part2.patch) by @jasongrout created at 2010-04-08 22:29:13\n\nReplying to [comment:13 was]:\n\n\n\n> * Jason said above that IntList.sum doesn't have a doctest for the overflow case... but it does, so I don't know what he meant. \n\n\nI meant that the doctest looks like this:\n\n\n```\nNote that there can be overflow, since the entries are C ints:: \n    sage: a = stats.IntList([2^30,2^30]); a \n    [1073741824, 1073741824] \n\n```\n\n\nThat's it.  There's no test there; you're just creating a list, not summing anything.\n\n\n>  \n> * I read the source code for `sage.misc.misc_c.normalize_index` and cannot bring myself to use that in this situation.  That  function actually returns a Python *list* of Python ints for every single index into the list that is being sliced!  That would easily lead to factor of 50-100 slowdowns on realistic operations:\n\n> This stats code I'm writing is really meant to be industrial strength -- the sort of code maybe somebody would use in \"realtime\" processing of large datastreams.    I don't want slow functions anywhere in there. \n\n\nI agree.",
     "created_at": "2010-04-08T22:29:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8547#issuecomment-77287",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_8547-take2-part2.patch](tarball://root/attachments/some-uuid/ticket8547/trac_8547-take2-part2.patch) by jason created at 2010-04-08 22:29:13
+Attachment [trac_8547-take2-part2.patch](tarball://root/attachments/some-uuid/ticket8547/trac_8547-take2-part2.patch) by @jasongrout created at 2010-04-08 22:29:13
 
 Replying to [comment:13 was]:
 
@@ -480,7 +480,7 @@ archive/issue_comments_077288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8547#issuecomment-77288",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -515,16 +515,16 @@ So, can I get a positive review now?
 archive/issue_comments_077289.json:
 ```json
 {
-    "body": "Attachment [trac_8547-take2-part3.patch](tarball://root/attachments/some-uuid/ticket8547/trac_8547-take2-part3.patch) by was created at 2010-04-10 19:19:10",
+    "body": "Attachment [trac_8547-take2-part3.patch](tarball://root/attachments/some-uuid/ticket8547/trac_8547-take2-part3.patch) by @williamstein created at 2010-04-10 19:19:10",
     "created_at": "2010-04-10T19:19:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8547#issuecomment-77289",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_8547-take2-part3.patch](tarball://root/attachments/some-uuid/ticket8547/trac_8547-take2-part3.patch) by was created at 2010-04-10 19:19:10
+Attachment [trac_8547-take2-part3.patch](tarball://root/attachments/some-uuid/ticket8547/trac_8547-take2-part3.patch) by @williamstein created at 2010-04-10 19:19:10
 
 
 
@@ -592,7 +592,7 @@ archive/issue_comments_077293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8547#issuecomment-77293",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -613,7 +613,7 @@ archive/issue_comments_077294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8547#issuecomment-77294",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

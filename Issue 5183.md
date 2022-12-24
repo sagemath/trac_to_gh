@@ -3,7 +3,7 @@
 archive/issues_005183.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  davidloeffler\n\nKeywords: elementary_divisor, sparse, dense\n\nTwo things: \n\n1. the conventions for elementary_divisors are different in Pari's implementation (called in matrix_integer_dense.pyx) compared to the generic PID implementation (in matrix2.pyx):\n\n```\nsage: mat = matrix(ZZ, 3, 2, [1, 0, 0, 1, 0, 0], sparse=True)\nsage: mat.elementary_divisors()\n[1, 1]\nsage: mat.dense_matrix().elementary_divisors()\n[1, 1, 0]\n```\n\n\n2. if the elementary divisors of a sparse matrix are not all 0 or 1 (at least I think that's the issue), I get an error:\n\n```\nsage: mat = matrix(ZZ, 3, 2, range(6), sparse=True)\nsage: sage: mat.elementary_divisors()                    \n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: unable to coerce <class 'sage.rings.ideal.Ideal_pid'> to an integer\n```\n\nI get the same error for `mat.smith_form()`.  This is a problem with the Smith normal form stuff in matrix2.pyx, I think.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5183\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @loefflerd\n\nKeywords: elementary_divisor, sparse, dense\n\nTwo things: \n\n1. the conventions for elementary_divisors are different in Pari's implementation (called in matrix_integer_dense.pyx) compared to the generic PID implementation (in matrix2.pyx):\n\n```\nsage: mat = matrix(ZZ, 3, 2, [1, 0, 0, 1, 0, 0], sparse=True)\nsage: mat.elementary_divisors()\n[1, 1]\nsage: mat.dense_matrix().elementary_divisors()\n[1, 1, 0]\n```\n\n\n2. if the elementary divisors of a sparse matrix are not all 0 or 1 (at least I think that's the issue), I get an error:\n\n```\nsage: mat = matrix(ZZ, 3, 2, range(6), sparse=True)\nsage: sage: mat.elementary_divisors()                    \n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: unable to coerce <class 'sage.rings.ideal.Ideal_pid'> to an integer\n```\n\nI get the same error for `mat.smith_form()`.  This is a problem with the Smith normal form stuff in matrix2.pyx, I think.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5183\n\n",
     "created_at": "2009-02-04T23:51:15Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_005183.json:
     "title": "issues with elementary_divisors for sparse integer matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5183",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  davidloeffler
+CC:  @loefflerd
 
 Keywords: elementary_divisor, sparse, dense
 
@@ -66,7 +66,7 @@ archive/issue_comments_039747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5183",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5183#issuecomment-39747",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_039748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5183",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5183#issuecomment-39748",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_008476.json:
     "title": "return the correct class instance in MPolynomialSystem.__copy__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8476",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: mvngu
@@ -37,7 +37,7 @@ archive/issue_comments_076390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8476#issuecomment-76390",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -69,16 +69,16 @@ Would it be possible to add a doctest exposing the possible bug?
 archive/issue_comments_076392.json:
 ```json
 {
-    "body": "Attachment [mpolynomialsystem_copy_fix.patch](tarball://root/attachments/some-uuid/ticket8476/mpolynomialsystem_copy_fix.patch) by malb created at 2010-03-25 23:10:25",
+    "body": "Attachment [mpolynomialsystem_copy_fix.patch](tarball://root/attachments/some-uuid/ticket8476/mpolynomialsystem_copy_fix.patch) by @malb created at 2010-03-25 23:10:25",
     "created_at": "2010-03-25T23:10:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8476#issuecomment-76392",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [mpolynomialsystem_copy_fix.patch](tarball://root/attachments/some-uuid/ticket8476/mpolynomialsystem_copy_fix.patch) by malb created at 2010-03-25 23:10:25
+Attachment [mpolynomialsystem_copy_fix.patch](tarball://root/attachments/some-uuid/ticket8476/mpolynomialsystem_copy_fix.patch) by @malb created at 2010-03-25 23:10:25
 
 
 
@@ -92,7 +92,7 @@ archive/issue_comments_076393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8476#issuecomment-76393",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_076396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8476#issuecomment-76396",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_076397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8476#issuecomment-76397",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

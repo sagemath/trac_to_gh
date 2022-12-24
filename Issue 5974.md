@@ -3,7 +3,7 @@
 archive/issues_005974.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  rbeezer\n\nBehold.  By replacing about 40 confusing lines by 2 trivial lines, I get a *speedup* by more than a factor of 10!\n\n\n```\nBEFORE:\nsage: A = random_matrix(QQ,50)\nsage: v = [1..50]\nsage: timeit('A.linear_combination_of_rows(v)')\n125 loops, best of 3: 5.48 ms per loop\n\nAFTER:\nsage: A = random_matrix(QQ,50)\nsage: v = [1..50]\nsage: timeit('A.linear_combination_of_rows(v)')\n625 loops, best of 3: 503 \u00b5s per loop\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5974\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @rbeezer\n\nBehold.  By replacing about 40 confusing lines by 2 trivial lines, I get a *speedup* by more than a factor of 10!\n\n\n```\nBEFORE:\nsage: A = random_matrix(QQ,50)\nsage: v = [1..50]\nsage: timeit('A.linear_combination_of_rows(v)')\n125 loops, best of 3: 5.48 ms per loop\n\nAFTER:\nsage: A = random_matrix(QQ,50)\nsage: v = [1..50]\nsage: timeit('A.linear_combination_of_rows(v)')\n625 loops, best of 3: 503 \u00b5s per loop\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5974\n\n",
     "created_at": "2009-05-04T05:22:33Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_005974.json:
     "title": "[with patch; needs review] the generic linear_combination_of_rows and linear_combination_of_columns functions for matrices are very stupidly slotch",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5974",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  rbeezer
+CC:  @rbeezer
 
 Behold.  By replacing about 40 confusing lines by 2 trivial lines, I get a *speedup* by more than a factor of 10!
 
@@ -56,7 +56,7 @@ archive/issue_comments_047373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5974#issuecomment-47373",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -92,16 +92,16 @@ The above is all present in the default sage-3.4.2.rc0.
 archive/issue_comments_047374.json:
 ```json
 {
-    "body": "Attachment [trac_5974.patch](tarball://root/attachments/some-uuid/ticket5974/trac_5974.patch) by was created at 2009-05-04 13:52:41\n\nI ran a fulldoctest cycle with this patch applied and found yet another serious bug in matrix multiplication (not caused by this patch, but uncovered by it).  E.g., in vanilla released 3.4.1, some multiplies of cyclotomic matrices just go boom!\n\n\n```\nwstein@sage:~$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: K.<zeta6>=CyclotomicField(6); matrix(K,1,2) * matrix(K,2,[0, 1, 0, -2*zeta6, 0, 0, 1, -2*zeta6 + 1])\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n| Sage Version 3.4.1, Release Date: 2009-04-21                       |\n| Type notebook() for the GUI, and license() for information.        |\n/scratch/wstein/sage/temp/sage.math.washington.edu/15110/_scratch_wstein_sage_init_sage_0.py in <module>()\n\n/home/wstein/sage/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.Matrix.__mul__ (sage/structure/element.c:11263)()\n\n/home/wstein/sage/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:5396)()\n\n/home/wstein/sage/local/lib/python2.5/site-packages/sage/matrix/action.so in sage.matrix.action.MatrixMatrixAction._call_ (sage/matrix/action.c:2485)()\n\n/home/wstein/sage/local/lib/python2.5/site-packages/sage/matrix/matrix_cyclo_dense.so in sage.matrix.matrix_cyclo_dense.Matrix_cyclo_dense._matrix_times_matrix_ (sage/matrix/matrix_cyclo_dense.cpp:5674)()\n\n/home/wstein/sage/local/lib/python2.5/site-packages/sage/matrix/matrix_integer_dense.so in sage.matrix.matrix_integer_dense._lift_crt (sage/matrix/matrix_integer_dense.c:32188)()\n\nIndexError: list index out of range\n```\n",
+    "body": "Attachment [trac_5974.patch](tarball://root/attachments/some-uuid/ticket5974/trac_5974.patch) by @williamstein created at 2009-05-04 13:52:41\n\nI ran a fulldoctest cycle with this patch applied and found yet another serious bug in matrix multiplication (not caused by this patch, but uncovered by it).  E.g., in vanilla released 3.4.1, some multiplies of cyclotomic matrices just go boom!\n\n\n```\nwstein@sage:~$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: K.<zeta6>=CyclotomicField(6); matrix(K,1,2) * matrix(K,2,[0, 1, 0, -2*zeta6, 0, 0, 1, -2*zeta6 + 1])\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n| Sage Version 3.4.1, Release Date: 2009-04-21                       |\n| Type notebook() for the GUI, and license() for information.        |\n/scratch/wstein/sage/temp/sage.math.washington.edu/15110/_scratch_wstein_sage_init_sage_0.py in <module>()\n\n/home/wstein/sage/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.Matrix.__mul__ (sage/structure/element.c:11263)()\n\n/home/wstein/sage/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:5396)()\n\n/home/wstein/sage/local/lib/python2.5/site-packages/sage/matrix/action.so in sage.matrix.action.MatrixMatrixAction._call_ (sage/matrix/action.c:2485)()\n\n/home/wstein/sage/local/lib/python2.5/site-packages/sage/matrix/matrix_cyclo_dense.so in sage.matrix.matrix_cyclo_dense.Matrix_cyclo_dense._matrix_times_matrix_ (sage/matrix/matrix_cyclo_dense.cpp:5674)()\n\n/home/wstein/sage/local/lib/python2.5/site-packages/sage/matrix/matrix_integer_dense.so in sage.matrix.matrix_integer_dense._lift_crt (sage/matrix/matrix_integer_dense.c:32188)()\n\nIndexError: list index out of range\n```\n",
     "created_at": "2009-05-04T13:52:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5974#issuecomment-47374",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5974.patch](tarball://root/attachments/some-uuid/ticket5974/trac_5974.patch) by was created at 2009-05-04 13:52:41
+Attachment [trac_5974.patch](tarball://root/attachments/some-uuid/ticket5974/trac_5974.patch) by @williamstein created at 2009-05-04 13:52:41
 
 I ran a fulldoctest cycle with this patch applied and found yet another serious bug in matrix multiplication (not caused by this patch, but uncovered by it).  E.g., in vanilla released 3.4.1, some multiplies of cyclotomic matrices just go boom!
 
@@ -138,16 +138,16 @@ IndexError: list index out of range
 archive/issue_comments_047375.json:
 ```json
 {
-    "body": "Attachment [trac_5974-part3.patch](tarball://root/attachments/some-uuid/ticket5974/trac_5974-part3.patch) by was created at 2009-05-04 15:15:22",
+    "body": "Attachment [trac_5974-part3.patch](tarball://root/attachments/some-uuid/ticket5974/trac_5974-part3.patch) by @williamstein created at 2009-05-04 15:15:22",
     "created_at": "2009-05-04T15:15:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5974#issuecomment-47375",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5974-part3.patch](tarball://root/attachments/some-uuid/ticket5974/trac_5974-part3.patch) by was created at 2009-05-04 15:15:22
+Attachment [trac_5974-part3.patch](tarball://root/attachments/some-uuid/ticket5974/trac_5974-part3.patch) by @williamstein created at 2009-05-04 15:15:22
 
 
 
@@ -161,7 +161,7 @@ archive/issue_comments_047376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5974#issuecomment-47376",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -188,16 +188,16 @@ Otherwise, looks good.  All tests pass on sage.math.
 archive/issue_comments_047377.json:
 ```json
 {
-    "body": "Attachment [trac_5974-part4.patch](tarball://root/attachments/some-uuid/ticket5974/trac_5974-part4.patch) by was created at 2009-05-07 21:18:53",
+    "body": "Attachment [trac_5974-part4.patch](tarball://root/attachments/some-uuid/ticket5974/trac_5974-part4.patch) by @williamstein created at 2009-05-07 21:18:53",
     "created_at": "2009-05-07T21:18:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5974#issuecomment-47377",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5974-part4.patch](tarball://root/attachments/some-uuid/ticket5974/trac_5974-part4.patch) by was created at 2009-05-07 21:18:53
+Attachment [trac_5974-part4.patch](tarball://root/attachments/some-uuid/ticket5974/trac_5974-part4.patch) by @williamstein created at 2009-05-07 21:18:53
 
 
 
@@ -211,7 +211,7 @@ archive/issue_comments_047378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5974#issuecomment-47378",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

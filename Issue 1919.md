@@ -3,7 +3,7 @@
 archive/issues_001919.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nCC:  tscrim jhpalmieri\n\nIn sage/groups/abelian_gps/dual_abelian_group_element.py, the __call__\nmethod uses some code which must be modified if the base field is finite.\nSpecifically, \"zeta = F.gen()\" must be changed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1919\n\n",
+    "body": "Assignee: joyner\n\nCC:  @tscrim @jhpalmieri\n\nIn sage/groups/abelian_gps/dual_abelian_group_element.py, the __call__\nmethod uses some code which must be modified if the base field is finite.\nSpecifically, \"zeta = F.gen()\" must be changed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1919\n\n",
     "created_at": "2008-01-25T02:41:58Z",
     "labels": [
         "group theory",
@@ -14,12 +14,12 @@ archive/issues_001919.json:
     "title": "improve base fields of DualAbelainGroup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1919",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 Assignee: joyner
 
-CC:  tscrim jhpalmieri
+CC:  @tscrim @jhpalmieri
 
 In sage/groups/abelian_gps/dual_abelian_group_element.py, the __call__
 method uses some code which must be modified if the base field is finite.
@@ -41,7 +41,7 @@ archive/issue_comments_012163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1919#issuecomment-12163",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_012164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1919#issuecomment-12164",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_012165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1919#issuecomment-12165",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_012166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1919#issuecomment-12166",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_012167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1919#issuecomment-12167",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_012168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1919#issuecomment-12168",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

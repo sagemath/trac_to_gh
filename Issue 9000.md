@@ -14,7 +14,7 @@ archive/issues_009000.json:
     "title": "sage notebook: change default interact color selector",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9000",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jason, was
@@ -46,7 +46,7 @@ archive/issue_comments_083221.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9000",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9000#issuecomment-83221",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_083222.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9000",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9000#issuecomment-83222",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_083223.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9000",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9000#issuecomment-83223",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_083224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9000",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9000#issuecomment-83224",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -113,16 +113,16 @@ I think you may have accidentally changed the wrong function (`html_color_select
 archive/issue_comments_083225.json:
 ```json
 {
-    "body": "Attachment [trac_9000-interact_color.patch](tarball://root/attachments/some-uuid/ticket9000/trac_9000-interact_color.patch) by was created at 2010-08-14 02:22:56\n\nnew version that fixes the (valid) issue that tim pointed out.",
+    "body": "Attachment [trac_9000-interact_color.patch](tarball://root/attachments/some-uuid/ticket9000/trac_9000-interact_color.patch) by @williamstein created at 2010-08-14 02:22:56\n\nnew version that fixes the (valid) issue that tim pointed out.",
     "created_at": "2010-08-14T02:22:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9000",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9000#issuecomment-83225",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_9000-interact_color.patch](tarball://root/attachments/some-uuid/ticket9000/trac_9000-interact_color.patch) by was created at 2010-08-14 02:22:56
+Attachment [trac_9000-interact_color.patch](tarball://root/attachments/some-uuid/ticket9000/trac_9000-interact_color.patch) by @williamstein created at 2010-08-14 02:22:56
 
 new version that fixes the (valid) issue that tim pointed out.
 
@@ -138,7 +138,7 @@ archive/issue_comments_083226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9000",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9000#issuecomment-83226",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_083227.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9000",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9000#issuecomment-83227",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_083228.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9000",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9000#issuecomment-83228",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_083229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9000",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9000#issuecomment-83229",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_083230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9000",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9000#issuecomment-83230",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

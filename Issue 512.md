@@ -3,7 +3,7 @@
 archive/issues_000512.json:
 ```json
 {
-    "body": "Assignee: wdj\n\nThe package \nhttp://sage.math.washington.edu/home/wdj/patches/gap-4.4.9.p1.spkg\nhas the latest version of guava (guava 3.0, incorporating work\nof Robert Miller and Tom Boothby). \n\nIssue created by migration from https://trac.sagemath.org/ticket/512\n\n",
+    "body": "Assignee: @wdjoyner\n\nThe package \nhttp://sage.math.washington.edu/home/wdj/patches/gap-4.4.9.p1.spkg\nhas the latest version of guava (guava 3.0, incorporating work\nof Robert Miller and Tom Boothby). \n\nIssue created by migration from https://trac.sagemath.org/ticket/512\n\n",
     "created_at": "2007-08-29T14:43:30Z",
     "labels": [
         "coding theory",
@@ -14,10 +14,10 @@ archive/issues_000512.json:
     "title": "update gap package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/512",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: wdj
+Assignee: @wdjoyner
 
 The package 
 http://sage.math.washington.edu/home/wdj/patches/gap-4.4.9.p1.spkg
@@ -40,7 +40,7 @@ archive/issue_comments_002588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/512#issuecomment-2588",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -58,7 +58,7 @@ archive/issue_comments_002589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/512#issuecomment-2589",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_002590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/512#issuecomment-2590",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_002591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/512#issuecomment-2591",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_002592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/512#issuecomment-2592",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_002593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/512#issuecomment-2593",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_002594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/512#issuecomment-2594",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_002595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/512#issuecomment-2595",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_002596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/512#issuecomment-2596",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_002597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/512#issuecomment-2597",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

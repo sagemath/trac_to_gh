@@ -3,7 +3,7 @@
 archive/issues_006993.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  was mhansen ncalexan\n\nNew pynac package available at:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.9.spkg\n\nChanges to pynac can also be viewed by going here:\n\nhttp://pynac.sagemath.org/hg/rev/beb49aa3cebf\n\nand clicking the link for \"children\" to see the other patches.\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6993\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @williamstein @mwhansen @ncalexan\n\nNew pynac package available at:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.9.spkg\n\nChanges to pynac can also be viewed by going here:\n\nhttp://pynac.sagemath.org/hg/rev/beb49aa3cebf\n\nand clicking the link for \"children\" to see the other patches.\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6993\n\n",
     "created_at": "2009-09-22T19:18:06Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_006993.json:
     "title": "[with package, needs review] update pynac to 0.1.9",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6993",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  was mhansen ncalexan
+CC:  @williamstein @mwhansen @ncalexan
 
 New pynac package available at:
 
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6993
 archive/issue_comments_057838.json:
 ```json
 {
-    "body": "Attachment [trac_6993-revert_evalf.patch](tarball://root/attachments/some-uuid/ticket6993/trac_6993-revert_evalf.patch) by burcin created at 2009-09-22 19:26:03\n\nThis package includes corresponding changes for the tickets:\n\n* #6948 powers of exp are over simplified\n* #6902 log(x) is typeset as \\ln x\n* #6851 hashes for derivatives of symbolic functions still collide\n* #6524 Ratio of two symbolic expressions involving derivative does not simplify\n* #6992 rename lngamma to log gamma\n\nThe patch attached to this ticket is just an enhancement. It is the first step to cleaning up the interface for symbolic functions. Pynac now evaluates symbolic functions on non-exact input again. This eliminates the need for a separate `__call__` method in `sage.symbolic.function.PrimitiveFunction`.",
+    "body": "Attachment [trac_6993-revert_evalf.patch](tarball://root/attachments/some-uuid/ticket6993/trac_6993-revert_evalf.patch) by @burcin created at 2009-09-22 19:26:03\n\nThis package includes corresponding changes for the tickets:\n\n* #6948 powers of exp are over simplified\n* #6902 log(x) is typeset as \\ln x\n* #6851 hashes for derivatives of symbolic functions still collide\n* #6524 Ratio of two symbolic expressions involving derivative does not simplify\n* #6992 rename lngamma to log gamma\n\nThe patch attached to this ticket is just an enhancement. It is the first step to cleaning up the interface for symbolic functions. Pynac now evaluates symbolic functions on non-exact input again. This eliminates the need for a separate `__call__` method in `sage.symbolic.function.PrimitiveFunction`.",
     "created_at": "2009-09-22T19:26:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6993",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6993#issuecomment-57838",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6993-revert_evalf.patch](tarball://root/attachments/some-uuid/ticket6993/trac_6993-revert_evalf.patch) by burcin created at 2009-09-22 19:26:03
+Attachment [trac_6993-revert_evalf.patch](tarball://root/attachments/some-uuid/ticket6993/trac_6993-revert_evalf.patch) by @burcin created at 2009-09-22 19:26:03
 
 This package includes corresponding changes for the tickets:
 
@@ -79,7 +79,7 @@ archive/issue_comments_057839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6993",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6993#issuecomment-57839",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_057840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6993",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6993#issuecomment-57840",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_057841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6993",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6993#issuecomment-57841",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_057842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6993",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6993#issuecomment-57842",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_057843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6993",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6993#issuecomment-57843",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

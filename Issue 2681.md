@@ -14,7 +14,7 @@ archive/issues_002681.json:
     "title": "[with patch, needs review] improve doctest coverage in libs/pari/gen.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2681",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 Assignee: failure
@@ -37,16 +37,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2681
 archive/issue_comments_018433.json:
 ```json
 {
-    "body": "Attachment [doctests_gen_pari.patch](tarball://root/attachments/some-uuid/ticket2681/doctests_gen_pari.patch) by AlexGhitza created at 2008-03-27 03:39:15",
+    "body": "Attachment [doctests_gen_pari.patch](tarball://root/attachments/some-uuid/ticket2681/doctests_gen_pari.patch) by @aghitza created at 2008-03-27 03:39:15",
     "created_at": "2008-03-27T03:39:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2681#issuecomment-18433",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [doctests_gen_pari.patch](tarball://root/attachments/some-uuid/ticket2681/doctests_gen_pari.patch) by AlexGhitza created at 2008-03-27 03:39:15
+Attachment [doctests_gen_pari.patch](tarball://root/attachments/some-uuid/ticket2681/doctests_gen_pari.patch) by @aghitza created at 2008-03-27 03:39:15
 
 
 
@@ -60,7 +60,7 @@ archive/issue_comments_018434.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2681#issuecomment-18434",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

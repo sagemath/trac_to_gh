@@ -3,7 +3,7 @@
 archive/issues_001594.json:
 ```json
 {
-    "body": "Assignee: was\n\nOn all variants of OSX the new libm4ri doesn't work at all.\n\nI just did some poking around and putting my own \n\nIssue created by migration from https://trac.sagemath.org/ticket/1594\n\n",
+    "body": "Assignee: @williamstein\n\nOn all variants of OSX the new libm4ri doesn't work at all.\n\nI just did some poking around and putting my own \n\nIssue created by migration from https://trac.sagemath.org/ticket/1594\n\n",
     "created_at": "2007-12-24T18:15:53Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_001594.json:
     "title": "libm4ri -- in library mode it doesn't work at all on osx -- lots of segfaults",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1594",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 On all variants of OSX the new libm4ri doesn't work at all.
 
@@ -39,7 +39,7 @@ archive/issue_comments_010143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1594",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1594#issuecomment-10143",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_010145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1594",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1594#issuecomment-10145",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_010146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1594",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1594#issuecomment-10146",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_010147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1594",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1594#issuecomment-10147",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

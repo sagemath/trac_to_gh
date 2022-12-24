@@ -88,7 +88,7 @@ archive/issue_comments_029509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4091#issuecomment-29509",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_029510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4091#issuecomment-29510",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -119,16 +119,16 @@ Never mind, it's probably just something to do with the new coercion stuff, just
 archive/issue_comments_029511.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to craigcitro.",
+    "body": "Changing assignee from mabshoff to @craigcitro.",
     "created_at": "2008-09-11T08:24:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4091#issuecomment-29511",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from mabshoff to craigcitro.
+Changing assignee from mabshoff to @craigcitro.
 
 
 
@@ -142,7 +142,7 @@ archive/issue_comments_029512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4091#issuecomment-29512",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_029513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4091#issuecomment-29513",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -175,16 +175,16 @@ I'm just running a testall, I'll check out any errors in the morning.
 archive/issue_comments_029514.json:
 ```json
 {
-    "body": "Attachment [trac-4091.patch](tarball://root/attachments/some-uuid/ticket4091/trac-4091.patch) by craigcitro created at 2008-09-11 08:24:25",
+    "body": "Attachment [trac-4091.patch](tarball://root/attachments/some-uuid/ticket4091/trac-4091.patch) by @craigcitro created at 2008-09-11 08:24:25",
     "created_at": "2008-09-11T08:24:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4091#issuecomment-29514",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4091.patch](tarball://root/attachments/some-uuid/ticket4091/trac-4091.patch) by craigcitro created at 2008-09-11 08:24:25
+Attachment [trac-4091.patch](tarball://root/attachments/some-uuid/ticket4091/trac-4091.patch) by @craigcitro created at 2008-09-11 08:24:25
 
 
 
@@ -198,7 +198,7 @@ archive/issue_comments_029515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4091#issuecomment-29515",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_029516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4091#issuecomment-29516",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

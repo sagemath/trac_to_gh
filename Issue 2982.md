@@ -14,7 +14,7 @@ archive/issues_002982.json:
     "title": "Itanium (RHEL 5) -- weird problem in code_construction.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2982",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

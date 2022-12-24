@@ -3,7 +3,7 @@
 archive/issues_009020.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nAttached patch allows using a tuple as the `degree` argument when calling the `random_element()` method of univariate polynomial rings. The tuple specifies the minimum and maximum degrees so we don't always get polynomials of the same degree:\n\n\n```\nsage: R.<x> = ZZ[]\nsage: R.random_element(degree=(0,8))\n2*x^7 - x^5 + 4*x^4 - 5*x^3 + x^2 + 14*x - 1\nsage: R.random_element(degree=(0,8))\n-2*x^3 + x^2 + x + 4\n```\n\n\nThis is also directly usable by matrices:\n\n\n```\nsage: M = Matrix(R,2,2)\nsage: M.randomize(degree=(0,6))\nsage: M\n[              -40*x^3 - 3*x^2 - 5*x            -x^4 + 476*x^3 - 3*x + 3]\n[-12*x^6 + 2*x^4 - x^3 + x^2 + x - 1                           -52*x + 5]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9020\n\n",
+    "body": "Assignee: @aghitza\n\nAttached patch allows using a tuple as the `degree` argument when calling the `random_element()` method of univariate polynomial rings. The tuple specifies the minimum and maximum degrees so we don't always get polynomials of the same degree:\n\n\n```\nsage: R.<x> = ZZ[]\nsage: R.random_element(degree=(0,8))\n2*x^7 - x^5 + 4*x^4 - 5*x^3 + x^2 + 14*x - 1\nsage: R.random_element(degree=(0,8))\n-2*x^3 + x^2 + x + 4\n```\n\n\nThis is also directly usable by matrices:\n\n\n```\nsage: M = Matrix(R,2,2)\nsage: M.randomize(degree=(0,6))\nsage: M\n[              -40*x^3 - 3*x^2 - 5*x            -x^4 + 476*x^3 - 3*x + 3]\n[-12*x^6 + 2*x^4 - x^3 + x^2 + x - 1                           -52*x + 5]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9020\n\n",
     "created_at": "2010-05-22T21:58:30Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_009020.json:
     "title": "random degrees for random_element()s univariate polynomial rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9020",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Attached patch allows using a tuple as the `degree` argument when calling the `random_element()` method of univariate polynomial rings. The tuple specifies the minimum and maximum degrees so we don't always get polynomials of the same degree:
 
@@ -59,7 +59,7 @@ archive/issue_comments_083462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9020#issuecomment-83462",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -72,16 +72,16 @@ Changing status from new to needs_review.
 archive/issue_comments_083463.json:
 ```json
 {
-    "body": "Attachment [trac_9020-random_polynomial_degree.patch](tarball://root/attachments/some-uuid/ticket9020/trac_9020-random_polynomial_degree.patch) by burcin created at 2010-05-22 22:00:09",
+    "body": "Attachment [trac_9020-random_polynomial_degree.patch](tarball://root/attachments/some-uuid/ticket9020/trac_9020-random_polynomial_degree.patch) by @burcin created at 2010-05-22 22:00:09",
     "created_at": "2010-05-22T22:00:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9020#issuecomment-83463",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9020-random_polynomial_degree.patch](tarball://root/attachments/some-uuid/ticket9020/trac_9020-random_polynomial_degree.patch) by burcin created at 2010-05-22 22:00:09
+Attachment [trac_9020-random_polynomial_degree.patch](tarball://root/attachments/some-uuid/ticket9020/trac_9020-random_polynomial_degree.patch) by @burcin created at 2010-05-22 22:00:09
 
 
 
@@ -95,7 +95,7 @@ archive/issue_comments_083464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9020#issuecomment-83464",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_083465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9020#issuecomment-83465",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_083466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9020#issuecomment-83466",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

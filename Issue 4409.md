@@ -14,7 +14,7 @@ archive/issues_004409.json:
     "title": "ellipsis_range throws exception",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4409",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4409
 archive/issue_comments_032418.json:
 ```json
 {
-    "body": "Attachment [4409-ellipsis-speed.patch](tarball://root/attachments/some-uuid/ticket4409/4409-ellipsis-speed.patch) by craigcitro created at 2008-10-31 06:54:29\n\nThis looks great.",
+    "body": "Attachment [4409-ellipsis-speed.patch](tarball://root/attachments/some-uuid/ticket4409/4409-ellipsis-speed.patch) by @craigcitro created at 2008-10-31 06:54:29\n\nThis looks great.",
     "created_at": "2008-10-31T06:54:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4409",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4409#issuecomment-32418",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [4409-ellipsis-speed.patch](tarball://root/attachments/some-uuid/ticket4409/4409-ellipsis-speed.patch) by craigcitro created at 2008-10-31 06:54:29
+Attachment [4409-ellipsis-speed.patch](tarball://root/attachments/some-uuid/ticket4409/4409-ellipsis-speed.patch) by @craigcitro created at 2008-10-31 06:54:29
 
 This looks great.
 

@@ -3,7 +3,7 @@
 archive/issues_008825.json:
 ```json
 {
-    "body": "Assignee: jason\n\nCC:  nguyenminh2@gmail.com\n\nThe documentation for the function norm currently does not mention that different kinds of norms are used for complex numbers and vectors of complex numbers.\n\nI was very surprised that for a complex number z, \nnorm(z) == norm(vector([z]))<sup>2</sup>, and no hint of this is available from the documentation available through executing \"sage: norm?\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/8825\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  nguyenminh2@gmail.com\n\nThe documentation for the function norm currently does not mention that different kinds of norms are used for complex numbers and vectors of complex numbers.\n\nI was very surprised that for a complex number z, \nnorm(z) == norm(vector([z]))<sup>2</sup>, and no hint of this is available from the documentation available through executing \"sage: norm?\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/8825\n\n",
     "created_at": "2010-04-29T19:49:58Z",
     "labels": [
         "misc",
@@ -17,7 +17,7 @@ archive/issues_008825.json:
     "user": "johan"
 }
 ```
-Assignee: jason
+Assignee: @jasongrout
 
 CC:  nguyenminh2@gmail.com
 
@@ -204,7 +204,7 @@ archive/issue_comments_081040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8825#issuecomment-81040",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -377,7 +377,7 @@ archive/issue_comments_081046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8825#issuecomment-81046",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -427,7 +427,7 @@ archive/issue_comments_081048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8825#issuecomment-81048",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -450,7 +450,7 @@ archive/issue_comments_081049.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8825#issuecomment-81049",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

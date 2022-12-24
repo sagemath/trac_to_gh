@@ -3,7 +3,7 @@
 archive/issues_004115.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nImplements computations of properties which form double cosets. For example, if G is isomorphic to H, and m : G -> H is an isomorphism, then the set of all possible isomorphisms is the double coset Aut(H) m Aut(G).\n\nThis algorithm is pretty close to the canonical label algorithm, but it is a more efficient way to implement the isomorphism question. If the objects are not isomorphic, it will tend to discover this pretty quickly, via refinement invariants and examining the partition structure. If they are isomorphic, chances are this isomorphism will be discovered quickly and the algorithm will terminate at that moment.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4115\n\n",
+    "body": "Assignee: @rlmill\n\nImplements computations of properties which form double cosets. For example, if G is isomorphic to H, and m : G -> H is an isomorphism, then the set of all possible isomorphisms is the double coset Aut(H) m Aut(G).\n\nThis algorithm is pretty close to the canonical label algorithm, but it is a more efficient way to implement the isomorphism question. If the objects are not isomorphic, it will tend to discover this pretty quickly, via refinement invariants and examining the partition structure. If they are isomorphic, chances are this isomorphism will be discovered quickly and the algorithm will terminate at that moment.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4115\n\n",
     "created_at": "2008-09-14T07:52:20Z",
     "labels": [
         "group theory",
@@ -14,10 +14,10 @@ archive/issues_004115.json:
     "title": "[with patch, not ready for review] Double coset problems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4115",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Implements computations of properties which form double cosets. For example, if G is isomorphic to H, and m : G -> H is an isomorphism, then the set of all possible isomorphisms is the double coset Aut(H) m Aut(G).
 
@@ -39,7 +39,7 @@ archive/issue_comments_029792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29792",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_029795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29795",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_029796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29796",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_029797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29797",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_029798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29798",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_029799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29799",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -306,16 +306,16 @@ This line does not show up at all in the patch, as-is right now. You should get 
 archive/issue_comments_029800.json:
 ```json
 {
-    "body": "Attachment [trac_4115-double-cosets.patch](tarball://root/attachments/some-uuid/ticket4115/trac_4115-double-cosets.patch) by rlm created at 2008-09-17 13:17:17",
+    "body": "Attachment [trac_4115-double-cosets.patch](tarball://root/attachments/some-uuid/ticket4115/trac_4115-double-cosets.patch) by @rlmill created at 2008-09-17 13:17:17",
     "created_at": "2008-09-17T13:17:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29800",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_4115-double-cosets.patch](tarball://root/attachments/some-uuid/ticket4115/trac_4115-double-cosets.patch) by rlm created at 2008-09-17 13:17:17
+Attachment [trac_4115-double-cosets.patch](tarball://root/attachments/some-uuid/ticket4115/trac_4115-double-cosets.patch) by @rlmill created at 2008-09-17 13:17:17
 
 
 
@@ -329,7 +329,7 @@ archive/issue_comments_029801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29801",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -419,7 +419,7 @@ archive/issue_comments_029802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29802",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -525,7 +525,7 @@ archive/issue_comments_029803.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29803",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -580,7 +580,7 @@ archive/issue_comments_029804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29804",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

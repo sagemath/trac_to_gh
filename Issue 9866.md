@@ -14,7 +14,7 @@ archive/issues_009866.json:
     "title": "getting rid of endianness-dependent behaviour in GAP random sources",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9866",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 Assignee: joyner
@@ -39,16 +39,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9867
 archive/issue_comments_097481.json:
 ```json
 {
-    "body": "Attachment [trac_9876_gap_MT_endianness.patch](tarball://root/attachments/some-uuid/ticket9867/trac_9876_gap_MT_endianness.patch) by dimpase created at 2010-09-07 13:36:11",
+    "body": "Attachment [trac_9876_gap_MT_endianness.patch](tarball://root/attachments/some-uuid/ticket9867/trac_9876_gap_MT_endianness.patch) by @dimpase created at 2010-09-07 13:36:11",
     "created_at": "2010-09-07T13:36:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9866#issuecomment-97481",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
-Attachment [trac_9876_gap_MT_endianness.patch](tarball://root/attachments/some-uuid/ticket9867/trac_9876_gap_MT_endianness.patch) by dimpase created at 2010-09-07 13:36:11
+Attachment [trac_9876_gap_MT_endianness.patch](tarball://root/attachments/some-uuid/ticket9867/trac_9876_gap_MT_endianness.patch) by @dimpase created at 2010-09-07 13:36:11
 
 
 
@@ -62,7 +62,7 @@ archive/issue_comments_097482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9866#issuecomment-97482",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_097483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9866#issuecomment-97483",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_097484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9866#issuecomment-97484",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_097485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9866#issuecomment-97485",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_097486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9866#issuecomment-97486",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008413.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nCC:  robertwb\n\nKeywords: Unknown Boolean\n\nAs discussed on [sage-devel](http://groups.google.com/group/sage-devel/t/5d9c32390ffe3c96) it could be good to have an \"Unkown\" value in sage which semantic is a truth value. Here are the intended truth table:\n\n```\n      and             or\n    F  U  T         F  U  T\n F [F, F, F]     F [F, U, T]\n U [F, U, U]     U [U, U, T]\n T [F, U, T]     T [T, T, T]\n```\n\nUnfortunately, without [PEP 335](http://www.python.org/dev/peps/pep-0335/), there is no way to achieve this with python's \"and\" and \"or\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/8413\n\n",
+    "body": "Assignee: @hivert\n\nCC:  @robertwb\n\nKeywords: Unknown Boolean\n\nAs discussed on [sage-devel](http://groups.google.com/group/sage-devel/t/5d9c32390ffe3c96) it could be good to have an \"Unkown\" value in sage which semantic is a truth value. Here are the intended truth table:\n\n```\n      and             or\n    F  U  T         F  U  T\n F [F, F, F]     F [F, U, T]\n U [F, U, U]     U [U, U, T]\n T [F, U, T]     T [T, T, T]\n```\n\nUnfortunately, without [PEP 335](http://www.python.org/dev/peps/pep-0335/), there is no way to achieve this with python's \"and\" and \"or\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/8413\n\n",
     "created_at": "2010-03-01T23:05:49Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_008413.json:
     "title": "Add \"Unknown\" truth value",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8413",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
-CC:  robertwb
+CC:  @robertwb
 
 Keywords: Unknown Boolean
 
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8413
 archive/issue_comments_075379.json:
 ```json
 {
-    "body": "Attachment [trac_8413-Unknown_bool_value-fh.patch](tarball://root/attachments/some-uuid/ticket8413/trac_8413-Unknown_bool_value-fh.patch) by hivert created at 2010-03-02 11:10:09",
+    "body": "Attachment [trac_8413-Unknown_bool_value-fh.patch](tarball://root/attachments/some-uuid/ticket8413/trac_8413-Unknown_bool_value-fh.patch) by @hivert created at 2010-03-02 11:10:09",
     "created_at": "2010-03-02T11:10:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8413#issuecomment-75379",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8413-Unknown_bool_value-fh.patch](tarball://root/attachments/some-uuid/ticket8413/trac_8413-Unknown_bool_value-fh.patch) by hivert created at 2010-03-02 11:10:09
+Attachment [trac_8413-Unknown_bool_value-fh.patch](tarball://root/attachments/some-uuid/ticket8413/trac_8413-Unknown_bool_value-fh.patch) by @hivert created at 2010-03-02 11:10:09
 
 
 
@@ -69,7 +69,7 @@ archive/issue_comments_075380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8413#issuecomment-75380",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_075381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8413#issuecomment-75381",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_075382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8413#issuecomment-75382",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_075383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8413#issuecomment-75383",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_075384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8413#issuecomment-75384",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

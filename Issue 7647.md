@@ -3,7 +3,7 @@
 archive/issues_007647.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jason chapoton\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7647\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @fchapoton\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7647\n\n",
     "created_at": "2009-12-10T01:12:45Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007647.json:
     "title": "notebook: provide an option to worksheet download so that only the text (no graphics, etc.) of a worksheet is included in the sws",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7647",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jason chapoton
+CC:  @jasongrout @fchapoton
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_065378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7647",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7647#issuecomment-65378",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_065379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7647",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7647#issuecomment-65379",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_065380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7647",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7647#issuecomment-65380",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

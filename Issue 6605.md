@@ -14,7 +14,7 @@ archive/issues_006605.json:
     "title": "sage -docbuild DOC FORMAT should do better error checking on DOC",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6605",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: tba
@@ -40,7 +40,7 @@ archive/issue_comments_054076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6605#issuecomment-54076",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -53,16 +53,16 @@ Changing status from new to assigned.
 archive/issue_comments_054077.json:
 ```json
 {
-    "body": "Changing assignee from tba to jhpalmieri.",
+    "body": "Changing assignee from tba to @jhpalmieri.",
     "created_at": "2009-07-23T19:58:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6605#issuecomment-54077",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Changing assignee from tba to jhpalmieri.
+Changing assignee from tba to @jhpalmieri.
 
 
 
@@ -76,7 +76,7 @@ archive/issue_comments_054078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6605#issuecomment-54078",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_054079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6605#issuecomment-54079",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -112,16 +112,16 @@ Notes for other potential tickets:
 archive/issue_comments_054080.json:
 ```json
 {
-    "body": "Attachment [trac_6605-docbuild-check.patch](tarball://root/attachments/some-uuid/ticket6605/trac_6605-docbuild-check.patch) by jhpalmieri created at 2009-07-24 15:18:19\n\nThis patch is identical, except it uses sys.exit(1) instead of sys.exit(0).",
+    "body": "Attachment [trac_6605-docbuild-check.patch](tarball://root/attachments/some-uuid/ticket6605/trac_6605-docbuild-check.patch) by @jhpalmieri created at 2009-07-24 15:18:19\n\nThis patch is identical, except it uses sys.exit(1) instead of sys.exit(0).",
     "created_at": "2009-07-24T15:18:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6605#issuecomment-54080",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_6605-docbuild-check.patch](tarball://root/attachments/some-uuid/ticket6605/trac_6605-docbuild-check.patch) by jhpalmieri created at 2009-07-24 15:18:19
+Attachment [trac_6605-docbuild-check.patch](tarball://root/attachments/some-uuid/ticket6605/trac_6605-docbuild-check.patch) by @jhpalmieri created at 2009-07-24 15:18:19
 
 This patch is identical, except it uses sys.exit(1) instead of sys.exit(0).
 
@@ -260,7 +260,7 @@ archive/issue_comments_054086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6605#issuecomment-54086",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_054087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6605#issuecomment-54087",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

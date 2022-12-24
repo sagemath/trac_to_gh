@@ -35,16 +35,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4575
 archive/issue_comments_034276.json:
 ```json
 {
-    "body": "Attachment [trac_4575.patch](tarball://root/attachments/some-uuid/ticket4575/trac_4575.patch) by was created at 2008-11-28 06:13:06\n\nREFEREE REPORT:\n\nPositive review.  Code looks solid and the result is really pretty to look at. \n\n1. Line 945 contains a trivial typo:\n\n```\n935\t    Print a nestet list as a html table. \n```\n\n\n2. The patch isn't a mercurial patch, so... :-(",
+    "body": "Attachment [trac_4575.patch](tarball://root/attachments/some-uuid/ticket4575/trac_4575.patch) by @williamstein created at 2008-11-28 06:13:06\n\nREFEREE REPORT:\n\nPositive review.  Code looks solid and the result is really pretty to look at. \n\n1. Line 945 contains a trivial typo:\n\n```\n935\t    Print a nestet list as a html table. \n```\n\n\n2. The patch isn't a mercurial patch, so... :-(",
     "created_at": "2008-11-28T06:13:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4575#issuecomment-34276",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4575.patch](tarball://root/attachments/some-uuid/ticket4575/trac_4575.patch) by was created at 2008-11-28 06:13:06
+Attachment [trac_4575.patch](tarball://root/attachments/some-uuid/ticket4575/trac_4575.patch) by @williamstein created at 2008-11-28 06:13:06
 
 REFEREE REPORT:
 
@@ -129,7 +129,7 @@ archive/issue_comments_034280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4575#issuecomment-34280",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -173,16 +173,16 @@ Michael
 archive/issue_comments_034282.json:
 ```json
 {
-    "body": "Attachment [trac_4575-taketwo.patch](tarball://root/attachments/some-uuid/ticket4575/trac_4575-taketwo.patch) by mhansen created at 2008-11-29 18:39:36",
+    "body": "Attachment [trac_4575-taketwo.patch](tarball://root/attachments/some-uuid/ticket4575/trac_4575-taketwo.patch) by @mwhansen created at 2008-11-29 18:39:36",
     "created_at": "2008-11-29T18:39:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4575#issuecomment-34282",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4575-taketwo.patch](tarball://root/attachments/some-uuid/ticket4575/trac_4575-taketwo.patch) by mhansen created at 2008-11-29 18:39:36
+Attachment [trac_4575-taketwo.patch](tarball://root/attachments/some-uuid/ticket4575/trac_4575-taketwo.patch) by @mwhansen created at 2008-11-29 18:39:36
 
 
 
@@ -196,7 +196,7 @@ archive/issue_comments_034283.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4575#issuecomment-34283",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_034284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4575#issuecomment-34284",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -519,7 +519,7 @@ archive/issue_comments_034292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4575#issuecomment-34292",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -554,7 +554,7 @@ archive/issue_comments_034293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4575#issuecomment-34293",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -572,7 +572,7 @@ archive/issue_comments_034294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4575#issuecomment-34294",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -646,7 +646,7 @@ archive/issue_comments_034297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4575#issuecomment-34297",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -666,7 +666,7 @@ archive/issue_comments_034298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4575#issuecomment-34298",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -688,7 +688,7 @@ archive/issue_comments_034299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4575#issuecomment-34299",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -701,16 +701,16 @@ apply on top of previous patch
 archive/issue_comments_034300.json:
 ```json
 {
-    "body": "Attachment [trac_4575-referee.patch](tarball://root/attachments/some-uuid/ticket4575/trac_4575-referee.patch) by jason created at 2009-05-30 07:06:47\n\nThe referee patch contains slight doctest fixes so that doctests pass (there were some issues with the latex spacing).",
+    "body": "Attachment [trac_4575-referee.patch](tarball://root/attachments/some-uuid/ticket4575/trac_4575-referee.patch) by @jasongrout created at 2009-05-30 07:06:47\n\nThe referee patch contains slight doctest fixes so that doctests pass (there were some issues with the latex spacing).",
     "created_at": "2009-05-30T07:06:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4575#issuecomment-34300",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_4575-referee.patch](tarball://root/attachments/some-uuid/ticket4575/trac_4575-referee.patch) by jason created at 2009-05-30 07:06:47
+Attachment [trac_4575-referee.patch](tarball://root/attachments/some-uuid/ticket4575/trac_4575-referee.patch) by @jasongrout created at 2009-05-30 07:06:47
 
 The referee patch contains slight doctest fixes so that doctests pass (there were some issues with the latex spacing).
 
@@ -726,7 +726,7 @@ archive/issue_comments_034301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4575#issuecomment-34301",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -744,7 +744,7 @@ archive/issue_comments_034302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4575#issuecomment-34302",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -762,7 +762,7 @@ archive/issue_comments_034303.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4575#issuecomment-34303",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -888,7 +888,7 @@ archive/issue_comments_034308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4575#issuecomment-34308",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -914,7 +914,7 @@ archive/issue_comments_034309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4575#issuecomment-34309",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_004221.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nKeywords: symbolics, pynac\n\nTo split the task of testing the new pynac package and the interface code from #3872, the new version of the pynac package is moved here.\n\nLatest version of the package can be downloaded from:\n\nhttp://www.risc.jku.at/people/berocal/sage/pynac-0.1.p0.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/4221\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: symbolics, pynac\n\nTo split the task of testing the new pynac package and the interface code from #3872, the new version of the pynac package is moved here.\n\nLatest version of the package can be downloaded from:\n\nhttp://www.risc.jku.at/people/berocal/sage/pynac-0.1.p0.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/4221\n\n",
     "created_at": "2008-09-30T12:34:07Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_004221.json:
     "title": "[with package, needs review] pynac package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4221",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 Keywords: symbolics, pynac
 

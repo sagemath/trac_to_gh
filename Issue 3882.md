@@ -14,7 +14,7 @@ archive/issues_003882.json:
     "title": "explain in the programming guide why spkg source patches should be applied by copying entire files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3882",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: tba
@@ -39,7 +39,7 @@ archive/issue_comments_027691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3882#issuecomment-27691",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_027692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3882#issuecomment-27692",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_027694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3882#issuecomment-27694",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_027695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3882#issuecomment-27695",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

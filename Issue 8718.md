@@ -3,7 +3,7 @@
 archive/issues_008718.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  dkrenn\n\nKeywords: polynomial, map\n\nComputing, for instance, the complex conjugate of a polynomial currently requires going through its list or dictionary representation. Polynomials could provide a method similar to Matrix.apply_map() to make this kind of computations easier.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8718\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @dkrenn\n\nKeywords: polynomial, map\n\nComputing, for instance, the complex conjugate of a polynomial currently requires going through its list or dictionary representation. Polynomials could provide a method similar to Matrix.apply_map() to make this kind of computations easier.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8718\n\n",
     "created_at": "2010-04-19T20:15:46Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_008718.json:
     "title": "Polynomial.apply_map()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8718",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  dkrenn
+CC:  @dkrenn
 
 Keywords: polynomial, map
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8718
 archive/issue_comments_079566.json:
 ```json
 {
-    "body": "Attachment [trac_8718_map_over_polynomial.patch](tarball://root/attachments/some-uuid/ticket8718/trac_8718_map_over_polynomial.patch) by mmezzarobba created at 2010-05-17 19:50:52",
+    "body": "Attachment [trac_8718_map_over_polynomial.patch](tarball://root/attachments/some-uuid/ticket8718/trac_8718_map_over_polynomial.patch) by @mezzarobba created at 2010-05-17 19:50:52",
     "created_at": "2010-05-17T19:50:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79566",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
-Attachment [trac_8718_map_over_polynomial.patch](tarball://root/attachments/some-uuid/ticket8718/trac_8718_map_over_polynomial.patch) by mmezzarobba created at 2010-05-17 19:50:52
+Attachment [trac_8718_map_over_polynomial.patch](tarball://root/attachments/some-uuid/ticket8718/trac_8718_map_over_polynomial.patch) by @mezzarobba created at 2010-05-17 19:50:52
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_079567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79567",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_079568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79568",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_079569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79569",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_079570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79570",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_079571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79571",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_079572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79572",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_079573.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79573",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_079574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79574",
-    "user": "dkrenn"
+    "user": "@dkrenn"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_079575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79575",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_079576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79576",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_079577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79577",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -268,16 +268,16 @@ adds map_coefficients()
 archive/issue_comments_079578.json:
 ```json
 {
-    "body": "Attachment [trac_8718.patch](tarball://root/attachments/some-uuid/ticket8718/trac_8718.patch) by saraedum created at 2012-02-06 20:52:52\n\napply trac_8718.patch",
+    "body": "Attachment [trac_8718.patch](tarball://root/attachments/some-uuid/ticket8718/trac_8718.patch) by @saraedum created at 2012-02-06 20:52:52\n\napply trac_8718.patch",
     "created_at": "2012-02-06T20:52:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79578",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
-Attachment [trac_8718.patch](tarball://root/attachments/some-uuid/ticket8718/trac_8718.patch) by saraedum created at 2012-02-06 20:52:52
+Attachment [trac_8718.patch](tarball://root/attachments/some-uuid/ticket8718/trac_8718.patch) by @saraedum created at 2012-02-06 20:52:52
 
 apply trac_8718.patch
 
@@ -293,7 +293,7 @@ archive/issue_comments_079579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79579",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_079580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79580",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -335,7 +335,7 @@ archive/issue_comments_079581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79581",
-    "user": "dkrenn"
+    "user": "@dkrenn"
 }
 ```
 
@@ -353,7 +353,7 @@ archive/issue_comments_079582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79582",
-    "user": "dkrenn"
+    "user": "@dkrenn"
 }
 ```
 
@@ -371,7 +371,7 @@ archive/issue_comments_079583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79583",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -391,7 +391,7 @@ archive/issue_comments_079584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79584",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -409,7 +409,7 @@ archive/issue_comments_079585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79585",
-    "user": "dkrenn"
+    "user": "@dkrenn"
 }
 ```
 
@@ -430,7 +430,7 @@ archive/issue_comments_079586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79586",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -448,7 +448,7 @@ archive/issue_comments_079587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79587",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -461,16 +461,16 @@ consider the codomain in map_coefficients for univariate polynomials
 archive/issue_comments_079588.json:
 ```json
 {
-    "body": "Attachment [trac_8718_multivariate_codomain.patch](tarball://root/attachments/some-uuid/ticket8718/trac_8718_multivariate_codomain.patch) by saraedum created at 2012-02-19 17:43:58\n\nconsider the codomain in map_coefficients for multivariate polynomials",
+    "body": "Attachment [trac_8718_multivariate_codomain.patch](tarball://root/attachments/some-uuid/ticket8718/trac_8718_multivariate_codomain.patch) by @saraedum created at 2012-02-19 17:43:58\n\nconsider the codomain in map_coefficients for multivariate polynomials",
     "created_at": "2012-02-19T17:43:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79588",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
-Attachment [trac_8718_multivariate_codomain.patch](tarball://root/attachments/some-uuid/ticket8718/trac_8718_multivariate_codomain.patch) by saraedum created at 2012-02-19 17:43:58
+Attachment [trac_8718_multivariate_codomain.patch](tarball://root/attachments/some-uuid/ticket8718/trac_8718_multivariate_codomain.patch) by @saraedum created at 2012-02-19 17:43:58
 
 consider the codomain in map_coefficients for multivariate polynomials
 
@@ -486,7 +486,7 @@ archive/issue_comments_079589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79589",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -504,7 +504,7 @@ archive/issue_comments_079590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79590",
-    "user": "dkrenn"
+    "user": "@dkrenn"
 }
 ```
 
@@ -522,7 +522,7 @@ archive/issue_comments_079591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79591",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

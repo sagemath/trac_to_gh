@@ -3,7 +3,7 @@
 archive/issues_008864.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nConsider:\n\n```\nsage: zeta(3)\n1.20205690315959\n```\n\nWe expect `zeta(3)` as answer.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8864\n\n",
+    "body": "Assignee: @aghitza\n\nConsider:\n\n```\nsage: zeta(3)\n1.20205690315959\n```\n\nWe expect `zeta(3)` as answer.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8864\n\n",
     "created_at": "2010-05-03T20:58:14Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_008864.json:
     "title": "make zeta function symbolic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8864",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Consider:
 
@@ -44,7 +44,7 @@ archive/issue_comments_081456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8864#issuecomment-81456",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -57,16 +57,16 @@ Note: this is a followup of #7748.
 archive/issue_comments_081457.json:
 ```json
 {
-    "body": "Attachment [trac_8864-symbolic_zeta.patch](tarball://root/attachments/some-uuid/ticket8864/trac_8864-symbolic_zeta.patch) by burcin created at 2010-05-06 20:01:38\n\nWith attachment:trac_8864-symbolic_zeta.patch you can do this:\n\n\n```\nsage: zeta(3)\nzeta(3)\nsage: zeta(2)\n1/6*pi^2\n```\n\n\nProbably, the changes to `sage/symbolic/random_tests.py` depend on #6949.",
+    "body": "Attachment [trac_8864-symbolic_zeta.patch](tarball://root/attachments/some-uuid/ticket8864/trac_8864-symbolic_zeta.patch) by @burcin created at 2010-05-06 20:01:38\n\nWith attachment:trac_8864-symbolic_zeta.patch you can do this:\n\n\n```\nsage: zeta(3)\nzeta(3)\nsage: zeta(2)\n1/6*pi^2\n```\n\n\nProbably, the changes to `sage/symbolic/random_tests.py` depend on #6949.",
     "created_at": "2010-05-06T20:01:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8864#issuecomment-81457",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_8864-symbolic_zeta.patch](tarball://root/attachments/some-uuid/ticket8864/trac_8864-symbolic_zeta.patch) by burcin created at 2010-05-06 20:01:38
+Attachment [trac_8864-symbolic_zeta.patch](tarball://root/attachments/some-uuid/ticket8864/trac_8864-symbolic_zeta.patch) by @burcin created at 2010-05-06 20:01:38
 
 With attachment:trac_8864-symbolic_zeta.patch you can do this:
 
@@ -93,7 +93,7 @@ archive/issue_comments_081458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8864#issuecomment-81458",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_081459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8864#issuecomment-81459",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_081460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8864#issuecomment-81460",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_081461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8864#issuecomment-81461",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -178,16 +178,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_081462.json:
 ```json
 {
-    "body": "Attachment [trac_8864-symbolic_zeta.take2.patch](tarball://root/attachments/some-uuid/ticket8864/trac_8864-symbolic_zeta.take2.patch) by burcin created at 2010-05-08 22:19:06\n\napply only this patch",
+    "body": "Attachment [trac_8864-symbolic_zeta.take2.patch](tarball://root/attachments/some-uuid/ticket8864/trac_8864-symbolic_zeta.take2.patch) by @burcin created at 2010-05-08 22:19:06\n\napply only this patch",
     "created_at": "2010-05-08T22:19:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8864#issuecomment-81462",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_8864-symbolic_zeta.take2.patch](tarball://root/attachments/some-uuid/ticket8864/trac_8864-symbolic_zeta.take2.patch) by burcin created at 2010-05-08 22:19:06
+Attachment [trac_8864-symbolic_zeta.take2.patch](tarball://root/attachments/some-uuid/ticket8864/trac_8864-symbolic_zeta.take2.patch) by @burcin created at 2010-05-08 22:19:06
 
 apply only this patch
 
@@ -203,7 +203,7 @@ archive/issue_comments_081463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8864#issuecomment-81463",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_081464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8864#issuecomment-81464",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_081465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8864#issuecomment-81465",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_081466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8864#issuecomment-81466",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_081467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8864#issuecomment-81467",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

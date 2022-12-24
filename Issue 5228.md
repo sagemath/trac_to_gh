@@ -3,7 +3,7 @@
 archive/issues_005228.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: number fields composite fields galois closure embedding coercion\n\nThe patches describe and doctest this better, but...\n\n* Extends composite_fields and galois_closure to return maps when asked\n\n* Uses the new coercion embedding to only return \"coherent\" compositions if embeddings are specified.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5228\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: number fields composite fields galois closure embedding coercion\n\nThe patches describe and doctest this better, but...\n\n* Extends composite_fields and galois_closure to return maps when asked\n\n* Uses the new coercion embedding to only return \"coherent\" compositions if embeddings are specified.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5228\n\n",
     "created_at": "2009-02-10T18:20:38Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_005228.json:
     "title": "[with patch, needs review] make composite_fields and galois_closure return maps and preserve embeddings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5228",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: number fields composite fields galois closure embedding coercion
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5228
 archive/issue_comments_040073.json:
 ```json
 {
-    "body": "Attachment [trac_5228-composite-fields.patch](tarball://root/attachments/some-uuid/ticket5228/trac_5228-composite-fields.patch) by ncalexan created at 2009-02-10 18:26:29",
+    "body": "Attachment [trac_5228-composite-fields.patch](tarball://root/attachments/some-uuid/ticket5228/trac_5228-composite-fields.patch) by @ncalexan created at 2009-02-10 18:26:29",
     "created_at": "2009-02-10T18:26:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5228",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5228#issuecomment-40073",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [trac_5228-composite-fields.patch](tarball://root/attachments/some-uuid/ticket5228/trac_5228-composite-fields.patch) by ncalexan created at 2009-02-10 18:26:29
+Attachment [trac_5228-composite-fields.patch](tarball://root/attachments/some-uuid/ticket5228/trac_5228-composite-fields.patch) by @ncalexan created at 2009-02-10 18:26:29
 
 
 
@@ -56,16 +56,16 @@ Attachment [trac_5228-composite-fields.patch](tarball://root/attachments/some-uu
 archive/issue_comments_040074.json:
 ```json
 {
-    "body": "Attachment [trac_5228-composite-fields-embeddings.patch](tarball://root/attachments/some-uuid/ticket5228/trac_5228-composite-fields-embeddings.patch) by ncalexan created at 2009-02-10 18:28:56\n\nApply `trac_5228-composite-fields.patch` and then `trac_5228-composite-fields-embeddings.patch`",
+    "body": "Attachment [trac_5228-composite-fields-embeddings.patch](tarball://root/attachments/some-uuid/ticket5228/trac_5228-composite-fields-embeddings.patch) by @ncalexan created at 2009-02-10 18:28:56\n\nApply `trac_5228-composite-fields.patch` and then `trac_5228-composite-fields-embeddings.patch`",
     "created_at": "2009-02-10T18:28:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5228",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5228#issuecomment-40074",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [trac_5228-composite-fields-embeddings.patch](tarball://root/attachments/some-uuid/ticket5228/trac_5228-composite-fields-embeddings.patch) by ncalexan created at 2009-02-10 18:28:56
+Attachment [trac_5228-composite-fields-embeddings.patch](tarball://root/attachments/some-uuid/ticket5228/trac_5228-composite-fields-embeddings.patch) by @ncalexan created at 2009-02-10 18:28:56
 
 Apply `trac_5228-composite-fields.patch` and then `trac_5228-composite-fields-embeddings.patch`
 
@@ -103,7 +103,7 @@ archive/issue_comments_040076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5228",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5228#issuecomment-40076",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

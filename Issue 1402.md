@@ -3,7 +3,7 @@
 archive/issues_001402.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe program needs to be terminated with a \"null curve\", \"[0,0,0,0,0]\", and does not handle an EOF gracefully (whether at the end of a \"real file\" or a \"CTRL-D\" from the terminal).\n\nIn 'getcurve()' (in \"getcurve.cc\"), input of a curve is handled by\n\n```\n   cin >> C0\n```\n\nand \"c.input()\" (in \"curve.cc\") doesn't deal with EOF.  Instead, it aborts, causing problems upstream.\n\nThe fix is to turn EOF into \"[0.0.0.0.0]\" or its moral equivalent.  I don't know  the code well enough to know whether this is feasible.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1402\n\n",
+    "body": "Assignee: @williamstein\n\nThe program needs to be terminated with a \"null curve\", \"[0,0,0,0,0]\", and does not handle an EOF gracefully (whether at the end of a \"real file\" or a \"CTRL-D\" from the terminal).\n\nIn 'getcurve()' (in \"getcurve.cc\"), input of a curve is handled by\n\n```\n   cin >> C0\n```\n\nand \"c.input()\" (in \"curve.cc\") doesn't deal with EOF.  Instead, it aborts, causing problems upstream.\n\nThe fix is to turn EOF into \"[0.0.0.0.0]\" or its moral equivalent.  I don't know  the code well enough to know whether this is feasible.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1402\n\n",
     "created_at": "2007-12-05T05:35:01Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_001402.json:
     "user": "justin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The program needs to be terminated with a "null curve", "[0,0,0,0,0]", and does not handle an EOF gracefully (whether at the end of a "real file" or a "CTRL-D" from the terminal).
 

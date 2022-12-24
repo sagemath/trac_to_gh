@@ -14,7 +14,7 @@ archive/issues_000741.json:
     "title": "sage -bdist: after doing this in sage-2.8.5, the dsage unit tests don't run for the resulting binary",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/741",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: failure
@@ -37,7 +37,7 @@ archive/issue_comments_004341.json:
     "issue": "https://github.com/sagemath/sagetest/issues/741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/741#issuecomment-4341",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_004342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/741#issuecomment-4342",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009174.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jpflori dimpase kcrisman\n\n\n```\n\nsage -t  \"devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\"\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1093:\n    sage: log(n1,2) + log(n1_prime,2) - 2 # the rank\nExpected:\n    1\nGot:\n    0\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1098:\n    sage: log(n1,2) + log(n1_prime,2) - 2 # the rank\nExpected:\n    2\nGot:\n    0\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1102:\n    sage: log(n1,2) + log(n1_prime,2) - 2 # the rank\nExpected:\n    3\nGot:\n    2*log(3)/log(2) - 2\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1195:\n    sage: log(n1,2) + log(n1_prime,2) - 2 # the rank\nExpected:\n    1\nGot:\n    0\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1198:\n    sage: log(n1,2) + log(n1_prime,2) - 2 # the rank\nExpected:\n    2\nGot:\n    0\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1201:\n    sage: log(n1,2) + log(n1_prime,2) - 2 # the rank\nExpected:\n    3\nGot:\n    log(3)/log(2) - 1\n**********************************************************************\n2 items had failures:\n   3 of  30 in __main__.example_18\n   3 of  11 in __main__.example_19\n***Test Failed*** 6 failures.\nFor whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_descent_two_isogeny.py\n\t [29.1 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9174\n\n",
+    "body": "Assignee: tbd\n\nCC:  jpflori @dimpase @kcrisman\n\n\n```\n\nsage -t  \"devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\"\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1093:\n    sage: log(n1,2) + log(n1_prime,2) - 2 # the rank\nExpected:\n    1\nGot:\n    0\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1098:\n    sage: log(n1,2) + log(n1_prime,2) - 2 # the rank\nExpected:\n    2\nGot:\n    0\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1102:\n    sage: log(n1,2) + log(n1_prime,2) - 2 # the rank\nExpected:\n    3\nGot:\n    2*log(3)/log(2) - 2\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1195:\n    sage: log(n1,2) + log(n1_prime,2) - 2 # the rank\nExpected:\n    1\nGot:\n    0\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1198:\n    sage: log(n1,2) + log(n1_prime,2) - 2 # the rank\nExpected:\n    2\nGot:\n    0\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1201:\n    sage: log(n1,2) + log(n1_prime,2) - 2 # the rank\nExpected:\n    3\nGot:\n    log(3)/log(2) - 1\n**********************************************************************\n2 items had failures:\n   3 of  30 in __main__.example_18\n   3 of  11 in __main__.example_19\n***Test Failed*** 6 failures.\nFor whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_descent_two_isogeny.py\n\t [29.1 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9174\n\n",
     "created_at": "2010-06-07T04:57:52Z",
     "labels": [
         "porting: Cygwin",
@@ -14,12 +14,12 @@ archive/issues_009174.json:
     "title": "cygwin: robert miller's 2-descent is completely broken on cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9174",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
 
-CC:  jpflori dimpase kcrisman
+CC:  jpflori @dimpase @kcrisman
 
 
 ```
@@ -93,7 +93,7 @@ archive/issue_comments_085811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85811",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_085812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85812",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_085813.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85813",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_085814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85814",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_085815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85815",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_085816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85816",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_085817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85817",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_085819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85819",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -312,7 +312,7 @@ archive/issue_comments_085823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85823",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

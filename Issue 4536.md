@@ -3,7 +3,7 @@
 archive/issues_004536.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  m.t.aranes@warwick.ac.uk dl267@cam.ac.uk\n\nKeywords: number fields, orders, ideals\n\nAdditional methods for (fractional) ideals:\n\n1. Ideals cache their norms\n2. Integral ideals now have a residues() iterator\n3. numerator() and denominator() defined for fractional ideals\n4. is_coprime() defined for a fractional ideal & another (or a field element)\n5. euler_phi() defined for integral ideals\n\nAdditional method for orders:\n\n1. coordinates(x) for x in the field gives a vector of rationals expressing x as a linear combination of the order's Z-basis.\n    \n\nIssue created by migration from https://trac.sagemath.org/ticket/4536\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  m.t.aranes@warwick.ac.uk dl267@cam.ac.uk\n\nKeywords: number fields, orders, ideals\n\nAdditional methods for (fractional) ideals:\n\n1. Ideals cache their norms\n2. Integral ideals now have a residues() iterator\n3. numerator() and denominator() defined for fractional ideals\n4. is_coprime() defined for a fractional ideal & another (or a field element)\n5. euler_phi() defined for integral ideals\n\nAdditional method for orders:\n\n1. coordinates(x) for x in the field gives a vector of rationals expressing x as a linear combination of the order's Z-basis.\n    \n\nIssue created by migration from https://trac.sagemath.org/ticket/4536\n\n",
     "created_at": "2008-11-16T20:47:31Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004536.json:
     "title": "Various number field order and ideal utilities",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4536",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  m.t.aranes@warwick.ac.uk dl267@cam.ac.uk
 
@@ -52,7 +52,7 @@ archive/issue_comments_033806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4536#issuecomment-33806",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -65,16 +65,16 @@ Based on 3.2.rc1
 archive/issue_comments_033807.json:
 ```json
 {
-    "body": "Attachment [trac-4536.patch](tarball://root/attachments/some-uuid/ticket4536/trac-4536.patch) by mhansen created at 2008-11-17 06:58:05\n\nHi John,\n\nJust one quick comment. Is there a reason you are manually doing the caching instead of using the cached_method decorator in sage/misc/cachefunc.py?  I think the result is a bit cleaner.\n\nAlso, you don't need to use backslashes to continue lines if it occurs with in parens or brackets because Python knows that they need to be closed.\n\n--Mike",
+    "body": "Attachment [trac-4536.patch](tarball://root/attachments/some-uuid/ticket4536/trac-4536.patch) by @mwhansen created at 2008-11-17 06:58:05\n\nHi John,\n\nJust one quick comment. Is there a reason you are manually doing the caching instead of using the cached_method decorator in sage/misc/cachefunc.py?  I think the result is a bit cleaner.\n\nAlso, you don't need to use backslashes to continue lines if it occurs with in parens or brackets because Python knows that they need to be closed.\n\n--Mike",
     "created_at": "2008-11-17T06:58:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4536#issuecomment-33807",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac-4536.patch](tarball://root/attachments/some-uuid/ticket4536/trac-4536.patch) by mhansen created at 2008-11-17 06:58:05
+Attachment [trac-4536.patch](tarball://root/attachments/some-uuid/ticket4536/trac-4536.patch) by @mwhansen created at 2008-11-17 06:58:05
 
 Hi John,
 
@@ -96,7 +96,7 @@ archive/issue_comments_033808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4536#issuecomment-33808",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_033809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4536#issuecomment-33809",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_033810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4536#issuecomment-33810",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -173,16 +173,16 @@ That looks brilliant, and had completely passed me by.  I'll start using it righ
 archive/issue_comments_033811.json:
 ```json
 {
-    "body": "Attachment [trac-4526-2.patch](tarball://root/attachments/some-uuid/ticket4536/trac-4526-2.patch) by cremona created at 2008-11-18 16:11:25\n\nThe second patch trac-4536-2.patch fixes a bug in the first implementation of residues(): I forgot to take the Smith Normal Form of the matrix.  The first of the two new doctests is an example which failed with the old version.",
+    "body": "Attachment [trac-4526-2.patch](tarball://root/attachments/some-uuid/ticket4536/trac-4526-2.patch) by @JohnCremona created at 2008-11-18 16:11:25\n\nThe second patch trac-4536-2.patch fixes a bug in the first implementation of residues(): I forgot to take the Smith Normal Form of the matrix.  The first of the two new doctests is an example which failed with the old version.",
     "created_at": "2008-11-18T16:11:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4536#issuecomment-33811",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac-4526-2.patch](tarball://root/attachments/some-uuid/ticket4536/trac-4526-2.patch) by cremona created at 2008-11-18 16:11:25
+Attachment [trac-4526-2.patch](tarball://root/attachments/some-uuid/ticket4536/trac-4526-2.patch) by @JohnCremona created at 2008-11-18 16:11:25
 
 The second patch trac-4536-2.patch fixes a bug in the first implementation of residues(): I forgot to take the Smith Normal Form of the matrix.  The first of the two new doctests is an example which failed with the old version.
 
@@ -198,7 +198,7 @@ archive/issue_comments_033812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4536#issuecomment-33812",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_033813.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4536#issuecomment-33813",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -247,16 +247,16 @@ Thanks for spotting this mistake!
 archive/issue_comments_033814.json:
 ```json
 {
-    "body": "Attachment [trac-4536-fix.patch](tarball://root/attachments/some-uuid/ticket4536/trac-4536-fix.patch) by cremona created at 2008-11-25 11:46:12",
+    "body": "Attachment [trac-4536-fix.patch](tarball://root/attachments/some-uuid/ticket4536/trac-4536-fix.patch) by @JohnCremona created at 2008-11-25 11:46:12",
     "created_at": "2008-11-25T11:46:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4536#issuecomment-33814",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac-4536-fix.patch](tarball://root/attachments/some-uuid/ticket4536/trac-4536-fix.patch) by cremona created at 2008-11-25 11:46:12
+Attachment [trac-4536-fix.patch](tarball://root/attachments/some-uuid/ticket4536/trac-4536-fix.patch) by @JohnCremona created at 2008-11-25 11:46:12
 
 
 
@@ -270,7 +270,7 @@ archive/issue_comments_033815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4536#issuecomment-33815",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_033816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4536#issuecomment-33816",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 

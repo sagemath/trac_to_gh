@@ -3,7 +3,7 @@
 archive/issues_001054.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  rlm\n\nThe reference manual chapter on number fields only lists number fields and their elements as sections.  It should also list orders, class groups, etc.  I.e., because of code refactoring.\n\nThis is just a few lines added to the ref repository.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1054\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @rlmill\n\nThe reference manual chapter on number fields only lists number fields and their elements as sections.  It should also list orders, class groups, etc.  I.e., because of code refactoring.\n\nThis is just a few lines added to the ref repository.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1054\n\n",
     "created_at": "2007-11-01T20:03:28Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_001054.json:
     "title": "add number fields documentation to the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1054",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  rlm
+CC:  @rlmill
 
 The reference manual chapter on number fields only lists number fields and their elements as sections.  It should also list orders, class groups, etc.  I.e., because of code refactoring.
 
@@ -41,7 +41,7 @@ archive/issue_comments_006412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1054#issuecomment-6412",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_006414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1054#issuecomment-6414",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

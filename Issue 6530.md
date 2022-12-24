@@ -3,7 +3,7 @@
 archive/issues_006530.json:
 ```json
 {
-    "body": "Assignee: schilly\n\nI did a search, on www.sagemath.org, for \"gram schmidt\".  In the Documentation section, there was no link returned for the documentation of the method \"gram_schmidt\", although this was exactly what I was looking for:\n\nhttp://www.sagemath.org/doc/reference/sage/matrix/matrix2.html#sage.matrix.matrix2.Matrix.gram_schmidt\n\nPerhaps our custom Google search can be tweaked?\n\nIssue created by migration from https://trac.sagemath.org/ticket/6530\n\n",
+    "body": "Assignee: @haraldschilly\n\nI did a search, on www.sagemath.org, for \"gram schmidt\".  In the Documentation section, there was no link returned for the documentation of the method \"gram_schmidt\", although this was exactly what I was looking for:\n\nhttp://www.sagemath.org/doc/reference/sage/matrix/matrix2.html#sage.matrix.matrix2.Matrix.gram_schmidt\n\nPerhaps our custom Google search can be tweaked?\n\nIssue created by migration from https://trac.sagemath.org/ticket/6530\n\n",
     "created_at": "2009-07-14T07:39:42Z",
     "labels": [
         "website/wiki",
@@ -17,7 +17,7 @@ archive/issues_006530.json:
     "user": "gpannwitz"
 }
 ```
-Assignee: schilly
+Assignee: @haraldschilly
 
 I did a search, on www.sagemath.org, for "gram schmidt".  In the Documentation section, there was no link returned for the documentation of the method "gram_schmidt", although this was exactly what I was looking for:
 
@@ -41,7 +41,7 @@ archive/issue_comments_053235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6530#issuecomment-53235",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_053236.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6530#issuecomment-53236",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_053237.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6530#issuecomment-53237",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 

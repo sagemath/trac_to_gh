@@ -3,7 +3,7 @@
 archive/issues_002266.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  jason mvngu brunellus\n\nImplement an optional input, `v=None` to the function `shortest_paths`, which would then only return the shortest paths from `u` to `v`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2266\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @jasongrout mvngu brunellus\n\nImplement an optional input, `v=None` to the function `shortest_paths`, which would then only return the shortest paths from `u` to `v`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2266\n\n",
     "created_at": "2008-02-22T21:27:54Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_002266.json:
     "title": "give shortest_paths an optional endpoint",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2266",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  jason mvngu brunellus
+CC:  @jasongrout mvngu brunellus
 
 Implement an optional input, `v=None` to the function `shortest_paths`, which would then only return the shortest paths from `u` to `v`.
 
@@ -39,7 +39,7 @@ archive/issue_comments_015012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2266#issuecomment-15012",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_015015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2266#issuecomment-15015",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 

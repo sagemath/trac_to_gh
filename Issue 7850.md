@@ -3,7 +3,7 @@
 archive/issues_007850.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: spherical,plot\n\nI've made a clone of Mathematicas SphericalPlot3d . Only that the 3d seemed redundant to me.\n\nThe code is\n\n```\nvar('phi,theta')\ndef spherical_plot(f,phiran=(phi,0,2*pi),thetaran=(theta,0,pi),**kwds):\n   phi=phiran[0]\n   phi0=phiran[1]\n   phif=phiran[2]\n   theta=thetaran[0]\n   theta0=thetaran[1]\n   thetaf=thetaran[2]\n   Rho=(f*cos(phi)*sin(theta),f*sin(phi)*sin(theta),f*cos(theta))\n   return parametric_plot3d(Rho,(phi,phi0,phif),(theta,theta0,thetaf),**kwds) \n```\n\n\nSeveral examples can be found in [http://www.sagenb.org/pub/1319/](http://www.sagenb.org/pub/1319/)\n\nI've been suggested to eliminate the dependence on the 'phi' and 'theta' variables. I quite agree that that would be good, but I can't figure how to do it.\n\nAlso, I think I might generalize this into any sort of transform plot. But let's first see how this works out. Especially the variable dependency\n\nIssue created by migration from https://trac.sagemath.org/ticket/7850\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: spherical,plot\n\nI've made a clone of Mathematicas SphericalPlot3d . Only that the 3d seemed redundant to me.\n\nThe code is\n\n```\nvar('phi,theta')\ndef spherical_plot(f,phiran=(phi,0,2*pi),thetaran=(theta,0,pi),**kwds):\n   phi=phiran[0]\n   phi0=phiran[1]\n   phif=phiran[2]\n   theta=thetaran[0]\n   theta0=thetaran[1]\n   thetaf=thetaran[2]\n   Rho=(f*cos(phi)*sin(theta),f*sin(phi)*sin(theta),f*cos(theta))\n   return parametric_plot3d(Rho,(phi,phi0,phif),(theta,theta0,thetaf),**kwds) \n```\n\n\nSeveral examples can be found in [http://www.sagenb.org/pub/1319/](http://www.sagenb.org/pub/1319/)\n\nI've been suggested to eliminate the dependence on the 'phi' and 'theta' variables. I quite agree that that would be good, but I can't figure how to do it.\n\nAlso, I think I might generalize this into any sort of transform plot. But let's first see how this works out. Especially the variable dependency\n\nIssue created by migration from https://trac.sagemath.org/ticket/7850\n\n",
     "created_at": "2010-01-05T18:06:16Z",
     "labels": [
         "graphics",
@@ -17,7 +17,7 @@ archive/issues_007850.json:
     "user": "olazo"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: spherical,plot
 
@@ -61,7 +61,7 @@ archive/issue_comments_067995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7850#issuecomment-67995",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_067996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7850#issuecomment-67996",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -176,7 +176,7 @@ Changing status from new to needs_review.
 archive/issue_comments_067998.json:
 ```json
 {
-    "body": "Changing assignee from was to olazo.",
+    "body": "Changing assignee from @williamstein to olazo.",
     "created_at": "2010-01-07T19:08:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7850",
     "type": "issue_comment",
@@ -185,7 +185,7 @@ archive/issue_comments_067998.json:
 }
 ```
 
-Changing assignee from was to olazo.
+Changing assignee from @williamstein to olazo.
 
 
 
@@ -217,7 +217,7 @@ archive/issue_comments_068000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7850#issuecomment-68000",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

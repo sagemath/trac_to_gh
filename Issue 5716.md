@@ -3,7 +3,7 @@
 archive/issues_005716.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jason\n\n\n```\nsage: a = random_matrix(GF(3),4)\nsage: a.subdivide(2,2)\nsage: a\n[2 0|0 2]\n[2 1|1 0]\n[---+---]\n[1 2|1 0]\n[1 0|0 1]\nsage: a.lift()\n[2 0 0 2]\n[2 1 1 0]\n[1 2 1 0]\n[1 0 0 1]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5716\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\n\n```\nsage: a = random_matrix(GF(3),4)\nsage: a.subdivide(2,2)\nsage: a\n[2 0|0 2]\n[2 1|1 0]\n[---+---]\n[1 2|1 0]\n[1 0|0 1]\nsage: a.lift()\n[2 0 0 2]\n[2 1 1 0]\n[1 2 1 0]\n[1 0 0 1]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5716\n\n",
     "created_at": "2009-04-08T19:18:52Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_005716.json:
     "title": "lifting a subdivided matrix should preserve the subdivision, but doesn't.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5716",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jason
+CC:  @jasongrout
 
 
 ```
@@ -77,7 +77,7 @@ archive/issue_comments_044672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5716#issuecomment-44672",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_044673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5716#issuecomment-44673",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_044674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5716#issuecomment-44674",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -126,16 +126,16 @@ Changing status from new to assigned.
 archive/issue_comments_044675.json:
 ```json
 {
-    "body": "Changing assignee from was to jhpalmieri.",
+    "body": "Changing assignee from @williamstein to @jhpalmieri.",
     "created_at": "2009-05-07T04:35:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5716#issuecomment-44675",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Changing assignee from was to jhpalmieri.
+Changing assignee from @williamstein to @jhpalmieri.
 
 
 
@@ -149,7 +149,7 @@ archive/issue_comments_044676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5716#issuecomment-44676",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_044677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5716#issuecomment-44677",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -182,16 +182,16 @@ Okay, here's a new patch.  I think that this tests everything, although there is
 archive/issue_comments_044678.json:
 ```json
 {
-    "body": "Attachment [trac_5716.patch](tarball://root/attachments/some-uuid/ticket5716/trac_5716.patch) by jason created at 2009-05-30 05:02:11",
+    "body": "Attachment [trac_5716.patch](tarball://root/attachments/some-uuid/ticket5716/trac_5716.patch) by @jasongrout created at 2009-05-30 05:02:11",
     "created_at": "2009-05-30T05:02:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5716#issuecomment-44678",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_5716.patch](tarball://root/attachments/some-uuid/ticket5716/trac_5716.patch) by jason created at 2009-05-30 05:02:11
+Attachment [trac_5716.patch](tarball://root/attachments/some-uuid/ticket5716/trac_5716.patch) by @jasongrout created at 2009-05-30 05:02:11
 
 
 
@@ -205,7 +205,7 @@ archive/issue_comments_044679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5716#issuecomment-44679",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_044680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5716#issuecomment-44680",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_044681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5716#issuecomment-44681",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

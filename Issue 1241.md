@@ -14,7 +14,7 @@ archive/issues_001241.json:
     "title": "absolute symbolic links left in \"make install\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1241",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: mabshoff
@@ -92,7 +92,7 @@ archive/issue_comments_007774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1241",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1241#issuecomment-7774",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 

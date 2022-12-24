@@ -14,7 +14,7 @@ archive/issues_000503.json:
     "title": "0^0 -- error or 1; and other exponentiation optimizations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/503",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_002515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/503#issuecomment-2515",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -167,7 +167,7 @@ rings/padics/padic_fixed_mod_element.pyx
 archive/issue_comments_002520.json:
 ```json
 {
-    "body": "Changing assignee from boothby to roed.",
+    "body": "Changing assignee from boothby to @roed314.",
     "created_at": "2007-09-07T01:12:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/503",
     "type": "issue_comment",
@@ -176,7 +176,7 @@ archive/issue_comments_002520.json:
 }
 ```
 
-Changing assignee from boothby to roed.
+Changing assignee from boothby to @roed314.
 
 
 
@@ -185,7 +185,7 @@ Changing assignee from boothby to roed.
 archive/issue_comments_002521.json:
 ```json
 {
-    "body": "Changing assignee from roed to robertwb.",
+    "body": "Changing assignee from @roed314 to @robertwb.",
     "created_at": "2007-09-07T01:14:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/503",
     "type": "issue_comment",
@@ -194,7 +194,7 @@ archive/issue_comments_002521.json:
 }
 ```
 
-Changing assignee from roed to robertwb.
+Changing assignee from @roed314 to @robertwb.
 
 
 
@@ -203,16 +203,16 @@ Changing assignee from roed to robertwb.
 archive/issue_comments_002522.json:
 ```json
 {
-    "body": "Attachment [power503.hg](tarball://root/attachments/some-uuid/ticket503/power503.hg) by robertwb created at 2007-09-07 03:18:27\n\nFixed remaining instances of __pow__",
+    "body": "Attachment [power503.hg](tarball://root/attachments/some-uuid/ticket503/power503.hg) by @robertwb created at 2007-09-07 03:18:27\n\nFixed remaining instances of __pow__",
     "created_at": "2007-09-07T03:18:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/503#issuecomment-2522",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [power503.hg](tarball://root/attachments/some-uuid/ticket503/power503.hg) by robertwb created at 2007-09-07 03:18:27
+Attachment [power503.hg](tarball://root/attachments/some-uuid/ticket503/power503.hg) by @robertwb created at 2007-09-07 03:18:27
 
 Fixed remaining instances of __pow__
 
@@ -228,7 +228,7 @@ archive/issue_comments_002523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/503#issuecomment-2523",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_002524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/503#issuecomment-2524",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
